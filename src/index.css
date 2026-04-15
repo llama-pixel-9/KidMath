@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Fredoka', system-ui, sans-serif;
+}
+
+.font-mario {
+  font-family: 'Press Start 2P', 'Fredoka', system-ui, monospace;
+  letter-spacing: 0.5px;
+}
+
+.font-zelda {
+  font-family: 'MedievalSharp', 'Fredoka', system-ui, serif;
+}
+
+.font-minecraft {
+  font-family: 'Silkscreen', 'Fredoka', system-ui, monospace;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Kid Math Explorer",
+  "short_name": "KidMath",
+  "description": "Interactive math practice for kids - addition, subtraction & multiplication",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffbeb",
+  "theme_color": "#fffbeb",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

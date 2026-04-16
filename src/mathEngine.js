@@ -98,52 +98,14 @@ export function generateChoices(answer, count = 4) {
   return shuffleArray([...choices]);
 }
 
-// --- Progress Persistence (localStorage now, Supabase later) ---
-
-const PROGRESS_KEY = "kidmath-progress";
-
-function readStore() {
-  try {
-    return JSON.parse(localStorage.getItem(PROGRESS_KEY)) || {};
-  } catch {
-    return {};
-  }
-}
-
-function writeStore(store) {
-  localStorage.setItem(PROGRESS_KEY, JSON.stringify(store));
-}
-
-export function loadProgress(mode) {
-  const store = readStore();
-  const entry = store[mode];
-  if (!entry) return { level: STARTING_LEVEL, mistakeBank: [], totalSessions: 0, lifetimeStars: 0 };
-  return {
-    level: clampLevel(entry.level ?? STARTING_LEVEL),
-    mistakeBank: Array.isArray(entry.mistakeBank) ? entry.mistakeBank : [],
-    totalSessions: entry.totalSessions ?? 0,
-    lifetimeStars: entry.lifetimeStars ?? 0,
-  };
-}
-
-export function saveProgress(mode, { level, mistakeBank, firstTryCorrect }) {
-  const store = readStore();
-  const prev = store[mode] || { totalSessions: 0, lifetimeStars: 0 };
-  store[mode] = {
-    level: clampLevel(level),
-    mistakeBank: (mistakeBank || []).slice(0, 20),
-    totalSessions: (prev.totalSessions ?? 0) + 1,
-    lifetimeStars: (prev.lifetimeStars ?? 0) + (firstTryCorrect ?? 0),
-  };
-  writeStore(store);
-}
-
 // --- Adaptive Session Engine ---
+
+import { loadProgressSync } from "./progressStore";
 
 const RETRY_SPACING = 5;
 
 export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE) {
-  const saved = loadProgress(mode);
+  const saved = loadProgressSync(mode);
   return {
     mode,
     level: saved.level,

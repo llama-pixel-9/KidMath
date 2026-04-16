@@ -8,8 +8,12 @@ import {
   Menu,
   X,
   Palette,
+  LogIn,
+  LogOut,
+  User,
 } from "lucide-react";
 import { useTheme } from "./ThemeContext";
+import { useAuth } from "./AuthContext";
 import { THEMES, THEME_IDS } from "./themes";
 
 const NAV_ITEMS = [
@@ -95,6 +99,52 @@ function ThemePicker() {
   );
 }
 
+function AuthButton({ compact = false }) {
+  const { theme } = useTheme();
+  const { user, loading, signInWithGoogle, signOut } = useAuth();
+
+  if (loading) return null;
+
+  if (user) {
+    const name = user.user_metadata?.full_name || user.email?.split("@")[0] || "You";
+    const avatar = user.user_metadata?.avatar_url;
+    return (
+      <div className="flex items-center gap-2">
+        {avatar ? (
+          <img src={avatar} alt="" className="h-7 w-7 rounded-full" referrerPolicy="no-referrer" />
+        ) : (
+          <User className={`h-5 w-5 ${theme.navText}`} />
+        )}
+        {!compact && (
+          <span className={`text-sm font-bold ${theme.navText} max-w-[100px] truncate`}>
+            {name}
+          </span>
+        )}
+        <button
+          className={`p-1.5 rounded-lg cursor-pointer transition-colors ${
+            theme.id === "default" ? "hover:bg-gray-100" : "hover:bg-white/20"
+          }`}
+          onClick={signOut}
+          aria-label="Sign out"
+          title="Sign out"
+        >
+          <LogOut className={`h-4 w-4 ${theme.navText}`} />
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <button
+      className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-bold cursor-pointer transition-colors ${theme.navText} ${theme.navHover}`}
+      onClick={signInWithGoogle}
+    >
+      <LogIn className="h-4 w-4" />
+      {!compact && "Sign In"}
+    </button>
+  );
+}
+
 export default function Navbar({ currentView, onNavigate }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const { theme } = useTheme();
@@ -142,10 +192,12 @@ export default function Navbar({ currentView, onNavigate }) {
             );
           })}
           <ThemePicker />
+          <AuthButton />
         </div>
 
         {/* Mobile right group */}
         <div className="flex sm:hidden items-center gap-1">
+          <AuthButton compact />
           <ThemePicker />
           <button
             className={`p-2 rounded-xl cursor-pointer ${

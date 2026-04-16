@@ -1,9 +1,3 @@
-// --- Supabase Integration Point ---
-// import { supabase } from './supabaseClient'
-// Progress (level, mistake bank) persists in localStorage via mathEngine.
-// Swap saveProgress/loadProgress in mathEngine.js for Supabase when ready.
-// The 10-min login prompt will route to Supabase Auth when integrated.
-
 import { useState, useEffect, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -24,11 +18,11 @@ import {
   getNextQuestion,
   recordAnswer,
   isSessionComplete,
-  saveProgress,
-  loadProgress,
   MODES,
   MAX_LEVEL,
 } from "./mathEngine";
+import { saveProgress, loadProgress, mergeLocalToCloud } from "./progressStore";
+import { useAuth } from "./AuthContext";
 import { useTheme } from "./ThemeContext";
 import {
   playCorrectSound,
@@ -60,13 +54,14 @@ const LEVEL_RING_COLORS = [
   "stroke-pink-500",
 ];
 
-function persistSession(mode, session) {
-  saveProgress(mode, {
+async function persistSession(mode, session) {
+  await saveProgress(mode, {
     level: session.level,
     mistakeBank: session.mistakeBank,
     firstTryCorrect: session.firstTryCorrect,
   });
-  return loadProgress(mode).lifetimeStars;
+  const progress = await loadProgress(mode);
+  return progress.lifetimeStars;
 }
 
 function ConfettiBurst() {
@@ -378,6 +373,7 @@ function LoginPromptModal({ onLogin, onDismiss }) {
 
 export default function MathExplorer() {
   const { theme } = useTheme();
+  const { user, signInWithGoogle } = useAuth();
   const [mode, setMode] = useState("addition");
   const [session, setSession] = useState(() => createAdaptiveSession("addition"));
   const [currentQ, setCurrentQ] = useState(null);
@@ -390,7 +386,6 @@ export default function MathExplorer() {
   const [revealAnswer, setRevealAnswer] = useState(null);
   const [lifetimeStars, setLifetimeStars] = useState(0);
   const [showLoginPrompt, setShowLoginPrompt] = useState(false);
-  const [isLoggedIn] = useState(false);
   const [muted, setMutedState] = useState(isMuted);
   const questionStartTime = useRef(Date.now());
   const loginTimerRef = useRef(null);
@@ -419,14 +414,28 @@ export default function MathExplorer() {
   }, []);
 
   useEffect(() => {
-    if (isLoggedIn) return;
+    if (!user) return;
+    (async () => {
+      await mergeLocalToCloud(user.id);
+      const saved = await loadProgress(mode);
+      const newSession = createAdaptiveSession(mode);
+      newSession.level = saved.level;
+      newSession.mistakeBank = saved.mistakeBank;
+      setSession(newSession);
+      loadNextQuestion(newSession);
+    })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user]);
+
+  useEffect(() => {
+    if (user) return;
     const dismissed = sessionStorage.getItem("dismissedLoginPrompt");
     if (dismissed) return;
     loginTimerRef.current = setTimeout(() => {
       setShowLoginPrompt(true);
     }, 10 * 60 * 1000);
     return () => clearTimeout(loginTimerRef.current);
-  }, [isLoggedIn]);
+  }, [user]);
 
   const handleModeChange = (m) => {
     setMode(m);
@@ -438,6 +447,13 @@ export default function MathExplorer() {
     setMutedState(next);
     setMuted(next);
   };
+
+  const finishSession = useCallback(async (sess) => {
+    const lt = await persistSession(mode, sess);
+    setLifetimeStars(lt);
+    setShowComplete(true);
+    playCompleteSound();
+  }, [mode]);
 
   const handleAnswer = (choice) => {
     if (feedback === "correct" || feedback === "wrong") return;
@@ -461,10 +477,7 @@ export default function MathExplorer() {
 
       setTimeout(() => {
         if (isSessionComplete(result.session)) {
-          const lt = persistSession(mode, result.session);
-          setLifetimeStars(lt);
-          setShowComplete(true);
-          playCompleteSound();
+          finishSession(result.session);
         } else {
           setFeedback(null);
           setRevealAnswer(null);
@@ -483,10 +496,7 @@ export default function MathExplorer() {
         setRevealAnswer(null);
 
         if (isSessionComplete(result.session)) {
-          const lt = persistSession(mode, result.session);
-          setLifetimeStars(lt);
-          setShowComplete(true);
-          playCompleteSound();
+          finishSession(result.session);
         } else {
           loadNextQuestion(result.session);
         }
@@ -500,7 +510,7 @@ export default function MathExplorer() {
   };
 
   const handleLogin = () => {
-    console.log("[Supabase placeholder] Redirect to auth flow");
+    signInWithGoogle();
     setShowLoginPrompt(false);
   };
 

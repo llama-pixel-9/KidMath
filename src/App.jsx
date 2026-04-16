@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ThemeProvider, useTheme } from "./ThemeContext";
+import { AuthProvider } from "./AuthContext";
 import Navbar from "./Navbar";
 import HomePage from "./HomePage";
 import MathExplorer from "./MathExplorer";
@@ -22,9 +23,11 @@ function AppInner() {
 
 function App() {
   return (
-    <ThemeProvider>
-      <AppInner />
-    </ThemeProvider>
+    <AuthProvider>
+      <ThemeProvider>
+        <AppInner />
+      </ThemeProvider>
+    </AuthProvider>
   );
 }
 

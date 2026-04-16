@@ -19,7 +19,6 @@ import {
   recordAnswer,
   isSessionComplete,
   MODES,
-  MAX_LEVEL,
 } from "./mathEngine";
 import { saveProgress, loadProgress, mergeLocalToCloud } from "./progressStore";
 import { useAuth } from "./AuthContext";

@@ -11,6 +11,45 @@ import {
   Trophy,
   Sparkles,
   Printer,
+  Sun,
+  Moon,
+  Cloud,
+  Rainbow,
+  Flower2,
+  TreePine,
+  Apple,
+  Cherry,
+  Fish,
+  Bug,
+  Bird,
+  Cat,
+  Dog,
+  Snail,
+  Turtle,
+  Squirrel,
+  Gem,
+  Crown,
+  Music,
+  Palette,
+  Puzzle,
+  Gamepad2,
+  Bike,
+  Plane,
+  Sailboat,
+  Footprints,
+  Drumstick,
+  IceCreamCone,
+  Cookie,
+  Cake,
+  Candy,
+  Gift,
+  PartyPopper,
+  Flame,
+  Snowflake,
+  Compass,
+  Globe,
+  Lightbulb,
+  Zap,
 } from "lucide-react";
 import { generateWorksheetSet, MODES, MAX_LEVEL } from "./mathEngine";
 import { useTheme } from "./ThemeContext";
@@ -21,14 +60,32 @@ const MODE_CONFIG = {
   multiplication: { icon: X, label: "Multiplication", op: "×" },
 };
 
-const DECO_ICONS = [Rocket, Star, Heart, Smile, Trophy, Sparkles];
+const DECO_ICONS = [
+  Rocket, Star, Heart, Smile, Trophy, Sparkles,
+  Sun, Moon, Cloud, Rainbow, Flower2, TreePine,
+  Apple, Cherry, Fish, Bug, Bird, Cat,
+  Dog, Snail, Turtle, Squirrel, Gem, Crown,
+  Music, Palette, Puzzle, Gamepad2, Bike, Plane,
+  Sailboat, Footprints, Drumstick, IceCreamCone, Cookie, Cake,
+  Candy, Gift, PartyPopper, Flame, Snowflake, Compass,
+  Globe, Lightbulb, Zap,
+];
 const DECO_COLORS = [
   "text-pink-400",
   "text-yellow-500",
   "text-red-400",
   "text-amber-500",
-  "text-yellow-500",
   "text-violet-400",
+  "text-sky-400",
+  "text-orange-400",
+  "text-emerald-500",
+  "text-rose-400",
+  "text-teal-400",
+  "text-indigo-400",
+  "text-lime-500",
+  "text-fuchsia-400",
+  "text-cyan-500",
+  "text-yellow-600",
 ];
 
 const ENCOURAGEMENTS = [
@@ -45,8 +102,13 @@ const LEVEL_GROUPS = [
   { label: "Advanced", levels: [7, 8, 9, 10] },
 ];
 
-function getDecoIcon(index) {
-  const Icon = DECO_ICONS[index % DECO_ICONS.length];
+function pickSheetIcons(count) {
+  const shuffled = [...DECO_ICONS].sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, count);
+}
+
+function getDecoIcon(icons, index) {
+  const Icon = icons[index % icons.length];
   const color = DECO_COLORS[index % DECO_COLORS.length];
   return <Icon className={`h-5 w-5 ${color} print:h-4 print:w-4`} />;
 }
@@ -56,17 +118,17 @@ export default function PrintableWorksheet() {
   const [mode, setMode] = useState("addition");
   const [level, setLevel] = useState(1);
   const [problemCount, setProblemCount] = useState(15);
+  const [sheetCount, setSheetCount] = useState(1);
   const [generated, setGenerated] = useState(false);
 
-  const problems = useMemo(() => {
+  const sheets = useMemo(() => {
     if (!generated) return [];
-    return generateWorksheetSet(mode, level, problemCount);
-  }, [generated, mode, level, problemCount]);
-
-  const encouragement = useMemo(
-    () => ENCOURAGEMENTS[Math.floor(Math.random() * ENCOURAGEMENTS.length)],
-    [generated]
-  );
+    return Array.from({ length: sheetCount }, () => ({
+      problems: generateWorksheetSet(mode, level, problemCount),
+      encouragement: ENCOURAGEMENTS[Math.floor(Math.random() * ENCOURAGEMENTS.length)],
+      icons: pickSheetIcons(10),
+    }));
+  }, [generated, mode, level, problemCount, sheetCount]);
 
   const handleGenerate = () => {
     setGenerated(false);
@@ -166,6 +228,28 @@ export default function PrintableWorksheet() {
             </div>
           </div>
 
+          {/* Number of sheets */}
+          <div>
+            <p className={`text-sm font-semibold ${theme.textSecondary} mb-2 uppercase tracking-wide`}>
+              Number of Sheets
+            </p>
+            <div className="flex gap-2">
+              {[1, 2, 3, 5].map((n) => (
+                <button
+                  key={n}
+                  className={`flex-1 py-3 rounded-2xl border-2 font-bold text-lg cursor-pointer transition-colors ${
+                    n === sheetCount
+                      ? theme.selectedBorder + " " + theme.selectedText
+                      : `${theme.cardBorder} bg-white ${theme.textSecondary} hover:bg-gray-50`
+                  }`}
+                  onClick={() => { setSheetCount(n); setGenerated(false); }}
+                >
+                  {n}
+                </button>
+              ))}
+            </div>
+          </div>
+
           {/* Buttons */}
           <div className="flex gap-3">
             <motion.button
@@ -191,14 +275,23 @@ export default function PrintableWorksheet() {
         </div>
       </div>
 
-      {/* Printable worksheet */}
-      {generated && problems.length > 0 && (
-        <div className="max-w-2xl mx-auto px-4 pb-8 print:px-0 print:pb-0 print:max-w-none">
+      {/* Printable worksheets */}
+      {generated && sheets.length > 0 && sheets.map((sheet, sheetIdx) => (
+        <div
+          key={sheetIdx}
+          className="max-w-2xl mx-auto px-4 pb-8 print:px-0 print:pb-0 print:max-w-none"
+          style={sheetIdx > 0 ? { pageBreakBefore: "always" } : undefined}
+        >
           <div className="bg-white rounded-3xl shadow-lg p-8 print:shadow-none print:rounded-none print:p-6">
             <div className="flex items-center justify-center gap-3 mb-2">
               <Star className="h-8 w-8 text-yellow-500 fill-yellow-400 print:h-6 print:w-6" />
               <h2 className="text-3xl font-extrabold text-slate-700 print:text-2xl">
                 Math Worksheet
+                {sheets.length > 1 && (
+                  <span className="text-lg text-slate-400 font-bold ml-2">
+                    ({sheetIdx + 1}/{sheets.length})
+                  </span>
+                )}
               </h2>
               <Star className="h-8 w-8 text-yellow-500 fill-yellow-400 print:h-6 print:w-6" />
             </div>
@@ -210,18 +303,18 @@ export default function PrintableWorksheet() {
             </div>
 
             <div className="flex gap-6 mb-6 border-b-2 border-dashed border-slate-200 pb-4">
-              <label className="flex items-center gap-2 text-slate-600 font-medium">
+              <label className="flex items-end gap-2 text-slate-600 font-medium pt-4">
                 Name:
                 <span className="inline-block border-b-2 border-slate-300 w-40 print:w-48" />
               </label>
-              <label className="flex items-center gap-2 text-slate-600 font-medium">
+              <label className="flex items-end gap-2 text-slate-600 font-medium pt-4">
                 Date:
                 <span className="inline-block border-b-2 border-slate-300 w-32 print:w-36" />
               </label>
             </div>
 
             <div className="grid grid-cols-2 gap-x-8 gap-y-5">
-              {problems.map((q, i) => (
+              {sheet.problems.map((q, i) => (
                 <div key={i} className="flex items-center gap-2">
                   <span className="text-sm font-bold text-slate-400 w-6 text-right">
                     {i + 1})
@@ -231,7 +324,7 @@ export default function PrintableWorksheet() {
                     <span className="inline-block border-b-2 border-slate-300 w-12 print:w-14" />
                   </span>
                   {i % 3 === 1 && (
-                    <span className="ml-auto">{getDecoIcon(i)}</span>
+                    <span className="ml-auto">{getDecoIcon(sheet.icons, i)}</span>
                   )}
                 </div>
               ))}
@@ -240,22 +333,13 @@ export default function PrintableWorksheet() {
             <div className="mt-8 pt-4 border-t-2 border-dashed border-slate-200 flex items-center justify-center gap-3">
               <Trophy className="h-6 w-6 text-yellow-500 fill-yellow-400" />
               <p className="text-lg font-extrabold text-slate-600">
-                {encouragement}
+                {sheet.encouragement}
               </p>
               <Trophy className="h-6 w-6 text-yellow-500 fill-yellow-400" />
             </div>
-
-            <div className="mt-8 pt-4 border-t border-slate-200">
-              <div className="rotate-180">
-                <p className="text-[10px] text-slate-400 leading-relaxed text-center">
-                  <span className="font-semibold">Answer Key: </span>
-                  {problems.map((q, i) => `${i + 1}) ${q.answer}`).join("  ")}
-                </p>
-              </div>
-            </div>
           </div>
         </div>
-      )}
+      ))}
     </div>
   );
 }

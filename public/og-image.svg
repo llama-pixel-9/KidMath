@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fce7f3"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="pill1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f9a8d4"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="pill2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="pill3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c4b5fd"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="30" y="30" width="1140" height="570" rx="40" fill="white" fill-opacity="0.6"/>
+
+  <!-- Stars -->
+  <text x="120" y="160" font-size="60" opacity="0.5">P</text>
+  <text x="1020" y="180" font-size="70" opacity="0.5"><</text>
+  <text x="180" y="520" font-size="50" opacity="0.4">(</text>
+  <text x="980" y="500" font-size="55" opacity="0.4"><‰</text>
+
+  <!-- Title -->
+  <text x="600" y="220" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="80" fill="url(#title)">Kid Math Explorer</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="290" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="32" fill="#64748b">Make math your superpower!</text>
+
+  <!-- Mode pills -->
+  <rect x="260" y="340" width="180" height="70" rx="35" fill="url(#pill1)"/>
+  <text x="350" y="385" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="800" font-size="26" fill="white">Addition</text>
+
+  <rect x="510" y="340" width="220" height="70" rx="35" fill="url(#pill2)"/>
+  <text x="620" y="385" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="800" font-size="26" fill="white">Subtraction</text>
+
+  <rect x="800" y="340" width="220" height="70" rx="35" fill="url(#pill3)"/>
+  <text x="910" y="385" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="800" font-size="26" fill="white">Multiply</text>
+
+  <!-- Tagline -->
+  <text x="600" y="480" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="600" font-size="28" fill="#94a3b8">Free K-3 math practice with fun themes &amp; star rewards</text>
+
+  <!-- Equation example -->
+  <text x="600" y="550" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="900" font-size="48" fill="#334155" opacity="0.3">3 + 5 = P</text>
+</svg>

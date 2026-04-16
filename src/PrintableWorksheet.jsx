@@ -51,7 +51,7 @@ import {
   Lightbulb,
   Zap,
 } from "lucide-react";
-import { generateWorksheetSet, MODES, MAX_LEVEL } from "./mathEngine";
+import { generateWorksheetSet, MODES } from "./mathEngine";
 import { useTheme } from "./ThemeContext";
 
 const MODE_CONFIG = {
@@ -120,6 +120,7 @@ export default function PrintableWorksheet() {
   const [problemCount, setProblemCount] = useState(15);
   const [sheetCount, setSheetCount] = useState(1);
   const [generated, setGenerated] = useState(false);
+  const [showAnswerKey, setShowAnswerKey] = useState(true);
 
   const sheets = useMemo(() => {
     if (!generated) return [];
@@ -250,6 +251,25 @@ export default function PrintableWorksheet() {
             </div>
           </div>
 
+          {/* Answer Key toggle */}
+          <div className="flex items-center justify-between">
+            <p className={`text-sm font-semibold ${theme.textSecondary} uppercase tracking-wide`}>
+              Include Answer Key
+            </p>
+            <button
+              className={`relative w-12 h-7 rounded-full transition-colors cursor-pointer ${
+                showAnswerKey ? "bg-emerald-400" : "bg-gray-300"
+              }`}
+              onClick={() => setShowAnswerKey(!showAnswerKey)}
+            >
+              <span
+                className={`absolute top-0.5 left-0.5 w-6 h-6 bg-white rounded-full shadow transition-transform ${
+                  showAnswerKey ? "translate-x-5" : ""
+                }`}
+              />
+            </button>
+          </div>
+
           {/* Buttons */}
           <div className="flex gap-3">
             <motion.button
@@ -338,6 +358,41 @@ export default function PrintableWorksheet() {
               <Trophy className="h-6 w-6 text-yellow-500 fill-yellow-400" />
             </div>
           </div>
+
+          {showAnswerKey && (
+            <div
+              className="bg-white rounded-3xl shadow-lg p-8 mt-4 print:shadow-none print:rounded-none print:p-6"
+              style={{ pageBreakBefore: "always" }}
+            >
+              <div className="flex items-center justify-center gap-3 mb-2">
+                <Sparkles className="h-6 w-6 text-violet-400 print:h-5 print:w-5" />
+                <h2 className="text-2xl font-extrabold text-slate-700 print:text-xl">
+                  Answer Key
+                  {sheets.length > 1 && (
+                    <span className="text-lg text-slate-400 font-bold ml-2">
+                      ({sheetIdx + 1}/{sheets.length})
+                    </span>
+                  )}
+                </h2>
+                <Sparkles className="h-6 w-6 text-violet-400 print:h-5 print:w-5" />
+              </div>
+              <p className="text-sm text-slate-400 text-center mb-4">
+                {MODE_CONFIG[mode].label} &middot; Level {level} ({levelLabel})
+              </p>
+              <div className="grid grid-cols-3 sm:grid-cols-4 gap-x-6 gap-y-3">
+                {sheet.problems.map((q, i) => (
+                  <div key={i} className="flex items-center gap-1.5">
+                    <span className="text-sm font-bold text-slate-400 w-6 text-right">
+                      {i + 1})
+                    </span>
+                    <span className="text-base font-bold text-slate-600">
+                      {q.a} {q.op} {q.b} = <span className="text-emerald-600">{q.answer}</span>
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       ))}
     </div>

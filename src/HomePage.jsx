@@ -43,7 +43,7 @@ const STEPS = [
   {
     icon: Settings,
     title: "Pick your math type",
-    desc: "Choose addition, subtraction, or multiplication and set your difficulty.",
+    desc: "Choose addition, subtraction, or multiplication — difficulty adapts to you!",
   },
   {
     icon: MousePointerClick,
@@ -53,7 +53,7 @@ const STEPS = [
   {
     icon: Trophy,
     title: "Earn stars & level up",
-    desc: "Collect gold stars for every correct answer and unlock Boss Levels!",
+    desc: "Collect gold stars for correct answers and level up as you improve!",
   },
 ];
 

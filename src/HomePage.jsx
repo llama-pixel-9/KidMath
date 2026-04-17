@@ -231,6 +231,12 @@ export default function HomePage({ onNavigate }) {
 
       {/* Footer */}
       <footer className={`px-4 py-8 text-center border-t ${theme.bg}`}>
+        <button
+          className={`mb-3 px-4 py-2 rounded-xl text-sm font-bold cursor-pointer ${theme.ctaSecondary}`}
+          onClick={() => onNavigate("about")}
+        >
+          Why this works
+        </button>
         <p className={`text-sm ${theme.textMuted} flex items-center justify-center gap-1`}>
           Made with <Heart className="h-4 w-4 text-red-400 fill-red-400" /> for
           young math explorers

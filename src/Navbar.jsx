@@ -5,6 +5,7 @@ import {
   Home,
   Gamepad2,
   FileText,
+  Info,
   Menu,
   X,
   Palette,
@@ -20,6 +21,7 @@ const NAV_ITEMS = [
   { id: "home", label: "Home", icon: Home },
   { id: "game", label: "Play", icon: Gamepad2 },
   { id: "worksheet", label: "Worksheets", icon: FileText },
+  { id: "about", label: "About", icon: Info },
 ];
 
 function ThemePicker() {

@@ -381,12 +381,40 @@ function LoginPromptModal({ onLogin, onDismiss }) {
   );
 }
 
-function QuestionDisplay({ question, mode, modeColor }) {
+function AnswerSlot({ feedback, revealAnswer }) {
+  if (feedback === "correct" && revealAnswer != null) {
+    return (
+      <motion.span
+        className="text-emerald-500"
+        initial={{ scale: 0, rotate: -20 }}
+        animate={{ scale: [0, 1.4, 1], rotate: 0 }}
+        transition={{ duration: 0.4, type: "spring", stiffness: 300 }}
+      >
+        {revealAnswer}
+      </motion.span>
+    );
+  }
+  if (feedback === "wrong" && revealAnswer != null) {
+    return (
+      <motion.span
+        className="text-emerald-500"
+        initial={{ opacity: 0, y: 8 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3 }}
+      >
+        {revealAnswer}
+      </motion.span>
+    );
+  }
+  return <span className="text-amber-400">?</span>;
+}
+
+function QuestionDisplay({ question, mode, modeColor, feedback, revealAnswer }) {
   const { theme } = useTheme();
   const q = question;
+  const showAnswer = feedback && revealAnswer != null;
 
   if (q.display?.emoji) {
-    // Counting mode: show emoji objects
     const items = Array.from({ length: q.display.count }, (_, i) => (
       <span key={i} className="text-3xl sm:text-4xl">{q.display.emoji}</span>
     ));
@@ -401,7 +429,6 @@ function QuestionDisplay({ question, mode, modeColor }) {
   }
 
   if (q.display?.sequence) {
-    // Skip counting mode: show sequence with blank
     return (
       <div className="text-center">
         <p className={`text-sm font-bold ${theme.textMuted} mb-3 uppercase tracking-wide`}>What comes next?</p>
@@ -413,39 +440,99 @@ function QuestionDisplay({ question, mode, modeColor }) {
             </span>
           ))}
           <span className={`${theme.textMuted} mx-1`}>,</span>
-          <span className="text-amber-400">?</span>
+          <AnswerSlot feedback={feedback} revealAnswer={revealAnswer} />
         </div>
       </div>
     );
   }
 
   if (q.display?.promptText) {
-    // Place value mode: show text prompt
     return (
       <div className="text-center">
         <p className={`text-2xl sm:text-3xl font-extrabold ${theme.textPrimary}`}>
           {q.display.promptText}
         </p>
+        {showAnswer && (
+          <div className="mt-2 text-4xl sm:text-5xl font-extrabold">
+            <AnswerSlot feedback={feedback} revealAnswer={revealAnswer} />
+          </div>
+        )}
       </div>
     );
   }
 
   if (q.op === "?") {
-    // Comparing mode: show a ? b
     return (
       <div className={`flex items-center justify-center gap-4 text-5xl sm:text-6xl font-extrabold ${theme.textPrimary}`}>
         <span>{q.a}</span>
         <span
           className={`${modeColor} text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center text-3xl sm:text-4xl`}
         >
-          ?
+          {showAnswer ? <AnswerSlot feedback={feedback} revealAnswer={revealAnswer} /> : "?"}
         </span>
         <span>{q.b}</span>
       </div>
     );
   }
 
-  // Default: a op b = ?
+  // Vertical form for addition/subtraction with double-digit numbers
+  const isVertical = (q.op === "+" || q.op === "−") && (q.a >= 10 || q.b >= 10);
+
+  if (isVertical) {
+    const aDigits = String(q.a).split("");
+    const bDigits = String(q.b).split("");
+    const ansLen = String(q.answer).length;
+    const maxLen = Math.max(aDigits.length, bDigits.length, ansLen);
+    const cols = maxLen + 1; // +1 for operator column
+    const padA = cols - aDigits.length;
+    const padB = cols - bDigits.length - 1; // -1 because operator takes first cell
+
+    return (
+      <div className="flex justify-center">
+        <div
+          className={`inline-grid items-center justify-items-center font-extrabold ${theme.textPrimary}`}
+          style={{
+            gridTemplateColumns: `repeat(${cols}, 0.75em)`,
+            fontSize: "clamp(2.5rem, 8vw, 3.5rem)",
+            lineHeight: 1.4,
+          }}
+        >
+          {Array.from({ length: padA }, (_, i) => <span key={`pa${i}`} />)}
+          {aDigits.map((d, i) => <span key={`a${i}`}>{d}</span>)}
+
+          <span className="text-[0.85em]">{q.op}</span>
+          {Array.from({ length: padB }, (_, i) => <span key={`pb${i}`} />)}
+          {bDigits.map((d, i) => <span key={`b${i}`}>{d}</span>)}
+
+          <span className="border-b-4 border-slate-400 w-full my-1" style={{ gridColumn: "1 / -1" }} />
+
+          {showAnswer ? (
+            <>
+              {Array.from({ length: cols - String(revealAnswer).length }, (_, i) => <span key={`pans${i}`} />)}
+              {String(revealAnswer).split("").map((d, i) => (
+                <motion.span
+                  key={`ans${i}`}
+                  className="text-emerald-500"
+                  initial={{ scale: 0, rotate: -20 }}
+                  animate={{ scale: [0, 1.4, 1], rotate: 0 }}
+                  transition={{ delay: i * 0.08, duration: 0.4, type: "spring", stiffness: 300 }}
+                >
+                  {d}
+                </motion.span>
+              ))}
+            </>
+          ) : (
+            <>
+              {Array.from({ length: cols - 1 }, (_, i) => <span key={`pq${i}`} />)}
+              <span className="text-amber-400">?</span>
+            </>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // Default horizontal: a op b = ?
   return (
     <div className={`flex items-center justify-center gap-3 text-5xl sm:text-6xl font-extrabold ${theme.textPrimary}`}>
       <span>{q.a}</span>
@@ -456,7 +543,7 @@ function QuestionDisplay({ question, mode, modeColor }) {
       </span>
       <span>{q.b}</span>
       <span className={theme.textMuted}>=</span>
-      <span className="text-amber-400">?</span>
+      <AnswerSlot feedback={feedback} revealAnswer={revealAnswer} />
     </div>
   );
 }
@@ -555,6 +642,7 @@ export default function MathExplorer({ initialMode }) {
 
     if (result.correct) {
       setFeedback("correct");
+      setRevealAnswer(currentQ.answer);
 
       if (result.levelChanged && result.newLevel > session.level) {
         playLevelUpSound();
@@ -679,7 +767,7 @@ export default function MathExplorer({ initialMode }) {
                 Let's try this one again!
               </p>
             )}
-            <QuestionDisplay question={currentQ} mode={mode} modeColor={modeColor} />
+            <QuestionDisplay question={currentQ} mode={mode} modeColor={modeColor} feedback={feedback} revealAnswer={revealAnswer} />
           </motion.section>
         </AnimatePresence>
 

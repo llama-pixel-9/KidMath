@@ -27,4 +27,13 @@ body {
   .no-print {
     display: none !important;
   }
+
+  @page {
+    size: letter;
+    margin: 0.5in;
+  }
+
+  body {
+    font-size: 12pt;
+  }
 }

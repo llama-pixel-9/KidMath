@@ -50,6 +50,26 @@ function getModeLabel(modeId) {
   return getModeConfig(modeId).label;
 }
 
+const WORD_PROBLEM_PREF_KEY = "kidmath-allow-word-problems";
+
+function loadAllowWordProblemsPreference() {
+  try {
+    const raw = localStorage.getItem(WORD_PROBLEM_PREF_KEY);
+    if (raw == null) return true;
+    return raw === "true";
+  } catch {
+    return true;
+  }
+}
+
+function saveAllowWordProblemsPreference(value) {
+  try {
+    localStorage.setItem(WORD_PROBLEM_PREF_KEY, String(value));
+  } catch {
+    // Ignore localStorage issues and keep runtime preference.
+  }
+}
+
 const LEVEL_RING_COLORS = [
   "stroke-sky-300",
   "stroke-sky-400",
@@ -271,7 +291,7 @@ function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, li
   );
 }
 
-function SettingsPanel({ mode, onModeChange, onClose }) {
+function SettingsPanel({ mode, allowWordProblems, onAllowWordProblemsChange, onModeChange, onClose }) {
   const { theme } = useTheme();
   return (
     <motion.div
@@ -320,6 +340,28 @@ function SettingsPanel({ mode, onModeChange, onClose }) {
         <p className={`text-xs ${theme.textMuted} text-center mb-4`}>
           Difficulty adjusts automatically based on how you play!
         </p>
+
+        <div className="mb-5 flex items-center justify-between gap-3 rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3">
+          <div>
+            <p className={`text-sm font-bold ${theme.textPrimary}`}>Allow Word Problems</p>
+            <p className={`text-xs ${theme.textMuted}`}>
+              Story questions for stronger readers.
+            </p>
+          </div>
+          <button
+            className={`relative w-12 h-7 rounded-full transition-colors cursor-pointer ${
+              allowWordProblems ? "bg-emerald-400" : "bg-gray-300"
+            }`}
+            onClick={() => onAllowWordProblemsChange(!allowWordProblems)}
+            aria-label={allowWordProblems ? "Disable word problems" : "Enable word problems"}
+          >
+            <span
+              className={`absolute top-0.5 left-0.5 w-6 h-6 bg-white rounded-full shadow transition-transform ${
+                allowWordProblems ? "translate-x-5" : ""
+              }`}
+            />
+          </button>
+        </div>
 
         <motion.button
           className={`w-full py-3 bg-gradient-to-r ${theme.ctaPrimary} text-white font-bold text-lg rounded-2xl shadow-lg cursor-pointer`}
@@ -409,7 +451,7 @@ function AnswerSlot({ feedback, revealAnswer }) {
   return <span className="text-amber-400">?</span>;
 }
 
-function QuestionDisplay({ question, mode, modeColor, feedback, revealAnswer }) {
+function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
   const { theme } = useTheme();
   const q = question;
   const showAnswer = feedback && revealAnswer != null;
@@ -447,11 +489,30 @@ function QuestionDisplay({ question, mode, modeColor, feedback, revealAnswer }) 
   }
 
   if (q.display?.promptText) {
+    const promptLines = q.display.promptText
+      .split(/(?<=[.!?])\s+/)
+      .map((line) => line.trim())
+      .filter(Boolean);
+    const isStoryProblem = q.metadata?.itemFamily === "application";
     return (
-      <div className="text-center">
-        <p className={`text-2xl sm:text-3xl font-extrabold ${theme.textPrimary}`}>
-          {q.display.promptText}
-        </p>
+      <div className="text-center space-y-2">
+        {isStoryProblem && (
+          <p className={`text-xs sm:text-sm font-bold uppercase tracking-wide ${theme.textMuted}`}>
+            Story problem
+          </p>
+        )}
+        <div className="space-y-1">
+          {(promptLines.length > 0 ? promptLines : [q.display.promptText]).map((line, index, arr) => (
+            <p
+              key={`${line}-${index}`}
+              className={`${
+                index === arr.length - 1 ? "text-2xl sm:text-3xl" : "text-xl sm:text-2xl"
+              } font-extrabold ${theme.textPrimary} leading-snug`}
+            >
+              {line}
+            </p>
+          ))}
+        </div>
         {showAnswer && (
           <div className="mt-2 text-4xl sm:text-5xl font-extrabold">
             <AnswerSlot feedback={feedback} revealAnswer={revealAnswer} />
@@ -565,6 +626,7 @@ export default function MathExplorer({ initialMode }) {
   const [lifetimeStars, setLifetimeStars] = useState(0);
   const [showLoginPrompt, setShowLoginPrompt] = useState(false);
   const [muted, setMutedState] = useState(isMuted);
+  const [allowWordProblems, setAllowWordProblems] = useState(() => loadAllowWordProblemsPreference());
   const questionStartTime = useRef(Date.now());
   const loginTimerRef = useRef(null);
   const questionKeyRef = useRef(0);
@@ -577,14 +639,16 @@ export default function MathExplorer({ initialMode }) {
     questionKeyRef.current += 1;
   }, []);
 
-  const startNewSession = useCallback((m) => {
-    const newSession = createAdaptiveSession(m || mode);
+  const startNewSession = useCallback((m, allowWordProblemsOverride = allowWordProblems) => {
+    const newSession = createAdaptiveSession(m || mode, undefined, {
+      allowWordProblems: allowWordProblemsOverride,
+    });
     setSession(newSession);
     setFeedback(null);
     setRevealAnswer(null);
     setShowComplete(false);
     loadNextQuestion(newSession);
-  }, [mode, loadNextQuestion]);
+  }, [mode, allowWordProblems, loadNextQuestion]);
 
   useEffect(() => {
     loadNextQuestion(session);
@@ -596,14 +660,14 @@ export default function MathExplorer({ initialMode }) {
     (async () => {
       await mergeLocalToCloud(user.id);
       const saved = await loadProgress(mode);
-      const newSession = createAdaptiveSession(mode);
+      const newSession = createAdaptiveSession(mode, undefined, { allowWordProblems });
       newSession.level = saved.level;
       newSession.mistakeBank = saved.mistakeBank;
       setSession(newSession);
       loadNextQuestion(newSession);
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [user]);
+  }, [user, allowWordProblems, mode, loadNextQuestion]);
 
   useEffect(() => {
     if (user) return;
@@ -624,6 +688,12 @@ export default function MathExplorer({ initialMode }) {
     const next = !muted;
     setMutedState(next);
     setMuted(next);
+  };
+
+  const handleAllowWordProblemsChange = (value) => {
+    setAllowWordProblems(value);
+    saveAllowWordProblemsPreference(value);
+    startNewSession(mode, value);
   };
 
   const finishSession = useCallback(async (sess) => {
@@ -767,7 +837,7 @@ export default function MathExplorer({ initialMode }) {
                 Let's try this one again!
               </p>
             )}
-            <QuestionDisplay question={currentQ} mode={mode} modeColor={modeColor} feedback={feedback} revealAnswer={revealAnswer} />
+            <QuestionDisplay question={currentQ} modeColor={modeColor} feedback={feedback} revealAnswer={revealAnswer} />
           </motion.section>
         </AnimatePresence>
 
@@ -825,6 +895,8 @@ export default function MathExplorer({ initialMode }) {
         {showSettings && (
           <SettingsPanel
             mode={mode}
+            allowWordProblems={allowWordProblems}
+            onAllowWordProblemsChange={handleAllowWordProblemsChange}
             onModeChange={handleModeChange}
             onClose={() => setShowSettings(false)}
           />

@@ -95,7 +95,7 @@ export default function HomePage({ onNavigate }) {
           <div className={`inline-flex items-center gap-2 ${theme.cardBg} backdrop-blur rounded-full px-4 py-1.5 mb-6 shadow-sm`}>
             <span className="text-lg">{theme.emoji}</span>
             <span className={`text-sm font-semibold ${theme.textSecondary}`}>
-              Free math practice for K-3
+              Free math practice for K-5
             </span>
           </div>
           <h1 className={`text-5xl sm:text-6xl font-extrabold ${theme.textPrimary} leading-tight`}>

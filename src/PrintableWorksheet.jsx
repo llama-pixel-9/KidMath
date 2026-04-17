@@ -126,6 +126,46 @@ function getDecoIcon(icons, index) {
 
 const BLANK = <span className="inline-block border-b-2 border-slate-300 w-12 print:w-14" />;
 
+function VerticalProblem({ a, b, op, answer }) {
+  const aDigits = String(a).split("");
+  const bDigits = String(b).split("");
+  const ansLen = answer != null ? String(answer).length : Math.max(aDigits.length, bDigits.length);
+  const maxLen = Math.max(aDigits.length, bDigits.length, ansLen);
+  const cols = maxLen + 1;
+  const padA = cols - aDigits.length;
+  const padB = cols - bDigits.length - 1;
+
+  return (
+    <span
+      className="inline-grid items-center justify-items-center"
+      style={{ gridTemplateColumns: `repeat(${cols}, 0.75em)`, verticalAlign: "middle", lineHeight: 1.3 }}
+    >
+      {Array.from({ length: padA }, (_, i) => <span key={`pa${i}`} />)}
+      {aDigits.map((d, i) => <span key={`a${i}`}>{d}</span>)}
+
+      <span className="text-[0.85em]">{op}</span>
+      {Array.from({ length: padB }, (_, i) => <span key={`pb${i}`} />)}
+      {bDigits.map((d, i) => <span key={`b${i}`}>{d}</span>)}
+
+      <span className="border-t-2 border-slate-400 w-full" style={{ gridColumn: "1 / -1", marginTop: "2px" }} />
+
+      {answer != null ? (
+        <>
+          {Array.from({ length: cols - String(answer).length }, (_, i) => <span key={`pc${i}`} />)}
+          {String(answer).split("").map((d, i) => (
+            <span key={`ans${i}`} className="text-emerald-600">{d}</span>
+          ))}
+        </>
+      ) : (
+        <span
+          className="border-b-2 border-slate-300 w-full"
+          style={{ gridColumn: "1 / -1", height: "1.2em" }}
+        />
+      )}
+    </span>
+  );
+}
+
 function WorksheetProblem({ question: q }) {
   if (q.display?.promptText) {
     return <>{q.display.promptText} {BLANK}</>;
@@ -140,6 +180,9 @@ function WorksheetProblem({ question: q }) {
   if (q.op === "?") {
     return <>{q.a} {BLANK} {q.b}</>;
   }
+  if ((q.op === "+" || q.op === "−") && (q.a >= 10 || q.b >= 10)) {
+    return <VerticalProblem a={q.a} b={q.b} op={q.op} />;
+  }
   return <>{q.a} {q.op} {q.b} = {BLANK}</>;
 }
 
@@ -153,6 +196,9 @@ function AnswerKeyProblem({ question: q }) {
   if (q.op === "?") {
     return <>{q.a} <span className="text-emerald-600">{q.answer}</span> {q.b}</>;
   }
+  if ((q.op === "+" || q.op === "−") && (q.a >= 10 || q.b >= 10)) {
+    return <VerticalProblem a={q.a} b={q.b} op={q.op} answer={q.answer} />;
+  }
   return <>{q.a} {q.op} {q.b} = <span className="text-emerald-600">{q.answer}</span></>;
 }
 
@@ -160,7 +206,7 @@ export default function PrintableWorksheet() {
   const { theme } = useTheme();
   const [mode, setMode] = useState("addition");
   const [level, setLevel] = useState(1);
-  const [problemCount, setProblemCount] = useState(15);
+  const [problemCount, setProblemCount] = useState(20);
   const [sheetCount, setSheetCount] = useState(1);
   const [generated, setGenerated] = useState(false);
   const [showAnswerKey, setShowAnswerKey] = useState(true);
@@ -256,7 +302,7 @@ export default function PrintableWorksheet() {
               Number of Problems
             </p>
             <div className="flex gap-2">
-              {[10, 15, 20].map((n) => (
+              {[20, 30, 40].map((n) => (
                 <button
                   key={n}
                   className={`flex-1 py-3 rounded-2xl border-2 font-bold text-lg cursor-pointer transition-colors ${
@@ -345,59 +391,59 @@ export default function PrintableWorksheet() {
           className="max-w-2xl mx-auto px-4 pb-8 print:px-0 print:pb-0 print:max-w-none"
           style={sheetIdx > 0 ? { pageBreakBefore: "always" } : undefined}
         >
-          <div className="bg-white rounded-3xl shadow-lg p-8 print:shadow-none print:rounded-none print:p-6">
-            <div className="flex items-center justify-center gap-3 mb-2">
-              <Star className="h-8 w-8 text-yellow-500 fill-yellow-400 print:h-6 print:w-6" />
-              <h2 className="text-3xl font-extrabold text-slate-700 print:text-2xl">
+          <div className="bg-white rounded-3xl shadow-lg p-8 print:shadow-none print:rounded-none print:p-4">
+            <div className="flex items-center justify-center gap-3 mb-1 print:mb-0">
+              <Star className="h-8 w-8 text-yellow-500 fill-yellow-400 print:h-5 print:w-5" />
+              <h2 className="text-3xl font-extrabold text-slate-700 print:text-xl">
                 Math Worksheet
                 {sheets.length > 1 && (
-                  <span className="text-lg text-slate-400 font-bold ml-2">
+                  <span className="text-lg text-slate-400 font-bold ml-2 print:text-sm">
                     ({sheetIdx + 1}/{sheets.length})
                   </span>
                 )}
               </h2>
-              <Star className="h-8 w-8 text-yellow-500 fill-yellow-400 print:h-6 print:w-6" />
+              <Star className="h-8 w-8 text-yellow-500 fill-yellow-400 print:h-5 print:w-5" />
             </div>
 
-            <div className="flex justify-between items-center mb-1 text-sm text-slate-500">
+            <div className="flex justify-between items-center mb-1 text-sm text-slate-500 print:text-xs print:mb-0">
               <span className="font-semibold">
                 {getWorksheetModeConfig(mode).label} &middot; Level {level} ({levelLabel})
               </span>
             </div>
 
-            <div className="flex gap-6 mb-6 border-b-2 border-dashed border-slate-200 pb-4">
-              <label className="flex items-end gap-2 text-slate-600 font-medium pt-4">
+            <div className="flex gap-6 mb-4 border-b-2 border-dashed border-slate-200 pb-3 print:mb-2 print:pb-2">
+              <label className="flex items-end gap-2 text-slate-600 font-medium pt-3 print:pt-1 print:text-sm">
                 Name:
-                <span className="inline-block border-b-2 border-slate-300 w-40 print:w-48" />
+                <span className="inline-block border-b-2 border-slate-300 w-40 print:w-36" />
               </label>
-              <label className="flex items-end gap-2 text-slate-600 font-medium pt-4">
+              <label className="flex items-end gap-2 text-slate-600 font-medium pt-3 print:pt-1 print:text-sm">
                 Date:
-                <span className="inline-block border-b-2 border-slate-300 w-32 print:w-36" />
+                <span className="inline-block border-b-2 border-slate-300 w-32 print:w-28" />
               </label>
             </div>
 
-            <div className="grid grid-cols-2 gap-x-8 gap-y-5">
+            <div className={`grid ${problemCount <= 20 ? "grid-cols-2 gap-x-8 gap-y-5 print:gap-y-3" : problemCount <= 30 ? "grid-cols-3 gap-x-6 gap-y-4 print:gap-x-4 print:gap-y-2" : "grid-cols-4 gap-x-4 gap-y-3 print:gap-x-3 print:gap-y-1.5"}`}>
               {sheet.problems.map((q, i) => (
                 <div key={i} className="flex items-center gap-2">
-                  <span className="text-sm font-bold text-slate-400 w-6 text-right">
+                  <span className={`font-bold text-slate-400 text-right ${problemCount <= 20 ? "text-sm w-6" : problemCount <= 30 ? "text-xs w-6" : "text-[10px] w-5"}`}>
                     {i + 1})
                   </span>
-                  <span className="text-xl font-bold text-slate-700 tracking-wide">
+                  <span className={`font-bold text-slate-700 tracking-wide ${problemCount <= 20 ? "text-xl print:text-lg" : problemCount <= 30 ? "text-lg print:text-base" : "text-base print:text-sm"}`}>
                     <WorksheetProblem question={q} />
                   </span>
-                  {i % 3 === 1 && (
-                    <span className="ml-auto">{getDecoIcon(sheet.icons, i)}</span>
+                  {i % 5 === 2 && problemCount <= 20 && problemCount < 40 && (
+                    <span className="ml-auto print:hidden">{getDecoIcon(sheet.icons, i)}</span>
                   )}
                 </div>
               ))}
             </div>
 
-            <div className="mt-8 pt-4 border-t-2 border-dashed border-slate-200 flex items-center justify-center gap-3">
-              <Trophy className="h-6 w-6 text-yellow-500 fill-yellow-400" />
-              <p className="text-lg font-extrabold text-slate-600">
+            <div className="mt-4 pt-2 border-t-2 border-dashed border-slate-200 flex items-center justify-center gap-3 print:mt-2 print:pt-1">
+              <Trophy className="h-5 w-5 text-yellow-500 fill-yellow-400 print:h-4 print:w-4" />
+              <p className="text-base font-extrabold text-slate-600 print:text-sm">
                 {sheet.encouragement}
               </p>
-              <Trophy className="h-6 w-6 text-yellow-500 fill-yellow-400" />
+              <Trophy className="h-5 w-5 text-yellow-500 fill-yellow-400 print:h-4 print:w-4" />
             </div>
           </div>
 

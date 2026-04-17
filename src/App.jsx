@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import HomePage from "./HomePage";
 import MathExplorer from "./MathExplorer";
 import PrintableWorksheet from "./PrintableWorksheet";
+import AboutPage from "./AboutPage";
 import "./index.css";
 
 function AppInner() {
@@ -23,6 +24,7 @@ function AppInner() {
       {view === "home" && <HomePage onNavigate={handleNavigate} />}
       {view === "game" && <MathExplorer initialMode={initialMode} />}
       {view === "worksheet" && <PrintableWorksheet />}
+      {view === "about" && <AboutPage />}
     </div>
   );
 }

@@ -95,7 +95,7 @@ export default function HomePage({ onNavigate }) {
           <div className={`inline-flex items-center gap-2 ${theme.cardBg} backdrop-blur rounded-full px-4 py-1.5 mb-6 shadow-sm`}>
             <span className="text-lg">{theme.emoji}</span>
             <span className={`text-sm font-semibold ${theme.textSecondary}`}>
-              Free math practice for K-3
+              Free math practice for K-5
             </span>
           </div>
           <h1 className={`text-5xl sm:text-6xl font-extrabold ${theme.textPrimary} leading-tight`}>
@@ -231,6 +231,12 @@ export default function HomePage({ onNavigate }) {
 
       {/* Footer */}
       <footer className={`px-4 py-8 text-center border-t ${theme.bg}`}>
+        <button
+          className={`mb-3 px-4 py-2 rounded-xl text-sm font-bold cursor-pointer ${theme.ctaSecondary}`}
+          onClick={() => onNavigate("about")}
+        >
+          Why this works
+        </button>
         <p className={`text-sm ${theme.textMuted} flex items-center justify-center gap-1`}>
           Made with <Heart className="h-4 w-4 text-red-400 fill-red-400" /> for
           young math explorers

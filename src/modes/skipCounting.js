@@ -1,4 +1,6 @@
-import { randInt, shuffleArray } from "./helpers";
+import { randInt } from "./helpers";
+import { buildSequenceDistractors } from "./distractors";
+import { createQuestionMetadata, ITEM_FAMILIES } from "./itemMetadata";
 
 const LEVELS = [
   { step: 2, startMax: 6 },
@@ -13,6 +15,21 @@ const LEVELS = [
   { step: 4, startMax: 40 },
 ];
 
+const SUBSKILLS = ["patternRule", "stepInference", "groupsToProduct"];
+
+function chooseFamily(level, context) {
+  if (context?.itemFamily) return context.itemFamily;
+  const roll = Math.random();
+  let family;
+  if (roll < 0.4) family = ITEM_FAMILIES.CONCEPTUAL;
+  else if (roll < 0.72) family = ITEM_FAMILIES.PROCEDURAL;
+  else family = ITEM_FAMILIES.APPLICATION;
+  if (level < 7 && family === ITEM_FAMILIES.APPLICATION) {
+    return ITEM_FAMILIES.PROCEDURAL;
+  }
+  return family;
+}
+
 export default {
   id: "skipCounting",
   label: "Skip Count!",
@@ -20,9 +37,13 @@ export default {
   description: "Count by 2s, 5s, 10s and more — what comes next?",
   icon: "FastForward",
   op: "skip",
+  subskills: SUBSKILLS,
+  families: Object.values(ITEM_FAMILIES),
 
-  generate(level) {
+  generate(level, context = {}) {
     const cfg = LEVELS[level - 1];
+    const itemFamily = chooseFamily(level, context);
+    const subskill = context?.targetSubskill || SUBSKILLS[randInt(0, SUBSKILLS.length - 1)];
     const startMultiple = randInt(0, Math.floor(cfg.startMax / cfg.step));
     const start = startMultiple * cfg.step;
 
@@ -33,7 +54,7 @@ export default {
     }
     const answer = start + cfg.step * seqLen;
 
-    return {
+    const question = {
       a: null,
       b: null,
       op: "skip",
@@ -41,21 +62,29 @@ export default {
       level,
       display: { sequence, step: cfg.step },
     };
+
+    if (itemFamily === ITEM_FAMILIES.APPLICATION) {
+      question.display.promptText = `A pattern grows by ${cfg.step}. What comes next?`;
+    }
+
+    question.metadata = createQuestionMetadata({
+      modeId: "skipCounting",
+      level,
+      domain: "OA",
+      cluster: "Gain foundations for multiplication",
+      subskill,
+      itemFamily,
+      cognitiveDemand: "DOK2",
+      representation: "sequence",
+      mathPractices: ["MP1", "MP7", "MP8"],
+      standardRefs: ["2.OA", "3.OA"],
+      misconceptionTags: ["wrongStep", "offByOne", "patternReset"],
+      blueprintId: `skipCounting-${itemFamily}-${subskill}`,
+    });
+    return question;
   },
 
   generateChoices(answer, question) {
-    const step = question.display.step;
-    const choices = new Set([answer]);
-    const offsets = [step, -step, step * 2, -step * 2, 1, -1, 2, -2];
-    for (const off of shuffleArray([...offsets])) {
-      if (choices.size >= 4) break;
-      const c = answer + off;
-      if (c >= 0 && !choices.has(c)) choices.add(c);
-    }
-    while (choices.size < 4) {
-      const c = answer + randInt(1, step * 3) * (Math.random() < 0.5 ? -1 : 1);
-      if (c >= 0 && !choices.has(c)) choices.add(c);
-    }
-    return shuffleArray([...choices]);
+    return buildSequenceDistractors({ answer, step: question.display.step });
   },
 };

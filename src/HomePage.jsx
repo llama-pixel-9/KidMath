@@ -6,6 +6,11 @@ import {
   Plus,
   Minus,
   X,
+  Divide,
+  ArrowLeftRight,
+  Hash,
+  FastForward,
+  Layers,
   Settings,
   MousePointerClick,
   Trophy,
@@ -13,6 +18,9 @@ import {
   Heart,
 } from "lucide-react";
 import { useTheme } from "./ThemeContext";
+import { MODE_IDS, getModeConfig } from "./modes";
+
+const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers };
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -21,29 +29,21 @@ const fadeUp = {
   transition: { duration: 0.5, ease: "easeOut" },
 };
 
-const FEATURES = [
-  {
-    icon: Plus,
-    title: "Addition",
-    desc: "Master adding numbers from 1 all the way to 50!",
-  },
-  {
-    icon: Minus,
-    title: "Subtraction",
-    desc: "Learn to subtract without ever going negative!",
-  },
-  {
-    icon: X,
-    title: "Multiplication",
-    desc: "Conquer times tables up to 12 \u00d7 12!",
-  },
-];
+const FEATURES = MODE_IDS.map((id) => {
+  const config = getModeConfig(id);
+  return {
+    id,
+    icon: ICON_MAP[config.icon] || Plus,
+    title: config.shortLabel,
+    desc: config.description,
+  };
+});
 
 const STEPS = [
   {
     icon: Settings,
     title: "Pick your math type",
-    desc: "Choose addition, subtraction, or multiplication — difficulty adapts to you!",
+    desc: "Choose from 8 different math skills \u2014 difficulty adapts to you!",
   },
   {
     icon: MousePointerClick,
@@ -105,8 +105,8 @@ export default function HomePage({ onNavigate }) {
             </span>
           </h1>
           <p className={`mt-4 text-lg sm:text-xl ${theme.textSecondary} max-w-md mx-auto`}>
-            Make math your superpower! Practice addition, subtraction, and
-            multiplication with fun animations and star rewards.
+            Make math your superpower! 8 skills from counting to place value,
+            with fun animations and star rewards.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
             <motion.button
@@ -130,33 +130,36 @@ export default function HomePage({ onNavigate }) {
       </section>
 
       {/* Features */}
-      <section className="px-4 py-16 max-w-4xl mx-auto">
+      <section className="px-4 py-16 max-w-5xl mx-auto">
         <motion.h2
           className={`text-3xl font-extrabold ${theme.textPrimary} text-center mb-10`}
           {...fadeUp}
         >
-          Three Ways to Practice
+          8 Ways to Practice
         </motion.h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {FEATURES.map((f, i) => {
             const Icon = f.icon;
-            const card = theme.featureCards[i];
+            const card = theme.featureCards[i % theme.featureCards.length];
             return (
               <motion.div
                 key={f.title}
-                className={`${card.bg} rounded-3xl p-6 text-center shadow-sm`}
+                className={`${card.bg} rounded-3xl p-5 text-center shadow-sm cursor-pointer`}
                 {...fadeUp}
-                transition={{ ...fadeUp.transition, delay: i * 0.1 }}
+                transition={{ ...fadeUp.transition, delay: i * 0.06 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => onNavigate("game", f.id)}
               >
                 <div
-                  className={`inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br ${card.gradient} shadow-md mb-4`}
+                  className={`inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br ${card.gradient} shadow-md mb-3`}
                 >
-                  <Icon className="h-7 w-7 text-white" />
+                  <Icon className="h-6 w-6 text-white" />
                 </div>
-                <h3 className={`text-xl font-extrabold ${theme.textPrimary}`}>
+                <h3 className={`text-base font-extrabold ${theme.textPrimary}`}>
                   {f.title}
                 </h3>
-                <p className={`mt-2 text-sm ${theme.textSecondary} leading-relaxed`}>
+                <p className={`mt-1 text-xs ${theme.textSecondary} leading-relaxed`}>
                   {f.desc}
                 </p>
               </motion.div>

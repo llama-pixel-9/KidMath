@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { ThemeProvider, useTheme } from "./ThemeContext";
+import { ThemeProvider } from "./ThemeContext";
 import { AuthProvider } from "./AuthContext";
+import { useTheme } from "./useTheme";
 import Navbar from "./Navbar";
 import HomePage from "./HomePage";
 import MathExplorer from "./MathExplorer";

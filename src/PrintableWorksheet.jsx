@@ -58,7 +58,7 @@ import {
 } from "lucide-react";
 import { generateWorksheetSet, MODES } from "./mathEngine";
 import { getModeConfig } from "./modes";
-import { useTheme } from "./ThemeContext";
+import { useTheme } from "./useTheme";
 
 const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers };
 
@@ -113,9 +113,8 @@ const LEVEL_GROUPS = [
   { label: "Advanced", levels: [7, 8, 9, 10] },
 ];
 
-function pickSheetIcons(count) {
-  const shuffled = [...DECO_ICONS].sort(() => Math.random() - 0.5);
-  return shuffled.slice(0, count);
+function pickSheetIcons(count, offset = 0) {
+  return Array.from({ length: count }, (_, i) => DECO_ICONS[(offset + i) % DECO_ICONS.length]);
 }
 
 function getDecoIcon(icons, index) {
@@ -210,15 +209,16 @@ export default function PrintableWorksheet() {
   const [sheetCount, setSheetCount] = useState(1);
   const [generated, setGenerated] = useState(false);
   const [showAnswerKey, setShowAnswerKey] = useState(true);
+  const [allowWordProblems, setAllowWordProblems] = useState(false);
 
   const sheets = useMemo(() => {
     if (!generated) return [];
-    return Array.from({ length: sheetCount }, () => ({
-      problems: generateWorksheetSet(mode, level, problemCount),
-      encouragement: ENCOURAGEMENTS[Math.floor(Math.random() * ENCOURAGEMENTS.length)],
-      icons: pickSheetIcons(10),
+    return Array.from({ length: sheetCount }, (_, sheetIdx) => ({
+      problems: generateWorksheetSet(mode, level, problemCount, { allowWordProblems }),
+      encouragement: ENCOURAGEMENTS[sheetIdx % ENCOURAGEMENTS.length],
+      icons: pickSheetIcons(10, sheetIdx * 3),
     }));
-  }, [generated, mode, level, problemCount, sheetCount]);
+  }, [generated, mode, level, problemCount, sheetCount, allowWordProblems]);
 
   const handleGenerate = () => {
     setGenerated(false);
@@ -354,6 +354,34 @@ export default function PrintableWorksheet() {
               <span
                 className={`absolute top-0.5 left-0.5 w-6 h-6 bg-white rounded-full shadow transition-transform ${
                   showAnswerKey ? "translate-x-5" : ""
+                }`}
+              />
+            </button>
+          </div>
+
+          {/* Word Problems toggle */}
+          <div className="flex items-center justify-between">
+            <div>
+              <p className={`text-sm font-semibold ${theme.textSecondary} uppercase tracking-wide`}>
+                Allow Word Problems
+              </p>
+              <p className={`text-xs ${theme.textMuted}`}>
+                Story-style questions on worksheets
+              </p>
+            </div>
+            <button
+              className={`relative w-12 h-7 rounded-full transition-colors cursor-pointer ${
+                allowWordProblems ? "bg-emerald-400" : "bg-gray-300"
+              }`}
+              onClick={() => {
+                setAllowWordProblems(!allowWordProblems);
+                setGenerated(false);
+              }}
+              aria-label={allowWordProblems ? "Disable word problems" : "Enable word problems"}
+            >
+              <span
+                className={`absolute top-0.5 left-0.5 w-6 h-6 bg-white rounded-full shadow transition-transform ${
+                  allowWordProblems ? "translate-x-5" : ""
                 }`}
               />
             </button>

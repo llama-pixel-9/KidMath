@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, MotionConfig, useReducedMotion } from "framer-motion";
 import {
   Plus,
   Minus,
@@ -27,8 +27,8 @@ import {
 } from "./mathEngine";
 import { getModeConfig } from "./modes";
 import { saveProgress, loadProgress, mergeLocalToCloud } from "./progressStore";
-import { useAuth } from "./AuthContext";
-import { useTheme } from "./ThemeContext";
+import { useAuth } from "./useAuth";
+import { useTheme } from "./useTheme";
 import {
   playCorrectSound,
   playStreakSound,
@@ -55,10 +55,10 @@ const WORD_PROBLEM_PREF_KEY = "kidmath-allow-word-problems";
 function loadAllowWordProblemsPreference() {
   try {
     const raw = localStorage.getItem(WORD_PROBLEM_PREF_KEY);
-    if (raw == null) return true;
+    if (raw == null) return false;
     return raw === "true";
   } catch {
-    return true;
+    return false;
   }
 }
 
@@ -69,6 +69,18 @@ function saveAllowWordProblemsPreference(value) {
     // Ignore localStorage issues and keep runtime preference.
   }
 }
+
+const CONFETTI_PARTICLES = Array.from({ length: 12 }, (_, i) => {
+  const angle = (i / 12) * Math.PI * 2;
+  const distance = 70 + (i % 4) * 12;
+  return {
+    id: i,
+    x: Math.cos(angle) * distance,
+    y: Math.sin(angle) * distance,
+    color: ["bg-yellow-400", "bg-pink-400", "bg-sky-400", "bg-lime-400", "bg-violet-400", "bg-orange-400"][i % 6],
+    size: 10 + (i % 3) * 3,
+  };
+});
 
 const LEVEL_RING_COLORS = [
   "stroke-sky-300",
@@ -83,6 +95,15 @@ const LEVEL_RING_COLORS = [
   "stroke-pink-500",
 ];
 
+function isLikelyIPadOrTouch() {
+  if (typeof window === "undefined") return false;
+  const ua = navigator.userAgent || "";
+  const iPadUA = /iPad/.test(ua);
+  const iPadDesktopUA = /Macintosh/.test(ua) && navigator.maxTouchPoints > 1;
+  const coarsePointer = window.matchMedia?.("(pointer: coarse)")?.matches ?? false;
+  return iPadUA || iPadDesktopUA || coarsePointer;
+}
+
 async function persistSession(mode, session) {
   await saveProgress(mode, {
     level: session.level,
@@ -93,22 +114,11 @@ async function persistSession(mode, session) {
   return progress.lifetimeStars;
 }
 
-function ConfettiBurst() {
-  const particles = Array.from({ length: 12 }, (_, i) => {
-    const angle = (i / 12) * Math.PI * 2;
-    const distance = 60 + Math.random() * 50;
-    return {
-      id: i,
-      x: Math.cos(angle) * distance,
-      y: Math.sin(angle) * distance,
-      color: ["bg-yellow-400", "bg-pink-400", "bg-sky-400", "bg-lime-400", "bg-violet-400", "bg-orange-400"][i % 6],
-      size: 8 + Math.random() * 10,
-    };
-  });
-
+function ConfettiBurst({ disabled }) {
+  if (disabled) return null;
   return (
     <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-      {particles.map((p) => (
+      {CONFETTI_PARTICLES.map((p) => (
         <motion.div
           key={p.id}
           className={`absolute rounded-full ${p.color}`}
@@ -613,6 +623,8 @@ export default function MathExplorer({ initialMode }) {
   const startMode = initialMode || "addition";
   const { theme } = useTheme();
   const { user, signInWithGoogle } = useAuth();
+  const prefersReducedMotion = useReducedMotion();
+  const [touchOptimizedMode, setTouchOptimizedMode] = useState(false);
   const [mode, setMode] = useState(startMode);
   const [session, setSession] = useState(() => createAdaptiveSession(startMode));
   const [currentQ, setCurrentQ] = useState(null);
@@ -630,6 +642,21 @@ export default function MathExplorer({ initialMode }) {
   const questionStartTime = useRef(Date.now());
   const loginTimerRef = useRef(null);
   const questionKeyRef = useRef(0);
+  const timeoutIdsRef = useRef([]);
+
+  const clearQueuedTimeouts = useCallback(() => {
+    timeoutIdsRef.current.forEach((id) => clearTimeout(id));
+    timeoutIdsRef.current = [];
+  }, []);
+
+  const scheduleTimeout = useCallback((fn, delayMs) => {
+    const id = setTimeout(() => {
+      timeoutIdsRef.current = timeoutIdsRef.current.filter((timerId) => timerId !== id);
+      fn();
+    }, delayMs);
+    timeoutIdsRef.current.push(id);
+    return id;
+  }, []);
 
   const loadNextQuestion = useCallback((sess) => {
     const { question, isRetry: retry } = getNextQuestion(sess);
@@ -640,6 +667,7 @@ export default function MathExplorer({ initialMode }) {
   }, []);
 
   const startNewSession = useCallback((m, allowWordProblemsOverride = allowWordProblems) => {
+    clearQueuedTimeouts();
     const newSession = createAdaptiveSession(m || mode, undefined, {
       allowWordProblems: allowWordProblemsOverride,
     });
@@ -648,7 +676,7 @@ export default function MathExplorer({ initialMode }) {
     setRevealAnswer(null);
     setShowComplete(false);
     loadNextQuestion(newSession);
-  }, [mode, allowWordProblems, loadNextQuestion]);
+  }, [mode, allowWordProblems, loadNextQuestion, clearQueuedTimeouts]);
 
   useEffect(() => {
     loadNextQuestion(session);
@@ -666,8 +694,11 @@ export default function MathExplorer({ initialMode }) {
       setSession(newSession);
       loadNextQuestion(newSession);
     })();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user, allowWordProblems, mode, loadNextQuestion]);
+
+  useEffect(() => {
+    setTouchOptimizedMode(isLikelyIPadOrTouch());
+  }, []);
 
   useEffect(() => {
     if (user) return;
@@ -678,6 +709,12 @@ export default function MathExplorer({ initialMode }) {
     }, 10 * 60 * 1000);
     return () => clearTimeout(loginTimerRef.current);
   }, [user]);
+
+  useEffect(() => {
+    return () => {
+      clearQueuedTimeouts();
+    };
+  }, [clearQueuedTimeouts]);
 
   const handleModeChange = (m) => {
     setMode(m);
@@ -717,14 +754,14 @@ export default function MathExplorer({ initialMode }) {
       if (result.levelChanged && result.newLevel > session.level) {
         playLevelUpSound();
         setShowLevelUp(true);
-        setTimeout(() => setShowLevelUp(false), 1200);
+        scheduleTimeout(() => setShowLevelUp(false), 1200);
       } else if (result.session.correctStreak >= 3) {
         playStreakSound();
       } else {
         playCorrectSound();
       }
 
-      setTimeout(() => {
+      scheduleTimeout(() => {
         if (isSessionComplete(result.session)) {
           finishSession(result.session);
         } else {
@@ -739,7 +776,7 @@ export default function MathExplorer({ initialMode }) {
       setRevealAnswer(currentQ.answer);
       playWrongSound();
 
-      setTimeout(() => {
+      scheduleTimeout(() => {
         setFeedback(null);
         setShakenChoice(null);
         setRevealAnswer(null);
@@ -767,9 +804,11 @@ export default function MathExplorer({ initialMode }) {
 
   const modeColor = theme.modeColors[mode];
   const ModeIcon = getModeIcon(mode);
+  const lowMotionMode = Boolean(prefersReducedMotion || touchOptimizedMode);
 
   return (
-    <main className={`min-h-screen ${theme.bg} flex flex-col transition-colors duration-300`}>
+    <MotionConfig reducedMotion={lowMotionMode ? "always" : "never"}>
+      <main className={`min-h-screen ${theme.bg} flex flex-col transition-colors duration-300`}>
       <header className="no-print flex items-center justify-between px-4 py-3">
         <div className="flex items-center gap-2">
           <div className={`${modeColor} p-2 rounded-xl`}>
@@ -852,7 +891,7 @@ export default function MathExplorer({ initialMode }) {
                 className={`relative min-h-[80px] min-w-[80px] rounded-3xl bg-gradient-to-br ${theme.bubbleColors[i % theme.bubbleColors.length]} text-white text-3xl font-extrabold shadow-lg cursor-pointer select-none ${
                   isCorrectChoice || isRevealedCorrect ? "ring-4 ring-green-400" : ""
                 } ${isWrong ? "ring-4 ring-red-400" : ""}`}
-                whileHover={{ scale: 1.05 }}
+                whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
                 whileTap={{ scale: 0.9 }}
                 animate={
                   isWrong
@@ -868,7 +907,7 @@ export default function MathExplorer({ initialMode }) {
                 disabled={feedback === "correct" || feedback === "wrong"}
               >
                 {choice}
-                {isCorrectChoice && <ConfettiBurst />}
+                {isCorrectChoice && <ConfettiBurst disabled={lowMotionMode} />}
               </motion.button>
             );
           })}
@@ -921,6 +960,7 @@ export default function MathExplorer({ initialMode }) {
           <LoginPromptModal onLogin={handleLogin} onDismiss={handleLoginDismiss} />
         )}
       </AnimatePresence>
-    </main>
+      </main>
+    </MotionConfig>
   );
 }

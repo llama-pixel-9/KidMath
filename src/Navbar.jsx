@@ -13,8 +13,8 @@ import {
   LogOut,
   User,
 } from "lucide-react";
-import { useTheme } from "./ThemeContext";
-import { useAuth } from "./AuthContext";
+import { useTheme } from "./useTheme";
+import { useAuth } from "./useAuth";
 import { THEMES, THEME_IDS } from "./themes";
 
 const NAV_ITEMS = [

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { MODE_IDS, getModeConfig } from "../modes";
-import { generateQuestion, generateChoices } from "../mathEngine";
+import { generateQuestion, generateChoices, generateWorksheetSet } from "../mathEngine";
 
 describe("mode generation coverage", () => {
   it("generates valid metadata for every mode", () => {
@@ -61,6 +61,42 @@ describe("mode generation coverage", () => {
           const q = generateQuestion(mode, level);
           expect(q.metadata.itemFamily).not.toBe("application");
         }
+      }
+    }
+  });
+
+  it("supports disabling word problems through generation context", () => {
+    const storyModes = [
+      "addition",
+      "subtraction",
+      "multiplication",
+      "division",
+      "comparing",
+      "counting",
+      "skipCounting",
+    ];
+    for (const mode of storyModes) {
+      for (let i = 0; i < 40; i++) {
+        const q = generateQuestion(mode, 10, { allowWordProblems: false });
+        expect(q.metadata.itemFamily).not.toBe("application");
+      }
+    }
+  });
+
+  it("respects worksheet word-problem toggle", () => {
+    const storyModes = [
+      "addition",
+      "subtraction",
+      "multiplication",
+      "division",
+      "comparing",
+      "counting",
+      "skipCounting",
+    ];
+    for (const mode of storyModes) {
+      const set = generateWorksheetSet(mode, 10, 25, { allowWordProblems: false });
+      for (const q of set) {
+        expect(q.metadata.itemFamily).not.toBe("application");
       }
     }
   });

@@ -23,7 +23,9 @@ export function isMuted() {
 export function setMuted(muted) {
   try {
     localStorage.setItem(STORAGE_KEY, muted ? "true" : "false");
-  } catch {}
+  } catch {
+    // Ignore storage failures and keep runtime mute state.
+  }
 }
 
 function playTone(frequency, startTime, duration, type = "sine", volume = 0.15) {

@@ -17,7 +17,7 @@ import {
   FileText,
   Heart,
 } from "lucide-react";
-import { useTheme } from "./ThemeContext";
+import { useTheme } from "./useTheme";
 import { MODE_IDS, getModeConfig } from "./modes";
 
 const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers };

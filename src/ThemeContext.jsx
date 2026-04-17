@@ -1,7 +1,6 @@
-import { createContext, useContext, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { getTheme } from "./themes";
-
-const ThemeContext = createContext(null);
+import { ThemeContext } from "./ThemeContextValue";
 
 const STORAGE_KEY = "kidmath-theme";
 
@@ -17,7 +16,9 @@ export function ThemeProvider({ children }) {
   useEffect(() => {
     try {
       localStorage.setItem(STORAGE_KEY, themeId);
-    } catch {}
+    } catch {
+      // Ignore write failures in restricted/private contexts.
+    }
   }, [themeId]);
 
   const theme = getTheme(themeId);
@@ -27,10 +28,4 @@ export function ThemeProvider({ children }) {
       {children}
     </ThemeContext.Provider>
   );
-}
-
-export function useTheme() {
-  const ctx = useContext(ThemeContext);
-  if (!ctx) throw new Error("useTheme must be used within ThemeProvider");
-  return ctx;
 }

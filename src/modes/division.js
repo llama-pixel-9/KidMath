@@ -24,6 +24,9 @@ function chooseFamily(level, context) {
   if (roll < 0.34) family = ITEM_FAMILIES.CONCEPTUAL;
   else if (roll < 0.72) family = ITEM_FAMILIES.PROCEDURAL;
   else family = ITEM_FAMILIES.APPLICATION;
+  if (context?.allowWordProblems === false && family === ITEM_FAMILIES.APPLICATION) {
+    return ITEM_FAMILIES.PROCEDURAL;
+  }
   if (level < 7 && family === ITEM_FAMILIES.APPLICATION) {
     return ITEM_FAMILIES.PROCEDURAL;
   }

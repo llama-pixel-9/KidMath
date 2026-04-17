@@ -155,7 +155,7 @@ export function generateChoices(answer, count = 4, question = null) {
 export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE, options = {}) {
   const saved = loadProgressSync(mode);
   const modeConfig = getModeConfig(mode);
-  const allowWordProblems = options.allowWordProblems ?? true;
+  const allowWordProblems = options.allowWordProblems ?? false;
   return {
     mode,
     level: saved.level,
@@ -177,7 +177,12 @@ export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE, options 
 
 export function getNextQuestion(session) {
   const dueReview = session.mistakeBank.find(
-    (q) => (q.dueAt ?? RETRY_SPACING) <= session.questionsAnswered
+    (q) =>
+      (q.dueAt ?? RETRY_SPACING) <= session.questionsAnswered &&
+      !(
+        session.allowWordProblems === false &&
+        q.metadata?.itemFamily === ITEM_FAMILIES.APPLICATION
+      )
   );
   if (dueReview && session.questionsSinceRetry >= RETRY_SPACING) {
     const retryQ = { ...dueReview, mode: dueReview.mode || session.mode };
@@ -297,7 +302,7 @@ export function isSessionComplete(session) {
 export function generateWorksheetSet(mode, level, size = SESSION_SIZE, options = {}) {
   const questions = [];
   const context = {
-    allowWordProblems: options.allowWordProblems ?? true,
+    allowWordProblems: options.allowWordProblems ?? false,
   };
   for (let i = 0; i < size; i++) {
     const q = generateQuestion(mode, level, context);

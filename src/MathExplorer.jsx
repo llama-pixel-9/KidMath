@@ -627,7 +627,11 @@ export default function MathExplorer({ initialMode }) {
   const prefersReducedMotion = useReducedMotion();
   const [lowEndDevice] = useState(() => isLikelyLowEndDevice());
   const [mode, setMode] = useState(startMode);
-  const [session, setSession] = useState(() => createAdaptiveSession(startMode));
+  const [session, setSession] = useState(() =>
+    createAdaptiveSession(startMode, undefined, {
+      allowWordProblems: loadAllowWordProblemsPreference(),
+    })
+  );
   const [currentQ, setCurrentQ] = useState(null);
   const [isRetry, setIsRetry] = useState(false);
   const [feedback, setFeedback] = useState(null); // "correct" | "wrong" | null

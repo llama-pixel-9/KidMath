@@ -37,4 +37,33 @@ describe("adaptive session engine", () => {
       session = result.session;
     }
   });
+
+  it("skips due retry story items when word problems are off", () => {
+    const session = createAdaptiveSession("addition", 15, { allowWordProblems: false });
+    session.questionsAnswered = 10;
+    session.questionsSinceRetry = 10;
+    session.mistakeBank = [
+      {
+        mode: "addition",
+        a: 7,
+        b: 8,
+        op: "+",
+        answer: 15,
+        dueAt: 0,
+        itemKey: "addition|application|story",
+        metadata: {
+          modeId: "addition",
+          itemFamily: "application",
+          mathPractices: ["MP1"],
+          misconceptionTags: [],
+          cognitiveDemand: "DOK2",
+          subskill: "makeTen",
+        },
+      },
+    ];
+
+    const { question, isRetry } = getNextQuestion(session);
+    expect(isRetry).toBe(false);
+    expect(question.metadata.itemFamily).not.toBe("application");
+  });
 });

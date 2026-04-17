@@ -9,13 +9,19 @@ import "./index.css";
 
 function AppInner() {
   const [view, setView] = useState("home");
+  const [initialMode, setInitialMode] = useState(null);
   const { theme } = useTheme();
+
+  const handleNavigate = (target, mode) => {
+    if (mode) setInitialMode(mode);
+    setView(target);
+  };
 
   return (
     <div className={`min-h-screen ${theme.bg} ${theme.fontClass} transition-colors duration-300`}>
-      <Navbar currentView={view} onNavigate={setView} />
-      {view === "home" && <HomePage onNavigate={setView} />}
-      {view === "game" && <MathExplorer />}
+      <Navbar currentView={view} onNavigate={handleNavigate} />
+      {view === "home" && <HomePage onNavigate={handleNavigate} />}
+      {view === "game" && <MathExplorer initialMode={initialMode} />}
       {view === "worksheet" && <PrintableWorksheet />}
     </div>
   );

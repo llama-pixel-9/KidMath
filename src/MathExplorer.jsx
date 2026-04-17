@@ -4,6 +4,11 @@ import {
   Plus,
   Minus,
   X,
+  Divide,
+  ArrowLeftRight,
+  Hash,
+  FastForward,
+  Layers,
   Star,
   Settings,
   Trophy,
@@ -20,6 +25,7 @@ import {
   isSessionComplete,
   MODES,
 } from "./mathEngine";
+import { getModeConfig } from "./modes";
 import { saveProgress, loadProgress, mergeLocalToCloud } from "./progressStore";
 import { useAuth } from "./AuthContext";
 import { useTheme } from "./ThemeContext";
@@ -33,12 +39,16 @@ import {
   setMuted,
 } from "./sounds";
 
-const MODE_ICONS = { addition: Plus, subtraction: Minus, multiplication: X };
-const MODE_LABELS = {
-  addition: "Addition Fun!",
-  subtraction: "Subtraction Quest!",
-  multiplication: "Multiply Mania!",
-};
+const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers };
+
+function getModeIcon(modeId) {
+  const config = getModeConfig(modeId);
+  return ICON_MAP[config.icon] || Plus;
+}
+
+function getModeLabel(modeId) {
+  return getModeConfig(modeId).label;
+}
 
 const LEVEL_RING_COLORS = [
   "stroke-sky-300",
@@ -283,22 +293,23 @@ function SettingsPanel({ mode, onModeChange, onClose }) {
 
         <div className="mb-5">
           <p className={`text-sm font-semibold ${theme.textSecondary} mb-2 uppercase tracking-wide`}>Mode</p>
-          <div className="grid grid-cols-3 gap-2">
+          <div className="grid grid-cols-4 gap-2">
             {MODES.map((m) => {
-              const Icon = MODE_ICONS[m];
+              const Icon = getModeIcon(m);
+              const config = getModeConfig(m);
               const active = m === mode;
               return (
                 <motion.button
                   key={m}
-                  className={`flex flex-col items-center gap-1 p-3 rounded-2xl border-2 cursor-pointer transition-colors ${
+                  className={`flex flex-col items-center gap-1 p-2.5 rounded-2xl border-2 cursor-pointer transition-colors ${
                     active ? theme.selectedBorder : `${theme.cardBorder} bg-white hover:bg-gray-50`
                   }`}
                   whileTap={{ scale: 0.95 }}
                   onClick={() => onModeChange(m)}
                 >
-                  <Icon className={`h-7 w-7 ${active ? theme.selectedIcon : theme.textMuted}`} />
-                  <span className={`text-xs font-bold capitalize ${active ? theme.selectedText : theme.textSecondary}`}>
-                    {m}
+                  <Icon className={`h-6 w-6 ${active ? theme.selectedIcon : theme.textMuted}`} />
+                  <span className={`text-[10px] font-bold ${active ? theme.selectedText : theme.textSecondary} leading-tight text-center`}>
+                    {config.shortLabel}
                   </span>
                 </motion.button>
               );
@@ -370,11 +381,92 @@ function LoginPromptModal({ onLogin, onDismiss }) {
   );
 }
 
-export default function MathExplorer() {
+function QuestionDisplay({ question, mode, modeColor }) {
+  const { theme } = useTheme();
+  const q = question;
+
+  if (q.display?.emoji) {
+    // Counting mode: show emoji objects
+    const items = Array.from({ length: q.display.count }, (_, i) => (
+      <span key={i} className="text-3xl sm:text-4xl">{q.display.emoji}</span>
+    ));
+    return (
+      <div className="text-center">
+        <p className={`text-sm font-bold ${theme.textMuted} mb-3 uppercase tracking-wide`}>How many?</p>
+        <div className="flex flex-wrap items-center justify-center gap-2 max-w-[280px] mx-auto">
+          {items}
+        </div>
+      </div>
+    );
+  }
+
+  if (q.display?.sequence) {
+    // Skip counting mode: show sequence with blank
+    return (
+      <div className="text-center">
+        <p className={`text-sm font-bold ${theme.textMuted} mb-3 uppercase tracking-wide`}>What comes next?</p>
+        <div className={`flex items-center justify-center gap-2 text-3xl sm:text-4xl font-extrabold ${theme.textPrimary}`}>
+          {q.display.sequence.map((n, i) => (
+            <span key={i}>
+              {i > 0 && <span className={`${theme.textMuted} mx-1`}>,</span>}
+              {n}
+            </span>
+          ))}
+          <span className={`${theme.textMuted} mx-1`}>,</span>
+          <span className="text-amber-400">?</span>
+        </div>
+      </div>
+    );
+  }
+
+  if (q.display?.promptText) {
+    // Place value mode: show text prompt
+    return (
+      <div className="text-center">
+        <p className={`text-2xl sm:text-3xl font-extrabold ${theme.textPrimary}`}>
+          {q.display.promptText}
+        </p>
+      </div>
+    );
+  }
+
+  if (q.op === "?") {
+    // Comparing mode: show a ? b
+    return (
+      <div className={`flex items-center justify-center gap-4 text-5xl sm:text-6xl font-extrabold ${theme.textPrimary}`}>
+        <span>{q.a}</span>
+        <span
+          className={`${modeColor} text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center text-3xl sm:text-4xl`}
+        >
+          ?
+        </span>
+        <span>{q.b}</span>
+      </div>
+    );
+  }
+
+  // Default: a op b = ?
+  return (
+    <div className={`flex items-center justify-center gap-3 text-5xl sm:text-6xl font-extrabold ${theme.textPrimary}`}>
+      <span>{q.a}</span>
+      <span
+        className={`${modeColor} text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center text-3xl sm:text-4xl`}
+      >
+        {q.op}
+      </span>
+      <span>{q.b}</span>
+      <span className={theme.textMuted}>=</span>
+      <span className="text-amber-400">?</span>
+    </div>
+  );
+}
+
+export default function MathExplorer({ initialMode }) {
+  const startMode = initialMode || "addition";
   const { theme } = useTheme();
   const { user, signInWithGoogle } = useAuth();
-  const [mode, setMode] = useState("addition");
-  const [session, setSession] = useState(() => createAdaptiveSession("addition"));
+  const [mode, setMode] = useState(startMode);
+  const [session, setSession] = useState(() => createAdaptiveSession(startMode));
   const [currentQ, setCurrentQ] = useState(null);
   const [isRetry, setIsRetry] = useState(false);
   const [feedback, setFeedback] = useState(null); // "correct" | "wrong" | null
@@ -516,7 +608,7 @@ export default function MathExplorer() {
   if (!currentQ) return null;
 
   const modeColor = theme.modeColors[mode];
-  const ModeIcon = MODE_ICONS[mode];
+  const ModeIcon = getModeIcon(mode);
 
   return (
     <main className={`min-h-screen ${theme.bg} flex flex-col transition-colors duration-300`}>
@@ -525,7 +617,7 @@ export default function MathExplorer() {
           <div className={`${modeColor} p-2 rounded-xl`}>
             <ModeIcon className="h-6 w-6 text-white" />
           </div>
-          <h1 className={`text-xl font-extrabold ${theme.textPrimary}`}>{MODE_LABELS[mode]}</h1>
+          <h1 className={`text-xl font-extrabold ${theme.textPrimary}`}>{getModeLabel(mode)}</h1>
         </div>
         <div className="flex items-center gap-2">
           <motion.button
@@ -587,17 +679,7 @@ export default function MathExplorer() {
                 Let's try this one again!
               </p>
             )}
-            <div className={`flex items-center justify-center gap-3 text-5xl sm:text-6xl font-extrabold ${theme.textPrimary}`}>
-              <span>{currentQ.a}</span>
-              <span
-                className={`${modeColor} text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center text-3xl sm:text-4xl`}
-              >
-                {currentQ.op}
-              </span>
-              <span>{currentQ.b}</span>
-              <span className={theme.textMuted}>=</span>
-              <span className="text-amber-400">?</span>
-            </div>
+            <QuestionDisplay question={currentQ} mode={mode} modeColor={modeColor} />
           </motion.section>
         </AnimatePresence>
 

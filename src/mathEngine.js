@@ -1,94 +1,42 @@
+import { MODE_IDS, getModeConfig } from "./modes";
+import { shuffleArray } from "./modes/helpers";
+import { loadProgressSync } from "./progressStore";
+
 export const SESSION_SIZE = 15;
 export const MAX_LEVEL = 10;
 export const STARTING_LEVEL = 1;
-export const MODES = ["addition", "subtraction", "multiplication"];
+export const MODES = MODE_IDS;
 
-function randInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-export function shuffleArray(arr) {
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
-}
-
-const ADDITION_RANGES = [
-  { aMin: 1, aMax: 3, bMin: 1, bMax: 3 },
-  { aMin: 1, aMax: 5, bMin: 1, bMax: 5 },
-  { aMin: 1, aMax: 9, bMin: 1, bMax: 9 },
-  { aMin: 1, aMax: 9, bMin: 10, bMax: 15 },
-  { aMin: 5, aMax: 15, bMin: 5, bMax: 15 },
-  { aMin: 10, aMax: 20, bMin: 10, bMax: 20 },
-  { aMin: 10, aMax: 30, bMin: 1, bMax: 20 },
-  { aMin: 10, aMax: 30, bMin: 10, bMax: 30 },
-  { aMin: 10, aMax: 40, bMin: 10, bMax: 30 },
-  { aMin: 10, aMax: 50, bMin: 10, bMax: 50 },
-];
-
-const MULTIPLICATION_RANGES = [
-  { aMin: 1, aMax: 3, bMin: 1, bMax: 3 },
-  { aMin: 1, aMax: 5, bMin: 1, bMax: 3 },
-  { aMin: 1, aMax: 5, bMin: 1, bMax: 5 },
-  { aMin: 1, aMax: 9, bMin: 1, bMax: 5 },
-  { aMin: 1, aMax: 9, bMin: 1, bMax: 9 },
-  { aMin: 1, aMax: 12, bMin: 1, bMax: 5 },
-  { aMin: 1, aMax: 12, bMin: 1, bMax: 9 },
-  { aMin: 1, aMax: 12, bMin: 1, bMax: 12 },
-  { aMin: 5, aMax: 12, bMin: 5, bMax: 12 },
-  { aMin: 7, aMax: 12, bMin: 7, bMax: 12 },
-];
+export { shuffleArray };
 
 function clampLevel(level) {
   return Math.max(1, Math.min(MAX_LEVEL, level));
 }
 
 export function generateQuestion(mode, level) {
-  const idx = clampLevel(level) - 1;
-  let a, b, op, answer;
-
-  switch (mode) {
-    case "addition": {
-      op = "+";
-      const r = ADDITION_RANGES[idx];
-      a = randInt(r.aMin, r.aMax);
-      b = randInt(r.bMin, r.bMax);
-      answer = a + b;
-      break;
-    }
-    case "subtraction": {
-      op = "−";
-      const r = ADDITION_RANGES[idx];
-      a = randInt(r.aMin, r.aMax);
-      b = randInt(r.bMin, r.bMax);
-      if (a < b) [a, b] = [b, a];
-      if (a === b) a += 1;
-      answer = a - b;
-      break;
-    }
-    case "multiplication": {
-      op = "×";
-      const r = MULTIPLICATION_RANGES[idx];
-      a = randInt(r.aMin, r.aMax);
-      b = randInt(r.bMin, r.bMax);
-      answer = a * b;
-      break;
-    }
-    default:
-      throw new Error(`Unknown mode: ${mode}`);
-  }
-
-  return { a, b, op, answer, level };
+  const config = getModeConfig(mode);
+  const q = config.generate(clampLevel(level));
+  q.mode = mode;
+  return q;
 }
 
-export function generateChoices(answer, count = 4) {
+export function generateChoices(answer, count = 4, question = null) {
+  if (question?.mode) {
+    try {
+      const config = getModeConfig(question.mode);
+      if (config.generateChoices) {
+        return config.generateChoices(answer, question);
+      }
+    } catch {
+      // fall through to default
+    }
+  }
+
   const choices = new Set([answer]);
-  const spread = Math.max(3, Math.ceil(answer * 0.3));
+  const spread = Math.max(3, Math.ceil(Math.abs(answer) * 0.3));
 
   while (choices.size < count) {
-    const offset = randInt(1, spread) * (Math.random() < 0.5 ? -1 : 1);
+    const offset = (Math.floor(Math.random() * spread) + 1) * (Math.random() < 0.5 ? -1 : 1);
     const candidate = answer + offset;
     if (candidate >= 0 && candidate !== answer) {
       choices.add(candidate);
@@ -99,8 +47,6 @@ export function generateChoices(answer, count = 4) {
 }
 
 // --- Adaptive Session Engine ---
-
-import { loadProgressSync } from "./progressStore";
 
 const RETRY_SPACING = 5;
 
@@ -124,12 +70,12 @@ export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE) {
 export function getNextQuestion(session) {
   if (session.mistakeBank.length > 0 && session.questionsSinceRetry >= RETRY_SPACING) {
     const retryQ = { ...session.mistakeBank[0] };
-    retryQ.choices = generateChoices(retryQ.answer);
+    retryQ.choices = generateChoices(retryQ.answer, 4, retryQ);
     return { question: retryQ, isRetry: true };
   }
 
   const q = generateQuestion(session.mode, session.level);
-  q.choices = generateChoices(q.answer);
+  q.choices = generateChoices(q.answer, 4, q);
   return { question: q, isRetry: false };
 }
 
@@ -138,8 +84,6 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
   const next = { ...session };
 
   if (wasRetry) {
-    // Retries are "free" — they don't advance questionsAnswered or the progress bar.
-    // After any retry (pass or fail), reset spacing so we wait before the next one.
     next.questionsSinceRetry = 0;
 
     if (correct) {
@@ -150,7 +94,6 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
       );
     } else {
       next.correctStreak = 0;
-      // Keep in mistake bank — it will come back again after RETRY_SPACING more questions
     }
 
     return { session: next, correct, levelChanged: false, newLevel: next.level };
@@ -184,7 +127,7 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
     return { session: next, correct: true, levelChanged, newLevel: next.level };
   }
 
-  // Incorrect on a new question — move on, add to mistake bank for later
+  // Incorrect on a new question
   next.correctStreak = 0;
   next.mistakesAtLevel = session.mistakesAtLevel + 1;
 
@@ -192,7 +135,10 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
     (q) => q.a === question.a && q.b === question.b && q.op === question.op
   );
   if (!alreadyInBank) {
-    next.mistakeBank = [...session.mistakeBank, { a: question.a, b: question.b, op: question.op, answer: question.answer }];
+    next.mistakeBank = [
+      ...session.mistakeBank,
+      { a: question.a, b: question.b, op: question.op, answer: question.answer },
+    ];
   }
 
   let levelChanged = false;
@@ -215,7 +161,7 @@ export function generateWorksheetSet(mode, level, size = SESSION_SIZE) {
   const questions = [];
   for (let i = 0; i < size; i++) {
     const q = generateQuestion(mode, level);
-    q.choices = generateChoices(q.answer);
+    q.choices = generateChoices(q.answer, 4, q);
     questions.push(q);
   }
   return questions;

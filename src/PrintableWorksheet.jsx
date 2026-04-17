@@ -4,6 +4,11 @@ import {
   Plus,
   Minus,
   X,
+  Divide,
+  ArrowLeftRight,
+  Hash,
+  FastForward,
+  Layers,
   Star,
   Rocket,
   Heart,
@@ -52,13 +57,19 @@ import {
   Zap,
 } from "lucide-react";
 import { generateWorksheetSet, MODES } from "./mathEngine";
+import { getModeConfig } from "./modes";
 import { useTheme } from "./ThemeContext";
 
-const MODE_CONFIG = {
-  addition: { icon: Plus, label: "Addition", op: "+" },
-  subtraction: { icon: Minus, label: "Subtraction", op: "−" },
-  multiplication: { icon: X, label: "Multiplication", op: "×" },
-};
+const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers };
+
+function getWorksheetModeConfig(modeId) {
+  const config = getModeConfig(modeId);
+  return {
+    icon: ICON_MAP[config.icon] || Plus,
+    label: config.shortLabel,
+    op: config.op,
+  };
+}
 
 const DECO_ICONS = [
   Rocket, Star, Heart, Smile, Trophy, Sparkles,
@@ -113,6 +124,38 @@ function getDecoIcon(icons, index) {
   return <Icon className={`h-5 w-5 ${color} print:h-4 print:w-4`} />;
 }
 
+const BLANK = <span className="inline-block border-b-2 border-slate-300 w-12 print:w-14" />;
+
+function WorksheetProblem({ question: q }) {
+  if (q.display?.promptText) {
+    return <>{q.display.promptText} {BLANK}</>;
+  }
+  if (q.display?.sequence) {
+    return <>{q.display.sequence.join(", ")}, {BLANK}</>;
+  }
+  if (q.display?.emoji) {
+    const dots = Array.from({ length: q.display.count }, () => q.display.emoji).join(" ");
+    return <>{dots} = {BLANK}</>;
+  }
+  if (q.op === "?") {
+    return <>{q.a} {BLANK} {q.b}</>;
+  }
+  return <>{q.a} {q.op} {q.b} = {BLANK}</>;
+}
+
+function AnswerKeyProblem({ question: q }) {
+  if (q.display?.promptText) {
+    return <>{q.display.promptText} <span className="text-emerald-600">{q.answer}</span></>;
+  }
+  if (q.display?.sequence) {
+    return <>{q.display.sequence.join(", ")}, <span className="text-emerald-600">{q.answer}</span></>;
+  }
+  if (q.op === "?") {
+    return <>{q.a} <span className="text-emerald-600">{q.answer}</span> {q.b}</>;
+  }
+  return <>{q.a} {q.op} {q.b} = <span className="text-emerald-600">{q.answer}</span></>;
+}
+
 export default function PrintableWorksheet() {
   const { theme } = useTheme();
   const [mode, setMode] = useState("addition");
@@ -155,21 +198,21 @@ export default function PrintableWorksheet() {
             <p className={`text-sm font-semibold ${theme.textSecondary} mb-2 uppercase tracking-wide`}>
               Math Type
             </p>
-            <div className="grid grid-cols-3 gap-2">
+            <div className="grid grid-cols-4 gap-2">
               {MODES.map((m) => {
-                const cfg = MODE_CONFIG[m];
+                const cfg = getWorksheetModeConfig(m);
                 const Icon = cfg.icon;
                 const active = m === mode;
                 return (
                   <button
                     key={m}
-                    className={`flex flex-col items-center gap-1 p-3 rounded-2xl border-2 cursor-pointer transition-colors ${
+                    className={`flex flex-col items-center gap-1 p-2.5 rounded-2xl border-2 cursor-pointer transition-colors ${
                       active ? theme.selectedBorder : `${theme.cardBorder} bg-white hover:bg-gray-50`
                     }`}
                     onClick={() => { setMode(m); setGenerated(false); }}
                   >
-                    <Icon className={`h-7 w-7 ${active ? theme.selectedIcon : theme.textMuted}`} />
-                    <span className={`text-xs font-bold capitalize ${active ? theme.selectedText : theme.textSecondary}`}>
+                    <Icon className={`h-6 w-6 ${active ? theme.selectedIcon : theme.textMuted}`} />
+                    <span className={`text-[10px] font-bold ${active ? theme.selectedText : theme.textSecondary} leading-tight text-center`}>
                       {cfg.label}
                     </span>
                   </button>
@@ -318,7 +361,7 @@ export default function PrintableWorksheet() {
 
             <div className="flex justify-between items-center mb-1 text-sm text-slate-500">
               <span className="font-semibold">
-                {MODE_CONFIG[mode].label} &middot; Level {level} ({levelLabel})
+                {getWorksheetModeConfig(mode).label} &middot; Level {level} ({levelLabel})
               </span>
             </div>
 
@@ -340,8 +383,7 @@ export default function PrintableWorksheet() {
                     {i + 1})
                   </span>
                   <span className="text-xl font-bold text-slate-700 tracking-wide">
-                    {q.a} {q.op} {q.b} ={" "}
-                    <span className="inline-block border-b-2 border-slate-300 w-12 print:w-14" />
+                    <WorksheetProblem question={q} />
                   </span>
                   {i % 3 === 1 && (
                     <span className="ml-auto">{getDecoIcon(sheet.icons, i)}</span>
@@ -377,7 +419,7 @@ export default function PrintableWorksheet() {
                 <Sparkles className="h-6 w-6 text-violet-400 print:h-5 print:w-5" />
               </div>
               <p className="text-sm text-slate-400 text-center mb-4">
-                {MODE_CONFIG[mode].label} &middot; Level {level} ({levelLabel})
+                {getWorksheetModeConfig(mode).label} &middot; Level {level} ({levelLabel})
               </p>
               <div className="grid grid-cols-3 sm:grid-cols-4 gap-x-6 gap-y-3">
                 {sheet.problems.map((q, i) => (
@@ -386,7 +428,7 @@ export default function PrintableWorksheet() {
                       {i + 1})
                     </span>
                     <span className="text-base font-bold text-slate-600">
-                      {q.a} {q.op} {q.b} = <span className="text-emerald-600">{q.answer}</span>
+                      <AnswerKeyProblem question={q} />
                     </span>
                   </div>
                 ))}

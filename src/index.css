@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&display=swap');
 @import "tailwindcss";
 
 body {
@@ -21,6 +22,55 @@ body {
 
 .font-minecraft {
   font-family: 'Silkscreen', 'Fredoka', system-ui, monospace;
+}
+
+.font-neon {
+  font-family: 'Bungee', 'Fredoka', system-ui, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.font-neon h1,
+.font-neon h2,
+.font-neon h3,
+.font-neon .neon-glow {
+  text-shadow:
+    0 0 6px rgba(244, 114, 182, 0.55),
+    0 0 18px rgba(34, 211, 238, 0.35);
+}
+
+@keyframes neon-holo {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.bg-neon-holo {
+  background-image:
+    radial-gradient(at 20% 10%, rgba(236, 72, 153, 0.55) 0px, transparent 55%),
+    radial-gradient(at 85% 15%, rgba(34, 211, 238, 0.45) 0px, transparent 55%),
+    radial-gradient(at 75% 85%, rgba(168, 85, 247, 0.55) 0px, transparent 55%),
+    radial-gradient(at 15% 80%, rgba(244, 63, 94, 0.45) 0px, transparent 55%),
+    linear-gradient(120deg, #1a0533 0%, #2d0a4f 30%, #3b0764 60%, #4a044e 100%);
+  background-size: 200% 200%, 200% 200%, 200% 200%, 200% 200%, 300% 300%;
+  animation: neon-holo 16s ease-in-out infinite;
+}
+
+@keyframes neon-shimmer {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+.bg-neon-shimmer {
+  background-image: linear-gradient(
+    100deg,
+    #ec4899 0%,
+    #a855f7 25%,
+    #22d3ee 50%,
+    #a855f7 75%,
+    #ec4899 100%
+  );
+  background-size: 200% 100%;
+  animation: neon-shimmer 6s linear infinite;
 }
 
 @media print {

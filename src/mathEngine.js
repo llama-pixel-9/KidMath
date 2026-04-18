@@ -3,6 +3,7 @@ import { shuffleArray } from "./modes/helpers";
 import { buildItemKey, ITEM_FAMILIES } from "./modes/itemMetadata";
 import { validateChoices, validateQuestion } from "./modes/itemQuality";
 import { loadProgressSync } from "./progressStore";
+import { buildQuestionFromBankItem, selectApprovedApplicationItem } from "./itemBank.js";
 
 export const SESSION_SIZE = 15;
 export const MAX_LEVEL = 10;
@@ -14,6 +15,8 @@ export { shuffleArray };
 const RETRY_SPACING = 5;
 const REVIEW_INTERVALS = [4, 8, 16];
 const MAX_REVIEW_ITEMS = 20;
+const RECENT_BANK_WINDOW = 8;
+const MAX_BANK_ITEM_STATS = 200;
 
 function clampLevel(level) {
   return Math.max(1, Math.min(MAX_LEVEL, level));
@@ -106,16 +109,46 @@ function logAnalyticsEvent(session, payload) {
 
 export function generateQuestion(mode, level, context = null) {
   const config = getModeConfig(mode);
-  const q = config.generate(clampLevel(level), context || undefined);
-  q.mode = mode;
-  q.metadata = q.metadata || {};
-  q.metadata.modeId = q.metadata.modeId || mode;
-  q.itemKey = q.itemKey || buildItemKey(q);
-  const quality = validateQuestion(q);
+  const targetLevel = clampLevel(level);
+  const q = config.generate(targetLevel, context || undefined);
+  const isApplication = q.metadata?.itemFamily === ITEM_FAMILIES.APPLICATION;
+  const allowWordProblems = context?.allowWordProblems ?? true;
+  let bankQuestion = null;
+  if (isApplication && allowWordProblems) {
+    const bankItem = selectApprovedApplicationItem({
+      modeId: mode,
+      level: targetLevel,
+      targetSubskill: context?.targetSubskill || q.metadata?.subskill,
+      recentItemIds: context?.recentBankItemIds || [],
+    });
+    bankQuestion = buildQuestionFromBankItem(bankItem, targetLevel);
+  }
+  const bankMetadata = bankQuestion?.metadataOverrides || null;
+  const bankPayload = bankQuestion ? { ...bankQuestion } : null;
+  if (bankPayload) delete bankPayload.metadataOverrides;
+  const effectiveQuestion = bankQuestion
+    ? {
+        ...bankPayload,
+        mode,
+        metadata: {
+          ...(q.metadata || {}),
+          subskill: bankMetadata?.bankSubskill || q.metadata?.subskill,
+          itemId: bankMetadata?.itemId,
+          itemSource: bankMetadata?.itemSource,
+          reviewStatus: bankMetadata?.reviewStatus,
+          structureType: bankMetadata?.structureType || q.metadata?.structureType || null,
+        },
+      }
+    : q;
+  effectiveQuestion.mode = mode;
+  effectiveQuestion.metadata = effectiveQuestion.metadata || {};
+  effectiveQuestion.metadata.modeId = effectiveQuestion.metadata.modeId || mode;
+  effectiveQuestion.itemKey = effectiveQuestion.itemKey || buildItemKey(effectiveQuestion);
+  const quality = validateQuestion(effectiveQuestion);
   if (!quality.valid) {
     throw new Error(`Invalid question for mode ${mode}: ${quality.errors.join("; ")}`);
   }
-  return q;
+  return effectiveQuestion;
 }
 
 export function generateChoices(answer, count = 4, question = null) {
@@ -172,6 +205,8 @@ export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE, options 
     skillMastery: createSkillMastery(modeConfig),
     analyticsEvents: [],
     allowWordProblems,
+    recentBankItemIds: Array.isArray(saved.recentBankItemIds) ? saved.recentBankItemIds.slice(-RECENT_BANK_WINDOW) : [],
+    bankItemStats: saved.bankItemStats && typeof saved.bankItemStats === "object" ? saved.bankItemStats : {},
   };
 }
 
@@ -201,11 +236,47 @@ export function getNextQuestion(session) {
   const q = generateQuestion(session.mode, session.level, {
     itemFamily: scheduledFamily,
     targetSubskill,
+    allowWordProblems: session.allowWordProblems !== false,
+    recentBankItemIds: session.recentBankItemIds || [],
   });
   q.scheduler = { targetSubskill, itemFamily: scheduledFamily };
   q.nextFamilyCursor = nextCursor;
   q.choices = generateChoices(q.answer, 4, q);
   return { question: q, isRetry: false };
+}
+
+function updateBankItemStats(session, question, correct, responseTimeMs) {
+  const itemId = question.metadata?.itemId;
+  if (!itemId || question.metadata?.itemSource !== "bank") return session.bankItemStats || {};
+  const current = session.bankItemStats?.[itemId] || {
+    attempts: 0,
+    firstTryCorrect: 0,
+    correct: 0,
+    totalResponseMs: 0,
+    lastSeenAt: -1,
+  };
+  const next = {
+    attempts: current.attempts + 1,
+    firstTryCorrect: current.firstTryCorrect + (correct && current.attempts === 0 ? 1 : 0),
+    correct: current.correct + (correct ? 1 : 0),
+    totalResponseMs: current.totalResponseMs + (responseTimeMs || 0),
+    lastSeenAt: session.questionsAnswered,
+  };
+  const merged = { ...(session.bankItemStats || {}), [itemId]: next };
+  const keys = Object.keys(merged);
+  if (keys.length <= MAX_BANK_ITEM_STATS) return merged;
+  // Drop the least-recently seen items to bound size.
+  const sorted = keys
+    .map((id) => [id, merged[id].lastSeenAt ?? -1])
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, MAX_BANK_ITEM_STATS);
+  return Object.fromEntries(sorted.map(([id]) => [id, merged[id]]));
+}
+
+function appendRecentBankItemId(recent, itemId) {
+  if (!itemId) return recent;
+  const next = [...(recent || []).filter((id) => id !== itemId), itemId];
+  return next.slice(-RECENT_BANK_WINDOW);
 }
 
 export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wasRetry) {
@@ -218,12 +289,15 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
     wasRetry,
     correct,
     responseTimeMs,
+    itemId: question.metadata?.itemId || null,
+    itemSource: question.metadata?.itemSource || "generated",
     itemFamily: question.metadata?.itemFamily || "unknown",
     subskill: question.metadata?.subskill || "unknown",
   });
 
   if (wasRetry) {
     next.questionsSinceRetry = 0;
+    next.bankItemStats = updateBankItemStats(session, question, correct, responseTimeMs);
 
     if (correct) {
       next.correctStreak = session.correctStreak + 1;
@@ -245,6 +319,11 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
   next.questionsAnswered = session.questionsAnswered + 1;
   next.questionsSinceRetry = session.questionsSinceRetry + 1;
   if (question.nextFamilyCursor != null) next.familyCursor = question.nextFamilyCursor;
+  next.bankItemStats = updateBankItemStats(session, question, correct, responseTimeMs);
+  next.recentBankItemIds = appendRecentBankItemId(
+    session.recentBankItemIds,
+    question.metadata?.itemSource === "bank" ? question.metadata?.itemId : null
+  );
 
   if (correct) {
     next.correctStreak = session.correctStreak + 1;

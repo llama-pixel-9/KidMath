@@ -45,6 +45,10 @@ export function createQuestionMetadata({
   standardRefs,
   misconceptionTags,
   blueprintId,
+  itemId,
+  itemSource,
+  reviewStatus,
+  structureType,
 }) {
   return {
     modeId,
@@ -60,5 +64,9 @@ export function createQuestionMetadata({
     standardRefs: standardRefs || [],
     misconceptionTags: misconceptionTags || [],
     blueprintId,
+    itemId: itemId || null,
+    itemSource: itemSource || "generated",
+    reviewStatus: reviewStatus || null,
+    structureType: structureType || null,
   };
 }

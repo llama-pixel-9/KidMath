@@ -22,25 +22,68 @@ function writeLocalStore(store) {
   localStorage.setItem(PROGRESS_KEY, JSON.stringify(store));
 }
 
+const MAX_PERSISTED_BANK_ITEMS = 200;
+const MAX_PERSISTED_RECENT_IDS = 12;
+
+function mergeBankItemStats(prev = {}, incoming = {}) {
+  const merged = { ...prev };
+  for (const [itemId, stats] of Object.entries(incoming)) {
+    const base = merged[itemId] || {
+      attempts: 0,
+      firstTryCorrect: 0,
+      correct: 0,
+      totalResponseMs: 0,
+      lastSeenAt: -1,
+    };
+    merged[itemId] = {
+      attempts: (base.attempts ?? 0) + (stats.attempts ?? 0),
+      firstTryCorrect: (base.firstTryCorrect ?? 0) + (stats.firstTryCorrect ?? 0),
+      correct: (base.correct ?? 0) + (stats.correct ?? 0),
+      totalResponseMs: (base.totalResponseMs ?? 0) + (stats.totalResponseMs ?? 0),
+      lastSeenAt: Math.max(base.lastSeenAt ?? -1, stats.lastSeenAt ?? -1),
+    };
+  }
+  const ids = Object.keys(merged);
+  if (ids.length <= MAX_PERSISTED_BANK_ITEMS) return merged;
+  const trimmed = ids
+    .map((id) => [id, merged[id].lastSeenAt ?? -1])
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, MAX_PERSISTED_BANK_ITEMS);
+  return Object.fromEntries(trimmed.map(([id]) => [id, merged[id]]));
+}
+
 function loadLocal(mode) {
   const entry = readLocalStore()[mode];
-  if (!entry) return { level: STARTING_LEVEL, mistakeBank: [], totalSessions: 0, lifetimeStars: 0 };
+  if (!entry) {
+    return {
+      level: STARTING_LEVEL,
+      mistakeBank: [],
+      totalSessions: 0,
+      lifetimeStars: 0,
+      bankItemStats: {},
+      recentBankItemIds: [],
+    };
+  }
   return {
     level: clampLevel(entry.level ?? STARTING_LEVEL),
     mistakeBank: Array.isArray(entry.mistakeBank) ? entry.mistakeBank : [],
     totalSessions: entry.totalSessions ?? 0,
     lifetimeStars: entry.lifetimeStars ?? 0,
+    bankItemStats: entry.bankItemStats && typeof entry.bankItemStats === "object" ? entry.bankItemStats : {},
+    recentBankItemIds: Array.isArray(entry.recentBankItemIds) ? entry.recentBankItemIds : [],
   };
 }
 
-function saveLocal(mode, { level, mistakeBank, firstTryCorrect }) {
+function saveLocal(mode, { level, mistakeBank, firstTryCorrect, bankItemStats, recentBankItemIds }) {
   const store = readLocalStore();
-  const prev = store[mode] || { totalSessions: 0, lifetimeStars: 0 };
+  const prev = store[mode] || { totalSessions: 0, lifetimeStars: 0, bankItemStats: {} };
   store[mode] = {
     level: clampLevel(level),
     mistakeBank: (mistakeBank || []).slice(0, 20),
     totalSessions: (prev.totalSessions ?? 0) + 1,
     lifetimeStars: (prev.lifetimeStars ?? 0) + (firstTryCorrect ?? 0),
+    bankItemStats: mergeBankItemStats(prev.bankItemStats || {}, bankItemStats || {}),
+    recentBankItemIds: (recentBankItemIds || []).slice(-MAX_PERSISTED_RECENT_IDS),
   };
   writeLocalStore(store);
 }
@@ -62,13 +105,24 @@ async function loadCloud(userId, mode) {
     .single();
 
   if (error || !data) {
-    return { level: STARTING_LEVEL, mistakeBank: [], totalSessions: 0, lifetimeStars: 0 };
+    return {
+      level: STARTING_LEVEL,
+      mistakeBank: [],
+      totalSessions: 0,
+      lifetimeStars: 0,
+      bankItemStats: {},
+      recentBankItemIds: [],
+    };
   }
   return {
     level: clampLevel(data.level ?? STARTING_LEVEL),
     mistakeBank: Array.isArray(data.mistake_bank) ? data.mistake_bank : [],
     totalSessions: data.total_sessions ?? 0,
     lifetimeStars: data.lifetime_stars ?? 0,
+    // Per-item bank analytics not yet persisted server-side; defer to local cache
+    // so local progressStore mirrors the cloud-shape contract.
+    bankItemStats: {},
+    recentBankItemIds: [],
   };
 }
 

@@ -110,6 +110,8 @@ async function persistSession(mode, session) {
     level: session.level,
     mistakeBank: session.mistakeBank,
     firstTryCorrect: session.firstTryCorrect,
+    bankItemStats: session.bankItemStats || {},
+    recentBankItemIds: session.recentBankItemIds || [],
   });
   const progress = await loadProgress(mode);
   return progress.lifetimeStars;

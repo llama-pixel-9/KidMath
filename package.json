@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "vitest run src/__tests__/modes.spec.js && vitest run src/__tests__/sessionEngine.spec.js"
+    "test": "vitest run src/__tests__/modes.spec.js && vitest run src/__tests__/sessionEngine.spec.js && vitest run src/__tests__/itemBank.spec.js",
+    "bank:report": "node scripts/bankReport.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.103.3",

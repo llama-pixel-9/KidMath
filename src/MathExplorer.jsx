@@ -95,13 +95,14 @@ const LEVEL_RING_COLORS = [
   "stroke-pink-500",
 ];
 
-function isLikelyIPadOrTouch() {
+function isLikelyLowEndDevice() {
   if (typeof window === "undefined") return false;
   const ua = navigator.userAgent || "";
   const iPadUA = /iPad/.test(ua);
   const iPadDesktopUA = /Macintosh/.test(ua) && navigator.maxTouchPoints > 1;
-  const coarsePointer = window.matchMedia?.("(pointer: coarse)")?.matches ?? false;
-  return iPadUA || iPadDesktopUA || coarsePointer;
+  const lowCores = (navigator.hardwareConcurrency || 8) <= 4;
+  const lowMemory = (navigator.deviceMemory || 8) <= 4;
+  return iPadUA || iPadDesktopUA || lowCores || lowMemory;
 }
 
 async function persistSession(mode, session) {
@@ -114,11 +115,11 @@ async function persistSession(mode, session) {
   return progress.lifetimeStars;
 }
 
-function ConfettiBurst({ disabled }) {
-  if (disabled) return null;
+function ConfettiBurst({ intensity = "normal" }) {
+  const particles = intensity === "light" ? CONFETTI_PARTICLES.slice(0, 6) : CONFETTI_PARTICLES;
   return (
     <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-      {CONFETTI_PARTICLES.map((p) => (
+      {particles.map((p) => (
         <motion.div
           key={p.id}
           className={`absolute rounded-full ${p.color}`}
@@ -624,9 +625,13 @@ export default function MathExplorer({ initialMode }) {
   const { theme } = useTheme();
   const { user, signInWithGoogle } = useAuth();
   const prefersReducedMotion = useReducedMotion();
-  const [touchOptimizedMode, setTouchOptimizedMode] = useState(false);
+  const [lowEndDevice] = useState(() => isLikelyLowEndDevice());
   const [mode, setMode] = useState(startMode);
-  const [session, setSession] = useState(() => createAdaptiveSession(startMode));
+  const [session, setSession] = useState(() =>
+    createAdaptiveSession(startMode, undefined, {
+      allowWordProblems: loadAllowWordProblemsPreference(),
+    })
+  );
   const [currentQ, setCurrentQ] = useState(null);
   const [isRetry, setIsRetry] = useState(false);
   const [feedback, setFeedback] = useState(null); // "correct" | "wrong" | null
@@ -695,10 +700,6 @@ export default function MathExplorer({ initialMode }) {
       loadNextQuestion(newSession);
     })();
   }, [user, allowWordProblems, mode, loadNextQuestion]);
-
-  useEffect(() => {
-    setTouchOptimizedMode(isLikelyIPadOrTouch());
-  }, []);
 
   useEffect(() => {
     if (user) return;
@@ -804,7 +805,7 @@ export default function MathExplorer({ initialMode }) {
 
   const modeColor = theme.modeColors[mode];
   const ModeIcon = getModeIcon(mode);
-  const lowMotionMode = Boolean(prefersReducedMotion || touchOptimizedMode);
+  const lowMotionMode = Boolean(prefersReducedMotion);
 
   return (
     <MotionConfig reducedMotion={lowMotionMode ? "always" : "never"}>
@@ -895,19 +896,21 @@ export default function MathExplorer({ initialMode }) {
                 whileTap={{ scale: 0.9 }}
                 animate={
                   isWrong
-                    ? { x: [0, -10, 10, -10, 10, 0] }
+                    ? { x: lowEndDevice ? [0, -6, 6, 0] : [0, -10, 10, -10, 10, 0] }
                     : isCorrectChoice
                       ? { scale: [1, 1.1, 1] }
                       : isRevealedCorrect
                         ? { scale: [1, 1.15, 1.05] }
                         : {}
                 }
-                transition={isWrong ? { duration: 0.4 } : { duration: 0.3 }}
+                transition={isWrong ? { duration: lowEndDevice ? 0.22 : 0.4 } : { duration: 0.3 }}
                 onClick={() => handleAnswer(choice)}
                 disabled={feedback === "correct" || feedback === "wrong"}
               >
                 {choice}
-                {isCorrectChoice && <ConfettiBurst disabled={lowMotionMode} />}
+                {isCorrectChoice && !lowMotionMode && (
+                  <ConfettiBurst intensity={lowEndDevice ? "light" : "normal"} />
+                )}
               </motion.button>
             );
           })}

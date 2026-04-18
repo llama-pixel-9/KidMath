@@ -648,6 +648,7 @@ export default function MathExplorer({ initialMode }) {
   const loginTimerRef = useRef(null);
   const questionKeyRef = useRef(0);
   const timeoutIdsRef = useRef([]);
+  const answerLockRef = useRef(false);
 
   const clearQueuedTimeouts = useCallback(() => {
     timeoutIdsRef.current.forEach((id) => clearTimeout(id));
@@ -669,10 +670,12 @@ export default function MathExplorer({ initialMode }) {
     setIsRetry(retry);
     questionStartTime.current = Date.now();
     questionKeyRef.current += 1;
+    answerLockRef.current = false;
   }, []);
 
   const startNewSession = useCallback((m, allowWordProblemsOverride = allowWordProblems) => {
     clearQueuedTimeouts();
+    answerLockRef.current = false;
     const newSession = createAdaptiveSession(m || mode, undefined, {
       allowWordProblems: allowWordProblemsOverride,
     });
@@ -742,52 +745,60 @@ export default function MathExplorer({ initialMode }) {
   }, [mode]);
 
   const handleAnswer = (choice) => {
-    if (feedback === "correct" || feedback === "wrong") return;
+    if (feedback === "correct" || feedback === "wrong" || answerLockRef.current) return;
+    answerLockRef.current = true;
 
-    const responseTimeMs = Date.now() - questionStartTime.current;
-    const result = recordAnswer(session, currentQ, choice, responseTimeMs, isRetry);
-    setSession(result.session);
+    try {
+      const responseTimeMs = Date.now() - questionStartTime.current;
+      const result = recordAnswer(session, currentQ, choice, responseTimeMs, isRetry);
+      setSession(result.session);
 
-    if (result.correct) {
-      setFeedback("correct");
-      setRevealAnswer(currentQ.answer);
+      if (result.correct) {
+        setFeedback("correct");
+        setRevealAnswer(currentQ.answer);
 
-      if (result.levelChanged && result.newLevel > session.level) {
-        playLevelUpSound();
-        setShowLevelUp(true);
-        scheduleTimeout(() => setShowLevelUp(false), 1200);
-      } else if (result.session.correctStreak >= 3) {
-        playStreakSound();
+        if (result.levelChanged && result.newLevel > session.level) {
+          playLevelUpSound();
+          setShowLevelUp(true);
+          scheduleTimeout(() => setShowLevelUp(false), 1200);
+        } else if (result.session.correctStreak >= 3) {
+          playStreakSound();
+        } else {
+          playCorrectSound();
+        }
+
+        scheduleTimeout(() => {
+          if (isSessionComplete(result.session)) {
+            finishSession(result.session);
+            answerLockRef.current = false;
+          } else {
+            setFeedback(null);
+            setRevealAnswer(null);
+            loadNextQuestion(result.session);
+          }
+        }, 1200);
       } else {
-        playCorrectSound();
-      }
+        setFeedback("wrong");
+        setShakenChoice(choice);
+        setRevealAnswer(currentQ.answer);
+        playWrongSound();
 
-      scheduleTimeout(() => {
-        if (isSessionComplete(result.session)) {
-          finishSession(result.session);
-        } else {
+        scheduleTimeout(() => {
           setFeedback(null);
+          setShakenChoice(null);
           setRevealAnswer(null);
-          loadNextQuestion(result.session);
-        }
-      }, 1200);
-    } else {
-      setFeedback("wrong");
-      setShakenChoice(choice);
-      setRevealAnswer(currentQ.answer);
-      playWrongSound();
 
-      scheduleTimeout(() => {
-        setFeedback(null);
-        setShakenChoice(null);
-        setRevealAnswer(null);
-
-        if (isSessionComplete(result.session)) {
-          finishSession(result.session);
-        } else {
-          loadNextQuestion(result.session);
-        }
-      }, 2000);
+          if (isSessionComplete(result.session)) {
+            finishSession(result.session);
+            answerLockRef.current = false;
+          } else {
+            loadNextQuestion(result.session);
+          }
+        }, 2000);
+      }
+    } catch (error) {
+      answerLockRef.current = false;
+      console.error("Failed to process answer", error);
     }
   };
 

@@ -1,4 +1,36 @@
-import { APPLICATION_ITEM_BANK as BUNDLED_ITEMS, REVIEW_STATUS } from "./applicationItems.js";
+import { BUNDLED_ITEMS } from "./bundle.js";
+import { REVIEW_STATUS } from "./applicationItems.js";
+
+// Re-export REVIEW_STATUS so callers keep working without importing from the
+// bundle directly.
+export { REVIEW_STATUS };
+
+export const ITEM_FAMILIES = {
+  CONCEPTUAL: "conceptual",
+  PROCEDURAL: "procedural",
+  APPLICATION: "application",
+};
+
+const VALID_FAMILIES = new Set(Object.values(ITEM_FAMILIES));
+
+// Level-band mapping mirrors src/modes/itemMetadata.js `levelToGradeBand` but
+// is duplicated here so the item bank module has no inbound dep on the modes
+// layer (keeps cloud hydration import-graph small).
+export function levelToBand(level) {
+  if (level <= 3) return "K-1";
+  if (level <= 6) return "2-3";
+  return "4-5";
+}
+
+export function levelRangeToBands(levelRange) {
+  if (!Array.isArray(levelRange) || levelRange.length !== 2) return [];
+  const [min, max] = levelRange;
+  const bands = new Set();
+  for (let level = min; level <= max; level++) bands.add(levelToBand(level));
+  return [...bands];
+}
+
+export const LEVEL_BANDS = ["K-1", "2-3", "4-5"];
 
 const REQUIRED_FIELDS = [
   "itemId",
@@ -65,11 +97,76 @@ function isValidLevelRange(levelRange) {
   );
 }
 
+function validateApplicationDisplay(display, errors) {
+  // Application items must carry a readable prompt because they are delivered
+  // primarily as word problems.
+  const promptText = display?.promptText;
+  if (!promptText || typeof promptText !== "string" || !promptText.trim()) {
+    errors.push("question.display.promptText is required for application items");
+    return;
+  }
+  if (promptText.length > 220) {
+    errors.push("question.display.promptText exceeds 220 characters");
+  }
+  if (promptText.includes("{") || promptText.includes("}")) {
+    errors.push("question.display.promptText contains unresolved placeholders");
+  }
+}
+
+const SUPPORTED_REPRESENTATIONS = new Set([
+  "numberLine",
+  "tenFrame",
+  "array",
+  "placeValueBlocks",
+  "decomposition",
+  "objectSet",
+  "sequence",
+  "symbolic",
+  "verbalContext",
+]);
+
+function validateNonApplicationDisplay(itemFamily, display, errors) {
+  // Conceptual and procedural items may be symbolic or use a representation.
+  // Require at least one of: `promptText`, a supported `representation`, or a
+  // structural shape (`sequence`, `tens`, `number`, `array`, etc.).
+  if (!display || typeof display !== "object") {
+    errors.push(`question.display is required for ${itemFamily} items`);
+    return;
+  }
+  const hasPrompt = typeof display.promptText === "string" && display.promptText.trim().length > 0;
+  const hasRepresentation =
+    typeof display.representation === "string" && SUPPORTED_REPRESENTATIONS.has(display.representation);
+  const hasStructuralShape =
+    display.sequence != null ||
+    display.number != null ||
+    display.tens != null ||
+    display.array != null ||
+    display.count != null ||
+    display.type != null;
+  if (!hasPrompt && !hasRepresentation && !hasStructuralShape) {
+    errors.push(
+      `question.display for ${itemFamily} items must include promptText, representation, or a structural shape`
+    );
+  }
+  if (hasPrompt && display.promptText.length > 220) {
+    errors.push("question.display.promptText exceeds 220 characters");
+  }
+  if (hasPrompt && (display.promptText.includes("{") || display.promptText.includes("}"))) {
+    errors.push("question.display.promptText contains unresolved placeholders");
+  }
+  if (display.representation && !hasRepresentation) {
+    errors.push(`unsupported representation: ${display.representation}`);
+  }
+}
+
 export function validateBankItem(item) {
   const errors = [];
   if (!item || typeof item !== "object") return { valid: false, errors: ["item must be an object"] };
   for (const key of REQUIRED_FIELDS) {
     if (item[key] == null || item[key] === "") errors.push(`missing required field: ${key}`);
+  }
+  if (item.itemFamily && !VALID_FAMILIES.has(item.itemFamily)) {
+    errors.push(`invalid itemFamily: ${item.itemFamily}`);
   }
   if (item.reviewStatus && !Object.values(REVIEW_STATUS).includes(item.reviewStatus)) {
     errors.push(`invalid reviewStatus: ${item.reviewStatus}`);
@@ -79,16 +176,40 @@ export function validateBankItem(item) {
   }
   if (item.question) {
     if (item.question.answer == null) errors.push("question.answer is required");
-    const promptText = item.question.display?.promptText;
-    if (!promptText || typeof promptText !== "string" || !promptText.trim()) {
-      errors.push("question.display.promptText is required for application items");
-    } else if (promptText.length > 220) {
-      errors.push("question.display.promptText exceeds 220 characters");
-    } else if (promptText.includes("{") || promptText.includes("}")) {
-      errors.push("question.display.promptText contains unresolved placeholders");
+    const family = item.itemFamily;
+    if (family === ITEM_FAMILIES.APPLICATION) {
+      validateApplicationDisplay(item.question.display, errors);
+    } else if (family === ITEM_FAMILIES.CONCEPTUAL || family === ITEM_FAMILIES.PROCEDURAL) {
+      validateNonApplicationDisplay(family, item.question.display, errors);
+    }
+    // Numeric consistency check for arithmetic items that declare a/b/op.
+    const { a, b, op, answer } = item.question;
+    if (op && typeof answer === "number" && typeof a === "number" && typeof b === "number") {
+      const expected = computeExpected(op, a, b);
+      if (expected != null && expected !== answer) {
+        errors.push(`numeric inconsistency: ${a} ${op} ${b} !== ${answer}`);
+      }
     }
   }
   return { valid: errors.length === 0, errors };
+}
+
+function computeExpected(op, a, b) {
+  switch (op) {
+    case "+":
+      return a + b;
+    case "-":
+    case "\u2212": // unicode minus
+      return a - b;
+    case "*":
+    case "\u00d7":
+      return a * b;
+    case "/":
+    case "\u00f7":
+      return b === 0 ? null : a / b;
+    default:
+      return null;
+  }
 }
 
 export function validateBank(items = currentBank) {
@@ -124,35 +245,36 @@ function randomPick(items, rng = Math.random) {
   return items[index];
 }
 
-function filterApprovedByModeLevel(modeId, level) {
+function filterApprovedCandidates({ modeId, level, family }) {
   return currentBank.filter(
     (item) =>
       item.modeId === modeId &&
-      item.itemFamily === "application" &&
+      (!family || item.itemFamily === family) &&
       item.reviewStatus === REVIEW_STATUS.APPROVED &&
       inLevelRange(level, item.levelRange)
   );
 }
 
 /**
- * Select an approved application bank item.
+ * Select an approved bank item for the given mode, level, and family.
  *
  * Selection priority:
- *  1) Match modeId, level, and reviewStatus=approved.
+ *  1) Match modeId, family, level, and reviewStatus=approved.
  *  2) Prefer items matching targetSubskill.
  *  3) Prefer items not in `recentItemIds` (exposure cooldown).
  *  4) Random tiebreak from the highest-priority bucket.
  *
- * Returns null when no candidate exists for the (mode, level) bucket.
+ * Returns null when no candidate exists for the (mode, family, level) bucket.
  */
-export function selectApprovedApplicationItem({
+export function selectApprovedBankItem({
   modeId,
   level,
+  family = ITEM_FAMILIES.APPLICATION,
   targetSubskill,
   recentItemIds = [],
   rng = Math.random,
 } = {}) {
-  const approved = filterApprovedByModeLevel(modeId, level);
+  const approved = filterApprovedCandidates({ modeId, level, family });
   if (approved.length === 0) return null;
 
   const recentSet = new Set(recentItemIds);
@@ -170,6 +292,14 @@ export function selectApprovedApplicationItem({
 }
 
 /**
+ * Back-compat wrapper. New code should use `selectApprovedBankItem` with an
+ * explicit `family`.
+ */
+export function selectApprovedApplicationItem(args = {}) {
+  return selectApprovedBankItem({ ...args, family: ITEM_FAMILIES.APPLICATION });
+}
+
+/**
  * Convert a bank item into a question payload compatible with the engine.
  * Carries provenance via metadataOverrides which is merged by the caller.
  */
@@ -182,6 +312,7 @@ export function buildQuestionFromBankItem(bankItem, level) {
     metadataOverrides: {
       itemId: bankItem.itemId,
       itemSource: "bank",
+      itemFamily: bankItem.itemFamily,
       reviewStatus: bankItem.reviewStatus,
       bankSubskill: bankItem.subskill,
       structureType: bankItem.structureType,
@@ -189,12 +320,32 @@ export function buildQuestionFromBankItem(bankItem, level) {
   };
 }
 
-export function getBankCoverage() {
+/**
+ * Coverage counts keyed by one of three granularities:
+ *  - "mode-subskill"       -> `${modeId}::${subskill}`        (legacy)
+ *  - "mode-subskill-family"-> `${modeId}::${subskill}::${family}`
+ *  - "cell"                -> `${modeId}::${subskill}::${family}::${band}`
+ *
+ * The "cell" granularity expands each item across every level band its
+ * levelRange covers, so e.g. an item with levelRange [1,10] contributes to
+ * all three bands. This matches how the item would be delivered in practice.
+ */
+export function getBankCoverage(granularity = "mode-subskill") {
   const counts = new Map();
   for (const item of currentBank) {
     if (item.reviewStatus !== REVIEW_STATUS.APPROVED) continue;
-    const key = `${item.modeId}::${item.subskill}`;
-    counts.set(key, (counts.get(key) || 0) + 1);
+    if (granularity === "mode-subskill") {
+      const key = `${item.modeId}::${item.subskill}`;
+      counts.set(key, (counts.get(key) || 0) + 1);
+    } else if (granularity === "mode-subskill-family") {
+      const key = `${item.modeId}::${item.subskill}::${item.itemFamily}`;
+      counts.set(key, (counts.get(key) || 0) + 1);
+    } else if (granularity === "cell") {
+      for (const band of levelRangeToBands(item.levelRange)) {
+        const key = `${item.modeId}::${item.subskill}::${item.itemFamily}::${band}`;
+        counts.set(key, (counts.get(key) || 0) + 1);
+      }
+    }
   }
   return counts;
 }

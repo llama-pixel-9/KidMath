@@ -3,7 +3,7 @@ import { shuffleArray } from "./modes/helpers";
 import { buildItemKey, ITEM_FAMILIES } from "./modes/itemMetadata";
 import { validateChoices, validateQuestion } from "./modes/itemQuality";
 import { loadProgressSync } from "./progressStore";
-import { buildQuestionFromBankItem, selectApprovedApplicationItem } from "./itemBank.js";
+import { buildQuestionFromBankItem, selectApprovedBankItem } from "./itemBank.js";
 
 export const SESSION_SIZE = 15;
 export const MAX_LEVEL = 10;
@@ -107,20 +107,59 @@ function logAnalyticsEvent(session, payload) {
   return [...(session.analyticsEvents || []), payload].slice(-200);
 }
 
-// Module-level observability: increments whenever an application item is
-// requested. Exposed for analytics/sampling tools so we can monitor the
-// itemSource=bank vs itemSource=generated rate over time.
-const bankFallbackStats = { applicationRequested: 0, bankServed: 0, fallbackToGenerated: 0 };
+// Module-level observability: increments whenever a bank-eligible item is
+// requested, broken down by family. Exposed for analytics/sampling tools so
+// we can monitor the itemSource=bank vs itemSource=generated rate over time.
+//
+// Top-level keys (`applicationRequested`, `bankServed`, `fallbackToGenerated`)
+// are kept for back-compat with the pre-Phase-0 observer contract. Per-family
+// substats live under `byFamily`.
+function emptyFamilyStats() {
+  return { requested: 0, bankServed: 0, fallbackToGenerated: 0 };
+}
+
+const bankFallbackStats = {
+  applicationRequested: 0,
+  bankServed: 0,
+  fallbackToGenerated: 0,
+  byFamily: {
+    [ITEM_FAMILIES.APPLICATION]: emptyFamilyStats(),
+    [ITEM_FAMILIES.CONCEPTUAL]: emptyFamilyStats(),
+    [ITEM_FAMILIES.PROCEDURAL]: emptyFamilyStats(),
+  },
+};
 const warnedFallbackKeys = new Set();
 
+function recordBankStat(family, event) {
+  const family_ = bankFallbackStats.byFamily[family];
+  if (family_) family_[event] = (family_[event] || 0) + 1;
+  if (event === "requested" && family === ITEM_FAMILIES.APPLICATION) {
+    bankFallbackStats.applicationRequested += 1;
+  }
+  if (event === "bankServed") bankFallbackStats.bankServed += 1;
+  if (event === "fallbackToGenerated") bankFallbackStats.fallbackToGenerated += 1;
+}
+
 export function getBankFallbackStats() {
-  return { ...bankFallbackStats };
+  return {
+    applicationRequested: bankFallbackStats.applicationRequested,
+    bankServed: bankFallbackStats.bankServed,
+    fallbackToGenerated: bankFallbackStats.fallbackToGenerated,
+    byFamily: {
+      [ITEM_FAMILIES.APPLICATION]: { ...bankFallbackStats.byFamily[ITEM_FAMILIES.APPLICATION] },
+      [ITEM_FAMILIES.CONCEPTUAL]: { ...bankFallbackStats.byFamily[ITEM_FAMILIES.CONCEPTUAL] },
+      [ITEM_FAMILIES.PROCEDURAL]: { ...bankFallbackStats.byFamily[ITEM_FAMILIES.PROCEDURAL] },
+    },
+  };
 }
 
 export function resetBankFallbackStats() {
   bankFallbackStats.applicationRequested = 0;
   bankFallbackStats.bankServed = 0;
   bankFallbackStats.fallbackToGenerated = 0;
+  for (const family of Object.values(ITEM_FAMILIES)) {
+    bankFallbackStats.byFamily[family] = emptyFamilyStats();
+  }
   warnedFallbackKeys.clear();
 }
 
@@ -128,35 +167,54 @@ export function generateQuestion(mode, level, context = null) {
   const config = getModeConfig(mode);
   const targetLevel = clampLevel(level);
   const q = config.generate(targetLevel, context || undefined);
-  const isApplication = q.metadata?.itemFamily === ITEM_FAMILIES.APPLICATION;
+  const generatedFamily = q.metadata?.itemFamily;
+  const isApplication = generatedFamily === ITEM_FAMILIES.APPLICATION;
   const allowWordProblems = context?.allowWordProblems ?? true;
   const requireBankForApplication = context?.requireBankForApplication === true;
+  const requireBank = context?.requireBank === true || requireBankForApplication;
+  // `consultBankFamilies` controls which families attempt a bank lookup before
+  // accepting the dynamically generated question. Application always consults.
+  // Conceptual/procedural default to bank-first only when the caller opts in,
+  // so legacy sessions that have no curated items for those families keep the
+  // existing generated behavior.
+  const consultBankFamilies = new Set(
+    context?.consultBankFamilies || [ITEM_FAMILIES.APPLICATION]
+  );
+  const eligibleForBank =
+    consultBankFamilies.has(generatedFamily) &&
+    (generatedFamily !== ITEM_FAMILIES.APPLICATION || allowWordProblems);
 
   let bankQuestion = null;
-  if (isApplication && allowWordProblems) {
-    bankFallbackStats.applicationRequested += 1;
-    const bankItem = selectApprovedApplicationItem({
+  if (eligibleForBank) {
+    recordBankStat(generatedFamily, "requested");
+    const bankItem = selectApprovedBankItem({
       modeId: mode,
       level: targetLevel,
+      family: generatedFamily,
       targetSubskill: context?.targetSubskill || q.metadata?.subskill,
       recentItemIds: context?.recentBankItemIds || [],
     });
     bankQuestion = buildQuestionFromBankItem(bankItem, targetLevel);
     if (bankQuestion) {
-      bankFallbackStats.bankServed += 1;
+      recordBankStat(generatedFamily, "bankServed");
     } else {
-      bankFallbackStats.fallbackToGenerated += 1;
-      if (requireBankForApplication) {
+      recordBankStat(generatedFamily, "fallbackToGenerated");
+      if (requireBankForApplication && isApplication) {
         throw new Error(
           `Bank-required application item missing for mode=${mode} level=${targetLevel} subskill=${context?.targetSubskill || q.metadata?.subskill}`
         );
       }
+      if (requireBank) {
+        throw new Error(
+          `Bank-required ${generatedFamily} item missing for mode=${mode} level=${targetLevel} subskill=${context?.targetSubskill || q.metadata?.subskill}`
+        );
+      }
       const subskill = context?.targetSubskill || q.metadata?.subskill;
-      const warnKey = `${mode}::${targetLevel}::${subskill}`;
+      const warnKey = `${generatedFamily}::${mode}::${targetLevel}::${subskill}`;
       if (!warnedFallbackKeys.has(warnKey)) {
         warnedFallbackKeys.add(warnKey);
         console.warn(
-          `[itemBank] No approved application item for mode=${mode} level=${targetLevel} subskill=${subskill}; falling back to generated.`
+          `[itemBank] No approved ${generatedFamily} item for mode=${mode} level=${targetLevel} subskill=${subskill}; falling back to generated.`
         );
       }
     }

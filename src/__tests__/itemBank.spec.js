@@ -11,6 +11,8 @@ import {
   createAdaptiveSession,
   generateQuestion,
   recordAnswer,
+  getBankFallbackStats,
+  resetBankFallbackStats,
 } from "../mathEngine";
 
 const REQUIRED_MODES = [
@@ -154,5 +156,51 @@ describe("session exposure tracking and per-item stats", () => {
     expect(stats.correct).toBe(1);
     expect(stats.firstTryCorrect).toBe(1);
     expect(stats.totalResponseMs).toBe(3500);
+  });
+});
+
+describe("bank fallback and observability", () => {
+  it("tracks bank-served vs fallback rates via getBankFallbackStats", () => {
+    resetBankFallbackStats();
+    const initial = getBankFallbackStats();
+    expect(initial.applicationRequested).toBe(0);
+    expect(initial.bankServed).toBe(0);
+    expect(initial.fallbackToGenerated).toBe(0);
+
+    for (let i = 0; i < 5; i++) {
+      generateQuestion("addition", 10, {
+        itemFamily: "application",
+        allowWordProblems: true,
+      });
+    }
+    const after = getBankFallbackStats();
+    expect(after.applicationRequested).toBe(5);
+    expect(after.bankServed).toBe(5);
+    expect(after.fallbackToGenerated).toBe(0);
+  });
+
+  it("throws when requireBankForApplication is set and no bank item exists for the (mode, level) bucket", () => {
+    // Level 1 is below every approved item's levelRange (currently min 7),
+    // so the bank pool is empty and strict mode must throw.
+    expect(() =>
+      generateQuestion("addition", 1, {
+        itemFamily: "application",
+        allowWordProblems: true,
+        requireBankForApplication: true,
+      })
+    ).toThrow(/Bank-required application item missing/);
+  });
+
+  it("does not throw when requireBankForApplication is unset and falls back gracefully", () => {
+    resetBankFallbackStats();
+    // Same low level but without strict requirement: fallback must succeed silently.
+    const q = generateQuestion("addition", 1, {
+      itemFamily: "application",
+      allowWordProblems: true,
+    });
+    expect(q.metadata.itemSource).toBe("generated");
+    const stats = getBankFallbackStats();
+    expect(stats.applicationRequested).toBe(1);
+    expect(stats.fallbackToGenerated).toBe(1);
   });
 });

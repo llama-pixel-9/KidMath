@@ -107,14 +107,34 @@ function logAnalyticsEvent(session, payload) {
   return [...(session.analyticsEvents || []), payload].slice(-200);
 }
 
+// Module-level observability: increments whenever an application item is
+// requested. Exposed for analytics/sampling tools so we can monitor the
+// itemSource=bank vs itemSource=generated rate over time.
+const bankFallbackStats = { applicationRequested: 0, bankServed: 0, fallbackToGenerated: 0 };
+const warnedFallbackKeys = new Set();
+
+export function getBankFallbackStats() {
+  return { ...bankFallbackStats };
+}
+
+export function resetBankFallbackStats() {
+  bankFallbackStats.applicationRequested = 0;
+  bankFallbackStats.bankServed = 0;
+  bankFallbackStats.fallbackToGenerated = 0;
+  warnedFallbackKeys.clear();
+}
+
 export function generateQuestion(mode, level, context = null) {
   const config = getModeConfig(mode);
   const targetLevel = clampLevel(level);
   const q = config.generate(targetLevel, context || undefined);
   const isApplication = q.metadata?.itemFamily === ITEM_FAMILIES.APPLICATION;
   const allowWordProblems = context?.allowWordProblems ?? true;
+  const requireBankForApplication = context?.requireBankForApplication === true;
+
   let bankQuestion = null;
   if (isApplication && allowWordProblems) {
+    bankFallbackStats.applicationRequested += 1;
     const bankItem = selectApprovedApplicationItem({
       modeId: mode,
       level: targetLevel,
@@ -122,6 +142,24 @@ export function generateQuestion(mode, level, context = null) {
       recentItemIds: context?.recentBankItemIds || [],
     });
     bankQuestion = buildQuestionFromBankItem(bankItem, targetLevel);
+    if (bankQuestion) {
+      bankFallbackStats.bankServed += 1;
+    } else {
+      bankFallbackStats.fallbackToGenerated += 1;
+      if (requireBankForApplication) {
+        throw new Error(
+          `Bank-required application item missing for mode=${mode} level=${targetLevel} subskill=${context?.targetSubskill || q.metadata?.subskill}`
+        );
+      }
+      const subskill = context?.targetSubskill || q.metadata?.subskill;
+      const warnKey = `${mode}::${targetLevel}::${subskill}`;
+      if (!warnedFallbackKeys.has(warnKey)) {
+        warnedFallbackKeys.add(warnKey);
+        console.warn(
+          `[itemBank] No approved application item for mode=${mode} level=${targetLevel} subskill=${subskill}; falling back to generated.`
+        );
+      }
+    }
   }
   const bankMetadata = bankQuestion?.metadataOverrides || null;
   const bankPayload = bankQuestion ? { ...bankQuestion } : null;

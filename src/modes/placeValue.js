@@ -107,14 +107,29 @@ export default {
       }
     } else {
       const spread = Math.max(2, answer);
-      while (choices.size < 4) {
+      let attempts = 0;
+      while (choices.size < 4 && attempts < 64) {
+        attempts++;
         const c = answer + randInt(1, spread) * (Math.random() < 0.5 ? -1 : 1);
         if (c >= 0 && !choices.has(c)) choices.add(c);
       }
     }
 
-    while (choices.size < 4) {
-      choices.add(answer + choices.size);
+    let fillerOffset = 1;
+    while (choices.size < 4 && fillerOffset < 32) {
+      const c = answer + fillerOffset;
+      if (c >= 0 && !choices.has(c)) choices.add(c);
+      fillerOffset++;
+    }
+    fillerOffset = 1;
+    while (choices.size < 4 && fillerOffset < 32) {
+      const c = answer - fillerOffset;
+      if (c >= 0 && !choices.has(c)) choices.add(c);
+      fillerOffset++;
+    }
+    let safety = 100;
+    while (choices.size < 4 && safety-- > 0) {
+      choices.add(answer + 100 + (4 - choices.size));
     }
 
     return shuffleArray([...choices]);

@@ -1,5 +1,6 @@
 export {
   buildQuestionFromBankItem,
+  selectApprovedBankItem,
   selectApprovedApplicationItem,
   validateBank,
   validateBankItem,
@@ -9,6 +10,11 @@ export {
   setBankItems,
   resetBankToBundle,
   subscribeBankChanges,
+  levelToBand,
+  levelRangeToBands,
+  LEVEL_BANDS,
+  ITEM_FAMILIES,
+  REVIEW_STATUS,
 } from "./itemBank/index.js";
 export {
   fetchApprovedBank,
@@ -17,4 +23,9 @@ export {
   refreshBankFromCloud,
   normalizeBankRow,
 } from "./itemBank/cloudLoader.js";
-export { APPLICATION_ITEM_BANK, REVIEW_STATUS } from "./itemBank/applicationItems.js";
+export {
+  APPLICATION_ITEM_BANK,
+  CONCEPTUAL_ITEM_BANK,
+  PROCEDURAL_ITEM_BANK,
+  BUNDLED_ITEMS,
+} from "./itemBank/bundle.js";

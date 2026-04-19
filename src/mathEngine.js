@@ -270,10 +270,24 @@ export function generateChoices(answer, count = 4, question = null) {
   const choices = new Set([answer]);
   const spread = Math.max(3, Math.ceil(Math.abs(answer) * 0.3));
 
-  while (choices.size < count) {
+  let attempts = 0;
+  while (choices.size < count && attempts < 128) {
+    attempts++;
     const offset = (Math.floor(Math.random() * spread) + 1) * (Math.random() < 0.5 ? -1 : 1);
     const candidate = answer + offset;
     if (candidate >= 0 && candidate !== answer) choices.add(candidate);
+  }
+  let fillerOffset = 1;
+  while (choices.size < count && fillerOffset < 256) {
+    const candidate = answer + fillerOffset;
+    if (candidate >= 0 && candidate !== answer) choices.add(candidate);
+    fillerOffset++;
+  }
+  fillerOffset = 1;
+  while (choices.size < count && fillerOffset < 256) {
+    const candidate = answer - fillerOffset;
+    if (candidate >= 0 && candidate !== answer) choices.add(candidate);
+    fillerOffset++;
   }
 
   const finalChoices = shuffleArray([...choices]);

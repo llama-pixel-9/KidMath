@@ -38,6 +38,7 @@ import {
   isMuted,
   setMuted,
 } from "./sounds";
+import { createRuntimeDiagnostics } from "./runtimeDiagnostics";
 
 const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers };
 
@@ -97,6 +98,12 @@ const LEVEL_RING_COLORS = [
 
 function isLikelyLowEndDevice() {
   if (typeof window === "undefined") return false;
+  try {
+    const params = new URLSearchParams(window.location.search || "");
+    if (params.get("simulateDevice") === "ipad") return true;
+  } catch {
+    // Ignore malformed URL params.
+  }
   const ua = navigator.userAgent || "";
   const iPadUA = /iPad/.test(ua);
   const iPadDesktopUA = /Macintosh/.test(ua) && navigator.maxTouchPoints > 1;
@@ -651,18 +658,24 @@ export default function MathExplorer({ initialMode }) {
   const questionKeyRef = useRef(0);
   const timeoutIdsRef = useRef([]);
   const answerLockRef = useRef(false);
+  const diagnosticsRef = useRef(createRuntimeDiagnostics("math-explorer"));
 
   const clearQueuedTimeouts = useCallback(() => {
+    diagnosticsRef.current.mark("timeoutsCleared", timeoutIdsRef.current.length);
     timeoutIdsRef.current.forEach((id) => clearTimeout(id));
     timeoutIdsRef.current = [];
   }, []);
 
   const scheduleTimeout = useCallback((fn, delayMs) => {
+    diagnosticsRef.current.mark("timeoutsScheduled");
+    diagnosticsRef.current.mark("timeoutMsTotal", delayMs);
     const id = setTimeout(() => {
       timeoutIdsRef.current = timeoutIdsRef.current.filter((timerId) => timerId !== id);
+      diagnosticsRef.current.mark("timeoutsFired");
       fn();
     }, delayMs);
     timeoutIdsRef.current.push(id);
+    diagnosticsRef.current.setMax("maxPendingTimeouts", timeoutIdsRef.current.length);
     return id;
   }, []);
 
@@ -673,6 +686,8 @@ export default function MathExplorer({ initialMode }) {
     questionStartTime.current = Date.now();
     questionKeyRef.current += 1;
     answerLockRef.current = false;
+    diagnosticsRef.current.mark("questionsLoaded");
+    if (retry) diagnosticsRef.current.mark("retryQuestionsLoaded");
   }, []);
 
   const startNewSession = useCallback((m, allowWordProblemsOverride = allowWordProblems) => {
@@ -717,8 +732,10 @@ export default function MathExplorer({ initialMode }) {
   }, [user]);
 
   useEffect(() => {
+    const diagnostics = diagnosticsRef.current;
     return () => {
       clearQueuedTimeouts();
+      diagnostics.dispose();
     };
   }, [clearQueuedTimeouts]);
 
@@ -747,8 +764,13 @@ export default function MathExplorer({ initialMode }) {
   }, [mode]);
 
   const handleAnswer = (choice) => {
-    if (feedback === "correct" || feedback === "wrong" || answerLockRef.current) return;
+    diagnosticsRef.current.mark("answerAttempts");
+    if (feedback === "correct" || feedback === "wrong" || answerLockRef.current) {
+      diagnosticsRef.current.mark("answerAttemptDropped");
+      return;
+    }
     answerLockRef.current = true;
+    diagnosticsRef.current.mark("answerProcessed");
 
     try {
       const responseTimeMs = Date.now() - questionStartTime.current;

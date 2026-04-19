@@ -29,10 +29,24 @@ export function buildArithmeticDistractors({ answer, a, b, misconceptions = [], 
   candidates.push(answer + spread, answer - spread, answer + spread + 1, answer - spread - 1);
 
   addNumericCandidates(choices, candidates.filter((n) => n >= min), answer);
-  while (choices.size < 4) {
+  let attempts = 0;
+  while (choices.size < 4 && attempts < 64) {
+    attempts++;
     const off = randInt(1, Math.max(4, spread)) * (Math.random() < 0.5 ? -1 : 1);
     const candidate = answer + off;
     if (candidate >= min && candidate !== answer) choices.add(candidate);
+  }
+  let filler = 1;
+  while (choices.size < 4 && filler < 256) {
+    const candidate = answer + filler;
+    if (candidate >= min && candidate !== answer) choices.add(candidate);
+    filler++;
+  }
+  filler = 1;
+  while (choices.size < 4 && filler < 256) {
+    const candidate = answer - filler;
+    if (candidate >= min && candidate !== answer) choices.add(candidate);
+    filler++;
   }
 
   return shuffleArray([...choices].slice(0, 4));
@@ -49,9 +63,23 @@ export function buildSequenceDistractors({ answer, step }) {
     answer - 1,
   ];
   addNumericCandidates(choices, candidates, answer);
-  while (choices.size < 4) {
-    const candidate = answer + randInt(1, step * 3) * (Math.random() < 0.5 ? -1 : 1);
+  let attempts = 0;
+  while (choices.size < 4 && attempts < 64) {
+    attempts++;
+    const candidate = answer + randInt(1, Math.max(1, step * 3)) * (Math.random() < 0.5 ? -1 : 1);
     if (candidate >= 0 && candidate !== answer) choices.add(candidate);
+  }
+  let filler = 1;
+  while (choices.size < 4 && filler < 256) {
+    const candidate = answer + filler;
+    if (candidate >= 0 && candidate !== answer) choices.add(candidate);
+    filler++;
+  }
+  filler = 1;
+  while (choices.size < 4 && filler < 256) {
+    const candidate = answer - filler;
+    if (candidate >= 0 && candidate !== answer) choices.add(candidate);
+    filler++;
   }
   return shuffleArray([...choices].slice(0, 4));
 }

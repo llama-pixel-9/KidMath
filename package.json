@@ -8,10 +8,12 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "vitest run src/__tests__/modes.spec.js src/__tests__/sessionEngine.spec.js src/__tests__/itemBank.spec.js src/__tests__/cloudLoader.spec.js",
+    "test": "vitest run src/__tests__/modes.spec.js src/__tests__/sessionEngine.spec.js src/__tests__/itemBank.spec.js src/__tests__/itemBankCoverage.spec.js src/__tests__/cloudLoader.spec.js",
+    "test:coverage": "KIDMATH_ENFORCE_CELL_COVERAGE=1 vitest run src/__tests__/itemBankCoverage.spec.js",
     "bank:report": "node scripts/bankReport.js",
     "bank:seed": "node scripts/generateBankSeed.js > supabase/migrations/0004_seed_item_bank.sql",
-    "bank:export": "node scripts/exportCloudBank.js"
+    "bank:export": "node scripts/exportCloudBank.js",
+    "bank:gen": "node scripts/itemGen/generateDrafts.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.103.3",

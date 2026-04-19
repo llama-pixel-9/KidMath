@@ -1,0 +1,52 @@
+[
+  {
+    "exemplarId": "addition-makeTen-application-K_1-001",
+    "modeId": "addition",
+    "subskill": "makeTen",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "joinResultUnknown",
+    "source": {
+      "name": "Illustrative Mathematics",
+      "url": "https://tasks.illustrativemathematics.org/content-standards/K/OA/A/2",
+      "license": "CC-BY-4.0",
+      "fetchedAt": "2026-04-19"
+    },
+    "paraphrase": "A ten-frame with 8 dots plus 2 more models 8 + 2 = 10.",
+    "payload": {
+      "a": 8,
+      "b": 2,
+      "op": "+",
+      "answer": 10,
+      "display": {
+        "promptText": "There are 8 ducks in the pond. 2 more ducks swim in. How many ducks are in the pond?"
+      }
+    },
+    "notes": "Numbers chosen to make a ten so students can use the make-ten strategy."
+  },
+  {
+    "exemplarId": "addition-makeTen-application-K_1-002",
+    "modeId": "addition",
+    "subskill": "makeTen",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "partPartWhole",
+    "source": {
+      "name": "Open Up Resources K-5",
+      "url": "https://access.openupresources.org/curricula/our-k5-math/en/grade-1/",
+      "license": "CC-BY-4.0",
+      "fetchedAt": "2026-04-19"
+    },
+    "paraphrase": "Two parts (red + blue cubes) that make ten; whole unknown.",
+    "payload": {
+      "a": 6,
+      "b": 4,
+      "op": "+",
+      "answer": 10,
+      "display": {
+        "promptText": "Jo has 6 red cubes and 4 blue cubes. How many cubes in all?"
+      }
+    },
+    "notes": "Keeps sum under 20; supports the K.OA.4 decomposition focus."
+  }
+]

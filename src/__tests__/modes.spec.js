@@ -83,6 +83,30 @@ describe("mode generation coverage", () => {
     }
   });
 
+  it("sources application items from the approved bank", () => {
+    const modesWithApplicationContext = MODE_IDS.filter((mode) => mode !== "placeValue");
+    for (const mode of modesWithApplicationContext) {
+      const q = generateQuestion(mode, 10, {
+        itemFamily: "application",
+        allowWordProblems: true,
+      });
+      expect(q.metadata.itemFamily).toBe("application");
+      expect(q.metadata.itemSource).toBe("bank");
+      expect(q.metadata.itemId).toBeTruthy();
+      expect(q.display?.promptText).toBeTruthy();
+    }
+
+    const placeValueQuestion = generateQuestion("placeValue", 10, {
+      itemFamily: "application",
+      questionType: "build",
+      allowWordProblems: true,
+    });
+    expect(placeValueQuestion.metadata.itemFamily).toBe("application");
+    expect(placeValueQuestion.metadata.itemSource).toBe("bank");
+    expect(placeValueQuestion.metadata.itemId).toBeTruthy();
+    expect(placeValueQuestion.display?.promptText).toBeTruthy();
+  });
+
   it("respects worksheet word-problem toggle", () => {
     const storyModes = [
       "addition",

@@ -37,6 +37,23 @@ export function validateQuestion(question) {
     if (!Array.isArray(metadata.misconceptionTags)) {
       errors.push("metadata.misconceptionTags must be an array");
     }
+    if (metadata.itemSource === "bank" && !metadata.itemId) {
+      errors.push("metadata.itemId is required for bank items");
+    }
+  }
+
+  if (metadata?.itemFamily === ITEM_FAMILIES.APPLICATION) {
+    const promptText = question.display?.promptText;
+    if (!promptText || typeof promptText !== "string" || !promptText.trim()) {
+      errors.push("application items require display.promptText");
+    } else {
+      if (promptText.length > 220) {
+        errors.push("application promptText should stay within 220 characters");
+      }
+      if (promptText.includes("{") || promptText.includes("}")) {
+        errors.push("application promptText cannot contain unresolved placeholders");
+      }
+    }
   }
 
   return { valid: errors.length === 0, errors };

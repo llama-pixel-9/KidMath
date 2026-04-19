@@ -7,6 +7,7 @@ import HomePage from "./HomePage";
 import MathExplorer from "./MathExplorer";
 import PrintableWorksheet from "./PrintableWorksheet";
 import AboutPage from "./AboutPage";
+import AdminItemsPage from "./admin/AdminItemsPage";
 import "./index.css";
 
 function AppInner() {
@@ -26,6 +27,7 @@ function AppInner() {
       {view === "game" && <MathExplorer initialMode={initialMode} />}
       {view === "worksheet" && <PrintableWorksheet />}
       {view === "about" && <AboutPage />}
+      {view === "admin" && <AdminItemsPage />}
     </div>
   );
 }

@@ -12,17 +12,21 @@ import {
   LogIn,
   LogOut,
   User,
+  Shield,
 } from "lucide-react";
 import { useTheme } from "./useTheme";
 import { useAuth } from "./useAuth";
+import { useIsAdmin } from "./useIsAdmin";
 import { THEMES, THEME_IDS } from "./themes";
 
-const NAV_ITEMS = [
+const BASE_NAV_ITEMS = [
   { id: "home", label: "Home", icon: Home },
   { id: "game", label: "Play", icon: Gamepad2 },
   { id: "worksheet", label: "Worksheets", icon: FileText },
   { id: "about", label: "About", icon: Info },
 ];
+
+const ADMIN_NAV_ITEM = { id: "admin", label: "Admin", icon: Shield };
 
 function ThemePicker() {
   const { theme, themeId, setThemeId } = useTheme();
@@ -150,6 +154,8 @@ function AuthButton({ compact = false }) {
 export default function Navbar({ currentView, onNavigate }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const { theme } = useTheme();
+  const { isAdmin } = useIsAdmin();
+  const navItems = isAdmin ? [...BASE_NAV_ITEMS, ADMIN_NAV_ITEM] : BASE_NAV_ITEMS;
 
   const handleNav = (id) => {
     onNavigate(id);
@@ -177,7 +183,7 @@ export default function Navbar({ currentView, onNavigate }) {
 
         {/* Desktop links */}
         <div className="hidden sm:flex items-center gap-1">
-          {NAV_ITEMS.map((item) => {
+          {navItems.map((item) => {
             const Icon = item.icon;
             const active = currentView === item.id;
             return (
@@ -228,7 +234,7 @@ export default function Navbar({ currentView, onNavigate }) {
             transition={{ duration: 0.2 }}
           >
             <div className="px-4 py-2 space-y-1">
-              {NAV_ITEMS.map((item) => {
+              {navItems.map((item) => {
                 const Icon = item.icon;
                 const active = currentView === item.id;
                 return (

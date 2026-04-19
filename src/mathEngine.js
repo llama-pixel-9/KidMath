@@ -173,12 +173,17 @@ export function generateQuestion(mode, level, context = null) {
   const requireBankForApplication = context?.requireBankForApplication === true;
   const requireBank = context?.requireBank === true || requireBankForApplication;
   // `consultBankFamilies` controls which families attempt a bank lookup before
-  // accepting the dynamically generated question. Application always consults.
-  // Conceptual/procedural default to bank-first only when the caller opts in,
-  // so legacy sessions that have no curated items for those families keep the
-  // existing generated behavior.
+  // accepting the dynamically generated question. Defaults to all three so
+  // newly-authored conceptual/procedural items reach learners as soon as they
+  // exist; cells with no approved items return null from the selector and the
+  // engine falls back to the dynamic generator (same behavior as today for
+  // any unauthored cell).
   const consultBankFamilies = new Set(
-    context?.consultBankFamilies || [ITEM_FAMILIES.APPLICATION]
+    context?.consultBankFamilies || [
+      ITEM_FAMILIES.APPLICATION,
+      ITEM_FAMILIES.PROCEDURAL,
+      ITEM_FAMILIES.CONCEPTUAL,
+    ]
   );
   const eligibleForBank =
     consultBankFamilies.has(generatedFamily) &&

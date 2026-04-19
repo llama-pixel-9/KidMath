@@ -180,10 +180,10 @@ describe("bank fallback and observability", () => {
   });
 
   it("throws when requireBankForApplication is set and no bank item exists for the (mode, level) bucket", () => {
-    // Level 1 is below every approved item's levelRange (currently min 7),
-    // so the bank pool is empty and strict mode must throw.
+    // Subtraction K-1 is empty until Phase 1 backfills it; switch this test
+    // to whichever (mode, level) is still uncovered when that changes.
     expect(() =>
-      generateQuestion("addition", 1, {
+      generateQuestion("subtraction", 1, {
         itemFamily: "application",
         allowWordProblems: true,
         requireBankForApplication: true,
@@ -193,8 +193,7 @@ describe("bank fallback and observability", () => {
 
   it("does not throw when requireBankForApplication is unset and falls back gracefully", () => {
     resetBankFallbackStats();
-    // Same low level but without strict requirement: fallback must succeed silently.
-    const q = generateQuestion("addition", 1, {
+    const q = generateQuestion("subtraction", 1, {
       itemFamily: "application",
       allowWordProblems: true,
     });

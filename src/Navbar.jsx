@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Rocket,
@@ -20,13 +21,13 @@ import { useIsAdmin } from "./useIsAdmin";
 import { THEMES, THEME_IDS } from "./themes";
 
 const BASE_NAV_ITEMS = [
-  { id: "home", label: "Home", icon: Home },
-  { id: "game", label: "Play", icon: Gamepad2 },
-  { id: "worksheet", label: "Worksheets", icon: FileText },
-  { id: "about", label: "About", icon: Info },
+  { to: "/", label: "Home", icon: Home, end: true },
+  { to: "/play", label: "Play", icon: Gamepad2 },
+  { to: "/worksheets", label: "Worksheets", icon: FileText },
+  { to: "/about", label: "About", icon: Info },
 ];
 
-const ADMIN_NAV_ITEM = { id: "admin", label: "Admin", icon: Shield };
+const ADMIN_NAV_ITEM = { to: "/admin", label: "Admin", icon: Shield };
 
 function ThemePicker() {
   const { theme, themeId, setThemeId } = useTheme();
@@ -151,16 +152,20 @@ function AuthButton({ compact = false }) {
   );
 }
 
-export default function Navbar({ currentView, onNavigate }) {
+function isPathActive(currentPath, item) {
+  if (item.end) return currentPath === item.to;
+  return currentPath === item.to || currentPath.startsWith(`${item.to}/`);
+}
+
+export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const { theme } = useTheme();
   const { isAdmin } = useIsAdmin();
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
   const navItems = isAdmin ? [...BASE_NAV_ITEMS, ADMIN_NAV_ITEM] : BASE_NAV_ITEMS;
 
-  const handleNav = (id) => {
-    onNavigate(id);
-    setMobileOpen(false);
-  };
+  const closeMobile = () => setMobileOpen(false);
 
   return (
     <nav className={`no-print sticky top-0 z-30 ${theme.navBg} backdrop-blur shadow-sm`}>
@@ -168,7 +173,10 @@ export default function Navbar({ currentView, onNavigate }) {
         {/* Logo */}
         <button
           className="flex items-center gap-2 cursor-pointer"
-          onClick={() => handleNav("home")}
+          onClick={() => {
+            navigate("/");
+            closeMobile();
+          }}
         >
           <div className={`bg-gradient-to-br ${theme.logoPill} p-1.5 rounded-xl`}>
             <Rocket className="h-5 w-5 text-white -rotate-45" />
@@ -185,18 +193,19 @@ export default function Navbar({ currentView, onNavigate }) {
         <div className="hidden sm:flex items-center gap-1">
           {navItems.map((item) => {
             const Icon = item.icon;
-            const active = currentView === item.id;
+            const active = isPathActive(pathname, item);
             return (
-              <button
-                key={item.id}
+              <NavLink
+                key={item.to}
+                to={item.to}
+                end={item.end}
                 className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-bold cursor-pointer transition-colors ${
                   active ? theme.navActive : `${theme.navText} ${theme.navHover}`
                 }`}
-                onClick={() => handleNav(item.id)}
               >
                 <Icon className="h-4 w-4" />
                 {item.label}
-              </button>
+              </NavLink>
             );
           })}
           <ThemePicker />
@@ -236,18 +245,19 @@ export default function Navbar({ currentView, onNavigate }) {
             <div className="px-4 py-2 space-y-1">
               {navItems.map((item) => {
                 const Icon = item.icon;
-                const active = currentView === item.id;
+                const active = isPathActive(pathname, item);
                 return (
-                  <button
-                    key={item.id}
+                  <Link
+                    key={item.to}
+                    to={item.to}
+                    onClick={closeMobile}
                     className={`flex items-center gap-3 w-full px-4 py-3 rounded-xl text-sm font-bold cursor-pointer transition-colors ${
                       active ? theme.navActive : `${theme.navText} ${theme.navHover}`
                     }`}
-                    onClick={() => handleNav(item.id)}
                   >
                     <Icon className="h-5 w-5" />
                     {item.label}
-                  </button>
+                  </Link>
                 );
               })}
             </div>

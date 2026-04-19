@@ -8,6 +8,7 @@ import MathExplorer from "./MathExplorer";
 import PrintableWorksheet from "./PrintableWorksheet";
 import AboutPage from "./AboutPage";
 import AdminItemsPage from "./admin/AdminItemsPage";
+import DiagnosticsPage from "./admin/DiagnosticsPage";
 import "./index.css";
 
 function AppInner() {
@@ -28,6 +29,7 @@ function AppInner() {
       {view === "worksheet" && <PrintableWorksheet />}
       {view === "about" && <AboutPage />}
       {view === "admin" && <AdminItemsPage />}
+      {view === "diagnostics" && <DiagnosticsPage />}
     </div>
   );
 }

@@ -39,6 +39,7 @@ import {
   setMuted,
 } from "./sounds";
 import { createRuntimeDiagnostics } from "./runtimeDiagnostics";
+import { getTelemetry } from "./telemetry/telemetryClient";
 
 const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers };
 
@@ -659,6 +660,7 @@ export default function MathExplorer({ initialMode }) {
   const timeoutIdsRef = useRef([]);
   const answerLockRef = useRef(false);
   const diagnosticsRef = useRef(createRuntimeDiagnostics("math-explorer"));
+  const telemetryRef = useRef(getTelemetry());
 
   const clearQueuedTimeouts = useCallback(() => {
     diagnosticsRef.current.mark("timeoutsCleared", timeoutIdsRef.current.length);
@@ -688,6 +690,8 @@ export default function MathExplorer({ initialMode }) {
     answerLockRef.current = false;
     diagnosticsRef.current.mark("questionsLoaded");
     if (retry) diagnosticsRef.current.mark("retryQuestionsLoaded");
+    telemetryRef.current.inc("questionsLoaded");
+    if (retry) telemetryRef.current.inc("retryQuestionsLoaded");
   }, []);
 
   const startNewSession = useCallback((m, allowWordProblemsOverride = allowWordProblems) => {
@@ -726,9 +730,14 @@ export default function MathExplorer({ initialMode }) {
     const dismissed = sessionStorage.getItem("dismissedLoginPrompt");
     if (dismissed) return;
     loginTimerRef.current = setTimeout(() => {
+      telemetryRef.current.recordEvent("login_modal_shown");
       setShowLoginPrompt(true);
     }, 10 * 60 * 1000);
     return () => clearTimeout(loginTimerRef.current);
+  }, [user]);
+
+  useEffect(() => {
+    telemetryRef.current.setUser(user?.id || null);
   }, [user]);
 
   useEffect(() => {
@@ -740,6 +749,8 @@ export default function MathExplorer({ initialMode }) {
   }, [clearQueuedTimeouts]);
 
   const handleModeChange = (m) => {
+    telemetryRef.current.inc("modeChanges");
+    telemetryRef.current.recordEvent("mode_change", { from: mode, to: m });
     setMode(m);
     startNewSession(m);
   };
@@ -760,17 +771,22 @@ export default function MathExplorer({ initialMode }) {
     const lt = await persistSession(mode, sess);
     setLifetimeStars(lt);
     setShowComplete(true);
+    telemetryRef.current.inc("setsCompleted");
+    telemetryRef.current.recordEvent("set_complete", { mode, firstTryCorrect: sess.firstTryCorrect });
     playCompleteSound();
   }, [mode]);
 
   const handleAnswer = (choice) => {
     diagnosticsRef.current.mark("answerAttempts");
+    telemetryRef.current.inc("answerAttempts");
     if (feedback === "correct" || feedback === "wrong" || answerLockRef.current) {
       diagnosticsRef.current.mark("answerAttemptDropped");
+      telemetryRef.current.inc("answerAttemptDropped");
       return;
     }
     answerLockRef.current = true;
     diagnosticsRef.current.mark("answerProcessed");
+    telemetryRef.current.inc("answerProcessed");
 
     try {
       const responseTimeMs = Date.now() - questionStartTime.current;
@@ -827,6 +843,7 @@ export default function MathExplorer({ initialMode }) {
   };
 
   const handleLoginDismiss = () => {
+    telemetryRef.current.recordEvent("login_modal_dismissed");
     setShowLoginPrompt(false);
     sessionStorage.setItem("dismissedLoginPrompt", "true");
   };

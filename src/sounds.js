@@ -1,6 +1,9 @@
 const STORAGE_KEY = "kidmath-muted";
 
 let audioCtx = null;
+let mutedCache = null;
+const activeSources = new Set();
+const MAX_ACTIVE_SOURCES = 48;
 
 function getCtx() {
   if (!audioCtx) {
@@ -13,16 +16,19 @@ function getCtx() {
 }
 
 export function isMuted() {
+  if (mutedCache != null) return mutedCache;
   try {
-    return localStorage.getItem(STORAGE_KEY) === "true";
+    mutedCache = localStorage.getItem(STORAGE_KEY) === "true";
   } catch {
-    return false;
+    mutedCache = false;
   }
+  return mutedCache;
 }
 
 export function setMuted(muted) {
+  mutedCache = Boolean(muted);
   try {
-    localStorage.setItem(STORAGE_KEY, muted ? "true" : "false");
+    localStorage.setItem(STORAGE_KEY, mutedCache ? "true" : "false");
   } catch {
     // Ignore storage failures and keep runtime mute state.
   }
@@ -30,16 +36,29 @@ export function setMuted(muted) {
 
 function playTone(frequency, startTime, duration, type = "sine", volume = 0.15) {
   const ctx = getCtx();
+  if (activeSources.size >= MAX_ACTIVE_SOURCES) return;
   const osc = ctx.createOscillator();
   const gain = ctx.createGain();
   osc.type = type;
   osc.frequency.value = frequency;
-  gain.gain.setValueAtTime(volume, startTime);
-  gain.gain.exponentialRampToValueAtTime(0.001, startTime + duration);
+  const safeStart = Number.isFinite(startTime) ? startTime : ctx.currentTime;
+  const safeDuration = Number.isFinite(duration) ? Math.max(0.01, duration) : 0.15;
+  gain.gain.setValueAtTime(volume, safeStart);
+  gain.gain.exponentialRampToValueAtTime(0.001, safeStart + safeDuration);
   osc.connect(gain);
   gain.connect(ctx.destination);
-  osc.start(startTime);
-  osc.stop(startTime + duration);
+  activeSources.add(osc);
+  osc.onended = () => {
+    activeSources.delete(osc);
+    try {
+      osc.disconnect();
+      gain.disconnect();
+    } catch {
+      // Node may already be disconnected in some browsers.
+    }
+  };
+  osc.start(safeStart);
+  osc.stop(safeStart + safeDuration);
 }
 
 export function playCorrectSound() {

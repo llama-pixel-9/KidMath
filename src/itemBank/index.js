@@ -1,4 +1,4 @@
-import { APPLICATION_ITEM_BANK, REVIEW_STATUS } from "./applicationItems.js";
+import { APPLICATION_ITEM_BANK as BUNDLED_ITEMS, REVIEW_STATUS } from "./applicationItems.js";
 
 const REQUIRED_FIELDS = [
   "itemId",
@@ -10,6 +10,49 @@ const REQUIRED_FIELDS = [
   "reviewStatus",
   "question",
 ];
+
+// Mutable in-memory cache. Initialized from the bundled snapshot so the app
+// (and tests) work synchronously before any cloud hydration happens.
+let currentBank = BUNDLED_ITEMS.slice();
+let currentSource = "bundle";
+const subscribers = new Set();
+
+function notifySubscribers() {
+  for (const cb of subscribers) {
+    try {
+      cb({ items: currentBank, source: currentSource });
+    } catch {
+      // subscribers should not break the bank
+    }
+  }
+}
+
+export function getBankItems() {
+  return currentBank;
+}
+
+export function getBankSource() {
+  return currentSource;
+}
+
+export function setBankItems(items, source = "cloud") {
+  if (!Array.isArray(items)) return;
+  currentBank = items.slice();
+  currentSource = source;
+  notifySubscribers();
+}
+
+export function resetBankToBundle() {
+  currentBank = BUNDLED_ITEMS.slice();
+  currentSource = "bundle";
+  notifySubscribers();
+}
+
+export function subscribeBankChanges(callback) {
+  if (typeof callback !== "function") return () => {};
+  subscribers.add(callback);
+  return () => subscribers.delete(callback);
+}
 
 function isValidLevelRange(levelRange) {
   return (
@@ -48,7 +91,7 @@ export function validateBankItem(item) {
   return { valid: errors.length === 0, errors };
 }
 
-export function validateBank(items = APPLICATION_ITEM_BANK) {
+export function validateBank(items = currentBank) {
   const issues = [];
   const seenIds = new Set();
   const seenPrompts = new Map();
@@ -82,7 +125,7 @@ function randomPick(items, rng = Math.random) {
 }
 
 function filterApprovedByModeLevel(modeId, level) {
-  return APPLICATION_ITEM_BANK.filter(
+  return currentBank.filter(
     (item) =>
       item.modeId === modeId &&
       item.itemFamily === "application" &&
@@ -148,7 +191,7 @@ export function buildQuestionFromBankItem(bankItem, level) {
 
 export function getBankCoverage() {
   const counts = new Map();
-  for (const item of APPLICATION_ITEM_BANK) {
+  for (const item of currentBank) {
     if (item.reviewStatus !== REVIEW_STATUS.APPROVED) continue;
     const key = `${item.modeId}::${item.subskill}`;
     counts.set(key, (counts.get(key) || 0) + 1);

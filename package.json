@@ -8,8 +8,10 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "vitest run src/__tests__/modes.spec.js && vitest run src/__tests__/sessionEngine.spec.js && vitest run src/__tests__/itemBank.spec.js",
-    "bank:report": "node scripts/bankReport.js"
+    "test": "vitest run src/__tests__/modes.spec.js src/__tests__/sessionEngine.spec.js src/__tests__/itemBank.spec.js src/__tests__/cloudLoader.spec.js",
+    "bank:report": "node scripts/bankReport.js",
+    "bank:seed": "node scripts/generateBankSeed.js > supabase/migrations/0004_seed_item_bank.sql",
+    "bank:export": "node scripts/exportCloudBank.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.103.3",

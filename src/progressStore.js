@@ -96,13 +96,55 @@ async function getUser() {
   return session?.user ?? null;
 }
 
-async function loadCloud(userId, mode) {
+async function loadCloudBankItemStats(userId, mode) {
   const { data, error } = await supabase
-    .from("progress")
-    .select("level, mistake_bank, total_sessions, lifetime_stars")
+    .from("progress_item_stats")
+    .select("item_id, attempts, first_try_correct, correct, total_response_ms, last_seen_at")
     .eq("user_id", userId)
-    .eq("mode", mode)
-    .single();
+    .eq("mode", mode);
+  if (error || !Array.isArray(data)) return {};
+  const stats = {};
+  for (const row of data) {
+    stats[row.item_id] = {
+      attempts: row.attempts ?? 0,
+      firstTryCorrect: row.first_try_correct ?? 0,
+      correct: row.correct ?? 0,
+      totalResponseMs: row.total_response_ms ?? 0,
+      lastSeenAt: row.last_seen_at ? Date.parse(row.last_seen_at) : -1,
+    };
+  }
+  return stats;
+}
+
+async function upsertCloudBankItemStats(userId, mode, bankItemStats) {
+  if (!bankItemStats || Object.keys(bankItemStats).length === 0) return;
+  const rows = Object.entries(bankItemStats).map(([itemId, stats]) => ({
+    user_id: userId,
+    mode,
+    item_id: itemId,
+    attempts: stats.attempts ?? 0,
+    first_try_correct: stats.firstTryCorrect ?? 0,
+    correct: stats.correct ?? 0,
+    total_response_ms: stats.totalResponseMs ?? 0,
+    last_seen_at: new Date(
+      Number.isFinite(stats.lastSeenAt) && stats.lastSeenAt > 0 ? stats.lastSeenAt : Date.now()
+    ).toISOString(),
+  }));
+  await supabase
+    .from("progress_item_stats")
+    .upsert(rows, { onConflict: "user_id,mode,item_id" });
+}
+
+async function loadCloud(userId, mode) {
+  const [{ data, error }, bankItemStats] = await Promise.all([
+    supabase
+      .from("progress")
+      .select("level, mistake_bank, total_sessions, lifetime_stars")
+      .eq("user_id", userId)
+      .eq("mode", mode)
+      .single(),
+    loadCloudBankItemStats(userId, mode),
+  ]);
 
   if (error || !data) {
     return {
@@ -110,7 +152,7 @@ async function loadCloud(userId, mode) {
       mistakeBank: [],
       totalSessions: 0,
       lifetimeStars: 0,
-      bankItemStats: {},
+      bankItemStats: bankItemStats || {},
       recentBankItemIds: [],
     };
   }
@@ -119,30 +161,32 @@ async function loadCloud(userId, mode) {
     mistakeBank: Array.isArray(data.mistake_bank) ? data.mistake_bank : [],
     totalSessions: data.total_sessions ?? 0,
     lifetimeStars: data.lifetime_stars ?? 0,
-    // Per-item bank analytics not yet persisted server-side; defer to local cache
-    // so local progressStore mirrors the cloud-shape contract.
-    bankItemStats: {},
+    bankItemStats,
+    // recentBankItemIds is a session-window concern; not persisted across devices.
     recentBankItemIds: [],
   };
 }
 
-async function saveCloud(userId, mode, { level, mistakeBank, firstTryCorrect }) {
+async function saveCloud(userId, mode, { level, mistakeBank, firstTryCorrect, bankItemStats }) {
   const existing = await loadCloud(userId, mode);
   const newTotalSessions = existing.totalSessions + 1;
   const newLifetimeStars = existing.lifetimeStars + (firstTryCorrect ?? 0);
 
-  await supabase.from("progress").upsert(
-    {
-      user_id: userId,
-      mode,
-      level: clampLevel(level),
-      mistake_bank: (mistakeBank || []).slice(0, 20),
-      total_sessions: newTotalSessions,
-      lifetime_stars: newLifetimeStars,
-      updated_at: new Date().toISOString(),
-    },
-    { onConflict: "user_id,mode" }
-  );
+  await Promise.all([
+    supabase.from("progress").upsert(
+      {
+        user_id: userId,
+        mode,
+        level: clampLevel(level),
+        mistake_bank: (mistakeBank || []).slice(0, 20),
+        total_sessions: newTotalSessions,
+        lifetime_stars: newLifetimeStars,
+        updated_at: new Date().toISOString(),
+      },
+      { onConflict: "user_id,mode" }
+    ),
+    upsertCloudBankItemStats(userId, mode, bankItemStats),
+  ]);
 }
 
 // --- Merge localStorage into Supabase on first sign-in ---
@@ -168,6 +212,10 @@ export async function mergeLocalToCloud(userId) {
       { user_id: userId, mode, ...merged },
       { onConflict: "user_id,mode" }
     );
+
+    // Migrate per-item stats: sum local counts into cloud counts.
+    const mergedBankStats = mergeBankItemStats(cloud.bankItemStats || {}, local.bankItemStats || {});
+    await upsertCloudBankItemStats(userId, mode, mergedBankStats);
   }
 
   localStorage.removeItem(PROGRESS_KEY);

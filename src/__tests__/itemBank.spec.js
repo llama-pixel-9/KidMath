@@ -203,4 +203,46 @@ describe("bank fallback and observability", () => {
     expect(stats.applicationRequested).toBe(1);
     expect(stats.fallbackToGenerated).toBe(1);
   });
+
+  it("consults the bank for procedural and conceptual families by default", () => {
+    // No procedural/conceptual items currently exist in the bundle, so each
+    // request increments byFamily[<family>].requested + fallbackToGenerated
+    // without throwing. Once Phase 1 authoring lands procedural/conceptual
+    // items, the same call site will start serving from the bank without any
+    // engine change.
+    resetBankFallbackStats();
+    let proceduralSeen = false;
+    let conceptualSeen = false;
+    for (let i = 0; i < 60 && !(proceduralSeen && conceptualSeen); i++) {
+      const q = generateQuestion("addition", 5);
+      if (q.metadata.itemFamily === "procedural") proceduralSeen = true;
+      if (q.metadata.itemFamily === "conceptual") conceptualSeen = true;
+    }
+    expect(proceduralSeen).toBe(true);
+    expect(conceptualSeen).toBe(true);
+    const stats = getBankFallbackStats();
+    expect(stats.byFamily.procedural.requested).toBeGreaterThan(0);
+    expect(stats.byFamily.conceptual.requested).toBeGreaterThan(0);
+    // Today every procedural/conceptual lookup falls back; that is fine.
+    expect(stats.byFamily.procedural.fallbackToGenerated).toBe(
+      stats.byFamily.procedural.requested
+    );
+    expect(stats.byFamily.conceptual.fallbackToGenerated).toBe(
+      stats.byFamily.conceptual.requested
+    );
+  });
+
+  it("respects an explicit consultBankFamilies override (back-compat)", () => {
+    // Callers can still opt out per request, e.g. to keep procedural/conceptual
+    // dynamically generated for a specific session.
+    resetBankFallbackStats();
+    for (let i = 0; i < 20; i++) {
+      generateQuestion("addition", 5, {
+        consultBankFamilies: ["application"],
+      });
+    }
+    const stats = getBankFallbackStats();
+    expect(stats.byFamily.procedural.requested).toBe(0);
+    expect(stats.byFamily.conceptual.requested).toBe(0);
+  });
 });

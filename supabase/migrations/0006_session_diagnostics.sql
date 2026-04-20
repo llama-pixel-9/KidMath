@@ -39,12 +39,7 @@ create policy "telemetry_update_by_session" on public.session_diagnostics
 
 drop policy if exists "telemetry_select_admin" on public.session_diagnostics;
 create policy "telemetry_select_admin" on public.session_diagnostics
-  for select to authenticated using (
-    exists (
-      select 1 from public.profiles
-      where profiles.id = auth.uid() and profiles.is_admin = true
-    )
-  );
+  for select to authenticated using (public.is_admin(auth.uid()));
 
 create table if not exists public.feature_flags (
   key text primary key,
@@ -64,9 +59,4 @@ create policy "feature_flags_select_any" on public.feature_flags
 
 drop policy if exists "feature_flags_update_admin" on public.feature_flags;
 create policy "feature_flags_update_admin" on public.feature_flags
-  for update to authenticated using (
-    exists (
-      select 1 from public.profiles
-      where profiles.id = auth.uid() and profiles.is_admin = true
-    )
-  );
+  for update to authenticated using (public.is_admin(auth.uid()));

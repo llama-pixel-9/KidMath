@@ -11,6 +11,15 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## Phase 2 Batch 3 — Addition application only (2026-04-20)
+
+Added 99 more addition *application* items (`addition-app-238` through `addition-app-336`). Procedural and conceptual not yet expanded this round — deferred to the next "continue" session so numeric selection stays careful and avoids prompt collisions in the increasingly saturated K-1 proc pool.
+
+- Fresh character set (Eliot, Felicia, Giselle, Hector, Imogen, Jasper, Kira, Leif, Mateo, Nola, Oren, Piper, Qi, Rashid, Savannah, Tomas, Ulises, Vanessa, Wyatt, Xiomara, Yusuf, Zion, Aria, Boaz, Camille, Dmitri, Emeril, Freya, Gideon, Hazel).
+- Fresh context set (cabin, cottage, campsite, canyon, coast, craft fair, pottery studio, bird feeder, squirrel trail, camping shelter, museum vault, bicycle repair shop, rock-climbing gym, ice rink, ski lodge, theater stage, observatory, telescope, dance floor, magician's stage).
+
+Addition application cell counts post-session: 35-38 items per cell. Procedural and conceptual still at 25.
+
 ## Phase 2 Batch 2 — Addition (2026-04-20)
 
 Added 297 more addition items (99 application + 99 procedural + 99 conceptual). All structurally inspired by IM task patterns (no verbatim text in this batch); same CC BY 4.0 sources referenced in Batch 1. This session introduced new conceptual templates (commutative/doubles/near-doubles framings, "What goes in the circle", "If sum is X and first addend is A, second addend is?", "Missing piece: X equals A plus what?", "Think-addition").

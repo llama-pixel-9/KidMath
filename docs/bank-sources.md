@@ -11,6 +11,21 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## Phase 2 Batch 4 — Addition (near-final) (2026-04-20)
+
+Added 324 items (108 app + 108 proc + 108 conc) bringing every addition cell to 48-51 items. Bundle now 1910 items.
+
+Addition is effectively complete at the 50+ target: most cells are at 48, and a handful are already past 50. A tiny follow-up (~3 items per cell) would bring every cell strictly ≥50.
+
+Used fresh character set (Asher, Blythe, Corin, Dora, Enzo, Fae, Gemma, Holt, Ines, Juno, Krish, Lula, Mika, Nikko, Orion, Pilar, Quill, Reid, Sora, Taavi, Ulf, Vika, Wes, Xena, Yara, Zev, Arlo, Bodhi, Caly, Duri) and contexts (cabin, cottage, moss patch, forest clearing, lily pond, coral reef, fishbowl, baking sheet, serving tray, chess club, band rehearsal, art gallery, sushi counter, tea shop, ice cream parlor, flower cart, ski slope, observatory, toy warehouse, harbor, city park).
+
+Conceptual introduced 3 more templates:
+- "Number pair that makes X: A and what?"
+- "On a number line, start at X and hop Y spaces. Where do you land?"
+- "Think of X as A + B. Verify the sum."
+- "If A and some number make X, the number is?"
+- "Turn-around: if A + B = X, what is B + A?"
+
 ## Phase 2 Batch 3 (part 2) — Addition procedural + conceptual (2026-04-20)
 
 Completed Batch 3 by adding 99 procedural + 99 conceptual items (198 total). Bundle now 1586 items, every addition cell at 36-39 items.

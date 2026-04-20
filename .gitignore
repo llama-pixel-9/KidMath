@@ -17,6 +17,9 @@ dist-ssr
 # Local git worktrees
 .worktrees/
 
+# Supabase CLI local cache (auto-generated on every `supabase` command)
+supabase/.temp/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

@@ -6,6 +6,8 @@ import {
   selectApprovedApplicationItem,
   validateBank,
   getBankCoverage,
+  setBankItems,
+  resetBankToBundle,
 } from "../itemBank.js";
 import {
   createAdaptiveSession,
@@ -180,35 +182,43 @@ describe("bank fallback and observability", () => {
   });
 
   it("throws when requireBankForApplication is set and no bank item exists for the (mode, level) bucket", () => {
-    // Subtraction K-1 is empty until Phase 1 backfills it; switch this test
-    // to whichever (mode, level) is still uncovered when that changes.
-    expect(() =>
-      generateQuestion("subtraction", 1, {
-        itemFamily: "application",
-        allowWordProblems: true,
-        requireBankForApplication: true,
-      })
-    ).toThrow(/Bank-required application item missing/);
+    // Phase 1 backfilled every (mode, level, family) cell, so we have to
+    // synthesize an empty bank to exercise the strict-mode error path.
+    setBankItems([], "test");
+    try {
+      expect(() =>
+        generateQuestion("addition", 5, {
+          itemFamily: "application",
+          allowWordProblems: true,
+          requireBankForApplication: true,
+        })
+      ).toThrow(/Bank-required application item missing/);
+    } finally {
+      resetBankToBundle();
+    }
   });
 
   it("does not throw when requireBankForApplication is unset and falls back gracefully", () => {
-    resetBankFallbackStats();
-    const q = generateQuestion("subtraction", 1, {
-      itemFamily: "application",
-      allowWordProblems: true,
-    });
-    expect(q.metadata.itemSource).toBe("generated");
-    const stats = getBankFallbackStats();
-    expect(stats.applicationRequested).toBe(1);
-    expect(stats.fallbackToGenerated).toBe(1);
+    setBankItems([], "test");
+    try {
+      resetBankFallbackStats();
+      const q = generateQuestion("addition", 5, {
+        itemFamily: "application",
+        allowWordProblems: true,
+      });
+      expect(q.metadata.itemSource).toBe("generated");
+      const stats = getBankFallbackStats();
+      expect(stats.applicationRequested).toBe(1);
+      expect(stats.fallbackToGenerated).toBe(1);
+    } finally {
+      resetBankToBundle();
+    }
   });
 
   it("consults the bank for procedural and conceptual families by default", () => {
-    // No procedural/conceptual items currently exist in the bundle, so each
-    // request increments byFamily[<family>].requested + fallbackToGenerated
-    // without throwing. Once Phase 1 authoring lands procedural/conceptual
-    // items, the same call site will start serving from the bank without any
-    // engine change.
+    // After Phase 1, every cell has approved items, so consults should serve
+    // from bank rather than fall back. This regression-tests both the
+    // defaulted consultBankFamilies set and the per-family stats rollup.
     resetBankFallbackStats();
     let proceduralSeen = false;
     let conceptualSeen = false;
@@ -222,13 +232,12 @@ describe("bank fallback and observability", () => {
     const stats = getBankFallbackStats();
     expect(stats.byFamily.procedural.requested).toBeGreaterThan(0);
     expect(stats.byFamily.conceptual.requested).toBeGreaterThan(0);
-    // Today every procedural/conceptual lookup falls back; that is fine.
-    expect(stats.byFamily.procedural.fallbackToGenerated).toBe(
-      stats.byFamily.procedural.requested
-    );
-    expect(stats.byFamily.conceptual.fallbackToGenerated).toBe(
-      stats.byFamily.conceptual.requested
-    );
+    // Now that the bank is populated, served-from-bank should be the common
+    // case and fallbacks should be zero (or near-zero) for these families.
+    expect(stats.byFamily.procedural.bankServed).toBeGreaterThan(0);
+    expect(stats.byFamily.conceptual.bankServed).toBeGreaterThan(0);
+    expect(stats.byFamily.procedural.fallbackToGenerated).toBe(0);
+    expect(stats.byFamily.conceptual.fallbackToGenerated).toBe(0);
   });
 
   it("respects an explicit consultBankFamilies override (back-compat)", () => {

@@ -7,7 +7,9 @@ import {
 } from "../mathEngine";
 import placeValueMode from "../modes/placeValue";
 
-const HARD_TIMEOUT_MS = 50;
+// Generous per-call budget so CI fluctuations don't flake. The bug we
+// guard against would loop forever, not finish in 250ms.
+const HARD_TIMEOUT_MS = 250;
 
 function runWithTimeBudget(fn) {
   const start = Date.now();

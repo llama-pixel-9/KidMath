@@ -14,6 +14,7 @@ import {
   LogOut,
   User,
   Shield,
+  Activity,
 } from "lucide-react";
 import { useTheme } from "./useTheme";
 import { useAuth } from "./useAuth";
@@ -28,6 +29,7 @@ const BASE_NAV_ITEMS = [
 ];
 
 const ADMIN_NAV_ITEM = { to: "/admin", label: "Admin", icon: Shield };
+const DIAGNOSTICS_NAV_ITEM = { to: "/diagnostics", label: "Diag", icon: Activity };
 
 function ThemePicker() {
   const { theme, themeId, setThemeId } = useTheme();
@@ -163,7 +165,7 @@ export default function Navbar() {
   const { isAdmin } = useIsAdmin();
   const navigate = useNavigate();
   const { pathname } = useLocation();
-  const navItems = isAdmin ? [...BASE_NAV_ITEMS, ADMIN_NAV_ITEM] : BASE_NAV_ITEMS;
+  const navItems = isAdmin ? [...BASE_NAV_ITEMS, ADMIN_NAV_ITEM, DIAGNOSTICS_NAV_ITEM] : BASE_NAV_ITEMS;
 
   const closeMobile = () => setMobileOpen(false);
 

@@ -8,6 +8,7 @@ import MathExplorer from "./MathExplorer";
 import PrintableWorksheet from "./PrintableWorksheet";
 import AboutPage from "./AboutPage";
 import AdminItemsPage from "./admin/AdminItemsPage";
+import DiagnosticsPage from "./admin/DiagnosticsPage";
 import "./index.css";
 
 function PlayRoute() {
@@ -27,6 +28,7 @@ function AppShell() {
         <Route path="/worksheets" element={<PrintableWorksheet />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/admin" element={<AdminItemsPage />} />
+        <Route path="/diagnostics" element={<DiagnosticsPage />} />
         {/* Unknown paths: send to home rather than expose a bare 404. */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

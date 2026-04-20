@@ -1,14 +1,14 @@
 #!/usr/bin/env node
-/* Generates a seed SQL file for the item_bank table from the bundled
- * application items. Use this to keep migrations and the bundled snapshot
- * in sync.
+/* Generates a seed SQL file for the item_bank table from the bundled items
+ * across every family (application + conceptual + procedural). Use this to
+ * keep cloud migrations and the bundled snapshot in sync.
  *
  * Usage:
  *   node scripts/generateBankSeed.js > supabase/migrations/0004_seed_item_bank.sql
  *   npm run bank:seed
  */
 
-import { APPLICATION_ITEM_BANK } from "../src/itemBank/applicationItems.js";
+import { BUNDLED_ITEMS } from "../src/itemBank/bundle.js";
 
 function sqlEscape(value) {
   if (value === null || value === undefined) return "null";
@@ -33,32 +33,38 @@ function rowSql(item) {
     String(levelMax),
     sqlEscape(item.reviewStatus || "draft"),
     jsonbLiteral(item.question),
+    sqlEscape(item.representationType || item.question?.display?.representation || null),
+    item.source ? jsonbLiteral(item.source) : "null",
   ].join(", ")})`;
 }
 
 function main() {
   const header =
     "-- Migration: 0004_seed_item_bank\n" +
-    "-- Auto-generated from src/itemBank/applicationItems.js by\n" +
-    "-- scripts/generateBankSeed.js. Re-run to refresh after bundle changes.\n\n";
+    "-- Auto-generated from src/itemBank/bundle.js (application +\n" +
+    "-- conceptual + procedural bundled items) by\n" +
+    "-- scripts/generateBankSeed.js. Re-run after bundle changes.\n\n";
 
-  const rows = APPLICATION_ITEM_BANK.map(rowSql).join(",\n  ");
+  const rows = BUNDLED_ITEMS.map(rowSql).join(",\n  ");
   const insert =
     "insert into public.item_bank (\n" +
     "  item_id, mode_id, item_family, subskill, structure_type,\n" +
-    "  level_min, level_max, review_status, payload\n" +
+    "  level_min, level_max, review_status, payload,\n" +
+    "  representation_type, source\n" +
     ") values\n  " +
     rows +
     "\non conflict (item_id) do update set\n" +
-    "  mode_id        = excluded.mode_id,\n" +
-    "  item_family    = excluded.item_family,\n" +
-    "  subskill       = excluded.subskill,\n" +
-    "  structure_type = excluded.structure_type,\n" +
-    "  level_min      = excluded.level_min,\n" +
-    "  level_max      = excluded.level_max,\n" +
-    "  review_status  = excluded.review_status,\n" +
-    "  payload        = excluded.payload,\n" +
-    "  updated_at     = now();\n";
+    "  mode_id            = excluded.mode_id,\n" +
+    "  item_family        = excluded.item_family,\n" +
+    "  subskill           = excluded.subskill,\n" +
+    "  structure_type     = excluded.structure_type,\n" +
+    "  level_min          = excluded.level_min,\n" +
+    "  level_max          = excluded.level_max,\n" +
+    "  review_status      = excluded.review_status,\n" +
+    "  payload            = excluded.payload,\n" +
+    "  representation_type= excluded.representation_type,\n" +
+    "  source             = excluded.source,\n" +
+    "  updated_at         = now();\n";
 
   process.stdout.write(header + insert);
 }

@@ -2,7 +2,8 @@ import { supabase } from "../supabaseClient.js";
 import { setBankItems, validateBankItem } from "./index.js";
 
 const APPROVED_SELECT_FIELDS =
-  "item_id, mode_id, item_family, subskill, structure_type, level_min, level_max, review_status, payload";
+  "item_id, mode_id, item_family, subskill, structure_type, level_min, level_max, " +
+  "review_status, payload, representation_type, source, level_band";
 
 /**
  * Convert a row from public.item_bank into the in-memory bank shape.
@@ -20,6 +21,9 @@ export function normalizeBankRow(row) {
     levelRange: [Number(row.level_min), Number(row.level_max)],
     reviewStatus: row.review_status,
     question: row.payload,
+    representationType: row.representation_type || null,
+    levelBand: row.level_band || null,
+    source: row.source || null,
   };
   const { valid } = validateBankItem(item);
   if (!valid) return null;

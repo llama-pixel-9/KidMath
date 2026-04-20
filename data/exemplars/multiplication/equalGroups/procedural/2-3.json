@@ -1,0 +1,28 @@
+[
+  {
+    "exemplarId": "multiplication-equalGroups-procedural-2_3-001",
+    "modeId": "multiplication",
+    "subskill": "equalGroups",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "equalGroupsTotalUnknown",
+    "source": {
+      "name": "Illustrative Mathematics",
+      "url": "https://tasks.illustrativemathematics.org/content-standards/3/OA/A/1",
+      "license": "CC-BY-4.0",
+      "fetchedAt": "2026-04-19"
+    },
+    "paraphrase": "Plain symbolic computation for a 3 x 4 equal-groups product.",
+    "payload": {
+      "a": 3,
+      "b": 4,
+      "op": "\u00d7",
+      "answer": 12,
+      "display": {
+        "representation": "symbolic",
+        "promptText": "3 \u00d7 4 = ?"
+      }
+    },
+    "notes": "No context, just fluent product recall at the 3.OA.1 level."
+  }
+]

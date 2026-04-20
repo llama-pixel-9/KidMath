@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import {
   Rocket,
   Star,
@@ -57,8 +58,9 @@ const STEPS = [
   },
 ];
 
-export default function HomePage({ onNavigate }) {
+export default function HomePage() {
   const { theme } = useTheme();
+  const navigate = useNavigate();
 
   return (
     <main className={`min-h-screen ${theme.bg} transition-colors duration-300`}>
@@ -113,7 +115,7 @@ export default function HomePage({ onNavigate }) {
               className={`px-8 py-4 bg-gradient-to-r ${theme.ctaPrimary} text-white text-xl font-bold rounded-2xl shadow-lg cursor-pointer`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => onNavigate("game")}
+              onClick={() => navigate("/play")}
             >
               Start Playing
             </motion.button>
@@ -121,7 +123,7 @@ export default function HomePage({ onNavigate }) {
               className={`px-6 py-4 ${theme.ctaSecondary} backdrop-blur text-lg font-bold rounded-2xl shadow border cursor-pointer`}
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => onNavigate("worksheet")}
+              onClick={() => navigate("/worksheets")}
             >
               Print a Worksheet
             </motion.button>
@@ -149,7 +151,7 @@ export default function HomePage({ onNavigate }) {
                 transition={{ ...fadeUp.transition, delay: i * 0.06 }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={() => onNavigate("game", f.id)}
+                onClick={() => navigate(`/play/${f.id}`)}
               >
                 <div
                   className={`inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br ${card.gradient} shadow-md mb-3`}
@@ -222,7 +224,7 @@ export default function HomePage({ onNavigate }) {
             className={`mt-6 px-6 py-3 bg-gradient-to-r ${theme.worksheetCalloutBtn} text-white font-bold text-lg rounded-2xl shadow-lg cursor-pointer`}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => onNavigate("worksheet")}
+            onClick={() => navigate("/worksheets")}
           >
             Create a Worksheet
           </motion.button>
@@ -233,7 +235,7 @@ export default function HomePage({ onNavigate }) {
       <footer className={`px-4 py-8 text-center border-t ${theme.bg}`}>
         <button
           className={`mb-3 px-4 py-2 rounded-xl text-sm font-bold cursor-pointer ${theme.ctaSecondary}`}
-          onClick={() => onNavigate("about")}
+          onClick={() => navigate("/about")}
         >
           Why this works
         </button>

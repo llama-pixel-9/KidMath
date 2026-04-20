@@ -180,10 +180,10 @@ describe("bank fallback and observability", () => {
   });
 
   it("throws when requireBankForApplication is set and no bank item exists for the (mode, level) bucket", () => {
-    // Level 1 is below every approved item's levelRange (currently min 7),
-    // so the bank pool is empty and strict mode must throw.
+    // Subtraction K-1 is empty until Phase 1 backfills it; switch this test
+    // to whichever (mode, level) is still uncovered when that changes.
     expect(() =>
-      generateQuestion("addition", 1, {
+      generateQuestion("subtraction", 1, {
         itemFamily: "application",
         allowWordProblems: true,
         requireBankForApplication: true,
@@ -193,8 +193,7 @@ describe("bank fallback and observability", () => {
 
   it("does not throw when requireBankForApplication is unset and falls back gracefully", () => {
     resetBankFallbackStats();
-    // Same low level but without strict requirement: fallback must succeed silently.
-    const q = generateQuestion("addition", 1, {
+    const q = generateQuestion("subtraction", 1, {
       itemFamily: "application",
       allowWordProblems: true,
     });
@@ -202,5 +201,47 @@ describe("bank fallback and observability", () => {
     const stats = getBankFallbackStats();
     expect(stats.applicationRequested).toBe(1);
     expect(stats.fallbackToGenerated).toBe(1);
+  });
+
+  it("consults the bank for procedural and conceptual families by default", () => {
+    // No procedural/conceptual items currently exist in the bundle, so each
+    // request increments byFamily[<family>].requested + fallbackToGenerated
+    // without throwing. Once Phase 1 authoring lands procedural/conceptual
+    // items, the same call site will start serving from the bank without any
+    // engine change.
+    resetBankFallbackStats();
+    let proceduralSeen = false;
+    let conceptualSeen = false;
+    for (let i = 0; i < 60 && !(proceduralSeen && conceptualSeen); i++) {
+      const q = generateQuestion("addition", 5);
+      if (q.metadata.itemFamily === "procedural") proceduralSeen = true;
+      if (q.metadata.itemFamily === "conceptual") conceptualSeen = true;
+    }
+    expect(proceduralSeen).toBe(true);
+    expect(conceptualSeen).toBe(true);
+    const stats = getBankFallbackStats();
+    expect(stats.byFamily.procedural.requested).toBeGreaterThan(0);
+    expect(stats.byFamily.conceptual.requested).toBeGreaterThan(0);
+    // Today every procedural/conceptual lookup falls back; that is fine.
+    expect(stats.byFamily.procedural.fallbackToGenerated).toBe(
+      stats.byFamily.procedural.requested
+    );
+    expect(stats.byFamily.conceptual.fallbackToGenerated).toBe(
+      stats.byFamily.conceptual.requested
+    );
+  });
+
+  it("respects an explicit consultBankFamilies override (back-compat)", () => {
+    // Callers can still opt out per request, e.g. to keep procedural/conceptual
+    // dynamically generated for a specific session.
+    resetBankFallbackStats();
+    for (let i = 0; i < 20; i++) {
+      generateQuestion("addition", 5, {
+        consultBankFamilies: ["application"],
+      });
+    }
+    const stats = getBankFallbackStats();
+    expect(stats.byFamily.procedural.requested).toBe(0);
+    expect(stats.byFamily.conceptual.requested).toBe(0);
   });
 });

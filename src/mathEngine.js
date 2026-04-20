@@ -173,12 +173,17 @@ export function generateQuestion(mode, level, context = null) {
   const requireBankForApplication = context?.requireBankForApplication === true;
   const requireBank = context?.requireBank === true || requireBankForApplication;
   // `consultBankFamilies` controls which families attempt a bank lookup before
-  // accepting the dynamically generated question. Application always consults.
-  // Conceptual/procedural default to bank-first only when the caller opts in,
-  // so legacy sessions that have no curated items for those families keep the
-  // existing generated behavior.
+  // accepting the dynamically generated question. Defaults to all three so
+  // newly-authored conceptual/procedural items reach learners as soon as they
+  // exist; cells with no approved items return null from the selector and the
+  // engine falls back to the dynamic generator (same behavior as today for
+  // any unauthored cell).
   const consultBankFamilies = new Set(
-    context?.consultBankFamilies || [ITEM_FAMILIES.APPLICATION]
+    context?.consultBankFamilies || [
+      ITEM_FAMILIES.APPLICATION,
+      ITEM_FAMILIES.PROCEDURAL,
+      ITEM_FAMILIES.CONCEPTUAL,
+    ]
   );
   const eligibleForBank =
     consultBankFamilies.has(generatedFamily) &&
@@ -265,10 +270,24 @@ export function generateChoices(answer, count = 4, question = null) {
   const choices = new Set([answer]);
   const spread = Math.max(3, Math.ceil(Math.abs(answer) * 0.3));
 
-  while (choices.size < count) {
+  let attempts = 0;
+  while (choices.size < count && attempts < 128) {
+    attempts++;
     const offset = (Math.floor(Math.random() * spread) + 1) * (Math.random() < 0.5 ? -1 : 1);
     const candidate = answer + offset;
     if (candidate >= 0 && candidate !== answer) choices.add(candidate);
+  }
+  let fillerOffset = 1;
+  while (choices.size < count && fillerOffset < 256) {
+    const candidate = answer + fillerOffset;
+    if (candidate >= 0 && candidate !== answer) choices.add(candidate);
+    fillerOffset++;
+  }
+  fillerOffset = 1;
+  while (choices.size < count && fillerOffset < 256) {
+    const candidate = answer - fillerOffset;
+    if (candidate >= 0 && candidate !== answer) choices.add(candidate);
+    fillerOffset++;
   }
 
   const finalChoices = shuffleArray([...choices]);

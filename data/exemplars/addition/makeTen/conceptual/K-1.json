@@ -1,0 +1,28 @@
+[
+  {
+    "exemplarId": "addition-makeTen-conceptual-K_1-001",
+    "modeId": "addition",
+    "subskill": "makeTen",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "joinResultUnknown",
+    "source": {
+      "name": "Illustrative Mathematics",
+      "url": "https://tasks.illustrativemathematics.org/content-standards/K/OA/A/4",
+      "license": "CC-BY-4.0",
+      "fetchedAt": "2026-04-19"
+    },
+    "paraphrase": "Ten-frame representation: 9 counters plus how many more make ten?",
+    "payload": {
+      "a": 9,
+      "b": null,
+      "op": "+",
+      "answer": 1,
+      "display": {
+        "representation": "tenFrame",
+        "promptText": "The ten-frame shows 9. How many more to make 10?"
+      }
+    },
+    "notes": "Uses tenFrame representation; answer is the missing addend."
+  }
+]

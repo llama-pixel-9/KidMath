@@ -3,6 +3,19 @@ import { validateBankItem } from "../itemBank";
 import { upsertItem, deleteItem } from "./itemBankAdminApi";
 
 const REVIEW_STATUSES = ["draft", "reviewed", "approved", "retired"];
+const ITEM_FAMILIES = ["conceptual", "procedural", "application"];
+const REPRESENTATION_TYPES = [
+  "",
+  "numberLine",
+  "tenFrame",
+  "array",
+  "placeValueBlocks",
+  "decomposition",
+  "objectSet",
+  "sequence",
+  "symbolic",
+  "verbalContext",
+];
 const MODES = [
   "addition",
   "subtraction",
@@ -24,6 +37,8 @@ function emptyItem() {
     levelMin: 7,
     levelMax: 10,
     reviewStatus: "draft",
+    representationType: "",
+    source: null,
     payload: {
       a: 0,
       b: 0,
@@ -43,6 +58,8 @@ function bankShape(form) {
     structureType: form.structureType,
     levelRange: [Number(form.levelMin), Number(form.levelMax)],
     reviewStatus: form.reviewStatus,
+    representationType: form.representationType || null,
+    source: form.source || null,
     question: form.payload,
   };
 }
@@ -140,6 +157,34 @@ export default function ItemEditor({ item, onSaved, onCancel, onDeleted }) {
             {MODES.map((m) => (
               <option key={m} value={m}>
                 {m}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label className="text-sm font-medium text-slate-700">
+          Item family
+          <select
+            className="mt-1 block w-full rounded-lg border border-gray-300 px-3 py-2 text-sm"
+            value={form.itemFamily}
+            onChange={(e) => update("itemFamily", e.target.value)}
+          >
+            {ITEM_FAMILIES.map((f) => (
+              <option key={f} value={f}>
+                {f}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label className="text-sm font-medium text-slate-700">
+          Representation type
+          <select
+            className="mt-1 block w-full rounded-lg border border-gray-300 px-3 py-2 text-sm"
+            value={form.representationType || ""}
+            onChange={(e) => update("representationType", e.target.value)}
+          >
+            {REPRESENTATION_TYPES.map((r) => (
+              <option key={r || "(none)"} value={r}>
+                {r || "(none)"}
               </option>
             ))}
           </select>

@@ -1,5 +1,17 @@
 # Item Bank Source Attribution
 
+## Phase 2 Subtraction Batch 1a — application (2026-04-20)
+
+Added 117 subtraction application items (`subtraction-app-032` through `subtraction-app-148`). 13 items per cell × 9 application cells (3 subskills × 3 bands). No IM-anchored items this batch; all structural variants inspired by IM `1.OA.A.1` Subtract-From, Compare, and Take-Apart patterns.
+
+Cells now at 16-18 items each (was 3-5). Procedural and conceptual batches deferred to next "continue" session so numeric selection in the K-1 proc pool gets careful attention.
+
+Fresh character set (Aviv, Bette, Cinc, Daisy, Eli, Fatu, Guss, Hak, Imara, Jori, Kamau, Lisbet, Makoto, Nur, Osei, Pan, Quade, Riyo, Santi, Thalia, Umm, Vann, Wylie, Xena, Yuka, Zasha, Aldi, Beri, Cate, Dinu, Esh, Fia, Gav, Hal, Iliana, Juno, Keva, Liam, Mara, Nico, Oren, Pia, Quent, Rosa, Shan, Tomi, Uri, Vash, Wynn, Xio, Yori, Zorn, Aldri, Beva, Corri, Duyi, Ema, Fenix, Gabby, Harin, Isla, Jorek, Kaz, Lane, Minh, Nef, Oris, Pita, Quiri, Rain, Svea, Tani, Urho, Vira, Waldo, Xoli, Yaro, Zeki, Ari, Bex, Cob, Del, Feo, Hux, Ivo, Jad, Kari, Lou, Maya, Odi, Pino, Qamar, Riki, Siri, Toza, Ulku, Varun, Wilo, Xia, Yara, Zuni).
+
+Fresh contexts leaned on nature (pond, tree, nest, pasture), household (bowl, plate, jar, shelf, bin, rack), and activities (sport, game, reading, craft).
+
+
+
 This document tracks per-item attribution for bank items adapted from open-licensed sources.
 Each session that adapts from external material appends its citations here.
 

@@ -1,4 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes, useParams } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { ThemeProvider } from "./ThemeContext";
 import { AuthProvider } from "./AuthContext";
 import { useTheme } from "./useTheme";
@@ -32,6 +34,8 @@ function AppShell() {
         {/* Unknown paths: send to home rather than expose a bare 404. */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+      <Analytics />
+      <SpeedInsights />
     </div>
   );
 }

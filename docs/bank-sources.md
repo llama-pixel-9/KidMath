@@ -1,5 +1,16 @@
 # Item Bank Source Attribution
 
+## Phase 2 Subtraction Batch 1b — procedural + conceptual (2026-04-20)
+
+Added 234 subtraction non-application items (117 procedural + 117 conceptual). 13 items per cell × 9 proc cells + 13 items per cell × 9 conc cells. No IM-anchored items this batch; all structural variants.
+
+- Procedural: pure numeric equations, carefully partitioned to avoid duplicate prompts across subskills (e.g., `differenceAsDistance` pairs disjoint from `decomposeToSubtract` pairs; `unknownSubtrahend` uses distinct missing-subtrahend values).
+- Conceptual: introduced new templates — "how far from Y to X" number-line language, "Hop back from X to Y", "Compare X and Y", "Think addition: what plus Y equals X", "Use inverse: if Y + Z = X…", "Bar model: whole X with one part Y", "Decompose X as Y + Z", "Open equation: X − ? = Y", "If I had X and now have Y, how many were taken away?", "Fill in the blank: X − __ = Y".
+
+Cells now at 29-31 items each (was 16-18). Application batch 1b deferred until next session to re-extend application cells before moving to the final subtraction mop-up.
+
+Fresh K-1 pool stays in 4-10 minuend range; 2-3 band stretches 11-20 minuend range; 4-5 band covers 50-500 with regrouping and round-number pairs.
+
 ## Phase 2 Subtraction Batch 1a — application (2026-04-20)
 
 Added 117 subtraction application items (`subtraction-app-032` through `subtraction-app-148`). 13 items per cell × 9 application cells (3 subskills × 3 bands). No IM-anchored items this batch; all structural variants inspired by IM `1.OA.A.1` Subtract-From, Compare, and Take-Apart patterns.

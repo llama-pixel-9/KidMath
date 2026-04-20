@@ -15,6 +15,9 @@ export {
   LEVEL_BANDS,
   ITEM_FAMILIES,
   REVIEW_STATUS,
+  promptSignature,
+  findPromptOveruse,
+  DEFAULT_SIGNATURE_LIMITS,
 } from "./itemBank/index.js";
 export {
   fetchApprovedBank,

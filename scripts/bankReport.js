@@ -82,6 +82,12 @@ function main() {
       process.stdout.write(`  - ${issue.itemId}: ${issue.errors.join("; ")}\n`);
     }
   }
+  if (Array.isArray(result.warnings) && result.warnings.length > 0) {
+    process.stdout.write(`\n  ${result.warnings.length} warning(s):\n`);
+    for (const w of result.warnings) {
+      process.stdout.write(`  - ${w.message}\n`);
+    }
+  }
 
   const byMode = tally(approved, (i) => i.modeId);
   printTally("Approved Items by Mode", byMode, { threshold: COVERAGE_MIN });

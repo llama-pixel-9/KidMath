@@ -212,8 +212,71 @@ function computeExpected(op, a, b) {
   }
 }
 
-export function validateBank(items = currentBank) {
+/**
+ * Strip numbers, punctuation, and whitespace variation from a prompt so that
+ * two prompts that differ only in their numeric values (e.g. "A jar has 8
+ * marbles" vs "A jar has 12 marbles") normalize to the same signature.
+ *
+ * Used by the near-duplicate detector to catch template overuse at scale:
+ * once we have hundreds of items per cell, two items with different numbers
+ * but identical sentence structure are effectively the same item from the
+ * learner's perspective.
+ */
+export function promptSignature(text) {
+  if (typeof text !== "string" || !text.trim()) return "";
+  return text
+    .toLowerCase()
+    .replace(/[\u00d7\u00f7\u2212]/g, " ") // unicode operators -> space
+    .replace(/\d+/g, "#")
+    .replace(/[^\w\s#]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+// Default per-family caps for how many items may share a single prompt
+// signature within one cell (mode x subskill x family). Procedural items
+// use short symbolic prompts that are inherently templated ("# + # = ?"),
+// so the cap there is effectively disabled.
+export const DEFAULT_SIGNATURE_LIMITS = {
+  application: 3,
+  conceptual: 5,
+  procedural: Infinity,
+};
+
+/**
+ * Detect structural near-duplicates: items whose prompts share a signature
+ * within the same (mode, subskill, family) cell beyond the family cap.
+ *
+ * Options:
+ *   - limits: per-family override map, e.g. { application: 5 }
+ *   - includeUnapproved: if true, also considers draft/reviewed items
+ *
+ * Returns an array of { cell, family, signature, count, itemIds }.
+ */
+export function findPromptOveruse(items = currentBank, options = {}) {
+  const limits = { ...DEFAULT_SIGNATURE_LIMITS, ...(options.limits || {}) };
+  const includeUnapproved = options.includeUnapproved === true;
+  const buckets = new Map();
+  for (const item of items) {
+    if (!includeUnapproved && item.reviewStatus !== REVIEW_STATUS.APPROVED) continue;
+    const sig = promptSignature(item?.question?.display?.promptText);
+    if (!sig) continue;
+    const cellKey = `${item.modeId}::${item.subskill}::${item.itemFamily}`;
+    const bucketKey = `${cellKey}::${sig}`;
+    const bucket =
+      buckets.get(bucketKey) ||
+      { cell: cellKey, family: item.itemFamily, signature: sig, itemIds: [] };
+    bucket.itemIds.push(item.itemId);
+    buckets.set(bucketKey, bucket);
+  }
+  return [...buckets.values()]
+    .filter((b) => b.itemIds.length > (limits[b.family] ?? Infinity))
+    .map((b) => ({ ...b, count: b.itemIds.length }));
+}
+
+export function validateBank(items = currentBank, options = {}) {
   const issues = [];
+  const warnings = [];
   const seenIds = new Set();
   const seenPrompts = new Map();
   for (const item of items) {
@@ -230,7 +293,24 @@ export function validateBank(items = currentBank) {
       else seenPrompts.set(promptText, item.itemId);
     }
   }
-  return { valid: issues.length === 0, issues };
+
+  // Near-duplicate / template-overuse check. Emitted as warnings by default
+  // so legacy bundles don't break; opt in to hard enforcement by passing
+  // `rejectPromptOveruse: true`, which routes them through `issues` instead.
+  const overuse = findPromptOveruse(items, { limits: options.signatureLimits });
+  for (const row of overuse) {
+    const message =
+      `prompt template overused in ${row.cell}: ` +
+      `"${row.signature}" appears ${row.count} times ` +
+      `(limit ${DEFAULT_SIGNATURE_LIMITS[row.family]})`;
+    if (options.rejectPromptOveruse) {
+      issues.push({ itemId: row.itemIds.join(","), errors: [message] });
+    } else {
+      warnings.push({ itemId: row.itemIds.join(","), message });
+    }
+  }
+
+  return { valid: issues.length === 0, issues, warnings };
 }
 
 function inLevelRange(level, levelRange) {

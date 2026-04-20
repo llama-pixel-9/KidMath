@@ -1,5 +1,15 @@
 # Item Bank Source Attribution
 
+## Phase 2 Subtraction Batch 2 — all three families (2026-04-20)
+
+Added 351 subtraction items (117 app + 117 proc + 117 conc). 13 items per cell × 27 cells.
+
+- Procedural batch 2 exhausted the clean "X − Y = ?" pool in K-1, so two items use the alternate phrasing "What is X − Y?" to keep promptText globally unique. Otherwise pure numeric equations across all 9 proc cells. K-1 procedural now reaches minuends up through 12 to accommodate the cell floor.
+- Conceptual batch 2 introduced 6 fresh templates not used in batch 1b: "Count back from X by Y", "How many more is X than Y?", "Find the difference of X and Y", "Count up from Y to X. How many steps?", "Take Y from X. Result?", "Start with X. Remove Y. What remains?", "X split into Y and what?", "Equation: X − ? = Y. Find the missing value.", "X take away how much leaves Y?", and "Start with X. After removing some, Y remain."
+- Application batch 2 all fresh contexts: library / runner / music app / delivery truck / hiker / farm / museum / charity / concert / orchard / print shop / pet shelter / school / bakery / toy store / theater / fair / stadium / drive / festival / park / publishing house, plus compare / separate-result / change-unknown structures across K-1/2-3/4-5 bands.
+
+Subtraction cell counts now 29-31 per cell (was 16-18). Bundle: 2261 → 2612 items. Seed regenerated (2634 lines).
+
 ## Phase 2 Subtraction Batch 1b — procedural + conceptual (2026-04-20)
 
 Added 234 subtraction non-application items (117 procedural + 117 conceptual). 13 items per cell × 9 proc cells + 13 items per cell × 9 conc cells. No IM-anchored items this batch; all structural variants.

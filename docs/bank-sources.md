@@ -11,6 +11,12 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## Phase 2 Batch 2 — Addition (2026-04-20)
+
+Added 297 more addition items (99 application + 99 procedural + 99 conceptual). All structurally inspired by IM task patterns (no verbatim text in this batch); same CC BY 4.0 sources referenced in Batch 1. This session introduced new conceptual templates (commutative/doubles/near-doubles framings, "What goes in the circle", "If sum is X and first addend is A, second addend is?", "Missing piece: X equals A plus what?", "Think-addition").
+
+Addition cell counts post-session: 25-28 items per cell (target 50+).
+
 ## Phase 2 Batch 1 — Addition (2026-04-20)
 
 Added 297 new addition items (99 application + 99 procedural + 99 conceptual). Two items are IM-anchored with verbatim/near-verbatim adaptation; the remaining 295 are structural variants inspired by IM task patterns (Add-To, Part-Part-Whole, Compare) without verbatim text.

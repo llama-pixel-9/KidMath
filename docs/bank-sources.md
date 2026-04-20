@@ -11,6 +11,25 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## Phase 2 Batch 3 (part 2) — Addition procedural + conceptual (2026-04-20)
+
+Completed Batch 3 by adding 99 procedural + 99 conceptual items (198 total). Bundle now 1586 items, every addition cell at 36-39 items.
+
+Procedural additions used identity (+0) and near-tens pairs (10+X, 11-19 + Y) to avoid duplicate-prompt collisions with the saturated K-1 pool.
+
+Conceptual additions introduced 5 new templates to keep under the per-cell signature limit of 5:
+- "Sum path: starting at X, jump Y. Where do you land?"
+- "True or make it true: is X + Y equal to Z?"
+- "Fingers: show X on one hand and Y on the other. How many fingers?"
+- "Add by place value: tens + tens + ones + ones pattern"
+- "Halve and double reasoning: X + X is the same as Y. Verify the total."
+- "Count-on from X by some amount to reach Y. The amount is?"
+- "Open the equation: X + __ = Y. What goes in the blank?"
+- "Bar model: a total of Y with one bar at X. Length of the other bar?"
+- "Open number sentence: A + B equals what?"
+- "Use compensation: X + Y = (X+c) + (Y-c). Compute the value."
+- "Rewrite A + B as (A+d) + (B-d). What is the total?"
+
 ## Phase 2 Batch 3 — Addition application only (2026-04-20)
 
 Added 99 more addition *application* items (`addition-app-238` through `addition-app-336`). Procedural and conceptual not yet expanded this round — deferred to the next "continue" session so numeric selection stays careful and avoids prompt collisions in the increasingly saturated K-1 proc pool.

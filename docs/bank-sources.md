@@ -1,5 +1,47 @@
 # Item Bank Source Attribution
 
+## Phase 2 Multiplication Batch 4 — final push to 50+ (2026-04-20)
+
+Added 287 multiplication items (147 app + 90 proc + 90 conc), ending with a 12-item mop-up that brings the last three lagging application cells over the floor. **Every multiplication cell is now ≥50** (23 cells at 52, 2 at 51, 2 at 50).
+
+- Procedural: three more phrasings stacked on the batch-1/2/3 set — "X groups of Y = ?" (equalGroups), "X by Y = ?" (arrayReasoning), "What does X × Y equal?" (factFluency). Each factor pair now has 4-5 alternate prompt formats in the bank.
+- Conceptual: two new template families — number-line "Jumps of Y: after X jumps, you land on?" (equalGroups across bands), unit-square area "A rectangle X units tall and Y units wide covers how many unit squares?" (arrayReasoning across bands), skip-count pattern "X × Y is the same as counting by Y X times" (factFluency K-1/2-3), and halving "X × Y is half of X × 2Y" (factFluency/equalGroups 2-3/4-5).
+- Application: fresh contexts (flower pots, peach bowls, shell boxes, pebble jars, muffin trays, car boxes, bead packets, straw cups, pretzel plates, balloon kids, butterfly chases, fishbowls, chick nests, snack pouches, cracker lunchboxes, berry napkins, cracker plates, apple-slice cutting boards, painting walls, dollhouse windows, cookie sheets, garden-step pots, stamp sheets, cooler bottles, coat buttons, flower pots, fridge magnets, bulletin pins, scrapbook leaves, tree ornaments, puppy ears, friend gifts, duckling wings, clock hands, quilt corners, napkin corners, shoe laces, apple baskets, daisy vases, tulip pots, rose bouquets, cupcake boxes, hamster cages, button bags, quad wheels, ornament baskets, lime crates, butterfly nets, cubicle files, chair rows, marker boxes, bottle packs, bee hives, rose shrubs, food trucks, kayaks, tulip planters, bird trees, library shelves, apple orchards, camp canoes, chalk boxes, tub ducks, pantry jars, cup racks, store hats, closet boots, building windows, hallway lockers, album photos, drummer beats, guest tables, pineapple crates, instrument vans, scout troops, juice coolers, dessert trays, running lanes, notebook boxes, picnic tables, fish tanks, computer labs, camper tents, boat passengers, seat rows, parrot cages, park benches, kitchen plates, crayon boxes, binder dividers, quiver arrows, dime coins, chocolate dozens, parade minutes, relay runners, pond frogs, pear orchards, egg cartons, bike garages, studio artists, patio tiles, auditorium seats, ornament shelves, parade flags, bench fans, parade floats, van passengers).
+
+Bundle: 3637 → 3924 items. Seed regenerated (3946 lines). Multiplication is release-ready for the Phase 2 quantity floor.
+
+## Phase 2 Multiplication Batch 3 — all three families (2026-04-20)
+
+Added 350 multiplication items (116 app + 117 proc + 117 conc). Multiplication cells now 35-44 per cell (most at 42; was 23-30).
+
+- Procedural: three new phrasings — "Product of X and Y?" (equalGroups), "Evaluate: X × Y." (arrayReasoning), "X times Y = ?" (factFluency). These add to the batch-1/2 phrasing set so every factor pair has 3-4 alternate prompt formats in the bank.
+- Conceptual: new strategy templates — doubling / tripling ("twice as many as 3 is?", "3 times as many as 5 is?"), "N of X is the same as?" framings, identity ("anything times 1 is itself"), fives patterns ("2 × 5 ends in 0 or 5"), nines trick ("digits sum to 9"), elevens trick ("repeats the digit"), squares ("10 × 10 is a perfect square"), area-model decomposition ("13 × 5 = (10 + 3) × 5"), place-value ("20 × 8 = 2 × 10 × 8"), associative ("14 × 7 = 7 × (2 × 7)"), and doubles ("7 × 8 is double of 7 × 4").
+- Application: fresh contexts (cherry baggies, bracelet charms, marble jars, grape bowls, peach baskets, gerbil cages, lunch-bag cookies, clownfish stripes, bee landings, rabbit carrots, turtle legs, bird eggs, pencil hands, cracker plates, ice-cube trays, cupcake trays, lollipop jars, sock drawers, pebble ledges, berry cartons, pegboard keys, tile rows, biscuit tins, sticker sheets, coin lines, duck feathers, fish fins, snail antennae, horse hooves, chair legs, glove fingers, stool legs, table sides, candle pedestals, edges, bike pedals, starfish arms, star points, horse stables, chicken coops, swan ponds, stepping-stones paths, fish stringers, instrument vans, oven loaves, pot racks, shovel carts, apple crates, bush gardens, photo reels, box shelves, chocolate boxes, kite fairs, clay-pot rows, folder shelves, cube stacks, bracelet displays, pencil boxes, donut trays, figurine shelves, bottle cases, tomato/strawberry patches, ribbon boards, hexagon/octagon sides, weeks days, flag stripes, spider/crab legs, pinwheel spokes, team members, cabin scouts, bundle sticks, dice trays, bus kids, solar panels, skylights, warehouse lights, roof tiles, hallway lockers, courtyard tiles, wall bricks, shed shingles, domino rows, card rows, flag rows, bottle rows, seat rows, choir singers, bus kids, crate bottles, classroom desks, juice cartons, uniform racks, squad scouts, worker lunches, party guests, van passengers, raft paddlers, chair rows).
+
+Bundle: 3287 → 3637 items. Seed regenerated (3659 lines).
+
+## Phase 2 Multiplication Batch 2 — all three families (2026-04-20)
+
+Added 324 multiplication items (90 app + 117 proc + 117 conc). Multiplication cells now 23-30 per cell (was 15-18).
+
+- Procedural: three new subskill phrasings — "Find the product: X × Y." (equalGroups), "Multiply: X × Y." (arrayReasoning), "Find X × Y." (factFluency). This gives each subskill its own sentence template so numeric pairs can be freely reused across subskills while every promptText stays globally unique.
+- Conceptual: added skip-count framings ("Skip count: 2, 4, 6, 8. This is 4 jumps of 2. What is 4 × 2?"), commutative reasoning ("if 3 × 5 = 15, then 5 × 3 = ?"), doubles/halving ("8 × 6 = (8 × 3) + (8 × 3)"), and area-model framings for 4-5 band. "A X by Y array has how many squares?" and "Count rows of N" for arrayReasoning. Place-value decomposition framings like "14 × 3 = (10 + 4) × 3" and "30 × 4 = 3 × 10 × 4" in 4-5 factFluency.
+- Application: fresh contexts (ladybug spots, tree apples, berry plates, starfish arms, dog boots, bike bells, apple slices, orange crates, fridge magnets, seedlings, strawberry plants, juice boxes, yogurt cups, pictures, party cups, drawing hearts, insect antennae, toe counting, triangle sides, glove fingers, table legs, tripod legs, banana crates, aquarium fish, cherry punnets, terrarium plants, coach players, scout tents, camp cabins, music stands, cupcake arrays, postcard arrays, trading cards, chocolate arrays, puzzle pieces, flashcards, bead arrays, clay figures, shells, envelopes, balloon arrays, patrol scouts, classroom windows, marble pouches, daffodil vases, turtle tanks, boat fleets, orchard trees, pumpkin crates, hen coops, umbrella racks, rose bouquets, canoe paddlers, school lockers, melon crates, hiker buses, stadium seats, boxing pallets, warehouse jars, parking lot cars, ornament arrays, brick arrays, stadium lights, poster arrays, club members, van passengers, ensemble musicians, crew members, camp counselors, bakery cakes, farm cows, office desks, studio cameras, race lanes, bench seating, restaurant tables).
+
+Bundle: 2963 → 3287 items. Seed regenerated (3309 lines).
+
+## Phase 2 Multiplication Batch 1 — all three families (2026-04-20)
+
+Added 351 multiplication items (117 app + 117 proc + 117 conc). 13 items per cell × 27 cells. Every multiplication cell moves from 3-5 → 15-18 items.
+
+- Procedural: per-subskill phrasings to widen the prompt pool — equalGroups uses "X × Y = ?", arrayReasoning uses "Compute X × Y.", factFluency uses "What is X × Y?". This lets factor pairs be reused across subskills within the same band while keeping each promptText globally unique. K-1 band stays in factors 1-6; 2-3 band uses factors 2-9; 4-5 band ranges factors 3-25 to accommodate distributive/multi-digit flavor.
+- Conceptual: equalGroups uses "How many in X groups of Y?" plus repeated-addition and distributive framings; arrayReasoning uses "An array has X rows and Y columns. How many cells?" plus "Tiles are arranged X rows by Y columns."; factFluency uses "Recall the fact: X × Y equals?" and at the 4-5 band adds place-value ("(10 + N) × M"), distributive, and commutative framings.
+- Application: fresh contexts (crayon boxes, cookie trays, sock pairs, strawberry plates, flower vases, seed pots, apple bags, ice cube cups, nest eggs, tulip gardens, sticker tables, grape bowls, stamp arrays, muffin arrays, tile arrays, window arrays, button arrays, egg arrays, tomato baskets, fish buckets, button jars, bottle crates, peach crates, cracker packs, roll trays, folder shelves, van kids, rabbit cages, utensil drawers, book-store boxes, shelf jars, water-bottle crates, card packs, lemon crates, choir singers, school buses, etc.).
+
+Bundle: 2612 → 2963 items. Seed regenerated (2985 lines).
+
+
+
 ## Phase 2 Subtraction Batch 2 — all three families (2026-04-20)
 
 Added 351 subtraction items (117 app + 117 proc + 117 conc). 13 items per cell × 27 cells.

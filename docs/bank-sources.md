@@ -1,5 +1,15 @@
 # Item Bank Source Attribution
 
+## Phase 2 Multiplication Batch 2 — all three families (2026-04-20)
+
+Added 324 multiplication items (90 app + 117 proc + 117 conc). Multiplication cells now 23-30 per cell (was 15-18).
+
+- Procedural: three new subskill phrasings — "Find the product: X × Y." (equalGroups), "Multiply: X × Y." (arrayReasoning), "Find X × Y." (factFluency). This gives each subskill its own sentence template so numeric pairs can be freely reused across subskills while every promptText stays globally unique.
+- Conceptual: added skip-count framings ("Skip count: 2, 4, 6, 8. This is 4 jumps of 2. What is 4 × 2?"), commutative reasoning ("if 3 × 5 = 15, then 5 × 3 = ?"), doubles/halving ("8 × 6 = (8 × 3) + (8 × 3)"), and area-model framings for 4-5 band. "A X by Y array has how many squares?" and "Count rows of N" for arrayReasoning. Place-value decomposition framings like "14 × 3 = (10 + 4) × 3" and "30 × 4 = 3 × 10 × 4" in 4-5 factFluency.
+- Application: fresh contexts (ladybug spots, tree apples, berry plates, starfish arms, dog boots, bike bells, apple slices, orange crates, fridge magnets, seedlings, strawberry plants, juice boxes, yogurt cups, pictures, party cups, drawing hearts, insect antennae, toe counting, triangle sides, glove fingers, table legs, tripod legs, banana crates, aquarium fish, cherry punnets, terrarium plants, coach players, scout tents, camp cabins, music stands, cupcake arrays, postcard arrays, trading cards, chocolate arrays, puzzle pieces, flashcards, bead arrays, clay figures, shells, envelopes, balloon arrays, patrol scouts, classroom windows, marble pouches, daffodil vases, turtle tanks, boat fleets, orchard trees, pumpkin crates, hen coops, umbrella racks, rose bouquets, canoe paddlers, school lockers, melon crates, hiker buses, stadium seats, boxing pallets, warehouse jars, parking lot cars, ornament arrays, brick arrays, stadium lights, poster arrays, club members, van passengers, ensemble musicians, crew members, camp counselors, bakery cakes, farm cows, office desks, studio cameras, race lanes, bench seating, restaurant tables).
+
+Bundle: 2963 → 3287 items. Seed regenerated (3309 lines).
+
 ## Phase 2 Multiplication Batch 1 — all three families (2026-04-20)
 
 Added 351 multiplication items (117 app + 117 proc + 117 conc). 13 items per cell × 27 cells. Every multiplication cell moves from 3-5 → 15-18 items.

@@ -1,5 +1,16 @@
 # Item Bank Source Attribution
 
+## Phase 2 Subtraction Batch 4 — final push to 50+ (2026-04-20)
+
+Added 217 subtraction items (73 app + 72 proc + 72 conc), 8 items per cell × 27 cells (+ one extra conc item in the 2-3 diffAsDist cell from a rename fix-up). **Every subtraction cell now ≥50 items** (range 50-52).
+
+- Procedural: nine band×subskill phrasings — K-1 uses "What is X minus Y?", "Work it out: X − Y.", "In X − ? = Y, ? = ?"; 2-3 uses "X less Y is?", "Figure out: X − Y.", "Missing value: X − ? = Y."; 4-5 uses "Simplify: X − Y.", "X − Y equals:", "Find the missing value in X − ? = Y.". All 72 promptTexts globally unique.
+- Conceptual: 4 fresh template families — "A ten-frame shows X dots. Erase Y. How many dots remain?" (K-1 visual), "Doubles strategy: X is N + N, so X − N = ?" (fact-family reasoning across bands), "Place-value view: X is 10 + N, so X − N = ?" (2-3 teen subtraction), "Number bond: total X, one part Y. What is the other part?" (decompose across bands), "Count up from Y to X. How many did you count?" (unkSub counting-up strategy across bands).
+- Application: fresh contexts (swimming laps, coin jar, puzzle pieces, pie slices, soccer field, recycling bin, pond fish, quilt squares, school bus stops, seedling tray, mitten box, flower pot, spelling words, art room easels, homework pages, cereal bars, yoga mats, jump rope hops, pottery glazing, orange juicing, tulip bulbs, team uniforms, vitamin jar, gymnastics routines, pretzel vendor, craft beads, bakery bagels, farm eggs, patchwork, pine cones, pancakes, dominoes, pie bakery, popcorn theater, trail yards, museum visitors, concert tickets, apple orchards, library checkouts, delivery truck, festival booth, warehouse pallets, lecture hall, paintbrush store, textbook shipment, fundraiser gift cards, nursery seedlings, lemonade stand, tour seats, sweatbands, farmer's market, carpool tickets, pantry donations, gym towels, stadium programs).
+
+Subtraction is now release-ready for the 50+ cell floor.
+Bundle: 2963 → 3180 items. Seed regenerated (3202 lines).
+
 ## Phase 2 Subtraction Batch 3 — all three families (2026-04-20)
 
 Added 351 subtraction items (117 app + 117 proc + 117 conc). 13 items per cell × 27 cells.

@@ -1,5 +1,15 @@
 # Item Bank Source Attribution
 
+## Phase 2 Multiplication Batch 3 — all three families (2026-04-20)
+
+Added 350 multiplication items (116 app + 117 proc + 117 conc). Multiplication cells now 35-44 per cell (most at 42; was 23-30).
+
+- Procedural: three new phrasings — "Product of X and Y?" (equalGroups), "Evaluate: X × Y." (arrayReasoning), "X times Y = ?" (factFluency). These add to the batch-1/2 phrasing set so every factor pair has 3-4 alternate prompt formats in the bank.
+- Conceptual: new strategy templates — doubling / tripling ("twice as many as 3 is?", "3 times as many as 5 is?"), "N of X is the same as?" framings, identity ("anything times 1 is itself"), fives patterns ("2 × 5 ends in 0 or 5"), nines trick ("digits sum to 9"), elevens trick ("repeats the digit"), squares ("10 × 10 is a perfect square"), area-model decomposition ("13 × 5 = (10 + 3) × 5"), place-value ("20 × 8 = 2 × 10 × 8"), associative ("14 × 7 = 7 × (2 × 7)"), and doubles ("7 × 8 is double of 7 × 4").
+- Application: fresh contexts (cherry baggies, bracelet charms, marble jars, grape bowls, peach baskets, gerbil cages, lunch-bag cookies, clownfish stripes, bee landings, rabbit carrots, turtle legs, bird eggs, pencil hands, cracker plates, ice-cube trays, cupcake trays, lollipop jars, sock drawers, pebble ledges, berry cartons, pegboard keys, tile rows, biscuit tins, sticker sheets, coin lines, duck feathers, fish fins, snail antennae, horse hooves, chair legs, glove fingers, stool legs, table sides, candle pedestals, edges, bike pedals, starfish arms, star points, horse stables, chicken coops, swan ponds, stepping-stones paths, fish stringers, instrument vans, oven loaves, pot racks, shovel carts, apple crates, bush gardens, photo reels, box shelves, chocolate boxes, kite fairs, clay-pot rows, folder shelves, cube stacks, bracelet displays, pencil boxes, donut trays, figurine shelves, bottle cases, tomato/strawberry patches, ribbon boards, hexagon/octagon sides, weeks days, flag stripes, spider/crab legs, pinwheel spokes, team members, cabin scouts, bundle sticks, dice trays, bus kids, solar panels, skylights, warehouse lights, roof tiles, hallway lockers, courtyard tiles, wall bricks, shed shingles, domino rows, card rows, flag rows, bottle rows, seat rows, choir singers, bus kids, crate bottles, classroom desks, juice cartons, uniform racks, squad scouts, worker lunches, party guests, van passengers, raft paddlers, chair rows).
+
+Bundle: 3287 → 3637 items. Seed regenerated (3659 lines).
+
 ## Phase 2 Multiplication Batch 2 — all three families (2026-04-20)
 
 Added 324 multiplication items (90 app + 117 proc + 117 conc). Multiplication cells now 23-30 per cell (was 15-18).

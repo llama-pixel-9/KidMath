@@ -1,5 +1,17 @@
 # Item Bank Source Attribution
 
+## Phase 2 Multiplication Batch 1 — all three families (2026-04-20)
+
+Added 351 multiplication items (117 app + 117 proc + 117 conc). 13 items per cell × 27 cells. Every multiplication cell moves from 3-5 → 15-18 items.
+
+- Procedural: per-subskill phrasings to widen the prompt pool — equalGroups uses "X × Y = ?", arrayReasoning uses "Compute X × Y.", factFluency uses "What is X × Y?". This lets factor pairs be reused across subskills within the same band while keeping each promptText globally unique. K-1 band stays in factors 1-6; 2-3 band uses factors 2-9; 4-5 band ranges factors 3-25 to accommodate distributive/multi-digit flavor.
+- Conceptual: equalGroups uses "How many in X groups of Y?" plus repeated-addition and distributive framings; arrayReasoning uses "An array has X rows and Y columns. How many cells?" plus "Tiles are arranged X rows by Y columns."; factFluency uses "Recall the fact: X × Y equals?" and at the 4-5 band adds place-value ("(10 + N) × M"), distributive, and commutative framings.
+- Application: fresh contexts (crayon boxes, cookie trays, sock pairs, strawberry plates, flower vases, seed pots, apple bags, ice cube cups, nest eggs, tulip gardens, sticker tables, grape bowls, stamp arrays, muffin arrays, tile arrays, window arrays, button arrays, egg arrays, tomato baskets, fish buckets, button jars, bottle crates, peach crates, cracker packs, roll trays, folder shelves, van kids, rabbit cages, utensil drawers, book-store boxes, shelf jars, water-bottle crates, card packs, lemon crates, choir singers, school buses, etc.).
+
+Bundle: 2612 → 2963 items. Seed regenerated (2985 lines).
+
+
+
 ## Phase 2 Subtraction Batch 2 — all three families (2026-04-20)
 
 Added 351 subtraction items (117 app + 117 proc + 117 conc). 13 items per cell × 27 cells.

@@ -18,13 +18,23 @@ const RANGES = [
 const SUBSKILLS = ["equalGroups", "arrayReasoning", "factFluency"];
 
 function chooseFamily(level, context) {
-  if (context?.itemFamily) return context.itemFamily;
+  const allowWordProblems = context?.allowWordProblems !== false;
+  // Multiplication's CONCEPTUAL variant is always a verbal prompt
+  // ("${a} groups of ${b} makes how many total?"), so when word problems are
+  // disabled we redirect both APPLICATION and CONCEPTUAL requests to
+  // PROCEDURAL.
+  if (context?.itemFamily) {
+    if (!allowWordProblems && context.itemFamily === ITEM_FAMILIES.CONCEPTUAL) {
+      return ITEM_FAMILIES.PROCEDURAL;
+    }
+    return context.itemFamily;
+  }
   const roll = Math.random();
   let family;
   if (roll < 0.34) family = ITEM_FAMILIES.CONCEPTUAL;
   else if (roll < 0.72) family = ITEM_FAMILIES.PROCEDURAL;
   else family = ITEM_FAMILIES.APPLICATION;
-  if (context?.allowWordProblems === false && family === ITEM_FAMILIES.APPLICATION) {
+  if (!allowWordProblems && (family === ITEM_FAMILIES.APPLICATION || family === ITEM_FAMILIES.CONCEPTUAL)) {
     return ITEM_FAMILIES.PROCEDURAL;
   }
   if (level < 7 && family === ITEM_FAMILIES.APPLICATION) {

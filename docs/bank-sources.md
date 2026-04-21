@@ -1,5 +1,38 @@
 # Item Bank Source Attribution
 
+## Phase 2 Subtraction Batch 2 — all three families (2026-04-20)
+
+Added 351 subtraction items (117 app + 117 proc + 117 conc). 13 items per cell × 27 cells.
+
+- Procedural batch 2 exhausted the clean "X − Y = ?" pool in K-1, so two items use the alternate phrasing "What is X − Y?" to keep promptText globally unique. Otherwise pure numeric equations across all 9 proc cells. K-1 procedural now reaches minuends up through 12 to accommodate the cell floor.
+- Conceptual batch 2 introduced 6 fresh templates not used in batch 1b: "Count back from X by Y", "How many more is X than Y?", "Find the difference of X and Y", "Count up from Y to X. How many steps?", "Take Y from X. Result?", "Start with X. Remove Y. What remains?", "X split into Y and what?", "Equation: X − ? = Y. Find the missing value.", "X take away how much leaves Y?", and "Start with X. After removing some, Y remain."
+- Application batch 2 all fresh contexts: library / runner / music app / delivery truck / hiker / farm / museum / charity / concert / orchard / print shop / pet shelter / school / bakery / toy store / theater / fair / stadium / drive / festival / park / publishing house, plus compare / separate-result / change-unknown structures across K-1/2-3/4-5 bands.
+
+Subtraction cell counts now 29-31 per cell (was 16-18). Bundle: 2261 → 2612 items. Seed regenerated (2634 lines).
+
+## Phase 2 Subtraction Batch 1b — procedural + conceptual (2026-04-20)
+
+Added 234 subtraction non-application items (117 procedural + 117 conceptual). 13 items per cell × 9 proc cells + 13 items per cell × 9 conc cells. No IM-anchored items this batch; all structural variants.
+
+- Procedural: pure numeric equations, carefully partitioned to avoid duplicate prompts across subskills (e.g., `differenceAsDistance` pairs disjoint from `decomposeToSubtract` pairs; `unknownSubtrahend` uses distinct missing-subtrahend values).
+- Conceptual: introduced new templates — "how far from Y to X" number-line language, "Hop back from X to Y", "Compare X and Y", "Think addition: what plus Y equals X", "Use inverse: if Y + Z = X…", "Bar model: whole X with one part Y", "Decompose X as Y + Z", "Open equation: X − ? = Y", "If I had X and now have Y, how many were taken away?", "Fill in the blank: X − __ = Y".
+
+Cells now at 29-31 items each (was 16-18). Application batch 1b deferred until next session to re-extend application cells before moving to the final subtraction mop-up.
+
+Fresh K-1 pool stays in 4-10 minuend range; 2-3 band stretches 11-20 minuend range; 4-5 band covers 50-500 with regrouping and round-number pairs.
+
+## Phase 2 Subtraction Batch 1a — application (2026-04-20)
+
+Added 117 subtraction application items (`subtraction-app-032` through `subtraction-app-148`). 13 items per cell × 9 application cells (3 subskills × 3 bands). No IM-anchored items this batch; all structural variants inspired by IM `1.OA.A.1` Subtract-From, Compare, and Take-Apart patterns.
+
+Cells now at 16-18 items each (was 3-5). Procedural and conceptual batches deferred to next "continue" session so numeric selection in the K-1 proc pool gets careful attention.
+
+Fresh character set (Aviv, Bette, Cinc, Daisy, Eli, Fatu, Guss, Hak, Imara, Jori, Kamau, Lisbet, Makoto, Nur, Osei, Pan, Quade, Riyo, Santi, Thalia, Umm, Vann, Wylie, Xena, Yuka, Zasha, Aldi, Beri, Cate, Dinu, Esh, Fia, Gav, Hal, Iliana, Juno, Keva, Liam, Mara, Nico, Oren, Pia, Quent, Rosa, Shan, Tomi, Uri, Vash, Wynn, Xio, Yori, Zorn, Aldri, Beva, Corri, Duyi, Ema, Fenix, Gabby, Harin, Isla, Jorek, Kaz, Lane, Minh, Nef, Oris, Pita, Quiri, Rain, Svea, Tani, Urho, Vira, Waldo, Xoli, Yaro, Zeki, Ari, Bex, Cob, Del, Feo, Hux, Ivo, Jad, Kari, Lou, Maya, Odi, Pino, Qamar, Riki, Siri, Toza, Ulku, Varun, Wilo, Xia, Yara, Zuni).
+
+Fresh contexts leaned on nature (pond, tree, nest, pasture), household (bowl, plate, jar, shelf, bin, rack), and activities (sport, game, reading, craft).
+
+
+
 This document tracks per-item attribution for bank items adapted from open-licensed sources.
 Each session that adapts from external material appends its citations here.
 

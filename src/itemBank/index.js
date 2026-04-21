@@ -1,5 +1,6 @@
 import { BUNDLED_ITEMS } from "./bundle.js";
 import { REVIEW_STATUS } from "./applicationItems.js";
+import { isVerbalPrompt } from "../modes/helpers.js";
 
 // Re-export REVIEW_STATUS so callers keep working without importing from the
 // bundle directly.
@@ -353,8 +354,18 @@ export function selectApprovedBankItem({
   targetSubskill,
   recentItemIds = [],
   rng = Math.random,
+  allowWordProblems = true,
 } = {}) {
-  const approved = filterApprovedCandidates({ modeId, level, family });
+  let approved = filterApprovedCandidates({ modeId, level, family });
+  if (allowWordProblems === false) {
+    // Even though the scheduler routes APPLICATION away when word problems
+    // are disabled, CONCEPTUAL and PROCEDURAL cells also ship items with
+    // natural-language prompts ("Use near-doubles: 3 + 4 equals?"). Those
+    // count as word problems from a learner's perspective, so filter them.
+    approved = approved.filter(
+      (item) => !isVerbalPrompt(item?.question?.display?.promptText)
+    );
+  }
   if (approved.length === 0) return null;
 
   const recentSet = new Set(recentItemIds);

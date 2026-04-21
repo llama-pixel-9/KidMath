@@ -18,13 +18,22 @@ const RANGES = [
 const SUBSKILLS = ["partitioning", "inverseFact", "unknownQuotient"];
 
 function chooseFamily(level, context) {
-  if (context?.itemFamily) return context.itemFamily;
+  const allowWordProblems = context?.allowWordProblems !== false;
+  // Division's CONCEPTUAL variant is always a verbal prompt ("${dividend}
+  // split into ${divisor} equal groups..."), so disable it alongside
+  // APPLICATION when word problems are turned off.
+  if (context?.itemFamily) {
+    if (!allowWordProblems && context.itemFamily === ITEM_FAMILIES.CONCEPTUAL) {
+      return ITEM_FAMILIES.PROCEDURAL;
+    }
+    return context.itemFamily;
+  }
   const roll = Math.random();
   let family;
   if (roll < 0.34) family = ITEM_FAMILIES.CONCEPTUAL;
   else if (roll < 0.72) family = ITEM_FAMILIES.PROCEDURAL;
   else family = ITEM_FAMILIES.APPLICATION;
-  if (context?.allowWordProblems === false && family === ITEM_FAMILIES.APPLICATION) {
+  if (!allowWordProblems && (family === ITEM_FAMILIES.APPLICATION || family === ITEM_FAMILIES.CONCEPTUAL)) {
     return ITEM_FAMILIES.PROCEDURAL;
   }
   if (level < 7 && family === ITEM_FAMILIES.APPLICATION) {

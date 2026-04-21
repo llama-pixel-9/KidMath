@@ -59,6 +59,7 @@ import {
 import { generateWorksheetSet, MODES } from "./mathEngine";
 import { getModeConfig } from "./modes";
 import { useTheme } from "./useTheme";
+import { isVerbalPrompt } from "./modes/helpers";
 
 const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers };
 
@@ -165,9 +166,25 @@ function VerticalProblem({ a, b, op, answer }) {
   );
 }
 
+function shouldRenderVertical(q) {
+  return (
+    (q.op === "+" || q.op === "−") &&
+    typeof q.a === "number" &&
+    typeof q.b === "number" &&
+    (q.a >= 10 || q.b >= 10)
+  );
+}
+
 function WorksheetProblem({ question: q }) {
-  if (q.display?.promptText) {
-    return <>{q.display.promptText} {BLANK}</>;
+  const promptText = q.display?.promptText;
+  if (promptText && isVerbalPrompt(promptText)) {
+    return <>{promptText} {BLANK}</>;
+  }
+  if (shouldRenderVertical(q)) {
+    return <VerticalProblem a={q.a} b={q.b} op={q.op} />;
+  }
+  if (promptText) {
+    return <>{promptText} {BLANK}</>;
   }
   if (q.display?.sequence) {
     return <>{q.display.sequence.join(", ")}, {BLANK}</>;
@@ -179,24 +196,25 @@ function WorksheetProblem({ question: q }) {
   if (q.op === "?") {
     return <>{q.a} {BLANK} {q.b}</>;
   }
-  if ((q.op === "+" || q.op === "−") && (q.a >= 10 || q.b >= 10)) {
-    return <VerticalProblem a={q.a} b={q.b} op={q.op} />;
-  }
   return <>{q.a} {q.op} {q.b} = {BLANK}</>;
 }
 
 function AnswerKeyProblem({ question: q }) {
-  if (q.display?.promptText) {
-    return <>{q.display.promptText} <span className="text-emerald-600">{q.answer}</span></>;
+  const promptText = q.display?.promptText;
+  if (promptText && isVerbalPrompt(promptText)) {
+    return <>{promptText} <span className="text-emerald-600">{q.answer}</span></>;
+  }
+  if (shouldRenderVertical(q)) {
+    return <VerticalProblem a={q.a} b={q.b} op={q.op} answer={q.answer} />;
+  }
+  if (promptText) {
+    return <>{promptText} <span className="text-emerald-600">{q.answer}</span></>;
   }
   if (q.display?.sequence) {
     return <>{q.display.sequence.join(", ")}, <span className="text-emerald-600">{q.answer}</span></>;
   }
   if (q.op === "?") {
     return <>{q.a} <span className="text-emerald-600">{q.answer}</span> {q.b}</>;
-  }
-  if ((q.op === "+" || q.op === "−") && (q.a >= 10 || q.b >= 10)) {
-    return <VerticalProblem a={q.a} b={q.b} op={q.op} answer={q.answer} />;
   }
   return <>{q.a} {q.op} {q.b} = <span className="text-emerald-600">{q.answer}</span></>;
 }

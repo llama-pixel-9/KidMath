@@ -26,6 +26,7 @@ import {
   MODES,
 } from "./mathEngine";
 import { getModeConfig } from "./modes";
+import { isVerbalPrompt } from "./modes/helpers";
 import { saveProgress, loadProgress, mergeLocalToCloud } from "./progressStore";
 import { useAuth } from "./useAuth";
 import { useTheme } from "./useTheme";
@@ -40,6 +41,11 @@ import {
 } from "./sounds";
 import { createRuntimeDiagnostics } from "./runtimeDiagnostics";
 import { getTelemetry } from "./telemetry/telemetryClient";
+import {
+  loadAllowWordProblems,
+  loadAllowWordProblemsSync,
+  saveAllowWordProblems,
+} from "./userPreferences";
 
 const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers };
 
@@ -50,26 +56,6 @@ function getModeIcon(modeId) {
 
 function getModeLabel(modeId) {
   return getModeConfig(modeId).label;
-}
-
-const WORD_PROBLEM_PREF_KEY = "kidmath-allow-word-problems";
-
-function loadAllowWordProblemsPreference() {
-  try {
-    const raw = localStorage.getItem(WORD_PROBLEM_PREF_KEY);
-    if (raw == null) return false;
-    return raw === "true";
-  } catch {
-    return false;
-  }
-}
-
-function saveAllowWordProblemsPreference(value) {
-  try {
-    localStorage.setItem(WORD_PROBLEM_PREF_KEY, String(value));
-  } catch {
-    // Ignore localStorage issues and keep runtime preference.
-  }
 }
 
 const CONFETTI_PARTICLES = Array.from({ length: 12 }, (_, i) => {
@@ -509,8 +495,14 @@ function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
     );
   }
 
-  if (q.display?.promptText) {
-    const promptLines = q.display.promptText
+  // Word/story prompts take precedence. Bank-authored items sometimes ship a
+  // fully symbolic prompt like "65 + 35 = ?" though, which should still get
+  // the vertical treatment below for double-digit add/sub.
+  const promptText = q.display?.promptText;
+  const hasVerbalPrompt = promptText && isVerbalPrompt(promptText);
+
+  if (hasVerbalPrompt) {
+    const promptLines = promptText
       .split(/(?<=[.!?])\s+/)
       .map((line) => line.trim())
       .filter(Boolean);
@@ -523,7 +515,7 @@ function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
           </p>
         )}
         <div className="space-y-1">
-          {(promptLines.length > 0 ? promptLines : [q.display.promptText]).map((line, index, arr) => (
+          {(promptLines.length > 0 ? promptLines : [promptText]).map((line, index, arr) => (
             <p
               key={`${line}-${index}`}
               className={`${
@@ -557,8 +549,14 @@ function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
     );
   }
 
-  // Vertical form for addition/subtraction with double-digit numbers
-  const isVertical = (q.op === "+" || q.op === "−") && (q.a >= 10 || q.b >= 10);
+  // Vertical form for addition/subtraction with double-digit numbers. Runs
+  // even when the item has a symbolic promptText (e.g. bank-authored
+  // "65 + 35 = ?") so long as both operands are concrete integers.
+  const isVertical =
+    (q.op === "+" || q.op === "−") &&
+    typeof q.a === "number" &&
+    typeof q.b === "number" &&
+    (q.a >= 10 || q.b >= 10);
 
   if (isVertical) {
     const aDigits = String(q.a).split("");
@@ -614,6 +612,25 @@ function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
     );
   }
 
+  // Symbolic-but-non-vertical prompts (e.g. "6 + ? = 10", "3 tens and 5 ones = ?").
+  // These don't fit the vertical layout (often because one operand is unknown)
+  // but still need to render the authored prompt text rather than fall back to
+  // "a op b = ?" which would print "null" for missing operands.
+  if (promptText) {
+    return (
+      <div className="text-center space-y-2">
+        <p className={`text-3xl sm:text-4xl font-extrabold ${theme.textPrimary} leading-snug`}>
+          {promptText}
+        </p>
+        {showAnswer && (
+          <div className="mt-2 text-4xl sm:text-5xl font-extrabold">
+            <AnswerSlot feedback={feedback} revealAnswer={revealAnswer} />
+          </div>
+        )}
+      </div>
+    );
+  }
+
   // Default horizontal: a op b = ?
   return (
     <div className={`flex items-center justify-center gap-3 text-5xl sm:text-6xl font-extrabold ${theme.textPrimary}`}>
@@ -639,7 +656,7 @@ export default function MathExplorer({ initialMode }) {
   const [mode, setMode] = useState(startMode);
   const [session, setSession] = useState(() =>
     createAdaptiveSession(startMode, undefined, {
-      allowWordProblems: loadAllowWordProblemsPreference(),
+      allowWordProblems: loadAllowWordProblemsSync(),
     })
   );
   const [currentQ, setCurrentQ] = useState(null);
@@ -653,7 +670,7 @@ export default function MathExplorer({ initialMode }) {
   const [lifetimeStars, setLifetimeStars] = useState(0);
   const [showLoginPrompt, setShowLoginPrompt] = useState(false);
   const [muted, setMutedState] = useState(isMuted);
-  const [allowWordProblems, setAllowWordProblems] = useState(() => loadAllowWordProblemsPreference());
+  const [allowWordProblems, setAllowWordProblems] = useState(() => loadAllowWordProblemsSync());
   const questionStartTime = useRef(Date.now());
   const loginTimerRef = useRef(null);
   const questionKeyRef = useRef(0);
@@ -714,16 +731,33 @@ export default function MathExplorer({ initialMode }) {
 
   useEffect(() => {
     if (!user) return;
+    let cancelled = false;
     (async () => {
       await mergeLocalToCloud(user.id);
-      const saved = await loadProgress(mode);
-      const newSession = createAdaptiveSession(mode, undefined, { allowWordProblems });
+      const [saved, cloudAllowWordProblems] = await Promise.all([
+        loadProgress(mode),
+        loadAllowWordProblems(user.id),
+      ]);
+      if (cancelled) return;
+      if (cloudAllowWordProblems !== allowWordProblems) {
+        setAllowWordProblems(cloudAllowWordProblems);
+      }
+      const newSession = createAdaptiveSession(mode, undefined, {
+        allowWordProblems: cloudAllowWordProblems,
+      });
       newSession.level = saved.level;
       newSession.mistakeBank = saved.mistakeBank;
       setSession(newSession);
       loadNextQuestion(newSession);
     })();
-  }, [user, allowWordProblems, mode, loadNextQuestion]);
+    return () => {
+      cancelled = true;
+    };
+    // `allowWordProblems` is intentionally omitted: this effect seeds it from
+    // the cloud on login; subsequent toggle changes rebuild the session
+    // directly in handleAllowWordProblemsChange.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user, mode, loadNextQuestion]);
 
   useEffect(() => {
     if (user) return;
@@ -763,7 +797,12 @@ export default function MathExplorer({ initialMode }) {
 
   const handleAllowWordProblemsChange = (value) => {
     setAllowWordProblems(value);
-    saveAllowWordProblemsPreference(value);
+    // Fire-and-forget: the local mirror inside saveAllowWordProblems writes
+    // synchronously so reloads stay consistent even if the cloud upsert is
+    // still in flight.
+    saveAllowWordProblems(user?.id || null, value).catch((err) => {
+      console.warn("Failed to persist allowWordProblems preference", err);
+    });
     startNewSession(mode, value);
   };
 

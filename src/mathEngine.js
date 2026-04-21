@@ -1,5 +1,5 @@
 import { MODE_IDS, getModeConfig } from "./modes";
-import { shuffleArray } from "./modes/helpers";
+import { shuffleArray, isVerbalPrompt } from "./modes/helpers";
 import { buildItemKey, ITEM_FAMILIES } from "./modes/itemMetadata";
 import { validateChoices, validateQuestion } from "./modes/itemQuality";
 import { loadProgressSync } from "./progressStore";
@@ -198,6 +198,7 @@ export function generateQuestion(mode, level, context = null) {
       family: generatedFamily,
       targetSubskill: context?.targetSubskill || q.metadata?.subskill,
       recentItemIds: context?.recentBankItemIds || [],
+      allowWordProblems,
     });
     bankQuestion = buildQuestionFromBankItem(bankItem, targetLevel);
     if (bankQuestion) {
@@ -326,12 +327,14 @@ export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE, options 
 }
 
 export function getNextQuestion(session) {
+  const suppressWordProblems = session.allowWordProblems === false;
   const dueReview = session.mistakeBank.find(
     (q) =>
       (q.dueAt ?? RETRY_SPACING) <= session.questionsAnswered &&
       !(
-        session.allowWordProblems === false &&
-        q.metadata?.itemFamily === ITEM_FAMILIES.APPLICATION
+        suppressWordProblems &&
+        (q.metadata?.itemFamily === ITEM_FAMILIES.APPLICATION ||
+          isVerbalPrompt(q.display?.promptText))
       )
   );
   if (dueReview && session.questionsSinceRetry >= RETRY_SPACING) {

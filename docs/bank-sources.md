@@ -1,5 +1,15 @@
 # Item Bank Source Attribution
 
+## Phase 2 Subtraction Batch 3 — all three families (2026-04-20)
+
+Added 351 subtraction items (117 app + 117 proc + 117 conc). 13 items per cell × 27 cells.
+
+- Procedural batch 3 used band-scoped alternate phrasings to navigate exhausted numeric pools: K-1 uses "Subtract X from Y.", "Compute X − Y.", and "Solve: X − ? = Y.". 2-3 uses "Find the difference: X − Y.", "Work out: X − Y.", "Find ? in X − ? = Y.". 4-5 uses "Calculate: X − Y.", "Evaluate: X − Y.", "What value of ? makes X − ? = Y?". This keeps every promptText globally unique without overloading the same string format.
+- Conceptual batch 3 introduced 7 fresh templates: "Comparing X and Y: X is how much bigger?", "On a [ten frame|number path|number line], X is N more than what?", "Use counting-back strategy to solve X − Y.", "Complete: X = Y + ?", "Break X into Y plus another number. What is the other number?", "A number added to Y equals X. What was subtracted from X to get Y?", "What must be removed from X to leave Y?".
+- Application batch 3 uses fresh contexts (berry picking, lunch box, hopping frogs, dance moves, garden flowers, toy trains, strawberry basket, bubbles, tadpole tank, dog park, fireflies, cheese plate, crackers, nest eggs, ribbons, pebbles, cafeteria apples, sunflowers, field trip bus, lunch room chairs, dance studio, bake sale, watering plants, team practice, blue books, jumping, library magazines, kennel treats, carrot garden, DVD checkout, charity blankets, school uniforms, office chairs, bike depot, food pantry cans, cafe croissants, gym class, print shop, plant nursery, depot crates, classroom glue, food bank rice, conference, reading drive, race bibs, festival passes, mill flour sacks, shelter kits).
+
+Subtraction cell counts now 42-44 per cell (was 29-31). Bundle: 2612 → 2963 items. Seed regenerated (2985 lines).
+
 ## Phase 2 Subtraction Batch 2 — all three families (2026-04-20)
 
 Added 351 subtraction items (117 app + 117 proc + 117 conc). 13 items per cell × 27 cells.

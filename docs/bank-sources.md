@@ -1,5 +1,15 @@
 # Item Bank Source Attribution
 
+## Phase 2 Multiplication Batch 4 — final push to 50+ (2026-04-20)
+
+Added 287 multiplication items (147 app + 90 proc + 90 conc), ending with a 12-item mop-up that brings the last three lagging application cells over the floor. **Every multiplication cell is now ≥50** (23 cells at 52, 2 at 51, 2 at 50).
+
+- Procedural: three more phrasings stacked on the batch-1/2/3 set — "X groups of Y = ?" (equalGroups), "X by Y = ?" (arrayReasoning), "What does X × Y equal?" (factFluency). Each factor pair now has 4-5 alternate prompt formats in the bank.
+- Conceptual: two new template families — number-line "Jumps of Y: after X jumps, you land on?" (equalGroups across bands), unit-square area "A rectangle X units tall and Y units wide covers how many unit squares?" (arrayReasoning across bands), skip-count pattern "X × Y is the same as counting by Y X times" (factFluency K-1/2-3), and halving "X × Y is half of X × 2Y" (factFluency/equalGroups 2-3/4-5).
+- Application: fresh contexts (flower pots, peach bowls, shell boxes, pebble jars, muffin trays, car boxes, bead packets, straw cups, pretzel plates, balloon kids, butterfly chases, fishbowls, chick nests, snack pouches, cracker lunchboxes, berry napkins, cracker plates, apple-slice cutting boards, painting walls, dollhouse windows, cookie sheets, garden-step pots, stamp sheets, cooler bottles, coat buttons, flower pots, fridge magnets, bulletin pins, scrapbook leaves, tree ornaments, puppy ears, friend gifts, duckling wings, clock hands, quilt corners, napkin corners, shoe laces, apple baskets, daisy vases, tulip pots, rose bouquets, cupcake boxes, hamster cages, button bags, quad wheels, ornament baskets, lime crates, butterfly nets, cubicle files, chair rows, marker boxes, bottle packs, bee hives, rose shrubs, food trucks, kayaks, tulip planters, bird trees, library shelves, apple orchards, camp canoes, chalk boxes, tub ducks, pantry jars, cup racks, store hats, closet boots, building windows, hallway lockers, album photos, drummer beats, guest tables, pineapple crates, instrument vans, scout troops, juice coolers, dessert trays, running lanes, notebook boxes, picnic tables, fish tanks, computer labs, camper tents, boat passengers, seat rows, parrot cages, park benches, kitchen plates, crayon boxes, binder dividers, quiver arrows, dime coins, chocolate dozens, parade minutes, relay runners, pond frogs, pear orchards, egg cartons, bike garages, studio artists, patio tiles, auditorium seats, ornament shelves, parade flags, bench fans, parade floats, van passengers).
+
+Bundle: 3637 → 3924 items. Seed regenerated (3946 lines). Multiplication is release-ready for the Phase 2 quantity floor.
+
 ## Phase 2 Multiplication Batch 3 — all three families (2026-04-20)
 
 Added 350 multiplication items (116 app + 117 proc + 117 conc). Multiplication cells now 35-44 per cell (most at 42; was 23-30).

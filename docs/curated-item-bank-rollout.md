@@ -117,9 +117,14 @@ engine.
 3. Run `npm run bank:gen -- --mode <m> --subskill <s> --family <f> --band <b> --limit <n>`.
 4. Review drafts in the admin Review queue.
 5. Promote items to `approved`.
-6. `npm run bank:report` to verify coverage; optionally regenerate the
-   bundle snapshot with `npm run bank:seed` if the item should ship
-   offline.
+6. `npm run bank:report` to verify coverage; run `npm run bank:seed`
+   to emit a new timestamped migration under `supabase/migrations/`.
+   Each invocation writes a fresh `YYYYMMDDHHMMSS_seed_item_bank.sql`
+   (Supabase tracks migrations by filename, so overwriting an older
+   seed does not cause `supabase db push` to re-apply it; a new
+   filename does). The migration body is idempotent (`insert ... on
+   conflict (item_id) do update set ...`), so it's safe to keep
+   applying as the bank grows.
 7. PR includes summary of new cells filled and license notes for any
    newly-cited sources.
 

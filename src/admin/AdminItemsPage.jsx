@@ -63,10 +63,7 @@ function AdminItemsInner() {
   }, []);
 
   const modes = useMemo(() => {
-    const set = new Set([
-      ...Object.keys(MODE_BLUEPRINTS),
-      ...items.map((i) => i.modeId),
-    ]);
+    const set = new Set(items.map((i) => i.modeId));
     return [...set].sort();
   }, [items]);
 

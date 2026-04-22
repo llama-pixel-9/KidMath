@@ -1,35 +1,14 @@
 #!/usr/bin/env node
-/* Generates a seed SQL migration for the item_bank table from the bundled
- * items across every family (application + conceptual + procedural).
- *
- * Each run writes a NEW timestamped migration file under
- * supabase/migrations/, because Supabase's migration tracker keys off the
- * filename — overwriting a previously-applied file does not cause the
- * remote database to re-execute it. A fresh filename guarantees that
- * `supabase db push` applies the new seed.
- *
- * The migration body uses `insert ... on conflict (item_id) do update set`
- * so running it is idempotent: existing rows are refreshed and new rows
- * are inserted.
+/* Generates a seed SQL file for the item_bank table from the bundled items
+ * across every family (application + conceptual + procedural). Use this to
+ * keep cloud migrations and the bundled snapshot in sync.
  *
  * Usage:
- *   node scripts/generateBankSeed.js              # writes a new timestamped migration
- *   node scripts/generateBankSeed.js --stdout     # prints to stdout instead
- *   npm run bank:seed                             # same as the default
- *
- * The older fixed-name files (0004_seed_item_bank.sql,
- * 0008_reapply_item_bank_seed.sql) are left in place as historical
- * snapshots; they remain valid migrations but are not regenerated.
+ *   node scripts/generateBankSeed.js > supabase/migrations/0004_seed_item_bank.sql
+ *   npm run bank:seed
  */
 
-import fs from "node:fs";
-import path from "node:path";
-import url from "node:url";
-
 import { BUNDLED_ITEMS } from "../src/itemBank/bundle.js";
-
-const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
-const MIGRATIONS_DIR = path.resolve(__dirname, "..", "supabase", "migrations");
 
 function sqlEscape(value) {
   if (value === null || value === undefined) return "null";
@@ -59,28 +38,12 @@ function rowSql(item) {
   ].join(", ")})`;
 }
 
-function timestamp() {
-  // YYYYMMDDHHMMSS — Supabase's preferred migration version format.
-  const d = new Date();
-  const pad = (n) => String(n).padStart(2, "0");
-  return (
-    String(d.getUTCFullYear()) +
-    pad(d.getUTCMonth() + 1) +
-    pad(d.getUTCDate()) +
-    pad(d.getUTCHours()) +
-    pad(d.getUTCMinutes()) +
-    pad(d.getUTCSeconds())
-  );
-}
-
-function buildSql(versionLabel) {
+function main() {
   const header =
-    `-- Migration: ${versionLabel}_seed_item_bank\n` +
+    "-- Migration: 0004_seed_item_bank\n" +
     "-- Auto-generated from src/itemBank/bundle.js (application +\n" +
     "-- conceptual + procedural bundled items) by\n" +
-    "-- scripts/generateBankSeed.js. Each invocation writes a new\n" +
-    "-- timestamped migration so `supabase db push` re-applies the\n" +
-    "-- upserts on every bank change.\n\n";
+    "-- scripts/generateBankSeed.js. Re-run after bundle changes.\n\n";
 
   const rows = BUNDLED_ITEMS.map(rowSql).join(",\n  ");
   const insert =
@@ -103,30 +66,7 @@ function buildSql(versionLabel) {
     "  source             = excluded.source,\n" +
     "  updated_at         = now();\n";
 
-  return header + insert;
-}
-
-function main() {
-  const args = new Set(process.argv.slice(2));
-  const toStdout = args.has("--stdout");
-
-  const version = timestamp();
-  const sql = buildSql(version);
-
-  if (toStdout) {
-    process.stdout.write(sql);
-    return;
-  }
-
-  const filename = `${version}_seed_item_bank.sql`;
-  const filepath = path.join(MIGRATIONS_DIR, filename);
-  fs.writeFileSync(filepath, sql);
-  process.stderr.write(
-    `Wrote ${BUNDLED_ITEMS.length} items to supabase/migrations/${filename}\n`,
-  );
-  process.stderr.write(
-    "Run `supabase db push` to apply. The seed is idempotent via ON CONFLICT DO UPDATE.\n",
-  );
+  process.stdout.write(header + insert);
 }
 
 main();

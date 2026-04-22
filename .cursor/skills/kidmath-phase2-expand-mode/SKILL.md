@@ -15,6 +15,7 @@ Use this skill whenever you are expanding a KidMath mode's item bank from the Ph
 
 ## Non-Negotiables
 
+- **Consult open-licensed sources before authoring.** Read `data/exemplars/<mode>/` for seed exemplars and use IM / Open Up Resources / OpenStax K-5 task clusters (indexed by the mode's CCSS domain in `src/modes/<mode>.js`) as structural anchors. Playbook §1b and §1c cover the CCSS map, license allowlist, and attribution workflow. Every session must produce at least 3 application items with a populated `source` field plus a bank-sources.md entry listing the IM/OUR clusters used for structural inspiration.
 - Every `promptText` must stay globally unique across the entire bank — the validator will flag duplicates.
 - Use the **timestamped** seed generator (`npm run bank:seed`) at the end of each session and commit the new migration file with the bundle change. Do not overwrite `supabase/migrations/0004_seed_item_bank.sql`.
 - One mode per branch (`feature/phase2-<mode>`). Modes can be worked on in parallel because their items live in distinct sections of `src/itemBank/applicationItems.js`.
@@ -27,4 +28,5 @@ When a mode's Phase 2 expansion is finished:
 1. Confirm all 27 cells are at ≥ 50 and include the count distribution.
 2. List the total items added and the bundle size before/after.
 3. Note the new Supabase migration filename so the user knows what to `supabase db push`.
-4. Link the PR URL.
+4. List the IM / OUR / OpenStax tasks that were cited (anchored) and the clusters used for structural inspiration; confirm `docs/bank-sources.md` has a corresponding entry for each session's batches.
+5. Link the PR URL.

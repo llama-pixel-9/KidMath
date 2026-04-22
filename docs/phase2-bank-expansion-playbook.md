@@ -38,6 +38,110 @@ Level bands (use exactly these `levelRange` values):
 
 ---
 
+## 1b. CCSS Standards Anchor (per mode)
+
+Every mode is tagged with a CCSS domain/cluster in `src/modes/*.js`. Use this mapping as the index when searching Illustrative Mathematics, Open Up Resources, OpenStax K-5, or the CCSS Math Progressions for source material.
+
+| Mode | CCSS domain | Cluster (from `src/modes/*.js`) | IM / OUR task index entry point |
+|---|---|---|---|
+| `addition` | `OA` | Add and subtract within 20 and beyond | `K.OA.A`, `1.OA.A`, `2.OA.A` |
+| `subtraction` | `OA` | Separate / compare within 20 and beyond | `K.OA.A`, `1.OA.A`, `2.OA.A` |
+| `multiplication` | `OA` | Multiplication and division within 100 | `3.OA.A`, `3.OA.B`, `3.OA.C` |
+| `division` | `OA` | Understand division as unknown-factor problems | `3.OA.A`, `3.OA.B`, `3.OA.C`, `4.OA.A` |
+| `comparing` | `NBT` | Compare two numbers | `K.CC.C`, `1.NBT.B`, `2.NBT.A`, `4.NBT.A.2` |
+| `counting` | `CC` | Count to tell the number of objects | `K.CC.A`, `K.CC.B`, `K.CC.C` |
+| `skipCounting` | `OA` | Gain foundations for multiplication | `2.NBT.A.2`, `3.OA.D.9` |
+| `placeValue` | `NBT` | Understand place value | `1.NBT.B`, `2.NBT.A`, `4.NBT.A` |
+
+Use the IM task search at `https://tasks.illustrativemathematics.org/content-standards/<standard>` for each standard in the right column when authoring an application batch.
+
+## 1c. Source Consultation (non-negotiable)
+
+Before writing items in any batch, do these three lookups in order. The playbook §4 hot loop is incomplete without them. The subtraction and multiplication Phase 2 batches **skipped** this step and produced no source-attributed items — every new mode's batches must do better.
+
+### Step 1: Read the mode's exemplars directory
+
+```bash
+ls data/exemplars/<mode>/ 2>/dev/null
+find data/exemplars/<mode> -name "*.json" 2>/dev/null | head
+```
+
+If exemplars exist for the target cell, open them. Each exemplar includes a `source` block (name, url, license, fetchedAt) and a `paraphrase` / `payload` pair that establishes the **canonical style and math shape** for that cell. Mimic the structure and register in subsequent variants. If no exemplar exists for a given cell, follow Step 2 to find one, and optionally add it to `data/exemplars/` as part of the session's first commit.
+
+### Step 2: Read the license allowlist
+
+[`data/exemplars/README.md`](../data/exemplars/README.md) has the current allowlist:
+
+| Source | License | Verbatim retention | Attribution |
+|---|---|---|---|
+| Illustrative Mathematics | CC BY 4.0 | yes | required |
+| OpenStax K-5 | CC BY 4.0 | yes | required |
+| Open Up Resources K-5 math | CC BY 4.0 | yes | required |
+| CCSS Math Progressions | public domain | yes | recommended |
+| EngageNY / Eureka Math | CC BY-NC-SA 3.0 | **no** | inspiration only |
+| Commercial textbooks | all rights | **no** | inspiration only |
+
+Rules that follow:
+- **Verbatim text** (story prompts copied or lightly paraphrased) is only allowed from the first three rows.
+- **Structural inspiration** (e.g., "use IM's `3.OA.A.3` Equal Groups Result Unknown structure") is always allowed and does not require a `source` field on the item.
+- **Never** copy prose from EngageNY or commercial textbooks. You may take the structure and reauthor.
+
+### Step 3: Decide which items anchor to a real source
+
+For each application batch of ~117 items, plan to **anchor 3-8 items per session** to specific IM / OUR / OpenStax tasks. Those items:
+
+- Set `source: { name, url, license, fetchedAt, adaptedFrom }` on the item object (the bank schema accepts it — see `scripts/generateBankSeed.js` where the `source` column is populated from this field).
+- Use a paraphrase of the original task (no verbatim copy unless the source is on the allowlist row 1-3).
+- Get listed by itemId in the session's `docs/bank-sources.md` entry under a sub-heading "IM-anchored items" (follow the style already used by the addition Phase 2 Batch 1 entry).
+
+The remaining ~110 items in the batch can be **structurally inspired** (no `source` field needed) but should still cite the IM/OUR task cluster they are modeled on under "Structural inspirations" in the same bank-sources.md entry.
+
+### Worked example (what the addition batch did, which the multiplication batch *didn't*)
+
+From `docs/bank-sources.md` (addition Phase 2 Batch 1):
+
+> ### IM-anchored items
+>
+> | itemId | IM task | URL | Standard |
+> | --- | --- | --- | --- |
+> | `addition-app-040` | At the Park (join change unknown variant) | https://tasks.illustrativemathematics.org/content-standards/1/OA/A/1/tasks/160.html | 1.OA.A.1 |
+> | `addition-app-041` | Maria's Marbles (compare smaller unknown) | https://tasks.illustrativemathematics.org/content-standards/1/OA/A/1/tasks/162.html | 1.OA.A.1 |
+>
+> ### Structural inspirations (no verbatim text)
+>
+> The remaining 295 items draw on these IM task patterns for structure but use original wording:
+> - Add-To Result Unknown / Change Unknown — 1.OA.A.1 cluster (At the Park, School Supplies, …)
+> - Compare Difference / Bigger / Smaller Unknown — 1.OA.A.1 (Maria's Marbles, Field Day Scarcity, Peyton's Books)
+>
+> All inspirations come from https://tasks.illustrativemathematics.org under CC BY 4.0.
+
+Every Phase 2 session from here on should leave a similar two-tier (anchored + inspiration) trail in bank-sources.md.
+
+### Item-object example with a populated `source` field
+
+```js
+{
+  itemId: "division-app-030",
+  modeId: "division",
+  itemFamily: "application",
+  subskill: "partitioning",
+  structureType: "partitiveDivision",
+  levelRange: [4, 6],
+  reviewStatus: APPROVED,
+  source: {
+    name: "Illustrative Mathematics",
+    url: "https://tasks.illustrativemathematics.org/content-standards/3/OA/A/2/tasks/466",
+    license: "CC-BY-4.0",
+    fetchedAt: "2026-04-22",
+    adaptedFrom: "Markers in Boxes (partitive)",
+  },
+  question: {
+    a: 24, b: 4, op: "÷", answer: 6,
+    display: { promptText: "A teacher shares 24 markers equally into 4 boxes. How many markers in each box?" },
+  },
+},
+```
+
 ## 2. Branch & PR Workflow
 
 One branch per mode. Run in parallel safely because each mode's items live in distinct sections of `src/itemBank/applicationItems.js`.
@@ -276,6 +380,8 @@ Required at the end of **every** session (not just the final one):
 - [ ] `npm run lint` → clean (the deoptimised-styling warning from Babel on `applicationItems.js` is expected)
 - [ ] `npm run bank:seed` → new migration file appears under `supabase/migrations/`
 - [ ] Cell distribution matches the session's target band
+- [ ] At least 3 items in the application batch carry a populated `source` field (§1c Step 3)
+- [ ] `docs/bank-sources.md` entry for this session lists the anchored items in a table + the structural-inspiration IM/OUR clusters
 - [ ] Commit pushed; PR updated
 
 Final session only:
@@ -316,7 +422,14 @@ Expand the <mode> mode item bank to Phase 2 per @docs/phase2-bank-expansion-play
 - Branch: feature/phase2-<mode> (create off latest main)
 - Sessions: 4 (follow the cadence in §3)
 
-Start by branching off main, then begin Session 1 batch 1 (procedural).
-Remember to run `npm run bank:seed` at the end of each session so the
-timestamped Supabase migration is included in the commit.
+Before Session 1 starts:
+  1. Read data/exemplars/<mode>/ for any seed exemplars (playbook §1c).
+  2. Open the IM task index for this mode's CCSS clusters (playbook §1b).
+  3. Pick 3-8 IM/OUR tasks per session that will anchor application items
+     with a populated `source` field.
+
+Then begin Session 1 batch 1 (procedural). Run `npm run bank:seed` at the
+end of each session so the timestamped Supabase migration is included in
+the commit, and log anchored + structural-inspiration sources in
+docs/bank-sources.md per playbook §1c Step 3.
 ```

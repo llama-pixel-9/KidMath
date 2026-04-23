@@ -1,5 +1,33 @@
 # Item Bank Source Attribution
 
+## Phase 2 Division Session 1 — all three families (2026-04-22)
+
+Added 351 division items (117 procedural + 117 conceptual + 117 application). 13 items per cell × 27 cells. Every division cell moves from 3-5 → 16-18 items. Bundle 3924 → 4275.
+
+- **Procedural**: three new subskill phrasings to widen the prompt pool — partitioning uses `X ÷ Y = ?` (K-1 builds the ÷1 and a/a identity pool; 2-3 uses dividends 14-48 with divisors 2-8; 4-5 uses dividends 45-132 with divisors 5-12, avoiding every Phase 1 pair), inverseFact uses `Compute X ÷ Y.`, unknownQuotient uses `What is X ÷ Y?`. Subskill-distinct phrasings let numeric pairs repeat across subskills within the same band while keeping every full promptText globally unique.
+- **Conceptual**: three new template families per subskill, rotated across bands so every cell accumulates ≥3 distinct structures — partitioning uses "A pile of X is split into Y equal heaps. Size of each heap?" / "If X objects are shared equally with Y friends, each friend gets?" / "Distribute X into Y equal trays. How many in each tray?"; inverseFact uses "Missing factor: Y × ? = X. Find ?" / "Think multiplication: Y times what equals X?" / "X is the product of Y and what number?"; unknownQuotient uses "Skip count back from X by Y. How many hops until 0?" / "Repeated subtraction: how many Ys are in X?" / "How many Ys fit in X?".
+- **Application**: fresh contexts (fallen leaves, smooth pebbles, seashells, acorns, new crayons, raisins, green grapes, wooden blocks, pink erasers, daisies, paperclips, blueberry muffins, clean socks, goldfish, pretzels, fresh berries, ripe apples, small peaches, assorted buttons, flower seeds, dominoes, toy cars, pinecones, strawberries, puzzle pieces, drawing pencils, markers, new notebooks, bookmarks, glue sticks, paintbrushes, seedlings, rubber stamps, refrigerator magnets, greeting stickers, commemorative coins, postage stamps, hotel keys, silk ribbons, soup spoons, colored keys, fuzzy chicks, puppies, teddy bears, mini pinecones, soft twigs, rag dolls, tadpoles, wooden dice, toy trains, rubber ducks, matching mittens, marshmallows, warm waffles, fluffy pancakes, fresh lemons, green limes, ripe kiwis, plump blueberries, maraschino cherries, fruit popsicles, frosted cupcakes, glazed doughnuts, pizza slices, yogurt cups, tennis balls, hurdles, sandwich rolls, bread loaves, long-stem roses, fossil samples, framed photographs, bicycle helmets, reference journals, theatre patrons, glasses of cider, welcome mints, tiny toy cars, bright crayons, shiny coins, red apples, warm muffins, fruit gummies, playground balls, colored chalks, framed paintings, garden lanterns, bath ducks, jigsaw pieces, rubber bands, plastic checkers, silver thimbles, holiday postcards, linen napkins, drawing paper, ceramic figurines, wooden building cubes, mechanical pencils, glass beads, costume rings, paper lanterns, commemorative stickers, festival tickets, reference binders, leather binders, pencil cases, granola bars, achievement badges, vintage photos, sample booklets, documentary DVDs, travel journals, concept sketches, sports cards, field compasses).
+
+### IM-anchored items
+
+| itemId | IM task | URL | Standard |
+| --- | --- | --- | --- |
+| `division-app-046` | Fish Tanks (partitive at 3.OA.A.3) | https://tasks.illustrativemathematics.org/content-standards/3/OA/A/3 | 3.OA.A.3 |
+| `division-app-059` | Markers in Boxes (partitive at 3.OA.A.3) | https://tasks.illustrativemathematics.org/content-standards/3/OA/A/3 | 3.OA.A.3 |
+| `division-app-098` | Finding the Unknown in a Division Equation (3.OA.B.6) | https://tasks.illustrativemathematics.org/content-standards/3/OA/B/6 | 3.OA.B.6 |
+| `division-app-137` | The Stamp Collection (partitive at 3.OA.A.3) | https://tasks.illustrativemathematics.org/content-standards/3/OA/A/3 | 3.OA.A.3 |
+
+### Structural inspirations (no verbatim text)
+
+The remaining 347 items draw on these IM task patterns for structure but use original wording:
+- Partitive Division / Equal Sharing — 3.OA.A.2, 3.OA.A.3 (Markers in Boxes, Fish Tanks, Gifts from Grandma, The Stamp Collection, How Many in One Group?)
+- Unknown-Factor / Measurement Division — 3.OA.B.6, 4.OA.A.2 (Finding the Unknown in a Division Equation, Two Interpretations of Division, Leveling the Playing Field)
+- Skip-counting and repeated-subtraction framings — 3.OA.A.1 progressions (connecting multiplication, division, and skip counting)
+
+All inspirations come from https://tasks.illustrativemathematics.org under CC BY 4.0.
+
+Bank report: PASS. 130 tests pass, lint clean. Seed regenerated to `supabase/migrations/20260423002904_seed_item_bank.sql` (4275 items).
+
 ## Phase 2 Multiplication Batch 4 — final push to 50+ (2026-04-20)
 
 Added 287 multiplication items (147 app + 90 proc + 90 conc), ending with a 12-item mop-up that brings the last three lagging application cells over the floor. **Every multiplication cell is now ≥50** (23 cells at 52, 2 at 51, 2 at 50).

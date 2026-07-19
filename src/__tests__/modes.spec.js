@@ -88,8 +88,9 @@ describe("mode generation coverage", () => {
   });
 
   it("sources application items from the approved bank", () => {
-    // placeValue uses the BUILD type; fractions is a new mode with no bank yet.
-    const bankless = new Set(["placeValue", "fractions"]);
+    // placeValue uses the BUILD type; fractions/decimals are new modes with no
+    // bank content yet.
+    const bankless = new Set(["placeValue", "fractions", "decimals"]);
     const modesWithApplicationContext = MODE_IDS.filter((mode) => !bankless.has(mode));
     for (const mode of modesWithApplicationContext) {
       const q = generateQuestion(mode, 10, {
@@ -173,6 +174,27 @@ describe("mode generation coverage", () => {
     }
     // Both formats show up across the subskills.
     expect(seenTypes.has("fraction")).toBe(true);
+    expect(seenTypes.has("symbolSelect")).toBe(true);
+  });
+
+  it("decimals mode generates valid decimal/symbolSelect items", () => {
+    const decimals = getModeConfig("decimals");
+    const seenTypes = new Set();
+    for (let level = 3; level <= 10; level++) {
+      for (let i = 0; i < 30; i++) {
+        const q = decimals.generate(level);
+        seenTypes.add(q.answerType);
+        expect(["decimal", "symbolSelect"]).toContain(q.answerType);
+        expect(q.display.promptText).toBeTruthy();
+        if (q.answerType === "symbolSelect") {
+          expect(["<", ">", "="]).toContain(q.answer);
+        } else {
+          expect(typeof q.answer).toBe("number");
+          expect(q.answer).toBeGreaterThan(0);
+        }
+      }
+    }
+    expect(seenTypes.has("decimal")).toBe(true);
     expect(seenTypes.has("symbolSelect")).toBe(true);
   });
 

@@ -222,13 +222,18 @@ equivalent, mixed↔improper) and `decimals` modes at the 3/cell floor.
   `{num,den}` object; `buildItemKey` serializes object answers.
 - ✅ UI: `NumberPad` decimal mode + new `<FractionInput>`; dispatched by
   `answerType`; reachable now via `?input=decimal` / `?input=fraction`.
-- ⬜ **Next:** `fractions` / `decimals` *modes* (content generation). Integration
-  points to handle: (1) `itemQuality.validateQuestion` must accept fraction/decimal
-  answers (object answer, non-arithmetic `op`); (2) the modes.spec test "always
-  includes the correct answer in generated choices" should skip non-`choice`
-  answerTypes; (3) a new mode has an empty bank, so exclude it from the
-  "application sourced from bank" test (as `placeValue` is) or seed application
-  items; (4) fraction-aware distractors for any `choice`-type fraction items.
+- ✅ `fractions` mode (Grade 3-4) — live and playable: equivalence/simplify +
+  addLikeDenominators → fraction answers, compareFractions → symbolSelect.
+- ✅ `decimals` mode (Grade 4) — live: tenths/hundredths + fraction→decimal →
+  decimal answers, compareDecimals → symbolSelect.
+- Integration handled: `validateQuestion` already accepts object/decimal answers;
+  all three `generateChoices` sites guard non-choice; modes.spec + choiceGeneration
+  skip non-`choice` formats; the bankless new modes are excluded from the
+  application-from-bank test. Both modes auto-appear in the homepage grid + in-game
+  switcher (`MODE_IDS`).
+- ⬜ **Remaining Phase 2 polish:** distinct mode icons (fractions/decimals reuse
+  `Layers`/`Hash`); fraction-aware distractors for any future `choice`-type fraction
+  items; bank content for the two modes (via the Phase 4 batch pipeline).
 
 **Prompt:**
 ```

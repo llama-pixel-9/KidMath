@@ -11,9 +11,17 @@ const RANGES = [
   { aMin: 1, aMax: 12, bMin: 1, bMax: 5 },
   { aMin: 1, aMax: 12, bMin: 1, bMax: 9 },
   { aMin: 1, aMax: 12, bMin: 1, bMax: 12 },
-  { aMin: 5, aMax: 12, bMin: 5, bMax: 12 },
-  { aMin: 7, aMax: 12, bMin: 7, bMax: 12 },
+  // Grade 4 (4.NBT.B.5): 2-digit x 1-digit, then 2-digit x 2-digit. Large
+  // products are answered by typing (numberPad) rather than guessing bubbles.
+  { aMin: 11, aMax: 99, bMin: 2, bMax: 9 },
+  { aMin: 11, aMax: 99, bMin: 11, bMax: 99 },
 ];
+
+// Products with a two-digit factor are answered via the number pad; single-digit
+// table facts stay multiple-choice.
+function isMultiDigitFactorPair(a, b) {
+  return a >= 10 || b >= 10;
+}
 
 const SUBSKILLS = ["equalGroups", "arrayReasoning", "factFluency"];
 
@@ -47,7 +55,7 @@ export default {
   id: "multiplication",
   label: "Multiply Mania!",
   shortLabel: "Multiplication",
-  description: "Conquer times tables up to 12 × 12!",
+  description: "Times tables through 12 × 12, then 2-digit multiplication!",
   icon: "X",
   op: "×",
   subskills: SUBSKILLS,
@@ -80,6 +88,11 @@ export default {
         level,
         display: { promptText: `${a} rows with ${b} chairs each. How many chairs?` },
       };
+    }
+
+    // Typed entry for multi-digit products; single-digit facts stay bubbles.
+    if (isMultiDigitFactorPair(a, b)) {
+      question.answerType = "numberPad";
     }
 
     question.metadata = createQuestionMetadata({

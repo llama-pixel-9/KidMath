@@ -1,14 +1,12 @@
+import { levelToGradeBand } from "../bands.js";
+
+export { levelToGradeBand };
+
 export const ITEM_FAMILIES = {
   CONCEPTUAL: "conceptual",
   PROCEDURAL: "procedural",
   APPLICATION: "application",
 };
-
-export function levelToGradeBand(level) {
-  if (level <= 3) return "K-1";
-  if (level <= 6) return "2-3";
-  return "4-5";
-}
 
 export function buildItemKey(question) {
   const meta = question.metadata || {};

@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { MODE_IDS, getModeConfig } from "../modes";
 import { generateQuestion, generateChoices, generateWorksheetSet } from "../mathEngine";
+import { buildQuestionFromBankItem } from "../itemBank.js";
 
 describe("mode generation coverage", () => {
   it("generates valid metadata for every mode", () => {
@@ -105,6 +106,64 @@ describe("mode generation coverage", () => {
     expect(placeValueQuestion.metadata.itemSource).toBe("bank");
     expect(placeValueQuestion.metadata.itemId).toBeTruthy();
     expect(placeValueQuestion.display?.promptText).toBeTruthy();
+  });
+
+  it("multiplication mode generates 2-digit, typed-answer questions at Grade 4 levels", () => {
+    const mult = getModeConfig("multiplication");
+    // Level 10 uses two-digit factors -> numberPad; the product is the answer.
+    for (let i = 0; i < 40; i++) {
+      const q = mult.generate(10);
+      expect(q.answerType).toBe("numberPad");
+      expect(q.a >= 10 || q.b >= 10).toBe(true);
+      expect(q.a * q.b).toBe(q.answer);
+    }
+    // Early levels keep single-digit facts as multiple choice (no numberPad).
+    for (let i = 0; i < 40; i++) {
+      const q = mult.generate(3);
+      expect(q.answerType).toBeUndefined();
+    }
+  });
+
+  it("comparing generates symbolSelect questions whose answer is a comparison symbol", () => {
+    const comparing = getModeConfig("comparing");
+    for (let level = 1; level <= 10; level++) {
+      for (let i = 0; i < 20; i++) {
+        const q = comparing.generate(level);
+        expect(q.answerType).toBe("symbolSelect");
+        expect(["<", ">", "="]).toContain(q.answer);
+      }
+    }
+  });
+
+  it("skipCounting uses fillBlank at Grade 2+ and stays multiple-choice at K-1", () => {
+    const skip = getModeConfig("skipCounting");
+    for (let i = 0; i < 20; i++) {
+      const q = skip.generate(6);
+      expect(q.answerType).toBe("fillBlank");
+      // Answer is the next term after the shown 3-term sequence.
+      expect(q.answer).toBe(q.display.sequence[2] + q.display.step);
+    }
+    for (let i = 0; i < 20; i++) {
+      const q = skip.generate(2);
+      expect(q.answerType).toBeUndefined();
+    }
+  });
+
+  it("carries answerType from a bank item payload through to the question", () => {
+    // Proves Grade-4 bank content can be typed-answer: the numberPad flag on an
+    // item's question payload survives buildQuestionFromBankItem end to end.
+    const q = buildQuestionFromBankItem(
+      {
+        itemId: "multiplication-proc-numberpad-demo",
+        itemFamily: "procedural",
+        subskill: "factFluency",
+        reviewStatus: "approved",
+        question: { a: 47, b: 38, op: "×", answer: 1786, answerType: "numberPad" },
+      },
+      10
+    );
+    expect(q.answerType).toBe("numberPad");
+    expect(q.answer).toBe(1786);
   });
 
   it("respects worksheet word-problem toggle", () => {

@@ -60,7 +60,7 @@ export default {
     else if (a < b) { answer = "<"; op = "?"; }
     else { answer = "="; op = "?"; }
 
-    const question = { a, b, op, answer, level };
+    const question = { a, b, op, answer, level, answerType: "symbolSelect" };
     if (itemFamily === ITEM_FAMILIES.APPLICATION) {
       question.display = { promptText: `Choose the symbol: ${a} ? ${b}` };
     }

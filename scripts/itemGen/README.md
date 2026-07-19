@@ -70,17 +70,40 @@ node scripts/itemGen/generateDrafts.js \
   --limit 12
 ```
 
-Swapping the LLM provider:
+### Real generation with Claude
+
+Single cell, via the pluggable provider (`providers/claude.js`):
 
 ```
-KIDMATH_ITEMGEN_PROVIDER=openai \
-OPENAI_API_KEY=... \
-node scripts/itemGen/generateDrafts.js ...
+npm i -D @anthropic-ai/sdk         # once
+ANTHROPIC_API_KEY=...  \           # or run `ant auth login`
+SUPABASE_SERVICE_ROLE_KEY=... SUPABASE_URL=https://....supabase.co \
+node scripts/itemGen/generateDrafts.js \
+  --provider claude \
+  --mode division --subskill partitioning --family application --band 4-5 \
+  --limit 13
 ```
 
-The `openai` provider is a thin wrapper around `fetch(...)` against the
-Chat Completions API. Add more providers by exporting a function
-`generate({ prompt, n })` from `scripts/itemGen/providers/<name>.js`.
+Bulk across every exemplar cell via the **Batch API** (50% cheaper — the Phase 4
+accelerator):
+
+```
+npm run bank:gen:batch -- --all --limit 13            # dry-run first with --dryRun
+```
+
+`generateBatch.js` submits one request per cell, polls the batch to completion,
+then runs each cell's output through the same numeric/duplicate gate and writes
+draft rows. `--dryRun` builds and prints the requests without submitting (no SDK
+or credentials needed), so you can inspect the prompts first.
+
+- **Model** defaults to `claude-sonnet-5` (the deliberate cost choice for bulk
+  content); override with `KIDMATH_ITEMGEN_MODEL` or `--model`.
+- Every item lands as `reviewStatus=draft` and must clear the admin review queue
+  before any learner sees it — blast radius of a bad prompt is zero.
+
+Add more providers by exporting `generate({ exemplars, n })` from
+`scripts/itemGen/providers/<name>.js`; the shared prompt/parse helpers live in
+`scripts/itemGen/prompt.js`.
 
 ## Why a script, not a server function
 

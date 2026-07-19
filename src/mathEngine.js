@@ -299,6 +299,39 @@ export function generateChoices(answer, count = 4, question = null) {
   return finalChoices;
 }
 
+// A question with no explicit answerType is a multiple-choice ("choice")
+// question — the historical default. Only "choice" questions carry `choices`.
+export function questionAnswerType(question) {
+  return question?.answerType ?? "choice";
+}
+
+function numericEquals(submitted, answer) {
+  if (submitted === null || submitted === undefined || submitted === "") return false;
+  const s = Number(submitted);
+  const a = Number(answer);
+  return Number.isFinite(s) && Number.isFinite(a) && s === a;
+}
+
+// Type-aware correctness check. This is the single scoring authority: every
+// answer format is judged here, and recordAnswer routes through it. The default
+// "choice" branch is byte-for-byte the historical `submitted === question.answer`
+// so existing multiple-choice behavior is unchanged.
+export function checkAnswer(question, submitted) {
+  switch (questionAnswerType(question)) {
+    // Typed numeric entry: a plain number pad, or a number pad bound to a blank
+    // in an equation (fillBlank). Both judge by numeric value.
+    case "numberPad":
+    case "fillBlank":
+      return numericEquals(submitted, question.answer);
+    // Symbol picker (<, >, =) and multiple choice both judge by strict equality
+    // of the selected value against the answer.
+    case "symbolSelect":
+    case "choice":
+    default:
+      return submitted === question.answer;
+  }
+}
+
 // --- Adaptive Session Engine ---
 
 export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE, options = {}) {
@@ -340,7 +373,9 @@ export function getNextQuestion(session) {
   if (dueReview && session.questionsSinceRetry >= RETRY_SPACING) {
     const retryQ = { ...dueReview, mode: dueReview.mode || session.mode };
     retryQ.itemKey = retryQ.itemKey || buildItemKey(retryQ);
-    retryQ.choices = generateChoices(retryQ.answer, 4, retryQ);
+    if (questionAnswerType(retryQ) === "choice") {
+      retryQ.choices = generateChoices(retryQ.answer, 4, retryQ);
+    }
     return { question: retryQ, isRetry: true };
   }
 
@@ -359,7 +394,9 @@ export function getNextQuestion(session) {
   });
   q.scheduler = { targetSubskill, itemFamily: scheduledFamily };
   q.nextFamilyCursor = nextCursor;
-  q.choices = generateChoices(q.answer, 4, q);
+  if (questionAnswerType(q) === "choice") {
+    q.choices = generateChoices(q.answer, 4, q);
+  }
   return { question: q, isRetry: false };
 }
 
@@ -398,7 +435,7 @@ function appendRecentBankItemId(recent, itemId) {
 }
 
 export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wasRetry) {
-  const correct = chosenAnswer === question.answer;
+  const correct = checkAnswer(question, chosenAnswer);
   const next = { ...session };
   next.skillMastery = updateSkillMastery(session, question, correct);
   next.analyticsEvents = logAnalyticsEvent(session, {

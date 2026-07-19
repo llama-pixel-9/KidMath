@@ -1,6 +1,7 @@
 import { BUNDLED_ITEMS } from "./bundle.js";
 import { REVIEW_STATUS } from "./applicationItems.js";
 import { isVerbalPrompt } from "../modes/helpers.js";
+import { levelToBand, levelRangeToBands, LEVEL_BANDS } from "../bands.js";
 
 // Re-export REVIEW_STATUS so callers keep working without importing from the
 // bundle directly.
@@ -14,24 +15,11 @@ export const ITEM_FAMILIES = {
 
 const VALID_FAMILIES = new Set(Object.values(ITEM_FAMILIES));
 
-// Level-band mapping mirrors src/modes/itemMetadata.js `levelToGradeBand` but
-// is duplicated here so the item bank module has no inbound dep on the modes
-// layer (keeps cloud hydration import-graph small).
-export function levelToBand(level) {
-  if (level <= 3) return "K-1";
-  if (level <= 6) return "2-3";
-  return "4-5";
-}
-
-export function levelRangeToBands(levelRange) {
-  if (!Array.isArray(levelRange) || levelRange.length !== 2) return [];
-  const [min, max] = levelRange;
-  const bands = new Set();
-  for (let level = min; level <= max; level++) bands.add(levelToBand(level));
-  return [...bands];
-}
-
-export const LEVEL_BANDS = ["K-1", "2-3", "4-5"];
+// Level-band mapping is centralised in the dependency-free leaf src/bands.js so
+// this module keeps no inbound edge to the modes layer (small cloud-hydration
+// import graph). Imported (for internal use below) and re-exported so existing
+// `from "./itemBank"` call sites are unchanged.
+export { levelToBand, levelRangeToBands, LEVEL_BANDS };
 
 const REQUIRED_FIELDS = [
   "itemId",

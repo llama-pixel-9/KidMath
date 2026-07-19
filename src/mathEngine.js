@@ -4,6 +4,7 @@ import { buildItemKey, ITEM_FAMILIES } from "./modes/itemMetadata";
 import { validateChoices, validateQuestion } from "./modes/itemQuality";
 import { loadProgressSync } from "./progressStore";
 import { buildQuestionFromBankItem, selectApprovedBankItem } from "./itemBank.js";
+import { fractionsEqual } from "./fractions.js";
 
 export const SESSION_SIZE = 15;
 export const MAX_LEVEL = 10;
@@ -305,11 +306,12 @@ export function questionAnswerType(question) {
   return question?.answerType ?? "choice";
 }
 
-function numericEquals(submitted, answer) {
+function numericEquals(submitted, answer, epsilon = 0) {
   if (submitted === null || submitted === undefined || submitted === "") return false;
   const s = Number(submitted);
   const a = Number(answer);
-  return Number.isFinite(s) && Number.isFinite(a) && s === a;
+  if (!Number.isFinite(s) || !Number.isFinite(a)) return false;
+  return epsilon > 0 ? Math.abs(s - a) < epsilon : s === a;
 }
 
 // Type-aware correctness check. This is the single scoring authority: every
@@ -318,11 +320,19 @@ function numericEquals(submitted, answer) {
 // so existing multiple-choice behavior is unchanged.
 export function checkAnswer(question, submitted) {
   switch (questionAnswerType(question)) {
-    // Typed numeric entry: a plain number pad, or a number pad bound to a blank
+    // Typed integer entry: a plain number pad, or a number pad bound to a blank
     // in an equation (fillBlank). Both judge by numeric value.
     case "numberPad":
     case "fillBlank":
       return numericEquals(submitted, question.answer);
+    // Decimal entry (tenths/hundredths): numeric with a small tolerance so
+    // 0.5 == .50 and float noise never fails a correct answer.
+    case "decimal":
+      return numericEquals(submitted, question.answer, 1e-9);
+    // Fraction entry: value equivalence (3/4 == 6/8), accepting {num,den} or
+    // an "a/b" string on either side.
+    case "fraction":
+      return fractionsEqual(submitted, question.answer);
     // Symbol picker (<, >, =) and multiple choice both judge by strict equality
     // of the selected value against the answer.
     case "symbolSelect":

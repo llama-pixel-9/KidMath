@@ -136,7 +136,14 @@ function getForcedInputType() {
   if (typeof window === "undefined") return null;
   try {
     const params = new URLSearchParams(window.location.search || "");
-    if (params.get("input") === "numberpad") return "numberPad";
+    const map = {
+      numberpad: "numberPad",
+      fillblank: "fillBlank",
+      symbolselect: "symbolSelect",
+      decimal: "decimal",
+      fraction: "fraction",
+    };
+    return map[params.get("input")] || null;
   } catch {
     // Ignore malformed URL params.
   }
@@ -148,17 +155,20 @@ function getForcedInputType() {
 // answer lock, telemetry, mistake bank, and correct/wrong feedback are
 // identical to multiple choice (plan §6b). Remounted per question (key) so the
 // entry resets.
-function NumberPad({ onSubmit, feedback, theme, lowMotionMode, lowEndDevice }) {
+function NumberPad({ onSubmit, feedback, theme, lowMotionMode, lowEndDevice, allowDecimal = false }) {
   const [entry, setEntry] = useState("");
   const locked = feedback === "correct" || feedback === "wrong";
   const pressDigit = (d) => {
-    if (!locked) setEntry((e) => (e.length < 7 ? e + d : e));
+    if (!locked) setEntry((e) => (e.length < 8 ? e + d : e));
+  };
+  const pressDot = () => {
+    if (!locked) setEntry((e) => (e.includes(".") || e.length >= 7 ? e : e === "" ? "0." : e + "."));
   };
   const backspace = () => {
     if (!locked) setEntry((e) => e.slice(0, -1));
   };
   const submit = () => {
-    if (!locked && entry !== "") onSubmit(Number(entry));
+    if (!locked && entry !== "" && entry !== ".") onSubmit(Number(entry));
   };
 
   const displayTone =
@@ -169,6 +179,20 @@ function NumberPad({ onSubmit, feedback, theme, lowMotionMode, lowEndDevice }) {
         : theme.textPrimary;
 
   const keyClass = `relative min-h-[80px] rounded-2xl ${theme.cardBg} shadow-lg text-3xl font-extrabold ${theme.textPrimary} cursor-pointer select-none disabled:opacity-40`;
+  const goClass =
+    "relative min-h-[80px] rounded-2xl bg-gradient-to-br from-emerald-400 to-green-500 text-white text-2xl font-extrabold shadow-lg cursor-pointer select-none disabled:opacity-40";
+  const goBtn = (
+    <motion.button
+      className={goClass}
+      whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
+      whileTap={{ scale: 0.9 }}
+      onClick={submit}
+      disabled={locked || entry === "" || entry === "."}
+      aria-label="Submit answer"
+    >
+      Go
+    </motion.button>
+  );
 
   return (
     <section className="w-full max-w-sm flex flex-col items-center gap-3" aria-label="Number entry">
@@ -213,12 +237,114 @@ function NumberPad({ onSubmit, feedback, theme, lowMotionMode, lowEndDevice }) {
         >
           0
         </motion.button>
+        {allowDecimal ? (
+          <motion.button
+            className={keyClass}
+            whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={pressDot}
+            disabled={locked}
+            aria-label="Decimal point"
+          >
+            .
+          </motion.button>
+        ) : (
+          goBtn
+        )}
+      </div>
+      {allowDecimal && <div className="w-full">{goBtn}</div>}
+    </section>
+  );
+}
+
+// Fraction entry: tap the numerator or denominator to select it, then use the
+// digit pad. Submits { num, den } through the shared submitAnswer path.
+function FractionInput({ onSubmit, feedback, theme, lowMotionMode, lowEndDevice }) {
+  const [num, setNum] = useState("");
+  const [den, setDen] = useState("");
+  const [active, setActive] = useState("num");
+  const locked = feedback === "correct" || feedback === "wrong";
+  const set = active === "num" ? setNum : setDen;
+  const cur = active === "num" ? num : den;
+  const pressDigit = (d) => {
+    if (!locked && cur.length < 4) set((v) => v + d);
+  };
+  const backspace = () => {
+    if (!locked) set((v) => v.slice(0, -1));
+  };
+  const submit = () => {
+    if (!locked && num !== "" && den !== "" && Number(den) !== 0) {
+      onSubmit({ num: Number(num), den: Number(den) });
+    }
+  };
+
+  const tone =
+    feedback === "correct"
+      ? "ring-4 ring-green-400 text-green-600"
+      : feedback === "wrong"
+        ? "ring-4 ring-red-400 text-red-500"
+        : theme.textPrimary;
+  const fieldClass = (field) =>
+    `min-w-[72px] min-h-[56px] px-4 rounded-xl text-3xl font-extrabold flex items-center justify-center cursor-pointer select-none ${
+      active === field ? "ring-4 ring-sky-400" : "ring-2 ring-transparent"
+    }`;
+  const keyClass = `relative min-h-[72px] rounded-2xl ${theme.cardBg} shadow-lg text-3xl font-extrabold ${theme.textPrimary} cursor-pointer select-none disabled:opacity-40`;
+
+  return (
+    <section className="w-full max-w-sm flex flex-col items-center gap-3" aria-label="Fraction entry">
+      <div
+        className={`relative flex flex-col items-center ${tone}`}
+        aria-live="polite"
+      >
+        <button className={fieldClass("num")} onClick={() => !locked && setActive("num")} aria-label="Numerator">
+          {num === "" ? <span className={theme.textMuted}>—</span> : num}
+        </button>
+        <div className="w-24 h-1 my-1 rounded bg-current" />
+        <button className={fieldClass("den")} onClick={() => !locked && setActive("den")} aria-label="Denominator">
+          {den === "" ? <span className={theme.textMuted}>—</span> : den}
+        </button>
+        {feedback === "correct" && !lowMotionMode && (
+          <ConfettiBurst intensity={lowEndDevice ? "light" : "normal"} />
+        )}
+      </div>
+      <div className="grid grid-cols-3 gap-3 w-full">
+        {["1", "2", "3", "4", "5", "6", "7", "8", "9"].map((d) => (
+          <motion.button
+            key={d}
+            className={keyClass}
+            whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={() => pressDigit(d)}
+            disabled={locked}
+          >
+            {d}
+          </motion.button>
+        ))}
         <motion.button
-          className="relative min-h-[80px] rounded-2xl bg-gradient-to-br from-emerald-400 to-green-500 text-white text-2xl font-extrabold shadow-lg cursor-pointer select-none disabled:opacity-40"
+          className={`${keyClass} text-2xl`}
+          whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={backspace}
+          disabled={locked}
+          aria-label="Delete"
+        >
+          ⌫
+        </motion.button>
+        <motion.button
+          className={keyClass}
+          whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={() => pressDigit("0")}
+          disabled={locked}
+        >
+          0
+        </motion.button>
+        <motion.button
+          className="relative min-h-[72px] rounded-2xl bg-gradient-to-br from-emerald-400 to-green-500 text-white text-2xl font-extrabold shadow-lg cursor-pointer select-none disabled:opacity-40"
           whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
           whileTap={{ scale: 0.9 }}
           onClick={submit}
-          disabled={locked || entry === ""}
+          disabled={locked || num === "" || den === ""}
           aria-label="Submit answer"
         >
           Go
@@ -1121,8 +1247,18 @@ export default function MathExplorer({ initialMode }) {
           </motion.section>
         </AnimatePresence>
 
-        {answerType === "numberPad" || answerType === "fillBlank" ? (
+        {answerType === "numberPad" || answerType === "fillBlank" || answerType === "decimal" ? (
           <NumberPad
+            key={questionKeyRef.current}
+            onSubmit={submitAnswer}
+            feedback={feedback}
+            theme={theme}
+            lowMotionMode={lowMotionMode}
+            lowEndDevice={lowEndDevice}
+            allowDecimal={answerType === "decimal"}
+          />
+        ) : answerType === "fraction" ? (
+          <FractionInput
             key={questionKeyRef.current}
             onSubmit={submitAnswer}
             feedback={feedback}

@@ -33,7 +33,7 @@ import {
   Heart,
 } from "lucide-react";
 import { useTheme } from "./useTheme";
-import { MODE_IDS, getModeConfig } from "./modes";
+import { MODE_IDS, MODE_GROUPS, getModeConfig } from "./modes";
 
 const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork, BarChart3, CircleDot, Sigma, Ruler, Coins, Spline, Scale, Clock, ChartColumn, Triangle, Shapes };
 
@@ -44,21 +44,16 @@ const fadeUp = {
   transition: { duration: 0.5, ease: "easeOut" },
 };
 
-const FEATURES = MODE_IDS.map((id) => {
-  const config = getModeConfig(id);
-  return {
-    id,
-    icon: ICON_MAP[config.icon] || Plus,
-    title: config.shortLabel,
-    desc: config.description,
-  };
-});
+const MODE_COUNT = MODE_IDS.length;
+
+// Stable colour index per mode so a card keeps its colour across renders.
+const COLOR_INDEX = Object.fromEntries(MODE_IDS.map((id, i) => [id, i]));
 
 const STEPS = [
   {
     icon: Settings,
     title: "Pick your math type",
-    desc: "Choose from 8 different math skills \u2014 difficulty adapts to you!",
+    desc: `Choose from ${MODE_COUNT} math skills \u2014 difficulty adapts to you!`,
   },
   {
     icon: MousePointerClick,
@@ -121,17 +116,27 @@ export default function HomePage() {
             </span>
           </h1>
           <p className={`mt-4 text-lg sm:text-xl ${theme.textSecondary} max-w-md mx-auto`}>
-            Make math your superpower! 8 skills from counting to place value,
-            with fun animations and star rewards.
+            Make math your superpower! {MODE_COUNT} skills from counting to
+            fractions, decimals, and shapes — with fun animations and star rewards.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
             <motion.button
               className={`px-8 py-4 bg-gradient-to-r ${theme.ctaPrimary} text-white text-xl font-bold rounded-2xl shadow-lg cursor-pointer`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() =>
+                document.getElementById("modes")?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Pick a Game
+            </motion.button>
+            <motion.button
+              className={`px-6 py-4 ${theme.ctaSecondary} backdrop-blur text-lg font-bold rounded-2xl shadow border cursor-pointer`}
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.95 }}
               onClick={() => navigate("/play")}
             >
-              Start Playing
+              Quick Start
             </motion.button>
             <motion.button
               className={`px-6 py-4 ${theme.ctaSecondary} backdrop-blur text-lg font-bold rounded-2xl shadow border cursor-pointer`}
@@ -145,42 +150,65 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      {/* Features */}
-      <section className="px-4 py-16 max-w-5xl mx-auto">
+      {/* Pick a game — grouped so kids can find a skill fast */}
+      <section id="modes" className="px-4 py-16 max-w-5xl mx-auto">
         <motion.h2
-          className={`text-3xl font-extrabold ${theme.textPrimary} text-center mb-10`}
+          className={`text-3xl font-extrabold ${theme.textPrimary} text-center mb-2`}
           {...fadeUp}
         >
-          8 Ways to Practice
+          Pick a Game
         </motion.h2>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-          {FEATURES.map((f, i) => {
-            const Icon = f.icon;
-            const card = theme.featureCards[i % theme.featureCards.length];
-            return (
-              <motion.div
-                key={f.title}
-                className={`${card.bg} rounded-3xl p-5 text-center shadow-sm cursor-pointer`}
-                {...fadeUp}
-                transition={{ ...fadeUp.transition, delay: i * 0.06 }}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => navigate(`/play/${f.id}`)}
-              >
-                <div
-                  className={`inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br ${card.gradient} shadow-md mb-3`}
-                >
-                  <Icon className="h-6 w-6 text-white" />
-                </div>
-                <h3 className={`text-base font-extrabold ${theme.textPrimary}`}>
-                  {f.title}
+        <motion.p
+          className={`text-center ${theme.textSecondary} mb-10`}
+          {...fadeUp}
+        >
+          {MODE_COUNT} skills, grouped by topic — tap any one to start.
+        </motion.p>
+
+        <div className="space-y-10">
+          {MODE_GROUPS.map((group) => (
+            <motion.div key={group.id} {...fadeUp}>
+              <div className="flex items-baseline justify-between gap-3 mb-3 px-1">
+                <h3 className={`text-xl font-extrabold ${theme.textPrimary}`}>
+                  {group.title}
                 </h3>
-                <p className={`mt-1 text-xs ${theme.textSecondary} leading-relaxed`}>
-                  {f.desc}
-                </p>
-              </motion.div>
-            );
-          })}
+                <span className={`text-xs font-bold ${theme.textMuted} whitespace-nowrap`}>
+                  {group.gradeHint}
+                </span>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                {group.modeIds.map((id) => {
+                  const config = getModeConfig(id);
+                  const Icon = ICON_MAP[config.icon] || Plus;
+                  const card =
+                    theme.featureCards[COLOR_INDEX[id] % theme.featureCards.length];
+                  return (
+                    <motion.button
+                      key={id}
+                      type="button"
+                      className={`${card.bg} rounded-3xl p-5 text-center shadow-sm cursor-pointer min-h-[140px] flex flex-col items-center justify-start`}
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      onClick={() => navigate(`/play/${id}`)}
+                      aria-label={`Play ${config.shortLabel}`}
+                    >
+                      <div
+                        className={`inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br ${card.gradient} shadow-md mb-3`}
+                      >
+                        <Icon className="h-6 w-6 text-white" />
+                      </div>
+                      <h4 className={`text-base font-extrabold ${theme.textPrimary}`}>
+                        {config.shortLabel}
+                      </h4>
+                      <p className={`mt-1 text-xs ${theme.textSecondary} leading-relaxed`}>
+                        {config.description}
+                      </p>
+                    </motion.button>
+                  );
+                })}
+              </div>
+            </motion.div>
+          ))}
         </div>
       </section>
 

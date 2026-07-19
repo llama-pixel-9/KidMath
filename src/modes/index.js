@@ -50,6 +50,48 @@ export const modeRegistry = Object.fromEntries(ALL_MODES.map((m) => [m.id, m]));
 
 export const MODE_IDS = ALL_MODES.map((m) => m.id);
 
+// Kid-facing grouping for the home page (and any future mode picker). Every
+// mode must appear in exactly one group — `modeGroups.spec.js` enforces that so
+// a newly registered mode can't silently go missing from the UI.
+export const MODE_GROUPS = [
+  {
+    id: "numbers",
+    title: "Counting & Numbers",
+    gradeHint: "Grades 1-2",
+    modeIds: ["counting", "numberBonds", "comparing", "skipCounting", "placeValue", "placeValueDiscs"],
+  },
+  {
+    id: "addSubtract",
+    title: "Add & Subtract",
+    gradeHint: "Grades 1-3",
+    modeIds: ["addition", "subtraction", "barModels"],
+  },
+  {
+    id: "multiplyDivide",
+    title: "Multiply & Divide",
+    gradeHint: "Grades 2-4",
+    modeIds: ["multiplication", "division", "factorsMultiples", "patterns"],
+  },
+  {
+    id: "fractionsDecimals",
+    title: "Fractions & Decimals",
+    gradeHint: "Grades 3-4",
+    modeIds: ["fractions", "decimals"],
+  },
+  {
+    id: "measureMoneyTime",
+    title: "Measure, Money & Time",
+    gradeHint: "Grades 1-4",
+    modeIds: ["measurement", "money", "time", "areaPerimeter"],
+  },
+  {
+    id: "shapesData",
+    title: "Shapes & Data",
+    gradeHint: "Grades 3-4",
+    modeIds: ["linesShapes", "angles", "dataGraphs"],
+  },
+];
+
 export function getModeConfig(id) {
   const mode = modeRegistry[id];
   if (!mode) throw new Error(`Unknown mode: ${id}`);

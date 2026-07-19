@@ -14,6 +14,9 @@ import placeValueDiscs from "./placeValueDiscs";
 import factorsMultiples from "./factorsMultiples";
 import areaPerimeter from "./areaPerimeter";
 import money from "./money";
+import patterns from "./patterns";
+import measurement from "./measurement";
+import time from "./time";
 
 const ALL_MODES = [
   addition,
@@ -32,6 +35,9 @@ const ALL_MODES = [
   factorsMultiples,
   areaPerimeter,
   money,
+  patterns,
+  measurement,
+  time,
 ];
 
 export const modeRegistry = Object.fromEntries(ALL_MODES.map((m) => [m.id, m]));

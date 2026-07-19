@@ -100,6 +100,9 @@ describe("mode generation coverage", () => {
       "factorsMultiples",
       "areaPerimeter",
       "money",
+      "patterns",
+      "measurement",
+      "time",
     ]);
     const modesWithApplicationContext = MODE_IDS.filter((mode) => !bankless.has(mode));
     for (const mode of modesWithApplicationContext) {
@@ -279,6 +282,34 @@ describe("mode generation coverage", () => {
       expect(q.answerType).toBe("numberPad");
       expect(q.answer).toBeGreaterThanOrEqual(0);
     }
+  });
+
+  it("patterns/measurement/time modes produce valid answers", () => {
+    const patterns = getModeConfig("patterns");
+    for (let i = 0; i < 40; i++) {
+      const q = patterns.generate(8);
+      expect(q.answerType).toBe("fillBlank");
+      expect(Number.isInteger(q.answer)).toBe(true);
+    }
+    const measurement = getModeConfig("measurement");
+    for (let i = 0; i < 40; i++) {
+      const q = measurement.generate(8);
+      expect(q.answerType).toBe("numberPad");
+      expect(q.answer).toBeGreaterThan(0);
+    }
+    const time = getModeConfig("time");
+    const seen = new Set();
+    for (let i = 0; i < 60; i++) {
+      const q = time.generate(8);
+      seen.add(q.answerType);
+      expect(["clock", "numberPad"]).toContain(q.answerType);
+      if (q.answerType === "clock") {
+        expect(q.answer).toBe(q.display.minute);
+        expect(q.display.hour).toBeGreaterThanOrEqual(1);
+      }
+      expect(q.answer).toBeGreaterThanOrEqual(0);
+    }
+    expect(seen.has("clock")).toBe(true);
   });
 
   it("carries answerType from a bank item payload through to the question", () => {

@@ -96,6 +96,7 @@ describe("mode generation coverage", () => {
       "decimals",
       "numberBonds",
       "barModels",
+      "placeValueDiscs",
     ]);
     const modesWithApplicationContext = MODE_IDS.filter((mode) => !bankless.has(mode));
     for (const mode of modesWithApplicationContext) {
@@ -235,6 +236,19 @@ describe("mode generation coverage", () => {
     }
     expect(seenTypes.has("barCompare")).toBe(true);
     expect(seenTypes.has("barPartWhole")).toBe(true);
+  });
+
+  it("placeValueDiscs mode: disc columns sum to the answer", () => {
+    const pv = getModeConfig("placeValueDiscs");
+    for (let level = 1; level <= 10; level++) {
+      for (let i = 0; i < 20; i++) {
+        const q = pv.generate(level);
+        expect(q.answerType).toBe("placeValueDiscs");
+        const sum = q.display.cols.reduce((s, c) => s + c.place * c.count, 0);
+        expect(sum).toBe(q.answer);
+        expect(q.answer).toBeGreaterThan(0);
+      }
+    }
   });
 
   it("carries answerType from a bank item payload through to the question", () => {

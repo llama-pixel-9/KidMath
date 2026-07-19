@@ -10,6 +10,7 @@ import fractions from "./fractions";
 import decimals from "./decimals";
 import numberBonds from "./numberBonds";
 import barModels from "./barModels";
+import placeValueDiscs from "./placeValueDiscs";
 
 const ALL_MODES = [
   addition,
@@ -24,6 +25,7 @@ const ALL_MODES = [
   decimals,
   numberBonds,
   barModels,
+  placeValueDiscs,
 ];
 
 export const modeRegistry = Object.fromEntries(ALL_MODES.map((m) => [m.id, m]));

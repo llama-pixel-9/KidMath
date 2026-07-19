@@ -39,6 +39,9 @@ describe("mode generation coverage", () => {
     for (const mode of MODE_IDS) {
       for (let i = 0; i < 30; i++) {
         const q = generateQuestion(mode, 4);
+        // generateChoices only applies to multiple-choice questions; typed /
+        // symbol / fraction formats are judged by checkAnswer, not choices.
+        if (q.answerType && q.answerType !== "choice") continue;
         const choices = generateChoices(q.answer, 4, q);
         expect(choices.includes(q.answer)).toBe(true);
         expect(new Set(choices).size).toBe(choices.length);
@@ -85,7 +88,10 @@ describe("mode generation coverage", () => {
   });
 
   it("sources application items from the approved bank", () => {
-    const modesWithApplicationContext = MODE_IDS.filter((mode) => mode !== "placeValue");
+    // placeValue uses the BUILD type; fractions/decimals are new modes with no
+    // bank content yet.
+    const bankless = new Set(["placeValue", "fractions", "decimals"]);
+    const modesWithApplicationContext = MODE_IDS.filter((mode) => !bankless.has(mode));
     for (const mode of modesWithApplicationContext) {
       const q = generateQuestion(mode, 10, {
         itemFamily: "application",
@@ -147,6 +153,49 @@ describe("mode generation coverage", () => {
       const q = skip.generate(2);
       expect(q.answerType).toBeUndefined();
     }
+  });
+
+  it("fractions mode generates valid fraction/symbolSelect items with correct answers", () => {
+    const fractions = getModeConfig("fractions");
+    const seenTypes = new Set();
+    for (let level = 3; level <= 10; level++) {
+      for (let i = 0; i < 30; i++) {
+        const q = fractions.generate(level);
+        seenTypes.add(q.answerType);
+        expect(["fraction", "symbolSelect"]).toContain(q.answerType);
+        expect(q.display.promptText).toBeTruthy();
+        if (q.answerType === "symbolSelect") {
+          expect(["<", ">", "="]).toContain(q.answer);
+        } else {
+          expect(Number.isInteger(q.answer.num)).toBe(true);
+          expect(q.answer.den).toBeGreaterThan(0);
+        }
+      }
+    }
+    // Both formats show up across the subskills.
+    expect(seenTypes.has("fraction")).toBe(true);
+    expect(seenTypes.has("symbolSelect")).toBe(true);
+  });
+
+  it("decimals mode generates valid decimal/symbolSelect items", () => {
+    const decimals = getModeConfig("decimals");
+    const seenTypes = new Set();
+    for (let level = 3; level <= 10; level++) {
+      for (let i = 0; i < 30; i++) {
+        const q = decimals.generate(level);
+        seenTypes.add(q.answerType);
+        expect(["decimal", "symbolSelect"]).toContain(q.answerType);
+        expect(q.display.promptText).toBeTruthy();
+        if (q.answerType === "symbolSelect") {
+          expect(["<", ">", "="]).toContain(q.answer);
+        } else {
+          expect(typeof q.answer).toBe("number");
+          expect(q.answer).toBeGreaterThan(0);
+        }
+      }
+    }
+    expect(seenTypes.has("decimal")).toBe(true);
+    expect(seenTypes.has("symbolSelect")).toBe(true);
   });
 
   it("carries answerType from a bank item payload through to the question", () => {

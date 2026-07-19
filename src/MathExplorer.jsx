@@ -17,6 +17,8 @@ import {
   Volume2,
   VolumeX,
   Zap,
+  PieChart,
+  Percent,
 } from "lucide-react";
 import {
   createAdaptiveSession,
@@ -47,7 +49,7 @@ import {
   saveAllowWordProblems,
 } from "./userPreferences";
 
-const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers };
+const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent };
 
 function getModeIcon(modeId) {
   const config = getModeConfig(modeId);

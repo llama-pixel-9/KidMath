@@ -18,12 +18,18 @@ export function buildItemKey(question) {
     display.count ?? "",
     display.step ?? "",
   ].join("|");
+  // Fraction answers are {num,den} objects; serialize so distinct fractions get
+  // distinct keys (String({num,den}) would collapse them to "[object Object]").
+  const answerKey =
+    question.answer != null && typeof question.answer === "object"
+      ? JSON.stringify(question.answer)
+      : question.answer ?? "";
   return [
     question.mode || meta.modeId || "",
     question.op || "",
     question.a ?? "",
     question.b ?? "",
-    question.answer ?? "",
+    answerKey,
     meta.subskill || "",
     meta.blueprintId || "",
     displayKey,

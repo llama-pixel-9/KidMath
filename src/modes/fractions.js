@@ -6,7 +6,7 @@ import { createQuestionMetadata, ITEM_FAMILIES } from "./itemMetadata";
 // answer formats: simplify -> a fraction answer, compare -> a <,>,= symbol,
 // add-like-denominators -> a fraction answer.
 
-const SUBSKILLS = ["equivalence", "compareFractions", "addLikeDenominators"];
+const SUBSKILLS = ["equivalence", "compareFractions", "addLikeDenominators", "fractionOfSet"];
 
 function denPool(level) {
   if (level <= 3) return [2, 3, 4];
@@ -60,6 +60,23 @@ function buildBySubskill(subskill, level) {
     };
   }
 
+  if (subskill === "fractionOfSet") {
+    // "num/den of total" where total is a multiple of den so the answer is a
+    // whole number (Math in Focus fraction-of-a-set).
+    const den = pick(pool.filter((x) => x <= 6));
+    const num = randInt(1, den - 1);
+    const groups = randInt(2, level <= 3 ? 3 : 5);
+    const total = den * groups;
+    const answer = (total / den) * num;
+    return {
+      answer,
+      answerType: "fractionSet",
+      set: { total, num, den },
+      symbolic: `What is ${num}/${den} of ${total}?`,
+      contextual: `A basket has ${total} apples. ${num}/${den} are green. How many are green?`,
+    };
+  }
+
   if (subskill === "addLikeDenominators") {
     const d = pick(pool.filter((x) => x >= 3));
     const a = randInt(1, d - 2);
@@ -104,7 +121,7 @@ export default {
       ? context.targetSubskill
       : SUBSKILLS[randInt(0, SUBSKILLS.length - 1)];
 
-    const { answer, answerType, symbolic, contextual } = buildBySubskill(subskill, level);
+    const { answer, answerType, symbolic, contextual, set } = buildBySubskill(subskill, level);
     const promptText = itemFamily === ITEM_FAMILIES.APPLICATION ? contextual : symbolic;
 
     const question = {
@@ -112,7 +129,7 @@ export default {
       answer,
       answerType,
       level,
-      display: { promptText, representation: "symbolic" },
+      display: { promptText, representation: "symbolic", ...(set ? { set } : {}) },
     };
 
     question.metadata = createQuestionMetadata({

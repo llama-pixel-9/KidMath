@@ -162,26 +162,31 @@ describe("mode generation coverage", () => {
     }
   });
 
-  it("fractions mode generates valid fraction/symbolSelect items with correct answers", () => {
+  it("fractions mode generates valid fraction/symbolSelect/fractionSet items", () => {
     const fractions = getModeConfig("fractions");
     const seenTypes = new Set();
     for (let level = 3; level <= 10; level++) {
-      for (let i = 0; i < 30; i++) {
+      for (let i = 0; i < 40; i++) {
         const q = fractions.generate(level);
         seenTypes.add(q.answerType);
-        expect(["fraction", "symbolSelect"]).toContain(q.answerType);
+        expect(["fraction", "symbolSelect", "fractionSet"]).toContain(q.answerType);
         expect(q.display.promptText).toBeTruthy();
         if (q.answerType === "symbolSelect") {
           expect(["<", ">", "="]).toContain(q.answer);
+        } else if (q.answerType === "fractionSet") {
+          // num/den of total, answer a whole number
+          const { total, num, den } = q.display.set;
+          expect(q.answer).toBe((total / den) * num);
+          expect(Number.isInteger(q.answer)).toBe(true);
         } else {
           expect(Number.isInteger(q.answer.num)).toBe(true);
           expect(q.answer.den).toBeGreaterThan(0);
         }
       }
     }
-    // Both formats show up across the subskills.
     expect(seenTypes.has("fraction")).toBe(true);
     expect(seenTypes.has("symbolSelect")).toBe(true);
+    expect(seenTypes.has("fractionSet")).toBe(true);
   });
 
   it("decimals mode generates valid decimal/symbolSelect items", () => {

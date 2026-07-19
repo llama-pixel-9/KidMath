@@ -90,7 +90,13 @@ describe("mode generation coverage", () => {
   it("sources application items from the approved bank", () => {
     // placeValue uses the BUILD type; fractions/decimals/numberBonds are new
     // modes with no bank content yet.
-    const bankless = new Set(["placeValue", "fractions", "decimals", "numberBonds"]);
+    const bankless = new Set([
+      "placeValue",
+      "fractions",
+      "decimals",
+      "numberBonds",
+      "barModels",
+    ]);
     const modesWithApplicationContext = MODE_IDS.filter((mode) => !bankless.has(mode));
     for (const mode of modesWithApplicationContext) {
       const q = generateQuestion(mode, 10, {
@@ -209,6 +215,26 @@ describe("mode generation coverage", () => {
         expect(q.answer).toBeGreaterThan(0);
       }
     }
+  });
+
+  it("barModels mode generates part-whole and comparison bars with correct answers", () => {
+    const bars = getModeConfig("barModels");
+    const seenTypes = new Set();
+    for (let level = 1; level <= 10; level++) {
+      for (let i = 0; i < 20; i++) {
+        const q = bars.generate(level);
+        expect(q.answerType).toBe("barModel");
+        seenTypes.add(q.display.type);
+        if (q.display.type === "barCompare") {
+          expect(q.answer).toBe(q.display.a + q.display.diff);
+        } else {
+          expect(q.display.type).toBe("barPartWhole");
+          expect(q.answer).toBe(q.display.whole - q.display.part);
+        }
+      }
+    }
+    expect(seenTypes.has("barCompare")).toBe(true);
+    expect(seenTypes.has("barPartWhole")).toBe(true);
   });
 
   it("carries answerType from a bank item payload through to the question", () => {

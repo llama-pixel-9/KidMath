@@ -326,6 +326,7 @@ export function checkAnswer(question, submitted) {
     case "numberPad":
     case "fillBlank":
     case "numberBond":
+    case "barModel":
       return numericEquals(submitted, question.answer);
     // Decimal entry (tenths/hundredths): numeric with a small tolerance so
     // 0.5 == .50 and float noise never fails a correct answer.

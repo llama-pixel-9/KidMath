@@ -15,6 +15,7 @@ import {
   PieChart,
   Percent,
   GitFork,
+  BarChart3,
   Settings,
   MousePointerClick,
   Trophy,
@@ -24,7 +25,7 @@ import {
 import { useTheme } from "./useTheme";
 import { MODE_IDS, getModeConfig } from "./modes";
 
-const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork };
+const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork, BarChart3 };
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },

@@ -320,10 +320,12 @@ function numericEquals(submitted, answer, epsilon = 0) {
 // so existing multiple-choice behavior is unchanged.
 export function checkAnswer(question, submitted) {
   switch (questionAnswerType(question)) {
-    // Typed integer entry: a plain number pad, or a number pad bound to a blank
-    // in an equation (fillBlank). Both judge by numeric value.
+    // Typed integer entry: a plain number pad, a number pad bound to a blank in
+    // an equation (fillBlank), or the missing part of a number bond. All judge
+    // by numeric value.
     case "numberPad":
     case "fillBlank":
+    case "numberBond":
       return numericEquals(submitted, question.answer);
     // Decimal entry (tenths/hundredths): numeric with a small tolerance so
     // 0.5 == .50 and float noise never fails a correct answer.

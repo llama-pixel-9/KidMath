@@ -88,9 +88,9 @@ describe("mode generation coverage", () => {
   });
 
   it("sources application items from the approved bank", () => {
-    // placeValue uses the BUILD type; fractions/decimals are new modes with no
-    // bank content yet.
-    const bankless = new Set(["placeValue", "fractions", "decimals"]);
+    // placeValue uses the BUILD type; fractions/decimals/numberBonds are new
+    // modes with no bank content yet.
+    const bankless = new Set(["placeValue", "fractions", "decimals", "numberBonds"]);
     const modesWithApplicationContext = MODE_IDS.filter((mode) => !bankless.has(mode));
     for (const mode of modesWithApplicationContext) {
       const q = generateQuestion(mode, 10, {
@@ -196,6 +196,19 @@ describe("mode generation coverage", () => {
     }
     expect(seenTypes.has("decimal")).toBe(true);
     expect(seenTypes.has("symbolSelect")).toBe(true);
+  });
+
+  it("numberBonds mode generates part-whole items with the missing part as answer", () => {
+    const bonds = getModeConfig("numberBonds");
+    for (let level = 1; level <= 10; level++) {
+      for (let i = 0; i < 20; i++) {
+        const q = bonds.generate(level);
+        expect(q.answerType).toBe("numberBond");
+        expect(q.display.whole).toBeGreaterThan(q.display.part);
+        expect(q.answer).toBe(q.display.whole - q.display.part);
+        expect(q.answer).toBeGreaterThan(0);
+      }
+    }
   });
 
   it("carries answerType from a bank item payload through to the question", () => {

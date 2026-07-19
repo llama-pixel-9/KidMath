@@ -8,6 +8,7 @@ import skipCounting from "./skipCounting";
 import placeValue from "./placeValue";
 import fractions from "./fractions";
 import decimals from "./decimals";
+import numberBonds from "./numberBonds";
 
 const ALL_MODES = [
   addition,
@@ -20,6 +21,7 @@ const ALL_MODES = [
   placeValue,
   fractions,
   decimals,
+  numberBonds,
 ];
 
 export const modeRegistry = Object.fromEntries(ALL_MODES.map((m) => [m.id, m]));

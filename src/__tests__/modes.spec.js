@@ -124,6 +124,17 @@ describe("mode generation coverage", () => {
     }
   });
 
+  it("comparing generates symbolSelect questions whose answer is a comparison symbol", () => {
+    const comparing = getModeConfig("comparing");
+    for (let level = 1; level <= 10; level++) {
+      for (let i = 0; i < 20; i++) {
+        const q = comparing.generate(level);
+        expect(q.answerType).toBe("symbolSelect");
+        expect(["<", ">", "="]).toContain(q.answer);
+      }
+    }
+  });
+
   it("carries answerType from a bank item payload through to the question", () => {
     // Proves Grade-4 bank content can be typed-answer: the numberPad flag on an
     // item's question payload survives buildQuestionFromBankItem end to end.

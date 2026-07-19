@@ -168,6 +168,24 @@ answerTypes: renderer in the AnswerInput dispatcher, checkAnswer branch, unit
 tests. symbolSelect must reuse the comparing mode's existing pattern. Keep the
 shared submitAnswer path.
 ```
+**Progress (deepen modes):**
+- ✅ `multiplication` — levels 9–10 now 2-digit×1-digit → 2-digit×2-digit; multi-digit
+  products tagged `answerType: "numberPad"`.
+- ✅ `comparing` — emits `answerType: "symbolSelect"` (already reaches 4.NBT to 1000).
+- ⬜ division (needs compound quotient+remainder answer — see note), placeValue to
+  millions + rounding, counting/skipCounting.
+
+> **Key architectural finding.** `generateQuestion` consults the **bank** for
+> every family by default, so for **densely-banked** modes (addition, subtraction,
+> multiplication at ~50/cell) the bank serves the question and a generator-only
+> `answerType` change is pre-empted — visible Grade-4 *typed* content for those
+> modes must be **authored into the bank** (numberPad items). `buildQuestionFromBankItem`
+> already carries `answerType` through, so the bank is answerType-ready. For
+> **sparse** modes (comparing, counting, skipCounting, placeValue, division at
+> 3/cell) generator changes surface immediately via the fallback path. Net: the
+> engine/format plumbing is done; bulk Grade-4 content is bank-authoring work
+> (Phase 4 batch pipeline).
+
 **Prompt (deepen modes):**
 ```
 Extend these modes to real Grade 4 within the integer schema: division WITH

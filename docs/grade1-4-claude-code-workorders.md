@@ -215,6 +215,21 @@ Goal: `fraction` + `decimal` answer formats, generalize `question.answer` beyond
 integers, fraction-aware distractors; ship `fractions` (incl. fraction-of-a-set,
 equivalent, mixed↔improper) and `decimals` modes at the 3/cell floor.
 
+**Progress — format layer DONE (engine + UI):**
+- ✅ `src/fractions.js` leaf (`toFraction`/`reduceFraction`/`fractionsEqual`/`gcd`).
+- ✅ `checkAnswer` fraction branch (value equivalence, accepts `{num,den}` or `"a/b"`)
+  and decimal branch (numeric, 1e-9 tolerance); `question.answer` may be a
+  `{num,den}` object; `buildItemKey` serializes object answers.
+- ✅ UI: `NumberPad` decimal mode + new `<FractionInput>`; dispatched by
+  `answerType`; reachable now via `?input=decimal` / `?input=fraction`.
+- ⬜ **Next:** `fractions` / `decimals` *modes* (content generation). Integration
+  points to handle: (1) `itemQuality.validateQuestion` must accept fraction/decimal
+  answers (object answer, non-arithmetic `op`); (2) the modes.spec test "always
+  includes the correct answer in generated choices" should skip non-`choice`
+  answerTypes; (3) a new mode has an empty bank, so exclude it from the
+  "application sourced from bank" test (as `placeValue` is) or seed application
+  items; (4) fraction-aware distractors for any `choice`-type fraction items.
+
 **Prompt:**
 ```
 Read plan §3.3 and §4c. Generalize the item schema so `question.answer` can be a

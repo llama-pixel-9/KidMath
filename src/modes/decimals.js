@@ -85,7 +85,7 @@ export default {
   label: "Decimal Dash!",
   shortLabel: "Decimals",
   description: "Tenths, hundredths, and comparing decimals.",
-  icon: "Hash",
+  icon: "Percent",
   op: "dec",
   subskills: SUBSKILLS,
   families: Object.values(ITEM_FAMILIES),

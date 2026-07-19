@@ -93,7 +93,7 @@ export default {
   label: "Fraction Frenzy!",
   shortLabel: "Fractions",
   description: "Compare, simplify, and add fractions.",
-  icon: "Layers",
+  icon: "PieChart",
   op: "frac",
   subskills: SUBSKILLS,
   families: Object.values(ITEM_FAMILIES),

@@ -299,6 +299,30 @@ export function generateChoices(answer, count = 4, question = null) {
   return finalChoices;
 }
 
+// A question with no explicit answerType is a multiple-choice ("choice")
+// question — the historical default. Only "choice" questions carry `choices`.
+export function questionAnswerType(question) {
+  return question?.answerType ?? "choice";
+}
+
+// Type-aware correctness check. This is the single scoring authority: every
+// answer format is judged here, and recordAnswer routes through it. The default
+// "choice" branch is byte-for-byte the historical `submitted === question.answer`
+// so existing multiple-choice behavior is unchanged.
+export function checkAnswer(question, submitted) {
+  switch (questionAnswerType(question)) {
+    case "numberPad": {
+      if (submitted === null || submitted === undefined || submitted === "") return false;
+      const s = Number(submitted);
+      const a = Number(question.answer);
+      return Number.isFinite(s) && Number.isFinite(a) && s === a;
+    }
+    case "choice":
+    default:
+      return submitted === question.answer;
+  }
+}
+
 // --- Adaptive Session Engine ---
 
 export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE, options = {}) {
@@ -340,7 +364,9 @@ export function getNextQuestion(session) {
   if (dueReview && session.questionsSinceRetry >= RETRY_SPACING) {
     const retryQ = { ...dueReview, mode: dueReview.mode || session.mode };
     retryQ.itemKey = retryQ.itemKey || buildItemKey(retryQ);
-    retryQ.choices = generateChoices(retryQ.answer, 4, retryQ);
+    if (questionAnswerType(retryQ) === "choice") {
+      retryQ.choices = generateChoices(retryQ.answer, 4, retryQ);
+    }
     return { question: retryQ, isRetry: true };
   }
 
@@ -359,7 +385,9 @@ export function getNextQuestion(session) {
   });
   q.scheduler = { targetSubskill, itemFamily: scheduledFamily };
   q.nextFamilyCursor = nextCursor;
-  q.choices = generateChoices(q.answer, 4, q);
+  if (questionAnswerType(q) === "choice") {
+    q.choices = generateChoices(q.answer, 4, q);
+  }
   return { question: q, isRetry: false };
 }
 
@@ -398,7 +426,7 @@ function appendRecentBankItemId(recent, itemId) {
 }
 
 export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wasRetry) {
-  const correct = chosenAnswer === question.answer;
+  const correct = checkAnswer(question, chosenAnswer);
   const next = { ...session };
   next.skillMastery = updateSkillMastery(session, question, correct);
   next.analyticsEvents = logAnalyticsEvent(session, {

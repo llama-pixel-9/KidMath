@@ -129,6 +129,105 @@ function ConfettiBurst({ intensity = "normal" }) {
   );
 }
 
+// Dev/QA override: `?input=numberpad` forces the number-pad answer format on
+// every question so the new AnswerInput dispatch can be exercised on existing
+// content without changing the default experience. Phase 0.2 proof only.
+function getForcedInputType() {
+  if (typeof window === "undefined") return null;
+  try {
+    const params = new URLSearchParams(window.location.search || "");
+    if (params.get("input") === "numberpad") return "numberPad";
+  } catch {
+    // Ignore malformed URL params.
+  }
+  return null;
+}
+
+// Typed numeric answer control. It reports its value through the same
+// `onSubmit` -> submitAnswer -> checkAnswer path as a tapped bubble, so the
+// answer lock, telemetry, mistake bank, and correct/wrong feedback are
+// identical to multiple choice (plan §6b). Remounted per question (key) so the
+// entry resets.
+function NumberPad({ onSubmit, feedback, theme, lowMotionMode, lowEndDevice }) {
+  const [entry, setEntry] = useState("");
+  const locked = feedback === "correct" || feedback === "wrong";
+  const pressDigit = (d) => {
+    if (!locked) setEntry((e) => (e.length < 7 ? e + d : e));
+  };
+  const backspace = () => {
+    if (!locked) setEntry((e) => e.slice(0, -1));
+  };
+  const submit = () => {
+    if (!locked && entry !== "") onSubmit(Number(entry));
+  };
+
+  const displayTone =
+    feedback === "correct"
+      ? "ring-4 ring-green-400 text-green-600"
+      : feedback === "wrong"
+        ? "ring-4 ring-red-400 text-red-500"
+        : theme.textPrimary;
+
+  const keyClass = `relative min-h-[80px] rounded-2xl ${theme.cardBg} shadow-lg text-3xl font-extrabold ${theme.textPrimary} cursor-pointer select-none disabled:opacity-40`;
+
+  return (
+    <section className="w-full max-w-sm flex flex-col items-center gap-3" aria-label="Number entry">
+      <div
+        className={`relative w-full min-h-[72px] rounded-3xl ${theme.cardBg} shadow-inner flex items-center justify-center text-4xl font-extrabold ${displayTone}`}
+        aria-live="polite"
+      >
+        {entry === "" ? <span className={theme.textMuted}>—</span> : entry}
+        {feedback === "correct" && !lowMotionMode && (
+          <ConfettiBurst intensity={lowEndDevice ? "light" : "normal"} />
+        )}
+      </div>
+      <div className="grid grid-cols-3 gap-3 w-full">
+        {["1", "2", "3", "4", "5", "6", "7", "8", "9"].map((d) => (
+          <motion.button
+            key={d}
+            className={keyClass}
+            whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={() => pressDigit(d)}
+            disabled={locked}
+          >
+            {d}
+          </motion.button>
+        ))}
+        <motion.button
+          className={`${keyClass} text-2xl`}
+          whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={backspace}
+          disabled={locked}
+          aria-label="Delete"
+        >
+          ⌫
+        </motion.button>
+        <motion.button
+          className={keyClass}
+          whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={() => pressDigit("0")}
+          disabled={locked}
+        >
+          0
+        </motion.button>
+        <motion.button
+          className="relative min-h-[80px] rounded-2xl bg-gradient-to-br from-emerald-400 to-green-500 text-white text-2xl font-extrabold shadow-lg cursor-pointer select-none disabled:opacity-40"
+          whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={submit}
+          disabled={locked || entry === ""}
+          aria-label="Submit answer"
+        >
+          Go
+        </motion.button>
+      </div>
+    </section>
+  );
+}
+
 function CircularProgress({ current, total, level }) {
   const { theme } = useTheme();
   const radius = 38;
@@ -653,6 +752,7 @@ export default function MathExplorer({ initialMode }) {
   const { user, signInWithGoogle } = useAuth();
   const prefersReducedMotion = useReducedMotion();
   const [lowEndDevice] = useState(() => isLikelyLowEndDevice());
+  const [forcedInputType] = useState(() => getForcedInputType());
   const [mode, setMode] = useState(startMode);
   const [session, setSession] = useState(() =>
     createAdaptiveSession(startMode, undefined, {
@@ -815,7 +915,10 @@ export default function MathExplorer({ initialMode }) {
     playCompleteSound();
   }, [mode]);
 
-  const handleAnswer = (choice) => {
+  // The single answer-commit path. Every answer format (bubble tap, number pad,
+  // and future builders) routes its value through here so the answer lock,
+  // telemetry, mistake bank, and motion/sound feedback stay identical (plan §6b).
+  const submitAnswer = (value) => {
     diagnosticsRef.current.mark("answerAttempts");
     telemetryRef.current.inc("answerAttempts");
     if (feedback === "correct" || feedback === "wrong" || answerLockRef.current) {
@@ -829,7 +932,7 @@ export default function MathExplorer({ initialMode }) {
 
     try {
       const responseTimeMs = Date.now() - questionStartTime.current;
-      const result = recordAnswer(session, currentQ, choice, responseTimeMs, isRetry);
+      const result = recordAnswer(session, currentQ, value, responseTimeMs, isRetry);
       setSession(result.session);
 
       if (result.correct) {
@@ -858,7 +961,7 @@ export default function MathExplorer({ initialMode }) {
         }, 1200);
       } else {
         setFeedback("wrong");
-        setShakenChoice(choice);
+        setShakenChoice(value);
         setRevealAnswer(currentQ.answer);
         playWrongSound();
 
@@ -897,6 +1000,9 @@ export default function MathExplorer({ initialMode }) {
   const modeColor = theme.modeColors[mode];
   const ModeIcon = getModeIcon(mode);
   const lowMotionMode = Boolean(prefersReducedMotion);
+  // "choice" (multiple-choice bubbles) is the default; the dev flag or an item's
+  // own answerType selects a different input control via the dispatch below.
+  const answerType = forcedInputType || currentQ.answerType || "choice";
 
   return (
     <MotionConfig reducedMotion={lowMotionMode ? "always" : "never"}>
@@ -972,8 +1078,18 @@ export default function MathExplorer({ initialMode }) {
           </motion.section>
         </AnimatePresence>
 
+        {answerType === "numberPad" ? (
+          <NumberPad
+            key={questionKeyRef.current}
+            onSubmit={submitAnswer}
+            feedback={feedback}
+            theme={theme}
+            lowMotionMode={lowMotionMode}
+            lowEndDevice={lowEndDevice}
+          />
+        ) : (
         <section className="grid grid-cols-2 gap-3 w-full max-w-sm" aria-label="Answer choices">
-          {currentQ.choices.map((choice, i) => {
+          {(currentQ.choices || []).map((choice, i) => {
             const isCorrectChoice = feedback === "correct" && choice === currentQ.answer;
             const isRevealedCorrect = feedback === "wrong" && choice === revealAnswer;
             const isWrong = shakenChoice === choice;
@@ -995,7 +1111,7 @@ export default function MathExplorer({ initialMode }) {
                         : {}
                 }
                 transition={isWrong ? { duration: lowEndDevice ? 0.22 : 0.4 } : { duration: 0.3 }}
-                onClick={() => handleAnswer(choice)}
+                onClick={() => submitAnswer(choice)}
                 disabled={feedback === "correct" || feedback === "wrong"}
               >
                 {choice}
@@ -1006,6 +1122,7 @@ export default function MathExplorer({ initialMode }) {
             );
           })}
         </section>
+        )}
 
         {feedback === "wrong" && revealAnswer !== null && (
           <motion.p

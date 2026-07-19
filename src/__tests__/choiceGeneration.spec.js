@@ -27,6 +27,10 @@ describe("choice generation cannot hang", () => {
             generateQuestion(mode, level)
           );
           expect(elapsed).toBeLessThan(HARD_TIMEOUT_MS);
+          // Typed / symbol / fraction formats are not multiple-choice; the
+          // engine never calls generateChoices for them (checkAnswer judges
+          // them), so skip the choice assertions.
+          if (question.answerType && question.answerType !== "choice") continue;
           const choicesRun = runWithTimeBudget(() =>
             generateChoices(question.answer, 4, question)
           );

@@ -550,7 +550,9 @@ export function generateWorksheetSet(mode, level, size = SESSION_SIZE, options =
   };
   for (let i = 0; i < size; i++) {
     const q = generateQuestion(mode, level, context);
-    q.choices = generateChoices(q.answer, 4, q);
+    if (questionAnswerType(q) === "choice") {
+      q.choices = generateChoices(q.answer, 4, q);
+    }
     questions.push(q);
   }
   return questions;

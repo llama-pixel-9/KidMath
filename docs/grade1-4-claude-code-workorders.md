@@ -168,12 +168,14 @@ answerTypes: renderer in the AnswerInput dispatcher, checkAnswer branch, unit
 tests. symbolSelect must reuse the comparing mode's existing pattern. Keep the
 shared submitAnswer path.
 ```
-**Progress (deepen modes):**
+**Progress (deepen modes):** all three cheap formats are now live in a mode.
 - ✅ `multiplication` — levels 9–10 now 2-digit×1-digit → 2-digit×2-digit; multi-digit
   products tagged `answerType: "numberPad"`.
 - ✅ `comparing` — emits `answerType: "symbolSelect"` (already reaches 4.NBT to 1000).
+- ✅ `skipCounting` — Grade 2+ (level ≥ 4) types the next term (`fillBlank`); K-1 keeps
+  bubbles.
 - ⬜ division (needs compound quotient+remainder answer — see note), placeValue to
-  millions + rounding, counting/skipCounting.
+  millions + rounding, counting.
 
 > **Key architectural finding.** `generateQuestion` consults the **bank** for
 > every family by default, so for **densely-banked** modes (addition, subtraction,

@@ -66,6 +66,11 @@ export default {
       display: { sequence, step: cfg.step },
     };
 
+    // Grade 2+ types the next term (fillBlank); K-1 keeps tap-friendly bubbles.
+    if (level >= 4) {
+      question.answerType = "fillBlank";
+    }
+
     if (itemFamily === ITEM_FAMILIES.APPLICATION) {
       question.display.promptText = `A pattern grows by ${cfg.step}. What comes next?`;
     }

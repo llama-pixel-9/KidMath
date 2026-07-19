@@ -135,6 +135,20 @@ describe("mode generation coverage", () => {
     }
   });
 
+  it("skipCounting uses fillBlank at Grade 2+ and stays multiple-choice at K-1", () => {
+    const skip = getModeConfig("skipCounting");
+    for (let i = 0; i < 20; i++) {
+      const q = skip.generate(6);
+      expect(q.answerType).toBe("fillBlank");
+      // Answer is the next term after the shown 3-term sequence.
+      expect(q.answer).toBe(q.display.sequence[2] + q.display.step);
+    }
+    for (let i = 0; i < 20; i++) {
+      const q = skip.generate(2);
+      expect(q.answerType).toBeUndefined();
+    }
+  });
+
   it("carries answerType from a bank item payload through to the question", () => {
     // Proves Grade-4 bank content can be typed-answer: the numberPad flag on an
     // item's question payload survives buildQuestionFromBankItem end to end.

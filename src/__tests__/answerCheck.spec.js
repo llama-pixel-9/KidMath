@@ -53,3 +53,29 @@ describe("checkAnswer — numberPad (typed numeric)", () => {
     expect(checkAnswer({ answer: 40, answerType: "numberPad" }, "40")).toBe(true);
   });
 });
+
+describe("checkAnswer — fillBlank (numeric, same rules as numberPad)", () => {
+  const q = { answer: 7, answerType: "fillBlank" }; // e.g. 6 x ? = 42 style blank
+
+  it("accepts the correct number in the blank", () => {
+    expect(checkAnswer(q, 7)).toBe(true);
+    expect(checkAnswer(q, "7")).toBe(true);
+  });
+
+  it("rejects a wrong or empty blank", () => {
+    expect(checkAnswer(q, 8)).toBe(false);
+    expect(checkAnswer(q, "")).toBe(false);
+    expect(checkAnswer(q, null)).toBe(false);
+  });
+});
+
+describe("checkAnswer — symbolSelect (<, >, =)", () => {
+  it("judges by strict symbol equality and skips choice generation", () => {
+    expect(questionAnswerType({ answer: "<", answerType: "symbolSelect" })).toBe("symbolSelect");
+    expect(checkAnswer({ answer: "<", answerType: "symbolSelect" }, "<")).toBe(true);
+    expect(checkAnswer({ answer: ">", answerType: "symbolSelect" }, ">")).toBe(true);
+    expect(checkAnswer({ answer: "=", answerType: "symbolSelect" }, "=")).toBe(true);
+    expect(checkAnswer({ answer: "<", answerType: "symbolSelect" }, ">")).toBe(false);
+    expect(checkAnswer({ answer: "=", answerType: "symbolSelect" }, "<")).toBe(false);
+  });
+});

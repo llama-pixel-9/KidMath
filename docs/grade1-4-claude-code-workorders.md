@@ -62,7 +62,13 @@ Shipped on `feature/grade1-4-phase0`:
 - `src/__tests__/gradeBands.spec.js` (wired into `npm test`). 142 tests pass,
   lint clean, bank report PASS.
 
-### 0.2 — `answerType` dispatch engine + `numberPad`
+### 0.2 — `answerType` dispatch engine + `numberPad` ✅ DONE
+
+Shipped: type-aware `checkAnswer`/`questionAnswerType` in `mathEngine.js` (the
+single scoring authority, used by `recordAnswer`; `"choice"` byte-identical);
+non-choice questions skip `generateChoices`; MathExplorer's shared
+`submitAnswer(value)` path + `<NumberPad>` dispatched by `answerType`;
+`?input=numberpad` dev flag; `answerCheck.spec.js`.
 
 **Prompt:**
 ```
@@ -93,7 +99,11 @@ render smoke test for the number pad. Keep "choice" regression-identical.
 **Acceptance:** the three gates + a manual check that the default game is visually
 and behaviorally unchanged.
 
-### 0.3 — Supabase migration: `level_band` → G1–G4-ready
+### 0.3 — Supabase migration: `level_band` → G1–G4-ready ✅ DONE
+
+Shipped: `supabase/migrations/20260719120000_add_grade_band.sql` — additive
+generated `grade_band` (G1–G4) column + index, alongside the untouched
+`level_band`.
 
 **Prompt:**
 ```
@@ -110,7 +120,15 @@ the matching index, so nothing that reads level_band regresses. Do not hand-edit
 **Acceptance:** the three gates (migration is additive; no app code depends on the
 new column yet).
 
-### 0.4 — Split the item-bank monolith
+### 0.4 — Split the item-bank monolith ✅ DONE
+
+Shipped: `applicationItems.js` is now a 27-line aggregator over per-mode files in
+`src/itemBank/items/`; `REVIEW_STATUS` extracted to leaf `reviewStatus.js`;
+shared writer `scripts/lib/itemBankFiles.js` used by `npm run bank:split` and
+`bank:export`. `bank:report` byte-identical.
+
+> **Phase 0 exit: COMPLETE.** All four steps merged on
+> `feature/grade1-4-phase0`. Next: Phase 1.
 
 **Prompt:**
 ```
@@ -138,7 +156,11 @@ Goal: `symbolSelect` + `fillBlank`; Grade-4 depth in existing modes
 factors/multiples); MiF bar-model & number-bond word problems shipped as
 typed-answer items with a **static pictorial hint** (plan §4c).
 
-**Prompt (formats):**
+**Prompt (formats):** ✅ DONE — `symbolSelect` (`<SymbolSelect>`) and `fillBlank`
+(reuses `<NumberPad>`) shipped: `checkAnswer` branches (fillBlank = numeric,
+symbolSelect = strict equality), dispatch in MathExplorer, tests in
+`answerCheck.spec.js`. Both route through the shared `submitAnswer` path. The
+mode-deepening and MiF static-hint prompts below are still open.
 ```
 Read plan §3.2 and §6b and the Phase 0 answerType engine. Add `symbolSelect`
 (<, >, =) and `fillBlank` (numberPad bound to a slot in an equation) as new

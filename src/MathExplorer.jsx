@@ -28,6 +28,9 @@ import {
   Spline,
   Scale,
   Clock,
+  ChartColumn,
+  Triangle,
+  Shapes,
 } from "lucide-react";
 import {
   createAdaptiveSession,
@@ -58,7 +61,7 @@ import {
   saveAllowWordProblems,
 } from "./userPreferences";
 
-const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork, BarChart3, CircleDot, Sigma, Ruler, Coins, Spline, Scale, Clock };
+const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork, BarChart3, CircleDot, Sigma, Ruler, Coins, Spline, Scale, Clock, ChartColumn, Triangle, Shapes };
 
 function getModeIcon(modeId) {
   const config = getModeConfig(modeId);
@@ -158,6 +161,8 @@ function getForcedInputType() {
       pvdiscs: "placeValueDiscs",
       fractionset: "fractionSet",
       clock: "clock",
+      bargraph: "barGraph",
+      angle: "angle",
     };
     return map[params.get("input")] || null;
   } catch {
@@ -864,6 +869,140 @@ function PlaceValueDiscs({ onSubmit, feedback, theme, lowMotionMode, lowEndDevic
           Go
         </motion.button>
       </div>
+    </section>
+  );
+}
+
+// Shared digit pad used by the read-a-figure builders below (bar graph, angle).
+function FigureDigitPad({ entry, onDigit, onBackspace, onSubmit, theme, lowMotionMode, locked }) {
+  const keyClass = `relative min-h-[60px] rounded-2xl ${theme.cardBg} shadow-lg text-2xl font-extrabold ${theme.textPrimary} cursor-pointer select-none disabled:opacity-40`;
+  return (
+    <div className="grid grid-cols-3 gap-2 w-full">
+      {["1", "2", "3", "4", "5", "6", "7", "8", "9"].map((d) => (
+        <motion.button
+          key={d}
+          className={keyClass}
+          whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={() => onDigit(d)}
+          disabled={locked}
+        >
+          {d}
+        </motion.button>
+      ))}
+      <motion.button
+        className={`${keyClass} text-xl`}
+        whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
+        whileTap={{ scale: 0.9 }}
+        onClick={onBackspace}
+        disabled={locked}
+        aria-label="Delete"
+      >
+        ⌫
+      </motion.button>
+      <motion.button
+        className={keyClass}
+        whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
+        whileTap={{ scale: 0.9 }}
+        onClick={() => onDigit("0")}
+        disabled={locked}
+      >
+        0
+      </motion.button>
+      <motion.button
+        className="relative min-h-[60px] rounded-2xl bg-gradient-to-br from-emerald-400 to-green-500 text-white text-xl font-extrabold shadow-lg cursor-pointer select-none disabled:opacity-40"
+        whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
+        whileTap={{ scale: 0.9 }}
+        onClick={onSubmit}
+        disabled={locked || entry === ""}
+        aria-label="Submit answer"
+      >
+        Go
+      </motion.button>
+    </div>
+  );
+}
+
+// Bar-graph reader: draws a scaled bar chart; the child types a value read from
+// it. Numeric answer through submitAnswer.
+function DataGraph({ onSubmit, feedback, theme, lowMotionMode, lowEndDevice, bars }) {
+  const [entry, setEntry] = useState("");
+  const locked = feedback === "correct" || feedback === "wrong";
+  const max = Math.max(1, ...(bars || []).map((b) => b.value));
+  const tone = feedback === "correct" ? "text-green-600" : feedback === "wrong" ? "text-red-500" : theme.textPrimary;
+  return (
+    <section className="w-full max-w-sm flex flex-col items-center gap-3" aria-label="Bar graph">
+      <div className="relative w-full flex items-end justify-center gap-3 h-40 px-2">
+        {(bars || []).map((b) => (
+          <div key={b.label} className="flex flex-col items-center justify-end gap-1 flex-1">
+            <span className={`text-xs font-bold ${theme.textSecondary}`}>{b.value}</span>
+            <div
+              className="w-full max-w-[40px] rounded-t-md bg-sky-400"
+              style={{ height: `${(b.value / max) * 110 + 6}px` }}
+            />
+            <span className={`text-[10px] font-bold ${theme.textSecondary} text-center`}>{b.label}</span>
+          </div>
+        ))}
+        {feedback === "correct" && !lowMotionMode && (
+          <ConfettiBurst intensity={lowEndDevice ? "light" : "normal"} />
+        )}
+      </div>
+      <div className={`min-h-[36px] text-3xl font-extrabold ${tone}`} aria-live="polite">
+        {entry === "" ? <span className={theme.textMuted}>—</span> : entry}
+      </div>
+      <FigureDigitPad
+        entry={entry}
+        onDigit={(d) => !locked && setEntry((e) => (e.length < 4 ? e + d : e))}
+        onBackspace={() => !locked && setEntry((e) => e.slice(0, -1))}
+        onSubmit={() => !locked && entry !== "" && onSubmit(Number(entry))}
+        theme={theme}
+        lowMotionMode={lowMotionMode}
+        locked={locked}
+      />
+    </section>
+  );
+}
+
+// Angle figure: two rays from a vertex at the given degree measure. The child
+// types the measure. Numeric answer through submitAnswer.
+function AngleFigure({ onSubmit, feedback, theme, lowMotionMode, lowEndDevice, degrees }) {
+  const [entry, setEntry] = useState("");
+  const locked = feedback === "correct" || feedback === "wrong";
+  const cx = 20;
+  const cy = 120;
+  const len = 120;
+  const rad = ((degrees || 0) * Math.PI) / 180;
+  const end = { x: cx + len * Math.cos(rad), y: cy - len * Math.sin(rad) };
+  const tone = feedback === "correct" ? "text-green-600" : feedback === "wrong" ? "text-red-500" : theme.textPrimary;
+  return (
+    <section className="w-full max-w-sm flex flex-col items-center gap-3" aria-label="Angle figure">
+      <div className="relative">
+        <svg width="160" height="140" viewBox="0 0 160 140" role="img" aria-label={`angle of ${degrees} degrees`}>
+          <line x1={cx} y1={cy} x2={cx + len} y2={cy} className="stroke-slate-600" strokeWidth="4" strokeLinecap="round" />
+          <line x1={cx} y1={cy} x2={end.x} y2={end.y} className="stroke-sky-500" strokeWidth="4" strokeLinecap="round" />
+          <path
+            d={`M ${cx + 26} ${cy} A 26 26 0 0 0 ${cx + 26 * Math.cos(rad)} ${cy - 26 * Math.sin(rad)}`}
+            className="fill-none stroke-amber-400"
+            strokeWidth="3"
+          />
+          <circle cx={cx} cy={cy} r="4" className="fill-slate-600" />
+        </svg>
+        {feedback === "correct" && !lowMotionMode && (
+          <ConfettiBurst intensity={lowEndDevice ? "light" : "normal"} />
+        )}
+      </div>
+      <div className={`min-h-[36px] text-3xl font-extrabold ${tone}`} aria-live="polite">
+        {entry === "" ? <span className={theme.textMuted}>—</span> : `${entry}°`}
+      </div>
+      <FigureDigitPad
+        entry={entry}
+        onDigit={(d) => !locked && setEntry((e) => (e.length < 3 ? e + d : e))}
+        onBackspace={() => !locked && setEntry((e) => e.slice(0, -1))}
+        onSubmit={() => !locked && entry !== "" && onSubmit(Number(entry))}
+        theme={theme}
+        lowMotionMode={lowMotionMode}
+        locked={locked}
+      />
     </section>
   );
 }
@@ -1779,6 +1918,26 @@ export default function MathExplorer({ initialMode }) {
             theme={theme}
             lowMotionMode={lowMotionMode}
             lowEndDevice={lowEndDevice}
+          />
+        ) : answerType === "barGraph" ? (
+          <DataGraph
+            key={questionKeyRef.current}
+            onSubmit={submitAnswer}
+            feedback={feedback}
+            theme={theme}
+            lowMotionMode={lowMotionMode}
+            lowEndDevice={lowEndDevice}
+            bars={currentQ.display?.bars}
+          />
+        ) : answerType === "angle" ? (
+          <AngleFigure
+            key={questionKeyRef.current}
+            onSubmit={submitAnswer}
+            feedback={feedback}
+            theme={theme}
+            lowMotionMode={lowMotionMode}
+            lowEndDevice={lowEndDevice}
+            degrees={currentQ.display?.degrees}
           />
         ) : answerType === "clock" ? (
           <AnalogClock

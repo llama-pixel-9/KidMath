@@ -103,6 +103,9 @@ describe("mode generation coverage", () => {
       "patterns",
       "measurement",
       "time",
+      "dataGraphs",
+      "angles",
+      "linesShapes",
     ]);
     const modesWithApplicationContext = MODE_IDS.filter((mode) => !bankless.has(mode));
     for (const mode of modesWithApplicationContext) {
@@ -310,6 +313,32 @@ describe("mode generation coverage", () => {
       expect(q.answer).toBeGreaterThanOrEqual(0);
     }
     expect(seen.has("clock")).toBe(true);
+  });
+
+  it("dataGraphs/angles/linesShapes modes produce valid answers", () => {
+    const dg = getModeConfig("dataGraphs");
+    for (let i = 0; i < 40; i++) {
+      const q = dg.generate(8);
+      expect(q.answerType).toBe("barGraph");
+      expect(Array.isArray(q.display.bars)).toBe(true);
+      expect(q.answer).toBeGreaterThanOrEqual(0);
+    }
+    const ang = getModeConfig("angles");
+    const seen = new Set();
+    for (let i = 0; i < 60; i++) {
+      const q = ang.generate(8);
+      seen.add(q.answerType);
+      expect(["angle", "numberPad"]).toContain(q.answerType);
+      if (q.answerType === "angle") expect(q.answer).toBe(q.display.degrees);
+      expect(q.answer).toBeGreaterThan(0);
+    }
+    expect(seen.has("angle")).toBe(true);
+    const ls = getModeConfig("linesShapes");
+    for (let i = 0; i < 40; i++) {
+      const q = ls.generate(8);
+      expect(q.answerType).toBe("numberPad");
+      expect(q.answer).toBeGreaterThanOrEqual(2);
+    }
   });
 
   it("carries answerType from a bank item payload through to the question", () => {

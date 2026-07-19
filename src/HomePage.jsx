@@ -23,6 +23,9 @@ import {
   Spline,
   Scale,
   Clock,
+  ChartColumn,
+  Triangle,
+  Shapes,
   Settings,
   MousePointerClick,
   Trophy,
@@ -32,7 +35,7 @@ import {
 import { useTheme } from "./useTheme";
 import { MODE_IDS, getModeConfig } from "./modes";
 
-const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork, BarChart3, CircleDot, Sigma, Ruler, Coins, Spline, Scale, Clock };
+const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork, BarChart3, CircleDot, Sigma, Ruler, Coins, Spline, Scale, Clock, ChartColumn, Triangle, Shapes };
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },

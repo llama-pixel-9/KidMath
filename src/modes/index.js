@@ -17,6 +17,9 @@ import money from "./money";
 import patterns from "./patterns";
 import measurement from "./measurement";
 import time from "./time";
+import dataGraphs from "./dataGraphs";
+import angles from "./angles";
+import linesShapes from "./linesShapes";
 
 const ALL_MODES = [
   addition,
@@ -38,6 +41,9 @@ const ALL_MODES = [
   patterns,
   measurement,
   time,
+  dataGraphs,
+  angles,
+  linesShapes,
 ];
 
 export const modeRegistry = Object.fromEntries(ALL_MODES.map((m) => [m.id, m]));

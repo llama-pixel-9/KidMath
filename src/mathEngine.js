@@ -330,6 +330,8 @@ export function checkAnswer(question, submitted) {
     case "placeValueDiscs":
     case "fractionSet":
     case "clock":
+    case "barGraph":
+    case "angle":
       return numericEquals(submitted, question.answer);
     // Decimal entry (tenths/hundredths): numeric with a small tolerance so
     // 0.5 == .50 and float noise never fails a correct answer.

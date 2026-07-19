@@ -261,6 +261,22 @@ Goal: turn the Phase-1/2 static hints into live `buildModel` renderers, in
 MiF-priority order, and ship the remaining modes. **Use Opus 4.8 for the builder
 UI work.**
 
+**Progress:** the three core Math in Focus manipulatives are live as sparse
+(bankless) modes, each with an interactive control through the shared
+`submitAnswer` path (numeric answers via `checkAnswer`):
+- ✅ **number bonds** — `numberBonds` mode + `<NumberBond>` (cherry diagram).
+- ✅ **bar models** — `barModels` mode + `<BarModel>` (to-scale part-whole &
+  comparison bars).
+- ✅ **place-value discs** — `placeValueDiscs` mode + `<PlaceValueDiscs>` (disc
+  chart, incl. a regroup variant).
+- ⬜ Remaining builders: `fractionSet`, `buildNumberLine`, `clock`, `angle`,
+  `array`, `tenFrame`, `matchSort`; remaining modes: `measurement`, `angles`,
+  `linesShapes`, `areaPerimeter`, `dataGraphs`, `time`, `money`, `patterns`,
+  `factorsMultiples`.
+- Note: these builders currently take numeric answers with a richer visual
+  *input*; a future step can make them fully manipulable (drag discs, drag the
+  bar) — the payload spec already carries the model data.
+
 Run as several small sessions, one builder or mode cluster each:
 ```
 Read plan §3.2, §4c, and §6b. Implement the `buildModel:<name>` interactive

@@ -11,6 +11,9 @@ import decimals from "./decimals";
 import numberBonds from "./numberBonds";
 import barModels from "./barModels";
 import placeValueDiscs from "./placeValueDiscs";
+import factorsMultiples from "./factorsMultiples";
+import areaPerimeter from "./areaPerimeter";
+import money from "./money";
 
 const ALL_MODES = [
   addition,
@@ -26,6 +29,9 @@ const ALL_MODES = [
   numberBonds,
   barModels,
   placeValueDiscs,
+  factorsMultiples,
+  areaPerimeter,
+  money,
 ];
 
 export const modeRegistry = Object.fromEntries(ALL_MODES.map((m) => [m.id, m]));

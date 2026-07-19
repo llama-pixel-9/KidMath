@@ -97,6 +97,9 @@ describe("mode generation coverage", () => {
       "numberBonds",
       "barModels",
       "placeValueDiscs",
+      "factorsMultiples",
+      "areaPerimeter",
+      "money",
     ]);
     const modesWithApplicationContext = MODE_IDS.filter((mode) => !bankless.has(mode));
     for (const mode of modesWithApplicationContext) {
@@ -253,6 +256,28 @@ describe("mode generation coverage", () => {
         expect(sum).toBe(q.answer);
         expect(q.answer).toBeGreaterThan(0);
       }
+    }
+  });
+
+  it("practical Grade 3-4 modes (factors/area/money) produce correct numeric answers", () => {
+    const fm = getModeConfig("factorsMultiples");
+    for (let i = 0; i < 40; i++) {
+      const q = fm.generate(8);
+      expect(q.answerType).toBe("numberPad");
+      expect(Number.isInteger(q.answer)).toBe(true);
+      expect(q.answer).toBeGreaterThan(0);
+    }
+    const ap = getModeConfig("areaPerimeter");
+    for (let i = 0; i < 40; i++) {
+      const q = ap.generate(8);
+      const { width: w, height: h } = q.display;
+      expect([w * h, 2 * (w + h)]).toContain(q.answer);
+    }
+    const money = getModeConfig("money");
+    for (let i = 0; i < 40; i++) {
+      const q = money.generate(8);
+      expect(q.answerType).toBe("numberPad");
+      expect(q.answer).toBeGreaterThanOrEqual(0);
     }
   });
 

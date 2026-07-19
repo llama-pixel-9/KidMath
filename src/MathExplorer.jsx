@@ -22,6 +22,9 @@ import {
   GitFork,
   BarChart3,
   CircleDot,
+  Sigma,
+  Ruler,
+  Coins,
 } from "lucide-react";
 import {
   createAdaptiveSession,
@@ -52,7 +55,7 @@ import {
   saveAllowWordProblems,
 } from "./userPreferences";
 
-const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork, BarChart3, CircleDot };
+const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork, BarChart3, CircleDot, Sigma, Ruler, Coins };
 
 function getModeIcon(modeId) {
   const config = getModeConfig(modeId);

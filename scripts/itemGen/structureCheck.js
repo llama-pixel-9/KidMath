@@ -143,11 +143,14 @@ export function checkStructure(item) {
   // Universal: the arithmetic in the prose must support the stated answer.
   const nums = numbersIn(text);
   const { a, b, answer } = item.question || {};
-  if (typeof answer === "number" && nums.length >= 2) {
-    const plausible =
-      nums.includes(answer) === false || // answer usually should NOT be stated
-      structureType.endsWith("ResultUnknown");
-    if (!plausible) {
+
+  // Only meaningful for prose. A symbolic prompt with an explicit unknown
+  // marker (`4 + ? = 8`) cannot leak its answer — the marker is the slot — and
+  // the answer often equals a given by arithmetic coincidence (doubles).
+  const hasUnknownMarker = /[?_]/.test(text);
+  if (typeof answer === "number" && !hasUnknownMarker && nums.includes(answer)) {
+    const givens = [a, b].filter((n) => typeof n === "number");
+    if (!givens.includes(answer) && !structureType.endsWith("ResultUnknown")) {
       problems.push("the answer is stated in the prompt");
     }
   }
@@ -155,7 +158,11 @@ export function checkStructure(item) {
   // would skip the worst case — a prompt stating no numbers at all, which is
   // unanswerable and was previously accepted.
   if (typeof a === "number" && typeof b === "number") {
-    const missing = [a, b].filter((n) => !nums.includes(n));
+    // A "missing" number that equals the answer is not a missing given — the
+    // older bank sometimes stores the answer in `b`. The item is answerable;
+    // only its field convention differs, so that must not read as a content
+    // failure. It flagged 53 perfectly good items before this exclusion.
+    const missing = [a, b].filter((n) => !nums.includes(n) && n !== answer);
     if (missing.length) {
       problems.push(`payload numbers ${missing.join(", ")} do not appear in the prompt`);
     }

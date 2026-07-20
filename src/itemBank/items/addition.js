@@ -7962,7 +7962,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":6,"op":"+","answer":10,"display":{"promptText":"Number pair that makes 10: 4 and what?"}},
+    question: {"a":4,"b":null,"op":"+","answer":6,"display":{"promptText":"Number pair that makes 10: 4 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-038",
@@ -7972,7 +7972,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":7,"op":"+","answer":10,"display":{"promptText":"Number pair that makes 10: 3 and what?"}},
+    question: {"a":3,"b":null,"op":"+","answer":7,"display":{"promptText":"Number pair that makes 10: 3 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-039",
@@ -7982,7 +7982,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":9,"op":"+","answer":10,"display":{"promptText":"Number pair that makes 10: 1 and what?"}},
+    question: {"a":1,"b":null,"op":"+","answer":9,"display":{"promptText":"Number pair that makes 10: 1 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-040",
@@ -8062,7 +8062,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":2,"op":"+","answer":9,"display":{"promptText":"Number pair that makes 9: 7 and what?"}},
+    question: {"a":7,"b":null,"op":"+","answer":2,"display":{"promptText":"Number pair that makes 9: 7 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-048",
@@ -8072,7 +8072,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":3,"op":"+","answer":8,"display":{"promptText":"Number pair that makes 8: 5 and what?"}},
+    question: {"a":5,"b":null,"op":"+","answer":3,"display":{"promptText":"Number pair that makes 8: 5 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-037",
@@ -8082,7 +8082,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":7,"op":"+","answer":15,"display":{"promptText":"Number pair that makes 15: 8 and what?"}},
+    question: {"a":8,"b":null,"op":"+","answer":7,"display":{"promptText":"Number pair that makes 15: 8 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-038",
@@ -8092,7 +8092,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":6,"op":"+","answer":15,"display":{"promptText":"Number pair that makes 15: 9 and what?"}},
+    question: {"a":9,"b":null,"op":"+","answer":6,"display":{"promptText":"Number pair that makes 15: 9 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-039",
@@ -8102,7 +8102,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":5,"op":"+","answer":12,"display":{"promptText":"Number pair that makes 12: 7 and what?"}},
+    question: {"a":7,"b":null,"op":"+","answer":5,"display":{"promptText":"Number pair that makes 12: 7 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-040",
@@ -8202,7 +8202,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":45,"b":55,"op":"+","answer":100,"display":{"promptText":"Number pair that makes 100: 45 and what?"}},
+    question: {"a":45,"b":null,"op":"+","answer":55,"display":{"promptText":"Number pair that makes 100: 45 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-038",
@@ -8212,7 +8212,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":35,"b":65,"op":"+","answer":100,"display":{"promptText":"Number pair that makes 100: 35 and what?"}},
+    question: {"a":35,"b":null,"op":"+","answer":65,"display":{"promptText":"Number pair that makes 100: 35 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-039",
@@ -8222,7 +8222,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":75,"op":"+","answer":100,"display":{"promptText":"Number pair that makes 100: 25 and what?"}},
+    question: {"a":25,"b":null,"op":"+","answer":75,"display":{"promptText":"Number pair that makes 100: 25 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-040",
@@ -8232,7 +8232,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":85,"op":"+","answer":100,"display":{"promptText":"Number pair that makes 100: 15 and what?"}},
+    question: {"a":15,"b":null,"op":"+","answer":85,"display":{"promptText":"Number pair that makes 100: 15 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-041",
@@ -8302,7 +8302,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":375,"b":125,"op":"+","answer":500,"display":{"promptText":"Number pair that makes 500: 375 and what?"}},
+    question: {"a":375,"b":null,"op":"+","answer":125,"display":{"promptText":"Number pair that makes 500: 375 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-048",
@@ -8312,7 +8312,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":425,"b":75,"op":"+","answer":500,"display":{"promptText":"Number pair that makes 500: 425 and what?"}},
+    question: {"a":425,"b":null,"op":"+","answer":75,"display":{"promptText":"Number pair that makes 500: 425 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-037",
@@ -8322,7 +8322,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"+","answer":6,"display":{"promptText":"Number pair that makes 6: 4 and what?"}},
+    question: {"a":4,"b":null,"op":"+","answer":2,"display":{"promptText":"Number pair that makes 6: 4 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-038",
@@ -8332,7 +8332,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":4,"op":"+","answer":7,"display":{"promptText":"Number pair that makes 7: 3 and what?"}},
+    question: {"a":3,"b":null,"op":"+","answer":4,"display":{"promptText":"Number pair that makes 7: 3 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-039",
@@ -8342,7 +8342,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":4,"op":"+","answer":9,"display":{"promptText":"Number pair that makes 9: 5 and what?"}},
+    question: {"a":5,"b":null,"op":"+","answer":4,"display":{"promptText":"Number pair that makes 9: 5 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-040",
@@ -8422,7 +8422,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":4,"op":"+","answer":6,"display":{"promptText":"Number pair that makes 6: 2 and what?"}},
+    question: {"a":2,"b":null,"op":"+","answer":4,"display":{"promptText":"Number pair that makes 6: 2 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-048",
@@ -8432,7 +8432,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":3,"op":"+","answer":9,"display":{"promptText":"Number pair that makes 9: 6 and what?"}},
+    question: {"a":6,"b":null,"op":"+","answer":3,"display":{"promptText":"Number pair that makes 9: 6 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-037",
@@ -8442,7 +8442,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":7,"op":"+","answer":20,"display":{"promptText":"Number pair that makes 20: 13 and what?"}},
+    question: {"a":13,"b":null,"op":"+","answer":7,"display":{"promptText":"Number pair that makes 20: 13 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-038",
@@ -8452,7 +8452,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":11,"op":"+","answer":20,"display":{"promptText":"Number pair that makes 20: 9 and what?"}},
+    question: {"a":9,"b":null,"op":"+","answer":11,"display":{"promptText":"Number pair that makes 20: 9 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-039",
@@ -8462,7 +8462,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":12,"op":"+","answer":20,"display":{"promptText":"Number pair that makes 20: 8 and what?"}},
+    question: {"a":8,"b":null,"op":"+","answer":12,"display":{"promptText":"Number pair that makes 20: 8 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-040",
@@ -8542,7 +8542,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":55,"b":25,"op":"+","answer":80,"display":{"promptText":"Number pair that makes 80: 55 and what?"}},
+    question: {"a":55,"b":null,"op":"+","answer":25,"display":{"promptText":"Number pair that makes 80: 55 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-048",
@@ -8552,7 +8552,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":65,"b":15,"op":"+","answer":80,"display":{"promptText":"Number pair that makes 80: 65 and what?"}},
+    question: {"a":65,"b":null,"op":"+","answer":15,"display":{"promptText":"Number pair that makes 80: 65 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-037",
@@ -8562,7 +8562,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":145,"b":55,"op":"+","answer":200,"display":{"promptText":"Number pair that makes 200: 145 and what?"}},
+    question: {"a":145,"b":null,"op":"+","answer":55,"display":{"promptText":"Number pair that makes 200: 145 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-038",
@@ -8572,7 +8572,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":245,"b":55,"op":"+","answer":300,"display":{"promptText":"Number pair that makes 300: 245 and what?"}},
+    question: {"a":245,"b":null,"op":"+","answer":55,"display":{"promptText":"Number pair that makes 300: 245 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-039",
@@ -8582,7 +8582,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":345,"b":55,"op":"+","answer":400,"display":{"promptText":"Number pair that makes 400: 345 and what?"}},
+    question: {"a":345,"b":null,"op":"+","answer":55,"display":{"promptText":"Number pair that makes 400: 345 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-040",

@@ -288,9 +288,15 @@ export const FORMATS = {
     // Works from either direction: a fact family is the same three numbers
     // whether the child arrived by multiplying or dividing, so division items
     // qualify too (their product is simply the largest of the three).
-    appliesTo: (q) =>
-      (q.op === "x" || q.op === "/") &&
-      [q.a, q.b, q.answer].every((n) => Number.isInteger(n) && n > 1),
+    appliesTo: (q) => {
+      if (q.op !== "x" && q.op !== "/") return false;
+      const nums = [q.a, q.b, q.answer];
+      if (!nums.every((n) => Number.isInteger(n) && n > 1)) return false;
+      // A square's family has fewer distinct members: `3 x 3` and `3 x 3` are
+      // the same fact, which would leave a duplicate option.
+      const [f1, f2] = nums.sort((m, n) => m - n);
+      return f1 !== f2;
+    },
     transform: (q) => {
       const [f1, f2, p] = [q.a, q.b, q.answer].sort((m, n) => m - n);
       const belongs = [`${f1} x ${f2} = ${p}`, `${f2} x ${f1} = ${p}`, `${p} / ${f1} = ${f2}`];

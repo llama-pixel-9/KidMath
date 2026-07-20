@@ -1,4 +1,4 @@
-import { REVIEW_STATUS } from "./applicationItems.js";
+import { REVIEW_STATUS } from "./reviewStatus.js";
 
 // Curated conceptual-family item bank.
 //

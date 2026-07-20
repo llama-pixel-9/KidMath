@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
+import { APPLICATION_ITEM_BANK } from "../itemBank/fullBank.js";
 import {
-  APPLICATION_ITEM_BANK,
   REVIEW_STATUS,
   buildQuestionFromBankItem,
   selectApprovedApplicationItem,

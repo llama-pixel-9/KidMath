@@ -1,5 +1,5 @@
 import { BUNDLED_ITEMS } from "./bundle.js";
-import { REVIEW_STATUS } from "./applicationItems.js";
+import { REVIEW_STATUS } from "./reviewStatus.js";
 import { isVerbalPrompt } from "../modes/helpers.js";
 import { levelToBand, levelRangeToBands, LEVEL_BANDS } from "../bands.js";
 
@@ -61,6 +61,27 @@ export function setBankItems(items, source = "cloud") {
   currentBank = items.slice();
   currentSource = source;
   notifySubscribers();
+}
+
+/**
+ * Merge items into the bank without discarding what is already loaded.
+ *
+ * `setBankItems` replaces wholesale, which is right for a full cloud refresh
+ * but wrong for mode-scoped loading: fetching `fractions` must not evict the
+ * `addition` items a child was just using. Existing items win on itemId so a
+ * re-fetch is idempotent and cannot duplicate.
+ *
+ * Returns the number of genuinely new items added.
+ */
+export function addBankItems(items, source = "cloud") {
+  if (!Array.isArray(items) || !items.length) return 0;
+  const seen = new Set(currentBank.map((i) => i.itemId));
+  const fresh = items.filter((i) => i?.itemId && !seen.has(i.itemId));
+  if (!fresh.length) return 0;
+  currentBank = currentBank.concat(fresh);
+  currentSource = source;
+  notifySubscribers();
+  return fresh.length;
 }
 
 export function resetBankToBundle() {

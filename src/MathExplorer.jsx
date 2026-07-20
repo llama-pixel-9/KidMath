@@ -40,6 +40,7 @@ import {
   MODES,
 } from "./mathEngine";
 import { getModeConfig } from "./modes";
+import { ensureModeLoaded } from "./itemBank.js";
 import { isVerbalPrompt } from "./modes/helpers";
 import { saveProgress, loadProgress, mergeLocalToCloud } from "./progressStore";
 import { useAuth } from "./useAuth";
@@ -744,6 +745,16 @@ export default function MathExplorer({ initialMode }) {
     loadNextQuestion(session);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // Fetch this mode's items on entry. The app ships only a seed (a few items
+  // per cell) so first paint is fast; the rest of a mode arrives when the child
+  // actually opens it, and we never pay for the 21 modes they did not pick.
+  //
+  // Deliberately not awaited: the seed is already playable, so questions start
+  // immediately and the fetched items widen variety as soon as they land.
+  useEffect(() => {
+    ensureModeLoaded(mode);
+  }, [mode]);
 
   useEffect(() => {
     if (!user) return;

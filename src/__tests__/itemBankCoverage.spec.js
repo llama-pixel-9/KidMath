@@ -1,5 +1,8 @@
 import { describe, expect, it } from "vitest";
-import { BUNDLED_ITEMS } from "../itemBank/bundle.js";
+// Coverage is a property of the full authored corpus. The app now ships only a
+// seed (a few items per cell) and fetches the rest per mode, so asserting
+// coverage against the bundle would test the seed builder, not the bank.
+import { FULL_ITEMS as BUNDLED_ITEMS } from "../itemBank/fullBank.js";
 import {
   REVIEW_STATUS,
   ITEM_FAMILIES,

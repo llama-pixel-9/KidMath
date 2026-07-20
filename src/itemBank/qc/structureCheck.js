@@ -107,20 +107,23 @@ export const STRUCTURE_CHECKS = {
       ? []
       : ["this structure must ask how many are IN EACH row"],
 
+  // "times as much/many" OR "times as <adjective>" (long, tall, heavy, fast,
+  // old...) — all standard multiplicative-compare phrasings. Requiring
+  // exactly much/many wrongly rejected "3 times as long".
   compareProductUnknown: (text) =>
-    has(text, /times as (much|many)/i)
+    has(text, /times as (much|many|[a-z]+)\b/i)
       ? []
-      : ['multiplicative compare must say "times as much/many", not "more"'],
+      : ['multiplicative compare must say "times as ...", not "more"'],
 
   compareSetSizeUnknown: (text) =>
-    has(text, /times as (much|many)/i)
+    has(text, /times as (much|many|[a-z]+)\b/i)
       ? []
-      : ['multiplicative compare must say "times as much/many", not "more"'],
+      : ['multiplicative compare must say "times as ...", not "more"'],
 
   compareMultiplierUnknown: (text) =>
-    has(text, /how many times as (much|many)/i)
+    has(text, /how many times as (much|many|[a-z]+)\b/i)
       ? []
-      : ['must ask "how many times as much/many"'],
+      : ['must ask "how many times as ..."'],
 };
 
 /**

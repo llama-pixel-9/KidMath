@@ -91,3 +91,20 @@ describe("checker handles payload operand order and comparative phrasing", () =>
     ).toBe(true);
   });
 });
+
+describe("arithmetic accepts every operand position of one relation", () => {
+  it("accepts Take From / Start Unknown (answer - taken = left)", () => {
+    // "Some pencils. Maria used 12. Now 8. How many before?" = 20; 8+12=20.
+    expect(
+      gated(draft("takeFromStartUnknown", "Some pencils were on the desk. Maria used 12. Now there are 8. How many were there before?", { a: 12, b: 8, op: "-", answer: 20 }))
+    ).toBe(true);
+  });
+
+  it("accepts a double stored as [part, part, whole] in any slot", () => {
+    expect(gated(draft("compareBiggerMore", "Ana has 6 more than Bo. Bo has 6. How many does Ana have?", { a: 6, b: 6, op: "+", answer: 12 }))).toBe(true);
+  });
+
+  it("still rejects a wrong additive trio", () => {
+    expect(gated(draft("addToStartUnknown", "Some cats sat. 3 more came. Now there are 5. How many before?", { a: 3, b: 5, op: "+", answer: 4 }))).toBe(false); // 5-3=2, not 4
+  });
+});

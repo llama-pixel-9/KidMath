@@ -64,20 +64,22 @@ function arithmeticCheck(item) {
   const fn = OPS[op];
   if (!fn) return null; // no operator to check against
 
-  // Direct: a op b = answer. Word-problem payloads do NOT guarantee operand
-  // order (the two numbers are just "the two stated in the prompt"), so
-  // subtraction and division accept either order — a Compare item storing
-  // [difference, larger] is as valid as [larger, difference]. This stays
-  // order-agnostic WITHIN the operation, so 2 + 3 = 6 still fails.
-  if (op === "+" && (a + b === answer || a + answer === b || answer + b === a)) return null;
-  if ((op === "-" || op === "−") &&
-      (a - b === answer || b - a === answer || a - answer === b || b - answer === a)) return null;
-  if ((op === "x" || op === "*" || op === "×") &&
-      (a * b === answer || a * answer === b || answer * b === a)) return null;
-  if ((op === "/" || op === "÷") && answer !== 0 &&
-      (a / b === answer || (a !== 0 && b / a === answer) || a / answer === b || (b !== 0 && a / b === answer))) {
-    return null;
-  }
+  // Addition and subtraction share ONE constraint over the three quantities
+  // {a, b, answer}: whichever operand the prose leaves blank, the largest of
+  // the three equals the sum of the other two (x - y = z means x = y + z). So a
+  // Take From / Start Unknown (`? - 12 = 8`, answer 20) and a plain sum
+  // (`12 + 8 = 20`) both satisfy "the max is the sum of the other two",
+  // regardless of which number the payload stored where.
+  //
+  // Multiplication and division likewise: the largest equals the product of the
+  // other two.
+  //
+  // This stays exact — 2 + 3 = 6 fails (max 6 != 2 + 3), 3 x 6 = 20 fails
+  // (max 20 != 3 x 6) — it is only agnostic to operand POSITION, which is what
+  // word-problem payloads genuinely leave unspecified.
+  const [lo, mid, hi] = [a, b, answer].sort((x, y) => x - y);
+  const additive = op === "+" || op === "-" || op === "−";
+  if (additive ? lo + mid === hi : lo * mid === hi) return null;
 
   return fail("arithmetic", `answer ${answer} is not consistent with ${a} and ${b} under ${op}`);
 }

@@ -66,7 +66,7 @@ const RULES = {
   compareMultiplierUnknown:
     'Multiplicative compare: ask "how many times as much/many". State both amounts; ask for the multiplier.',
   arrayRowCountUnknown:
-    'Array/quotitive: state the total and how many are in each row; ask HOW MANY ROWS.',
+    'ARRAY structure — use ROWS, not groups or bunches. Say the items are "arranged in rows" with N in each row, and ask "how many ROWS". The word "rows" must appear.',
 };
 
 const TARGETS = Object.keys(RULES);

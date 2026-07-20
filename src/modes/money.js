@@ -32,7 +32,7 @@ const PLURAL = { penny: "pennies", nickel: "nickels", dime: "dimes", quarter: "q
 const DENOMS = [25, 10, 5, 1];
 
 const ACTORS = ["Mina", "Sam", "Ava", "Theo", "Nia", "Luca"];
-const GOODS = ["sticker", "eraser", "pencil", "apple", "bookmark", "marble"];
+const GOODS = ["sticker", "pencil", "bookmark", "marble", "badge", "ribbon"];
 
 function pick(arr) {
   return arr[randInt(0, arr.length - 1)];
@@ -66,11 +66,13 @@ function randomTray(level) {
     nickel: randInt(0, cap),
     penny: randInt(0, 4),
   };
+  // An empty handful is not a question, and it also leaves `coinPhrase` with
+  // nothing to say.
+  if (!COIN_NAMES.some((n) => counts[n] > 0)) counts.nickel = randInt(1, 3);
   const coins = [];
   for (const name of COIN_NAMES) {
     for (let i = 0; i < counts[name]; i += 1) coins.push(name);
   }
-  if (!coins.length) coins.push("nickel");
   return { coins: shuffleArray(coins), counts };
 }
 
@@ -183,7 +185,10 @@ const VARIETIES = [
     subskills: ["coinEquivalence"],
     build() {
       const from = pick(["dime", "quarter", "nickel"]);
-      const to = pick(COIN_NAMES.filter((c) => COIN_VALUE[c] < COIN_VALUE[from]));
+      // The trade must come out whole: 3 quarters is not a number of dimes.
+      const to = pick(
+        COIN_NAMES.filter((c) => COIN_VALUE[c] < COIN_VALUE[from] && COIN_VALUE[from] % COIN_VALUE[c] === 0)
+      );
       const count = randInt(2, 4);
       const totalCents = count * COIN_VALUE[from];
       return {

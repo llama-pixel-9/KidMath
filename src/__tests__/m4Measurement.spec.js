@@ -121,6 +121,12 @@ const CHECKERS = {
     const right = Number(m[3]);
     return left > right ? ">" : left < right ? "<" : "=";
   },
+  compareSameUnit(q) {
+    const m = q.display.promptText.match(/^(\d+) (\w+) \? (\d+) (\w+)$/);
+    if (!m) return undefined;
+    expect(m[2]).toBe(m[4]);
+    return Number(m[1]) > Number(m[3]) ? ">" : Number(m[1]) < Number(m[3]) ? "<" : "=";
+  },
   rulerRead(q) {
     const m = q.display.promptText.match(/starts at the (\d+) cm mark and ends at the (\d+) cm mark/);
     if (!m) return undefined;
@@ -268,6 +274,11 @@ const CHECKERS = {
     const m = q.display.promptText.match(/is (\d+) units across and (\d+) units down/);
     if (!m) return undefined;
     return 2 * (Number(m[1]) + Number(m[2]));
+  },
+  perimeterOfSquare(q) {
+    const m = q.display.promptText.match(/is (\d+) cm on every side/);
+    if (!m) return undefined;
+    return 4 * Number(m[1]);
   },
   areaFromDims(q) {
     const m = q.display.promptText.match(/is (\d+) cm by (\d+) cm\. What is its area/);
@@ -518,6 +529,23 @@ describe("M4 generators produce structurally valid items", () => {
           expect(q.display.promptText).toBeTruthy();
           if (q.answerType) {
             expect(ANSWER_TYPES.includes(q.answerType) || q.answerType === "choice").toBe(true);
+          }
+        }
+      }
+    }
+  });
+
+  it("never emits a negative, fractional or malformed answer", () => {
+    // A rope shorter than the piece cut off, a tank emptied past zero, a
+    // conversion that lands on 2.5 — all of these were live bugs found here.
+    for (const mode of M4_MODES) {
+      for (const level of LEVELS) {
+        for (const q of generateMany(mode, level, 60)) {
+          const label = `${mode}/${q.metadata.structureType}: ${q.display.promptText}`;
+          expect(q.display.promptText).not.toMatch(/NaN|undefined|Infinity/);
+          if (typeof q.answer === "number") {
+            expect(Number.isInteger(q.answer), label).toBe(true);
+            expect(q.answer, label).toBeGreaterThanOrEqual(0);
           }
         }
       }

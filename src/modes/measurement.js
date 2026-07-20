@@ -185,6 +185,28 @@ const VARIETIES = [
     },
   },
   {
+    id: "compareSameUnit",
+    bands: [1],
+    family: CONCEPTUAL,
+    subskills: ["compareOrder"],
+    build() {
+      // Band 1 compares within ONE unit: comparing across units needs a
+      // conversion, which this band does not teach yet.
+      const unit = pick(["cm", "m", "g", "mL"]);
+      const a = randInt(2, 90);
+      let b = randInt(2, 90);
+      if (b === a) b += 1;
+      return {
+        answer: a > b ? ">" : "<",
+        answerType: "symbolSelect",
+        promptText: `${a} ${unit} ? ${b} ${unit}`,
+        representation: "symbolic",
+        cognitiveDemand: "DOK1",
+        misconceptionTags: ["symbolFlip", "unitLabelIgnored"],
+      };
+    },
+  },
+  {
     id: "iterateNonstandard",
     bands: [1],
     family: APPLICATION,
@@ -419,7 +441,8 @@ const VARIETIES = [
       const metres = randInt(2, 5);
       const centimetres = randInt(1, 9) * 10;
       const total = metres * 100 + centimetres;
-      const cut = randInt(2, 9) * 25;
+      // Never cut more rope than there is: the shortest rope is 2 m 10 cm.
+      const cut = randInt(2, Math.min(9, Math.floor((total - 25) / 25))) * 25;
       return {
         answer: total - cut,
         answerType: "numberPad",

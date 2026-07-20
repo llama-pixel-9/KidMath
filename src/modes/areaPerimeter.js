@@ -93,6 +93,26 @@ const VARIETIES = [
     },
   },
   {
+    id: "perimeterOfSquare",
+    bands: [1, 2],
+    family: PROCEDURAL,
+    subskills: ["perimeter"],
+    build(level) {
+      const side = randInt(2, level <= 3 ? 8 : 15);
+      return {
+        subskill: "perimeter",
+        answer: 4 * side,
+        answerType: "numberPad",
+        display: { width: side, height: side },
+        promptText: `A square tile is ${side} cm on every side. How far is it all the way around the tile?`,
+        representation: "verbalContext",
+        cognitiveDemand: "DOK1",
+        misconceptionTags: ["areaPerimeterSwap", "perimeterHalfCount"],
+        distractorContext: { width: side, height: side, a: side, b: side },
+      };
+    },
+  },
+  {
     id: "whichCoversMore",
     bands: [1, 2],
     family: CONCEPTUAL,

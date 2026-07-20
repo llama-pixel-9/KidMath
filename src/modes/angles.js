@@ -109,8 +109,30 @@ const VARIETIES = [
     },
   },
   {
+    id: "rightAngleInWorld",
+    bands: [1, 2],
+    family: APPLICATION,
+    subskills: ["classifyAngle"],
+    build() {
+      const item = pick([
+        { answer: "the corner of a book", others: ["a ball", "a slice of pizza", "a rainbow"] },
+        { answer: "the corner of a window", others: ["a wheel", "a party hat", "a smile"] },
+        { answer: "the corner of a door", others: ["an egg", "a paper fan", "a coin"] },
+      ]);
+      return {
+        answer: item.answer,
+        answerType: "choice",
+        choices: shuffleArray([item.answer, ...item.others]),
+        promptText: "Which one has a square corner (a right angle)?",
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptionTags: ["rightAngleOnlyUpright"],
+      };
+    },
+  },
+  {
     id: "compareTurns",
-    bands: [1],
+    bands: [1, 2],
     family: CONCEPTUAL,
     subskills: ["classifyAngle"],
     build() {

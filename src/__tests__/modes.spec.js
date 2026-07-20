@@ -368,10 +368,11 @@ describe("mode generation coverage", () => {
     const money = getModeConfig("money");
     for (let i = 0; i < 40; i++) {
       const q = money.generate(8);
-      // Coin counting now renders a visible tray (M2); make-change and
-      // over-full trays stay typed.
-      expect(["numberPad", "coinTray"]).toContain(q.answerType);
-      expect(q.answer).toBeGreaterThanOrEqual(0);
+      // Coin counting renders a visible tray (M2); make-change and over-full
+      // trays stay typed. M4 added coin-value comparison (symbolSelect) and
+      // reasoning items such as "can she afford it?" (choice).
+      expect(["numberPad", "coinTray", "choice", "symbolSelect"]).toContain(q.answerType);
+      if (typeof q.answer === "number") expect(q.answer).toBeGreaterThanOrEqual(0);
       if (q.answerType === "coinTray") {
         const total = q.display.coins.reduce((sum, c) => sum + COIN_VALUES[c], 0);
         expect(total, "tray must total the answer").toBe(q.answer);

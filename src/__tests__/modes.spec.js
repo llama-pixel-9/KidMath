@@ -3,6 +3,9 @@ import { MODE_IDS, getModeConfig } from "../modes";
 import { generateQuestion, generateChoices, generateWorksheetSet } from "../mathEngine";
 import { buildQuestionFromBankItem } from "../itemBank.js";
 
+// Values only, so the test does not depend on the widget rendering.
+const COIN_VALUES = { penny: 1, nickel: 5, dime: 10, quarter: 25 };
+
 describe("mode generation coverage", () => {
   it("generates valid metadata for every mode", () => {
     for (const mode of MODE_IDS) {
@@ -286,8 +289,15 @@ describe("mode generation coverage", () => {
     const money = getModeConfig("money");
     for (let i = 0; i < 40; i++) {
       const q = money.generate(8);
-      expect(q.answerType).toBe("numberPad");
+      // Coin counting now renders a visible tray (M2); make-change and
+      // over-full trays stay typed.
+      expect(["numberPad", "coinTray"]).toContain(q.answerType);
       expect(q.answer).toBeGreaterThanOrEqual(0);
+      if (q.answerType === "coinTray") {
+        const total = q.display.coins.reduce((sum, c) => sum + COIN_VALUES[c], 0);
+        expect(total, "tray must total the answer").toBe(q.answer);
+        expect(q.display.coins.length).toBeLessThanOrEqual(12);
+      }
     }
   });
 
@@ -340,8 +350,16 @@ describe("mode generation coverage", () => {
     const ls = getModeConfig("linesShapes");
     for (let i = 0; i < 40; i++) {
       const q = ls.generate(8);
-      expect(q.answerType).toBe("numberPad");
+      // Drawable shapes now render a figure (M2); named-only shapes and word
+      // problems stay typed.
+      expect(["numberPad", "shapeFigure"]).toContain(q.answerType);
       expect(Number.isInteger(q.answer)).toBe(true);
+      if (q.answerType === "shapeFigure") {
+        expect(q.display.shape, "figure items must name a drawable shape").toBeTruthy();
+        // A drawn item must never also name the shape in the prompt, or the
+        // picture is decoration and the question is still vocabulary.
+        expect(q.display.promptText).toContain("this shape");
+      }
       // Shapes with no line of symmetry (parallelogram, scalene triangle) are
       // valid Grade-4 items, so 0 is an allowed answer for symmetryLines.
       if (q.metadata.subskill === "symmetryLines") {

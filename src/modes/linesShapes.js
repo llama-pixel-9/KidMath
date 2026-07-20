@@ -1,4 +1,27 @@
 import { randInt } from "./helpers";
+import { SHAPE_META } from "../components/kit/shapeData.js";
+
+// Which table entries the kit can actually draw. Named shapes with no figure
+// (heptagon, decagon...) still ask in words; the rest now show the shape,
+// because "how many sides does a hexagon have?" tests vocabulary while a
+// picture tests the property.
+const DRAWABLE = {
+  triangle: "triangleEquilateral",
+  "equilateral triangle": "triangleEquilateral",
+  "right triangle": "triangleRight",
+  "scalene triangle": "triangleScalene",
+  square: "square",
+  rectangle: "rectangle",
+  rhombus: "rhombus",
+  parallelogram: "parallelogram",
+  trapezoid: "trapezoid",
+  pentagon: "pentagon",
+  "regular pentagon": "pentagon",
+  hexagon: "hexagon",
+  "regular hexagon": "hexagon",
+  octagon: "octagon",
+  "regular octagon": "octagon",
+};
 import { createQuestionMetadata, ITEM_FAMILIES } from "./itemMetadata";
 
 // 2-D shapes: sides and lines of symmetry (Grade 3-4, 4.G). Numeric answers on
@@ -98,26 +121,45 @@ export default {
 
     let answer;
     let promptText;
+    let shapeName;
     if (subskill === "symmetryLines") {
-      const s = pickShape(SYMMETRY, level);
-      answer = s.lines;
+      const shape = pickShape(SYMMETRY, level);
+      shapeName = shape.name;
+      answer = shape.lines;
       promptText = isApplication
-        ? SYMMETRY_CONTEXTS[randInt(0, SYMMETRY_CONTEXTS.length - 1)](s.name)
-        : `How many lines of symmetry does a ${s.name} have?`;
+        ? SYMMETRY_CONTEXTS[randInt(0, SYMMETRY_CONTEXTS.length - 1)](shape.name)
+        : `How many lines of symmetry does this shape have?`;
     } else {
-      const s = pickShape(SIDES, level);
-      answer = s.sides;
+      const shape = pickShape(SIDES, level);
+      shapeName = shape.name;
+      answer = shape.sides;
       promptText = isApplication
-        ? SIDE_CONTEXTS[randInt(0, SIDE_CONTEXTS.length - 1)](s.name)
-        : `How many sides does a ${s.name} have?`;
+        ? SIDE_CONTEXTS[randInt(0, SIDE_CONTEXTS.length - 1)](shape.name)
+        : `How many sides does this shape have?`;
+    }
+
+    // Draw the figure when we can. Rotating it matters: a child who only ever
+    // sees a triangle pointing up learns the picture, not the property.
+    const figure = DRAWABLE[shapeName];
+    const showFigure = Boolean(figure) && !isApplication;
+    if (!showFigure && !isApplication) {
+      promptText = promptText.replace("this shape", `a ${shapeName}`);
     }
 
     const question = {
       op: "shape",
       answer,
-      answerType: "numberPad",
+      answerType: showFigure ? "shapeFigure" : "numberPad",
       level,
-      display: { promptText },
+      display: showFigure
+        ? {
+            promptText,
+            shape: figure,
+            rotate: level >= 4 ? randInt(0, 3) * 15 : 0,
+            showSymmetry: false,
+            shapeMode: "count",
+          }
+        : { promptText },
     };
 
     question.metadata = createQuestionMetadata({

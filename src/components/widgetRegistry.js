@@ -8,6 +8,10 @@ import PlaceValueDiscs from "./PlaceValueDiscs.jsx";
 import DataGraph from "./DataGraph.jsx";
 import AngleFigure from "./AngleFigure.jsx";
 import SymbolSelect from "./SymbolSelect.jsx";
+import MultiSelect from "./MultiSelect.jsx";
+import NumberLine from "./NumberLine.jsx";
+import ShapeFigure from "./ShapeFigure.jsx";
+import CoinTray from "./CoinTray.jsx";
 
 /**
  * answerType -> answer widget.
@@ -41,6 +45,45 @@ export const WIDGETS = {
   symbolSelect: {
     Component: SymbolSelect,
     props: (_q, ctx) => ({ revealAnswer: ctx.revealAnswer, shakenChoice: ctx.shakenChoice }),
+  },
+
+  // M2 widgets. Each unlocks varieties across several modes, which is why they
+  // are shared infrastructure rather than any one mode's concern.
+  multiSelect: {
+    Component: MultiSelect,
+    props: (q) => ({
+      options: q.display?.options || [],
+      requiredCount: q.display?.requiredCount ?? null,
+    }),
+  },
+  numberLine: {
+    Component: NumberLine,
+    props: (q) => ({
+      min: q.display?.min ?? 0,
+      max: q.display?.max ?? 10,
+      step: q.display?.step ?? 1,
+      from: q.display?.from ?? null,
+      to: q.display?.to ?? null,
+      labelEvery: q.display?.labelEvery ?? 1,
+      mode: q.display?.lineMode || "locate",
+    }),
+  },
+  shapeFigure: {
+    Component: ShapeFigure,
+    props: (q) => ({
+      shape: q.display?.shape,
+      options: q.display?.options || [],
+      rotate: q.display?.rotate || 0,
+      showSymmetry: q.display?.showSymmetry || false,
+      mode: q.display?.shapeMode || "count",
+    }),
+  },
+  coinTray: {
+    Component: CoinTray,
+    props: (q) => ({
+      coins: q.display?.coins || [],
+      mode: q.display?.coinMode || "count",
+    }),
   },
 };
 

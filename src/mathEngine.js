@@ -306,6 +306,41 @@ export function questionAnswerType(question) {
   return question?.answerType ?? "choice";
 }
 
+/**
+ * Set equality for multi-answer items (implementation plan M2).
+ *
+ * Some structures genuinely have more than one correct answer — Both Addends
+ * Unknown ("how many in the red vase and how many in the blue?"), "show three
+ * ways to make 8", "pick every expression equal to 12". Judging those against a
+ * single `answer` was impossible, which is why those varieties could not ship.
+ *
+ * `question.answer` is an array of the values that must ALL be selected. Order
+ * is irrelevant; duplicates are ignored; a superset is wrong (selecting
+ * everything must not score as correct).
+ */
+function setEquals(submitted, answer) {
+  if (!Array.isArray(answer)) return false;
+  const submittedList = Array.isArray(submitted) ? submitted : [submitted];
+  if (submittedList.some((v) => v === null || v === undefined)) return false;
+
+  const want = new Set(answer.map((v) => String(v)));
+  const got = new Set(submittedList.map((v) => String(v)));
+  if (want.size !== got.size) return false;
+  for (const v of want) if (!got.has(v)) return false;
+  return true;
+}
+
+/**
+ * Answer sets where several distinct selections are each acceptable — e.g.
+ * decomposing 5 as 1+4 OR 2+3. `question.answer` is an array of arrays; the
+ * submission must match any one of them.
+ */
+function anySetEquals(submitted, answer) {
+  if (!Array.isArray(answer)) return false;
+  if (!answer.some(Array.isArray)) return setEquals(submitted, answer);
+  return answer.some((option) => setEquals(submitted, option));
+}
+
 function numericEquals(submitted, answer, epsilon = 0) {
   if (submitted === null || submitted === undefined || submitted === "") return false;
   const s = Number(submitted);
@@ -332,7 +367,15 @@ export function checkAnswer(question, submitted) {
     case "clock":
     case "barGraph":
     case "angle":
+    case "numberLine":
+    case "shapeFigure":
+    case "coinTray":
       return numericEquals(submitted, question.answer);
+    // Multi-answer items: every required value must be selected and nothing
+    // extra. `answer` may be a list of values, or a list of acceptable lists
+    // when several different selections are each correct.
+    case "multiSelect":
+      return anySetEquals(submitted, question.answer);
     // Decimal entry (tenths/hundredths): numeric with a small tolerance so
     // 0.5 == .50 and float noise never fails a correct answer.
     case "decimal":

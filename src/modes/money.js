@@ -34,6 +34,7 @@ export default {
     let answer;
     let symbolic;
     let contextual;
+    let coinTray = null;
     if (subskill === "makeChange") {
       const paid = level <= 3 ? 100 : randInt(2, 10) * 25;
       const price = randInt(5, paid - 1);
@@ -49,14 +50,36 @@ export default {
       const coins = `${quarters} quarters, ${dimes} dimes, ${nickels} nickels, and ${pennies} pennies`;
       symbolic = `${coins}. How many cents?`;
       contextual = `Maya has ${coins}. How many cents in all?`;
+
+      // Show the coins rather than naming them. Counting mixed change is a
+      // visual skill — a dime is worth more than a nickel but is smaller, and
+      // that only bites when the child can see them (CoinTray draws to scale).
+      coinTray = [
+        ...Array.from({ length: quarters }, () => "quarter"),
+        ...Array.from({ length: dimes }, () => "dime"),
+        ...Array.from({ length: nickels }, () => "nickel"),
+        ...Array.from({ length: pennies }, () => "penny"),
+      ];
+      // Shuffle so the tray is not pre-sorted by value: sorting it first is
+      // part of the skill.
+      for (let i = coinTray.length - 1; i > 0; i -= 1) {
+        const j = randInt(0, i);
+        [coinTray[i], coinTray[j]] = [coinTray[j], coinTray[i]];
+      }
     }
+
+    // A visible tray only makes sense when there is something to look at, and
+    // an over-full tray is a counting slog rather than a coin-value question.
+    const useTray = coinTray && coinTray.length > 0 && coinTray.length <= 12;
 
     const question = {
       op: "money",
       answer,
-      answerType: "numberPad",
+      answerType: useTray ? "coinTray" : "numberPad",
       level,
-      display: { promptText: itemFamily === ITEM_FAMILIES.APPLICATION ? contextual : symbolic },
+      display: useTray
+        ? { promptText: "How many cents are shown?", coins: coinTray, coinMode: "count" }
+        : { promptText: itemFamily === ITEM_FAMILIES.APPLICATION ? contextual : symbolic },
     };
 
     question.metadata = createQuestionMetadata({

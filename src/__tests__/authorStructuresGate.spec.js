@@ -68,3 +68,26 @@ describe("authoring gate on the empty difficult structures", () => {
     ).toBe(false);
   });
 });
+
+describe("checker handles payload operand order and comparative phrasing", () => {
+  it("accepts a Compare item storing [difference, larger] in a/b", () => {
+    // "Sofia has 8 more than Marcus. Sofia has 47. How many does Marcus have?"
+    // = 39. The model stored a=8 (difference), b=47 (larger); 47 - 8 = 39.
+    // Order-agnostic subtraction must accept this.
+    expect(
+      gated(draft("compareSmallerMore", "Sofia has 8 more crayons than Marcus. Sofia has 47. How many does Marcus have?", { a: 8, b: 47, op: "-", answer: 39 }))
+    ).toBe(true);
+  });
+
+  it("still rejects a subtraction answer no operand order can produce", () => {
+    expect(
+      gated(draft("compareSmallerFewer", "Kai has 15 fewer than Sofia. Sofia has 47. How many does Kai have?", { a: 15, b: 47, op: "-", answer: 30 }))
+    ).toBe(false); // 47 - 15 = 32, not 30
+  });
+
+  it("accepts 'how many times heavier' without the word 'as'", () => {
+    expect(
+      gated(draft("compareMultiplierUnknown", "A big dog weighs 60 pounds and a small dog weighs 12 pounds. How many times heavier is the big dog?", { a: 60, b: 12, op: "÷", answer: 5 }))
+    ).toBe(true);
+  });
+});

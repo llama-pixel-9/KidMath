@@ -64,20 +64,22 @@ function arithmeticCheck(item) {
   const fn = OPS[op];
   if (!fn) return null; // no operator to check against
 
-  // Direct: a op b = answer.
-  if (fn(a, b) === answer) return null;
-
-  // Embedded unknown: the answer is the operand the prose leaves blank. For a
-  // sum a + ? = b the missing part is b - a; the payload stores the two givens
-  // as a and b and the answer as the missing part.
-  if (op === "+" && (a + answer === b || answer + b === a)) return null;
-  if ((op === "-" || op === "−") && (a - answer === b || answer - b === a || a - b === answer)) return null;
-  if ((op === "x" || op === "*" || op === "×") && (a * answer === b || answer * b === a)) return null;
-  if ((op === "/" || op === "÷") && answer !== 0 && (a / answer === b || (b !== 0 && a / b === answer))) {
+  // Direct: a op b = answer. Word-problem payloads do NOT guarantee operand
+  // order (the two numbers are just "the two stated in the prompt"), so
+  // subtraction and division accept either order — a Compare item storing
+  // [difference, larger] is as valid as [larger, difference]. This stays
+  // order-agnostic WITHIN the operation, so 2 + 3 = 6 still fails.
+  if (op === "+" && (a + b === answer || a + answer === b || answer + b === a)) return null;
+  if ((op === "-" || op === "−") &&
+      (a - b === answer || b - a === answer || a - answer === b || b - answer === a)) return null;
+  if ((op === "x" || op === "*" || op === "×") &&
+      (a * b === answer || a * answer === b || answer * b === a)) return null;
+  if ((op === "/" || op === "÷") && answer !== 0 &&
+      (a / b === answer || (a !== 0 && b / a === answer) || a / answer === b || (b !== 0 && a / b === answer))) {
     return null;
   }
 
-  return fail("arithmetic", `answer ${answer} is not consistent with ${a} ${op} ${b}`);
+  return fail("arithmetic", `answer ${answer} is not consistent with ${a} and ${b} under ${op}`);
 }
 
 export const CHECKS = [

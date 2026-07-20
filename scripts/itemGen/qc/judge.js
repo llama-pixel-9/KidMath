@@ -13,13 +13,16 @@
  *   - does it assume knowledge or culture a child may not have
  *   - is there an ambiguity that would make a correct answer look wrong
  *
- * Items are judged in batches with a strict JSON contract. If no API key is
- * configured the pass is skipped and says so, rather than silently returning
- * "everything is fine" — a QC tool that quietly does nothing is worse than no
- * QC tool.
+ * TRANSPORT: this shells out to `claude -p` (Claude Code headless), which runs
+ * on the developer's existing Claude subscription — no ANTHROPIC_API_KEY and no
+ * separate pay-per-token API bill. If `claude` is not on PATH the pass is
+ * skipped and says so, rather than silently returning "everything is fine": a
+ * QC tool that quietly does nothing is worse than no QC tool.
  */
 
-const MODEL = process.env.KIDMATH_QC_MODEL || "claude-sonnet-5";
+import { spawn } from "node:child_process";
+
+const MODEL = process.env.KIDMATH_QC_MODEL || null; // let Claude Code pick by default
 const BATCH_SIZE = 20;
 
 const SYSTEM = `You review maths word problems for a children's app (ages 5-10, US K-4).
@@ -45,40 +48,56 @@ Reply with JSON only: an array of objects
   {"itemId": string, "acceptable": boolean, "reason": string}
 Include EVERY item you were given. Set reason to "" when acceptable is true.`;
 
-function buildUserMessage(items) {
-  return items
+function buildPrompt(items) {
+  const body = items
     .map(
       (i) =>
         `itemId: ${i.itemId}\nage band: levels ${i.levelRange?.join("-") || "?"}\nprompt: ${i.question?.display?.promptText}`
     )
     .join("\n\n");
+  // The system role is folded into the prompt because headless `claude -p` takes
+  // a single prompt; --append-system-prompt keeps our instructions authoritative.
+  return body;
+}
+
+/** Is Claude Code available on PATH? */
+function claudeAvailable() {
+  return new Promise((resolve) => {
+    const probe = spawn("claude", ["--version"], { stdio: "ignore" });
+    probe.on("error", () => resolve(false));
+    probe.on("close", (code) => resolve(code === 0));
+  });
+}
+
+function runClaude(prompt) {
+  return new Promise((resolve, reject) => {
+    const args = ["-p", "--output-format", "json", "--append-system-prompt", SYSTEM];
+    if (MODEL) args.push("--model", MODEL);
+
+    const child = spawn("claude", args, { stdio: ["pipe", "pipe", "pipe"] });
+    let out = "";
+    let err = "";
+    child.stdout.on("data", (d) => (out += d));
+    child.stderr.on("data", (d) => (err += d));
+    child.on("error", reject);
+    child.on("close", (code) => {
+      if (code !== 0) return reject(new Error(`claude exited ${code}: ${err.trim()}`));
+      try {
+        // Headless JSON wraps the model's text in a result envelope.
+        const envelope = JSON.parse(out);
+        resolve(envelope.result ?? "");
+      } catch (e) {
+        reject(new Error(`could not parse claude output: ${e.message}`));
+      }
+    });
+
+    child.stdin.write(prompt);
+    child.stdin.end();
+  });
 }
 
 async function judgeBatch(items) {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) return null;
-
-  const res = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: {
-      "content-type": "application/json",
-      "x-api-key": apiKey,
-      "anthropic-version": "2023-06-01",
-    },
-    body: JSON.stringify({
-      model: MODEL,
-      max_tokens: 4096,
-      system: SYSTEM,
-      messages: [{ role: "user", content: buildUserMessage(items) }],
-    }),
-  });
-
-  if (!res.ok) {
-    throw new Error(`QC judge request failed (${res.status}): ${await res.text()}`);
-  }
-
-  const body = await res.json();
-  const text = body.content?.map((c) => c.text).join("") || "";
+  const text = await runClaude(buildPrompt(items));
   const match = text.match(/\[[\s\S]*\]/);
   if (!match) throw new Error("QC judge returned no JSON array");
 
@@ -96,9 +115,10 @@ async function judgeBatch(items) {
 
 export async function judgeItems(items) {
   if (!items.length) return [];
-  if (!process.env.ANTHROPIC_API_KEY) {
+
+  if (!(await claudeAvailable())) {
     process.stderr.write(
-      "QC judgment pass SKIPPED: ANTHROPIC_API_KEY is not set. " +
+      "QC judgment pass SKIPPED: `claude` (Claude Code) is not on PATH. " +
         "Deterministic results below are complete; the judgment pass ran on 0 items.\n"
     );
     return [];
@@ -108,8 +128,7 @@ export async function judgeItems(items) {
   for (let i = 0; i < items.length; i += BATCH_SIZE) {
     const batch = items.slice(i, i + BATCH_SIZE);
     try {
-      const judged = await judgeBatch(batch);
-      if (judged) out.push(...judged);
+      out.push(...(await judgeBatch(batch)));
     } catch (err) {
       // A failed batch must not be reported as a clean batch.
       process.stderr.write(`QC judge batch ${i / BATCH_SIZE} failed: ${err.message}\n`);

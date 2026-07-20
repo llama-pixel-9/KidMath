@@ -169,7 +169,13 @@ export function buildMultiplicative(structure, { g, s, p }, ctx, { asStory, form
     : useDivision
       ? divisionEquation(structure, { g, s, p })
       : structure.equation(g, s, p);
-  const givens = [g, s, p].filter((_, i) => ["g", "s", "p"][i] !== structure.solveFor);
+  // Match the rendered equation so `a op b = answer` holds for procedural
+  // items: a division rendering is "p / divisor = ?", not the model order.
+  const givens = useDivision
+    ? [p, structure.solveFor === "s" ? g : s]
+    : structure.solveFor === "p"
+      ? [g, s]
+      : [g, s, p].filter((_, i) => ["g", "s", "p"][i] !== structure.solveFor);
 
   return {
     a: givens[0],

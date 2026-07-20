@@ -136,8 +136,11 @@ describe("mode generation coverage", () => {
   it("multiplication mode generates 2-digit, typed-answer questions at Grade 4 levels", () => {
     const mult = getModeConfig("multiplication");
     // Level 10 uses two-digit factors -> numberPad; the product is the answer.
+    // Formats are switched off here: a format transform legitimately replaces
+    // the answer type (a true/false item is a choice), and this test is about
+    // the underlying generator.
     for (let i = 0; i < 40; i++) {
-      const q = mult.generate(10);
+      const q = mult.generate(10, { noFormats: true });
       expect(q.answerType).toBe("numberPad");
       expect(q.a >= 10 || q.b >= 10).toBe(true);
       // The mode now emits missing-factor items (`? x 5 = 90`) alongside
@@ -148,7 +151,7 @@ describe("mode generation coverage", () => {
     }
     // Early levels keep single-digit facts as multiple choice (no numberPad).
     for (let i = 0; i < 40; i++) {
-      const q = mult.generate(3);
+      const q = mult.generate(3, { noFormats: true });
       expect(q.answerType).toBeUndefined();
     }
   });

@@ -255,6 +255,12 @@ export function generateQuestion(mode, level, context = null) {
 }
 
 export function generateChoices(answer, count = 4, question = null) {
+  // A generator may supply its own option set. Format transforms depend on
+  // this: true/false, odd-one-out and missing-operator items have a fixed set
+  // of options that numeric distractors would make nonsense of.
+  if (Array.isArray(question?.choices) && question.choices.length >= 2) {
+    return question.choices;
+  }
   if (question?.mode) {
     try {
       const config = getModeConfig(question.mode);

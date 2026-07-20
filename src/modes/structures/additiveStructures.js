@@ -35,6 +35,7 @@ export const ADDITIVE_STRUCTURES = [
   // ---- Add To: x = start, y = change, z = end -----------------------------
   {
     id: "addToResultUnknown",
+    operands: (x, y) => [x, y],
     situation: "addTo",
     solveFor: SOLVE.Z,
     tier: TIERS.EASY,
@@ -70,6 +71,7 @@ export const ADDITIVE_STRUCTURES = [
   // ---- Take From: x = taken, y = left, z = start ---------------------------
   {
     id: "takeFromResultUnknown",
+    operands: (x, _y, z) => [z, x],
     situation: "takeFrom",
     solveFor: SOLVE.Y,
     tier: TIERS.EASY,
@@ -105,6 +107,7 @@ export const ADDITIVE_STRUCTURES = [
   // ---- Put Together / Take Apart: x = partA, y = partB, z = total ----------
   {
     id: "putTogetherTotalUnknown",
+    operands: (x, y) => [x, y],
     situation: "putTogether",
     solveFor: SOLVE.Z,
     tier: TIERS.EASY,
@@ -129,6 +132,7 @@ export const ADDITIVE_STRUCTURES = [
   // ---- Compare: x = smaller, y = difference, z = bigger --------------------
   {
     id: "compareDifferenceMore",
+    operands: (x, _y, z) => [z, x],
     situation: "compare",
     solveFor: SOLVE.Y,
     tier: TIERS.MIDDLE,
@@ -140,6 +144,7 @@ export const ADDITIVE_STRUCTURES = [
   },
   {
     id: "compareDifferenceFewer",
+    operands: (x, _y, z) => [z, x],
     situation: "compare",
     solveFor: SOLVE.Y,
     tier: TIERS.MIDDLE,
@@ -151,6 +156,7 @@ export const ADDITIVE_STRUCTURES = [
   },
   {
     id: "compareBiggerMore",
+    operands: (x, y) => [x, y],
     situation: "compare",
     solveFor: SOLVE.Z,
     tier: TIERS.MIDDLE,
@@ -163,6 +169,7 @@ export const ADDITIVE_STRUCTURES = [
   },
   {
     id: "compareBiggerFewer",
+    operands: (x, y) => [x, y],
     situation: "compare",
     solveFor: SOLVE.Z,
     tier: TIERS.DIFFICULT,
@@ -175,6 +182,7 @@ export const ADDITIVE_STRUCTURES = [
   },
   {
     id: "compareSmallerMore",
+    operands: (_x, y, z) => [z, y],
     situation: "compare",
     solveFor: SOLVE.X,
     tier: TIERS.DIFFICULT,
@@ -187,6 +195,7 @@ export const ADDITIVE_STRUCTURES = [
   },
   {
     id: "compareSmallerFewer",
+    operands: (_x, y, z) => [z, y],
     situation: "compare",
     solveFor: SOLVE.X,
     tier: TIERS.MIDDLE,
@@ -238,7 +247,14 @@ export function buildAdditive(structure, { x, y, z }, ctx, { asStory }) {
 
   // a/b carry the two *given* numbers so distractor builders and the bank's
   // item key keep working. The unknown is never one of them.
-  const givens = [x, y, z].filter((_, i) => ["x", "y", "z"][i] !== structure.solveFor);
+  //
+  // Where the structure declares `operands`, use that order instead: it matches
+  // the rendered equation, so `a op b = answer` genuinely holds and the format
+  // layer can rely on it. Embedded-unknown structures declare none, and their
+  // relation correctly does not hold.
+  const givens = structure.operands
+    ? structure.operands(x, y, z)
+    : [x, y, z].filter((_, i) => ["x", "y", "z"][i] !== structure.solveFor);
 
   return {
     a: givens[0],

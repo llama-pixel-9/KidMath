@@ -1,5 +1,7 @@
 import { buildArithmeticDistractors } from "./distractors";
 import { createQuestionMetadata } from "./itemMetadata";
+import { maybeApplyFormat } from "./formats";
+import { pickContext } from "./structures";
 import {
   MULTIPLICATIVE_STRUCTURES,
   generateMultiplicativeItem,
@@ -17,6 +19,8 @@ const STRUCTURES = MULTIPLICATIVE_STRUCTURES;
 
 // Kept as the mode's declared subskills so curated bank items, which are keyed
 // by subskill, keep resolving. Each structure maps onto one of these.
+const SUPPORTED_FORMATS = ["trueFalse","equationReversed","commutative","missingOperator","factFamily","doublingHalving","errorAnalysis","estimation"];
+
 const SUBSKILLS = ["equalGroups", "arrayReasoning", "factFluency"];
 
 export default {
@@ -27,6 +31,7 @@ export default {
   icon: "X",
   op: "x",
   subskills: SUBSKILLS,
+  supportedFormats: SUPPORTED_FORMATS,
   families: ["conceptual", "procedural", "application"],
   structureTypes: STRUCTURES.map((s) => s.id),
 
@@ -67,7 +72,15 @@ export default {
       blueprintId: `multiplication-${itemFamily}-${structure.id}`,
       structureType: structure.id,
     });
-    return question;
+
+    // Same mathematics, asked another way (M3). Story items are left alone —
+    // turning prose into an equation discards the context.
+    return maybeApplyFormat(
+      question,
+      level,
+      { actor: pickContext().actor, ...context },
+      SUPPORTED_FORMATS
+    );
   },
 
   generateChoices(answer, question) {

@@ -1,5 +1,7 @@
 import { buildArithmeticDistractors } from "./distractors";
 import { createQuestionMetadata } from "./itemMetadata";
+import { maybeApplyFormat } from "./formats";
+import { pickContext } from "./structures";
 import {
   ADDITIVE_STRUCTURES,
   generateAdditiveItem,
@@ -14,6 +16,8 @@ const STRUCTURES = ADDITIVE_STRUCTURES.filter((s) => s.op === "+");
 
 // Kept as the mode's declared subskills so the 3,924 curated bank items, which
 // are keyed by subskill, keep resolving. Each structure maps onto one of these.
+const SUPPORTED_FORMATS = ["trueFalse","equationReversed","reflexive","commutative","balanceBothSides","balanceOpen","relationalNonComputable","missingOperator","oddOneOut","twoCorrect","errorAnalysis","estimation"];
+
 const SUBSKILLS = ["makeTen", "composeDecompose", "unknownAddend"];
 
 export default {
@@ -24,6 +28,7 @@ export default {
   icon: "Plus",
   op: "+",
   subskills: SUBSKILLS,
+  supportedFormats: SUPPORTED_FORMATS,
   families: ["conceptual", "procedural", "application"],
   structureTypes: STRUCTURES.map((s) => s.id),
 
@@ -55,7 +60,15 @@ export default {
       blueprintId: `addition-${itemFamily}-${structure.id}`,
       structureType: structure.id,
     });
-    return question;
+
+    // Same mathematics, asked another way (M3). Story items are left alone —
+    // turning prose into an equation discards the context.
+    return maybeApplyFormat(
+      question,
+      level,
+      { actor: pickContext().actor, ...context },
+      SUPPORTED_FORMATS
+    );
   },
 
   generateChoices(answer, question) {

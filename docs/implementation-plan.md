@@ -198,6 +198,14 @@ auto-rejection is reviewer time returned.
 Compare/Smaller-Unknown-with-"more" item is specific and easily botched; the common failure is the model
 quietly rewriting a hard structure into an easy one.
 
+**6.4 status — the empty difficult tier is authored (drafts).** `authorStructures.js`
+generated 120 items (12 each) across the ten never-authored structures — both Start
+Unknowns, all four Compare language variants, the three multiplicative Compares, and
+array row-count. 100% cleared checkStructure + the QC gate and were written as
+`review_status='draft'` to Supabase, awaiting review in the queue. Model: Haiku, on the
+Claude subscription (no API cost). The language traps verify correct: "Emma has 15 fewer
+than Marcus, Emma has 34, how many does Marcus have?" = 49 (adds despite "fewer").
+
 **6.4 Authoring order.** Phase 5a at 25/cell (~2,850 items) makes everything playable → raise T1/T2 to
 full depth guided by real traffic → T4 breadth last.
 

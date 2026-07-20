@@ -702,7 +702,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":3,"op":"÷","answer":3,"display":{"promptText":"Use 3 × 3 = 9 to find 9 ÷ 3."}},
+    question: {"a":9,"b":3,"op":"÷","answer":3,"display":{"promptText":"9 ÷ 3 = ? Think: 3 times what makes 9?"}},
   },
   {
     itemId: "division-conc-inverseFact-K1-003",
@@ -732,7 +732,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":35,"b":5,"op":"÷","answer":7,"display":{"promptText":"Use 5 × 7 = 35 to find 35 ÷ 5."}},
+    question: {"a":35,"b":5,"op":"÷","answer":7,"display":{"promptText":"35 ÷ 5 = ? Think: 5 times what makes 35?"}},
   },
   {
     itemId: "division-conc-inverseFact-23-003",
@@ -762,7 +762,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":64,"b":8,"op":"÷","answer":8,"display":{"promptText":"Use 8 × 8 = 64 to find 64 ÷ 8."}},
+    question: {"a":64,"b":8,"op":"÷","answer":8,"display":{"promptText":"64 ÷ 8 = ? Think: 8 times what makes 64?"}},
   },
   {
     itemId: "division-conc-inverseFact-45-003",

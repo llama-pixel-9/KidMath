@@ -5,7 +5,7 @@
 import { validateBankItem } from "../../src/itemBank/index.js";
 import { BUNDLED_ITEMS } from "../../src/itemBank/bundle.js";
 import { licenseAllowed } from "./loadExemplars.js";
-import { checkStructure } from "./structureCheck.js";
+import { checkStructure } from "../../src/itemBank/qc/structureCheck.js";
 import { promptSignature } from "../../src/itemBank/index.js";
 
 /** At most this many items in one batch may share a prompt signature. */

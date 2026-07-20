@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { checkStructure, STRUCTURE_CHECKS } from "../../scripts/itemGen/structureCheck.js";
+import { checkStructure, STRUCTURE_CHECKS } from "../itemBank/qc/structureCheck.js";
 
 /**
  * The failure this exists to catch: asked for a hard structure, a model writes
@@ -103,12 +103,24 @@ describe("structure check catches the easy-rewrite failure", () => {
     expect(out.ok).toBe(false);
   });
 
-  it("rejects an item whose numbers do not appear in its prose", () => {
+  it("rejects an item stating neither of its numbers", () => {
+    // Truly unanswerable: no given and no answer in the prose. A repeated-
+    // addition reframing that shows only one factor is fine (see below), so the
+    // rule is "at least one number must appear", not "both".
     const out = checkStructure(
       item("addToResultUnknown", "Mina has some shells and finds more. How many now?", { a: 7, b: 5, answer: 12 })
     );
     expect(out.ok).toBe(false);
-    expect(out.problems.join(" ")).toMatch(/do not appear/);
+    expect(out.problems.join(" ")).toMatch(/neither/);
+  });
+
+  it("accepts a reframing that shows only one factor", () => {
+    // "Express 4 + 4 + 4 as a multiplication" — the group count (3) is implied
+    // by the addends and legitimately never printed.
+    const out = checkStructure(
+      item("equalGroupsProductUnknown", "Express 4 + 4 + 4 as a multiplication. What is the value?", { a: 3, b: 4, answer: 12 })
+    );
+    expect(out.ok).toBe(true);
   });
 
   it("rejects a draft claiming no structure at all", () => {

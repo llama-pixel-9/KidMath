@@ -27,8 +27,10 @@
  *   npm run bank:qc -- --limit 200        cap how many items go to the model
  */
 
-import { getBankItems } from "../../../src/itemBank/index.js";
-import { runChecks, CHECK_IDS } from "./checks.js";
+// The full authored corpus, not the shipped seed — QC audits everything that
+// exists, not just what is bundled.
+import { FULL_ITEMS } from "../../../src/itemBank/fullBank.js";
+import { runChecks, CHECK_IDS } from "../../../src/itemBank/qc/checks.js";
 import { judgeItems } from "./judge.js";
 
 const args = process.argv.slice(2);
@@ -42,7 +44,7 @@ const deterministicOnly = has("deterministic");
 const limit = Number(flag("limit", "0")) || 0;
 
 async function main() {
-  let items = getBankItems();
+  let items = FULL_ITEMS;
   if (modeFilter) items = items.filter((i) => i.modeId === modeFilter);
   if (!items.length) {
     process.stderr.write(`No items found${modeFilter ? ` for mode ${modeFilter}` : ""}.\n`);

@@ -12,7 +12,7 @@
  *   warn  — a human or the model should look
  */
 
-import { checkStructure } from "../structureCheck.js";
+import { checkStructure } from "./structureCheck.js";
 
 const fail = (id, message) => ({ id, severity: "fail", message });
 const warn = (id, message) => ({ id, severity: "warn", message });
@@ -34,37 +34,50 @@ const COUNTABLE_PLURALS = new Set([
   "stamps", "ribbons", "balloons", "candles", "muffins", "trucks", "trains",
 ]);
 
-/** Recompute the answer from the payload rather than trusting it. */
+const OPS = {
+  "+": (a, b) => a + b,
+  "-": (a, b) => a - b,
+  "−": (a, b) => a - b,
+  x: (a, b) => a * b,
+  "*": (a, b) => a * b,
+  "×": (a, b) => a * b,
+  "/": (a, b) => (b === 0 ? null : a / b),
+  "÷": (a, b) => (b === 0 ? null : a / b),
+};
+
+/**
+ * Recompute the answer from the payload rather than trusting it.
+ *
+ * When `op` is known, check EXACTLY that operation — an earlier version
+ * accepted the answer if any operation reached it, so `2 + 3 = 6` passed
+ * because 2 x 3 = 6. That is precisely the class of error this check exists to
+ * catch, so it was worse than useless.
+ *
+ * Two legitimate shapes: `a op b = answer`, and the embedded-unknown form where
+ * the answer is a missing operand (`? + 3 = 5` stores a=null or a=one part).
+ */
 function arithmeticCheck(item) {
   const q = item.question || {};
   const { a, b, answer, op } = q;
   if (typeof answer !== "number") return null;
   if (typeof a !== "number" || typeof b !== "number") return null;
+  const fn = OPS[op];
+  if (!fn) return null; // no operator to check against
 
-  const results = {
-    "+": a + b,
-    "-": a - b,
-    x: a * b,
-    "/": b === 0 ? null : a / b,
-  };
-  // The stated answer must be reachable from the two givens by SOME operation;
-  // for embedded-unknown structures the relation runs the other way round.
-  const reachable = [
-    ...Object.values(results),
-    answer + a === b ? answer : null,
-    a - answer,
-    b - answer,
-    answer * a === b ? answer : null,
-  ].filter((v) => v != null);
+  // Direct: a op b = answer.
+  if (fn(a, b) === answer) return null;
 
-  if (!reachable.includes(answer) && !reachable.some((v) => v === answer)) {
-    const consistent =
-      a + answer === b || answer + b === a || a * answer === b || answer * b === a;
-    if (!consistent) {
-      return fail("arithmetic", `answer ${answer} is not reachable from ${a} and ${b} via ${op || "any operation"}`);
-    }
+  // Embedded unknown: the answer is the operand the prose leaves blank. For a
+  // sum a + ? = b the missing part is b - a; the payload stores the two givens
+  // as a and b and the answer as the missing part.
+  if (op === "+" && (a + answer === b || answer + b === a)) return null;
+  if ((op === "-" || op === "−") && (a - answer === b || answer - b === a || a - b === answer)) return null;
+  if ((op === "x" || op === "*" || op === "×") && (a * answer === b || answer * b === a)) return null;
+  if ((op === "/" || op === "÷") && answer !== 0 && (a / answer === b || (b !== 0 && a / b === answer))) {
+    return null;
   }
-  return null;
+
+  return fail("arithmetic", `answer ${answer} is not consistent with ${a} ${op} ${b}`);
 }
 
 export const CHECKS = [
@@ -226,3 +239,19 @@ export function runChecks(item) {
 }
 
 export const CHECK_IDS = CHECKS.map((c) => c.id);
+
+/**
+ * Run the checks on an item in the ADMIN shape (payload / levelMin / levelMax)
+ * rather than the in-memory bank shape (question / levelRange). The admin UI
+ * and the CLI QC run the exact same checks; this only reconciles the two field
+ * conventions so there is one source of truth for what "a bad item" means.
+ */
+export function runChecksOnAdminItem(adminItem) {
+  return runChecks({
+    itemId: adminItem.itemId,
+    modeId: adminItem.modeId,
+    structureType: adminItem.structureType,
+    levelRange: [Number(adminItem.levelMin), Number(adminItem.levelMax)],
+    question: adminItem.payload,
+  });
+}

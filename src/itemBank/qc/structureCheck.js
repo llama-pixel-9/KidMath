@@ -158,13 +158,15 @@ export function checkStructure(item) {
   // would skip the worst case — a prompt stating no numbers at all, which is
   // unanswerable and was previously accepted.
   if (typeof a === "number" && typeof b === "number") {
-    // A "missing" number that equals the answer is not a missing given — the
-    // older bank sometimes stores the answer in `b`. The item is answerable;
-    // only its field convention differs, so that must not read as a content
-    // failure. It flagged 53 perfectly good items before this exclusion.
-    const missing = [a, b].filter((n) => !nums.includes(n) && n !== answer);
-    if (missing.length) {
-      problems.push(`payload numbers ${missing.join(", ")} do not appear in the prompt`);
+    // Require at least ONE given to appear, not both. A repeated-addition
+    // reframing ("Express 4 + 4 + 4 as a multiplication", a=3 b=4) legitimately
+    // never prints the group count, and demanding both flagged nine sound
+    // items. A prompt that states NEITHER given is genuinely unanswerable and
+    // still fails. (A "missing" number equalling the answer is the older bank's
+    // answer-in-b convention, not a real absence.)
+    const present = [a, b].filter((n) => nums.includes(n) || n === answer);
+    if (present.length === 0) {
+      problems.push(`neither payload number (${a}, ${b}) appears in the prompt`);
     }
   }
 

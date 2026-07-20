@@ -1,6 +1,7 @@
-import { useEffect, useMemo, useState } from "react";
-import { CheckCircle2, XCircle, RotateCcw } from "lucide-react";
+import { Fragment, useEffect, useMemo, useState } from "react";
+import { CheckCircle2, XCircle, RotateCcw, AlertTriangle, ShieldCheck } from "lucide-react";
 import { bulkSetReviewStatus, setReviewStatus } from "./itemBankAdminApi";
+import { runChecksOnAdminItem } from "../itemBank/qc/checks.js";
 
 // Review queue tab: shows items with reviewStatus=reviewed sorted by the cell
 // gap they would fill (empty cells first, then thin cells). Supports single
@@ -55,6 +56,17 @@ export default function ReviewQueue({
   const [error, setError] = useState(null);
   const [filterFamily, setFilterFamily] = useState("");
   const [filterBand, setFilterBand] = useState("");
+  const [filterQc, setFilterQc] = useState(""); // "", "fail", "flagged"
+  const [expanded, setExpanded] = useState(() => new Set());
+
+  // Deterministic QC for every item in view. Memoised on the item set: the same
+  // checks the CLI runs (src/itemBank/qc), so a reviewer sees exactly what the
+  // batch pre-screen saw and nothing drifts between the two.
+  const qcById = useMemo(() => {
+    const map = new Map();
+    for (const it of items || []) map.set(it.itemId, runChecksOnAdminItem(it));
+    return map;
+  }, [items]);
 
   const coverageMap = useMemo(() => {
     const map = new Map();
@@ -66,17 +78,40 @@ export default function ReviewQueue({
   }, [coverage]);
 
   const queue = useMemo(() => {
-    const filtered = (items || []).filter(
-      (it) =>
-        it.reviewStatus === "reviewed" &&
-        (!filterFamily || it.itemFamily === filterFamily) &&
-        (!filterBand || itemBands(it).includes(filterBand))
-    );
+    const filtered = (items || []).filter((it) => {
+      if (it.reviewStatus !== "reviewed") return false;
+      if (filterFamily && it.itemFamily !== filterFamily) return false;
+      if (filterBand && !itemBands(it).includes(filterBand)) return false;
+      if (filterQc) {
+        const qc = qcById.get(it.itemId);
+        if (filterQc === "fail" && qc?.pass !== false) return false;
+        if (filterQc === "flagged" && !(qc && qc.findings.length)) return false;
+      }
+      return true;
+    });
     return filtered
       .map((it) => ({ it, score: gapScore(it, coverageMap) }))
-      .sort((a, b) => a.score - b.score || a.it.itemId.localeCompare(b.it.itemId))
+      // QC failures float to the top: an item that cannot reach a child should
+      // be dealt with before one that merely fills a smaller coverage gap.
+      .sort((a, b) => {
+        const af = qcById.get(a.it.itemId)?.pass === false ? 0 : 1;
+        const bf = qcById.get(b.it.itemId)?.pass === false ? 0 : 1;
+        return af - bf || a.score - b.score || a.it.itemId.localeCompare(b.it.itemId);
+      })
       .map((x) => x.it);
-  }, [items, coverageMap, filterFamily, filterBand]);
+  }, [items, coverageMap, filterFamily, filterBand, filterQc, qcById]);
+
+  const qcSummary = useMemo(() => {
+    let fail = 0;
+    let warn = 0;
+    for (const it of items || []) {
+      if (it.reviewStatus !== "reviewed") continue;
+      const qc = qcById.get(it.itemId);
+      if (qc?.pass === false) fail += 1;
+      else if (qc?.findings.length) warn += 1;
+    }
+    return { fail, warn };
+  }, [items, qcById]);
 
   // Clear selections that are no longer in the queue.
   useEffect(() => {
@@ -96,8 +131,19 @@ export default function ReviewQueue({
     });
   }
 
+  // A bulk approve must not sneak a QC failure through. Other statuses (draft,
+  // retired) are always allowed — you retire the broken ones.
+  const selectionHasFailure = useMemo(
+    () => [...selected].some((id) => qcById.get(id)?.pass === false),
+    [selected, qcById]
+  );
+
   async function doBulk(reviewStatus) {
     if (selected.size === 0) return;
+    if (reviewStatus === "approved" && selectionHasFailure) {
+      setError("Some selected items fail QC and cannot be approved. Filter to QC failures to find them.");
+      return;
+    }
     setBusy(true);
     setError(null);
     try {
@@ -157,7 +203,36 @@ export default function ReviewQueue({
             </option>
           ))}
         </select>
+        <select
+          className="rounded-lg border border-gray-300 px-3 py-2 text-sm"
+          value={filterQc}
+          onChange={(e) => setFilterQc(e.target.value)}
+        >
+          <option value="">All QC</option>
+          <option value="fail">QC failures only</option>
+          <option value="flagged">Any QC finding</option>
+        </select>
       </div>
+
+      {(qcSummary.fail > 0 || qcSummary.warn > 0) && (
+        <div className="flex flex-wrap items-center gap-3 text-sm">
+          {qcSummary.fail > 0 && (
+            <button
+              type="button"
+              onClick={() => setFilterQc("fail")}
+              className="flex items-center gap-1 px-3 py-1 rounded-lg bg-red-50 text-red-700 font-semibold"
+            >
+              <XCircle className="h-4 w-4" /> {qcSummary.fail} must-fix
+            </button>
+          )}
+          {qcSummary.warn > 0 && (
+            <span className="flex items-center gap-1 text-amber-700">
+              <AlertTriangle className="h-4 w-4" /> {qcSummary.warn} with warnings
+            </span>
+          )}
+          <span className="text-slate-400">automated checks — approving a must-fix is blocked</span>
+        </div>
+      )}
 
       <div className="flex flex-wrap items-center gap-2">
         <button
@@ -203,6 +278,7 @@ export default function ReviewQueue({
                 />
               </th>
               <th className="px-3 py-2">Gap</th>
+              <th className="px-3 py-2">QC</th>
               <th className="px-3 py-2">ID</th>
               <th className="px-3 py-2">Mode / Subskill / Family</th>
               <th className="px-3 py-2">Levels</th>
@@ -213,8 +289,14 @@ export default function ReviewQueue({
           <tbody>
             {queue.map((it) => {
               const score = gapScore(it, coverageMap);
+              const qc = qcById.get(it.itemId);
+              const qcFail = qc?.pass === false;
+              const isExpanded = expanded.has(it.itemId);
               return (
-                <tr key={it.itemId} className="border-t border-gray-100 hover:bg-violet-50">
+              <Fragment key={it.itemId}>
+                <tr
+                  className={`border-t border-gray-100 hover:bg-violet-50 ${qcFail ? "bg-red-50/60" : ""}`}
+                >
                   <td className="px-3 py-2">
                     <input
                       type="checkbox"
@@ -223,6 +305,28 @@ export default function ReviewQueue({
                     />
                   </td>
                   <td className="px-3 py-2 font-mono text-xs">{score}</td>
+                  <td className="px-3 py-2">
+                    {qc && qc.findings.length > 0 ? (
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setExpanded((prev) => {
+                            const next = new Set(prev);
+                            if (next.has(it.itemId)) next.delete(it.itemId);
+                            else next.add(it.itemId);
+                            return next;
+                          })
+                        }
+                        className={`flex items-center gap-1 text-xs font-bold ${qcFail ? "text-red-700" : "text-amber-700"}`}
+                        title="Show findings"
+                      >
+                        {qcFail ? <XCircle className="h-4 w-4" /> : <AlertTriangle className="h-4 w-4" />}
+                        {qc.findings.length}
+                      </button>
+                    ) : (
+                      <ShieldCheck className="h-4 w-4 text-emerald-500" />
+                    )}
+                  </td>
                   <td
                     className="px-3 py-2 font-mono text-xs cursor-pointer"
                     onClick={() => onOpenEditor?.(it)}
@@ -243,9 +347,13 @@ export default function ReviewQueue({
                   <td className="px-3 py-2">
                     <button
                       type="button"
-                      className="text-xs text-emerald-700 font-bold mr-2 disabled:opacity-50"
+                      className="text-xs text-emerald-700 font-bold mr-2 disabled:opacity-30"
                       onClick={() => doSingle(it.itemId, "approved")}
-                      disabled={busy}
+                      // An item that fails a deterministic check cannot reach a
+                      // child. Fix it in the editor first; a warning does not
+                      // block, since those are advisory.
+                      disabled={busy || qcFail}
+                      title={qcFail ? "Fix the QC failure before approving" : undefined}
                     >
                       Approve
                     </button>
@@ -259,11 +367,29 @@ export default function ReviewQueue({
                     </button>
                   </td>
                 </tr>
+                {isExpanded && qc && (
+                  <tr className="bg-slate-50">
+                    <td colSpan={8} className="px-6 py-2">
+                      <ul className="space-y-1">
+                        {qc.findings.map((f, i) => (
+                          <li
+                            key={i}
+                            className={`text-xs ${f.severity === "fail" ? "text-red-700" : "text-amber-700"}`}
+                          >
+                            <span className="font-bold uppercase mr-2">{f.severity}</span>
+                            <span className="font-mono">{f.id}</span>: {f.message}
+                          </li>
+                        ))}
+                      </ul>
+                    </td>
+                  </tr>
+                )}
+              </Fragment>
               );
             })}
             {queue.length === 0 && (
               <tr>
-                <td colSpan={7} className="px-3 py-6 text-center text-sm text-slate-500">
+                <td colSpan={8} className="px-3 py-6 text-center text-sm text-slate-500">
                   Review queue is empty.
                 </td>
               </tr>

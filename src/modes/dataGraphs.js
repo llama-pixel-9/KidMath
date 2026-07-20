@@ -12,6 +12,15 @@ const CATEGORY_SETS = [
   ["Bikes", "Cars", "Buses", "Vans"],
 ];
 
+// Application contexts. Each is a short lead-in naming an actor and a concrete
+// setting; the question sentence is appended by the generator.
+const CONTEXTS = [
+  "Nia surveyed her class and made this graph.",
+  "Theo counted what the school garden club brought in.",
+  "Ava recorded this tally at the library table.",
+  "Luca graphed what the after-school group chose.",
+];
+
 function chooseFamily(level, context) {
   if (context?.itemFamily) return context.itemFamily;
   const roll = Math.random();
@@ -41,19 +50,27 @@ export default {
     const hi = level <= 3 ? 8 : level <= 6 ? 12 : 20;
     const bars = labels.map((label) => ({ label, value: randInt(1, hi) }));
 
+    const isApplication = itemFamily === ITEM_FAMILIES.APPLICATION;
+    const lead = CONTEXTS[randInt(0, CONTEXTS.length - 1)];
+
     let answer;
     let promptText;
     if (subskill === "compareBars") {
-      // Ensure a positive difference by ordering two distinct bars.
-      const [i, j] = [0, 1];
+      // Pick two distinct bars at random, then order them so the difference is
+      // positive and the question text matches the chosen pair.
+      const i = randInt(0, bars.length - 1);
+      let j = randInt(0, bars.length - 2);
+      if (j >= i) j += 1;
       const a = bars[i].value >= bars[j].value ? bars[i] : bars[j];
       const b = bars[i].value >= bars[j].value ? bars[j] : bars[i];
       answer = a.value - b.value;
-      promptText = `How many more ${a.label} than ${b.label}?`;
+      const ask = `How many more ${a.label} than ${b.label}?`;
+      promptText = isApplication ? `${lead} ${ask}` : ask;
     } else {
       const pickIdx = randInt(0, bars.length - 1);
       answer = bars[pickIdx].value;
-      promptText = `How many ${bars[pickIdx].label}?`;
+      const ask = `How many ${bars[pickIdx].label}?`;
+      promptText = isApplication ? `${lead} ${ask}` : ask;
     }
 
     const question = {

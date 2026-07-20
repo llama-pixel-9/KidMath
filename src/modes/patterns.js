@@ -7,6 +7,21 @@ import { createQuestionMetadata, ITEM_FAMILIES } from "./itemMetadata";
 
 const SUBSKILLS = ["arithmeticNext", "geometricNext", "missingTerm"];
 
+// Application contexts: a named actor plus a concrete repeated-quantity setting.
+// Each entry builds the full word problem from the sequence and step.
+const CONTEXTS = [
+  (seq) => `Mina stacks books in the library cart: ${seq}. How many books in the next stack?`,
+  (seq) => `Sam plants seeds in garden rows: ${seq}. How many seeds go in the next row?`,
+  (seq) => `Luca counts apples packed per crate: ${seq}. How many apples in the next crate?`,
+  (seq) => `Nia lines up chairs for each class: ${seq}. How many chairs for the next class?`,
+];
+
+const GAP_CONTEXTS = [
+  (seq) => `Theo tracks laps run each week: ${seq}. How many laps in the missing week?`,
+  (seq) => `Ava records shells found each day: ${seq}. How many shells on the missing day?`,
+  (seq) => `Sam counts stickers earned each round: ${seq}. How many stickers in the missing round?`,
+];
+
 function chooseFamily(level, context) {
   if (context?.itemFamily) return context.itemFamily;
   const roll = Math.random();
@@ -32,6 +47,7 @@ export default {
       ? context.targetSubskill
       : SUBSKILLS[randInt(0, SUBSKILLS.length - 1)];
 
+    const isApplication = itemFamily === ITEM_FAMILIES.APPLICATION;
     let sequence;
     let answer;
     let promptText;
@@ -41,20 +57,26 @@ export default {
       const factor = randInt(2, 3);
       sequence = [start, start * factor, start * factor * factor, start * factor ** 3];
       answer = start * factor ** 4;
-      promptText = `Pattern: ${sequence.join(", ")}, ? — each term is ×${factor}.`;
+      promptText = isApplication
+        ? CONTEXTS[randInt(0, CONTEXTS.length - 1)](sequence.join(", "))
+        : `Pattern: ${sequence.join(", ")}, ? — each term is ×${factor}.`;
     } else if (subskill === "missingTerm") {
       const start = randInt(1, 9);
       const step = randInt(2, level <= 6 ? 5 : 9);
       const full = [start, start + step, start + 2 * step, start + 3 * step];
       answer = full[2];
       sequence = [full[0], full[1], "?", full[3]];
-      promptText = `Fill the gap: ${sequence.join(", ")}.`;
+      promptText = isApplication
+        ? GAP_CONTEXTS[randInt(0, GAP_CONTEXTS.length - 1)](sequence.join(", "))
+        : `Fill the gap: ${sequence.join(", ")}.`;
     } else {
       const start = randInt(0, 9);
       const step = randInt(2, level <= 6 ? 6 : 12);
       sequence = [start, start + step, start + 2 * step, start + 3 * step];
       answer = start + 4 * step;
-      promptText = `Pattern: ${sequence.join(", ")}, ? — what comes next?`;
+      promptText = isApplication
+        ? CONTEXTS[randInt(0, CONTEXTS.length - 1)](sequence.join(", "))
+        : `Pattern: ${sequence.join(", ")}, ? — what comes next?`;
     }
 
     const question = {

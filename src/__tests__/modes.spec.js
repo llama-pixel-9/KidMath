@@ -337,7 +337,14 @@ describe("mode generation coverage", () => {
     for (let i = 0; i < 40; i++) {
       const q = ls.generate(8);
       expect(q.answerType).toBe("numberPad");
-      expect(q.answer).toBeGreaterThanOrEqual(2);
+      expect(Number.isInteger(q.answer)).toBe(true);
+      // Shapes with no line of symmetry (parallelogram, scalene triangle) are
+      // valid Grade-4 items, so 0 is an allowed answer for symmetryLines.
+      if (q.metadata.subskill === "symmetryLines") {
+        expect(q.answer).toBeGreaterThanOrEqual(0);
+      } else {
+        expect(q.answer).toBeGreaterThanOrEqual(3);
+      }
     }
   });
 

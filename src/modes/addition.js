@@ -52,7 +52,9 @@ export default {
     const answer = a + b;
 
     let question = { a, b, op: "+", answer, level };
-    if (itemFamily === ITEM_FAMILIES.CONCEPTUAL && subskill === "unknownAddend") {
+    if (subskill === "unknownAddend") {
+      // Missing-addend is the whole point of this subskill, so it fires for
+      // every family. Application framing keeps the same unknown in context.
       const total = answer;
       question = {
         a,
@@ -60,7 +62,12 @@ export default {
         op: "+",
         answer: b,
         level,
-        display: { promptText: `${a} + ? = ${total}` },
+        display: {
+          promptText:
+            itemFamily === ITEM_FAMILIES.APPLICATION
+              ? `Mina picked ${a} apples. She now has ${total} apples. How many more did she pick?`
+              : `${a} + ? = ${total}`,
+        },
       };
     } else if (itemFamily === ITEM_FAMILIES.APPLICATION) {
       question = {
@@ -80,8 +87,10 @@ export default {
       cluster: "Add and subtract within 20 and beyond",
       subskill,
       itemFamily,
-      cognitiveDemand: itemFamily === ITEM_FAMILIES.PROCEDURAL ? "DOK1" : "DOK2",
-      representation: question.display?.promptText ? "verbalContext" : "symbolic",
+      cognitiveDemand:
+        itemFamily === ITEM_FAMILIES.PROCEDURAL && subskill !== "unknownAddend" ? "DOK1" : "DOK2",
+      // A missing-addend equation is still symbolic; only word problems are verbal.
+      representation: itemFamily === ITEM_FAMILIES.APPLICATION ? "verbalContext" : "symbolic",
       mathPractices: ["MP1", "MP2", "MP7"],
       standardRefs: ["K.OA", "1.OA", "2.OA"],
       misconceptionTags: ["operationSwap", "offByOne", "placeValueSlip"],

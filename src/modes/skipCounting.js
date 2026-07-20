@@ -72,7 +72,12 @@ export default {
     }
 
     if (itemFamily === ITEM_FAMILIES.APPLICATION) {
-      question.display.promptText = `A pattern grows by ${cfg.step}. What comes next?`;
+      // Levels 1-3 keep the rule stated as scaffolding. From level 4 the child
+      // must infer the step from the sequence, so the prompt must not reveal it.
+      question.display.promptText =
+        level <= 3
+          ? `A pattern grows by ${cfg.step}. What comes next?`
+          : `Sam counts these in equal jumps: ${sequence.join(", ")}. What number comes next?`;
     }
 
     question.metadata = createQuestionMetadata({

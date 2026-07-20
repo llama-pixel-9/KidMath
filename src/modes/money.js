@@ -43,10 +43,12 @@ export default {
     } else {
       const quarters = randInt(0, level <= 3 ? 2 : 4);
       const dimes = randInt(0, 4);
+      const nickels = randInt(0, level <= 3 ? 2 : 4);
       const pennies = randInt(0, 9);
-      answer = quarters * 25 + dimes * 10 + pennies;
-      symbolic = `${quarters} quarters, ${dimes} dimes, and ${pennies} pennies. How many cents?`;
-      contextual = `Maya has ${quarters} quarters, ${dimes} dimes, and ${pennies} pennies. How many cents in all?`;
+      answer = quarters * 25 + dimes * 10 + nickels * 5 + pennies;
+      const coins = `${quarters} quarters, ${dimes} dimes, ${nickels} nickels, and ${pennies} pennies`;
+      symbolic = `${coins}. How many cents?`;
+      contextual = `Maya has ${coins}. How many cents in all?`;
     }
 
     const question = {

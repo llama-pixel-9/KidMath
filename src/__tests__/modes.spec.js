@@ -156,39 +156,70 @@ describe("mode generation coverage", () => {
     }
   });
 
-  it("comparing generates symbolSelect questions whose answer is a comparison symbol", () => {
+  // M4: comparing is no longer one shape. It spans symbol selection, set
+  // comparison, expression and place-value comparison, ordering, benchmarks,
+  // true/false, relational non-computables, number lines and two Table 1
+  // Compare stories, so `symbolSelect` is now one answer type among several.
+  // Every symbol-picking item still answers with <, > or =; see
+  // m4NumberSense.spec.js for the per-variety correctness proofs.
+  it("comparing symbol items answer with a comparison symbol", () => {
     const comparing = getModeConfig("comparing");
+    const seenTypes = new Set();
     for (let level = 1; level <= 10; level++) {
       for (let i = 0; i < 20; i++) {
-        const q = comparing.generate(level);
-        expect(q.answerType).toBe("symbolSelect");
-        expect(["<", ">", "="]).toContain(q.answer);
+        const q = comparing.generate(level, { noFormats: true });
+        seenTypes.add(q.answerType || "choice");
+        if (q.answerType === "symbolSelect") {
+          expect(["<", ">", "="]).toContain(q.answer);
+        }
       }
+    }
+    expect(seenTypes.has("symbolSelect")).toBe(true);
+    for (let i = 0; i < 20; i++) {
+      const q = comparing.generate(3, { varietyId: "symbolBetweenNumerals" });
+      expect(q.answerType).toBe("symbolSelect");
+      expect(["<", ">", "="]).toContain(q.answer);
     }
   });
 
-  it("skipCounting uses fillBlank at Grade 2+ and stays multiple-choice at K-1", () => {
+  // M4: the mode now runs 14 varieties (backward runs, missing middle/start
+  // terms, off-multiple runs, rule identification, membership, number lines...),
+  // so the answer type follows the variety. The next-term run keeps its old
+  // contract, pinned here by varietyId.
+  it("skipCounting next-term items use fillBlank at Grade 2+ and stay multiple-choice at K-1", () => {
     const skip = getModeConfig("skipCounting");
     for (let i = 0; i < 20; i++) {
-      const q = skip.generate(6);
+      const q = skip.generate(6, { varietyId: "nextTermForward", noFormats: true });
       expect(q.answerType).toBe("fillBlank");
       // Answer is the next term after the shown 3-term sequence.
       expect(q.answer).toBe(q.display.sequence[2] + q.display.step);
     }
     for (let i = 0; i < 20; i++) {
-      const q = skip.generate(2);
+      const q = skip.generate(2, { varietyId: "nextTermForward", noFormats: true });
       expect(q.answerType).toBeUndefined();
     }
   });
 
-  it("fractions mode generates valid fraction/symbolSelect/fractionSet items", () => {
+  // M4: fractions is no longer four tiers of one symbolic shape. It now spans
+  // part-whole naming, fraction-as-a-number on a line, three comparison
+  // strategies, equivalence, like-denominator arithmetic and fraction-of-a-set,
+  // so the answerType set is correspondingly wider. Per-item correctness is
+  // recomputed independently in m4Fractions.spec.js.
+  it("fractions mode generates valid items across its widened answer types", () => {
     const fractions = getModeConfig("fractions");
     const seenTypes = new Set();
     for (let level = 3; level <= 10; level++) {
       for (let i = 0; i < 40; i++) {
         const q = fractions.generate(level);
         seenTypes.add(q.answerType);
-        expect(["fraction", "symbolSelect", "fractionSet"]).toContain(q.answerType);
+        expect([
+          "fraction",
+          "symbolSelect",
+          "fractionSet",
+          "numberLine",
+          "multiSelect",
+          "choice",
+        ]).toContain(q.answerType);
         expect(q.display.promptText).toBeTruthy();
         if (q.answerType === "symbolSelect") {
           expect(["<", ">", "="]).toContain(q.answer);
@@ -197,29 +228,42 @@ describe("mode generation coverage", () => {
           const { total, num, den } = q.display.set;
           expect(q.answer).toBe((total / den) * num);
           expect(Number.isInteger(q.answer)).toBe(true);
-        } else {
+        } else if (q.answerType === "fraction") {
           expect(Number.isInteger(q.answer.num)).toBe(true);
           expect(q.answer.den).toBeGreaterThan(0);
+        } else if (q.answerType === "multiSelect") {
+          expect(Array.isArray(q.answer)).toBe(true);
+          expect(q.answer.length).toBeGreaterThan(0);
+        } else {
+          expect(q.answer).not.toBe(null);
         }
       }
     }
     expect(seenTypes.has("fraction")).toBe(true);
     expect(seenTypes.has("symbolSelect")).toBe(true);
     expect(seenTypes.has("fractionSet")).toBe(true);
+    expect(seenTypes.has("numberLine")).toBe(true);
   });
 
-  it("decimals mode generates valid decimal/symbolSelect items", () => {
+  it("decimals mode generates valid items across its widened answer types", () => {
     const decimals = getModeConfig("decimals");
     const seenTypes = new Set();
     for (let level = 3; level <= 10; level++) {
       for (let i = 0; i < 30; i++) {
         const q = decimals.generate(level);
         seenTypes.add(q.answerType);
-        expect(["decimal", "symbolSelect"]).toContain(q.answerType);
+        expect([
+          "decimal",
+          "symbolSelect",
+          "numberLine",
+          "fraction",
+          "multiSelect",
+          "choice",
+        ]).toContain(q.answerType);
         expect(q.display.promptText).toBeTruthy();
         if (q.answerType === "symbolSelect") {
           expect(["<", ">", "="]).toContain(q.answer);
-        } else {
+        } else if (q.answerType === "decimal" || q.answerType === "numberLine") {
           expect(typeof q.answer).toBe("number");
           expect(q.answer).toBeGreaterThan(0);
         }
@@ -227,13 +271,18 @@ describe("mode generation coverage", () => {
     }
     expect(seenTypes.has("decimal")).toBe(true);
     expect(seenTypes.has("symbolSelect")).toBe(true);
+    expect(seenTypes.has("numberLine")).toBe(true);
   });
 
-  it("numberBonds mode generates part-whole items with the missing part as answer", () => {
+  // M4: which node is blank is now a generator parameter (research §3.3), so
+  // the mode also produces whole-unknown, three-part, make-ten, place-value and
+  // multi-answer bonds. The part-unknown bond — the one the NumberBond widget
+  // draws — keeps its exact old contract.
+  it("numberBonds part-unknown items put the missing part in the bond slot", () => {
     const bonds = getModeConfig("numberBonds");
     for (let level = 1; level <= 10; level++) {
       for (let i = 0; i < 20; i++) {
-        const q = bonds.generate(level);
+        const q = bonds.generate(level, { varietyId: "partUnknown", noFormats: true });
         expect(q.answerType).toBe("numberBond");
         expect(q.display.whole).toBeGreaterThan(q.display.part);
         expect(q.answer).toBe(q.display.whole - q.display.part);
@@ -242,13 +291,18 @@ describe("mode generation coverage", () => {
     }
   });
 
-  it("barModels mode generates part-whole and comparison bars with correct answers", () => {
+  // M4: barModels now covers all seven §3.2 schemas. Only the schemas the
+  // BarModel widget can draw truthfully (part-whole with the whole known, and
+  // comparison with the smaller amount plus the difference known) keep the
+  // `barModel` answerType; the rest would have to print the answer inside the
+  // diagram, so they are asked as typed or multiple-choice items.
+  it("barModels mode draws part-whole and comparison bars with correct answers", () => {
     const bars = getModeConfig("barModels");
     const seenTypes = new Set();
     for (let level = 1; level <= 10; level++) {
       for (let i = 0; i < 20; i++) {
-        const q = bars.generate(level);
-        expect(q.answerType).toBe("barModel");
+        const q = bars.generate(level, { noFormats: true });
+        if (q.answerType !== "barModel") continue;
         seenTypes.add(q.display.type);
         if (q.display.type === "barCompare") {
           expect(q.answer).toBe(q.display.a + q.display.diff);
@@ -262,32 +316,54 @@ describe("mode generation coverage", () => {
     expect(seenTypes.has("barPartWhole")).toBe(true);
   });
 
-  it("placeValueDiscs mode: disc columns sum to the answer", () => {
+  // M4: the mode gained trading, renaming, regroup prediction and disc
+  // operations, which are typed or chosen rather than read off a mat. Whenever
+  // a chart IS drawn, its columns must still sum to the answer.
+  it("placeValueDiscs mode: a drawn chart's columns sum to the answer", () => {
     const pv = getModeConfig("placeValueDiscs");
+    let charts = 0;
     for (let level = 1; level <= 10; level++) {
       for (let i = 0; i < 20; i++) {
         const q = pv.generate(level);
-        expect(q.answerType).toBe("placeValueDiscs");
+        expect(q.answer).not.toBeNull();
+        if (q.answerType !== "placeValueDiscs") continue;
+        // A drawn chart always shows a positive number; "how many tens discs
+        // do you need for 305?" legitimately answers 0, which is why the
+        // positivity check belongs here and not above.
+        expect(q.answer).toBeGreaterThan(0);
+        charts++;
         const sum = q.display.cols.reduce((s, c) => s + c.place * c.count, 0);
         expect(sum).toBe(q.answer);
-        expect(q.answer).toBeGreaterThan(0);
       }
     }
+    expect(charts).toBeGreaterThan(0);
   });
 
   it("practical Grade 3-4 modes (factors/area/money) produce correct numeric answers", () => {
+    // M4: factorsMultiples grew from 2 shapes to 13, so it now emits
+    // multiSelect (list the factors), choice (prime or composite?) and choice
+    // items alongside the original typed answers.
     const fm = getModeConfig("factorsMultiples");
     for (let i = 0; i < 40; i++) {
-      const q = fm.generate(8);
-      expect(q.answerType).toBe("numberPad");
-      expect(Number.isInteger(q.answer)).toBe(true);
-      expect(q.answer).toBeGreaterThan(0);
+      const q = fm.generate(8, { noFormats: true });
+      expect(["numberPad", "multiSelect", "choice"]).toContain(q.answerType);
+      if (q.answerType === "numberPad") {
+        expect(Number.isInteger(q.answer)).toBe(true);
+        expect(q.answer).toBeGreaterThan(0);
+      }
     }
+    // areaPerimeter is no longer "w x h or 2(w+h) on a random rectangle" (M4):
+    // it also emits grids, missing sides, composite L-shapes and reasoning
+    // items. Where the item still carries a rectangle, that rectangle must
+    // still explain the answer. Full per-variety recomputation lives in
+    // m4Measurement.spec.js.
     const ap = getModeConfig("areaPerimeter");
     for (let i = 0; i < 40; i++) {
-      const q = ap.generate(8);
+      const q = ap.generate(8, { noFormats: true });
       const { width: w, height: h } = q.display;
-      expect([w * h, 2 * (w + h)]).toContain(q.answer);
+      if (typeof w !== "number" || typeof h !== "number") continue;
+      if (typeof q.answer !== "number") continue;
+      expect([w * h, 2 * (w + h), w, h, Math.abs(w * h - 2 * (w + h))]).toContain(q.answer);
     }
     const money = getModeConfig("money");
     for (let i = 0; i < 40; i++) {
@@ -305,71 +381,93 @@ describe("mode generation coverage", () => {
   });
 
   it("patterns/measurement/time modes produce valid answers", () => {
+    // M4: patterns gained repeating (AB/ABC) patterns, rule identification,
+    // find-the-error and a real application row, so `choice` and `numberPad`
+    // join the original fillBlank.
     const patterns = getModeConfig("patterns");
     for (let i = 0; i < 40; i++) {
-      const q = patterns.generate(8);
-      expect(q.answerType).toBe("fillBlank");
-      expect(Number.isInteger(q.answer)).toBe(true);
+      const q = patterns.generate(8, { noFormats: true });
+      expect(["fillBlank", "numberPad", "choice"]).toContain(q.answerType);
+      if (q.answerType === "fillBlank" || q.answerType === "numberPad") {
+        expect(Number.isInteger(q.answer)).toBe(true);
+      }
     }
+    // M4: measurement is no longer conversion-only. It now also compares
+    // measures (symbolSelect), picks units and benchmarks (choice) and selects
+    // measures against a threshold (multiSelect).
     const measurement = getModeConfig("measurement");
-    for (let i = 0; i < 40; i++) {
-      const q = measurement.generate(8);
-      expect(q.answerType).toBe("numberPad");
-      expect(q.answer).toBeGreaterThan(0);
+    for (let i = 0; i < 60; i++) {
+      const q = measurement.generate(8, { noFormats: true });
+      expect(["numberPad", "choice", "symbolSelect", "multiSelect"]).toContain(q.answerType);
+      if (q.answerType === "numberPad") expect(q.answer).toBeGreaterThan(0);
+      if (q.answerType === "symbolSelect") expect(["<", ">", "="]).toContain(q.answer);
     }
+    // M4: time gained the clock-reading ladder and time-valued answers ("what
+    // time does it end?"), which are strings, so the answer is no longer always
+    // a number. The clock widget still answers minutes past the hour.
     const time = getModeConfig("time");
     const seen = new Set();
     for (let i = 0; i < 60; i++) {
       const q = time.generate(8);
       seen.add(q.answerType);
-      expect(["clock", "numberPad"]).toContain(q.answerType);
+      expect(["clock", "numberPad", "choice"]).toContain(q.answerType);
       if (q.answerType === "clock") {
         expect(q.answer).toBe(q.display.minute);
         expect(q.display.hour).toBeGreaterThanOrEqual(1);
       }
-      expect(q.answer).toBeGreaterThanOrEqual(0);
+      if (typeof q.answer === "number") expect(q.answer).toBeGreaterThanOrEqual(0);
     }
     expect(seen.has("clock")).toBe(true);
   });
 
   it("dataGraphs/angles/linesShapes modes produce valid answers", () => {
+    // M4: dataGraphs now also renders pictographs, tallies and line plots as
+    // text (numberPad) and asks multi-statement questions (multiSelect), so a
+    // bar graph is one representation among several.
     const dg = getModeConfig("dataGraphs");
-    for (let i = 0; i < 40; i++) {
+    let sawBars = false;
+    for (let i = 0; i < 60; i++) {
       const q = dg.generate(8);
-      expect(q.answerType).toBe("barGraph");
-      expect(Array.isArray(q.display.bars)).toBe(true);
-      expect(q.answer).toBeGreaterThanOrEqual(0);
+      expect(["barGraph", "numberPad", "choice", "multiSelect"]).toContain(q.answerType);
+      if (q.answerType === "barGraph") {
+        sawBars = true;
+        expect(Array.isArray(q.display.bars)).toBe(true);
+        expect(q.answer).toBeGreaterThanOrEqual(0);
+      }
     }
+    expect(sawBars).toBe(true);
+    // M4: the `angle` widget now also carries missing-angle items, where the
+    // figure shows the KNOWN angle and the answer is the other one.
     const ang = getModeConfig("angles");
     const seen = new Set();
     for (let i = 0; i < 60; i++) {
       const q = ang.generate(8);
       seen.add(q.answerType);
-      expect(["angle", "numberPad"]).toContain(q.answerType);
-      if (q.answerType === "angle") expect(q.answer).toBe(q.display.degrees);
-      expect(q.answer).toBeGreaterThan(0);
+      expect(["angle", "numberPad", "choice", "shapeFigure"]).toContain(q.answerType);
+      if (typeof q.answer === "number") expect(q.answer).toBeGreaterThanOrEqual(0);
     }
     expect(seen.has("angle")).toBe(true);
+    // M4: linesShapes gained property, hierarchy and line-figure varieties, so
+    // `choice` joins the typed and drawn ones, and a figure item may now show
+    // FOUR shapes to pick between (shapeMode "select") rather than one to
+    // count. Counting items still never name the shape in the prompt.
     const ls = getModeConfig("linesShapes");
-    for (let i = 0; i < 40; i++) {
+    for (let i = 0; i < 60; i++) {
       const q = ls.generate(8);
-      // Drawable shapes now render a figure (M2); named-only shapes and word
-      // problems stay typed.
-      expect(["numberPad", "shapeFigure"]).toContain(q.answerType);
-      expect(Number.isInteger(q.answer)).toBe(true);
+      expect(["numberPad", "shapeFigure", "choice", "multiSelect"]).toContain(q.answerType);
       if (q.answerType === "shapeFigure") {
-        expect(q.display.shape, "figure items must name a drawable shape").toBeTruthy();
-        // A drawn item must never also name the shape in the prompt, or the
-        // picture is decoration and the question is still vocabulary.
-        expect(q.display.promptText).toContain("this shape");
+        if (q.display.shapeMode === "select") {
+          expect(q.display.options.length).toBeGreaterThan(1);
+          expect(q.display.options.map((o) => o.value)).toContain(q.answer);
+        } else {
+          expect(q.display.shape, "figure items must name a drawable shape").toBeTruthy();
+          expect(q.display.promptText).toContain("this shape");
+          expect(Number.isInteger(q.answer)).toBe(true);
+        }
       }
       // Shapes with no line of symmetry (parallelogram, scalene triangle) are
-      // valid Grade-4 items, so 0 is an allowed answer for symmetryLines.
-      if (q.metadata.subskill === "symmetryLines") {
-        expect(q.answer).toBeGreaterThanOrEqual(0);
-      } else {
-        expect(q.answer).toBeGreaterThanOrEqual(3);
-      }
+      // valid Grade-4 items, so 0 is an allowed answer.
+      if (typeof q.answer === "number") expect(q.answer).toBeGreaterThanOrEqual(0);
     }
   });
 

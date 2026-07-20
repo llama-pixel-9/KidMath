@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "vitest run src/__tests__/modes.spec.js src/__tests__/sessionEngine.spec.js src/__tests__/itemBank.spec.js src/__tests__/itemBankCoverage.spec.js src/__tests__/cloudLoader.spec.js src/__tests__/nearDuplicate.spec.js src/__tests__/gradeBands.spec.js src/__tests__/answerCheck.spec.js src/__tests__/itemGenPrompt.spec.js src/__tests__/fractions.spec.js src/__tests__/modeGroups.spec.js src/__tests__/widgetRegistry.spec.js src/__tests__/structures.spec.js src/__tests__/multiAnswer.spec.js src/__tests__/formats.spec.js src/__tests__/distractors.spec.js src/__tests__/varietyReport.spec.js",
+    "test": "vitest run src/__tests__/modes.spec.js src/__tests__/sessionEngine.spec.js src/__tests__/itemBank.spec.js src/__tests__/itemBankCoverage.spec.js src/__tests__/cloudLoader.spec.js src/__tests__/nearDuplicate.spec.js src/__tests__/gradeBands.spec.js src/__tests__/answerCheck.spec.js src/__tests__/itemGenPrompt.spec.js src/__tests__/fractions.spec.js src/__tests__/modeGroups.spec.js src/__tests__/widgetRegistry.spec.js src/__tests__/structures.spec.js src/__tests__/multiAnswer.spec.js src/__tests__/formats.spec.js src/__tests__/distractors.spec.js src/__tests__/varietyReport.spec.js src/__tests__/m4NumberSense.spec.js src/__tests__/m4Fractions.spec.js src/__tests__/m4Measurement.spec.js",
     "test:coverage": "KIDMATH_ENFORCE_CELL_COVERAGE=1 vitest run src/__tests__/itemBankCoverage.spec.js",
     "bank:report": "node scripts/bankReport.js",
     "bank:variety": "node --import ./scripts/lib/registerResolve.js scripts/varietyReport.js",

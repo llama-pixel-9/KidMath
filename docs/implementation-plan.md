@@ -150,7 +150,41 @@ which are what make the hard structures worth having.
 
 ~8,480 authored items, net ~6,900 new. **Human review is the constraint, not generation.**
 
-**6.1 Re-tagging audit — do this first.** `scripts/bankStructureAudit.js` maps the existing 3,924 items
+**6.1 Re-tagging audit — DONE. `npm run bank:audit`.**
+
+The result changes how M6 should be prioritised. Mapping the 3,924 curated
+items onto the 29-structure taxonomy, with ambiguous old tags resolved
+automatically from each item's own payload (which cut manual re-tagging from
+847 items to 239):
+
+| Tier | Structures | Bank items | Empty |
+|---|---|---|---|
+| easy | 6 | **2,467** | 1 |
+| middle | 9 | 869 | 3 |
+| **difficult** | **9** | **4** | **8** |
+
+**The difficult tier has 4 items across 9 structures, and 8 of the 9 are
+completely empty.** Never authored: both Start Unknown structures, all four
+Compare language variants, Both Addends Unknown, and all three multiplicative
+Compare structures.
+
+So "3,924 curated items" overstates real coverage badly. The bank is deep on
+exactly the content the generator finds easiest and absent on the content that
+distinguishes mathematical reasoning from arithmetic recall — which is the
+whole reason for adopting the taxonomy.
+
+Two consequences:
+
+1. **Authoring priority inverts.** Do not top up the easy tier. The first
+   authoring batches should be the 8 empty difficult structures, where the
+   marginal item is worth most.
+2. **Review tiering matters more, not less.** These are precisely the items an
+   LLM most often gets wrong — the usual failure is quietly rewriting a hard
+   structure into an easy one, which produces a plausible item filed under the
+   wrong label. `validateDrafts` must check the structure claim against the
+   prose, not just the schema.
+
+**6.1b Original text — do this first.** `scripts/bankStructureAudit.js` maps the existing 3,924 items
 onto the 29-structure taxonomy and emits a per-structure gap report. It prices the whole phase and may
 show better existing coverage than the skew suggests (`equalGroupsTotalUnknown` 933 vs
 `quotitiveDivision` 4).

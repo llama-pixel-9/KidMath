@@ -100,7 +100,74 @@ export const MISCONCEPTION_STRATEGIES = {
   /** Converts in the wrong direction. */
   conversionInverted: ({ answer, factor }) =>
     factor ? [num(answer / (factor * factor)), num(answer * factor)] : [],
+
+  // --- fractions -----------------------------------------------------------
+  // These return {num, den} objects rather than integers, so they are consumed
+  // by buildFractionDistractors rather than the arithmetic builder.
+  /**
+   * Whole-number bias: numerator and denominator treated as separate whole
+   * numbers, so 1/2 + 1/3 = 2/5. The defining fraction misconception.
+   */
+  wholeNumberBias: ({ fracA, fracB }) =>
+    fracA && fracB ? [{ num: fracA.num + fracB.num, den: fracA.den + fracB.den }] : [],
+
+  /** Adds denominators while keeping the numerator sum: 1/4 + 1/4 = 2/8. */
+  denominatorAdd: ({ fracA, fracB }) =>
+    fracA && fracB ? [{ num: fracA.num + fracB.num, den: fracA.den + fracB.den }] : [],
+
+  /** Reports part-to-part instead of part-to-whole: 3 red of 5 becomes 3/2. */
+  partToPartConfusion: ({ part, whole }) =>
+    part != null && whole != null && whole - part > 0 ? [{ num: part, den: whole - part }] : [],
+
+  /** Bigger denominator read as a bigger number, so 1/8 is called > 1/4. */
+  largerDenominatorLarger: ({ fracA, fracB }) => (fracA && fracB ? [fracB, fracA] : []),
+
+  /** Inverts the fraction. */
+  fractionInverted: ({ fracA }) =>
+    fracA && fracA.num !== 0 ? [{ num: fracA.den, den: fracA.num }] : [],
 };
+
+/** Fractions are equal by value, so 2/4 and 1/2 must not both be offered. */
+function fractionsEqual(x, y) {
+  return x && y && x.num * y.den === y.num * x.den;
+}
+
+/**
+ * Four distinct fraction options including the answer. Kept separate from the
+ * arithmetic builder because equality is by value, not by identity: offering
+ * both 1/2 and 2/4 would present two correct answers.
+ */
+export function buildFractionDistractors({ answer, misconceptions = [], ...context }) {
+  if (!answer || typeof answer !== "object") return null;
+  const chosen = [answer];
+
+  const add = (candidate) => {
+    if (!candidate || typeof candidate !== "object") return;
+    if (!Number.isInteger(candidate.num) || !Number.isInteger(candidate.den)) return;
+    if (candidate.den <= 0 || candidate.num < 0) return;
+    if (chosen.some((c) => fractionsEqual(c, candidate))) return;
+    chosen.push(candidate);
+  };
+
+  for (const candidate of misconceptionCandidates(misconceptions, { answer, ...context })) {
+    if (chosen.length >= 4) break;
+    add(candidate);
+  }
+
+  // Near-misses on each component, which is how children usually slip.
+  const nearMisses = [
+    { num: answer.num + 1, den: answer.den },
+    { num: Math.max(0, answer.num - 1), den: answer.den },
+    { num: answer.num, den: answer.den + 1 },
+    { num: answer.num, den: Math.max(1, answer.den - 1) },
+  ];
+  for (const candidate of nearMisses) {
+    if (chosen.length >= 4) break;
+    add(candidate);
+  }
+
+  return chosen.length === 4 ? shuffleArray(chosen) : null;
+}
 
 /** Candidate wrong answers implied by an item's misconception tags. */
 export function misconceptionCandidates(tags = [], context = {}) {

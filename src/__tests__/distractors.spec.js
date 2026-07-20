@@ -4,6 +4,7 @@ import {
   misconceptionCandidates,
   buildArithmeticDistractors,
   buildDistractors,
+  buildFractionDistractors,
 } from "../modes/distractors";
 import { getModeConfig } from "../modes";
 
@@ -167,5 +168,61 @@ describe("every mode offers usable choices", () => {
         }
       }
     }
+  });
+});
+
+describe("fraction distractors", () => {
+  it("models whole-number bias — the defining fraction error", () => {
+    // 1/2 + 1/3 answered as 2/5.
+    const out = MISCONCEPTION_STRATEGIES.wholeNumberBias({
+      fracA: { num: 1, den: 2 },
+      fracB: { num: 1, den: 3 },
+    });
+    expect(out).toContainEqual({ num: 2, den: 5 });
+  });
+
+  it("models part-to-part confusion", () => {
+    // 3 red out of 5 reported as 3/2 rather than 3/5.
+    expect(MISCONCEPTION_STRATEGIES.partToPartConfusion({ part: 3, whole: 5 })).toContainEqual({
+      num: 3,
+      den: 2,
+    });
+  });
+
+  it("never offers two fractions of equal value", () => {
+    // 1/2 and 2/4 are the same number; offering both gives two right answers.
+    for (const answer of [
+      { num: 1, den: 2 },
+      { num: 2, den: 4 },
+      { num: 3, den: 6 },
+      { num: 2, den: 3 },
+    ]) {
+      const choices = buildFractionDistractors({ answer, misconceptions: ["fractionInverted"] });
+      expect(choices, `no option set for ${answer.num}/${answer.den}`).toBeTruthy();
+      expect(choices).toHaveLength(4);
+      for (let i = 0; i < choices.length; i++) {
+        for (let j = i + 1; j < choices.length; j++) {
+          expect(
+            choices[i].num * choices[j].den === choices[j].num * choices[i].den,
+            `${choices[i].num}/${choices[i].den} equals ${choices[j].num}/${choices[j].den}`
+          ).toBe(false);
+        }
+      }
+    }
+  });
+
+  it("always includes the answer and only valid fractions", () => {
+    const answer = { num: 3, den: 4 };
+    const choices = buildFractionDistractors({ answer, misconceptions: [] });
+    expect(choices.some((c) => c.num === 3 && c.den === 4)).toBe(true);
+    for (const c of choices) {
+      expect(c.den).toBeGreaterThan(0);
+      expect(c.num).toBeGreaterThanOrEqual(0);
+      expect(Number.isInteger(c.num) && Number.isInteger(c.den)).toBe(true);
+    }
+  });
+
+  it("declines rather than inventing options for a non-fraction answer", () => {
+    expect(buildFractionDistractors({ answer: 5 })).toBeNull();
   });
 });

@@ -5,6 +5,13 @@
 import { validateBankItem } from "../../src/itemBank/index.js";
 import { BUNDLED_ITEMS } from "../../src/itemBank/bundle.js";
 import { licenseAllowed } from "./loadExemplars.js";
+import { checkStructure } from "./structureCheck.js";
+import { promptSignature } from "../../src/itemBank/index.js";
+
+/** At most this many items in one batch may share a prompt signature. */
+const SIGNATURE_LIMIT = 3;
+/** At most this many items in one batch may open with the same name. */
+const ACTOR_LIMIT = 4;
 
 export function validateDrafts(candidates, { cell, exemplarsById }) {
   const existingPrompts = new Set(
@@ -14,6 +21,8 @@ export function validateDrafts(candidates, { cell, exemplarsById }) {
   const accepted = [];
   const rejected = [];
   const seenPrompts = new Set();
+  const signatureCounts = new Map();
+  const actorCounts = new Map();
   for (const cand of candidates) {
     const errors = [];
 
@@ -43,11 +52,40 @@ export function validateDrafts(candidates, { cell, exemplarsById }) {
     const { valid, errors: schemaErrors } = validateBankItem(item);
     if (!valid) errors.push(...schemaErrors);
 
+    // Does the prose actually match the structure it claims? The usual LLM
+    // failure on a hard structure is to quietly write an easy one instead
+    // (M6.2). Rejecting here is cheap; a mislabelled item in the bank is not.
+    const structure = checkStructure(item);
+    if (!structure.ok) {
+      errors.push(...structure.problems.map((p) => `structure ${item.structureType}: ${p}`));
+    }
+
     const prompt = cand.payload?.display?.promptText?.trim();
     if (prompt) {
+      if (prompt.length > 220) errors.push(`prompt is ${prompt.length} chars; limit is 220`);
       if (existingPrompts.has(prompt)) errors.push(`duplicate prompt in bank: ${prompt}`);
       if (seenPrompts.has(prompt)) errors.push(`duplicate prompt within batch: ${prompt}`);
       seenPrompts.add(prompt);
+
+      // Signature-level repetition: 100 items in one cell that differ only in
+      // their numbers are one item. This is the check that stops an authoring
+      // batch drifting into a single context.
+      const sig = promptSignature(prompt);
+      signatureCounts.set(sig, (signatureCounts.get(sig) || 0) + 1);
+      if (signatureCounts.get(sig) > SIGNATURE_LIMIT) {
+        errors.push(
+          `prompt signature repeated ${signatureCounts.get(sig)} times in this batch (limit ${SIGNATURE_LIMIT}) — vary the context, not just the numbers`
+        );
+      }
+
+      // Actor-name overuse within a cell.
+      const actor = prompt.match(/^([A-Z][a-z]+)\b/)?.[1];
+      if (actor) {
+        actorCounts.set(actor, (actorCounts.get(actor) || 0) + 1);
+        if (actorCounts.get(actor) > ACTOR_LIMIT) {
+          errors.push(`actor "${actor}" used ${actorCounts.get(actor)} times in this batch (limit ${ACTOR_LIMIT})`);
+        }
+      }
     }
 
     if (errors.length === 0) accepted.push(item);

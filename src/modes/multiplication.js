@@ -1,97 +1,54 @@
-import { randInt } from "./helpers";
 import { buildArithmeticDistractors } from "./distractors";
-import { createQuestionMetadata, ITEM_FAMILIES } from "./itemMetadata";
+import { createQuestionMetadata } from "./itemMetadata";
+import {
+  MULTIPLICATIVE_STRUCTURES,
+  generateMultiplicativeItem,
+  deriveCognitiveDemand,
+} from "./structures";
 
-const RANGES = [
-  { aMin: 1, aMax: 3, bMin: 1, bMax: 3 },
-  { aMin: 1, aMax: 5, bMin: 1, bMax: 3 },
-  { aMin: 1, aMax: 5, bMin: 1, bMax: 5 },
-  { aMin: 1, aMax: 9, bMin: 1, bMax: 5 },
-  { aMin: 1, aMax: 9, bMin: 1, bMax: 9 },
-  { aMin: 1, aMax: 12, bMin: 1, bMax: 5 },
-  { aMin: 1, aMax: 12, bMin: 1, bMax: 9 },
-  { aMin: 1, aMax: 12, bMin: 1, bMax: 12 },
-  // Grade 4 (4.NBT.B.5): 2-digit x 1-digit, then 2-digit x 2-digit. Large
-  // products are answered by typing (numberPad) rather than guessing bubbles.
-  { aMin: 11, aMax: 99, bMin: 2, bMax: 9 },
-  { aMin: 11, aMax: 99, bMin: 11, bMax: 99 },
-];
+// Multiplication draws the unknown-product column of CCSS Table 2.
+// Multiplicative compare ("3 times as much") is Grade 4 and sits in the
+// difficult tier — children commonly read it additively as "3 more".
+// Product-unknown structures give procedural facts (`3 x 4 = ?`); the
+// missing-factor structures rendered in x-form give conceptual items
+// (`3 x ? = 12`). Both are multiplicative reasoning — only the division
+// *rendering* belongs to the division mode.
+const STRUCTURES = MULTIPLICATIVE_STRUCTURES;
 
-// Products with a two-digit factor are answered via the number pad; single-digit
-// table facts stay multiple-choice.
-function isMultiDigitFactorPair(a, b) {
-  return a >= 10 || b >= 10;
-}
-
+// Kept as the mode's declared subskills so curated bank items, which are keyed
+// by subskill, keep resolving. Each structure maps onto one of these.
 const SUBSKILLS = ["equalGroups", "arrayReasoning", "factFluency"];
-
-function chooseFamily(level, context) {
-  const allowWordProblems = context?.allowWordProblems !== false;
-  // Multiplication's CONCEPTUAL variant is always a verbal prompt
-  // ("${a} groups of ${b} makes how many total?"), so when word problems are
-  // disabled we redirect both APPLICATION and CONCEPTUAL requests to
-  // PROCEDURAL.
-  if (context?.itemFamily) {
-    if (!allowWordProblems && context.itemFamily === ITEM_FAMILIES.CONCEPTUAL) {
-      return ITEM_FAMILIES.PROCEDURAL;
-    }
-    return context.itemFamily;
-  }
-  const roll = Math.random();
-  let family;
-  if (roll < 0.34) family = ITEM_FAMILIES.CONCEPTUAL;
-  else if (roll < 0.72) family = ITEM_FAMILIES.PROCEDURAL;
-  else family = ITEM_FAMILIES.APPLICATION;
-  if (!allowWordProblems && (family === ITEM_FAMILIES.APPLICATION || family === ITEM_FAMILIES.CONCEPTUAL)) {
-    return ITEM_FAMILIES.PROCEDURAL;
-  }
-  if (level < 7 && family === ITEM_FAMILIES.APPLICATION) {
-    return ITEM_FAMILIES.PROCEDURAL;
-  }
-  return family;
-}
 
 export default {
   id: "multiplication",
   label: "Multiply Mania!",
-  shortLabel: "Multiplication",
-  description: "Times tables through 12 × 12, then 2-digit multiplication!",
+  shortLabel: "Multiply",
+  description: "Equal groups, arrays, and times-as-many.",
   icon: "X",
-  op: "×",
+  op: "x",
   subskills: SUBSKILLS,
-  families: Object.values(ITEM_FAMILIES),
+  families: ["conceptual", "procedural", "application"],
+  structureTypes: STRUCTURES.map((s) => s.id),
 
   generate(level, context = {}) {
-    const r = RANGES[level - 1];
-    const itemFamily = chooseFamily(level, context);
-    const subskill = context?.targetSubskill || SUBSKILLS[randInt(0, SUBSKILLS.length - 1)];
-    const a = randInt(r.aMin, r.aMax);
-    const b = randInt(r.bMin, r.bMax);
-    const answer = a * b;
+    const item = generateMultiplicativeItem(level, context, {
+      pool: STRUCTURES,
+      form: "missingFactor",
+    });
+    const { structure, itemFamily, asStory } = item;
 
-    let question = { a, b, op: "×", answer, level };
-    if (itemFamily === ITEM_FAMILIES.CONCEPTUAL) {
-      question = {
-        a,
-        b,
-        op: "×",
-        answer,
-        level,
-        display: { promptText: `${a} groups of ${b} makes how many total?` },
-      };
-    } else if (itemFamily === ITEM_FAMILIES.APPLICATION) {
-      question = {
-        a,
-        b,
-        op: "×",
-        answer,
-        level,
-        display: { promptText: `${a} rows with ${b} chairs each. How many chairs?` },
-      };
-    }
+    const question = {
+      a: item.a,
+      b: item.b,
+      op: "x",
+      answer: item.answer,
+      level,
+      display: item.display,
+    };
 
-    // Typed entry for multi-digit products; single-digit facts stay bubbles.
-    if (isMultiDigitFactorPair(a, b)) {
+    // Two-digit work is typed rather than chosen: four plausible options are
+    // not a meaningful discrimination once products get large.
+    if ((item.a ?? 0) >= 10 || (item.b ?? 0) >= 10) {
       question.answerType = "numberPad";
     }
 
@@ -99,15 +56,16 @@ export default {
       modeId: "multiplication",
       level,
       domain: "OA",
-      cluster: "Multiplication and division within 100",
-      subskill,
+      cluster: "Multiply and divide within 100",
+      subskill: structure.subskill,
       itemFamily,
-      cognitiveDemand: itemFamily === ITEM_FAMILIES.PROCEDURAL ? "DOK1" : "DOK2",
-      representation: question.display?.promptText ? "verbalContext" : "symbolic",
-      mathPractices: ["MP1", "MP2", "MP4"],
+      cognitiveDemand: deriveCognitiveDemand(structure, asStory),
+      representation: asStory ? "verbalContext" : "symbolic",
+      mathPractices: ["MP2", "MP7", "MP8"],
       standardRefs: ["3.OA", "4.OA"],
-      misconceptionTags: ["factNeighbor", "operationSwap", "offByOne"],
-      blueprintId: `multiplication-${itemFamily}-${subskill}`,
+      misconceptionTags: misconceptionsFor(structure),
+      blueprintId: `multiplication-${itemFamily}-${structure.id}`,
+      structureType: structure.id,
     });
     return question;
   },
@@ -115,10 +73,18 @@ export default {
   generateChoices(answer, question) {
     return buildArithmeticDistractors({
       answer,
-      a: question.a ?? 1,
-      b: question.b ?? 1,
+      a: question.a ?? 0,
+      b: question.b ?? answer,
       misconceptions: question.metadata?.misconceptionTags || [],
       min: 0,
     });
   },
 };
+
+// Distractors should diagnose, so tags follow the structure rather than being a
+// fixed list (spec §B6).
+function misconceptionsFor(structure) {
+  const tags = ["factNeighbor", "operationSwap", "offByOne"];
+  if (structure.situation === "multCompare") tags.push("compareAsAdditive");
+  return tags;
+}

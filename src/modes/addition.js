@@ -1,37 +1,20 @@
-import { randInt } from "./helpers";
 import { buildArithmeticDistractors } from "./distractors";
-import { createQuestionMetadata, ITEM_FAMILIES } from "./itemMetadata";
+import { createQuestionMetadata } from "./itemMetadata";
+import {
+  ADDITIVE_STRUCTURES,
+  generateAdditiveItem,
+  deriveCognitiveDemand,
+} from "./structures";
 
-const RANGES = [
-  { aMin: 1, aMax: 3, bMin: 1, bMax: 3 },
-  { aMin: 1, aMax: 5, bMin: 1, bMax: 5 },
-  { aMin: 1, aMax: 9, bMin: 1, bMax: 9 },
-  { aMin: 1, aMax: 9, bMin: 10, bMax: 15 },
-  { aMin: 5, aMax: 15, bMin: 5, bMax: 15 },
-  { aMin: 10, aMax: 20, bMin: 10, bMax: 20 },
-  { aMin: 10, aMax: 30, bMin: 1, bMax: 20 },
-  { aMin: 10, aMax: 30, bMin: 10, bMax: 30 },
-  { aMin: 10, aMax: 40, bMin: 10, bMax: 30 },
-  { aMin: 10, aMax: 50, bMin: 10, bMax: 50 },
-];
+// Addition draws the "+" half of CCSS Table 1. Both this mode and subtraction
+// read from the same grid — the standards treat additive situations as one
+// taxonomy, and which operation a child performs depends on where the unknown
+// sits, not on which mode they opened. See docs/spec-part-ab-operations.md §A1.
+const STRUCTURES = ADDITIVE_STRUCTURES.filter((s) => s.op === "+");
 
+// Kept as the mode's declared subskills so the 3,924 curated bank items, which
+// are keyed by subskill, keep resolving. Each structure maps onto one of these.
 const SUBSKILLS = ["makeTen", "composeDecompose", "unknownAddend"];
-
-function chooseFamily(level, context) {
-  if (context?.itemFamily) return context.itemFamily;
-  const roll = Math.random();
-  let family;
-  if (roll < 0.33) family = ITEM_FAMILIES.CONCEPTUAL;
-  else if (roll < 0.7) family = ITEM_FAMILIES.PROCEDURAL;
-  else family = ITEM_FAMILIES.APPLICATION;
-  if (context?.allowWordProblems === false && family === ITEM_FAMILIES.APPLICATION) {
-    return ITEM_FAMILIES.PROCEDURAL;
-  }
-  if (level < 7 && family === ITEM_FAMILIES.APPLICATION) {
-    return ITEM_FAMILIES.PROCEDURAL;
-  }
-  return family;
-}
 
 export default {
   id: "addition",
@@ -41,60 +24,36 @@ export default {
   icon: "Plus",
   op: "+",
   subskills: SUBSKILLS,
-  families: Object.values(ITEM_FAMILIES),
+  families: ["conceptual", "procedural", "application"],
+  structureTypes: STRUCTURES.map((s) => s.id),
 
   generate(level, context = {}) {
-    const r = RANGES[level - 1];
-    const itemFamily = chooseFamily(level, context);
-    const subskill = context?.targetSubskill || SUBSKILLS[randInt(0, SUBSKILLS.length - 1)];
-    const a = randInt(r.aMin, r.aMax);
-    const b = randInt(r.bMin, r.bMax);
-    const answer = a + b;
+    const item = generateAdditiveItem(level, context, { pool: STRUCTURES });
+    const { structure, itemFamily, asStory } = item;
 
-    let question = { a, b, op: "+", answer, level };
-    if (subskill === "unknownAddend") {
-      // Missing-addend is the whole point of this subskill, so it fires for
-      // every family. Application framing keeps the same unknown in context.
-      const total = answer;
-      question = {
-        a,
-        b: null,
-        op: "+",
-        answer: b,
-        level,
-        display: {
-          promptText:
-            itemFamily === ITEM_FAMILIES.APPLICATION
-              ? `Mina picked ${a} apples. She now has ${total} apples. How many more did she pick?`
-              : `${a} + ? = ${total}`,
-        },
-      };
-    } else if (itemFamily === ITEM_FAMILIES.APPLICATION) {
-      question = {
-        a,
-        b,
-        op: "+",
-        answer,
-        level,
-        display: { promptText: `${a} birds joined ${b} birds. How many birds in all?` },
-      };
-    }
+    const question = {
+      a: item.a,
+      b: item.b,
+      op: "+",
+      answer: item.answer,
+      level,
+      display: item.display,
+    };
 
     question.metadata = createQuestionMetadata({
       modeId: "addition",
       level,
       domain: "OA",
       cluster: "Add and subtract within 20 and beyond",
-      subskill,
+      subskill: structure.subskill,
       itemFamily,
-      cognitiveDemand:
-        itemFamily === ITEM_FAMILIES.PROCEDURAL && subskill !== "unknownAddend" ? "DOK1" : "DOK2",
-      // A missing-addend equation is still symbolic; only word problems are verbal.
-      representation: itemFamily === ITEM_FAMILIES.APPLICATION ? "verbalContext" : "symbolic",
+      cognitiveDemand: deriveCognitiveDemand(structure, asStory),
+      representation: asStory ? "verbalContext" : "symbolic",
       mathPractices: ["MP1", "MP2", "MP7"],
       standardRefs: ["K.OA", "1.OA", "2.OA"],
-      misconceptionTags: ["operationSwap", "offByOne", "placeValueSlip"],
-      blueprintId: `addition-${itemFamily}-${subskill}`,
+      misconceptionTags: misconceptionsFor(structure),
+      blueprintId: `addition-${itemFamily}-${structure.id}`,
+      structureType: structure.id,
     });
     return question;
   },
@@ -109,3 +68,13 @@ export default {
     });
   },
 };
+
+// Distractors should diagnose, so the tags follow the structure rather than
+// being a fixed list. `startAsResult` and `keywordTrap` are what make the hard
+// structures worth generating (spec §A6).
+function misconceptionsFor(structure) {
+  const tags = ["operationSwap", "offByOne", "placeValueSlip"];
+  if (structure.solveFor === "x") tags.push("startAsResult");
+  if (structure.languageTrap) tags.push("keywordTrap");
+  return tags;
+}

@@ -1,98 +1,60 @@
-import { randInt } from "./helpers";
 import { buildArithmeticDistractors } from "./distractors";
-import { createQuestionMetadata, ITEM_FAMILIES } from "./itemMetadata";
+import { createQuestionMetadata } from "./itemMetadata";
+import {
+  DIVISION_STRUCTURES,
+  generateMultiplicativeItem,
+  deriveCognitiveDemand,
+} from "./structures";
 
-const RANGES = [
-  { aMin: 1, aMax: 3, bMin: 1, bMax: 3 },
-  { aMin: 1, aMax: 5, bMin: 1, bMax: 3 },
-  { aMin: 1, aMax: 5, bMin: 1, bMax: 5 },
-  { aMin: 1, aMax: 9, bMin: 1, bMax: 5 },
-  { aMin: 1, aMax: 9, bMin: 1, bMax: 9 },
-  { aMin: 1, aMax: 12, bMin: 1, bMax: 5 },
-  { aMin: 1, aMax: 12, bMin: 1, bMax: 9 },
-  { aMin: 1, aMax: 12, bMin: 1, bMax: 12 },
-  { aMin: 5, aMax: 12, bMin: 5, bMax: 12 },
-  { aMin: 7, aMax: 12, bMin: 7, bMax: 12 },
-];
+// Division draws BOTH division meanings from CCSS Table 2:
+//   partitive  — "shared equally into 3 bags"  (group size unknown)
+//   quotitive  — "packed 6 to a bag"           (number of groups unknown)
+// The bank has 933 equal-groups-product items and 4 quotitive ones, so the
+// measurement meaning has been effectively untaught.
+const STRUCTURES = DIVISION_STRUCTURES;
 
+// Kept as the mode's declared subskills so curated bank items, which are keyed
+// by subskill, keep resolving. Each structure maps onto one of these.
 const SUBSKILLS = ["partitioning", "inverseFact", "unknownQuotient"];
-
-function chooseFamily(level, context) {
-  const allowWordProblems = context?.allowWordProblems !== false;
-  // Division's CONCEPTUAL variant is always a verbal prompt ("${dividend}
-  // split into ${divisor} equal groups..."), so disable it alongside
-  // APPLICATION when word problems are turned off.
-  if (context?.itemFamily) {
-    if (!allowWordProblems && context.itemFamily === ITEM_FAMILIES.CONCEPTUAL) {
-      return ITEM_FAMILIES.PROCEDURAL;
-    }
-    return context.itemFamily;
-  }
-  const roll = Math.random();
-  let family;
-  if (roll < 0.34) family = ITEM_FAMILIES.CONCEPTUAL;
-  else if (roll < 0.72) family = ITEM_FAMILIES.PROCEDURAL;
-  else family = ITEM_FAMILIES.APPLICATION;
-  if (!allowWordProblems && (family === ITEM_FAMILIES.APPLICATION || family === ITEM_FAMILIES.CONCEPTUAL)) {
-    return ITEM_FAMILIES.PROCEDURAL;
-  }
-  if (level < 7 && family === ITEM_FAMILIES.APPLICATION) {
-    return ITEM_FAMILIES.PROCEDURAL;
-  }
-  return family;
-}
 
 export default {
   id: "division",
   label: "Division Derby!",
   shortLabel: "Division",
-  description: "Split numbers evenly — no remainders!",
+  description: "Share equally and measure out groups.",
   icon: "Divide",
-  op: "÷",
+  op: "/",
   subskills: SUBSKILLS,
-  families: Object.values(ITEM_FAMILIES),
+  families: ["conceptual", "procedural", "application"],
+  structureTypes: STRUCTURES.map((s) => s.id),
 
   generate(level, context = {}) {
-    const r = RANGES[level - 1];
-    const itemFamily = chooseFamily(level, context);
-    const subskill = context?.targetSubskill || SUBSKILLS[randInt(0, SUBSKILLS.length - 1)];
-    const divisor = randInt(r.bMin || 1, r.bMax);
-    const answer = randInt(r.aMin, r.aMax);
-    const dividend = divisor * answer;
-    let question = { a: dividend, b: divisor, op: "÷", answer, level };
-    if (itemFamily === ITEM_FAMILIES.CONCEPTUAL) {
-      question = {
-        a: dividend,
-        b: divisor,
-        op: "÷",
-        answer,
-        level,
-        display: { promptText: `${dividend} split into ${divisor} equal groups gives how many in each group?` },
-      };
-    } else if (itemFamily === ITEM_FAMILIES.APPLICATION) {
-      question = {
-        a: dividend,
-        b: divisor,
-        op: "÷",
-        answer,
-        level,
-        display: { promptText: `${dividend} cookies shared by ${divisor} friends. Cookies per friend?` },
-      };
-    }
+    const item = generateMultiplicativeItem(level, context, { pool: STRUCTURES, form: "auto" });
+    const { structure, itemFamily, asStory } = item;
+
+    const question = {
+      a: item.a,
+      b: item.b,
+      op: "/",
+      answer: item.answer,
+      level,
+      display: item.display,
+    };
 
     question.metadata = createQuestionMetadata({
       modeId: "division",
       level,
       domain: "OA",
-      cluster: "Understand division as unknown-factor problems",
-      subskill,
+      cluster: "Multiply and divide within 100",
+      subskill: structure.subskill,
       itemFamily,
-      cognitiveDemand: itemFamily === ITEM_FAMILIES.PROCEDURAL ? "DOK1" : "DOK2",
-      representation: question.display?.promptText ? "verbalContext" : "symbolic",
-      mathPractices: ["MP1", "MP2", "MP4"],
+      cognitiveDemand: deriveCognitiveDemand(structure, asStory),
+      representation: asStory ? "verbalContext" : "symbolic",
+      mathPractices: ["MP1", "MP2", "MP7"],
       standardRefs: ["3.OA", "4.OA"],
-      misconceptionTags: ["factNeighbor", "operationSwap", "offByOne"],
-      blueprintId: `division-${itemFamily}-${subskill}`,
+      misconceptionTags: misconceptionsFor(structure),
+      blueprintId: `division-${itemFamily}-${structure.id}`,
+      structureType: structure.id,
     });
     return question;
   },
@@ -100,10 +62,19 @@ export default {
   generateChoices(answer, question) {
     return buildArithmeticDistractors({
       answer,
-      a: question.a ?? answer,
-      b: question.b ?? 1,
+      a: question.a ?? 0,
+      b: question.b ?? answer,
       misconceptions: question.metadata?.misconceptionTags || [],
       min: 0,
     });
   },
 };
+
+// Distractors should diagnose, so tags follow the structure rather than being a
+// fixed list (spec §B6).
+function misconceptionsFor(structure) {
+  const tags = ["factNeighbor", "operationSwap", "divisionReversed"];
+  if (structure.division === "quotitive") tags.push("partitiveQuotitiveConfusion");
+  if (structure.situation === "multCompare") tags.push("compareAsAdditive");
+  return tags;
+}

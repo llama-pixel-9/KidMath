@@ -49,22 +49,22 @@ describe("mode generation coverage", () => {
     }
   });
 
-  it("reserves application/story items for advanced levels", () => {
-    const storyModes = [
-      "addition",
-      "subtraction",
-      "multiplication",
-      "division",
-      "comparing",
-      "counting",
-      "skipCounting",
-    ];
+  // Replaces "reserves application/story items for advanced levels", which
+  // asserted no application items below level 7. That gate was the direct cause
+  // of the 100% prompt-signature cells at levels 1-6 (docs/variety-baseline.md):
+  // word problems were these modes' only source of prompt variety and they were
+  // switched off for the youngest users. K does word problems in the standards
+  // (read aloud), so the policy is now short prose and small numbers, not no
+  // prose. See levelPolicy.WORD_PROBLEMS_FROM_LEVEL.
+  it("offers story items at every level, including Kindergarten", () => {
+    const storyModes = ["addition", "subtraction", "multiplication", "division"];
     for (const mode of storyModes) {
-      for (let level = 1; level <= 6; level++) {
-        for (let i = 0; i < 20; i++) {
-          const q = generateQuestion(mode, level);
-          expect(q.metadata.itemFamily).not.toBe("application");
+      for (const level of [1, 2, 3]) {
+        const families = new Set();
+        for (let i = 0; i < 60; i++) {
+          families.add(generateQuestion(mode, level).metadata.itemFamily);
         }
+        expect(families.has("application"), `${mode} L${level} should tell stories`).toBe(true);
       }
     }
   });
@@ -137,7 +137,11 @@ describe("mode generation coverage", () => {
       const q = mult.generate(10);
       expect(q.answerType).toBe("numberPad");
       expect(q.a >= 10 || q.b >= 10).toBe(true);
-      expect(q.a * q.b).toBe(q.answer);
+      // The mode now emits missing-factor items (`? x 5 = 90`) alongside
+      // product-unknown ones, so a*b == answer only holds for the latter. In
+      // both cases the three quantities must satisfy g x s = p.
+      const quantities = [q.a, q.b, q.answer].sort((x, y) => x - y);
+      expect(quantities[0] * quantities[1]).toBe(quantities[2]);
     }
     // Early levels keep single-digit facts as multiple choice (no numberPad).
     for (let i = 0; i < 40; i++) {

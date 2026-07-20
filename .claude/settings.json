@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl *)",
+      "Bash(docker ps *)",
+      "Bash(docker logs *)",
+      "Bash(docker inspect *)",
+      "Bash(docker images *)",
+      "Bash(npm run lint)",
+      "Bash(npm run test)",
+      "Bash(npm run typecheck)",
+      "Bash(npm run bank:report)",
+      "Bash(npm run build)",
+      "Bash(npx vitest run *)",
+      "Bash(npx vitest run)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(npx jest *)",
+      "mcp__claude-in-chrome__navigate",
+      "mcp__claude-in-chrome__computer",
+      "mcp__claude-in-chrome__read_page"
+    ]
+  }
+}

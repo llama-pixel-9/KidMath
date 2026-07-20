@@ -1,92 +1,58 @@
-import { randInt } from "./helpers";
 import { buildArithmeticDistractors } from "./distractors";
-import { createQuestionMetadata, ITEM_FAMILIES } from "./itemMetadata";
+import { createQuestionMetadata } from "./itemMetadata";
+import {
+  ADDITIVE_STRUCTURES,
+  generateAdditiveItem,
+  deriveCognitiveDemand,
+} from "./structures";
 
-const RANGES = [
-  { aMin: 1, aMax: 3, bMin: 1, bMax: 3 },
-  { aMin: 1, aMax: 5, bMin: 1, bMax: 5 },
-  { aMin: 1, aMax: 9, bMin: 1, bMax: 9 },
-  { aMin: 1, aMax: 9, bMin: 10, bMax: 15 },
-  { aMin: 5, aMax: 15, bMin: 5, bMax: 15 },
-  { aMin: 10, aMax: 20, bMin: 10, bMax: 20 },
-  { aMin: 10, aMax: 30, bMin: 1, bMax: 20 },
-  { aMin: 10, aMax: 30, bMin: 10, bMax: 30 },
-  { aMin: 10, aMax: 40, bMin: 10, bMax: 30 },
-  { aMin: 10, aMax: 50, bMin: 10, bMax: 50 },
-];
+// Subtraction draws the "-" half of CCSS Table 1. Note that several of these
+// structures *read* as addition (`? - 2 = 3`) — that mismatch between situation
+// and solution operation is exactly what makes them the difficult tier.
+const STRUCTURES = ADDITIVE_STRUCTURES.filter((s) => s.op === "-");
 
+// Kept as the mode's declared subskills so curated bank items, which are keyed
+// by subskill, keep resolving. Each structure maps onto one of these.
 const SUBSKILLS = ["differenceAsDistance", "decomposeToSubtract", "unknownSubtrahend"];
-
-function chooseFamily(level, context) {
-  if (context?.itemFamily) return context.itemFamily;
-  const roll = Math.random();
-  let family;
-  if (roll < 0.33) family = ITEM_FAMILIES.CONCEPTUAL;
-  else if (roll < 0.7) family = ITEM_FAMILIES.PROCEDURAL;
-  else family = ITEM_FAMILIES.APPLICATION;
-  if (context?.allowWordProblems === false && family === ITEM_FAMILIES.APPLICATION) {
-    return ITEM_FAMILIES.PROCEDURAL;
-  }
-  if (level < 7 && family === ITEM_FAMILIES.APPLICATION) {
-    return ITEM_FAMILIES.PROCEDURAL;
-  }
-  return family;
-}
 
 export default {
   id: "subtraction",
   label: "Subtraction Quest!",
   shortLabel: "Subtraction",
-  description: "Learn to subtract without ever going negative!",
+  description: "Take away and find the difference.",
   icon: "Minus",
-  op: "−",
+  op: "-",
   subskills: SUBSKILLS,
-  families: Object.values(ITEM_FAMILIES),
+  families: ["conceptual", "procedural", "application"],
+  structureTypes: STRUCTURES.map((s) => s.id),
 
   generate(level, context = {}) {
-    const r = RANGES[level - 1];
-    const itemFamily = chooseFamily(level, context);
-    const subskill = context?.targetSubskill || SUBSKILLS[randInt(0, SUBSKILLS.length - 1)];
-    let a = randInt(r.aMin, r.aMax);
-    let b = randInt(r.bMin, r.bMax);
-    if (a < b) [a, b] = [b, a];
-    if (a === b) a += 1;
-    const answer = a - b;
+    const item = generateAdditiveItem(level, context, { pool: STRUCTURES });
+    const { structure, itemFamily, asStory } = item;
 
-    let question = { a, b, op: "−", answer, level };
-    if (itemFamily === ITEM_FAMILIES.CONCEPTUAL && subskill === "unknownSubtrahend") {
-      question = {
-        a,
-        b: null,
-        op: "−",
-        answer: b,
-        level,
-        display: { promptText: `${a} − ? = ${answer}` },
-      };
-    } else if (itemFamily === ITEM_FAMILIES.APPLICATION) {
-      question = {
-        a,
-        b,
-        op: "−",
-        answer,
-        level,
-        display: { promptText: `${a} stickers. ${b} were shared. How many are left?` },
-      };
-    }
+    const question = {
+      a: item.a,
+      b: item.b,
+      op: "-",
+      answer: item.answer,
+      level,
+      display: item.display,
+    };
 
     question.metadata = createQuestionMetadata({
       modeId: "subtraction",
       level,
       domain: "OA",
-      cluster: "Subtraction and relation to addition",
-      subskill,
+      cluster: "Add and subtract within 20 and beyond",
+      subskill: structure.subskill,
       itemFamily,
-      cognitiveDemand: itemFamily === ITEM_FAMILIES.PROCEDURAL ? "DOK1" : "DOK2",
-      representation: question.display?.promptText ? "verbalContext" : "symbolic",
+      cognitiveDemand: deriveCognitiveDemand(structure, asStory),
+      representation: asStory ? "verbalContext" : "symbolic",
       mathPractices: ["MP1", "MP2", "MP7"],
       standardRefs: ["K.OA", "1.OA", "2.OA"],
-      misconceptionTags: ["operationSwap", "offByOne", "placeValueSlip"],
-      blueprintId: `subtraction-${itemFamily}-${subskill}`,
+      misconceptionTags: misconceptionsFor(structure),
+      blueprintId: `subtraction-${itemFamily}-${structure.id}`,
+      structureType: structure.id,
     });
     return question;
   },
@@ -94,10 +60,19 @@ export default {
   generateChoices(answer, question) {
     return buildArithmeticDistractors({
       answer,
-      a: question.a ?? answer,
-      b: question.b ?? 0,
+      a: question.a ?? 0,
+      b: question.b ?? answer,
       misconceptions: question.metadata?.misconceptionTags || [],
       min: 0,
     });
   },
 };
+
+// Distractors should diagnose, so tags follow the structure rather than being a
+// fixed list (spec §A6).
+function misconceptionsFor(structure) {
+  const tags = ["operationSwap", "offByOne", "placeValueSlip"];
+  if (structure.solveFor === "z") tags.push("startAsResult");
+  if (structure.languageTrap) tags.push("keywordTrap");
+  return tags;
+}

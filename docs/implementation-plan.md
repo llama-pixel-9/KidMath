@@ -214,13 +214,24 @@ the misconception. Fixed-rate spot review for T3/T4.
 **The path to production already exists end to end.** Nothing here needs inventing:
 
 ```
-npm run bank:gen:batch     LLM batch → parseCandidates
-  → validateDrafts.js      quality gate
+generateDrafts --provider claudeCode   author via `claude -p` (subscription,
+                                        no API key); KIDMATH_ITEMGEN_MODEL=haiku
+                                        for cheap bulk → parseCandidates
+  → validateDrafts + structureCheck     quality + structure-match gate
   → writeDrafts.js         upsert to Supabase, review_status='draft'
-  → src/admin/ReviewQueue  human review: draft → reviewed → approved
-  → cloudLoader.js         runtime hydration; setBankItems() hot-swaps in memory
+  → src/admin/ReviewQueue  human review with inline QC; approve blocked on fail
+  → npm run bank:qc        two-pass audit (deterministic + `claude -p` judgment)
+  → cloudLoader / modeLoader  runtime hydration, per mode
   → npm run bank:export    snapshot approved rows back into src/itemBank/items/
 ```
+
+**Authoring runs on the Claude subscription, not the API.** The `claudeCode`
+provider and the QC judgment pass both shell out to `claude -p`, so the whole
+loop — generate, review, QC — needs no `ANTHROPIC_API_KEY` and adds no
+per-token bill. Haiku is the default for bulk generation: it clears the same QC
+gate as any other model, and a wrong item is caught by the gate, not by paying
+more for the author. The raw Batch API path still exists for anyone who wants
+its async 50%-off pricing and will pay API charges for it.
 
 `public.item_bank` already has `structure_type`, `level_band`, `representation_type`, `source`,
 versioning, `updated_at` triggers, and RLS policies separating public read-approved from admin

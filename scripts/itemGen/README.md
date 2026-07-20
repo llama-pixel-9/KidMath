@@ -70,22 +70,46 @@ node scripts/itemGen/generateDrafts.js \
   --limit 12
 ```
 
-### Real generation with Claude
+### Real generation on a Claude subscription (no API key)
 
-Single cell, via the pluggable provider (`providers/claude.js`):
+`providers/claudeCode.js` drives `claude -p` (Claude Code headless), so it runs
+on your existing Pro/Max subscription with **no `ANTHROPIC_API_KEY` and no
+pay-per-token bill**. For bulk mechanical authoring, point it at Haiku — plenty
+for generating variants against a fixed exemplar, and every item clears the same
+QC gate regardless of which model wrote it:
 
 ```
-npm i -D @anthropic-ai/sdk         # once
-ANTHROPIC_API_KEY=...  \           # or run `ant auth login`
+KIDMATH_ITEMGEN_MODEL=haiku \
 SUPABASE_SERVICE_ROLE_KEY=... SUPABASE_URL=https://....supabase.co \
 node scripts/itemGen/generateDrafts.js \
-  --provider claude \
+  --provider claudeCode \
   --mode division --subskill partitioning --family application --band 4-5 \
   --limit 13
 ```
 
-Bulk across every exemplar cell via the **Batch API** (50% cheaper — the Phase 4
-accelerator):
+Bulk across every exemplar cell, still on the subscription:
+
+```
+KIDMATH_ITEMGEN_PROVIDER=claudeCode KIDMATH_ITEMGEN_MODEL=haiku \
+node scripts/itemGen/generateDrafts.js --all --limit 13   # --dryRun first
+```
+
+### Alternative: raw API (costs API dollars)
+
+`providers/claude.js` (single cell) and `generateBatch.js` (bulk, **Batch API,
+50% cheaper per token**) use the raw Anthropic API and need `ANTHROPIC_API_KEY`.
+Prefer these only if you specifically want the Batch API's async discount for a
+very large one-time push and are willing to pay API charges separate from a
+subscription.
+
+```
+npm i -D @anthropic-ai/sdk         # once
+ANTHROPIC_API_KEY=...  \
+node scripts/itemGen/generateDrafts.js --provider claude \
+  --mode division --subskill partitioning --family application --band 4-5 --limit 13
+```
+
+Bulk across every exemplar cell via the **Batch API**:
 
 ```
 npm run bank:gen:batch -- --all --limit 13            # dry-run first with --dryRun

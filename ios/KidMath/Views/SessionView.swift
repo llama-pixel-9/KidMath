@@ -11,6 +11,7 @@ struct SessionView: View {
     @EnvironmentObject private var app: AppModel
     @Environment(\.theme) private var theme
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @StateObject private var viewModel: SessionViewModel
 
     init(mode: ModeInfo) {
@@ -143,6 +144,11 @@ struct SessionView: View {
                 .overlay(RoundedRectangle(cornerRadius: 28).stroke(borderColor, lineWidth: 3))
                 .shadow(color: .black.opacity(0.06), radius: 14, y: 6)
         )
+        .overlay {
+            if feedbackState == true, !reduceMotion {
+                ConfettiView()
+            }
+        }
         .animation(.easeOut(duration: 0.2), value: feedbackState ?? true)
     }
 

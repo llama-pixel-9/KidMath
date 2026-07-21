@@ -27,8 +27,12 @@ struct ChoiceWidget: View {
                         .minimumScaleFactor(0.4)
                         .frame(maxWidth: .infinity, minHeight: 68)
                         .background(
-                            RoundedRectangle(cornerRadius: 20)
-                                .fill(bubbleColor(index))
+                            RoundedRectangle(cornerRadius: 20).fill(
+                                LinearGradient(
+                                    colors: theme.bubbleGradients[index % theme.bubbleGradients.count],
+                                    startPoint: .topLeading, endPoint: .bottomTrailing
+                                )
+                            )
                         )
                         .foregroundStyle(.white)
                 }
@@ -37,17 +41,6 @@ struct ChoiceWidget: View {
         }
         .disabled(disabled)
         .frame(maxWidth: 480)
-    }
-
-    private func bubbleColor(_ index: Int) -> Color {
-        // bubbleColors in themes.js: pink, sky, lime, violet.
-        let colors = [
-            Color(red: 0.957, green: 0.447, blue: 0.714),
-            Color(red: 0.220, green: 0.741, blue: 0.973),
-            Color(red: 0.639, green: 0.800, blue: 0.153),
-            Color(red: 0.655, green: 0.545, blue: 0.980),
-        ]
-        return colors[index % colors.count]
     }
 }
 

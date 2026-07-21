@@ -49,7 +49,9 @@ struct HomeView: View {
     private var hero: some View {
         VStack(alignment: .leading, spacing: 6) {
             Text("KidMath")
-                .font(.system(size: 40, weight: .heavy, design: .rounded))
+                .font(theme.displayFont(size: 38))
+                .minimumScaleFactor(0.5)
+                .lineLimit(1)
                 .foregroundStyle(
                     LinearGradient(colors: theme.heroGradient, startPoint: .leading, endPoint: .trailing)
                 )
@@ -65,8 +67,9 @@ struct HomeView: View {
         VStack(alignment: .leading, spacing: 10) {
             HStack(alignment: .firstTextBaseline) {
                 Text(group.title)
-                    .font(.title2.weight(.bold))
-                    .fontDesign(.rounded)
+                    .font(theme.displayFont(size: 22))
+                    .minimumScaleFactor(0.6)
+                    .lineLimit(1)
                     .foregroundStyle(theme.textPrimary)
                 Text(group.gradeHint)
                     .font(.caption.weight(.semibold))

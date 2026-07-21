@@ -12,9 +12,13 @@ struct SessionCompleteView: View {
 
     var body: some View {
         VStack(spacing: 20) {
-            Text(mode.emoji).font(.system(size: 64))
-            Text("Amazing!")
-                .font(.system(size: 40, weight: .heavy, design: .rounded))
+            Text(mode.emoji)
+                .font(.system(size: 64))
+                .overlay { ConfettiView() }
+            Text(theme.completeMsg)
+                .font(theme.displayFont(size: 36))
+                .minimumScaleFactor(0.5)
+                .lineLimit(1)
                 .foregroundStyle(
                     LinearGradient(colors: theme.heroGradient, startPoint: .leading, endPoint: .trailing)
                 )

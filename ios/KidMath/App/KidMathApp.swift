@@ -16,6 +16,8 @@ struct KidMathApp: App {
         WindowGroup {
             HomeView()
                 .environmentObject(app)
+                .environment(\.theme, app.theme)
+                .preferredColorScheme(app.theme.isDark ? .dark : .light)
                 .onOpenURL { url in
                     app.supabase.handleAuthCallback(url)
                 }

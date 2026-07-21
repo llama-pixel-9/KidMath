@@ -141,6 +141,19 @@ final class SessionViewModel: ObservableObject {
             if outcome.levelChanged, outcome.newLevel > level {
                 showLevelUp = true
             }
+            // Same sound priority as the web's submitAnswer.
+            let newStreak = ProgressStore.int(session.snapshot["correctStreak"])
+            if outcome.correct {
+                if outcome.levelChanged, outcome.newLevel > level {
+                    SoundPlayer.shared.playLevelUp()
+                } else if newStreak >= 3 {
+                    SoundPlayer.shared.playStreak()
+                } else {
+                    SoundPlayer.shared.playCorrect()
+                }
+            } else {
+                SoundPlayer.shared.playWrong()
+            }
             level = outcome.newLevel
 
             Task { [weak self] in
@@ -175,6 +188,7 @@ final class SessionViewModel: ObservableObject {
             "recentBankItemIds": snapshot["recentBankItemIds"] ?? [String](),
         ])
         let progress = await progressStore.load(mode: modeId)
+        SoundPlayer.shared.playComplete()
         phase = .complete(
             starsEarned: starsEarned,
             lifetimeStars: ProgressStore.int(progress["lifetimeStars"])

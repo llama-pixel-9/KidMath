@@ -14,6 +14,16 @@ final class AppModel: ObservableObject {
     /// modeId -> saved level, for the badges on the home grid.
     @Published var modeLevels: [String: Int] = [:]
 
+    /// Active theme, persisted like the web's theme choice.
+    @Published var themeId: String = UserDefaults.standard.string(forKey: "kidmath-theme") ?? "default" {
+        didSet { UserDefaults.standard.set(themeId, forKey: "kidmath-theme") }
+    }
+    var theme: Theme { Theme.named(themeId) }
+
+    @Published var isMuted: Bool = SoundPlayer.shared.isMuted {
+        didSet { SoundPlayer.shared.isMuted = isMuted }
+    }
+
     init() {
         supabase = .shared
         progressStore = ProgressStore(supabase: supabase)

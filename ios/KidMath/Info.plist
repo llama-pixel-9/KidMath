@@ -29,6 +29,14 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Fredoka.ttf</string>
+		<string>PressStart2P.ttf</string>
+		<string>MedievalSharp.ttf</string>
+		<string>Silkscreen.ttf</string>
+		<string>Bungee.ttf</string>
+	</array>
 	<key>UILaunchScreen</key>
 	<dict/>
 	<key>UISupportedInterfaceOrientations~ipad</key>

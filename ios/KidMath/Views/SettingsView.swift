@@ -12,6 +12,8 @@ struct SettingsView: View {
     var body: some View {
         NavigationStack {
             List {
+                themeSection
+                soundSection
                 accountSection
                 engineSection
             }
@@ -22,6 +24,43 @@ struct SettingsView: View {
                     Button("Done") { dismiss() }
                 }
             }
+        }
+    }
+
+    private var themeSection: some View {
+        Section("Theme") {
+            ForEach(Theme.all) { option in
+                Button {
+                    app.themeId = option.id
+                } label: {
+                    HStack(spacing: 12) {
+                        Text(option.emoji).font(.title2)
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text(option.label)
+                                .font(.headline)
+                                .foregroundStyle(.primary)
+                            Text(option.themeDescription)
+                                .font(.footnote)
+                                .foregroundStyle(.secondary)
+                        }
+                        Spacer()
+                        if app.themeId == option.id {
+                            Image(systemName: "checkmark.circle.fill")
+                                .foregroundStyle(.green)
+                        }
+                    }
+                }
+                .buttonStyle(.plain)
+            }
+        }
+    }
+
+    private var soundSection: some View {
+        Section("Sound") {
+            Toggle("Sound effects", isOn: Binding(
+                get: { !app.isMuted },
+                set: { app.isMuted = !$0 }
+            ))
         }
     }
 

@@ -42,6 +42,13 @@ targets:
       path: KidMath/Info.plist
       properties:
         UILaunchScreen: {}
+        # Bundled Google Fonts (OFL), same families the web loads in index.css.
+        UIAppFonts:
+          - Fredoka.ttf
+          - PressStart2P.ttf
+          - MedievalSharp.ttf
+          - Silkscreen.ttf
+          - Bungee.ttf
         UISupportedInterfaceOrientations~iphone:
           [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
         UISupportedInterfaceOrientations~ipad:

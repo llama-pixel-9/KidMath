@@ -1,0 +1,89 @@
+# XcodeGen spec — the .xcodeproj is generated, not committed.
+# Regenerate after changing this file or adding/removing sources:
+#   cd ios && xcodegen generate
+name: KidMath
+options:
+  bundleIdPrefix: com.kidmath
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    TARGETED_DEVICE_FAMILY: "1,2" # iPhone + iPad
+    GENERATE_INFOPLIST_FILE: YES
+    CODE_SIGN_STYLE: Automatic
+
+packages:
+  Supabase:
+    url: https://github.com/supabase/supabase-swift
+    majorVersion: 2.0.0
+
+targets:
+  KidMath:
+    type: application
+    platform: iOS
+    sources:
+      - path: KidMath
+        excludes:
+          - "Resources/**"
+      # The engine bundle is a build artifact (npm run build:engine), gitignored.
+      - path: KidMath/Resources
+        buildPhase: resources
+    dependencies:
+      - package: Supabase
+        product: Supabase
+    entitlements:
+      path: KidMath/KidMath.entitlements
+      properties:
+        com.apple.developer.applesignin: [Default]
+    info:
+      path: KidMath/Info.plist
+      properties:
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations~iphone:
+          [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        UISupportedInterfaceOrientations~ipad:
+          [UIInterfaceOrientationPortrait, UIInterfaceOrientationPortraitUpsideDown, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        # OAuth (Google via Supabase) redirects back into the app on this scheme.
+        CFBundleURLTypes:
+          - CFBundleURLName: auth-callback
+            CFBundleURLSchemes: [kidmath]
+    preBuildScripts:
+      - name: Check engine bundle
+        shell: /bin/sh
+        basedOnDependencyAnalysis: false
+        script: |
+          if [ ! -f "${SRCROOT}/KidMath/Resources/KidMathEngine.bundle.js" ]; then
+            echo "error: KidMathEngine.bundle.js missing — run 'npm run build:engine' at the repo root first."
+            exit 1
+          fi
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.kidmath.app # placeholder — set the real ID before App Store Connect
+        GENERATE_INFOPLIST_FILE: NO # explicit Info.plist above (URL scheme needs a real file)
+
+  KidMathTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: KidMathTests
+    dependencies:
+      - target: KidMath
+    settings:
+      base:
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/KidMath.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KidMath"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+
+schemes:
+  KidMath:
+    build:
+      targets:
+        KidMath: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - KidMathTests

@@ -1,0 +1,401 @@
+{
+  "generatedFrom": "scripts/generateParityFixtures.mjs",
+  "fixtures": [
+    {
+      "mode": "addition",
+      "level": 1,
+      "seed": 9811,
+      "expectedJSON": "{\"a\":3,\"b\":3,\"op\":\"+\",\"answer\":6,\"level\":1,\"display\":{\"promptText\":\"3 + 3 = ?\"},\"metadata\":{\"modeId\":\"addition\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"OA\",\"cluster\":\"Add and subtract within 20 and beyond\",\"subskill\":\"composeDecompose\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP1\",\"MP2\",\"MP7\"],\"standardRefs\":[\"K.OA\",\"1.OA\",\"2.OA\"],\"misconceptionTags\":[\"operationSwap\",\"offByOne\",\"placeValueSlip\"],\"blueprintId\":\"addition-procedural-putTogetherTotalUnknown\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"putTogetherTotalUnknown\"},\"mode\":\"addition\",\"itemKey\":\"addition::+::3::3::6::composeDecompose::addition-procedural-putTogetherTotalUnknown::|3 + 3 = ?|||\"}"
+    },
+    {
+      "mode": "addition",
+      "level": 4,
+      "seed": 33568,
+      "expectedJSON": "{\"a\":12,\"b\":4,\"op\":\"+\",\"answer\":16,\"level\":4,\"display\":{\"promptText\":\"Omar has 4 more stickers than Zara. Zara has 12 stickers. How many does Omar have?\"},\"metadata\":{\"modeId\":\"addition\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"OA\",\"cluster\":\"Add and subtract within 20 and beyond\",\"subskill\":\"composeDecompose\",\"itemFamily\":\"application\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP1\",\"MP2\",\"MP7\"],\"standardRefs\":[\"K.OA\",\"1.OA\",\"2.OA\"],\"misconceptionTags\":[\"operationSwap\",\"offByOne\",\"placeValueSlip\"],\"blueprintId\":\"addition-application-compareBiggerMore\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"compareBiggerMore\"},\"mode\":\"addition\",\"itemKey\":\"addition::+::12::4::16::composeDecompose::addition-application-compareBiggerMore::|Omar has 4 more stickers than Zara. Zara has 12 stickers. How many does Omar have?|||\"}"
+    },
+    {
+      "mode": "addition",
+      "level": 7,
+      "seed": 57325,
+      "expectedJSON": "{\"a\":29,\"b\":46,\"op\":\"+\",\"answer\":17,\"level\":7,\"display\":{\"promptText\":\"Some leaves sat in the basket. 29 more joined. Now there are 46. How many were there before?\"},\"metadata\":{\"modeId\":\"addition\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"OA\",\"cluster\":\"Add and subtract within 20 and beyond\",\"subskill\":\"unknownAddend\",\"itemFamily\":\"application\",\"cognitiveDemand\":\"DOK3\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP1\",\"MP2\",\"MP7\"],\"standardRefs\":[\"K.OA\",\"1.OA\",\"2.OA\"],\"misconceptionTags\":[\"operationSwap\",\"offByOne\",\"placeValueSlip\",\"startAsResult\"],\"blueprintId\":\"addition-application-addToStartUnknown\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"addToStartUnknown\"},\"mode\":\"addition\",\"itemKey\":\"addition::+::29::46::17::unknownAddend::addition-application-addToStartUnknown::|Some leaves sat in the basket. 29 more joined. Now there are 46. How many were there before?|||\"}"
+    },
+    {
+      "mode": "subtraction",
+      "level": 1,
+      "seed": 10558,
+      "expectedJSON": "{\"a\":4,\"b\":2,\"op\":\"-\",\"answer\":2,\"level\":1,\"display\":{\"promptText\":\"4 leaves were in the bag. Lucy gave away 2. How many leaves are left?\"},\"metadata\":{\"modeId\":\"subtraction\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"OA\",\"cluster\":\"Add and subtract within 20 and beyond\",\"subskill\":\"differenceAsDistance\",\"itemFamily\":\"application\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP1\",\"MP2\",\"MP7\"],\"standardRefs\":[\"K.OA\",\"1.OA\",\"2.OA\"],\"misconceptionTags\":[\"operationSwap\",\"offByOne\",\"placeValueSlip\"],\"blueprintId\":\"subtraction-application-takeFromResultUnknown\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"takeFromResultUnknown\"},\"mode\":\"subtraction\",\"itemKey\":\"subtraction::-::4::2::2::differenceAsDistance::subtraction-application-takeFromResultUnknown::|4 leaves were in the bag. Lucy gave away 2. How many leaves are left?|||\"}"
+    },
+    {
+      "mode": "subtraction",
+      "level": 4,
+      "seed": 34315,
+      "expectedJSON": "{\"a\":17,\"b\":5,\"op\":\"-\",\"answer\":\"True\",\"level\":4,\"display\":{\"promptText\":\"12 = 12\",\"subPrompt\":\"True or false?\"},\"metadata\":{\"modeId\":\"subtraction\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"OA\",\"cluster\":\"Add and subtract within 20 and beyond\",\"subskill\":\"differenceAsDistance\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP1\",\"MP2\",\"MP7\"],\"standardRefs\":[\"K.OA\",\"1.OA\",\"2.OA\"],\"misconceptionTags\":[\"operationSwap\",\"offByOne\",\"placeValueSlip\"],\"blueprintId\":\"subtraction-reflexive-differenceAsDistance\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"takeFromResultUnknown\",\"formatId\":\"reflexive\"},\"choices\":[\"True\",\"False\"],\"answerType\":\"choice\",\"mode\":\"subtraction\",\"itemKey\":\"subtraction::-::17::5::True::differenceAsDistance::subtraction-reflexive-differenceAsDistance::|12 = 12|||\"}"
+    },
+    {
+      "mode": "subtraction",
+      "level": 7,
+      "seed": 58072,
+      "expectedJSON": "{\"a\":42,\"b\":18,\"op\":\"-\",\"answer\":24,\"level\":7,\"display\":{\"promptText\":\"Kofi has 18 buttons. Nina has 42. How many fewer buttons does Kofi have than Nina?\"},\"metadata\":{\"modeId\":\"subtraction\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"OA\",\"cluster\":\"Add and subtract within 20 and beyond\",\"subskill\":\"differenceAsDistance\",\"itemFamily\":\"application\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP1\",\"MP2\",\"MP7\"],\"standardRefs\":[\"K.OA\",\"1.OA\",\"2.OA\"],\"misconceptionTags\":[\"operationSwap\",\"offByOne\",\"placeValueSlip\"],\"blueprintId\":\"subtraction-application-compareDifferenceFewer\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"compareDifferenceFewer\"},\"mode\":\"subtraction\",\"itemKey\":\"subtraction::-::42::18::24::differenceAsDistance::subtraction-application-compareDifferenceFewer::|Kofi has 18 buttons. Nina has 42. How many fewer buttons does Kofi have than Nina?|||\"}"
+    },
+    {
+      "mode": "multiplication",
+      "level": 1,
+      "seed": 11271,
+      "expectedJSON": "{\"a\":3,\"b\":3,\"op\":\"x\",\"answer\":9,\"level\":1,\"display\":{\"promptText\":\"3 x 3 = ?\"},\"metadata\":{\"modeId\":\"multiplication\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"OA\",\"cluster\":\"Multiply and divide within 100\",\"subskill\":\"equalGroups\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP7\",\"MP8\"],\"standardRefs\":[\"3.OA\",\"4.OA\"],\"misconceptionTags\":[\"factNeighbor\",\"operationSwap\",\"offByOne\"],\"blueprintId\":\"multiplication-procedural-equalGroupsProductUnknown\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"equalGroupsProductUnknown\"},\"mode\":\"multiplication\",\"itemKey\":\"multiplication::x::3::3::9::equalGroups::multiplication-procedural-equalGroupsProductUnknown::|3 x 3 = ?|||\"}"
+    },
+    {
+      "mode": "multiplication",
+      "level": 4,
+      "seed": 35028,
+      "expectedJSON": "{\"a\":6,\"b\":4,\"op\":\"x\",\"answer\":24,\"level\":4,\"display\":{\"promptText\":\"6 x 4 = ?\"},\"metadata\":{\"modeId\":\"multiplication\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"OA\",\"cluster\":\"Multiply and divide within 100\",\"subskill\":\"equalGroups\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP7\",\"MP8\"],\"standardRefs\":[\"3.OA\",\"4.OA\"],\"misconceptionTags\":[\"factNeighbor\",\"operationSwap\",\"offByOne\"],\"blueprintId\":\"multiplication-procedural-equalGroupsProductUnknown\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"equalGroupsProductUnknown\"},\"mode\":\"multiplication\",\"itemKey\":\"multiplication::x::6::4::24::equalGroups::multiplication-procedural-equalGroupsProductUnknown::|6 x 4 = ?|||\"}"
+    },
+    {
+      "mode": "multiplication",
+      "level": 7,
+      "seed": 58785,
+      "expectedJSON": "{\"a\":10,\"b\":90,\"op\":\"x\",\"answer\":9,\"level\":7,\"display\":{\"promptText\":\"? x 10 = 90\"},\"answerType\":\"numberPad\",\"metadata\":{\"modeId\":\"multiplication\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"OA\",\"cluster\":\"Multiply and divide within 100\",\"subskill\":\"unknownQuotient\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK3\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP7\",\"MP8\"],\"standardRefs\":[\"3.OA\",\"4.OA\"],\"misconceptionTags\":[\"factNeighbor\",\"operationSwap\",\"offByOne\",\"compareAsAdditive\"],\"blueprintId\":\"multiplication-conceptual-compareMultiplierUnknown\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"compareMultiplierUnknown\"},\"mode\":\"multiplication\",\"itemKey\":\"multiplication::x::10::90::9::unknownQuotient::multiplication-conceptual-compareMultiplierUnknown::|? x 10 = 90|||\"}"
+    },
+    {
+      "mode": "division",
+      "level": 1,
+      "seed": 9836,
+      "expectedJSON": "{\"a\":15,\"b\":3,\"op\":\"/\",\"answer\":5,\"level\":1,\"display\":{\"promptText\":\"15 pencils are shared equally into 3 bags. How many pencils are in each bag?\"},\"metadata\":{\"modeId\":\"division\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"OA\",\"cluster\":\"Multiply and divide within 100\",\"subskill\":\"partitioning\",\"itemFamily\":\"application\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP1\",\"MP2\",\"MP7\"],\"standardRefs\":[\"3.OA\",\"4.OA\"],\"misconceptionTags\":[\"factNeighbor\",\"operationSwap\",\"divisionReversed\"],\"blueprintId\":\"division-application-equalGroupsSizeUnknown\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"equalGroupsSizeUnknown\"},\"mode\":\"division\",\"itemKey\":\"division::/::15::3::5::partitioning::division-application-equalGroupsSizeUnknown::|15 pencils are shared equally into 3 bags. How many pencils are in each bag?|||\"}"
+    },
+    {
+      "mode": "division",
+      "level": 4,
+      "seed": 33593,
+      "expectedJSON": "{\"a\":12,\"b\":6,\"op\":\"/\",\"answer\":2,\"level\":4,\"display\":{\"promptText\":\"12 / 6 = ?\"},\"metadata\":{\"modeId\":\"division\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"OA\",\"cluster\":\"Multiply and divide within 100\",\"subskill\":\"partitioning\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP1\",\"MP2\",\"MP7\"],\"standardRefs\":[\"3.OA\",\"4.OA\"],\"misconceptionTags\":[\"factNeighbor\",\"operationSwap\",\"divisionReversed\"],\"blueprintId\":\"division-procedural-arrayRowSizeUnknown\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"arrayRowSizeUnknown\"},\"mode\":\"division\",\"itemKey\":\"division::/::12::6::2::partitioning::division-procedural-arrayRowSizeUnknown::|12 / 6 = ?|||\"}"
+    },
+    {
+      "mode": "division",
+      "level": 7,
+      "seed": 57350,
+      "expectedJSON": "{\"a\":88,\"b\":11,\"op\":\"/\",\"answer\":8,\"level\":7,\"display\":{\"promptText\":\"88 / 11 = ?\"},\"metadata\":{\"modeId\":\"division\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"OA\",\"cluster\":\"Multiply and divide within 100\",\"subskill\":\"partitioning\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP1\",\"MP2\",\"MP7\"],\"standardRefs\":[\"3.OA\",\"4.OA\"],\"misconceptionTags\":[\"factNeighbor\",\"operationSwap\",\"divisionReversed\"],\"blueprintId\":\"division-procedural-equalGroupsSizeUnknown\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"equalGroupsSizeUnknown\"},\"mode\":\"division\",\"itemKey\":\"division::/::88::11::8::partitioning::division-procedural-equalGroupsSizeUnknown::|88 / 11 = ?|||\"}"
+    },
+    {
+      "mode": "comparing",
+      "level": 1,
+      "seed": 10058,
+      "expectedJSON": "{\"a\":2,\"b\":3,\"op\":\"?\",\"answer\":\"<\",\"level\":1,\"answerType\":\"symbolSelect\",\"metadata\":{\"modeId\":\"comparing\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"NBT\",\"cluster\":\"Compare two numbers\",\"subskill\":\"symbolSelection\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP6\",\"MP7\"],\"standardRefs\":[\"K.CC\",\"1.NBT\",\"2.NBT\"],\"misconceptionTags\":[\"symbolFlip\",\"moreDigitsMoreValue\"],\"blueprintId\":\"comparing-procedural-symbolBetweenNumerals\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"symbolBetweenNumerals\"},\"mode\":\"comparing\",\"itemKey\":\"comparing::?::2::3::<::symbolSelection::comparing-procedural-symbolBetweenNumerals::||||\"}"
+    },
+    {
+      "mode": "comparing",
+      "level": 4,
+      "seed": 33815,
+      "expectedJSON": "{\"a\":null,\"b\":null,\"op\":\"vs\",\"answer\":23,\"level\":4,\"display\":{\"promptText\":\"Tap the number halfway between 18 and 28.\",\"min\":18,\"max\":28,\"step\":1,\"labelEvery\":5,\"lineMode\":\"locate\"},\"answerType\":\"numberLine\",\"metadata\":{\"modeId\":\"comparing\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"NBT\",\"cluster\":\"Compare two numbers\",\"subskill\":\"distanceCompare\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"numberLine\",\"mathPractices\":[\"MP2\",\"MP6\",\"MP7\"],\"standardRefs\":[\"K.CC\",\"1.NBT\",\"2.NBT\"],\"misconceptionTags\":[\"compareLeftmostOnly\"],\"blueprintId\":\"comparing-conceptual-numberLineBetween\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"numberLineBetween\"},\"mode\":\"comparing\",\"itemKey\":\"comparing::vs::::::23::distanceCompare::comparing-conceptual-numberLineBetween::|Tap the number halfway between 18 and 28.|||1\"}"
+    },
+    {
+      "mode": "comparing",
+      "level": 7,
+      "seed": 57572,
+      "expectedJSON": "{\"a\":null,\"b\":null,\"op\":\"vs\",\"answer\":\"32, 38, 58\",\"level\":7,\"display\":{\"promptText\":\"Put these in order from smallest to largest: 58, 32, 38.\"},\"choices\":[\"32, 58, 38\",\"38, 32, 58\",\"58, 38, 32\",\"32, 38, 58\"],\"metadata\":{\"modeId\":\"comparing\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"NBT\",\"cluster\":\"Compare two numbers\",\"subskill\":\"distanceCompare\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP6\",\"MP7\"],\"standardRefs\":[\"K.CC\",\"1.NBT\",\"2.NBT\"],\"misconceptionTags\":[\"moreDigitsMoreValue\",\"compareLeftmostOnly\"],\"blueprintId\":\"comparing-procedural-orderThreeNumbers\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"orderThreeNumbers\"},\"mode\":\"comparing\",\"itemKey\":\"comparing::vs::::::32, 38, 58::distanceCompare::comparing-procedural-orderThreeNumbers::|Put these in order from smallest to largest: 58, 32, 38.|||\"}"
+    },
+    {
+      "mode": "counting",
+      "level": 1,
+      "seed": 9838,
+      "expectedJSON": "{\"a\":null,\"b\":null,\"op\":\"count\",\"answer\":6,\"level\":1,\"display\":{\"emoji\":\"🟢\",\"count\":6},\"metadata\":{\"modeId\":\"counting\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"CC\",\"cluster\":\"Count to tell the number of objects\",\"subskill\":\"cardinality\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"objectSet\",\"mathPractices\":[\"MP2\",\"MP6\"],\"standardRefs\":[\"K.CC\"],\"misconceptionTags\":[\"doubleCount\",\"skipObject\"],\"blueprintId\":\"counting-conceptual-countScatteredSet\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"countScatteredSet\"},\"mode\":\"counting\",\"itemKey\":\"counting::count::::::6::cardinality::counting-conceptual-countScatteredSet::|||6|\"}"
+    },
+    {
+      "mode": "counting",
+      "level": 4,
+      "seed": 33595,
+      "expectedJSON": "{\"a\":null,\"b\":null,\"op\":\"count\",\"answer\":10,\"level\":4,\"display\":{\"promptText\":\"Mina counted 11 stickers but there are only 10. Mina pointed at one sticker twice. What is the real number?\"},\"answerType\":\"numberPad\",\"metadata\":{\"modeId\":\"counting\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"CC\",\"cluster\":\"Count to tell the number of objects\",\"subskill\":\"cardinality\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK3\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP2\",\"MP6\"],\"standardRefs\":[\"K.CC\"],\"misconceptionTags\":[\"doubleCount\",\"offByOne\"],\"blueprintId\":\"counting-conceptual-errorAnalysisDoubleCount\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"errorAnalysisDoubleCount\"},\"mode\":\"counting\",\"itemKey\":\"counting::count::::::10::cardinality::counting-conceptual-errorAnalysisDoubleCount::|Mina counted 11 stickers but there are only 10. Mina pointed at one sticker twice. What is the real number?|||\"}"
+    },
+    {
+      "mode": "counting",
+      "level": 7,
+      "seed": 57352,
+      "expectedJSON": "{\"a\":null,\"b\":null,\"op\":\"count\",\"answer\":\"False\",\"level\":7,\"display\":{\"promptText\":\"20 = 18\",\"subPrompt\":\"True or false?\"},\"choices\":[\"True\",\"False\"],\"metadata\":{\"modeId\":\"counting\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"CC\",\"cluster\":\"Count to tell the number of objects\",\"subskill\":\"subitizing\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP6\"],\"standardRefs\":[\"K.CC\"],\"misconceptionTags\":[],\"blueprintId\":\"counting-reflexive-subitizing\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"estimateThenCount\",\"formatId\":\"reflexive\"},\"answerType\":\"choice\",\"mode\":\"counting\",\"itemKey\":\"counting::count::::::False::subitizing::counting-reflexive-subitizing::|20 = 18|||\"}"
+    },
+    {
+      "mode": "skipCounting",
+      "level": 1,
+      "seed": 10769,
+      "expectedJSON": "{\"a\":null,\"b\":null,\"op\":\"skip\",\"answer\":12,\"level\":1,\"display\":{\"sequence\":[6,8,10],\"step\":2},\"step\":2,\"metadata\":{\"modeId\":\"skipCounting\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"OA\",\"cluster\":\"Gain foundations for multiplication\",\"subskill\":\"patternRule\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"sequence\",\"mathPractices\":[\"MP1\",\"MP7\",\"MP8\"],\"standardRefs\":[\"2.NBT\",\"2.OA\",\"3.OA\"],\"misconceptionTags\":[\"wrongStep\",\"patternReset\"],\"blueprintId\":\"skipCounting-procedural-nextTermForward\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"nextTermForward\"},\"mode\":\"skipCounting\",\"itemKey\":\"skipCounting::skip::::::12::patternRule::skipCounting-procedural-nextTermForward::||6,8,10||2\"}"
+    },
+    {
+      "mode": "skipCounting",
+      "level": 4,
+      "seed": 34526,
+      "expectedJSON": "{\"a\":null,\"b\":null,\"op\":\"skip\",\"answer\":\"add 5\",\"level\":4,\"display\":{\"promptText\":\"What is the rule? 40, 45, 50, 55\"},\"choices\":[\"add 4\",\"add 6\",\"add 5\",\"add 10\"],\"step\":5,\"metadata\":{\"modeId\":\"skipCounting\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"OA\",\"cluster\":\"Gain foundations for multiplication\",\"subskill\":\"stepInference\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP1\",\"MP7\",\"MP8\"],\"standardRefs\":[\"2.NBT\",\"2.OA\",\"3.OA\"],\"misconceptionTags\":[\"wrongStep\"],\"blueprintId\":\"skipCounting-conceptual-identifyRule\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"identifyRule\"},\"mode\":\"skipCounting\",\"itemKey\":\"skipCounting::skip::::::add 5::stepInference::skipCounting-conceptual-identifyRule::|What is the rule? 40, 45, 50, 55|||\"}"
+    },
+    {
+      "mode": "skipCounting",
+      "level": 7,
+      "seed": 58283,
+      "expectedJSON": "{\"a\":null,\"b\":null,\"op\":\"skip\",\"answer\":3,\"level\":7,\"display\":{\"sequence\":[12,9,6],\"step\":-3},\"answerType\":\"fillBlank\",\"step\":3,\"metadata\":{\"modeId\":\"skipCounting\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"OA\",\"cluster\":\"Gain foundations for multiplication\",\"subskill\":\"patternRule\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"sequence\",\"mathPractices\":[\"MP1\",\"MP7\",\"MP8\"],\"standardRefs\":[\"2.NBT\",\"2.OA\",\"3.OA\"],\"misconceptionTags\":[\"directionIgnored\",\"wrongStep\"],\"blueprintId\":\"skipCounting-procedural-nextTermBackward\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"nextTermBackward\"},\"mode\":\"skipCounting\",\"itemKey\":\"skipCounting::skip::::::3::patternRule::skipCounting-procedural-nextTermBackward::||12,9,6||-3\"}"
+    },
+    {
+      "mode": "placeValue",
+      "level": 1,
+      "seed": 10255,
+      "expectedJSON": "{\"a\":26,\"b\":null,\"op\":\"place\",\"answer\":2,\"level\":1,\"display\":{\"type\":\"placeValueInContext\",\"promptText\":\"Nia packs pencils in boxes of 10. Nia has 26 pencils. How many full boxes can Nia pack?\",\"number\":26,\"tens\":2,\"ones\":6},\"answerType\":\"numberPad\",\"metadata\":{\"modeId\":\"placeValue\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"NBT\",\"cluster\":\"Understand place value\",\"subskill\":\"regroupingSense\",\"itemFamily\":\"application\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP2\",\"MP6\",\"MP7\"],\"standardRefs\":[\"1.NBT\",\"2.NBT\"],\"misconceptionTags\":[\"onesAsTens\",\"digitReversal\"],\"blueprintId\":\"placeValue-application-placeValueInContext\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"placeValueInContext\"},\"mode\":\"placeValue\",\"itemKey\":\"placeValue::place::26::::2::regroupingSense::placeValue-application-placeValueInContext::placeValueInContext|Nia packs pencils in boxes of 10. Nia has 26 pencils. How many full boxes can Nia pack?|||\"}"
+    },
+    {
+      "mode": "placeValue",
+      "level": 4,
+      "seed": 34012,
+      "expectedJSON": "{\"a\":52,\"b\":null,\"op\":\"place\",\"answer\":2,\"level\":4,\"display\":{\"type\":\"digitsInPlace\",\"promptText\":\"How many ones in 52?\",\"number\":52,\"tens\":5,\"ones\":2},\"answerType\":\"numberPad\",\"metadata\":{\"modeId\":\"placeValue\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"NBT\",\"cluster\":\"Understand place value\",\"subskill\":\"tensOnes\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"decomposition\",\"mathPractices\":[\"MP2\",\"MP6\",\"MP7\"],\"standardRefs\":[\"1.NBT\",\"2.NBT\"],\"misconceptionTags\":[\"onesAsTens\",\"digitReversal\"],\"blueprintId\":\"placeValue-procedural-digitsInPlace\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"digitsInPlace\"},\"mode\":\"placeValue\",\"itemKey\":\"placeValue::place::52::::2::tensOnes::placeValue-procedural-digitsInPlace::digitsInPlace|How many ones in 52?|||\"}"
+    },
+    {
+      "mode": "placeValue",
+      "level": 7,
+      "seed": 57769,
+      "expectedJSON": "{\"a\":130,\"b\":null,\"op\":\"place\",\"answer\":\"1 hundreds 3 ones\",\"level\":7,\"display\":{\"type\":\"oddOneOutSameValue\",\"promptText\":\"Which one is NOT 130?\",\"number\":130,\"tens\":3,\"ones\":0},\"choices\":[\"1 hundreds 3 tens\",\"100 + 30\",\"13 tens\",\"1 hundreds 3 ones\"],\"metadata\":{\"modeId\":\"placeValue\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"NBT\",\"cluster\":\"Understand place value\",\"subskill\":\"expandedForm\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK3\",\"representation\":\"decomposition\",\"mathPractices\":[\"MP2\",\"MP6\",\"MP7\"],\"standardRefs\":[\"1.NBT\",\"2.NBT\"],\"misconceptionTags\":[\"digitNotValue\",\"placeValueSlip\"],\"blueprintId\":\"placeValue-conceptual-oddOneOutSameValue\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"oddOneOutSameValue\"},\"mode\":\"placeValue\",\"itemKey\":\"placeValue::place::130::::1 hundreds 3 ones::expandedForm::placeValue-conceptual-oddOneOutSameValue::oddOneOutSameValue|Which one is NOT 130?|||\"}"
+    },
+    {
+      "mode": "fractions",
+      "level": 1,
+      "seed": 10067,
+      "expectedJSON": "{\"op\":\"frac\",\"answer\":0.5,\"level\":1,\"display\":{\"promptText\":\"Place 1/2 on the number line. It runs from 0 to 1 in halves.\",\"representation\":\"visual\",\"min\":0,\"max\":1,\"step\":0.5,\"labelEvery\":2,\"lineMode\":\"locate\"},\"answerType\":\"numberLine\",\"metadata\":{\"modeId\":\"fractions\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"NF\",\"cluster\":\"Build fractions; equivalence and comparison\",\"subskill\":\"fractionAsNumber\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"visual\",\"mathPractices\":[\"MP2\",\"MP3\",\"MP7\"],\"standardRefs\":[\"3.NF\",\"4.NF\"],\"misconceptionTags\":[\"numberLineCountsTicks\",\"wholeNumberBias\"],\"blueprintId\":\"fractions-conceptual-fractionOnNumberLine\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":null},\"mode\":\"fractions\",\"itemKey\":\"fractions::frac::::::0.5::fractionAsNumber::fractions-conceptual-fractionOnNumberLine::|Place 1/2 on the number line. It runs from 0 to 1 in halves.|||0.5\"}"
+    },
+    {
+      "mode": "fractions",
+      "level": 4,
+      "seed": 33824,
+      "expectedJSON": "{\"op\":\"frac\",\"answer\":\"greater than 1/2\",\"level\":4,\"display\":{\"promptText\":\"Is 3/5 less than, equal to, or greater than 1/2?\",\"representation\":\"symbolic\"},\"answerType\":\"choice\",\"choices\":[\"less than 1/2\",\"equal to 1/2\",\"greater than 1/2\"],\"metadata\":{\"modeId\":\"fractions\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"NF\",\"cluster\":\"Build fractions; equivalence and comparison\",\"subskill\":\"compareFractions\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP3\",\"MP7\"],\"standardRefs\":[\"3.NF\",\"4.NF\"],\"misconceptionTags\":[\"numeratorOnly\",\"wholeNumberBias\"],\"blueprintId\":\"fractions-conceptual-compareToHalf\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":null},\"mode\":\"fractions\",\"itemKey\":\"fractions::frac::::::greater than 1/2::compareFractions::fractions-conceptual-compareToHalf::|Is 3/5 less than, equal to, or greater than 1/2?|||\"}"
+    },
+    {
+      "mode": "fractions",
+      "level": 7,
+      "seed": 57581,
+      "expectedJSON": "{\"op\":\"frac\",\"answer\":[\"10/15\",\"6/9\"],\"level\":7,\"display\":{\"promptText\":\"Select every fraction equal to 2/3.\",\"representation\":\"symbolic\",\"options\":[\"10/15\",\"6/6\",\"5/6\",\"6/9\"],\"requiredCount\":2},\"answerType\":\"multiSelect\",\"metadata\":{\"modeId\":\"fractions\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"NF\",\"cluster\":\"Build fractions; equivalence and comparison\",\"subskill\":\"equivalence\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK3\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP3\",\"MP7\"],\"standardRefs\":[\"3.NF\",\"4.NF\"],\"misconceptionTags\":[\"wholeNumberBias\",\"nonEquivalence\"],\"blueprintId\":\"fractions-conceptual-equivalenceMultiSelect\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":null},\"mode\":\"fractions\",\"itemKey\":\"fractions::frac::::::[\\\"10/15\\\",\\\"6/9\\\"]::equivalence::fractions-conceptual-equivalenceMultiSelect::|Select every fraction equal to 2/3.|||\"}"
+    },
+    {
+      "mode": "decimals",
+      "level": 1,
+      "seed": 9801,
+      "expectedJSON": "{\"op\":\"dec\",\"answer\":\">\",\"level\":1,\"display\":{\"promptText\":\"Compare: 0.9 ? 0.7. Use <, >, or =.\",\"representation\":\"symbolic\"},\"answerType\":\"symbolSelect\",\"metadata\":{\"modeId\":\"decimals\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"NF\",\"cluster\":\"Decimal notation for fractions; compare decimals\",\"subskill\":\"compareDecimals\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP3\",\"MP6\"],\"standardRefs\":[\"4.NF\"],\"misconceptionTags\":[\"longerIsLarger\",\"symbolFlip\"],\"blueprintId\":\"decimals-conceptual-compareDecimals\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":null},\"mode\":\"decimals\",\"itemKey\":\"decimals::dec::::::>::compareDecimals::decimals-conceptual-compareDecimals::|Compare: 0.9 ? 0.7. Use <, >, or =.|||\"}"
+    },
+    {
+      "mode": "decimals",
+      "level": 4,
+      "seed": 33558,
+      "expectedJSON": "{\"op\":\"dec\",\"answer\":0.4,\"level\":4,\"display\":{\"promptText\":\"Write as a decimal: 4 tenths.\",\"representation\":\"symbolic\"},\"answerType\":\"decimal\",\"metadata\":{\"modeId\":\"decimals\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"NF\",\"cluster\":\"Decimal notation for fractions; compare decimals\",\"subskill\":\"tenthsHundredths\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP3\",\"MP6\"],\"standardRefs\":[\"4.NF\"],\"misconceptionTags\":[\"placeValueSlip\",\"zeroIgnored\"],\"blueprintId\":\"decimals-procedural-decimalFromWords\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":null},\"mode\":\"decimals\",\"itemKey\":\"decimals::dec::::::0.4::tenthsHundredths::decimals-procedural-decimalFromWords::|Write as a decimal: 4 tenths.|||\"}"
+    },
+    {
+      "mode": "decimals",
+      "level": 7,
+      "seed": 57315,
+      "expectedJSON": "{\"op\":\"dec\",\"answer\":0.48,\"level\":7,\"display\":{\"promptText\":\"A 10-by-10 grid has 48 of its 100 squares shaded. Write that as a decimal.\",\"representation\":\"visual\"},\"answerType\":\"decimal\",\"metadata\":{\"modeId\":\"decimals\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"NF\",\"cluster\":\"Decimal notation for fractions; compare decimals\",\"subskill\":\"tenthsHundredths\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"visual\",\"mathPractices\":[\"MP2\",\"MP3\",\"MP6\"],\"standardRefs\":[\"4.NF\"],\"misconceptionTags\":[\"placeValueSlip\",\"zeroIgnored\"],\"blueprintId\":\"decimals-conceptual-hundredthsFromGrid\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":null},\"mode\":\"decimals\",\"itemKey\":\"decimals::dec::::::0.48::tenthsHundredths::decimals-conceptual-hundredthsFromGrid::|A 10-by-10 grid has 48 of its 100 squares shaded. Write that as a decimal.|||\"}"
+    },
+    {
+      "mode": "numberBonds",
+      "level": 1,
+      "seed": 10511,
+      "expectedJSON": "{\"a\":null,\"b\":null,\"op\":\"bond\",\"answer\":7,\"level\":1,\"display\":{\"promptText\":\"Nia picked 9 plums. 2 were purple and the rest were green. How many were green?\",\"whole\":9,\"part\":2},\"answerType\":\"numberBond\",\"metadata\":{\"modeId\":\"numberBonds\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"OA\",\"cluster\":\"Understand addition/subtraction via part-part-whole\",\"subskill\":\"missingPart\",\"itemFamily\":\"application\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP2\",\"MP7\"],\"standardRefs\":[\"K.OA\",\"1.OA\"],\"misconceptionTags\":[\"partWholeSwap\",\"countAllError\"],\"blueprintId\":\"numberBonds-application-bondFromStory\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"bondFromStory\"},\"mode\":\"numberBonds\",\"itemKey\":\"numberBonds::bond::::::7::missingPart::numberBonds-application-bondFromStory::|Nia picked 9 plums. 2 were purple and the rest were green. How many were green?|||\"}"
+    },
+    {
+      "mode": "numberBonds",
+      "level": 4,
+      "seed": 34268,
+      "expectedJSON": "{\"a\":null,\"b\":null,\"op\":\"bond\",\"answer\":\"False\",\"level\":4,\"display\":{\"promptText\":\"14 = 12\",\"subPrompt\":\"True or false?\"},\"answerType\":\"choice\",\"metadata\":{\"modeId\":\"numberBonds\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"OA\",\"cluster\":\"Understand addition/subtraction via part-part-whole\",\"subskill\":\"partWhole\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP7\"],\"standardRefs\":[\"K.OA\",\"1.OA\"],\"misconceptionTags\":[\"partWholeSwap\",\"countAllError\"],\"blueprintId\":\"numberBonds-reflexive-partWhole\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"threePartBond\",\"formatId\":\"reflexive\"},\"choices\":[\"True\",\"False\"],\"mode\":\"numberBonds\",\"itemKey\":\"numberBonds::bond::::::False::partWhole::numberBonds-reflexive-partWhole::|14 = 12|||\"}"
+    },
+    {
+      "mode": "numberBonds",
+      "level": 7,
+      "seed": 58025,
+      "expectedJSON": "{\"a\":null,\"b\":null,\"op\":\"bond\",\"answer\":[\"58 - 5 = 53\",\"58 - 53 = 5\"],\"level\":7,\"display\":{\"promptText\":\"Choose BOTH subtraction sentences this bond makes: whole 58, parts 5 and 53.\",\"options\":[\"58 - 5 = 5\",\"5 - 53 = 58\",\"58 - 53 = 5\",\"58 - 5 = 53\"],\"requiredCount\":2},\"answerType\":\"multiSelect\",\"metadata\":{\"modeId\":\"numberBonds\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"OA\",\"cluster\":\"Understand addition/subtraction via part-part-whole\",\"subskill\":\"decompose\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK3\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP7\"],\"standardRefs\":[\"K.OA\",\"1.OA\"],\"misconceptionTags\":[\"partWholeSwap\"],\"blueprintId\":\"numberBonds-conceptual-factFamily\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"factFamily\"},\"mode\":\"numberBonds\",\"itemKey\":\"numberBonds::bond::::::[\\\"58 - 5 = 53\\\",\\\"58 - 53 = 5\\\"]::decompose::numberBonds-conceptual-factFamily::|Choose BOTH subtraction sentences this bond makes: whole 58, parts 5 and 53.|||\"}"
+    },
+    {
+      "mode": "barModels",
+      "level": 1,
+      "seed": 10019,
+      "expectedJSON": "{\"op\":\"bar\",\"answer\":14,\"level\":1,\"display\":{\"promptText\":\"Luca has 6 stamps. Jonas has 8 stamps. How many stamps are there altogether?\",\"representation\":\"verbalContext\"},\"a\":6,\"b\":8,\"answerType\":\"choice\",\"metadata\":{\"modeId\":\"barModels\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"OA\",\"cluster\":\"Represent and solve problems with bar models\",\"subskill\":\"partWhole\",\"itemFamily\":\"application\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP1\",\"MP2\",\"MP4\"],\"standardRefs\":[\"2.OA\",\"3.OA\",\"4.OA\"],\"misconceptionTags\":[\"operationSwap\",\"offByOne\"],\"blueprintId\":\"barModels-application-partWholeTotalUnknown\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":null},\"mode\":\"barModels\",\"itemKey\":\"barModels::bar::6::8::14::partWhole::barModels-application-partWholeTotalUnknown::|Luca has 6 stamps. Jonas has 8 stamps. How many stamps are there altogether?|||\"}"
+    },
+    {
+      "mode": "barModels",
+      "level": 4,
+      "seed": 33776,
+      "expectedJSON": "{\"op\":\"-\",\"answer\":39,\"level\":4,\"display\":{\"promptText\":\"Kaia has 84 lego bricks and uses 45 of them to build a car. How many bricks are left?\",\"representation\":\"manipulative\",\"type\":\"barPartWhole\",\"whole\":84,\"part\":45},\"a\":84,\"b\":45,\"answerType\":\"barModel\",\"metadata\":{\"modeId\":\"barModels\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"OA\",\"cluster\":\"Represent and solve problems with bar models\",\"subskill\":\"partWhole\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"manipulative\",\"mathPractices\":[\"MP1\",\"MP2\",\"MP4\"],\"standardRefs\":[\"2.OA\",\"3.OA\",\"4.OA\"],\"misconceptionTags\":[\"partWholeSwap\",\"operationSwap\",\"offByOne\"],\"blueprintId\":\"barModels-conceptual-partWholePartUnknown\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":null},\"mode\":\"barModels\",\"itemKey\":\"barModels::-::84::45::39::partWhole::barModels-conceptual-partWholePartUnknown::barPartWhole|Kaia has 84 lego bricks and uses 45 of them to build a car. How many bricks are left?|||\"}"
+    },
+    {
+      "mode": "barModels",
+      "level": 7,
+      "seed": 57533,
+      "expectedJSON": "{\"op\":\"-\",\"answer\":\"-\",\"level\":7,\"display\":{\"promptText\":\"482 ? 31 = 451\",\"subPrompt\":\"Which sign belongs?\"},\"a\":482,\"b\":31,\"answerType\":\"choice\",\"metadata\":{\"modeId\":\"barModels\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"OA\",\"cluster\":\"Represent and solve problems with bar models\",\"subskill\":\"partWhole\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP1\",\"MP2\",\"MP4\"],\"standardRefs\":[\"2.OA\",\"3.OA\",\"4.OA\"],\"misconceptionTags\":[\"partWholeSwap\",\"operationSwap\",\"offByOne\"],\"blueprintId\":\"barModels-missingOperator-partWhole\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":null,\"formatId\":\"missingOperator\"},\"choices\":[\"+\",\"-\",\"/\",\"x\"],\"mode\":\"barModels\",\"itemKey\":\"barModels::-::482::31::-::partWhole::barModels-missingOperator-partWhole::|482 ? 31 = 451|||\"}"
+    },
+    {
+      "mode": "placeValueDiscs",
+      "level": 1,
+      "seed": 11412,
+      "expectedJSON": "{\"op\":\"pvdiscs\",\"answer\":965,\"level\":1,\"display\":{\"type\":\"discs\",\"cols\":[{\"place\":100,\"count\":9},{\"place\":10,\"count\":6},{\"place\":1,\"count\":5}],\"promptText\":\"What number do these discs show?\"},\"answerType\":\"placeValueDiscs\",\"metadata\":{\"modeId\":\"placeValueDiscs\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"NBT\",\"cluster\":\"Understand place value with base-ten discs\",\"subskill\":\"readNumber\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"placeValueBlocks\",\"mathPractices\":[\"MP2\",\"MP7\"],\"standardRefs\":[\"1.NBT\",\"2.NBT\"],\"misconceptionTags\":[\"placeValueSlip\",\"zeroColumnSkipped\"],\"blueprintId\":\"placeValueDiscs-conceptual-readDiscs\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"readDiscs\"},\"mode\":\"placeValueDiscs\",\"itemKey\":\"placeValueDiscs::pvdiscs::::::965::readNumber::placeValueDiscs-conceptual-readDiscs::discs|What number do these discs show?|||\"}"
+    },
+    {
+      "mode": "placeValueDiscs",
+      "level": 4,
+      "seed": 35169,
+      "expectedJSON": "{\"op\":\"pvdiscs\",\"answer\":\"8 hundreds, 2 tens, 2 ones\",\"level\":4,\"display\":{\"promptText\":\"Which chart shows 822?\"},\"choices\":[\"9 hundreds, 2 tens, 2 ones\",\"8 hundreds, 2 tens, 3 ones\",\"8 hundreds, 2 tens, 2 ones\",\"2 hundreds, 8 tens, 2 ones\"],\"metadata\":{\"modeId\":\"placeValueDiscs\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"NBT\",\"cluster\":\"Understand place value with base-ten discs\",\"subskill\":\"readNumber\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP7\"],\"standardRefs\":[\"1.NBT\",\"2.NBT\"],\"misconceptionTags\":[\"placeValueSlip\",\"zeroColumnSkipped\"],\"blueprintId\":\"placeValueDiscs-conceptual-whichChartShows\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"whichChartShows\"},\"mode\":\"placeValueDiscs\",\"itemKey\":\"placeValueDiscs::pvdiscs::::::8 hundreds, 2 tens, 2 ones::readNumber::placeValueDiscs-conceptual-whichChartShows::|Which chart shows 822?|||\"}"
+    },
+    {
+      "mode": "placeValueDiscs",
+      "level": 7,
+      "seed": 58926,
+      "expectedJSON": "{\"op\":\"pvdiscs\",\"answer\":44,\"level\":7,\"display\":{\"promptText\":\"Lay out 1 tens and 1 ones 4 times. Trade the ones. What number is it?\"},\"answerType\":\"numberPad\",\"metadata\":{\"modeId\":\"placeValueDiscs\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"NBT\",\"cluster\":\"Understand place value with base-ten discs\",\"subskill\":\"discOperations\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK3\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP7\"],\"standardRefs\":[\"1.NBT\",\"2.NBT\"],\"misconceptionTags\":[\"regroupMiss\",\"discCountAsDigit\"],\"blueprintId\":\"placeValueDiscs-procedural-discsForEqualGroups\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"discsForEqualGroups\"},\"mode\":\"placeValueDiscs\",\"itemKey\":\"placeValueDiscs::pvdiscs::::::44::discOperations::placeValueDiscs-procedural-discsForEqualGroups::|Lay out 1 tens and 1 ones 4 times. Trade the ones. What number is it?|||\"}"
+    },
+    {
+      "mode": "factorsMultiples",
+      "level": 1,
+      "seed": 11728,
+      "expectedJSON": "{\"op\":\"factor\",\"answer\":3,\"level\":1,\"display\":{\"promptText\":\"How many factors does 4 have?\",\"representation\":\"symbolic\"},\"answerType\":\"numberPad\",\"metadata\":{\"modeId\":\"factorsMultiples\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"OA\",\"cluster\":\"Gain familiarity with factors and multiples\",\"subskill\":\"factorCount\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP3\",\"MP7\",\"MP8\"],\"standardRefs\":[\"4.OA\"],\"misconceptionTags\":[\"missingOneOrSelf\",\"squareDoubleCount\",\"offByOne\"],\"blueprintId\":\"factorsMultiples-procedural-factorCount\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":null},\"mode\":\"factorsMultiples\",\"itemKey\":\"factorsMultiples::factor::::::3::factorCount::factorsMultiples-procedural-factorCount::|How many factors does 4 have?|||\"}"
+    },
+    {
+      "mode": "factorsMultiples",
+      "level": 4,
+      "seed": 35485,
+      "expectedJSON": "{\"op\":\"factor\",\"answer\":6,\"level\":4,\"display\":{\"promptText\":\"Owen arranges 28 tiles into equal rows with none left over. How many different row sizes can Owen use?\",\"representation\":\"manipulative\"},\"answerType\":\"numberPad\",\"metadata\":{\"modeId\":\"factorsMultiples\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"OA\",\"cluster\":\"Gain familiarity with factors and multiples\",\"subskill\":\"factorPairs\",\"itemFamily\":\"application\",\"cognitiveDemand\":\"DOK3\",\"representation\":\"manipulative\",\"mathPractices\":[\"MP3\",\"MP7\",\"MP8\"],\"standardRefs\":[\"4.OA\"],\"misconceptionTags\":[\"missingOneOrSelf\",\"squareDoubleCount\"],\"blueprintId\":\"factorsMultiples-application-arrayFactorContext\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":null},\"mode\":\"factorsMultiples\",\"itemKey\":\"factorsMultiples::factor::::::6::factorPairs::factorsMultiples-application-arrayFactorContext::|Owen arranges 28 tiles into equal rows with none left over. How many different row sizes can Owen use?|||\"}"
+    },
+    {
+      "mode": "factorsMultiples",
+      "level": 7,
+      "seed": 59242,
+      "expectedJSON": "{\"op\":\"factor\",\"answer\":\"composite\",\"level\":7,\"display\":{\"promptText\":\"Is 39 prime or composite?\",\"representation\":\"symbolic\"},\"answerType\":\"choice\",\"choices\":[\"prime\",\"composite\"],\"metadata\":{\"modeId\":\"factorsMultiples\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"OA\",\"cluster\":\"Gain familiarity with factors and multiples\",\"subskill\":\"primesAndCommon\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP3\",\"MP7\",\"MP8\"],\"standardRefs\":[\"4.OA\"],\"misconceptionTags\":[\"oneIsPrime\",\"missingOneOrSelf\"],\"blueprintId\":\"factorsMultiples-conceptual-primeOrComposite\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":null},\"mode\":\"factorsMultiples\",\"itemKey\":\"factorsMultiples::factor::::::composite::primesAndCommon::factorsMultiples-conceptual-primeOrComposite::|Is 39 prime or composite?|||\"}"
+    },
+    {
+      "mode": "areaPerimeter",
+      "level": 1,
+      "seed": 10972,
+      "expectedJSON": "{\"op\":\"measure\",\"answer\":22,\"answerType\":\"numberPad\",\"level\":1,\"display\":{\"width\":5,\"height\":6,\"promptText\":\"A rectangle of unit squares is 5 units across and 6 units down. How many units is the distance all the way around it?\"},\"distractorContext\":{\"width\":5,\"height\":6,\"a\":5,\"b\":6},\"metadata\":{\"modeId\":\"areaPerimeter\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"MD\",\"cluster\":\"Geometric measurement: area and perimeter\",\"subskill\":\"perimeter\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"visual\",\"mathPractices\":[\"MP2\",\"MP4\",\"MP6\",\"MP7\"],\"standardRefs\":[\"3.MD\",\"4.MD\"],\"misconceptionTags\":[\"areaPerimeterSwap\",\"perimeterHalfCount\",\"offByOne\"],\"blueprintId\":\"areaPerimeter-conceptual-perimeterFromGrid\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"perimeterFromGrid\"},\"mode\":\"areaPerimeter\",\"itemKey\":\"areaPerimeter::measure::::::22::perimeter::areaPerimeter-conceptual-perimeterFromGrid::|A rectangle of unit squares is 5 units across and 6 units down. How many units is the distance all the way around it?|||\"}"
+    },
+    {
+      "mode": "areaPerimeter",
+      "level": 4,
+      "seed": 34729,
+      "expectedJSON": "{\"op\":\"measure\",\"answer\":36,\"answerType\":\"numberPad\",\"level\":4,\"display\":{\"width\":9,\"height\":9,\"promptText\":\"Sam says the perimeter of a 9 cm by 9 cm rectangle is 81 cm, by multiplying the sides. What is the perimeter really?\"},\"distractorContext\":{\"width\":9,\"height\":9},\"metadata\":{\"modeId\":\"areaPerimeter\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"MD\",\"cluster\":\"Geometric measurement: area and perimeter\",\"subskill\":\"perimeter\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK3\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP2\",\"MP4\",\"MP6\",\"MP7\"],\"standardRefs\":[\"3.MD\",\"4.MD\"],\"misconceptionTags\":[\"areaPerimeterSwap\",\"perimeterHalfCount\"],\"blueprintId\":\"areaPerimeter-conceptual-errorAnalysisSwap\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"errorAnalysisSwap\"},\"mode\":\"areaPerimeter\",\"itemKey\":\"areaPerimeter::measure::::::36::perimeter::areaPerimeter-conceptual-errorAnalysisSwap::|Sam says the perimeter of a 9 cm by 9 cm rectangle is 81 cm, by multiplying the sides. What is the perimeter really?|||\"}"
+    },
+    {
+      "mode": "areaPerimeter",
+      "level": 7,
+      "seed": 58486,
+      "expectedJSON": "{\"op\":\"measure\",\"answer\":\"perimeter\",\"answerType\":\"choice\",\"level\":7,\"display\":{\"promptText\":\"Ava wants to put a fence around a 17 m by 2 m garden. Is the area or the perimeter needed?\"},\"choices\":[\"area\",\"perimeter\"],\"metadata\":{\"modeId\":\"areaPerimeter\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"MD\",\"cluster\":\"Geometric measurement: area and perimeter\",\"subskill\":\"measureReasoning\",\"itemFamily\":\"application\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP2\",\"MP4\",\"MP6\",\"MP7\"],\"standardRefs\":[\"3.MD\",\"4.MD\"],\"misconceptionTags\":[\"areaPerimeterSwap\"],\"blueprintId\":\"areaPerimeter-application-whichMeasureNeeded\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"whichMeasureNeeded\"},\"mode\":\"areaPerimeter\",\"itemKey\":\"areaPerimeter::measure::::::perimeter::measureReasoning::areaPerimeter-application-whichMeasureNeeded::|Ava wants to put a fence around a 17 m by 2 m garden. Is the area or the perimeter needed?|||\"}"
+    },
+    {
+      "mode": "money",
+      "level": 1,
+      "seed": 9126,
+      "expectedJSON": "{\"op\":\"money\",\"answer\":25,\"answerType\":\"numberPad\",\"level\":1,\"display\":{\"promptText\":\"How many cents is one quarter worth?\"},\"metadata\":{\"modeId\":\"money\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"MD\",\"cluster\":\"Work with money\",\"subskill\":\"countCoins\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP1\",\"MP2\",\"MP6\"],\"standardRefs\":[\"2.MD\"],\"misconceptionTags\":[\"coinValueSlip\"],\"blueprintId\":\"money-conceptual-coinValueRecall\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"coinValueRecall\"},\"mode\":\"money\",\"itemKey\":\"money::money::::::25::countCoins::money-conceptual-coinValueRecall::|How many cents is one quarter worth?|||\"}"
+    },
+    {
+      "mode": "money",
+      "level": 4,
+      "seed": 32883,
+      "expectedJSON": "{\"op\":\"money\",\"answer\":63,\"answerType\":\"numberPad\",\"level\":4,\"display\":{\"promptText\":\"Nia has 1 quarter, 3 dimes, 1 nickel and 3 pennies. How many cents in all?\"},\"metadata\":{\"modeId\":\"money\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"MD\",\"cluster\":\"Work with money\",\"subskill\":\"countCoins\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP1\",\"MP2\",\"MP6\"],\"standardRefs\":[\"2.MD\"],\"misconceptionTags\":[\"coinValueSlip\",\"countCoinsNotValue\"],\"blueprintId\":\"money-procedural-countCoinsText\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"countCoinsText\"},\"mode\":\"money\",\"itemKey\":\"money::money::::::63::countCoins::money-procedural-countCoinsText::|Nia has 1 quarter, 3 dimes, 1 nickel and 3 pennies. How many cents in all?|||\"}"
+    },
+    {
+      "mode": "money",
+      "level": 7,
+      "seed": 56640,
+      "expectedJSON": "{\"op\":\"money\",\"answer\":25,\"answerType\":\"numberPad\",\"level\":7,\"display\":{\"promptText\":\"Luca buys a 40c apple and a 35c juice, and pays 100c. How many cents change?\"},\"distractorContext\":{\"a\":100,\"b\":75},\"metadata\":{\"modeId\":\"money\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"MD\",\"cluster\":\"Work with money\",\"subskill\":\"makeChange\",\"itemFamily\":\"application\",\"cognitiveDemand\":\"DOK3\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP1\",\"MP2\",\"MP6\"],\"standardRefs\":[\"2.MD\"],\"misconceptionTags\":[\"changeDirection\",\"operationSwap\"],\"blueprintId\":\"money-application-twoItemMultiStep\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"twoItemMultiStep\"},\"mode\":\"money\",\"itemKey\":\"money::money::::::25::makeChange::money-application-twoItemMultiStep::|Luca buys a 40c apple and a 35c juice, and pays 100c. How many cents change?|||\"}"
+    },
+    {
+      "mode": "patterns",
+      "level": 1,
+      "seed": 9848,
+      "expectedJSON": "{\"op\":\"pattern\",\"answer\":16,\"level\":1,\"display\":{\"promptText\":\"Start at 8 and add 4 each time. What is the 3rd number?\",\"representation\":\"sequence\",\"start\":8,\"step\":4,\"term\":3},\"step\":4,\"answerType\":\"fillBlank\",\"metadata\":{\"modeId\":\"patterns\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"OA\",\"cluster\":\"Generate and analyze patterns\",\"subskill\":\"patternRule\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"sequence\",\"mathPractices\":[\"MP3\",\"MP7\",\"MP8\"],\"standardRefs\":[\"3.OA\",\"4.OA\"],\"misconceptionTags\":[\"stepCountOffByOne\",\"patternReset\"],\"blueprintId\":\"patterns-procedural-applyGivenRule\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":null},\"mode\":\"patterns\",\"itemKey\":\"patterns::pattern::::::16::patternRule::patterns-procedural-applyGivenRule::|Start at 8 and add 4 each time. What is the 3rd number?|||4\"}"
+    },
+    {
+      "mode": "patterns",
+      "level": 4,
+      "seed": 33605,
+      "expectedJSON": "{\"op\":\"pattern\",\"answer\":3,\"level\":4,\"display\":{\"promptText\":\"Pattern: ?, 9, 15, 21, 27 — what comes first?\",\"representation\":\"sequence\",\"sequence\":[\"?\",9,15,21,27],\"step\":6},\"step\":6,\"answerType\":\"fillBlank\",\"metadata\":{\"modeId\":\"patterns\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"OA\",\"cluster\":\"Generate and analyze patterns\",\"subskill\":\"arithmeticNext\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"sequence\",\"mathPractices\":[\"MP3\",\"MP7\",\"MP8\"],\"standardRefs\":[\"3.OA\",\"4.OA\"],\"misconceptionTags\":[\"backwardsAddsInstead\",\"wrongStep\"],\"blueprintId\":\"patterns-procedural-arithmeticBackwards\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":null},\"mode\":\"patterns\",\"itemKey\":\"patterns::pattern::::::3::arithmeticNext::patterns-procedural-arithmeticBackwards::|Pattern: ?, 9, 15, 21, 27 — what comes first?|?,9,15,21,27||6\"}"
+    },
+    {
+      "mode": "patterns",
+      "level": 7,
+      "seed": 57362,
+      "expectedJSON": "{\"op\":\"pattern\",\"answer\":\"No\",\"level\":7,\"display\":{\"promptText\":\"The pattern 1, 6, 11, 16 keeps adding 5. Will the 9th number be even?\",\"representation\":\"sequence\",\"sequence\":[1,6,11,16]},\"answerType\":\"choice\",\"choices\":[\"Yes\",\"No\"],\"metadata\":{\"modeId\":\"patterns\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"OA\",\"cluster\":\"Generate and analyze patterns\",\"subskill\":\"patternRule\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK3\",\"representation\":\"sequence\",\"mathPractices\":[\"MP3\",\"MP7\",\"MP8\"],\"standardRefs\":[\"3.OA\",\"4.OA\"],\"misconceptionTags\":[\"patternReset\",\"stepCountOffByOne\"],\"blueprintId\":\"patterns-conceptual-patternFeature\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":null},\"mode\":\"patterns\",\"itemKey\":\"patterns::pattern::::::No::patternRule::patterns-conceptual-patternFeature::|The pattern 1, 6, 11, 16 keeps adding 5. Will the 9th number be even?|1,6,11,16||\"}"
+    },
+    {
+      "mode": "measurement",
+      "level": 1,
+      "seed": 10550,
+      "expectedJSON": "{\"op\":\"convert\",\"answer\":\"80 cm\",\"answerType\":\"choice\",\"level\":1,\"display\":{\"promptText\":\"About how big is a kitchen table?\"},\"choices\":[\"8 cm\",\"800 cm\",\"80 cm\",\"8000 cm\"],\"metadata\":{\"modeId\":\"measurement\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"MD\",\"cluster\":\"Measure, estimate and convert measurements\",\"subskill\":\"benchmarkEstimate\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP2\",\"MP5\",\"MP6\"],\"standardRefs\":[\"2.MD\",\"3.MD\",\"4.MD\"],\"misconceptionTags\":[\"benchmarkScaleError\",\"placeValueSlip\"],\"blueprintId\":\"measurement-conceptual-estimateBand\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"estimateBand\"},\"mode\":\"measurement\",\"itemKey\":\"measurement::convert::::::80 cm::benchmarkEstimate::measurement-conceptual-estimateBand::|About how big is a kitchen table?|||\"}"
+    },
+    {
+      "mode": "measurement",
+      "level": 4,
+      "seed": 34307,
+      "expectedJSON": "{\"op\":\"convert\",\"answer\":\">\",\"answerType\":\"symbolSelect\",\"level\":4,\"display\":{\"promptText\":\"6 km ? 5500 m\"},\"metadata\":{\"modeId\":\"measurement\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"MD\",\"cluster\":\"Measure, estimate and convert measurements\",\"subskill\":\"compareOrder\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP5\",\"MP6\"],\"standardRefs\":[\"2.MD\",\"3.MD\",\"4.MD\"],\"misconceptionTags\":[\"unitLabelIgnored\",\"symbolFlip\"],\"blueprintId\":\"measurement-conceptual-compareMeasures\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"compareMeasures\"},\"mode\":\"measurement\",\"itemKey\":\"measurement::convert::::::>::compareOrder::measurement-conceptual-compareMeasures::|6 km ? 5500 m|||\"}"
+    },
+    {
+      "mode": "measurement",
+      "level": 7,
+      "seed": 58064,
+      "expectedJSON": "{\"op\":\"convert\",\"answer\":8000,\"answerType\":\"numberPad\",\"level\":7,\"display\":{\"promptText\":\"Sam says 8 L = 800 mL. That is not right. What is 8 L in mL?\"},\"distractorContext\":{\"factor\":1000},\"metadata\":{\"modeId\":\"measurement\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"MD\",\"cluster\":\"Measure, estimate and convert measurements\",\"subskill\":\"massVolumeConvert\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK3\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP2\",\"MP5\",\"MP6\"],\"standardRefs\":[\"2.MD\",\"3.MD\",\"4.MD\"],\"misconceptionTags\":[\"wrongFactor\",\"placeValueSlip\"],\"blueprintId\":\"measurement-conceptual-errorAnalysisConvert\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"errorAnalysisConvert\"},\"mode\":\"measurement\",\"itemKey\":\"measurement::convert::::::8000::massVolumeConvert::measurement-conceptual-errorAnalysisConvert::|Sam says 8 L = 800 mL. That is not right. What is 8 L in mL?|||\"}"
+    },
+    {
+      "mode": "time",
+      "level": 1,
+      "seed": 8874,
+      "expectedJSON": "{\"op\":\"time\",\"answer\":30,\"answerType\":\"clock\",\"level\":1,\"display\":{\"type\":\"clock\",\"hour\":1,\"minute\":30,\"promptText\":\"How many minutes past 1 o'clock is this clock showing?\"},\"distractorContext\":{\"hour\":1,\"minute\":30},\"metadata\":{\"modeId\":\"time\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"MD\",\"cluster\":\"Tell and write time; measure time intervals\",\"subskill\":\"readClock\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"visual\",\"mathPractices\":[\"MP2\",\"MP6\"],\"standardRefs\":[\"1.MD\",\"2.MD\",\"3.MD\"],\"misconceptionTags\":[\"hourMinuteSwap\",\"clockDirection\",\"offByFive\"],\"blueprintId\":\"time-conceptual-readClockHalf\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"readClockHalf\"},\"mode\":\"time\",\"itemKey\":\"time::time::::::30::readClock::time-conceptual-readClockHalf::clock|How many minutes past 1 o'clock is this clock showing?|||\"}"
+    },
+    {
+      "mode": "time",
+      "level": 4,
+      "seed": 32631,
+      "expectedJSON": "{\"op\":\"time\",\"answer\":25,\"answerType\":\"clock\",\"level\":4,\"display\":{\"type\":\"clock\",\"hour\":2,\"minute\":25,\"promptText\":\"How many minutes past 2 o'clock is this clock showing?\"},\"distractorContext\":{\"hour\":2,\"minute\":25},\"metadata\":{\"modeId\":\"time\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"MD\",\"cluster\":\"Tell and write time; measure time intervals\",\"subskill\":\"readClock\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"visual\",\"mathPractices\":[\"MP2\",\"MP6\"],\"standardRefs\":[\"1.MD\",\"2.MD\",\"3.MD\"],\"misconceptionTags\":[\"hourMinuteSwap\",\"clockDirection\",\"offByFive\"],\"blueprintId\":\"time-procedural-readClockFive\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"readClockFive\"},\"mode\":\"time\",\"itemKey\":\"time::time::::::25::readClock::time-procedural-readClockFive::clock|How many minutes past 2 o'clock is this clock showing?|||\"}"
+    },
+    {
+      "mode": "time",
+      "level": 7,
+      "seed": 56388,
+      "expectedJSON": "{\"op\":\"time\",\"answer\":30,\"answerType\":\"numberPad\",\"level\":7,\"display\":{\"promptText\":\"Luca's recess starts at 6:25 and ends at 6:55. How many minutes long is recess?\"},\"distractorContext\":{\"a\":25,\"b\":55},\"metadata\":{\"modeId\":\"time\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"MD\",\"cluster\":\"Tell and write time; measure time intervals\",\"subskill\":\"elapsedTime\",\"itemFamily\":\"application\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP2\",\"MP6\"],\"standardRefs\":[\"1.MD\",\"2.MD\",\"3.MD\"],\"misconceptionTags\":[\"offByFive\",\"operationSwap\"],\"blueprintId\":\"time-application-elapsedWithinHour\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"elapsedWithinHour\"},\"mode\":\"time\",\"itemKey\":\"time::time::::::30::elapsedTime::time-application-elapsedWithinHour::|Luca's recess starts at 6:25 and ends at 6:55. How many minutes long is recess?|||\"}"
+    },
+    {
+      "mode": "dataGraphs",
+      "level": 1,
+      "seed": 10252,
+      "expectedJSON": "{\"op\":\"graph\",\"answer\":6,\"answerType\":\"numberPad\",\"level\":1,\"display\":{\"promptText\":\"Each IIII/ is 5. Cats: IIII/ I. Dogs: III. How many chose Cats?\"},\"metadata\":{\"modeId\":\"dataGraphs\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"MD\",\"cluster\":\"Represent and interpret data\",\"subskill\":\"dataAnalysis\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"visual\",\"mathPractices\":[\"MP2\",\"MP4\",\"MP6\"],\"standardRefs\":[\"2.MD\",\"3.MD\"],\"misconceptionTags\":[\"tallyFifthMiscount\",\"offByOne\"],\"blueprintId\":\"dataGraphs-procedural-tallyRead\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"tallyRead\"},\"mode\":\"dataGraphs\",\"itemKey\":\"dataGraphs::graph::::::6::dataAnalysis::dataGraphs-procedural-tallyRead::|Each IIII/ is 5. Cats: IIII/ I. Dogs: III. How many chose Cats?|||\"}"
+    },
+    {
+      "mode": "dataGraphs",
+      "level": 4,
+      "seed": 34009,
+      "expectedJSON": "{\"op\":\"graph\",\"answer\":\"Birds\",\"answerType\":\"choice\",\"level\":4,\"display\":{\"promptText\":\"Cats 11, Dogs 13, Birds 14, Fish 1. Which one was chosen the most?\"},\"choices\":[\"Fish\",\"Birds\",\"Dogs\",\"Cats\"],\"metadata\":{\"modeId\":\"dataGraphs\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"MD\",\"cluster\":\"Represent and interpret data\",\"subskill\":\"readBar\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP4\",\"MP6\"],\"standardRefs\":[\"2.MD\",\"3.MD\"],\"misconceptionTags\":[\"compareDirection\"],\"blueprintId\":\"dataGraphs-conceptual-mostLeastIdentify\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"mostLeastIdentify\"},\"mode\":\"dataGraphs\",\"itemKey\":\"dataGraphs::graph::::::Birds::readBar::dataGraphs-conceptual-mostLeastIdentify::|Cats 11, Dogs 13, Birds 14, Fish 1. Which one was chosen the most?|||\"}"
+    },
+    {
+      "mode": "dataGraphs",
+      "level": 7,
+      "seed": 57766,
+      "expectedJSON": "{\"op\":\"graph\",\"answer\":6,\"answerType\":\"numberPad\",\"level\":7,\"display\":{\"promptText\":\"Each ● stands for 2. Apples: ●●●. Mina says there are 3, one for each symbol. How many Apples are there really?\"},\"distractorContext\":{\"a\":3,\"b\":2},\"metadata\":{\"modeId\":\"dataGraphs\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"MD\",\"cluster\":\"Represent and interpret data\",\"subskill\":\"pictograph\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK3\",\"representation\":\"visual\",\"mathPractices\":[\"MP2\",\"MP4\",\"MP6\"],\"standardRefs\":[\"2.MD\",\"3.MD\"],\"misconceptionTags\":[\"keyIgnored\",\"wrongFactor\"],\"blueprintId\":\"dataGraphs-conceptual-errorAnalysisKey\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"errorAnalysisKey\"},\"mode\":\"dataGraphs\",\"itemKey\":\"dataGraphs::graph::::::6::pictograph::dataGraphs-conceptual-errorAnalysisKey::|Each ● stands for 2. Apples: ●●●. Mina says there are 3, one for each symbol. How many Apples are there really?|||\"}"
+    },
+    {
+      "mode": "angles",
+      "level": 1,
+      "seed": 9339,
+      "expectedJSON": "{\"op\":\"angle\",\"answer\":90,\"answerType\":\"angle\",\"level\":1,\"display\":{\"type\":\"angle\",\"degrees\":76,\"promptText\":\"About how many degrees is this angle? Answer 30, 90 or 150.\"},\"distractorContext\":{\"a\":76},\"metadata\":{\"modeId\":\"angles\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"MD\",\"cluster\":\"Geometric measurement: angles\",\"subskill\":\"classifyAngle\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"visual\",\"mathPractices\":[\"MP5\",\"MP6\",\"MP7\"],\"standardRefs\":[\"4.MD\",\"4.G\"],\"misconceptionTags\":[\"rayLengthIsSize\",\"offBy10\"],\"blueprintId\":\"angles-conceptual-estimateAngle\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"estimateAngle\"},\"mode\":\"angles\",\"itemKey\":\"angles::angle::::::90::classifyAngle::angles-conceptual-estimateAngle::angle|About how many degrees is this angle? Answer 30, 90 or 150.|||\"}"
+    },
+    {
+      "mode": "angles",
+      "level": 4,
+      "seed": 33096,
+      "expectedJSON": "{\"op\":\"angle\",\"answer\":\"acute\",\"answerType\":\"choice\",\"level\":4,\"display\":{\"promptText\":\"An angle measures 25 degrees. Is it acute, right, obtuse or straight?\"},\"choices\":[\"right\",\"straight\",\"acute\",\"obtuse\"],\"metadata\":{\"modeId\":\"angles\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"MD\",\"cluster\":\"Geometric measurement: angles\",\"subskill\":\"classifyAngle\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP5\",\"MP6\",\"MP7\"],\"standardRefs\":[\"4.MD\",\"4.G\"],\"misconceptionTags\":[\"protractorMisread\"],\"blueprintId\":\"angles-conceptual-classifyFromMeasure\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"classifyFromMeasure\"},\"mode\":\"angles\",\"itemKey\":\"angles::angle::::::acute::classifyAngle::angles-conceptual-classifyFromMeasure::|An angle measures 25 degrees. Is it acute, right, obtuse or straight?|||\"}"
+    },
+    {
+      "mode": "angles",
+      "level": 7,
+      "seed": 56853,
+      "expectedJSON": "{\"op\":\"angle\",\"answer\":120,\"answerType\":\"numberPad\",\"level\":7,\"display\":{\"promptText\":\"Three angles meet at a point. Two of them measure 110 degrees and 130 degrees. How many degrees is the third?\"},\"distractorContext\":{\"a\":360,\"b\":240},\"metadata\":{\"modeId\":\"angles\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"MD\",\"cluster\":\"Geometric measurement: angles\",\"subskill\":\"missingAngle\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK3\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP5\",\"MP6\",\"MP7\"],\"standardRefs\":[\"4.MD\",\"4.G\"],\"misconceptionTags\":[\"reflexConfusion\",\"sumIsAlways180\"],\"blueprintId\":\"angles-conceptual-fullTurnMissing\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"fullTurnMissing\"},\"mode\":\"angles\",\"itemKey\":\"angles::angle::::::120::missingAngle::angles-conceptual-fullTurnMissing::|Three angles meet at a point. Two of them measure 110 degrees and 130 degrees. How many degrees is the third?|||\"}"
+    },
+    {
+      "mode": "linesShapes",
+      "level": 1,
+      "seed": 10511,
+      "expectedJSON": "{\"op\":\"shape\",\"answer\":\"triangle\",\"answerType\":\"choice\",\"level\":1,\"display\":{\"promptText\":\"Theo cuts a square in half from corner to corner. What shape can that make?\"},\"choices\":[\"rhombus\",\"pentagon\",\"rectangle\",\"triangle\"],\"metadata\":{\"modeId\":\"linesShapes\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"G\",\"cluster\":\"Classify two-dimensional figures; lines and symmetry\",\"subskill\":\"shapeProperties\",\"itemFamily\":\"application\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP3\",\"MP6\",\"MP7\"],\"standardRefs\":[\"2.G\",\"3.G\",\"4.G\"],\"misconceptionTags\":[\"prototypeOnly\"],\"blueprintId\":\"linesShapes-application-composeShapes\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"composeShapes\"},\"mode\":\"linesShapes\",\"itemKey\":\"linesShapes::shape::::::triangle::shapeProperties::linesShapes-application-composeShapes::|Theo cuts a square in half from corner to corner. What shape can that make?|||\"}"
+    },
+    {
+      "mode": "linesShapes",
+      "level": 4,
+      "seed": 34268,
+      "expectedJSON": "{\"op\":\"shape\",\"answer\":6,\"answerType\":\"shapeFigure\",\"level\":4,\"display\":{\"shape\":\"hexagon\",\"shapeMode\":\"count\",\"rotate\":0,\"showSymmetry\":false,\"promptText\":\"How many lines of symmetry does this shape have?\"},\"metadata\":{\"modeId\":\"linesShapes\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"G\",\"cluster\":\"Classify two-dimensional figures; lines and symmetry\",\"subskill\":\"symmetryLines\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"visual\",\"mathPractices\":[\"MP3\",\"MP6\",\"MP7\"],\"standardRefs\":[\"2.G\",\"3.G\",\"4.G\"],\"misconceptionTags\":[\"symmetryMiscount\",\"diagonalIsSymmetry\",\"offByOne\"],\"blueprintId\":\"linesShapes-conceptual-symmetryCount\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"symmetryCount\"},\"mode\":\"linesShapes\",\"itemKey\":\"linesShapes::shape::::::6::symmetryLines::linesShapes-conceptual-symmetryCount::|How many lines of symmetry does this shape have?|||\"}"
+    },
+    {
+      "mode": "linesShapes",
+      "level": 7,
+      "seed": 58025,
+      "expectedJSON": "{\"op\":\"shape\",\"answer\":[\"parallelogram\"],\"answerType\":\"multiSelect\",\"level\":7,\"display\":{\"options\":[\"trapezoid\",\"square\",\"parallelogram\",\"octagon\",\"rhombus\"],\"promptText\":\"Select every shape that has no lines of symmetry.\"},\"metadata\":{\"modeId\":\"linesShapes\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"G\",\"cluster\":\"Classify two-dimensional figures; lines and symmetry\",\"subskill\":\"shapeProperties\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK3\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP3\",\"MP6\",\"MP7\"],\"standardRefs\":[\"2.G\",\"3.G\",\"4.G\"],\"misconceptionTags\":[\"prototypeOnly\",\"sideVertexSwap\"],\"blueprintId\":\"linesShapes-conceptual-sortByAttribute\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"sortByAttribute\"},\"mode\":\"linesShapes\",\"itemKey\":\"linesShapes::shape::::::[\\\"parallelogram\\\"]::shapeProperties::linesShapes-conceptual-sortByAttribute::|Select every shape that has no lines of symmetry.|||\"}"
+    }
+  ]
+}

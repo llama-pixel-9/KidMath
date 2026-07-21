@@ -1,34 +1,14 @@
 import { supabase } from "../supabaseClient.js";
-import { setBankItems, validateBankItem } from "./index.js";
+import { setBankItems } from "./index.js";
+import { normalizeBankRow } from "./normalize.js";
+
+// Re-exported so existing callers (modeLoader, admin UI) keep their import path.
+export { normalizeBankRow };
 
 const APPROVED_SELECT_FIELDS =
   "item_id, mode_id, item_family, subskill, structure_type, level_min, level_max, " +
   "review_status, payload, representation_type, source, level_band";
 
-/**
- * Convert a row from public.item_bank into the in-memory bank shape.
- * Returns null when the row fails client-side validation so a bad cloud
- * row never replaces a known-good bundled item.
- */
-export function normalizeBankRow(row) {
-  if (!row) return null;
-  const item = {
-    itemId: row.item_id,
-    modeId: row.mode_id,
-    itemFamily: row.item_family || "application",
-    subskill: row.subskill,
-    structureType: row.structure_type,
-    levelRange: [Number(row.level_min), Number(row.level_max)],
-    reviewStatus: row.review_status,
-    question: row.payload,
-    representationType: row.representation_type || null,
-    levelBand: row.level_band || null,
-    source: row.source || null,
-  };
-  const { valid } = validateBankItem(item);
-  if (!valid) return null;
-  return item;
-}
 
 /**
  * Fetch all approved items from Supabase. Returns null when Supabase is

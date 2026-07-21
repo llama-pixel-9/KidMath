@@ -18,7 +18,7 @@ import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const bundlePath = resolve(root, "ios/KidMathEngine.bundle.js");
+const bundlePath = resolve(root, "ios/KidMath/Resources/KidMathEngine.bundle.js");
 
 // Deterministic PRNG so both engines walk the same random sequence.
 function mulberry32(seed) {

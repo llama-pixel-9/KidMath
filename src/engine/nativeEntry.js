@@ -27,7 +27,14 @@ import {
   generateWorksheetSet,
   questionAnswerType,
 } from "../mathEngine.js";
-import { setBankItems, getBankItems, getBankSource } from "../itemBank/index.js";
+import {
+  setBankItems,
+  getBankItems,
+  getBankSource,
+  addBankItems,
+  resetBankToBundle,
+} from "../itemBank/index.js";
+import { normalizeBankRow } from "../itemBank/normalize.js";
 import { MODE_IDS } from "../modes/index.js";
 
 // JavaScriptCore has no console. A bare shim keeps the lone console.warn in
@@ -52,6 +59,15 @@ g.KidMath = {
   setBankItems: (items) => setBankItems(Array.isArray(items) ? items : [], "native"),
   getBankItems: () => getBankItems(),
   getBankSource: () => getBankSource(),
+  bankCount: () => getBankItems().length,
+  // Raw PostgREST rows from Swift -> normalized (same mapping as the web's
+  // cloud loaders) -> merged into the seeded bank. Returns how many were new.
+  addBankRows: (rows) =>
+    addBankItems(
+      (Array.isArray(rows) ? rows : []).map(normalizeBankRow).filter(Boolean),
+      "native-cloud"
+    ),
+  resetBankToBundle: () => resetBankToBundle(),
 
   // Stateless generation + scoring
   generateQuestion: (mode, level, context) => generateQuestion(mode, level, context ?? null),

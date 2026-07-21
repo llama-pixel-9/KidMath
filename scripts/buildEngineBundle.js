@@ -4,7 +4,7 @@
  * JavaScriptCore (the native iOS app loads it into a JSContext).
  *
  * Input:  src/engine/nativeEntry.js  (exposes globalThis.KidMath)
- * Output: ios/KidMathEngine.bundle.js
+ * Output: ios/KidMath/Resources/KidMathEngine.bundle.js
  *
  * The bundle is fully self-contained: no imports, no network, no browser APIs.
  * If esbuild ever pulls in a browser/network module (supabaseClient,
@@ -20,7 +20,7 @@ import { fileURLToPath } from "node:url";
 import { readFileSync } from "node:fs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const outfile = resolve(root, "ios/KidMathEngine.bundle.js");
+const outfile = resolve(root, "ios/KidMath/Resources/KidMathEngine.bundle.js");
 
 const FORBIDDEN = [
   "supabaseClient",
@@ -73,7 +73,7 @@ const strayGlobals = ["import.meta", "window.", "document.", "localStorage", "XM
   (g) => code.includes(g)
 );
 
-process.stdout.write(`\nBuilt ios/KidMathEngine.bundle.js (${kb} KB)\n`);
+process.stdout.write(`\nBuilt ios/KidMath/Resources/KidMathEngine.bundle.js (${kb} KB)\n`);
 if (strayGlobals.length) {
   process.stderr.write(`WARNING: bundle references browser globals: ${strayGlobals.join(", ")}\n`);
   process.exit(1);

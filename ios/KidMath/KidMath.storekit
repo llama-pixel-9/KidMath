@@ -1,0 +1,78 @@
+{
+  "identifier": "D4D59C8E-4F3E-44A6-BE7F-7F9388D92BEC",
+  "nonRenewingSubscriptions": [],
+  "products": [],
+  "settings": {
+    "_failTransactionsEnabled": false,
+    "_locale": "en_US",
+    "_storefront": "USA",
+    "_storeKitErrors": []
+  },
+  "subscriptionGroups": [
+    {
+      "id": "21000001",
+      "localizations": [],
+      "name": "KidMath Premium",
+      "subscriptions": [
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "8.99",
+          "familyShareable": true,
+          "groupNumber": 1,
+          "internalID": "33D94286-CC52-4035-A731-33EA88A73A6E",
+          "introductoryOffer": {
+            "internalID": "74538C09-8DE1-4B45-BE06-36D3509BDA56",
+            "numberOfPeriods": 1,
+            "paymentMode": "free",
+            "subscriptionPeriod": "P2W"
+          },
+          "localizations": [
+            {
+              "description": "All modes, worksheets, cloud sync \u2014 all your kids.",
+              "displayName": "KidMath Premium Monthly",
+              "locale": "en_US"
+            }
+          ],
+          "productID": "com.kidmath.app.premium.monthly",
+          "recurringSubscriptionPeriod": "P1M",
+          "referenceName": "Premium Monthly",
+          "subscriptionGroupID": "21000001",
+          "type": "RecurringSubscription",
+          "winbackOffers": []
+        },
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "54.99",
+          "familyShareable": true,
+          "groupNumber": 1,
+          "internalID": "6DF39E6D-F7DE-403B-919D-A4D214F5835A",
+          "introductoryOffer": {
+            "internalID": "343E5920-4C60-4988-B9BE-568625FF43A9",
+            "numberOfPeriods": 1,
+            "paymentMode": "free",
+            "subscriptionPeriod": "P2W"
+          },
+          "localizations": [
+            {
+              "description": "All modes, worksheets, cloud sync \u2014 all your kids.",
+              "displayName": "KidMath Premium Annual",
+              "locale": "en_US"
+            }
+          ],
+          "productID": "com.kidmath.app.premium.annual",
+          "recurringSubscriptionPeriod": "P1Y",
+          "referenceName": "Premium Annual",
+          "subscriptionGroupID": "21000001",
+          "type": "RecurringSubscription",
+          "winbackOffers": []
+        }
+      ]
+    }
+  ],
+  "version": {
+    "major": 3,
+    "minor": 0
+  }
+}

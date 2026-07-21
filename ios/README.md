@@ -23,8 +23,10 @@ KidMathTests/
 # 1. Build the engine bundle from the shared JS source (repo root)
 npm run build:engine
 
-# 2. Generate the Xcode project (brew install xcodegen)
-cd ios && xcodegen generate
+# 2. Generate the Xcode project (brew install xcodegen), then patch the
+#    scheme (adds the StoreKit test configuration to the test action,
+#    which XcodeGen cannot express)
+cd ios && xcodegen generate && ./patch-scheme.sh
 
 # 3. Open ios/KidMath.xcodeproj in Xcode, or run tests headless:
 xcodebuild test -project KidMath.xcodeproj -scheme KidMath \

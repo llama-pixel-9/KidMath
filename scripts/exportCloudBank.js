@@ -44,20 +44,31 @@ function rowToItem(row) {
 }
 
 async function main() {
-  const { data, error } = await supabase
-    .from("item_bank")
-    .select(
-      "item_id, mode_id, item_family, subskill, structure_type, level_min, level_max, review_status, payload"
-    )
-    .eq("review_status", "approved")
-    .order("mode_id", { ascending: true })
-    .order("item_id", { ascending: true });
+  // Paginated: supabase-js caps a select at 1,000 rows, and the bank is past
+  // that. An unpaginated fetch here once silently exported only the first
+  // 1,000 items and truncated every other mode's file.
+  const PAGE = 1000;
+  const data = [];
+  for (let from = 0; ; from += PAGE) {
+    const { data: page, error } = await supabase
+      .from("item_bank")
+      .select(
+        "item_id, mode_id, item_family, subskill, structure_type, level_min, level_max, review_status, payload"
+      )
+      .eq("review_status", "approved")
+      .order("mode_id", { ascending: true })
+      .order("item_id", { ascending: true })
+      .range(from, from + PAGE - 1);
 
-  if (error) {
-    console.error("Failed to fetch from item_bank:", error.message);
-    process.exit(1);
+    if (error) {
+      console.error("Failed to fetch from item_bank:", error.message);
+      process.exit(1);
+    }
+    data.push(...(page || []));
+    if (!page || page.length < PAGE) break;
   }
-  if (!data || data.length === 0) {
+
+  if (data.length === 0) {
     console.error("No approved items returned. Aborting export to avoid wiping the bundle.");
     process.exit(1);
   }

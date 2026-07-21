@@ -9,6 +9,7 @@ struct HomeView: View {
     @State private var showSettings = false
     @State private var showWorksheets = false
     @State private var showAbout = false
+    @State private var showPaywall = false
 
     private let columns = [GridItem(.adaptive(minimum: 150, maximum: 220), spacing: 12)]
 
@@ -49,6 +50,7 @@ struct HomeView: View {
             .sheet(isPresented: $showSettings) { SettingsView() }
             .sheet(isPresented: $showWorksheets) { WorksheetView() }
             .sheet(isPresented: $showAbout) { AboutView() }
+            .sheet(isPresented: $showPaywall) { PaywallView() }
             .fullScreenCover(item: $activeMode) { mode in
                 SessionView(mode: mode)
             }
@@ -99,7 +101,13 @@ struct HomeView: View {
     private func modeCard(_ mode: ModeInfo) -> some View {
         Button {
             guard mode.playable else { return }
-            activeMode = mode
+            // iOS is a premium surface (web keeps the free tier): sessions
+            // start only with an active trial/subscription.
+            if app.store.hasPremium {
+                activeMode = mode
+            } else {
+                showPaywall = true
+            }
         } label: {
             VStack(alignment: .leading, spacing: 8) {
                 HStack {
@@ -135,7 +143,11 @@ struct HomeView: View {
     /// The web homepage's worksheet callout, as a tappable card.
     private var worksheetCallout: some View {
         Button {
-            showWorksheets = true
+            if app.store.hasPremium {
+                showWorksheets = true
+            } else {
+                showPaywall = true
+            }
         } label: {
             HStack(spacing: 14) {
                 Text("🖨️").font(.system(size: 36))
@@ -178,9 +190,14 @@ struct HomeView: View {
             .foregroundStyle(.white)
     }
 
-    /// Dev hook: `simctl launch … com.kidmath.app -autostartMode addition`
-    /// jumps straight into a session (screenshots, quick manual testing).
+    /// Dev hooks: `simctl launch … com.kidmath.app -autostartMode addition`
+    /// jumps straight into a session; `-showPaywall 1` presents the paywall
+    /// (screenshots, quick manual testing).
     private func autostartIfRequested() {
+        if UserDefaults.standard.bool(forKey: "showPaywall") {
+            showPaywall = true
+            return
+        }
         guard activeMode == nil,
               let modeId = UserDefaults.standard.string(forKey: "autostartMode"),
               let mode = ModeCatalog.mode(modeId), mode.playable else { return }

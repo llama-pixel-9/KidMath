@@ -45,8 +45,28 @@ const HEADERS = {
 const DANGLING = /\b(how) many\s+(?=(does|do|did|is|are|was|were|in|now)\b)/i;
 const BARE = /\bhow many\s*[?.!]/i;
 
+// Words that follow "<number> " without being the counted noun.
+const NOUN_STOPWORDS = new Set([
+  "is", "was", "are", "were", "has", "does", "plus", "minus", "times",
+  "equals", "less", "apiece", "groups", "rows", "columns", "equal",
+]);
+
+// Items whose wording needs a human sentence, not a heuristic insertion.
+const MANUAL_FIXES = {
+  // Two different plural nouns; the total needs the superordinate "people".
+  "addition-app-292":
+    "A fair booth has 16 ring-toss players and 29 dart-throwers in line. How many people in line?",
+  // The only stated count is the singular "1 berry".
+  "addition-app-409": "Holt had 1 berry. After picking more, he had 8. How many berries did Holt pick?",
+};
+
 /** Recover the counted noun (with any adjectives) from the prompt's setup. */
 function extractNoun(prompt) {
+  // "2 ducks each have 3 feathers" — the counted thing is the per-group noun,
+  // not the first noun; this must win over the generic first-plural rule.
+  const each = prompt.match(/\beach (?:has|have|holds|hold|contains|contain|gets|get)\s+\d+\s+([a-z]+)/i);
+  if (each) return each[1];
+
   const patterns = [
     /\d+\s+(?:fewer|more)\s+([a-z][a-z ]*?)\s+than\b/i, // "7 fewer toy cars than"
     /times as many\s+([a-z][a-z ]*?)\s+as\b/i, // "3 times as many stickers as"
@@ -57,22 +77,73 @@ function extractNoun(prompt) {
     const m = prompt.match(re);
     if (m) return m[1].trim();
   }
+
+  // Legacy story shapes ("Ina had 10 grapes and ate some. How many did she
+  // eat?"): the counted noun is the first plural right after a number. Try the
+  // two-word phrase ("toy cars"), then the single word ("birds" in "birds on").
+  for (const m of prompt.matchAll(/\b\d+\s+([a-z]+(?:\s[a-z]+)?)\b/gi)) {
+    for (const candidate of [m[1], m[1].split(" ")[0]]) {
+      const words = candidate.toLowerCase().split(" ");
+      if (words.some((w) => NOUN_STOPWORDS.has(w))) continue;
+      if (words[words.length - 1].endsWith("s")) return candidate.trim();
+    }
+  }
   return null;
 }
 
-function rewrite(prompt) {
-  if (BARE.test(prompt) && !DANGLING.test(prompt)) return { noun: null, fixed: null, bare: true };
+/**
+ * Purely numeric conceptual drills have no noun anywhere, so one is supplied:
+ * "counters", the classroom manipulative these number relations model (CPA).
+ */
+function counterRewrites(prompt) {
+  let m = prompt.match(/^Start with (\d+)\. After (removing|adding) some, (\d+) remain\. How many were (removed|added)\?$/);
+  if (m) return `Start with ${m[1]} counters. After ${m[2]} some, ${m[3]} remain. How many counters were ${m[4]}?`;
+  m = prompt.match(/^How many in (\d+) groups of (\d+)\?$/);
+  if (m) return `How many counters in ${m[1]} groups of ${m[2]}?`;
+  m = prompt.match(/^How many is (\d+) groups of (\d+)\?$/);
+  if (m) return `How many counters are in ${m[1]} groups of ${m[2]}?`;
+  m = prompt.match(/^How many in each group when (\d+) is split into (\d+) equal groups\?$/);
+  if (m) return `How many counters in each group when ${m[1]} counters are split into ${m[2]} equal groups?`;
+  m = prompt.match(/^If I had (\d+) and now have (\d+), how many were taken away\?$/);
+  if (m) return `If I had ${m[1]} counters and now have ${m[2]}, how many counters were taken away?`;
+  // Array drills count the dots of the array itself.
+  if (/^Rows and columns: \d+ rows × \d+ columns gives how many\?$/.test(prompt)) {
+    return prompt.replace(/gives how many\?$/, "gives how many dots?");
+  }
+  if (/^Count rows of \d+: [\d, ]+\. That's \d+ rows\. How many in total\?$/.test(prompt)) {
+    return prompt.replace(/How many in total\?$/, "How many dots in total?");
+  }
+  return null;
+}
+
+function rewrite(prompt, itemId) {
+  if (MANUAL_FIXES[itemId]) return { fixed: MANUAL_FIXES[itemId] };
+  const counters = counterRewrites(prompt);
+  if (counters) return { fixed: counters };
   const noun = extractNoun(prompt);
-  if (!noun) return { noun: null, fixed: null };
-  return { noun, fixed: prompt.replace(DANGLING, `$1 many ${noun} `) };
+  if (!noun) return { fixed: null, bare: BARE.test(prompt) && !DANGLING.test(prompt) };
+  if (DANGLING.test(prompt)) return { fixed: prompt.replace(DANGLING, `$1 many ${noun} `) };
+  // Bare "how many?" — "The other group has how many?", "by how many?"
+  return { fixed: prompt.replace(/\b(how) many\s*([?.!])/i, `$1 many ${noun}$2`) };
 }
 
 async function fetchRows() {
-  const params = new URLSearchParams({ select: "item_id,mode_id,structure_type,level_min,level_max,payload,source" });
-  if (!all) params.set("source->>generator", `eq.${generator}`);
-  const resp = await fetch(`${SUPABASE_URL}/rest/v1/item_bank?${params}`, { headers: HEADERS });
-  if (!resp.ok) throw new Error(`fetch failed (${resp.status}): ${await resp.text()}`);
-  return resp.json();
+  const PAGE = 1000;
+  const rows = [];
+  for (let from = 0; ; from += PAGE) {
+    const params = new URLSearchParams({
+      select: "item_id,mode_id,structure_type,level_min,level_max,payload,source",
+      order: "item_id.asc",
+    });
+    if (!all) params.set("source->>generator", `eq.${generator}`);
+    const resp = await fetch(`${SUPABASE_URL}/rest/v1/item_bank?${params}`, {
+      headers: { ...HEADERS, Range: `${from}-${from + PAGE - 1}` },
+    });
+    if (!resp.ok) throw new Error(`fetch failed (${resp.status}): ${await resp.text()}`);
+    const page = await resp.json();
+    rows.push(...page);
+    if (page.length < PAGE) return rows;
+  }
 }
 
 async function patchRow(itemId, payload) {
@@ -96,7 +167,7 @@ async function main() {
   let fixedCount = 0;
   for (const row of flagged) {
     const prompt = row.payload.display.promptText;
-    const { fixed, bare } = rewrite(prompt);
+    const { fixed, bare } = rewrite(prompt, row.item_id);
     if (!fixed) {
       manual.push({ itemId: row.item_id, prompt, reason: bare ? "bare 'How many?'" : "noun not recoverable" });
       continue;

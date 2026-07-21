@@ -34,10 +34,9 @@ targets:
     dependencies:
       - package: Supabase
         product: Supabase
-    entitlements:
-      path: KidMath/KidMath.entitlements
-      properties:
-        com.apple.developer.applesignin: [Default]
+    # Entitlements are hand-managed files (not XcodeGen-generated) because
+    # Debug and Release differ: Debug carries the StoreKit-testing key.
+    # Release: KidMath/KidMath.entitlements · Debug: KidMathDebug.entitlements
     info:
       path: KidMath/Info.plist
       properties:
@@ -71,12 +70,22 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.kidmath.app # placeholder — set the real ID before App Store Connect
         GENERATE_INFOPLIST_FILE: NO # explicit Info.plist above (URL scheme needs a real file)
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+      configs:
+        # Debug adds the StoreKit-testing entitlement (SKTestSession needs it);
+        # Release keeps the clean production entitlements.
+        Debug:
+          CODE_SIGN_ENTITLEMENTS: KidMath/KidMathDebug.entitlements
+        Release:
+          CODE_SIGN_ENTITLEMENTS: KidMath/KidMath.entitlements
 
   KidMathTests:
     type: bundle.unit-test
     platform: iOS
     sources:
       - path: KidMathTests
+      # StoreKitTest sessions load the same local store config the run scheme uses.
+      - path: KidMath/KidMath.storekit
+        buildPhase: resources
     dependencies:
       - target: KidMath
     settings:
@@ -91,7 +100,11 @@ schemes:
         KidMath: all
     run:
       config: Debug
+      # Local StoreKit config: purchases/trials testable in the simulator
+      # before any App Store Connect setup exists.
+      storeKitConfiguration: KidMath/KidMath.storekit
     test:
       config: Debug
+      storeKitConfiguration: KidMath/KidMath.storekit
       targets:
         - KidMathTests

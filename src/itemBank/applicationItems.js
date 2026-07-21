@@ -7,21 +7,21 @@
 export { REVIEW_STATUS } from "./reviewStatus.js";
 
 import { ITEMS as additionItems } from "./items/addition.js";
-import { ITEMS as subtractionItems } from "./items/subtraction.js";
-import { ITEMS as multiplicationItems } from "./items/multiplication.js";
-import { ITEMS as divisionItems } from "./items/division.js";
 import { ITEMS as comparingItems } from "./items/comparing.js";
 import { ITEMS as countingItems } from "./items/counting.js";
-import { ITEMS as skipCountingItems } from "./items/skipCounting.js";
+import { ITEMS as divisionItems } from "./items/division.js";
+import { ITEMS as multiplicationItems } from "./items/multiplication.js";
 import { ITEMS as placeValueItems } from "./items/placeValue.js";
+import { ITEMS as skipCountingItems } from "./items/skipCounting.js";
+import { ITEMS as subtractionItems } from "./items/subtraction.js";
 
 export const APPLICATION_ITEM_BANK = [
   ...additionItems,
-  ...subtractionItems,
-  ...multiplicationItems,
-  ...divisionItems,
   ...comparingItems,
   ...countingItems,
-  ...skipCountingItems,
+  ...divisionItems,
+  ...multiplicationItems,
   ...placeValueItems,
+  ...skipCountingItems,
+  ...subtractionItems,
 ];

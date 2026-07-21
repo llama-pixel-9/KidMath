@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.apple.developer.applesignin</key>
+	<array>
+		<string>Default</string>
+	</array>
+	<!-- Debug builds only: lets StoreKitTest sessions drive the local store
+	     config (SKTestSession fails with notEntitled without it). The release
+	     entitlements (KidMath.entitlements) do NOT carry this. -->
+	<key>com.apple.developer.storekit.request-data</key>
+	<true/>
+</dict>
+</plist>

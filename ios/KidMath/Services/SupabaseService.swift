@@ -126,6 +126,27 @@ final class SupabaseService: ObservableObject {
         return stats
     }
 
+    // MARK: - Entitlements (shared subscription truth: StoreKit + Stripe)
+
+    func fetchEntitlement(userId: UUID) async throws -> [String: Any]? {
+        let response = try await client
+            .from("entitlements")
+            .select("status, source, product_id, expires_at")
+            .eq("user_id", value: userId)
+            .execute()
+        let rows = try JSONSerialization.jsonObject(with: response.data) as? [[String: Any]]
+        return rows?.first
+    }
+
+    func upsertEntitlement(userId: UUID, row: [String: Any]) async throws {
+        var payload = row
+        payload["user_id"] = userId.uuidString
+        try await client
+            .from("entitlements")
+            .upsert(AnyJSON.from(payload), onConflict: "user_id")
+            .execute()
+    }
+
     func upsertProgress(userId: UUID, mode: String, row: [String: Any]) async throws {
         var payload = row
         payload["user_id"] = userId.uuidString

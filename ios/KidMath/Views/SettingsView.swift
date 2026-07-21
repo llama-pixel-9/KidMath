@@ -12,6 +12,7 @@ struct SettingsView: View {
     var body: some View {
         NavigationStack {
             List {
+                subscriptionSection
                 themeSection
                 soundSection
                 accountSection
@@ -22,6 +23,25 @@ struct SettingsView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Done") { dismiss() }
+                }
+            }
+        }
+    }
+
+    private var subscriptionSection: some View {
+        Section("Subscription") {
+            if app.store.hasPremium {
+                Label("KidMath Premium is active", systemImage: "star.circle.fill")
+                    .foregroundStyle(.green)
+                Text("Manage or cancel in the App Store's Subscriptions settings.")
+                    .font(.footnote)
+                    .foregroundStyle(theme.textSecondary)
+            } else {
+                Text("Free trial available — all 22 modes, worksheets, and sync.")
+                    .font(.footnote)
+                    .foregroundStyle(theme.textSecondary)
+                Button("Restore purchases") {
+                    Task { await app.store.restorePurchases() }
                 }
             }
         }

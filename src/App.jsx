@@ -9,6 +9,7 @@ import HomePage from "./HomePage";
 import MathExplorer from "./MathExplorer";
 import PrintableWorksheet from "./PrintableWorksheet";
 import AboutPage from "./AboutPage";
+import PrivacyPage from "./PrivacyPage";
 import AdminItemsPage from "./admin/AdminItemsPage";
 import DiagnosticsPage from "./admin/DiagnosticsPage";
 import "./index.css";
@@ -29,6 +30,7 @@ function AppShell() {
         <Route path="/play/:mode" element={<PlayRoute />} />
         <Route path="/worksheets" element={<PrintableWorksheet />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/admin" element={<AdminItemsPage />} />
         <Route path="/diagnostics" element={<DiagnosticsPage />} />
         {/* Unknown paths: send to home rather than expose a bare 404. */}

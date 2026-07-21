@@ -14,6 +14,8 @@ settings:
     TARGETED_DEVICE_FAMILY: "1,2" # iPhone + iPad
     GENERATE_INFOPLIST_FILE: YES
     CODE_SIGN_STYLE: Automatic
+    MARKETING_VERSION: 1.0.0
+    CURRENT_PROJECT_VERSION: 1
 
 packages:
   Supabase:
@@ -40,7 +42,11 @@ targets:
     info:
       path: KidMath/Info.plist
       properties:
-        UILaunchScreen: {}
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+        # HTTPS only (standard crypto) — skips the export-compliance question
+        # on every TestFlight upload.
+        ITSAppUsesNonExemptEncryption: false
         # Bundled Google Fonts (OFL), same families the web loads in index.css.
         UIAppFonts:
           - Fredoka.ttf

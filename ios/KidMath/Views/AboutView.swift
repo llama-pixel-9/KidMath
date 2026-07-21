@@ -4,6 +4,8 @@ import SwiftUI
 struct AboutView: View {
     @Environment(\.theme) private var theme
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.openURL) private var openURL
+    @State private var showGate = false
 
     private static let principles: [(emoji: String, title: String, description: String)] = [
         ("🎯", "Standards-Aligned Skills",
@@ -50,6 +52,17 @@ struct AboutView: View {
                         .background(RoundedRectangle(cornerRadius: 18).fill(theme.cardBackground))
                     }
 
+                    // Kids category: leaving the app goes through the gate.
+                    Button {
+                        showGate = true
+                    } label: {
+                        Label("Privacy Policy (opens in browser)", systemImage: "hand.raised.fill")
+                            .font(.subheadline.weight(.semibold))
+                            .foregroundStyle(theme.textSecondary)
+                            .frame(maxWidth: .infinity)
+                    }
+                    .padding(.top, 4)
+
                     Text("Version \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0") · engine shared with kidmath web")
                         .font(.footnote)
                         .foregroundStyle(theme.textMuted)
@@ -66,6 +79,11 @@ struct AboutView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Done") { dismiss() }
+                }
+            }
+            .sheet(isPresented: $showGate) {
+                ParentalGateView {
+                    openURL(AppLinks.privacyPolicy)
                 }
             }
         }

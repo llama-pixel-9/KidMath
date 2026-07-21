@@ -8,6 +8,10 @@ struct SettingsView: View {
     @Environment(\.theme) private var theme
     @Environment(\.dismiss) private var dismiss
     @State private var authMessage = ""
+    /// Kids category: account actions (which open sign-in flows) sit behind
+    /// the parental gate, like purchases.
+    @State private var accountUnlocked = false
+    @State private var showGate = false
 
     var body: some View {
         NavigationStack {
@@ -95,10 +99,16 @@ struct SettingsView: View {
                         try? app.bankService?.reset()
                     }
                 }
-            } else {
+            } else if !accountUnlocked {
                 Text("Sign in to save stars and progress across devices.")
                     .font(.footnote)
                     .foregroundStyle(theme.textSecondary)
+                Button {
+                    showGate = true
+                } label: {
+                    Label("Parents: sign in", systemImage: "lock.shield")
+                }
+            } else {
                 SignInWithAppleButton(.signIn) { request in
                     AppleSignInCoordinator.configure(request)
                 } onCompletion: { result in
@@ -126,6 +136,9 @@ struct SettingsView: View {
             if !authMessage.isEmpty {
                 Text(authMessage).font(.footnote).foregroundStyle(.red)
             }
+        }
+        .sheet(isPresented: $showGate) {
+            ParentalGateView { accountUnlocked = true }
         }
     }
 

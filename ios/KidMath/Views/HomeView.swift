@@ -7,6 +7,8 @@ struct HomeView: View {
     @Environment(\.theme) private var theme
     @State private var activeMode: ModeInfo?
     @State private var showSettings = false
+    @State private var showWorksheets = false
+    @State private var showAbout = false
 
     private let columns = [GridItem(.adaptive(minimum: 150, maximum: 220), spacing: 12)]
 
@@ -18,6 +20,7 @@ struct HomeView: View {
                     ForEach(ModeCatalog.groups) { group in
                         groupSection(group)
                     }
+                    worksheetCallout
                 }
                 .frame(maxWidth: 760) // centered content column, like the web
                 .padding(.horizontal)
@@ -26,6 +29,14 @@ struct HomeView: View {
             }
             .background(theme.background)
             .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button {
+                        showAbout = true
+                    } label: {
+                        Image(systemName: "info.circle")
+                            .foregroundStyle(theme.textSecondary)
+                    }
+                }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
                         showSettings = true
@@ -36,6 +47,8 @@ struct HomeView: View {
                 }
             }
             .sheet(isPresented: $showSettings) { SettingsView() }
+            .sheet(isPresented: $showWorksheets) { WorksheetView() }
+            .sheet(isPresented: $showAbout) { AboutView() }
             .fullScreenCover(item: $activeMode) { mode in
                 SessionView(mode: mode)
             }
@@ -117,6 +130,34 @@ struct HomeView: View {
         }
         .buttonStyle(.plain)
         .disabled(!mode.playable)
+    }
+
+    /// The web homepage's worksheet callout, as a tappable card.
+    private var worksheetCallout: some View {
+        Button {
+            showWorksheets = true
+        } label: {
+            HStack(spacing: 14) {
+                Text("🖨️").font(.system(size: 36))
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("Printable worksheets")
+                        .font(theme.displayFont(size: 18))
+                        .minimumScaleFactor(0.6)
+                        .lineLimit(1)
+                        .foregroundStyle(theme.textPrimary)
+                    Text("Generate kid-friendly practice sheets to print or share as PDF.")
+                        .font(.subheadline)
+                        .foregroundStyle(theme.textSecondary)
+                        .multilineTextAlignment(.leading)
+                }
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .foregroundStyle(theme.textMuted)
+            }
+            .padding(16)
+            .background(RoundedRectangle(cornerRadius: 20).fill(theme.cardBackground))
+        }
+        .buttonStyle(SpringButtonStyle())
     }
 
     private func levelBadge(_ level: Int) -> some View {

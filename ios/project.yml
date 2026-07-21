@@ -70,6 +70,7 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.kidmath.app # placeholder — set the real ID before App Store Connect
         GENERATE_INFOPLIST_FILE: NO # explicit Info.plist above (URL scheme needs a real file)
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
 
   KidMathTests:
     type: bundle.unit-test

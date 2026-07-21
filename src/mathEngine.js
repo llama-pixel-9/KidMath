@@ -2,8 +2,7 @@ import { MODE_IDS, getModeConfig } from "./modes";
 import { shuffleArray, isVerbalPrompt } from "./modes/helpers";
 import { buildItemKey, ITEM_FAMILIES } from "./modes/itemMetadata";
 import { validateChoices, validateQuestion } from "./modes/itemQuality";
-import { loadProgressSync } from "./progressStore";
-import { buildQuestionFromBankItem, selectApprovedBankItem } from "./itemBank.js";
+import { buildQuestionFromBankItem, selectApprovedBankItem } from "./itemBank/index.js";
 import { fractionsEqual } from "./fractions.js";
 
 export const SESSION_SIZE = 15;
@@ -401,8 +400,29 @@ export function checkAnswer(question, submitted) {
 
 // --- Adaptive Session Engine ---
 
+// Saved-progress access is INJECTED, not imported, so the engine core stays
+// free of browser/network code (progressStore -> supabaseClient -> import.meta).
+// The web app wires the real loader at startup via setProgressLoader; a native
+// host (JavaScriptCore) injects `options.savedProgress` instead. Default is a
+// blank slate so the engine is fully usable with neither.
+const DEFAULT_PROGRESS = Object.freeze({
+  level: 1,
+  mistakeBank: [],
+  totalSessions: 0,
+  lifetimeStars: 0,
+  bankItemStats: {},
+  recentBankItemIds: [],
+});
+
+let progressLoader = () => ({ ...DEFAULT_PROGRESS });
+
+/** Wire a saved-progress source (web: loadProgressSync). Falls back to blank. */
+export function setProgressLoader(fn) {
+  progressLoader = typeof fn === "function" ? fn : () => ({ ...DEFAULT_PROGRESS });
+}
+
 export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE, options = {}) {
-  const saved = loadProgressSync(mode);
+  const saved = options.savedProgress ?? progressLoader(mode);
   const modeConfig = getModeConfig(mode);
   const allowWordProblems = options.allowWordProblems ?? false;
   return {

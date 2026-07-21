@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "test:engine": "node --import ./scripts/lib/registerResolve.js scripts/engineParity.mjs",
+    "build:engine": "node scripts/buildEngineBundle.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run src/__tests__/modes.spec.js src/__tests__/sessionEngine.spec.js src/__tests__/itemBank.spec.js src/__tests__/itemBankCoverage.spec.js src/__tests__/cloudLoader.spec.js src/__tests__/nearDuplicate.spec.js src/__tests__/gradeBands.spec.js src/__tests__/answerCheck.spec.js src/__tests__/itemGenPrompt.spec.js src/__tests__/fractions.spec.js src/__tests__/modeGroups.spec.js src/__tests__/widgetRegistry.spec.js src/__tests__/structures.spec.js src/__tests__/multiAnswer.spec.js src/__tests__/formats.spec.js src/__tests__/distractors.spec.js src/__tests__/shapeGeometry.spec.js src/__tests__/structureCheck.spec.js src/__tests__/bankAnswerAudit.spec.js src/__tests__/modeLoader.spec.js src/__tests__/reviewQueueQc.spec.js src/__tests__/reviewQueueFormat.spec.js src/__tests__/authorStructuresGate.spec.js src/__tests__/varietyReport.spec.js src/__tests__/m4NumberSense.spec.js src/__tests__/m4Fractions.spec.js src/__tests__/m4Measurement.spec.js",
@@ -38,6 +40,7 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
+    "esbuild": "^0.28.1",
     "eslint": "^9.39.4",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.2",

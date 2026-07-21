@@ -180,7 +180,7 @@ async function authorOne(id) {
   const accepted = [];
   const rejected = [];
   const seen = new Set();
-  raws.forEach((raw, i) => {
+  raws.forEach((raw) => {
     const item = toItem(raw, id, meta, accepted.length);
     const prompt = item.question.display.promptText;
     if (seen.has(prompt)) {

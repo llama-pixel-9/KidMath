@@ -2,6 +2,7 @@ import { Fragment, useEffect, useMemo, useState } from "react";
 import { CheckCircle2, XCircle, RotateCcw, AlertTriangle, ShieldCheck } from "lucide-react";
 import { bulkSetReviewStatus, setReviewStatus } from "./itemBankAdminApi";
 import { runChecksOnAdminItem } from "../itemBank/qc/checks.js";
+import { formatAnswer } from "./reviewFormat.js";
 
 // Review queue tab: shows items with reviewStatus=reviewed sorted by the cell
 // gap they would fill (empty cells first, then thin cells). Supports single
@@ -58,6 +59,9 @@ export default function ReviewQueue({
   const [filterBand, setFilterBand] = useState("");
   const [filterQc, setFilterQc] = useState(""); // "", "fail", "flagged"
   const [expanded, setExpanded] = useState(() => new Set());
+  const [viewMode, setViewMode] = useState("cards"); // "cards" | "table"
+  const [pageSize, setPageSize] = useState(20); // multiples of 10, up to 50
+  const [page, setPage] = useState(0);
 
   // Deterministic QC for every item in view. Memoised on the item set: the same
   // checks the CLI runs (src/itemBank/qc), so a reviewer sees exactly what the
@@ -170,7 +174,44 @@ export default function ReviewQueue({
     }
   }
 
-  const allSelected = queue.length > 0 && queue.every((it) => selected.has(it.itemId));
+  // Show one page of up to `pageSize` items. Clamp the page if the queue shrank
+  // (e.g. after approving a batch) so we never land on an empty page.
+  const pageCount = Math.max(1, Math.ceil(queue.length / pageSize));
+  const safePage = Math.min(page, pageCount - 1);
+  useEffect(() => {
+    if (page !== safePage) setPage(safePage);
+  }, [page, safePage]);
+  const pageStart = safePage * pageSize;
+  const pageItems = queue.slice(pageStart, pageStart + pageSize);
+
+  const pageAllSelected = pageItems.length > 0 && pageItems.every((it) => selected.has(it.itemId));
+
+  function selectPage(on) {
+    setSelected((prev) => {
+      const next = new Set(prev);
+      for (const it of pageItems) {
+        if (on) next.add(it.itemId);
+        else next.delete(it.itemId);
+      }
+      return next;
+    });
+  }
+
+  function QcBadge({ qc }) {
+    if (!qc || qc.findings.length === 0) {
+      return <ShieldCheck className="h-4 w-4 text-emerald-500" title="Passes automated checks" />;
+    }
+    const fail = qc.pass === false;
+    return (
+      <span
+        className={`flex items-center gap-1 text-xs font-bold ${fail ? "text-red-700" : "text-amber-700"}`}
+        title={qc.findings.map((f) => `${f.severity}: ${f.message}`).join("\n")}
+      >
+        {fail ? <XCircle className="h-4 w-4" /> : <AlertTriangle className="h-4 w-4" />}
+        {qc.findings.length}
+      </span>
+    );
+  }
 
   return (
     <div className="space-y-3">
@@ -212,6 +253,28 @@ export default function ReviewQueue({
           <option value="fail">QC failures only</option>
           <option value="flagged">Any QC finding</option>
         </select>
+        <select
+          className="rounded-lg border border-gray-300 px-3 py-2 text-sm"
+          value={pageSize}
+          onChange={(e) => {
+            setPageSize(Number(e.target.value));
+            setPage(0);
+          }}
+          title="Items shown per page"
+        >
+          {[10, 20, 30, 40, 50].map((n) => (
+            <option key={n} value={n}>
+              {n} per page
+            </option>
+          ))}
+        </select>
+        <button
+          type="button"
+          onClick={() => setViewMode((v) => (v === "cards" ? "table" : "cards"))}
+          className="rounded-lg border border-gray-300 px-3 py-2 text-sm font-semibold text-slate-600"
+        >
+          {viewMode === "cards" ? "Table view" : "Card view"}
+        </button>
       </div>
 
       {(qcSummary.fail > 0 || qcSummary.warn > 0) && (
@@ -259,10 +322,141 @@ export default function ReviewQueue({
         >
           <XCircle className="h-4 w-4" /> Retire {selected.size}
         </button>
+        <div className="flex-1" />
+        <button
+          type="button"
+          onClick={() => selectPage(!pageAllSelected)}
+          className="px-3 py-1.5 rounded-lg border border-gray-300 text-sm font-semibold text-slate-600"
+          disabled={pageItems.length === 0}
+        >
+          {pageAllSelected ? "Clear page" : `Select page (${pageItems.length})`}
+        </button>
       </div>
 
       {error && <div className="p-3 bg-red-50 text-red-700 rounded-xl text-sm">{error}</div>}
 
+      {/* Pagination bar, shared by both views. */}
+      {queue.length > 0 && (
+        <div className="flex items-center gap-3 text-sm text-slate-600">
+          <span>
+            Showing {pageStart + 1}–{Math.min(pageStart + pageSize, queue.length)} of {queue.length}
+          </span>
+          <div className="flex-1" />
+          <button
+            type="button"
+            onClick={() => setPage((p) => Math.max(0, p - 1))}
+            disabled={safePage === 0}
+            className="px-2 py-1 rounded-lg border border-gray-300 disabled:opacity-40"
+          >
+            ‹ Prev
+          </button>
+          <span>
+            Page {safePage + 1} / {pageCount}
+          </span>
+          <button
+            type="button"
+            onClick={() => setPage((p) => Math.min(pageCount - 1, p + 1))}
+            disabled={safePage >= pageCount - 1}
+            className="px-2 py-1 rounded-lg border border-gray-300 disabled:opacity-40"
+          >
+            Next ›
+          </button>
+        </div>
+      )}
+
+      {viewMode === "cards" ? (
+        <div className="grid gap-3 sm:grid-cols-2">
+          {pageItems.map((it) => {
+            const qc = qcById.get(it.itemId);
+            const qcFail = qc?.pass === false;
+            const isSel = selected.has(it.itemId);
+            return (
+              <div
+                key={it.itemId}
+                className={`rounded-2xl border p-4 flex flex-col gap-2 transition
+                  ${isSel ? "border-emerald-400 bg-emerald-50/40" : "border-gray-200 bg-white"}
+                  ${qcFail ? "ring-1 ring-red-300" : ""}`}
+              >
+                <div className="flex items-start gap-2">
+                  <input
+                    type="checkbox"
+                    className="mt-1"
+                    checked={isSel}
+                    onChange={() => toggle(it.itemId)}
+                  />
+                  <p className="flex-1 text-slate-800 leading-snug">
+                    {it.payload?.display?.promptText || (
+                      <span className="italic text-slate-400">
+                        {it.payload?.display?.representation || "(non-text item)"}
+                      </span>
+                    )}
+                  </p>
+                  <QcBadge qc={qc} />
+                </div>
+
+                <div className="flex items-center gap-2 text-sm">
+                  <span className="text-slate-400">Answer</span>
+                  <span className="font-extrabold text-slate-800 text-lg">
+                    {formatAnswer(it.payload?.answer)}
+                  </span>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-slate-500">
+                  <span className="font-semibold">{it.modeId}</span>
+                  <span>· {it.structureType || it.subskill}</span>
+                  <span>· {it.itemFamily}</span>
+                  <span>· L{it.levelMin}-{it.levelMax}</span>
+                </div>
+
+                {qc && qc.findings.length > 0 && (
+                  <ul className="space-y-0.5 border-t border-gray-100 pt-2">
+                    {qc.findings.map((f, i) => (
+                      <li
+                        key={i}
+                        className={`text-xs ${f.severity === "fail" ? "text-red-700" : "text-amber-700"}`}
+                      >
+                        {f.severity === "fail" ? "✗" : "⚠"} {f.message}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
+                <div className="flex items-center gap-3 pt-1 mt-auto">
+                  <button
+                    type="button"
+                    className="text-sm text-emerald-700 font-bold disabled:opacity-30"
+                    onClick={() => doSingle(it.itemId, "approved")}
+                    disabled={busy || qcFail}
+                    title={qcFail ? "Fix the QC failure before approving" : undefined}
+                  >
+                    Approve
+                  </button>
+                  <button
+                    type="button"
+                    className="text-sm text-slate-500 font-semibold disabled:opacity-50"
+                    onClick={() => doSingle(it.itemId, "draft")}
+                    disabled={busy}
+                  >
+                    Draft
+                  </button>
+                  <button
+                    type="button"
+                    className="text-sm text-slate-500 font-semibold disabled:opacity-50"
+                    onClick={() => onOpenEditor?.(it)}
+                  >
+                    Edit
+                  </button>
+                </div>
+              </div>
+            );
+          })}
+          {pageItems.length === 0 && (
+            <div className="col-span-full py-8 text-center text-sm text-slate-500">
+              Review queue is empty.
+            </div>
+          )}
+        </div>
+      ) : (
       <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
         <table className="w-full text-sm">
           <thead className="bg-gray-50 text-left text-xs uppercase text-slate-500">
@@ -270,11 +464,8 @@ export default function ReviewQueue({
               <th className="px-3 py-2 w-8">
                 <input
                   type="checkbox"
-                  checked={allSelected}
-                  onChange={(e) => {
-                    if (e.target.checked) setSelected(new Set(queue.map((it) => it.itemId)));
-                    else setSelected(new Set());
-                  }}
+                  checked={pageAllSelected}
+                  onChange={(e) => selectPage(e.target.checked)}
                 />
               </th>
               <th className="px-3 py-2">Gap</th>
@@ -287,7 +478,7 @@ export default function ReviewQueue({
             </tr>
           </thead>
           <tbody>
-            {queue.map((it) => {
+            {pageItems.map((it) => {
               const score = gapScore(it, coverageMap);
               const qc = qcById.get(it.itemId);
               const qcFail = qc?.pass === false;
@@ -387,7 +578,7 @@ export default function ReviewQueue({
               </Fragment>
               );
             })}
-            {queue.length === 0 && (
+            {pageItems.length === 0 && (
               <tr>
                 <td colSpan={8} className="px-3 py-6 text-center text-sm text-slate-500">
                   Review queue is empty.
@@ -397,6 +588,8 @@ export default function ReviewQueue({
           </tbody>
         </table>
       </div>
+      )}
     </div>
   );
 }
+

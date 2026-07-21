@@ -45,6 +45,8 @@ import { isVerbalPrompt } from "./modes/helpers";
 import { saveProgress, loadProgress, mergeLocalToCloud } from "./progressStore";
 import { useAuth } from "./useAuth";
 import { useTheme } from "./useTheme";
+import { usePremium } from "./PremiumContext";
+import { isFreeMode } from "./premium";
 import {
   playCorrectSound,
   playStreakSound,
@@ -667,6 +669,7 @@ export default function MathExplorer({ initialMode }) {
   const startMode = initialMode || "addition";
   const { theme } = useTheme();
   const { user, signInWithGoogle } = useAuth();
+  const { isPremium, openPaywall } = usePremium();
   const prefersReducedMotion = useReducedMotion();
   const [lowEndDevice] = useState(() => isLikelyLowEndDevice());
   const [forcedInputType] = useState(() => getForcedInputType());
@@ -810,6 +813,11 @@ export default function MathExplorer({ initialMode }) {
   }, [clearQueuedTimeouts]);
 
   const handleModeChange = (m) => {
+    if (!isFreeMode(m) && !isPremium) {
+      setShowSettings(false);
+      openPaywall();
+      return;
+    }
     telemetryRef.current.inc("modeChanges");
     telemetryRef.current.recordEvent("mode_change", { from: mode, to: m });
     setMode(m);

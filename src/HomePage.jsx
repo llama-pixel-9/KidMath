@@ -32,8 +32,11 @@ import {
   FileText,
   Heart,
 } from "lucide-react";
+import { Lock as LockIcon } from "lucide-react";
 import { useTheme } from "./useTheme";
 import { MODE_IDS, MODE_GROUPS, getModeConfig } from "./modes";
+import { usePremium } from "./PremiumContext";
+import { isFreeMode } from "./premium";
 
 const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork, BarChart3, CircleDot, Sigma, Ruler, Coins, Spline, Scale, Clock, ChartColumn, Triangle, Shapes };
 
@@ -68,6 +71,7 @@ const STEPS = [
 ];
 
 export default function HomePage() {
+  const { isPremium, loading: premiumLoading, openPaywall } = usePremium();
   const { theme } = useTheme();
   const navigate = useNavigate();
 
@@ -182,16 +186,25 @@ export default function HomePage() {
                   const Icon = ICON_MAP[config.icon] || Plus;
                   const card =
                     theme.featureCards[COLOR_INDEX[id] % theme.featureCards.length];
+                  const locked = !isFreeMode(id) && !isPremium && !premiumLoading;
                   return (
                     <motion.button
                       key={id}
                       type="button"
-                      className={`${card.bg} rounded-3xl p-5 text-center shadow-sm cursor-pointer min-h-[140px] flex flex-col items-center justify-start`}
+                      className={`relative ${card.bg} rounded-3xl p-5 text-center shadow-sm cursor-pointer min-h-[140px] flex flex-col items-center justify-start`}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      onClick={() => navigate(`/play/${id}`)}
-                      aria-label={`Play ${config.shortLabel}`}
+                      onClick={() => (locked ? openPaywall() : navigate(`/play/${id}`))}
+                      aria-label={locked ? `${config.shortLabel} (Premium)` : `Play ${config.shortLabel}`}
                     >
+                      {locked && (
+                        <span
+                          className="absolute top-2 right-2 inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/85 shadow"
+                          aria-hidden="true"
+                        >
+                          <LockIcon className={`h-3.5 w-3.5 ${theme.textMuted}`} />
+                        </span>
+                      )}
                       <div
                         className={`inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br ${card.gradient} shadow-md mb-3`}
                       >

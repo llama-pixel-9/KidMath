@@ -4822,7 +4822,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":7,"op":"+","answer":20,"display":{"promptText":"Number pair that makes 20: 13 and what?"}},
+    question: {"a":13,"b":null,"op":"+","answer":7,"display":{"promptText":"Number pair that makes 20: 13 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-038",
@@ -4832,7 +4832,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":11,"op":"+","answer":20,"display":{"promptText":"Number pair that makes 20: 9 and what?"}},
+    question: {"a":9,"b":null,"op":"+","answer":11,"display":{"promptText":"Number pair that makes 20: 9 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-039",
@@ -4842,7 +4842,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":12,"op":"+","answer":20,"display":{"promptText":"Number pair that makes 20: 8 and what?"}},
+    question: {"a":8,"b":null,"op":"+","answer":12,"display":{"promptText":"Number pair that makes 20: 8 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-040",
@@ -4882,7 +4882,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":15,"op":"+","answer":40,"display":{"promptText":"Think of 40 as 25 + 15. Verify the sum."}},
+    question: {"a":25,"b":15,"op":"+","answer":40,"display":{"promptText":"Add the parts: 25 + 15. What is the sum?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-044",
@@ -4892,7 +4892,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":30,"b":20,"op":"+","answer":50,"display":{"promptText":"Think of 50 as 30 + 20. Verify the sum."}},
+    question: {"a":30,"b":20,"op":"+","answer":50,"display":{"promptText":"Add the parts: 30 + 20. What is the sum?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-045",
@@ -4902,7 +4902,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":35,"b":25,"op":"+","answer":60,"display":{"promptText":"Think of 60 as 35 + 25. Verify the sum."}},
+    question: {"a":35,"b":25,"op":"+","answer":60,"display":{"promptText":"Add the parts: 35 + 25. What is the sum?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-046",
@@ -4912,7 +4912,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":45,"b":15,"op":"+","answer":60,"display":{"promptText":"Think of 60 as 45 + 15. Verify the sum."}},
+    question: {"a":45,"b":15,"op":"+","answer":60,"display":{"promptText":"Add the parts: 45 + 15. What is the sum?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-047",
@@ -4922,7 +4922,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":55,"b":25,"op":"+","answer":80,"display":{"promptText":"Number pair that makes 80: 55 and what?"}},
+    question: {"a":55,"b":null,"op":"+","answer":25,"display":{"promptText":"Number pair that makes 80: 55 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-048",
@@ -4932,7 +4932,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":65,"b":15,"op":"+","answer":80,"display":{"promptText":"Number pair that makes 80: 65 and what?"}},
+    question: {"a":65,"b":null,"op":"+","answer":15,"display":{"promptText":"Number pair that makes 80: 65 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-001",
@@ -5252,7 +5252,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":250,"b":250,"op":"+","answer":500,"display":{"promptText":"Halve and double reasoning: 250 + 250 is the same as 500. Verify the total."}},
+    question: {"a":250,"b":250,"op":"+","answer":500,"display":{"promptText":"Halve and double reasoning: double 250 is 250 + 250. What is the total?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-033",
@@ -5262,7 +5262,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":375,"b":375,"op":"+","answer":750,"display":{"promptText":"Halve and double reasoning: 375 + 375 is the same as 750. Verify the total."}},
+    question: {"a":375,"b":375,"op":"+","answer":750,"display":{"promptText":"Halve and double reasoning: double 375 is 375 + 375. What is the total?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-034",
@@ -5272,7 +5272,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":500,"b":500,"op":"+","answer":1000,"display":{"promptText":"Halve and double reasoning: 500 + 500 is the same as 1000. Verify the total."}},
+    question: {"a":500,"b":500,"op":"+","answer":1000,"display":{"promptText":"Halve and double reasoning: double 500 is 500 + 500. What is the total?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-035",
@@ -5302,7 +5302,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":145,"b":55,"op":"+","answer":200,"display":{"promptText":"Number pair that makes 200: 145 and what?"}},
+    question: {"a":145,"b":null,"op":"+","answer":55,"display":{"promptText":"Number pair that makes 200: 145 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-038",
@@ -5312,7 +5312,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":245,"b":55,"op":"+","answer":300,"display":{"promptText":"Number pair that makes 300: 245 and what?"}},
+    question: {"a":245,"b":null,"op":"+","answer":55,"display":{"promptText":"Number pair that makes 300: 245 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-039",
@@ -5322,7 +5322,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":345,"b":55,"op":"+","answer":400,"display":{"promptText":"Number pair that makes 400: 345 and what?"}},
+    question: {"a":345,"b":null,"op":"+","answer":55,"display":{"promptText":"Number pair that makes 400: 345 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-040",
@@ -5362,7 +5362,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":410,"b":90,"op":"+","answer":500,"display":{"promptText":"Think of 500 as 410 + 90. Verify the sum."}},
+    question: {"a":410,"b":90,"op":"+","answer":500,"display":{"promptText":"Add the parts: 410 + 90. What is the sum?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-044",
@@ -5372,7 +5372,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":325,"b":175,"op":"+","answer":500,"display":{"promptText":"Think of 500 as 325 + 175. Verify the sum."}},
+    question: {"a":325,"b":175,"op":"+","answer":500,"display":{"promptText":"Add the parts: 325 + 175. What is the sum?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-045",
@@ -5382,7 +5382,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":225,"b":275,"op":"+","answer":500,"display":{"promptText":"Think of 500 as 225 + 275. Verify the sum."}},
+    question: {"a":225,"b":275,"op":"+","answer":500,"display":{"promptText":"Add the parts: 225 + 275. What is the sum?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-046",
@@ -5392,7 +5392,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":200,"b":400,"op":"+","answer":600,"display":{"promptText":"Think of 600 as 200 + 400. Verify the sum."}},
+    question: {"a":200,"b":400,"op":"+","answer":600,"display":{"promptText":"Add the parts: 200 + 400. What is the sum?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-047",
@@ -5402,7 +5402,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":300,"b":500,"op":"+","answer":800,"display":{"promptText":"Think of 800 as 300 + 500. Verify the sum."}},
+    question: {"a":300,"b":500,"op":"+","answer":800,"display":{"promptText":"Add the parts: 300 + 500. What is the sum?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-048",
@@ -5412,7 +5412,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":350,"b":450,"op":"+","answer":800,"display":{"promptText":"Think of 800 as 350 + 450. Verify the sum."}},
+    question: {"a":350,"b":450,"op":"+","answer":800,"display":{"promptText":"Add the parts: 350 + 450. What is the sum?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-001",
@@ -5782,7 +5782,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"+","answer":6,"display":{"promptText":"Number pair that makes 6: 4 and what?"}},
+    question: {"a":4,"b":null,"op":"+","answer":2,"display":{"promptText":"Number pair that makes 6: 4 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-038",
@@ -5792,7 +5792,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":4,"op":"+","answer":7,"display":{"promptText":"Number pair that makes 7: 3 and what?"}},
+    question: {"a":3,"b":null,"op":"+","answer":4,"display":{"promptText":"Number pair that makes 7: 3 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-039",
@@ -5802,7 +5802,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":4,"op":"+","answer":9,"display":{"promptText":"Number pair that makes 9: 5 and what?"}},
+    question: {"a":5,"b":null,"op":"+","answer":4,"display":{"promptText":"Number pair that makes 9: 5 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-040",
@@ -5842,7 +5842,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"+","answer":6,"display":{"promptText":"Think of 6 as 3 + 3. Verify the sum."}},
+    question: {"a":3,"b":3,"op":"+","answer":6,"display":{"promptText":"Add the parts: 3 + 3. What is the sum?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-044",
@@ -5852,7 +5852,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":4,"op":"+","answer":8,"display":{"promptText":"Think of 8 as 4 + 4. Verify the sum."}},
+    question: {"a":4,"b":4,"op":"+","answer":8,"display":{"promptText":"Add the parts: 4 + 4. What is the sum?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-045",
@@ -5862,7 +5862,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"+","answer":7,"display":{"promptText":"Think of 7 as 2 + 5. Verify the sum."}},
+    question: {"a":2,"b":5,"op":"+","answer":7,"display":{"promptText":"Add the parts: 2 + 5. What is the sum?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-046",
@@ -5872,7 +5872,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":4,"op":"+","answer":5,"display":{"promptText":"Think of 5 as 1 + 4. Verify the sum."}},
+    question: {"a":1,"b":4,"op":"+","answer":5,"display":{"promptText":"Add the parts: 1 + 4. What is the sum?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-047",
@@ -5882,7 +5882,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":4,"op":"+","answer":6,"display":{"promptText":"Number pair that makes 6: 2 and what?"}},
+    question: {"a":2,"b":null,"op":"+","answer":4,"display":{"promptText":"Number pair that makes 6: 2 and what?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-048",
@@ -5892,7 +5892,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":3,"op":"+","answer":9,"display":{"promptText":"Number pair that makes 9: 6 and what?"}},
+    question: {"a":6,"b":null,"op":"+","answer":3,"display":{"promptText":"Number pair that makes 9: 6 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-001",
@@ -6182,7 +6182,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"+","answer":12,"display":{"promptText":"Halve and double reasoning: 6 + 6 is the same as 12. Verify the total."}},
+    question: {"a":6,"b":6,"op":"+","answer":12,"display":{"promptText":"Halve and double reasoning: double 6 is 6 + 6. What is the total?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-030",
@@ -6192,7 +6192,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":7,"op":"+","answer":14,"display":{"promptText":"Halve and double reasoning: 7 + 7 is the same as 14. Verify the total."}},
+    question: {"a":7,"b":7,"op":"+","answer":14,"display":{"promptText":"Halve and double reasoning: double 7 is 7 + 7. What is the total?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-031",
@@ -6202,7 +6202,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":8,"op":"+","answer":16,"display":{"promptText":"Halve and double reasoning: 8 + 8 is the same as 16. Verify the total."}},
+    question: {"a":8,"b":8,"op":"+","answer":16,"display":{"promptText":"Halve and double reasoning: double 8 is 8 + 8. What is the total?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-032",
@@ -6212,7 +6212,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":9,"op":"+","answer":18,"display":{"promptText":"Halve and double reasoning: 9 + 9 is the same as 18. Verify the total."}},
+    question: {"a":9,"b":9,"op":"+","answer":18,"display":{"promptText":"Halve and double reasoning: double 9 is 9 + 9. What is the total?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-033",
@@ -6262,7 +6262,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":7,"op":"+","answer":15,"display":{"promptText":"Number pair that makes 15: 8 and what?"}},
+    question: {"a":8,"b":null,"op":"+","answer":7,"display":{"promptText":"Number pair that makes 15: 8 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-038",
@@ -6272,7 +6272,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":6,"op":"+","answer":15,"display":{"promptText":"Number pair that makes 15: 9 and what?"}},
+    question: {"a":9,"b":null,"op":"+","answer":6,"display":{"promptText":"Number pair that makes 15: 9 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-039",
@@ -6282,7 +6282,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":5,"op":"+","answer":12,"display":{"promptText":"Number pair that makes 12: 7 and what?"}},
+    question: {"a":7,"b":null,"op":"+","answer":5,"display":{"promptText":"Number pair that makes 12: 7 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-040",
@@ -6322,7 +6322,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":9,"op":"+","answer":15,"display":{"promptText":"Think of 15 as 6 + 9. Verify the sum."}},
+    question: {"a":6,"b":9,"op":"+","answer":15,"display":{"promptText":"Add the parts: 6 + 9. What is the sum?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-044",
@@ -6332,7 +6332,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":8,"op":"+","answer":13,"display":{"promptText":"Think of 13 as 5 + 8. Verify the sum."}},
+    question: {"a":5,"b":8,"op":"+","answer":13,"display":{"promptText":"Add the parts: 5 + 8. What is the sum?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-045",
@@ -6342,7 +6342,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":9,"op":"+","answer":13,"display":{"promptText":"Think of 13 as 4 + 9. Verify the sum."}},
+    question: {"a":4,"b":9,"op":"+","answer":13,"display":{"promptText":"Add the parts: 4 + 9. What is the sum?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-046",
@@ -6352,7 +6352,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":2,"op":"+","answer":11,"display":{"promptText":"Think of 11 as 9 + 2. Verify the sum."}},
+    question: {"a":9,"b":2,"op":"+","answer":11,"display":{"promptText":"Add the parts: 9 + 2. What is the sum?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-047",
@@ -6362,7 +6362,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":5,"op":"+","answer":11,"display":{"promptText":"Think of 11 as 6 + 5. Verify the sum."}},
+    question: {"a":6,"b":5,"op":"+","answer":11,"display":{"promptText":"Add the parts: 6 + 5. What is the sum?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-048",
@@ -6372,7 +6372,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":4,"op":"+","answer":11,"display":{"promptText":"Think of 11 as 7 + 4. Verify the sum."}},
+    question: {"a":7,"b":4,"op":"+","answer":11,"display":{"promptText":"Add the parts: 7 + 4. What is the sum?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-001",
@@ -6682,7 +6682,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":50,"b":50,"op":"+","answer":100,"display":{"promptText":"Halve and double reasoning: 50 + 50 is the same as 100. Verify the total."}},
+    question: {"a":50,"b":50,"op":"+","answer":100,"display":{"promptText":"Halve and double reasoning: double 50 is 50 + 50. What is the total?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-032",
@@ -6692,7 +6692,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":45,"b":45,"op":"+","answer":90,"display":{"promptText":"Halve and double reasoning: 45 + 45 is the same as 90. Verify the total."}},
+    question: {"a":45,"b":45,"op":"+","answer":90,"display":{"promptText":"Halve and double reasoning: double 45 is 45 + 45. What is the total?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-033",
@@ -6702,7 +6702,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":35,"b":35,"op":"+","answer":70,"display":{"promptText":"Halve and double reasoning: 35 + 35 is the same as 70. Verify the total."}},
+    question: {"a":35,"b":35,"op":"+","answer":70,"display":{"promptText":"Halve and double reasoning: double 35 is 35 + 35. What is the total?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-034",
@@ -6742,7 +6742,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":45,"b":55,"op":"+","answer":100,"display":{"promptText":"Number pair that makes 100: 45 and what?"}},
+    question: {"a":45,"b":null,"op":"+","answer":55,"display":{"promptText":"Number pair that makes 100: 45 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-038",
@@ -6752,7 +6752,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":35,"b":65,"op":"+","answer":100,"display":{"promptText":"Number pair that makes 100: 35 and what?"}},
+    question: {"a":35,"b":null,"op":"+","answer":65,"display":{"promptText":"Number pair that makes 100: 35 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-039",
@@ -6762,7 +6762,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":75,"op":"+","answer":100,"display":{"promptText":"Number pair that makes 100: 25 and what?"}},
+    question: {"a":25,"b":null,"op":"+","answer":75,"display":{"promptText":"Number pair that makes 100: 25 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-040",
@@ -6772,7 +6772,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":85,"op":"+","answer":100,"display":{"promptText":"Number pair that makes 100: 15 and what?"}},
+    question: {"a":15,"b":null,"op":"+","answer":85,"display":{"promptText":"Number pair that makes 100: 15 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-041",
@@ -6812,7 +6812,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":100,"b":100,"op":"+","answer":200,"display":{"promptText":"Think of 200 as 100 + 100. Verify the sum."}},
+    question: {"a":100,"b":100,"op":"+","answer":200,"display":{"promptText":"Add the parts: 100 + 100. What is the sum?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-045",
@@ -6822,7 +6822,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":150,"b":150,"op":"+","answer":300,"display":{"promptText":"Think of 300 as 150 + 150. Verify the sum."}},
+    question: {"a":150,"b":150,"op":"+","answer":300,"display":{"promptText":"Add the parts: 150 + 150. What is the sum?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-046",
@@ -6832,7 +6832,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":250,"b":250,"op":"+","answer":500,"display":{"promptText":"Think of 500 as 250 + 250. Verify the sum."}},
+    question: {"a":250,"b":250,"op":"+","answer":500,"display":{"promptText":"Add the parts: 250 + 250. What is the sum?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-047",
@@ -6842,7 +6842,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":375,"b":125,"op":"+","answer":500,"display":{"promptText":"Number pair that makes 500: 375 and what?"}},
+    question: {"a":375,"b":null,"op":"+","answer":125,"display":{"promptText":"Number pair that makes 500: 375 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-048",
@@ -6852,7 +6852,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":425,"b":75,"op":"+","answer":500,"display":{"promptText":"Number pair that makes 500: 425 and what?"}},
+    question: {"a":425,"b":null,"op":"+","answer":75,"display":{"promptText":"Number pair that makes 500: 425 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-001",
@@ -7222,7 +7222,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":6,"op":"+","answer":10,"display":{"promptText":"Number pair that makes 10: 4 and what?"}},
+    question: {"a":4,"b":null,"op":"+","answer":6,"display":{"promptText":"Number pair that makes 10: 4 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-038",
@@ -7232,7 +7232,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":7,"op":"+","answer":10,"display":{"promptText":"Number pair that makes 10: 3 and what?"}},
+    question: {"a":3,"b":null,"op":"+","answer":7,"display":{"promptText":"Number pair that makes 10: 3 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-039",
@@ -7242,7 +7242,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":9,"op":"+","answer":10,"display":{"promptText":"Number pair that makes 10: 1 and what?"}},
+    question: {"a":1,"b":null,"op":"+","answer":9,"display":{"promptText":"Number pair that makes 10: 1 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-040",
@@ -7292,7 +7292,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":8,"op":"+","answer":10,"display":{"promptText":"Think of 10 as 2 + 8. Verify the sum."}},
+    question: {"a":2,"b":8,"op":"+","answer":10,"display":{"promptText":"Add the parts: 2 + 8. What is the sum?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-045",
@@ -7302,7 +7302,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":7,"op":"+","answer":10,"display":{"promptText":"Think of 10 as 3 + 7. Verify the sum."}},
+    question: {"a":3,"b":7,"op":"+","answer":10,"display":{"promptText":"Add the parts: 3 + 7. What is the sum?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-046",
@@ -7312,7 +7312,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":6,"op":"+","answer":10,"display":{"promptText":"Think of 10 as 4 + 6. Verify the sum."}},
+    question: {"a":4,"b":6,"op":"+","answer":10,"display":{"promptText":"Add the parts: 4 + 6. What is the sum?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-047",
@@ -7322,7 +7322,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":2,"op":"+","answer":9,"display":{"promptText":"Number pair that makes 9: 7 and what?"}},
+    question: {"a":7,"b":null,"op":"+","answer":2,"display":{"promptText":"Number pair that makes 9: 7 and what?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-048",
@@ -7332,7 +7332,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":3,"op":"+","answer":8,"display":{"promptText":"Number pair that makes 8: 5 and what?"}},
+    question: {"a":5,"b":null,"op":"+","answer":3,"display":{"promptText":"Number pair that makes 8: 5 and what?"}},
   },
   {
     itemId: "addition-conc-unknownAddend-23-001",

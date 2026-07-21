@@ -177,6 +177,25 @@ export const CHECKS = [
   },
 
   {
+    id: "nounlessQuestion",
+    run: (item) => {
+      const text = item.question?.display?.promptText || "";
+      // "How many does Lily have?" makes a young reader resolve the referent
+      // from an earlier sentence; the question must restate what is counted:
+      // "How many toy cars does Lily have?". A closed list of the words that
+      // legally follow a noun-less "How many" keeps this precise — a broad
+      // "no noun detected" heuristic would flag correct prose.
+      if (/how many\s*[?.!]|how many (does|do|did|is|are|was|were|in|now)\b/i.test(text)) {
+        return fail(
+          "nounlessQuestion",
+          'question does not name what is counted — write "How many toy cars does Lily have?", not "How many does Lily have?"'
+        );
+      }
+      return null;
+    },
+  },
+
+  {
     id: "readability",
     run: (item) => {
       const text = item.question?.display?.promptText || "";

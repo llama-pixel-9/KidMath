@@ -54,7 +54,7 @@ export const ADDITIVE_STRUCTURES = [
     subskill: "unknownAddend",
     equation: (x, _y, z) => `${x} + ? = ${z}`,
     story: (ctx, { x, z }) =>
-      `${count(x, ctx)} sat ${ctx.setting}. Some more ${ctx.joinVerb}. Now there are ${z}. How many ${ctx.joinVerb}?`,
+      `${count(x, ctx)} sat ${ctx.setting}. Some more ${ctx.joinVerb}. Now there are ${z}. How many ${ctx.plural} ${ctx.joinVerb}?`,
   },
   {
     id: "addToStartUnknown",
@@ -65,7 +65,7 @@ export const ADDITIVE_STRUCTURES = [
     subskill: "unknownAddend",
     equation: (_x, y, z) => `? + ${y} = ${z}`,
     story: (ctx, { y, z }) =>
-      `Some ${ctx.plural} sat ${ctx.setting}. ${y} more ${ctx.joinVerb}. Now there are ${z}. How many were there before?`,
+      `Some ${ctx.plural} sat ${ctx.setting}. ${y} more ${ctx.joinVerb}. Now there are ${z}. How many ${ctx.plural} were there before?`,
   },
 
   // ---- Take From: x = taken, y = left, z = start ---------------------------
@@ -90,7 +90,7 @@ export const ADDITIVE_STRUCTURES = [
     subskill: "unknownSubtrahend",
     equation: (_x, y, z) => `${z} - ? = ${y}`,
     story: (ctx, { y, z }) =>
-      `${z} ${ctx.plural} were ${ctx.setting}. ${ctx.actor} ${ctx.takeVerb} some. Now there are ${y}. How many did ${ctx.actor} ${ctx.takeVerb === "ate" ? "eat" : "take"}?`,
+      `${z} ${ctx.plural} were ${ctx.setting}. ${ctx.actor} ${ctx.takeVerb} some. Now there are ${y}. How many ${ctx.plural} did ${ctx.actor} ${ctx.takeVerb === "ate" ? "eat" : "take"}?`,
   },
   {
     id: "takeFromStartUnknown",
@@ -101,7 +101,7 @@ export const ADDITIVE_STRUCTURES = [
     subskill: "unknownSubtrahend",
     equation: (x, y) => `? - ${x} = ${y}`,
     story: (ctx, { x, y }) =>
-      `Some ${ctx.plural} were ${ctx.setting}. ${ctx.actor} ${ctx.takeVerb} ${x}. Now there are ${y}. How many were there before?`,
+      `Some ${ctx.plural} were ${ctx.setting}. ${ctx.actor} ${ctx.takeVerb} ${x}. Now there are ${y}. How many ${ctx.plural} were there before?`,
   },
 
   // ---- Put Together / Take Apart: x = partA, y = partB, z = total ----------
@@ -126,7 +126,7 @@ export const ADDITIVE_STRUCTURES = [
     subskill: "unknownAddend",
     equation: (x, _y, z) => `${x} + ? = ${z}`,
     story: (ctx, { x, z }) =>
-      `${z} ${ctx.plural} are ${ctx.setting}. ${x} are ${ctx.attrA} and the rest are ${ctx.attrB}. How many are ${ctx.attrB}?`,
+      `${z} ${ctx.plural} are ${ctx.setting}. ${x} are ${ctx.attrA} and the rest are ${ctx.attrB}. How many ${ctx.plural} are ${ctx.attrB}?`,
   },
 
   // ---- Compare: x = smaller, y = difference, z = bigger --------------------
@@ -165,7 +165,7 @@ export const ADDITIVE_STRUCTURES = [
     // Consistent language: "more" and the child adds.
     equation: (x, y) => `${x} + ${y} = ?`,
     story: (ctx, { x, y }) =>
-      `${ctx.actor2} has ${y} more ${ctx.plural} than ${ctx.actor}. ${ctx.actor} has ${count(x, ctx)}. How many does ${ctx.actor2} have?`,
+      `${ctx.actor2} has ${y} more ${ctx.plural} than ${ctx.actor}. ${ctx.actor} has ${count(x, ctx)}. How many ${ctx.plural} does ${ctx.actor2} have?`,
   },
   {
     id: "compareBiggerFewer",
@@ -178,7 +178,7 @@ export const ADDITIVE_STRUCTURES = [
     languageTrap: true, // says "fewer", requires addition
     equation: (x, y) => `${x} + ${y} = ?`,
     story: (ctx, { x, y }) =>
-      `${ctx.actor} has ${y} fewer ${ctx.plural} than ${ctx.actor2}. ${ctx.actor} has ${count(x, ctx)}. How many does ${ctx.actor2} have?`,
+      `${ctx.actor} has ${y} fewer ${ctx.plural} than ${ctx.actor2}. ${ctx.actor} has ${count(x, ctx)}. How many ${ctx.plural} does ${ctx.actor2} have?`,
   },
   {
     id: "compareSmallerMore",
@@ -191,7 +191,7 @@ export const ADDITIVE_STRUCTURES = [
     languageTrap: true, // says "more", requires subtraction
     equation: (_x, y, z) => `${z} - ${y} = ?`,
     story: (ctx, { y, z }) =>
-      `${ctx.actor2} has ${y} more ${ctx.plural} than ${ctx.actor}. ${ctx.actor2} has ${z}. How many does ${ctx.actor} have?`,
+      `${ctx.actor2} has ${y} more ${ctx.plural} than ${ctx.actor}. ${ctx.actor2} has ${z}. How many ${ctx.plural} does ${ctx.actor} have?`,
   },
   {
     id: "compareSmallerFewer",
@@ -203,7 +203,7 @@ export const ADDITIVE_STRUCTURES = [
     subskill: "differenceAsDistance",
     equation: (_x, y, z) => `${z} - ${y} = ?`,
     story: (ctx, { y, z }) =>
-      `${ctx.actor} has ${y} fewer ${ctx.plural} than ${ctx.actor2}. ${ctx.actor2} has ${z}. How many does ${ctx.actor} have?`,
+      `${ctx.actor} has ${y} fewer ${ctx.plural} than ${ctx.actor2}. ${ctx.actor2} has ${z}. How many ${ctx.plural} does ${ctx.actor} have?`,
   },
 ];
 

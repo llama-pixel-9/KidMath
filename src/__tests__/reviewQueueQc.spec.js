@@ -15,7 +15,7 @@ const adminItem = (over = {}) => ({
   itemFamily: "application",
   levelMin: 1,
   levelMax: 3,
-  payload: { a: 2, b: 3, op: "+", answer: 5, display: { promptText: "2 birds and 3 birds. How many?" } },
+  payload: { a: 2, b: 3, op: "+", answer: 5, display: { promptText: "2 birds and 3 birds. How many birds in all?" } },
   ...over,
 });
 

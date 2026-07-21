@@ -27,7 +27,7 @@ function gated(item) {
 describe("authoring gate on the empty difficult structures", () => {
   it("accepts a genuine Start Unknown", () => {
     expect(
-      gated(draft("addToStartUnknown", "Some frogs sat on a log. 8 more hopped on. Now there are 20. How many were there before?", { a: 8, b: 20, op: "+", answer: 12 }))
+      gated(draft("addToStartUnknown", "Some frogs sat on a log. 8 more hopped on. Now there are 20. How many frogs were there before?", { a: 8, b: 20, op: "+", answer: 12 }))
     ).toBe(true);
   });
 
@@ -39,8 +39,16 @@ describe("authoring gate on the empty difficult structures", () => {
 
   it("accepts the fewer/add language trap", () => {
     expect(
-      gated(draft("compareBiggerFewer", "Maya has 15 fewer stickers than Ethan. Maya has 12 stickers. How many does Ethan have?", { a: 12, b: 15, op: "+", answer: 27 }))
+      gated(draft("compareBiggerFewer", "Maya has 15 fewer stickers than Ethan. Maya has 12 stickers. How many stickers does Ethan have?", { a: 12, b: 15, op: "+", answer: 27 }))
     ).toBe(true);
+  });
+
+  it("rejects a noun-less question even when structure and math are right", () => {
+    // "How many does Ethan have?" — the reader must resolve "how many WHAT"
+    // from the previous sentence. The question must restate the noun.
+    expect(
+      gated(draft("compareBiggerFewer", "Maya has 15 fewer stickers than Ethan. Maya has 12 stickers. How many does Ethan have?", { a: 12, b: 15, op: "+", answer: 27 }))
+    ).toBe(false);
   });
 
   it("rejects the trap when the trap word is replaced", () => {
@@ -71,11 +79,11 @@ describe("authoring gate on the empty difficult structures", () => {
 
 describe("checker handles payload operand order and comparative phrasing", () => {
   it("accepts a Compare item storing [difference, larger] in a/b", () => {
-    // "Sofia has 8 more than Marcus. Sofia has 47. How many does Marcus have?"
-    // = 39. The model stored a=8 (difference), b=47 (larger); 47 - 8 = 39.
-    // Order-agnostic subtraction must accept this.
+    // "Sofia has 8 more crayons than Marcus. Sofia has 47. How many crayons
+    // does Marcus have?" = 39. The model stored a=8 (difference), b=47
+    // (larger); 47 - 8 = 39. Order-agnostic subtraction must accept this.
     expect(
-      gated(draft("compareSmallerMore", "Sofia has 8 more crayons than Marcus. Sofia has 47. How many does Marcus have?", { a: 8, b: 47, op: "-", answer: 39 }))
+      gated(draft("compareSmallerMore", "Sofia has 8 more crayons than Marcus. Sofia has 47. How many crayons does Marcus have?", { a: 8, b: 47, op: "-", answer: 39 }))
     ).toBe(true);
   });
 
@@ -96,12 +104,12 @@ describe("arithmetic accepts every operand position of one relation", () => {
   it("accepts Take From / Start Unknown (answer - taken = left)", () => {
     // "Some pencils. Maria used 12. Now 8. How many before?" = 20; 8+12=20.
     expect(
-      gated(draft("takeFromStartUnknown", "Some pencils were on the desk. Maria used 12. Now there are 8. How many were there before?", { a: 12, b: 8, op: "-", answer: 20 }))
+      gated(draft("takeFromStartUnknown", "Some pencils were on the desk. Maria used 12. Now there are 8. How many pencils were there before?", { a: 12, b: 8, op: "-", answer: 20 }))
     ).toBe(true);
   });
 
   it("accepts a double stored as [part, part, whole] in any slot", () => {
-    expect(gated(draft("compareBiggerMore", "Ana has 6 more than Bo. Bo has 6. How many does Ana have?", { a: 6, b: 6, op: "+", answer: 12 }))).toBe(true);
+    expect(gated(draft("compareBiggerMore", "Ana has 6 more shells than Bo. Bo has 6. How many shells does Ana have?", { a: 6, b: 6, op: "+", answer: 12 }))).toBe(true);
   });
 
   it("still rejects a wrong additive trio", () => {

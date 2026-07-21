@@ -57,6 +57,10 @@ Use the closest matching `structureType` when authoring an item:
 - Use concrete nouns (apples, baskets, books, students). Avoid abstract scenarios.
 - Use proper names sparingly (Sam, Mina, Luca, Nia, Theo, Ava). Vary across items.
 - Avoid pronouns that can be ambiguous (no "they had" without a clear referent).
+- The question sentence must restate the noun being counted: "How many toy
+  cars does Lily have?", never "How many does Lily have?" — a young reader
+  should not have to resolve "how many *what*" from an earlier sentence.
+  Enforced by the `nounlessQuestion` QC check.
 - Avoid extra narrative: skip story decoration that does not affect the math.
 - Avoid culturally narrow contexts. Prefer school, garden, library, kitchen,
   sports, and library settings.

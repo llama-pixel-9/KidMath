@@ -104,6 +104,7 @@ function buildPrompt(id, meta, refs, n) {
     `Write EXACTLY ${n} NEW items. Requirements:`,
     "- Follow the RULE above exactly — it is what makes this the intended structure.",
     "- 1-2 short sentences, concrete nouns, a named child, <= 220 characters.",
+    '- The final question must restate the thing being counted: "How many toy cars does Lily have?", never "How many does Lily have?"',
     "- Rotate names and contexts; every prompt must be unique.",
     "- Numbers within 100; the answer must be a positive whole number.",
     "- Do NOT state the answer in the prompt.",

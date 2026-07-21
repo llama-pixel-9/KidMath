@@ -83,7 +83,7 @@ export const MULTIPLICATIVE_STRUCTURES = [
     division: "partitive",
     equation: (g, _s, p) => `${g} x ? = ${p}`,
     story: (ctx, { g, p }) =>
-      `${p} ${ctx.plural} are arranged into ${g} equal rows. How many are in each row?`,
+      `${p} ${ctx.plural} are arranged into ${g} equal rows. How many ${ctx.plural} are in each row?`,
   },
   {
     id: "arrayRowCountUnknown",

@@ -27,6 +27,9 @@ final class SessionViewModel: ObservableObject {
     @Published private(set) var level = 1
     @Published private(set) var answeredCount = 0
     @Published private(set) var showLevelUp = false
+    @Published private(set) var streak = 0
+    /// Bumped per question so widget @State (entries, picks) resets with it.
+    @Published private(set) var questionKey = 0
     /// Set during wrong-answer feedback so the widget can reveal the answer.
     @Published private(set) var revealAnswer: Any?
 
@@ -88,6 +91,10 @@ final class SessionViewModel: ObservableObject {
         question["choices"] as? [Any] ?? []
     }
 
+    var display: [String: Any] {
+        question["display"] as? [String: Any] ?? [:]
+    }
+
     var multiSelectOptions: [Any] {
         (question["display"] as? [String: Any])?["options"] as? [Any] ?? []
     }
@@ -105,9 +112,11 @@ final class SessionViewModel: ObservableObject {
             self.answerType = try engine.questionAnswerType(question: question)
             self.level = ProgressStore.int(session.snapshot["level"], default: level)
             self.answeredCount = ProgressStore.int(session.snapshot["questionsAnswered"])
+            self.streak = ProgressStore.int(session.snapshot["correctStreak"])
             self.revealAnswer = nil
             self.questionStart = Date()
             self.locked = false
+            self.questionKey += 1
             self.phase = .question
         } catch {
             phase = .failed("\(error)")

@@ -69,6 +69,47 @@ final class SessionFlowTests: XCTestCase {
         XCTAssertEqual(ProgressStore.int(saved["lifetimeStars"]), 5)
     }
 
+    /// P3: every mode in the catalog — including the visual-widget ones —
+    /// plays a full session to completion through the view model. Catches a
+    /// mode whose questions can't be answered by the widget contract.
+    func testEveryCatalogModePlaysToCompletion() async throws {
+        let defaults = try XCTUnwrap(UserDefaults(suiteName: #function))
+        defaults.removePersistentDomain(forName: #function)
+        let engine = try EngineBridge()
+        try engine.setBankItems([])
+        let progressStore = ProgressStore(supabase: .shared, defaults: defaults)
+
+        for mode in ModeCatalog.allModes where mode.playable {
+            let viewModel = SessionViewModel(
+                modeId: mode.id,
+                engine: engine,
+                progressStore: progressStore,
+                bankService: nil,
+                sessionSize: 3,
+                correctHold: .milliseconds(2),
+                wrongHold: .milliseconds(2)
+            )
+            await viewModel.start()
+
+            var submissions = 0
+            while submissions < 15 {
+                if case .complete = viewModel.phase { break }
+                try await waitFor { if case .question = viewModel.phase { return true } else { return false } }
+                viewModel.submit(try correctSubmission(viewModel))
+                submissions += 1
+                try await waitFor {
+                    if case .question = viewModel.phase { return true }
+                    if case .complete = viewModel.phase { return true }
+                    return false
+                }
+            }
+            guard case .complete(let stars, _) = viewModel.phase else {
+                return XCTFail("\(mode.id): session never completed (phase \(viewModel.phase))")
+            }
+            XCTAssertEqual(stars, 3, "\(mode.id): expected every answer to score correct")
+        }
+    }
+
     func testWrongAnswerRevealsAndContinues() async throws {
         let defaults = try XCTUnwrap(UserDefaults(suiteName: #function))
         defaults.removePersistentDomain(forName: #function)

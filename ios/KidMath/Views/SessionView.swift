@@ -1,7 +1,10 @@
 import SwiftUI
 
 /// One adaptive session: question card → answer widget → feedback → next,
-/// ending in the completion screen. Mirrors the play loop of MathExplorer.jsx.
+/// ending in the completion screen. Mirrors the play loop AND layout of
+/// MathExplorer.jsx: content lives in a centered narrow column (the web's
+/// `max-w-sm`), question card and widget grouped in the vertical center —
+/// never stretched edge to edge.
 struct SessionView: View {
     let mode: ModeInfo
 
@@ -12,8 +15,6 @@ struct SessionView: View {
 
     init(mode: ModeInfo) {
         self.mode = mode
-        // AppModel is guaranteed to exist by the time a session opens; fall
-        // back to a fresh bridge only in previews.
         let app = AppEnvironment.current
         _viewModel = StateObject(wrappedValue: SessionViewModel(
             modeId: mode.id,
@@ -60,15 +61,25 @@ struct SessionView: View {
         dismiss()
     }
 
-    // MARK: - Play area
+    // MARK: - Play area (centered column, like the web's max-w-sm)
 
     private var playArea: some View {
-        VStack(spacing: 16) {
+        VStack(spacing: 0) {
             header
-            questionCard
-            Spacer(minLength: 0)
-            answerWidget
-                .padding(.bottom, 12)
+                .frame(maxWidth: 520)
+            GeometryReader { proxy in
+                ScrollView(showsIndicators: false) {
+                    VStack(spacing: 22) {
+                        questionCard
+                        answerWidget
+                            .id(viewModel.questionKey)
+                    }
+                    .frame(maxWidth: 400)
+                    .padding(.horizontal)
+                    .padding(.vertical, 12)
+                    .frame(maxWidth: .infinity, minHeight: proxy.size.height)
+                }
+            }
         }
         .padding(.horizontal)
     }
@@ -96,6 +107,12 @@ struct SessionView: View {
             }
             .frame(height: 14)
 
+            if viewModel.streak >= 3 {
+                Label("\(viewModel.streak)", systemImage: "bolt.fill")
+                    .font(.subheadline.weight(.heavy))
+                    .foregroundStyle(Color(red: 0.984, green: 0.573, blue: 0.235))
+            }
+
             Text("Lv \(viewModel.level)")
                 .font(.subheadline.weight(.heavy))
                 .fontDesign(.rounded)
@@ -115,31 +132,18 @@ struct SessionView: View {
                     .foregroundStyle(theme.textMuted)
                     .textCase(.uppercase)
             }
-            ForEach(Array(viewModel.promptLines.enumerated()), id: \.offset) { _, line in
-                Text(line)
-                    .font(promptFont)
-                    .fontDesign(.rounded)
-                    .foregroundStyle(theme.textPrimary)
-                    .multilineTextAlignment(.center)
-                    .minimumScaleFactor(0.5)
-            }
+            QuestionDisplayView(question: viewModel.question, modeColor: theme.modeColor(mode.id))
             feedbackLine
         }
         .padding(24)
-        .frame(maxWidth: .infinity, minHeight: 170)
+        .frame(maxWidth: .infinity, minHeight: 150)
         .background(
             RoundedRectangle(cornerRadius: 28)
                 .fill(theme.cardBackground)
                 .overlay(RoundedRectangle(cornerRadius: 28).stroke(borderColor, lineWidth: 3))
+                .shadow(color: .black.opacity(0.06), radius: 14, y: 6)
         )
         .animation(.easeOut(duration: 0.2), value: feedbackState ?? true)
-    }
-
-    private var promptFont: Font {
-        let joined = viewModel.promptLines.joined()
-        return joined.count > 60
-            ? .title3.weight(.semibold)
-            : .system(size: 34, weight: .bold)
     }
 
     private var feedbackState: Bool? {
@@ -178,21 +182,49 @@ struct SessionView: View {
         }
     }
 
+    /// answerType -> widget, the Swift widgetRegistry.js. Anything
+    /// unregistered falls back to the multiple-choice grid, like the web.
     @ViewBuilder
     private var answerWidget: some View {
+        let locked = feedbackState != nil
+        let display = viewModel.display
         switch viewModel.answerType {
         case "numberPad", "fillBlank":
-            NumberPadWidget(disabled: feedbackState != nil) { viewModel.submit($0) }
+            NumberPadWidget(disabled: locked) { viewModel.submit($0) }
+        case "decimal":
+            NumberPadWidget(allowDecimal: true, disabled: locked) { viewModel.submit($0) }
+        case "fraction":
+            FractionInputWidget(disabled: locked) { viewModel.submit($0) }
         case "symbolSelect":
-            SymbolSelectWidget(disabled: feedbackState != nil) { viewModel.submit($0) }
+            SymbolSelectWidget(disabled: locked) { viewModel.submit($0) }
         case "multiSelect":
             MultiSelectWidget(
                 options: viewModel.multiSelectOptions,
                 requiredCount: viewModel.multiSelectRequiredCount,
-                disabled: feedbackState != nil
+                disabled: locked
             ) { viewModel.submit($0) }
+        case "numberLine":
+            NumberLineWidget(display: display, disabled: locked) { viewModel.submit($0) }
+        case "numberBond":
+            NumberBondWidget(display: display, disabled: locked) { viewModel.submit($0) }
+        case "clock":
+            AnalogClockWidget(display: display, disabled: locked) { viewModel.submit($0) }
+        case "angle":
+            AngleFigureWidget(display: display, disabled: locked) { viewModel.submit($0) }
+        case "barGraph":
+            DataGraphWidget(display: display, disabled: locked) { viewModel.submit($0) }
+        case "coinTray":
+            CoinTrayWidget(display: display, disabled: locked) { viewModel.submit($0) }
+        case "fractionSet":
+            FractionSetWidget(display: display, disabled: locked) { viewModel.submit($0) }
+        case "placeValueDiscs":
+            PlaceValueDiscsWidget(display: display, disabled: locked) { viewModel.submit($0) }
+        case "barModel":
+            BarModelWidget(display: display, disabled: locked) { viewModel.submit($0) }
+        case "shapeFigure":
+            ShapeFigureWidget(display: display, disabled: locked) { viewModel.submit($0) }
         default:
-            ChoiceWidget(choices: viewModel.choices, disabled: feedbackState != nil) {
+            ChoiceWidget(choices: viewModel.choices, disabled: locked) {
                 viewModel.submit($0)
             }
         }
@@ -222,6 +254,12 @@ enum AnswerFormatting {
                 : "\(number.doubleValue)"
         case let string as String:
             return string
+        case let dictionary as [String: Any]:
+            // Fraction answers cross as {num, den}.
+            if let num = dictionary["num"], let den = dictionary["den"] {
+                return "\(text(num))/\(text(den))"
+            }
+            return "\(dictionary)"
         case let array as [Any]:
             // multiSelect: a list of acceptable selections shows the first.
             if let first = array.first as? [Any] {

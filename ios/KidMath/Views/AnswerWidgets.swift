@@ -55,17 +55,20 @@ struct ChoiceWidget: View {
 
 struct NumberPadWidget: View {
     @Environment(\.theme) private var theme
+    var allowDecimal = false
     let disabled: Bool
     let submit: (Any) -> Void
 
     @State private var entry = ""
 
-    private let keys: [[String]] = [
-        ["1", "2", "3"],
-        ["4", "5", "6"],
-        ["7", "8", "9"],
-        ["-", "0", "⌫"],
-    ]
+    private var keys: [[String]] {
+        [
+            ["1", "2", "3"],
+            ["4", "5", "6"],
+            ["7", "8", "9"],
+            [allowDecimal ? "." : "-", "0", "⌫"],
+        ]
+    }
 
     var body: some View {
         VStack(spacing: 10) {
@@ -125,6 +128,8 @@ struct NumberPadWidget: View {
             if !entry.isEmpty { entry.removeLast() }
         case "-":
             if entry.isEmpty { entry = "-" }
+        case ".":
+            if !entry.contains(".") { entry += entry.isEmpty ? "0." : "." }
         default:
             if entry.count < 7 { entry += key }
         }

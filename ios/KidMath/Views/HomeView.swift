@@ -19,8 +19,10 @@ struct HomeView: View {
                         groupSection(group)
                     }
                 }
+                .frame(maxWidth: 760) // centered content column, like the web
                 .padding(.horizontal)
                 .padding(.bottom, 24)
+                .frame(maxWidth: .infinity)
             }
             .background(theme.background)
             .toolbar {

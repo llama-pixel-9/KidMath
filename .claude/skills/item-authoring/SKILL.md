@@ -38,10 +38,28 @@ Example rule enforced this way: the question sentence must restate the counted
 noun — "How many toy cars does Lily have?", never "How many does Lily have?"
 (`nounlessQuestion` check).
 
+## Prose style
+
+Narrative rules and reviewer-approved gold examples live in
+`scripts/itemGen/structureRules.js` (`NARRATIVE_RULES`, `GOLD_EXAMPLES`) and
+are fed to every LLM pass. Person-first, chronological, one tense, simple
+verbs, explicit "at the start". When the reviewer critiques wording, update
+those exports (and the guide) — not just one prompt.
+
+## Reword-and-choose workflow
+
+`scripts/itemGen/rewordItems.js` generates 1-3 gate-verified natural rewrites
+per item, ranked best first, stored as `payload.display.promptOptions`. The
+Review queue card view shows them as radio choices (best preselected,
+original last); Approve writes the reviewer's pick into `promptText` and
+strips the options (`src/admin/reviewChoice.js`). Run it whenever a batch's
+wording needs improvement instead of hand-editing prompts.
+
 ## Pipeline commands
 
 - `node scripts/itemGen/authorStructures.js --dry` — generate + gate, write nothing
 - `... --per N --write` — N items per structure, written as drafts
+- `node --import ./scripts/lib/registerResolve.js scripts/itemGen/rewordItems.js [--write]` — ranked rewrite options for review
 - `npm run bank:qc` / `npm run bank:audit` / `npm run bank:variety` — QC & coverage
 - `npm run bank:export` — snapshot approved cloud rows into `src/itemBank/items/`
 - DB scripts need `set -a && source .env.local && set +a` for the service key

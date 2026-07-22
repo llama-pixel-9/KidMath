@@ -3,6 +3,7 @@ import { CheckCircle2, XCircle, RotateCcw, AlertTriangle, ShieldCheck } from "lu
 import { bulkSetReviewStatus, setReviewStatus } from "./itemBankAdminApi";
 import { runChecksOnAdminItem } from "../itemBank/qc/checks.js";
 import { formatAnswer } from "./reviewFormat.js";
+import { choiceList, payloadWithChoice, itemWithChoice } from "./reviewChoice.js";
 
 // Review queue tab: shows items with reviewStatus=reviewed sorted by the cell
 // gap they would fill (empty cells first, then thin cells). Supports single
@@ -10,6 +11,15 @@ import { formatAnswer } from "./reviewFormat.js";
 
 const FAMILIES = ["conceptual", "procedural", "application"];
 const LEVEL_BANDS = ["K-1", "2-3", "4-5"];
+
+// The wording currently selected for an item: the reviewer's pick, else the
+// top-ranked option, else null for items without options.
+function chosenText(item, choices) {
+  const list = choiceList(item);
+  if (list.length === 0) return null;
+  const picked = choices.get(item.itemId);
+  return picked !== undefined && list.includes(picked) ? picked : list[0];
+}
 
 function bandForLevel(level) {
   if (level <= 3) return "K-1";
@@ -62,15 +72,21 @@ export default function ReviewQueue({
   const [viewMode, setViewMode] = useState("cards"); // "cards" | "table"
   const [pageSize, setPageSize] = useState(20); // multiples of 10, up to 50
   const [page, setPage] = useState(0);
+  // itemId -> chosen wording, for items carrying ranked promptOptions. Items
+  // absent from the map default to the top-ranked option.
+  const [choices, setChoices] = useState(() => new Map());
 
-  // Deterministic QC for every item in view. Memoised on the item set: the same
-  // checks the CLI runs (src/itemBank/qc), so a reviewer sees exactly what the
-  // batch pre-screen saw and nothing drifts between the two.
+  // Deterministic QC for every item in view — evaluated against the wording
+  // the reviewer currently has selected, so the badge and the approve guard
+  // always describe what would actually be approved.
   const qcById = useMemo(() => {
     const map = new Map();
-    for (const it of items || []) map.set(it.itemId, runChecksOnAdminItem(it));
+    for (const it of items || []) {
+      const chosen = chosenText(it, choices);
+      map.set(it.itemId, runChecksOnAdminItem(chosen ? itemWithChoice(it, chosen) : it));
+    }
     return map;
-  }, [items]);
+  }, [items, choices]);
 
   const coverageMap = useMemo(() => {
     const map = new Map();
@@ -142,6 +158,16 @@ export default function ReviewQueue({
     [selected, qcById]
   );
 
+  const byId = useMemo(() => new Map((items || []).map((it) => [it.itemId, it])), [items]);
+
+  // Approval writes the reviewer's selected wording into the payload (and
+  // strips the options). Other statuses keep the options for a later pass.
+  function approvalEntry(itemId) {
+    const it = byId.get(itemId);
+    const chosen = it ? chosenText(it, choices) : null;
+    return chosen ? { itemId, payload: payloadWithChoice(it.payload, chosen) } : { itemId };
+  }
+
   async function doBulk(reviewStatus) {
     if (selected.size === 0) return;
     if (reviewStatus === "approved" && selectionHasFailure) {
@@ -151,7 +177,9 @@ export default function ReviewQueue({
     setBusy(true);
     setError(null);
     try {
-      const updated = await bulkSetReviewStatus([...selected], reviewStatus);
+      const entries =
+        reviewStatus === "approved" ? [...selected].map(approvalEntry) : [...selected].map((itemId) => ({ itemId }));
+      const updated = await bulkSetReviewStatus(entries, reviewStatus);
       onBulkChanged?.(updated);
       setSelected(new Set());
     } catch (err) {
@@ -165,7 +193,8 @@ export default function ReviewQueue({
     setBusy(true);
     setError(null);
     try {
-      const updated = await setReviewStatus(itemId, reviewStatus);
+      const entry = reviewStatus === "approved" ? approvalEntry(itemId) : { itemId };
+      const updated = await setReviewStatus(itemId, reviewStatus, entry.payload);
       onItemChanged?.(updated);
     } catch (err) {
       setError(err.message || "Update failed");
@@ -370,6 +399,8 @@ export default function ReviewQueue({
             const qc = qcById.get(it.itemId);
             const qcFail = qc?.pass === false;
             const isSel = selected.has(it.itemId);
+            const options = choiceList(it);
+            const chosen = chosenText(it, choices);
             return (
               <div
                 key={it.itemId}
@@ -384,13 +415,45 @@ export default function ReviewQueue({
                     checked={isSel}
                     onChange={() => toggle(it.itemId)}
                   />
-                  <p className="flex-1 text-slate-800 leading-snug">
-                    {it.payload?.display?.promptText || (
-                      <span className="italic text-slate-400">
-                        {it.payload?.display?.representation || "(non-text item)"}
-                      </span>
-                    )}
-                  </p>
+                  {options.length > 0 ? (
+                    <div className="flex-1 space-y-1.5">
+                      {options.map((text, i) => {
+                        const isOriginal = i === options.length - 1;
+                        const isChosen = text === chosen;
+                        return (
+                          <label
+                            key={i}
+                            className={`flex items-start gap-2 rounded-lg border px-2 py-1.5 cursor-pointer text-sm leading-snug
+                              ${isChosen ? "border-violet-400 bg-violet-50 text-slate-800" : "border-transparent text-slate-500 hover:border-gray-200"}`}
+                          >
+                            <input
+                              type="radio"
+                              className="mt-0.5"
+                              name={`choice-${it.itemId}`}
+                              checked={isChosen}
+                              onChange={() =>
+                                setChoices((prev) => new Map(prev).set(it.itemId, text))
+                              }
+                            />
+                            <span className="flex-1">
+                              <span className={`mr-1 text-[10px] font-bold uppercase ${isOriginal ? "text-slate-400" : "text-violet-500"}`}>
+                                {isOriginal ? "original" : `#${i + 1}`}
+                              </span>
+                              {text}
+                            </span>
+                          </label>
+                        );
+                      })}
+                    </div>
+                  ) : (
+                    <p className="flex-1 text-slate-800 leading-snug">
+                      {it.payload?.display?.promptText || (
+                        <span className="italic text-slate-400">
+                          {it.payload?.display?.representation || "(non-text item)"}
+                        </span>
+                      )}
+                    </p>
+                  )}
                   <QcBadge qc={qc} />
                 </div>
 

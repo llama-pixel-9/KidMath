@@ -34,6 +34,7 @@ import {
 import { checkStructure } from "../../src/itemBank/qc/structureCheck.js";
 import { runChecks } from "../../src/itemBank/qc/checks.js";
 import { writeDrafts } from "./writeDrafts.js";
+import { RULES, NARRATIVE_RULES, GOLD_EXAMPLES } from "./structureRules.js";
 
 const args = process.argv.slice(2);
 const flag = (n, d = null) => (args.includes(`--${n}`) ? args[args.indexOf(`--${n}`) + 1] : d);
@@ -43,31 +44,6 @@ const perStructure = Number(flag("per", "12"));
 const onlyStructure = flag("only");
 const write = has("write");
 const model = process.env.KIDMATH_ITEMGEN_MODEL || "haiku";
-
-// The defining rule per structure — exactly what checkStructure enforces,
-// stated for the author so it gets the hard ones right on the first try.
-const RULES = {
-  addToStartUnknown:
-    'The STARTING amount is unknown and must NOT be stated. Begin with "Some ...". State exactly two numbers: the change and the end total.',
-  takeFromStartUnknown:
-    'The STARTING amount is unknown and must NOT be stated. Begin with "Some ...". State the amount removed and the amount left.',
-  compareBiggerMore:
-    'Consistent-language compare: use the word "more", and the child ADDS. State the smaller quantity and the difference.',
-  compareBiggerFewer:
-    'LANGUAGE TRAP: use the word "fewer", even though the child must ADD. Never use "more". State the smaller quantity and the difference.',
-  compareSmallerMore:
-    'LANGUAGE TRAP: use the word "more", even though the child must SUBTRACT. Never use "fewer". State the larger quantity and the difference.',
-  compareSmallerFewer:
-    'Consistent-language compare: use the word "fewer", and the child SUBTRACTS. State the larger quantity and the difference.',
-  compareProductUnknown:
-    'Multiplicative compare: say "X times as much/many", never "more". State the smaller amount and the multiplier; ask for the larger.',
-  compareSetSizeUnknown:
-    'Multiplicative compare: say "X times as much/many". State the larger amount and the multiplier; ask for the smaller.',
-  compareMultiplierUnknown:
-    'Multiplicative compare: ask "how many times as much/many". State both amounts; ask for the multiplier.',
-  arrayRowCountUnknown:
-    'ARRAY structure — use ROWS, not groups or bunches. Say the items are "arranged in rows" with N in each row, and ask "how many ROWS". The word "rows" must appear.',
-};
 
 const TARGETS = Object.keys(RULES);
 
@@ -98,13 +74,18 @@ function buildPrompt(id, meta, refs, n) {
     `Problem structure: ${id}`,
     `RULE: ${RULES[id]}`,
     "",
-    "Correct reference items (right structure and math; write DIFFERENT prose):",
+    "Correct reference items (right structure and math ONLY — their prose style is stiff; do NOT copy it):",
     ...refs.map((r) => `  "${r.prompt}"  (answer ${r.answer})`),
+    "",
+    "Write in THIS register instead (reviewer-approved style):",
+    ...GOLD_EXAMPLES.map((g) => `  "${g}"`),
+    "",
+    "Style rules:",
+    ...NARRATIVE_RULES.map((r) => `- ${r}`),
     "",
     `Write EXACTLY ${n} NEW items. Requirements:`,
     "- Follow the RULE above exactly — it is what makes this the intended structure.",
-    "- 1-2 short sentences, concrete nouns, a named child, <= 220 characters.",
-    '- The final question must restate the thing being counted: "How many toy cars does Lily have?", never "How many does Lily have?"',
+    "- Concrete nouns, a named child, <= 220 characters.",
     "- Rotate names and contexts; every prompt must be unique.",
     "- Numbers within 100; the answer must be a positive whole number.",
     "- Do NOT state the answer in the prompt.",

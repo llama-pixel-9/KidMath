@@ -139,8 +139,8 @@ export const CHECKS = [
       const text = (item.question?.display?.promptText || "").trim();
       if (!text) return fail("emptyPrompt", "prompt is empty");
       if (text.length > 220) return fail("promptLength", `prompt is ${text.length} chars (limit 220)`);
-      if (text.split(/[.!?]+/).filter((s) => s.trim()).length > 3) {
-        return warn("promptSentences", "more than 2 sentences — the authoring guide asks for 1-2");
+      if (text.split(/[.!?]+/).filter((s) => s.trim()).length > 4) {
+        return warn("promptSentences", "more than 4 sentences — the authoring guide asks for 2-4 short chronological steps");
       }
       return null;
     },

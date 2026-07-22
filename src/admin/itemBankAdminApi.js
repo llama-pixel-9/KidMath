@@ -76,8 +76,7 @@ export async function deleteItem(itemId) {
   refreshBankFromCloud({ force: true });
 }
 
-export async function setReviewStatus(itemId, reviewStatus) {
-  if (!supabase) throw new Error("Supabase not configured");
+async function reviewerPatch(reviewStatus) {
   const patch = { review_status: reviewStatus };
   if (reviewStatus === "approved" || reviewStatus === "reviewed") {
     patch.reviewed_at = new Date().toISOString();
@@ -85,6 +84,15 @@ export async function setReviewStatus(itemId, reviewStatus) {
     const uid = userRes?.data?.user?.id;
     if (uid) patch.reviewed_by = uid;
   }
+  return patch;
+}
+
+export async function setReviewStatus(itemId, reviewStatus, payload = undefined) {
+  if (!supabase) throw new Error("Supabase not configured");
+  const patch = await reviewerPatch(reviewStatus);
+  // A status change may carry the reviewer's chosen wording (payload with the
+  // pick applied and promptOptions stripped) so choice + approval are atomic.
+  if (payload !== undefined) patch.payload = payload;
   const { data, error } = await supabase
     .from("item_bank")
     .update(patch)
@@ -97,26 +105,39 @@ export async function setReviewStatus(itemId, reviewStatus) {
 }
 
 /**
- * Bulk-approve a set of items by id. Returns the updated rows.
+ * Bulk status change. `entries` is [{ itemId, payload? }]: entries carrying a
+ * payload (the reviewer's chosen wording) update per-row; the rest go in one
+ * batched update. Returns the updated rows.
  */
-export async function bulkSetReviewStatus(itemIds, reviewStatus) {
+export async function bulkSetReviewStatus(entries, reviewStatus) {
   if (!supabase) throw new Error("Supabase not configured");
-  if (!Array.isArray(itemIds) || itemIds.length === 0) return [];
-  const patch = { review_status: reviewStatus };
-  if (reviewStatus === "approved" || reviewStatus === "reviewed") {
-    patch.reviewed_at = new Date().toISOString();
-    const userRes = await supabase.auth.getUser().catch(() => null);
-    const uid = userRes?.data?.user?.id;
-    if (uid) patch.reviewed_by = uid;
+  if (!Array.isArray(entries) || entries.length === 0) return [];
+  const normalized = entries.map((e) => (typeof e === "string" ? { itemId: e } : e));
+  const patch = await reviewerPatch(reviewStatus);
+
+  const updated = [];
+  const plainIds = normalized.filter((e) => e.payload === undefined).map((e) => e.itemId);
+  for (const entry of normalized.filter((e) => e.payload !== undefined)) {
+    const { data, error } = await supabase
+      .from("item_bank")
+      .update({ ...patch, payload: entry.payload })
+      .eq("item_id", entry.itemId)
+      .select(ADMIN_SELECT_FIELDS)
+      .single();
+    if (error) throw error;
+    updated.push(rowToItem(data));
   }
-  const { data, error } = await supabase
-    .from("item_bank")
-    .update(patch)
-    .in("item_id", itemIds)
-    .select(ADMIN_SELECT_FIELDS);
-  if (error) throw error;
+  if (plainIds.length > 0) {
+    const { data, error } = await supabase
+      .from("item_bank")
+      .update(patch)
+      .in("item_id", plainIds)
+      .select(ADMIN_SELECT_FIELDS);
+    if (error) throw error;
+    updated.push(...(data || []).map(rowToItem));
+  }
   refreshBankFromCloud({ force: true });
-  return (data || []).map(rowToItem);
+  return updated;
 }
 
 /**

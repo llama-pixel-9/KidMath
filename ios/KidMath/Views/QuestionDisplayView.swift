@@ -17,7 +17,12 @@ struct QuestionDisplayView: View {
     private var promptText: String? { display["promptText"] as? String }
 
     var body: some View {
-        if let emoji = display["emoji"] as? String {
+        if display["bars"] != nil && question["answerType"] as? String != "barGraph" {
+            // A chart the question asks about, answered through another widget
+            // (choice, multiSelect). When the answer widget IS the graph, it
+            // draws its own chart.
+            barChartQuestion
+        } else if let emoji = display["emoji"] as? String {
             emojiCount(emoji: emoji, count: (display["count"] as? NSNumber)?.intValue ?? 0)
         } else if let sequence = display["sequence"] as? [Any] {
             sequenceDisplay(sequence)
@@ -37,6 +42,20 @@ struct QuestionDisplayView: View {
     /// Web heuristic: six or more letters means a verbal prompt.
     static func isVerbalPrompt(_ text: String) -> Bool {
         text.filter { $0.isLetter }.count >= 6
+    }
+
+    // MARK: - 0. Bar chart question (chart above the prompt)
+
+    private var barChartQuestion: some View {
+        VStack(spacing: 12) {
+            BarChartView(display: display)
+            if let prompt = promptText {
+                Text(prompt)
+                    .font(.system(size: 24, weight: .heavy, design: .rounded))
+                    .foregroundStyle(theme.textPrimary)
+                    .multilineTextAlignment(.center)
+            }
+        }
     }
 
     // MARK: - 1. Emoji count

@@ -144,6 +144,31 @@ const VARIETIES = [
     },
   },
   {
+    id: "buildAmountTray",
+    bands: [1, 2],
+    family: PROCEDURAL,
+    subskills: ["countCoins"],
+    build(level) {
+      // The child taps coins to compose the target. The tray holds the exact
+      // coins for the amount plus a couple of extras, so any subset that
+      // reaches the target counts — checkAnswer compares totals, not coins.
+      const { coins } = randomTray(level);
+      const needed = coins.slice(0, level <= 3 ? 5 : 7);
+      const target = trayTotal(needed);
+      const extras = [pick(COIN_NAMES), pick(COIN_NAMES)];
+      return {
+        answer: target,
+        answerType: "coinTray",
+        display: { coins: shuffleArray([...needed, ...extras]), coinMode: "build" },
+        promptText: `Tap coins to make ${target}c.`,
+        representation: "visual",
+        cognitiveDemand: "DOK2",
+        misconceptionTags: ["coinValueSlip", "countCoinsNotValue"],
+        distractorContext: { a: target },
+      };
+    },
+  },
+  {
     id: "wouldYouRatherCoins",
     bands: [1, 2],
     family: CONCEPTUAL,

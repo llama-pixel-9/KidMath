@@ -111,8 +111,9 @@ const VARIETIES = [
         answer: target.label,
         answerType: "choice",
         choices: shuffleArray(bars.map((b) => b.label)),
-        promptText: `${bars.map((b) => `${b.label} ${b.value}`).join(", ")}. Which one was chosen the ${wantMost ? "most" : "fewest"}?`,
-        representation: "symbolic",
+        display: { type: "barGraph", bars },
+        promptText: `Which one was chosen the ${wantMost ? "most" : "fewest"}?`,
+        representation: "barGraph",
         cognitiveDemand: "DOK1",
         misconceptionTags: ["compareDirection"],
       };
@@ -366,10 +367,12 @@ const VARIETIES = [
         answer,
         answerType: "multiSelect",
         display: {
+          type: "barGraph",
+          bars,
           options: shown.map((c) => c.text),
         },
-        promptText: `${bars.map((b) => `${b.label} ${b.value}`).join(", ")}. Select every true statement.`,
-        representation: "symbolic",
+        promptText: "Select every true statement.",
+        representation: "barGraph",
         cognitiveDemand: "DOK3",
         misconceptionTags: ["compareDirection", "comparedInsteadOfTotalled"],
       };

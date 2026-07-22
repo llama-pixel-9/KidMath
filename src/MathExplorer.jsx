@@ -69,6 +69,7 @@ import {
 } from "./userPreferences";
 import ConfettiBurst from "./components/ConfettiBurst.jsx";
 import { getWidget } from "./components/widgetRegistry.js";
+import BarChart from "./components/BarChart.jsx";
 
 const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork, BarChart3, CircleDot, Sigma, Ruler, Coins, Spline, Scale, Clock, ChartColumn, Triangle, Shapes };
 
@@ -585,6 +586,26 @@ function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
   // the vertical treatment below for double-digit add/sub.
   const promptText = q.display?.promptText;
   const hasVerbalPrompt = promptText && isVerbalPrompt(promptText);
+
+  // A chart the question asks about, answered through another widget (choice,
+  // multiSelect). When the answer widget IS the graph, it draws its own chart.
+  if (q.display?.bars && q.answerType !== "barGraph") {
+    return (
+      <div className="text-center space-y-3">
+        <BarChart bars={q.display.bars} theme={theme} />
+        {promptText && (
+          <p className={`text-2xl sm:text-3xl font-extrabold ${theme.textPrimary} leading-snug`}>
+            {promptText}
+          </p>
+        )}
+        {showAnswer && (
+          <div className="mt-2 text-3xl sm:text-4xl font-extrabold">
+            <AnswerSlot feedback={feedback} revealAnswer={revealAnswer} />
+          </div>
+        )}
+      </div>
+    );
+  }
 
   if (hasVerbalPrompt) {
     const promptLines = promptText

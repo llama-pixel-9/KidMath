@@ -167,6 +167,18 @@ const CHECKERS = {
   countCoinsVisual(q) {
     return q.display.coins.reduce((s, c) => s + COIN_CENTS[c], 0);
   },
+  buildAmountTray(q) {
+    const m = q.display.promptText.match(/make (\d+)c/);
+    if (!m) return undefined;
+    const target = Number(m[1]);
+    // The tray must actually contain a subset of coins reaching the target.
+    const reachable = q.display.coins.reduce(
+      (sums, c) => new Set([...sums, ...[...sums].map((s) => s + COIN_CENTS[c])]),
+      new Set([0])
+    );
+    expect(reachable.has(target), `no subset of tray makes ${target}c`).toBe(true);
+    return target;
+  },
   countCoinsText(q) {
     let total = 0;
     for (const m of q.display.promptText.matchAll(/(\d+) (pennies|penny|nickels?|dimes?|quarters?)/g)) {
@@ -434,6 +446,12 @@ const CHECKERS = {
     const m = q.display.promptText.match(/How many (\w+)\?/);
     if (!m) return undefined;
     return q.display.bars.find((b) => b.label === m[1]).value;
+  },
+  mostLeastIdentify(q) {
+    const wantMost = /most\?/.test(q.display.promptText);
+    return q.display.bars.reduce((best, b) =>
+      wantMost ? (b.value > best.value ? b : best) : b.value < best.value ? b : best
+    ).label;
   },
   compareBarsAny(q) {
     const m = q.display.promptText.match(/How many more (\w+) than (\w+)\?/);

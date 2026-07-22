@@ -1,4 +1,5 @@
 import { useState } from "react";
+import BarChart from "./BarChart.jsx";
 import ConfettiBurst from "./ConfettiBurst.jsx";
 import FigureDigitPad from "./FigureDigitPad.jsx";
 
@@ -7,21 +8,11 @@ import FigureDigitPad from "./FigureDigitPad.jsx";
 export default function DataGraph({ onSubmit, feedback, theme, lowMotionMode, lowEndDevice, bars }) {
   const [entry, setEntry] = useState("");
   const locked = feedback === "correct" || feedback === "wrong";
-  const max = Math.max(1, ...(bars || []).map((b) => b.value));
   const tone = feedback === "correct" ? "text-green-600" : feedback === "wrong" ? "text-red-500" : theme.textPrimary;
   return (
     <section className="w-full max-w-sm flex flex-col items-center gap-3" aria-label="Bar graph">
-      <div className="relative w-full flex items-end justify-center gap-3 h-40 px-2">
-        {(bars || []).map((b) => (
-          <div key={b.label} className="flex flex-col items-center justify-end gap-1 flex-1">
-            <span className={`text-xs font-bold ${theme.textSecondary}`}>{b.value}</span>
-            <div
-              className="w-full max-w-[40px] rounded-t-md bg-sky-400"
-              style={{ height: `${(b.value / max) * 110 + 6}px` }}
-            />
-            <span className={`text-[10px] font-bold ${theme.textSecondary} text-center`}>{b.label}</span>
-          </div>
-        ))}
+      <div className="relative w-full">
+        <BarChart bars={bars} theme={theme} />
         {feedback === "correct" && !lowMotionMode && (
           <ConfettiBurst intensity={lowEndDevice ? "light" : "normal"} />
         )}

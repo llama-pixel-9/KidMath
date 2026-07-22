@@ -289,13 +289,12 @@ struct AngleFigureWidget: View {
 
 // MARK: - Bar graph reader (read a value off a scaled chart)
 
-struct DataGraphWidget: View {
+/// The scaled bar chart shared by DataGraphWidget and the question card
+/// (mirrors the web's BarChart.jsx). Question-card use: modes like
+/// mostLeastIdentify ask about a chart but answer through choice buttons.
+struct BarChartView: View {
     @Environment(\.theme) private var theme
     let display: [String: Any]
-    let disabled: Bool
-    let submit: (Any) -> Void
-
-    @State private var entry = ""
 
     private var bars: [(label: String, value: Double)] {
         (display["bars"] as? [[String: Any]] ?? []).map { bar in
@@ -304,26 +303,39 @@ struct DataGraphWidget: View {
     }
 
     var body: some View {
-        VStack(spacing: 12) {
-            HStack(alignment: .bottom, spacing: 12) {
-                let maxValue = max(1, bars.map(\.value).max() ?? 1)
-                ForEach(Array(bars.enumerated()), id: \.offset) { _, bar in
-                    VStack(spacing: 4) {
-                        Text(AnswerFormatting.text(bar.value as NSNumber))
-                            .font(.caption.weight(.bold))
-                            .foregroundStyle(theme.textSecondary)
-                        RoundedRectangle(cornerRadius: 5)
-                            .fill(Color(red: 0.220, green: 0.741, blue: 0.973)) // sky-400
-                            .frame(width: 40, height: bar.value / maxValue * 110 + 6)
-                        Text(bar.label)
-                            .font(.system(size: 10, weight: .bold))
-                            .foregroundStyle(theme.textSecondary)
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.6)
-                    }
+        HStack(alignment: .bottom, spacing: 12) {
+            let maxValue = max(1, bars.map(\.value).max() ?? 1)
+            ForEach(Array(bars.enumerated()), id: \.offset) { _, bar in
+                VStack(spacing: 4) {
+                    Text(AnswerFormatting.text(bar.value as NSNumber))
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(theme.textSecondary)
+                    RoundedRectangle(cornerRadius: 5)
+                        .fill(Color(red: 0.220, green: 0.741, blue: 0.973)) // sky-400
+                        .frame(width: 40, height: bar.value / maxValue * 110 + 6)
+                    Text(bar.label)
+                        .font(.system(size: 10, weight: .bold))
+                        .foregroundStyle(theme.textSecondary)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.6)
                 }
             }
-            .frame(height: 170, alignment: .bottom)
+        }
+        .frame(height: 170, alignment: .bottom)
+    }
+}
+
+struct DataGraphWidget: View {
+    @Environment(\.theme) private var theme
+    let display: [String: Any]
+    let disabled: Bool
+    let submit: (Any) -> Void
+
+    @State private var entry = ""
+
+    var body: some View {
+        VStack(spacing: 12) {
+            BarChartView(display: display)
 
             EntryReadout(entry: entry)
             DigitPadView(entry: $entry) {

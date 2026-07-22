@@ -52,7 +52,20 @@ Use the closest matching `structureType` when authoring an item:
 ## Language and Style Rules
 
 - Maximum prompt length: **220 characters**.
-- One sentence is preferred; at most two short sentences.
+- 2-4 short sentences, each easy to picture; every sentence one step of the story.
+- **Anchor on a person first, not the objects**: "Carlos started with some
+  trading cards", never "Some trading cards were in Carlos's deck". Object-first
+  openers force passive voice and are hard for a child to picture.
+- **Chronological order**: starting amount → what happened → final total →
+  question. Never narrate out of order.
+- **One consistent tense** throughout; no jumping between "swam", "joined",
+  and "are".
+- **Simple concrete verbs** a young child knows: "added", "got", "gave away",
+  "bloomed" — not "joined", "arrived", "appeared".
+- **Explicit time anchor in the question**: "at the start", "at first",
+  "to begin with" — not a bare "before".
+  (These five rules live in code as `scripts/itemGen/structureRules.js`
+  `NARRATIVE_RULES`, fed to every LLM authoring pass.)
 - Use one clear question target. Avoid multiple questions in one item.
 - Use concrete nouns (apples, baskets, books, students). Avoid abstract scenarios.
 - Use proper names sparingly (Sam, Mina, Luca, Nia, Theo, Ava). Vary across items.

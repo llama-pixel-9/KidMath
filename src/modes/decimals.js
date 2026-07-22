@@ -175,8 +175,13 @@ export const DECIMAL_VARIETIES = [
       const den = band === 3 && Math.random() < 0.5 ? 100 : 10;
       const num = randInt(1, den - 1);
       return {
-        answer: { num, den },
-        answerType: "fraction",
+        answer: `${num}/${den}`,
+        answerType: "choice",
+        choices: optionSet(`${num}/${den}`, [
+          `${num}/${den === 10 ? 100 : 10}`, // decimal point drift
+          `${num * 10}/${den}`, // drift the other way
+          `${den}/${num}`, // inverted
+        ]),
         prompt: `Write ${dec2(num / den)} as a fraction with denominator ${den}.`,
       };
     },

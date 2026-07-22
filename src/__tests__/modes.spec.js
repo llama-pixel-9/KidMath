@@ -239,7 +239,10 @@ describe("mode generation coverage", () => {
         }
       }
     }
-    expect(seenTypes.has("fraction")).toBe(true);
+    // Product call (2026-07): naming/reading/simplifying a fraction answers by
+    // multiple choice, not by typing numerator and denominator.
+    expect(seenTypes.has("fraction")).toBe(false);
+    expect(seenTypes.has("choice")).toBe(true);
     expect(seenTypes.has("symbolSelect")).toBe(true);
     expect(seenTypes.has("fractionSet")).toBe(true);
     expect(seenTypes.has("numberLine")).toBe(true);
@@ -256,7 +259,6 @@ describe("mode generation coverage", () => {
           "decimal",
           "symbolSelect",
           "numberLine",
-          "fraction",
           "multiSelect",
           "choice",
         ]).toContain(q.answerType);

@@ -3,7 +3,16 @@ import { CheckCircle2, XCircle, RotateCcw, AlertTriangle, ShieldCheck } from "lu
 import { bulkSetReviewStatus, setReviewStatus } from "./itemBankAdminApi";
 import { runChecksOnAdminItem } from "../itemBank/qc/checks.js";
 import { formatAnswer } from "./reviewFormat.js";
-import { choiceList, payloadWithChoice, itemWithChoice } from "./reviewChoice.js";
+import { choiceList, payloadWithChoice, itemWithChoice, promptOptionsOf } from "./reviewChoice.js";
+
+// The queue reviews two kinds of item: unapproved drafts promoted to
+// `reviewed`, and already-approved items carrying pending wording options from
+// the reword pipeline (reword-in-place). For the latter, "Approve" simply
+// applies the chosen wording — the item never leaves circulation.
+function needsReview(item) {
+  if (item.reviewStatus === "reviewed") return true;
+  return item.reviewStatus === "approved" && promptOptionsOf(item).length > 0;
+}
 
 // Review queue tab: shows items with reviewStatus=reviewed sorted by the cell
 // gap they would fill (empty cells first, then thin cells). Supports single
@@ -99,7 +108,7 @@ export default function ReviewQueue({
 
   const queue = useMemo(() => {
     const filtered = (items || []).filter((it) => {
-      if (it.reviewStatus !== "reviewed") return false;
+      if (!needsReview(it)) return false;
       if (filterFamily && it.itemFamily !== filterFamily) return false;
       if (filterBand && !itemBands(it).includes(filterBand)) return false;
       if (filterQc) {
@@ -125,7 +134,7 @@ export default function ReviewQueue({
     let fail = 0;
     let warn = 0;
     for (const it of items || []) {
-      if (it.reviewStatus !== "reviewed") continue;
+      if (!needsReview(it)) continue;
       const qc = qcById.get(it.itemId);
       if (qc?.pass === false) fail += 1;
       else if (qc?.findings.length) warn += 1;

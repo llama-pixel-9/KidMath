@@ -14,8 +14,17 @@
  *   node --import ./scripts/lib/registerResolve.js scripts/itemGen/rewordItems.js            dry run
  *   ... --write               store options on the items
  *   ... --generator NAME      target source.generator (default authorStructures)
+ *   ... --family FAMILY       target an item_family across the whole bank (e.g.
+ *                             application); drops the generator filter and
+ *                             includes approved items — this is the legacy-bank
+ *                             reword-in-place mode
+ *   ... --mode MODE           restrict to one mode_id
  *   ... --only STRUCTURE      restrict to one structureType
+ *   ... --limit N             cap the number of items this run
  *   ... --include-approved    also reword approved items (default: draft+reviewed only)
+ *
+ * Items that already carry promptOptions are skipped, so phased runs are
+ * resumable and re-running never clobbers pending reviewer choices.
  */
 
 import { spawn } from "node:child_process";
@@ -28,10 +37,17 @@ const flag = (n, d = null) => (args.includes(`--${n}`) ? args[args.indexOf(`--${
 const has = (n) => args.includes(`--${n}`);
 
 const write = has("write");
-const includeApproved = has("include-approved");
-const generator = flag("generator", "authorStructures");
+const family = flag("family");
+const modeFilter = flag("mode");
+const includeApproved = has("include-approved") || Boolean(family);
+const generator = family ? flag("generator") : flag("generator", "authorStructures");
 const onlyStructure = flag("only");
+const limit = Number(flag("limit", "0"));
 const model = process.env.KIDMATH_ITEMGEN_MODEL || "haiku";
+
+// One claude call rewords at most this many items; legacy structure groups can
+// hold hundreds and an oversized prompt degrades every rewrite in it.
+const CHUNK = 12;
 
 const SUPABASE_URL = process.env.VITE_SUPABASE_URL || process.env.SUPABASE_URL;
 const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
@@ -51,9 +67,11 @@ async function fetchRows() {
   for (let from = 0; ; from += PAGE) {
     const params = new URLSearchParams({
       select: "item_id,mode_id,structure_type,level_min,level_max,review_status,payload,source",
-      "source->>generator": `eq.${generator}`,
       order: "item_id.asc",
     });
+    if (generator) params.set("source->>generator", `eq.${generator}`);
+    if (family) params.set("item_family", `eq.${family}`);
+    if (modeFilter) params.set("mode_id", `eq.${modeFilter}`);
     const resp = await fetch(`${SUPABASE_URL}/rest/v1/item_bank?${params}`, {
       headers: { ...HEADERS, Range: `${from}-${from + PAGE - 1}` },
     });
@@ -149,30 +167,39 @@ async function patchOptions(itemId, payload, options) {
 }
 
 async function main() {
-  const rows = (await fetchRows()).filter((r) => {
+  let rows = (await fetchRows()).filter((r) => {
     if (!includeApproved && r.review_status === "approved") return false;
     if (r.review_status === "retired") return false;
     if (onlyStructure && r.structure_type !== onlyStructure) return false;
+    if (Array.isArray(r.payload?.display?.promptOptions)) return false; // pending choices — don't clobber
     return typeof r.payload?.display?.promptText === "string";
   });
+  if (limit > 0) rows = rows.slice(0, limit);
 
   const byStructure = new Map();
   for (const r of rows) {
-    if (!byStructure.has(r.structure_type)) byStructure.set(r.structure_type, []);
-    byStructure.get(r.structure_type).push(r);
+    const key = `${r.mode_id}::${r.structure_type || "none"}`;
+    if (!byStructure.has(key)) byStructure.set(key, []);
+    byStructure.get(key).push(r);
   }
-  console.log(`${rows.length} item(s) across ${byStructure.size} structure(s), model "${model}"\n`);
+  // Split oversized groups so each claude call rewords at most CHUNK items.
+  const batches = [];
+  for (const [key, items] of byStructure) {
+    for (let i = 0; i < items.length; i += CHUNK) batches.push([key, items.slice(i, i + CHUNK)]);
+  }
+  console.log(`${rows.length} item(s) in ${batches.length} batch(es), model "${model}"\n`);
 
   let withOptions = 0;
   let noOptions = 0;
-  for (const [structureId, items] of byStructure) {
+  for (const [key, items] of batches) {
+    const structureId = key.split("::")[1];
     const text = await runClaude(buildPrompt(structureId, items));
     const match = text.match(/\{[\s\S]*\}/);
     let parsed = {};
     try {
       parsed = match ? JSON.parse(match[0]) : {};
     } catch {
-      console.log(`${structureId.padEnd(26)} JSON parse failed — skipped`);
+      console.log(`${key.padEnd(40)} JSON parse failed — skipped`);
       continue;
     }
 
@@ -198,7 +225,7 @@ async function main() {
       options.forEach((o, i) => console.log(`    #${i + 1}:   ${o}`));
       if (write) await patchOptions(row.item_id, row.payload, options);
     }
-    console.log(`${structureId.padEnd(26)} done`);
+    console.log(`${key.padEnd(40)} done (${items.length})`);
   }
 
   console.log(

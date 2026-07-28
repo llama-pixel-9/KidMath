@@ -49,8 +49,12 @@ fetch "https://mathematicalmusings.org/wp-content/uploads/2011/05/ccss_progressi
 ITEM="https://archive.org/download/engageny-mathematics"
 engageny() {
   local zip="$1" g="$2" m="$3"
-  fetch "$ITEM/${zip// /%20}.zip/Module%20$m%2Fmath-$g-m$m-full-module.pdf" \
-    "$DEST/engageny/math-$g-m$m-full-module.pdf" || fails=$((fails+1))
+  local out="$DEST/engageny/math-$g-m$m-full-module.pdf"
+  # A few zips name the file Math-GK-M2-Full-Module.pdf instead of lowercase.
+  local G=$(echo "$g" | tr '[:lower:]' '[:upper:]')
+  fetch "$ITEM/${zip// /%20}.zip/Module%20$m%2Fmath-$g-m$m-full-module.pdf" "$out" ||
+    fetch "$ITEM/${zip// /%20}.zip/Module%20$m%2FMath-$G-M$m-Full-Module.pdf" "$out" ||
+    fails=$((fails+1))
 }
 
 for m in 1 2 3 4 5 6; do engageny "Kindergarten Module $m" gk "$m"; done

@@ -375,6 +375,7 @@ export function checkAnswer(question, submitted) {
     case "numberLine":
     case "shapeFigure":
     case "coinTray":
+    case "tenFrame":
       return numericEquals(submitted, question.answer);
     // Multi-answer items: every required value must be selected and nothing
     // extra. `answer` may be a list of values, or a list of acceptable lists

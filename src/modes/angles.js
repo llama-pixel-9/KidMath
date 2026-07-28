@@ -123,10 +123,185 @@ const VARIETIES = [
         answer: item.answer,
         answerType: "choice",
         choices: shuffleArray([item.answer, ...item.others]),
-        promptText: "Which one has a square corner (a right angle)?",
+        promptText: pick([
+          "Which one has a square corner (a right angle)?",
+          "A right angle looks like a square corner. Which of these shows one?",
+        ]),
         representation: "verbalContext",
         cognitiveDemand: "DOK2",
         misconceptionTags: ["rightAngleOnlyUpright"],
+      };
+    },
+  },
+  {
+    id: "countSquareCorners",
+    bands: [1],
+    family: CONCEPTUAL,
+    subskills: ["classifyAngle"],
+    build() {
+      const figure = pick(RIGHT_ANGLES);
+      return {
+        answer: figure.count,
+        answerType: "shapeFigure",
+        // Band 1 keeps the figure upright; the tilted version lives in band 2
+        // as `identifyRightAngles`, where the rotation probes the misconception.
+        display: { shape: figure.shape, shapeMode: "count", rotate: 0 },
+        promptText: "Look at this shape. Count its square corners. How many square corners does the shape have?",
+        representation: "visual",
+        cognitiveDemand: "DOK1",
+        misconceptionTags: ["rightAngleOnlyUpright", "sideVertexSwap"],
+      };
+    },
+  },
+  {
+    id: "pickShapeByAngle",
+    bands: [1],
+    family: CONCEPTUAL,
+    subskills: ["classifyAngle"],
+    build() {
+      // Any triangle has an acute angle; squares/rectangles have only right
+      // angles; regular pentagons and hexagons and the kit's rhombus have none
+      // of either kind asked for, so each distractor set is safe.
+      const wantAcute = Math.random() < 0.5;
+      const correct = wantAcute
+        ? pick(["triangleEquilateral", "triangleRight"])
+        : pick(["square", "rectangle"]);
+      const wrong = shuffleArray(
+        wantAcute ? ["square", "rectangle", "pentagon", "hexagon"] : ["triangleEquilateral", "pentagon", "hexagon", "rhombus"]
+      ).slice(0, 3);
+      const opts = shuffleArray([
+        { shape: correct, correct: true },
+        ...wrong.map((s) => ({ shape: s, correct: false })),
+      ]).map((o, i) => ({ ...o, value: i }));
+      return {
+        answer: opts.findIndex((o) => o.correct),
+        answerType: "shapeFigure",
+        display: {
+          shapeMode: "select",
+          options: opts.map(({ shape, value }) => ({ shape, rotate: 0, value })),
+        },
+        promptText: wantAcute
+          ? "One of these shapes has a corner smaller than a square corner. Tap that shape."
+          : "One of these shapes has four square corners. Tap that shape.",
+        representation: "visual",
+        cognitiveDemand: "DOK2",
+        misconceptionTags: ["rightAngleOnlyUpright", "rayLengthIsSize"],
+      };
+    },
+  },
+  {
+    id: "turnAngleKind",
+    bands: [1, 2],
+    family: CONCEPTUAL,
+    subskills: ["classifyAngle"],
+    build() {
+      const actor = pick(ACTORS);
+      const turn = pick([
+        { words: "a quarter turn", kind: "right" },
+        { words: "a half turn", kind: "straight" },
+        { words: "less than a quarter turn", kind: "acute" },
+        { words: "more than a quarter turn but less than a half turn", kind: "obtuse" },
+      ]);
+      return {
+        answer: turn.kind,
+        answerType: "choice",
+        choices: shuffleArray([...CLASSES]),
+        promptText: `${actor} turns ${turn.words}. What kind of angle does the turn make?`,
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptionTags: ["wrongFactor", "rightAngleOnlyUpright"],
+      };
+    },
+  },
+  {
+    id: "orderAngleKinds",
+    bands: [1],
+    family: CONCEPTUAL,
+    subskills: ["classifyAngle"],
+    build() {
+      const smallest = Math.random() < 0.5;
+      return {
+        answer: smallest ? "acute" : "obtuse",
+        answerType: "choice",
+        choices: shuffleArray(["acute", "right", "obtuse"]),
+        promptText: smallest
+          ? "Picture an acute angle, a right angle and an obtuse angle. Which kind of angle opens the least?"
+          : "Picture an acute angle, a right angle and an obtuse angle. Which kind of angle opens the most?",
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptionTags: ["rayLengthIsSize"],
+      };
+    },
+  },
+  {
+    id: "addTurns",
+    bands: [1],
+    family: APPLICATION,
+    subskills: ["angleSum"],
+    build() {
+      const actor = pick(ACTORS);
+      const combo = pick([
+        { text: "a quarter turn and then another quarter turn", answer: "a half turn" },
+        { text: "a half turn and then another half turn", answer: "a full turn" },
+        { text: "a quarter turn and then a half turn", answer: "three quarters of a turn" },
+      ]);
+      return {
+        answer: combo.answer,
+        answerType: "choice",
+        choices: shuffleArray(TURNS.map((t) => t.words)),
+        promptText: `${actor} makes ${combo.text}. Which turn is that in all?`,
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptionTags: ["sumIsAlways180", "wrongFactor"],
+      };
+    },
+  },
+  {
+    id: "biggerThanRightYesNo",
+    bands: [1],
+    family: APPLICATION,
+    subskills: ["classifyAngle"],
+    build() {
+      const item = pick([
+        { text: "A slice of pie comes to a thin point. Is the angle at the point smaller than a right angle?", answer: "Yes" },
+        { text: "A sheet of paper has a square corner. Is that corner bigger than a right angle?", answer: "No" },
+        { text: "A book lies open flat, so its covers make a straight line. Is that angle bigger than a right angle?", answer: "Yes" },
+        { text: "A door stands open just a crack. Is the angle at the hinge bigger than a right angle?", answer: "No" },
+      ]);
+      return {
+        answer: item.answer,
+        answerType: "choice",
+        choices: ["Yes", "No"],
+        promptText: item.text,
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptionTags: ["rightAngleOnlyUpright", "rayLengthIsSize"],
+      };
+    },
+  },
+  {
+    id: "clockAngleKind",
+    bands: [1, 2],
+    family: APPLICATION,
+    subskills: ["classifyAngle"],
+    build() {
+      const face = pick([
+        { hour: 1, kind: "acute" },
+        { hour: 2, kind: "acute" },
+        { hour: 3, kind: "right" },
+        { hour: 4, kind: "obtuse" },
+        { hour: 5, kind: "obtuse" },
+        { hour: 6, kind: "straight" },
+        { hour: 9, kind: "right" },
+      ]);
+      return {
+        answer: face.kind,
+        answerType: "choice",
+        choices: shuffleArray([...CLASSES]),
+        promptText: `A clock shows ${face.hour} o'clock. What kind of angle do the two hands make?`,
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptionTags: ["rightAngleOnlyUpright", "reflexConfusion"],
       };
     },
   },

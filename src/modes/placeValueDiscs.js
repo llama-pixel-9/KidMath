@@ -46,6 +46,9 @@ const valueOf = (cols) => cols.reduce((sum, c) => sum + c.place * c.count, 0);
 
 const PLACE_NAMES = { 1000: "thousands", 100: "hundreds", 10: "tens", 1: "ones" };
 
+/** "3 tens discs" / "1 ones disc" — the disc noun agrees with the count. */
+const discPhrase = (count, placeName) => `${count} ${placeName} ${count === 1 ? "disc" : "discs"}`;
+
 const VARIETIES = [
   // 1 — read the chart.
   {
@@ -343,6 +346,205 @@ const VARIETIES = [
         representation: "verbalContext",
         cognitiveDemand: "DOK3",
         misconceptions: ["divisionReversed", "regroupMiss"],
+      };
+    },
+  },
+
+  // 13 — a tens-only mat: reading it IS counting by 10s.
+  {
+    id: "countTensDiscs",
+    bands: [1, 2],
+    subskill: "readNumber",
+    family: ITEM_FAMILIES.PROCEDURAL,
+    build: (level) => {
+      const tens = randInt(1, bandOf(level) === 1 ? 6 : 9);
+      const cols = [
+        { place: 10, count: tens },
+        { place: 1, count: 0 },
+      ];
+      return {
+        answer: tens * 10,
+        answerType: "placeValueDiscs",
+        display: {
+          type: "discs",
+          cols,
+          promptText: "Count the tens discs by 10s. What number do the discs show?",
+        },
+        representation: "placeValueBlocks",
+        cognitiveDemand: "DOK1",
+        misconceptions: ["placeValueSlip", "discCountAsDigit"],
+      };
+    },
+  },
+
+  // 14 — a described mat, chosen from numbers: the classic disc-reading slip
+  // (digit swap, disc-count-as-digit) sits right in the options.
+  {
+    id: "whichNumberShown",
+    bands: [1, 2],
+    subskill: "readNumber",
+    family: ITEM_FAMILIES.CONCEPTUAL,
+    build: () => {
+      const tens = randInt(1, 5);
+      let ones = randInt(1, 9);
+      while (ones === tens) ones = randInt(1, 9);
+      const number = tens * 10 + ones;
+      const options = [...new Set([number, ones * 10 + tens, tens + ones, number + 10])];
+      return {
+        answer: number,
+        choices: shuffleArray(options),
+        display: {
+          promptText: `A mat shows ${discPhrase(tens, "tens")} and ${discPhrase(ones, "ones")}. Which number do the discs make?`,
+        },
+        representation: "symbolic",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["placeValueSlip", "discCountAsDigit"],
+      };
+    },
+  },
+
+  // 15 — build the number the other way round: discs are named, the child
+  // types the value they make.
+  {
+    id: "makeNumberFromDiscs",
+    bands: [1, 2],
+    subskill: "readNumber",
+    family: ITEM_FAMILIES.PROCEDURAL,
+    build: (level) => {
+      const tens = randInt(1, bandOf(level) === 1 ? 5 : 9);
+      const ones = randInt(1, 9);
+      const actor = pick(NAMES);
+      return {
+        answer: tens * 10 + ones,
+        answerType: "numberPad",
+        display: {
+          promptText: `${actor} puts ${discPhrase(tens, "tens")} and ${discPhrase(ones, "ones")} on a mat. What number does ${actor} make?`,
+        },
+        representation: "verbalContext",
+        cognitiveDemand: "DOK1",
+        misconceptions: ["placeValueSlip", "discCountAsDigit"],
+      };
+    },
+  },
+
+  // 16 — one more disc: adding a single disc moves the number by its place.
+  // Counts stay at 8 or below so no trade is ever triggered.
+  {
+    id: "oneMoreDisc",
+    bands: [1, 2],
+    subskill: "discOperations",
+    family: ITEM_FAMILIES.PROCEDURAL,
+    build: () => {
+      const tens = randInt(1, 8);
+      const ones = randInt(1, 8);
+      const number = tens * 10 + ones;
+      const addTen = Math.random() < 0.5;
+      return {
+        answer: number + (addTen ? 10 : 1),
+        answerType: "numberPad",
+        display: {
+          promptText: `The mat shows ${number}. You add 1 more ${addTen ? "tens" : "ones"} disc. What number do the discs show now?`,
+        },
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["placeValueSlip", "discCountAsDigit"],
+      };
+    },
+  },
+
+  // 17 — one less disc: the mirror move, still trade-free.
+  {
+    id: "oneLessDisc",
+    bands: [1, 2],
+    subskill: "discOperations",
+    family: ITEM_FAMILIES.PROCEDURAL,
+    build: () => {
+      const tens = randInt(2, 9);
+      const ones = randInt(1, 9);
+      const takeTen = Math.random() < 0.5;
+      return {
+        answer: tens * 10 + ones - (takeTen ? 10 : 1),
+        answerType: "numberPad",
+        display: {
+          promptText: `The mat shows ${discPhrase(tens, "tens")} and ${discPhrase(ones, "ones")}. Take away 1 ${takeTen ? "tens" : "ones"} disc. What number is left on the mat?`,
+        },
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["placeValueSlip", "discCountAsDigit"],
+      };
+    },
+  },
+
+  // 18 — the ten-for-ones trade told verbally, entry sized: whole handfuls of
+  // ones become tens and nothing is left over.
+  {
+    id: "tradeTenOnesForTens",
+    bands: [1, 2],
+    subskill: "tradeRegroup",
+    family: ITEM_FAMILIES.CONCEPTUAL,
+    build: () => {
+      const groups = randInt(1, 3);
+      const actor = pick(NAMES);
+      return {
+        answer: groups,
+        answerType: "numberPad",
+        display: {
+          promptText: `${actor} has ${groups * 10} ones discs. ${actor} trades every 10 ones for 1 tens disc. How many tens discs does ${actor} get?`,
+        },
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["tradeWrongDirection", "regroupMiss"],
+      };
+    },
+  },
+
+  // 19 — compare two described mats; tens must beat a big pile of ones.
+  {
+    id: "compareTwoMats",
+    bands: [1, 2],
+    subskill: "readNumber",
+    family: ITEM_FAMILIES.CONCEPTUAL,
+    build: () => {
+      const t1 = randInt(1, 5);
+      const o1 = randInt(0, 9);
+      let t2 = randInt(1, 5);
+      let o2 = randInt(0, 9);
+      while (t2 * 10 + o2 === t1 * 10 + o1) {
+        t2 = randInt(1, 5);
+        o2 = randInt(0, 9);
+      }
+      return {
+        answer: t1 * 10 + o1 > t2 * 10 + o2 ? "Mat A" : "Mat B",
+        choices: ["Mat A", "Mat B"],
+        display: {
+          promptText: `Mat A shows ${discPhrase(t1, "tens")} and ${discPhrase(o1, "ones")}. Mat B shows ${discPhrase(t2, "tens")} and ${discPhrase(o2, "ones")}. Which mat shows the bigger number?`,
+        },
+        representation: "symbolic",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["placeValueSlip"],
+      };
+    },
+  },
+
+  // 20 — dropping tens discs one at a time is the disc form of counting by 10s.
+  {
+    id: "nextDiscCount",
+    bands: [1, 2],
+    subskill: "discOperations",
+    family: ITEM_FAMILIES.CONCEPTUAL,
+    build: () => {
+      const k = randInt(1, 6);
+      const actor = pick(NAMES);
+      const said = [k * 10, k * 10 + 10, k * 10 + 20];
+      return {
+        answer: k * 10 + 30,
+        answerType: "numberPad",
+        display: {
+          promptText: `${actor} drops tens discs onto the mat one at a time and counts: ${said.join(", ")}. What number does ${actor} say for the next disc?`,
+        },
+        representation: "verbalContext",
+        cognitiveDemand: "DOK1",
+        misconceptions: ["placeValueSlip", "discCountAsDigit"],
       };
     },
   },

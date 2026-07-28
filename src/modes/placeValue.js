@@ -173,6 +173,128 @@ const VARIETIES = [
     },
   },
 
+  // 3b — K.NBT.1 a teen number on two ten frames: a full frame IS a ten, so
+  // ten-and-some-more is seen before it is ever written.
+  {
+    id: "teenTenFrames",
+    bands: [1],
+    subskill: "tensOnes",
+    family: ITEM_FAMILIES.CONCEPTUAL,
+    build: () => {
+      const ones = randInt(1, 9);
+      const number = 10 + ones;
+      return {
+        a: number,
+        answer: number,
+        answerType: "tenFrame",
+        display: {
+          type: "teenTenFrames",
+          filled: number,
+          frames: 2,
+          frameMode: "count",
+          promptText: "A full frame makes one ten. What number do the frames show?",
+          number,
+          tens: 1,
+          ones,
+        },
+        representation: "tenFrame",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["onesAsTens"],
+      };
+    },
+  },
+
+  // 3c — K.NBT.1 the same decomposition asked symbolically: a teen number is
+  // one ten and some ones.
+  {
+    id: "teenTenAndOnes",
+    bands: [1, 2],
+    subskill: "tensOnes",
+    family: ITEM_FAMILIES.CONCEPTUAL,
+    build: () => {
+      const ones = randInt(1, 9);
+      const number = 10 + ones;
+      return {
+        a: number,
+        answer: ones,
+        answerType: "numberPad",
+        display: {
+          type: "teenTenAndOnes",
+          promptText: `${number} is one ten and some ones. How many ones does ${number} have?`,
+          number,
+          tens: 1,
+          ones,
+        },
+        representation: "decomposition",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["onesAsTens", "concatenation"],
+      };
+    },
+  },
+
+  // 3d — how many tens make a round number: unitising tens without any ones
+  // in the way.
+  {
+    id: "tensMakeNumber",
+    bands: [1, 2],
+    subskill: "tensOnes",
+    family: ITEM_FAMILIES.PROCEDURAL,
+    build: (level) => {
+      const cap = Math.max(2, Math.min(9, Math.floor(maxFor(level) / 10)));
+      const tens = randInt(1, cap);
+      const number = tens * 10;
+      return {
+        a: number,
+        answer: tens,
+        answerType: bandOf(level) === 1 ? undefined : "numberPad",
+        display: {
+          type: "tensMakeNumber",
+          promptText: `How many tens make ${number}?`,
+          number,
+          tens,
+          ones: 0,
+        },
+        representation: "decomposition",
+        cognitiveDemand: "DOK1",
+        misconceptions: ["digitNotValue", "onesAsTens"],
+      };
+    },
+  },
+
+  // 3e — what a digit MEANS, kept to the tens digit of a small number so it
+  // reaches band 1; `valueOfDigit` carries the harder any-digit form.
+  {
+    id: "digitMeaning",
+    bands: [1, 2],
+    subskill: "tensOnes",
+    family: ITEM_FAMILIES.CONCEPTUAL,
+    build: (level) => {
+      const tens = randInt(1, Math.min(9, Math.floor(maxFor(level) / 10)));
+      let ones = randInt(1, 9);
+      while (ones === tens) ones = randInt(1, 9);
+      const number = tens * 10 + ones;
+      const reversed = ones * 10 + tens;
+      return {
+        a: number,
+        answer: tens * 10,
+        // digit / value / whole number / reversal — the four readings a child
+        // actually produces. Distinctness is guaranteed: ones !== tens and
+        // ones !== 0, so no candidate can collide with another.
+        choices: shuffleArray([...new Set([tens * 10, tens, number, reversed])]),
+        display: {
+          type: "digitMeaning",
+          promptText: `In ${number}, what does the digit ${tens} stand for?`,
+          number,
+          tens,
+          ones,
+        },
+        representation: "decomposition",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["digitNotValue"],
+      };
+    },
+  },
+
   // 4 — 2.NBT.3 standard -> expanded. A `choice` because a free-text expanded
   // form is not worth the parser (spec reviewer note).
   {
@@ -213,14 +335,18 @@ const VARIETIES = [
     },
   },
 
-  // 5 — 2.NBT.3 expanded -> standard.
+  // 5 — 2.NBT.3 expanded -> standard. At band 1 this is "10 + 7 = ?", the
+  // teen-number composition itself.
   {
     id: "expandedToStandard",
-    bands: [2, 3],
+    bands: [1, 2, 3],
     subskill: "expandedForm",
     family: ITEM_FAMILIES.PROCEDURAL,
     build: (level) => {
-      const number = numberFor(level);
+      // A round number expands to a single term ("40 = ?"), which asks
+      // nothing; redraw until at least two parts exist.
+      let number = numberFor(level);
+      while (number % 10 === 0) number = numberFor(level);
       const { tens, ones } = digitsOf(number);
       return {
         a: number,
@@ -228,7 +354,9 @@ const VARIETIES = [
         answerType: "numberPad",
         display: {
           type: "expandedToStandard",
-          promptText: `${expandedForm(number)} = ?`,
+          // The leading words keep this prompt's signature apart from the
+          // bare "a = b" shape the reflexive format emits.
+          promptText: `Add the parts: ${expandedForm(number)} = ?`,
           number,
           tens,
           ones,
@@ -240,10 +368,11 @@ const VARIETIES = [
     },
   },
 
-  // 6 — 2.NBT.3 number name -> numeral.
+  // 6 — 2.NBT.3 number name -> numeral. Teen names ("seventeen") are exactly
+  // the K reading vocabulary, so the variety reaches band 1 as well.
   {
     id: "wordFormToStandard",
-    bands: [2, 3],
+    bands: [1, 2, 3],
     subskill: "expandedForm",
     family: ITEM_FAMILIES.PROCEDURAL,
     build: (level) => {
@@ -295,10 +424,11 @@ const VARIETIES = [
     },
   },
 
-  // 8 — 1.NBT.5 ten more / ten less, mentally.
+  // 8 — 1.NBT.5 ten more / ten less, mentally. maxFor keeps band 1 in the
+  // teens, so the K form is "10 more/less than 17".
   {
     id: "tenMoreTenLess",
-    bands: [2, 3],
+    bands: [1, 2, 3],
     subskill: "tensOnes",
     family: ITEM_FAMILIES.PROCEDURAL,
     build: (level) => {
@@ -616,7 +746,10 @@ export default {
       structureType: variety.id,
     });
 
-    return maybeApplyFormat(question, level, { actor: pick(NAMES), ...context }, SUPPORTED_FORMATS);
+    // Rate below the default 0.25: reflexive is this mode's ONLY format and
+    // every firing collapses to the same "a = b" prompt signature, so at the
+    // default rate the transform alone breaches the 25% variety ceiling.
+    return maybeApplyFormat(question, level, { actor: pick(NAMES), ...context }, SUPPORTED_FORMATS, 0.15);
   },
 
   generateChoices(answer, question) {

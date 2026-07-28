@@ -20,6 +20,15 @@ import { maybeApplyFormat } from "./formats";
 const NAMES = ["Sam", "Mina", "Luca", "Nia", "Theo", "Ava"];
 const SUBSKILLS = ["partWhole", "missingPart", "decompose"];
 
+// Adjective pairs + noun for the part-part-whole stories; the noun is restated
+// in the question, which the QC layer requires of every "How many" item.
+const STORY_SETS = [
+  ["red", "blue", "cups"],
+  ["big", "small", "shells"],
+  ["green", "yellow", "beads"],
+  ["long", "short", "ribbons"],
+];
+
 // `wholeUnknown` is the one variety carrying a true `a + b = answer`, which is
 // what makes the equality formats legitimate here.
 const SUPPORTED_FORMATS = [
@@ -84,6 +93,139 @@ const VARIETIES = [
         representation: "numberBond",
         cognitiveDemand: "DOK2",
         misconceptions: ["partWholeSwap", "wholeAsPart", "partEchoed"],
+      };
+    },
+  },
+
+  // 2b — the bond as a sentence with the FIRST slot blank. Same relation as
+  // `partUnknown`, but the unknown sits in a non-final position and there is
+  // no diagram to lean on.
+  {
+    id: "bondSentence",
+    bands: [1, 2],
+    subskill: "missingPart",
+    family: ITEM_FAMILIES.CONCEPTUAL,
+    build: (level) => {
+      const whole = bandOf(level) === 1 ? randInt(4, 10) : randInt(8, 20);
+      const part = randInt(1, whole - 1);
+      return {
+        answer: whole - part,
+        answerType: "numberPad",
+        display: {
+          promptText: `___ and ${part} make ${whole}. What is the missing number?`,
+          whole,
+          part,
+        },
+        representation: "symbolic",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["partWholeSwap", "partEchoed"],
+      };
+    },
+  },
+
+  // 2c — make ten on a ten frame: the filled cells are the known part, the
+  // empty cells are the unknown part, and ten-ness is visible instead of told.
+  {
+    id: "makeTenFrameBond",
+    bands: [1, 2],
+    subskill: "missingPart",
+    family: ITEM_FAMILIES.CONCEPTUAL,
+    build: () => {
+      const part = randInt(3, 9);
+      return {
+        answer: 10 - part,
+        answerType: "tenFrame",
+        display: {
+          filled: part,
+          frames: 1,
+          frameMode: "count",
+          promptText: "The frame shows one part of 10. How many more counters make 10?",
+          whole: 10,
+          part,
+        },
+        representation: "tenFrame",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["partEchoed", "countAllError"],
+      };
+    },
+  },
+
+  // 2d — doubles: the one bond family K children retrieve rather than count,
+  // which makes it the anchor for near-doubles later.
+  {
+    id: "doublesBond",
+    bands: [1],
+    subskill: "partWhole",
+    family: ITEM_FAMILIES.PROCEDURAL,
+    build: () => {
+      const n = randInt(1, 5);
+      return {
+        a: n,
+        b: n,
+        op: "+",
+        answer: n + n,
+        answerType: "numberPad",
+        display: { promptText: `What number do ${n} and ${n} make together?`, whole: n + n, part: n },
+        representation: "decomposition",
+        cognitiveDemand: "DOK1",
+        misconceptions: ["countAllError", "partEchoed"],
+      };
+    },
+  },
+
+  // 2e — part-part-whole story with the WHOLE unknown; `bondFromStory` keeps
+  // the part-unknown telling, so between them both story directions exist.
+  {
+    id: "storyWholeUnknown",
+    bands: [1, 2],
+    subskill: "partWhole",
+    family: ITEM_FAMILIES.APPLICATION,
+    build: (level) => {
+      const top = bandOf(level) === 1 ? 5 : 9;
+      const p1 = randInt(2, top);
+      const p2 = randInt(2, top);
+      const actor = pick(NAMES);
+      const [adj1, adj2, noun] = pick(STORY_SETS);
+      return {
+        answer: p1 + p2,
+        answerType: "numberPad",
+        display: {
+          promptText: `${actor} has ${p1} ${adj1} ${noun} and ${p2} ${adj2} ${noun}. How many ${noun} does ${actor} have in all?`,
+          whole: p1 + p2,
+          part: p1,
+        },
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["countAllError", "partEchoed"],
+      };
+    },
+  },
+
+  // 2f — recognise a bond among near-misses: the recognition-side counterpart
+  // of `oddOneOutBond` (which asks for the pair that does NOT bond).
+  {
+    id: "whichPairMakesWhole",
+    bands: [1, 2],
+    subskill: "decompose",
+    family: ITEM_FAMILIES.CONCEPTUAL,
+    build: (level) => {
+      const whole = bandOf(level) === 1 ? randInt(5, 10) : randInt(8, 16);
+      const p = randInt(1, whole - 1);
+      const correct = `${p} and ${whole - p}`;
+      const wrong = new Set();
+      while (wrong.size < 3) {
+        const x = randInt(1, whole);
+        const y = randInt(1, whole);
+        if (x + y === whole) continue; // a second correct pair would be unjudgeable
+        wrong.add(`${x} and ${y}`);
+      }
+      return {
+        answer: correct,
+        choices: shuffleArray([correct, ...wrong]),
+        display: { promptText: `Which pair of numbers makes ${whole}?`, whole, part: p },
+        representation: "symbolic",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["countAllError"],
       };
     },
   },
@@ -272,11 +414,12 @@ const VARIETIES = [
   // 10 — judge a claimed bond.
   {
     id: "trueFalseBond",
-    bands: [2, 3],
+    bands: [1, 2, 3],
     subskill: "decompose",
     family: ITEM_FAMILIES.CONCEPTUAL,
     build: (level) => {
-      const whole = bandOf(level) === 2 ? randInt(8, 20) : randInt(20, 60);
+      const band = bandOf(level);
+      const whole = band === 1 ? randInt(5, 10) : band === 2 ? randInt(8, 20) : randInt(20, 60);
       const p1 = randInt(1, whole - 1);
       const truthy = Math.random() < 0.5;
       const p2 = truthy ? whole - p1 : whole - p1 + randInt(1, 3);

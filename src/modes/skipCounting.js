@@ -376,14 +376,15 @@ const VARIETIES = [
   },
 
   // 13 — equal jumps on a number line (the widget the plan called a real gap).
+  // Band 1 keeps the same hop game with fewer jumps and the level's small steps.
   {
     id: "numberLineJumps",
-    bands: [2, 3],
+    bands: [1, 2, 3],
     subskill: "patternRule",
     family: ITEM_FAMILIES.CONCEPTUAL,
     build: (level) => {
       const step = pick(config(level).steps.filter((s) => s <= 10)) ?? 5;
-      const jumps = randInt(2, 5);
+      const jumps = randInt(2, bandOf(level) === 1 ? 4 : 5);
       const max = step * 10;
       return {
         answer: step * jumps,
@@ -400,6 +401,193 @@ const VARIETIES = [
         cognitiveDemand: "DOK2",
         misconceptions: ["wrongStep", "countsTermsNotValues"],
         step,
+      };
+    },
+  },
+
+  // 14 — K-1 entry: things that come in twos, drawn in pairs. The visual
+  // "count by 2s" every K-2 curriculum opens with.
+  {
+    id: "pairsOfObjects",
+    bands: [1, 2],
+    subskill: "groupsToProduct",
+    family: ITEM_FAMILIES.CONCEPTUAL,
+    build: (level) => {
+      const pairs = randInt(2, bandOf(level) === 1 ? 5 : 8);
+      const [emoji, noun] = pick([
+        ["🧦", "socks"],
+        ["🧤", "mittens"],
+        ["👟", "shoes"],
+      ]);
+      const groups = Array.from({ length: pairs }, () => emoji.repeat(2)).join("  ");
+      return {
+        answer: pairs * 2,
+        display: {
+          promptText: `Count the ${noun} by 2s: ${groups} How many ${noun} are there in all?`,
+        },
+        representation: "objectSet",
+        cognitiveDemand: "DOK1",
+        misconceptions: ["wrongStep", "countsTermsNotValues"],
+        step: 2,
+      };
+    },
+  },
+
+  // 15 — fives live on hands: count fingers hand by hand.
+  {
+    id: "fingersByFives",
+    bands: [1, 2],
+    subskill: "groupsToProduct",
+    family: ITEM_FAMILIES.CONCEPTUAL,
+    build: (level) => {
+      const hands = randInt(2, bandOf(level) === 1 ? 4 : 6);
+      return {
+        answer: hands * 5,
+        display: {
+          promptText: `Every hand shows 5 fingers: ${"✋".repeat(hands)} Count by 5s. How many fingers do the hands show?`,
+        },
+        representation: "objectSet",
+        cognitiveDemand: "DOK1",
+        misconceptions: ["wrongStep"],
+        step: 5,
+      };
+    },
+  },
+
+  // 16 — tens live on dimes: count coins by 10s.
+  {
+    id: "dimesToCents",
+    bands: [1, 2],
+    subskill: "groupsToProduct",
+    family: ITEM_FAMILIES.APPLICATION,
+    build: (level) => {
+      const dimes = randInt(2, bandOf(level) === 1 ? 5 : 9);
+      return {
+        answer: dimes * 10,
+        display: {
+          promptText: `Each dime is worth 10 cents: ${"🪙".repeat(dimes)} Count by 10s. How many cents are the dimes worth?`,
+        },
+        representation: "objectSet",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["wrongStep"],
+        step: 10,
+      };
+    },
+  },
+
+  // 17 — the counting song: continue the chant one more number.
+  {
+    id: "countSongNext",
+    bands: [1],
+    subskill: "patternRule",
+    family: ITEM_FAMILIES.PROCEDURAL,
+    build: (level) => {
+      const step = pick(config(level).steps);
+      const seq = [step, step * 2, step * 3];
+      return {
+        answer: step * 4,
+        display: {
+          promptText: `Sing the ${step}s counting song: ${seq.join(", ")}... What number comes next in the song?`,
+        },
+        representation: "verbalContext",
+        cognitiveDemand: "DOK1",
+        misconceptions: ["wrongStep", "patternReset"],
+        step,
+      };
+    },
+  },
+
+  // 18 — count back by 10s from a decade, the entry-level backward run.
+  {
+    id: "decadeCountBack",
+    bands: [1, 2],
+    subskill: "patternRule",
+    family: ITEM_FAMILIES.PROCEDURAL,
+    build: (level) => {
+      const top = randInt(4, bandOf(level) === 1 ? 6 : 9) * 10;
+      return {
+        answer: top - 30,
+        display: {
+          promptText: `Count back by 10s: ${top}, ${top - 10}, ${top - 20}. What number do you say next?`,
+        },
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["directionIgnored", "wrongStep"],
+        step: 10,
+      };
+    },
+  },
+
+  // 19 — entry odd-one-out over small multiples of the level's steps.
+  {
+    id: "whichNotInCount",
+    bands: [1],
+    subskill: "patternRule",
+    family: ITEM_FAMILIES.CONCEPTUAL,
+    build: (level) => {
+      const step = pick(config(level).steps);
+      const multiples = new Set();
+      while (multiples.size < 3) multiples.add(step * randInt(1, 6));
+      // A non-zero remainder keeps the odd number off the count for certain.
+      const odd = step * randInt(1, 5) + randInt(1, step - 1);
+      return {
+        answer: odd,
+        choices: shuffleArray([...multiples, odd]),
+        display: {
+          promptText: `Three of these numbers belong in the count by ${step}s. Which number does NOT belong?`,
+        },
+        representation: "symbolic",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["wrongStep"],
+        step,
+      };
+    },
+  },
+
+  // 20 — pairs told as a story (K-1 sized equal groups of 2).
+  {
+    id: "pairsStory",
+    bands: [1, 2],
+    subskill: "groupsToProduct",
+    family: ITEM_FAMILIES.APPLICATION,
+    build: (level) => {
+      const actor = pick(NAMES);
+      const pairs = randInt(2, bandOf(level) === 1 ? 5 : 9);
+      return {
+        answer: pairs * 2,
+        answerType: "numberPad",
+        display: {
+          promptText: `${actor} has ${pairs} pairs of socks. Each pair has 2 socks. How many socks does ${actor} have in all?`,
+        },
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["operationSwap", "wrongStep"],
+        step: 2,
+      };
+    },
+  },
+
+  // 21 — twos inside a ten frame: the counters pair up column by column.
+  {
+    id: "tenFrameTwos",
+    bands: [1, 2],
+    subskill: "groupsToProduct",
+    family: ITEM_FAMILIES.CONCEPTUAL,
+    build: () => {
+      const n = 2 * randInt(1, 5);
+      return {
+        answer: n,
+        answerType: "tenFrame",
+        display: {
+          filled: n,
+          frames: 1,
+          frameMode: "count",
+          promptText: "The counters in the frame make twos. Count by 2s. How many counters are in the frame?",
+        },
+        representation: "tenFrame",
+        cognitiveDemand: "DOK1",
+        misconceptions: ["wrongStep"],
+        step: 2,
       };
     },
   },

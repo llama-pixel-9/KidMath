@@ -10,7 +10,10 @@ import { buildDistractors } from "./distractors";
  * within-the-hour elapsed problem. The conventional ladder costs nothing but a
  * minute constraint per band, so it is the first thing this rewrite ships:
  *
- *   band 1 (L1-3)  o'clock and half past; duration benchmarks; words -> digital
+ *   band 1 (L1-3)  o'clock and half past; hands described in words; one hour
+ *                  later/earlier; before/after an o'clock time; parts of the
+ *                  day; whole-hour elapsed; duration benchmarks; words <->
+ *                  digital; ordering daily events
  *   band 2 (L4-6)  quarter past/to, five-minute reads, a.m./p.m., elapsed
  *                  duration inside one hour
  *   band 3 (L7-10) reads to the minute, elapsed ACROSS the hour, end-unknown
@@ -87,6 +90,44 @@ const DURATION_SENSE = [
   { task: "tie a shoelace", answer: "10 seconds", others: ["10 minutes", "10 hours", "10 days"] },
 ];
 
+/** Digital display -> the words that name it, at the o'clock / half level. */
+const DIGITAL_WORDS = [
+  { time: "3:00", words: "three o'clock", others: ["half past three", "twelve o'clock", "half past twelve"] },
+  { time: "6:30", words: "half past six", others: ["six o'clock", "half past seven", "seven o'clock"] },
+  { time: "9:00", words: "nine o'clock", others: ["half past nine", "ten o'clock", "half past eight"] },
+  { time: "11:30", words: "half past eleven", others: ["eleven o'clock", "half past twelve", "twelve o'clock"] },
+  { time: "4:30", words: "half past four", others: ["four o'clock", "half past five", "five o'clock"] },
+  { time: "1:00", words: "one o'clock", others: ["half past one", "two o'clock", "half past twelve"] },
+];
+
+const DAY_PARTS = [
+  { event: "eats breakfast", part: "morning" },
+  { event: "packs a bag for school", part: "morning" },
+  { event: "plays outside after lunch", part: "afternoon" },
+  { event: "has a snack after school", part: "afternoon" },
+  { event: "puts on pajamas for bed", part: "night" },
+  { event: "looks at the stars", part: "night" },
+];
+
+/** One school day, earliest to latest. Order is the answer key. */
+const DAY_ORDER = ["waking up", "breakfast", "school", "lunch", "dinner", "bedtime"];
+
+/** Whole-hour events: [story noun, the noun the question asks about]. */
+const HOUR_EVENTS = [
+  { full: "art class", short: "the class" },
+  { full: "soccer practice", short: "the practice" },
+  { full: "library visit", short: "the visit" },
+  { full: "birthday party", short: "the party" },
+];
+
+/** Within-the-hour events for elapsed items, same shape as HOUR_EVENTS. */
+const MINUTE_EVENTS = [
+  { full: "recess", short: "recess" },
+  { full: "reading time", short: "reading time" },
+  { full: "music lesson", short: "the lesson" },
+  { full: "snack break", short: "the break" },
+];
+
 const AM_PM = [
   { event: "eats breakfast", time: "7:30", answer: "a.m." },
   { event: "goes to bed", time: "8:15", answer: "p.m." },
@@ -94,6 +135,21 @@ const AM_PM = [
   { event: "eats dinner", time: "6:30", answer: "p.m." },
   { event: "wakes up", time: "6:50", answer: "a.m." },
   { event: "watches the sunset", time: "7:40", answer: "p.m." },
+];
+
+/** Keep an hour on the 1-12 dial after adding or subtracting. */
+function wrapHour(n) {
+  return ((n + 11) % 12) + 1;
+}
+
+// One question stem per read would put half the band's items behind a single
+// prompt signature (that was the variety-report failure); four stems that all
+// ask for the same minutes value spread it without changing the task.
+const CLOCK_PROMPTS = [
+  (hour) => `How many minutes past ${hour} o'clock is this clock showing?`,
+  (hour) => `Read the clock. How many minutes past ${hour} does it show?`,
+  (hour) => `The hour is ${hour}. How many minutes past the hour does the clock show?`,
+  (hour) => `Look at the clock. Type the minutes past ${hour} o'clock.`,
 ];
 
 /** A clock-reading row: the widget shows the face, the child types minutes. */
@@ -104,7 +160,7 @@ function clockRead(minutes, demand) {
     answer: minute,
     answerType: "clock",
     display: { type: "clock", hour, minute },
-    promptText: `How many minutes past ${hour} o'clock is this clock showing?`,
+    promptText: pick(CLOCK_PROMPTS)(hour),
     representation: "visual",
     cognitiveDemand: demand,
     misconceptionTags: ["hourMinuteSwap", "clockDirection", "offByFive"],
@@ -164,6 +220,183 @@ const VARIETIES = [
         representation: "symbolic",
         cognitiveDemand: "DOK1",
         misconceptionTags: ["hourMinuteSwap", "clockDirection"],
+      };
+    },
+  },
+  {
+    id: "matchDigitalToWords",
+    bands: [1, 2],
+    family: PROCEDURAL,
+    subskills: ["timeConcepts"],
+    build() {
+      const item = pick(DIGITAL_WORDS);
+      return {
+        answer: item.words,
+        answerType: "choice",
+        choices: shuffleArray([item.words, ...item.others]),
+        promptText: `A digital clock shows ${item.time}. Which words name that time?`,
+        representation: "symbolic",
+        cognitiveDemand: "DOK1",
+        misconceptionTags: ["hourMinuteSwap", "clockDirection"],
+      };
+    },
+  },
+  {
+    id: "verbalClockHands",
+    bands: [1],
+    family: CONCEPTUAL,
+    subskills: ["readClock"],
+    build() {
+      const hour = randInt(1, 12);
+      const label = (h) => `${h} o'clock`;
+      return {
+        answer: label(hour),
+        answerType: "choice",
+        choices: optionSet(
+          label(hour),
+          [label(wrapHour(hour + 1)), label(wrapHour(hour - 1)), label(wrapHour(hour + 6))],
+          []
+        ),
+        promptText: `The long hand points at 12. The short hand points at ${hour}. What time is it?`,
+        representation: "verbalContext",
+        cognitiveDemand: "DOK1",
+        misconceptionTags: ["hourMinuteSwap", "clockDirection"],
+      };
+    },
+  },
+  {
+    id: "whichClockShowsHour",
+    bands: [1],
+    family: CONCEPTUAL,
+    subskills: ["readClock"],
+    build() {
+      const hour = randInt(1, 11);
+      let other = randInt(1, 11);
+      while (other === hour) other = randInt(1, 11);
+      const face = (long, short) => `long hand at ${long}, short hand at ${short}`;
+      return {
+        answer: face(12, hour),
+        answerType: "choice",
+        choices: optionSet(
+          face(12, hour),
+          // The hand swap, the half-past face, and the wrong hour.
+          [face(hour, 12), face(6, hour), face(12, other)],
+          []
+        ),
+        promptText: `Which clock face shows ${hour} o'clock?`,
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptionTags: ["hourMinuteSwap", "clockDirection"],
+      };
+    },
+  },
+  {
+    id: "hourLaterEarlier",
+    bands: [1, 2],
+    family: PROCEDURAL,
+    subskills: ["elapsedTime"],
+    build() {
+      const hour = randInt(2, 11);
+      const later = Math.random() < 0.5;
+      const answer = later ? hour + 1 : hour - 1;
+      const wrongDirection = later ? hour - 1 : hour + 1;
+      const label = (h) => `${wrapHour(h)} o'clock`;
+      return {
+        answer: label(answer),
+        answerType: "choice",
+        choices: optionSet(
+          label(answer),
+          [label(wrongDirection), label(hour), label(hour + 6)],
+          [label(hour + 3), label(hour + 4)]
+        ),
+        promptText: later
+          ? `The clock shows ${hour} o'clock. What time is it one hour later?`
+          : `The clock shows ${hour} o'clock. Which time is one hour earlier?`,
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptionTags: ["clockDirection", "offByOne"],
+      };
+    },
+  },
+  {
+    id: "beforeAfterHour",
+    bands: [1],
+    family: CONCEPTUAL,
+    subskills: ["timeConcepts"],
+    build() {
+      const start = randInt(8, 10);
+      let arrives = randInt(7, 11);
+      while (arrives === start) arrives = randInt(7, 11);
+      const actor = pick(ACTORS);
+      return {
+        answer: arrives < start ? "before" : "after",
+        answerType: "choice",
+        choices: ["before", "after"],
+        promptText: `School starts at ${start} o'clock. ${actor} arrives at ${arrives} o'clock. Does ${actor} arrive before or after school starts?`,
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptionTags: ["compareDirection"],
+      };
+    },
+  },
+  {
+    id: "dayPartEvent",
+    bands: [1],
+    family: CONCEPTUAL,
+    subskills: ["timeConcepts"],
+    build() {
+      const item = pick(DAY_PARTS);
+      const actor = pick(ACTORS);
+      return {
+        answer: item.part,
+        answerType: "choice",
+        choices: ["morning", "afternoon", "night"],
+        promptText: `${actor} ${item.event}. Which part of the day is it?`,
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptionTags: ["unitDirection"],
+      };
+    },
+  },
+  {
+    id: "dailyEventOrder",
+    bands: [1],
+    family: CONCEPTUAL,
+    subskills: ["timeConcepts"],
+    build() {
+      const picked = shuffleArray([...DAY_ORDER.keys()]).slice(0, 3);
+      const first = Math.random() < 0.5;
+      const target = first ? Math.min(...picked) : Math.max(...picked);
+      const shown = picked.map((i) => DAY_ORDER[i]);
+      return {
+        answer: DAY_ORDER[target],
+        answerType: "choice",
+        choices: shown,
+        promptText: `Think about one school day. Which of these comes ${first ? "first" : "last"}: ${shown.join(", ")}?`,
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptionTags: ["compareDirection"],
+      };
+    },
+  },
+  {
+    id: "wholeHoursElapsed",
+    bands: [1, 2],
+    family: APPLICATION,
+    subskills: ["elapsedTime"],
+    build() {
+      const event = pick(HOUR_EVENTS);
+      const startHour = randInt(1, 9);
+      const hours = randInt(1, 3);
+      const actor = pick(ACTORS);
+      return {
+        answer: hours,
+        answerType: "numberPad",
+        promptText: `${actor}'s ${event.full} starts at ${startHour} o'clock and ends at ${startHour + hours} o'clock. How many hours long is ${event.short}?`,
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptionTags: ["offByOne", "operationSwap"],
+        distractorContext: { a: startHour, b: startHour + hours },
       };
     },
   },
@@ -237,11 +470,12 @@ const VARIETIES = [
       const startM = randInt(0, 9) * 5;
       const duration = randInt(1, Math.max(1, Math.floor((55 - startM) / 5))) * 5;
       const actor = pick(ACTORS);
+      const event = pick(MINUTE_EVENTS);
       const start = hour * 60 + startM;
       return {
         answer: duration,
         answerType: "numberPad",
-        promptText: `${actor}'s recess starts at ${fmt(start)} and ends at ${fmt(start + duration)}. How many minutes long is recess?`,
+        promptText: `${actor}'s ${event.full} starts at ${fmt(start)} and ends at ${fmt(start + duration)}. How many minutes long is ${event.short}?`,
         representation: "verbalContext",
         cognitiveDemand: "DOK2",
         misconceptionTags: ["offByFive", "operationSwap"],

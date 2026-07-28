@@ -7,6 +7,7 @@ import {
   generateMultiplicativeItem,
   deriveCognitiveDemand,
 } from "./structures";
+import { randInt } from "./helpers";
 
 // Multiplication draws the unknown-product column of CCSS Table 2.
 // Multiplicative compare ("3 times as much") is Grade 4 and sits in the
@@ -57,6 +58,50 @@ export default {
       question.answerType = "numberPad";
     }
 
+    // "# x # = ?" is one signature for every fact, so it dominates each band's
+    // repetition budget. Re-dress a share of plain product-unknown items with
+    // spoken stems or an emoji equal-groups/array picture (small products) —
+    // the dot-paper stage of CPA, inline. Math and metadata are unchanged.
+    if (!asStory && typeof item.a === "number" && typeof item.b === "number" && item.a * item.b === item.answer) {
+      const dress = Math.random();
+      const small = item.a <= 6 && item.b <= 6;
+      if (dress < 0.3 && small) {
+        const emoji = pick(["🍪", "⭐", "🍎", "🔵", "🐟"]);
+        const rows = Array.from({ length: item.a }, () => emoji.repeat(item.b)).join("  |  ");
+        question.display = {
+          promptText: pick([
+            `${rows} — ${item.a} groups with ${item.b} in each group. How many in all are there?`,
+            `${rows} — ${item.a} rows of ${item.b}. How many altogether?`,
+          ]),
+        };
+        question.answerType = "numberPad";
+      } else if (dress < 0.6) {
+        question.display = {
+          promptText: pick([
+            `What is ${item.a} times ${item.b}?`,
+            `${item.a} groups of ${item.b}. What total do they make?`,
+            `Count by ${item.b}, ${item.a} times. What number do you reach?`,
+            item.a === 2 ? `Double ${item.b}! What is 2 times ${item.b}?` : `Multiply ${item.a} by ${item.b}. What do you get?`,
+          ]),
+        };
+        question.answerType = "numberPad";
+      }
+    } else if (
+      // Missing-factor renders ("3 x ? = 12") share one signature too. Spoken
+      // stems keep the same unknown in the same place.
+      !asStory && typeof item.a === "number" && typeof item.b === "number" &&
+      item.a * item.answer === item.b && Math.random() < 0.5
+    ) {
+      question.display = {
+        promptText: pick([
+          `${item.a} times what number makes ${item.b}?`,
+          `${item.a} groups of some number make ${item.b}. What number is in each group?`,
+          `Fill it in: ${item.a} times what equals ${item.b}?`,
+        ]),
+      };
+      question.answerType = "numberPad";
+    }
+
     question.metadata = createQuestionMetadata({
       modeId: "multiplication",
       level,
@@ -93,6 +138,8 @@ export default {
     });
   },
 };
+
+const pick = (arr) => arr[randInt(0, arr.length - 1)];
 
 // Distractors should diagnose, so tags follow the structure rather than being a
 // fixed list (spec §B6).

@@ -1,4 +1,5 @@
 import { buildArithmeticDistractors } from "./distractors";
+import { randInt } from "./helpers";
 import { createQuestionMetadata } from "./itemMetadata";
 import { maybeApplyFormat } from "./formats";
 import { pickContext } from "./structures";
@@ -45,6 +46,31 @@ export default {
       level,
       display: item.display,
     };
+
+    // Re-dress a share of plain-quotient renders: the bare "# ÷ # = ?" and
+    // "# x ? = #" signatures otherwise dominate the small entry band. The
+    // partitive and quotitive spoken stems are deliberately both present —
+    // "shared into" vs "how many #s in" IS the structural distinction.
+    if (!asStory && typeof item.a === "number" && typeof item.b === "number" && item.a * item.answer === item.b && Math.random() < 0.5) {
+      // The x-form render ("3 x ? = 12") gets its own spoken stems.
+      question.display = {
+        promptText: ((arr) => arr[randInt(0, arr.length - 1)])([
+          `${item.a} groups of what number make ${item.b}?`,
+          `${item.a} times some number is ${item.b}. What is the number?`,
+        ]),
+      };
+      question.answerType = "numberPad";
+    } else if (!asStory && typeof item.a === "number" && typeof item.b === "number" && item.b !== 0 && item.a / item.b === item.answer && Math.random() < 0.6) {
+      question.display = {
+        promptText: ((arr) => arr[randInt(0, arr.length - 1)])([
+          `What is ${item.a} divided by ${item.b}?`,
+          `${item.a} shared into ${item.b} equal groups — how many are in each group?`,
+          `How many ${item.b}s are in ${item.a}?`,
+          `Split ${item.a} into groups of ${item.b}. How many groups do you get?`,
+        ]),
+      };
+      question.answerType = "numberPad";
+    }
 
     question.metadata = createQuestionMetadata({
       modeId: "division",

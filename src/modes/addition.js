@@ -7,6 +7,8 @@ import {
   generateAdditiveItem,
   deriveCognitiveDemand,
 } from "./structures";
+import { randInt, shuffleArray } from "./helpers";
+import { bandForLevel, BANDS } from "./structures/levelPolicy";
 
 // Addition draws the "+" half of CCSS Table 1. Both this mode and subtraction
 // read from the same grid — the standards treat additive situations as one
@@ -33,6 +35,13 @@ export default {
   structureTypes: STRUCTURES.map((s) => s.id),
 
   generate(level, context = {}) {
+    // Kindergarten's own subtype, Put Together / Both Addends Unknown
+    // ("5 is 2 and 3, 1 and 4, …"), has no single-unknown rendering, so the
+    // structure engine cannot emit it — it lives here as a K-band draw.
+    if (bandForLevel(level) === BANDS.K && !context.varietyId && Math.random() < 0.15) {
+      return bothAddendsQuestion(level, context);
+    }
+
     const item = generateAdditiveItem(level, context, { pool: STRUCTURES });
     const { structure, itemFamily, asStory } = item;
 
@@ -44,6 +53,54 @@ export default {
       level,
       display: item.display,
     };
+
+    // A symbolic sum has one prompt signature ("# + # = ?") no matter the
+    // numbers, which lets it dominate every band's repetition budget. Re-dress
+    // a share of them: two-color ten frames while sums fit a frame, and
+    // spoken-number stems at any size. Same math, same metadata; only the
+    // picture changes.
+    if (!asStory && typeof item.a === "number" && typeof item.b === "number" && item.structure?.solveFor !== "x" && item.structure?.solveFor !== "y") {
+      const dress = Math.random();
+      const fitsFrames = item.answer <= 20 && bandForLevel(level) !== BANDS.G2;
+      if (dress < 0.35 && fitsFrames) {
+        question.answerType = "tenFrame";
+        question.display = {
+          filled: item.a,
+          filledB: item.b,
+          frames: item.answer > 10 ? 2 : 1,
+          frameMode: "count",
+          promptText: pick([
+            "Red counters and blue counters — how many counters in all?",
+            "Count all the counters in the frame. How many are there?",
+            `${item.a} red and ${item.b} blue. How many counters altogether?`,
+          ]),
+        };
+      } else if (dress < 0.6) {
+        question.display = {
+          promptText: pick([
+            `What is ${item.a} plus ${item.b}?`,
+            `Add ${item.a} and ${item.b}. What do you get?`,
+            `Put ${item.a} and ${item.b} together. What number do they make?`,
+            item.a === item.b ? `Double ${item.a}! What is ${item.a} plus ${item.a}?` : `${item.a} and ${item.b} more. What number is that?`,
+          ]),
+        };
+        question.answerType = "numberPad";
+      }
+    } else if (
+      // Missing-addend renders ("4 + ? = 9") share one signature too; spoken
+      // stems keep the unknown exactly where the structure puts it.
+      !asStory && typeof item.a === "number" && typeof item.b === "number" &&
+      item.a + item.answer === item.b && Math.random() < 0.45
+    ) {
+      question.display = {
+        promptText: pick([
+          `${item.a} plus what number makes ${item.b}?`,
+          `${item.a} and how many more make ${item.b}?`,
+          `Fill it in: ${item.a} plus what equals ${item.b}?`,
+        ]),
+      };
+      question.answerType = "numberPad";
+    }
 
     question.metadata = createQuestionMetadata({
       modeId: "addition",
@@ -81,6 +138,57 @@ export default {
     });
   },
 };
+
+const pick = (arr) => arr[randInt(0, arr.length - 1)];
+
+// Put Together / Both Addends Unknown: several decompositions are each right,
+// so the child picks the PAIR — any pair summing to the whole is accepted
+// (multiSelect judges against a list of acceptable sets).
+function bothAddendsQuestion(level) {
+  const whole = randInt(4, 10);
+  // Distinct-part pairs only: duplicate option values ([3,3]) make a set-based
+  // picker ambiguous.
+  const pairs = [];
+  for (let x = 0; x < whole - x; x += 1) pairs.push([x, whole - x]);
+  const good = pick(pairs);
+  // Options: the correct pair's two numbers plus two that do NOT make the whole.
+  const wrongPool = shuffleArray(
+    [...new Set([whole + 1, whole - 1, good[0] + 1, good[1] + 2])]
+      .filter((n) => n >= 0 && n !== good[0] && n !== good[1])
+  );
+  const options = shuffleArray([...good, ...wrongPool.slice(0, 2)]);
+  const acceptable = pairs.filter(([x, y]) => options.includes(x) && options.includes(y));
+
+  const question = {
+    a: whole,
+    b: null,
+    op: "+",
+    answer: acceptable.length ? acceptable : [good],
+    level,
+    answerType: "multiSelect",
+    display: {
+      promptText: `Pick two numbers that make ${whole} together.`,
+      options,
+      requiredCount: 2,
+    },
+  };
+  question.metadata = createQuestionMetadata({
+    modeId: "addition",
+    level,
+    domain: "OA",
+    cluster: "Add and subtract within 20 and beyond",
+    subskill: "composeDecompose",
+    itemFamily: "conceptual",
+    cognitiveDemand: "DOK2",
+    representation: "symbolic",
+    mathPractices: ["MP2", "MP7"],
+    standardRefs: ["K.OA.3"],
+    misconceptionTags: ["offByOne"],
+    blueprintId: "addition-conceptual-bothAddendsUnknown",
+    structureType: "bothAddendsUnknown",
+  });
+  return question;
+}
 
 // Distractors should diagnose, so the tags follow the structure rather than
 // being a fixed list. `startAsResult` and `keywordTrap` are what make the hard

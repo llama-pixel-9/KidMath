@@ -63,7 +63,13 @@ const VARIETIES = [
         answer: w * h,
         answerType: "numberPad",
         display: { width: w, height: h },
-        promptText: `A rectangle is covered by unit squares: ${h} rows with ${w} squares in each row. How many unit squares cover it?`,
+        // Every stem keeps the literal "N rows with N squares" fragment: the
+        // pinned recomputation in m4Measurement.spec.js reads the dims from it.
+        promptText: pick([
+          `A rectangle is covered by unit squares: ${h} rows with ${w} squares in each row. How many unit squares cover it?`,
+          `A rectangle drawn on grid paper has ${h} rows with ${w} squares in each row. What is its area in square units?`,
+          `A chocolate bar snaps into ${h} rows with ${w} squares in each row. How many squares make up the whole bar?`,
+        ]),
         representation: "visual",
         cognitiveDemand: "DOK1",
         misconceptionTags: ["areaPerimeterSwap", "addInsteadOfMultiply", "offByOne"],
@@ -84,7 +90,12 @@ const VARIETIES = [
         answer: 2 * (w + h),
         answerType: "numberPad",
         display: { width: w, height: h },
-        promptText: `A rectangle of unit squares is ${w} units across and ${h} units down. How many units is the distance all the way around it?`,
+        // Both stems keep "is N units across and N units down" for the pinned
+        // recomputation in m4Measurement.spec.js.
+        promptText: pick([
+          `A rectangle of unit squares is ${w} units across and ${h} units down. How many units is the distance all the way around it?`,
+          `A stamp on grid paper is ${w} units across and ${h} units down. Count along its edge. What is the distance around the stamp in units?`,
+        ]),
         representation: "visual",
         cognitiveDemand: "DOK2",
         misconceptionTags: ["areaPerimeterSwap", "perimeterHalfCount", "offByOne"],
@@ -134,6 +145,118 @@ const VARIETIES = [
         representation: "verbalContext",
         cognitiveDemand: "DOK2",
         misconceptionTags: ["addInsteadOfMultiply", "areaPerimeterSwap"],
+      };
+    },
+  },
+
+  {
+    id: "stickerCardArea",
+    bands: [1],
+    family: APPLICATION,
+    subskills: ["area"],
+    build() {
+      const w = randInt(2, 6);
+      const h = randInt(2, 5);
+      const actor = pick(ACTORS);
+      return {
+        subskill: "area",
+        answer: w * h,
+        answerType: "numberPad",
+        promptText: `${actor} covers a card with square stickers. The card fits ${h} rows of ${w} stickers. How many stickers cover the card?`,
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptionTags: ["addInsteadOfMultiply", "areaPerimeterSwap"],
+        distractorContext: { a: w, b: h },
+      };
+    },
+  },
+  {
+    id: "fenceAround",
+    bands: [1],
+    family: APPLICATION,
+    subskills: ["perimeter"],
+    build() {
+      const w = randInt(2, 6);
+      const h = randInt(2, 6);
+      const actor = pick(ACTORS);
+      return {
+        subskill: "perimeter",
+        answer: 2 * (w + h),
+        answerType: "numberPad",
+        promptText: pick([
+          `${actor} walks the edge of a ${w} m by ${h} m garden, all the way around. How many metres does ${actor} walk?`,
+          `${actor} puts a fence around a ${w} m by ${h} m pen. How many metres of fence does ${actor} need?`,
+          `${actor} tapes a border around a ${w} cm by ${h} cm drawing. How many cm of tape does ${actor} need?`,
+        ]),
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptionTags: ["areaPerimeterSwap", "perimeterHalfCount"],
+        distractorContext: { a: w, b: h },
+      };
+    },
+  },
+  {
+    id: "sameCoverYesNo",
+    bands: [1],
+    family: CONCEPTUAL,
+    subskills: ["measureReasoning"],
+    build() {
+      // Half the time the two rectangles cover the same number of squares in
+      // different shapes — the point of the item; the equal pairs are fixed so
+      // the equality is exact by construction.
+      const same = Math.random() < 0.5;
+      let dims;
+      if (same) {
+        dims = pick([
+          [2, 6, 3, 4],
+          [3, 8, 4, 6],
+          [4, 9, 6, 6],
+          [2, 9, 3, 6],
+          [2, 8, 4, 4],
+        ]);
+      } else {
+        dims = [randInt(2, 6), randInt(2, 6), randInt(2, 6), randInt(2, 6)];
+        let guard = 0;
+        while (dims[0] * dims[1] === dims[2] * dims[3] && guard++ < 30) {
+          dims[3] = randInt(2, 7);
+        }
+      }
+      const [w1, h1, w2, h2] = dims;
+      return {
+        subskill: "measureReasoning",
+        answer: w1 * h1 === w2 * h2 ? "Yes" : "No",
+        answerType: "choice",
+        choices: ["Yes", "No"],
+        promptText: `Figure A is a ${w1} by ${h1} rectangle of unit squares. Figure B is a ${w2} by ${h2} rectangle. Do both figures cover the same number of unit squares?`,
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptionTags: ["areaPerimeterSwap", "addInsteadOfMultiply"],
+      };
+    },
+  },
+  {
+    id: "longerWayAround",
+    bands: [1],
+    family: CONCEPTUAL,
+    subskills: ["perimeter"],
+    build() {
+      const w1 = randInt(2, 6);
+      const h1 = randInt(2, 6);
+      let w2 = randInt(2, 6);
+      const h2 = randInt(2, 6);
+      let guard = 0;
+      while (w1 + h1 === w2 + h2 && guard++ < 30) w2 = randInt(2, 7);
+      const a = `the ${w1} by ${h1} rug`;
+      const b = `the ${w2} by ${h2} rug`;
+      return {
+        subskill: "perimeter",
+        answer: w1 + h1 > w2 + h2 ? a : b,
+        answerType: "choice",
+        choices: shuffleArray([a, b]),
+        promptText: `Two rugs lie on the floor. One is ${w1} by ${h1} and the other is ${w2} by ${h2}. Which rug has the longer distance around it?`,
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptionTags: ["areaPerimeterSwap", "perimeterHalfCount"],
       };
     },
   },

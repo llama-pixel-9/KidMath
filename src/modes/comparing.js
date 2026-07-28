@@ -22,6 +22,17 @@ import { createQuestionMetadata, ITEM_FAMILIES } from "./itemMetadata";
 
 const NAMES = ["Sam", "Mina", "Luca", "Nia", "Theo", "Ava"];
 const OBJECTS = ["🍎", "⭐", "🐟", "🌸", "🍪", "🐢"];
+// Emoji paired with the noun the question restates ("Which tray has fewer
+// apples?") — the QC layer rejects a counted-noun-less question.
+const OBJECT_NOUNS = [
+  ["🍎", "apples"],
+  ["⭐", "stars"],
+  ["🐟", "fish"],
+  ["🌸", "flowers"],
+  ["🍪", "cookies"],
+  ["🐢", "turtles"],
+];
+const STORY_NOUNS = ["marbles", "stickers", "blocks", "crayons"];
 
 const SUBSKILLS = ["symbolSelection", "benchmarkCompare", "distanceCompare"];
 const SUPPORTED_FORMATS = [];
@@ -98,6 +109,106 @@ const VARIETIES = [
     },
   },
 
+  // 2b — the same set comparison asked with "fewer". The Progressions flag
+  // "fewer" as the harder quantifier, so it gets its own structure instead of
+  // being a coin-flip inside `compareObjectSets` (which pins "more").
+  {
+    id: "whichSetFewer",
+    bands: [1, 2],
+    subskill: "distanceCompare",
+    family: ITEM_FAMILIES.CONCEPTUAL,
+    build: () => {
+      const a = randInt(2, 8);
+      let b = randInt(2, 8);
+      while (b === a) b = randInt(2, 8);
+      const [emoji, noun] = pick(OBJECT_NOUNS);
+      return {
+        answer: a < b ? "Tray A" : "Tray B",
+        choices: ["Tray A", "Tray B"],
+        display: {
+          promptText: `Tray A: ${emoji.repeat(a)} Tray B: ${emoji.repeat(b)} Which tray has fewer ${noun}?`,
+        },
+        representation: "objectSet",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["keywordMore"],
+      };
+    },
+  },
+
+  // 2c — one more / one less: the smallest possible distance comparison,
+  // typed rather than chosen so +1/-1 is produced, not recognised.
+  {
+    id: "oneMoreOneLess",
+    bands: [1],
+    subskill: "distanceCompare",
+    family: ITEM_FAMILIES.PROCEDURAL,
+    build: () => {
+      const more = Math.random() < 0.5;
+      const n = more ? randInt(1, 9) : randInt(2, 10);
+      return {
+        a: n,
+        answer: more ? n + 1 : n - 1,
+        answerType: "numberPad",
+        display: { promptText: `What number is one ${more ? "more" : "less"} than ${n}?` },
+        representation: "symbolic",
+        cognitiveDemand: "DOK1",
+        misconceptions: ["offByOne"],
+      };
+    },
+  },
+
+  // 2d — distance to the benchmark ten, seen on a ten frame. The gap to a
+  // full frame is K's first benchmark comparison.
+  {
+    id: "tenFrameGapToTen",
+    bands: [1, 2],
+    subskill: "benchmarkCompare",
+    family: ITEM_FAMILIES.CONCEPTUAL,
+    build: () => {
+      const filled = randInt(3, 9);
+      return {
+        answer: 10 - filled,
+        answerType: "tenFrame",
+        display: {
+          filled,
+          frames: 1,
+          frameMode: "count",
+          promptText: "Compare the frame to a full ten. How many counters are missing?",
+        },
+        representation: "tenFrame",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["offByOne"],
+      };
+    },
+  },
+
+  // 2e — a tiny story compare that asks WHO, not how many. Selecting the
+  // holder of the smaller amount is Table 1 Compare before any subtraction.
+  {
+    id: "storyWhoHasFewer",
+    bands: [1, 2],
+    subskill: "distanceCompare",
+    family: ITEM_FAMILIES.APPLICATION,
+    build: (level) => {
+      const top = bandOf(level) === 1 ? 9 : 18;
+      const a = randInt(2, top);
+      let b = randInt(2, top);
+      while (b === a) b = randInt(2, top);
+      const [one, two] = shuffleArray([...NAMES]).slice(0, 2);
+      const noun = pick(STORY_NOUNS);
+      return {
+        answer: a < b ? one : two,
+        choices: [one, two],
+        display: {
+          promptText: `${one} has ${a} ${noun}. ${two} has ${b} ${noun}. Who has fewer ${noun}?`,
+        },
+        representation: "verbalContext",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["keywordMore"],
+      };
+    },
+  },
+
   // 3 — compare two expressions rather than two numerals.
   {
     id: "compareExpressions",
@@ -148,10 +259,11 @@ const VARIETIES = [
     },
   },
 
-  // 5 — order a set, not a pair.
+  // 5 — order a set, not a pair. Small numbers make this a band-1 structure
+  // too; only the magnitude dial moves with level.
   {
     id: "orderThreeNumbers",
-    bands: [2, 3],
+    bands: [1, 2, 3],
     subskill: "distanceCompare",
     family: ITEM_FAMILIES.PROCEDURAL,
     build: (level) => {
@@ -180,11 +292,14 @@ const VARIETIES = [
   // 6 — compare against a landmark without computing.
   {
     id: "benchmarkCompare",
-    bands: [2, 3],
+    bands: [1, 2, 3],
     subskill: "benchmarkCompare",
     family: ITEM_FAMILIES.CONCEPTUAL,
     build: (level) => {
-      const tens = bandOf(level) === 2 ? randInt(1, 8) : randInt(1, 90);
+      const band = bandOf(level);
+      // Band 1 stays in the teens: "is 13 closer to 10 or to 20" keeps every
+      // number a K child can place.
+      const tens = band === 1 ? 1 : band === 2 ? randInt(1, 8) : randInt(1, 90);
       let ones = randInt(1, 9);
       while (ones === 5) ones = randInt(1, 9); // a tie has no single right answer
       const n = tens * 10 + ones;
@@ -205,7 +320,7 @@ const VARIETIES = [
   // as "here comes the answer".
   {
     id: "trueFalseInequality",
-    bands: [2, 3],
+    bands: [1, 2, 3],
     subskill: "benchmarkCompare",
     family: ITEM_FAMILIES.CONCEPTUAL,
     build: (level) => {
@@ -306,11 +421,12 @@ const VARIETIES = [
   // carry the constraint instead of a free-text answer the engine cannot judge.
   {
     id: "whatCouldItBe",
-    bands: [2, 3],
+    bands: [1, 2, 3],
     subskill: "benchmarkCompare",
     family: ITEM_FAMILIES.CONCEPTUAL,
     build: (level) => {
-      const lo = bandOf(level) === 2 ? randInt(10, 80) : randInt(100, 800);
+      const band = bandOf(level);
+      const lo = band === 1 ? randInt(2, 7) : band === 2 ? randInt(10, 80) : randInt(100, 800);
       const hi = lo + 5;
       const correct = randInt(lo + 1, hi - 1);
       const options = [correct, lo - 1, hi + 1, hi + 4];

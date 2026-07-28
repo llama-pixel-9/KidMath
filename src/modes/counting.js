@@ -349,6 +349,105 @@ const VARIETIES = [
     },
   },
 
+  // 15 — ten frame: read how many. THE canonical K representation (MiF,
+  // EngageNY); five-ness and ten-ness are visible instead of counted.
+  {
+    id: "tenFrameCount",
+    bands: [1, 2],
+    subskill: "subitizing",
+    family: ITEM_FAMILIES.CONCEPTUAL,
+    build: () => {
+      const n = randInt(1, 10);
+      return {
+        answer: n,
+        answerType: "tenFrame",
+        display: { filled: n, frames: 1, frameMode: "count", promptText: "How many counters are in the ten frame?" },
+        representation: "tenFrame",
+        cognitiveDemand: "DOK1",
+        misconceptions: ["doubleCount"],
+      };
+    },
+  },
+
+  // 16 — ten frame: how many EMPTY cells. The complement relation ("how many
+  // more to fill it") seen structurally, before make-ten is ever symbolic.
+  {
+    id: "tenFrameEmpty",
+    bands: [1, 2],
+    subskill: "cardinality",
+    family: ITEM_FAMILIES.CONCEPTUAL,
+    build: () => {
+      const n = randInt(2, 9);
+      return {
+        answer: 10 - n,
+        answerType: "tenFrame",
+        display: { filled: n, frames: 1, frameMode: "count", promptText: "How many empty cells does the frame have?" },
+        representation: "tenFrame",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["countAllNotOn"],
+      };
+    },
+  },
+
+  // 17 — ten frame: BUILD a number. Tap-to-place is 1:1 correspondence made
+  // playable; the child's own counters are the answer.
+  {
+    id: "tenFrameBuild",
+    bands: [1],
+    subskill: "cardinality",
+    family: ITEM_FAMILIES.PROCEDURAL,
+    build: () => {
+      const n = randInt(2, 9);
+      return {
+        answer: n,
+        answerType: "tenFrame",
+        display: { filled: 0, frames: 1, frameMode: "build", promptText: `Put ${n} counters in the ten frame, then press Go.` },
+        representation: "tenFrame",
+        cognitiveDemand: "DOK1",
+        misconceptions: ["doubleCount"],
+      };
+    },
+  },
+
+  // 18 — ten frame: make ten by DOING it. The frame starts partly filled; the
+  // child adds counters until it is full and submits how many they added.
+  {
+    id: "tenFrameMakeTen",
+    bands: [1, 2],
+    subskill: "countOn",
+    family: ITEM_FAMILIES.CONCEPTUAL,
+    build: () => {
+      const have = randInt(3, 9);
+      return {
+        answer: 10 - have,
+        answerType: "tenFrame",
+        display: { filled: have, frames: 1, frameMode: "build", promptText: "Fill the frame to make 10! How many did you add?" },
+        representation: "tenFrame",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["countAllNotOn", "offByOne"],
+      };
+    },
+  },
+
+  // 19 — teen numbers as a full ten and some more (K.NBT.1) on two frames.
+  {
+    id: "teenFrameCount",
+    bands: [1, 2],
+    subskill: "cardinality",
+    family: ITEM_FAMILIES.CONCEPTUAL,
+    build: () => {
+      const more = randInt(1, 9);
+      return {
+        answer: 10 + more,
+        answerType: "tenFrame",
+        display: { filled: 10 + more, frames: 2, frameMode: "count", promptText: "A full ten frame and some more! How many in all?" },
+        representation: "tenFrame",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["offByOne"],
+      };
+    },
+  },
+
   // 14 — a story carrying a quantity that must NOT be used.
   {
     id: "countGroupsExtraneous",

@@ -1038,15 +1038,24 @@ export default function MathExplorer({ initialMode }) {
           (() => {
             const { Component, props } = getWidget(answerType);
             return (
-              <Component
-                key={questionKeyRef.current}
-                onSubmit={submitAnswer}
-                feedback={feedback}
-                theme={theme}
-                lowMotionMode={lowMotionMode}
-                lowEndDevice={lowEndDevice}
-                {...(props ? props(currentQ, { revealAnswer, shakenChoice }) : {})}
-              />
+              // Same celebration as the choice bubbles: a correct answer earns
+              // confetti no matter which widget it came through.
+              <div className="relative">
+                <Component
+                  key={questionKeyRef.current}
+                  onSubmit={submitAnswer}
+                  feedback={feedback}
+                  theme={theme}
+                  lowMotionMode={lowMotionMode}
+                  lowEndDevice={lowEndDevice}
+                  {...(props ? props(currentQ, { revealAnswer, shakenChoice }) : {})}
+                />
+                {feedback === "correct" && !lowMotionMode && (
+                  <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+                    <ConfettiBurst intensity={lowEndDevice ? "light" : "normal"} />
+                  </div>
+                )}
+              </div>
             );
           })()
         ) : (

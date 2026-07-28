@@ -12,8 +12,9 @@ import { buildDistractors } from "./distractors";
  * against a fraction, placing it as a NUMBER on a line, comparing two of them,
  * and judging someone else's comparison.
  *
- * Difficulty is structural: band 1 (levels 1-3) stays in tenths off a model,
- * band 2 (4-6) adds words/fraction conversion and the number line, band 3
+ * Difficulty is structural: band 1 (levels 1-3) stays in tenths — models,
+ * dimes, word names, the 0-1 number line and single-place comparison — band 2
+ * (4-6) adds words/fraction conversion and the number line past 1, band 3
  * (7-10) adds hundredths, equivalence (0.4 = 0.40), ordering and error analysis
  * — the place where `longerIsLarger` actually shows up.
  *
@@ -62,10 +63,56 @@ export const DECIMAL_VARIETIES = [
     misconceptions: ["decimalPointDrift", "decimalAsWholeNumber"],
     build() {
       const shaded = randInt(1, 9);
+      // Every stem keeps the literal "and N are shaded" fragment: the pinned
+      // recomputation in m4Fractions.spec.js reads the count from exactly it.
+      const prompt = pick([
+        `A strip is split into 10 equal parts and ${shaded} are shaded. Write that as a decimal.`,
+        `A ribbon is folded into 10 equal parts and ${shaded} are shaded. Write the shaded part as a decimal.`,
+        `A poster is divided into 10 equal panels and ${shaded} are shaded. Write the shaded amount as a decimal.`,
+        `A bar shows 10 equal pieces and ${shaded} are shaded. Which decimal does the shading show? Write it.`,
+      ]);
       return {
         answer: dec2(shaded / 10),
         answerType: "decimal",
-        prompt: `A strip is split into 10 equal parts and ${shaded} are shaded. Write that as a decimal.`,
+        prompt,
+      };
+    },
+  },
+
+  {
+    id: "dimesAsTenths",
+    subskill: "tenthsHundredths",
+    bands: [1, 2],
+    family: APPLICATION,
+    demand: "DOK2",
+    representation: "verbalContext",
+    misconceptions: ["placeValueSlip", "decimalAsWholeNumber"],
+    build() {
+      const who = pick(NAMES);
+      const dimes = randInt(1, 9);
+      return {
+        answer: dec2(dimes / 10),
+        answerType: "decimal",
+        prompt: `A dime is one tenth of a dollar. ${who} has ${dimes} dimes and no other coins. Write ${who}'s money as a decimal part of a dollar.`,
+      };
+    },
+  },
+
+  {
+    id: "decimalFromWordName",
+    subskill: "tenthsHundredths",
+    bands: [1, 2],
+    family: PROCEDURAL,
+    demand: "DOK1",
+    representation: "symbolic",
+    misconceptions: ["placeValueSlip", "decimalAsWholeNumber"],
+    build() {
+      const words = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+      const n = randInt(1, 9);
+      return {
+        answer: dec2(n / 10),
+        answerType: "decimal",
+        prompt: `A number is written out in words: ${words[n - 1]} tenths. Write the same number as a decimal.`,
       };
     },
   },
@@ -164,6 +211,30 @@ export const DECIMAL_VARIETIES = [
   },
 
   {
+    id: "decimalForFraction",
+    subskill: "fractionToDecimal",
+    bands: [1],
+    family: CONCEPTUAL,
+    demand: "DOK1",
+    representation: "symbolic",
+    misconceptions: ["decimalPointDrift", "decimalAsWholeNumber"],
+    build() {
+      const num = randInt(1, 9);
+      const value = dec2(num / 10);
+      return {
+        answer: value,
+        answerType: "choice",
+        choices: optionSet(value, [
+          dec2(num), // the decimal point ignored entirely
+          dec2(num / 100), // drifted one place too far
+          dec2((num + 1) / 10), // a near miss on the digit
+        ]),
+        prompt: `Which decimal names the fraction ${num}/10?`,
+      };
+    },
+  },
+
+  {
     id: "decimalToFraction",
     subskill: "fractionToDecimal",
     bands: [2, 3],
@@ -219,6 +290,51 @@ export const DECIMAL_VARIETIES = [
   },
 
   {
+    id: "decimalTickRead",
+    subskill: "decimalAsNumber",
+    bands: [1, 2],
+    family: CONCEPTUAL,
+    demand: "DOK2",
+    representation: "visual",
+    misconceptions: ["decimalAsWholeNumber", "placeValueSlip"],
+    build() {
+      const tenths = randInt(1, 9);
+      const point = pick(["A", "B", "P"]);
+      const value = dec2(tenths / 10);
+      return {
+        answer: value,
+        answerType: "choice",
+        choices: optionSet(value, [
+          dec2(tenths), // the tick count read as a whole number
+          dec2(tenths / 100), // a place too small
+          dec2((10 - tenths) / 10), // counted from the wrong end
+          dec2((tenths + 1) / 10),
+        ]),
+        prompt: `A number line runs from 0 to 1 in tenths. A dot marks point ${point}, ${tenths} ticks after 0. Which decimal sits at point ${point}?`,
+      };
+    },
+  },
+
+  {
+    id: "countUpByTenths",
+    subskill: "decimalAsNumber",
+    bands: [1, 2],
+    family: PROCEDURAL,
+    demand: "DOK1",
+    representation: "symbolic",
+    misconceptions: ["decimalAsWholeNumber", "decimalPointDrift"],
+    build() {
+      const start = randInt(1, 6);
+      const seq = [start, start + 1, start + 2].map((t) => dec2(t / 10));
+      return {
+        answer: dec2((start + 3) / 10),
+        answerType: "decimal",
+        prompt: `Count up by tenths: ${seq[0]}, ${seq[1]}, ${seq[2]}, and then one more step. Write the next decimal in the count.`,
+      };
+    },
+  },
+
+  {
     id: "decimalNumberLineRead",
     subskill: "decimalAsNumber",
     bands: [2, 3],
@@ -269,6 +385,26 @@ export const DECIMAL_VARIETIES = [
         answer: a > b ? ">" : a < b ? "<" : "=",
         answerType: "symbolSelect",
         prompt: `Compare: ${a} ? ${b}. Use <, >, or =.`,
+      };
+    },
+  },
+
+  {
+    id: "moreShadedTenths",
+    subskill: "compareDecimals",
+    bands: [1],
+    family: CONCEPTUAL,
+    demand: "DOK2",
+    representation: "visual",
+    misconceptions: ["longerIsLarger", "decimalAsWholeNumber"],
+    build() {
+      const counts = shuffleArray([1, 2, 3, 4, 5, 6, 7, 8, 9]).slice(0, 3);
+      const decs = counts.map((c) => dec2(c / 10));
+      return {
+        answer: dec2(Math.max(...counts) / 10),
+        answerType: "choice",
+        choices: shuffleArray([...decs]),
+        prompt: `Three bars each show 10 equal parts. They have ${counts[0]}, ${counts[1]} and ${counts[2]} parts shaded. Which decimal is the greatest: ${decs[0]}, ${decs[1]} or ${decs[2]}?`,
       };
     },
   },

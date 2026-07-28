@@ -152,7 +152,12 @@ describe("mode generation coverage", () => {
     // Early levels keep single-digit facts as multiple choice (no numberPad).
     for (let i = 0; i < 40; i++) {
       const q = mult.generate(3, { noFormats: true });
-      expect(q.answerType).toBeUndefined();
+      // Small-band items are choice-based by default, but the variety
+      // re-dressing may legitimately render one as a typed spoken-number or
+      // picture item — never as a two-digit computation.
+      expect([undefined, "numberPad"]).toContain(q.answerType);
+      const quantities = [q.a, q.b, q.answer].sort((x, y) => x - y);
+      expect(quantities[0] * quantities[1]).toBe(quantities[2]);
     }
   });
 

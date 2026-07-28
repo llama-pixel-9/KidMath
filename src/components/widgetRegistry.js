@@ -12,6 +12,7 @@ import MultiSelect from "./MultiSelect.jsx";
 import NumberLine from "./NumberLine.jsx";
 import ShapeFigure from "./ShapeFigure.jsx";
 import CoinTray from "./CoinTray.jsx";
+import TenFrame from "./TenFrame.jsx";
 
 /**
  * answerType -> answer widget.
@@ -83,6 +84,15 @@ export const WIDGETS = {
     props: (q) => ({
       coins: q.display?.coins || [],
       mode: q.display?.coinMode || "count",
+    }),
+  },
+  tenFrame: {
+    Component: TenFrame,
+    props: (q) => ({
+      filled: q.display?.filled ?? 0,
+      filledB: q.display?.filledB ?? 0,
+      frames: q.display?.frames ?? 1,
+      mode: q.display?.frameMode || "count",
     }),
   },
 };

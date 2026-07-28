@@ -32,6 +32,8 @@ const promptOf = (q) => q.display?.promptText || "";
 const numsIn = (s) => (String(s).match(/-?\d+/g) || []).map(Number);
 /** Grapheme count: the emoji in this app are single code points. */
 const glyphs = (s) => [...s].length;
+/** How many pictographic glyphs (emoji) appear anywhere in a string. */
+const emojiCount = (s) => [...s].filter((ch) => /\p{Extended_Pictographic}/u.test(ch)).length;
 const symbolFor = (x, y) => (x > y ? ">" : x < y ? "<" : "=");
 const digitAt = (n, place) =>
   place === "ones" ? n % 10 : place === "tens" ? Math.floor(n / 10) % 10 : Math.floor(n / 100) % 10;
@@ -70,6 +72,13 @@ const COUNTING = {
   countScatteredSet: (q) => q.display.count,
   writeNumeralForSet: (q) => q.display.count,
   subitizeSmallSet: (q) => q.display.count,
+  // Ten-frame varieties: the frame state IS the item, so the answer re-derives
+  // from `filled` (and the build prompt's stated target).
+  tenFrameCount: (q) => q.display.filled,
+  tenFrameEmpty: (q) => 10 - q.display.filled,
+  tenFrameBuild: (q) => numsIn(promptOf(q))[0],
+  tenFrameMakeTen: (q) => 10 - q.display.filled,
+  teenFrameCount: (q) => q.display.filled,
   arrangementInvariance: (q) => {
     const m = promptOf(q).match(/Group A: (\S+) Group B: (\S+)/);
     return glyphs(m[1]) === glyphs(m[2]) ? "Yes" : "No";
@@ -197,6 +206,36 @@ const SKIP = {
     const m = promptOf(q).match(/make (\d+) jumps of (\d+)/);
     return Number(m[1]) * Number(m[2]);
   },
+  // The socks/mittens/shoes ARE drawn in the prompt: counting the emoji is the
+  // answer, no trust in the stated pair count needed.
+  pairsOfObjects: (q) => emojiCount(promptOf(q)),
+  // One hand emoji = 5 fingers, one dime emoji = 10 cents; the per-object value
+  // is restated in the prompt, so it is read from there rather than assumed.
+  fingersByFives: (q) => emojiCount(promptOf(q)) * numsIn(promptOf(q))[0],
+  dimesToCents: (q) => emojiCount(promptOf(q)) * numsIn(promptOf(q))[0],
+  countSongNext: (q) => {
+    // numsIn -> [step, t1, t2, t3]; extend the sung run by its own difference.
+    const run = numsIn(promptOf(q)).slice(1);
+    expect(run[1] - run[0]).toBe(run[2] - run[1]);
+    return run[2] + (run[1] - run[0]);
+  },
+  decadeCountBack: (q) => {
+    // numsIn -> [10, top, top-10, top-20]; the run's own (negative) step rules.
+    const run = numsIn(promptOf(q)).slice(1);
+    expect(run[1] - run[0]).toBe(run[2] - run[1]);
+    return run[2] + (run[1] - run[0]);
+  },
+  whichNotInCount: (q) => {
+    const step = numsIn(promptOf(q))[0];
+    const odd = q.choices.filter((c) => c % step !== 0);
+    expect(odd).toHaveLength(1);
+    return odd[0];
+  },
+  pairsStory: (q) => {
+    const [pairs, perPair] = numsIn(promptOf(q));
+    return pairs * perPair;
+  },
+  tenFrameTwos: (q) => q.display.filled,
 };
 
 const PLACE_VALUE = {
@@ -268,6 +307,16 @@ const PLACE_VALUE = {
     const digit = numsIn(promptOf(q))[0];
     return digit * (promptOf(q).includes("hundreds") ? 100 : 10);
   },
+  // The two frames render `filled` counters; that count IS the teen number.
+  teenTenFrames: (q) => q.display.filled,
+  teenTenAndOnes: (q) => numsIn(promptOf(q))[0] - 10,
+  tensMakeNumber: (q) => numsIn(promptOf(q))[0] / 10,
+  digitMeaning: (q) => {
+    const [number, digit] = numsIn(promptOf(q));
+    // The asked-about digit must actually sit in the tens place of the number.
+    expect(digitAt(number, "tens")).toBe(digit);
+    return digit * 10;
+  },
 };
 
 const DISCS = {
@@ -322,6 +371,38 @@ const DISCS = {
     const total = tens * 10 + ones;
     expect(total % boxes).toBe(0);
     return total / boxes;
+  },
+  countTensDiscs: (q) => q.display.cols.reduce((s, c) => s + c.place * c.count, 0),
+  whichNumberShown: (q) => {
+    const [tens, ones] = numsIn(promptOf(q));
+    return tens * 10 + ones;
+  },
+  makeNumberFromDiscs: (q) => {
+    const [tens, ones] = numsIn(promptOf(q));
+    return tens * 10 + ones;
+  },
+  oneMoreDisc: (q) => {
+    const number = numsIn(promptOf(q))[0];
+    return number + (/1 more tens disc/.test(promptOf(q)) ? 10 : 1);
+  },
+  oneLessDisc: (q) => {
+    const [tens, ones] = numsIn(promptOf(q));
+    return tens * 10 + ones - (/Take away 1 tens disc/.test(promptOf(q)) ? 10 : 1);
+  },
+  tradeTenOnesForTens: (q) => {
+    // numsIn -> [total ones, 10 per trade, 1 ten received].
+    const [total, perTrade] = numsIn(promptOf(q));
+    expect(total % perTrade).toBe(0);
+    return total / perTrade;
+  },
+  compareTwoMats: (q) => {
+    const [t1, o1, t2, o2] = numsIn(promptOf(q));
+    return t1 * 10 + o1 > t2 * 10 + o2 ? "Mat A" : "Mat B";
+  },
+  nextDiscCount: (q) => {
+    const run = numsIn(promptOf(q));
+    expect(run[1] - run[0]).toBe(run[2] - run[1]);
+    return run[2] + (run[1] - run[0]);
   },
 };
 
@@ -382,6 +463,27 @@ const BONDS = {
     expect(odd).toHaveLength(1);
     return odd[0];
   },
+  bondSentence: (q) => {
+    // "___ and part make whole" -> numsIn gives [part, whole].
+    const [part, whole] = numsIn(promptOf(q));
+    return whole - part;
+  },
+  makeTenFrameBond: (q) => 10 - q.display.filled,
+  doublesBond: (q) => {
+    const [x, y] = numsIn(promptOf(q));
+    expect(x).toBe(y);
+    return x + y;
+  },
+  storyWholeUnknown: (q) => {
+    const [p1, p2] = numsIn(promptOf(q));
+    return p1 + p2;
+  },
+  whichPairMakesWhole: (q) => {
+    const whole = numsIn(promptOf(q))[0];
+    const right = q.choices.filter((c) => sumExpr(c) === whole);
+    expect(right).toHaveLength(1);
+    return right[0];
+  },
 };
 
 const COMPARING = {
@@ -436,6 +538,19 @@ const COMPARING = {
     return trueOnes;
   },
   errorAnalysisSymbolFlip: (q) => symbolFor(q.a, q.b),
+  whichSetFewer: (q) => {
+    const m = promptOf(q).match(/Tray A: (\S+) Tray B: (\S+)/);
+    return glyphs(m[1]) < glyphs(m[2]) ? "Tray A" : "Tray B";
+  },
+  oneMoreOneLess: (q) => {
+    const n = numsIn(promptOf(q))[0];
+    return promptOf(q).includes("one more") ? n + 1 : n - 1;
+  },
+  tenFrameGapToTen: (q) => 10 - q.display.filled,
+  storyWhoHasFewer: (q) => {
+    const m = promptOf(q).match(/(\w+) has (\d+) \w+\. (\w+) has (\d+)/);
+    return Number(m[2]) < Number(m[4]) ? m[1] : m[3];
+  },
   wouldYouRather: (q) => {
     const [bagsA, perA, bagsB, perB] = numsIn(promptOf(q));
     return bagsA * perA > bagsB * perB ? `${bagsA} bags of ${perA}` : `${bagsB} bags of ${perB}`;

@@ -43,6 +43,8 @@ import { getModeConfig } from "./modes";
 import { ensureModeLoaded } from "./itemBank.js";
 import { isVerbalPrompt } from "./modes/helpers";
 import { saveProgress, loadProgress, mergeLocalToCloud } from "./progressStore";
+import { recordSessionEnd, currentStreak, starsToday } from "./engagement/engagementStore";
+import JourneyMap from "./engagement/JourneyMap.jsx";
 import { useAuth } from "./useAuth";
 import { useTheme } from "./useTheme";
 import {
@@ -234,7 +236,7 @@ function LevelUpToast() {
   );
 }
 
-function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, lifetimeStars, onPlayAgain }) {
+function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, lifetimeStars, engagement, onPlayAgain }) {
   const { theme } = useTheme();
   const ratio = total > 0 ? firstTryCorrect / total : 0;
 
@@ -283,9 +285,29 @@ function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, li
             You mastered {retriesMastered} tricky {retriesMastered === 1 ? "one" : "ones"} today!
           </motion.p>
         )}
-        <p className={`text-xs ${theme.textMuted} mt-1`}>
-          Reached Level {level}
-        </p>
+        <div className="mt-3">
+          <JourneyMap level={level} compact />
+        </div>
+        {engagement?.streak > 1 && (
+          <motion.p
+            className="text-sm font-bold text-orange-600 mt-2"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: engagement.streakExtended ? [0.8, 1.2, 1] : 1 }}
+            transition={{ delay: 0.5 }}
+          >
+            🔥 {engagement.streak} days in a row!
+          </motion.p>
+        )}
+        {engagement?.goalJustMet && (
+          <motion.p
+            className="text-sm font-bold text-emerald-600 mt-1"
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.65 }}
+          >
+            🎯 Daily goal done — {engagement.todayStars} stars today!
+          </motion.p>
+        )}
         <div className="flex justify-center gap-1 mt-3 flex-wrap">
           {Array.from({ length: Math.min(firstTryCorrect, 15) }, (_, i) => (
             <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />
@@ -685,6 +707,7 @@ export default function MathExplorer({ initialMode }) {
   const [showLevelUp, setShowLevelUp] = useState(false);
   const [revealAnswer, setRevealAnswer] = useState(null);
   const [lifetimeStars, setLifetimeStars] = useState(0);
+  const [engagement, setEngagement] = useState(null);
   const [showLoginPrompt, setShowLoginPrompt] = useState(false);
   const [muted, setMutedState] = useState(isMuted);
   const [allowWordProblems, setAllowWordProblems] = useState(() => loadAllowWordProblemsSync());
@@ -836,9 +859,23 @@ export default function MathExplorer({ initialMode }) {
   const finishSession = useCallback(async (sess) => {
     const lt = await persistSession(mode, sess);
     setLifetimeStars(lt);
+    // The engagement loop: bank today's stars, roll the day streak, and hand
+    // the overlay exactly the moments worth celebrating.
+    const { state: eng, events } = recordSessionEnd(sess.firstTryCorrect ?? 0);
+    setEngagement({
+      streak: currentStreak(eng),
+      streakExtended: events.streakExtended,
+      goalJustMet: events.goalJustMet,
+      todayStars: starsToday(eng),
+    });
     setShowComplete(true);
     telemetryRef.current.inc("setsCompleted");
-    telemetryRef.current.recordEvent("set_complete", { mode, firstTryCorrect: sess.firstTryCorrect });
+    telemetryRef.current.recordEvent("set_complete", {
+      mode,
+      firstTryCorrect: sess.firstTryCorrect,
+      streakDays: currentStreak(eng),
+      dailyGoalMet: starsToday(eng) >= 10,
+    });
     playCompleteSound();
   }, [mode]);
 
@@ -1103,6 +1140,7 @@ export default function MathExplorer({ initialMode }) {
             total={session.questionsAnswered}
             level={session.level}
             lifetimeStars={lifetimeStars}
+            engagement={engagement}
             onPlayAgain={() => startNewSession()}
           />
         )}

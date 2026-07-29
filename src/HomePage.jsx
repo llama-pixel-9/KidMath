@@ -32,8 +32,14 @@ import {
   FileText,
   Heart,
 } from "lucide-react";
+import { useState } from "react";
 import { useTheme } from "./useTheme";
 import { MODE_IDS, MODE_GROUPS, getModeConfig } from "./modes";
+import { loadProgressSync } from "./progressStore";
+import { loadEngagement, starBalance, currentStreak, starsToday } from "./engagement/engagementStore";
+import EngagementBar from "./engagement/EngagementBar.jsx";
+import StickerBook from "./engagement/StickerBook.jsx";
+import { rankForLevel } from "./engagement/ranks.js";
 
 const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork, BarChart3, CircleDot, Sigma, Ruler, Coins, Spline, Scale, Clock, ChartColumn, Triangle, Shapes };
 
@@ -70,6 +76,9 @@ const STEPS = [
 export default function HomePage() {
   const { theme } = useTheme();
   const navigate = useNavigate();
+  const [stickersOpen, setStickersOpen] = useState(false);
+  // Read-once snapshot per mount; the book updates its own copy while open.
+  const [engagement] = useState(loadEngagement);
 
   return (
     <main className={`min-h-screen ${theme.bg} transition-colors duration-300`}>
@@ -103,11 +112,19 @@ export default function HomePage() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="max-w-2xl mx-auto"
         >
-          <div className={`inline-flex items-center gap-2 ${theme.cardBg} backdrop-blur rounded-full px-4 py-1.5 mb-6 shadow-sm`}>
+          <div className={`inline-flex items-center gap-2 ${theme.cardBg} backdrop-blur rounded-full px-4 py-1.5 mb-3 shadow-sm`}>
             <span className="text-lg">{theme.emoji}</span>
             <span className={`text-sm font-semibold ${theme.textSecondary}`}>
               Free math practice for K-5
             </span>
+          </div>
+          <div className="mb-6">
+            <EngagementBar
+              balance={starBalance(engagement)}
+              streak={currentStreak(engagement)}
+              today={starsToday(engagement)}
+              onOpenStickers={() => setStickersOpen(true)}
+            />
           </div>
           <h1 className={`text-5xl sm:text-6xl font-extrabold ${theme.textPrimary} leading-tight`}>
             Kid Math{" "}
@@ -203,6 +220,17 @@ export default function HomePage() {
                       <p className={`mt-1 text-xs ${theme.textSecondary} leading-relaxed`}>
                         {config.description}
                       </p>
+                      {(() => {
+                        // The journey pin: where this child stands in the mode.
+                        const lv = loadProgressSync(id)?.level || 1;
+                        if (lv <= 1) return null;
+                        const rank = rankForLevel(lv);
+                        return (
+                          <span className={`mt-auto pt-1 text-[11px] font-extrabold ${theme.textMuted}`}>
+                            {rank.emoji} Lv {lv} · {rank.name}
+                          </span>
+                        );
+                      })()}
                     </motion.button>
                   );
                 })}
@@ -211,6 +239,8 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      <StickerBook open={stickersOpen} onClose={() => setStickersOpen(false)} />
 
       {/* How It Works */}
       <section className="px-4 py-16 bg-white/30">

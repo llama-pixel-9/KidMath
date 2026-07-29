@@ -1,0 +1,86 @@
+[
+  {
+    "exemplarId": "comparing-benchmarkCompare-application-K_1-x001",
+    "modeId": "comparing",
+    "subskill": "benchmarkCompare",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-017",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A jar holds 4 marbles. The benchmark is 5. Compare 4 to 5.",
+    "payload": {
+      "a": 4,
+      "b": 5,
+      "op": "?",
+      "answer": "<",
+      "display": {
+        "promptText": "A jar holds 4 marbles. The benchmark is 5. Compare 4 to 5.",
+        "promptOptions": [
+          "A jar has 4 marbles. A full jar holds 5 marbles. Compare 4 to 5."
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-benchmarkCompare-application-K_1-x002",
+    "modeId": "comparing",
+    "subskill": "benchmarkCompare",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-018",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Lia has 7 stickers; the benchmark is 5. Compare 7 to 5.",
+    "payload": {
+      "a": 7,
+      "b": 5,
+      "op": "?",
+      "answer": ">",
+      "display": {
+        "promptText": "Lia has 7 stickers; the benchmark is 5. Compare 7 to 5.",
+        "promptOptions": [
+          "Lia collected 7 stickers. Her friend has 5 stickers. Compare 7 to 5."
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-benchmarkCompare-application-K_1-x003",
+    "modeId": "comparing",
+    "subskill": "benchmarkCompare",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-019",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Both Sam and Pat have 10 grapes. Compare 10 to 10.",
+    "payload": {
+      "a": 10,
+      "b": 10,
+      "op": "?",
+      "answer": "=",
+      "display": {
+        "promptText": "Both Sam and Pat have 10 grapes. Compare 10 to 10.",
+        "promptOptions": [
+          "Sam picked 10 grapes. Pat picked 10 grapes. Compare 10 to 10."
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

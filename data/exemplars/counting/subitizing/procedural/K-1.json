@@ -1,0 +1,77 @@
+[
+  {
+    "exemplarId": "counting-subitizing-procedural-K_1-x001",
+    "modeId": "counting",
+    "subskill": "subitizing",
+    "itemFamily": "procedural",
+    "levelBand": "K-1",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-proc-subitizing-K1-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Count: 1, 2, 3, 4. What is the count?",
+    "payload": {
+      "a": 4,
+      "b": null,
+      "op": "count",
+      "answer": 4,
+      "display": {
+        "promptText": "Count: 1, 2, 3, 4. What is the count?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "counting-subitizing-procedural-K_1-x002",
+    "modeId": "counting",
+    "subskill": "subitizing",
+    "itemFamily": "procedural",
+    "levelBand": "K-1",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-proc-subitizing-K1-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Count: 1, 2, 3, 4, 5. What is the count?",
+    "payload": {
+      "a": 5,
+      "b": null,
+      "op": "count",
+      "answer": 5,
+      "display": {
+        "promptText": "Count: 1, 2, 3, 4, 5. What is the count?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "counting-subitizing-procedural-K_1-x003",
+    "modeId": "counting",
+    "subskill": "subitizing",
+    "itemFamily": "procedural",
+    "levelBand": "K-1",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-proc-subitizing-K1-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Count: 1, 2, 3. What is the count?",
+    "payload": {
+      "a": 3,
+      "b": null,
+      "op": "count",
+      "answer": 3,
+      "display": {
+        "promptText": "Count: 1, 2, 3. What is the count?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

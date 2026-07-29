@@ -1,0 +1,77 @@
+[
+  {
+    "exemplarId": "comparing-benchmarkCompare-procedural-K_1-x001",
+    "modeId": "comparing",
+    "subskill": "benchmarkCompare",
+    "itemFamily": "procedural",
+    "levelBand": "K-1",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-proc-benchmarkCompare-K1-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Compare 4 and 5.",
+    "payload": {
+      "a": 4,
+      "b": 5,
+      "op": "?",
+      "answer": "<",
+      "display": {
+        "promptText": "Compare 4 and 5."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-benchmarkCompare-procedural-K_1-x002",
+    "modeId": "comparing",
+    "subskill": "benchmarkCompare",
+    "itemFamily": "procedural",
+    "levelBand": "K-1",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-proc-benchmarkCompare-K1-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Compare 7 and 5.",
+    "payload": {
+      "a": 7,
+      "b": 5,
+      "op": "?",
+      "answer": ">",
+      "display": {
+        "promptText": "Compare 7 and 5."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-benchmarkCompare-procedural-K_1-x003",
+    "modeId": "comparing",
+    "subskill": "benchmarkCompare",
+    "itemFamily": "procedural",
+    "levelBand": "K-1",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-proc-benchmarkCompare-K1-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Compare 10 and 10.",
+    "payload": {
+      "a": 10,
+      "b": 10,
+      "op": "?",
+      "answer": "=",
+      "display": {
+        "promptText": "Compare 10 and 10."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

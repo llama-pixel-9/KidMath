@@ -1,0 +1,152 @@
+[
+  {
+    "exemplarId": "division-inverseFact-application-4_5-x001",
+    "modeId": "division",
+    "subskill": "inverseFact",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-004",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "56 stickers are packed equally into 8 packets. How many stickers are in each packet?",
+    "payload": {
+      "a": 56,
+      "b": 8,
+      "op": "÷",
+      "answer": 7,
+      "display": {
+        "promptText": "56 stickers are packed equally into 8 packets. How many stickers are in each packet?",
+        "promptOptions": [
+          "Jake has 56 stickers. He shares them equally among 8 friends. How many stickers does each friend get?",
+          "Lily has 56 stickers. She puts them equally in 8 envelopes. How many stickers are in each envelope?",
+          "There are 56 stickers to divide equally into 8 packets. How many stickers will each packet have?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-inverseFact-application-4_5-x002",
+    "modeId": "division",
+    "subskill": "inverseFact",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-005",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "42 grapes are placed equally into 7 small bowls. How many grapes are in each bowl?",
+    "payload": {
+      "a": 42,
+      "b": 7,
+      "op": "÷",
+      "answer": 6,
+      "display": {
+        "promptText": "42 grapes are placed equally into 7 small bowls. How many grapes are in each bowl?",
+        "promptOptions": [
+          "Mom has 42 grapes. She puts them equally in 7 small bowls. How many grapes are in each bowl?",
+          "There are 42 grapes to share equally among 7 friends. How many grapes does each friend get?",
+          "A farmer has 42 grapes. She divides them equally into 7 baskets. How many grapes are in each basket?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-inverseFact-application-4_5-x003",
+    "modeId": "division",
+    "subskill": "inverseFact",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-006",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "81 chairs are arranged in 9 equal rows. How many chairs are in each row?",
+    "payload": {
+      "a": 81,
+      "b": 9,
+      "op": "÷",
+      "answer": 9,
+      "display": {
+        "promptText": "81 chairs are arranged in 9 equal rows. How many chairs are in each row?",
+        "promptOptions": [
+          "A school has 81 chairs. They arrange them equally in 9 rows. How many chairs are in each row?",
+          "There are 81 chairs to divide equally into 9 rows. How many chairs go in each row?",
+          "The gym staff has 81 chairs. They put them equally in 9 rows. How many chairs are in each row?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-inverseFact-application-4_5-x004",
+    "modeId": "division",
+    "subskill": "inverseFact",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-011",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "64 beads are placed equally on 8 strings. How many beads are on each string?",
+    "payload": {
+      "a": 64,
+      "b": 8,
+      "op": "÷",
+      "answer": 8,
+      "display": {
+        "promptText": "64 beads are placed equally on 8 strings. How many beads are on each string?",
+        "promptOptions": [
+          "Zara has 64 beads. She puts them equally on 8 strings. How many beads are on each string?",
+          "There are 64 beads to thread equally on 8 strings. How many beads are on each string?",
+          "A jewelry maker has 64 beads. She divides them equally among 8 strings. How many beads are on each string?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-inverseFact-application-4_5-x005",
+    "modeId": "division",
+    "subskill": "inverseFact",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-014",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "28 pears are placed equally into 4 baskets. How many pears go in each basket?",
+    "payload": {
+      "a": 28,
+      "b": 4,
+      "op": "÷",
+      "answer": 7,
+      "display": {
+        "promptText": "28 pears are placed equally into 4 baskets. How many pears go in each basket?",
+        "promptOptions": [
+          "Dan has 28 pears. He puts them equally in 4 baskets. How many pears are in each basket?",
+          "There are 28 pears to divide equally into 4 baskets. How many pears go in each basket?",
+          "A farmer has 28 pears. She gives them equally to 4 customers. How many pears does each customer get?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

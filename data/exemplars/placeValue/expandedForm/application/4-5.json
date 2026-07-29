@@ -1,0 +1,89 @@
+[
+  {
+    "exemplarId": "placeValue-expandedForm-application-4_5-x001",
+    "modeId": "placeValue",
+    "subskill": "expandedForm",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-028",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A counter shows 23 tens and 4 ones. What number is on the counter?",
+    "payload": {
+      "a": 234,
+      "b": null,
+      "op": "place",
+      "answer": 234,
+      "display": {
+        "ones": 4,
+        "tens": 23,
+        "type": "build",
+        "number": 234,
+        "promptText": "A counter shows 23 tens and 4 ones. What number is on the counter?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-expandedForm-application-4_5-x002",
+    "modeId": "placeValue",
+    "subskill": "expandedForm",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-029",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A scoreboard reads 58 tens and 0 ones. What number does it show?",
+    "payload": {
+      "a": 580,
+      "b": null,
+      "op": "place",
+      "answer": 580,
+      "display": {
+        "ones": 0,
+        "tens": 58,
+        "type": "build",
+        "number": 580,
+        "promptText": "A scoreboard reads 58 tens and 0 ones. What number does it show?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-expandedForm-application-4_5-x003",
+    "modeId": "placeValue",
+    "subskill": "expandedForm",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-030",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A row shows 37 tens and 4 ones of beads. How many beads in the row?",
+    "payload": {
+      "a": 374,
+      "b": null,
+      "op": "place",
+      "answer": 374,
+      "display": {
+        "ones": 4,
+        "tens": 37,
+        "type": "build",
+        "number": 374,
+        "promptText": "A row shows 37 tens and 4 ones of beads. How many beads in the row?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

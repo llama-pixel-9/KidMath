@@ -1,0 +1,92 @@
+[
+  {
+    "exemplarId": "division-unknownQuotient-application-2_3-x001",
+    "modeId": "division",
+    "subskill": "unknownQuotient",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-030",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "20 books are placed on 5 shelves equally. How many books per shelf?",
+    "payload": {
+      "a": 20,
+      "b": 5,
+      "op": "÷",
+      "answer": 4,
+      "display": {
+        "promptText": "20 books are placed on 5 shelves equally. How many books per shelf?",
+        "promptOptions": [
+          "Tom has 20 books. He puts them equally on 5 shelves. How many books are on each shelf?",
+          "Mrs. Lee had 20 books. She arranged them equally on 5 shelves. How many books went on each shelf?",
+          "The library put 20 books equally on 5 shelves. How many books does each shelf have?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-unknownQuotient-application-2_3-x002",
+    "modeId": "division",
+    "subskill": "unknownQuotient",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-031",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "24 children are split into 8 small teams equally. How many per team?",
+    "payload": {
+      "a": 24,
+      "b": 8,
+      "op": "÷",
+      "answer": 3,
+      "display": {
+        "promptText": "24 children are split into 8 small teams equally. How many per team?",
+        "promptOptions": [
+          "The coach has 24 children. He puts them equally into 8 teams. How many children are on each team?",
+          "A teacher has 24 students. She splits them equally into 8 groups. How many students are in each group?",
+          "The gym class had 24 kids. They put them equally into 8 teams. How many kids are on each team?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-unknownQuotient-application-2_3-x003",
+    "modeId": "division",
+    "subskill": "unknownQuotient",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-032",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "30 candies are placed equally in 6 bags. How many candies per bag?",
+    "payload": {
+      "a": 30,
+      "b": 6,
+      "op": "÷",
+      "answer": 5,
+      "display": {
+        "promptText": "30 candies are placed equally in 6 bags. How many candies per bag?",
+        "promptOptions": [
+          "Javi has 30 candies. He puts them equally into 6 bags. How many candies are in each bag?",
+          "Emma had 30 candies. She packed them equally into 6 bags. How many candies went in each bag?",
+          "The store put 30 candies equally into 6 bags. How many candies does each bag have?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

@@ -1,0 +1,89 @@
+[
+  {
+    "exemplarId": "placeValue-regroupingSense-application-K_1-x001",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-031",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A bag has 10 candies plus 4 more. How many candies in total?",
+    "payload": {
+      "a": 14,
+      "b": null,
+      "op": "place",
+      "answer": 14,
+      "display": {
+        "ones": 4,
+        "tens": 1,
+        "type": "build",
+        "number": 14,
+        "promptText": "A bag has 10 candies plus 4 more. How many candies in total?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-regroupingSense-application-K_1-x002",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-032",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A counter has 10 marks plus 8 more. How many marks in total?",
+    "payload": {
+      "a": 18,
+      "b": null,
+      "op": "place",
+      "answer": 18,
+      "display": {
+        "ones": 8,
+        "tens": 1,
+        "type": "build",
+        "number": 18,
+        "promptText": "A counter has 10 marks plus 8 more. How many marks in total?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-regroupingSense-application-K_1-x003",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-033",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A row shows 20 cards plus 5 more. How many cards in total?",
+    "payload": {
+      "a": 25,
+      "b": null,
+      "op": "place",
+      "answer": 25,
+      "display": {
+        "ones": 5,
+        "tens": 2,
+        "type": "build",
+        "number": 25,
+        "promptText": "A row shows 20 cards plus 5 more. How many cards in total?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

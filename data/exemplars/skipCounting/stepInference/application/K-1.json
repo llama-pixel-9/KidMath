@@ -1,0 +1,108 @@
+[
+  {
+    "exemplarId": "skipCounting-stepInference-application-K_1-x001",
+    "modeId": "skipCounting",
+    "subskill": "stepInference",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-017",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A pattern shows 3, 6, 9. What's next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 12,
+      "display": {
+        "step": 3,
+        "sequence": [
+          3,
+          6,
+          9
+        ],
+        "promptText": "A pattern shows 3, 6, 9. What's next?",
+        "promptOptions": [
+          "Emma stacks 3 blocks each time. She has 3, then 6, then 9. How many after the next stack?",
+          "A pattern adds 3 each step: 3, 6, 9. What comes next?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-stepInference-application-K_1-x002",
+    "modeId": "skipCounting",
+    "subskill": "stepInference",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-018",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Odd numbers 1, 3, 5, 7. What's next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 9,
+      "display": {
+        "step": 2,
+        "sequence": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "promptText": "Odd numbers 1, 3, 5, 7. What's next?",
+        "promptOptions": [
+          "Mia counts odd numbers: 1, 3, 5, 7. What's the next one she says?",
+          "A pattern of odd numbers: 1, 3, 5, 7. What is the next odd number?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-stepInference-application-K_1-x003",
+    "modeId": "skipCounting",
+    "subskill": "stepInference",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-019",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A row counts 4, 8, 12. What's next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 16,
+      "display": {
+        "step": 4,
+        "sequence": [
+          4,
+          8,
+          12
+        ],
+        "promptText": "A row counts 4, 8, 12. What's next?",
+        "promptOptions": [
+          "Each shelf has 4 books. 1 shelf: 4, 2 shelves: 8, 3 shelves: 12. How many on 4 shelves?",
+          "A pattern counts by 4s: 4, 8, 12. What's next?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

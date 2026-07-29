@@ -1,0 +1,89 @@
+[
+  {
+    "exemplarId": "placeValue-expandedForm-procedural-2_3-x001",
+    "modeId": "placeValue",
+    "subskill": "expandedForm",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-proc-expandedForm-23-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "5 tens + 8 ones = ?",
+    "payload": {
+      "a": 58,
+      "b": null,
+      "op": "place",
+      "answer": 58,
+      "display": {
+        "ones": 8,
+        "tens": 5,
+        "type": "build",
+        "number": 58,
+        "promptText": "5 tens + 8 ones = ?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-expandedForm-procedural-2_3-x002",
+    "modeId": "placeValue",
+    "subskill": "expandedForm",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-proc-expandedForm-23-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "7 tens + 2 ones = ?",
+    "payload": {
+      "a": 72,
+      "b": null,
+      "op": "place",
+      "answer": 72,
+      "display": {
+        "ones": 2,
+        "tens": 7,
+        "type": "build",
+        "number": 72,
+        "promptText": "7 tens + 2 ones = ?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-expandedForm-procedural-2_3-x003",
+    "modeId": "placeValue",
+    "subskill": "expandedForm",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-proc-expandedForm-23-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "4 tens + 9 ones = ?",
+    "payload": {
+      "a": 49,
+      "b": null,
+      "op": "place",
+      "answer": 49,
+      "display": {
+        "ones": 9,
+        "tens": 4,
+        "type": "build",
+        "number": 49,
+        "promptText": "4 tens + 9 ones = ?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

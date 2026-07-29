@@ -1,0 +1,146 @@
+[
+  {
+    "exemplarId": "skipCounting-groupsToProduct-application-4_5-x001",
+    "modeId": "skipCounting",
+    "subskill": "groupsToProduct",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-005",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A scoreboard goes up by 5 points: 45, 50, 55. What score is next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 60,
+      "display": {
+        "step": 5,
+        "sequence": [
+          45,
+          50,
+          55
+        ],
+        "promptText": "A scoreboard goes up by 5 points: 45, 50, 55. What score is next?",
+        "promptOptions": [
+          "A team scores 45, then 50, then 55 points. What score is next?",
+          "A team's score goes up by 5 points: 45, 50, 55. What score is next?",
+          "Points grow by 5: 45, 50, 55. What's the next score?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-groupsToProduct-application-4_5-x002",
+    "modeId": "skipCounting",
+    "subskill": "groupsToProduct",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-006",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A class earns 5 stars per chapter: 75, 80, 85. How many stars after one more chapter?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 90,
+      "display": {
+        "step": 5,
+        "sequence": [
+          75,
+          80,
+          85
+        ],
+        "promptText": "A class earns 5 stars per chapter: 75, 80, 85. How many stars after one more chapter?",
+        "promptOptions": [
+          "A class earns 5 more stars each chapter: 75, 80, 85. How many stars next?",
+          "The class has 75 stars, then 80, then 85. They earn 5 more each chapter. How many next?",
+          "A class gets 5 stars for each chapter. After three: 75, 80, 85. How many next?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-groupsToProduct-application-4_5-x003",
+    "modeId": "skipCounting",
+    "subskill": "groupsToProduct",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-009",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A team adds 6 points each round: 12, 18, 24. How many points after one more round?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 30,
+      "display": {
+        "step": 6,
+        "sequence": [
+          12,
+          18,
+          24
+        ],
+        "promptText": "A team adds 6 points each round: 12, 18, 24. How many points after one more round?",
+        "promptOptions": [
+          "A team scores 12, then 18, then 24 points. It scores 6 more each round. How many next?",
+          "A team earns 6 more points each round: 12, 18, 24. How many points next?",
+          "Round 1 is 12 points. Round 2 is 18. Round 3 is 24. How many points in round 4?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-groupsToProduct-application-4_5-x004",
+    "modeId": "skipCounting",
+    "subskill": "groupsToProduct",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-012",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A pattern grows by 7 each step: 14, 21, 28. What comes next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 35,
+      "display": {
+        "step": 7,
+        "sequence": [
+          14,
+          21,
+          28
+        ],
+        "promptText": "A pattern grows by 7 each step: 14, 21, 28. What comes next?",
+        "promptOptions": [
+          "A pattern adds 7 each step: 14, 21, 28. What's the next number?",
+          "Numbers grow by 7: 14, 21, 28. What number comes next?",
+          "A sequence grows by 7 each time: 14, 21, 28. What comes next?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

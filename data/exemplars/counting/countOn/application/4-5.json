@@ -1,0 +1,115 @@
+[
+  {
+    "exemplarId": "counting-countOn-application-4_5-x001",
+    "modeId": "counting",
+    "subskill": "countOn",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-app-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A jar has 27 marbles. Count to find how many marbles are in the jar.",
+    "payload": {
+      "a": 27,
+      "b": null,
+      "op": "count",
+      "answer": 27,
+      "display": {
+        "promptText": "A jar has 27 marbles. Count to find how many marbles are in the jar.",
+        "promptOptions": [
+          "Priya has 27 marbles in a jar. How many marbles are in the jar?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "counting-countOn-application-4_5-x002",
+    "modeId": "counting",
+    "subskill": "countOn",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-app-004",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A garden has 42 tulips. How many tulips are in the garden?",
+    "payload": {
+      "a": 42,
+      "b": null,
+      "op": "count",
+      "answer": 42,
+      "display": {
+        "promptText": "A garden has 42 tulips. How many tulips are in the garden?",
+        "promptOptions": [
+          "Emma has 42 tulips in her garden. How many tulips are in the garden?",
+          "The gardener planted 42 tulips. How many tulips did the gardener plant?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "counting-countOn-application-4_5-x003",
+    "modeId": "counting",
+    "subskill": "countOn",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-app-008",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A row has 31 chairs set up for a play. How many chairs are in the row?",
+    "payload": {
+      "a": 31,
+      "b": null,
+      "op": "count",
+      "answer": 31,
+      "display": {
+        "promptText": "A row has 31 chairs set up for a play. How many chairs are in the row?",
+        "promptOptions": [
+          "The crew set up 31 chairs in a row for the play. How many chairs are in the row?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "counting-countOn-application-4_5-x004",
+    "modeId": "counting",
+    "subskill": "countOn",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-app-011",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A wall has 47 photos hung up. How many photos are on the wall?",
+    "payload": {
+      "a": 47,
+      "b": null,
+      "op": "count",
+      "answer": 47,
+      "display": {
+        "promptText": "A wall has 47 photos hung up. How many photos are on the wall?",
+        "promptOptions": [
+          "Jordan hung 47 photos on the wall. How many photos are on the wall?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

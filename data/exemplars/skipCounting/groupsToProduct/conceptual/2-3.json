@@ -1,0 +1,98 @@
+[
+  {
+    "exemplarId": "skipCounting-groupsToProduct-conceptual-2_3-x001",
+    "modeId": "skipCounting",
+    "subskill": "groupsToProduct",
+    "itemFamily": "conceptual",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-conc-groupsToProduct-23-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Use skip-counting by 4s for 5 groups of 4.",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 20,
+      "display": {
+        "step": 4,
+        "sequence": [
+          4,
+          8,
+          12,
+          16
+        ],
+        "promptText": "Use skip-counting by 4s for 5 groups of 4."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-groupsToProduct-conceptual-2_3-x002",
+    "modeId": "skipCounting",
+    "subskill": "groupsToProduct",
+    "itemFamily": "conceptual",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-conc-groupsToProduct-23-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Use skip-counting by 5s for 6 groups of 5.",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 30,
+      "display": {
+        "step": 5,
+        "sequence": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ],
+        "promptText": "Use skip-counting by 5s for 6 groups of 5."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-groupsToProduct-conceptual-2_3-x003",
+    "modeId": "skipCounting",
+    "subskill": "groupsToProduct",
+    "itemFamily": "conceptual",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-conc-groupsToProduct-23-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Use skip-counting by 6s for 4 groups of 6.",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 24,
+      "display": {
+        "step": 6,
+        "sequence": [
+          6,
+          12,
+          18
+        ],
+        "promptText": "Use skip-counting by 6s for 4 groups of 6."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

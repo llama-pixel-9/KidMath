@@ -1,0 +1,77 @@
+[
+  {
+    "exemplarId": "division-partitioning-procedural-K_1-x001",
+    "modeId": "division",
+    "subskill": "partitioning",
+    "itemFamily": "procedural",
+    "levelBand": "K-1",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-proc-partitioning-K1-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "6 ÷ 2 = ?",
+    "payload": {
+      "a": 6,
+      "b": 2,
+      "op": "÷",
+      "answer": 3,
+      "display": {
+        "promptText": "6 ÷ 2 = ?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-partitioning-procedural-K_1-x002",
+    "modeId": "division",
+    "subskill": "partitioning",
+    "itemFamily": "procedural",
+    "levelBand": "K-1",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-proc-partitioning-K1-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "8 ÷ 2 = ?",
+    "payload": {
+      "a": 8,
+      "b": 2,
+      "op": "÷",
+      "answer": 4,
+      "display": {
+        "promptText": "8 ÷ 2 = ?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-partitioning-procedural-K_1-x003",
+    "modeId": "division",
+    "subskill": "partitioning",
+    "itemFamily": "procedural",
+    "levelBand": "K-1",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-proc-partitioning-K1-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "4 ÷ 2 = ?",
+    "payload": {
+      "a": 4,
+      "b": 2,
+      "op": "÷",
+      "answer": 2,
+      "display": {
+        "promptText": "4 ÷ 2 = ?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

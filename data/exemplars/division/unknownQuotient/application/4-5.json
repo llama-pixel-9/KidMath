@@ -1,0 +1,122 @@
+[
+  {
+    "exemplarId": "division-unknownQuotient-application-4_5-x001",
+    "modeId": "division",
+    "subskill": "unknownQuotient",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "quotitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-007",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A team has 63 cones to share equally among 9 practice groups. How many cones does each group get?",
+    "payload": {
+      "a": 63,
+      "b": 9,
+      "op": "÷",
+      "answer": 7,
+      "display": {
+        "promptText": "A team has 63 cones to share equally among 9 practice groups. How many cones does each group get?",
+        "promptOptions": [
+          "A coach had 63 cones. He divided them equally among 9 practice groups. How many cones did each group get?",
+          "A team had 63 cones. They shared them equally among 9 practice groups. How many cones did each group get?",
+          "The team collected 63 cones for practice. Then they shared them equally among 9 groups. How many cones did each group get?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-unknownQuotient-application-4_5-x002",
+    "modeId": "division",
+    "subskill": "unknownQuotient",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "quotitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-008",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "48 cookies are packed 6 per box. How many boxes are filled?",
+    "payload": {
+      "a": 48,
+      "b": 6,
+      "op": "÷",
+      "answer": 8,
+      "display": {
+        "promptText": "48 cookies are packed 6 per box. How many boxes are filled?",
+        "promptOptions": [
+          "A baker had 48 cookies. She packed them 6 to a box. How many boxes did she fill?",
+          "Mom had 48 cookies. She packed 6 into each box. How many boxes did she fill?",
+          "A store had 48 cookies. The workers packed 6 in each box. How many boxes did they fill?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-unknownQuotient-application-4_5-x003",
+    "modeId": "division",
+    "subskill": "unknownQuotient",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "quotitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-009",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A baker uses 72 eggs, 8 eggs per batch. How many batches did the baker make?",
+    "payload": {
+      "a": 72,
+      "b": 8,
+      "op": "÷",
+      "answer": 9,
+      "display": {
+        "promptText": "A baker uses 72 eggs, 8 eggs per batch. How many batches did the baker make?",
+        "promptOptions": [
+          "A baker had 72 eggs. She used 8 eggs for each batch. How many batches did she make?",
+          "Grandma had 72 eggs. She used 8 eggs for each batch of cookies. How many batches did she make?",
+          "A bakery had 72 eggs. They used 8 eggs per batch. How many batches did they make?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-unknownQuotient-application-4_5-x004",
+    "modeId": "division",
+    "subskill": "unknownQuotient",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "quotitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-012",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "35 oranges are packed in bags of 5. How many bags did the store fill?",
+    "payload": {
+      "a": 35,
+      "b": 5,
+      "op": "÷",
+      "answer": 7,
+      "display": {
+        "promptText": "35 oranges are packed in bags of 5. How many bags did the store fill?",
+        "promptOptions": [
+          "A farmer had 35 oranges to sell. She packed them 5 to a bag. How many bags did she fill?",
+          "Mom had 35 oranges to pack. She put 5 in each bag. How many bags did she fill?",
+          "A store had 35 oranges. They packed 5 oranges in each bag. How many bags did they fill?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "exemplarId": "division-partitioning-conceptual-K_1-x001",
+    "modeId": "division",
+    "subskill": "partitioning",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-conc-partitioning-K1-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Share 6 fairly among 2: how many for each?",
+    "payload": {
+      "a": 6,
+      "b": 2,
+      "op": "÷",
+      "answer": 3,
+      "display": {
+        "promptText": "Share 6 fairly among 2: how many for each?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-partitioning-conceptual-K_1-x002",
+    "modeId": "division",
+    "subskill": "partitioning",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-conc-partitioning-K1-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "How many counters in each group when 8 counters are split into 2 equal groups?",
+    "payload": {
+      "a": 8,
+      "b": 2,
+      "op": "÷",
+      "answer": 4,
+      "display": {
+        "promptText": "How many counters in each group when 8 counters are split into 2 equal groups?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-partitioning-conceptual-K_1-x003",
+    "modeId": "division",
+    "subskill": "partitioning",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-conc-partitioning-K1-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Divide 4 into 2 equal parts. Each part is?",
+    "payload": {
+      "a": 4,
+      "b": 2,
+      "op": "÷",
+      "answer": 2,
+      "display": {
+        "promptText": "Divide 4 into 2 equal parts. Each part is?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

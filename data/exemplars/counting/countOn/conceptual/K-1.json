@@ -1,0 +1,77 @@
+[
+  {
+    "exemplarId": "counting-countOn-conceptual-K_1-x001",
+    "modeId": "counting",
+    "subskill": "countOn",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-conc-countOn-K1-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Use count-on from 4 to find 4 + 2.",
+    "payload": {
+      "a": 6,
+      "b": null,
+      "op": "count",
+      "answer": 6,
+      "display": {
+        "promptText": "Use count-on from 4 to find 4 + 2."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "counting-countOn-conceptual-K_1-x002",
+    "modeId": "counting",
+    "subskill": "countOn",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-conc-countOn-K1-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Use count-on from 5 to find 5 + 2.",
+    "payload": {
+      "a": 7,
+      "b": null,
+      "op": "count",
+      "answer": 7,
+      "display": {
+        "promptText": "Use count-on from 5 to find 5 + 2."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "counting-countOn-conceptual-K_1-x003",
+    "modeId": "counting",
+    "subskill": "countOn",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-conc-countOn-K1-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Use count-on from 6 to find 6 + 2.",
+    "payload": {
+      "a": 8,
+      "b": null,
+      "op": "count",
+      "answer": 8,
+      "display": {
+        "promptText": "Use count-on from 6 to find 6 + 2."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

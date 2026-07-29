@@ -1,0 +1,151 @@
+[
+  {
+    "exemplarId": "comparing-symbolSelection-application-4_5-x001",
+    "modeId": "comparing",
+    "subskill": "symbolSelection",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Lane A scored 246 points and Lane B scored 264 points. Which symbol compares Lane A to Lane B?",
+    "payload": {
+      "a": 246,
+      "b": 264,
+      "op": "?",
+      "answer": "<",
+      "display": {
+        "promptText": "Lane A scored 246 points and Lane B scored 264 points. Which symbol compares Lane A to Lane B?",
+        "promptOptions": [
+          "Sam scored 246 points. Alex scored 264 points. Which symbol compares their scores?",
+          "Two kids played a game. One got 246 points. The other got 264 points. Which symbol compares them?",
+          "Maya has 246 trading cards. Her brother has 264 cards. Which symbol compares how many they have?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-symbolSelection-application-4_5-x002",
+    "modeId": "comparing",
+    "subskill": "symbolSelection",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A class read 178 books and another class read 187 books. Which symbol compares 178 to 187?",
+    "payload": {
+      "a": 178,
+      "b": 187,
+      "op": "?",
+      "answer": "<",
+      "display": {
+        "promptText": "A class read 178 books and another class read 187 books. Which symbol compares 178 to 187?",
+        "promptOptions": [
+          "Ms. Lee's class read 178 books. Mr. Park's class read 187 books. Which symbol compares their totals?",
+          "One class read 178 books. Another class read 187 books. Which symbol compares them?",
+          "Two groups read books. One read 178. The other read 187. Which symbol compares their reading?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-symbolSelection-application-4_5-x003",
+    "modeId": "comparing",
+    "subskill": "symbolSelection",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-007",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A class read 84 books and another class read 79 books. Which symbol compares 84 to 79?",
+    "payload": {
+      "a": 84,
+      "b": 79,
+      "op": "?",
+      "answer": ">",
+      "display": {
+        "promptText": "A class read 84 books and another class read 79 books. Which symbol compares 84 to 79?",
+        "promptOptions": [
+          "One class read 84 books. Another class read 79 books. Which symbol compares how many they read?",
+          "Mrs. Lopez's class read 84 books. Mr. Chen's class read 79 books. Which symbol compares them?",
+          "The third grade read 84 books. The second grade read 79 books. Which symbol compares their reading?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-symbolSelection-application-4_5-x004",
+    "modeId": "comparing",
+    "subskill": "symbolSelection",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-010",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A movie sold 432 tickets and a play sold 423. Which symbol compares 432 to 423?",
+    "payload": {
+      "a": 432,
+      "b": 423,
+      "op": "?",
+      "answer": ">",
+      "display": {
+        "promptText": "A movie sold 432 tickets and a play sold 423. Which symbol compares 432 to 423?",
+        "promptOptions": [
+          "A movie sold 432 tickets. A play sold 423 tickets. Which symbol compares their sales?",
+          "One show sold 432 tickets. Another show sold 423 tickets. Which symbol compares them?",
+          "The action movie sold 432 tickets. The comedy sold 423 tickets. Which symbol compares their totals?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-symbolSelection-application-4_5-x005",
+    "modeId": "comparing",
+    "subskill": "symbolSelection",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-013",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A garden has 304 tulips and 340 daisies. Which symbol compares 304 to 340?",
+    "payload": {
+      "a": 304,
+      "b": 340,
+      "op": "?",
+      "answer": "<",
+      "display": {
+        "promptText": "A garden has 304 tulips and 340 daisies. Which symbol compares 304 to 340?",
+        "promptOptions": [
+          "Ms. Lee planted 304 red tulips and 340 white daisies. Compare 304 to 340.",
+          "The garden has 304 tulips and 340 daisies. Compare 304 to 340."
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

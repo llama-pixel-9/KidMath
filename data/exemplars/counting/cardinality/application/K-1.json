@@ -1,0 +1,92 @@
+[
+  {
+    "exemplarId": "counting-cardinality-application-K_1-x001",
+    "modeId": "counting",
+    "subskill": "cardinality",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-app-020",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Anna lined up 10 small toys on the table. How many toys are in the line?",
+    "payload": {
+      "a": 10,
+      "b": null,
+      "op": "count",
+      "answer": 10,
+      "display": {
+        "promptText": "Anna lined up 10 small toys on the table. How many toys are in the line?",
+        "promptOptions": [
+          "Anna put 10 toys in a line on the table. How many toys are in the line?",
+          "Anna lined up 10 toys on the table. How many toys did she line up?",
+          "On the table, Anna lined up 10 toys. How many toys did she line up?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "counting-cardinality-application-K_1-x002",
+    "modeId": "counting",
+    "subskill": "cardinality",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-app-021",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A pencil case holds 8 erasers. How many erasers are in the case?",
+    "payload": {
+      "a": 8,
+      "b": null,
+      "op": "count",
+      "answer": 8,
+      "display": {
+        "promptText": "A pencil case holds 8 erasers. How many erasers are in the case?",
+        "promptOptions": [
+          "Sam's pencil case has 8 erasers. How many erasers does it hold?",
+          "A pencil case holds 8 erasers. How many erasers are in the pencil case?",
+          "There are 8 erasers in a pencil case. How many erasers are there?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "counting-cardinality-application-K_1-x003",
+    "modeId": "counting",
+    "subskill": "cardinality",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-app-022",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A nest has 9 eggs in it. How many eggs are in the nest?",
+    "payload": {
+      "a": 9,
+      "b": null,
+      "op": "count",
+      "answer": 9,
+      "display": {
+        "promptText": "A nest has 9 eggs in it. How many eggs are in the nest?",
+        "promptOptions": [
+          "A bird's nest has 9 eggs in it. How many eggs are in the nest?",
+          "A nest holds 9 eggs. How many eggs does the nest hold?",
+          "There are 9 eggs in a nest. How many eggs can you count?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

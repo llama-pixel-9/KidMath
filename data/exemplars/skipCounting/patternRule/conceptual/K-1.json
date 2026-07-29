@@ -1,0 +1,95 @@
+[
+  {
+    "exemplarId": "skipCounting-patternRule-conceptual-K_1-x001",
+    "modeId": "skipCounting",
+    "subskill": "patternRule",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-conc-patternRule-K1-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Identify the rule in 2, 4, 6 and find the next term.",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 8,
+      "display": {
+        "step": 2,
+        "sequence": [
+          2,
+          4,
+          6
+        ],
+        "promptText": "Identify the rule in 2, 4, 6 and find the next term."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-patternRule-conceptual-K_1-x002",
+    "modeId": "skipCounting",
+    "subskill": "patternRule",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-conc-patternRule-K1-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "What pattern do 5, 10, 15 follow? Find the next term.",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 20,
+      "display": {
+        "step": 5,
+        "sequence": [
+          5,
+          10,
+          15
+        ],
+        "promptText": "What pattern do 5, 10, 15 follow? Find the next term."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-patternRule-conceptual-K_1-x003",
+    "modeId": "skipCounting",
+    "subskill": "patternRule",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-conc-patternRule-K1-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Recognize the rule in 0, 2, 4 and continue the pattern.",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 6,
+      "display": {
+        "step": 2,
+        "sequence": [
+          0,
+          2,
+          4
+        ],
+        "promptText": "Recognize the rule in 0, 2, 4 and continue the pattern."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

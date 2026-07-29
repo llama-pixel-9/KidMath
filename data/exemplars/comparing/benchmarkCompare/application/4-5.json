@@ -1,0 +1,122 @@
+[
+  {
+    "exemplarId": "comparing-benchmarkCompare-application-4_5-x001",
+    "modeId": "comparing",
+    "subskill": "benchmarkCompare",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A library counted 510 books on one shelf and 499 on another. Which symbol compares 510 to 499?",
+    "payload": {
+      "a": 510,
+      "b": 499,
+      "op": "?",
+      "answer": ">",
+      "display": {
+        "promptText": "A library counted 510 books on one shelf and 499 on another. Which symbol compares 510 to 499?",
+        "promptOptions": [
+          "The top shelf has 510 books. The bottom shelf has 499 books. Which symbol compares them?",
+          "One shelf holds 510 books. Another shelf holds 499 books. Which symbol compares these amounts?",
+          "A library has books on two shelves. One has 510 books. One has 499 books. Which symbol compares them?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-benchmarkCompare-application-4_5-x002",
+    "modeId": "comparing",
+    "subskill": "benchmarkCompare",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-004",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A stadium seats 805 fans and a theater seats 850 fans. Which symbol compares 805 to 850?",
+    "payload": {
+      "a": 805,
+      "b": 850,
+      "op": "?",
+      "answer": "<",
+      "display": {
+        "promptText": "A stadium seats 805 fans and a theater seats 850 fans. Which symbol compares 805 to 850?",
+        "promptOptions": [
+          "The stadium seats 805 fans. The theater seats 850 fans. Which symbol compares them?",
+          "One place seats 805 people. Another seats 850 people. Which symbol compares their seating?",
+          "A big stadium can hold 805 fans. A theater can hold 850 fans. Which symbol compares them?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-benchmarkCompare-application-4_5-x003",
+    "modeId": "comparing",
+    "subskill": "benchmarkCompare",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-008",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A counter shows 999 in one window and 1001 in another. Which symbol compares 999 to 1001?",
+    "payload": {
+      "a": 999,
+      "b": 1001,
+      "op": "?",
+      "answer": "<",
+      "display": {
+        "promptText": "A counter shows 999 in one window and 1001 in another. Which symbol compares 999 to 1001?",
+        "promptOptions": [
+          "One counter shows 999. Another counter shows 1001. Which symbol compares them?",
+          "A machine has two windows. One shows 999. The other shows 1001. Which symbol compares them?",
+          "Two scoreboards show numbers. One shows 999. One shows 1001. Which symbol compares them?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-benchmarkCompare-application-4_5-x004",
+    "modeId": "comparing",
+    "subskill": "benchmarkCompare",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-011",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A pool has 250 swim laps logged and another has 205. Which symbol compares 250 to 205?",
+    "payload": {
+      "a": 250,
+      "b": 205,
+      "op": "?",
+      "answer": ">",
+      "display": {
+        "promptText": "A pool has 250 swim laps logged and another has 205. Which symbol compares 250 to 205?",
+        "promptOptions": [
+          "One pool logged 250 laps. Another pool logged 205 laps. Which symbol compares them?",
+          "The big pool has 250 laps logged. The small pool has 205 laps logged. Which symbol compares them?",
+          "At one pool, 250 kids swam a lap. At another pool, 205 kids swam. Which symbol compares them?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

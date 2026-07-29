@@ -1,0 +1,77 @@
+[
+  {
+    "exemplarId": "comparing-distanceCompare-procedural-2_3-x001",
+    "modeId": "comparing",
+    "subskill": "distanceCompare",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-proc-distanceCompare-23-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Compare 18 and 25.",
+    "payload": {
+      "a": 18,
+      "b": 25,
+      "op": "?",
+      "answer": "<",
+      "display": {
+        "promptText": "Compare 18 and 25."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-distanceCompare-procedural-2_3-x002",
+    "modeId": "comparing",
+    "subskill": "distanceCompare",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-proc-distanceCompare-23-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Compare 75 and 42.",
+    "payload": {
+      "a": 75,
+      "b": 42,
+      "op": "?",
+      "answer": ">",
+      "display": {
+        "promptText": "Compare 75 and 42."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-distanceCompare-procedural-2_3-x003",
+    "modeId": "comparing",
+    "subskill": "distanceCompare",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-proc-distanceCompare-23-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Compare 60 and 60.",
+    "payload": {
+      "a": 60,
+      "b": 60,
+      "op": "?",
+      "answer": "=",
+      "display": {
+        "promptText": "Compare 60 and 60."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

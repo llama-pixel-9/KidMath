@@ -1,0 +1,107 @@
+[
+  {
+    "exemplarId": "skipCounting-patternRule-application-K_1-x001",
+    "modeId": "skipCounting",
+    "subskill": "patternRule",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-014",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A frog hops 2 each step: 2, 4, 6. What's next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 8,
+      "display": {
+        "step": 2,
+        "sequence": [
+          2,
+          4,
+          6
+        ],
+        "promptText": "A frog hops 2 each step: 2, 4, 6. What's next?",
+        "promptOptions": [
+          "A frog hops 2 steps at a time: 2, 4, 6. Where is the frog after the next hop?",
+          "A toy car moves 2 spaces each turn: 2, 4, 6. How many spaces after one more turn?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-patternRule-application-K_1-x002",
+    "modeId": "skipCounting",
+    "subskill": "patternRule",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-015",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A bunny hops 5 carrots each leap: 5, 10, 15. What's next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 20,
+      "display": {
+        "step": 5,
+        "sequence": [
+          5,
+          10,
+          15
+        ],
+        "promptText": "A bunny hops 5 carrots each leap: 5, 10, 15. What's next?",
+        "promptOptions": [
+          "A bunny eats 5 carrots each day: 5, 10, 15. How many carrots after one more day?",
+          "Leo collects 5 rocks each week: 5, 10, 15. How many rocks after the next week?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-patternRule-application-K_1-x003",
+    "modeId": "skipCounting",
+    "subskill": "patternRule",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-016",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A toy car moves 2 squares each turn: 0, 2, 4. What's next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 6,
+      "display": {
+        "step": 2,
+        "sequence": [
+          0,
+          2,
+          4
+        ],
+        "promptText": "A toy car moves 2 squares each turn: 0, 2, 4. What's next?",
+        "promptOptions": [
+          "A game marker starts at 0 and moves 2 spaces each turn: 0, 2, 4. Where is it after the next turn?",
+          "A toy moves 2 squares each turn, starting at 0: 0, 2, 4. What's the next position?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

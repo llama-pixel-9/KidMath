@@ -1,0 +1,95 @@
+[
+  {
+    "exemplarId": "skipCounting-patternRule-conceptual-2_3-x001",
+    "modeId": "skipCounting",
+    "subskill": "patternRule",
+    "itemFamily": "conceptual",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-conc-patternRule-23-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Identify the rule in 10, 20, 30 and find the next term.",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 40,
+      "display": {
+        "step": 10,
+        "sequence": [
+          10,
+          20,
+          30
+        ],
+        "promptText": "Identify the rule in 10, 20, 30 and find the next term."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-patternRule-conceptual-2_3-x002",
+    "modeId": "skipCounting",
+    "subskill": "patternRule",
+    "itemFamily": "conceptual",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-conc-patternRule-23-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "What pattern do 6, 12, 18 follow? Continue it.",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 24,
+      "display": {
+        "step": 6,
+        "sequence": [
+          6,
+          12,
+          18
+        ],
+        "promptText": "What pattern do 6, 12, 18 follow? Continue it."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-patternRule-conceptual-2_3-x003",
+    "modeId": "skipCounting",
+    "subskill": "patternRule",
+    "itemFamily": "conceptual",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-conc-patternRule-23-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Recognize the rule in 11, 22, 33 and find the next term.",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 44,
+      "display": {
+        "step": 11,
+        "sequence": [
+          11,
+          22,
+          33
+        ],
+        "promptText": "Recognize the rule in 11, 22, 33 and find the next term."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

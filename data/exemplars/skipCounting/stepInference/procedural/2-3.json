@@ -1,0 +1,95 @@
+[
+  {
+    "exemplarId": "skipCounting-stepInference-procedural-2_3-x001",
+    "modeId": "skipCounting",
+    "subskill": "stepInference",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-proc-stepInference-23-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Find the next term: 7, 14, 21, ?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 28,
+      "display": {
+        "step": 7,
+        "sequence": [
+          7,
+          14,
+          21
+        ],
+        "promptText": "Find the next term: 7, 14, 21, ?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-stepInference-procedural-2_3-x002",
+    "modeId": "skipCounting",
+    "subskill": "stepInference",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-proc-stepInference-23-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Find the next term: 8, 16, 24, ?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 32,
+      "display": {
+        "step": 8,
+        "sequence": [
+          8,
+          16,
+          24
+        ],
+        "promptText": "Find the next term: 8, 16, 24, ?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-stepInference-procedural-2_3-x003",
+    "modeId": "skipCounting",
+    "subskill": "stepInference",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-proc-stepInference-23-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Find the next term: 15, 30, 45, ?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 60,
+      "display": {
+        "step": 15,
+        "sequence": [
+          15,
+          30,
+          45
+        ],
+        "promptText": "Find the next term: 15, 30, 45, ?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

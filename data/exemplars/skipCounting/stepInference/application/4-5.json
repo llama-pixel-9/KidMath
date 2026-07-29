@@ -1,0 +1,146 @@
+[
+  {
+    "exemplarId": "skipCounting-stepInference-application-4_5-x001",
+    "modeId": "skipCounting",
+    "subskill": "stepInference",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A pattern increases by 4: 32, 36, 40. What comes next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 44,
+      "display": {
+        "step": 4,
+        "sequence": [
+          32,
+          36,
+          40
+        ],
+        "promptText": "A pattern increases by 4: 32, 36, 40. What comes next?",
+        "promptOptions": [
+          "Emma finds a pattern: 32, 36, 40. It grows by 4 each time. What comes next?",
+          "A pattern grows by 4 each time: 32, 36, 40. What comes next?",
+          "Numbers grow by 4: 32, 36, 40. What number comes next?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-stepInference-application-4_5-x002",
+    "modeId": "skipCounting",
+    "subskill": "stepInference",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-004",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A jar fills 10 marbles at a time: 50, 60, 70. How many marbles next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 80,
+      "display": {
+        "step": 10,
+        "sequence": [
+          50,
+          60,
+          70
+        ],
+        "promptText": "A jar fills 10 marbles at a time: 50, 60, 70. How many marbles next?",
+        "promptOptions": [
+          "A jar gets 10 more marbles each time: 50, 60, 70. How many marbles next?",
+          "They keep adding marbles to a jar: 50, then 60, then 70. How many marbles next?",
+          "Someone adds marbles to a jar. It now has 50, then 60, then 70. How many next?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-stepInference-application-4_5-x003",
+    "modeId": "skipCounting",
+    "subskill": "stepInference",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-008",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A line of beads grows by the same amount each step: 18, 22, 26. What comes next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 30,
+      "display": {
+        "step": 4,
+        "sequence": [
+          18,
+          22,
+          26
+        ],
+        "promptText": "A line of beads grows by the same amount each step: 18, 22, 26. What comes next?",
+        "promptOptions": [
+          "Emma arranges beads: 18, then 22, then 26. She adds 4 each time. How many beads next?",
+          "A string of beads grows the same amount each step: 18, 22, 26. How many beads next?",
+          "Beads in a line grow by 4: 18, 22, 26. How many next?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-stepInference-application-4_5-x004",
+    "modeId": "skipCounting",
+    "subskill": "stepInference",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-011",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A reader logs minutes growing by the same amount: 20, 30, 40. What comes next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 50,
+      "display": {
+        "step": 10,
+        "sequence": [
+          20,
+          30,
+          40
+        ],
+        "promptText": "A reader logs minutes growing by the same amount: 20, 30, 40. What comes next?",
+        "promptOptions": [
+          "A child reads for 20, then 30, then 40 minutes. The time grows by 10 each day. How many minutes next?",
+          "A reader logs 20, 30, then 40 minutes. The pattern grows by 10. How many minutes next?",
+          "Reading time grows by 10 each day: 20, 30, 40. What comes next?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

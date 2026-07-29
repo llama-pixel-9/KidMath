@@ -1,0 +1,181 @@
+[
+  {
+    "exemplarId": "skipCounting-patternRule-application-4_5-x001",
+    "modeId": "skipCounting",
+    "subskill": "patternRule",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A student counts by 3s: 12, 15, 18. What number comes next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 21,
+      "display": {
+        "step": 3,
+        "sequence": [
+          12,
+          15,
+          18
+        ],
+        "promptText": "A student counts by 3s: 12, 15, 18. What number comes next?",
+        "promptOptions": [
+          "Maya counts by 3s. She says 12, then 15, then 18. What number comes next?",
+          "A child counts: 12, 15, 18. What's the next number she counts?",
+          "Jake counts by 3s. He says: 12, 15, 18. What number next?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-patternRule-application-4_5-x002",
+    "modeId": "skipCounting",
+    "subskill": "patternRule",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A clock chime rings every 6 minutes: 6, 12, 18. When does it ring next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 24,
+      "display": {
+        "step": 6,
+        "sequence": [
+          6,
+          12,
+          18
+        ],
+        "promptText": "A clock chime rings every 6 minutes: 6, 12, 18. When does it ring next?",
+        "promptOptions": [
+          "A timer beeps every 6 minutes: 6, 12, 18 minutes. When does it beep next?",
+          "A bell rings at 6, 12, then 18 minutes. When does it ring next?",
+          "A chime sounds every 6 minutes at 6, 12, and 18 minutes. When next?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-patternRule-application-4_5-x003",
+    "modeId": "skipCounting",
+    "subskill": "patternRule",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-007",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A timer beeps every 4 seconds: 16, 20, 24. When does it beep next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 28,
+      "display": {
+        "step": 4,
+        "sequence": [
+          16,
+          20,
+          24
+        ],
+        "promptText": "A timer beeps every 4 seconds: 16, 20, 24. When does it beep next?",
+        "promptOptions": [
+          "A timer beeps every 4 seconds: 16, 20, 24 seconds. When does it beep next?",
+          "A timer beeps at 16, 20, then 24 seconds. When does it beep next?",
+          "A bell rings every 4 seconds: 16, 20, 24. When does it ring next?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-patternRule-application-4_5-x004",
+    "modeId": "skipCounting",
+    "subskill": "patternRule",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-010",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A toy car gains 4 pegs each step: 2, 6, 10. How many pegs next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 14,
+      "display": {
+        "step": 4,
+        "sequence": [
+          2,
+          6,
+          10
+        ],
+        "promptText": "A toy car gains 4 pegs each step: 2, 6, 10. How many pegs next?",
+        "promptOptions": [
+          "A toy car gets 4 more pegs at each step: 2, 6, 10. How many pegs next?",
+          "Step 1 has 2 pegs. Step 2 has 6. Step 3 has 10. How many pegs at step 4?",
+          "Pegs on a toy car: 2, then 6, then 10. They grow by 4 each time. How many next?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-patternRule-application-4_5-x005",
+    "modeId": "skipCounting",
+    "subskill": "patternRule",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-013",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A counter goes up by 9 each step: 9, 18, 27. What comes next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 36,
+      "display": {
+        "step": 9,
+        "sequence": [
+          9,
+          18,
+          27
+        ],
+        "promptText": "A counter goes up by 9 each step: 9, 18, 27. What comes next?",
+        "promptOptions": [
+          "Tyler collects 9 beads each time. He has 9, then 18, then 27. How many after the next time?",
+          "Every group has 9: 9, 18, 27. What's the next number?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

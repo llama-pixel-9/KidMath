@@ -45,6 +45,16 @@ const onlyStructure = flag("only");
 const write = has("write");
 const model = process.env.KIDMATH_ITEMGEN_MODEL || "haiku";
 
+// Every run stamps its items with a batch tag so item_id never collides with
+// an earlier batch — an upsert on a reused id would silently overwrite items
+// already reviewed or approved. Defaults to the run date; override with --tag.
+const now = new Date();
+const batchTag = flag("tag", `b${String(now.getMonth() + 1).padStart(2, "0")}${String(now.getDate()).padStart(2, "0")}`);
+
+// One model call authors at most this many items; asking for 40 in one go
+// degrades quality and parse reliability.
+const CALL_CHUNK = 20;
+
 const TARGETS = Object.keys(RULES);
 
 function structureMeta(id) {
@@ -77,7 +87,9 @@ function buildPrompt(id, meta, refs, n) {
     "Correct reference items (right structure and math ONLY — their prose style is stiff; do NOT copy it):",
     ...refs.map((r) => `  "${r.prompt}"  (answer ${r.answer})`),
     "",
-    "Write in THIS register instead (reviewer-approved style):",
+    "Write in THIS register instead. WARNING: these show WRITING STYLE ONLY — their",
+    "math structure is DIFFERENT from yours. Copy their voice, never their structure;",
+    "your items must have the same structure as the reference items above.",
     ...GOLD_EXAMPLES.map((g) => `  "${g}"`),
     "",
     "Style rules:",
@@ -124,7 +136,7 @@ function toItem(raw, id, meta, idx) {
   const s = meta.structure;
   const band = "4-5";
   return {
-    itemId: `${meta.modeId}-app-${s.subskill}-${band.replace("-", "_")}-${id}-${String(idx + 1).padStart(3, "0")}`,
+    itemId: `${meta.modeId}-app-${s.subskill}-${band.replace("-", "_")}-${id}-${batchTag}-${String(idx + 1).padStart(3, "0")}`,
     modeId: meta.modeId,
     itemFamily: "application",
     subskill: s.subskill,
@@ -148,16 +160,26 @@ async function authorOne(id) {
   const refs = referenceItems(id, meta.gen);
   if (!refs.length) return { id, accepted: [], rejected: [], note: "no reference items" };
 
-  const text = await runClaude(buildPrompt(id, meta, refs, perStructure));
-  const match = text.match(/\[[\s\S]*\]/);
-  if (!match) return { id, accepted: [], rejected: [], note: "no JSON array returned" };
-
-  let raws;
-  try {
-    raws = JSON.parse(match[0]);
-  } catch {
-    return { id, accepted: [], rejected: [], note: "JSON parse failed" };
+  // Chunked calls: several small requests beat one huge one on both quality
+  // and parse reliability, and a single failed parse loses one chunk, not the
+  // whole structure.
+  const raws = [];
+  const notes = [];
+  for (let asked = 0; asked < perStructure; asked += CALL_CHUNK) {
+    const n = Math.min(CALL_CHUNK, perStructure - asked);
+    const text = await runClaude(buildPrompt(id, meta, refs, n));
+    const match = text.match(/\[[\s\S]*\]/);
+    if (!match) {
+      notes.push("no JSON array returned for one chunk");
+      continue;
+    }
+    try {
+      raws.push(...JSON.parse(match[0]));
+    } catch {
+      notes.push("JSON parse failed for one chunk");
+    }
   }
+  if (!raws.length) return { id, accepted: [], rejected: [], note: notes.join("; ") || "no output" };
 
   const accepted = [];
   const rejected = [];

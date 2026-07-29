@@ -1,0 +1,122 @@
+[
+  {
+    "exemplarId": "comparing-distanceCompare-application-4_5-x001",
+    "modeId": "comparing",
+    "subskill": "distanceCompare",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-005",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Two classes each solved 380 puzzles this month. Which symbol compares the totals?",
+    "payload": {
+      "a": 380,
+      "b": 380,
+      "op": "?",
+      "answer": "=",
+      "display": {
+        "promptText": "Two classes each solved 380 puzzles this month. Which symbol compares the totals?",
+        "promptOptions": [
+          "One class solved 380 puzzles. Another class solved 380 puzzles. Which symbol compares them?",
+          "Team 1 solved 380 puzzles. Team 2 solved 380 puzzles. Which symbol compares their totals?",
+          "Two groups solved puzzles. One group solved 380. The other solved 380. Which symbol compares them?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-distanceCompare-application-4_5-x002",
+    "modeId": "comparing",
+    "subskill": "distanceCompare",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-006",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Town A and Town B each have 612 students. Which symbol compares the two amounts?",
+    "payload": {
+      "a": 612,
+      "b": 612,
+      "op": "?",
+      "answer": "=",
+      "display": {
+        "promptText": "Town A and Town B each have 612 students. Which symbol compares the two amounts?",
+        "promptOptions": [
+          "Springfield has 612 students. Maple Town has 612 students. Which symbol compares them?",
+          "One town has 612 students. Another town has 612 students. Which symbol compares their enrollments?",
+          "Two towns each have 612 students. Which symbol compares them?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-distanceCompare-application-4_5-x003",
+    "modeId": "comparing",
+    "subskill": "distanceCompare",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-009",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Two food drives each collected 145 cans. Which symbol compares the two totals?",
+    "payload": {
+      "a": 145,
+      "b": 145,
+      "op": "?",
+      "answer": "=",
+      "display": {
+        "promptText": "Two food drives each collected 145 cans. Which symbol compares the two totals?",
+        "promptOptions": [
+          "One food drive collected 145 cans. Another collected 145 cans. Which symbol compares them?",
+          "The third grade collected 145 cans. The fourth grade collected 145 cans. Which symbol compares their totals?",
+          "Two schools gathered cans. One school collected 145. The other collected 145. Which symbol compares them?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-distanceCompare-application-4_5-x004",
+    "modeId": "comparing",
+    "subskill": "distanceCompare",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-012",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Two schools each enrolled 720 students. Which symbol compares the two enrollments?",
+    "payload": {
+      "a": 720,
+      "b": 720,
+      "op": "?",
+      "answer": "=",
+      "display": {
+        "promptText": "Two schools each enrolled 720 students. Which symbol compares the two enrollments?",
+        "promptOptions": [
+          "Lincoln School has 720 students. Oak School has 720 students. Which symbol compares them?",
+          "One school enrolled 720 students. Another school enrolled 720 students. Which symbol compares their amounts?",
+          "Two schools each have 720 students. Which symbol compares their enrollments?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

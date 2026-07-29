@@ -1,0 +1,77 @@
+[
+  {
+    "exemplarId": "comparing-benchmarkCompare-procedural-2_3-x001",
+    "modeId": "comparing",
+    "subskill": "benchmarkCompare",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-proc-benchmarkCompare-23-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Compare 47 and 50.",
+    "payload": {
+      "a": 47,
+      "b": 50,
+      "op": "?",
+      "answer": "<",
+      "display": {
+        "promptText": "Compare 47 and 50."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-benchmarkCompare-procedural-2_3-x002",
+    "modeId": "comparing",
+    "subskill": "benchmarkCompare",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-proc-benchmarkCompare-23-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Compare 65 and 50.",
+    "payload": {
+      "a": 65,
+      "b": 50,
+      "op": "?",
+      "answer": ">",
+      "display": {
+        "promptText": "Compare 65 and 50."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-benchmarkCompare-procedural-2_3-x003",
+    "modeId": "comparing",
+    "subskill": "benchmarkCompare",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-proc-benchmarkCompare-23-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Compare 30 and 30.",
+    "payload": {
+      "a": 30,
+      "b": 30,
+      "op": "?",
+      "answer": "=",
+      "display": {
+        "promptText": "Compare 30 and 30."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

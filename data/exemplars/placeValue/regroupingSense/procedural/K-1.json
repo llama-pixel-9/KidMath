@@ -1,0 +1,89 @@
+[
+  {
+    "exemplarId": "placeValue-regroupingSense-procedural-K_1-x001",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "procedural",
+    "levelBand": "K-1",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-proc-regroupingSense-K1-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Combine 1 ten and 4 ones into one number.",
+    "payload": {
+      "a": 14,
+      "b": null,
+      "op": "place",
+      "answer": 14,
+      "display": {
+        "ones": 4,
+        "tens": 1,
+        "type": "build",
+        "number": 14,
+        "promptText": "Combine 1 ten and 4 ones into one number."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-regroupingSense-procedural-K_1-x002",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "procedural",
+    "levelBand": "K-1",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-proc-regroupingSense-K1-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Combine 1 ten and 8 ones into one number.",
+    "payload": {
+      "a": 18,
+      "b": null,
+      "op": "place",
+      "answer": 18,
+      "display": {
+        "ones": 8,
+        "tens": 1,
+        "type": "build",
+        "number": 18,
+        "promptText": "Combine 1 ten and 8 ones into one number."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-regroupingSense-procedural-K_1-x003",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "procedural",
+    "levelBand": "K-1",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-proc-regroupingSense-K1-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Combine 2 tens and 5 ones into one number.",
+    "payload": {
+      "a": 25,
+      "b": null,
+      "op": "place",
+      "answer": 25,
+      "display": {
+        "ones": 5,
+        "tens": 2,
+        "type": "build",
+        "number": 25,
+        "promptText": "Combine 2 tens and 5 ones into one number."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

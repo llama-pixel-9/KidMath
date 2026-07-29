@@ -1,0 +1,89 @@
+[
+  {
+    "exemplarId": "placeValue-regroupingSense-application-2_3-x001",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-034",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A pencil case has 30 pencils plus 5 more. How many pencils in total?",
+    "payload": {
+      "a": 35,
+      "b": null,
+      "op": "place",
+      "answer": 35,
+      "display": {
+        "ones": 5,
+        "tens": 3,
+        "type": "build",
+        "number": 35,
+        "promptText": "A pencil case has 30 pencils plus 5 more. How many pencils in total?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-regroupingSense-application-2_3-x002",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-035",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A bowl shows 60 grapes plus 3 more. How many grapes in total?",
+    "payload": {
+      "a": 63,
+      "b": null,
+      "op": "place",
+      "answer": 63,
+      "display": {
+        "ones": 3,
+        "tens": 6,
+        "type": "build",
+        "number": 63,
+        "promptText": "A bowl shows 60 grapes plus 3 more. How many grapes in total?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-regroupingSense-application-2_3-x003",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-036",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A puzzle uses 80 pieces plus 7 more. How many pieces in total?",
+    "payload": {
+      "a": 87,
+      "b": null,
+      "op": "place",
+      "answer": 87,
+      "display": {
+        "ones": 7,
+        "tens": 8,
+        "type": "build",
+        "number": 87,
+        "promptText": "A puzzle uses 80 pieces plus 7 more. How many pieces in total?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

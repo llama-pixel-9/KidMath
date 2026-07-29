@@ -1,0 +1,89 @@
+[
+  {
+    "exemplarId": "placeValue-regroupingSense-procedural-2_3-x001",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-proc-regroupingSense-23-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Combine 3 tens and 5 ones into one number.",
+    "payload": {
+      "a": 35,
+      "b": null,
+      "op": "place",
+      "answer": 35,
+      "display": {
+        "ones": 5,
+        "tens": 3,
+        "type": "build",
+        "number": 35,
+        "promptText": "Combine 3 tens and 5 ones into one number."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-regroupingSense-procedural-2_3-x002",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-proc-regroupingSense-23-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Combine 6 tens and 3 ones into one number.",
+    "payload": {
+      "a": 63,
+      "b": null,
+      "op": "place",
+      "answer": 63,
+      "display": {
+        "ones": 3,
+        "tens": 6,
+        "type": "build",
+        "number": 63,
+        "promptText": "Combine 6 tens and 3 ones into one number."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-regroupingSense-procedural-2_3-x003",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-proc-regroupingSense-23-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Combine 8 tens and 7 ones into one number.",
+    "payload": {
+      "a": 87,
+      "b": null,
+      "op": "place",
+      "answer": 87,
+      "display": {
+        "ones": 7,
+        "tens": 8,
+        "type": "build",
+        "number": 87,
+        "promptText": "Combine 8 tens and 7 ones into one number."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

@@ -1,0 +1,89 @@
+[
+  {
+    "exemplarId": "placeValue-tensOnes-conceptual-K_1-x001",
+    "modeId": "placeValue",
+    "subskill": "tensOnes",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-conc-tensOnes-K1-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Identify the tens digit of 12.",
+    "payload": {
+      "a": 12,
+      "b": null,
+      "op": "place",
+      "answer": 1,
+      "display": {
+        "ones": 2,
+        "tens": 1,
+        "type": "tens_in",
+        "number": 12,
+        "promptText": "Identify the tens digit of 12."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-tensOnes-conceptual-K_1-x002",
+    "modeId": "placeValue",
+    "subskill": "tensOnes",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-conc-tensOnes-K1-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Identify the tens digit of 15.",
+    "payload": {
+      "a": 15,
+      "b": null,
+      "op": "place",
+      "answer": 1,
+      "display": {
+        "ones": 5,
+        "tens": 1,
+        "type": "tens_in",
+        "number": 15,
+        "promptText": "Identify the tens digit of 15."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-tensOnes-conceptual-K_1-x003",
+    "modeId": "placeValue",
+    "subskill": "tensOnes",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-conc-tensOnes-K1-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Identify the ones digit of 12.",
+    "payload": {
+      "a": 12,
+      "b": null,
+      "op": "place",
+      "answer": 2,
+      "display": {
+        "ones": 2,
+        "tens": 1,
+        "type": "ones_in",
+        "number": 12,
+        "promptText": "Identify the ones digit of 12."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

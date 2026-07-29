@@ -1,0 +1,89 @@
+[
+  {
+    "exemplarId": "comparing-benchmarkCompare-application-2_3-x001",
+    "modeId": "comparing",
+    "subskill": "benchmarkCompare",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-026",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A factory made 47 toys; the goal was 50. Compare 47 and 50.",
+    "payload": {
+      "a": 47,
+      "b": 50,
+      "op": "?",
+      "answer": "<",
+      "display": {
+        "promptText": "A factory made 47 toys; the goal was 50. Compare 47 and 50.",
+        "promptOptions": [
+          "Emma has 47 cookies. Jake has 50 cookies. Who has more cookies?",
+          "One bookcase has 47 books. Another has 50 books. Which has more books?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-benchmarkCompare-application-2_3-x002",
+    "modeId": "comparing",
+    "subskill": "benchmarkCompare",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-027",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A book has 65 pages. The library asks for at least 50. Compare 65 and 50.",
+    "payload": {
+      "a": 65,
+      "b": 50,
+      "op": "?",
+      "answer": ">",
+      "display": {
+        "promptText": "A book has 65 pages. The library asks for at least 50. Compare 65 and 50.",
+        "promptOptions": [
+          "One book has 65 pages. Another has 50 pages. Which book has more pages?",
+          "Sarah's team scored 65 points. Mike's team scored 50. Who scored more?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-benchmarkCompare-application-2_3-x003",
+    "modeId": "comparing",
+    "subskill": "benchmarkCompare",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-028",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Both jars hold 30 jellybeans. Compare 30 and 30.",
+    "payload": {
+      "a": 30,
+      "b": 30,
+      "op": "?",
+      "answer": "=",
+      "display": {
+        "promptText": "Both jars hold 30 jellybeans. Compare 30 and 30.",
+        "promptOptions": [
+          "Tom has 30 stickers. Lisa has 30 stickers. Who has more stickers?",
+          "One bag has 30 cookies. Another bag has 30 cookies. Which has more cookies?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "exemplarId": "comparing-distanceCompare-conceptual-K_1-x001",
+    "modeId": "comparing",
+    "subskill": "distanceCompare",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-conc-distanceCompare-K1-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "On a number line, which is to the left: 2 or 9?",
+    "payload": {
+      "a": 2,
+      "b": 9,
+      "op": "?",
+      "answer": "<",
+      "display": {
+        "promptText": "On a number line, which is to the left: 2 or 9?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-distanceCompare-conceptual-K_1-x002",
+    "modeId": "comparing",
+    "subskill": "distanceCompare",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-conc-distanceCompare-K1-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "On a number line, which is to the right: 8 or 1?",
+    "payload": {
+      "a": 8,
+      "b": 1,
+      "op": "?",
+      "answer": ">",
+      "display": {
+        "promptText": "On a number line, which is to the right: 8 or 1?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-distanceCompare-conceptual-K_1-x003",
+    "modeId": "comparing",
+    "subskill": "distanceCompare",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-conc-distanceCompare-K1-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "5 and 5 sit at the same point on a number line. Compare them.",
+    "payload": {
+      "a": 5,
+      "b": 5,
+      "op": "?",
+      "answer": "=",
+      "display": {
+        "promptText": "5 and 5 sit at the same point on a number line. Compare them."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

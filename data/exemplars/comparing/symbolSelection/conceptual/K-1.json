@@ -1,0 +1,77 @@
+[
+  {
+    "exemplarId": "comparing-symbolSelection-conceptual-K_1-x001",
+    "modeId": "comparing",
+    "subskill": "symbolSelection",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-conc-symbolSelection-K1-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Looking at 5 and 8, which symbol shows that 5 is smaller?",
+    "payload": {
+      "a": 5,
+      "b": 8,
+      "op": "?",
+      "answer": "<",
+      "display": {
+        "promptText": "Looking at 5 and 8, which symbol shows that 5 is smaller?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-symbolSelection-conceptual-K_1-x002",
+    "modeId": "comparing",
+    "subskill": "symbolSelection",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-conc-symbolSelection-K1-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Looking at 7 and 4, which symbol shows that 7 is greater?",
+    "payload": {
+      "a": 7,
+      "b": 4,
+      "op": "?",
+      "answer": ">",
+      "display": {
+        "promptText": "Looking at 7 and 4, which symbol shows that 7 is greater?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-symbolSelection-conceptual-K_1-x003",
+    "modeId": "comparing",
+    "subskill": "symbolSelection",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-conc-symbolSelection-K1-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Looking at 6 and 6, are they equal?",
+    "payload": {
+      "a": 6,
+      "b": 6,
+      "op": "?",
+      "answer": "=",
+      "display": {
+        "promptText": "Looking at 6 and 6, are they equal?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

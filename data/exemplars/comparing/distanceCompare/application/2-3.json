@@ -1,0 +1,89 @@
+[
+  {
+    "exemplarId": "comparing-distanceCompare-application-2_3-x001",
+    "modeId": "comparing",
+    "subskill": "distanceCompare",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-029",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Anna ran 18 laps and Ben ran 25 laps. Compare 18 and 25.",
+    "payload": {
+      "a": 18,
+      "b": 25,
+      "op": "?",
+      "answer": "<",
+      "display": {
+        "promptText": "Anna ran 18 laps and Ben ran 25 laps. Compare 18 and 25.",
+        "promptOptions": [
+          "Anna ran 18 laps. Ben ran 25 laps. Who ran more laps?",
+          "One runner jumped 18 times. Another jumped 25 times. Who jumped more?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-distanceCompare-application-2_3-x002",
+    "modeId": "comparing",
+    "subskill": "distanceCompare",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-030",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A garden has 75 tulips and 42 daisies. Compare 75 and 42.",
+    "payload": {
+      "a": 75,
+      "b": 42,
+      "op": "?",
+      "answer": ">",
+      "display": {
+        "promptText": "A garden has 75 tulips and 42 daisies. Compare 75 and 42.",
+        "promptOptions": [
+          "A garden has 75 tulips and 42 daisies. Which flower does it have more of?",
+          "The big box has 75 crayons. The small box has 42 crayons. Which has more?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-distanceCompare-application-2_3-x003",
+    "modeId": "comparing",
+    "subskill": "distanceCompare",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-031",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Two ponds each have 60 ducks. Compare 60 and 60.",
+    "payload": {
+      "a": 60,
+      "b": 60,
+      "op": "?",
+      "answer": "=",
+      "display": {
+        "promptText": "Two ponds each have 60 ducks. Compare 60 and 60.",
+        "promptOptions": [
+          "One pond has 60 ducks. Another pond has 60 ducks. Which pond has more ducks?",
+          "Park A has 60 swings. Park B has 60 swings. Which park has more swings?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

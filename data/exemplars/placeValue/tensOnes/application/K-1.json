@@ -1,0 +1,104 @@
+[
+  {
+    "exemplarId": "placeValue-tensOnes-application-K_1-x001",
+    "modeId": "placeValue",
+    "subskill": "tensOnes",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-013",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A jar holds 12 marbles. How many tens are in 12?",
+    "payload": {
+      "a": 12,
+      "b": null,
+      "op": "place",
+      "answer": 1,
+      "display": {
+        "ones": 2,
+        "tens": 1,
+        "type": "tens_in",
+        "number": 12,
+        "promptText": "A jar holds 12 marbles. How many tens are in 12?",
+        "promptOptions": [
+          "Jack has 12 toy cars. How many tens are in 12?",
+          "Maria found 12 coins. How many tens are in 12?",
+          "Luis collected 12 stickers. How many tens are in 12?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-tensOnes-application-K_1-x002",
+    "modeId": "placeValue",
+    "subskill": "tensOnes",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-014",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A pile has 15 leaves. How many tens are in 15?",
+    "payload": {
+      "a": 15,
+      "b": null,
+      "op": "place",
+      "answer": 1,
+      "display": {
+        "ones": 5,
+        "tens": 1,
+        "type": "tens_in",
+        "number": 15,
+        "promptText": "A pile has 15 leaves. How many tens are in 15?",
+        "promptOptions": [
+          "Sarah picked 15 flowers. How many tens are in 15?",
+          "Alex found 15 acorns. How many tens are in 15?",
+          "Mia collected 15 buttons. How many tens are in 15?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-tensOnes-application-K_1-x003",
+    "modeId": "placeValue",
+    "subskill": "tensOnes",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-015",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A jar holds 12 marbles. How many ones are in 12?",
+    "payload": {
+      "a": 12,
+      "b": null,
+      "op": "place",
+      "answer": 2,
+      "display": {
+        "ones": 2,
+        "tens": 1,
+        "type": "ones_in",
+        "number": 12,
+        "promptText": "A jar holds 12 marbles. How many ones are in 12?",
+        "promptOptions": [
+          "Jack has 12 toy cars. How many ones are in 12?",
+          "Maria found 12 cookies. How many ones are in 12?",
+          "Luis counted 12 stickers. How many ones are in 12?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

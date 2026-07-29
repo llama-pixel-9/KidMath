@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Star, X } from "lucide-react";
 import { useTheme } from "../useTheme.js";
 import { STICKERS } from "./stickers.js";
+import { BADGES } from "./badges.js";
 import { loadEngagement, starBalance, buySticker } from "./engagementStore.js";
 
 /**
@@ -60,6 +61,28 @@ export default function StickerBook({ open, onClose }) {
             stars to spend. Earn more by playing!
           </p>
 
+          {/* Badges: earned by playing, not bought. */}
+          <div className="mb-4">
+            <h3 className={`text-sm font-extrabold ${theme.textPrimary} mb-2`}>Badges</h3>
+            <div className="flex flex-wrap gap-2">
+              {BADGES.map((b) => {
+                const has = (state.badges ?? []).some((e) => e.id === b.id);
+                return (
+                  <span
+                    key={b.id}
+                    className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-bold shadow-sm
+                      ${has ? "bg-violet-50 text-violet-700 ring-1 ring-violet-300" : "bg-slate-100 text-slate-400"}`}
+                    title={has ? `${b.name} — ${b.blurb}` : `Locked: ${b.blurb}`}
+                  >
+                    <span className={has ? "" : "grayscale opacity-60"} aria-hidden="true">{b.emoji}</span>
+                    {b.name}
+                  </span>
+                );
+              })}
+            </div>
+          </div>
+
+          <h3 className={`text-sm font-extrabold ${theme.textPrimary} mb-2`}>Stickers</h3>
           <div className="grid grid-cols-4 gap-3">
             {STICKERS.map((s) => {
               const has = owned.has(s.id);

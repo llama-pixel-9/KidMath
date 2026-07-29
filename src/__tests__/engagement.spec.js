@@ -9,6 +9,7 @@ import {
   DAILY_GOAL,
 } from "../engagement/engagementStore.js";
 import { STICKERS, STICKER_BY_ID } from "../engagement/stickers.js";
+import { BADGES, BADGE_BY_ID } from "../engagement/badges.js";
 
 /**
  * The engagement loop is what makes stars mean something, so its day math has
@@ -18,6 +19,7 @@ import { STICKERS, STICKER_BY_ID } from "../engagement/stickers.js";
  */
 
 const play = (state, stars, day) => applySessionEnd(state, stars, day);
+const play2 = (state, stars, day, facts) => applySessionEnd(state, stars, day, facts);
 
 describe("day streak", () => {
   it("starts at 1 on the first ever session", () => {
@@ -113,5 +115,53 @@ describe("star wallet and stickers", () => {
       expect(s.cost).toBeGreaterThan(0);
       expect(STICKER_BY_ID[s.id]).toBe(s);
     }
+  });
+});
+
+describe("badges", () => {
+  it("first session earns First Steps, and a perfect one earns Perfect Round too", () => {
+    const { state, events } = play2(emptyEngagement(), 15, "2026-07-28", { perfect: true });
+    const ids = events.newBadges.map((b) => b.id);
+    expect(ids).toContain("firstSession");
+    expect(ids).toContain("perfectRound");
+    expect(state.badges.map((b) => b.id)).toEqual(expect.arrayContaining(ids));
+  });
+
+  it("never re-awards an earned badge", () => {
+    const first = play2(emptyEngagement(), 15, "2026-07-28", { perfect: true }).state;
+    const { events } = play2(first, 15, "2026-07-28", { perfect: true });
+    expect(events.newBadges.map((b) => b.id)).not.toContain("firstSession");
+    expect(events.newBadges.map((b) => b.id)).not.toContain("perfectRound");
+  });
+
+  it("Word Detective lands exactly when trap wins reach 5, accumulating across sessions", () => {
+    let s = emptyEngagement();
+    let r = play2(s, 5, "2026-07-28", { trapWins: 3 });
+    expect(r.events.newBadges.map((b) => b.id)).not.toContain("wordDetective");
+    r = play2(r.state, 5, "2026-07-28", { trapWins: 2 });
+    expect(r.events.newBadges.map((b) => b.id)).toContain("wordDetective");
+  });
+
+  it("Comeback Kid accumulates mistake-bank clears; On Fire follows bestStreak", () => {
+    let s = { ...emptyEngagement(), comebacks: 4 };
+    let r = play2(s, 5, "2026-07-28", { comebacks: 1 });
+    expect(r.events.newBadges.map((b) => b.id)).toContain("comeback5");
+
+    let d = emptyEngagement();
+    d = play2(d, 5, "2026-07-26").state;
+    d = play2(d, 5, "2026-07-27").state;
+    const day3 = play2(d, 5, "2026-07-28");
+    expect(day3.events.newBadges.map((b) => b.id)).toContain("streak3");
+  });
+
+  it("Peak Climber fires on reaching level 7 in any mode", () => {
+    const { events } = play2(emptyEngagement(), 5, "2026-07-28", { levelReached: 7 });
+    expect(events.newBadges.map((b) => b.id)).toContain("peakClimber");
+  });
+
+  it("catalog integrity: unique ids and complete lookup", () => {
+    const ids = BADGES.map((b) => b.id);
+    expect(new Set(ids).size).toBe(ids.length);
+    for (const b of BADGES) expect(BADGE_BY_ID[b.id]).toBe(b);
   });
 });

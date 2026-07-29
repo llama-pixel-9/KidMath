@@ -1,0 +1,77 @@
+[
+  {
+    "exemplarId": "division-inverseFact-conceptual-K_1-x001",
+    "modeId": "division",
+    "subskill": "inverseFact",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-conc-inverseFact-K1-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "If 2 × 3 = 6, then 6 ÷ 3 equals?",
+    "payload": {
+      "a": 6,
+      "b": 3,
+      "op": "÷",
+      "answer": 2,
+      "display": {
+        "promptText": "If 2 × 3 = 6, then 6 ÷ 3 equals?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-inverseFact-conceptual-K_1-x002",
+    "modeId": "division",
+    "subskill": "inverseFact",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-conc-inverseFact-K1-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "9 ÷ 3 = ? Think: 3 times what makes 9?",
+    "payload": {
+      "a": 9,
+      "b": 3,
+      "op": "÷",
+      "answer": 3,
+      "display": {
+        "promptText": "9 ÷ 3 = ? Think: 3 times what makes 9?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-inverseFact-conceptual-K_1-x003",
+    "modeId": "division",
+    "subskill": "inverseFact",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-conc-inverseFact-K1-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Since 5 × 2 = 10, what is 10 ÷ 5?",
+    "payload": {
+      "a": 10,
+      "b": 5,
+      "op": "÷",
+      "answer": 2,
+      "display": {
+        "promptText": "Since 5 × 2 = 10, what is 10 ÷ 5?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

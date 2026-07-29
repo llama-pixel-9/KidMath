@@ -1,0 +1,107 @@
+[
+  {
+    "exemplarId": "skipCounting-patternRule-application-2_3-x001",
+    "modeId": "skipCounting",
+    "subskill": "patternRule",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-023",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A truck adds 10 each load: 10, 20, 30. What's next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 40,
+      "display": {
+        "step": 10,
+        "sequence": [
+          10,
+          20,
+          30
+        ],
+        "promptText": "A truck adds 10 each load: 10, 20, 30. What's next?",
+        "promptOptions": [
+          "A truck delivers 10 boxes each trip: 10, 20, 30. How many boxes after the next trip?",
+          "Each delivery brings 10 items: 10, 20, 30. How many after one more delivery?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-patternRule-application-2_3-x002",
+    "modeId": "skipCounting",
+    "subskill": "patternRule",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-024",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Counters jump by 6: 6, 12, 18. What's next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 24,
+      "display": {
+        "step": 6,
+        "sequence": [
+          6,
+          12,
+          18
+        ],
+        "promptText": "Counters jump by 6: 6, 12, 18. What's next?",
+        "promptOptions": [
+          "Leo skip-counts by 6s: 6, 12, 18. What's the next number?",
+          "A pattern jumps by 6 each time: 6, 12, 18. What comes next?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-patternRule-application-2_3-x003",
+    "modeId": "skipCounting",
+    "subskill": "patternRule",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-025",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Cards stack 11 at a time: 11, 22, 33. What's next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 44,
+      "display": {
+        "step": 11,
+        "sequence": [
+          11,
+          22,
+          33
+        ],
+        "promptText": "Cards stack 11 at a time: 11, 22, 33. What's next?",
+        "promptOptions": [
+          "Jayden counts by 11s. He says 11, 22, 33. What comes next?",
+          "Counting by 11s: 11, 22, 33. What's the next number?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

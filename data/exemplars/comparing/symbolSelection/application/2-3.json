@@ -1,0 +1,88 @@
+[
+  {
+    "exemplarId": "comparing-symbolSelection-application-2_3-x001",
+    "modeId": "comparing",
+    "subskill": "symbolSelection",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-023",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A class has 23 books. Another class has 45 books. Compare 23 and 45.",
+    "payload": {
+      "a": 23,
+      "b": 45,
+      "op": "?",
+      "answer": "<",
+      "display": {
+        "promptText": "A class has 23 books. Another class has 45 books. Compare 23 and 45.",
+        "promptOptions": [
+          "Ms. Lee's class has 23 books. Mr. Park's class has 45 books. Compare 23 to 45.",
+          "One class collected 23 books. Another class collected 45 books. Compare 23 to 45."
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-symbolSelection-application-2_3-x002",
+    "modeId": "comparing",
+    "subskill": "symbolSelection",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-024",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Pat scored 67 points and Min scored 32 points. Compare 67 and 32.",
+    "payload": {
+      "a": 67,
+      "b": 32,
+      "op": "?",
+      "answer": ">",
+      "display": {
+        "promptText": "Pat scored 67 points and Min scored 32 points. Compare 67 and 32.",
+        "promptOptions": [
+          "Pat scored 67 points. Min scored 32 points. Compare 67 to 32."
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-symbolSelection-application-2_3-x003",
+    "modeId": "comparing",
+    "subskill": "symbolSelection",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-025",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Two teams both have 50 fans. Compare 50 and 50.",
+    "payload": {
+      "a": 50,
+      "b": 50,
+      "op": "?",
+      "answer": "=",
+      "display": {
+        "promptText": "Two teams both have 50 fans. Compare 50 and 50.",
+        "promptOptions": [
+          "Sarah's team has 50 fans. Jake's team has 50 fans. Which team has more fans?",
+          "One jar has 50 marbles. Another jar has 50 marbles. Which has more marbles?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

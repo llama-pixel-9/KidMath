@@ -1,0 +1,92 @@
+[
+  {
+    "exemplarId": "division-inverseFact-application-2_3-x001",
+    "modeId": "division",
+    "subskill": "inverseFact",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-027",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "24 students are split into groups of 4. How many groups are there?",
+    "payload": {
+      "a": 24,
+      "b": 4,
+      "op": "÷",
+      "answer": 6,
+      "display": {
+        "promptText": "24 students are split into groups of 4. How many groups are there?",
+        "promptOptions": [
+          "The teacher has 24 students. She puts them into groups of 4. How many groups are there?",
+          "The PE teacher has 24 students. She divides them into groups of 4. How many groups are there?",
+          "Mr. Johnson arranged 24 students into groups of 4. How many groups did he make?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-inverseFact-application-2_3-x002",
+    "modeId": "division",
+    "subskill": "inverseFact",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-028",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "35 stickers are shared equally by 5 kids. How many stickers per kid?",
+    "payload": {
+      "a": 35,
+      "b": 5,
+      "op": "÷",
+      "answer": 7,
+      "display": {
+        "promptText": "35 stickers are shared equally by 5 kids. How many stickers per kid?",
+        "promptOptions": [
+          "Ms. Chen has 35 stickers. She shares them equally with 5 kids. How many stickers does each kid get?",
+          "The teacher has 35 stickers. She shares them equally with 5 kids. How many stickers does each kid get?",
+          "5 kids share 35 stickers equally. How many stickers does each kid get?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-inverseFact-application-2_3-x003",
+    "modeId": "division",
+    "subskill": "inverseFact",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-029",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "36 marbles are sorted equally into 6 jars. How many marbles per jar?",
+    "payload": {
+      "a": 36,
+      "b": 6,
+      "op": "÷",
+      "answer": 6,
+      "display": {
+        "promptText": "36 marbles are sorted equally into 6 jars. How many marbles per jar?",
+        "promptOptions": [
+          "Kai has 36 marbles. He puts them equally into 6 jars. How many marbles are in each jar?",
+          "Maria had 36 marbles. She sorted them equally into 6 jars. How many marbles went in each jar?",
+          "The toy shop had 36 marbles. They put them equally into 6 bins. How many marbles are in each bin?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

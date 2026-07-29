@@ -1,0 +1,92 @@
+[
+  {
+    "exemplarId": "division-partitioning-application-2_3-x001",
+    "modeId": "division",
+    "subskill": "partitioning",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-024",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "12 books are split equally onto 4 shelves. How many books per shelf?",
+    "payload": {
+      "a": 12,
+      "b": 4,
+      "op": "÷",
+      "answer": 3,
+      "display": {
+        "promptText": "12 books are split equally onto 4 shelves. How many books per shelf?",
+        "promptOptions": [
+          "Dad has 12 books. He puts them equally on 4 shelves. How many books per shelf?",
+          "The librarian arranged 12 books equally on 4 shelves. How many books per shelf?",
+          "Maya sorted 12 books equally onto 4 shelves. How many books per shelf?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-partitioning-application-2_3-x002",
+    "modeId": "division",
+    "subskill": "partitioning",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-025",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "15 cards are dealt equally to 3 players. How many cards does each player get?",
+    "payload": {
+      "a": 15,
+      "b": 3,
+      "op": "÷",
+      "answer": 5,
+      "display": {
+        "promptText": "15 cards are dealt equally to 3 players. How many cards does each player get?",
+        "promptOptions": [
+          "The dealer has 15 cards. She deals them equally to 3 players. How many cards does each player get?",
+          "Tom dealt 15 cards equally to 3 players. How many cards does each player get?",
+          "3 players share 15 cards equally. How many cards does each player get?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-partitioning-application-2_3-x003",
+    "modeId": "division",
+    "subskill": "partitioning",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-026",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "18 cookies are placed on 6 plates equally. How many cookies per plate?",
+    "payload": {
+      "a": 18,
+      "b": 6,
+      "op": "÷",
+      "answer": 3,
+      "display": {
+        "promptText": "18 cookies are placed on 6 plates equally. How many cookies per plate?",
+        "promptOptions": [
+          "Grandma has 18 cookies. She arranges them equally on 6 plates. How many cookies per plate?",
+          "The baker has 18 cookies. She places them equally on 6 plates. How many cookies per plate?",
+          "Maya put 18 cookies equally on 6 plates. How many cookies per plate?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

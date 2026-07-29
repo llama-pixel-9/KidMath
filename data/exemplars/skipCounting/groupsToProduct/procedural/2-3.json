@@ -1,0 +1,98 @@
+[
+  {
+    "exemplarId": "skipCounting-groupsToProduct-procedural-2_3-x001",
+    "modeId": "skipCounting",
+    "subskill": "groupsToProduct",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-proc-groupsToProduct-23-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "5 groups of 4: 4, 8, 12, 16, ?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 20,
+      "display": {
+        "step": 4,
+        "sequence": [
+          4,
+          8,
+          12,
+          16
+        ],
+        "promptText": "5 groups of 4: 4, 8, 12, 16, ?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-groupsToProduct-procedural-2_3-x002",
+    "modeId": "skipCounting",
+    "subskill": "groupsToProduct",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-proc-groupsToProduct-23-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "6 groups of 5: 5, 10, 15, 20, 25, ?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 30,
+      "display": {
+        "step": 5,
+        "sequence": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ],
+        "promptText": "6 groups of 5: 5, 10, 15, 20, 25, ?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-groupsToProduct-procedural-2_3-x003",
+    "modeId": "skipCounting",
+    "subskill": "groupsToProduct",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-proc-groupsToProduct-23-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "4 groups of 6: 6, 12, 18, ?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 24,
+      "display": {
+        "step": 6,
+        "sequence": [
+          6,
+          12,
+          18
+        ],
+        "promptText": "4 groups of 6: 6, 12, 18, ?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

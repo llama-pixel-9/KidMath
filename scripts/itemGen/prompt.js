@@ -1,6 +1,8 @@
 // Shared prompt builder + response parser for the LLM item-draft providers.
 // Used by providers/claude.js (single-cell) and generateBatch.js (Batch API).
 
+import { NARRATIVE_RULES, GOLD_EXAMPLES } from "./structureRules.js";
+
 function describeBand(band) {
   switch (band) {
     case "K-1":
@@ -43,8 +45,11 @@ export function buildCellPrompt({ exemplars, n = 6 }) {
     "5. Every `promptText` must be UNIQUE — different from the exemplars and from each",
     "   other. Vary contexts/nouns and phrasing.",
     "6. Do NOT copy wording verbatim from textbooks; author original prose.",
-    '7. The question sentence must restate the thing being counted: "How many toy',
-    '   cars does Lily have?", never "How many does Lily have?"',
+    "",
+    "Prose register for any story/word wording (reviewer-approved examples):",
+    ...GOLD_EXAMPLES.map((g) => `  "${g}"`),
+    "Style rules:",
+    ...NARRATIVE_RULES.map((r) => `- ${r}`),
     "",
     "Exemplar payloads (canonical shape and register to mimic):",
     JSON.stringify(payloads, null, 2),

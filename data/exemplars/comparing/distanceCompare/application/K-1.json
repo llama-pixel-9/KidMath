@@ -1,0 +1,86 @@
+[
+  {
+    "exemplarId": "comparing-distanceCompare-application-K_1-x001",
+    "modeId": "comparing",
+    "subskill": "distanceCompare",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-020",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Eli has 9 apples and Mia has 4. Compare 9 to 4.",
+    "payload": {
+      "a": 9,
+      "b": 4,
+      "op": "?",
+      "answer": ">",
+      "display": {
+        "promptText": "Eli has 9 apples and Mia has 4. Compare 9 to 4.",
+        "promptOptions": [
+          "Eli has 9 apples. Mia has 4 apples. Compare 9 to 4."
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-distanceCompare-application-K_1-x002",
+    "modeId": "comparing",
+    "subskill": "distanceCompare",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-021",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Min has 3 pens and Tom has 8 pens. Compare 3 to 8.",
+    "payload": {
+      "a": 3,
+      "b": 8,
+      "op": "?",
+      "answer": "<",
+      "display": {
+        "promptText": "Min has 3 pens and Tom has 8 pens. Compare 3 to 8.",
+        "promptOptions": [
+          "Min has 3 pens. Tom has 8 pens. Compare 3 to 8."
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-distanceCompare-application-K_1-x003",
+    "modeId": "comparing",
+    "subskill": "distanceCompare",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-022",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Jin has 6 hats and Pat has 6 hats. Compare 6 to 6.",
+    "payload": {
+      "a": 6,
+      "b": 6,
+      "op": "?",
+      "answer": "=",
+      "display": {
+        "promptText": "Jin has 6 hats and Pat has 6 hats. Compare 6 to 6.",
+        "promptOptions": [
+          "Jin has 6 hats. Pat has 6 hats. Compare 6 to 6."
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

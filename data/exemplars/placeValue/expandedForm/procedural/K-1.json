@@ -1,0 +1,89 @@
+[
+  {
+    "exemplarId": "placeValue-expandedForm-procedural-K_1-x001",
+    "modeId": "placeValue",
+    "subskill": "expandedForm",
+    "itemFamily": "procedural",
+    "levelBand": "K-1",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-proc-expandedForm-K1-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "1 ten + 3 ones = ?",
+    "payload": {
+      "a": 13,
+      "b": null,
+      "op": "place",
+      "answer": 13,
+      "display": {
+        "ones": 3,
+        "tens": 1,
+        "type": "build",
+        "number": 13,
+        "promptText": "1 ten + 3 ones = ?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-expandedForm-procedural-K_1-x002",
+    "modeId": "placeValue",
+    "subskill": "expandedForm",
+    "itemFamily": "procedural",
+    "levelBand": "K-1",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-proc-expandedForm-K1-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "2 tens + 0 ones = ?",
+    "payload": {
+      "a": 20,
+      "b": null,
+      "op": "place",
+      "answer": 20,
+      "display": {
+        "ones": 0,
+        "tens": 2,
+        "type": "build",
+        "number": 20,
+        "promptText": "2 tens + 0 ones = ?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-expandedForm-procedural-K_1-x003",
+    "modeId": "placeValue",
+    "subskill": "expandedForm",
+    "itemFamily": "procedural",
+    "levelBand": "K-1",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-proc-expandedForm-K1-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "1 ten + 7 ones = ?",
+    "payload": {
+      "a": 17,
+      "b": null,
+      "op": "place",
+      "answer": 17,
+      "display": {
+        "ones": 7,
+        "tens": 1,
+        "type": "build",
+        "number": 17,
+        "promptText": "1 ten + 7 ones = ?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

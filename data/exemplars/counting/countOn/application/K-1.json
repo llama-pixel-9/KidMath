@@ -1,0 +1,77 @@
+[
+  {
+    "exemplarId": "counting-countOn-application-K_1-x001",
+    "modeId": "counting",
+    "subskill": "countOn",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-app-017",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Tim counts 4 birds, then sees 2 more land. How many birds in total?",
+    "payload": {
+      "a": 6,
+      "b": null,
+      "op": "count",
+      "answer": 6,
+      "display": {
+        "promptText": "Tim counts 4 birds, then sees 2 more land. How many birds in total?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "counting-countOn-application-K_1-x002",
+    "modeId": "counting",
+    "subskill": "countOn",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-app-018",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Lin had 5 grapes; her brother gave her 2 more. How many grapes does Lin have?",
+    "payload": {
+      "a": 7,
+      "b": null,
+      "op": "count",
+      "answer": 7,
+      "display": {
+        "promptText": "Lin had 5 grapes; her brother gave her 2 more. How many grapes does Lin have?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "counting-countOn-application-K_1-x003",
+    "modeId": "counting",
+    "subskill": "countOn",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-app-019",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Sam saw 6 cars, then 2 more drove up. How many cars are there now?",
+    "payload": {
+      "a": 8,
+      "b": null,
+      "op": "count",
+      "answer": 8,
+      "display": {
+        "promptText": "Sam saw 6 cars, then 2 more drove up. How many cars are there now?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

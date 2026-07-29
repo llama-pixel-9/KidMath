@@ -1,0 +1,77 @@
+[
+  {
+    "exemplarId": "counting-countOn-procedural-4_5-x001",
+    "modeId": "counting",
+    "subskill": "countOn",
+    "itemFamily": "procedural",
+    "levelBand": "4-5",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-proc-countOn-45-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Start at 50 and count on 10. What number do you reach?",
+    "payload": {
+      "a": 60,
+      "b": null,
+      "op": "count",
+      "answer": 60,
+      "display": {
+        "promptText": "Start at 50 and count on 10. What number do you reach?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "counting-countOn-procedural-4_5-x002",
+    "modeId": "counting",
+    "subskill": "countOn",
+    "itemFamily": "procedural",
+    "levelBand": "4-5",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-proc-countOn-45-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Start at 75 and count on 5. What number do you reach?",
+    "payload": {
+      "a": 80,
+      "b": null,
+      "op": "count",
+      "answer": 80,
+      "display": {
+        "promptText": "Start at 75 and count on 5. What number do you reach?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "counting-countOn-procedural-4_5-x003",
+    "modeId": "counting",
+    "subskill": "countOn",
+    "itemFamily": "procedural",
+    "levelBand": "4-5",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-proc-countOn-45-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Start at 90 and count on 10. What number do you reach?",
+    "payload": {
+      "a": 100,
+      "b": null,
+      "op": "count",
+      "answer": 100,
+      "display": {
+        "promptText": "Start at 90 and count on 10. What number do you reach?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

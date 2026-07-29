@@ -1,0 +1,92 @@
+[
+  {
+    "exemplarId": "division-unknownQuotient-application-K_1-x001",
+    "modeId": "division",
+    "subskill": "unknownQuotient",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-021",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "8 stickers are shared equally by 4 kids. How many stickers per kid?",
+    "payload": {
+      "a": 8,
+      "b": 4,
+      "op": "÷",
+      "answer": 2,
+      "display": {
+        "promptText": "8 stickers are shared equally by 4 kids. How many stickers per kid?",
+        "promptOptions": [
+          "Mom has 8 stickers to give equally to 4 kids. How many stickers does each kid get?",
+          "The teacher has 8 stickers. She shares them equally with 4 kids. How many stickers does each kid get?",
+          "4 kids share 8 stickers equally. How many stickers does each kid get?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-unknownQuotient-application-K_1-x002",
+    "modeId": "division",
+    "subskill": "unknownQuotient",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-022",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "10 cubes are arranged into 2 equal stacks. How many cubes per stack?",
+    "payload": {
+      "a": 10,
+      "b": 2,
+      "op": "÷",
+      "answer": 5,
+      "display": {
+        "promptText": "10 cubes are arranged into 2 equal stacks. How many cubes per stack?",
+        "promptOptions": [
+          "Ben has 10 cubes. He stacks them equally into 2 stacks. How many cubes per stack?",
+          "Emma arranged 10 cubes into 2 equal stacks. How many cubes per stack?",
+          "Lily stacked 10 cubes equally into 2 stacks. How many cubes are in each stack?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-unknownQuotient-application-K_1-x003",
+    "modeId": "division",
+    "subskill": "unknownQuotient",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-023",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "9 buttons are sorted equally into 3 small jars. How many buttons per jar?",
+    "payload": {
+      "a": 9,
+      "b": 3,
+      "op": "÷",
+      "answer": 3,
+      "display": {
+        "promptText": "9 buttons are sorted equally into 3 small jars. How many buttons per jar?",
+        "promptOptions": [
+          "Mom has 9 buttons. She sorts them equally into 3 jars. How many buttons per jar?",
+          "Alex sorted 9 buttons equally into 3 small jars. How many buttons per jar?",
+          "Mrs. Kim has 9 buttons. She puts them equally into 3 jars. How many buttons per jar?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

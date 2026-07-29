@@ -1,0 +1,89 @@
+[
+  {
+    "exemplarId": "placeValue-expandedForm-application-2_3-x001",
+    "modeId": "placeValue",
+    "subskill": "expandedForm",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-025",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A scoreboard shows 5 tens and 8 ones. What number is on the scoreboard?",
+    "payload": {
+      "a": 58,
+      "b": null,
+      "op": "place",
+      "answer": 58,
+      "display": {
+        "ones": 8,
+        "tens": 5,
+        "type": "build",
+        "number": 58,
+        "promptText": "A scoreboard shows 5 tens and 8 ones. What number is on the scoreboard?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-expandedForm-application-2_3-x002",
+    "modeId": "placeValue",
+    "subskill": "expandedForm",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-026",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A bin holds 7 tens and 2 ones of cards. How many cards in the bin?",
+    "payload": {
+      "a": 72,
+      "b": null,
+      "op": "place",
+      "answer": 72,
+      "display": {
+        "ones": 2,
+        "tens": 7,
+        "type": "build",
+        "number": 72,
+        "promptText": "A bin holds 7 tens and 2 ones of cards. How many cards in the bin?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-expandedForm-application-2_3-x003",
+    "modeId": "placeValue",
+    "subskill": "expandedForm",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-027",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A row shows 4 tens and 9 ones of stickers. How many stickers in the row?",
+    "payload": {
+      "a": 49,
+      "b": null,
+      "op": "place",
+      "answer": 49,
+      "display": {
+        "ones": 9,
+        "tens": 4,
+        "type": "build",
+        "number": 49,
+        "promptText": "A row shows 4 tens and 9 ones of stickers. How many stickers in the row?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

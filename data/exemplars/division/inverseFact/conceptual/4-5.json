@@ -1,0 +1,77 @@
+[
+  {
+    "exemplarId": "division-inverseFact-conceptual-4_5-x001",
+    "modeId": "division",
+    "subskill": "inverseFact",
+    "itemFamily": "conceptual",
+    "levelBand": "4-5",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-conc-inverseFact-45-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "If 9 × 8 = 72, then 72 ÷ 9 equals?",
+    "payload": {
+      "a": 72,
+      "b": 9,
+      "op": "÷",
+      "answer": 8,
+      "display": {
+        "promptText": "If 9 × 8 = 72, then 72 ÷ 9 equals?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-inverseFact-conceptual-4_5-x002",
+    "modeId": "division",
+    "subskill": "inverseFact",
+    "itemFamily": "conceptual",
+    "levelBand": "4-5",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-conc-inverseFact-45-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "64 ÷ 8 = ? Think: 8 times what makes 64?",
+    "payload": {
+      "a": 64,
+      "b": 8,
+      "op": "÷",
+      "answer": 8,
+      "display": {
+        "promptText": "64 ÷ 8 = ? Think: 8 times what makes 64?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-inverseFact-conceptual-4_5-x003",
+    "modeId": "division",
+    "subskill": "inverseFact",
+    "itemFamily": "conceptual",
+    "levelBand": "4-5",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-conc-inverseFact-45-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Since 7 × 7 = 49, what is 49 ÷ 7?",
+    "payload": {
+      "a": 49,
+      "b": 7,
+      "op": "÷",
+      "answer": 7,
+      "display": {
+        "promptText": "Since 7 × 7 = 49, what is 49 ÷ 7?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

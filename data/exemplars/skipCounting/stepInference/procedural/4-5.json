@@ -1,0 +1,95 @@
+[
+  {
+    "exemplarId": "skipCounting-stepInference-procedural-4_5-x001",
+    "modeId": "skipCounting",
+    "subskill": "stepInference",
+    "itemFamily": "procedural",
+    "levelBand": "4-5",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-proc-stepInference-45-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Find the next term: 50, 60, 70, ?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 80,
+      "display": {
+        "step": 10,
+        "sequence": [
+          50,
+          60,
+          70
+        ],
+        "promptText": "Find the next term: 50, 60, 70, ?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-stepInference-procedural-4_5-x002",
+    "modeId": "skipCounting",
+    "subskill": "stepInference",
+    "itemFamily": "procedural",
+    "levelBand": "4-5",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-proc-stepInference-45-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Find the next term: 80, 100, 120, ?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 140,
+      "display": {
+        "step": 20,
+        "sequence": [
+          80,
+          100,
+          120
+        ],
+        "promptText": "Find the next term: 80, 100, 120, ?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-stepInference-procedural-4_5-x003",
+    "modeId": "skipCounting",
+    "subskill": "stepInference",
+    "itemFamily": "procedural",
+    "levelBand": "4-5",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-proc-stepInference-45-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Find the next term: 200, 400, 600, ?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 800,
+      "display": {
+        "step": 200,
+        "sequence": [
+          200,
+          400,
+          600
+        ],
+        "promptText": "Find the next term: 200, 400, 600, ?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

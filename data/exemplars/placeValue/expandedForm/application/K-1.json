@@ -1,0 +1,89 @@
+[
+  {
+    "exemplarId": "placeValue-expandedForm-application-K_1-x001",
+    "modeId": "placeValue",
+    "subskill": "expandedForm",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-022",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A counter shows 1 ten and 3 ones. What number is on the counter?",
+    "payload": {
+      "a": 13,
+      "b": null,
+      "op": "place",
+      "answer": 13,
+      "display": {
+        "ones": 3,
+        "tens": 1,
+        "type": "build",
+        "number": 13,
+        "promptText": "A counter shows 1 ten and 3 ones. What number is on the counter?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-expandedForm-application-K_1-x002",
+    "modeId": "placeValue",
+    "subskill": "expandedForm",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-023",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A pile has 2 tens and 0 ones of cubes. How many cubes in the pile?",
+    "payload": {
+      "a": 20,
+      "b": null,
+      "op": "place",
+      "answer": 20,
+      "display": {
+        "ones": 0,
+        "tens": 2,
+        "type": "build",
+        "number": 20,
+        "promptText": "A pile has 2 tens and 0 ones of cubes. How many cubes in the pile?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-expandedForm-application-K_1-x003",
+    "modeId": "placeValue",
+    "subskill": "expandedForm",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-024",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A bin shows 1 ten and 7 ones of marbles. How many marbles in the bin?",
+    "payload": {
+      "a": 17,
+      "b": null,
+      "op": "place",
+      "answer": 17,
+      "display": {
+        "ones": 7,
+        "tens": 1,
+        "type": "build",
+        "number": 17,
+        "promptText": "A bin shows 1 ten and 7 ones of marbles. How many marbles in the bin?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

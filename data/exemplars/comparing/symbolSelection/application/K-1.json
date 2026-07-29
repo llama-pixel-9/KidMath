@@ -1,0 +1,87 @@
+[
+  {
+    "exemplarId": "comparing-symbolSelection-application-K_1-x001",
+    "modeId": "comparing",
+    "subskill": "symbolSelection",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-014",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Mia has 5 candies. Tom has 8 candies. Which symbol compares 5 to 8?",
+    "payload": {
+      "a": 5,
+      "b": 8,
+      "op": "?",
+      "answer": "<",
+      "display": {
+        "promptText": "Mia has 5 candies. Tom has 8 candies. Which symbol compares 5 to 8?",
+        "promptOptions": [
+          "Mia has 5 candies. Tom has 8 candies. Compare 5 to 8."
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-symbolSelection-application-K_1-x002",
+    "modeId": "comparing",
+    "subskill": "symbolSelection",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-015",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Sara counted 7 cars. Eli counted 4 cars. Which symbol compares 7 to 4?",
+    "payload": {
+      "a": 7,
+      "b": 4,
+      "op": "?",
+      "answer": ">",
+      "display": {
+        "promptText": "Sara counted 7 cars. Eli counted 4 cars. Which symbol compares 7 to 4?",
+        "promptOptions": [
+          "Sara counted 7 cars. Eli counted 4 cars. Compare 7 to 4."
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "comparing-symbolSelection-application-K_1-x003",
+    "modeId": "comparing",
+    "subskill": "symbolSelection",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "compareNumbers",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:comparing-app-016",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Two boxes both have 6 toys. Which symbol compares 6 to 6?",
+    "payload": {
+      "a": 6,
+      "b": 6,
+      "op": "?",
+      "answer": "=",
+      "display": {
+        "promptText": "Two boxes both have 6 toys. Which symbol compares 6 to 6?",
+        "promptOptions": [
+          "Kyle's box has 6 toys. Lisa's box has 6 toys. Compare 6 to 6.",
+          "One box has 6 toys. Another box has 6 toys. Compare 6 to 6."
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

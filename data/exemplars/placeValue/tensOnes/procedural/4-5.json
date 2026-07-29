@@ -1,0 +1,89 @@
+[
+  {
+    "exemplarId": "placeValue-tensOnes-procedural-4_5-x001",
+    "modeId": "placeValue",
+    "subskill": "tensOnes",
+    "itemFamily": "procedural",
+    "levelBand": "4-5",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-proc-tensOnes-45-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "How many tens in 234?",
+    "payload": {
+      "a": 234,
+      "b": null,
+      "op": "place",
+      "answer": 23,
+      "display": {
+        "ones": 4,
+        "tens": 23,
+        "type": "tens_in",
+        "number": 234,
+        "promptText": "How many tens in 234?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-tensOnes-procedural-4_5-x002",
+    "modeId": "placeValue",
+    "subskill": "tensOnes",
+    "itemFamily": "procedural",
+    "levelBand": "4-5",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-proc-tensOnes-45-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "How many tens in 580?",
+    "payload": {
+      "a": 580,
+      "b": null,
+      "op": "place",
+      "answer": 58,
+      "display": {
+        "ones": 0,
+        "tens": 58,
+        "type": "tens_in",
+        "number": 580,
+        "promptText": "How many tens in 580?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-tensOnes-procedural-4_5-x003",
+    "modeId": "placeValue",
+    "subskill": "tensOnes",
+    "itemFamily": "procedural",
+    "levelBand": "4-5",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-proc-tensOnes-45-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "How many ones in 374?",
+    "payload": {
+      "a": 374,
+      "b": null,
+      "op": "place",
+      "answer": 4,
+      "display": {
+        "ones": 4,
+        "tens": 37,
+        "type": "ones_in",
+        "number": 374,
+        "promptText": "How many ones in 374?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

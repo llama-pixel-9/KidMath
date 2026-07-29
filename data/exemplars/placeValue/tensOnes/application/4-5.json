@@ -1,0 +1,104 @@
+[
+  {
+    "exemplarId": "placeValue-tensOnes-application-4_5-x001",
+    "modeId": "placeValue",
+    "subskill": "tensOnes",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-019",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A library shelf holds 234 books. How many total tens are in 234?",
+    "payload": {
+      "a": 234,
+      "b": null,
+      "op": "place",
+      "answer": 23,
+      "display": {
+        "ones": 4,
+        "tens": 23,
+        "type": "tens_in",
+        "number": 234,
+        "promptText": "A library shelf holds 234 books. How many total tens are in 234?",
+        "promptOptions": [
+          "The library has 234 books. How many total tens are in 234?",
+          "Ms. Chen's class collected 234 books. How many total tens are in 234?",
+          "The bookstore has 234 books. How many total tens are in 234?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-tensOnes-application-4_5-x002",
+    "modeId": "placeValue",
+    "subskill": "tensOnes",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-020",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A jar holds 580 beads. How many total tens are in 580?",
+    "payload": {
+      "a": 580,
+      "b": null,
+      "op": "place",
+      "answer": 58,
+      "display": {
+        "ones": 0,
+        "tens": 58,
+        "type": "tens_in",
+        "number": 580,
+        "promptText": "A jar holds 580 beads. How many total tens are in 580?",
+        "promptOptions": [
+          "Maria has 580 beads. How many total tens are in 580?",
+          "The factory made 580 beads. How many total tens are in 580?",
+          "Jack collected 580 beads. How many total tens are in 580?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-tensOnes-application-4_5-x003",
+    "modeId": "placeValue",
+    "subskill": "tensOnes",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-021",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A box holds 374 stickers. How many ones are in 374?",
+    "payload": {
+      "a": 374,
+      "b": null,
+      "op": "place",
+      "answer": 4,
+      "display": {
+        "ones": 4,
+        "tens": 37,
+        "type": "ones_in",
+        "number": 374,
+        "promptText": "A box holds 374 stickers. How many ones are in 374?",
+        "promptOptions": [
+          "Emma has 374 stickers. How many ones are in 374?",
+          "Maya collected 374 stickers. How many ones are in 374?",
+          "The store has 374 stickers. How many ones are in 374?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

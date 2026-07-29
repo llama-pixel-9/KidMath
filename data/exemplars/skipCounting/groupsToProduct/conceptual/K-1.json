@@ -1,0 +1,95 @@
+[
+  {
+    "exemplarId": "skipCounting-groupsToProduct-conceptual-K_1-x001",
+    "modeId": "skipCounting",
+    "subskill": "groupsToProduct",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-conc-groupsToProduct-K1-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Use skip-counting by 5s to find 3 groups of 5.",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 15,
+      "display": {
+        "step": 5,
+        "sequence": [
+          5,
+          10
+        ],
+        "promptText": "Use skip-counting by 5s to find 3 groups of 5."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-groupsToProduct-conceptual-K_1-x002",
+    "modeId": "skipCounting",
+    "subskill": "groupsToProduct",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-conc-groupsToProduct-K1-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Use skip-counting by 3s for 4 groups of 3.",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 12,
+      "display": {
+        "step": 3,
+        "sequence": [
+          3,
+          6,
+          9
+        ],
+        "promptText": "Use skip-counting by 3s for 4 groups of 3."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-groupsToProduct-conceptual-K_1-x003",
+    "modeId": "skipCounting",
+    "subskill": "groupsToProduct",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-conc-groupsToProduct-K1-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Use skip-counting by 2s for 5 groups of 2.",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 10,
+      "display": {
+        "step": 2,
+        "sequence": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "promptText": "Use skip-counting by 2s for 5 groups of 2."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

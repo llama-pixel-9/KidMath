@@ -1,0 +1,91 @@
+[
+  {
+    "exemplarId": "division-partitioning-application-K_1-x001",
+    "modeId": "division",
+    "subskill": "partitioning",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-015",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "6 cookies are shared equally between 2 kids. How many cookies for each kid?",
+    "payload": {
+      "a": 6,
+      "b": 2,
+      "op": "÷",
+      "answer": 3,
+      "display": {
+        "promptText": "6 cookies are shared equally between 2 kids. How many cookies for each kid?",
+        "promptOptions": [
+          "Mom has 6 cookies. She gives them equally to 2 kids. How many cookies does each kid get?",
+          "There are 6 cookies to share equally between 2 friends. How many cookies does each friend get?",
+          "Grandma made 6 cookies for 2 kids to share equally. How many cookies does each kid get?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-partitioning-application-K_1-x002",
+    "modeId": "division",
+    "subskill": "partitioning",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-016",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "8 marbles are split equally into 2 jars. How many marbles in each jar?",
+    "payload": {
+      "a": 8,
+      "b": 2,
+      "op": "÷",
+      "answer": 4,
+      "display": {
+        "promptText": "8 marbles are split equally into 2 jars. How many marbles in each jar?",
+        "promptOptions": [
+          "Ty has 8 marbles. He puts them equally in 2 jars. How many marbles go in each jar?",
+          "There are 8 marbles to divide equally between 2 jars. How many marbles are in each jar?",
+          "A toy store has 8 marbles. They split them equally for 2 kids. How many marbles does each kid get?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-partitioning-application-K_1-x003",
+    "modeId": "division",
+    "subskill": "partitioning",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-017",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "4 stickers are given equally to 2 friends. How many stickers does each friend get?",
+    "payload": {
+      "a": 4,
+      "b": 2,
+      "op": "÷",
+      "answer": 2,
+      "display": {
+        "promptText": "4 stickers are given equally to 2 friends. How many stickers does each friend get?",
+        "promptOptions": [
+          "Luke has 4 stickers. He gives them equally to 2 friends. How many stickers does each friend get?",
+          "Maria has 4 stickers to share equally between 2 friends. How many stickers does each friend get?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

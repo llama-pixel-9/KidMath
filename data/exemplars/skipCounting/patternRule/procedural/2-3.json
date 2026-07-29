@@ -1,0 +1,95 @@
+[
+  {
+    "exemplarId": "skipCounting-patternRule-procedural-2_3-x001",
+    "modeId": "skipCounting",
+    "subskill": "patternRule",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-proc-patternRule-23-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Skip count by 10: 10, 20, 30. What's next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 40,
+      "display": {
+        "step": 10,
+        "sequence": [
+          10,
+          20,
+          30
+        ],
+        "promptText": "Skip count by 10: 10, 20, 30. What's next?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-patternRule-procedural-2_3-x002",
+    "modeId": "skipCounting",
+    "subskill": "patternRule",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-proc-patternRule-23-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Skip count by 6: 6, 12, 18. What's next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 24,
+      "display": {
+        "step": 6,
+        "sequence": [
+          6,
+          12,
+          18
+        ],
+        "promptText": "Skip count by 6: 6, 12, 18. What's next?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-patternRule-procedural-2_3-x003",
+    "modeId": "skipCounting",
+    "subskill": "patternRule",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-proc-patternRule-23-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Skip count by 11: 11, 22, 33. What's next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 44,
+      "display": {
+        "step": 11,
+        "sequence": [
+          11,
+          22,
+          33
+        ],
+        "promptText": "Skip count by 11: 11, 22, 33. What's next?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

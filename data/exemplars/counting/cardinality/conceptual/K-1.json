@@ -1,0 +1,77 @@
+[
+  {
+    "exemplarId": "counting-cardinality-conceptual-K_1-x001",
+    "modeId": "counting",
+    "subskill": "cardinality",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-conc-cardinality-K1-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "After counting all items in a set of 10, what is the cardinality?",
+    "payload": {
+      "a": 10,
+      "b": null,
+      "op": "count",
+      "answer": 10,
+      "display": {
+        "promptText": "After counting all items in a set of 10, what is the cardinality?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "counting-cardinality-conceptual-K_1-x002",
+    "modeId": "counting",
+    "subskill": "cardinality",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-conc-cardinality-K1-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "After counting all items in a set of 8, what is the cardinality?",
+    "payload": {
+      "a": 8,
+      "b": null,
+      "op": "count",
+      "answer": 8,
+      "display": {
+        "promptText": "After counting all items in a set of 8, what is the cardinality?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "counting-cardinality-conceptual-K_1-x003",
+    "modeId": "counting",
+    "subskill": "cardinality",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-conc-cardinality-K1-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "After counting all items in a set of 9, what is the cardinality?",
+    "payload": {
+      "a": 9,
+      "b": null,
+      "op": "count",
+      "answer": 9,
+      "display": {
+        "promptText": "After counting all items in a set of 9, what is the cardinality?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

@@ -69,6 +69,9 @@ async function main() {
   let cells;
   if (args.all) {
     cells = listCellsWithExemplars();
+    // Optional narrowing: --all --mode counting --families application,conceptual
+    if (args.mode) cells = cells.filter((c) => args.mode.split(",").includes(c.modeId));
+    if (args.families) cells = cells.filter((c) => args.families.split(",").includes(c.itemFamily));
   } else if (args.mode && args.subskill && args.family && args.band) {
     cells = [
       {

@@ -1,0 +1,77 @@
+[
+  {
+    "exemplarId": "counting-cardinality-procedural-K_1-x001",
+    "modeId": "counting",
+    "subskill": "cardinality",
+    "itemFamily": "procedural",
+    "levelBand": "K-1",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-proc-cardinality-K1-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Count 10 items. The cardinality is?",
+    "payload": {
+      "a": 10,
+      "b": null,
+      "op": "count",
+      "answer": 10,
+      "display": {
+        "promptText": "Count 10 items. The cardinality is?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "counting-cardinality-procedural-K_1-x002",
+    "modeId": "counting",
+    "subskill": "cardinality",
+    "itemFamily": "procedural",
+    "levelBand": "K-1",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-proc-cardinality-K1-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Count 8 items. The cardinality is?",
+    "payload": {
+      "a": 8,
+      "b": null,
+      "op": "count",
+      "answer": 8,
+      "display": {
+        "promptText": "Count 8 items. The cardinality is?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "counting-cardinality-procedural-K_1-x003",
+    "modeId": "counting",
+    "subskill": "cardinality",
+    "itemFamily": "procedural",
+    "levelBand": "K-1",
+    "structureType": "countObjects",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:counting-proc-cardinality-K1-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Count 9 items. The cardinality is?",
+    "payload": {
+      "a": 9,
+      "b": null,
+      "op": "count",
+      "answer": 9,
+      "display": {
+        "promptText": "Count 9 items. The cardinality is?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

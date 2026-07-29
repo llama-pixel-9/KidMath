@@ -1,0 +1,92 @@
+[
+  {
+    "exemplarId": "division-inverseFact-application-K_1-x001",
+    "modeId": "division",
+    "subskill": "inverseFact",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-018",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "6 small marbles are arranged into 3 equal groups. How many marbles per group?",
+    "payload": {
+      "a": 6,
+      "b": 3,
+      "op": "÷",
+      "answer": 2,
+      "display": {
+        "promptText": "6 small marbles are arranged into 3 equal groups. How many marbles per group?",
+        "promptOptions": [
+          "Ruby has 6 marbles. She arranges them into 3 equal groups. How many marbles per group?",
+          "Tom arranged 6 marbles into 3 equal groups. How many marbles are in each group?",
+          "Alex has 6 marbles to divide into 3 equal groups. How many marbles per group?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-inverseFact-application-K_1-x002",
+    "modeId": "division",
+    "subskill": "inverseFact",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-019",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "9 gold stars are placed in 3 rows equally. How many stars per row?",
+    "payload": {
+      "a": 9,
+      "b": 3,
+      "op": "÷",
+      "answer": 3,
+      "display": {
+        "promptText": "9 gold stars are placed in 3 rows equally. How many stars per row?",
+        "promptOptions": [
+          "Luna placed 9 gold stars in 3 equal rows. How many stars per row?",
+          "Kim arranged 9 gold stars into 3 equal rows. How many stars per row?",
+          "Sara has 9 gold stars. She puts them into 3 equal rows. How many stars per row?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-inverseFact-application-K_1-x003",
+    "modeId": "division",
+    "subskill": "inverseFact",
+    "itemFamily": "application",
+    "levelBand": "K-1",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-app-020",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "10 fish are placed evenly across 5 tanks. How many fish per tank?",
+    "payload": {
+      "a": 10,
+      "b": 5,
+      "op": "÷",
+      "answer": 2,
+      "display": {
+        "promptText": "10 fish are placed evenly across 5 tanks. How many fish per tank?",
+        "promptOptions": [
+          "Jon has 10 fish. He puts them evenly into 5 tanks. How many fish per tank?",
+          "Maya placed 10 fish equally into 5 tanks. How many fish per tank?",
+          "Sam has 10 fish to put equally into 5 tanks. How many fish go in each tank?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

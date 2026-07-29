@@ -1,0 +1,89 @@
+[
+  {
+    "exemplarId": "placeValue-regroupingSense-procedural-4_5-x001",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "procedural",
+    "levelBand": "4-5",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-proc-regroupingSense-45-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Combine 23 tens and 4 ones into one number.",
+    "payload": {
+      "a": 234,
+      "b": null,
+      "op": "place",
+      "answer": 234,
+      "display": {
+        "ones": 4,
+        "tens": 23,
+        "type": "build",
+        "number": 234,
+        "promptText": "Combine 23 tens and 4 ones into one number."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-regroupingSense-procedural-4_5-x002",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "procedural",
+    "levelBand": "4-5",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-proc-regroupingSense-45-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Combine 58 tens and 0 ones into one number.",
+    "payload": {
+      "a": 580,
+      "b": null,
+      "op": "place",
+      "answer": 580,
+      "display": {
+        "ones": 0,
+        "tens": 58,
+        "type": "build",
+        "number": 580,
+        "promptText": "Combine 58 tens and 0 ones into one number."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-regroupingSense-procedural-4_5-x003",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "procedural",
+    "levelBand": "4-5",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-proc-regroupingSense-45-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Combine 37 tens and 4 ones into one number.",
+    "payload": {
+      "a": 374,
+      "b": null,
+      "op": "place",
+      "answer": 374,
+      "display": {
+        "ones": 4,
+        "tens": 37,
+        "type": "build",
+        "number": 374,
+        "promptText": "Combine 37 tens and 4 ones into one number."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

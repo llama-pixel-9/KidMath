@@ -1,0 +1,234 @@
+[
+  {
+    "exemplarId": "placeValue-regroupingSense-application-4_5-x001",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A class builds a number with 6 tens and 4 ones. What number did they build?",
+    "payload": {
+      "a": 64,
+      "b": null,
+      "op": "place",
+      "answer": 64,
+      "display": {
+        "ones": 4,
+        "tens": 6,
+        "type": "build",
+        "number": 64,
+        "promptText": "A class builds a number with 6 tens and 4 ones. What number did they build?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-regroupingSense-application-4_5-x002",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A puzzle card shows 12 tens and 8 ones. What number is shown?",
+    "payload": {
+      "a": 128,
+      "b": null,
+      "op": "place",
+      "answer": 128,
+      "display": {
+        "ones": 8,
+        "tens": 12,
+        "type": "build",
+        "number": 128,
+        "promptText": "A puzzle card shows 12 tens and 8 ones. What number is shown?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-regroupingSense-application-4_5-x003",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A team records 30 tens and 5 ones. What number do those blocks make?",
+    "payload": {
+      "a": 305,
+      "b": null,
+      "op": "place",
+      "answer": 305,
+      "display": {
+        "ones": 5,
+        "tens": 30,
+        "type": "build",
+        "number": 305,
+        "promptText": "A team records 30 tens and 5 ones. What number do those blocks make?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-regroupingSense-application-4_5-x004",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-004",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A storage bin holds 9 tens of beads and 2 extra beads. How many beads in all?",
+    "payload": {
+      "a": 92,
+      "b": null,
+      "op": "place",
+      "answer": 92,
+      "display": {
+        "ones": 2,
+        "tens": 9,
+        "type": "build",
+        "number": 92,
+        "promptText": "A storage bin holds 9 tens of beads and 2 extra beads. How many beads in all?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-regroupingSense-application-4_5-x005",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-005",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A stack has 24 tens and 0 ones. What number does the stack show?",
+    "payload": {
+      "a": 240,
+      "b": null,
+      "op": "place",
+      "answer": 240,
+      "display": {
+        "ones": 0,
+        "tens": 24,
+        "type": "build",
+        "number": 240,
+        "promptText": "A stack has 24 tens and 0 ones. What number does the stack show?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-regroupingSense-application-4_5-x006",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-006",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A box has 4 tens of crayons and 7 extra crayons. How many crayons are in the box?",
+    "payload": {
+      "a": 47,
+      "b": null,
+      "op": "place",
+      "answer": 47,
+      "display": {
+        "ones": 7,
+        "tens": 4,
+        "type": "build",
+        "number": 47,
+        "promptText": "A box has 4 tens of crayons and 7 extra crayons. How many crayons are in the box?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-regroupingSense-application-4_5-x007",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-007",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A model uses 15 tens of blocks and 6 ones. What number do the blocks show?",
+    "payload": {
+      "a": 156,
+      "b": null,
+      "op": "place",
+      "answer": 156,
+      "display": {
+        "ones": 6,
+        "tens": 15,
+        "type": "build",
+        "number": 156,
+        "promptText": "A model uses 15 tens of blocks and 6 ones. What number do the blocks show?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-regroupingSense-application-4_5-x008",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "application",
+    "levelBand": "4-5",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-app-008",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A counter shows 50 tens and 3 ones. What number is on the counter?",
+    "payload": {
+      "a": 503,
+      "b": null,
+      "op": "place",
+      "answer": 503,
+      "display": {
+        "ones": 3,
+        "tens": 50,
+        "type": "build",
+        "number": 503,
+        "promptText": "A counter shows 50 tens and 3 ones. What number is on the counter?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

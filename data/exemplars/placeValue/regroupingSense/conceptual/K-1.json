@@ -1,0 +1,89 @@
+[
+  {
+    "exemplarId": "placeValue-regroupingSense-conceptual-K_1-x001",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-conc-regroupingSense-K1-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Regroup 10 + 4 to a single number.",
+    "payload": {
+      "a": 14,
+      "b": null,
+      "op": "place",
+      "answer": 14,
+      "display": {
+        "ones": 4,
+        "tens": 1,
+        "type": "build",
+        "number": 14,
+        "promptText": "Regroup 10 + 4 to a single number."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-regroupingSense-conceptual-K_1-x002",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-conc-regroupingSense-K1-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Regroup 10 + 8 to a single number.",
+    "payload": {
+      "a": 18,
+      "b": null,
+      "op": "place",
+      "answer": 18,
+      "display": {
+        "ones": 8,
+        "tens": 1,
+        "type": "build",
+        "number": 18,
+        "promptText": "Regroup 10 + 8 to a single number."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "placeValue-regroupingSense-conceptual-K_1-x003",
+    "modeId": "placeValue",
+    "subskill": "regroupingSense",
+    "itemFamily": "conceptual",
+    "levelBand": "K-1",
+    "structureType": "buildFromUnits",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:placevalue-conc-regroupingSense-K1-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Regroup 20 + 5 to a single number.",
+    "payload": {
+      "a": 25,
+      "b": null,
+      "op": "place",
+      "answer": 25,
+      "display": {
+        "ones": 5,
+        "tens": 2,
+        "type": "build",
+        "number": 25,
+        "promptText": "Regroup 20 + 5 to a single number."
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

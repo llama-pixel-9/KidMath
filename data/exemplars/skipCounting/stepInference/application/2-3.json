@@ -1,0 +1,107 @@
+[
+  {
+    "exemplarId": "skipCounting-stepInference-application-2_3-x001",
+    "modeId": "skipCounting",
+    "subskill": "stepInference",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-026",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "A pattern shows 7, 14, 21. What's next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 28,
+      "display": {
+        "step": 7,
+        "sequence": [
+          7,
+          14,
+          21
+        ],
+        "promptText": "A pattern shows 7, 14, 21. What's next?",
+        "promptOptions": [
+          "Maria counts by 7s. She says 7, 14, 21. What comes next?",
+          "Counting by 7s: 7, 14, 21. What's the next number?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-stepInference-application-2_3-x002",
+    "modeId": "skipCounting",
+    "subskill": "stepInference",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-027",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Counting in order 8, 16, 24. What's next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 32,
+      "display": {
+        "step": 8,
+        "sequence": [
+          8,
+          16,
+          24
+        ],
+        "promptText": "Counting in order 8, 16, 24. What's next?",
+        "promptOptions": [
+          "Carlos counts by 8s. He says 8, 16, 24. What comes next?",
+          "Counting by 8s: 8, 16, 24. What's the next number?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-stepInference-application-2_3-x003",
+    "modeId": "skipCounting",
+    "subskill": "stepInference",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-028",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "Pattern: 15, 30, 45. What's next?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 60,
+      "display": {
+        "step": 15,
+        "sequence": [
+          15,
+          30,
+          45
+        ],
+        "promptText": "Pattern: 15, 30, 45. What's next?",
+        "promptOptions": [
+          "Maria counts by 15s. She says 15, 30, 45. What comes next?",
+          "Counting by 15s: 15, 30, 45. What's the next number?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

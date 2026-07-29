@@ -1,0 +1,107 @@
+[
+  {
+    "exemplarId": "skipCounting-groupsToProduct-application-2_3-x001",
+    "modeId": "skipCounting",
+    "subskill": "groupsToProduct",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-029",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "4 books per shelf; 4, 8, 12 after 3 shelves. After 4 shelves?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 16,
+      "display": {
+        "step": 4,
+        "sequence": [
+          4,
+          8,
+          12
+        ],
+        "promptText": "4 books per shelf; 4, 8, 12 after 3 shelves. After 4 shelves?",
+        "promptOptions": [
+          "Jayden puts 4 books on each shelf. After 3 shelves he has 4, 8, 12 books. How many books after 4 shelves?",
+          "Counting by 4s for each shelf: 4, 8, 12. What comes next?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-groupsToProduct-application-2_3-x002",
+    "modeId": "skipCounting",
+    "subskill": "groupsToProduct",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-030",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "6 candies per jar; 6, 12, 18 after 3 jars. After 4 jars?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 24,
+      "display": {
+        "step": 6,
+        "sequence": [
+          6,
+          12,
+          18
+        ],
+        "promptText": "6 candies per jar; 6, 12, 18 after 3 jars. After 4 jars?",
+        "promptOptions": [
+          "Maria fills jars with 6 candies each. After 3 jars she has 6, 12, 18 candies. How many candies after 4 jars?",
+          "Counting by 6s for each jar: 6, 12, 18. What comes next?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "skipCounting-groupsToProduct-application-2_3-x003",
+    "modeId": "skipCounting",
+    "subskill": "groupsToProduct",
+    "itemFamily": "application",
+    "levelBand": "2-3",
+    "structureType": "patternNext",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:skipcounting-app-031",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "5 stickers per page; 5, 10, 15 after 3 pages. After 4 pages?",
+    "payload": {
+      "a": null,
+      "b": null,
+      "op": "skip",
+      "answer": 20,
+      "display": {
+        "step": 5,
+        "sequence": [
+          5,
+          10,
+          15
+        ],
+        "promptText": "5 stickers per page; 5, 10, 15 after 3 pages. After 4 pages?",
+        "promptOptions": [
+          "Jayden puts 5 stickers on each page. After 3 pages he has 5, 10, 15 stickers. How many stickers after 4 pages?",
+          "Counting by 5s for each page: 5, 10, 15. What comes next?"
+        ]
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

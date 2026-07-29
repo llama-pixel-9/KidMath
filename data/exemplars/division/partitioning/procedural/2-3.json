@@ -1,0 +1,77 @@
+[
+  {
+    "exemplarId": "division-partitioning-procedural-2_3-x001",
+    "modeId": "division",
+    "subskill": "partitioning",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-proc-partitioning-23-001",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "12 ÷ 4 = ?",
+    "payload": {
+      "a": 12,
+      "b": 4,
+      "op": "÷",
+      "answer": 3,
+      "display": {
+        "promptText": "12 ÷ 4 = ?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-partitioning-procedural-2_3-x002",
+    "modeId": "division",
+    "subskill": "partitioning",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-proc-partitioning-23-002",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "15 ÷ 3 = ?",
+    "payload": {
+      "a": 15,
+      "b": 3,
+      "op": "÷",
+      "answer": 5,
+      "display": {
+        "promptText": "15 ÷ 3 = ?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  },
+  {
+    "exemplarId": "division-partitioning-procedural-2_3-x003",
+    "modeId": "division",
+    "subskill": "partitioning",
+    "itemFamily": "procedural",
+    "levelBand": "2-3",
+    "structureType": "partitiveDivision",
+    "source": {
+      "name": "KidMath item bank (own reviewed content)",
+      "url": "item:division-proc-partitioning-23-003",
+      "license": "CC0",
+      "fetchedAt": "2026-07-29"
+    },
+    "paraphrase": "18 ÷ 6 = ?",
+    "payload": {
+      "a": 18,
+      "b": 6,
+      "op": "÷",
+      "answer": 3,
+      "display": {
+        "promptText": "18 ÷ 6 = ?"
+      }
+    },
+    "notes": "Exported from the approved bank as an in-register exemplar."
+  }
+]

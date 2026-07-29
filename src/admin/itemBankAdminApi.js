@@ -117,15 +117,24 @@ export async function bulkSetReviewStatus(entries, reviewStatus) {
 
   const updated = [];
   const plainIds = normalized.filter((e) => e.payload === undefined).map((e) => e.itemId);
-  for (const entry of normalized.filter((e) => e.payload !== undefined)) {
-    const { data, error } = await supabase
-      .from("item_bank")
-      .update({ ...patch, payload: entry.payload })
-      .eq("item_id", entry.itemId)
-      .select(ADMIN_SELECT_FIELDS)
-      .single();
-    if (error) throw error;
-    updated.push(rowToItem(data));
+  // Payload-carrying updates are per-row; run them in small concurrent waves
+  // so a batch-approve of hundreds of reworded items stays interactive.
+  const withPayload = normalized.filter((e) => e.payload !== undefined);
+  const WAVE = 8;
+  for (let i = 0; i < withPayload.length; i += WAVE) {
+    const wave = await Promise.all(
+      withPayload.slice(i, i + WAVE).map(async (entry) => {
+        const { data, error } = await supabase
+          .from("item_bank")
+          .update({ ...patch, payload: entry.payload })
+          .eq("item_id", entry.itemId)
+          .select(ADMIN_SELECT_FIELDS)
+          .single();
+        if (error) throw error;
+        return rowToItem(data);
+      })
+    );
+    updated.push(...wave);
   }
   if (plainIds.length > 0) {
     const { data, error } = await supabase

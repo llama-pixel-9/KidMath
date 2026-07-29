@@ -4,6 +4,7 @@ import { bulkSetReviewStatus, setReviewStatus } from "./itemBankAdminApi";
 import { runChecksOnAdminItem } from "../itemBank/qc/checks.js";
 import { formatAnswer } from "./reviewFormat.js";
 import { choiceList, payloadWithChoice, itemWithChoice, promptOptionsOf } from "./reviewChoice.js";
+import { groupIntoBatches, sampleOf, sampleSize, batchApprovalEntries } from "./reviewBatches.js";
 
 // The queue reviews two kinds of item: unapproved drafts promoted to
 // `reviewed`, and already-approved items carrying pending wording options from
@@ -78,7 +79,13 @@ export default function ReviewQueue({
   const [filterBand, setFilterBand] = useState("");
   const [filterQc, setFilterQc] = useState(""); // "", "fail", "flagged"
   const [expanded, setExpanded] = useState(() => new Set());
-  const [viewMode, setViewMode] = useState("cards"); // "cards" | "table"
+  const [viewMode, setViewMode] = useState("cards"); // "cards" | "table" | "batches"
+  // Batch-trust state: which batch is being spot-checked, its frozen sample,
+  // and the two-click confirm arm.
+  const [openBatch, setOpenBatch] = useState(null);
+  const [batchSamples, setBatchSamples] = useState(() => new Map());
+  const [armedBatch, setArmedBatch] = useState(null);
+  const [batchNote, setBatchNote] = useState(null);
   const [pageSize, setPageSize] = useState(20); // multiples of 10, up to 50
   const [page, setPage] = useState(0);
   // itemId -> chosen wording, for items carrying ranked promptOptions. Items
@@ -175,6 +182,32 @@ export default function ReviewQueue({
     const it = byId.get(itemId);
     const chosen = it ? chosenText(it, choices) : null;
     return chosen ? { itemId, payload: payloadWithChoice(it.payload, chosen) } : { itemId };
+  }
+
+  // Batches are grouped from the filtered queue, so the family/band filters
+  // narrow batch review the same way they narrow the card view.
+  const batches = useMemo(() => groupIntoBatches(queue), [queue]);
+
+  async function doBatchApprove(batch) {
+    const { entries, skipped } = batchApprovalEntries(batch.items, qcById, choices);
+    if (!entries.length) return;
+    setBusy(true);
+    setError(null);
+    setBatchNote(null);
+    try {
+      const updated = await bulkSetReviewStatus(entries, "approved");
+      onBulkChanged?.(updated);
+      setArmedBatch(null);
+      setOpenBatch(null);
+      setBatchNote(
+        `Approved ${entries.length} item(s) from "${batch.label}"` +
+          (skipped.length ? ` — ${skipped.length} QC-failing kept in the queue.` : ".")
+      );
+    } catch (err) {
+      setError(err.message || "Batch approve failed");
+    } finally {
+      setBusy(false);
+    }
   }
 
   async function doBulk(reviewStatus) {
@@ -306,13 +339,16 @@ export default function ReviewQueue({
             </option>
           ))}
         </select>
-        <button
-          type="button"
-          onClick={() => setViewMode((v) => (v === "cards" ? "table" : "cards"))}
+        <select
           className="rounded-lg border border-gray-300 px-3 py-2 text-sm font-semibold text-slate-600"
+          value={viewMode}
+          onChange={(e) => setViewMode(e.target.value)}
+          title="How to review"
         >
-          {viewMode === "cards" ? "Table view" : "Card view"}
-        </button>
+          <option value="cards">Card view</option>
+          <option value="table">Table view</option>
+          <option value="batches">Batch view</option>
+        </select>
       </div>
 
       {(qcSummary.fail > 0 || qcSummary.warn > 0) && (
@@ -373,8 +409,8 @@ export default function ReviewQueue({
 
       {error && <div className="p-3 bg-red-50 text-red-700 rounded-xl text-sm">{error}</div>}
 
-      {/* Pagination bar, shared by both views. */}
-      {queue.length > 0 && (
+      {/* Pagination bar (per-item views only). */}
+      {viewMode !== "batches" && queue.length > 0 && (
         <div className="flex items-center gap-3 text-sm text-slate-600">
           <span>
             Showing {pageStart + 1}–{Math.min(pageStart + pageSize, queue.length)} of {queue.length}
@@ -402,7 +438,96 @@ export default function ReviewQueue({
         </div>
       )}
 
-      {viewMode === "cards" ? (
+      {viewMode === "batches" ? (
+        <div className="space-y-3">
+          {batchNote && (
+            <div className="p-3 bg-emerald-50 text-emerald-700 rounded-xl text-sm">{batchNote}</div>
+          )}
+          {batches.length === 0 && (
+            <div className="py-8 text-center text-sm text-slate-500">Review queue is empty.</div>
+          )}
+          {batches.map((batch) => {
+            const failCount = batch.items.filter((it) => qcById.get(it.itemId)?.pass === false).length;
+            const isOpen = openBatch === batch.key;
+            const sample = batchSamples.get(batch.key) || [];
+            return (
+              <div key={batch.key} className="rounded-2xl border border-gray-200 bg-white p-4">
+                <div className="flex flex-wrap items-center gap-3">
+                  <div className="flex-1 min-w-[200px]">
+                    <p className="font-extrabold text-slate-800">{batch.label}</p>
+                    <p className="text-xs text-slate-500">
+                      {batch.items.length} items
+                      {failCount > 0 && (
+                        <span className="text-red-600 font-bold"> · {failCount} QC-fail (kept back)</span>
+                      )}
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    className="px-3 py-1.5 rounded-lg border border-gray-300 text-sm font-semibold text-slate-600"
+                    onClick={() => {
+                      if (isOpen) {
+                        setOpenBatch(null);
+                      } else {
+                        setOpenBatch(batch.key);
+                        setArmedBatch(null);
+                        if (!batchSamples.has(batch.key)) {
+                          setBatchSamples((prev) => new Map(prev).set(batch.key, sampleOf(batch.items)));
+                        }
+                      }
+                    }}
+                  >
+                    {isOpen ? "Hide sample" : `Spot-check ${sampleSize(batch.items.length)}`}
+                  </button>
+                  <button
+                    type="button"
+                    className={`px-3 py-1.5 rounded-lg text-sm font-bold text-white disabled:opacity-50 ${
+                      armedBatch === batch.key ? "bg-red-600" : "bg-emerald-600"
+                    }`}
+                    // Two-click confirm: approving hundreds of items should
+                    // never happen on a slip. The sample must be open first —
+                    // batch trust means the sample was actually looked at.
+                    disabled={busy || !isOpen || batch.items.length === failCount}
+                    title={!isOpen ? "Open the spot-check sample first" : undefined}
+                    onClick={() => {
+                      if (armedBatch !== batch.key) {
+                        setArmedBatch(batch.key);
+                        return;
+                      }
+                      doBatchApprove(batch);
+                    }}
+                  >
+                    {armedBatch === batch.key
+                      ? `Really approve ${batch.items.length - failCount}?`
+                      : `Approve all ${batch.items.length - failCount}`}
+                  </button>
+                </div>
+
+                {isOpen && (
+                  <div className="mt-3 grid gap-2 sm:grid-cols-2 border-t border-gray-100 pt-3">
+                    {sample.map((it) => {
+                      const qc = qcById.get(it.itemId);
+                      const text = chosenText(it, choices) || it.payload?.display?.promptText || "(non-text item)";
+                      return (
+                        <div key={it.itemId} className="rounded-xl bg-slate-50 p-3 text-sm">
+                          <div className="flex items-start gap-2">
+                            <p className="flex-1 text-slate-700 leading-snug">{text}</p>
+                            <QcBadge qc={qc} />
+                          </div>
+                          <p className="mt-1 text-xs text-slate-500">
+                            Answer <span className="font-extrabold text-slate-700">{formatAnswer(it.payload?.answer)}</span>
+                            <span className="ml-2">{it.structureType || it.subskill}</span>
+                          </p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      ) : viewMode === "cards" ? (
         <div className="grid gap-3 sm:grid-cols-2">
           {pageItems.map((it) => {
             const qc = qcById.get(it.itemId);

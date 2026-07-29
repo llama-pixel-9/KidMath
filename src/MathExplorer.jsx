@@ -45,6 +45,10 @@ import { isVerbalPrompt } from "./modes/helpers";
 import { saveProgress, loadProgress, mergeLocalToCloud } from "./progressStore";
 import { recordSessionEnd, currentStreak, starsToday } from "./engagement/engagementStore";
 import JourneyMap from "./engagement/JourneyMap.jsx";
+
+// The two CCSS compare structures whose wording points at the WRONG operation
+// — the difficult-tier trap the Word Detective badge rewards beating.
+const LANGUAGE_TRAP_STRUCTURES = new Set(["compareBiggerFewer", "compareSmallerMore"]);
 import { useAuth } from "./useAuth";
 import { useTheme } from "./useTheme";
 import { usePremium } from "./PremiumContext";
@@ -311,6 +315,17 @@ function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, li
             🎯 Daily goal done — {engagement.todayStars} stars today!
           </motion.p>
         )}
+        {(engagement?.newBadges || []).map((b, i) => (
+          <motion.p
+            key={b.id}
+            className="text-sm font-bold text-violet-600 mt-1"
+            initial={{ opacity: 0, scale: 0.6 }}
+            animate={{ opacity: 1, scale: [0.6, 1.2, 1] }}
+            transition={{ delay: 0.8 + i * 0.2 }}
+          >
+            {b.emoji} New badge: {b.name}!
+          </motion.p>
+        ))}
         <div className="flex justify-center gap-1 mt-3 flex-wrap">
           {Array.from({ length: Math.min(firstTryCorrect, 15) }, (_, i) => (
             <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />
@@ -732,6 +747,8 @@ export default function MathExplorer({ initialMode }) {
   const [revealAnswer, setRevealAnswer] = useState(null);
   const [lifetimeStars, setLifetimeStars] = useState(0);
   const [engagement, setEngagement] = useState(null);
+  // Per-session badge inputs the engine doesn't aggregate itself.
+  const sessionFactsRef = useRef({ trapWins: 0 });
   const [showLoginPrompt, setShowLoginPrompt] = useState(false);
   const [muted, setMutedState] = useState(isMuted);
   const [allowWordProblems, setAllowWordProblems] = useState(() => loadAllowWordProblemsSync());
@@ -888,14 +905,21 @@ export default function MathExplorer({ initialMode }) {
   const finishSession = useCallback(async (sess) => {
     const lt = await persistSession(mode, sess);
     setLifetimeStars(lt);
-    // The engagement loop: bank today's stars, roll the day streak, and hand
-    // the overlay exactly the moments worth celebrating.
-    const { state: eng, events } = recordSessionEnd(sess.firstTryCorrect ?? 0);
+    // The engagement loop: bank today's stars, roll the day streak, award any
+    // newly earned badges, and hand the overlay the moments worth celebrating.
+    const { state: eng, events } = recordSessionEnd(sess.firstTryCorrect ?? 0, {
+      perfect: sess.questionsAnswered > 0 && sess.firstTryCorrect === sess.questionsAnswered,
+      comebacks: sess.retriesMastered ?? 0,
+      trapWins: sessionFactsRef.current.trapWins,
+      levelReached: sess.level,
+    });
+    sessionFactsRef.current = { trapWins: 0 };
     setEngagement({
       streak: currentStreak(eng),
       streakExtended: events.streakExtended,
       goalJustMet: events.goalJustMet,
       todayStars: starsToday(eng),
+      newBadges: events.newBadges,
     });
     setShowComplete(true);
     telemetryRef.current.inc("setsCompleted");
@@ -931,6 +955,12 @@ export default function MathExplorer({ initialMode }) {
       if (result.correct) {
         setFeedback("correct");
         setRevealAnswer(currentQ.answer);
+
+        // A first-try win on a language-trap structure ("3 fewer... so ADD")
+        // feeds the Word Detective badge.
+        if (!isRetry && LANGUAGE_TRAP_STRUCTURES.has(currentQ.metadata?.structureType)) {
+          sessionFactsRef.current.trapWins += 1;
+        }
 
         if (result.levelChanged && result.newLevel > session.level) {
           playLevelUpSound();

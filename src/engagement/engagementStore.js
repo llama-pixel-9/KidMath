@@ -15,6 +15,8 @@
  * today", as a child understands it, not a UTC bucket.
  */
 
+import { newlyEarnedBadges } from "./badges.js";
+
 const STORE_KEY = "kidmath-engagement";
 
 export const DAILY_GOAL = 10;
@@ -41,6 +43,13 @@ export function emptyEngagement() {
     todayStars: 0,
     todayDay: null,
     stickers: [],
+    // Badge inputs (see badges.js) and the earned list [{ id, day }].
+    sessionsCount: 0,
+    perfectSessions: 0,
+    comebacks: 0,
+    trapWins: 0,
+    maxLevel: 1,
+    badges: [],
   };
 }
 
@@ -84,10 +93,14 @@ export function currentStreak(state, dayKey = todayKey()) {
 
 /**
  * Pure session-end transition. Returns the next state plus the events the UI
- * celebrates: did this session extend the streak, and did it just complete the
- * daily goal (exactly the crossing, so the toast fires once per day).
+ * celebrates: did this session extend the streak, did it just complete the
+ * daily goal (exactly the crossing, so the toast fires once per day), and
+ * which badges were newly earned.
+ *
+ * `facts` carries what the session itself measured: { perfect, comebacks,
+ * trapWins, levelReached }.
  */
-export function applySessionEnd(state, starsEarned, dayKey) {
+export function applySessionEnd(state, starsEarned, dayKey, facts = {}) {
   const before = starsToday(state, dayKey);
   const next = { ...state };
 
@@ -103,13 +116,24 @@ export function applySessionEnd(state, starsEarned, dayKey) {
   }
   next.bestStreak = Math.max(state.bestStreak ?? 0, next.streakDays);
 
+  next.sessionsCount = (state.sessionsCount ?? 0) + 1;
+  if (facts.perfect) next.perfectSessions = (state.perfectSessions ?? 0) + 1;
+  next.comebacks = (state.comebacks ?? 0) + (facts.comebacks ?? 0);
+  next.trapWins = (state.trapWins ?? 0) + (facts.trapWins ?? 0);
+  next.maxLevel = Math.max(state.maxLevel ?? 1, facts.levelReached ?? 1);
+
+  const newBadges = newlyEarnedBadges(next);
+  if (newBadges.length) {
+    next.badges = [...(state.badges ?? []), ...newBadges.map((b) => ({ id: b.id, day: dayKey }))];
+  }
+
   const goalJustMet = before < DAILY_GOAL && next.todayStars >= DAILY_GOAL;
-  return { state: next, events: { streakExtended, goalJustMet } };
+  return { state: next, events: { streakExtended, goalJustMet, newBadges } };
 }
 
 /** Record a finished session; persists and returns { state, events }. */
-export function recordSessionEnd(starsEarned, dayKey = todayKey()) {
-  const result = applySessionEnd(loadEngagement(), starsEarned, dayKey);
+export function recordSessionEnd(starsEarned, facts = {}, dayKey = todayKey()) {
+  const result = applySessionEnd(loadEngagement(), starsEarned, dayKey, facts);
   persist(result.state);
   return result;
 }

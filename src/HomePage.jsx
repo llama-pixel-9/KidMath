@@ -40,6 +40,7 @@ import { loadProgressSync } from "./progressStore";
 import { loadEngagement, starBalance, currentStreak, starsToday } from "./engagement/engagementStore";
 import EngagementBar from "./engagement/EngagementBar.jsx";
 import StickerBook from "./engagement/StickerBook.jsx";
+import GrownUpsPanel from "./engagement/GrownUpsPanel.jsx";
 import { rankForLevel } from "./engagement/ranks.js";
 import { usePremium } from "./PremiumContext";
 import { isFreeMode } from "./premium";
@@ -81,6 +82,7 @@ export default function HomePage() {
   const { theme } = useTheme();
   const navigate = useNavigate();
   const [stickersOpen, setStickersOpen] = useState(false);
+  const [grownUpsOpen, setGrownUpsOpen] = useState(false);
   // Read-once snapshot per mount; the book updates its own copy while open.
   const [engagement] = useState(loadEngagement);
 
@@ -253,7 +255,18 @@ export default function HomePage() {
         </div>
       </section>
 
+      <div className="text-center pb-2 -mt-8">
+        <button
+          type="button"
+          className={`text-xs font-semibold ${theme.textMuted} underline underline-offset-2 cursor-pointer`}
+          onClick={() => setGrownUpsOpen(true)}
+        >
+          For grown-ups: progress report
+        </button>
+      </div>
+
       <StickerBook open={stickersOpen} onClose={() => setStickersOpen(false)} />
+      <GrownUpsPanel open={grownUpsOpen} onClose={() => setGrownUpsOpen(false)} />
 
       {/* How It Works */}
       <section className="px-4 py-16 bg-white/30">

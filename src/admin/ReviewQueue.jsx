@@ -411,101 +411,108 @@ export default function ReviewQueue({
             const options = choiceList(it);
             const chosen = chosenText(it, choices);
             return (
+              // Fixed height so the action row lands in the same place on every
+              // card: after an approve the next item's buttons sit under the
+              // cursor instead of jumping with the content length.
               <div
                 key={it.itemId}
-                className={`rounded-2xl border p-4 flex flex-col gap-2 transition
+                className={`rounded-2xl border p-4 flex flex-col gap-2 transition h-[24rem]
                   ${isSel ? "border-emerald-400 bg-emerald-50/40" : "border-gray-200 bg-white"}
                   ${qcFail ? "ring-1 ring-red-300" : ""}`}
               >
-                <div className="flex items-start gap-2">
-                  <input
-                    type="checkbox"
-                    className="mt-1"
-                    checked={isSel}
-                    onChange={() => toggle(it.itemId)}
-                  />
-                  {options.length > 0 ? (
-                    <div className="flex-1 space-y-1.5">
-                      {options.map((text, i) => {
-                        const isOriginal = i === options.length - 1;
-                        const isChosen = text === chosen;
-                        return (
-                          <label
-                            key={i}
-                            className={`flex items-start gap-2 rounded-lg border px-2 py-1.5 cursor-pointer text-sm leading-snug
-                              ${isChosen ? "border-violet-400 bg-violet-50 text-slate-800" : "border-transparent text-slate-500 hover:border-gray-200"}`}
-                          >
-                            <input
-                              type="radio"
-                              className="mt-0.5"
-                              name={`choice-${it.itemId}`}
-                              checked={isChosen}
-                              onChange={() =>
-                                setChoices((prev) => new Map(prev).set(it.itemId, text))
-                              }
-                            />
-                            <span className="flex-1">
-                              <span className={`mr-1 text-[10px] font-bold uppercase ${isOriginal ? "text-slate-400" : "text-violet-500"}`}>
-                                {isOriginal ? "original" : `#${i + 1}`}
+                {/* Variable-length content scrolls; everything below is pinned. */}
+                <div className="flex-1 min-h-0 overflow-y-auto pr-1 space-y-2">
+                  <div className="flex items-start gap-2">
+                    <input
+                      type="checkbox"
+                      className="mt-1"
+                      checked={isSel}
+                      onChange={() => toggle(it.itemId)}
+                    />
+                    {options.length > 0 ? (
+                      <div className="flex-1 space-y-1.5">
+                        {options.map((text, i) => {
+                          const isOriginal = i === options.length - 1;
+                          const isChosen = text === chosen;
+                          return (
+                            <label
+                              key={i}
+                              className={`flex items-start gap-2 rounded-lg border px-2 py-1.5 cursor-pointer text-sm leading-snug
+                                ${isChosen ? "border-violet-400 bg-violet-50 text-slate-800" : "border-transparent text-slate-500 hover:border-gray-200"}`}
+                            >
+                              <input
+                                type="radio"
+                                className="mt-0.5"
+                                name={`choice-${it.itemId}`}
+                                checked={isChosen}
+                                onChange={() =>
+                                  setChoices((prev) => new Map(prev).set(it.itemId, text))
+                                }
+                              />
+                              <span className="flex-1">
+                                <span className={`mr-1 text-[10px] font-bold uppercase ${isOriginal ? "text-slate-400" : "text-violet-500"}`}>
+                                  {isOriginal ? "original" : `#${i + 1}`}
+                                </span>
+                                {text}
                               </span>
-                              {text}
-                            </span>
-                          </label>
-                        );
-                      })}
-                    </div>
-                  ) : (
-                    <p className="flex-1 text-slate-800 leading-snug">
-                      {it.payload?.display?.promptText || (
-                        <span className="italic text-slate-400">
-                          {it.payload?.display?.representation || "(non-text item)"}
-                        </span>
-                      )}
-                    </p>
+                            </label>
+                          );
+                        })}
+                      </div>
+                    ) : (
+                      <p className="flex-1 text-slate-800 leading-snug">
+                        {it.payload?.display?.promptText || (
+                          <span className="italic text-slate-400">
+                            {it.payload?.display?.representation || "(non-text item)"}
+                          </span>
+                        )}
+                      </p>
+                    )}
+                    <QcBadge qc={qc} />
+                  </div>
+
+                  {qc && qc.findings.length > 0 && (
+                    <ul className="space-y-0.5 border-t border-gray-100 pt-2">
+                      {qc.findings.map((f, i) => (
+                        <li
+                          key={i}
+                          className={`text-xs ${f.severity === "fail" ? "text-red-700" : "text-amber-700"}`}
+                        >
+                          {f.severity === "fail" ? "✗" : "⚠"} {f.message}
+                        </li>
+                      ))}
+                    </ul>
                   )}
-                  <QcBadge qc={qc} />
                 </div>
 
-                <div className="flex items-center gap-2 text-sm">
+                <div className="flex items-center gap-2 text-sm shrink-0">
                   <span className="text-slate-400">Answer</span>
                   <span className="font-extrabold text-slate-800 text-lg">
                     {formatAnswer(it.payload?.answer)}
                   </span>
                 </div>
 
-                <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-slate-500">
+                {/* One line, always — a wrapping meta row would shift the buttons. */}
+                <div className="flex items-center gap-x-2 text-xs text-slate-500 shrink-0 overflow-hidden whitespace-nowrap">
                   <span className="font-semibold">{it.modeId}</span>
                   <span>· {it.structureType || it.subskill}</span>
                   <span>· {it.itemFamily}</span>
                   <span>· L{it.levelMin}-{it.levelMax}</span>
                 </div>
 
-                {qc && qc.findings.length > 0 && (
-                  <ul className="space-y-0.5 border-t border-gray-100 pt-2">
-                    {qc.findings.map((f, i) => (
-                      <li
-                        key={i}
-                        className={`text-xs ${f.severity === "fail" ? "text-red-700" : "text-amber-700"}`}
-                      >
-                        {f.severity === "fail" ? "✗" : "⚠"} {f.message}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-
-                <div className="flex items-center gap-3 pt-1 mt-auto">
+                <div className="flex items-center gap-2 pt-1 shrink-0">
                   <button
                     type="button"
-                    className="text-sm text-emerald-700 font-bold disabled:opacity-30"
+                    className="px-5 py-2.5 rounded-xl bg-emerald-600 text-white text-base font-bold disabled:opacity-30 flex items-center gap-1.5"
                     onClick={() => doSingle(it.itemId, "approved")}
                     disabled={busy || qcFail}
                     title={qcFail ? "Fix the QC failure before approving" : undefined}
                   >
-                    Approve
+                    <CheckCircle2 className="h-5 w-5" /> Approve
                   </button>
                   <button
                     type="button"
-                    className="text-sm text-slate-500 font-semibold disabled:opacity-50"
+                    className="px-4 py-2.5 rounded-xl border border-gray-300 text-base font-semibold text-slate-600 disabled:opacity-50"
                     onClick={() => doSingle(it.itemId, "draft")}
                     disabled={busy}
                   >
@@ -513,7 +520,7 @@ export default function ReviewQueue({
                   </button>
                   <button
                     type="button"
-                    className="text-sm text-slate-500 font-semibold disabled:opacity-50"
+                    className="px-4 py-2.5 rounded-xl border border-gray-300 text-base font-semibold text-slate-600 disabled:opacity-50"
                     onClick={() => onOpenEditor?.(it)}
                   >
                     Edit

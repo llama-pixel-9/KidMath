@@ -15,14 +15,27 @@ const APPROVED_SELECT_FIELDS =
  * unconfigured or the network call fails so callers can keep using the
  * bundled snapshot.
  */
+// supabase-js caps any select at 1,000 rows; the bank is well past that. An
+// unpaginated fetch here once REPLACED the in-memory bank with the first
+// 1,000 rows for every signed-in child. All bank reads page.
+const PAGE = 1000;
+async function fetchAllPages(buildQuery) {
+  const rows = [];
+  for (let from = 0; ; from += PAGE) {
+    const { data, error } = await buildQuery().range(from, from + PAGE - 1);
+    if (error || !Array.isArray(data)) return rows.length ? rows : null;
+    rows.push(...data);
+    if (data.length < PAGE) return rows;
+  }
+}
+
 export async function fetchApprovedBank() {
   if (!supabase) return null;
   try {
-    const { data, error } = await supabase
-      .from("item_bank")
-      .select(APPROVED_SELECT_FIELDS)
-      .eq("review_status", "approved");
-    if (error || !Array.isArray(data)) return null;
+    const data = await fetchAllPages(() =>
+      supabase.from("item_bank").select(APPROVED_SELECT_FIELDS).eq("review_status", "approved").order("item_id")
+    );
+    if (!data) return null;
     return data.map(normalizeBankRow).filter(Boolean);
   } catch {
     return null;
@@ -34,12 +47,14 @@ export async function fetchApprovedBank() {
  */
 export async function fetchAllBankItems() {
   if (!supabase) return [];
-  const { data, error } = await supabase
-    .from("item_bank")
-    .select(APPROVED_SELECT_FIELDS + ", created_at, updated_at")
-    .order("mode_id", { ascending: true })
-    .order("item_id", { ascending: true });
-  if (error || !Array.isArray(data)) return [];
+  const data = await fetchAllPages(() =>
+    supabase
+      .from("item_bank")
+      .select(APPROVED_SELECT_FIELDS + ", created_at, updated_at")
+      .order("mode_id", { ascending: true })
+      .order("item_id", { ascending: true })
+  );
+  if (!data) return [];
   return data.map((row) => ({
     ...normalizeBankRow(row),
     createdAt: row.created_at,

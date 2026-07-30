@@ -46,13 +46,23 @@ function itemToRow(item) {
 
 export async function listAllItems() {
   if (!supabase) throw new Error("Supabase not configured");
-  const { data, error } = await supabase
-    .from("item_bank")
-    .select(ADMIN_SELECT_FIELDS)
-    .order("mode_id", { ascending: true })
-    .order("item_id", { ascending: true });
-  if (error) throw error;
-  return (data || []).map(rowToItem);
+  // Paginated: supabase-js caps a select at 1,000 rows. Unpaginated, the
+  // admin silently saw only the first alphabetical slice of the bank — the
+  // review queue looked empty while thousands of items sat in `reviewed`.
+  const PAGE = 1000;
+  const rows = [];
+  for (let from = 0; ; from += PAGE) {
+    const { data, error } = await supabase
+      .from("item_bank")
+      .select(ADMIN_SELECT_FIELDS)
+      .order("mode_id", { ascending: true })
+      .order("item_id", { ascending: true })
+      .range(from, from + PAGE - 1);
+    if (error) throw error;
+    rows.push(...(data || []));
+    if (!data || data.length < PAGE) break;
+  }
+  return rows.map(rowToItem);
 }
 
 export async function upsertItem(item) {
@@ -156,11 +166,20 @@ export async function bulkSetReviewStatus(entries, reviewStatus) {
  */
 export async function fetchCellCoverage() {
   if (!supabase) throw new Error("Supabase not configured");
-  const { data, error } = await supabase
-    .from("item_bank")
-    .select("mode_id, subskill, item_family, level_band")
-    .eq("review_status", "approved");
-  if (error) throw error;
+  // Paginated for the same reason as listAllItems: the approved set alone is
+  // past the 1,000-row cap, and a truncated read skews every gap score.
+  const PAGE = 1000;
+  const data = [];
+  for (let from = 0; ; from += PAGE) {
+    const { data: page, error } = await supabase
+      .from("item_bank")
+      .select("mode_id, subskill, item_family, level_band")
+      .eq("review_status", "approved")
+      .range(from, from + PAGE - 1);
+    if (error) throw error;
+    data.push(...(page || []));
+    if (!page || page.length < PAGE) break;
+  }
   const counts = new Map();
   for (const row of data || []) {
     const key = `${row.mode_id}::${row.subskill}::${row.item_family}::${row.level_band}`;

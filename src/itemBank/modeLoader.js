@@ -46,20 +46,29 @@ export function resetModeLoader() {
 
 async function fetchMode(modeId, { levelRange } = {}) {
   if (!supabase) return null;
-  let query = supabase
-    .from("item_bank")
-    .select(SELECT_FIELDS)
-    .eq("review_status", "approved")
-    .eq("mode_id", modeId);
+  // Paginated: a single mode (addition ~1,400 approved rows) now exceeds
+  // supabase-js's 1,000-row select cap.
+  const PAGE = 1000;
+  const rows = [];
+  for (let from = 0; ; from += PAGE) {
+    let query = supabase
+      .from("item_bank")
+      .select(SELECT_FIELDS)
+      .eq("review_status", "approved")
+      .eq("mode_id", modeId)
+      .order("item_id");
 
-  // Optional narrowing: a child at level 3 does not need the Grade 4 items.
-  if (levelRange) {
-    query = query.lte("level_min", levelRange[1]).gte("level_max", levelRange[0]);
+    // Optional narrowing: a child at level 3 does not need the Grade 4 items.
+    if (levelRange) {
+      query = query.lte("level_min", levelRange[1]).gte("level_max", levelRange[0]);
+    }
+
+    const { data, error } = await query.range(from, from + PAGE - 1);
+    if (error || !Array.isArray(data)) return rows.length ? rows.map(normalizeBankRow).filter(Boolean) : null;
+    rows.push(...data);
+    if (data.length < PAGE) break;
   }
-
-  const { data, error } = await query;
-  if (error || !Array.isArray(data)) return null;
-  return data.map(normalizeBankRow).filter(Boolean);
+  return rows.map(normalizeBankRow).filter(Boolean);
 }
 
 /**

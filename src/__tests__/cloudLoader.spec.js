@@ -4,6 +4,8 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 const mockChain = {
   select: vi.fn(),
   eq: vi.fn(),
+  order: vi.fn(),
+  range: vi.fn(),
 };
 
 vi.mock("../supabaseClient.js", () => ({
@@ -25,14 +27,20 @@ import {
 } from "../itemBank/index.js";
 
 function setSelectResult({ data, error = null }) {
+  // The loader now pages: select().eq().order().range() resolves each page.
+  // One page under the 1,000-row cap ends the loop.
   mockChain.select.mockReturnValue(mockChain);
-  mockChain.eq.mockResolvedValue({ data, error });
+  mockChain.eq.mockReturnValue(mockChain);
+  mockChain.order.mockReturnValue(mockChain);
+  mockChain.range.mockResolvedValue({ data, error });
 }
 
 beforeEach(() => {
   resetBankToBundle();
   mockChain.select.mockReset();
   mockChain.eq.mockReset();
+  mockChain.order.mockReset();
+  mockChain.range.mockReset();
 });
 
 afterEach(() => {

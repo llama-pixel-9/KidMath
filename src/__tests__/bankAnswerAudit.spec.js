@@ -1,6 +1,12 @@
 import { describe, it, expect } from "vitest";
-import { getBankItems, buildQuestionFromBankItem } from "../itemBank/index.js";
+import { buildQuestionFromBankItem } from "../itemBank/index.js";
+import { FULL_ITEMS } from "../itemBank/fullBank.js";
 import { checkAnswer } from "../mathEngine";
+
+// Audit the FULL corpus, not the seed sample — the seed's composition shifts
+// with every rebuild, and an audit that only sees a sample can silently lose
+// its subject matter.
+const getBankItems = () => FULL_ITEMS;
 
 /**
  * Does each banked item's stated answer actually answer the question it asks?

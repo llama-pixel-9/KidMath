@@ -12,7 +12,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":246,"b":264,"op":"?","answer":"<","display":{"promptText":"Lane A scored 246 points and Lane B scored 264 points. Which symbol compares Lane A to Lane B?"}},
+    question: {"a":246,"b":264,"op":"?","answer":"<","display":{"promptText":"Lane A scored 246 points and Lane B scored 264 points. Which symbol compares Lane A to Lane B?","promptOptions":["Sam scored 246 points. Alex scored 264 points. Which symbol compares their scores?","Two kids played a game. One got 246 points. The other got 264 points. Which symbol compares them?","Maya has 246 trading cards. Her brother has 264 cards. Which symbol compares how many they have?"]}},
   },
   {
     itemId: "comparing-app-002",
@@ -22,7 +22,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":178,"b":187,"op":"?","answer":"<","display":{"promptText":"A class read 178 books and another class read 187 books. Which symbol compares 178 to 187?"}},
+    question: {"a":178,"b":187,"op":"?","answer":"<","display":{"promptText":"A class read 178 books and another class read 187 books. Which symbol compares 178 to 187?","promptOptions":["Ms. Lee's class read 178 books. Mr. Park's class read 187 books. Which symbol compares their totals?","One class read 178 books. Another class read 187 books. Which symbol compares them?","Two groups read books. One read 178. The other read 187. Which symbol compares their reading?"]}},
   },
   {
     itemId: "comparing-app-003",
@@ -32,7 +32,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":510,"b":499,"op":"?","answer":">","display":{"promptText":"A library counted 510 books on one shelf and 499 on another. Which symbol compares 510 to 499?"}},
+    question: {"a":510,"b":499,"op":"?","answer":">","display":{"promptText":"A library counted 510 books on one shelf and 499 on another. Which symbol compares 510 to 499?","promptOptions":["The top shelf has 510 books. The bottom shelf has 499 books. Which symbol compares them?","One shelf holds 510 books. Another shelf holds 499 books. Which symbol compares these amounts?","A library has books on two shelves. One has 510 books. One has 499 books. Which symbol compares them?"]}},
   },
   {
     itemId: "comparing-app-004",
@@ -42,7 +42,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":805,"b":850,"op":"?","answer":"<","display":{"promptText":"A stadium seats 805 fans and a theater seats 850 fans. Which symbol compares 805 to 850?"}},
+    question: {"a":805,"b":850,"op":"?","answer":"<","display":{"promptText":"A stadium seats 805 fans and a theater seats 850 fans. Which symbol compares 805 to 850?","promptOptions":["The stadium seats 805 fans. The theater seats 850 fans. Which symbol compares them?","One place seats 805 people. Another seats 850 people. Which symbol compares their seating?","A big stadium can hold 805 fans. A theater can hold 850 fans. Which symbol compares them?"]}},
   },
   {
     itemId: "comparing-app-005",
@@ -52,7 +52,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":380,"b":380,"op":"?","answer":"=","display":{"promptText":"Two classes each solved 380 puzzles this month. Which symbol compares the totals?"}},
+    question: {"a":380,"b":380,"op":"?","answer":"=","display":{"promptText":"Two classes each solved 380 puzzles this month. Which symbol compares the totals?","promptOptions":["One class solved 380 puzzles. Another class solved 380 puzzles. Which symbol compares them?","Team 1 solved 380 puzzles. Team 2 solved 380 puzzles. Which symbol compares their totals?","Two groups solved puzzles. One group solved 380. The other solved 380. Which symbol compares them?"]}},
   },
   {
     itemId: "comparing-app-006",
@@ -62,7 +62,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":612,"b":612,"op":"?","answer":"=","display":{"promptText":"Town A and Town B each have 612 students. Which symbol compares the two amounts?"}},
+    question: {"a":612,"b":612,"op":"?","answer":"=","display":{"promptText":"Town A and Town B each have 612 students. Which symbol compares the two amounts?","promptOptions":["Springfield has 612 students. Maple Town has 612 students. Which symbol compares them?","One town has 612 students. Another town has 612 students. Which symbol compares their enrollments?","Two towns each have 612 students. Which symbol compares them?"]}},
   },
   {
     itemId: "comparing-app-007",
@@ -72,7 +72,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":84,"b":79,"op":"?","answer":">","display":{"promptText":"A class read 84 books and another class read 79 books. Which symbol compares 84 to 79?"}},
+    question: {"a":84,"b":79,"op":"?","answer":">","display":{"promptText":"A class read 84 books and another class read 79 books. Which symbol compares 84 to 79?","promptOptions":["One class read 84 books. Another class read 79 books. Which symbol compares how many they read?","Mrs. Lopez's class read 84 books. Mr. Chen's class read 79 books. Which symbol compares them?","The third grade read 84 books. The second grade read 79 books. Which symbol compares their reading?"]}},
   },
   {
     itemId: "comparing-app-008",
@@ -82,7 +82,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":999,"b":1001,"op":"?","answer":"<","display":{"promptText":"A counter shows 999 in one window and 1001 in another. Which symbol compares 999 to 1001?"}},
+    question: {"a":999,"b":1001,"op":"?","answer":"<","display":{"promptText":"A counter shows 999 in one window and 1001 in another. Which symbol compares 999 to 1001?","promptOptions":["One counter shows 999. Another counter shows 1001. Which symbol compares them?","A machine has two windows. One shows 999. The other shows 1001. Which symbol compares them?","Two scoreboards show numbers. One shows 999. One shows 1001. Which symbol compares them?"]}},
   },
   {
     itemId: "comparing-app-009",
@@ -92,7 +92,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":145,"b":145,"op":"?","answer":"=","display":{"promptText":"Two food drives each collected 145 cans. Which symbol compares the two totals?"}},
+    question: {"a":145,"b":145,"op":"?","answer":"=","display":{"promptText":"Two food drives each collected 145 cans. Which symbol compares the two totals?","promptOptions":["One food drive collected 145 cans. Another collected 145 cans. Which symbol compares them?","The third grade collected 145 cans. The fourth grade collected 145 cans. Which symbol compares their totals?","Two schools gathered cans. One school collected 145. The other collected 145. Which symbol compares them?"]}},
   },
   {
     itemId: "comparing-app-010",
@@ -102,7 +102,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":432,"b":423,"op":"?","answer":">","display":{"promptText":"A movie sold 432 tickets and a play sold 423. Which symbol compares 432 to 423?"}},
+    question: {"a":432,"b":423,"op":"?","answer":">","display":{"promptText":"A movie sold 432 tickets and a play sold 423. Which symbol compares 432 to 423?","promptOptions":["A movie sold 432 tickets. A play sold 423 tickets. Which symbol compares their sales?","One show sold 432 tickets. Another show sold 423 tickets. Which symbol compares them?","The action movie sold 432 tickets. The comedy sold 423 tickets. Which symbol compares their totals?"]}},
   },
   {
     itemId: "comparing-app-011",
@@ -112,7 +112,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":250,"b":205,"op":"?","answer":">","display":{"promptText":"A pool has 250 swim laps logged and another has 205. Which symbol compares 250 to 205?"}},
+    question: {"a":250,"b":205,"op":"?","answer":">","display":{"promptText":"A pool has 250 swim laps logged and another has 205. Which symbol compares 250 to 205?","promptOptions":["One pool logged 250 laps. Another pool logged 205 laps. Which symbol compares them?","The big pool has 250 laps logged. The small pool has 205 laps logged. Which symbol compares them?","At one pool, 250 kids swam a lap. At another pool, 205 kids swam. Which symbol compares them?"]}},
   },
   {
     itemId: "comparing-app-012",
@@ -122,7 +122,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":720,"b":720,"op":"?","answer":"=","display":{"promptText":"Two schools each enrolled 720 students. Which symbol compares the two enrollments?"}},
+    question: {"a":720,"b":720,"op":"?","answer":"=","display":{"promptText":"Two schools each enrolled 720 students. Which symbol compares the two enrollments?","promptOptions":["Lincoln School has 720 students. Oak School has 720 students. Which symbol compares them?","One school enrolled 720 students. Another school enrolled 720 students. Which symbol compares their amounts?","Two schools each have 720 students. Which symbol compares their enrollments?"]}},
   },
   {
     itemId: "comparing-app-013",
@@ -132,7 +132,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":304,"b":340,"op":"?","answer":"<","display":{"promptText":"A garden has 304 tulips and 340 daisies. Which symbol compares 304 to 340?"}},
+    question: {"a":304,"b":340,"op":"?","answer":"<","display":{"promptText":"A garden has 304 tulips and 340 daisies. Which symbol compares 304 to 340?","promptOptions":["Ms. Lee planted 304 red tulips and 340 white daisies. Compare 304 to 340.","The garden has 304 tulips and 340 daisies. Compare 304 to 340."]}},
   },
   {
     itemId: "comparing-app-014",
@@ -142,7 +142,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":8,"op":"?","answer":"<","display":{"promptText":"Mia has 5 candies. Tom has 8 candies. Which symbol compares 5 to 8?"}},
+    question: {"a":5,"b":8,"op":"?","answer":"<","display":{"promptText":"Mia has 5 candies. Tom has 8 candies. Which symbol compares 5 to 8?","promptOptions":["Mia has 5 candies. Tom has 8 candies. Compare 5 to 8."]}},
   },
   {
     itemId: "comparing-app-015",
@@ -152,7 +152,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":4,"op":"?","answer":">","display":{"promptText":"Sara counted 7 cars. Eli counted 4 cars. Which symbol compares 7 to 4?"}},
+    question: {"a":7,"b":4,"op":"?","answer":">","display":{"promptText":"Sara counted 7 cars. Eli counted 4 cars. Which symbol compares 7 to 4?","promptOptions":["Sara counted 7 cars. Eli counted 4 cars. Compare 7 to 4."]}},
   },
   {
     itemId: "comparing-app-016",
@@ -162,7 +162,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"?","answer":"=","display":{"promptText":"Two boxes both have 6 toys. Which symbol compares 6 to 6?"}},
+    question: {"a":6,"b":6,"op":"?","answer":"=","display":{"promptText":"Two boxes both have 6 toys. Which symbol compares 6 to 6?","promptOptions":["Kyle's box has 6 toys. Lisa's box has 6 toys. Compare 6 to 6.","One box has 6 toys. Another box has 6 toys. Compare 6 to 6."]}},
   },
   {
     itemId: "comparing-app-017",
@@ -172,7 +172,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"?","answer":"<","display":{"promptText":"A jar holds 4 marbles. The benchmark is 5. Compare 4 to 5."}},
+    question: {"a":4,"b":5,"op":"?","answer":"<","display":{"promptText":"A jar holds 4 marbles. The benchmark is 5. Compare 4 to 5.","promptOptions":["A jar has 4 marbles. A full jar holds 5 marbles. Compare 4 to 5."]}},
   },
   {
     itemId: "comparing-app-018",
@@ -182,7 +182,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":5,"op":"?","answer":">","display":{"promptText":"Lia has 7 stickers; the benchmark is 5. Compare 7 to 5."}},
+    question: {"a":7,"b":5,"op":"?","answer":">","display":{"promptText":"Lia has 7 stickers; the benchmark is 5. Compare 7 to 5.","promptOptions":["Lia collected 7 stickers. Her friend has 5 stickers. Compare 7 to 5."]}},
   },
   {
     itemId: "comparing-app-019",
@@ -192,7 +192,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":10,"op":"?","answer":"=","display":{"promptText":"Both Sam and Pat have 10 grapes. Compare 10 to 10."}},
+    question: {"a":10,"b":10,"op":"?","answer":"=","display":{"promptText":"Both Sam and Pat have 10 grapes. Compare 10 to 10.","promptOptions":["Sam picked 10 grapes. Pat picked 10 grapes. Compare 10 to 10."]}},
   },
   {
     itemId: "comparing-app-020",
@@ -202,7 +202,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":4,"op":"?","answer":">","display":{"promptText":"Eli has 9 apples and Mia has 4. Compare 9 to 4."}},
+    question: {"a":9,"b":4,"op":"?","answer":">","display":{"promptText":"Eli has 9 apples and Mia has 4. Compare 9 to 4.","promptOptions":["Eli has 9 apples. Mia has 4 apples. Compare 9 to 4."]}},
   },
   {
     itemId: "comparing-app-021",
@@ -212,7 +212,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":8,"op":"?","answer":"<","display":{"promptText":"Min has 3 pens and Tom has 8 pens. Compare 3 to 8."}},
+    question: {"a":3,"b":8,"op":"?","answer":"<","display":{"promptText":"Min has 3 pens and Tom has 8 pens. Compare 3 to 8.","promptOptions":["Min has 3 pens. Tom has 8 pens. Compare 3 to 8."]}},
   },
   {
     itemId: "comparing-app-022",
@@ -222,7 +222,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"?","answer":"=","display":{"promptText":"Jin has 6 hats and Pat has 6 hats. Compare 6 to 6."}},
+    question: {"a":6,"b":6,"op":"?","answer":"=","display":{"promptText":"Jin has 6 hats and Pat has 6 hats. Compare 6 to 6.","promptOptions":["Jin has 6 hats. Pat has 6 hats. Compare 6 to 6."]}},
   },
   {
     itemId: "comparing-app-023",
@@ -232,7 +232,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":23,"b":45,"op":"?","answer":"<","display":{"promptText":"A class has 23 books. Another class has 45 books. Compare 23 and 45."}},
+    question: {"a":23,"b":45,"op":"?","answer":"<","display":{"promptText":"A class has 23 books. Another class has 45 books. Compare 23 and 45.","promptOptions":["Ms. Lee's class has 23 books. Mr. Park's class has 45 books. Compare 23 to 45.","One class collected 23 books. Another class collected 45 books. Compare 23 to 45."]}},
   },
   {
     itemId: "comparing-app-024",
@@ -242,7 +242,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":67,"b":32,"op":"?","answer":">","display":{"promptText":"Pat scored 67 points and Min scored 32 points. Compare 67 and 32."}},
+    question: {"a":67,"b":32,"op":"?","answer":">","display":{"promptText":"Pat scored 67 points and Min scored 32 points. Compare 67 and 32.","promptOptions":["Pat scored 67 points. Min scored 32 points. Compare 67 to 32."]}},
   },
   {
     itemId: "comparing-app-025",
@@ -252,7 +252,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":50,"b":50,"op":"?","answer":"=","display":{"promptText":"Two teams both have 50 fans. Compare 50 and 50."}},
+    question: {"a":50,"b":50,"op":"?","answer":"=","display":{"promptText":"Two teams both have 50 fans. Compare 50 and 50.","promptOptions":["Sarah's team has 50 fans. Jake's team has 50 fans. Which team has more fans?","One jar has 50 marbles. Another jar has 50 marbles. Which has more marbles?"]}},
   },
   {
     itemId: "comparing-app-026",
@@ -262,7 +262,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":47,"b":50,"op":"?","answer":"<","display":{"promptText":"A factory made 47 toys; the goal was 50. Compare 47 and 50."}},
+    question: {"a":47,"b":50,"op":"?","answer":"<","display":{"promptText":"A factory made 47 toys; the goal was 50. Compare 47 and 50.","promptOptions":["Emma has 47 cookies. Jake has 50 cookies. Who has more cookies?","One bookcase has 47 books. Another has 50 books. Which has more books?"]}},
   },
   {
     itemId: "comparing-app-027",
@@ -272,7 +272,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":65,"b":50,"op":"?","answer":">","display":{"promptText":"A book has 65 pages. The library asks for at least 50. Compare 65 and 50."}},
+    question: {"a":65,"b":50,"op":"?","answer":">","display":{"promptText":"A book has 65 pages. The library asks for at least 50. Compare 65 and 50.","promptOptions":["One book has 65 pages. Another has 50 pages. Which book has more pages?","Sarah's team scored 65 points. Mike's team scored 50. Who scored more?"]}},
   },
   {
     itemId: "comparing-app-028",
@@ -282,7 +282,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":30,"b":30,"op":"?","answer":"=","display":{"promptText":"Both jars hold 30 jellybeans. Compare 30 and 30."}},
+    question: {"a":30,"b":30,"op":"?","answer":"=","display":{"promptText":"Both jars hold 30 jellybeans. Compare 30 and 30.","promptOptions":["Tom has 30 stickers. Lisa has 30 stickers. Who has more stickers?","One bag has 30 cookies. Another bag has 30 cookies. Which has more cookies?"]}},
   },
   {
     itemId: "comparing-app-029",
@@ -292,7 +292,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":25,"op":"?","answer":"<","display":{"promptText":"Anna ran 18 laps and Ben ran 25 laps. Compare 18 and 25."}},
+    question: {"a":18,"b":25,"op":"?","answer":"<","display":{"promptText":"Anna ran 18 laps and Ben ran 25 laps. Compare 18 and 25.","promptOptions":["Anna ran 18 laps. Ben ran 25 laps. Who ran more laps?","One runner jumped 18 times. Another jumped 25 times. Who jumped more?"]}},
   },
   {
     itemId: "comparing-app-030",
@@ -302,7 +302,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":75,"b":42,"op":"?","answer":">","display":{"promptText":"A garden has 75 tulips and 42 daisies. Compare 75 and 42."}},
+    question: {"a":75,"b":42,"op":"?","answer":">","display":{"promptText":"A garden has 75 tulips and 42 daisies. Compare 75 and 42.","promptOptions":["A garden has 75 tulips and 42 daisies. Which flower does it have more of?","The big box has 75 crayons. The small box has 42 crayons. Which has more?"]}},
   },
   {
     itemId: "comparing-app-031",
@@ -312,7 +312,7 @@ export const ITEMS = [
     structureType: "compareNumbers",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":60,"b":60,"op":"?","answer":"=","display":{"promptText":"Two ponds each have 60 ducks. Compare 60 and 60."}},
+    question: {"a":60,"b":60,"op":"?","answer":"=","display":{"promptText":"Two ponds each have 60 ducks. Compare 60 and 60.","promptOptions":["One pond has 60 ducks. Another pond has 60 ducks. Which pond has more ducks?","Park A has 60 swings. Park B has 60 swings. Which park has more swings?"]}},
   },
   {
     itemId: "comparing-conc-benchmarkCompare-23-001",

@@ -12,7 +12,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":null,"op":"count","answer":14,"display":{"promptText":"There are 14 toy cars lined up on a shelf. How many toy cars are there?"}},
+    question: {"a":14,"b":null,"op":"count","answer":14,"display":{"promptText":"There are 14 toy cars lined up on a shelf. How many toy cars are there?","promptOptions":["Sofia lined up 14 toy cars on a shelf. How many toy cars are on the shelf?","Sofia has 14 toy cars. How many toy cars does Sofia have?"]}},
   },
   {
     itemId: "counting-app-002",
@@ -22,7 +22,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":null,"op":"count","answer":20,"display":{"promptText":"A box has 20 crayons inside. How many crayons are in the box?"}},
+    question: {"a":20,"b":null,"op":"count","answer":20,"display":{"promptText":"A box has 20 crayons inside. How many crayons are in the box?","promptOptions":["Leo has 20 crayons in a box. How many crayons are in the box?","Mia looked in a box and found 20 crayons. How many crayons were in the box?"]}},
   },
   {
     itemId: "counting-app-003",
@@ -32,7 +32,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":27,"b":null,"op":"count","answer":27,"display":{"promptText":"A jar has 27 marbles. Count to find how many marbles are in the jar."}},
+    question: {"a":27,"b":null,"op":"count","answer":27,"display":{"promptText":"A jar has 27 marbles. Count to find how many marbles are in the jar.","promptOptions":["Priya has 27 marbles in a jar. How many marbles are in the jar?"]}},
   },
   {
     itemId: "counting-app-004",
@@ -42,7 +42,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":42,"b":null,"op":"count","answer":42,"display":{"promptText":"A garden has 42 tulips. How many tulips are in the garden?"}},
+    question: {"a":42,"b":null,"op":"count","answer":42,"display":{"promptText":"A garden has 42 tulips. How many tulips are in the garden?","promptOptions":["Emma has 42 tulips in her garden. How many tulips are in the garden?","The gardener planted 42 tulips. How many tulips did the gardener plant?"]}},
   },
   {
     itemId: "counting-app-005",
@@ -52,7 +52,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":35,"b":null,"op":"count","answer":35,"display":{"promptText":"A basket holds 35 oranges. How many oranges are in the basket?"}},
+    question: {"a":35,"b":null,"op":"count","answer":35,"display":{"promptText":"A basket holds 35 oranges. How many oranges are in the basket?","promptOptions":["Dakota has 35 oranges in a basket. How many oranges are in the basket?"]}},
   },
   {
     itemId: "counting-app-006",
@@ -62,7 +62,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":50,"b":null,"op":"count","answer":50,"display":{"promptText":"A class collected 50 cans for recycling. How many cans were collected?"}},
+    question: {"a":50,"b":null,"op":"count","answer":50,"display":{"promptText":"A class collected 50 cans for recycling. How many cans were collected?","promptOptions":["The class collected 50 cans for recycling. How many cans did the class collect?"]}},
   },
   {
     itemId: "counting-app-007",
@@ -72,7 +72,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":null,"op":"count","answer":18,"display":{"promptText":"A pencil case has 18 pencils. How many pencils are in the case?"}},
+    question: {"a":18,"b":null,"op":"count","answer":18,"display":{"promptText":"A pencil case has 18 pencils. How many pencils are in the case?","promptOptions":["Ryan has 18 pencils in his pencil case. How many pencils are in the case?"]}},
   },
   {
     itemId: "counting-app-008",
@@ -82,7 +82,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":31,"b":null,"op":"count","answer":31,"display":{"promptText":"A row has 31 chairs set up for a play. How many chairs are in the row?"}},
+    question: {"a":31,"b":null,"op":"count","answer":31,"display":{"promptText":"A row has 31 chairs set up for a play. How many chairs are in the row?","promptOptions":["The crew set up 31 chairs in a row for the play. How many chairs are in the row?"]}},
   },
   {
     itemId: "counting-app-009",
@@ -92,7 +92,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":38,"b":null,"op":"count","answer":38,"display":{"promptText":"A jar holds 38 cookies. How many cookies are in the jar?"}},
+    question: {"a":38,"b":null,"op":"count","answer":38,"display":{"promptText":"A jar holds 38 cookies. How many cookies are in the jar?","promptOptions":["Grandma has 38 cookies in a jar. How many cookies are in the jar?"]}},
   },
   {
     itemId: "counting-app-010",
@@ -102,7 +102,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":24,"b":null,"op":"count","answer":24,"display":{"promptText":"A drawer has 24 spoons. How many spoons are in the drawer?"}},
+    question: {"a":24,"b":null,"op":"count","answer":24,"display":{"promptText":"A drawer has 24 spoons. How many spoons are in the drawer?","promptOptions":["Mom has 24 spoons in the drawer. How many spoons are in the drawer?"]}},
   },
   {
     itemId: "counting-app-011",
@@ -112,7 +112,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":47,"b":null,"op":"count","answer":47,"display":{"promptText":"A wall has 47 photos hung up. How many photos are on the wall?"}},
+    question: {"a":47,"b":null,"op":"count","answer":47,"display":{"promptText":"A wall has 47 photos hung up. How many photos are on the wall?","promptOptions":["Jordan hung 47 photos on the wall. How many photos are on the wall?"]}},
   },
   {
     itemId: "counting-app-012",
@@ -122,7 +122,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":60,"b":null,"op":"count","answer":60,"display":{"promptText":"A box of building blocks has 60 pieces. How many pieces are in the box?"}},
+    question: {"a":60,"b":null,"op":"count","answer":60,"display":{"promptText":"A box of building blocks has 60 pieces. How many pieces are in the box?","promptOptions":["Aidan has 60 building block pieces in a box. How many pieces are in the box?"]}},
   },
   {
     itemId: "counting-app-013",
@@ -132,7 +132,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":null,"op":"count","answer":16,"display":{"promptText":"A garden has 16 sunflowers. How many sunflowers are in the garden?"}},
+    question: {"a":16,"b":null,"op":"count","answer":16,"display":{"promptText":"A garden has 16 sunflowers. How many sunflowers are in the garden?","promptOptions":["Rosa planted 16 sunflowers in her garden. How many sunflowers did she plant?","Jen saw 16 sunflowers blooming. How many sunflowers did she see?","There are 16 sunflowers in the garden. How many sunflowers can you count?"]}},
   },
   {
     itemId: "counting-app-014",
@@ -142,7 +142,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":null,"op":"count","answer":4,"display":{"promptText":"There are 4 ducks in the pond. How many ducks are there?"}},
+    question: {"a":4,"b":null,"op":"count","answer":4,"display":{"promptText":"There are 4 ducks in the pond. How many ducks are there?","promptOptions":["Jake saw 4 ducks at the pond. How many ducks did he see?","Maya counted 4 ducks. How many ducks did she count?"]}},
   },
   {
     itemId: "counting-app-015",
@@ -152,7 +152,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":null,"op":"count","answer":5,"display":{"promptText":"Mia drew 5 stars on her paper. How many stars did she draw?"}},
+    question: {"a":5,"b":null,"op":"count","answer":5,"display":{"promptText":"Mia drew 5 stars on her paper. How many stars did she draw?","promptOptions":["Mia drew 5 stars. How many stars did she draw?","On her sheet of paper, Mia drew 5 stars. How many stars did she draw?"]}},
   },
   {
     itemId: "counting-app-016",
@@ -162,7 +162,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":null,"op":"count","answer":3,"display":{"promptText":"A small bowl has 3 fish. How many fish are in the bowl?"}},
+    question: {"a":3,"b":null,"op":"count","answer":3,"display":{"promptText":"A small bowl has 3 fish. How many fish are in the bowl?","promptOptions":["A bowl has 3 fish in it. How many fish are in the bowl?","Kim's fish bowl has 3 fish. How many fish does it have?","There are 3 fish in the bowl. How many fish do you see?"]}},
   },
   {
     itemId: "counting-app-017",
@@ -202,7 +202,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":null,"op":"count","answer":10,"display":{"promptText":"Anna lined up 10 small toys on the table. How many toys are in the line?"}},
+    question: {"a":10,"b":null,"op":"count","answer":10,"display":{"promptText":"Anna lined up 10 small toys on the table. How many toys are in the line?","promptOptions":["Anna put 10 toys in a line on the table. How many toys are in the line?","Anna lined up 10 toys on the table. How many toys did she line up?","On the table, Anna lined up 10 toys. How many toys did she line up?"]}},
   },
   {
     itemId: "counting-app-021",
@@ -212,7 +212,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":null,"op":"count","answer":8,"display":{"promptText":"A pencil case holds 8 erasers. How many erasers are in the case?"}},
+    question: {"a":8,"b":null,"op":"count","answer":8,"display":{"promptText":"A pencil case holds 8 erasers. How many erasers are in the case?","promptOptions":["Sam's pencil case has 8 erasers. How many erasers does it hold?","A pencil case holds 8 erasers. How many erasers are in the pencil case?","There are 8 erasers in a pencil case. How many erasers are there?"]}},
   },
   {
     itemId: "counting-app-022",
@@ -222,7 +222,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":null,"op":"count","answer":9,"display":{"promptText":"A nest has 9 eggs in it. How many eggs are in the nest?"}},
+    question: {"a":9,"b":null,"op":"count","answer":9,"display":{"promptText":"A nest has 9 eggs in it. How many eggs are in the nest?","promptOptions":["A bird's nest has 9 eggs in it. How many eggs are in the nest?","A nest holds 9 eggs. How many eggs does the nest hold?","There are 9 eggs in a nest. How many eggs can you count?"]}},
   },
   {
     itemId: "counting-app-023",
@@ -232,7 +232,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":null,"op":"count","answer":18,"display":{"promptText":"A page has 18 stickers on it. How many stickers are on the page?"}},
+    question: {"a":18,"b":null,"op":"count","answer":18,"display":{"promptText":"A page has 18 stickers on it. How many stickers are on the page?","promptOptions":["Mia put 18 stickers on a page. How many stickers did she put on the page?","A page has 18 stickers stuck on it. How many stickers are there?","There are 18 stickers on a page. How many stickers are on the page?"]}},
   },
   {
     itemId: "counting-app-024",
@@ -242,7 +242,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":22,"b":null,"op":"count","answer":22,"display":{"promptText":"A team has 22 players. How many players are on the team?"}},
+    question: {"a":22,"b":null,"op":"count","answer":22,"display":{"promptText":"A team has 22 players. How many players are on the team?","promptOptions":["A soccer team has 22 players. How many players are on the team?","There are 22 players on a team. How many players are there?","The team has 22 players on it. How many players are there?"]}},
   },
   {
     itemId: "counting-app-025",
@@ -252,7 +252,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":null,"op":"count","answer":25,"display":{"promptText":"Sam saw 25 ants on the ground. How many ants did Sam see?"}},
+    question: {"a":25,"b":null,"op":"count","answer":25,"display":{"promptText":"Sam saw 25 ants on the ground. How many ants did Sam see?","promptOptions":["Sam watched ants marching on the ground. He counted 25 ants. How many ants did Sam count?","In the garden, Sam saw 25 ants. How many ants did Sam see in all?","Sam found 25 ants hiding under a rock. How many ants did he find?"]}},
   },
   {
     itemId: "counting-app-026",
@@ -292,7 +292,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":28,"b":null,"op":"count","answer":28,"display":{"promptText":"A planter holds 28 tulips. How many tulips are in the planter?"}},
+    question: {"a":28,"b":null,"op":"count","answer":28,"display":{"promptText":"A planter holds 28 tulips. How many tulips are in the planter?","promptOptions":["Lily planted 28 tulips in a pot. How many tulips are in the pot?","There are 28 tulips blooming in a garden. How many tulips are there in all?","A planter holds 28 pretty tulips. How many tulips are in the planter?"]}},
   },
   {
     itemId: "counting-app-030",
@@ -302,7 +302,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":32,"b":null,"op":"count","answer":32,"display":{"promptText":"A classroom has 32 desks. How many desks are in the classroom?"}},
+    question: {"a":32,"b":null,"op":"count","answer":32,"display":{"promptText":"A classroom has 32 desks. How many desks are in the classroom?","promptOptions":["Mrs. Lee's classroom has 32 desks. How many desks are there?","There are 32 desks in a classroom. How many desks are there in all?","A classroom has 32 desks in it. How many desks are in the classroom?"]}},
   },
   {
     itemId: "counting-app-031",
@@ -312,7 +312,7 @@ export const ITEMS = [
     structureType: "countObjects",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":36,"b":null,"op":"count","answer":36,"display":{"promptText":"A book has 36 pages. How many pages are in the book?"}},
+    question: {"a":36,"b":null,"op":"count","answer":36,"display":{"promptText":"A book has 36 pages. How many pages are in the book?","promptOptions":["Emma's book has 36 pages. How many pages does her book have?","There are 36 pages in a storybook. How many pages are there in all?","A book has 36 pages in it. How many pages are in the book?"]}},
   },
   {
     itemId: "counting-conc-cardinality-23-001",

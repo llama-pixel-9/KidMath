@@ -25,117 +25,33 @@ export const SEED_ITEMS = [
    "op": "+",
    "answer": 16,
    "display": {
-    "promptText": "Mina has 9 shells and finds 7 more. How many shells does she have now?"
+    "promptText": "Mina found 9 shells at the beach. Then she found 7 more. How many shells does Mina have now?"
    }
   }
  },
  {
-  "itemId": "addition-app-068",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "makeTen",
-  "structureType": "partPartWhole",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 57,
-   "b": 8,
-   "op": "+",
-   "answer": 65,
-   "display": {
-    "promptText": "A stadium seats 57 fans in row A and 8 fans in row B. How many fans are in both rows?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-108",
+  "itemId": "addition-app-005",
   "modeId": "addition",
   "itemFamily": "application",
   "subskill": "composeDecompose",
-  "structureType": "joinResultUnknown",
+  "structureType": "putTogetherTotalUnknown",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 625,
-   "b": 275,
+   "a": 18,
+   "b": 14,
    "op": "+",
-   "answer": 900,
+   "answer": 32,
    "display": {
-    "promptText": "Hal walked 625 steps before breakfast and 275 more after. How many steps did Hal walk?"
+    "promptText": "A garden club planted 18 flowers on Monday and 14 flowers on Tuesday. How many flowers did they plant?"
    }
   }
  },
  {
-  "itemId": "addition-app-169",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "makeTen",
-  "structureType": "partPartWhole",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 64,
-   "b": 26,
-   "op": "+",
-   "answer": 90,
-   "display": {
-    "promptText": "A carnival had 64 game booths and 26 food stands. How many attractions at the carnival?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-232",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "unknownAddend",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 84,
-   "b": null,
-   "op": "+",
-   "answer": 26,
-   "display": {
-    "promptText": "Uri has 84 marbles. He wants 110 marbles. How many more marbles does Uri need?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-295",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 316,
-   "b": 227,
-   "op": "+",
-   "answer": 543,
-   "display": {
-    "promptText": "A stadium has 316 upper seats and 227 lower seats in one section. How many seats in the section?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-336",
+  "itemId": "addition-app-009",
   "modeId": "addition",
   "itemFamily": "application",
   "subskill": "unknownAddend",
@@ -146,33 +62,117 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 225,
+   "a": 26,
    "b": null,
    "op": "+",
-   "answer": 75,
+   "answer": 13,
    "display": {
-    "promptText": "A stadium had 225 fans. More arrived. Now there are 300. How many fans arrived?"
+    "promptText": "Luca started with 26 cards. He got some more. Now he has 39 cards. How many cards did he get?"
    }
   }
  },
  {
-  "itemId": "addition-app-403",
+  "itemId": "addition-app-161",
   "modeId": "addition",
   "itemFamily": "application",
-  "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
+  "subskill": "makeTen",
+  "structureType": "joinResultUnknown",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 714,
-   "b": 186,
+   "a": 49,
+   "b": 3,
    "op": "+",
-   "answer": 900,
+   "answer": 52,
    "display": {
-    "promptText": "A toy warehouse has 714 action figures and 186 dolls. How many toys in the warehouse?"
+    "promptText": "Opal trained 49 puppies this year. She trained 3 more this week. How many puppies did Opal train?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-app-composeDecompose-4_5-compareBiggerFewer-001",
+  "modeId": "addition",
+  "itemFamily": "application",
+  "subskill": "composeDecompose",
+  "structureType": "compareBiggerFewer",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 15,
+   "b": 34,
+   "op": "+",
+   "answer": 49,
+   "display": {
+    "promptText": "Emma has 34 stickers. That's 15 fewer stickers than Marcus has. How many stickers does Marcus have?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-app-333",
+  "modeId": "addition",
+  "itemFamily": "application",
+  "subskill": "unknownAddend",
+  "structureType": "compareDifferenceMore",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 120,
+   "b": null,
+   "op": "+",
+   "answer": 80,
+   "display": {
+    "promptText": "Freya did 120 pushups this month. She wants to do 200. How many more pushups does she need?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-app-266",
+  "modeId": "addition",
+  "itemFamily": "application",
+  "subskill": "makeTen",
+  "structureType": "joinResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 75,
+   "b": 25,
+   "op": "+",
+   "answer": 100,
+   "display": {
+    "promptText": "Tomas was polishing tiles. He polished 75 tiles in the morning. He polished 25 more in the afternoon. How many tiles did Tomas polish altogether?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-app-composeDecompose-4_5-compareBiggerFewer-b0728b-020",
+  "modeId": "addition",
+  "itemFamily": "application",
+  "subskill": "composeDecompose",
+  "structureType": "compareBiggerFewer",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 39,
+   "b": 23,
+   "op": "+",
+   "answer": 62,
+   "display": {
+    "promptText": "Kai has 23 fewer worms than Natalie. Kai has 39 worms. How many worms does Natalie have?"
    }
   }
  },
@@ -193,33 +193,33 @@ export const SEED_ITEMS = [
    "op": "+",
    "answer": 10,
    "display": {
-    "promptText": "There are 7 leaves on a branch. 3 more leaves fall onto it. How many leaves are on the branch now?"
+    "promptText": "A branch had 7 leaves. Then 3 more leaves fell on it. How many leaves are on the branch now?"
    }
   }
  },
  {
-  "itemId": "addition-app-048",
+  "itemId": "addition-app-024",
   "modeId": "addition",
   "itemFamily": "application",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
+  "subskill": "composeDecompose",
+  "structureType": "putTogetherTotalUnknown",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 9,
-   "b": 1,
+   "a": 4,
+   "b": 3,
    "op": "+",
-   "answer": 10,
+   "answer": 7,
    "display": {
-    "promptText": "Eli has 9 crayons and his teacher gives him 1 more. How many crayons does Eli have?"
+    "promptText": "Eli has 4 red pencils and 3 green pencils. How many pencils does he have in all?"
    }
   }
  },
  {
-  "itemId": "addition-app-111",
+  "itemId": "addition-app-032",
   "modeId": "addition",
   "itemFamily": "application",
   "subskill": "unknownAddend",
@@ -230,105 +230,42 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 5,
+   "a": 6,
    "b": null,
    "op": "+",
    "answer": 4,
    "display": {
-    "promptText": "Jax had 5 whistles. Dad gave him some more. Now Jax has 9 whistles. How many whistles did Dad give?"
+    "promptText": "A pond had 6 frogs. More frogs hopped in. Now there are 10 frogs. How many frogs hopped in?"
    }
   }
  },
  {
-  "itemId": "addition-app-149",
+  "itemId": "addition-app-140",
   "modeId": "addition",
   "itemFamily": "application",
   "subskill": "makeTen",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 4,
+   "b": 4,
+   "op": "+",
+   "answer": 8,
+   "display": {
+    "promptText": "A child's sandbox had 4 small shovels. It also had 4 big shovels. How many shovels were in the sandbox?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-app-173",
+  "modeId": "addition",
+  "itemFamily": "application",
+  "subskill": "composeDecompose",
   "structureType": "joinResultUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": 3,
-   "op": "+",
-   "answer": 7,
-   "display": {
-    "promptText": "Gus folds 4 paper cranes and then 3 more. How many cranes did Gus fold?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-211",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "unknownAddend",
-  "structureType": "joinChangeUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": null,
-   "op": "+",
-   "answer": 1,
-   "display": {
-    "promptText": "A shelf had 8 books. Fiona added more. Now there are 9. How many books did Fiona add?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-273",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": 3,
-   "op": "+",
-   "answer": 7,
-   "display": {
-    "promptText": "A squirrel trail counted 4 oak nuts and 3 walnuts. How many nuts on the trail?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-313",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "unknownAddend",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": null,
-   "op": "+",
-   "answer": 2,
-   "display": {
-    "promptText": "Leif has 8 star stickers. A chart needs 10 stars. How many more stars does Leif need?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-377",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
   "levelRange": [
    1,
    3
@@ -336,11 +273,74 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 3,
+   "b": 2,
+   "op": "+",
+   "answer": 5,
+   "display": {
+    "promptText": "Willa built 3 sandcastles. Then her brother built 2 more. How many sandcastles did they build?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-app-207",
+  "modeId": "addition",
+  "itemFamily": "application",
+  "subskill": "unknownAddend",
+  "structureType": "joinChangeUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 1,
+   "b": null,
+   "op": "+",
+   "answer": 6,
+   "display": {
+    "promptText": "Chase had 1 toy car. On his birthday, he got more cars. Now he has 7. How many cars did he get?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-app-244",
+  "modeId": "addition",
+  "itemFamily": "application",
+  "subskill": "makeTen",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 2,
+   "b": 8,
+   "op": "+",
+   "answer": 10,
+   "display": {
+    "promptText": "A bird feeder has 2 sparrows and 8 finches eating at it. How many birds are at the feeder in all?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-app-277",
+  "modeId": "addition",
+  "itemFamily": "application",
+  "subskill": "composeDecompose",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 4,
    "b": 6,
    "op": "+",
-   "answer": 9,
+   "answer": 10,
    "display": {
-    "promptText": "A toy box has 3 small cars and 6 little blocks. How many toys in the box?"
+    "promptText": "In a camping shelter, there are 4 sleeping bags and 6 pillows. How many items are there?"
    }
   }
  },
@@ -361,117 +361,33 @@ export const SEED_ITEMS = [
    "op": "+",
    "answer": 15,
    "display": {
-    "promptText": "Hugo bakes 9 cookies in the morning and 6 more in the afternoon. How many cookies did he bake?"
+    "promptText": "Hugo baked 9 cookies in the morning. Then he baked 6 more in the afternoon. How many cookies did Hugo bake in all?"
    }
   }
  },
  {
-  "itemId": "addition-app-057",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": 5,
-   "op": "+",
-   "answer": 12,
-   "display": {
-    "promptText": "Jada counted 7 butterflies in the garden and then 5 more. How many butterflies did Jada see?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-120",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "unknownAddend",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 9,
-   "b": null,
-   "op": "+",
-   "answer": 8,
-   "display": {
-    "promptText": "Rosa has 9 seashells. She wants 17 for her display. How many more does Rosa need?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-159",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 6,
-   "b": 7,
-   "op": "+",
-   "answer": 13,
-   "display": {
-    "promptText": "Nina taps 6 drum beats and then 7 more. How many beats did Nina tap?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-221",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "unknownAddend",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 9,
-   "b": null,
-   "op": "+",
-   "answer": 9,
-   "display": {
-    "promptText": "Nina has 9 beads. She needs 18 for a bracelet set. How many more beads does Nina need?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-283",
+  "itemId": "addition-app-028",
   "modeId": "addition",
   "itemFamily": "application",
   "subskill": "composeDecompose",
-  "structureType": "joinResultUnknown",
+  "structureType": "putTogetherTotalUnknown",
   "levelRange": [
    4,
    6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 36,
-   "b": 17,
+   "a": 12,
+   "b": 5,
    "op": "+",
-   "answer": 53,
+   "answer": 17,
    "display": {
-    "promptText": "Boaz raked 36 leaves yesterday and 17 today. How many leaves did Boaz rake?"
+    "promptText": "Zoe found 12 sharp pencils and 5 dull pencils in her desk. How many pencils did she find?"
    }
   }
  },
  {
-  "itemId": "addition-app-323",
+  "itemId": "addition-app-036",
   "modeId": "addition",
   "itemFamily": "application",
   "subskill": "unknownAddend",
@@ -482,17 +398,101 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 7,
+   "a": 8,
    "b": null,
    "op": "+",
-   "answer": 9,
+   "answer": 7,
    "display": {
-    "promptText": "A bowl held 7 limes. Vanessa added more. Now there are 16. How many limes did Vanessa add?"
+    "promptText": "A plate had 8 cookies. Dad baked some more. Now there are 15 cookies. How many cookies did Dad bake?"
    }
   }
  },
  {
-  "itemId": "addition-app-388",
+  "itemId": "addition-app-151",
+  "modeId": "addition",
+  "itemFamily": "application",
+  "subskill": "makeTen",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 6,
+   "b": 6,
+   "op": "+",
+   "answer": 12,
+   "display": {
+    "promptText": "A farmer planted 6 apple trees. Then she planted 6 plum trees. How many fruit trees does the farmer have in total?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-app-185",
+  "modeId": "addition",
+  "itemFamily": "application",
+  "subskill": "composeDecompose",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 28,
+   "b": 17,
+   "op": "+",
+   "answer": 45,
+   "display": {
+    "promptText": "A school hallway has 28 blue lockers and 17 red lockers. How many lockers are in the hallway?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-app-216",
+  "modeId": "addition",
+  "itemFamily": "application",
+  "subskill": "unknownAddend",
+  "structureType": "joinChangeUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 12,
+   "b": null,
+   "op": "+",
+   "answer": 6,
+   "display": {
+    "promptText": "Jorge's box had 12 crayons. He added more. Now there are 18. How many crayons did he add?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-app-255",
+  "modeId": "addition",
+  "itemFamily": "application",
+  "subskill": "makeTen",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": 7,
+   "op": "+",
+   "answer": 15,
+   "display": {
+    "promptText": "On an ice rink, 8 kids speed skate and 7 kids figure skate. How many skaters are on the rink in all?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-app-289",
   "modeId": "addition",
   "itemFamily": "application",
   "subskill": "composeDecompose",
@@ -503,12 +503,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 19,
-   "b": 21,
+   "a": 44,
+   "b": 17,
    "op": "+",
-   "answer": 40,
+   "answer": 61,
    "display": {
-    "promptText": "Arlo collected 19 acorns on the first trail and 21 on the second. How many acorns did Arlo collect?"
+    "promptText": "Emeril measured 44 ingredients. Then he measured 17 more. How many ingredients did he measure altogether?"
    }
   }
  },
@@ -517,7 +517,7 @@ export const SEED_ITEMS = [
   "modeId": "addition",
   "itemFamily": "conceptual",
   "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
+  "structureType": "putTogetherAddendUnknown",
   "levelRange": [
    4,
    6
@@ -534,112 +534,28 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "addition-conc-composeDecompose-23-019",
+  "itemId": "addition-conc-makeTen-23-001",
   "modeId": "addition",
   "itemFamily": "conceptual",
-  "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
+  "subskill": "makeTen",
+  "structureType": "joinResultUnknown",
   "levelRange": [
    4,
    6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 16,
-   "b": 17,
-   "op": "+",
-   "answer": 33,
-   "display": {
-    "promptText": "Two groups combine to show 33. The groups are 16 and 17. Total is?"
-   }
-  }
- },
- {
-  "itemId": "addition-conc-composeDecompose-23-037",
-  "modeId": "addition",
-  "itemFamily": "conceptual",
-  "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 13,
+   "a": 9,
    "b": null,
    "op": "+",
-   "answer": 7,
+   "answer": 1,
    "display": {
-    "promptText": "Number pair that makes 20: 13 and what?"
+    "promptText": "What do you add to 9 to reach the next ten?"
    }
   }
  },
  {
-  "itemId": "addition-conc-makeTen-23-007",
-  "modeId": "addition",
-  "itemFamily": "conceptual",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 6,
-   "b": 9,
-   "op": "+",
-   "answer": 15,
-   "display": {
-    "promptText": "Add 6 + 9 by making ten: take 1 from 6 to give 9. What is 5 + 10?"
-   }
-  }
- },
- {
-  "itemId": "addition-conc-makeTen-23-025",
-  "modeId": "addition",
-  "itemFamily": "conceptual",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": 7,
-   "op": "+",
-   "answer": 11,
-   "display": {
-    "promptText": "Use compensation: 4 + 7 = 3 + 8. Compute the value."
-   }
-  }
- },
- {
-  "itemId": "addition-conc-makeTen-23-043",
-  "modeId": "addition",
-  "itemFamily": "conceptual",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 6,
-   "b": 9,
-   "op": "+",
-   "answer": 15,
-   "display": {
-    "promptText": "Add the parts: 6 + 9. What is the sum?"
-   }
-  }
- },
- {
-  "itemId": "addition-conc-unknownAddend-23-013",
+  "itemId": "addition-conc-unknownAddend-23-001",
   "modeId": "addition",
   "itemFamily": "conceptual",
   "subskill": "unknownAddend",
@@ -653,14 +569,56 @@ export const SEED_ITEMS = [
    "a": 9,
    "b": null,
    "op": "+",
-   "answer": 11,
+   "answer": 6,
    "display": {
-    "promptText": "A bar model shows a total of 20 with one bar at 9. Find the length of the other bar."
+    "promptText": "Find the missing addend that makes 9 + ? = 15 true."
    }
   }
  },
  {
-  "itemId": "addition-conc-unknownAddend-23-031",
+  "itemId": "addition-conc-composeDecompose-23-017",
+  "modeId": "addition",
+  "itemFamily": "conceptual",
+  "subskill": "composeDecompose",
+  "structureType": "putTogetherAddendUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 15,
+   "b": null,
+   "op": "+",
+   "answer": 5,
+   "display": {
+    "promptText": "Write 20 as a sum of 15 and another whole number. The other number is?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-conc-makeTen-23-017",
+  "modeId": "addition",
+  "itemFamily": "conceptual",
+  "subskill": "makeTen",
+  "structureType": "joinResultUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 6,
+   "b": 7,
+   "op": "+",
+   "answer": 13,
+   "display": {
+    "promptText": "Use near-doubles: since 6 + 6 = 12, what is 6 + 7?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-conc-unknownAddend-23-017",
   "modeId": "addition",
   "itemFamily": "conceptual",
   "subskill": "unknownAddend",
@@ -671,12 +629,54 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 12,
+   "a": 11,
    "b": null,
    "op": "+",
-   "answer": 7,
+   "answer": 4,
    "display": {
-    "promptText": "Count-on from 12 by some amount to reach 19. The amount is?"
+    "promptText": "What goes in the circle: 11 + O = 15?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-conc-composeDecompose-23-033",
+  "modeId": "addition",
+  "itemFamily": "conceptual",
+  "subskill": "composeDecompose",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 29,
+   "b": 14,
+   "op": "+",
+   "answer": 43,
+   "display": {
+    "promptText": "Open number sentence: 29 + 14 equals what?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-conc-makeTen-23-033",
+  "modeId": "addition",
+  "itemFamily": "conceptual",
+  "subskill": "makeTen",
+  "structureType": "joinResultUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 5,
+   "b": 8,
+   "op": "+",
+   "answer": 13,
+   "display": {
+    "promptText": "Open number sentence: 5 + 8 equals what?"
    }
   }
  },
@@ -685,7 +685,7 @@ export const SEED_ITEMS = [
   "modeId": "addition",
   "itemFamily": "conceptual",
   "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
+  "structureType": "putTogetherAddendUnknown",
   "levelRange": [
    7,
    10
@@ -702,49 +702,70 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "addition-conc-composeDecompose-45-019",
+  "itemId": "addition-conc-makeTen-45-001",
+  "modeId": "addition",
+  "itemFamily": "conceptual",
+  "subskill": "makeTen",
+  "structureType": "joinResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 28,
+   "b": null,
+   "op": "+",
+   "answer": 2,
+   "display": {
+    "promptText": "What number completes 28 + ? = 30?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-conc-unknownAddend-45-001",
+  "modeId": "addition",
+  "itemFamily": "conceptual",
+  "subskill": "unknownAddend",
+  "structureType": "joinChangeUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 35,
+   "b": null,
+   "op": "+",
+   "answer": 35,
+   "display": {
+    "promptText": "Find the missing addend that makes 35 + ? = 70 true."
+   }
+  }
+ },
+ {
+  "itemId": "addition-conc-composeDecompose-45-017",
   "modeId": "addition",
   "itemFamily": "conceptual",
   "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
+  "structureType": "putTogetherAddendUnknown",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 240,
-   "b": 360,
-   "op": "+",
-   "answer": 600,
-   "display": {
-    "promptText": "Two groups combine to show 600. The groups are 240 and 360. Total is?"
-   }
-  }
- },
- {
-  "itemId": "addition-conc-composeDecompose-45-037",
-  "modeId": "addition",
-  "itemFamily": "conceptual",
-  "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 145,
+   "a": 300,
    "b": null,
    "op": "+",
-   "answer": 55,
+   "answer": 200,
    "display": {
-    "promptText": "Number pair that makes 200: 145 and what?"
+    "promptText": "Write 500 as a sum of 300 and another whole number. The other number is?"
    }
   }
  },
  {
-  "itemId": "addition-conc-makeTen-45-007",
+  "itemId": "addition-conc-makeTen-45-017",
   "modeId": "addition",
   "itemFamily": "conceptual",
   "subskill": "makeTen",
@@ -755,42 +776,21 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 84,
-   "b": null,
+   "a": 40,
+   "b": 40,
    "op": "+",
-   "answer": 6,
+   "answer": 80,
    "display": {
-    "promptText": "From 84, how much to reach 90?"
+    "promptText": "Use doubles: 40 + 40 equals?"
    }
   }
  },
  {
-  "itemId": "addition-conc-makeTen-45-025",
+  "itemId": "addition-conc-unknownAddend-45-017",
   "modeId": "addition",
   "itemFamily": "conceptual",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 200,
-   "b": 200,
-   "op": "+",
-   "answer": 400,
-   "display": {
-    "promptText": "Use doubles: 200 + 200 equals?"
-   }
-  }
- },
- {
-  "itemId": "addition-conc-makeTen-45-043",
-  "modeId": "addition",
-  "itemFamily": "conceptual",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
+  "subskill": "unknownAddend",
+  "structureType": "joinChangeUnknown",
   "levelRange": [
    7,
    10
@@ -798,53 +798,53 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 68,
-   "b": 2,
+   "b": null,
+   "op": "+",
+   "answer": 32,
+   "display": {
+    "promptText": "What goes in the circle: 68 + O = 100?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-conc-composeDecompose-45-033",
+  "modeId": "addition",
+  "itemFamily": "conceptual",
+  "subskill": "composeDecompose",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 375,
+   "b": 375,
+   "op": "+",
+   "answer": 750,
+   "display": {
+    "promptText": "Halve and double reasoning: double 375 is 375 + 375. What is the total?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-conc-makeTen-45-033",
+  "modeId": "addition",
+  "itemFamily": "conceptual",
+  "subskill": "makeTen",
+  "structureType": "joinResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 35,
+   "b": 35,
    "op": "+",
    "answer": 70,
    "display": {
-    "promptText": "On a number line, start at 68 and hop 2 spaces. Where do you land?"
-   }
-  }
- },
- {
-  "itemId": "addition-conc-unknownAddend-45-013",
-  "modeId": "addition",
-  "itemFamily": "conceptual",
-  "subskill": "unknownAddend",
-  "structureType": "joinChangeUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 349,
-   "b": null,
-   "op": "+",
-   "answer": 51,
-   "display": {
-    "promptText": "Fill in the blank so the equation is true: 349 + __ = 400"
-   }
-  }
- },
- {
-  "itemId": "addition-conc-unknownAddend-45-031",
-  "modeId": "addition",
-  "itemFamily": "conceptual",
-  "subskill": "unknownAddend",
-  "structureType": "joinChangeUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 75,
-   "b": null,
-   "op": "+",
-   "answer": 25,
-   "display": {
-    "promptText": "Count-on from 75 by some amount to reach 100. The amount is?"
+    "promptText": "Halve and double reasoning: double 35 is 35 + 35. What is the total?"
    }
   }
  },
@@ -853,7 +853,7 @@ export const SEED_ITEMS = [
   "modeId": "addition",
   "itemFamily": "conceptual",
   "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
+  "structureType": "putTogetherAddendUnknown",
   "levelRange": [
    1,
    3
@@ -870,32 +870,32 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "addition-conc-composeDecompose-K1-019",
+  "itemId": "addition-conc-makeTen-K1-001",
   "modeId": "addition",
   "itemFamily": "conceptual",
-  "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
+  "subskill": "makeTen",
+  "structureType": "joinResultUnknown",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 3,
-   "b": 5,
+   "a": 8,
+   "b": null,
    "op": "+",
-   "answer": 8,
+   "answer": 2,
    "display": {
-    "promptText": "Two groups combine to show 8. The groups are 3 and 5. Total is?"
+    "promptText": "What number plus 8 makes 10?"
    }
   }
  },
  {
-  "itemId": "addition-conc-composeDecompose-K1-037",
+  "itemId": "addition-conc-unknownAddend-K1-001",
   "modeId": "addition",
   "itemFamily": "conceptual",
-  "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
+  "subskill": "unknownAddend",
+  "structureType": "joinChangeUnknown",
   "levelRange": [
    1,
    3
@@ -905,14 +905,35 @@ export const SEED_ITEMS = [
    "a": 4,
    "b": null,
    "op": "+",
-   "answer": 2,
+   "answer": 4,
    "display": {
-    "promptText": "Number pair that makes 6: 4 and what?"
+    "promptText": "Find the missing addend that makes 4 + ? = 8 true."
    }
   }
  },
  {
-  "itemId": "addition-conc-makeTen-K1-007",
+  "itemId": "addition-conc-composeDecompose-K1-017",
+  "modeId": "addition",
+  "itemFamily": "conceptual",
+  "subskill": "composeDecompose",
+  "structureType": "putTogetherAddendUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 5,
+   "b": null,
+   "op": "+",
+   "answer": 5,
+   "display": {
+    "promptText": "Write 10 as a sum of 5 and another whole number. The other number is?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-conc-makeTen-K1-017",
   "modeId": "addition",
   "itemFamily": "conceptual",
   "subskill": "makeTen",
@@ -923,38 +944,59 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 1,
-   "b": null,
+   "a": 9,
+   "b": 0,
    "op": "+",
    "answer": 9,
    "display": {
-    "promptText": "To reach 10 from 1, add what?"
+    "promptText": "Identity: adding zero leaves a number unchanged. What is 9 + 0?"
    }
   }
  },
  {
-  "itemId": "addition-conc-makeTen-K1-025",
+  "itemId": "addition-conc-unknownAddend-K1-017",
   "modeId": "addition",
   "itemFamily": "conceptual",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
+  "subskill": "unknownAddend",
+  "structureType": "joinChangeUnknown",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 3,
-   "b": 3,
+   "a": 5,
+   "b": null,
    "op": "+",
-   "answer": 6,
+   "answer": 3,
    "display": {
-    "promptText": "Doubles: 3 + 3 equals?"
+    "promptText": "What goes in the circle: 5 + O = 8?"
    }
   }
  },
  {
-  "itemId": "addition-conc-makeTen-K1-043",
+  "itemId": "addition-conc-composeDecompose-K1-033",
+  "modeId": "addition",
+  "itemFamily": "conceptual",
+  "subskill": "composeDecompose",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 2,
+   "b": 5,
+   "op": "+",
+   "answer": 7,
+   "display": {
+    "promptText": "True or make it true: is 2 + 5 equal to 7?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-conc-makeTen-K1-033",
   "modeId": "addition",
   "itemFamily": "conceptual",
   "subskill": "makeTen",
@@ -966,53 +1008,11 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 5,
-   "b": 5,
+   "b": 3,
    "op": "+",
-   "answer": 10,
+   "answer": 8,
    "display": {
-    "promptText": "Think of 10 as five fives: 10 = 5 + 5. Sum equals?"
-   }
-  }
- },
- {
-  "itemId": "addition-conc-unknownAddend-K1-013",
-  "modeId": "addition",
-  "itemFamily": "conceptual",
-  "subskill": "unknownAddend",
-  "structureType": "joinChangeUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 6,
-   "b": null,
-   "op": "+",
-   "answer": 4,
-   "display": {
-    "promptText": "A teeter-totter is balanced by 6 on one side plus a weight equaling 10. The weight is?"
-   }
-  }
- },
- {
-  "itemId": "addition-conc-unknownAddend-K1-031",
-  "modeId": "addition",
-  "itemFamily": "conceptual",
-  "subskill": "unknownAddend",
-  "structureType": "joinChangeUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 2,
-   "b": null,
-   "op": "+",
-   "answer": 3,
-   "display": {
-    "promptText": "Count-on from 2 by some amount to reach 5. The amount is?"
+    "promptText": "Fingers: show 5 on one hand and 3 on the other. How many fingers?"
    }
   }
  },
@@ -1021,7 +1021,7 @@ export const SEED_ITEMS = [
   "modeId": "addition",
   "itemFamily": "procedural",
   "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
+  "structureType": "putTogetherTotalUnknown",
   "levelRange": [
    4,
    6
@@ -1038,49 +1038,70 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "addition-proc-composeDecompose-23-019",
+  "itemId": "addition-proc-makeTen-23-001",
   "modeId": "addition",
   "itemFamily": "procedural",
-  "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
+  "subskill": "makeTen",
+  "structureType": "joinResultUnknown",
   "levelRange": [
    4,
    6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 73,
-   "b": 15,
+   "a": 9,
+   "b": 6,
    "op": "+",
-   "answer": 88,
+   "answer": 15,
    "display": {
-    "promptText": "73 + 15 = ?"
+    "promptText": "9 + 6 = ?"
    }
   }
  },
  {
-  "itemId": "addition-proc-composeDecompose-23-037",
+  "itemId": "addition-proc-unknownAddend-23-001",
   "modeId": "addition",
   "itemFamily": "procedural",
-  "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
+  "subskill": "unknownAddend",
+  "structureType": "joinChangeUnknown",
   "levelRange": [
    4,
    6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 12,
-   "b": 23,
+   "a": 9,
+   "b": null,
    "op": "+",
-   "answer": 35,
+   "answer": 6,
    "display": {
-    "promptText": "12 + 23 = ?"
+    "promptText": "9 + ? = 15"
    }
   }
  },
  {
-  "itemId": "addition-proc-makeTen-23-007",
+  "itemId": "addition-proc-composeDecompose-23-017",
+  "modeId": "addition",
+  "itemFamily": "procedural",
+  "subskill": "composeDecompose",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 52,
+   "b": 17,
+   "op": "+",
+   "answer": 69,
+   "display": {
+    "promptText": "52 + 17 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-proc-makeTen-23-017",
   "modeId": "addition",
   "itemFamily": "procedural",
   "subskill": "makeTen",
@@ -1092,41 +1113,20 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 8,
-   "b": 6,
+   "b": 8,
    "op": "+",
-   "answer": 14,
+   "answer": 16,
    "display": {
-    "promptText": "8 + 6 = ?"
+    "promptText": "8 + 8 = ?"
    }
   }
  },
  {
-  "itemId": "addition-proc-makeTen-23-025",
+  "itemId": "addition-proc-unknownAddend-23-017",
   "modeId": "addition",
   "itemFamily": "procedural",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 2,
-   "b": 9,
-   "op": "+",
-   "answer": 11,
-   "display": {
-    "promptText": "2 + 9 = ?"
-   }
-  }
- },
- {
-  "itemId": "addition-proc-makeTen-23-043",
-  "modeId": "addition",
-  "itemFamily": "procedural",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
+  "subskill": "unknownAddend",
+  "structureType": "joinChangeUnknown",
   "levelRange": [
    4,
    6
@@ -1134,53 +1134,53 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 15,
-   "b": 35,
+   "b": null,
    "op": "+",
-   "answer": 50,
+   "answer": 5,
    "display": {
-    "promptText": "15 + 35 = ?"
+    "promptText": "15 + ? = 20"
    }
   }
  },
  {
-  "itemId": "addition-proc-unknownAddend-23-013",
+  "itemId": "addition-proc-composeDecompose-23-033",
   "modeId": "addition",
   "itemFamily": "procedural",
-  "subskill": "unknownAddend",
-  "structureType": "joinChangeUnknown",
+  "subskill": "composeDecompose",
+  "structureType": "putTogetherTotalUnknown",
   "levelRange": [
    4,
    6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 13,
-   "b": null,
+   "a": 19,
+   "b": 30,
    "op": "+",
-   "answer": 7,
+   "answer": 49,
    "display": {
-    "promptText": "13 + ? = 20"
+    "promptText": "19 + 30 = ?"
    }
   }
  },
  {
-  "itemId": "addition-proc-unknownAddend-23-031",
+  "itemId": "addition-proc-makeTen-23-033",
   "modeId": "addition",
   "itemFamily": "procedural",
-  "subskill": "unknownAddend",
-  "structureType": "joinChangeUnknown",
+  "subskill": "makeTen",
+  "structureType": "joinResultUnknown",
   "levelRange": [
    4,
    6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 22,
-   "b": null,
+   "a": 19,
+   "b": 1,
    "op": "+",
-   "answer": 8,
+   "answer": 20,
    "display": {
-    "promptText": "22 + ? = 30"
+    "promptText": "19 + 1 = ?"
    }
   }
  },
@@ -1189,7 +1189,7 @@ export const SEED_ITEMS = [
   "modeId": "addition",
   "itemFamily": "procedural",
   "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
+  "structureType": "putTogetherTotalUnknown",
   "levelRange": [
    7,
    10
@@ -1206,49 +1206,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "addition-proc-composeDecompose-45-019",
-  "modeId": "addition",
-  "itemFamily": "procedural",
-  "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 538,
-   "b": 142,
-   "op": "+",
-   "answer": 680,
-   "display": {
-    "promptText": "538 + 142 = ?"
-   }
-  }
- },
- {
-  "itemId": "addition-proc-composeDecompose-45-037",
-  "modeId": "addition",
-  "itemFamily": "procedural",
-  "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 111,
-   "b": 222,
-   "op": "+",
-   "answer": 333,
-   "display": {
-    "promptText": "111 + 222 = ?"
-   }
-  }
- },
- {
-  "itemId": "addition-proc-makeTen-45-007",
+  "itemId": "addition-proc-makeTen-45-001",
   "modeId": "addition",
   "itemFamily": "procedural",
   "subskill": "makeTen",
@@ -1259,96 +1217,138 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 46,
-   "b": 24,
+   "a": 18,
+   "b": 12,
+   "op": "+",
+   "answer": 30,
+   "display": {
+    "promptText": "18 + 12 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-proc-unknownAddend-45-001",
+  "modeId": "addition",
+  "itemFamily": "procedural",
+  "subskill": "unknownAddend",
+  "structureType": "joinChangeUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 25,
+   "b": null,
+   "op": "+",
+   "answer": 35,
+   "display": {
+    "promptText": "25 + ? = 60"
+   }
+  }
+ },
+ {
+  "itemId": "addition-proc-composeDecompose-45-017",
+  "modeId": "addition",
+  "itemFamily": "procedural",
+  "subskill": "composeDecompose",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 314,
+   "b": 145,
+   "op": "+",
+   "answer": 459,
+   "display": {
+    "promptText": "314 + 145 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-proc-makeTen-45-017",
+  "modeId": "addition",
+  "itemFamily": "procedural",
+  "subskill": "makeTen",
+  "structureType": "joinResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 49,
+   "b": 11,
+   "op": "+",
+   "answer": 60,
+   "display": {
+    "promptText": "49 + 11 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-proc-unknownAddend-45-017",
+  "modeId": "addition",
+  "itemFamily": "procedural",
+  "subskill": "unknownAddend",
+  "structureType": "joinChangeUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 30,
+   "b": null,
+   "op": "+",
+   "answer": 25,
+   "display": {
+    "promptText": "30 + ? = 55"
+   }
+  }
+ },
+ {
+  "itemId": "addition-proc-composeDecompose-45-033",
+  "modeId": "addition",
+  "itemFamily": "procedural",
+  "subskill": "composeDecompose",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 825,
+   "b": 167,
+   "op": "+",
+   "answer": 992,
+   "display": {
+    "promptText": "825 + 167 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-proc-makeTen-45-033",
+  "modeId": "addition",
+  "itemFamily": "procedural",
+  "subskill": "makeTen",
+  "structureType": "joinResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 52,
+   "b": 18,
    "op": "+",
    "answer": 70,
    "display": {
-    "promptText": "46 + 24 = ?"
-   }
-  }
- },
- {
-  "itemId": "addition-proc-makeTen-45-025",
-  "modeId": "addition",
-  "itemFamily": "procedural",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 85,
-   "b": 25,
-   "op": "+",
-   "answer": 110,
-   "display": {
-    "promptText": "85 + 25 = ?"
-   }
-  }
- },
- {
-  "itemId": "addition-proc-makeTen-45-043",
-  "modeId": "addition",
-  "itemFamily": "procedural",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 345,
-   "b": 55,
-   "op": "+",
-   "answer": 400,
-   "display": {
-    "promptText": "345 + 55 = ?"
-   }
-  }
- },
- {
-  "itemId": "addition-proc-unknownAddend-45-013",
-  "modeId": "addition",
-  "itemFamily": "procedural",
-  "subskill": "unknownAddend",
-  "structureType": "joinChangeUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 64,
-   "b": null,
-   "op": "+",
-   "answer": 36,
-   "display": {
-    "promptText": "64 + ? = 100"
-   }
-  }
- },
- {
-  "itemId": "addition-proc-unknownAddend-45-031",
-  "modeId": "addition",
-  "itemFamily": "procedural",
-  "subskill": "unknownAddend",
-  "structureType": "joinChangeUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 225,
-   "b": null,
-   "op": "+",
-   "answer": 75,
-   "display": {
-    "promptText": "225 + ? = 300"
+    "promptText": "52 + 18 = ?"
    }
   }
  },
@@ -1357,7 +1357,7 @@ export const SEED_ITEMS = [
   "modeId": "addition",
   "itemFamily": "procedural",
   "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
+  "structureType": "putTogetherTotalUnknown",
   "levelRange": [
    1,
    3
@@ -1374,137 +1374,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "addition-proc-composeDecompose-K1-019",
-  "modeId": "addition",
-  "itemFamily": "procedural",
-  "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 1,
-   "b": 1,
-   "op": "+",
-   "answer": 2,
-   "display": {
-    "promptText": "1 + 1 = ?"
-   }
-  }
- },
- {
-  "itemId": "addition-proc-composeDecompose-K1-037",
-  "modeId": "addition",
-  "itemFamily": "procedural",
-  "subskill": "composeDecompose",
-  "structureType": "partPartWhole",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 11,
-   "b": 4,
-   "op": "+",
-   "answer": 15,
-   "display": {
-    "promptText": "11 + 4 = ?"
-   }
-  }
- },
- {
-  "itemId": "addition-proc-makeTen-K1-007",
+  "itemId": "addition-proc-makeTen-K1-001",
   "modeId": "addition",
   "itemFamily": "procedural",
   "subskill": "makeTen",
   "structureType": "joinResultUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": 6,
-   "op": "+",
-   "answer": 10,
-   "display": {
-    "promptText": "4 + 6 = ?"
-   }
-  }
- },
- {
-  "itemId": "addition-proc-makeTen-K1-025",
-  "modeId": "addition",
-  "itemFamily": "procedural",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": 2,
-   "op": "+",
-   "answer": 6,
-   "display": {
-    "promptText": "4 + 2 = ?"
-   }
-  }
- },
- {
-  "itemId": "addition-proc-makeTen-K1-043",
-  "modeId": "addition",
-  "itemFamily": "procedural",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 11,
-   "b": 2,
-   "op": "+",
-   "answer": 13,
-   "display": {
-    "promptText": "11 + 2 = ?"
-   }
-  }
- },
- {
-  "itemId": "addition-proc-unknownAddend-K1-013",
-  "modeId": "addition",
-  "itemFamily": "procedural",
-  "subskill": "unknownAddend",
-  "structureType": "joinChangeUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": null,
-   "op": "+",
-   "answer": 3,
-   "display": {
-    "promptText": "7 + ? = 10"
-   }
-  }
- },
- {
-  "itemId": "addition-proc-unknownAddend-K1-031",
-  "modeId": "addition",
-  "itemFamily": "procedural",
-  "subskill": "unknownAddend",
-  "structureType": "joinChangeUnknown",
   "levelRange": [
    1,
    3
@@ -1512,11 +1386,137 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 5,
+   "b": 5,
+   "op": "+",
+   "answer": 10,
+   "display": {
+    "promptText": "5 + 5 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-proc-unknownAddend-K1-001",
+  "modeId": "addition",
+  "itemFamily": "procedural",
+  "subskill": "unknownAddend",
+  "structureType": "joinChangeUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 4,
    "b": null,
    "op": "+",
    "answer": 3,
    "display": {
-    "promptText": "5 + ? = 8"
+    "promptText": "4 + ? = 7"
+   }
+  }
+ },
+ {
+  "itemId": "addition-proc-composeDecompose-K1-017",
+  "modeId": "addition",
+  "itemFamily": "procedural",
+  "subskill": "composeDecompose",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 4,
+   "b": 1,
+   "op": "+",
+   "answer": 5,
+   "display": {
+    "promptText": "4 + 1 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-proc-makeTen-K1-017",
+  "modeId": "addition",
+  "itemFamily": "procedural",
+  "subskill": "makeTen",
+  "structureType": "joinResultUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": 0,
+   "op": "+",
+   "answer": 8,
+   "display": {
+    "promptText": "8 + 0 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-proc-unknownAddend-K1-017",
+  "modeId": "addition",
+  "itemFamily": "procedural",
+  "subskill": "unknownAddend",
+  "structureType": "joinChangeUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 4,
+   "b": null,
+   "op": "+",
+   "answer": 1,
+   "display": {
+    "promptText": "4 + ? = 5"
+   }
+  }
+ },
+ {
+  "itemId": "addition-proc-composeDecompose-K1-033",
+  "modeId": "addition",
+  "itemFamily": "procedural",
+  "subskill": "composeDecompose",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 6,
+   "b": 5,
+   "op": "+",
+   "answer": 11,
+   "display": {
+    "promptText": "6 + 5 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-proc-makeTen-K1-033",
+  "modeId": "addition",
+  "itemFamily": "procedural",
+  "subskill": "makeTen",
+  "structureType": "joinResultUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 0,
+   "b": 3,
+   "op": "+",
+   "answer": 3,
+   "display": {
+    "promptText": "0 + 3 = ?"
    }
   }
  },
@@ -1537,28 +1537,12 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "Lane A scored 246 points and Lane B scored 264 points. Which symbol compares Lane A to Lane B?"
-   }
-  }
- },
- {
-  "itemId": "comparing-app-002",
-  "modeId": "comparing",
-  "itemFamily": "application",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   8,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 178,
-   "b": 187,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "A class read 178 books and another class read 187 books. Which symbol compares 178 to 187?"
+    "promptText": "Lane A scored 246 points and Lane B scored 264 points. Which symbol compares Lane A to Lane B?",
+    "promptOptions": [
+     "Sam scored 246 points. Alex scored 264 points. Which symbol compares their scores?",
+     "Two kids played a game. One got 246 points. The other got 264 points. Which symbol compares them?",
+     "Maya has 246 trading cards. Her brother has 264 cards. Which symbol compares how many they have?"
+    ]
    }
   }
  },
@@ -1579,28 +1563,12 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": ">",
    "display": {
-    "promptText": "A library counted 510 books on one shelf and 499 on another. Which symbol compares 510 to 499?"
-   }
-  }
- },
- {
-  "itemId": "comparing-app-004",
-  "modeId": "comparing",
-  "itemFamily": "application",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   9,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 805,
-   "b": 850,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "A stadium seats 805 fans and a theater seats 850 fans. Which symbol compares 805 to 850?"
+    "promptText": "A library counted 510 books on one shelf and 499 on another. Which symbol compares 510 to 499?",
+    "promptOptions": [
+     "The top shelf has 510 books. The bottom shelf has 499 books. Which symbol compares them?",
+     "One shelf holds 510 books. Another shelf holds 499 books. Which symbol compares these amounts?",
+     "A library has books on two shelves. One has 510 books. One has 499 books. Which symbol compares them?"
+    ]
    }
   }
  },
@@ -1621,7 +1589,64 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "=",
    "display": {
-    "promptText": "Two classes each solved 380 puzzles this month. Which symbol compares the totals?"
+    "promptText": "Two classes each solved 380 puzzles this month. Which symbol compares the totals?",
+    "promptOptions": [
+     "One class solved 380 puzzles. Another class solved 380 puzzles. Which symbol compares them?",
+     "Team 1 solved 380 puzzles. Team 2 solved 380 puzzles. Which symbol compares their totals?",
+     "Two groups solved puzzles. One group solved 380. The other solved 380. Which symbol compares them?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "comparing-app-002",
+  "modeId": "comparing",
+  "itemFamily": "application",
+  "subskill": "symbolSelection",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   8,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 178,
+   "b": 187,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "A class read 178 books and another class read 187 books. Which symbol compares 178 to 187?",
+    "promptOptions": [
+     "Ms. Lee's class read 178 books. Mr. Park's class read 187 books. Which symbol compares their totals?",
+     "One class read 178 books. Another class read 187 books. Which symbol compares them?",
+     "Two groups read books. One read 178. The other read 187. Which symbol compares their reading?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "comparing-app-004",
+  "modeId": "comparing",
+  "itemFamily": "application",
+  "subskill": "benchmarkCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   9,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 805,
+   "b": 850,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "A stadium seats 805 fans and a theater seats 850 fans. Which symbol compares 805 to 850?",
+    "promptOptions": [
+     "The stadium seats 805 fans. The theater seats 850 fans. Which symbol compares them?",
+     "One place seats 805 people. Another seats 850 people. Which symbol compares their seating?",
+     "A big stadium can hold 805 fans. A theater can hold 850 fans. Which symbol compares them?"
+    ]
    }
   }
  },
@@ -1642,7 +1667,12 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "=",
    "display": {
-    "promptText": "Town A and Town B each have 612 students. Which symbol compares the two amounts?"
+    "promptText": "Town A and Town B each have 612 students. Which symbol compares the two amounts?",
+    "promptOptions": [
+     "Springfield has 612 students. Maple Town has 612 students. Which symbol compares them?",
+     "One town has 612 students. Another town has 612 students. Which symbol compares their enrollments?",
+     "Two towns each have 612 students. Which symbol compares them?"
+    ]
    }
   }
  },
@@ -1663,7 +1693,12 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": ">",
    "display": {
-    "promptText": "A class read 84 books and another class read 79 books. Which symbol compares 84 to 79?"
+    "promptText": "A class read 84 books and another class read 79 books. Which symbol compares 84 to 79?",
+    "promptOptions": [
+     "One class read 84 books. Another class read 79 books. Which symbol compares how many they read?",
+     "Mrs. Lopez's class read 84 books. Mr. Chen's class read 79 books. Which symbol compares them?",
+     "The third grade read 84 books. The second grade read 79 books. Which symbol compares their reading?"
+    ]
    }
   }
  },
@@ -1684,7 +1719,12 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "A counter shows 999 in one window and 1001 in another. Which symbol compares 999 to 1001?"
+    "promptText": "A counter shows 999 in one window and 1001 in another. Which symbol compares 999 to 1001?",
+    "promptOptions": [
+     "One counter shows 999. Another counter shows 1001. Which symbol compares them?",
+     "A machine has two windows. One shows 999. The other shows 1001. Which symbol compares them?",
+     "Two scoreboards show numbers. One shows 999. One shows 1001. Which symbol compares them?"
+    ]
    }
   }
  },
@@ -1705,49 +1745,10 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "Mia has 5 candies. Tom has 8 candies. Which symbol compares 5 to 8?"
-   }
-  }
- },
- {
-  "itemId": "comparing-app-015",
-  "modeId": "comparing",
-  "itemFamily": "application",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": 4,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Sara counted 7 cars. Eli counted 4 cars. Which symbol compares 7 to 4?"
-   }
-  }
- },
- {
-  "itemId": "comparing-app-016",
-  "modeId": "comparing",
-  "itemFamily": "application",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 6,
-   "b": 6,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Two boxes both have 6 toys. Which symbol compares 6 to 6?"
+    "promptText": "Mia has 5 candies. Tom has 8 candies. Which symbol compares 5 to 8?",
+    "promptOptions": [
+     "Mia has 5 candies. Tom has 8 candies. Compare 5 to 8."
+    ]
    }
   }
  },
@@ -1768,49 +1769,10 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "A jar holds 4 marbles. The benchmark is 5. Compare 4 to 5."
-   }
-  }
- },
- {
-  "itemId": "comparing-app-018",
-  "modeId": "comparing",
-  "itemFamily": "application",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": 5,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Lia has 7 stickers; the benchmark is 5. Compare 7 to 5."
-   }
-  }
- },
- {
-  "itemId": "comparing-app-019",
-  "modeId": "comparing",
-  "itemFamily": "application",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 10,
-   "b": 10,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Both Sam and Pat have 10 grapes. Compare 10 to 10."
+    "promptText": "A jar holds 4 marbles. The benchmark is 5. Compare 4 to 5.",
+    "promptOptions": [
+     "A jar has 4 marbles. A full jar holds 5 marbles. Compare 4 to 5."
+    ]
    }
   }
  },
@@ -1831,7 +1793,58 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": ">",
    "display": {
-    "promptText": "Eli has 9 apples and Mia has 4. Compare 9 to 4."
+    "promptText": "Eli has 9 apples and Mia has 4. Compare 9 to 4.",
+    "promptOptions": [
+     "Eli has 9 apples. Mia has 4 apples. Compare 9 to 4."
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "comparing-app-015",
+  "modeId": "comparing",
+  "itemFamily": "application",
+  "subskill": "symbolSelection",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 7,
+   "b": 4,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "Sara counted 7 cars. Eli counted 4 cars. Which symbol compares 7 to 4?",
+    "promptOptions": [
+     "Sara counted 7 cars. Eli counted 4 cars. Compare 7 to 4."
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "comparing-app-018",
+  "modeId": "comparing",
+  "itemFamily": "application",
+  "subskill": "benchmarkCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 7,
+   "b": 5,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "Lia has 7 stickers; the benchmark is 5. Compare 7 to 5.",
+    "promptOptions": [
+     "Lia collected 7 stickers. Her friend has 5 stickers. Compare 7 to 5."
+    ]
    }
   }
  },
@@ -1852,7 +1865,59 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "Min has 3 pens and Tom has 8 pens. Compare 3 to 8."
+    "promptText": "Min has 3 pens and Tom has 8 pens. Compare 3 to 8.",
+    "promptOptions": [
+     "Min has 3 pens. Tom has 8 pens. Compare 3 to 8."
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "comparing-app-016",
+  "modeId": "comparing",
+  "itemFamily": "application",
+  "subskill": "symbolSelection",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 6,
+   "b": 6,
+   "op": "?",
+   "answer": "=",
+   "display": {
+    "promptText": "Two boxes both have 6 toys. Which symbol compares 6 to 6?",
+    "promptOptions": [
+     "Kyle's box has 6 toys. Lisa's box has 6 toys. Compare 6 to 6.",
+     "One box has 6 toys. Another box has 6 toys. Compare 6 to 6."
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "comparing-app-019",
+  "modeId": "comparing",
+  "itemFamily": "application",
+  "subskill": "benchmarkCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 10,
+   "b": 10,
+   "op": "?",
+   "answer": "=",
+   "display": {
+    "promptText": "Both Sam and Pat have 10 grapes. Compare 10 to 10.",
+    "promptOptions": [
+     "Sam picked 10 grapes. Pat picked 10 grapes. Compare 10 to 10."
+    ]
    }
   }
  },
@@ -1873,49 +1938,11 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "A class has 23 books. Another class has 45 books. Compare 23 and 45."
-   }
-  }
- },
- {
-  "itemId": "comparing-app-024",
-  "modeId": "comparing",
-  "itemFamily": "application",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 67,
-   "b": 32,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Pat scored 67 points and Min scored 32 points. Compare 67 and 32."
-   }
-  }
- },
- {
-  "itemId": "comparing-app-025",
-  "modeId": "comparing",
-  "itemFamily": "application",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 50,
-   "b": 50,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Two teams both have 50 fans. Compare 50 and 50."
+    "promptText": "A class has 23 books. Another class has 45 books. Compare 23 and 45.",
+    "promptOptions": [
+     "Ms. Lee's class has 23 books. Mr. Park's class has 45 books. Compare 23 to 45.",
+     "One class collected 23 books. Another class collected 45 books. Compare 23 to 45."
+    ]
    }
   }
  },
@@ -1936,49 +1963,11 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "A factory made 47 toys; the goal was 50. Compare 47 and 50."
-   }
-  }
- },
- {
-  "itemId": "comparing-app-027",
-  "modeId": "comparing",
-  "itemFamily": "application",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 65,
-   "b": 50,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "A book has 65 pages. The library asks for at least 50. Compare 65 and 50."
-   }
-  }
- },
- {
-  "itemId": "comparing-app-028",
-  "modeId": "comparing",
-  "itemFamily": "application",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 30,
-   "b": 30,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Both jars hold 30 jellybeans. Compare 30 and 30."
+    "promptText": "A factory made 47 toys; the goal was 50. Compare 47 and 50.",
+    "promptOptions": [
+     "Emma has 47 cookies. Jake has 50 cookies. Who has more cookies?",
+     "One bookcase has 47 books. Another has 50 books. Which has more books?"
+    ]
    }
   }
  },
@@ -1999,7 +1988,60 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "Anna ran 18 laps and Ben ran 25 laps. Compare 18 and 25."
+    "promptText": "Anna ran 18 laps and Ben ran 25 laps. Compare 18 and 25.",
+    "promptOptions": [
+     "Anna ran 18 laps. Ben ran 25 laps. Who ran more laps?",
+     "One runner jumped 18 times. Another jumped 25 times. Who jumped more?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "comparing-app-024",
+  "modeId": "comparing",
+  "itemFamily": "application",
+  "subskill": "symbolSelection",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 67,
+   "b": 32,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "Pat scored 67 points and Min scored 32 points. Compare 67 and 32.",
+    "promptOptions": [
+     "Pat scored 67 points. Min scored 32 points. Compare 67 to 32."
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "comparing-app-027",
+  "modeId": "comparing",
+  "itemFamily": "application",
+  "subskill": "benchmarkCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 65,
+   "b": 50,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "A book has 65 pages. The library asks for at least 50. Compare 65 and 50.",
+    "promptOptions": [
+     "One book has 65 pages. Another has 50 pages. Which book has more pages?",
+     "Sarah's team scored 65 points. Mike's team scored 50. Who scored more?"
+    ]
    }
   }
  },
@@ -2020,7 +2062,61 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": ">",
    "display": {
-    "promptText": "A garden has 75 tulips and 42 daisies. Compare 75 and 42."
+    "promptText": "A garden has 75 tulips and 42 daisies. Compare 75 and 42.",
+    "promptOptions": [
+     "A garden has 75 tulips and 42 daisies. Which flower does it have more of?",
+     "The big box has 75 crayons. The small box has 42 crayons. Which has more?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "comparing-app-025",
+  "modeId": "comparing",
+  "itemFamily": "application",
+  "subskill": "symbolSelection",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 50,
+   "b": 50,
+   "op": "?",
+   "answer": "=",
+   "display": {
+    "promptText": "Two teams both have 50 fans. Compare 50 and 50.",
+    "promptOptions": [
+     "Sarah's team has 50 fans. Jake's team has 50 fans. Which team has more fans?",
+     "One jar has 50 marbles. Another jar has 50 marbles. Which has more marbles?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "comparing-app-028",
+  "modeId": "comparing",
+  "itemFamily": "application",
+  "subskill": "benchmarkCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 30,
+   "b": 30,
+   "op": "?",
+   "answer": "=",
+   "display": {
+    "promptText": "Both jars hold 30 jellybeans. Compare 30 and 30.",
+    "promptOptions": [
+     "Tom has 30 stickers. Lisa has 30 stickers. Who has more stickers?",
+     "One bag has 30 cookies. Another bag has 30 cookies. Which has more cookies?"
+    ]
    }
   }
  },
@@ -2046,48 +2142,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-conc-benchmarkCompare-23-002",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 65,
-   "b": 50,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Use 50 as a benchmark: is 65 greater than 50?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-benchmarkCompare-23-003",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 30,
-   "b": 30,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Use 30 as a benchmark: how does 30 compare to 30?"
-   }
-  }
- },
- {
   "itemId": "comparing-conc-distanceCompare-23-001",
   "modeId": "comparing",
   "itemFamily": "conceptual",
@@ -2105,48 +2159,6 @@ export const SEED_ITEMS = [
    "answer": "<",
    "display": {
     "promptText": "On a number line, 18 is closer to 0 than 25. Compare 18 and 25."
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-distanceCompare-23-002",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 75,
-   "b": 42,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "On a number line, 75 is farther from 0 than 42. Compare 75 and 42."
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-distanceCompare-23-003",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 60,
-   "b": 60,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "60 and 60 sit at the same point on a number line. Compare them."
    }
   }
  },
@@ -2172,6 +2184,48 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "comparing-conc-benchmarkCompare-23-002",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "benchmarkCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 65,
+   "b": 50,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "Use 50 as a benchmark: is 65 greater than 50?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-distanceCompare-23-002",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "distanceCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 75,
+   "b": 42,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "On a number line, 75 is farther from 0 than 42. Compare 75 and 42."
+   }
+  }
+ },
+ {
   "itemId": "comparing-conc-symbolSelection-23-002",
   "modeId": "comparing",
   "itemFamily": "conceptual",
@@ -2189,6 +2243,48 @@ export const SEED_ITEMS = [
    "answer": ">",
    "display": {
     "promptText": "Looking at 67 and 32, which is greater?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-benchmarkCompare-23-003",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "benchmarkCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 30,
+   "b": 30,
+   "op": "?",
+   "answer": "=",
+   "display": {
+    "promptText": "Use 30 as a benchmark: how does 30 compare to 30?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-distanceCompare-23-003",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "distanceCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 60,
+   "b": 60,
+   "op": "?",
+   "answer": "=",
+   "display": {
+    "promptText": "60 and 60 sit at the same point on a number line. Compare them."
    }
   }
  },
@@ -2214,48 +2310,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-conc-benchmarkCompare-45-002",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 678,
-   "b": 500,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Use 500 as a benchmark: is 678 greater than 500?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-benchmarkCompare-45-003",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 100,
-   "b": 100,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Use 100 as a benchmark: how does 100 compare to 100?"
-   }
-  }
- },
- {
   "itemId": "comparing-conc-distanceCompare-45-001",
   "modeId": "comparing",
   "itemFamily": "conceptual",
@@ -2273,48 +2327,6 @@ export const SEED_ITEMS = [
    "answer": "<",
    "display": {
     "promptText": "On a number line, 156 is to the left of 412. Compare 156 and 412."
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-distanceCompare-45-002",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 789,
-   "b": 321,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "On a number line, 789 is farther right than 321. Compare 789 and 321."
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-distanceCompare-45-003",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 200,
-   "b": 200,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "200 and 200 sit at the same point on a number line. Compare them."
    }
   }
  },
@@ -2340,6 +2352,48 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "comparing-conc-benchmarkCompare-45-002",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "benchmarkCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 678,
+   "b": 500,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "Use 500 as a benchmark: is 678 greater than 500?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-distanceCompare-45-002",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "distanceCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 789,
+   "b": 321,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "On a number line, 789 is farther right than 321. Compare 789 and 321."
+   }
+  }
+ },
+ {
   "itemId": "comparing-conc-symbolSelection-45-002",
   "modeId": "comparing",
   "itemFamily": "conceptual",
@@ -2357,6 +2411,48 @@ export const SEED_ITEMS = [
    "answer": ">",
    "display": {
     "promptText": "Looking at 891 and 234, which is greater?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-benchmarkCompare-45-003",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "benchmarkCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 100,
+   "b": 100,
+   "op": "?",
+   "answer": "=",
+   "display": {
+    "promptText": "Use 100 as a benchmark: how does 100 compare to 100?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-distanceCompare-45-003",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "distanceCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 200,
+   "b": 200,
+   "op": "?",
+   "answer": "=",
+   "display": {
+    "promptText": "200 and 200 sit at the same point on a number line. Compare them."
    }
   }
  },
@@ -2382,48 +2478,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-conc-benchmarkCompare-K1-002",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": 5,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Use 5 as a benchmark: is 7 greater than 5?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-benchmarkCompare-K1-003",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 10,
-   "b": 10,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Use 10 as a benchmark: how does 10 compare to 10?"
-   }
-  }
- },
- {
   "itemId": "comparing-conc-distanceCompare-K1-001",
   "modeId": "comparing",
   "itemFamily": "conceptual",
@@ -2441,48 +2495,6 @@ export const SEED_ITEMS = [
    "answer": "<",
    "display": {
     "promptText": "On a number line, which is to the left: 2 or 9?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-distanceCompare-K1-002",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": 1,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "On a number line, which is to the right: 8 or 1?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-distanceCompare-K1-003",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 5,
-   "b": 5,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "5 and 5 sit at the same point on a number line. Compare them."
    }
   }
  },
@@ -2508,6 +2520,48 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "comparing-conc-benchmarkCompare-K1-002",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "benchmarkCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 7,
+   "b": 5,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "Use 5 as a benchmark: is 7 greater than 5?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-distanceCompare-K1-002",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "distanceCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": 1,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "On a number line, which is to the right: 8 or 1?"
+   }
+  }
+ },
+ {
   "itemId": "comparing-conc-symbolSelection-K1-002",
   "modeId": "comparing",
   "itemFamily": "conceptual",
@@ -2525,6 +2579,48 @@ export const SEED_ITEMS = [
    "answer": ">",
    "display": {
     "promptText": "Looking at 7 and 4, which symbol shows that 7 is greater?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-benchmarkCompare-K1-003",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "benchmarkCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 10,
+   "b": 10,
+   "op": "?",
+   "answer": "=",
+   "display": {
+    "promptText": "Use 10 as a benchmark: how does 10 compare to 10?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-distanceCompare-K1-003",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "distanceCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 5,
+   "b": 5,
+   "op": "?",
+   "answer": "=",
+   "display": {
+    "promptText": "5 and 5 sit at the same point on a number line. Compare them."
    }
   }
  },
@@ -2550,48 +2646,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-proc-benchmarkCompare-23-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 65,
-   "b": 50,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 65 and 50."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-benchmarkCompare-23-003",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 30,
-   "b": 30,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Compare 30 and 30."
-   }
-  }
- },
- {
   "itemId": "comparing-proc-distanceCompare-23-001",
   "modeId": "comparing",
   "itemFamily": "procedural",
@@ -2609,48 +2663,6 @@ export const SEED_ITEMS = [
    "answer": "<",
    "display": {
     "promptText": "Compare 18 and 25."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-23-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 75,
-   "b": 42,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 75 and 42."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-23-003",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 60,
-   "b": 60,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Compare 60 and 60."
    }
   }
  },
@@ -2676,6 +2688,48 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "comparing-proc-benchmarkCompare-23-002",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 65,
+   "b": 50,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "Compare 65 and 50."
+   }
+  }
+ },
+ {
+  "itemId": "comparing-proc-distanceCompare-23-002",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "distanceCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 75,
+   "b": 42,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "Compare 75 and 42."
+   }
+  }
+ },
+ {
   "itemId": "comparing-proc-symbolSelection-23-002",
   "modeId": "comparing",
   "itemFamily": "procedural",
@@ -2693,6 +2747,48 @@ export const SEED_ITEMS = [
    "answer": ">",
    "display": {
     "promptText": "Compare 67 and 32 with <, >, or =."
+   }
+  }
+ },
+ {
+  "itemId": "comparing-proc-benchmarkCompare-23-003",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 30,
+   "b": 30,
+   "op": "?",
+   "answer": "=",
+   "display": {
+    "promptText": "Compare 30 and 30."
+   }
+  }
+ },
+ {
+  "itemId": "comparing-proc-distanceCompare-23-003",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "distanceCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 60,
+   "b": 60,
+   "op": "?",
+   "answer": "=",
+   "display": {
+    "promptText": "Compare 60 and 60."
    }
   }
  },
@@ -2718,48 +2814,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-proc-benchmarkCompare-45-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 678,
-   "b": 500,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 678 and 500."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-benchmarkCompare-45-003",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 100,
-   "b": 100,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Compare 100 and 100."
-   }
-  }
- },
- {
   "itemId": "comparing-proc-distanceCompare-45-001",
   "modeId": "comparing",
   "itemFamily": "procedural",
@@ -2777,48 +2831,6 @@ export const SEED_ITEMS = [
    "answer": "<",
    "display": {
     "promptText": "Compare 156 and 412."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-45-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 789,
-   "b": 321,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 789 and 321."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-45-003",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 200,
-   "b": 200,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Compare 200 and 200."
    }
   }
  },
@@ -2844,6 +2856,48 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "comparing-proc-benchmarkCompare-45-002",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 678,
+   "b": 500,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "Compare 678 and 500."
+   }
+  }
+ },
+ {
+  "itemId": "comparing-proc-distanceCompare-45-002",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "distanceCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 789,
+   "b": 321,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "Compare 789 and 321."
+   }
+  }
+ },
+ {
   "itemId": "comparing-proc-symbolSelection-45-002",
   "modeId": "comparing",
   "itemFamily": "procedural",
@@ -2861,6 +2915,48 @@ export const SEED_ITEMS = [
    "answer": ">",
    "display": {
     "promptText": "Compare 891 and 234 with <, >, or =."
+   }
+  }
+ },
+ {
+  "itemId": "comparing-proc-benchmarkCompare-45-003",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 100,
+   "b": 100,
+   "op": "?",
+   "answer": "=",
+   "display": {
+    "promptText": "Compare 100 and 100."
+   }
+  }
+ },
+ {
+  "itemId": "comparing-proc-distanceCompare-45-003",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "distanceCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 200,
+   "b": 200,
+   "op": "?",
+   "answer": "=",
+   "display": {
+    "promptText": "Compare 200 and 200."
    }
   }
  },
@@ -2886,48 +2982,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-proc-benchmarkCompare-K1-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": 5,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 7 and 5."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-benchmarkCompare-K1-003",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 10,
-   "b": 10,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Compare 10 and 10."
-   }
-  }
- },
- {
   "itemId": "comparing-proc-distanceCompare-K1-001",
   "modeId": "comparing",
   "itemFamily": "procedural",
@@ -2945,48 +2999,6 @@ export const SEED_ITEMS = [
    "answer": "<",
    "display": {
     "promptText": "Compare 2 and 9."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-K1-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": 1,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 8 and 1."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-K1-003",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 5,
-   "b": 5,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Compare 5 and 5."
    }
   }
  },
@@ -3012,6 +3024,48 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "comparing-proc-benchmarkCompare-K1-002",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 7,
+   "b": 5,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "Compare 7 and 5."
+   }
+  }
+ },
+ {
+  "itemId": "comparing-proc-distanceCompare-K1-002",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "distanceCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": 1,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "Compare 8 and 1."
+   }
+  }
+ },
+ {
   "itemId": "comparing-proc-symbolSelection-K1-002",
   "modeId": "comparing",
   "itemFamily": "procedural",
@@ -3033,6 +3087,48 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "comparing-proc-benchmarkCompare-K1-003",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 10,
+   "b": 10,
+   "op": "?",
+   "answer": "=",
+   "display": {
+    "promptText": "Compare 10 and 10."
+   }
+  }
+ },
+ {
+  "itemId": "comparing-proc-distanceCompare-K1-003",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "distanceCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 5,
+   "b": 5,
+   "op": "?",
+   "answer": "=",
+   "display": {
+    "promptText": "Compare 5 and 5."
+   }
+  }
+ },
+ {
   "itemId": "counting-app-001",
   "modeId": "counting",
   "itemFamily": "application",
@@ -3049,28 +3145,11 @@ export const SEED_ITEMS = [
    "op": "count",
    "answer": 14,
    "display": {
-    "promptText": "There are 14 toy cars lined up on a shelf. How many toy cars are there?"
-   }
-  }
- },
- {
-  "itemId": "counting-app-002",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 20,
-   "b": null,
-   "op": "count",
-   "answer": 20,
-   "display": {
-    "promptText": "A box has 20 crayons inside. How many crayons are in the box?"
+    "promptText": "There are 14 toy cars lined up on a shelf. How many toy cars are there?",
+    "promptOptions": [
+     "Sofia lined up 14 toy cars on a shelf. How many toy cars are on the shelf?",
+     "Sofia has 14 toy cars. How many toy cars does Sofia have?"
+    ]
    }
   }
  },
@@ -3091,28 +3170,10 @@ export const SEED_ITEMS = [
    "op": "count",
    "answer": 27,
    "display": {
-    "promptText": "A jar has 27 marbles. Count to find how many marbles are in the jar."
-   }
-  }
- },
- {
-  "itemId": "counting-app-004",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   9,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 42,
-   "b": null,
-   "op": "count",
-   "answer": 42,
-   "display": {
-    "promptText": "A garden has 42 tulips. How many tulips are in the garden?"
+    "promptText": "A jar has 27 marbles. Count to find how many marbles are in the jar.",
+    "promptOptions": [
+     "Priya has 27 marbles in a jar. How many marbles are in the jar?"
+    ]
    }
   }
  },
@@ -3133,7 +3194,60 @@ export const SEED_ITEMS = [
    "op": "count",
    "answer": 35,
    "display": {
-    "promptText": "A basket holds 35 oranges. How many oranges are in the basket?"
+    "promptText": "A basket holds 35 oranges. How many oranges are in the basket?",
+    "promptOptions": [
+     "Dakota has 35 oranges in a basket. How many oranges are in the basket?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "counting-app-002",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "subitizing",
+  "structureType": "countObjects",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 20,
+   "b": null,
+   "op": "count",
+   "answer": 20,
+   "display": {
+    "promptText": "A box has 20 crayons inside. How many crayons are in the box?",
+    "promptOptions": [
+     "Leo has 20 crayons in a box. How many crayons are in the box?",
+     "Mia looked in a box and found 20 crayons. How many crayons were in the box?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "counting-app-004",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "countOn",
+  "structureType": "countObjects",
+  "levelRange": [
+   9,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 42,
+   "b": null,
+   "op": "count",
+   "answer": 42,
+   "display": {
+    "promptText": "A garden has 42 tulips. How many tulips are in the garden?",
+    "promptOptions": [
+     "Emma has 42 tulips in her garden. How many tulips are in the garden?",
+     "The gardener planted 42 tulips. How many tulips did the gardener plant?"
+    ]
    }
   }
  },
@@ -3154,7 +3268,10 @@ export const SEED_ITEMS = [
    "op": "count",
    "answer": 50,
    "display": {
-    "promptText": "A class collected 50 cans for recycling. How many cans were collected?"
+    "promptText": "A class collected 50 cans for recycling. How many cans were collected?",
+    "promptOptions": [
+     "The class collected 50 cans for recycling. How many cans did the class collect?"
+    ]
    }
   }
  },
@@ -3175,7 +3292,10 @@ export const SEED_ITEMS = [
    "op": "count",
    "answer": 18,
    "display": {
-    "promptText": "A pencil case has 18 pencils. How many pencils are in the case?"
+    "promptText": "A pencil case has 18 pencils. How many pencils are in the case?",
+    "promptOptions": [
+     "Ryan has 18 pencils in his pencil case. How many pencils are in the case?"
+    ]
    }
   }
  },
@@ -3196,7 +3316,10 @@ export const SEED_ITEMS = [
    "op": "count",
    "answer": 31,
    "display": {
-    "promptText": "A row has 31 chairs set up for a play. How many chairs are in the row?"
+    "promptText": "A row has 31 chairs set up for a play. How many chairs are in the row?",
+    "promptOptions": [
+     "The crew set up 31 chairs in a row for the play. How many chairs are in the row?"
+    ]
    }
   }
  },
@@ -3217,49 +3340,11 @@ export const SEED_ITEMS = [
    "op": "count",
    "answer": 4,
    "display": {
-    "promptText": "There are 4 ducks in the pond. How many ducks are there?"
-   }
-  }
- },
- {
-  "itemId": "counting-app-015",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 5,
-   "b": null,
-   "op": "count",
-   "answer": 5,
-   "display": {
-    "promptText": "Mia drew 5 stars on her paper. How many stars did she draw?"
-   }
-  }
- },
- {
-  "itemId": "counting-app-016",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 3,
-   "b": null,
-   "op": "count",
-   "answer": 3,
-   "display": {
-    "promptText": "A small bowl has 3 fish. How many fish are in the bowl?"
+    "promptText": "There are 4 ducks in the pond. How many ducks are there?",
+    "promptOptions": [
+     "Jake saw 4 ducks at the pond. How many ducks did he see?",
+     "Maya counted 4 ducks. How many ducks did she count?"
+    ]
    }
   }
  },
@@ -3285,6 +3370,57 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "counting-app-020",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "cardinality",
+  "structureType": "countObjects",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 10,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "promptText": "Anna lined up 10 small toys on the table. How many toys are in the line?",
+    "promptOptions": [
+     "Anna put 10 toys in a line on the table. How many toys are in the line?",
+     "Anna lined up 10 toys on the table. How many toys did she line up?",
+     "On the table, Anna lined up 10 toys. How many toys did she line up?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "counting-app-015",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "subitizing",
+  "structureType": "countObjects",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 5,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "promptText": "Mia drew 5 stars on her paper. How many stars did she draw?",
+    "promptOptions": [
+     "Mia drew 5 stars. How many stars did she draw?",
+     "On her sheet of paper, Mia drew 5 stars. How many stars did she draw?"
+    ]
+   }
+  }
+ },
+ {
   "itemId": "counting-app-018",
   "modeId": "counting",
   "itemFamily": "application",
@@ -3302,6 +3438,58 @@ export const SEED_ITEMS = [
    "answer": 7,
    "display": {
     "promptText": "Lin had 5 grapes; her brother gave her 2 more. How many grapes does Lin have?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-app-021",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "cardinality",
+  "structureType": "countObjects",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "promptText": "A pencil case holds 8 erasers. How many erasers are in the case?",
+    "promptOptions": [
+     "Sam's pencil case has 8 erasers. How many erasers does it hold?",
+     "A pencil case holds 8 erasers. How many erasers are in the pencil case?",
+     "There are 8 erasers in a pencil case. How many erasers are there?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "counting-app-016",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "subitizing",
+  "structureType": "countObjects",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 3,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "promptText": "A small bowl has 3 fish. How many fish are in the bowl?",
+    "promptOptions": [
+     "A bowl has 3 fish in it. How many fish are in the bowl?",
+     "Kim's fish bowl has 3 fish. How many fish does it have?",
+     "There are 3 fish in the bowl. How many fish do you see?"
+    ]
    }
   }
  },
@@ -3327,48 +3515,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-app-020",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 10,
-   "b": null,
-   "op": "count",
-   "answer": 10,
-   "display": {
-    "promptText": "Anna lined up 10 small toys on the table. How many toys are in the line?"
-   }
-  }
- },
- {
-  "itemId": "counting-app-021",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": null,
-   "op": "count",
-   "answer": 8,
-   "display": {
-    "promptText": "A pencil case holds 8 erasers. How many erasers are in the case?"
-   }
-  }
- },
- {
   "itemId": "counting-app-023",
   "modeId": "counting",
   "itemFamily": "application",
@@ -3385,49 +3531,12 @@ export const SEED_ITEMS = [
    "op": "count",
    "answer": 18,
    "display": {
-    "promptText": "A page has 18 stickers on it. How many stickers are on the page?"
-   }
-  }
- },
- {
-  "itemId": "counting-app-024",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 22,
-   "b": null,
-   "op": "count",
-   "answer": 22,
-   "display": {
-    "promptText": "A team has 22 players. How many players are on the team?"
-   }
-  }
- },
- {
-  "itemId": "counting-app-025",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 25,
-   "b": null,
-   "op": "count",
-   "answer": 25,
-   "display": {
-    "promptText": "Sam saw 25 ants on the ground. How many ants did Sam see?"
+    "promptText": "A page has 18 stickers on it. How many stickers are on the page?",
+    "promptOptions": [
+     "Mia put 18 stickers on a page. How many stickers did she put on the page?",
+     "A page has 18 stickers stuck on it. How many stickers are there?",
+     "There are 18 stickers on a page. How many stickers are on the page?"
+    ]
    }
   }
  },
@@ -3453,6 +3562,58 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "counting-app-029",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "cardinality",
+  "structureType": "countObjects",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 28,
+   "b": null,
+   "op": "count",
+   "answer": 28,
+   "display": {
+    "promptText": "A planter holds 28 tulips. How many tulips are in the planter?",
+    "promptOptions": [
+     "Lily planted 28 tulips in a pot. How many tulips are in the pot?",
+     "There are 28 tulips blooming in a garden. How many tulips are there in all?",
+     "A planter holds 28 pretty tulips. How many tulips are in the planter?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "counting-app-024",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "subitizing",
+  "structureType": "countObjects",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 22,
+   "b": null,
+   "op": "count",
+   "answer": 22,
+   "display": {
+    "promptText": "A team has 22 players. How many players are on the team?",
+    "promptOptions": [
+     "A soccer team has 22 players. How many players are on the team?",
+     "There are 22 players on a team. How many players are there?",
+     "The team has 22 players on it. How many players are there?"
+    ]
+   }
+  }
+ },
+ {
   "itemId": "counting-app-027",
   "modeId": "counting",
   "itemFamily": "application",
@@ -3470,6 +3631,58 @@ export const SEED_ITEMS = [
    "answer": 35,
    "display": {
     "promptText": "A bin had 30 blocks; Pat added 5 more. How many blocks are in the bin now?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-app-030",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "cardinality",
+  "structureType": "countObjects",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 32,
+   "b": null,
+   "op": "count",
+   "answer": 32,
+   "display": {
+    "promptText": "A classroom has 32 desks. How many desks are in the classroom?",
+    "promptOptions": [
+     "Mrs. Lee's classroom has 32 desks. How many desks are there?",
+     "There are 32 desks in a classroom. How many desks are there in all?",
+     "A classroom has 32 desks in it. How many desks are in the classroom?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "counting-app-025",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "subitizing",
+  "structureType": "countObjects",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 25,
+   "b": null,
+   "op": "count",
+   "answer": 25,
+   "display": {
+    "promptText": "Sam saw 25 ants on the ground. How many ants did Sam see?",
+    "promptOptions": [
+     "Sam watched ants marching on the ground. He counted 25 ants. How many ants did Sam count?",
+     "In the garden, Sam saw 25 ants. How many ants did Sam see in all?",
+     "Sam found 25 ants hiding under a rock. How many ants did he find?"
+    ]
    }
   }
  },
@@ -3495,48 +3708,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-app-029",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 28,
-   "b": null,
-   "op": "count",
-   "answer": 28,
-   "display": {
-    "promptText": "A planter holds 28 tulips. How many tulips are in the planter?"
-   }
-  }
- },
- {
-  "itemId": "counting-app-030",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 32,
-   "b": null,
-   "op": "count",
-   "answer": 32,
-   "display": {
-    "promptText": "A classroom has 32 desks. How many desks are in the classroom?"
-   }
-  }
- },
- {
   "itemId": "counting-conc-cardinality-23-001",
   "modeId": "counting",
   "itemFamily": "conceptual",
@@ -3554,48 +3725,6 @@ export const SEED_ITEMS = [
    "answer": 28,
    "display": {
     "promptText": "After counting all 28 items in a set, what is the cardinality?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-cardinality-23-002",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 32,
-   "b": null,
-   "op": "count",
-   "answer": 32,
-   "display": {
-    "promptText": "After counting all 32 items in a set, what is the cardinality?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-cardinality-23-003",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 36,
-   "b": null,
-   "op": "count",
-   "answer": 36,
-   "display": {
-    "promptText": "After counting all 36 items in a set, what is the cardinality?"
    }
   }
  },
@@ -3621,48 +3750,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-conc-countOn-23-002",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 35,
-   "b": null,
-   "op": "count",
-   "answer": 35,
-   "display": {
-    "promptText": "Use count-on from 30 by 5s. After one step, what is the count?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-countOn-23-003",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 40,
-   "b": null,
-   "op": "count",
-   "answer": 40,
-   "display": {
-    "promptText": "Use count-on from 35 by 5s. After one step, what is the count?"
-   }
-  }
- },
- {
   "itemId": "counting-conc-subitizing-23-001",
   "modeId": "counting",
   "itemFamily": "conceptual",
@@ -3680,6 +3767,48 @@ export const SEED_ITEMS = [
    "answer": 18,
    "display": {
     "promptText": "A medium set of 18 dots. What is the count?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-conc-cardinality-23-002",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "cardinality",
+  "structureType": "countObjects",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 32,
+   "b": null,
+   "op": "count",
+   "answer": 32,
+   "display": {
+    "promptText": "After counting all 32 items in a set, what is the cardinality?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-conc-countOn-23-002",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "countOn",
+  "structureType": "countObjects",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 35,
+   "b": null,
+   "op": "count",
+   "answer": 35,
+   "display": {
+    "promptText": "Use count-on from 30 by 5s. After one step, what is the count?"
    }
   }
  },
@@ -3705,6 +3834,48 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "counting-conc-cardinality-23-003",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "cardinality",
+  "structureType": "countObjects",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 36,
+   "b": null,
+   "op": "count",
+   "answer": 36,
+   "display": {
+    "promptText": "After counting all 36 items in a set, what is the cardinality?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-conc-countOn-23-003",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "countOn",
+  "structureType": "countObjects",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 40,
+   "b": null,
+   "op": "count",
+   "answer": 40,
+   "display": {
+    "promptText": "Use count-on from 35 by 5s. After one step, what is the count?"
+   }
+  }
+ },
+ {
   "itemId": "counting-conc-cardinality-45-001",
   "modeId": "counting",
   "itemFamily": "conceptual",
@@ -3722,48 +3893,6 @@ export const SEED_ITEMS = [
    "answer": 50,
    "display": {
     "promptText": "After counting all 50 items in a set, what is the cardinality?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-cardinality-45-002",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 75,
-   "b": null,
-   "op": "count",
-   "answer": 75,
-   "display": {
-    "promptText": "After counting all 75 items in a set, what is the cardinality?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-cardinality-45-003",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 100,
-   "b": null,
-   "op": "count",
-   "answer": 100,
-   "display": {
-    "promptText": "After counting all 100 items in a set, what is the cardinality?"
    }
   }
  },
@@ -3789,48 +3918,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-conc-countOn-45-002",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 80,
-   "b": null,
-   "op": "count",
-   "answer": 80,
-   "display": {
-    "promptText": "Use count-on from 75 by 5s. After one step, what is the count?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-countOn-45-003",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 100,
-   "b": null,
-   "op": "count",
-   "answer": 100,
-   "display": {
-    "promptText": "Use count-on from 90 by 10s. After one step, what is the count?"
-   }
-  }
- },
- {
   "itemId": "counting-conc-subitizing-45-001",
   "modeId": "counting",
   "itemFamily": "conceptual",
@@ -3848,6 +3935,48 @@ export const SEED_ITEMS = [
    "answer": 50,
    "display": {
     "promptText": "A large set of 50 items. The count is?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-conc-cardinality-45-002",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "cardinality",
+  "structureType": "countObjects",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 75,
+   "b": null,
+   "op": "count",
+   "answer": 75,
+   "display": {
+    "promptText": "After counting all 75 items in a set, what is the cardinality?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-conc-countOn-45-002",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "countOn",
+  "structureType": "countObjects",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 80,
+   "b": null,
+   "op": "count",
+   "answer": 80,
+   "display": {
+    "promptText": "Use count-on from 75 by 5s. After one step, what is the count?"
    }
   }
  },
@@ -3873,6 +4002,48 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "counting-conc-cardinality-45-003",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "cardinality",
+  "structureType": "countObjects",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 100,
+   "b": null,
+   "op": "count",
+   "answer": 100,
+   "display": {
+    "promptText": "After counting all 100 items in a set, what is the cardinality?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-conc-countOn-45-003",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "countOn",
+  "structureType": "countObjects",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 100,
+   "b": null,
+   "op": "count",
+   "answer": 100,
+   "display": {
+    "promptText": "Use count-on from 90 by 10s. After one step, what is the count?"
+   }
+  }
+ },
+ {
   "itemId": "counting-conc-cardinality-K1-001",
   "modeId": "counting",
   "itemFamily": "conceptual",
@@ -3890,48 +4061,6 @@ export const SEED_ITEMS = [
    "answer": 10,
    "display": {
     "promptText": "After counting all items in a set of 10, what is the cardinality?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-cardinality-K1-002",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": null,
-   "op": "count",
-   "answer": 8,
-   "display": {
-    "promptText": "After counting all items in a set of 8, what is the cardinality?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-cardinality-K1-003",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 9,
-   "b": null,
-   "op": "count",
-   "answer": 9,
-   "display": {
-    "promptText": "After counting all items in a set of 9, what is the cardinality?"
    }
   }
  },
@@ -3957,48 +4086,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-conc-countOn-K1-002",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": null,
-   "op": "count",
-   "answer": 7,
-   "display": {
-    "promptText": "Use count-on from 5 to find 5 + 2."
-   }
-  }
- },
- {
-  "itemId": "counting-conc-countOn-K1-003",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": null,
-   "op": "count",
-   "answer": 8,
-   "display": {
-    "promptText": "Use count-on from 6 to find 6 + 2."
-   }
-  }
- },
- {
   "itemId": "counting-conc-subitizing-K1-001",
   "modeId": "counting",
   "itemFamily": "conceptual",
@@ -4016,6 +4103,48 @@ export const SEED_ITEMS = [
    "answer": 4,
    "display": {
     "promptText": "A small set of 4 dots. Subitize the count."
+   }
+  }
+ },
+ {
+  "itemId": "counting-conc-cardinality-K1-002",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "cardinality",
+  "structureType": "countObjects",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "promptText": "After counting all items in a set of 8, what is the cardinality?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-conc-countOn-K1-002",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "countOn",
+  "structureType": "countObjects",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 7,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "promptText": "Use count-on from 5 to find 5 + 2."
    }
   }
  },
@@ -4041,6 +4170,48 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "counting-conc-cardinality-K1-003",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "cardinality",
+  "structureType": "countObjects",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 9,
+   "b": null,
+   "op": "count",
+   "answer": 9,
+   "display": {
+    "promptText": "After counting all items in a set of 9, what is the cardinality?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-conc-countOn-K1-003",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "countOn",
+  "structureType": "countObjects",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "promptText": "Use count-on from 6 to find 6 + 2."
+   }
+  }
+ },
+ {
   "itemId": "counting-proc-cardinality-23-001",
   "modeId": "counting",
   "itemFamily": "procedural",
@@ -4058,48 +4229,6 @@ export const SEED_ITEMS = [
    "answer": 28,
    "display": {
     "promptText": "Count 28 items. The cardinality is?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-cardinality-23-002",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 32,
-   "b": null,
-   "op": "count",
-   "answer": 32,
-   "display": {
-    "promptText": "Count 32 items. The cardinality is?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-cardinality-23-003",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 36,
-   "b": null,
-   "op": "count",
-   "answer": 36,
-   "display": {
-    "promptText": "Count 36 items. The cardinality is?"
    }
   }
  },
@@ -4125,48 +4254,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-proc-countOn-23-002",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 35,
-   "b": null,
-   "op": "count",
-   "answer": 35,
-   "display": {
-    "promptText": "Start at 30 and count on 5. What number do you reach?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-countOn-23-003",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 40,
-   "b": null,
-   "op": "count",
-   "answer": 40,
-   "display": {
-    "promptText": "Start at 35 and count on 5. What number do you reach?"
-   }
-  }
- },
- {
   "itemId": "counting-proc-subitizing-23-001",
   "modeId": "counting",
   "itemFamily": "procedural",
@@ -4184,6 +4271,48 @@ export const SEED_ITEMS = [
    "answer": 18,
    "display": {
     "promptText": "Count from 1 to 18. What is the count?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-proc-cardinality-23-002",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "cardinality",
+  "structureType": "countObjects",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 32,
+   "b": null,
+   "op": "count",
+   "answer": 32,
+   "display": {
+    "promptText": "Count 32 items. The cardinality is?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-proc-countOn-23-002",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "countOn",
+  "structureType": "countObjects",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 35,
+   "b": null,
+   "op": "count",
+   "answer": 35,
+   "display": {
+    "promptText": "Start at 30 and count on 5. What number do you reach?"
    }
   }
  },
@@ -4209,6 +4338,48 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "counting-proc-cardinality-23-003",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "cardinality",
+  "structureType": "countObjects",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 36,
+   "b": null,
+   "op": "count",
+   "answer": 36,
+   "display": {
+    "promptText": "Count 36 items. The cardinality is?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-proc-countOn-23-003",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "countOn",
+  "structureType": "countObjects",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 40,
+   "b": null,
+   "op": "count",
+   "answer": 40,
+   "display": {
+    "promptText": "Start at 35 and count on 5. What number do you reach?"
+   }
+  }
+ },
+ {
   "itemId": "counting-proc-cardinality-45-001",
   "modeId": "counting",
   "itemFamily": "procedural",
@@ -4226,48 +4397,6 @@ export const SEED_ITEMS = [
    "answer": 50,
    "display": {
     "promptText": "Count 50 items. The cardinality is?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-cardinality-45-002",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 75,
-   "b": null,
-   "op": "count",
-   "answer": 75,
-   "display": {
-    "promptText": "Count 75 items. The cardinality is?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-cardinality-45-003",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 100,
-   "b": null,
-   "op": "count",
-   "answer": 100,
-   "display": {
-    "promptText": "Count 100 items. The cardinality is?"
    }
   }
  },
@@ -4293,48 +4422,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-proc-countOn-45-002",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 80,
-   "b": null,
-   "op": "count",
-   "answer": 80,
-   "display": {
-    "promptText": "Start at 75 and count on 5. What number do you reach?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-countOn-45-003",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 100,
-   "b": null,
-   "op": "count",
-   "answer": 100,
-   "display": {
-    "promptText": "Start at 90 and count on 10. What number do you reach?"
-   }
-  }
- },
- {
   "itemId": "counting-proc-subitizing-45-001",
   "modeId": "counting",
   "itemFamily": "procedural",
@@ -4352,6 +4439,48 @@ export const SEED_ITEMS = [
    "answer": 50,
    "display": {
     "promptText": "Count from 1 to 50. What is the count?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-proc-cardinality-45-002",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "cardinality",
+  "structureType": "countObjects",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 75,
+   "b": null,
+   "op": "count",
+   "answer": 75,
+   "display": {
+    "promptText": "Count 75 items. The cardinality is?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-proc-countOn-45-002",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "countOn",
+  "structureType": "countObjects",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 80,
+   "b": null,
+   "op": "count",
+   "answer": 80,
+   "display": {
+    "promptText": "Start at 75 and count on 5. What number do you reach?"
    }
   }
  },
@@ -4377,6 +4506,48 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "counting-proc-cardinality-45-003",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "cardinality",
+  "structureType": "countObjects",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 100,
+   "b": null,
+   "op": "count",
+   "answer": 100,
+   "display": {
+    "promptText": "Count 100 items. The cardinality is?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-proc-countOn-45-003",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "countOn",
+  "structureType": "countObjects",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 100,
+   "b": null,
+   "op": "count",
+   "answer": 100,
+   "display": {
+    "promptText": "Start at 90 and count on 10. What number do you reach?"
+   }
+  }
+ },
+ {
   "itemId": "counting-proc-cardinality-K1-001",
   "modeId": "counting",
   "itemFamily": "procedural",
@@ -4394,48 +4565,6 @@ export const SEED_ITEMS = [
    "answer": 10,
    "display": {
     "promptText": "Count 10 items. The cardinality is?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-cardinality-K1-002",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": null,
-   "op": "count",
-   "answer": 8,
-   "display": {
-    "promptText": "Count 8 items. The cardinality is?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-cardinality-K1-003",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 9,
-   "b": null,
-   "op": "count",
-   "answer": 9,
-   "display": {
-    "promptText": "Count 9 items. The cardinality is?"
    }
   }
  },
@@ -4461,48 +4590,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-proc-countOn-K1-002",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": null,
-   "op": "count",
-   "answer": 7,
-   "display": {
-    "promptText": "Start at 5 and count on 2. What number do you reach?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-countOn-K1-003",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": null,
-   "op": "count",
-   "answer": 8,
-   "display": {
-    "promptText": "Start at 6 and count on 2. What number do you reach?"
-   }
-  }
- },
- {
   "itemId": "counting-proc-subitizing-K1-001",
   "modeId": "counting",
   "itemFamily": "procedural",
@@ -4520,6 +4607,48 @@ export const SEED_ITEMS = [
    "answer": 4,
    "display": {
     "promptText": "Count: 1, 2, 3, 4. What is the count?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-proc-cardinality-K1-002",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "cardinality",
+  "structureType": "countObjects",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "promptText": "Count 8 items. The cardinality is?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-proc-countOn-K1-002",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "countOn",
+  "structureType": "countObjects",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 7,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "promptText": "Start at 5 and count on 2. What number do you reach?"
    }
   }
  },
@@ -4545,6 +4674,48 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "counting-proc-cardinality-K1-003",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "cardinality",
+  "structureType": "countObjects",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 9,
+   "b": null,
+   "op": "count",
+   "answer": 9,
+   "display": {
+    "promptText": "Count 9 items. The cardinality is?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-proc-countOn-K1-003",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "countOn",
+  "structureType": "countObjects",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "promptText": "Start at 6 and count on 2. What number do you reach?"
+   }
+  }
+ },
+ {
   "itemId": "division-app-001",
   "modeId": "division",
   "itemFamily": "application",
@@ -4561,49 +4732,12 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 6,
    "display": {
-    "promptText": "36 apples are shared equally among 6 baskets. How many apples go in each basket?"
-   }
-  }
- },
- {
-  "itemId": "division-app-002",
-  "modeId": "division",
-  "itemFamily": "application",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 24,
-   "b": 4,
-   "op": "÷",
-   "answer": 6,
-   "display": {
-    "promptText": "24 pencils are split equally into 4 groups. How many pencils are in each group?"
-   }
-  }
- },
- {
-  "itemId": "division-app-003",
-  "modeId": "division",
-  "itemFamily": "application",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   8,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 45,
-   "b": 5,
-   "op": "÷",
-   "answer": 9,
-   "display": {
-    "promptText": "A teacher hands out 45 markers equally to 5 tables. How many markers does each table get?"
+    "promptText": "36 apples are shared equally among 6 baskets. How many apples go in each basket?",
+    "promptOptions": [
+     "Jamal has 36 apples. He puts them equally into 6 baskets. How many apples go in each basket?",
+     "Emma has 36 apples. She shares them equally among 6 friends. How many apples does each friend get?",
+     "There are 36 apples to divide equally into 6 groups. How many apples will each group have?"
+    ]
    }
   }
  },
@@ -4624,49 +4758,12 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 7,
    "display": {
-    "promptText": "56 stickers are packed equally into 8 packets. How many stickers are in each packet?"
-   }
-  }
- },
- {
-  "itemId": "division-app-005",
-  "modeId": "division",
-  "itemFamily": "application",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 42,
-   "b": 7,
-   "op": "÷",
-   "answer": 6,
-   "display": {
-    "promptText": "42 grapes are placed equally into 7 small bowls. How many grapes are in each bowl?"
-   }
-  }
- },
- {
-  "itemId": "division-app-006",
-  "modeId": "division",
-  "itemFamily": "application",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   9,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 81,
-   "b": 9,
-   "op": "÷",
-   "answer": 9,
-   "display": {
-    "promptText": "81 chairs are arranged in 9 equal rows. How many chairs are in each row?"
+    "promptText": "56 stickers are packed equally into 8 packets. How many stickers are in each packet?",
+    "promptOptions": [
+     "Jake has 56 stickers. He shares them equally among 8 friends. How many stickers does each friend get?",
+     "Lily has 56 stickers. She puts them equally in 8 envelopes. How many stickers are in each envelope?",
+     "There are 56 stickers to divide equally into 8 packets. How many stickers will each packet have?"
+    ]
    }
   }
  },
@@ -4687,7 +4784,64 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 7,
    "display": {
-    "promptText": "A team has 63 cones to share equally among 9 practice groups. How many cones does each group get?"
+    "promptText": "A team has 63 cones to share equally among 9 practice groups. How many cones does each group get?",
+    "promptOptions": [
+     "A coach had 63 cones. He divided them equally among 9 practice groups. How many cones did each group get?",
+     "A team had 63 cones. They shared them equally among 9 practice groups. How many cones did each group get?",
+     "The team collected 63 cones for practice. Then they shared them equally among 9 groups. How many cones did each group get?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "division-app-002",
+  "modeId": "division",
+  "itemFamily": "application",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 24,
+   "b": 4,
+   "op": "÷",
+   "answer": 6,
+   "display": {
+    "promptText": "24 pencils are split equally into 4 groups. How many pencils are in each group?",
+    "promptOptions": [
+     "Anna has 24 pencils. She divides them equally among 4 friends. How many pencils does each friend get?",
+     "Marco has 24 pencils. He puts them equally in 4 boxes. How many pencils are in each box?",
+     "There are 24 pencils. A teacher splits them equally into 4 groups. How many pencils are in each group?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "division-app-005",
+  "modeId": "division",
+  "itemFamily": "application",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 42,
+   "b": 7,
+   "op": "÷",
+   "answer": 6,
+   "display": {
+    "promptText": "42 grapes are placed equally into 7 small bowls. How many grapes are in each bowl?",
+    "promptOptions": [
+     "Mom has 42 grapes. She puts them equally in 7 small bowls. How many grapes are in each bowl?",
+     "There are 42 grapes to share equally among 7 friends. How many grapes does each friend get?",
+     "A farmer has 42 grapes. She divides them equally into 7 baskets. How many grapes are in each basket?"
+    ]
    }
   }
  },
@@ -4708,7 +4862,64 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 8,
    "display": {
-    "promptText": "48 cookies are packed 6 per box. How many boxes are filled?"
+    "promptText": "48 cookies are packed 6 per box. How many boxes are filled?",
+    "promptOptions": [
+     "A baker had 48 cookies. She packed them 6 to a box. How many boxes did she fill?",
+     "Mom had 48 cookies. She packed 6 into each box. How many boxes did she fill?",
+     "A store had 48 cookies. The workers packed 6 in each box. How many boxes did they fill?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "division-app-003",
+  "modeId": "division",
+  "itemFamily": "application",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   8,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 45,
+   "b": 5,
+   "op": "÷",
+   "answer": 9,
+   "display": {
+    "promptText": "A teacher hands out 45 markers equally to 5 tables. How many markers does each table get?",
+    "promptOptions": [
+     "Mrs. Chen has 45 markers. She gives them equally to 5 tables. How many markers does each table get?",
+     "There are 45 markers to divide equally among 5 groups. How many markers does each group get?",
+     "A teacher has 45 markers. She puts them equally in 5 boxes. How many markers are in each box?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "division-app-006",
+  "modeId": "division",
+  "itemFamily": "application",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   9,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 81,
+   "b": 9,
+   "op": "÷",
+   "answer": 9,
+   "display": {
+    "promptText": "81 chairs are arranged in 9 equal rows. How many chairs are in each row?",
+    "promptOptions": [
+     "A school has 81 chairs. They arrange them equally in 9 rows. How many chairs are in each row?",
+     "There are 81 chairs to divide equally into 9 rows. How many chairs go in each row?",
+     "The gym staff has 81 chairs. They put them equally in 9 rows. How many chairs are in each row?"
+    ]
    }
   }
  },
@@ -4729,49 +4940,12 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 3,
    "display": {
-    "promptText": "6 cookies are shared equally between 2 kids. How many cookies for each kid?"
-   }
-  }
- },
- {
-  "itemId": "division-app-016",
-  "modeId": "division",
-  "itemFamily": "application",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": 2,
-   "op": "÷",
-   "answer": 4,
-   "display": {
-    "promptText": "8 marbles are split equally into 2 jars. How many marbles in each jar?"
-   }
-  }
- },
- {
-  "itemId": "division-app-017",
-  "modeId": "division",
-  "itemFamily": "application",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": 2,
-   "op": "÷",
-   "answer": 2,
-   "display": {
-    "promptText": "4 stickers are given equally to 2 friends. How many stickers does each friend get?"
+    "promptText": "6 cookies are shared equally between 2 kids. How many cookies for each kid?",
+    "promptOptions": [
+     "Mom has 6 cookies. She gives them equally to 2 kids. How many cookies does each kid get?",
+     "There are 6 cookies to share equally between 2 friends. How many cookies does each friend get?",
+     "Grandma made 6 cookies for 2 kids to share equally. How many cookies does each kid get?"
+    ]
    }
   }
  },
@@ -4792,49 +4966,12 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 2,
    "display": {
-    "promptText": "6 small marbles are arranged into 3 equal groups. How many marbles per group?"
-   }
-  }
- },
- {
-  "itemId": "division-app-019",
-  "modeId": "division",
-  "itemFamily": "application",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 9,
-   "b": 3,
-   "op": "÷",
-   "answer": 3,
-   "display": {
-    "promptText": "9 gold stars are placed in 3 rows equally. How many stars per row?"
-   }
-  }
- },
- {
-  "itemId": "division-app-020",
-  "modeId": "division",
-  "itemFamily": "application",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 10,
-   "b": 5,
-   "op": "÷",
-   "answer": 2,
-   "display": {
-    "promptText": "10 fish are placed evenly across 5 tanks. How many fish per tank?"
+    "promptText": "6 small marbles are arranged into 3 equal groups. How many marbles per group?",
+    "promptOptions": [
+     "Ruby has 6 marbles. She arranges them into 3 equal groups. How many marbles per group?",
+     "Tom arranged 6 marbles into 3 equal groups. How many marbles are in each group?",
+     "Alex has 6 marbles to divide into 3 equal groups. How many marbles per group?"
+    ]
    }
   }
  },
@@ -4855,7 +4992,64 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 2,
    "display": {
-    "promptText": "8 stickers are shared equally by 4 kids. How many stickers per kid?"
+    "promptText": "8 stickers are shared equally by 4 kids. How many stickers per kid?",
+    "promptOptions": [
+     "Mom has 8 stickers to give equally to 4 kids. How many stickers does each kid get?",
+     "The teacher has 8 stickers. She shares them equally with 4 kids. How many stickers does each kid get?",
+     "4 kids share 8 stickers equally. How many stickers does each kid get?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "division-app-016",
+  "modeId": "division",
+  "itemFamily": "application",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": 2,
+   "op": "÷",
+   "answer": 4,
+   "display": {
+    "promptText": "8 marbles are split equally into 2 jars. How many marbles in each jar?",
+    "promptOptions": [
+     "Ty has 8 marbles. He puts them equally in 2 jars. How many marbles go in each jar?",
+     "There are 8 marbles to divide equally between 2 jars. How many marbles are in each jar?",
+     "A toy store has 8 marbles. They split them equally for 2 kids. How many marbles does each kid get?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "division-app-019",
+  "modeId": "division",
+  "itemFamily": "application",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 9,
+   "b": 3,
+   "op": "÷",
+   "answer": 3,
+   "display": {
+    "promptText": "9 gold stars are placed in 3 rows equally. How many stars per row?",
+    "promptOptions": [
+     "Luna placed 9 gold stars in 3 equal rows. How many stars per row?",
+     "Kim arranged 9 gold stars into 3 equal rows. How many stars per row?",
+     "Sara has 9 gold stars. She puts them into 3 equal rows. How many stars per row?"
+    ]
    }
   }
  },
@@ -4876,7 +5070,63 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 5,
    "display": {
-    "promptText": "10 cubes are arranged into 2 equal stacks. How many cubes per stack?"
+    "promptText": "10 cubes are arranged into 2 equal stacks. How many cubes per stack?",
+    "promptOptions": [
+     "Ben has 10 cubes. He stacks them equally into 2 stacks. How many cubes per stack?",
+     "Emma arranged 10 cubes into 2 equal stacks. How many cubes per stack?",
+     "Lily stacked 10 cubes equally into 2 stacks. How many cubes are in each stack?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "division-app-017",
+  "modeId": "division",
+  "itemFamily": "application",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 4,
+   "b": 2,
+   "op": "÷",
+   "answer": 2,
+   "display": {
+    "promptText": "4 stickers are given equally to 2 friends. How many stickers does each friend get?",
+    "promptOptions": [
+     "Luke has 4 stickers. He gives them equally to 2 friends. How many stickers does each friend get?",
+     "Maria has 4 stickers to share equally between 2 friends. How many stickers does each friend get?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "division-app-020",
+  "modeId": "division",
+  "itemFamily": "application",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 10,
+   "b": 5,
+   "op": "÷",
+   "answer": 2,
+   "display": {
+    "promptText": "10 fish are placed evenly across 5 tanks. How many fish per tank?",
+    "promptOptions": [
+     "Jon has 10 fish. He puts them evenly into 5 tanks. How many fish per tank?",
+     "Maya placed 10 fish equally into 5 tanks. How many fish per tank?",
+     "Sam has 10 fish to put equally into 5 tanks. How many fish go in each tank?"
+    ]
    }
   }
  },
@@ -4897,49 +5147,12 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 3,
    "display": {
-    "promptText": "12 books are split equally onto 4 shelves. How many books per shelf?"
-   }
-  }
- },
- {
-  "itemId": "division-app-025",
-  "modeId": "division",
-  "itemFamily": "application",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 15,
-   "b": 3,
-   "op": "÷",
-   "answer": 5,
-   "display": {
-    "promptText": "15 cards are dealt equally to 3 players. How many cards does each player get?"
-   }
-  }
- },
- {
-  "itemId": "division-app-026",
-  "modeId": "division",
-  "itemFamily": "application",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 18,
-   "b": 6,
-   "op": "÷",
-   "answer": 3,
-   "display": {
-    "promptText": "18 cookies are placed on 6 plates equally. How many cookies per plate?"
+    "promptText": "12 books are split equally onto 4 shelves. How many books per shelf?",
+    "promptOptions": [
+     "Dad has 12 books. He puts them equally on 4 shelves. How many books per shelf?",
+     "The librarian arranged 12 books equally on 4 shelves. How many books per shelf?",
+     "Maya sorted 12 books equally onto 4 shelves. How many books per shelf?"
+    ]
    }
   }
  },
@@ -4960,49 +5173,12 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 6,
    "display": {
-    "promptText": "24 students are split into groups of 4. How many groups are there?"
-   }
-  }
- },
- {
-  "itemId": "division-app-028",
-  "modeId": "division",
-  "itemFamily": "application",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 35,
-   "b": 5,
-   "op": "÷",
-   "answer": 7,
-   "display": {
-    "promptText": "35 stickers are shared equally by 5 kids. How many stickers per kid?"
-   }
-  }
- },
- {
-  "itemId": "division-app-029",
-  "modeId": "division",
-  "itemFamily": "application",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 36,
-   "b": 6,
-   "op": "÷",
-   "answer": 6,
-   "display": {
-    "promptText": "36 marbles are sorted equally into 6 jars. How many marbles per jar?"
+    "promptText": "24 students are split into groups of 4. How many groups are there?",
+    "promptOptions": [
+     "The teacher has 24 students. She puts them into groups of 4. How many groups are there?",
+     "The PE teacher has 24 students. She divides them into groups of 4. How many groups are there?",
+     "Mr. Johnson arranged 24 students into groups of 4. How many groups did he make?"
+    ]
    }
   }
  },
@@ -5023,7 +5199,64 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 4,
    "display": {
-    "promptText": "20 books are placed on 5 shelves equally. How many books per shelf?"
+    "promptText": "20 books are placed on 5 shelves equally. How many books per shelf?",
+    "promptOptions": [
+     "Tom has 20 books. He puts them equally on 5 shelves. How many books are on each shelf?",
+     "Mrs. Lee had 20 books. She arranged them equally on 5 shelves. How many books went on each shelf?",
+     "The library put 20 books equally on 5 shelves. How many books does each shelf have?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "division-app-025",
+  "modeId": "division",
+  "itemFamily": "application",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 15,
+   "b": 3,
+   "op": "÷",
+   "answer": 5,
+   "display": {
+    "promptText": "15 cards are dealt equally to 3 players. How many cards does each player get?",
+    "promptOptions": [
+     "The dealer has 15 cards. She deals them equally to 3 players. How many cards does each player get?",
+     "Tom dealt 15 cards equally to 3 players. How many cards does each player get?",
+     "3 players share 15 cards equally. How many cards does each player get?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "division-app-028",
+  "modeId": "division",
+  "itemFamily": "application",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 35,
+   "b": 5,
+   "op": "÷",
+   "answer": 7,
+   "display": {
+    "promptText": "35 stickers are shared equally by 5 kids. How many stickers per kid?",
+    "promptOptions": [
+     "Ms. Chen has 35 stickers. She shares them equally with 5 kids. How many stickers does each kid get?",
+     "The teacher has 35 stickers. She shares them equally with 5 kids. How many stickers does each kid get?",
+     "5 kids share 35 stickers equally. How many stickers does each kid get?"
+    ]
    }
   }
  },
@@ -5044,7 +5277,64 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 3,
    "display": {
-    "promptText": "24 children are split into 8 small teams equally. How many per team?"
+    "promptText": "24 children are split into 8 small teams equally. How many per team?",
+    "promptOptions": [
+     "The coach has 24 children. He puts them equally into 8 teams. How many children are on each team?",
+     "A teacher has 24 students. She splits them equally into 8 groups. How many students are in each group?",
+     "The gym class had 24 kids. They put them equally into 8 teams. How many kids are on each team?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "division-app-026",
+  "modeId": "division",
+  "itemFamily": "application",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 18,
+   "b": 6,
+   "op": "÷",
+   "answer": 3,
+   "display": {
+    "promptText": "18 cookies are placed on 6 plates equally. How many cookies per plate?",
+    "promptOptions": [
+     "Grandma has 18 cookies. She arranges them equally on 6 plates. How many cookies per plate?",
+     "The baker has 18 cookies. She places them equally on 6 plates. How many cookies per plate?",
+     "Maya put 18 cookies equally on 6 plates. How many cookies per plate?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "division-app-029",
+  "modeId": "division",
+  "itemFamily": "application",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 36,
+   "b": 6,
+   "op": "÷",
+   "answer": 6,
+   "display": {
+    "promptText": "36 marbles are sorted equally into 6 jars. How many marbles per jar?",
+    "promptOptions": [
+     "Kai has 36 marbles. He puts them equally into 6 jars. How many marbles are in each jar?",
+     "Maria had 36 marbles. She sorted them equally into 6 jars. How many marbles went in each jar?",
+     "The toy shop had 36 marbles. They put them equally into 6 bins. How many marbles are in each bin?"
+    ]
    }
   }
  },
@@ -5070,48 +5360,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "division-conc-inverseFact-23-002",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 35,
-   "b": 5,
-   "op": "÷",
-   "answer": 7,
-   "display": {
-    "promptText": "35 ÷ 5 = ? Think: 5 times what makes 35?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-inverseFact-23-003",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 36,
-   "b": 6,
-   "op": "÷",
-   "answer": 6,
-   "display": {
-    "promptText": "Since 6 × 6 = 36, what is 36 ÷ 6?"
-   }
-  }
- },
- {
   "itemId": "division-conc-partitioning-23-001",
   "modeId": "division",
   "itemFamily": "conceptual",
@@ -5129,48 +5377,6 @@ export const SEED_ITEMS = [
    "answer": 3,
    "display": {
     "promptText": "Split 12 into 4 equal groups. Each group has?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-partitioning-23-002",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 15,
-   "b": 3,
-   "op": "÷",
-   "answer": 5,
-   "display": {
-    "promptText": "Share 15 fairly among 3 friends. Each friend gets?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-partitioning-23-003",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 18,
-   "b": 6,
-   "op": "÷",
-   "answer": 3,
-   "display": {
-    "promptText": "Divide 18 evenly into 6 piles. Each pile is?"
    }
   }
  },
@@ -5196,6 +5402,48 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "division-conc-inverseFact-23-002",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 35,
+   "b": 5,
+   "op": "÷",
+   "answer": 7,
+   "display": {
+    "promptText": "35 ÷ 5 = ? Think: 5 times what makes 35?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-partitioning-23-002",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 15,
+   "b": 3,
+   "op": "÷",
+   "answer": 5,
+   "display": {
+    "promptText": "Share 15 fairly among 3 friends. Each friend gets?"
+   }
+  }
+ },
+ {
   "itemId": "division-conc-unknownQuotient-23-002",
   "modeId": "division",
   "itemFamily": "conceptual",
@@ -5213,6 +5461,48 @@ export const SEED_ITEMS = [
    "answer": 3,
    "display": {
     "promptText": "What number is 24 ÷ 8?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-inverseFact-23-003",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 36,
+   "b": 6,
+   "op": "÷",
+   "answer": 6,
+   "display": {
+    "promptText": "Since 6 × 6 = 36, what is 36 ÷ 6?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-partitioning-23-003",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 18,
+   "b": 6,
+   "op": "÷",
+   "answer": 3,
+   "display": {
+    "promptText": "Divide 18 evenly into 6 piles. Each pile is?"
    }
   }
  },
@@ -5238,48 +5528,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "division-conc-inverseFact-45-002",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 64,
-   "b": 8,
-   "op": "÷",
-   "answer": 8,
-   "display": {
-    "promptText": "64 ÷ 8 = ? Think: 8 times what makes 64?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-inverseFact-45-003",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 49,
-   "b": 7,
-   "op": "÷",
-   "answer": 7,
-   "display": {
-    "promptText": "Since 7 × 7 = 49, what is 49 ÷ 7?"
-   }
-  }
- },
- {
   "itemId": "division-conc-partitioning-45-001",
   "modeId": "division",
   "itemFamily": "conceptual",
@@ -5297,48 +5545,6 @@ export const SEED_ITEMS = [
    "answer": 8,
    "display": {
     "promptText": "Split 48 into 6 equal groups. What is the size of each group?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-partitioning-45-002",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 56,
-   "b": 7,
-   "op": "÷",
-   "answer": 8,
-   "display": {
-    "promptText": "Distribute 56 evenly across 7 boxes. How many per box?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-partitioning-45-003",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 81,
-   "b": 9,
-   "op": "÷",
-   "answer": 9,
-   "display": {
-    "promptText": "Share 81 fairly among 9 friends. Each friend gets?"
    }
   }
  },
@@ -5364,6 +5570,48 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "division-conc-inverseFact-45-002",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 64,
+   "b": 8,
+   "op": "÷",
+   "answer": 8,
+   "display": {
+    "promptText": "64 ÷ 8 = ? Think: 8 times what makes 64?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-partitioning-45-002",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 56,
+   "b": 7,
+   "op": "÷",
+   "answer": 8,
+   "display": {
+    "promptText": "Distribute 56 evenly across 7 boxes. How many per box?"
+   }
+  }
+ },
+ {
   "itemId": "division-conc-unknownQuotient-45-002",
   "modeId": "division",
   "itemFamily": "conceptual",
@@ -5381,6 +5629,48 @@ export const SEED_ITEMS = [
    "answer": 25,
    "display": {
     "promptText": "What number is 100 ÷ 4?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-inverseFact-45-003",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 49,
+   "b": 7,
+   "op": "÷",
+   "answer": 7,
+   "display": {
+    "promptText": "Since 7 × 7 = 49, what is 49 ÷ 7?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-partitioning-45-003",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 81,
+   "b": 9,
+   "op": "÷",
+   "answer": 9,
+   "display": {
+    "promptText": "Share 81 fairly among 9 friends. Each friend gets?"
    }
   }
  },
@@ -5406,48 +5696,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "division-conc-inverseFact-K1-002",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 9,
-   "b": 3,
-   "op": "÷",
-   "answer": 3,
-   "display": {
-    "promptText": "9 ÷ 3 = ? Think: 3 times what makes 9?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-inverseFact-K1-003",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 10,
-   "b": 5,
-   "op": "÷",
-   "answer": 2,
-   "display": {
-    "promptText": "Since 5 × 2 = 10, what is 10 ÷ 5?"
-   }
-  }
- },
- {
   "itemId": "division-conc-partitioning-K1-001",
   "modeId": "division",
   "itemFamily": "conceptual",
@@ -5465,48 +5713,6 @@ export const SEED_ITEMS = [
    "answer": 3,
    "display": {
     "promptText": "Share 6 fairly among 2: how many for each?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-partitioning-K1-002",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": 2,
-   "op": "÷",
-   "answer": 4,
-   "display": {
-    "promptText": "How many counters in each group when 8 counters are split into 2 equal groups?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-partitioning-K1-003",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": 2,
-   "op": "÷",
-   "answer": 2,
-   "display": {
-    "promptText": "Divide 4 into 2 equal parts. Each part is?"
    }
   }
  },
@@ -5532,6 +5738,48 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "division-conc-inverseFact-K1-002",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 9,
+   "b": 3,
+   "op": "÷",
+   "answer": 3,
+   "display": {
+    "promptText": "9 ÷ 3 = ? Think: 3 times what makes 9?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-partitioning-K1-002",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": 2,
+   "op": "÷",
+   "answer": 4,
+   "display": {
+    "promptText": "How many counters in each group when 8 counters are split into 2 equal groups?"
+   }
+  }
+ },
+ {
   "itemId": "division-conc-unknownQuotient-K1-002",
   "modeId": "division",
   "itemFamily": "conceptual",
@@ -5549,6 +5797,48 @@ export const SEED_ITEMS = [
    "answer": 5,
    "display": {
     "promptText": "What number is 10 ÷ 2?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-inverseFact-K1-003",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 10,
+   "b": 5,
+   "op": "÷",
+   "answer": 2,
+   "display": {
+    "promptText": "Since 5 × 2 = 10, what is 10 ÷ 5?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-partitioning-K1-003",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 4,
+   "b": 2,
+   "op": "÷",
+   "answer": 2,
+   "display": {
+    "promptText": "Divide 4 into 2 equal parts. Each part is?"
    }
   }
  },
@@ -5574,48 +5864,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "division-proc-inverseFact-23-002",
-  "modeId": "division",
-  "itemFamily": "procedural",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 35,
-   "b": 5,
-   "op": "÷",
-   "answer": 7,
-   "display": {
-    "promptText": "35 ÷ 5 = ?"
-   }
-  }
- },
- {
-  "itemId": "division-proc-inverseFact-23-003",
-  "modeId": "division",
-  "itemFamily": "procedural",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 36,
-   "b": 6,
-   "op": "÷",
-   "answer": 6,
-   "display": {
-    "promptText": "36 ÷ 6 = ?"
-   }
-  }
- },
- {
   "itemId": "division-proc-partitioning-23-001",
   "modeId": "division",
   "itemFamily": "procedural",
@@ -5633,48 +5881,6 @@ export const SEED_ITEMS = [
    "answer": 3,
    "display": {
     "promptText": "12 ÷ 4 = ?"
-   }
-  }
- },
- {
-  "itemId": "division-proc-partitioning-23-002",
-  "modeId": "division",
-  "itemFamily": "procedural",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 15,
-   "b": 3,
-   "op": "÷",
-   "answer": 5,
-   "display": {
-    "promptText": "15 ÷ 3 = ?"
-   }
-  }
- },
- {
-  "itemId": "division-proc-partitioning-23-003",
-  "modeId": "division",
-  "itemFamily": "procedural",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 18,
-   "b": 6,
-   "op": "÷",
-   "answer": 3,
-   "display": {
-    "promptText": "18 ÷ 6 = ?"
    }
   }
  },
@@ -5700,6 +5906,48 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "division-proc-inverseFact-23-002",
+  "modeId": "division",
+  "itemFamily": "procedural",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 35,
+   "b": 5,
+   "op": "÷",
+   "answer": 7,
+   "display": {
+    "promptText": "35 ÷ 5 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "division-proc-partitioning-23-002",
+  "modeId": "division",
+  "itemFamily": "procedural",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 15,
+   "b": 3,
+   "op": "÷",
+   "answer": 5,
+   "display": {
+    "promptText": "15 ÷ 3 = ?"
+   }
+  }
+ },
+ {
   "itemId": "division-proc-unknownQuotient-23-002",
   "modeId": "division",
   "itemFamily": "procedural",
@@ -5717,6 +5965,48 @@ export const SEED_ITEMS = [
    "answer": 3,
    "display": {
     "promptText": "24 ÷ 8 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "division-proc-inverseFact-23-003",
+  "modeId": "division",
+  "itemFamily": "procedural",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 36,
+   "b": 6,
+   "op": "÷",
+   "answer": 6,
+   "display": {
+    "promptText": "36 ÷ 6 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "division-proc-partitioning-23-003",
+  "modeId": "division",
+  "itemFamily": "procedural",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 18,
+   "b": 6,
+   "op": "÷",
+   "answer": 3,
+   "display": {
+    "promptText": "18 ÷ 6 = ?"
    }
   }
  },
@@ -5742,48 +6032,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "division-proc-inverseFact-45-002",
-  "modeId": "division",
-  "itemFamily": "procedural",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 64,
-   "b": 8,
-   "op": "÷",
-   "answer": 8,
-   "display": {
-    "promptText": "64 ÷ 8 = ?"
-   }
-  }
- },
- {
-  "itemId": "division-proc-inverseFact-45-003",
-  "modeId": "division",
-  "itemFamily": "procedural",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 49,
-   "b": 7,
-   "op": "÷",
-   "answer": 7,
-   "display": {
-    "promptText": "49 ÷ 7 = ?"
-   }
-  }
- },
- {
   "itemId": "division-proc-partitioning-45-001",
   "modeId": "division",
   "itemFamily": "procedural",
@@ -5801,48 +6049,6 @@ export const SEED_ITEMS = [
    "answer": 8,
    "display": {
     "promptText": "48 ÷ 6 = ?"
-   }
-  }
- },
- {
-  "itemId": "division-proc-partitioning-45-002",
-  "modeId": "division",
-  "itemFamily": "procedural",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 56,
-   "b": 7,
-   "op": "÷",
-   "answer": 8,
-   "display": {
-    "promptText": "56 ÷ 7 = ?"
-   }
-  }
- },
- {
-  "itemId": "division-proc-partitioning-45-003",
-  "modeId": "division",
-  "itemFamily": "procedural",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 81,
-   "b": 9,
-   "op": "÷",
-   "answer": 9,
-   "display": {
-    "promptText": "81 ÷ 9 = ?"
    }
   }
  },
@@ -5868,6 +6074,48 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "division-proc-inverseFact-45-002",
+  "modeId": "division",
+  "itemFamily": "procedural",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 64,
+   "b": 8,
+   "op": "÷",
+   "answer": 8,
+   "display": {
+    "promptText": "64 ÷ 8 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "division-proc-partitioning-45-002",
+  "modeId": "division",
+  "itemFamily": "procedural",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 56,
+   "b": 7,
+   "op": "÷",
+   "answer": 8,
+   "display": {
+    "promptText": "56 ÷ 7 = ?"
+   }
+  }
+ },
+ {
   "itemId": "division-proc-unknownQuotient-45-002",
   "modeId": "division",
   "itemFamily": "procedural",
@@ -5885,6 +6133,48 @@ export const SEED_ITEMS = [
    "answer": 25,
    "display": {
     "promptText": "100 ÷ 4 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "division-proc-inverseFact-45-003",
+  "modeId": "division",
+  "itemFamily": "procedural",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 49,
+   "b": 7,
+   "op": "÷",
+   "answer": 7,
+   "display": {
+    "promptText": "49 ÷ 7 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "division-proc-partitioning-45-003",
+  "modeId": "division",
+  "itemFamily": "procedural",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 81,
+   "b": 9,
+   "op": "÷",
+   "answer": 9,
+   "display": {
+    "promptText": "81 ÷ 9 = ?"
    }
   }
  },
@@ -5910,48 +6200,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "division-proc-inverseFact-K1-002",
-  "modeId": "division",
-  "itemFamily": "procedural",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 9,
-   "b": 3,
-   "op": "÷",
-   "answer": 3,
-   "display": {
-    "promptText": "9 ÷ 3 = ?"
-   }
-  }
- },
- {
-  "itemId": "division-proc-inverseFact-K1-003",
-  "modeId": "division",
-  "itemFamily": "procedural",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 10,
-   "b": 5,
-   "op": "÷",
-   "answer": 2,
-   "display": {
-    "promptText": "10 ÷ 5 = ?"
-   }
-  }
- },
- {
   "itemId": "division-proc-partitioning-K1-001",
   "modeId": "division",
   "itemFamily": "procedural",
@@ -5969,48 +6217,6 @@ export const SEED_ITEMS = [
    "answer": 3,
    "display": {
     "promptText": "6 ÷ 2 = ?"
-   }
-  }
- },
- {
-  "itemId": "division-proc-partitioning-K1-002",
-  "modeId": "division",
-  "itemFamily": "procedural",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": 2,
-   "op": "÷",
-   "answer": 4,
-   "display": {
-    "promptText": "8 ÷ 2 = ?"
-   }
-  }
- },
- {
-  "itemId": "division-proc-partitioning-K1-003",
-  "modeId": "division",
-  "itemFamily": "procedural",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": 2,
-   "op": "÷",
-   "answer": 2,
-   "display": {
-    "promptText": "4 ÷ 2 = ?"
    }
   }
  },
@@ -6036,6 +6242,48 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "division-proc-inverseFact-K1-002",
+  "modeId": "division",
+  "itemFamily": "procedural",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 9,
+   "b": 3,
+   "op": "÷",
+   "answer": 3,
+   "display": {
+    "promptText": "9 ÷ 3 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "division-proc-partitioning-K1-002",
+  "modeId": "division",
+  "itemFamily": "procedural",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": 2,
+   "op": "÷",
+   "answer": 4,
+   "display": {
+    "promptText": "8 ÷ 2 = ?"
+   }
+  }
+ },
+ {
   "itemId": "division-proc-unknownQuotient-K1-002",
   "modeId": "division",
   "itemFamily": "procedural",
@@ -6057,6 +6305,48 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "division-proc-inverseFact-K1-003",
+  "modeId": "division",
+  "itemFamily": "procedural",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 10,
+   "b": 5,
+   "op": "÷",
+   "answer": 2,
+   "display": {
+    "promptText": "10 ÷ 5 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "division-proc-partitioning-K1-003",
+  "modeId": "division",
+  "itemFamily": "procedural",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 4,
+   "b": 2,
+   "op": "÷",
+   "answer": 2,
+   "display": {
+    "promptText": "4 ÷ 2 = ?"
+   }
+  }
+ },
+ {
   "itemId": "multiplication-app-001",
   "modeId": "multiplication",
   "itemFamily": "application",
@@ -6073,12 +6363,69 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 24,
    "display": {
-    "promptText": "There are 6 tables with 4 cups on each table. How many cups are there in all?"
+    "promptText": "There are 6 tables with 4 cups on each table. How many cups are there in all?",
+    "promptOptions": [
+     "Emma set up 6 tables for the party. She put 4 cups on each table. How many cups did Emma put?",
+     "Kai arranged 6 tables in the cafeteria. Each table had 4 cups. How many cups did Kai arrange?",
+     "There are 6 tables at the picnic. Each table has 4 cups. How many cups are there?"
+    ]
    }
   }
  },
  {
-  "itemId": "multiplication-app-115",
+  "itemId": "multiplication-app-004",
+  "modeId": "multiplication",
+  "itemFamily": "application",
+  "subskill": "arrayReasoning",
+  "structureType": "arrayTotalUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 7,
+   "b": 5,
+   "op": "×",
+   "answer": 35,
+   "display": {
+    "promptText": "A garden has 7 rows of plants with 5 plants in each row. How many plants are there?",
+    "promptOptions": [
+     "Sofia planted a garden in 7 rows with 5 flowers in each row. How many flowers did Sofia plant in all?",
+     "A farmer grows corn in 7 rows with 5 cornstalks in each row. How many cornstalks does he grow?",
+     "The garden has 7 rows of tomatoes with 5 plants in each row. How many tomato plants total?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-app-007",
+  "modeId": "multiplication",
+  "itemFamily": "application",
+  "subskill": "factFluency",
+  "structureType": "equalGroupsTotalUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": 7,
+   "op": "×",
+   "answer": 56,
+   "display": {
+    "promptText": "Each box holds 8 crayons. If there are 7 boxes, how many crayons are there?",
+    "promptOptions": [
+     "Zara has 7 boxes of crayons. Each box holds 8 crayons. How many crayons does Zara have?",
+     "Sofia arranged 7 boxes on the shelf. She put 8 crayons in each box. How many crayons did Sofia arrange?",
+     "There are 7 boxes in the closet. Each box has 8 crayons in it. How many crayons are there?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-app-121",
   "modeId": "multiplication",
   "itemFamily": "application",
   "subskill": "equalGroups",
@@ -6090,16 +6437,20 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 20,
-   "b": 4,
+   "b": 7,
    "op": "×",
-   "answer": 80,
+   "answer": 140,
    "display": {
-    "promptText": "20 bags each hold 4 apples. How many apples in total?"
+    "promptText": "20 racks each hold 7 jerseys. How many jerseys in total?",
+    "promptOptions": [
+     "Lily organized 20 racks. She put 7 jerseys on each rack. How many jerseys in total?",
+     "There are 20 racks. Each rack holds 7 jerseys. How many jerseys in total?"
+    ]
    }
   }
  },
  {
-  "itemId": "multiplication-app-134",
+  "itemId": "multiplication-app-135",
   "modeId": "multiplication",
   "itemFamily": "application",
   "subskill": "arrayReasoning",
@@ -6110,104 +6461,23 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 25,
-   "b": 5,
-   "op": "×",
-   "answer": 125,
-   "display": {
-    "promptText": "Windows are in 25 rows of 5. How many windows?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-app-210",
-  "modeId": "multiplication",
-  "itemFamily": "application",
-  "subskill": "equalGroups",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 12,
-   "b": 6,
-   "op": "×",
-   "answer": 72,
-   "display": {
-    "promptText": "12 rows each have 6 seats. How many seats in total?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-app-229",
-  "modeId": "multiplication",
-  "itemFamily": "application",
-  "subskill": "factFluency",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 12,
-   "b": 6,
-   "op": "×",
-   "answer": 72,
-   "display": {
-    "promptText": "12 groups each have 6 members. How many members in total?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-app-325",
-  "modeId": "multiplication",
-  "itemFamily": "application",
-  "subskill": "equalGroups",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 18,
-   "b": 5,
-   "op": "×",
-   "answer": 90,
-   "display": {
-    "promptText": "18 trays each hold 5 cakes. How many cakes in all?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-app-344",
-  "modeId": "multiplication",
-  "itemFamily": "application",
-  "subskill": "factFluency",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
    "a": 11,
-   "b": 10,
+   "b": 11,
    "op": "×",
-   "answer": 110,
+   "answer": 121,
    "display": {
-    "promptText": "11 buses each hold 10 kids. How many kids in all?"
+    "promptText": "Tiles are in 11 rows of 11. How many tiles?",
+    "promptOptions": [
+     "Maya covered the wall with tiles in 11 rows of 11. How many tiles did she use?"
+    ]
    }
   }
  },
  {
-  "itemId": "multiplication-app-438",
+  "itemId": "multiplication-app-149",
   "modeId": "multiplication",
   "itemFamily": "application",
-  "subskill": "equalGroups",
+  "subskill": "factFluency",
   "structureType": "equalGroupsTotalUnknown",
   "levelRange": [
    7,
@@ -6215,12 +6485,68 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 18,
-   "b": 8,
+   "a": 16,
+   "b": 9,
    "op": "×",
    "answer": 144,
    "display": {
-    "promptText": "18 tents each sleep 8 campers. How many campers in all?"
+    "promptText": "16 teams each have 9 players. How many players in total?",
+    "promptOptions": [
+     "There are 16 soccer teams in the league. Each team has 9 players. How many players are there?",
+     "The bakery has 16 trays. Each tray has 9 muffins. How many muffins did they bake?",
+     "Marcus has 16 video games. Each game has 9 levels. How many levels does he have?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-app-323",
+  "modeId": "multiplication",
+  "itemFamily": "application",
+  "subskill": "equalGroups",
+  "structureType": "equalGroupsTotalUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 16,
+   "b": 6,
+   "op": "×",
+   "answer": 96,
+   "display": {
+    "promptText": "16 pallets each hold 6 sacks. How many sacks in all?",
+    "promptOptions": [
+     "A farmer has 16 pallets of grain. Each pallet holds 6 sacks. How many sacks in all?",
+     "There are 16 pallets. Each pallet holds 6 sacks of grain. How many sacks in all?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-app-334",
+  "modeId": "multiplication",
+  "itemFamily": "application",
+  "subskill": "arrayReasoning",
+  "structureType": "arrayTotalUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 14,
+   "b": 8,
+   "op": "×",
+   "answer": 112,
+   "display": {
+    "promptText": "Lockers are in 14 rows of 8 in a hallway. How many lockers?",
+    "promptOptions": [
+     "Someone arranged 14 rows of lockers in the hallway with 8 lockers in each row. How many lockers are there?",
+     "The hallway has 14 rows of lockers with 8 in each row. How many lockers line the hallway?",
+     "Lockers fill the hallway in 14 rows of 8. How many lockers fill the hallway?"
+    ]
    }
   }
  },
@@ -6241,33 +6567,43 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 6,
    "display": {
-    "promptText": "There are 2 baskets with 3 apples in each basket. How many apples in all?"
+    "promptText": "There are 2 baskets with 3 apples in each basket. How many apples in all?",
+    "promptOptions": [
+     "Rosa picked 2 baskets of apples. Each basket has 3 apples. How many apples did Rosa pick?",
+     "Lee has 2 baskets with apples. He put 3 apples in each basket. How many apples does Lee have?",
+     "There are 2 baskets on the counter. Each basket has 3 apples in it. How many apples are there?"
+    ]
    }
   }
  },
  {
-  "itemId": "multiplication-app-043",
+  "itemId": "multiplication-app-018",
   "modeId": "multiplication",
   "itemFamily": "application",
-  "subskill": "equalGroups",
-  "structureType": "equalGroupsTotalUnknown",
+  "subskill": "arrayReasoning",
+  "structureType": "arrayTotalUnknown",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 5,
-   "b": 4,
+   "a": 2,
+   "b": 2,
    "op": "×",
-   "answer": 20,
+   "answer": 4,
    "display": {
-    "promptText": "5 tables each have 4 stickers. How many stickers in all?"
+    "promptText": "Buttons sit in 2 rows of 2 buttons. How many buttons are there?",
+    "promptOptions": [
+     "The shirt has buttons in 2 rows with 2 buttons in each row. How many buttons in all?",
+     "Buttons are sewn in 2 rows with 2 buttons in each row. How many buttons total?",
+     "A card shows 2 rows of 2 buttons. How many buttons altogether?"
+    ]
    }
   }
  },
  {
-  "itemId": "multiplication-app-062",
+  "itemId": "multiplication-app-021",
   "modeId": "multiplication",
   "itemFamily": "application",
   "subskill": "factFluency",
@@ -6278,80 +6614,21 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 4,
-   "b": 4,
+   "a": 1,
+   "b": 5,
    "op": "×",
-   "answer": 16,
+   "answer": 5,
    "display": {
-    "promptText": "4 carts each carry 4 bags. How many bags in total?"
+    "promptText": "A box has 5 marbles. There is 1 box. How many marbles in total?",
+    "promptOptions": [
+     "Jake opened 1 box and found 5 marbles inside. How many marbles did he find?",
+     "Rosa took 1 box that held 5 marbles. How many marbles did Rosa get?"
+    ]
    }
   }
  },
  {
-  "itemId": "multiplication-app-160",
-  "modeId": "multiplication",
-  "itemFamily": "application",
-  "subskill": "arrayReasoning",
-  "structureType": "arrayTotalUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": 3,
-   "op": "×",
-   "answer": 12,
-   "display": {
-    "promptText": "Strawberry plants are in 4 rows of 3. How many plants?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-app-245",
-  "modeId": "multiplication",
-  "itemFamily": "application",
-  "subskill": "equalGroups",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": 2,
-   "op": "×",
-   "answer": 8,
-   "display": {
-    "promptText": "Ben has 4 cages with 2 gerbils in each. How many gerbils in all?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-app-264",
-  "modeId": "multiplication",
-  "itemFamily": "application",
-  "subskill": "arrayReasoning",
-  "structureType": "arrayTotalUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 5,
-   "b": 4,
-   "op": "×",
-   "answer": 20,
-   "display": {
-    "promptText": "Coins are lined in 5 rows of 4. How many coins?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-app-361",
+  "itemId": "multiplication-app-151",
   "modeId": "multiplication",
   "itemFamily": "application",
   "subskill": "equalGroups",
@@ -6367,12 +6644,93 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 9,
    "display": {
-    "promptText": "Joss has 3 boxes with 3 cars in each. How many cars in all?"
+    "promptText": "3 trees each have 3 apples. How many apples in total?",
+    "promptOptions": [
+     "The park has 3 trees. Each tree has 3 apples on it. How many apples are there?",
+     "Maya has 3 plates of cookies. Each plate has 3 cookies. How many cookies does she have?",
+     "There are 3 vases in the house. Each vase has 3 flowers. How many flowers are there?"
+    ]
    }
   }
  },
  {
-  "itemId": "multiplication-app-380",
+  "itemId": "multiplication-app-159",
+  "modeId": "multiplication",
+  "itemFamily": "application",
+  "subskill": "arrayReasoning",
+  "structureType": "arrayTotalUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 3,
+   "b": 4,
+   "op": "×",
+   "answer": 12,
+   "display": {
+    "promptText": "Seedlings are in 3 rows of 4. How many seedlings?",
+    "promptOptions": [
+     "Luna planted seedlings in 3 rows with 4 in each row. How many seedlings did she plant?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-app-167",
+  "modeId": "multiplication",
+  "itemFamily": "application",
+  "subskill": "factFluency",
+  "structureType": "equalGroupsTotalUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 2,
+   "b": 5,
+   "op": "×",
+   "answer": 10,
+   "display": {
+    "promptText": "2 sea stars each have 5 arms. How many arms in total?",
+    "promptOptions": [
+     "Maya found 2 sea stars. Each one had 5 arms. How many arms in total?",
+     "There are 2 sea stars in the tank. Each has 5 arms. How many arms altogether?",
+     "Luna counted 2 sea stars. Each had 5 arms. How many arms in total?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-app-250",
+  "modeId": "multiplication",
+  "itemFamily": "application",
+  "subskill": "equalGroups",
+  "structureType": "equalGroupsTotalUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 2,
+   "b": 4,
+   "op": "×",
+   "answer": 8,
+   "display": {
+    "promptText": "2 turtles each have 4 legs. How many legs in all?",
+    "promptOptions": [
+     "Tasha has 2 pet turtles. Each turtle has 4 legs. How many legs do they have in all?",
+     "At the zoo, Maya saw 2 turtles. Each one has 4 legs. How many turtle legs did she see?",
+     "There are 2 turtles. Each turtle has 4 legs. How many legs in all?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-app-262",
   "modeId": "multiplication",
   "itemFamily": "application",
   "subskill": "arrayReasoning",
@@ -6388,7 +6746,12 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 10,
    "display": {
-    "promptText": "Buttons form 2 rows of 5 on a coat. How many buttons?"
+    "promptText": "Biscuits are in 2 rows of 5 in a tin. How many biscuits?",
+    "promptOptions": [
+     "Maya put biscuits in a tin in 2 rows. Each row had 5 biscuits. How many biscuits did she put in the tin?",
+     "Biscuits fill a tin in 2 rows of 5. How many biscuits are in the tin?",
+     "There are 2 rows of biscuits in a tin. Each row has 5 biscuits. How many biscuits in total?"
+    ]
    }
   }
  },
@@ -6409,33 +6772,42 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 12,
    "display": {
-    "promptText": "4 plates each hold 3 cookies. How many cookies are there in all?"
+    "promptText": "4 plates each hold 3 cookies. How many cookies are there in all?",
+    "promptOptions": [
+     "Mom put 3 cookies on each of 4 plates. How many cookies did Mom put out in all?",
+     "Kyle set 4 plates on the table. He put 3 cookies on each plate. How many cookies in all?"
+    ]
    }
   }
  },
  {
-  "itemId": "multiplication-app-081",
+  "itemId": "multiplication-app-027",
   "modeId": "multiplication",
   "itemFamily": "application",
-  "subskill": "equalGroups",
-  "structureType": "equalGroupsTotalUnknown",
+  "subskill": "arrayReasoning",
+  "structureType": "arrayTotalUnknown",
   "levelRange": [
    4,
    6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 6,
-   "b": 5,
+   "a": 4,
+   "b": 4,
    "op": "×",
-   "answer": 30,
+   "answer": 16,
    "display": {
-    "promptText": "6 vans each carry 5 kids. How many kids in total?"
+    "promptText": "Stickers are placed in 4 rows of 4 stickers. How many stickers in total?",
+    "promptOptions": [
+     "A poster has 4 rows of stickers with 4 stickers in each row. How many stickers total?",
+     "The page shows 4 rows with 4 stickers per row. How many stickers in all?",
+     "Stickers are placed in 4 rows with 4 stickers in every row. How many stickers altogether?"
+    ]
    }
   }
  },
  {
-  "itemId": "multiplication-app-100",
+  "itemId": "multiplication-app-030",
   "modeId": "multiplication",
   "itemFamily": "application",
   "subskill": "factFluency",
@@ -6446,12 +6818,42 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 7,
-   "b": 7,
+   "a": 5,
+   "b": 5,
    "op": "×",
-   "answer": 49,
+   "answer": 25,
    "display": {
-    "promptText": "7 nests each hold 7 chicks. How many chicks in total?"
+    "promptText": "5 students each earned 5 gold stars. How many stars in total?",
+    "promptOptions": [
+     "Ms. Chen gave 5 gold stars to each of 5 students. How many stars did she give out?",
+     "Five kids earned 5 gold stars each in Ms. Chen's class. How many stars did they earn?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-app-175",
+  "modeId": "multiplication",
+  "itemFamily": "application",
+  "subskill": "equalGroups",
+  "structureType": "equalGroupsTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 7,
+   "b": 6,
+   "op": "×",
+   "answer": 42,
+   "display": {
+    "promptText": "7 aquariums each have 6 fish. How many fish in total?",
+    "promptOptions": [
+     "Luna counted 7 aquariums. Each one had 6 fish. How many fish in total?",
+     "There are 7 aquariums at the pet store. Each has 6 fish. How many fish altogether?",
+     "The shop has 7 aquariums. Each holds 6 fish. How many fish in total?"
+    ]
    }
   }
  },
@@ -6472,12 +6874,15 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 42,
    "display": {
-    "promptText": "Postcards are in 7 rows of 6. How many postcards?"
+    "promptText": "Postcards are in 7 rows of 6. How many postcards?",
+    "promptOptions": [
+     "Mr. Lee arranged postcards in 7 rows of 6. How many postcards did he have?"
+    ]
    }
   }
  },
  {
-  "itemId": "multiplication-app-202",
+  "itemId": "multiplication-app-195",
   "modeId": "multiplication",
   "itemFamily": "application",
   "subskill": "factFluency",
@@ -6488,59 +6893,21 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 6,
-   "b": 5,
+   "a": 3,
+   "b": 7,
    "op": "×",
-   "answer": 30,
+   "answer": 21,
    "display": {
-    "promptText": "6 crates each hold 5 pumpkins. How many pumpkins in total?"
+    "promptText": "3 bookshelves each hold 7 novels. How many novels in total?",
+    "promptOptions": [
+     "There are 3 bookshelves in the library. Each shelf has 7 novels. How many novels in total?",
+     "The librarian fills 3 shelves. Each shelf holds 7 novels. How many novels altogether?"
+    ]
    }
   }
  },
  {
-  "itemId": "multiplication-app-292",
-  "modeId": "multiplication",
-  "itemFamily": "application",
-  "subskill": "arrayReasoning",
-  "structureType": "arrayTotalUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": 6,
-   "op": "×",
-   "answer": 42,
-   "display": {
-    "promptText": "Kites are hung in 7 rows of 6 at a fair. How many kites?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-app-311",
-  "modeId": "multiplication",
-  "itemFamily": "application",
-  "subskill": "factFluency",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": 9,
-   "op": "×",
-   "answer": 63,
-   "display": {
-    "promptText": "7 game dice each have 9 possible sums per roll pair... simpler: 7 teams each have 9 members. How many members in all?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-app-414",
+  "itemId": "multiplication-app-288",
   "modeId": "multiplication",
   "itemFamily": "application",
   "subskill": "equalGroups",
@@ -6551,12 +6918,42 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 8,
-   "b": 9,
+   "a": 5,
+   "b": 8,
    "op": "×",
-   "answer": 72,
+   "answer": 40,
    "display": {
-    "promptText": "8 library shelves each hold 9 books. How many books in all?"
+    "promptText": "5 gardens each have 8 bushes. How many bushes in all?",
+    "promptOptions": [
+     "Rosa planted 5 gardens. Each garden has 8 bushes. How many bushes did she plant in all?",
+     "There are 5 gardens in the neighborhood. Each garden has 8 bushes. How many bushes are there in all?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-app-297",
+  "modeId": "multiplication",
+  "itemFamily": "application",
+  "subskill": "arrayReasoning",
+  "structureType": "arrayTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 9,
+   "b": 7,
+   "op": "×",
+   "answer": 63,
+   "display": {
+    "promptText": "Pencils are lined in 9 rows of 7 in a box. How many pencils?",
+    "promptOptions": [
+     "The teacher put pencils in a box in 9 rows with 7 in each row. How many pencils did she put in the box?",
+     "Josh organized 9 rows of pencils with 7 pencils per row. How many pencils did Josh organize?",
+     "On the desk sat 9 rows of pencils with 7 pencils in each row. How many pencils in total?"
+    ]
    }
   }
  },
@@ -6582,11 +6979,95 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-conc-arrayReasoning-23-020",
+  "itemId": "multiplication-conc-equalGroups-23-001",
+  "modeId": "multiplication",
+  "itemFamily": "conceptual",
+  "subskill": "equalGroups",
+  "structureType": "equalGroupsTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 5,
+   "b": 4,
+   "op": "×",
+   "answer": 20,
+   "display": {
+    "promptText": "5 × 4 means 5 groups of 4. What is the product?"
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-conc-factFluency-23-001",
+  "modeId": "multiplication",
+  "itemFamily": "conceptual",
+  "subskill": "factFluency",
+  "structureType": "equalGroupsTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 5,
+   "b": 6,
+   "op": "×",
+   "answer": 30,
+   "display": {
+    "promptText": "If 6 × 5 = 30, what is 5 × 6?"
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-conc-arrayReasoning-23-018",
   "modeId": "multiplication",
   "itemFamily": "conceptual",
   "subskill": "arrayReasoning",
   "structureType": "arrayTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 6,
+   "b": 4,
+   "op": "×",
+   "answer": 24,
+   "display": {
+    "promptText": "A 6 by 4 array has how many squares?"
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-conc-equalGroups-23-018",
+  "modeId": "multiplication",
+  "itemFamily": "conceptual",
+  "subskill": "equalGroups",
+  "structureType": "equalGroupsTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 7,
+   "b": 6,
+   "op": "×",
+   "answer": 42,
+   "display": {
+    "promptText": "7 groups, each with 6 items. Total items?"
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-conc-factFluency-23-018",
+  "modeId": "multiplication",
+  "itemFamily": "conceptual",
+  "subskill": "factFluency",
+  "structureType": "equalGroupsTotalUnknown",
   "levelRange": [
    4,
    6
@@ -6598,12 +7079,12 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 49,
    "display": {
-    "promptText": "A 7 by 7 array has how many squares?"
+    "promptText": "Multiplication fact: 7 × 7 = ?"
    }
   }
  },
  {
-  "itemId": "multiplication-conc-arrayReasoning-23-039",
+  "itemId": "multiplication-conc-arrayReasoning-23-035",
   "modeId": "multiplication",
   "itemFamily": "conceptual",
   "subskill": "arrayReasoning",
@@ -6614,83 +7095,20 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 8,
+   "a": 7,
    "b": 9,
    "op": "×",
-   "answer": 72,
+   "answer": 63,
    "display": {
-    "promptText": "Rows and columns: 8 rows × 9 columns gives how many dots?"
+    "promptText": "Rows and columns: 7 rows × 9 columns gives how many dots?"
    }
   }
  },
  {
-  "itemId": "multiplication-conc-equalGroups-23-006",
+  "itemId": "multiplication-conc-equalGroups-23-035",
   "modeId": "multiplication",
   "itemFamily": "conceptual",
   "subskill": "equalGroups",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": 4,
-   "op": "×",
-   "answer": 28,
-   "display": {
-    "promptText": "How many counters in 7 groups of 4?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-conc-equalGroups-23-025",
-  "modeId": "multiplication",
-  "itemFamily": "conceptual",
-  "subskill": "equalGroups",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 3,
-   "b": 6,
-   "op": "×",
-   "answer": 18,
-   "display": {
-    "promptText": "Skip count: 6, 12, 18. That's 3 jumps of 6. What is 3 × 6?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-conc-equalGroups-23-044",
-  "modeId": "multiplication",
-  "itemFamily": "conceptual",
-  "subskill": "equalGroups",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": 5,
-   "op": "×",
-   "answer": 35,
-   "display": {
-    "promptText": "Jumps of 5 on a number line: after 7 jumps, you land on?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-conc-factFluency-23-011",
-  "modeId": "multiplication",
-  "itemFamily": "conceptual",
-  "subskill": "factFluency",
   "structureType": "equalGroupsTotalUnknown",
   "levelRange": [
    4,
@@ -6699,32 +7117,11 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 8,
-   "b": 8,
+   "b": 7,
    "op": "×",
-   "answer": 64,
+   "answer": 56,
    "display": {
-    "promptText": "Recall the fact: 8 × 8 equals?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-conc-factFluency-23-030",
-  "modeId": "multiplication",
-  "itemFamily": "conceptual",
-  "subskill": "factFluency",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 9,
-   "b": 3,
-   "op": "×",
-   "answer": 27,
-   "display": {
-    "promptText": "Nines trick: 9 × 3 digits sum to 9. What is the product?"
+    "promptText": "Eight of 7 is the same as? Use multiplication."
    }
   }
  },
@@ -6750,11 +7147,95 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-conc-arrayReasoning-45-020",
+  "itemId": "multiplication-conc-equalGroups-45-001",
+  "modeId": "multiplication",
+  "itemFamily": "conceptual",
+  "subskill": "equalGroups",
+  "structureType": "equalGroupsTotalUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": 7,
+   "op": "×",
+   "answer": 56,
+   "display": {
+    "promptText": "Use the equal-groups model: 8 × 7. What is the product?"
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-conc-factFluency-45-001",
+  "modeId": "multiplication",
+  "itemFamily": "conceptual",
+  "subskill": "factFluency",
+  "structureType": "equalGroupsTotalUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": 9,
+   "op": "×",
+   "answer": 72,
+   "display": {
+    "promptText": "If 9 × 8 = 72, what is 8 × 9?"
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-conc-arrayReasoning-45-018",
   "modeId": "multiplication",
   "itemFamily": "conceptual",
   "subskill": "arrayReasoning",
   "structureType": "arrayTotalUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 10,
+   "b": 8,
+   "op": "×",
+   "answer": 80,
+   "display": {
+    "promptText": "A 10 by 8 array has how many squares?"
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-conc-equalGroups-45-018",
+  "modeId": "multiplication",
+  "itemFamily": "conceptual",
+  "subskill": "equalGroups",
+  "structureType": "equalGroupsTotalUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 10,
+   "b": 9,
+   "op": "×",
+   "answer": 90,
+   "display": {
+    "promptText": "10 groups, each with 9 items. Total items?"
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-conc-factFluency-45-018",
+  "modeId": "multiplication",
+  "itemFamily": "conceptual",
+  "subskill": "factFluency",
+  "structureType": "equalGroupsTotalUnknown",
   "levelRange": [
    7,
    10
@@ -6766,12 +7247,12 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 77,
    "display": {
-    "promptText": "A 11 by 7 array has how many squares?"
+    "promptText": "Multiplication fact: 11 × 7 = ?"
    }
   }
  },
  {
-  "itemId": "multiplication-conc-arrayReasoning-45-039",
+  "itemId": "multiplication-conc-arrayReasoning-45-035",
   "modeId": "multiplication",
   "itemFamily": "conceptual",
   "subskill": "arrayReasoning",
@@ -6782,17 +7263,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 22,
-   "b": 5,
+   "a": 15,
+   "b": 10,
    "op": "×",
-   "answer": 110,
+   "answer": 150,
    "display": {
-    "promptText": "Area model: a 22 by 5 rectangle has what area?"
+    "promptText": "Rows and columns: 15 rows × 10 columns gives how many dots?"
    }
   }
  },
  {
-  "itemId": "multiplication-conc-equalGroups-45-006",
+  "itemId": "multiplication-conc-equalGroups-45-035",
   "modeId": "multiplication",
   "itemFamily": "conceptual",
   "subskill": "equalGroups",
@@ -6803,96 +7284,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 11,
+   "a": 18,
    "b": 6,
    "op": "×",
-   "answer": 66,
+   "answer": 108,
    "display": {
-    "promptText": "How many counters in 11 groups of 6?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-conc-equalGroups-45-025",
-  "modeId": "multiplication",
-  "itemFamily": "conceptual",
-  "subskill": "equalGroups",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 10,
-   "b": 12,
-   "op": "×",
-   "answer": 120,
-   "display": {
-    "promptText": "Skip count: 12, 24, 36, 48, 60, 72, 84, 96, 108, 120. 10 jumps of 12. What is 10 × 12?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-conc-equalGroups-45-044",
-  "modeId": "multiplication",
-  "itemFamily": "conceptual",
-  "subskill": "equalGroups",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 10,
-   "b": 7,
-   "op": "×",
-   "answer": 70,
-   "display": {
-    "promptText": "Jumps of 7 on a number line: after 10 jumps, you land on?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-conc-factFluency-45-011",
-  "modeId": "multiplication",
-  "itemFamily": "conceptual",
-  "subskill": "factFluency",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 20,
-   "b": 6,
-   "op": "×",
-   "answer": 120,
-   "display": {
-    "promptText": "Use place value: 20 × 6 = 2 × 10 × 6. What is the product?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-conc-factFluency-45-030",
-  "modeId": "multiplication",
-  "itemFamily": "conceptual",
-  "subskill": "factFluency",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 11,
-   "b": 11,
-   "op": "×",
-   "answer": 121,
-   "display": {
-    "promptText": "Squares: 11 × 11 is a perfect square. What is it?"
+    "promptText": "Area model: 18 × 6 = (10 + 8) × 6. What is the product?"
    }
   }
  },
@@ -6918,49 +7315,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-conc-arrayReasoning-K1-020",
-  "modeId": "multiplication",
-  "itemFamily": "conceptual",
-  "subskill": "arrayReasoning",
-  "structureType": "arrayTotalUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 3,
-   "b": 4,
-   "op": "×",
-   "answer": 12,
-   "display": {
-    "promptText": "A 3 by 4 array has how many squares?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-conc-arrayReasoning-K1-039",
-  "modeId": "multiplication",
-  "itemFamily": "conceptual",
-  "subskill": "arrayReasoning",
-  "structureType": "arrayTotalUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": 4,
-   "op": "×",
-   "answer": 16,
-   "display": {
-    "promptText": "Rows and columns: 4 rows × 4 columns gives how many dots?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-conc-equalGroups-K1-006",
+  "itemId": "multiplication-conc-equalGroups-K1-001",
   "modeId": "multiplication",
   "itemFamily": "conceptual",
   "subskill": "equalGroups",
@@ -6972,19 +7327,19 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 2,
-   "b": 5,
+   "b": 3,
    "op": "×",
-   "answer": 10,
+   "answer": 6,
    "display": {
-    "promptText": "How many counters in 2 groups of 5?"
+    "promptText": "What is 2 groups of 3?"
    }
   }
  },
  {
-  "itemId": "multiplication-conc-equalGroups-K1-025",
+  "itemId": "multiplication-conc-factFluency-K1-001",
   "modeId": "multiplication",
   "itemFamily": "conceptual",
-  "subskill": "equalGroups",
+  "subskill": "factFluency",
   "structureType": "equalGroupsTotalUnknown",
   "levelRange": [
    1,
@@ -6997,12 +7352,96 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 6,
    "display": {
-    "promptText": "Skip count: 2, 4, 6. This is 3 jumps of 2. What is 3 × 2?"
+    "promptText": "If 2 × 3 = 6, what is 3 × 2?"
    }
   }
  },
  {
-  "itemId": "multiplication-conc-equalGroups-K1-044",
+  "itemId": "multiplication-conc-arrayReasoning-K1-018",
+  "modeId": "multiplication",
+  "itemFamily": "conceptual",
+  "subskill": "arrayReasoning",
+  "structureType": "arrayTotalUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 2,
+   "b": 3,
+   "op": "×",
+   "answer": 6,
+   "display": {
+    "promptText": "A 2 by 3 array has how many squares?"
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-conc-equalGroups-K1-018",
+  "modeId": "multiplication",
+  "itemFamily": "conceptual",
+  "subskill": "equalGroups",
+  "structureType": "equalGroupsTotalUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 2,
+   "b": 3,
+   "op": "×",
+   "answer": 6,
+   "display": {
+    "promptText": "2 groups, each with 3 items. Total items?"
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-conc-factFluency-K1-018",
+  "modeId": "multiplication",
+  "itemFamily": "conceptual",
+  "subskill": "factFluency",
+  "structureType": "equalGroupsTotalUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 2,
+   "b": 3,
+   "op": "×",
+   "answer": 6,
+   "display": {
+    "promptText": "Multiplication fact: 2 × 3 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-conc-arrayReasoning-K1-035",
+  "modeId": "multiplication",
+  "itemFamily": "conceptual",
+  "subskill": "arrayReasoning",
+  "structureType": "arrayTotalUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 3,
+   "b": 3,
+   "op": "×",
+   "answer": 9,
+   "display": {
+    "promptText": "Rows and columns: 3 rows × 3 columns gives how many dots?"
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-conc-equalGroups-K1-035",
   "modeId": "multiplication",
   "itemFamily": "conceptual",
   "subskill": "equalGroups",
@@ -7014,53 +7453,11 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 3,
-   "b": 2,
-   "op": "×",
-   "answer": 6,
-   "display": {
-    "promptText": "Jumps of 2 on a number line: after 3 jumps, you land on?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-conc-factFluency-K1-011",
-  "modeId": "multiplication",
-  "itemFamily": "conceptual",
-  "subskill": "factFluency",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 5,
    "b": 5,
    "op": "×",
-   "answer": 25,
+   "answer": 15,
    "display": {
-    "promptText": "Recall the fact: 5 × 5 equals?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-conc-factFluency-K1-030",
-  "modeId": "multiplication",
-  "itemFamily": "conceptual",
-  "subskill": "factFluency",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 1,
-   "b": 1,
-   "op": "×",
-   "answer": 1,
-   "display": {
-    "promptText": "Identity: anything times 1 is itself. What is 1 × 1?"
+    "promptText": "Tripling: 3 times as many as 5 is?"
    }
   }
  },
@@ -7086,49 +7483,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-arrayReasoning-23-020",
-  "modeId": "multiplication",
-  "itemFamily": "procedural",
-  "subskill": "arrayReasoning",
-  "structureType": "arrayTotalUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 6,
-   "b": 6,
-   "op": "×",
-   "answer": 36,
-   "display": {
-    "promptText": "Multiply: 6 × 6."
-   }
-  }
- },
- {
-  "itemId": "multiplication-proc-arrayReasoning-23-039",
-  "modeId": "multiplication",
-  "itemFamily": "procedural",
-  "subskill": "arrayReasoning",
-  "structureType": "arrayTotalUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 9,
-   "b": 5,
-   "op": "×",
-   "answer": 45,
-   "display": {
-    "promptText": "Evaluate: 9 × 5."
-   }
-  }
- },
- {
-  "itemId": "multiplication-proc-equalGroups-23-006",
+  "itemId": "multiplication-proc-equalGroups-23-001",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "equalGroups",
@@ -7139,80 +7494,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 2,
-   "b": 9,
+   "a": 4,
+   "b": 3,
    "op": "×",
-   "answer": 18,
+   "answer": 12,
    "display": {
-    "promptText": "2 × 9 = ?"
+    "promptText": "4 × 3 = ?"
    }
   }
  },
  {
-  "itemId": "multiplication-proc-equalGroups-23-025",
-  "modeId": "multiplication",
-  "itemFamily": "procedural",
-  "subskill": "equalGroups",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 9,
-   "b": 5,
-   "op": "×",
-   "answer": 45,
-   "display": {
-    "promptText": "Find the product: 9 × 5."
-   }
-  }
- },
- {
-  "itemId": "multiplication-proc-equalGroups-23-044",
-  "modeId": "multiplication",
-  "itemFamily": "procedural",
-  "subskill": "equalGroups",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 6,
-   "b": 4,
-   "op": "×",
-   "answer": 24,
-   "display": {
-    "promptText": "6 groups of 4 = ?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-proc-factFluency-23-011",
-  "modeId": "multiplication",
-  "itemFamily": "procedural",
-  "subskill": "factFluency",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": 8,
-   "op": "×",
-   "answer": 56,
-   "display": {
-    "promptText": "What is 7 × 8?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-proc-factFluency-23-030",
+  "itemId": "multiplication-proc-factFluency-23-001",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "factFluency",
@@ -7224,11 +7516,116 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 5,
-   "b": 6,
+   "b": 5,
+   "op": "×",
+   "answer": 25,
+   "display": {
+    "promptText": "5 × 5 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-proc-arrayReasoning-23-018",
+  "modeId": "multiplication",
+  "itemFamily": "procedural",
+  "subskill": "arrayReasoning",
+  "structureType": "arrayTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 6,
+   "b": 4,
+   "op": "×",
+   "answer": 24,
+   "display": {
+    "promptText": "Multiply: 6 × 4."
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-proc-equalGroups-23-018",
+  "modeId": "multiplication",
+  "itemFamily": "procedural",
+  "subskill": "equalGroups",
+  "structureType": "equalGroupsTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 6,
+   "b": 5,
    "op": "×",
    "answer": 30,
    "display": {
-    "promptText": "5 times 6 = ?"
+    "promptText": "Find the product: 6 × 5."
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-proc-factFluency-23-018",
+  "modeId": "multiplication",
+  "itemFamily": "procedural",
+  "subskill": "factFluency",
+  "structureType": "equalGroupsTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 3,
+   "b": 7,
+   "op": "×",
+   "answer": 21,
+   "display": {
+    "promptText": "Find 3 × 7."
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-proc-arrayReasoning-23-035",
+  "modeId": "multiplication",
+  "itemFamily": "procedural",
+  "subskill": "arrayReasoning",
+  "structureType": "arrayTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": 6,
+   "op": "×",
+   "answer": 48,
+   "display": {
+    "promptText": "Evaluate: 8 × 6."
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-proc-equalGroups-23-035",
+  "modeId": "multiplication",
+  "itemFamily": "procedural",
+  "subskill": "equalGroups",
+  "structureType": "equalGroupsTotalUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 7,
+   "b": 7,
+   "op": "×",
+   "answer": 49,
+   "display": {
+    "promptText": "Product of 7 and 7?"
    }
   }
  },
@@ -7254,49 +7651,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-arrayReasoning-45-020",
-  "modeId": "multiplication",
-  "itemFamily": "procedural",
-  "subskill": "arrayReasoning",
-  "structureType": "arrayTotalUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 9,
-   "b": 11,
-   "op": "×",
-   "answer": 99,
-   "display": {
-    "promptText": "Multiply: 9 × 11."
-   }
-  }
- },
- {
-  "itemId": "multiplication-proc-arrayReasoning-45-039",
-  "modeId": "multiplication",
-  "itemFamily": "procedural",
-  "subskill": "arrayReasoning",
-  "structureType": "arrayTotalUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 15,
-   "b": 10,
-   "op": "×",
-   "answer": 150,
-   "display": {
-    "promptText": "Evaluate: 15 × 10."
-   }
-  }
- },
- {
-  "itemId": "multiplication-proc-equalGroups-45-006",
+  "itemId": "multiplication-proc-equalGroups-45-001",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "equalGroups",
@@ -7307,20 +7662,20 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 10,
-   "b": 5,
+   "a": 8,
+   "b": 7,
    "op": "×",
-   "answer": 50,
+   "answer": 56,
    "display": {
-    "promptText": "10 × 5 = ?"
+    "promptText": "8 × 7 = ?"
    }
   }
  },
  {
-  "itemId": "multiplication-proc-equalGroups-45-025",
+  "itemId": "multiplication-proc-factFluency-45-001",
   "modeId": "multiplication",
   "itemFamily": "procedural",
-  "subskill": "equalGroups",
+  "subskill": "factFluency",
   "structureType": "equalGroupsTotalUnknown",
   "levelRange": [
    7,
@@ -7328,41 +7683,104 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 12,
-   "b": 10,
-   "op": "×",
-   "answer": 120,
-   "display": {
-    "promptText": "Find the product: 12 × 10."
-   }
-  }
- },
- {
-  "itemId": "multiplication-proc-equalGroups-45-044",
-  "modeId": "multiplication",
-  "itemFamily": "procedural",
-  "subskill": "equalGroups",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 10,
+   "a": 8,
    "b": 9,
    "op": "×",
-   "answer": 90,
+   "answer": 72,
    "display": {
-    "promptText": "10 groups of 9 = ?"
+    "promptText": "8 × 9 = ?"
    }
   }
  },
  {
-  "itemId": "multiplication-proc-factFluency-45-011",
+  "itemId": "multiplication-proc-arrayReasoning-45-018",
+  "modeId": "multiplication",
+  "itemFamily": "procedural",
+  "subskill": "arrayReasoning",
+  "structureType": "arrayTotalUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": 10,
+   "op": "×",
+   "answer": 80,
+   "display": {
+    "promptText": "Multiply: 8 × 10."
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-proc-equalGroups-45-018",
+  "modeId": "multiplication",
+  "itemFamily": "procedural",
+  "subskill": "equalGroups",
+  "structureType": "equalGroupsTotalUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 11,
+   "b": 6,
+   "op": "×",
+   "answer": 66,
+   "display": {
+    "promptText": "Find the product: 11 × 6."
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-proc-factFluency-45-018",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "factFluency",
+  "structureType": "equalGroupsTotalUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 7,
+   "b": 11,
+   "op": "×",
+   "answer": 77,
+   "display": {
+    "promptText": "Find 7 × 11."
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-proc-arrayReasoning-45-035",
+  "modeId": "multiplication",
+  "itemFamily": "procedural",
+  "subskill": "arrayReasoning",
+  "structureType": "arrayTotalUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 10,
+   "b": 11,
+   "op": "×",
+   "answer": 110,
+   "display": {
+    "promptText": "Evaluate: 10 × 11."
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-proc-equalGroups-45-035",
+  "modeId": "multiplication",
+  "itemFamily": "procedural",
+  "subskill": "equalGroups",
   "structureType": "equalGroupsTotalUnknown",
   "levelRange": [
    7,
@@ -7371,32 +7789,11 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 12,
-   "b": 4,
+   "b": 11,
    "op": "×",
-   "answer": 48,
+   "answer": 132,
    "display": {
-    "promptText": "What is 12 × 4?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-proc-factFluency-45-030",
-  "modeId": "multiplication",
-  "itemFamily": "procedural",
-  "subskill": "factFluency",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 9,
-   "b": 10,
-   "op": "×",
-   "answer": 90,
-   "display": {
-    "promptText": "9 times 10 = ?"
+    "promptText": "Product of 12 and 11?"
    }
   }
  },
@@ -7422,91 +7819,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-arrayReasoning-K1-020",
-  "modeId": "multiplication",
-  "itemFamily": "procedural",
-  "subskill": "arrayReasoning",
-  "structureType": "arrayTotalUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 2,
-   "b": 5,
-   "op": "×",
-   "answer": 10,
-   "display": {
-    "promptText": "Multiply: 2 × 5."
-   }
-  }
- },
- {
-  "itemId": "multiplication-proc-arrayReasoning-K1-039",
-  "modeId": "multiplication",
-  "itemFamily": "procedural",
-  "subskill": "arrayReasoning",
-  "structureType": "arrayTotalUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": 5,
-   "op": "×",
-   "answer": 20,
-   "display": {
-    "promptText": "Evaluate: 4 × 5."
-   }
-  }
- },
- {
-  "itemId": "multiplication-proc-equalGroups-K1-006",
-  "modeId": "multiplication",
-  "itemFamily": "procedural",
-  "subskill": "equalGroups",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 1,
-   "b": 3,
-   "op": "×",
-   "answer": 3,
-   "display": {
-    "promptText": "1 × 3 = ?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-proc-equalGroups-K1-025",
-  "modeId": "multiplication",
-  "itemFamily": "procedural",
-  "subskill": "equalGroups",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": 2,
-   "op": "×",
-   "answer": 8,
-   "display": {
-    "promptText": "Find the product: 4 × 2."
-   }
-  }
- },
- {
-  "itemId": "multiplication-proc-equalGroups-K1-044",
+  "itemId": "multiplication-proc-equalGroups-K1-001",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "equalGroups",
@@ -7522,33 +7835,12 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 6,
    "display": {
-    "promptText": "2 groups of 3 = ?"
+    "promptText": "2 × 3 = ?"
    }
   }
  },
  {
-  "itemId": "multiplication-proc-factFluency-K1-011",
-  "modeId": "multiplication",
-  "itemFamily": "procedural",
-  "subskill": "factFluency",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 5,
-   "b": 5,
-   "op": "×",
-   "answer": 25,
-   "display": {
-    "promptText": "What is 5 × 5?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-proc-factFluency-K1-030",
+  "itemId": "multiplication-proc-factFluency-K1-001",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "factFluency",
@@ -7560,11 +7852,116 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 1,
-   "b": 1,
+   "b": 5,
    "op": "×",
-   "answer": 1,
+   "answer": 5,
    "display": {
-    "promptText": "1 times 1 = ?"
+    "promptText": "1 × 5 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-proc-arrayReasoning-K1-018",
+  "modeId": "multiplication",
+  "itemFamily": "procedural",
+  "subskill": "arrayReasoning",
+  "structureType": "arrayTotalUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 2,
+   "b": 3,
+   "op": "×",
+   "answer": 6,
+   "display": {
+    "promptText": "Multiply: 2 × 3."
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-proc-equalGroups-K1-018",
+  "modeId": "multiplication",
+  "itemFamily": "procedural",
+  "subskill": "equalGroups",
+  "structureType": "equalGroupsTotalUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 2,
+   "b": 3,
+   "op": "×",
+   "answer": 6,
+   "display": {
+    "promptText": "Find the product: 2 × 3."
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-proc-factFluency-K1-018",
+  "modeId": "multiplication",
+  "itemFamily": "procedural",
+  "subskill": "factFluency",
+  "structureType": "equalGroupsTotalUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 1,
+   "b": 2,
+   "op": "×",
+   "answer": 2,
+   "display": {
+    "promptText": "Find 1 × 2."
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-proc-arrayReasoning-K1-035",
+  "modeId": "multiplication",
+  "itemFamily": "procedural",
+  "subskill": "arrayReasoning",
+  "structureType": "arrayTotalUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 3,
+   "b": 3,
+   "op": "×",
+   "answer": 9,
+   "display": {
+    "promptText": "Evaluate: 3 × 3."
+   }
+  }
+ },
+ {
+  "itemId": "multiplication-proc-equalGroups-K1-035",
+  "modeId": "multiplication",
+  "itemFamily": "procedural",
+  "subskill": "equalGroups",
+  "structureType": "equalGroupsTotalUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 3,
+   "b": 3,
+   "op": "×",
+   "answer": 9,
+   "display": {
+    "promptText": "Product of 3 and 3?"
    }
   }
  },
@@ -7594,27 +7991,57 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placevalue-app-003",
+  "itemId": "placevalue-app-019",
   "modeId": "placeValue",
   "itemFamily": "application",
-  "subskill": "regroupingSense",
+  "subskill": "tensOnes",
   "structureType": "buildFromUnits",
   "levelRange": [
-   9,
+   7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 305,
+   "a": 234,
    "b": null,
    "op": "place",
-   "answer": 305,
+   "answer": 23,
    "display": {
-    "ones": 5,
-    "tens": 30,
+    "ones": 4,
+    "tens": 23,
+    "type": "tens_in",
+    "number": 234,
+    "promptText": "A library shelf holds 234 books. How many total tens are in 234?",
+    "promptOptions": [
+     "The library has 234 books. How many total tens are in 234?",
+     "Ms. Chen's class collected 234 books. How many total tens are in 234?",
+     "The bookstore has 234 books. How many total tens are in 234?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-app-028",
+  "modeId": "placeValue",
+  "itemFamily": "application",
+  "subskill": "expandedForm",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 234,
+   "b": null,
+   "op": "place",
+   "answer": 234,
+   "display": {
+    "ones": 4,
+    "tens": 23,
     "type": "build",
-    "number": 305,
-    "promptText": "A team records 30 tens and 5 ones. What number do those blocks make?"
+    "number": 234,
+    "promptText": "A counter shows 23 tens and 4 ones. What number is on the counter?"
    }
   }
  },
@@ -7644,27 +8071,57 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placevalue-app-007",
+  "itemId": "placevalue-app-020",
   "modeId": "placeValue",
   "itemFamily": "application",
-  "subskill": "regroupingSense",
+  "subskill": "tensOnes",
   "structureType": "buildFromUnits",
   "levelRange": [
-   8,
+   7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 156,
+   "a": 580,
    "b": null,
    "op": "place",
-   "answer": 156,
+   "answer": 58,
    "display": {
-    "ones": 6,
-    "tens": 15,
+    "ones": 0,
+    "tens": 58,
+    "type": "tens_in",
+    "number": 580,
+    "promptText": "A jar holds 580 beads. How many total tens are in 580?",
+    "promptOptions": [
+     "Maria has 580 beads. How many total tens are in 580?",
+     "The factory made 580 beads. How many total tens are in 580?",
+     "Jack collected 580 beads. How many total tens are in 580?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-app-029",
+  "modeId": "placeValue",
+  "itemFamily": "application",
+  "subskill": "expandedForm",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 580,
+   "b": null,
+   "op": "place",
+   "answer": 580,
+   "display": {
+    "ones": 0,
+    "tens": 58,
     "type": "build",
-    "number": 156,
-    "promptText": "A model uses 15 tens of blocks and 6 ones. What number do the blocks show?"
+    "number": 580,
+    "promptText": "A scoreboard reads 58 tens and 0 ones. What number does it show?"
    }
   }
  },
@@ -7694,56 +8151,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placevalue-app-011",
-  "modeId": "placeValue",
-  "itemFamily": "application",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   9,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 408,
-   "b": null,
-   "op": "place",
-   "answer": 408,
-   "display": {
-    "ones": 8,
-    "tens": 40,
-    "type": "build",
-    "number": 408,
-    "promptText": "A scoreboard reads 40 tens and 8 ones. What number does the scoreboard show?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-app-019",
-  "modeId": "placeValue",
-  "itemFamily": "application",
-  "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 234,
-   "b": null,
-   "op": "place",
-   "answer": 23,
-   "display": {
-    "ones": 4,
-    "tens": 23,
-    "type": "tens_in",
-    "number": 234,
-    "promptText": "A library shelf holds 234 books. How many total tens are in 234?"
-   }
-  }
- },
- {
   "itemId": "placevalue-app-021",
   "modeId": "placeValue",
   "itemFamily": "application",
@@ -7764,7 +8171,12 @@ export const SEED_ITEMS = [
     "tens": 37,
     "type": "ones_in",
     "number": 374,
-    "promptText": "A box holds 374 stickers. How many ones are in 374?"
+    "promptText": "A box holds 374 stickers. How many ones are in 374?",
+    "promptOptions": [
+     "Emma has 374 stickers. How many ones are in 374?",
+     "Maya collected 374 stickers. How many ones are in 374?",
+     "The store has 374 stickers. How many ones are in 374?"
+    ]
    }
   }
  },
@@ -7789,57 +8201,12 @@ export const SEED_ITEMS = [
     "tens": 1,
     "type": "tens_in",
     "number": 12,
-    "promptText": "A jar holds 12 marbles. How many tens are in 12?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-app-014",
-  "modeId": "placeValue",
-  "itemFamily": "application",
-  "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 15,
-   "b": null,
-   "op": "place",
-   "answer": 1,
-   "display": {
-    "ones": 5,
-    "tens": 1,
-    "type": "tens_in",
-    "number": 15,
-    "promptText": "A pile has 15 leaves. How many tens are in 15?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-app-015",
-  "modeId": "placeValue",
-  "itemFamily": "application",
-  "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 12,
-   "b": null,
-   "op": "place",
-   "answer": 2,
-   "display": {
-    "ones": 2,
-    "tens": 1,
-    "type": "ones_in",
-    "number": 12,
-    "promptText": "A jar holds 12 marbles. How many ones are in 12?"
+    "promptText": "A jar holds 12 marbles. How many tens are in 12?",
+    "promptOptions": [
+     "Jack has 12 toy cars. How many tens are in 12?",
+     "Maria found 12 coins. How many tens are in 12?",
+     "Luis collected 12 stickers. How many tens are in 12?"
+    ]
    }
   }
  },
@@ -7869,56 +8236,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placevalue-app-023",
-  "modeId": "placeValue",
-  "itemFamily": "application",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 20,
-   "b": null,
-   "op": "place",
-   "answer": 20,
-   "display": {
-    "ones": 0,
-    "tens": 2,
-    "type": "build",
-    "number": 20,
-    "promptText": "A pile has 2 tens and 0 ones of cubes. How many cubes in the pile?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-app-024",
-  "modeId": "placeValue",
-  "itemFamily": "application",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 17,
-   "b": null,
-   "op": "place",
-   "answer": 17,
-   "display": {
-    "ones": 7,
-    "tens": 1,
-    "type": "build",
-    "number": 17,
-    "promptText": "A bin shows 1 ten and 7 ones of marbles. How many marbles in the bin?"
-   }
-  }
- },
- {
   "itemId": "placevalue-app-031",
   "modeId": "placeValue",
   "itemFamily": "application",
@@ -7940,6 +8257,61 @@ export const SEED_ITEMS = [
     "type": "build",
     "number": 14,
     "promptText": "A bag has 10 candies plus 4 more. How many candies in total?"
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-app-014",
+  "modeId": "placeValue",
+  "itemFamily": "application",
+  "subskill": "tensOnes",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 15,
+   "b": null,
+   "op": "place",
+   "answer": 1,
+   "display": {
+    "ones": 5,
+    "tens": 1,
+    "type": "tens_in",
+    "number": 15,
+    "promptText": "A pile has 15 leaves. How many tens are in 15?",
+    "promptOptions": [
+     "Sarah picked 15 flowers. How many tens are in 15?",
+     "Alex found 15 acorns. How many tens are in 15?",
+     "Mia collected 15 buttons. How many tens are in 15?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-app-023",
+  "modeId": "placeValue",
+  "itemFamily": "application",
+  "subskill": "expandedForm",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 20,
+   "b": null,
+   "op": "place",
+   "answer": 20,
+   "display": {
+    "ones": 0,
+    "tens": 2,
+    "type": "build",
+    "number": 20,
+    "promptText": "A pile has 2 tens and 0 ones of cubes. How many cubes in the pile?"
    }
   }
  },
@@ -7969,6 +8341,61 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "placevalue-app-015",
+  "modeId": "placeValue",
+  "itemFamily": "application",
+  "subskill": "tensOnes",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 12,
+   "b": null,
+   "op": "place",
+   "answer": 2,
+   "display": {
+    "ones": 2,
+    "tens": 1,
+    "type": "ones_in",
+    "number": 12,
+    "promptText": "A jar holds 12 marbles. How many ones are in 12?",
+    "promptOptions": [
+     "Jack has 12 toy cars. How many ones are in 12?",
+     "Maria found 12 cookies. How many ones are in 12?",
+     "Luis counted 12 stickers. How many ones are in 12?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-app-024",
+  "modeId": "placeValue",
+  "itemFamily": "application",
+  "subskill": "expandedForm",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 17,
+   "b": null,
+   "op": "place",
+   "answer": 17,
+   "display": {
+    "ones": 7,
+    "tens": 1,
+    "type": "build",
+    "number": 17,
+    "promptText": "A bin shows 1 ten and 7 ones of marbles. How many marbles in the bin?"
+   }
+  }
+ },
+ {
   "itemId": "placevalue-app-016",
   "modeId": "placeValue",
   "itemFamily": "application",
@@ -7989,57 +8416,12 @@ export const SEED_ITEMS = [
     "tens": 4,
     "type": "tens_in",
     "number": 47,
-    "promptText": "A bag has 47 marbles. How many tens are in 47?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-app-017",
-  "modeId": "placeValue",
-  "itemFamily": "application",
-  "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 53,
-   "b": null,
-   "op": "place",
-   "answer": 5,
-   "display": {
-    "ones": 3,
-    "tens": 5,
-    "type": "tens_in",
-    "number": 53,
-    "promptText": "A box holds 53 erasers. How many tens are in 53?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-app-018",
-  "modeId": "placeValue",
-  "itemFamily": "application",
-  "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 36,
-   "b": null,
-   "op": "place",
-   "answer": 6,
-   "display": {
-    "ones": 6,
-    "tens": 3,
-    "type": "ones_in",
-    "number": 36,
-    "promptText": "A page has 36 stickers. How many ones are in 36?"
+    "promptText": "A bag has 47 marbles. How many tens are in 47?",
+    "promptOptions": [
+     "Jake has 47 toy cars. How many tens are in 47?",
+     "Zara found 47 shells. How many tens are in 47?",
+     "Sam counted 47 coins. How many tens are in 47?"
+    ]
    }
   }
  },
@@ -8069,56 +8451,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placevalue-app-026",
-  "modeId": "placeValue",
-  "itemFamily": "application",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 72,
-   "b": null,
-   "op": "place",
-   "answer": 72,
-   "display": {
-    "ones": 2,
-    "tens": 7,
-    "type": "build",
-    "number": 72,
-    "promptText": "A bin holds 7 tens and 2 ones of cards. How many cards in the bin?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-app-027",
-  "modeId": "placeValue",
-  "itemFamily": "application",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 49,
-   "b": null,
-   "op": "place",
-   "answer": 49,
-   "display": {
-    "ones": 9,
-    "tens": 4,
-    "type": "build",
-    "number": 49,
-    "promptText": "A row shows 4 tens and 9 ones of stickers. How many stickers in the row?"
-   }
-  }
- },
- {
   "itemId": "placevalue-app-034",
   "modeId": "placeValue",
   "itemFamily": "application",
@@ -8140,6 +8472,61 @@ export const SEED_ITEMS = [
     "type": "build",
     "number": 35,
     "promptText": "A pencil case has 30 pencils plus 5 more. How many pencils in total?"
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-app-017",
+  "modeId": "placeValue",
+  "itemFamily": "application",
+  "subskill": "tensOnes",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 53,
+   "b": null,
+   "op": "place",
+   "answer": 5,
+   "display": {
+    "ones": 3,
+    "tens": 5,
+    "type": "tens_in",
+    "number": 53,
+    "promptText": "A box holds 53 erasers. How many tens are in 53?",
+    "promptOptions": [
+     "Emma has 53 pencils. How many tens are in 53?",
+     "Leo found 53 beads. How many tens are in 53?",
+     "Nina collected 53 stickers. How many tens are in 53?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-app-026",
+  "modeId": "placeValue",
+  "itemFamily": "application",
+  "subskill": "expandedForm",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 72,
+   "b": null,
+   "op": "place",
+   "answer": 72,
+   "display": {
+    "ones": 2,
+    "tens": 7,
+    "type": "build",
+    "number": 72,
+    "promptText": "A bin holds 7 tens and 2 ones of cards. How many cards in the bin?"
    }
   }
  },
@@ -8169,6 +8556,61 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "placevalue-app-018",
+  "modeId": "placeValue",
+  "itemFamily": "application",
+  "subskill": "tensOnes",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 36,
+   "b": null,
+   "op": "place",
+   "answer": 6,
+   "display": {
+    "ones": 6,
+    "tens": 3,
+    "type": "ones_in",
+    "number": 36,
+    "promptText": "A page has 36 stickers. How many ones are in 36?",
+    "promptOptions": [
+     "Jack has 36 stickers. How many ones are in 36?",
+     "Maya found 36 coins. How many ones are in 36?",
+     "Luis collected 36 toy cars. How many ones are in 36?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-app-027",
+  "modeId": "placeValue",
+  "itemFamily": "application",
+  "subskill": "expandedForm",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 49,
+   "b": null,
+   "op": "place",
+   "answer": 49,
+   "display": {
+    "ones": 9,
+    "tens": 4,
+    "type": "build",
+    "number": 49,
+    "promptText": "A row shows 4 tens and 9 ones of stickers. How many stickers in the row?"
+   }
+  }
+ },
+ {
   "itemId": "placevalue-conc-expandedForm-23-001",
   "modeId": "placeValue",
   "itemFamily": "conceptual",
@@ -8190,56 +8632,6 @@ export const SEED_ITEMS = [
     "type": "build",
     "number": 58,
     "promptText": "What number equals 5 tens + 8 ones?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-expandedForm-23-002",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 72,
-   "b": null,
-   "op": "place",
-   "answer": 72,
-   "display": {
-    "ones": 2,
-    "tens": 7,
-    "type": "build",
-    "number": 72,
-    "promptText": "What number equals 7 tens + 2 ones?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-expandedForm-23-003",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 49,
-   "b": null,
-   "op": "place",
-   "answer": 49,
-   "display": {
-    "ones": 9,
-    "tens": 4,
-    "type": "build",
-    "number": 49,
-    "promptText": "What number equals 4 tens + 9 ones?"
    }
   }
  },
@@ -8269,56 +8661,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placevalue-conc-regroupingSense-23-002",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 63,
-   "b": null,
-   "op": "place",
-   "answer": 63,
-   "display": {
-    "ones": 3,
-    "tens": 6,
-    "type": "build",
-    "number": 63,
-    "promptText": "Regroup 60 + 3 to a single number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-regroupingSense-23-003",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 87,
-   "b": null,
-   "op": "place",
-   "answer": 87,
-   "display": {
-    "ones": 7,
-    "tens": 8,
-    "type": "build",
-    "number": 87,
-    "promptText": "Regroup 80 + 7 to a single number."
-   }
-  }
- },
- {
   "itemId": "placevalue-conc-tensOnes-23-001",
   "modeId": "placeValue",
   "itemFamily": "conceptual",
@@ -8340,6 +8682,56 @@ export const SEED_ITEMS = [
     "type": "tens_in",
     "number": 47,
     "promptText": "Identify the tens digit of 47."
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-conc-expandedForm-23-002",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "expandedForm",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 72,
+   "b": null,
+   "op": "place",
+   "answer": 72,
+   "display": {
+    "ones": 2,
+    "tens": 7,
+    "type": "build",
+    "number": 72,
+    "promptText": "What number equals 7 tens + 2 ones?"
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-conc-regroupingSense-23-002",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "regroupingSense",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 63,
+   "b": null,
+   "op": "place",
+   "answer": 63,
+   "display": {
+    "ones": 3,
+    "tens": 6,
+    "type": "build",
+    "number": 63,
+    "promptText": "Regroup 60 + 3 to a single number."
    }
   }
  },
@@ -8369,6 +8761,56 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "placevalue-conc-expandedForm-23-003",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "expandedForm",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 49,
+   "b": null,
+   "op": "place",
+   "answer": 49,
+   "display": {
+    "ones": 9,
+    "tens": 4,
+    "type": "build",
+    "number": 49,
+    "promptText": "What number equals 4 tens + 9 ones?"
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-conc-regroupingSense-23-003",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "regroupingSense",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 87,
+   "b": null,
+   "op": "place",
+   "answer": 87,
+   "display": {
+    "ones": 7,
+    "tens": 8,
+    "type": "build",
+    "number": 87,
+    "promptText": "Regroup 80 + 7 to a single number."
+   }
+  }
+ },
+ {
   "itemId": "placevalue-conc-expandedForm-45-001",
   "modeId": "placeValue",
   "itemFamily": "conceptual",
@@ -8390,56 +8832,6 @@ export const SEED_ITEMS = [
     "type": "build",
     "number": 234,
     "promptText": "What number equals 23 tens + 4 ones?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-expandedForm-45-002",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 580,
-   "b": null,
-   "op": "place",
-   "answer": 580,
-   "display": {
-    "ones": 0,
-    "tens": 58,
-    "type": "build",
-    "number": 580,
-    "promptText": "What number equals 58 tens + 0 ones?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-expandedForm-45-003",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 374,
-   "b": null,
-   "op": "place",
-   "answer": 374,
-   "display": {
-    "ones": 4,
-    "tens": 37,
-    "type": "build",
-    "number": 374,
-    "promptText": "What number equals 37 tens + 4 ones?"
    }
   }
  },
@@ -8469,56 +8861,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placevalue-conc-regroupingSense-45-002",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 580,
-   "b": null,
-   "op": "place",
-   "answer": 580,
-   "display": {
-    "ones": 0,
-    "tens": 58,
-    "type": "build",
-    "number": 580,
-    "promptText": "Regroup 500 + 80 to a single number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-regroupingSense-45-003",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 374,
-   "b": null,
-   "op": "place",
-   "answer": 374,
-   "display": {
-    "ones": 4,
-    "tens": 37,
-    "type": "build",
-    "number": 374,
-    "promptText": "Regroup 300 + 70 + 4 to a single number."
-   }
-  }
- },
- {
   "itemId": "placevalue-conc-tensOnes-45-001",
   "modeId": "placeValue",
   "itemFamily": "conceptual",
@@ -8540,6 +8882,56 @@ export const SEED_ITEMS = [
     "type": "tens_in",
     "number": 234,
     "promptText": "Determine the total tens in 234."
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-conc-expandedForm-45-002",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "expandedForm",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 580,
+   "b": null,
+   "op": "place",
+   "answer": 580,
+   "display": {
+    "ones": 0,
+    "tens": 58,
+    "type": "build",
+    "number": 580,
+    "promptText": "What number equals 58 tens + 0 ones?"
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-conc-regroupingSense-45-002",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "regroupingSense",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 580,
+   "b": null,
+   "op": "place",
+   "answer": 580,
+   "display": {
+    "ones": 0,
+    "tens": 58,
+    "type": "build",
+    "number": 580,
+    "promptText": "Regroup 500 + 80 to a single number."
    }
   }
  },
@@ -8569,6 +8961,56 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "placevalue-conc-expandedForm-45-003",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "expandedForm",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 374,
+   "b": null,
+   "op": "place",
+   "answer": 374,
+   "display": {
+    "ones": 4,
+    "tens": 37,
+    "type": "build",
+    "number": 374,
+    "promptText": "What number equals 37 tens + 4 ones?"
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-conc-regroupingSense-45-003",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "regroupingSense",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 374,
+   "b": null,
+   "op": "place",
+   "answer": 374,
+   "display": {
+    "ones": 4,
+    "tens": 37,
+    "type": "build",
+    "number": 374,
+    "promptText": "Regroup 300 + 70 + 4 to a single number."
+   }
+  }
+ },
+ {
   "itemId": "placevalue-conc-expandedForm-K1-001",
   "modeId": "placeValue",
   "itemFamily": "conceptual",
@@ -8590,56 +9032,6 @@ export const SEED_ITEMS = [
     "type": "build",
     "number": 13,
     "promptText": "What number equals 1 ten + 3 ones?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-expandedForm-K1-002",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 20,
-   "b": null,
-   "op": "place",
-   "answer": 20,
-   "display": {
-    "ones": 0,
-    "tens": 2,
-    "type": "build",
-    "number": 20,
-    "promptText": "What number equals 2 tens + 0 ones?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-expandedForm-K1-003",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 17,
-   "b": null,
-   "op": "place",
-   "answer": 17,
-   "display": {
-    "ones": 7,
-    "tens": 1,
-    "type": "build",
-    "number": 17,
-    "promptText": "What number equals 1 ten + 7 ones?"
    }
   }
  },
@@ -8669,56 +9061,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placevalue-conc-regroupingSense-K1-002",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 18,
-   "b": null,
-   "op": "place",
-   "answer": 18,
-   "display": {
-    "ones": 8,
-    "tens": 1,
-    "type": "build",
-    "number": 18,
-    "promptText": "Regroup 10 + 8 to a single number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-regroupingSense-K1-003",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 25,
-   "b": null,
-   "op": "place",
-   "answer": 25,
-   "display": {
-    "ones": 5,
-    "tens": 2,
-    "type": "build",
-    "number": 25,
-    "promptText": "Regroup 20 + 5 to a single number."
-   }
-  }
- },
- {
   "itemId": "placevalue-conc-tensOnes-K1-001",
   "modeId": "placeValue",
   "itemFamily": "conceptual",
@@ -8740,6 +9082,56 @@ export const SEED_ITEMS = [
     "type": "tens_in",
     "number": 12,
     "promptText": "Identify the tens digit of 12."
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-conc-expandedForm-K1-002",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "expandedForm",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 20,
+   "b": null,
+   "op": "place",
+   "answer": 20,
+   "display": {
+    "ones": 0,
+    "tens": 2,
+    "type": "build",
+    "number": 20,
+    "promptText": "What number equals 2 tens + 0 ones?"
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-conc-regroupingSense-K1-002",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "regroupingSense",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 18,
+   "b": null,
+   "op": "place",
+   "answer": 18,
+   "display": {
+    "ones": 8,
+    "tens": 1,
+    "type": "build",
+    "number": 18,
+    "promptText": "Regroup 10 + 8 to a single number."
    }
   }
  },
@@ -8769,6 +9161,56 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "placevalue-conc-expandedForm-K1-003",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "expandedForm",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 17,
+   "b": null,
+   "op": "place",
+   "answer": 17,
+   "display": {
+    "ones": 7,
+    "tens": 1,
+    "type": "build",
+    "number": 17,
+    "promptText": "What number equals 1 ten + 7 ones?"
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-conc-regroupingSense-K1-003",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "regroupingSense",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 25,
+   "b": null,
+   "op": "place",
+   "answer": 25,
+   "display": {
+    "ones": 5,
+    "tens": 2,
+    "type": "build",
+    "number": 25,
+    "promptText": "Regroup 20 + 5 to a single number."
+   }
+  }
+ },
+ {
   "itemId": "placevalue-proc-expandedForm-23-001",
   "modeId": "placeValue",
   "itemFamily": "procedural",
@@ -8790,56 +9232,6 @@ export const SEED_ITEMS = [
     "type": "build",
     "number": 58,
     "promptText": "5 tens + 8 ones = ?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-expandedForm-23-002",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 72,
-   "b": null,
-   "op": "place",
-   "answer": 72,
-   "display": {
-    "ones": 2,
-    "tens": 7,
-    "type": "build",
-    "number": 72,
-    "promptText": "7 tens + 2 ones = ?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-expandedForm-23-003",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 49,
-   "b": null,
-   "op": "place",
-   "answer": 49,
-   "display": {
-    "ones": 9,
-    "tens": 4,
-    "type": "build",
-    "number": 49,
-    "promptText": "4 tens + 9 ones = ?"
    }
   }
  },
@@ -8869,56 +9261,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placevalue-proc-regroupingSense-23-002",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 63,
-   "b": null,
-   "op": "place",
-   "answer": 63,
-   "display": {
-    "ones": 3,
-    "tens": 6,
-    "type": "build",
-    "number": 63,
-    "promptText": "Combine 6 tens and 3 ones into one number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-regroupingSense-23-003",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 87,
-   "b": null,
-   "op": "place",
-   "answer": 87,
-   "display": {
-    "ones": 7,
-    "tens": 8,
-    "type": "build",
-    "number": 87,
-    "promptText": "Combine 8 tens and 7 ones into one number."
-   }
-  }
- },
- {
   "itemId": "placevalue-proc-tensOnes-23-001",
   "modeId": "placeValue",
   "itemFamily": "procedural",
@@ -8940,6 +9282,56 @@ export const SEED_ITEMS = [
     "type": "tens_in",
     "number": 47,
     "promptText": "How many tens in 47?"
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-proc-expandedForm-23-002",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "expandedForm",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 72,
+   "b": null,
+   "op": "place",
+   "answer": 72,
+   "display": {
+    "ones": 2,
+    "tens": 7,
+    "type": "build",
+    "number": 72,
+    "promptText": "7 tens + 2 ones = ?"
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-proc-regroupingSense-23-002",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "regroupingSense",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 63,
+   "b": null,
+   "op": "place",
+   "answer": 63,
+   "display": {
+    "ones": 3,
+    "tens": 6,
+    "type": "build",
+    "number": 63,
+    "promptText": "Combine 6 tens and 3 ones into one number."
    }
   }
  },
@@ -8969,6 +9361,56 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "placevalue-proc-expandedForm-23-003",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "expandedForm",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 49,
+   "b": null,
+   "op": "place",
+   "answer": 49,
+   "display": {
+    "ones": 9,
+    "tens": 4,
+    "type": "build",
+    "number": 49,
+    "promptText": "4 tens + 9 ones = ?"
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-proc-regroupingSense-23-003",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "regroupingSense",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 87,
+   "b": null,
+   "op": "place",
+   "answer": 87,
+   "display": {
+    "ones": 7,
+    "tens": 8,
+    "type": "build",
+    "number": 87,
+    "promptText": "Combine 8 tens and 7 ones into one number."
+   }
+  }
+ },
+ {
   "itemId": "placevalue-proc-expandedForm-45-001",
   "modeId": "placeValue",
   "itemFamily": "procedural",
@@ -8990,56 +9432,6 @@ export const SEED_ITEMS = [
     "type": "build",
     "number": 234,
     "promptText": "23 tens + 4 ones = ?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-expandedForm-45-002",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 580,
-   "b": null,
-   "op": "place",
-   "answer": 580,
-   "display": {
-    "ones": 0,
-    "tens": 58,
-    "type": "build",
-    "number": 580,
-    "promptText": "58 tens + 0 ones = ?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-expandedForm-45-003",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 374,
-   "b": null,
-   "op": "place",
-   "answer": 374,
-   "display": {
-    "ones": 4,
-    "tens": 37,
-    "type": "build",
-    "number": 374,
-    "promptText": "37 tens + 4 ones = ?"
    }
   }
  },
@@ -9069,56 +9461,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placevalue-proc-regroupingSense-45-002",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 580,
-   "b": null,
-   "op": "place",
-   "answer": 580,
-   "display": {
-    "ones": 0,
-    "tens": 58,
-    "type": "build",
-    "number": 580,
-    "promptText": "Combine 58 tens and 0 ones into one number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-regroupingSense-45-003",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 374,
-   "b": null,
-   "op": "place",
-   "answer": 374,
-   "display": {
-    "ones": 4,
-    "tens": 37,
-    "type": "build",
-    "number": 374,
-    "promptText": "Combine 37 tens and 4 ones into one number."
-   }
-  }
- },
- {
   "itemId": "placevalue-proc-tensOnes-45-001",
   "modeId": "placeValue",
   "itemFamily": "procedural",
@@ -9140,6 +9482,56 @@ export const SEED_ITEMS = [
     "type": "tens_in",
     "number": 234,
     "promptText": "How many tens in 234?"
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-proc-expandedForm-45-002",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "expandedForm",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 580,
+   "b": null,
+   "op": "place",
+   "answer": 580,
+   "display": {
+    "ones": 0,
+    "tens": 58,
+    "type": "build",
+    "number": 580,
+    "promptText": "58 tens + 0 ones = ?"
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-proc-regroupingSense-45-002",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "regroupingSense",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 580,
+   "b": null,
+   "op": "place",
+   "answer": 580,
+   "display": {
+    "ones": 0,
+    "tens": 58,
+    "type": "build",
+    "number": 580,
+    "promptText": "Combine 58 tens and 0 ones into one number."
    }
   }
  },
@@ -9169,6 +9561,56 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "placevalue-proc-expandedForm-45-003",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "expandedForm",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 374,
+   "b": null,
+   "op": "place",
+   "answer": 374,
+   "display": {
+    "ones": 4,
+    "tens": 37,
+    "type": "build",
+    "number": 374,
+    "promptText": "37 tens + 4 ones = ?"
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-proc-regroupingSense-45-003",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "regroupingSense",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 374,
+   "b": null,
+   "op": "place",
+   "answer": 374,
+   "display": {
+    "ones": 4,
+    "tens": 37,
+    "type": "build",
+    "number": 374,
+    "promptText": "Combine 37 tens and 4 ones into one number."
+   }
+  }
+ },
+ {
   "itemId": "placevalue-proc-expandedForm-K1-001",
   "modeId": "placeValue",
   "itemFamily": "procedural",
@@ -9190,56 +9632,6 @@ export const SEED_ITEMS = [
     "type": "build",
     "number": 13,
     "promptText": "1 ten + 3 ones = ?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-expandedForm-K1-002",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 20,
-   "b": null,
-   "op": "place",
-   "answer": 20,
-   "display": {
-    "ones": 0,
-    "tens": 2,
-    "type": "build",
-    "number": 20,
-    "promptText": "2 tens + 0 ones = ?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-expandedForm-K1-003",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 17,
-   "b": null,
-   "op": "place",
-   "answer": 17,
-   "display": {
-    "ones": 7,
-    "tens": 1,
-    "type": "build",
-    "number": 17,
-    "promptText": "1 ten + 7 ones = ?"
    }
   }
  },
@@ -9269,56 +9661,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placevalue-proc-regroupingSense-K1-002",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 18,
-   "b": null,
-   "op": "place",
-   "answer": 18,
-   "display": {
-    "ones": 8,
-    "tens": 1,
-    "type": "build",
-    "number": 18,
-    "promptText": "Combine 1 ten and 8 ones into one number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-regroupingSense-K1-003",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 25,
-   "b": null,
-   "op": "place",
-   "answer": 25,
-   "display": {
-    "ones": 5,
-    "tens": 2,
-    "type": "build",
-    "number": 25,
-    "promptText": "Combine 2 tens and 5 ones into one number."
-   }
-  }
- },
- {
   "itemId": "placevalue-proc-tensOnes-K1-001",
   "modeId": "placeValue",
   "itemFamily": "procedural",
@@ -9340,6 +9682,56 @@ export const SEED_ITEMS = [
     "type": "tens_in",
     "number": 12,
     "promptText": "How many tens in 12?"
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-proc-expandedForm-K1-002",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "expandedForm",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 20,
+   "b": null,
+   "op": "place",
+   "answer": 20,
+   "display": {
+    "ones": 0,
+    "tens": 2,
+    "type": "build",
+    "number": 20,
+    "promptText": "2 tens + 0 ones = ?"
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-proc-regroupingSense-K1-002",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "regroupingSense",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 18,
+   "b": null,
+   "op": "place",
+   "answer": 18,
+   "display": {
+    "ones": 8,
+    "tens": 1,
+    "type": "build",
+    "number": 18,
+    "promptText": "Combine 1 ten and 8 ones into one number."
    }
   }
  },
@@ -9369,6 +9761,56 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "placevalue-proc-expandedForm-K1-003",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "expandedForm",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 17,
+   "b": null,
+   "op": "place",
+   "answer": 17,
+   "display": {
+    "ones": 7,
+    "tens": 1,
+    "type": "build",
+    "number": 17,
+    "promptText": "1 ten + 7 ones = ?"
+   }
+  }
+ },
+ {
+  "itemId": "placevalue-proc-regroupingSense-K1-003",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "regroupingSense",
+  "structureType": "buildFromUnits",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 25,
+   "b": null,
+   "op": "place",
+   "answer": 25,
+   "display": {
+    "ones": 5,
+    "tens": 2,
+    "type": "build",
+    "number": 25,
+    "promptText": "Combine 2 tens and 5 ones into one number."
+   }
+  }
+ },
+ {
   "itemId": "skipcounting-app-001",
   "modeId": "skipCounting",
   "itemFamily": "application",
@@ -9391,34 +9833,12 @@ export const SEED_ITEMS = [
      15,
      18
     ],
-    "promptText": "A student counts by 3s: 12, 15, 18. What number comes next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-app-002",
-  "modeId": "skipCounting",
-  "itemFamily": "application",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 24,
-   "display": {
-    "step": 6,
-    "sequence": [
-     6,
-     12,
-     18
-    ],
-    "promptText": "A clock chime rings every 6 minutes: 6, 12, 18. When does it ring next?"
+    "promptText": "A student counts by 3s: 12, 15, 18. What number comes next?",
+    "promptOptions": [
+     "Maya counts by 3s. She says 12, then 15, then 18. What number comes next?",
+     "A child counts: 12, 15, 18. What's the next number she counts?",
+     "Jake counts by 3s. He says: 12, 15, 18. What number next?"
+    ]
    }
   }
  },
@@ -9445,34 +9865,12 @@ export const SEED_ITEMS = [
      36,
      40
     ],
-    "promptText": "A pattern increases by 4: 32, 36, 40. What comes next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-app-004",
-  "modeId": "skipCounting",
-  "itemFamily": "application",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   9,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 80,
-   "display": {
-    "step": 10,
-    "sequence": [
-     50,
-     60,
-     70
-    ],
-    "promptText": "A jar fills 10 marbles at a time: 50, 60, 70. How many marbles next?"
+    "promptText": "A pattern increases by 4: 32, 36, 40. What comes next?",
+    "promptOptions": [
+     "Emma finds a pattern: 32, 36, 40. It grows by 4 each time. What comes next?",
+     "A pattern grows by 4 each time: 32, 36, 40. What comes next?",
+     "Numbers grow by 4: 32, 36, 40. What number comes next?"
+    ]
    }
   }
  },
@@ -9499,7 +9897,76 @@ export const SEED_ITEMS = [
      50,
      55
     ],
-    "promptText": "A scoreboard goes up by 5 points: 45, 50, 55. What score is next?"
+    "promptText": "A scoreboard goes up by 5 points: 45, 50, 55. What score is next?",
+    "promptOptions": [
+     "A team scores 45, then 50, then 55 points. What score is next?",
+     "A team's score goes up by 5 points: 45, 50, 55. What score is next?",
+     "Points grow by 5: 45, 50, 55. What's the next score?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-app-002",
+  "modeId": "skipCounting",
+  "itemFamily": "application",
+  "subskill": "patternRule",
+  "structureType": "patternNext",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 24,
+   "display": {
+    "step": 6,
+    "sequence": [
+     6,
+     12,
+     18
+    ],
+    "promptText": "A clock chime rings every 6 minutes: 6, 12, 18. When does it ring next?",
+    "promptOptions": [
+     "A timer beeps every 6 minutes: 6, 12, 18 minutes. When does it beep next?",
+     "A bell rings at 6, 12, then 18 minutes. When does it ring next?",
+     "A chime sounds every 6 minutes at 6, 12, and 18 minutes. When next?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-app-004",
+  "modeId": "skipCounting",
+  "itemFamily": "application",
+  "subskill": "stepInference",
+  "structureType": "patternNext",
+  "levelRange": [
+   9,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 80,
+   "display": {
+    "step": 10,
+    "sequence": [
+     50,
+     60,
+     70
+    ],
+    "promptText": "A jar fills 10 marbles at a time: 50, 60, 70. How many marbles next?",
+    "promptOptions": [
+     "A jar gets 10 more marbles each time: 50, 60, 70. How many marbles next?",
+     "They keep adding marbles to a jar: 50, then 60, then 70. How many marbles next?",
+     "Someone adds marbles to a jar. It now has 50, then 60, then 70. How many next?"
+    ]
    }
   }
  },
@@ -9526,7 +9993,12 @@ export const SEED_ITEMS = [
      80,
      85
     ],
-    "promptText": "A class earns 5 stars per chapter: 75, 80, 85. How many stars after one more chapter?"
+    "promptText": "A class earns 5 stars per chapter: 75, 80, 85. How many stars after one more chapter?",
+    "promptOptions": [
+     "A class earns 5 more stars each chapter: 75, 80, 85. How many stars next?",
+     "The class has 75 stars, then 80, then 85. They earn 5 more each chapter. How many next?",
+     "A class gets 5 stars for each chapter. After three: 75, 80, 85. How many next?"
+    ]
    }
   }
  },
@@ -9553,7 +10025,12 @@ export const SEED_ITEMS = [
      20,
      24
     ],
-    "promptText": "A timer beeps every 4 seconds: 16, 20, 24. When does it beep next?"
+    "promptText": "A timer beeps every 4 seconds: 16, 20, 24. When does it beep next?",
+    "promptOptions": [
+     "A timer beeps every 4 seconds: 16, 20, 24 seconds. When does it beep next?",
+     "A timer beeps at 16, 20, then 24 seconds. When does it beep next?",
+     "A bell rings every 4 seconds: 16, 20, 24. When does it ring next?"
+    ]
    }
   }
  },
@@ -9580,7 +10057,12 @@ export const SEED_ITEMS = [
      22,
      26
     ],
-    "promptText": "A line of beads grows by the same amount each step: 18, 22, 26. What comes next?"
+    "promptText": "A line of beads grows by the same amount each step: 18, 22, 26. What comes next?",
+    "promptOptions": [
+     "Emma arranges beads: 18, then 22, then 26. She adds 4 each time. How many beads next?",
+     "A string of beads grows the same amount each step: 18, 22, 26. How many beads next?",
+     "Beads in a line grow by 4: 18, 22, 26. How many next?"
+    ]
    }
   }
  },
@@ -9607,61 +10089,11 @@ export const SEED_ITEMS = [
      4,
      6
     ],
-    "promptText": "A frog hops 2 each step: 2, 4, 6. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-app-015",
-  "modeId": "skipCounting",
-  "itemFamily": "application",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 20,
-   "display": {
-    "step": 5,
-    "sequence": [
-     5,
-     10,
-     15
-    ],
-    "promptText": "A bunny hops 5 carrots each leap: 5, 10, 15. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-app-016",
-  "modeId": "skipCounting",
-  "itemFamily": "application",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 6,
-   "display": {
-    "step": 2,
-    "sequence": [
-     0,
-     2,
-     4
-    ],
-    "promptText": "A toy car moves 2 squares each turn: 0, 2, 4. What's next?"
+    "promptText": "A frog hops 2 each step: 2, 4, 6. What's next?",
+    "promptOptions": [
+     "A frog hops 2 steps at a time: 2, 4, 6. Where is the frog after the next hop?",
+     "A toy car moves 2 spaces each turn: 2, 4, 6. How many spaces after one more turn?"
+    ]
    }
   }
  },
@@ -9688,7 +10120,72 @@ export const SEED_ITEMS = [
      6,
      9
     ],
-    "promptText": "A pattern shows 3, 6, 9. What's next?"
+    "promptText": "A pattern shows 3, 6, 9. What's next?",
+    "promptOptions": [
+     "Emma stacks 3 blocks each time. She has 3, then 6, then 9. How many after the next stack?",
+     "A pattern adds 3 each step: 3, 6, 9. What comes next?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-app-020",
+  "modeId": "skipCounting",
+  "itemFamily": "application",
+  "subskill": "groupsToProduct",
+  "structureType": "patternNext",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 15,
+   "display": {
+    "step": 5,
+    "sequence": [
+     5,
+     10
+    ],
+    "promptText": "5 marbles per jar; after 1, 2 jars: 5, 10. After 3 jars?",
+    "promptOptions": [
+     "A jar holds 5 marbles. 1 jar: 5, 2 jars: 10. How many marbles in 3 jars?",
+     "Marbles: 1 jar (5), 2 jars (10). How many marbles in 3 jars?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-app-015",
+  "modeId": "skipCounting",
+  "itemFamily": "application",
+  "subskill": "patternRule",
+  "structureType": "patternNext",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 20,
+   "display": {
+    "step": 5,
+    "sequence": [
+     5,
+     10,
+     15
+    ],
+    "promptText": "A bunny hops 5 carrots each leap: 5, 10, 15. What's next?",
+    "promptOptions": [
+     "A bunny eats 5 carrots each day: 5, 10, 15. How many carrots after one more day?",
+     "Leo collects 5 rocks each week: 5, 10, 15. How many rocks after the next week?"
+    ]
    }
   }
  },
@@ -9716,60 +10213,11 @@ export const SEED_ITEMS = [
      5,
      7
     ],
-    "promptText": "Odd numbers 1, 3, 5, 7. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-app-019",
-  "modeId": "skipCounting",
-  "itemFamily": "application",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 16,
-   "display": {
-    "step": 4,
-    "sequence": [
-     4,
-     8,
-     12
-    ],
-    "promptText": "A row counts 4, 8, 12. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-app-020",
-  "modeId": "skipCounting",
-  "itemFamily": "application",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 15,
-   "display": {
-    "step": 5,
-    "sequence": [
-     5,
-     10
-    ],
-    "promptText": "5 marbles per jar; after 1, 2 jars: 5, 10. After 3 jars?"
+    "promptText": "Odd numbers 1, 3, 5, 7. What's next?",
+    "promptOptions": [
+     "Mia counts odd numbers: 1, 3, 5, 7. What's the next one she says?",
+     "A pattern of odd numbers: 1, 3, 5, 7. What is the next odd number?"
+    ]
    }
   }
  },
@@ -9796,7 +10244,73 @@ export const SEED_ITEMS = [
      6,
      9
     ],
-    "promptText": "3 cookies per plate; after 1, 2, 3 plates: 3, 6, 9. After 4 plates?"
+    "promptText": "3 cookies per plate; after 1, 2, 3 plates: 3, 6, 9. After 4 plates?",
+    "promptOptions": [
+     "Each plate has 3 cookies. 1 plate: 3, 2 plates: 6, 3 plates: 9. How many on 4 plates?",
+     "A baker puts 3 cookies on each plate: 1 (3), 2 (6), 3 (9). How many total on 4 plates?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-app-016",
+  "modeId": "skipCounting",
+  "itemFamily": "application",
+  "subskill": "patternRule",
+  "structureType": "patternNext",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 6,
+   "display": {
+    "step": 2,
+    "sequence": [
+     0,
+     2,
+     4
+    ],
+    "promptText": "A toy car moves 2 squares each turn: 0, 2, 4. What's next?",
+    "promptOptions": [
+     "A game marker starts at 0 and moves 2 spaces each turn: 0, 2, 4. Where is it after the next turn?",
+     "A toy moves 2 squares each turn, starting at 0: 0, 2, 4. What's the next position?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-app-019",
+  "modeId": "skipCounting",
+  "itemFamily": "application",
+  "subskill": "stepInference",
+  "structureType": "patternNext",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 16,
+   "display": {
+    "step": 4,
+    "sequence": [
+     4,
+     8,
+     12
+    ],
+    "promptText": "A row counts 4, 8, 12. What's next?",
+    "promptOptions": [
+     "Each shelf has 4 books. 1 shelf: 4, 2 shelves: 8, 3 shelves: 12. How many on 4 shelves?",
+     "A pattern counts by 4s: 4, 8, 12. What's next?"
+    ]
    }
   }
  },
@@ -9823,61 +10337,11 @@ export const SEED_ITEMS = [
      20,
      30
     ],
-    "promptText": "A truck adds 10 each load: 10, 20, 30. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-app-024",
-  "modeId": "skipCounting",
-  "itemFamily": "application",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 24,
-   "display": {
-    "step": 6,
-    "sequence": [
-     6,
-     12,
-     18
-    ],
-    "promptText": "Counters jump by 6: 6, 12, 18. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-app-025",
-  "modeId": "skipCounting",
-  "itemFamily": "application",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 44,
-   "display": {
-    "step": 11,
-    "sequence": [
-     11,
-     22,
-     33
-    ],
-    "promptText": "Cards stack 11 at a time: 11, 22, 33. What's next?"
+    "promptText": "A truck adds 10 each load: 10, 20, 30. What's next?",
+    "promptOptions": [
+     "A truck delivers 10 boxes each trip: 10, 20, 30. How many boxes after the next trip?",
+     "Each delivery brings 10 items: 10, 20, 30. How many after one more delivery?"
+    ]
    }
   }
  },
@@ -9904,61 +10368,11 @@ export const SEED_ITEMS = [
      14,
      21
     ],
-    "promptText": "A pattern shows 7, 14, 21. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-app-027",
-  "modeId": "skipCounting",
-  "itemFamily": "application",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 32,
-   "display": {
-    "step": 8,
-    "sequence": [
-     8,
-     16,
-     24
-    ],
-    "promptText": "Counting in order 8, 16, 24. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-app-028",
-  "modeId": "skipCounting",
-  "itemFamily": "application",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 60,
-   "display": {
-    "step": 15,
-    "sequence": [
-     15,
-     30,
-     45
-    ],
-    "promptText": "Pattern: 15, 30, 45. What's next?"
+    "promptText": "A pattern shows 7, 14, 21. What's next?",
+    "promptOptions": [
+     "Maria counts by 7s. She says 7, 14, 21. What comes next?",
+     "Counting by 7s: 7, 14, 21. What's the next number?"
+    ]
    }
   }
  },
@@ -9985,7 +10399,73 @@ export const SEED_ITEMS = [
      8,
      12
     ],
-    "promptText": "4 books per shelf; 4, 8, 12 after 3 shelves. After 4 shelves?"
+    "promptText": "4 books per shelf; 4, 8, 12 after 3 shelves. After 4 shelves?",
+    "promptOptions": [
+     "Jayden puts 4 books on each shelf. After 3 shelves he has 4, 8, 12 books. How many books after 4 shelves?",
+     "Counting by 4s for each shelf: 4, 8, 12. What comes next?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-app-024",
+  "modeId": "skipCounting",
+  "itemFamily": "application",
+  "subskill": "patternRule",
+  "structureType": "patternNext",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 24,
+   "display": {
+    "step": 6,
+    "sequence": [
+     6,
+     12,
+     18
+    ],
+    "promptText": "Counters jump by 6: 6, 12, 18. What's next?",
+    "promptOptions": [
+     "Leo skip-counts by 6s: 6, 12, 18. What's the next number?",
+     "A pattern jumps by 6 each time: 6, 12, 18. What comes next?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-app-027",
+  "modeId": "skipCounting",
+  "itemFamily": "application",
+  "subskill": "stepInference",
+  "structureType": "patternNext",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 32,
+   "display": {
+    "step": 8,
+    "sequence": [
+     8,
+     16,
+     24
+    ],
+    "promptText": "Counting in order 8, 16, 24. What's next?",
+    "promptOptions": [
+     "Carlos counts by 8s. He says 8, 16, 24. What comes next?",
+     "Counting by 8s: 8, 16, 24. What's the next number?"
+    ]
    }
   }
  },
@@ -10012,7 +10492,73 @@ export const SEED_ITEMS = [
      12,
      18
     ],
-    "promptText": "6 candies per jar; 6, 12, 18 after 3 jars. After 4 jars?"
+    "promptText": "6 candies per jar; 6, 12, 18 after 3 jars. After 4 jars?",
+    "promptOptions": [
+     "Maria fills jars with 6 candies each. After 3 jars she has 6, 12, 18 candies. How many candies after 4 jars?",
+     "Counting by 6s for each jar: 6, 12, 18. What comes next?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-app-025",
+  "modeId": "skipCounting",
+  "itemFamily": "application",
+  "subskill": "patternRule",
+  "structureType": "patternNext",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 44,
+   "display": {
+    "step": 11,
+    "sequence": [
+     11,
+     22,
+     33
+    ],
+    "promptText": "Cards stack 11 at a time: 11, 22, 33. What's next?",
+    "promptOptions": [
+     "Jayden counts by 11s. He says 11, 22, 33. What comes next?",
+     "Counting by 11s: 11, 22, 33. What's the next number?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-app-028",
+  "modeId": "skipCounting",
+  "itemFamily": "application",
+  "subskill": "stepInference",
+  "structureType": "patternNext",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 60,
+   "display": {
+    "step": 15,
+    "sequence": [
+     15,
+     30,
+     45
+    ],
+    "promptText": "Pattern: 15, 30, 45. What's next?",
+    "promptOptions": [
+     "Maria counts by 15s. She says 15, 30, 45. What comes next?",
+     "Counting by 15s: 15, 30, 45. What's the next number?"
+    ]
    }
   }
  },
@@ -10041,6 +10587,60 @@ export const SEED_ITEMS = [
      16
     ],
     "promptText": "Use skip-counting by 4s for 5 groups of 4."
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-conc-patternRule-23-001",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "patternRule",
+  "structureType": "patternNext",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 40,
+   "display": {
+    "step": 10,
+    "sequence": [
+     10,
+     20,
+     30
+    ],
+    "promptText": "Identify the rule in 10, 20, 30 and find the next term."
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-conc-stepInference-23-001",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "stepInference",
+  "structureType": "patternNext",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 28,
+   "display": {
+    "step": 7,
+    "sequence": [
+     7,
+     14,
+     21
+    ],
+    "promptText": "What is the step in 7, 14, 21? Use it to find the next term."
    }
   }
  },
@@ -10074,60 +10674,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "skipcounting-conc-groupsToProduct-23-003",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 24,
-   "display": {
-    "step": 6,
-    "sequence": [
-     6,
-     12,
-     18
-    ],
-    "promptText": "Use skip-counting by 6s for 4 groups of 6."
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-patternRule-23-001",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 40,
-   "display": {
-    "step": 10,
-    "sequence": [
-     10,
-     20,
-     30
-    ],
-    "promptText": "Identify the rule in 10, 20, 30 and find the next term."
-   }
-  }
- },
- {
   "itemId": "skipcounting-conc-patternRule-23-002",
   "modeId": "skipCounting",
   "itemFamily": "conceptual",
@@ -10151,60 +10697,6 @@ export const SEED_ITEMS = [
      18
     ],
     "promptText": "What pattern do 6, 12, 18 follow? Continue it."
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-patternRule-23-003",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 44,
-   "display": {
-    "step": 11,
-    "sequence": [
-     11,
-     22,
-     33
-    ],
-    "promptText": "Recognize the rule in 11, 22, 33 and find the next term."
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-stepInference-23-001",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 28,
-   "display": {
-    "step": 7,
-    "sequence": [
-     7,
-     14,
-     21
-    ],
-    "promptText": "What is the step in 7, 14, 21? Use it to find the next term."
    }
   }
  },
@@ -10236,6 +10728,60 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "skipcounting-conc-groupsToProduct-23-003",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "groupsToProduct",
+  "structureType": "patternNext",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 24,
+   "display": {
+    "step": 6,
+    "sequence": [
+     6,
+     12,
+     18
+    ],
+    "promptText": "Use skip-counting by 6s for 4 groups of 6."
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-conc-patternRule-23-003",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "patternRule",
+  "structureType": "patternNext",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 44,
+   "display": {
+    "step": 11,
+    "sequence": [
+     11,
+     22,
+     33
+    ],
+    "promptText": "Recognize the rule in 11, 22, 33 and find the next term."
+   }
+  }
+ },
+ {
   "itemId": "skipcounting-conc-groupsToProduct-45-001",
   "modeId": "skipCounting",
   "itemFamily": "conceptual",
@@ -10263,6 +10809,60 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "skipcounting-conc-patternRule-45-001",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "patternRule",
+  "structureType": "patternNext",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 100,
+   "display": {
+    "step": 25,
+    "sequence": [
+     25,
+     50,
+     75
+    ],
+    "promptText": "Identify the rule in 25, 50, 75 and find the next term."
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-conc-stepInference-45-001",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "stepInference",
+  "structureType": "patternNext",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 80,
+   "display": {
+    "step": 10,
+    "sequence": [
+     50,
+     60,
+     70
+    ],
+    "promptText": "What is the step in 50, 60, 70? Use it to find the next term."
+   }
+  }
+ },
+ {
   "itemId": "skipcounting-conc-groupsToProduct-45-002",
   "modeId": "skipCounting",
   "itemFamily": "conceptual",
@@ -10286,6 +10886,60 @@ export const SEED_ITEMS = [
      75
     ],
     "promptText": "Use skip-counting by 25s for 4 groups of 25."
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-conc-patternRule-45-002",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "patternRule",
+  "structureType": "patternNext",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 48,
+   "display": {
+    "step": 12,
+    "sequence": [
+     12,
+     24,
+     36
+    ],
+    "promptText": "What pattern do 12, 24, 36 follow? Continue it."
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-conc-stepInference-45-002",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "stepInference",
+  "structureType": "patternNext",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 140,
+   "display": {
+    "step": 20,
+    "sequence": [
+     80,
+     100,
+     120
+    ],
+    "promptText": "Determine the step for 80, 100, 120 and the next term."
    }
   }
  },
@@ -10319,60 +10973,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "skipcounting-conc-patternRule-45-001",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 100,
-   "display": {
-    "step": 25,
-    "sequence": [
-     25,
-     50,
-     75
-    ],
-    "promptText": "Identify the rule in 25, 50, 75 and find the next term."
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-patternRule-45-002",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 48,
-   "display": {
-    "step": 12,
-    "sequence": [
-     12,
-     24,
-     36
-    ],
-    "promptText": "What pattern do 12, 24, 36 follow? Continue it."
-   }
-  }
- },
- {
   "itemId": "skipcounting-conc-patternRule-45-003",
   "modeId": "skipCounting",
   "itemFamily": "conceptual",
@@ -10400,60 +11000,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "skipcounting-conc-stepInference-45-001",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 80,
-   "display": {
-    "step": 10,
-    "sequence": [
-     50,
-     60,
-     70
-    ],
-    "promptText": "What is the step in 50, 60, 70? Use it to find the next term."
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-stepInference-45-002",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 140,
-   "display": {
-    "step": 20,
-    "sequence": [
-     80,
-     100,
-     120
-    ],
-    "promptText": "Determine the step for 80, 100, 120 and the next term."
-   }
-  }
- },
- {
   "itemId": "skipcounting-conc-groupsToProduct-K1-001",
   "modeId": "skipCounting",
   "itemFamily": "conceptual",
@@ -10476,61 +11022,6 @@ export const SEED_ITEMS = [
      10
     ],
     "promptText": "Use skip-counting by 5s to find 3 groups of 5."
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-groupsToProduct-K1-002",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 12,
-   "display": {
-    "step": 3,
-    "sequence": [
-     3,
-     6,
-     9
-    ],
-    "promptText": "Use skip-counting by 3s for 4 groups of 3."
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-groupsToProduct-K1-003",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 10,
-   "display": {
-    "step": 2,
-    "sequence": [
-     2,
-     4,
-     6,
-     8
-    ],
-    "promptText": "Use skip-counting by 2s for 5 groups of 2."
    }
   }
  },
@@ -10562,60 +11053,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "skipcounting-conc-patternRule-K1-002",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 20,
-   "display": {
-    "step": 5,
-    "sequence": [
-     5,
-     10,
-     15
-    ],
-    "promptText": "What pattern do 5, 10, 15 follow? Find the next term."
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-patternRule-K1-003",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 6,
-   "display": {
-    "step": 2,
-    "sequence": [
-     0,
-     2,
-     4
-    ],
-    "promptText": "Recognize the rule in 0, 2, 4 and continue the pattern."
-   }
-  }
- },
- {
   "itemId": "skipcounting-conc-stepInference-K1-001",
   "modeId": "skipCounting",
   "itemFamily": "conceptual",
@@ -10639,6 +11076,60 @@ export const SEED_ITEMS = [
      9
     ],
     "promptText": "What is the step in 3, 6, 9? Use it to find the next term."
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-conc-groupsToProduct-K1-002",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "groupsToProduct",
+  "structureType": "patternNext",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 12,
+   "display": {
+    "step": 3,
+    "sequence": [
+     3,
+     6,
+     9
+    ],
+    "promptText": "Use skip-counting by 3s for 4 groups of 3."
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-conc-patternRule-K1-002",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "patternRule",
+  "structureType": "patternNext",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 20,
+   "display": {
+    "step": 5,
+    "sequence": [
+     5,
+     10,
+     15
+    ],
+    "promptText": "What pattern do 5, 10, 15 follow? Find the next term."
    }
   }
  },
@@ -10671,6 +11162,61 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "skipcounting-conc-groupsToProduct-K1-003",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "groupsToProduct",
+  "structureType": "patternNext",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 10,
+   "display": {
+    "step": 2,
+    "sequence": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "promptText": "Use skip-counting by 2s for 5 groups of 2."
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-conc-patternRule-K1-003",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "patternRule",
+  "structureType": "patternNext",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 6,
+   "display": {
+    "step": 2,
+    "sequence": [
+     0,
+     2,
+     4
+    ],
+    "promptText": "Recognize the rule in 0, 2, 4 and continue the pattern."
+   }
+  }
+ },
+ {
   "itemId": "skipcounting-proc-groupsToProduct-23-001",
   "modeId": "skipCounting",
   "itemFamily": "procedural",
@@ -10695,6 +11241,60 @@ export const SEED_ITEMS = [
      16
     ],
     "promptText": "5 groups of 4: 4, 8, 12, 16, ?"
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-proc-patternRule-23-001",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "patternNext",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 40,
+   "display": {
+    "step": 10,
+    "sequence": [
+     10,
+     20,
+     30
+    ],
+    "promptText": "Skip count by 10: 10, 20, 30. What's next?"
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-proc-stepInference-23-001",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "stepInference",
+  "structureType": "patternNext",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 28,
+   "display": {
+    "step": 7,
+    "sequence": [
+     7,
+     14,
+     21
+    ],
+    "promptText": "Find the next term: 7, 14, 21, ?"
    }
   }
  },
@@ -10728,60 +11328,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "skipcounting-proc-groupsToProduct-23-003",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 24,
-   "display": {
-    "step": 6,
-    "sequence": [
-     6,
-     12,
-     18
-    ],
-    "promptText": "4 groups of 6: 6, 12, 18, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-23-001",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 40,
-   "display": {
-    "step": 10,
-    "sequence": [
-     10,
-     20,
-     30
-    ],
-    "promptText": "Skip count by 10: 10, 20, 30. What's next?"
-   }
-  }
- },
- {
   "itemId": "skipcounting-proc-patternRule-23-002",
   "modeId": "skipCounting",
   "itemFamily": "procedural",
@@ -10805,60 +11351,6 @@ export const SEED_ITEMS = [
      18
     ],
     "promptText": "Skip count by 6: 6, 12, 18. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-23-003",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 44,
-   "display": {
-    "step": 11,
-    "sequence": [
-     11,
-     22,
-     33
-    ],
-    "promptText": "Skip count by 11: 11, 22, 33. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-stepInference-23-001",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 28,
-   "display": {
-    "step": 7,
-    "sequence": [
-     7,
-     14,
-     21
-    ],
-    "promptText": "Find the next term: 7, 14, 21, ?"
    }
   }
  },
@@ -10890,6 +11382,60 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "skipcounting-proc-groupsToProduct-23-003",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "groupsToProduct",
+  "structureType": "patternNext",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 24,
+   "display": {
+    "step": 6,
+    "sequence": [
+     6,
+     12,
+     18
+    ],
+    "promptText": "4 groups of 6: 6, 12, 18, ?"
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-proc-patternRule-23-003",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "patternNext",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 44,
+   "display": {
+    "step": 11,
+    "sequence": [
+     11,
+     22,
+     33
+    ],
+    "promptText": "Skip count by 11: 11, 22, 33. What's next?"
+   }
+  }
+ },
+ {
   "itemId": "skipcounting-proc-groupsToProduct-45-001",
   "modeId": "skipCounting",
   "itemFamily": "procedural",
@@ -10917,6 +11463,60 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "skipcounting-proc-patternRule-45-001",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "patternNext",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 100,
+   "display": {
+    "step": 25,
+    "sequence": [
+     25,
+     50,
+     75
+    ],
+    "promptText": "Skip count by 25: 25, 50, 75. What's next?"
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-proc-stepInference-45-001",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "stepInference",
+  "structureType": "patternNext",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 80,
+   "display": {
+    "step": 10,
+    "sequence": [
+     50,
+     60,
+     70
+    ],
+    "promptText": "Find the next term: 50, 60, 70, ?"
+   }
+  }
+ },
+ {
   "itemId": "skipcounting-proc-groupsToProduct-45-002",
   "modeId": "skipCounting",
   "itemFamily": "procedural",
@@ -10940,6 +11540,60 @@ export const SEED_ITEMS = [
      75
     ],
     "promptText": "4 groups of 25: 25, 50, 75, ?"
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-proc-patternRule-45-002",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "patternNext",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 48,
+   "display": {
+    "step": 12,
+    "sequence": [
+     12,
+     24,
+     36
+    ],
+    "promptText": "Skip count by 12: 12, 24, 36. What's next?"
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-proc-stepInference-45-002",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "stepInference",
+  "structureType": "patternNext",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 140,
+   "display": {
+    "step": 20,
+    "sequence": [
+     80,
+     100,
+     120
+    ],
+    "promptText": "Find the next term: 80, 100, 120, ?"
    }
   }
  },
@@ -10973,60 +11627,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "skipcounting-proc-patternRule-45-001",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 100,
-   "display": {
-    "step": 25,
-    "sequence": [
-     25,
-     50,
-     75
-    ],
-    "promptText": "Skip count by 25: 25, 50, 75. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-45-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 48,
-   "display": {
-    "step": 12,
-    "sequence": [
-     12,
-     24,
-     36
-    ],
-    "promptText": "Skip count by 12: 12, 24, 36. What's next?"
-   }
-  }
- },
- {
   "itemId": "skipcounting-proc-patternRule-45-003",
   "modeId": "skipCounting",
   "itemFamily": "procedural",
@@ -11054,60 +11654,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "skipcounting-proc-stepInference-45-001",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 80,
-   "display": {
-    "step": 10,
-    "sequence": [
-     50,
-     60,
-     70
-    ],
-    "promptText": "Find the next term: 50, 60, 70, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-stepInference-45-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 140,
-   "display": {
-    "step": 20,
-    "sequence": [
-     80,
-     100,
-     120
-    ],
-    "promptText": "Find the next term: 80, 100, 120, ?"
-   }
-  }
- },
- {
   "itemId": "skipcounting-proc-groupsToProduct-K1-001",
   "modeId": "skipCounting",
   "itemFamily": "procedural",
@@ -11130,61 +11676,6 @@ export const SEED_ITEMS = [
      10
     ],
     "promptText": "3 groups of 5: 5, 10, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-groupsToProduct-K1-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 12,
-   "display": {
-    "step": 3,
-    "sequence": [
-     3,
-     6,
-     9
-    ],
-    "promptText": "4 groups of 3: 3, 6, 9, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-groupsToProduct-K1-003",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 10,
-   "display": {
-    "step": 2,
-    "sequence": [
-     2,
-     4,
-     6,
-     8
-    ],
-    "promptText": "5 groups of 2: 2, 4, 6, 8, ?"
    }
   }
  },
@@ -11216,60 +11707,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "skipcounting-proc-patternRule-K1-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 20,
-   "display": {
-    "step": 5,
-    "sequence": [
-     5,
-     10,
-     15
-    ],
-    "promptText": "Skip count by 5: 5, 10, 15. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-K1-003",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 6,
-   "display": {
-    "step": 2,
-    "sequence": [
-     0,
-     2,
-     4
-    ],
-    "promptText": "Skip count by 2 starting at 0: 0, 2, 4. What's next?"
-   }
-  }
- },
- {
   "itemId": "skipcounting-proc-stepInference-K1-001",
   "modeId": "skipCounting",
   "itemFamily": "procedural",
@@ -11293,6 +11730,60 @@ export const SEED_ITEMS = [
      9
     ],
     "promptText": "Find the next term: 3, 6, 9, ?"
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-proc-groupsToProduct-K1-002",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "groupsToProduct",
+  "structureType": "patternNext",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 12,
+   "display": {
+    "step": 3,
+    "sequence": [
+     3,
+     6,
+     9
+    ],
+    "promptText": "4 groups of 3: 3, 6, 9, ?"
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-proc-patternRule-K1-002",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "patternNext",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 20,
+   "display": {
+    "step": 5,
+    "sequence": [
+     5,
+     10,
+     15
+    ],
+    "promptText": "Skip count by 5: 5, 10, 15. What's next?"
    }
   }
  },
@@ -11325,11 +11816,66 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "skipcounting-proc-groupsToProduct-K1-003",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "groupsToProduct",
+  "structureType": "patternNext",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 10,
+   "display": {
+    "step": 2,
+    "sequence": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "promptText": "5 groups of 2: 2, 4, 6, 8, ?"
+   }
+  }
+ },
+ {
+  "itemId": "skipcounting-proc-patternRule-K1-003",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "patternNext",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "skip",
+   "answer": 6,
+   "display": {
+    "step": 2,
+    "sequence": [
+     0,
+     2,
+     4
+    ],
+    "promptText": "Skip count by 2 starting at 0: 0, 2, 4. What's next?"
+   }
+  }
+ },
+ {
   "itemId": "subtraction-app-001",
   "modeId": "subtraction",
   "itemFamily": "application",
   "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
+  "structureType": "compareDifferenceMore",
   "levelRange": [
    7,
    10
@@ -11341,54 +11887,15 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 15,
    "display": {
-    "promptText": "Nia read 43 pages this week and 28 pages last week. How many more pages did she read this week?"
+    "promptText": "Nia read 43 pages this week and 28 pages last week. How many more pages did she read this week?",
+    "promptOptions": [
+     "This week Nia read 43 pages. Last week she read 28 pages. How many more pages did she read this week?"
+    ]
    }
   }
  },
  {
-  "itemId": "subtraction-app-012",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "unknownSubtrahend",
-  "structureType": "separateChangeUnknown",
-  "levelRange": [
-   8,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 50,
-   "b": null,
-   "op": "−",
-   "answer": 18,
-   "display": {
-    "promptText": "A box held 50 paper clips. After some were used, 32 remained. How many paper clips were used?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-067",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 175,
-   "b": 98,
-   "op": "−",
-   "answer": 77,
-   "display": {
-    "promptText": "Kaz baked 175 cookies. Lane baked 98. How many more cookies did Kaz bake?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-104",
+  "itemId": "subtraction-app-004",
   "modeId": "subtraction",
   "itemFamily": "application",
   "subskill": "decomposeToSubtract",
@@ -11399,21 +11906,51 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 175,
-   "b": 96,
+   "a": 52,
+   "b": 19,
    "op": "−",
-   "answer": 79,
+   "answer": 33,
    "display": {
-    "promptText": "Urho had 175 coins. He spent 96 at the arcade. How many coins remain?"
+    "promptText": "There are 52 markers in a box. 19 are used in art class. How many markers are left?",
+    "promptOptions": [
+     "Mom bought 52 markers. The kids used 19 in art class. How many markers does Mom have left?",
+     "A box had 52 markers. 19 were used for a project. How many markers are left in the box?"
+    ]
    }
   }
  },
  {
-  "itemId": "subtraction-app-141",
+  "itemId": "subtraction-app-007",
   "modeId": "subtraction",
   "itemFamily": "application",
   "subskill": "unknownSubtrahend",
   "structureType": "separateChangeUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 61,
+   "b": null,
+   "op": "−",
+   "answer": 24,
+   "display": {
+    "promptText": "A shelf held 61 books. After some were borrowed, 37 remained. How many books were borrowed?",
+    "promptOptions": [
+     "Rosa started with 61 books. She lent some away. Now she has 37 books. How many books did she lend?",
+     "Marco had 61 books. After he lent some, he had 37 books. How many books did he lend?",
+     "A shelf held 61 books. Some were borrowed. Now 37 remain. How many books were borrowed?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-app-063",
+  "modeId": "subtraction",
+  "itemFamily": "application",
+  "subskill": "differenceAsDistance",
+  "structureType": "compareDifferenceMore",
   "levelRange": [
    7,
    10
@@ -11421,16 +11958,71 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 125,
-   "b": null,
+   "b": 78,
    "op": "−",
-   "answer": 48,
+   "answer": 47,
    "display": {
-    "promptText": "A library had 125 books. After being borrowed, 77 remained. How many books were borrowed?"
+    "promptText": "Ema typed 125 words. Fenix typed 78. How many more words did Ema type?",
+    "promptOptions": [
+     "Ema typed 125 words. Fenix typed 78 words. How many more words did Ema type?"
+    ]
    }
   }
  },
  {
-  "itemId": "subtraction-app-230",
+  "itemId": "subtraction-app-103",
+  "modeId": "subtraction",
+  "itemFamily": "application",
+  "subskill": "decomposeToSubtract",
+  "structureType": "separateResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 200,
+   "b": 125,
+   "op": "−",
+   "answer": 75,
+   "display": {
+    "promptText": "A museum had 200 visitors. 125 left for lunch. How many visitors remain?",
+    "promptOptions": [
+     "A museum had 200 visitors. Then 125 of them left for lunch. How many visitors remain in the museum?",
+     "Early in the day, the museum had 200 visitors. Then 125 left for lunch. How many visitors remain?",
+     "A busy museum had 200 visitors. After lunch time, 125 of them had left. How many visitors are still there?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-app-142",
+  "modeId": "subtraction",
+  "itemFamily": "application",
+  "subskill": "unknownSubtrahend",
+  "structureType": "separateChangeUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 150,
+   "b": null,
+   "op": "−",
+   "answer": 73,
+   "display": {
+    "promptText": "Varun had 150 postcards. He mailed some. 77 remain. How many postcards did Varun mail?",
+    "promptOptions": [
+     "Varun had 150 postcards. He mailed some. Now 77 remain. How many postcards did Varun mail?",
+     "Varun started with 150 postcards. After mailing some, 77 remained. How many postcards did Varun mail?",
+     "Varun had 150 postcards to send. He mailed some postcards. Now he has 77. How many postcards did Varun mail?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-app-229",
   "modeId": "subtraction",
   "itemFamily": "application",
   "subskill": "differenceAsDistance",
@@ -11441,17 +12033,22 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 150,
-   "b": 90,
+   "a": 120,
+   "b": 85,
    "op": "−",
-   "answer": 60,
+   "answer": 35,
    "display": {
-    "promptText": "A delivery truck dropped 150 packages today and 90 yesterday. How many more today?"
+    "promptText": "A music app played 120 songs on Saturday and 85 on Friday. What is the difference?",
+    "promptOptions": [
+     "A music app played 120 songs on Saturday and 85 on Friday. How many more songs on Saturday?",
+     "A music app played 120 songs on Saturday. It played 85 on Friday. How many more songs on Saturday?",
+     "On Saturday, a music app played 120 songs. On Friday, it played 85. How many more songs on Saturday?"
+    ]
    }
   }
  },
  {
-  "itemId": "subtraction-app-241",
+  "itemId": "subtraction-app-243",
   "modeId": "subtraction",
   "itemFamily": "application",
   "subskill": "decomposeToSubtract",
@@ -11462,33 +12059,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 100,
-   "b": 48,
+   "a": 140,
+   "b": 68,
    "op": "−",
-   "answer": 52,
+   "answer": 72,
    "display": {
-    "promptText": "A bakery made 100 rolls. 48 were sold by noon. How many rolls are left?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-252",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 110,
-   "b": 47,
-   "op": "−",
-   "answer": 63,
-   "display": {
-    "promptText": "A stationery order had 110 notebooks and 47 were distributed. How many remain?"
+    "promptText": "A factory had 140 boxes. 68 shipped out. How many boxes are left?",
+    "promptOptions": [
+     "A factory had 140 boxes. 68 shipped out. How many boxes were left?",
+     "A factory packed 140 boxes. 68 got shipped out. How many boxes were left?",
+     "The factory had 140 boxes. 68 were shipped to stores. How many boxes were left?"
+    ]
    }
   }
  },
@@ -11497,7 +12078,7 @@ export const SEED_ITEMS = [
   "modeId": "subtraction",
   "itemFamily": "application",
   "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
+  "structureType": "compareDifferenceMore",
   "levelRange": [
    1,
    3
@@ -11509,54 +12090,15 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 5,
    "display": {
-    "promptText": "Sara has 8 apples. Beto has 3 apples. How many more apples does Sara have?"
+    "promptText": "Sara has 8 apples. Beto has 3 apples. How many more apples does Sara have?",
+    "promptOptions": [
+     "Sara picked 8 apples. Beto picked 3 apples. How many more apples did Sara pick?"
+    ]
    }
   }
  },
  {
-  "itemId": "subtraction-app-033",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 9,
-   "b": 5,
-   "op": "−",
-   "answer": 4,
-   "display": {
-    "promptText": "Cinc counted 9 frogs and Daisy counted 5. How many more frogs did Cinc count?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-043",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 5,
-   "b": 2,
-   "op": "−",
-   "answer": 3,
-   "display": {
-    "promptText": "Wylie found 5 leaves. Xena found 2. How many more leaves did Wylie find?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-079",
+  "itemId": "subtraction-app-017",
   "modeId": "subtraction",
   "itemFamily": "application",
   "subskill": "decomposeToSubtract",
@@ -11567,17 +12109,21 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 6,
+   "a": 10,
    "b": 4,
    "op": "−",
-   "answer": 2,
+   "answer": 6,
    "display": {
-    "promptText": "Wynn had 6 pennies. She spent 4. How many pennies are left?"
+    "promptText": "A bag has 10 grapes. Lily eats 4 grapes. How many grapes are left in the bag?",
+    "promptOptions": [
+     "Lily had 10 grapes. She ate 4 grapes. How many grapes does Lily have left?",
+     "A bag had 10 grapes. Lily ate 4. How many grapes are left in the bag?"
+    ]
    }
   }
  },
  {
-  "itemId": "subtraction-app-115",
+  "itemId": "subtraction-app-020",
   "modeId": "subtraction",
   "itemFamily": "application",
   "subskill": "unknownSubtrahend",
@@ -11588,12 +12134,92 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 9,
+   "a": 10,
    "b": null,
    "op": "−",
-   "answer": 6,
+   "answer": 4,
    "display": {
-    "promptText": "A nest had 9 eggs. After hatching, 3 remained. How many eggs hatched?"
+    "promptText": "A jar had 10 candies. Now there are 6 candies. How many candies were eaten?",
+    "promptOptions": [
+     "Tasha had 10 candies. She ate some. Now she has 6 candies. How many candies did she eat?",
+     "A jar held 10 candies. After snack time, 6 candies remained. How many candies were eaten?",
+     "There were 10 candies. Some were eaten. Now there are 6 candies. How many candies were eaten?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-app-038",
+  "modeId": "subtraction",
+  "itemFamily": "application",
+  "subskill": "differenceAsDistance",
+  "structureType": "compareDifferenceMore",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 9,
+   "b": 1,
+   "op": "−",
+   "answer": 8,
+   "display": {
+    "promptText": "Makoto has 9 shells and Nur has 1. How many more shells does Makoto have?",
+    "promptOptions": [
+     "Makoto has 9 shells. Nur has 1 shell. How many more shells does Makoto have?",
+     "Makoto found 9 shells. Nur found 1 shell. How many more shells did Makoto find?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-app-077",
+  "modeId": "subtraction",
+  "itemFamily": "application",
+  "subskill": "decomposeToSubtract",
+  "structureType": "separateResultUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 9,
+   "b": 7,
+   "op": "−",
+   "answer": 2,
+   "display": {
+    "promptText": "Uri had 9 magnets. He took 7 off the fridge. How many magnets are still there?",
+    "promptOptions": [
+     "Uri had 9 magnets on his fridge. He took 7 off. How many magnets are left?",
+     "Uri had 9 magnets. Then he took 7 away. How many magnets are left?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-app-116",
+  "modeId": "subtraction",
+  "itemFamily": "application",
+  "subskill": "unknownSubtrahend",
+  "structureType": "separateChangeUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": null,
+   "op": "−",
+   "answer": 2,
+   "display": {
+    "promptText": "Cob had 8 crayons. After using some, he had 6. How many crayons did Cob use?",
+    "promptOptions": [
+     "Cob had 8 crayons. He used some. Now he has 6. How many crayons did Cob use?",
+     "Cob started with 8 crayons. He used some to draw. Now he has 6. How many crayons did he use?"
+    ]
    }
   }
  },
@@ -11602,7 +12228,7 @@ export const SEED_ITEMS = [
   "modeId": "subtraction",
   "itemFamily": "application",
   "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
+  "structureType": "compareDifferenceMore",
   "levelRange": [
    1,
    3
@@ -11614,33 +12240,17 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 4,
    "display": {
-    "promptText": "A red jar has 10 beads; a blue jar has 6. How many more beads are in the red jar?"
+    "promptText": "A red jar has 10 beads; a blue jar has 6. How many more beads are in the red jar?",
+    "promptOptions": [
+     "The red jar has 10 beads. The blue jar has 6 beads. How many more beads are in the red jar?",
+     "Maya put 10 beads in the red jar and 6 beads in the blue jar. How many more beads are in the red jar?",
+     "One jar is red with 10 beads. Another is blue with 6 beads. How many more beads does the red jar have?"
+    ]
    }
   }
  },
  {
-  "itemId": "subtraction-app-161",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 10,
-   "b": 4,
-   "op": "−",
-   "answer": 6,
-   "display": {
-    "promptText": "A bowl holds 10 grapes and a plate holds 4 grapes. What is the difference?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-171",
+  "itemId": "subtraction-app-164",
   "modeId": "subtraction",
   "itemFamily": "application",
   "subskill": "decomposeToSubtract",
@@ -11651,12 +12261,15 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 7,
+   "a": 8,
    "b": 3,
    "op": "−",
-   "answer": 4,
+   "answer": 5,
    "display": {
-    "promptText": "Ken had 7 coins and lost 3. How many coins does Ken have left?"
+    "promptText": "Jade had 8 stickers and gave 3 away. How many stickers does Jade have now?",
+    "promptOptions": [
+     "Jade had 8 stickers. She gave 3 to her best friend. How many stickers does Jade have now?"
+    ]
    }
   }
  },
@@ -11665,7 +12278,7 @@ export const SEED_ITEMS = [
   "modeId": "subtraction",
   "itemFamily": "application",
   "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
+  "structureType": "compareDifferenceMore",
   "levelRange": [
    4,
    6
@@ -11677,54 +12290,15 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 7,
    "display": {
-    "promptText": "Class A has 15 books. Class B has 8 books. How many more books does Class A have?"
+    "promptText": "Class A has 15 books. Class B has 8 books. How many more books does Class A have?",
+    "promptOptions": [
+     "Class A has 15 books and Class B has 8 books. How many more books does Class A have?"
+    ]
    }
   }
  },
  {
-  "itemId": "subtraction-app-046",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 14,
-   "b": 5,
-   "op": "−",
-   "answer": 9,
-   "display": {
-    "promptText": "Cate has 14 stickers. Dinu has 5. How many more stickers does Cate have?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-056",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 20,
-   "b": 12,
-   "op": "−",
-   "answer": 8,
-   "display": {
-    "promptText": "Uri has 20 coins. Vash has 12. How many more coins does Uri have?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-092",
+  "itemId": "subtraction-app-026",
   "modeId": "subtraction",
   "itemFamily": "application",
   "subskill": "decomposeToSubtract",
@@ -11735,17 +12309,21 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 30,
-   "b": 14,
+   "a": 20,
+   "b": 7,
    "op": "−",
-   "answer": 16,
+   "answer": 13,
    "display": {
-    "promptText": "Jorek had 30 chocolate chips. He used 14 in a recipe. How many chips are left?"
+    "promptText": "A box had 20 markers. 7 markers are missing. How many markers remain in the box?",
+    "promptOptions": [
+     "Mom bought 20 markers. 7 were lost. How many markers does Mom have left?",
+     "A box had 20 markers. 7 went missing. How many markers are left in the box?"
+    ]
    }
   }
  },
  {
-  "itemId": "subtraction-app-128",
+  "itemId": "subtraction-app-029",
   "modeId": "subtraction",
   "itemFamily": "application",
   "subskill": "unknownSubtrahend",
@@ -11756,12 +12334,95 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 17,
+   "a": 15,
    "b": null,
    "op": "−",
-   "answer": 9,
+   "answer": 7,
    "display": {
-    "promptText": "A pack had 17 balloons. After a party, 8 remained. How many balloons popped or flew away?"
+    "promptText": "A plate had 15 grapes. After snack time, 8 grapes are left. How many grapes were eaten?",
+    "promptOptions": [
+     "Marcus had 15 grapes. He ate some at snack time. Now he has 8 grapes. How many grapes did he eat?",
+     "A plate held 15 grapes. Some were eaten at snack time. Now 8 remain. How many grapes were eaten?",
+     "There were 15 grapes at snack time. Some were eaten. Now 8 grapes remain. How many grapes were eaten?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-app-051",
+  "modeId": "subtraction",
+  "itemFamily": "application",
+  "subskill": "differenceAsDistance",
+  "structureType": "compareDifferenceMore",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 16,
+   "b": 8,
+   "op": "−",
+   "answer": 8,
+   "display": {
+    "promptText": "Keva knitted 16 scarves. Liam knitted 8. How many more scarves did Keva knit?",
+    "promptOptions": [
+     "Keva knitted 16 scarves. Liam knitted 8 scarves. How many more scarves did Keva knit?",
+     "Keva and Liam were knitting scarves. Keva made 16. Liam made 8. How many more scarves did Keva knit?",
+     "Keva knitted 16 scarves. Liam knitted only 8 scarves. How many more scarves did Keva knit?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-app-090",
+  "modeId": "subtraction",
+  "itemFamily": "application",
+  "subskill": "decomposeToSubtract",
+  "structureType": "separateResultUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 19,
+   "b": 6,
+   "op": "−",
+   "answer": 13,
+   "display": {
+    "promptText": "A garden had 19 seeds. Harin planted 6. How many seeds are left?",
+    "promptOptions": [
+     "Harin had 19 seeds. She planted 6. How many seeds are left?",
+     "Harin had 19 seeds for a garden. She planted 6. How many seeds are left?",
+     "Harin's garden had 19 seeds. She planted 6. How many seeds are left?"
+    ]
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-app-129",
+  "modeId": "subtraction",
+  "itemFamily": "application",
+  "subskill": "unknownSubtrahend",
+  "structureType": "separateChangeUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 19,
+   "b": null,
+   "op": "−",
+   "answer": 12,
+   "display": {
+    "promptText": "Maya had 19 feet of rope. After cutting, 7 feet remained. How many feet of rope were cut?",
+    "promptOptions": [
+     "Maya had 19 feet of rope. She cut some of it. Now she has 7 feet left. How many feet of rope did she cut?",
+     "Maya started with 19 feet of rope. She cut some away. Now she has 7 feet. How many feet did she cut?",
+     "Maya had 19 feet of rope. After cutting, 7 feet remained. How many feet of rope did she cut?"
+    ]
    }
   }
  },
@@ -11770,7 +12431,7 @@ export const SEED_ITEMS = [
   "modeId": "subtraction",
   "itemFamily": "application",
   "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
+  "structureType": "compareDifferenceMore",
   "levelRange": [
    4,
    6
@@ -11782,33 +12443,16 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 8,
    "display": {
-    "promptText": "An ice rink had 17 skaters and a pond had 9. How many more skaters were at the rink?"
+    "promptText": "An ice rink had 17 skaters and a pond had 9. How many more skaters were at the rink?",
+    "promptOptions": [
+     "At the ice rink, 17 people skated. At the pond, 9 people skated. How many more skaters were at the rink?",
+     "The ice rink had 17 skaters and the pond had 9 skaters. How many more skaters were at the rink?"
+    ]
    }
   }
  },
  {
-  "itemId": "subtraction-app-200",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 16,
-   "b": 13,
-   "op": "−",
-   "answer": 3,
-   "display": {
-    "promptText": "Yuna read 16 books this year; Zephi read 13. How many fewer books did Zephi read?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-210",
+  "itemId": "subtraction-app-203",
   "modeId": "subtraction",
   "itemFamily": "application",
   "subskill": "decomposeToSubtract",
@@ -11819,12 +12463,15 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 20,
-   "b": 13,
+   "a": 15,
+   "b": 4,
    "op": "−",
-   "answer": 7,
+   "answer": 11,
    "display": {
-    "promptText": "A coach had 20 jerseys and handed out 13. How many jerseys remain?"
+    "promptText": "Vin baked 15 cookies and his cousin ate 4. How many cookies are left?",
+    "promptOptions": [
+     "Vin baked 15 cookies. His cousin ate 4. How many cookies are left?"
+    ]
    }
   }
  },
@@ -11850,7 +12497,112 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "subtraction-conc-decomposeToSubtract-23-011",
+  "itemId": "subtraction-conc-differenceAsDistance-23-001",
+  "modeId": "subtraction",
+  "itemFamily": "conceptual",
+  "subskill": "differenceAsDistance",
+  "structureType": "compareDifferenceUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 15,
+   "b": 8,
+   "op": "−",
+   "answer": 7,
+   "display": {
+    "promptText": "How far is 8 from 15 on a number line?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-conc-unknownSubtrahend-23-001",
+  "modeId": "subtraction",
+  "itemFamily": "conceptual",
+  "subskill": "unknownSubtrahend",
+  "structureType": "separateChangeUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 20,
+   "b": null,
+   "op": "−",
+   "answer": 9,
+   "display": {
+    "promptText": "Find the missing subtrahend: 20 − ? = 11"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-conc-decomposeToSubtract-23-010",
+  "modeId": "subtraction",
+  "itemFamily": "conceptual",
+  "subskill": "decomposeToSubtract",
+  "structureType": "separateResultUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 16,
+   "b": 11,
+   "op": "−",
+   "answer": 5,
+   "display": {
+    "promptText": "Bar model: whole of 16 with one part 11. The other part is?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-conc-differenceAsDistance-23-010",
+  "modeId": "subtraction",
+  "itemFamily": "conceptual",
+  "subskill": "differenceAsDistance",
+  "structureType": "compareDifferenceUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 13,
+   "b": 5,
+   "op": "−",
+   "answer": 8,
+   "display": {
+    "promptText": "Compare 13 and 5. The difference is?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-conc-unknownSubtrahend-23-010",
+  "modeId": "subtraction",
+  "itemFamily": "conceptual",
+  "subskill": "unknownSubtrahend",
+  "structureType": "separateChangeUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 14,
+   "b": null,
+   "op": "−",
+   "answer": 7,
+   "display": {
+    "promptText": "Think addition: 7 plus what makes 14?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-conc-decomposeToSubtract-23-019",
   "modeId": "subtraction",
   "itemFamily": "conceptual",
   "subskill": "decomposeToSubtract",
@@ -11862,79 +12614,16 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 14,
-   "b": 4,
-   "op": "−",
-   "answer": 10,
-   "display": {
-    "promptText": "Think of 14 as 4 + 10. What is 14 − 4?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-conc-decomposeToSubtract-23-021",
-  "modeId": "subtraction",
-  "itemFamily": "conceptual",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 18,
-   "b": 4,
-   "op": "−",
-   "answer": 14,
-   "display": {
-    "promptText": "Start with 18. Remove 4. What remains?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-conc-differenceAsDistance-23-002",
-  "modeId": "subtraction",
-  "itemFamily": "conceptual",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 20,
-   "b": 12,
-   "op": "−",
-   "answer": 8,
-   "display": {
-    "promptText": "Compare 20 and 12. How much greater is 20?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-conc-differenceAsDistance-23-012",
-  "modeId": "subtraction",
-  "itemFamily": "conceptual",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 19,
    "b": 7,
    "op": "−",
-   "answer": 12,
+   "answer": 7,
    "display": {
-    "promptText": "Compare 19 and 7. The difference is?"
+    "promptText": "Take 7 from 14. Result?"
    }
   }
  },
  {
-  "itemId": "subtraction-conc-differenceAsDistance-23-022",
+  "itemId": "subtraction-conc-differenceAsDistance-23-019",
   "modeId": "subtraction",
   "itemFamily": "conceptual",
   "subskill": "differenceAsDistance",
@@ -11945,54 +12634,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 18,
-   "b": 3,
+   "a": 17,
+   "b": 6,
    "op": "−",
-   "answer": 15,
+   "answer": 11,
    "display": {
-    "promptText": "How many more is 18 than 3?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-conc-unknownSubtrahend-23-003",
-  "modeId": "subtraction",
-  "itemFamily": "conceptual",
-  "subskill": "unknownSubtrahend",
-  "structureType": "separateChangeUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 18,
-   "b": null,
-   "op": "−",
-   "answer": 9,
-   "display": {
-    "promptText": "Solve for the unknown: 18 − ? = 9"
-   }
-  }
- },
- {
-  "itemId": "subtraction-conc-unknownSubtrahend-23-013",
-  "modeId": "subtraction",
-  "itemFamily": "conceptual",
-  "subskill": "unknownSubtrahend",
-  "structureType": "separateChangeUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 13,
-   "b": null,
-   "op": "−",
-   "answer": 6,
-   "display": {
-    "promptText": "Fill in the blank: 13 − __ = 7"
+    "promptText": "Count back from 17 by 6. Where do you land?"
    }
   }
  },
@@ -12018,7 +12665,112 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "subtraction-conc-decomposeToSubtract-45-011",
+  "itemId": "subtraction-conc-differenceAsDistance-45-001",
+  "modeId": "subtraction",
+  "itemFamily": "conceptual",
+  "subskill": "differenceAsDistance",
+  "structureType": "compareDifferenceUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 50,
+   "b": 22,
+   "op": "−",
+   "answer": 28,
+   "display": {
+    "promptText": "How much greater is 50 than 22?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-conc-unknownSubtrahend-45-001",
+  "modeId": "subtraction",
+  "itemFamily": "conceptual",
+  "subskill": "unknownSubtrahend",
+  "structureType": "separateChangeUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 60,
+   "b": null,
+   "op": "−",
+   "answer": 33,
+   "display": {
+    "promptText": "Find the missing subtrahend: 60 − ? = 27"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-conc-decomposeToSubtract-45-010",
+  "modeId": "subtraction",
+  "itemFamily": "conceptual",
+  "subskill": "decomposeToSubtract",
+  "structureType": "separateResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 150,
+   "b": 75,
+   "op": "−",
+   "answer": 75,
+   "display": {
+    "promptText": "Bar model: whole of 150 with one part 75. The other part is?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-conc-differenceAsDistance-45-010",
+  "modeId": "subtraction",
+  "itemFamily": "conceptual",
+  "subskill": "differenceAsDistance",
+  "structureType": "compareDifferenceUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 95,
+   "b": 42,
+   "op": "−",
+   "answer": 53,
+   "display": {
+    "promptText": "Compare 95 and 42. The difference is?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-conc-unknownSubtrahend-45-010",
+  "modeId": "subtraction",
+  "itemFamily": "conceptual",
+  "subskill": "unknownSubtrahend",
+  "structureType": "separateChangeUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 120,
+   "b": null,
+   "op": "−",
+   "answer": 55,
+   "display": {
+    "promptText": "Think addition: 65 plus what makes 120?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-conc-decomposeToSubtract-45-019",
   "modeId": "subtraction",
   "itemFamily": "conceptual",
   "subskill": "decomposeToSubtract",
@@ -12030,104 +12782,20 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 100,
-   "b": 30,
-   "op": "−",
-   "answer": 70,
-   "display": {
-    "promptText": "Think of 100 as 30 + 70. What is 100 − 30?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-conc-decomposeToSubtract-45-021",
-  "modeId": "subtraction",
-  "itemFamily": "conceptual",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 110,
-   "b": 47,
+   "b": 37,
    "op": "−",
    "answer": 63,
    "display": {
-    "promptText": "Start with 110. Remove 47. What remains?"
+    "promptText": "Take 37 from 100. Result?"
    }
   }
  },
  {
-  "itemId": "subtraction-conc-differenceAsDistance-45-002",
+  "itemId": "subtraction-conc-differenceAsDistance-45-019",
   "modeId": "subtraction",
   "itemFamily": "conceptual",
   "subskill": "differenceAsDistance",
   "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 75,
-   "b": 38,
-   "op": "−",
-   "answer": 37,
-   "display": {
-    "promptText": "On a number line, what is the distance from 38 to 75?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-conc-differenceAsDistance-45-012",
-  "modeId": "subtraction",
-  "itemFamily": "conceptual",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 180,
-   "b": 95,
-   "op": "−",
-   "answer": 85,
-   "display": {
-    "promptText": "Compare 180 and 95. The difference is?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-conc-differenceAsDistance-45-022",
-  "modeId": "subtraction",
-  "itemFamily": "conceptual",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 130,
-   "b": 65,
-   "op": "−",
-   "answer": 65,
-   "display": {
-    "promptText": "How many more is 130 than 65?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-conc-unknownSubtrahend-45-003",
-  "modeId": "subtraction",
-  "itemFamily": "conceptual",
-  "subskill": "unknownSubtrahend",
-  "structureType": "separateChangeUnknown",
   "levelRange": [
    7,
    10
@@ -12135,32 +12803,11 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 90,
-   "b": null,
+   "b": 38,
    "op": "−",
-   "answer": 46,
+   "answer": 52,
    "display": {
-    "promptText": "What number completes 90 − ? = 44?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-conc-unknownSubtrahend-45-013",
-  "modeId": "subtraction",
-  "itemFamily": "conceptual",
-  "subskill": "unknownSubtrahend",
-  "structureType": "separateChangeUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 250,
-   "b": null,
-   "op": "−",
-   "answer": 75,
-   "display": {
-    "promptText": "Fill in the blank: 250 − __ = 175"
+    "promptText": "Count back from 90 by 38. Where do you land?"
    }
   }
  },
@@ -12186,32 +12833,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "subtraction-conc-decomposeToSubtract-K1-011",
+  "itemId": "subtraction-conc-differenceAsDistance-K1-001",
   "modeId": "subtraction",
   "itemFamily": "conceptual",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 6,
-   "b": 4,
-   "op": "−",
-   "answer": 2,
-   "display": {
-    "promptText": "Think of 6 as 4 + 2. What is 6 − 4?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-conc-decomposeToSubtract-K1-021",
-  "modeId": "subtraction",
-  "itemFamily": "conceptual",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
+  "subskill": "differenceAsDistance",
+  "structureType": "compareDifferenceUnknown",
   "levelRange": [
    1,
    3
@@ -12219,62 +12845,20 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 8,
-   "b": 4,
-   "op": "−",
-   "answer": 4,
-   "display": {
-    "promptText": "Start with 8. Remove 4. What remains?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-conc-differenceAsDistance-K1-002",
-  "modeId": "subtraction",
-  "itemFamily": "conceptual",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": 2,
+   "b": 3,
    "op": "−",
    "answer": 5,
    "display": {
-    "promptText": "On a number line, what is the distance from 2 to 7?"
+    "promptText": "Compare 8 and 3. How much greater is 8?"
    }
   }
  },
  {
-  "itemId": "subtraction-conc-differenceAsDistance-K1-012",
+  "itemId": "subtraction-conc-unknownSubtrahend-K1-001",
   "modeId": "subtraction",
   "itemFamily": "conceptual",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 6,
-   "b": 2,
-   "op": "−",
-   "answer": 4,
-   "display": {
-    "promptText": "Compare 6 and 2. The difference is?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-conc-differenceAsDistance-K1-022",
-  "modeId": "subtraction",
-  "itemFamily": "conceptual",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
+  "subskill": "unknownSubtrahend",
+  "structureType": "separateChangeUnknown",
   "levelRange": [
    1,
    3
@@ -12282,20 +12866,41 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 10,
-   "b": 3,
+   "b": null,
    "op": "−",
-   "answer": 7,
+   "answer": 4,
    "display": {
-    "promptText": "How many more is 10 than 3?"
+    "promptText": "Find the missing number: 10 − ? = 6"
    }
   }
  },
  {
-  "itemId": "subtraction-conc-unknownSubtrahend-K1-003",
+  "itemId": "subtraction-conc-decomposeToSubtract-K1-010",
   "modeId": "subtraction",
   "itemFamily": "conceptual",
-  "subskill": "unknownSubtrahend",
-  "structureType": "separateChangeUnknown",
+  "subskill": "decomposeToSubtract",
+  "structureType": "separateResultUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 10,
+   "b": 6,
+   "op": "−",
+   "answer": 4,
+   "display": {
+    "promptText": "Bar model: whole of 10 with one part 6. The other part is?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-conc-differenceAsDistance-K1-010",
+  "modeId": "subtraction",
+  "itemFamily": "conceptual",
+  "subskill": "differenceAsDistance",
+  "structureType": "compareDifferenceUnknown",
   "levelRange": [
    1,
    3
@@ -12303,16 +12908,16 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 7,
-   "b": null,
+   "b": 3,
    "op": "−",
-   "answer": 3,
+   "answer": 4,
    "display": {
-    "promptText": "Solve for the unknown: 7 − ? = 4"
+    "promptText": "Compare 7 and 3. The difference is?"
    }
   }
  },
  {
-  "itemId": "subtraction-conc-unknownSubtrahend-K1-013",
+  "itemId": "subtraction-conc-unknownSubtrahend-K1-010",
   "modeId": "subtraction",
   "itemFamily": "conceptual",
   "subskill": "unknownSubtrahend",
@@ -12323,12 +12928,54 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 8,
+   "a": 10,
    "b": null,
    "op": "−",
-   "answer": 2,
+   "answer": 5,
    "display": {
-    "promptText": "Think addition: 6 plus what makes 8?"
+    "promptText": "If I had 10 counters and now have 5, how many counters were taken away?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-conc-decomposeToSubtract-K1-019",
+  "modeId": "subtraction",
+  "itemFamily": "conceptual",
+  "subskill": "decomposeToSubtract",
+  "structureType": "separateResultUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": 2,
+   "op": "−",
+   "answer": 6,
+   "display": {
+    "promptText": "Take 2 from 8. Result?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-conc-differenceAsDistance-K1-019",
+  "modeId": "subtraction",
+  "itemFamily": "conceptual",
+  "subskill": "differenceAsDistance",
+  "structureType": "compareDifferenceUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": 3,
+   "op": "−",
+   "answer": 5,
+   "display": {
+    "promptText": "Count back from 8 by 3. Where do you land?"
    }
   }
  },
@@ -12354,137 +13001,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "subtraction-proc-decomposeToSubtract-23-011",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 16,
-   "b": 9,
-   "op": "−",
-   "answer": 7,
-   "display": {
-    "promptText": "16 − 9 = ?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-decomposeToSubtract-23-021",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 14,
-   "b": 4,
-   "op": "−",
-   "answer": 10,
-   "display": {
-    "promptText": "14 − 4 = ?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-differenceAsDistance-23-002",
+  "itemId": "subtraction-proc-differenceAsDistance-23-001",
   "modeId": "subtraction",
   "itemFamily": "procedural",
   "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 17,
-   "b": 9,
-   "op": "−",
-   "answer": 8,
-   "display": {
-    "promptText": "17 − 9 = ?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-differenceAsDistance-23-012",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 16,
-   "b": 8,
-   "op": "−",
-   "answer": 8,
-   "display": {
-    "promptText": "16 − 8 = ?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-differenceAsDistance-23-022",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 14,
-   "b": 3,
-   "op": "−",
-   "answer": 11,
-   "display": {
-    "promptText": "14 − 3 = ?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-unknownSubtrahend-23-003",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "unknownSubtrahend",
-  "structureType": "separateChangeUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 18,
-   "b": null,
-   "op": "−",
-   "answer": 9,
-   "display": {
-    "promptText": "18 − ? = 9"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-unknownSubtrahend-23-013",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "unknownSubtrahend",
-  "structureType": "separateChangeUnknown",
+  "structureType": "takeFromResultUnknown",
   "levelRange": [
    4,
    6
@@ -12492,11 +13013,137 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 15,
+   "b": 8,
+   "op": "−",
+   "answer": 7,
+   "display": {
+    "promptText": "15 − 8 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-proc-unknownSubtrahend-23-001",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "unknownSubtrahend",
+  "structureType": "separateChangeUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 20,
    "b": null,
    "op": "−",
    "answer": 9,
    "display": {
-    "promptText": "15 − ? = 6"
+    "promptText": "20 − ? = 11"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-proc-decomposeToSubtract-23-010",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "decomposeToSubtract",
+  "structureType": "separateResultUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 17,
+   "b": 6,
+   "op": "−",
+   "answer": 11,
+   "display": {
+    "promptText": "17 − 6 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-proc-differenceAsDistance-23-010",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "differenceAsDistance",
+  "structureType": "takeFromResultUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 12,
+   "b": 5,
+   "op": "−",
+   "answer": 7,
+   "display": {
+    "promptText": "12 − 5 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-proc-unknownSubtrahend-23-010",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "unknownSubtrahend",
+  "structureType": "separateChangeUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 17,
+   "b": null,
+   "op": "−",
+   "answer": 9,
+   "display": {
+    "promptText": "17 − ? = 8"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-proc-decomposeToSubtract-23-019",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "decomposeToSubtract",
+  "structureType": "separateResultUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 13,
+   "b": 8,
+   "op": "−",
+   "answer": 5,
+   "display": {
+    "promptText": "13 − 8 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-proc-differenceAsDistance-23-019",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "differenceAsDistance",
+  "structureType": "takeFromResultUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 12,
+   "b": 11,
+   "op": "−",
+   "answer": 1,
+   "display": {
+    "promptText": "12 − 11 = ?"
    }
   }
  },
@@ -12522,53 +13169,53 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "subtraction-proc-decomposeToSubtract-45-011",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 85,
-   "b": 35,
-   "op": "−",
-   "answer": 50,
-   "display": {
-    "promptText": "85 − 35 = ?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-decomposeToSubtract-45-021",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 90,
-   "b": 55,
-   "op": "−",
-   "answer": 35,
-   "display": {
-    "promptText": "90 − 55 = ?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-differenceAsDistance-45-002",
+  "itemId": "subtraction-proc-differenceAsDistance-45-001",
   "modeId": "subtraction",
   "itemFamily": "procedural",
   "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
+  "structureType": "takeFromResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 50,
+   "b": 22,
+   "op": "−",
+   "answer": 28,
+   "display": {
+    "promptText": "50 − 22 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-proc-unknownSubtrahend-45-001",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "unknownSubtrahend",
+  "structureType": "separateChangeUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 60,
+   "b": null,
+   "op": "−",
+   "answer": 33,
+   "display": {
+    "promptText": "60 − ? = 27"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-proc-decomposeToSubtract-45-010",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "decomposeToSubtract",
+  "structureType": "separateResultUnknown",
   "levelRange": [
    7,
    10
@@ -12576,58 +13223,37 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 75,
+   "b": 28,
+   "op": "−",
+   "answer": 47,
+   "display": {
+    "promptText": "75 − 28 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-proc-differenceAsDistance-45-010",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "differenceAsDistance",
+  "structureType": "takeFromResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 95,
    "b": 38,
    "op": "−",
-   "answer": 37,
+   "answer": 57,
    "display": {
-    "promptText": "75 − 38 = ?"
+    "promptText": "95 − 38 = ?"
    }
   }
  },
  {
-  "itemId": "subtraction-proc-differenceAsDistance-45-012",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 100,
-   "b": 67,
-   "op": "−",
-   "answer": 33,
-   "display": {
-    "promptText": "100 − 67 = ?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-differenceAsDistance-45-022",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 110,
-   "b": 67,
-   "op": "−",
-   "answer": 43,
-   "display": {
-    "promptText": "110 − 67 = ?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-unknownSubtrahend-45-003",
+  "itemId": "subtraction-proc-unknownSubtrahend-45-010",
   "modeId": "subtraction",
   "itemFamily": "procedural",
   "subskill": "unknownSubtrahend",
@@ -12638,33 +13264,54 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 90,
+   "a": 120,
    "b": null,
+   "op": "−",
+   "answer": 65,
+   "display": {
+    "promptText": "120 − ? = 55"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-proc-decomposeToSubtract-45-019",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "decomposeToSubtract",
+  "structureType": "separateResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 75,
+   "b": 29,
    "op": "−",
    "answer": 46,
    "display": {
-    "promptText": "90 − ? = 44"
+    "promptText": "75 − 29 = ?"
    }
   }
  },
  {
-  "itemId": "subtraction-proc-unknownSubtrahend-45-013",
+  "itemId": "subtraction-proc-differenceAsDistance-45-019",
   "modeId": "subtraction",
   "itemFamily": "procedural",
-  "subskill": "unknownSubtrahend",
-  "structureType": "separateChangeUnknown",
+  "subskill": "differenceAsDistance",
+  "structureType": "takeFromResultUnknown",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 200,
-   "b": null,
+   "a": 85,
+   "b": 47,
    "op": "−",
-   "answer": 75,
+   "answer": 38,
    "display": {
-    "promptText": "200 − ? = 125"
+    "promptText": "85 − 47 = ?"
    }
   }
  },
@@ -12690,7 +13337,49 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "subtraction-proc-decomposeToSubtract-K1-011",
+  "itemId": "subtraction-proc-differenceAsDistance-K1-001",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "differenceAsDistance",
+  "structureType": "takeFromResultUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": 3,
+   "op": "−",
+   "answer": 5,
+   "display": {
+    "promptText": "8 − 3 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-proc-unknownSubtrahend-K1-001",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "unknownSubtrahend",
+  "structureType": "separateChangeUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 10,
+   "b": null,
+   "op": "−",
+   "answer": 4,
+   "display": {
+    "promptText": "10 − ? = 6"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-proc-decomposeToSubtract-K1-010",
   "modeId": "subtraction",
   "itemFamily": "procedural",
   "subskill": "decomposeToSubtract",
@@ -12702,16 +13391,58 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 8,
-   "b": 5,
+   "b": 6,
    "op": "−",
-   "answer": 3,
+   "answer": 2,
    "display": {
-    "promptText": "8 − 5 = ?"
+    "promptText": "8 − 6 = ?"
    }
   }
  },
  {
-  "itemId": "subtraction-proc-decomposeToSubtract-K1-021",
+  "itemId": "subtraction-proc-differenceAsDistance-K1-010",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "differenceAsDistance",
+  "structureType": "takeFromResultUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 8,
+   "b": 4,
+   "op": "−",
+   "answer": 4,
+   "display": {
+    "promptText": "8 − 4 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-proc-unknownSubtrahend-K1-010",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "unknownSubtrahend",
+  "structureType": "separateChangeUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 9,
+   "b": null,
+   "op": "−",
+   "answer": 8,
+   "display": {
+    "promptText": "9 − ? = 1"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-proc-decomposeToSubtract-K1-019",
   "modeId": "subtraction",
   "itemFamily": "procedural",
   "subskill": "decomposeToSubtract",
@@ -12723,116 +13454,32 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 11,
-   "b": 7,
-   "op": "−",
-   "answer": 4,
-   "display": {
-    "promptText": "11 − 7 = ?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-differenceAsDistance-K1-002",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": 2,
-   "op": "−",
-   "answer": 5,
-   "display": {
-    "promptText": "7 − 2 = ?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-differenceAsDistance-K1-012",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": 3,
-   "op": "−",
-   "answer": 4,
-   "display": {
-    "promptText": "7 − 3 = ?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-differenceAsDistance-K1-022",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 6,
    "b": 4,
    "op": "−",
-   "answer": 2,
+   "answer": 7,
    "display": {
-    "promptText": "6 − 4 = ?"
+    "promptText": "11 − 4 = ?"
    }
   }
  },
  {
-  "itemId": "subtraction-proc-unknownSubtrahend-K1-003",
+  "itemId": "subtraction-proc-differenceAsDistance-K1-019",
   "modeId": "subtraction",
   "itemFamily": "procedural",
-  "subskill": "unknownSubtrahend",
-  "structureType": "separateChangeUnknown",
+  "subskill": "differenceAsDistance",
+  "structureType": "takeFromResultUnknown",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 7,
-   "b": null,
+   "a": 9,
+   "b": 8,
    "op": "−",
-   "answer": 3,
+   "answer": 1,
    "display": {
-    "promptText": "7 − ? = 4"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-unknownSubtrahend-K1-013",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "unknownSubtrahend",
-  "structureType": "separateChangeUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": null,
-   "op": "−",
-   "answer": 5,
-   "display": {
-    "promptText": "7 − ? = 2"
+    "promptText": "9 − 8 = ?"
    }
   }
  }

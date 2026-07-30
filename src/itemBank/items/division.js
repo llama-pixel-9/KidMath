@@ -12,7 +12,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":36,"b":6,"op":"÷","answer":6,"display":{"promptText":"36 apples are shared equally among 6 baskets. How many apples go in each basket?"}},
+    question: {"a":36,"b":6,"op":"÷","answer":6,"display":{"promptText":"36 apples are shared equally among 6 baskets. How many apples go in each basket?","promptOptions":["Jamal has 36 apples. He puts them equally into 6 baskets. How many apples go in each basket?","Emma has 36 apples. She shares them equally among 6 friends. How many apples does each friend get?","There are 36 apples to divide equally into 6 groups. How many apples will each group have?"]}},
   },
   {
     itemId: "division-app-002",
@@ -22,7 +22,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":24,"b":4,"op":"÷","answer":6,"display":{"promptText":"24 pencils are split equally into 4 groups. How many pencils are in each group?"}},
+    question: {"a":24,"b":4,"op":"÷","answer":6,"display":{"promptText":"24 pencils are split equally into 4 groups. How many pencils are in each group?","promptOptions":["Anna has 24 pencils. She divides them equally among 4 friends. How many pencils does each friend get?","Marco has 24 pencils. He puts them equally in 4 boxes. How many pencils are in each box?","There are 24 pencils. A teacher splits them equally into 4 groups. How many pencils are in each group?"]}},
   },
   {
     itemId: "division-app-003",
@@ -32,7 +32,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":45,"b":5,"op":"÷","answer":9,"display":{"promptText":"A teacher hands out 45 markers equally to 5 tables. How many markers does each table get?"}},
+    question: {"a":45,"b":5,"op":"÷","answer":9,"display":{"promptText":"A teacher hands out 45 markers equally to 5 tables. How many markers does each table get?","promptOptions":["Mrs. Chen has 45 markers. She gives them equally to 5 tables. How many markers does each table get?","There are 45 markers to divide equally among 5 groups. How many markers does each group get?","A teacher has 45 markers. She puts them equally in 5 boxes. How many markers are in each box?"]}},
   },
   {
     itemId: "division-app-004",
@@ -42,7 +42,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":56,"b":8,"op":"÷","answer":7,"display":{"promptText":"56 stickers are packed equally into 8 packets. How many stickers are in each packet?"}},
+    question: {"a":56,"b":8,"op":"÷","answer":7,"display":{"promptText":"56 stickers are packed equally into 8 packets. How many stickers are in each packet?","promptOptions":["Jake has 56 stickers. He shares them equally among 8 friends. How many stickers does each friend get?","Lily has 56 stickers. She puts them equally in 8 envelopes. How many stickers are in each envelope?","There are 56 stickers to divide equally into 8 packets. How many stickers will each packet have?"]}},
   },
   {
     itemId: "division-app-005",
@@ -52,7 +52,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":42,"b":7,"op":"÷","answer":6,"display":{"promptText":"42 grapes are placed equally into 7 small bowls. How many grapes are in each bowl?"}},
+    question: {"a":42,"b":7,"op":"÷","answer":6,"display":{"promptText":"42 grapes are placed equally into 7 small bowls. How many grapes are in each bowl?","promptOptions":["Mom has 42 grapes. She puts them equally in 7 small bowls. How many grapes are in each bowl?","There are 42 grapes to share equally among 7 friends. How many grapes does each friend get?","A farmer has 42 grapes. She divides them equally into 7 baskets. How many grapes are in each basket?"]}},
   },
   {
     itemId: "division-app-006",
@@ -62,7 +62,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":81,"b":9,"op":"÷","answer":9,"display":{"promptText":"81 chairs are arranged in 9 equal rows. How many chairs are in each row?"}},
+    question: {"a":81,"b":9,"op":"÷","answer":9,"display":{"promptText":"81 chairs are arranged in 9 equal rows. How many chairs are in each row?","promptOptions":["A school has 81 chairs. They arrange them equally in 9 rows. How many chairs are in each row?","There are 81 chairs to divide equally into 9 rows. How many chairs go in each row?","The gym staff has 81 chairs. They put them equally in 9 rows. How many chairs are in each row?"]}},
   },
   {
     itemId: "division-app-007",
@@ -72,7 +72,7 @@ export const ITEMS = [
     structureType: "quotitiveDivision",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":63,"b":9,"op":"÷","answer":7,"display":{"promptText":"A team has 63 cones to share equally among 9 practice groups. How many cones does each group get?"}},
+    question: {"a":63,"b":9,"op":"÷","answer":7,"display":{"promptText":"A team has 63 cones to share equally among 9 practice groups. How many cones does each group get?","promptOptions":["A coach had 63 cones. He divided them equally among 9 practice groups. How many cones did each group get?","A team had 63 cones. They shared them equally among 9 practice groups. How many cones did each group get?","The team collected 63 cones for practice. Then they shared them equally among 9 groups. How many cones did each group get?"]}},
   },
   {
     itemId: "division-app-008",
@@ -82,7 +82,7 @@ export const ITEMS = [
     structureType: "quotitiveDivision",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":48,"b":6,"op":"÷","answer":8,"display":{"promptText":"48 cookies are packed 6 per box. How many boxes are filled?"}},
+    question: {"a":48,"b":6,"op":"÷","answer":8,"display":{"promptText":"48 cookies are packed 6 per box. How many boxes are filled?","promptOptions":["A baker had 48 cookies. She packed them 6 to a box. How many boxes did she fill?","Mom had 48 cookies. She packed 6 into each box. How many boxes did she fill?","A store had 48 cookies. The workers packed 6 in each box. How many boxes did they fill?"]}},
   },
   {
     itemId: "division-app-009",
@@ -92,7 +92,7 @@ export const ITEMS = [
     structureType: "quotitiveDivision",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":72,"b":8,"op":"÷","answer":9,"display":{"promptText":"A baker uses 72 eggs, 8 eggs per batch. How many batches did the baker make?"}},
+    question: {"a":72,"b":8,"op":"÷","answer":9,"display":{"promptText":"A baker uses 72 eggs, 8 eggs per batch. How many batches did the baker make?","promptOptions":["A baker had 72 eggs. She used 8 eggs for each batch. How many batches did she make?","Grandma had 72 eggs. She used 8 eggs for each batch of cookies. How many batches did she make?","A bakery had 72 eggs. They used 8 eggs per batch. How many batches did they make?"]}},
   },
   {
     itemId: "division-app-010",
@@ -102,7 +102,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":30,"b":5,"op":"÷","answer":6,"display":{"promptText":"30 stickers are shared equally among 5 friends. How many stickers does each friend get?"}},
+    question: {"a":30,"b":5,"op":"÷","answer":6,"display":{"promptText":"30 stickers are shared equally among 5 friends. How many stickers does each friend get?","promptOptions":["Maya has 30 stickers. She divides them equally among 5 friends. How many stickers does each friend get?","There are 30 stickers to share equally among 5 kids. How many stickers does each kid get?","A teacher has 30 stickers. She gives them equally to 5 students. How many stickers does each student get?"]}},
   },
   {
     itemId: "division-app-011",
@@ -112,7 +112,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":64,"b":8,"op":"÷","answer":8,"display":{"promptText":"64 beads are placed equally on 8 strings. How many beads are on each string?"}},
+    question: {"a":64,"b":8,"op":"÷","answer":8,"display":{"promptText":"64 beads are placed equally on 8 strings. How many beads are on each string?","promptOptions":["Zara has 64 beads. She puts them equally on 8 strings. How many beads are on each string?","There are 64 beads to thread equally on 8 strings. How many beads are on each string?","A jewelry maker has 64 beads. She divides them equally among 8 strings. How many beads are on each string?"]}},
   },
   {
     itemId: "division-app-012",
@@ -122,7 +122,7 @@ export const ITEMS = [
     structureType: "quotitiveDivision",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":35,"b":5,"op":"÷","answer":7,"display":{"promptText":"35 oranges are packed in bags of 5. How many bags did the store fill?"}},
+    question: {"a":35,"b":5,"op":"÷","answer":7,"display":{"promptText":"35 oranges are packed in bags of 5. How many bags did the store fill?","promptOptions":["A farmer had 35 oranges to sell. She packed them 5 to a bag. How many bags did she fill?","Mom had 35 oranges to pack. She put 5 in each bag. How many bags did she fill?","A store had 35 oranges. They packed 5 oranges in each bag. How many bags did they fill?"]}},
   },
   {
     itemId: "division-app-013",
@@ -132,7 +132,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":54,"b":6,"op":"÷","answer":9,"display":{"promptText":"A coach splits 54 cones equally among 6 stations. How many cones go to each station?"}},
+    question: {"a":54,"b":6,"op":"÷","answer":9,"display":{"promptText":"A coach splits 54 cones equally among 6 stations. How many cones go to each station?","promptOptions":["Coach Mike has 54 cones. He puts them equally at 6 stations. How many cones are at each station?","There are 54 cones to divide equally among 6 stations. How many cones go to each station?","A soccer team has 54 training cones. They split them equally into 6 groups. How many cones are in each group?"]}},
   },
   {
     itemId: "division-app-014",
@@ -142,7 +142,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":28,"b":4,"op":"÷","answer":7,"display":{"promptText":"28 pears are placed equally into 4 baskets. How many pears go in each basket?"}},
+    question: {"a":28,"b":4,"op":"÷","answer":7,"display":{"promptText":"28 pears are placed equally into 4 baskets. How many pears go in each basket?","promptOptions":["Dan has 28 pears. He puts them equally in 4 baskets. How many pears are in each basket?","There are 28 pears to divide equally into 4 baskets. How many pears go in each basket?","A farmer has 28 pears. She gives them equally to 4 customers. How many pears does each customer get?"]}},
   },
   {
     itemId: "division-app-015",
@@ -152,7 +152,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":2,"op":"÷","answer":3,"display":{"promptText":"6 cookies are shared equally between 2 kids. How many cookies for each kid?"}},
+    question: {"a":6,"b":2,"op":"÷","answer":3,"display":{"promptText":"6 cookies are shared equally between 2 kids. How many cookies for each kid?","promptOptions":["Mom has 6 cookies. She gives them equally to 2 kids. How many cookies does each kid get?","There are 6 cookies to share equally between 2 friends. How many cookies does each friend get?","Grandma made 6 cookies for 2 kids to share equally. How many cookies does each kid get?"]}},
   },
   {
     itemId: "division-app-016",
@@ -162,7 +162,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":2,"op":"÷","answer":4,"display":{"promptText":"8 marbles are split equally into 2 jars. How many marbles in each jar?"}},
+    question: {"a":8,"b":2,"op":"÷","answer":4,"display":{"promptText":"8 marbles are split equally into 2 jars. How many marbles in each jar?","promptOptions":["Ty has 8 marbles. He puts them equally in 2 jars. How many marbles go in each jar?","There are 8 marbles to divide equally between 2 jars. How many marbles are in each jar?","A toy store has 8 marbles. They split them equally for 2 kids. How many marbles does each kid get?"]}},
   },
   {
     itemId: "division-app-017",
@@ -172,7 +172,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"÷","answer":2,"display":{"promptText":"4 stickers are given equally to 2 friends. How many stickers does each friend get?"}},
+    question: {"a":4,"b":2,"op":"÷","answer":2,"display":{"promptText":"4 stickers are given equally to 2 friends. How many stickers does each friend get?","promptOptions":["Luke has 4 stickers. He gives them equally to 2 friends. How many stickers does each friend get?","Maria has 4 stickers to share equally between 2 friends. How many stickers does each friend get?"]}},
   },
   {
     itemId: "division-app-018",
@@ -182,7 +182,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":3,"op":"÷","answer":2,"display":{"promptText":"6 small marbles are arranged into 3 equal groups. How many marbles per group?"}},
+    question: {"a":6,"b":3,"op":"÷","answer":2,"display":{"promptText":"6 small marbles are arranged into 3 equal groups. How many marbles per group?","promptOptions":["Ruby has 6 marbles. She arranges them into 3 equal groups. How many marbles per group?","Tom arranged 6 marbles into 3 equal groups. How many marbles are in each group?","Alex has 6 marbles to divide into 3 equal groups. How many marbles per group?"]}},
   },
   {
     itemId: "division-app-019",
@@ -192,7 +192,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":3,"op":"÷","answer":3,"display":{"promptText":"9 gold stars are placed in 3 rows equally. How many stars per row?"}},
+    question: {"a":9,"b":3,"op":"÷","answer":3,"display":{"promptText":"9 gold stars are placed in 3 rows equally. How many stars per row?","promptOptions":["Luna placed 9 gold stars in 3 equal rows. How many stars per row?","Kim arranged 9 gold stars into 3 equal rows. How many stars per row?","Sara has 9 gold stars. She puts them into 3 equal rows. How many stars per row?"]}},
   },
   {
     itemId: "division-app-020",
@@ -202,7 +202,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":5,"op":"÷","answer":2,"display":{"promptText":"10 fish are placed evenly across 5 tanks. How many fish per tank?"}},
+    question: {"a":10,"b":5,"op":"÷","answer":2,"display":{"promptText":"10 fish are placed evenly across 5 tanks. How many fish per tank?","promptOptions":["Jon has 10 fish. He puts them evenly into 5 tanks. How many fish per tank?","Maya placed 10 fish equally into 5 tanks. How many fish per tank?","Sam has 10 fish to put equally into 5 tanks. How many fish go in each tank?"]}},
   },
   {
     itemId: "division-app-021",
@@ -212,7 +212,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":4,"op":"÷","answer":2,"display":{"promptText":"8 stickers are shared equally by 4 kids. How many stickers per kid?"}},
+    question: {"a":8,"b":4,"op":"÷","answer":2,"display":{"promptText":"8 stickers are shared equally by 4 kids. How many stickers per kid?","promptOptions":["Mom has 8 stickers to give equally to 4 kids. How many stickers does each kid get?","The teacher has 8 stickers. She shares them equally with 4 kids. How many stickers does each kid get?","4 kids share 8 stickers equally. How many stickers does each kid get?"]}},
   },
   {
     itemId: "division-app-022",
@@ -222,7 +222,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":2,"op":"÷","answer":5,"display":{"promptText":"10 cubes are arranged into 2 equal stacks. How many cubes per stack?"}},
+    question: {"a":10,"b":2,"op":"÷","answer":5,"display":{"promptText":"10 cubes are arranged into 2 equal stacks. How many cubes per stack?","promptOptions":["Ben has 10 cubes. He stacks them equally into 2 stacks. How many cubes per stack?","Emma arranged 10 cubes into 2 equal stacks. How many cubes per stack?","Lily stacked 10 cubes equally into 2 stacks. How many cubes are in each stack?"]}},
   },
   {
     itemId: "division-app-023",
@@ -232,7 +232,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":3,"op":"÷","answer":3,"display":{"promptText":"9 buttons are sorted equally into 3 small jars. How many buttons per jar?"}},
+    question: {"a":9,"b":3,"op":"÷","answer":3,"display":{"promptText":"9 buttons are sorted equally into 3 small jars. How many buttons per jar?","promptOptions":["Mom has 9 buttons. She sorts them equally into 3 jars. How many buttons per jar?","Alex sorted 9 buttons equally into 3 small jars. How many buttons per jar?","Mrs. Kim has 9 buttons. She puts them equally into 3 jars. How many buttons per jar?"]}},
   },
   {
     itemId: "division-app-024",
@@ -242,7 +242,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":4,"op":"÷","answer":3,"display":{"promptText":"12 books are split equally onto 4 shelves. How many books per shelf?"}},
+    question: {"a":12,"b":4,"op":"÷","answer":3,"display":{"promptText":"12 books are split equally onto 4 shelves. How many books per shelf?","promptOptions":["Dad has 12 books. He puts them equally on 4 shelves. How many books per shelf?","The librarian arranged 12 books equally on 4 shelves. How many books per shelf?","Maya sorted 12 books equally onto 4 shelves. How many books per shelf?"]}},
   },
   {
     itemId: "division-app-025",
@@ -252,7 +252,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":3,"op":"÷","answer":5,"display":{"promptText":"15 cards are dealt equally to 3 players. How many cards does each player get?"}},
+    question: {"a":15,"b":3,"op":"÷","answer":5,"display":{"promptText":"15 cards are dealt equally to 3 players. How many cards does each player get?","promptOptions":["The dealer has 15 cards. She deals them equally to 3 players. How many cards does each player get?","Tom dealt 15 cards equally to 3 players. How many cards does each player get?","3 players share 15 cards equally. How many cards does each player get?"]}},
   },
   {
     itemId: "division-app-026",
@@ -262,7 +262,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":6,"op":"÷","answer":3,"display":{"promptText":"18 cookies are placed on 6 plates equally. How many cookies per plate?"}},
+    question: {"a":18,"b":6,"op":"÷","answer":3,"display":{"promptText":"18 cookies are placed on 6 plates equally. How many cookies per plate?","promptOptions":["Grandma has 18 cookies. She arranges them equally on 6 plates. How many cookies per plate?","The baker has 18 cookies. She places them equally on 6 plates. How many cookies per plate?","Maya put 18 cookies equally on 6 plates. How many cookies per plate?"]}},
   },
   {
     itemId: "division-app-027",
@@ -272,7 +272,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":24,"b":4,"op":"÷","answer":6,"display":{"promptText":"24 students are split into groups of 4. How many groups are there?"}},
+    question: {"a":24,"b":4,"op":"÷","answer":6,"display":{"promptText":"24 students are split into groups of 4. How many groups are there?","promptOptions":["The teacher has 24 students. She puts them into groups of 4. How many groups are there?","The PE teacher has 24 students. She divides them into groups of 4. How many groups are there?","Mr. Johnson arranged 24 students into groups of 4. How many groups did he make?"]}},
   },
   {
     itemId: "division-app-028",
@@ -282,7 +282,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":35,"b":5,"op":"÷","answer":7,"display":{"promptText":"35 stickers are shared equally by 5 kids. How many stickers per kid?"}},
+    question: {"a":35,"b":5,"op":"÷","answer":7,"display":{"promptText":"35 stickers are shared equally by 5 kids. How many stickers per kid?","promptOptions":["Ms. Chen has 35 stickers. She shares them equally with 5 kids. How many stickers does each kid get?","The teacher has 35 stickers. She shares them equally with 5 kids. How many stickers does each kid get?","5 kids share 35 stickers equally. How many stickers does each kid get?"]}},
   },
   {
     itemId: "division-app-029",
@@ -292,7 +292,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":36,"b":6,"op":"÷","answer":6,"display":{"promptText":"36 marbles are sorted equally into 6 jars. How many marbles per jar?"}},
+    question: {"a":36,"b":6,"op":"÷","answer":6,"display":{"promptText":"36 marbles are sorted equally into 6 jars. How many marbles per jar?","promptOptions":["Kai has 36 marbles. He puts them equally into 6 jars. How many marbles are in each jar?","Maria had 36 marbles. She sorted them equally into 6 jars. How many marbles went in each jar?","The toy shop had 36 marbles. They put them equally into 6 bins. How many marbles are in each bin?"]}},
   },
   {
     itemId: "division-app-030",
@@ -302,7 +302,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":5,"op":"÷","answer":4,"display":{"promptText":"20 books are placed on 5 shelves equally. How many books per shelf?"}},
+    question: {"a":20,"b":5,"op":"÷","answer":4,"display":{"promptText":"20 books are placed on 5 shelves equally. How many books per shelf?","promptOptions":["Tom has 20 books. He puts them equally on 5 shelves. How many books are on each shelf?","Mrs. Lee had 20 books. She arranged them equally on 5 shelves. How many books went on each shelf?","The library put 20 books equally on 5 shelves. How many books does each shelf have?"]}},
   },
   {
     itemId: "division-app-031",
@@ -312,7 +312,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":24,"b":8,"op":"÷","answer":3,"display":{"promptText":"24 children are split into 8 small teams equally. How many per team?"}},
+    question: {"a":24,"b":8,"op":"÷","answer":3,"display":{"promptText":"24 children are split into 8 small teams equally. How many per team?","promptOptions":["The coach has 24 children. He puts them equally into 8 teams. How many children are on each team?","A teacher has 24 students. She splits them equally into 8 groups. How many students are in each group?","The gym class had 24 kids. They put them equally into 8 teams. How many kids are on each team?"]}},
   },
   {
     itemId: "division-app-032",
@@ -322,7 +322,7 @@ export const ITEMS = [
     structureType: "partitiveDivision",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":30,"b":6,"op":"÷","answer":5,"display":{"promptText":"30 candies are placed equally in 6 bags. How many candies per bag?"}},
+    question: {"a":30,"b":6,"op":"÷","answer":5,"display":{"promptText":"30 candies are placed equally in 6 bags. How many candies per bag?","promptOptions":["Javi has 30 candies. He puts them equally into 6 bags. How many candies are in each bag?","Emma had 30 candies. She packed them equally into 6 bags. How many candies went in each bag?","The store put 30 candies equally into 6 bags. How many candies does each bag have?"]}},
   },
   {
     itemId: "division-conc-inverseFact-23-001",

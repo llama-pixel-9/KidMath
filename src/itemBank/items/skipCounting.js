@@ -12,7 +12,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":21,"display":{"step":3,"sequence":[12,15,18],"promptText":"A student counts by 3s: 12, 15, 18. What number comes next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":21,"display":{"step":3,"sequence":[12,15,18],"promptText":"A student counts by 3s: 12, 15, 18. What number comes next?","promptOptions":["Maya counts by 3s. She says 12, then 15, then 18. What number comes next?","A child counts: 12, 15, 18. What's the next number she counts?","Jake counts by 3s. He says: 12, 15, 18. What number next?"]}},
   },
   {
     itemId: "skipcounting-app-002",
@@ -22,7 +22,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":24,"display":{"step":6,"sequence":[6,12,18],"promptText":"A clock chime rings every 6 minutes: 6, 12, 18. When does it ring next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":24,"display":{"step":6,"sequence":[6,12,18],"promptText":"A clock chime rings every 6 minutes: 6, 12, 18. When does it ring next?","promptOptions":["A timer beeps every 6 minutes: 6, 12, 18 minutes. When does it beep next?","A bell rings at 6, 12, then 18 minutes. When does it ring next?","A chime sounds every 6 minutes at 6, 12, and 18 minutes. When next?"]}},
   },
   {
     itemId: "skipcounting-app-003",
@@ -32,7 +32,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":44,"display":{"step":4,"sequence":[32,36,40],"promptText":"A pattern increases by 4: 32, 36, 40. What comes next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":44,"display":{"step":4,"sequence":[32,36,40],"promptText":"A pattern increases by 4: 32, 36, 40. What comes next?","promptOptions":["Emma finds a pattern: 32, 36, 40. It grows by 4 each time. What comes next?","A pattern grows by 4 each time: 32, 36, 40. What comes next?","Numbers grow by 4: 32, 36, 40. What number comes next?"]}},
   },
   {
     itemId: "skipcounting-app-004",
@@ -42,7 +42,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":80,"display":{"step":10,"sequence":[50,60,70],"promptText":"A jar fills 10 marbles at a time: 50, 60, 70. How many marbles next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":80,"display":{"step":10,"sequence":[50,60,70],"promptText":"A jar fills 10 marbles at a time: 50, 60, 70. How many marbles next?","promptOptions":["A jar gets 10 more marbles each time: 50, 60, 70. How many marbles next?","They keep adding marbles to a jar: 50, then 60, then 70. How many marbles next?","Someone adds marbles to a jar. It now has 50, then 60, then 70. How many next?"]}},
   },
   {
     itemId: "skipcounting-app-005",
@@ -52,7 +52,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":60,"display":{"step":5,"sequence":[45,50,55],"promptText":"A scoreboard goes up by 5 points: 45, 50, 55. What score is next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":60,"display":{"step":5,"sequence":[45,50,55],"promptText":"A scoreboard goes up by 5 points: 45, 50, 55. What score is next?","promptOptions":["A team scores 45, then 50, then 55 points. What score is next?","A team's score goes up by 5 points: 45, 50, 55. What score is next?","Points grow by 5: 45, 50, 55. What's the next score?"]}},
   },
   {
     itemId: "skipcounting-app-006",
@@ -62,7 +62,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":90,"display":{"step":5,"sequence":[75,80,85],"promptText":"A class earns 5 stars per chapter: 75, 80, 85. How many stars after one more chapter?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":90,"display":{"step":5,"sequence":[75,80,85],"promptText":"A class earns 5 stars per chapter: 75, 80, 85. How many stars after one more chapter?","promptOptions":["A class earns 5 more stars each chapter: 75, 80, 85. How many stars next?","The class has 75 stars, then 80, then 85. They earn 5 more each chapter. How many next?","A class gets 5 stars for each chapter. After three: 75, 80, 85. How many next?"]}},
   },
   {
     itemId: "skipcounting-app-007",
@@ -72,7 +72,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":28,"display":{"step":4,"sequence":[16,20,24],"promptText":"A timer beeps every 4 seconds: 16, 20, 24. When does it beep next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":28,"display":{"step":4,"sequence":[16,20,24],"promptText":"A timer beeps every 4 seconds: 16, 20, 24. When does it beep next?","promptOptions":["A timer beeps every 4 seconds: 16, 20, 24 seconds. When does it beep next?","A timer beeps at 16, 20, then 24 seconds. When does it beep next?","A bell rings every 4 seconds: 16, 20, 24. When does it ring next?"]}},
   },
   {
     itemId: "skipcounting-app-008",
@@ -82,7 +82,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":30,"display":{"step":4,"sequence":[18,22,26],"promptText":"A line of beads grows by the same amount each step: 18, 22, 26. What comes next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":30,"display":{"step":4,"sequence":[18,22,26],"promptText":"A line of beads grows by the same amount each step: 18, 22, 26. What comes next?","promptOptions":["Emma arranges beads: 18, then 22, then 26. She adds 4 each time. How many beads next?","A string of beads grows the same amount each step: 18, 22, 26. How many beads next?","Beads in a line grow by 4: 18, 22, 26. How many next?"]}},
   },
   {
     itemId: "skipcounting-app-009",
@@ -92,7 +92,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":30,"display":{"step":6,"sequence":[12,18,24],"promptText":"A team adds 6 points each round: 12, 18, 24. How many points after one more round?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":30,"display":{"step":6,"sequence":[12,18,24],"promptText":"A team adds 6 points each round: 12, 18, 24. How many points after one more round?","promptOptions":["A team scores 12, then 18, then 24 points. It scores 6 more each round. How many next?","A team earns 6 more points each round: 12, 18, 24. How many points next?","Round 1 is 12 points. Round 2 is 18. Round 3 is 24. How many points in round 4?"]}},
   },
   {
     itemId: "skipcounting-app-010",
@@ -102,7 +102,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":14,"display":{"step":4,"sequence":[2,6,10],"promptText":"A toy car gains 4 pegs each step: 2, 6, 10. How many pegs next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":14,"display":{"step":4,"sequence":[2,6,10],"promptText":"A toy car gains 4 pegs each step: 2, 6, 10. How many pegs next?","promptOptions":["A toy car gets 4 more pegs at each step: 2, 6, 10. How many pegs next?","Step 1 has 2 pegs. Step 2 has 6. Step 3 has 10. How many pegs at step 4?","Pegs on a toy car: 2, then 6, then 10. They grow by 4 each time. How many next?"]}},
   },
   {
     itemId: "skipcounting-app-011",
@@ -112,7 +112,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":50,"display":{"step":10,"sequence":[20,30,40],"promptText":"A reader logs minutes growing by the same amount: 20, 30, 40. What comes next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":50,"display":{"step":10,"sequence":[20,30,40],"promptText":"A reader logs minutes growing by the same amount: 20, 30, 40. What comes next?","promptOptions":["A child reads for 20, then 30, then 40 minutes. The time grows by 10 each day. How many minutes next?","A reader logs 20, 30, then 40 minutes. The pattern grows by 10. How many minutes next?","Reading time grows by 10 each day: 20, 30, 40. What comes next?"]}},
   },
   {
     itemId: "skipcounting-app-012",
@@ -122,7 +122,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":35,"display":{"step":7,"sequence":[14,21,28],"promptText":"A pattern grows by 7 each step: 14, 21, 28. What comes next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":35,"display":{"step":7,"sequence":[14,21,28],"promptText":"A pattern grows by 7 each step: 14, 21, 28. What comes next?","promptOptions":["A pattern adds 7 each step: 14, 21, 28. What's the next number?","Numbers grow by 7: 14, 21, 28. What number comes next?","A sequence grows by 7 each time: 14, 21, 28. What comes next?"]}},
   },
   {
     itemId: "skipcounting-app-013",
@@ -132,7 +132,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":36,"display":{"step":9,"sequence":[9,18,27],"promptText":"A counter goes up by 9 each step: 9, 18, 27. What comes next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":36,"display":{"step":9,"sequence":[9,18,27],"promptText":"A counter goes up by 9 each step: 9, 18, 27. What comes next?","promptOptions":["Tyler collects 9 beads each time. He has 9, then 18, then 27. How many after the next time?","Every group has 9: 9, 18, 27. What's the next number?"]}},
   },
   {
     itemId: "skipcounting-app-014",
@@ -142,7 +142,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":8,"display":{"step":2,"sequence":[2,4,6],"promptText":"A frog hops 2 each step: 2, 4, 6. What's next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":8,"display":{"step":2,"sequence":[2,4,6],"promptText":"A frog hops 2 each step: 2, 4, 6. What's next?","promptOptions":["A frog hops 2 steps at a time: 2, 4, 6. Where is the frog after the next hop?","A toy car moves 2 spaces each turn: 2, 4, 6. How many spaces after one more turn?"]}},
   },
   {
     itemId: "skipcounting-app-015",
@@ -152,7 +152,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":20,"display":{"step":5,"sequence":[5,10,15],"promptText":"A bunny hops 5 carrots each leap: 5, 10, 15. What's next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":20,"display":{"step":5,"sequence":[5,10,15],"promptText":"A bunny hops 5 carrots each leap: 5, 10, 15. What's next?","promptOptions":["A bunny eats 5 carrots each day: 5, 10, 15. How many carrots after one more day?","Leo collects 5 rocks each week: 5, 10, 15. How many rocks after the next week?"]}},
   },
   {
     itemId: "skipcounting-app-016",
@@ -162,7 +162,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":6,"display":{"step":2,"sequence":[0,2,4],"promptText":"A toy car moves 2 squares each turn: 0, 2, 4. What's next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":6,"display":{"step":2,"sequence":[0,2,4],"promptText":"A toy car moves 2 squares each turn: 0, 2, 4. What's next?","promptOptions":["A game marker starts at 0 and moves 2 spaces each turn: 0, 2, 4. Where is it after the next turn?","A toy moves 2 squares each turn, starting at 0: 0, 2, 4. What's the next position?"]}},
   },
   {
     itemId: "skipcounting-app-017",
@@ -172,7 +172,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":12,"display":{"step":3,"sequence":[3,6,9],"promptText":"A pattern shows 3, 6, 9. What's next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":12,"display":{"step":3,"sequence":[3,6,9],"promptText":"A pattern shows 3, 6, 9. What's next?","promptOptions":["Emma stacks 3 blocks each time. She has 3, then 6, then 9. How many after the next stack?","A pattern adds 3 each step: 3, 6, 9. What comes next?"]}},
   },
   {
     itemId: "skipcounting-app-018",
@@ -182,7 +182,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":9,"display":{"step":2,"sequence":[1,3,5,7],"promptText":"Odd numbers 1, 3, 5, 7. What's next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":9,"display":{"step":2,"sequence":[1,3,5,7],"promptText":"Odd numbers 1, 3, 5, 7. What's next?","promptOptions":["Mia counts odd numbers: 1, 3, 5, 7. What's the next one she says?","A pattern of odd numbers: 1, 3, 5, 7. What is the next odd number?"]}},
   },
   {
     itemId: "skipcounting-app-019",
@@ -192,7 +192,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":16,"display":{"step":4,"sequence":[4,8,12],"promptText":"A row counts 4, 8, 12. What's next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":16,"display":{"step":4,"sequence":[4,8,12],"promptText":"A row counts 4, 8, 12. What's next?","promptOptions":["Each shelf has 4 books. 1 shelf: 4, 2 shelves: 8, 3 shelves: 12. How many on 4 shelves?","A pattern counts by 4s: 4, 8, 12. What's next?"]}},
   },
   {
     itemId: "skipcounting-app-020",
@@ -202,7 +202,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":15,"display":{"step":5,"sequence":[5,10],"promptText":"5 marbles per jar; after 1, 2 jars: 5, 10. After 3 jars?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":15,"display":{"step":5,"sequence":[5,10],"promptText":"5 marbles per jar; after 1, 2 jars: 5, 10. After 3 jars?","promptOptions":["A jar holds 5 marbles. 1 jar: 5, 2 jars: 10. How many marbles in 3 jars?","Marbles: 1 jar (5), 2 jars (10). How many marbles in 3 jars?"]}},
   },
   {
     itemId: "skipcounting-app-021",
@@ -212,7 +212,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":12,"display":{"step":3,"sequence":[3,6,9],"promptText":"3 cookies per plate; after 1, 2, 3 plates: 3, 6, 9. After 4 plates?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":12,"display":{"step":3,"sequence":[3,6,9],"promptText":"3 cookies per plate; after 1, 2, 3 plates: 3, 6, 9. After 4 plates?","promptOptions":["Each plate has 3 cookies. 1 plate: 3, 2 plates: 6, 3 plates: 9. How many on 4 plates?","A baker puts 3 cookies on each plate: 1 (3), 2 (6), 3 (9). How many total on 4 plates?"]}},
   },
   {
     itemId: "skipcounting-app-022",
@@ -222,7 +222,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":8,"display":{"step":2,"sequence":[2,4,6],"promptText":"2 wheels per scooter; after 1, 2, 3 scooters: 2, 4, 6. After 4 scooters?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":8,"display":{"step":2,"sequence":[2,4,6],"promptText":"2 wheels per scooter; after 1, 2, 3 scooters: 2, 4, 6. After 4 scooters?","promptOptions":["Each scooter has 2 wheels. 1 scooter: 2, 2 scooters: 4, 3 scooters: 6. How many on 4?","A scooter has 2 wheels: 1 (2), 2 (4), 3 (6). How many wheels on 4 scooters?"]}},
   },
   {
     itemId: "skipcounting-app-023",
@@ -232,7 +232,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":40,"display":{"step":10,"sequence":[10,20,30],"promptText":"A truck adds 10 each load: 10, 20, 30. What's next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":40,"display":{"step":10,"sequence":[10,20,30],"promptText":"A truck adds 10 each load: 10, 20, 30. What's next?","promptOptions":["A truck delivers 10 boxes each trip: 10, 20, 30. How many boxes after the next trip?","Each delivery brings 10 items: 10, 20, 30. How many after one more delivery?"]}},
   },
   {
     itemId: "skipcounting-app-024",
@@ -242,7 +242,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":24,"display":{"step":6,"sequence":[6,12,18],"promptText":"Counters jump by 6: 6, 12, 18. What's next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":24,"display":{"step":6,"sequence":[6,12,18],"promptText":"Counters jump by 6: 6, 12, 18. What's next?","promptOptions":["Leo skip-counts by 6s: 6, 12, 18. What's the next number?","A pattern jumps by 6 each time: 6, 12, 18. What comes next?"]}},
   },
   {
     itemId: "skipcounting-app-025",
@@ -252,7 +252,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":44,"display":{"step":11,"sequence":[11,22,33],"promptText":"Cards stack 11 at a time: 11, 22, 33. What's next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":44,"display":{"step":11,"sequence":[11,22,33],"promptText":"Cards stack 11 at a time: 11, 22, 33. What's next?","promptOptions":["Jayden counts by 11s. He says 11, 22, 33. What comes next?","Counting by 11s: 11, 22, 33. What's the next number?"]}},
   },
   {
     itemId: "skipcounting-app-026",
@@ -262,7 +262,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":28,"display":{"step":7,"sequence":[7,14,21],"promptText":"A pattern shows 7, 14, 21. What's next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":28,"display":{"step":7,"sequence":[7,14,21],"promptText":"A pattern shows 7, 14, 21. What's next?","promptOptions":["Maria counts by 7s. She says 7, 14, 21. What comes next?","Counting by 7s: 7, 14, 21. What's the next number?"]}},
   },
   {
     itemId: "skipcounting-app-027",
@@ -272,7 +272,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":32,"display":{"step":8,"sequence":[8,16,24],"promptText":"Counting in order 8, 16, 24. What's next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":32,"display":{"step":8,"sequence":[8,16,24],"promptText":"Counting in order 8, 16, 24. What's next?","promptOptions":["Carlos counts by 8s. He says 8, 16, 24. What comes next?","Counting by 8s: 8, 16, 24. What's the next number?"]}},
   },
   {
     itemId: "skipcounting-app-028",
@@ -282,7 +282,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":60,"display":{"step":15,"sequence":[15,30,45],"promptText":"Pattern: 15, 30, 45. What's next?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":60,"display":{"step":15,"sequence":[15,30,45],"promptText":"Pattern: 15, 30, 45. What's next?","promptOptions":["Maria counts by 15s. She says 15, 30, 45. What comes next?","Counting by 15s: 15, 30, 45. What's the next number?"]}},
   },
   {
     itemId: "skipcounting-app-029",
@@ -292,7 +292,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":16,"display":{"step":4,"sequence":[4,8,12],"promptText":"4 books per shelf; 4, 8, 12 after 3 shelves. After 4 shelves?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":16,"display":{"step":4,"sequence":[4,8,12],"promptText":"4 books per shelf; 4, 8, 12 after 3 shelves. After 4 shelves?","promptOptions":["Jayden puts 4 books on each shelf. After 3 shelves he has 4, 8, 12 books. How many books after 4 shelves?","Counting by 4s for each shelf: 4, 8, 12. What comes next?"]}},
   },
   {
     itemId: "skipcounting-app-030",
@@ -302,7 +302,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":24,"display":{"step":6,"sequence":[6,12,18],"promptText":"6 candies per jar; 6, 12, 18 after 3 jars. After 4 jars?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":24,"display":{"step":6,"sequence":[6,12,18],"promptText":"6 candies per jar; 6, 12, 18 after 3 jars. After 4 jars?","promptOptions":["Maria fills jars with 6 candies each. After 3 jars she has 6, 12, 18 candies. How many candies after 4 jars?","Counting by 6s for each jar: 6, 12, 18. What comes next?"]}},
   },
   {
     itemId: "skipcounting-app-031",
@@ -312,7 +312,7 @@ export const ITEMS = [
     structureType: "patternNext",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"skip","answer":20,"display":{"step":5,"sequence":[5,10,15],"promptText":"5 stickers per page; 5, 10, 15 after 3 pages. After 4 pages?"}},
+    question: {"a":null,"b":null,"op":"skip","answer":20,"display":{"step":5,"sequence":[5,10,15],"promptText":"5 stickers per page; 5, 10, 15 after 3 pages. After 4 pages?","promptOptions":["Jayden puts 5 stickers on each page. After 3 pages he has 5, 10, 15 stickers. How many stickers after 4 pages?","Counting by 5s for each page: 5, 10, 15. What comes next?"]}},
   },
   {
     itemId: "skipcounting-conc-groupsToProduct-23-001",

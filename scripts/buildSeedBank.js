@@ -46,11 +46,31 @@ function buildSeed(items, n) {
 
   const seed = [];
   for (const [, group] of byCell) {
-    // Spread the picks across the group rather than taking the first n, so the
-    // seed is not all one context: items were authored in runs.
-    const step = Math.max(1, Math.floor(group.length / n));
-    for (let i = 0, taken = 0; i < group.length && taken < n; i += step, taken += 1) {
-      seed.push(group[i]);
+    // Round-robin across SUBSKILLS first, spreading within each. Stride
+    // sampling over the whole group is subskill-blind: when one authoring run
+    // floods a cell, another subskill can end up with a single seed item and
+    // the offline adaptive engine (which targets the weakest subskill) has no
+    // alternates to rotate.
+    const bySubskill = new Map();
+    for (const item of group) {
+      const key = item.subskill || "";
+      if (!bySubskill.has(key)) bySubskill.set(key, []);
+      bySubskill.get(key).push(item);
+    }
+    const buckets = [...bySubskill.values()].map((items) => ({
+      items,
+      step: Math.max(1, Math.floor(items.length / Math.max(1, Math.ceil(n / bySubskill.size)))),
+      i: 0,
+    }));
+    let taken = 0;
+    while (taken < n && buckets.some((b) => b.i < b.items.length)) {
+      for (const b of buckets) {
+        if (taken >= n) break;
+        if (b.i >= b.items.length) continue;
+        seed.push(b.items[b.i]);
+        b.i += b.step;
+        taken += 1;
+      }
     }
   }
   return { seed, cells: byCell.size };

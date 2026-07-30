@@ -77,18 +77,20 @@ describe("item bank validity", () => {
   });
 
   it("every approved item's numeric payload is consistent with its answer", () => {
+    // Same trio rule as the QC gate and validateItem: a/b hold the two GIVENS,
+    // which for embedded-unknown structures are not the solution's operands \u2014
+    // so the invariant is position-agnostic: the largest of {a, b, answer}
+    // equals the sum (or product) of the other two.
     const mismatched = [];
     for (const item of BUNDLED_ITEMS) {
       if (item.reviewStatus !== REVIEW_STATUS.APPROVED) continue;
       const q = item.question || {};
       if (typeof q.a === "number" && typeof q.b === "number" && typeof q.answer === "number") {
-        if (q.op === "+" && q.a + q.b !== q.answer) mismatched.push(item.itemId);
-        if ((q.op === "-" || q.op === "\u2212") && q.a - q.b !== q.answer)
-          mismatched.push(item.itemId);
-        if ((q.op === "*" || q.op === "\u00d7") && q.a * q.b !== q.answer)
-          mismatched.push(item.itemId);
-        if ((q.op === "/" || q.op === "\u00f7") && q.b !== 0 && q.a / q.b !== q.answer)
-          mismatched.push(item.itemId);
+        const additive = q.op === "+" || q.op === "-" || q.op === "\u2212";
+        const multiplicative = q.op === "*" || q.op === "\u00d7" || q.op === "x" || q.op === "/" || q.op === "\u00f7";
+        if (!additive && !multiplicative) continue;
+        const [lo, mid, hi] = [q.a, q.b, q.answer].sort((x, y) => x - y);
+        if (!(additive ? lo + mid === hi : lo * mid === hi)) mismatched.push(item.itemId);
       }
     }
     expect(mismatched).toEqual([]);

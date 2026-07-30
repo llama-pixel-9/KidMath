@@ -193,11 +193,26 @@ export function validateBankItem(item) {
       validateNonApplicationDisplay(family, item.question.display, errors);
     }
     // Numeric consistency check for arithmetic items that declare a/b/op.
+    // Same trio rule as the QC gate's arithmeticCheck: `a` and `b` hold the
+    // two GIVENS, which for embedded-unknown structures (`? - 12 = 31`) are
+    // not the operands of the solution — so the invariant is that the largest
+    // of {a, b, answer} equals the sum (or product) of the other two,
+    // position-agnostic. `2 + 3 = 6` still fails; `? - 12 = 31 -> 43` passes.
     const { a, b, op, answer } = item.question;
     if (op && typeof answer === "number" && typeof a === "number" && typeof b === "number") {
-      const expected = computeExpected(op, a, b);
-      if (expected != null && expected !== answer) {
-        errors.push(`numeric inconsistency: ${a} ${op} ${b} !== ${answer}`);
+      const additive = op === "+" || op === "-" || op === "−";
+      const multiplicative = op === "×" || op === "x" || op === "*" || op === "÷" || op === "/";
+      if (additive || multiplicative) {
+        const [lo, mid, hi] = [a, b, answer].sort((x, y) => x - y);
+        const holds = additive ? lo + mid === hi : lo * mid === hi;
+        if (!holds) {
+          errors.push(`numeric inconsistency: {${a}, ${b}, ${answer}} do not satisfy ${op}`);
+        }
+      } else {
+        const expected = computeExpected(op, a, b);
+        if (expected != null && expected !== answer) {
+          errors.push(`numeric inconsistency: ${a} ${op} ${b} !== ${answer}`);
+        }
       }
     }
   }

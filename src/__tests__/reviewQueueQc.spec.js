@@ -53,6 +53,30 @@ describe("review queue QC adapter", () => {
     expect(qc.findings.some((f) => f.id === "placeholderLeak")).toBe(true);
   });
 
+  it("flags a decorative story sentence on a bare-number question", () => {
+    const qc = runChecksOnAdminItem(
+      adminItem({
+        levelMin: 7,
+        levelMax: 10,
+        payload: {
+          a: 53, b: null, op: "place", answer: 5,
+          display: { promptText: "Emma has 53 pencils. How many tens are in 53?" },
+        },
+      })
+    );
+    expect(qc.pass).toBe(false);
+    expect(qc.findings.some((f) => f.id === "decorativeContext")).toBe(true);
+    // The bare question alone is fine.
+    const bare = runChecksOnAdminItem(
+      adminItem({
+        levelMin: 7,
+        levelMax: 10,
+        payload: { a: 53, b: null, op: "place", answer: 5, display: { promptText: "How many tens are in 53?" } },
+      })
+    );
+    expect(bare.findings.some((f) => f.id === "decorativeContext")).toBe(false);
+  });
+
   it("reconciles the admin field shape (payload, levelMin/Max) with the check inputs", () => {
     // A malformed adapter would silently pass everything by feeding undefined.
     const qc = runChecksOnAdminItem(adminItem({ payload: undefined }));

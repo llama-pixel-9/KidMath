@@ -38,6 +38,7 @@ export const NARRATIVE_RULES = [
   'End with an explicit time anchor: "at the start", "at first", "to begin with" — not a bare "before".',
   'The question must restate the thing being counted: "How many cards did he have at the start?", never "How many did he have?"',
   "2-4 short sentences, each easy to picture.",
+  'Context must MATTER. Never bolt a name onto a bare number question: "Emma has 53 pencils. How many tens are in 53?" is wrong — the story does no work. Either ask the bare question ("How many tens are in 53?") or make the story load-bearing ("Emma bundles her 53 pencils into packs of 10 — how many full packs?").',
 ];
 
 // Reviewer-approved gold examples of the target register.

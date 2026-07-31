@@ -177,6 +177,29 @@ export const CHECKS = [
   },
 
   {
+    id: "decorativeContext",
+    run: (item) => {
+      const text = (item.question?.display?.promptText || "").trim();
+      // "Emma has 53 pencils. How many tens are in 53?" — the question asks
+      // about the BARE numeral, so the story sentence does no work. Either
+      // the story must be load-bearing or the question stands alone.
+      const sentences = text.match(/[^.!?]+[.!?]/g)?.map((s) => s.trim());
+      if (!sentences || sentences.length < 2) return null;
+      const q = sentences[sentences.length - 1];
+      const m = q.match(/^(?:How many|What)\b[^?]*\b(?:in|of)\s+(\d+)\s*\?$/i);
+      if (!m) return null;
+      const lead = sentences.slice(0, -1).join(" ");
+      if (new RegExp(`\\b${m[1]}\\b`).test(lead)) {
+        return fail(
+          "decorativeContext",
+          `the story sentence does no work — the question asks about the bare number ${m[1]}; drop the story or make it load-bearing`
+        );
+      }
+      return null;
+    },
+  },
+
+  {
     id: "nounlessQuestion",
     run: (item) => {
       const text = item.question?.display?.promptText || "";

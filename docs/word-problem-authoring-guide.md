@@ -75,6 +75,11 @@ Use the closest matching `structureType` when authoring an item:
   should not have to resolve "how many *what*" from an earlier sentence.
   Enforced by the `nounlessQuestion` QC check.
 - Avoid extra narrative: skip story decoration that does not affect the math.
+  The tell: the question references a **bare number** that a story sentence
+  merely decorated — "Emma has 53 pencils. How many tens are in 53?" Either
+  drop the story ("How many tens are in 53?") or make it load-bearing ("Emma
+  bundles her 53 pencils into packs of 10 — how many full packs?"). Enforced
+  for generated prose by the `decorativeContext` sweep rule.
 - Avoid culturally narrow contexts. Prefer school, garden, library, kitchen,
   sports, and library settings.
 - Numbers in the prompt must match the question payload (`a`, `b`, `answer`).

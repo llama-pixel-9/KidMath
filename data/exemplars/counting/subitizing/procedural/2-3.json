@@ -10,7 +10,7 @@
       "name": "KidMath item bank (own reviewed content)",
       "url": "item:counting-proc-subitizing-23-001",
       "license": "CC0",
-      "fetchedAt": "2026-07-29"
+      "fetchedAt": "2026-07-31"
     },
     "paraphrase": "Count from 1 to 18. What is the count?",
     "payload": {
@@ -20,56 +20,6 @@
       "answer": 18,
       "display": {
         "promptText": "Count from 1 to 18. What is the count?"
-      }
-    },
-    "notes": "Exported from the approved bank as an in-register exemplar."
-  },
-  {
-    "exemplarId": "counting-subitizing-procedural-2_3-x002",
-    "modeId": "counting",
-    "subskill": "subitizing",
-    "itemFamily": "procedural",
-    "levelBand": "2-3",
-    "structureType": "countObjects",
-    "source": {
-      "name": "KidMath item bank (own reviewed content)",
-      "url": "item:counting-proc-subitizing-23-002",
-      "license": "CC0",
-      "fetchedAt": "2026-07-29"
-    },
-    "paraphrase": "Count from 1 to 22. What is the count?",
-    "payload": {
-      "a": 22,
-      "b": null,
-      "op": "count",
-      "answer": 22,
-      "display": {
-        "promptText": "Count from 1 to 22. What is the count?"
-      }
-    },
-    "notes": "Exported from the approved bank as an in-register exemplar."
-  },
-  {
-    "exemplarId": "counting-subitizing-procedural-2_3-x003",
-    "modeId": "counting",
-    "subskill": "subitizing",
-    "itemFamily": "procedural",
-    "levelBand": "2-3",
-    "structureType": "countObjects",
-    "source": {
-      "name": "KidMath item bank (own reviewed content)",
-      "url": "item:counting-proc-subitizing-23-003",
-      "license": "CC0",
-      "fetchedAt": "2026-07-29"
-    },
-    "paraphrase": "Count from 1 to 25. What is the count?",
-    "payload": {
-      "a": 25,
-      "b": null,
-      "op": "count",
-      "answer": 25,
-      "display": {
-        "promptText": "Count from 1 to 25. What is the count?"
       }
     },
     "notes": "Exported from the approved bank as an in-register exemplar."

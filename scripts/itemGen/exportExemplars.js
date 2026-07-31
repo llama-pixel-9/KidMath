@@ -14,6 +14,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import url from "node:url";
+import { runChecks } from "../../src/itemBank/qc/checks.js";
 
 const __filename = url.fileURLToPath(import.meta.url);
 const ROOT = path.resolve(path.dirname(__filename), "..", "..");
@@ -47,9 +48,20 @@ async function fetchMode(modeId) {
 const today = new Date().toISOString().slice(0, 10);
 let files = 0;
 for (const modeId of modes) {
-  const rows = (await fetchMode(modeId)).filter(
-    (r) => r.subskill && r.item_family && r.level_band && typeof r.payload?.display?.promptText === "string"
-  );
+  const rows = (await fetchMode(modeId)).filter((r) => {
+    if (!r.subskill || !r.item_family || !r.level_band) return false;
+    if (typeof r.payload?.display?.promptText !== "string") return false;
+    // An exemplar that fails today's QC gate teaches the model the disease —
+    // the self-answering counting batch came from exactly this. Approved
+    // legacy items are NOT automatically gate-clean.
+    return runChecks({
+      itemId: r.item_id,
+      modeId,
+      structureType: r.structure_type,
+      levelRange: [1, 10],
+      question: r.payload,
+    }).pass;
+  });
   const cells = new Map();
   for (const r of rows) {
     const key = `${r.subskill}::${r.item_family}::${r.level_band}`;

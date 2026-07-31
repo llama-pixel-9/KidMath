@@ -53,6 +53,28 @@ describe("review queue QC adapter", () => {
     expect(qc.findings.some((f) => f.id === "placeholderLeak")).toBe(true);
   });
 
+  it("flags a self-answering prompt whose only number is the answer", () => {
+    const qc = runChecksOnAdminItem(
+      adminItem({
+        payload: {
+          a: 14, b: null, op: "count", answer: 14,
+          display: { promptText: "There are 14 toy cars on a shelf. How many toy cars are there?" },
+        },
+      })
+    );
+    expect(qc.findings.some((f) => f.id === "selfAnswering" && f.severity === "fail")).toBe(true);
+    // With a visual payload the prose count is a caption, not a giveaway.
+    const visual = runChecksOnAdminItem(
+      adminItem({
+        payload: {
+          a: 14, b: null, op: "count", answer: 14,
+          display: { promptText: "Count the toy cars. How many are there in the picture?", emoji: "🚗", count: 14 },
+        },
+      })
+    );
+    expect(visual.findings.some((f) => f.id === "selfAnswering")).toBe(false);
+  });
+
   it("flags a decorative story sentence on a bare-number question", () => {
     const qc = runChecksOnAdminItem(
       adminItem({

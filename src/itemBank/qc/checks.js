@@ -177,6 +177,30 @@ export const CHECKS = [
   },
 
   {
+    id: "selfAnswering",
+    run: (item) => {
+      const d = item.question?.display || {};
+      const text = d.promptText || "";
+      const answer = item.question?.answer;
+      if (typeof answer !== "number" || !text) return null;
+      if (!/how many|name the total|what number/i.test(text)) return null;
+      // A visual payload (emoji set, discs, sequence…) means the child counts
+      // the PICTURE — prose stating the count is then the caption, not the
+      // giveaway. Text-only items get no such excuse.
+      const visualKeys = Object.keys(d).filter((k) => k !== "promptText" && k !== "promptOptions");
+      if (visualKeys.length) return null;
+      const nums = [...new Set((text.match(/\d+/g) || []).map(Number))];
+      if (nums.length === 1 && nums[0] === answer) {
+        return fail(
+          "selfAnswering",
+          `the prompt's only number IS the answer (${answer}) — the question answers itself`
+        );
+      }
+      return null;
+    },
+  },
+
+  {
     id: "decorativeContext",
     run: (item) => {
       const text = (item.question?.display?.promptText || "").trim();

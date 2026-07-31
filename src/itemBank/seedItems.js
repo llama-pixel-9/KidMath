@@ -1599,7 +1599,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-app-002",
+  "itemId": "comparing-app-013",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "symbolSelection",
@@ -1610,74 +1610,68 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 178,
-   "b": 187,
+   "a": 304,
+   "b": 340,
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "A class read 178 books and another class read 187 books. Which symbol compares 178 to 187?",
+    "promptText": "A garden has 304 tulips and 340 daisies. Which symbol compares 304 to 340?",
     "promptOptions": [
-     "Ms. Lee's class read 178 books. Mr. Park's class read 187 books. Which symbol compares their totals?",
-     "One class read 178 books. Another class read 187 books. Which symbol compares them?",
-     "Two groups read books. One read 178. The other read 187. Which symbol compares their reading?"
+     "Ms. Lee planted 304 red tulips and 340 white daisies. Compare 304 to 340.",
+     "The garden has 304 tulips and 340 daisies. Compare 304 to 340."
     ]
    }
   }
  },
  {
-  "itemId": "comparing-app-004",
+  "itemId": "comparing-app-benchmarkCompare-4_5-002",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "benchmarkCompare",
   "structureType": "compareNumbers",
   "levelRange": [
-   9,
+   7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 805,
-   "b": 850,
+   "a": 6089,
+   "b": 6098,
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "A stadium seats 805 fans and a theater seats 850 fans. Which symbol compares 805 to 850?",
-    "promptOptions": [
-     "The stadium seats 805 fans. The theater seats 850 fans. Which symbol compares them?",
-     "One place seats 805 people. Another seats 850 people. Which symbol compares their seating?",
-     "A big stadium can hold 805 fans. A theater can hold 850 fans. Which symbol compares them?"
-    ]
+    "promptText": "Monday's count was 6089 steps. Tuesday's count was 6098 steps. Which symbol compares them?"
    }
   }
  },
  {
-  "itemId": "comparing-app-006",
+  "itemId": "comparing-app-009",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "distanceCompare",
   "structureType": "compareNumbers",
   "levelRange": [
-   9,
+   7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 612,
-   "b": 612,
+   "a": 145,
+   "b": 145,
    "op": "?",
    "answer": "=",
    "display": {
-    "promptText": "Town A and Town B each have 612 students. Which symbol compares the two amounts?",
+    "promptText": "Two food drives each collected 145 cans. Which symbol compares the two totals?",
     "promptOptions": [
-     "Springfield has 612 students. Maple Town has 612 students. Which symbol compares them?",
-     "One town has 612 students. Another town has 612 students. Which symbol compares their enrollments?",
-     "Two towns each have 612 students. Which symbol compares them?"
+     "One food drive collected 145 cans. Another collected 145 cans. Which symbol compares them?",
+     "The third grade collected 145 cans. The fourth grade collected 145 cans. Which symbol compares their totals?",
+     "Two schools gathered cans. One school collected 145. The other collected 145. Which symbol compares them?"
     ]
    }
   }
  },
  {
-  "itemId": "comparing-app-007",
+  "itemId": "comparing-app-symbolSelection-4_5-006",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "symbolSelection",
@@ -1688,43 +1682,33 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 84,
-   "b": 79,
+   "a": 1998,
+   "b": 2013,
    "op": "?",
-   "answer": ">",
+   "answer": "<",
    "display": {
-    "promptText": "A class read 84 books and another class read 79 books. Which symbol compares 84 to 79?",
-    "promptOptions": [
-     "One class read 84 books. Another class read 79 books. Which symbol compares how many they read?",
-     "Mrs. Lopez's class read 84 books. Mr. Chen's class read 79 books. Which symbol compares them?",
-     "The third grade read 84 books. The second grade read 79 books. Which symbol compares their reading?"
-    ]
+    "promptText": "Coach Ruiz sold 1998 tickets on Friday. He sold 2013 tickets on Saturday. Which symbol compares the two nights?"
    }
   }
  },
  {
-  "itemId": "comparing-app-008",
+  "itemId": "comparing-app-benchmarkCompare-4_5-010",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "benchmarkCompare",
   "structureType": "compareNumbers",
   "levelRange": [
-   8,
+   7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 999,
-   "b": 1001,
+   "a": 45600,
+   "b": 45060,
    "op": "?",
-   "answer": "<",
+   "answer": ">",
    "display": {
-    "promptText": "A counter shows 999 in one window and 1001 in another. Which symbol compares 999 to 1001?",
-    "promptOptions": [
-     "One counter shows 999. Another counter shows 1001. Which symbol compares them?",
-     "A machine has two windows. One shows 999. The other shows 1001. Which symbol compares them?",
-     "Two scoreboards show numbers. One shows 999. One shows 1001. Which symbol compares them?"
-    ]
+    "promptText": "The video got 45600 views. The photo got 45060 views. Which symbol compares them?"
    }
   }
  },
@@ -1801,7 +1785,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-app-015",
+  "itemId": "comparing-app-symbolSelection-K_1-004",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "symbolSelection",
@@ -1812,20 +1796,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 7,
-   "b": 4,
+   "a": 2,
+   "b": 7,
    "op": "?",
-   "answer": ">",
+   "answer": "<",
    "display": {
-    "promptText": "Sara counted 7 cars. Eli counted 4 cars. Which symbol compares 7 to 4?",
-    "promptOptions": [
-     "Sara counted 7 cars. Eli counted 4 cars. Compare 7 to 4."
-    ]
+    "promptText": "Mateo found 2 shells. Ruby found 7 shells. Compare 2 to 7."
    }
   }
  },
  {
-  "itemId": "comparing-app-018",
+  "itemId": "comparing-app-benchmarkCompare-K_1-004",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "benchmarkCompare",
@@ -1836,20 +1817,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 7,
-   "b": 5,
+   "a": 12,
+   "b": 10,
    "op": "?",
    "answer": ">",
    "display": {
-    "promptText": "Lia has 7 stickers; the benchmark is 5. Compare 7 to 5.",
-    "promptOptions": [
-     "Lia collected 7 stickers. Her friend has 5 stickers. Compare 7 to 5."
-    ]
+    "promptText": "Priya strung 12 beads. Her friend strung 10 beads. Compare 12 to 10."
    }
   }
  },
  {
-  "itemId": "comparing-app-021",
+  "itemId": "comparing-app-distanceCompare-K_1-004",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "distanceCompare",
@@ -1860,20 +1838,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 3,
-   "b": 8,
+   "a": 15,
+   "b": 14,
    "op": "?",
-   "answer": "<",
+   "answer": ">",
    "display": {
-    "promptText": "Min has 3 pens and Tom has 8 pens. Compare 3 to 8.",
-    "promptOptions": [
-     "Min has 3 pens. Tom has 8 pens. Compare 3 to 8."
-    ]
+    "promptText": "Theo has 15 marbles. Hana has 14 marbles. Compare 15 to 14."
    }
   }
  },
  {
-  "itemId": "comparing-app-016",
+  "itemId": "comparing-app-symbolSelection-K_1-010",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "symbolSelection",
@@ -1884,21 +1859,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 6,
-   "b": 6,
+   "a": 11,
+   "b": 3,
    "op": "?",
-   "answer": "=",
+   "answer": ">",
    "display": {
-    "promptText": "Two boxes both have 6 toys. Which symbol compares 6 to 6?",
-    "promptOptions": [
-     "Kyle's box has 6 toys. Lisa's box has 6 toys. Compare 6 to 6.",
-     "One box has 6 toys. Another box has 6 toys. Compare 6 to 6."
-    ]
+    "promptText": "Rosa washed 11 grapes. Milo washed 3 grapes. Compare 11 to 3."
    }
   }
  },
  {
-  "itemId": "comparing-app-019",
+  "itemId": "comparing-app-benchmarkCompare-K_1-010",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "benchmarkCompare",
@@ -1909,15 +1880,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 10,
+   "a": 8,
    "b": 10,
    "op": "?",
-   "answer": "=",
+   "answer": "<",
    "display": {
-    "promptText": "Both Sam and Pat have 10 grapes. Compare 10 to 10.",
-    "promptOptions": [
-     "Sam picked 10 grapes. Pat picked 10 grapes. Compare 10 to 10."
-    ]
+    "promptText": "Leo counted 8 raisins in his snack cup. A full cup holds 10 raisins. Compare 8 to 10."
    }
   }
  },
@@ -1997,7 +1965,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-app-024",
+  "itemId": "comparing-app-symbolSelection-2_3-004",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "symbolSelection",
@@ -2008,20 +1976,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 67,
-   "b": 32,
+   "a": 491,
+   "b": 419,
    "op": "?",
    "answer": ">",
    "display": {
-    "promptText": "Pat scored 67 points and Min scored 32 points. Compare 67 and 32.",
-    "promptOptions": [
-     "Pat scored 67 points. Min scored 32 points. Compare 67 to 32."
-    ]
+    "promptText": "Amina made 491 paper cranes. Ben made 419 paper cranes. Compare 491 to 419."
    }
   }
  },
  {
-  "itemId": "comparing-app-027",
+  "itemId": "comparing-app-benchmarkCompare-2_3-004",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "benchmarkCompare",
@@ -2032,119 +1997,19 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 65,
-   "b": 50,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "A book has 65 pages. The library asks for at least 50. Compare 65 and 50.",
-    "promptOptions": [
-     "One book has 65 pages. Another has 50 pages. Which book has more pages?",
-     "Sarah's team scored 65 points. Mike's team scored 50. Who scored more?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "comparing-app-030",
-  "modeId": "comparing",
-  "itemFamily": "application",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 75,
-   "b": 42,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "A garden has 75 tulips and 42 daisies. Compare 75 and 42.",
-    "promptOptions": [
-     "A garden has 75 tulips and 42 daisies. Which flower does it have more of?",
-     "The big box has 75 crayons. The small box has 42 crayons. Which has more?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "comparing-app-025",
-  "modeId": "comparing",
-  "itemFamily": "application",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 50,
-   "b": 50,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Two teams both have 50 fans. Compare 50 and 50.",
-    "promptOptions": [
-     "Sarah's team has 50 fans. Jake's team has 50 fans. Which team has more fans?",
-     "One jar has 50 marbles. Another jar has 50 marbles. Which has more marbles?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "comparing-app-028",
-  "modeId": "comparing",
-  "itemFamily": "application",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 30,
-   "b": 30,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Both jars hold 30 jellybeans. Compare 30 and 30.",
-    "promptOptions": [
-     "Tom has 30 stickers. Lisa has 30 stickers. Who has more stickers?",
-     "One bag has 30 cookies. Another bag has 30 cookies. Which has more cookies?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-benchmarkCompare-23-001",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 47,
-   "b": 50,
+   "a": 96,
+   "b": 100,
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "Use 50 as a benchmark: is 47 less than 50?"
+    "promptText": "Rosa brought 96 cans. Dev brought 100 cans. Who brought more cans?"
    }
   }
  },
  {
-  "itemId": "comparing-conc-distanceCompare-23-001",
+  "itemId": "comparing-app-distanceCompare-2_3-004",
   "modeId": "comparing",
-  "itemFamily": "conceptual",
+  "itemFamily": "application",
   "subskill": "distanceCompare",
   "structureType": "compareNumbers",
   "levelRange": [
@@ -2153,19 +2018,19 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 18,
-   "b": 25,
+   "a": 312,
+   "b": 321,
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "On a number line, 18 is closer to 0 than 25. Compare 18 and 25."
+    "promptText": "Aisha rode 312 meters. Bo rode 321 meters. Who rode farther?"
    }
   }
  },
  {
-  "itemId": "comparing-conc-symbolSelection-23-001",
+  "itemId": "comparing-app-symbolSelection-2_3-010",
   "modeId": "comparing",
-  "itemFamily": "conceptual",
+  "itemFamily": "application",
   "subskill": "symbolSelection",
   "structureType": "compareNumbers",
   "levelRange": [
@@ -2174,17 +2039,38 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 23,
-   "b": 45,
+   "a": 803,
+   "b": 830,
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "Looking at 23 and 45, which is smaller?"
+    "promptText": "Jonah saved 803 pennies. Ruth saved 830 pennies. Compare 803 to 830."
    }
   }
  },
  {
-  "itemId": "comparing-conc-benchmarkCompare-23-002",
+  "itemId": "comparing-app-benchmarkCompare-2_3-010",
+  "modeId": "comparing",
+  "itemFamily": "application",
+  "subskill": "benchmarkCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 250,
+   "b": 250,
+   "op": "?",
+   "answer": "=",
+   "display": {
+    "promptText": "Ella brought 250 water bottles. Noah brought 250 water bottles. Who brought more water bottles?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-benchmarkCompare-2_3-001",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "benchmarkCompare",
@@ -2195,17 +2081,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 65,
-   "b": 50,
+   "a": 83,
+   "b": 100,
    "op": "?",
-   "answer": ">",
+   "answer": "<",
    "display": {
-    "promptText": "Use 50 as a benchmark: is 65 greater than 50?"
+    "promptText": "Use 100 as a benchmark: is 83 less than 100?"
    }
   }
  },
  {
-  "itemId": "comparing-conc-distanceCompare-23-002",
+  "itemId": "comparing-conc-distanceCompare-2_3-001",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "distanceCompare",
@@ -2216,17 +2102,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 75,
-   "b": 42,
+   "a": 145,
+   "b": 178,
    "op": "?",
-   "answer": ">",
+   "answer": "<",
    "display": {
-    "promptText": "On a number line, 75 is farther from 0 than 42. Compare 75 and 42."
+    "promptText": "A number line starts at 0. The mark for 145 lands closer to 0 than the mark for 178. Compare 145 and 178."
    }
   }
  },
  {
-  "itemId": "comparing-conc-symbolSelection-23-002",
+  "itemId": "comparing-conc-symbolSelection-2_3-001",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "symbolSelection",
@@ -2237,17 +2123,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 67,
-   "b": 32,
+   "a": 407,
+   "b": 470,
    "op": "?",
-   "answer": ">",
+   "answer": "<",
    "display": {
-    "promptText": "Looking at 67 and 32, which is greater?"
+    "promptText": "Compare 407 and 470. Which symbol belongs between them?"
    }
   }
  },
  {
-  "itemId": "comparing-conc-benchmarkCompare-23-003",
+  "itemId": "comparing-conc-benchmarkCompare-2_3-004",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "benchmarkCompare",
@@ -2258,17 +2144,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 30,
-   "b": 30,
+   "a": 340,
+   "b": 250,
    "op": "?",
-   "answer": "=",
+   "answer": ">",
    "display": {
-    "promptText": "Use 30 as a benchmark: how does 30 compare to 30?"
+    "promptText": "Rosa read 340 pages this summer. Use 250 as a benchmark: how does 340 compare to 250?"
    }
   }
  },
  {
-  "itemId": "comparing-conc-distanceCompare-23-003",
+  "itemId": "comparing-conc-distanceCompare-2_3-007",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "distanceCompare",
@@ -2279,17 +2165,80 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 60,
-   "b": 60,
+   "a": 99,
+   "b": 101,
    "op": "?",
-   "answer": "=",
+   "answer": "<",
    "display": {
-    "promptText": "60 and 60 sit at the same point on a number line. Compare them."
+    "promptText": "A bug crawls from 0 along a number line and stops at 99. It has not reached 101 yet. Compare 99 and 101."
    }
   }
  },
  {
-  "itemId": "comparing-conc-benchmarkCompare-45-001",
+  "itemId": "comparing-conc-symbolSelection-2_3-007",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "symbolSelection",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 703,
+   "b": 730,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "Leo saved 703 pennies. Nora saved 730 pennies. Which number is less?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-benchmarkCompare-2_3-014",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "benchmarkCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 520,
+   "b": 500,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "Maya's class collected 520 cans. Use 500 as a benchmark: how does 520 compare to 500?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-distanceCompare-2_3-013",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "distanceCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 825,
+   "b": 852,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "Nina hops from 0 to 825 on a number line. Her friend hops from 0 to 852 and lands a little farther out. Compare 825 and 852."
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-benchmarkCompare-4_5-007",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "benchmarkCompare",
@@ -2300,12 +2249,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 487,
-   "b": 500,
+   "a": 1.25,
+   "b": 1,
    "op": "?",
-   "answer": "<",
+   "answer": ">",
    "display": {
-    "promptText": "Use 500 as a benchmark: is 487 less than 500?"
+    "promptText": "One whole is the benchmark here. How does 1.25 compare to 1?"
    }
   }
  },
@@ -2331,7 +2280,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-conc-symbolSelection-45-001",
+  "itemId": "comparing-conc-symbolSelection-4_5-001",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "symbolSelection",
@@ -2342,17 +2291,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 234,
-   "b": 567,
+   "a": 4208,
+   "b": 4280,
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "Looking at 234 and 567, which is smaller?"
+    "promptText": "Compare 4208 and 4280. Which number is smaller?"
    }
   }
  },
  {
-  "itemId": "comparing-conc-benchmarkCompare-45-002",
+  "itemId": "comparing-conc-benchmarkCompare-4_5-009",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "benchmarkCompare",
@@ -2363,12 +2312,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 678,
-   "b": 500,
+   "a": 750,
+   "b": 750,
    "op": "?",
-   "answer": ">",
+   "answer": "=",
    "display": {
-    "promptText": "Use 500 as a benchmark: is 678 greater than 500?"
+    "promptText": "A library sets 750 books as its benchmark for the month. How does 750 compare to 750?"
    }
   }
  },
@@ -2394,7 +2343,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-conc-symbolSelection-45-002",
+  "itemId": "comparing-conc-symbolSelection-4_5-004",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "symbolSelection",
@@ -2405,17 +2354,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 891,
-   "b": 234,
+   "a": 12483,
+   "b": 12438,
    "op": "?",
    "answer": ">",
    "display": {
-    "promptText": "Looking at 891 and 234, which is greater?"
+    "promptText": "Which number is worth more, 12483 or 12438?"
    }
   }
  },
  {
-  "itemId": "comparing-conc-benchmarkCompare-45-003",
+  "itemId": "comparing-conc-benchmarkCompare-45-001",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "benchmarkCompare",
@@ -2426,12 +2375,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 100,
-   "b": 100,
+   "a": 487,
+   "b": 500,
    "op": "?",
-   "answer": "=",
+   "answer": "<",
    "display": {
-    "promptText": "Use 100 as a benchmark: how does 100 compare to 100?"
+    "promptText": "Use 500 as a benchmark: is 487 less than 500?"
    }
   }
  },
@@ -2457,7 +2406,70 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-conc-benchmarkCompare-K1-001",
+  "itemId": "comparing-conc-benchmarkCompare-K_1-001",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "benchmarkCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 3,
+   "b": 5,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "Mia found 3 shells. Use 5 as the benchmark: how does 3 compare to 5?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-distanceCompare-K_1-001",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "distanceCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 4,
+   "b": 10,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "Hop from 0 to 4. Then hop from 0 to 10. Which number takes fewer hops? Compare 4 and 10."
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-symbolSelection-K_1-001",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "symbolSelection",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 3,
+   "b": 9,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "Which symbol belongs between 3 and 9?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-benchmarkCompare-K_1-007",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "benchmarkCompare",
@@ -2469,124 +2481,19 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 4,
-   "b": 5,
+   "b": 10,
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "Use 5 as a benchmark: is 4 less than 5?"
+    "promptText": "Think of 10 as your benchmark. Is 4 less than 10?"
    }
   }
  },
  {
-  "itemId": "comparing-conc-distanceCompare-K1-001",
+  "itemId": "comparing-conc-distanceCompare-K_1-007",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 2,
-   "b": 9,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "On a number line, which is to the left: 2 or 9?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-symbolSelection-K1-001",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 5,
-   "b": 8,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Looking at 5 and 8, which symbol shows that 5 is smaller?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-benchmarkCompare-K1-002",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": 5,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Use 5 as a benchmark: is 7 greater than 5?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-distanceCompare-K1-002",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": 1,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "On a number line, which is to the right: 8 or 1?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-symbolSelection-K1-002",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": 4,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Looking at 7 and 4, which symbol shows that 7 is greater?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-benchmarkCompare-K1-003",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "benchmarkCompare",
   "structureType": "compareNumbers",
   "levelRange": [
    1,
@@ -2599,12 +2506,54 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "=",
    "display": {
-    "promptText": "Use 10 as a benchmark: how does 10 compare to 10?"
+    "promptText": "Two bees flew 10 hops from 0 and landed on the very same spot. Compare 10 and 10."
    }
   }
  },
  {
-  "itemId": "comparing-conc-distanceCompare-K1-003",
+  "itemId": "comparing-conc-symbolSelection-K_1-005",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "symbolSelection",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 2,
+   "b": 11,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "Pick the symbol that fits between 2 and 11."
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-benchmarkCompare-K_1-013",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "benchmarkCompare",
+  "structureType": "compareNumbers",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 17,
+   "b": 10,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "Using 10 as a benchmark, how does 17 compare to 10?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-distanceCompare-K_1-013",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "distanceCompare",
@@ -2615,12 +2564,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 5,
-   "b": 5,
+   "a": 17,
+   "b": 9,
    "op": "?",
-   "answer": "=",
+   "answer": ">",
    "display": {
-    "promptText": "5 and 5 sit at the same point on a number line. Compare them."
+    "promptText": "Which number is a longer trip from 0 on the number line: 17 or 9?"
    }
   }
  },
@@ -3129,226 +3078,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-app-001",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 14,
-   "b": null,
-   "op": "count",
-   "answer": 14,
-   "display": {
-    "promptText": "There are 14 toy cars lined up on a shelf. How many toy cars are there?",
-    "promptOptions": [
-     "Sofia lined up 14 toy cars on a shelf. How many toy cars are on the shelf?",
-     "Sofia has 14 toy cars. How many toy cars does Sofia have?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "counting-app-003",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 27,
-   "b": null,
-   "op": "count",
-   "answer": 27,
-   "display": {
-    "promptText": "A jar has 27 marbles. Count to find how many marbles are in the jar.",
-    "promptOptions": [
-     "Priya has 27 marbles in a jar. How many marbles are in the jar?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "counting-app-005",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 35,
-   "b": null,
-   "op": "count",
-   "answer": 35,
-   "display": {
-    "promptText": "A basket holds 35 oranges. How many oranges are in the basket?",
-    "promptOptions": [
-     "Dakota has 35 oranges in a basket. How many oranges are in the basket?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "counting-app-002",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 20,
-   "b": null,
-   "op": "count",
-   "answer": 20,
-   "display": {
-    "promptText": "A box has 20 crayons inside. How many crayons are in the box?",
-    "promptOptions": [
-     "Leo has 20 crayons in a box. How many crayons are in the box?",
-     "Mia looked in a box and found 20 crayons. How many crayons were in the box?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "counting-app-004",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   9,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 42,
-   "b": null,
-   "op": "count",
-   "answer": 42,
-   "display": {
-    "promptText": "A garden has 42 tulips. How many tulips are in the garden?",
-    "promptOptions": [
-     "Emma has 42 tulips in her garden. How many tulips are in the garden?",
-     "The gardener planted 42 tulips. How many tulips did the gardener plant?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "counting-app-006",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   9,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 50,
-   "b": null,
-   "op": "count",
-   "answer": 50,
-   "display": {
-    "promptText": "A class collected 50 cans for recycling. How many cans were collected?",
-    "promptOptions": [
-     "The class collected 50 cans for recycling. How many cans did the class collect?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "counting-app-007",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   8,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 18,
-   "b": null,
-   "op": "count",
-   "answer": 18,
-   "display": {
-    "promptText": "A pencil case has 18 pencils. How many pencils are in the case?",
-    "promptOptions": [
-     "Ryan has 18 pencils in his pencil case. How many pencils are in the case?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "counting-app-008",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 31,
-   "b": null,
-   "op": "count",
-   "answer": 31,
-   "display": {
-    "promptText": "A row has 31 chairs set up for a play. How many chairs are in the row?",
-    "promptOptions": [
-     "The crew set up 31 chairs in a row for the play. How many chairs are in the row?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "counting-app-014",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": null,
-   "op": "count",
-   "answer": 4,
-   "display": {
-    "promptText": "There are 4 ducks in the pond. How many ducks are there?",
-    "promptOptions": [
-     "Jake saw 4 ducks at the pond. How many ducks did he see?",
-     "Maya counted 4 ducks. How many ducks did she count?"
-    ]
-   }
-  }
- },
- {
   "itemId": "counting-app-017",
   "modeId": "counting",
   "itemFamily": "application",
@@ -3366,57 +3095,6 @@ export const SEED_ITEMS = [
    "answer": 6,
    "display": {
     "promptText": "Tim counts 4 birds, then sees 2 more land. How many birds in total?"
-   }
-  }
- },
- {
-  "itemId": "counting-app-020",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 10,
-   "b": null,
-   "op": "count",
-   "answer": 10,
-   "display": {
-    "promptText": "Anna lined up 10 small toys on the table. How many toys are in the line?",
-    "promptOptions": [
-     "Anna put 10 toys in a line on the table. How many toys are in the line?",
-     "Anna lined up 10 toys on the table. How many toys did she line up?",
-     "On the table, Anna lined up 10 toys. How many toys did she line up?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "counting-app-015",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 5,
-   "b": null,
-   "op": "count",
-   "answer": 5,
-   "display": {
-    "promptText": "Mia drew 5 stars on her paper. How many stars did she draw?",
-    "promptOptions": [
-     "Mia drew 5 stars. How many stars did she draw?",
-     "On her sheet of paper, Mia drew 5 stars. How many stars did she draw?"
-    ]
    }
   }
  },
@@ -3442,58 +3120,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-app-021",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": null,
-   "op": "count",
-   "answer": 8,
-   "display": {
-    "promptText": "A pencil case holds 8 erasers. How many erasers are in the case?",
-    "promptOptions": [
-     "Sam's pencil case has 8 erasers. How many erasers does it hold?",
-     "A pencil case holds 8 erasers. How many erasers are in the pencil case?",
-     "There are 8 erasers in a pencil case. How many erasers are there?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "counting-app-016",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 3,
-   "b": null,
-   "op": "count",
-   "answer": 3,
-   "display": {
-    "promptText": "A small bowl has 3 fish. How many fish are in the bowl?",
-    "promptOptions": [
-     "A bowl has 3 fish in it. How many fish are in the bowl?",
-     "Kim's fish bowl has 3 fish. How many fish does it have?",
-     "There are 3 fish in the bowl. How many fish do you see?"
-    ]
-   }
-  }
- },
- {
   "itemId": "counting-app-019",
   "modeId": "counting",
   "itemFamily": "application",
@@ -3515,28 +3141,65 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-app-023",
+  "itemId": "counting-app-eng-K_1-001",
   "modeId": "counting",
   "itemFamily": "application",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
+  "subskill": "countOn",
+  "structureType": "countToTargetGap",
   "levelRange": [
-   4,
-   6
+   1,
+   3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 18,
+   "a": null,
    "b": null,
    "op": "count",
-   "answer": 18,
+   "answer": 5,
    "display": {
-    "promptText": "A page has 18 stickers on it. How many stickers are on the page?",
-    "promptOptions": [
-     "Mia put 18 stickers on a page. How many stickers did she put on the page?",
-     "A page has 18 stickers stuck on it. How many stickers are there?",
-     "There are 18 stickers on a page. How many stickers are on the page?"
-    ]
+    "promptText": "There are 5 seats on the bus and 10 children. How many children have no seat?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-app-eng-K_1-002",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "countOn",
+  "structureType": "countToTargetGap",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1,
+   "display": {
+    "promptText": "There are 3 seats on the bus and 4 children. How many children have no seat?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-app-eng-K_1-003",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "countOn",
+  "structureType": "countToTargetGap",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "promptText": "There are 3 seats on the bus and 5 children. How many children have no seat?"
    }
   }
  },
@@ -3562,58 +3225,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-app-029",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 28,
-   "b": null,
-   "op": "count",
-   "answer": 28,
-   "display": {
-    "promptText": "A planter holds 28 tulips. How many tulips are in the planter?",
-    "promptOptions": [
-     "Lily planted 28 tulips in a pot. How many tulips are in the pot?",
-     "There are 28 tulips blooming in a garden. How many tulips are there in all?",
-     "A planter holds 28 pretty tulips. How many tulips are in the planter?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "counting-app-024",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 22,
-   "b": null,
-   "op": "count",
-   "answer": 22,
-   "display": {
-    "promptText": "A team has 22 players. How many players are on the team?",
-    "promptOptions": [
-     "A soccer team has 22 players. How many players are on the team?",
-     "There are 22 players on a team. How many players are there?",
-     "The team has 22 players on it. How many players are there?"
-    ]
-   }
-  }
- },
- {
   "itemId": "counting-app-027",
   "modeId": "counting",
   "itemFamily": "application",
@@ -3635,58 +3246,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-app-030",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 32,
-   "b": null,
-   "op": "count",
-   "answer": 32,
-   "display": {
-    "promptText": "A classroom has 32 desks. How many desks are in the classroom?",
-    "promptOptions": [
-     "Mrs. Lee's classroom has 32 desks. How many desks are there?",
-     "There are 32 desks in a classroom. How many desks are there in all?",
-     "A classroom has 32 desks in it. How many desks are in the classroom?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "counting-app-025",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 25,
-   "b": null,
-   "op": "count",
-   "answer": 25,
-   "display": {
-    "promptText": "Sam saw 25 ants on the ground. How many ants did Sam see?",
-    "promptOptions": [
-     "Sam watched ants marching on the ground. He counted 25 ants. How many ants did Sam count?",
-     "In the garden, Sam saw 25 ants. How many ants did Sam see in all?",
-     "Sam found 25 ants hiding under a rock. How many ants did he find?"
-    ]
-   }
-  }
- },
- {
   "itemId": "counting-app-028",
   "modeId": "counting",
   "itemFamily": "application",
@@ -3704,6 +3263,195 @@ export const SEED_ITEMS = [
    "answer": 40,
    "display": {
     "promptText": "Min counted 35 marbles, then 5 more rolled in. How many marbles in all?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-app-eng-2_3-001",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "countOn",
+  "structureType": "countToTargetGap",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "promptText": "There are 23 seats on the bus and 25 children. How many children have no seat?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-app-eng-2_3-002",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "countOn",
+  "structureType": "countToTargetGap",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1,
+   "display": {
+    "promptText": "There are 14 seats on the bus and 15 children. How many children have no seat?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-app-eng-2_3-003",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "countOn",
+  "structureType": "countToTargetGap",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "promptText": "There are 15 seats on the bus and 20 children. How many children have no seat?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-app-eng-4_5-001",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "cardinality",
+  "structureType": "countGroupsExtraneous",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 9,
+   "display": {
+    "promptText": "Sam has 4 red pens, 2 blue erasers, and 5 red pencils. How many red things does Sam have?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-app-eng-4_5-006",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "countOn",
+  "structureType": "countToTargetGap",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "promptText": "There are 8 seats on the bus and 12 children. How many children have no seat?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-app-eng-4_5-002",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "cardinality",
+  "structureType": "countGroupsExtraneous",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 13,
+   "display": {
+    "promptText": "Theo has 8 red pens, 3 blue erasers, and 5 red pencils. How many red things does Theo have?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-app-eng-4_5-003",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "cardinality",
+  "structureType": "countGroupsExtraneous",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "promptText": "Theo has 5 red pens, 6 blue erasers, and 5 red pencils. How many red things does Theo have?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-app-eng-4_5-004",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "cardinality",
+  "structureType": "countGroupsExtraneous",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "promptText": "Theo has 5 red pens, 8 blue erasers, and 3 red pencils. How many red things does Theo have?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-app-eng-4_5-005",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "cardinality",
+  "structureType": "countGroupsExtraneous",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 16,
+   "display": {
+    "promptText": "Ava has 8 red pens, 7 blue erasers, and 8 red pencils. How many red things does Ava have?"
    }
   }
  },
@@ -4794,7 +4542,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "division-app-002",
+  "itemId": "division-app-partitioning-4_5-003",
   "modeId": "division",
   "itemFamily": "application",
   "subskill": "partitioning",
@@ -4805,22 +4553,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 24,
-   "b": 4,
+   "a": 175,
+   "b": 7,
    "op": "÷",
-   "answer": 6,
+   "answer": 25,
    "display": {
-    "promptText": "24 pencils are split equally into 4 groups. How many pencils are in each group?",
-    "promptOptions": [
-     "Anna has 24 pencils. She divides them equally among 4 friends. How many pencils does each friend get?",
-     "Marco has 24 pencils. He puts them equally in 4 boxes. How many pencils are in each box?",
-     "There are 24 pencils. A teacher splits them equally into 4 groups. How many pencils are in each group?"
-    ]
+    "promptText": "Ms. Ortiz has 175 books. She stacks them equally into 7 piles. How many books are in each pile?"
    }
   }
  },
  {
-  "itemId": "division-app-005",
+  "itemId": "division-app-inverseFact-4_5-003",
   "modeId": "division",
   "itemFamily": "application",
   "subskill": "inverseFact",
@@ -4831,95 +4574,75 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 42,
-   "b": 7,
+   "a": 192,
+   "b": 6,
    "op": "÷",
-   "answer": 6,
+   "answer": 32,
    "display": {
-    "promptText": "42 grapes are placed equally into 7 small bowls. How many grapes are in each bowl?",
-    "promptOptions": [
-     "Mom has 42 grapes. She puts them equally in 7 small bowls. How many grapes are in each bowl?",
-     "There are 42 grapes to share equally among 7 friends. How many grapes does each friend get?",
-     "A farmer has 42 grapes. She divides them equally into 7 baskets. How many grapes are in each basket?"
-    ]
+    "promptText": "192 apples are packed equally into 6 crates. How many apples are in each crate?"
    }
   }
  },
  {
-  "itemId": "division-app-008",
+  "itemId": "division-app-unknownQuotient-4_5-003",
   "modeId": "division",
   "itemFamily": "application",
   "subskill": "unknownQuotient",
   "structureType": "quotitiveDivision",
   "levelRange": [
-   8,
+   7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 48,
-   "b": 6,
+   "a": 675,
+   "b": 25,
    "op": "÷",
-   "answer": 8,
+   "answer": 27,
    "display": {
-    "promptText": "48 cookies are packed 6 per box. How many boxes are filled?",
-    "promptOptions": [
-     "A baker had 48 cookies. She packed them 6 to a box. How many boxes did she fill?",
-     "Mom had 48 cookies. She packed 6 into each box. How many boxes did she fill?",
-     "A store had 48 cookies. The workers packed 6 in each box. How many boxes did they fill?"
-    ]
+    "promptText": "Ms. Reed had 675 new library books. She put 25 books into every box. How many boxes did she fill?"
    }
   }
  },
  {
-  "itemId": "division-app-003",
+  "itemId": "division-app-partitioning-4_5-010",
   "modeId": "division",
   "itemFamily": "application",
   "subskill": "partitioning",
   "structureType": "partitiveDivision",
   "levelRange": [
-   8,
+   7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 45,
-   "b": 5,
+   "a": 360,
+   "b": 15,
    "op": "÷",
-   "answer": 9,
+   "answer": 24,
    "display": {
-    "promptText": "A teacher hands out 45 markers equally to 5 tables. How many markers does each table get?",
-    "promptOptions": [
-     "Mrs. Chen has 45 markers. She gives them equally to 5 tables. How many markers does each table get?",
-     "There are 45 markers to divide equally among 5 groups. How many markers does each group get?",
-     "A teacher has 45 markers. She puts them equally in 5 boxes. How many markers are in each box?"
-    ]
+    "promptText": "Aunt Rosa has 360 buttons. She gives the same number to each of 15 students. How many buttons does each student get?"
    }
   }
  },
  {
-  "itemId": "division-app-006",
+  "itemId": "division-app-inverseFact-4_5-010",
   "modeId": "division",
   "itemFamily": "application",
   "subskill": "inverseFact",
   "structureType": "partitiveDivision",
   "levelRange": [
-   9,
+   7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 81,
+   "a": 234,
    "b": 9,
    "op": "÷",
-   "answer": 9,
+   "answer": 26,
    "display": {
-    "promptText": "81 chairs are arranged in 9 equal rows. How many chairs are in each row?",
-    "promptOptions": [
-     "A school has 81 chairs. They arrange them equally in 9 rows. How many chairs are in each row?",
-     "There are 81 chairs to divide equally into 9 rows. How many chairs go in each row?",
-     "The gym staff has 81 chairs. They put them equally in 9 rows. How many chairs are in each row?"
-    ]
+    "promptText": "234 photos are glued equally onto 9 scrapbook pages. How many photos are on each page?"
    }
   }
  },
@@ -5002,7 +4725,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "division-app-016",
+  "itemId": "division-app-partitioning-K_1-004",
   "modeId": "division",
   "itemFamily": "application",
   "subskill": "partitioning",
@@ -5013,22 +4736,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 8,
+   "a": 16,
    "b": 2,
    "op": "÷",
-   "answer": 4,
+   "answer": 8,
    "display": {
-    "promptText": "8 marbles are split equally into 2 jars. How many marbles in each jar?",
-    "promptOptions": [
-     "Ty has 8 marbles. He puts them equally in 2 jars. How many marbles go in each jar?",
-     "There are 8 marbles to divide equally between 2 jars. How many marbles are in each jar?",
-     "A toy store has 8 marbles. They split them equally for 2 kids. How many marbles does each kid get?"
-    ]
+    "promptText": "Milo has 16 toy cars. He lines them up equally on 2 shelves. How many toy cars are on each shelf?"
    }
   }
  },
  {
-  "itemId": "division-app-019",
+  "itemId": "division-app-inverseFact-K_1-004",
   "modeId": "division",
   "itemFamily": "application",
   "subskill": "inverseFact",
@@ -5039,76 +4757,20 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 9,
-   "b": 3,
+   "a": 16,
+   "b": 2,
    "op": "÷",
-   "answer": 3,
+   "answer": 8,
    "display": {
-    "promptText": "9 gold stars are placed in 3 rows equally. How many stars per row?",
-    "promptOptions": [
-     "Luna placed 9 gold stars in 3 equal rows. How many stars per row?",
-     "Kim arranged 9 gold stars into 3 equal rows. How many stars per row?",
-     "Sara has 9 gold stars. She puts them into 3 equal rows. How many stars per row?"
-    ]
+    "promptText": "Theo has 16 blocks. He shares them equally between 2 towers. How many blocks go in each tower?"
    }
   }
  },
  {
-  "itemId": "division-app-022",
+  "itemId": "division-app-unknownQuotient-K_1-004",
   "modeId": "division",
   "itemFamily": "application",
   "subskill": "unknownQuotient",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 10,
-   "b": 2,
-   "op": "÷",
-   "answer": 5,
-   "display": {
-    "promptText": "10 cubes are arranged into 2 equal stacks. How many cubes per stack?",
-    "promptOptions": [
-     "Ben has 10 cubes. He stacks them equally into 2 stacks. How many cubes per stack?",
-     "Emma arranged 10 cubes into 2 equal stacks. How many cubes per stack?",
-     "Lily stacked 10 cubes equally into 2 stacks. How many cubes are in each stack?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "division-app-017",
-  "modeId": "division",
-  "itemFamily": "application",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": 2,
-   "op": "÷",
-   "answer": 2,
-   "display": {
-    "promptText": "4 stickers are given equally to 2 friends. How many stickers does each friend get?",
-    "promptOptions": [
-     "Luke has 4 stickers. He gives them equally to 2 friends. How many stickers does each friend get?",
-     "Maria has 4 stickers to share equally between 2 friends. How many stickers does each friend get?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "division-app-020",
-  "modeId": "division",
-  "itemFamily": "application",
-  "subskill": "inverseFact",
   "structureType": "partitiveDivision",
   "levelRange": [
    1,
@@ -5121,12 +4783,49 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 2,
    "display": {
-    "promptText": "10 fish are placed evenly across 5 tanks. How many fish per tank?",
-    "promptOptions": [
-     "Jon has 10 fish. He puts them evenly into 5 tanks. How many fish per tank?",
-     "Maya placed 10 fish equally into 5 tanks. How many fish per tank?",
-     "Sam has 10 fish to put equally into 5 tanks. How many fish go in each tank?"
-    ]
+    "promptText": "Rosa baked 10 cookies. She set them out equally on 5 plates. How many cookies are on each plate?"
+   }
+  }
+ },
+ {
+  "itemId": "division-app-partitioning-K_1-010",
+  "modeId": "division",
+  "itemFamily": "application",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 18,
+   "b": 3,
+   "op": "÷",
+   "answer": 6,
+   "display": {
+    "promptText": "Ella has 18 markers. She packs them equally into 3 bags. How many markers are in each bag?"
+   }
+  }
+ },
+ {
+  "itemId": "division-app-inverseFact-K_1-010",
+  "modeId": "division",
+  "itemFamily": "application",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 12,
+   "b": 4,
+   "op": "÷",
+   "answer": 3,
+   "display": {
+    "promptText": "Mina has 12 shells. She shares them equally among 4 buckets. How many shells go in each bucket?"
    }
   }
  },
@@ -5209,7 +4908,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "division-app-025",
+  "itemId": "division-app-partitioning-2_3-004",
   "modeId": "division",
   "itemFamily": "application",
   "subskill": "partitioning",
@@ -5220,150 +4919,20 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 15,
-   "b": 3,
-   "op": "÷",
-   "answer": 5,
-   "display": {
-    "promptText": "15 cards are dealt equally to 3 players. How many cards does each player get?",
-    "promptOptions": [
-     "The dealer has 15 cards. She deals them equally to 3 players. How many cards does each player get?",
-     "Tom dealt 15 cards equally to 3 players. How many cards does each player get?",
-     "3 players share 15 cards equally. How many cards does each player get?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "division-app-028",
-  "modeId": "division",
-  "itemFamily": "application",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 35,
-   "b": 5,
-   "op": "÷",
-   "answer": 7,
-   "display": {
-    "promptText": "35 stickers are shared equally by 5 kids. How many stickers per kid?",
-    "promptOptions": [
-     "Ms. Chen has 35 stickers. She shares them equally with 5 kids. How many stickers does each kid get?",
-     "The teacher has 35 stickers. She shares them equally with 5 kids. How many stickers does each kid get?",
-     "5 kids share 35 stickers equally. How many stickers does each kid get?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "division-app-031",
-  "modeId": "division",
-  "itemFamily": "application",
-  "subskill": "unknownQuotient",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 24,
-   "b": 8,
-   "op": "÷",
-   "answer": 3,
-   "display": {
-    "promptText": "24 children are split into 8 small teams equally. How many per team?",
-    "promptOptions": [
-     "The coach has 24 children. He puts them equally into 8 teams. How many children are on each team?",
-     "A teacher has 24 students. She splits them equally into 8 groups. How many students are in each group?",
-     "The gym class had 24 kids. They put them equally into 8 teams. How many kids are on each team?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "division-app-026",
-  "modeId": "division",
-  "itemFamily": "application",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 18,
-   "b": 6,
-   "op": "÷",
-   "answer": 3,
-   "display": {
-    "promptText": "18 cookies are placed on 6 plates equally. How many cookies per plate?",
-    "promptOptions": [
-     "Grandma has 18 cookies. She arranges them equally on 6 plates. How many cookies per plate?",
-     "The baker has 18 cookies. She places them equally on 6 plates. How many cookies per plate?",
-     "Maya put 18 cookies equally on 6 plates. How many cookies per plate?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "division-app-029",
-  "modeId": "division",
-  "itemFamily": "application",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 36,
-   "b": 6,
-   "op": "÷",
-   "answer": 6,
-   "display": {
-    "promptText": "36 marbles are sorted equally into 6 jars. How many marbles per jar?",
-    "promptOptions": [
-     "Kai has 36 marbles. He puts them equally into 6 jars. How many marbles are in each jar?",
-     "Maria had 36 marbles. She sorted them equally into 6 jars. How many marbles went in each jar?",
-     "The toy shop had 36 marbles. They put them equally into 6 bins. How many marbles are in each bin?"
-    ]
-   }
-  }
- },
- {
-  "itemId": "division-conc-inverseFact-23-001",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 24,
+   "a": 48,
    "b": 4,
    "op": "÷",
-   "answer": 6,
+   "answer": 12,
    "display": {
-    "promptText": "If 4 × 6 = 24, what is 24 ÷ 4?"
+    "promptText": "48 crayons are packed equally into 4 boxes. How many crayons go in each box?"
    }
   }
  },
  {
-  "itemId": "division-conc-partitioning-23-001",
+  "itemId": "division-app-inverseFact-2_3-004",
   "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "partitioning",
+  "itemFamily": "application",
+  "subskill": "inverseFact",
   "structureType": "partitiveDivision",
   "levelRange": [
    4,
@@ -5371,171 +4940,66 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 12,
-   "b": 4,
+   "a": 63,
+   "b": 7,
    "op": "÷",
-   "answer": 3,
+   "answer": 9,
    "display": {
-    "promptText": "Split 12 into 4 equal groups. Each group has?"
+    "promptText": "Mr. Diaz has 63 books. He places them equally on 7 shelves. How many books are on each shelf?"
    }
   }
  },
  {
-  "itemId": "division-conc-unknownQuotient-23-001",
+  "itemId": "division-app-unknownQuotient-2_3-004",
   "modeId": "division",
-  "itemFamily": "conceptual",
+  "itemFamily": "application",
   "subskill": "unknownQuotient",
   "structureType": "partitiveDivision",
   "levelRange": [
    4,
    6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 20,
-   "b": 5,
-   "op": "÷",
-   "answer": 4,
-   "display": {
-    "promptText": "Find the quotient: 20 ÷ 5"
-   }
-  }
- },
- {
-  "itemId": "division-conc-inverseFact-23-002",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 35,
-   "b": 5,
-   "op": "÷",
-   "answer": 7,
-   "display": {
-    "promptText": "35 ÷ 5 = ? Think: 5 times what makes 35?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-partitioning-23-002",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 15,
-   "b": 3,
-   "op": "÷",
-   "answer": 5,
-   "display": {
-    "promptText": "Share 15 fairly among 3 friends. Each friend gets?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-unknownQuotient-23-002",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "unknownQuotient",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 24,
-   "b": 8,
-   "op": "÷",
-   "answer": 3,
-   "display": {
-    "promptText": "What number is 24 ÷ 8?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-inverseFact-23-003",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 36,
-   "b": 6,
-   "op": "÷",
-   "answer": 6,
-   "display": {
-    "promptText": "Since 6 × 6 = 36, what is 36 ÷ 6?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-partitioning-23-003",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 18,
-   "b": 6,
-   "op": "÷",
-   "answer": 3,
-   "display": {
-    "promptText": "Divide 18 evenly into 6 piles. Each pile is?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-inverseFact-45-001",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
   ],
   "reviewStatus": "approved",
   "question": {
    "a": 72,
-   "b": 9,
+   "b": 8,
    "op": "÷",
-   "answer": 8,
+   "answer": 9,
    "display": {
-    "promptText": "If 9 × 8 = 72, then 72 ÷ 9 equals?"
+    "promptText": "Sam has 72 marbles. He puts the same number into each of 8 jars. How many marbles go in each jar?"
    }
   }
  },
  {
-  "itemId": "division-conc-partitioning-45-001",
+  "itemId": "division-app-partitioning-2_3-010",
   "modeId": "division",
-  "itemFamily": "conceptual",
+  "itemFamily": "application",
   "subskill": "partitioning",
   "structureType": "partitiveDivision",
   "levelRange": [
-   7,
-   10
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 55,
+   "b": 5,
+   "op": "÷",
+   "answer": 11,
+   "display": {
+    "promptText": "55 grapes are placed equally on 5 plates. How many grapes are on each plate?"
+   }
+  }
+ },
+ {
+  "itemId": "division-app-inverseFact-2_3-010",
+  "modeId": "division",
+  "itemFamily": "application",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   4,
+   6
   ],
   "reviewStatus": "approved",
   "question": {
@@ -5544,124 +5008,82 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 8,
    "display": {
-    "promptText": "Split 48 into 6 equal groups. What is the size of each group?"
+    "promptText": "Grandpa Lee has 48 cookies. He spreads them equally on 6 trays. How many cookies are on each tray?"
    }
   }
  },
  {
-  "itemId": "division-conc-unknownQuotient-45-001",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "unknownQuotient",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 144,
-   "b": 12,
-   "op": "÷",
-   "answer": 12,
-   "display": {
-    "promptText": "Find the quotient: 144 ÷ 12"
-   }
-  }
- },
- {
-  "itemId": "division-conc-inverseFact-45-002",
+  "itemId": "division-conc-inverseFact-2_3-001",
   "modeId": "division",
   "itemFamily": "conceptual",
   "subskill": "inverseFact",
   "structureType": "partitiveDivision",
   "levelRange": [
-   7,
-   10
+   4,
+   6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 64,
-   "b": 8,
+   "a": 32,
+   "b": 4,
    "op": "÷",
    "answer": 8,
    "display": {
-    "promptText": "64 ÷ 8 = ? Think: 8 times what makes 64?"
+    "promptText": "Nina shared 32 stickers into 4 equal piles. She thought, \"4 times what makes 32?\" How many stickers are in each pile?"
    }
   }
  },
  {
-  "itemId": "division-conc-partitioning-45-002",
+  "itemId": "division-conc-partitioning-2_3-001",
   "modeId": "division",
   "itemFamily": "conceptual",
   "subskill": "partitioning",
   "structureType": "partitiveDivision",
   "levelRange": [
-   7,
-   10
+   4,
+   6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 56,
-   "b": 7,
-   "op": "÷",
-   "answer": 8,
-   "display": {
-    "promptText": "Distribute 56 evenly across 7 boxes. How many per box?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-unknownQuotient-45-002",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "unknownQuotient",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 100,
-   "b": 4,
-   "op": "÷",
-   "answer": 25,
-   "display": {
-    "promptText": "What number is 100 ÷ 4?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-inverseFact-45-003",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 49,
-   "b": 7,
+   "a": 21,
+   "b": 3,
    "op": "÷",
    "answer": 7,
    "display": {
-    "promptText": "Since 7 × 7 = 49, what is 49 ÷ 7?"
+    "promptText": "Split 21 crayons into 3 equal boxes. Each box has?"
    }
   }
  },
  {
-  "itemId": "division-conc-partitioning-45-003",
+  "itemId": "division-conc-unknownQuotient-2_3-001",
   "modeId": "division",
   "itemFamily": "conceptual",
-  "subskill": "partitioning",
+  "subskill": "unknownQuotient",
   "structureType": "partitiveDivision",
   "levelRange": [
-   7,
-   10
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 45,
+   "b": 5,
+   "op": "÷",
+   "answer": 9,
+   "display": {
+    "promptText": "Nadia baked 45 muffins. She shared them equally onto 5 trays. How many muffins did she put on each tray?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-inverseFact-2_3-007",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   4,
+   6
   ],
   "reviewStatus": "approved",
   "question": {
@@ -5670,99 +5092,267 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 9,
    "display": {
-    "promptText": "Share 81 fairly among 9 friends. Each friend gets?"
+    "promptText": "Owen dropped 81 acorns into 9 equal cups. He remembered that 9 × 9 = 81. How many acorns are in each cup?"
    }
   }
  },
  {
-  "itemId": "division-conc-inverseFact-K1-001",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 6,
-   "b": 3,
-   "op": "÷",
-   "answer": 2,
-   "display": {
-    "promptText": "If 2 × 3 = 6, then 6 ÷ 3 equals?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-partitioning-K1-001",
+  "itemId": "division-conc-partitioning-2_3-007",
   "modeId": "division",
   "itemFamily": "conceptual",
   "subskill": "partitioning",
   "structureType": "partitiveDivision",
   "levelRange": [
-   1,
-   3
+   4,
+   6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 6,
-   "b": 2,
+   "a": 42,
+   "b": 7,
    "op": "÷",
-   "answer": 3,
+   "answer": 6,
    "display": {
-    "promptText": "Share 6 fairly among 2: how many for each?"
+    "promptText": "Spread 42 books evenly onto 7 shelves. Each shelf holds?"
    }
   }
  },
  {
-  "itemId": "division-conc-unknownQuotient-K1-001",
+  "itemId": "division-conc-unknownQuotient-2_3-007",
   "modeId": "division",
   "itemFamily": "conceptual",
   "subskill": "unknownQuotient",
   "structureType": "partitiveDivision",
   "levelRange": [
-   1,
-   3
+   4,
+   6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 8,
-   "b": 4,
+   "a": 66,
+   "b": 6,
    "op": "÷",
-   "answer": 2,
+   "answer": 11,
    "display": {
-    "promptText": "Find the quotient: 8 ÷ 4"
+    "promptText": "Aisha carried 66 crayons to art class. She handed out the same number of crayons to each of 6 tables. How many crayons did each table get?"
    }
   }
  },
  {
-  "itemId": "division-conc-inverseFact-K1-002",
+  "itemId": "division-conc-inverseFact-2_3-013",
   "modeId": "division",
   "itemFamily": "conceptual",
   "subskill": "inverseFact",
   "structureType": "partitiveDivision",
   "levelRange": [
-   1,
-   3
+   4,
+   6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 9,
-   "b": 3,
+   "a": 54,
+   "b": 6,
    "op": "÷",
-   "answer": 3,
+   "answer": 9,
    "display": {
-    "promptText": "9 ÷ 3 = ? Think: 3 times what makes 9?"
+    "promptText": "Andre shared 54 pretzels among 6 kids so each kid got the same number. Think: 6 × ? = 54. How many pretzels did each kid get?"
    }
   }
  },
  {
-  "itemId": "division-conc-partitioning-K1-002",
+  "itemId": "division-conc-partitioning-2_3-013",
   "modeId": "division",
   "itemFamily": "conceptual",
   "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 72,
+   "b": 6,
+   "op": "÷",
+   "answer": 12,
+   "display": {
+    "promptText": "Divide 72 stamps evenly into 6 albums. Each album holds?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-inverseFact-4_5-001",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 288,
+   "b": 12,
+   "op": "÷",
+   "answer": 24,
+   "display": {
+    "promptText": "Mr. Reyes shares 288 colored pencils equally among 12 art tables. Think: 12 times what number makes 288? How many colored pencils are on each art table?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-partitioning-4_5-001",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 144,
+   "b": 6,
+   "op": "÷",
+   "answer": 24,
+   "display": {
+    "promptText": "Nina baked 144 muffins. She put the same number of muffins on each of 6 trays. How many muffins are on each tray?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-unknownQuotient-4_5-001",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "unknownQuotient",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 176,
+   "b": 8,
+   "op": "÷",
+   "answer": 22,
+   "display": {
+    "promptText": "Nia baked 176 muffins for the school sale. She packed them equally into 8 boxes. How many muffins did she pack in each box?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-inverseFact-4_5-007",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 384,
+   "b": 24,
+   "op": "÷",
+   "answer": 16,
+   "display": {
+    "promptText": "Sam lays 384 tiles in 24 equal rows. What number times 24 makes 384? How many tiles are in each row?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-partitioning-4_5-007",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 476,
+   "b": 4,
+   "op": "÷",
+   "answer": 119,
+   "display": {
+    "promptText": "Break 476 into 4 equal groups. What is the size of one group?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-unknownQuotient-4_5-007",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "unknownQuotient",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 322,
+   "b": 7,
+   "op": "÷",
+   "answer": 46,
+   "display": {
+    "promptText": "Priya picked 322 tomatoes from her plants. She shared them equally into 7 crates. How many tomatoes did she put in each crate?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-inverseFact-4_5-013",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 429,
+   "b": 13,
+   "op": "÷",
+   "answer": 33,
+   "display": {
+    "promptText": "Coach Barnes hands out 429 practice cards equally to 13 players. If 13 × 33 = 429, how many practice cards does each player get?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-partitioning-4_5-013",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 850,
+   "b": 25,
+   "op": "÷",
+   "answer": 34,
+   "display": {
+    "promptText": "Ms. Ruiz has 850 grapes. She puts the same number of grapes on each of 25 plates. How many grapes are on each plate?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-inverseFact-K_1-001",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "inverseFact",
   "structureType": "partitiveDivision",
   "levelRange": [
    1,
@@ -5775,15 +5365,15 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 4,
    "display": {
-    "promptText": "How many counters in each group when 8 counters are split into 2 equal groups?"
+    "promptText": "If 4 × 2 = 8, what is 8 ÷ 2?"
    }
   }
  },
  {
-  "itemId": "division-conc-unknownQuotient-K1-002",
+  "itemId": "division-conc-partitioning-K_1-001",
   "modeId": "division",
   "itemFamily": "conceptual",
-  "subskill": "unknownQuotient",
+  "subskill": "partitioning",
   "structureType": "partitiveDivision",
   "levelRange": [
    1,
@@ -5796,12 +5386,33 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 5,
    "display": {
-    "promptText": "What number is 10 ÷ 2?"
+    "promptText": "Split 10 counters into 2 equal groups. How many counters are in each group?"
    }
   }
  },
  {
-  "itemId": "division-conc-inverseFact-K1-003",
+  "itemId": "division-conc-unknownQuotient-K_1-001",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "unknownQuotient",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 6,
+   "b": 2,
+   "op": "÷",
+   "answer": 3,
+   "display": {
+    "promptText": "Nadia baked 6 muffins. She put the same number of muffins on 2 plates. How many muffins are on each plate?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-inverseFact-K_1-007",
   "modeId": "division",
   "itemFamily": "conceptual",
   "subskill": "inverseFact",
@@ -5812,17 +5423,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 10,
-   "b": 5,
+   "a": 16,
+   "b": 4,
    "op": "÷",
-   "answer": 2,
+   "answer": 4,
    "display": {
-    "promptText": "Since 5 × 2 = 10, what is 10 ÷ 5?"
+    "promptText": "16 ÷ 4 = ? Fill in the missing number: 4 × ? = 16."
    }
   }
  },
  {
-  "itemId": "division-conc-partitioning-K1-003",
+  "itemId": "division-conc-partitioning-K_1-007",
   "modeId": "division",
   "itemFamily": "conceptual",
   "subskill": "partitioning",
@@ -5833,12 +5444,75 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 4,
+   "a": 18,
+   "b": 3,
+   "op": "÷",
+   "answer": 6,
+   "display": {
+    "promptText": "Luca uses 18 beads to make 3 bracelets that are all the same. How many beads are on each bracelet?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-unknownQuotient-K_1-007",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "unknownQuotient",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 12,
+   "b": 3,
+   "op": "÷",
+   "answer": 4,
+   "display": {
+    "promptText": "Amara had 12 stickers. She gave the same number of stickers to each of 3 classmates. How many stickers did each classmate get?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-inverseFact-K_1-013",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 16,
    "b": 2,
+   "op": "÷",
+   "answer": 8,
+   "display": {
+    "promptText": "16 ÷ 2 = ? Think: 2 groups of what number make 16?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-partitioning-K_1-013",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 6,
+   "b": 3,
    "op": "÷",
    "answer": 2,
    "display": {
-    "promptText": "Divide 4 into 2 equal parts. Each part is?"
+    "promptText": "Split 6 party hats into 3 equal sets. How many hats are in each set?"
    }
   }
  },
@@ -6363,12 +6037,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 24,
    "display": {
-    "promptText": "There are 6 tables with 4 cups on each table. How many cups are there in all?",
-    "promptOptions": [
-     "Emma set up 6 tables for the party. She put 4 cups on each table. How many cups did Emma put?",
-     "Kai arranged 6 tables in the cafeteria. Each table had 4 cups. How many cups did Kai arrange?",
-     "There are 6 tables at the picnic. Each table has 4 cups. How many cups are there?"
-    ]
+    "promptText": "Emma set up 6 tables for the party. She put 4 cups on each table. How many cups did Emma put?"
    }
   }
  },
@@ -6389,12 +6058,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 35,
    "display": {
-    "promptText": "A garden has 7 rows of plants with 5 plants in each row. How many plants are there?",
-    "promptOptions": [
-     "Sofia planted a garden in 7 rows with 5 flowers in each row. How many flowers did Sofia plant in all?",
-     "A farmer grows corn in 7 rows with 5 cornstalks in each row. How many cornstalks does he grow?",
-     "The garden has 7 rows of tomatoes with 5 plants in each row. How many tomato plants total?"
-    ]
+    "promptText": "Sofia planted a garden in 7 rows with 5 flowers in each row. How many flowers did Sofia plant in all?"
    }
   }
  },
@@ -6415,12 +6079,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 56,
    "display": {
-    "promptText": "Each box holds 8 crayons. If there are 7 boxes, how many crayons are there?",
-    "promptOptions": [
-     "Zara has 7 boxes of crayons. Each box holds 8 crayons. How many crayons does Zara have?",
-     "Sofia arranged 7 boxes on the shelf. She put 8 crayons in each box. How many crayons did Sofia arrange?",
-     "There are 7 boxes in the closet. Each box has 8 crayons in it. How many crayons are there?"
-    ]
+    "promptText": "Zara has 7 boxes of crayons. Each box holds 8 crayons. How many crayons does Zara have?"
    }
   }
  },
@@ -6441,11 +6100,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 140,
    "display": {
-    "promptText": "20 racks each hold 7 jerseys. How many jerseys in total?",
-    "promptOptions": [
-     "Lily organized 20 racks. She put 7 jerseys on each rack. How many jerseys in total?",
-     "There are 20 racks. Each rack holds 7 jerseys. How many jerseys in total?"
-    ]
+    "promptText": "Lily organized 20 racks. She put 7 jerseys on each rack. How many jerseys in total?"
    }
   }
  },
@@ -6466,10 +6121,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 121,
    "display": {
-    "promptText": "Tiles are in 11 rows of 11. How many tiles?",
-    "promptOptions": [
-     "Maya covered the wall with tiles in 11 rows of 11. How many tiles did she use?"
-    ]
+    "promptText": "Maya covered the wall with tiles in 11 rows of 11. How many tiles did she use?"
    }
   }
  },
@@ -6490,12 +6142,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 144,
    "display": {
-    "promptText": "16 teams each have 9 players. How many players in total?",
-    "promptOptions": [
-     "There are 16 soccer teams in the league. Each team has 9 players. How many players are there?",
-     "The bakery has 16 trays. Each tray has 9 muffins. How many muffins did they bake?",
-     "Marcus has 16 video games. Each game has 9 levels. How many levels does he have?"
-    ]
+    "promptText": "There are 16 soccer teams in the league. Each team has 9 players. How many players are there?"
    }
   }
  },
@@ -6516,11 +6163,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 96,
    "display": {
-    "promptText": "16 pallets each hold 6 sacks. How many sacks in all?",
-    "promptOptions": [
-     "A farmer has 16 pallets of grain. Each pallet holds 6 sacks. How many sacks in all?",
-     "There are 16 pallets. Each pallet holds 6 sacks of grain. How many sacks in all?"
-    ]
+    "promptText": "A farmer has 16 pallets of grain. Each pallet holds 6 sacks. How many sacks in all?"
    }
   }
  },
@@ -6541,12 +6184,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 112,
    "display": {
-    "promptText": "Lockers are in 14 rows of 8 in a hallway. How many lockers?",
-    "promptOptions": [
-     "Someone arranged 14 rows of lockers in the hallway with 8 lockers in each row. How many lockers are there?",
-     "The hallway has 14 rows of lockers with 8 in each row. How many lockers line the hallway?",
-     "Lockers fill the hallway in 14 rows of 8. How many lockers fill the hallway?"
-    ]
+    "promptText": "Someone arranged 14 rows of lockers in the hallway with 8 lockers in each row. How many lockers are there?"
    }
   }
  },
@@ -6567,12 +6205,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 6,
    "display": {
-    "promptText": "There are 2 baskets with 3 apples in each basket. How many apples in all?",
-    "promptOptions": [
-     "Rosa picked 2 baskets of apples. Each basket has 3 apples. How many apples did Rosa pick?",
-     "Lee has 2 baskets with apples. He put 3 apples in each basket. How many apples does Lee have?",
-     "There are 2 baskets on the counter. Each basket has 3 apples in it. How many apples are there?"
-    ]
+    "promptText": "Rosa picked 2 baskets of apples. Each basket has 3 apples. How many apples did Rosa pick?"
    }
   }
  },
@@ -6593,12 +6226,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 4,
    "display": {
-    "promptText": "Buttons sit in 2 rows of 2 buttons. How many buttons are there?",
-    "promptOptions": [
-     "The shirt has buttons in 2 rows with 2 buttons in each row. How many buttons in all?",
-     "Buttons are sewn in 2 rows with 2 buttons in each row. How many buttons total?",
-     "A card shows 2 rows of 2 buttons. How many buttons altogether?"
-    ]
+    "promptText": "The shirt has buttons in 2 rows with 2 buttons in each row. How many buttons in all?"
    }
   }
  },
@@ -6619,11 +6247,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 5,
    "display": {
-    "promptText": "A box has 5 marbles. There is 1 box. How many marbles in total?",
-    "promptOptions": [
-     "Jake opened 1 box and found 5 marbles inside. How many marbles did he find?",
-     "Rosa took 1 box that held 5 marbles. How many marbles did Rosa get?"
-    ]
+    "promptText": "Jake opened 1 box and found 5 marbles inside. How many marbles did he find?"
    }
   }
  },
@@ -6644,12 +6268,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 9,
    "display": {
-    "promptText": "3 trees each have 3 apples. How many apples in total?",
-    "promptOptions": [
-     "The park has 3 trees. Each tree has 3 apples on it. How many apples are there?",
-     "Maya has 3 plates of cookies. Each plate has 3 cookies. How many cookies does she have?",
-     "There are 3 vases in the house. Each vase has 3 flowers. How many flowers are there?"
-    ]
+    "promptText": "The park has 3 trees. Each tree has 3 apples on it. How many apples are there?"
    }
   }
  },
@@ -6670,10 +6289,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 12,
    "display": {
-    "promptText": "Seedlings are in 3 rows of 4. How many seedlings?",
-    "promptOptions": [
-     "Luna planted seedlings in 3 rows with 4 in each row. How many seedlings did she plant?"
-    ]
+    "promptText": "Luna planted seedlings in 3 rows with 4 in each row. How many seedlings did she plant?"
    }
   }
  },
@@ -6694,12 +6310,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 10,
    "display": {
-    "promptText": "2 sea stars each have 5 arms. How many arms in total?",
-    "promptOptions": [
-     "Maya found 2 sea stars. Each one had 5 arms. How many arms in total?",
-     "There are 2 sea stars in the tank. Each has 5 arms. How many arms altogether?",
-     "Luna counted 2 sea stars. Each had 5 arms. How many arms in total?"
-    ]
+    "promptText": "Maya found 2 sea stars. Each one had 5 arms. How many arms in total?"
    }
   }
  },
@@ -6720,12 +6331,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 8,
    "display": {
-    "promptText": "2 turtles each have 4 legs. How many legs in all?",
-    "promptOptions": [
-     "Tasha has 2 pet turtles. Each turtle has 4 legs. How many legs do they have in all?",
-     "At the zoo, Maya saw 2 turtles. Each one has 4 legs. How many turtle legs did she see?",
-     "There are 2 turtles. Each turtle has 4 legs. How many legs in all?"
-    ]
+    "promptText": "Tasha has 2 pet turtles. Each turtle has 4 legs. How many legs do they have in all?"
    }
   }
  },
@@ -6746,12 +6352,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 10,
    "display": {
-    "promptText": "Biscuits are in 2 rows of 5 in a tin. How many biscuits?",
-    "promptOptions": [
-     "Maya put biscuits in a tin in 2 rows. Each row had 5 biscuits. How many biscuits did she put in the tin?",
-     "Biscuits fill a tin in 2 rows of 5. How many biscuits are in the tin?",
-     "There are 2 rows of biscuits in a tin. Each row has 5 biscuits. How many biscuits in total?"
-    ]
+    "promptText": "Maya put biscuits in a tin in 2 rows. Each row had 5 biscuits. How many biscuits did she put in the tin?"
    }
   }
  },
@@ -6772,11 +6373,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 12,
    "display": {
-    "promptText": "4 plates each hold 3 cookies. How many cookies are there in all?",
-    "promptOptions": [
-     "Mom put 3 cookies on each of 4 plates. How many cookies did Mom put out in all?",
-     "Kyle set 4 plates on the table. He put 3 cookies on each plate. How many cookies in all?"
-    ]
+    "promptText": "Mom put 3 cookies on each of 4 plates. How many cookies did Mom put out in all?"
    }
   }
  },
@@ -6797,12 +6394,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 16,
    "display": {
-    "promptText": "Stickers are placed in 4 rows of 4 stickers. How many stickers in total?",
-    "promptOptions": [
-     "A poster has 4 rows of stickers with 4 stickers in each row. How many stickers total?",
-     "The page shows 4 rows with 4 stickers per row. How many stickers in all?",
-     "Stickers are placed in 4 rows with 4 stickers in every row. How many stickers altogether?"
-    ]
+    "promptText": "A poster has 4 rows of stickers with 4 stickers in each row. How many stickers total?"
    }
   }
  },
@@ -6823,11 +6415,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 25,
    "display": {
-    "promptText": "5 students each earned 5 gold stars. How many stars in total?",
-    "promptOptions": [
-     "Ms. Chen gave 5 gold stars to each of 5 students. How many stars did she give out?",
-     "Five kids earned 5 gold stars each in Ms. Chen's class. How many stars did they earn?"
-    ]
+    "promptText": "Ms. Chen gave 5 gold stars to each of 5 students. How many stars did she give out?"
    }
   }
  },
@@ -6848,12 +6436,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 42,
    "display": {
-    "promptText": "7 aquariums each have 6 fish. How many fish in total?",
-    "promptOptions": [
-     "Luna counted 7 aquariums. Each one had 6 fish. How many fish in total?",
-     "There are 7 aquariums at the pet store. Each has 6 fish. How many fish altogether?",
-     "The shop has 7 aquariums. Each holds 6 fish. How many fish in total?"
-    ]
+    "promptText": "Luna counted 7 aquariums. Each one had 6 fish. How many fish in total?"
    }
   }
  },
@@ -6874,10 +6457,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 42,
    "display": {
-    "promptText": "Postcards are in 7 rows of 6. How many postcards?",
-    "promptOptions": [
-     "Mr. Lee arranged postcards in 7 rows of 6. How many postcards did he have?"
-    ]
+    "promptText": "Mr. Lee arranged postcards in 7 rows of 6. How many postcards did he have?"
    }
   }
  },
@@ -6898,11 +6478,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 21,
    "display": {
-    "promptText": "3 bookshelves each hold 7 novels. How many novels in total?",
-    "promptOptions": [
-     "There are 3 bookshelves in the library. Each shelf has 7 novels. How many novels in total?",
-     "The librarian fills 3 shelves. Each shelf holds 7 novels. How many novels altogether?"
-    ]
+    "promptText": "There are 3 bookshelves in the library. Each shelf has 7 novels. How many novels in total?"
    }
   }
  },
@@ -6923,11 +6499,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 40,
    "display": {
-    "promptText": "5 gardens each have 8 bushes. How many bushes in all?",
-    "promptOptions": [
-     "Rosa planted 5 gardens. Each garden has 8 bushes. How many bushes did she plant in all?",
-     "There are 5 gardens in the neighborhood. Each garden has 8 bushes. How many bushes are there in all?"
-    ]
+    "promptText": "Rosa planted 5 gardens. Each garden has 8 bushes. How many bushes did she plant in all?"
    }
   }
  },
@@ -6948,12 +6520,7 @@ export const SEED_ITEMS = [
    "op": "×",
    "answer": 63,
    "display": {
-    "promptText": "Pencils are lined in 9 rows of 7 in a box. How many pencils?",
-    "promptOptions": [
-     "The teacher put pencils in a box in 9 rows with 7 in each row. How many pencils did she put in the box?",
-     "Josh organized 9 rows of pencils with 7 pencils per row. How many pencils did Josh organize?",
-     "On the desk sat 9 rows of pencils with 7 pencils in each row. How many pencils in total?"
-    ]
+    "promptText": "The teacher put pencils in a box in 9 rows with 7 in each row. How many pencils did she put in the box?"
    }
   }
  },
@@ -8011,12 +7578,7 @@ export const SEED_ITEMS = [
     "tens": 23,
     "type": "tens_in",
     "number": 234,
-    "promptText": "A library shelf holds 234 books. How many total tens are in 234?",
-    "promptOptions": [
-     "The library has 234 books. How many total tens are in 234?",
-     "Ms. Chen's class collected 234 books. How many total tens are in 234?",
-     "The bookstore has 234 books. How many total tens are in 234?"
-    ]
+    "promptText": "How many total tens are in 234?"
    }
   }
  },
@@ -8091,12 +7653,7 @@ export const SEED_ITEMS = [
     "tens": 58,
     "type": "tens_in",
     "number": 580,
-    "promptText": "A jar holds 580 beads. How many total tens are in 580?",
-    "promptOptions": [
-     "Maria has 580 beads. How many total tens are in 580?",
-     "The factory made 580 beads. How many total tens are in 580?",
-     "Jack collected 580 beads. How many total tens are in 580?"
-    ]
+    "promptText": "How many total tens are in 580?"
    }
   }
  },
@@ -8171,12 +7728,7 @@ export const SEED_ITEMS = [
     "tens": 37,
     "type": "ones_in",
     "number": 374,
-    "promptText": "A box holds 374 stickers. How many ones are in 374?",
-    "promptOptions": [
-     "Emma has 374 stickers. How many ones are in 374?",
-     "Maya collected 374 stickers. How many ones are in 374?",
-     "The store has 374 stickers. How many ones are in 374?"
-    ]
+    "promptText": "How many ones are in 374?"
    }
   }
  },
@@ -8201,12 +7753,7 @@ export const SEED_ITEMS = [
     "tens": 1,
     "type": "tens_in",
     "number": 12,
-    "promptText": "A jar holds 12 marbles. How many tens are in 12?",
-    "promptOptions": [
-     "Jack has 12 toy cars. How many tens are in 12?",
-     "Maria found 12 coins. How many tens are in 12?",
-     "Luis collected 12 stickers. How many tens are in 12?"
-    ]
+    "promptText": "How many tens are in 12?"
    }
   }
  },
@@ -8281,12 +7828,7 @@ export const SEED_ITEMS = [
     "tens": 1,
     "type": "tens_in",
     "number": 15,
-    "promptText": "A pile has 15 leaves. How many tens are in 15?",
-    "promptOptions": [
-     "Sarah picked 15 flowers. How many tens are in 15?",
-     "Alex found 15 acorns. How many tens are in 15?",
-     "Mia collected 15 buttons. How many tens are in 15?"
-    ]
+    "promptText": "How many tens are in 15?"
    }
   }
  },
@@ -8361,12 +7903,7 @@ export const SEED_ITEMS = [
     "tens": 1,
     "type": "ones_in",
     "number": 12,
-    "promptText": "A jar holds 12 marbles. How many ones are in 12?",
-    "promptOptions": [
-     "Jack has 12 toy cars. How many ones are in 12?",
-     "Maria found 12 cookies. How many ones are in 12?",
-     "Luis counted 12 stickers. How many ones are in 12?"
-    ]
+    "promptText": "How many ones are in 12?"
    }
   }
  },
@@ -8416,12 +7953,7 @@ export const SEED_ITEMS = [
     "tens": 4,
     "type": "tens_in",
     "number": 47,
-    "promptText": "A bag has 47 marbles. How many tens are in 47?",
-    "promptOptions": [
-     "Jake has 47 toy cars. How many tens are in 47?",
-     "Zara found 47 shells. How many tens are in 47?",
-     "Sam counted 47 coins. How many tens are in 47?"
-    ]
+    "promptText": "How many tens are in 47?"
    }
   }
  },
@@ -8496,12 +8028,7 @@ export const SEED_ITEMS = [
     "tens": 5,
     "type": "tens_in",
     "number": 53,
-    "promptText": "A box holds 53 erasers. How many tens are in 53?",
-    "promptOptions": [
-     "Emma has 53 pencils. How many tens are in 53?",
-     "Leo found 53 beads. How many tens are in 53?",
-     "Nina collected 53 stickers. How many tens are in 53?"
-    ]
+    "promptText": "How many tens are in 53?"
    }
   }
  },
@@ -8576,12 +8103,7 @@ export const SEED_ITEMS = [
     "tens": 3,
     "type": "ones_in",
     "number": 36,
-    "promptText": "A page has 36 stickers. How many ones are in 36?",
-    "promptOptions": [
-     "Jack has 36 stickers. How many ones are in 36?",
-     "Maya found 36 coins. How many ones are in 36?",
-     "Luis collected 36 toy cars. How many ones are in 36?"
-    ]
+    "promptText": "How many ones are in 36?"
    }
   }
  },

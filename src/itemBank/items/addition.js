@@ -4322,7 +4322,7 @@ export const ITEMS = [
     structureType: "addToChangeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":null,"op":"+","answer":14,"display":{"promptText":"Asher had 5 band patches. He added more patches. Now he has 19 patches. How many patches did Asher add?"}},
+    question: {"a":5,"b":null,"op":"+","answer":14,"display":{"promptText":"Asher had 5 band patches. He added some more patches. Now he has 19 patches. How many patches did Asher add?"}},
   },
   {
     itemId: "addition-app-433",
@@ -4342,7 +4342,7 @@ export const ITEMS = [
     structureType: "addToChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":24,"b":null,"op":"+","answer":26,"display":{"promptText":"Blythe made 24 origami shapes. She added more shapes. Now she has 50 shapes. How many shapes did Blythe add?"}},
+    question: {"a":24,"b":null,"op":"+","answer":26,"display":{"promptText":"Blythe made 24 origami shapes. She added some more shapes. Now she has 50 shapes. How many shapes did Blythe add?"}},
   },
   {
     itemId: "addition-app-435",
@@ -4362,7 +4362,7 @@ export const ITEMS = [
     structureType: "addToChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":45,"b":null,"op":"+","answer":35,"display":{"promptText":"Dora had 45 beads for her necklace. She added more beads. Now she has 80 beads. How many beads did Dora add?"}},
+    question: {"a":45,"b":null,"op":"+","answer":35,"display":{"promptText":"Dora had 45 beads for her necklace. She added some more beads. Now she has 80 beads. How many beads did Dora add?"}},
   },
   {
     itemId: "addition-app-437",
@@ -4382,7 +4382,7 @@ export const ITEMS = [
     structureType: "addToChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":54,"b":null,"op":"+","answer":46,"display":{"promptText":"Fae had 54 puzzle pieces. She added more pieces. Now she has 100 pieces. How many pieces did Fae add?"}},
+    question: {"a":54,"b":null,"op":"+","answer":46,"display":{"promptText":"Fae had 54 puzzle pieces. She added some more pieces. Now she has 100 pieces. How many pieces did Fae add?"}},
   },
   {
     itemId: "addition-app-439",
@@ -4422,7 +4422,7 @@ export const ITEMS = [
     structureType: "addToChangeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":165,"b":null,"op":"+","answer":135,"display":{"promptText":"Juno had 165 bookmarks. She added more bookmarks. Now she has 300 bookmarks. How many bookmarks did Juno add?"}},
+    question: {"a":165,"b":null,"op":"+","answer":135,"display":{"promptText":"Juno had 165 bookmarks. She added some more bookmarks. Now she has 300 bookmarks. How many bookmarks did Juno add?"}},
   },
   {
     itemId: "addition-app-443",

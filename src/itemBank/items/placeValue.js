@@ -132,7 +132,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":null,"op":"place","answer":1,"display":{"ones":2,"tens":1,"type":"tens_in","number":12,"promptText":"A jar holds 12 marbles. How many tens are in 12?","promptOptions":["Jack has 12 toy cars. How many tens are in 12?","Maria found 12 coins. How many tens are in 12?","Luis collected 12 stickers. How many tens are in 12?"]}},
+    question: {"a":12,"b":null,"op":"place","answer":1,"display":{"ones":2,"tens":1,"type":"tens_in","number":12,"promptText":"How many tens are in 12?"}},
   },
   {
     itemId: "placevalue-app-014",
@@ -142,7 +142,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":null,"op":"place","answer":1,"display":{"ones":5,"tens":1,"type":"tens_in","number":15,"promptText":"A pile has 15 leaves. How many tens are in 15?","promptOptions":["Sarah picked 15 flowers. How many tens are in 15?","Alex found 15 acorns. How many tens are in 15?","Mia collected 15 buttons. How many tens are in 15?"]}},
+    question: {"a":15,"b":null,"op":"place","answer":1,"display":{"ones":5,"tens":1,"type":"tens_in","number":15,"promptText":"How many tens are in 15?"}},
   },
   {
     itemId: "placevalue-app-015",
@@ -152,7 +152,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":null,"op":"place","answer":2,"display":{"ones":2,"tens":1,"type":"ones_in","number":12,"promptText":"A jar holds 12 marbles. How many ones are in 12?","promptOptions":["Jack has 12 toy cars. How many ones are in 12?","Maria found 12 cookies. How many ones are in 12?","Luis counted 12 stickers. How many ones are in 12?"]}},
+    question: {"a":12,"b":null,"op":"place","answer":2,"display":{"ones":2,"tens":1,"type":"ones_in","number":12,"promptText":"How many ones are in 12?"}},
   },
   {
     itemId: "placevalue-app-016",
@@ -162,7 +162,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":47,"b":null,"op":"place","answer":4,"display":{"ones":7,"tens":4,"type":"tens_in","number":47,"promptText":"A bag has 47 marbles. How many tens are in 47?","promptOptions":["Jake has 47 toy cars. How many tens are in 47?","Zara found 47 shells. How many tens are in 47?","Sam counted 47 coins. How many tens are in 47?"]}},
+    question: {"a":47,"b":null,"op":"place","answer":4,"display":{"ones":7,"tens":4,"type":"tens_in","number":47,"promptText":"How many tens are in 47?"}},
   },
   {
     itemId: "placevalue-app-017",
@@ -172,7 +172,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":53,"b":null,"op":"place","answer":5,"display":{"ones":3,"tens":5,"type":"tens_in","number":53,"promptText":"A box holds 53 erasers. How many tens are in 53?","promptOptions":["Emma has 53 pencils. How many tens are in 53?","Leo found 53 beads. How many tens are in 53?","Nina collected 53 stickers. How many tens are in 53?"]}},
+    question: {"a":53,"b":null,"op":"place","answer":5,"display":{"ones":3,"tens":5,"type":"tens_in","number":53,"promptText":"How many tens are in 53?"}},
   },
   {
     itemId: "placevalue-app-018",
@@ -182,7 +182,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":36,"b":null,"op":"place","answer":6,"display":{"ones":6,"tens":3,"type":"ones_in","number":36,"promptText":"A page has 36 stickers. How many ones are in 36?","promptOptions":["Jack has 36 stickers. How many ones are in 36?","Maya found 36 coins. How many ones are in 36?","Luis collected 36 toy cars. How many ones are in 36?"]}},
+    question: {"a":36,"b":null,"op":"place","answer":6,"display":{"ones":6,"tens":3,"type":"ones_in","number":36,"promptText":"How many ones are in 36?"}},
   },
   {
     itemId: "placevalue-app-019",
@@ -192,7 +192,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":234,"b":null,"op":"place","answer":23,"display":{"ones":4,"tens":23,"type":"tens_in","number":234,"promptText":"A library shelf holds 234 books. How many total tens are in 234?","promptOptions":["The library has 234 books. How many total tens are in 234?","Ms. Chen's class collected 234 books. How many total tens are in 234?","The bookstore has 234 books. How many total tens are in 234?"]}},
+    question: {"a":234,"b":null,"op":"place","answer":23,"display":{"ones":4,"tens":23,"type":"tens_in","number":234,"promptText":"How many total tens are in 234?"}},
   },
   {
     itemId: "placevalue-app-020",
@@ -202,7 +202,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":580,"b":null,"op":"place","answer":58,"display":{"ones":0,"tens":58,"type":"tens_in","number":580,"promptText":"A jar holds 580 beads. How many total tens are in 580?","promptOptions":["Maria has 580 beads. How many total tens are in 580?","The factory made 580 beads. How many total tens are in 580?","Jack collected 580 beads. How many total tens are in 580?"]}},
+    question: {"a":580,"b":null,"op":"place","answer":58,"display":{"ones":0,"tens":58,"type":"tens_in","number":580,"promptText":"How many total tens are in 580?"}},
   },
   {
     itemId: "placevalue-app-021",
@@ -212,7 +212,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":374,"b":null,"op":"place","answer":4,"display":{"ones":4,"tens":37,"type":"ones_in","number":374,"promptText":"A box holds 374 stickers. How many ones are in 374?","promptOptions":["Emma has 374 stickers. How many ones are in 374?","Maya collected 374 stickers. How many ones are in 374?","The store has 374 stickers. How many ones are in 374?"]}},
+    question: {"a":374,"b":null,"op":"place","answer":4,"display":{"ones":4,"tens":37,"type":"ones_in","number":374,"promptText":"How many ones are in 374?"}},
   },
   {
     itemId: "placevalue-app-022",

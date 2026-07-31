@@ -12,7 +12,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":4,"op":"×","answer":24,"display":{"promptText":"There are 6 tables with 4 cups on each table. How many cups are there in all?","promptOptions":["Emma set up 6 tables for the party. She put 4 cups on each table. How many cups did Emma put?","Kai arranged 6 tables in the cafeteria. Each table had 4 cups. How many cups did Kai arrange?","There are 6 tables at the picnic. Each table has 4 cups. How many cups are there?"]}},
+    question: {"a":6,"b":4,"op":"×","answer":24,"display":{"promptText":"Emma set up 6 tables for the party. She put 4 cups on each table. How many cups did Emma put?"}},
   },
   {
     itemId: "multiplication-app-002",
@@ -22,7 +22,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":6,"op":"×","answer":30,"display":{"promptText":"5 baskets each hold 6 apples. How many apples are there in all?","promptOptions":["Maya picked 5 baskets of apples at the orchard. Each basket holds 6 apples. How many apples did Maya pick?","Juan filled 5 baskets with apples. He put 6 apples in each basket. How many apples did Juan fill?","There are 5 baskets at the market. Each basket has 6 apples in it. How many apples are there?"]}},
+    question: {"a":5,"b":6,"op":"×","answer":30,"display":{"promptText":"Maya picked 5 baskets of apples at the orchard. Each basket holds 6 apples. How many apples did Maya pick?"}},
   },
   {
     itemId: "multiplication-app-003",
@@ -32,7 +32,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":4,"op":"×","answer":36,"display":{"promptText":"A pack has 9 stickers. There are 4 packs. How many stickers in total?","promptOptions":["Lily bought 4 packs of stickers at the store. Each pack has 9 stickers. How many stickers did Lily buy?","Omar opened 4 packs of stickers. Each pack had 9 stickers in it. How many stickers did Omar open?","There are 4 packs of stickers on the table. Each pack has 9 stickers. How many stickers are there?"]}},
+    question: {"a":9,"b":4,"op":"×","answer":36,"display":{"promptText":"Lily bought 4 packs of stickers at the store. Each pack has 9 stickers. How many stickers did Lily buy?"}},
   },
   {
     itemId: "multiplication-app-004",
@@ -42,7 +42,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":5,"op":"×","answer":35,"display":{"promptText":"A garden has 7 rows of plants with 5 plants in each row. How many plants are there?","promptOptions":["Sofia planted a garden in 7 rows with 5 flowers in each row. How many flowers did Sofia plant in all?","A farmer grows corn in 7 rows with 5 cornstalks in each row. How many cornstalks does he grow?","The garden has 7 rows of tomatoes with 5 plants in each row. How many tomato plants total?"]}},
+    question: {"a":7,"b":5,"op":"×","answer":35,"display":{"promptText":"Sofia planted a garden in 7 rows with 5 flowers in each row. How many flowers did Sofia plant in all?"}},
   },
   {
     itemId: "multiplication-app-005",
@@ -52,7 +52,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"A parking lot has 6 rows with 8 cars in each row. How many cars are parked in all?","promptOptions":["Cars are parked in 6 rows with 8 cars in each row. How many cars are parked altogether?","At the parking lot, 6 rows of cars have 8 cars in each row. How many cars are there?","The lot has 6 rows of parking spaces with 8 spaces in each row. How many spaces total?"]}},
+    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"Cars are parked in 6 rows with 8 cars in each row. How many cars are parked altogether?"}},
   },
   {
     itemId: "multiplication-app-006",
@@ -62,7 +62,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"A theater seats people in 9 rows of 6 seats. How many seats are in the theater?","promptOptions":["The theater has 9 rows of seats with 6 seats in each row. How many seats are there altogether?","An auditorium has 9 rows of chairs with 6 chairs in each row. How many chairs in all?","Seats are arranged in 9 rows with 6 seats in every row. How many seats total?"]}},
+    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"The theater has 9 rows of seats with 6 seats in each row. How many seats are there altogether?"}},
   },
   {
     itemId: "multiplication-app-007",
@@ -72,7 +72,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"Each box holds 8 crayons. If there are 7 boxes, how many crayons are there?","promptOptions":["Zara has 7 boxes of crayons. Each box holds 8 crayons. How many crayons does Zara have?","Sofia arranged 7 boxes on the shelf. She put 8 crayons in each box. How many crayons did Sofia arrange?","There are 7 boxes in the closet. Each box has 8 crayons in it. How many crayons are there?"]}},
+    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"Zara has 7 boxes of crayons. Each box holds 8 crayons. How many crayons does Zara have?"}},
   },
   {
     itemId: "multiplication-app-008",
@@ -82,7 +82,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"A flag has 7 stripes. There are 7 flags. How many stripes in all?","promptOptions":["Marcus saw 7 flags in the parade. Each flag had 7 stripes on it. How many stripes did Marcus see?","The team painted 7 flags. Each flag had 7 stripes. How many stripes did the team paint?","There are 7 flags in the classroom. Each flag has 7 stripes. How many stripes are there?"]}},
+    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"Marcus saw 7 flags in the parade. Each flag had 7 stripes on it. How many stripes did Marcus see?"}},
   },
   {
     itemId: "multiplication-app-009",
@@ -92,7 +92,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"A tray holds 9 muffins. The bakery makes 8 trays. How many muffins are made?","promptOptions":["A baker made 8 trays of muffins. Each tray holds 9 muffins. How many muffins did the baker make?","Chef Tom filled 8 trays with muffins. He put 9 muffins in each tray. How many muffins did Chef Tom fill?","There are 8 trays at the bakery. Each tray has 9 muffins. How many muffins are there?"]}},
+    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"A baker made 8 trays of muffins. Each tray holds 9 muffins. How many muffins did the baker make?"}},
   },
   {
     itemId: "multiplication-app-010",
@@ -102,7 +102,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":4,"op":"×","answer":28,"display":{"promptText":"A team has 7 players. Each player has 4 cards. How many cards do they have in all?","promptOptions":["A soccer team has 7 players. Each player has 4 trading cards. How many cards does the team have?","Sophia's team has 7 players. Each player collected 4 cards. How many cards did the team collect?","There are 7 kids on the team. Each kid has 4 cards. How many cards do they have?"]}},
+    question: {"a":7,"b":4,"op":"×","answer":28,"display":{"promptText":"A soccer team has 7 players. Each player has 4 trading cards. How many cards does the team have?"}},
   },
   {
     itemId: "multiplication-app-011",
@@ -112,7 +112,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [8,10],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":9,"op":"×","answer":45,"display":{"promptText":"A wall has 5 rows of bricks with 9 bricks in each row. How many bricks make up the wall?","promptOptions":["A wall is made of 5 rows with 9 bricks in each row. How many bricks make up the wall?","The mason stacks 5 rows of bricks with 9 bricks in each row. How many bricks total?","Bricks are laid in 5 rows with 9 bricks in every row. How many bricks in all?"]}},
+    question: {"a":5,"b":9,"op":"×","answer":45,"display":{"promptText":"A wall is made of 5 rows with 9 bricks in each row. How many bricks make up the wall?"}},
   },
   {
     itemId: "multiplication-app-012",
@@ -122,7 +122,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"A class has 6 small groups with 9 students each. How many students in all?","promptOptions":["Mrs. Park's class made 6 groups. Each group has 9 students. How many students are in the class?","A teacher put 6 groups of students together. Each group had 9 students. How many students were there?","There are 6 groups in the classroom. Each group has 9 students in it. How many students are there?"]}},
+    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"Mrs. Park's class made 6 groups. Each group has 9 students. How many students are in the class?"}},
   },
   {
     itemId: "multiplication-app-013",
@@ -132,7 +132,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":5,"op":"×","answer":40,"display":{"promptText":"A farmer fills 8 crates with 5 melons each. How many melons did the farmer pack?","promptOptions":["The farmer picked 8 crates of melons. Each crate has 5 melons. How many melons did the farmer pick?","Mr. Lee packed 8 crates with melons. He put 5 melons in each crate. How many melons did Mr. Lee pack?","There are 8 crates at the farm. Each crate holds 5 melons. How many melons are there?"]}},
+    question: {"a":8,"b":5,"op":"×","answer":40,"display":{"promptText":"The farmer picked 8 crates of melons. Each crate has 5 melons. How many melons did the farmer pick?"}},
   },
   {
     itemId: "multiplication-app-014",
@@ -142,7 +142,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [9,10],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"A chess board section is 8 squares by 6 squares. How many squares are there?","promptOptions":["A checkerboard has 8 rows of squares with 6 squares in each row. How many squares are there?","A game board is divided into 8 rows with 6 squares per row. How many squares total?","The board shows 8 rows and 6 squares in each row. How many squares altogether?"]}},
+    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"A checkerboard has 8 rows of squares with 6 squares in each row. How many squares are there?"}},
   },
   {
     itemId: "multiplication-app-015",
@@ -152,7 +152,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"There are 2 baskets with 3 apples in each basket. How many apples in all?","promptOptions":["Rosa picked 2 baskets of apples. Each basket has 3 apples. How many apples did Rosa pick?","Lee has 2 baskets with apples. He put 3 apples in each basket. How many apples does Lee have?","There are 2 baskets on the counter. Each basket has 3 apples in it. How many apples are there?"]}},
+    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Rosa picked 2 baskets of apples. Each basket has 3 apples. How many apples did Rosa pick?"}},
   },
   {
     itemId: "multiplication-app-016",
@@ -162,7 +162,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"3 vases each hold 2 flowers. How many flowers in all?","promptOptions":["Mia has 3 vases with flowers. Each vase has 2 flowers. How many flowers does Mia have?","Ethan put 3 vases of flowers on the shelf. Each vase holds 2 flowers. How many flowers did Ethan put?","There are 3 vases in the room. Each vase has 2 flowers in it. How many flowers are there?"]}},
+    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Mia has 3 vases with flowers. Each vase has 2 flowers. How many flowers does Mia have?"}},
   },
   {
     itemId: "multiplication-app-017",
@@ -172,7 +172,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"2 boxes each hold 4 crayons. How many crayons in all?","promptOptions":["Noah has 2 boxes of crayons. Each box holds 4 crayons. How many crayons does Noah have?","Ava packed 2 boxes with crayons. She put 4 crayons in each box. How many crayons did Ava pack?","There are 2 boxes in the desk. Each box has 4 crayons in it. How many crayons are there?"]}},
+    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"Noah has 2 boxes of crayons. Each box holds 4 crayons. How many crayons does Noah have?"}},
   },
   {
     itemId: "multiplication-app-018",
@@ -182,7 +182,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Buttons sit in 2 rows of 2 buttons. How many buttons are there?","promptOptions":["The shirt has buttons in 2 rows with 2 buttons in each row. How many buttons in all?","Buttons are sewn in 2 rows with 2 buttons in each row. How many buttons total?","A card shows 2 rows of 2 buttons. How many buttons altogether?"]}},
+    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"The shirt has buttons in 2 rows with 2 buttons in each row. How many buttons in all?"}},
   },
   {
     itemId: "multiplication-app-019",
@@ -192,7 +192,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Stickers form a grid of 3 rows and 3 columns. How many stickers are there?","promptOptions":["A sticker sheet has 3 rows with 3 stickers in each row. How many stickers total?","Stickers are arranged in 3 rows and 3 stickers in every row. How many stickers in all?","The page shows 3 rows of 3 stickers. How many stickers altogether?"]}},
+    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"A sticker sheet has 3 rows with 3 stickers in each row. How many stickers total?"}},
   },
   {
     itemId: "multiplication-app-020",
@@ -202,7 +202,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Chairs are arranged in 4 columns of 2 chairs. How many chairs are there?","promptOptions":["Chairs are arranged in 4 columns with 2 chairs in each column. How many chairs altogether?","The room has 4 columns of chairs with 2 chairs in each column. How many chairs total?","There are 4 columns with 2 chairs in each column. How many chairs in all?"]}},
+    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Chairs are arranged in 4 columns with 2 chairs in each column. How many chairs altogether?"}},
   },
   {
     itemId: "multiplication-app-021",
@@ -212,7 +212,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":5,"op":"×","answer":5,"display":{"promptText":"A box has 5 marbles. There is 1 box. How many marbles in total?","promptOptions":["Jake opened 1 box and found 5 marbles inside. How many marbles did he find?","Rosa took 1 box that held 5 marbles. How many marbles did Rosa get?"]}},
+    question: {"a":1,"b":5,"op":"×","answer":5,"display":{"promptText":"Jake opened 1 box and found 5 marbles inside. How many marbles did he find?"}},
   },
   {
     itemId: "multiplication-app-022",
@@ -222,7 +222,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"There are 2 packs of cards with 5 cards in each pack. How many cards in all?","promptOptions":["Leo bought 2 packs of trading cards. Each pack has 5 cards. How many cards did Leo get?","Emma tore open 2 packs of cards with 5 cards in each. How many cards did Emma get?"]}},
+    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Leo bought 2 packs of trading cards. Each pack has 5 cards. How many cards did Leo get?"}},
   },
   {
     itemId: "multiplication-app-023",
@@ -232,7 +232,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"5 nests have 2 eggs in each. How many eggs in total?","promptOptions":["Zoe found 5 birds' nests in the garden. Each nest had 2 eggs in it. How many eggs did Zoe find?","James spotted 5 nests while walking in the woods. Each had 2 eggs. How many eggs did he see?"]}},
+    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"Zoe found 5 birds' nests in the garden. Each nest had 2 eggs in it. How many eggs did Zoe find?"}},
   },
   {
     itemId: "multiplication-app-024",
@@ -242,7 +242,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"4 plates each hold 3 cookies. How many cookies are there in all?","promptOptions":["Mom put 3 cookies on each of 4 plates. How many cookies did Mom put out in all?","Kyle set 4 plates on the table. He put 3 cookies on each plate. How many cookies in all?"]}},
+    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Mom put 3 cookies on each of 4 plates. How many cookies did Mom put out in all?"}},
   },
   {
     itemId: "multiplication-app-025",
@@ -252,7 +252,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"5 jars each hold 4 marbles. How many marbles in total?","promptOptions":["Ava poured marbles into 5 jars. She put 4 marbles in each jar. How many marbles did Ava use in all?","Tyler lined up 5 jars and put 4 marbles in each one. How many marbles did he use?"]}},
+    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"Ava poured marbles into 5 jars. She put 4 marbles in each jar. How many marbles did Ava use in all?"}},
   },
   {
     itemId: "multiplication-app-026",
@@ -262,7 +262,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":3,"op":"×","answer":18,"display":{"promptText":"6 bags each hold 3 small toys. How many toys in all?","promptOptions":["Nina unpacked 6 bags of small toys from the store. Each bag had 3 toys. How many toys did she get?","Sam put 3 small toys in each of 6 bags for gifts. How many toys did Sam pack in all?"]}},
+    question: {"a":6,"b":3,"op":"×","answer":18,"display":{"promptText":"Nina unpacked 6 bags of small toys from the store. Each bag had 3 toys. How many toys did she get?"}},
   },
   {
     itemId: "multiplication-app-027",
@@ -272,7 +272,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"Stickers are placed in 4 rows of 4 stickers. How many stickers in total?","promptOptions":["A poster has 4 rows of stickers with 4 stickers in each row. How many stickers total?","The page shows 4 rows with 4 stickers per row. How many stickers in all?","Stickers are placed in 4 rows with 4 stickers in every row. How many stickers altogether?"]}},
+    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"A poster has 4 rows of stickers with 4 stickers in each row. How many stickers total?"}},
   },
   {
     itemId: "multiplication-app-028",
@@ -282,7 +282,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"Cans are in 5 rows of 3 cans. How many cans are there?","promptOptions":["Cans are stacked in 5 rows with 3 cans in each row. How many cans in total?","The shelf holds 5 rows of cans with 3 cans in each row. How many cans altogether?","There are 5 rows with 3 cans in each row. How many cans in all?"]}},
+    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"Cans are stacked in 5 rows with 3 cans in each row. How many cans in total?"}},
   },
   {
     itemId: "multiplication-app-029",
@@ -292,7 +292,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":4,"op":"×","answer":24,"display":{"promptText":"Boxes are stacked in 6 columns of 4 boxes. How many boxes in all?","promptOptions":["Boxes are stacked in 6 columns with 4 boxes in each column. How many boxes in all?","The storage room has 6 columns of boxes with 4 boxes in each column. How many boxes total?","There are 6 columns with 4 boxes in each column. How many boxes altogether?"]}},
+    question: {"a":6,"b":4,"op":"×","answer":24,"display":{"promptText":"Boxes are stacked in 6 columns with 4 boxes in each column. How many boxes in all?"}},
   },
   {
     itemId: "multiplication-app-030",
@@ -302,7 +302,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"5 students each earned 5 gold stars. How many stars in total?","promptOptions":["Ms. Chen gave 5 gold stars to each of 5 students. How many stars did she give out?","Five kids earned 5 gold stars each in Ms. Chen's class. How many stars did they earn?"]}},
+    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"Ms. Chen gave 5 gold stars to each of 5 students. How many stars did she give out?"}},
   },
   {
     itemId: "multiplication-app-031",
@@ -312,7 +312,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"6 baskets each hold 6 eggs. How many eggs are there?","promptOptions":["The farmer packed 6 eggs in each of 6 baskets for market. How many eggs did he pack?","Grandma counted 6 baskets with 6 eggs packed in each. How many eggs did she count?"]}},
+    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"The farmer packed 6 eggs in each of 6 baskets for market. How many eggs did he pack?"}},
   },
   {
     itemId: "multiplication-app-032",
@@ -322,7 +322,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":4,"op":"×","answer":28,"display":{"promptText":"7 desks each have 4 books. How many books in total?","promptOptions":["The librarian put 4 books on each of 7 desks for the students. How many books did she put out?","Kai saw 7 desks in the library and counted 4 books on each one. How many books did he count?"]}},
+    question: {"a":7,"b":4,"op":"×","answer":28,"display":{"promptText":"The librarian put 4 books on each of 7 desks for the students. How many books did she put out?"}},
   },
   {
     itemId: "multiplication-app-033",
@@ -332,7 +332,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"3 boxes each hold 4 crayons. How many crayons in all?","promptOptions":["Jake opened 3 boxes of crayons. Each box had 4 crayons inside. How many crayons did Jake find?","The teacher gave 4 crayons in each of 3 boxes to the art class. How many crayons did she give?"]}},
+    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Jake opened 3 boxes of crayons. Each box had 4 crayons inside. How many crayons did Jake find?"}},
   },
   {
     itemId: "multiplication-app-034",
@@ -342,7 +342,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"4 trays each have 3 cookies. How many cookies in all?","promptOptions":["Mom baked 4 trays of cookies with 3 cookies on each tray. How many cookies did she bake in all?","Sophia arranged 4 trays and put 3 cookies on each one. How many cookies did she set out?"]}},
+    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Mom baked 4 trays of cookies with 3 cookies on each tray. How many cookies did she bake in all?"}},
   },
   {
     itemId: "multiplication-app-035",
@@ -352,7 +352,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"5 pairs of socks each have 2 socks. How many socks in all?","promptOptions":["Lena folded 5 pairs of socks to put away. Each pair has 2 socks. How many socks did she fold?","Tim matched 5 pairs of socks from the dryer. Each pair has 2 socks. How many socks did he find?"]}},
+    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"Lena folded 5 pairs of socks to put away. Each pair has 2 socks. How many socks did she fold?"}},
   },
   {
     itemId: "multiplication-app-036",
@@ -362,7 +362,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"3 plates each have 3 strawberries. How many strawberries in all?","promptOptions":["Lily has 3 plates. She puts 3 strawberries on each plate. How many strawberries does Lily have in all?","Carlos has 3 plates with 3 strawberries on each. How many strawberries does Carlos have in all?","Maya put 3 strawberries on each of her 3 plates. How many strawberries did she put in all?"]}},
+    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Lily has 3 plates. She puts 3 strawberries on each plate. How many strawberries does Lily have in all?"}},
   },
   {
     itemId: "multiplication-app-037",
@@ -372,7 +372,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"4 vases each hold 2 flowers. How many flowers in all?","promptOptions":["Emma has 4 vases. She puts 2 flowers in each vase. How many flowers does Emma have in all?","Jackson has 4 vases with 2 flowers in each. How many flowers does Jackson have in all?","Alex puts 2 flowers in each of her 4 vases. How many flowers did Alex use in all?"]}},
+    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Emma has 4 vases. She puts 2 flowers in each vase. How many flowers does Emma have in all?"}},
   },
   {
     itemId: "multiplication-app-038",
@@ -382,7 +382,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"5 pots each have 3 seeds. How many seeds in all?","promptOptions":["Lucas has 5 pots. He plants 3 seeds in each pot. How many seeds did Lucas plant in all?","Maria has 5 pots with 3 seeds in each. How many seeds does Maria have in all?","Ben put 3 seeds in each of his 5 pots. How many seeds did Ben plant in all?"]}},
+    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"Lucas has 5 pots. He plants 3 seeds in each pot. How many seeds did Lucas plant in all?"}},
   },
   {
     itemId: "multiplication-app-039",
@@ -392,7 +392,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"2 bags each hold 4 apples. How many apples in all?","promptOptions":["Sophia has 2 bags. She puts 4 apples in each bag. How many apples does Sophia have in all?","David has 2 bags with 4 apples in each. How many apples does David have in all?","Mom put 4 apples in each of her 2 bags. How many apples did she pack in all?"]}},
+    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"Sophia has 2 bags. She puts 4 apples in each bag. How many apples does Sophia have in all?"}},
   },
   {
     itemId: "multiplication-app-040",
@@ -402,7 +402,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"3 cups each hold 2 ice cubes. How many ice cubes in all?","promptOptions":["Marcus has 3 cups. He puts 2 ice cubes in each cup. How many ice cubes does Marcus have in all?","Riley has 3 cups with 2 ice cubes in each. How many ice cubes does Riley have in all?","Sarah put 2 ice cubes in each of her 3 cups. How many ice cubes did she use in all?"]}},
+    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Marcus has 3 cups. He puts 2 ice cubes in each cup. How many ice cubes does Marcus have in all?"}},
   },
   {
     itemId: "multiplication-app-041",
@@ -412,7 +412,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"2 nests each have 2 eggs. How many eggs in all?","promptOptions":["Oliver found 2 bird nests. Each nest has 2 eggs. How many eggs did Oliver find in all?","Grace has 2 nests. Each nest has 2 eggs. How many eggs does Grace have in all?","Ethan's 2 nests each have 2 eggs in them. How many eggs does Ethan have in all?"]}},
+    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Oliver found 2 bird nests. Each nest has 2 eggs. How many eggs did Oliver find in all?"}},
   },
   {
     itemId: "multiplication-app-042",
@@ -422,7 +422,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"4 gardens each have 5 tulips. How many tulips in all?","promptOptions":["Mia has 4 gardens. Each garden has 5 tulips. How many tulips does Mia have in all?","Leo planted 5 tulips in each of his 4 gardens. How many tulips did Leo plant in all?"]}},
+    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"Mia has 4 gardens. Each garden has 5 tulips. How many tulips does Mia have in all?"}},
   },
   {
     itemId: "multiplication-app-043",
@@ -432,7 +432,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"5 tables each have 4 stickers. How many stickers in all?","promptOptions":["Zoe has 5 tables. She puts 4 stickers on each table. How many stickers does Zoe have in all?","Jack's 5 tables each have 4 stickers on them. How many stickers does Jack have in all?","Owen put 4 stickers on each of his 5 tables. How many stickers did Owen put in all?"]}},
+    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"Zoe has 5 tables. She puts 4 stickers on each table. How many stickers does Zoe have in all?"}},
   },
   {
     itemId: "multiplication-app-044",
@@ -442,7 +442,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"2 decks each have 5 cards. How many cards in all?","promptOptions":["Ava has 2 card decks. Each deck has 5 cards. How many cards does Ava have in all?","Jayden has 2 decks with 5 cards in each. How many cards does Jayden have in all?","Nina pulled 5 cards from each of her 2 decks. How many cards did she pull in all?"]}},
+    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Ava has 2 card decks. Each deck has 5 cards. How many cards does Ava have in all?"}},
   },
   {
     itemId: "multiplication-app-045",
@@ -452,7 +452,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"3 bowls each have 5 grapes. How many grapes in all?","promptOptions":["Lucas has 3 bowls. Each bowl has 5 grapes. How many grapes does Lucas have in all?","Sophie has 3 bowls with 5 grapes in each. How many grapes does Sophie have in all?","Ryan put 5 grapes in each of his 3 bowls. How many grapes did Ryan put in all?"]}},
+    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"Lucas has 3 bowls. Each bowl has 5 grapes. How many grapes does Lucas have in all?"}},
   },
   {
     itemId: "multiplication-app-046",
@@ -462,7 +462,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Stamps are in 2 rows of 3 stamps. How many stamps in all?","promptOptions":["Stamps are arranged in 2 rows with 3 stamps in each row. How many stamps total?","A page has 2 rows of stamps with 3 stamps in each row. How many stamps altogether?","There are 2 rows with 3 stamps in each row. How many stamps in all?"]}},
+    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Stamps are arranged in 2 rows with 3 stamps in each row. How many stamps total?"}},
   },
   {
     itemId: "multiplication-app-047",
@@ -472,7 +472,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Muffins are in 3 rows of 2 muffins. How many muffins?","promptOptions":["Maria arranged cookies in 3 rows. She put 2 cookies in each row. How many cookies did Maria arrange?","There are 3 rows of chairs in the cafeteria. Each row has 2 chairs. How many chairs in total?","Sam made 3 rows of toy cars. He lined up 2 cars in each row. How many cars did he line up?"]}},
+    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Maria arranged cookies in 3 rows. She put 2 cookies in each row. How many cookies did Maria arrange?"}},
   },
   {
     itemId: "multiplication-app-048",
@@ -482,7 +482,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Tiles are in 3 rows of 3 tiles. How many tiles?","promptOptions":["Noah arranged tiles in 3 rows. He put 3 tiles in each row. How many tiles did Noah arrange?","There are 3 rows of desks in the classroom. Each row has 3 desks. How many desks in total?","Sofia put stickers on a poster in 3 rows. She put 3 stickers in each row. How many stickers altogether?"]}},
+    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Noah arranged tiles in 3 rows. He put 3 tiles in each row. How many tiles did Noah arrange?"}},
   },
   {
     itemId: "multiplication-app-049",
@@ -492,7 +492,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"Windows are in 2 rows of 4 windows. How many windows?","promptOptions":["Carlos arranged windows in 2 rows. He drew 4 windows in each row. How many windows did Carlos draw?","There are 2 rows of flowers in the garden. Each row has 4 flowers. How many flowers in total?","Emma put tiles in 2 rows. She put 4 tiles in each row. How many tiles did Emma put down?"]}},
+    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"Carlos arranged windows in 2 rows. He drew 4 windows in each row. How many windows did Carlos draw?"}},
   },
   {
     itemId: "multiplication-app-050",
@@ -502,7 +502,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Buttons are in 2 rows of 5 buttons. How many buttons?","promptOptions":["Leo arranged buttons in 2 rows. He put 5 buttons in each row. How many buttons did Leo arrange?","There are 2 rows of trees in the park. Each row has 5 trees. How many trees in total?","Sofia made necklaces with beads in 2 rows. She put 5 beads in each row. How many beads altogether?"]}},
+    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Leo arranged buttons in 2 rows. He put 5 buttons in each row. How many buttons did Leo arrange?"}},
   },
   {
     itemId: "multiplication-app-051",
@@ -512,7 +512,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Eggs are in 3 rows of 4 eggs. How many eggs?","promptOptions":["Jake arranged eggs in 3 rows. He put 4 eggs in each row. How many eggs did Jake arrange?","There are 3 rows of books on the shelf. Each row has 4 books. How many books in total?","Maya made a pattern with stickers in 3 rows. She put 4 stickers in each row. How many stickers altogether?"]}},
+    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Jake arranged eggs in 3 rows. He put 4 eggs in each row. How many eggs did Jake arrange?"}},
   },
   {
     itemId: "multiplication-app-052",
@@ -522,7 +522,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Books are on 4 shelves with 3 books each. How many books?","promptOptions":["Noah put books on 4 shelves. He put 3 books on each shelf. How many books did Noah put up?","There are 4 shelves in the library with books. Each shelf has 3 books. How many books in total?","Emma arranged flowers on 4 shelves. She put 3 flowers on each shelf. How many flowers altogether?"]}},
+    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Noah put books on 4 shelves. He put 3 books on each shelf. How many books did Noah put up?"}},
   },
   {
     itemId: "multiplication-app-053",
@@ -532,7 +532,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"Stars are in 5 rows of 3 stars. How many stars?","promptOptions":["Sam drew stars in 5 rows. He drew 3 stars in each row. How many stars did Sam draw in total?","There are 5 rows of flowers in the garden. Each row has 3 flowers. How many flowers in total?","Maya arranged beads in 5 rows. She put 3 beads in each row. How many beads did Maya arrange?"]}},
+    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"Sam drew stars in 5 rows. He drew 3 stars in each row. How many stars did Sam draw in total?"}},
   },
   {
     itemId: "multiplication-app-054",
@@ -542,7 +542,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"Dots are in 5 rows of 4 dots. How many dots?","promptOptions":["Leo arranged dots in 5 rows. He made 4 dots in each row. How many dots did Leo make in total?","There are 5 rows of chairs in the gymnasium. Each row has 4 chairs. How many chairs in total?","Sofia put buttons in 5 rows. She put 4 buttons in each row. How many buttons did Sofia put down?"]}},
+    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"Leo arranged dots in 5 rows. He made 4 dots in each row. How many dots did Leo make in total?"}},
   },
   {
     itemId: "multiplication-app-055",
@@ -552,7 +552,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Bricks are in 2 rows of 2 bricks. How many bricks?","promptOptions":["Carlos arranged bricks in 2 rows. He put 2 bricks in each row. How many bricks did Carlos arrange?","There are 2 rows of blocks. Each row has 2 blocks. How many blocks in total?","Emma stacked tiles in 2 rows. She put 2 tiles in each row. How many tiles did Emma stack?"]}},
+    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Carlos arranged bricks in 2 rows. He put 2 bricks in each row. How many bricks did Carlos arrange?"}},
   },
   {
     itemId: "multiplication-app-056",
@@ -562,7 +562,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Pencils are in 4 rows of 2 pencils. How many pencils?","promptOptions":["Noah arranged pencils in 4 rows. He put 2 pencils in each row. How many pencils did Noah arrange?","There are 4 rows of desks in the classroom. Each row has 2 desks. How many desks in total?","Jake put toy cars in 4 rows. He put 2 cars in each row. How many cars did Jake put down?"]}},
+    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Noah arranged pencils in 4 rows. He put 2 pencils in each row. How many pencils did Noah arrange?"}},
   },
   {
     itemId: "multiplication-app-057",
@@ -572,7 +572,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"Beads are in 3 rows of 5 beads. How many beads?","promptOptions":["Sofia arranged beads in 3 rows. She put 5 beads in each row. How many beads did Sofia arrange?","There are 3 rows of flowers in the garden. Each row has 5 flowers. How many flowers in total?","Maya put stickers on paper in 3 rows. She put 5 stickers in each row. How many stickers altogether?"]}},
+    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"Sofia arranged beads in 3 rows. She put 5 beads in each row. How many beads did Sofia arrange?"}},
   },
   {
     itemId: "multiplication-app-058",
@@ -582,7 +582,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Two twins each brought 2 cookies. How many cookies in total?","promptOptions":["Sam and his twin brother each brought 2 cookies. How many cookies did they bring in all?","Mia and her twin sister each have 2 cookies. How many cookies do they have in all?","Lily and her twin brother each got 2 cookies. How many cookies did they get in all?"]}},
+    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Sam and his twin brother each brought 2 cookies. How many cookies did they bring in all?"}},
   },
   {
     itemId: "multiplication-app-059",
@@ -602,7 +602,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"2 bikes each have 3 baskets. How many baskets total?","promptOptions":["Jake has 2 bikes. Each bike has 3 baskets. How many baskets does Jake have?","There are 2 bikes parked outside. Each has 3 baskets. How many baskets total?"]}},
+    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Jake has 2 bikes. Each bike has 3 baskets. How many baskets does Jake have?"}},
   },
   {
     itemId: "multiplication-app-061",
@@ -612,7 +612,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"3 kids each have 3 toys. How many toys in total?","promptOptions":["Three kids each have 3 toys. How many toys in total?","Three children are playing together. Each has 3 toys. How many toys altogether?"]}},
+    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Three kids each have 3 toys. How many toys in total?"}},
   },
   {
     itemId: "multiplication-app-062",
@@ -622,7 +622,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"4 carts each carry 4 bags. How many bags in total?","promptOptions":["The store has 4 shopping carts. Each cart has 4 bags. How many bags total?","Four shopping carts are in line. Each cart has 4 bags. How many bags total?"]}},
+    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"The store has 4 shopping carts. Each cart has 4 bags. How many bags total?"}},
   },
   {
     itemId: "multiplication-app-063",
@@ -632,7 +632,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"5 teams each have 5 players. How many players in total?","promptOptions":["Five soccer teams are playing. Each team has 5 players. How many players total?","There are 5 teams at the tournament. Each team has 5 players. How many players?"]}},
+    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"Five soccer teams are playing. Each team has 5 players. How many players total?"}},
   },
   {
     itemId: "multiplication-app-064",
@@ -642,7 +642,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"3 hands each have 5 fingers. How many fingers in total?","promptOptions":["There are 3 hands showing. Each has 5 fingers. How many fingers in total?"]}},
+    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"There are 3 hands showing. Each has 5 fingers. How many fingers in total?"}},
   },
   {
     itemId: "multiplication-app-065",
@@ -652,7 +652,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"4 tricycles each have 3 wheels. How many wheels in total?","promptOptions":["There are 4 tricycles at the park. Each one has 3 wheels. How many wheels?"]}},
+    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"There are 4 tricycles at the park. Each one has 3 wheels. How many wheels?"}},
   },
   {
     itemId: "multiplication-app-066",
@@ -662,7 +662,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"5 cats each have 2 eyes. How many eyes in total?","promptOptions":["There are 5 cats. Every cat has 2 eyes. How many eyes in total?"]}},
+    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"There are 5 cats. Every cat has 2 eyes. How many eyes in total?"}},
   },
   {
     itemId: "multiplication-app-067",
@@ -672,7 +672,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"4 dogs each have 2 ears. How many ears in total?","promptOptions":["There are 4 dogs. Every dog has 2 ears. How many ears in total?"]}},
+    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"There are 4 dogs. Every dog has 2 ears. How many ears in total?"}},
   },
   {
     itemId: "multiplication-app-068",
@@ -682,7 +682,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"2 chairs each have 4 legs. How many legs in total?","promptOptions":["There are 2 chairs in the kitchen. Each chair has 4 legs. How many legs total?"]}},
+    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"There are 2 chairs in the kitchen. Each chair has 4 legs. How many legs total?"}},
   },
   {
     itemId: "multiplication-app-069",
@@ -692,7 +692,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"3 cars each have 4 tires. How many tires in total?","promptOptions":["There are 3 cars. Every car has 4 tires. How many tires in total?"]}},
+    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"There are 3 cars. Every car has 4 tires. How many tires in total?"}},
   },
   {
     itemId: "multiplication-app-070",
@@ -702,7 +702,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"4 packs each have 5 pencils. How many pencils in total?","promptOptions":["Mom has 4 packs of pencils. Each pack has 5 pencils. How many pencils total?","There are 4 packs of pencils. Every pack has 5 pencils. How many pencils in total?"]}},
+    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"Mom has 4 packs of pencils. Each pack has 5 pencils. How many pencils total?"}},
   },
   {
     itemId: "multiplication-app-071",
@@ -712,7 +712,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":4,"op":"×","answer":24,"display":{"promptText":"6 baskets each hold 4 tomatoes. How many tomatoes in total?","promptOptions":["Grandpa has 6 baskets of tomatoes. Each basket has 4 tomatoes. How many tomatoes total?","There are 6 baskets of tomatoes. Every basket holds 4 tomatoes. How many tomatoes in total?"]}},
+    question: {"a":6,"b":4,"op":"×","answer":24,"display":{"promptText":"Grandpa has 6 baskets of tomatoes. Each basket has 4 tomatoes. How many tomatoes total?"}},
   },
   {
     itemId: "multiplication-app-072",
@@ -722,7 +722,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":3,"op":"×","answer":21,"display":{"promptText":"7 buckets each hold 3 fish. How many fish in total?","promptOptions":["Marcus has 7 buckets. He put 3 fish in each bucket. How many fish does he have in all?","Carlos filled 7 buckets with 3 fish each. How many fish did he use?"]}},
+    question: {"a":7,"b":3,"op":"×","answer":21,"display":{"promptText":"Marcus has 7 buckets. He put 3 fish in each bucket. How many fish does he have in all?"}},
   },
   {
     itemId: "multiplication-app-073",
@@ -732,7 +732,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":5,"op":"×","answer":35,"display":{"promptText":"7 jars each hold 5 buttons. How many buttons in total?","promptOptions":["Sofia has 7 jars. She put 5 buttons in each jar. How many buttons does she have in all?","Luis filled 7 jars with 5 buttons each. How many buttons did he use?"]}},
+    question: {"a":7,"b":5,"op":"×","answer":35,"display":{"promptText":"Sofia has 7 jars. She put 5 buttons in each jar. How many buttons does she have in all?"}},
   },
   {
     itemId: "multiplication-app-074",
@@ -742,7 +742,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":3,"op":"×","answer":24,"display":{"promptText":"8 crates each hold 3 bottles. How many bottles in total?","promptOptions":["Jake has 8 crates. He put 3 bottles in each crate. How many bottles does he have in all?","A store packed 3 bottles into each of 8 crates. How many bottles are there in total?"]}},
+    question: {"a":8,"b":3,"op":"×","answer":24,"display":{"promptText":"Jake has 8 crates. He put 3 bottles in each crate. How many bottles does he have in all?"}},
   },
   {
     itemId: "multiplication-app-075",
@@ -752,7 +752,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":4,"op":"×","answer":32,"display":{"promptText":"8 shelves each hold 4 jars. How many jars in total?","promptOptions":["Diego has 8 shelves. He put 4 jars on each shelf. How many jars does he have in all?","Emma arranged 4 jars on each of her 8 shelves. How many jars did she arrange?"]}},
+    question: {"a":8,"b":4,"op":"×","answer":32,"display":{"promptText":"Diego has 8 shelves. He put 4 jars on each shelf. How many jars does he have in all?"}},
   },
   {
     itemId: "multiplication-app-076",
@@ -762,7 +762,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":3,"op":"×","answer":27,"display":{"promptText":"9 boxes each hold 3 candles. How many candles in total?","promptOptions":["Lucas has 9 boxes. He put 3 candles in each box. How many candles does he have in all?","A gift shop packed 3 candles into each of 9 boxes. How many candles are there in total?"]}},
+    question: {"a":9,"b":3,"op":"×","answer":27,"display":{"promptText":"Lucas has 9 boxes. He put 3 candles in each box. How many candles does he have in all?"}},
   },
   {
     itemId: "multiplication-app-077",
@@ -772,7 +772,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":4,"op":"×","answer":36,"display":{"promptText":"9 crates each hold 4 peaches. How many peaches in total?","promptOptions":["Sophia has 9 crates. Each crate holds 4 peaches. How many peaches does she have in all?","A farm has 9 crates with 4 peaches in each crate. How many peaches are there in total?"]}},
+    question: {"a":9,"b":4,"op":"×","answer":36,"display":{"promptText":"Sophia has 9 crates. Each crate holds 4 peaches. How many peaches does she have in all?"}},
   },
   {
     itemId: "multiplication-app-078",
@@ -782,7 +782,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":9,"op":"×","answer":18,"display":{"promptText":"2 packs each hold 9 crackers. How many crackers in total?","promptOptions":["Liam has 2 packs of crackers. Each pack has 9 crackers. How many crackers does he have in all?","Mom bought 2 boxes of crackers. Each box has 9 crackers. How many crackers did she buy?"]}},
+    question: {"a":2,"b":9,"op":"×","answer":18,"display":{"promptText":"Liam has 2 packs of crackers. Each pack has 9 crackers. How many crackers does he have in all?"}},
   },
   {
     itemId: "multiplication-app-079",
@@ -792,7 +792,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":7,"op":"×","answer":21,"display":{"promptText":"3 trays each hold 7 rolls. How many rolls in total?","promptOptions":["A bakery has 3 trays of rolls. Each tray holds 7 rolls. How many rolls does it have in all?","Nina arranged 7 rolls on each of her 3 trays. How many rolls did she arrange?"]}},
+    question: {"a":3,"b":7,"op":"×","answer":21,"display":{"promptText":"A bakery has 3 trays of rolls. Each tray holds 7 rolls. How many rolls does it have in all?"}},
   },
   {
     itemId: "multiplication-app-080",
@@ -802,7 +802,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":7,"op":"×","answer":28,"display":{"promptText":"4 shelves each hold 7 folders. How many folders in total?","promptOptions":["Alex has 4 shelves. He put 7 folders on each shelf. How many folders does he have in all?","Ms. Chen put 7 folders on each of 4 shelves. How many folders did she put up?"]}},
+    question: {"a":4,"b":7,"op":"×","answer":28,"display":{"promptText":"Alex has 4 shelves. He put 7 folders on each shelf. How many folders does he have in all?"}},
   },
   {
     itemId: "multiplication-app-081",
@@ -812,7 +812,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":5,"op":"×","answer":30,"display":{"promptText":"6 vans each carry 5 kids. How many kids in total?","promptOptions":["A school has 6 vans. Each van carries 5 kids. How many kids can ride in all the vans?"]}},
+    question: {"a":6,"b":5,"op":"×","answer":30,"display":{"promptText":"A school has 6 vans. Each van carries 5 kids. How many kids can ride in all the vans?"}},
   },
   {
     itemId: "multiplication-app-082",
@@ -822,7 +822,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":8,"op":"×","answer":24,"display":{"promptText":"3 cages each hold 8 rabbits. How many rabbits in total?","promptOptions":["A pet shop has 3 rabbit cages. Each cage holds 8 rabbits. How many rabbits does it have in all?","A farmer put 8 rabbits in each of 3 cages. How many rabbits did he put in the cages?"]}},
+    question: {"a":3,"b":8,"op":"×","answer":24,"display":{"promptText":"A pet shop has 3 rabbit cages. Each cage holds 8 rabbits. How many rabbits does it have in all?"}},
   },
   {
     itemId: "multiplication-app-083",
@@ -832,7 +832,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":8,"op":"×","answer":32,"display":{"promptText":"4 drawers each hold 8 utensils. How many utensils in total?","promptOptions":["A kitchen has 4 drawers. Each drawer holds 8 utensils. How many utensils does it have in all?","Maria put 8 utensils in each of 4 drawers. How many utensils does she have altogether?"]}},
+    question: {"a":4,"b":8,"op":"×","answer":32,"display":{"promptText":"A kitchen has 4 drawers. Each drawer holds 8 utensils. How many utensils does it have in all?"}},
   },
   {
     itemId: "multiplication-app-084",
@@ -842,7 +842,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":3,"op":"×","answer":18,"display":{"promptText":"Stickers are in 6 rows of 3. How many stickers in total?","promptOptions":["Ethan arranged stickers in 6 rows. He put 3 stickers in each row. How many stickers did Ethan arrange?","There are 6 rows of trees in the park. Each row has 3 trees. How many trees in total?","Mia put flowers in 6 rows. She put 3 flowers in each row. How many flowers did Mia put down?"]}},
+    question: {"a":6,"b":3,"op":"×","answer":18,"display":{"promptText":"Ethan arranged stickers in 6 rows. He put 3 stickers in each row. How many stickers did Ethan arrange?"}},
   },
   {
     itemId: "multiplication-app-085",
@@ -852,7 +852,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":5,"op":"×","answer":30,"display":{"promptText":"Coins are in 6 rows of 5. How many coins in total?","promptOptions":["Jake put coins in 6 rows with 5 coins in each row. How many coins did he put?","Emma arranged coins in 6 rows of 5. How many coins did she arrange in total?","Lucas has coins in 6 rows with 5 coins in each row. How many coins does he have?"]}},
+    question: {"a":6,"b":5,"op":"×","answer":30,"display":{"promptText":"Jake put coins in 6 rows with 5 coins in each row. How many coins did he put?"}},
   },
   {
     itemId: "multiplication-app-086",
@@ -862,7 +862,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"Seats are in 6 rows of 6. How many seats in total?","promptOptions":["Maria put stickers in 6 rows with 6 stickers in each row. How many stickers did she put?","Jake arranged blocks in 6 rows of 6. How many blocks did he arrange in total?","Emma has chairs arranged in 6 rows with 6 chairs in each row. How many chairs does she have?"]}},
+    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"Maria put stickers in 6 rows with 6 stickers in each row. How many stickers did she put?"}},
   },
   {
     itemId: "multiplication-app-087",
@@ -872,7 +872,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":3,"op":"×","answer":21,"display":{"promptText":"Cups are in 7 rows of 3. How many cups in total?","promptOptions":["Lucas put books on shelves. He has 7 rows with 3 books in each row. How many books does he have?","Emma arranged flowers in 7 rows of 3. How many flowers did she arrange in total?","Jake put stickers in 7 rows with 3 stickers in each row. How many stickers did he put?"]}},
+    question: {"a":7,"b":3,"op":"×","answer":21,"display":{"promptText":"Lucas put books on shelves. He has 7 rows with 3 books in each row. How many books does he have?"}},
   },
   {
     itemId: "multiplication-app-088",
@@ -882,7 +882,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":4,"op":"×","answer":28,"display":{"promptText":"Books are in 7 rows of 4. How many books in total?","promptOptions":["Maria put cookies on trays in 7 rows with 4 cookies in each row. How many cookies did she put?","Emma arranged apples in 7 rows of 4. How many apples did she arrange in total?","Lucas put balls in 7 rows with 4 balls in each row. How many balls did he put?"]}},
+    question: {"a":7,"b":4,"op":"×","answer":28,"display":{"promptText":"Maria put cookies on trays in 7 rows with 4 cookies in each row. How many cookies did she put?"}},
   },
   {
     itemId: "multiplication-app-089",
@@ -892,7 +892,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":5,"op":"×","answer":35,"display":{"promptText":"Marbles are in 7 rows of 5. How many marbles in total?","promptOptions":["Jake put marbles in a box in 7 rows with 5 marbles in each row. How many marbles did he put?","Emma arranged beads in 7 rows of 5. How many beads did she arrange in total?","Lucas put stickers in 7 rows with 5 stickers in each row. How many stickers did he put?"]}},
+    question: {"a":7,"b":5,"op":"×","answer":35,"display":{"promptText":"Jake put marbles in a box in 7 rows with 5 marbles in each row. How many marbles did he put?"}},
   },
   {
     itemId: "multiplication-app-090",
@@ -902,7 +902,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":3,"op":"×","answer":24,"display":{"promptText":"Folders are in 8 rows of 3. How many folders in total?","promptOptions":["Maria put cups on a shelf in 8 rows with 3 cups in each row. How many cups did she put?","Emma arranged folders in 8 rows of 3. How many folders did she arrange in total?","Jake put crayons in boxes in 8 rows with 3 crayons in each row. How many crayons did he put?"]}},
+    question: {"a":8,"b":3,"op":"×","answer":24,"display":{"promptText":"Maria put cups on a shelf in 8 rows with 3 cups in each row. How many cups did she put?"}},
   },
   {
     itemId: "multiplication-app-091",
@@ -912,7 +912,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":4,"op":"×","answer":32,"display":{"promptText":"Plates are in 8 rows of 4. How many plates in total?","promptOptions":["Lucas put plates on shelves in 8 rows with 4 plates in each row. How many plates did he put?","Emma arranged books in 8 rows of 4. How many books did she arrange in total?","Maria put cookies on trays in 8 rows with 4 cookies in each row. How many cookies did she put?"]}},
+    question: {"a":8,"b":4,"op":"×","answer":32,"display":{"promptText":"Lucas put plates on shelves in 8 rows with 4 plates in each row. How many plates did he put?"}},
   },
   {
     itemId: "multiplication-app-092",
@@ -922,7 +922,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":5,"op":"×","answer":40,"display":{"promptText":"Tiles are in 8 rows of 5. How many tiles in total?","promptOptions":["Jake put tiles on a floor in 8 rows with 5 tiles in each row. How many tiles did he put?","Emma arranged stones in 8 rows of 5. How many stones did she arrange in total?","Lucas put stickers in 8 rows with 5 stickers in each row. How many stickers did he put?"]}},
+    question: {"a":8,"b":5,"op":"×","answer":40,"display":{"promptText":"Jake put tiles on a floor in 8 rows with 5 tiles in each row. How many tiles did he put?"}},
   },
   {
     itemId: "multiplication-app-093",
@@ -932,7 +932,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":3,"op":"×","answer":27,"display":{"promptText":"Apples are in 9 rows of 3. How many apples in total?","promptOptions":["Maria picked apples and put them in 9 rows with 3 apples in each row. How many apples did she put?","Emma arranged flower pots in 9 rows of 3. How many flower pots did she arrange in total?","Jake put crayons in boxes in 9 rows with 3 crayons in each row. How many crayons did he put?"]}},
+    question: {"a":9,"b":3,"op":"×","answer":27,"display":{"promptText":"Maria picked apples and put them in 9 rows with 3 apples in each row. How many apples did she put?"}},
   },
   {
     itemId: "multiplication-app-094",
@@ -942,7 +942,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":4,"op":"×","answer":36,"display":{"promptText":"Stamps are in 9 rows of 4. How many stamps in total?","promptOptions":["Lucas put stamps on pages in 9 rows with 4 stamps in each row. How many stamps did he put?","Emma arranged books on shelves in 9 rows of 4. How many books did she arrange in total?","Maria put cookies on trays in 9 rows with 4 cookies in each row. How many cookies did she put?"]}},
+    question: {"a":9,"b":4,"op":"×","answer":36,"display":{"promptText":"Lucas put stamps on pages in 9 rows with 4 stamps in each row. How many stamps did he put?"}},
   },
   {
     itemId: "multiplication-app-095",
@@ -952,7 +952,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":7,"op":"×","answer":35,"display":{"promptText":"Cards are in 5 rows of 7. How many cards in total?","promptOptions":["Jake put cards in 5 rows with 7 cards in each row. How many cards did he put?","Emma arranged photos in 5 rows of 7. How many photos did she arrange in total?","Lucas put stickers in 5 rows with 7 stickers in each row. How many stickers did he put?"]}},
+    question: {"a":5,"b":7,"op":"×","answer":35,"display":{"promptText":"Jake put cards in 5 rows with 7 cards in each row. How many cards did he put?"}},
   },
   {
     itemId: "multiplication-app-096",
@@ -962,7 +962,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":8,"op":"×","answer":40,"display":{"promptText":"Photos are in 5 rows of 8. How many photos in total?","promptOptions":["Maria put photos in an album in 5 rows with 8 photos in each row. How many photos did she put?","Emma arranged stamps in 5 rows of 8. How many stamps did she arrange in total?","Jake put tiles on a floor in 5 rows with 8 tiles in each row. How many tiles did he put?"]}},
+    question: {"a":5,"b":8,"op":"×","answer":40,"display":{"promptText":"Maria put photos in an album in 5 rows with 8 photos in each row. How many photos did she put?"}},
   },
   {
     itemId: "multiplication-app-097",
@@ -972,7 +972,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":7,"op":"×","answer":42,"display":{"promptText":"6 teams each have 7 members. How many members in total?","promptOptions":["Marcus's soccer league has 6 teams. Each team has 7 players. How many players in total?","There are 6 soccer teams. Each team has 7 players. How many players are there?","At the park, 6 groups play tag. Each group has 7 kids. How many kids are playing?"]}},
+    question: {"a":6,"b":7,"op":"×","answer":42,"display":{"promptText":"Marcus's soccer league has 6 teams. Each team has 7 players. How many players in total?"}},
   },
   {
     itemId: "multiplication-app-098",
@@ -982,7 +982,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"6 buses each carry 8 students. How many students in total?","promptOptions":["Emma's school sent 6 buses on a field trip. Each bus holds 8 kids. How many kids are going?","There are 6 buses at the museum. Each bus holds 8 children. How many children came?"]}},
+    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"Emma's school sent 6 buses on a field trip. Each bus holds 8 kids. How many kids are going?"}},
   },
   {
     itemId: "multiplication-app-099",
@@ -992,7 +992,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"7 crates each hold 6 oranges. How many oranges in total?","promptOptions":["Farmer Juan has 7 crates of oranges. Each crate holds 6 oranges. How many oranges does he have?","The fruit stand has 7 baskets. Each basket has 6 oranges in it. How many oranges in total?","The farmer picked 7 crates. He put 6 oranges in each crate. How many oranges did he pick?"]}},
+    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"Farmer Juan has 7 crates of oranges. Each crate holds 6 oranges. How many oranges does he have?"}},
   },
   {
     itemId: "multiplication-app-100",
@@ -1002,7 +1002,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"7 nests each hold 7 chicks. How many chicks in total?","promptOptions":["Sophie found 7 bird nests in the backyard. Each nest has 7 baby chicks. How many chicks did she find?","In the tall trees, there are 7 nests. Each nest holds 7 tiny chicks. How many chicks in total?","The farm has 7 nests. 7 baby birds are in each nest. How many baby birds are there?"]}},
+    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"Sophie found 7 bird nests in the backyard. Each nest has 7 baby chicks. How many chicks did she find?"}},
   },
   {
     itemId: "multiplication-app-101",
@@ -1012,7 +1012,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"7 drawers each hold 8 spools. How many spools in total?","promptOptions":["Grandma's sewing box has 7 drawers. Each drawer holds 8 spools of thread. How many spools does she have?","The craft room has 7 drawers. Each drawer has 8 spools of thread. How many spools in total?","The tailor opened 7 drawers in her shop. Each had 8 spools inside. How many spools?"]}},
+    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"Grandma's sewing box has 7 drawers. Each drawer holds 8 spools of thread. How many spools does she have?"}},
   },
   {
     itemId: "multiplication-app-102",
@@ -1022,7 +1022,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"8 boxes each hold 6 markers. How many markers in total?","promptOptions":["The art teacher has 8 boxes of markers. Each box has 6 markers. How many markers does she have?","At the craft store, there are 8 bins. Each bin holds 6 markers. How many markers in total?","Tommy found 8 boxes of crayons. Each box had 6 crayons inside. How many crayons?"]}},
+    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"The art teacher has 8 boxes of markers. Each box has 6 markers. How many markers does she have?"}},
   },
   {
     itemId: "multiplication-app-103",
@@ -1032,7 +1032,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"8 squads each have 7 scouts. How many scouts in total?","promptOptions":["The Girl Scout troop has 8 groups. Each group has 7 scouts in it. How many scouts are there?","At scout camp, they split into 8 teams. Each team has 7 scouts. How many scouts in total?","The scout leader made 8 squads. Each squad has 7 scouts. How many scouts?"]}},
+    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"The Girl Scout troop has 8 groups. Each group has 7 scouts in it. How many scouts are there?"}},
   },
   {
     itemId: "multiplication-app-104",
@@ -1042,7 +1042,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":8,"op":"×","answer":64,"display":{"promptText":"8 cases each hold 8 bottles. How many bottles in total?","promptOptions":["The delivery truck brought 8 cases of juice. Each case has 8 bottles. How many bottles are there?","At the warehouse, there are 8 crates. Each crate holds 8 bottles of water. How many bottles in total?","The store got 8 boxes of milk bottles. There are 8 bottles in each box. How many bottles?"]}},
+    question: {"a":8,"b":8,"op":"×","answer":64,"display":{"promptText":"The delivery truck brought 8 cases of juice. Each case has 8 bottles. How many bottles are there?"}},
   },
   {
     itemId: "multiplication-app-105",
@@ -1052,7 +1052,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"9 planters each hold 6 herbs. How many herbs in total?","promptOptions":["The community garden has 9 planters. Each planter holds 6 herbs. How many herbs are growing?","Mom set up 9 pots on the porch. Each pot has 6 herb plants in it. How many herbs in total?","The gardener planted 9 pots. She put 6 seeds in each pot. How many seeds did she plant?"]}},
+    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"The community garden has 9 planters. Each planter holds 6 herbs. How many herbs are growing?"}},
   },
   {
     itemId: "multiplication-app-106",
@@ -1062,7 +1062,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":7,"op":"×","answer":63,"display":{"promptText":"9 tables each seat 7 people. How many people in total?","promptOptions":["The cafeteria has 9 tables. Each table seats 7 people. How many people can sit down?","At the party, there are 9 tables. Each table has 7 seats. How many people fit in total?","The restaurant set up 9 tables. Each one seats 7 people. How many people?"]}},
+    question: {"a":9,"b":7,"op":"×","answer":63,"display":{"promptText":"The cafeteria has 9 tables. Each table seats 7 people. How many people can sit down?"}},
   },
   {
     itemId: "multiplication-app-107",
@@ -1072,7 +1072,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"9 benches each seat 8 kids. How many kids in total?","promptOptions":["The park has 9 benches. Each bench can seat 8 kids. How many kids can sit down?","At the bus stop, there are 9 benches. Each bench has 8 children sitting. How many children in total?","The playground has 9 benches. 8 kids can sit on each one. How many kids fit?"]}},
+    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"The park has 9 benches. Each bench can seat 8 kids. How many kids can sit down?"}},
   },
   {
     itemId: "multiplication-app-108",
@@ -1082,7 +1082,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":9,"op":"×","answer":81,"display":{"promptText":"9 classes each have 9 posters. How many posters in total?","promptOptions":["The school has 9 classrooms. Each classroom has 9 posters on the walls. How many posters in total?","The art show displays work from 9 classes. Each class made 9 posters. How many posters total?","There are 9 classrooms at school. Each room has 9 student artworks. How many artworks?"]}},
+    question: {"a":9,"b":9,"op":"×","answer":81,"display":{"promptText":"The school has 9 classrooms. Each classroom has 9 posters on the walls. How many posters in total?"}},
   },
   {
     itemId: "multiplication-app-109",
@@ -1092,7 +1092,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":9,"op":"×","answer":63,"display":{"promptText":"7 kennels each hold 9 puppies. How many puppies in total?","promptOptions":["Leo has 7 kennels. Each kennel has 9 puppies. How many puppies does Leo have in total?","There are 7 kennels at the farm. Each one has 9 puppies. How many puppies are there altogether?"]}},
+    question: {"a":7,"b":9,"op":"×","answer":63,"display":{"promptText":"Leo has 7 kennels. Each kennel has 9 puppies. How many puppies does Leo have in total?"}},
   },
   {
     itemId: "multiplication-app-110",
@@ -1102,7 +1102,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":7,"op":"×","answer":70,"display":{"promptText":"A store has 10 boxes, each with 7 books. How many books in total?","promptOptions":["The library has 10 boxes. Each box has 7 books. How many books does the library have in total?","Maria stacked 10 boxes. Each box had 7 books. How many books did Maria stack altogether?"]}},
+    question: {"a":10,"b":7,"op":"×","answer":70,"display":{"promptText":"The library has 10 boxes. Each box has 7 books. How many books does the library have in total?"}},
   },
   {
     itemId: "multiplication-app-111",
@@ -1112,7 +1112,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":8,"op":"×","answer":80,"display":{"promptText":"10 shelves each hold 8 jars. How many jars in total?","promptOptions":["Noah has 10 shelves. Each shelf has 8 jars. How many jars does Noah have in total?","The kitchen has 10 shelves. Each one has 8 jars. How many jars are there altogether?"]}},
+    question: {"a":10,"b":8,"op":"×","answer":80,"display":{"promptText":"Noah has 10 shelves. Each shelf has 8 jars. How many jars does Noah have in total?"}},
   },
   {
     itemId: "multiplication-app-112",
@@ -1122,7 +1122,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":4,"op":"×","answer":44,"display":{"promptText":"11 crates each hold 4 water bottles. How many bottles in total?","promptOptions":["The gym has 11 crates. Each crate holds 4 water bottles. How many bottles does the gym have in total?","Jake stacked 11 crates. Each crate had 4 bottles. How many bottles did Jake stack altogether?"]}},
+    question: {"a":11,"b":4,"op":"×","answer":44,"display":{"promptText":"The gym has 11 crates. Each crate holds 4 water bottles. How many bottles does the gym have in total?"}},
   },
   {
     itemId: "multiplication-app-113",
@@ -1132,7 +1132,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":7,"op":"×","answer":84,"display":{"promptText":"12 packs each hold 7 cards. How many cards in total?","promptOptions":["Leo has 12 packs. Each pack has 7 cards. How many cards does Leo have in total?","The store got 12 packs. Each pack had 7 cards. How many cards did the store get altogether?"]}},
+    question: {"a":12,"b":7,"op":"×","answer":84,"display":{"promptText":"Leo has 12 packs. Each pack has 7 cards. How many cards does Leo have in total?"}},
   },
   {
     itemId: "multiplication-app-114",
@@ -1142,7 +1142,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":5,"op":"×","answer":75,"display":{"promptText":"15 boxes each have 5 bottles. How many bottles in total?","promptOptions":["Rosa packed 15 boxes. Each box had 5 bottles. How many bottles did Rosa pack in total?","The warehouse has 15 boxes. Each box has 5 bottles. How many bottles does the warehouse have altogether?"]}},
+    question: {"a":15,"b":5,"op":"×","answer":75,"display":{"promptText":"Rosa packed 15 boxes. Each box had 5 bottles. How many bottles did Rosa pack in total?"}},
   },
   {
     itemId: "multiplication-app-115",
@@ -1152,7 +1152,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":4,"op":"×","answer":80,"display":{"promptText":"20 bags each hold 4 apples. How many apples in total?","promptOptions":["Tommy picked 20 bags. Each bag had 4 apples. How many apples did Tommy pick in total?","The farm has 20 bags. Each bag has 4 apples. How many apples does the farm have altogether?"]}},
+    question: {"a":20,"b":4,"op":"×","answer":80,"display":{"promptText":"Tommy picked 20 bags. Each bag had 4 apples. How many apples did Tommy pick in total?"}},
   },
   {
     itemId: "multiplication-app-116",
@@ -1162,7 +1162,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":3,"op":"×","answer":75,"display":{"promptText":"25 baskets each hold 3 muffins. How many muffins in total?","promptOptions":["Anna arranged 25 baskets. Each basket had 3 muffins. How many muffins did Anna arrange in total?","The bakery has 25 baskets. Each basket has 3 muffins. How many muffins does the bakery have altogether?"]}},
+    question: {"a":25,"b":3,"op":"×","answer":75,"display":{"promptText":"Anna arranged 25 baskets. Each basket had 3 muffins. How many muffins did Anna arrange in total?"}},
   },
   {
     itemId: "multiplication-app-117",
@@ -1172,7 +1172,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":30,"b":3,"op":"×","answer":90,"display":{"promptText":"30 trays each have 3 cupcakes. How many cupcakes in total?","promptOptions":["Ethan stacked 30 trays. Each tray had 3 cupcakes. How many cupcakes did Ethan stack in total?","The bakery has 30 trays. Each tray has 3 cupcakes. How many cupcakes does the bakery have altogether?"]}},
+    question: {"a":30,"b":3,"op":"×","answer":90,"display":{"promptText":"Ethan stacked 30 trays. Each tray had 3 cupcakes. How many cupcakes did Ethan stack in total?"}},
   },
   {
     itemId: "multiplication-app-118",
@@ -1182,7 +1182,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":9,"op":"×","answer":99,"display":{"promptText":"11 shelves each hold 9 folders. How many folders in total?","promptOptions":["The office has 11 shelves. Each shelf holds 9 folders. How many folders does the office have in total?","Ms. Chen organized 11 shelves. Each shelf had 9 folders. How many folders did Ms. Chen organize altogether?"]}},
+    question: {"a":11,"b":9,"op":"×","answer":99,"display":{"promptText":"The office has 11 shelves. Each shelf holds 9 folders. How many folders does the office have in total?"}},
   },
   {
     itemId: "multiplication-app-119",
@@ -1192,7 +1192,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":9,"op":"×","answer":108,"display":{"promptText":"12 crates each hold 9 lemons. How many lemons in total?","promptOptions":["The farm has 12 crates. Each crate holds 9 lemons. How many lemons does the farm have in total?","Max stacked 12 crates. Each crate had 9 lemons. How many lemons did Max stack altogether?"]}},
+    question: {"a":12,"b":9,"op":"×","answer":108,"display":{"promptText":"The farm has 12 crates. Each crate holds 9 lemons. How many lemons does the farm have in total?"}},
   },
   {
     itemId: "multiplication-app-120",
@@ -1202,7 +1202,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":8,"op":"×","answer":120,"display":{"promptText":"15 boxes each hold 8 apples. How many apples in total?","promptOptions":["The store has 15 boxes. Each box holds 8 apples. How many apples does the store have in total?","Luis stacked 15 boxes. Each box had 8 apples. How many apples did Luis stack altogether?"]}},
+    question: {"a":15,"b":8,"op":"×","answer":120,"display":{"promptText":"The store has 15 boxes. Each box holds 8 apples. How many apples does the store have in total?"}},
   },
   {
     itemId: "multiplication-app-121",
@@ -1212,7 +1212,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":7,"op":"×","answer":140,"display":{"promptText":"20 racks each hold 7 jerseys. How many jerseys in total?","promptOptions":["Lily organized 20 racks. She put 7 jerseys on each rack. How many jerseys in total?","There are 20 racks. Each rack holds 7 jerseys. How many jerseys in total?"]}},
+    question: {"a":20,"b":7,"op":"×","answer":140,"display":{"promptText":"Lily organized 20 racks. She put 7 jerseys on each rack. How many jerseys in total?"}},
   },
   {
     itemId: "multiplication-app-122",
@@ -1222,7 +1222,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":6,"op":"×","answer":150,"display":{"promptText":"25 baskets each hold 6 apples. How many apples in total?","promptOptions":["Marcus filled 25 baskets. He put 6 apples in each basket. How many apples in total?","There are 25 baskets. Each basket holds 6 apples. How many apples in total?"]}},
+    question: {"a":25,"b":6,"op":"×","answer":150,"display":{"promptText":"Marcus filled 25 baskets. He put 6 apples in each basket. How many apples in total?"}},
   },
   {
     itemId: "multiplication-app-123",
@@ -1232,7 +1232,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":10,"op":"×","answer":100,"display":{"promptText":"Cells in a spreadsheet are in 10 rows of 10. How many cells?","promptOptions":["Alex planted flowers in 10 rows of 10. How many flowers did he plant?","A theater has 10 rows of 10 seats. How many seats are there?","A game board has 10 rows and 10 squares. How many squares does it have?"]}},
+    question: {"a":10,"b":10,"op":"×","answer":100,"display":{"promptText":"Alex planted flowers in 10 rows of 10. How many flowers did he plant?"}},
   },
   {
     itemId: "multiplication-app-124",
@@ -1242,7 +1242,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":6,"op":"×","answer":66,"display":{"promptText":"Chairs are in 11 rows of 6. How many chairs?","promptOptions":["The teacher arranged 11 rows of 6 desks in the classroom. How many desks are there?","A farmer planted 11 rows of 6 tomato plants. How many plants did he plant?","A theater has 11 rows of 6 seats. How many seats are there?"]}},
+    question: {"a":11,"b":6,"op":"×","answer":66,"display":{"promptText":"The teacher arranged 11 rows of 6 desks in the classroom. How many desks are there?"}},
   },
   {
     itemId: "multiplication-app-125",
@@ -1252,7 +1252,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":8,"op":"×","answer":96,"display":{"promptText":"Tiles are in 12 rows of 8. How many tiles?","promptOptions":["Emma arranged her tiles in 12 rows of 8. How many tiles does she have?","A parking lot has 12 rows of 8 spaces. How many spaces are there?","A hallway has 12 rows of 8 lockers. How many lockers are there?"]}},
+    question: {"a":12,"b":8,"op":"×","answer":96,"display":{"promptText":"Emma arranged her tiles in 12 rows of 8. How many tiles does she have?"}},
   },
   {
     itemId: "multiplication-app-126",
@@ -1262,7 +1262,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":9,"op":"×","answer":108,"display":{"promptText":"Lockers are in 12 rows of 9. How many lockers?","promptOptions":["Jake organized his cards in 12 rows of 9. How many cards did he organize?","A gym has 12 rows of 9 bleachers. How many bleacher seats are there?","A school has 12 rows of 9 lockers in the hallway. How many lockers are there?"]}},
+    question: {"a":12,"b":9,"op":"×","answer":108,"display":{"promptText":"Jake organized his cards in 12 rows of 9. How many cards did he organize?"}},
   },
   {
     itemId: "multiplication-app-127",
@@ -1272,7 +1272,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":5,"op":"×","answer":65,"display":{"promptText":"Pots are in 13 rows of 5. How many pots?","promptOptions":["A farmer planted vegetables in 13 rows of 5. How many plants did he plant?","A garden has 13 rows of 5 flowers. How many flowers are in the garden?","Maria arranged her beads in 13 rows of 5. How many beads does she have?"]}},
+    question: {"a":13,"b":5,"op":"×","answer":65,"display":{"promptText":"A farmer planted vegetables in 13 rows of 5. How many plants did he plant?"}},
   },
   {
     itemId: "multiplication-app-128",
@@ -1282,7 +1282,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":6,"op":"×","answer":84,"display":{"promptText":"Coins are in 14 rows of 6. How many coins?","promptOptions":["A bakery has 14 rows of 6 cookies on display. How many cookies are there?","The farmer planted crops in 14 rows of 6. How many plants did he plant?","A library shelf has 14 rows of 6 books. How many books are on the shelf?"]}},
+    question: {"a":14,"b":6,"op":"×","answer":84,"display":{"promptText":"A bakery has 14 rows of 6 cookies on display. How many cookies are there?"}},
   },
   {
     itemId: "multiplication-app-129",
@@ -1292,7 +1292,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":7,"op":"×","answer":105,"display":{"promptText":"Stamps are in 15 rows of 7. How many stamps?","promptOptions":["A concert hall has 15 rows of 7 seats. How many seats are there?","The farmer has 15 rows of 7 apple trees. How many trees does he have?","A garden has 15 rows of 7 vegetables. How many vegetables are growing?"]}},
+    question: {"a":15,"b":7,"op":"×","answer":105,"display":{"promptText":"A concert hall has 15 rows of 7 seats. How many seats are there?"}},
   },
   {
     itemId: "multiplication-app-130",
@@ -1302,7 +1302,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":5,"op":"×","answer":80,"display":{"promptText":"Stickers are in 16 rows of 5. How many stickers?","promptOptions":["Marco arranged his stickers in 16 rows of 5. How many stickers are there?","A field has 16 rows of 5 flowers planted. How many flowers are there?","A store has 16 rows of 5 shelves. How many shelves does it have?"]}},
+    question: {"a":16,"b":5,"op":"×","answer":80,"display":{"promptText":"Marco arranged his stickers in 16 rows of 5. How many stickers are there?"}},
   },
   {
     itemId: "multiplication-app-131",
@@ -1312,7 +1312,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":4,"op":"×","answer":72,"display":{"promptText":"Cards are in 18 rows of 4. How many cards?","promptOptions":["A library has 18 rows of 4 books on display. How many books are there?","A parking lot has 18 rows of 4 spaces. How many spaces are there?","A garden has 18 rows of 4 plants. How many plants are there?"]}},
+    question: {"a":18,"b":4,"op":"×","answer":72,"display":{"promptText":"A library has 18 rows of 4 books on display. How many books are there?"}},
   },
   {
     itemId: "multiplication-app-132",
@@ -1322,7 +1322,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":6,"op":"×","answer":120,"display":{"promptText":"Books are in 20 rows of 6. How many books?","promptOptions":["An auditorium has 20 rows of 6 seats. How many seats are in it?","A bakery display has 20 rows of 6 cookies. How many cookies are there?","A field has 20 rows of 6 flowers planted. How many flowers are there?"]}},
+    question: {"a":20,"b":6,"op":"×","answer":120,"display":{"promptText":"An auditorium has 20 rows of 6 seats. How many seats are in it?"}},
   },
   {
     itemId: "multiplication-app-133",
@@ -1332,7 +1332,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":8,"op":"×","answer":160,"display":{"promptText":"Seats are in 20 rows of 8. How many seats?","promptOptions":["A concert venue has 20 rows of 8 seats. How many seats are there?","A parking lot has 20 rows of 8 spaces. How many spaces are there?","A garden has 20 rows of 8 plants growing. How many plants are there?"]}},
+    question: {"a":20,"b":8,"op":"×","answer":160,"display":{"promptText":"A concert venue has 20 rows of 8 seats. How many seats are there?"}},
   },
   {
     itemId: "multiplication-app-134",
@@ -1342,7 +1342,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":5,"op":"×","answer":125,"display":{"promptText":"Windows are in 25 rows of 5. How many windows?","promptOptions":["A stadium has 25 rows of 5 seats. How many seats are there?","A farmer planted 25 rows of 5 trees. How many trees did he plant?","A theater has 25 rows of 5 chairs. How many chairs are there?"]}},
+    question: {"a":25,"b":5,"op":"×","answer":125,"display":{"promptText":"A stadium has 25 rows of 5 seats. How many seats are there?"}},
   },
   {
     itemId: "multiplication-app-135",
@@ -1352,7 +1352,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":11,"op":"×","answer":121,"display":{"promptText":"Tiles are in 11 rows of 11. How many tiles?","promptOptions":["Maya covered the wall with tiles in 11 rows of 11. How many tiles did she use?"]}},
+    question: {"a":11,"b":11,"op":"×","answer":121,"display":{"promptText":"Maya covered the wall with tiles in 11 rows of 11. How many tiles did she use?"}},
   },
   {
     itemId: "multiplication-app-136",
@@ -1362,7 +1362,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":11,"op":"×","answer":121,"display":{"promptText":"11 teams each have 11 players. How many players in total?","promptOptions":["Coach has 11 teams. Each team has 11 players. How many players in total?","There are 11 soccer teams. Each team has 11 players. How many players in total?"]}},
+    question: {"a":11,"b":11,"op":"×","answer":121,"display":{"promptText":"Coach has 11 teams. Each team has 11 players. How many players in total?"}},
   },
   {
     itemId: "multiplication-app-137",
@@ -1372,7 +1372,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":11,"op":"×","answer":132,"display":{"promptText":"12 boxes each hold 11 apples. How many apples in total?","promptOptions":["Mom packed 12 boxes. She put 11 apples in each box. How many apples in total?","There are 12 boxes. Each box holds 11 apples. How many apples in total?"]}},
+    question: {"a":12,"b":11,"op":"×","answer":132,"display":{"promptText":"Mom packed 12 boxes. She put 11 apples in each box. How many apples in total?"}},
   },
   {
     itemId: "multiplication-app-138",
@@ -1382,7 +1382,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"12 cartons each hold 12 eggs. How many eggs in total?","promptOptions":["Dad bought 12 cartons. Each carton has 12 eggs. How many eggs in total?","There are 12 cartons. Each carton holds 12 eggs. How many eggs in total?"]}},
+    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"Dad bought 12 cartons. Each carton has 12 eggs. How many eggs in total?"}},
   },
   {
     itemId: "multiplication-app-139",
@@ -1392,7 +1392,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":7,"op":"×","answer":91,"display":{"promptText":"13 teams each have 7 players. How many players in total?","promptOptions":["Coach formed 13 teams. Each team has 7 players. How many players in total?","There are 13 soccer teams. Each team has 7 players. How many players in total?"]}},
+    question: {"a":13,"b":7,"op":"×","answer":91,"display":{"promptText":"Coach formed 13 teams. Each team has 7 players. How many players in total?"}},
   },
   {
     itemId: "multiplication-app-140",
@@ -1402,7 +1402,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":8,"op":"×","answer":112,"display":{"promptText":"14 coaches each brought 8 whistles. How many whistles in total?","promptOptions":["There are 14 coaches. Each coach has 8 whistles. How many whistles in total?"]}},
+    question: {"a":14,"b":8,"op":"×","answer":112,"display":{"promptText":"There are 14 coaches. Each coach has 8 whistles. How many whistles in total?"}},
   },
   {
     itemId: "multiplication-app-141",
@@ -1412,7 +1412,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":9,"op":"×","answer":135,"display":{"promptText":"15 bags each hold 9 coins. How many coins in total?","promptOptions":["Sophia found 15 bags. Each bag held 9 coins. How many coins in total?","There are 15 bags. Each bag holds 9 coins. How many coins in total?"]}},
+    question: {"a":15,"b":9,"op":"×","answer":135,"display":{"promptText":"Sophia found 15 bags. Each bag held 9 coins. How many coins in total?"}},
   },
   {
     itemId: "multiplication-app-142",
@@ -1422,7 +1422,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":6,"op":"×","answer":108,"display":{"promptText":"18 trays each hold 6 donuts. How many donuts in total?","promptOptions":["The baker made 18 trays of donuts. Each tray has 6 donuts. How many donuts in total?","There are 18 trays. Each tray holds 6 donuts. How many donuts in total?"]}},
+    question: {"a":18,"b":6,"op":"×","answer":108,"display":{"promptText":"The baker made 18 trays of donuts. Each tray has 6 donuts. How many donuts in total?"}},
   },
   {
     itemId: "multiplication-app-143",
@@ -1432,7 +1432,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":22,"b":5,"op":"×","answer":110,"display":{"promptText":"22 vases each hold 5 daisies. How many daisies in total?","promptOptions":["Grandma arranged 22 vases. She put 5 daisies in each vase. How many daisies in total?","There are 22 vases. Each vase holds 5 daisies. How many daisies in total?"]}},
+    question: {"a":22,"b":5,"op":"×","answer":110,"display":{"promptText":"Grandma arranged 22 vases. She put 5 daisies in each vase. How many daisies in total?"}},
   },
   {
     itemId: "multiplication-app-144",
@@ -1442,7 +1442,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":24,"b":4,"op":"×","answer":96,"display":{"promptText":"24 boxes each hold 4 candles. How many candles in total?","promptOptions":["Elena packed 24 boxes. She put 4 candles in each box. How many candles in total?","There are 24 boxes. Each box holds 4 candles. How many candles in total?"]}},
+    question: {"a":24,"b":4,"op":"×","answer":96,"display":{"promptText":"Elena packed 24 boxes. She put 4 candles in each box. How many candles in total?"}},
   },
   {
     itemId: "multiplication-app-145",
@@ -1452,7 +1452,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":30,"b":5,"op":"×","answer":150,"display":{"promptText":"30 racks each hold 5 folders. How many folders in total?","promptOptions":["The library has 30 racks. Each rack holds 5 folders. How many folders in total?","There are 30 racks. Each rack displays 5 folders. How many folders in total?"]}},
+    question: {"a":30,"b":5,"op":"×","answer":150,"display":{"promptText":"The library has 30 racks. Each rack holds 5 folders. How many folders in total?"}},
   },
   {
     itemId: "multiplication-app-146",
@@ -1462,7 +1462,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":12,"op":"×","answer":108,"display":{"promptText":"9 classes each have 12 students. How many students in total?","promptOptions":["Maya's school has 9 classes. Each class has 12 students. How many students go to her school?","There are 9 tables in the lunch room. Each table has 12 seats. How many seats are there?","Jake has 9 packs of crayons. Each pack has 12 crayons. How many crayons does he have?"]}},
+    question: {"a":9,"b":12,"op":"×","answer":108,"display":{"promptText":"Maya's school has 9 classes. Each class has 12 students. How many students go to her school?"}},
   },
   {
     itemId: "multiplication-app-147",
@@ -1472,7 +1472,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":12,"op":"×","answer":120,"display":{"promptText":"10 choirs each have 12 singers. How many singers in total?","promptOptions":["There are 10 choirs in the competition. Each choir has 12 singers. How many singers are there?","Rosa has 10 toy boxes. Each box has 12 toy cars. How many toy cars does she have?","The garden has 10 flower beds. Each bed has 12 tulips. How many tulips are there?"]}},
+    question: {"a":10,"b":12,"op":"×","answer":120,"display":{"promptText":"There are 10 choirs in the competition. Each choir has 12 singers. How many singers are there?"}},
   },
   {
     itemId: "multiplication-app-148",
@@ -1482,7 +1482,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":10,"op":"×","answer":110,"display":{"promptText":"11 schools each have 10 buses. How many buses in total?","promptOptions":["There are 11 schools in the district. Each school has 10 buses. How many buses are there?","Sam's farm has 11 chicken coops. Each coop has 10 chickens. How many chickens does he have?","The grocery store has 11 shelves. Each shelf has 10 jars of jam. How many jars does it have?"]}},
+    question: {"a":11,"b":10,"op":"×","answer":110,"display":{"promptText":"There are 11 schools in the district. Each school has 10 buses. How many buses are there?"}},
   },
   {
     itemId: "multiplication-app-149",
@@ -1492,7 +1492,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":9,"op":"×","answer":144,"display":{"promptText":"16 teams each have 9 players. How many players in total?","promptOptions":["There are 16 soccer teams in the league. Each team has 9 players. How many players are there?","The bakery has 16 trays. Each tray has 9 muffins. How many muffins did they bake?","Marcus has 16 video games. Each game has 9 levels. How many levels does he have?"]}},
+    question: {"a":16,"b":9,"op":"×","answer":144,"display":{"promptText":"There are 16 soccer teams in the league. Each team has 9 players. How many players are there?"}},
   },
   {
     itemId: "multiplication-app-150",
@@ -1502,7 +1502,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Pia sees 2 ladybugs, each with 3 spots. How many spots in total?","promptOptions":["Pia sees 2 ladybugs. Each ladybug has 3 spots. How many spots does she see?","There are 2 flowers in Maya's pot. Each flower has 3 petals. How many petals are there?","Jake has 2 tricycles. Each tricycle has 3 wheels. How many wheels does he have?"]}},
+    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Pia sees 2 ladybugs. Each ladybug has 3 spots. How many spots does she see?"}},
   },
   {
     itemId: "multiplication-app-151",
@@ -1512,7 +1512,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"3 trees each have 3 apples. How many apples in total?","promptOptions":["The park has 3 trees. Each tree has 3 apples on it. How many apples are there?","Maya has 3 plates of cookies. Each plate has 3 cookies. How many cookies does she have?","There are 3 vases in the house. Each vase has 3 flowers. How many flowers are there?"]}},
+    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"The park has 3 trees. Each tree has 3 apples on it. How many apples are there?"}},
   },
   {
     itemId: "multiplication-app-152",
@@ -1522,7 +1522,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"4 plates each have 4 berries. How many berries in total?","promptOptions":["There are 4 plates on the table. Each plate has 4 berries. How many berries are there?","Rosa has 4 baskets. Each basket has 4 apples. How many apples does she have?","Jake's game has 4 levels. Each level has 4 coins. How many coins can he find?"]}},
+    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"There are 4 plates on the table. Each plate has 4 berries. How many berries are there?"}},
   },
   {
     itemId: "multiplication-app-153",
@@ -1532,7 +1532,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Tora sees 2 starfish, each with 5 arms. How many arms in total?","promptOptions":["Tora sees 2 starfish on the beach. Each starfish has 5 arms. How many arms does she see?","There are 2 trees by the house. Each tree has 5 birds. How many birds are there?","Maria has 2 toy spiders. Each spider has 5 legs. How many legs does she have?"]}},
+    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Tora sees 2 starfish on the beach. Each starfish has 5 arms. How many arms does she see?"}},
   },
   {
     itemId: "multiplication-app-154",
@@ -1542,7 +1542,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"3 dogs each wear 4 boots. How many boots in total?","promptOptions":["There are 3 dogs at the park. Each dog wears 4 boots. How many boots are there?","The toy store has 3 shelves. Each shelf has 4 toy cars. How many toy cars does it have?","Jake has 3 juice boxes. Each box has 4 straws. How many straws does he have?"]}},
+    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"There are 3 dogs at the park. Each dog wears 4 boots. How many boots are there?"}},
   },
   {
     itemId: "multiplication-app-155",
@@ -1552,7 +1552,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"5 bikes each have 3 bells. How many bells in total?","promptOptions":["There are 5 bikes in the garage. Each bike has 3 bells. How many bells are there?","Noah has 5 backpacks. Each backpack has 3 pockets. How many pockets does he have?","The candy shop has 5 jars on a shelf. Each jar has 3 candies. How many candies are there?"]}},
+    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"There are 5 bikes in the garage. Each bike has 3 bells. How many bells are there?"}},
   },
   {
     itemId: "multiplication-app-156",
@@ -1562,7 +1562,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"4 kids each bring 5 apple slices. How many slices in total?","promptOptions":["There are 4 kids at the picnic. Each kid brings 5 apple slices. How many slices are there in all?","Rosa has 4 fruit bowls. Each bowl has 5 grapes. How many grapes does she have?","The bakery has 4 baskets. Each basket has 5 rolls. How many rolls does it have?"]}},
+    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"There are 4 kids at the picnic. Each kid brings 5 apple slices. How many slices are there in all?"}},
   },
   {
     itemId: "multiplication-app-157",
@@ -1572,7 +1572,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"5 crates each have 4 oranges. How many oranges in total?","promptOptions":["There are 5 crates in the store. Each crate has 4 oranges. How many oranges are there?","Maya's garden has 5 rows of plants. Each row has 4 plants. How many plants are there?","The factory has 5 machines. Each machine makes 4 toys. How many toys does it make?"]}},
+    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"There are 5 crates in the store. Each crate has 4 oranges. How many oranges are there?"}},
   },
   {
     itemId: "multiplication-app-158",
@@ -1582,7 +1582,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Magnets are on the fridge in 2 rows of 5. How many magnets?","promptOptions":["Sam put magnets on the fridge in 2 rows of 5. How many magnets did he use?"]}},
+    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Sam put magnets on the fridge in 2 rows of 5. How many magnets did he use?"}},
   },
   {
     itemId: "multiplication-app-159",
@@ -1592,7 +1592,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Seedlings are in 3 rows of 4. How many seedlings?","promptOptions":["Luna planted seedlings in 3 rows with 4 in each row. How many seedlings did she plant?"]}},
+    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Luna planted seedlings in 3 rows with 4 in each row. How many seedlings did she plant?"}},
   },
   {
     itemId: "multiplication-app-160",
@@ -1602,7 +1602,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Strawberry plants are in 4 rows of 3. How many plants?","promptOptions":["Sofia planted strawberries in 4 rows of 3. How many plants did she plant?"]}},
+    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Sofia planted strawberries in 4 rows of 3. How many plants did she plant?"}},
   },
   {
     itemId: "multiplication-app-161",
@@ -1612,7 +1612,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"Juice boxes are in 5 rows of 4. How many juice boxes?","promptOptions":["Mia packed juice boxes in 5 rows with 4 boxes in each row. How many juice boxes did she pack?"]}},
+    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"Mia packed juice boxes in 5 rows with 4 boxes in each row. How many juice boxes did she pack?"}},
   },
   {
     itemId: "multiplication-app-162",
@@ -1622,7 +1622,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"Yogurt cups are in 4 rows of 5. How many yogurt cups?","promptOptions":["Yuki set out yogurt cups for the class in 4 rows of 5. How many yogurt cups did she set out?"]}},
+    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"Yuki set out yogurt cups for the class in 4 rows of 5. How many yogurt cups did she set out?"}},
   },
   {
     itemId: "multiplication-app-163",
@@ -1632,7 +1632,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Pictures hang in 3 rows of 3. How many pictures?","promptOptions":["Ava arranged pictures on the wall in 3 rows of 3. How many pictures did she hang?"]}},
+    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Ava arranged pictures on the wall in 3 rows of 3. How many pictures did she hang?"}},
   },
   {
     itemId: "multiplication-app-164",
@@ -1642,7 +1642,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"Party cups are in 5 rows of 5. How many cups?","promptOptions":["Leo arranged party cups in 5 rows of 5 on the table. How many cups did he use?"]}},
+    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"Leo arranged party cups in 5 rows of 5 on the table. How many cups did he use?"}},
   },
   {
     itemId: "multiplication-app-165",
@@ -1652,7 +1652,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"Hearts are drawn in 2 rows of 4. How many hearts?","promptOptions":["Emma drew hearts in 2 rows of 4. How many hearts did she draw?"]}},
+    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"Emma drew hearts in 2 rows of 4. How many hearts did she draw?"}},
   },
   {
     itemId: "multiplication-app-166",
@@ -1662,7 +1662,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"3 insects each have 2 antennae. How many antennae in total?","promptOptions":["Luna found 3 insects. Each had 2 antennae. How many antennae in total?","There are 3 insects in a garden. Each one has 2 antennae. How many antennae altogether?"]}},
+    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Luna found 3 insects. Each had 2 antennae. How many antennae in total?"}},
   },
   {
     itemId: "multiplication-app-167",
@@ -1672,7 +1672,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"2 sea stars each have 5 arms. How many arms in total?","promptOptions":["Maya found 2 sea stars. Each one had 5 arms. How many arms in total?","There are 2 sea stars in the tank. Each has 5 arms. How many arms altogether?","Luna counted 2 sea stars. Each had 5 arms. How many arms in total?"]}},
+    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Maya found 2 sea stars. Each one had 5 arms. How many arms in total?"}},
   },
   {
     itemId: "multiplication-app-168",
@@ -1682,7 +1682,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"4 kids each have 5 toes on each foot. How many toes in total?","promptOptions":["There are 4 kids at the park. Each one has 5 toes on one foot. How many toes altogether?","Luna looked at 4 kids. Each had 5 toes on one foot. How many toes in total?"]}},
+    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"There are 4 kids at the park. Each one has 5 toes on one foot. How many toes altogether?"}},
   },
   {
     itemId: "multiplication-app-169",
@@ -1692,7 +1692,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"5 triangles each have 3 sides. How many sides in total?","promptOptions":["Maya drew 5 triangles. Each one had 3 sides. How many sides in total?","Luna counted 5 triangles in a picture. Each had 3 sides. How many sides altogether?","There are 5 triangles. Each triangle has 3 sides. How many sides in total?"]}},
+    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"Maya drew 5 triangles. Each one had 3 sides. How many sides in total?"}},
   },
   {
     itemId: "multiplication-app-170",
@@ -1702,7 +1702,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"3 gloves each have 5 fingers. How many fingers in total?","promptOptions":["Maya has 3 gloves. Each glove has 5 fingers. How many fingers in total?","Luna picked up 3 gloves. Each one had 5 fingers. How many fingers altogether?","There are 3 gloves on the shelf. Each has 5 fingers. How many fingers in total?"]}},
+    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"Maya has 3 gloves. Each glove has 5 fingers. How many fingers in total?"}},
   },
   {
     itemId: "multiplication-app-171",
@@ -1712,7 +1712,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"4 tables each have 4 legs. How many legs in total?","promptOptions":["Maya counted 4 tables. Each table has 4 legs. How many legs in total?","There are 4 tables in the room. Each one has 4 legs. How many legs altogether?","Four tables stood in the classroom. Each had 4 legs. How many legs in total?"]}},
+    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"Maya counted 4 tables. Each table has 4 legs. How many legs in total?"}},
   },
   {
     itemId: "multiplication-app-172",
@@ -1722,7 +1722,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"5 starfish each have 5 arms. How many arms in total?","promptOptions":["Luna found 5 starfish. Each one had 5 arms. How many arms in total?","There are 5 starfish in the tank. Each has 5 arms. How many arms altogether?","Maya counted 5 starfish. Each had 5 arms. How many arms in total?"]}},
+    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"Luna found 5 starfish. Each one had 5 arms. How many arms in total?"}},
   },
   {
     itemId: "multiplication-app-173",
@@ -1732,7 +1732,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"4 tripods each have 3 legs. How many legs in total?","promptOptions":["Carlos has 4 tripods for cameras. Each one has 3 legs. How many legs in total?","Maya counted 4 tripods. Each tripod had 3 legs. How many legs altogether?","There are 4 tripods in the studio. Each has 3 legs. How many legs in total?"]}},
+    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Carlos has 4 tripods for cameras. Each one has 3 legs. How many legs in total?"}},
   },
   {
     itemId: "multiplication-app-174",
@@ -1742,7 +1742,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"6 crates each hold 6 bananas. How many bananas in total?","promptOptions":["Maria saw 6 crates of bananas. Each crate held 6 bananas. How many bananas in total?","There are 6 crates. Each one has 6 bananas. How many bananas altogether?","The store stacked 6 crates. Each held 6 bananas. How many bananas in total?"]}},
+    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"Maria saw 6 crates of bananas. Each crate held 6 bananas. How many bananas in total?"}},
   },
   {
     itemId: "multiplication-app-175",
@@ -1752,7 +1752,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"7 aquariums each have 6 fish. How many fish in total?","promptOptions":["Luna counted 7 aquariums. Each one had 6 fish. How many fish in total?","There are 7 aquariums at the pet store. Each has 6 fish. How many fish altogether?","The shop has 7 aquariums. Each holds 6 fish. How many fish in total?"]}},
+    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"Luna counted 7 aquariums. Each one had 6 fish. How many fish in total?"}},
   },
   {
     itemId: "multiplication-app-176",
@@ -1762,7 +1762,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":5,"op":"×","answer":40,"display":{"promptText":"8 punnets each hold 5 cherries. How many cherries in total?","promptOptions":["Mom bought 8 punnets of cherries. Each punnet held 5 cherries. How many cherries in total?","Luna counted 8 punnets. Each one had 5 cherries. How many cherries altogether?","There are 8 punnets at the market. Each has 5 cherries. How many cherries in total?"]}},
+    question: {"a":8,"b":5,"op":"×","answer":40,"display":{"promptText":"Mom bought 8 punnets of cherries. Each punnet held 5 cherries. How many cherries in total?"}},
   },
   {
     itemId: "multiplication-app-177",
@@ -1772,7 +1772,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"9 terrariums each have 5 plants. How many plants in total?","promptOptions":["Luna saw 9 terrariums. Each one had 5 plants. How many plants in total?","There are 9 terrariums. Each terrarium has 5 plants. How many plants altogether?","The garden shop has 9 terrariums. Each holds 5 plants. How many plants in total?"]}},
+    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"Luna saw 9 terrariums. Each one had 5 plants. How many plants in total?"}},
   },
   {
     itemId: "multiplication-app-178",
@@ -1782,7 +1782,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":7,"op":"×","answer":42,"display":{"promptText":"6 coaches each have 7 players. How many players in total?","promptOptions":["There are 6 soccer teams at the tournament. Each team has 7 players. How many players altogether?","Coach Juan has 6 teams. Each team has 7 players. How many players does he coach?"]}},
+    question: {"a":6,"b":7,"op":"×","answer":42,"display":{"promptText":"There are 6 soccer teams at the tournament. Each team has 7 players. How many players altogether?"}},
   },
   {
     itemId: "multiplication-app-179",
@@ -1792,7 +1792,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"7 tents each hold 8 scouts. How many scouts in total?","promptOptions":["There are 7 tents at scout camp. Each tent holds 8 scouts. How many scouts are camping?","Scout Leader Taj sets up 7 tents. Each tent sleeps 8 scouts. How many scouts in total?"]}},
+    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"There are 7 tents at scout camp. Each tent holds 8 scouts. How many scouts are camping?"}},
   },
   {
     itemId: "multiplication-app-180",
@@ -1802,7 +1802,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":9,"op":"×","answer":72,"display":{"promptText":"8 cabins each sleep 9 campers. How many campers in total?","promptOptions":["There are 8 cabins at summer camp. Each cabin sleeps 9 campers. How many campers are at camp?","The camp has 8 cabins. Each cabin has 9 children sleeping. How many children in total?"]}},
+    question: {"a":8,"b":9,"op":"×","answer":72,"display":{"promptText":"There are 8 cabins at summer camp. Each cabin sleeps 9 campers. How many campers are at camp?"}},
   },
   {
     itemId: "multiplication-app-181",
@@ -1812,7 +1812,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"9 music stands each hold 6 pieces. How many pieces in total?","promptOptions":["There are 9 music stands in the band room. Each stand holds 6 pieces. How many pieces in total?","Mrs. Lee puts out 9 music stands. Each stand has 6 pieces of music. How many pieces altogether?"]}},
+    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"There are 9 music stands in the band room. Each stand holds 6 pieces. How many pieces in total?"}},
   },
   {
     itemId: "multiplication-app-182",
@@ -1822,7 +1822,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":7,"op":"×","answer":42,"display":{"promptText":"Cupcakes are in 6 rows of 7. How many cupcakes?","promptOptions":["Lily arranged cupcakes in 6 rows of 7. How many cupcakes did she arrange?"]}},
+    question: {"a":6,"b":7,"op":"×","answer":42,"display":{"promptText":"Lily arranged cupcakes in 6 rows of 7. How many cupcakes did she arrange?"}},
   },
   {
     itemId: "multiplication-app-183",
@@ -1832,7 +1832,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"Postcards are in 7 rows of 6. How many postcards?","promptOptions":["Mr. Lee arranged postcards in 7 rows of 6. How many postcards did he have?"]}},
+    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"Mr. Lee arranged postcards in 7 rows of 6. How many postcards did he have?"}},
   },
   {
     itemId: "multiplication-app-184",
@@ -1842,7 +1842,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"Trading cards are in 7 rows of 7. How many cards?","promptOptions":["Miguel arranged his trading cards in 7 rows of 7. How many cards does he have?"]}},
+    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"Miguel arranged his trading cards in 7 rows of 7. How many cards does he have?"}},
   },
   {
     itemId: "multiplication-app-185",
@@ -1852,7 +1852,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"Chocolates are in 8 rows of 6. How many chocolates?","promptOptions":["Josh put chocolates in 8 rows of 6. How many chocolates did he put?","Maria arranged her chocolates in 8 rows with 6 in each row. How many chocolates did she arrange?","Leo sorted 8 rows of chocolates with 6 in each row. How many chocolates did Leo sort?"]}},
+    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"Josh put chocolates in 8 rows of 6. How many chocolates did he put?"}},
   },
   {
     itemId: "multiplication-app-186",
@@ -1862,7 +1862,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"Puzzles are in 8 rows of 7. How many pieces?","promptOptions":["Josh put puzzle pieces in 8 rows of 7. How many puzzle pieces did he put?","Maria arranged 8 rows of puzzle pieces with 7 in each row. How many pieces did she arrange?"]}},
+    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"Josh put puzzle pieces in 8 rows of 7. How many puzzle pieces did he put?"}},
   },
   {
     itemId: "multiplication-app-187",
@@ -1872,7 +1872,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"Flashcards are in 9 rows of 5. How many flashcards?","promptOptions":["Maria made 9 rows of flashcards with 5 cards in each row. How many flashcards did she make?","Josh organized 9 rows of flashcards with 5 in each row. How many flashcards did Josh organize?","Leo sorted 9 rows of flashcards with 5 cards per row. How many flashcards did Leo sort?"]}},
+    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"Maria made 9 rows of flashcards with 5 cards in each row. How many flashcards did she make?"}},
   },
   {
     itemId: "multiplication-app-188",
@@ -1882,7 +1882,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"Beads are in 9 rows of 6. How many beads?","promptOptions":["Maria strung beads into 9 rows with 6 beads in each row. How many beads did she string?","Josh arranged 9 rows of beads with 6 in each row. How many beads did Josh arrange?","Leo lined up 9 rows of beads with 6 beads per row. How many beads did Leo line up?"]}},
+    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"Maria strung beads into 9 rows with 6 beads in each row. How many beads did she string?"}},
   },
   {
     itemId: "multiplication-app-189",
@@ -1892,7 +1892,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"Clay figures are in 6 rows of 8. How many figures?","promptOptions":["Maria arranged 6 rows of clay figures with 8 in each row. How many figures did she arrange?"]}},
+    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"Maria arranged 6 rows of clay figures with 8 in each row. How many figures did she arrange?"}},
   },
   {
     itemId: "multiplication-app-190",
@@ -1902,7 +1902,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"Shells are in 6 rows of 9. How many shells?","promptOptions":["Maria arranged 6 rows of shells with 9 shells in each row. How many shells did she arrange?","Josh displayed 6 rows of shells with 9 in each row. How many shells did Josh display?","Leo collected 6 rows of shells with 9 shells per row. How many shells did Leo collect?"]}},
+    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"Maria arranged 6 rows of shells with 9 shells in each row. How many shells did she arrange?"}},
   },
   {
     itemId: "multiplication-app-191",
@@ -1912,7 +1912,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"Envelopes are in 7 rows of 8. How many envelopes?","promptOptions":["Josh stacked 7 rows of envelopes with 8 in each row. How many envelopes did he stack?","Maria organized 7 rows of envelopes with 8 in each row. How many envelopes did she organize?","Leo sorted 7 rows of envelopes with 8 per row. How many envelopes did Leo sort?"]}},
+    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"Josh stacked 7 rows of envelopes with 8 in each row. How many envelopes did he stack?"}},
   },
   {
     itemId: "multiplication-app-192",
@@ -1922,7 +1922,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":9,"op":"×","answer":63,"display":{"promptText":"Balloons are in 7 rows of 9. How many balloons?","promptOptions":["Maria tied 7 rows of balloons with 9 balloons in each row. How many balloons did she tie?","Josh grouped 7 rows of balloons with 9 in each row. How many balloons did Josh group?"]}},
+    question: {"a":7,"b":9,"op":"×","answer":63,"display":{"promptText":"Maria tied 7 rows of balloons with 9 balloons in each row. How many balloons did she tie?"}},
   },
   {
     itemId: "multiplication-app-193",
@@ -1932,7 +1932,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":8,"op":"×","answer":64,"display":{"promptText":"Tiles are in 8 rows of 8. How many tiles?","promptOptions":["Josh laid 8 rows of tiles with 8 tiles in each row. How many tiles did he lay?","Maria arranged 8 rows of tiles with 8 in each row. How many tiles did she arrange?","Leo placed 8 rows of tiles with 8 tiles per row. How many tiles did Leo place?"]}},
+    question: {"a":8,"b":8,"op":"×","answer":64,"display":{"promptText":"Josh laid 8 rows of tiles with 8 tiles in each row. How many tiles did he lay?"}},
   },
   {
     itemId: "multiplication-app-194",
@@ -1942,7 +1942,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":6,"op":"×","answer":18,"display":{"promptText":"3 patrols each have 6 scouts. How many scouts in total?","promptOptions":["There are 3 scout patrols. Each patrol has 6 scouts. How many scouts in total?","The scout group has 3 patrols. Each patrol has 6 scouts. How many scouts altogether?"]}},
+    question: {"a":3,"b":6,"op":"×","answer":18,"display":{"promptText":"There are 3 scout patrols. Each patrol has 6 scouts. How many scouts in total?"}},
   },
   {
     itemId: "multiplication-app-195",
@@ -1952,7 +1952,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":7,"op":"×","answer":21,"display":{"promptText":"3 bookshelves each hold 7 novels. How many novels in total?","promptOptions":["There are 3 bookshelves in the library. Each shelf has 7 novels. How many novels in total?","The librarian fills 3 shelves. Each shelf holds 7 novels. How many novels altogether?"]}},
+    question: {"a":3,"b":7,"op":"×","answer":21,"display":{"promptText":"There are 3 bookshelves in the library. Each shelf has 7 novels. How many novels in total?"}},
   },
   {
     itemId: "multiplication-app-196",
@@ -1962,7 +1962,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":7,"op":"×","answer":28,"display":{"promptText":"4 classrooms each have 7 windows. How many windows in total?","promptOptions":["There are 4 classrooms on this hallway. Each classroom has 7 windows. How many windows altogether?","The school has 4 classrooms on this floor. Each has 7 windows. How many windows in total?"]}},
+    question: {"a":4,"b":7,"op":"×","answer":28,"display":{"promptText":"There are 4 classrooms on this hallway. Each classroom has 7 windows. How many windows altogether?"}},
   },
   {
     itemId: "multiplication-app-197",
@@ -1972,7 +1972,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":8,"op":"×","answer":32,"display":{"promptText":"4 pouches each hold 8 marbles. How many marbles in total?","promptOptions":["Sam has 4 pouches of marbles. Each pouch holds 8 marbles. How many marbles does Sam have?","There are 4 bags with marbles. Each bag has 8 marbles. How many marbles in total?"]}},
+    question: {"a":4,"b":8,"op":"×","answer":32,"display":{"promptText":"Sam has 4 pouches of marbles. Each pouch holds 8 marbles. How many marbles does Sam have?"}},
   },
   {
     itemId: "multiplication-app-198",
@@ -1982,7 +1982,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":6,"op":"×","answer":30,"display":{"promptText":"5 vases each hold 6 daffodils. How many daffodils in total?","promptOptions":["Mom puts flowers in 5 vases. Each vase has 6 daffodils. How many daffodils in total?","There are 5 vases on the table. Each vase holds 6 daffodils. How many daffodils altogether?"]}},
+    question: {"a":5,"b":6,"op":"×","answer":30,"display":{"promptText":"Mom puts flowers in 5 vases. Each vase has 6 daffodils. How many daffodils in total?"}},
   },
   {
     itemId: "multiplication-app-199",
@@ -1992,7 +1992,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":7,"op":"×","answer":35,"display":{"promptText":"5 tanks each hold 7 turtles. How many turtles in total?","promptOptions":["The pet shop has 5 fish tanks. Each tank has 7 turtles. How many turtles does the shop have?","There are 5 turtle tanks in the classroom. Each tank holds 7 turtles. How many turtles in total?"]}},
+    question: {"a":5,"b":7,"op":"×","answer":35,"display":{"promptText":"The pet shop has 5 fish tanks. Each tank has 7 turtles. How many turtles does the shop have?"}},
   },
   {
     itemId: "multiplication-app-200",
@@ -2002,7 +2002,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":8,"op":"×","answer":40,"display":{"promptText":"5 fleets each have 8 boats. How many boats in total?","promptOptions":["The harbor has 5 fishing fleets. Each fleet has 8 boats. How many boats are in the harbor?","There are 5 boat fleets at the dock. Each fleet has 8 boats. How many boats in total?"]}},
+    question: {"a":5,"b":8,"op":"×","answer":40,"display":{"promptText":"The harbor has 5 fishing fleets. Each fleet has 8 boats. How many boats are in the harbor?"}},
   },
   {
     itemId: "multiplication-app-201",
@@ -2012,7 +2012,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":9,"op":"×","answer":45,"display":{"promptText":"5 orchards each have 9 trees. How many trees in total?","promptOptions":["The farmer has 5 apple orchards. Each orchard has 9 trees. How many apple trees does he have?","There are 5 orchards on the farm. Each orchard has 9 trees. How many trees in total?"]}},
+    question: {"a":5,"b":9,"op":"×","answer":45,"display":{"promptText":"The farmer has 5 apple orchards. Each orchard has 9 trees. How many apple trees does he have?"}},
   },
   {
     itemId: "multiplication-app-202",
@@ -2022,7 +2022,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":5,"op":"×","answer":30,"display":{"promptText":"6 crates each hold 5 pumpkins. How many pumpkins in total?","promptOptions":["Omar packed 6 crates. He put 5 pumpkins in each crate. How many pumpkins did Omar pack?","A farmer had 6 crates. Each crate held 5 pumpkins. How many pumpkins did the farmer have?","There are 6 crates with pumpkins. Each crate has 5 pumpkins. How many pumpkins are there?"]}},
+    question: {"a":6,"b":5,"op":"×","answer":30,"display":{"promptText":"Omar packed 6 crates. He put 5 pumpkins in each crate. How many pumpkins did Omar pack?"}},
   },
   {
     itemId: "multiplication-app-203",
@@ -2032,7 +2032,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":5,"op":"×","answer":35,"display":{"promptText":"7 coops each hold 5 hens. How many hens in total?","promptOptions":["Maya has 7 chicken coops. Each coop has 5 hens. How many hens does Maya have altogether?","A farmer kept 7 coops. Each coop held 5 hens. How many hens did the farmer keep?","There are 7 coops. Each coop has 5 hens. How many hens are there altogether?"]}},
+    question: {"a":7,"b":5,"op":"×","answer":35,"display":{"promptText":"Maya has 7 chicken coops. Each coop has 5 hens. How many hens does Maya have altogether?"}},
   },
   {
     itemId: "multiplication-app-204",
@@ -2042,7 +2042,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":5,"op":"×","answer":40,"display":{"promptText":"8 racks each hold 5 umbrellas. How many umbrellas in total?","promptOptions":["A store has 8 racks. Each rack holds 5 umbrellas. How many umbrellas does the store have?","Maya organized 8 racks of umbrellas. Each rack has 5 umbrellas. How many umbrellas did Maya organize?","There are 8 racks. Each one has 5 umbrellas. How many umbrellas are there altogether?"]}},
+    question: {"a":8,"b":5,"op":"×","answer":40,"display":{"promptText":"A store has 8 racks. Each rack holds 5 umbrellas. How many umbrellas does the store have?"}},
   },
   {
     itemId: "multiplication-app-205",
@@ -2052,7 +2052,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"9 bouquets each have 5 roses. How many roses in total?","promptOptions":["A florist made 9 bouquets. Each bouquet has 5 roses. How many roses did the florist make?","Maya arranged 9 bouquets of roses. Each bouquet has 5 roses in it. How many roses did Maya arrange?","There are 9 bouquets. Each bouquet has 5 roses. How many roses are there altogether?"]}},
+    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"A florist made 9 bouquets. Each bouquet has 5 roses. How many roses did the florist make?"}},
   },
   {
     itemId: "multiplication-app-206",
@@ -2062,7 +2062,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":4,"op":"×","answer":36,"display":{"promptText":"9 canoes each hold 4 paddlers. How many paddlers in total?","promptOptions":["There are 9 canoes at the lake. Each canoe has 4 paddlers in it. How many paddlers are there altogether?","A camp prepared 9 canoes. Each canoe holds 4 paddlers. How many paddlers were needed?","Omar loaded 9 canoes. Each canoe holds 4 paddlers. How many paddlers are there altogether?"]}},
+    question: {"a":9,"b":4,"op":"×","answer":36,"display":{"promptText":"There are 9 canoes at the lake. Each canoe has 4 paddlers in it. How many paddlers are there altogether?"}},
   },
   {
     itemId: "multiplication-app-207",
@@ -2072,7 +2072,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":6,"op":"×","answer":60,"display":{"promptText":"10 lockers each contain 6 books. How many books in total?","promptOptions":["A library has 10 lockers. Each locker holds 6 books. How many books does the library have?","Maya organized 10 lockers of books. Each locker has 6 books in it. How many books did Maya organize?","There are 10 lockers. Each one holds 6 books. How many books are there altogether?"]}},
+    question: {"a":10,"b":6,"op":"×","answer":60,"display":{"promptText":"A library has 10 lockers. Each locker holds 6 books. How many books does the library have?"}},
   },
   {
     itemId: "multiplication-app-208",
@@ -2082,7 +2082,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":5,"op":"×","answer":55,"display":{"promptText":"11 crates each hold 5 melons. How many melons in total?","promptOptions":["A farmer picked 11 crates of melons. Each crate holds 5 melons. How many melons did the farmer pick?","There are 11 crates at the market. Each crate has 5 melons. How many melons are there altogether?","A stand has 11 crates. Each crate holds 5 melons. How many melons are at the stand?"]}},
+    question: {"a":11,"b":5,"op":"×","answer":55,"display":{"promptText":"A farmer picked 11 crates of melons. Each crate holds 5 melons. How many melons did the farmer pick?"}},
   },
   {
     itemId: "multiplication-app-209",
@@ -2092,7 +2092,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":7,"op":"×","answer":77,"display":{"promptText":"11 buses each carry 7 hikers. How many hikers in total?","promptOptions":["An outdoor club organized a trip with 11 buses. Each bus carried 7 hikers. How many hikers went altogether?","11 buses arrived at the trail. Each bus had 7 hikers in it. How many hikers were there altogether?","A camp sent 11 buses to the mountains. Each bus holds 7 hikers. How many hikers went?"]}},
+    question: {"a":11,"b":7,"op":"×","answer":77,"display":{"promptText":"An outdoor club organized a trip with 11 buses. Each bus carried 7 hikers. How many hikers went altogether?"}},
   },
   {
     itemId: "multiplication-app-210",
@@ -2102,7 +2102,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":6,"op":"×","answer":72,"display":{"promptText":"12 rows each have 6 seats. How many seats in total?","promptOptions":["A theater has 12 rows. Each row has 6 seats. How many seats are in the theater?","Maria looked at a theater with 12 rows. Each row has 6 seats. How many seats are there altogether?","There are 12 rows of seats. Each row holds 6 seats. How many seats does the theater have?"]}},
+    question: {"a":12,"b":6,"op":"×","answer":72,"display":{"promptText":"A theater has 12 rows. Each row has 6 seats. How many seats are in the theater?"}},
   },
   {
     itemId: "multiplication-app-211",
@@ -2112,7 +2112,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":8,"op":"×","answer":96,"display":{"promptText":"12 pallets each hold 8 boxes. How many boxes in total?","promptOptions":["A warehouse has 12 pallets. Each pallet holds 8 boxes. How many boxes are in the warehouse?","Workers loaded 12 pallets. Each pallet has 8 boxes on it. How many boxes did they load?","There are 12 pallets. Each one holds 8 boxes. How many boxes are there altogether?"]}},
+    question: {"a":12,"b":8,"op":"×","answer":96,"display":{"promptText":"A warehouse has 12 pallets. Each pallet holds 8 boxes. How many boxes are in the warehouse?"}},
   },
   {
     itemId: "multiplication-app-212",
@@ -2122,7 +2122,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":6,"op":"×","answer":78,"display":{"promptText":"13 shelves each hold 6 jars. How many jars in total?","promptOptions":["A store has 13 shelves. Each shelf holds 6 jars. How many jars does the store have?","Maya stocked 13 shelves with jars. Each shelf has 6 jars. How many jars did Maya stock?","There are 13 shelves. Each one has 6 jars on it. How many jars are there altogether?"]}},
+    question: {"a":13,"b":6,"op":"×","answer":78,"display":{"promptText":"A store has 13 shelves. Each shelf holds 6 jars. How many jars does the store have?"}},
   },
   {
     itemId: "multiplication-app-213",
@@ -2132,7 +2132,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":6,"op":"×","answer":84,"display":{"promptText":"14 crates each hold 6 oranges. How many oranges in total?","promptOptions":["A farmer has 14 crates. Each crate holds 6 oranges. How many oranges does the farmer have?","A market packed 14 crates of oranges. Each crate has 6 oranges. How many oranges did they pack?","There are 14 crates. Each one holds 6 oranges. How many oranges are there altogether?"]}},
+    question: {"a":14,"b":6,"op":"×","answer":84,"display":{"promptText":"A farmer has 14 crates. Each crate holds 6 oranges. How many oranges does the farmer have?"}},
   },
   {
     itemId: "multiplication-app-214",
@@ -2142,7 +2142,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":7,"op":"×","answer":105,"display":{"promptText":"15 classes each have 7 students. How many students in total?","promptOptions":["Mr. Lee's school has 15 classrooms. Each classroom has 7 students. How many students are in Mr. Lee's school?","There are 15 soccer teams in the league. Each team has 7 players. How many players are in the league altogether?","Sara put stickers on 15 pages in her notebook. She put 7 stickers on each page. How many stickers did Sara use in total?"]}},
+    question: {"a":15,"b":7,"op":"×","answer":105,"display":{"promptText":"Mr. Lee's school has 15 classrooms. Each classroom has 7 students. How many students are in Mr. Lee's school?"}},
   },
   {
     itemId: "multiplication-app-215",
@@ -2152,7 +2152,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":11,"op":"×","answer":110,"display":{"promptText":"Tiles are in 10 rows of 11. How many tiles?","promptOptions":["Maria laid 10 rows of tiles with 11 tiles in each row. How many tiles did she lay?","Josh arranged 10 rows of tiles with 11 in each row. How many tiles did Josh arrange?","Leo placed 10 rows of tiles with 11 tiles per row. How many tiles did Leo place?"]}},
+    question: {"a":10,"b":11,"op":"×","answer":110,"display":{"promptText":"Maria laid 10 rows of tiles with 11 tiles in each row. How many tiles did she lay?"}},
   },
   {
     itemId: "multiplication-app-216",
@@ -2162,7 +2162,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":12,"op":"×","answer":120,"display":{"promptText":"Panels are in 10 rows of 12. How many panels?","promptOptions":["Josh installed 10 rows of panels with 12 in each row. How many panels did he install?","Maria arranged 10 rows of panels with 12 panels in each row. How many panels did she arrange?","Leo put up 10 rows of panels with 12 panels per row. How many panels did Leo put up?"]}},
+    question: {"a":10,"b":12,"op":"×","answer":120,"display":{"promptText":"Josh installed 10 rows of panels with 12 in each row. How many panels did he install?"}},
   },
   {
     itemId: "multiplication-app-217",
@@ -2172,7 +2172,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":10,"op":"×","answer":110,"display":{"promptText":"Cupcakes are in 11 rows of 10. How many cupcakes?","promptOptions":["Maria arranged 11 rows of cupcakes with 10 in each row. How many cupcakes did she arrange?","Josh made 11 rows of cupcakes with 10 cupcakes in each row. How many cupcakes did Josh make?","Leo decorated 11 rows with 10 cupcakes per row. How many cupcakes did Leo decorate?"]}},
+    question: {"a":11,"b":10,"op":"×","answer":110,"display":{"promptText":"Maria arranged 11 rows of cupcakes with 10 in each row. How many cupcakes did she arrange?"}},
   },
   {
     itemId: "multiplication-app-218",
@@ -2182,7 +2182,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":11,"op":"×","answer":132,"display":{"promptText":"Windows are in 12 rows of 11. How many windows?","promptOptions":["The manager counted windows on the building. They were in 12 rows of 11. How many windows did the manager count?","Mr. Park saw windows arranged in 12 rows on his office building. Each row had 11 windows. How many windows did Mr. Park see?","Windows line a building in 12 rows of 11. How many windows are there?"]}},
+    question: {"a":12,"b":11,"op":"×","answer":132,"display":{"promptText":"The manager counted windows on the building. They were in 12 rows of 11. How many windows did the manager count?"}},
   },
   {
     itemId: "multiplication-app-219",
@@ -2192,7 +2192,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"A parking lot has 12 rows of 12 cars. How many cars?","promptOptions":["Jake counted cars in the parking lot. They were in 12 rows of 12. How many cars did Jake count?","A parking lot has 12 rows of cars. Each row has 12 cars. How many cars fit in the lot?","Maria looked at cars in the parking lot in 12 rows of 12. How many cars did Maria see?"]}},
+    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"Jake counted cars in the parking lot. They were in 12 rows of 12. How many cars did Jake count?"}},
   },
   {
     itemId: "multiplication-app-220",
@@ -2202,7 +2202,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":6,"op":"×","answer":78,"display":{"promptText":"Cans are in 13 rows of 6. How many cans?","promptOptions":["A store worker stacked cans in 13 rows. Each row had 6 cans. How many cans did the worker stack?","The manager counted cans in 13 rows of 6. How many cans did the manager count?","Cans sit on a shelf in 13 rows of 6. How many cans are on the shelf?"]}},
+    question: {"a":13,"b":6,"op":"×","answer":78,"display":{"promptText":"A store worker stacked cans in 13 rows. Each row had 6 cans. How many cans did the worker stack?"}},
   },
   {
     itemId: "multiplication-app-221",
@@ -2212,7 +2212,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":5,"op":"×","answer":70,"display":{"promptText":"Ornaments are in 14 rows of 5. How many ornaments?","promptOptions":["A store worker hung ornaments in 14 rows. Each row had 5 ornaments. How many ornaments did the worker hang?","Maria counted ornaments in 14 rows of 5. How many ornaments did Maria count?","The Christmas display has ornaments in 14 rows of 5. How many ornaments are in the display?"]}},
+    question: {"a":14,"b":5,"op":"×","answer":70,"display":{"promptText":"A store worker hung ornaments in 14 rows. Each row had 5 ornaments. How many ornaments did the worker hang?"}},
   },
   {
     itemId: "multiplication-app-222",
@@ -2222,7 +2222,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":6,"op":"×","answer":90,"display":{"promptText":"Bricks are in 15 rows of 6. How many bricks?","promptOptions":["A builder stacked bricks in 15 rows. Each row had 6 bricks. How many bricks did the builder stack?","Bricks are arranged in 15 rows on the wall with 6 bricks in each. How many bricks are there?","A wall is made of bricks in 15 rows of 6. How many bricks make up the wall?"]}},
+    question: {"a":15,"b":6,"op":"×","answer":90,"display":{"promptText":"A builder stacked bricks in 15 rows. Each row had 6 bricks. How many bricks did the builder stack?"}},
   },
   {
     itemId: "multiplication-app-223",
@@ -2232,7 +2232,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":7,"op":"×","answer":112,"display":{"promptText":"Chairs are in 16 rows of 7. How many chairs?","promptOptions":["A teacher set up chairs in the gym in 16 rows. Each row had 7 chairs. How many chairs did the teacher set up?","Workers arranged 16 rows of chairs with 7 chairs in each for the assembly. How many chairs did they arrange?","The auditorium has seats in 16 rows of 7. How many seats does the auditorium have?"]}},
+    question: {"a":16,"b":7,"op":"×","answer":112,"display":{"promptText":"A teacher set up chairs in the gym in 16 rows. Each row had 7 chairs. How many chairs did the teacher set up?"}},
   },
   {
     itemId: "multiplication-app-224",
@@ -2242,7 +2242,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":17,"b":5,"op":"×","answer":85,"display":{"promptText":"Lights are in 17 rows of 5. How many lights?","promptOptions":["A manager counted lights on the ceiling in 17 rows of 5. How many lights did the manager count?","Lights hang in 17 rows above the stage with 5 lights in each. How many lights are there?","The theater has lights arranged in 17 rows of 5. How many lights does the theater have?"]}},
+    question: {"a":17,"b":5,"op":"×","answer":85,"display":{"promptText":"A manager counted lights on the ceiling in 17 rows of 5. How many lights did the manager count?"}},
   },
   {
     itemId: "multiplication-app-225",
@@ -2252,7 +2252,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":19,"b":4,"op":"×","answer":76,"display":{"promptText":"Posters are in 19 rows of 4. How many posters?","promptOptions":["The principal hung posters in the hallway in 19 rows. Each row had 4 posters. How many posters did the principal hang?","Posters line the school wall in 19 rows of 4. How many posters are there?","A hallway has posters on the wall in 19 rows of 4. How many posters are in the hallway?"]}},
+    question: {"a":19,"b":4,"op":"×","answer":76,"display":{"promptText":"The principal hung posters in the hallway in 19 rows. Each row had 4 posters. How many posters did the principal hang?"}},
   },
   {
     itemId: "multiplication-app-226",
@@ -2262,7 +2262,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":10,"op":"×","answer":200,"display":{"promptText":"Seats are in 20 rows of 10. How many seats?","promptOptions":["A movie theater has seats arranged in 20 rows. Each row has 10 seats. How many seats does the theater have?","The stadium manager counted seats in 20 rows of 10. How many seats did the manager count?","A concert hall has 20 rows of 10 seats. How many seats are in the hall?"]}},
+    question: {"a":20,"b":10,"op":"×","answer":200,"display":{"promptText":"A movie theater has seats arranged in 20 rows. Each row has 10 seats. How many seats does the theater have?"}},
   },
   {
     itemId: "multiplication-app-227",
@@ -2272,7 +2272,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":10,"op":"×","answer":100,"display":{"promptText":"10 clubs each have 10 members. How many members in total?","promptOptions":["There are 10 sports clubs at school. Each club has 10 members. How many kids are in the clubs altogether?","Josh packed 10 boxes of toys. He put 10 toys in each box. How many toys did Josh pack in total?","The baker made 10 pies. She put 10 berries on each pie. How many berries did she use in total?"]}},
+    question: {"a":10,"b":10,"op":"×","answer":100,"display":{"promptText":"There are 10 sports clubs at school. Each club has 10 members. How many kids are in the clubs altogether?"}},
   },
   {
     itemId: "multiplication-app-228",
@@ -2282,7 +2282,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":8,"op":"×","answer":88,"display":{"promptText":"11 vans each carry 8 passengers. How many passengers in total?","promptOptions":["A camp is taking 11 vans on a field trip. Each van holds 8 kids. How many kids are going on the field trip?","The farmer loaded 11 trucks with hay bales. Each truck holds 8 bales. How many bales did the farmer load in total?","There are 11 parking spots at the school. Each spot can fit 8 bicycles. How many bicycles can park there in total?"]}},
+    question: {"a":11,"b":8,"op":"×","answer":88,"display":{"promptText":"A camp is taking 11 vans on a field trip. Each van holds 8 kids. How many kids are going on the field trip?"}},
   },
   {
     itemId: "multiplication-app-229",
@@ -2292,7 +2292,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":6,"op":"×","answer":72,"display":{"promptText":"12 groups each have 6 members. How many members in total?","promptOptions":["A tour company has 12 tour groups. Each group has 6 people. How many people are going on tours in total?","Mom is planting 12 flower beds. She will plant 6 flowers in each bed. How many flowers will Mom plant in total?","The restaurant has 12 tables. Each table can seat 6 people. How many people can eat at the restaurant?"]}},
+    question: {"a":12,"b":6,"op":"×","answer":72,"display":{"promptText":"A tour company has 12 tour groups. Each group has 6 people. How many people are going on tours in total?"}},
   },
   {
     itemId: "multiplication-app-230",
@@ -2302,7 +2302,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":7,"op":"×","answer":84,"display":{"promptText":"12 ensembles each have 7 musicians. How many musicians in total?","promptOptions":["A music teacher has 12 student bands. Each band has 7 musicians. How many musicians are there in total?","The school is organizing 12 singing groups. Each group has 7 singers. How many singers will perform in total?","There are 12 cupcake boxes at the party. Each box holds 7 cupcakes. How many cupcakes are there in total?"]}},
+    question: {"a":12,"b":7,"op":"×","answer":84,"display":{"promptText":"A music teacher has 12 student bands. Each band has 7 musicians. How many musicians are there in total?"}},
   },
   {
     itemId: "multiplication-app-231",
@@ -2312,7 +2312,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":8,"op":"×","answer":104,"display":{"promptText":"13 crews each have 8 members. How many members in total?","promptOptions":["A construction company has 13 work crews. Each crew has 8 workers. How many workers are there in total?","A hotel has 13 floors. Each floor has 8 guest rooms. How many guest rooms does the hotel have in total?","The farmer has 13 chicken coops. Each coop holds 8 chickens. How many chickens does the farmer have?"]}},
+    question: {"a":13,"b":8,"op":"×","answer":104,"display":{"promptText":"A construction company has 13 work crews. Each crew has 8 workers. How many workers are there in total?"}},
   },
   {
     itemId: "multiplication-app-232",
@@ -2322,7 +2322,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":7,"op":"×","answer":98,"display":{"promptText":"14 camps each have 7 counselors. How many counselors in total?","promptOptions":["A summer camp has 14 cabins. Each cabin has 7 kids in it. How many kids are at the camp in total?","The school has 14 classrooms. Each classroom has 7 windows. How many windows does the school have in total?","There are 14 apple trees in the orchard. Each tree has 7 apples. How many apples can be picked in total?"]}},
+    question: {"a":14,"b":7,"op":"×","answer":98,"display":{"promptText":"A summer camp has 14 cabins. Each cabin has 7 kids in it. How many kids are at the camp in total?"}},
   },
   {
     itemId: "multiplication-app-233",
@@ -2332,7 +2332,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":8,"op":"×","answer":120,"display":{"promptText":"15 bakeries each bake 8 cakes. How many cakes in total?","promptOptions":["A bakery made 15 batches of cookies. Each batch has 8 cookies. How many cookies did the bakery make in total?","The farm stand has 15 baskets of strawberries. Each basket has 8 strawberries. How many strawberries are there in total?","Maria bought 15 packs of toy cars. Each pack has 8 cars. How many toy cars did Maria buy in total?"]}},
+    question: {"a":15,"b":8,"op":"×","answer":120,"display":{"promptText":"A bakery made 15 batches of cookies. Each batch has 8 cookies. How many cookies did the bakery make in total?"}},
   },
   {
     itemId: "multiplication-app-234",
@@ -2342,7 +2342,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":8,"op":"×","answer":128,"display":{"promptText":"16 farms each have 8 cows. How many cows in total?","promptOptions":["A farmer has 16 pastures with cows. Each pasture has 8 cows. How many cows does the farmer have in total?","A toy store ordered 16 boxes of action figures. Each box has 8 figures. How many figures did the store get in total?","There are 16 rows of seats in the theater. Each row has 8 seats. How many seats are in the theater in total?"]}},
+    question: {"a":16,"b":8,"op":"×","answer":128,"display":{"promptText":"A farmer has 16 pastures with cows. Each pasture has 8 cows. How many cows does the farmer have in total?"}},
   },
   {
     itemId: "multiplication-app-235",
@@ -2352,7 +2352,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":17,"b":5,"op":"×","answer":85,"display":{"promptText":"17 offices each have 5 desks. How many desks in total?","promptOptions":["A company has 17 offices. Each office has 5 desks. How many desks are in the company in total?","The teacher gave 17 students 5 stickers each. How many stickers did the teacher give in total?","A bakery has 17 shelves. Each shelf holds 5 cakes. How many cakes can fit on the shelves in total?"]}},
+    question: {"a":17,"b":5,"op":"×","answer":85,"display":{"promptText":"A company has 17 offices. Each office has 5 desks. How many desks are in the company in total?"}},
   },
   {
     itemId: "multiplication-app-236",
@@ -2362,7 +2362,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":4,"op":"×","answer":72,"display":{"promptText":"18 studios each have 4 cameras. How many cameras in total?","promptOptions":["A TV studio has 18 recording rooms. Each room has 4 cameras. How many cameras does the studio have in total?","The art class has 18 students. Each student gets 4 paintbrushes. How many paintbrushes are needed in total?","A car dealership has 18 display stands. Each stand holds 4 cars. How many cars are on display in total?"]}},
+    question: {"a":18,"b":4,"op":"×","answer":72,"display":{"promptText":"A TV studio has 18 recording rooms. Each room has 4 cameras. How many cameras does the studio have in total?"}},
   },
   {
     itemId: "multiplication-app-237",
@@ -2372,7 +2372,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":6,"op":"×","answer":120,"display":{"promptText":"20 lanes each hold 6 runners. How many runners in total?","promptOptions":["A running track has 20 lanes. Each lane can hold 6 runners. How many runners can race at the same time?","A restaurant has 20 tables. Each table can seat 6 people. How many people can eat at the restaurant in total?","The candy store has 20 jars of gumballs. Each jar has 6 gumballs. How many gumballs are there in total?"]}},
+    question: {"a":20,"b":6,"op":"×","answer":120,"display":{"promptText":"A running track has 20 lanes. Each lane can hold 6 runners. How many runners can race at the same time?"}},
   },
   {
     itemId: "multiplication-app-238",
@@ -2382,7 +2382,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":5,"op":"×","answer":125,"display":{"promptText":"25 benches each seat 5 kids. How many kids in total?","promptOptions":["Noah set up 25 tables for the party. He put 5 chairs at each table. How many chairs did Noah set up in all?","Zoe has 25 bags of marbles with 5 marbles in each bag. How many marbles does Zoe have in all?","There are 25 benches in the park. Each bench seats 5 kids. How many kids can sit on all the benches?"]}},
+    question: {"a":25,"b":5,"op":"×","answer":125,"display":{"promptText":"Noah set up 25 tables for the party. He put 5 chairs at each table. How many chairs did Noah set up in all?"}},
   },
   {
     itemId: "multiplication-app-239",
@@ -2392,7 +2392,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":30,"b":4,"op":"×","answer":120,"display":{"promptText":"30 tables each seat 4 diners. How many diners in total?","promptOptions":["Jamal planted 30 rows of seeds with 4 seeds in each row. How many seeds did Jamal plant in all?","The restaurant has 30 tables. Each table seats 4 people. How many people can sit down to eat in all?","There are 30 bags with 4 cookies in each bag. How many cookies are there in all?"]}},
+    question: {"a":30,"b":4,"op":"×","answer":120,"display":{"promptText":"Jamal planted 30 rows of seeds with 4 seeds in each row. How many seeds did Jamal plant in all?"}},
   },
   {
     itemId: "multiplication-app-240",
@@ -2402,7 +2402,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Ori has 2 baggies with 3 cherries in each. How many cherries in all?","promptOptions":["Ori picked 2 bags of cherries with 3 cherries in each bag. How many cherries did he pick in all?","Ori has 2 bags of marbles with 3 marbles in each bag. How many marbles does Ori have in all?","Ori made 2 necklaces with 3 beads on each one. How many beads did he use in all?"]}},
+    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Ori picked 2 bags of cherries with 3 cherries in each bag. How many cherries did he pick in all?"}},
   },
   {
     itemId: "multiplication-app-241",
@@ -2412,7 +2412,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Mika has 3 bracelets with 4 charms on each. How many charms in all?","promptOptions":["Mika has 3 bracelets with 4 charms on each bracelet. How many charms does Mika have in all?","Mika decorated 3 cupcakes with 4 sprinkles on each one. How many sprinkles did she use in all?","Mika arranged 3 rows of shells with 4 shells in each row. How many shells did she arrange in all?"]}},
+    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Mika has 3 bracelets with 4 charms on each bracelet. How many charms does Mika have in all?"}},
   },
   {
     itemId: "multiplication-app-242",
@@ -2422,7 +2422,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"Gali has 4 jars with 5 marbles in each. How many marbles in all?","promptOptions":["Gali has 4 jars filled with 5 marbles in each jar. How many marbles does Gali have in all?","Gali packed 4 boxes with 5 toys in each box. How many toys did he pack in all?","Gali planted 4 flower pots with 5 seeds in each pot. How many seeds did he plant in all?"]}},
+    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"Gali has 4 jars filled with 5 marbles in each jar. How many marbles does Gali have in all?"}},
   },
   {
     itemId: "multiplication-app-243",
@@ -2432,7 +2432,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Rafi has 2 bowls with 5 grapes in each. How many grapes in all?","promptOptions":["Rafi has 2 baskets with 5 oranges in each basket. How many oranges does Rafi have in all?","Rafi made 2 necklaces with 5 beads on each one. How many beads did he use in all?","Rafi set up 2 rows of chairs with 5 chairs in each row. How many chairs did he set up in all?"]}},
+    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Rafi has 2 baskets with 5 oranges in each basket. How many oranges does Rafi have in all?"}},
   },
   {
     itemId: "multiplication-app-244",
@@ -2442,7 +2442,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Yari has 3 baskets with 3 peaches in each. How many peaches in all?","promptOptions":["Yari has 3 bags with 3 cookies in each bag. How many cookies does Yari have in all?","Yari made 3 flower arrangements with 3 flowers in each one. How many flowers did she use in all?","Yari planted 3 rows of seeds with 3 seeds in each row. How many seeds did she plant in all?"]}},
+    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Yari has 3 bags with 3 cookies in each bag. How many cookies does Yari have in all?"}},
   },
   {
     itemId: "multiplication-app-245",
@@ -2452,7 +2452,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Ben has 4 cages with 2 gerbils in each. How many gerbils in all?","promptOptions":["Ben has 4 boxes with 2 toys in each box. How many toys does Ben have in all?","Ben arranged 4 tables with 2 cups on each table. How many cups did he put out in all?","Ben caught 4 fish with 2 spots on each fish. How many spots did he count in all?"]}},
+    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Ben has 4 boxes with 2 toys in each box. How many toys does Ben have in all?"}},
   },
   {
     itemId: "multiplication-app-246",
@@ -2462,7 +2462,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"5 lunch bags each hold 4 cookies. How many cookies in all?","promptOptions":["Lily packed 5 gift boxes with 4 toys in each box. How many toys did she pack in all?","There are 5 bags of cookies with 4 cookies in each bag. How many cookies are there in all?","Darius has 5 shelves with 4 teddy bears on each shelf. How many teddy bears does he have in all?"]}},
+    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"Lily packed 5 gift boxes with 4 toys in each box. How many toys did she pack in all?"}},
   },
   {
     itemId: "multiplication-app-247",
@@ -2472,7 +2472,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"3 clown fish each have 2 stripes. How many stripes in all?","promptOptions":["Maya counted 3 clown fish with 2 stripes on each fish. How many stripes did she count in all?","There are 3 butterflies with 2 wings on each butterfly. How many wings are there in all?","Sam has 3 toy cars with 2 wheels on each car. How many wheels does he have in all?"]}},
+    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Maya counted 3 clown fish with 2 stripes on each fish. How many stripes did she count in all?"}},
   },
   {
     itemId: "multiplication-app-248",
@@ -2482,7 +2482,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"5 bees each land on 2 flowers. How many landings in all?","promptOptions":["Maya found 5 birds' nests with 2 eggs in each nest. How many eggs did she find in all?","There are 5 bicycles with 2 wheels on each bicycle. How many wheels are there in all?","The farm has 5 cows with 2 horns on each cow. How many horns does it have in all?"]}},
+    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"Maya found 5 birds' nests with 2 eggs in each nest. How many eggs did she find in all?"}},
   },
   {
     itemId: "multiplication-app-249",
@@ -2492,7 +2492,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"4 rabbits each eat 3 carrots. How many carrots in all?","promptOptions":["Rosa has 4 bags with 3 oranges in each bag. How many oranges does she have in all?","There are 4 pies with 3 slices in each pie. How many slices are there in all?","The school has 4 classrooms with 3 windows in each classroom. How many windows are there in all?"]}},
+    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Rosa has 4 bags with 3 oranges in each bag. How many oranges does she have in all?"}},
   },
   {
     itemId: "multiplication-app-250",
@@ -2502,7 +2502,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"2 turtles each have 4 legs. How many legs in all?","promptOptions":["Tasha has 2 pet turtles. Each turtle has 4 legs. How many legs do they have in all?","At the zoo, Maya saw 2 turtles. Each one has 4 legs. How many turtle legs did she see?","There are 2 turtles. Each turtle has 4 legs. How many legs in all?"]}},
+    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"Tasha has 2 pet turtles. Each turtle has 4 legs. How many legs do they have in all?"}},
   },
   {
     itemId: "multiplication-app-251",
@@ -2512,7 +2512,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"5 birds each lay 3 eggs. How many eggs in all?","promptOptions":["A farmer has 5 birds. Each bird laid 3 eggs. How many eggs are there in all?","The nest has 5 birds. Each one laid 3 eggs. How many eggs did they lay in all?","Kai found 5 bird nests. Each nest has 3 eggs. How many eggs in all?"]}},
+    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"A farmer has 5 birds. Each bird laid 3 eggs. How many eggs are there in all?"}},
   },
   {
     itemId: "multiplication-app-252",
@@ -2522,7 +2522,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"3 hands each hold 5 pencils. How many pencils in all?","promptOptions":["At the table, 3 kids each hold 5 pencils. How many pencils are they holding in all?","The class has 3 kids holding pencils. Each one holds 5 pencils. How many pencils in all?"]}},
+    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"At the table, 3 kids each hold 5 pencils. How many pencils are they holding in all?"}},
   },
   {
     itemId: "multiplication-app-253",
@@ -2532,7 +2532,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"Crackers are in 2 rows of 4 on a plate. How many crackers?","promptOptions":["Emma arranged crackers on a plate in 2 rows. Each row had 4 crackers. How many crackers did Emma arrange?","Crackers sit on a plate in 2 rows of 4. How many crackers are there?","A plate has crackers in 2 rows of 4. How many crackers are on the plate?"]}},
+    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"Emma arranged crackers on a plate in 2 rows. Each row had 4 crackers. How many crackers did Emma arrange?"}},
   },
   {
     itemId: "multiplication-app-254",
@@ -2542,7 +2542,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Ice cubes are in 3 rows of 3 in a tray. How many cubes?","promptOptions":["Maya filled an ice cube tray with 3 rows of 3 cubes. How many ice cubes did Maya put in the tray?","An ice tray has 3 rows with 3 cubes in each. How many cubes are in the tray?","An ice cube tray has cubes in 3 rows of 3. How many ice cubes are in the tray?"]}},
+    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Maya filled an ice cube tray with 3 rows of 3 cubes. How many ice cubes did Maya put in the tray?"}},
   },
   {
     itemId: "multiplication-app-255",
@@ -2552,7 +2552,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"Cupcakes are in 4 rows of 4 on a tray. How many cupcakes?","promptOptions":["A baker arranged cupcakes on a tray in 4 rows. Each row had 4 cupcakes. How many cupcakes did the baker arrange?","Cupcakes sit on a tray in 4 rows of 4. How many cupcakes are there?","A tray has cupcakes in 4 rows of 4. How many cupcakes are on the tray?"]}},
+    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"A baker arranged cupcakes on a tray in 4 rows. Each row had 4 cupcakes. How many cupcakes did the baker arrange?"}},
   },
   {
     itemId: "multiplication-app-256",
@@ -2562,7 +2562,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"Lollipops stand in 5 rows of 2 in a jar. How many lollipops?","promptOptions":["Maya put lollipops in a jar in 5 rows. Each row had 2 lollipops. How many lollipops did she put in the jar?","There are 5 rows of lollipops in a jar. Each row has 2 lollipops. How many lollipops are in the jar?","A jar holds lollipops in 5 rows of 2. How many lollipops are in the jar?"]}},
+    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"Maya put lollipops in a jar in 5 rows. Each row had 2 lollipops. How many lollipops did she put in the jar?"}},
   },
   {
     itemId: "multiplication-app-257",
@@ -2572,7 +2572,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Socks are folded in 2 rows of 2 in a drawer. How many socks?","promptOptions":["Mom folded socks in a drawer in 2 rows. Each row had 2 socks. How many socks did she fold?","Socks sit in a drawer in 2 rows of 2. How many socks are in the drawer?","There are 2 rows of socks in a drawer. Each row has 2 socks. How many socks in total?"]}},
+    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Mom folded socks in a drawer in 2 rows. Each row had 2 socks. How many socks did she fold?"}},
   },
   {
     itemId: "multiplication-app-258",
@@ -2582,7 +2582,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"Pebbles are in 3 rows of 5 on a ledge. How many pebbles?","promptOptions":["Maya lined up pebbles on a ledge in 3 rows. Each row had 5 pebbles. How many pebbles did she line up?","Pebbles sit on a ledge in 3 rows of 5. How many pebbles are on the ledge?","There are 3 rows of pebbles on a ledge. Each row has 5 pebbles. How many pebbles in total?"]}},
+    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"Maya lined up pebbles on a ledge in 3 rows. Each row had 5 pebbles. How many pebbles did she line up?"}},
   },
   {
     itemId: "multiplication-app-259",
@@ -2592,7 +2592,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"Berries are in 4 rows of 5 in a carton. How many berries?","promptOptions":["Sam arranged berries in a carton in 4 rows. Each row had 5 berries. How many berries did he arrange?","Berries fill a carton in 4 rows of 5. How many berries are in the carton?","There are 4 rows of berries in a carton. Each row has 5 berries. How many berries in total?"]}},
+    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"Sam arranged berries in a carton in 4 rows. Each row had 5 berries. How many berries did he arrange?"}},
   },
   {
     itemId: "multiplication-app-260",
@@ -2602,7 +2602,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"Keys are on a pegboard in 5 rows of 5. How many keys?","promptOptions":["Mom hung keys on a pegboard in 5 rows. Each row had 5 keys. How many keys did she hang?","Keys hang on a pegboard in 5 rows of 5. How many keys are on the board?","There are 5 rows of keys on a pegboard. Each row has 5 keys. How many keys in total?"]}},
+    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"Mom hung keys on a pegboard in 5 rows. Each row had 5 keys. How many keys did she hang?"}},
   },
   {
     itemId: "multiplication-app-261",
@@ -2612,7 +2612,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Tiles are laid in 4 rows of 3. How many tiles?","promptOptions":["Carlos laid tiles in 4 rows. Each row had 3 tiles. How many tiles did he lay?","Tiles are laid in 4 rows of 3. How many tiles are there?","There are 4 rows of tiles. Each row has 3 tiles. How many tiles in total?"]}},
+    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Carlos laid tiles in 4 rows. Each row had 3 tiles. How many tiles did he lay?"}},
   },
   {
     itemId: "multiplication-app-262",
@@ -2622,7 +2622,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Biscuits are in 2 rows of 5 in a tin. How many biscuits?","promptOptions":["Maya put biscuits in a tin in 2 rows. Each row had 5 biscuits. How many biscuits did she put in the tin?","Biscuits fill a tin in 2 rows of 5. How many biscuits are in the tin?","There are 2 rows of biscuits in a tin. Each row has 5 biscuits. How many biscuits in total?"]}},
+    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Maya put biscuits in a tin in 2 rows. Each row had 5 biscuits. How many biscuits did she put in the tin?"}},
   },
   {
     itemId: "multiplication-app-263",
@@ -2632,7 +2632,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Stickers are in 3 rows of 4 on a sheet. How many stickers?","promptOptions":["Luna put stickers on a sheet in 3 rows. Each row had 4 stickers. How many stickers did she put on the sheet?","Stickers cover a sheet in 3 rows of 4. How many stickers are on the sheet?","There are 3 rows of stickers on a sheet. Each row has 4 stickers. How many stickers in total?"]}},
+    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Luna put stickers on a sheet in 3 rows. Each row had 4 stickers. How many stickers did she put on the sheet?"}},
   },
   {
     itemId: "multiplication-app-264",
@@ -2642,7 +2642,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"Coins are lined in 5 rows of 4. How many coins?","promptOptions":["Alex lined up coins in 5 rows. Each row had 4 coins. How many coins did he line up?","Coins are lined up in 5 rows of 4. How many coins are there?","There are 5 rows of coins. Each row has 4 coins. How many coins in total?"]}},
+    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"Alex lined up coins in 5 rows. Each row had 4 coins. How many coins did he line up?"}},
   },
   {
     itemId: "multiplication-app-265",
@@ -2652,7 +2652,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"2 ducks each have 3 feathers highlighted. How many feathers in all?","promptOptions":["Leo saw 2 ducks at the pond. Each duck has 3 pretty feathers. How many feathers in all?","There are 2 ducks. Each one has 3 colorful feathers. How many feathers do they have?","Mina counted 2 ducks. Each duck has 3 feathers. How many feathers in all?"]}},
+    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Leo saw 2 ducks at the pond. Each duck has 3 pretty feathers. How many feathers in all?"}},
   },
   {
     itemId: "multiplication-app-266",
@@ -2662,7 +2662,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"3 fish each have 2 fins. How many fins in all?","promptOptions":["Mira has 3 pet fish in her tank. Each fish has 2 fins. How many fins do they have in all?","There are 3 fish swimming. Each fish has 2 fins. How many fins in all?","Omar counted 3 fish. Each one has 2 fins. How many fish fins in all?"]}},
+    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Mira has 3 pet fish in her tank. Each fish has 2 fins. How many fins do they have in all?"}},
   },
   {
     itemId: "multiplication-app-267",
@@ -2672,7 +2672,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"4 snails each have 2 antennae. How many antennae in all?","promptOptions":["Jenny found 4 snails in the garden. Each snail has 2 antennae. How many antennae in all?","There are 4 snails on a leaf. Each snail has 2 antennae. How many antennae do they have?","Ray saw 4 snails. Each one has 2 antennae. How many antennae in all?"]}},
+    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Jenny found 4 snails in the garden. Each snail has 2 antennae. How many antennae in all?"}},
   },
   {
     itemId: "multiplication-app-268",
@@ -2682,7 +2682,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"2 horses each have 4 hooves. How many hooves in all?","promptOptions":["The farm has 2 horses. Each horse has 4 hooves. How many hooves do they have in all?","Sam watched 2 horses trotting. Each horse has 4 hooves. How many hooves in all?","There are 2 horses at the ranch. Each one has 4 hooves. How many hooves in all?"]}},
+    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"The farm has 2 horses. Each horse has 4 hooves. How many hooves do they have in all?"}},
   },
   {
     itemId: "multiplication-app-269",
@@ -2692,7 +2692,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"5 chairs each have 4 legs. How many legs in all?","promptOptions":["There are 5 chairs around the table. Each chair has 4 legs. How many legs in all?","Rosa counted 5 chairs in the room. Each chair has 4 legs. How many legs do they have?","The classroom has 5 chairs. Each one has 4 legs. How many chair legs in all?"]}},
+    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"There are 5 chairs around the table. Each chair has 4 legs. How many legs in all?"}},
   },
   {
     itemId: "multiplication-app-270",
@@ -2702,7 +2702,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"4 gloves each have 5 fingers. How many fingers in all?","promptOptions":["Mom has 4 winter gloves. Each glove has 5 fingers. How many fingers in all?","Jordan found 4 gloves in the drawer. Each glove has 5 fingers. How many fingers in all?","There are 4 gloves on the shelf. Each glove has 5 fingers. How many fingers do they have?"]}},
+    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"Mom has 4 winter gloves. Each glove has 5 fingers. How many fingers in all?"}},
   },
   {
     itemId: "multiplication-app-271",
@@ -2712,7 +2712,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"3 stools each have 3 legs. How many legs in all?","promptOptions":["Dad set up 3 stools for the kitchen. Each stool has 3 legs. How many legs in all?","There are 3 stools in the workshop. Each one has 3 legs. How many legs do they have?","Zoe saw 3 stools. Each stool has 3 legs. How many legs in all?"]}},
+    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Dad set up 3 stools for the kitchen. Each stool has 3 legs. How many legs in all?"}},
   },
   {
     itemId: "multiplication-app-272",
@@ -2722,7 +2722,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"4 square tables each have 4 sides. How many sides in all?","promptOptions":["There are 4 square tables in the library. Each table has 4 sides. How many sides in all?","The school has 4 square tables. Each table has 4 sides. How many sides do they have?","Amir counted 4 square tables. Each table has 4 sides. How many sides in all?"]}},
+    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"There are 4 square tables in the library. Each table has 4 sides. How many sides in all?"}},
   },
   {
     itemId: "multiplication-app-273",
@@ -2732,7 +2732,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"5 pedestals each have 3 candles. How many candles in all?","promptOptions":["The church has 5 tall pedestals. Each pedestal has 3 candles. How many candles in all?","Emma arranged 5 pedestals for the party. Each has 3 candles. How many candles in all?","There are 5 pedestals with candles. Each one has 3 candles. How many candles do they hold?"]}},
+    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"The church has 5 tall pedestals. Each pedestal has 3 candles. How many candles in all?"}},
   },
   {
     itemId: "multiplication-app-274",
@@ -2742,7 +2742,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"3 square placemats each have 4 edges. How many edges in all?","promptOptions":["Lisa set out 3 square placemats on the table. Each placemat has 4 edges. How many edges are there in all?","At the party, Maria put out 3 square placemats. Each one has 4 edges. How many edges altogether?","Carlos has 3 square placemats. Every placemat has 4 edges. How many edges in total?"]}},
+    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Lisa set out 3 square placemats on the table. Each placemat has 4 edges. How many edges are there in all?"}},
   },
   {
     itemId: "multiplication-app-275",
@@ -2752,7 +2752,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"2 bikes each have 2 pedals. How many pedals in all?","promptOptions":["Jamie has 2 bikes in the garage. Each bike has 2 pedals. How many pedals in all?","Marcus got 2 new bikes for his birthday. Each bike has 2 pedals. How many pedals altogether?","Alex owns 2 bikes. Every bike has 2 pedals. How many pedals in total?"]}},
+    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Jamie has 2 bikes in the garage. Each bike has 2 pedals. How many pedals in all?"}},
   },
   {
     itemId: "multiplication-app-276",
@@ -2762,7 +2762,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"3 starfish each have 5 arms. How many arms in all?","promptOptions":["Maya found 3 starfish on the beach. Each starfish has 5 arms. How many arms in all?","Jose collected 3 starfish. Each one has 5 arms. How many arms are there in total?","Kai saw 3 starfish in the tank. Every starfish has 5 arms. How many arms altogether?"]}},
+    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"Maya found 3 starfish on the beach. Each starfish has 5 arms. How many arms in all?"}},
   },
   {
     itemId: "multiplication-app-277",
@@ -2772,7 +2772,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"5 stars each have 5 points. How many points in all?","promptOptions":["Sofia drew 5 stars on her poster. Each star has 5 points. How many points in all?","Connor made 5 stars out of paper. Each star has 5 points. How many points are there?","Sam hung 5 stars on the wall. Every star has 5 points. How many points altogether?"]}},
+    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"Sofia drew 5 stars on her poster. Each star has 5 points. How many points in all?"}},
   },
   {
     itemId: "multiplication-app-278",
@@ -2782,7 +2782,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":7,"op":"×","answer":42,"display":{"promptText":"6 stables each hold 7 horses. How many horses in all?","promptOptions":["Emma visited 6 stables on the farm. Each one holds 7 horses. How many horses altogether?","The farmer manages 6 stables. Each stable holds 7 horses. How many horses in all?","Diego counted 6 stables on the farm. Every stable holds 7 horses. How many horses in total?"]}},
+    question: {"a":6,"b":7,"op":"×","answer":42,"display":{"promptText":"Emma visited 6 stables on the farm. Each one holds 7 horses. How many horses altogether?"}},
   },
   {
     itemId: "multiplication-app-279",
@@ -2792,7 +2792,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"7 coops each hold 6 chickens. How many chickens in all?","promptOptions":["Liam counted 7 coops at the farm. Each coop holds 6 chickens. How many chickens altogether?","Rosa collected eggs from 7 coops. Every coop holds 6 chickens. How many chickens in total?","The farmer tends 7 chicken coops. Each coop holds 6 chickens. How many chickens in all?"]}},
+    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"Liam counted 7 coops at the farm. Each coop holds 6 chickens. How many chickens altogether?"}},
   },
   {
     itemId: "multiplication-app-280",
@@ -2802,7 +2802,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"8 ponds each have 7 swans. How many swans in all?","promptOptions":["Zoe counted 8 ponds near her house. Each pond has 7 swans. How many swans altogether?","The naturalist visited 8 ponds in the park. Each pond has 7 swans. How many swans in all?","The biologist observed 8 ponds at the preserve. Every pond has 7 swans. How many swans in total?"]}},
+    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"Zoe counted 8 ponds near her house. Each pond has 7 swans. How many swans altogether?"}},
   },
   {
     itemId: "multiplication-app-281",
@@ -2812,7 +2812,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"9 paths each have 6 stepping stones. How many stones in all?","promptOptions":["Owen walked 9 paths through the park. Each path has 6 stepping stones. How many stones altogether?","Isla found 9 paths in the garden. Every path has 6 stepping stones. How many stones in total?","The gardener built 9 paths. Each path has 6 stepping stones. How many stones in all?"]}},
+    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"Owen walked 9 paths through the park. Each path has 6 stepping stones. How many stones altogether?"}},
   },
   {
     itemId: "multiplication-app-282",
@@ -2822,7 +2822,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"6 stringers each hold 8 fish. How many fish in all?","promptOptions":["Noah caught 6 stringers of fish. Each stringer holds 8 fish. How many fish altogether?","The fisherman organized 6 stringers. Every stringer holds 8 fish. How many fish in total?","The fisher has 6 stringers. Each stringer holds 8 fish. How many fish in all?"]}},
+    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"Noah caught 6 stringers of fish. Each stringer holds 8 fish. How many fish altogether?"}},
   },
   {
     itemId: "multiplication-app-283",
@@ -2832,7 +2832,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"7 vans each carry 7 instruments. How many instruments in all?","promptOptions":["Ava helped pack 7 vans for the concert. Each van carries 7 instruments. How many instruments altogether?","The conductor organized 7 vans for the concert. Every van carries 7 instruments. How many instruments in total?","The musicians packed 7 vans for the concert. Each van carries 7 instruments. How many instruments in all?"]}},
+    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"Ava helped pack 7 vans for the concert. Each van carries 7 instruments. How many instruments altogether?"}},
   },
   {
     itemId: "multiplication-app-284",
@@ -2842,7 +2842,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"8 ovens each bake 6 loaves. How many loaves in all?","promptOptions":["The baker ran 8 ovens today. Each oven bakes 6 loaves. How many loaves altogether?","The head chef manages 8 ovens. Every oven bakes 6 loaves. How many loaves in total?","The baker uses 8 ovens. Each oven bakes 6 loaves. How many loaves in all?"]}},
+    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"The baker ran 8 ovens today. Each oven bakes 6 loaves. How many loaves altogether?"}},
   },
   {
     itemId: "multiplication-app-285",
@@ -2852,7 +2852,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":7,"op":"×","answer":63,"display":{"promptText":"9 racks each hold 7 pots. How many pots in all?","promptOptions":["Chef Maya arranged 9 racks in the kitchen. Each rack holds 7 pots. How many pots altogether?","The chef organized 9 racks in the kitchen. Every rack holds 7 pots. How many pots in total?","The cook stored 9 racks of pots. Each rack holds 7 pots. How many pots in all?"]}},
+    question: {"a":9,"b":7,"op":"×","answer":63,"display":{"promptText":"Chef Maya arranged 9 racks in the kitchen. Each rack holds 7 pots. How many pots altogether?"}},
   },
   {
     itemId: "multiplication-app-286",
@@ -2862,7 +2862,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":6,"op":"×","answer":30,"display":{"promptText":"5 carts each hold 6 shovels. How many shovels in all?","promptOptions":["Juan's dad has 5 carts. Each cart holds 6 shovels. How many shovels does he have in all?","There are 5 carts at the construction site. Each cart holds 6 shovels. How many shovels are there in all?"]}},
+    question: {"a":5,"b":6,"op":"×","answer":30,"display":{"promptText":"Juan's dad has 5 carts. Each cart holds 6 shovels. How many shovels does he have in all?"}},
   },
   {
     itemId: "multiplication-app-287",
@@ -2872,7 +2872,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":7,"op":"×","answer":35,"display":{"promptText":"5 crates each hold 7 apples. How many apples in all?","promptOptions":["A farmer has 5 crates of apples. Each crate holds 7 apples. How many apples does she have in all?","There are 5 crates at the store. Each crate holds 7 apples. How many apples are there in all?"]}},
+    question: {"a":5,"b":7,"op":"×","answer":35,"display":{"promptText":"A farmer has 5 crates of apples. Each crate holds 7 apples. How many apples does she have in all?"}},
   },
   {
     itemId: "multiplication-app-288",
@@ -2882,7 +2882,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":8,"op":"×","answer":40,"display":{"promptText":"5 gardens each have 8 bushes. How many bushes in all?","promptOptions":["Rosa planted 5 gardens. Each garden has 8 bushes. How many bushes did she plant in all?","There are 5 gardens in the neighborhood. Each garden has 8 bushes. How many bushes are there in all?"]}},
+    question: {"a":5,"b":8,"op":"×","answer":40,"display":{"promptText":"Rosa planted 5 gardens. Each garden has 8 bushes. How many bushes did she plant in all?"}},
   },
   {
     itemId: "multiplication-app-289",
@@ -2892,7 +2892,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"9 reels each hold 8 photos. How many photos in all?","promptOptions":["Grandpa has 9 photo reels. Each reel holds 8 photos. How many photos does he have in all?","There are 9 reels at the library. Each reel holds 8 photos. How many photos are there in all?"]}},
+    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"Grandpa has 9 photo reels. Each reel holds 8 photos. How many photos does he have in all?"}},
   },
   {
     itemId: "multiplication-app-290",
@@ -2902,7 +2902,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":9,"op":"×","answer":81,"display":{"promptText":"9 shelves each hold 9 boxes. How many boxes in all?","promptOptions":["A store has 9 shelves. Each shelf holds 9 boxes of cereal. How many boxes are there in all?","There are 9 shelves in the stockroom. Each shelf holds 9 boxes. How many boxes are there in all?"]}},
+    question: {"a":9,"b":9,"op":"×","answer":81,"display":{"promptText":"A store has 9 shelves. Each shelf holds 9 boxes of cereal. How many boxes are there in all?"}},
   },
   {
     itemId: "multiplication-app-291",
@@ -2912,7 +2912,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"Chocolates are in 6 rows of 6 in a box. How many chocolates?","promptOptions":["Mom packed chocolates in a box in 6 rows. Each row had 6 chocolates. How many chocolates did she pack?","Chocolates fill a box in 6 rows of 6. How many chocolates are in the box?","There are 6 rows of chocolates in a box. Each row has 6 chocolates. How many chocolates in total?"]}},
+    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"Mom packed chocolates in a box in 6 rows. Each row had 6 chocolates. How many chocolates did she pack?"}},
   },
   {
     itemId: "multiplication-app-292",
@@ -2922,7 +2922,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"Kites are hung in 7 rows of 6 at a fair. How many kites?","promptOptions":["The fair had kites hung in 7 rows. Each row had 6 kites. How many kites were at the fair?","Kites hang at a fair in 7 rows of 6. How many kites are at the fair?","There are 7 rows of kites at a fair. Each row has 6 kites. How many kites in total?"]}},
+    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"The fair had kites hung in 7 rows. Each row had 6 kites. How many kites were at the fair?"}},
   },
   {
     itemId: "multiplication-app-293",
@@ -2932,7 +2932,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"Clay pots are arranged in 7 rows of 7. How many pots?","promptOptions":["Maya arranged clay pots in 7 rows. Each row had 7 pots. How many pots did she arrange?","Clay pots sit in 7 rows of 7. How many pots are there?","There are 7 rows of clay pots. Each row has 7 pots. How many pots in total?"]}},
+    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"Maya arranged clay pots in 7 rows. Each row had 7 pots. How many pots did she arrange?"}},
   },
   {
     itemId: "multiplication-app-294",
@@ -2942,7 +2942,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"Folders are in 8 rows of 7 on a shelf. How many folders?","promptOptions":["Emma put folders on a shelf in 8 rows. Each row had 7 folders. How many folders did she put altogether?","Kai arranged 8 rows of folders with 7 in each row. How many folders did Kai arrange?","On the shelf were 8 rows of folders with 7 folders in each row. How many folders in total?"]}},
+    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"Emma put folders on a shelf in 8 rows. Each row had 7 folders. How many folders did she put altogether?"}},
   },
   {
     itemId: "multiplication-app-295",
@@ -2952,7 +2952,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":8,"op":"×","answer":64,"display":{"promptText":"Cubes are stacked in 8 rows of 8. How many cubes?","promptOptions":["Liam stacked cubes in 8 rows with 8 cubes in each row. How many cubes did he stack altogether?","Maya built 8 rows of cubes with 8 cubes per row. How many cubes did Maya build?","The cubes were arranged in 8 rows of 8. How many cubes were there?"]}},
+    question: {"a":8,"b":8,"op":"×","answer":64,"display":{"promptText":"Liam stacked cubes in 8 rows with 8 cubes in each row. How many cubes did he stack altogether?"}},
   },
   {
     itemId: "multiplication-app-296",
@@ -2962,7 +2962,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"Bracelets are in 9 rows of 6 on a display. How many bracelets?","promptOptions":["Emma arranged bracelets on display in 9 rows with 6 in each row. How many bracelets did she arrange?","Kai put bracelets on a stand in 9 rows with 6 bracelets in each row. How many bracelets did Kai put?","The display had 9 rows of bracelets with 6 bracelets in each row. How many bracelets altogether?"]}},
+    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"Emma arranged bracelets on display in 9 rows with 6 in each row. How many bracelets did she arrange?"}},
   },
   {
     itemId: "multiplication-app-297",
@@ -2972,7 +2972,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":7,"op":"×","answer":63,"display":{"promptText":"Pencils are lined in 9 rows of 7 in a box. How many pencils?","promptOptions":["The teacher put pencils in a box in 9 rows with 7 in each row. How many pencils did she put in the box?","Josh organized 9 rows of pencils with 7 pencils per row. How many pencils did Josh organize?","On the desk sat 9 rows of pencils with 7 pencils in each row. How many pencils in total?"]}},
+    question: {"a":9,"b":7,"op":"×","answer":63,"display":{"promptText":"The teacher put pencils in a box in 9 rows with 7 in each row. How many pencils did she put in the box?"}},
   },
   {
     itemId: "multiplication-app-298",
@@ -2982,7 +2982,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"Donuts are in 9 rows of 8 on a tray. How many donuts?","promptOptions":["The baker arranged donuts on a tray in 9 rows with 8 in each row. How many donuts did she arrange?","Maria counted 9 rows of donuts with 8 donuts per row. How many donuts did she count?","On the tray were 9 rows of donuts with 8 donuts in each row. How many donuts altogether?"]}},
+    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"The baker arranged donuts on a tray in 9 rows with 8 in each row. How many donuts did she arrange?"}},
   },
   {
     itemId: "multiplication-app-299",
@@ -2992,7 +2992,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"Figurines are in 6 rows of 8 on a shelf. How many figurines?","promptOptions":["Amir arranged figurines on a shelf in 6 rows with 8 in each row. How many figurines did he arrange?","The museum had figurines displayed in 6 rows with 8 per row. How many figurines were there?","Rosa put figurines on a shelf in 6 rows with 8 figurines in each row. How many figurines did she put?"]}},
+    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"Amir arranged figurines on a shelf in 6 rows with 8 in each row. How many figurines did he arrange?"}},
   },
   {
     itemId: "multiplication-app-300",
@@ -3002,7 +3002,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"Bottles are in 6 rows of 9 in a case. How many bottles?","promptOptions":["The store had bottles in a case in 6 rows with 9 in each row. How many bottles were in the case?","Dana packed bottles in 6 rows with 9 bottles per row. How many bottles did she pack?","On the shelf were 6 rows of bottles with 9 bottles in each row. How many bottles altogether?"]}},
+    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"The store had bottles in a case in 6 rows with 9 in each row. How many bottles were in the case?"}},
   },
   {
     itemId: "multiplication-app-301",
@@ -3012,7 +3012,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":5,"op":"×","answer":40,"display":{"promptText":"Tomatoes are in 8 rows of 5 in a garden. How many tomatoes?","promptOptions":["The farmer planted tomatoes in 8 rows with 5 in each row. How many tomatoes did he plant?","Rosa grew 8 rows of tomatoes with 5 tomatoes per row. How many tomatoes did she grow?","In the garden were 8 rows of tomatoes with 5 tomatoes in each row. How many tomatoes in total?"]}},
+    question: {"a":8,"b":5,"op":"×","answer":40,"display":{"promptText":"The farmer planted tomatoes in 8 rows with 5 in each row. How many tomatoes did he plant?"}},
   },
   {
     itemId: "multiplication-app-302",
@@ -3022,7 +3022,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"Strawberries are in 9 rows of 5 in a patch. How many strawberries?","promptOptions":["The farmer planted strawberries in a patch in 9 rows with 5 in each row. How many strawberries did she plant?","Marco arranged 9 rows of strawberries with 5 in each row. How many strawberries did he arrange?","In the patch were 9 rows of strawberries with 5 strawberries in each row. How many strawberries altogether?"]}},
+    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"The farmer planted strawberries in a patch in 9 rows with 5 in each row. How many strawberries did she plant?"}},
   },
   {
     itemId: "multiplication-app-303",
@@ -3032,7 +3032,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"Ribbons are in 7 rows of 8 on a bulletin board. How many ribbons?","promptOptions":["The teacher put ribbons on a bulletin board in 7 rows with 8 in each row. How many ribbons did she put?","Jamie arranged 7 rows of ribbons with 8 ribbons per row on a board. How many ribbons did Jamie arrange?","On the board hung 7 rows of ribbons with 8 ribbons in each row. How many ribbons in total?"]}},
+    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"The teacher put ribbons on a bulletin board in 7 rows with 8 in each row. How many ribbons did she put?"}},
   },
   {
     itemId: "multiplication-app-304",
@@ -3042,7 +3042,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"6 hexagons each have 6 sides. How many sides in all?","promptOptions":["Maya drew 6 hexagons. Each hexagon has 6 sides. How many sides did she draw in all?","There are 6 hexagons on the quilt. Each hexagon has 6 sides. How many sides are there in all?"]}},
+    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"Maya drew 6 hexagons. Each hexagon has 6 sides. How many sides did she draw in all?"}},
   },
   {
     itemId: "multiplication-app-305",
@@ -3052,7 +3052,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"7 weeks each have 7 days. How many days in all?","promptOptions":["A camp lasts 7 weeks. Each week has 7 days. How many days long is the camp?","There are 7 weeks. Each week has 7 days. How many days are there in all?"]}},
+    question: {"a":7,"b":7,"op":"×","answer":49,"display":{"promptText":"A camp lasts 7 weeks. Each week has 7 days. How many days long is the camp?"}},
   },
   {
     itemId: "multiplication-app-306",
@@ -3062,7 +3062,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":8,"op":"×","answer":64,"display":{"promptText":"8 octagons each have 8 sides. How many sides in all?","promptOptions":["A sign has 8 octagons on it. Each octagon has 8 sides. How many sides are there in all?","There are 8 octagons in the pattern. Each octagon has 8 sides. How many sides are there in all?"]}},
+    question: {"a":8,"b":8,"op":"×","answer":64,"display":{"promptText":"A sign has 8 octagons on it. Each octagon has 8 sides. How many sides are there in all?"}},
   },
   {
     itemId: "multiplication-app-307",
@@ -3072,7 +3072,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":9,"op":"×","answer":81,"display":{"promptText":"9 flags each have 9 stripes. How many stripes in all?","promptOptions":["A classroom has 9 flags. Each flag has 9 stripes. How many stripes are there in all?","There are 9 flags in the parade. Each flag has 9 stripes. How many stripes are there in all?"]}},
+    question: {"a":9,"b":9,"op":"×","answer":81,"display":{"promptText":"A classroom has 9 flags. Each flag has 9 stripes. How many stripes are there in all?"}},
   },
   {
     itemId: "multiplication-app-308",
@@ -3082,7 +3082,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"6 spider legs × 8 spiders. How many legs in all?","promptOptions":["Aisha found 8 spiders. Each spider has 6 legs. How many legs did she count in all?","There are 8 spiders in the garden. Each spider has 6 legs. How many legs are there in all?"]}},
+    question: {"a":6,"b":8,"op":"×","answer":48,"display":{"promptText":"Aisha found 8 spiders. Each spider has 6 legs. How many legs did she count in all?"}},
   },
   {
     itemId: "multiplication-app-309",
@@ -3092,7 +3092,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"7 crabs each have 8 legs. How many legs in all?","promptOptions":["A fisherman catches 7 crabs. Each crab has 8 legs. How many legs do the crabs have in all?","There are 7 crabs in the tide pool. Each crab has 8 legs. How many legs are there in all?"]}},
+    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"A fisherman catches 7 crabs. Each crab has 8 legs. How many legs do the crabs have in all?"}},
   },
   {
     itemId: "multiplication-app-310",
@@ -3102,7 +3102,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"6 pinwheels each have 9 spokes. How many spokes in all?","promptOptions":["Sam spun 6 pinwheels. Each pinwheel has 9 spokes. How many spokes did he spin in all?","At the fair, there are 6 pinwheels. Each pinwheel has 9 spokes. How many spokes are there in all?"]}},
+    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"Sam spun 6 pinwheels. Each pinwheel has 9 spokes. How many spokes did he spin in all?"}},
   },
   {
     itemId: "multiplication-app-311",
@@ -3112,7 +3112,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":9,"op":"×","answer":63,"display":{"promptText":"7 game dice each have 9 possible sums per roll pair... simpler: 7 teams each have 9 members. How many members in all?","promptOptions":["There are 7 soccer teams at camp. Each team has 9 kids. How many kids play soccer in all?","Maria's soccer league has 7 teams. Each team has 9 players. How many players are in the league?","7 teams each have 9 kids. How many kids in all?"]}},
+    question: {"a":7,"b":9,"op":"×","answer":63,"display":{"promptText":"There are 7 soccer teams at camp. Each team has 9 kids. How many kids play soccer in all?"}},
   },
   {
     itemId: "multiplication-app-312",
@@ -3122,7 +3122,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":9,"op":"×","answer":72,"display":{"promptText":"8 cabins each sleep 9 scouts. How many scouts in all?","promptOptions":["A scout camp has 8 cabins. Each cabin holds 9 scouts. How many scouts are at the camp?","There are 8 cabins at camp. Each cabin has 9 scouts. How many scouts in all?"]}},
+    question: {"a":8,"b":9,"op":"×","answer":72,"display":{"promptText":"A scout camp has 8 cabins. Each cabin holds 9 scouts. How many scouts are at the camp?"}},
   },
   {
     itemId: "multiplication-app-313",
@@ -3132,7 +3132,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"9 bundles each have 5 sticks. How many sticks in all?","promptOptions":["Rosa has 9 bundles of sticks. Each bundle has 5 sticks. How many sticks does Rosa have?","There are 9 bundles of sticks. Each bundle holds 5 sticks. How many sticks in all?"]}},
+    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"Rosa has 9 bundles of sticks. Each bundle has 5 sticks. How many sticks does Rosa have?"}},
   },
   {
     itemId: "multiplication-app-314",
@@ -3142,7 +3142,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"9 dice trays each hold 6 dice. How many dice in all?","promptOptions":["A game store has 9 trays of dice. Each tray holds 6 dice. How many dice are there?","There are 9 dice trays on a shelf. Each tray has 6 dice. How many dice in all?"]}},
+    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"A game store has 9 trays of dice. Each tray holds 6 dice. How many dice are there?"}},
   },
   {
     itemId: "multiplication-app-315",
@@ -3152,7 +3152,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":7,"op":"×","answer":63,"display":{"promptText":"9 benches each seat 7 people. How many people in all?","promptOptions":["There are 9 benches in the park. Each bench has 7 people on it. How many people are sitting?","9 park benches each seat 7 people. How many people can sit on the benches?"]}},
+    question: {"a":9,"b":7,"op":"×","answer":63,"display":{"promptText":"There are 9 benches in the park. Each bench has 7 people on it. How many people are sitting?"}},
   },
   {
     itemId: "multiplication-app-316",
@@ -3162,7 +3162,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"9 buses each carry 8 kids. How many kids in all?","promptOptions":["A school has 9 buses for a field trip. Each bus has 8 kids. How many kids are going?","There are 9 buses picking up kids. Each bus carries 8 kids. How many kids in all?"]}},
+    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"A school has 9 buses for a field trip. Each bus has 8 kids. How many kids are going?"}},
   },
   {
     itemId: "multiplication-app-317",
@@ -3172,7 +3172,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":6,"op":"×","answer":66,"display":{"promptText":"11 pallets each hold 6 boxes. How many boxes in all?","promptOptions":["A warehouse gets 11 pallets delivered. Each pallet holds 6 boxes. How many boxes does it get?","There are 11 pallets stacked up. Each one has 6 boxes. How many boxes in all?"]}},
+    question: {"a":11,"b":6,"op":"×","answer":66,"display":{"promptText":"A warehouse gets 11 pallets delivered. Each pallet holds 6 boxes. How many boxes does it get?"}},
   },
   {
     itemId: "multiplication-app-318",
@@ -3182,7 +3182,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":12,"op":"×","answer":132,"display":{"promptText":"11 shipping crates each contain 12 items. How many items in all?","promptOptions":["A store gets a delivery of 11 crates. Each crate has 12 items inside. How many items does the store get?","There are 11 shipping crates. Each crate holds 12 items. How many items in all?"]}},
+    question: {"a":11,"b":12,"op":"×","answer":132,"display":{"promptText":"A store gets a delivery of 11 crates. Each crate has 12 items inside. How many items does the store get?"}},
   },
   {
     itemId: "multiplication-app-319",
@@ -3192,7 +3192,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":10,"op":"×","answer":120,"display":{"promptText":"12 shelves each hold 10 books. How many books in all?","promptOptions":["A library has 12 shelves. Each shelf holds 10 books. How many books are there?","There are 12 bookshelves in a library. Each shelf has 10 books. How many books in all?"]}},
+    question: {"a":12,"b":10,"op":"×","answer":120,"display":{"promptText":"A library has 12 shelves. Each shelf holds 10 books. How many books are there?"}},
   },
   {
     itemId: "multiplication-app-320",
@@ -3202,7 +3202,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":6,"op":"×","answer":78,"display":{"promptText":"13 baskets each hold 6 peaches. How many peaches in all?","promptOptions":["A farmer has 13 baskets of peaches. Each basket holds 6 peaches. How many peaches does the farmer have?","There are 13 baskets at a farm stand. Each basket has 6 peaches. How many peaches in all?"]}},
+    question: {"a":13,"b":6,"op":"×","answer":78,"display":{"promptText":"A farmer has 13 baskets of peaches. Each basket holds 6 peaches. How many peaches does the farmer have?"}},
   },
   {
     itemId: "multiplication-app-321",
@@ -3212,7 +3212,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":7,"op":"×","answer":98,"display":{"promptText":"14 cages each hold 7 rabbits. How many rabbits in all?","promptOptions":["A farm has 14 rabbit cages. Each cage holds 7 rabbits. How many rabbits are there?","There are 14 cages with rabbits. Each cage has 7 rabbits. How many rabbits in all?"]}},
+    question: {"a":14,"b":7,"op":"×","answer":98,"display":{"promptText":"A farm has 14 rabbit cages. Each cage holds 7 rabbits. How many rabbits are there?"}},
   },
   {
     itemId: "multiplication-app-322",
@@ -3222,7 +3222,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":6,"op":"×","answer":90,"display":{"promptText":"15 boxes each hold 6 bananas. How many bananas in all?","promptOptions":["A store has 15 boxes of bananas. Each box has 6 bananas. How many bananas are there?","There are 15 boxes at the grocery store. Each box holds 6 bananas. How many bananas in all?"]}},
+    question: {"a":15,"b":6,"op":"×","answer":90,"display":{"promptText":"A store has 15 boxes of bananas. Each box has 6 bananas. How many bananas are there?"}},
   },
   {
     itemId: "multiplication-app-323",
@@ -3232,7 +3232,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":6,"op":"×","answer":96,"display":{"promptText":"16 pallets each hold 6 sacks. How many sacks in all?","promptOptions":["A farmer has 16 pallets of grain. Each pallet holds 6 sacks. How many sacks in all?","There are 16 pallets. Each pallet holds 6 sacks of grain. How many sacks in all?"]}},
+    question: {"a":16,"b":6,"op":"×","answer":96,"display":{"promptText":"A farmer has 16 pallets of grain. Each pallet holds 6 sacks. How many sacks in all?"}},
   },
   {
     itemId: "multiplication-app-324",
@@ -3242,7 +3242,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":17,"b":6,"op":"×","answer":102,"display":{"promptText":"17 bins each hold 6 cans. How many cans in all?","promptOptions":["A shop has 17 bins. Each bin holds 6 cans. How many cans in all?","A store has 17 bins. Each bin holds 6 cans of soup. How many cans in all?"]}},
+    question: {"a":17,"b":6,"op":"×","answer":102,"display":{"promptText":"A shop has 17 bins. Each bin holds 6 cans. How many cans in all?"}},
   },
   {
     itemId: "multiplication-app-325",
@@ -3252,7 +3252,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":5,"op":"×","answer":90,"display":{"promptText":"18 trays each hold 5 cakes. How many cakes in all?","promptOptions":["A baker has 18 trays. Each tray holds 5 cakes. How many cakes in all?","There are 18 trays at the bakery. Each tray has 5 cakes. How many cakes in all?"]}},
+    question: {"a":18,"b":5,"op":"×","answer":90,"display":{"promptText":"A baker has 18 trays. Each tray holds 5 cakes. How many cakes in all?"}},
   },
   {
     itemId: "multiplication-app-326",
@@ -3262,7 +3262,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":5,"op":"×","answer":100,"display":{"promptText":"20 reels each hold 5 meters of yarn. How many meters in all?","promptOptions":["A teacher has 20 spools of yarn. Each spool has 5 meters. How many meters in all?","There are 20 spools of yarn in the craft room. Each has 5 meters. How many meters in all?"]}},
+    question: {"a":20,"b":5,"op":"×","answer":100,"display":{"promptText":"A teacher has 20 spools of yarn. Each spool has 5 meters. How many meters in all?"}},
   },
   {
     itemId: "multiplication-app-327",
@@ -3272,7 +3272,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":8,"op":"×","answer":200,"display":{"promptText":"25 baskets each hold 8 plums. How many plums in all?","promptOptions":["A farmer has 25 baskets. Each basket holds 8 plums. How many plums in all?","There are 25 baskets of plums. Each basket has 8 plums. How many plums in all?"]}},
+    question: {"a":25,"b":8,"op":"×","answer":200,"display":{"promptText":"A farmer has 25 baskets. Each basket holds 8 plums. How many plums in all?"}},
   },
   {
     itemId: "multiplication-app-328",
@@ -3282,7 +3282,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":30,"b":6,"op":"×","answer":180,"display":{"promptText":"30 cups each hold 6 sips of water. How many sips in all?","promptOptions":["A teacher has 30 cups. Each cup holds 6 sips of juice. How many sips in all?","There are 30 cups in the classroom. Each cup has 6 sips of water. How many sips in all?"]}},
+    question: {"a":30,"b":6,"op":"×","answer":180,"display":{"promptText":"A teacher has 30 cups. Each cup holds 6 sips of juice. How many sips in all?"}},
   },
   {
     itemId: "multiplication-app-329",
@@ -3292,7 +3292,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":40,"b":5,"op":"×","answer":200,"display":{"promptText":"40 racks each hold 5 jackets. How many jackets in all?","promptOptions":["A store has 40 racks. Each rack holds 5 jackets. How many jackets in all?","There are 40 clothing racks at the store. Each rack has 5 jackets. How many jackets in all?"]}},
+    question: {"a":40,"b":5,"op":"×","answer":200,"display":{"promptText":"A store has 40 racks. Each rack holds 5 jackets. How many jackets in all?"}},
   },
   {
     itemId: "multiplication-app-330",
@@ -3302,7 +3302,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":9,"op":"×","answer":90,"display":{"promptText":"Solar panels are in 10 rows of 9. How many panels?","promptOptions":["The company installed solar panels on a roof in 10 rows with 9 in each row. How many panels did they install?","The team put solar panels on the rooftop in 10 rows with 9 per row. How many panels did they put?","On the roof were 10 rows of solar panels with 9 panels in each row. How many panels altogether?"]}},
+    question: {"a":10,"b":9,"op":"×","answer":90,"display":{"promptText":"The company installed solar panels on a roof in 10 rows with 9 in each row. How many panels did they install?"}},
   },
   {
     itemId: "multiplication-app-331",
@@ -3312,7 +3312,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":9,"op":"×","answer":99,"display":{"promptText":"Skylights are in 11 rows of 9. How many skylights?","promptOptions":["The building had skylights in 11 rows with 9 in each row. How many skylights were in the building?","The architects designed 11 rows of skylights with 9 skylights per row. How many skylights did they design?","In the ceiling were 11 rows of skylights with 9 skylights in each row. How many skylights altogether?"]}},
+    question: {"a":11,"b":9,"op":"×","answer":99,"display":{"promptText":"The building had skylights in 11 rows with 9 in each row. How many skylights were in the building?"}},
   },
   {
     itemId: "multiplication-app-332",
@@ -3322,7 +3322,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":10,"op":"×","answer":120,"display":{"promptText":"Lights are in 12 rows of 10 in a warehouse. How many lights?","promptOptions":["A warehouse worker arranged lights in 12 rows. Each row had 10 lights. How many lights did she arrange?","The warehouse has lights in 12 rows with 10 lights in each row. How many lights are there?","There are 12 rows of lights in the warehouse. Each row has 10 lights. How many lights are in the warehouse?"]}},
+    question: {"a":12,"b":10,"op":"×","answer":120,"display":{"promptText":"A warehouse worker arranged lights in 12 rows. Each row had 10 lights. How many lights did she arrange?"}},
   },
   {
     itemId: "multiplication-app-333",
@@ -3332,7 +3332,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":9,"op":"×","answer":117,"display":{"promptText":"Solar tiles are in 13 rows of 9 on a roof. How many tiles?","promptOptions":["A roofer put solar tiles on the roof in 13 rows with 9 tiles in each row. How many solar tiles did she put?","Solar tiles cover the roof in 13 rows with 9 tiles in each row. How many tiles are on the roof?","The roof has solar tiles arranged in 13 rows of 9. How many tiles cover the roof?"]}},
+    question: {"a":13,"b":9,"op":"×","answer":117,"display":{"promptText":"A roofer put solar tiles on the roof in 13 rows with 9 tiles in each row. How many solar tiles did she put?"}},
   },
   {
     itemId: "multiplication-app-334",
@@ -3342,7 +3342,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":8,"op":"×","answer":112,"display":{"promptText":"Lockers are in 14 rows of 8 in a hallway. How many lockers?","promptOptions":["Someone arranged 14 rows of lockers in the hallway with 8 lockers in each row. How many lockers are there?","The hallway has 14 rows of lockers with 8 in each row. How many lockers line the hallway?","Lockers fill the hallway in 14 rows of 8. How many lockers fill the hallway?"]}},
+    question: {"a":14,"b":8,"op":"×","answer":112,"display":{"promptText":"Someone arranged 14 rows of lockers in the hallway with 8 lockers in each row. How many lockers are there?"}},
   },
   {
     itemId: "multiplication-app-335",
@@ -3352,7 +3352,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":9,"op":"×","answer":135,"display":{"promptText":"Tiles are in 15 rows of 9 in a courtyard. How many tiles?","promptOptions":["A worker laid tiles in the courtyard in 15 rows with 9 tiles in each row. How many tiles did she lay?","The courtyard is covered with tiles in 15 rows of 9. How many tiles cover the courtyard?","Tiles fill the courtyard in 15 rows with 9 tiles in each row. How many tiles are there?"]}},
+    question: {"a":15,"b":9,"op":"×","answer":135,"display":{"promptText":"A worker laid tiles in the courtyard in 15 rows with 9 tiles in each row. How many tiles did she lay?"}},
   },
   {
     itemId: "multiplication-app-336",
@@ -3362,7 +3362,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":8,"op":"×","answer":128,"display":{"promptText":"Bricks are in 16 rows of 8 in a wall. How many bricks?","promptOptions":["A mason built a wall with 16 rows of bricks with 8 bricks in each row. How many bricks did he use?","The wall has 16 rows of bricks with 8 bricks in each row. How many bricks are in the wall?","Bricks form a wall in 16 rows of 8. How many bricks form the wall?"]}},
+    question: {"a":16,"b":8,"op":"×","answer":128,"display":{"promptText":"A mason built a wall with 16 rows of bricks with 8 bricks in each row. How many bricks did he use?"}},
   },
   {
     itemId: "multiplication-app-337",
@@ -3372,7 +3372,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":17,"b":6,"op":"×","answer":102,"display":{"promptText":"Shingles are in 17 rows of 6 on a shed. How many shingles?","promptOptions":["The shed roof has shingles in 17 rows with 6 shingles in each row. How many shingles are on the roof?","Shingles cover the shed in 17 rows of 6. How many shingles cover the shed?"]}},
+    question: {"a":17,"b":6,"op":"×","answer":102,"display":{"promptText":"The shed roof has shingles in 17 rows with 6 shingles in each row. How many shingles are on the roof?"}},
   },
   {
     itemId: "multiplication-app-338",
@@ -3382,7 +3382,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":8,"op":"×","answer":144,"display":{"promptText":"Dominoes are in 18 rows of 8. How many dominoes?","promptOptions":["Dominoes fill the table in 18 rows with 8 in each row. How many dominoes are there?","There are 18 rows of dominoes on the table. Each row has 8 dominoes. How many dominoes are on the table?"]}},
+    question: {"a":18,"b":8,"op":"×","answer":144,"display":{"promptText":"Dominoes fill the table in 18 rows with 8 in each row. How many dominoes are there?"}},
   },
   {
     itemId: "multiplication-app-339",
@@ -3392,7 +3392,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":19,"b":5,"op":"×","answer":95,"display":{"promptText":"Cards are in 19 rows of 5 on a table. How many cards?","promptOptions":["Cards fill the table in 19 rows with 5 cards in each row. How many cards are there?","The table has 19 rows of cards with 5 in each row. How many cards are on the table?"]}},
+    question: {"a":19,"b":5,"op":"×","answer":95,"display":{"promptText":"Cards fill the table in 19 rows with 5 cards in each row. How many cards are there?"}},
   },
   {
     itemId: "multiplication-app-340",
@@ -3402,7 +3402,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":22,"b":5,"op":"×","answer":110,"display":{"promptText":"Flags are in 22 rows of 5. How many flags?","promptOptions":["Flags line the parade route in 22 rows with 5 in each row. How many flags are there?","There are 22 rows of flags with 5 flags in each row. How many flags are there?"]}},
+    question: {"a":22,"b":5,"op":"×","answer":110,"display":{"promptText":"Flags line the parade route in 22 rows with 5 in each row. How many flags are there?"}},
   },
   {
     itemId: "multiplication-app-341",
@@ -3412,7 +3412,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":24,"b":6,"op":"×","answer":144,"display":{"promptText":"Bottles are in 24 rows of 6. How many bottles?","promptOptions":["Bottles fill the shelves in 24 rows with 6 in each row. How many bottles are there?","The store has 24 rows of bottles with 6 bottles in each row. How many bottles are on the shelves?"]}},
+    question: {"a":24,"b":6,"op":"×","answer":144,"display":{"promptText":"Bottles fill the shelves in 24 rows with 6 in each row. How many bottles are there?"}},
   },
   {
     itemId: "multiplication-app-342",
@@ -3422,7 +3422,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":7,"op":"×","answer":175,"display":{"promptText":"Seats are in 25 rows of 7. How many seats?","promptOptions":["Seats fill the auditorium in 25 rows with 7 in each row. How many seats are there?","The auditorium has 25 rows of seats with 7 seats in each row. How many seats are in the auditorium?"]}},
+    question: {"a":25,"b":7,"op":"×","answer":175,"display":{"promptText":"Seats fill the auditorium in 25 rows with 7 in each row. How many seats are there?"}},
   },
   {
     itemId: "multiplication-app-343",
@@ -3432,7 +3432,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":11,"op":"×","answer":110,"display":{"promptText":"10 choirs each have 11 singers. How many singers in all?","promptOptions":["A conductor has 10 choirs. Each choir has 11 singers. How many singers in all?","There are 10 choirs at the music festival. Each choir has 11 singers. How many singers in all?"]}},
+    question: {"a":10,"b":11,"op":"×","answer":110,"display":{"promptText":"A conductor has 10 choirs. Each choir has 11 singers. How many singers in all?"}},
   },
   {
     itemId: "multiplication-app-344",
@@ -3442,7 +3442,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":10,"op":"×","answer":110,"display":{"promptText":"11 buses each hold 10 kids. How many kids in all?","promptOptions":["A bus driver has 11 buses. Each bus holds 10 kids. How many kids in all?","A school has 11 buses. Each bus holds 10 kids. How many kids in all?"]}},
+    question: {"a":11,"b":10,"op":"×","answer":110,"display":{"promptText":"A bus driver has 11 buses. Each bus holds 10 kids. How many kids in all?"}},
   },
   {
     itemId: "multiplication-app-345",
@@ -3452,7 +3452,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":12,"op":"×","answer":132,"display":{"promptText":"11 crates each hold 12 bottles. How many bottles in all?","promptOptions":["A worker has 11 crates. Each crate holds 12 bottles. How many bottles in all?","There are 11 crates to unload. Each crate holds 12 bottles. How many bottles in all?"]}},
+    question: {"a":11,"b":12,"op":"×","answer":132,"display":{"promptText":"A worker has 11 crates. Each crate holds 12 bottles. How many bottles in all?"}},
   },
   {
     itemId: "multiplication-app-346",
@@ -3462,7 +3462,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":9,"op":"×","answer":108,"display":{"promptText":"12 teams each have 9 players. How many players in all?","promptOptions":["A tournament has 12 teams. Each team has 9 players. How many players in all?","There are 12 teams. Each team has 9 players. How many players in all?"]}},
+    question: {"a":12,"b":9,"op":"×","answer":108,"display":{"promptText":"A tournament has 12 teams. Each team has 9 players. How many players in all?"}},
   },
   {
     itemId: "multiplication-app-347",
@@ -3472,7 +3472,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":10,"op":"×","answer":120,"display":{"promptText":"12 classrooms each have 10 desks. How many desks in all?","promptOptions":["A school has 12 classrooms. Each classroom has 10 desks. How many desks in all?","There are 12 classrooms in the school. Each one has 10 desks. How many desks in all?"]}},
+    question: {"a":12,"b":10,"op":"×","answer":120,"display":{"promptText":"A school has 12 classrooms. Each classroom has 10 desks. How many desks in all?"}},
   },
   {
     itemId: "multiplication-app-348",
@@ -3482,7 +3482,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"12 cartons each hold 12 juices. How many juices in all?","promptOptions":["Emma has 12 cartons. Each carton holds 12 juices. How many juices does she have in all?","A factory packed 12 cases. Each case has 12 bottles. How many bottles did they pack?","There are 12 racks in the store. Each rack holds 12 juice boxes. How many juice boxes in all?"]}},
+    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"Emma has 12 cartons. Each carton holds 12 juices. How many juices does she have in all?"}},
   },
   {
     itemId: "multiplication-app-349",
@@ -3492,7 +3492,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":10,"op":"×","answer":130,"display":{"promptText":"13 racks each hold 10 uniforms. How many uniforms in all?","promptOptions":["The team has 13 racks. Each rack holds 10 uniforms. How many uniforms are there in all?","Emma organized 13 shelves. Each shelf has 10 uniforms. How many uniforms did she organize?","A sports club has 13 racks of uniforms. Each rack holds 10 uniforms. How many uniforms in all?"]}},
+    question: {"a":13,"b":10,"op":"×","answer":130,"display":{"promptText":"The team has 13 racks. Each rack holds 10 uniforms. How many uniforms are there in all?"}},
   },
   {
     itemId: "multiplication-app-350",
@@ -3502,7 +3502,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":9,"op":"×","answer":126,"display":{"promptText":"14 squads each have 9 scouts. How many scouts in all?","promptOptions":["The troop has 14 squads. Each squad has 9 scouts. How many scouts are there in all?","Coach organized 14 scout groups. Each group has 9 scouts. How many scouts in all?","There are 14 squads at camp. Each squad has 9 scouts. How many scouts in all?"]}},
+    question: {"a":14,"b":9,"op":"×","answer":126,"display":{"promptText":"The troop has 14 squads. Each squad has 9 scouts. How many scouts are there in all?"}},
   },
   {
     itemId: "multiplication-app-351",
@@ -3512,7 +3512,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":6,"op":"×","answer":90,"display":{"promptText":"15 dozen donuts... wait, simpler: 15 workers each bring 6 lunches. How many lunches in all?","promptOptions":["There are 15 workers. Each worker brings 6 lunches. How many lunches are there in all?","A restaurant has 15 employees. Each one packed 6 lunches. How many lunches in all?","On the job site, 15 workers each brought 6 lunches. How many lunches in all?"]}},
+    question: {"a":15,"b":6,"op":"×","answer":90,"display":{"promptText":"There are 15 workers. Each worker brings 6 lunches. How many lunches are there in all?"}},
   },
   {
     itemId: "multiplication-app-352",
@@ -3522,7 +3522,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":7,"op":"×","answer":112,"display":{"promptText":"16 parties each have 7 guests. How many guests in all?","promptOptions":["Emma is throwing 16 parties. Each party has 7 guests. How many guests in all?","There are 16 parties planned. Each party has 7 guests. How many guests are there in all?","The restaurant has 16 dining areas. Each area has 7 guests. How many guests in all?"]}},
+    question: {"a":16,"b":7,"op":"×","answer":112,"display":{"promptText":"Emma is throwing 16 parties. Each party has 7 guests. How many guests in all?"}},
   },
   {
     itemId: "multiplication-app-353",
@@ -3532,7 +3532,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":17,"b":4,"op":"×","answer":68,"display":{"promptText":"17 vans each hold 4 passengers. How many passengers in all?","promptOptions":["The tour company has 17 vans. Each van holds 4 passengers. How many passengers in all?","Kai arranged 17 vans for the trip. Each van holds 4 passengers. How many passengers are there?","There are 17 vans at the station. Each van holds 4 passengers. How many passengers in all?"]}},
+    question: {"a":17,"b":4,"op":"×","answer":68,"display":{"promptText":"The tour company has 17 vans. Each van holds 4 passengers. How many passengers in all?"}},
   },
   {
     itemId: "multiplication-app-354",
@@ -3542,7 +3542,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":19,"b":5,"op":"×","answer":95,"display":{"promptText":"19 rafts each seat 5 paddlers. How many paddlers in all?","promptOptions":["The camp has 19 rafts on the lake. Each raft has 5 paddlers. How many paddlers in all?","There are 19 rafts at river camp. Each raft seats 5 paddlers. How many paddlers are there?","For the trip, there are 19 rafts. Each one has 5 paddlers. How many paddlers in all?"]}},
+    question: {"a":19,"b":5,"op":"×","answer":95,"display":{"promptText":"The camp has 19 rafts on the lake. Each raft has 5 paddlers. How many paddlers in all?"}},
   },
   {
     itemId: "multiplication-app-355",
@@ -3552,7 +3552,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":21,"b":5,"op":"×","answer":105,"display":{"promptText":"21 rows each have 5 chairs. How many chairs in all?","promptOptions":["The auditorium has 21 rows. Each row has 5 chairs. How many chairs are there in all?","The school set up 21 rows of chairs. Each row has 5 chairs. How many chairs in all?","There are 21 rows of seating. Each row has 5 chairs. How many chairs in all?"]}},
+    question: {"a":21,"b":5,"op":"×","answer":105,"display":{"promptText":"The auditorium has 21 rows. Each row has 5 chairs. How many chairs are there in all?"}},
   },
   {
     itemId: "multiplication-app-356",
@@ -3562,7 +3562,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Koji has 2 pots with 2 flowers each. How many flowers in all?","promptOptions":["Koji has 2 pots. Each pot has 2 flowers. How many flowers does he have in all?","There are 2 pots with 2 flowers each. How many flowers in all?","Koji planted 2 pots of flowers. Each pot has 2 flowers. How many flowers in all?"]}},
+    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Koji has 2 pots. Each pot has 2 flowers. How many flowers does he have in all?"}},
   },
   {
     itemId: "multiplication-app-357",
@@ -3572,7 +3572,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Selma has 2 bowls with 3 peaches each. How many peaches in all?","promptOptions":["Selma has 2 bowls. Each bowl has 3 peaches. How many peaches does she have in all?","There are 2 bowls with 3 peaches each. How many peaches in all?","Selma set out 2 bowls. Each one has 3 peaches. How many peaches in all?"]}},
+    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Selma has 2 bowls. Each bowl has 3 peaches. How many peaches does she have in all?"}},
   },
   {
     itemId: "multiplication-app-358",
@@ -3582,7 +3582,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"3 boxes each hold 5 shells. How many shells in all?","promptOptions":["Maya has 3 boxes. Each box holds 5 shells. How many shells does she have in all?","At the beach, Leo found 3 boxes. Each box has 5 shells. How many shells in all?","There are 3 boxes of shells. Each box has 5 shells. How many shells in all?"]}},
+    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"Maya has 3 boxes. Each box holds 5 shells. How many shells does she have in all?"}},
   },
   {
     itemId: "multiplication-app-359",
@@ -3592,7 +3592,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"Nava has 4 jars with 4 pebbles each. How many pebbles in all?","promptOptions":["Nava has 4 jars. Each jar has 4 pebbles. How many pebbles does she have in all?","There are 4 jars with 4 pebbles each. How many pebbles in all?","Nava collected 4 jars of pebbles. Each jar has 4 pebbles. How many pebbles in all?"]}},
+    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"Nava has 4 jars. Each jar has 4 pebbles. How many pebbles does she have in all?"}},
   },
   {
     itemId: "multiplication-app-360",
@@ -3602,7 +3602,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"5 trays each hold 5 muffins. How many muffins in all?","promptOptions":["Mom baked muffins. She put 5 muffins on each of her 5 trays. How many muffins did she bake in all?","Grandma made 5 trays of muffins. Each tray had 5 muffins. How many muffins did she make in all?"]}},
+    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"Mom baked muffins. She put 5 muffins on each of her 5 trays. How many muffins did she bake in all?"}},
   },
   {
     itemId: "multiplication-app-361",
@@ -3612,7 +3612,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Joss has 3 boxes with 3 cars in each. How many cars in all?","promptOptions":["Joss opened 3 boxes of toy cars. Each box had 3 cars inside. How many cars did Joss find in all?","Joss has 3 toy boxes. Each box holds 3 cars. How many cars does Joss have in all?"]}},
+    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Joss opened 3 boxes of toy cars. Each box had 3 cars inside. How many cars did Joss find in all?"}},
   },
   {
     itemId: "multiplication-app-362",
@@ -3622,7 +3622,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"4 packets each hold 2 beads. How many beads in all?","promptOptions":["Maya got 4 packets of beads. Each packet had 2 beads in it. How many beads did Maya get in all?","There are 4 packets of beads on the table. Each packet has 2 beads. How many beads are there in all?"]}},
+    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Maya got 4 packets of beads. Each packet had 2 beads in it. How many beads did Maya get in all?"}},
   },
   {
     itemId: "multiplication-app-363",
@@ -3632,7 +3632,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"Nia has 2 cups with 4 straws each. How many straws in all?","promptOptions":["Nia put straws in 2 cups. She put 4 straws in each cup. How many straws did she put in all?","Nia has 2 cups. Each cup has 4 straws in it. How many straws does Nia have in all?"]}},
+    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"Nia put straws in 2 cups. She put 4 straws in each cup. How many straws did she put in all?"}},
   },
   {
     itemId: "multiplication-app-364",
@@ -3642,7 +3642,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Devi has 3 plates with 4 pretzels each. How many pretzels in all?","promptOptions":["Devi put pretzels on 3 plates. She put 4 pretzels on each plate. How many pretzels did she put in all?","Devi has 3 plates of pretzels. Each plate has 4 pretzels. How many pretzels does Devi have in all?"]}},
+    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Devi put pretzels on 3 plates. She put 4 pretzels on each plate. How many pretzels did she put in all?"}},
   },
   {
     itemId: "multiplication-app-365",
@@ -3662,7 +3662,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"4 cats each chase 3 butterflies. How many butterflies in all?","promptOptions":["There are 4 cats chasing butterflies. Each cat chases 3 butterflies. How many butterflies are being chased in all?"]}},
+    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"There are 4 cats chasing butterflies. Each cat chases 3 butterflies. How many butterflies are being chased in all?"}},
   },
   {
     itemId: "multiplication-app-367",
@@ -3672,7 +3672,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"5 fishbowls each hold 2 fish. How many fish in all?","promptOptions":["Sam has 5 fishbowls with fish in them. Each bowl holds 2 fish. How many fish does Sam have in all?","There are 5 fishbowls. Each fishbowl has 2 fish. How many fish are there in all?"]}},
+    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"Sam has 5 fishbowls with fish in them. Each bowl holds 2 fish. How many fish does Sam have in all?"}},
   },
   {
     itemId: "multiplication-app-368",
@@ -3682,7 +3682,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"3 nests each hold 2 chicks. How many chicks in all?","promptOptions":["The mama bird has 3 nests. Each nest has 2 chicks. How many chicks does she have in all?","There are 3 bird nests in the tree. Each nest has 2 baby chicks. How many chicks are there in all?"]}},
+    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"The mama bird has 3 nests. Each nest has 2 chicks. How many chicks does she have in all?"}},
   },
   {
     itemId: "multiplication-app-369",
@@ -3692,7 +3692,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"5 pouches each hold 3 snacks. How many snacks in all?","promptOptions":["Alex has 5 pouches of snacks. Each pouch holds 3 snacks. How many snacks does Alex have in all?","Mom packed 5 pouches with snacks. Each pouch had 3 snacks. How many snacks did she pack in all?"]}},
+    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"Alex has 5 pouches of snacks. Each pouch holds 3 snacks. How many snacks does Alex have in all?"}},
   },
   {
     itemId: "multiplication-app-370",
@@ -3702,7 +3702,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"4 lunchboxes each hold 5 crackers. How many crackers in all?","promptOptions":["Dad packed 4 lunchboxes with crackers. Each box had 5 crackers. How many crackers did he pack in all?","There are 4 lunchboxes on the table. Each one holds 5 crackers. How many crackers are there in all?"]}},
+    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"Dad packed 4 lunchboxes with crackers. Each box had 5 crackers. How many crackers did he pack in all?"}},
   },
   {
     itemId: "multiplication-app-371",
@@ -3712,7 +3712,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Berries form 2 rows of 2 on a napkin. How many berries?","promptOptions":["Someone put berries on a napkin in 2 rows with 2 berries in each row. How many berries did they put?","Berries fill the napkin in 2 rows of 2. How many berries are on the napkin?","There are 2 rows of berries on the napkin with 2 in each row. How many berries are there?"]}},
+    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Someone put berries on a napkin in 2 rows with 2 berries in each row. How many berries did they put?"}},
   },
   {
     itemId: "multiplication-app-372",
@@ -3722,7 +3722,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Crackers form 2 rows of 3 on a plate. How many crackers?","promptOptions":["Maya arranged crackers on her plate. She put them in 2 rows of 3. How many crackers did she arrange?","Grandpa put crackers in 2 rows of 3 for snack time. How many crackers did he put there?","A snack plate has crackers in 2 rows of 3. How many crackers are on the plate?"]}},
+    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Maya arranged crackers on her plate. She put them in 2 rows of 3. How many crackers did she arrange?"}},
   },
   {
     itemId: "multiplication-app-373",
@@ -3732,7 +3732,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Apple slices form 3 rows of 2 on a cutting board. How many slices?","promptOptions":["Emma arranged apple slices in 3 rows of 2. How many apple slices did she arrange?","Mom put apple slices in 3 rows of 2 on the table. How many apple slices did she put down?","A cutting board has 3 rows of 2 apple slices. How many apple slices are on the board?"]}},
+    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Emma arranged apple slices in 3 rows of 2. How many apple slices did she arrange?"}},
   },
   {
     itemId: "multiplication-app-374",
@@ -3742,7 +3742,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"Paintings hang in 2 rows of 4. How many paintings?","promptOptions":["Jake hung paintings in 2 rows of 4 above his bed. How many paintings did he hang?","The teacher displayed paintings in 2 rows of 4. How many paintings did she display?","An art room has 2 rows of 4 paintings on the wall. How many paintings are there?"]}},
+    question: {"a":2,"b":4,"op":"×","answer":8,"display":{"promptText":"Jake hung paintings in 2 rows of 4 above his bed. How many paintings did he hang?"}},
   },
   {
     itemId: "multiplication-app-375",
@@ -3752,7 +3752,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Windows form 3 rows of 3 on a dollhouse. How many windows?","promptOptions":["Emma built a dollhouse with windows in 3 rows of 3. How many windows are on the house?","A dollhouse has windows in 3 rows of 3. How many windows does the dollhouse have?","The toy store's dollhouse has 3 rows of 3 windows. How many windows are on it?"]}},
+    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Emma built a dollhouse with windows in 3 rows of 3. How many windows are on the house?"}},
   },
   {
     itemId: "multiplication-app-376",
@@ -3762,7 +3762,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Cookies form 3 rows of 4 on a cookie sheet. How many cookies?","promptOptions":["Mom put cookies in 3 rows of 4 on the baking sheet. How many cookies did she put on the sheet?","The baker arranged cookies in 3 rows of 4. How many cookies did she arrange?","A cookie sheet has 3 rows of 4 cookies. How many cookies are on the sheet?"]}},
+    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Mom put cookies in 3 rows of 4 on the baking sheet. How many cookies did she put on the sheet?"}},
   },
   {
     itemId: "multiplication-app-377",
@@ -3772,7 +3772,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Pots are in 4 rows of 3 on a garden step. How many pots?","promptOptions":["Grandpa put pots in 4 rows of 3 on the garden steps. How many pots did he put on the steps?","The gardener arranged pots in 4 rows of 3. How many pots did she arrange?","A garden step has pots in 4 rows of 3. How many pots are there?"]}},
+    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Grandpa put pots in 4 rows of 3 on the garden steps. How many pots did he put on the steps?"}},
   },
   {
     itemId: "multiplication-app-378",
@@ -3782,7 +3782,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"Stamps are in 4 rows of 4 on a sheet. How many stamps?","promptOptions":["Sofia put stamps in 4 rows of 4 on a sheet. How many stamps did she put on the sheet?","The collector arranged stamps in 4 rows of 4. How many stamps did she arrange?","A stamp sheet has stamps in 4 rows of 4. How many stamps are there?"]}},
+    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"Sofia put stamps in 4 rows of 4 on a sheet. How many stamps did she put on the sheet?"}},
   },
   {
     itemId: "multiplication-app-379",
@@ -3792,7 +3792,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"Bottles are in 5 rows of 2 in a cooler. How many bottles?","promptOptions":["Dad put bottles in 5 rows of 2 in the cooler. How many bottles did he put in the cooler?","The picnic cooler has 5 rows of 2 bottles. How many bottles are there?","A cooler has bottles in 5 rows of 2. How many bottles are in the cooler?"]}},
+    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"Dad put bottles in 5 rows of 2 in the cooler. How many bottles did he put in the cooler?"}},
   },
   {
     itemId: "multiplication-app-380",
@@ -3802,7 +3802,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Buttons form 2 rows of 5 on a coat. How many buttons?","promptOptions":["Mom sewed buttons in 2 rows of 5 on the coat. How many buttons did she sew on?","The tailor put buttons in 2 rows of 5. How many buttons did she put on?","A coat has buttons in 2 rows of 5. How many buttons are on the coat?"]}},
+    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Mom sewed buttons in 2 rows of 5 on the coat. How many buttons did she sew on?"}},
   },
   {
     itemId: "multiplication-app-381",
@@ -3812,7 +3812,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"Flowers are in 3 rows of 5 in a pot. How many flowers?","promptOptions":["Lily planted flowers in 3 rows of 5 in the pot. How many flowers did she plant in the pot?","The gardener arranged flowers in 3 rows of 5. How many flowers did she arrange?","A garden pot has flowers in 3 rows of 5. How many flowers are in the pot?"]}},
+    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"Lily planted flowers in 3 rows of 5 in the pot. How many flowers did she plant in the pot?"}},
   },
   {
     itemId: "multiplication-app-382",
@@ -3822,7 +3822,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"Magnets form 5 rows of 3 on a fridge. How many magnets?","promptOptions":["Sofia put magnets in 5 rows of 3 on the fridge. How many magnets did she put on the fridge?","The art class put magnets in 5 rows of 3. How many magnets did they use?","A fridge has magnets in 5 rows of 3. How many magnets are there?"]}},
+    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"Sofia put magnets in 5 rows of 3 on the fridge. How many magnets did she put on the fridge?"}},
   },
   {
     itemId: "multiplication-app-383",
@@ -3832,7 +3832,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"Pins are in 5 rows of 5 on a bulletin board. How many pins?","promptOptions":["Jack put pins in 5 rows of 5 on the bulletin board. How many pins did he put on the board?","The teacher put pins in 5 rows of 5. How many pins did she use?","A bulletin board has pins in 5 rows of 5. How many pins are on the board?"]}},
+    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"Jack put pins in 5 rows of 5 on the bulletin board. How many pins did he put on the board?"}},
   },
   {
     itemId: "multiplication-app-384",
@@ -3842,7 +3842,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"Leaves are in 4 rows of 5 in a scrapbook. How many leaves?","promptOptions":["Emma arranged leaves in 4 rows. She put 5 leaves in each row. How many leaves did she arrange?","In a scrapbook, there are leaves in 4 rows. Each row has 5 leaves. How many leaves are in the scrapbook?","The leaves in the scrapbook are in 4 rows of 5. How many leaves are there?"]}},
+    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"Emma arranged leaves in 4 rows. She put 5 leaves in each row. How many leaves did she arrange?"}},
   },
   {
     itemId: "multiplication-app-385",
@@ -3852,7 +3852,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"Ornaments are in 5 rows of 4 on a tree. How many ornaments?","promptOptions":["Maya hung ornaments in 5 rows on the tree. She put 4 ornaments in each row. How many ornaments did she hang?","On a Christmas tree, there are ornaments in 5 rows. Each row has 4 ornaments. How many ornaments are on the tree?","The ornaments are in 5 rows of 4 on the tree. How many ornaments are there?"]}},
+    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"Maya hung ornaments in 5 rows on the tree. She put 4 ornaments in each row. How many ornaments did she hang?"}},
   },
   {
     itemId: "multiplication-app-386",
@@ -3862,7 +3862,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"2 puppies each have 2 ears. How many ears in all?","promptOptions":["Maya has 2 puppies. Each puppy has 2 ears. How many ears do her puppies have in all?","Two puppies are playing. Each puppy has 2 ears. How many ears do the puppies have in all?"]}},
+    question: {"a":2,"b":2,"op":"×","answer":4,"display":{"promptText":"Maya has 2 puppies. Each puppy has 2 ears. How many ears do her puppies have in all?"}},
   },
   {
     itemId: "multiplication-app-387",
@@ -3872,7 +3872,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"3 friends each brought 3 gifts. How many gifts in all?","promptOptions":["Three friends each brought 3 gifts to the party. How many gifts in all?","Kai, Maya, and Liam each brought 3 gifts to the party. How many gifts in all?"]}},
+    question: {"a":3,"b":3,"op":"×","answer":9,"display":{"promptText":"Three friends each brought 3 gifts to the party. How many gifts in all?"}},
   },
   {
     itemId: "multiplication-app-388",
@@ -3882,7 +3882,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"4 ducklings each have 2 wings. How many wings in all?","promptOptions":["At the pond, there were 4 little ducklings. Each one has 2 wings. How many wings in all?"]}},
+    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"At the pond, there were 4 little ducklings. Each one has 2 wings. How many wings in all?"}},
   },
   {
     itemId: "multiplication-app-389",
@@ -3892,7 +3892,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"2 clocks each show 3 hands. How many hands in all?","promptOptions":["Maya has 2 clocks in her room. Each clock shows 3 hands. How many hands in all?","There are 2 clocks on the shelf. Each one has 3 hands. How many hands in all?"]}},
+    question: {"a":2,"b":3,"op":"×","answer":6,"display":{"promptText":"Maya has 2 clocks in her room. Each clock shows 3 hands. How many hands in all?"}},
   },
   {
     itemId: "multiplication-app-390",
@@ -3902,7 +3902,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"3 quilts each have 4 corners. How many corners in all?","promptOptions":["Grandma made 3 quilts. Each quilt has 4 corners. How many corners in all?"]}},
+    question: {"a":3,"b":4,"op":"×","answer":12,"display":{"promptText":"Grandma made 3 quilts. Each quilt has 4 corners. How many corners in all?"}},
   },
   {
     itemId: "multiplication-app-391",
@@ -3912,7 +3912,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"4 napkins each have 4 corners. How many corners in all?","promptOptions":["Mom set the table with 4 napkins. Each napkin has 4 corners. How many corners in all?","Kai folded 4 napkins for dinner. Each napkin has 4 corners. How many corners in all?","Four napkins were on the table. Each napkin has 4 corners. How many corners in all?"]}},
+    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"Mom set the table with 4 napkins. Each napkin has 4 corners. How many corners in all?"}},
   },
   {
     itemId: "multiplication-app-392",
@@ -3922,7 +3922,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"5 pairs of shoes each have 2 laces. How many laces in all?","promptOptions":["Rosa has 5 pairs of shoes. Each pair has 2 laces. How many laces in all?","In the closet, there are 5 pairs of shoes. Each pair has 2 laces. How many laces in all?"]}},
+    question: {"a":5,"b":2,"op":"×","answer":10,"display":{"promptText":"Rosa has 5 pairs of shoes. Each pair has 2 laces. How many laces in all?"}},
   },
   {
     itemId: "multiplication-app-393",
@@ -3932,7 +3932,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"2 baskets each hold 5 apples. How many apples in all?","promptOptions":["Mom picked apples and put them in 2 baskets. Each basket holds 5 apples. How many apples in all?","Kai filled 2 baskets with apples. Each basket holds 5 apples. How many apples in all?"]}},
+    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Mom picked apples and put them in 2 baskets. Each basket holds 5 apples. How many apples in all?"}},
   },
   {
     itemId: "multiplication-app-394",
@@ -3942,7 +3942,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"3 vases each hold 5 daisies. How many daisies in all?","promptOptions":["Mom put flowers in 3 vases. Each vase holds 5 daisies. How many daisies in all?","There are 3 vases on the table. Each vase has 5 daisies. How many daisies in all?"]}},
+    question: {"a":3,"b":5,"op":"×","answer":15,"display":{"promptText":"Mom put flowers in 3 vases. Each vase holds 5 daisies. How many daisies in all?"}},
   },
   {
     itemId: "multiplication-app-395",
@@ -3952,7 +3952,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"4 pots each hold 5 tulips. How many tulips in all?","promptOptions":["There are 4 pots in the garden. Each pot has 5 tulips. How many tulips in all?"]}},
+    question: {"a":4,"b":5,"op":"×","answer":20,"display":{"promptText":"There are 4 pots in the garden. Each pot has 5 tulips. How many tulips in all?"}},
   },
   {
     itemId: "multiplication-app-396",
@@ -3962,7 +3962,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"5 bouquets each have 5 roses. How many roses in all?","promptOptions":["The florist made 5 bouquets. Each bouquet has 5 roses. How many roses in all?","For the wedding, there were 5 bouquets. Each bouquet had 5 roses. How many roses in all?","Emma arranged 5 bouquets. Each bouquet has 5 roses. How many roses in all?"]}},
+    question: {"a":5,"b":5,"op":"×","answer":25,"display":{"promptText":"The florist made 5 bouquets. Each bouquet has 5 roses. How many roses in all?"}},
   },
   {
     itemId: "multiplication-app-397",
@@ -3972,7 +3972,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"5 boxes each hold 3 cupcakes. How many cupcakes in all?","promptOptions":["Dad packed cupcakes in 5 boxes. Each box has 3 cupcakes. How many cupcakes in all?","There are 5 boxes of cupcakes on the counter. Each box has 3 cupcakes. How many cupcakes in all?"]}},
+    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"Dad packed cupcakes in 5 boxes. Each box has 3 cupcakes. How many cupcakes in all?"}},
   },
   {
     itemId: "multiplication-app-398",
@@ -3982,7 +3982,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"4 cages each hold 3 hamsters. How many hamsters in all?","promptOptions":["Liam has 4 hamster cages. Each cage holds 3 hamsters. How many hamsters in all?","At the pet store, there are 4 cages. Each cage has 3 hamsters. How many hamsters in all?"]}},
+    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Liam has 4 hamster cages. Each cage holds 3 hamsters. How many hamsters in all?"}},
   },
   {
     itemId: "multiplication-app-399",
@@ -3992,7 +3992,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"5 bags each hold 4 buttons. How many buttons in all?","promptOptions":["Emma has 5 bags of buttons. Each bag holds 4 buttons. How many buttons are there in all?","There are 5 bags with 4 buttons in each. How many buttons in all?","Mom packed 4 buttons into each of 5 bags. How many buttons did she pack in all?"]}},
+    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"Emma has 5 bags of buttons. Each bag holds 4 buttons. How many buttons are there in all?"}},
   },
   {
     itemId: "multiplication-app-400",
@@ -4002,7 +4002,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"4 quads each have 4 wheels. How many wheels in all?","promptOptions":["Jake has 4 toy cars. Each toy car has 4 wheels. How many wheels does he have in all?","There are 4 toy cars with 4 wheels on each. How many wheels are there in all?"]}},
+    question: {"a":4,"b":4,"op":"×","answer":16,"display":{"promptText":"Jake has 4 toy cars. Each toy car has 4 wheels. How many wheels does he have in all?"}},
   },
   {
     itemId: "multiplication-app-401",
@@ -4012,7 +4012,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":2,"op":"×","answer":12,"display":{"promptText":"6 small baskets each hold 2 ornaments. How many ornaments in all?","promptOptions":["Sofia has 6 baskets. She put 2 ornaments in each basket. How many ornaments are there in all?","There are 6 small baskets with 2 ornaments in each. How many ornaments in all?"]}},
+    question: {"a":6,"b":2,"op":"×","answer":12,"display":{"promptText":"Sofia has 6 baskets. She put 2 ornaments in each basket. How many ornaments are there in all?"}},
   },
   {
     itemId: "multiplication-app-402",
@@ -4022,7 +4022,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":5,"op":"×","answer":30,"display":{"promptText":"6 crates each hold 5 limes. How many limes in all?","promptOptions":["The farmer has 6 crates of limes. Each crate holds 5 limes. How many limes does he have in all?","There are 6 crates with 5 limes in each. How many limes in all?","A store packed 5 limes in each of 6 crates. How many limes did they pack in all?"]}},
+    question: {"a":6,"b":5,"op":"×","answer":30,"display":{"promptText":"The farmer has 6 crates of limes. Each crate holds 5 limes. How many limes does he have in all?"}},
   },
   {
     itemId: "multiplication-app-403",
@@ -4032,7 +4032,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":3,"op":"×","answer":21,"display":{"promptText":"7 nets each catch 3 butterflies. How many butterflies in all?","promptOptions":["The children have 7 butterfly nets. Each net catches 3 butterflies. How many butterflies do they catch in all?","There are 7 butterfly nets with 3 butterflies in each. How many butterflies in all?"]}},
+    question: {"a":7,"b":3,"op":"×","answer":21,"display":{"promptText":"The children have 7 butterfly nets. Each net catches 3 butterflies. How many butterflies do they catch in all?"}},
   },
   {
     itemId: "multiplication-app-404",
@@ -4042,7 +4042,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"7 cubicles each hold 6 files. How many files in all?","promptOptions":["The office has 7 cubicles. Each cubicle holds 6 files. How many files are there in all?","There are 7 cubicles with 6 files in each. How many files in all?"]}},
+    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"The office has 7 cubicles. Each cubicle holds 6 files. How many files are there in all?"}},
   },
   {
     itemId: "multiplication-app-405",
@@ -4052,7 +4052,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":3,"op":"×","answer":24,"display":{"promptText":"8 rows each have 3 chairs. How many chairs in all?","promptOptions":["The classroom has 8 rows of chairs. Each row has 3 chairs. How many chairs are there in all?","There are 8 rows with 3 chairs in each row. How many chairs in all?"]}},
+    question: {"a":8,"b":3,"op":"×","answer":24,"display":{"promptText":"The classroom has 8 rows of chairs. Each row has 3 chairs. How many chairs are there in all?"}},
   },
   {
     itemId: "multiplication-app-406",
@@ -4062,7 +4062,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":4,"op":"×","answer":36,"display":{"promptText":"9 boxes each hold 4 markers. How many markers in all?","promptOptions":["The art class has 9 boxes of markers. Each box holds 4 markers. How many markers are there in all?","There are 9 boxes with 4 markers in each. How many markers in all?"]}},
+    question: {"a":9,"b":4,"op":"×","answer":36,"display":{"promptText":"The art class has 9 boxes of markers. Each box holds 4 markers. How many markers are there in all?"}},
   },
   {
     itemId: "multiplication-app-407",
@@ -4072,7 +4072,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"9 packs each hold 5 water bottles. How many bottles in all?","promptOptions":["The team has 9 packs of water bottles. Each pack holds 5 bottles. How many bottles do they have in all?","There are 9 packs with 5 water bottles in each pack. How many bottles in all?"]}},
+    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"The team has 9 packs of water bottles. Each pack holds 5 bottles. How many bottles do they have in all?"}},
   },
   {
     itemId: "multiplication-app-408",
@@ -4082,7 +4082,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":9,"op":"×","answer":27,"display":{"promptText":"3 hives each have 9 bees. How many bees in all?","promptOptions":["There are 3 beehives. Each hive has 9 bees. How many bees are there in all?","The beekeeper has 3 hives. Each hive has 9 bees. How many bees does she have in all?"]}},
+    question: {"a":3,"b":9,"op":"×","answer":27,"display":{"promptText":"There are 3 beehives. Each hive has 9 bees. How many bees are there in all?"}},
   },
   {
     itemId: "multiplication-app-409",
@@ -4092,7 +4092,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":9,"op":"×","answer":36,"display":{"promptText":"4 shrubs each have 9 roses. How many roses in all?","promptOptions":["Mom's garden has 4 rose bushes. Each bush has 9 roses. How many roses are there in all?","There are 4 rose bushes with 9 roses on each. How many roses in all?"]}},
+    question: {"a":4,"b":9,"op":"×","answer":36,"display":{"promptText":"Mom's garden has 4 rose bushes. Each bush has 9 roses. How many roses are there in all?"}},
   },
   {
     itemId: "multiplication-app-410",
@@ -4102,7 +4102,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":6,"op":"×","answer":30,"display":{"promptText":"5 food trucks each sell 6 tacos. How many tacos in all?","promptOptions":["At the fair, there are 5 food trucks. Each truck sells 6 tacos. How many tacos do they sell in all?","There are 5 food trucks selling 6 tacos each. How many tacos are sold in all?"]}},
+    question: {"a":5,"b":6,"op":"×","answer":30,"display":{"promptText":"At the fair, there are 5 food trucks. Each truck sells 6 tacos. How many tacos do they sell in all?"}},
   },
   {
     itemId: "multiplication-app-411",
@@ -4112,7 +4112,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":7,"op":"×","answer":35,"display":{"promptText":"5 kayaks each hold 7 items. How many items in all?","promptOptions":["Sofia packed 5 kayaks. Each one held 7 items. How many items did she pack in all?","Marcus had 5 kayaks for his trip. Each kayak could hold 7 pieces of gear. How many pieces of gear did he have altogether?","At the dock, there were 5 kayaks. Each one held 7 items. How many items could all the kayaks hold?"]}},
+    question: {"a":5,"b":7,"op":"×","answer":35,"display":{"promptText":"Sofia packed 5 kayaks. Each one held 7 items. How many items did she pack in all?"}},
   },
   {
     itemId: "multiplication-app-412",
@@ -4122,7 +4122,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"6 planters each hold 9 tulip bulbs. How many bulbs in all?","promptOptions":["Emma set up 6 planters. Each planter held 9 tulip bulbs. How many bulbs did she plant in all?","Mom bought 6 large planters. She put 9 tulip bulbs in each one. How many bulbs did she plant altogether?","In the garden, there were 6 planters. Each one held 9 tulip bulbs. How many tulip bulbs were there in total?"]}},
+    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"Emma set up 6 planters. Each planter held 9 tulip bulbs. How many bulbs did she plant in all?"}},
   },
   {
     itemId: "multiplication-app-413",
@@ -4132,7 +4132,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":9,"op":"×","answer":63,"display":{"promptText":"7 trees each have 9 birds. How many birds in all?","promptOptions":["In the park, there were 7 big trees. Each tree had 9 birds sitting in it. How many birds were in all the trees?","Maya watched 7 apple trees. Each tree had 9 birds building nests. How many birds were there in total?","The farmer had 7 trees in his yard. Each tree had 9 birds. How many birds were there altogether?"]}},
+    question: {"a":7,"b":9,"op":"×","answer":63,"display":{"promptText":"In the park, there were 7 big trees. Each tree had 9 birds sitting in it. How many birds were in all the trees?"}},
   },
   {
     itemId: "multiplication-app-414",
@@ -4142,7 +4142,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":9,"op":"×","answer":72,"display":{"promptText":"8 library shelves each hold 9 books. How many books in all?","promptOptions":["The library had 8 shelves. Each shelf held 9 books. How many books were on all the shelves?","In the classroom, there were 8 bookshelves. Each one held 9 books. How many books were there in all?","Marcus organized 8 shelves. He put 9 books on each shelf. How many books did he organize altogether?"]}},
+    question: {"a":8,"b":9,"op":"×","answer":72,"display":{"promptText":"The library had 8 shelves. Each shelf held 9 books. How many books were on all the shelves?"}},
   },
   {
     itemId: "multiplication-app-415",
@@ -4152,7 +4152,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":9,"op":"×","answer":81,"display":{"promptText":"9 orchards each have 9 apple trees. How many trees in all?","promptOptions":["A farmer owned 9 orchards. Each orchard had 9 apple trees. How many apple trees did he have in all?","There were 9 orchards in the valley. Each orchard had 9 apple trees. How many apple trees were there in total?","Mrs. Chen managed 9 orchards. She had 9 apple trees in each one. How many apple trees did she have altogether?"]}},
+    question: {"a":9,"b":9,"op":"×","answer":81,"display":{"promptText":"A farmer owned 9 orchards. Each orchard had 9 apple trees. How many apple trees did he have in all?"}},
   },
   {
     itemId: "multiplication-app-416",
@@ -4162,7 +4162,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":3,"op":"×","answer":18,"display":{"promptText":"Canoes are in 6 rows of 3 at a camp. How many canoes?","promptOptions":["Marcus lined up the canoes in 6 rows with 3 canoes in each row. How many canoes did he line up?","At camp, the canoes are in 6 rows. There are 3 canoes in each row. How many canoes are at the camp?","The canoes are arranged in 6 rows of 3. How many canoes are there?"]}},
+    question: {"a":6,"b":3,"op":"×","answer":18,"display":{"promptText":"Marcus lined up the canoes in 6 rows with 3 canoes in each row. How many canoes did he line up?"}},
   },
   {
     itemId: "multiplication-app-417",
@@ -4172,7 +4172,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":4,"op":"×","answer":24,"display":{"promptText":"Pieces of chalk are in 6 rows of 4 in a box. How many pieces?","promptOptions":["Sofia put chalk in 6 rows with 4 pieces in each row. How many pieces of chalk did she use?","The teacher put chalk in a box in 6 rows. Each row has 4 pieces. How many pieces are in the box?","Chalk is in a box in 6 rows of 4. How many pieces of chalk are in the box?"]}},
+    question: {"a":6,"b":4,"op":"×","answer":24,"display":{"promptText":"Sofia put chalk in 6 rows with 4 pieces in each row. How many pieces of chalk did she use?"}},
   },
   {
     itemId: "multiplication-app-418",
@@ -4182,7 +4182,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":5,"op":"×","answer":35,"display":{"promptText":"Rubber ducks are in 7 rows of 5 in a tub. How many ducks?","promptOptions":["Zoe put rubber ducks in a tub in 7 rows. Each row has 5 ducks. How many ducks did she put in the tub?","In the tub, there are rubber ducks in 7 rows. Each row has 5 ducks. How many ducks are in the tub?","The rubber ducks are in 7 rows of 5 in the tub. How many ducks are there?"]}},
+    question: {"a":7,"b":5,"op":"×","answer":35,"display":{"promptText":"Zoe put rubber ducks in a tub in 7 rows. Each row has 5 ducks. How many ducks did she put in the tub?"}},
   },
   {
     itemId: "multiplication-app-419",
@@ -4192,7 +4192,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":4,"op":"×","answer":32,"display":{"promptText":"Jars are in 8 rows of 4 in a pantry. How many jars?","promptOptions":["Mom put jars in the pantry in 8 rows. Each row has 4 jars. How many jars did she put in the pantry?","The jars are arranged in 8 rows. Each row has 4 jars. How many jars are in the pantry?","In the pantry, there are jars in 8 rows of 4. How many jars are there?"]}},
+    question: {"a":8,"b":4,"op":"×","answer":32,"display":{"promptText":"Mom put jars in the pantry in 8 rows. Each row has 4 jars. How many jars did she put in the pantry?"}},
   },
   {
     itemId: "multiplication-app-420",
@@ -4202,7 +4202,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"Cups are in 8 rows of 6 in a rack. How many cups?","promptOptions":["Dad put cups in a rack in 8 rows. Each row has 6 cups. How many cups did he put in the rack?","On the counter, there are cups in 8 rows. Each row has 6 cups. How many cups are on the counter?","The cups are in a rack in 8 rows of 6. How many cups are in the rack?"]}},
+    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"Dad put cups in a rack in 8 rows. Each row has 6 cups. How many cups did he put in the rack?"}},
   },
   {
     itemId: "multiplication-app-421",
@@ -4212,7 +4212,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":4,"op":"×","answer":36,"display":{"promptText":"Hats are in 9 rows of 4 in a store. How many hats?","promptOptions":["The worker put hats on display in 9 rows with 4 hats in each row. How many hats did the worker put on display?","In the store, there are hats in 9 rows. Each row has 4 hats. How many hats are in the store?","Hats are on display in 9 rows of 4. How many hats are there?"]}},
+    question: {"a":9,"b":4,"op":"×","answer":36,"display":{"promptText":"The worker put hats on display in 9 rows with 4 hats in each row. How many hats did the worker put on display?"}},
   },
   {
     itemId: "multiplication-app-422",
@@ -4222,7 +4222,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"Boots are in 9 rows of 5 in a closet. How many boots?","promptOptions":["Carlos put boots in the closet in 9 rows. Each row has 5 boots. How many boots did he put in the closet?","In the closet, there are boots in 9 rows. Each row has 5 boots. How many boots are in the closet?","The boots are in 9 rows of 5 in the closet. How many boots are there?"]}},
+    question: {"a":9,"b":5,"op":"×","answer":45,"display":{"promptText":"Carlos put boots in the closet in 9 rows. Each row has 5 boots. How many boots did he put in the closet?"}},
   },
   {
     itemId: "multiplication-app-423",
@@ -4232,7 +4232,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"Windows are in 6 rows of 6 on a building. How many windows?","promptOptions":["The building has windows in 6 rows. Each row has 6 windows. How many windows are on the building?","On a tall building, there are windows in 6 rows. Each row has 6 windows. How many windows are on the building?","Windows are in 6 rows of 6 on a building. How many windows are there?"]}},
+    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"The building has windows in 6 rows. Each row has 6 windows. How many windows are on the building?"}},
   },
   {
     itemId: "multiplication-app-424",
@@ -4242,7 +4242,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"Lockers are in 7 rows of 6 in a hallway. How many lockers?","promptOptions":["The hallway has lockers in 7 rows. Each row has 6 lockers. How many lockers are in the hallway?","In the hallway, there are lockers in 7 rows. Each row has 6 lockers. How many lockers are in the hallway?","Lockers are in 7 rows of 6 in the hallway. How many lockers are in the hallway?"]}},
+    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"The hallway has lockers in 7 rows. Each row has 6 lockers. How many lockers are in the hallway?"}},
   },
   {
     itemId: "multiplication-app-425",
@@ -4252,7 +4252,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":9,"op":"×","answer":81,"display":{"promptText":"Photos are in 9 rows of 9 in an album. How many photos?","promptOptions":["Grandma put photos in her album in 9 rows. Each row has 9 photos. How many photos are in the album?","An album has photos in 9 rows. Each row has 9 photos. How many photos are in the album?","The photos are in 9 rows of 9 in the album. How many photos are there?"]}},
+    question: {"a":9,"b":9,"op":"×","answer":81,"display":{"promptText":"Grandma put photos in her album in 9 rows. Each row has 9 photos. How many photos are in the album?"}},
   },
   {
     itemId: "multiplication-app-426",
@@ -4262,7 +4262,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"6 drummers each play 6 beats. How many beats in all?","promptOptions":["A band had 6 drummers. Each drummer played 6 beats. How many beats did they play in all?","At the concert, 6 drummers took the stage. Each one played 6 beats. How many beats did they play together?","Emma watched 6 drum players. Each one played 6 beats. How many beats did she hear in total?"]}},
+    question: {"a":6,"b":6,"op":"×","answer":36,"display":{"promptText":"A band had 6 drummers. Each drummer played 6 beats. How many beats did they play in all?"}},
   },
   {
     itemId: "multiplication-app-427",
@@ -4272,7 +4272,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"7 tables each seat 8 guests. How many guests in all?","promptOptions":["For the party, there were 7 tables. Each table could seat 8 guests. How many guests could sit in all?","At the restaurant, there were 7 tables. Each one had room for 8 guests. How many guests could sit altogether?","Mom set up 7 tables for dinner. Each table seated 8 people. How many people could sit in total?"]}},
+    question: {"a":7,"b":8,"op":"×","answer":56,"display":{"promptText":"For the party, there were 7 tables. Each table could seat 8 guests. How many guests could sit in all?"}},
   },
   {
     itemId: "multiplication-app-428",
@@ -4282,7 +4282,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"8 crates each hold 6 pineapples. How many pineapples in all?","promptOptions":["The store received 8 crates of pineapples. Each crate held 6 pineapples. How many pineapples were there in all?","A farmer picked 8 crates. Each crate held 6 pineapples. How many pineapples did he pick altogether?","At the market, there were 8 crates. Each one held 6 juicy pineapples. How many pineapples were there in total?"]}},
+    question: {"a":8,"b":6,"op":"×","answer":48,"display":{"promptText":"The store received 8 crates of pineapples. Each crate held 6 pineapples. How many pineapples were there in all?"}},
   },
   {
     itemId: "multiplication-app-429",
@@ -4292,7 +4292,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":7,"op":"×","answer":63,"display":{"promptText":"9 vans each carry 7 instruments. How many instruments in all?","promptOptions":["A band traveled in 9 vans. Each van carried 7 instruments. How many instruments did they carry in all?","There were 9 vans for the music school. Each van carried 7 instruments. How many instruments did all the vans carry?","The orchestra packed 9 vans. They put 7 instruments in each van. How many instruments did they pack altogether?"]}},
+    question: {"a":9,"b":7,"op":"×","answer":63,"display":{"promptText":"A band traveled in 9 vans. Each van carried 7 instruments. How many instruments did they carry in all?"}},
   },
   {
     itemId: "multiplication-app-430",
@@ -4302,7 +4302,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"6 troops each have 9 scouts. How many scouts in all?","promptOptions":["There were 6 scout troops. Each troop had 9 scouts. How many scouts were there in all?","A scout leader supervised 6 troops. Each troop had 9 scouts. How many scouts were there altogether?","The scout organization had 6 troops. Each one had 9 scouts. How many scouts did they have in total?"]}},
+    question: {"a":6,"b":9,"op":"×","answer":54,"display":{"promptText":"There were 6 scout troops. Each troop had 9 scouts. How many scouts were there in all?"}},
   },
   {
     itemId: "multiplication-app-431",
@@ -4312,7 +4312,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":4,"op":"×","answer":40,"display":{"promptText":"10 coolers each hold 4 juices. How many juices in all?","promptOptions":["For the picnic, there were 10 coolers. Each cooler held 4 juice boxes. How many juice boxes were there in all?","At the beach, Dad brought 10 coolers. Each one held 4 juices. How many juices did he bring altogether?","The team packed 10 coolers for the game. Each cooler had 4 juices inside. How many juices did they pack in total?"]}},
+    question: {"a":10,"b":4,"op":"×","answer":40,"display":{"promptText":"For the picnic, there were 10 coolers. Each cooler held 4 juice boxes. How many juice boxes were there in all?"}},
   },
   {
     itemId: "multiplication-app-432",
@@ -4322,7 +4322,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":3,"op":"×","answer":33,"display":{"promptText":"11 trays each have 3 desserts. How many desserts in all?","promptOptions":["For the bake sale, there were 11 trays. Each tray had 3 desserts. How many desserts were there in all?","Mom baked 11 trays. Each tray held 3 delicious desserts. How many desserts did she bake altogether?","The bakery displayed 11 trays. Each tray had 3 yummy desserts. How many desserts were on display in total?"]}},
+    question: {"a":11,"b":3,"op":"×","answer":33,"display":{"promptText":"For the bake sale, there were 11 trays. Each tray had 3 desserts. How many desserts were there in all?"}},
   },
   {
     itemId: "multiplication-app-433",
@@ -4332,7 +4332,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":4,"op":"×","answer":48,"display":{"promptText":"12 lanes each hold 4 runners. How many runners in all?","promptOptions":["At the track, there are 12 running lanes. Each lane has 4 runners. How many runners in all?","There are 12 lanes. 4 runners are in each lane. How many runners in all?"]}},
+    question: {"a":12,"b":4,"op":"×","answer":48,"display":{"promptText":"At the track, there are 12 running lanes. Each lane has 4 runners. How many runners in all?"}},
   },
   {
     itemId: "multiplication-app-434",
@@ -4342,7 +4342,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":4,"op":"×","answer":52,"display":{"promptText":"13 boxes each hold 4 notebooks. How many notebooks in all?","promptOptions":["Sam packed 13 boxes. He put 4 notebooks in each box. How many notebooks did he pack in all?","There are 13 boxes. Each box holds 4 notebooks. How many notebooks in all?"]}},
+    question: {"a":13,"b":4,"op":"×","answer":52,"display":{"promptText":"Sam packed 13 boxes. He put 4 notebooks in each box. How many notebooks did he pack in all?"}},
   },
   {
     itemId: "multiplication-app-435",
@@ -4352,7 +4352,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":3,"op":"×","answer":42,"display":{"promptText":"14 picnic tables each seat 3 families. How many families in all?","promptOptions":["The park has 14 picnic tables. 3 families sit at each table. How many families in all?","There are 14 picnic tables. Each table seats 3 families. How many families picnicking in all?"]}},
+    question: {"a":14,"b":3,"op":"×","answer":42,"display":{"promptText":"The park has 14 picnic tables. 3 families sit at each table. How many families in all?"}},
   },
   {
     itemId: "multiplication-app-436",
@@ -4362,7 +4362,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":9,"op":"×","answer":126,"display":{"promptText":"14 caretakers each feed 9 fish. How many fish in all?","promptOptions":["At the aquarium, 14 workers each feed 9 fish. How many fish do they feed in all?","There are 14 people who feed fish. Each person feeds 9 fish. How many fish in all?"]}},
+    question: {"a":14,"b":9,"op":"×","answer":126,"display":{"promptText":"At the aquarium, 14 workers each feed 9 fish. How many fish do they feed in all?"}},
   },
   {
     itemId: "multiplication-app-437",
@@ -4372,7 +4372,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":3,"op":"×","answer":48,"display":{"promptText":"16 labs each have 3 computers. How many computers in all?","promptOptions":["The school has 16 science labs. Each lab has 3 computers. How many computers in all?","There are 16 labs. 3 computers are in each lab. How many computers in all?"]}},
+    question: {"a":16,"b":3,"op":"×","answer":48,"display":{"promptText":"The school has 16 science labs. Each lab has 3 computers. How many computers in all?"}},
   },
   {
     itemId: "multiplication-app-438",
@@ -4382,7 +4382,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":8,"op":"×","answer":144,"display":{"promptText":"18 tents each sleep 8 campers. How many campers in all?","promptOptions":["At summer camp, there are 18 tents. Each tent sleeps 8 campers. How many campers in all?","The camp has 18 tents. 8 campers stay in each tent. How many campers in all?"]}},
+    question: {"a":18,"b":8,"op":"×","answer":144,"display":{"promptText":"At summer camp, there are 18 tents. Each tent sleeps 8 campers. How many campers in all?"}},
   },
   {
     itemId: "multiplication-app-439",
@@ -4392,7 +4392,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":19,"b":6,"op":"×","answer":114,"display":{"promptText":"19 boats each carry 6 passengers. How many passengers in all?","promptOptions":["At the harbor, there are 19 boats. Each boat carries 6 passengers. How many passengers in all?","There are 19 tour boats. 6 passengers ride in each boat. How many passengers in all?"]}},
+    question: {"a":19,"b":6,"op":"×","answer":114,"display":{"promptText":"At the harbor, there are 19 boats. Each boat carries 6 passengers. How many passengers in all?"}},
   },
   {
     itemId: "multiplication-app-440",
@@ -4402,7 +4402,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":21,"b":6,"op":"×","answer":126,"display":{"promptText":"21 rows each have 6 seats. How many seats in all?","promptOptions":["The theater has 21 rows of seats. Each row has 6 seats. How many seats in all?","In the movie theater, there are 21 rows. 6 seats are in each row. How many seats in all?"]}},
+    question: {"a":21,"b":6,"op":"×","answer":126,"display":{"promptText":"The theater has 21 rows of seats. Each row has 6 seats. How many seats in all?"}},
   },
   {
     itemId: "multiplication-app-441",
@@ -4412,7 +4412,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":22,"b":6,"op":"×","answer":132,"display":{"promptText":"22 cages each hold 6 parrots. How many parrots in all?","promptOptions":["The pet store has 22 bird cages. Each cage holds 6 parrots. How many parrots in all?","At the bird sanctuary, there are 22 cages. 6 parrots live in each cage. How many parrots in all?"]}},
+    question: {"a":22,"b":6,"op":"×","answer":132,"display":{"promptText":"The pet store has 22 bird cages. Each cage holds 6 parrots. How many parrots in all?"}},
   },
   {
     itemId: "multiplication-app-442",
@@ -4422,7 +4422,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":5,"op":"×","answer":50,"display":{"promptText":"Benches are in 10 rows of 5 at a park. How many benches?","promptOptions":["At the park, benches are set up in 10 rows of 5. How many benches?","A park has 10 rows of benches with 5 benches in each row. How many benches are there?","Benches at the park are arranged in 10 rows of 5 each. How many benches in all?"]}},
+    question: {"a":10,"b":5,"op":"×","answer":50,"display":{"promptText":"At the park, benches are set up in 10 rows of 5. How many benches?"}},
   },
   {
     itemId: "multiplication-app-443",
@@ -4432,7 +4432,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":6,"op":"×","answer":60,"display":{"promptText":"Plates are in 10 rows of 6 in a kitchen. How many plates?","promptOptions":["A kitchen has plates on a shelf in 10 rows of 6. How many plates?","There are plates in a kitchen arranged in 10 rows of 6 each. How many plates are there?","Plates in the kitchen are in 10 rows of 6. How many plates in all?"]}},
+    question: {"a":10,"b":6,"op":"×","answer":60,"display":{"promptText":"A kitchen has plates on a shelf in 10 rows of 6. How many plates?"}},
   },
   {
     itemId: "multiplication-app-444",
@@ -4442,7 +4442,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":7,"op":"×","answer":77,"display":{"promptText":"Crayons are in 11 rows of 7 in a box. How many crayons?","promptOptions":["A box holds crayons arranged in 11 rows of 7. How many crayons?","In a crayon box, there are 11 rows with 7 crayons in each row. How many crayons are there?","Crayons are arranged in a box in 11 rows of 7 each. How many crayons in the box?"]}},
+    question: {"a":11,"b":7,"op":"×","answer":77,"display":{"promptText":"A box holds crayons arranged in 11 rows of 7. How many crayons?"}},
   },
   {
     itemId: "multiplication-app-445",
@@ -4452,7 +4452,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":8,"op":"×","answer":88,"display":{"promptText":"Dividers are in 11 rows of 8 in a binder. How many dividers?","promptOptions":["A binder has dividers organized in 11 rows of 8. How many dividers?","Dividers in the binder are arranged in 11 rows with 8 in each row. How many dividers?","There are dividers in a binder in 11 rows of 8 each. How many dividers?"]}},
+    question: {"a":11,"b":8,"op":"×","answer":88,"display":{"promptText":"A binder has dividers organized in 11 rows of 8. How many dividers?"}},
   },
   {
     itemId: "multiplication-app-446",
@@ -4462,7 +4462,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":7,"op":"×","answer":91,"display":{"promptText":"Arrows are in 13 rows of 7 on a quiver rack. How many arrows?","promptOptions":["An arrow rack holds arrows arranged in 13 rows of 7. How many arrows?","Arrows are stored in a rack in 13 rows with 7 in each row. How many arrows in all?","There are 13 rows of arrows on the rack with 7 in each row. How many arrows?"]}},
+    question: {"a":13,"b":7,"op":"×","answer":91,"display":{"promptText":"An arrow rack holds arrows arranged in 13 rows of 7. How many arrows?"}},
   },
   {
     itemId: "multiplication-app-447",
@@ -4472,7 +4472,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":10,"op":"×","answer":100,"display":{"promptText":"10 dimes each equal 10 cents. How many cents in all?","promptOptions":["Jake has 10 dimes in his pocket. Each dime is worth 10 cents. How many cents does he have in all?","There are 10 dimes. Each dime equals 10 cents. How many cents in all?"]}},
+    question: {"a":10,"b":10,"op":"×","answer":100,"display":{"promptText":"Jake has 10 dimes in his pocket. Each dime is worth 10 cents. How many cents does he have in all?"}},
   },
   {
     itemId: "multiplication-app-448",
@@ -4482,7 +4482,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"12 dozen chocolates: 12 each. How many chocolates in all?","promptOptions":["A baker made 12 boxes of chocolates. Each box has 12 chocolates. How many chocolates in all?","There are 12 dozen chocolates. Each dozen holds 12 chocolates. How many chocolates in all?"]}},
+    question: {"a":12,"b":12,"op":"×","answer":144,"display":{"promptText":"A baker made 12 boxes of chocolates. Each box has 12 chocolates. How many chocolates in all?"}},
   },
   {
     itemId: "multiplication-app-449",
@@ -4492,7 +4492,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":7,"op":"×","answer":98,"display":{"promptText":"14 parades each last 7 minutes. How many total minutes?","promptOptions":["There are 14 parades during the festival. Each parade lasts 7 minutes. How many minutes in all?","At the fair, 14 parades each last 7 minutes. How many total minutes?"]}},
+    question: {"a":14,"b":7,"op":"×","answer":98,"display":{"promptText":"There are 14 parades during the festival. Each parade lasts 7 minutes. How many minutes in all?"}},
   },
   {
     itemId: "multiplication-app-450",
@@ -4502,7 +4502,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":6,"op":"×","answer":96,"display":{"promptText":"16 relay teams each have 6 runners. How many runners in all?","promptOptions":["A school is having a relay race with 16 teams. Each team has 6 runners. How many runners are competing in the race?","There are 16 relay teams racing today. Each team has 6 runners. How many runners are there in all?"]}},
+    question: {"a":16,"b":6,"op":"×","answer":96,"display":{"promptText":"A school is having a relay race with 16 teams. Each team has 6 runners. How many runners are competing in the race?"}},
   },
   {
     itemId: "multiplication-app-451",
@@ -4512,7 +4512,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":9,"op":"×","answer":63,"display":{"promptText":"7 ponds each have 9 frogs. How many frogs in all?","promptOptions":["Maria went to see 7 ponds at the zoo. Each pond has 9 frogs. How many frogs did she see in all?","A nature center has 7 ponds with frogs. Each pond has 9 frogs living in it. How many frogs are there altogether?"]}},
+    question: {"a":7,"b":9,"op":"×","answer":63,"display":{"promptText":"Maria went to see 7 ponds at the zoo. Each pond has 9 frogs. How many frogs did she see in all?"}},
   },
   {
     itemId: "multiplication-app-452",
@@ -4522,7 +4522,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"8 orchards each have 7 pear trees. How many trees in all?","promptOptions":["A farmer has 8 orchards growing pear trees. Each orchard has 7 pear trees. How many trees does the farmer have in all?","There are 8 orchards on the farm. Each one has 7 pear trees. How many pear trees are there altogether?"]}},
+    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"A farmer has 8 orchards growing pear trees. Each orchard has 7 pear trees. How many trees does the farmer have in all?"}},
   },
   {
     itemId: "multiplication-app-453",
@@ -4532,7 +4532,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":8,"op":"×","answer":64,"display":{"promptText":"8 cartons each hold 8 eggs. How many eggs in all?","promptOptions":["A baker has 8 cartons of eggs. Each carton holds 8 eggs inside. How many eggs does the baker have in all?","The store has 8 cartons of eggs to sell. Each carton has 8 eggs. How many eggs are there altogether?"]}},
+    question: {"a":8,"b":8,"op":"×","answer":64,"display":{"promptText":"A baker has 8 cartons of eggs. Each carton holds 8 eggs inside. How many eggs does the baker have in all?"}},
   },
   {
     itemId: "multiplication-app-454",
@@ -4542,7 +4542,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"9 garages each hold 6 bikes. How many bikes in all?","promptOptions":["A bike shop has bikes in 9 garages. Each garage holds 6 bikes. How many bikes does the shop have in all?","There are 9 garages on the street. Each garage holds 6 bikes inside. How many bikes are there altogether?"]}},
+    question: {"a":9,"b":6,"op":"×","answer":54,"display":{"promptText":"A bike shop has bikes in 9 garages. Each garage holds 6 bikes. How many bikes does the shop have in all?"}},
   },
   {
     itemId: "multiplication-app-455",
@@ -4552,7 +4552,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"9 studios each have 8 artists. How many artists in all?","promptOptions":["Maria visited 9 art studios. Each studio had 8 artists. How many artists did she see in total?","A city has 9 art studios. Each studio has 8 artists working there. How many artists are there in all?"]}},
+    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"Maria visited 9 art studios. Each studio had 8 artists. How many artists did she see in total?"}},
   },
   {
     itemId: "multiplication-app-456",
@@ -4562,7 +4562,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":7,"op":"×","answer":70,"display":{"promptText":"Tiles are in 10 rows of 7 on a patio. How many tiles?","promptOptions":["A patio is covered with tiles arranged in 10 rows of 7. How many tiles?","Tiles on the patio are in 10 rows with 7 tiles in each row. How many tiles are there?","There are 10 rows of tiles on the patio with 7 in each row. How many tiles?"]}},
+    question: {"a":10,"b":7,"op":"×","answer":70,"display":{"promptText":"A patio is covered with tiles arranged in 10 rows of 7. How many tiles?"}},
   },
   {
     itemId: "multiplication-app-457",
@@ -4572,7 +4572,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":12,"b":5,"op":"×","answer":60,"display":{"promptText":"Seats are in 12 rows of 5 in an auditorium. How many seats?","promptOptions":["An auditorium has seats arranged in 12 rows of 5. How many seats?","Seats in the auditorium are in 12 rows with 5 seats in each row. How many seats are there?","There are 12 rows of seats with 5 in each row in the auditorium. How many seats?"]}},
+    question: {"a":12,"b":5,"op":"×","answer":60,"display":{"promptText":"An auditorium has seats arranged in 12 rows of 5. How many seats?"}},
   },
   {
     itemId: "multiplication-app-458",
@@ -4582,7 +4582,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":4,"op":"×","answer":52,"display":{"promptText":"Ornaments are in 13 rows of 4 on a store shelf. How many ornaments?","promptOptions":["A store shelf has ornaments displayed in 13 rows of 4. How many ornaments?","Ornaments on the shelf are arranged in 13 rows with 4 in each row. How many ornaments in all?","There are 13 rows of ornaments on the shelf with 4 in each row. How many ornaments?"]}},
+    question: {"a":13,"b":4,"op":"×","answer":52,"display":{"promptText":"A store shelf has ornaments displayed in 13 rows of 4. How many ornaments?"}},
   },
   {
     itemId: "multiplication-app-459",
@@ -4592,7 +4592,7 @@ export const ITEMS = [
     structureType: "arrayTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":5,"op":"×","answer":75,"display":{"promptText":"Flags are in 15 rows of 5 on a parade route. How many flags?","promptOptions":["A parade route has flags set up in 15 rows of 5. How many flags?","Flags along the parade route are arranged in 15 rows with 5 in each row. How many flags in all?","There are 15 rows of flags with 5 in each row along the parade. How many flags?"]}},
+    question: {"a":15,"b":5,"op":"×","answer":75,"display":{"promptText":"A parade route has flags set up in 15 rows of 5. How many flags?"}},
   },
   {
     itemId: "multiplication-app-460",
@@ -4602,7 +4602,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":20,"b":8,"op":"×","answer":160,"display":{"promptText":"20 benches each seat 8 fans. How many fans in all?","promptOptions":["A big game has 20 benches for fans to sit on. Each bench seats 8 fans. How many fans can sit down in all?","The stadium has 20 benches for fans. Each bench seats 8 people. How many fans can sit altogether?"]}},
+    question: {"a":20,"b":8,"op":"×","answer":160,"display":{"promptText":"A big game has 20 benches for fans to sit on. Each bench seats 8 fans. How many fans can sit down in all?"}},
   },
   {
     itemId: "multiplication-app-461",
@@ -4612,7 +4612,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":25,"b":7,"op":"×","answer":175,"display":{"promptText":"25 parades each have 7 floats. How many floats in all?","promptOptions":["A city is planning 25 parades for the year. Each parade will have 7 floats. How many floats will there be in all?","There are 25 parades coming up in the city. Each parade has 7 floats. How many floats are there altogether?"]}},
+    question: {"a":25,"b":7,"op":"×","answer":175,"display":{"promptText":"A city is planning 25 parades for the year. Each parade will have 7 floats. How many floats will there be in all?"}},
   },
   {
     itemId: "multiplication-app-462",
@@ -4622,7 +4622,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":30,"b":7,"op":"×","answer":210,"display":{"promptText":"30 vans each carry 7 passengers. How many passengers in all?","promptOptions":["A tour company has 30 vans taking trips. Each van carries 7 passengers. How many passengers can ride in all?","The tour company uses 30 vans. Each van carries 7 people. How many passengers can go on the tour altogether?"]}},
+    question: {"a":30,"b":7,"op":"×","answer":210,"display":{"promptText":"A tour company has 30 vans taking trips. Each van carries 7 passengers. How many passengers can ride in all?"}},
   },
   {
     itemId: "multiplication-conc-arrayReasoning-23-001",

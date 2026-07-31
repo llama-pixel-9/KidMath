@@ -10,7 +10,7 @@
       "name": "KidMath item bank (own reviewed content)",
       "url": "item:counting-proc-cardinality-K1-001",
       "license": "CC0",
-      "fetchedAt": "2026-07-29"
+      "fetchedAt": "2026-07-31"
     },
     "paraphrase": "Count 10 items. The cardinality is?",
     "payload": {
@@ -35,7 +35,7 @@
       "name": "KidMath item bank (own reviewed content)",
       "url": "item:counting-proc-cardinality-K1-002",
       "license": "CC0",
-      "fetchedAt": "2026-07-29"
+      "fetchedAt": "2026-07-31"
     },
     "paraphrase": "Count 8 items. The cardinality is?",
     "payload": {
@@ -60,7 +60,7 @@
       "name": "KidMath item bank (own reviewed content)",
       "url": "item:counting-proc-cardinality-K1-003",
       "license": "CC0",
-      "fetchedAt": "2026-07-29"
+      "fetchedAt": "2026-07-31"
     },
     "paraphrase": "Count 9 items. The cardinality is?",
     "payload": {

@@ -514,6 +514,38 @@ function AnswerSlot({ feedback, revealAnswer }) {
   return <span className="text-amber-400">?</span>;
 }
 
+// The worked-algorithm layout with a STATED result — used by judgment items
+// whose claim ("2 + 19 = 21") must be shown complete, never as "?".
+function VerticalEquation({ a, op, b, result, theme }) {
+  const aDigits = String(a).split("");
+  const bDigits = String(b).split("");
+  const rDigits = String(result).split("");
+  const cols = Math.max(aDigits.length, bDigits.length, rDigits.length) + 1;
+  return (
+    <div className="flex justify-center">
+      <div
+        className={`inline-grid items-center justify-items-center font-extrabold ${theme.textPrimary}`}
+        style={{
+          gridTemplateColumns: `repeat(${cols}, 0.75em)`,
+          fontSize: "clamp(2.5rem, 8vw, 3.5rem)",
+          lineHeight: 1.4,
+        }}
+      >
+        {Array.from({ length: cols - aDigits.length }, (_, i) => <span key={`pa${i}`} />)}
+        {aDigits.map((d, i) => <span key={`a${i}`}>{d}</span>)}
+        <span className="text-[0.85em]">{op}</span>
+        {Array.from({ length: cols - bDigits.length - 1 }, (_, i) => <span key={`pb${i}`} />)}
+        {bDigits.map((d, i) => <span key={`b${i}`}>{d}</span>)}
+        <span className="border-b-4 border-slate-400 w-full my-1" style={{ gridColumn: "1 / -1" }} />
+        {Array.from({ length: cols - rDigits.length }, (_, i) => <span key={`pr${i}`} />)}
+        {rDigits.map((d, i) => (
+          <span key={`r${i}`} className="text-sky-600">{d}</span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
   const { theme } = useTheme();
   const q = question;
@@ -602,6 +634,11 @@ function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
             </p>
           ))}
         </div>
+        {q.subPrompt && (
+          <p className={`text-sm font-bold uppercase tracking-wide ${theme.textMuted}`}>
+            {q.subPrompt}
+          </p>
+        )}
         {showAnswer && (
           <div className="mt-2 text-4xl sm:text-5xl font-extrabold">
             <AnswerSlot feedback={feedback} revealAnswer={revealAnswer} />
@@ -621,6 +658,33 @@ function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
           {showAnswer ? <AnswerSlot feedback={feedback} revealAnswer={revealAnswer} /> : "?"}
         </span>
         <span>{q.b}</span>
+      </div>
+    );
+  }
+
+  // Format-transformed judgment items ("2 + 19 = 21" + "True or false?")
+  // carry a COMPLETE claim. The vertical compute layout below would replace
+  // the claimed result with "?" and make the question unanswerable — so any
+  // item with a subPrompt renders its full equation, vertically when the
+  // claim fits that shape, and always shows the sub-prompt instruction.
+  if (promptText && q.subPrompt && !hasVerbalPrompt) {
+    const claim = promptText.match(/^\s*(\d+)\s*([+−])\s*(\d+)\s*=\s*(\d+)\s*$/);
+    const bigClaim = claim && (Number(claim[1]) >= 10 || Number(claim[3]) >= 10 || Number(claim[4]) >= 10);
+    return (
+      <div className="text-center space-y-4">
+        {bigClaim ? (
+          <VerticalEquation a={claim[1]} op={claim[2]} b={claim[3]} result={claim[4]} theme={theme} />
+        ) : (
+          <p
+            className={`font-extrabold ${theme.textPrimary}`}
+            style={{ fontSize: "clamp(1.8rem, 7vw, 3rem)", lineHeight: 1.3 }}
+          >
+            {promptText}
+          </p>
+        )}
+        <p className={`text-sm sm:text-base font-bold uppercase tracking-wide ${theme.textMuted}`}>
+          {q.subPrompt}
+        </p>
       </div>
     );
   }

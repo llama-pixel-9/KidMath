@@ -1,72 +1,106 @@
 ---
 name: item-authoring
-description: Author, review, or fix word-problem items for the KidMath item bank. Use whenever writing or editing item prompts, running the itemGen pipeline, tightening wording rules, or triaging the admin Review queue.
+description: Author, review, or fix items for the KidMath item bank. Use whenever writing or editing item prompts, running the itemGen pipeline, tightening wording rules, or triaging the admin Review queue.
 ---
 
 # KidMath item authoring
 
-## Source of truth
+## Sources of truth
 
-`docs/word-problem-authoring-guide.md` is the single source of truth for
-wording and style rules. Read it before writing or editing any item prompt.
-Structure definitions live in `src/modes/structures/` (the templates there are
-the reference wording for each structure).
+- `docs/word-problem-authoring-guide.md` — wording and style rules. Read it
+  before writing or editing any item prompt.
+- `scripts/itemGen/structureRules.js` — `RULES` (per-structure contracts),
+  `NARRATIVE_RULES`, `GOLD_EXAMPLES`; fed to every LLM pass.
+- `src/modes/structures/` — structure definitions and payload conventions.
+- `resources/` — openly licensed curricula (CCSS Progressions, all EngageNY
+  K-4 modules; see its README for the module→mode map). **When the reviewer
+  is unsure how a problem type should be presented, check the shelf first**
+  — "drills are drills" was settled by reading how EngageNY runs fluency,
+  not by taste.
 
 ## The rule ladder — where a new rule must land
 
-When the user flags a wording problem (or approves/rejects a pattern), the fix
-is not one edit — apply it at every layer that expresses the rule, top to
-bottom:
+When the reviewer flags a wording pattern, the fix is never one edit:
 
-1. **Guide** — add the rule to `docs/word-problem-authoring-guide.md` with a
-   good/bad example.
-2. **Templates** — fix `src/modes/structures/additiveStructures.js` /
-   `multiplicativeStructures.js` so engine-generated prose and the LLM's
-   reference items model the rule.
-3. **Generator prompt** — add the rule to `buildPrompt()` in
-   `scripts/itemGen/authorStructures.js` (and `scripts/itemGen/prompt.js` for
-   the exemplar pipeline).
-4. **QC gate** — if the rule is mechanically checkable, add a check in
-   `src/itemBank/qc/checks.js` (severity `fail` if it must never reach a
-   child). This is the only layer that cannot drift; prose-only rules do.
-   Pin it with a fixture in `src/__tests__/authorStructuresGate.spec.js`.
-5. **Existing items** — sweep the live bank: `scripts/fixNounlessQuestions.js`
-   is the model for a scoped, gate-verified batch repair (dry-run first, then
-   `--write`).
+1. **Guide** — rule + good/bad example (cite the resource that grounds it).
+2. **Templates** — `src/modes/structures/*.js` so engine prose models it.
+3. **Generator prompts** — `NARRATIVE_RULES` in `structureRules.js` reaches
+   all pipelines (`authorStructures`, `rewordItems`, `prompt.js`).
+4. **QC gate** — a check in `src/itemBank/qc/checks.js` (`fail` if it must
+   never reach a child; `warn` if advisory). The only drift-proof layer. Pin
+   with a spec fixture.
+5. **Sweep the live bank for the same class immediately** — every finding so
+   far had many live siblings. Dry-run first, gate-verify every change,
+   then `--write`. Models: `scripts/fixNounlessQuestions.js` and the
+   scratchpad sweeps referenced in the commit log.
 
-Example rule enforced this way: the question sentence must restate the counted
-noun — "How many toy cars does Lily have?", never "How many does Lily have?"
-(`nounlessQuestion` check).
+## Wording rules learned from review (all machine-enforced)
 
-## Prose style
+- **Restate the counted noun** — "How many toy cars does Lily have?", never
+  "How many does Lily have?" (`nounlessQuestion`, fail)
+- **Context must matter** — no decorative story on a bare-number question:
+  "Emma has 53 pencils. How many tens are in 53?" → drop the story or make
+  it load-bearing. (`decorativeContext`, fail)
+- **Never self-answering** — the prompt's only number must not BE the answer
+  ("Jordan hung 47 photos. How many photos?"). Visual payloads are exempt —
+  there the prose count is a caption. (`selfAnswering`, fail)
+- **Drills are drills** — sequence continuation is bare fluency form
+  ("Count by 4s: 16, 20, 24. What number comes next?"), never narrated.
+  Stories are only for questions about real quantities.
+  (`storyWrappedDrill`, warn)
+- Register: person-first, chronological, one tense, simple verbs, explicit
+  "at the start", 2-4 short sentences (`NARRATIVE_RULES` has the full list).
 
-Narrative rules and reviewer-approved gold examples live in
-`scripts/itemGen/structureRules.js` (`NARRATIVE_RULES`, `GOLD_EXAMPLES`) and
-are fed to every LLM pass. Person-first, chronological, one tense, simple
-verbs, explicit "at the start". When the reviewer critiques wording, update
-those exports (and the guide) — not just one prompt.
+## Hard-won invariants (violating these has burned us)
 
-## Reword-and-choose workflow
+- **Batch tags**: every `authorStructures` run stamps item ids with `--tag`
+  (defaults to date). Without it, a rerun UPSERTS OVER the previous batch's
+  reviewed/approved items.
+- **Payload convention**: `a`/`b` hold the two GIVENS in the structure's
+  declared slots (compare: bigger/diff order matters). The gate's arithmetic
+  is position-agnostic (trio rule: max = sum/product of the others), so it
+  will NOT catch swapped slots or a sibling structure's payload — verify
+  slots when authoring compares. Embedded unknowns (`? - 12 = 31`) legally
+  fail strict `a op b = answer`.
+- **Every Supabase read on item_bank MUST paginate** — supabase-js silently
+  caps selects at 1,000 rows; unpaginated reads truncated the admin, the
+  runtime bank, and the exporter at various times.
+- **Gate exemplars before export** — approved-but-legacy items are not
+  gate-clean; ungated exemplars taught the model the self-answering disease.
+  `exportExemplars.js` runs `runChecks` on every candidate.
+- **Visual subskills are not text-authorable** — "count the objects" needs a
+  picture; a text pipeline degenerates it into self-answering prose. Refill
+  such cells from the mode's own engine templates (within the 3-per-signature
+  application cap), not from an LLM.
+- When a finding appears, **QC-sweep all live items for the class** — 25
+  legacy APPROVED items carried the self-answering shape for months.
 
-`scripts/itemGen/rewordItems.js` generates 1-3 gate-verified natural rewrites
-per item, ranked best first, stored as `payload.display.promptOptions`. The
-Review queue card view shows them as radio choices (best preselected,
-original last); Approve writes the reviewer's pick into `promptText` and
-strips the options (`src/admin/reviewChoice.js`). Run it whenever a batch's
-wording needs improvement instead of hand-editing prompts.
+## Reword-and-choose + batch-trust review
+
+- `rewordItems.js` writes 1-3 gate-verified rewrites per item as ranked
+  `payload.display.promptOptions` (skips items that already have options;
+  `--family X` sweeps a family bank-wide including approved items).
+- Review queue **Batch view** groups by provenance × mode; reviewer
+  spot-checks a frozen ~10% sample, then approve-all (QC-fails held back,
+  top-pick wording applied). Card view keeps per-item radios.
+- Approval writes the pick into `promptText` and strips options
+  (`src/admin/reviewChoice.js`, `reviewBatches.js`).
 
 ## Pipeline commands
 
-- `node scripts/itemGen/authorStructures.js --dry` — generate + gate, write nothing
-- `... --per N --write` — N items per structure, written as drafts
-- `node --import ./scripts/lib/registerResolve.js scripts/itemGen/rewordItems.js [--write]` — ranked rewrite options for review
-- `npm run bank:qc` / `npm run bank:audit` / `npm run bank:variety` — QC & coverage
-- `npm run bank:export` — snapshot approved cloud rows into `src/itemBank/items/`
-- DB scripts need `set -a && source .env.local && set +a` for the service key
+- `node --import ./scripts/lib/registerResolve.js scripts/itemGen/authorStructures.js --per N --tag bMMDD --write` — author difficult structures (chunked calls; gate-verified drafts)
+- `... scripts/itemGen/rewordItems.js [--family application] [--write]` — ranked rewrite options
+- `... scripts/itemGen/exportExemplars.js --modes m1,m2` — gate-checked exemplars from the approved bank
+- `... scripts/itemGen/generateDrafts.js --all --mode m1,m2 --families application,conceptual --provider claudeCode --limit N` — exemplar-pipeline drafts
+- `npm run bank:variety` / `bank:audit` / `bank:qc` — coverage & QC reports
+- `npm run bank:export && npm run bank:seed:build` — snapshot approved rows into the bundle + rebuild the offline seed (always both, then run `npm test`)
+- DB scripts need `set -a && source .env.local && set +a`
 
 ## Review flow
 
-Drafts → `/admin` → Items (status `draft`); promoted items → Review queue
-(card view, bulk approve; Approve is blocked on any `fail` finding). Human
-review is for wording and kid-appropriateness — the gate already verified the
-math and structure.
+New drafts are written as `draft`, promoted to `reviewed` (scoped by
+generator/mode), and appear in `/admin` → Review queue. Approved items serve
+immediately from the cloud; `bank:export` + deploy bakes them into the
+offline bundle. Human review is for wording and kid-appropriateness — the
+gate already verified math and structure, and the whole live bank is kept
+gate-clean.

@@ -9355,12 +9355,7 @@ export const SEED_ITEMS = [
      15,
      18
     ],
-    "promptText": "A student counts by 3s: 12, 15, 18. What number comes next?",
-    "promptOptions": [
-     "Maya counts by 3s. She says 12, then 15, then 18. What number comes next?",
-     "A child counts: 12, 15, 18. What's the next number she counts?",
-     "Jake counts by 3s. He says: 12, 15, 18. What number next?"
-    ]
+    "promptText": "Count by 3s: 12, 15, 18. What number comes next?"
    }
   }
  },
@@ -9387,12 +9382,7 @@ export const SEED_ITEMS = [
      36,
      40
     ],
-    "promptText": "A pattern increases by 4: 32, 36, 40. What comes next?",
-    "promptOptions": [
-     "Emma finds a pattern: 32, 36, 40. It grows by 4 each time. What comes next?",
-     "A pattern grows by 4 each time: 32, 36, 40. What comes next?",
-     "Numbers grow by 4: 32, 36, 40. What number comes next?"
-    ]
+    "promptText": "Count by 4s: 32, 36, 40. What number comes next?"
    }
   }
  },
@@ -9419,12 +9409,7 @@ export const SEED_ITEMS = [
      50,
      55
     ],
-    "promptText": "A scoreboard goes up by 5 points: 45, 50, 55. What score is next?",
-    "promptOptions": [
-     "A team scores 45, then 50, then 55 points. What score is next?",
-     "A team's score goes up by 5 points: 45, 50, 55. What score is next?",
-     "Points grow by 5: 45, 50, 55. What's the next score?"
-    ]
+    "promptText": "Count by 5s: 45, 50, 55. What number comes next?"
    }
   }
  },
@@ -9451,12 +9436,7 @@ export const SEED_ITEMS = [
      12,
      18
     ],
-    "promptText": "A clock chime rings every 6 minutes: 6, 12, 18. When does it ring next?",
-    "promptOptions": [
-     "A timer beeps every 6 minutes: 6, 12, 18 minutes. When does it beep next?",
-     "A bell rings at 6, 12, then 18 minutes. When does it ring next?",
-     "A chime sounds every 6 minutes at 6, 12, and 18 minutes. When next?"
-    ]
+    "promptText": "Count by 6s: 6, 12, 18. What number comes next?"
    }
   }
  },
@@ -9483,12 +9463,7 @@ export const SEED_ITEMS = [
      60,
      70
     ],
-    "promptText": "A jar fills 10 marbles at a time: 50, 60, 70. How many marbles next?",
-    "promptOptions": [
-     "A jar gets 10 more marbles each time: 50, 60, 70. How many marbles next?",
-     "They keep adding marbles to a jar: 50, then 60, then 70. How many marbles next?",
-     "Someone adds marbles to a jar. It now has 50, then 60, then 70. How many next?"
-    ]
+    "promptText": "Count by 10s: 50, 60, 70. What number comes next?"
    }
   }
  },
@@ -9515,12 +9490,7 @@ export const SEED_ITEMS = [
      80,
      85
     ],
-    "promptText": "A class earns 5 stars per chapter: 75, 80, 85. How many stars after one more chapter?",
-    "promptOptions": [
-     "A class earns 5 more stars each chapter: 75, 80, 85. How many stars next?",
-     "The class has 75 stars, then 80, then 85. They earn 5 more each chapter. How many next?",
-     "A class gets 5 stars for each chapter. After three: 75, 80, 85. How many next?"
-    ]
+    "promptText": "A class earns 5 stars per chapter: 75, 80, 85. How many stars after one more chapter?"
    }
   }
  },
@@ -9547,12 +9517,7 @@ export const SEED_ITEMS = [
      20,
      24
     ],
-    "promptText": "A timer beeps every 4 seconds: 16, 20, 24. When does it beep next?",
-    "promptOptions": [
-     "A timer beeps every 4 seconds: 16, 20, 24 seconds. When does it beep next?",
-     "A timer beeps at 16, 20, then 24 seconds. When does it beep next?",
-     "A bell rings every 4 seconds: 16, 20, 24. When does it ring next?"
-    ]
+    "promptText": "Count by 4s: 16, 20, 24. What number comes next?"
    }
   }
  },
@@ -9579,12 +9544,7 @@ export const SEED_ITEMS = [
      22,
      26
     ],
-    "promptText": "A line of beads grows by the same amount each step: 18, 22, 26. What comes next?",
-    "promptOptions": [
-     "Emma arranges beads: 18, then 22, then 26. She adds 4 each time. How many beads next?",
-     "A string of beads grows the same amount each step: 18, 22, 26. How many beads next?",
-     "Beads in a line grow by 4: 18, 22, 26. How many next?"
-    ]
+    "promptText": "Count by 4s: 18, 22, 26. What number comes next?"
    }
   }
  },
@@ -9611,11 +9571,7 @@ export const SEED_ITEMS = [
      4,
      6
     ],
-    "promptText": "A frog hops 2 each step: 2, 4, 6. What's next?",
-    "promptOptions": [
-     "A frog hops 2 steps at a time: 2, 4, 6. Where is the frog after the next hop?",
-     "A toy car moves 2 spaces each turn: 2, 4, 6. How many spaces after one more turn?"
-    ]
+    "promptText": "Count by 2s: 2, 4, 6. What number comes next?"
    }
   }
  },
@@ -9642,11 +9598,7 @@ export const SEED_ITEMS = [
      6,
      9
     ],
-    "promptText": "A pattern shows 3, 6, 9. What's next?",
-    "promptOptions": [
-     "Emma stacks 3 blocks each time. She has 3, then 6, then 9. How many after the next stack?",
-     "A pattern adds 3 each step: 3, 6, 9. What comes next?"
-    ]
+    "promptText": "Count by 3s: 3, 6, 9. What number comes next?"
    }
   }
  },
@@ -9703,11 +9655,7 @@ export const SEED_ITEMS = [
      10,
      15
     ],
-    "promptText": "A bunny hops 5 carrots each leap: 5, 10, 15. What's next?",
-    "promptOptions": [
-     "A bunny eats 5 carrots each day: 5, 10, 15. How many carrots after one more day?",
-     "Leo collects 5 rocks each week: 5, 10, 15. How many rocks after the next week?"
-    ]
+    "promptText": "Count by 5s: 5, 10, 15. What number comes next?"
    }
   }
  },
@@ -9735,11 +9683,7 @@ export const SEED_ITEMS = [
      5,
      7
     ],
-    "promptText": "Odd numbers 1, 3, 5, 7. What's next?",
-    "promptOptions": [
-     "Mia counts odd numbers: 1, 3, 5, 7. What's the next one she says?",
-     "A pattern of odd numbers: 1, 3, 5, 7. What is the next odd number?"
-    ]
+    "promptText": "Count by 2s: 1, 3, 5, 7. What number comes next?"
    }
   }
  },
@@ -9797,11 +9741,7 @@ export const SEED_ITEMS = [
      2,
      4
     ],
-    "promptText": "A toy car moves 2 squares each turn: 0, 2, 4. What's next?",
-    "promptOptions": [
-     "A game marker starts at 0 and moves 2 spaces each turn: 0, 2, 4. Where is it after the next turn?",
-     "A toy moves 2 squares each turn, starting at 0: 0, 2, 4. What's the next position?"
-    ]
+    "promptText": "Count by 2s: 0, 2, 4. What number comes next?"
    }
   }
  },
@@ -9828,11 +9768,7 @@ export const SEED_ITEMS = [
      8,
      12
     ],
-    "promptText": "A row counts 4, 8, 12. What's next?",
-    "promptOptions": [
-     "Each shelf has 4 books. 1 shelf: 4, 2 shelves: 8, 3 shelves: 12. How many on 4 shelves?",
-     "A pattern counts by 4s: 4, 8, 12. What's next?"
-    ]
+    "promptText": "Count by 4s: 4, 8, 12. What number comes next?"
    }
   }
  },
@@ -9859,11 +9795,7 @@ export const SEED_ITEMS = [
      20,
      30
     ],
-    "promptText": "A truck adds 10 each load: 10, 20, 30. What's next?",
-    "promptOptions": [
-     "A truck delivers 10 boxes each trip: 10, 20, 30. How many boxes after the next trip?",
-     "Each delivery brings 10 items: 10, 20, 30. How many after one more delivery?"
-    ]
+    "promptText": "Count by 10s: 10, 20, 30. What number comes next?"
    }
   }
  },
@@ -9890,11 +9822,7 @@ export const SEED_ITEMS = [
      14,
      21
     ],
-    "promptText": "A pattern shows 7, 14, 21. What's next?",
-    "promptOptions": [
-     "Maria counts by 7s. She says 7, 14, 21. What comes next?",
-     "Counting by 7s: 7, 14, 21. What's the next number?"
-    ]
+    "promptText": "Count by 7s: 7, 14, 21. What number comes next?"
    }
   }
  },
@@ -9952,11 +9880,7 @@ export const SEED_ITEMS = [
      12,
      18
     ],
-    "promptText": "Counters jump by 6: 6, 12, 18. What's next?",
-    "promptOptions": [
-     "Leo skip-counts by 6s: 6, 12, 18. What's the next number?",
-     "A pattern jumps by 6 each time: 6, 12, 18. What comes next?"
-    ]
+    "promptText": "Counters jump by 6: 6, 12, 18. What's next?"
    }
   }
  },
@@ -9983,11 +9907,7 @@ export const SEED_ITEMS = [
      16,
      24
     ],
-    "promptText": "Counting in order 8, 16, 24. What's next?",
-    "promptOptions": [
-     "Carlos counts by 8s. He says 8, 16, 24. What comes next?",
-     "Counting by 8s: 8, 16, 24. What's the next number?"
-    ]
+    "promptText": "Counting in order 8, 16, 24. What's next?"
    }
   }
  },
@@ -10045,11 +9965,7 @@ export const SEED_ITEMS = [
      22,
      33
     ],
-    "promptText": "Cards stack 11 at a time: 11, 22, 33. What's next?",
-    "promptOptions": [
-     "Jayden counts by 11s. He says 11, 22, 33. What comes next?",
-     "Counting by 11s: 11, 22, 33. What's the next number?"
-    ]
+    "promptText": "Count by 11s: 11, 22, 33. What number comes next?"
    }
   }
  },
@@ -10076,11 +9992,7 @@ export const SEED_ITEMS = [
      30,
      45
     ],
-    "promptText": "Pattern: 15, 30, 45. What's next?",
-    "promptOptions": [
-     "Maria counts by 15s. She says 15, 30, 45. What comes next?",
-     "Counting by 15s: 15, 30, 45. What's the next number?"
-    ]
+    "promptText": "Count by 15s: 15, 30, 45. What number comes next?"
    }
   }
  },
@@ -10245,7 +10157,7 @@ export const SEED_ITEMS = [
      16,
      24
     ],
-    "promptText": "Determine the step for 8, 16, 24 and the next term."
+    "promptText": "Count by 8s: 8, 16, 24. What number comes next?"
    }
   }
  },
@@ -10299,7 +10211,7 @@ export const SEED_ITEMS = [
      22,
      33
     ],
-    "promptText": "Recognize the rule in 11, 22, 33 and find the next term."
+    "promptText": "Skip-count by 11s: 11, 22, 33, __. What number fills the blank?"
    }
   }
  },
@@ -10461,7 +10373,7 @@ export const SEED_ITEMS = [
      100,
      120
     ],
-    "promptText": "Determine the step for 80, 100, 120 and the next term."
+    "promptText": "Count by 20s: 80, 100, 120. What number comes next?"
    }
   }
  },
@@ -10517,7 +10429,7 @@ export const SEED_ITEMS = [
      200,
      300
     ],
-    "promptText": "Recognize the rule in 100, 200, 300 and find the next term."
+    "promptText": "Count by 100s: 100, 200, 300. What number comes next?"
    }
   }
  },
@@ -10679,7 +10591,7 @@ export const SEED_ITEMS = [
      5,
      7
     ],
-    "promptText": "Determine the step for 1, 3, 5, 7 and the next term."
+    "promptText": "Skip-count by 2s: 1, 3, 5, 7, __. What number fills the blank?"
    }
   }
  },

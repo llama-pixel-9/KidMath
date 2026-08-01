@@ -39,6 +39,7 @@ export const NARRATIVE_RULES = [
   'The question must restate the thing being counted: "How many cards did he have at the start?", never "How many did he have?"',
   "2-4 short sentences, each easy to picture.",
   'Context must MATTER. Never bolt a name onto a bare number question: "Emma has 53 pencils. How many tens are in 53?" is wrong — the story does no work. Either ask the bare question ("How many tens are in 53?") or make the story load-bearing ("Emma bundles her 53 pencils into packs of 10 — how many full packs?").',
+  'Drills are drills. Sequence continuation is presented BARE, the way curricula run fluency (EngageNY "Happy Counting"): "Count by 4s: 16, 20, 24. What number comes next?" — never narrated ("A timer beeps every 4 seconds…"). A story is only justified when the question asks a real-world quantity, not the next term of a sequence.',
 ];
 
 // Reviewer-approved gold examples of the target register.

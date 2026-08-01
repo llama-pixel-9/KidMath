@@ -177,6 +177,23 @@ export const CHECKS = [
   },
 
   {
+    id: "storyWrappedDrill",
+    run: (item) => {
+      if (item.modeId !== "skipCounting" && item.modeId !== "patterns") return null;
+      const text = (item.question?.display?.promptText || "").trim();
+      // Sequence continuation is a fluency drill and is presented bare
+      // ("Count by 4s: 16, 20, 24. What number comes next?") — narrating it
+      // ("A timer beeps every 4 seconds…") adds reading load and no math.
+      const run = text.match(/(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/);
+      if (!run || !/next/i.test(text)) return null;
+      const [a, b, c] = run.slice(1).map(Number);
+      if (b - a !== c - b || b === a) return null;
+      if (/^(count|skip|continue|complete|fill|what|say|find|name|identify|which|the next)/i.test(text)) return null;
+      return warn("storyWrappedDrill", "sequence drills read best bare — drop the story wrapper (authoring guide: drills are drills)");
+    },
+  },
+
+  {
     id: "selfAnswering",
     run: (item) => {
       const d = item.question?.display || {};

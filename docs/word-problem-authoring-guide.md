@@ -80,6 +80,12 @@ Use the closest matching `structureType` when authoring an item:
   drop the story ("How many tens are in 53?") or make it load-bearing ("Emma
   bundles her 53 pencils into packs of 10 — how many full packs?"). Enforced
   for generated prose by the `decorativeContext` sweep rule.
+- **Drills are drills.** Sequence-continuation items (skip counting, patterns)
+  are presented bare — "Count by 4s: 16, 20, 24. What number comes next?" —
+  matching how curricula run fluency (EngageNY "Happy Counting" / choral
+  count-bys, `resources/engageny/math-g2-m3-full-module.pdf` L1). Never wrap a
+  sequence in a story ("A timer beeps every 4 seconds…"); reserve stories for
+  questions about real quantities.
 - Avoid culturally narrow contexts. Prefer school, garden, library, kitchen,
   sports, and library settings.
 - Numbers in the prompt must match the question payload (`a`, `b`, `answer`).

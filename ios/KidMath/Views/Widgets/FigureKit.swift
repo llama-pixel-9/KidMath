@@ -57,13 +57,28 @@ struct DigitPadView: View {
         if entry.count < maxLength { entry += digit }
     }
 
+    /// §08 keypad vocabulary: digit rows carry the four tints (Seafoam 1-3,
+    /// Teal Mid 4-6, Apricot 7-9, Sun Light 0), backspace is solid Sun —
+    /// Ink labels always, so this pad matches every answer tile.
+    static func keyTint(_ label: String) -> (fill: Color, edge: Color) {
+        switch label {
+        case "1", "2", "3": return (Theme.seafoam, Theme.seafoamDeep)
+        case "4", "5", "6": return (Theme.tealMid, Theme.tealMidDeep)
+        case "7", "8", "9": return (Theme.apricot, Theme.apricotDeep)
+        case "⌫": return (Theme.sun, Theme.ember)
+        default: return (Theme.sunLight, Theme.sunLightDeep)
+        }
+    }
+
     private func key(_ label: String, action: @escaping () -> Void) -> some View {
-        Button(action: action) {
+        let tint = Self.keyTint(label)
+        return Button(action: action) {
             Text(label)
                 .font(.system(size: 24, weight: .bold, design: .rounded))
                 .frame(maxWidth: .infinity, minHeight: 52)
-                .background(RoundedRectangle(cornerRadius: 14).fill(.white))
-                .foregroundStyle(theme.textPrimary)
+                .background(RoundedRectangle(cornerRadius: 14).fill(tint.edge).offset(y: 4))
+                .background(RoundedRectangle(cornerRadius: 14).fill(tint.fill))
+                .foregroundStyle(Theme.ink)
         }
         .buttonStyle(SpringButtonStyle())
     }

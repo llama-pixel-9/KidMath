@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { digitKeyClass, PAD_BACKSPACE } from "./kit";
 import ConfettiBurst from "./ConfettiBurst.jsx";
 
 // Number-bond ("cherry") builder: the whole and one part are shown; the child
@@ -24,7 +25,6 @@ export default function NumberBond({ onSubmit, feedback, theme, lowMotionMode, l
         ? "ring-4 ring-ember text-ember"
         : "ring-4 ring-teal text-teal";
   const circle = "w-16 h-16 rounded-full flex items-center justify-center text-2xl font-extrabold shadow";
-  const keyClass = `relative min-h-[64px] rounded-2xl ${theme.cardBg} shadow-lg text-2xl font-extrabold ${theme.textPrimary} cursor-pointer select-none disabled:opacity-40`;
 
   return (
     <section className="w-full flex flex-col items-center gap-3" aria-label="Number bond">
@@ -48,7 +48,7 @@ export default function NumberBond({ onSubmit, feedback, theme, lowMotionMode, l
         {["1", "2", "3", "4", "5", "6", "7", "8", "9"].map((d) => (
           <motion.button
             key={d}
-            className={keyClass}
+            className={digitKeyClass(d)}
             whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
             whileTap={{ scale: 0.9 }}
             onClick={() => pressDigit(d)}
@@ -58,7 +58,7 @@ export default function NumberBond({ onSubmit, feedback, theme, lowMotionMode, l
           </motion.button>
         ))}
         <motion.button
-          className={`${keyClass} text-xl`}
+          className={PAD_BACKSPACE}
           whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
           whileTap={{ scale: 0.9 }}
           onClick={backspace}
@@ -68,7 +68,7 @@ export default function NumberBond({ onSubmit, feedback, theme, lowMotionMode, l
           ⌫
         </motion.button>
         <motion.button
-          className={keyClass}
+          className={digitKeyClass("0")}
           whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => pressDigit("0")}

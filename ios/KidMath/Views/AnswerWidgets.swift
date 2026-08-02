@@ -82,14 +82,16 @@ struct NumberPadWidget: View {
             ForEach(keys, id: \.self) { row in
                 HStack(spacing: 10) {
                     ForEach(row, id: \.self) { key in
+                        let tint = DigitPadView.keyTint(key)
                         Button {
                             tap(key)
                         } label: {
                             Text(key)
                                 .font(.system(size: 26, weight: .bold, design: .rounded))
                                 .frame(maxWidth: .infinity, minHeight: 54)
-                                .background(RoundedRectangle(cornerRadius: 14).fill(.white))
-                                .foregroundStyle(theme.textPrimary)
+                                .background(RoundedRectangle(cornerRadius: 14).fill(tint.edge).offset(y: 4))
+                                .background(RoundedRectangle(cornerRadius: 14).fill(tint.fill))
+                                .foregroundStyle(Theme.ink)
                         }
                         .buttonStyle(SpringButtonStyle())
                     }

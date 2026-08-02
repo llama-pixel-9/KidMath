@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { digitKeyClass, PAD_BACKSPACE } from "./kit";
 import ConfettiBurst from "./ConfettiBurst.jsx";
 import { clockHand } from "./clockHand.js";
 
@@ -22,7 +23,6 @@ export default function AnalogClock({ onSubmit, feedback, theme, lowMotionMode, 
   const hourAngle = (((hour || 12) % 12) + (minute || 0) / 60) * 30;
   const mh = clockHand(cx, cy, 58, minuteAngle);
   const hh = clockHand(cx, cy, 40, hourAngle);
-  const keyClass = `relative min-h-[60px] rounded-2xl ${theme.cardBg} shadow-lg text-2xl font-extrabold ${theme.textPrimary} cursor-pointer select-none disabled:opacity-40`;
   const displayTone =
     feedback === "correct" ? "text-deep-teal" : feedback === "wrong" ? "text-ember" : theme.textPrimary;
 
@@ -50,7 +50,7 @@ export default function AnalogClock({ onSubmit, feedback, theme, lowMotionMode, 
         {["1", "2", "3", "4", "5", "6", "7", "8", "9"].map((d) => (
           <motion.button
             key={d}
-            className={keyClass}
+            className={digitKeyClass(d)}
             whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
             whileTap={{ scale: 0.9 }}
             onClick={() => pressDigit(d)}
@@ -60,7 +60,7 @@ export default function AnalogClock({ onSubmit, feedback, theme, lowMotionMode, 
           </motion.button>
         ))}
         <motion.button
-          className={`${keyClass} text-xl`}
+          className={PAD_BACKSPACE}
           whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
           whileTap={{ scale: 0.9 }}
           onClick={backspace}
@@ -70,7 +70,7 @@ export default function AnalogClock({ onSubmit, feedback, theme, lowMotionMode, 
           ⌫
         </motion.button>
         <motion.button
-          className={keyClass}
+          className={digitKeyClass("0")}
           whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => pressDigit("0")}

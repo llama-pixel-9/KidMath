@@ -46,7 +46,7 @@ export default function NumberLine({
   const canSubmit = mode === "jump" || picked !== null;
 
   return (
-    <section className="flex flex-col items-center gap-4 w-full max-w-sm" aria-label="Number line">
+    <section className="flex flex-col items-center gap-4 w-full" aria-label="Number line">
       <div className={`w-full p-3 rounded-3xl ${theme?.cardBg || "bg-white/80"} ${feedbackRing(feedback)}`}>
         <svg viewBox={`0 0 ${W} ${H}`} width="100%" role="img" aria-label={`Number line from ${min} to ${max}`}>
           <line x1={PAD} y1={baseY} x2={W - PAD} y2={baseY} stroke={FIGURE_COLORS.ink} strokeWidth="3" />

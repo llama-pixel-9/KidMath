@@ -429,9 +429,10 @@ describe("mode generation coverage", () => {
   });
 
   it("dataGraphs/angles/linesShapes modes produce valid answers", () => {
-    // M4: dataGraphs now also renders pictographs, tallies and line plots as
-    // text (numberPad) and asks multi-statement questions (multiSelect), so a
-    // bar graph is one representation among several.
+    // dataGraphs also draws pictographs, tallies and line plots (answered on a
+    // numberPad) and asks multi-statement questions (multiSelect), so a bar
+    // graph is one representation among several. See graphFigures.spec.js for
+    // the contract that each of those actually ships a figure to draw.
     const dg = getModeConfig("dataGraphs");
     let sawBars = false;
     for (let i = 0; i < 60; i++) {

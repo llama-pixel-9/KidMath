@@ -27,7 +27,7 @@ export default function AnalogClock({ onSubmit, feedback, theme, lowMotionMode, 
     feedback === "correct" ? "text-green-600" : feedback === "wrong" ? "text-red-500" : theme.textPrimary;
 
   return (
-    <section className="w-full max-w-sm flex flex-col items-center gap-3" aria-label="Clock">
+    <section className="w-full flex flex-col items-center gap-3" aria-label="Clock">
       <div className="relative">
         <svg width="160" height="160" viewBox="0 0 160 160" role="img" aria-label={`clock showing ${hour}:${String(minute).padStart(2, "0")}`}>
           <circle cx={cx} cy={cy} r="70" className="fill-white stroke-slate-300" strokeWidth="4" />

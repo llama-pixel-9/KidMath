@@ -46,7 +46,7 @@ export default function MultiSelect({
   };
 
   return (
-    <section className="flex flex-col items-center gap-4 w-full max-w-sm" aria-label="Choose all that apply">
+    <section className="flex flex-col items-center gap-4 w-full" aria-label="Choose all that apply">
       <div className="grid grid-cols-2 gap-3 w-full">
         {options.map((opt) => {
           const value = typeof opt === "object" ? opt.value : opt;

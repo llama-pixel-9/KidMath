@@ -39,8 +39,17 @@ function WorksheetsRoute() {
 function AppShell() {
   const { theme } = useTheme();
   return (
-    <div className={`min-h-screen ${theme.bg} ${theme.fontClass} transition-colors duration-300`}>
+    // Column shell: the navbar takes its natural height and the routed page
+    // gets the rest. Before this, the play screen asked for a full 100vh of its
+    // own BELOW the navbar, so every page was exactly one navbar taller than
+    // the window and always scrolled — which is why the number pad hung off the
+    // bottom of a laptop screen. dvh rather than vh so a phone's collapsing
+    // address bar does not reintroduce the same overflow.
+    <div
+      className={`min-h-[100dvh] flex flex-col ${theme.bg} ${theme.fontClass} transition-colors duration-300`}
+    >
       <Navbar />
+      <div className="flex-1 flex flex-col min-h-0">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/play" element={<PlayRoute />} />
@@ -53,6 +62,7 @@ function AppShell() {
         {/* Unknown paths: send to home rather than expose a bare 404. */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+      </div>
       <Analytics />
       <SpeedInsights />
     </div>

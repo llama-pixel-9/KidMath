@@ -23,7 +23,7 @@ export default function PlaceValueDiscs({ onSubmit, feedback, theme, lowMotionMo
     feedback === "correct" ? "text-green-600" : feedback === "wrong" ? "text-red-500" : theme.textPrimary;
 
   return (
-    <section className="w-full max-w-sm flex flex-col items-center gap-3" aria-label="Place value discs">
+    <section className="w-full flex flex-col items-center gap-3" aria-label="Place value discs">
       <div className="relative w-full flex justify-center gap-2">
         {(cols || []).map(({ place, count }) => (
           <div key={place} className={`flex flex-col items-center gap-1 rounded-xl ${theme.cardBg} p-2 shadow-inner`}>

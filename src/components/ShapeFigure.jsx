@@ -52,7 +52,7 @@ export default function ShapeFigure({
   const canSubmit = mode === "select" ? picked !== null : entry !== "";
 
   return (
-    <section className="flex flex-col items-center gap-4 w-full max-w-sm" aria-label="Shape">
+    <section className="flex flex-col items-center gap-4 w-full" aria-label="Shape">
       {mode === "select" ? (
         <div className="grid grid-cols-2 gap-3">
           {options.map((opt, i) => (

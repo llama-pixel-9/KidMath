@@ -6,7 +6,7 @@ const COMPARISON_SYMBOLS = ["<", "=", ">"];
 export default function SymbolSelect({ onSubmit, feedback, revealAnswer, shakenChoice, theme, lowMotionMode, lowEndDevice }) {
   const locked = feedback === "correct" || feedback === "wrong";
   return (
-    <section className="grid grid-cols-3 gap-3 w-full max-w-sm" aria-label="Comparison symbols">
+    <section className="grid grid-cols-3 gap-3 w-full" aria-label="Comparison symbols">
       {COMPARISON_SYMBOLS.map((sym, i) => {
         const isCorrectChoice = feedback === "correct" && sym === revealAnswer;
         const isRevealedCorrect = feedback === "wrong" && sym === revealAnswer;

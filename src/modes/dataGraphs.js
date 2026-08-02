@@ -16,9 +16,11 @@ import { buildDistractors } from "./distractors";
  *   band 3 (L7-10) total the whole survey, keys of 4/5 with half symbols,
  *                  compare through a key, multi-statement reasoning
  *
- * Pictographs, tallies and line plots are rendered as text in the prompt: the
- * `pictograph` / `tallyChart` / `linePlot` widgets the spec asks for are not
- * built, and a text render costs nothing and reads correctly aloud.
+ * Every variety draws a real figure. Bar graphs, pictographs, tallies and line
+ * plots each ship a `display.figure` payload that the figure registry renders;
+ * the prompt asks the question and nothing else. Data spelled out in the prompt
+ * ("Each ● stands for 2. Cats: ●●●●.") turns a chart-reading item into a
+ * sentence-parsing item, which is a different and easier skill.
  */
 
 const { CONCEPTUAL, PROCEDURAL, APPLICATION } = ITEM_FAMILIES;
@@ -38,9 +40,6 @@ const CONTEXTS = [
   "Ava recorded this at the library table.",
   "Luca graphed what the after-school group chose.",
 ];
-
-const SYMBOL = "●";
-const HALF = "◐";
 
 function pick(arr) {
   return arr[randInt(0, arr.length - 1)];
@@ -71,10 +70,6 @@ function twoBars(bars) {
   return [bars[i], bars[j]];
 }
 
-function row(label, count, half = false) {
-  return `${label}: ${SYMBOL.repeat(count)}${half ? HALF : ""}`;
-}
-
 const VARIETIES = [
   // ---- band 1 --------------------------------------------------------------
   {
@@ -88,7 +83,7 @@ const VARIETIES = [
       return {
         answer: target.value,
         answerType: "barGraph",
-        display: { type: "barGraph", bars },
+        display: { type: "barGraph", figure: "barGraph", bars },
         promptText: `How many ${target.label}?`,
         representation: "barGraph",
         cognitiveDemand: "DOK1",
@@ -111,7 +106,7 @@ const VARIETIES = [
         answer: target.label,
         answerType: "choice",
         choices: shuffleArray(bars.map((b) => b.label)),
-        display: { type: "barGraph", bars },
+        display: { type: "barGraph", figure: "barGraph", bars },
         promptText: `Which one was chosen the ${wantMost ? "most" : "fewest"}?`,
         representation: "barGraph",
         cognitiveDemand: "DOK1",
@@ -127,13 +122,16 @@ const VARIETIES = [
     build(level) {
       const labels = pick(CATEGORY_SETS);
       const counts = labels.slice(0, 2).map(() => randInt(3, level <= 3 ? 13 : 24));
-      const tally = (n) => `${"IIII/ ".repeat(Math.floor(n / 5))}${"I".repeat(n % 5)}`.trim();
       const idx = randInt(0, 1);
       return {
         answer: counts[idx],
         answerType: "numberPad",
-        promptText: `Each IIII/ is 5. ${labels[0]}: ${tally(counts[0])}. ${labels[1]}: ${tally(counts[1])}. How many chose ${labels[idx]}?`,
-        representation: "visual",
+        display: {
+          figure: "tallyChart",
+          rows: labels.slice(0, 2).map((label, i) => ({ label, count: counts[i] })),
+        },
+        promptText: `How many chose ${labels[idx]}?`,
+        representation: "tallyChart",
         cognitiveDemand: "DOK1",
         misconceptionTags: ["tallyFifthMiscount", "offByOne"],
       };
@@ -151,8 +149,13 @@ const VARIETIES = [
       return {
         answer: counts[idx],
         answerType: "numberPad",
-        promptText: `Each ${SYMBOL} stands for 1. ${row(labels[0], counts[0])}. ${row(labels[1], counts[1])}. How many ${labels[idx]}?`,
-        representation: "visual",
+        display: {
+          figure: "pictograph",
+          keyValue: 1,
+          rows: labels.slice(0, 2).map((label, i) => ({ label, symbols: counts[i] })),
+        },
+        promptText: `How many ${labels[idx]}?`,
+        representation: "pictograph",
         cognitiveDemand: "DOK1",
         misconceptionTags: ["keyIgnored", "offByOne"],
       };
@@ -173,7 +176,7 @@ const VARIETIES = [
       return {
         answer: more.value - less.value,
         answerType: "barGraph",
-        display: { type: "barGraph", bars },
+        display: { type: "barGraph", figure: "barGraph", bars },
         promptText: `How many more ${more.label} than ${less.label}?`,
         representation: "barGraph",
         cognitiveDemand: "DOK2",
@@ -197,7 +200,7 @@ const VARIETIES = [
       return {
         answer: more.value - less.value,
         answerType: "barGraph",
-        display: { type: "barGraph", bars },
+        display: { type: "barGraph", figure: "barGraph", bars },
         promptText: `How many fewer ${less.label} than ${more.label}?`,
         representation: "barGraph",
         cognitiveDemand: "DOK2",
@@ -217,7 +220,7 @@ const VARIETIES = [
       return {
         answer: x.value + y.value,
         answerType: "barGraph",
-        display: { type: "barGraph", bars },
+        display: { type: "barGraph", figure: "barGraph", bars },
         promptText: `How many chose ${x.label} or ${y.label} altogether?`,
         representation: "barGraph",
         cognitiveDemand: "DOK2",
@@ -239,8 +242,13 @@ const VARIETIES = [
       return {
         answer: symbols[idx] * key,
         answerType: "numberPad",
-        promptText: `Each ${SYMBOL} stands for ${key}. ${row(labels[0], symbols[0])}. ${row(labels[1], symbols[1])}. How many ${labels[idx]}?`,
-        representation: "visual",
+        display: {
+          figure: "pictograph",
+          keyValue: key,
+          rows: labels.slice(0, 2).map((label, i) => ({ label, symbols: symbols[i] })),
+        },
+        promptText: `How many ${labels[idx]}?`,
+        representation: "pictograph",
         cognitiveDemand: "DOK2",
         misconceptionTags: ["keyIgnored", "wrongFactor"],
         distractorContext: { a: symbols[idx], b: key },
@@ -260,8 +268,13 @@ const VARIETIES = [
       return {
         answer: counts[idx],
         answerType: "numberPad",
-        promptText: `Plant heights in cm: ${heights.map((h, i) => `${h} cm ${"X".repeat(counts[i])}`).join(", ")}. How many plants were ${heights[idx]} cm tall?`,
-        representation: "visual",
+        display: {
+          figure: "linePlot",
+          axisLabel: "Plant height (cm)",
+          points: heights.map((value, i) => ({ value, count: counts[i] })),
+        },
+        promptText: `How many plants were ${heights[idx]} cm tall?`,
+        representation: "linePlot",
         cognitiveDemand: "DOK1",
         misconceptionTags: ["offByOne", "axisMisread"],
       };
@@ -279,7 +292,7 @@ const VARIETIES = [
       return {
         answer: bars.reduce((s, b) => s + b.value, 0),
         answerType: "barGraph",
-        display: { type: "barGraph", bars },
+        display: { type: "barGraph", figure: "barGraph", bars },
         promptText: "How many were counted in all?",
         representation: "barGraph",
         cognitiveDemand: "DOK2",
@@ -301,8 +314,13 @@ const VARIETIES = [
       return {
         answer: whole * key + (half ? key / 2 : 0),
         answerType: "numberPad",
-        promptText: `Each ${SYMBOL} stands for ${key} and each ${HALF} is half of one. ${row(labels[0], whole, half)}. How many ${labels[0]}?`,
-        representation: "visual",
+        display: {
+          figure: "pictograph",
+          keyValue: key,
+          rows: [{ label: labels[0], symbols: whole, half }],
+        },
+        promptText: `How many ${labels[0]}?`,
+        representation: "pictograph",
         cognitiveDemand: "DOK3",
         misconceptionTags: ["halfSymbolWhole", "keyIgnored", "wrongFactor"],
         distractorContext: { a: whole, b: key },
@@ -327,8 +345,16 @@ const VARIETIES = [
       return {
         answer: (more - less) * key,
         answerType: "numberPad",
-        promptText: `Each ${SYMBOL} stands for ${key}. ${row(labels[0], s1)}. ${row(labels[1], s2)}. How many more ${moreLabel} than ${lessLabel}?`,
-        representation: "visual",
+        display: {
+          figure: "pictograph",
+          keyValue: key,
+          rows: [
+            { label: labels[0], symbols: s1 },
+            { label: labels[1], symbols: s2 },
+          ],
+        },
+        promptText: `How many more ${moreLabel} than ${lessLabel}?`,
+        representation: "pictograph",
         cognitiveDemand: "DOK3",
         misconceptionTags: ["keyIgnored", "compareDirection"],
         distractorContext: { a: more - less, b: key },
@@ -368,6 +394,7 @@ const VARIETIES = [
         answerType: "multiSelect",
         display: {
           type: "barGraph",
+          figure: "barGraph",
           bars,
           options: shown.map((c) => c.text),
         },
@@ -393,8 +420,13 @@ const VARIETIES = [
       return {
         answer: Math.max(...present) - Math.min(...present),
         answerType: "numberPad",
-        promptText: `Plant heights in cm: ${heights.map((h, i) => `${h} cm ${counts[i] ? "X".repeat(counts[i]) : "-"}`).join(", ")}. What is the difference between the tallest and the shortest plant?`,
-        representation: "visual",
+        display: {
+          figure: "linePlot",
+          axisLabel: "Plant height (cm)",
+          points: heights.map((value, i) => ({ value, count: counts[i] })),
+        },
+        promptText: "What is the difference between the tallest and the shortest plant?",
+        representation: "linePlot",
         cognitiveDemand: "DOK3",
         misconceptionTags: ["compareDirection", "offByOne"],
         distractorContext: { a: Math.max(...present), b: Math.min(...present) },
@@ -414,8 +446,13 @@ const VARIETIES = [
       return {
         answer: symbols * key,
         answerType: "numberPad",
-        promptText: `Each ${SYMBOL} stands for ${key}. ${row(labels[0], symbols)}. ${actor} says there are ${symbols}, one for each symbol. How many ${labels[0]} are there really?`,
-        representation: "visual",
+        display: {
+          figure: "pictograph",
+          keyValue: key,
+          rows: [{ label: labels[0], symbols }],
+        },
+        promptText: `${actor} says there are ${symbols}, one for each symbol. How many ${labels[0]} are there really?`,
+        representation: "pictograph",
         cognitiveDemand: "DOK3",
         misconceptionTags: ["keyIgnored", "wrongFactor"],
         distractorContext: { a: symbols, b: key },
@@ -434,7 +471,7 @@ const VARIETIES = [
       return {
         answer: x.value + y.value,
         answerType: "barGraph",
-        display: { type: "barGraph", bars },
+        display: { type: "barGraph", figure: "barGraph", bars },
         promptText: `${lead} How many chose ${x.label} or ${y.label} in all?`,
         representation: "barGraph",
         cognitiveDemand: "DOK2",

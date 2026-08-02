@@ -10,56 +10,41 @@ import {
 import { COINS } from "./kit/coins.js";
 
 
-const SCALE = 1.15; // mm -> px, sized for a young child's fingertip
+// mm -> px. 1.3 keeps the smallest coin (a dime, 46px) above the 44px minimum
+// touch target while a full 15-coin tray still fits in three rows.
+const SCALE = 1.3;
 
 function Coin({ coin, selected, onClick, locked, lowMotionMode }) {
   const spec = COINS[coin];
-  const size = spec.r * SCALE;
+  const size = spec.r * 2 * SCALE;
   return (
     <motion.button
       type="button"
       disabled={locked}
       onClick={onClick}
+      // The face carries no value, so the label is the only thing a screen
+      // reader has to go on.
       aria-label={`${spec.name}, ${spec.label}`}
       aria-pressed={selected}
-      className="rounded-full disabled:cursor-default cursor-pointer select-none"
-      style={{ width: size * 2, height: size * 2 }}
+      className={`rounded-full disabled:cursor-default cursor-pointer select-none ${
+        selected ? "ring-4 ring-sky-400" : ""
+      }`}
+      style={{ width: size, height: size }}
       {...hoverMotion(lowMotionMode)}
       {...tapMotion(lowMotionMode)}
       animate={selected ? { y: -6 } : { y: 0 }}
     >
-      <svg viewBox="0 0 100 100" width="100%" height="100%" role="presentation">
-        <circle cx="50" cy="50" r="46" fill={spec.edge} />
-        <circle cx="50" cy="50" r="41" fill={spec.fill} />
-        {/* milled edge: quarters and dimes are reeded, pennies and nickels are not */}
-        {(coin === "quarter" || coin === "dime") &&
-          Array.from({ length: 28 }, (_, i) => {
-            const a = (i / 28) * Math.PI * 2;
-            return (
-              <line
-                key={i}
-                x1={50 + Math.cos(a) * 42}
-                y1={50 + Math.sin(a) * 42}
-                x2={50 + Math.cos(a) * 46}
-                y2={50 + Math.sin(a) * 46}
-                stroke={spec.edge}
-                strokeWidth="2.5"
-              />
-            );
-          })}
-        <text
-          x="50"
-          y="50"
-          textAnchor="middle"
-          dominantBaseline="central"
-          fontSize="30"
-          fontWeight="800"
-          fill={spec.text}
-        >
-          {spec.label}
-        </text>
-        {selected && <circle cx="50" cy="50" r="46" fill="none" stroke="#0ea5e9" strokeWidth="6" />}
-      </svg>
+      <img
+        src={spec.src}
+        alt=""
+        width={size}
+        height={size}
+        draggable={false}
+        decoding="async"
+        className="w-full h-full rounded-full pointer-events-none"
+        // Lifts the coin off the tray so overlapping rims stay readable.
+        style={{ filter: "drop-shadow(0 2px 2px rgb(0 0 0 / 0.28))" }}
+      />
     </motion.button>
   );
 }
@@ -97,7 +82,7 @@ export default function CoinTray({
   };
 
   return (
-    <section className="flex flex-col items-center gap-4 w-full max-w-sm" aria-label="Coins">
+    <section className="flex flex-col items-center gap-4 w-full" aria-label="Coins">
       <div
         className={`flex flex-wrap items-center justify-center gap-2 p-4 rounded-3xl w-full ${theme?.cardBg || "bg-white/80"} ${feedbackRing(feedback)}`}
       >

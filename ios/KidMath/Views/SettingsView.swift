@@ -52,11 +52,19 @@ struct SettingsView: View {
 
 
     private var soundSection: some View {
-        Section("Sound") {
+        Section("Sound & Motion") {
             Toggle("Sound effects", isOn: Binding(
                 get: { !app.isMuted },
                 set: { app.isMuted = !$0 }
             ))
+            Toggle(isOn: $app.calmMode) {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Calm mode")
+                    Text("No confetti or shaking — stars and levels stay.")
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                }
+            }
         }
     }
 

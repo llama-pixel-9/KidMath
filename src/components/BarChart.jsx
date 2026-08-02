@@ -110,6 +110,10 @@ export default function BarChart({ bars, theme, showValues = false, valueLabel =
       {data.map((b, i) => {
         const cx = PAD_LEFT + band * i + band / 2;
         const top = y(b.value);
+        // Fixed brand ramp in reading order (§09) — never a chart library's
+        // default palette, never one bar singled out, and bar color never
+        // matches what the bar is about.
+        const ramp = ["fill-seafoam", "fill-teal-mid", "fill-apricot", "fill-sun-light"];
         return (
           <g key={b.label}>
             <rect
@@ -118,7 +122,7 @@ export default function BarChart({ bars, theme, showValues = false, valueLabel =
               width={barW}
               height={PAD_TOP + PLOT_H - top}
               rx="4"
-              className="fill-sky-400"
+              className={ramp[i % ramp.length]}
             />
             <text
               x={cx}

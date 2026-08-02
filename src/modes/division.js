@@ -24,7 +24,7 @@ const SUBSKILLS = ["partitioning", "inverseFact", "unknownQuotient"];
 
 export default {
   id: "division",
-  label: "Division Derby!",
+  label: "Split the Nest",
   shortLabel: "Division",
   description: "Share equally and measure out groups.",
   icon: "Divide",

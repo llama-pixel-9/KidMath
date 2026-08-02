@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence, MotionConfig, useReducedMotion } from "framer-motion";
 import {
   Plus,
@@ -66,8 +67,12 @@ import {
   loadAllowWordProblems,
   loadAllowWordProblemsSync,
   saveAllowWordProblems,
+  loadCalmMode,
+  saveCalmMode,
 } from "./userPreferences";
 import ConfettiBurst from "./components/ConfettiBurst.jsx";
+import ConfettiRain from "./components/ConfettiRain.jsx";
+import LarkMark from "./components/LarkMark.jsx";
 import { getWidget } from "./components/widgetRegistry.js";
 import { getFigure } from "./components/figureRegistry.js";
 
@@ -209,6 +214,8 @@ function StarRow({ count }) {
   );
 }
 
+// Fledging (§17): the between-levels moment — the lark on an Apricot disc
+// (the teal ring belongs to the end card), a flight word, no confetti here.
 function LevelUpToast() {
   return (
     <motion.div
@@ -218,59 +225,92 @@ function LevelUpToast() {
       exit={{ opacity: 0 }}
     >
       <motion.div
-        className="bg-apricot text-ink px-8 py-4 rounded-3xl shadow-[0_5px_0_#F0A47A] flex items-center gap-3"
+        className="bg-white px-8 py-5 rounded-3xl shadow-[0_8px_0_#14231F14] flex items-center gap-4"
         initial={{ scale: 0, y: 30 }}
-        animate={{ scale: [0, 1.3, 1], y: 0 }}
+        animate={{ scale: [0, 1.15, 1], y: 0 }}
         exit={{ scale: 0, y: -30, opacity: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <Zap className="h-8 w-8" />
-        <span className="text-2xl font-extrabold">Level Up!</span>
-        <Zap className="h-8 w-8" />
+        <span className="flex items-center justify-center w-14 h-14 rounded-full bg-apricot">
+          <LarkMark size={30} />
+        </span>
+        <span className="text-2xl font-display font-semibold text-ink">
+          You&rsquo;ve fledged — level up!
+        </span>
       </motion.div>
     </motion.div>
   );
 }
 
+// The end card (§11): the lark sits inside the score ring so one object
+// carries both the celebration and the result; everything below it is
+// information. Headlines are bird puns, never a score judgement.
+const END_CARD_PUNS = [
+  "Talon-ted!",
+  "Nice flying!",
+  "Owl be impressed!",
+  "Toucan-t stop you!",
+  "Wing it again?",
+  "Egg-cellent!",
+  "That soared!",
+  "Feather in your cap!",
+];
+
 function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, lifetimeStars, engagement, onPlayAgain }) {
   const { theme } = useTheme();
+  const navigate = useNavigate();
+  const prefersReducedMotion = useReducedMotion();
   const ratio = total > 0 ? firstTryCorrect / total : 0;
-
-  let subtitle = "Great job practicing!";
-  if (ratio >= 0.9) subtitle = "Amazing — you're a math superstar!";
-  else if (ratio >= 0.7) subtitle = "Awesome work — you're getting stronger!";
-  else if (ratio >= 0.5) subtitle = "Nice effort — keep practicing!";
-  else subtitle = "Great job sticking with it!";
+  // Rotate the pun deterministically so replays cycle through the set.
+  const headline = END_CARD_PUNS[(lifetimeStars + total) % END_CARD_PUNS.length];
 
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 backdrop-blur-sm"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
+      {!prefersReducedMotion && <ConfettiRain />}
       <motion.div
-        className="bg-white rounded-3xl shadow-2xl p-8 mx-4 max-w-sm w-full text-center"
+        className="relative bg-white rounded-3xl shadow-[0_8px_0_#14231F14] p-8 mx-4 max-w-sm w-full text-center"
         initial={{ scale: 0.5, y: 40 }}
         animate={{ scale: 1, y: 0 }}
         transition={{ type: "spring", stiffness: 200, damping: 20 }}
       >
-        <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: [0, 1.4, 1] }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-        >
-          <Trophy className="h-16 w-16 text-sun fill-sun mx-auto" />
-        </motion.div>
-        <h2 className={`text-3xl font-extrabold ${theme.textPrimary} mt-4`}>
-          {theme.completeMsg}
+        {/* Score ring: Lark Teal fill = percent first-try correct, on an Ink
+            8% track; the lark is the reward and appears here only. */}
+        <div className="relative w-[148px] h-[148px] mx-auto">
+          <div
+            className="w-full h-full rounded-full flex items-center justify-center"
+            style={{ background: `conic-gradient(#0B7A6A ${Math.max(ratio * 100, 3)}%, #14231F14 0)` }}
+          >
+            <div className="w-[120px] h-[120px] rounded-full bg-white flex items-center justify-center">
+              <LarkMark size={58} />
+            </div>
+          </div>
+          <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-ink text-cream rounded-full px-3.5 py-1 font-display font-semibold text-[15px] whitespace-nowrap">
+            {firstTryCorrect} / {total}
+          </div>
+        </div>
+        <h2 className={`text-3xl font-display font-semibold ${theme.textPrimary} mt-5`}>
+          {headline}
         </h2>
-        <p className={`text-lg ${theme.textSecondary} mt-2`}>
-          You earned{" "}
-          <span className="font-bold text-ember">{firstTryCorrect}</span>{" "}
-          {firstTryCorrect === 1 ? "star" : "stars"}!
-        </p>
-        <p className={`text-sm ${theme.textMuted} mt-1`}>{subtitle}</p>
+        {/* Stat strip on Apricot: star, +N stars, divider, streak. */}
+        <div className="mt-3 inline-flex items-center gap-2.5 bg-apricot rounded-2xl px-4 py-2.5">
+          <span className="w-4 h-4 bg-sun rotate-45 rounded-[3px] shrink-0" aria-hidden="true" />
+          <span className="text-[15px] font-bold text-ink">
+            +{firstTryCorrect} {firstTryCorrect === 1 ? "star" : "stars"}
+          </span>
+          {engagement?.streak > 1 && (
+            <>
+              <span className="w-px h-[18px] bg-ink/20 shrink-0" aria-hidden="true" />
+              <span className="text-[15px] font-bold text-ink">
+                {engagement.streak} days in a row
+              </span>
+            </>
+          )}
+        </div>
         {retriesMastered > 0 && (
           <motion.p
             className="text-sm font-bold text-deep-teal mt-2"
@@ -284,16 +324,6 @@ function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, li
         <div className="mt-3">
           <JourneyMap level={level} compact />
         </div>
-        {engagement?.streak > 1 && (
-          <motion.p
-            className="text-sm font-bold text-ember mt-2"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: engagement.streakExtended ? [0.8, 1.2, 1] : 1 }}
-            transition={{ delay: 0.5 }}
-          >
-            🔥 {engagement.streak} days in a row!
-          </motion.p>
-        )}
         {engagement?.goalJustMet && (
           <motion.p
             className="text-sm font-bold text-deep-teal mt-1"
@@ -301,7 +331,7 @@ function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, li
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.65 }}
           >
-            🎯 Daily goal done — {engagement.todayStars} stars today!
+            Daily goal done — {engagement.todayStars} stars today!
           </motion.p>
         )}
         {(engagement?.newBadges || []).map((b, i) => (
@@ -315,11 +345,6 @@ function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, li
             {b.emoji} New badge: {b.name}!
           </motion.p>
         ))}
-        <div className="flex justify-center gap-1 mt-3 flex-wrap">
-          {Array.from({ length: Math.min(firstTryCorrect, 15) }, (_, i) => (
-            <Star key={i} className="h-5 w-5 text-sun fill-sun" />
-          ))}
-        </div>
         {lifetimeStars > firstTryCorrect && (
           <motion.p
             className={`text-xs ${theme.textMuted} mt-2`}
@@ -330,20 +355,24 @@ function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, li
             {lifetimeStars} stars earned all-time!
           </motion.p>
         )}
-        <motion.button
-          className={`mt-6 px-8 py-3 bg-gradient-to-r ${theme.ctaPrimary} text-cream text-xl font-display font-semibold rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer`}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
+        <button
+          className="mt-6 w-full h-14 bg-teal text-cream text-xl font-display font-semibold rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer"
           onClick={onPlayAgain}
         >
-          Play Again!
-        </motion.button>
+          Play again
+        </button>
+        <button
+          className="mt-3 text-[15px] font-bold text-teal cursor-pointer hover:underline underline-offset-2"
+          onClick={() => navigate("/")}
+        >
+          Back to the nest
+        </button>
       </motion.div>
     </motion.div>
   );
 }
 
-function SettingsPanel({ mode, allowWordProblems, onAllowWordProblemsChange, onModeChange, onClose }) {
+function SettingsPanel({ mode, allowWordProblems, onAllowWordProblemsChange, calmMode, onCalmModeChange, onModeChange, onClose }) {
   const { theme } = useTheme();
   return (
     <motion.div
@@ -410,6 +439,28 @@ function SettingsPanel({ mode, allowWordProblems, onAllowWordProblemsChange, onM
             <span
               className={`absolute top-0.5 left-0.5 w-6 h-6 bg-white rounded-full shadow transition-transform ${
                 allowWordProblems ? "translate-x-5" : ""
+              }`}
+            />
+          </button>
+        </div>
+
+        <div className="mb-5 flex items-center justify-between gap-3 rounded-2xl border border-ink/10 bg-cream px-4 py-3">
+          <div>
+            <p className={`text-sm font-bold ${theme.textPrimary}`}>Calm Mode</p>
+            <p className={`text-xs ${theme.textMuted}`}>
+              No confetti or shaking — stars and levels stay.
+            </p>
+          </div>
+          <button
+            className={`relative w-12 h-7 rounded-full transition-colors cursor-pointer ${
+              calmMode ? "bg-teal" : "bg-ink/20"
+            }`}
+            onClick={() => onCalmModeChange(!calmMode)}
+            aria-label={calmMode ? "Turn calm mode off" : "Turn calm mode on"}
+          >
+            <span
+              className={`absolute top-0.5 left-0.5 w-6 h-6 bg-white rounded-full shadow transition-transform ${
+                calmMode ? "translate-x-5" : ""
               }`}
             />
           </button>
@@ -808,6 +859,7 @@ export default function MathExplorer({ initialMode }) {
   const [showLoginPrompt, setShowLoginPrompt] = useState(false);
   const [muted, setMutedState] = useState(isMuted);
   const [allowWordProblems, setAllowWordProblems] = useState(() => loadAllowWordProblemsSync());
+  const [calmMode, setCalmMode] = useState(() => loadCalmMode());
   const questionStartTime = useRef(Date.now());
   const loginTimerRef = useRef(null);
   const questionKeyRef = useRef(0);
@@ -1069,11 +1121,31 @@ export default function MathExplorer({ initialMode }) {
     setShowLoginPrompt(false);
   };
 
-  if (!currentQ) return null;
+  // Nesting (§16): while the first question loads, the question card is
+  // already present and fills with Ink-tint blocks in the real card's shape —
+  // no layout shift, no spinner, nothing that looks broken while thinking.
+  if (!currentQ) {
+    return (
+      <main className={`flex-1 ${theme.playBg} flex flex-col`}>
+        <div className="flex-1 flex items-center justify-center px-4">
+          <div className="w-full max-w-sm bg-white rounded-3xl shadow-[0_6px_0_#14231F0f] p-7 flex flex-col gap-4">
+            <div className="skeleton-block h-6 w-3/4" />
+            <div className="skeleton-block h-10" />
+            <div className="flex gap-3">
+              <div className="skeleton-block h-9 flex-1" />
+              <div className="skeleton-block h-9 flex-1" />
+            </div>
+          </div>
+        </div>
+      </main>
+    );
+  }
 
   const modeColor = theme.modeColors[mode];
   const ModeIcon = getModeIcon(mode);
-  const lowMotionMode = Boolean(prefersReducedMotion);
+  // Calm mode is the parent-facing switch for the same behavior the OS-level
+  // reduced-motion setting drives: no confetti, no shake, star stays.
+  const lowMotionMode = Boolean(prefersReducedMotion) || calmMode;
   // "choice" (multiple-choice bubbles) is the default; the dev flag or an item's
   // own answerType selects a different input control via the dispatch below.
   const answerType = forcedInputType || currentQ.answerType || "choice";
@@ -1252,6 +1324,11 @@ export default function MathExplorer({ initialMode }) {
             mode={mode}
             allowWordProblems={allowWordProblems}
             onAllowWordProblemsChange={handleAllowWordProblemsChange}
+            calmMode={calmMode}
+            onCalmModeChange={(value) => {
+              setCalmMode(value);
+              saveCalmMode(value);
+            }}
             onModeChange={handleModeChange}
             onClose={() => setShowSettings(false)}
           />

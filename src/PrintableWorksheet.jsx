@@ -56,6 +56,7 @@ import {
   Lightbulb,
   Zap,
 } from "lucide-react";
+import LarkMark from "./components/LarkMark.jsx";
 import { generateWorksheetSet, MODES } from "./mathEngine";
 import { getModeConfig } from "./modes";
 import { useTheme } from "./useTheme";
@@ -253,7 +254,7 @@ export default function PrintableWorksheet() {
     <div className={`min-h-screen ${theme.bg} transition-colors duration-300`}>
       <div className="no-print max-w-md mx-auto px-4 py-6">
         <h1 className={`text-2xl font-extrabold ${theme.textPrimary} mb-6`}>
-          Print a Worksheet
+          Print a Flight Log
         </h1>
 
         <div className={`${theme.cardBg} backdrop-blur rounded-3xl shadow-lg p-6 space-y-5`}>
@@ -438,43 +439,36 @@ export default function PrintableWorksheet() {
           style={sheetIdx > 0 ? { pageBreakBefore: "always" } : undefined}
         >
           <div className="bg-white rounded-3xl shadow-lg p-8 print:shadow-none print:rounded-none print:p-4">
-            <div className="flex items-center justify-center gap-3 mb-1 print:mb-0">
-              <Star className="h-8 w-8 text-yellow-500 fill-yellow-400 print:h-5 print:w-5" />
-              <h2 className="text-3xl font-extrabold text-slate-700 print:text-xl">
-                Math Worksheet
-                {sheets.length > 1 && (
-                  <span className="text-lg text-slate-400 font-bold ml-2 print:text-sm">
-                    ({sheetIdx + 1}/{sheets.length})
-                  </span>
-                )}
-              </h2>
-              <Star className="h-8 w-8 text-yellow-500 fill-yellow-400 print:h-5 print:w-5" />
-            </div>
-
-            <div className="flex justify-between items-center mb-1 text-sm text-slate-500 print:text-xs print:mb-0">
-              <span className="font-semibold">
-                {getWorksheetModeConfig(mode).label} &middot; Level {level} ({levelLabel})
+            {/* Flight-log header (§15): black lockup, 2px rule, log name right. */}
+            <div className="flex items-center gap-3 border-b-2 border-black pb-3 mb-3 print:pb-2 print:mb-2">
+              <LarkMark size={26} color="#000000" accent="#000000" eye="#FFFFFF" />
+              <span className="font-display font-semibold text-2xl text-black lowercase leading-none print:text-xl">
+                larkit
+              </span>
+              <span className="ml-auto text-xs font-bold text-black print:text-[11px]">
+                Flight log &middot; {getWorksheetModeConfig(mode).label} &middot; Level {level} ({levelLabel})
+                {sheets.length > 1 && ` · Sheet ${sheetIdx + 1} of ${sheets.length}`}
               </span>
             </div>
 
-            <div className="flex gap-6 mb-4 border-b-2 border-dashed border-slate-200 pb-3 print:mb-2 print:pb-2">
-              <label className="flex items-end gap-2 text-slate-600 font-medium pt-3 print:pt-1 print:text-sm">
-                Name:
-                <span className="inline-block border-b-2 border-slate-300 w-40 print:w-36" />
+            <div className="flex gap-6 mb-4 pb-3 print:mb-2 print:pb-2">
+              <label className="flex items-end gap-2 text-black font-medium pt-1 print:text-sm flex-1">
+                Name
+                <span className="inline-block border-b border-black flex-1 max-w-56" />
               </label>
-              <label className="flex items-end gap-2 text-slate-600 font-medium pt-3 print:pt-1 print:text-sm">
-                Date:
-                <span className="inline-block border-b-2 border-slate-300 w-32 print:w-28" />
+              <label className="flex items-end gap-2 text-black font-medium pt-1 print:text-sm">
+                Date
+                <span className="inline-block border-b border-black w-32 print:w-28" />
               </label>
             </div>
 
             <div className={`grid ${problemCount <= 20 ? "grid-cols-2 gap-x-8 gap-y-5 print:gap-y-3" : problemCount <= 30 ? "grid-cols-3 gap-x-6 gap-y-4 print:gap-x-4 print:gap-y-2" : "grid-cols-4 gap-x-4 gap-y-3 print:gap-x-3 print:gap-y-1.5"}`}>
               {sheet.problems.map((q, i) => (
                 <div key={i} className="flex items-center gap-2">
-                  <span className={`font-bold text-slate-400 text-right ${problemCount <= 20 ? "text-sm w-6" : problemCount <= 30 ? "text-xs w-6" : "text-[10px] w-5"}`}>
+                  <span className={`font-bold text-black/60 print:text-black text-right ${problemCount <= 20 ? "text-sm w-6" : problemCount <= 30 ? "text-xs w-6" : "text-[10px] w-5"}`}>
                     {i + 1})
                   </span>
-                  <span className={`font-bold text-slate-700 tracking-wide ${problemCount <= 20 ? "text-xl print:text-lg" : problemCount <= 30 ? "text-lg print:text-base" : "text-base print:text-sm"}`}>
+                  <span className={`font-display font-semibold text-black tracking-wide ${problemCount <= 20 ? "text-xl print:text-lg" : problemCount <= 30 ? "text-lg print:text-base" : "text-base print:text-sm"}`}>
                     <WorksheetProblem question={q} />
                   </span>
                   {i % 5 === 2 && problemCount <= 20 && problemCount < 40 && (
@@ -484,12 +478,12 @@ export default function PrintableWorksheet() {
               ))}
             </div>
 
-            <div className="mt-4 pt-2 border-t-2 border-dashed border-slate-200 flex items-center justify-center gap-3 print:mt-2 print:pt-1">
-              <Trophy className="h-5 w-5 text-yellow-500 fill-yellow-400 print:h-4 print:w-4" />
-              <p className="text-base font-extrabold text-slate-600 print:text-sm">
-                {sheet.encouragement}
-              </p>
-              <Trophy className="h-5 w-5 text-yellow-500 fill-yellow-400 print:h-4 print:w-4" />
+            <div className="no-print mt-4 pt-2 border-t border-ink/10 flex items-center justify-center">
+              <p className="text-base font-extrabold text-ink/70">{sheet.encouragement}</p>
+            </div>
+            <div className="hidden print:flex mt-2 pt-1 border-t border-black/30 items-center justify-between text-[10px] text-black">
+              <span>larkit.io</span>
+              <span>Sheet {sheetIdx + 1} of {sheets.length}</span>
             </div>
           </div>
 
@@ -498,21 +492,16 @@ export default function PrintableWorksheet() {
               className="bg-white rounded-3xl shadow-lg p-8 mt-4 print:shadow-none print:rounded-none print:p-6"
               style={{ pageBreakBefore: "always" }}
             >
-              <div className="flex items-center justify-center gap-3 mb-2">
-                <Sparkles className="h-6 w-6 text-violet-400 print:h-5 print:w-5" />
-                <h2 className="text-2xl font-extrabold text-slate-700 print:text-xl">
+              <div className="flex items-center gap-3 border-b-2 border-black pb-3 mb-4">
+                <LarkMark size={22} color="#000000" accent="#000000" eye="#FFFFFF" />
+                <h2 className="font-display font-semibold text-xl text-black">
                   Answer Key
-                  {sheets.length > 1 && (
-                    <span className="text-lg text-slate-400 font-bold ml-2">
-                      ({sheetIdx + 1}/{sheets.length})
-                    </span>
-                  )}
+                  {sheets.length > 1 && ` · Sheet ${sheetIdx + 1} of ${sheets.length}`}
                 </h2>
-                <Sparkles className="h-6 w-6 text-violet-400 print:h-5 print:w-5" />
+                <span className="ml-auto text-xs font-bold text-black">
+                  {getWorksheetModeConfig(mode).label} &middot; Level {level} ({levelLabel})
+                </span>
               </div>
-              <p className="text-sm text-slate-400 text-center mb-4">
-                {getWorksheetModeConfig(mode).label} &middot; Level {level} ({levelLabel})
-              </p>
               <div className="grid grid-cols-3 sm:grid-cols-4 gap-x-6 gap-y-3">
                 {sheet.problems.map((q, i) => (
                   <div key={i} className="flex items-center gap-1.5">

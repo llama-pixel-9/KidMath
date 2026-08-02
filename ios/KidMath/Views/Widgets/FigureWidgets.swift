@@ -305,13 +305,15 @@ struct BarChartView: View {
     var body: some View {
         HStack(alignment: .bottom, spacing: 12) {
             let maxValue = max(1, bars.map(\.value).max() ?? 1)
-            ForEach(Array(bars.enumerated()), id: \.offset) { _, bar in
+            // Fixed brand ramp in reading order (§09) — no bar singled out.
+            let ramp = [Theme.seafoam, Theme.tealMid, Theme.apricot, Theme.sunLight]
+            ForEach(Array(bars.enumerated()), id: \.offset) { index, bar in
                 VStack(spacing: 4) {
                     Text(AnswerFormatting.text(bar.value as NSNumber))
                         .font(.caption.weight(.bold))
                         .foregroundStyle(theme.textSecondary)
                     RoundedRectangle(cornerRadius: 5)
-                        .fill(Theme.seafoam)
+                        .fill(ramp[index % ramp.count])
                         .frame(width: 40, height: bar.value / maxValue * 110 + 6)
                     Text(bar.label)
                         .font(.system(size: 10, weight: .bold))

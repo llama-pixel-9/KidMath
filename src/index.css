@@ -89,6 +89,32 @@ h3 {
 }
 
 /*
+ * Nesting (§16): skeleton blocks breathe between 6% and 10% Ink on a 1.4s
+ * ease — no shimmer sweep, no spinner. The card never changes shape.
+ */
+@keyframes skeleton-breathe {
+  0%,
+  100% {
+    background-color: #14231f0f;
+  }
+  50% {
+    background-color: #14231f1a;
+  }
+}
+
+.skeleton-block {
+  animation: skeleton-breathe 1.4s ease-in-out infinite;
+  border-radius: 10px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton-block {
+    animation: none;
+    background-color: #14231f0f;
+  }
+}
+
+/*
  * Play-screen layout.
  *
  * The app was built phone-first and every pane was pinned to max-w-sm (384px),

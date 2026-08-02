@@ -26,7 +26,7 @@ const SUBSKILLS = ["equalGroups", "arrayReasoning", "factFluency"];
 
 export default {
   id: "multiplication",
-  label: "Multiply Mania!",
+  label: "Times Tree",
   shortLabel: "Multiply",
   description: "Equal groups, arrays, and times-as-many.",
   icon: "X",

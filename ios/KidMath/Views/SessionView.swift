@@ -30,22 +30,44 @@ struct SessionView: View {
             theme.background.ignoresSafeArea()
             switch viewModel.phase {
             case .loading:
-                ProgressView().controlSize(.large)
+                // Nesting (§16): a skeleton in the question card's shape —
+                // no spinner, no layout jump when the question lands.
+                skeletonCard
             case .question, .feedback:
                 playArea
             case .complete(let stars, let lifetime):
                 SessionCompleteView(
                     mode: mode,
                     starsEarned: stars,
+                    totalQuestions: viewModel.sessionSize,
                     lifetimeStars: lifetime,
                     playAgain: { Task { await viewModel.start() } },
                     goHome: { finish() }
                 )
             case .failed(let message):
-                VStack(spacing: 12) {
-                    Text("Something went wrong").font(.headline)
-                    Text(message).font(.footnote).foregroundStyle(theme.textMuted)
-                    Button("Back") { finish() }.buttonStyle(.borderedProminent)
+                // §16 error layout: mark, one Fredoka line, one plain line,
+                // one obvious teal button. No codes, no apology paragraph.
+                VStack(spacing: 14) {
+                    LarkMarkView().frame(width: 64)
+                    Text("That one flew off.")
+                        .font(theme.displayFont(size: 24))
+                        .foregroundStyle(Theme.ink)
+                    Text(message)
+                        .font(.footnote)
+                        .foregroundStyle(theme.textMuted)
+                        .multilineTextAlignment(.center)
+                    Button {
+                        Task { await viewModel.start() }
+                    } label: {
+                        Text("Try again")
+                            .font(theme.displayFont(size: 18))
+                            .padding(.horizontal, 36)
+                            .frame(minHeight: 52)
+                            .background(RoundedRectangle(cornerRadius: 16).fill(Theme.deepTeal).offset(y: 4))
+                            .background(RoundedRectangle(cornerRadius: 16).fill(Theme.teal))
+                            .foregroundStyle(Theme.cream)
+                    }
+                    .buttonStyle(SpringButtonStyle())
                 }
                 .padding()
             }
@@ -55,6 +77,28 @@ struct SessionView: View {
             }
         }
         .task { await viewModel.start() }
+    }
+
+    private var skeletonCard: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            RoundedRectangle(cornerRadius: 8).fill(Theme.ink.opacity(0.06))
+                .frame(height: 22)
+                .frame(maxWidth: 200)
+            RoundedRectangle(cornerRadius: 10).fill(Theme.ink.opacity(0.08))
+                .frame(height: 38)
+            HStack(spacing: 10) {
+                RoundedRectangle(cornerRadius: 10).fill(Theme.ink.opacity(0.06)).frame(height: 34)
+                RoundedRectangle(cornerRadius: 10).fill(Theme.ink.opacity(0.06)).frame(height: 34)
+            }
+        }
+        .padding(28)
+        .frame(maxWidth: 400)
+        .background(
+            RoundedRectangle(cornerRadius: 28)
+                .fill(theme.cardBackground)
+                .shadow(color: Theme.ink.opacity(0.06), radius: 0, y: 6)
+        )
+        .padding(.horizontal)
     }
 
     private func finish() {
@@ -145,7 +189,7 @@ struct SessionView: View {
                 .shadow(color: Theme.ink.opacity(0.06), radius: 0, y: 6)
         )
         .overlay {
-            if feedbackState == true, !reduceMotion {
+            if feedbackState == true, !reduceMotion, !app.calmMode {
                 ConfettiView()
             }
         }

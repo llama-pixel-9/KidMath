@@ -23,16 +23,22 @@ export function AuthProvider({ children }) {
     return () => subscription.unsubscribe();
   }, []);
 
-  const signInWithGoogle = async () => {
+  // §20: Apple or Google only — no email/password anywhere. `redirectPath`
+  // lets the signup screen land the parent on /onboarding after the OAuth
+  // round-trip (the path must be allow-listed in the Supabase auth config).
+  const signInWithProvider = async (provider, redirectPath = "/") => {
     if (!supabase) {
       console.warn("Supabase not configured — set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY in .env");
       return;
     }
     await supabase.auth.signInWithOAuth({
-      provider: "google",
-      options: { redirectTo: window.location.origin },
+      provider,
+      options: { redirectTo: window.location.origin + redirectPath },
     });
   };
+
+  // Kept without parameters: existing callers pass it straight to onClick.
+  const signInWithGoogle = async () => signInWithProvider("google");
 
   const signOut = async () => {
     if (!supabase) return;
@@ -41,7 +47,7 @@ export function AuthProvider({ children }) {
   };
 
   return (
-    <AuthContext.Provider value={{ user, loading, signInWithGoogle, signOut }}>
+    <AuthContext.Provider value={{ user, loading, signInWithGoogle, signInWithProvider, signOut }}>
       {children}
     </AuthContext.Provider>
   );

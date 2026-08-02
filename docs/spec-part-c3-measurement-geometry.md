@@ -105,7 +105,7 @@ working floor used in the authoring-load lines below is **40 items per `bank` va
 
 ---
 
-## measurement — Measure Up!
+## measurement — Measuring Wings
 
 **Today:** 1 shape (`amount × factor` conversion), 2 word-problem templates (one symbolic string, one
 "A rope is N m long"), 2 subskills (`lengthConvert`, `massVolumeConvert`). 5 unit pairs, amounts 2–9 (or
@@ -174,7 +174,7 @@ today level 1 already asks metric conversion, which is a Grade 3-4 skill being s
 
 ---
 
-## money — Money Counter!
+## money — Money Magpie
 
 **Today:** 2 shapes (coin count, make change), 4 prompt strings (2 per subskill), 2 subskills
 (`countCoins`, `makeChange`). Coin counting is quarters/dimes/pennies only — **no nickels**. Total item
@@ -419,7 +419,7 @@ rows 1–10 are all rendered angle figures with stock stems, which is exactly th
 
 ---
 
-## linesShapes — Shape Sleuth!
+## linesShapes — Shapes Shell
 
 **Today:** 2 shapes (`shapeSides` from a 5-entry table, `symmetryLines` from a 5-entry table), 2 prompt
 strings, 2 subskills. **`level` is ignored entirely.** Total item universe = **10 questions**, exactly.

@@ -4,7 +4,7 @@ import { createQuestionMetadata, ITEM_FAMILIES } from "./itemMetadata";
 import { maybeApplyFormat } from "./formats";
 
 /**
- * placeValue — Place Value! (spec-part-c1-number-sense.md §placeValue)
+ * placeValue — Place Value Perch (spec-part-c1-number-sense.md §placeValue)
  *
  * Before M4: four shapes (tens_in, ones_in, build, expanded), all symbolic, with
  * the subskill derived from the shape so it carried no extra information.
@@ -705,10 +705,11 @@ function chooseVariety(level, context = {}) {
 
 export default {
   id: "placeValue",
-  label: "Place Value!",
+  label: "Place Value Perch",
   shortLabel: "Place Value",
-  description: "Tens, ones, expanded form — and how one number can be named two ways.",
+  description: "Tens and ones",
   icon: "Layers",
+  glyph: "10",
   op: "place",
   subskills: SUBSKILLS,
   supportedFormats: SUPPORTED_FORMATS,

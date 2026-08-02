@@ -24,10 +24,11 @@ const SUBSKILLS = ["makeTen", "composeDecompose", "unknownAddend"];
 
 export default {
   id: "addition",
-  label: "Sum Perch",
+  label: "Addition Acorns",
   shortLabel: "Addition",
-  description: "Master adding numbers from 1 all the way to 50!",
+  description: "Sums to 20",
   icon: "Plus",
+  glyph: "+",
   op: "+",
   subskills: SUBSKILLS,
   supportedFormats: SUPPORTED_FORMATS,

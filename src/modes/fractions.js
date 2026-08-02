@@ -716,10 +716,11 @@ function selectVariety(level, context) {
 
 export default {
   id: "fractions",
-  label: "Fraction Frenzy!",
+  label: "Fractions Feather",
   shortLabel: "Fractions",
-  description: "Name, place, compare, and add fractions.",
+  description: "Halves & thirds",
   icon: "PieChart",
+  glyph: "½",
   op: "frac",
   subskills: SUBSKILLS,
   supportedFormats: [],

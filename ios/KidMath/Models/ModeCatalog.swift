@@ -27,36 +27,36 @@ enum ModeCatalog {
 
     static let groups: [ModeGroup] = [
         ModeGroup(id: "numbers", title: "Counting & Numbers", gradeHint: "Grades 1-2", modes: [
-            ModeInfo(id: "counting", label: "Count It Up!", emoji: "🔢", playable: true),
+            ModeInfo(id: "counting", label: "Counting Chicks", emoji: "🔢", playable: true),
             ModeInfo(id: "numberBonds", label: "Number Bonds!", emoji: "🔗", playable: true),
-            ModeInfo(id: "comparing", label: "Compare Quest!", emoji: "⚖️", playable: true),
+            ModeInfo(id: "comparing", label: "Comparison Crow", emoji: "⚖️", playable: true),
             ModeInfo(id: "skipCounting", label: "Skip Count!", emoji: "🐸", playable: true),
-            ModeInfo(id: "placeValue", label: "Place Value!", emoji: "🏗️", playable: true),
+            ModeInfo(id: "placeValue", label: "Place Value Perch", emoji: "🏗️", playable: true),
             ModeInfo(id: "placeValueDiscs", label: "Disc Builder!", emoji: "🪙", playable: true),
         ]),
         ModeGroup(id: "addSubtract", title: "Add & Subtract", gradeHint: "Grades 1-3", modes: [
-            ModeInfo(id: "addition", label: "Sum Perch", emoji: "➕", playable: true),
-            ModeInfo(id: "subtraction", label: "Countdown Coop", emoji: "➖", playable: true),
+            ModeInfo(id: "addition", label: "Addition Acorns", emoji: "➕", playable: true),
+            ModeInfo(id: "subtraction", label: "Subtraction Swoop", emoji: "➖", playable: true),
             ModeInfo(id: "barModels", label: "Bar Models!", emoji: "📊", playable: true),
         ]),
         ModeGroup(id: "multiplyDivide", title: "Multiply & Divide", gradeHint: "Grades 2-4", modes: [
-            ModeInfo(id: "multiplication", label: "Times Tree", emoji: "✖️", playable: true),
-            ModeInfo(id: "division", label: "Split the Nest", emoji: "➗", playable: true),
+            ModeInfo(id: "multiplication", label: "Multiplication Meadow", emoji: "✖️", playable: true),
+            ModeInfo(id: "division", label: "Division Dive", emoji: "➗", playable: true),
             ModeInfo(id: "factorsMultiples", label: "Factor Lab!", emoji: "🧪", playable: true),
             ModeInfo(id: "patterns", label: "Pattern Play!", emoji: "🧩", playable: true),
         ]),
         ModeGroup(id: "fractionsDecimals", title: "Fractions & Decimals", gradeHint: "Grades 3-4", modes: [
-            ModeInfo(id: "fractions", label: "Fraction Frenzy!", emoji: "🍕", playable: true),
+            ModeInfo(id: "fractions", label: "Fractions Feather", emoji: "🍕", playable: true),
             ModeInfo(id: "decimals", label: "Decimal Dash!", emoji: "🎯", playable: true),
         ]),
         ModeGroup(id: "measureMoneyTime", title: "Measure, Money & Time", gradeHint: "Grades 1-4", modes: [
-            ModeInfo(id: "measurement", label: "Weigh Station", emoji: "📏", playable: true),
-            ModeInfo(id: "money", label: "Money Market!", emoji: "💰", playable: true),
-            ModeInfo(id: "time", label: "Tell the Hour", emoji: "⏰", playable: true),
+            ModeInfo(id: "measurement", label: "Measuring Wings", emoji: "📏", playable: true),
+            ModeInfo(id: "money", label: "Money Magpie", emoji: "💰", playable: true),
+            ModeInfo(id: "time", label: "Time Tweet", emoji: "⏰", playable: true),
             ModeInfo(id: "areaPerimeter", label: "Area & Perimeter!", emoji: "🖼️", playable: true),
         ]),
         ModeGroup(id: "shapesData", title: "Shapes & Data", gradeHint: "Grades 3-4", modes: [
-            ModeInfo(id: "linesShapes", label: "Shape Explorer!", emoji: "🔷", playable: true),
+            ModeInfo(id: "linesShapes", label: "Shapes Shell", emoji: "🔷", playable: true),
             ModeInfo(id: "angles", label: "Angle Ace!", emoji: "📐", playable: true),
             ModeInfo(id: "dataGraphs", label: "Graph Reader!", emoji: "📈", playable: true),
         ]),

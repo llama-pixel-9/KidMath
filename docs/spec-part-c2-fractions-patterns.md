@@ -94,7 +94,7 @@ Everything else in this spec is wiring, not new UI.
 
 ---
 
-## fractions — Fraction Frenzy!
+## fractions — Fractions Feather
 
 **Today:** 4 shapes (simplify, compare, add-like-denominators, fraction-of-set), 4 word-problem templates
 (one per subskill, each a single hardcoded string), 4 subskills. Denominator pool is 3/6/8 values by band;

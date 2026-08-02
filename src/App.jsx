@@ -15,6 +15,10 @@ import AboutPage from "./AboutPage";
 import PrivacyPage from "./PrivacyPage";
 import AdminItemsPage from "./admin/AdminItemsPage";
 import DiagnosticsPage from "./admin/DiagnosticsPage";
+import ValuePage from "./onboarding/ValuePage";
+import SignupPage from "./onboarding/SignupPage";
+import OnboardingFlow from "./onboarding/OnboardingFlow";
+import ProfilePicker from "./onboarding/ProfilePicker";
 import "./index.css";
 
 function PlayRoute() {
@@ -57,6 +61,12 @@ function AppShell() {
         <Route path="/worksheets" element={<WorksheetsRoute />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
+        {/* First flight (§20): value → parent account → add a kid → soft
+            paywall; returning families land on the profile picker. */}
+        <Route path="/welcome" element={<ValuePage />} />
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/onboarding" element={<OnboardingFlow />} />
+        <Route path="/profiles" element={<ProfilePicker />} />
         <Route path="/admin" element={<AdminItemsPage />} />
         <Route path="/diagnostics" element={<DiagnosticsPage />} />
         {/* Unknown paths: send to home rather than expose a bare 404. */}

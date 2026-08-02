@@ -209,9 +209,10 @@ h3 {
     display: none !important;
   }
 
+  /* Flight logs (§15): US Letter portrait, 36px (0.375in) margins. */
   @page {
-    size: letter;
-    margin: 0.5in;
+    size: letter portrait;
+    margin: 0.375in;
   }
 
   body {

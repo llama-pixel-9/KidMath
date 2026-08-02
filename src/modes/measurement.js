@@ -532,10 +532,11 @@ function selectVariety(level, context) {
 
 export default {
   id: "measurement",
-  label: "Weigh Station",
+  label: "Measuring Wings",
   shortLabel: "Measurement",
-  description: "Estimate, compare and convert measures.",
+  description: "Length & angles",
   icon: "Scale",
+  glyph: "cm",
   op: "convert",
   subskills: SUBSKILLS,
   supportedFormats: SUPPORTED_FORMATS,

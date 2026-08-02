@@ -9,6 +9,11 @@
  * class strings, so bitmap assets could not follow the theme, would break in
  * dark mode, and would cost network requests. SVG also animates with the
  * framer-motion already in the bundle.
+ *
+ * Coins are the one deliberate exception (see kit/coins.js). Real money has
+ * fixed colours that must NOT follow the theme — copper is the recognition cue
+ * for a penny in every skin — and a child identifies a coin by Lincoln's
+ * profile and a reeded rim, which a flat disc cannot supply.
  */
 
 /** One stroke weight and radius vocabulary across every figure. */

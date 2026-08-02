@@ -1,4 +1,6 @@
 import { describe, it, expect } from "vitest";
+import { existsSync } from "node:fs";
+import path from "node:path";
 import { checkAnswer } from "../mathEngine";
 import { WIDGETS, getWidget } from "../components/widgetRegistry.js";
 import { COINS } from "../components/kit/coins.js";
@@ -129,6 +131,16 @@ describe("coin data", () => {
   it("orders the remaining coins by real diameter", () => {
     expect(COINS.quarter.r).toBeGreaterThan(COINS.nickel.r);
     expect(COINS.penny.r).toBeGreaterThan(COINS.dime.r);
+  });
+
+  it("ships the artwork every coin points at", () => {
+    // The tray shows photographs with no value on the face, so a missing file
+    // is not a cosmetic bug — the child would have nothing to count.
+    for (const [name, spec] of Object.entries(COINS)) {
+      expect(spec.src, `${name} needs artwork`).toMatch(/^\/coins\/\w+\.png$/);
+      const file = path.join(process.cwd(), "public", spec.src);
+      expect(existsSync(file), `${spec.src} is missing from public/`).toBe(true);
+    }
   });
 });
 

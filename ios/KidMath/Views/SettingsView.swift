@@ -77,6 +77,9 @@ struct SettingsView: View {
                     Task {
                         try? await app.supabase.signOut()
                         try? app.bankService?.reset()
+                        // Kid profiles belong to the account that just left.
+                        app.kidProfiles.setActiveKid(nil)
+                        await app.kidProfiles.refresh()
                     }
                 }
             } else if !accountUnlocked {

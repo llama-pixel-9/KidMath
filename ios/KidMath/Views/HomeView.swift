@@ -10,6 +10,8 @@ struct HomeView: View {
     @State private var showWorksheets = false
     @State private var showAbout = false
     @State private var showPaywall = false
+    @State private var showFirstFlight = false
+    @State private var showProfilePicker = false
 
     private let columns = [GridItem(.adaptive(minimum: 150, maximum: 220), spacing: 12)]
 
@@ -54,19 +56,41 @@ struct HomeView: View {
             .fullScreenCover(item: $activeMode) { mode in
                 SessionView(mode: mode)
             }
+            .fullScreenCover(isPresented: $showFirstFlight) { FirstFlightView() }
+            .fullScreenCover(isPresented: $showProfilePicker) { ProfilePickerView() }
             .task {
                 await app.refreshModeLevels()
                 autostartIfRequested()
+                await presentFirstFlightIfNeeded()
             }
         }
     }
 
-    /// §14: one greeting line above the aviary — time of day, no exclamation
-    /// stacking, no streak pressure.
+    /// §14: one greeting line above the aviary — time of day, first name when
+    /// a kid profile is active, no exclamation stacking, no streak pressure.
     private var greeting: String {
         let hour = Calendar.current.component(.hour, from: Date())
         let dayPart = hour < 12 ? "Morning" : hour < 18 ? "Afternoon" : "Evening"
+        if let name = app.kidProfiles.activeKidName {
+            return "\(dayPart), \(name) — pick a game."
+        }
         return "\(dayPart) — pick a game."
+    }
+
+    /// First flight (§20): new families get the value → account → kid flow;
+    /// a returning signed-in family with kids and no active kid gets the
+    /// profile picker — never a login form.
+    private func presentFirstFlightIfNeeded() async {
+        guard activeMode == nil, !showPaywall else { return }
+        if app.supabase.isSignedIn {
+            UserDefaults.standard.set(true, forKey: FirstFlightView.completedKey)
+            await app.kidProfiles.refresh()
+            if !app.kidProfiles.kids.isEmpty && app.kidProfiles.activeKidId == nil {
+                showProfilePicker = true
+            }
+        } else if !UserDefaults.standard.bool(forKey: FirstFlightView.completedKey) {
+            showFirstFlight = true
+        }
     }
 
     private var hero: some View {
@@ -113,9 +137,10 @@ struct HomeView: View {
     private func modeCard(_ mode: ModeInfo) -> some View {
         Button {
             guard mode.playable else { return }
-            // iOS is a premium surface (web keeps the free tier): sessions
-            // start only with an active trial/subscription.
-            if app.store.hasPremium {
+            // iOS is a premium surface (web keeps the free tier). While the
+            // launch switch is off everything is unlocked; after launch a
+            // trial/subscription is required.
+            if app.store.isUnlocked {
                 activeMode = mode
             } else {
                 showPaywall = true
@@ -154,7 +179,7 @@ struct HomeView: View {
     /// The web homepage's worksheet callout, as a tappable card.
     private var worksheetCallout: some View {
         Button {
-            if app.store.hasPremium {
+            if app.store.isUnlocked {
                 showWorksheets = true
             } else {
                 showPaywall = true

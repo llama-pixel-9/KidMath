@@ -20,6 +20,23 @@ final class StoreService: ObservableObject {
     static let monthlyID = "com.kidmath.app.premium.monthly"
     static let annualID = "com.kidmath.app.premium.annual"
 
+    /// Launch switch — the Swift mirror of the web's `paywallEnabled()`
+    /// (VITE_PAYWALL_ENABLED in src/premium.js). While OFF, every surface is
+    /// free: no locks, no plan step in onboarding, no paywall sheets. Flip it
+    /// together with the web deploy at billing launch. For manual testing:
+    /// `simctl launch … -paywallEnabled 1` forces it on via the argument
+    /// domain.
+    nonisolated static var paywallEnabled: Bool {
+        if UserDefaults.standard.object(forKey: "paywallEnabled") != nil {
+            return UserDefaults.standard.bool(forKey: "paywallEnabled")
+        }
+        return false
+    }
+
+    /// What the UI gates on: everything is unlocked until the launch switch
+    /// flips, and afterwards a trial/subscription is required.
+    var isUnlocked: Bool { !Self.paywallEnabled || hasPremium }
+
     @Published private(set) var monthly: Product?
     @Published private(set) var annual: Product?
     @Published private(set) var hasPremium = false

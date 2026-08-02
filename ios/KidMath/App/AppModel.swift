@@ -11,6 +11,7 @@ final class AppModel: ObservableObject {
     let progressStore: ProgressStore
     let bankService: BankService?
     let store: StoreService
+    let kidProfiles: KidProfilesService
 
     /// modeId -> saved level, for the badges on the home grid.
     @Published var modeLevels: [String: Int] = [:]
@@ -36,6 +37,7 @@ final class AppModel: ObservableObject {
         let isTestHost = ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil
         store = StoreService(supabase: .shared, autostart: !isTestHost)
         progressStore = ProgressStore(supabase: supabase)
+        kidProfiles = KidProfilesService(supabase: supabase)
         do {
             let engine = try EngineBridge()
             self.engine = engine

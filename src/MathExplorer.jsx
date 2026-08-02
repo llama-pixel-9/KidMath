@@ -1234,8 +1234,10 @@ export default function MathExplorer({ initialMode }) {
             const { Component, props } = getWidget(answerType);
             return (
               // Same celebration as the choice bubbles: a correct answer earns
-              // confetti no matter which widget it came through.
-              <div className="relative">
+              // confetti no matter which widget it came through. w-full: the
+              // pane centers its children, so without it this wrapper
+              // shrink-wraps and every pad collapses to sliver-width keys.
+              <div className="relative w-full">
                 <Component
                   key={questionKeyRef.current}
                   onSubmit={submitAnswer}

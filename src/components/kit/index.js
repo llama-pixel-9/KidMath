@@ -83,6 +83,37 @@ export const FIGURE_COLORS = {
   wrong: "#C4471B",
 };
 
+/**
+ * Digit-pad keys (§08): one vocabulary for every widget that types an answer.
+ * Rows carry the four tints (Seafoam 1-3, Teal Mid 4-6, Apricot 7-9,
+ * Sun Light 0), backspace is solid Sun with an Ink glyph, Go is solid Lark
+ * Teal — so a typed answer feels like the tiles, whichever mode it's in.
+ * Key height comes from .pad-key (clamped 52-64px per the spec's 64px keys).
+ */
+const PAD_KEY_BASE =
+  "relative pad-key rounded-[18px] font-display font-semibold text-ink " +
+  "btn-press cursor-pointer select-none disabled:opacity-40";
+
+const PAD_ROW_TINTS = [
+  "bg-seafoam shadow-[0_4px_0_#7FCFBE] [--press-edge:#7FCFBE]",
+  "bg-teal-mid shadow-[0_4px_0_#3E9E8E] [--press-edge:#3E9E8E]",
+  "bg-apricot shadow-[0_4px_0_#F0A47A] [--press-edge:#F0A47A]",
+  "bg-sun-light shadow-[0_4px_0_#E8895A] [--press-edge:#E8895A]",
+];
+
+export function digitKeyClass(digit) {
+  const n = Number(digit);
+  const row = n === 0 ? 3 : Math.ceil(n / 3) - 1;
+  return `${PAD_KEY_BASE} text-2xl ${PAD_ROW_TINTS[row]}`;
+}
+
+export const PAD_BACKSPACE =
+  `${PAD_KEY_BASE} text-xl bg-sun shadow-[0_4px_0_#C4471B] [--press-edge:#C4471B]`;
+
+export const PAD_GO =
+  "relative pad-key rounded-[18px] bg-teal text-cream font-display font-semibold " +
+  "text-xl shadow-[0_4px_0_#064A41] btn-press cursor-pointer select-none disabled:opacity-40";
+
 /** Shared submit-button styling: the standard larkit button — flat Lark Teal
  * over a Deep Teal bottom edge, Cream Fredoka label, press sinks 4px. */
 export const SUBMIT_BUTTON =

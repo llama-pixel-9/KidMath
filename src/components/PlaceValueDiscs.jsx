@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { digitKeyClass, PAD_BACKSPACE } from "./kit";
 import ConfettiBurst from "./ConfettiBurst.jsx";
 
 const PLACE_LABEL = { 1000: "1000", 100: "100", 10: "10", 1: "1" };
@@ -19,7 +20,6 @@ export default function PlaceValueDiscs({ onSubmit, feedback, theme, lowMotionMo
     if (!locked && entry !== "") onSubmit(Number(entry));
   };
 
-  const keyClass = `relative min-h-[64px] rounded-2xl ${theme.cardBg} shadow-lg text-2xl font-extrabold ${theme.textPrimary} cursor-pointer select-none disabled:opacity-40`;
   const displayTone =
     feedback === "correct" ? "text-deep-teal" : feedback === "wrong" ? "text-ember" : theme.textPrimary;
 
@@ -52,7 +52,7 @@ export default function PlaceValueDiscs({ onSubmit, feedback, theme, lowMotionMo
         {["1", "2", "3", "4", "5", "6", "7", "8", "9"].map((d) => (
           <motion.button
             key={d}
-            className={keyClass}
+            className={digitKeyClass(d)}
             whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
             whileTap={{ scale: 0.9 }}
             onClick={() => pressDigit(d)}
@@ -62,7 +62,7 @@ export default function PlaceValueDiscs({ onSubmit, feedback, theme, lowMotionMo
           </motion.button>
         ))}
         <motion.button
-          className={`${keyClass} text-xl`}
+          className={PAD_BACKSPACE}
           whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
           whileTap={{ scale: 0.9 }}
           onClick={backspace}
@@ -72,7 +72,7 @@ export default function PlaceValueDiscs({ onSubmit, feedback, theme, lowMotionMo
           ⌫
         </motion.button>
         <motion.button
-          className={keyClass}
+          className={digitKeyClass("0")}
           whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => pressDigit("0")}

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { digitKeyClass, PAD_BACKSPACE } from "./kit";
 import ConfettiBurst from "./ConfettiBurst.jsx";
 
 // Bar-model builder (part-whole or comparison). The bar segments are drawn to
@@ -20,7 +21,6 @@ export default function BarModel({ onSubmit, feedback, theme, lowMotionMode, low
 
   const seg = "h-12 flex items-center justify-center text-lg font-extrabold text-white overflow-hidden";
   const unknown = entry === "" ? "?" : entry;
-  const keyClass = `relative min-h-[64px] rounded-2xl ${theme.cardBg} shadow-lg text-2xl font-extrabold ${theme.textPrimary} cursor-pointer select-none disabled:opacity-40`;
 
   let diagram;
   if (spec?.type === "barCompare") {
@@ -84,7 +84,7 @@ export default function BarModel({ onSubmit, feedback, theme, lowMotionMode, low
         {["1", "2", "3", "4", "5", "6", "7", "8", "9"].map((d) => (
           <motion.button
             key={d}
-            className={keyClass}
+            className={digitKeyClass(d)}
             whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
             whileTap={{ scale: 0.9 }}
             onClick={() => pressDigit(d)}
@@ -94,7 +94,7 @@ export default function BarModel({ onSubmit, feedback, theme, lowMotionMode, low
           </motion.button>
         ))}
         <motion.button
-          className={`${keyClass} text-xl`}
+          className={PAD_BACKSPACE}
           whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
           whileTap={{ scale: 0.9 }}
           onClick={backspace}
@@ -104,7 +104,7 @@ export default function BarModel({ onSubmit, feedback, theme, lowMotionMode, low
           ⌫
         </motion.button>
         <motion.button
-          className={keyClass}
+          className={digitKeyClass("0")}
           whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => pressDigit("0")}

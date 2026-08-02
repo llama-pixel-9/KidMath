@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
+import { digitKeyClass, PAD_BACKSPACE } from "./kit";
 
 // Shared digit pad used by the read-a-figure builders below (bar graph, angle).
-export default function FigureDigitPad({ entry, onDigit, onBackspace, onSubmit, theme, lowMotionMode, locked }) {
-  const keyClass = `relative pad-key rounded-2xl ${theme.cardBg} shadow-lg text-2xl font-extrabold ${theme.textPrimary} cursor-pointer select-none disabled:opacity-40`;
+export default function FigureDigitPad({ entry, onDigit, onBackspace, onSubmit, lowMotionMode, locked }) {
   return (
     <div className="grid grid-cols-3 gap-2 w-full">
       {["1", "2", "3", "4", "5", "6", "7", "8", "9"].map((d) => (
         <motion.button
           key={d}
-          className={keyClass}
+          className={digitKeyClass(d)}
           whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => onDigit(d)}
@@ -18,7 +18,7 @@ export default function FigureDigitPad({ entry, onDigit, onBackspace, onSubmit, 
         </motion.button>
       ))}
       <motion.button
-        className={`${keyClass} text-xl`}
+        className={PAD_BACKSPACE}
         whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
         whileTap={{ scale: 0.9 }}
         onClick={onBackspace}
@@ -28,7 +28,7 @@ export default function FigureDigitPad({ entry, onDigit, onBackspace, onSubmit, 
         ⌫
       </motion.button>
       <motion.button
-        className={keyClass}
+        className={digitKeyClass("0")}
         whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => onDigit("0")}

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { digitKeyClass, PAD_BACKSPACE } from "./kit";
 import ConfettiBurst from "./ConfettiBurst.jsx";
 
 // Fraction entry: tap the numerator or denominator to select it, then use the
@@ -33,7 +34,6 @@ export default function FractionInput({ onSubmit, feedback, theme, lowMotionMode
     `min-w-[72px] min-h-[56px] px-4 rounded-xl text-3xl font-extrabold flex items-center justify-center cursor-pointer select-none ${
       active === field ? "ring-4 ring-teal" : "ring-2 ring-transparent"
     }`;
-  const keyClass = `relative min-h-[72px] rounded-2xl ${theme.cardBg} shadow-lg text-3xl font-extrabold ${theme.textPrimary} cursor-pointer select-none disabled:opacity-40`;
 
   return (
     <section className="w-full flex flex-col items-center gap-3" aria-label="Fraction entry">
@@ -56,7 +56,7 @@ export default function FractionInput({ onSubmit, feedback, theme, lowMotionMode
         {["1", "2", "3", "4", "5", "6", "7", "8", "9"].map((d) => (
           <motion.button
             key={d}
-            className={keyClass}
+            className={digitKeyClass(d)}
             whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
             whileTap={{ scale: 0.9 }}
             onClick={() => pressDigit(d)}
@@ -66,7 +66,7 @@ export default function FractionInput({ onSubmit, feedback, theme, lowMotionMode
           </motion.button>
         ))}
         <motion.button
-          className={`${keyClass} text-2xl`}
+          className={PAD_BACKSPACE}
           whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
           whileTap={{ scale: 0.9 }}
           onClick={backspace}
@@ -76,7 +76,7 @@ export default function FractionInput({ onSubmit, feedback, theme, lowMotionMode
           ⌫
         </motion.button>
         <motion.button
-          className={keyClass}
+          className={digitKeyClass("0")}
           whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => pressDigit("0")}

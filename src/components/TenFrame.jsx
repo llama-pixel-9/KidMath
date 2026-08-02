@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { digitKeyClass, PAD_BACKSPACE } from "./kit";
 import ConfettiBurst from "./ConfettiBurst.jsx";
 
 /**
@@ -19,7 +20,6 @@ import ConfettiBurst from "./ConfettiBurst.jsx";
 export default function TenFrame({
   onSubmit,
   feedback,
-  theme,
   lowMotionMode,
   lowEndDevice,
   filled = 0,
@@ -101,7 +101,6 @@ export default function TenFrame({
     );
   }
 
-  const keyClass = `relative min-h-[56px] rounded-2xl ${theme.cardBg} shadow-lg text-2xl font-extrabold ${theme.textPrimary} cursor-pointer select-none disabled:opacity-40`;
   const ring =
     feedback === "correct" ? "ring-4 ring-teal" : feedback === "wrong" ? "ring-4 ring-ember" : "";
 
@@ -130,7 +129,7 @@ export default function TenFrame({
           {["1", "2", "3", "4", "5", "6", "7", "8", "9"].map((d) => (
             <motion.button
               key={d}
-              className={keyClass}
+              className={digitKeyClass(d)}
               whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
               whileTap={{ scale: 0.9 }}
               onClick={() => pressDigit(d)}
@@ -140,7 +139,7 @@ export default function TenFrame({
             </motion.button>
           ))}
           <motion.button
-            className={`${keyClass} text-xl`}
+            className={PAD_BACKSPACE}
             whileTap={{ scale: 0.9 }}
             onClick={() => !locked && setEntry((e) => e.slice(0, -1))}
             disabled={locked}
@@ -149,7 +148,7 @@ export default function TenFrame({
             ⌫
           </motion.button>
           <motion.button
-            className={keyClass}
+            className={digitKeyClass("0")}
             whileTap={{ scale: 0.9 }}
             onClick={() => pressDigit("0")}
             disabled={locked}

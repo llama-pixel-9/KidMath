@@ -1,22 +1,13 @@
 import { useState } from "react";
 import ConfettiBurst from "./ConfettiBurst.jsx";
+import { digitKeyClass, PAD_BACKSPACE, PAD_GO } from "./kit";
 
 // Typed numeric answer control. It reports its value through the same
 // `onSubmit` -> submitAnswer -> checkAnswer path as a tapped bubble, so the
 // answer lock, telemetry, mistake bank, and correct/wrong feedback are
 // identical to multiple choice (plan §6b). Remounted per question (key) so the
-// entry resets.
-//
-// Brand spec §08: keypad digits carry the four answer tints one per row
-// (Seafoam 1-3, Teal Mid 4-6, Apricot 7-9, Sun Light 0) so a typed answer
-// feels like the tiles. Backspace is solid Sun with an Ink glyph, Go is solid
-// Lark Teal with a Cream label. Labels are always Ink — never cream on a tint.
-const ROW_TINTS = [
-  "bg-seafoam shadow-[0_4px_0_#7FCFBE] [--press-edge:#7FCFBE]",
-  "bg-teal-mid shadow-[0_4px_0_#3E9E8E] [--press-edge:#3E9E8E]",
-  "bg-apricot shadow-[0_4px_0_#F0A47A] [--press-edge:#F0A47A]",
-  "bg-sun-light shadow-[0_4px_0_#E8895A] [--press-edge:#E8895A]",
-];
+// entry resets. Key styling comes from the kit's shared digit-pad vocabulary
+// (§08) so this pad matches every other widget's.
 
 export default function NumberPad({ onSubmit, feedback, theme, lowMotionMode, lowEndDevice, allowDecimal = false }) {
   const [entry, setEntry] = useState("");
@@ -41,12 +32,9 @@ export default function NumberPad({ onSubmit, feedback, theme, lowMotionMode, lo
         ? "ring-4 ring-ember text-ember"
         : "text-ink";
 
-  const keyBase =
-    "relative pad-key rounded-[18px] font-display font-semibold text-3xl text-ink btn-press cursor-pointer select-none disabled:opacity-40";
-  const keyClass = (row) => `${keyBase} ${ROW_TINTS[row]}`;
   const goBtn = (
     <button
-      className="relative pad-key w-full rounded-[18px] bg-teal text-cream font-display font-semibold text-2xl shadow-[0_4px_0_#064A41] btn-press cursor-pointer select-none disabled:opacity-40"
+      className={`${PAD_GO} w-full`}
       onClick={submit}
       disabled={locked || entry === "" || entry === "."}
       aria-label="Submit answer"
@@ -67,10 +55,10 @@ export default function NumberPad({ onSubmit, feedback, theme, lowMotionMode, lo
         )}
       </div>
       <div className="grid grid-cols-3 gap-3 w-full">
-        {["1", "2", "3", "4", "5", "6", "7", "8", "9"].map((d, i) => (
+        {["1", "2", "3", "4", "5", "6", "7", "8", "9"].map((d) => (
           <button
             key={d}
-            className={keyClass(Math.floor(i / 3))}
+            className={digitKeyClass(d)}
             onClick={() => pressDigit(d)}
             disabled={locked}
           >
@@ -78,19 +66,19 @@ export default function NumberPad({ onSubmit, feedback, theme, lowMotionMode, lo
           </button>
         ))}
         <button
-          className="relative pad-key rounded-[18px] bg-sun shadow-[0_4px_0_#C4471B] [--press-edge:#C4471B] font-display font-semibold text-2xl text-ink btn-press cursor-pointer select-none disabled:opacity-40"
+          className={PAD_BACKSPACE}
           onClick={backspace}
           disabled={locked}
           aria-label="Delete"
         >
           ⌫
         </button>
-        <button className={keyClass(3)} onClick={() => pressDigit("0")} disabled={locked}>
+        <button className={digitKeyClass("0")} onClick={() => pressDigit("0")} disabled={locked}>
           0
         </button>
         {allowDecimal ? (
           <button
-            className={keyClass(3)}
+            className={digitKeyClass("0")}
             onClick={pressDot}
             disabled={locked}
             aria-label="Decimal point"

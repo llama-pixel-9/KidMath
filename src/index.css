@@ -180,7 +180,7 @@ h3 {
  * size on a tall iPad.
  */
 .pad-key {
-  min-height: clamp(52px, 7.2vh, 80px);
+  min-height: clamp(52px, 7.2vh, 64px);
 }
 
 .pad-display {

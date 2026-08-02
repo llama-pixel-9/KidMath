@@ -39,7 +39,7 @@ const PRINCIPLES = [
     icon: BarChart3,
     title: "Diagnostic Adaptivity",
     description:
-      "KidMath tracks subskills and targets weaker areas so each child gets practice that fits their needs.",
+      "larkit tracks subskills and targets weaker areas so each child gets practice that fits their needs.",
   },
   {
     icon: Accessibility,
@@ -63,14 +63,14 @@ export default function AboutPage() {
           <div className="inline-flex items-center gap-2 bg-white/80 rounded-full px-4 py-2 shadow-sm mb-4">
             <Sparkles className={`h-4 w-4 ${theme.textSecondary}`} />
             <span className={`text-sm font-bold ${theme.textSecondary}`}>
-              How KidMath Helps Kids Learn
+              How larkit Helps Kids Learn
             </span>
           </div>
           <h1 className={`text-4xl sm:text-5xl font-extrabold ${theme.textPrimary}`}>
             Our Learning Principles
           </h1>
           <p className={`mt-3 text-lg ${theme.textSecondary} max-w-2xl mx-auto`}>
-            KidMath is built with research-backed teaching and assessment practices so kids get
+            larkit is built with research-backed teaching and assessment practices so kids get
             practice that is joyful, targeted, and effective.
           </p>
         </motion.div>

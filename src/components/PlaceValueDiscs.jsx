@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import ConfettiBurst from "./ConfettiBurst.jsx";
 
 const PLACE_LABEL = { 1000: "1000", 100: "100", 10: "10", 1: "1" };
-const PLACE_COLOR = { 1000: "bg-violet-400", 100: "bg-sky-400", 10: "bg-emerald-400", 1: "bg-amber-400" };
+// One tile tint per place, ink labels (brand rule: never a colored label on a tint).
+const PLACE_COLOR = { 1000: "bg-apricot", 100: "bg-seafoam", 10: "bg-teal-mid", 1: "bg-sun-light" };
 
 export default function PlaceValueDiscs({ onSubmit, feedback, theme, lowMotionMode, lowEndDevice, cols }) {
   const [entry, setEntry] = useState("");
@@ -20,7 +21,7 @@ export default function PlaceValueDiscs({ onSubmit, feedback, theme, lowMotionMo
 
   const keyClass = `relative min-h-[64px] rounded-2xl ${theme.cardBg} shadow-lg text-2xl font-extrabold ${theme.textPrimary} cursor-pointer select-none disabled:opacity-40`;
   const displayTone =
-    feedback === "correct" ? "text-green-600" : feedback === "wrong" ? "text-red-500" : theme.textPrimary;
+    feedback === "correct" ? "text-deep-teal" : feedback === "wrong" ? "text-ember" : theme.textPrimary;
 
   return (
     <section className="w-full flex flex-col items-center gap-3" aria-label="Place value discs">
@@ -32,7 +33,7 @@ export default function PlaceValueDiscs({ onSubmit, feedback, theme, lowMotionMo
               {Array.from({ length: count }, (_, i) => (
                 <div
                   key={i}
-                  className={`w-7 h-7 rounded-full ${PLACE_COLOR[place]} text-white text-[10px] font-bold flex items-center justify-center shadow`}
+                  className={`w-7 h-7 rounded-full ${PLACE_COLOR[place]} text-ink text-[10px] font-bold flex items-center justify-center shadow`}
                 >
                   {PLACE_LABEL[place]}
                 </div>
@@ -80,7 +81,7 @@ export default function PlaceValueDiscs({ onSubmit, feedback, theme, lowMotionMo
           0
         </motion.button>
         <motion.button
-          className="relative min-h-[64px] rounded-2xl bg-gradient-to-br from-emerald-400 to-green-500 text-white text-xl font-extrabold shadow-lg cursor-pointer select-none disabled:opacity-40"
+          className="relative min-h-[64px] rounded-[18px] bg-teal text-cream text-xl font-display font-semibold shadow-[0_5px_0_#064A41] btn-press cursor-pointer select-none disabled:opacity-40"
           whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
           whileTap={{ scale: 0.9 }}
           onClick={submit}

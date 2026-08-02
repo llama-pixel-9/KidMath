@@ -27,7 +27,7 @@ function Coin({ coin, selected, onClick, locked, lowMotionMode }) {
       aria-label={`${spec.name}, ${spec.label}`}
       aria-pressed={selected}
       className={`rounded-full disabled:cursor-default cursor-pointer select-none ${
-        selected ? "ring-4 ring-sky-400" : ""
+        selected ? "ring-4 ring-teal" : ""
       }`}
       style={{ width: size, height: size }}
       {...hoverMotion(lowMotionMode)}

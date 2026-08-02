@@ -25,13 +25,13 @@ export default function FractionInput({ onSubmit, feedback, theme, lowMotionMode
 
   const tone =
     feedback === "correct"
-      ? "ring-4 ring-green-400 text-green-600"
+      ? "ring-4 ring-teal text-deep-teal"
       : feedback === "wrong"
-        ? "ring-4 ring-red-400 text-red-500"
+        ? "ring-4 ring-ember text-ember"
         : theme.textPrimary;
   const fieldClass = (field) =>
     `min-w-[72px] min-h-[56px] px-4 rounded-xl text-3xl font-extrabold flex items-center justify-center cursor-pointer select-none ${
-      active === field ? "ring-4 ring-sky-400" : "ring-2 ring-transparent"
+      active === field ? "ring-4 ring-teal" : "ring-2 ring-transparent"
     }`;
   const keyClass = `relative min-h-[72px] rounded-2xl ${theme.cardBg} shadow-lg text-3xl font-extrabold ${theme.textPrimary} cursor-pointer select-none disabled:opacity-40`;
 
@@ -85,7 +85,7 @@ export default function FractionInput({ onSubmit, feedback, theme, lowMotionMode
           0
         </motion.button>
         <motion.button
-          className="relative min-h-[72px] rounded-2xl bg-gradient-to-br from-emerald-400 to-green-500 text-white text-2xl font-extrabold shadow-lg cursor-pointer select-none disabled:opacity-40"
+          className="relative min-h-[72px] rounded-[18px] bg-teal text-cream text-2xl font-display font-semibold shadow-[0_5px_0_#064A41] btn-press cursor-pointer select-none disabled:opacity-40"
           whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
           whileTap={{ scale: 0.9 }}
           onClick={submit}

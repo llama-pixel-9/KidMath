@@ -29,18 +29,19 @@ export const RADIUS = {
   card: 24,
 };
 
-/** Feedback ring classes, identical across widgets. */
+/** Feedback ring classes, identical across widgets. Correct deepens toward
+ * the brand teal; wrong outlines Ember — never a red X, never green/red. */
 export function feedbackRing(feedback) {
-  if (feedback === "correct") return "ring-4 ring-green-400";
-  if (feedback === "wrong") return "ring-4 ring-red-400";
+  if (feedback === "correct") return "ring-4 ring-teal";
+  if (feedback === "wrong") return "ring-4 ring-ember";
   return "";
 }
 
-/** Selection state for tappable elements. */
+/** Selection state for tappable elements: a Lark Teal ring (§18 coin rule). */
 export function selectionClasses(selected, feedback) {
-  if (feedback === "correct" && selected) return "ring-4 ring-green-400 scale-105";
-  if (feedback === "wrong" && selected) return "ring-4 ring-red-400";
-  if (selected) return "ring-4 ring-sky-400 scale-105";
+  if (feedback === "correct" && selected) return "ring-4 ring-teal scale-105";
+  if (feedback === "wrong" && selected) return "ring-4 ring-ember";
+  if (selected) return "ring-4 ring-teal scale-105";
   return "ring-2 ring-transparent";
 }
 
@@ -65,19 +66,26 @@ export function shakeAnimation(lowEndDevice) {
   return lowEndDevice ? { x: [0, -6, 6, 0] } : { x: [0, -10, 10, -10, 10, 0] };
 }
 
-/** Palette hooks that follow the active theme where one is supplied. */
+/**
+ * Diagram palette — the three-role system from brand spec §10: Ink is what is
+ * given (axes, outlines, dials), Teal (`accent`) is the part in question (the
+ * moving ray, the shaded fraction, the plotted point), Sun (`warm`) is the
+ * measurement drawn on top (arcs, spans, jump curves). Nothing else gets a
+ * color; a diagram that needs a fourth is two diagrams.
+ */
 export const FIGURE_COLORS = {
-  ink: "#334155",
-  inkSoft: "#94a3b8",
-  fill: "#e0f2fe",
-  accent: "#0ea5e9",
-  warm: "#fbbf24",
-  correct: "#4ade80",
-  wrong: "#f87171",
+  ink: "#14231F",
+  inkSoft: "#14231F99",
+  fill: "#A7DED3",
+  accent: "#0B7A6A",
+  warm: "#F26B3A",
+  correct: "#0B7A6A",
+  wrong: "#C4471B",
 };
 
-/** Shared submit-button styling so every widget's primary action matches. */
+/** Shared submit-button styling: the standard larkit button — flat Lark Teal
+ * over a Deep Teal bottom edge, Cream Fredoka label, press sinks 4px. */
 export const SUBMIT_BUTTON =
-  "px-8 py-3 rounded-2xl bg-gradient-to-br from-sky-400 to-violet-400 " +
-  "text-white text-xl font-extrabold shadow-lg disabled:opacity-40 " +
+  "px-8 h-14 rounded-[18px] bg-teal shadow-[0_5px_0_#064A41] btn-press " +
+  "text-cream text-xl font-display font-semibold disabled:opacity-40 " +
   "disabled:cursor-not-allowed cursor-pointer select-none";

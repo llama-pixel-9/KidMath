@@ -2,7 +2,6 @@ import { useContext, useState } from "react";
 import { motion } from "framer-motion";
 import { Sparkles, Printer, Cloud, Users, X } from "lucide-react";
 import { AuthContext } from "./AuthContextValue";
-import { useTheme } from "./useTheme";
 import { startCheckout } from "./premium";
 
 /**
@@ -18,7 +17,6 @@ const FEATURES = [
 ];
 
 export default function PaywallModal({ onClose }) {
-  const { theme } = useTheme();
   const { user, signInWithGoogle } = useContext(AuthContext);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
@@ -55,15 +53,15 @@ export default function PaywallModal({ onClose }) {
         </div>
 
         <div className="text-center">
-          <div className="text-4xl mb-2">🌟</div>
-          <h2 className="text-2xl font-extrabold text-slate-700">Unlock all of KidMath</h2>
-          <p className="mt-1 font-semibold text-slate-500">Try everything free for 14 days</p>
+          <div className="flex justify-center mb-3"><span className="inline-block w-8 h-8 bg-sun rotate-45 rounded-[7px]"></span></div>
+          <h2 className="text-2xl font-semibold font-display text-ink">Unlock all of larkit</h2>
+          <p className="mt-1 font-semibold text-ink/60">Try everything free for 14 days</p>
         </div>
 
         <ul className="mt-5 space-y-2">
           {FEATURES.map(({ icon: Icon, text }) => (
             <li key={text} className="flex items-center gap-3">
-              <Icon className="h-5 w-5 text-violet-500 shrink-0" />
+              <Icon className="h-5 w-5 text-teal shrink-0" />
               <span className="text-sm font-semibold text-slate-600">{text}</span>
             </li>
           ))}
@@ -88,7 +86,7 @@ export default function PaywallModal({ onClose }) {
               type="button"
               disabled={busy}
               onClick={() => subscribe("annual")}
-              className={`w-full py-4 rounded-2xl bg-gradient-to-br ${theme.ctaPrimary} text-white font-extrabold shadow-lg cursor-pointer disabled:opacity-50`}
+              className="w-full py-4 rounded-[18px] bg-teal text-cream font-display font-semibold shadow-[0_5px_0_#064A41] btn-press cursor-pointer disabled:opacity-50"
             >
               <span className="block text-xs tracking-widest opacity-90">BEST VALUE · 49% OFF</span>
               <span className="block text-lg">$54.99/year — that's $4.58/month</span>

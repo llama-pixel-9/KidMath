@@ -8,7 +8,7 @@ import { usePremium } from "./PremiumContext";
  * deep link or navigation. Friendly, kid-safe copy; the paywall itself is
  * parent-facing.
  */
-export default function PremiumGate({ title = "This adventure is part of KidMath Premium" }) {
+export default function PremiumGate({ title = "This game is part of larkit Premium" }) {
   const { theme } = useTheme();
   const { openPaywall, loading } = usePremium();
 
@@ -19,19 +19,19 @@ export default function PremiumGate({ title = "This adventure is part of KidMath
   return (
     <main className={`min-h-screen ${theme.bg} flex items-center justify-center px-4`}>
       <div className={`${theme.cardBg} rounded-3xl shadow-lg p-8 w-full max-w-md text-center`}>
-        <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-violet-100 mb-4">
-          <Lock className="h-7 w-7 text-violet-500" />
+        <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-seafoam/40 mb-4">
+          <Lock className="h-7 w-7 text-teal" />
         </div>
-        <h1 className={`text-2xl font-extrabold ${theme.textPrimary}`}>{title}</h1>
+        <h1 className={`text-2xl font-semibold font-display ${theme.textPrimary}`}>{title}</h1>
         <p className={`mt-2 ${theme.textSecondary}`}>
           Addition, subtraction, multiplication, division, and counting are free forever. Premium
-          unlocks all 22 modes, printable worksheets, and progress sync — for every child in your
+          unlocks all 22 modes, printable flight logs, and progress sync — for every child in your
           household.
         </p>
         <button
           type="button"
           onClick={openPaywall}
-          className={`mt-6 w-full py-3 rounded-2xl bg-gradient-to-br ${theme.ctaPrimary} text-white font-extrabold shadow-lg cursor-pointer`}
+          className="mt-6 w-full h-14 rounded-[18px] bg-teal text-cream font-display font-semibold text-lg shadow-[0_5px_0_#064A41] btn-press cursor-pointer"
         >
           See plans — 14-day free trial
         </button>

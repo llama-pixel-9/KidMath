@@ -83,18 +83,9 @@ function getModeLabel(modeId) {
 }
 
 
-const LEVEL_RING_COLORS = [
-  "stroke-sky-300",
-  "stroke-sky-400",
-  "stroke-teal-400",
-  "stroke-emerald-400",
-  "stroke-lime-400",
-  "stroke-yellow-400",
-  "stroke-amber-400",
-  "stroke-orange-400",
-  "stroke-red-400",
-  "stroke-pink-500",
-];
+// One ring color at every level: progress is always Lark Teal on its Ink
+// track — the level is told by the number, not a rainbow hue.
+const LEVEL_RING_COLORS = ["stroke-teal"];
 
 function isLikelyLowEndDevice() {
   if (typeof window === "undefined") return false;
@@ -167,7 +158,7 @@ function CircularProgress({ current, total, level }) {
           <circle
             cx="48" cy="48" r={radius}
             fill="none"
-            className="stroke-gray-200"
+            className="stroke-ink/10"
             strokeWidth="6"
           />
           <motion.circle
@@ -189,7 +180,7 @@ function CircularProgress({ current, total, level }) {
         </div>
       </div>
       <motion.div
-        className={`px-3 py-1.5 rounded-xl bg-gradient-to-r ${theme.ctaPrimary} text-white text-sm font-bold shadow`}
+        className={`px-3 py-1.5 rounded-xl bg-gradient-to-r ${theme.ctaPrimary} text-cream text-sm font-bold shadow-[0_3px_0_#064A41]`}
         key={level}
         initial={{ scale: 0.8 }}
         animate={{ scale: 1 }}
@@ -211,7 +202,7 @@ function StarRow({ count }) {
           animate={{ scale: [0, 1.3, 1], rotate: 0 }}
           transition={{ delay: i * 0.05, duration: 0.4, type: "spring" }}
         >
-          <Star className="h-6 w-6 text-yellow-400 fill-yellow-400" />
+          <Star className="h-6 w-6 text-sun fill-sun" />
         </motion.div>
       ))}
     </section>
@@ -227,7 +218,7 @@ function LevelUpToast() {
       exit={{ opacity: 0 }}
     >
       <motion.div
-        className="bg-gradient-to-r from-yellow-400 to-orange-400 text-white px-8 py-4 rounded-3xl shadow-2xl flex items-center gap-3"
+        className="bg-apricot text-ink px-8 py-4 rounded-3xl shadow-[0_5px_0_#F0A47A] flex items-center gap-3"
         initial={{ scale: 0, y: 30 }}
         animate={{ scale: [0, 1.3, 1], y: 0 }}
         exit={{ scale: 0, y: -30, opacity: 0 }}
@@ -269,20 +260,20 @@ function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, li
           animate={{ scale: [0, 1.4, 1] }}
           transition={{ delay: 0.2, duration: 0.5 }}
         >
-          <Trophy className="h-16 w-16 text-yellow-500 fill-yellow-400 mx-auto" />
+          <Trophy className="h-16 w-16 text-sun fill-sun mx-auto" />
         </motion.div>
         <h2 className={`text-3xl font-extrabold ${theme.textPrimary} mt-4`}>
           {theme.completeMsg}
         </h2>
         <p className={`text-lg ${theme.textSecondary} mt-2`}>
           You earned{" "}
-          <span className="font-bold text-yellow-600">{firstTryCorrect}</span>{" "}
+          <span className="font-bold text-ember">{firstTryCorrect}</span>{" "}
           {firstTryCorrect === 1 ? "star" : "stars"}!
         </p>
         <p className={`text-sm ${theme.textMuted} mt-1`}>{subtitle}</p>
         {retriesMastered > 0 && (
           <motion.p
-            className="text-sm font-bold text-emerald-600 mt-2"
+            className="text-sm font-bold text-deep-teal mt-2"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
@@ -295,7 +286,7 @@ function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, li
         </div>
         {engagement?.streak > 1 && (
           <motion.p
-            className="text-sm font-bold text-orange-600 mt-2"
+            className="text-sm font-bold text-ember mt-2"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: engagement.streakExtended ? [0.8, 1.2, 1] : 1 }}
             transition={{ delay: 0.5 }}
@@ -305,7 +296,7 @@ function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, li
         )}
         {engagement?.goalJustMet && (
           <motion.p
-            className="text-sm font-bold text-emerald-600 mt-1"
+            className="text-sm font-bold text-deep-teal mt-1"
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.65 }}
@@ -316,7 +307,7 @@ function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, li
         {(engagement?.newBadges || []).map((b, i) => (
           <motion.p
             key={b.id}
-            className="text-sm font-bold text-violet-600 mt-1"
+            className="text-sm font-bold text-teal mt-1"
             initial={{ opacity: 0, scale: 0.6 }}
             animate={{ opacity: 1, scale: [0.6, 1.2, 1] }}
             transition={{ delay: 0.8 + i * 0.2 }}
@@ -326,7 +317,7 @@ function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, li
         ))}
         <div className="flex justify-center gap-1 mt-3 flex-wrap">
           {Array.from({ length: Math.min(firstTryCorrect, 15) }, (_, i) => (
-            <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />
+            <Star key={i} className="h-5 w-5 text-sun fill-sun" />
           ))}
         </div>
         {lifetimeStars > firstTryCorrect && (
@@ -340,7 +331,7 @@ function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, li
           </motion.p>
         )}
         <motion.button
-          className={`mt-6 px-8 py-3 bg-gradient-to-r ${theme.ctaPrimary} text-white text-xl font-bold rounded-2xl shadow-lg cursor-pointer`}
+          className={`mt-6 px-8 py-3 bg-gradient-to-r ${theme.ctaPrimary} text-cream text-xl font-display font-semibold rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer`}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={onPlayAgain}
@@ -383,7 +374,7 @@ function SettingsPanel({ mode, allowWordProblems, onAllowWordProblemsChange, onM
                 <motion.button
                   key={m}
                   className={`flex flex-col items-center gap-1 p-2.5 rounded-2xl border-2 cursor-pointer transition-colors ${
-                    active ? theme.selectedBorder : `${theme.cardBorder} bg-white hover:bg-gray-50`
+                    active ? theme.selectedBorder : `${theme.cardBorder} bg-white hover:bg-cream`
                   }`}
                   whileTap={{ scale: 0.95 }}
                   onClick={() => onModeChange(m)}
@@ -402,7 +393,7 @@ function SettingsPanel({ mode, allowWordProblems, onAllowWordProblemsChange, onM
           Difficulty adjusts automatically based on how you play!
         </p>
 
-        <div className="mb-5 flex items-center justify-between gap-3 rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3">
+        <div className="mb-5 flex items-center justify-between gap-3 rounded-2xl border border-ink/10 bg-cream px-4 py-3">
           <div>
             <p className={`text-sm font-bold ${theme.textPrimary}`}>Allow Word Problems</p>
             <p className={`text-xs ${theme.textMuted}`}>
@@ -411,7 +402,7 @@ function SettingsPanel({ mode, allowWordProblems, onAllowWordProblemsChange, onM
           </div>
           <button
             className={`relative w-12 h-7 rounded-full transition-colors cursor-pointer ${
-              allowWordProblems ? "bg-emerald-400" : "bg-gray-300"
+              allowWordProblems ? "bg-teal" : "bg-ink/20"
             }`}
             onClick={() => onAllowWordProblemsChange(!allowWordProblems)}
             aria-label={allowWordProblems ? "Disable word problems" : "Enable word problems"}
@@ -425,7 +416,7 @@ function SettingsPanel({ mode, allowWordProblems, onAllowWordProblemsChange, onM
         </div>
 
         <motion.button
-          className={`w-full py-3 bg-gradient-to-r ${theme.ctaPrimary} text-white font-bold text-lg rounded-2xl shadow-lg cursor-pointer`}
+          className={`w-full py-3 bg-gradient-to-r ${theme.ctaPrimary} text-cream font-display font-semibold text-lg rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer`}
           whileTap={{ scale: 0.95 }}
           onClick={onClose}
         >
@@ -452,9 +443,9 @@ function LoginPromptModal({ onLogin, onDismiss }) {
         transition={{ type: "spring", stiffness: 200, damping: 20 }}
       >
         <div className="flex justify-center gap-2 mb-3">
-          <Sparkles className="h-10 w-10 text-yellow-500" />
-          <Trophy className="h-10 w-10 text-yellow-500 fill-yellow-400" />
-          <Sparkles className="h-10 w-10 text-yellow-500" />
+          <Sparkles className="h-10 w-10 text-sun" />
+          <Trophy className="h-10 w-10 text-sun fill-sun" />
+          <Sparkles className="h-10 w-10 text-sun" />
         </div>
         <h2 className={`text-2xl font-extrabold ${theme.textPrimary}`}>
           You're doing amazing!
@@ -464,7 +455,7 @@ function LoginPromptModal({ onLogin, onDismiss }) {
         </p>
         <div className="flex flex-col gap-3 mt-6">
           <motion.button
-            className={`flex items-center justify-center gap-2 w-full py-3 bg-gradient-to-r ${theme.worksheetCalloutBtn} text-white font-bold text-lg rounded-2xl shadow-lg cursor-pointer`}
+            className={`flex items-center justify-center gap-2 w-full py-3 bg-gradient-to-r ${theme.worksheetCalloutBtn} text-cream font-display font-semibold text-lg rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer`}
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.95 }}
             onClick={onLogin}
@@ -488,7 +479,7 @@ function AnswerSlot({ feedback, revealAnswer }) {
   if (feedback === "correct" && revealAnswer != null) {
     return (
       <motion.span
-        className="text-emerald-500"
+        className="text-teal"
         initial={{ scale: 0, rotate: -20 }}
         animate={{ scale: [0, 1.4, 1], rotate: 0 }}
         transition={{ duration: 0.4, type: "spring", stiffness: 300 }}
@@ -500,7 +491,7 @@ function AnswerSlot({ feedback, revealAnswer }) {
   if (feedback === "wrong" && revealAnswer != null) {
     return (
       <motion.span
-        className="text-emerald-500"
+        className="text-teal"
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3 }}
@@ -509,7 +500,7 @@ function AnswerSlot({ feedback, revealAnswer }) {
       </motion.span>
     );
   }
-  return <span className="text-amber-400">?</span>;
+  return <span className="text-sun">?</span>;
 }
 
 // The worked-algorithm layout with a STATED result — used by judgment items
@@ -534,10 +525,10 @@ function VerticalEquation({ a, op, b, result, theme }) {
         <span className="text-[0.85em]">{op}</span>
         {Array.from({ length: cols - bDigits.length - 1 }, (_, i) => <span key={`pb${i}`} />)}
         {bDigits.map((d, i) => <span key={`b${i}`}>{d}</span>)}
-        <span className="border-b-4 border-slate-400 w-full my-1" style={{ gridColumn: "1 / -1" }} />
+        <span className="border-b-4 border-ink/40 w-full my-1" style={{ gridColumn: "1 / -1" }} />
         {Array.from({ length: cols - rDigits.length }, (_, i) => <span key={`pr${i}`} />)}
         {rDigits.map((d, i) => (
-          <span key={`r${i}`} className="text-sky-600">{d}</span>
+          <span key={`r${i}`} className="text-teal">{d}</span>
         ))}
       </div>
     </div>
@@ -655,7 +646,7 @@ function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
       <div className={`flex items-center justify-center gap-4 text-5xl sm:text-6xl font-extrabold ${theme.textPrimary}`}>
         <span>{q.a}</span>
         <span
-          className={`${modeColor} text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center text-3xl sm:text-4xl`}
+          className={`${modeColor} text-ink w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center text-3xl sm:text-4xl`}
         >
           {showAnswer ? <AnswerSlot feedback={feedback} revealAnswer={revealAnswer} /> : "?"}
         </span>
@@ -726,7 +717,7 @@ function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
           {Array.from({ length: padB }, (_, i) => <span key={`pb${i}`} />)}
           {bDigits.map((d, i) => <span key={`b${i}`}>{d}</span>)}
 
-          <span className="border-b-4 border-slate-400 w-full my-1" style={{ gridColumn: "1 / -1" }} />
+          <span className="border-b-4 border-ink/40 w-full my-1" style={{ gridColumn: "1 / -1" }} />
 
           {showAnswer ? (
             <>
@@ -734,7 +725,7 @@ function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
               {String(revealAnswer).split("").map((d, i) => (
                 <motion.span
                   key={`ans${i}`}
-                  className="text-emerald-500"
+                  className="text-teal"
                   initial={{ scale: 0, rotate: -20 }}
                   animate={{ scale: [0, 1.4, 1], rotate: 0 }}
                   transition={{ delay: i * 0.08, duration: 0.4, type: "spring", stiffness: 300 }}
@@ -746,7 +737,7 @@ function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
           ) : (
             <>
               {Array.from({ length: cols - 1 }, (_, i) => <span key={`pq${i}`} />)}
-              <span className="text-amber-400">?</span>
+              <span className="text-sun">?</span>
             </>
           )}
         </div>
@@ -778,7 +769,7 @@ function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
     <div className={`flex items-center justify-center gap-3 text-5xl sm:text-6xl font-extrabold ${theme.textPrimary}`}>
       <span>{q.a}</span>
       <span
-        className={`${modeColor} text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center text-3xl sm:text-4xl`}
+        className={`${modeColor} text-ink w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center text-3xl sm:text-4xl`}
       >
         {q.op}
       </span>
@@ -1089,13 +1080,13 @@ export default function MathExplorer({ initialMode }) {
 
   return (
     <MotionConfig reducedMotion={lowMotionMode ? "always" : "never"}>
-      <main className={`flex-1 ${theme.bg} flex flex-col transition-colors duration-300`}>
+      <main className={`flex-1 ${theme.playBg} flex flex-col`}>
       <header className="no-print flex items-center justify-between px-4 py-3">
         <div className="flex items-center gap-2">
           <div className={`${modeColor} p-2 rounded-xl`}>
-            <ModeIcon className="h-6 w-6 text-white" />
+            <ModeIcon className="h-6 w-6 text-ink" />
           </div>
-          <h1 className={`text-xl font-extrabold ${theme.textPrimary}`}>{getModeLabel(mode)}</h1>
+          <h1 className={`text-xl font-display font-semibold ${theme.textPrimary}`}>{getModeLabel(mode)}</h1>
         </div>
         <div className="flex items-center gap-2">
           <motion.button
@@ -1133,11 +1124,11 @@ export default function MathExplorer({ initialMode }) {
           animate={{ opacity: 1, scale: 1 }}
           key={session.correctStreak}
         >
-          <Zap className="h-4 w-4 text-orange-400" />
-          <span className="text-xs font-bold text-orange-500">
+          <Zap className="h-4 w-4 text-sun" />
+          <span className="text-xs font-bold text-ember">
             {session.correctStreak} streak!
           </span>
-          <Zap className="h-4 w-4 text-orange-400" />
+          <Zap className="h-4 w-4 text-sun" />
         </motion.div>
       )}
 
@@ -1147,7 +1138,7 @@ export default function MathExplorer({ initialMode }) {
         <AnimatePresence mode="wait">
           <motion.section
             key={questionKeyRef.current}
-            className={`${theme.cardBg} backdrop-blur rounded-3xl shadow-lg p-5 sm:p-8 w-full`}
+            className={`${theme.cardBg} rounded-3xl shadow-[0_6px_0_#14231F0f] p-5 sm:p-8 w-full`}
             initial={{ opacity: 0, scale: 0.8, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: -20 }}
@@ -1202,15 +1193,15 @@ export default function MathExplorer({ initialMode }) {
                 // ("Grapes", "a rectangle"), and a fixed text-3xl overflowed
                 // the bubble for those. Type scales with the answer's length,
                 // and long words wrap instead of spilling.
-                className={`relative min-h-[72px] sm:min-h-[80px] px-3 py-2 rounded-3xl bg-gradient-to-br ${theme.bubbleColors[i % theme.bubbleColors.length]} text-white font-extrabold shadow-lg cursor-pointer select-none leading-tight break-words ${
+                className={`relative min-h-[72px] sm:min-h-[76px] px-3 py-2 rounded-[20px] bg-gradient-to-br ${theme.bubbleColors[i % theme.bubbleColors.length]} ${theme.bubbleEdges[i % theme.bubbleEdges.length]} btn-press text-ink font-display font-semibold cursor-pointer select-none leading-tight break-words ${
                   String(choice).length > 8
                     ? "text-lg sm:text-xl"
                     : String(choice).length > 4
                       ? "text-xl sm:text-2xl"
                       : "text-2xl sm:text-3xl"
                 } ${
-                  isCorrectChoice || isRevealedCorrect ? "ring-4 ring-green-400" : ""
-                } ${isWrong ? "ring-4 ring-red-400" : ""}`}
+                  isCorrectChoice || isRevealedCorrect ? "ring-4 ring-teal" : ""
+                } ${isWrong ? "ring-4 ring-ember" : ""}`}
                 whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
                 whileTap={{ scale: 0.9 }}
                 animate={
@@ -1240,7 +1231,7 @@ export default function MathExplorer({ initialMode }) {
 
         {feedback === "wrong" && revealAnswer !== null && (
           <motion.p
-            className="text-center text-lg font-bold text-emerald-600"
+            className="text-center text-lg font-bold text-deep-teal"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
           >

@@ -12,7 +12,7 @@ export default function AngleFigure({ onSubmit, feedback, theme, lowMotionMode, 
   const len = 120;
   const rad = ((degrees || 0) * Math.PI) / 180;
   const end = { x: cx + len * Math.cos(rad), y: cy - len * Math.sin(rad) };
-  const tone = feedback === "correct" ? "text-green-600" : feedback === "wrong" ? "text-red-500" : theme.textPrimary;
+  const tone = feedback === "correct" ? "text-deep-teal" : feedback === "wrong" ? "text-ember" : theme.textPrimary;
   return (
     <section className="w-full flex flex-col items-center gap-3" aria-label="Angle figure">
       <div className="relative">

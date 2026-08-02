@@ -19,16 +19,16 @@ const SECTIONS = [
   {
     title: "What we never do",
     body: [
-      "No advertising, ever. KidMath shows no ads of any kind.",
+      "No advertising, ever. larkit shows no ads of any kind.",
       "No third-party analytics or behavioral tracking in the iOS app, and no data is ever sold or shared with data brokers.",
       "No tracking across other companies' apps or websites.",
-      "No contact from strangers: KidMath has no chat, social, or messaging features.",
+      "No contact from strangers: larkit has no chat, social, or messaging features.",
     ],
   },
   {
     title: "Children's privacy (COPPA)",
     body: [
-      "KidMath is built for children, so we collect the minimum needed for the product to work: progress data tied to the parent's account.",
+      "larkit is built for children, so we collect the minimum needed for the product to work: progress data tied to the parent's account.",
       "Accounts are created and managed by parents or guardians. Purchases are protected by a parental gate on iOS.",
       "A parent can ask us to delete the account and all associated data at any time.",
     ],
@@ -51,7 +51,7 @@ const SECTIONS = [
   {
     title: "Contact",
     body: [
-      "Questions or deletion requests: privacy@kidmath.app.",
+      "Questions or deletion requests: privacy@larkit.io.",
       "We will update this page when our practices change and note the date below.",
     ],
   },
@@ -65,7 +65,7 @@ export default function PrivacyPage() {
         <h1 className={`text-4xl font-extrabold ${theme.textPrimary}`}>Privacy Policy</h1>
         <p className={`mt-2 text-sm font-semibold ${theme.textMuted}`}>Last updated: July 21, 2026</p>
         <p className={`mt-4 text-lg ${theme.textSecondary}`}>
-          KidMath is a math practice app for kids. Our rule is simple: collect the minimum a
+          larkit is a math practice app for kids. Our rule is simple: collect the minimum a
           family needs to save progress, and nothing else.
         </p>
         <div className="mt-8 space-y-8">

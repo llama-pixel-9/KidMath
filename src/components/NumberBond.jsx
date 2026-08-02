@@ -19,10 +19,10 @@ export default function NumberBond({ onSubmit, feedback, theme, lowMotionMode, l
 
   const slotTone =
     feedback === "correct"
-      ? "ring-4 ring-green-400 text-green-600"
+      ? "ring-4 ring-teal text-deep-teal"
       : feedback === "wrong"
-        ? "ring-4 ring-red-400 text-red-500"
-        : "ring-4 ring-sky-400 text-sky-600";
+        ? "ring-4 ring-ember text-ember"
+        : "ring-4 ring-teal text-teal";
   const circle = "w-16 h-16 rounded-full flex items-center justify-center text-2xl font-extrabold shadow";
   const keyClass = `relative min-h-[64px] rounded-2xl ${theme.cardBg} shadow-lg text-2xl font-extrabold ${theme.textPrimary} cursor-pointer select-none disabled:opacity-40`;
 
@@ -77,7 +77,7 @@ export default function NumberBond({ onSubmit, feedback, theme, lowMotionMode, l
           0
         </motion.button>
         <motion.button
-          className="relative min-h-[64px] rounded-2xl bg-gradient-to-br from-emerald-400 to-green-500 text-white text-xl font-extrabold shadow-lg cursor-pointer select-none disabled:opacity-40"
+          className="relative min-h-[64px] rounded-[18px] bg-teal text-cream text-xl font-display font-semibold shadow-[0_5px_0_#064A41] btn-press cursor-pointer select-none disabled:opacity-40"
           whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
           whileTap={{ scale: 0.9 }}
           onClick={submit}

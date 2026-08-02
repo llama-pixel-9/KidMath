@@ -7,7 +7,8 @@ const CONFETTI_PARTICLES = Array.from({ length: 12 }, (_, i) => {
     id: i,
     x: Math.cos(angle) * distance,
     y: Math.sin(angle) * distance,
-    color: ["bg-yellow-400", "bg-pink-400", "bg-sky-400", "bg-lime-400", "bg-violet-400", "bg-orange-400"][i % 6],
+    // Brand confetti (§11): Sun / Seafoam / Sun Light / Apricot only.
+    color: ["bg-sun", "bg-seafoam", "bg-sun-light", "bg-apricot"][i % 4],
     size: 10 + (i % 3) * 3,
   };
 });

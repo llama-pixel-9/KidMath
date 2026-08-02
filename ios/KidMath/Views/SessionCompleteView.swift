@@ -19,15 +19,13 @@ struct SessionCompleteView: View {
                 .font(theme.displayFont(size: 36))
                 .minimumScaleFactor(0.5)
                 .lineLimit(1)
-                .foregroundStyle(
-                    LinearGradient(colors: theme.heroGradient, startPoint: .leading, endPoint: .trailing)
-                )
+                .foregroundStyle(Theme.ink)
 
             HStack(spacing: 6) {
                 ForEach(0..<max(starsEarned, 1), id: \.self) { _ in
                     Image(systemName: "star.fill")
                         .font(.title)
-                        .foregroundStyle(.yellow)
+                        .foregroundStyle(Theme.sun)
                 }
             }
             Text("You earned \(starsEarned) \(starsEarned == 1 ? "star" : "stars")!")
@@ -44,11 +42,9 @@ struct SessionCompleteView: View {
                         .font(.title3.weight(.heavy))
                         .fontDesign(.rounded)
                         .frame(maxWidth: .infinity, minHeight: 54)
-                        .background(
-                            RoundedRectangle(cornerRadius: 18)
-                                .fill(LinearGradient(colors: theme.ctaGradient, startPoint: .leading, endPoint: .trailing))
-                        )
-                        .foregroundStyle(.white)
+                        .background(RoundedRectangle(cornerRadius: 18).fill(Theme.deepTeal).offset(y: 4))
+                        .background(RoundedRectangle(cornerRadius: 18).fill(Theme.teal))
+                        .foregroundStyle(Theme.cream)
                 }
                 Button(action: goHome) {
                     Text("Back to home")

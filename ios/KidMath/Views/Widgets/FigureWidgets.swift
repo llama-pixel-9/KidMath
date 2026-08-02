@@ -311,7 +311,7 @@ struct BarChartView: View {
                         .font(.caption.weight(.bold))
                         .foregroundStyle(theme.textSecondary)
                     RoundedRectangle(cornerRadius: 5)
-                        .fill(Color(red: 0.220, green: 0.741, blue: 0.973)) // sky-400
+                        .fill(Theme.seafoam)
                         .frame(width: 40, height: bar.value / maxValue * 110 + 6)
                     Text(bar.label)
                         .font(.system(size: 10, weight: .bold))
@@ -360,15 +360,9 @@ struct CheckButton: View {
                 .fontDesign(.rounded)
                 .padding(.horizontal, 32)
                 .padding(.vertical, 12)
-                .background(
-                    RoundedRectangle(cornerRadius: 16).fill(
-                        LinearGradient(
-                            colors: [FigureColors.accent, Color(red: 0.655, green: 0.545, blue: 0.980)],
-                            startPoint: .topLeading, endPoint: .bottomTrailing
-                        )
-                    )
-                )
-                .foregroundStyle(.white)
+                .background(RoundedRectangle(cornerRadius: 16).fill(Theme.deepTeal).offset(y: 4))
+                .background(RoundedRectangle(cornerRadius: 16).fill(Theme.teal))
+                .foregroundStyle(Theme.cream)
                 .opacity(enabled ? 1 : 0.4)
         }
         .disabled(!enabled)

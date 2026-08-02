@@ -17,7 +17,6 @@ struct SettingsView: View {
         NavigationStack {
             List {
                 subscriptionSection
-                themeSection
                 soundSection
                 accountSection
                 engineSection
@@ -35,13 +34,13 @@ struct SettingsView: View {
     private var subscriptionSection: some View {
         Section("Subscription") {
             if app.store.hasPremium {
-                Label("KidMath Premium is active", systemImage: "star.circle.fill")
-                    .foregroundStyle(.green)
+                Label("larkit Premium is active", systemImage: "star.circle.fill")
+                    .foregroundStyle(Theme.teal)
                 Text("Manage or cancel in the App Store's Subscriptions settings.")
                     .font(.footnote)
                     .foregroundStyle(theme.textSecondary)
             } else {
-                Text("Free trial available — all 22 modes, worksheets, and sync.")
+                Text("Free trial available — all 22 modes, flight logs, and sync.")
                     .font(.footnote)
                     .foregroundStyle(theme.textSecondary)
                 Button("Restore purchases") {
@@ -51,33 +50,6 @@ struct SettingsView: View {
         }
     }
 
-    private var themeSection: some View {
-        Section("Theme") {
-            ForEach(Theme.all) { option in
-                Button {
-                    app.themeId = option.id
-                } label: {
-                    HStack(spacing: 12) {
-                        Text(option.emoji).font(.title2)
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text(option.label)
-                                .font(.headline)
-                                .foregroundStyle(.primary)
-                            Text(option.themeDescription)
-                                .font(.footnote)
-                                .foregroundStyle(.secondary)
-                        }
-                        Spacer()
-                        if app.themeId == option.id {
-                            Image(systemName: "checkmark.circle.fill")
-                                .foregroundStyle(.green)
-                        }
-                    }
-                }
-                .buttonStyle(.plain)
-            }
-        }
-    }
 
     private var soundSection: some View {
         Section("Sound") {

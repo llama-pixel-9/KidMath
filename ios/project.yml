@@ -42,18 +42,21 @@ targets:
     info:
       path: KidMath/Info.plist
       properties:
+        # Home-screen label. The target stays KidMath (renaming it would ripple
+        # through TEST_HOST and @testable imports); the user-facing name is larkit.
+        CFBundleDisplayName: larkit
         UILaunchScreen:
           UIColorName: LaunchBackground
         # HTTPS only (standard crypto) — skips the export-compliance question
         # on every TestFlight upload.
         ITSAppUsesNonExemptEncryption: false
-        # Bundled Google Fonts (OFL), same families the web loads in index.css.
+        # Bundled Google Fonts (OFL), same families the web loads: Fredoka for
+        # display, Nunito for body. The alt-theme fonts left with the themes.
         UIAppFonts:
           - Fredoka.ttf
-          - PressStart2P.ttf
-          - MedievalSharp.ttf
-          - Silkscreen.ttf
-          - Bungee.ttf
+          - Nunito-Regular.ttf
+          - Nunito-SemiBold.ttf
+          - Nunito-Bold.ttf
         UISupportedInterfaceOrientations~iphone:
           [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
         UISupportedInterfaceOrientations~ipad:

@@ -17,7 +17,7 @@ struct AboutView: View {
         ("⏰", "Spaced Review",
          "Tricky questions come back later at spaced intervals to strengthen memory over time."),
         ("📈", "Diagnostic Adaptivity",
-         "KidMath tracks subskills and targets weaker areas so each child gets practice that fits their needs."),
+         "larkit tracks subskills and targets weaker areas so each child gets practice that fits their needs."),
         ("♿️", "Accessible by Design",
          "Word problems can be limited for early readers, and visual/symbolic questions stay central for foundational levels."),
     ]
@@ -30,7 +30,7 @@ struct AboutView: View {
                         .font(theme.displayFont(size: 28))
                         .minimumScaleFactor(0.6)
                         .foregroundStyle(theme.textPrimary)
-                    Text("KidMath is built with research-backed teaching and assessment practices so kids get practice that is joyful, targeted, and effective.")
+                    Text("larkit is built with research-backed teaching and assessment practices so kids get practice that is joyful, targeted, and effective.")
                         .font(.body)
                         .foregroundStyle(theme.textSecondary)
 
@@ -63,7 +63,7 @@ struct AboutView: View {
                     }
                     .padding(.top, 4)
 
-                    Text("Version \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0") · engine shared with kidmath web")
+                    Text("Version \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0") · engine shared with larkit web")
                         .font(.footnote)
                         .foregroundStyle(theme.textMuted)
                         .frame(maxWidth: .infinity)

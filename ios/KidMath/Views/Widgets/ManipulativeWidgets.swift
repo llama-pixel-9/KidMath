@@ -237,8 +237,8 @@ struct FractionSetWidget: View {
                         ForEach(0..<max(perGroup, 0), id: \.self) { _ in
                             Circle()
                                 .fill(group < num
-                                      ? Color(red: 0.518, green: 0.800, blue: 0.086) // lime-500
-                                      : Color(red: 0.796, green: 0.835, blue: 0.882)) // slate-300
+                                      ? Theme.teal
+                                      : Theme.ink.opacity(0.15))
                                 .frame(width: 20, height: 20)
                         }
                     }
@@ -273,10 +273,10 @@ struct PlaceValueDiscsWidget: View {
     @State private var entry = ""
 
     private static let placeColors: [Int: Color] = [
-        1000: Color(red: 0.655, green: 0.545, blue: 0.980), // violet-400
-        100: Color(red: 0.220, green: 0.741, blue: 0.973), // sky-400
-        10: Color(red: 0.204, green: 0.827, blue: 0.600), // emerald-400
-        1: Color(red: 0.984, green: 0.749, blue: 0.141), // amber-400
+        1000: Theme.apricot,
+        100: Theme.seafoam,
+        10: Theme.tealMid,
+        1: Theme.sunLight,
     ]
 
     var body: some View {
@@ -296,7 +296,7 @@ struct PlaceValueDiscsWidget: View {
                             ForEach(0..<max(col.count, 0), id: \.self) { _ in
                                 Text("\(col.place)")
                                     .font(.system(size: 9, weight: .bold))
-                                    .foregroundStyle(.white)
+                                    .foregroundStyle(Theme.ink)
                                     .frame(width: 28, height: 28)
                                     .background(Circle().fill(Self.placeColors[col.place] ?? .gray))
                             }
@@ -328,8 +328,8 @@ struct BarModelWidget: View {
 
     @State private var entry = ""
 
-    private let skyBar = Color(red: 0.220, green: 0.741, blue: 0.973)
-    private let amberBar = Color(red: 0.984, green: 0.749, blue: 0.141)
+    private let skyBar = Theme.seafoam
+    private let amberBar = Theme.apricot
 
     var body: some View {
         VStack(spacing: 12) {
@@ -408,7 +408,7 @@ struct BarModelWidget: View {
     private func segment(_ label: String, color: Color, width: CGFloat) -> some View {
         Text(label)
             .font(.headline.weight(.heavy))
-            .foregroundStyle(.white)
+            .foregroundStyle(Theme.ink)
             .minimumScaleFactor(0.5)
             .frame(width: max(width, 0), height: 48)
             .background(color)

@@ -99,7 +99,7 @@ struct SessionView: View {
 
             GeometryReader { proxy in
                 ZStack(alignment: .leading) {
-                    Capsule().fill(.white)
+                    Capsule().fill(theme.progressTrack)
                     Capsule()
                         .fill(LinearGradient(colors: theme.progressFill, startPoint: .leading, endPoint: .trailing))
                         .frame(width: max(12, proxy.size.width * viewModel.progressFraction))
@@ -111,7 +111,7 @@ struct SessionView: View {
             if viewModel.streak >= 3 {
                 Label("\(viewModel.streak)", systemImage: "bolt.fill")
                     .font(.subheadline.weight(.heavy))
-                    .foregroundStyle(Color(red: 0.984, green: 0.573, blue: 0.235))
+                    .foregroundStyle(Theme.sun)
             }
 
             Text("Lv \(viewModel.level)")
@@ -120,7 +120,7 @@ struct SessionView: View {
                 .padding(.horizontal, 10)
                 .padding(.vertical, 6)
                 .background(Capsule().fill(theme.modeColor(mode.id)))
-                .foregroundStyle(.white)
+                .foregroundStyle(Theme.ink)
         }
         .padding(.top, 8)
     }
@@ -142,7 +142,7 @@ struct SessionView: View {
             RoundedRectangle(cornerRadius: 28)
                 .fill(theme.cardBackground)
                 .overlay(RoundedRectangle(cornerRadius: 28).stroke(borderColor, lineWidth: 3))
-                .shadow(color: .black.opacity(0.06), radius: 14, y: 6)
+                .shadow(color: Theme.ink.opacity(0.06), radius: 0, y: 6)
         )
         .overlay {
             if feedbackState == true, !reduceMotion {
@@ -237,15 +237,12 @@ struct SessionView: View {
     }
 
     private var levelUpBanner: some View {
-        Text("⭐️ Level up! ⭐️")
-            .font(.title.weight(.heavy))
-            .fontDesign(.rounded)
+        Text("You've fledged — level up!")
+            .font(theme.displayFont(size: 24))
             .padding(.horizontal, 28)
             .padding(.vertical, 16)
-            .background(
-                Capsule().fill(LinearGradient(colors: theme.ctaGradient, startPoint: .leading, endPoint: .trailing))
-            )
-            .foregroundStyle(.white)
+            .background(Capsule().fill(Theme.apricot))
+            .foregroundStyle(Theme.ink)
             .transition(.scale.combined(with: .opacity))
     }
 }

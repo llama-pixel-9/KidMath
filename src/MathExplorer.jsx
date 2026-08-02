@@ -71,6 +71,7 @@ import {
   saveCalmMode,
 } from "./userPreferences";
 import ConfettiBurst from "./components/ConfettiBurst.jsx";
+import Feather from "./components/feather.jsx";
 import ConfettiRain from "./components/ConfettiRain.jsx";
 import LarkMark from "./components/LarkMark.jsx";
 import { getWidget } from "./components/widgetRegistry.js";
@@ -207,7 +208,7 @@ function StarRow({ count }) {
           animate={{ scale: [0, 1.3, 1], rotate: 0 }}
           transition={{ delay: i * 0.05, duration: 0.4, type: "spring" }}
         >
-          <Star className="h-6 w-6 text-sun fill-sun" />
+          <span className="block w-4.5 h-4.5 bg-sun rotate-45 rounded-[4px]" />
         </motion.div>
       ))}
     </section>
@@ -1168,9 +1169,9 @@ export default function MathExplorer({ initialMode }) {
             aria-label={muted ? "Unmute" : "Mute"}
           >
             {muted ? (
-              <VolumeX className={`h-5 w-5 ${theme.textSecondary}`} />
+              <Feather name="soundOff" size={20} className={theme.textSecondary} label="sound off" />
             ) : (
-              <Volume2 className={`h-5 w-5 ${theme.textSecondary}`} />
+              <Feather name="soundOn" size={20} className={theme.textSecondary} label="sound on" />
             )}
           </motion.button>
           <motion.button
@@ -1178,7 +1179,7 @@ export default function MathExplorer({ initialMode }) {
             whileTap={{ scale: 0.9 }}
             onClick={() => setShowSettings(true)}
           >
-            <Settings className={`h-6 w-6 ${theme.textSecondary}`} />
+            <Feather name="settings" size={24} className={theme.textSecondary} label="settings" />
           </motion.button>
         </div>
       </header>
@@ -1196,11 +1197,11 @@ export default function MathExplorer({ initialMode }) {
           animate={{ opacity: 1, scale: 1 }}
           key={session.correctStreak}
         >
-          <Zap className="h-4 w-4 text-sun" />
+          <Feather name="streak" size={16} className="text-sun" />
           <span className="text-xs font-bold text-ember">
             {session.correctStreak} streak!
           </span>
-          <Zap className="h-4 w-4 text-sun" />
+          <Feather name="streak" size={16} className="text-sun" />
         </motion.div>
       )}
 
@@ -1258,6 +1259,10 @@ export default function MathExplorer({ initialMode }) {
             const isCorrectChoice = feedback === "correct" && choice === currentQ.answer;
             const isRevealedCorrect = feedback === "wrong" && choice === revealAnswer;
             const isWrong = shakenChoice === choice;
+            // Binary pairs use Seafoam and Apricot at equal visual weight
+            // (§08) — never a light tile against a darker one, so color
+            // never hints at the answer.
+            const tintIndex = (currentQ.choices || []).length === 2 ? i * 2 : i;
             return (
               <motion.button
                 key={`${questionKeyRef.current}-${choice}`}
@@ -1265,7 +1270,7 @@ export default function MathExplorer({ initialMode }) {
                 // ("Grapes", "a rectangle"), and a fixed text-3xl overflowed
                 // the bubble for those. Type scales with the answer's length,
                 // and long words wrap instead of spilling.
-                className={`relative min-h-[72px] sm:min-h-[76px] px-3 py-2 rounded-[20px] bg-gradient-to-br ${theme.bubbleColors[i % theme.bubbleColors.length]} ${theme.bubbleEdges[i % theme.bubbleEdges.length]} btn-press text-ink font-display font-semibold cursor-pointer select-none leading-tight break-words ${
+                className={`relative min-h-[72px] sm:min-h-[76px] px-3 py-2 rounded-[20px] bg-gradient-to-br ${theme.bubbleColors[tintIndex % theme.bubbleColors.length]} ${theme.bubbleEdges[tintIndex % theme.bubbleEdges.length]} btn-press text-ink font-display font-semibold cursor-pointer select-none leading-tight break-words ${
                   String(choice).length > 8
                     ? "text-lg sm:text-xl"
                     : String(choice).length > 4

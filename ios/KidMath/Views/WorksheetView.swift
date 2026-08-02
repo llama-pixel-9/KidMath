@@ -56,7 +56,7 @@ struct WorksheetView: View {
                     }
                     if let pdfURL {
                         ShareLink(item: pdfURL) {
-                            Label("Share / Print PDF", systemImage: "printer.fill")
+                            Label { Text("Share / Print PDF") } icon: { FeatherIcon(glyph: .print, size: 20, color: Theme.cream) }
                                 .font(.headline)
                         }
                     }

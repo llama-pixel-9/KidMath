@@ -29,7 +29,7 @@ import {
   FileText,
   Heart,
 } from "lucide-react";
-import { Lock as LockIcon } from "lucide-react";
+import Feather from "./components/feather.jsx";
 import { useState } from "react";
 import { useTheme } from "./useTheme";
 import LarkMark from "./components/LarkMark";
@@ -41,6 +41,7 @@ import StickerBook from "./engagement/StickerBook.jsx";
 import GrownUpsPanel from "./engagement/GrownUpsPanel.jsx";
 import { rankForLevel } from "./engagement/ranks.js";
 import { usePremium } from "./PremiumContext";
+import { useAuth } from "./useAuth";
 import { isFreeMode } from "./premium";
 
 const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork, BarChart3, CircleDot, Sigma, Ruler, Coins, Spline, Scale, Clock, ChartColumn, Triangle, Shapes };
@@ -91,8 +92,20 @@ const STEPS = [
   },
 ];
 
+// §14: one greeting line above the aviary — time of day, first name when we
+// know it, and the star balance. No exclamation stacking, no streak pressure.
+function greetingLine(user, balance) {
+  const hour = new Date().getHours();
+  const dayPart = hour < 12 ? "Morning" : hour < 18 ? "Afternoon" : "Evening";
+  const first = user?.user_metadata?.full_name?.split(" ")[0] || user?.email?.split("@")[0];
+  const who = first ? `, ${first}` : "";
+  const stars = balance > 0 ? ` — ${balance} ${balance === 1 ? "star" : "stars"} in the nest.` : " — pick a game.";
+  return `${dayPart}${who}${stars}`;
+}
+
 export default function HomePage() {
   const { isPremium, loading: premiumLoading, openPaywall } = usePremium();
+  const { user } = useAuth();
   const { theme } = useTheme();
   const navigate = useNavigate();
   const [stickersOpen, setStickersOpen] = useState(false);
@@ -168,10 +181,10 @@ export default function HomePage() {
       {/* Pick a game — grouped so kids can find a skill fast */}
       <section id="modes" className="px-4 py-16 max-w-5xl mx-auto">
         <motion.h2
-          className={`text-3xl font-semibold font-display ${theme.textPrimary} text-center mb-2`}
+          className={`text-[26px] font-semibold font-display ${theme.textPrimary} text-center mb-2`}
           {...fadeUp}
         >
-          Pick a Game
+          {greetingLine(user, starBalance(engagement))}
         </motion.h2>
         <motion.p
           className={`text-center ${theme.textSecondary} mb-10`}
@@ -210,9 +223,10 @@ export default function HomePage() {
                         <Icon className="h-5 w-5 text-ink" />
                       </div>
                       {locked && (
-                        <LockIcon
-                          className="absolute top-3 right-3 h-4 w-4 text-ink opacity-40"
-                          aria-hidden="true"
+                        <Feather
+                          name="lock"
+                          size={16}
+                          className="absolute top-3 right-3 text-ink opacity-40"
                         />
                       )}
                       <h4 className="text-base font-display font-semibold text-ink leading-tight">

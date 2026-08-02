@@ -42,8 +42,8 @@ struct HomeView: View {
                     Button {
                         showSettings = true
                     } label: {
-                        Image(systemName: "gearshape.fill")
-                            .foregroundStyle(theme.textSecondary)
+                        FeatherIcon(glyph: .settings, size: 22, color: Theme.ink)
+                            .accessibilityLabel("settings")
                     }
                 }
             }
@@ -61,6 +61,14 @@ struct HomeView: View {
         }
     }
 
+    /// §14: one greeting line above the aviary — time of day, no exclamation
+    /// stacking, no streak pressure.
+    private var greeting: String {
+        let hour = Calendar.current.component(.hour, from: Date())
+        let dayPart = hour < 12 ? "Morning" : hour < 18 ? "Afternoon" : "Evening"
+        return "\(dayPart) — pick a game."
+    }
+
     private var hero: some View {
         VStack(alignment: .leading, spacing: 6) {
             // Mark + wordmark, always together. The wordmark is lowercase
@@ -74,8 +82,8 @@ struct HomeView: View {
                     .lineLimit(1)
                     .foregroundStyle(Theme.teal)
             }
-            Text("Math that feels like play.")
-                .font(.title3.weight(.medium))
+            Text(greeting)
+                .font(theme.bodyFont(size: 19, weight: .semibold))
                 .foregroundStyle(theme.textSecondary)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -126,8 +134,7 @@ struct HomeView: View {
                     }
                 }
                 Text(mode.label)
-                    .font(.headline)
-                    .fontDesign(.rounded)
+                    .font(theme.displayFont(size: 16))
                     .foregroundStyle(Theme.ink)
                     .lineLimit(2, reservesSpace: true)
                     .multilineTextAlignment(.leading)
@@ -162,13 +169,12 @@ struct HomeView: View {
                         .lineLimit(1)
                         .foregroundStyle(theme.textPrimary)
                     Text("Generate kid-friendly practice sheets to print or share as PDF.")
-                        .font(.subheadline)
+                        .font(theme.bodyFont(size: 14))
                         .foregroundStyle(theme.textSecondary)
                         .multilineTextAlignment(.leading)
                 }
                 Spacer()
-                Image(systemName: "chevron.right")
-                    .foregroundStyle(theme.textMuted)
+                FeatherIcon(glyph: .next, size: 18, color: Theme.ink.opacity(0.5))
             }
             .padding(16)
             .background(RoundedRectangle(cornerRadius: 20).fill(theme.cardBackground))

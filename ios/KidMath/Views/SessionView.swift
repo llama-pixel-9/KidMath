@@ -134,11 +134,10 @@ struct SessionView: View {
             Button {
                 finish()
             } label: {
-                Image(systemName: "xmark")
-                    .font(.headline)
-                    .foregroundStyle(theme.textSecondary)
-                    .padding(10)
+                FeatherIcon(glyph: .close, size: 18, color: Theme.ink)
+                    .padding(12)
                     .background(Circle().fill(theme.cardBackground))
+                    .accessibilityLabel("close")
             }
 
             GeometryReader { proxy in
@@ -153,9 +152,12 @@ struct SessionView: View {
             .frame(height: 14)
 
             if viewModel.streak >= 3 {
-                Label("\(viewModel.streak)", systemImage: "bolt.fill")
-                    .font(.subheadline.weight(.heavy))
-                    .foregroundStyle(Theme.sun)
+                HStack(spacing: 4) {
+                    FeatherIcon(glyph: .streak, size: 16, color: Theme.sun)
+                    Text("\(viewModel.streak)")
+                        .font(.subheadline.weight(.heavy))
+                        .foregroundStyle(Theme.ember)
+                }
             }
 
             Text("Lv \(viewModel.level)")
@@ -173,7 +175,7 @@ struct SessionView: View {
         VStack(spacing: 10) {
             if viewModel.isRetry {
                 Text("Let's try this one again!")
-                    .font(.caption.weight(.bold))
+                    .font(theme.bodyFont(size: 12, weight: .bold))
                     .foregroundStyle(theme.textMuted)
                     .textCase(.uppercase)
             }
@@ -213,9 +215,16 @@ struct SessionView: View {
     private var feedbackLine: some View {
         switch feedbackState {
         case .some(true):
-            Label("Great job!", systemImage: "star.fill")
-                .font(.headline.weight(.heavy))
-                .foregroundStyle(theme.correct)
+            HStack(spacing: 8) {
+                Rectangle()
+                    .fill(Theme.sun)
+                    .frame(width: 12, height: 12)
+                    .rotationEffect(.degrees(45))
+                    .cornerRadius(2.5)
+                Text("Great job!")
+                    .font(.headline.weight(.heavy))
+                    .foregroundStyle(theme.correct)
+            }
         case .some(false):
             VStack(spacing: 2) {
                 Text("Not quite!")
@@ -223,7 +232,7 @@ struct SessionView: View {
                     .foregroundStyle(theme.wrong)
                 if let answer = viewModel.revealAnswer {
                     Text("The answer is \(AnswerFormatting.text(answer))")
-                        .font(.subheadline.weight(.semibold))
+                        .font(theme.bodyFont(size: 15, weight: .semibold))
                         .foregroundStyle(theme.textSecondary)
                 }
             }

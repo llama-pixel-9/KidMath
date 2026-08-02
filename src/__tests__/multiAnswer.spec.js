@@ -101,7 +101,7 @@ describe("M2 widget registration", () => {
     expect(WIDGETS.multiSelect.props(q)).toEqual({ options: [1, 2], requiredCount: 2 });
     expect(WIDGETS.numberLine.props(q)).toMatchObject({ min: 0, max: 20, from: 4, to: 10, mode: "jump" });
     expect(WIDGETS.shapeFigure.props(q)).toMatchObject({ shape: "hexagon", mode: "select" });
-    expect(WIDGETS.coinTray.props(q)).toEqual({ coins: ["dime", "penny"], mode: "build" });
+    expect(WIDGETS.coinTray.props(q)).toEqual({ coins: ["dime", "penny"], mode: "build", targetCents: null });
   });
 
   it("supplies safe defaults for an empty question", () => {

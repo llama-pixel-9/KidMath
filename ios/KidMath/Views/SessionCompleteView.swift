@@ -67,12 +67,12 @@ struct SessionCompleteView: View {
                     .rotationEffect(.degrees(45))
                     .cornerRadius(3)
                 Text("+\(starsEarned) \(starsEarned == 1 ? "star" : "stars")")
-                    .font(.subheadline.weight(.bold))
+                    .font(theme.bodyFont(size: 15, weight: .bold))
                 Rectangle()
                     .fill(Theme.ink.opacity(0.2))
                     .frame(width: 1, height: 18)
                 Text("\(lifetimeStars) all-time")
-                    .font(.subheadline.weight(.bold))
+                    .font(theme.bodyFont(size: 15, weight: .bold))
             }
             .foregroundStyle(Theme.ink)
             .padding(.horizontal, 16)
@@ -90,7 +90,7 @@ struct SessionCompleteView: View {
                 }
                 Button(action: goHome) {
                     Text("Back to the nest")
-                        .font(.subheadline.weight(.bold))
+                        .font(theme.bodyFont(size: 15, weight: .bold))
                         .foregroundStyle(Theme.teal)
                         .frame(minHeight: 44)
                 }

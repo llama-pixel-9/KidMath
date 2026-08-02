@@ -9,6 +9,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { useTheme } from "./useTheme";
+import MathMarks from "./components/MathMarks.jsx";
 
 const PRINCIPLES = [
   {
@@ -53,8 +54,9 @@ export default function AboutPage() {
   const { theme } = useTheme();
 
   return (
-    <main className={`min-h-screen ${theme.bg} px-4 py-10`}>
-      <section className="max-w-4xl mx-auto">
+    <main className="relative min-h-screen px-4 py-10">
+      <MathMarks />
+      <section className="relative max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

@@ -63,6 +63,7 @@ export default function CoinTray({
   lowMotionMode,
   coins = [],
   mode = "count",
+  targetCents = null,
 }) {
   const [selected, setSelected] = useState([]);
   const [entry, setEntry] = useState("");
@@ -74,7 +75,7 @@ export default function CoinTray({
   };
 
   const selectedTotal = selected.reduce((sum, i) => sum + COINS[coins[i]].value, 0);
-  const canSubmit = mode === "build" ? selected.length > 0 : entry !== "";
+  const canSubmit = mode === "build" ? true : entry !== "";
 
   const submit = () => {
     if (locked || !canSubmit) return;
@@ -99,9 +100,27 @@ export default function CoinTray({
       </div>
 
       {mode === "build" ? (
-        <p className={`text-2xl font-extrabold ${theme?.textPrimary || "text-slate-700"}`}>
-          {selectedTotal}¢
-        </p>
+        <div className="flex flex-col items-center gap-1">
+          {/* Running total (§18): Fredoka, updates on every tap — the
+              feedback loop is the lesson. Deep Teal once correct. */}
+          <motion.p
+            className={`text-[34px] leading-none font-display font-semibold ${
+              feedback === "correct" ? "text-deep-teal" : "text-ink"
+            }`}
+            animate={feedback === "wrong" && !lowMotionMode ? { x: [0, -6, 6, -6, 6, 0] } : {}}
+            transition={{ duration: 0.24 }}
+            aria-live="polite"
+          >
+            {selectedTotal}¢
+          </motion.p>
+          {feedback === "wrong" && targetCents != null && selectedTotal !== targetCents && (
+            <p className="text-sm font-bold text-ember">
+              {selectedTotal < targetCents
+                ? `${targetCents - selectedTotal}¢ short`
+                : `${selectedTotal - targetCents}¢ too much`}
+            </p>
+          )}
+        </div>
       ) : (
         <input
           inputMode="numeric"

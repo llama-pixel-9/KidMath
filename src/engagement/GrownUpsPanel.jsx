@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Star, Flame, Award } from "lucide-react";
+import Feather from "../components/feather.jsx";
 import { useTheme } from "../useTheme.js";
 import { MODE_IDS, getModeConfig } from "../modes";
 import { loadProgressSync } from "../progressStore";
@@ -43,7 +43,7 @@ export default function GrownUpsPanel({ open, onClose }) {
           <div className="flex items-center justify-between mb-1">
             <h2 className="text-2xl font-extrabold text-slate-800">For Grown-Ups</h2>
             <button type="button" className="p-2 rounded-full text-slate-400 cursor-pointer" onClick={onClose} aria-label="Close">
-              <X className="h-5 w-5" />
+              <Feather name="close" size={20} className="h-5 w-5" />
             </button>
           </div>
           <p className="text-sm text-slate-500 mb-4">
@@ -53,17 +53,17 @@ export default function GrownUpsPanel({ open, onClose }) {
 
           <div className="grid grid-cols-3 gap-2 mb-5">
             <div className={stat}>
-              <Flame className="h-5 w-5 text-orange-500 mx-auto" />
+              <Feather name="streak" size={16} className="h-5 w-5 text-orange-500 mx-auto" />
               <p className="text-lg font-extrabold text-slate-800">{streak}</p>
               <p className="text-[11px] font-semibold text-slate-500">day streak (best {eng.bestStreak})</p>
             </div>
             <div className={stat}>
-              <Star className="h-5 w-5 text-yellow-500 fill-yellow-400 mx-auto" />
+              <Feather name="star" size={16} className="h-5 w-5 text-yellow-500 fill-yellow-400 mx-auto" />
               <p className="text-lg font-extrabold text-slate-800">{eng.earnedStars}</p>
               <p className="text-[11px] font-semibold text-slate-500">stars earned ({starBalance(eng)} unspent)</p>
             </div>
             <div className={stat}>
-              <Award className="h-5 w-5 text-violet-500 mx-auto" />
+              <Feather name="check" size={16} className="h-5 w-5 text-violet-500 mx-auto" />
               <p className="text-lg font-extrabold text-slate-800">{(eng.badges ?? []).length}</p>
               <p className="text-[11px] font-semibold text-slate-500">badges · {eng.sessionsCount ?? 0} sessions</p>
             </div>

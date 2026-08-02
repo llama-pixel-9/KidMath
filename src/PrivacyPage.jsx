@@ -1,4 +1,5 @@
 import { useTheme } from "./useTheme";
+import MathMarks from "./components/MathMarks.jsx";
 
 /**
  * Privacy policy — one page covering the web app and the iOS app. The App
@@ -60,8 +61,9 @@ const SECTIONS = [
 export default function PrivacyPage() {
   const { theme } = useTheme();
   return (
-    <main className={`min-h-screen ${theme.bg} px-4 py-10`}>
-      <section className="max-w-3xl mx-auto">
+    <main className="relative min-h-screen px-4 py-10">
+      <MathMarks />
+      <section className="relative max-w-3xl mx-auto">
         <h1 className={`text-4xl font-extrabold ${theme.textPrimary}`}>Privacy Policy</h1>
         <p className={`mt-2 text-sm font-semibold ${theme.textMuted}`}>Last updated: July 21, 2026</p>
         <p className={`mt-4 text-lg ${theme.textSecondary}`}>

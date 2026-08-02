@@ -1,29 +1,21 @@
 import { useState } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  Home,
-  Gamepad2,
-  FileText,
-  Info,
-  Menu,
-  X,
-  LogIn,
-  LogOut,
-  Shield,
-} from "lucide-react";
 import { useAuth } from "./useAuth";
 import { useIsAdmin } from "./useIsAdmin";
 import LarkMark from "./components/LarkMark";
+import Feather from "./components/feather.jsx";
 
+// Nav links are words, not glyphs (§13: icons never replace a word a
+// five-year-old can read) — the feather set covers the controls only.
 const BASE_NAV_ITEMS = [
-  { to: "/", label: "Home", icon: Home, end: true },
-  { to: "/play", label: "Play", icon: Gamepad2 },
-  { to: "/worksheets", label: "Worksheets", icon: FileText },
-  { to: "/about", label: "About", icon: Info },
+  { to: "/", label: "Home", end: true },
+  { to: "/play", label: "Play" },
+  { to: "/worksheets", label: "Worksheets" },
+  { to: "/about", label: "About" },
 ];
 
-const ADMIN_NAV_ITEM = { to: "/admin", label: "Admin", icon: Shield };
+const ADMIN_NAV_ITEM = { to: "/admin", label: "Admin" };
 
 // The perch (§12): the avatar is a Lark Teal circle with the first initial in
 // Cream — no photos, no uploads.
@@ -52,7 +44,7 @@ function AuthButton({ compact = false }) {
           aria-label="Sign out"
           title="Sign out"
         >
-          <LogOut className="h-4 w-4 text-ink" />
+          <Feather name="close" size={16} className="text-ink" />
         </button>
       </div>
     );
@@ -63,7 +55,7 @@ function AuthButton({ compact = false }) {
       className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-bold cursor-pointer transition-colors text-ink hover:bg-ink/5 hover:text-teal"
       onClick={signInWithGoogle}
     >
-      <LogIn className="h-4 w-4" />
+      <Feather name="profile" size={16} />
       {!compact && "Sign In"}
     </button>
   );
@@ -107,18 +99,16 @@ export default function Navbar() {
         {/* Desktop links */}
         <div className="hidden sm:flex items-center gap-1">
           {navItems.map((item) => {
-            const Icon = item.icon;
             const active = isPathActive(pathname, item);
             return (
               <NavLink
                 key={item.to}
                 to={item.to}
                 end={item.end}
-                className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-bold cursor-pointer transition-colors ${
+                className={`px-4 py-2 rounded-xl text-sm font-bold cursor-pointer transition-colors ${
                   active ? "bg-ink/5 text-teal" : "text-ink hover:bg-ink/5 hover:text-teal"
                 }`}
               >
-                <Icon className="h-4 w-4" />
                 {item.label}
               </NavLink>
             );
@@ -134,7 +124,11 @@ export default function Navbar() {
             onClick={() => setMobileOpen((o) => !o)}
             aria-label="Toggle menu"
           >
-            {mobileOpen ? <X className="h-6 w-6 text-ink" /> : <Menu className="h-6 w-6 text-ink" />}
+            {mobileOpen ? (
+              <Feather name="close" size={24} className="text-ink" label="close menu" />
+            ) : (
+              <Feather name="menu" size={24} className="text-ink" label="open menu" />
+            )}
           </button>
         </div>
       </div>
@@ -151,18 +145,16 @@ export default function Navbar() {
           >
             <div className="px-4 py-2 space-y-1">
               {navItems.map((item) => {
-                const Icon = item.icon;
                 const active = isPathActive(pathname, item);
                 return (
                   <Link
                     key={item.to}
                     to={item.to}
                     onClick={closeMobile}
-                    className={`flex items-center gap-3 w-full px-4 py-3 rounded-xl text-sm font-bold cursor-pointer transition-colors ${
+                    className={`block w-full px-4 py-3 rounded-xl text-sm font-bold cursor-pointer transition-colors ${
                       active ? "bg-ink/5 text-teal" : "text-ink hover:bg-ink/5 hover:text-teal"
                     }`}
                   >
-                    <Icon className="h-5 w-5" />
                     {item.label}
                   </Link>
                 );

@@ -19,6 +19,9 @@ struct ChoiceWidget: View {
     var body: some View {
         LazyVGrid(columns: columns, spacing: 12) {
             ForEach(Array(choices.enumerated()), id: \.offset) { index, choice in
+                // Binary pairs use Seafoam and Apricot at equal visual
+                // weight (§08) — color never hints at the answer.
+                let tintIndex = choices.count == 2 ? index * 2 : index
                 Button {
                     submit(choice)
                 } label: {
@@ -28,12 +31,12 @@ struct ChoiceWidget: View {
                         .frame(maxWidth: .infinity, minHeight: 72)
                         .background(
                             RoundedRectangle(cornerRadius: 20)
-                                .fill(theme.bubbleEdges[index % theme.bubbleEdges.count])
+                                .fill(theme.bubbleEdges[tintIndex % theme.bubbleEdges.count])
                                 .offset(y: 5)
                         )
                         .background(
                             RoundedRectangle(cornerRadius: 20)
-                                .fill(theme.bubbleGradients[index % theme.bubbleGradients.count][0])
+                                .fill(theme.bubbleGradients[tintIndex % theme.bubbleGradients.count][0])
                         )
                         .foregroundStyle(Theme.ink)
                 }

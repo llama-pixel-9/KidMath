@@ -480,35 +480,30 @@ const CHECKERS = {
   totalSurveyed(q) {
     return q.display.bars.reduce((s, b) => s + b.value, 0);
   },
+  // The data for these lives in display.figure payloads now, not in the prompt,
+  // so the independent solver reads the figure the child is actually shown.
   tallyRead(q) {
     const m = q.display.promptText.match(/How many chose (\w+)\?/);
     if (!m) return undefined;
-    const row = q.display.promptText.match(new RegExp(`${m[1]}: ([I/ ]+?)\\.`));
-    const marks = row[1];
-    return marks.split("/").length - 1 === 0
-      ? marks.replace(/\s/g, "").length
-      : (marks.split("/").length - 1) * 5 + (marks.split("/").pop().match(/I/g) || []).length;
+    return q.display.rows.find((r) => r.label === m[1])?.count;
   },
   pictographKey1: pictographValue,
   pictographKey2: pictographValue,
   pictographKeyHalf: pictographValue,
   errorAnalysisKey: pictographValue,
   pictographCompare(q) {
-    const key = Number(q.display.promptText.match(/stands for (\d+)/)[1]);
-    const rows = [...q.display.promptText.matchAll(/(\w+): (●+)/g)];
     const m = q.display.promptText.match(/How many more (\w+) than (\w+)\?/);
-    const count = (label) => rows.find((r) => r[1] === label)[2].length;
-    return (count(m[1]) - count(m[2])) * key;
+    if (!m) return undefined;
+    const count = (label) => q.display.rows.find((r) => r.label === label).symbols;
+    return (count(m[1]) - count(m[2])) * q.display.keyValue;
   },
   linePlotRead(q) {
     const m = q.display.promptText.match(/How many plants were (\d+) cm tall\?/);
     if (!m) return undefined;
-    const row = q.display.promptText.match(new RegExp(`${m[1]} cm (X+)`));
-    return row ? row[1].length : 0;
+    return q.display.points.find((p) => p.value === Number(m[1]))?.count;
   },
   linePlotSpread(q) {
-    const rows = [...q.display.promptText.matchAll(/(\d+) cm (X+|-)/g)];
-    const present = rows.filter((r) => r[2] !== "-").map((r) => Number(r[1]));
+    const present = q.display.points.filter((p) => p.count > 0).map((p) => p.value);
     return Math.max(...present) - Math.min(...present);
   },
 };
@@ -524,10 +519,10 @@ function elapsedDuration(q) {
 }
 
 function pictographValue(q) {
-  const key = Number(q.display.promptText.match(/stands for (\d+)/)[1]);
   const asked = q.display.promptText.match(/How many (\w+)/)[1];
-  const row = q.display.promptText.match(new RegExp(`${asked}: (●*)(◐?)`));
-  return row[1].length * key + (row[2] ? key / 2 : 0);
+  const row = q.display.rows.find((r) => r.label === asked);
+  if (!row) return undefined;
+  return row.symbols * q.display.keyValue + (row.half ? q.display.keyValue / 2 : 0);
 }
 
 // --- the tests --------------------------------------------------------------

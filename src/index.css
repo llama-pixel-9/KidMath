@@ -73,6 +73,96 @@ body {
   animation: neon-shimmer 6s linear infinite;
 }
 
+/*
+ * Play-screen layout.
+ *
+ * The app was built phone-first and every pane was pinned to max-w-sm (384px),
+ * so a school laptop or an iPad rendered a narrow phone column down the middle:
+ * horizontal space wasted, and question card + figure + number pad taller than
+ * the viewport, so the answer keys fell off the bottom of the screen.
+ *
+ * The constraint that matters is HEIGHT, not width — a 1366x768 laptop and a
+ * 1024x768 iPad in landscape are both short. So the two panes go side by side
+ * when the viewport is wide AND short, and stay stacked when there is height to
+ * stack into (phones, tablets held in portrait). Width alone would flip tall
+ * 1024px-wide portrait tablets into a side-by-side they do not need.
+ */
+.play-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.play-pane {
+  width: 100%;
+  max-width: 24rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Roomier panes once there is width for them, still stacked. */
+@media (min-width: 640px) {
+  .play-pane {
+    max-width: 28rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-height: 900px) {
+  .play-area {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 68rem;
+    margin: 0 auto;
+  }
+
+  .play-pane {
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 30rem;
+  }
+}
+
+/*
+ * Digit-pad sizing, shared by NumberPad and FigureDigitPad.
+ *
+ * Fixed 80px keys plus a fixed 72px entry display made the pad 532px tall, which
+ * is most of a laptop's usable height on its own — the pad is four rows, so
+ * every pixel of key height costs four. Height scales with the viewport instead
+ * and bottoms out at 52px, comfortably above the 44px minimum touch target, so
+ * keys stay tappable on the smallest screen and get BIGGER than the old fixed
+ * size on a tall iPad.
+ */
+.pad-key {
+  min-height: clamp(52px, 7.2vh, 80px);
+}
+
+.pad-display {
+  min-height: clamp(52px, 7vh, 72px);
+}
+
+/*
+ * The progress ring is a fixed 96px plus padding at the top of every mode —
+ * pure overhead competing with the question for a short screen's height. It
+ * shrinks where height is scarce and stays full size where it is not.
+ */
+.progress-ring {
+  width: 6rem;
+  height: 6rem;
+}
+
+@media (max-height: 820px) {
+  .progress-ring {
+    width: 4.25rem;
+    height: 4.25rem;
+  }
+}
+
 @media print {
   .no-print {
     display: none !important;

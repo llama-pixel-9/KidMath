@@ -106,7 +106,7 @@ export default function TenFrame({
     feedback === "correct" ? "ring-4 ring-green-400" : feedback === "wrong" ? "ring-4 ring-red-400" : "";
 
   return (
-    <section className="w-full max-w-sm flex flex-col items-center gap-3" aria-label="Ten frame">
+    <section className="w-full flex flex-col items-center gap-3" aria-label="Ten frame">
       <div className={`relative flex flex-col items-center gap-2 rounded-2xl p-2 ${ring}`}>
         {frameEls}
         {feedback === "correct" && !lowMotionMode && (

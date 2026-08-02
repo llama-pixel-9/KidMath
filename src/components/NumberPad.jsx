@@ -30,9 +30,9 @@ export default function NumberPad({ onSubmit, feedback, theme, lowMotionMode, lo
         ? "ring-4 ring-red-400 text-red-500"
         : theme.textPrimary;
 
-  const keyClass = `relative min-h-[80px] rounded-2xl ${theme.cardBg} shadow-lg text-3xl font-extrabold ${theme.textPrimary} cursor-pointer select-none disabled:opacity-40`;
+  const keyClass = `relative pad-key rounded-2xl ${theme.cardBg} shadow-lg text-3xl font-extrabold ${theme.textPrimary} cursor-pointer select-none disabled:opacity-40`;
   const goClass =
-    "relative min-h-[80px] rounded-2xl bg-gradient-to-br from-emerald-400 to-green-500 text-white text-2xl font-extrabold shadow-lg cursor-pointer select-none disabled:opacity-40";
+    "relative pad-key rounded-2xl bg-gradient-to-br from-emerald-400 to-green-500 text-white text-2xl font-extrabold shadow-lg cursor-pointer select-none disabled:opacity-40";
   const goBtn = (
     <motion.button
       className={goClass}
@@ -47,9 +47,9 @@ export default function NumberPad({ onSubmit, feedback, theme, lowMotionMode, lo
   );
 
   return (
-    <section className="w-full max-w-sm flex flex-col items-center gap-3" aria-label="Number entry">
+    <section className="w-full flex flex-col items-center gap-3" aria-label="Number entry">
       <div
-        className={`relative w-full min-h-[72px] rounded-3xl ${theme.cardBg} shadow-inner flex items-center justify-center text-4xl font-extrabold ${displayTone}`}
+        className={`relative w-full pad-display rounded-3xl ${theme.cardBg} shadow-inner flex items-center justify-center text-4xl font-extrabold ${displayTone}`}
         aria-live="polite"
       >
         {entry === "" ? <span className={theme.textMuted}>—</span> : entry}

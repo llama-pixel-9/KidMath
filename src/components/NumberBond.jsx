@@ -27,7 +27,7 @@ export default function NumberBond({ onSubmit, feedback, theme, lowMotionMode, l
   const keyClass = `relative min-h-[64px] rounded-2xl ${theme.cardBg} shadow-lg text-2xl font-extrabold ${theme.textPrimary} cursor-pointer select-none disabled:opacity-40`;
 
   return (
-    <section className="w-full max-w-sm flex flex-col items-center gap-3" aria-label="Number bond">
+    <section className="w-full flex flex-col items-center gap-3" aria-label="Number bond">
       <div className="relative flex flex-col items-center">
         <div className={`${circle} ${theme.cardBg} ${theme.textPrimary}`}>{whole}</div>
         <svg width="140" height="34" className="my-1" aria-hidden="true">

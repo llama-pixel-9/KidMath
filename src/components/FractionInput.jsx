@@ -36,7 +36,7 @@ export default function FractionInput({ onSubmit, feedback, theme, lowMotionMode
   const keyClass = `relative min-h-[72px] rounded-2xl ${theme.cardBg} shadow-lg text-3xl font-extrabold ${theme.textPrimary} cursor-pointer select-none disabled:opacity-40`;
 
   return (
-    <section className="w-full max-w-sm flex flex-col items-center gap-3" aria-label="Fraction entry">
+    <section className="w-full flex flex-col items-center gap-3" aria-label="Fraction entry">
       <div
         className={`relative flex flex-col items-center ${tone}`}
         aria-live="polite"

@@ -26,7 +26,7 @@ export default function FractionSet({ onSubmit, feedback, theme, lowMotionMode, 
     feedback === "correct" ? "text-green-600" : feedback === "wrong" ? "text-red-500" : theme.textPrimary;
 
   return (
-    <section className="w-full max-w-sm flex flex-col items-center gap-3" aria-label="Fraction of a set">
+    <section className="w-full flex flex-col items-center gap-3" aria-label="Fraction of a set">
       <div className="relative w-full flex flex-wrap justify-center gap-2">
         {Array.from({ length: den }, (_, g) => (
           <div key={g} className={`flex flex-wrap gap-1 p-2 rounded-xl ${theme.cardBg} shadow-inner`} style={{ maxWidth: "46%" }}>

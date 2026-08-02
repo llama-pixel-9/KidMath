@@ -69,7 +69,7 @@ import {
 } from "./userPreferences";
 import ConfettiBurst from "./components/ConfettiBurst.jsx";
 import { getWidget } from "./components/widgetRegistry.js";
-import BarChart from "./components/BarChart.jsx";
+import { getFigure } from "./components/figureRegistry.js";
 
 const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork, BarChart3, CircleDot, Sigma, Ruler, Coins, Spline, Scale, Clock, ChartColumn, Triangle, Shapes };
 
@@ -162,8 +162,8 @@ function CircularProgress({ current, total, level }) {
 
   return (
     <section className="flex items-center justify-center gap-3 py-2 px-4" aria-label="Progress">
-      <div className="relative w-24 h-24 flex-shrink-0">
-        <svg className="w-24 h-24 -rotate-90" viewBox="0 0 96 96">
+      <div className="relative progress-ring flex-shrink-0">
+        <svg className="w-full h-full -rotate-90" viewBox="0 0 96 96">
           <circle
             cx="48" cy="48" r={radius}
             fill="none"
@@ -587,12 +587,16 @@ function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
   const promptText = q.display?.promptText;
   const hasVerbalPrompt = promptText && isVerbalPrompt(promptText);
 
-  // A chart the question asks about, answered through another widget (choice,
-  // multiSelect). When the answer widget IS the graph, it draws its own chart.
-  if (q.display?.bars && q.answerType !== "barGraph") {
+  // A figure the question asks ABOUT — bar graph, pictograph, tally, line plot
+  // — answered through some other widget (choice, number pad, multiSelect).
+  // Widgets that draw their own figure are excluded by the registry.
+  const figure = getFigure(q);
+  if (figure) {
+    const { Component: Figure, props } = figure;
+    const settled = feedback === "correct" || feedback === "wrong";
     return (
       <div className="text-center space-y-3">
-        <BarChart bars={q.display.bars} theme={theme} />
+        <Figure theme={theme} {...(props ? props(q, { settled }) : {})} />
         {promptText && (
           <p className={`text-2xl sm:text-3xl font-extrabold ${theme.textPrimary} leading-snug`}>
             {promptText}
@@ -1085,7 +1089,7 @@ export default function MathExplorer({ initialMode }) {
 
   return (
     <MotionConfig reducedMotion={lowMotionMode ? "always" : "never"}>
-      <main className={`min-h-screen ${theme.bg} flex flex-col transition-colors duration-300`}>
+      <main className={`flex-1 ${theme.bg} flex flex-col transition-colors duration-300`}>
       <header className="no-print flex items-center justify-between px-4 py-3">
         <div className="flex items-center gap-2">
           <div className={`${modeColor} p-2 rounded-xl`}>
@@ -1137,11 +1141,13 @@ export default function MathExplorer({ initialMode }) {
         </motion.div>
       )}
 
-      <div className="flex-1 flex flex-col items-center justify-center px-4 gap-6">
+      <div className="flex-1 flex flex-col items-center justify-center px-4 gap-4">
+        <div className="play-area">
+        <div className="play-pane">
         <AnimatePresence mode="wait">
           <motion.section
             key={questionKeyRef.current}
-            className={`${theme.cardBg} backdrop-blur rounded-3xl shadow-lg p-6 sm:p-8 w-full max-w-sm`}
+            className={`${theme.cardBg} backdrop-blur rounded-3xl shadow-lg p-5 sm:p-8 w-full`}
             initial={{ opacity: 0, scale: 0.8, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: -20 }}
@@ -1156,7 +1162,9 @@ export default function MathExplorer({ initialMode }) {
             <QuestionDisplay question={currentQ} modeColor={modeColor} feedback={feedback} revealAnswer={revealAnswer} />
           </motion.section>
         </AnimatePresence>
+        </div>
 
+        <div className="play-pane">
         {getWidget(answerType) ? (
           (() => {
             const { Component, props } = getWidget(answerType);
@@ -1182,7 +1190,7 @@ export default function MathExplorer({ initialMode }) {
             );
           })()
         ) : (
-        <section className="grid grid-cols-2 gap-3 w-full max-w-sm" aria-label="Answer choices">
+        <section className="grid grid-cols-2 gap-3 w-full" aria-label="Answer choices">
           {(currentQ.choices || []).map((choice, i) => {
             const isCorrectChoice = feedback === "correct" && choice === currentQ.answer;
             const isRevealedCorrect = feedback === "wrong" && choice === revealAnswer;
@@ -1190,7 +1198,17 @@ export default function MathExplorer({ initialMode }) {
             return (
               <motion.button
                 key={`${questionKeyRef.current}-${choice}`}
-                className={`relative min-h-[80px] min-w-[80px] rounded-3xl bg-gradient-to-br ${theme.bubbleColors[i % theme.bubbleColors.length]} text-white text-3xl font-extrabold shadow-lg cursor-pointer select-none ${
+                // Choices are numbers in most modes but words in others
+                // ("Grapes", "a rectangle"), and a fixed text-3xl overflowed
+                // the bubble for those. Type scales with the answer's length,
+                // and long words wrap instead of spilling.
+                className={`relative min-h-[72px] sm:min-h-[80px] px-3 py-2 rounded-3xl bg-gradient-to-br ${theme.bubbleColors[i % theme.bubbleColors.length]} text-white font-extrabold shadow-lg cursor-pointer select-none leading-tight break-words ${
+                  String(choice).length > 8
+                    ? "text-lg sm:text-xl"
+                    : String(choice).length > 4
+                      ? "text-xl sm:text-2xl"
+                      : "text-2xl sm:text-3xl"
+                } ${
                   isCorrectChoice || isRevealedCorrect ? "ring-4 ring-green-400" : ""
                 } ${isWrong ? "ring-4 ring-red-400" : ""}`}
                 whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
@@ -1217,6 +1235,8 @@ export default function MathExplorer({ initialMode }) {
           })}
         </section>
         )}
+        </div>
+        </div>
 
         {feedback === "wrong" && revealAnswer !== null && (
           <motion.p

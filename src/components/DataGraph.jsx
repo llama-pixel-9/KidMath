@@ -10,9 +10,11 @@ export default function DataGraph({ onSubmit, feedback, theme, lowMotionMode, lo
   const locked = feedback === "correct" || feedback === "wrong";
   const tone = feedback === "correct" ? "text-green-600" : feedback === "wrong" ? "text-red-500" : theme.textPrimary;
   return (
-    <section className="w-full max-w-sm flex flex-col items-center gap-3" aria-label="Bar graph">
+    <section className="w-full flex flex-col items-center gap-3" aria-label="Bar graph">
       <div className="relative w-full">
-        <BarChart bars={bars} theme={theme} />
+        {/* Values appear only once the answer is settled: until then the child
+            reads the bar against the axis, which is the point of the item. */}
+        <BarChart bars={bars} theme={theme} showValues={locked} />
         {feedback === "correct" && !lowMotionMode && (
           <ConfettiBurst intensity={lowEndDevice ? "light" : "normal"} />
         )}

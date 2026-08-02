@@ -14,7 +14,7 @@ export default function AngleFigure({ onSubmit, feedback, theme, lowMotionMode, 
   const end = { x: cx + len * Math.cos(rad), y: cy - len * Math.sin(rad) };
   const tone = feedback === "correct" ? "text-green-600" : feedback === "wrong" ? "text-red-500" : theme.textPrimary;
   return (
-    <section className="w-full max-w-sm flex flex-col items-center gap-3" aria-label="Angle figure">
+    <section className="w-full flex flex-col items-center gap-3" aria-label="Angle figure">
       <div className="relative">
         <svg width="160" height="140" viewBox="0 0 160 140" role="img" aria-label={`angle of ${degrees} degrees`}>
           <line x1={cx} y1={cy} x2={cx + len} y2={cy} className="stroke-slate-600" strokeWidth="4" strokeLinecap="round" />

@@ -68,7 +68,7 @@ export default function BarModel({ onSubmit, feedback, theme, lowMotionMode, low
   }
 
   return (
-    <section className="w-full max-w-sm flex flex-col items-center gap-3" aria-label="Bar model">
+    <section className="w-full flex flex-col items-center gap-3" aria-label="Bar model">
       <div
         className={`relative w-full ${
           feedback === "correct" ? "text-green-600" : feedback === "wrong" ? "text-red-500" : ""

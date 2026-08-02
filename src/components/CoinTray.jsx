@@ -97,7 +97,7 @@ export default function CoinTray({
   };
 
   return (
-    <section className="flex flex-col items-center gap-4 w-full max-w-sm" aria-label="Coins">
+    <section className="flex flex-col items-center gap-4 w-full" aria-label="Coins">
       <div
         className={`flex flex-wrap items-center justify-center gap-2 p-4 rounded-3xl w-full ${theme?.cardBg || "bg-white/80"} ${feedbackRing(feedback)}`}
       >

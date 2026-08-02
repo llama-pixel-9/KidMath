@@ -21,7 +21,14 @@ describe("adaptive session engine", () => {
   it("tracks mastery by subskill for answered questions", () => {
     const session = createAdaptiveSession("addition", 5);
     const { question } = getNextQuestion(session);
-    const result = recordAnswer(session, question, question.answer, 1000, false);
+    // multiSelect answers may be a list of acceptable selections (a list of
+    // lists) — q.answer itself is not a valid submission; submit answer[0],
+    // mirroring the session loop. The unseeded draw occasionally lands on
+    // such an item, which made this test flaky.
+    const submission = Array.isArray(question.answer) && Array.isArray(question.answer[0])
+      ? question.answer[0]
+      : question.answer;
+    const result = recordAnswer(session, question, submission, 1000, false);
     const subskill = question.metadata.subskill;
     expect(result.session.skillMastery[subskill].attempts).toBe(1);
     expect(result.session.skillMastery[subskill].correct).toBe(1);

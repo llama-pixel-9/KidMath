@@ -55,7 +55,7 @@ export default function LinePlot({ points, axisLabel, theme }) {
                 y={axisY - 9 - m * MARK_STEP}
                 textAnchor="middle"
                 fontSize="14"
-                className="font-extrabold fill-violet-400"
+                className="font-extrabold fill-teal"
                 stroke="none"
               >
                 ✕

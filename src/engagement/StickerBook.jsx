@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Star, X } from "lucide-react";
+import Feather from "../components/feather.jsx";
 import { useTheme } from "../useTheme.js";
 import { STICKERS } from "./stickers.js";
 import { BADGES } from "./badges.js";
@@ -51,12 +51,12 @@ export default function StickerBook({ open, onClose }) {
               onClick={onClose}
               aria-label="Close sticker book"
             >
-              <X className="h-5 w-5" />
+              <Feather name="close" size={20} className="h-5 w-5" />
             </button>
           </div>
           <p className={`text-sm ${theme.textSecondary} mb-4 flex items-center gap-1`}>
             You have
-            <Star className="h-4 w-4 text-yellow-500 fill-yellow-400" />
+            <span className="inline-block w-3 h-3 bg-sun rotate-45 rounded-[2.5px]" aria-hidden="true" />
             <span className="font-extrabold">{balance}</span>
             stars to spend. Earn more by playing!
           </p>

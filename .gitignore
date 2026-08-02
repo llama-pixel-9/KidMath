@@ -40,3 +40,6 @@ ios/**/xcuserdata/
 ios/DerivedData/
 ios/.build/
 ios/build/
+
+# Curriculum reference library payloads (see resources/README.md)
+resources/**/*.pdf

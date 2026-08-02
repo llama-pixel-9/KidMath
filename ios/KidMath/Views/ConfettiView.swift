@@ -5,9 +5,9 @@ import SwiftUI
 struct ConfettiView: View {
     @State private var fired = false
 
+    // Brand confetti (§11): Sun / Seafoam / Sun Light / Apricot only.
     private static let colors: [Color] = [
-        Color(hex: 0xFACC15), Color(hex: 0xF472B6), Color(hex: 0x38BDF8),
-        Color(hex: 0xA3E635), Color(hex: 0xA78BFA), Color(hex: 0xFB923C),
+        Theme.sun, Theme.seafoam, Theme.sunLight, Theme.apricot,
     ]
 
     private struct Particle: Identifiable {

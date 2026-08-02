@@ -13,3 +13,10 @@ enum SupabaseConfig {
     /// Supabase dashboard).
     static let authRedirectURL = URL(string: "kidmath://auth-callback")!
 }
+
+enum AppLinks {
+    /// ⚠️ Set to the production web domain before App Store submission —
+    /// this exact URL also goes in the App Store Connect listing's
+    /// privacy-policy field. The /privacy route exists on the web app.
+    static let privacyPolicy = URL(string: "https://kidmath.vercel.app/privacy")!
+}

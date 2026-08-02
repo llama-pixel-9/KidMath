@@ -258,11 +258,25 @@ describe("M4 — every generated item is well formed", () => {
  * One checker per variety. Each is handed the rendered prompt and must decide
  * correctness from that text alone, never from the question payload.
  */
+/**
+ * Converted-to-choice items: no distractor may be VALUE-equal to the answer,
+ * or a mathematically right pick gets marked wrong by string comparison.
+ */
+function expectCleanChoices(q) {
+  const answer = parseFrac(q.answer);
+  for (const choice of q.choices) {
+    if (choice === q.answer) continue;
+    const frac = parseFrac(choice);
+    if (frac) expect(fracEq(frac, answer), `${choice} equals ${q.answer}`).toBe(false);
+  }
+}
+
 const FRACTION_CHECKS = {
   partWholeAreaName(q) {
     const [den, num] = numbersIn(q.display.promptText);
-    expect(fracEq(q.answer, { num, den })).toBe(true);
+    expect(fracEq(parseFrac(q.answer), { num, den })).toBe(true);
     expect(num).toBeLessThan(den);
+    expectCleanChoices(q);
   },
   equalPartsCheck(q) {
     const notEqual = /not the same size/.test(q.display.promptText);
@@ -270,11 +284,13 @@ const FRACTION_CHECKS = {
   },
   partWholeSetName(q) {
     const [total, part] = numbersIn(q.display.promptText);
-    expect(fracEq(q.answer, { num: part, den: total })).toBe(true);
+    expect(fracEq(parseFrac(q.answer), { num: part, den: total })).toBe(true);
+    expectCleanChoices(q);
   },
   unitFractionMeaning(q) {
     const [den] = numbersIn(q.display.promptText);
-    expect(fracEq(q.answer, { num: 1, den })).toBe(true);
+    expect(fracEq(parseFrac(q.answer), { num: 1, den })).toBe(true);
+    expectCleanChoices(q);
   },
   fractionOnNumberLine(q) {
     const [frac] = fractionsIn(q.display.promptText);
@@ -292,7 +308,8 @@ const FRACTION_CHECKS = {
       text.match(/in (\w+)\./)[1]
     ];
     const k = Number(text.match(/(\d+)(?:st|nd|rd|th) tick/)[1]);
-    expect(fracEq(q.answer, { num: k, den })).toBe(true);
+    expect(fracEq(parseFrac(q.answer), { num: k, den })).toBe(true);
+    expectCleanChoices(q);
   },
   equivalenceGenerate(q) {
     const base = fractionsIn(q.display.promptText)[0];
@@ -305,11 +322,13 @@ const FRACTION_CHECKS = {
   },
   equivalenceSimplify(q) {
     const shown = fractionsIn(q.display.promptText)[0];
-    expect(fracEq(q.answer, shown)).toBe(true);
+    const answer = parseFrac(q.answer);
+    expect(fracEq(answer, shown)).toBe(true);
     // Simplest form: no common factor above 1.
-    let [x, y] = [q.answer.num, q.answer.den];
+    let [x, y] = [answer.num, answer.den];
     while (y) [x, y] = [y, x % y];
     expect(x).toBe(1);
+    expectCleanChoices(q);
   },
   equivalenceMultiSelect(q) {
     const base = fractionsIn(q.display.promptText)[0];
@@ -368,15 +387,18 @@ const FRACTION_CHECKS = {
   addLikeDenominators(q) {
     const [a, b] = fractionsIn(q.display.promptText);
     expect(a.den).toBe(b.den);
-    expect(fracEq(q.answer, { num: a.num + b.num, den: a.den })).toBe(true);
+    const answer = parseFrac(q.answer);
+    expect(fracEq(answer, { num: a.num + b.num, den: a.den })).toBe(true);
     // `denominatorAdd` — the classic wrong answer must not be the right one.
-    expect(fracEq(q.answer, { num: a.num + b.num, den: a.den + b.den })).toBe(false);
+    expect(fracEq(answer, { num: a.num + b.num, den: a.den + b.den })).toBe(false);
+    expectCleanChoices(q);
   },
   subtractLikeDenominators(q) {
     const [a, b] = fractionsIn(q.display.promptText);
     expect(a.den).toBe(b.den);
     expect(a.num).toBeGreaterThan(b.num);
-    expect(fracEq(q.answer, { num: a.num - b.num, den: a.den })).toBe(true);
+    expect(fracEq(parseFrac(q.answer), { num: a.num - b.num, den: a.den })).toBe(true);
+    expectCleanChoices(q);
   },
   addLikeTrueFalse(q) {
     const [a, b, claimed] = fractionsIn(q.display.promptText);
@@ -499,8 +521,14 @@ describe("decimals — answers recomputed from the rendered prompt", () => {
         } else if (id === "decimalToFraction") {
           const value = nums[0];
           const den = nums[nums.length - 1];
-          expect(q.answer.num * 1).toBe(Math.round(value * den));
-          expect(q.answer.den).toBe(den);
+          const answer = parseFrac(q.answer);
+          expect(answer.num).toBe(Math.round(value * den));
+          expect(answer.den).toBe(den);
+          for (const choice of q.choices) {
+            if (choice === q.answer) continue;
+            const frac = parseFrac(choice);
+            if (frac) expect(fracEq(frac, answer), `${choice} equals ${q.answer}`).toBe(false);
+          }
         } else if (id === "compareDecimals") {
           const [a, b] = text.match(/Compare: (\d+(?:\.\d+)?) \? (\d+(?:\.\d+)?)/).slice(1).map(Number);
           expect(q.answer).toBe(a > b ? ">" : a < b ? "<" : "=");

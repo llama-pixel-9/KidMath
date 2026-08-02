@@ -81,10 +81,17 @@ final class EngineBridgeTests: XCTestCase {
         var answered = 0
         while try !bridge.isSessionComplete(session) {
             let (question, isRetry) = try bridge.nextQuestion(in: session)
+            // multiSelect answers may be a list of acceptable selections (a
+            // list of lists) — q.answer itself is not a valid submission;
+            // submit answer[0], mirroring the web session loop.
+            var submission = question["answer"]!
+            if let list = submission as? [Any], let first = list.first, first is [Any] {
+                submission = first
+            }
             let outcome = try bridge.recordAnswer(
                 in: session,
                 question: question,
-                answer: question["answer"]!,
+                answer: submission,
                 responseTimeMs: 1500,
                 wasRetry: isRetry
             )

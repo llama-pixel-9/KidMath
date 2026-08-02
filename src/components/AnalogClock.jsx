@@ -24,7 +24,7 @@ export default function AnalogClock({ onSubmit, feedback, theme, lowMotionMode, 
   const hh = clockHand(cx, cy, 40, hourAngle);
   const keyClass = `relative min-h-[60px] rounded-2xl ${theme.cardBg} shadow-lg text-2xl font-extrabold ${theme.textPrimary} cursor-pointer select-none disabled:opacity-40`;
   const displayTone =
-    feedback === "correct" ? "text-green-600" : feedback === "wrong" ? "text-red-500" : theme.textPrimary;
+    feedback === "correct" ? "text-deep-teal" : feedback === "wrong" ? "text-ember" : theme.textPrimary;
 
   return (
     <section className="w-full flex flex-col items-center gap-3" aria-label="Clock">
@@ -79,7 +79,7 @@ export default function AnalogClock({ onSubmit, feedback, theme, lowMotionMode, 
           0
         </motion.button>
         <motion.button
-          className="relative min-h-[60px] rounded-2xl bg-gradient-to-br from-emerald-400 to-green-500 text-white text-xl font-extrabold shadow-lg cursor-pointer select-none disabled:opacity-40"
+          className="relative min-h-[60px] rounded-[18px] bg-teal text-cream text-xl font-display font-semibold shadow-[0_5px_0_#064A41] btn-press cursor-pointer select-none disabled:opacity-40"
           whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
           whileTap={{ scale: 0.9 }}
           onClick={submit}

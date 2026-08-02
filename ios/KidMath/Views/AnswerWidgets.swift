@@ -19,22 +19,26 @@ struct ChoiceWidget: View {
     var body: some View {
         LazyVGrid(columns: columns, spacing: 12) {
             ForEach(Array(choices.enumerated()), id: \.offset) { index, choice in
+                // Binary pairs use Seafoam and Apricot at equal visual
+                // weight (§08) — color never hints at the answer.
+                let tintIndex = choices.count == 2 ? index * 2 : index
                 Button {
                     submit(choice)
                 } label: {
                     Text(AnswerFormatting.text(choice))
                         .font(.system(size: 28, weight: .bold, design: .rounded))
                         .minimumScaleFactor(0.4)
-                        .frame(maxWidth: .infinity, minHeight: 68)
+                        .frame(maxWidth: .infinity, minHeight: 72)
                         .background(
-                            RoundedRectangle(cornerRadius: 20).fill(
-                                LinearGradient(
-                                    colors: theme.bubbleGradients[index % theme.bubbleGradients.count],
-                                    startPoint: .topLeading, endPoint: .bottomTrailing
-                                )
-                            )
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(theme.bubbleEdges[tintIndex % theme.bubbleEdges.count])
+                                .offset(y: 5)
                         )
-                        .foregroundStyle(.white)
+                        .background(
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(theme.bubbleGradients[tintIndex % theme.bubbleGradients.count][0])
+                        )
+                        .foregroundStyle(Theme.ink)
                 }
                 .buttonStyle(SpringButtonStyle())
             }
@@ -101,11 +105,9 @@ struct NumberPadWidget: View {
                     .font(.title3.weight(.heavy))
                     .fontDesign(.rounded)
                     .frame(maxWidth: .infinity, minHeight: 52)
-                    .background(
-                        RoundedRectangle(cornerRadius: 16)
-                            .fill(LinearGradient(colors: theme.ctaGradient, startPoint: .leading, endPoint: .trailing))
-                    )
-                    .foregroundStyle(.white)
+                    .background(RoundedRectangle(cornerRadius: 16).fill(Theme.deepTeal).offset(y: 4))
+                    .background(RoundedRectangle(cornerRadius: 16).fill(Theme.teal))
+                    .foregroundStyle(Theme.cream)
                     .opacity(Double(entry) == nil ? 0.4 : 1)
             }
             .disabled(Double(entry) == nil)
@@ -137,6 +139,8 @@ struct SymbolSelectWidget: View {
     let submit: (Any) -> Void
 
     var body: some View {
+        // Fixed order < = > matching the number line; two tints, not three —
+        // < and > share Seafoam (the same operation mirrored), = is Apricot.
         HStack(spacing: 14) {
             ForEach(["<", "=", ">"], id: \.self) { symbol in
                 Button {
@@ -144,9 +148,17 @@ struct SymbolSelectWidget: View {
                 } label: {
                     Text(symbol)
                         .font(.system(size: 40, weight: .heavy, design: .rounded))
-                        .frame(width: 88, height: 76)
-                        .background(RoundedRectangle(cornerRadius: 20).fill(theme.modeColor("comparing")))
-                        .foregroundStyle(.white)
+                        .frame(width: 96, height: 72)
+                        .background(
+                            RoundedRectangle(cornerRadius: 16)
+                                .fill(symbol == "=" ? Theme.apricotDeep : Theme.seafoamDeep)
+                                .offset(y: 5)
+                        )
+                        .background(
+                            RoundedRectangle(cornerRadius: 16)
+                                .fill(symbol == "=" ? Theme.apricot : Theme.seafoam)
+                        )
+                        .foregroundStyle(Theme.ink)
                 }
                 .buttonStyle(SpringButtonStyle())
             }
@@ -186,9 +198,9 @@ struct MultiSelectWidget: View {
                             .frame(maxWidth: .infinity, minHeight: 56)
                             .background(
                                 RoundedRectangle(cornerRadius: 16)
-                                    .fill(selected.contains(index) ? theme.ctaGradient[1] : .white)
+                                    .fill(selected.contains(index) ? Theme.seafoam : .white)
                             )
-                            .foregroundStyle(selected.contains(index) ? .white : theme.textPrimary)
+                            .foregroundStyle(theme.textPrimary)
                     }
                     .buttonStyle(SpringButtonStyle())
                 }
@@ -203,11 +215,9 @@ struct MultiSelectWidget: View {
                     .font(.title3.weight(.heavy))
                     .fontDesign(.rounded)
                     .frame(maxWidth: .infinity, minHeight: 52)
-                    .background(
-                        RoundedRectangle(cornerRadius: 16)
-                            .fill(LinearGradient(colors: theme.ctaGradient, startPoint: .leading, endPoint: .trailing))
-                    )
-                    .foregroundStyle(.white)
+                    .background(RoundedRectangle(cornerRadius: 16).fill(Theme.deepTeal).offset(y: 4))
+                    .background(RoundedRectangle(cornerRadius: 16).fill(Theme.teal))
+                    .foregroundStyle(Theme.cream)
                     .opacity(selected.count == requiredCount ? 1 : 0.4)
             }
             .disabled(selected.count != requiredCount)

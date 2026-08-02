@@ -25,6 +25,12 @@ final class AppModel: ObservableObject {
         didSet { SoundPlayer.shared.isMuted = isMuted }
     }
 
+    /// Calm mode (brand §12): drops confetti, card shake, and pop scaling.
+    /// It never disables the star or the level bar.
+    @Published var calmMode: Bool = UserDefaults.standard.bool(forKey: "kidmath-calm-mode") {
+        didSet { UserDefaults.standard.set(calmMode, forKey: "kidmath-calm-mode") }
+    }
+
     init() {
         supabase = .shared
         let isTestHost = ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil

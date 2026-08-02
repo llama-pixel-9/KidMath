@@ -30,22 +30,44 @@ struct SessionView: View {
             theme.background.ignoresSafeArea()
             switch viewModel.phase {
             case .loading:
-                ProgressView().controlSize(.large)
+                // Nesting (§16): a skeleton in the question card's shape —
+                // no spinner, no layout jump when the question lands.
+                skeletonCard
             case .question, .feedback:
                 playArea
             case .complete(let stars, let lifetime):
                 SessionCompleteView(
                     mode: mode,
                     starsEarned: stars,
+                    totalQuestions: viewModel.sessionSize,
                     lifetimeStars: lifetime,
                     playAgain: { Task { await viewModel.start() } },
                     goHome: { finish() }
                 )
             case .failed(let message):
-                VStack(spacing: 12) {
-                    Text("Something went wrong").font(.headline)
-                    Text(message).font(.footnote).foregroundStyle(theme.textMuted)
-                    Button("Back") { finish() }.buttonStyle(.borderedProminent)
+                // §16 error layout: mark, one Fredoka line, one plain line,
+                // one obvious teal button. No codes, no apology paragraph.
+                VStack(spacing: 14) {
+                    LarkMarkView().frame(width: 64)
+                    Text("That one flew off.")
+                        .font(theme.displayFont(size: 24))
+                        .foregroundStyle(Theme.ink)
+                    Text(message)
+                        .font(.footnote)
+                        .foregroundStyle(theme.textMuted)
+                        .multilineTextAlignment(.center)
+                    Button {
+                        Task { await viewModel.start() }
+                    } label: {
+                        Text("Try again")
+                            .font(theme.displayFont(size: 18))
+                            .padding(.horizontal, 36)
+                            .frame(minHeight: 52)
+                            .background(RoundedRectangle(cornerRadius: 16).fill(Theme.deepTeal).offset(y: 4))
+                            .background(RoundedRectangle(cornerRadius: 16).fill(Theme.teal))
+                            .foregroundStyle(Theme.cream)
+                    }
+                    .buttonStyle(SpringButtonStyle())
                 }
                 .padding()
             }
@@ -55,6 +77,28 @@ struct SessionView: View {
             }
         }
         .task { await viewModel.start() }
+    }
+
+    private var skeletonCard: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            RoundedRectangle(cornerRadius: 8).fill(Theme.ink.opacity(0.06))
+                .frame(height: 22)
+                .frame(maxWidth: 200)
+            RoundedRectangle(cornerRadius: 10).fill(Theme.ink.opacity(0.08))
+                .frame(height: 38)
+            HStack(spacing: 10) {
+                RoundedRectangle(cornerRadius: 10).fill(Theme.ink.opacity(0.06)).frame(height: 34)
+                RoundedRectangle(cornerRadius: 10).fill(Theme.ink.opacity(0.06)).frame(height: 34)
+            }
+        }
+        .padding(28)
+        .frame(maxWidth: 400)
+        .background(
+            RoundedRectangle(cornerRadius: 28)
+                .fill(theme.cardBackground)
+                .shadow(color: Theme.ink.opacity(0.06), radius: 0, y: 6)
+        )
+        .padding(.horizontal)
     }
 
     private func finish() {
@@ -90,16 +134,15 @@ struct SessionView: View {
             Button {
                 finish()
             } label: {
-                Image(systemName: "xmark")
-                    .font(.headline)
-                    .foregroundStyle(theme.textSecondary)
-                    .padding(10)
+                FeatherIcon(glyph: .close, size: 18, color: Theme.ink)
+                    .padding(12)
                     .background(Circle().fill(theme.cardBackground))
+                    .accessibilityLabel("close")
             }
 
             GeometryReader { proxy in
                 ZStack(alignment: .leading) {
-                    Capsule().fill(.white)
+                    Capsule().fill(theme.progressTrack)
                     Capsule()
                         .fill(LinearGradient(colors: theme.progressFill, startPoint: .leading, endPoint: .trailing))
                         .frame(width: max(12, proxy.size.width * viewModel.progressFraction))
@@ -109,9 +152,12 @@ struct SessionView: View {
             .frame(height: 14)
 
             if viewModel.streak >= 3 {
-                Label("\(viewModel.streak)", systemImage: "bolt.fill")
-                    .font(.subheadline.weight(.heavy))
-                    .foregroundStyle(Color(red: 0.984, green: 0.573, blue: 0.235))
+                HStack(spacing: 4) {
+                    FeatherIcon(glyph: .streak, size: 16, color: Theme.sun)
+                    Text("\(viewModel.streak)")
+                        .font(.subheadline.weight(.heavy))
+                        .foregroundStyle(Theme.ember)
+                }
             }
 
             Text("Lv \(viewModel.level)")
@@ -120,7 +166,7 @@ struct SessionView: View {
                 .padding(.horizontal, 10)
                 .padding(.vertical, 6)
                 .background(Capsule().fill(theme.modeColor(mode.id)))
-                .foregroundStyle(.white)
+                .foregroundStyle(Theme.ink)
         }
         .padding(.top, 8)
     }
@@ -129,7 +175,7 @@ struct SessionView: View {
         VStack(spacing: 10) {
             if viewModel.isRetry {
                 Text("Let's try this one again!")
-                    .font(.caption.weight(.bold))
+                    .font(theme.bodyFont(size: 12, weight: .bold))
                     .foregroundStyle(theme.textMuted)
                     .textCase(.uppercase)
             }
@@ -142,10 +188,10 @@ struct SessionView: View {
             RoundedRectangle(cornerRadius: 28)
                 .fill(theme.cardBackground)
                 .overlay(RoundedRectangle(cornerRadius: 28).stroke(borderColor, lineWidth: 3))
-                .shadow(color: .black.opacity(0.06), radius: 14, y: 6)
+                .shadow(color: Theme.ink.opacity(0.06), radius: 0, y: 6)
         )
         .overlay {
-            if feedbackState == true, !reduceMotion {
+            if feedbackState == true, !reduceMotion, !app.calmMode {
                 ConfettiView()
             }
         }
@@ -169,9 +215,16 @@ struct SessionView: View {
     private var feedbackLine: some View {
         switch feedbackState {
         case .some(true):
-            Label("Great job!", systemImage: "star.fill")
-                .font(.headline.weight(.heavy))
-                .foregroundStyle(theme.correct)
+            HStack(spacing: 8) {
+                Rectangle()
+                    .fill(Theme.sun)
+                    .frame(width: 12, height: 12)
+                    .rotationEffect(.degrees(45))
+                    .cornerRadius(2.5)
+                Text("Great job!")
+                    .font(.headline.weight(.heavy))
+                    .foregroundStyle(theme.correct)
+            }
         case .some(false):
             VStack(spacing: 2) {
                 Text("Not quite!")
@@ -179,7 +232,7 @@ struct SessionView: View {
                     .foregroundStyle(theme.wrong)
                 if let answer = viewModel.revealAnswer {
                     Text("The answer is \(AnswerFormatting.text(answer))")
-                        .font(.subheadline.weight(.semibold))
+                        .font(theme.bodyFont(size: 15, weight: .semibold))
                         .foregroundStyle(theme.textSecondary)
                 }
             }
@@ -237,15 +290,12 @@ struct SessionView: View {
     }
 
     private var levelUpBanner: some View {
-        Text("⭐️ Level up! ⭐️")
-            .font(.title.weight(.heavy))
-            .fontDesign(.rounded)
+        Text("You've fledged — level up!")
+            .font(theme.displayFont(size: 24))
             .padding(.horizontal, 28)
             .padding(.vertical, 16)
-            .background(
-                Capsule().fill(LinearGradient(colors: theme.ctaGradient, startPoint: .leading, endPoint: .trailing))
-            )
-            .foregroundStyle(.white)
+            .background(Capsule().fill(Theme.apricot))
+            .foregroundStyle(Theme.ink)
             .transition(.scale.combined(with: .opacity))
     }
 }

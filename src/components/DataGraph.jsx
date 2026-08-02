@@ -8,7 +8,7 @@ import FigureDigitPad from "./FigureDigitPad.jsx";
 export default function DataGraph({ onSubmit, feedback, theme, lowMotionMode, lowEndDevice, bars }) {
   const [entry, setEntry] = useState("");
   const locked = feedback === "correct" || feedback === "wrong";
-  const tone = feedback === "correct" ? "text-green-600" : feedback === "wrong" ? "text-red-500" : theme.textPrimary;
+  const tone = feedback === "correct" ? "text-deep-teal" : feedback === "wrong" ? "text-ember" : theme.textPrimary;
   return (
     <section className="w-full flex flex-col items-center gap-3" aria-label="Bar graph">
       <div className="relative w-full">

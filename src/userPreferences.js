@@ -85,3 +85,24 @@ export async function saveAllowWordProblems(userId, value) {
   writeLocalAllowWordProblems(value);
   if (userId) await upsertCloudAllowWordProblems(userId, value);
 }
+
+// Calm mode (brand spec §12): drops confetti, card shake, and pop scaling.
+// It never disables the star or the level bar. Local-only for now — it is a
+// device-level comfort setting, like the sound toggle.
+const CALM_MODE_KEY = "kidmath-calm-mode";
+
+export function loadCalmMode() {
+  try {
+    return localStorage.getItem(CALM_MODE_KEY) === "true";
+  } catch {
+    return false;
+  }
+}
+
+export function saveCalmMode(value) {
+  try {
+    localStorage.setItem(CALM_MODE_KEY, String(Boolean(value)));
+  } catch {
+    // ignore quota / access issues
+  }
+}

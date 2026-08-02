@@ -103,7 +103,7 @@ export default function TenFrame({
 
   const keyClass = `relative min-h-[56px] rounded-2xl ${theme.cardBg} shadow-lg text-2xl font-extrabold ${theme.textPrimary} cursor-pointer select-none disabled:opacity-40`;
   const ring =
-    feedback === "correct" ? "ring-4 ring-green-400" : feedback === "wrong" ? "ring-4 ring-red-400" : "";
+    feedback === "correct" ? "ring-4 ring-teal" : feedback === "wrong" ? "ring-4 ring-ember" : "";
 
   return (
     <section className="w-full flex flex-col items-center gap-3" aria-label="Ten frame">
@@ -116,7 +116,7 @@ export default function TenFrame({
 
       {mode === "build" ? (
         <motion.button
-          className="relative min-h-[56px] w-full rounded-2xl bg-gradient-to-br from-emerald-400 to-green-500 text-white text-xl font-extrabold shadow-lg cursor-pointer select-none disabled:opacity-40"
+          className="relative min-h-[56px] w-full rounded-[18px] bg-teal text-cream text-xl font-display font-semibold shadow-[0_5px_0_#064A41] btn-press cursor-pointer select-none disabled:opacity-40"
           whileHover={lowMotionMode ? undefined : { scale: 1.03 }}
           whileTap={{ scale: 0.95 }}
           onClick={submit}
@@ -157,7 +157,7 @@ export default function TenFrame({
             0
           </motion.button>
           <motion.button
-            className="relative min-h-[56px] rounded-2xl bg-gradient-to-br from-emerald-400 to-green-500 text-white text-xl font-extrabold shadow-lg cursor-pointer select-none disabled:opacity-40"
+            className="relative min-h-[56px] rounded-[18px] bg-teal text-cream text-xl font-display font-semibold shadow-[0_5px_0_#064A41] btn-press cursor-pointer select-none disabled:opacity-40"
             whileTap={{ scale: 0.9 }}
             onClick={submit}
             disabled={locked || entry === ""}

@@ -42,8 +42,8 @@ struct HomeView: View {
                     Button {
                         showSettings = true
                     } label: {
-                        Image(systemName: "gearshape.fill")
-                            .foregroundStyle(theme.textSecondary)
+                        FeatherIcon(glyph: .settings, size: 22, color: Theme.ink)
+                            .accessibilityLabel("settings")
                     }
                 }
             }
@@ -61,17 +61,29 @@ struct HomeView: View {
         }
     }
 
+    /// §14: one greeting line above the aviary — time of day, no exclamation
+    /// stacking, no streak pressure.
+    private var greeting: String {
+        let hour = Calendar.current.component(.hour, from: Date())
+        let dayPart = hour < 12 ? "Morning" : hour < 18 ? "Afternoon" : "Evening"
+        return "\(dayPart) — pick a game."
+    }
+
     private var hero: some View {
         VStack(alignment: .leading, spacing: 6) {
-            Text("KidMath")
-                .font(theme.displayFont(size: 38))
-                .minimumScaleFactor(0.5)
-                .lineLimit(1)
-                .foregroundStyle(
-                    LinearGradient(colors: theme.heroGradient, startPoint: .leading, endPoint: .trailing)
-                )
-            Text("Pick a math adventure!")
-                .font(.title3.weight(.medium))
+            // Mark + wordmark, always together. The wordmark is lowercase
+            // Fredoka 600 in Lark Teal — never a gradient.
+            HStack(spacing: 10) {
+                LarkMarkView()
+                    .frame(height: 34)
+                Text("larkit")
+                    .font(theme.displayFont(size: 38))
+                    .minimumScaleFactor(0.5)
+                    .lineLimit(1)
+                    .foregroundStyle(Theme.teal)
+            }
+            Text(greeting)
+                .font(theme.bodyFont(size: 19, weight: .semibold))
                 .foregroundStyle(theme.textSecondary)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -122,9 +134,8 @@ struct HomeView: View {
                     }
                 }
                 Text(mode.label)
-                    .font(.headline)
-                    .fontDesign(.rounded)
-                    .foregroundStyle(.white)
+                    .font(theme.displayFont(size: 16))
+                    .foregroundStyle(Theme.ink)
                     .lineLimit(2, reservesSpace: true)
                     .multilineTextAlignment(.leading)
             }
@@ -158,13 +169,12 @@ struct HomeView: View {
                         .lineLimit(1)
                         .foregroundStyle(theme.textPrimary)
                     Text("Generate kid-friendly practice sheets to print or share as PDF.")
-                        .font(.subheadline)
+                        .font(theme.bodyFont(size: 14))
                         .foregroundStyle(theme.textSecondary)
                         .multilineTextAlignment(.leading)
                 }
                 Spacer()
-                Image(systemName: "chevron.right")
-                    .foregroundStyle(theme.textMuted)
+                FeatherIcon(glyph: .next, size: 18, color: Theme.ink.opacity(0.5))
             }
             .padding(16)
             .background(RoundedRectangle(cornerRadius: 20).fill(theme.cardBackground))
@@ -177,8 +187,8 @@ struct HomeView: View {
             .font(.caption.weight(.bold))
             .padding(.horizontal, 8)
             .padding(.vertical, 4)
-            .background(Capsule().fill(.white.opacity(0.35)))
-            .foregroundStyle(.white)
+            .background(Capsule().fill(Theme.cream))
+            .foregroundStyle(Theme.ink)
     }
 
     private var soonBadge: some View {
@@ -186,8 +196,8 @@ struct HomeView: View {
             .font(.caption2.weight(.heavy))
             .padding(.horizontal, 7)
             .padding(.vertical, 3)
-            .background(Capsule().fill(.white.opacity(0.35)))
-            .foregroundStyle(.white)
+            .background(Capsule().fill(Theme.cream))
+            .foregroundStyle(Theme.ink)
     }
 
     /// Dev hooks: `simctl launch … com.kidmath.app -autostartMode addition`

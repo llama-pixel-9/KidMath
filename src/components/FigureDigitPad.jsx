@@ -37,7 +37,7 @@ export default function FigureDigitPad({ entry, onDigit, onBackspace, onSubmit, 
         0
       </motion.button>
       <motion.button
-        className="relative pad-key rounded-2xl bg-gradient-to-br from-emerald-400 to-green-500 text-white text-xl font-extrabold shadow-lg cursor-pointer select-none disabled:opacity-40"
+        className="relative pad-key rounded-[18px] bg-teal text-cream text-xl font-display font-semibold shadow-[0_5px_0_#064A41] btn-press cursor-pointer select-none disabled:opacity-40"
         whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
         whileTap={{ scale: 0.9 }}
         onClick={onSubmit}

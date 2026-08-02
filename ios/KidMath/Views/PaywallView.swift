@@ -66,7 +66,7 @@ struct PaywallView: View {
         VStack(spacing: 8) {
             Text("🌟")
                 .font(.system(size: 52))
-            Text("Unlock all of KidMath")
+            Text("Unlock all of larkit")
                 .font(theme.displayFont(size: 28))
                 .minimumScaleFactor(0.6)
                 .lineLimit(1)
@@ -137,22 +137,22 @@ struct PaywallView: View {
                     Text(tagline)
                         .font(.caption.weight(.heavy))
                         .kerning(1)
-                        .foregroundStyle(highlighted ? .white : theme.textMuted)
+                        .foregroundStyle(highlighted ? Theme.cream : theme.textMuted)
                 }
                 Text(detail)
                     .font(.title3.weight(.heavy))
                     .fontDesign(.rounded)
-                    .foregroundStyle(highlighted ? .white : theme.textPrimary)
+                    .foregroundStyle(highlighted ? Theme.cream : theme.textPrimary)
                 Text("14-day free trial, then auto-renews")
                     .font(.caption)
-                    .foregroundStyle(highlighted ? .white.opacity(0.85) : theme.textMuted)
+                    .foregroundStyle(highlighted ? Theme.cream.opacity(0.85) : theme.textMuted)
             }
             .padding(.vertical, 16)
             .frame(maxWidth: .infinity)
             .background(
                 RoundedRectangle(cornerRadius: 20).fill(
                     highlighted
-                        ? AnyShapeStyle(LinearGradient(colors: theme.ctaGradient, startPoint: .topLeading, endPoint: .bottomTrailing))
+                        ? AnyShapeStyle(Theme.teal)
                         : AnyShapeStyle(theme.cardBackground)
                 )
             )

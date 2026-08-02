@@ -60,7 +60,7 @@ export default function MultiSelect({
               onClick={() => toggle(value)}
               aria-pressed={on}
               className={`min-h-[72px] rounded-3xl text-2xl font-extrabold shadow-md cursor-pointer select-none
-                ${on ? "bg-gradient-to-br from-sky-400 to-violet-400 text-white" : `${theme?.cardBg || "bg-white/80"} ${theme?.textPrimary || "text-slate-700"}`}
+                ${on ? "bg-seafoam text-ink" : `${theme?.cardBg || "bg-white"} ${theme?.textPrimary || "text-ink"}`}
                 ${selectionClasses(on, feedback)}`}
               {...hoverMotion(lowMotionMode)}
               {...tapMotion(lowMotionMode)}

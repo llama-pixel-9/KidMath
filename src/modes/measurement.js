@@ -532,7 +532,7 @@ function selectVariety(level, context) {
 
 export default {
   id: "measurement",
-  label: "Measure Up!",
+  label: "Weigh Station",
   shortLabel: "Measurement",
   description: "Estimate, compare and convert measures.",
   icon: "Scale",

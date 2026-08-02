@@ -8,12 +8,15 @@ struct SettingsView: View {
     @Environment(\.theme) private var theme
     @Environment(\.dismiss) private var dismiss
     @State private var authMessage = ""
+    /// Kids category: account actions (which open sign-in flows) sit behind
+    /// the parental gate, like purchases.
+    @State private var accountUnlocked = false
+    @State private var showGate = false
 
     var body: some View {
         NavigationStack {
             List {
                 subscriptionSection
-                themeSection
                 soundSection
                 accountSection
                 engineSection
@@ -31,13 +34,13 @@ struct SettingsView: View {
     private var subscriptionSection: some View {
         Section("Subscription") {
             if app.store.hasPremium {
-                Label("KidMath Premium is active", systemImage: "star.circle.fill")
-                    .foregroundStyle(.green)
+                Label("larkit Premium is active", systemImage: "star.circle.fill")
+                    .foregroundStyle(Theme.teal)
                 Text("Manage or cancel in the App Store's Subscriptions settings.")
                     .font(.footnote)
                     .foregroundStyle(theme.textSecondary)
             } else {
-                Text("Free trial available — all 22 modes, worksheets, and sync.")
+                Text("Free trial available — all 22 modes, flight logs, and sync.")
                     .font(.footnote)
                     .foregroundStyle(theme.textSecondary)
                 Button("Restore purchases") {
@@ -47,40 +50,21 @@ struct SettingsView: View {
         }
     }
 
-    private var themeSection: some View {
-        Section("Theme") {
-            ForEach(Theme.all) { option in
-                Button {
-                    app.themeId = option.id
-                } label: {
-                    HStack(spacing: 12) {
-                        Text(option.emoji).font(.title2)
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text(option.label)
-                                .font(.headline)
-                                .foregroundStyle(.primary)
-                            Text(option.themeDescription)
-                                .font(.footnote)
-                                .foregroundStyle(.secondary)
-                        }
-                        Spacer()
-                        if app.themeId == option.id {
-                            Image(systemName: "checkmark.circle.fill")
-                                .foregroundStyle(.green)
-                        }
-                    }
-                }
-                .buttonStyle(.plain)
-            }
-        }
-    }
 
     private var soundSection: some View {
-        Section("Sound") {
+        Section("Sound & Motion") {
             Toggle("Sound effects", isOn: Binding(
                 get: { !app.isMuted },
                 set: { app.isMuted = !$0 }
             ))
+            Toggle(isOn: $app.calmMode) {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Calm mode")
+                    Text("No confetti or shaking — stars and levels stay.")
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                }
+            }
         }
     }
 
@@ -95,10 +79,16 @@ struct SettingsView: View {
                         try? app.bankService?.reset()
                     }
                 }
-            } else {
+            } else if !accountUnlocked {
                 Text("Sign in to save stars and progress across devices.")
                     .font(.footnote)
                     .foregroundStyle(theme.textSecondary)
+                Button {
+                    showGate = true
+                } label: {
+                    Label("Parents: sign in", systemImage: "lock.shield")
+                }
+            } else {
                 SignInWithAppleButton(.signIn) { request in
                     AppleSignInCoordinator.configure(request)
                 } onCompletion: { result in
@@ -126,6 +116,9 @@ struct SettingsView: View {
             if !authMessage.isEmpty {
                 Text(authMessage).font(.footnote).foregroundStyle(.red)
             }
+        }
+        .sheet(isPresented: $showGate) {
+            ParentalGateView { accountUnlocked = true }
         }
     }
 

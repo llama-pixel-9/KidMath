@@ -23,7 +23,7 @@ const SUBSKILLS = ["differenceAsDistance", "decomposeToSubtract", "unknownSubtra
 
 export default {
   id: "subtraction",
-  label: "Subtraction Quest!",
+  label: "Countdown Coop",
   shortLabel: "Subtraction",
   description: "Take away and find the difference.",
   icon: "Minus",

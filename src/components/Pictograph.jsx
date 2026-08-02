@@ -14,20 +14,20 @@ const SYMBOL_R = 9;
 const SYMBOL_GAP = 24;
 
 function Symbol({ cx, cy, half }) {
-  if (!half) return <circle cx={cx} cy={cy} r={SYMBOL_R} className="fill-violet-400" />;
+  if (!half) return <circle cx={cx} cy={cy} r={SYMBOL_R} className="fill-teal" />;
   return (
     <g>
       <circle
         cx={cx}
         cy={cy}
         r={SYMBOL_R}
-        className="fill-none stroke-violet-400"
+        className="fill-none stroke-teal"
         strokeWidth="1.5"
       />
       {/* Left half only: "half of one symbol" has to look like half of one. */}
       <path
         d={`M ${cx},${cy - SYMBOL_R} A ${SYMBOL_R},${SYMBOL_R} 0 0,0 ${cx},${cy + SYMBOL_R} Z`}
-        className="fill-violet-400"
+        className="fill-teal"
       />
     </g>
   );

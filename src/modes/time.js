@@ -641,7 +641,7 @@ function selectVariety(level, context) {
 
 export default {
   id: "time",
-  label: "Clock Stop!",
+  label: "Tell the Hour",
   shortLabel: "Time",
   description: "Read clocks and work with elapsed time.",
   icon: "Clock",

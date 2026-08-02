@@ -24,7 +24,7 @@ final class WorksheetTests: XCTestCase {
 
         // Problem pages carry the header and blanks; key pages carry answers.
         let firstPage = document.page(at: 0)?.string ?? ""
-        XCTAssertTrue(firstPage.contains("KidMath"), "header missing from page 1")
+        XCTAssertTrue(firstPage.contains("larkit"), "header missing from page 1")
         XCTAssertTrue(firstPage.contains("Name"), "name line missing from page 1")
         let keyPage = document.page(at: 2)?.string ?? ""
         XCTAssertTrue(keyPage.contains("Answer Key"), "answer key page missing")

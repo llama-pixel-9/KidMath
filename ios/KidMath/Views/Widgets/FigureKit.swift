@@ -3,12 +3,15 @@ import SwiftUI
 /// Shared visual kit for answer widgets — Swift port of src/components/kit.
 /// One color/stroke vocabulary so a coin, a shape, and a number line read as
 /// one system.
+/// Three-role diagram palette (brand spec §10): Ink is what is given,
+/// Teal (`accent`) is the part in question, Sun (`warm`) is the measurement
+/// drawn on top. Nothing else gets a color.
 enum FigureColors {
-    static let ink = Color(red: 0.200, green: 0.255, blue: 0.333) // slate-700
-    static let inkSoft = Color(red: 0.580, green: 0.639, blue: 0.722) // slate-400
-    static let fill = Color(red: 0.878, green: 0.949, blue: 0.996) // sky-100
-    static let accent = Color(red: 0.055, green: 0.647, blue: 0.914) // sky-500
-    static let warm = Color(red: 0.984, green: 0.749, blue: 0.141) // amber-400
+    static let ink = Theme.ink
+    static let inkSoft = Theme.ink.opacity(0.6)
+    static let fill = Theme.seafoam
+    static let accent = Theme.teal
+    static let warm = Theme.sun
 }
 
 /// Digit pad used by the figure widgets (clock, graph, angle, bond, discs,
@@ -36,15 +39,11 @@ struct DigitPadView: View {
                         .font(.title3.weight(.heavy))
                         .fontDesign(.rounded)
                         .frame(maxWidth: .infinity, minHeight: 52)
+                        .background(RoundedRectangle(cornerRadius: 14).fill(Theme.teal))
                         .background(
-                            RoundedRectangle(cornerRadius: 14).fill(
-                                LinearGradient(
-                                    colors: [Color(red: 0.204, green: 0.827, blue: 0.600), Color(red: 0.133, green: 0.773, blue: 0.369)],
-                                    startPoint: .topLeading, endPoint: .bottomTrailing
-                                )
-                            )
+                            RoundedRectangle(cornerRadius: 14).fill(Theme.deepTeal).offset(y: 4)
                         )
-                        .foregroundStyle(.white)
+                        .foregroundStyle(Theme.cream)
                         .opacity(entry.isEmpty ? 0.4 : 1)
                 }
                 .disabled(entry.isEmpty)

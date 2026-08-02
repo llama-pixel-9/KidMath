@@ -128,8 +128,13 @@ export const FRACTION_VARIETIES = [
       const den = pick(denPool(band));
       const num = randInt(1, den - 1);
       return {
-        answer: { num, den },
-        answerType: "fraction",
+        answer: fracLabel(num, den),
+        answerType: "choice",
+        choices: optionSet(fracLabel(num, den), [
+          fracLabel(num, den - num), // part-to-part
+          fracLabel(den - num, den), // the unshaded share
+          fracLabel(den, num), // inverted
+        ]),
         prompt: `A ${shape} is cut into ${den} equal parts. ${
           num === 1 ? "1 part is" : `${num} parts are`
         } shaded. What fraction is shaded?`,
@@ -180,8 +185,13 @@ export const FRACTION_VARIETIES = [
       const part = randInt(1, total - 1);
       const who = pick(NAMES);
       return {
-        answer: { num: part, den: total },
-        answerType: "fraction",
+        answer: fracLabel(part, total),
+        answerType: "choice",
+        choices: optionSet(fracLabel(part, total), [
+          fracLabel(part, total - part), // part-to-part
+          fracLabel(total - part, total), // the other kind
+          fracLabel(total, part), // inverted
+        ]),
         prompt: `${who} has a tray of ${total} ${thing}. ${part} of them are ${kind}. What fraction of the ${thing} are ${kind}?`,
       };
     },
@@ -200,8 +210,13 @@ export const FRACTION_VARIETIES = [
       const who = pick(NAMES);
       const thing = pick(["ribbon", "rope", "paper strip", "cake"]);
       return {
-        answer: { num: 1, den },
-        answerType: "fraction",
+        answer: fracLabel(1, den),
+        answerType: "choice",
+        choices: optionSet(fracLabel(1, den), [
+          fracLabel(den - 1, den), // the pieces left behind
+          `${den}`, // whole-number bias: counted the pieces
+          fracLabel(1, den + 1),
+        ]),
         prompt: `A ${thing} is cut into ${den} equal pieces. ${who} takes one piece. What fraction of the ${thing} did ${who} take?`,
       };
     },
@@ -247,8 +262,13 @@ export const FRACTION_VARIETIES = [
       const k = randInt(1, den - 1);
       const point = pick(["A", "B", "P"]);
       return {
-        answer: { num: k, den },
-        answerType: "fraction",
+        answer: fracLabel(k, den),
+        answerType: "choice",
+        choices: optionSet(fracLabel(k, den), [
+          fracLabel(k + 1, den), // counted the tick at 0
+          fracLabel(k, den + 1), // counted ticks, not intervals
+          fracLabel(den - k, den), // counted from the wrong end
+        ]),
         prompt: `A number line runs from 0 to 1 in ${DEN_WORDS[den]}. Point ${point} sits on the ${ordinal(
           k
         )} tick after 0. What fraction is ${point}?`,
@@ -294,8 +314,13 @@ export const FRACTION_VARIETIES = [
       const { num: n, den: d } = reducedProper(band);
       const k = randInt(2, 3);
       return {
-        answer: { num: n, den: d },
-        answerType: "fraction",
+        answer: fracLabel(n, d),
+        answerType: "choice",
+        choices: optionSet(fracLabel(n, d), [
+          fracLabel(n * k, d), // only the bottom simplified
+          fracLabel(n, d * k), // only the top simplified
+          fracLabel(n * k - 1, d * k - 1), // subtracted instead of divided
+        ]),
         prompt: `Write ${fracLabel(n * k, d * k)} in simplest form.`,
       };
     },
@@ -539,8 +564,13 @@ export const FRACTION_VARIETIES = [
       const a = randInt(1, den - 2);
       const b = randInt(1, den - 1 - a);
       return {
-        answer: { num: a + b, den },
-        answerType: "fraction",
+        answer: fracLabel(a + b, den),
+        answerType: "choice",
+        choices: optionSet(fracLabel(a + b, den), [
+          fracLabel(a + b, den + den), // denominatorAdd
+          `${a + b}`, // whole-number bias
+          fracLabel(a * b, den), // multiplied the tops
+        ]),
         prompt: `${fracLabel(a, den)} + ${fracLabel(b, den)} = ?`,
       };
     },
@@ -559,8 +589,13 @@ export const FRACTION_VARIETIES = [
       const a = randInt(2, den - 1);
       const b = randInt(1, a - 1);
       return {
-        answer: { num: a - b, den },
-        answerType: "fraction",
+        answer: fracLabel(a - b, den),
+        answerType: "choice",
+        choices: optionSet(fracLabel(a - b, den), [
+          fracLabel(a + b, den), // added instead
+          `${a - b}`, // whole-number bias
+          fracLabel(a - b, den + den), // denominatorAdd's subtraction twin
+        ]),
         prompt: `${fracLabel(a, den)} - ${fracLabel(b, den)} = ?`,
       };
     },

@@ -35,13 +35,13 @@ enum ModeCatalog {
             ModeInfo(id: "placeValueDiscs", label: "Disc Builder!", emoji: "🪙", playable: true),
         ]),
         ModeGroup(id: "addSubtract", title: "Add & Subtract", gradeHint: "Grades 1-3", modes: [
-            ModeInfo(id: "addition", label: "Addition Fun!", emoji: "➕", playable: true),
-            ModeInfo(id: "subtraction", label: "Subtraction Safari!", emoji: "➖", playable: true),
+            ModeInfo(id: "addition", label: "Sum Perch", emoji: "➕", playable: true),
+            ModeInfo(id: "subtraction", label: "Countdown Coop", emoji: "➖", playable: true),
             ModeInfo(id: "barModels", label: "Bar Models!", emoji: "📊", playable: true),
         ]),
         ModeGroup(id: "multiplyDivide", title: "Multiply & Divide", gradeHint: "Grades 2-4", modes: [
-            ModeInfo(id: "multiplication", label: "Multiply Mania!", emoji: "✖️", playable: true),
-            ModeInfo(id: "division", label: "Division Derby!", emoji: "➗", playable: true),
+            ModeInfo(id: "multiplication", label: "Times Tree", emoji: "✖️", playable: true),
+            ModeInfo(id: "division", label: "Split the Nest", emoji: "➗", playable: true),
             ModeInfo(id: "factorsMultiples", label: "Factor Lab!", emoji: "🧪", playable: true),
             ModeInfo(id: "patterns", label: "Pattern Play!", emoji: "🧩", playable: true),
         ]),
@@ -50,9 +50,9 @@ enum ModeCatalog {
             ModeInfo(id: "decimals", label: "Decimal Dash!", emoji: "🎯", playable: true),
         ]),
         ModeGroup(id: "measureMoneyTime", title: "Measure, Money & Time", gradeHint: "Grades 1-4", modes: [
-            ModeInfo(id: "measurement", label: "Measure Up!", emoji: "📏", playable: true),
+            ModeInfo(id: "measurement", label: "Weigh Station", emoji: "📏", playable: true),
             ModeInfo(id: "money", label: "Money Market!", emoji: "💰", playable: true),
-            ModeInfo(id: "time", label: "Time Traveler!", emoji: "⏰", playable: true),
+            ModeInfo(id: "time", label: "Tell the Hour", emoji: "⏰", playable: true),
             ModeInfo(id: "areaPerimeter", label: "Area & Perimeter!", emoji: "🖼️", playable: true),
         ]),
         ModeGroup(id: "shapesData", title: "Shapes & Data", gradeHint: "Grades 3-4", modes: [

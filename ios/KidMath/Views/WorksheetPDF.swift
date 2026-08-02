@@ -45,7 +45,7 @@ enum WorksheetPDF {
         }
 
         let url = FileManager.default.temporaryDirectory
-            .appendingPathComponent("KidMath-\(modeLabel.replacingOccurrences(of: " ", with: ""))-Worksheet.pdf")
+            .appendingPathComponent("larkit-\(modeLabel.replacingOccurrences(of: " ", with: ""))-Worksheet.pdf")
         var mediaBox = CGRect(origin: .zero, size: pageSize)
         guard let context = CGContext(url as CFURL, mediaBox: &mediaBox, nil) else { return nil }
 
@@ -82,16 +82,16 @@ struct WorksheetPageView: View {
     let showAnswers: Bool
     let footer: String?
 
-    private let ink = Color(red: 0.2, green: 0.25, blue: 0.33)
-    private let soft = Color(red: 0.58, green: 0.64, blue: 0.72)
-    private let answerColor = Color(red: 0.02, green: 0.59, blue: 0.41)
+    private let ink = Color.black
+    private let soft = Color.black.opacity(0.6)
+    private let answerColor = Color.black
 
     var body: some View {
         VStack(alignment: .leading, spacing: 18) {
             HStack {
-                Text("KidMath")
+                Text("larkit")
                     .font(.custom("Fredoka-SemiBold", size: 26))
-                    .foregroundStyle(Color(red: 0.55, green: 0.36, blue: 0.96))
+                    .foregroundStyle(Color.black)
                 Text("· \(modeLabel)")
                     .font(.custom("Fredoka-SemiBold", size: 20))
                     .foregroundStyle(ink)
@@ -172,7 +172,7 @@ struct WorksheetProblemText: View {
 
     private var blank: AttributedString {
         var text = AttributedString("______")
-        text.foregroundColor = Color(red: 0.79, green: 0.84, blue: 0.88)
+        text.foregroundColor = Color.black.opacity(0.4)
         return text
     }
 

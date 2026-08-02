@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { FREE_MODE_IDS, entitlementIsActive, isFreeMode } from "../premium";
+import { FREE_MODE_IDS, entitlementIsActive, isFreeMode, paywallEnabled } from "../premium";
 import { MODE_IDS } from "../modes";
 
 // The web premium split (pricing decision 2026-07-21): four operations +
@@ -52,5 +52,24 @@ describe("entitlementIsActive (mirror of iOS StoreService.rowIsActive)", () => {
   it("handles null rows (signed out / no row yet)", () => {
     expect(entitlementIsActive(null, now)).toBe(false);
     expect(entitlementIsActive(undefined, now)).toBe(false);
+  });
+});
+
+describe("paywallEnabled — the launch switch", () => {
+  it("is OFF by default: no env var means everything stays free", () => {
+    expect(paywallEnabled({})).toBe(false);
+    expect(paywallEnabled(undefined)).toBe(false);
+    expect(paywallEnabled({ VITE_PAYWALL_ENABLED: undefined })).toBe(false);
+  });
+
+  it("only the exact string 'true' arms the paywall", () => {
+    expect(paywallEnabled({ VITE_PAYWALL_ENABLED: "true" })).toBe(true);
+    expect(paywallEnabled({ VITE_PAYWALL_ENABLED: "1" })).toBe(false);
+    expect(paywallEnabled({ VITE_PAYWALL_ENABLED: "TRUE" })).toBe(false);
+    expect(paywallEnabled({ VITE_PAYWALL_ENABLED: true })).toBe(false);
+  });
+
+  it("is off in this test build (no VITE_PAYWALL_ENABLED in the env)", () => {
+    expect(paywallEnabled()).toBe(false);
   });
 });

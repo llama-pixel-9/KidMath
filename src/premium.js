@@ -13,6 +13,18 @@ import { supabase } from "./supabaseClient";
  */
 export const FREE_MODE_IDS = ["addition", "subtraction", "multiplication", "division", "counting"];
 
+/**
+ * Launch switch. The paywall is OFF unless the deploy explicitly sets
+ * VITE_PAYWALL_ENABLED=true (Vercel env var) — with it off, every visitor is
+ * treated as premium: all 22 modes and worksheets stay free, no locks, no
+ * paywall, no Stripe calls. Flip the env var and redeploy to launch billing
+ * once the Stripe account setup (docs/stripe-setup.md) is live. Entitlement
+ * reads/writes still work while it's off, so nothing resets at launch.
+ */
+export function paywallEnabled(env = import.meta.env) {
+  return env?.VITE_PAYWALL_ENABLED === "true";
+}
+
 export function isFreeMode(modeId) {
   return FREE_MODE_IDS.includes(modeId);
 }

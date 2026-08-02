@@ -1,7 +1,7 @@
 import { useCallback, useContext, useEffect, useState } from "react";
 import { AuthContext } from "./AuthContextValue";
 import { PremiumContext } from "./PremiumContextValue";
-import { entitlementIsActive, fetchEntitlement } from "./premium";
+import { entitlementIsActive, fetchEntitlement, paywallEnabled } from "./premium";
 import PaywallModal from "./PaywallModal";
 
 /**
@@ -48,12 +48,16 @@ export function PremiumProvider({ children }) {
     return () => clearInterval(timer);
   }, [user]);
 
-  const value = {
-    isPremium: entitlementIsActive(entitlement),
-    loading: loading || authLoading,
-    refresh,
-    openPaywall: () => setPaywallOpen(true),
-  };
+  // Pre-launch: with the paywall switched off, everyone is premium and
+  // openPaywall is a no-op — no locks, no modal, no Stripe.
+  const value = paywallEnabled()
+    ? {
+        isPremium: entitlementIsActive(entitlement),
+        loading: loading || authLoading,
+        refresh,
+        openPaywall: () => setPaywallOpen(true),
+      }
+    : { isPremium: true, loading: false, refresh, openPaywall: () => {} };
 
   return (
     <PremiumContext.Provider value={value}>

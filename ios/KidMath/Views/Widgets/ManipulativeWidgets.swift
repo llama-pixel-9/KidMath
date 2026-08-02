@@ -7,32 +7,21 @@ import SwiftUI
 
 private struct CoinSpec {
     let value: Int
-    let label: String
+    let label: String   // spoken, never printed on the face
     let name: String
     let radiusMM: Double // real-world proportions — a dime being smaller than
                          // a nickel is the misconception the mode teaches
-    let fill: Color
-    let edge: Color
-    let text: Color
+    let asset: String    // Assets.xcassets/Coins, same PNGs the web serves
 }
 
+/// Mirrors src/components/kit/coins.js. The faces are public-domain US Mint
+/// photographs rather than drawn discs: a disc stamped "10¢" turns coin
+/// recognition into plain addition, and recognition is the skill.
 private let coinSpecs: [String: CoinSpec] = [
-    "penny": CoinSpec(value: 1, label: "1¢", name: "Penny", radiusMM: 19.05,
-                      fill: Color(red: 0.784, green: 0.541, blue: 0.353),
-                      edge: Color(red: 0.604, green: 0.400, blue: 0.251),
-                      text: Color(red: 0.357, green: 0.227, blue: 0.133)),
-    "nickel": CoinSpec(value: 5, label: "5¢", name: "Nickel", radiusMM: 21.21,
-                       fill: Color(red: 0.776, green: 0.800, blue: 0.831),
-                       edge: Color(red: 0.596, green: 0.631, blue: 0.671),
-                       text: Color(red: 0.282, green: 0.314, blue: 0.353)),
-    "dime": CoinSpec(value: 10, label: "10¢", name: "Dime", radiusMM: 17.91,
-                     fill: Color(red: 0.808, green: 0.831, blue: 0.859),
-                     edge: Color(red: 0.635, green: 0.671, blue: 0.710),
-                     text: Color(red: 0.282, green: 0.314, blue: 0.353)),
-    "quarter": CoinSpec(value: 25, label: "25¢", name: "Quarter", radiusMM: 24.26,
-                        fill: Color(red: 0.788, green: 0.812, blue: 0.839),
-                        edge: Color(red: 0.604, green: 0.639, blue: 0.678),
-                        text: Color(red: 0.282, green: 0.314, blue: 0.353)),
+    "penny": CoinSpec(value: 1, label: "1¢", name: "Penny", radiusMM: 19.05, asset: "penny"),
+    "nickel": CoinSpec(value: 5, label: "5¢", name: "Nickel", radiusMM: 21.21, asset: "nickel"),
+    "dime": CoinSpec(value: 10, label: "10¢", name: "Dime", radiusMM: 17.91, asset: "dime"),
+    "quarter": CoinSpec(value: 25, label: "25¢", name: "Quarter", radiusMM: 24.26, asset: "quarter"),
 ]
 
 struct CoinTrayWidget: View {
@@ -56,10 +45,11 @@ struct CoinTrayWidget: View {
             FlowLayout(spacing: 8) {
                 ForEach(Array(coins.enumerated()), id: \.offset) { index, coin in
                     coinView(coin, selected: selected.contains(index))
-                        .onTapGesture {
-                            guard mode == "build", !disabled else { return }
-                            if selected.contains(index) { selected.remove(index) } else { selected.insert(index) }
-                        }
+                        .onTapGesture { toggle(index) }
+                        // Selecting is a real action in build mode, so VoiceOver
+                        // needs it bound here, alongside the tap gesture.
+                        .accessibilityAddTraits(mode == "build" ? .isButton : [])
+                        .accessibilityAction { toggle(index) }
                 }
             }
             .padding(14)
@@ -88,13 +78,13 @@ struct CoinTrayWidget: View {
 
     private func coinView(_ coin: String, selected: Bool) -> some View {
         let spec = coinSpecs[coin] ?? coinSpecs["penny"]!
-        let size = spec.radiusMM * 2 * 1.15 // web SCALE: mm -> pt, fingertip-sized
+        let size = spec.radiusMM * 2 * 1.3 // web SCALE: mm -> pt, fingertip-sized
         return ZStack {
-            Circle().fill(spec.edge)
-            Circle().fill(spec.fill).padding(size * 0.05)
-            Text(spec.label)
-                .font(.system(size: size * 0.3, weight: .heavy, design: .rounded))
-                .foregroundStyle(spec.text)
+            Image(spec.asset)
+                .resizable()
+                .scaledToFit()
+                // Lifts the coin off the tray so overlapping rims stay readable.
+                .shadow(color: .black.opacity(0.28), radius: 2, y: 2)
             if selected {
                 Circle().stroke(FigureColors.accent, lineWidth: 4)
             }
@@ -102,6 +92,15 @@ struct CoinTrayWidget: View {
         .frame(width: size, height: size)
         .offset(y: selected ? -6 : 0)
         .animation(.spring(duration: 0.25), value: selected)
+        // The face carries no value, so this is the only thing VoiceOver has.
+        .accessibilityElement()
+        .accessibilityLabel("\(spec.name), \(spec.label)")
+        .accessibilityAddTraits(selected ? .isSelected : [])
+    }
+
+    private func toggle(_ index: Int) {
+        guard mode == "build", !disabled else { return }
+        if selected.contains(index) { selected.remove(index) } else { selected.insert(index) }
     }
 }
 

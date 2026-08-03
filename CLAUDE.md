@@ -192,9 +192,9 @@ the noun — revisit only if he raises it.
 
 $8.99/mo · $54.99/yr (49% off) · **all kids in the household included, one price —
 no per-child tiers, ever** · 14-day trial, card required.
-Free tier is **web only**: addition, subtraction, multiplication, division,
-counting. Paywalled: the other 17 modes, PDF worksheets, cloud sync, and the
-whole iOS app. Launch offer: $39/yr founding price that locks while subscribed.
+Free tier is **both platforms** (decided 2026-08-02 with the §20 soft
+paywall): addition, subtraction, multiplication, division, counting.
+Paywalled: the other 17 modes, PDF worksheets, and cloud sync. Launch offer: $39/yr founding price that locks while subscribed.
 Price identically on both platforms (Apple requires it).
 Product IDs: `com.kidmath.app.premium.{monthly,annual}`.
 

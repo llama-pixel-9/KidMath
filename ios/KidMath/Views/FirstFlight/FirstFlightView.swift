@@ -517,8 +517,8 @@ private struct PlanStep: View {
             Text("$0")
                 .font(theme.displayFont(size: 34))
                 .foregroundStyle(Theme.ink)
-            bullet("5 games on the web — addition, subtraction, multiplication, division, counting")
-            bullet("Unlimited practice at larkit.io")
+            bullet("5 games — addition, subtraction, multiplication, division, counting")
+            bullet("On iPad, iPhone, and the web")
             Button(action: onDone) {
                 Text("Stay on the free plan")
                     .font(theme.displayFont(size: 18))

@@ -199,7 +199,7 @@ function PlanStep({ kidName, onFree }) {
           <p className="font-display font-semibold text-4xl text-ink mt-3 mb-4">$0</p>
           <ul className="m-0 p-0 list-none space-y-2 text-[15px] font-semibold text-ink">
             <li>5 games — addition, subtraction, multiplication, division, counting</li>
-            <li>Unlimited practice on the web</li>
+            <li>On the web, iPad, and iPhone</li>
           </ul>
           <div className="flex-1" />
           <button

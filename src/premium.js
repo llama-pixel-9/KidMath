@@ -1,15 +1,19 @@
 import { supabase } from "./supabaseClient";
 
 /**
- * Premium split (pricing decision, 2026-07-21):
- * the four operations + counting stay unlimited and free forever on the web —
- * the top of the funnel. Everything else (the other 17 modes, PDF worksheet
- * export, cross-device cloud sync, the iOS app) is premium: $8.99/month or
- * $54.99/year (49% off), every child in the household included, 14-day trial.
+ * Premium split (pricing decision 2026-07-21; free tier extended to iOS
+ * 2026-08-02 with the §20 soft paywall — free is a real plan on both
+ * platforms): the four operations + counting stay unlimited and free forever
+ * on web and iOS — the top of the funnel. Everything else (the other 17
+ * modes, PDF worksheet export, cross-device cloud sync) is premium:
+ * $8.99/month or $54.99/year (49% off), every child in the household
+ * included, 14-day trial.
  *
  * The entitlement row in public.entitlements is the shared truth: Stripe
  * writes it here (via the stripe-webhook Edge Function), StoreKit writes it
  * from the iOS app — either unlocks both platforms.
+ *
+ * Mirrored by StoreService.freeModeIds on iOS — keep the two lists identical.
  */
 export const FREE_MODE_IDS = ["addition", "subtraction", "multiplication", "division", "counting"];
 

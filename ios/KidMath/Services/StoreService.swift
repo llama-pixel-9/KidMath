@@ -37,6 +37,20 @@ final class StoreService: ObservableObject {
     /// flips, and afterwards a trial/subscription is required.
     var isUnlocked: Bool { !Self.paywallEnabled || hasPremium }
 
+    /// Free tier (decided 2026-08-02, supersedes "free is web-only"): the
+    /// same five modes as the web are free on iOS too. Mirror of
+    /// FREE_MODE_IDS in src/premium.js — keep the two lists identical.
+    nonisolated static let freeModeIds: Set<String> = [
+        "addition", "subtraction", "multiplication", "division", "counting",
+    ]
+
+    /// Whether this mode can start a session right now: free tier, or
+    /// everything while unlocked. Worksheets and the other 17 modes stay
+    /// behind the subscription once the paywall is live.
+    func canPlay(_ modeId: String) -> Bool {
+        isUnlocked || Self.freeModeIds.contains(modeId)
+    }
+
     @Published private(set) var monthly: Product?
     @Published private(set) var annual: Product?
     @Published private(set) var hasPremium = false

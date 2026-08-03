@@ -135,27 +135,33 @@ struct HomeView: View {
     }
 
     private func modeCard(_ mode: ModeInfo) -> some View {
-        Button {
+        // The same five free modes as the web; the rest need the trial or
+        // subscription once the launch switch flips.
+        let locked = !app.store.canPlay(mode.id)
+        return Button {
             guard mode.playable else { return }
-            // iOS is a premium surface (web keeps the free tier). While the
-            // launch switch is off everything is unlocked; after launch a
-            // trial/subscription is required.
-            if app.store.isUnlocked {
-                activeMode = mode
-            } else {
+            if locked {
                 showPaywall = true
+            } else {
+                activeMode = mode
             }
         } label: {
             VStack(alignment: .leading, spacing: 8) {
                 HStack {
-                    Text(mode.emoji).font(.system(size: 34))
-                    Spacer()
-                    if mode.playable {
-                        if let level = app.modeLevels[mode.id], level > 1 {
-                            levelBadge(level)
-                        }
+                    // §14: locked cards keep full opacity and swap the glyph
+                    // for the lock at 40%, with no badge.
+                    if locked {
+                        FeatherIcon(glyph: .lock, size: 30, color: Theme.ink)
+                            .opacity(0.4)
+                            .frame(height: 41)
                     } else {
+                        Text(mode.emoji).font(.system(size: 34))
+                    }
+                    Spacer()
+                    if !mode.playable {
                         soonBadge
+                    } else if !locked, let level = app.modeLevels[mode.id], level > 1 {
+                        levelBadge(level)
                     }
                 }
                 Text(mode.label)

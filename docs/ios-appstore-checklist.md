@@ -86,5 +86,6 @@ listing.
 - App icon is a generated placeholder — fine for TestFlight, consider
   real branding for launch.
 - Web Stripe companion (checkout + entitlement write + free-tier gating on
-  the web) is designed but not yet built — the iOS side already honors a
-  Stripe-written entitlement row.
+  the web) is **built** — the iOS side honors the same Stripe-written
+  entitlement row. Account-side setup (products, secrets, webhook) is in
+  `docs/stripe-setup.md`.

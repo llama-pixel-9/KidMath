@@ -32,9 +32,15 @@ final class SessionViewModel: ObservableObject {
     @Published private(set) var questionKey = 0
     /// Set during wrong-answer feedback so the widget can reveal the answer.
     @Published private(set) var revealAnswer: Any?
+    /// §01/§02 (behind GamFlags.flightReport): the four-part settlement and
+    /// the engagement summary the Flight Report shows. Nil while the flag is
+    /// off — the classic end card renders then.
+    @Published private(set) var flightPayout: EngineBridge.FlightPayout?
+    @Published private(set) var flightSummary: EngagementStore.SessionEndResult?
 
     private let engine: EngineBridge
     private let progressStore: ProgressStore
+    private let engagementStore: EngagementStore
     private let bankService: BankService?
     private var session: EngineBridge.Session?
     private var questionStart = Date()
@@ -47,7 +53,8 @@ final class SessionViewModel: ObservableObject {
         bankService: BankService?,
         sessionSize: Int = 10,
         correctHold: Duration = .milliseconds(1200),
-        wrongHold: Duration = .milliseconds(2000)
+        wrongHold: Duration = .milliseconds(2000),
+        engagementStore: EngagementStore = EngagementStore()
     ) {
         self.modeId = modeId
         self.engine = engine
@@ -56,6 +63,7 @@ final class SessionViewModel: ObservableObject {
         self.sessionSize = sessionSize
         self.correctHold = correctHold
         self.wrongHold = wrongHold
+        self.engagementStore = engagementStore
     }
 
     func start() async {
@@ -179,14 +187,28 @@ final class SessionViewModel: ObservableObject {
     private func finishSession() async {
         guard let session else { return }
         let snapshot = session.snapshot
-        let starsEarned = ProgressStore.int(snapshot["firstTryCorrect"])
-        await progressStore.save(mode: modeId, data: [
+        let firstTryCorrect = ProgressStore.int(snapshot["firstTryCorrect"])
+
+        // §01 (flagged): the four-part settlement replaces one-star-per-
+        // first-try, computed by the SAME shared engine code the web uses.
+        let payout = GamFlags.flightReport ? (try? engine.summarizeFlight(session)) : nil
+        let starsEarned = payout?.total ?? firstTryCorrect
+
+        var data: [String: Any] = [
             "level": snapshot["level"] ?? 1,
             "mistakeBank": snapshot["mistakeBank"] ?? [[String: Any]](),
-            "firstTryCorrect": starsEarned,
+            "firstTryCorrect": firstTryCorrect,
             "bankItemStats": snapshot["bankItemStats"] ?? [String: Any](),
             "recentBankItemIds": snapshot["recentBankItemIds"] ?? [String](),
-        ])
+        ]
+        if let payout { data["starsEarned"] = payout.total }
+        await progressStore.save(mode: modeId, data: data)
+
+        if let payout {
+            flightPayout = payout
+            flightSummary = engagementStore.recordSessionEnd(starsEarned: starsEarned)
+        }
+
         let progress = await progressStore.load(mode: modeId)
         SoundPlayer.shared.playComplete()
         phase = .complete(

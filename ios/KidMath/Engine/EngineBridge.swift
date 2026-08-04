@@ -40,6 +40,18 @@ final class EngineBridge {
         let newLevel: Int
     }
 
+    /// §01 flight payout — the four-part settlement `summarizeFlight` returns.
+    /// An unfinished flight pays nothing at all.
+    struct FlightPayout {
+        let finished: Bool
+        let landing: Int
+        let precision: Int
+        let altitude: Int
+        let circleBack: Int
+        let total: Int
+        let firstTryCorrect: Int
+    }
+
     /// Opaque handle to a live adaptive-session object inside the JSContext.
     /// The JS engine treats sessions immutably (`recordAnswer` returns a new
     /// one); the bridge swaps the handle's value so Swift sees one session.
@@ -203,6 +215,23 @@ final class EngineBridge {
 
     func isSessionComplete(_ session: Session) throws -> Bool {
         try call("isSessionComplete", [session.value]).toBool()
+    }
+
+    /// §01: the four-part settlement (landing / precision / altitude /
+    /// circle-back), computed by the same shared engine code the web uses so
+    /// the two platforms can never pay differently.
+    func summarizeFlight(_ session: Session) throws -> FlightPayout {
+        let result = try call("summarizeFlight", [session.value])
+        let payload = try dictionary(from: result, in: "summarizeFlight")
+        return FlightPayout(
+            finished: payload["finished"] as? Bool ?? false,
+            landing: ProgressStore.int(payload["landing"]),
+            precision: ProgressStore.int(payload["precision"]),
+            altitude: ProgressStore.int(payload["altitude"]),
+            circleBack: ProgressStore.int(payload["circleBack"]),
+            total: ProgressStore.int(payload["total"]),
+            firstTryCorrect: ProgressStore.int(payload["firstTryCorrect"])
+        )
     }
 
     // MARK: - Test support

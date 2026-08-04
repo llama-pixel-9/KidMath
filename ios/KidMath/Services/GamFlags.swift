@@ -1,0 +1,26 @@
+import Foundation
+
+/// Gamification rollout flags — the Swift mirror of src/gamificationFlags.js,
+/// following the same launch-switch pattern as `StoreService.paywallEnabled`:
+/// every step is OFF by default and can be forced on for manual testing via
+/// the simulator argument domain, e.g.
+/// `simctl launch com.kidmath.app -gamFlightReport 1`.
+///
+/// Flip a step's default to `true` together with the matching web env var
+/// (`VITE_GAM_FLIGHT_REPORT` etc.) so both platforms settle flights the same
+/// way — the payout formula must never differ between a kid's iPad and the web.
+enum GamFlags {
+    nonisolated static func step(_ key: String) -> Bool {
+        if UserDefaults.standard.object(forKey: key) != nil {
+            return UserDefaults.standard.bool(forKey: key)
+        }
+        return false
+    }
+
+    /// §01 economy + §02 Flight Report.
+    nonisolated static var flightReport: Bool { step("gamFlightReport") }
+    /// §03 nomination + Fledging Flights (not yet ported — reserved).
+    nonisolated static var fledging: Bool { step("gamFledging") }
+    /// §04–§06 the Meadow (not yet ported — reserved).
+    nonisolated static var meadow: Bool { step("gamMeadow") }
+}

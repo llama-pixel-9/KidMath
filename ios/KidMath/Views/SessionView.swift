@@ -41,6 +41,9 @@ struct SessionView: View {
                     starsEarned: stars,
                     totalQuestions: viewModel.sessionSize,
                     lifetimeStars: lifetime,
+                    level: viewModel.level,
+                    payout: viewModel.flightPayout,
+                    summary: viewModel.flightSummary,
                     playAgain: { Task { await viewModel.start() } },
                     goHome: { finish() }
                 )

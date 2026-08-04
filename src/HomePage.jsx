@@ -36,6 +36,8 @@ import LarkMark from "./components/LarkMark";
 import { MODE_IDS, MODE_GROUPS, getModeConfig } from "./modes";
 import { loadProgressSync } from "./progressStore";
 import { loadEngagement, starBalance, currentStreak, starsToday } from "./engagement/engagementStore";
+import { getNomination } from "./engagement/fledging.js";
+import { fledgingEnabled, meadowEnabled } from "./gamificationFlags.js";
 import EngagementBar from "./engagement/EngagementBar.jsx";
 import StickerBook from "./engagement/StickerBook.jsx";
 import GrownUpsPanel from "./engagement/GrownUpsPanel.jsx";
@@ -181,7 +183,9 @@ export default function HomePage() {
               balance={starBalance(engagement)}
               streak={currentStreak(engagement)}
               today={starsToday(engagement)}
-              onOpenStickers={() => setStickersOpen(true)}
+              // The Meadow replaces the sticker book as the tap-target behind
+              // the star chip (§04); the book stays only while the flag is off.
+              onOpenStickers={() => (meadowEnabled() ? navigate("/meadow") : setStickersOpen(true))}
             />
           </div>
           <h1 className="flex items-center justify-center gap-4">
@@ -248,6 +252,10 @@ export default function HomePage() {
                   const tint = CARD_TINTS[COLOR_INDEX[id] % CARD_TINTS.length];
                   const locked = !isFreeMode(id) && !isPremium && !premiumLoading;
                   const lv = loadProgressSync(id)?.level || 1;
+                  // §03 step 3: the nomination survives leaving the app as a
+                  // Sun pill on the mode's card (Ink text — cream on Sun is
+                  // forbidden).
+                  const nominated = fledgingEnabled() && !locked && Boolean(getNomination(engagement, id));
                   return (
                     <button
                       key={id}
@@ -263,6 +271,11 @@ export default function HomePage() {
                       >
                         {locked ? <Feather name="lock" size={20} /> : <ModeGlyph config={config} />}
                       </div>
+                      {nominated && (
+                        <span className="absolute top-[18px] right-[18px] bg-sun text-ink text-[12px] font-display font-semibold rounded-full px-2.5 py-[3px] whitespace-nowrap">
+                          Ready to fledge
+                        </span>
+                      )}
                       <div className="flex-1" />
                       <h4 className="text-xl font-display font-semibold text-ink leading-[1.15]">
                         {config.label}

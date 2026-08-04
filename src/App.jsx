@@ -15,6 +15,7 @@ import AboutPage from "./AboutPage";
 import PrivacyPage from "./PrivacyPage";
 import AdminItemsPage from "./admin/AdminItemsPage";
 import DiagnosticsPage from "./admin/DiagnosticsPage";
+import MeadowPage from "./engagement/meadow/MeadowPage";
 import ValuePage from "./onboarding/ValuePage";
 import SignupPage from "./onboarding/SignupPage";
 import OnboardingFlow from "./onboarding/OnboardingFlow";
@@ -59,6 +60,7 @@ function AppShell() {
         <Route path="/play" element={<PlayRoute />} />
         <Route path="/play/:mode" element={<PlayRoute />} />
         <Route path="/worksheets" element={<WorksheetsRoute />} />
+        <Route path="/meadow" element={<MeadowPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         {/* First flight (§20): value → parent account → add a kid → soft

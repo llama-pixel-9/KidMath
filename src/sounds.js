@@ -70,6 +70,30 @@ export function playCorrectSound() {
   playTone(783.99, now + 0.2, 0.2);   // G5
 }
 
+/**
+ * Placeholder bird chirp for the Meadow (§04 tap → call). Real per-species
+ * call recordings are part of the art/audio commission; this two-note chirp
+ * keeps the interaction complete until they land.
+ */
+export function playBirdCall() {
+  if (isMuted()) return;
+  const ctx = getCtx();
+  const now = ctx.currentTime;
+  playTone(1244.5, now, 0.09, "sine", 0.1); // D#6
+  playTone(1567.98, now + 0.11, 0.12, "sine", 0.1); // G6
+  playTone(1318.51, now + 0.26, 0.1, "sine", 0.08); // E6
+}
+
+/**
+ * §10 beat 2: a soft tap per crack — deliberately the only percussive audio
+ * in the app.
+ */
+export function playSoftTap() {
+  if (isMuted()) return;
+  const ctx = getCtx();
+  playTone(220, ctx.currentTime, 0.06, "triangle", 0.12);
+}
+
 export function playStreakSound() {
   if (isMuted()) return;
   const ctx = getCtx();

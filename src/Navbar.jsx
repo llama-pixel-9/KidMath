@@ -5,13 +5,16 @@ import { useAuth } from "./useAuth";
 import { useIsAdmin } from "./useIsAdmin";
 import LarkMark from "./components/LarkMark";
 import Feather from "./components/feather.jsx";
+import { meadowEnabled } from "./gamificationFlags.js";
 
 // Nav links are words, not glyphs (§13: icons never replace a word a
 // five-year-old can read) — the feather set covers the controls only.
+// The Meadow is the fourth tab on the perch (§04), behind its rollout flag.
 const BASE_NAV_ITEMS = [
   { to: "/", label: "Home", end: true },
   { to: "/play", label: "Play" },
   { to: "/worksheets", label: "Worksheets" },
+  ...(meadowEnabled() ? [{ to: "/meadow", label: "Meadow" }] : []),
   { to: "/about", label: "About" },
 ];
 

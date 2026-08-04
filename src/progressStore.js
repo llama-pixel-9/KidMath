@@ -74,14 +74,17 @@ function loadLocal(mode) {
   };
 }
 
-function saveLocal(mode, { level, mistakeBank, firstTryCorrect, bankItemStats, recentBankItemIds }) {
+// `starsEarned` is the flight payout (§01 economy). Callers not yet on the
+// Flight Report (and iOS until its port) omit it and keep the historical
+// one-star-per-first-try formula.
+function saveLocal(mode, { level, mistakeBank, firstTryCorrect, starsEarned, bankItemStats, recentBankItemIds }) {
   const store = readLocalStore();
   const prev = store[mode] || { totalSessions: 0, lifetimeStars: 0, bankItemStats: {} };
   store[mode] = {
     level: clampLevel(level),
     mistakeBank: (mistakeBank || []).slice(0, 20),
     totalSessions: (prev.totalSessions ?? 0) + 1,
-    lifetimeStars: (prev.lifetimeStars ?? 0) + (firstTryCorrect ?? 0),
+    lifetimeStars: (prev.lifetimeStars ?? 0) + (starsEarned ?? firstTryCorrect ?? 0),
     bankItemStats: mergeBankItemStats(prev.bankItemStats || {}, bankItemStats || {}),
     recentBankItemIds: (recentBankItemIds || []).slice(-MAX_PERSISTED_RECENT_IDS),
   };
@@ -167,10 +170,10 @@ async function loadCloud(userId, mode) {
   };
 }
 
-async function saveCloud(userId, mode, { level, mistakeBank, firstTryCorrect, bankItemStats }) {
+async function saveCloud(userId, mode, { level, mistakeBank, firstTryCorrect, starsEarned, bankItemStats }) {
   const existing = await loadCloud(userId, mode);
   const newTotalSessions = existing.totalSessions + 1;
-  const newLifetimeStars = existing.lifetimeStars + (firstTryCorrect ?? 0);
+  const newLifetimeStars = existing.lifetimeStars + (starsEarned ?? firstTryCorrect ?? 0);
 
   await Promise.all([
     supabase.from("progress").upsert(

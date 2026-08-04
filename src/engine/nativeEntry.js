@@ -24,6 +24,7 @@ import {
   getNextQuestion,
   recordAnswer,
   isSessionComplete,
+  summarizeFlight,
   generateWorksheetSet,
   questionAnswerType,
 } from "../mathEngine.js";
@@ -84,6 +85,9 @@ g.KidMath = {
   recordAnswer: (session, question, chosenAnswer, responseTimeMs, wasRetry) =>
     recordAnswer(session, question, chosenAnswer, responseTimeMs, wasRetry),
   isSessionComplete: (session) => isSessionComplete(session),
+  // §01 flight payout. Swift may ignore this until the iOS bird-world port;
+  // the field is additive and pure.
+  summarizeFlight: (session) => summarizeFlight(session),
 };
 
 // Also export for tooling/tests that import this module directly.

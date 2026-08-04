@@ -4,8 +4,9 @@ import { useTheme } from "../useTheme.js";
 import { MODE_IDS, getModeConfig } from "../modes";
 import { loadProgressSync } from "../progressStore";
 import { loadEngagement, starBalance, currentStreak } from "./engagementStore.js";
-import { rankForLevel } from "./ranks.js";
 import { gradeSpanFor } from "./gradeSpans.js";
+import { SPECIES_BY_ID } from "./roster.js";
+import { meadowEnabled } from "../gamificationFlags.js";
 
 /**
  * The parent snapshot: one screen answering "is my kid practicing, and where
@@ -18,6 +19,14 @@ export default function GrownUpsPanel({ open, onClose }) {
 
   const eng = loadEngagement();
   const streak = currentStreak(eng);
+  // The one bird thing parents see is the collection itself, stated factually
+  // — a real-species conservation-education angle, not a pun.
+  const birdWorld = meadowEnabled();
+  const flock = eng.birds || [];
+  const rareCount = flock.filter((b) => {
+    const tier = SPECIES_BY_ID[b.speciesId]?.tier;
+    return tier === "rare" || tier === "legendary";
+  }).length;
   const rows = MODE_IDS.map((id) => ({ id, progress: loadProgressSync(id) || {} }))
     .filter(({ progress }) => (progress.totalSessions ?? 0) > 0 || (progress.level ?? 1) > 1)
     .sort((a, b) => (b.progress.lifetimeStars ?? 0) - (a.progress.lifetimeStars ?? 0));
@@ -51,7 +60,7 @@ export default function GrownUpsPanel({ open, onClose }) {
             what each activity covers.
           </p>
 
-          <div className="grid grid-cols-3 gap-2 mb-5">
+          <div className={`grid ${birdWorld ? "grid-cols-2 sm:grid-cols-4" : "grid-cols-3"} gap-2 mb-5`}>
             <div className={stat}>
               <Feather name="streak" size={16} className="h-5 w-5 text-orange-500 mx-auto" />
               <p className="text-lg font-extrabold text-slate-800">{streak}</p>
@@ -64,9 +73,22 @@ export default function GrownUpsPanel({ open, onClose }) {
             </div>
             <div className={stat}>
               <Feather name="check" size={16} className="h-5 w-5 text-violet-500 mx-auto" />
-              <p className="text-lg font-extrabold text-slate-800">{(eng.badges ?? []).length}</p>
-              <p className="text-[11px] font-semibold text-slate-500">badges · {eng.sessionsCount ?? 0} sessions</p>
+              <p className="text-lg font-extrabold text-slate-800">
+                {birdWorld ? eng.sessionsCount ?? 0 : (eng.badges ?? []).length}
+              </p>
+              <p className="text-[11px] font-semibold text-slate-500">
+                {birdWorld ? "practice sessions" : `badges · ${eng.sessionsCount ?? 0} sessions`}
+              </p>
             </div>
+            {birdWorld && (
+              <div className={stat}>
+                <Feather name="nest" size={16} className="h-5 w-5 text-teal mx-auto" />
+                <p className="text-lg font-extrabold text-slate-800">{flock.length}</p>
+                <p className="text-[11px] font-semibold text-slate-500">
+                  bird species collected{rareCount > 0 ? ` (${rareCount} rare or endangered)` : ""}
+                </p>
+              </div>
+            )}
           </div>
 
           {rows.length === 0 ? (
@@ -86,7 +108,6 @@ export default function GrownUpsPanel({ open, onClose }) {
               <tbody>
                 {rows.map(({ id, progress }) => {
                   const level = progress.level ?? 1;
-                  const rank = rankForLevel(level);
                   const reviewCount = Array.isArray(progress.mistakeBank) ? progress.mistakeBank.length : 0;
                   return (
                     <tr key={id} className="border-t border-slate-100">
@@ -94,9 +115,9 @@ export default function GrownUpsPanel({ open, onClose }) {
                         <p className="font-bold text-slate-700">{getModeConfig(id).shortLabel}</p>
                         <p className="text-[11px] text-slate-400">Grades {gradeSpanFor(id)}</p>
                       </td>
-                      <td className="py-2 text-slate-600 font-semibold">
-                        {rank.emoji} Lv {level} · {rank.name}
-                      </td>
+                      {/* Parents get plain vocabulary — no rank names here (bird
+                          language is kid-surface only). */}
+                      <td className="py-2 text-slate-600 font-semibold">Level {level} of 10</td>
                       <td className="py-2 text-right font-bold text-slate-700">{progress.lifetimeStars ?? 0}</td>
                       <td className="py-2 text-right">
                         {reviewCount > 0 ? (
@@ -112,6 +133,23 @@ export default function GrownUpsPanel({ open, onClose }) {
                 })}
               </tbody>
             </table>
+          )}
+
+          {birdWorld && (
+            <div className="mt-5 pt-4 border-t border-slate-100 space-y-1.5">
+              {/* Plain-language answers to the two questions parents actually
+                  ask about the bird collection. */}
+              <p className="text-[12px] text-slate-500">
+                The bird collection features real species with true facts — a conservation-education
+                angle, not a game of chance. Stars are earned only by practicing and can never be
+                bought, at any price.
+              </p>
+              <p className="text-[12px] text-slate-500">
+                A few birds migrate with the real seasons: they leave for a season, their spot is
+                kept, and they always come back. No bird is ever lost, and the collection never
+                affects which math activities are available.
+              </p>
+            </div>
           )}
         </motion.div>
       </motion.div>

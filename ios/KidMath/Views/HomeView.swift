@@ -158,6 +158,17 @@ struct HomeView: View {
                         Text(mode.emoji).font(.system(size: 34))
                     }
                     Spacer()
+                    // §03 step 3: the nomination survives leaving the app as
+                    // a Sun pill on the mode's card (Ink text — cream on Sun
+                    // is forbidden).
+                    if !locked, GamFlags.fledging, EngagementStore().nomination(for: mode.id) != nil {
+                        Text("Ready to fledge")
+                            .font(theme.bodyFont(size: 11, weight: .heavy))
+                            .foregroundStyle(Theme.ink)
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 4)
+                            .background(Capsule().fill(Theme.sun))
+                    }
                     if !mode.playable {
                         soonBadge
                     } else if !locked, let level = app.modeLevels[mode.id], level > 1 {

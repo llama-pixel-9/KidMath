@@ -167,6 +167,101 @@ final class EngagementStore {
     }
 }
 
+// MARK: - Fledging (§03) — mirror of src/engagement/fledging.js
+
+extension EngagementStore {
+
+    nonisolated static let roughPrecision = 0.4
+    nonisolated static let roughFlightsToGlide = 2
+    nonisolated static let maxFledgingAttempts = 3
+    nonisolated static let fledgingQuestions = 6
+    nonisolated static let fledgingPass = 5
+
+    struct FlightEndOutcome {
+        let nomination: [String: Any]?
+        let roughFlight: Bool
+        let glideDown: Bool
+    }
+
+    func nomination(for mode: String) -> [String: Any]? {
+        (load()["nominations"] as? [String: Any])?[mode] as? [String: Any]
+    }
+
+    /// End-of-normal-flight transition. A nomination clears exactly four ways
+    /// (pass / rough flight / three failed attempts / any level change) and
+    /// time away never clears it. Two CONSECUTIVE rough flights (< 40%
+    /// precision) glide the kid down one level — the caller persists that.
+    @discardableResult
+    func recordFlightEnd(
+        mode: String,
+        precisionRatio: Double,
+        nominated: Bool,
+        weakSubskills: [String],
+        dayKey: String = EngagementStore.todayKey()
+    ) -> FlightEndOutcome {
+        var state = load()
+        var nominations = state["nominations"] as? [String: Any] ?? [:]
+        var roughFlights = state["roughFlights"] as? [String: Any] ?? [:]
+        let roughFlight = precisionRatio < Self.roughPrecision
+        var glideDown = false
+
+        if roughFlight {
+            // Withdrawn by evidence — silently; the readiness signal is stale.
+            nominations.removeValue(forKey: mode)
+            let count = ProgressStore.int(roughFlights[mode]) + 1
+            if count >= Self.roughFlightsToGlide {
+                glideDown = true
+                roughFlights[mode] = 0
+            } else {
+                roughFlights[mode] = count
+            }
+        } else {
+            roughFlights[mode] = 0
+            if nominated, nominations[mode] == nil {
+                nominations[mode] = ["attempts": 0, "weakSubskills": weakSubskills, "day": dayKey]
+            }
+        }
+
+        state["nominations"] = nominations
+        state["roughFlights"] = roughFlights
+        persist(state)
+        return FlightEndOutcome(
+            nomination: nominations[mode] as? [String: Any],
+            roughFlight: roughFlight,
+            glideDown: glideDown
+        )
+    }
+
+    /// Fledging Flight result: pass consumes the nomination; a third failed
+    /// attempt clears it for re-earning. One attempt per session — the caller
+    /// only offers at take-off.
+    @discardableResult
+    func recordFledgingResult(mode: String, passed: Bool) -> (cleared: Bool, reearn: Bool) {
+        var state = load()
+        var nominations = state["nominations"] as? [String: Any] ?? [:]
+        guard var nomination = nominations[mode] as? [String: Any] else { return (false, false) }
+
+        var result: (cleared: Bool, reearn: Bool)
+        if passed {
+            nominations.removeValue(forKey: mode)
+            result = (true, false)
+        } else {
+            let attempts = ProgressStore.int(nomination["attempts"]) + 1
+            if attempts >= Self.maxFledgingAttempts {
+                nominations.removeValue(forKey: mode)
+                result = (true, true)
+            } else {
+                nomination["attempts"] = attempts
+                nominations[mode] = nomination
+                result = (false, false)
+            }
+        }
+        state["nominations"] = nominations
+        persist(state)
+        return result
+    }
+}
+
 /// Kid-facing rank names (§02) — Fledgling / Flier / Skymaster. Parent
 /// surfaces keep plain "Level n of 10" language.
 enum RankBand {

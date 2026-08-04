@@ -17,6 +17,10 @@ struct SessionCompleteView: View {
     var level: Int = 1
     var payout: EngineBridge.FlightPayout?
     var summary: EngagementStore.SessionEndResult?
+    /// §03 state 2: the Seafoam note replaces the level bar in the slot when
+    /// the lark has nominated; glide-down adds one kind line.
+    var nominationPending: Bool = false
+    var glideDown: Bool = false
     let playAgain: () -> Void
     let goHome: () -> Void
 
@@ -182,30 +186,60 @@ struct SessionCompleteView: View {
                     .frame(minHeight: 32)
             }
 
-            // The slot: level bar with the Nest total on the right — the same
-            // number the Meadow will show. "N stars to Level X" is gone.
-            VStack(alignment: .leading, spacing: 6) {
-                GeometryReader { proxy in
-                    ZStack(alignment: .leading) {
-                        Capsule().fill(Theme.ink.opacity(0.1))
-                        Capsule()
-                            .fill(Theme.teal)
-                            .frame(width: proxy.size.width * (appeared ? Double(level) / 10 : 0))
-                            .animation(.easeOut(duration: 0.6), value: appeared)
+            // The slot — three states, never fixed-height: level read-out,
+            // the Seafoam nomination note (84px vs the bar's 39px), or the
+            // expanded ledger above. "N stars to Level X" is gone.
+            if nominationPending {
+                HStack(spacing: 12) {
+                    ZStack {
+                        Circle().fill(Theme.cream)
+                        LarkMarkView().frame(width: 26)
                     }
+                    .frame(width: 44, height: 44)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Ready for higher skies")
+                            .font(theme.bodyFont(size: 15, weight: .heavy))
+                        Text("Next time, six questions to reach Level \(min(level + 1, 10)).")
+                            .font(theme.bodyFont(size: 14, weight: .bold))
+                            .foregroundStyle(Theme.ink.opacity(0.8))
+                    }
+                    Spacer(minLength: 0)
                 }
-                .frame(height: 10)
-                .onAppear { appeared = true }
-                HStack {
-                    Text("Level \(level) · \(RankBand.name(forLevel: level))")
-                    Spacer()
-                    Text("\(summary?.balance ?? 0) in the Nest")
-                }
-                .font(theme.bodyFont(size: 14, weight: .bold))
                 .foregroundStyle(Theme.ink)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 12)
+                .frame(maxWidth: 320, minHeight: 84)
+                .background(RoundedRectangle(cornerRadius: 16).fill(Theme.seafoam))
+                .padding(.top, 4)
+            } else {
+                VStack(alignment: .leading, spacing: 6) {
+                    GeometryReader { proxy in
+                        ZStack(alignment: .leading) {
+                            Capsule().fill(Theme.ink.opacity(0.1))
+                            Capsule()
+                                .fill(Theme.teal)
+                                .frame(width: proxy.size.width * (appeared ? Double(level) / 10 : 0))
+                                .animation(.easeOut(duration: 0.6), value: appeared)
+                        }
+                    }
+                    .frame(height: 10)
+                    .onAppear { appeared = true }
+                    HStack {
+                        Text("Level \(level) · \(RankBand.name(forLevel: level))")
+                        Spacer()
+                        Text("\(summary?.balance ?? 0) in the Nest")
+                    }
+                    .font(theme.bodyFont(size: 14, weight: .bold))
+                    .foregroundStyle(Theme.ink)
+                }
+                .frame(maxWidth: 320)
+                .padding(.top, 4)
             }
-            .frame(maxWidth: 320)
-            .padding(.top, 4)
+            if glideDown {
+                Text("Smoother skies for a bit.")
+                    .font(theme.bodyFont(size: 13, weight: .bold))
+                    .foregroundStyle(Theme.deepTeal)
+            }
         }
     }
 

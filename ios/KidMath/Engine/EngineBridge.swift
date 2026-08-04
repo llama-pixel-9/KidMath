@@ -258,6 +258,24 @@ final class EngineBridge {
         try throwPendingException()
     }
 
+    /// Force every subskill in the session to a high observed mastery rate, so
+    /// promotion/nomination signals can be exercised deterministically.
+    /// Test-only, like reseedRandom.
+    func forceHighMastery(in session: Session) throws {
+        exceptions.message = nil
+        context.globalObject.setObject(session.value, forKeyedSubscript: "__kidmathTestSession" as NSString)
+        context.evaluateScript(
+            """
+            Object.values(__kidmathTestSession.skillMastery || {}).forEach(function (entry) {
+              entry.attempts = 10;
+              entry.correct = 10;
+            });
+            delete globalThis.__kidmathTestSession;
+            """
+        )
+        try throwPendingException()
+    }
+
     /// Canonical JSON of a generated question, stringified INSIDE the JS realm
     /// so undefined-dropping and number formatting match Node's JSON.stringify.
     func generateQuestionJSON(mode: String, level: Int) throws -> String {

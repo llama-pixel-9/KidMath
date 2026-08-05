@@ -283,6 +283,13 @@ final class EngineBridge {
         return list
     }
 
+    func playSpots() throws -> [[String: Any]] {
+        guard let list = try call("playSpots").toObject() as? [[String: Any]] else {
+            throw EngineError.badResult("playSpots() did not return an array")
+        }
+        return list
+    }
+
     /// §06 placement, chosen once when a bird moves in: species-suitable
     /// perch types, ≥96px spacing, 7-per-zone cap, reserved rects never
     /// picked. Returns nil when nothing suitable is free.

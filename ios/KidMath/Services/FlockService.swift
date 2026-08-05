@@ -147,6 +147,57 @@ final class FlockService {
         return !Seasons.presentNow(species.raw)
     }
 
+    // MARK: - §11 migration events + seen-marks (mirror of the web wrappers)
+
+    func migrationEvents(date: Date = Date()) -> Seasons.MigrationEvents {
+        let state = engagement.load()
+        let owned = birds().compactMap { bird -> (id: String, raw: [String: Any])? in
+            guard let id = bird["speciesId"] as? String, let species = species(id) else { return nil }
+            return (id, species.raw)
+        }
+        return Seasons.migrationEvents(state: state, ownedSpecies: owned, date: date)
+    }
+
+    func markDepartureSeen(_ speciesId: String, key: String) {
+        var state = engagement.load()
+        var seen = state["departuresSeen"] as? [String: Any] ?? [:]
+        seen[speciesId] = key
+        state["departuresSeen"] = seen
+        state.removeValue(forKey: "departureDeferredDay")
+        engagement.persist(state)
+    }
+
+    func markReturnSeen(_ speciesId: String, key: String) {
+        var state = engagement.load()
+        var seen = state["returnsSeen"] as? [String: Any] ?? [:]
+        seen[speciesId] = key
+        state["returnsSeen"] = seen
+        engagement.persist(state)
+    }
+
+    /// "Later today" genuinely defers — until the kid watches or the next day.
+    func deferDeparture(dayKey: String = EngagementStore.todayKey()) {
+        var state = engagement.load()
+        state["departureDeferredDay"] = dayKey
+        engagement.persist(state)
+    }
+
+    func departureDeferredDay() -> String? {
+        engagement.load()["departureDeferredDay"] as? String
+    }
+
+    // MARK: - §14 stars into the Nest
+
+    func pendingNestDrop() -> Int {
+        ProgressStore.int(engagement.load()["pendingNestDrop"])
+    }
+
+    func markNestDropPlayed() {
+        var state = engagement.load()
+        state["pendingNestDrop"] = 0
+        engagement.persist(state)
+    }
+
     // MARK: - Eggs (§10, mirror of applyBuyEgg / applyHatch)
 
     static let eggWarmthTarget = 40

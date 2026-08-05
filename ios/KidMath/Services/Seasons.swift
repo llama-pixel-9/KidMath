@@ -34,6 +34,50 @@ enum Seasons {
         return "Away · back in \(first)"
     }
 
+    nonisolated static let order = ["spring", "summer", "autumn", "winter"]
+
+    nonisolated static func previous(_ season: String) -> String {
+        let index = order.firstIndex(of: season) ?? 0
+        return order[(index + 3) % 4]
+    }
+
+    /// "2026-autumn" — the key departure/return events are remembered under
+    /// (mirror of seasonKeyForDate in src/engagement/seasons.js).
+    nonisolated static func seasonKey(_ date: Date = Date()) -> String {
+        "\(Calendar.current.component(.year, from: date))-\(current(date))"
+    }
+
+    struct MigrationEvents {
+        let departures: [String]
+        let returns: [String]
+        let key: String
+    }
+
+    /// §11 events on Meadow open, derived from the calendar + seen-marks: a
+    /// departure is due when an OWNED migrant was here last season and is
+    /// gone now (send-off unseen); a return when she is back and the arrival
+    /// hasn't played. Away birds keep their perch and count toward everything.
+    nonisolated static func migrationEvents(
+        state: [String: Any],
+        ownedSpecies: [(id: String, raw: [String: Any])],
+        date: Date = Date()
+    ) -> MigrationEvents {
+        let season = current(date)
+        let key = seasonKey(date)
+        let departuresSeen = state["departuresSeen"] as? [String: Any] ?? [:]
+        let returnsSeen = state["returnsSeen"] as? [String: Any] ?? [:]
+        var departures: [String] = []
+        var returns: [String] = []
+        for species in ownedSpecies {
+            guard let seasons = species.raw["seasons"] as? [String] else { continue }
+            let here = seasons.contains(season)
+            let wasHere = seasons.contains(previous(season))
+            if !here, wasHere, departuresSeen[species.id] as? String != key { departures.append(species.id) }
+            if here, !wasHere, returnsSeen[species.id] as? String != key { returns.append(species.id) }
+        }
+        return MigrationEvents(departures: departures, returns: returns, key: key)
+    }
+
     /// Canopy/ground tints per season (the §12 hexes). `nil` season (flag
     /// off) keeps the base palette.
     struct Tint {

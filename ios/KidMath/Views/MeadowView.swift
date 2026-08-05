@@ -32,7 +32,34 @@ struct MeadowView: View {
     @State private var hoppingSpecies: String?
     @State private var performingSpecies: String?
     @State private var hatchOpen = false
+    /// §14 tier 3 (one at a time, stars first): the nest drop, a send-off in
+    /// progress, and a returning migrant's arrival flight.
+    @State private var nestDrop: NestDropState?
+    @State private var departPromptId: String?
+    @State private var departingId: String?
+    @State private var returningId: String?
+    /// §06: the one play-spot visit in progress (bird id + drift to the spot).
+    @State private var playVisit: PlayVisit?
+    @State private var playSpotsByZone: [String: [PlaySpot]] = [:]
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
+    struct NestDropState {
+        let sprites: Int
+        let pending: Int
+    }
+
+    struct PlaySpot {
+        let kind: String
+        let x: CGFloat
+        let y: CGFloat
+        let seconds: Double
+    }
+
+    struct PlayVisit: Equatable {
+        let speciesId: String
+        let dx: CGFloat
+        let dy: CGFloat
+    }
 
     struct Perch {
         let id: String
@@ -94,7 +121,18 @@ struct MeadowView: View {
             service.ensureStarter()
             flock = service
             perchById = Self.loadPerches(engine)
+            playSpotsByZone = Self.loadPlaySpots(engine)
+            #if DEBUG
+            // QA hook (dev flags convention): `-seedMeadowStars 12` banks a
+            // pretend flight so the nest-drop ceremony can be screenshotted.
+            let seed = UserDefaults.standard.integer(forKey: "seedMeadowStars")
+            if seed > 0 {
+                EngagementStore().recordSessionEnd(starsEarned: seed)
+                UserDefaults.standard.removeObject(forKey: "seedMeadowStars")
+            }
+            #endif
             refresh()
+            runOpeningCeremonies()
         }
         .sheet(item: $guideEntry) { entry in
             if let species = flock?.species(entry.id) {
@@ -109,6 +147,20 @@ struct MeadowView: View {
         .sheet(isPresented: $storeOpen) {
             if let flock {
                 GiveAHomeSheet(flock: flock, eggsEnabled: GamFlags.ceremonies) { refresh() }
+            }
+        }
+        .overlay {
+            if let departPromptId, let flock, let species = flock.species(departPromptId) {
+                let bird = birds.first { ($0["speciesId"] as? String) == departPromptId }
+                DeparturePromptView(
+                    species: species,
+                    birdName: bird.map(FlockService.birdName) ?? species.name,
+                    watch: { watchDeparture(departPromptId) },
+                    later: {
+                        flock.deferDeparture()
+                        self.departPromptId = nil
+                    }
+                )
             }
         }
         .sheet(isPresented: $hatchOpen) {
@@ -144,10 +196,113 @@ struct MeadowView: View {
                 if performingSpecies == pick { performingSpecies = nil }
             }
         }
+        // §06 play spots: every few minutes a bird drifts to a suitable spot
+        // in its zone, uses it, and goes back to its perch. One at a time.
+        .task {
+            guard GamFlags.roster else { return }
+            while !Task.isCancelled {
+                let gap = Double.random(in: MotionSpec.playVisitMinGapS...MotionSpec.playVisitMaxGapS)
+                try? await Task.sleep(for: .seconds(gap))
+                guard !Task.isCancelled, !lowMotion, playVisit == nil, departingId == nil else { continue }
+                let candidates = visibleBirds.compactMap { bird -> PlayVisit? in
+                    guard let id = bird["speciesId"] as? String,
+                          let species = flock?.species(id),
+                          let perch = perchById[bird["perchId"] as? String ?? ""],
+                          let spots = playSpotsByZone[perch.zone] else { return nil }
+                    let kinds = spotKinds(species.raw)
+                    guard let spot = spots.filter({ kinds.contains($0.kind) }).randomElement() else { return nil }
+                    return PlayVisit(speciesId: id, dx: spot.x - perch.x, dy: spot.y - perch.y)
+                }
+                guard let pick = candidates.randomElement() else { continue }
+                let seconds = 7.0
+                playVisit = pick
+                try? await Task.sleep(for: .seconds(seconds + 1.2))
+                if playVisit == pick { playVisit = nil }
+            }
+        }
     }
 
     private func refresh() {
         birds = flock?.birds() ?? []
+    }
+
+    private static func loadPlaySpots(_ engine: EngineBridge) -> [String: [PlaySpot]] {
+        var map: [String: [PlaySpot]] = [:]
+        for raw in (try? engine.playSpots()) ?? [] {
+            guard let zone = raw["zone"] as? String else { continue }
+            map[zone, default: []].append(PlaySpot(
+                kind: raw["kind"] as? String ?? "",
+                x: CGFloat(ProgressStore.double(raw["x"])),
+                y: CGFloat(ProgressStore.double(raw["y"])),
+                seconds: ProgressStore.double(raw["seconds"], default: 7)
+            ))
+        }
+        return map
+    }
+
+    /// Which play-spot kinds suit a species — mirror of playSpotKindsFor in
+    /// src/engagement/meadow/birdBehaviors.js.
+    private func spotKinds(_ speciesRaw: [String: Any]) -> Set<String> {
+        let perchTypes = Set(speciesRaw["perchTypes"] as? [String] ?? [])
+        var kinds: Set<String> = ["birdBath"]
+        if !perchTypes.isDisjoint(with: ["pondEdge", "reeds"]) { kinds.insert("shallows") }
+        if !perchTypes.isDisjoint(with: ["highBranch", "lowBranch"]) { kinds.insert("feeder") }
+        if !perchTypes.isDisjoint(with: ["ground", "log"]) { kinds.insert("dustPatch") }
+        return kinds
+    }
+
+    /// §14 queue on open: stars land in the Nest first (never skippable, and
+    /// short enough not to need it); migration events wait their turn. A
+    /// departure deferred with "Later today" waits until watched or the next
+    /// day — a new day means it was missed: empty perch, chip, no screen.
+    private func runOpeningCeremonies() {
+        Task {
+            guard let flock else { return }
+            let pending = flock.pendingNestDrop()
+            if pending > 0 {
+                if GamFlags.meadowMotion, !lowMotion {
+                    let sprites = min(MotionSpec.starsSpriteCap, pending)
+                    nestDrop = NestDropState(sprites: sprites, pending: pending)
+                    let landing = MotionSpec.starsPerStarMs + sprites * MotionSpec.starsStaggerMs
+                    try? await Task.sleep(for: .milliseconds(max(landing, MotionSpec.nestCountUpMs) + 400))
+                    nestDrop = nil
+                }
+                flock.markNestDropPlayed()
+            }
+            guard GamFlags.ceremonies else { return }
+            let events = flock.migrationEvents()
+            if let departure = events.departures.first {
+                if let deferred = flock.departureDeferredDay(), deferred != EngagementStore.todayKey() {
+                    events.departures.forEach { flock.markDepartureSeen($0, key: events.key) }
+                    refresh()
+                } else if flock.departureDeferredDay() == nil {
+                    departPromptId = departure
+                }
+                return
+            }
+            if let arrival = events.returns.first, !night {
+                flock.markReturnSeen(arrival, key: events.key)
+                returningId = arrival
+                refresh()
+                try? await Task.sleep(for: .milliseconds(MotionSpec.birdArrivesMs + MotionSpec.nameBubbleHoldMs))
+                returningId = nil
+            }
+        }
+    }
+
+    /// §11 the circle and the V: the send-off plays in the scene, then the
+    /// perch stays hers and stays empty.
+    private func watchDeparture(_ speciesId: String) {
+        departPromptId = nil
+        departingId = speciesId
+        Task {
+            try? await Task.sleep(for: .milliseconds(lowMotion ? 400 : MotionSpec.departureMs))
+            if let flock {
+                flock.markDepartureSeen(speciesId, key: flock.migrationEvents().key)
+            }
+            departingId = nil
+            refresh()
+        }
     }
 
     private static func loadPerches(_ engine: EngineBridge) -> [String: Perch] {
@@ -259,11 +414,14 @@ struct MeadowView: View {
                 ForEach(zones, id: \.self) { zoneId in
                     ZoneBackdropView(
                         zoneId: zoneId,
-                        nestBalance: zoneId == "meadow" ? nestBalance : nil,
+                        nestBalance: zoneId == "meadow" ? nestBalance - (nestDrop?.pending ?? 0) : nil,
                         season: season
                     )
                     .frame(width: Self.zoneW, height: Self.zoneH)
                     .overlay(alignment: .topLeading) {
+                        if zoneId == "meadow", let nestDrop {
+                            NestDropView(sprites: nestDrop.sprites)
+                        }
                         if zoneId == "meadow", GamFlags.ceremonies, let flock, flock.egg() != nil {
                             EggSpriteView(
                                 warmthPercent: flock.eggWarmthPercent(),
@@ -286,12 +444,20 @@ struct MeadowView: View {
                 if let perch = perchById[bird["perchId"] as? String ?? ""],
                    let zi = zoneIds.firstIndex(of: perch.zone) {
                     let speciesId = bird["speciesId"] as? String ?? ""
+                    let drift = playVisit?.speciesId == speciesId
+                        ? CGSize(width: playVisit?.dx ?? 0, height: playVisit?.dy ?? 0)
+                        : .zero
                     PerchedBirdView(
                         depth: perch.depth,
                         asleep: night && !["barnOwl", "snowyOwl"].contains(speciesId),
                         bob: bobRig(bird),
                         hopping: hoppingSpecies == speciesId,
-                        performing: performingSpecies == speciesId
+                        performing: performingSpecies == speciesId,
+                        performStyle: rigStyle(speciesId),
+                        drift: drift,
+                        departing: departingId == speciesId,
+                        arriving: returningId == speciesId,
+                        lowMotion: lowMotion
                     )
                     .position(x: CGFloat(zi) * Self.zoneW + perch.x, y: perch.y - 46 * perch.depth * 0.44)
                     .onTapGesture { tap(bird, perch: perch, zoneIndex: zi) }
@@ -337,9 +503,25 @@ struct MeadowView: View {
     private var night: Bool { GamFlags.ceremonies && Seasons.isNight() }
     private var lowMotion: Bool { reduceMotion || app.calmMode }
     private var visibleBirds: [[String: Any]] {
-        // §11: an away migrant's perch stays hers and stays empty.
+        // §11: an away migrant's perch stays hers and stays empty — except
+        // during her own send-off flight.
         guard GamFlags.ceremonies else { return birds }
-        return birds.filter { !(flock?.isAway($0["speciesId"] as? String ?? "") ?? false) }
+        return birds.filter { bird in
+            let id = bird["speciesId"] as? String ?? ""
+            if id == departingId { return true }
+            return !(flock?.isAway(id) ?? false)
+        }
+    }
+
+    private func rigStyle(_ speciesId: String) -> PerchedBirdView.RigStyle {
+        let signature = (flock?.species(speciesId)?.raw["signature"] as? [String: Any])?["id"] as? String
+        switch signature {
+        case "bounceFlight", "hoverVanish", "dive", "zoneLoop", "silentCircuit",
+             "waterRocket", "hoverStoop", "thermalRide":
+            return .arc
+        default:
+            return .wiggle
+        }
     }
 
     /// Free 1:1 drag across earned zones; beyond a bound the scene follows at
@@ -455,17 +637,27 @@ struct BirdSpriteView: View {
 
 
 /// One perched bird with its animation layers (§09/§14): the saved idle bob,
-/// the 200ms tap hop, and a placeholder "performing" wiggle standing in for
-/// the commissioned signature rigs. Sleeping birds are silhouettes.
+/// the 200ms tap hop, a placeholder signature rig in two archetypes (ground
+/// wiggle / flight arc), the play-spot drift, the §11 send-off flight, and
+/// the arrival glide. Sleeping birds are silhouettes.
 struct PerchedBirdView: View {
+    enum RigStyle { case wiggle, arc }
+
     let depth: Double
     var asleep = false
     var bob: MeadowView.BobRig?
     var hopping = false
     var performing = false
+    var performStyle: RigStyle = .wiggle
+    var drift: CGSize = .zero
+    var departing = false
+    var arriving = false
+    var lowMotion = false
 
     @State private var bobbing = false
     @State private var performPhase = false
+    @State private var departPhase = 0
+    @State private var arrived = false
 
     var body: some View {
         let size = 46 * depth
@@ -473,8 +665,15 @@ struct PerchedBirdView: View {
             .frame(width: size, height: size * 0.87)
             .rotationEffect(.degrees(performing ? (performPhase ? 8 : -8) : (hopping ? 2 : 0)))
             .offset(y: yOffset)
-            .animation(.spring(duration: 0.2), value: hopping)
+            .offset(performing && performStyle == .arc ? CGSize(width: performPhase ? 46 : -46, height: 0) : .zero)
+            .offset(drift)
+            .offset(departOffset)
+            .offset(arriving && !arrived ? CGSize(width: -380, height: -220) : .zero)
+            .opacity(departing && departPhase >= 3 ? 0 : (arriving && !arrived ? 0 : 1))
+            .animation(.spring(duration: Double(MotionSpec.tapHopMs) / 1000), value: hopping)
             .animation(.easeInOut(duration: 0.3), value: performPhase)
+            .animation(.easeInOut(duration: 1.2), value: drift)
+            .animation(.easeInOut(duration: 0.9), value: departPhase)
             .onAppear {
                 if let bob {
                     withAnimation(
@@ -482,6 +681,11 @@ struct PerchedBirdView: View {
                         .repeatForever(autoreverses: true)
                         .delay(bob.delay)
                     ) { bobbing = true }
+                }
+                if arriving {
+                    withAnimation(.easeOut(duration: lowMotion ? 0.12 : Double(MotionSpec.birdArrivesMs) / 1000)) {
+                        arrived = true
+                    }
                 }
             }
             .onChange(of: performing) { _, now in
@@ -494,11 +698,117 @@ struct PerchedBirdView: View {
                     performPhase = false
                 }
             }
+            .onChange(of: departing) { _, now in
+                guard now else { departPhase = 0; return }
+                // Lift, one circle of the zone, then join the V (§11).
+                Task {
+                    for phase in 1...3 where departing {
+                        departPhase = phase
+                        try? await Task.sleep(for: .milliseconds(900))
+                    }
+                }
+            }
+    }
+
+    private var departOffset: CGSize {
+        switch departPhase {
+        case 1: return CGSize(width: 170, height: -130)
+        case 2: return CGSize(width: -80, height: -230)
+        case 3: return CGSize(width: 620, height: -420)
+        default: return .zero
+        }
     }
 
     private var yOffset: CGFloat {
-        if hopping { return -14 }
+        if hopping { return MotionSpec.tapHopRiseY }
         if performing { return performPhase ? -22 : -6 }
-        return bobbing ? -5 : 0
+        return bobbing ? MotionSpec.idleBobRiseY : 0
+    }
+}
+
+/// §14 tier 3: one Sun diamond per star arcs from the top of the screen into
+/// the Nest — capped sprites, 40ms stagger, and the one ceremony that is not
+/// tap-skippable (600ms is short enough not to need it).
+struct NestDropView: View {
+    let sprites: Int
+
+    var body: some View {
+        ZStack(alignment: .topLeading) {
+            ForEach(0..<sprites, id: \.self) { index in
+                NestDropSprite(index: index)
+            }
+        }
+        .allowsHitTesting(false)
+    }
+}
+
+private struct NestDropSprite: View {
+    let index: Int
+    @State private var fallen = false
+
+    var body: some View {
+        Rectangle()
+            .fill(Theme.sun)
+            .frame(width: 16, height: 16)
+            .rotationEffect(.degrees(45))
+            .cornerRadius(3)
+            .position(
+                x: 330 + CGFloat((index % 7) - 3) * (fallen ? 6 : 44),
+                y: fallen ? 252 : -24
+            )
+            .opacity(fallen ? 0 : 1)
+            .onAppear {
+                withAnimation(
+                    .easeInOut(duration: Double(MotionSpec.starsPerStarMs) / 1000)
+                    .delay(Double(index) * Double(MotionSpec.starsStaggerMs) / 1000)
+                ) { fallen = true }
+            }
+    }
+}
+
+/// §11: one gentle prompt on the morning a visitor goes. "Later today"
+/// genuinely defers; there are no countdowns and no missed-event screens.
+struct DeparturePromptView: View {
+    @Environment(\.theme) private var theme
+    let species: FlockService.Species
+    let birdName: String
+    let watch: () -> Void
+    let later: () -> Void
+
+    private var pronoun: String { species.raw["pronoun"] as? String ?? "she" }
+
+    var body: some View {
+        ZStack {
+            Theme.ink.opacity(0.3).ignoresSafeArea()
+            VStack(spacing: 12) {
+                BirdSpriteView().frame(width: 84, height: 73)
+                Text("\(birdName) is leaving today")
+                    .font(theme.displayFont(size: 24))
+                    .foregroundStyle(Theme.ink)
+                    .multilineTextAlignment(.center)
+                Text("\(pronoun == "she" ? "She" : "He") flies south for the season and comes back every year. Come and see \(pronoun == "she" ? "her" : "him") off?")
+                    .font(theme.bodyFont(size: 15, weight: .semibold))
+                    .foregroundStyle(Theme.ink.opacity(0.8))
+                    .multilineTextAlignment(.center)
+                Button(action: watch) {
+                    Text("Come and see \(pronoun == "she" ? "her" : "him") off")
+                        .font(theme.displayFont(size: 18))
+                        .frame(maxWidth: .infinity, minHeight: 52)
+                        .background(RoundedRectangle(cornerRadius: 16).fill(Theme.deepTeal).offset(y: 4))
+                        .background(RoundedRectangle(cornerRadius: 16).fill(Theme.teal))
+                        .foregroundStyle(Theme.cream)
+                }
+                .buttonStyle(SpringButtonStyle())
+                .padding(.top, 4)
+                Button("Later today", action: later)
+                    .font(theme.bodyFont(size: 15, weight: .semibold))
+                    .foregroundStyle(Theme.ink.opacity(0.8))
+                    .frame(minHeight: 44)
+            }
+            .padding(26)
+            .frame(maxWidth: 360)
+            .background(RoundedRectangle(cornerRadius: 26).fill(Color(red: 1, green: 0.99, blue: 0.96)))
+            .padding()
+        }
     }
 }

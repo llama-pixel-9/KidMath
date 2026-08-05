@@ -22,7 +22,8 @@ const OBJECTS = ["🍎", "⭐", "🐟", "🌸", "🟢", "🔵", "🍪", "🐢"];
 // Spec note: `❤️` reads as decoration rather than a countable object, so it is
 // no longer in the pool.
 
-const DOTS = "⚫";
+// Orange, not black: `⚫` sat outside the brand palette on every theme.
+const DOTS = "🟠";
 const NAMES = ["Sam", "Mina", "Luca", "Nia", "Theo", "Ava"];
 
 const RANGES = [

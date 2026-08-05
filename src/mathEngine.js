@@ -492,6 +492,9 @@ export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE, options 
     allowWordProblems,
     recentBankItemIds: Array.isArray(saved.recentBankItemIds) ? saved.recentBankItemIds.slice(-RECENT_BANK_WINDOW) : [],
     bankItemStats: saved.bankItemStats && typeof saved.bankItemStats === "object" ? saved.bankItemStats : {},
+    // QA-only: force one generator variety and skip the bank, so a reported
+    // item shape can be reproduced deterministically (`?qaVariety=` on web).
+    ...(options.qaVariety ? { qaVariety: options.qaVariety } : {}),
   };
 }
 
@@ -542,6 +545,7 @@ export function getNextQuestion(session) {
     targetSubskill,
     allowWordProblems: session.allowWordProblems !== false,
     recentBankItemIds: session.recentBankItemIds || [],
+    ...(session.qaVariety ? { varietyId: session.qaVariety, consultBankFamilies: [] } : {}),
   });
   q.scheduler = { targetSubskill, itemFamily: scheduledFamily };
   q.nextFamilyCursor = nextCursor;

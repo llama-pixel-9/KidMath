@@ -54,11 +54,29 @@ function getWeakestSubskill(session, modeConfig) {
 }
 
 function getMasterySnapshot(session, modeConfig) {
-  const weakestSubskill = getWeakestSubskill(session, modeConfig);
-  return {
-    weakestSubskill,
-    weakestScore: getSkillMasteryRate(session.skillMastery?.[weakestSubskill]),
-  };
+  // Level moves are judged over the subskills actually SERVED this session.
+  // Unserved subskills default to 0.5, and not every subskill is generatable
+  // at every level — counting them meant the weakest score could never reach
+  // the 0.8 promotion gate, holding a kid at the level forever (money, time,
+  // angles and five other modes were permanently capped at level 1).
+  // Targeting deliberately still uses the full list (getWeakestSubskill), so
+  // unserved subskills keep getting requested from the generator.
+  const skills = (modeConfig.subskills || Object.keys(session.skillMastery || {})).filter(
+    (skill) => (session.skillMastery?.[skill]?.attempts ?? 0) > 0
+  );
+  if (skills.length === 0) {
+    return { weakestSubskill: getWeakestSubskill(session, modeConfig), weakestScore: 0.5 };
+  }
+  let weakestSubskill = skills[0];
+  let weakestScore = Number.POSITIVE_INFINITY;
+  for (const skill of skills) {
+    const score = getSkillMasteryRate(session.skillMastery?.[skill]);
+    if (score < weakestScore) {
+      weakestScore = score;
+      weakestSubskill = skill;
+    }
+  }
+  return { weakestSubskill, weakestScore };
 }
 
 /** The n weakest subskills by observed rate — a Fledging Flight targets these. */
@@ -81,7 +99,16 @@ function getNextFamily(session, modeConfig) {
 function cloneQuestionForReview(question, dueAt) {
   return {
     ...question,
+    // Choices are rebuilt fresh when the retry is served (new shuffle, new
+    // distractors). Keep the originals as `reviewChoices`: non-numeric choice
+    // answers ("2/3", "No", "18 cm") can't be rebuilt from the answer alone,
+    // and regeneration throwing used to crash the session — with the poison
+    // item persisted in the saved mistake bank.
     choices: undefined,
+    reviewChoices:
+      Array.isArray(question.choices) && question.choices.length >= 2
+        ? question.choices
+        : question.reviewChoices,
     dueAt,
     retryCount: (question.retryCount || 0) + 1,
     itemKey: question.itemKey || buildItemKey(question),
@@ -483,9 +510,22 @@ export function getNextQuestion(session) {
     const retryQ = { ...dueReview, mode: dueReview.mode || session.mode };
     retryQ.itemKey = retryQ.itemKey || buildItemKey(retryQ);
     if (questionAnswerType(retryQ) === "choice") {
-      retryQ.choices = generateChoices(retryQ.answer, 4, retryQ);
+      try {
+        retryQ.choices = generateChoices(retryQ.answer, 4, retryQ);
+      } catch {
+        // Regeneration can't rebuild options around a non-numeric answer.
+        // Reshuffle the originals saved at mistake time instead of crashing.
+        retryQ.choices =
+          Array.isArray(retryQ.reviewChoices) && retryQ.reviewChoices.length >= 2
+            ? shuffleArray([...retryQ.reviewChoices])
+            : null;
+      }
     }
-    return { question: retryQ, isRetry: true };
+    if (questionAnswerType(retryQ) !== "choice" || retryQ.choices) {
+      return { question: retryQ, isRetry: true };
+    }
+    // Legacy poison entry (persisted before reviewChoices existed): options
+    // can't be rebuilt at all — fall through and serve a fresh question.
   }
 
   const modeConfig = getModeConfig(session.mode);

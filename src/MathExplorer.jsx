@@ -53,6 +53,7 @@ import {
 import { getModeConfig } from "./modes";
 import { ensureModeLoaded } from "./itemBank.js";
 import { isVerbalPrompt } from "./modes/helpers";
+import { emojiPromptLines } from "./promptLayout";
 import { saveProgress, loadProgress, mergeLocalToCloud } from "./progressStore";
 import { recordSessionEnd, currentStreak, starsToday, starBalance, isFirstWeek } from "./engagement/engagementStore";
 import JourneyMap from "./engagement/JourneyMap.jsx";
@@ -185,6 +186,19 @@ function qaUpdate(patch) {
   if (!QA_HOOKS) return;
   window.__kidmathQA = { ...(window.__kidmathQA || {}), ...patch };
 }
+
+// `?qaVariety=tenFrameBuild` forces every fresh question onto one generator
+// variety (bank lookups skipped), so a reported item shape can be reproduced
+// deterministically instead of replaying sessions until the RNG serves it.
+function getQaVariety() {
+  if (!QA_HOOKS) return null;
+  try {
+    return new URLSearchParams(window.location.search || "").get("qaVariety") || null;
+  } catch {
+    return null;
+  }
+}
+const QA_VARIETY = typeof window === "undefined" ? null : getQaVariety();
 
 function CircularProgress({ current, total, level }) {
   const { theme } = useTheme();
@@ -787,6 +801,35 @@ function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
   }
 
   if (hasVerbalPrompt) {
+    const runLines = emojiPromptLines(promptText);
+    if (runLines) {
+      return (
+        <div className="text-center space-y-2">
+          <div className="w-fit max-w-full mx-auto text-left space-y-1">
+            {runLines.map((line, index) => (
+              <p
+                key={`${line.text}-${index}`}
+                className={`${
+                  line.isRun ? "whitespace-nowrap text-lg sm:text-xl" : "text-xl sm:text-2xl"
+                } font-extrabold ${theme.textPrimary} leading-snug`}
+              >
+                {line.text}
+              </p>
+            ))}
+          </div>
+          {q.subPrompt && (
+            <p className={`text-sm font-bold uppercase tracking-wide ${theme.textMuted}`}>
+              {q.subPrompt}
+            </p>
+          )}
+          {showAnswer && (
+            <div className="mt-2 text-4xl sm:text-5xl font-extrabold">
+              <AnswerSlot feedback={feedback} revealAnswer={revealAnswer} />
+            </div>
+          )}
+        </div>
+      );
+    }
     const promptLines = promptText
       .split(/(?<=[.!?])\s+/)
       .map((line) => line.trim())
@@ -982,6 +1025,7 @@ export default function MathExplorer({ initialMode }) {
     createAdaptiveSession(startMode, undefined, {
       allowWordProblems: loadAllowWordProblemsSync(),
       fledging: fledgingEnabled(),
+      qaVariety: QA_VARIETY,
     })
   );
   const [currentQ, setCurrentQ] = useState(null);
@@ -1066,6 +1110,7 @@ export default function MathExplorer({ initialMode }) {
     const newSession = createAdaptiveSession(targetMode, undefined, {
       allowWordProblems: allowWordProblemsOverride,
       fledging: gamFledging,
+      qaVariety: QA_VARIETY,
     });
     setSession(newSession);
     setFeedback(null);
@@ -1116,14 +1161,17 @@ export default function MathExplorer({ initialMode }) {
     ensureModeLoaded(mode);
   }, [mode]);
 
+  // Keyed on the user's id, not the user object: the auth provider re-emits
+  // on tab refocus, and a mid-session rebuild here is a kid losing their 7/15.
+  const userId = user?.id;
   useEffect(() => {
-    if (!user) return;
+    if (!userId) return;
     let cancelled = false;
     (async () => {
-      await mergeLocalToCloud(user.id);
+      await mergeLocalToCloud(userId);
       const [saved, cloudAllowWordProblems] = await Promise.all([
         loadProgress(mode),
-        loadAllowWordProblems(user.id),
+        loadAllowWordProblems(userId),
       ]);
       if (cancelled) return;
       if (cloudAllowWordProblems !== allowWordProblems) {
@@ -1134,6 +1182,7 @@ export default function MathExplorer({ initialMode }) {
       const newSession = createAdaptiveSession(mode, undefined, {
         allowWordProblems: cloudAllowWordProblems,
         fledging: gamFledging,
+        qaVariety: QA_VARIETY,
       });
       newSession.level = saved.level;
       newSession.mistakeBank = saved.mistakeBank;
@@ -1147,7 +1196,7 @@ export default function MathExplorer({ initialMode }) {
     // the cloud on login; subsequent toggle changes rebuild the session
     // directly in handleAllowWordProblemsChange.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [user, mode, loadNextQuestion]);
+  }, [userId, mode, loadNextQuestion]);
 
   useEffect(() => {
     if (user) return;

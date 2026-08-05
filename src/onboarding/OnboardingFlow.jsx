@@ -17,6 +17,7 @@ import {
   KID_GRADES,
   fetchKids,
   addKid,
+  requestParentalConsent,
   setActiveKid,
 } from "../kidProfiles";
 
@@ -62,6 +63,10 @@ function KidStep({ onDone, kidCount }) {
   const [added, setAdded] = useState([]);
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
+  // COPPA email-plus: the first kid on an account waits for the parent to
+  // confirm the emailed direct notice. While pending, no profile exists
+  // anywhere — the details sit server-side awaiting the confirmation tap.
+  const [pendingConsent, setPendingConsent] = useState(null);
   const { user } = useAuth();
 
   const complete = firstName.trim().length > 0 && age && grade;
@@ -69,6 +74,10 @@ function KidStep({ onDone, kidCount }) {
 
   const save = async () => {
     const kid = await addKid(user.id, { firstName, age, grade });
+    if (kid.pendingConsent) {
+      setPendingConsent(kid);
+      return null;
+    }
     setAdded((k) => [...k, kid]);
     setFirstName("");
     setAge(null);
@@ -81,7 +90,11 @@ function KidStep({ onDone, kidCount }) {
     setBusy(true);
     try {
       let kids = added;
-      if (complete) kids = [...added, await save()];
+      if (complete) {
+        const kid = await save();
+        if (!kid) return; // consent email sent — the pending panel takes over
+        kids = [...added, kid];
+      }
       if (!kids.length) {
         setError("Add a first name, age and grade to continue.");
         return;
@@ -93,6 +106,66 @@ function KidStep({ onDone, kidCount }) {
       setBusy(false);
     }
   };
+
+  // After the parent taps the emailed confirmation link, the profile exists
+  // server-side (created in one transaction with the consent record) —
+  // re-fetch and continue.
+  const checkConfirmed = async () => {
+    setError("");
+    setBusy(true);
+    try {
+      const kids = await fetchKids(user.id);
+      const found = kids.find((k) => k.first_name === pendingConsent.firstName);
+      if (found) {
+        setPendingConsent(null);
+        onDone([found]);
+      } else {
+        setError("We haven't received your confirmation yet — tap the link in the email first.");
+      }
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  if (pendingConsent) {
+    return (
+      <main className="flex-1 max-w-3xl mx-auto w-full px-4 py-10">
+        <h1 className="font-display font-semibold text-4xl text-ink m-0">Check your email</h1>
+        <p className="mt-3 text-base font-semibold text-ink/70 max-w-xl">
+          We sent the parental consent notice to <strong>{user.email}</strong>. Because larkit is
+          made for kids, the law asks us to get your consent before we create{" "}
+          {pendingConsent.firstName}'s profile — one tap on the link in that email does it.
+        </p>
+        <p className="mt-3 text-sm font-semibold text-ink/60 max-w-xl">
+          Until you confirm, nothing about {pendingConsent.firstName} is stored in a profile.
+          If you do nothing, we delete what you typed within 14 days.{" "}
+          <Link to="/parental-consent" className="underline text-teal">Read the notice</Link>
+        </p>
+        {error && <p className="mt-4 text-sm font-bold text-ember">{error}</p>}
+        <div className="mt-8 flex items-center gap-4 flex-wrap">
+          <button
+            type="button"
+            disabled={busy}
+            className="px-8 h-14 bg-teal text-cream font-display font-semibold text-xl rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer disabled:opacity-40"
+            onClick={checkConfirmed}
+          >
+            I've confirmed — continue
+          </button>
+          <button
+            type="button"
+            disabled={busy}
+            className="text-teal font-bold text-base cursor-pointer bg-transparent border-none p-0"
+            onClick={() => {
+              setError("");
+              requestParentalConsent(pendingConsent).catch((e) => setError(e.message));
+            }}
+          >
+            Resend the email
+          </button>
+        </div>
+      </main>
+    );
+  }
 
   return (
     <main className="flex-1 max-w-3xl mx-auto w-full px-4 py-10">

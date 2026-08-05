@@ -9,14 +9,24 @@ export function AuthProvider({ children }) {
   useEffect(() => {
     if (!supabase) return;
 
+    // supabase-js re-emits auth events on every tab refocus (token refresh),
+    // each carrying a NEW user object for the same signed-in user. Swapping
+    // the context value on every event made everything keyed off `user`
+    // re-run — mid-session rebuilds included — so the same identity keeps the
+    // same object reference.
+    const applySession = (session) => {
+      const next = session?.user ?? null;
+      setUser((prev) => (prev?.id === next?.id ? prev : next));
+    };
+
     supabase.auth.getSession().then(({ data: { session } }) => {
-      setUser(session?.user ?? null);
+      applySession(session);
       setLoading(false);
     });
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
       (_event, session) => {
-        setUser(session?.user ?? null);
+        applySession(session);
       }
     );
 

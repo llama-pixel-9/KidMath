@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { digitKeyClass, PAD_BACKSPACE } from "./kit";
+import { digitKeyClass, PAD_BACKSPACE, PAD_GO } from "./kit";
 import ConfettiBurst from "./ConfettiBurst.jsx";
 
 /**
@@ -115,16 +115,23 @@ export default function TenFrame({
 
       {mode === "build" ? (
         <motion.button
-          className="relative min-h-[56px] w-full rounded-[18px] bg-teal text-cream text-xl font-display font-semibold shadow-[0_5px_0_#064A41] btn-press cursor-pointer select-none disabled:opacity-40"
+          className={`${PAD_GO} w-full`}
           whileHover={lowMotionMode ? undefined : { scale: 1.03 }}
           whileTap={{ scale: 0.95 }}
           onClick={submit}
           disabled={locked}
           aria-label="Submit answer"
         >
-          Go{added.size > 0 ? ` (${added.size} added)` : ""}
+          Go
         </motion.button>
       ) : (
+        <>
+        <div
+          className="relative w-full pad-display rounded-3xl bg-white shadow-[0_4px_0_#14231F0f] flex items-center justify-center font-display font-semibold text-4xl text-ink"
+          aria-live="polite"
+        >
+          {entry === "" ? <span className="text-ink/30">—</span> : entry}
+        </div>
         <div className="grid grid-cols-3 gap-2 w-full">
           {["1", "2", "3", "4", "5", "6", "7", "8", "9"].map((d) => (
             <motion.button
@@ -156,15 +163,16 @@ export default function TenFrame({
             0
           </motion.button>
           <motion.button
-            className="relative min-h-[56px] rounded-[18px] bg-teal text-cream text-xl font-display font-semibold shadow-[0_5px_0_#064A41] btn-press cursor-pointer select-none disabled:opacity-40"
+            className={PAD_GO}
             whileTap={{ scale: 0.9 }}
             onClick={submit}
             disabled={locked || entry === ""}
             aria-label="Submit answer"
           >
-            {entry === "" ? "Go" : entry}
+            Go
           </motion.button>
         </div>
+        </>
       )}
     </section>
   );

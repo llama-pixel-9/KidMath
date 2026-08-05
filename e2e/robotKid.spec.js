@@ -4,12 +4,14 @@
  *
  * What each session asserts:
  *  - every question RENDERS something (text in the question card or a figure)
- *  - answering the engine's own correct answer through the widget SCORES
- *    correct — catching display-vs-scoring mismatches ("19 + 14 → 5"),
- *    broken widget input plumbing, and choice sets missing their answer
- *  - symbolic prompts that state a complete claim ("a + b = ?") agree with
- *    the scored answer — the display-consistency oracle, computed from the
- *    rendered text, independent of the engine
+ *  - THE KID ORACLE: when the on-screen question is a pure symbolic claim,
+ *    the robot computes the answer from the RENDERED DOM text — never from
+ *    engine internals — submits it, and the app must score it correct. If
+ *    the pixels say "19 + 14", the robot answers 33 like a kid would; an app
+ *    that wanted 5 fails loudly. Also fails when the kid-computed answer
+ *    isn't even among the choices.
+ *  - for non-symbolic questions (word problems, figures), the engine's own
+ *    answer through the widget must score correct — the plumbing check
  *  - the session completes (no crashes, no stuck states, retries included)
  *  - zero uncaught page errors and zero console.error calls
  *
@@ -38,24 +40,68 @@ const IGNORED_CONSOLE = [
   /Failed to load resource.*40[13]/,
 ];
 
-/** Independent display oracle: a prompt that states a complete symbolic
- *  claim must agree with the engine's answer. */
-function displayOracle(question) {
-  const prompt = String(question.display?.promptText ?? "").trim();
-  const plain = prompt.match(/^(\d+)\s*([+−-])\s*(\d+)\s*=\s*\?$/);
-  if (plain) {
-    const [, a, op, b] = plain;
-    return op === "+" ? Number(a) + Number(b) : Number(a) - Number(b);
+/**
+ * The kid oracle: compute the answer the way a HUMAN would — from the
+ * question as actually RENDERED on screen, never from engine internals.
+ * Returns null when the on-screen question isn't a pure symbolic claim
+ * (word problems, figures) — those fall back to the plumbing check.
+ *
+ * This is the net for the "19 + 14 → correct answer is 5" class: the engine's
+ * answer scores correct by construction, but a kid computes from the pixels.
+ * If the pixels say 19 + 14, the kid answers 33, and the app MUST agree.
+ */
+function kidOracle(domText, answerType) {
+  // Collapse the rendered text (the vertical digit grid emits one span per
+  // digit) and normalise the minus/multiply/divide glyphs.
+  const s = domText
+    .replace(/\s+/g, "")
+    .replace(/[−–]/g, "-")
+    .replace(/[×x]/g, "*")
+    .replace(/÷/g, "/")
+    .replace(/[_■]/g, "?");
+  if (/[A-Za-z]/.test(s)) return null; // words → not a pure symbolic claim
+
+  const apply = (a, op, b) =>
+    op === "+" ? a + b : op === "-" ? a - b : op === "*" ? a * b : b !== 0 ? a / b : null;
+
+  // Complete claim, unknown result: "19+14=?" or the vertical grid "19+14?"
+  let m = s.match(/^(\d+)([+\-*/])(\d+)(=\?|\?|=)?$/);
+  if (m) return apply(Number(m[1]), m[2], Number(m[3]));
+
+  // Unknown operand: "?+7=11" / "19-?=5"
+  m = s.match(/^\?([+\-*/])(\d+)=(\d+)$/);
+  if (m) {
+    const [, op, b, c] = m;
+    return op === "+" ? Number(c) - Number(b)
+      : op === "-" ? Number(c) + Number(b)
+      : op === "*" ? Number(c) / Number(b)
+      : Number(c) * Number(b);
   }
-  const missing = prompt.match(/^\?\s*([+−-])\s*(\d+)\s*=\s*(\d+)$/) ||
-    prompt.match(/^(\d+)\s*([+−-])\s*\?\s*=\s*(\d+)$/);
-  if (missing) {
-    // "? + b = c" → c − b · "a + ? = c" → c − a (and the − analogues)
-    const nums = prompt.match(/\d+/g).map(Number);
-    const op = prompt.includes("−") || prompt.includes("-") ? "−" : "+";
-    const startsUnknown = prompt.startsWith("?");
-    if (op === "+") return nums[1] - nums[0];
-    return startsUnknown ? nums[1] + nums[0] : nums[0] - nums[1];
+  m = s.match(/^(\d+)([+\-*/])\?=(\d+)$/);
+  if (m) {
+    const [, a, op, c] = m;
+    return op === "+" ? Number(c) - Number(a)
+      : op === "-" ? Number(a) - Number(c)
+      : op === "*" ? Number(c) / Number(a)
+      : Number(a) / Number(c);
+  }
+
+  // Unknown operator: "5?3=8" → "+" or "-"
+  m = s.match(/^(\d+)\?(\d+)=(\d+)$/);
+  if (m) {
+    const [a, b, c] = [Number(m[1]), Number(m[2]), Number(m[3])];
+    if (a + b === c) return "+";
+    if (a - b === c) return "−";
+    return null;
+  }
+
+  // Bare comparison "24?42" answered through the symbol picker.
+  if (answerType === "symbolSelect") {
+    m = s.match(/^(\d+)\?(\d+)$/);
+    if (m) {
+      const [a, b] = [Number(m[1]), Number(m[2])];
+      return a < b ? "<" : a > b ? ">" : "=";
+    }
   }
   return null;
 }
@@ -94,7 +140,15 @@ for (const mode of MODES) {
           .waitForFunction(
             (last) => {
               const s = window.__kidmathQA;
-              return s && (s.done || (s.seq || 0) > last) ? JSON.parse(JSON.stringify(s)) : null;
+              if (!s) return null;
+              if (s.done) return JSON.parse(JSON.stringify(s));
+              // Wait until the CURRENT question's card is in the DOM — the
+              // exiting card (old question + revealed answer) hangs around
+              // during the AnimatePresence transition and must never be read.
+              const mounted =
+                (s.seq || 0) > last &&
+                document.querySelector(`[aria-label="Math question"][data-qa-seq="${s.seq}"]`);
+              return mounted ? JSON.parse(JSON.stringify(s)) : null;
             },
             lastSeq,
             { timeout: 25_000 }
@@ -106,23 +160,27 @@ for (const mode of MODES) {
         const label = `q${qa.seq}${qa.isRetry ? " (retry)" : ""} [${q.answerType || "choice"}] "${String(q.display?.promptText ?? "").slice(0, 60)}"`;
 
         // 1. Render check: the question must put SOMETHING in front of the kid.
-        const hasContent = await page.evaluate(() => {
+        const rendered = await page.evaluate((seq) => {
+          const card = document.querySelector(`[aria-label="Math question"][data-qa-seq="${seq}"]`);
           const main = document.querySelector("main") || document.body;
-          const text = (main.innerText || "").replace(/\s+/g, " ");
-          return text.trim().length > 0 || Boolean(main.querySelector("svg, img, canvas"));
-        });
-        if (!hasContent) problems.push(`nothing rendered for ${label}`);
+          return {
+            questionText: card ? card.innerText || "" : "",
+            hasContent:
+              (main.innerText || "").trim().length > 0 ||
+              Boolean(main.querySelector("svg, img, canvas")),
+          };
+        }, qa.seq);
+        if (!rendered.hasContent) problems.push(`nothing rendered for ${label}`);
 
-        // 2. Display oracle: a complete symbolic claim must match the answer.
-        const oracle = displayOracle(q);
-        if (oracle !== null && Number(q.answer) !== oracle) {
-          problems.push(`display says ${oracle}, engine scores ${q.answer} for ${label}`);
-        }
+        // 2. Answer like a KID: compute from the rendered pixels when the
+        //    on-screen question is a pure symbolic claim; otherwise fall back
+        //    to the engine's answer (which still verifies widget plumbing).
+        const kidAnswer = kidOracle(rendered.questionText, q.answerType || "choice");
+        const target = kidAnswer !== null ? kidAnswer : undefined;
 
-        // 3. Answer through the real widget; the engine must agree.
         let outcome;
         try {
-          outcome = await answerQuestion(page, q);
+          outcome = await answerQuestion(page, q, target);
         } catch (e) {
           problems.push(`driver failed on ${label}: ${String(e).slice(0, 150)}`);
           break;
@@ -135,8 +193,16 @@ for (const mode of MODES) {
             { timeout: 15_000 }
           )
           .then((h) => h.jsonValue());
-        if (!outcome.blind && !result.correct) {
-          problems.push(`correct answer scored WRONG on ${label} (submitted ${JSON.stringify(result.submitted).slice(0, 60)})`);
+        if (outcome.missingFromChoices) {
+          problems.push(
+            `the on-screen question computes to ${kidAnswer}, but that is not among the choices on ${label} — a kid cannot answer what they worked out`
+          );
+        } else if (kidAnswer !== null && !result.correct) {
+          problems.push(
+            `KID answered ${kidAnswer} from the rendered question "${rendered.questionText.replace(/\s+/g, " ").trim()}" and was scored WRONG on ${label} (engine wanted ${JSON.stringify(q.answer).slice(0, 40)})`
+          );
+        } else if (kidAnswer === null && !outcome.blind && !result.correct) {
+          problems.push(`widget plumbing: engine answer scored WRONG on ${label} (submitted ${JSON.stringify(result.submitted).slice(0, 60)})`);
         }
       }
 

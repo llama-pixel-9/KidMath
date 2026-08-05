@@ -40,7 +40,12 @@ async function digitPath(page, valueStr) {
   return clickSubmit(page);
 }
 
-async function clickChoice(page, valueStr) {
+/** Glyph-insensitive comparison: −/–/- are the same minus to a kid. */
+function normalizeLabel(s) {
+  return String(s).replace(/[−–]/g, "-").replace(/\s+/g, " ").trim();
+}
+
+async function clickChoice(page, valueStr, { wasOverride = false } = {}) {
   const region = page.getByRole("group", { name: "Answer choices" }).or(
     page.locator('[aria-label="Answer choices"]')
   );
@@ -50,24 +55,41 @@ async function clickChoice(page, valueStr) {
     await exact.click();
     return { blind: false };
   }
+  // Glyph-normalized pass (Unicode minus vs hyphen and the like).
   const buttons = scope.getByRole("button");
+  const labels = await buttons.allInnerTexts();
+  const idx = labels.findIndex((t) => normalizeLabel(t) === normalizeLabel(valueStr));
+  if (idx >= 0) {
+    await buttons.nth(idx).click();
+    return { blind: false };
+  }
+  // Target not on screen. For a kid-computed target that is itself a finding
+  // (the kid cannot answer what they worked out) — click something to keep
+  // the session moving and report it.
   await buttons.first().click();
-  return { blind: true };
+  return wasOverride ? { blind: true, missingFromChoices: true } : { blind: true };
 }
 
-export async function answerQuestion(page, question) {
+/**
+ * Answer the on-screen question through its real widget.
+ * `overrideValue` is the kid-computed answer (from the rendered DOM); when
+ * given, it is submitted INSTEAD of the engine's answer — the spec then
+ * asserts the app agrees with what a human would have worked out.
+ */
+export async function answerQuestion(page, question, overrideValue) {
   const type = question.answerType || "choice";
-  const value = correctValue(question);
+  const wasOverride = overrideValue !== undefined;
+  const value = wasOverride ? overrideValue : correctValue(question);
   const valueStr = String(value);
   const display = question.display || {};
 
   switch (type) {
     case "choice":
-      return clickChoice(page, valueStr);
+      return clickChoice(page, valueStr, { wasOverride });
 
     case "symbolSelect": {
       const name = { "<": "less than", ">": "greater than", "=": "equal to" }[valueStr];
-      if (!name) return clickChoice(page, valueStr);
+      if (!name) return clickChoice(page, valueStr, { wasOverride });
       await page.getByRole("button", { name, exact: true }).first().click();
       return { blind: false };
     }
@@ -190,7 +212,7 @@ export async function answerQuestion(page, question) {
     default: {
       const ok = await digitPath(page, valueStr);
       if (ok) return { blind: false };
-      return clickChoice(page, valueStr);
+      return clickChoice(page, valueStr, { wasOverride });
     }
   }
 }

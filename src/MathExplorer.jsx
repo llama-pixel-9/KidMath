@@ -1083,6 +1083,7 @@ export default function MathExplorer({ initialMode }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+
   // Accepting the offer swaps the fresh normal session for the challenge set:
   // six questions at the CURRENT level, rotating through the weakest subskills
   // recorded when the lark nominated. No stars ride on it.
@@ -1477,6 +1478,11 @@ export default function MathExplorer({ initialMode }) {
             exit={{ opacity: 0, scale: 0.8, y: -20 }}
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
             aria-label="Math question"
+            // QA (DEV only): AnimatePresence keeps the EXITING card — old
+            // question plus its revealed answer — in the DOM while the new one
+            // waits to enter. The seq stamp lets e2e drivers read exactly the
+            // card belonging to the current question, never stale pixels.
+            {...(QA_HOOKS ? { "data-qa-seq": window.__kidmathQA?.seq ?? 0 } : {})}
           >
             {isRetry && (
               <p className={`text-center text-xs font-bold ${theme.textMuted} mb-2 uppercase tracking-wide`}>

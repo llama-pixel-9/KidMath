@@ -52,7 +52,11 @@ struct SettingsView: View {
                     .font(.footnote)
                     .foregroundStyle(theme.textSecondary)
                 Button("Restore purchases") {
-                    Task { await app.store.restorePurchases() }
+                    // Kids category: restore is a purchase-adjacent action —
+                    // gated, same as PaywallView's restore.
+                    guardGate {
+                        Task { await app.store.restorePurchases() }
+                    }
                 }
             }
         }

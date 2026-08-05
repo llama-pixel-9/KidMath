@@ -199,8 +199,14 @@ private struct ValueStep: View {
 private struct AccountStep: View {
     @EnvironmentObject private var app: AppModel
     @Environment(\.theme) private var theme
+    @Environment(\.openURL) private var openURL
     let onSignedIn: () -> Void
     @State private var authMessage = ""
+    /// Kids category: sign-in flows and external links sit behind the
+    /// parental gate — this is the first screen App Review opens.
+    @State private var gateUnlocked = false
+    @State private var showGate = false
+    @State private var gatedAction: (() -> Void)?
 
     var body: some View {
         VStack(spacing: 0) {
@@ -216,47 +222,61 @@ private struct AccountStep: View {
                 .padding(.top, 8)
 
             VStack(spacing: 12) {
-                SignInWithAppleButton(.continue) { request in
-                    AppleSignInCoordinator.configure(request)
-                } onCompletion: { result in
-                    Task {
-                        do {
-                            try await AppleSignInCoordinator.complete(result, supabase: app.supabase)
-                            onSignedIn()
-                        } catch {
-                            authMessage = "Apple sign-in failed: \(error.localizedDescription)"
+                if !gateUnlocked {
+                    Button {
+                        gate {}
+                    } label: {
+                        Label("Parents: continue", systemImage: "lock.shield")
+                            .font(theme.bodyFont(size: 17, weight: .bold))
+                            .foregroundStyle(Theme.cream)
+                            .frame(maxWidth: .infinity)
+                            .frame(height: 54)
+                            .background(RoundedRectangle(cornerRadius: 14).fill(Theme.teal))
+                    }
+                    .buttonStyle(.plain)
+                } else {
+                    SignInWithAppleButton(.continue) { request in
+                        AppleSignInCoordinator.configure(request)
+                    } onCompletion: { result in
+                        Task {
+                            do {
+                                try await AppleSignInCoordinator.complete(result, supabase: app.supabase)
+                                onSignedIn()
+                            } catch {
+                                authMessage = "Apple sign-in failed: \(error.localizedDescription)"
+                            }
                         }
                     }
-                }
-                .signInWithAppleButtonStyle(.black)
-                .frame(height: 54)
-                .clipShape(RoundedRectangle(cornerRadius: 14))
+                    .signInWithAppleButtonStyle(.black)
+                    .frame(height: 54)
+                    .clipShape(RoundedRectangle(cornerRadius: 14))
 
-                Button {
-                    Task {
-                        do {
-                            try await app.supabase.signInWithGoogle()
-                            onSignedIn()
-                        } catch {
-                            authMessage = "Google sign-in failed: \(error.localizedDescription)"
+                    Button {
+                        Task {
+                            do {
+                                try await app.supabase.signInWithGoogle()
+                                onSignedIn()
+                            } catch {
+                                authMessage = "Google sign-in failed: \(error.localizedDescription)"
+                            }
                         }
+                    } label: {
+                        Text("Continue with Google")
+                            .font(theme.bodyFont(size: 17, weight: .bold))
+                            .foregroundStyle(Theme.ink)
+                            .frame(maxWidth: .infinity)
+                            .frame(height: 54)
+                            .background(
+                                RoundedRectangle(cornerRadius: 14)
+                                    .fill(.white)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 14)
+                                            .stroke(Theme.ink.opacity(0.15), lineWidth: 1.5)
+                                    )
+                            )
                     }
-                } label: {
-                    Text("Continue with Google")
-                        .font(theme.bodyFont(size: 17, weight: .bold))
-                        .foregroundStyle(Theme.ink)
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 54)
-                        .background(
-                            RoundedRectangle(cornerRadius: 14)
-                                .fill(.white)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 14)
-                                        .stroke(Theme.ink.opacity(0.15), lineWidth: 1.5)
-                                )
-                        )
+                    .buttonStyle(.plain)
                 }
-                .buttonStyle(.plain)
             }
             .frame(maxWidth: 420)
             .padding(.top, 32)
@@ -276,9 +296,9 @@ private struct AccountStep: View {
                 .padding(.top, 20)
 
             HStack(spacing: 6) {
-                Link("Terms", destination: AppLinks.terms)
+                Button("Terms") { gate { openURL(AppLinks.terms) } }
                 Text("·").foregroundStyle(Theme.ink.opacity(0.4))
-                Link("Privacy Policy", destination: AppLinks.privacyPolicy)
+                Button("Privacy Policy") { gate { openURL(AppLinks.privacyPolicy) } }
             }
             .font(theme.bodyFont(size: 13, weight: .bold))
             .foregroundStyle(Theme.teal)
@@ -291,6 +311,24 @@ private struct AccountStep: View {
             Spacer(minLength: 40)
         }
         .frame(maxWidth: .infinity)
+        .sheet(isPresented: $showGate) {
+            ParentalGateView {
+                gateUnlocked = true
+                gatedAction?()
+                gatedAction = nil
+            }
+        }
+    }
+
+    /// External links and sign-in reveal go through the parental gate once;
+    /// after a pass the session stays unlocked.
+    private func gate(_ action: @escaping () -> Void) {
+        if gateUnlocked {
+            action()
+        } else {
+            gatedAction = action
+            showGate = true
+        }
     }
 }
 
@@ -470,6 +508,7 @@ struct KidStep: View {
 private struct PlanStep: View {
     @EnvironmentObject private var app: AppModel
     @Environment(\.theme) private var theme
+    @Environment(\.openURL) private var openURL
     let kidName: String?
     let onDone: () -> Void
 
@@ -478,6 +517,11 @@ private struct PlanStep: View {
     // and the purchase button stays dead until it is ticked.
     @State private var autoRenewAck = false
     @State private var annualSelected = true
+    // Kids category: purchases and external links sit behind the parental
+    // gate, same as PaywallView.
+    @State private var gateUnlocked = false
+    @State private var showGate = false
+    @State private var gatedAction: (() -> Void)?
 
     private var selectedProduct: Product? {
         annualSelected ? app.store.annual : app.store.monthly
@@ -520,11 +564,11 @@ private struct PlanStep: View {
                 .padding(.top, 20)
 
             HStack(spacing: 6) {
-                Link("How to cancel", destination: AppLinks.manageSubscriptions)
+                Button("How to cancel") { gate { openURL(AppLinks.manageSubscriptions) } }
                 Text("·").foregroundStyle(Theme.ink.opacity(0.4))
-                Link("Terms", destination: AppLinks.terms)
+                Button("Terms") { gate { openURL(AppLinks.terms) } }
                 Text("·").foregroundStyle(Theme.ink.opacity(0.4))
-                Link("Privacy", destination: AppLinks.privacyPolicy)
+                Button("Privacy") { gate { openURL(AppLinks.privacyPolicy) } }
             }
             .font(theme.bodyFont(size: 13, weight: .bold))
             .foregroundStyle(Theme.teal)
@@ -532,8 +576,26 @@ private struct PlanStep: View {
             .padding(.top, 6)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
+        .sheet(isPresented: $showGate) {
+            ParentalGateView {
+                gateUnlocked = true
+                gatedAction?()
+                gatedAction = nil
+            }
+        }
         .onChange(of: app.store.hasPremium) {
             if app.store.hasPremium { onDone() }
+        }
+    }
+
+    /// Purchases and external links require the parental gate (once per
+    /// visit to this step).
+    private func gate(_ action: @escaping () -> Void) {
+        if gateUnlocked {
+            action()
+        } else {
+            gatedAction = action
+            showGate = true
         }
     }
 
@@ -652,10 +714,12 @@ private struct PlanStep: View {
 
     private func purchase(_ product: Product?) {
         guard let product else { return }
-        Task {
-            purchasing = true
-            await app.store.purchase(product)
-            purchasing = false
+        gate {
+            Task {
+                purchasing = true
+                await app.store.purchase(product)
+                purchasing = false
+            }
         }
     }
 }

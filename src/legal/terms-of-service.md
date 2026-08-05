@@ -1,6 +1,6 @@
 # Terms of Service
 
-**Effective date:** August 4, 2026 · **Last updated:** August 4, 2026 · **Version:** 2026-08-04
+**Effective date:** August 5, 2026 · **Last updated:** August 5, 2026 · **Version:** 2026-08-05
 
 These Terms of Service (the **"Terms"**) form a binding agreement between you and **{{ENTITY_NAME}}**, a {{ENTITY_STATE}} limited liability company (**"{{PRODUCT_NAME}}," "we," "us,"** or **"our"**), and govern your access to and use of the {{PRODUCT_NAME}} websites, including {{SITE_URL}}, the {{PRODUCT_NAME}} mobile applications, and all related content, features, and services (collectively, the **"Service"**).
 
@@ -22,7 +22,7 @@ In these Terms, **"including"** means "including without limitation," and headin
 
 ## 1. The Service
 
-**1.1 Description.** The Service provides adaptive mathematics practice activities, progress tracking, and printable practice materials for children in approximately kindergarten through fifth grade.
+**1.1 Description.** {{PRODUCT_NAME}} is an educational platform for children in approximately kindergarten through fifth grade. The Service provides adaptive mathematics practice activities, progress tracking, and printable practice materials. **The scope of the Service is as described in these Terms and is qualified by Section 13.**
 
 **1.2 Free and paid tiers.** Certain practice modes (currently addition, subtraction, multiplication, division, and counting) are available at no charge (the **"Free Tier"**). The Free Tier is available on the web without an account. Additional practice modes, printable worksheets with answer keys, and cross-device progress synchronization require a paid subscription (**"{{PRODUCT_NAME}} Premium"** or the **"Subscription"**).
 
@@ -190,7 +190,7 @@ The Service relies on third-party providers, including for authentication, hosti
 
 ## 13. Educational Disclaimer
 
-**13.1** The Service is a supplemental practice tool. It is not a curriculum, a standardized assessment, a diagnostic or screening instrument, or a substitute for instruction by a qualified educator, and it is not designed to identify or address learning disabilities or other educational needs.
+**13.1** Although {{PRODUCT_NAME}} is described as an educational platform, the Service is **supplemental practice software**. It is not a curriculum, a standardized assessment, a diagnostic or screening instrument, an intervention programme, or a substitute for instruction by a qualified educator, and it is not designed to identify, diagnose, or address learning disabilities, developmental delays, or other educational needs. **No description of the Service elsewhere in these Terms, on our website, or in any marketing material expands its scope beyond what this Section states.**
 
 **13.2** Practice content is informed by commonly used United States elementary mathematics standards but is **not endorsed by, affiliated with, sponsored by, or certified by** any standards body, testing organization, school, school district, or governmental authority.
 

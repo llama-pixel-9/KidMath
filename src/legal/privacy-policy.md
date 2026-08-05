@@ -1,8 +1,10 @@
 # Privacy Policy
 
-**Effective date:** August 4, 2026 · **Last updated:** August 4, 2026 · **Version:** 2026-08-04
+**Effective date:** August 5, 2026 · **Last updated:** August 5, 2026 · **Version:** 2026-08-05
 
 This Privacy Policy describes how **{{ENTITY_NAME}}**, a {{ENTITY_STATE}} limited liability company (**"{{PRODUCT_NAME}}," "we," "us,"** or **"our"**), collects, uses, discloses, and retains personal information through the {{PRODUCT_NAME}} website at {{SITE_URL}} and the {{PRODUCT_NAME}} applications for iPhone and iPad (together, the **"Service"**).
+
+{{PRODUCT_NAME}} is an educational platform for children in approximately kindergarten through fifth grade.
 
 **This document also serves as our online notice of information practices with respect to children under the Children's Online Privacy Protection Act, 15 U.S.C. §§ 6501–6506, and 16 C.F.R. Part 312 ("COPPA").** Part B addresses children's information specifically.
 

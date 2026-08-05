@@ -1,6 +1,6 @@
 # Parental Consent Notice
 
-**Effective date:** August 4, 2026 · **Last updated:** August 4, 2026 · **Version:** 2026-08-04
+**Effective date:** August 5, 2026 · **Last updated:** August 5, 2026 · **Version:** 2026-08-05
 
 > **Drafting note — remove before publication.** This is the **direct notice to parents** required by 16 C.F.R. § 312.4(c)(1). It is not a substitute for the Privacy Policy; it is the separate notice that must be **delivered to the parent** at the moment we seek consent.
 >
@@ -16,7 +16,7 @@
 
 You are receiving this notice because you have started to create a child profile on **{{PRODUCT_NAME}}**, operated by {{ENTITY_NAME}}.
 
-{{PRODUCT_NAME}} is a mathematics practice service directed to children. Under the Children's Online Privacy Protection Act (**COPPA**), we must obtain your verifiable consent as a parent or legal guardian **before** we collect, use, or disclose personal information from your child. This notice tells you what we intend to collect and how you can give or withhold that consent.
+{{PRODUCT_NAME}} is an educational platform directed to children. Under the Children's Online Privacy Protection Act (**COPPA**), we must obtain your verifiable consent as a parent or legal guardian **before** we collect, use, or disclose personal information from your child. This notice tells you what we intend to collect and how you can give or withhold that consent.
 
 **We collected your email address for the sole purpose of obtaining your consent.** We have not yet collected any personal information from your child, and we will not do so until you consent.
 

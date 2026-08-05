@@ -1,0 +1,5 @@
+Contact: mailto:security@larkit.io
+Expires: 2027-08-05T00:00:00.000Z
+Policy: https://larkit.io/security
+Canonical: https://larkit.io/.well-known/security.txt
+Preferred-Languages: en

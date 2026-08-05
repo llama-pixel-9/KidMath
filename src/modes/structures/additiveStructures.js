@@ -47,6 +47,7 @@ export const ADDITIVE_STRUCTURES = [
   },
   {
     id: "addToChangeUnknown",
+    slots: (x) => [x, null], // x + ? = z
     situation: "addTo",
     solveFor: SOLVE.Y,
     tier: TIERS.MIDDLE,
@@ -58,6 +59,7 @@ export const ADDITIVE_STRUCTURES = [
   },
   {
     id: "addToStartUnknown",
+    slots: (_x, y) => [null, y], // ? + y = z
     situation: "addTo",
     solveFor: SOLVE.X,
     tier: TIERS.DIFFICULT,
@@ -83,6 +85,7 @@ export const ADDITIVE_STRUCTURES = [
   },
   {
     id: "takeFromChangeUnknown",
+    slots: (_x, _y, z) => [z, null], // z - ? = y
     situation: "takeFrom",
     solveFor: SOLVE.X,
     tier: TIERS.MIDDLE,
@@ -94,6 +97,7 @@ export const ADDITIVE_STRUCTURES = [
   },
   {
     id: "takeFromStartUnknown",
+    slots: (x) => [null, x], // ? - x = y
     situation: "takeFrom",
     solveFor: SOLVE.Z,
     tier: TIERS.DIFFICULT,
@@ -119,6 +123,7 @@ export const ADDITIVE_STRUCTURES = [
   },
   {
     id: "putTogetherAddendUnknown",
+    slots: (x) => [x, null], // x + ? = z
     situation: "putTogether",
     solveFor: SOLVE.Y,
     tier: TIERS.MIDDLE,
@@ -245,23 +250,33 @@ export function buildAdditive(structure, { x, y, z }, ctx, { asStory }) {
     ? structure.story(ctx, { x, y, z })
     : structure.equation(x, y, z);
 
-  // a/b carry the two *given* numbers so distractor builders and the bank's
-  // item key keep working. The unknown is never one of them.
+  // a/b are the RENDERED equation's operand slots, exactly as bank-authored
+  // items ship them: the unknown slot is null, never a stand-in number. This
+  // makes `a op b = answer` hold by construction wherever both are numbers —
+  // an embedded-unknown item physically cannot be laid out as a plain sum
+  // (the class that rendered "19 + 14 = ?" over an answer of 5).
   //
-  // Where the structure declares `operands`, use that order instead: it matches
-  // the rendered equation, so `a op b = answer` genuinely holds and the format
-  // layer can rely on it. Embedded-unknown structures declare none, and their
-  // relation correctly does not hold.
-  const givens = structure.operands
+  // `operands` (result-position unknowns) and `slots` (embedded unknowns)
+  // both declare the equation's [left, right] explicitly per structure — the
+  // slot layout depends on the equation's SHAPE ("z − ? = y" puts z on the
+  // left), so it is never inferred from solveFor.
+  const slots = structure.operands
     ? structure.operands(x, y, z)
-    : [x, y, z].filter((_, i) => ["x", "y", "z"][i] !== structure.solveFor);
+    : structure.slots
+      ? structure.slots(x, y, z)
+      : [null, null];
+
+  // The two GIVEN numbers keep feeding prompt re-dressing and the
+  // misconception distractors (sum-of-givens traps) — as `givens` now.
+  const givens = [x, y, z].filter((_, i) => ["x", "y", "z"][i] !== structure.solveFor);
 
   return {
-    a: givens[0],
-    b: givens[1],
+    a: slots[0],
+    b: slots[1],
     op: structure.op,
     answer,
     display: { promptText },
+    givens: { a: givens[0], b: givens[1] },
     structureType: structure.id,
   };
 }

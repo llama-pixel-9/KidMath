@@ -169,20 +169,32 @@ export function buildMultiplicative(structure, { g, s, p }, ctx, { asStory, form
     : useDivision
       ? divisionEquation(structure, { g, s, p })
       : structure.equation(g, s, p);
-  // Match the rendered equation so `a op b = answer` holds for procedural
-  // items: a division rendering is "p / divisor = ?", not the model order.
-  const givens = useDivision
+  // a/b are the RENDERED equation's operand slots, bank-style: the unknown
+  // slot is null, so `a op b = answer` holds by construction wherever both
+  // are numbers. A division rendering is "p / divisor = ?" (relation holds);
+  // a missing-factor rendering "g × ? = p" gets a null in the unknown slot
+  // instead of smuggling the product in as if it were a factor.
+  const slots = useDivision
     ? [p, structure.solveFor === "s" ? g : s]
     : structure.solveFor === "p"
       ? [g, s]
-      : [g, s, p].filter((_, i) => ["g", "s", "p"][i] !== structure.solveFor);
+      : structure.solveFor === "g"
+        ? [null, s]
+        : [g, null];
+
+  // The given numbers still feed the misconception distractors through their
+  // own channel.
+  const givens = useDivision
+    ? [p, structure.solveFor === "s" ? g : s]
+    : [g, s, p].filter((_, i) => ["g", "s", "p"][i] !== structure.solveFor);
 
   return {
-    a: givens[0],
-    b: givens[1],
+    a: slots[0],
+    b: slots[1],
     op: structure.op,
     answer,
     display: { promptText },
+    givens: { a: givens[0], b: givens[1] },
     structureType: structure.id,
   };
 }

@@ -53,6 +53,9 @@ export default {
       answer: item.answer,
       level,
       display: item.display,
+      // The two GIVEN numbers (a/b hold null for an embedded unknown) — feeds
+      // the misconception distractor builders.
+      distractorContext: item.givens,
     };
 
     // A symbolic sum has one prompt signature ("# + # = ?") no matter the
@@ -89,15 +92,17 @@ export default {
       }
     } else if (
       // Missing-addend renders ("4 + ? = 9") share one signature too; spoken
-      // stems keep the unknown exactly where the structure puts it.
-      !asStory && typeof item.a === "number" && typeof item.b === "number" &&
-      item.a + item.answer === item.b && Math.random() < 0.45
+      // stems keep the unknown exactly where the structure puts it. The known
+      // addend and the total come from the GIVENS — a/b hold null for the
+      // unknown slot and cannot phrase this prompt.
+      !asStory && item.givens &&
+      item.givens.a + item.answer === item.givens.b && Math.random() < 0.45
     ) {
       question.display = {
         promptText: pick([
-          `${item.a} plus what number makes ${item.b}?`,
-          `${item.a} and how many more make ${item.b}?`,
-          `Fill it in: ${item.a} plus what equals ${item.b}?`,
+          `${item.givens.a} plus what number makes ${item.givens.b}?`,
+          `${item.givens.a} and how many more make ${item.givens.b}?`,
+          `Fill it in: ${item.givens.a} plus what equals ${item.givens.b}?`,
         ]),
       };
       question.answerType = "numberPad";
@@ -130,10 +135,15 @@ export default {
   },
 
   generateChoices(answer, question) {
+    // The GIVEN numbers for misconception strategies come from
+    // distractorContext (a/b are rendered-equation slots and may hold null
+    // for the unknown). The fallback keeps items persisted before that
+    // change — old mistake-bank clones — building sane options.
+    const givens = question.distractorContext || { a: question.a ?? 0, b: question.b ?? answer };
     return buildArithmeticDistractors({
       answer,
-      a: question.a ?? 0,
-      b: question.b ?? answer,
+      a: givens.a ?? 0,
+      b: givens.b ?? answer,
       misconceptions: question.metadata?.misconceptionTags || [],
       min: 0,
     });

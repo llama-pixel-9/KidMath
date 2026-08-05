@@ -258,6 +258,44 @@ final class EngineBridge {
         try throwPendingException()
     }
 
+    // MARK: - Bird world (§04–§13) — data + placement shared with the web
+
+    /// The 22-species roster, verbatim from src/engagement/roster.js — one
+    /// source of truth so a price or fact can never drift between platforms.
+    func roster() throws -> [[String: Any]] {
+        guard let list = try call("roster").toObject() as? [[String: Any]] else {
+            throw EngineError.badResult("roster() did not return an array")
+        }
+        return list
+    }
+
+    func zones() throws -> [[String: Any]] {
+        guard let list = try call("zones").toObject() as? [[String: Any]] else {
+            throw EngineError.badResult("zones() did not return an array")
+        }
+        return list
+    }
+
+    func perches() throws -> [[String: Any]] {
+        guard let list = try call("perches").toObject() as? [[String: Any]] else {
+            throw EngineError.badResult("perches() did not return an array")
+        }
+        return list
+    }
+
+    /// §06 placement, chosen once when a bird moves in: species-suitable
+    /// perch types, ≥96px spacing, 7-per-zone cap, reserved rects never
+    /// picked. Returns nil when nothing suitable is free.
+    func choosePerch(
+        birds: [[String: Any]],
+        speciesId: String,
+        viewedZoneId: String,
+        earnedZoneIds: [String]
+    ) throws -> String? {
+        let result = try call("choosePerch", [birds, speciesId, viewedZoneId, earnedZoneIds])
+        return result.isString ? result.toString() : nil
+    }
+
     /// Force every subskill in the session to a high observed mastery rate, so
     /// promotion/nomination signals can be exercised deterministically.
     /// Test-only, like reseedRandom.

@@ -12,6 +12,7 @@ struct HomeView: View {
     @State private var showPaywall = false
     @State private var showFirstFlight = false
     @State private var showProfilePicker = false
+    @State private var showMeadow = false
 
     private let columns = [GridItem(.adaptive(minimum: 150, maximum: 220), spacing: 12)]
 
@@ -22,6 +23,9 @@ struct HomeView: View {
                     hero
                     ForEach(ModeCatalog.groups) { group in
                         groupSection(group)
+                    }
+                    if GamFlags.meadow {
+                        meadowCallout
                     }
                     worksheetCallout
                 }
@@ -51,6 +55,7 @@ struct HomeView: View {
             }
             .sheet(isPresented: $showSettings) { SettingsView() }
             .sheet(isPresented: $showWorksheets) { WorksheetView() }
+            .fullScreenCover(isPresented: $showMeadow) { MeadowView() }
             .sheet(isPresented: $showAbout) { AboutView() }
             .sheet(isPresented: $showPaywall) { PaywallView() }
             .fullScreenCover(item: $activeMode) { mode in
@@ -193,6 +198,33 @@ struct HomeView: View {
         .disabled(!mode.playable)
     }
 
+    /// §04: the Meadow entry — the fourth tab on the web's perch, a card
+    /// here until iOS grows a tab bar. Behind GamFlags.meadow.
+    private var meadowCallout: some View {
+        Button {
+            showMeadow = true
+        } label: {
+            HStack(spacing: 14) {
+                Text("🌿").font(.system(size: 36))
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("The Meadow")
+                        .font(theme.displayFont(size: 18))
+                        .foregroundStyle(theme.textPrimary)
+                    Text("Your birds, your nest, and every star you have earned.")
+                        .font(theme.bodyFont(size: 14))
+                        .foregroundStyle(theme.textSecondary)
+                        .multilineTextAlignment(.leading)
+                }
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .foregroundStyle(theme.textSecondary)
+            }
+            .padding(16)
+            .background(RoundedRectangle(cornerRadius: 20).fill(Theme.seafoam))
+        }
+        .buttonStyle(.plain)
+    }
+
     /// The web homepage's worksheet callout, as a tappable card.
     private var worksheetCallout: some View {
         Button {
@@ -248,6 +280,10 @@ struct HomeView: View {
     private func autostartIfRequested() {
         if UserDefaults.standard.bool(forKey: "showPaywall") {
             showPaywall = true
+            return
+        }
+        if GamFlags.meadow, UserDefaults.standard.bool(forKey: "autostartMeadow") {
+            showMeadow = true
             return
         }
         guard activeMode == nil,

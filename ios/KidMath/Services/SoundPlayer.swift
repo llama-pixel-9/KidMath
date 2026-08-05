@@ -56,6 +56,13 @@ final class SoundPlayer {
                 Note(frequency: frequency, start: Double(index) * 0.1, duration: 0.2, volume: 0.12)
             }
         )
+        // Placeholder bird chirp for the Meadow (mirror of sounds.js
+        // playBirdCall) until real per-species recordings land.
+        buffers["birdCall"] = render([
+            Note(frequency: 1244.5, start: 0, duration: 0.09, volume: 0.1),
+            Note(frequency: 1567.98, start: 0.11, duration: 0.12, volume: 0.1),
+            Note(frequency: 1318.51, start: 0.26, duration: 0.1, volume: 0.08),
+        ])
     }
 
     func playCorrect() { play("correct") }
@@ -63,6 +70,7 @@ final class SoundPlayer {
     func playLevelUp() { play("levelUp") }
     func playWrong() { play("wrong") }
     func playComplete() { play("complete") }
+    func playBirdCall() { play("birdCall") }
 
     private func play(_ name: String) {
         guard !isMuted, let buffer = buffers[name] else { return }

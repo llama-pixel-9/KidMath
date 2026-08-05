@@ -37,6 +37,11 @@ import {
 } from "../itemBank/index.js";
 import { normalizeBankRow } from "../itemBank/normalize.js";
 import { MODE_IDS } from "../modes/index.js";
+// Bird-world data (§13 roster, §05/§06 zones + perches + placement). Pure
+// data modules with no browser imports — safe in JavaScriptCore, and keeping
+// them here means iOS and web can never disagree on a price or a perch.
+import { SPECIES, SPECIES_BY_ID, TIERS } from "../engagement/roster.js";
+import { ZONES, PERCHES, PLAY_SPOTS, choosePerch } from "../engagement/perches.js";
 
 // JavaScriptCore has no console. A bare shim keeps the lone console.warn in
 // mathEngine (and anything else) from throwing; Swift can override it to pipe
@@ -88,6 +93,25 @@ g.KidMath = {
   // §01 flight payout. Swift may ignore this until the iOS bird-world port;
   // the field is additive and pure.
   summarizeFlight: (session) => summarizeFlight(session),
+
+  // §04–§13 bird-world data + placement, shared verbatim with the web.
+  roster: () => SPECIES,
+  rosterTiers: () => TIERS,
+  zones: () => ZONES,
+  perches: () => PERCHES,
+  playSpots: () => PLAY_SPOTS,
+  // Returns the chosen perch id or null. `birds` is the persisted flock
+  // ([{ speciesId, perchId, ... }]); Swift owns the engagement blob.
+  choosePerch: (birds, speciesId, viewedZoneId, earnedZoneIds) => {
+    const species = SPECIES_BY_ID[speciesId];
+    if (!species) return null;
+    return choosePerch(
+      Array.isArray(birds) ? birds : [],
+      species,
+      viewedZoneId,
+      Array.isArray(earnedZoneIds) ? earnedZoneIds : ["meadow"]
+    );
+  },
 };
 
 // Also export for tooling/tests that import this module directly.

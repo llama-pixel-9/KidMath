@@ -34,7 +34,13 @@ function overrideSet() {
 export function gamStepEnabled(step, env = import.meta.env) {
   const envKey = STEP_ENV_KEYS[step];
   if (!envKey) return false;
-  if (env?.[envKey] === "true") return true;
+  // An explicit per-step value always wins — "false" is the selective kill
+  // switch that works even while the master switch is on.
+  const explicit = env?.[envKey];
+  if (explicit === "true") return true;
+  if (explicit === "false") return false;
+  // Master launch switch: one env var turns every step on.
+  if (env?.VITE_GAM_ALL === "true") return true;
   const overrides = overrideSet();
   return overrides.has(step) || overrides.has("all");
 }

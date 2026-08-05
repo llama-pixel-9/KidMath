@@ -80,6 +80,16 @@ describe("gamification flags", () => {
   it("rejects unknown steps", () => {
     expect(gamStepEnabled("stickerBook", { VITE_GAM_STICKER_BOOK: "true" })).toBe(false);
   });
+
+  it("the master switch turns every step on, and an explicit false still wins", () => {
+    for (const step of ["flightReport", "fledging", "meadow", "birdStore", "roster", "ceremonies", "meadowMotion"]) {
+      expect(gamStepEnabled(step, { VITE_GAM_ALL: "true" }), step).toBe(true);
+    }
+    // The selective kill switch: one step off while the master stays on.
+    expect(gamStepEnabled("meadow", { VITE_GAM_ALL: "true", VITE_GAM_MEADOW: "false" })).toBe(false);
+    expect(gamStepEnabled("flightReport", { VITE_GAM_ALL: "true", VITE_GAM_MEADOW: "false" })).toBe(true);
+    expect(gamStepEnabled("meadow", { VITE_GAM_ALL: "TRUE" })).toBe(false);
+  });
 });
 
 describe("firstFlightDay / isFirstWeek (§02 ledger default)", () => {

@@ -10,11 +10,22 @@ import Foundation
 /// (`VITE_GAM_FLIGHT_REPORT` etc.) so both platforms settle flights the same
 /// way — the payout formula must never differ between a kid's iPad and the web.
 enum GamFlags {
+    /// Master launch switch — the Swift mirror of the web's `VITE_GAM_ALL`.
+    /// Flip this to `true` (together with the web env var) to turn every step
+    /// on; a step's own launch arg still wins either way, so
+    /// `-gamMeadow 0 -gamAll 1` runs everything except the Meadow.
+    nonisolated static var all: Bool {
+        if UserDefaults.standard.object(forKey: "gamAll") != nil {
+            return UserDefaults.standard.bool(forKey: "gamAll")
+        }
+        return false
+    }
+
     nonisolated static func step(_ key: String) -> Bool {
         if UserDefaults.standard.object(forKey: key) != nil {
             return UserDefaults.standard.bool(forKey: key)
         }
-        return false
+        return all
     }
 
     /// §01 economy + §02 Flight Report.

@@ -470,6 +470,19 @@ private struct PlanStep: View {
     let onDone: () -> Void
 
     @State private var purchasing = false
+    // Auto-renewal consent is its own affirmative act: never pre-ticked,
+    // and the purchase button stays dead until it is ticked.
+    @State private var autoRenewAck = false
+    @State private var annualSelected = true
+
+    private var selectedProduct: Product? {
+        annualSelected ? app.store.annual : app.store.monthly
+    }
+
+    private var disclosureLabel: String {
+        let price = selectedProduct?.displayPrice ?? (annualSelected ? "$54.99" : "$8.99")
+        return AutoRenewalTerms.label(price: price, period: annualSelected ? "year" : "month")
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -495,12 +508,24 @@ private struct PlanStep: View {
                     .padding(.top, 12)
             }
 
-            Text("Cancel anytime in the App Store's Subscriptions settings. The free plan is free forever.")
+            Text("Cancel anytime in Settings → Apple Account → Subscriptions — one step, no questions asked. The free plan is free forever.")
                 .font(theme.bodyFont(size: 13))
                 .foregroundStyle(Theme.ink.opacity(0.6))
                 .frame(maxWidth: .infinity)
                 .multilineTextAlignment(.center)
                 .padding(.top, 20)
+
+            HStack(spacing: 6) {
+                Link("How to cancel", destination: AppLinks.manageSubscriptions)
+                Text("·").foregroundStyle(Theme.ink.opacity(0.4))
+                Link("Terms", destination: AppLinks.terms)
+                Text("·").foregroundStyle(Theme.ink.opacity(0.4))
+                Link("Privacy", destination: AppLinks.privacyPolicy)
+            }
+            .font(theme.bodyFont(size: 13, weight: .bold))
+            .foregroundStyle(Theme.teal)
+            .frame(maxWidth: .infinity)
+            .padding(.top, 6)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .onChange(of: app.store.hasPremium) {
@@ -564,8 +589,13 @@ private struct PlanStep: View {
             bullet("Flight logs — printable worksheets for any game, with answer keys")
             bullet("Progress syncs across devices")
             VStack(spacing: 8) {
+                // The state auto-renewal disclosure, before the purchase step:
+                // trial end date, first charge amount and date, renewal terms.
+                AutoRenewalConsentBox(ack: $autoRenewAck, label: disclosureLabel)
+                    .padding(.top, 4)
+
                 Button {
-                    purchase(app.store.annual)
+                    purchase(selectedProduct)
                 } label: {
                     Text("Start the free trial")
                         .font(theme.displayFont(size: 18))
@@ -577,16 +607,21 @@ private struct PlanStep: View {
                                 .fill(Theme.sun)
                                 .shadow(color: Theme.ember, radius: 0, x: 0, y: 5)
                         )
+                        .opacity(autoRenewAck ? 1 : 0.5)
                 }
                 .buttonStyle(SpringButtonStyle())
-                .disabled(purchasing || app.store.annual == nil)
+                .disabled(purchasing || !autoRenewAck || selectedProduct == nil)
 
-                Button("or \(app.store.monthly?.displayPrice ?? "$8.99")/month") {
-                    purchase(app.store.monthly)
+                Button(
+                    annualSelected
+                        ? "or switch to \(app.store.monthly?.displayPrice ?? "$8.99")/month"
+                        : "or switch to \(app.store.annual?.displayPrice ?? "$54.99")/year"
+                ) {
+                    annualSelected.toggle()
                 }
                 .font(theme.bodyFont(size: 14, weight: .bold))
                 .foregroundStyle(Theme.ink.opacity(0.7))
-                .disabled(purchasing || app.store.monthly == nil)
+                .disabled(purchasing)
             }
             .padding(.top, 10)
         }

@@ -1,8 +1,16 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../useAuth";
 import { usePremium } from "../PremiumContext";
 import { paywallEnabled, startCheckout } from "../premium";
+import { logConsent } from "../legal";
+import {
+  buildAutoRenewalDisclosure,
+  planButtonsDisabled,
+  AUTORENEW_ACK_DEFAULT,
+  ACCOUNT_CONSENT_TEXT,
+} from "../legal/disclosures";
+import { supabase } from "../supabaseClient";
 import {
   MAX_KIDS,
   KID_AGES,
@@ -168,13 +176,28 @@ function KidStep({ onDone, kidCount }) {
 }
 
 function PlanStep({ kidName, onFree }) {
+  const { user } = useAuth();
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
+  const [autoRenewAck, setAutoRenewAck] = useState(AUTORENEW_ACK_DEFAULT);
+
+  const disclosure = buildAutoRenewalDisclosure("annual");
 
   const subscribe = async () => {
     setError("");
     setBusy(true);
     try {
+      await logConsent(supabase, {
+        userId: user.id,
+        kind: "autorenew",
+        disclosureText: disclosure.label,
+        meta: {
+          plan: "annual",
+          price: disclosure.price,
+          trialEndsOn: disclosure.trialEndsOn,
+          firstChargeOn: disclosure.firstChargeOn,
+        },
+      });
       await startCheckout("annual");
     } catch (e) {
       setError(e.message || "Could not start checkout");
@@ -228,10 +251,21 @@ function PlanStep({ kidName, onFree }) {
             <li>Progress syncs across web, iPad, and iPhone</li>
           </ul>
           <div className="flex-1" />
+          {/* The separate auto-renewal consent — its own affirmative act,
+              never pre-ticked, never merged into Terms acceptance. */}
+          <label className="flex gap-3 items-start mt-6 text-left">
+            <input
+              type="checkbox"
+              checked={autoRenewAck}
+              onChange={(e) => setAutoRenewAck(e.target.checked)}
+              className="mt-1 h-5 w-5 shrink-0"
+            />
+            <span className="text-sm text-ink/70 leading-relaxed">{disclosure.label}</span>
+          </label>
           <button
             type="button"
-            disabled={busy}
-            className="mt-6 w-full h-14 rounded-[18px] bg-sun text-ink font-display font-semibold text-lg shadow-[0_5px_0_#C4471B] btn-press cursor-pointer disabled:opacity-50"
+            disabled={planButtonsDisabled({ autoRenewAck, busy })}
+            className="mt-4 w-full h-14 rounded-[18px] bg-sun text-ink font-display font-semibold text-lg shadow-[0_5px_0_#C4471B] btn-press cursor-pointer disabled:opacity-50"
             onClick={subscribe}
           >
             Start the free trial
@@ -242,7 +276,11 @@ function PlanStep({ kidName, onFree }) {
       {error && <p className="mt-4 text-sm font-bold text-ember text-center">{error}</p>}
 
       <p className="mt-6 text-sm text-ink/60 text-center">
-        Cancel anytime from your billing portal. The free plan is free forever.
+        Cancel anytime in one step from{" "}
+        <Link to="/account/billing" className="underline">your billing settings</Link>. The free
+        plan is free forever.{" "}
+        <Link to="/terms" className="underline">Terms</Link> ·{" "}
+        <Link to="/privacy" className="underline">Privacy</Link>
       </p>
     </main>
   );
@@ -259,6 +297,24 @@ export default function OnboardingFlow() {
   useEffect(() => {
     if (!loading && !user) navigate("/signup", { replace: true });
   }, [user, loading, navigate]);
+
+  // Consent evidence, kind "account": recorded once per user, after the OAuth
+  // round-trip lands them here. The disclosure text is the literal sentence
+  // rendered beside the sign-in buttons on /signup. A localStorage marker
+  // keeps repeat visits from re-logging; duplicate rows would be harmless
+  // (the table is append-only evidence) but noisy.
+  useEffect(() => {
+    if (!user) return;
+    const marker = `larkit-consent-account-${user.id}`;
+    if (localStorage.getItem(marker)) return;
+    logConsent(supabase, {
+      userId: user.id,
+      kind: "account",
+      disclosureText: ACCOUNT_CONSENT_TEXT,
+    }).then((row) => {
+      if (row) localStorage.setItem(marker, row.created_at || "1");
+    });
+  }, [user]);
 
   // Returning parents with kids land on the profile picker, never back in
   // the wizard — unless they came to add another kid (?add=1).

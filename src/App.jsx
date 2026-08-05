@@ -20,6 +20,7 @@ import ValuePage from "./onboarding/ValuePage";
 import SignupPage from "./onboarding/SignupPage";
 import OnboardingFlow from "./onboarding/OnboardingFlow";
 import ProfilePicker from "./onboarding/ProfilePicker";
+import BillingPortalPage from "./BillingPortalPage";
 import "./index.css";
 
 function PlayRoute() {
@@ -69,6 +70,9 @@ function AppShell() {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/onboarding" element={<OnboardingFlow />} />
         <Route path="/profiles" element={<ProfilePicker />} />
+        {/* One-step online cancellation (auto-renewal law) — sends the
+            subscriber straight into the Stripe Billing Portal. */}
+        <Route path="/account/billing" element={<BillingPortalPage />} />
         <Route path="/admin" element={<AdminItemsPage />} />
         <Route path="/diagnostics" element={<DiagnosticsPage />} />
         {/* Unknown paths: send to home rather than expose a bare 404. */}

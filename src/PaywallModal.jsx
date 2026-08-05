@@ -1,13 +1,25 @@
 import { useContext, useState } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Sparkles, Printer, Cloud, Users, X } from "lucide-react";
 import { AuthContext } from "./AuthContextValue";
 import { startCheckout } from "./premium";
+import { logConsent } from "./legal";
+import {
+  buildAutoRenewalDisclosure,
+  planButtonsDisabled,
+  AUTORENEW_ACK_DEFAULT,
+} from "./legal/disclosures";
+import { supabase } from "./supabaseClient";
 
 /**
  * The web paywall. Same presentation rules as iOS: lead with the annual plan
  * (49% off — the price that's meant to be bought), monthly shown flat and
  * never discounted, 14-day trial on both, every child included.
+ *
+ * The auto-renewal disclosure + separate unchecked checkbox below the plan
+ * picker is a legal requirement (CA B&P §17602 and sibling statutes), not
+ * copy — see docs/legal-implementation.md step 5 before changing it.
  */
 const FEATURES = [
   { icon: Sparkles, text: "All 22 practice modes, Grades 1-4" },
@@ -20,17 +32,37 @@ export default function PaywallModal({ onClose }) {
   const { user, signInWithGoogle } = useContext(AuthContext);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
+  const [plan, setPlan] = useState("annual");
+  const [autoRenewAck, setAutoRenewAck] = useState(AUTORENEW_ACK_DEFAULT);
 
-  const subscribe = async (plan) => {
+  const disclosure = buildAutoRenewalDisclosure(plan);
+
+  const subscribe = async () => {
     setError("");
     setBusy(true);
     try {
+      await logConsent(supabase, {
+        userId: user.id,
+        kind: "autorenew",
+        disclosureText: disclosure.label,
+        meta: {
+          plan,
+          price: disclosure.price,
+          trialEndsOn: disclosure.trialEndsOn,
+          firstChargeOn: disclosure.firstChargeOn,
+        },
+      });
       await startCheckout(plan);
     } catch (e) {
       setError(e.message || "Could not start checkout");
       setBusy(false);
     }
   };
+
+  const planCard = (id, selected) =>
+    `w-full text-left rounded-2xl border-2 p-4 cursor-pointer transition-colors ${
+      selected ? "border-teal bg-seafoam/40" : "border-slate-200 bg-white hover:border-slate-300"
+    }`;
 
   return (
     <motion.div
@@ -81,34 +113,66 @@ export default function PaywallModal({ onClose }) {
             </button>
           </div>
         ) : (
-          <div className="mt-6 space-y-3">
+          <div className="mt-6">
+            <div className="space-y-3" role="radiogroup" aria-label="Choose a plan">
+              <button
+                type="button"
+                role="radio"
+                aria-checked={plan === "annual"}
+                onClick={() => setPlan("annual")}
+                className={planCard("annual", plan === "annual")}
+              >
+                <span className="block text-xs tracking-widest font-bold text-teal">BEST VALUE · 49% OFF</span>
+                <span className="block text-lg font-extrabold text-ink">$54.99/year — that's $4.58/month</span>
+                <span className="block text-xs font-semibold text-slate-500">14-day free trial, then auto-renews</span>
+              </button>
+              <button
+                type="button"
+                role="radio"
+                aria-checked={plan === "monthly"}
+                onClick={() => setPlan("monthly")}
+                className={planCard("monthly", plan === "monthly")}
+              >
+                <span className="block text-lg font-extrabold text-ink">$8.99/month</span>
+                <span className="block text-xs font-semibold text-slate-500">14-day free trial, then auto-renews</span>
+              </button>
+            </div>
+
+            {/* The separate auto-renewal consent — its own affirmative act,
+                never pre-ticked, never merged into Terms acceptance. */}
+            <label className="flex gap-3 items-start mt-5 text-left">
+              <input
+                type="checkbox"
+                checked={autoRenewAck}
+                onChange={(e) => setAutoRenewAck(e.target.checked)}
+                className="mt-1 h-5 w-5 shrink-0"
+              />
+              <span className="text-sm text-slate-600 leading-relaxed">{disclosure.label}</span>
+            </label>
+
             <button
               type="button"
-              disabled={busy}
-              onClick={() => subscribe("annual")}
-              className="w-full py-4 rounded-[18px] bg-teal text-cream font-display font-semibold shadow-[0_5px_0_#064A41] btn-press cursor-pointer disabled:opacity-50"
+              disabled={planButtonsDisabled({ autoRenewAck, busy })}
+              onClick={subscribe}
+              className="mt-4 w-full py-4 rounded-[18px] bg-teal text-cream font-display font-semibold text-lg shadow-[0_5px_0_#064A41] btn-press cursor-pointer disabled:opacity-50"
             >
-              <span className="block text-xs tracking-widest opacity-90">BEST VALUE · 49% OFF</span>
-              <span className="block text-lg">$54.99/year — that's $4.58/month</span>
-              <span className="block text-xs opacity-90">14-day free trial, then auto-renews</span>
+              Start my 14-day free trial
             </button>
-            <button
-              type="button"
-              disabled={busy}
-              onClick={() => subscribe("monthly")}
-              className="w-full py-3 rounded-2xl bg-white border-2 border-slate-200 text-slate-700 font-extrabold cursor-pointer disabled:opacity-50 hover:border-slate-300"
-            >
-              $8.99/month
-              <span className="block text-xs font-semibold text-slate-400">14-day free trial, then auto-renews</span>
-            </button>
+
+            <p className="mt-3 text-xs text-slate-500 text-center">
+              Cancel anytime in one step from{" "}
+              <Link to="/account/billing" className="underline">your billing settings</Link>.{" "}
+              <Link to="/terms" className="underline">Terms</Link> ·{" "}
+              <Link to="/privacy" className="underline">Privacy</Link>
+            </p>
           </div>
         )}
 
         {error && <p className="mt-3 text-sm font-semibold text-red-500 text-center">{error}</p>}
 
         <p className="mt-4 text-xs text-slate-400 text-center leading-relaxed">
-          One subscription covers every child in your household. Cancel anytime from your billing
-          portal. Addition, subtraction, multiplication, division, and counting stay free forever.
+          One subscription covers every child in your household. Addition, subtraction,
+          multiplication, division, and counting stay free forever.
         </p>
       </motion.div>
     </motion.div>

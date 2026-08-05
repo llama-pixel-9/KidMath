@@ -19,4 +19,7 @@ enum AppLinks {
     /// this exact URL also goes in the App Store Connect listing's
     /// privacy-policy field. The /privacy route exists on the web app.
     static let privacyPolicy = URL(string: "https://kidmath.vercel.app/privacy")!
+    static let terms = URL(string: "https://kidmath.vercel.app/terms")!
+    /// Apple's subscription management page — how an iOS subscriber cancels.
+    static let manageSubscriptions = URL(string: "https://apps.apple.com/account/subscriptions")!
 }

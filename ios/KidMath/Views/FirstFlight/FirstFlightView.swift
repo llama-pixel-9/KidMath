@@ -275,10 +275,14 @@ private struct AccountStep: View {
                 .frame(maxWidth: 420)
                 .padding(.top, 20)
 
-            Link("Privacy Policy", destination: AppLinks.privacyPolicy)
-                .font(theme.bodyFont(size: 13, weight: .bold))
-                .foregroundStyle(Theme.teal)
-                .padding(.top, 6)
+            HStack(spacing: 6) {
+                Link("Terms", destination: AppLinks.terms)
+                Text("·").foregroundStyle(Theme.ink.opacity(0.4))
+                Link("Privacy Policy", destination: AppLinks.privacyPolicy)
+            }
+            .font(theme.bodyFont(size: 13, weight: .bold))
+            .foregroundStyle(Theme.teal)
+            .padding(.top, 6)
 
             Text("Already have an account? The same buttons sign you in.")
                 .font(theme.bodyFont(size: 15, weight: .bold))

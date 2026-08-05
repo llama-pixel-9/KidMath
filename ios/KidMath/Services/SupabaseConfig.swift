@@ -15,11 +15,12 @@ enum SupabaseConfig {
 }
 
 enum AppLinks {
-    /// ⚠️ Set to the production web domain before App Store submission —
-    /// this exact URL also goes in the App Store Connect listing's
-    /// privacy-policy field. The /privacy route exists on the web app.
-    static let privacyPolicy = URL(string: "https://kidmath.vercel.app/privacy")!
-    static let terms = URL(string: "https://kidmath.vercel.app/terms")!
+    /// The production web domain. The privacy URL also goes in the App Store
+    /// Connect listing's privacy-policy field; all three routes are served by
+    /// the web app's LegalPage renderer.
+    static let privacyPolicy = URL(string: "https://larkit.io/privacy")!
+    static let terms = URL(string: "https://larkit.io/terms")!
+    static let security = URL(string: "https://larkit.io/security")!
     /// Apple's subscription management page — how an iOS subscriber cancels.
     static let manageSubscriptions = URL(string: "https://apps.apple.com/account/subscriptions")!
 }

@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import PlayCardPanel from "./PlayCards.jsx";
 
 /**
@@ -91,6 +91,15 @@ export default function ValuePage() {
               Already have an account? Sign in
             </button>
           </div>
+
+          {/* COPPA §312.4(d): a prominent, clearly labelled privacy link on
+              the landing screen — the footer alone doesn't satisfy it. */}
+          <p className="mt-6 text-sm font-semibold text-ink/60">
+            No ads, no data sold — ever.{" "}
+            <Link to="/privacy" className="underline underline-offset-2 text-teal">
+              Privacy Policy
+            </Link>
+          </p>
         </div>
 
         <PlayCardPanel />

@@ -98,7 +98,12 @@ function KidStep({ onDone, kidCount }) {
     <main className="flex-1 max-w-3xl mx-auto w-full px-4 py-10">
       <h1 className="font-display font-semibold text-4xl text-ink m-0">Who's learning?</h1>
       <p className="mt-2 text-base font-semibold text-ink/60">
-        First name only — that's all we store about your child.
+        First name only — that's all we store about your child.{" "}
+        {/* §312.4(d): the add-a-child screen collects a child's personal
+            information, so the privacy link must be right here. */}
+        <Link to="/privacy" className="underline underline-offset-2 text-teal">
+          Privacy Policy
+        </Link>
       </p>
 
       {added.length > 0 && (

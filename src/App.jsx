@@ -12,7 +12,8 @@ import HomePage from "./HomePage";
 import MathExplorer from "./MathExplorer";
 import PrintableWorksheet from "./PrintableWorksheet";
 import AboutPage from "./AboutPage";
-import PrivacyPage from "./PrivacyPage";
+import LegalPage from "./legal/LegalPage";
+import Footer from "./Footer";
 import AdminItemsPage from "./admin/AdminItemsPage";
 import DiagnosticsPage from "./admin/DiagnosticsPage";
 import MeadowPage from "./engagement/meadow/MeadowPage";
@@ -63,7 +64,14 @@ function AppShell() {
         <Route path="/worksheets" element={<WorksheetsRoute />} />
         <Route path="/meadow" element={<MeadowPage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/privacy" element={<PrivacyPage />} />
+        {/* Legal documents — one renderer, four routes. /privacy doubles as
+            the COPPA §312.4(d) online notice; a prominent link to it must
+            appear on the home screen and at every point where personal
+            information is collected from a child. */}
+        <Route path="/privacy" element={<LegalPage slug="privacy" />} />
+        <Route path="/terms" element={<LegalPage slug="terms" />} />
+        <Route path="/security" element={<LegalPage slug="security" />} />
+        <Route path="/parental-consent" element={<LegalPage slug="parental-consent" />} />
         {/* First flight (§20): value → parent account → add a kid → soft
             paywall; returning families land on the profile picker. */}
         <Route path="/welcome" element={<ValuePage />} />
@@ -79,6 +87,7 @@ function AppShell() {
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       </div>
+      <Footer />
       <Analytics />
       <SpeedInsights />
     </div>

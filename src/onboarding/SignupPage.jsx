@@ -68,7 +68,7 @@ export default function SignupPage() {
 
         <p className="mt-6 text-sm text-ink/60 leading-relaxed">
           By continuing you agree to the{" "}
-          <Link to="/privacy" className="underline text-ink/60">Terms</Link> and{" "}
+          <Link to="/terms" className="underline text-ink/60">Terms</Link> and{" "}
           <Link to="/privacy" className="underline text-ink/60">Privacy Policy</Link>. We never
           show ads and never sell data about your kids.
         </p>

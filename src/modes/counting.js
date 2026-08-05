@@ -4,7 +4,7 @@ import { createQuestionMetadata, ITEM_FAMILIES } from "./itemMetadata";
 import { maybeApplyFormat } from "./formats";
 
 /**
- * counting — Count It Up! (spec-part-c1-number-sense.md §counting)
+ * counting — Counting Chicks (spec-part-c1-number-sense.md §counting)
  *
  * Before M4 this mode had ONE question shape: render N emoji, pick the numeral.
  * The three declared subskills produced byte-identical output. The catalog below
@@ -507,10 +507,11 @@ function chooseVariety(level, context = {}) {
 
 export default {
   id: "counting",
-  label: "Count It Up!",
+  label: "Counting Chicks",
   shortLabel: "Counting",
-  description: "Count the objects and pick the right number!",
+  description: "Count to 100",
   icon: "Hash",
+  glyph: "12",
   op: "count",
   subskills: SUBSKILLS,
   supportedFormats: SUPPORTED_FORMATS,

@@ -10,6 +10,9 @@ struct HomeView: View {
     @State private var showWorksheets = false
     @State private var showAbout = false
     @State private var showPaywall = false
+    @State private var showFirstFlight = false
+    @State private var showProfilePicker = false
+    @State private var showMeadow = false
 
     private let columns = [GridItem(.adaptive(minimum: 150, maximum: 220), spacing: 12)]
 
@@ -20,6 +23,9 @@ struct HomeView: View {
                     hero
                     ForEach(ModeCatalog.groups) { group in
                         groupSection(group)
+                    }
+                    if GamFlags.meadow {
+                        meadowCallout
                     }
                     worksheetCallout
                 }
@@ -49,24 +55,47 @@ struct HomeView: View {
             }
             .sheet(isPresented: $showSettings) { SettingsView() }
             .sheet(isPresented: $showWorksheets) { WorksheetView() }
+            .fullScreenCover(isPresented: $showMeadow) { MeadowView() }
             .sheet(isPresented: $showAbout) { AboutView() }
             .sheet(isPresented: $showPaywall) { PaywallView() }
             .fullScreenCover(item: $activeMode) { mode in
                 SessionView(mode: mode)
             }
+            .fullScreenCover(isPresented: $showFirstFlight) { FirstFlightView() }
+            .fullScreenCover(isPresented: $showProfilePicker) { ProfilePickerView() }
             .task {
                 await app.refreshModeLevels()
                 autostartIfRequested()
+                await presentFirstFlightIfNeeded()
             }
         }
     }
 
-    /// §14: one greeting line above the aviary — time of day, no exclamation
-    /// stacking, no streak pressure.
+    /// §14: one greeting line above the aviary — time of day, first name when
+    /// a kid profile is active, no exclamation stacking, no streak pressure.
     private var greeting: String {
         let hour = Calendar.current.component(.hour, from: Date())
         let dayPart = hour < 12 ? "Morning" : hour < 18 ? "Afternoon" : "Evening"
+        if let name = app.kidProfiles.activeKidName {
+            return "\(dayPart), \(name) — pick a game."
+        }
         return "\(dayPart) — pick a game."
+    }
+
+    /// First flight (§20): new families get the value → account → kid flow;
+    /// a returning signed-in family with kids and no active kid gets the
+    /// profile picker — never a login form.
+    private func presentFirstFlightIfNeeded() async {
+        guard activeMode == nil, !showPaywall else { return }
+        if app.supabase.isSignedIn {
+            UserDefaults.standard.set(true, forKey: FirstFlightView.completedKey)
+            await app.kidProfiles.refresh()
+            if !app.kidProfiles.kids.isEmpty && app.kidProfiles.activeKidId == nil {
+                showProfilePicker = true
+            }
+        } else if !UserDefaults.standard.bool(forKey: FirstFlightView.completedKey) {
+            showFirstFlight = true
+        }
     }
 
     private var hero: some View {
@@ -111,26 +140,44 @@ struct HomeView: View {
     }
 
     private func modeCard(_ mode: ModeInfo) -> some View {
-        Button {
+        // The same five free modes as the web; the rest need the trial or
+        // subscription once the launch switch flips.
+        let locked = !app.store.canPlay(mode.id)
+        return Button {
             guard mode.playable else { return }
-            // iOS is a premium surface (web keeps the free tier): sessions
-            // start only with an active trial/subscription.
-            if app.store.hasPremium {
-                activeMode = mode
-            } else {
+            if locked {
                 showPaywall = true
+            } else {
+                activeMode = mode
             }
         } label: {
             VStack(alignment: .leading, spacing: 8) {
                 HStack {
-                    Text(mode.emoji).font(.system(size: 34))
-                    Spacer()
-                    if mode.playable {
-                        if let level = app.modeLevels[mode.id], level > 1 {
-                            levelBadge(level)
-                        }
+                    // §14: locked cards keep full opacity and swap the glyph
+                    // for the lock at 40%, with no badge.
+                    if locked {
+                        FeatherIcon(glyph: .lock, size: 30, color: Theme.ink)
+                            .opacity(0.4)
+                            .frame(height: 41)
                     } else {
+                        Text(mode.emoji).font(.system(size: 34))
+                    }
+                    Spacer()
+                    // §03 step 3: the nomination survives leaving the app as
+                    // a Sun pill on the mode's card (Ink text — cream on Sun
+                    // is forbidden).
+                    if !locked, GamFlags.fledging, EngagementStore().nomination(for: mode.id) != nil {
+                        Text("Ready to fledge")
+                            .font(theme.bodyFont(size: 11, weight: .heavy))
+                            .foregroundStyle(Theme.ink)
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 4)
+                            .background(Capsule().fill(Theme.sun))
+                    }
+                    if !mode.playable {
                         soonBadge
+                    } else if !locked, let level = app.modeLevels[mode.id], level > 1 {
+                        levelBadge(level)
                     }
                 }
                 Text(mode.label)
@@ -151,10 +198,37 @@ struct HomeView: View {
         .disabled(!mode.playable)
     }
 
+    /// §04: the Meadow entry — the fourth tab on the web's perch, a card
+    /// here until iOS grows a tab bar. Behind GamFlags.meadow.
+    private var meadowCallout: some View {
+        Button {
+            showMeadow = true
+        } label: {
+            HStack(spacing: 14) {
+                Text("🌿").font(.system(size: 36))
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("The Meadow")
+                        .font(theme.displayFont(size: 18))
+                        .foregroundStyle(theme.textPrimary)
+                    Text("Your birds, your nest, and every star you have earned.")
+                        .font(theme.bodyFont(size: 14))
+                        .foregroundStyle(theme.textSecondary)
+                        .multilineTextAlignment(.leading)
+                }
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .foregroundStyle(theme.textSecondary)
+            }
+            .padding(16)
+            .background(RoundedRectangle(cornerRadius: 20).fill(Theme.seafoam))
+        }
+        .buttonStyle(.plain)
+    }
+
     /// The web homepage's worksheet callout, as a tappable card.
     private var worksheetCallout: some View {
         Button {
-            if app.store.hasPremium {
+            if app.store.isUnlocked {
                 showWorksheets = true
             } else {
                 showPaywall = true
@@ -206,6 +280,10 @@ struct HomeView: View {
     private func autostartIfRequested() {
         if UserDefaults.standard.bool(forKey: "showPaywall") {
             showPaywall = true
+            return
+        }
+        if GamFlags.meadow, UserDefaults.standard.bool(forKey: "autostartMeadow") {
+            showMeadow = true
             return
         }
         guard activeMode == nil,

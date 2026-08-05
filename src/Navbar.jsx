@@ -5,13 +5,16 @@ import { useAuth } from "./useAuth";
 import { useIsAdmin } from "./useIsAdmin";
 import LarkMark from "./components/LarkMark";
 import Feather from "./components/feather.jsx";
+import { meadowEnabled } from "./gamificationFlags.js";
 
 // Nav links are words, not glyphs (§13: icons never replace a word a
 // five-year-old can read) — the feather set covers the controls only.
+// The Meadow is the fourth tab on the perch (§04), behind its rollout flag.
 const BASE_NAV_ITEMS = [
   { to: "/", label: "Home", end: true },
   { to: "/play", label: "Play" },
   { to: "/worksheets", label: "Worksheets" },
+  ...(meadowEnabled() ? [{ to: "/meadow", label: "Meadow" }] : []),
   { to: "/about", label: "About" },
 ];
 
@@ -20,7 +23,8 @@ const ADMIN_NAV_ITEM = { to: "/admin", label: "Admin" };
 // The perch (§12): the avatar is a Lark Teal circle with the first initial in
 // Cream — no photos, no uploads.
 function AuthButton({ compact = false }) {
-  const { user, loading, signInWithGoogle, signOut } = useAuth();
+  const { user, loading, signOut } = useAuth();
+  const navigate = useNavigate();
 
   if (loading) return null;
 
@@ -50,10 +54,12 @@ function AuthButton({ compact = false }) {
     );
   }
 
+  // Signed out: the way in is the first-flight value page (§20), not a bare
+  // OAuth popup.
   return (
     <button
       className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-bold cursor-pointer transition-colors text-ink hover:bg-ink/5 hover:text-teal"
-      onClick={signInWithGoogle}
+      onClick={() => navigate("/welcome")}
     >
       <Feather name="profile" size={16} />
       {!compact && "Sign In"}

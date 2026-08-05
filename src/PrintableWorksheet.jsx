@@ -9,105 +9,19 @@ import {
   Hash,
   FastForward,
   Layers,
-  Star,
-  Rocket,
-  Heart,
-  Smile,
-  Trophy,
-  Sparkles,
   Printer,
-  Sun,
-  Moon,
-  Cloud,
-  Rainbow,
-  Flower2,
-  TreePine,
-  Apple,
-  Cherry,
-  Fish,
-  Bug,
-  Bird,
-  Cat,
-  Dog,
-  Snail,
-  Turtle,
-  Squirrel,
-  Gem,
-  Crown,
-  Music,
-  Palette,
-  Puzzle,
-  Gamepad2,
-  Bike,
-  Plane,
-  Sailboat,
-  Footprints,
-  Drumstick,
-  IceCreamCone,
-  Cookie,
-  Cake,
-  Candy,
-  Gift,
-  PartyPopper,
-  Flame,
-  Snowflake,
-  Compass,
-  Globe,
-  Lightbulb,
-  Zap,
 } from "lucide-react";
 import LarkMark from "./components/LarkMark.jsx";
-import { generateWorksheetSet, MODES } from "./mathEngine";
+import {
+  generateFlightLog,
+  flightLogScope,
+  FLIGHT_LOG_ITEMS,
+  MODES,
+} from "./mathEngine";
 import { getModeConfig } from "./modes";
 import { useTheme } from "./useTheme";
-import { isVerbalPrompt } from "./modes/helpers";
 
 const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers };
-
-function getWorksheetModeConfig(modeId) {
-  const config = getModeConfig(modeId);
-  return {
-    icon: ICON_MAP[config.icon] || Plus,
-    label: config.shortLabel,
-    op: config.op,
-  };
-}
-
-const DECO_ICONS = [
-  Rocket, Star, Heart, Smile, Trophy, Sparkles,
-  Sun, Moon, Cloud, Rainbow, Flower2, TreePine,
-  Apple, Cherry, Fish, Bug, Bird, Cat,
-  Dog, Snail, Turtle, Squirrel, Gem, Crown,
-  Music, Palette, Puzzle, Gamepad2, Bike, Plane,
-  Sailboat, Footprints, Drumstick, IceCreamCone, Cookie, Cake,
-  Candy, Gift, PartyPopper, Flame, Snowflake, Compass,
-  Globe, Lightbulb, Zap,
-];
-const DECO_COLORS = [
-  "text-pink-400",
-  "text-yellow-500",
-  "text-red-400",
-  "text-amber-500",
-  "text-violet-400",
-  "text-sky-400",
-  "text-orange-400",
-  "text-emerald-500",
-  "text-rose-400",
-  "text-teal-400",
-  "text-indigo-400",
-  "text-lime-500",
-  "text-fuchsia-400",
-  "text-cyan-500",
-  "text-yellow-600",
-];
-
-const ENCOURAGEMENTS = [
-  "You did it!",
-  "Great job!",
-  "Way to go!",
-  "You're a math star!",
-  "Awesome work!",
-];
 
 const LEVEL_GROUPS = [
   { label: "Beginner", levels: [1, 2, 3] },
@@ -115,137 +29,277 @@ const LEVEL_GROUPS = [
   { label: "Advanced", levels: [7, 8, 9, 10] },
 ];
 
-function pickSheetIcons(count, offset = 0) {
-  return Array.from({ length: count }, (_, i) => DECO_ICONS[(offset + i) % DECO_ICONS.length]);
-}
+// Question ops are ASCII; the printed sheet uses the maths symbols.
+const OP_SYMBOL = { "+": "+", "-": "−", "x": "×", "/": "÷" };
+const OP_VERB = { "+": "ADD", "-": "SUBTRACT", "x": "MULTIPLY", "/": "DIVIDE" };
 
-function getDecoIcon(icons, index) {
-  const Icon = icons[index % icons.length];
-  const color = DECO_COLORS[index % DECO_COLORS.length];
-  return <Icon className={`h-5 w-5 ${color} print:h-4 print:w-4`} />;
-}
+// §15: every mark on a flight log is 100% black — no tints, no colour, no
+// decorative glyphs. The sheet is Fredoka for the maths, Nunito for the rest.
 
-const BLANK = <span className="inline-block border-b-2 border-slate-300 w-12 print:w-14" />;
-
-function VerticalProblem({ a, b, op, answer }) {
-  const aDigits = String(a).split("");
-  const bDigits = String(b).split("");
-  const ansLen = answer != null ? String(answer).length : Math.max(aDigits.length, bDigits.length);
-  const maxLen = Math.max(aDigits.length, bDigits.length, ansLen);
-  const cols = maxLen + 1;
-  const padA = cols - aDigits.length;
-  const padB = cols - bDigits.length - 1;
-
+function ItemNumber({ n }) {
   return (
-    <span
-      className="inline-grid items-center justify-items-center"
-      style={{ gridTemplateColumns: `repeat(${cols}, 0.75em)`, verticalAlign: "middle", lineHeight: 1.3 }}
-    >
-      {Array.from({ length: padA }, (_, i) => <span key={`pa${i}`} />)}
-      {aDigits.map((d, i) => <span key={`a${i}`}>{d}</span>)}
-
-      <span className="text-[0.85em]">{op}</span>
-      {Array.from({ length: padB }, (_, i) => <span key={`pb${i}`} />)}
-      {bDigits.map((d, i) => <span key={`b${i}`}>{d}</span>)}
-
-      <span className="border-t-2 border-slate-400 w-full" style={{ gridColumn: "1 / -1", marginTop: "2px" }} />
-
-      {answer != null ? (
-        <>
-          {Array.from({ length: cols - String(answer).length }, (_, i) => <span key={`pc${i}`} />)}
-          {String(answer).split("").map((d, i) => (
-            <span key={`ans${i}`} className="text-emerald-600">{d}</span>
-          ))}
-        </>
-      ) : (
-        <span
-          className="border-b-2 border-slate-300 w-full"
-          style={{ gridColumn: "1 / -1", height: "1.2em" }}
-        />
-      )}
+    <span className="w-5 flex-none text-right text-[11px] font-bold text-black leading-[1.4] pt-[3px]">
+      {n}.
     </span>
   );
 }
 
-function shouldRenderVertical(q) {
+function AnswerBox({ value = null, wide = false }) {
   return (
-    (q.op === "+" || q.op === "−") &&
-    typeof q.a === "number" &&
-    typeof q.b === "number" &&
-    (q.a >= 10 || q.b >= 10)
+    <span
+      className={`inline-flex items-center justify-center align-middle border-[1.5px] border-black h-[28px] ${wide ? "min-w-[64px] px-2" : "w-[44px]"} font-display font-semibold text-[16px] text-black`}
+    >
+      {value}
+    </span>
   );
 }
 
-function WorksheetProblem({ question: q }) {
-  const promptText = q.display?.promptText;
-  if (promptText && isVerbalPrompt(promptText)) {
-    return <>{promptText} {BLANK}</>;
-  }
-  if (shouldRenderVertical(q)) {
-    return <VerticalProblem a={q.a} b={q.b} op={q.op} />;
-  }
-  if (promptText) {
-    return <>{promptText} {BLANK}</>;
-  }
-  if (q.display?.sequence) {
-    return <>{q.display.sequence.join(", ")}, {BLANK}</>;
-  }
-  if (q.display?.emoji) {
-    const dots = Array.from({ length: q.display.count }, () => q.display.emoji).join(" ");
-    return <>{dots} = {BLANK}</>;
-  }
-  if (q.op === "?") {
-    return <>{q.a} {BLANK} {q.b}</>;
-  }
-  return <>{q.a} {q.op} {q.b} = {BLANK}</>;
+function PartCaption({ children }) {
+  return (
+    <p className="text-[11px] font-black text-black uppercase tracking-[0.14em] mb-2">
+      {children}
+    </p>
+  );
 }
 
-function AnswerKeyProblem({ question: q }) {
-  const promptText = q.display?.promptText;
-  if (promptText && isVerbalPrompt(promptText)) {
-    return <>{promptText} <span className="text-emerald-600">{q.answer}</span></>;
+// Part A stacked item: both operands right-aligned in one digit column, the
+// operator hanging left on the second line, one 1.5px rule, then 34px of
+// clear space for the child's own writing.
+function StackedItem({ question: q, number, answer = null }) {
+  return (
+    <div className="flex gap-1.5">
+      <ItemNumber n={number} />
+      <div
+        className="w-[88px] font-display font-semibold text-[20px] text-black leading-[1.25]"
+        style={{ fontVariantNumeric: "tabular-nums" }}
+      >
+        <div className="text-right pr-1">{q.a}</div>
+        <div className="flex justify-between pr-1">
+          <span>{OP_SYMBOL[q.op]}</span>
+          <span>{q.b}</span>
+        </div>
+        <div className="border-t-[1.5px] border-black mt-[3px]" />
+        <div className="h-[34px] text-right pr-1">{answer}</div>
+      </div>
+    </div>
+  );
+}
+
+// Part B inline item: `a + b =` then the box. The box IS the blank — never a
+// printed "?", never a printed answer.
+function InlineItem({ question: q, number, answer = null }) {
+  return (
+    <div className="flex items-start gap-1.5">
+      <ItemNumber n={number} />
+      <span className="font-display font-semibold text-[18px] text-black leading-[1.4]">
+        {q.a} {OP_SYMBOL[q.op]} {q.b} ={" "}
+      </span>
+      <AnswerBox value={answer} />
+    </div>
+  );
+}
+
+// Prompt item for the modes without an a-op-b form (time, graphs, shapes…).
+// Choice questions print their option bank — a prompt with no bank has no
+// answer.
+function PromptItem({ question: q, number, answer = null }) {
+  let body = null;
+  if (q.display?.promptText) {
+    body = q.display.promptText;
+  } else if (q.display?.sequence) {
+    body = `${q.display.sequence.join(", ")}, …`;
+  } else if (q.display?.emoji) {
+    body = Array.from({ length: q.display.count }, () => q.display.emoji).join(" ");
   }
-  if (shouldRenderVertical(q)) {
-    return <VerticalProblem a={q.a} b={q.b} op={q.op} answer={q.answer} />;
+  const bank = Array.isArray(q.choices) && q.choices.length > 1 ? q.choices : null;
+  return (
+    <div className="flex items-start gap-1.5">
+      <ItemNumber n={number} />
+      <div className="flex-1 text-[13px] font-semibold text-black leading-[1.45]">
+        <span>{body} </span>
+        {bank && (
+          <span className="inline-flex flex-wrap gap-1.5 align-middle mx-1">
+            {bank.map((c, i) => (
+              <span
+                key={i}
+                className="inline-flex items-center justify-center border border-black px-1.5 h-[22px] font-display font-semibold text-[13px]"
+              >
+                {String(c)}
+              </span>
+            ))}
+          </span>
+        )}
+        <AnswerBox value={answer} wide />
+      </div>
+    </div>
+  );
+}
+
+// Part C: the one thought problem, full width, at the end. A "pick two
+// numbers" prompt prints the number bank it picks from and a structured
+// answer line (☐ + ☐ = 6).
+function ThoughtProblem({ partC, number, showAnswer = false }) {
+  if (!partC) return null;
+  const q = partC.question;
+  if (partC.kind === "pickTwo") {
+    const pair = Array.isArray(q.answer?.[0]) ? q.answer[0] : q.answer;
+    return (
+      <div className="flex items-start gap-1.5">
+        <ItemNumber n={number} />
+        <div className="space-y-3">
+          <p className="text-[14px] font-semibold text-black leading-[1.5] m-0">
+            {q.display.promptText.replace("Pick two numbers", "Pick two numbers from the box")}
+          </p>
+          <div className="flex gap-2">
+            {q.display.options.map((opt, i) => (
+              <span
+                key={i}
+                className="inline-flex items-center justify-center border-[1.5px] border-black w-[34px] h-[30px] font-display font-semibold text-[17px] text-black"
+              >
+                {opt}
+              </span>
+            ))}
+          </div>
+          <div className="flex items-center gap-2 font-display font-semibold text-[19px] text-black">
+            <AnswerBox value={showAnswer ? pair?.[0] : null} />
+            <span>+</span>
+            <AnswerBox value={showAnswer ? pair?.[1] : null} />
+            <span>= {q.a}</span>
+          </div>
+        </div>
+      </div>
+    );
   }
-  if (promptText) {
-    return <>{promptText} <span className="text-emerald-600">{q.answer}</span></>;
+  if (partC.kind === "computation") {
+    return <InlineItem question={q} number={number} answer={showAnswer ? q.answer : null} />;
   }
-  if (q.display?.sequence) {
-    return <>{q.display.sequence.join(", ")}, <span className="text-emerald-600">{q.answer}</span></>;
-  }
-  if (q.op === "?") {
-    return <>{q.a} <span className="text-emerald-600">{q.answer}</span> {q.b}</>;
-  }
-  return <>{q.a} {q.op} {q.b} = <span className="text-emerald-600">{q.answer}</span></>;
+  return (
+    <div className="flex items-start gap-1.5">
+      <ItemNumber n={number} />
+      <div className="flex-1 text-[14px] font-semibold text-black leading-[1.5]">
+        <span>{q.display?.promptText} </span>
+        <AnswerBox value={showAnswer ? q.answer : null} wide />
+      </div>
+    </div>
+  );
+}
+
+// One sheet — the log itself, or its answer key (same grid, answers in the
+// boxes, "Answer key" in place of Name and Date; always a separate sheet).
+function FlightLogSheet({ log, mode, level, scope, answerKey = false, logIndex, logCount, breakBefore = false }) {
+  const config = getModeConfig(mode);
+  const partAVerb = log.computational ? `STACK AND ${OP_VERB[config.op]}` : "WARM UP";
+  let n = 0;
+  const next = () => ++n;
+  const answerOf = (q) => (answerKey ? q.answer : null);
+
+  return (
+    <div
+      className="bg-white rounded-3xl shadow-lg p-8 print:shadow-none print:rounded-none print:p-0 text-black"
+      style={breakBefore ? { pageBreakBefore: "always" } : undefined}
+    >
+      {/* Header: 32px black lockup, 2px rule, log name · level · scope right */}
+      <div className="flex items-center gap-2.5 border-b-2 border-black pb-3">
+        <LarkMark size={32} color="#000000" accent="#000000" eye="#FFFFFF" />
+        <span className="font-display font-semibold text-2xl lowercase leading-none tracking-[-0.01em]">
+          larkit
+        </span>
+        <span className="ml-auto text-[12px] font-bold text-right">
+          Flight log · {config.label} · Level {level} · {scope}
+          {logCount > 1 && ` · Log ${logIndex + 1} of ${logCount}`}
+        </span>
+      </div>
+
+      {/* Name/Date rules — or "Answer key" on the key sheet */}
+      {answerKey ? (
+        <p className="text-[12px] font-semibold py-3 m-0">Answer key</p>
+      ) : (
+        <div className="flex gap-8 py-3 text-[12px] font-semibold">
+          <label className="flex items-end gap-2 flex-1">
+            Name
+            <span className="inline-block border-b border-black flex-1 max-w-64" />
+          </label>
+          <label className="flex items-end gap-2">
+            Date
+            <span className="inline-block border-b border-black w-32" />
+          </label>
+        </div>
+      )}
+
+      {/* Part A — stacked ×6 (three per row), or warm-up prompts */}
+      <div className="mt-2">
+        <PartCaption>Part A · {partAVerb}</PartCaption>
+        {log.computational ? (
+          <div className="grid grid-cols-3 gap-x-6" style={{ rowGap: "18px" }}>
+            {log.partA.map((q, i) => (
+              <StackedItem key={i} question={q} number={next()} answer={answerOf(q)} />
+            ))}
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 print:grid-cols-2 gap-x-6" style={{ rowGap: "14px" }}>
+            {log.partA.map((q, i) => (
+              <PromptItem key={i} question={q} number={next()} answer={answerOf(q)} />
+            ))}
+          </div>
+        )}
+      </div>
+
+      {/* Part B — inline ×4, two per row */}
+      <div className="mt-5">
+        <PartCaption>Part B · Write the answer</PartCaption>
+        <div className="grid grid-cols-1 sm:grid-cols-2 print:grid-cols-2 gap-x-6" style={{ rowGap: "14px" }}>
+          {log.partB.map((q, i) =>
+            log.computational ? (
+              <InlineItem key={i} question={q} number={next()} answer={answerOf(q)} />
+            ) : (
+              <PromptItem key={i} question={q} number={next()} answer={answerOf(q)} />
+            )
+          )}
+        </div>
+      </div>
+
+      {/* Part C — one thought problem, full width, at the end */}
+      {log.partC && (
+        <div className="mt-5">
+          <PartCaption>Part C · Think it through</PartCaption>
+          <ThoughtProblem partC={log.partC} number={next()} showAnswer={answerKey} />
+        </div>
+      )}
+
+      {/* Footer, one line */}
+      <div className="mt-6 pt-2 border-t border-black flex items-center justify-between text-[10px] font-bold">
+        <span>larkit.io</span>
+        <span className="inline-flex items-center gap-1.5">
+          Landed
+          <span className="inline-block w-[14px] h-[14px] border-[1.5px] border-black align-middle" />
+          of {FLIGHT_LOG_ITEMS}
+        </span>
+        <span>
+          {config.label} · L{level} · Page 1 of 1
+        </span>
+      </div>
+    </div>
+  );
 }
 
 export default function PrintableWorksheet() {
   const { theme } = useTheme();
   const [mode, setMode] = useState("addition");
   const [level, setLevel] = useState(1);
-  const [problemCount, setProblemCount] = useState(20);
   const [sheetCount, setSheetCount] = useState(1);
   const [generated, setGenerated] = useState(false);
   const [showAnswerKey, setShowAnswerKey] = useState(true);
-  const [allowWordProblems, setAllowWordProblems] = useState(false);
 
-  const sheets = useMemo(() => {
+  const logs = useMemo(() => {
     if (!generated) return [];
-    return Array.from({ length: sheetCount }, (_, sheetIdx) => ({
-      problems: generateWorksheetSet(mode, level, problemCount, { allowWordProblems }),
-      encouragement: ENCOURAGEMENTS[sheetIdx % ENCOURAGEMENTS.length],
-      icons: pickSheetIcons(10, sheetIdx * 3),
-    }));
-  }, [generated, mode, level, problemCount, sheetCount, allowWordProblems]);
+    return Array.from({ length: sheetCount }, () => generateFlightLog(mode, level));
+  }, [generated, mode, level, sheetCount]);
+
+  const scope = flightLogScope(mode, level);
 
   const handleGenerate = () => {
     setGenerated(false);
     setTimeout(() => setGenerated(true), 0);
-  };
-
-  const handlePrint = () => {
-    window.print();
   };
 
   const levelLabel = level <= 3 ? "Beginner" : level <= 6 ? "Intermediate" : "Advanced";
@@ -253,9 +307,13 @@ export default function PrintableWorksheet() {
   return (
     <div className={`min-h-screen ${theme.bg} transition-colors duration-300`}>
       <div className="no-print max-w-md mx-auto px-4 py-6">
-        <h1 className={`text-2xl font-extrabold ${theme.textPrimary} mb-6`}>
+        <h1 className={`text-2xl font-semibold font-display ${theme.textPrimary} mb-2`}>
           Print a Flight Log
         </h1>
+        <p className={`text-sm ${theme.textSecondary} mb-6`}>
+          One sheet, one skill: {FLIGHT_LOG_ITEMS} problems in three parts, from the
+          same levels the games use. The answer key prints as its own sheet.
+        </p>
 
         <div className={`${theme.cardBg} backdrop-blur rounded-3xl shadow-lg p-6 space-y-5`}>
           {/* Math type */}
@@ -265,8 +323,8 @@ export default function PrintableWorksheet() {
             </p>
             <div className="grid grid-cols-4 gap-2">
               {MODES.map((m) => {
-                const cfg = getWorksheetModeConfig(m);
-                const Icon = cfg.icon;
+                const cfg = getModeConfig(m);
+                const Icon = ICON_MAP[cfg.icon] || Plus;
                 const active = m === mode;
                 return (
                   <button
@@ -278,7 +336,7 @@ export default function PrintableWorksheet() {
                   >
                     <Icon className={`h-6 w-6 ${active ? theme.selectedIcon : theme.textMuted}`} />
                     <span className={`text-[10px] font-bold ${active ? theme.selectedText : theme.textSecondary} leading-tight text-center`}>
-                      {cfg.label}
+                      {cfg.shortLabel}
                     </span>
                   </button>
                 );
@@ -315,32 +373,10 @@ export default function PrintableWorksheet() {
             </div>
           </div>
 
-          {/* Problem count */}
+          {/* Number of logs */}
           <div>
             <p className={`text-sm font-semibold ${theme.textSecondary} mb-2 uppercase tracking-wide`}>
-              Number of Problems
-            </p>
-            <div className="flex gap-2">
-              {[20, 30, 40].map((n) => (
-                <button
-                  key={n}
-                  className={`flex-1 py-3 rounded-2xl border-2 font-bold text-lg cursor-pointer transition-colors ${
-                    n === problemCount
-                      ? theme.selectedBorder + " " + theme.selectedText
-                      : `${theme.cardBorder} bg-white ${theme.textSecondary} hover:bg-gray-50`
-                  }`}
-                  onClick={() => { setProblemCount(n); setGenerated(false); }}
-                >
-                  {n}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Number of sheets */}
-          <div>
-            <p className={`text-sm font-semibold ${theme.textSecondary} mb-2 uppercase tracking-wide`}>
-              Number of Sheets
+              Number of Logs
             </p>
             <div className="flex gap-2">
               {[1, 2, 3, 5].map((n) => (
@@ -366,9 +402,10 @@ export default function PrintableWorksheet() {
             </p>
             <button
               className={`relative w-12 h-7 rounded-full transition-colors cursor-pointer ${
-                showAnswerKey ? "bg-emerald-400" : "bg-gray-300"
+                showAnswerKey ? "bg-teal" : "bg-gray-300"
               }`}
               onClick={() => setShowAnswerKey(!showAnswerKey)}
+              aria-label={showAnswerKey ? "Skip the answer key" : "Include the answer key"}
             >
               <span
                 className={`absolute top-0.5 left-0.5 w-6 h-6 bg-white rounded-full shadow transition-transform ${
@@ -378,50 +415,20 @@ export default function PrintableWorksheet() {
             </button>
           </div>
 
-          {/* Word Problems toggle */}
-          <div className="flex items-center justify-between">
-            <div>
-              <p className={`text-sm font-semibold ${theme.textSecondary} uppercase tracking-wide`}>
-                Allow Word Problems
-              </p>
-              <p className={`text-xs ${theme.textMuted}`}>
-                Story-style questions on worksheets
-              </p>
-            </div>
-            <button
-              className={`relative w-12 h-7 rounded-full transition-colors cursor-pointer ${
-                allowWordProblems ? "bg-emerald-400" : "bg-gray-300"
-              }`}
-              onClick={() => {
-                setAllowWordProblems(!allowWordProblems);
-                setGenerated(false);
-              }}
-              aria-label={allowWordProblems ? "Disable word problems" : "Enable word problems"}
-            >
-              <span
-                className={`absolute top-0.5 left-0.5 w-6 h-6 bg-white rounded-full shadow transition-transform ${
-                  allowWordProblems ? "translate-x-5" : ""
-                }`}
-              />
-            </button>
-          </div>
-
           {/* Buttons */}
           <div className="flex gap-3">
             <motion.button
-              className={`flex-1 py-3 bg-gradient-to-r ${theme.ctaPrimary} text-white font-bold text-lg rounded-2xl shadow-lg cursor-pointer`}
-              whileTap={{ scale: 0.95 }}
+              className="flex-1 h-14 bg-teal text-cream font-display font-semibold text-lg rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer"
               onClick={handleGenerate}
             >
               Generate
             </motion.button>
             {generated && (
               <motion.button
-                className={`flex items-center justify-center gap-2 flex-1 py-3 bg-gradient-to-r ${theme.worksheetCalloutBtn} text-white font-bold text-lg rounded-2xl shadow-lg cursor-pointer`}
-                whileTap={{ scale: 0.95 }}
-                initial={{ opacity: 0, scale: 0.8 }}
+                className="flex items-center justify-center gap-2 flex-1 h-14 bg-white text-teal font-display font-semibold text-lg rounded-[18px] shadow-[0_5px_0_#14231F1a] [--press-edge:#14231F1a] btn-press cursor-pointer"
+                initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                onClick={handlePrint}
+                onClick={() => window.print()}
               >
                 <Printer className="h-5 w-5" />
                 Print
@@ -431,93 +438,33 @@ export default function PrintableWorksheet() {
         </div>
       </div>
 
-      {/* Printable worksheets */}
-      {generated && sheets.length > 0 && sheets.map((sheet, sheetIdx) => (
-        <div
-          key={sheetIdx}
-          className="max-w-2xl mx-auto px-4 pb-8 print:px-0 print:pb-0 print:max-w-none"
-          style={sheetIdx > 0 ? { pageBreakBefore: "always" } : undefined}
-        >
-          <div className="bg-white rounded-3xl shadow-lg p-8 print:shadow-none print:rounded-none print:p-4">
-            {/* Flight-log header (§15): black lockup, 2px rule, log name right. */}
-            <div className="flex items-center gap-3 border-b-2 border-black pb-3 mb-3 print:pb-2 print:mb-2">
-              <LarkMark size={26} color="#000000" accent="#000000" eye="#FFFFFF" />
-              <span className="font-display font-semibold text-2xl text-black lowercase leading-none print:text-xl">
-                larkit
-              </span>
-              <span className="ml-auto text-xs font-bold text-black print:text-[11px]">
-                Flight log &middot; {getWorksheetModeConfig(mode).label} &middot; Level {level} ({levelLabel})
-                {sheets.length > 1 && ` · Sheet ${sheetIdx + 1} of ${sheets.length}`}
-              </span>
-            </div>
-
-            <div className="flex gap-6 mb-4 pb-3 print:mb-2 print:pb-2">
-              <label className="flex items-end gap-2 text-black font-medium pt-1 print:text-sm flex-1">
-                Name
-                <span className="inline-block border-b border-black flex-1 max-w-56" />
-              </label>
-              <label className="flex items-end gap-2 text-black font-medium pt-1 print:text-sm">
-                Date
-                <span className="inline-block border-b border-black w-32 print:w-28" />
-              </label>
-            </div>
-
-            <div className={`grid ${problemCount <= 20 ? "grid-cols-2 gap-x-8 gap-y-5 print:gap-y-3" : problemCount <= 30 ? "grid-cols-3 gap-x-6 gap-y-4 print:gap-x-4 print:gap-y-2" : "grid-cols-4 gap-x-4 gap-y-3 print:gap-x-3 print:gap-y-1.5"}`}>
-              {sheet.problems.map((q, i) => (
-                <div key={i} className="flex items-center gap-2">
-                  <span className={`font-bold text-black/60 print:text-black text-right ${problemCount <= 20 ? "text-sm w-6" : problemCount <= 30 ? "text-xs w-6" : "text-[10px] w-5"}`}>
-                    {i + 1})
-                  </span>
-                  <span className={`font-display font-semibold text-black tracking-wide ${problemCount <= 20 ? "text-xl print:text-lg" : problemCount <= 30 ? "text-lg print:text-base" : "text-base print:text-sm"}`}>
-                    <WorksheetProblem question={q} />
-                  </span>
-                  {i % 5 === 2 && problemCount <= 20 && problemCount < 40 && (
-                    <span className="ml-auto print:hidden">{getDecoIcon(sheet.icons, i)}</span>
-                  )}
-                </div>
-              ))}
-            </div>
-
-            <div className="no-print mt-4 pt-2 border-t border-ink/10 flex items-center justify-center">
-              <p className="text-base font-extrabold text-ink/70">{sheet.encouragement}</p>
-            </div>
-            <div className="hidden print:flex mt-2 pt-1 border-t border-black/30 items-center justify-between text-[10px] text-black">
-              <span>larkit.io</span>
-              <span>Sheet {sheetIdx + 1} of {sheets.length}</span>
-            </div>
+      {/* The flight logs */}
+      {generated &&
+        logs.map((log, i) => (
+          <div key={i} className="max-w-2xl mx-auto px-4 pb-8 print:px-0 print:pb-0 print:max-w-none space-y-4 print:space-y-0">
+            <FlightLogSheet
+              log={log}
+              mode={mode}
+              level={level}
+              scope={scope}
+              logIndex={i}
+              logCount={logs.length}
+              breakBefore={i > 0}
+            />
+            {showAnswerKey && (
+              <FlightLogSheet
+                log={log}
+                mode={mode}
+                level={level}
+                scope={scope}
+                answerKey
+                logIndex={i}
+                logCount={logs.length}
+                breakBefore
+              />
+            )}
           </div>
-
-          {showAnswerKey && (
-            <div
-              className="bg-white rounded-3xl shadow-lg p-8 mt-4 print:shadow-none print:rounded-none print:p-6"
-              style={{ pageBreakBefore: "always" }}
-            >
-              <div className="flex items-center gap-3 border-b-2 border-black pb-3 mb-4">
-                <LarkMark size={22} color="#000000" accent="#000000" eye="#FFFFFF" />
-                <h2 className="font-display font-semibold text-xl text-black">
-                  Answer Key
-                  {sheets.length > 1 && ` · Sheet ${sheetIdx + 1} of ${sheets.length}`}
-                </h2>
-                <span className="ml-auto text-xs font-bold text-black">
-                  {getWorksheetModeConfig(mode).label} &middot; Level {level} ({levelLabel})
-                </span>
-              </div>
-              <div className="grid grid-cols-3 sm:grid-cols-4 gap-x-6 gap-y-3">
-                {sheet.problems.map((q, i) => (
-                  <div key={i} className="flex items-center gap-1.5">
-                    <span className="text-sm font-bold text-slate-400 w-6 text-right">
-                      {i + 1})
-                    </span>
-                    <span className="text-base font-bold text-slate-600">
-                      <AnswerKeyProblem question={q} />
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
-      ))}
+        ))}
     </div>
   );
 }

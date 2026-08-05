@@ -11,6 +11,12 @@ final class SessionViewModel: ObservableObject {
         case loading
         case question
         case feedback(correct: Bool)
+        /// §03: a pending nomination is offered at take-off — six questions,
+        /// five to pass. Declining costs nothing.
+        case fledgingOffer(level: Int)
+        /// §03: pass fledges now (level +1, ceremony); a miss keeps the
+        /// nomination and the normal flight follows either way.
+        case fledgingResult(passed: Bool, newLevel: Int)
         case complete(starsEarned: Int, lifetimeStars: Int)
         case failed(String)
     }
@@ -32,9 +38,27 @@ final class SessionViewModel: ObservableObject {
     @Published private(set) var questionKey = 0
     /// Set during wrong-answer feedback so the widget can reveal the answer.
     @Published private(set) var revealAnswer: Any?
+    /// §01/§02 (behind GamFlags.flightReport): the four-part settlement and
+    /// the engagement summary the Flight Report shows. Nil while the flag is
+    /// off — the classic end card renders then.
+    @Published private(set) var flightPayout: EngineBridge.FlightPayout?
+    @Published private(set) var flightSummary: EngagementStore.SessionEndResult?
+    /// §03 (behind GamFlags.fledging): a nomination pending after this flight
+    /// (drives the report's Seafoam note), whether this flight glid the level
+    /// down, and whether the CURRENT run is a Fledging Flight challenge set.
+    @Published private(set) var nominationPending = false
+    @Published private(set) var glideDown = false
+    @Published private(set) var isFledgingRun = false
 
     private let engine: EngineBridge
     private let progressStore: ProgressStore
+    private let engagementStore: EngagementStore
+
+    #if DEBUG
+    /// Test-only: lets XCTest reach the live engine session (e.g. to force
+    /// mastery via EngineBridge.forceHighMastery). Never used by the app.
+    var engineSessionForTesting: EngineBridge.Session? { session }
+    #endif
     private let bankService: BankService?
     private var session: EngineBridge.Session?
     private var questionStart = Date()
@@ -47,7 +71,8 @@ final class SessionViewModel: ObservableObject {
         bankService: BankService?,
         sessionSize: Int = 10,
         correctHold: Duration = .milliseconds(1200),
-        wrongHold: Duration = .milliseconds(2000)
+        wrongHold: Duration = .milliseconds(2000),
+        engagementStore: EngagementStore = EngagementStore()
     ) {
         self.modeId = modeId
         self.engine = engine
@@ -56,23 +81,78 @@ final class SessionViewModel: ObservableObject {
         self.sessionSize = sessionSize
         self.correctHold = correctHold
         self.wrongHold = wrongHold
+        self.engagementStore = engagementStore
     }
 
-    func start() async {
+    /// `offerFledging` is false only for the normal flight that follows a
+    /// Fledging Flight — one attempt per session, so the offer never loops.
+    func start(offerFledging: Bool = true) async {
         await bankService?.ensureModeLoaded(modeId)
         let savedProgress = await progressStore.load(mode: modeId)
         do {
             let session = try engine.createSession(
                 mode: modeId,
                 sessionSize: sessionSize,
-                options: ["savedProgress": savedProgress]
+                options: [
+                    "savedProgress": savedProgress,
+                    // §03: with the flag on, promotion signals nominate
+                    // instead of leveling mid-flight (shared engine rule).
+                    "fledging": GamFlags.fledging,
+                ]
             )
             self.session = session
+            self.isFledgingRun = false
+            self.nominationPending = false
+            self.glideDown = false
             self.level = ProgressStore.int(session.snapshot["level"], default: 1)
+            // §03 step 4: a pending nomination is offered at take-off.
+            if offerFledging, GamFlags.fledging, engagementStore.nomination(for: modeId) != nil {
+                phase = .fledgingOffer(level: level)
+                return
+            }
             loadNextQuestion()
         } catch {
             phase = .failed("\(error)")
         }
+    }
+
+    /// "Just a normal flight today" — declining costs nothing and the offer
+    /// comes back at the next take-off.
+    func declineFledging() {
+        guard case .fledgingOffer = phase else { return }
+        loadNextQuestion()
+    }
+
+    /// Take the Fledging Flight: a six-question challenge set at the CURRENT
+    /// level, rotating through the weakest subskills recorded when the lark
+    /// nominated. No stars ride on it.
+    func acceptFledging() {
+        guard case .fledgingOffer = phase else { return }
+        let nomination = engagementStore.nomination(for: modeId)
+        do {
+            let challenge = try engine.createSession(
+                mode: modeId,
+                sessionSize: EngagementStore.fledgingQuestions,
+                options: [
+                    "fledging": true,
+                    "challengeSubskills": nomination?["weakSubskills"] as? [String] ?? [String](),
+                    "savedProgress": ["level": level],
+                ]
+            )
+            self.session = challenge
+            self.isFledgingRun = true
+            loadNextQuestion()
+        } catch {
+            phase = .failed("\(error)")
+        }
+    }
+
+    /// "Fly on" after the fledging ceremony — the normal flight begins at
+    /// whatever level the ceremony left, with no second offer this session.
+    func continueAfterFledging() async {
+        guard case .fledgingResult = phase else { return }
+        phase = .loading
+        await start(offerFledging: false)
     }
 
     var progressFraction: Double {
@@ -179,14 +259,69 @@ final class SessionViewModel: ObservableObject {
     private func finishSession() async {
         guard let session else { return }
         let snapshot = session.snapshot
-        let starsEarned = ProgressStore.int(snapshot["firstTryCorrect"])
-        await progressStore.save(mode: modeId, data: [
-            "level": snapshot["level"] ?? 1,
+        let firstTryCorrect = ProgressStore.int(snapshot["firstTryCorrect"])
+        let questionsAnswered = ProgressStore.int(snapshot["questionsAnswered"])
+
+        // §03: a Fledging Flight settles its own way — no stars, no report.
+        if isFledgingRun {
+            isFledgingRun = false
+            let passed = firstTryCorrect >= EngagementStore.fledgingPass
+            engagementStore.recordFledgingResult(mode: modeId, passed: passed)
+            let newLevel = passed ? min(level + 1, 10) : level
+            await progressStore.save(mode: modeId, data: [
+                "level": newLevel,
+                "mistakeBank": snapshot["mistakeBank"] ?? [[String: Any]](),
+                "firstTryCorrect": firstTryCorrect,
+                "starsEarned": 0, // the ceremony is the reward
+                "bankItemStats": snapshot["bankItemStats"] ?? [String: Any](),
+                "recentBankItemIds": snapshot["recentBankItemIds"] ?? [String](),
+            ])
+            level = newLevel
+            if passed { SoundPlayer.shared.playLevelUp() }
+            phase = .fledgingResult(passed: passed, newLevel: newLevel)
+            return
+        }
+
+        // §01 (flagged): the four-part settlement replaces one-star-per-
+        // first-try, computed by the SAME shared engine code the web uses.
+        let payout = GamFlags.flightReport ? (try? engine.summarizeFlight(session)) : nil
+        let starsEarned = payout?.total ?? firstTryCorrect
+
+        // §03 bookkeeping at flight end: the engine's in-flight signal becomes
+        // a persisted nomination; a rough flight clears it silently; two
+        // consecutive rough flights glide the level down one, saved below.
+        var levelToSave = snapshot["level"] ?? 1
+        if GamFlags.fledging {
+            let outcome = engagementStore.recordFlightEnd(
+                mode: modeId,
+                precisionRatio: questionsAnswered > 0 ? Double(firstTryCorrect) / Double(questionsAnswered) : 0,
+                nominated: snapshot["nominated"] as? Bool ?? false,
+                weakSubskills: snapshot["nominationWeakSubskills"] as? [String] ?? []
+            )
+            nominationPending = outcome.nomination != nil
+            glideDown = outcome.glideDown
+            if outcome.glideDown {
+                let glided = max(1, ProgressStore.int(snapshot["level"], default: 1) - 1)
+                levelToSave = glided
+                level = glided
+            }
+        }
+
+        var data: [String: Any] = [
+            "level": levelToSave,
             "mistakeBank": snapshot["mistakeBank"] ?? [[String: Any]](),
-            "firstTryCorrect": starsEarned,
+            "firstTryCorrect": firstTryCorrect,
             "bankItemStats": snapshot["bankItemStats"] ?? [String: Any](),
             "recentBankItemIds": snapshot["recentBankItemIds"] ?? [String](),
-        ])
+        ]
+        if let payout { data["starsEarned"] = payout.total }
+        await progressStore.save(mode: modeId, data: data)
+
+        if let payout {
+            flightPayout = payout
+            flightSummary = engagementStore.recordSessionEnd(starsEarned: starsEarned)
+        }
+
         let progress = await progressStore.load(mode: modeId)
         SoundPlayer.shared.playComplete()
         phase = .complete(

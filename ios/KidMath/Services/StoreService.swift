@@ -20,6 +20,37 @@ final class StoreService: ObservableObject {
     static let monthlyID = "com.kidmath.app.premium.monthly"
     static let annualID = "com.kidmath.app.premium.annual"
 
+    /// Launch switch — the Swift mirror of the web's `paywallEnabled()`
+    /// (VITE_PAYWALL_ENABLED in src/premium.js). While OFF, every surface is
+    /// free: no locks, no plan step in onboarding, no paywall sheets. Flip it
+    /// together with the web deploy at billing launch. For manual testing:
+    /// `simctl launch … -paywallEnabled 1` forces it on via the argument
+    /// domain.
+    nonisolated static var paywallEnabled: Bool {
+        if UserDefaults.standard.object(forKey: "paywallEnabled") != nil {
+            return UserDefaults.standard.bool(forKey: "paywallEnabled")
+        }
+        return false
+    }
+
+    /// What the UI gates on: everything is unlocked until the launch switch
+    /// flips, and afterwards a trial/subscription is required.
+    var isUnlocked: Bool { !Self.paywallEnabled || hasPremium }
+
+    /// Free tier (decided 2026-08-02, supersedes "free is web-only"): the
+    /// same five modes as the web are free on iOS too. Mirror of
+    /// FREE_MODE_IDS in src/premium.js — keep the two lists identical.
+    nonisolated static let freeModeIds: Set<String> = [
+        "addition", "subtraction", "multiplication", "division", "counting",
+    ]
+
+    /// Whether this mode can start a session right now: free tier, or
+    /// everything while unlocked. Worksheets and the other 17 modes stay
+    /// behind the subscription once the paywall is live.
+    func canPlay(_ modeId: String) -> Bool {
+        isUnlocked || Self.freeModeIds.contains(modeId)
+    }
+
     @Published private(set) var monthly: Product?
     @Published private(set) var annual: Product?
     @Published private(set) var hasPremium = false

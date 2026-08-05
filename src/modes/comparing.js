@@ -3,7 +3,7 @@ import { buildComparingDistractors, buildDistractors } from "./distractors";
 import { createQuestionMetadata, ITEM_FAMILIES } from "./itemMetadata";
 
 /**
- * comparing — Compare Quest! (spec-part-c1-number-sense.md §comparing)
+ * comparing — Comparison Crow (spec-part-c1-number-sense.md §comparing)
  *
  * Before M4: one shape (two numerals, pick a symbol) and a "word problem" that
  * was the same item with a sentence in front of it. Two of the three declared
@@ -603,10 +603,11 @@ function chooseVariety(level, context = {}) {
 
 export default {
   id: "comparing",
-  label: "Compare Quest!",
+  label: "Comparison Crow",
   shortLabel: "Comparing",
-  description: "Greater, less or equal — with numerals, sets, expressions and number lines.",
+  description: "More, less, equal",
   icon: "ArrowLeftRight",
+  glyph: "<",
   op: "vs",
   subskills: SUBSKILLS,
   supportedFormats: SUPPORTED_FORMATS,

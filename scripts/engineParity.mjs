@@ -102,7 +102,12 @@ for (const mode of MODES) {
       compared += 1;
 
       // 3. checkAnswer agrees across the boundary on the bundle's own item.
-      assert(K.checkAnswer(b, b.answer) === true, `bundle checkAnswer accepts its own answer (${mode} L${level})`);
+      // multiSelect answers may be a LIST of acceptable selections (a list of
+      // lists) — q.answer is not itself a valid submission; submit answer[0],
+      // mirroring the session loop (see CLAUDE.md).
+      const submission =
+        Array.isArray(b.answer) && Array.isArray(b.answer[0]) ? b.answer[0] : b.answer;
+      assert(K.checkAnswer(b, submission) === true, `bundle checkAnswer accepts its own answer (${mode} L${level})`);
     }
   }
 }

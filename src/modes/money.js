@@ -441,10 +441,11 @@ function selectVariety(level, context) {
 
 export default {
   id: "money",
-  label: "Money Counter!",
+  label: "Money Magpie",
   shortLabel: "Money",
-  description: "Count coins, trade them and make change.",
+  description: "Coins & change",
   icon: "Coins",
+  glyph: "¢",
   op: "money",
   subskills: SUBSKILLS,
   supportedFormats: SUPPORTED_FORMATS,

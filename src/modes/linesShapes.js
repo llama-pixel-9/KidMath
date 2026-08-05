@@ -552,10 +552,11 @@ function selectVariety(level, context) {
 
 export default {
   id: "linesShapes",
-  label: "Shape Sleuth!",
+  label: "Shapes Shell",
   shortLabel: "Shapes",
-  description: "Name, sort and reason about shapes.",
+  description: "2D shapes",
   icon: "Shapes",
+  glyph: "▲",
   op: "shape",
   subskills: SUBSKILLS,
   // Geometry items carry no `a op b = answer` relation for a format to rewrite.

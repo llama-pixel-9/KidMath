@@ -1,4 +1,5 @@
 import { MODE_IDS, getModeConfig } from "./modes";
+import { maxTotalForLevel } from "./modes/structures/levelPolicy";
 import { shuffleArray, isVerbalPrompt } from "./modes/helpers";
 import { buildItemKey, ITEM_FAMILIES } from "./modes/itemMetadata";
 import { validateChoices, validateQuestion } from "./modes/itemQuality";
@@ -58,6 +59,17 @@ function getMasterySnapshot(session, modeConfig) {
     weakestSubskill,
     weakestScore: getSkillMasteryRate(session.skillMastery?.[weakestSubskill]),
   };
+}
+
+/** The n weakest subskills by observed rate — a Fledging Flight targets these. */
+function weakestSubskillList(session, modeConfig, n = 3) {
+  const skills = modeConfig.subskills || Object.keys(session.skillMastery || {});
+  return [...skills]
+    .sort(
+      (a, b) =>
+        getSkillMasteryRate(session.skillMastery?.[a]) - getSkillMasteryRate(session.skillMastery?.[b])
+    )
+    .slice(0, n);
 }
 
 function getNextFamily(session, modeConfig) {
@@ -429,6 +441,15 @@ export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE, options 
   return {
     mode,
     level: saved.level,
+    // §03 fledging: when true, promotion signals nominate instead of changing
+    // the level, and mid-session demotion is off. challengeSubskills marks a
+    // Fledging Flight itself: a short set at fixed level rotating through the
+    // nominating flight's weakest subskills.
+    fledging: Boolean(options.fledging),
+    challengeSubskills:
+      Array.isArray(options.challengeSubskills) && options.challengeSubskills.length
+        ? options.challengeSubskills.slice()
+        : undefined,
     questionsAnswered: 0,
     firstTryCorrect: 0,
     retriesMastered: 0,
@@ -473,7 +494,9 @@ export function getNextQuestion(session) {
     session.allowWordProblems === false && nextFamily === ITEM_FAMILIES.APPLICATION
       ? ITEM_FAMILIES.PROCEDURAL
       : nextFamily;
-  const targetSubskill = getWeakestSubskill(session, modeConfig);
+  const targetSubskill = session.challengeSubskills?.length
+    ? session.challengeSubskills[session.questionsAnswered % session.challengeSubskills.length]
+    : getWeakestSubskill(session, modeConfig);
   const q = generateQuestion(session.mode, session.level, {
     itemFamily: scheduledFamily,
     targetSubskill,
@@ -576,13 +599,22 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
     let levelChanged = false;
     const avgTime = next.responseTimesMs.reduce((a, b) => a + b, 0) / next.responseTimesMs.length;
     const { weakestScore } = getMasterySnapshot(next, getModeConfig(session.mode));
+    const promotionSignal =
+      (next.correctStreak >= 4 && avgTime < 8500 && weakestScore >= 0.8) ||
+      (next.correctStreak >= 7 && weakestScore >= 0.72);
 
-    if (next.correctStreak >= 4 && avgTime < 8500 && weakestScore >= 0.8 && next.level < MAX_LEVEL) {
-      next.level = next.level + 1;
-      next.correctStreak = 0;
-      next.mistakesAtLevel = 0;
-      levelChanged = true;
-    } else if (next.correctStreak >= 7 && weakestScore >= 0.72 && next.level < MAX_LEVEL) {
+    if (session.fledging) {
+      // §03: the signal nominates — nothing interrupts the round, the level
+      // holds, and the Fledging Flight is offered at the next take-off. A
+      // challenge set never nominates (it IS the test).
+      if (promotionSignal && !next.challengeSubskills && !next.nominated && next.level < MAX_LEVEL) {
+        next.nominated = true;
+        next.nominationWeakSubskills = weakestSubskillList(next, getModeConfig(session.mode));
+      }
+      return { session: next, correct: true, levelChanged: false, newLevel: next.level };
+    }
+
+    if (promotionSignal && next.level < MAX_LEVEL) {
       next.level = next.level + 1;
       next.correctStreak = 0;
       next.mistakesAtLevel = 0;
@@ -604,12 +636,16 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
     ].slice(-MAX_REVIEW_ITEMS);
   }
 
+  // §03: mid-session demotion is off under fledging — two consecutive rough
+  // flights glide a kid down instead (engagement/fledging.js).
   let levelChanged = false;
-  const { weakestScore } = getMasterySnapshot(next, getModeConfig(session.mode));
-  if ((next.mistakesAtLevel >= 2 || weakestScore < 0.45) && next.level > 1) {
-    next.level = next.level - 1;
-    next.mistakesAtLevel = 0;
-    levelChanged = true;
+  if (!session.fledging) {
+    const { weakestScore } = getMasterySnapshot(next, getModeConfig(session.mode));
+    if ((next.mistakesAtLevel >= 2 || weakestScore < 0.45) && next.level > 1) {
+      next.level = next.level - 1;
+      next.mistakesAtLevel = 0;
+      levelChanged = true;
+    }
   }
 
   return { session: next, correct: false, levelChanged, newLevel: next.level };
@@ -617,6 +653,48 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
 
 export function isSessionComplete(session) {
   return session.questionsAnswered >= session.sessionSize;
+}
+
+// --- Flight payout (gamification spec §01, "The economy") ---
+//
+// Four payouts, settled once at the end card. Precision is the bulk — one star
+// per first-try correct — so a kid who answers ten questions carefully
+// out-earns a kid who rushes twenty. All numbers are playtest-tunable; the
+// invariant to protect is that accuracy dominates volume and altitude.
+
+export const LANDING_BONUS = 2;
+// Altitude by band: Fledgling (1–3) +0 · Flier (4–6) +2 · Skymaster (7–10) +4.
+export const ALTITUDE_BONUS = [0, 2, 4];
+export const CIRCLE_BACK_CAP = 2;
+
+export function levelBandIndex(level) {
+  return level >= 7 ? 2 : level >= 4 ? 1 : 0;
+}
+
+/**
+ * Pure settlement for a flight. An unfinished flight pays nothing at all
+ * (mistake-bank writes still happen through recordAnswer) — callers settle
+ * only when isSessionComplete, but the rule is encoded here too.
+ */
+export function summarizeFlight(session) {
+  const finished = session.questionsAnswered >= session.sessionSize;
+  const landing = finished ? LANDING_BONUS : 0;
+  const precision = finished ? session.firstTryCorrect ?? 0 : 0;
+  const altitude = finished ? ALTITUDE_BONUS[levelBandIndex(session.level)] : 0;
+  const circleBack = finished ? Math.min(session.retriesMastered ?? 0, CIRCLE_BACK_CAP) : 0;
+  return {
+    finished,
+    landing,
+    precision,
+    altitude,
+    circleBack,
+    total: landing + precision + altitude + circleBack,
+    level: session.level,
+    bandIndex: levelBandIndex(session.level),
+    questions: session.questionsAnswered,
+    firstTryCorrect: session.firstTryCorrect ?? 0,
+    retriesMastered: session.retriesMastered ?? 0,
+  };
 }
 
 // --- Worksheet generation (fixed level, batch) ---
@@ -634,4 +712,216 @@ export function generateWorksheetSet(mode, level, size = SESSION_SIZE, options =
     questions.push(q);
   }
   return questions;
+}
+
+// --- Flight logs (§15): eleven items in three fixed blocks ---
+//
+// A flight log is one printed sheet: Part A (6 stacked computations),
+// Part B (4 inline computations), Part C (one thought problem). The blocks
+// never interleave, and the generator — not the layout — is responsible for
+// the sheet being printable: operands inside the level range, the result slot
+// always the blank, no duplicate items or wording, at most one zero-fact.
+
+export const FLIGHT_LOG_PART_A = 6;
+export const FLIGHT_LOG_PART_B = 4;
+export const FLIGHT_LOG_ITEMS = FLIGHT_LOG_PART_A + FLIGHT_LOG_PART_B + 1;
+
+const ARITH_OPS = { "+": (a, b) => a + b, "-": (a, b) => a - b, "x": (a, b) => a * b, "/": (a, b) => a / b };
+
+function isPureComputation(q) {
+  const fn = ARITH_OPS[q.op];
+  if (!fn) return false;
+  if (typeof q.a !== "number" || typeof q.b !== "number" || typeof q.answer !== "number") return false;
+  // The blank must be the result slot. A question whose answer is not a op b
+  // (missing addend, true/false, error analysis…) prints as a filled result
+  // with an empty blank — the "3 + 1 = 5 ___" fault.
+  if (fn(q.a, q.b) !== q.answer) return false;
+  if (!Number.isInteger(q.answer) || q.answer < 0) return false;
+  return true;
+}
+
+// Level range: the additive ceiling is the level policy's total ceiling.
+// Multiplicative modes size their own factors, so only the computed result is
+// sanity-checked; an additive operand above the ceiling is a bug, not stretch.
+function withinLevelRange(q, level) {
+  const cap = maxTotalForLevel(level);
+  if (q.op === "+" || q.op === "-") {
+    return q.a <= cap && q.b <= cap && q.answer <= cap;
+  }
+  return true;
+}
+
+// Identity/zero facts (n + 0, n − 0, n × 1, n ÷ 1…) are capped at one per
+// sheet; a page of them teaches nothing.
+function isTrivialFact(q) {
+  if (q.op === "+" || q.op === "-") return q.a === 0 || q.b === 0;
+  if (q.op === "x") return q.a <= 1 || q.b <= 1;
+  if (q.op === "/") return q.b === 1 || q.answer === 0;
+  return false;
+}
+
+// Duplicate key: commutative ops treat 4+3 and 3+4 as the same item.
+function computationKey(q) {
+  const pair = q.op === "+" || q.op === "x" ? [q.a, q.b].sort((x, y) => x - y) : [q.a, q.b];
+  return `${q.op}:${pair.join(",")}`;
+}
+
+function normalizedPrompt(q) {
+  const text = q.display?.promptText;
+  return typeof text === "string" ? text.trim().toLowerCase() : null;
+}
+
+function isPrintablePrompt(q) {
+  if (q.answerType === "multiSelect" || q.answerType === "tenFrame") return false;
+  if (q.display?.promptText) {
+    const t = typeof q.answer;
+    return t === "number" || t === "string";
+  }
+  return Boolean(q.display?.sequence || q.display?.emoji);
+}
+
+function promptKey(q) {
+  return normalizedPrompt(q) || (q.display?.sequence ? `seq:${q.display.sequence.join(",")}` : `emoji:${q.display?.count}`);
+}
+
+// Draw questions until `accept` says yes, `count` times, without repeating a
+// key. Relaxation order on starvation: first admit trivial facts beyond the
+// cap, then give up on the remaining slots rather than loop forever.
+function drawUnique({ mode, level, context, count, accept, keyOf, seenKeys, state }) {
+  const out = [];
+  let attempts = 0;
+  const maxAttempts = count * 60;
+  while (out.length < count && attempts < maxAttempts) {
+    attempts += 1;
+    let q;
+    try {
+      q = generateQuestion(mode, level, context);
+    } catch {
+      continue;
+    }
+    if (!accept(q)) continue;
+    if (isTrivialFact(q)) {
+      if (state.trivialUsed) continue;
+      state.trivialUsed = true;
+    }
+    const key = keyOf(q);
+    if (seenKeys.has(key)) continue;
+    const prompt = normalizedPrompt(q);
+    if (prompt && seenKeys.has(`prompt:${prompt}`)) continue;
+    seenKeys.add(key);
+    if (prompt) seenKeys.add(`prompt:${prompt}`);
+    out.push(q);
+  }
+  return out;
+}
+
+// The one thought problem, at the end of the sheet. Preference order: a
+// "pick two numbers" item (which must ship its number bank), then a story
+// problem, then a plain computation as the last resort.
+function drawThoughtProblem({ mode, level, seenKeys, state }) {
+  const context = { allowWordProblems: true };
+  for (let attempts = 0; attempts < 60; attempts += 1) {
+    let q;
+    try {
+      q = generateQuestion(mode, level, context);
+    } catch {
+      continue;
+    }
+    const prompt = normalizedPrompt(q);
+    if (!prompt || seenKeys.has(`prompt:${prompt}`)) continue;
+
+    // Pick-two prompts carry their bank in display.options and a list-of-lists
+    // answer; anything multiSelect without a bank is unprintable.
+    if (q.answerType === "multiSelect") {
+      if (!Array.isArray(q.display?.options) || q.display.options.length === 0) continue;
+      seenKeys.add(`prompt:${prompt}`);
+      return { kind: "pickTwo", question: q };
+    }
+    const isStory = q.metadata?.itemFamily === ITEM_FAMILIES.APPLICATION && isVerbalPrompt(q.display?.promptText);
+    if (isStory && (typeof q.answer === "number" || typeof q.answer === "string")) {
+      seenKeys.add(`prompt:${prompt}`);
+      return { kind: "story", question: q };
+    }
+  }
+  // Last resort: one more computation, still under the sheet's dedupe rules.
+  const [q] = drawUnique({
+    mode,
+    level,
+    context: { allowWordProblems: false, consultBankFamilies: [] },
+    count: 1,
+    accept: (c) => isPureComputation(c) && withinLevelRange(c, level),
+    keyOf: computationKey,
+    seenKeys,
+    state,
+  });
+  return q ? { kind: "computation", question: q } : null;
+}
+
+/**
+ * Generate one flight log: `{ partA, partB, partC, computational }`.
+ * `partC` is `{ kind: "pickTwo" | "story" | "computation", question }`.
+ * `computational` is false for modes without an a-op-b form (time, graphs…),
+ * whose Parts A/B hold short prompt items instead of stacked/inline sums.
+ */
+export function generateFlightLog(mode, level) {
+  const config = getModeConfig(mode);
+  const computational = Object.prototype.hasOwnProperty.call(ARITH_OPS, config.op);
+  const seenKeys = new Set();
+  const state = { trivialUsed: false };
+
+  let partA;
+  let partB;
+  if (computational) {
+    // Parts A/B skip the item bank: bank prose belongs in Part C, and the
+    // computation blocks must be exactly `a op b = ☐`.
+    const context = { allowWordProblems: false, consultBankFamilies: [] };
+    const accept = (q) => isPureComputation(q) && withinLevelRange(q, level);
+    const items = drawUnique({
+      mode,
+      level,
+      context,
+      count: FLIGHT_LOG_PART_A + FLIGHT_LOG_PART_B,
+      accept,
+      keyOf: computationKey,
+      seenKeys,
+      state,
+    });
+    partA = items.slice(0, FLIGHT_LOG_PART_A);
+    partB = items.slice(FLIGHT_LOG_PART_A, FLIGHT_LOG_PART_A + FLIGHT_LOG_PART_B);
+  } else {
+    const context = { allowWordProblems: false };
+    const items = drawUnique({
+      mode,
+      level,
+      context,
+      count: FLIGHT_LOG_PART_A + FLIGHT_LOG_PART_B,
+      accept: isPrintablePrompt,
+      keyOf: promptKey,
+      seenKeys,
+      state,
+    });
+    // Prompt items may need their option bank to be answerable on paper.
+    for (const q of items) {
+      if (questionAnswerType(q) === "choice") {
+        q.choices = generateChoices(q.answer, 4, q);
+      }
+    }
+    partA = items.slice(0, FLIGHT_LOG_PART_A);
+    partB = items.slice(FLIGHT_LOG_PART_A, FLIGHT_LOG_PART_A + FLIGHT_LOG_PART_B);
+  }
+
+  const partC = drawThoughtProblem({ mode, level, seenKeys, state });
+  return { partA, partB, partC, computational };
+}
+
+/**
+ * The scope phrase in the sheet header — level-aware for the additive modes
+ * ("Sums to 10" on a Level 1 log), the mode's card scope line otherwise.
+ */
+export function flightLogScope(mode, level) {
+  const config = getModeConfig(mode);
+  const cap = maxTotalForLevel(level);
+  if (config.op === "+") return `Sums to ${cap}`;
+  if (config.op === "-") return `Take away to ${cap}`;
+  return config.description;
 }

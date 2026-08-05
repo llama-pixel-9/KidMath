@@ -40,6 +40,18 @@ final class EngineBridge {
         let newLevel: Int
     }
 
+    /// §01 flight payout — the four-part settlement `summarizeFlight` returns.
+    /// An unfinished flight pays nothing at all.
+    struct FlightPayout {
+        let finished: Bool
+        let landing: Int
+        let precision: Int
+        let altitude: Int
+        let circleBack: Int
+        let total: Int
+        let firstTryCorrect: Int
+    }
+
     /// Opaque handle to a live adaptive-session object inside the JSContext.
     /// The JS engine treats sessions immutably (`recordAnswer` returns a new
     /// one); the bridge swaps the handle's value so Swift sees one session.
@@ -205,6 +217,23 @@ final class EngineBridge {
         try call("isSessionComplete", [session.value]).toBool()
     }
 
+    /// §01: the four-part settlement (landing / precision / altitude /
+    /// circle-back), computed by the same shared engine code the web uses so
+    /// the two platforms can never pay differently.
+    func summarizeFlight(_ session: Session) throws -> FlightPayout {
+        let result = try call("summarizeFlight", [session.value])
+        let payload = try dictionary(from: result, in: "summarizeFlight")
+        return FlightPayout(
+            finished: payload["finished"] as? Bool ?? false,
+            landing: ProgressStore.int(payload["landing"]),
+            precision: ProgressStore.int(payload["precision"]),
+            altitude: ProgressStore.int(payload["altitude"]),
+            circleBack: ProgressStore.int(payload["circleBack"]),
+            total: ProgressStore.int(payload["total"]),
+            firstTryCorrect: ProgressStore.int(payload["firstTryCorrect"])
+        )
+    }
+
     // MARK: - Test support
 
     /// Replace the engine's Math.random with the same mulberry32 PRNG the
@@ -224,6 +253,69 @@ final class EngineBridge {
                 return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
               };
             })();
+            """
+        )
+        try throwPendingException()
+    }
+
+    // MARK: - Bird world (§04–§13) — data + placement shared with the web
+
+    /// The 22-species roster, verbatim from src/engagement/roster.js — one
+    /// source of truth so a price or fact can never drift between platforms.
+    func roster() throws -> [[String: Any]] {
+        guard let list = try call("roster").toObject() as? [[String: Any]] else {
+            throw EngineError.badResult("roster() did not return an array")
+        }
+        return list
+    }
+
+    func zones() throws -> [[String: Any]] {
+        guard let list = try call("zones").toObject() as? [[String: Any]] else {
+            throw EngineError.badResult("zones() did not return an array")
+        }
+        return list
+    }
+
+    func perches() throws -> [[String: Any]] {
+        guard let list = try call("perches").toObject() as? [[String: Any]] else {
+            throw EngineError.badResult("perches() did not return an array")
+        }
+        return list
+    }
+
+    func playSpots() throws -> [[String: Any]] {
+        guard let list = try call("playSpots").toObject() as? [[String: Any]] else {
+            throw EngineError.badResult("playSpots() did not return an array")
+        }
+        return list
+    }
+
+    /// §06 placement, chosen once when a bird moves in: species-suitable
+    /// perch types, ≥96px spacing, 7-per-zone cap, reserved rects never
+    /// picked. Returns nil when nothing suitable is free.
+    func choosePerch(
+        birds: [[String: Any]],
+        speciesId: String,
+        viewedZoneId: String,
+        earnedZoneIds: [String]
+    ) throws -> String? {
+        let result = try call("choosePerch", [birds, speciesId, viewedZoneId, earnedZoneIds])
+        return result.isString ? result.toString() : nil
+    }
+
+    /// Force every subskill in the session to a high observed mastery rate, so
+    /// promotion/nomination signals can be exercised deterministically.
+    /// Test-only, like reseedRandom.
+    func forceHighMastery(in session: Session) throws {
+        exceptions.message = nil
+        context.globalObject.setObject(session.value, forKeyedSubscript: "__kidmathTestSession" as NSString)
+        context.evaluateScript(
+            """
+            Object.values(__kidmathTestSession.skillMastery || {}).forEach(function (entry) {
+              entry.attempts = 10;
+              entry.correct = 10;
+            });
+            delete globalThis.__kidmathTestSession;
             """
         )
         try throwPendingException()

@@ -122,7 +122,7 @@ Level bands used: **1-3** (K band), **4-6** (G1-2 band), **7-10** (G2+ band), ma
 
 ---
 
-## counting — Count It Up!
+## counting — Counting Chicks
 
 **Today:** 1 shape (count emoji, pick numeral), 1 word-problem template (`Count the 🍎 objects to find how many there are.`), 3 subskills (`subitizing`, `countOn`, `cardinality` — all three produce byte-identical
 output; the subskill is written to metadata and never branches). Total item universe ≈ **50 × 8 emoji = 400
@@ -247,7 +247,7 @@ items**; 10 varieties are `generator`.
 
 ---
 
-## placeValue — Place Value!
+## placeValue — Place Value Perch
 
 **Today:** 4 shapes (`tens_in`, `ones_in`, `build`, `expanded`), 0 true word-problem templates (all four
 are symbolic stems), 3 subskills — but subskill is *derived from* the shape, so it carries no extra
@@ -445,7 +445,7 @@ standard, and the difficulty ordering is ours.
 
 ---
 
-## comparing — Compare Quest!
+## comparing — Comparison Crow
 
 **Today:** 1 shape (two numerals, pick `<`, `>`, or `=`), 1 word-problem template (`Choose the symbol: 8 ? 5` — which is the symbolic item with a sentence in front of it, not a word problem), 3 subskills
 (`symbolSelection`, `benchmarkCompare`, `distanceCompare` — only the first is ever realised). Total item

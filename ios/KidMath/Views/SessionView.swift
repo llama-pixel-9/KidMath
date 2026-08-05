@@ -35,12 +35,29 @@ struct SessionView: View {
                 skeletonCard
             case .question, .feedback:
                 playArea
+            case .fledgingOffer(let level):
+                FledgingOfferView(
+                    level: level,
+                    accept: { viewModel.acceptFledging() },
+                    decline: { viewModel.declineFledging() }
+                )
+            case .fledgingResult(let passed, let newLevel):
+                FledgingCeremonyView(
+                    passed: passed,
+                    level: newLevel,
+                    flyOn: { Task { await viewModel.continueAfterFledging() } }
+                )
             case .complete(let stars, let lifetime):
                 SessionCompleteView(
                     mode: mode,
                     starsEarned: stars,
                     totalQuestions: viewModel.sessionSize,
                     lifetimeStars: lifetime,
+                    level: viewModel.level,
+                    payout: viewModel.flightPayout,
+                    summary: viewModel.flightSummary,
+                    nominationPending: viewModel.nominationPending,
+                    glideDown: viewModel.glideDown,
                     playAgain: { Task { await viewModel.start() } },
                     goHome: { finish() }
                 )
@@ -112,6 +129,15 @@ struct SessionView: View {
         VStack(spacing: 0) {
             header
                 .frame(maxWidth: 520)
+            if viewModel.isFledgingRun {
+                Text("Fledging Flight · \(EngagementStore.fledgingPass) of \(EngagementStore.fledgingQuestions) to pass")
+                    .font(theme.bodyFont(size: 13, weight: .bold))
+                    .foregroundStyle(Theme.ink)
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 5)
+                    .background(Capsule().fill(Theme.seafoam))
+                    .padding(.top, 6)
+            }
             GeometryReader { proxy in
                 ScrollView(showsIndicators: false) {
                     VStack(spacing: 22) {

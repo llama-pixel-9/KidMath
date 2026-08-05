@@ -26,10 +26,11 @@ const SUBSKILLS = ["equalGroups", "arrayReasoning", "factFluency"];
 
 export default {
   id: "multiplication",
-  label: "Times Tree",
+  label: "Multiplication Meadow",
   shortLabel: "Multiply",
-  description: "Equal groups, arrays, and times-as-many.",
+  description: "2× to 12×",
   icon: "X",
+  glyph: "×",
   op: "x",
   subskills: SUBSKILLS,
   supportedFormats: SUPPORTED_FORMATS,

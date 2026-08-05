@@ -126,7 +126,7 @@ final class ProgressStore {
             "level": Self.clampLevel(Self.int(data["level"], default: Self.startingLevel)),
             "mistakeBank": Array(mistakes),
             "totalSessions": Self.int(previous["totalSessions"]) + 1,
-            "lifetimeStars": Self.int(previous["lifetimeStars"]) + Self.int(data["firstTryCorrect"]),
+            "lifetimeStars": Self.int(previous["lifetimeStars"]) + Self.starsEarned(from: data),
             "bankItemStats": Self.mergeBankItemStats(
                 previous["bankItemStats"] as? [String: [String: Any]] ?? [:],
                 incoming: data["bankItemStats"] as? [String: [String: Any]] ?? [:]
@@ -162,7 +162,7 @@ final class ProgressStore {
             "level": Self.clampLevel(Self.int(data["level"], default: Self.startingLevel)),
             "mistake_bank": Array((data["mistakeBank"] as? [[String: Any]] ?? []).prefix(Self.maxPersistedMistakes)),
             "total_sessions": Self.int(existing["totalSessions"]) + 1,
-            "lifetime_stars": Self.int(existing["lifetimeStars"]) + Self.int(data["firstTryCorrect"]),
+            "lifetime_stars": Self.int(existing["lifetimeStars"]) + Self.starsEarned(from: data),
         ]
         try? await supabase.upsertProgress(userId: userId, mode: mode, row: row)
         try? await supabase.upsertBankItemStats(
@@ -186,6 +186,15 @@ final class ProgressStore {
 
     nonisolated static func clampLevel(_ level: Int) -> Int {
         min(maxLevel, max(1, level))
+    }
+
+    /// §01: `starsEarned` (the flight payout) wins when present — including an
+    /// explicit 0 — and callers not yet on the Flight Report fall back to the
+    /// historical one-star-per-first-try formula. Mirror of the web's
+    /// `starsEarned ?? firstTryCorrect` in progressStore.js.
+    nonisolated static func starsEarned(from data: [String: Any]) -> Int {
+        if let explicit = data["starsEarned"] { return int(explicit) }
+        return int(data["firstTryCorrect"])
     }
 
     /// Sum incoming per-item counters into the previous ones, keep the most

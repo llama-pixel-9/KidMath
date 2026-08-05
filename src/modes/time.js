@@ -641,10 +641,11 @@ function selectVariety(level, context) {
 
 export default {
   id: "time",
-  label: "Tell the Hour",
+  label: "Time Tweet",
   shortLabel: "Time",
-  description: "Read clocks and work with elapsed time.",
+  description: "Read a clock",
   icon: "Clock",
+  glyph: "feather:clock",
   op: "time",
   subskills: SUBSKILLS,
   // Every item here is a clock face or a story; none carries an `a op b`

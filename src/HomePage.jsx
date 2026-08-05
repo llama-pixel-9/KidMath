@@ -30,21 +30,50 @@ import {
   Heart,
 } from "lucide-react";
 import Feather from "./components/feather.jsx";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTheme } from "./useTheme";
 import LarkMark from "./components/LarkMark";
 import { MODE_IDS, MODE_GROUPS, getModeConfig } from "./modes";
 import { loadProgressSync } from "./progressStore";
 import { loadEngagement, starBalance, currentStreak, starsToday } from "./engagement/engagementStore";
+import { getNomination } from "./engagement/fledging.js";
+import { fledgingEnabled, meadowEnabled } from "./gamificationFlags.js";
 import EngagementBar from "./engagement/EngagementBar.jsx";
 import StickerBook from "./engagement/StickerBook.jsx";
 import GrownUpsPanel from "./engagement/GrownUpsPanel.jsx";
-import { rankForLevel } from "./engagement/ranks.js";
 import { usePremium } from "./PremiumContext";
 import { useAuth } from "./useAuth";
 import { isFreeMode } from "./premium";
+import { activeKidId, fetchKids } from "./kidProfiles";
 
 const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork, BarChart3, CircleDot, Sigma, Ruler, Coins, Spline, Scale, Clock, ChartColumn, Triangle, Shapes };
+
+// §14 card glyph: one Ink math mark in the cream well — Fredoka 600/20px where
+// the face carries the character; minus and the clock are drawn (never a
+// substituted system-font character). Modes without a `glyph` fall back to
+// their lucide icon until the drawn 32px game-glyph set lands.
+function ModeGlyph({ config }) {
+  if (config.glyph === "feather:minus") {
+    return (
+      <svg width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" aria-hidden="true">
+        <path d="M5 12h14" fill="none" />
+      </svg>
+    );
+  }
+  if (config.glyph === "feather:clock") {
+    return (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="8.5" />
+        <path d="M12 7.5V12l3 2" />
+      </svg>
+    );
+  }
+  if (config.glyph) {
+    return <span className="font-display font-semibold text-xl leading-none">{config.glyph}</span>;
+  }
+  const Icon = ICON_MAP[config.icon] || Plus;
+  return <Icon className="h-5 w-5" />;
+}
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -113,6 +142,17 @@ export default function HomePage() {
   // Read-once snapshot per mount; the book updates its own copy while open.
   const [engagement] = useState(loadEngagement);
 
+  // §20 returning path: a signed-in family with kid profiles and no active
+  // kid lands on the profile picker, never a login form.
+  useEffect(() => {
+    if (!user || activeKidId()) return;
+    let alive = true;
+    fetchKids(user.id).then((kids) => {
+      if (alive && kids.length > 0) navigate("/profiles");
+    });
+    return () => { alive = false; };
+  }, [user, navigate]);
+
   return (
     <main className="min-h-screen">
       {/* Hero */}
@@ -143,7 +183,9 @@ export default function HomePage() {
               balance={starBalance(engagement)}
               streak={currentStreak(engagement)}
               today={starsToday(engagement)}
-              onOpenStickers={() => setStickersOpen(true)}
+              // The Meadow replaces the sticker book as the tap-target behind
+              // the star chip (§04); the book stays only while the flag is off.
+              onOpenStickers={() => (meadowEnabled() ? navigate("/meadow") : setStickersOpen(true))}
             />
           </div>
           <h1 className="flex items-center justify-center gap-4">
@@ -207,45 +249,49 @@ export default function HomePage() {
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 {group.modeIds.map((id) => {
                   const config = getModeConfig(id);
-                  const Icon = ICON_MAP[config.icon] || Plus;
                   const tint = CARD_TINTS[COLOR_INDEX[id] % CARD_TINTS.length];
                   const locked = !isFreeMode(id) && !isPremium && !premiumLoading;
+                  const lv = loadProgressSync(id)?.level || 1;
+                  // §03 step 3: the nomination survives leaving the app as a
+                  // Sun pill on the mode's card (Ink text — cream on Sun is
+                  // forbidden).
+                  const nominated = fledgingEnabled() && !locked && Boolean(getNomination(engagement, id));
                   return (
                     <button
                       key={id}
                       type="button"
-                      className={`relative ${tint.bg} ${tint.edge} btn-press rounded-[20px] p-5 text-left cursor-pointer min-h-[150px] flex flex-col`}
+                      className={`relative ${tint.bg} ${tint.edge} btn-press rounded-[20px] p-[18px] text-left cursor-pointer min-h-[150px] flex flex-col gap-2.5`}
                       onClick={() => (locked ? openPaywall() : navigate(`/play/${id}`))}
-                      aria-label={locked ? `${config.shortLabel} (Premium)` : `Play ${config.shortLabel}`}
+                      aria-label={locked ? `${config.label} (Premium)` : `Play ${config.label}`}
                     >
-                      {/* Glyph in a cream well, top-left (aviary card rules) */}
-                      <div className="inline-flex items-center justify-center w-10 h-10 rounded-[10px] bg-cream/70 mb-3 self-start">
-                        <Icon className="h-5 w-5 text-ink" />
+                      {/* Glyph in a 38px cream well, top-left. Locked cards keep
+                          full opacity and swap the glyph for the lock at 40%. */}
+                      <div
+                        className={`inline-flex items-center justify-center w-[38px] h-[38px] rounded-[10px] bg-cream/60 self-start text-ink ${locked ? "opacity-40" : ""}`}
+                      >
+                        {locked ? <Feather name="lock" size={20} /> : <ModeGlyph config={config} />}
                       </div>
-                      {locked && (
-                        <Feather
-                          name="lock"
-                          size={16}
-                          className="absolute top-3 right-3 text-ink opacity-40"
-                        />
+                      {nominated && (
+                        <span className="absolute top-[18px] right-[18px] bg-sun text-ink text-[12px] font-display font-semibold rounded-full px-2.5 py-[3px] whitespace-nowrap">
+                          Ready to fledge
+                        </span>
                       )}
-                      <h4 className="text-base font-display font-semibold text-ink leading-tight">
-                        {config.shortLabel}
+                      <div className="flex-1" />
+                      <h4 className="text-xl font-display font-semibold text-ink leading-[1.15]">
+                        {config.label}
                       </h4>
-                      <p className="mt-1 text-xs font-semibold text-ink/60 leading-relaxed">
-                        {config.description}
-                      </p>
-                      {(() => {
-                        // The journey pin: where this child stands in the mode.
-                        const lv = loadProgressSync(id)?.level || 1;
-                        if (lv <= 1) return null;
-                        const rank = rankForLevel(lv);
-                        return (
-                          <span className="mt-auto pt-2 self-start text-[11px] font-display font-semibold text-ink bg-cream rounded-full px-2.5 py-0.5">
-                            Lv {lv} · {rank.name}
+                      {/* Scope line + level badge share one baseline. Scope is
+                          solid Ink — Ink 60% fails contrast on Sun Light. */}
+                      <div className="flex items-center justify-between gap-2">
+                        <span className="text-[13px] font-semibold text-ink leading-tight">
+                          {config.description}
+                        </span>
+                        {!locked && (
+                          <span className="text-[13px] font-display text-ink bg-cream rounded-full px-2.5 py-[3px] whitespace-nowrap flex-none">
+                            {lv > 1 ? `Level ${lv}` : "New"}
                           </span>
-                        );
-                      })()}
+                        )}
+                      </div>
                     </button>
                   );
                 })}

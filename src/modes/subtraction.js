@@ -23,10 +23,11 @@ const SUBSKILLS = ["differenceAsDistance", "decomposeToSubtract", "unknownSubtra
 
 export default {
   id: "subtraction",
-  label: "Countdown Coop",
+  label: "Subtraction Swoop",
   shortLabel: "Subtraction",
-  description: "Take away and find the difference.",
+  description: "Take away to 20",
   icon: "Minus",
+  glyph: "feather:minus",
   op: "-",
   subskills: SUBSKILLS,
   supportedFormats: SUPPORTED_FORMATS,

@@ -107,7 +107,10 @@ export default function StickerBook({ open, onClose }) {
                     <span className="text-[10px] font-bold text-yellow-600">{s.name}</span>
                   ) : (
                     <span className="inline-flex items-center gap-0.5 text-[10px] font-bold text-slate-500">
-                      <Star className="h-3 w-3 text-yellow-500 fill-yellow-400" />
+                      {/* Sun-diamond star, matching the wallet chip (the old
+                          lucide <Star/> was left unimported by the rebrand and
+                          crashed this branch). */}
+                      <span className="w-2 h-2 bg-sun rotate-45 rounded-[2px]" aria-hidden="true" />
                       {s.cost}
                     </span>
                   )}

@@ -163,6 +163,29 @@ function getForcedInputType() {
   return null;
 }
 
+// Dev/QA hooks for the e2e robot kid (DEV builds only, stripped from prod):
+// `?qaFeedbackMs=120` shortens the answer-feedback pauses so a full-session
+// smoke run stays fast, and the current question + last scoring result are
+// mirrored on `window.__kidmathQA` so drivers operate the real widgets with
+// a known target instead of re-deriving answers from pixels.
+const QA_HOOKS = import.meta.env.DEV && typeof window !== "undefined";
+
+function getQaFeedbackMs() {
+  if (!QA_HOOKS) return null;
+  try {
+    const raw = new URLSearchParams(window.location.search || "").get("qaFeedbackMs");
+    const ms = raw === null ? NaN : Number(raw);
+    return Number.isFinite(ms) && ms >= 0 ? ms : null;
+  } catch {
+    return null;
+  }
+}
+
+function qaUpdate(patch) {
+  if (!QA_HOOKS) return;
+  window.__kidmathQA = { ...(window.__kidmathQA || {}), ...patch };
+}
+
 function CircularProgress({ current, total, level }) {
   const { theme } = useTheme();
   const radius = 38;
@@ -953,6 +976,7 @@ export default function MathExplorer({ initialMode }) {
   const prefersReducedMotion = useReducedMotion();
   const [lowEndDevice] = useState(() => isLikelyLowEndDevice());
   const [forcedInputType] = useState(() => getForcedInputType());
+  const [qaFeedbackMs] = useState(() => getQaFeedbackMs());
   const [mode, setMode] = useState(startMode);
   const [session, setSession] = useState(() =>
     createAdaptiveSession(startMode, undefined, {
@@ -1016,6 +1040,12 @@ export default function MathExplorer({ initialMode }) {
 
   const loadNextQuestion = useCallback((sess) => {
     const { question, isRetry: retry } = getNextQuestion(sess);
+    qaUpdate({
+      question,
+      isRetry: retry,
+      seq: (typeof window !== "undefined" && window.__kidmathQA?.seq + 1) || 1,
+      done: false,
+    });
     setCurrentQ(question);
     setIsRetry(retry);
     questionStartTime.current = Date.now();
@@ -1166,6 +1196,7 @@ export default function MathExplorer({ initialMode }) {
   };
 
   const finishSession = useCallback(async (sess) => {
+    qaUpdate({ done: true });
     // §03: a Fledging Flight settles its own way — no stars, no report. Pass
     // (≥ 5/6 first-try) fledges now; a miss keeps the nomination (three misses
     // clear it) and the normal flight follows either way.
@@ -1269,6 +1300,13 @@ export default function MathExplorer({ initialMode }) {
       const responseTimeMs = Date.now() - questionStartTime.current;
       const result = recordAnswer(session, currentQ, value, responseTimeMs, isRetry);
       setSession(result.session);
+      qaUpdate({
+        result: {
+          correct: result.correct,
+          submitted: value,
+          count: ((typeof window !== "undefined" && window.__kidmathQA?.result?.count) || 0) + 1,
+        },
+      });
 
       if (result.correct) {
         setFeedback("correct");
@@ -1299,7 +1337,7 @@ export default function MathExplorer({ initialMode }) {
             setRevealAnswer(null);
             loadNextQuestion(result.session);
           }
-        }, 1200);
+        }, qaFeedbackMs ?? 1200);
       } else {
         setFeedback("wrong");
         setShakenChoice(value);
@@ -1317,7 +1355,7 @@ export default function MathExplorer({ initialMode }) {
           } else {
             loadNextQuestion(result.session);
           }
-        }, 2000);
+        }, qaFeedbackMs ?? 2000);
       }
     } catch (error) {
       answerLockRef.current = false;

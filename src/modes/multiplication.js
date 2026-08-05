@@ -51,11 +51,15 @@ export default {
       answer: item.answer,
       level,
       display: item.display,
+      // The two GIVEN numbers (a/b hold null for an embedded unknown) — feeds
+      // the misconception distractor builders.
+      distractorContext: item.givens,
     };
 
     // Two-digit work is typed rather than chosen: four plausible options are
-    // not a meaningful discrimination once products get large.
-    if ((item.a ?? 0) >= 10 || (item.b ?? 0) >= 10) {
+    // not a meaningful discrimination once products get large. Judged on the
+    // GIVENS — a missing-factor item's slots hold a null.
+    if ((item.givens?.a ?? 0) >= 10 || (item.givens?.b ?? 0) >= 10) {
       question.answerType = "numberPad";
     }
 
@@ -89,15 +93,16 @@ export default {
       }
     } else if (
       // Missing-factor renders ("3 x ? = 12") share one signature too. Spoken
-      // stems keep the same unknown in the same place.
-      !asStory && typeof item.a === "number" && typeof item.b === "number" &&
-      item.a * item.answer === item.b && Math.random() < 0.5
+      // stems keep the same unknown in the same place. Factor and product come
+      // from the GIVENS — a/b hold null for the unknown slot.
+      !asStory && item.givens &&
+      item.givens.a * item.answer === item.givens.b && Math.random() < 0.5
     ) {
       question.display = {
         promptText: pick([
-          `${item.a} times what number makes ${item.b}?`,
-          `${item.a} groups of some number make ${item.b}. What number is in each group?`,
-          `Fill it in: ${item.a} times what equals ${item.b}?`,
+          `${item.givens.a} times what number makes ${item.givens.b}?`,
+          `${item.givens.a} groups of some number make ${item.givens.b}. What number is in each group?`,
+          `Fill it in: ${item.givens.a} times what equals ${item.givens.b}?`,
         ]),
       };
       question.answerType = "numberPad";
@@ -130,10 +135,15 @@ export default {
   },
 
   generateChoices(answer, question) {
+    // The GIVEN numbers for misconception strategies come from
+    // distractorContext (a/b are rendered-equation slots and may hold null
+    // for the unknown). The fallback keeps items persisted before that
+    // change — old mistake-bank clones — building sane options.
+    const givens = question.distractorContext || { a: question.a ?? 0, b: question.b ?? answer };
     return buildArithmeticDistractors({
       answer,
-      a: question.a ?? 0,
-      b: question.b ?? answer,
+      a: givens.a ?? 0,
+      b: givens.b ?? answer,
       misconceptions: question.metadata?.misconceptionTags || [],
       min: 0,
     });

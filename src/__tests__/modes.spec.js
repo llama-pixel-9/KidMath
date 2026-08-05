@@ -139,15 +139,24 @@ describe("mode generation coverage", () => {
     // Formats are switched off here: a format transform legitimately replaces
     // the answer type (a true/false item is a choice), and this test is about
     // the underlying generator.
+    // a/b are rendered-equation slots and hold null for the unknown on
+    // missing-factor items; the two GIVENS live in distractorContext. The
+    // fact triangle g x s = p is asserted over givens + answer.
+    const factTriangle = (q) => {
+      const givens = q.distractorContext || { a: q.a, b: q.b };
+      const quantities = [givens.a, givens.b, q.answer].sort((x, y) => x - y);
+      expect(quantities[0] * quantities[1]).toBe(quantities[2]);
+    };
     for (let i = 0; i < 40; i++) {
       const q = mult.generate(10, { noFormats: true });
       expect(q.answerType).toBe("numberPad");
-      expect(q.a >= 10 || q.b >= 10).toBe(true);
-      // The mode now emits missing-factor items (`? x 5 = 90`) alongside
-      // product-unknown ones, so a*b == answer only holds for the latter. In
-      // both cases the three quantities must satisfy g x s = p.
-      const quantities = [q.a, q.b, q.answer].sort((x, y) => x - y);
-      expect(quantities[0] * quantities[1]).toBe(quantities[2]);
+      const givens = q.distractorContext || { a: q.a, b: q.b };
+      expect(givens.a >= 10 || givens.b >= 10).toBe(true);
+      factTriangle(q);
+      // Wherever both slots are numbers, the rendered claim must be TRUE.
+      if (typeof q.a === "number" && typeof q.b === "number") {
+        expect(q.op === "/" ? q.a / q.b : q.a * q.b).toBe(q.answer);
+      }
     }
     // Early levels keep single-digit facts as multiple choice (no numberPad).
     for (let i = 0; i < 40; i++) {
@@ -156,8 +165,7 @@ describe("mode generation coverage", () => {
       // re-dressing may legitimately render one as a typed spoken-number or
       // picture item — never as a two-digit computation.
       expect([undefined, "numberPad"]).toContain(q.answerType);
-      const quantities = [q.a, q.b, q.answer].sort((x, y) => x - y);
-      expect(quantities[0] * quantities[1]).toBe(quantities[2]);
+      factTriangle(q);
     }
   });
 

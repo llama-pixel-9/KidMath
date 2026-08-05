@@ -46,18 +46,22 @@ export default {
       answer: item.answer,
       level,
       display: item.display,
+      // The two GIVEN numbers (a/b hold null for an embedded unknown) — feeds
+      // the misconception distractor builders.
+      distractorContext: item.givens,
     };
 
     // Re-dress a share of plain-quotient renders: the bare "# ÷ # = ?" and
     // "# x ? = #" signatures otherwise dominate the small entry band. The
     // partitive and quotitive spoken stems are deliberately both present —
     // "shared into" vs "how many #s in" IS the structural distinction.
-    if (!asStory && typeof item.a === "number" && typeof item.b === "number" && item.a * item.answer === item.b && Math.random() < 0.5) {
-      // The x-form render ("3 x ? = 12") gets its own spoken stems.
+    if (!asStory && item.givens && item.givens.a * item.answer === item.givens.b && Math.random() < 0.5) {
+      // The x-form render ("3 x ? = 12") gets its own spoken stems. Factor and
+      // product come from the GIVENS — a/b hold null for the unknown slot.
       question.display = {
         promptText: ((arr) => arr[randInt(0, arr.length - 1)])([
-          `${item.a} groups of what number make ${item.b}?`,
-          `${item.a} times some number is ${item.b}. What is the number?`,
+          `${item.givens.a} groups of what number make ${item.givens.b}?`,
+          `${item.givens.a} times some number is ${item.givens.b}. What is the number?`,
         ]),
       };
       question.answerType = "numberPad";
@@ -100,10 +104,15 @@ export default {
   },
 
   generateChoices(answer, question) {
+    // The GIVEN numbers for misconception strategies come from
+    // distractorContext (a/b are rendered-equation slots and may hold null
+    // for the unknown). The fallback keeps items persisted before that
+    // change — old mistake-bank clones — building sane options.
+    const givens = question.distractorContext || { a: question.a ?? 0, b: question.b ?? answer };
     return buildArithmeticDistractors({
       answer,
-      a: question.a ?? 0,
-      b: question.b ?? answer,
+      a: givens.a ?? 0,
+      b: givens.b ?? answer,
       misconceptions: question.metadata?.misconceptionTags || [],
       min: 0,
     });

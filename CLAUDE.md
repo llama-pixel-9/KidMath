@@ -227,12 +227,16 @@ Product IDs: `com.kidmath.app.premium.{monthly,annual}`.
 | Problem-type research (K–4) | `research-k4-problem-types.md` |
 | Item metadata schema | `item-metadata-model.md` |
 | Ship checklists | `ios-appstore-checklist.md`, `stripe-setup.md` |
+| Why we skipped RevenueCat (billing decision) | `billing-revenuecat-decision.md` |
 | Source licensing / attribution | `bank-sources.md`, `resources/README.md` |
 
 ## Skills
 
 - `.claude/skills/item-authoring` — the rule ladder and itemGen pipeline. Load it
   before writing or editing any item prompt.
+- `.claude/skills/robot-kid-e2e` — the Playwright smoke matrix (`npm run
+  test:e2e`): kid oracle, widget drivers, and its traps. Load it before
+  running/extending e2e or adding an answer widget.
 - `.cursor/skills/kidmath-{add,audit}-mode-standards`, `kidmath-phase2-expand-mode`
   — Cursor-only, but their standards are summarized in Conventions above.
 - `.agents/skills/supabase*` — vendored from `supabase/agent-skills`.

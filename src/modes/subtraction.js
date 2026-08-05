@@ -45,6 +45,9 @@ export default {
       answer: item.answer,
       level,
       display: item.display,
+      // The two GIVEN numbers (a/b hold null for an embedded unknown) — feeds
+      // the misconception distractor builders.
+      distractorContext: item.givens,
     };
 
     // Same re-dressing as addition: the bare "# - # = ?" signature dominates
@@ -105,10 +108,15 @@ export default {
   },
 
   generateChoices(answer, question) {
+    // The GIVEN numbers for misconception strategies come from
+    // distractorContext (a/b are rendered-equation slots and may hold null
+    // for the unknown). The fallback keeps items persisted before that
+    // change — old mistake-bank clones — building sane options.
+    const givens = question.distractorContext || { a: question.a ?? 0, b: question.b ?? answer };
     return buildArithmeticDistractors({
       answer,
-      a: question.a ?? 0,
-      b: question.b ?? answer,
+      a: givens.a ?? 0,
+      b: givens.b ?? answer,
       misconceptions: question.metadata?.misconceptionTags || [],
       min: 0,
     });

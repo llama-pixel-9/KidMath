@@ -21,7 +21,8 @@
     "bank:export": "node scripts/exportCloudBank.js",
     "bank:split": "node scripts/splitItemBank.js",
     "bank:gen": "node scripts/itemGen/generateDrafts.js",
-    "bank:gen:batch": "node scripts/itemGen/generateBatch.js"
+    "bank:gen:batch": "node scripts/itemGen/generateBatch.js",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.103.3",
@@ -37,6 +38,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",
+    "@playwright/test": "^1.62.1",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",

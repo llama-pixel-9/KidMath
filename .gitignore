@@ -43,3 +43,11 @@ ios/build/
 
 # Curriculum reference library payloads (see resources/README.md)
 resources/**/*.pdf
+
+# Coin artwork source downloads (scripts/buildCoinAssets.py); the built
+# PNGs in public/coins/ are committed, these originals are not.
+.cache/
+
+# Playwright
+test-results/
+playwright-report/

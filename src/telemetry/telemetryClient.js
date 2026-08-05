@@ -49,6 +49,9 @@ function describeDevice() {
   if (typeof window === "undefined") return {};
   const ua = navigator.userAgent || "";
   const isIPadUA = /iPad/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  // Deliberately coarse: user agent and viewport only. hardwareConcurrency,
+  // deviceMemory and maxTouchPoints were removed — that fingerprint surface
+  // is a California CIPA pen-register exposure, and we don't need it.
   return {
     user_agent: ua.slice(0, 500),
     device_label: isIPadUA ? "iPad-class" : navigator.platform || "unknown",
@@ -58,9 +61,6 @@ function describeDevice() {
       dpr: window.devicePixelRatio || 1,
     },
     hardware: {
-      cores: navigator.hardwareConcurrency || null,
-      memoryGb: navigator.deviceMemory || null,
-      maxTouchPoints: navigator.maxTouchPoints || 0,
       reducedMotion:
         typeof window.matchMedia === "function" &&
         window.matchMedia("(prefers-reduced-motion: reduce)").matches,
@@ -74,6 +74,7 @@ class TelemetryClient {
     this.sessionId = null;
     this.startedAt = Date.now();
     this.userId = null;
+    this.accessToken = null;
     this.counters = {};
     this.events = [];
     this.maxBlockMs = 0;
@@ -263,12 +264,29 @@ class TelemetryClient {
 
       const usedBeacon = (() => {
         if (!supabaseRestUrl || !supabaseAnonKeyValue) return false;
-        if (typeof navigator === "undefined" || typeof navigator.sendBeacon !== "function") return false;
         if (reason !== "visibility_hidden" && reason !== "pagehide") return false;
+        // RLS scopes diagnostics writes to the signed-in user, so the unload
+        // flush needs the user's JWT — without one there is nothing we could
+        // legitimately write.
+        if (!this.accessToken) return false;
         try {
-          const url = `${supabaseRestUrl}/session_diagnostics?on_conflict=session_id&apikey=${encodeURIComponent(supabaseAnonKeyValue)}`;
-          const blob = new Blob([JSON.stringify(payload)], { type: "application/json" });
-          return navigator.sendBeacon(url, blob);
+          // sendBeacon can't set headers and the apikey must not ride in the
+          // query string (it lands in server/proxy logs) — keepalive fetch
+          // gets the same survives-unload behaviour with real headers.
+          const url = `${supabaseRestUrl}/session_diagnostics?on_conflict=session_id`;
+          if (typeof fetch !== "function") return false;
+          fetch(url, {
+            method: "POST",
+            keepalive: true,
+            headers: {
+              "Content-Type": "application/json",
+              apikey: supabaseAnonKeyValue,
+              Authorization: `Bearer ${this.accessToken}`,
+              Prefer: "resolution=merge-duplicates",
+            },
+            body: JSON.stringify(payload),
+          }).catch(() => {});
+          return true;
         } catch {
           return false;
         }
@@ -297,6 +315,18 @@ class TelemetryClient {
     this.enabled = true;
     this.sessionId = generateSessionId();
     this.startedAt = Date.now();
+
+    // Track the caller's JWT for the unload-time keepalive flush; the
+    // supabase client attaches it automatically on the normal path.
+    if (supabase) {
+      supabase.auth.getSession().then(({ data: { session } }) => {
+        this.accessToken = session?.access_token || null;
+        if (session?.user) this.userId = this.userId || session.user.id;
+      });
+      supabase.auth.onAuthStateChange((_event, session) => {
+        this.accessToken = session?.access_token || null;
+      });
+    }
 
     const previousFingerprint = readPreviousFingerprint();
     this.previousSummary = classifyPreviousSession(previousFingerprint);

@@ -6,13 +6,24 @@ import { refreshBankFromCloud } from './itemBank/cloudLoader.js'
 import { bootstrapTelemetry } from './telemetry/telemetryClient.js'
 import { setProgressLoader } from './mathEngine.js'
 import { loadProgressSync } from './progressStore.js'
+import { supabase } from './supabaseClient.js'
 
 // The engine no longer imports progressStore (so it can bundle for
 // JavaScriptCore). Wire the real saved-progress source here for the web app.
 setProgressLoader(loadProgressSync);
 
 refreshBankFromCloud({ force: true });
-bootstrapTelemetry();
+
+// Session diagnostics run for signed-in users only — anonymous visitors
+// (including every free-tier kid) are never telemetered — and Global Privacy
+// Control is honoured outright.
+if (typeof navigator === 'undefined' || navigator.globalPrivacyControl !== true) {
+  supabase?.auth.getSession().then(({ data: { session } }) => {
+    if (session?.user) {
+      bootstrapTelemetry().then((client) => client?.setUser?.(session.user.id));
+    }
+  });
+}
 
 if (typeof document !== 'undefined') {
   document.addEventListener('visibilitychange', () => {

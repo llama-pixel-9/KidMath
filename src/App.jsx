@@ -12,7 +12,8 @@ import HomePage from "./HomePage";
 import MathExplorer from "./MathExplorer";
 import PrintableWorksheet from "./PrintableWorksheet";
 import AboutPage from "./AboutPage";
-import PrivacyPage from "./PrivacyPage";
+import LegalPage from "./legal/LegalPage";
+import Footer from "./Footer";
 import AdminItemsPage from "./admin/AdminItemsPage";
 import DiagnosticsPage from "./admin/DiagnosticsPage";
 import MeadowPage from "./engagement/meadow/MeadowPage";
@@ -20,6 +21,8 @@ import ValuePage from "./onboarding/ValuePage";
 import SignupPage from "./onboarding/SignupPage";
 import OnboardingFlow from "./onboarding/OnboardingFlow";
 import ProfilePicker from "./onboarding/ProfilePicker";
+import BillingPortalPage from "./BillingPortalPage";
+import AccountPage from "./account/AccountPage";
 import "./index.css";
 
 function PlayRoute() {
@@ -62,19 +65,33 @@ function AppShell() {
         <Route path="/worksheets" element={<WorksheetsRoute />} />
         <Route path="/meadow" element={<MeadowPage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/privacy" element={<PrivacyPage />} />
+        {/* Legal documents — one renderer, four routes. /privacy doubles as
+            the COPPA §312.4(d) online notice; a prominent link to it must
+            appear on the home screen and at every point where personal
+            information is collected from a child. */}
+        <Route path="/privacy" element={<LegalPage slug="privacy" />} />
+        <Route path="/terms" element={<LegalPage slug="terms" />} />
+        <Route path="/security" element={<LegalPage slug="security" />} />
+        <Route path="/parental-consent" element={<LegalPage slug="parental-consent" />} />
         {/* First flight (§20): value → parent account → add a kid → soft
             paywall; returning families land on the profile picker. */}
         <Route path="/welcome" element={<ValuePage />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/onboarding" element={<OnboardingFlow />} />
         <Route path="/profiles" element={<ProfilePicker />} />
+        {/* Parental rights: review what we hold, delete a child, delete the
+            account (§312.6; Apple 5.1.1(v)). */}
+        <Route path="/account" element={<AccountPage />} />
+        {/* One-step online cancellation (auto-renewal law) — sends the
+            subscriber straight into the Stripe Billing Portal. */}
+        <Route path="/account/billing" element={<BillingPortalPage />} />
         <Route path="/admin" element={<AdminItemsPage />} />
         <Route path="/diagnostics" element={<DiagnosticsPage />} />
         {/* Unknown paths: send to home rather than expose a bare 404. */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       </div>
+      <Footer />
       <Analytics />
       <SpeedInsights />
     </div>

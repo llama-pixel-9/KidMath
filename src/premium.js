@@ -70,3 +70,19 @@ export async function startCheckout(plan) {
   }
   window.location.assign(data.url);
 }
+
+/**
+ * Open the Stripe Billing Portal (via the stripe-portal Edge Function) —
+ * the one-click online cancellation path the auto-renewal statutes require.
+ * The portal is configured for immediate cancellation with no retention flow.
+ */
+export async function openBillingPortal() {
+  if (!supabase) throw new Error("Supabase not configured");
+  const { data, error } = await supabase.functions.invoke("stripe-portal", {
+    body: { origin: window.location.origin },
+  });
+  if (error || !data?.url) {
+    throw new Error(error?.message || "Could not open the billing portal");
+  }
+  window.location.assign(data.url);
+}

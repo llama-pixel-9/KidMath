@@ -199,8 +199,14 @@ private struct ValueStep: View {
 private struct AccountStep: View {
     @EnvironmentObject private var app: AppModel
     @Environment(\.theme) private var theme
+    @Environment(\.openURL) private var openURL
     let onSignedIn: () -> Void
     @State private var authMessage = ""
+    /// Kids category: sign-in flows and external links sit behind the
+    /// parental gate — this is the first screen App Review opens.
+    @State private var gateUnlocked = false
+    @State private var showGate = false
+    @State private var gatedAction: (() -> Void)?
 
     var body: some View {
         VStack(spacing: 0) {
@@ -216,47 +222,61 @@ private struct AccountStep: View {
                 .padding(.top, 8)
 
             VStack(spacing: 12) {
-                SignInWithAppleButton(.continue) { request in
-                    AppleSignInCoordinator.configure(request)
-                } onCompletion: { result in
-                    Task {
-                        do {
-                            try await AppleSignInCoordinator.complete(result, supabase: app.supabase)
-                            onSignedIn()
-                        } catch {
-                            authMessage = "Apple sign-in failed: \(error.localizedDescription)"
+                if !gateUnlocked {
+                    Button {
+                        gate {}
+                    } label: {
+                        Label("Parents: continue", systemImage: "lock.shield")
+                            .font(theme.bodyFont(size: 17, weight: .bold))
+                            .foregroundStyle(Theme.cream)
+                            .frame(maxWidth: .infinity)
+                            .frame(height: 54)
+                            .background(RoundedRectangle(cornerRadius: 14).fill(Theme.teal))
+                    }
+                    .buttonStyle(.plain)
+                } else {
+                    SignInWithAppleButton(.continue) { request in
+                        AppleSignInCoordinator.configure(request)
+                    } onCompletion: { result in
+                        Task {
+                            do {
+                                try await AppleSignInCoordinator.complete(result, supabase: app.supabase)
+                                onSignedIn()
+                            } catch {
+                                authMessage = "Apple sign-in failed: \(error.localizedDescription)"
+                            }
                         }
                     }
-                }
-                .signInWithAppleButtonStyle(.black)
-                .frame(height: 54)
-                .clipShape(RoundedRectangle(cornerRadius: 14))
+                    .signInWithAppleButtonStyle(.black)
+                    .frame(height: 54)
+                    .clipShape(RoundedRectangle(cornerRadius: 14))
 
-                Button {
-                    Task {
-                        do {
-                            try await app.supabase.signInWithGoogle()
-                            onSignedIn()
-                        } catch {
-                            authMessage = "Google sign-in failed: \(error.localizedDescription)"
+                    Button {
+                        Task {
+                            do {
+                                try await app.supabase.signInWithGoogle()
+                                onSignedIn()
+                            } catch {
+                                authMessage = "Google sign-in failed: \(error.localizedDescription)"
+                            }
                         }
+                    } label: {
+                        Text("Continue with Google")
+                            .font(theme.bodyFont(size: 17, weight: .bold))
+                            .foregroundStyle(Theme.ink)
+                            .frame(maxWidth: .infinity)
+                            .frame(height: 54)
+                            .background(
+                                RoundedRectangle(cornerRadius: 14)
+                                    .fill(.white)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 14)
+                                            .stroke(Theme.ink.opacity(0.15), lineWidth: 1.5)
+                                    )
+                            )
                     }
-                } label: {
-                    Text("Continue with Google")
-                        .font(theme.bodyFont(size: 17, weight: .bold))
-                        .foregroundStyle(Theme.ink)
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 54)
-                        .background(
-                            RoundedRectangle(cornerRadius: 14)
-                                .fill(.white)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 14)
-                                        .stroke(Theme.ink.opacity(0.15), lineWidth: 1.5)
-                                )
-                        )
+                    .buttonStyle(.plain)
                 }
-                .buttonStyle(.plain)
             }
             .frame(maxWidth: 420)
             .padding(.top, 32)
@@ -275,10 +295,14 @@ private struct AccountStep: View {
                 .frame(maxWidth: 420)
                 .padding(.top, 20)
 
-            Link("Privacy Policy", destination: AppLinks.privacyPolicy)
-                .font(theme.bodyFont(size: 13, weight: .bold))
-                .foregroundStyle(Theme.teal)
-                .padding(.top, 6)
+            HStack(spacing: 6) {
+                Button("Terms") { gate { openURL(AppLinks.terms) } }
+                Text("·").foregroundStyle(Theme.ink.opacity(0.4))
+                Button("Privacy Policy") { gate { openURL(AppLinks.privacyPolicy) } }
+            }
+            .font(theme.bodyFont(size: 13, weight: .bold))
+            .foregroundStyle(Theme.teal)
+            .padding(.top, 6)
 
             Text("Already have an account? The same buttons sign you in.")
                 .font(theme.bodyFont(size: 15, weight: .bold))
@@ -287,6 +311,24 @@ private struct AccountStep: View {
             Spacer(minLength: 40)
         }
         .frame(maxWidth: .infinity)
+        .sheet(isPresented: $showGate) {
+            ParentalGateView {
+                gateUnlocked = true
+                gatedAction?()
+                gatedAction = nil
+            }
+        }
+    }
+
+    /// External links and sign-in reveal go through the parental gate once;
+    /// after a pass the session stays unlocked.
+    private func gate(_ action: @escaping () -> Void) {
+        if gateUnlocked {
+            action()
+        } else {
+            gatedAction = action
+            showGate = true
+        }
     }
 }
 
@@ -466,10 +508,29 @@ struct KidStep: View {
 private struct PlanStep: View {
     @EnvironmentObject private var app: AppModel
     @Environment(\.theme) private var theme
+    @Environment(\.openURL) private var openURL
     let kidName: String?
     let onDone: () -> Void
 
     @State private var purchasing = false
+    // Auto-renewal consent is its own affirmative act: never pre-ticked,
+    // and the purchase button stays dead until it is ticked.
+    @State private var autoRenewAck = false
+    @State private var annualSelected = true
+    // Kids category: purchases and external links sit behind the parental
+    // gate, same as PaywallView.
+    @State private var gateUnlocked = false
+    @State private var showGate = false
+    @State private var gatedAction: (() -> Void)?
+
+    private var selectedProduct: Product? {
+        annualSelected ? app.store.annual : app.store.monthly
+    }
+
+    private var disclosureLabel: String {
+        let price = selectedProduct?.displayPrice ?? (annualSelected ? "$54.99" : "$8.99")
+        return AutoRenewalTerms.label(price: price, period: annualSelected ? "year" : "month")
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -495,16 +556,46 @@ private struct PlanStep: View {
                     .padding(.top, 12)
             }
 
-            Text("Cancel anytime in the App Store's Subscriptions settings. The free plan is free forever.")
+            Text("Cancel anytime in Settings → Apple Account → Subscriptions — one step, no questions asked. The free plan is free forever.")
                 .font(theme.bodyFont(size: 13))
                 .foregroundStyle(Theme.ink.opacity(0.6))
                 .frame(maxWidth: .infinity)
                 .multilineTextAlignment(.center)
                 .padding(.top, 20)
+
+            HStack(spacing: 6) {
+                Button("How to cancel") { gate { openURL(AppLinks.manageSubscriptions) } }
+                Text("·").foregroundStyle(Theme.ink.opacity(0.4))
+                Button("Terms") { gate { openURL(AppLinks.terms) } }
+                Text("·").foregroundStyle(Theme.ink.opacity(0.4))
+                Button("Privacy") { gate { openURL(AppLinks.privacyPolicy) } }
+            }
+            .font(theme.bodyFont(size: 13, weight: .bold))
+            .foregroundStyle(Theme.teal)
+            .frame(maxWidth: .infinity)
+            .padding(.top, 6)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
+        .sheet(isPresented: $showGate) {
+            ParentalGateView {
+                gateUnlocked = true
+                gatedAction?()
+                gatedAction = nil
+            }
+        }
         .onChange(of: app.store.hasPremium) {
             if app.store.hasPremium { onDone() }
+        }
+    }
+
+    /// Purchases and external links require the parental gate (once per
+    /// visit to this step).
+    private func gate(_ action: @escaping () -> Void) {
+        if gateUnlocked {
+            action()
+        } else {
+            gatedAction = action
+            showGate = true
         }
     }
 
@@ -564,8 +655,13 @@ private struct PlanStep: View {
             bullet("Flight logs — printable worksheets for any game, with answer keys")
             bullet("Progress syncs across devices")
             VStack(spacing: 8) {
+                // The state auto-renewal disclosure, before the purchase step:
+                // trial end date, first charge amount and date, renewal terms.
+                AutoRenewalConsentBox(ack: $autoRenewAck, label: disclosureLabel)
+                    .padding(.top, 4)
+
                 Button {
-                    purchase(app.store.annual)
+                    purchase(selectedProduct)
                 } label: {
                     Text("Start the free trial")
                         .font(theme.displayFont(size: 18))
@@ -577,16 +673,21 @@ private struct PlanStep: View {
                                 .fill(Theme.sun)
                                 .shadow(color: Theme.ember, radius: 0, x: 0, y: 5)
                         )
+                        .opacity(autoRenewAck ? 1 : 0.5)
                 }
                 .buttonStyle(SpringButtonStyle())
-                .disabled(purchasing || app.store.annual == nil)
+                .disabled(purchasing || !autoRenewAck || selectedProduct == nil)
 
-                Button("or \(app.store.monthly?.displayPrice ?? "$8.99")/month") {
-                    purchase(app.store.monthly)
+                Button(
+                    annualSelected
+                        ? "or switch to \(app.store.monthly?.displayPrice ?? "$8.99")/month"
+                        : "or switch to \(app.store.annual?.displayPrice ?? "$54.99")/year"
+                ) {
+                    annualSelected.toggle()
                 }
                 .font(theme.bodyFont(size: 14, weight: .bold))
                 .foregroundStyle(Theme.ink.opacity(0.7))
-                .disabled(purchasing || app.store.monthly == nil)
+                .disabled(purchasing)
             }
             .padding(.top, 10)
         }
@@ -613,10 +714,12 @@ private struct PlanStep: View {
 
     private func purchase(_ product: Product?) {
         guard let product else { return }
-        Task {
-            purchasing = true
-            await app.store.purchase(product)
-            purchasing = false
+        gate {
+            Task {
+                purchasing = true
+                await app.store.purchase(product)
+                purchasing = false
+            }
         }
     }
 }

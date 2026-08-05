@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useAuth } from "./useAuth";
 import { useIsAdmin } from "./useIsAdmin";
+import { paywallEnabled } from "./premium";
 import LarkMark from "./components/LarkMark";
 import Feather from "./components/feather.jsx";
 import { meadowEnabled } from "./gamificationFlags.js";
@@ -33,14 +34,28 @@ function AuthButton({ compact = false }) {
     const initial = name.trim().charAt(0).toUpperCase() || "?";
     return (
       <div className="flex items-center gap-2">
-        <div
-          className="h-9 w-9 rounded-full bg-teal flex items-center justify-center font-display font-semibold text-cream"
-          title={name}
+        {/* The avatar opens the account area — profile review, deletion,
+            billing all live there. */}
+        <button
+          className="h-9 w-9 rounded-full bg-teal flex items-center justify-center font-display font-semibold text-cream cursor-pointer"
+          title={`${name} — account settings`}
+          aria-label="Account settings"
+          onClick={() => navigate("/account")}
         >
           {initial}
-        </div>
+        </button>
         {!compact && (
           <span className="text-sm font-bold text-ink max-w-[100px] truncate">{name}</span>
+        )}
+        {/* Subscription management (incl. one-step cancellation) must be
+            reachable from the account area on every viewport. */}
+        {paywallEnabled() && (
+          <button
+            className="px-2 py-2 rounded-xl text-sm font-bold cursor-pointer transition-colors text-ink hover:bg-ink/5 hover:text-teal"
+            onClick={() => navigate("/account/billing")}
+          >
+            Billing
+          </button>
         )}
         <button
           className="p-2 rounded-xl cursor-pointer transition-colors hover:bg-ink/5"

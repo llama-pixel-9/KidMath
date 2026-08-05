@@ -65,6 +65,37 @@ final class SupabaseService: ObservableObject {
         try await client.auth.signOut()
     }
 
+    // MARK: - Deletion (E4: §312.6 / Apple 5.1.1(v))
+
+    /// E7: send the StoreKit 2 signed transaction to the verify-entitlement
+    /// Edge Function, which validates it server-side and writes the shared
+    /// entitlements row (the table is service-role-write only).
+    func verifyEntitlement(jws: String) async throws {
+        try await client.functions.invoke(
+            "verify-entitlement",
+            options: FunctionInvokeOptions(body: ["source": "appstore", "jws": jws])
+        )
+    }
+
+    /// Delete one child profile (and stop collection about that child) via
+    /// the delete-account Edge Function.
+    func deleteKidProfile(kidId: UUID) async throws {
+        try await client.functions.invoke(
+            "delete-account",
+            options: FunctionInvokeOptions(body: ["action": "kid", "kidId": kidId.uuidString])
+        )
+    }
+
+    /// Delete the whole account — every profile, all progress, the auth user —
+    /// then drop the local session. Deletion, not deactivation.
+    func deleteAccount() async throws {
+        try await client.functions.invoke(
+            "delete-account",
+            options: FunctionInvokeOptions(body: ["action": "account"])
+        )
+        try? await client.auth.signOut()
+    }
+
     // MARK: - Item bank (mirrors src/itemBank/modeLoader.js)
 
     /// Approved rows for one mode, optionally narrowed to a level window.
@@ -138,14 +169,10 @@ final class SupabaseService: ObservableObject {
         return rows?.first
     }
 
-    func upsertEntitlement(userId: UUID, row: [String: Any]) async throws {
-        var payload = row
-        payload["user_id"] = userId.uuidString
-        try await client
-            .from("entitlements")
-            .upsert(AnyJSON.from(payload), onConflict: "user_id")
-            .execute()
-    }
+    // upsertEntitlement was removed with the E7 hardening: entitlements is
+    // service-role-write only — clients submit signed transactions to the
+    // verify-entitlement Edge Function (verifyEntitlement above) instead of
+    // writing the row themselves.
 
     func upsertProgress(userId: UUID, mode: String, row: [String: Any]) async throws {
         var payload = row

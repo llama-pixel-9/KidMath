@@ -95,16 +95,16 @@ final class StoreService: ObservableObject {
     /// True when either store has an active entitlement.
     func refreshEntitlement() async {
         var active = false
-        var latest: Transaction?
+        var latestJWS: String?
         for await entitlement in Transaction.currentEntitlements {
             guard case .verified(let transaction) = entitlement,
                   transaction.productType == .autoRenewable,
                   transaction.revocationDate == nil else { continue }
             active = true
-            latest = transaction
+            latestJWS = entitlement.jwsRepresentation
         }
-        if let latest {
-            await syncToSupabase(latest)
+        if let latestJWS {
+            await syncToSupabase(jws: latestJWS)
         }
         if !active, supabase.isSignedIn {
             active = await hasActiveSupabaseEntitlement()
@@ -168,10 +168,13 @@ final class StoreService: ObservableObject {
         return date > now
     }
 
-    private func syncToSupabase(_ transaction: Transaction) async {
-        guard let userId = supabase.userId else { return } // synced on next sign-in
-        let row = Self.entitlementRow(productID: transaction.productID, expiresAt: transaction.expirationDate)
-        try? await supabase.upsertEntitlement(userId: userId, row: row)
+    /// E7 hardening: the entitlements table is service-role-write only, so
+    /// the signed transaction goes to the verify-entitlement Edge Function,
+    /// which validates it against Apple's chain before writing the shared
+    /// row. The client never writes entitlements directly.
+    private func syncToSupabase(jws: String) async {
+        guard supabase.isSignedIn else { return } // synced on next sign-in
+        try? await supabase.verifyEntitlement(jws: jws)
     }
 
     private func hasActiveSupabaseEntitlement() async -> Bool {

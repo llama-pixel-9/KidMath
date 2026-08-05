@@ -6,10 +6,11 @@
   labels (docs/ios-appstore-checklist.md maps every entry).
 
   KidMath collects: an email address + user ID (account, when a parent signs
-  in) and learning progress (levels/stars/mistakes) — all linked to the
-  account, none used for tracking. There is NO third-party analytics or
-  advertising SDK in the iOS app (Kids category requirement); the only
-  network peer is our Supabase backend.
+  in), the child profile a parent creates — first name (Name), age and grade
+  (OtherDataTypes) — and learning progress (levels/stars/mistakes) — all
+  linked to the account, none used for tracking. There is NO third-party
+  analytics or advertising SDK in the iOS app (Kids category requirement);
+  the only network peer is our Supabase backend.
 -->
 <dict>
 	<key>NSPrivacyTracking</key>
@@ -45,6 +46,32 @@
 		<dict>
 			<key>NSPrivacyCollectedDataType</key>
 			<string>NSPrivacyCollectedDataTypeOtherUserContent</string>
+			<key>NSPrivacyCollectedDataTypeLinked</key>
+			<true/>
+			<key>NSPrivacyCollectedDataTypeTracking</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypePurposes</key>
+			<array>
+				<string>NSPrivacyCollectedDataTypePurposeAppFunctionality</string>
+			</array>
+		</dict>
+		<!-- Child profile: first name. -->
+		<dict>
+			<key>NSPrivacyCollectedDataType</key>
+			<string>NSPrivacyCollectedDataTypeName</string>
+			<key>NSPrivacyCollectedDataTypeLinked</key>
+			<true/>
+			<key>NSPrivacyCollectedDataTypeTracking</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypePurposes</key>
+			<array>
+				<string>NSPrivacyCollectedDataTypePurposeAppFunctionality</string>
+			</array>
+		</dict>
+		<!-- Child profile: age and grade. -->
+		<dict>
+			<key>NSPrivacyCollectedDataType</key>
+			<string>NSPrivacyCollectedDataTypeOtherDataTypes</string>
 			<key>NSPrivacyCollectedDataTypeLinked</key>
 			<true/>
 			<key>NSPrivacyCollectedDataTypeTracking</key>

@@ -12,6 +12,11 @@ struct SettingsView: View {
     /// the parental gate, like purchases.
     @State private var accountUnlocked = false
     @State private var showGate = false
+    @State private var gatePendingAction: (() -> Void)?
+    @State private var kidToDelete: KidProfile?
+    @State private var confirmAccountDelete = false
+    @State private var deletionMessage = ""
+    @State private var deleting = false
 
     var body: some View {
         NavigationStack {
@@ -19,6 +24,9 @@ struct SettingsView: View {
                 subscriptionSection
                 soundSection
                 accountSection
+                if app.supabase.isSignedIn {
+                    dataSection
+                }
                 engineSection
             }
             .navigationTitle("Settings")
@@ -44,7 +52,11 @@ struct SettingsView: View {
                     .font(.footnote)
                     .foregroundStyle(theme.textSecondary)
                 Button("Restore purchases") {
-                    Task { await app.store.restorePurchases() }
+                    // Kids category: restore is a purchase-adjacent action —
+                    // gated, same as PaywallView's restore.
+                    guardGate {
+                        Task { await app.store.restorePurchases() }
+                    }
                 }
             }
         }
@@ -121,7 +133,112 @@ struct SettingsView: View {
             }
         }
         .sheet(isPresented: $showGate) {
-            ParentalGateView { accountUnlocked = true }
+            ParentalGateView {
+                accountUnlocked = true
+                gatePendingAction?()
+                gatePendingAction = nil
+            }
+        }
+    }
+
+    /// The §312.6 surface: review is the kid list itself (first name, age,
+    /// grade — that's everything we store per child); per-child deletion is
+    /// the "refuse further collection" right; account deletion is Apple
+    /// 5.1.1(v). Destructive actions sit behind the parental gate.
+    private var dataSection: some View {
+        Section {
+            ForEach(app.kidProfiles.kids) { kid in
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(kid.firstName)
+                    Text("Age \(kid.age) · Grade \(kid.grade) — all we store about them")
+                        .font(.footnote)
+                        .foregroundStyle(theme.textSecondary)
+                    Button("Delete \(kid.firstName)'s profile", role: .destructive) {
+                        guardGate { kidToDelete = kid }
+                    }
+                    .font(.footnote.weight(.semibold))
+                    .disabled(deleting)
+                }
+            }
+            Button("Delete my account and all data", role: .destructive) {
+                guardGate { confirmAccountDelete = true }
+            }
+            .disabled(deleting)
+            if !deletionMessage.isEmpty {
+                Text(deletionMessage).font(.footnote).foregroundStyle(.red)
+            }
+        } header: {
+            Text("Your data")
+        } footer: {
+            Text("Deletion is permanent: profiles and practice progress are removed from our servers, not archived. Progress syncs at the family level; deleting the account removes all of it.")
+        }
+        .confirmationDialog(
+            "Delete \(kidToDelete?.firstName ?? "this kid")'s profile?",
+            isPresented: Binding(get: { kidToDelete != nil }, set: { if !$0 { kidToDelete = nil } }),
+            titleVisibility: .visible,
+            presenting: kidToDelete
+        ) { kid in
+            Button("Delete profile — cannot be undone", role: .destructive) {
+                deleteKid(kid)
+            }
+        } message: { kid in
+            Text("\(kid.firstName)'s profile will be deleted and nothing more will be collected about them.")
+        }
+        .confirmationDialog(
+            "Delete your account and all data?",
+            isPresented: $confirmAccountDelete,
+            titleVisibility: .visible
+        ) {
+            Button("Delete everything — cannot be undone", role: .destructive) {
+                deleteWholeAccount()
+            }
+        } message: {
+            Text("Every child profile, all progress, and your sign-in are permanently deleted from our servers and this device.")
+        }
+    }
+
+    /// Destructive account actions require the parental gate first.
+    private func guardGate(_ action: @escaping () -> Void) {
+        if accountUnlocked {
+            action()
+        } else {
+            gatePendingAction = action
+            showGate = true
+        }
+    }
+
+    private func deleteKid(_ kid: KidProfile) {
+        Task {
+            deleting = true
+            defer { deleting = false }
+            do {
+                try await app.supabase.deleteKidProfile(kidId: kid.id)
+                if app.kidProfiles.activeKidId == kid.id.uuidString {
+                    app.kidProfiles.setActiveKid(nil)
+                }
+                await app.kidProfiles.refresh()
+                deletionMessage = ""
+            } catch {
+                deletionMessage = "Could not delete — \(error.localizedDescription)"
+            }
+        }
+    }
+
+    private func deleteWholeAccount() {
+        Task {
+            deleting = true
+            defer { deleting = false }
+            do {
+                try await app.supabase.deleteAccount()
+                try? app.bankService?.reset()
+                app.kidProfiles.setActiveKid(nil)
+                await app.kidProfiles.refresh()
+                await app.refreshModeLevels()
+                deletionMessage = ""
+                dismiss()
+            } catch {
+                deletionMessage = "Could not delete the account — \(error.localizedDescription)"
+            }
         }
     }
 

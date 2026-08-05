@@ -34,12 +34,16 @@ function AuthButton({ compact = false }) {
     const initial = name.trim().charAt(0).toUpperCase() || "?";
     return (
       <div className="flex items-center gap-2">
-        <div
-          className="h-9 w-9 rounded-full bg-teal flex items-center justify-center font-display font-semibold text-cream"
-          title={name}
+        {/* The avatar opens the account area — profile review, deletion,
+            billing all live there. */}
+        <button
+          className="h-9 w-9 rounded-full bg-teal flex items-center justify-center font-display font-semibold text-cream cursor-pointer"
+          title={`${name} — account settings`}
+          aria-label="Account settings"
+          onClick={() => navigate("/account")}
         >
           {initial}
-        </div>
+        </button>
         {!compact && (
           <span className="text-sm font-bold text-ink max-w-[100px] truncate">{name}</span>
         )}

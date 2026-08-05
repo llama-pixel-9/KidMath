@@ -65,6 +65,27 @@ final class SupabaseService: ObservableObject {
         try await client.auth.signOut()
     }
 
+    // MARK: - Deletion (E4: §312.6 / Apple 5.1.1(v))
+
+    /// Delete one child profile (and stop collection about that child) via
+    /// the delete-account Edge Function.
+    func deleteKidProfile(kidId: UUID) async throws {
+        try await client.functions.invoke(
+            "delete-account",
+            options: FunctionInvokeOptions(body: ["action": "kid", "kidId": kidId.uuidString])
+        )
+    }
+
+    /// Delete the whole account — every profile, all progress, the auth user —
+    /// then drop the local session. Deletion, not deactivation.
+    func deleteAccount() async throws {
+        try await client.functions.invoke(
+            "delete-account",
+            options: FunctionInvokeOptions(body: ["action": "account"])
+        )
+        try? await client.auth.signOut()
+    }
+
     // MARK: - Item bank (mirrors src/itemBank/modeLoader.js)
 
     /// Approved rows for one mode, optionally narrowed to a level window.

@@ -7,16 +7,18 @@ import FigureDigitPad from "./FigureDigitPad.jsx";
 export default function AngleFigure({ onSubmit, feedback, theme, lowMotionMode, lowEndDevice, degrees }) {
   const [entry, setEntry] = useState("");
   const locked = feedback === "correct" || feedback === "wrong";
-  const cx = 20;
+  // Vertex centered horizontally: the mode serves measures up to 180°, and a
+  // left-edge vertex clipped every ray past ~90° outside the viewBox.
+  const cx = 120;
   const cy = 120;
-  const len = 120;
+  const len = 100;
   const rad = ((degrees || 0) * Math.PI) / 180;
   const end = { x: cx + len * Math.cos(rad), y: cy - len * Math.sin(rad) };
   const tone = feedback === "correct" ? "text-deep-teal" : feedback === "wrong" ? "text-ember" : theme.textPrimary;
   return (
     <section className="w-full flex flex-col items-center gap-3" aria-label="Angle figure">
       <div className="relative">
-        <svg width="160" height="140" viewBox="0 0 160 140" role="img" aria-label={`angle of ${degrees} degrees`}>
+        <svg width="240" height="140" viewBox="0 0 240 140" role="img" aria-label={`angle of ${degrees} degrees`}>
           <line x1={cx} y1={cy} x2={cx + len} y2={cy} className="stroke-slate-600" strokeWidth="4" strokeLinecap="round" />
           <line x1={cx} y1={cy} x2={end.x} y2={end.y} className="stroke-sky-500" strokeWidth="4" strokeLinecap="round" />
           <path

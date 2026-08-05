@@ -845,12 +845,17 @@ function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
 
   // Vertical form for addition/subtraction with double-digit numbers. Runs
   // even when the item has a symbolic promptText (e.g. bank-authored
-  // "65 + 35 = ?") so long as both operands are concrete integers.
+  // "65 + 35 = ?") so long as both operands are concrete integers AND the
+  // answer really is `a op b`. Unknown-addend/compare items ("10 + ? = 17",
+  // answer 7) also carry numeric a/b — laying those out as "10 + 17 = ?"
+  // shows a different question than the one being scored, so any item whose
+  // answer isn't the computed result must fall through to its promptText.
   const isVertical =
     (q.op === "+" || q.op === "−") &&
     typeof q.a === "number" &&
     typeof q.b === "number" &&
-    (q.a >= 10 || q.b >= 10);
+    (q.a >= 10 || q.b >= 10) &&
+    Number(q.answer) === (q.op === "+" ? q.a + q.b : q.a - q.b);
 
   if (isVertical) {
     const aDigits = String(q.a).split("");

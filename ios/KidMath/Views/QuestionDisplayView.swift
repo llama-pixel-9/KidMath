@@ -157,7 +157,13 @@ struct QuestionDisplayView: View {
         guard let op = question["op"] as? String, op == "+" || op == "−" || op == "-",
               let a = (question["a"] as? NSNumber)?.intValue,
               let b = (question["b"] as? NSNumber)?.intValue else { return false }
-        return a >= 10 || b >= 10
+        // The column layout claims "a op b = ?", so the answer must BE that
+        // result. Unknown-addend/compare items ("10 + ? = 17", answer 7) also
+        // carry numeric a/b — rendering them vertically shows a different
+        // question than the one being scored (same guard as the web's
+        // isVertical in MathExplorer.jsx).
+        guard let answer = (question["answer"] as? NSNumber)?.intValue else { return false }
+        return (a >= 10 || b >= 10) && answer == (op == "+" ? a + b : a - b)
     }
 
     private var verticalArithmetic: some View {

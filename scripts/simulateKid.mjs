@@ -134,7 +134,19 @@ function validateQuestion(q, mode, level) {
   if (!["conceptual", "procedural", "application"].includes(q.metadata?.itemFamily))
     report("MEDIUM", "bad-item-family", mode, String(q.metadata?.itemFamily), ref());
 
-  // 5. Renderability preconditions: the web app can only draw what the
+  // 5. Display-consistency: the session screen renders symbolic equations
+  //    from a/op/b. When the answer is NOT the computed result (unknown-addend
+  //    and compare items), the item must carry a promptText stating the real
+  //    question — otherwise the UI draws "a op b = ?" and scores a different
+  //    question than the kid sees (the "19 + 14 → correct answer 5" bug).
+  if ((q.op === "+" || q.op === "−") && typeof q.a === "number" && typeof q.b === "number") {
+    const computed = q.op === "+" ? q.a + q.b : q.a - q.b;
+    if (Number(q.answer) !== computed && !prompt.trim()) {
+      report("HIGH", "false-equation-render", mode, `${q.a} ${q.op} ${q.b} rendered, answer ${q.answer}, no promptText`, ref());
+    }
+  }
+
+  // 6. Renderability preconditions: the web app can only draw what the
   //    registries know. "choice" is the unregistered default grid.
   const at = questionAnswerType(q);
   if (at !== "choice" && !ANSWER_TYPES.includes(at))

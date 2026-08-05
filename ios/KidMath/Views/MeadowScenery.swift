@@ -7,24 +7,23 @@ import SwiftUI
 struct ZoneBackdropView: View {
     let zoneId: String
     var nestBalance: Int?
+    /// §12: the season changes ONLY the canopy/ground tint (nil = base).
+    var season: String?
 
-    private static let sky = Color(red: 0.79, green: 0.91, blue: 0.87)
-    private static let farGrass = Color(red: 0.56, green: 0.82, blue: 0.75)
-    private static let ground = Color(red: 0.65, green: 0.87, blue: 0.83)
-    private static let groundDeep = Color(red: 0.5, green: 0.81, blue: 0.75)
-    private static let canopy = Color(red: 0.44, green: 0.76, blue: 0.7)
+    private var t: Seasons.Tint { Seasons.tint(for: season) }
+
     private static let trunk = Color(red: 0.69, green: 0.54, blue: 0.41)
     private static let water = Color(red: 0.84, green: 0.93, blue: 0.95)
     private static let rock = Color(red: 0.62, green: 0.75, blue: 0.71)
 
     var body: some View {
         ZStack(alignment: .topLeading) {
-            Self.sky
-            Rectangle().fill(Self.farGrass)
+            t.sky
+            Rectangle().fill(t.farGrass)
                 .frame(height: 70).offset(y: 358)
-            Rectangle().fill(Self.groundDeep)
+            Rectangle().fill(t.groundDeep)
                 .frame(height: 178).offset(y: 410)
-            Rectangle().fill(Self.ground)
+            Rectangle().fill(t.ground)
                 .frame(height: 136).offset(y: 452)
 
             switch zoneId {
@@ -66,11 +65,11 @@ struct ZoneBackdropView: View {
                 .fill(Self.trunk)
                 .frame(width: 28, height: trunkH + 40)
                 .position(x: x, y: 400 - trunkH + (trunkH + 40) / 2)
-            Circle().fill(Self.canopy).frame(width: canopyR * 2)
+            Circle().fill(t.canopy).frame(width: canopyR * 2)
                 .position(x: x, y: 400 - trunkH - canopyR * 0.62)
-            Circle().fill(Self.canopy).frame(width: canopyR * 1.24)
+            Circle().fill(t.canopy).frame(width: canopyR * 1.24)
                 .position(x: x - canopyR * 0.72, y: 400 - trunkH - canopyR * 0.28)
-            Circle().fill(Self.canopy).frame(width: canopyR * 1.16)
+            Circle().fill(t.canopy).frame(width: canopyR * 1.16)
                 .position(x: x + canopyR * 0.72, y: 400 - trunkH - canopyR * 0.3)
             Ellipse().fill(Color(red: 0.54, green: 0.42, blue: 0.31))
                 .frame(width: 18, height: 24)
@@ -80,8 +79,8 @@ struct ZoneBackdropView: View {
 
     private func pond(x: CGFloat, y: CGFloat, rx: CGFloat, ry: CGFloat) -> some View {
         Ellipse()
-            .fill(Self.water)
-            .overlay(Ellipse().stroke(Self.groundDeep, lineWidth: 2))
+            .fill(t.frozen ? Color(red: 0.92, green: 0.96, blue: 0.97) : Self.water)
+            .overlay(Ellipse().stroke(t.groundDeep, lineWidth: 2))
             .frame(width: rx * 2, height: ry * 2)
             .position(x: x, y: y)
     }
@@ -114,7 +113,7 @@ struct ZoneBackdropView: View {
                 p.addLine(to: CGPoint(x: x + CGFloat(dx) + (index % 2 == 1 ? -6 : 6), y: y - 26))
             }
         }
-        .stroke(Self.groundDeep, style: StrokeStyle(lineWidth: 5, lineCap: .round))
+        .stroke(t.groundDeep, style: StrokeStyle(lineWidth: 5, lineCap: .round))
     }
 
     private func log(x: CGFloat, y: CGFloat) -> some View {

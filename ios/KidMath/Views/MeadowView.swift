@@ -28,6 +28,11 @@ struct MeadowView: View {
     @State private var bubble: Bubble?
     @State private var guideEntry: GuideEntry?
     @State private var storeOpen = false
+    /// §09: the bird mid-hop or mid-signature; §10: the hatch sheet.
+    @State private var hoppingSpecies: String?
+    @State private var performingSpecies: String?
+    @State private var hatchOpen = false
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     struct Perch {
         let id: String
@@ -46,6 +51,23 @@ struct MeadowView: View {
     struct GuideEntry: Identifiable {
         let id: String
         let birdName: String
+    }
+
+    struct BobRig {
+        let period: Double
+        let delay: Double
+    }
+
+    /// §14 tier 1: the idle bob runs on the period/delay randomised at
+    /// placement and SAVED, so the flock never pulses together — and never
+    /// under reduce-motion or Calm mode.
+    private func bobRig(_ bird: [String: Any]) -> BobRig? {
+        guard GamFlags.meadowMotion, !lowMotion,
+              let bob = bird["bob"] as? [String: Any] else { return nil }
+        return BobRig(
+            period: ProgressStore.double(bob["period"], default: 5),
+            delay: ProgressStore.double(bob["delay"], default: 0)
+        )
     }
 
     var body: some View {
@@ -76,12 +98,50 @@ struct MeadowView: View {
         }
         .sheet(item: $guideEntry) { entry in
             if let species = flock?.species(entry.id) {
-                FieldGuideSheet(species: species)
+                FieldGuideSheet(
+                    species: species,
+                    awayLine: GamFlags.ceremonies && (flock?.isAway(entry.id) ?? false)
+                        ? Seasons.awayLine(species.raw)
+                        : nil
+                )
             }
         }
         .sheet(isPresented: $storeOpen) {
             if let flock {
-                GiveAHomeSheet(flock: flock) { refresh() }
+                GiveAHomeSheet(flock: flock, eggsEnabled: GamFlags.ceremonies) { refresh() }
+            }
+        }
+        .sheet(isPresented: $hatchOpen) {
+            if let flock, let speciesId = flock.egg()?["speciesId"] as? String,
+               let species = flock.species(speciesId) {
+                HatchSheet(species: species, reduceMotion: lowMotion) { name in
+                    // Beat 6 — the only persistence point (§10).
+                    _ = flock.hatch(name: name)
+                    refresh()
+                }
+            }
+        }
+        // §09 signature scheduling: an uncommon-or-rarer bird performs 3–4
+        // times a session at random ≥90s intervals. It never demands
+        // attention — it simply happens whether or not anyone watches.
+        .task {
+            guard GamFlags.roster else { return }
+            var performances = 0
+            while !Task.isCancelled, performances < 4 {
+                let gap = Double.random(in: 90...240)
+                try? await Task.sleep(for: .seconds(gap))
+                guard !Task.isCancelled, !lowMotion, performingSpecies == nil else { continue }
+                let candidates = visibleBirds.compactMap { bird -> String? in
+                    guard let id = bird["speciesId"] as? String,
+                          let species = flock?.species(id),
+                          species.tier != "common" else { return nil }
+                    return id
+                }
+                guard let pick = candidates.randomElement() else { continue }
+                performingSpecies = pick
+                performances += 1
+                try? await Task.sleep(for: .seconds(3))
+                if performingSpecies == pick { performingSpecies = nil }
             }
         }
     }
@@ -197,23 +257,45 @@ struct MeadowView: View {
         return ZStack(alignment: .topLeading) {
             HStack(spacing: 0) {
                 ForEach(zones, id: \.self) { zoneId in
-                    ZoneBackdropView(zoneId: zoneId, nestBalance: zoneId == "meadow" ? nestBalance : nil)
-                        .frame(width: Self.zoneW, height: Self.zoneH)
+                    ZoneBackdropView(
+                        zoneId: zoneId,
+                        nestBalance: zoneId == "meadow" ? nestBalance : nil,
+                        season: season
+                    )
+                    .frame(width: Self.zoneW, height: Self.zoneH)
+                    .overlay(alignment: .topLeading) {
+                        if zoneId == "meadow", GamFlags.ceremonies, let flock, flock.egg() != nil {
+                            EggSpriteView(
+                                warmthPercent: flock.eggWarmthPercent(),
+                                ready: flock.eggReady(),
+                                speciesName: flock.species(flock.egg()?["speciesId"] as? String ?? "")?.name
+                                    .split(separator: " ").last.map(String.init) ?? "Egg",
+                                reduceMotion: lowMotion
+                            )
+                            .position(x: 460, y: 500)
+                            .onTapGesture { if flock.eggReady() { hatchOpen = true } }
+                        }
+                    }
                 }
                 if let frontier = flock?.frontierZone() {
                     HedgeView(zone: frontier, remaining: max(0, frontier.unlockAt - birds.count))
                         .frame(width: Self.hedgeW, height: Self.zoneH)
                 }
             }
-            ForEach(Array(birds.enumerated()), id: \.offset) { _, bird in
+            ForEach(Array(visibleBirds.enumerated()), id: \.offset) { _, bird in
                 if let perch = perchById[bird["perchId"] as? String ?? ""],
                    let zi = zoneIds.firstIndex(of: perch.zone) {
-                    let size = 46 * perch.depth
-                    BirdSpriteView()
-                        .frame(width: size, height: size * 0.87)
-                        .position(x: CGFloat(zi) * Self.zoneW + perch.x, y: perch.y - size * 0.44)
-                        .onTapGesture { tap(bird, perch: perch, zoneIndex: zi) }
-                        .accessibilityLabel("\(FlockService.birdName(bird)) the \(flock?.species(bird["speciesId"] as? String ?? "")?.name ?? "bird")")
+                    let speciesId = bird["speciesId"] as? String ?? ""
+                    PerchedBirdView(
+                        depth: perch.depth,
+                        asleep: night && !["barnOwl", "snowyOwl"].contains(speciesId),
+                        bob: bobRig(bird),
+                        hopping: hoppingSpecies == speciesId,
+                        performing: performingSpecies == speciesId
+                    )
+                    .position(x: CGFloat(zi) * Self.zoneW + perch.x, y: perch.y - 46 * perch.depth * 0.44)
+                    .onTapGesture { tap(bird, perch: perch, zoneIndex: zi) }
+                    .accessibilityLabel("\(FlockService.birdName(bird)) the \(flock?.species(speciesId)?.name ?? "bird")")
                 }
             }
             if let bubble {
@@ -231,6 +313,13 @@ struct MeadowView: View {
         .frame(width: Self.zoneW, height: Self.zoneH, alignment: .topLeading)
         .clipped()
         .background(Color(red: 0.79, green: 0.91, blue: 0.87))
+        .overlay {
+            // §12 night: a palette swap, not a redraw — Deep Teal over the
+            // scene; the birds settle as silhouettes, only the owls awake.
+            if night {
+                Color(red: 0.05, green: 0.23, blue: 0.2).opacity(0.45).allowsHitTesting(false)
+            }
+        }
         .contentShape(Rectangle())
         // scaleEffect scales pixels, not layout — pin the scaled visual into
         // a frame of its VISUAL size, anchored top-leading, so the viewport
@@ -242,6 +331,15 @@ struct MeadowView: View {
 
     private var nestBalance: Int {
         EngagementStore.starBalance(EngagementStore().load())
+    }
+
+    private var season: String? { GamFlags.ceremonies ? Seasons.current() : nil }
+    private var night: Bool { GamFlags.ceremonies && Seasons.isNight() }
+    private var lowMotion: Bool { reduceMotion || app.calmMode }
+    private var visibleBirds: [[String: Any]] {
+        // §11: an away migrant's perch stays hers and stays empty.
+        guard GamFlags.ceremonies else { return birds }
+        return birds.filter { !(flock?.isAway($0["speciesId"] as? String ?? "") ?? false) }
     }
 
     /// Free 1:1 drag across earned zones; beyond a bound the scene follows at
@@ -272,6 +370,22 @@ struct MeadowView: View {
         guard let speciesId = bird["speciesId"] as? String,
               let species = flock?.species(speciesId) else { return }
         SoundPlayer.shared.playBirdCall()
+        // §14: a rare bird answers with its signature move instead of the hop.
+        if !lowMotion {
+            if GamFlags.roster, ["rare", "legendary"].contains(species.tier) {
+                performingSpecies = speciesId
+                Task {
+                    try? await Task.sleep(for: .seconds(3))
+                    if performingSpecies == speciesId { performingSpecies = nil }
+                }
+            } else {
+                hoppingSpecies = speciesId
+                Task {
+                    try? await Task.sleep(for: .milliseconds(250))
+                    if hoppingSpecies == speciesId { hoppingSpecies = nil }
+                }
+            }
+        }
         bubble = Bubble(
             text: "\(FlockService.birdName(bird)) · \(species.name)",
             globalX: CGFloat(zoneIndex) * Self.zoneW + perch.x,
@@ -336,5 +450,55 @@ struct BirdSpriteView: View {
                 }
             }
         }
+    }
+}
+
+
+/// One perched bird with its animation layers (§09/§14): the saved idle bob,
+/// the 200ms tap hop, and a placeholder "performing" wiggle standing in for
+/// the commissioned signature rigs. Sleeping birds are silhouettes.
+struct PerchedBirdView: View {
+    let depth: Double
+    var asleep = false
+    var bob: MeadowView.BobRig?
+    var hopping = false
+    var performing = false
+
+    @State private var bobbing = false
+    @State private var performPhase = false
+
+    var body: some View {
+        let size = 46 * depth
+        BirdSpriteView(asleep: asleep)
+            .frame(width: size, height: size * 0.87)
+            .rotationEffect(.degrees(performing ? (performPhase ? 8 : -8) : (hopping ? 2 : 0)))
+            .offset(y: yOffset)
+            .animation(.spring(duration: 0.2), value: hopping)
+            .animation(.easeInOut(duration: 0.3), value: performPhase)
+            .onAppear {
+                if let bob {
+                    withAnimation(
+                        .easeInOut(duration: bob.period / 2)
+                        .repeatForever(autoreverses: true)
+                        .delay(bob.delay)
+                    ) { bobbing = true }
+                }
+            }
+            .onChange(of: performing) { _, now in
+                guard now else { return }
+                Task {
+                    for _ in 0..<8 where performing {
+                        performPhase.toggle()
+                        try? await Task.sleep(for: .milliseconds(320))
+                    }
+                    performPhase = false
+                }
+            }
+    }
+
+    private var yOffset: CGFloat {
+        if hopping { return -14 }
+        if performing { return performPhase ? -22 : -6 }
+        return bobbing ? -5 : 0
     }
 }

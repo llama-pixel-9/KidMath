@@ -21,6 +21,13 @@ enum GamFlags {
     nonisolated static var flightReport: Bool { step("gamFlightReport") }
     /// §03 nomination + Fledging Flights (not yet ported — reserved).
     nonisolated static var fledging: Bool { step("gamFledging") }
-    /// §04–§06 the Meadow (not yet ported — reserved).
+    /// §04–§06 the Meadow.
     nonisolated static var meadow: Bool { step("gamMeadow") }
+    /// §09 behaviour rigs (signature moves, rare tap responses).
+    nonisolated static var roster: Bool { step("gamRoster") }
+    /// §10–§12 eggs/hatching, seasons and night.
+    nonisolated static var ceremonies: Bool { step("gamCeremonies") }
+    /// §14 ambient motion (idle bob etc.); always subordinate to the OS
+    /// reduce-motion setting and Calm mode.
+    nonisolated static var meadowMotion: Bool { step("gamMeadowMotion") }
 }

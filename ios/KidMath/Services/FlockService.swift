@@ -139,6 +139,82 @@ final class FlockService {
         state["lastViewedZone"] = zoneId
         engagement.persist(state)
     }
+
+    /// §11: a seasonal migrant away right now — her perch stays hers and
+    /// stays empty, and she still counts toward every unlock.
+    func isAway(_ speciesId: String) -> Bool {
+        guard let species = species(speciesId) else { return false }
+        return !Seasons.presentNow(species.raw)
+    }
+
+    // MARK: - Eggs (§10, mirror of applyBuyEgg / applyHatch)
+
+    static let eggWarmthTarget = 40
+
+    func egg() -> [String: Any]? {
+        engagement.load()["egg"] as? [String: Any]
+    }
+
+    func eggWarmthPercent() -> Int {
+        guard let egg = egg() else { return 0 }
+        return min(100, Int((Double(ProgressStore.int(egg["warmthStars"])) / Double(Self.eggWarmthTarget) * 100).rounded()))
+    }
+
+    /// At full warmth the egg stops filling and WAITS — it never self-fires.
+    func eggReady() -> Bool {
+        guard let egg = egg() else { return false }
+        return ProgressStore.int(egg["warmthStars"]) >= Self.eggWarmthTarget
+    }
+
+    /// A legendary is never bought — an egg arrives. One egg incubates at a
+    /// time, and the next cannot be earned until this chick has landed.
+    @discardableResult
+    func buyEgg(_ speciesId: String, dayKey: String = EngagementStore.todayKey()) -> Bool {
+        guard let species = species(speciesId), species.egg,
+              let price = (species.raw["eggPrice"] as? NSNumber)?.intValue,
+              egg() == nil, !ownsSpecies(speciesId) else { return false }
+        var state = engagement.load()
+        guard EngagementStore.starBalance(state) >= price else { return false }
+        state["spentStars"] = ProgressStore.int(state["spentStars"]) + price
+        state["egg"] = ["speciesId": speciesId, "warmthStars": 0, "boughtDay": dayKey]
+        engagement.persist(state)
+        return true
+    }
+
+    /// Applied at the END of the ceremony (beat 6) — closing the app any
+    /// earlier loses nothing: the egg stays "ready", restartable from beat 1.
+    /// Anything the kid typed is accepted; a hatched rarity keeps Rename.
+    @discardableResult
+    func hatch(name: String, dayKey: String = EngagementStore.todayKey()) -> [String: Any]? {
+        guard eggReady(), let egg = egg(), let speciesId = egg["speciesId"] as? String,
+              let species = species(speciesId) else { return nil }
+        var state = engagement.load()
+        state.removeValue(forKey: "egg")
+        var flock = state["birds"] as? [[String: Any]] ?? []
+        let earnedIds = earnedZones().map(\.id)
+        let viewed = (state["lastViewedZone"] as? String).flatMap { earnedIds.contains($0) ? $0 : nil } ?? "meadow"
+        let perchId = (try? engine.choosePerch(
+            birds: flock, speciesId: speciesId, viewedZoneId: viewed, earnedZoneIds: earnedIds
+        )) ?? nil
+        let chosen = name.trimmingCharacters(in: .whitespaces)
+        let fallback = (species.raw["presetNames"] as? [String])?.first ?? species.name
+        let bird: [String: Any] = [
+            "speciesId": speciesId,
+            "presetName": chosen.isEmpty ? fallback : chosen,
+            "customName": chosen.isEmpty ? fallback : chosen,
+            "hatched": true,
+            "perchId": perchId ?? "",
+            "arrivalDay": dayKey,
+            "bob": [
+                "period": Double.random(in: 4...6).rounded(toPlaces: 2),
+                "delay": Double.random(in: 0...4).rounded(toPlaces: 2),
+            ],
+        ]
+        flock.append(bird)
+        state["birds"] = flock
+        engagement.persist(state)
+        return bird
+    }
 }
 
 private extension Double {

@@ -8,6 +8,9 @@ struct FieldGuideSheet: View {
     @Environment(\.theme) private var theme
     @Environment(\.dismiss) private var dismiss
     let species: FlockService.Species
+    /// §11: "Away · back in spring" while a migrant is south — the entry
+    /// stays fully readable, call and all.
+    var awayLine: String?
 
     private var pronoun: String { species.raw["pronoun"] as? String ?? "she" }
     private var facts: [String: Any] { species.raw["facts"] as? [String: Any] ?? [:] }
@@ -47,6 +50,15 @@ struct FieldGuideSheet: View {
                     .italic()
                     .foregroundStyle(Theme.ink.opacity(0.6))
                     .padding(.top, 6)
+                if let awayLine {
+                    Text(awayLine)
+                        .font(theme.bodyFont(size: 12, weight: .bold))
+                        .foregroundStyle(Theme.ink)
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 4)
+                        .background(Capsule().fill(Theme.seafoam))
+                        .padding(.top, 8)
+                }
 
                 Button {
                     SoundPlayer.shared.playBirdCall()
@@ -120,6 +132,8 @@ struct GiveAHomeSheet: View {
     @Environment(\.theme) private var theme
     @Environment(\.dismiss) private var dismiss
     let flock: FlockService
+    /// §10 (ceremonies flag): legendaries become tappable — an egg arrives.
+    var eggsEnabled = false
     let onPurchase: () -> Void
 
     @State private var picked: FlockService.Species?
@@ -206,8 +220,10 @@ struct GiveAHomeSheet: View {
     private func birdRow(_ species: FlockService.Species, affordable: Bool) -> some View {
         let isEgg = species.egg
         let present = here(species)
+        let eggBuyable = isEgg && eggsEnabled && flock.egg() == nil
+            && ((species.raw["eggPrice"] as? NSNumber)?.intValue ?? .max) <= balance && present
         return Button {
-            if affordable { picked = species }
+            if affordable || eggBuyable { picked = species }
         } label: {
             HStack(spacing: 14) {
                 BirdSpriteView().frame(width: 46, height: 40)
@@ -232,7 +248,9 @@ struct GiveAHomeSheet: View {
                 }
                 Spacer()
                 if isEgg {
-                    Text("Comes as an egg")
+                    Text(flock.egg()?["speciesId"] as? String == species.id
+                         ? "Already warming · \(flock.eggWarmthPercent())%"
+                         : "Comes as an egg")
                         .font(theme.bodyFont(size: 13, weight: .bold))
                         .foregroundStyle(Theme.ink.opacity(0.7))
                 } else if let price = species.price {
@@ -254,7 +272,7 @@ struct GiveAHomeSheet: View {
             )
         }
         .buttonStyle(.plain)
-        .disabled(!affordable)
+        .disabled(!(affordable || eggBuyable))
     }
 
     private func tierLine(_ species: FlockService.Species) -> String {
@@ -284,7 +302,8 @@ struct GiveAHomeSheet: View {
     /// The ONE purchase screen (§08): balance-after before the tap, no
     /// confirm-again, no undo — the arrival is the receipt.
     private func purchaseScreen(_ species: FlockService.Species) -> some View {
-        let price = species.price ?? 0
+        let isEgg = species.egg
+        let price = isEgg ? ((species.raw["eggPrice"] as? NSNumber)?.intValue ?? 0) : (species.price ?? 0)
         let pronounHim = (species.raw["pronoun"] as? String ?? "she") == "he" ? "him" : "her"
         return ScrollView {
             VStack(spacing: 12) {
@@ -309,12 +328,13 @@ struct GiveAHomeSheet: View {
                     .padding(.top, 4)
 
                 Button {
-                    if flock.giveHome(species.id) != nil {
+                    let succeeded = isEgg ? flock.buyEgg(species.id) : (flock.giveHome(species.id) != nil)
+                    if succeeded {
                         onPurchase()
                         dismiss()
                     }
                 } label: {
-                    Text("Give \(pronounHim) a home")
+                    Text(isEgg ? "Bring the egg home" : "Give \(pronounHim) a home")
                         .font(theme.displayFont(size: 19))
                         .frame(maxWidth: .infinity, minHeight: 54)
                         .background(RoundedRectangle(cornerRadius: 18).fill(Theme.deepTeal).offset(y: 4))
@@ -329,7 +349,9 @@ struct GiveAHomeSheet: View {
                     .foregroundStyle(Theme.ink.opacity(0.7))
                     .frame(minHeight: 44)
 
-                Text("\(pronounHim == "him" ? "His" : "Her") call and the rest of \(pronounHim == "him" ? "his" : "her") entry unlock when \(pronounHim == "him" ? "he" : "she") moves in.")
+                Text(isEgg
+                     ? "The egg sits in the Meadow and warms as you fly. At full warmth, it is yours to hatch — whenever you like."
+                     : "\(pronounHim == "him" ? "His" : "Her") call and the rest of \(pronounHim == "him" ? "his" : "her") entry unlock when \(pronounHim == "him" ? "he" : "she") moves in.")
                     .font(theme.bodyFont(size: 12, weight: .semibold))
                     .foregroundStyle(Theme.ink.opacity(0.5))
                     .multilineTextAlignment(.center)

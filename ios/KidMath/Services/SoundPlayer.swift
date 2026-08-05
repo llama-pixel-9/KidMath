@@ -58,6 +58,10 @@ final class SoundPlayer {
         )
         // Placeholder bird chirp for the Meadow (mirror of sounds.js
         // playBirdCall) until real per-species recordings land.
+        // §10 beat 2: a soft tap per crack — the app's only percussive audio.
+        buffers["softTap"] = render([
+            Note(frequency: 220, start: 0, duration: 0.06, waveform: .triangle, volume: 0.12),
+        ])
         buffers["birdCall"] = render([
             Note(frequency: 1244.5, start: 0, duration: 0.09, volume: 0.1),
             Note(frequency: 1567.98, start: 0.11, duration: 0.12, volume: 0.1),
@@ -71,6 +75,7 @@ final class SoundPlayer {
     func playWrong() { play("wrong") }
     func playComplete() { play("complete") }
     func playBirdCall() { play("birdCall") }
+    func playSoftTap() { play("softTap") }
 
     private func play(_ name: String) {
         guard !isMuted, let buffer = buffers[name] else { return }

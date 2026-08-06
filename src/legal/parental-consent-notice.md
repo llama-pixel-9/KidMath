@@ -1,6 +1,6 @@
 # Parental Consent Notice
 
-**Effective date:** August 5, 2026 · **Last updated:** August 5, 2026 · **Version:** 2026-08-05
+**Effective date:** August 6, 2026 · **Last updated:** August 6, 2026 · **Version:** 2026-08-06
 
 > **Drafting note — remove before publication.** This is the **direct notice to parents** required by 16 C.F.R. § 312.4(c)(1). It is not a substitute for the Privacy Policy; it is the separate notice that must be **delivered to the parent** at the moment we seek consent.
 >
@@ -58,8 +58,8 @@ We disclose your child's information only to the service providers we need in or
 
 | Recipient | Category | Purpose |
 |---|---|---|
-| **Supabase Inc.** | Database and authentication hosting | Store and serve profile and progress data |
-| **Vercel Inc.** | Application hosting and content delivery | Deliver the website |
+| **Supabase Inc.** | Cloud infrastructure and hosting | Store and serve profile and progress data |
+| **Vercel Inc.** | Cloud infrastructure and hosting | Deliver the website |
 
 **These two providers are the only recipients of your child's information.** Our payment providers (Stripe and Apple) receive information about **you** in connection with billing; they do not receive your child's information. We do not disclose your child's information to advertising networks, analytics companies, or data brokers.
 

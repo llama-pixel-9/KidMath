@@ -24,7 +24,7 @@ export const LEGAL_DOCS = {
   privacy: {
     slug: "privacy",
     title: "Privacy Policy",
-    version: "2026-08-05",
+    version: "2026-08-06",
     markdown: privacyMd,
     // Doubles as the COPPA online notice under 16 CFR §312.4(d). A link to it
     // must appear on the home screen AND at every point where personal
@@ -46,7 +46,7 @@ export const LEGAL_DOCS = {
   "parental-consent": {
     slug: "parental-consent",
     title: "Parental Consent Notice",
-    version: "2026-08-05",
+    version: "2026-08-06",
     markdown: consentMd,
     /**
      * The DIRECT notice under 16 CFR §312.4(c)(1) — a distinct legal

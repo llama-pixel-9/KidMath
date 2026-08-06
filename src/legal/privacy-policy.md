@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective date:** August 5, 2026 · **Last updated:** August 5, 2026 · **Version:** 2026-08-05
+**Effective date:** August 6, 2026 · **Last updated:** August 6, 2026 · **Version:** 2026-08-06
 
 This Privacy Policy describes how **{{ENTITY_NAME}}**, a {{ENTITY_STATE}} limited liability company (**"{{PRODUCT_NAME}}," "we," "us,"** or **"our"**), collects, uses, discloses, and retains personal information through the {{PRODUCT_NAME}} website at {{SITE_URL}} and the {{PRODUCT_NAME}} applications for iPhone and iPad (together, the **"Service"**).
 
@@ -115,13 +115,13 @@ We use personal information only for the following purposes:
 
 We disclose personal information to the following named providers, each acting on our behalf under a written agreement that restricts its use of that information to providing services to us. As required by 16 C.F.R. § 312.4(d)(2), each is identified below by **identity and specific category**, together with the purpose of the disclosure.
 
-| Recipient | Category | Information received | Purpose | Role |
-|---|---|---|---|---|
-| **Supabase Inc.** | Database and authentication hosting | Account identifiers, email address, child profile information, progress data | Store and serve account, profile, and progress data; authenticate users | Service provider |
-| **Vercel Inc.** | Application hosting, content delivery, and aggregate site measurement | IP address (transiently, in server logs); page and performance measurements | Host and deliver the website; measure aggregate traffic and page performance | Service provider |
-| **Stripe, Inc.** | Payment processing | Adult account holder's email address and payment details (collected by Stripe directly); subscription status | Process web subscription payments and refunds | Service provider |
-| **Apple Inc.** | Identity provider; app distribution; payment processing | Adult account holder's email address or private relay address; subscription status | Sign in with Apple; App Store distribution; App Store billing | Service provider (identity); independent controller (App Store billing) |
-| **Google LLC** | Identity provider | Adult account holder's email address and Google account identifier | Sign in with Google | Service provider |
+| Recipient | Category | What they receive | Why |
+|---|---|---|---|
+| **Supabase Inc.** | Cloud infrastructure and hosting | Account details, child profile information, progress data | Store and serve your account and your child's progress; sign you in |
+| **Vercel Inc.** | Cloud infrastructure and hosting | Technical request data — **no profile or progress data** | Deliver the website; measure aggregate traffic and performance |
+| **Stripe, Inc.** | Payment processing | Your email address and payment details, collected by Stripe directly; subscription status — **no information about your child** | Process web subscription payments and refunds |
+| **Apple Inc.** | Sign-in, app distribution, and App Store billing | Your email address or private relay address; subscription status — **no information about your child** | Sign in with Apple; App Store distribution and purchases |
+| **Google LLC** | Sign-in | Your email address and Google account identifier — **no information about your child** | Sign in with Google |
 
 **None of these providers receives a child's information for its own purposes.** Vercel's site measurement is cookieless and aggregate: it does not set cookies, does not assign a persistent visitor identifier, and cannot re-identify an individual across sites or over time. Stripe and Apple receive information about the **adult account holder only**, in connection with payment; neither receives child profile or progress data.
 

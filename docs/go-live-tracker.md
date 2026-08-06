@@ -9,7 +9,28 @@ Companion docs: [launch-compliance-checklist.md](./launch-compliance-checklist.m
 (the full legal analysis) · [compliance-claude-code-workorders.md](./compliance-claude-code-workorders.md)
 (what was built). This file is the short list — check items off here.
 
-**Rule:** nothing ships to prod (`main`) until every item in §1 is checked.
+**Rule:** nothing ships to prod (`main`) until every item in §1 is checked —
+**except under private-test mode (§0), which §1 items may follow.**
+
+---
+
+## 0 · Private-test mode (current posture)
+
+Prod can carry all the code while staying closed to new users:
+
+- `VITE_PAYWALL_ENABLED` **unset** → no Stripe calls, all modes free, no plan
+  step. (Already the default.)
+- `VITE_SIGNUPS_DISABLED=true` in the Vercel **Production** env → /signup
+  shows a friendly "accounts are almost ready" page; the account-free free
+  tier keeps working for everyone. Testers open `https://larkit.io/?invite=1`
+  once, which marks their browser and lets them through the gate.
+- With signups closed, nobody can reach the add-a-kid consent flow, so the
+  stub email sender (§3) and the placeholder entity address (§1) are not
+  exposed to real parents. That is what makes deploying ahead of §1/§3
+  acceptable — **flip `VITE_SIGNUPS_DISABLED` off only after §1 and §3 are
+  done.**
+- Going live for real = finish §1 + §3, remove `VITE_SIGNUPS_DISABLED`,
+  redeploy. Billing additionally needs §2 + `VITE_PAYWALL_ENABLED=true`.
 
 ---
 

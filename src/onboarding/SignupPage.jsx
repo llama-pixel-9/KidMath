@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../useAuth";
+import { signupsOpen } from "../launchFlags";
 
 /**
  * §20 screen 02 — parent account. Apple + Google only, centred on cream,
@@ -36,6 +37,36 @@ export default function SignupPage() {
   useEffect(() => {
     if (!loading && user) navigate("/onboarding", { replace: true });
   }, [user, loading, navigate]);
+
+  // Private-test mode (VITE_SIGNUPS_DISABLED): the free tier stays open to
+  // everyone, but account creation is paused. Testers arrive via the
+  // ?invite=1 link (see src/launchFlags.js).
+  if (!signupsOpen()) {
+    return (
+      <main className="flex-1 flex items-center justify-center px-4 py-12">
+        <div className="w-full max-w-md text-center">
+          <h1 className="font-display font-semibold text-3xl sm:text-4xl text-ink m-0">
+            Accounts are almost ready
+          </h1>
+          <p className="mt-3 text-base font-semibold text-ink/60">
+            We're putting the finishing touches on family accounts. Meanwhile, every free game
+            works right now — no account needed.
+          </p>
+          <button
+            type="button"
+            className="mt-8 px-8 h-14 bg-teal text-cream font-display font-semibold text-xl rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer"
+            onClick={() => navigate("/play")}
+          >
+            Play free games
+          </button>
+          <p className="mt-6 text-sm text-ink/60 leading-relaxed">
+            Testing with us? Open your invite link first, then come back here.{" "}
+            <Link to="/privacy" className="underline text-ink/60">Privacy Policy</Link>
+          </p>
+        </div>
+      </main>
+    );
+  }
 
   return (
     <main className="flex-1 flex items-center justify-center px-4 py-12">

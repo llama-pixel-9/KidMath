@@ -7,10 +7,14 @@ import { bootstrapTelemetry } from './telemetry/telemetryClient.js'
 import { setProgressLoader } from './mathEngine.js'
 import { loadProgressSync } from './progressStore.js'
 import { supabase } from './supabaseClient.js'
+import { captureInvite } from './launchFlags.js'
 
 // The engine no longer imports progressStore (so it can bundle for
 // JavaScriptCore). Wire the real saved-progress source here for the web app.
 setProgressLoader(loadProgressSync);
+
+// Private-test mode: ?invite=1 marks this browser as a tester (launchFlags).
+captureInvite();
 
 refreshBankFromCloud({ force: true });
 

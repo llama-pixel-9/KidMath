@@ -1,8 +1,9 @@
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Feather from "../components/feather.jsx";
 import { useTheme } from "../useTheme.js";
 import { MODE_IDS, getModeConfig } from "../modes";
-import { loadProgressSync } from "../progressStore";
+import { loadProgressSync, loadProgressSummary } from "../progressStore";
 import { loadEngagement, starBalance, currentStreak } from "./engagementStore.js";
 import { gradeSpanFor } from "./gradeSpans.js";
 import { SPECIES_BY_ID } from "./roster.js";
@@ -10,11 +11,35 @@ import { meadowEnabled } from "../gamificationFlags.js";
 
 /**
  * The parent snapshot: one screen answering "is my kid practicing, and where
- * do they stand?" in grade language. Reads the same local stores the game
- * writes — v1 shows this device's play.
+ * do they stand?" in grade language. Engagement tiles read this device's
+ * stores; the skill table hydrates from wherever progress actually lives —
+ * the cloud for signed-in families (whose local blob was emptied by the
+ * sign-in merge), this device otherwise.
  */
+function localSummary() {
+  return {
+    source: "local",
+    byMode: Object.fromEntries(MODE_IDS.map((id) => [id, loadProgressSync(id)])),
+  };
+}
+
 export default function GrownUpsPanel({ open, onClose }) {
   const { theme } = useTheme();
+  const [summary, setSummary] = useState(localSummary);
+  useEffect(() => {
+    if (!open) return undefined;
+    let cancelled = false;
+    // The async read re-reads localStorage for anonymous play too, so it
+    // refreshes the initial snapshot on every open.
+    loadProgressSummary()
+      .then((next) => {
+        if (!cancelled) setSummary(next);
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [open]);
   if (!open) return null;
 
   const eng = loadEngagement();
@@ -27,7 +52,7 @@ export default function GrownUpsPanel({ open, onClose }) {
     const tier = SPECIES_BY_ID[b.speciesId]?.tier;
     return tier === "rare" || tier === "legendary";
   }).length;
-  const rows = MODE_IDS.map((id) => ({ id, progress: loadProgressSync(id) || {} }))
+  const rows = MODE_IDS.map((id) => ({ id, progress: summary.byMode[id] || {} }))
     .filter(({ progress }) => (progress.totalSessions ?? 0) > 0 || (progress.level ?? 1) > 1)
     .sort((a, b) => (b.progress.lifetimeStars ?? 0) - (a.progress.lifetimeStars ?? 0));
 
@@ -56,8 +81,10 @@ export default function GrownUpsPanel({ open, onClose }) {
             </button>
           </div>
           <p className="text-sm text-slate-500 mb-4">
-            Practice on this device. Levels climb by skill, not time — the grade range says
-            what each activity covers.
+            {summary.source === "cloud"
+              ? "Practice across your family account."
+              : "Practice on this device."}{" "}
+            Levels climb by skill, not time — the grade range says what each activity covers.
           </p>
 
           <div className={`grid ${birdWorld ? "grid-cols-2 sm:grid-cols-4" : "grid-cols-3"} gap-2 mb-5`}>

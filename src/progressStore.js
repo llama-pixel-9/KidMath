@@ -245,3 +245,41 @@ export async function saveProgress(mode, data) {
 export function loadProgressSync(mode) {
   return loadLocal(mode);
 }
+
+/**
+ * Every mode's progress in one read — the Grown-Ups panel's shape. Signed-in
+ * families must get the cloud rows (the sign-in merge deletes the local blob,
+ * so localStorage is empty for them); everyone else gets the local store.
+ * `source` tells the UI which copy it is looking at.
+ */
+export async function loadProgressSummary() {
+  const user = await getUser();
+  if (user) {
+    const { data, error } = await supabase
+      .from("progress")
+      .select("mode, level, mistake_bank, total_sessions, lifetime_stars")
+      .eq("user_id", user.id);
+    if (!error && Array.isArray(data)) {
+      return {
+        source: "cloud",
+        byMode: Object.fromEntries(
+          data.map((row) => [
+            row.mode,
+            {
+              level: clampLevel(row.level ?? STARTING_LEVEL),
+              mistakeBank: Array.isArray(row.mistake_bank) ? row.mistake_bank : [],
+              totalSessions: row.total_sessions ?? 0,
+              lifetimeStars: row.lifetime_stars ?? 0,
+            },
+          ])
+        ),
+      };
+    }
+  }
+  return {
+    source: "local",
+    byMode: Object.fromEntries(
+      Object.keys(readLocalStore()).map((mode) => [mode, loadLocal(mode)])
+    ),
+  };
+}

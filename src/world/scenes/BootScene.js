@@ -1,17 +1,19 @@
 import Phaser from "phaser";
+import { atlasScaleForDPR } from "../atlasScale";
+import { ZONE_BACKDROPS, GUIDE_BIRD, BLOOM_PROPS } from "../worldArt";
 
 /**
- * Loads the archipelago texture atlas at the density that matches the
- * screen, then hands off to the map. Atlases are built by
- * `npm run world:atlases` from the SVG masters in assets/world/svg/ and
- * committed under public/world/atlases/ (see scripts/world/buildAtlases.mjs).
+ * Loads everything the living map needs:
+ *  - the vector-derived atlas (clouds, boat) at the density matching the
+ *    screen — built by `npm run world:atlases`, committed under
+ *    public/world/atlases/
+ *  - the existing painted meadow art (zone backdrops, the skylark guide,
+ *    bloom props) straight from public/meadow/ — Phaser reads webp natively,
+ *    so raster art skips the atlas pipeline entirely.
  *
- * If the atlas is missing (fresh checkout before the pipeline has run) the
- * map falls back to flat-color placeholder textures rather than a black
- * screen — the world should never hard-fail on art.
+ * Missing files degrade to placeholders in the map scene rather than a black
+ * screen — the world never hard-fails on art.
  */
-import { atlasScaleForDPR } from "../atlasScale";
-
 export const ATLAS_KEY = "archipelago";
 
 export default class BootScene extends Phaser.Scene {
@@ -21,21 +23,29 @@ export default class BootScene extends Phaser.Scene {
 
   preload() {
     const scale = atlasScaleForDPR(window.devicePixelRatio);
-    this.atlasScale = scale;
-    // multiatlas: the free-tex-packer "Phaser3" exporter writes the
-    // multi-texture JSON format ({textures: [...]}), which plain load.atlas
-    // does not parse. The third argument is the directory the JSON's image
-    // filenames resolve against.
-    this.load.multiatlas(ATLAS_KEY, `/world/atlases/${ATLAS_KEY}@${scale}x.json`, "/world/atlases");
-    this.load.on("loaderror", () => {
-      this.atlasMissing = true;
+    // Plain single-texture atlas (JsonHash) with explicit URLs — the
+    // multiatlas loader can stall boot when its JSON finishes last (child
+    // PNG never flushed), so the pipeline exports JsonHash instead.
+    this.load.atlas(
+      ATLAS_KEY,
+      `/world/atlases/${ATLAS_KEY}@${scale}x.png`,
+      `/world/atlases/${ATLAS_KEY}@${scale}x.json`,
+    );
+
+    for (const [name, art] of Object.entries(ZONE_BACKDROPS)) {
+      this.load.image(`zone-${name}`, art.url);
+    }
+    this.load.image(GUIDE_BIRD.key, GUIDE_BIRD.url);
+    for (const [name, art] of Object.entries(BLOOM_PROPS)) {
+      this.load.image(`prop-${name}`, art.url);
+    }
+
+    this.load.on("loaderror", (file) => {
+      console.warn(`world: failed to load ${file?.key}`);
     });
   }
 
   create() {
-    this.scene.start("worldMap", {
-      atlasScale: this.atlasScale,
-      atlasMissing: Boolean(this.atlasMissing),
-    });
+    this.scene.start("worldMap", this.game.registry.get("worldData") ?? {});
   }
 }

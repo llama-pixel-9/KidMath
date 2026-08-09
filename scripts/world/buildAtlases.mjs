@@ -68,7 +68,12 @@ async function buildZone(zone) {
       allowRotation: false,
       allowTrim: true,
       detectIdentical: true,
-      exporter: "Phaser3",
+      // JsonHash (single texture, {frames: {...}}) rather than the Phaser3
+      // multiatlas format: Phaser 3.90's multiatlas loader has a race where
+      // the child PNG is never flushed if the JSON finishes last, stalling
+      // the whole boot. load.atlas + JsonHash takes explicit URLs and has no
+      // child-file step at all.
+      exporter: "JsonHash",
       removeFileExtension: true,
       prependFolderName: false,
     });

@@ -26,13 +26,25 @@ one line of it: the `/world` route in `App.jsx`.
 ```
 worldFlags.js         VITE_WORLD_ENABLED gate
 WorldRoute.jsx        the shell-facing mount: flag check + lazy chunk split
-WorldPage.jsx         React host for the Phaser canvas
+WorldPage.jsx         React host: loads progress → snapshot → game + panel
+IslandPanel.jsx       DOM overlay: a zoomed island's practice spots
 createWorldGame.js    Phaser.Game config (AUTO renderer, RESIZE scale)
 atlasScale.js         DPR → 1x/2x/3x atlas pick (pure, unit-tested)
-scenes/BootScene.js   loads the zone atlas for the screen density
-scenes/WorldMapScene.js  the pannable archipelago (Phase-0 exit test)
-zones/archipelagoLayout.js  plain-data layout — becomes world_defs JSON in Phase 1
+worldArt.js           manifest of the existing meadow art the world uses
+islands.js            one island per MODE_GROUPS entry: layout + art choices
+mastery/masteryModel.js  mastery/bloom/discovery from existing progress (pure)
+scenes/BootScene.js   loads atlas + meadow webps
+scenes/WorldMapScene.js  the Living Map: fog, bloom, tap-to-enter, first sail
 ```
+
+## Engine
+
+Phaser is pinned to the **3.x** line (`phaser@^3.90`). Phaser 4 removed
+WebGL GeometryMask (`setMask` no-ops with a warning — the island vignettes
+render as squares) and is not a drop-in upgrade. The atlas JSON is the
+single-texture JsonHash format loaded with explicit URLs; do not switch back
+to `load.multiatlas` — 3.90's multiatlas stalls the whole boot when its JSON
+finishes loading last (child PNG never flushed).
 
 ## Art pipeline
 

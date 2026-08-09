@@ -161,6 +161,9 @@ const VARIETIES = [
         answerType: "numberPad",
         display: {
           promptText: `Start at ${start} and count on ${jump} more. What number do you land on?`,
+          // The classic count-on scaffold (#32): the renderer draws a number
+          // line with `start` plotted and the landing spot ringed.
+          numberLine: { marks: [start] },
         },
         representation: "verbalContext",
         cognitiveDemand: "DOK1",

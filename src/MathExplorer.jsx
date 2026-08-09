@@ -936,6 +936,14 @@ function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
             </p>
           ))}
         </div>
+        {q.display?.numberLine && (
+          <SequenceNumberLine
+            sequence={q.display.numberLine.marks}
+            step={1}
+            answer={q.answer}
+            feedback={feedback}
+          />
+        )}
         {subPrompt && (
           <p className={`text-sm font-bold uppercase tracking-wide ${theme.textMuted}`}>
             {subPrompt}

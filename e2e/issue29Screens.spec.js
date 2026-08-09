@@ -17,6 +17,7 @@ const TARGETS = [
   { variety: "tenFrameCount", level: 1 },
   { variety: "tenFrameBuild", level: 1 },
   { variety: "countBackFrom", level: 1, expectSelector: 'svg[aria-label="Number line for the counting pattern"]' },
+  { variety: "countOnFromGiven", level: 1, expectSelector: 'svg[aria-label="Number line for the counting pattern"]' },
   { variety: "countScatteredSet", level: 8 },
   { variety: "subitizeSmallSet", level: 1 },
 ];
@@ -51,6 +52,8 @@ for (const { variety, level, expectSelector } of TARGETS) {
         ? isTenFrame
         : variety === "countBackFrom"
           ? Array.isArray(d.sequence)
+          : variety === "countOnFromGiven"
+            ? Boolean(d.numberLine)
           : variety === "countScatteredSet" || variety === "subitizeSmallSet"
             ? Boolean(d.emoji)
             : /\p{Extended_Pictographic}{2,}/u.test(d.promptText || "");

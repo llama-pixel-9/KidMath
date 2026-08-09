@@ -17,6 +17,15 @@ import {
   worldSnapshot,
 } from "../world/mastery/masteryModel";
 import { MODE_GROUPS } from "../modes/index.js";
+import { MEADOW_ZONE, STEP_TYPES } from "../world/zones/meadowZone";
+import { ZONES, zoneForIsland } from "../world/zones/index";
+import {
+  emptyWorldState,
+  applyQuestComplete,
+  questDone,
+  fixtureOn,
+  availableQuests,
+} from "../world/worldStore";
 
 const publicDir = path.resolve(__dirname, "../../public");
 
@@ -110,6 +119,79 @@ describe("island definitions", () => {
       expect(island.y).toBeLessThan(WORLD_BOUNDS.height - island.r);
       expect(ZONE_BACKDROPS[island.backdrop], `${island.id} backdrop`).toBeDefined();
       expect(BLOOM_PROPS[island.prop], `${island.id} prop`).toBeDefined();
+    }
+  });
+});
+
+describe("world store", () => {
+  it("awards stars and flips fixtures exactly once per quest", () => {
+    let s = emptyWorldState();
+    s = applyQuestComplete(s, "bridge", 3, "bridgeFixed");
+    expect(s.stars).toBe(3);
+    expect(questDone(s, "bridge")).toBe(true);
+    expect(fixtureOn(s, "bridgeFixed")).toBe(true);
+    // Replaying a done quest never double-pays.
+    const again = applyQuestComplete(s, "bridge", 3, "bridgeFixed");
+    expect(again.stars).toBe(3);
+  });
+
+  it("gates quests on their required fixture", () => {
+    const fresh = emptyWorldState();
+    const openNow = availableQuests(fresh, MEADOW_ZONE).map((q) => q.id);
+    expect(openNow).toContain("bridge");
+    expect(openNow).not.toContain("chicks"); // needs bridgeFixed
+    const after = applyQuestComplete(fresh, "bridge", 3, "bridgeFixed");
+    expect(availableQuests(after, MEADOW_ZONE).map((q) => q.id)).toContain("chicks");
+    // Done quests drop out of the available list.
+    expect(availableQuests(after, MEADOW_ZONE).map((q) => q.id)).not.toContain("bridge");
+  });
+});
+
+describe("meadow zone definition", () => {
+  it("is wired to a real island and registered", () => {
+    expect(ISLANDS.some((i) => i.id === MEADOW_ZONE.islandId)).toBe(true);
+    expect(zoneForIsland(MEADOW_ZONE.islandId)).toBe(MEADOW_ZONE);
+    expect(ZONES[MEADOW_ZONE.id]).toBe(MEADOW_ZONE);
+  });
+
+  it("has five well-formed quests using only known step types", () => {
+    expect(MEADOW_ZONE.quests).toHaveLength(5);
+    for (const quest of MEADOW_ZONE.quests) {
+      expect(quest.steps.length).toBeGreaterThanOrEqual(3);
+      for (const step of quest.steps) {
+        expect(STEP_TYPES, `${quest.id}: unknown step ${step.type}`).toContain(step.type);
+        expect(typeof step.line).toBe("string");
+      }
+      // Every quest ends in a celebration that pays stars and changes the world.
+      const last = quest.steps.at(-1);
+      expect(last.type).toBe("celebrate");
+      expect(last.stars).toBeGreaterThan(0);
+      expect(typeof last.fixture).toBe("string");
+      // pickNumber answers must be among their options (the un-failable rule
+      // is meaningless if the right answer isn't offered).
+      for (const step of quest.steps.filter((s) => s.type === "pickNumber")) {
+        expect(step.options).toContain(step.answer);
+      }
+      // NPC quests must point at a real NPC.
+      if (quest.npcId) {
+        expect(MEADOW_ZONE.npcs.some((n) => n.id === quest.npcId)).toBe(true);
+      }
+    }
+  });
+
+  it("references only art that exists, with everything inside the zone bounds", () => {
+    const { width, height } = MEADOW_ZONE.bounds;
+    const inBounds = (p) => p.x > 0 && p.x < width && p.y > 0 && p.y < height;
+    for (const npc of MEADOW_ZONE.npcs) {
+      expect(existsSync(path.join(publicDir, npc.art)), npc.art).toBe(true);
+      expect(inBounds(npc), `${npc.id} out of bounds`).toBe(true);
+    }
+    const o = MEADOW_ZONE.objects;
+    for (const art of [o.feeder.art, o.nests.art, o.nests.eggArt, o.gate.art, o.chicks.art]) {
+      expect(existsSync(path.join(publicDir, art)), art).toBe(true);
+    }
+    for (const p of [o.bridge, o.feeder, o.gate, ...o.nests.spots, ...o.chicks.spots, MEADOW_ZONE.spawn]) {
+      expect(inBounds(p)).toBe(true);
     }
   });
 });

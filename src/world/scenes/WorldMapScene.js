@@ -49,8 +49,19 @@ export default class WorldMapScene extends Phaser.Scene {
     this.enableDragPan();
 
     const onClose = () => this.deselectIsland();
+    const onEnterZone = (zoneId) => {
+      this.game.events.emit("island-selected-clear");
+      this.scene.start("island", {
+        zoneId,
+        mapData: { snapshot: this.snapshot, firstSail: false },
+      });
+    };
     this.game.events.on("world-close-panel", onClose);
-    this.events.once("shutdown", () => this.game.events.off("world-close-panel", onClose));
+    this.game.events.on("world-enter-zone", onEnterZone);
+    this.events.once("shutdown", () => {
+      this.game.events.off("world-close-panel", onClose);
+      this.game.events.off("world-enter-zone", onEnterZone);
+    });
 
     const home = ISLANDS.find((i) => i.id === HOME_ISLAND_ID);
     if (this.firstSail) {

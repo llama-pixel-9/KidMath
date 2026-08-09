@@ -1,6 +1,7 @@
 import Phaser from "phaser";
 import BootScene from "./scenes/BootScene";
 import WorldMapScene from "./scenes/WorldMapScene";
+import IslandScene from "./scenes/IslandScene";
 
 /**
  * One Phaser.Game per mount, sized to its host element and resizing with it.
@@ -26,7 +27,7 @@ export function createWorldGame(parent, worldData = {}) {
     callbacks: {
       preBoot: (game) => game.registry.set("worldData", worldData),
     },
-    scene: [BootScene, WorldMapScene],
+    scene: [BootScene, WorldMapScene, IslandScene],
   });
   // Debug/e2e handle (the robot-kid suite reads pixels, but a state handle
   // makes world assertions cheap). Harmless in production.

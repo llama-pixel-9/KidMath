@@ -1,12 +1,15 @@
 import { getModeConfig } from "../modes/index.js";
+import { zoneForIsland } from "./zones/index";
 
 /**
- * The DOM layer over a zoomed-in island: pick one of the strand's practice
+ * The DOM layer over a zoomed-in island: explore the island (when it has a
+ * walkable zone — the quest layer) or pick one of the strand's practice
  * spots (the existing minigames — plan Part 2: nothing already built is
  * thrown away). Premium gating stays out of this child-facing surface
  * (principle 5); the /play route's parent-facing gate handles it.
  */
-export default function IslandPanel({ island, onClose, onPickMode }) {
+export default function IslandPanel({ island, onClose, onPickMode, onExplore }) {
+  const zone = zoneForIsland(island.id);
   return (
     <div className="absolute inset-x-0 bottom-0 flex justify-center p-4 pointer-events-none">
       <div
@@ -25,6 +28,15 @@ export default function IslandPanel({ island, onClose, onPickMode }) {
             ×
           </button>
         </div>
+        {zone && (
+          <button
+            type="button"
+            onClick={() => onExplore(zone.id)}
+            className="w-full mb-3 rounded-2xl bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-4 text-base shadow-md border-b-4 border-amber-700"
+          >
+            🗺️ Explore the island
+          </button>
+        )}
         <div className="grid grid-cols-2 gap-2">
           {island.modeIds.map((modeId) => (
             <button

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 170" width="250" height="170">
+  <!-- Lagoon island: a ring of sand around still water. Placeholder master. -->
+  <ellipse cx="125" cy="142" rx="110" ry="20" fill="#5fb8d8" opacity="0.55"/>
+  <path d="M23 128 Q36 92 86 88 Q126 70 170 86 Q218 92 227 126 Q231 142 209 144 L41 144 Q19 142 23 128 Z" fill="#f0dfae"/>
+  <ellipse cx="125" cy="116" rx="58" ry="20" fill="#7fd4e8"/>
+  <ellipse cx="125" cy="114" rx="46" ry="14" fill="#a5e4f1"/>
+  <circle cx="70" cy="98" r="10" fill="#5da865"/>
+  <circle cx="184" cy="100" r="11" fill="#6db470"/>
+  <ellipse cx="112" cy="112" rx="5" ry="2.5" fill="#f5f8fa" opacity="0.8"/>
+  <ellipse cx="142" cy="118" rx="6" ry="2.5" fill="#f5f8fa" opacity="0.8"/>
+</svg>

@@ -1,0 +1,187 @@
+{
+	"textures": [
+		{
+			"image": "archipelago@3x.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 3492,
+				"h": 608
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "island-meadow",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 780,
+						"h": 540
+					},
+					"spriteSourceSize": {
+						"x": 36,
+						"y": 171,
+						"w": 708,
+						"h": 345
+					},
+					"frame": {
+						"x": 3,
+						"y": 3,
+						"w": 708,
+						"h": 345
+					}
+				},
+				{
+					"filename": "island-peak",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 750,
+						"h": 600
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 102,
+						"w": 660,
+						"h": 477
+					},
+					"frame": {
+						"x": 717,
+						"y": 3,
+						"w": 660,
+						"h": 477
+					}
+				},
+				{
+					"filename": "island-lagoon",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 750,
+						"h": 510
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 235,
+						"w": 660,
+						"h": 251
+					},
+					"frame": {
+						"x": 3,
+						"y": 354,
+						"w": 660,
+						"h": 251
+					}
+				},
+				{
+					"filename": "island-cove",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 720,
+						"h": 510
+					},
+					"spriteSourceSize": {
+						"x": 42,
+						"y": 113,
+						"w": 636,
+						"h": 373
+					},
+					"frame": {
+						"x": 1383,
+						"y": 3,
+						"w": 636,
+						"h": 373
+					}
+				},
+				{
+					"filename": "island-grove",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 720,
+						"h": 510
+					},
+					"spriteSourceSize": {
+						"x": 48,
+						"y": 168,
+						"w": 624,
+						"h": 318
+					},
+					"frame": {
+						"x": 2025,
+						"y": 3,
+						"w": 624,
+						"h": 318
+					}
+				},
+				{
+					"filename": "cloud-long",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 600,
+						"h": 180
+					},
+					"spriteSourceSize": {
+						"x": 42,
+						"y": 12,
+						"w": 516,
+						"h": 153
+					},
+					"frame": {
+						"x": 2655,
+						"y": 3,
+						"w": 516,
+						"h": 153
+					}
+				},
+				{
+					"filename": "cloud-puff",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 420,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 54,
+						"y": 12,
+						"w": 312,
+						"h": 180
+					},
+					"frame": {
+						"x": 3177,
+						"y": 3,
+						"w": 312,
+						"h": 180
+					}
+				},
+				{
+					"filename": "boat",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 330,
+						"h": 330
+					},
+					"spriteSourceSize": {
+						"x": 60,
+						"y": 33,
+						"w": 210,
+						"h": 267
+					},
+					"frame": {
+						"x": 2655,
+						"y": 162,
+						"w": 210,
+						"h": 267
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://github.com/odrick/free-tex-packer-core",
+		"version": "0.3.9"
+	}
+}

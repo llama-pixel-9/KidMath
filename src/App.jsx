@@ -23,6 +23,7 @@ import OnboardingFlow from "./onboarding/OnboardingFlow";
 import ProfilePicker from "./onboarding/ProfilePicker";
 import BillingPortalPage from "./BillingPortalPage";
 import AccountPage from "./account/AccountPage";
+import WorldRoute from "./world/WorldRoute";
 import "./index.css";
 
 function PlayRoute() {
@@ -64,6 +65,11 @@ function AppShell() {
         <Route path="/play/:mode" element={<PlayRoute />} />
         <Route path="/worksheets" element={<WorksheetsRoute />} />
         <Route path="/meadow" element={<MeadowPage />} />
+        {/* Open-world mode (feature/open-world): mounts only when
+            VITE_WORLD_ENABLED is on; otherwise redirects home like any
+            unknown path. This is the one line the world owns in the shell —
+            everything else lives under src/world/. */}
+        <Route path="/world" element={<WorldRoute />} />
         <Route path="/about" element={<AboutPage />} />
         {/* Legal documents — one renderer, four routes. /privacy doubles as
             the COPPA §312.4(d) online notice; a prominent link to it must

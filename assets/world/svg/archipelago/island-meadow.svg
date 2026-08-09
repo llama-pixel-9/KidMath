@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 180" width="260" height="180">
+  <!-- Meadow island: gentle green hills, two round trees. Placeholder master
+       for the atlas pipeline — art direction replaces these later. -->
+  <ellipse cx="130" cy="150" rx="118" ry="22" fill="#5fb8d8" opacity="0.55"/>
+  <path d="M22 138 Q30 96 74 88 Q92 60 130 62 Q170 58 190 86 Q234 94 240 136 Q244 150 226 152 L36 152 Q18 150 22 138 Z" fill="#f0dfae"/>
+  <path d="M40 126 Q52 92 92 84 Q112 66 140 68 Q172 66 188 90 Q218 98 224 126 Q200 140 130 140 Q62 140 40 126 Z" fill="#8fce7c"/>
+  <path d="M56 116 Q80 100 118 100 Q160 98 202 114 Q170 126 128 126 Q86 126 56 116 Z" fill="#a9dc92"/>
+  <circle cx="92" cy="82" r="18" fill="#5da865"/>
+  <rect x="89" y="94" width="6" height="12" rx="3" fill="#8a5a3b"/>
+  <circle cx="168" cy="78" r="21" fill="#6db470"/>
+  <rect x="165" y="92" width="6" height="14" rx="3" fill="#8a5a3b"/>
+  <circle cx="126" cy="112" r="4" fill="#f6b8cd"/>
+  <circle cx="146" cy="118" r="4" fill="#f9d977"/>
+  <circle cx="106" cy="118" r="4" fill="#f9d977"/>
+</svg>

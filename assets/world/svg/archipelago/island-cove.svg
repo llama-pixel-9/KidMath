@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170" width="240" height="170">
+  <!-- Cove island: sandy crescent with a palm. Placeholder master. -->
+  <ellipse cx="120" cy="142" rx="106" ry="20" fill="#5fb8d8" opacity="0.55"/>
+  <path d="M20 130 Q34 92 84 86 Q124 64 168 84 Q212 92 220 128 Q224 144 204 146 L38 146 Q16 144 20 130 Z" fill="#f2e2b4"/>
+  <path d="M60 122 Q84 104 120 106 Q166 104 196 120 Q160 134 118 134 Q84 134 60 122 Z" fill="#f9eecb"/>
+  <path d="M148 96 Q150 70 146 58" stroke="#8a5a3b" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M146 58 Q126 48 112 56 Q130 60 146 62 Q136 42 120 40 Q140 38 150 52 Q158 36 174 38 Q160 44 152 58 Q172 52 184 62 Q166 60 146 62 Z" fill="#5da865"/>
+  <circle cx="146" cy="64" r="4" fill="#c98a4b"/>
+  <circle cx="88" cy="124" r="4" fill="#e8a8bd"/>
+  <ellipse cx="120" cy="128" rx="6" ry="3" fill="#e6d3a0"/>
+</svg>

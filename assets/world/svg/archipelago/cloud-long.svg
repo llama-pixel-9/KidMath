@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <!-- Long drifting cloud. Placeholder master. -->
+  <ellipse cx="100" cy="42" rx="86" ry="13" fill="#ffffff"/>
+  <circle cx="58" cy="32" r="16" fill="#ffffff"/>
+  <circle cx="96" cy="24" r="20" fill="#ffffff"/>
+  <circle cx="140" cy="32" r="15" fill="#ffffff"/>
+</svg>

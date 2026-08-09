@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 200" width="250" height="200">
+  <!-- Peak island: a snow-capped mountain rising from rock. Placeholder master. -->
+  <ellipse cx="125" cy="172" rx="110" ry="21" fill="#5fb8d8" opacity="0.55"/>
+  <path d="M25 160 Q34 122 78 114 Q118 100 172 114 Q216 122 225 158 Q229 172 209 174 L41 174 Q21 172 25 160 Z" fill="#b7c4a8"/>
+  <path d="M70 132 L125 34 L180 132 Q152 146 125 146 Q98 146 70 132 Z" fill="#9aa8b6"/>
+  <path d="M104 72 L125 34 L146 72 Q136 82 125 80 Q114 82 104 72 Z" fill="#f5f8fa"/>
+  <path d="M112 78 Q118 88 116 96 M138 78 Q132 88 134 96" stroke="#f5f8fa" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <circle cx="86" cy="146" r="10" fill="#6b8f6e"/>
+  <circle cx="168" cy="148" r="12" fill="#5da865"/>
+</svg>

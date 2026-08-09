@@ -54,6 +54,7 @@ import { getModeConfig } from "./modes";
 import { ensureModeLoaded } from "./itemBank.js";
 import { isVerbalPrompt } from "./modes/helpers";
 import { emojiPromptLines } from "./promptLayout";
+import { FIGURE_COLORS } from "./components/kit";
 import { saveProgress, loadProgress, mergeLocalToCloud } from "./progressStore";
 import { recordSessionEnd, currentStreak, starsToday, starBalance, isFirstWeek } from "./engagement/engagementStore";
 import JourneyMap from "./engagement/JourneyMap.jsx";
@@ -733,20 +734,89 @@ function VerticalEquation({ a, op, b, result, theme }) {
   );
 }
 
+// A counting sequence ("12, 11, 10, __") shown ON a number line, so the
+// pattern is a walk along positions rather than a list to decode (#32). Only
+// unit steps get one — skip-counting jumps would need arc arrows to read
+// honestly, and patterns mode sequences aren't positional at all.
+function SequenceNumberLine({ sequence, step, answer, feedback }) {
+  if (
+    Math.abs(step ?? 0) !== 1 ||
+    !Array.isArray(sequence) ||
+    !sequence.every((n) => Number.isInteger(n)) ||
+    !Number.isInteger(answer)
+  ) {
+    return null;
+  }
+  const nums = [...sequence, answer];
+  const lo = Math.min(...nums) - 1;
+  const hi = Math.max(...nums) + 1;
+  if (hi - lo > 10) return null;
+  const W = 320;
+  const PAD = 22;
+  const y = 26;
+  const x = (n) => PAD + ((n - lo) * (W - 2 * PAD)) / (hi - lo);
+  const inSequence = new Set(sequence);
+  const revealed = feedback === "correct" || feedback === "wrong";
+  return (
+    <svg
+      viewBox={`0 0 ${W} 64`}
+      className="mx-auto mt-4 w-full max-w-[320px]"
+      role="img"
+      aria-label="Number line for the counting pattern"
+    >
+      <line x1={PAD - 8} y1={y} x2={W - PAD + 8} y2={y} stroke={FIGURE_COLORS.inkSoft} strokeWidth="2.5" />
+      {Array.from({ length: hi - lo + 1 }, (_, i) => lo + i).map((n) => (
+        <g key={n}>
+          <line x1={x(n)} y1={y - 6} x2={x(n)} y2={y + 6} stroke={FIGURE_COLORS.inkSoft} strokeWidth="2" />
+          {inSequence.has(n) && <circle cx={x(n)} cy={y} r="6" fill={FIGURE_COLORS.accent} />}
+          {n === answer && (
+            <circle cx={x(n)} cy={y} r="8" fill="none" stroke={FIGURE_COLORS.warm} strokeWidth="2.5" />
+          )}
+          <text
+            x={x(n)}
+            y={y + 26}
+            textAnchor="middle"
+            fontSize="13"
+            fontWeight="700"
+            fill={n === answer ? FIGURE_COLORS.warm : FIGURE_COLORS.ink}
+          >
+            {n === answer && !revealed ? "?" : n}
+          </text>
+        </g>
+      ))}
+    </svg>
+  );
+}
+
 function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
   const { theme } = useTheme();
   const q = question;
   const showAnswer = feedback && revealAnswer != null;
+  // Format transforms carry their instruction ("Is this right?") inside
+  // `display`; reading only the top-level field silently dropped it (#32).
+  const subPrompt = q.subPrompt ?? q.display?.subPrompt;
 
   if (q.display?.emoji) {
-    const items = Array.from({ length: q.display.count }, (_, i) => (
-      <span key={i} className="text-3xl sm:text-4xl">{q.display.emoji}</span>
-    ));
+    // Rows of ten, split five-and-five, so a bigger set reads as ten frames
+    // do — count the full rows, not every object (#32).
+    const count = q.display.count;
+    const rows = [];
+    for (let start = 0; start < count; start += 10) {
+      rows.push(Array.from({ length: Math.min(10, count - start) }, (_, i) => start + i));
+    }
     return (
       <div className="text-center">
         <p className={`text-sm font-bold ${theme.textMuted} mb-3 uppercase tracking-wide`}>How many?</p>
-        <div className="flex flex-wrap items-center justify-center gap-2 max-w-[280px] mx-auto">
-          {items}
+        <div className="flex flex-col items-center gap-1.5">
+          {rows.map((row, r) => (
+            <div key={r} className="flex items-center gap-1 whitespace-nowrap">
+              {row.map((i) => (
+                <span key={i} className={`text-2xl sm:text-3xl ${i % 10 === 5 ? "ml-3" : ""}`}>
+                  {q.display.emoji}
+                </span>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
     );
@@ -766,6 +836,7 @@ function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
           <span className={`${theme.textMuted} mx-1`}>,</span>
           <AnswerSlot feedback={feedback} revealAnswer={revealAnswer} />
         </div>
+        <SequenceNumberLine sequence={q.display.sequence} step={q.display.step} answer={q.answer} feedback={feedback} />
       </div>
     );
   }
@@ -803,23 +874,34 @@ function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
   if (hasVerbalPrompt) {
     const runLines = emojiPromptLines(promptText);
     if (runLines) {
+      // Question sentences render first, centered like every other prompt;
+      // the object-set lines sit below as the picture, labels aligned (#32).
+      const textLines = runLines.filter((line) => !line.isRun);
+      const objectLines = runLines.filter((line) => line.isRun);
       return (
         <div className="text-center space-y-2">
-          <div className="w-fit max-w-full mx-auto text-left space-y-1">
-            {runLines.map((line, index) => (
+          {textLines.map((line, index) => (
+            <p
+              key={`${line.text}-${index}`}
+              className={`text-xl sm:text-2xl font-extrabold ${theme.textPrimary} leading-snug`}
+            >
+              {line.text}
+            </p>
+          ))}
+          <div className="w-fit max-w-full mx-auto text-left space-y-1.5 pt-1">
+            {objectLines.map((line, index) => (
               <p
                 key={`${line.text}-${index}`}
-                className={`${
-                  line.isRun ? "whitespace-nowrap text-lg sm:text-xl" : "text-xl sm:text-2xl"
-                } font-extrabold ${theme.textPrimary} leading-snug`}
+                className={`whitespace-nowrap text-lg sm:text-xl font-extrabold ${theme.textPrimary} leading-snug`}
               >
-                {line.text}
+                {line.label && <span>{line.label} </span>}
+                <span style={{ letterSpacing: "0.18em" }}>{line.run ?? line.text}</span>
               </p>
             ))}
           </div>
-          {q.subPrompt && (
+          {subPrompt && (
             <p className={`text-sm font-bold uppercase tracking-wide ${theme.textMuted}`}>
-              {q.subPrompt}
+              {subPrompt}
             </p>
           )}
           {showAnswer && (
@@ -854,9 +936,9 @@ function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
             </p>
           ))}
         </div>
-        {q.subPrompt && (
+        {subPrompt && (
           <p className={`text-sm font-bold uppercase tracking-wide ${theme.textMuted}`}>
-            {q.subPrompt}
+            {subPrompt}
           </p>
         )}
         {showAnswer && (
@@ -882,12 +964,12 @@ function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
     );
   }
 
-  // Format-transformed judgment items ("2 + 19 = 21" + "True or false?")
+  // Format-transformed judgment items ("2 + 19 = 21" + "Is this right?")
   // carry a COMPLETE claim. The vertical compute layout below would replace
   // the claimed result with "?" and make the question unanswerable — so any
   // item with a subPrompt renders its full equation, vertically when the
   // claim fits that shape, and always shows the sub-prompt instruction.
-  if (promptText && q.subPrompt && !hasVerbalPrompt) {
+  if (promptText && subPrompt && !hasVerbalPrompt) {
     const claim = promptText.match(/^\s*(\d+)\s*([+−])\s*(\d+)\s*=\s*(\d+)\s*$/);
     const bigClaim = claim && (Number(claim[1]) >= 10 || Number(claim[3]) >= 10 || Number(claim[4]) >= 10);
     return (
@@ -903,7 +985,7 @@ function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
           </p>
         )}
         <p className={`text-sm sm:text-base font-bold uppercase tracking-wide ${theme.textMuted}`}>
-          {q.subPrompt}
+          {subPrompt}
         </p>
       </div>
     );

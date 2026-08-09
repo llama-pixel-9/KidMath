@@ -63,11 +63,13 @@ async function clickChoice(page, valueStr, { wasOverride = false } = {}) {
     await buttons.nth(idx).click();
     return { blind: false };
   }
-  // Target not on screen. For a kid-computed target that is itself a finding
-  // (the kid cannot answer what they worked out) — click something to keep
-  // the session moving and report it.
+  // Target not on screen. That is a finding either way: a kid-computed target
+  // missing means the kid cannot answer what they worked out, and the ENGINE's
+  // own answer missing means the rendered grid has no correct option at all
+  // (#32 — this class used to slip through as a silent blind click). Click
+  // something to keep the session moving and report it.
   await buttons.first().click();
-  return wasOverride ? { blind: true, missingFromChoices: true } : { blind: true };
+  return { blind: true, missingFromChoices: true, wasOverride };
 }
 
 /**

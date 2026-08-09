@@ -424,10 +424,10 @@ const VARIETIES = [
       const truthy = Math.random() < 0.5;
       const p2 = truthy ? whole - p1 : whole - p1 + randInt(1, 3);
       return {
-        answer: p1 + p2 === whole ? "True" : "False",
-        choices: ["True", "False"],
+        answer: p1 + p2 === whole ? "Yes" : "No",
+        choices: ["Yes", "No"],
         display: {
-          promptText: `True or false: a whole of ${whole} can split into parts ${p1} and ${p2}.`,
+          promptText: `Can a whole of ${whole} split into parts ${p1} and ${p2}?`,
         },
         representation: "symbolic",
         cognitiveDemand: "DOK2",

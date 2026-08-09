@@ -160,7 +160,7 @@ const SKIP = {
   },
   membershipTrueFalse: (q) => {
     const m = promptOf(q).match(/count by (\d+)s from 0, will you say (\d+)/);
-    return Number(m[2]) % Number(m[1]) === 0 ? "True" : "False";
+    return Number(m[2]) % Number(m[1]) === 0 ? "Yes" : "No";
   },
   groupsToTotal: (q) => {
     const [per, boxes] = numsIn(promptOf(q));
@@ -274,7 +274,7 @@ const PLACE_VALUE = {
   crossingBoundary: (q) => numsIn(promptOf(q))[1] + 10,
   trueFalseDecomposition: (q) => {
     const [tens, ones, claimed] = numsIn(promptOf(q));
-    return tens * 10 + ones === claimed ? "True" : "False";
+    return tens * 10 + ones === claimed ? "Yes" : "No";
   },
   oddOneOutSameValue: (q) => {
     const number = numsIn(promptOf(q))[0];
@@ -451,7 +451,7 @@ const BONDS = {
   },
   trueFalseBond: (q) => {
     const [whole, p1, p2] = numsIn(promptOf(q));
-    return p1 + p2 === whole ? "True" : "False";
+    return p1 + p2 === whole ? "Yes" : "No";
   },
   errorAnalysisPartWholeSwap: (q) => {
     const [whole, part] = numsIn(promptOf(q));
@@ -510,10 +510,10 @@ const COMPARING = {
     return Math.abs(n - lower) < Math.abs(n - upper) ? lower : upper;
   },
   trueFalseInequality: (q) => {
-    const text = promptOf(q).replace("True or false: ", "");
+    const text = promptOf(q);
     const symbol = text.match(/[<>=]/)[0];
     const [a, b] = numsIn(text);
-    return symbolFor(a, b) === symbol ? "True" : "False";
+    return symbolFor(a, b) === symbol ? "Yes" : "No";
   },
   differenceUnknown: (q) => {
     const [big, small] = numsIn(promptOf(q));

@@ -65,10 +65,12 @@ export function emojiPromptLines(promptText) {
     }
     const rows = chunkEmojiRun(m[0].trim());
     if (label && rows.length === 1) {
-      lines.push({ text: `${label} ${rows[0]}`, isRun: true });
+      // `label`/`run` are kept apart so the renderer can space out the run's
+      // glyphs without stretching the label's letters.
+      lines.push({ text: `${label} ${rows[0]}`, isRun: true, label, run: rows[0] });
     } else {
       if (label) lines.push({ text: label, isRun: false });
-      rows.forEach((r) => lines.push({ text: r, isRun: true }));
+      rows.forEach((r) => lines.push({ text: r, isRun: true, run: r }));
     }
   }
   const tail = promptText.slice(last).trim().replace(/^[—–-]\s*/, "");

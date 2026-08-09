@@ -71,16 +71,24 @@ export function discoveredIslandIds(byMode, islands) {
     .map((island) => island.id);
 }
 
-/** Everything the map scene needs, in one derived blob. */
-export function worldSnapshot(byMode, islands) {
+/**
+ * Everything the map scene needs, in one derived blob.
+ *
+ * Membership posture (plan principle 5): an island marked `premium` stays
+ * fogged — "not yet discovered" — for unsubscribed families, no matter the
+ * mastery. Never a padlock, never a price, nothing child-facing to buy.
+ * (No island is premium today; the mechanism is wired for Phase 4 drops.)
+ */
+export function worldSnapshot(byMode, islands, { isPremium = false } = {}) {
   const discovered = new Set(discoveredIslandIds(byMode, islands));
   return {
     islands: islands.map((island) => {
       const mastery = groupMastery(byMode, island.modeIds);
       const played = groupPlayed(byMode, island.modeIds);
+      const gated = Boolean(island.premium) && !isPremium;
       return {
         id: island.id,
-        discovered: discovered.has(island.id),
+        discovered: discovered.has(island.id) && !gated,
         mastery,
         played,
         bloom: bloomStage(mastery, played),

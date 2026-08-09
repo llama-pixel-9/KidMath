@@ -25,6 +25,15 @@ import {
   questDone,
   fixtureOn,
   availableQuests,
+  applyReceiveEgg,
+  eggWarmth,
+  petStage,
+  PET_HATCH_WARMTH,
+  applyCollectFeather,
+  applyBuyDecoration,
+  applyPlantSeed,
+  seedStage,
+  applyHarvestFlower,
 } from "../world/worldStore";
 
 const publicDir = path.resolve(__dirname, "../../public");
@@ -144,6 +153,79 @@ describe("world store", () => {
     expect(availableQuests(after, MEADOW_ZONE).map((q) => q.id)).toContain("chicks");
     // Done quests drop out of the available list.
     expect(availableQuests(after, MEADOW_ZONE).map((q) => q.id)).not.toContain("bridge");
+  });
+});
+
+describe("ownership layer (Phase 3)", () => {
+  it("the egg only counts practice earned after the gift", () => {
+    let s = applyReceiveEgg(emptyWorldState(), 500); // veteran kid, 500 stars
+    expect(eggWarmth(s, 500)).toBe(0); // history doesn't hatch it
+    expect(petStage(s, 500)).toBe(0);
+    expect(eggWarmth(s, 512)).toBe(12); // 12 new practice stars warm it
+    expect(petStage(s, 500 + PET_HATCH_WARMTH)).toBe("hatched");
+    // Quest stars warm it too.
+    s = applyQuestComplete(s, "bridge", 3, "bridgeFixed");
+    expect(eggWarmth(s, 500)).toBe(3);
+    // Receiving twice is a no-op.
+    expect(applyReceiveEgg(s, 999)).toBe(s);
+  });
+
+  it("feathers collect once; decorations cost stars and refuse overdrafts", () => {
+    let s = { ...emptyWorldState(), stars: 10 };
+    s = applyCollectFeather(s, "sunFeather");
+    expect(applyCollectFeather(s, "sunFeather").feathers).toHaveLength(1);
+    s = applyBuyDecoration(s, "nestbox", 5);
+    expect(s.stars).toBe(5);
+    expect(s.decorations).toContain("nestbox");
+    expect(applyBuyDecoration(s, "nestbox", 5)).toBe(s); // owned: no double-buy
+    expect(applyBuyDecoration(s, "grandTree", 15)).toBe(s); // can't afford: no-op
+  });
+
+  it("the seed runs on calendar days: mound → sprout → bloom → harvest", () => {
+    let s = applyPlantSeed(emptyWorldState(), "2026-08-09");
+    expect(seedStage(s, "2026-08-09")).toBe(0);
+    expect(seedStage(s, "2026-08-10")).toBe(1);
+    expect(seedStage(s, "2026-08-11")).toBe(2);
+    expect(seedStage(s, "2026-08-20")).toBe(2); // late is fine — no guilt
+    expect(applyHarvestFlower(s, "2026-08-10")).toBe(s); // can't rush the bloom
+    const picked = applyHarvestFlower(s, "2026-08-11");
+    expect(picked.stars).toBe(2);
+    expect(picked.seed).toBeNull(); // plot free for the next seed
+    expect(applyPlantSeed(s, "2026-08-09")).toBe(s); // one seed at a time
+  });
+
+  it("premium islands stay fogged (not padlocked) for free families", () => {
+    const islands = [
+      { id: "a", modeIds: ["m"] },
+      { id: "b", modeIds: ["n"], premium: true },
+    ];
+    const free = worldSnapshot({}, islands, { isPremium: false });
+    expect(free.islands[1].discovered).toBe(false);
+    const paid = worldSnapshot({}, islands, { isPremium: true });
+    expect(paid.islands[1].discovered).toBe(true);
+    // No island in the shipping set is premium today.
+    expect(ISLANDS.some((i) => i.premium)).toBe(false);
+  });
+
+  it("home shop, feathers, and seed plot reference real art inside bounds", () => {
+    const { width, height } = MEADOW_ZONE.bounds;
+    const inBounds = (p) => p.x > 0 && p.x < width && p.y > 0 && p.y < height;
+    expect(existsSync(path.join(publicDir, MEADOW_ZONE.home.nestArt))).toBe(true);
+    for (const art of MEADOW_ZONE.home.eggArts) {
+      expect(existsSync(path.join(publicDir, art)), art).toBe(true);
+    }
+    expect(existsSync(path.join(publicDir, MEADOW_ZONE.home.chickArt))).toBe(true);
+    for (const item of MEADOW_ZONE.home.shop) {
+      expect(existsSync(path.join(publicDir, item.art)), item.art).toBe(true);
+      expect(inBounds(item), `${item.id} out of bounds`).toBe(true);
+      expect(item.cost).toBeGreaterThan(0);
+    }
+    for (const feather of MEADOW_ZONE.feathers) {
+      expect(existsSync(path.join(publicDir, feather.art)), feather.art).toBe(true);
+      expect(inBounds(feather), `${feather.id} out of bounds`).toBe(true);
+    }
+    expect(inBounds(MEADOW_ZONE.seedPlot)).toBe(true);
+    expect(inBounds(MEADOW_ZONE.home)).toBe(true);
   });
 });
 

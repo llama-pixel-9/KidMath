@@ -66,6 +66,38 @@ export const MEADOW_ZONE = {
     },
   },
 
+  // ------------------------------------------------ ownership (plan Phase 3)
+  // The home nest: the pet egg lives here, decorations bought with stars
+  // appear in fixed slots. Premium-only items are simply absent from the
+  // child's shop when the family isn't subscribed — cosmetic breadth is the
+  // membership perk, and nothing child-facing ever upsells (principle 5).
+  home: {
+    x: 350, y: 1060,
+    nestArt: "/meadow/props/nestBig.webp", nestW: 640, nestH: 476, nestSize: 190,
+    eggArts: ["/meadow/egg/stage0.webp", "/meadow/egg/stage1.webp", "/meadow/egg/stage2.webp", "/meadow/egg/stage3.webp"],
+    chickArt: "/meadow/birds/condorChick.webp",
+    shop: [
+      { id: "nestbox", name: "Nest Box", art: "/meadow/props/nestbox.webp", w: 372, h: 640, size: 130, cost: 5, x: 180, y: 980 },
+      { id: "hedge", name: "Cozy Hedge", art: "/meadow/props/hedgeL.webp", w: 264, h: 640, size: 150, cost: 8, x: 120, y: 1100 },
+      { id: "rocks", name: "Sunning Rocks", art: "/meadow/props/rocks.webp", w: 474, h: 640, size: 110, cost: 8, x: 540, y: 1105 },
+      { id: "sign", name: "Welcome Sign", art: "/meadow/props/sign.webp", w: 396, h: 640, size: 120, cost: 12, x: 620, y: 990 },
+      { id: "fancyFence", name: "Garden Fence", art: "/meadow/props/fence.webp", w: 580, h: 361, size: 170, cost: 10, x: 350, y: 1150, premium: true },
+      { id: "grandTree", name: "Shade Tree", art: "/meadow/props/tree.webp", w: 652, h: 900, size: 260, cost: 15, x: 220, y: 870, premium: true },
+    ],
+  },
+
+  // Collectible feathers hidden around the island — spotting games between
+  // quests. Art is the existing feather badge set.
+  feathers: [
+    { id: "sunFeather", art: "/meadow/feathers/firstSession.webp", x: 1450, y: 350 },
+    { id: "songFeather", art: "/meadow/feathers/perfectRound.webp", x: 100, y: 700 },
+    { id: "cloudFeather", art: "/meadow/feathers/streak3.webp", x: 1980, y: 1080 },
+  ],
+
+  // The seed plot by the feeder: plant today, sprout tomorrow, bloom the day
+  // after — the "come back tomorrow" hook as growth, never streak guilt.
+  seedPlot: { x: 1470, y: 900 },
+
   quests: [
     {
       id: "bridge",

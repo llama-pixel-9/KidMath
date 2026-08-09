@@ -25,7 +25,8 @@ one line of it: the `/world` route in `App.jsx`.
 
 ```
 worldFlags.js         VITE_WORLD_ENABLED gate
-worldStore.js         quest/fixture/star state (localStorage v1, pure transitions)
+worldStore.js         quest/fixture/star/pet/seed/collectible state (localStorage v1)
+HomePanel.jsx         home nest: pet status + star-priced decoration shop
 speech.js             audio-first dialog via Web Speech (recorded voice later)
 QuestDialog.jsx       spoken quest dialog + number-sign choices
 zones/meadowZone.js   the first walkable zone — world_defs-shaped content

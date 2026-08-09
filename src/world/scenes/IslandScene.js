@@ -7,6 +7,14 @@ import {
   questDone,
   fixtureOn,
   availableQuests,
+  applyReceiveEgg,
+  applyCollectFeather,
+  applyBuyDecoration,
+  applyPlantSeed,
+  applyHarvestFlower,
+  seedStage,
+  petStage,
+  todayKey,
 } from "../worldStore";
 
 const PLAYER_SPEED = 0.42; // world px per ms — a brisk hop, not a sprint
@@ -50,6 +58,18 @@ export default class IslandScene extends Phaser.Scene {
     }
     if (o.gate) this.load.image("obj-gate", o.gate.art);
     if (o.chicks) this.load.image("obj-chick", o.chicks.art);
+    // Ownership layer art: the home nest, pet egg stages, shop items,
+    // hidden feathers.
+    const home = this.zone.home;
+    if (home) {
+      this.load.image("home-nest", home.nestArt);
+      home.eggArts.forEach((art, i) => this.load.image(`pet-egg-${i}`, art));
+      this.load.image("pet-chick", home.chickArt);
+      for (const item of home.shop) this.load.image(`deco-${item.id}`, item.art);
+    }
+    for (const feather of this.zone.feathers ?? []) {
+      this.load.image(`feather-${feather.id}`, feather.art);
+    }
   }
 
   create() {
@@ -68,6 +88,9 @@ export default class IslandScene extends Phaser.Scene {
     this.chickSprites = [];
     this.buildNpcs();
     this.restoreFoundChicks();
+    this.buildHome();
+    this.buildFeathers();
+    this.buildSeedPlot();
     this.buildPlayer();
 
     this.cameras.main.startFollow(this.player, false, 0.12, 0.12);
@@ -86,18 +109,44 @@ export default class IslandScene extends Phaser.Scene {
     const onPick = (value) => this.handlePick(value);
     const onGoMap = () => {
       this.game.events.emit("island-dialog-close");
+      this.game.events.emit("home-close");
       this.scene.start("worldMap", this.mapData);
     };
+    const onBuy = (itemId) => this.buyDecoration(itemId);
     this.game.events.on("dialog-next", onNext);
     this.game.events.on("dialog-pick", onPick);
     this.game.events.on("world-go-map", onGoMap);
+    this.game.events.on("shop-buy", onBuy);
     this.events.once("shutdown", () => {
       this.game.events.off("dialog-next", onNext);
       this.game.events.off("dialog-pick", onPick);
       this.game.events.off("world-go-map", onGoMap);
+      this.game.events.off("shop-buy", onBuy);
     });
 
-    this.game.events.emit("world-stars", this.worldState.stars);
+    this.emitWorldState();
+    // The egg gift waits for a settled scene: any finished quest earns it.
+    this.time.delayedCall(600, () => this.maybeGiftEgg());
+  }
+
+  /** Stars from arcade practice also warm the egg (registry-provided). */
+  practiceStars() {
+    return this.game.registry.get("worldData")?.practiceStars ?? 0;
+  }
+
+  emitWorldState() {
+    this.game.events.emit("world-state", {
+      stars: this.worldState.stars,
+      feathers: this.worldState.feathers,
+      decorations: this.worldState.decorations,
+      pet: petStage(this.worldState, this.practiceStars()),
+      seed: seedStage(this.worldState, todayKey()),
+    });
+  }
+
+  saveAndEmit() {
+    persistWorldState(this.worldState);
+    this.emitWorldState();
   }
 
   // -------------------------------------------------------------- player
@@ -250,6 +299,8 @@ export default class IslandScene extends Phaser.Scene {
     if (!this.activeQuest) {
       this.dialogOpen = false;
       this.game.events.emit("island-dialog-close");
+      // A finished first quest may have just earned the egg gift.
+      this.time.delayedCall(400, () => this.maybeGiftEgg());
       return;
     }
     this.stepIndex += 1;
@@ -316,8 +367,8 @@ export default class IslandScene extends Phaser.Scene {
   completeQuest(step) {
     const quest = this.activeQuest;
     this.worldState = applyQuestComplete(this.worldState, quest.id, step.stars, step.fixture);
-    persistWorldState(this.worldState);
-    this.game.events.emit("world-stars", this.worldState.stars);
+    this.saveAndEmit();
+    this.renderPet();
     this.applyFixtureVisual(step.fixture);
     this.starBurst(this.player.x, this.player.y - 60, step.stars);
     this.game.events.emit("island-dialog", {
@@ -443,6 +494,192 @@ export default class IslandScene extends Phaser.Scene {
         ease: "Sine.easeOut",
         onComplete: () => star.destroy(),
       });
+    }
+  }
+
+  // ------------------------------------------- ownership layer (Phase 3)
+
+  /** Robin's gift after the first finished quest: the egg. Once, wordlessly
+   *  earned — relatedness and competence in one moment. */
+  maybeGiftEgg() {
+    if (this.worldState.egg || this.dialogOpen) return;
+    if (Object.keys(this.worldState.quests).length === 0) return;
+    this.worldState = applyReceiveEgg(this.worldState, this.practiceStars());
+    this.saveAndEmit();
+    this.renderPet();
+    this.dialogOpen = true;
+    this.game.events.emit("island-dialog", {
+      speaker: "Robin",
+      line: "You helped so much — this egg is for you! Practicing keeps it warm.",
+      hint: "done",
+    });
+  }
+
+  buildHome() {
+    const home = this.zone.home;
+    if (!home) return;
+    if (this.textures.exists("home-nest")) {
+      this.homeNest = this.add
+        .image(home.x, home.y, "home-nest")
+        .setScale(home.nestSize / home.nestW)
+        .setDepth(8);
+    } else {
+      this.homeNest = this.add.ellipse(home.x, home.y, 190, 110, 0x8a5a3b).setDepth(8);
+    }
+    this.homeNest.setInteractive({ useHandCursor: true });
+    this.homeNest.on("pointerup", () => {
+      if (this.dialogOpen) return;
+      this.walkTo(home.x + 140, home.y + 30, () => {
+        this.emitWorldState();
+        this.game.events.emit("home-open");
+      });
+    });
+    for (const item of this.zone.home.shop) {
+      if (this.worldState.decorations.includes(item.id)) this.renderDecoration(item);
+    }
+    this.renderPet();
+  }
+
+  renderPet() {
+    const home = this.zone.home;
+    if (!home) return;
+    const stage = petStage(this.worldState, this.practiceStars());
+    if (stage === null) {
+      this.petSprite?.destroy();
+      this.petSprite = null;
+      return;
+    }
+    if (this.petStageShown === stage && this.petSprite) return;
+    this.petStageShown = stage;
+    this.petSprite?.destroy();
+    if (stage === "hatched") {
+      this.petSprite = this.textures.exists("pet-chick")
+        ? this.add.image(home.x, home.y - 40, "pet-chick").setScale(0.16)
+        : this.add.ellipse(home.x, home.y - 40, 60, 60, 0xf9d977);
+      this.petSprite.setDepth(9);
+      this.petFollows = true;
+    } else {
+      this.petSprite = this.textures.exists(`pet-egg-${stage}`)
+        ? this.add.image(home.x, home.y - 34, `pet-egg-${stage}`).setScale(0.28)
+        : this.add.ellipse(home.x, home.y - 34, 50, 64, 0xf5f8fa);
+      this.petSprite.setDepth(9);
+      this.petFollows = false;
+      this.tweens.add({
+        targets: this.petSprite,
+        angle: { from: -3, to: 3 },
+        duration: 1600,
+        yoyo: true,
+        repeat: -1,
+        ease: "Sine.easeInOut",
+      });
+    }
+  }
+
+  /** The hatched chick toddles after the skylark — ownership that moves. */
+  update() {
+    if (!this.petFollows || !this.petSprite || !this.player) return;
+    const targetX = this.player.x - 70 * (this.player.flipX ? -1 : 1);
+    const targetY = this.player.y + 30;
+    this.petSprite.x += (targetX - this.petSprite.x) * 0.06;
+    this.petSprite.y += (targetY - this.petSprite.y) * 0.06;
+    this.petSprite.setFlipX(this.petSprite.x > targetX);
+  }
+
+  buyDecoration(itemId) {
+    const item = this.zone.home?.shop.find((i) => i.id === itemId);
+    if (!item) return;
+    const before = this.worldState;
+    this.worldState = applyBuyDecoration(this.worldState, item.id, item.cost);
+    if (this.worldState === before) return; // owned already or short on stars
+    this.saveAndEmit();
+    this.renderDecoration(item, true);
+  }
+
+  renderDecoration(item, justBought = false) {
+    const sprite = this.textures.exists(`deco-${item.id}`)
+      ? this.add.image(item.x, item.y, `deco-${item.id}`).setScale(item.size / item.h)
+      : this.add.ellipse(item.x, item.y, 80, 80, 0x8fce7c);
+    sprite.setDepth(7);
+    if (justBought) {
+      sprite.setScale(sprite.scale * 0.1);
+      this.tweens.add({ targets: sprite, scale: item.size / item.h, duration: 420, ease: "Back.easeOut" });
+      this.starBurst(item.x, item.y - 40, 2);
+    }
+  }
+
+  buildFeathers() {
+    for (const feather of this.zone.feathers ?? []) {
+      if (this.worldState.feathers.includes(feather.id)) continue;
+      const sprite = this.textures.exists(`feather-${feather.id}`)
+        ? this.add.image(feather.x, feather.y, `feather-${feather.id}`).setScale(0.16)
+        : this.add.ellipse(feather.x, feather.y, 40, 40, 0xf4b731);
+      sprite.setDepth(15).setInteractive({ useHandCursor: true });
+      const glow = this.add.circle(feather.x, feather.y, 34, 0xfff3b0, 0.35).setDepth(14);
+      this.tweens.add({ targets: glow, scale: 1.4, alpha: 0.1, duration: 1100, yoyo: true, repeat: -1 });
+      this.tweens.add({ targets: sprite, y: feather.y - 8, duration: 1300, yoyo: true, repeat: -1, ease: "Sine.easeInOut" });
+      sprite.once("pointerup", () => {
+        this.worldState = applyCollectFeather(this.worldState, feather.id);
+        this.saveAndEmit();
+        this.starBurst(feather.x, feather.y, 2);
+        glow.destroy();
+        this.tweens.add({ targets: sprite, y: sprite.y - 80, alpha: 0, duration: 600, onComplete: () => sprite.destroy() });
+      });
+    }
+  }
+
+  buildSeedPlot() {
+    const plot = this.zone.seedPlot;
+    if (!plot) return;
+    this.seedSprites?.forEach((s) => s.destroy());
+    this.seedSprites = [];
+    const add = (s) => {
+      this.seedSprites.push(s);
+      return s;
+    };
+    const stage = seedStage(this.worldState, todayKey());
+    const soil = add(this.add.ellipse(plot.x, plot.y, 110, 46, 0x9a6b45, stage === null ? 0.55 : 1).setDepth(6));
+    soil.setInteractive({ useHandCursor: true });
+
+    if (stage === 1) {
+      const stem = add(this.add.rectangle(plot.x, plot.y - 26, 6, 40, 0x5da865).setDepth(7));
+      add(this.add.ellipse(plot.x - 10, plot.y - 44, 22, 12, 0x6db470).setDepth(7).setAngle(-30));
+      add(this.add.ellipse(plot.x + 10, plot.y - 44, 22, 12, 0x6db470).setDepth(7).setAngle(30));
+      this.tweens.add({ targets: stem, angle: 3, duration: 1500, yoyo: true, repeat: -1 });
+    }
+    if (stage === 2) {
+      const bloom = add(this.add.text(plot.x, plot.y - 40, "🌼", { fontSize: "56px" }).setOrigin(0.5).setDepth(7));
+      this.tweens.add({ targets: bloom, scale: 1.12, duration: 900, yoyo: true, repeat: -1, ease: "Sine.easeInOut" });
+    }
+
+    soil.on("pointerup", () => {
+      if (this.dialogOpen) return;
+      this.walkTo(plot.x - 110, plot.y + 20, () => this.seedInteract());
+    });
+  }
+
+  seedInteract() {
+    const day = todayKey();
+    const stage = seedStage(this.worldState, day);
+    const say = (line) => {
+      this.dialogOpen = true;
+      this.game.events.emit("island-dialog", { speaker: "Skylark", line, hint: "done" });
+    };
+    if (stage === null) {
+      this.worldState = applyPlantSeed(this.worldState, day);
+      this.saveAndEmit();
+      this.buildSeedPlot();
+      say("A seed is planted! Come back tomorrow and see what happens.");
+    } else if (stage === 0) {
+      say("The seed is sleeping under the soil. See you tomorrow!");
+    } else if (stage === 1) {
+      say("It sprouted overnight! One more day until it blooms.");
+    } else {
+      this.worldState = applyHarvestFlower(this.worldState, day);
+      this.saveAndEmit();
+      this.renderPet();
+      this.buildSeedPlot();
+      this.starBurst(this.zone.seedPlot.x, this.zone.seedPlot.y - 40, 2);
+      say("It bloomed! Two stars — and room to plant another seed.");
     }
   }
 

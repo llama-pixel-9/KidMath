@@ -45,4 +45,14 @@ export default defineConfig([
       },
     },
   },
+  // Playwright config and specs run under Node (process.env for ports/paths).
+  {
+    files: ['e2e/**/*.js', 'playwright.config.js'],
+    languageOptions: {
+      globals: {
+        ...globals.node,
+        ...globals.browser,
+      },
+    },
+  },
 ])

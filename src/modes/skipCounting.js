@@ -209,11 +209,10 @@ const VARIETIES = [
       const isMember = Math.random() < 0.5;
       const target = isMember ? multiple : multiple + randInt(1, step - 1 || 1);
       return {
-        answer: target % step === 0 ? "True" : "False",
-        choices: ["True", "False"],
+        answer: target % step === 0 ? "Yes" : "No",
+        choices: ["Yes", "No"],
         display: {
           promptText: `If you count by ${step}s from 0, will you say ${target}?`,
-          subPrompt: "True or false?",
         },
         representation: "symbolic",
         cognitiveDemand: "DOK2",

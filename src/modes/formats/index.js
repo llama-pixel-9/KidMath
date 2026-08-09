@@ -31,7 +31,9 @@ function nearMiss(answer) {
   return candidate > 0 ? candidate : answer + Math.abs(d);
 }
 
-const TF = ["True", "False"];
+// "Yes"/"No", asked as "Is this right?" — a first grader hasn't met the words
+// "true" and "false" yet (#32), and the judgment being asked for is the same.
+const TF = ["Yes", "No"];
 
 /**
  * Does `a op b = answer` actually hold for this item?
@@ -66,8 +68,8 @@ export const FORMATS = {
       const shown = truthy ? q.answer : nearMiss(q.answer);
       return {
         display: { promptText: `${q.a} ${OP_SYMBOL[q.op]} ${q.b} = ${shown}` },
-        subPrompt: "True or false?",
-        answer: truthy ? "True" : "False",
+        subPrompt: "Is this right?",
+        answer: truthy ? "Yes" : "No",
         choices: [...TF],
         answerType: "choice",
         family: ITEM_FAMILIES.CONCEPTUAL,
@@ -85,8 +87,8 @@ export const FORMATS = {
       const left = truthy ? q.answer : nearMiss(q.answer);
       return {
         display: { promptText: `${left} = ${q.a} ${OP_SYMBOL[q.op]} ${q.b}` },
-        subPrompt: "True or false?",
-        answer: truthy ? "True" : "False",
+        subPrompt: "Is this right?",
+        answer: truthy ? "Yes" : "No",
         choices: [...TF],
         answerType: "choice",
         family: ITEM_FAMILIES.CONCEPTUAL,
@@ -103,8 +105,8 @@ export const FORMATS = {
       const right = truthy ? q.answer : nearMiss(q.answer);
       return {
         display: { promptText: `${q.answer} = ${right}` },
-        subPrompt: "True or false?",
-        answer: truthy ? "True" : "False",
+        subPrompt: "Is this right?",
+        answer: truthy ? "Yes" : "No",
         choices: [...TF],
         answerType: "choice",
         family: ITEM_FAMILIES.CONCEPTUAL,
@@ -122,8 +124,8 @@ export const FORMATS = {
         display: {
           promptText: `${q.a} ${OP_SYMBOL[q.op]} ${q.b} = ${q.b} ${OP_SYMBOL[q.op]} ${rightB}`,
         },
-        subPrompt: "True or false?",
-        answer: truthy ? "True" : "False",
+        subPrompt: "Is this right?",
+        answer: truthy ? "Yes" : "No",
         choices: [...TF],
         answerType: "choice",
         family: ITEM_FAMILIES.CONCEPTUAL,
@@ -141,8 +143,8 @@ export const FORMATS = {
       const d = truthy ? q.b + shift : q.b + shift + 1;
       return {
         display: { promptText: `${q.a} + ${q.b} = ${c} + ${d}` },
-        subPrompt: "True or false?",
-        answer: truthy ? "True" : "False",
+        subPrompt: "Is this right?",
+        answer: truthy ? "Yes" : "No",
         choices: [...TF],
         answerType: "choice",
         family: ITEM_FAMILIES.CONCEPTUAL,
@@ -176,8 +178,8 @@ export const FORMATS = {
       const d = truthy ? q.b + shift : q.b + shift + 2;
       return {
         display: { promptText: `${q.a} + ${q.b} = ${q.a - shift} + ${d}` },
-        subPrompt: "True or false? Try not to add.",
-        answer: truthy ? "True" : "False",
+        subPrompt: "Is this right? Try not to add.",
+        answer: truthy ? "Yes" : "No",
         choices: [...TF],
         answerType: "choice",
         family: ITEM_FAMILIES.CONCEPTUAL,
@@ -321,8 +323,8 @@ export const FORMATS = {
       const right = truthy ? `${q.a / 2} x ${q.b * 2}` : `${q.a / 2} x ${q.b}`;
       return {
         display: { promptText: `${q.a} x ${q.b} = ${right}` },
-        subPrompt: "True or false?",
-        answer: truthy ? "True" : "False",
+        subPrompt: "Is this right?",
+        answer: truthy ? "Yes" : "No",
         choices: [...TF],
         answerType: "choice",
         family: ITEM_FAMILIES.CONCEPTUAL,

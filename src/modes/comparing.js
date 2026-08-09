@@ -329,9 +329,9 @@ const VARIETIES = [
       const b = Math.random() < 0.4 ? a : randInt(r.min, r.max);
       const symbol = pick(["<", ">", "="]);
       return {
-        answer: symbolFor(a, b) === symbol ? "True" : "False",
-        choices: ["True", "False"],
-        display: { promptText: `True or false: ${a} ${symbol} ${b}` },
+        answer: symbolFor(a, b) === symbol ? "Yes" : "No",
+        choices: ["Yes", "No"],
+        display: { promptText: `${a} ${symbol} ${b}`, subPrompt: "Is this right?" },
         representation: "symbolic",
         cognitiveDemand: "DOK2",
         misconceptions: ["equalSignMisread", "symbolFlip"],

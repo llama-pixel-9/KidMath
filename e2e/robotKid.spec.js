@@ -195,7 +195,9 @@ for (const mode of MODES) {
           .then((h) => h.jsonValue());
         if (outcome.missingFromChoices) {
           problems.push(
-            `the on-screen question computes to ${kidAnswer}, but that is not among the choices on ${label} — a kid cannot answer what they worked out`
+            outcome.wasOverride
+              ? `the on-screen question computes to ${kidAnswer}, but that is not among the choices on ${label} — a kid cannot answer what they worked out`
+              : `the engine's correct answer ${JSON.stringify(q.answer).slice(0, 40)} is not among the rendered choices on ${label} — no clickable option scores correct`
           );
         } else if (kidAnswer !== null && !result.correct) {
           problems.push(

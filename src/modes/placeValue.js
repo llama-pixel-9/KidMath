@@ -495,11 +495,11 @@ const VARIETIES = [
       const shown = truthy ? claimed : claimed + randInt(1, 9);
       return {
         a: shown,
-        answer: truthy ? "True" : "False",
-        choices: ["True", "False"],
+        answer: truthy ? "Yes" : "No",
+        choices: ["Yes", "No"],
         display: {
           type: "trueFalseDecomposition",
-          promptText: `True or false: ${tens} tens and ${extraOnes} ones is the same as ${shown}.`,
+          promptText: `Is ${tens} tens and ${extraOnes} ones the same as ${shown}?`,
           number: claimed,
           tens,
           ones: extraOnes,

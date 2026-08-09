@@ -615,13 +615,13 @@ export const FRACTION_VARIETIES = [
       const b = randInt(1, den - 1 - a);
       const truthy = Math.random() < 0.5;
       // The false version is exactly the `denominatorAdd` error, so a child who
-      // holds the misconception answers "True" and we learn something.
+      // holds the misconception answers "Yes" and we learn something.
       const shown = truthy ? fracLabel(a + b, den) : fracLabel(a + b, den * 2);
       return {
-        answer: truthy ? "True" : "False",
+        answer: truthy ? "Yes" : "No",
         answerType: "choice",
-        choices: ["True", "False"],
-        prompt: `${fracLabel(a, den)} + ${fracLabel(b, den)} = ${shown}. True or false?`,
+        choices: ["Yes", "No"],
+        prompt: `${fracLabel(a, den)} + ${fracLabel(b, den)} = ${shown}. Is this right?`,
       };
     },
   },

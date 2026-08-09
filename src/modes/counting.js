@@ -18,7 +18,7 @@ import { maybeApplyFormat } from "./formats";
  *   band 3 (L7-10) extraneous information, error analysis, larger scatters
  */
 
-const OBJECTS = ["🍎", "⭐", "🐟", "🌸", "🟢", "🔵", "🍪", "🐢"];
+const OBJECTS = ["🍎", "⭐", "🐟", "🌸", "🟢", "🔵", "🍪", "🐢", "🎈", "🐤", "🦋", "🍓", "⚽", "🚗"];
 // Spec note: `❤️` reads as decoration rather than a countable object, so it is
 // no longer in the pool.
 
@@ -107,9 +107,11 @@ const VARIETIES = [
     family: ITEM_FAMILIES.CONCEPTUAL,
     build: () => {
       const n = randInt(2, 6);
+      // A mix of plain dots and real objects: all-dots every time read as
+      // monotonous (#32), and subitizing works the same on any small set.
       return {
         answer: n,
-        display: { emoji: DOTS, count: n },
+        display: { emoji: Math.random() < 0.3 ? DOTS : pick(OBJECTS), count: n },
         representation: "objectSet",
         cognitiveDemand: "DOK1",
         misconceptions: ["doubleCount", "skipObject"],

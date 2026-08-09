@@ -229,51 +229,97 @@ describe("ownership layer (Phase 3)", () => {
   });
 });
 
-describe("meadow zone definition", () => {
-  it("is wired to a real island and registered", () => {
-    expect(ISLANDS.some((i) => i.id === MEADOW_ZONE.islandId)).toBe(true);
+describe("zone definitions (every registered zone)", () => {
+  const allZones = Object.values(ZONES);
+
+  it("each zone is wired to a real island and registered under its own id", () => {
+    for (const zone of allZones) {
+      expect(ISLANDS.some((i) => i.id === zone.islandId), zone.id).toBe(true);
+      expect(zoneForIsland(zone.islandId)).toBe(zone);
+      expect(ZONES[zone.id]).toBe(zone);
+    }
     expect(zoneForIsland(MEADOW_ZONE.islandId)).toBe(MEADOW_ZONE);
-    expect(ZONES[MEADOW_ZONE.id]).toBe(MEADOW_ZONE);
   });
 
-  it("has five well-formed quests using only known step types", () => {
-    expect(MEADOW_ZONE.quests).toHaveLength(5);
-    for (const quest of MEADOW_ZONE.quests) {
-      expect(quest.steps.length).toBeGreaterThanOrEqual(3);
-      for (const step of quest.steps) {
-        expect(STEP_TYPES, `${quest.id}: unknown step ${step.type}`).toContain(step.type);
-        expect(typeof step.line).toBe("string");
+  it("quest ids and fixture names are globally unique — zones share one store", () => {
+    const questIds = allZones.flatMap((z) => z.quests.map((q) => q.id));
+    expect(new Set(questIds).size).toBe(questIds.length);
+    const fixtures = allZones.flatMap((z) =>
+      z.quests.map((q) => q.steps.at(-1).fixture).concat(
+        (z.feathers ?? []).map((f) => f.id),
+      ),
+    );
+    expect(new Set(fixtures).size).toBe(fixtures.length);
+  });
+
+  it("every quest is well-formed: known steps, honest options, real NPCs", () => {
+    for (const zone of allZones) {
+      expect(zone.quests.length).toBeGreaterThanOrEqual(5);
+      for (const quest of zone.quests) {
+        expect(quest.steps.length).toBeGreaterThanOrEqual(3);
+        for (const step of quest.steps) {
+          expect(STEP_TYPES, `${quest.id}: unknown step ${step.type}`).toContain(step.type);
+          expect(typeof step.line).toBe("string");
+        }
+        // Every quest ends in a celebration that pays stars and changes the
+        // world permanently.
+        const last = quest.steps.at(-1);
+        expect(last.type).toBe("celebrate");
+        expect(last.stars).toBeGreaterThan(0);
+        expect(typeof last.fixture).toBe("string");
+        // The right answer must be among the offered options (the
+        // un-failable rule is meaningless otherwise).
+        for (const step of quest.steps.filter((s) => s.type === "pickNumber")) {
+          expect(step.options).toContain(step.answer);
+        }
+        // placeItems counts must match what the object has room for.
+        for (const step of quest.steps.filter((s) => s.type === "placeItems")) {
+          const o = zone.objects[step.target];
+          expect(o, `${quest.id}: unknown target ${step.target}`).toBeDefined();
+          if (step.target === "bridge") expect(step.count).toBe(o.slots - o.present);
+          if (step.target === "feeder") expect(step.count).toBe(o.capacity - o.present);
+          if (step.target === "nests") expect(step.count).toBe(o.spots.length * o.eggsPer);
+          if (step.target === "gate") expect(step.count).toBe(10 - o.tenFrameFilled);
+        }
+        if (quest.npcId) {
+          expect(zone.npcs.some((n) => n.id === quest.npcId), `${quest.id}`).toBe(true);
+        }
+        // A gated quest's requirement must be earnable in the same zone.
+        if (quest.requiresFixture) {
+          expect(
+            zone.quests.some((q) => q.steps.at(-1).fixture === quest.requiresFixture),
+            `${quest.id} requires unreachable fixture`,
+          ).toBe(true);
+        }
       }
-      // Every quest ends in a celebration that pays stars and changes the world.
-      const last = quest.steps.at(-1);
-      expect(last.type).toBe("celebrate");
-      expect(last.stars).toBeGreaterThan(0);
-      expect(typeof last.fixture).toBe("string");
-      // pickNumber answers must be among their options (the un-failable rule
-      // is meaningless if the right answer isn't offered).
-      for (const step of quest.steps.filter((s) => s.type === "pickNumber")) {
-        expect(step.options).toContain(step.answer);
-      }
-      // NPC quests must point at a real NPC.
-      if (quest.npcId) {
-        expect(MEADOW_ZONE.npcs.some((n) => n.id === quest.npcId)).toBe(true);
-      }
+      // The gate object must point at a quest that exists.
+      expect(zone.quests.some((q) => q.id === zone.objects.gate.questId)).toBe(true);
+      // The scatter hunt's home NPC must exist.
+      expect(zone.npcs.some((n) => n.id === zone.objects.chicks.homeNpcId)).toBe(true);
+      // NPCs need their remember-you line.
+      for (const npc of zone.npcs) expect(typeof npc.thanks, npc.id).toBe("string");
     }
   });
 
   it("references only art that exists, with everything inside the zone bounds", () => {
-    const { width, height } = MEADOW_ZONE.bounds;
-    const inBounds = (p) => p.x > 0 && p.x < width && p.y > 0 && p.y < height;
-    for (const npc of MEADOW_ZONE.npcs) {
-      expect(existsSync(path.join(publicDir, npc.art)), npc.art).toBe(true);
-      expect(inBounds(npc), `${npc.id} out of bounds`).toBe(true);
-    }
-    const o = MEADOW_ZONE.objects;
-    for (const art of [o.feeder.art, o.nests.art, o.nests.eggArt, o.gate.art, o.chicks.art]) {
-      expect(existsSync(path.join(publicDir, art)), art).toBe(true);
-    }
-    for (const p of [o.bridge, o.feeder, o.gate, ...o.nests.spots, ...o.chicks.spots, MEADOW_ZONE.spawn]) {
-      expect(inBounds(p)).toBe(true);
+    for (const zone of allZones) {
+      const { width, height } = zone.bounds;
+      const inBounds = (p) => p.x > 0 && p.x < width && p.y > 0 && p.y < height;
+      for (const npc of zone.npcs) {
+        expect(existsSync(path.join(publicDir, npc.art)), npc.art).toBe(true);
+        expect(inBounds(npc), `${zone.id}/${npc.id} out of bounds`).toBe(true);
+      }
+      const o = zone.objects;
+      for (const art of [o.feeder.art, o.nests.art, o.nests.eggArt, o.gate.art, o.chicks.art]) {
+        expect(existsSync(path.join(publicDir, art)), art).toBe(true);
+      }
+      for (const p of [o.bridge, o.feeder, o.gate, ...o.nests.spots, ...o.chicks.spots, zone.spawn]) {
+        expect(inBounds(p), zone.id).toBe(true);
+      }
+      for (const feather of zone.feathers ?? []) {
+        expect(existsSync(path.join(publicDir, feather.art)), feather.art).toBe(true);
+        expect(inBounds(feather), `${zone.id}/${feather.id}`).toBe(true);
+      }
     }
   });
 });

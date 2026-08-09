@@ -30,9 +30,9 @@ export const MEADOW_ZONE = {
   spawn: { x: 380, y: 900 },
 
   npcs: [
-    { id: "robin", name: "Robin", art: "/meadow/birds/robin.webp", w: 507, h: 512, x: 620, y: 640, size: 120, questId: "bridge" },
-    { id: "cardinal", name: "Cardinal", art: "/meadow/birds/cardinal.webp", w: 456, h: 511, x: 1210, y: 860, size: 115, questId: "seeds" },
-    { id: "blueJay", name: "Blue Jay", art: "/meadow/birds/blueJay.webp", w: 512, h: 470, x: 1660, y: 560, size: 115, questId: "nests" },
+    { id: "robin", name: "Robin", art: "/meadow/birds/robin.webp", w: 507, h: 512, x: 620, y: 640, size: 120, questId: "bridge", thanks: "My bridge is perfect. You fixed it!" },
+    { id: "cardinal", name: "Cardinal", art: "/meadow/birds/cardinal.webp", w: 456, h: 511, x: 1210, y: 860, size: 115, questId: "seeds", thanks: "The feeder is full — thank you again!" },
+    { id: "blueJay", name: "Blue Jay", art: "/meadow/birds/blueJay.webp", w: 512, h: 470, x: 1660, y: 560, size: 115, questId: "nests", thanks: "The eggs are cozy. You counted them all!" },
   ],
 
   // World objects quests act on. `fixture` names the permanent state a
@@ -52,9 +52,9 @@ export const MEADOW_ZONE = {
       eggArt: "/meadow/egg/stage0.webp",
       fixture: "nestsFull",
     },
-    gate: { x: 420, y: 330, art: "/meadow/props/fence.webp", w: 580, h: 361, size: 200, tenFrameFilled: 7, fixture: "gateOpen" },
+    gate: { x: 420, y: 330, art: "/meadow/props/fence.webp", w: 580, h: 361, size: 200, tenFrameFilled: 7, fixture: "gateOpen", questId: "gate" },
     chicks: {
-      art: "/meadow/birds/condorChick.webp", w: 452, h: 512, size: 74,
+      art: "/meadow/birds/condorChick.webp", w: 452, h: 512, size: 74, homeNpcId: "robin",
       spots: [
         { x: 260, y: 560 },
         { x: 980, y: 950 },

@@ -213,15 +213,15 @@ export default class IslandScene extends Phaser.Scene {
       });
       this.npcSprites.set(npc.id, sprite);
     }
-    // The gate is quest-giver for its own quest.
-    if (this.gateSprite && !fixtureOn(this.worldState, this.zone.objects.gate.fixture)) {
+    // The gate is quest-giver for its own quest (id from the zone def —
+    // quest ids are globally unique across zones).
+    const gateDef = this.zone.objects.gate;
+    if (this.gateSprite && gateDef && !fixtureOn(this.worldState, gateDef.fixture)) {
       this.gateSprite.setInteractive({ useHandCursor: true });
       this.gateSprite.on("pointerup", () => {
-        const quest = this.zone.quests.find((q) => q.id === "gate");
+        const quest = this.zone.quests.find((q) => q.id === gateDef.questId);
         if (quest && !questDone(this.worldState, quest.id)) {
-          this.walkTo(this.zone.objects.gate.x + 150, this.zone.objects.gate.y + 120, () =>
-            this.startQuest(quest),
-          );
+          this.walkTo(gateDef.x + 150, gateDef.y + 120, () => this.startQuest(quest));
         }
       });
     }
@@ -265,15 +265,11 @@ export default class IslandScene extends Phaser.Scene {
       if (quest) {
         this.startQuest(quest);
       } else {
-        // NPCs remember you (relatedness, plan principle 2).
-        const thanks = {
-          robin: "My bridge is perfect. You fixed it!",
-          cardinal: "The feeder is full — thank you again!",
-          blueJay: "The eggs are cozy. You counted them all!",
-        };
+        // NPCs remember you (relatedness, plan principle 2) — their
+        // after-quest line lives in the zone def.
         this.game.events.emit("island-dialog", {
           speaker: npc.name,
-          line: thanks[npc.id] ?? "Hello again, friend!",
+          line: npc.thanks ?? "Hello again, friend!",
           hint: "done",
         });
         this.dialogOpen = true;
@@ -499,17 +495,17 @@ export default class IslandScene extends Phaser.Scene {
 
   // ------------------------------------------- ownership layer (Phase 3)
 
-  /** Robin's gift after the first finished quest: the egg. Once, wordlessly
-   *  earned — relatedness and competence in one moment. */
+  /** The egg gift after the first finished quest — given at the home zone
+   *  by its first NPC. Once, wordlessly earned. */
   maybeGiftEgg() {
-    if (this.worldState.egg || this.dialogOpen) return;
+    if (!this.zone.home || this.worldState.egg || this.dialogOpen) return;
     if (Object.keys(this.worldState.quests).length === 0) return;
     this.worldState = applyReceiveEgg(this.worldState, this.practiceStars());
     this.saveAndEmit();
     this.renderPet();
     this.dialogOpen = true;
     this.game.events.emit("island-dialog", {
-      speaker: "Robin",
+      speaker: this.zone.npcs[0]?.name ?? "Skylark",
       line: "You helped so much — this egg is for you! Practicing keeps it warm.",
       hint: "done",
     });
@@ -689,21 +685,28 @@ export default class IslandScene extends Phaser.Scene {
     const b = this.zone.objects.bridge;
     if (!b) return;
     const fixed = fixtureOn(this.worldState, b.fixture);
-    // The stream the bridge crosses.
-    this.add.ellipse(b.x, b.y + 8, 420, 110, 0x7fc4dd, 0.85).setDepth(2);
+    // The water the crossing spans; colors are zone-themable so the same
+    // mechanic reads as planks in the meadow and stepping stones at the pond.
+    const water = b.waterColor ?? 0x7fc4dd;
+    const fill = b.plankColor ?? 0xa8703d;
+    const edge = b.plankEdge ?? 0x7a4a1f;
+    const round = b.style === "stones";
+    this.add.ellipse(b.x, b.y + 8, 420, 110, water, 0.85).setDepth(2);
     this.plankSlots = [];
-    const slotW = 52;
+    const slotW = round ? 62 : 52;
     const startX = b.x - ((b.slots - 1) * slotW) / 2;
+    const drawPiece = (x) =>
+      round
+        ? this.add.ellipse(x, b.y, 52, 40, fill).setStrokeStyle(3, edge).setDepth(3)
+        : this.add.rectangle(x, b.y, 44, 96, fill).setStrokeStyle(3, edge).setDepth(3);
     for (let i = 0; i < b.slots; i++) {
       const x = startX + i * slotW;
-      const present = fixed || i < b.present;
-      if (present) {
-        this.add.rectangle(x, b.y, 44, 96, 0xa8703d).setStrokeStyle(3, 0x7a4a1f).setDepth(3);
+      if (fixed || i < b.present) {
+        drawPiece(x);
       } else {
-        const slot = this.add
-          .rectangle(x, b.y, 44, 96, 0x1c4a5e, 0.15)
-          .setStrokeStyle(3, 0xffffff, 0.7)
-          .setDepth(3);
+        const slot = round
+          ? this.add.ellipse(x, b.y, 52, 40, 0x1c4a5e, 0.15).setStrokeStyle(3, 0xffffff, 0.7).setDepth(3)
+          : this.add.rectangle(x, b.y, 44, 96, 0x1c4a5e, 0.15).setStrokeStyle(3, 0xffffff, 0.7).setDepth(3);
         this.plankSlots.push(slot);
       }
     }
@@ -715,8 +718,14 @@ export default class IslandScene extends Phaser.Scene {
 
   layPlank(index) {
     const slot = this.plankSlots?.[index - 1];
-    if (!slot) return;
-    const plank = this.add.rectangle(slot.x, slot.y - 300, 44, 96, 0xa8703d).setStrokeStyle(3, 0x7a4a1f).setDepth(3);
+    const b = this.zone.objects.bridge;
+    if (!slot || !b) return;
+    const fill = b.plankColor ?? 0xa8703d;
+    const edge = b.plankEdge ?? 0x7a4a1f;
+    const plank =
+      b.style === "stones"
+        ? this.add.ellipse(slot.x, slot.y - 300, 52, 40, fill).setStrokeStyle(3, edge).setDepth(3)
+        : this.add.rectangle(slot.x, slot.y - 300, 44, 96, fill).setStrokeStyle(3, edge).setDepth(3);
     this.tweens.add({ targets: plank, y: slot.y, duration: 380, ease: "Bounce.easeOut" });
   }
 
@@ -734,8 +743,8 @@ export default class IslandScene extends Phaser.Scene {
   dropSeed(index, instant = false) {
     const f = this.zone.objects.feeder;
     const x = f.x - 30 + ((index - 1) % 3) * 30;
-    const y = f.y - 118 - Math.floor((index - 1) / 3) * 26;
-    const seed = this.add.ellipse(x, instant ? y : y - 200, 20, 14, 0x8a5a3b).setDepth(5);
+    const y = f.y - (f.fillYOffset ?? 118) - Math.floor((index - 1) / 3) * 26;
+    const seed = this.add.ellipse(x, instant ? y : y - 200, 20, 14, f.itemColor ?? 0x8a5a3b).setDepth(5);
     if (!instant) this.tweens.add({ targets: seed, y, duration: 320, ease: "Bounce.easeOut" });
   }
 
@@ -796,20 +805,26 @@ export default class IslandScene extends Phaser.Scene {
     this.tweens.add({ targets: dot, scale: 1.5, duration: 160, yoyo: true });
   }
 
-  /** Permanent world change: once found, the chicks live beside Robin. */
+  /** Which NPC the found scatter-hunt babies live beside afterwards. */
+  scatterHomeNpc() {
+    const c = this.zone.objects.chicks;
+    return this.zone.npcs.find((n) => n.id === c?.homeNpcId) ?? this.zone.npcs[0];
+  }
+
+  /** Permanent world change: once found, the babies live beside their NPC. */
   restoreFoundChicks() {
     const c = this.zone.objects.chicks;
     if (!c || !fixtureOn(this.worldState, c.fixture)) return;
-    const robin = this.zone.npcs.find((n) => n.id === "robin");
-    if (!robin || !this.textures.exists("obj-chick")) return;
+    const home = this.scatterHomeNpc();
+    if (!home || !this.textures.exists("obj-chick")) return;
     c.spots.forEach((_, i) => {
       const chick = this.add
-        .image(robin.x + 70 + i * 34, robin.y + 40, "obj-chick")
+        .image(home.x + 70 + i * 34, home.y + 40, "obj-chick")
         .setScale(c.size / c.h)
         .setDepth(19);
       this.tweens.add({
         targets: chick,
-        y: robin.y + 34,
+        y: home.y + 34,
         duration: Phaser.Math.Between(500, 800),
         yoyo: true,
         repeat: -1,
@@ -841,14 +856,14 @@ export default class IslandScene extends Phaser.Scene {
       this.tweens.add({ targets: this.gateSprite, angle: -14, alpha: 0.85, duration: 700, ease: "Sine.easeInOut" });
       for (const dot of this.gateDots) dot.setFillStyle(0xf4b731, 1);
     }
-    if (fixture === "chicksFound") {
-      // The found chicks trot home to Robin.
-      const robin = this.zone.npcs.find((n) => n.id === "robin");
+    if (fixture === this.zone.objects.chicks?.fixture) {
+      // The found babies trot home to their NPC.
+      const home = this.scatterHomeNpc();
       this.chickSprites.forEach((chick, i) => {
         this.tweens.add({
           targets: chick,
-          x: robin.x + 70 + i * 34,
-          y: robin.y + 40,
+          x: home.x + 70 + i * 34,
+          y: home.y + 40,
           duration: 1400 + i * 150,
           ease: "Sine.easeInOut",
         });

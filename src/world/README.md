@@ -29,8 +29,10 @@ worldStore.js         quest/fixture/star/pet/seed/collectible state (localStorag
 HomePanel.jsx         home nest: pet status + star-priced decoration shop
 speech.js             audio-first dialog via Web Speech (recorded voice later)
 QuestDialog.jsx       spoken quest dialog + number-sign choices
-zones/meadowZone.js   the first walkable zone — world_defs-shaped content
-zones/index.js        zone registry + island→zone lookup
+zones/meadowZone.js   walkable zone #1 (counting) — world_defs-shaped content
+zones/pondZone.js     walkable zone #2 (addition) — pure data, zero new scene code
+zones/index.js        zone registry + island→zone lookup; quest ids and
+                      fixture names must be globally unique across zones
 scenes/IslandScene.js walkable island: tap-to-move, NPCs, quest runner
 WorldRoute.jsx        the shell-facing mount: flag check + lazy chunk split
 WorldPage.jsx         React host: loads progress → snapshot → game + panel

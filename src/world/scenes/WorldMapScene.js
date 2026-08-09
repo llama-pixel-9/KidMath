@@ -2,6 +2,7 @@ import Phaser from "phaser";
 import { ATLAS_KEY } from "./BootScene";
 import { ISLANDS, WORLD_BOUNDS, HOME_ISLAND_ID } from "../islands";
 import { ZONE_BACKDROPS, GUIDE_BIRD } from "../worldArt";
+import { createFlapRig } from "../birdFlight";
 
 // Bloom tints, stage 0→3: washed and pale while a strand is untouched,
 // clearing to full painted color as mastery grows. Fog tint is bluer and
@@ -205,8 +206,20 @@ export default class WorldMapScene extends Phaser.Scene {
     const start = this.firstSail ? { x: perch.x - 750, y: perch.y + 420 } : perch;
 
     if (this.textures.exists(GUIDE_BIRD.key)) {
-      this.guide = this.add.image(start.x, start.y, GUIDE_BIRD.key);
-      this.guide.setScale(150 / GUIDE_BIRD.h);
+      // Standing birds stand on folded wings; the fly pose is for flying.
+      const restKey = this.firstSail ? GUIDE_BIRD.key : GUIDE_BIRD.perchKey;
+      this.guide = this.add.image(
+        start.x,
+        start.y,
+        this.textures.exists(restKey) ? restKey : GUIDE_BIRD.key,
+      );
+      this.guide.setScale(150 / this.guide.height);
+      this.guideRig = createFlapRig(this, this.guide, {
+        flyKeys: [GUIDE_BIRD.key],
+        perchKey: GUIDE_BIRD.perchKey,
+        height: 150,
+      });
+      this.events.once("shutdown", () => this.guideRig?.destroy());
     } else {
       this.guide = this.add.ellipse(start.x, start.y, 90, 70, 0x8a6f5c);
     }
@@ -238,6 +251,10 @@ export default class WorldMapScene extends Phaser.Scene {
     cam.centerOn(this.guide.x, this.guide.y);
     cam.startFollow(this.guide, false, 0.08, 0.08);
 
+    // Wings beat for the whole flight (poses only — y belongs to the
+    // flight tween), with a slight climb tilt.
+    this.guideRig?.startPosesOnly();
+    this.guide.setAngle(-6);
     this.tweens.add({
       targets: this.guide,
       x: this.guidePerch.x,
@@ -245,21 +262,13 @@ export default class WorldMapScene extends Phaser.Scene {
       duration: 2800,
       ease: "Sine.easeInOut",
       onComplete: () => {
+        this.guideRig?.stop();
         cam.stopFollow();
         cam.pan(home.x + 260, home.y, 600, "Sine.easeInOut");
         this.panEnabled = true;
         this.startGuideIdle();
         this.game.events.emit("first-sail-complete");
       },
-    });
-    // A little wing-bob during the flight.
-    this.tweens.add({
-      targets: this.guide,
-      angle: 4,
-      duration: 380,
-      yoyo: true,
-      repeat: 6,
-      ease: "Sine.easeInOut",
     });
   }
 

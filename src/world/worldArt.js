@@ -14,11 +14,21 @@ export const ZONE_BACKDROPS = {
   cliffs: { url: "/meadow/zones/cliffs.webp", w: 2048, h: 1176 },
 };
 
+/**
+ * The skylark's two poses. Motion comes from code (docs/bird-animation-plan.md:
+ * poses from art, motion from rigs): flight alternates fly/perch at ~6Hz with
+ * tilt + bob (reads as flapping); standing uses the folded-wing perch pose.
+ * Real multi-frame flight art (Level 2) drops in as extra keys here.
+ */
 export const GUIDE_BIRD = {
   key: "skylark-fly",
   url: "/meadow/birds/skylark-fly.webp",
   w: 512,
   h: 443,
+  perchKey: "skylark-perch",
+  perchUrl: "/meadow/birds/skylark.webp",
+  perchW: 511,
+  perchH: 489,
 };
 
 /** Props sprinkled on well-mastered islands (bloom stage 3). */

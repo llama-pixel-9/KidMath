@@ -1,5 +1,7 @@
 import Phaser from "phaser";
 import { ZONES } from "../zones/index";
+import { GUIDE_BIRD } from "../worldArt";
+import { createFlapRig } from "../birdFlight";
 import {
   loadWorldState,
   persistWorldState,
@@ -153,9 +155,19 @@ export default class IslandScene extends Phaser.Scene {
 
   buildPlayer() {
     const { x, y } = this.zone.spawn;
-    this.player = this.textures.exists("skylark-fly")
-      ? this.add.image(x, y, "skylark-fly").setScale(110 / 443)
-      : this.add.ellipse(x, y, 80, 64, 0x8a6f5c);
+    if (this.textures.exists(GUIDE_BIRD.perchKey) || this.textures.exists(GUIDE_BIRD.key)) {
+      const restKey = this.textures.exists(GUIDE_BIRD.perchKey) ? GUIDE_BIRD.perchKey : GUIDE_BIRD.key;
+      this.player = this.add.image(x, y, restKey);
+      this.player.setScale(110 / this.player.height);
+      this.playerRig = createFlapRig(this, this.player, {
+        flyKeys: [GUIDE_BIRD.key],
+        perchKey: GUIDE_BIRD.perchKey,
+        height: 110,
+      });
+      this.events.once("shutdown", () => this.playerRig?.destroy());
+    } else {
+      this.player = this.add.ellipse(x, y, 80, 64, 0x8a6f5c);
+    }
     this.player.setDepth(50);
   }
 
@@ -164,20 +176,14 @@ export default class IslandScene extends Phaser.Scene {
     const tx = Phaser.Math.Clamp(x, 60, width - 60);
     const ty = Phaser.Math.Clamp(y, 200, height - 40);
     this.moveTween?.stop();
-    this.hopTween?.stop();
     this.player.setFlipX(tx < this.player.x);
     const distance = Phaser.Math.Distance.Between(this.player.x, this.player.y, tx, ty);
     if (distance < 8) {
       onArrive?.();
       return;
     }
-    this.hopTween = this.tweens.add({
-      targets: this.player,
-      angle: { from: -4, to: 4 },
-      duration: 160,
-      yoyo: true,
-      repeat: -1,
-    });
+    // Wings beat while airborne (poses only — the move tween owns x/y).
+    this.playerRig?.startPosesOnly();
     this.moveTween = this.tweens.add({
       targets: this.player,
       x: tx,
@@ -185,7 +191,7 @@ export default class IslandScene extends Phaser.Scene {
       duration: distance / PLAYER_SPEED,
       ease: "Sine.easeInOut",
       onComplete: () => {
-        this.hopTween?.stop();
+        this.playerRig?.stop();
         this.player.setAngle(0);
         onArrive?.();
       },

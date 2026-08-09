@@ -36,6 +36,7 @@ export default class BootScene extends Phaser.Scene {
       this.load.image(`zone-${name}`, art.url);
     }
     this.load.image(GUIDE_BIRD.key, GUIDE_BIRD.url);
+    this.load.image(GUIDE_BIRD.perchKey, GUIDE_BIRD.perchUrl);
     for (const [name, art] of Object.entries(BLOOM_PROPS)) {
       this.load.image(`prop-${name}`, art.url);
     }

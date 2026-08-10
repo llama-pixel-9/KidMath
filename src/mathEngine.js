@@ -766,14 +766,16 @@ export function generateWorksheetSet(mode, level, size = SESSION_SIZE, options =
 // the sheet being printable: operands inside the level range, the result slot
 // always the blank, no duplicate items or wording, at most one zero-fact.
 
-export const FLIGHT_LOG_PART_A = 6;
-export const FLIGHT_LOG_PART_B = 4;
+// Budgets are sized to FILL one US Letter page — not spill onto a second and
+// not strand half a page of white (#34 both ways). The print e2e renders the
+// real PDF and pins every sheet to exactly one page.
+export const FLIGHT_LOG_PART_A = 12;
+export const FLIGHT_LOG_PART_B = 6;
 export const FLIGHT_LOG_ITEMS = FLIGHT_LOG_PART_A + FLIGHT_LOG_PART_B + 1;
-// Prompt items run three to five lines where a stacked sum runs one, so the
-// prompt modes get a smaller budget — a sheet must fill one page, not spill
-// onto a second (#34: "do not over stuff it").
-export const FLIGHT_LOG_PROMPT_PART_A = 4;
-export const FLIGHT_LOG_PROMPT_PART_B = 4;
+// Prompt items run two to three lines where a stacked sum runs one, so the
+// prompt modes get a smaller budget.
+export const FLIGHT_LOG_PROMPT_PART_A = 6;
+export const FLIGHT_LOG_PROMPT_PART_B = 6;
 // Figure sheets budget lower still: a bar chart is ~15 text lines tall, and
 // eight of them cannot share one page (measured by the print e2e).
 export const FLIGHT_LOG_FIGURE_PART_A = 2;
@@ -903,8 +905,11 @@ function promptKey(q) {
 
 // Draw questions until `accept` says yes, `count` times, without repeating a
 // key. Relaxation order on starvation: first admit trivial facts beyond the
-// cap, then give up on the remaining slots rather than loop forever.
-function drawUnique({ mode, level, context, count, accept, keyOf, seenKeys, state, capStructures = false }) {
+// cap, then (drill sheets only) admit repeats of already-used facts — a small
+// fact pool (multiplication L1 has ten non-trivial facts) must still fill its
+// page, and "3 × 4" appearing twice on a drill sheet is unremarkable. Worded
+// prompts never repeat: the same sentence twice reads as a misprint.
+function drawUnique({ mode, level, context, count, accept, keyOf, seenKeys, state, capStructures = false, allowRepeatsOnStarvation = false }) {
   const out = [];
   let attempts = 0;
   const maxAttempts = count * 60;
@@ -938,6 +943,28 @@ function drawUnique({ mode, level, context, count, accept, keyOf, seenKeys, stat
     seenKeys.add(key);
     if (prompt) seenKeys.add(`prompt:${prompt}`);
     out.push(q);
+  }
+  if (allowRepeatsOnStarvation && out.length < count) {
+    const usedKeys = new Set(out.map(keyOf));
+    let repeatAttempts = 0;
+    let lastKey = null;
+    while (out.length < count && repeatAttempts < count * 60) {
+      repeatAttempts += 1;
+      let q;
+      try {
+        q = generateQuestion(mode, level, context);
+      } catch {
+        continue;
+      }
+      q = printableWording(q);
+      if (!accept(q) || isTrivialFact(q)) continue;
+      const key = keyOf(q);
+      // Spread the repeats: never the same fact back-to-back in the draw.
+      if (key === lastKey) continue;
+      lastKey = key;
+      usedKeys.add(key);
+      out.push(q);
+    }
   }
   return out;
 }
@@ -1026,6 +1053,7 @@ export function generateFlightLog(mode, level, options = {}) {
       keyOf: computationKey,
       seenKeys,
       state,
+      allowRepeatsOnStarvation: true,
     });
     partA = items.slice(0, partACount);
     partB = items.slice(partACount, partACount + partBCount);

@@ -38,9 +38,13 @@ Part B (write the answer), Part C (one thought problem). Generation is
 
 | Sheet kind | Part A | Part B | Why |
 |---|---|---|---|
-| Computational (`+ − × ÷`) | 6 stacked | 4 inline | one line each |
-| Prompt modes | 4 | 4 | prompts run 2–3 lines |
+| Computational (`+ − × ÷`) | 12 stacked | 6 inline | one line each; fills ~85% of the page |
+| Prompt modes | 6 | 6 | prompts run 2–3 lines |
 | Figure modes (`dataGraphs`) | 2 | 2 | a chart is ~15 lines tall |
+
+Small fact pools (multiplication L1 has ten non-trivial facts) fill via
+`allowRepeatsOnStarvation` — spaced repeats, drill sheets only; worded
+prompts never repeat.
 
 `log.itemCount` is the real total — the footer's "Landed ☐ of N" and any
 copy must use it, never a hard-coded 11. **The budgets are validated by

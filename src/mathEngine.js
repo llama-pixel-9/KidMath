@@ -769,6 +769,16 @@ export function generateWorksheetSet(mode, level, size = SESSION_SIZE, options =
 export const FLIGHT_LOG_PART_A = 6;
 export const FLIGHT_LOG_PART_B = 4;
 export const FLIGHT_LOG_ITEMS = FLIGHT_LOG_PART_A + FLIGHT_LOG_PART_B + 1;
+// Prompt items run three to five lines where a stacked sum runs one, so the
+// prompt modes get a smaller budget — a sheet must fill one page, not spill
+// onto a second (#34: "do not over stuff it").
+export const FLIGHT_LOG_PROMPT_PART_A = 4;
+export const FLIGHT_LOG_PROMPT_PART_B = 4;
+// Figure sheets budget lower still: a bar chart is ~15 text lines tall, and
+// eight of them cannot share one page (measured by the print e2e).
+export const FLIGHT_LOG_FIGURE_PART_A = 2;
+export const FLIGHT_LOG_FIGURE_PART_B = 2;
+const FIGURE_MODES = new Set(["dataGraphs"]);
 
 const ARITH_OPS = { "+": (a, b) => a + b, "-": (a, b) => a - b, "x": (a, b) => a * b, "/": (a, b) => a / b };
 
@@ -815,13 +825,76 @@ function normalizedPrompt(q) {
   return typeof text === "string" ? text.trim().toLowerCase() : null;
 }
 
+// --- Print-safe wording (#34) ----------------------------------------------
+// Screen verbs don't survive paper: "Tap the number that is 9 hundreds" makes
+// no sense on a sheet a child answers with a pencil. Every drawn flight-log
+// question is reworded BEFORE dedupe keying, so the printed prompt is also the
+// deduped prompt.
+const PRINT_REWORDS = [
+  [/\btap where you land\b/gi, "what number do you land on?"],
+  [/\. what number do you land on\?\.?$/i, ". What number do you land on?"],
+  [/\bTap the\b/g, "Write the"],
+  [/\btap the\b/g, "write the"],
+  [/\bTap\b/g, "Write"],
+  [/\btap\b/g, "write"],
+];
+const SCREEN_VERBS = /\b(tap|press|drag|swipe|click|touch)\b/i;
+
+function printableWording(q) {
+  const text = q.display?.promptText;
+  if (typeof text !== "string" || !SCREEN_VERBS.test(text)) return q;
+  let out = text;
+  for (const [re, rep] of PRINT_REWORDS) out = out.replace(re, rep);
+  return { ...q, display: { ...q.display, promptText: out } };
+}
+
 function isPrintablePrompt(q) {
   if (q.answerType === "multiSelect" || q.answerType === "tenFrame") return false;
-  if (q.display?.promptText) {
+  const text = q.display?.promptText;
+  if (text) {
     const t = typeof q.answer;
-    return t === "number" || t === "string";
+    if (t !== "number" && t !== "string") return false;
+    // A prompt that still carries a screen verb after rewording cannot be
+    // answered with a pencil ("press Go", coin taps).
+    if (SCREEN_VERBS.test(text)) return false;
+    // Degenerate on paper: the answer is printed inside the prompt ("Mark 0.7
+    // on the number line" — the widget was the question; the sheet is not).
+    if (t === "number" && new RegExp(`\\b${String(q.answer).replace(/\./g, "\\.")}\\b`).test(text)) {
+      return false;
+    }
+    return true;
   }
   return Boolean(q.display?.sequence || q.display?.emoji);
+}
+
+/**
+ * The option bank prints only when the options ARE the question (#34):
+ * identify-among-options items ("Which one shows 780 in expanded form?"),
+ * non-numeric answers, and estimation items whose choices define the
+ * granularity ("About how many…"). A plain numeric answer gets a blank box —
+ * printing four candidate numbers next to "What is 10 more than 68?" just
+ * turns writing into guessing.
+ */
+export function printOptionBank(q) {
+  if (questionAnswerType(q) !== "choice") return null;
+  const choices = Array.isArray(q.choices) && q.choices.length > 1 ? q.choices : null;
+  if (!choices) return null;
+  if (isYesNoJudgment(q)) return null; // printed as "circle Yes / No" instead
+  const numericAnswer =
+    typeof q.answer === "number" ||
+    (typeof q.answer === "string" && /^-?\d+([./]\d+)?$/.test(q.answer.trim()));
+  const text = q.display?.promptText || "";
+  if (!numericAnswer) return choices;
+  return /\bwhich\b|\bNOT\b|\babout\b/i.test(text) ? choices : null;
+}
+
+/** Judgment items ("8 = 9 — Is this right?") print as circle-Yes-or-No. */
+export function isYesNoJudgment(q) {
+  return (
+    Array.isArray(q.choices) &&
+    q.choices.length === 2 &&
+    q.choices.every((c) => c === "Yes" || c === "No")
+  );
 }
 
 function promptKey(q) {
@@ -831,7 +904,7 @@ function promptKey(q) {
 // Draw questions until `accept` says yes, `count` times, without repeating a
 // key. Relaxation order on starvation: first admit trivial facts beyond the
 // cap, then give up on the remaining slots rather than loop forever.
-function drawUnique({ mode, level, context, count, accept, keyOf, seenKeys, state }) {
+function drawUnique({ mode, level, context, count, accept, keyOf, seenKeys, state, capStructures = false }) {
   const out = [];
   let attempts = 0;
   const maxAttempts = count * 60;
@@ -843,6 +916,7 @@ function drawUnique({ mode, level, context, count, accept, keyOf, seenKeys, stat
     } catch {
       continue;
     }
+    q = printableWording(q);
     if (!accept(q)) continue;
     if (isTrivialFact(q)) {
       if (state.trivialUsed) continue;
@@ -852,6 +926,15 @@ function drawUnique({ mode, level, context, count, accept, keyOf, seenKeys, stat
     if (seenKeys.has(key)) continue;
     const prompt = normalizedPrompt(q);
     if (prompt && seenKeys.has(`prompt:${prompt}`)) continue;
+    // Same template thrice on one sheet ("Every hand shows 5 fingers…" ×3)
+    // reads as a copy-paste job even when the numbers differ. Prompt sheets
+    // only — a page of stacked sums shares one structure by design.
+    const structure = capStructures ? q.metadata?.structureType : null;
+    if (structure) {
+      const used = state.structureCounts?.[structure] || 0;
+      if (used >= 2) continue;
+      state.structureCounts = { ...(state.structureCounts || {}), [structure]: used + 1 };
+    }
     seenKeys.add(key);
     if (prompt) seenKeys.add(`prompt:${prompt}`);
     out.push(q);
@@ -862,8 +945,8 @@ function drawUnique({ mode, level, context, count, accept, keyOf, seenKeys, stat
 // The one thought problem, at the end of the sheet. Preference order: a
 // "pick two numbers" item (which must ship its number bank), then a story
 // problem, then a plain computation as the last resort.
-function drawThoughtProblem({ mode, level, seenKeys, state }) {
-  const context = { allowWordProblems: true };
+function drawThoughtProblem({ mode, level, seenKeys, state, allowWordProblems = true }) {
+  const context = { allowWordProblems };
   for (let attempts = 0; attempts < 60; attempts += 1) {
     let q;
     try {
@@ -871,6 +954,7 @@ function drawThoughtProblem({ mode, level, seenKeys, state }) {
     } catch {
       continue;
     }
+    q = printableWording(q);
     const prompt = normalizedPrompt(q);
     if (!prompt || seenKeys.has(`prompt:${prompt}`)) continue;
 
@@ -881,6 +965,7 @@ function drawThoughtProblem({ mode, level, seenKeys, state }) {
       seenKeys.add(`prompt:${prompt}`);
       return { kind: "pickTwo", question: q };
     }
+    if (!allowWordProblems) continue;
     const isStory = q.metadata?.itemFamily === ITEM_FAMILIES.APPLICATION && isVerbalPrompt(q.display?.promptText);
     if (isStory && (typeof q.answer === "number" || typeof q.answer === "string")) {
       seenKeys.add(`prompt:${prompt}`);
@@ -907,11 +992,23 @@ function drawThoughtProblem({ mode, level, seenKeys, state }) {
  * `computational` is false for modes without an a-op-b form (time, graphs…),
  * whose Parts A/B hold short prompt items instead of stacked/inline sums.
  */
-export function generateFlightLog(mode, level) {
+export function generateFlightLog(mode, level, options = {}) {
+  const { allowWordProblems = true } = options;
   const config = getModeConfig(mode);
   const computational = Object.prototype.hasOwnProperty.call(ARITH_OPS, config.op);
   const seenKeys = new Set();
   const state = { trivialUsed: false };
+  const figureMode = FIGURE_MODES.has(mode);
+  const partACount = computational
+    ? FLIGHT_LOG_PART_A
+    : figureMode
+      ? FLIGHT_LOG_FIGURE_PART_A
+      : FLIGHT_LOG_PROMPT_PART_A;
+  const partBCount = computational
+    ? FLIGHT_LOG_PART_B
+    : figureMode
+      ? FLIGHT_LOG_FIGURE_PART_B
+      : FLIGHT_LOG_PROMPT_PART_B;
 
   let partA;
   let partB;
@@ -924,25 +1021,26 @@ export function generateFlightLog(mode, level) {
       mode,
       level,
       context,
-      count: FLIGHT_LOG_PART_A + FLIGHT_LOG_PART_B,
+      count: partACount + partBCount,
       accept,
       keyOf: computationKey,
       seenKeys,
       state,
     });
-    partA = items.slice(0, FLIGHT_LOG_PART_A);
-    partB = items.slice(FLIGHT_LOG_PART_A, FLIGHT_LOG_PART_A + FLIGHT_LOG_PART_B);
+    partA = items.slice(0, partACount);
+    partB = items.slice(partACount, partACount + partBCount);
   } else {
     const context = { allowWordProblems: false };
     const items = drawUnique({
       mode,
       level,
       context,
-      count: FLIGHT_LOG_PART_A + FLIGHT_LOG_PART_B,
+      count: partACount + partBCount,
       accept: isPrintablePrompt,
       keyOf: promptKey,
       seenKeys,
       state,
+      capStructures: true,
     });
     // Prompt items may need their option bank to be answerable on paper.
     for (const q of items) {
@@ -950,12 +1048,13 @@ export function generateFlightLog(mode, level) {
         q.choices = generateChoices(q.answer, 4, q);
       }
     }
-    partA = items.slice(0, FLIGHT_LOG_PART_A);
-    partB = items.slice(FLIGHT_LOG_PART_A, FLIGHT_LOG_PART_A + FLIGHT_LOG_PART_B);
+    partA = items.slice(0, partACount);
+    partB = items.slice(partACount, partACount + partBCount);
   }
 
-  const partC = drawThoughtProblem({ mode, level, seenKeys, state });
-  return { partA, partB, partC, computational };
+  const partC = drawThoughtProblem({ mode, level, seenKeys, state, allowWordProblems });
+  const itemCount = partA.length + partB.length + (partC ? 1 : 0);
+  return { partA, partB, partC, computational, itemCount };
 }
 
 /**

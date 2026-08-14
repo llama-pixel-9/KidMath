@@ -19,7 +19,7 @@ const LEVELS = [1, 5, 10];
 
 function allItems(log) {
   const items = [...log.partA, ...log.partB];
-  if (log.partC) items.push(log.partC.question);
+  for (const w of log.wordProblems || []) items.push(w.question);
   return items;
 }
 
@@ -89,21 +89,29 @@ describe("flight logs — paper rules (#34)", () => {
     expect(log.computational).toBe(false);
     expect(log.partA.length).toBeLessThanOrEqual(FLIGHT_LOG_PROMPT_PART_A);
     expect(log.partB.length).toBeLessThanOrEqual(FLIGHT_LOG_PROMPT_PART_B);
-    expect(log.itemCount).toBe(log.partA.length + log.partB.length + (log.partC ? 1 : 0));
+    expect(log.itemCount).toBe(log.partA.length + log.partB.length + log.wordProblems.length);
 
     const sums = generateFlightLog("addition", 1);
     expect(sums.partA).toHaveLength(FLIGHT_LOG_PART_A);
     expect(sums.partB).toHaveLength(FLIGHT_LOG_PART_B);
-    expect(sums.itemCount).toBe(FLIGHT_LOG_PART_A + FLIGHT_LOG_PART_B + (sums.partC ? 1 : 0));
+    expect(sums.itemCount).toBe(FLIGHT_LOG_PART_A + FLIGHT_LOG_PART_B + sums.wordProblems.length);
   });
 
-  it("allowWordProblems: false keeps stories off the sheet", () => {
+  it("allowWordProblems: false means NOTHING worded — a pure fluency sheet", () => {
     for (let run = 0; run < 10; run += 1) {
       const log = generateFlightLog("addition", 3, { allowWordProblems: false });
-      expect(log.partC?.kind, "no story Part C").not.toBe("story");
+      expect(log.wordProblems, "no word-problems block at all").toEqual([]);
       for (const q of allItems(log)) {
         expect(q.metadata?.itemFamily, printedPrompt(q)).not.toBe("application");
       }
+    }
+  });
+
+  it("allowWordProblems: true visibly puts word problems on the sheet", () => {
+    for (let run = 0; run < 5; run += 1) {
+      const log = generateFlightLog("addition", 3, { allowWordProblems: true });
+      expect(log.wordProblems.length, "the toggle must DO something").toBeGreaterThan(0);
+      expect(log.wordProblems.some((w) => w.kind === "story"), "stories preferred").toBe(true);
     }
   });
 

@@ -969,12 +969,17 @@ function drawUnique({ mode, level, context, count, accept, keyOf, seenKeys, stat
   return out;
 }
 
-// The one thought problem, at the end of the sheet. Preference order: a
-// "pick two numbers" item (which must ship its number bank), then a story
-// problem, then a plain computation as the last resort.
-function drawThoughtProblem({ mode, level, seenKeys, state, allowWordProblems = true }) {
-  const context = { allowWordProblems };
-  for (let attempts = 0; attempts < 60; attempts += 1) {
+// The word-problems block at the end of the sheet — the whole point of the
+// Include Word Problems toggle (#34): OFF is a pure fact-fluency sheet with
+// NOTHING worded on it (a "pick two numbers…" item counts as worded — serving
+// one with the toggle off is why the toggle looked broken); ON guarantees the
+// sheet visibly carries stories. Stories are preferred; pick-two fills in
+// when a mode's story pool runs dry. No computation fallback — a drill sheet
+// short one word problem beats a "word problem" that is secretly a sum.
+function drawWordProblems({ mode, level, seenKeys, count }) {
+  const context = { allowWordProblems: true };
+  const out = [];
+  for (let attempts = 0; attempts < count * 60 && out.length < count; attempts += 1) {
     let q;
     try {
       q = generateQuestion(mode, level, context);
@@ -985,32 +990,30 @@ function drawThoughtProblem({ mode, level, seenKeys, state, allowWordProblems = 
     const prompt = normalizedPrompt(q);
     if (!prompt || seenKeys.has(`prompt:${prompt}`)) continue;
 
-    // Pick-two prompts carry their bank in display.options and a list-of-lists
-    // answer; anything multiSelect without a bank is unprintable.
-    if (q.answerType === "multiSelect") {
-      if (!Array.isArray(q.display?.options) || q.display.options.length === 0) continue;
-      seenKeys.add(`prompt:${prompt}`);
-      return { kind: "pickTwo", question: q };
-    }
-    if (!allowWordProblems) continue;
     const isStory = q.metadata?.itemFamily === ITEM_FAMILIES.APPLICATION && isVerbalPrompt(q.display?.promptText);
     if (isStory && (typeof q.answer === "number" || typeof q.answer === "string")) {
       seenKeys.add(`prompt:${prompt}`);
-      return { kind: "story", question: q };
+      out.push({ kind: "story", question: q });
     }
   }
-  // Last resort: one more computation, still under the sheet's dedupe rules.
-  const [q] = drawUnique({
-    mode,
-    level,
-    context: { allowWordProblems: false, consultBankFamilies: [] },
-    count: 1,
-    accept: (c) => isPureComputation(c) && withinLevelRange(c, level),
-    keyOf: computationKey,
-    seenKeys,
-    state,
-  });
-  return q ? { kind: "computation", question: q } : null;
+  // Pick-two prompts carry their bank in display.options and a list-of-lists
+  // answer; anything multiSelect without a bank is unprintable.
+  for (let attempts = 0; attempts < 60 && out.length < count; attempts += 1) {
+    let q;
+    try {
+      q = generateQuestion(mode, level, context);
+    } catch {
+      continue;
+    }
+    q = printableWording(q);
+    const prompt = normalizedPrompt(q);
+    if (!prompt || seenKeys.has(`prompt:${prompt}`)) continue;
+    if (q.answerType !== "multiSelect") continue;
+    if (!Array.isArray(q.display?.options) || q.display.options.length === 0) continue;
+    seenKeys.add(`prompt:${prompt}`);
+    out.push({ kind: "pickTwo", question: q });
+  }
+  return out;
 }
 
 /**
@@ -1080,9 +1083,11 @@ export function generateFlightLog(mode, level, options = {}) {
     partB = items.slice(partACount, partACount + partBCount);
   }
 
-  const partC = drawThoughtProblem({ mode, level, seenKeys, state, allowWordProblems });
-  const itemCount = partA.length + partB.length + (partC ? 1 : 0);
-  return { partA, partB, partC, computational, itemCount };
+  const wordProblems = allowWordProblems
+    ? drawWordProblems({ mode, level, seenKeys, count: figureMode ? 1 : 2 })
+    : [];
+  const itemCount = partA.length + partB.length + wordProblems.length;
+  return { partA, partB, wordProblems, computational, itemCount };
 }
 
 /**

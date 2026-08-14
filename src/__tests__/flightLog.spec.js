@@ -15,11 +15,11 @@ function computationItems(log) {
 }
 
 describe("generateFlightLog — §15 sheet structure", () => {
-  it("returns 6 stacked + 4 inline + 1 thought problem", () => {
+  it("returns stacked + inline blocks and a word-problems block by default", () => {
     const log = generateFlightLog("addition", 1);
     expect(log.partA).toHaveLength(FLIGHT_LOG_PART_A);
     expect(log.partB).toHaveLength(FLIGHT_LOG_PART_B);
-    expect(log.partC).toBeTruthy();
+    expect(log.wordProblems.length).toBeGreaterThan(0);
     expect(log.computational).toBe(true);
   });
 
@@ -74,7 +74,7 @@ describe("generateFlightLog — §15 sheet structure", () => {
   it("never repeats prompt wording on one sheet", () => {
     for (const mode of ["addition", "time", "counting"]) {
       const log = generateFlightLog(mode, 2);
-      const prompts = [...computationItems(log), log.partC?.question]
+      const prompts = [...computationItems(log), ...(log.wordProblems || []).map((w) => w.question)]
         .filter(Boolean)
         .map((q) => q.display?.promptText)
         .filter(Boolean)
@@ -83,12 +83,12 @@ describe("generateFlightLog — §15 sheet structure", () => {
     }
   });
 
-  it("pick-two thought problems always carry their number bank", () => {
+  it("pick-two word problems always carry their number bank", () => {
     // Draw many logs; whenever the pickTwo shape appears it must be printable.
     for (let run = 0; run < 20; run += 1) {
       const log = generateFlightLog("addition", 1);
-      if (log.partC?.kind === "pickTwo") {
-        const q = log.partC.question;
+      for (const item of log.wordProblems.filter((w) => w.kind === "pickTwo")) {
+        const q = item.question;
         expect(Array.isArray(q.display.options)).toBe(true);
         expect(q.display.options.length).toBeGreaterThan(0);
         // The structured answer line needs the whole (q.a) and a valid pair.

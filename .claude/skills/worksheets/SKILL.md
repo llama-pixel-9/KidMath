@@ -5,8 +5,13 @@ description: How flight-log worksheets are generated, laid out and printed — t
 
 # Flight-log worksheets
 
-Premium launch feature (#34). One sheet = one skill: Part A (warm up),
-Part B (write the answer), Part C (one thought problem). Generation is
+Premium launch feature (#34). One sheet = one skill: a stacked/prompt
+block, an inline block, and — only when Include Word Problems is on — a
+word-problems block (2 stories; 1 on figure sheets; pick-two fills in
+when stories starve). No PART A/B/C captions: the sheet is a drill, not
+a test paper. Toggle OFF = pure fact fluency, NOTHING worded (pick-two
+counts as worded — serving it with the toggle off is why the toggle
+once looked broken). Generation is
 `generateFlightLog` in `src/mathEngine.js` (shared with iOS); layout is
 `src/PrintableWorksheet.jsx`; print CSS is the `@media print` block in
 `src/index.css` (US Letter portrait, 0.375in margins).
@@ -56,10 +61,12 @@ or the layout, don't delete the assertion.
 ## Generate screen
 
 Mode grid → level (aria-label "Level N") → number of logs (aria-label
-"N logs") → **Include Word Problems** (threads
-`{ allowWordProblems }` into `generateFlightLog`; off = no story Part C
-and no application items) → Include Answer Key → Generate → Print
-(`window.print()`).
+"N logs") → **Include Word Problems** (threads `{ allowWordProblems }`
+into `generateFlightLog`; off = no word-problems block, no application
+items anywhere — the fact-fluency sheet parents asked for) → Include
+Answer Key → Generate → Print (`window.print()`). DEV exposes
+`window.__larkitWorksheets = { logs, allowWordProblems }` so the e2e
+asserts sheet composition instead of scraping prose.
 
 ## Tests
 

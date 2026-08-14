@@ -60,14 +60,30 @@ for (const { modeLabel, level, logs, expectFigures } of CASES) {
   });
 }
 
-test("worksheets: word-problems toggle removes stories", async ({ page }) => {
+test("worksheets: the word-problems toggle changes the sheet both ways", async ({ page }) => {
   await page.goto("/worksheets");
   await page.getByRole("button", { name: "Addition", exact: true }).click();
   await page.getByRole("button", { name: "Level 3", exact: true }).click();
+
+  // ON (default): the sheet visibly carries word problems.
+  await page.getByRole("button", { name: "Generate", exact: true }).click();
+  await expect(page.getByText("Flight log ·").first()).toBeVisible();
+  const withStories = await page.evaluate(() => window.__larkitWorksheets);
+  expect(withStories.allowWordProblems).toBe(true);
+  for (const log of withStories.logs) {
+    expect(log.wordProblems.length, "toggle ON puts word problems on the sheet").toBeGreaterThan(0);
+  }
+
+  // OFF: a pure fluency sheet — no word-problems block, nothing worded.
   await page.getByRole("button", { name: "Skip word problems", exact: true }).click();
   await page.getByRole("button", { name: "Generate", exact: true }).click();
   await expect(page.getByText("Flight log ·").first()).toBeVisible();
-  // Part C still exists but is never a story; the sheet stays computational.
+  const fluency = await page.evaluate(() => window.__larkitWorksheets);
+  expect(fluency.allowWordProblems).toBe(false);
+  for (const log of fluency.logs) {
+    expect(log.wordProblems, "toggle OFF strips every worded item").toEqual([]);
+  }
   const text = await page.locator("body").innerText();
-  expect(text).toContain("PART C");
+  const sheets = text.slice(text.indexOf("Flight log"));
+  expect(sheets).not.toContain("Pick two numbers");
 });

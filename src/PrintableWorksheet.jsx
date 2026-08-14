@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { motion } from "framer-motion";
 import {
   Plus,
@@ -33,7 +33,6 @@ const LEVEL_GROUPS = [
 
 // Question ops are ASCII; the printed sheet uses the maths symbols.
 const OP_SYMBOL = { "+": "+", "-": "−", "x": "×", "/": "÷" };
-const OP_VERB = { "+": "ADD", "-": "SUBTRACT", "x": "MULTIPLY", "/": "DIVIDE" };
 
 // §15: every mark on a flight log is 100% black — no tints, no colour, no
 // decorative glyphs. The sheet is Fredoka for the maths, Nunito for the rest.
@@ -53,14 +52,6 @@ function AnswerBox({ value = null, wide = false }) {
     >
       {value}
     </span>
-  );
-}
-
-function PartCaption({ children }) {
-  return (
-    <p className="text-[11px] font-black text-black uppercase tracking-[0.14em] mb-2">
-      {children}
-    </p>
   );
 }
 
@@ -165,13 +156,13 @@ function PromptItem({ question: q, number, answer = null }) {
   );
 }
 
-// Part C: the one thought problem, full width, at the end. A "pick two
-// numbers" prompt prints the number bank it picks from and a structured
-// answer line (☐ + ☐ = 6).
-function ThoughtProblem({ partC, number, showAnswer = false }) {
-  if (!partC) return null;
-  const q = partC.question;
-  if (partC.kind === "pickTwo") {
+// A word problem, full width, at the end — printed only when the Include
+// Word Problems toggle is on. A "pick two numbers" prompt prints the number
+// bank it picks from and a structured answer line (☐ + ☐ = 6).
+function WordProblem({ item, number, showAnswer = false }) {
+  if (!item) return null;
+  const q = item.question;
+  if (item.kind === "pickTwo") {
     const pair = Array.isArray(q.answer?.[0]) ? q.answer[0] : q.answer;
     return (
       <div className="flex items-start gap-1.5">
@@ -200,9 +191,7 @@ function ThoughtProblem({ partC, number, showAnswer = false }) {
       </div>
     );
   }
-  if (partC.kind === "computation") {
-    return <InlineItem question={q} number={number} answer={showAnswer ? q.answer : null} />;
-  }
+
   const figure = q.display?.figure ? FIGURES[q.display.figure] : null;
   return (
     <div className="flex items-start gap-1.5" style={{ breakInside: "avoid" }}>
@@ -227,7 +216,6 @@ function ThoughtProblem({ partC, number, showAnswer = false }) {
 // boxes, "Answer key" in place of Name and Date; always a separate sheet).
 function FlightLogSheet({ log, mode, level, scope, answerKey = false, logIndex, logCount, breakBefore = false }) {
   const config = getModeConfig(mode);
-  const partAVerb = log.computational ? `STACK AND ${OP_VERB[config.op]}` : "WARM UP";
   let n = 0;
   const next = () => ++n;
   const answerOf = (q) => (answerKey ? q.answer : null);
@@ -265,9 +253,9 @@ function FlightLogSheet({ log, mode, level, scope, answerKey = false, logIndex, 
         </div>
       )}
 
-      {/* Part A — stacked ×6 (three per row), or warm-up prompts */}
-      <div className="mt-2">
-        <PartCaption>Part A · {partAVerb}</PartCaption>
+      {/* Stacked computations (three per row), or short prompts. No PART
+          A/B/C captions (#34): the sheet is a drill, not a test paper. */}
+      <div className="mt-4">
         {log.computational ? (
           <div className="grid grid-cols-3 gap-x-6" style={{ rowGap: "18px" }}>
             {log.partA.map((q, i) => (
@@ -283,9 +271,8 @@ function FlightLogSheet({ log, mode, level, scope, answerKey = false, logIndex, 
         )}
       </div>
 
-      {/* Part B — inline ×4, two per row */}
-      <div className="mt-5">
-        <PartCaption>Part B · Write the answer</PartCaption>
+      {/* Inline items, two per row */}
+      <div className="mt-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 print:grid-cols-2 gap-x-6" style={{ rowGap: "14px" }}>
           {log.partB.map((q, i) =>
             log.computational ? (
@@ -297,11 +284,12 @@ function FlightLogSheet({ log, mode, level, scope, answerKey = false, logIndex, 
         </div>
       </div>
 
-      {/* Part C — one thought problem, full width, at the end */}
-      {log.partC && (
-        <div className="mt-5">
-          <PartCaption>Part C · Think it through</PartCaption>
-          <ThoughtProblem partC={log.partC} number={next()} showAnswer={answerKey} />
+      {/* Word problems, full width, at the end — only when toggled on */}
+      {log.wordProblems?.length > 0 && (
+        <div className="mt-6 space-y-4">
+          {log.wordProblems.map((item, i) => (
+            <WordProblem key={i} item={item} number={next()} showAnswer={answerKey} />
+          ))}
         </div>
       )}
 
@@ -336,6 +324,14 @@ export default function PrintableWorksheet() {
   }, [generated, mode, level, sheetCount, allowWordProblems]);
 
   const scope = flightLogScope(mode, level);
+
+  // DEV-only QA hook: the e2e asserts sheet COMPOSITION (word problems on/off)
+  // from here instead of scraping prose out of the printed DOM.
+  useEffect(() => {
+    if (import.meta.env.DEV && typeof window !== "undefined") {
+      window.__larkitWorksheets = { logs, allowWordProblems };
+    }
+  }, [logs, allowWordProblems]);
 
   const handleGenerate = () => {
     setGenerated(false);

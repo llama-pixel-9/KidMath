@@ -7533,6 +7533,1250 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "numberBonds-app-b0820-001",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "partWhole",
+  "structureType": "bondStoryWholeUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 5,
+   "display": {
+    "parts": [
+     2,
+     3
+    ],
+    "promptText": "Mia has 2 red cups and 3 blue cups. How many cups does Mia have in all?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-154",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "missingPart",
+  "structureType": "bondStoryPartUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 4,
+   "display": {
+    "part": 2,
+    "whole": 6,
+    "promptText": "Leo owns 6 beads. Leo can see 2 beads on the mat; the rest hide in a pouch. How many beads hide in the pouch?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-307",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "decompose",
+  "structureType": "bondStoryPartnerToTen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 8,
+   "display": {
+    "part": 2,
+    "whole": 10,
+    "promptText": "Mia wants a full ten of cups. Mia has 2 cups so far. How many more cups make ten?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-018",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "partWhole",
+  "structureType": "bondStoryWholeUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 9,
+   "display": {
+    "parts": [
+     5,
+     4
+    ],
+    "promptText": "Sam lines up 5 green beads, then adds a row of 4 yellow beads. How many beads are in the two rows together?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-171",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "missingPart",
+  "structureType": "bondStoryPartUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 7,
+   "display": {
+    "part": 3,
+    "whole": 10,
+    "promptText": "A basket holds 10 blocks for Nia. Nia lifts out 3 blocks. How many blocks stay in the basket?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-324",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "decompose",
+  "structureType": "bondStoryPartnerToTen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 2,
+   "display": {
+    "part": 8,
+    "whole": 10,
+    "promptText": "A game needs ten beads. Sam brings 8 beads. How many beads does Sam still need for the game?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-035",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "partWhole",
+  "structureType": "bondStoryWholeUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 7,
+   "display": {
+    "parts": [
+     4,
+     3
+    ],
+    "promptText": "Ava glues 4 blocks on one page and 3 blocks on the next page. How many blocks does Ava glue in all?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-188",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "missingPart",
+  "structureType": "bondStoryPartUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 5,
+   "display": {
+    "part": 4,
+    "whole": 9,
+    "promptText": "Kai has 9 crayons in all. 4 of the crayons are new, and the rest are old. How many old crayons does Kai have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-052",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "partWhole",
+  "structureType": "bondStoryWholeUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 11,
+   "display": {
+    "parts": [
+     2,
+     9
+    ],
+    "promptText": "Ava finds 2 blocks in the morning. Later Ava finds 9 more blocks. How many blocks does Ava find that day?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-205",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "missingPart",
+  "structureType": "bondStoryPartUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 9,
+   "display": {
+    "part": 2,
+    "whole": 11,
+    "promptText": "Kai started with 2 crayons. After a trade, Kai now has 11 crayons. How many crayons did the trade add?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-358",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "decompose",
+  "structureType": "bondStoryMakeTen",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 1,
+   "display": {
+    "part": 10,
+    "whole": 11,
+    "promptText": "Mia has 6 cups and wants a full group of ten cups. A friend gives Mia 5 cups. After the group of ten is full, how many extra cups does Mia hold?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-069",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "partWhole",
+  "structureType": "bondStoryWholeUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 13,
+   "display": {
+    "parts": [
+     2,
+     11
+    ],
+    "promptText": "Luca and a friend sort crayons. Luca holds 2 crayons; the friend holds 11 crayons. How many crayons do they hold together?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-222",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "missingPart",
+  "structureType": "bondStoryPartUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 10,
+   "display": {
+    "part": 3,
+    "whole": 13,
+    "promptText": "Ida counts 13 stickers altogether. Exactly 3 of the stickers are shiny. How many of the stickers are not shiny?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-375",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "decompose",
+  "structureType": "bondStoryMakeTen",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 7,
+   "display": {
+    "part": 10,
+    "whole": 17,
+    "promptText": "Sam stacks 8 beads in a rack that holds ten. Then Sam gets 9 more beads and fills the rack. How many beads are left over after the rack is full?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-086",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "partWhole",
+  "structureType": "bondStoryWholeUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 14,
+   "display": {
+    "parts": [
+     9,
+     5
+    ],
+    "promptText": "Nora puts 9 stickers in a box and 5 stickers in a bag. How many stickers does Nora pack altogether?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-239",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "missingPart",
+  "structureType": "bondStoryPartUnknown",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 3,
+   "display": {
+    "part": 11,
+    "whole": 14,
+    "promptText": "Omar needs 14 marbles for a craft. So far Omar has 11 marbles. How many more marbles does Omar still need?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-103",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "partWhole",
+  "structureType": "bondStoryWholeUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 45,
+   "display": {
+    "parts": [
+     30,
+     15
+    ],
+    "promptText": "On the shelf, Nora keeps 30 stickers. Under the bed, Nora keeps 15 more stickers. How many stickers does Nora keep in both spots?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-256",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "missingPart",
+  "structureType": "bondStoryPartUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 25,
+   "display": {
+    "part": 20,
+    "whole": 45,
+    "promptText": "Omar splits 45 marbles between two trays. One tray gets 20 marbles. How many marbles go on the other tray?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-409",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "decompose",
+  "structureType": "bondStoryTakeOutTen",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 24,
+   "display": {
+    "part": 10,
+    "whole": 34,
+    "promptText": "Mia bundles ten of the 34 cups with a rubber band. How many cups are outside the bundle?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-120",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "partWhole",
+  "structureType": "bondStoryWholeUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 80,
+   "display": {
+    "parts": [
+     65,
+     15
+    ],
+    "promptText": "Rosa has 65 striped marbles and 15 clear marbles. How many marbles does Rosa have in all?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-273",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "missingPart",
+  "structureType": "bondStoryPartUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 25,
+   "display": {
+    "part": 27,
+    "whole": 52,
+    "promptText": "Finn owns 52 buttons. Finn can see 27 buttons on the mat; the rest hide in a pouch. How many buttons hide in the pouch?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-426",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "decompose",
+  "structureType": "bondStoryTakeOutTen",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 39,
+   "display": {
+    "part": 10,
+    "whole": 49,
+    "promptText": "From a jar of 49 beads, Sam scoops out a full group of ten beads. How many beads remain in the jar?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-137",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "partWhole",
+  "structureType": "bondStoryTensOnes",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 67,
+   "display": {
+    "parts": [
+     60,
+     7
+    ],
+    "promptText": "Nia strings socks in tens: 6 full strings, plus 7 single socks. How many socks does Nia have altogether?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-app-b0820-290",
+  "modeId": "numberBonds",
+  "itemFamily": "application",
+  "subskill": "missingPart",
+  "structureType": "bondStoryPartUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 41,
+   "display": {
+    "part": 33,
+    "whole": 74,
+    "promptText": "A basket holds 74 leaves for Theo. Theo lifts out 33 leaves. How many leaves stay in the basket?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-001",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "partWhole",
+  "structureType": "frameWholeUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 7,
+   "display": {
+    "parts": [
+     5,
+     2
+    ],
+    "filled": 5,
+    "frames": 1,
+    "filledB": 2,
+    "frameMode": "count",
+    "promptText": "The frame shows 5 red counters and 2 blue counters. How many counters in all?"
+   },
+   "answerType": "tenFrame"
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-151",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "missingPart",
+  "structureType": "makeTenFrame",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 9,
+   "display": {
+    "part": 1,
+    "whole": 10,
+    "filled": 1,
+    "frames": 1,
+    "frameMode": "count",
+    "promptText": "The frame shows 1 counter. How many more counters make 10?"
+   },
+   "answerType": "tenFrame"
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-305",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "decompose",
+  "structureType": "whichPairMakesWhole",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": "2 and 3",
+   "choices": [
+    "2 and 3",
+    "3 and 4",
+    "2 and 2",
+    "2 and 4"
+   ],
+   "display": {
+    "promptText": "Which pair makes 5?"
+   }
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-017",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "partWhole",
+  "structureType": "frameWholeUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 5,
+   "display": {
+    "parts": [
+     2,
+     3
+    ],
+    "filled": 2,
+    "frames": 1,
+    "filledB": 3,
+    "frameMode": "count",
+    "promptText": "A ten frame holds 2 red counters and 3 blue counters. What is the total number of counters?"
+   },
+   "answerType": "tenFrame"
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-169",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "missingPart",
+  "structureType": "makeFiveFrame",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 1,
+   "display": {
+    "part": 4,
+    "whole": 5,
+    "filled": 4,
+    "frames": 1,
+    "frameMode": "count",
+    "promptText": "The top row should hold 5. It shows 4 counters — how many more counters does the row need?"
+   },
+   "answerType": "tenFrame"
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-321",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "decompose",
+  "structureType": "oddOneOutBond",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": "6 and 5",
+   "choices": [
+    "1 and 9",
+    "6 and 5",
+    "8 and 2",
+    "9 and 1"
+   ],
+   "display": {
+    "promptText": "Which pair does NOT make 10?"
+   }
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-033",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "partWhole",
+  "structureType": "pictureWholeUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 9,
+   "display": {
+    "parts": [
+     6,
+     3
+    ],
+    "promptText": "One part: 🐟🐟🐟🐟🐟🐟 Other part: 🐟🐟🐟 How many fish in all?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-187",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "missingPart",
+  "structureType": "bondSentence",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 1,
+   "display": {
+    "part": 8,
+    "whole": 9,
+    "promptText": "A whole of 9 hides two parts. One part is 8 — name the other part."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-051",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "partWhole",
+  "structureType": "teenFrameWhole",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 11,
+   "display": {
+    "parts": [
+     10,
+     1
+    ],
+    "filled": 10,
+    "frames": 2,
+    "filledB": 1,
+    "frameMode": "count",
+    "promptText": "One full frame of 10 and 1 more. How many counters is that?"
+   },
+   "answerType": "tenFrame"
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-205",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "missingPart",
+  "structureType": "hiddenPartFrame",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 4,
+   "display": {
+    "part": 8,
+    "whole": 12,
+    "filled": 8,
+    "frames": 1,
+    "frameMode": "count",
+    "promptText": "There are 12 counters in all. The frame shows 8 of them — how many counters are hidden?"
+   },
+   "answerType": "tenFrame"
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-355",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "decompose",
+  "structureType": "openDecompositionTeen",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": [
+    "3 and 9",
+    "8 and 4"
+   ],
+   "display": {
+    "options": [
+     "8 and 4",
+     "3 and 10",
+     "8 and 6",
+     "3 and 9"
+    ],
+    "promptText": "Select BOTH pairs that bond to 12.",
+    "requiredCount": 2
+   },
+   "answerType": "multiSelect"
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-067",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "partWhole",
+  "structureType": "chooseWhole",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 11,
+   "choices": [
+    11,
+    5,
+    8,
+    12
+   ],
+   "display": {
+    "promptText": "The two parts of a bond are 8 and 3. Which of these is the whole?"
+   }
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-221",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "missingPart",
+  "structureType": "hiddenPartFrame",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 9,
+   "display": {
+    "part": 7,
+    "whole": 16,
+    "filled": 7,
+    "frames": 1,
+    "frameMode": "count",
+    "promptText": "16 counters were shared between the frame and a cup. The frame holds 7 counters. How many counters wait in the cup?"
+   },
+   "answerType": "tenFrame"
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-371",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "decompose",
+  "structureType": "factFamily",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": [
+    "13 − 4 = 9",
+    "13 − 9 = 4"
+   ],
+   "display": {
+    "options": [
+     "13 − 4 = 9",
+     "13 − 9 = 4",
+     "13 − 4 = 4",
+     "4 − 9 = 13"
+    ],
+    "promptText": "A bond shows whole 13 with parts 4 and 9. Choose BOTH subtraction sentences it makes.",
+    "requiredCount": 2
+   },
+   "answerType": "multiSelect"
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-083",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "partWhole",
+  "structureType": "chooseWhole",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 13,
+   "choices": [
+    13,
+    5,
+    9,
+    14
+   ],
+   "display": {
+    "promptText": "4 and 9 snap together in a bond. Which total do they build?"
+   }
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-237",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "missingPart",
+  "structureType": "teenBondSentence",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 9,
+   "display": {
+    "part": 4,
+    "whole": 13,
+    "promptText": "13 splits into 4 and one more part. How big is that part?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-101",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "partWhole",
+  "structureType": "unitFormWhole",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 263,
+   "display": {
+    "parts": [
+     200,
+     60,
+     3
+    ],
+    "promptText": "2 hundreds 6 tens 3 ones. What number is the whole?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-255",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "missingPart",
+  "structureType": "nonCanonicalSplit",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 10,
+   "display": {
+    "part": 33,
+    "whole": 43,
+    "promptText": "Split 43 into 33 and one more part. What is the other part?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-405",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "decompose",
+  "structureType": "threeBranchPlace",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 60,
+   "display": {
+    "parts": [
+     200,
+     3
+    ],
+    "whole": 263,
+    "promptText": "Split 263 into hundreds, tens, and ones: 200, ?, 3. What goes in the middle?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-117",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "partWhole",
+  "structureType": "unitFormWhole",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 914,
+   "display": {
+    "parts": [
+     900,
+     10,
+     4
+    ],
+    "promptText": "The parts of a number are 9 hundreds, 1 ten, and 4 ones. Name the number."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-271",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "missingPart",
+  "structureType": "nonCanonicalSplit",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 20,
+   "display": {
+    "part": 38,
+    "whole": 58,
+    "promptText": "A bond splits 58 so one part is 38. How big is the second part?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-422",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "decompose",
+  "structureType": "threeBranchPlace",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 80,
+   "display": {
+    "parts": [
+     600,
+     9
+    ],
+    "whole": 689,
+    "promptText": "Three branches split 689: 600, a covered branch, and 9. What number is covered?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-133",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "partWhole",
+  "structureType": "tensOnesWhole",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 43,
+   "display": {
+    "parts": [
+     40,
+     3
+    ],
+    "promptText": "Join the parts 40 and 3. What is the whole?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-conc-b0820-287",
+  "modeId": "numberBonds",
+  "itemFamily": "conceptual",
+  "subskill": "missingPart",
+  "structureType": "errorAtMagnitude",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 30,
+   "display": {
+    "part": 20,
+    "whole": 50,
+    "promptText": "Ava filled a bond: whole 50, part 20, other part 70. The answer 70 is bigger than the whole! What is the correct part?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
   "itemId": "numberBonds-proc-b0820-001",
   "modeId": "numberBonds",
   "itemFamily": "procedural",

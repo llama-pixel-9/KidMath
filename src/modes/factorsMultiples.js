@@ -214,7 +214,9 @@ export const FACTOR_VARIETIES = [
     build(band) {
       const n = randInt(2, band === 1 ? 5 : 9);
       const yes = Math.random() < 0.5;
-      const candidate = yes ? n * randInt(2, 9) : n * randInt(2, 9) + randInt(1, n - 1);
+      // Band 1 keeps candidates ≤ 20 (K-1 magnitude rule) — n*9 reached 45.
+      const maxK = band === 1 ? Math.max(2, Math.floor(20 / n) - 1) : 9;
+      const candidate = yes ? n * randInt(2, maxK) : n * randInt(2, maxK) + randInt(1, n - 1);
       return {
         answer: candidate % n === 0 ? "Yes" : "No",
         answerType: "choice",

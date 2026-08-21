@@ -13,6 +13,7 @@ import { ITEMS as countingItems } from "./items/counting.js";
 import { ITEMS as dataGraphsItems } from "./items/dataGraphs.js";
 import { ITEMS as decimalsItems } from "./items/decimals.js";
 import { ITEMS as divisionItems } from "./items/division.js";
+import { ITEMS as factorsMultiplesItems } from "./items/factorsMultiples.js";
 import { ITEMS as fractionsItems } from "./items/fractions.js";
 import { ITEMS as linesShapesItems } from "./items/linesShapes.js";
 import { ITEMS as measurementItems } from "./items/measurement.js";
@@ -34,6 +35,7 @@ export const APPLICATION_ITEM_BANK = [
   ...dataGraphsItems,
   ...decimalsItems,
   ...divisionItems,
+  ...factorsMultiplesItems,
   ...fractionsItems,
   ...linesShapesItems,
   ...measurementItems,

@@ -6457,11 +6457,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "decimals-proc-b0821-0001",
+  "itemId": "decimals-proc-b0821-0157",
   "modeId": "decimals",
   "itemFamily": "procedural",
   "subskill": "tenthsHundredths",
-  "structureType": "writeDecimal_band1",
+  "structureType": "fillNumerator_band1",
   "levelRange": [
    1,
    3
@@ -6471,15 +6471,15 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "dec",
-   "answer": 0.1,
+   "answer": 1,
    "display": {
     "dec": {
      "n": 1,
-     "kind": "tenths"
+     "kind": "jumpsDec"
     },
-    "promptText": "Write one tenth as a decimal."
+    "promptText": "0.1 = ?/10"
    },
-   "answerType": "decimal"
+   "answerType": "numberPad"
   }
  },
  {
@@ -6569,11 +6569,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "decimals-proc-b0821-0085",
+  "itemId": "decimals-proc-b0821-0046",
   "modeId": "decimals",
   "itemFamily": "procedural",
   "subskill": "tenthsHundredths",
-  "structureType": "readDigit_band1",
+  "structureType": "shadeDecimal_band1",
   "levelRange": [
    1,
    3
@@ -6583,19 +6583,15 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "dec",
-   "answer": 7,
+   "answer": 0.7,
    "display": {
     "dec": {
-     "kind": "digitOf",
-     "place": "tenths",
-     "digits": [
-      0,
-      7
-     ]
+     "n": 7,
+     "kind": "tenths"
     },
-    "promptText": "In the decimal 0.7, the tenths digit = ?"
+    "promptText": "A strip has 10 equal parts. Exactly 7 parts are colored. The decimal for the colored amount = ?"
    },
-   "answerType": "numberPad"
+   "answerType": "decimal"
   }
  },
  {
@@ -6665,7 +6661,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "decimals-proc-b0821-0567",
+  "itemId": "decimals-proc-b0821-0562",
   "modeId": "decimals",
   "itemFamily": "procedural",
   "subskill": "decimalAsNumber",
@@ -6679,24 +6675,24 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "dec",
-   "answer": 0.9,
+   "answer": 0.4,
    "display": {
     "dec": {
-     "k": 9,
+     "k": 4,
      "den": 10,
      "kind": "tickDec"
     },
-    "promptText": "A number line runs 0 to 1 in 10 equal steps. Mark 9 shows which decimal? Type it."
+    "promptText": "Step 4 of 10 along a 0-1 line lands on which decimal? Type it."
    },
    "answerType": "decimal"
   }
  },
  {
-  "itemId": "decimals-proc-b0821-0014",
+  "itemId": "decimals-proc-b0821-0170",
   "modeId": "decimals",
   "itemFamily": "procedural",
   "subskill": "tenthsHundredths",
-  "structureType": "writeDecimal_band2",
+  "structureType": "fillNumerator_band2",
   "levelRange": [
    4,
    6
@@ -6706,16 +6702,16 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "dec",
-   "answer": 0.15,
+   "answer": 15,
    "display": {
     "dec": {
      "h": 5,
      "t": 1,
-     "kind": "hundredths"
+     "kind": "asHundredths"
     },
-    "promptText": "Write 1 tenths and 5 hundredths as one decimal."
+    "promptText": "0.15 = ?/100"
    },
-   "answerType": "decimal"
+   "answerType": "numberPad"
   }
  },
  {
@@ -6805,11 +6801,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "decimals-proc-b0821-0098",
+  "itemId": "decimals-proc-b0821-0059",
   "modeId": "decimals",
   "itemFamily": "procedural",
   "subskill": "tenthsHundredths",
-  "structureType": "readDigit_band2",
+  "structureType": "shadeDecimal_band2",
   "levelRange": [
    4,
    6
@@ -6819,19 +6815,15 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "dec",
-   "answer": 7,
+   "answer": 0.66,
    "display": {
     "dec": {
-     "kind": "digitOf",
-     "place": "tenths",
-     "digits": [
-      7,
-      4
-     ]
+     "h": 66,
+     "kind": "gridShade"
     },
-    "promptText": "In the decimal 0.74, the tenths digit = ?"
+    "promptText": "A 10-by-10 grid has exactly 66 of its 100 small squares colored. The decimal for the colored part = ?"
    },
-   "answerType": "numberPad"
+   "answerType": "decimal"
   }
  },
  {
@@ -6901,7 +6893,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "decimals-proc-b0821-0584",
+  "itemId": "decimals-proc-b0821-0579",
   "modeId": "decimals",
   "itemFamily": "procedural",
   "subskill": "decimalAsNumber",
@@ -6915,24 +6907,24 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "dec",
-   "answer": 0.9,
+   "answer": 0.4,
    "display": {
     "dec": {
-     "k": 9,
+     "k": 4,
      "den": 10,
      "kind": "tickDec"
     },
-    "promptText": "A 0-1 number line is cut into 10 equal steps. Type the decimal at step 9."
+    "promptText": "Between 0 and 1, mark 4 of 10 sits at which decimal? Type it."
    },
    "answerType": "decimal"
   }
  },
  {
-  "itemId": "decimals-proc-b0821-0027",
+  "itemId": "decimals-proc-b0821-0183",
   "modeId": "decimals",
   "itemFamily": "procedural",
   "subskill": "tenthsHundredths",
-  "structureType": "writeDecimal_band3",
+  "structureType": "fillNumerator_band3",
   "levelRange": [
    7,
    10
@@ -6942,17 +6934,17 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "dec",
-   "answer": 1.25,
+   "answer": 125,
    "display": {
     "dec": {
      "h": 5,
      "t": 2,
      "w": 1,
-     "kind": "compose"
+     "kind": "asHundredthsAll"
     },
-    "promptText": "Write 1 ones, 2 tenths, and 5 hundredths as a decimal."
+    "promptText": "1.25 = ?/100"
    },
-   "answerType": "decimal"
+   "answerType": "numberPad"
   }
  },
  {
@@ -7042,11 +7034,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "decimals-proc-b0821-0111",
+  "itemId": "decimals-proc-b0821-0072",
   "modeId": "decimals",
   "itemFamily": "procedural",
   "subskill": "tenthsHundredths",
-  "structureType": "readDigit_band3",
+  "structureType": "shadeDecimal_band3",
   "levelRange": [
    7,
    10
@@ -7056,20 +7048,15 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "dec",
-   "answer": 7,
+   "answer": 0.61,
    "display": {
     "dec": {
-     "kind": "digitOf3",
-     "place": "ones",
-     "digits": [
-      7,
-      5,
-      4
-     ]
+     "h": 61,
+     "kind": "gridShade"
     },
-    "promptText": "In the decimal 7.54, the ones digit = ?"
+    "promptText": "A hundred-square chart shows 61 of 100 squares filled. Type the filled amount as a decimal."
    },
-   "answerType": "numberPad"
+   "answerType": "decimal"
   }
  },
  {
@@ -7139,7 +7126,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "decimals-proc-b0821-0601",
+  "itemId": "decimals-proc-b0821-0596",
   "modeId": "decimals",
   "itemFamily": "procedural",
   "subskill": "decimalAsNumber",
@@ -7153,14 +7140,14 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "dec",
-   "answer": 0.85,
+   "answer": 0.35,
    "display": {
     "dec": {
-     "k": 85,
+     "k": 35,
      "den": 100,
      "kind": "tickDec"
     },
-    "promptText": "A unit line is split into 100 equal steps. Type the decimal at mark 85."
+    "promptText": "Between 0 and 1, mark 35 of 100 corresponds to which decimal? Type it."
    },
    "answerType": "decimal"
   }
@@ -8720,6 +8707,687 @@ export const SEED_ITEMS = [
    "display": {
     "promptText": "4 ÷ 2 = ?"
    }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0040",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorCount",
+  "structureType": "missingFactor_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "fm": {
+     "a": 3,
+     "n": 12,
+     "kind": "pairFor"
+    },
+    "promptText": "12 = 3 x ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0205",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "nthMultiple",
+  "structureType": "multipleSeq_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "fm": {
+     "b": 2,
+     "k": 4,
+     "kind": "nthMult"
+    },
+    "promptText": "x2: 2, 4, 6, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0354",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorPairs",
+  "structureType": "pairRows_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "fm": {
+     "a": 4,
+     "n": 12,
+     "kind": "pairFor"
+    },
+    "promptText": "12 = ? x 4"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0471",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "primesAndCommon",
+  "structureType": "primePick_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "choices": [
+    9,
+    4,
+    6,
+    5
+   ],
+   "display": {
+    "fm": {
+     "kind": "primePick"
+    },
+    "promptText": "Which of these is a prime number: 9, 4, 6, 5? Pick it."
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0079",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorCount",
+  "structureType": "pickFactor_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "choices": [
+    7,
+    11,
+    5,
+    3
+   ],
+   "display": {
+    "fm": {
+     "n": 12,
+     "kind": "pickFactor"
+    },
+    "promptText": "Which of 7, 11, 5, 3 is a factor of 12? Pick it."
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0237",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "nthMultiple",
+  "structureType": "nextMultiple_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "fm": {
+     "b": 2,
+     "m": 8,
+     "kind": "nextMult"
+    },
+    "promptText": "Which multiple of 2 comes right after 8? Type it."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0393",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorPairs",
+  "structureType": "pairPick_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "3 x 4",
+   "choices": [
+    "4 x 5",
+    "2 x 5",
+    "3 x 5",
+    "3 x 4"
+   ],
+   "display": {
+    "fm": {
+     "n": 12,
+     "kind": "pairPick"
+    },
+    "promptText": "Which pair multiplies to 12: 4 x 5, 2 x 5, 3 x 5, 3 x 4? Pick it."
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0549",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "primesAndCommon",
+  "structureType": "commonMultiple_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "fm": {
+     "a": 2,
+     "b": 3,
+     "kind": "lcmOf"
+    },
+    "promptText": "What is the smallest number that is a multiple of both 2 and 3? Type it."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0053",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorCount",
+  "structureType": "missingFactor_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "fm": {
+     "a": 2,
+     "n": 14,
+     "kind": "pairFor"
+    },
+    "promptText": "14 = 2 x ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0212",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "nthMultiple",
+  "structureType": "multipleSeq_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 24,
+   "display": {
+    "fm": {
+     "b": 6,
+     "k": 4,
+     "kind": "nthMult"
+    },
+    "promptText": "x6: 6, 12, 18, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0367",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorPairs",
+  "structureType": "pairRows_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "fm": {
+     "a": 7,
+     "n": 14,
+     "kind": "pairFor"
+    },
+    "promptText": "14 = ? x 7"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0484",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "primesAndCommon",
+  "structureType": "primePick_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 17,
+   "choices": [
+    16,
+    15,
+    18,
+    17
+   ],
+   "display": {
+    "fm": {
+     "kind": "primePick"
+    },
+    "promptText": "Select the prime number: 16, 15, 18, 17. Which is it?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0092",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorCount",
+  "structureType": "pickFactor_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "choices": [
+    4,
+    3,
+    5,
+    7
+   ],
+   "display": {
+    "fm": {
+     "n": 14,
+     "kind": "pickFactor"
+    },
+    "promptText": "Select the factor of 14 from 4, 3, 5, 7. Which is it?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0188",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "nthMultiple",
+  "structureType": "nthMultiple_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 48,
+   "display": {
+    "fm": {
+     "b": 8,
+     "k": 6,
+     "kind": "nthMult"
+    },
+    "promptText": "The 6th entry in the multiples of 8 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0406",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorPairs",
+  "structureType": "pairPick_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "2 x 7",
+   "choices": [
+    "4 x 4",
+    "2 x 6",
+    "2 x 7",
+    "3 x 5"
+   ],
+   "display": {
+    "fm": {
+     "n": 14,
+     "kind": "pairPick"
+    },
+    "promptText": "Select the factor pair of 14 from 4 x 4, 2 x 6, 2 x 7, 3 x 5. Which is it?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0562",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "primesAndCommon",
+  "structureType": "commonMultiple_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "fm": {
+     "a": 4,
+     "b": 6,
+     "kind": "lcmOf"
+    },
+    "promptText": "Find the least common multiple of 4 and 6."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0066",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorCount",
+  "structureType": "missingFactor_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "fm": {
+     "a": 4,
+     "n": 32,
+     "kind": "pairFor"
+    },
+    "promptText": "32 = 4 x ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0220",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "nthMultiple",
+  "structureType": "multipleSeq_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 44,
+   "display": {
+    "fm": {
+     "b": 11,
+     "k": 4,
+     "kind": "nthMult"
+    },
+    "promptText": "x11: 11, 22, 33, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0380",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorPairs",
+  "structureType": "pairRows_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "fm": {
+     "a": 16,
+     "n": 32,
+     "kind": "pairFor"
+    },
+    "promptText": "32 = ? x 16"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0497",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "primesAndCommon",
+  "structureType": "primePick_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 31,
+   "choices": [
+    31,
+    32,
+    34,
+    33
+   ],
+   "display": {
+    "fm": {
+     "kind": "primePick"
+    },
+    "promptText": "Identify the prime number in 31, 32, 34, 33. Which is it?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0105",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorCount",
+  "structureType": "pickFactor_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "choices": [
+    8,
+    3,
+    6,
+    5
+   ],
+   "display": {
+    "fm": {
+     "n": 32,
+     "kind": "pickFactor"
+    },
+    "promptText": "Identify the factor of 32 within 8, 3, 6, 5. Which is it?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0204",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "nthMultiple",
+  "structureType": "nthMultiple_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 60,
+   "display": {
+    "fm": {
+     "b": 15,
+     "k": 4,
+     "kind": "nthMult"
+    },
+    "promptText": "The multiples of 15 reach which value at position 4? Type it."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0419",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorPairs",
+  "structureType": "pairPick_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "4 x 8",
+   "choices": [
+    "5 x 6",
+    "3 x 10",
+    "4 x 8",
+    "4 x 7"
+   ],
+   "display": {
+    "fm": {
+     "n": 32,
+     "kind": "pairPick"
+    },
+    "promptText": "Identify the factor pair of 32 within 5 x 6, 3 x 10, 4 x 8, 4 x 7. Which is it?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0575",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "primesAndCommon",
+  "structureType": "commonMultiple_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 36,
+   "display": {
+    "fm": {
+     "a": 12,
+     "b": 18,
+     "kind": "lcmOf"
+    },
+    "promptText": "Compute the least common multiple of 12 and 18 exactly."
+   },
+   "answerType": "numberPad"
   }
  },
  {
@@ -10868,11 +11536,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "money-proc-b0821-0001",
+  "itemId": "money-proc-b0821-0021",
   "modeId": "money",
   "itemFamily": "procedural",
   "subskill": "countCoins",
-  "structureType": "coinSumTeen",
+  "structureType": "trayCountTeen",
   "levelRange": [
    1,
    3
@@ -10882,20 +11550,25 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 13,
+   "answer": 12,
    "display": {
+    "coins": [
+     "penny",
+     "dime",
+     "penny"
+    ],
+    "coinMode": "count",
     "counting": {
      "kind": "sum",
      "parts": [
       10,
       1,
-      1,
       1
      ]
     },
-    "promptText": "1 dime and 3 pennies = ? cents"
+    "promptText": "10 + 1 + 1 = ? c"
    },
-   "answerType": "numberPad"
+   "answerType": "coinTray"
   }
  },
  {
@@ -10979,11 +11652,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "money-proc-b0821-0027",
+  "itemId": "money-proc-b0821-0007",
   "modeId": "money",
   "itemFamily": "procedural",
   "subskill": "countCoins",
-  "structureType": "trayCountTeen",
+  "structureType": "coinSumTeen",
   "levelRange": [
    1,
    3
@@ -10993,31 +11666,22 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 6,
+   "answer": 19,
    "display": {
-    "coins": [
-     "penny",
-     "penny",
-     "penny",
-     "penny",
-     "penny",
-     "penny"
-    ],
-    "coinMode": "count",
     "counting": {
      "kind": "sum",
      "parts": [
-      1,
-      1,
+      10,
+      5,
       1,
       1,
       1,
       1
      ]
     },
-    "promptText": "1 + 1 + 1 + 1 + 1 + 1 = ? c"
+    "promptText": "1 dime, 1 nickel and 4 pennies = ? cents"
    },
-   "answerType": "coinTray"
+   "answerType": "numberPad"
   }
  },
  {
@@ -11104,11 +11768,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "money-proc-b0821-0053",
+  "itemId": "money-proc-b0821-0071",
   "modeId": "money",
   "itemFamily": "procedural",
   "subskill": "countCoins",
-  "structureType": "coinSumMid",
+  "structureType": "trayCountMid",
   "levelRange": [
    4,
    6
@@ -11118,21 +11782,25 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 38,
+   "answer": 36,
    "display": {
+    "coins": [
+     "quarter",
+     "dime",
+     "penny"
+    ],
+    "coinMode": "count",
     "counting": {
      "kind": "sum",
      "parts": [
       25,
       10,
-      1,
-      1,
       1
      ]
     },
-    "promptText": "1 quarter, 1 dime and 3 pennies = ? cents"
+    "promptText": "25 + 10 + 1 = ? c"
    },
-   "answerType": "numberPad"
+   "answerType": "coinTray"
   }
  },
  {
@@ -11216,11 +11884,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "money-proc-b0821-0078",
+  "itemId": "money-proc-b0821-0062",
   "modeId": "money",
   "itemFamily": "procedural",
   "subskill": "countCoins",
-  "structureType": "trayCountMid",
+  "structureType": "coinSumMid",
   "levelRange": [
    4,
    6
@@ -11230,31 +11898,21 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 50,
+   "answer": 62,
    "display": {
-    "coins": [
-     "nickel",
-     "nickel",
-     "dime",
-     "dime",
-     "dime",
-     "dime"
-    ],
-    "coinMode": "count",
     "counting": {
      "kind": "sum",
      "parts": [
+      25,
+      25,
       10,
-      10,
-      10,
-      10,
-      5,
-      5
+      1,
+      1
      ]
     },
-    "promptText": "10 + 10 + 10 + 10 + 5 + 5 = ? c"
+    "promptText": "2 quarters, 1 dime and 2 pennies = ? cents"
    },
-   "answerType": "coinTray"
+   "answerType": "numberPad"
   }
  },
  {
@@ -11397,7 +12055,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "money-proc-b0821-0414",
+  "itemId": "money-proc-b0821-0415",
   "modeId": "money",
   "itemFamily": "procedural",
   "subskill": "coinEquivalence",
@@ -11411,14 +12069,14 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 4,
+   "answer": 10,
    "display": {
     "money": {
-     "per": 25,
+     "per": 10,
      "kind": "trade",
      "fromCents": 100
     },
-    "promptText": "$1 = ? quarters"
+    "promptText": "$1 = ? dimes"
    },
    "answerType": "numberPad"
   }
@@ -12645,7 +13303,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-arrayReasoning-23-018",
+  "itemId": "multiplication-proc-arrayReasoning-23-008",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "arrayReasoning",
@@ -12656,12 +13314,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 6,
-   "b": 4,
+   "a": 7,
+   "b": 2,
    "op": "×",
-   "answer": 24,
+   "answer": 14,
    "display": {
-    "promptText": "Multiply: 6 × 4."
+    "promptText": "Compute 7 × 2."
    }
   }
  },
@@ -12687,7 +13345,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-factFluency-23-018",
+  "itemId": "multiplication-proc-factFluency-23-031",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "factFluency",
@@ -12698,17 +13356,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 3,
+   "a": 5,
    "b": 7,
    "op": "×",
-   "answer": 21,
+   "answer": 35,
    "display": {
-    "promptText": "Find 3 × 7."
+    "promptText": "5 times 7 = ?"
    }
   }
  },
  {
-  "itemId": "multiplication-proc-arrayReasoning-23-035",
+  "itemId": "multiplication-proc-arrayReasoning-23-025",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "arrayReasoning",
@@ -12720,11 +13378,11 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 8,
-   "b": 6,
+   "b": 3,
    "op": "×",
-   "answer": 48,
+   "answer": 24,
    "display": {
-    "promptText": "Evaluate: 8 × 6."
+    "promptText": "Multiply: 8 × 3."
    }
   }
  },
@@ -12813,7 +13471,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-arrayReasoning-45-018",
+  "itemId": "multiplication-proc-arrayReasoning-45-008",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "arrayReasoning",
@@ -12824,12 +13482,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 8,
-   "b": 10,
+   "a": 10,
+   "b": 11,
    "op": "×",
-   "answer": 80,
+   "answer": 110,
    "display": {
-    "promptText": "Multiply: 8 × 10."
+    "promptText": "Compute 10 × 11."
    }
   }
  },
@@ -12855,7 +13513,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-factFluency-45-018",
+  "itemId": "multiplication-proc-factFluency-45-031",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "factFluency",
@@ -12866,17 +13524,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 7,
-   "b": 11,
+   "a": 10,
+   "b": 9,
    "op": "×",
-   "answer": 77,
+   "answer": 90,
    "display": {
-    "promptText": "Find 7 × 11."
+    "promptText": "10 times 9 = ?"
    }
   }
  },
  {
-  "itemId": "multiplication-proc-arrayReasoning-45-035",
+  "itemId": "multiplication-proc-arrayReasoning-45-025",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "arrayReasoning",
@@ -12887,12 +13545,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 10,
-   "b": 11,
+   "a": 14,
+   "b": 6,
    "op": "×",
-   "answer": 110,
+   "answer": 84,
    "display": {
-    "promptText": "Evaluate: 10 × 11."
+    "promptText": "Multiply: 14 × 6."
    }
   }
  },
@@ -12981,7 +13639,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-arrayReasoning-K1-018",
+  "itemId": "multiplication-proc-arrayReasoning-K1-008",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "arrayReasoning",
@@ -12992,12 +13650,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 2,
-   "b": 3,
+   "a": 3,
+   "b": 2,
    "op": "×",
    "answer": 6,
    "display": {
-    "promptText": "Multiply: 2 × 3."
+    "promptText": "Compute 3 × 2."
    }
   }
  },
@@ -13023,7 +13681,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-factFluency-K1-018",
+  "itemId": "multiplication-proc-factFluency-K1-031",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "factFluency",
@@ -13034,17 +13692,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 1,
+   "a": 2,
    "b": 2,
    "op": "×",
-   "answer": 2,
+   "answer": 4,
    "display": {
-    "promptText": "Find 1 × 2."
+    "promptText": "2 times 2 = ?"
    }
   }
  },
  {
-  "itemId": "multiplication-proc-arrayReasoning-K1-035",
+  "itemId": "multiplication-proc-arrayReasoning-K1-025",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "arrayReasoning",
@@ -13055,12 +13713,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 3,
-   "b": 3,
+   "a": 4,
+   "b": 4,
    "op": "×",
-   "answer": 9,
+   "answer": 16,
    "display": {
-    "promptText": "Evaluate: 3 × 3."
+    "promptText": "Multiply: 4 × 4."
    }
   }
  },
@@ -16999,11 +17657,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placeValue-proc-b0821-0001",
+  "itemId": "placeValue-proc-b0821-0019",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "tensOnes",
-  "structureType": "teenFrameRead",
+  "structureType": "teenOnesDigit",
   "levelRange": [
    1,
    3
@@ -17013,19 +17671,16 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 11,
+   "answer": 1,
    "display": {
-    "filled": 11,
-    "frames": 2,
     "counting": {
-     "kind": "groups",
-     "ones": 1,
-     "tens": 1
+     "n": 11,
+     "kind": "digit",
+     "place": 1
     },
-    "frameMode": "count",
-    "promptText": "One full frame and some more. What teen number do the frames show?"
+    "promptText": "11 → 10 + ?"
    },
-   "answerType": "tenFrame"
+   "answerType": "numberPad"
   }
  },
  {
@@ -17085,11 +17740,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placeValue-proc-b0821-0019",
+  "itemId": "placeValue-proc-b0821-0010",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "tensOnes",
-  "structureType": "teenOnesDigit",
+  "structureType": "teenUnitCompose",
   "levelRange": [
    1,
    3
@@ -17099,24 +17754,24 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 1,
+   "answer": 11,
    "display": {
     "counting": {
-     "n": 11,
-     "kind": "digit",
-     "place": 1
+     "kind": "groups",
+     "ones": 1,
+     "tens": 1
     },
-    "promptText": "11 → 10 + ?"
+    "promptText": "1 ten 1 one = ?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placeValue-proc-b0821-0174",
+  "itemId": "placeValue-proc-b0821-0194",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "expandedForm",
-  "structureType": "wordToNumeralTeen",
+  "structureType": "teenExpandJudge",
   "levelRange": [
    1,
    3
@@ -17126,11 +17781,16 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 20,
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
    "display": {
-    "promptText": "twenty = ?"
+    "truth": true,
+    "promptText": "10 + 7 = 17"
    },
-   "answerType": "numberPad"
+   "subPrompt": "Is this right?"
   }
  },
  {
@@ -17190,11 +17850,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placeValue-proc-b0821-0192",
+  "itemId": "placeValue-proc-b0821-0168",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "expandedForm",
-  "structureType": "numeralToWordTeen",
+  "structureType": "wordToNumeralTeen",
   "levelRange": [
    1,
    3
@@ -17204,16 +17864,11 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": "eleven",
-   "choices": [
-    "thirteen",
-    "fourteen",
-    "eleven",
-    "twelve"
-   ],
+   "answer": 14,
    "display": {
-    "promptText": "Which word names 11?"
-   }
+    "promptText": "fourteen = ?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
@@ -17488,11 +18143,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placeValue-proc-b0821-0417",
+  "itemId": "placeValue-proc-b0821-0435",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "regroupingSense",
-  "structureType": "nonCanonicalComposeBig",
+  "structureType": "renameAsTens",
   "levelRange": [
    7,
    10
@@ -17502,15 +18157,14 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 345,
+   "answer": 34,
    "display": {
     "counting": {
-     "kind": "units",
-     "ones": 5,
-     "tens": 14,
-     "hundreds": 2
+     "have": 0,
+     "kind": "gap",
+     "target": 34
     },
-    "promptText": "2 hundreds 14 tens 5 ones = ?"
+    "promptText": "340 = ? tens"
    },
    "answerType": "numberPad"
   }
@@ -17543,11 +18197,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placeValue-proc-b0821-0278",
+  "itemId": "placeValue-proc-b0821-0296",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "expandedForm",
-  "structureType": "expandPartBig",
+  "structureType": "expandJudgeBig",
   "levelRange": [
    7,
    10
@@ -17557,24 +18211,24 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 40,
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
    "display": {
-    "counting": {
-     "n": 347,
-     "kind": "placeValueOf",
-     "place": 10
-    },
-    "promptText": "347 → ? from the tens place"
+    "truth": true,
+    "promptText": "300 + 40 + 6 = 346"
    },
-   "answerType": "numberPad"
+   "subPrompt": "Is this right?"
   }
  },
  {
-  "itemId": "placeValue-proc-b0821-0435",
+  "itemId": "placeValue-proc-b0821-0417",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "regroupingSense",
-  "structureType": "renameAsTens",
+  "structureType": "nonCanonicalComposeBig",
   "levelRange": [
    7,
    10
@@ -17584,14 +18238,15 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 34,
+   "answer": 345,
    "display": {
     "counting": {
-     "have": 0,
-     "kind": "gap",
-     "target": 34
+     "kind": "units",
+     "ones": 5,
+     "tens": 14,
+     "hundreds": 2
     },
-    "promptText": "340 = ? tens"
+    "promptText": "2 hundreds 14 tens 5 ones = ?"
    },
    "answerType": "numberPad"
   }
@@ -17624,11 +18279,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placeValue-proc-b0821-0296",
+  "itemId": "placeValue-proc-b0821-0281",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "expandedForm",
-  "structureType": "expandJudgeBig",
+  "structureType": "expandPartBig",
   "levelRange": [
    7,
    10
@@ -17638,16 +18293,16 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": "Yes",
-   "choices": [
-    "Yes",
-    "No"
-   ],
+   "answer": 90,
    "display": {
-    "truth": true,
-    "promptText": "300 + 40 + 6 = 346"
+    "counting": {
+     "n": 493,
+     "kind": "placeValueOf",
+     "place": 10
+    },
+    "promptText": "493 → ? from the tens place"
    },
-   "subPrompt": "Is this right?"
+   "answerType": "numberPad"
   }
  },
  {
@@ -17895,11 +18550,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placeValueDiscs-proc-b0821-0196",
+  "itemId": "placeValueDiscs-proc-b0821-0209",
   "modeId": "placeValueDiscs",
   "itemFamily": "procedural",
   "subskill": "tradeRegroup",
-  "structureType": "tradeOnesDrill",
+  "structureType": "overfullMatReversed",
   "levelRange": [
    1,
    3
@@ -17909,16 +18564,27 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 3,
+   "answer": 53,
    "display": {
+    "cols": [
+     {
+      "count": 4,
+      "place": 10
+     },
+     {
+      "count": 13,
+      "place": 1
+     }
+    ],
+    "type": "discs",
     "counting": {
-     "n": 13,
-     "kind": "digit",
-     "place": 1
+     "kind": "groups",
+     "ones": 13,
+     "tens": 4
     },
-    "promptText": "13 ones discs = 1 tens disc + ? ones discs"
+    "promptText": "1 1 1 1 1 1 1 1 1 1 1 1 1 | 10 10 10 10 = ?"
    },
-   "answerType": "numberPad"
+   "answerType": "placeValueDiscs"
   }
  },
  {
@@ -17965,11 +18631,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placeValueDiscs-proc-b0821-0214",
+  "itemId": "placeValueDiscs-proc-b0821-0244",
   "modeId": "placeValueDiscs",
   "itemFamily": "procedural",
   "subskill": "tradeRegroup",
-  "structureType": "renameDrill",
+  "structureType": "overfullMatBig",
   "levelRange": [
    4,
    6
@@ -17979,24 +18645,42 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 14,
+   "answer": 224,
    "display": {
+    "cols": [
+     {
+      "count": 1,
+      "place": 100
+     },
+     {
+      "count": 12,
+      "place": 10
+     },
+     {
+      "count": 4,
+      "place": 1
+     }
+    ],
+    "type": "discs",
     "counting": {
-     "have": 20,
-     "kind": "gap",
-     "target": 34
+     "kind": "sum",
+     "parts": [
+      100,
+      120,
+      4
+     ]
     },
-    "promptText": "34 = 2 tens discs + ? ones discs"
+    "promptText": "100 | 10 10 10 10 10 10 10 10 10 10 10 10 | 1 1 1 1 = ?"
    },
-   "answerType": "numberPad"
+   "answerType": "placeValueDiscs"
   }
  },
  {
-  "itemId": "placeValueDiscs-proc-b0821-0374",
+  "itemId": "placeValueDiscs-proc-b0821-0399",
   "modeId": "placeValueDiscs",
   "itemFamily": "procedural",
   "subskill": "discOperations",
-  "structureType": "discMove",
+  "structureType": "discDropSeq",
   "levelRange": [
    4,
    6
@@ -18006,14 +18690,18 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 57,
+   "answer": 60,
    "display": {
     "counting": {
-     "n": 47,
-     "kind": "moreLess",
-     "delta": 10
+     "kind": "next",
+     "step": 10,
+     "sequence": [
+      30,
+      40,
+      50
+     ]
     },
-    "promptText": "47 + 1 tens disc = ?"
+    "promptText": "Discs: 30, 40, 50 → ?"
    },
    "answerType": "numberPad"
   }
@@ -18062,7 +18750,99 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placeValueDiscs-proc-b0821-0231",
+  "itemId": "placeValueDiscs-proc-b0821-0216",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "tradeRegroup",
+  "structureType": "renameDrill",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "counting": {
+     "have": 40,
+     "kind": "gap",
+     "target": 52
+    },
+    "promptText": "52 = 4 tens discs + ? ones discs"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0383",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "discOperations",
+  "structureType": "discMove",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 98,
+   "display": {
+    "counting": {
+     "n": 88,
+     "kind": "moreLess",
+     "delta": 10
+    },
+    "promptText": "88 + 1 tens disc = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0108",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "readNumber",
+  "structureType": "tensOnlyBig",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 190,
+   "display": {
+    "cols": [
+     {
+      "count": 19,
+      "place": 10
+     },
+     {
+      "count": 0,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "groups",
+     "ones": 0,
+     "tens": 19
+    },
+    "promptText": "10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0233",
   "modeId": "placeValueDiscs",
   "itemFamily": "procedural",
   "subskill": "tradeRegroup",
@@ -18076,115 +18856,16 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 78,
+   "answer": 46,
    "display": {
     "counting": {
      "have": 0,
      "kind": "gap",
-     "target": 78
+     "target": 46
     },
-    "promptText": "780 = ? tens discs"
+    "promptText": "460 = ? tens discs"
    },
    "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "placeValueDiscs-proc-b0821-0391",
-  "modeId": "placeValueDiscs",
-  "itemFamily": "procedural",
-  "subskill": "discOperations",
-  "structureType": "discMoveBig",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 716,
-   "display": {
-    "counting": {
-     "n": 816,
-     "kind": "moreLess",
-     "delta": -100
-    },
-    "promptText": "816 - 1 hundreds disc = ?"
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "placeValueDiscs-proc-b0821-0090",
-  "modeId": "placeValueDiscs",
-  "itemFamily": "procedural",
-  "subskill": "readNumber",
-  "structureType": "buildDiscCount",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 3,
-   "display": {
-    "counting": {
-     "n": 356,
-     "kind": "digit",
-     "place": 100
-    },
-    "promptText": "Build 356 with discs: hundreds discs = ?"
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "placeValueDiscs-proc-b0821-0248",
-  "modeId": "placeValueDiscs",
-  "itemFamily": "procedural",
-  "subskill": "tradeRegroup",
-  "structureType": "overfullMatBig",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 535,
-   "display": {
-    "cols": [
-     {
-      "count": 4,
-      "place": 100
-     },
-     {
-      "count": 13,
-      "place": 10
-     },
-     {
-      "count": 5,
-      "place": 1
-     }
-    ],
-    "type": "discs",
-    "counting": {
-     "kind": "sum",
-     "parts": [
-      400,
-      130,
-      5
-     ]
-    },
-    "promptText": "100 100 100 100 | 10 10 10 10 10 10 10 10 10 10 10 10 10 | 1 1 1 1 1 = ?"
-   },
-   "answerType": "placeValueDiscs"
   }
  },
  {
@@ -18238,11 +18919,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placeValueDiscs-proc-b0821-0267",
+  "itemId": "placeValueDiscs-proc-b0821-0300",
   "modeId": "placeValueDiscs",
   "itemFamily": "procedural",
   "subskill": "tradeRegroup",
-  "structureType": "renameHundredsDrill",
+  "structureType": "overfullMatThousands",
   "levelRange": [
    7,
    10
@@ -18252,24 +18933,47 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 24,
+   "answer": 2234,
    "display": {
+    "cols": [
+     {
+      "count": 1,
+      "place": 1000
+     },
+     {
+      "count": 12,
+      "place": 100
+     },
+     {
+      "count": 3,
+      "place": 10
+     },
+     {
+      "count": 4,
+      "place": 1
+     }
+    ],
+    "type": "discs",
     "counting": {
-     "have": 0,
-     "kind": "gap",
-     "target": 24
+     "kind": "sum",
+     "parts": [
+      1000,
+      1200,
+      30,
+      4
+     ]
     },
-    "promptText": "2400 = ? hundreds discs"
+    "promptText": "1000 | 100 100 100 100 100 100 100 100 100 100 100 100 | 10 10 10 | 1 1 1 1 = ?"
    },
-   "answerType": "numberPad"
+   "answerType": "placeValueDiscs"
   }
  },
  {
-  "itemId": "placeValueDiscs-proc-b0821-0427",
+  "itemId": "placeValueDiscs-proc-b0821-0442",
   "modeId": "placeValueDiscs",
   "itemFamily": "procedural",
   "subskill": "discOperations",
-  "structureType": "discMoveThousands",
+  "structureType": "discDropSeqBig",
   "levelRange": [
    7,
    10
@@ -18279,14 +18983,18 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 3473,
+   "answer": 600,
    "display": {
     "counting": {
-     "n": 2473,
-     "kind": "moreLess",
-     "delta": 1000
+     "kind": "next",
+     "step": 100,
+     "sequence": [
+      300,
+      400,
+      500
+     ]
     },
-    "promptText": "2473 + 1 thousands disc = ?"
+    "promptText": "Discs: 300, 400, 500 → ?"
    },
    "answerType": "numberPad"
   }
@@ -18342,11 +19050,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placeValueDiscs-proc-b0821-0284",
+  "itemId": "placeValueDiscs-proc-b0821-0272",
   "modeId": "placeValueDiscs",
   "itemFamily": "procedural",
   "subskill": "tradeRegroup",
-  "structureType": "mixedRenameDrill",
+  "structureType": "renameHundredsDrill",
   "levelRange": [
    7,
    10
@@ -18356,26 +19064,24 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 580,
+   "answer": 61,
    "display": {
     "counting": {
-     "kind": "sum",
-     "parts": [
-      200,
-      380
-     ]
+     "have": 0,
+     "kind": "gap",
+     "target": 61
     },
-    "promptText": "2 hundreds discs + 38 tens discs = ?"
+    "promptText": "6100 = ? hundreds discs"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placeValueDiscs-proc-b0821-0444",
+  "itemId": "placeValueDiscs-proc-b0821-0436",
   "modeId": "placeValueDiscs",
   "itemFamily": "procedural",
   "subskill": "discOperations",
-  "structureType": "discDropSeqBig",
+  "structureType": "discMoveThousands",
   "levelRange": [
    7,
    10
@@ -18385,18 +19091,14 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 800,
+   "answer": 8129,
    "display": {
     "counting": {
-     "kind": "next",
-     "step": 100,
-     "sequence": [
-      500,
-      600,
-      700
-     ]
+     "n": 7129,
+     "kind": "moreLess",
+     "delta": 1000
     },
-    "promptText": "Discs: 500, 600, 700 → ?"
+    "promptText": "7129 + 1 thousands disc = ?"
    },
    "answerType": "numberPad"
   }
@@ -18429,11 +19131,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placeValueDiscs-proc-b0821-0301",
+  "itemId": "placeValueDiscs-proc-b0821-0289",
   "modeId": "placeValueDiscs",
   "itemFamily": "procedural",
   "subskill": "tradeRegroup",
-  "structureType": "overfullMatThousands",
+  "structureType": "mixedRenameDrill",
   "levelRange": [
    7,
    10
@@ -18443,39 +19145,18 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 3050,
+   "answer": 930,
    "display": {
-    "cols": [
-     {
-      "count": 2,
-      "place": 1000
-     },
-     {
-      "count": 10,
-      "place": 100
-     },
-     {
-      "count": 5,
-      "place": 10
-     },
-     {
-      "count": 0,
-      "place": 1
-     }
-    ],
-    "type": "discs",
     "counting": {
      "kind": "sum",
      "parts": [
-      2000,
-      1000,
-      50,
-      0
+      800,
+      130
      ]
     },
-    "promptText": "1000 1000 | 100 100 100 100 100 100 100 100 100 100 | 10 10 10 10 10 = ?"
+    "promptText": "8 hundreds discs + 13 tens discs = ?"
    },
-   "answerType": "placeValueDiscs"
+   "answerType": "numberPad"
   }
  },
  {
@@ -20464,11 +21145,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "skipCounting-proc-b0821-0437",
+  "itemId": "skipCounting-proc-b0821-0456",
   "modeId": "skipCounting",
   "itemFamily": "procedural",
   "subskill": "groupsToProduct",
-  "structureType": "unitFormBig",
+  "structureType": "repeatedAdditionBig",
   "levelRange": [
    7,
    10
@@ -20478,22 +21159,19 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 200,
+   "answer": 250,
    "display": {
     "counting": {
      "kind": "sum",
      "parts": [
-      25,
-      25,
-      25,
-      25,
-      25,
-      25,
-      25,
-      25
+      50,
+      50,
+      50,
+      50,
+      50
      ]
     },
-    "promptText": "8 twenty-fives = ?"
+    "promptText": "50 + 50 + 50 + 50 + 50 = ?"
    },
    "answerType": "numberPad"
   }

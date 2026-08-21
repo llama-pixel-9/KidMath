@@ -86,6 +86,20 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## factorsMultiples — full bank build (2026-08-21)
+
+1,862 items (626 procedural + 624 conceptual + 612 application), batch tag
+`b0821`, every `factorsMultiples` cell ≥ 50 new items. Deterministic; see
+`docs/factorsmultiples-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+CCSS 4.OA.B progressions (factor pairs to 100, prime/composite
+classification, multiples as skip counts) and EngageNY G4 M3 Topic F
+(CC BY-NC-SA — structure only): array-based factor work, the
+1-is-not-prime and 2-is-the-even-prime discussions, lcm/gcf packing and
+meet-again contexts as standard OA/NS pedagogy. All wording original.
+
 ## decimals — full bank build (2026-08-21)
 
 1,896 items (660 procedural + 624 conceptual + 612 application), batch tag

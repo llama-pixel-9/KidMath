@@ -86,6 +86,21 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## time — full bank build (2026-08-21)
+
+1,852 items (623 procedural + 617 conceptual + 612 application), batch tag
+`b0821`, every `time` cell ≥ 50 new items. Deterministic; see
+`docs/time-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+EngageNY (CC BY-NC-SA — structure only): G1 M5 (o'clock and half past,
+hands described in words), G2 M7 (five-minute reads, a.m./p.m., word <->
+digital), G3 M2 (elapsed time on the number line — the absolute-minutes
+discipline — and to-the-minute reads). Calendar hops, duration benchmarks,
+and fencepost-slip judgments are standard measurement-of-time framings.
+All wording original.
+
 ## money — full bank build (2026-08-21)
 
 1,837 items (619 procedural + 606 conceptual + 612 application), batch tag

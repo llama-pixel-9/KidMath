@@ -133,10 +133,17 @@ const VARIETIES = [
       const { counts } = randomTray(level);
       const total = COIN_NAMES.reduce((s, n) => s + counts[n] * COIN_VALUE[n], 0);
       const actor = pick(ACTORS);
+      // One stem put the whole band-1 procedural share behind a single prompt
+      // signature (the variety-report boundary); three stems split it.
+      const stem = pick([
+        (a, c) => `${a} has ${c}. How many cents in all?`,
+        (a, c) => `In ${a}'s pocket: ${c}. How many cents is that?`,
+        (a, c) => `${a} lines up ${c}. What is the total in cents?`,
+      ]);
       return {
         answer: total,
         answerType: "numberPad",
-        promptText: `${actor} has ${coinPhrase(counts)}. How many cents in all?`,
+        promptText: stem(actor, coinPhrase(counts)),
         representation: "verbalContext",
         cognitiveDemand: "DOK1",
         misconceptionTags: ["coinValueSlip", "countCoinsNotValue"],

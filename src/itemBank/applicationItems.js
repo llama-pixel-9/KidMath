@@ -18,6 +18,7 @@ import { ITEMS as placeValueItems } from "./items/placeValue.js";
 import { ITEMS as placeValueDiscsItems } from "./items/placeValueDiscs.js";
 import { ITEMS as skipCountingItems } from "./items/skipCounting.js";
 import { ITEMS as subtractionItems } from "./items/subtraction.js";
+import { ITEMS as timeItems } from "./items/time.js";
 
 export const APPLICATION_ITEM_BANK = [
   ...additionItems,
@@ -32,4 +33,5 @@ export const APPLICATION_ITEM_BANK = [
   ...placeValueDiscsItems,
   ...skipCountingItems,
   ...subtractionItems,
+  ...timeItems,
 ];

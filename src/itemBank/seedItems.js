@@ -17629,5 +17629,703 @@ export const SEED_ITEMS = [
     "promptText": "9 − 8 = ?"
    }
   }
+ },
+ {
+  "itemId": "time-proc-b0821-0001",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "readClock",
+  "structureType": "faceReadTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 30,
+   "display": {
+    "hour": 1,
+    "time": {
+     "kind": "faceRead",
+     "minute": 30
+    },
+    "type": "clock",
+    "minute": 30,
+    "promptText": "The hour hand is near one. How many minutes past the hour does the clock show?"
+   },
+   "answerType": "clock"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0157",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "elapsedTime",
+  "structureType": "wholeHoursTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "counting": {
+     "have": 2,
+     "kind": "gap",
+     "target": 5
+    },
+    "promptText": "Start at two o'clock, finish at five o'clock. How many hours is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0313",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "timeConcepts",
+  "structureType": "unitFactTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 60,
+   "display": {
+    "time": {
+     "n": 1,
+     "kind": "unit",
+     "unit": "hour"
+    },
+    "promptText": "1 hour = ? minutes"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0469",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "calendar",
+  "structureType": "weekDaysTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      7
+     ]
+    },
+    "promptText": "1 week = ? days"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0027",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "readClock",
+  "structureType": "faceReadTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 30,
+   "display": {
+    "hour": 1,
+    "time": {
+     "kind": "faceRead",
+     "minute": 30
+    },
+    "type": "clock",
+    "minute": 30,
+    "promptText": "Look at the clock near one. How many minutes past the hour is it?"
+   },
+   "answerType": "clock"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0183",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "elapsedTime",
+  "structureType": "hourLaterTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "time": {
+     "hour": 2,
+     "kind": "hourLater",
+     "delta": 1
+    },
+    "promptText": "It is two o'clock. What hour will it be one hour later? Answer with the hour number."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0339",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "timeConcepts",
+  "structureType": "hourChimeNext",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "counting": {
+     "kind": "next",
+     "step": 1,
+     "sequence": [
+      1,
+      2,
+      3
+     ]
+    },
+    "promptText": "Clock chimes: one o'clock, two o'clock, three o'clock. Which hour chimes next?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0494",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "calendar",
+  "structureType": "weekdayHopTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Tuesday",
+   "choices": [
+    "Tuesday",
+    "Monday",
+    "Wednesday"
+   ],
+   "display": {
+    "time": {
+     "k": 4,
+     "from": "Friday",
+     "kind": "weekdayHop"
+    },
+    "promptText": "Start on Friday and count on 4 days. Which day do you land on?"
+   }
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0053",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "readClock",
+  "structureType": "faceReadFive",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "hour": 1,
+    "time": {
+     "kind": "faceRead",
+     "minute": 5
+    },
+    "type": "clock",
+    "minute": 5,
+    "promptText": "How many minutes past 1 o'clock is this clock showing?"
+   },
+   "answerType": "clock"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0209",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "elapsedTime",
+  "structureType": "withinHourMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 35,
+   "display": {
+    "counting": {
+     "have": 190,
+     "kind": "gap",
+     "target": 225
+    },
+    "promptText": "Start 3:10, end 3:45. How many minutes passed?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0365",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "timeConcepts",
+  "structureType": "mixedToMinutes",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 75,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      60,
+      15
+     ]
+    },
+    "promptText": "1 hour 15 minutes = ? minutes"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0520",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "calendar",
+  "structureType": "weekDaysMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 21,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      7,
+      7,
+      7
+     ]
+    },
+    "promptText": "3 weeks = ? days"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0079",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "readClock",
+  "structureType": "wordsToDigital",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "4:45",
+   "choices": [
+    "4:00",
+    "4:15",
+    "4:45",
+    "5:45"
+   ],
+   "display": {
+    "time": {
+     "hour": 4,
+     "kind": "wordsDigital",
+     "minute": 45
+    },
+    "promptText": "Which digital time shows \"quarter to five\"?"
+   }
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0235",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "elapsedTime",
+  "structureType": "acrossHourMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 45,
+   "display": {
+    "counting": {
+     "have": 160,
+     "kind": "gap",
+     "target": 205
+    },
+    "promptText": "Start 2:40, end 3:25. Count up through the hour. How many minutes passed?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0391",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "timeConcepts",
+  "structureType": "minutesToMixed",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 15,
+   "display": {
+    "counting": {
+     "have": 60,
+     "kind": "gap",
+     "target": 75
+    },
+    "promptText": "75 minutes = 1 hour and ? minutes"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0546",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "calendar",
+  "structureType": "weekdayBackMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Saturday",
+   "choices": [
+    "Saturday",
+    "Sunday",
+    "Friday"
+   ],
+   "display": {
+    "time": {
+     "k": -3,
+     "from": "Tuesday",
+     "kind": "weekdayHop"
+    },
+    "promptText": "Count back 3 days from Tuesday. Which day is that?"
+   }
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0105",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "readClock",
+  "structureType": "faceReadMinute",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "hour": 1,
+    "time": {
+     "kind": "faceRead",
+     "minute": 7
+    },
+    "type": "clock",
+    "minute": 7,
+    "promptText": "Read this clock to the exact minute. How many minutes past 1?"
+   },
+   "answerType": "clock"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0261",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "elapsedTime",
+  "structureType": "endUnknownBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "3:25",
+   "choices": [
+    "3:25",
+    "3:20",
+    "3:30",
+    "4:25"
+   ],
+   "display": {
+    "time": {
+     "dur": 45,
+     "kind": "endTime",
+     "startH": 2,
+     "startM": 40
+    },
+    "promptText": "Start at 2:40 and go for 45 minutes. Which time does it end?"
+   }
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0417",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "timeConcepts",
+  "structureType": "bigUnitCompose",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 150,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      120,
+      30
+     ]
+    },
+    "promptText": "2 minutes 30 seconds = ? seconds"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0572",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "calendar",
+  "structureType": "dateSpanBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 14,
+   "display": {
+    "counting": {
+     "have": 3,
+     "kind": "gap",
+     "target": 17
+    },
+    "promptText": "From March 3 to March 17 = ? days"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0131",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "readClock",
+  "structureType": "minutesToDigital",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "3:07",
+   "choices": [
+    "3:53",
+    "4:53",
+    "4:07",
+    "3:07"
+   ],
+   "display": {
+    "time": {
+     "hour": 3,
+     "kind": "wordsDigital",
+     "minute": 7
+    },
+    "promptText": "A clock shows 7 minutes past 3. Which digital time is that?"
+   }
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0287",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "elapsedTime",
+  "structureType": "startUnknownBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "2:40",
+   "choices": [
+    "2:30",
+    "2:40",
+    "2:45",
+    "3:40"
+   ],
+   "display": {
+    "time": {
+     "dur": 45,
+     "endH": 3,
+     "endM": 25,
+     "kind": "startTime"
+    },
+    "promptText": "Something ends at 3:25 after 45 minutes. Which time did it start?"
+   }
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0443",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "timeConcepts",
+  "structureType": "bigUnitDecompose",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 30,
+   "display": {
+    "counting": {
+     "have": 120,
+     "kind": "gap",
+     "target": 150
+    },
+    "promptText": "150 seconds = 2 minutes and ? seconds"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0598",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "calendar",
+  "structureType": "laterDateBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "counting": {
+     "kind": "countOn",
+     "more": 9,
+     "start": 3
+    },
+    "promptText": "9 days after March 3 is March ?"
+   },
+   "answerType": "numberPad"
+  }
  }
 ];

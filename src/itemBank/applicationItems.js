@@ -10,6 +10,7 @@ import { ITEMS as additionItems } from "./items/addition.js";
 import { ITEMS as comparingItems } from "./items/comparing.js";
 import { ITEMS as countingItems } from "./items/counting.js";
 import { ITEMS as divisionItems } from "./items/division.js";
+import { ITEMS as measurementItems } from "./items/measurement.js";
 import { ITEMS as moneyItems } from "./items/money.js";
 import { ITEMS as multiplicationItems } from "./items/multiplication.js";
 import { ITEMS as numberBondsItems } from "./items/numberBonds.js";
@@ -25,6 +26,7 @@ export const APPLICATION_ITEM_BANK = [
   ...comparingItems,
   ...countingItems,
   ...divisionItems,
+  ...measurementItems,
   ...moneyItems,
   ...multiplicationItems,
   ...numberBondsItems,

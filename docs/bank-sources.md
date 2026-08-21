@@ -86,6 +86,22 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## measurement — full bank build (2026-08-21)
+
+2,313 items (779 procedural + 769 conceptual + 765 application), batch tag
+`b0821`, every `measurement` cell ≥ 50 new items. Deterministic; see
+`docs/measurement-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+EngageNY (CC BY-NC-SA — structure only): G1 M3 (indirect/transitive
+comparison, non-standard iteration), G2 M2 (centimetre/metre measurement,
+compare-and-differ), G3 M2 (grams/kilograms/litres/millilitres estimation
+and benchmarks, rounding), G4 M2 (metric conversion tables, mixed units,
+two-step problems). The bigger-number-across-units trap and
+estimate-or-exact judgments are standard measurement pedagogy. All wording
+original.
+
 ## time — full bank build (2026-08-21)
 
 1,852 items (623 procedural + 617 conceptual + 612 application), batch tag

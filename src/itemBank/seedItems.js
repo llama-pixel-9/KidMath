@@ -6323,6 +6323,691 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "measurement-proc-b0821-0001",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "lengthConvert",
+  "structureType": "longerByTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "counting": {
+     "have": 7,
+     "kind": "gap",
+     "target": 12
+    },
+    "promptText": "A 12 cm ribbon and a 7 cm ribbon. The first is longer by ? cm"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0157",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "massVolumeConvert",
+  "structureType": "heavierByTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "counting": {
+     "have": 7,
+     "kind": "gap",
+     "target": 12
+    },
+    "promptText": "A 12 kg box and a 7 kg box. The first is heavier by ? kg"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0313",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkEstimate",
+  "structureType": "magnitudePickTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "18 cm",
+   "choices": [
+    "18 cm",
+    "18 m"
+   ],
+   "display": {
+    "measure": {
+     "kind": "pickLabel"
+    },
+    "promptText": "a pencil: about 18 cm or 18 m?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0468",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "compareOrder",
+  "structureType": "sameUnitPickTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "12 cm",
+   "choices": [
+    "12 cm",
+    "9 cm"
+   ],
+   "display": {
+    "measure": {
+     "a": 12,
+     "b": 9,
+     "kind": "cmp",
+     "pickLarger": true
+    },
+    "promptText": "Which is more: 12 cm or 9 cm?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0624",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "multiStepMeasure",
+  "structureType": "joinLengthsTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 13,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      7,
+      6
+     ]
+    },
+    "promptText": "A 7 cm strip taped to a 6 cm strip = ? cm"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0027",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "lengthConvert",
+  "structureType": "iterateTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      3,
+      3,
+      3,
+      3
+     ]
+    },
+    "promptText": "4 paperclips, each 3 cm long, laid end to end = ? cm"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0183",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "massVolumeConvert",
+  "structureType": "pourTogether",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 15,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      8,
+      7
+     ]
+    },
+    "promptText": "Pour 8 L and 7 L into one tub. The tub holds ? L"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0338",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkEstimate",
+  "structureType": "benchmarkPickTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "3 cm",
+   "choices": [
+    "3 m",
+    "3 cm",
+    "3 mm",
+    "3 km"
+   ],
+   "display": {
+    "measure": {
+     "kind": "pickLabel"
+    },
+    "promptText": "About how long is a paperclip?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0053",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "lengthConvert",
+  "structureType": "convertDownMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 300,
+   "display": {
+    "measure": {
+     "kind": "convert",
+     "pair": "m>cm",
+     "amount": 3
+    },
+    "promptText": "3 m = ? cm"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0209",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "massVolumeConvert",
+  "structureType": "convertDownMassMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2000,
+   "display": {
+    "measure": {
+     "kind": "convert",
+     "pair": "kg>g",
+     "amount": 2
+    },
+    "promptText": "2 kg = ? g"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0364",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkEstimate",
+  "structureType": "betweenEstimateMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 5,
+     "before": 3
+    },
+    "promptText": "A rope is a bit longer than 3 m and a bit shorter than 5 m. A whole-number estimate = ? m"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0520",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "compareOrder",
+  "structureType": "crossUnitPickMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "2 m",
+   "choices": [
+    "2 m",
+    "180 cm"
+   ],
+   "display": {
+    "measure": {
+     "a": 200,
+     "b": 180,
+     "kind": "cmp"
+    },
+    "promptText": "Which is more: 2 m or 180 cm?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0676",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "multiStepMeasure",
+  "structureType": "joinLengthsMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 61,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      34,
+      27
+     ]
+    },
+    "promptText": "A 34 cm board joined to a 27 cm board = ? cm"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0079",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "lengthConvert",
+  "structureType": "mixedToSmallMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 125,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      100,
+      25
+     ]
+    },
+    "promptText": "1 m 25 cm = ? cm"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0235",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "massVolumeConvert",
+  "structureType": "mixedVolumeMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1250,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      1000,
+      250
+     ]
+    },
+    "promptText": "1 L 250 mL = ? mL"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0390",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkEstimate",
+  "structureType": "roundTenMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 20,
+   "display": {
+    "measure": {
+     "n": 23,
+     "kind": "roundTen"
+    },
+    "promptText": "A stick measures 23 cm. To the nearest ten, that is ? cm"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0105",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "lengthConvert",
+  "structureType": "convertUpBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "measure": {
+     "kind": "convertUp",
+     "pair": "m>cm",
+     "total": 300
+    },
+    "promptText": "300 cm = ? m"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0261",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "massVolumeConvert",
+  "structureType": "convertUpMassBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "measure": {
+     "kind": "convertUp",
+     "pair": "kg>g",
+     "total": 2000
+    },
+    "promptText": "2000 g = ? kg"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0416",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkEstimate",
+  "structureType": "roundHundredBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 200,
+   "display": {
+    "measure": {
+     "n": 234,
+     "kind": "roundHundred"
+    },
+    "promptText": "A trail measures 234 m. To the nearest hundred, that is ? m"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0572",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "compareOrder",
+  "structureType": "pickLongestBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "2 m",
+   "choices": [
+    "180 cm",
+    "1500 mm",
+    "2 m"
+   ],
+   "display": {
+    "measure": {
+     "kind": "cmp3",
+     "values": [
+      200,
+      180,
+      150
+     ]
+    },
+    "promptText": "Which is the longest: 2 m, 180 cm, or 1500 mm?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0728",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "multiStepMeasure",
+  "structureType": "convertThenAddBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 175,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      100,
+      30,
+      45
+     ]
+    },
+    "promptText": "1 m 30 cm of rope plus 45 cm more = ? cm"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0131",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "lengthConvert",
+  "structureType": "addMixedBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 540,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      200,
+      340
+     ]
+    },
+    "promptText": "2 m + 340 cm = ? cm"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0287",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "massVolumeConvert",
+  "structureType": "mixedMassBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2340,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      2000,
+      340
+     ]
+    },
+    "promptText": "2 kg 340 g = ? g"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0442",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkEstimate",
+  "structureType": "midEstimateBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 200,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 210,
+     "before": 190
+    },
+    "promptText": "A path is between 190 m and 210 m long. The halfway estimate = ? m"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
   "itemId": "money-proc-b0821-0001",
   "modeId": "money",
   "itemFamily": "procedural",

@@ -86,6 +86,20 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## decimals — full bank build (2026-08-21)
+
+1,896 items (660 procedural + 624 conceptual + 612 application), batch tag
+`b0821`, every `decimals` cell ≥ 50 new items. Deterministic; see
+`docs/decimals-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+CCSS 4.NF.C progressions (decimal notation for fractions with denominators
+10/100, decimal comparison with place-value reasoning) and EngageNY G4 M6
+(CC BY-NC-SA — structure only): tenths/hundredths area models, metersticks
+and money as decimal contexts, longer-is-bigger and trailing-zero
+misconception work. All wording original.
+
 ## fractions — full bank build (2026-08-21)
 
 2,787 items (949 procedural + 920 conceptual + 918 application), batch tag

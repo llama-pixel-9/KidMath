@@ -6457,6 +6457,715 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "decimals-proc-b0821-0001",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "tenthsHundredths",
+  "structureType": "writeDecimal_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.1,
+   "display": {
+    "dec": {
+     "n": 1,
+     "kind": "tenths"
+    },
+    "promptText": "Write one tenth as a decimal."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0196",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "fractionToDecimal",
+  "structureType": "fracToDec_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.1,
+   "display": {
+    "dec": {
+     "d": 10,
+     "n": 1,
+     "kind": "fromFraction"
+    },
+    "promptText": "1/10 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0349",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "compareDecimals",
+  "structureType": "cmpSymbol_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "<",
+   "choices": [
+    "<",
+    "=",
+    ">"
+   ],
+   "display": {
+    "dec": {
+     "a": 0.3,
+     "b": 0.7,
+     "kind": "cmpDec"
+    },
+    "promptText": "0.3 ? 0.7"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0505",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "decimalAsNumber",
+  "structureType": "countOn_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.3,
+   "display": {
+    "dec": {
+     "k": 3,
+     "kind": "countOnDec",
+     "step": 0.1,
+     "start": 0
+    },
+    "promptText": "0, 0.1, 0.2, ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0085",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "tenthsHundredths",
+  "structureType": "readDigit_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 7,
+   "display": {
+    "dec": {
+     "kind": "digitOf",
+     "place": "tenths",
+     "digits": [
+      0,
+      7
+     ]
+    },
+    "promptText": "In the decimal 0.7, the tenths digit = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0255",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "fractionToDecimal",
+  "structureType": "decToFrac_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "9/10",
+   "choices": [
+    "9/10",
+    "10/9",
+    "9/100",
+    "9/1"
+   ],
+   "display": {
+    "dec": {
+     "d": 10,
+     "n": 9,
+     "kind": "toFraction"
+    },
+    "promptText": "The decimal 0.9 equals which fraction? Pick it."
+   }
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0411",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "compareDecimals",
+  "structureType": "biggerPick_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "0.7",
+   "choices": [
+    "0.7",
+    "0.5"
+   ],
+   "display": {
+    "dec": {
+     "a": 0.5,
+     "b": 0.7,
+     "kind": "cmpPickDec",
+     "labels": [
+      "0.5",
+      "0.7"
+     ]
+    },
+    "promptText": "Which decimal is larger: 0.5 or 0.7? Pick it."
+   }
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0567",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "decimalAsNumber",
+  "structureType": "tickRead_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.9,
+   "display": {
+    "dec": {
+     "k": 9,
+     "den": 10,
+     "kind": "tickDec"
+    },
+    "promptText": "A number line runs 0 to 1 in 10 equal steps. Mark 9 shows which decimal? Type it."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0014",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "tenthsHundredths",
+  "structureType": "writeDecimal_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.15,
+   "display": {
+    "dec": {
+     "h": 5,
+     "t": 1,
+     "kind": "hundredths"
+    },
+    "promptText": "Write 1 tenths and 5 hundredths as one decimal."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0213",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "fractionToDecimal",
+  "structureType": "fracToDec_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.25,
+   "display": {
+    "dec": {
+     "d": 100,
+     "n": 25,
+     "kind": "fromFraction"
+    },
+    "promptText": "25/100 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0367",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "compareDecimals",
+  "structureType": "cmpSymbol_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": ">",
+   "choices": [
+    ">",
+    "<",
+    "="
+   ],
+   "display": {
+    "dec": {
+     "a": 0.5,
+     "b": 0.45,
+     "kind": "cmpDec"
+    },
+    "promptText": "0.5 ? 0.45"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0523",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "decimalAsNumber",
+  "structureType": "countOn_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 1.2,
+   "display": {
+    "dec": {
+     "k": 3,
+     "kind": "countOnDec",
+     "step": 0.1,
+     "start": 0.9
+    },
+    "promptText": "0.9, 1, 1.1, ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0098",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "tenthsHundredths",
+  "structureType": "readDigit_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 7,
+   "display": {
+    "dec": {
+     "kind": "digitOf",
+     "place": "tenths",
+     "digits": [
+      7,
+      4
+     ]
+    },
+    "promptText": "In the decimal 0.74, the tenths digit = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0272",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "fractionToDecimal",
+  "structureType": "decToFrac_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "88/100",
+   "choices": [
+    "88/100",
+    "100/88",
+    "88/10",
+    "89/100"
+   ],
+   "display": {
+    "dec": {
+     "d": 100,
+     "n": 88,
+     "kind": "toFraction"
+    },
+    "promptText": "Choose the fraction equal to the decimal 0.88."
+   }
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0428",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "compareDecimals",
+  "structureType": "biggerPick_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "0.44",
+   "choices": [
+    "0.4",
+    "0.44"
+   ],
+   "display": {
+    "dec": {
+     "a": 0.44,
+     "b": 0.4,
+     "kind": "cmpPickDec",
+     "labels": [
+      "0.44",
+      "0.4"
+     ]
+    },
+    "promptText": "Select the larger of 0.44 and 0.4."
+   }
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0584",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "decimalAsNumber",
+  "structureType": "tickRead_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.9,
+   "display": {
+    "dec": {
+     "k": 9,
+     "den": 10,
+     "kind": "tickDec"
+    },
+    "promptText": "A 0-1 number line is cut into 10 equal steps. Type the decimal at step 9."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0027",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "tenthsHundredths",
+  "structureType": "writeDecimal_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 1.25,
+   "display": {
+    "dec": {
+     "h": 5,
+     "t": 2,
+     "w": 1,
+     "kind": "compose"
+    },
+    "promptText": "Write 1 ones, 2 tenths, and 5 hundredths as a decimal."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0230",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "fractionToDecimal",
+  "structureType": "fracToDec_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.45,
+   "display": {
+    "dec": {
+     "d": 100,
+     "n": 45,
+     "kind": "fromFraction"
+    },
+    "promptText": "45/100 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0385",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "compareDecimals",
+  "structureType": "cmpSymbol_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "<",
+   "choices": [
+    "<",
+    "=",
+    ">"
+   ],
+   "display": {
+    "dec": {
+     "a": 3.45,
+     "b": 3.5,
+     "kind": "cmpDec"
+    },
+    "promptText": "3.45 ? 3.5"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0541",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "decimalAsNumber",
+  "structureType": "countOn_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.14,
+   "display": {
+    "dec": {
+     "k": 3,
+     "kind": "countOnDec",
+     "step": 0.01,
+     "start": 0.11
+    },
+    "promptText": "0.11, 0.12, 0.13, ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0111",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "tenthsHundredths",
+  "structureType": "readDigit_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 7,
+   "display": {
+    "dec": {
+     "kind": "digitOf3",
+     "place": "ones",
+     "digits": [
+      7,
+      5,
+      4
+     ]
+    },
+    "promptText": "In the decimal 7.54, the ones digit = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0289",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "fractionToDecimal",
+  "structureType": "decToFrac_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "36/100",
+   "choices": [
+    "36/10",
+    "37/100",
+    "36/100",
+    "100/36"
+   ],
+   "display": {
+    "dec": {
+     "d": 100,
+     "n": 36,
+     "kind": "toFraction"
+    },
+    "promptText": "Identify the exact fraction for the decimal 0.36."
+   }
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0445",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "compareDecimals",
+  "structureType": "biggerPick_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "8.3",
+   "choices": [
+    "8.29",
+    "8.3"
+   ],
+   "display": {
+    "dec": {
+     "a": 8.3,
+     "b": 8.29,
+     "kind": "cmpPickDec",
+     "labels": [
+      "8.3",
+      "8.29"
+     ]
+    },
+    "promptText": "Identify the larger decimal: 8.3 or 8.29."
+   }
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0601",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "decimalAsNumber",
+  "structureType": "tickRead_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.85,
+   "display": {
+    "dec": {
+     "k": 85,
+     "den": 100,
+     "kind": "tickDec"
+    },
+    "promptText": "A unit line is split into 100 equal steps. Type the decimal at mark 85."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
   "itemId": "division-app-001",
   "modeId": "division",
   "itemFamily": "application",

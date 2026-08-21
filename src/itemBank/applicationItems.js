@@ -11,6 +11,7 @@ import { ITEMS as barModelsItems } from "./items/barModels.js";
 import { ITEMS as comparingItems } from "./items/comparing.js";
 import { ITEMS as countingItems } from "./items/counting.js";
 import { ITEMS as dataGraphsItems } from "./items/dataGraphs.js";
+import { ITEMS as decimalsItems } from "./items/decimals.js";
 import { ITEMS as divisionItems } from "./items/division.js";
 import { ITEMS as fractionsItems } from "./items/fractions.js";
 import { ITEMS as linesShapesItems } from "./items/linesShapes.js";
@@ -31,6 +32,7 @@ export const APPLICATION_ITEM_BANK = [
   ...comparingItems,
   ...countingItems,
   ...dataGraphsItems,
+  ...decimalsItems,
   ...divisionItems,
   ...fractionsItems,
   ...linesShapesItems,

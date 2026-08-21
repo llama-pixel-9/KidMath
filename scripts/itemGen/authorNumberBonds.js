@@ -66,13 +66,13 @@ function extraMathProblems(item) {
   const text = q.display?.promptText || "";
   const problems = [];
 
-  if (Array.isArray(q.choices) && (q.answer === "True" || q.answer === "False")) {
+  if (Array.isArray(q.choices) && q.subPrompt === "Is this right?" && (q.answer === "Yes" || q.answer === "No")) {
     const claim = text.match(/^(\d+) \+ (\d+)(?: \+ (\d+))? = (\d+)$/);
-    if (!claim) problems.push("unparseable true/false claim");
+    if (!claim) problems.push("unparseable judged claim");
     else {
       const sum = Number(claim[1]) + Number(claim[2]) + (claim[3] ? Number(claim[3]) : 0);
       const truthy = sum === Number(claim[4]);
-      if ((q.answer === "True") !== truthy) problems.push(`claim is ${truthy} but answer is ${q.answer}`);
+      if ((q.answer === "Yes") !== truthy) problems.push(`claim is ${truthy} but answer is ${q.answer}`);
     }
   }
 
@@ -168,9 +168,13 @@ for (const item of items) {
   }
 }
 
-// Global promptText uniqueness (new set + shipped bundle).
+// Global promptText uniqueness (new set + shipped bundle). A re-run after
+// this batch has been exported finds ITSELF in the bundle — same itemId is
+// the same item, not a duplicate.
+const newIds = new Set(items.map((i) => i.itemId));
+const bundledOther = BUNDLED_ITEMS.filter((b) => !newIds.has(b.itemId));
 const seen = new Map();
-for (const b of BUNDLED_ITEMS) {
+for (const b of bundledOther) {
   const t = b.question?.display?.promptText;
   if (t) seen.set(t, b.itemId);
 }
@@ -186,7 +190,7 @@ for (const item of items) {
 
 // Signature caps as they will apply once approved: pretend approved.
 const pretendApproved = items.map((i) => ({ ...i, reviewStatus: "approved" }));
-const overuse = findPromptOveruse([...BUNDLED_ITEMS, ...pretendApproved]);
+const overuse = findPromptOveruse([...bundledOther, ...pretendApproved]);
 const bondOveruse = overuse.filter((o) => o.cell.startsWith("numberBonds::"));
 for (const o of bondOveruse) {
   hardFailures += 1;

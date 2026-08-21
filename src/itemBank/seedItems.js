@@ -3960,507 +3960,751 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-proc-cardinality-23-001",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 28,
-   "b": null,
-   "op": "count",
-   "answer": 28,
-   "display": {
-    "promptText": "Count 28 items. The cardinality is?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-countOn-23-001",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 30,
-   "b": null,
-   "op": "count",
-   "answer": 30,
-   "display": {
-    "promptText": "Start at 25 and count on 5. What number do you reach?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-subitizing-23-001",
+  "itemId": "counting-proc-b0821-0001",
   "modeId": "counting",
   "itemFamily": "procedural",
   "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 18,
-   "b": null,
-   "op": "count",
-   "answer": 18,
-   "display": {
-    "promptText": "Count from 1 to 18. What is the count?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-cardinality-23-002",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 32,
-   "b": null,
-   "op": "count",
-   "answer": 32,
-   "display": {
-    "promptText": "Count 32 items. The cardinality is?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-countOn-23-002",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 35,
-   "b": null,
-   "op": "count",
-   "answer": 35,
-   "display": {
-    "promptText": "Start at 30 and count on 5. What number do you reach?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-subitizing-23-002",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 22,
-   "b": null,
-   "op": "count",
-   "answer": 22,
-   "display": {
-    "promptText": "Count from 1 to 22. What is the count?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-cardinality-23-003",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 36,
-   "b": null,
-   "op": "count",
-   "answer": 36,
-   "display": {
-    "promptText": "Count 36 items. The cardinality is?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-countOn-23-003",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 40,
-   "b": null,
-   "op": "count",
-   "answer": 40,
-   "display": {
-    "promptText": "Start at 35 and count on 5. What number do you reach?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-cardinality-45-001",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 50,
-   "b": null,
-   "op": "count",
-   "answer": 50,
-   "display": {
-    "promptText": "Count 50 items. The cardinality is?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-countOn-45-001",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 60,
-   "b": null,
-   "op": "count",
-   "answer": 60,
-   "display": {
-    "promptText": "Start at 50 and count on 10. What number do you reach?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-subitizing-45-001",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 50,
-   "b": null,
-   "op": "count",
-   "answer": 50,
-   "display": {
-    "promptText": "Count from 1 to 50. What is the count?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-cardinality-45-002",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 75,
-   "b": null,
-   "op": "count",
-   "answer": 75,
-   "display": {
-    "promptText": "Count 75 items. The cardinality is?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-countOn-45-002",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 80,
-   "b": null,
-   "op": "count",
-   "answer": 80,
-   "display": {
-    "promptText": "Start at 75 and count on 5. What number do you reach?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-subitizing-45-002",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 75,
-   "b": null,
-   "op": "count",
-   "answer": 75,
-   "display": {
-    "promptText": "Count from 1 to 75. What is the count?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-cardinality-45-003",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 100,
-   "b": null,
-   "op": "count",
-   "answer": 100,
-   "display": {
-    "promptText": "Count 100 items. The cardinality is?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-countOn-45-003",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 100,
-   "b": null,
-   "op": "count",
-   "answer": 100,
-   "display": {
-    "promptText": "Start at 90 and count on 10. What number do you reach?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-cardinality-K1-001",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
+  "structureType": "smallSetRead",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 10,
+   "a": null,
    "b": null,
    "op": "count",
-   "answer": 10,
+   "answer": 2,
    "display": {
-    "promptText": "Count 10 items. The cardinality is?"
-   }
+    "count": 2,
+    "emoji": "🟠",
+    "counting": {
+     "kind": "set",
+     "count": 2
+    },
+    "promptText": "🟠🟠 = ?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-proc-countOn-K1-001",
+  "itemId": "counting-proc-b0821-0175",
   "modeId": "counting",
   "itemFamily": "procedural",
   "subskill": "countOn",
-  "structureType": "countObjects",
+  "structureType": "nextNumber",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 6,
-   "b": null,
-   "op": "count",
-   "answer": 6,
-   "display": {
-    "promptText": "Start at 4 and count on 2. What number do you reach?"
-   }
-  }
- },
- {
-  "itemId": "counting-proc-subitizing-K1-001",
-  "modeId": "counting",
-  "itemFamily": "procedural",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
+   "a": null,
    "b": null,
    "op": "count",
    "answer": 4,
    "display": {
-    "promptText": "Count: 1, 2, 3, 4. What is the count?"
-   }
+    "step": 1,
+    "counting": {
+     "kind": "next",
+     "step": 1,
+     "sequence": [
+      1,
+      2,
+      3
+     ]
+    },
+    "sequence": [
+     1,
+     2,
+     3
+    ],
+    "promptText": "1, 2, 3, ?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-proc-cardinality-K1-002",
+  "itemId": "counting-proc-b0821-0359",
   "modeId": "counting",
   "itemFamily": "procedural",
   "subskill": "cardinality",
-  "structureType": "countObjects",
+  "structureType": "setCountWrite",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 8,
+   "a": null,
    "b": null,
    "op": "count",
-   "answer": 8,
+   "answer": 3,
    "display": {
-    "promptText": "Count 8 items. The cardinality is?"
-   }
+    "count": 3,
+    "emoji": "🍎",
+    "counting": {
+     "kind": "set",
+     "count": 3
+    },
+    "promptText": "🍎🍎🍎 = ?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-proc-countOn-K1-002",
+  "itemId": "counting-proc-b0821-0021",
   "modeId": "counting",
   "itemFamily": "procedural",
-  "subskill": "countOn",
-  "structureType": "countObjects",
+  "subskill": "subitizing",
+  "structureType": "smallSetRead",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 7,
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "count": 2,
+    "emoji": "🐤",
+    "counting": {
+     "kind": "set",
+     "count": 2
+    },
+    "promptText": "🐤🐤 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-proc-b0821-0195",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "countOn",
+  "structureType": "countBackNext",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "step": -1,
+    "counting": {
+     "kind": "next",
+     "step": -1,
+     "sequence": [
+      7,
+      6,
+      5
+     ]
+    },
+    "sequence": [
+     7,
+     6,
+     5
+    ],
+    "promptText": "7, 6, 5, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-proc-b0821-0378",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "cardinality",
+  "structureType": "setCountWrite",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "count": 6,
+    "emoji": "🌸",
+    "counting": {
+     "kind": "set",
+     "count": 6
+    },
+    "promptText": "🌸🌸🌸🌸🌸🌸 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-proc-b0821-0041",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "subitizing",
+  "structureType": "fiveGroupRead",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
    "b": null,
    "op": "count",
    "answer": 7,
    "display": {
-    "promptText": "Start at 5 and count on 2. What number do you reach?"
-   }
+    "count": 7,
+    "emoji": "🟢",
+    "counting": {
+     "kind": "set",
+     "count": 7
+    },
+    "promptText": "🟢🟢🟢🟢🟢 🟢🟢 = ?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-proc-subitizing-K1-002",
+  "itemId": "counting-proc-b0821-0215",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "countOn",
+  "structureType": "countOnFromGiven",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "counting": {
+     "kind": "countOn",
+     "more": 2,
+     "start": 4
+    },
+    "numberLine": {
+     "marks": [
+      4
+     ]
+    },
+    "promptText": "Start at 4 and count on 2 more. What number do you land on?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-proc-b0821-0060",
   "modeId": "counting",
   "itemFamily": "procedural",
   "subskill": "subitizing",
-  "structureType": "countObjects",
+  "structureType": "tenAndMoreRead",
   "levelRange": [
-   1,
-   3
+   4,
+   6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 5,
+   "a": null,
    "b": null,
    "op": "count",
-   "answer": 5,
+   "answer": 11,
    "display": {
-    "promptText": "Count: 1, 2, 3, 4, 5. What is the count?"
-   }
+    "count": 11,
+    "emoji": "🟠",
+    "counting": {
+     "kind": "set",
+     "count": 11
+    },
+    "promptText": "🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠 | 🟠 = ?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-proc-cardinality-K1-003",
+  "itemId": "counting-proc-b0821-0233",
   "modeId": "counting",
   "itemFamily": "procedural",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
+  "subskill": "countOn",
+  "structureType": "nextAcrossDecade",
   "levelRange": [
-   1,
-   3
+   4,
+   6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 9,
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 21,
+   "display": {
+    "step": 1,
+    "counting": {
+     "kind": "next",
+     "step": 1,
+     "sequence": [
+      18,
+      19,
+      20
+     ]
+    },
+    "sequence": [
+     18,
+     19,
+     20
+    ],
+    "promptText": "18, 19, 20, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-proc-b0821-0415",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "cardinality",
+  "structureType": "teenSetWrite",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 11,
+   "display": {
+    "count": 11,
+    "emoji": "🍎",
+    "counting": {
+     "kind": "set",
+     "count": 11
+    },
+    "promptText": "🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎 | 🍎 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-proc-b0821-0079",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "subitizing",
+  "structureType": "tenAndMoreRead",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 20,
+   "display": {
+    "count": 20,
+    "emoji": "⭐",
+    "counting": {
+     "kind": "set",
+     "count": 20
+    },
+    "promptText": "⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-proc-b0821-0256",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "countOn",
+  "structureType": "backAcrossDecade",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 68,
+   "display": {
+    "step": -1,
+    "counting": {
+     "kind": "next",
+     "step": -1,
+     "sequence": [
+      71,
+      70,
+      69
+     ]
+    },
+    "sequence": [
+     71,
+     70,
+     69
+    ],
+    "promptText": "71, 70, 69, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-proc-b0821-0434",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "cardinality",
+  "structureType": "teenSetWrite",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 20,
+   "display": {
+    "count": 20,
+    "emoji": "🐟",
+    "counting": {
+     "kind": "set",
+     "count": 20
+    },
+    "promptText": "🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟 | 🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-proc-b0821-0098",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "subitizing",
+  "structureType": "doubleFiveRead",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
    "b": null,
    "op": "count",
    "answer": 9,
    "display": {
-    "promptText": "Count 9 items. The cardinality is?"
-   }
+    "count": 9,
+    "emoji": "🍪",
+    "counting": {
+     "kind": "set",
+     "count": 9
+    },
+    "promptText": "🍪🍪🍪🍪🍪 | 🍪🍪🍪🍪 = ?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-proc-countOn-K1-003",
+  "itemId": "counting-proc-b0821-0279",
   "modeId": "counting",
   "itemFamily": "procedural",
   "subskill": "countOn",
-  "structureType": "countObjects",
+  "structureType": "backWithinDecade",
   "levelRange": [
-   1,
-   3
+   4,
+   6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 8,
+   "a": null,
    "b": null,
    "op": "count",
-   "answer": 8,
+   "answer": 66,
    "display": {
-    "promptText": "Start at 6 and count on 2. What number do you reach?"
-   }
+    "step": -1,
+    "counting": {
+     "kind": "next",
+     "step": -1,
+     "sequence": [
+      69,
+      68,
+      67
+     ]
+    },
+    "sequence": [
+     69,
+     68,
+     67
+    ],
+    "promptText": "69, 68, 67, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-proc-b0821-0115",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "subitizing",
+  "structureType": "tensRowsRead",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 21,
+   "display": {
+    "count": 21,
+    "emoji": "🟠",
+    "counting": {
+     "kind": "set",
+     "count": 21
+    },
+    "promptText": "🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠 | 🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠 | 🟠 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-proc-b0821-0299",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "countOn",
+  "structureType": "nextAcrossHundred",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 98,
+   "display": {
+    "step": 1,
+    "counting": {
+     "kind": "next",
+     "step": 1,
+     "sequence": [
+      95,
+      96,
+      97
+     ]
+    },
+    "sequence": [
+     95,
+     96,
+     97
+    ],
+    "promptText": "95, 96, 97, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-proc-b0821-0471",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "cardinality",
+  "structureType": "bigSetWrite",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 21,
+   "display": {
+    "count": 21,
+    "emoji": "🦋",
+    "counting": {
+     "kind": "set",
+     "count": 21
+    },
+    "promptText": "🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋 | 🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋 | 🦋 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-proc-b0821-0136",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "subitizing",
+  "structureType": "tensRowsRead",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 42,
+   "display": {
+    "count": 42,
+    "emoji": "🟠",
+    "counting": {
+     "kind": "set",
+     "count": 42
+    },
+    "promptText": "🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠 | 🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠 | 🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠 | 🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠 | 🟠🟠 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-proc-b0821-0320",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "countOn",
+  "structureType": "nextAcrossHundred",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 119,
+   "display": {
+    "step": 1,
+    "counting": {
+     "kind": "next",
+     "step": 1,
+     "sequence": [
+      116,
+      117,
+      118
+     ]
+    },
+    "sequence": [
+     116,
+     117,
+     118
+    ],
+    "promptText": "116, 117, 118, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-proc-b0821-0496",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "cardinality",
+  "structureType": "bigSetWrite",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 46,
+   "display": {
+    "count": 46,
+    "emoji": "🦋",
+    "counting": {
+     "kind": "set",
+     "count": 46
+    },
+    "promptText": "🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋 | 🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋 | 🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋 | 🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋 | 🦋🦋🦋🦋🦋🦋 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-proc-b0821-0157",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "subitizing",
+  "structureType": "tensRowsRead",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 33,
+   "display": {
+    "count": 33,
+    "emoji": "⭐",
+    "counting": {
+     "kind": "set",
+     "count": 33
+    },
+    "promptText": "⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐⭐ = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-proc-b0821-0341",
+  "modeId": "counting",
+  "itemFamily": "procedural",
+  "subskill": "countOn",
+  "structureType": "backAcrossHundred",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 116,
+   "display": {
+    "step": -1,
+    "counting": {
+     "kind": "next",
+     "step": -1,
+     "sequence": [
+      119,
+      118,
+      117
+     ]
+    },
+    "sequence": [
+     119,
+     118,
+     117
+    ],
+    "promptText": "119, 118, 117, ?"
+   },
+   "answerType": "numberPad"
   }
  },
  {

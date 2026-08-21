@@ -69,6 +69,8 @@ function wordsToNumber(text) {
 // Each returns the answer the item SHOULD have, recomputed from the rendering.
 
 const COUNTING = {
+  subitizeDrill: (q) => q.display.count,
+  bigSetWriteDrill: (q) => q.display.count,
   countScatteredSet: (q) => q.display.count,
   writeNumeralForSet: (q) => q.display.count,
   subitizeSmallSet: (q) => q.display.count,
@@ -592,25 +594,11 @@ describe("M4 number-sense modes: every stated answer is actually correct", () =>
   for (const [modeId, mode] of Object.entries(MODES)) {
     it(`${modeId} — answers re-derived from the rendered item`, () => {
       const seen = new Set();
-      // numberBonds' `targetedOnly` drill varieties only join the pool when
-      // the context carries a family/subskill (as real session requests
-      // always do), so reaching them here needs targeted sampling too.
-      const contexts =
-        modeId === "numberBonds"
-          ? [
-              { noFormats: true },
-              ...mode.subskills.map((s) => ({
-                noFormats: true,
-                itemFamily: "procedural",
-                targetSubskill: s,
-              })),
-            ]
-          : [{ noFormats: true }];
       for (const level of LEVELS) {
         for (let i = 0; i < SAMPLES; i++) {
           // Formats are switched off: a format transform legitimately replaces
           // the question, and this test is about the underlying generator.
-          const q = mode.generate(level, contexts[i % contexts.length]);
+          const q = mode.generate(level, { noFormats: true });
           const varietyId = q.metadata.structureType;
           seen.add(varietyId);
 
@@ -626,6 +614,25 @@ describe("M4 number-sense modes: every stated answer is actually correct", () =>
             expect(checkAnswer(q, q.answer)).toBe(true);
           } else {
             expect(q.answer, `${modeId}/${varietyId} L${level}: ${promptOf(q)}`).toBe(expected);
+          }
+        }
+      }
+      // `targetedOnly` drill varieties only join the pool when the context
+      // carries a family/subskill (as real session requests always do) — a
+      // separate targeted pass reaches and verifies them without diluting
+      // the unconditioned sampling above.
+      for (const level of LEVELS) {
+        for (const s of mode.subskills || []) {
+          for (let i = 0; i < 3; i++) {
+            const q = mode.generate(level, { noFormats: true, itemFamily: "procedural", targetSubskill: s });
+            const varietyId = q.metadata.structureType;
+            seen.add(varietyId);
+            const verify = VERIFIERS[modeId][varietyId];
+            expect(verify, `${modeId}: no verifier for variety ${varietyId}`).toBeTypeOf("function");
+            const expected = verify(q);
+            if (!Array.isArray(expected)) {
+              expect(q.answer, `${modeId}/${varietyId} targeted L${level}`).toBe(expected);
+            }
           }
         }
       }

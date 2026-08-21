@@ -173,6 +173,122 @@ const VARIETIES = [
     },
   },
 
+  // 2d′/2d″/2d‴ — symbolic fluency drills, one per subskill, ALL bands. These
+  // exist so every (family, subskill, band) request has an in-band procedural
+  // variety: before them, a procedural request targeting missingPart or
+  // decompose at band 1 had nothing in-band and `chooseVariety`'s subskill
+  // fallback escaped the band filter entirely — a level-1 kid got band-3
+  // error-analysis prose with wholes in the 20-60 range. They mirror the
+  // bank's symbolic drill convention ("9 = 4 + ?"), so the no-word-problems
+  // path stays numeric.
+  {
+    id: "wholeDrill",
+    bands: [1, 2, 3],
+    targetedOnly: true,
+    subskill: "partWhole",
+    family: ITEM_FAMILIES.PROCEDURAL,
+    build: (level) => {
+      const band = bandOf(level);
+      let p1;
+      let p2;
+      if (band === 1) {
+        const whole = randInt(4, 10);
+        p1 = randInt(1, whole - 1);
+        p2 = whole - p1;
+      } else if (band === 2) {
+        p1 = randInt(2, 9);
+        p2 = randInt(2, 9);
+      } else {
+        p1 = randInt(2, 9) * 10;
+        p2 = randInt(1, 9);
+      }
+      return {
+        answer: p1 + p2,
+        answerType: "numberPad",
+        display: { promptText: `? = ${p1} + ${p2}`, whole: p1 + p2, part: p1 },
+        representation: "symbolic",
+        cognitiveDemand: "DOK1",
+        misconceptions: ["countAllError", "partEchoed"],
+      };
+    },
+  },
+  {
+    id: "partnerDrill",
+    bands: [1, 2, 3],
+    targetedOnly: true,
+    subskill: "missingPart",
+    family: ITEM_FAMILIES.PROCEDURAL,
+    build: (level) => {
+      const band = bandOf(level);
+      let whole;
+      if (band === 1) whole = randInt(4, 10);
+      else if (band === 2) whole = randInt(11, 20);
+      else whole = pick([100, randInt(2, 9) * 10 + randInt(1, 9)]);
+      const part = band === 3 && whole === 100 ? randInt(1, 19) * 5 : randInt(1, whole - 1);
+      return {
+        answer: whole - part,
+        answerType: "numberBond",
+        display: { whole, part, promptText: `${whole} = ${part} + ?` },
+        representation: "numberBond",
+        cognitiveDemand: "DOK1",
+        misconceptions: ["partWholeSwap", "partEchoed"],
+      };
+    },
+  },
+  {
+    id: "splitDrill",
+    bands: [1, 2, 3],
+    targetedOnly: true,
+    subskill: "decompose",
+    family: ITEM_FAMILIES.PROCEDURAL,
+    build: (level) => {
+      const band = bandOf(level);
+      if (band === 1) {
+        // Ordered-family pattern step: the previous decomposition is shown.
+        const whole = randInt(5, 10);
+        const p = randInt(1, whole - 2);
+        return {
+          answer: whole - p - 1,
+          answerType: "numberPad",
+          display: {
+            whole,
+            part: p + 1,
+            promptText: `${whole} = ${p} + ${whole - p}. ${whole} = ${p + 1} + ?`,
+          },
+          representation: "symbolic",
+          cognitiveDemand: "DOK1",
+          misconceptions: ["partEchoed", "countAllError"],
+        };
+      }
+      if (band === 2) {
+        // Make ten: split the second addend (9 needs 1, 8 needs 2, 7 needs 3).
+        const anchor = pick([9, 8, 7]);
+        const need = 10 - anchor;
+        const n = randInt(need + 1, 9);
+        return {
+          answer: n - need,
+          answerType: "numberPad",
+          display: { whole: n, part: need, promptText: `${anchor} + ${n} = ${anchor} + ${need} + ?` },
+          representation: "symbolic",
+          cognitiveDemand: "DOK2",
+          misconceptions: ["bridgeOvershoot", "countAllError"],
+        };
+      }
+      // Make the next ten within 100.
+      const x = randInt(1, 8) * 10 + pick([7, 8, 9]);
+      const toTen = 10 - (x % 10);
+      const n = randInt(toTen + 1, 9);
+      return {
+        answer: n - toTen,
+        answerType: "numberPad",
+        display: { whole: n, part: toTen, promptText: `${x} + ${n} = ${x + toTen} + ?` },
+        representation: "symbolic",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["bridgeOvershoot", "placeValueSlip"],
+      };
+    },
+  },
+
   // 2e — part-part-whole story with the WHOLE unknown; `bondFromStory` keeps
   // the part-unknown telling, so between them both story directions exist.
   {
@@ -238,7 +354,8 @@ const VARIETIES = [
     subskill: "decompose",
     family: ITEM_FAMILIES.CONCEPTUAL,
     build: (level) => {
-      const whole = bandOf(level) === 2 ? randInt(6, 14) : randInt(12, 30);
+      const band = bandOf(level);
+      const whole = band === 1 ? randInt(5, 10) : band === 2 ? randInt(6, 14) : randInt(12, 30);
       const rightA = randInt(1, whole - 1);
       let rightB = randInt(1, whole - 1);
       while (rightB === rightA || rightB === whole - rightA) rightB = randInt(1, whole - 1);
@@ -266,7 +383,8 @@ const VARIETIES = [
     subskill: "decompose",
     family: ITEM_FAMILIES.CONCEPTUAL,
     build: (level) => {
-      const whole = bandOf(level) === 2 ? randInt(6, 20) : randInt(20, 60);
+      const band = bandOf(level);
+      const whole = band === 1 ? randInt(5, 10) : band === 2 ? randInt(6, 20) : randInt(20, 60);
       let p1 = randInt(1, whole - 1);
       // Equal parts would make the two "correct" sentences identical and would
       // also make one of the distractors accidentally true.
@@ -296,7 +414,8 @@ const VARIETIES = [
     subskill: "partWhole",
     family: ITEM_FAMILIES.CONCEPTUAL,
     build: (level) => {
-      const whole = bandOf(level) === 2 ? randInt(8, 20) : randInt(20, 60);
+      const band = bandOf(level);
+      const whole = band === 1 ? randInt(6, 10) : band === 2 ? randInt(8, 20) : randInt(20, 60);
       const p1 = randInt(1, whole - 2);
       const p2 = randInt(1, whole - p1 - 1);
       return {
@@ -443,7 +562,8 @@ const VARIETIES = [
     subskill: "missingPart",
     family: ITEM_FAMILIES.CONCEPTUAL,
     build: (level) => {
-      const whole = bandOf(level) === 2 ? randInt(8, 20) : randInt(20, 60);
+      const band = bandOf(level);
+      const whole = band === 1 ? randInt(6, 10) : band === 2 ? randInt(8, 20) : randInt(20, 60);
       const part = randInt(1, whole - 1);
       const actor = pick(NAMES);
       return {
@@ -491,7 +611,8 @@ const VARIETIES = [
     subskill: "decompose",
     family: ITEM_FAMILIES.CONCEPTUAL,
     build: (level) => {
-      const whole = bandOf(level) === 2 ? randInt(8, 16) : randInt(16, 40);
+      const band = bandOf(level);
+      const whole = band === 1 ? randInt(6, 10) : band === 2 ? randInt(8, 16) : randInt(16, 40);
       const parts = new Set();
       while (parts.size < 3) parts.add(randInt(1, whole - 1));
       const good = [...parts].map((p) => `${p} and ${whole - p}`);
@@ -517,7 +638,13 @@ function chooseVariety(level, context = {}) {
     if (forced) return forced;
   }
   const band = bandOf(level);
-  let pool = VARIETIES.filter((v) => v.bands.includes(band));
+  // `targetedOnly` drills guarantee in-band coverage for scheduled
+  // (family, subskill) requests without flooding the unconditioned pool's
+  // prompt-signature variety (bank:variety samples generate() with no
+  // context; real sessions always pass itemFamily + targetSubskill).
+  const targeted = Boolean(context.itemFamily || context.targetSubskill);
+  const eligible = VARIETIES.filter((v) => !v.targetedOnly || targeted);
+  let pool = eligible.filter((v) => v.bands.includes(band));
 
   if (context.itemFamily) {
     const byFamily = pool.filter((v) => v.family === context.itemFamily);
@@ -528,13 +655,23 @@ function chooseVariety(level, context = {}) {
   }
 
   if (context.targetSubskill) {
-    // A targeted subskill wins over the band filter too: the session engine asks
-    // for the child's weakest subskill, and answering with a different one would
-    // silently defeat the adaptive loop. Magnitude still scales with level.
-    const inBand = pool.filter((v) => v.subskill === context.targetSubskill);
-    const anyBand = VARIETIES.filter((v) => v.subskill === context.targetSubskill);
-    if (inBand.length) pool = inBand;
-    else if (anyBand.length) pool = anyBand;
+    // A targeted subskill wins over the family filter: the session engine asks
+    // for the child's weakest subskill, and answering with a different one
+    // would silently defeat the adaptive loop. But it must NOT win over the
+    // band filter — that once served band-3 error-analysis prose (wholes
+    // 20-60) to a level-1 kid. Fallback order: family+subskill in band →
+    // any-family subskill in band → subskill anywhere (last resort only).
+    const bySubskill = (arr) => arr.filter((v) => v.subskill === context.targetSubskill);
+    const noStories = (arr) =>
+      context.allowWordProblems === false
+        ? arr.filter((v) => v.family !== ITEM_FAMILIES.APPLICATION)
+        : arr;
+    const inPool = bySubskill(pool);
+    const inBandAnyFamily = noStories(bySubskill(eligible.filter((v) => v.bands.includes(band))));
+    const anywhere = noStories(bySubskill(eligible));
+    if (inPool.length) pool = inPool;
+    else if (inBandAnyFamily.length) pool = inBandAnyFamily;
+    else if (anywhere.length) pool = anywhere;
   }
   return pool.length ? pick(pool) : VARIETIES[0];
 }

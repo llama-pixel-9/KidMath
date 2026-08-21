@@ -9674,6 +9674,880 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "patterns-proc-b0821-0001",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "repeatingPattern",
+  "structureType": "extendAB",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "circle",
+   "choices": [
+    "circle",
+    "square"
+   ],
+   "display": {
+    "pattern": {
+     "len": 4,
+     "core": [
+      "circle",
+      "square"
+     ],
+     "kind": "repeat"
+    },
+    "sequence": [
+     "circle",
+     "square",
+     "circle",
+     "square"
+    ],
+    "promptText": "Pattern: circle, square, circle, square, ? — what comes next?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0155",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "arithmeticNext",
+  "structureType": "nextTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "step": 2,
+    "counting": {
+     "kind": "next",
+     "step": 2,
+     "sequence": [
+      2,
+      4,
+      6
+     ]
+    },
+    "sequence": [
+     2,
+     4,
+     6
+    ],
+    "promptText": "Pattern: 2, 4, 6, ? — what comes next?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0311",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "geometricNext",
+  "structureType": "doubleTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "step": 2,
+    "pattern": {
+     "kind": "geo",
+     "start": 1,
+     "factor": 2
+    },
+    "sequence": [
+     1,
+     2
+    ],
+    "promptText": "Pattern: 1, 2, ? — each term is 2 times the one before."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0466",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "missingTerm",
+  "structureType": "gapTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "step": 2,
+    "counting": {
+     "kind": "between",
+     "after": 6,
+     "before": 2
+    },
+    "sequence": [
+     2,
+     "?",
+     6,
+     8
+    ],
+    "promptText": "Fill the gap: 2, ?, 6, 8."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0622",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "stepTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "counting": {
+     "have": 2,
+     "kind": "gap",
+     "target": 4
+    },
+    "sequence": [
+     2,
+     4,
+     6
+    ],
+    "promptText": "Pattern: 2, 4, 6. Rule: add ? each time."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0027",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "repeatingPattern",
+  "structureType": "extendAB",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "sun",
+   "choices": [
+    "cloud",
+    "sun"
+   ],
+   "display": {
+    "pattern": {
+     "len": 6,
+     "core": [
+      "sun",
+      "cloud"
+     ],
+     "kind": "repeat"
+    },
+    "sequence": [
+     "sun",
+     "cloud",
+     "sun",
+     "cloud",
+     "sun",
+     "cloud"
+    ],
+    "promptText": "Pattern: sun, cloud, sun, cloud, sun, cloud, ? — what comes next?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0181",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "arithmeticNext",
+  "structureType": "nextTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 17,
+   "display": {
+    "step": 3,
+    "counting": {
+     "kind": "next",
+     "step": 3,
+     "sequence": [
+      8,
+      11,
+      14
+     ]
+    },
+    "sequence": [
+     8,
+     11,
+     14
+    ],
+    "promptText": "Pattern: 8, 11, 14, ? — what comes next?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0336",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "geometricNext",
+  "structureType": "doubleOnce",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "pattern": {
+     "kind": "geoApply",
+     "start": 1,
+     "times": 1,
+     "factor": 2
+    },
+    "promptText": "Double 1. What do you get?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0053",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "repeatingPattern",
+  "structureType": "extendABC",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "square",
+   "choices": [
+    "triangle",
+    "circle",
+    "square"
+   ],
+   "display": {
+    "pattern": {
+     "len": 10,
+     "core": [
+      "circle",
+      "square",
+      "triangle"
+     ],
+     "kind": "repeat"
+    },
+    "sequence": [
+     "circle",
+     "square",
+     "triangle",
+     "circle",
+     "square",
+     "triangle",
+     "circle",
+     "square",
+     "triangle",
+     "circle"
+    ],
+    "promptText": "Pattern: circle, square, triangle, circle, square, triangle, circle, square, triangle, circle, ? — what comes next?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0207",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "arithmeticNext",
+  "structureType": "nextMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 30,
+   "display": {
+    "step": 6,
+    "counting": {
+     "kind": "next",
+     "step": 6,
+     "sequence": [
+      12,
+      18,
+      24
+     ]
+    },
+    "sequence": [
+     12,
+     18,
+     24
+    ],
+    "promptText": "Pattern: 12, 18, 24, ? — what comes next?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0362",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "geometricNext",
+  "structureType": "geoNext_2x",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 24,
+   "display": {
+    "step": 2,
+    "pattern": {
+     "kind": "geo",
+     "start": 3,
+     "factor": 2
+    },
+    "sequence": [
+     3,
+     6,
+     12
+    ],
+    "promptText": "Pattern: 3, 6, 12, ? — each term is 2 times the one before."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0518",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "missingTerm",
+  "structureType": "gapMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 18,
+   "display": {
+    "step": 6,
+    "counting": {
+     "kind": "between",
+     "after": 24,
+     "before": 12
+    },
+    "sequence": [
+     12,
+     "?",
+     24,
+     30
+    ],
+    "promptText": "Fill the gap: 12, ?, 24, 30."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0650",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "stepMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "counting": {
+     "have": 12,
+     "kind": "gap",
+     "target": 18
+    },
+    "sequence": [
+     12,
+     18,
+     24
+    ],
+    "promptText": "Pattern: 12, 18, 24. Rule: add ? each time."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0078",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "repeatingPattern",
+  "structureType": "shapeAtPosition",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "blue",
+   "choices": [
+    "red",
+    "green",
+    "blue"
+   ],
+   "display": {
+    "pattern": {
+     "pos": 11,
+     "core": [
+      "red",
+      "blue",
+      "green"
+     ],
+     "kind": "repeatPos"
+    },
+    "sequence": [
+     "red",
+     "blue",
+     "green",
+     "red",
+     "blue",
+     "green"
+    ],
+    "promptText": "Pattern: red, blue, green, red, blue, green, … Keep going. Which shape lands at position 11?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0233",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "arithmeticNext",
+  "structureType": "firstMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 37,
+   "display": {
+    "step": 8,
+    "counting": {
+     "back": 8,
+     "kind": "countBack",
+     "start": 45
+    },
+    "sequence": [
+     "?",
+     45,
+     53,
+     61
+    ],
+    "promptText": "Pattern: ?, 45, 53, 61 — what comes first?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0388",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "geometricNext",
+  "structureType": "halfMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "pattern": {
+     "kind": "geoDiv",
+     "start": 40,
+     "terms": 3,
+     "factor": 2
+    },
+    "sequence": [
+     40,
+     20,
+     10
+    ],
+    "promptText": "Pattern: 40, 20, 10, ? — each term is half the one before."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0104",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "repeatingPattern",
+  "structureType": "extendABCDLong",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "circle",
+   "choices": [
+    "heart",
+    "square",
+    "circle",
+    "triangle"
+   ],
+   "display": {
+    "pattern": {
+     "len": 12,
+     "core": [
+      "circle",
+      "square",
+      "triangle",
+      "heart"
+     ],
+     "kind": "repeat"
+    },
+    "sequence": [
+     "circle",
+     "square",
+     "triangle",
+     "heart",
+     "circle",
+     "square",
+     "triangle",
+     "heart",
+     "circle",
+     "square",
+     "triangle",
+     "heart"
+    ],
+    "promptText": "Pattern: circle, square, triangle, heart, circle, square, triangle, heart, circle, square, triangle, heart, ? — what comes next?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0259",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "arithmeticNext",
+  "structureType": "nextBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 145,
+   "display": {
+    "step": 11,
+    "counting": {
+     "kind": "next",
+     "step": 11,
+     "sequence": [
+      112,
+      123,
+      134
+     ]
+    },
+    "sequence": [
+     112,
+     123,
+     134
+    ],
+    "promptText": "Pattern: 112, 123, 134, ? — what comes next?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0414",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "geometricNext",
+  "structureType": "geoNextBig_5x",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 500,
+   "display": {
+    "step": 5,
+    "pattern": {
+     "kind": "geo",
+     "start": 4,
+     "factor": 5
+    },
+    "sequence": [
+     4,
+     20,
+     100
+    ],
+    "promptText": "Pattern: 4, 20, 100, ? — each term is 5 times the one before."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0570",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "missingTerm",
+  "structureType": "gapBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 123,
+   "display": {
+    "step": 11,
+    "counting": {
+     "kind": "between",
+     "after": 134,
+     "before": 112
+    },
+    "sequence": [
+     112,
+     "?",
+     134,
+     145
+    ],
+    "promptText": "Fill the gap: 112, ?, 134, 145."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0676",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "stepBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 11,
+   "display": {
+    "counting": {
+     "have": 112,
+     "kind": "gap",
+     "target": 123
+    },
+    "sequence": [
+     112,
+     123,
+     134
+    ],
+    "promptText": "Pattern: 112, 123, 134. Rule: add ? each time."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0129",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "repeatingPattern",
+  "structureType": "shapeAtPositionQuad",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "circle",
+   "choices": [
+    "triangle",
+    "circle",
+    "heart",
+    "square"
+   ],
+   "display": {
+    "pattern": {
+     "pos": 21,
+     "core": [
+      "circle",
+      "square",
+      "triangle",
+      "heart"
+     ],
+     "kind": "repeatPos"
+    },
+    "sequence": [
+     "circle",
+     "square",
+     "triangle",
+     "heart",
+     "circle",
+     "square",
+     "triangle",
+     "heart"
+    ],
+    "promptText": "Pattern: circle, square, triangle, heart, circle, square, triangle, heart, … Keep going. Which shape lands at position 21?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0285",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "arithmeticNext",
+  "structureType": "firstBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 524,
+   "display": {
+    "step": 21,
+    "counting": {
+     "back": 21,
+     "kind": "countBack",
+     "start": 545
+    },
+    "sequence": [
+     "?",
+     545,
+     566,
+     587
+    ],
+    "promptText": "Pattern: ?, 545, 566, 587 — what comes first?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0440",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "geometricNext",
+  "structureType": "halfBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 60,
+   "display": {
+    "pattern": {
+     "kind": "geoDiv",
+     "start": 480,
+     "terms": 3,
+     "factor": 2
+    },
+    "sequence": [
+     480,
+     240,
+     120
+    ],
+    "promptText": "Pattern: 480, 240, 120, ? — each term is half the one before."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
   "itemId": "placevalue-app-001",
   "modeId": "placeValue",
   "itemFamily": "application",

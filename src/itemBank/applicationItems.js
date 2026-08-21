@@ -12,6 +12,7 @@ import { ITEMS as countingItems } from "./items/counting.js";
 import { ITEMS as divisionItems } from "./items/division.js";
 import { ITEMS as multiplicationItems } from "./items/multiplication.js";
 import { ITEMS as numberBondsItems } from "./items/numberBonds.js";
+import { ITEMS as patternsItems } from "./items/patterns.js";
 import { ITEMS as placeValueItems } from "./items/placeValue.js";
 import { ITEMS as placeValueDiscsItems } from "./items/placeValueDiscs.js";
 import { ITEMS as skipCountingItems } from "./items/skipCounting.js";
@@ -24,6 +25,7 @@ export const APPLICATION_ITEM_BANK = [
   ...divisionItems,
   ...multiplicationItems,
   ...numberBondsItems,
+  ...patternsItems,
   ...placeValueItems,
   ...placeValueDiscsItems,
   ...skipCountingItems,

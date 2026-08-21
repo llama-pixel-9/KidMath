@@ -86,6 +86,21 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## patterns — full bank build (2026-08-21)
+
+2,322 items (776 procedural + 781 conceptual + 765 application), batch tag
+`b0821`, every `patterns` cell ≥ 50 new items across all five subskills.
+Deterministic; see `docs/patterns-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+EngageNY (CC BY-NC-SA — structure only): GK M1/G1 (AB/ABB/ABC repeating
+patterns, "what comes next", core identification), G3 M1 and G4 M5-adjacent
+arithmetic-pattern work (extend, extend leftwards, state the rule, apply a
+rule N terms out, find the broken term, parity reasoning per 4.OA.C.5).
+Growth stories (doubling ponds, savings-style additive growth) are standard
+pattern-context framings. All wording original.
+
 ## placeValueDiscs — full bank build (2026-08-21)
 
 1,406 items (479 procedural + 468 conceptual + 459 application), batch tag

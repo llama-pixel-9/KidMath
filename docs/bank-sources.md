@@ -86,6 +86,21 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## dataGraphs — full bank build (2026-08-21)
+
+1,836 items (610 procedural + 614 conceptual + 612 application), batch tag
+`b0821`, every `dataGraphs` cell ≥ 50 new items. Deterministic; see
+`docs/datagraphs-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+EngageNY (CC BY-NC-SA — structure only): G1 M3 (organize/represent/
+interpret up to three categories, how-many-more/fewer), G2 M7 (picture and
+bar graphs, tally charts, comparison word problems from graphs), G3 M6
+(scaled bar graphs and pictographs with keys, one-and-two-step "how many
+more/less" problems). The key-ignored misconception and pick-the-true-
+statement forms are standard data-literacy pedagogy. All wording original.
+
 ## measurement — full bank build (2026-08-21)
 
 2,313 items (779 procedural + 769 conceptual + 765 application), batch tag

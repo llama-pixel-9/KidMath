@@ -4766,6 +4766,1015 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "dataGraphs-proc-b0821-0001",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "readBar",
+  "structureType": "barRead_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 2
+     },
+     {
+      "label": "puppies",
+      "value": 5
+     },
+     {
+      "label": "bunnies",
+      "value": 3
+     },
+     {
+      "label": "chicks",
+      "value": 7
+     }
+    ],
+    "data": {
+     "kind": "barRead",
+     "label": "kittens"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "The pet fair graph: how many kittens?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0154",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "compareBars",
+  "structureType": "barDiff_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 2
+     },
+     {
+      "label": "puppies",
+      "value": 5
+     },
+     {
+      "label": "bunnies",
+      "value": 3
+     },
+     {
+      "label": "chicks",
+      "value": 7
+     }
+    ],
+    "data": {
+     "a": "chicks",
+     "b": "kittens",
+     "kind": "barDiff"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "The pet fair graph: how many more chicks than kittens?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0307",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "pictograph",
+  "structureType": "pictoRead_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "data": {
+     "kind": "pictoRead",
+     "label": "kittens"
+    },
+    "rows": [
+     {
+      "label": "kittens",
+      "symbols": 2
+     },
+     {
+      "label": "puppies",
+      "symbols": 4
+     }
+    ],
+    "figure": "pictograph",
+    "keyValue": 1,
+    "promptText": "The pet fair picture chart: each picture means 1. How many kittens?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0458",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "dataAnalysis",
+  "structureType": "tallyRead_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "data": {
+     "kind": "tallyRead",
+     "label": "kittens"
+    },
+    "rows": [
+     {
+      "count": 3,
+      "label": "kittens"
+     },
+     {
+      "count": 5,
+      "label": "puppies"
+     }
+    ],
+    "figure": "tallyChart",
+    "promptText": "The pet fair tally chart: how many chose kittens?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0026",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "readBar",
+  "structureType": "barRead_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 1
+     },
+     {
+      "label": "puppies",
+      "value": 8
+     },
+     {
+      "label": "bunnies",
+      "value": 4
+     },
+     {
+      "label": "chicks",
+      "value": 6
+     }
+    ],
+    "data": {
+     "kind": "barRead",
+     "label": "chicks"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Look at the pet fair graph. How many chicks are there?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0179",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "compareBars",
+  "structureType": "barDiffAlt_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "bars": [
+     {
+      "label": "vans",
+      "value": 3
+     },
+     {
+      "label": "bikes",
+      "value": 6
+     },
+     {
+      "label": "buses",
+      "value": 2
+     },
+     {
+      "label": "scooters",
+      "value": 7
+     }
+    ],
+    "data": {
+     "a": "bikes",
+     "b": "vans",
+     "kind": "barDiff"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "In the school ride graph, the bikes bar beats the vans bar by how many votes? Compare carefully."
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0380",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "pictograph",
+  "structureType": "pictoBothRowsTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 9,
+   "display": {
+    "data": {
+     "kind": "pictoBothRows"
+    },
+    "rows": [
+     {
+      "label": "apples",
+      "symbols": 3
+     },
+     {
+      "label": "pears",
+      "symbols": 6
+     }
+    ],
+    "figure": "pictograph",
+    "keyValue": 1,
+    "promptText": "The fruit stand picture chart, key of one: how many pictures in both rows together?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0585",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "dataAnalysis",
+  "structureType": "tallyTotalTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 16,
+   "display": {
+    "data": {
+     "kind": "tallyTotal"
+    },
+    "rows": [
+     {
+      "count": 6,
+      "label": "red"
+     },
+     {
+      "count": 10,
+      "label": "blue"
+     }
+    ],
+    "figure": "tallyChart",
+    "promptText": "In the favorite colors tally chart, how many chose red or blue altogether?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0052",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "readBar",
+  "structureType": "barRead_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 12
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 14
+     },
+     {
+      "label": "chicks",
+      "value": 3
+     }
+    ],
+    "data": {
+     "kind": "barRead",
+     "label": "kittens"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "In the pet fair graph, what count does the kittens bar show?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0205",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "compareBars",
+  "structureType": "barDiff_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 11,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 12
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 14
+     },
+     {
+      "label": "chicks",
+      "value": 3
+     }
+    ],
+    "data": {
+     "a": "bunnies",
+     "b": "chicks",
+     "kind": "barDiff"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Use the pet fair graph. How many more bunnies than chicks does it show?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0331",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "pictograph",
+  "structureType": "pictoRead_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "data": {
+     "kind": "pictoRead",
+     "label": "kittens"
+    },
+    "rows": [
+     {
+      "label": "kittens",
+      "symbols": 2
+     },
+     {
+      "label": "puppies",
+      "symbols": 4
+     }
+    ],
+    "figure": "pictograph",
+    "keyValue": 2,
+    "promptText": "In the pet fair picture chart, each picture means 2. How many kittens?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0482",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "dataAnalysis",
+  "structureType": "tallyRead_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "data": {
+     "kind": "tallyRead",
+     "label": "kittens"
+    },
+    "rows": [
+     {
+      "count": 8,
+      "label": "kittens"
+     },
+     {
+      "count": 10,
+      "label": "puppies"
+     }
+    ],
+    "figure": "tallyChart",
+    "promptText": "Read the pet fair tally chart. How many votes did kittens get?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0077",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "readBar",
+  "structureType": "barRead_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 9,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 13
+     },
+     {
+      "label": "puppies",
+      "value": 8
+     },
+     {
+      "label": "bunnies",
+      "value": 4
+     },
+     {
+      "label": "chicks",
+      "value": 9
+     }
+    ],
+    "data": {
+     "kind": "barRead",
+     "label": "chicks"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Read the pet fair graph carefully. How many chicks does it show?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0230",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "compareBars",
+  "structureType": "barDiffAlt_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "bars": [
+     {
+      "label": "vans",
+      "value": 2
+     },
+     {
+      "label": "bikes",
+      "value": 10
+     },
+     {
+      "label": "buses",
+      "value": 6
+     },
+     {
+      "label": "scooters",
+      "value": 12
+     }
+    ],
+    "data": {
+     "a": "bikes",
+     "b": "buses",
+     "kind": "barDiff"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "From the school ride graph, find the gap between bikes and buses. What is the gap? Compare carefully."
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0407",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "pictograph",
+  "structureType": "pictoSymbolsMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "data": {
+     "n": 10,
+     "key": 2,
+     "kind": "pictoSymbols"
+    },
+    "promptText": "One picture stands for 2. How many pictures show 10?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0507",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "dataAnalysis",
+  "structureType": "barTotal_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 35,
+   "display": {
+    "bars": [
+     {
+      "label": "apples",
+      "value": 9
+     },
+     {
+      "label": "pears",
+      "value": 13
+     },
+     {
+      "label": "plums",
+      "value": 2
+     },
+     {
+      "label": "cherries",
+      "value": 11
+     }
+    ],
+    "data": {
+     "kind": "barTotal"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Add every bar of the fruit stand graph. How many votes were counted in all?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0103",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "readBar",
+  "structureType": "barRead_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 18,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 18
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 12
+     },
+     {
+      "label": "chicks",
+      "value": 20
+     }
+    ],
+    "data": {
+     "kind": "barRead",
+     "label": "kittens"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "The pet fair graph is scaled — read carefully. How many kittens does it show?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0256",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "compareBars",
+  "structureType": "barDiff_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 13,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 18
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 12
+     },
+     {
+      "label": "chicks",
+      "value": 20
+     }
+    ],
+    "data": {
+     "a": "chicks",
+     "b": "puppies",
+     "kind": "barDiff"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "The scaled pet fair graph: exactly how many more chicks than puppies?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0355",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "pictograph",
+  "structureType": "pictoRead_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 20,
+   "display": {
+    "data": {
+     "kind": "pictoRead",
+     "label": "kittens"
+    },
+    "rows": [
+     {
+      "label": "kittens",
+      "symbols": 2
+     },
+     {
+      "label": "puppies",
+      "symbols": 4
+     }
+    ],
+    "figure": "pictograph",
+    "keyValue": 10,
+    "promptText": "The pet fair picture chart uses a key of 10. Exactly how many kittens?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0518",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "dataAnalysis",
+  "structureType": "barTotal_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 57,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 18
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 12
+     },
+     {
+      "label": "chicks",
+      "value": 20
+     }
+    ],
+    "data": {
+     "kind": "barTotal"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Sum the whole pet fair graph, bar by bar. What total does it hold?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0128",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "readBar",
+  "structureType": "barRead_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 15,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 11
+     },
+     {
+      "label": "puppies",
+      "value": 18
+     },
+     {
+      "label": "bunnies",
+      "value": 8
+     },
+     {
+      "label": "chicks",
+      "value": 15
+     }
+    ],
+    "data": {
+     "kind": "barRead",
+     "label": "chicks"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "From the pet fair graph, find the precise count. How many chicks is that?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0281",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "compareBars",
+  "structureType": "barDiffAlt_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "bars": [
+     {
+      "label": "vans",
+      "value": 19
+     },
+     {
+      "label": "bikes",
+      "value": 3
+     },
+     {
+      "label": "buses",
+      "value": 16
+     },
+     {
+      "label": "scooters",
+      "value": 12
+     }
+    ],
+    "data": {
+     "a": "buses",
+     "b": "scooters",
+     "kind": "barDiff"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Compute the exact buses-minus-scooters gap in the school ride graph. What is the gap? Compare carefully."
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0433",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "pictograph",
+  "structureType": "pictoSymbolsBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "data": {
+     "n": 70,
+     "key": 10,
+     "kind": "pictoSymbols"
+    },
+    "promptText": "With a key of 10 per picture, how many pictures make 70?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0543",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "dataAnalysis",
+  "structureType": "barTotalSkipBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 24,
+   "display": {
+    "bars": [
+     {
+      "label": "apples",
+      "value": 9
+     },
+     {
+      "label": "pears",
+      "value": 13
+     },
+     {
+      "label": "plums",
+      "value": 2
+     },
+     {
+      "label": "cherries",
+      "value": 11
+     }
+    ],
+    "data": {
+     "kind": "barTotalSkip",
+     "skip": "cherries"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Add every fruit stand bar EXCEPT cherries. What total is left?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
   "itemId": "division-app-001",
   "modeId": "division",
   "itemFamily": "application",

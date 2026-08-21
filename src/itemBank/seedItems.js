@@ -15109,7 +15109,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "Mia has 2 red cups and 3 blue cups. How many cups does Mia have in all?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15133,7 +15133,7 @@ export const SEED_ITEMS = [
     "whole": 6,
     "promptText": "Leo owns 6 beads. Leo can see 2 beads on the mat; the rest hide in a pouch. How many beads hide in the pouch?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15157,7 +15157,7 @@ export const SEED_ITEMS = [
     "whole": 10,
     "promptText": "Mia wants a full ten of cups. Mia has 2 cups so far. How many more cups make ten?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15183,7 +15183,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "Sam lines up 5 green beads, then adds a row of 4 yellow beads. How many beads are in the two rows together?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15207,7 +15207,7 @@ export const SEED_ITEMS = [
     "whole": 10,
     "promptText": "A basket holds 10 blocks for Nia. Nia lifts out 3 blocks. How many blocks stay in the basket?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15231,7 +15231,7 @@ export const SEED_ITEMS = [
     "whole": 10,
     "promptText": "A game needs ten beads. Sam brings 8 beads. How many beads does Sam still need for the game?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15257,7 +15257,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "Ava glues 4 blocks on one page and 3 blocks on the next page. How many blocks does Ava glue in all?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15281,7 +15281,7 @@ export const SEED_ITEMS = [
     "whole": 9,
     "promptText": "Kai has 9 crayons in all. 4 of the crayons are new, and the rest are old. How many old crayons does Kai have?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15307,7 +15307,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "Ava finds 2 blocks in the morning. Later Ava finds 9 more blocks. How many blocks does Ava find that day?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15331,7 +15331,7 @@ export const SEED_ITEMS = [
     "whole": 11,
     "promptText": "Kai started with 2 crayons. After a trade, Kai now has 11 crayons. How many crayons did the trade add?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15355,7 +15355,7 @@ export const SEED_ITEMS = [
     "whole": 11,
     "promptText": "Mia has 6 cups and wants a full group of ten cups. A friend gives Mia 5 cups. After the group of ten is full, how many extra cups does Mia hold?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15381,7 +15381,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "Luca and a friend sort crayons. Luca holds 2 crayons; the friend holds 11 crayons. How many crayons do they hold together?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15405,7 +15405,7 @@ export const SEED_ITEMS = [
     "whole": 13,
     "promptText": "Ida counts 13 stickers altogether. Exactly 3 of the stickers are shiny. How many of the stickers are not shiny?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15429,7 +15429,7 @@ export const SEED_ITEMS = [
     "whole": 17,
     "promptText": "Sam stacks 8 beads in a rack that holds ten. Then Sam gets 9 more beads and fills the rack. How many beads are left over after the rack is full?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15455,7 +15455,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "Nora puts 9 stickers in a box and 5 stickers in a bag. How many stickers does Nora pack altogether?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15479,7 +15479,7 @@ export const SEED_ITEMS = [
     "whole": 14,
     "promptText": "Omar needs 14 marbles for a craft. So far Omar has 11 marbles. How many more marbles does Omar still need?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15505,7 +15505,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "On the shelf, Nora keeps 30 stickers. Under the bed, Nora keeps 15 more stickers. How many stickers does Nora keep in both spots?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15529,7 +15529,7 @@ export const SEED_ITEMS = [
     "whole": 45,
     "promptText": "Omar splits 45 marbles between two trays. One tray gets 20 marbles. How many marbles go on the other tray?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15553,7 +15553,7 @@ export const SEED_ITEMS = [
     "whole": 34,
     "promptText": "Mia bundles ten of the 34 cups with a rubber band. How many cups are outside the bundle?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15579,7 +15579,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "Rosa has 65 striped marbles and 15 clear marbles. How many marbles does Rosa have in all?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15603,7 +15603,7 @@ export const SEED_ITEMS = [
     "whole": 52,
     "promptText": "Finn owns 52 buttons. Finn can see 27 buttons on the mat; the rest hide in a pouch. How many buttons hide in the pouch?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15627,7 +15627,7 @@ export const SEED_ITEMS = [
     "whole": 49,
     "promptText": "From a jar of 49 beads, Sam scoops out a full group of ten beads. How many beads remain in the jar?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15677,7 +15677,7 @@ export const SEED_ITEMS = [
     "whole": 74,
     "promptText": "A basket holds 74 leaves for Theo. Theo lifts out 33 leaves. How many leaves stay in the basket?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15871,7 +15871,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "One part: 🐟🐟🐟🐟🐟🐟 Other part: 🐟🐟🐟 How many fish in all?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -15895,7 +15895,7 @@ export const SEED_ITEMS = [
     "whole": 9,
     "promptText": "A whole of 9 hides two parts. One part is 8 — name the other part."
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -16121,7 +16121,7 @@ export const SEED_ITEMS = [
     "whole": 13,
     "promptText": "13 splits into 4 and one more part. How big is that part?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -16148,7 +16148,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "2 hundreds 6 tens 3 ones. What number is the whole?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -16172,7 +16172,7 @@ export const SEED_ITEMS = [
     "whole": 43,
     "promptText": "Split 43 into 33 and one more part. What is the other part?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -16226,7 +16226,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "The parts of a number are 9 hundreds, 1 ten, and 4 ones. Name the number."
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -16250,7 +16250,7 @@ export const SEED_ITEMS = [
     "whole": 58,
     "promptText": "A bond splits 58 so one part is 38. How big is the second part?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -16303,7 +16303,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "Join the parts 40 and 3. What is the whole?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -16327,7 +16327,7 @@ export const SEED_ITEMS = [
     "whole": 50,
     "promptText": "Ava filled a bond: whole 50, part 20, other part 70. The answer 70 is bigger than the whole! What is the correct part?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -16377,7 +16377,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "? = 0 + 2"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -16399,9 +16399,9 @@ export const SEED_ITEMS = [
    "display": {
     "part": 2,
     "whole": 5,
-    "promptText": "5 = 1 + 4. 5 = 2 + ?"
+    "promptText": "5 = 1 + 4, so 5 = 2 + ?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -16451,7 +16451,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "? = 5 + 1"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -16473,9 +16473,9 @@ export const SEED_ITEMS = [
    "display": {
     "part": 3,
     "whole": 9,
-    "promptText": "9 = 2 + 7. 9 = 3 + ?"
+    "promptText": "9 = 2 + 7, so 9 = 3 + ?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -16525,7 +16525,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "? = 0 + 9"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -16575,7 +16575,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "? = 10 + 1"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -16649,7 +16649,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "? = 9 + 9"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -16671,9 +16671,9 @@ export const SEED_ITEMS = [
    "display": {
     "part": 9,
     "whole": 12,
-    "promptText": "12 = 10 + 2. 12 = 9 + ?"
+    "promptText": "12 = 10 + 2, so 12 = 9 + ?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -16724,7 +16724,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "? = 7 + 3 + 4"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -16774,7 +16774,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "? = 20 + 1"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -16848,7 +16848,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "? = 50 + 3"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -16870,9 +16870,9 @@ export const SEED_ITEMS = [
    "display": {
     "part": 9,
     "whole": 34,
-    "promptText": "14 − 9 = 5. 34 − 9 = ?"
+    "promptText": "14 − 9 = 5, so 34 − 9 = ?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -16896,7 +16896,7 @@ export const SEED_ITEMS = [
     "whole": 52,
     "promptText": "52 = ? + 10"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -16922,7 +16922,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "? = 80 + 5"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {

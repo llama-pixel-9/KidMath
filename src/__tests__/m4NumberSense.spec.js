@@ -436,7 +436,7 @@ const BONDS = {
   },
   splitDrill: (q) => {
     const text = promptOf(q);
-    let m = text.match(/^(\d+) = \d+ \+ \d+\. \d+ = (\d+) \+ \?$/); // pattern step
+    let m = text.match(/^(\d+) = \d+ \+ \d+, so \d+ = (\d+) \+ \?$/); // pattern step
     if (m) return Number(m[1]) - Number(m[2]);
     m = text.match(/^\d+ \+ (\d+) = \d+ \+ (\d+) \+ \?$/); // make ten
     if (m) return Number(m[1]) - Number(m[2]);

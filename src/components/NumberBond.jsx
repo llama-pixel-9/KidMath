@@ -3,9 +3,13 @@ import { motion } from "framer-motion";
 import { digitKeyClass, PAD_BACKSPACE } from "./kit";
 import ConfettiBurst from "./ConfettiBurst.jsx";
 
-// Number-bond ("cherry") builder: the whole and one part are shown; the child
-// taps digits to fill the missing part. Numeric answer through submitAnswer.
-export default function NumberBond({ onSubmit, feedback, theme, lowMotionMode, lowEndDevice, whole, part }) {
+// Number-bond ("cherry") builder. Two shapes:
+//  - missing PART (default): the whole and one part are shown; the child
+//    fills the blank part ({whole, part} props).
+//  - missing WHOLE: `parts` (2 or 3 known parts) is passed instead; the top
+//    circle is the blank. The registry infers the shape from display.parts.
+// Numeric answer through submitAnswer either way.
+export default function NumberBond({ onSubmit, feedback, theme, lowMotionMode, lowEndDevice, whole, part, parts }) {
   const [entry, setEntry] = useState("");
   const locked = feedback === "correct" || feedback === "wrong";
   const pressDigit = (d) => {
@@ -25,24 +29,45 @@ export default function NumberBond({ onSubmit, feedback, theme, lowMotionMode, l
         ? "ring-4 ring-ember text-ember"
         : "ring-4 ring-teal text-teal";
   const circle = "w-16 h-16 rounded-full flex items-center justify-center text-2xl font-extrabold shadow";
+  const wholeMissing = Array.isArray(parts) && parts.length >= 2;
+  const branchXs = wholeMissing && parts.length === 3 ? [22, 70, 118] : [30, 110];
+
+  const entrySlot = (
+    <div className={`${circle} ${theme.cardBg} ${slotTone}`}>
+      {entry === "" ? "?" : entry}
+      {feedback === "correct" && !lowMotionMode && (
+        <ConfettiBurst intensity={lowEndDevice ? "light" : "normal"} />
+      )}
+    </div>
+  );
 
   return (
     <section className="w-full flex flex-col items-center gap-3" aria-label="Number bond">
       <div className="relative flex flex-col items-center">
-        <div className={`${circle} ${theme.cardBg} ${theme.textPrimary}`}>{whole}</div>
+        {wholeMissing ? (
+          entrySlot
+        ) : (
+          <div className={`${circle} ${theme.cardBg} ${theme.textPrimary}`}>{whole}</div>
+        )}
         <svg width="140" height="34" className="my-1" aria-hidden="true">
-          <line x1="70" y1="2" x2="30" y2="32" className="stroke-slate-300" strokeWidth="3" />
-          <line x1="70" y1="2" x2="110" y2="32" className="stroke-slate-300" strokeWidth="3" />
+          {(wholeMissing ? branchXs : [30, 110]).map((x) => (
+            <line key={x} x1="70" y1="2" x2={x} y2="32" className="stroke-slate-300" strokeWidth="3" />
+          ))}
         </svg>
-        <div className="flex gap-10">
-          <div className={`${circle} ${theme.cardBg} ${theme.textPrimary}`}>{part}</div>
-          <div className={`${circle} ${theme.cardBg} ${slotTone}`}>
-            {entry === "" ? "?" : entry}
-            {feedback === "correct" && !lowMotionMode && (
-              <ConfettiBurst intensity={lowEndDevice ? "light" : "normal"} />
-            )}
+        {wholeMissing ? (
+          <div className={parts.length === 3 ? "flex gap-4" : "flex gap-10"}>
+            {parts.map((p, i) => (
+              <div key={i} className={`${circle} ${theme.cardBg} ${theme.textPrimary}`}>
+                {p}
+              </div>
+            ))}
           </div>
-        </div>
+        ) : (
+          <div className="flex gap-10">
+            <div className={`${circle} ${theme.cardBg} ${theme.textPrimary}`}>{part}</div>
+            {entrySlot}
+          </div>
+        )}
       </div>
       <div className="grid grid-cols-3 gap-2 w-full">
         {["1", "2", "3", "4", "5", "6", "7", "8", "9"].map((d) => (

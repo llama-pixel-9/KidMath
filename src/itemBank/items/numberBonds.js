@@ -12,7 +12,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[2,3],"promptText":"Mia has 2 red cups and 3 blue cups. How many cups does Mia have in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[2,3],"promptText":"Mia has 2 red cups and 3 blue cups. How many cups does Mia have in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-002",
@@ -22,7 +22,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[3,2],"promptText":"Kai puts 3 marbles in a box and 2 marbles in a bag. How many marbles does Kai pack altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[3,2],"promptText":"Kai puts 3 marbles in a box and 2 marbles in a bag. How many marbles does Kai pack altogether?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-003",
@@ -32,7 +32,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[2,4],"promptText":"June finds 2 socks in the morning. Later June finds 4 more socks. How many socks does June find that day?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[2,4],"promptText":"June finds 2 socks in the morning. Later June finds 4 more socks. How many socks does June find that day?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-004",
@@ -42,7 +42,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[3,3],"promptText":"Ben lines up 3 new crayons, then adds a row of 3 old crayons. How many crayons are in the two rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[3,3],"promptText":"Ben lines up 3 new crayons, then adds a row of 3 old crayons. How many crayons are in the two rows together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-005",
@@ -52,7 +52,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[4,2],"promptText":"On the shelf, Nia keeps 4 acorns. Under the bed, Nia keeps 2 more acorns. How many acorns does Nia keep in both spots?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[4,2],"promptText":"On the shelf, Nia keeps 4 acorns. Under the bed, Nia keeps 2 more acorns. How many acorns does Nia keep in both spots?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-006",
@@ -62,7 +62,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[2,5],"promptText":"Rosa and a friend sort beads. Rosa holds 2 beads; the friend holds 5 beads. How many beads do they hold together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[2,5],"promptText":"Rosa and a friend sort beads. Rosa holds 2 beads; the friend holds 5 beads. How many beads do they hold together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-007",
@@ -72,7 +72,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[3,4],"promptText":"Diego glues 3 buttons on one page and 4 buttons on the next page. How many buttons does Diego glue in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[3,4],"promptText":"Diego glues 3 buttons on one page and 4 buttons on the next page. How many buttons does Diego glue in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-008",
@@ -82,7 +82,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[4,3],"promptText":"Leo has 4 spotted shells and 3 plain shells. How many shells does Leo have in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[4,3],"promptText":"Leo has 4 spotted shells and 3 plain shells. How many shells does Leo have in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-009",
@@ -92,7 +92,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[5,2],"promptText":"Nora puts 5 stickers in a box and 2 stickers in a bag. How many stickers does Nora pack altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[5,2],"promptText":"Nora puts 5 stickers in a box and 2 stickers in a bag. How many stickers does Nora pack altogether?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-010",
@@ -102,7 +102,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[2,6],"promptText":"Theo finds 2 grapes in the morning. Later Theo finds 6 more grapes. How many grapes does Theo find that day?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[2,6],"promptText":"Theo finds 2 grapes in the morning. Later Theo finds 6 more grapes. How many grapes does Theo find that day?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-011",
@@ -112,7 +112,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[3,5],"promptText":"Lily lines up 3 big blocks, then adds a row of 5 small blocks. How many blocks are in the two rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[3,5],"promptText":"Lily lines up 3 big blocks, then adds a row of 5 small blocks. How many blocks are in the two rows together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-012",
@@ -122,7 +122,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[4,4],"promptText":"On the shelf, Luca keeps 4 leaves. Under the bed, Luca keeps 4 more leaves. How many leaves does Luca keep in both spots?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[4,4],"promptText":"On the shelf, Luca keeps 4 leaves. Under the bed, Luca keeps 4 more leaves. How many leaves does Luca keep in both spots?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-013",
@@ -132,7 +132,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[5,3],"promptText":"Finn and a friend sort cups. Finn holds 5 cups; the friend holds 3 cups. How many cups do they hold together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[5,3],"promptText":"Finn and a friend sort cups. Finn holds 5 cups; the friend holds 3 cups. How many cups do they hold together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-014",
@@ -142,7 +142,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[6,2],"promptText":"Priya glues 6 marbles on one page and 2 marbles on the next page. How many marbles does Priya glue in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[6,2],"promptText":"Priya glues 6 marbles on one page and 2 marbles on the next page. How many marbles does Priya glue in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-015",
@@ -152,7 +152,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[2,7],"promptText":"Ava has 2 long socks and 7 short socks. How many socks does Ava have in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[2,7],"promptText":"Ava has 2 long socks and 7 short socks. How many socks does Ava have in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-016",
@@ -162,7 +162,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[3,6],"promptText":"Omar puts 3 crayons in a box and 6 crayons in a bag. How many crayons does Omar pack altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[3,6],"promptText":"Omar puts 3 crayons in a box and 6 crayons in a bag. How many crayons does Omar pack altogether?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-017",
@@ -172,7 +172,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[4,5],"promptText":"Zoe finds 4 acorns in the morning. Later Zoe finds 5 more acorns. How many acorns does Zoe find that day?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[4,5],"promptText":"Zoe finds 4 acorns in the morning. Later Zoe finds 5 more acorns. How many acorns does Zoe find that day?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-018",
@@ -182,7 +182,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[5,4],"promptText":"Sam lines up 5 green beads, then adds a row of 4 yellow beads. How many beads are in the two rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[5,4],"promptText":"Sam lines up 5 green beads, then adds a row of 4 yellow beads. How many beads are in the two rows together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-019",
@@ -192,7 +192,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[6,3],"promptText":"On the shelf, Ida keeps 6 buttons. Under the bed, Ida keeps 3 more buttons. How many buttons does Ida keep in both spots?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[6,3],"promptText":"On the shelf, Ida keeps 6 buttons. Under the bed, Ida keeps 3 more buttons. How many buttons does Ida keep in both spots?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-020",
@@ -202,7 +202,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[7,2],"promptText":"Amara and a friend sort shells. Amara holds 7 shells; the friend holds 2 shells. How many shells do they hold together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[7,2],"promptText":"Amara and a friend sort shells. Amara holds 7 shells; the friend holds 2 shells. How many shells do they hold together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-021",
@@ -212,7 +212,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[2,8],"promptText":"Mia glues 2 stickers on one page and 8 stickers on the next page. How many stickers does Mia glue in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[2,8],"promptText":"Mia glues 2 stickers on one page and 8 stickers on the next page. How many stickers does Mia glue in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-022",
@@ -222,7 +222,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[3,7],"promptText":"Kai has 3 purple grapes and 7 green grapes. How many grapes does Kai have in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[3,7],"promptText":"Kai has 3 purple grapes and 7 green grapes. How many grapes does Kai have in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-023",
@@ -232,7 +232,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[4,6],"promptText":"June puts 4 blocks in a box and 6 blocks in a bag. How many blocks does June pack altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[4,6],"promptText":"June puts 4 blocks in a box and 6 blocks in a bag. How many blocks does June pack altogether?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-024",
@@ -242,7 +242,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[5,5],"promptText":"Ben finds 5 leaves in the morning. Later Ben finds 5 more leaves. How many leaves does Ben find that day?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[5,5],"promptText":"Ben finds 5 leaves in the morning. Later Ben finds 5 more leaves. How many leaves does Ben find that day?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-025",
@@ -252,7 +252,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[6,4],"promptText":"Nia lines up 6 red cups, then adds a row of 4 blue cups. How many cups are in the two rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[6,4],"promptText":"Nia lines up 6 red cups, then adds a row of 4 blue cups. How many cups are in the two rows together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-026",
@@ -262,7 +262,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[7,3],"promptText":"On the shelf, Rosa keeps 7 marbles. Under the bed, Rosa keeps 3 more marbles. How many marbles does Rosa keep in both spots?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[7,3],"promptText":"On the shelf, Rosa keeps 7 marbles. Under the bed, Rosa keeps 3 more marbles. How many marbles does Rosa keep in both spots?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-027",
@@ -272,7 +272,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[8,2],"promptText":"Diego and a friend sort socks. Diego holds 8 socks; the friend holds 2 socks. How many socks do they hold together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[8,2],"promptText":"Diego and a friend sort socks. Diego holds 8 socks; the friend holds 2 socks. How many socks do they hold together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-028",
@@ -282,7 +282,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[2,3],"promptText":"Leo glues 2 crayons on one page and 3 crayons on the next page. How many crayons does Leo glue in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[2,3],"promptText":"Leo glues 2 crayons on one page and 3 crayons on the next page. How many crayons does Leo glue in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-029",
@@ -292,7 +292,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[3,2],"promptText":"Nora has 3 big acorns and 2 small acorns. How many acorns does Nora have in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[3,2],"promptText":"Nora has 3 big acorns and 2 small acorns. How many acorns does Nora have in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-030",
@@ -302,7 +302,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[2,4],"promptText":"Theo puts 2 beads in a box and 4 beads in a bag. How many beads does Theo pack altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[2,4],"promptText":"Theo puts 2 beads in a box and 4 beads in a bag. How many beads does Theo pack altogether?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-031",
@@ -312,7 +312,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[3,3],"promptText":"Lily finds 3 buttons in the morning. Later Lily finds 3 more buttons. How many buttons does Lily find that day?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[3,3],"promptText":"Lily finds 3 buttons in the morning. Later Lily finds 3 more buttons. How many buttons does Lily find that day?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-032",
@@ -322,7 +322,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[4,2],"promptText":"Luca lines up 4 spotted shells, then adds a row of 2 plain shells. How many shells are in the two rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[4,2],"promptText":"Luca lines up 4 spotted shells, then adds a row of 2 plain shells. How many shells are in the two rows together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-033",
@@ -332,7 +332,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[2,5],"promptText":"On the shelf, Finn keeps 2 stickers. Under the bed, Finn keeps 5 more stickers. How many stickers does Finn keep in both spots?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[2,5],"promptText":"On the shelf, Finn keeps 2 stickers. Under the bed, Finn keeps 5 more stickers. How many stickers does Finn keep in both spots?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-034",
@@ -342,7 +342,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[3,4],"promptText":"Priya and a friend sort grapes. Priya holds 3 grapes; the friend holds 4 grapes. How many grapes do they hold together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[3,4],"promptText":"Priya and a friend sort grapes. Priya holds 3 grapes; the friend holds 4 grapes. How many grapes do they hold together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-035",
@@ -352,7 +352,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[4,3],"promptText":"Ava glues 4 blocks on one page and 3 blocks on the next page. How many blocks does Ava glue in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[4,3],"promptText":"Ava glues 4 blocks on one page and 3 blocks on the next page. How many blocks does Ava glue in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-036",
@@ -362,7 +362,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[5,2],"promptText":"Omar has 5 red leaves and 2 brown leaves. How many leaves does Omar have in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[5,2],"promptText":"Omar has 5 red leaves and 2 brown leaves. How many leaves does Omar have in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-037",
@@ -372,7 +372,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[2,6],"promptText":"Zoe puts 2 cups in a box and 6 cups in a bag. How many cups does Zoe pack altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[2,6],"promptText":"Zoe puts 2 cups in a box and 6 cups in a bag. How many cups does Zoe pack altogether?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-038",
@@ -382,7 +382,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[3,5],"promptText":"Sam finds 3 marbles in the morning. Later Sam finds 5 more marbles. How many marbles does Sam find that day?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[3,5],"promptText":"Sam finds 3 marbles in the morning. Later Sam finds 5 more marbles. How many marbles does Sam find that day?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-039",
@@ -392,7 +392,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[4,4],"promptText":"Ida lines up 4 long socks, then adds a row of 4 short socks. How many socks are in the two rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[4,4],"promptText":"Ida lines up 4 long socks, then adds a row of 4 short socks. How many socks are in the two rows together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-040",
@@ -402,7 +402,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[5,3],"promptText":"On the shelf, Amara keeps 5 crayons. Under the bed, Amara keeps 3 more crayons. How many crayons does Amara keep in both spots?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[5,3],"promptText":"On the shelf, Amara keeps 5 crayons. Under the bed, Amara keeps 3 more crayons. How many crayons does Amara keep in both spots?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-041",
@@ -412,7 +412,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[6,2],"promptText":"Mia and a friend sort acorns. Mia holds 6 acorns; the friend holds 2 acorns. How many acorns do they hold together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[6,2],"promptText":"Mia and a friend sort acorns. Mia holds 6 acorns; the friend holds 2 acorns. How many acorns do they hold together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-042",
@@ -422,7 +422,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[2,7],"promptText":"Kai glues 2 beads on one page and 7 beads on the next page. How many beads does Kai glue in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[2,7],"promptText":"Kai glues 2 beads on one page and 7 beads on the next page. How many beads does Kai glue in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-043",
@@ -432,7 +432,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[3,6],"promptText":"June has 3 round buttons and 6 square buttons. How many buttons does June have in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[3,6],"promptText":"June has 3 round buttons and 6 square buttons. How many buttons does June have in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-044",
@@ -442,7 +442,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[4,5],"promptText":"Ben puts 4 shells in a box and 5 shells in a bag. How many shells does Ben pack altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[4,5],"promptText":"Ben puts 4 shells in a box and 5 shells in a bag. How many shells does Ben pack altogether?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-045",
@@ -452,7 +452,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[5,4],"promptText":"Nia finds 5 stickers in the morning. Later Nia finds 4 more stickers. How many stickers does Nia find that day?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[5,4],"promptText":"Nia finds 5 stickers in the morning. Later Nia finds 4 more stickers. How many stickers does Nia find that day?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-046",
@@ -462,7 +462,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[6,3],"promptText":"Rosa lines up 6 purple grapes, then adds a row of 3 green grapes. How many grapes are in the two rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[6,3],"promptText":"Rosa lines up 6 purple grapes, then adds a row of 3 green grapes. How many grapes are in the two rows together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-047",
@@ -472,7 +472,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[7,2],"promptText":"On the shelf, Diego keeps 7 blocks. Under the bed, Diego keeps 2 more blocks. How many blocks does Diego keep in both spots?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[7,2],"promptText":"On the shelf, Diego keeps 7 blocks. Under the bed, Diego keeps 2 more blocks. How many blocks does Diego keep in both spots?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-048",
@@ -482,7 +482,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[2,8],"promptText":"Leo and a friend sort leaves. Leo holds 2 leaves; the friend holds 8 leaves. How many leaves do they hold together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[2,8],"promptText":"Leo and a friend sort leaves. Leo holds 2 leaves; the friend holds 8 leaves. How many leaves do they hold together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-049",
@@ -492,7 +492,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[3,7],"promptText":"Nora glues 3 cups on one page and 7 cups on the next page. How many cups does Nora glue in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[3,7],"promptText":"Nora glues 3 cups on one page and 7 cups on the next page. How many cups does Nora glue in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-050",
@@ -502,7 +502,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[4,6],"promptText":"Theo has 4 striped marbles and 6 clear marbles. How many marbles does Theo have in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[4,6],"promptText":"Theo has 4 striped marbles and 6 clear marbles. How many marbles does Theo have in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-051",
@@ -512,7 +512,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[5,5],"promptText":"Lily puts 5 socks in a box and 5 socks in a bag. How many socks does Lily pack altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[5,5],"promptText":"Lily puts 5 socks in a box and 5 socks in a bag. How many socks does Lily pack altogether?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-052",
@@ -522,7 +522,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[2,9],"promptText":"Ava finds 2 blocks in the morning. Later Ava finds 9 more blocks. How many blocks does Ava find that day?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[2,9],"promptText":"Ava finds 2 blocks in the morning. Later Ava finds 9 more blocks. How many blocks does Ava find that day?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-053",
@@ -532,7 +532,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[3,8],"promptText":"Omar lines up 3 red leaves, then adds a row of 8 brown leaves. How many leaves are in the two rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[3,8],"promptText":"Omar lines up 3 red leaves, then adds a row of 8 brown leaves. How many leaves are in the two rows together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-054",
@@ -542,7 +542,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[4,7],"promptText":"On the shelf, Zoe keeps 4 cups. Under the bed, Zoe keeps 7 more cups. How many cups does Zoe keep in both spots?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[4,7],"promptText":"On the shelf, Zoe keeps 4 cups. Under the bed, Zoe keeps 7 more cups. How many cups does Zoe keep in both spots?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-055",
@@ -552,7 +552,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[5,6],"promptText":"Sam and a friend sort marbles. Sam holds 5 marbles; the friend holds 6 marbles. How many marbles do they hold together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[5,6],"promptText":"Sam and a friend sort marbles. Sam holds 5 marbles; the friend holds 6 marbles. How many marbles do they hold together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-056",
@@ -562,7 +562,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[6,5],"promptText":"Ida glues 6 socks on one page and 5 socks on the next page. How many socks does Ida glue in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[6,5],"promptText":"Ida glues 6 socks on one page and 5 socks on the next page. How many socks does Ida glue in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-057",
@@ -572,7 +572,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[7,4],"promptText":"Amara has 7 new crayons and 4 old crayons. How many crayons does Amara have in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[7,4],"promptText":"Amara has 7 new crayons and 4 old crayons. How many crayons does Amara have in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-058",
@@ -582,7 +582,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[8,3],"promptText":"Mia puts 8 acorns in a box and 3 acorns in a bag. How many acorns does Mia pack altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[8,3],"promptText":"Mia puts 8 acorns in a box and 3 acorns in a bag. How many acorns does Mia pack altogether?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-059",
@@ -592,7 +592,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[9,2],"promptText":"Kai finds 9 beads in the morning. Later Kai finds 2 more beads. How many beads does Kai find that day?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[9,2],"promptText":"Kai finds 9 beads in the morning. Later Kai finds 2 more beads. How many beads does Kai find that day?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-060",
@@ -602,7 +602,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[2,10],"promptText":"June lines up 2 round buttons, then adds a row of 10 square buttons. How many buttons are in the two rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[2,10],"promptText":"June lines up 2 round buttons, then adds a row of 10 square buttons. How many buttons are in the two rows together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-061",
@@ -612,7 +612,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[3,9],"promptText":"On the shelf, Ben keeps 3 shells. Under the bed, Ben keeps 9 more shells. How many shells does Ben keep in both spots?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[3,9],"promptText":"On the shelf, Ben keeps 3 shells. Under the bed, Ben keeps 9 more shells. How many shells does Ben keep in both spots?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-062",
@@ -622,7 +622,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[4,8],"promptText":"Nia and a friend sort stickers. Nia holds 4 stickers; the friend holds 8 stickers. How many stickers do they hold together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[4,8],"promptText":"Nia and a friend sort stickers. Nia holds 4 stickers; the friend holds 8 stickers. How many stickers do they hold together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-063",
@@ -632,7 +632,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[5,7],"promptText":"Rosa glues 5 grapes on one page and 7 grapes on the next page. How many grapes does Rosa glue in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[5,7],"promptText":"Rosa glues 5 grapes on one page and 7 grapes on the next page. How many grapes does Rosa glue in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-064",
@@ -642,7 +642,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[6,6],"promptText":"Diego has 6 big blocks and 6 small blocks. How many blocks does Diego have in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[6,6],"promptText":"Diego has 6 big blocks and 6 small blocks. How many blocks does Diego have in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-065",
@@ -652,7 +652,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[7,5],"promptText":"Leo puts 7 leaves in a box and 5 leaves in a bag. How many leaves does Leo pack altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[7,5],"promptText":"Leo puts 7 leaves in a box and 5 leaves in a bag. How many leaves does Leo pack altogether?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-066",
@@ -662,7 +662,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[8,4],"promptText":"Nora finds 8 cups in the morning. Later Nora finds 4 more cups. How many cups does Nora find that day?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[8,4],"promptText":"Nora finds 8 cups in the morning. Later Nora finds 4 more cups. How many cups does Nora find that day?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-067",
@@ -672,7 +672,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[9,3],"promptText":"Theo lines up 9 striped marbles, then adds a row of 3 clear marbles. How many marbles are in the two rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[9,3],"promptText":"Theo lines up 9 striped marbles, then adds a row of 3 clear marbles. How many marbles are in the two rows together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-068",
@@ -682,7 +682,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[10,2],"promptText":"On the shelf, Lily keeps 10 socks. Under the bed, Lily keeps 2 more socks. How many socks does Lily keep in both spots?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[10,2],"promptText":"On the shelf, Lily keeps 10 socks. Under the bed, Lily keeps 2 more socks. How many socks does Lily keep in both spots?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-069",
@@ -692,7 +692,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[2,11],"promptText":"Luca and a friend sort crayons. Luca holds 2 crayons; the friend holds 11 crayons. How many crayons do they hold together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[2,11],"promptText":"Luca and a friend sort crayons. Luca holds 2 crayons; the friend holds 11 crayons. How many crayons do they hold together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-070",
@@ -702,7 +702,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[3,10],"promptText":"Finn glues 3 acorns on one page and 10 acorns on the next page. How many acorns does Finn glue in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[3,10],"promptText":"Finn glues 3 acorns on one page and 10 acorns on the next page. How many acorns does Finn glue in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-071",
@@ -712,7 +712,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[4,9],"promptText":"Priya has 4 green beads and 9 yellow beads. How many beads does Priya have in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[4,9],"promptText":"Priya has 4 green beads and 9 yellow beads. How many beads does Priya have in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-072",
@@ -722,7 +722,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[5,8],"promptText":"Ava puts 5 buttons in a box and 8 buttons in a bag. How many buttons does Ava pack altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[5,8],"promptText":"Ava puts 5 buttons in a box and 8 buttons in a bag. How many buttons does Ava pack altogether?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-073",
@@ -732,7 +732,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[6,7],"promptText":"Omar finds 6 shells in the morning. Later Omar finds 7 more shells. How many shells does Omar find that day?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[6,7],"promptText":"Omar finds 6 shells in the morning. Later Omar finds 7 more shells. How many shells does Omar find that day?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-074",
@@ -742,7 +742,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[7,6],"promptText":"Zoe lines up 7 shiny stickers, then adds a row of 6 plain stickers. How many stickers are in the two rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[7,6],"promptText":"Zoe lines up 7 shiny stickers, then adds a row of 6 plain stickers. How many stickers are in the two rows together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-075",
@@ -752,7 +752,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[8,5],"promptText":"On the shelf, Sam keeps 8 grapes. Under the bed, Sam keeps 5 more grapes. How many grapes does Sam keep in both spots?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[8,5],"promptText":"On the shelf, Sam keeps 8 grapes. Under the bed, Sam keeps 5 more grapes. How many grapes does Sam keep in both spots?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-076",
@@ -762,7 +762,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[9,4],"promptText":"Ida and a friend sort blocks. Ida holds 9 blocks; the friend holds 4 blocks. How many blocks do they hold together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[9,4],"promptText":"Ida and a friend sort blocks. Ida holds 9 blocks; the friend holds 4 blocks. How many blocks do they hold together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-077",
@@ -772,7 +772,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[10,3],"promptText":"Amara glues 10 leaves on one page and 3 leaves on the next page. How many leaves does Amara glue in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[10,3],"promptText":"Amara glues 10 leaves on one page and 3 leaves on the next page. How many leaves does Amara glue in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-078",
@@ -782,7 +782,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[11,2],"promptText":"Mia has 11 red cups and 2 blue cups. How many cups does Mia have in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[11,2],"promptText":"Mia has 11 red cups and 2 blue cups. How many cups does Mia have in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-079",
@@ -792,7 +792,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[2,12],"promptText":"Kai puts 2 marbles in a box and 12 marbles in a bag. How many marbles does Kai pack altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[2,12],"promptText":"Kai puts 2 marbles in a box and 12 marbles in a bag. How many marbles does Kai pack altogether?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-080",
@@ -802,7 +802,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[3,11],"promptText":"June finds 3 socks in the morning. Later June finds 11 more socks. How many socks does June find that day?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[3,11],"promptText":"June finds 3 socks in the morning. Later June finds 11 more socks. How many socks does June find that day?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-081",
@@ -812,7 +812,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[4,10],"promptText":"Ben lines up 4 new crayons, then adds a row of 10 old crayons. How many crayons are in the two rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[4,10],"promptText":"Ben lines up 4 new crayons, then adds a row of 10 old crayons. How many crayons are in the two rows together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-082",
@@ -822,7 +822,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[5,9],"promptText":"On the shelf, Nia keeps 5 acorns. Under the bed, Nia keeps 9 more acorns. How many acorns does Nia keep in both spots?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[5,9],"promptText":"On the shelf, Nia keeps 5 acorns. Under the bed, Nia keeps 9 more acorns. How many acorns does Nia keep in both spots?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-083",
@@ -832,7 +832,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[6,8],"promptText":"Rosa and a friend sort beads. Rosa holds 6 beads; the friend holds 8 beads. How many beads do they hold together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[6,8],"promptText":"Rosa and a friend sort beads. Rosa holds 6 beads; the friend holds 8 beads. How many beads do they hold together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-084",
@@ -842,7 +842,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[7,7],"promptText":"Diego glues 7 buttons on one page and 7 buttons on the next page. How many buttons does Diego glue in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[7,7],"promptText":"Diego glues 7 buttons on one page and 7 buttons on the next page. How many buttons does Diego glue in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-085",
@@ -852,7 +852,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[8,6],"promptText":"Leo has 8 spotted shells and 6 plain shells. How many shells does Leo have in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[8,6],"promptText":"Leo has 8 spotted shells and 6 plain shells. How many shells does Leo have in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-086",
@@ -862,7 +862,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[9,5],"promptText":"Nora puts 9 stickers in a box and 5 stickers in a bag. How many stickers does Nora pack altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[9,5],"promptText":"Nora puts 9 stickers in a box and 5 stickers in a bag. How many stickers does Nora pack altogether?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-087",
@@ -872,7 +872,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[10,4],"promptText":"Theo finds 10 grapes in the morning. Later Theo finds 4 more grapes. How many grapes does Theo find that day?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[10,4],"promptText":"Theo finds 10 grapes in the morning. Later Theo finds 4 more grapes. How many grapes does Theo find that day?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-088",
@@ -882,7 +882,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[11,3],"promptText":"Lily lines up 11 big blocks, then adds a row of 3 small blocks. How many blocks are in the two rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[11,3],"promptText":"Lily lines up 11 big blocks, then adds a row of 3 small blocks. How many blocks are in the two rows together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-089",
@@ -892,7 +892,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[12,2],"promptText":"On the shelf, Luca keeps 12 leaves. Under the bed, Luca keeps 2 more leaves. How many leaves does Luca keep in both spots?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[12,2],"promptText":"On the shelf, Luca keeps 12 leaves. Under the bed, Luca keeps 2 more leaves. How many leaves does Luca keep in both spots?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-090",
@@ -902,7 +902,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[2,13],"promptText":"Finn and a friend sort cups. Finn holds 2 cups; the friend holds 13 cups. How many cups do they hold together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[2,13],"promptText":"Finn and a friend sort cups. Finn holds 2 cups; the friend holds 13 cups. How many cups do they hold together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-091",
@@ -912,7 +912,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[3,12],"promptText":"Priya glues 3 marbles on one page and 12 marbles on the next page. How many marbles does Priya glue in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[3,12],"promptText":"Priya glues 3 marbles on one page and 12 marbles on the next page. How many marbles does Priya glue in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-092",
@@ -922,7 +922,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[4,11],"promptText":"Ava has 4 long socks and 11 short socks. How many socks does Ava have in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[4,11],"promptText":"Ava has 4 long socks and 11 short socks. How many socks does Ava have in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-093",
@@ -932,7 +932,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[5,10],"promptText":"Omar puts 5 crayons in a box and 10 crayons in a bag. How many crayons does Omar pack altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[5,10],"promptText":"Omar puts 5 crayons in a box and 10 crayons in a bag. How many crayons does Omar pack altogether?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-094",
@@ -1032,7 +1032,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":45,"display":{"parts":[30,15],"promptText":"On the shelf, Nora keeps 30 stickers. Under the bed, Nora keeps 15 more stickers. How many stickers does Nora keep in both spots?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":45,"display":{"parts":[30,15],"promptText":"On the shelf, Nora keeps 30 stickers. Under the bed, Nora keeps 15 more stickers. How many stickers does Nora keep in both spots?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-104",
@@ -1042,7 +1042,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":65,"display":{"parts":[40,25],"promptText":"Theo and a friend sort grapes. Theo holds 40 grapes; the friend holds 25 grapes. How many grapes do they hold together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":65,"display":{"parts":[40,25],"promptText":"Theo and a friend sort grapes. Theo holds 40 grapes; the friend holds 25 grapes. How many grapes do they hold together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-105",
@@ -1052,7 +1052,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":55,"display":{"parts":[20,35],"promptText":"Lily glues 20 blocks on one page and 35 blocks on the next page. How many blocks does Lily glue in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":55,"display":{"parts":[20,35],"promptText":"Lily glues 20 blocks on one page and 35 blocks on the next page. How many blocks does Lily glue in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-106",
@@ -1062,7 +1062,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":65,"display":{"parts":[50,15],"promptText":"Luca has 50 red leaves and 15 brown leaves. How many leaves does Luca have in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":65,"display":{"parts":[50,15],"promptText":"Luca has 50 red leaves and 15 brown leaves. How many leaves does Luca have in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-107",
@@ -1072,7 +1072,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"parts":[30,45],"promptText":"Finn puts 30 cups in a box and 45 cups in a bag. How many cups does Finn pack altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"parts":[30,45],"promptText":"Finn puts 30 cups in a box and 45 cups in a bag. How many cups does Finn pack altogether?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-108",
@@ -1082,7 +1082,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":85,"display":{"parts":[60,25],"promptText":"Priya finds 60 marbles in the morning. Later Priya finds 25 more marbles. How many marbles does Priya find that day?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":85,"display":{"parts":[60,25],"promptText":"Priya finds 60 marbles in the morning. Later Priya finds 25 more marbles. How many marbles does Priya find that day?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-109",
@@ -1092,7 +1092,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"parts":[40,35],"promptText":"Ava lines up 40 long socks, then adds a row of 35 short socks. How many socks are in the two rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"parts":[40,35],"promptText":"Ava lines up 40 long socks, then adds a row of 35 short socks. How many socks are in the two rows together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-110",
@@ -1102,7 +1102,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"parts":[20,55],"promptText":"On the shelf, Omar keeps 20 crayons. Under the bed, Omar keeps 55 more crayons. How many crayons does Omar keep in both spots?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"parts":[20,55],"promptText":"On the shelf, Omar keeps 20 crayons. Under the bed, Omar keeps 55 more crayons. How many crayons does Omar keep in both spots?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-111",
@@ -1112,7 +1112,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":95,"display":{"parts":[50,45],"promptText":"Zoe and a friend sort acorns. Zoe holds 50 acorns; the friend holds 45 acorns. How many acorns do they hold together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":95,"display":{"parts":[50,45],"promptText":"Zoe and a friend sort acorns. Zoe holds 50 acorns; the friend holds 45 acorns. How many acorns do they hold together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-112",
@@ -1122,7 +1122,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":85,"display":{"parts":[70,15],"promptText":"Sam glues 70 beads on one page and 15 beads on the next page. How many beads does Sam glue in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":85,"display":{"parts":[70,15],"promptText":"Sam glues 70 beads on one page and 15 beads on the next page. How many beads does Sam glue in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-113",
@@ -1132,7 +1132,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":55,"display":{"parts":[30,25],"promptText":"Ida has 30 round buttons and 25 square buttons. How many buttons does Ida have in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":55,"display":{"parts":[30,25],"promptText":"Ida has 30 round buttons and 25 square buttons. How many buttons does Ida have in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-114",
@@ -1142,7 +1142,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":95,"display":{"parts":[60,35],"promptText":"Amara puts 60 shells in a box and 35 shells in a bag. How many shells does Amara pack altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":95,"display":{"parts":[60,35],"promptText":"Amara puts 60 shells in a box and 35 shells in a bag. How many shells does Amara pack altogether?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-115",
@@ -1152,7 +1152,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":65,"display":{"parts":[25,40],"promptText":"Mia finds 25 stickers in the morning. Later Mia finds 40 more stickers. How many stickers does Mia find that day?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":65,"display":{"parts":[25,40],"promptText":"Mia finds 25 stickers in the morning. Later Mia finds 40 more stickers. How many stickers does Mia find that day?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-116",
@@ -1162,7 +1162,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"parts":[45,30],"promptText":"Kai lines up 45 purple grapes, then adds a row of 30 green grapes. How many grapes are in the two rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"parts":[45,30],"promptText":"Kai lines up 45 purple grapes, then adds a row of 30 green grapes. How many grapes are in the two rows together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-117",
@@ -1172,7 +1172,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":80,"display":{"parts":[15,65],"promptText":"On the shelf, June keeps 15 blocks. Under the bed, June keeps 65 more blocks. How many blocks does June keep in both spots?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":80,"display":{"parts":[15,65],"promptText":"On the shelf, June keeps 15 blocks. Under the bed, June keeps 65 more blocks. How many blocks does June keep in both spots?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-118",
@@ -1182,7 +1182,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"parts":[55,20],"promptText":"Ben and a friend sort leaves. Ben holds 55 leaves; the friend holds 20 leaves. How many leaves do they hold together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"parts":[55,20],"promptText":"Ben and a friend sort leaves. Ben holds 55 leaves; the friend holds 20 leaves. How many leaves do they hold together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-119",
@@ -1192,7 +1192,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"parts":[35,40],"promptText":"Nia glues 35 cups on one page and 40 cups on the next page. How many cups does Nia glue in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"parts":[35,40],"promptText":"Nia glues 35 cups on one page and 40 cups on the next page. How many cups does Nia glue in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-120",
@@ -1202,7 +1202,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":80,"display":{"parts":[65,15],"promptText":"Rosa has 65 striped marbles and 15 clear marbles. How many marbles does Rosa have in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":80,"display":{"parts":[65,15],"promptText":"Rosa has 65 striped marbles and 15 clear marbles. How many marbles does Rosa have in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-121",
@@ -1212,7 +1212,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":95,"display":{"parts":[45,50],"promptText":"Diego puts 45 socks in a box and 50 socks in a bag. How many socks does Diego pack altogether?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":95,"display":{"parts":[45,50],"promptText":"Diego puts 45 socks in a box and 50 socks in a bag. How many socks does Diego pack altogether?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-122",
@@ -1222,7 +1222,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":95,"display":{"parts":[15,80],"promptText":"Leo finds 15 crayons in the morning. Later Leo finds 80 more crayons. How many crayons does Leo find that day?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":95,"display":{"parts":[15,80],"promptText":"Leo finds 15 crayons in the morning. Later Leo finds 80 more crayons. How many crayons does Leo find that day?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-123",
@@ -1232,7 +1232,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":55,"display":{"parts":[25,30],"promptText":"Nora lines up 25 big acorns, then adds a row of 30 small acorns. How many acorns are in the two rows together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":55,"display":{"parts":[25,30],"promptText":"Nora lines up 25 big acorns, then adds a row of 30 small acorns. How many acorns are in the two rows together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-124",
@@ -1242,7 +1242,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":95,"display":{"parts":[35,60],"promptText":"On the shelf, Theo keeps 35 beads. Under the bed, Theo keeps 60 more beads. How many beads does Theo keep in both spots?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":95,"display":{"parts":[35,60],"promptText":"On the shelf, Theo keeps 35 beads. Under the bed, Theo keeps 60 more beads. How many beads does Theo keep in both spots?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-125",
@@ -1252,7 +1252,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":85,"display":{"parts":[45,40],"promptText":"Lily and a friend sort buttons. Lily holds 45 buttons; the friend holds 40 buttons. How many buttons do they hold together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":85,"display":{"parts":[45,40],"promptText":"Lily and a friend sort buttons. Lily holds 45 buttons; the friend holds 40 buttons. How many buttons do they hold together?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-126",
@@ -1262,7 +1262,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":85,"display":{"parts":[65,20],"promptText":"Luca glues 65 shells on one page and 20 shells on the next page. How many shells does Luca glue in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":85,"display":{"parts":[65,20],"promptText":"Luca glues 65 shells on one page and 20 shells on the next page. How many shells does Luca glue in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-127",
@@ -1272,7 +1272,7 @@ export const ITEMS = [
     structureType: "bondStoryWholeUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":45,"display":{"parts":[15,30],"promptText":"Finn has 15 shiny stickers and 30 plain stickers. How many stickers does Finn have in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":45,"display":{"parts":[15,30],"promptText":"Finn has 15 shiny stickers and 30 plain stickers. How many stickers does Finn have in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-128",
@@ -1542,7 +1542,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":2,"whole":6,"promptText":"Leo owns 6 beads. Leo can see 2 beads on the mat; the rest hide in a pouch. How many beads hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":2,"whole":6,"promptText":"Leo owns 6 beads. Leo can see 2 beads on the mat; the rest hide in a pouch. How many beads hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-155",
@@ -1552,7 +1552,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":4,"whole":6,"promptText":"Nora needs 6 buttons for a craft. So far Nora has 4 buttons. How many more buttons does Nora still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":4,"whole":6,"promptText":"Nora needs 6 buttons for a craft. So far Nora has 4 buttons. How many more buttons does Nora still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-156",
@@ -1562,7 +1562,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":2,"whole":7,"promptText":"Theo started with 2 shells. After a trade, Theo now has 7 shells. How many shells did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":2,"whole":7,"promptText":"Theo started with 2 shells. After a trade, Theo now has 7 shells. How many shells did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-157",
@@ -1572,7 +1572,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":3,"whole":7,"promptText":"A basket holds 7 stickers for Lily. Lily lifts out 3 stickers. How many stickers stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":3,"whole":7,"promptText":"A basket holds 7 stickers for Lily. Lily lifts out 3 stickers. How many stickers stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-158",
@@ -1582,7 +1582,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":4,"whole":7,"promptText":"Luca splits 7 grapes between two trays. One tray gets 4 grapes. How many grapes go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":4,"whole":7,"promptText":"Luca splits 7 grapes between two trays. One tray gets 4 grapes. How many grapes go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-159",
@@ -1592,7 +1592,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":5,"whole":7,"promptText":"Finn counts 7 blocks altogether. Exactly 5 of the blocks are big. How many of the blocks are not big?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":5,"whole":7,"promptText":"Finn counts 7 blocks altogether. Exactly 5 of the blocks are big. How many of the blocks are not big?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-160",
@@ -1602,7 +1602,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":2,"whole":8,"promptText":"Priya has 8 leaves in all. 2 of the leaves are red, and the rest are brown. How many brown leaves does Priya have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":2,"whole":8,"promptText":"Priya has 8 leaves in all. 2 of the leaves are red, and the rest are brown. How many brown leaves does Priya have?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-161",
@@ -1612,7 +1612,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"Ava owns 8 cups. Ava can see 3 cups on the mat; the rest hide in a pouch. How many cups hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"Ava owns 8 cups. Ava can see 3 cups on the mat; the rest hide in a pouch. How many cups hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-162",
@@ -1622,7 +1622,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"Omar needs 8 marbles for a craft. So far Omar has 5 marbles. How many more marbles does Omar still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"Omar needs 8 marbles for a craft. So far Omar has 5 marbles. How many more marbles does Omar still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-163",
@@ -1632,7 +1632,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":6,"whole":8,"promptText":"Zoe started with 6 socks. After a trade, Zoe now has 8 socks. How many socks did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":6,"whole":8,"promptText":"Zoe started with 6 socks. After a trade, Zoe now has 8 socks. How many socks did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-164",
@@ -1642,7 +1642,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":2,"whole":9,"promptText":"A basket holds 9 crayons for Sam. Sam lifts out 2 crayons. How many crayons stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":2,"whole":9,"promptText":"A basket holds 9 crayons for Sam. Sam lifts out 2 crayons. How many crayons stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-165",
@@ -1652,7 +1652,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":3,"whole":9,"promptText":"Ida splits 9 acorns between two trays. One tray gets 3 acorns. How many acorns go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":3,"whole":9,"promptText":"Ida splits 9 acorns between two trays. One tray gets 3 acorns. How many acorns go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-166",
@@ -1662,7 +1662,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":4,"whole":9,"promptText":"Amara counts 9 beads altogether. Exactly 4 of the beads are green. How many of the beads are not green?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":4,"whole":9,"promptText":"Amara counts 9 beads altogether. Exactly 4 of the beads are green. How many of the beads are not green?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-167",
@@ -1672,7 +1672,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":5,"whole":9,"promptText":"Mia has 9 buttons in all. 5 of the buttons are round, and the rest are square. How many square buttons does Mia have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":5,"whole":9,"promptText":"Mia has 9 buttons in all. 5 of the buttons are round, and the rest are square. How many square buttons does Mia have?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-168",
@@ -1682,7 +1682,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":6,"whole":9,"promptText":"Kai owns 9 shells. Kai can see 6 shells on the mat; the rest hide in a pouch. How many shells hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":6,"whole":9,"promptText":"Kai owns 9 shells. Kai can see 6 shells on the mat; the rest hide in a pouch. How many shells hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-169",
@@ -1692,7 +1692,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":7,"whole":9,"promptText":"June needs 9 stickers for a craft. So far June has 7 stickers. How many more stickers does June still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":7,"whole":9,"promptText":"June needs 9 stickers for a craft. So far June has 7 stickers. How many more stickers does June still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-170",
@@ -1702,7 +1702,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":2,"whole":10,"promptText":"Ben started with 2 grapes. After a trade, Ben now has 10 grapes. How many grapes did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":2,"whole":10,"promptText":"Ben started with 2 grapes. After a trade, Ben now has 10 grapes. How many grapes did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-171",
@@ -1712,7 +1712,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"A basket holds 10 blocks for Nia. Nia lifts out 3 blocks. How many blocks stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"A basket holds 10 blocks for Nia. Nia lifts out 3 blocks. How many blocks stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-172",
@@ -1722,7 +1722,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":4,"whole":10,"promptText":"Rosa splits 10 leaves between two trays. One tray gets 4 leaves. How many leaves go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":4,"whole":10,"promptText":"Rosa splits 10 leaves between two trays. One tray gets 4 leaves. How many leaves go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-173",
@@ -1732,7 +1732,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"Diego counts 10 cups altogether. Exactly 6 of the cups are red. How many of the cups are not red?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"Diego counts 10 cups altogether. Exactly 6 of the cups are red. How many of the cups are not red?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-174",
@@ -1742,7 +1742,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"Leo has 10 marbles in all. 7 of the marbles are striped, and the rest are clear. How many clear marbles does Leo have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"Leo has 10 marbles in all. 7 of the marbles are striped, and the rest are clear. How many clear marbles does Leo have?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-175",
@@ -1752,7 +1752,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":8,"whole":10,"promptText":"Nora owns 10 socks. Nora can see 8 socks on the mat; the rest hide in a pouch. How many socks hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":8,"whole":10,"promptText":"Nora owns 10 socks. Nora can see 8 socks on the mat; the rest hide in a pouch. How many socks hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-176",
@@ -1762,7 +1762,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":2,"whole":6,"promptText":"Theo needs 6 crayons for a craft. So far Theo has 2 crayons. How many more crayons does Theo still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":2,"whole":6,"promptText":"Theo needs 6 crayons for a craft. So far Theo has 2 crayons. How many more crayons does Theo still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-177",
@@ -1772,7 +1772,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":4,"whole":6,"promptText":"Lily started with 4 acorns. After a trade, Lily now has 6 acorns. How many acorns did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":4,"whole":6,"promptText":"Lily started with 4 acorns. After a trade, Lily now has 6 acorns. How many acorns did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-178",
@@ -1782,7 +1782,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":2,"whole":7,"promptText":"A basket holds 7 beads for Luca. Luca lifts out 2 beads. How many beads stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":2,"whole":7,"promptText":"A basket holds 7 beads for Luca. Luca lifts out 2 beads. How many beads stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-179",
@@ -1792,7 +1792,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":3,"whole":7,"promptText":"Finn splits 7 buttons between two trays. One tray gets 3 buttons. How many buttons go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":3,"whole":7,"promptText":"Finn splits 7 buttons between two trays. One tray gets 3 buttons. How many buttons go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-180",
@@ -1802,7 +1802,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":4,"whole":7,"promptText":"Priya counts 7 shells altogether. Exactly 4 of the shells are spotted. How many of the shells are not spotted?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":4,"whole":7,"promptText":"Priya counts 7 shells altogether. Exactly 4 of the shells are spotted. How many of the shells are not spotted?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-181",
@@ -1812,7 +1812,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":5,"whole":7,"promptText":"Ava has 7 stickers in all. 5 of the stickers are shiny, and the rest are plain. How many plain stickers does Ava have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":5,"whole":7,"promptText":"Ava has 7 stickers in all. 5 of the stickers are shiny, and the rest are plain. How many plain stickers does Ava have?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-182",
@@ -1822,7 +1822,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":2,"whole":8,"promptText":"Omar owns 8 grapes. Omar can see 2 grapes on the mat; the rest hide in a pouch. How many grapes hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":2,"whole":8,"promptText":"Omar owns 8 grapes. Omar can see 2 grapes on the mat; the rest hide in a pouch. How many grapes hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-183",
@@ -1832,7 +1832,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"Zoe needs 8 blocks for a craft. So far Zoe has 3 blocks. How many more blocks does Zoe still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"Zoe needs 8 blocks for a craft. So far Zoe has 3 blocks. How many more blocks does Zoe still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-184",
@@ -1842,7 +1842,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"Sam started with 5 leaves. After a trade, Sam now has 8 leaves. How many leaves did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"Sam started with 5 leaves. After a trade, Sam now has 8 leaves. How many leaves did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-185",
@@ -1852,7 +1852,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":6,"whole":8,"promptText":"A basket holds 8 cups for Ida. Ida lifts out 6 cups. How many cups stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":6,"whole":8,"promptText":"A basket holds 8 cups for Ida. Ida lifts out 6 cups. How many cups stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-186",
@@ -1862,7 +1862,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":2,"whole":9,"promptText":"Amara splits 9 marbles between two trays. One tray gets 2 marbles. How many marbles go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":2,"whole":9,"promptText":"Amara splits 9 marbles between two trays. One tray gets 2 marbles. How many marbles go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-187",
@@ -1872,7 +1872,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":3,"whole":9,"promptText":"Mia counts 9 socks altogether. Exactly 3 of the socks are long. How many of the socks are not long?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":3,"whole":9,"promptText":"Mia counts 9 socks altogether. Exactly 3 of the socks are long. How many of the socks are not long?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-188",
@@ -1882,7 +1882,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":4,"whole":9,"promptText":"Kai has 9 crayons in all. 4 of the crayons are new, and the rest are old. How many old crayons does Kai have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":4,"whole":9,"promptText":"Kai has 9 crayons in all. 4 of the crayons are new, and the rest are old. How many old crayons does Kai have?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-189",
@@ -1892,7 +1892,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":5,"whole":9,"promptText":"June owns 9 acorns. June can see 5 acorns on the mat; the rest hide in a pouch. How many acorns hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":5,"whole":9,"promptText":"June owns 9 acorns. June can see 5 acorns on the mat; the rest hide in a pouch. How many acorns hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-190",
@@ -1902,7 +1902,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":6,"whole":9,"promptText":"Ben needs 9 beads for a craft. So far Ben has 6 beads. How many more beads does Ben still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":6,"whole":9,"promptText":"Ben needs 9 beads for a craft. So far Ben has 6 beads. How many more beads does Ben still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-191",
@@ -1912,7 +1912,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":7,"whole":9,"promptText":"Nia started with 7 buttons. After a trade, Nia now has 9 buttons. How many buttons did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":7,"whole":9,"promptText":"Nia started with 7 buttons. After a trade, Nia now has 9 buttons. How many buttons did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-192",
@@ -1922,7 +1922,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":2,"whole":10,"promptText":"A basket holds 10 shells for Rosa. Rosa lifts out 2 shells. How many shells stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":2,"whole":10,"promptText":"A basket holds 10 shells for Rosa. Rosa lifts out 2 shells. How many shells stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-193",
@@ -1932,7 +1932,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"Diego splits 10 stickers between two trays. One tray gets 3 stickers. How many stickers go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"Diego splits 10 stickers between two trays. One tray gets 3 stickers. How many stickers go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-194",
@@ -1942,7 +1942,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":4,"whole":10,"promptText":"Leo counts 10 grapes altogether. Exactly 4 of the grapes are purple. How many of the grapes are not purple?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":4,"whole":10,"promptText":"Leo counts 10 grapes altogether. Exactly 4 of the grapes are purple. How many of the grapes are not purple?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-195",
@@ -1952,7 +1952,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"Nora has 10 blocks in all. 6 of the blocks are big, and the rest are small. How many small blocks does Nora have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"Nora has 10 blocks in all. 6 of the blocks are big, and the rest are small. How many small blocks does Nora have?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-196",
@@ -1962,7 +1962,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"Theo owns 10 leaves. Theo can see 7 leaves on the mat; the rest hide in a pouch. How many leaves hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"Theo owns 10 leaves. Theo can see 7 leaves on the mat; the rest hide in a pouch. How many leaves hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-197",
@@ -1972,7 +1972,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":8,"whole":10,"promptText":"Lily needs 10 cups for a craft. So far Lily has 8 cups. How many more cups does Lily still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":8,"whole":10,"promptText":"Lily needs 10 cups for a craft. So far Lily has 8 cups. How many more cups does Lily still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-198",
@@ -1982,7 +1982,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":2,"whole":6,"promptText":"Luca started with 2 marbles. After a trade, Luca now has 6 marbles. How many marbles did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":2,"whole":6,"promptText":"Luca started with 2 marbles. After a trade, Luca now has 6 marbles. How many marbles did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-199",
@@ -1992,7 +1992,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":4,"whole":6,"promptText":"A basket holds 6 socks for Finn. Finn lifts out 4 socks. How many socks stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":4,"whole":6,"promptText":"A basket holds 6 socks for Finn. Finn lifts out 4 socks. How many socks stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-200",
@@ -2002,7 +2002,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":2,"whole":7,"promptText":"Priya splits 7 crayons between two trays. One tray gets 2 crayons. How many crayons go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":2,"whole":7,"promptText":"Priya splits 7 crayons between two trays. One tray gets 2 crayons. How many crayons go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-201",
@@ -2012,7 +2012,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":3,"whole":7,"promptText":"Ava counts 7 acorns altogether. Exactly 3 of the acorns are big. How many of the acorns are not big?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":3,"whole":7,"promptText":"Ava counts 7 acorns altogether. Exactly 3 of the acorns are big. How many of the acorns are not big?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-202",
@@ -2022,7 +2022,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":4,"whole":7,"promptText":"Omar has 7 beads in all. 4 of the beads are green, and the rest are yellow. How many yellow beads does Omar have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":4,"whole":7,"promptText":"Omar has 7 beads in all. 4 of the beads are green, and the rest are yellow. How many yellow beads does Omar have?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-203",
@@ -2032,7 +2032,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":5,"whole":7,"promptText":"Zoe owns 7 buttons. Zoe can see 5 buttons on the mat; the rest hide in a pouch. How many buttons hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":5,"whole":7,"promptText":"Zoe owns 7 buttons. Zoe can see 5 buttons on the mat; the rest hide in a pouch. How many buttons hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-204",
@@ -2042,7 +2042,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":2,"whole":8,"promptText":"Sam needs 8 shells for a craft. So far Sam has 2 shells. How many more shells does Sam still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":2,"whole":8,"promptText":"Sam needs 8 shells for a craft. So far Sam has 2 shells. How many more shells does Sam still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-205",
@@ -2052,7 +2052,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":2,"whole":11,"promptText":"Kai started with 2 crayons. After a trade, Kai now has 11 crayons. How many crayons did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":2,"whole":11,"promptText":"Kai started with 2 crayons. After a trade, Kai now has 11 crayons. How many crayons did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-206",
@@ -2062,7 +2062,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":3,"whole":11,"promptText":"A basket holds 11 acorns for June. June lifts out 3 acorns. How many acorns stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":3,"whole":11,"promptText":"A basket holds 11 acorns for June. June lifts out 3 acorns. How many acorns stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-207",
@@ -2072,7 +2072,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":4,"whole":11,"promptText":"Ben splits 11 beads between two trays. One tray gets 4 beads. How many beads go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":4,"whole":11,"promptText":"Ben splits 11 beads between two trays. One tray gets 4 beads. How many beads go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-208",
@@ -2082,7 +2082,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":5,"whole":11,"promptText":"Nia counts 11 buttons altogether. Exactly 5 of the buttons are round. How many of the buttons are not round?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":5,"whole":11,"promptText":"Nia counts 11 buttons altogether. Exactly 5 of the buttons are round. How many of the buttons are not round?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-209",
@@ -2092,7 +2092,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":6,"whole":11,"promptText":"Rosa has 11 shells in all. 6 of the shells are spotted, and the rest are plain. How many plain shells does Rosa have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":6,"whole":11,"promptText":"Rosa has 11 shells in all. 6 of the shells are spotted, and the rest are plain. How many plain shells does Rosa have?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-210",
@@ -2102,7 +2102,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":7,"whole":11,"promptText":"Diego owns 11 stickers. Diego can see 7 stickers on the mat; the rest hide in a pouch. How many stickers hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":7,"whole":11,"promptText":"Diego owns 11 stickers. Diego can see 7 stickers on the mat; the rest hide in a pouch. How many stickers hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-211",
@@ -2112,7 +2112,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":8,"whole":11,"promptText":"Leo needs 11 grapes for a craft. So far Leo has 8 grapes. How many more grapes does Leo still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":8,"whole":11,"promptText":"Leo needs 11 grapes for a craft. So far Leo has 8 grapes. How many more grapes does Leo still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-212",
@@ -2122,7 +2122,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":9,"whole":11,"promptText":"Nora started with 9 blocks. After a trade, Nora now has 11 blocks. How many blocks did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":9,"whole":11,"promptText":"Nora started with 9 blocks. After a trade, Nora now has 11 blocks. How many blocks did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-213",
@@ -2132,7 +2132,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":2,"whole":12,"promptText":"A basket holds 12 leaves for Theo. Theo lifts out 2 leaves. How many leaves stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":2,"whole":12,"promptText":"A basket holds 12 leaves for Theo. Theo lifts out 2 leaves. How many leaves stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-214",
@@ -2142,7 +2142,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":3,"whole":12,"promptText":"Lily splits 12 cups between two trays. One tray gets 3 cups. How many cups go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":3,"whole":12,"promptText":"Lily splits 12 cups between two trays. One tray gets 3 cups. How many cups go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-215",
@@ -2152,7 +2152,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":4,"whole":12,"promptText":"Luca counts 12 marbles altogether. Exactly 4 of the marbles are striped. How many of the marbles are not striped?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":4,"whole":12,"promptText":"Luca counts 12 marbles altogether. Exactly 4 of the marbles are striped. How many of the marbles are not striped?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-216",
@@ -2162,7 +2162,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":5,"whole":12,"promptText":"Finn has 12 socks in all. 5 of the socks are long, and the rest are short. How many short socks does Finn have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":5,"whole":12,"promptText":"Finn has 12 socks in all. 5 of the socks are long, and the rest are short. How many short socks does Finn have?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-217",
@@ -2172,7 +2172,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":7,"whole":12,"promptText":"Priya owns 12 crayons. Priya can see 7 crayons on the mat; the rest hide in a pouch. How many crayons hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":7,"whole":12,"promptText":"Priya owns 12 crayons. Priya can see 7 crayons on the mat; the rest hide in a pouch. How many crayons hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-218",
@@ -2182,7 +2182,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":8,"whole":12,"promptText":"Ava needs 12 acorns for a craft. So far Ava has 8 acorns. How many more acorns does Ava still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":8,"whole":12,"promptText":"Ava needs 12 acorns for a craft. So far Ava has 8 acorns. How many more acorns does Ava still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-219",
@@ -2192,7 +2192,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":9,"whole":12,"promptText":"Omar started with 9 beads. After a trade, Omar now has 12 beads. How many beads did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":9,"whole":12,"promptText":"Omar started with 9 beads. After a trade, Omar now has 12 beads. How many beads did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-220",
@@ -2202,7 +2202,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":10,"whole":12,"promptText":"A basket holds 12 buttons for Zoe. Zoe lifts out 10 buttons. How many buttons stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":10,"whole":12,"promptText":"A basket holds 12 buttons for Zoe. Zoe lifts out 10 buttons. How many buttons stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-221",
@@ -2212,7 +2212,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"part":2,"whole":13,"promptText":"Sam splits 13 shells between two trays. One tray gets 2 shells. How many shells go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"part":2,"whole":13,"promptText":"Sam splits 13 shells between two trays. One tray gets 2 shells. How many shells go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-222",
@@ -2222,7 +2222,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":3,"whole":13,"promptText":"Ida counts 13 stickers altogether. Exactly 3 of the stickers are shiny. How many of the stickers are not shiny?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":3,"whole":13,"promptText":"Ida counts 13 stickers altogether. Exactly 3 of the stickers are shiny. How many of the stickers are not shiny?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-223",
@@ -2232,7 +2232,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":4,"whole":13,"promptText":"Amara has 13 grapes in all. 4 of the grapes are purple, and the rest are green. How many green grapes does Amara have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":4,"whole":13,"promptText":"Amara has 13 grapes in all. 4 of the grapes are purple, and the rest are green. How many green grapes does Amara have?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-224",
@@ -2242,7 +2242,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":5,"whole":13,"promptText":"Mia owns 13 blocks. Mia can see 5 blocks on the mat; the rest hide in a pouch. How many blocks hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":5,"whole":13,"promptText":"Mia owns 13 blocks. Mia can see 5 blocks on the mat; the rest hide in a pouch. How many blocks hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-225",
@@ -2252,7 +2252,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":6,"whole":13,"promptText":"Kai needs 13 leaves for a craft. So far Kai has 6 leaves. How many more leaves does Kai still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":6,"whole":13,"promptText":"Kai needs 13 leaves for a craft. So far Kai has 6 leaves. How many more leaves does Kai still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-226",
@@ -2262,7 +2262,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":7,"whole":13,"promptText":"June started with 7 cups. After a trade, June now has 13 cups. How many cups did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":7,"whole":13,"promptText":"June started with 7 cups. After a trade, June now has 13 cups. How many cups did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-227",
@@ -2272,7 +2272,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":8,"whole":13,"promptText":"A basket holds 13 marbles for Ben. Ben lifts out 8 marbles. How many marbles stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":8,"whole":13,"promptText":"A basket holds 13 marbles for Ben. Ben lifts out 8 marbles. How many marbles stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-228",
@@ -2282,7 +2282,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":9,"whole":13,"promptText":"Nia splits 13 socks between two trays. One tray gets 9 socks. How many socks go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":9,"whole":13,"promptText":"Nia splits 13 socks between two trays. One tray gets 9 socks. How many socks go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-229",
@@ -2292,7 +2292,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"Rosa counts 13 crayons altogether. Exactly 10 of the crayons are new. How many of the crayons are not new?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"Rosa counts 13 crayons altogether. Exactly 10 of the crayons are new. How many of the crayons are not new?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-230",
@@ -2302,7 +2302,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":11,"whole":13,"promptText":"Diego has 13 acorns in all. 11 of the acorns are big, and the rest are small. How many small acorns does Diego have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":11,"whole":13,"promptText":"Diego has 13 acorns in all. 11 of the acorns are big, and the rest are small. How many small acorns does Diego have?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-231",
@@ -2312,7 +2312,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"part":2,"whole":14,"promptText":"Leo owns 14 beads. Leo can see 2 beads on the mat; the rest hide in a pouch. How many beads hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"part":2,"whole":14,"promptText":"Leo owns 14 beads. Leo can see 2 beads on the mat; the rest hide in a pouch. How many beads hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-232",
@@ -2322,7 +2322,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"part":3,"whole":14,"promptText":"Nora needs 14 buttons for a craft. So far Nora has 3 buttons. How many more buttons does Nora still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"part":3,"whole":14,"promptText":"Nora needs 14 buttons for a craft. So far Nora has 3 buttons. How many more buttons does Nora still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-233",
@@ -2332,7 +2332,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":4,"whole":14,"promptText":"Theo started with 4 shells. After a trade, Theo now has 14 shells. How many shells did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":4,"whole":14,"promptText":"Theo started with 4 shells. After a trade, Theo now has 14 shells. How many shells did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-234",
@@ -2342,7 +2342,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":5,"whole":14,"promptText":"A basket holds 14 stickers for Lily. Lily lifts out 5 stickers. How many stickers stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":5,"whole":14,"promptText":"A basket holds 14 stickers for Lily. Lily lifts out 5 stickers. How many stickers stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-235",
@@ -2352,7 +2352,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":6,"whole":14,"promptText":"Luca splits 14 grapes between two trays. One tray gets 6 grapes. How many grapes go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":6,"whole":14,"promptText":"Luca splits 14 grapes between two trays. One tray gets 6 grapes. How many grapes go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-236",
@@ -2362,7 +2362,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":8,"whole":14,"promptText":"Finn counts 14 blocks altogether. Exactly 8 of the blocks are big. How many of the blocks are not big?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":8,"whole":14,"promptText":"Finn counts 14 blocks altogether. Exactly 8 of the blocks are big. How many of the blocks are not big?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-237",
@@ -2372,7 +2372,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":9,"whole":14,"promptText":"Priya has 14 leaves in all. 9 of the leaves are red, and the rest are brown. How many brown leaves does Priya have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":9,"whole":14,"promptText":"Priya has 14 leaves in all. 9 of the leaves are red, and the rest are brown. How many brown leaves does Priya have?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-238",
@@ -2382,7 +2382,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"Ava owns 14 cups. Ava can see 10 cups on the mat; the rest hide in a pouch. How many cups hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"Ava owns 14 cups. Ava can see 10 cups on the mat; the rest hide in a pouch. How many cups hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-239",
@@ -2392,7 +2392,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":11,"whole":14,"promptText":"Omar needs 14 marbles for a craft. So far Omar has 11 marbles. How many more marbles does Omar still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":11,"whole":14,"promptText":"Omar needs 14 marbles for a craft. So far Omar has 11 marbles. How many more marbles does Omar still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-240",
@@ -2402,7 +2402,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":12,"whole":14,"promptText":"Zoe started with 12 socks. After a trade, Zoe now has 14 socks. How many socks did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":12,"whole":14,"promptText":"Zoe started with 12 socks. After a trade, Zoe now has 14 socks. How many socks did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-241",
@@ -2412,7 +2412,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"part":2,"whole":15,"promptText":"A basket holds 15 crayons for Sam. Sam lifts out 2 crayons. How many crayons stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"part":2,"whole":15,"promptText":"A basket holds 15 crayons for Sam. Sam lifts out 2 crayons. How many crayons stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-242",
@@ -2422,7 +2422,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"part":3,"whole":15,"promptText":"Ida splits 15 acorns between two trays. One tray gets 3 acorns. How many acorns go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"part":3,"whole":15,"promptText":"Ida splits 15 acorns between two trays. One tray gets 3 acorns. How many acorns go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-243",
@@ -2432,7 +2432,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"part":4,"whole":15,"promptText":"Amara counts 15 beads altogether. Exactly 4 of the beads are green. How many of the beads are not green?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"part":4,"whole":15,"promptText":"Amara counts 15 beads altogether. Exactly 4 of the beads are green. How many of the beads are not green?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-244",
@@ -2442,7 +2442,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":5,"whole":15,"promptText":"Mia has 15 buttons in all. 5 of the buttons are round, and the rest are square. How many square buttons does Mia have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":5,"whole":15,"promptText":"Mia has 15 buttons in all. 5 of the buttons are round, and the rest are square. How many square buttons does Mia have?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-245",
@@ -2452,7 +2452,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":6,"whole":15,"promptText":"Kai owns 15 shells. Kai can see 6 shells on the mat; the rest hide in a pouch. How many shells hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":6,"whole":15,"promptText":"Kai owns 15 shells. Kai can see 6 shells on the mat; the rest hide in a pouch. How many shells hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-246",
@@ -2462,7 +2462,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":7,"whole":15,"promptText":"June needs 15 stickers for a craft. So far June has 7 stickers. How many more stickers does June still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":7,"whole":15,"promptText":"June needs 15 stickers for a craft. So far June has 7 stickers. How many more stickers does June still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-247",
@@ -2472,7 +2472,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":8,"whole":15,"promptText":"Ben started with 8 grapes. After a trade, Ben now has 15 grapes. How many grapes did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":8,"whole":15,"promptText":"Ben started with 8 grapes. After a trade, Ben now has 15 grapes. How many grapes did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-248",
@@ -2482,7 +2482,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":9,"whole":15,"promptText":"A basket holds 15 blocks for Nia. Nia lifts out 9 blocks. How many blocks stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":9,"whole":15,"promptText":"A basket holds 15 blocks for Nia. Nia lifts out 9 blocks. How many blocks stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-249",
@@ -2492,7 +2492,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":10,"whole":15,"promptText":"Rosa splits 15 leaves between two trays. One tray gets 10 leaves. How many leaves go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":10,"whole":15,"promptText":"Rosa splits 15 leaves between two trays. One tray gets 10 leaves. How many leaves go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-250",
@@ -2502,7 +2502,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":11,"whole":15,"promptText":"Diego counts 15 cups altogether. Exactly 11 of the cups are red. How many of the cups are not red?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":11,"whole":15,"promptText":"Diego counts 15 cups altogether. Exactly 11 of the cups are red. How many of the cups are not red?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-251",
@@ -2512,7 +2512,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":12,"whole":15,"promptText":"Leo has 15 marbles in all. 12 of the marbles are striped, and the rest are clear. How many clear marbles does Leo have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":12,"whole":15,"promptText":"Leo has 15 marbles in all. 12 of the marbles are striped, and the rest are clear. How many clear marbles does Leo have?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-252",
@@ -2522,7 +2522,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":13,"whole":15,"promptText":"Nora owns 15 socks. Nora can see 13 socks on the mat; the rest hide in a pouch. How many socks hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":13,"whole":15,"promptText":"Nora owns 15 socks. Nora can see 13 socks on the mat; the rest hide in a pouch. How many socks hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-253",
@@ -2532,7 +2532,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"part":2,"whole":16,"promptText":"Theo needs 16 crayons for a craft. So far Theo has 2 crayons. How many more crayons does Theo still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"part":2,"whole":16,"promptText":"Theo needs 16 crayons for a craft. So far Theo has 2 crayons. How many more crayons does Theo still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-254",
@@ -2542,7 +2542,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"part":3,"whole":16,"promptText":"Lily started with 3 acorns. After a trade, Lily now has 16 acorns. How many acorns did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"part":3,"whole":16,"promptText":"Lily started with 3 acorns. After a trade, Lily now has 16 acorns. How many acorns did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-255",
@@ -2552,7 +2552,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"part":4,"whole":16,"promptText":"A basket holds 16 beads for Luca. Luca lifts out 4 beads. How many beads stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"part":4,"whole":16,"promptText":"A basket holds 16 beads for Luca. Luca lifts out 4 beads. How many beads stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-256",
@@ -2562,7 +2562,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":20,"whole":45,"promptText":"Omar splits 45 marbles between two trays. One tray gets 20 marbles. How many marbles go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":20,"whole":45,"promptText":"Omar splits 45 marbles between two trays. One tray gets 20 marbles. How many marbles go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-257",
@@ -2572,7 +2572,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":31,"whole":56,"promptText":"Zoe counts 56 socks altogether. Exactly 31 of the socks are long. How many of the socks are not long?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":31,"whole":56,"promptText":"Zoe counts 56 socks altogether. Exactly 31 of the socks are long. How many of the socks are not long?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-258",
@@ -2582,7 +2582,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":42,"display":{"part":25,"whole":67,"promptText":"Sam has 67 crayons in all. 25 of the crayons are new, and the rest are old. How many old crayons does Sam have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":42,"display":{"part":25,"whole":67,"promptText":"Sam has 67 crayons in all. 25 of the crayons are new, and the rest are old. How many old crayons does Sam have?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-259",
@@ -2592,7 +2592,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":26,"display":{"part":12,"whole":38,"promptText":"Ida owns 38 acorns. Ida can see 12 acorns on the mat; the rest hide in a pouch. How many acorns hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":26,"display":{"part":12,"whole":38,"promptText":"Ida owns 38 acorns. Ida can see 12 acorns on the mat; the rest hide in a pouch. How many acorns hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-260",
@@ -2602,7 +2602,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":41,"display":{"part":33,"whole":74,"promptText":"Amara needs 74 beads for a craft. So far Amara has 33 beads. How many more beads does Amara still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":41,"display":{"part":33,"whole":74,"promptText":"Amara needs 74 beads for a craft. So far Amara has 33 beads. How many more beads does Amara still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-261",
@@ -2612,7 +2612,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":41,"display":{"part":41,"whole":82,"promptText":"Mia started with 41 buttons. After a trade, Mia now has 82 buttons. How many buttons did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":41,"display":{"part":41,"whole":82,"promptText":"Mia started with 41 buttons. After a trade, Mia now has 82 buttons. How many buttons did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-262",
@@ -2622,7 +2622,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":41,"display":{"part":52,"whole":93,"promptText":"A basket holds 93 shells for Kai. Kai lifts out 52 shells. How many shells stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":41,"display":{"part":52,"whole":93,"promptText":"A basket holds 93 shells for Kai. Kai lifts out 52 shells. How many shells stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-263",
@@ -2632,7 +2632,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":14,"whole":46,"promptText":"June splits 46 stickers between two trays. One tray gets 14 stickers. How many stickers go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":14,"whole":46,"promptText":"June splits 46 stickers between two trays. One tray gets 14 stickers. How many stickers go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-264",
@@ -2642,7 +2642,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":26,"whole":58,"promptText":"Ben counts 58 grapes altogether. Exactly 26 of the grapes are purple. How many of the grapes are not purple?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":26,"whole":58,"promptText":"Ben counts 58 grapes altogether. Exactly 26 of the grapes are purple. How many of the grapes are not purple?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-265",
@@ -2652,7 +2652,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":37,"whole":69,"promptText":"Nia has 69 blocks in all. 37 of the blocks are big, and the rest are small. How many small blocks does Nia have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":37,"whole":69,"promptText":"Nia has 69 blocks in all. 37 of the blocks are big, and the rest are small. How many small blocks does Nia have?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-266",
@@ -2662,7 +2662,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":51,"display":{"part":24,"whole":75,"promptText":"Rosa owns 75 leaves. Rosa can see 24 leaves on the mat; the rest hide in a pouch. How many leaves hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":51,"display":{"part":24,"whole":75,"promptText":"Rosa owns 75 leaves. Rosa can see 24 leaves on the mat; the rest hide in a pouch. How many leaves hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-267",
@@ -2672,7 +2672,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":42,"display":{"part":45,"whole":87,"promptText":"Diego needs 87 cups for a craft. So far Diego has 45 cups. How many more cups does Diego still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":42,"display":{"part":45,"whole":87,"promptText":"Diego needs 87 cups for a craft. So far Diego has 45 cups. How many more cups does Diego still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-268",
@@ -2682,7 +2682,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":31,"display":{"part":63,"whole":94,"promptText":"Leo started with 63 marbles. After a trade, Leo now has 94 marbles. How many marbles did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":31,"display":{"part":63,"whole":94,"promptText":"Leo started with 63 marbles. After a trade, Leo now has 94 marbles. How many marbles did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-269",
@@ -2692,7 +2692,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":21,"display":{"part":15,"whole":36,"promptText":"A basket holds 36 socks for Nora. Nora lifts out 15 socks. How many socks stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":21,"display":{"part":15,"whole":36,"promptText":"A basket holds 36 socks for Nora. Nora lifts out 15 socks. How many socks stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-270",
@@ -2702,7 +2702,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":41,"display":{"part":22,"whole":63,"promptText":"Theo splits 63 crayons between two trays. One tray gets 22 crayons. How many crayons go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":41,"display":{"part":22,"whole":63,"promptText":"Theo splits 63 crayons between two trays. One tray gets 22 crayons. How many crayons go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-271",
@@ -2712,7 +2712,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":42,"display":{"part":36,"whole":78,"promptText":"Lily counts 78 acorns altogether. Exactly 36 of the acorns are big. How many of the acorns are not big?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":42,"display":{"part":36,"whole":78,"promptText":"Lily counts 78 acorns altogether. Exactly 36 of the acorns are big. How many of the acorns are not big?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-272",
@@ -2722,7 +2722,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":51,"display":{"part":44,"whole":95,"promptText":"Luca has 95 beads in all. 44 of the beads are green, and the rest are yellow. How many yellow beads does Luca have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":51,"display":{"part":44,"whole":95,"promptText":"Luca has 95 beads in all. 44 of the beads are green, and the rest are yellow. How many yellow beads does Luca have?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-273",
@@ -2732,7 +2732,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":27,"whole":52,"promptText":"Finn owns 52 buttons. Finn can see 27 buttons on the mat; the rest hide in a pouch. How many buttons hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":27,"whole":52,"promptText":"Finn owns 52 buttons. Finn can see 27 buttons on the mat; the rest hide in a pouch. How many buttons hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-274",
@@ -2742,7 +2742,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":34,"whole":66,"promptText":"Priya needs 66 shells for a craft. So far Priya has 34 shells. How many more shells does Priya still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":34,"whole":66,"promptText":"Priya needs 66 shells for a craft. So far Priya has 34 shells. How many more shells does Priya still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-275",
@@ -2752,7 +2752,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":52,"whole":84,"promptText":"Ava started with 52 stickers. After a trade, Ava now has 84 stickers. How many stickers did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":52,"whole":84,"promptText":"Ava started with 52 stickers. After a trade, Ava now has 84 stickers. How many stickers did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-276",
@@ -2762,7 +2762,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":23,"whole":48,"promptText":"A basket holds 48 grapes for Omar. Omar lifts out 23 grapes. How many grapes stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":23,"whole":48,"promptText":"A basket holds 48 grapes for Omar. Omar lifts out 23 grapes. How many grapes stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-277",
@@ -2772,7 +2772,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":34,"display":{"part":38,"whole":72,"promptText":"Zoe splits 72 blocks between two trays. One tray gets 38 blocks. How many blocks go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":34,"display":{"part":38,"whole":72,"promptText":"Zoe splits 72 blocks between two trays. One tray gets 38 blocks. How many blocks go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-278",
@@ -2782,7 +2782,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":54,"whole":86,"promptText":"Sam counts 86 leaves altogether. Exactly 54 of the leaves are red. How many of the leaves are not red?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":54,"whole":86,"promptText":"Sam counts 86 leaves altogether. Exactly 54 of the leaves are red. How many of the leaves are not red?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-279",
@@ -2792,7 +2792,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"part":29,"whole":64,"promptText":"Ida has 64 cups in all. 29 of the cups are red, and the rest are blue. How many blue cups does Ida have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"part":29,"whole":64,"promptText":"Ida has 64 cups in all. 29 of the cups are red, and the rest are blue. How many blue cups does Ida have?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-280",
@@ -2802,7 +2802,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"part":57,"whole":92,"promptText":"Amara owns 92 marbles. Amara can see 57 marbles on the mat; the rest hide in a pouch. How many marbles hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"part":57,"whole":92,"promptText":"Amara owns 92 marbles. Amara can see 57 marbles on the mat; the rest hide in a pouch. How many marbles hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-281",
@@ -2812,7 +2812,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":33,"display":{"part":21,"whole":54,"promptText":"Mia needs 54 socks for a craft. So far Mia has 21 socks. How many more socks does Mia still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":33,"display":{"part":21,"whole":54,"promptText":"Mia needs 54 socks for a craft. So far Mia has 21 socks. How many more socks does Mia still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-282",
@@ -2822,7 +2822,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":33,"display":{"part":43,"whole":76,"promptText":"Kai started with 43 crayons. After a trade, Kai now has 76 crayons. How many crayons did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":33,"display":{"part":43,"whole":76,"promptText":"Kai started with 43 crayons. After a trade, Kai now has 76 crayons. How many crayons did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-283",
@@ -2832,7 +2832,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":53,"display":{"part":35,"whole":88,"promptText":"A basket holds 88 acorns for June. June lifts out 35 acorns. How many acorns stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":53,"display":{"part":35,"whole":88,"promptText":"A basket holds 88 acorns for June. June lifts out 35 acorns. How many acorns stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-284",
@@ -2842,7 +2842,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":17,"whole":42,"promptText":"Ben splits 42 beads between two trays. One tray gets 17 beads. How many beads go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":17,"whole":42,"promptText":"Ben splits 42 beads between two trays. One tray gets 17 beads. How many beads go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-285",
@@ -2852,7 +2852,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":22,"display":{"part":46,"whole":68,"promptText":"Nia counts 68 buttons altogether. Exactly 46 of the buttons are round. How many of the buttons are not round?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":22,"display":{"part":46,"whole":68,"promptText":"Nia counts 68 buttons altogether. Exactly 46 of the buttons are round. How many of the buttons are not round?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-286",
@@ -2862,7 +2862,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":20,"whole":45,"promptText":"Rosa has 45 shells in all. 20 of the shells are spotted, and the rest are plain. How many plain shells does Rosa have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":20,"whole":45,"promptText":"Rosa has 45 shells in all. 20 of the shells are spotted, and the rest are plain. How many plain shells does Rosa have?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-287",
@@ -2872,7 +2872,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":31,"whole":56,"promptText":"Diego owns 56 stickers. Diego can see 31 stickers on the mat; the rest hide in a pouch. How many stickers hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":31,"whole":56,"promptText":"Diego owns 56 stickers. Diego can see 31 stickers on the mat; the rest hide in a pouch. How many stickers hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-288",
@@ -2882,7 +2882,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":42,"display":{"part":25,"whole":67,"promptText":"Leo needs 67 grapes for a craft. So far Leo has 25 grapes. How many more grapes does Leo still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":42,"display":{"part":25,"whole":67,"promptText":"Leo needs 67 grapes for a craft. So far Leo has 25 grapes. How many more grapes does Leo still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-289",
@@ -2892,7 +2892,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":26,"display":{"part":12,"whole":38,"promptText":"Nora started with 12 blocks. After a trade, Nora now has 38 blocks. How many blocks did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":26,"display":{"part":12,"whole":38,"promptText":"Nora started with 12 blocks. After a trade, Nora now has 38 blocks. How many blocks did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-290",
@@ -2902,7 +2902,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":41,"display":{"part":33,"whole":74,"promptText":"A basket holds 74 leaves for Theo. Theo lifts out 33 leaves. How many leaves stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":41,"display":{"part":33,"whole":74,"promptText":"A basket holds 74 leaves for Theo. Theo lifts out 33 leaves. How many leaves stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-291",
@@ -2912,7 +2912,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":41,"display":{"part":41,"whole":82,"promptText":"Lily splits 82 cups between two trays. One tray gets 41 cups. How many cups go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":41,"display":{"part":41,"whole":82,"promptText":"Lily splits 82 cups between two trays. One tray gets 41 cups. How many cups go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-292",
@@ -2922,7 +2922,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":41,"display":{"part":52,"whole":93,"promptText":"Luca counts 93 marbles altogether. Exactly 52 of the marbles are striped. How many of the marbles are not striped?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":41,"display":{"part":52,"whole":93,"promptText":"Luca counts 93 marbles altogether. Exactly 52 of the marbles are striped. How many of the marbles are not striped?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-293",
@@ -2932,7 +2932,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":14,"whole":46,"promptText":"Finn has 46 socks in all. 14 of the socks are long, and the rest are short. How many short socks does Finn have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":14,"whole":46,"promptText":"Finn has 46 socks in all. 14 of the socks are long, and the rest are short. How many short socks does Finn have?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-294",
@@ -2942,7 +2942,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":26,"whole":58,"promptText":"Priya owns 58 crayons. Priya can see 26 crayons on the mat; the rest hide in a pouch. How many crayons hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":26,"whole":58,"promptText":"Priya owns 58 crayons. Priya can see 26 crayons on the mat; the rest hide in a pouch. How many crayons hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-295",
@@ -2952,7 +2952,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":37,"whole":69,"promptText":"Ava needs 69 acorns for a craft. So far Ava has 37 acorns. How many more acorns does Ava still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":37,"whole":69,"promptText":"Ava needs 69 acorns for a craft. So far Ava has 37 acorns. How many more acorns does Ava still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-296",
@@ -2962,7 +2962,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":51,"display":{"part":24,"whole":75,"promptText":"Omar started with 24 beads. After a trade, Omar now has 75 beads. How many beads did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":51,"display":{"part":24,"whole":75,"promptText":"Omar started with 24 beads. After a trade, Omar now has 75 beads. How many beads did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-297",
@@ -2972,7 +2972,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":42,"display":{"part":45,"whole":87,"promptText":"A basket holds 87 buttons for Zoe. Zoe lifts out 45 buttons. How many buttons stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":42,"display":{"part":45,"whole":87,"promptText":"A basket holds 87 buttons for Zoe. Zoe lifts out 45 buttons. How many buttons stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-298",
@@ -2982,7 +2982,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":31,"display":{"part":63,"whole":94,"promptText":"Sam splits 94 shells between two trays. One tray gets 63 shells. How many shells go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":31,"display":{"part":63,"whole":94,"promptText":"Sam splits 94 shells between two trays. One tray gets 63 shells. How many shells go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-299",
@@ -2992,7 +2992,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":21,"display":{"part":15,"whole":36,"promptText":"Ida counts 36 stickers altogether. Exactly 15 of the stickers are shiny. How many of the stickers are not shiny?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":21,"display":{"part":15,"whole":36,"promptText":"Ida counts 36 stickers altogether. Exactly 15 of the stickers are shiny. How many of the stickers are not shiny?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-300",
@@ -3002,7 +3002,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":41,"display":{"part":22,"whole":63,"promptText":"Amara has 63 grapes in all. 22 of the grapes are purple, and the rest are green. How many green grapes does Amara have?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":41,"display":{"part":22,"whole":63,"promptText":"Amara has 63 grapes in all. 22 of the grapes are purple, and the rest are green. How many green grapes does Amara have?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-301",
@@ -3012,7 +3012,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":42,"display":{"part":36,"whole":78,"promptText":"Mia owns 78 blocks. Mia can see 36 blocks on the mat; the rest hide in a pouch. How many blocks hide in the pouch?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":42,"display":{"part":36,"whole":78,"promptText":"Mia owns 78 blocks. Mia can see 36 blocks on the mat; the rest hide in a pouch. How many blocks hide in the pouch?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-302",
@@ -3022,7 +3022,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":51,"display":{"part":44,"whole":95,"promptText":"Kai needs 95 leaves for a craft. So far Kai has 44 leaves. How many more leaves does Kai still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":51,"display":{"part":44,"whole":95,"promptText":"Kai needs 95 leaves for a craft. So far Kai has 44 leaves. How many more leaves does Kai still need?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-303",
@@ -3032,7 +3032,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":27,"whole":52,"promptText":"June started with 27 cups. After a trade, June now has 52 cups. How many cups did the trade add?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":27,"whole":52,"promptText":"June started with 27 cups. After a trade, June now has 52 cups. How many cups did the trade add?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-304",
@@ -3042,7 +3042,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":34,"whole":66,"promptText":"A basket holds 66 marbles for Ben. Ben lifts out 34 marbles. How many marbles stay in the basket?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":34,"whole":66,"promptText":"A basket holds 66 marbles for Ben. Ben lifts out 34 marbles. How many marbles stay in the basket?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-305",
@@ -3052,7 +3052,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":52,"whole":84,"promptText":"Nia splits 84 socks between two trays. One tray gets 52 socks. How many socks go on the other tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"part":52,"whole":84,"promptText":"Nia splits 84 socks between two trays. One tray gets 52 socks. How many socks go on the other tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-306",
@@ -3062,7 +3062,7 @@ export const ITEMS = [
     structureType: "bondStoryPartUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":23,"whole":48,"promptText":"Rosa counts 48 crayons altogether. Exactly 23 of the crayons are new. How many of the crayons are not new?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":23,"whole":48,"promptText":"Rosa counts 48 crayons altogether. Exactly 23 of the crayons are new. How many of the crayons are not new?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-307",
@@ -3072,7 +3072,7 @@ export const ITEMS = [
     structureType: "bondStoryPartnerToTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":2,"whole":10,"promptText":"Mia wants a full ten of cups. Mia has 2 cups so far. How many more cups make ten?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":2,"whole":10,"promptText":"Mia wants a full ten of cups. Mia has 2 cups so far. How many more cups make ten?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-308",
@@ -3082,7 +3082,7 @@ export const ITEMS = [
     structureType: "bondStoryPartnerToTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"A game needs ten marbles. Kai brings 3 marbles. How many marbles does Kai still need for the game?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"A game needs ten marbles. Kai brings 3 marbles. How many marbles does Kai still need for the game?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-309",
@@ -3092,7 +3092,7 @@ export const ITEMS = [
     structureType: "bondStoryPartnerToTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":4,"whole":10,"promptText":"June wants a full ten of socks. June has 4 socks so far. How many more socks make ten?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":4,"whole":10,"promptText":"June wants a full ten of socks. June has 4 socks so far. How many more socks make ten?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-310",
@@ -3102,7 +3102,7 @@ export const ITEMS = [
     structureType: "bondStoryPartnerToTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"A game needs ten crayons. Ben brings 6 crayons. How many crayons does Ben still need for the game?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"A game needs ten crayons. Ben brings 6 crayons. How many crayons does Ben still need for the game?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-311",
@@ -3112,7 +3112,7 @@ export const ITEMS = [
     structureType: "bondStoryPartnerToTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"Nia wants a full ten of acorns. Nia has 7 acorns so far. How many more acorns make ten?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"Nia wants a full ten of acorns. Nia has 7 acorns so far. How many more acorns make ten?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-312",
@@ -3122,7 +3122,7 @@ export const ITEMS = [
     structureType: "bondStoryPartnerToTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":8,"whole":10,"promptText":"A game needs ten beads. Rosa brings 8 beads. How many beads does Rosa still need for the game?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":8,"whole":10,"promptText":"A game needs ten beads. Rosa brings 8 beads. How many beads does Rosa still need for the game?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-313",
@@ -3132,7 +3132,7 @@ export const ITEMS = [
     structureType: "bondStoryPartnerToTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":2,"whole":10,"promptText":"Diego wants a full ten of buttons. Diego has 2 buttons so far. How many more buttons make ten?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":2,"whole":10,"promptText":"Diego wants a full ten of buttons. Diego has 2 buttons so far. How many more buttons make ten?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-314",
@@ -3142,7 +3142,7 @@ export const ITEMS = [
     structureType: "bondStoryPartnerToTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"A game needs ten shells. Leo brings 3 shells. How many shells does Leo still need for the game?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"A game needs ten shells. Leo brings 3 shells. How many shells does Leo still need for the game?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-315",
@@ -3152,7 +3152,7 @@ export const ITEMS = [
     structureType: "bondStoryPartnerToTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":4,"whole":10,"promptText":"Nora wants a full ten of stickers. Nora has 4 stickers so far. How many more stickers make ten?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":4,"whole":10,"promptText":"Nora wants a full ten of stickers. Nora has 4 stickers so far. How many more stickers make ten?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-316",
@@ -3162,7 +3162,7 @@ export const ITEMS = [
     structureType: "bondStoryPartnerToTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"A game needs ten grapes. Theo brings 6 grapes. How many grapes does Theo still need for the game?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"A game needs ten grapes. Theo brings 6 grapes. How many grapes does Theo still need for the game?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-317",
@@ -3172,7 +3172,7 @@ export const ITEMS = [
     structureType: "bondStoryPartnerToTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"Lily wants a full ten of blocks. Lily has 7 blocks so far. How many more blocks make ten?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"Lily wants a full ten of blocks. Lily has 7 blocks so far. How many more blocks make ten?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-318",
@@ -3182,7 +3182,7 @@ export const ITEMS = [
     structureType: "bondStoryPartnerToTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":8,"whole":10,"promptText":"A game needs ten leaves. Luca brings 8 leaves. How many leaves does Luca still need for the game?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":8,"whole":10,"promptText":"A game needs ten leaves. Luca brings 8 leaves. How many leaves does Luca still need for the game?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-319",
@@ -3192,7 +3192,7 @@ export const ITEMS = [
     structureType: "bondStoryPartnerToTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":2,"whole":10,"promptText":"Finn wants a full ten of cups. Finn has 2 cups so far. How many more cups make ten?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":2,"whole":10,"promptText":"Finn wants a full ten of cups. Finn has 2 cups so far. How many more cups make ten?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-320",
@@ -3202,7 +3202,7 @@ export const ITEMS = [
     structureType: "bondStoryPartnerToTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"A game needs ten marbles. Priya brings 3 marbles. How many marbles does Priya still need for the game?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"A game needs ten marbles. Priya brings 3 marbles. How many marbles does Priya still need for the game?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-321",
@@ -3212,7 +3212,7 @@ export const ITEMS = [
     structureType: "bondStoryPartnerToTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":4,"whole":10,"promptText":"Ava wants a full ten of socks. Ava has 4 socks so far. How many more socks make ten?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":4,"whole":10,"promptText":"Ava wants a full ten of socks. Ava has 4 socks so far. How many more socks make ten?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-322",
@@ -3222,7 +3222,7 @@ export const ITEMS = [
     structureType: "bondStoryPartnerToTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"A game needs ten crayons. Omar brings 6 crayons. How many crayons does Omar still need for the game?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"A game needs ten crayons. Omar brings 6 crayons. How many crayons does Omar still need for the game?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-323",
@@ -3232,7 +3232,7 @@ export const ITEMS = [
     structureType: "bondStoryPartnerToTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"Zoe wants a full ten of acorns. Zoe has 7 acorns so far. How many more acorns make ten?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"Zoe wants a full ten of acorns. Zoe has 7 acorns so far. How many more acorns make ten?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-324",
@@ -3242,7 +3242,7 @@ export const ITEMS = [
     structureType: "bondStoryPartnerToTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":8,"whole":10,"promptText":"A game needs ten beads. Sam brings 8 beads. How many beads does Sam still need for the game?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":8,"whole":10,"promptText":"A game needs ten beads. Sam brings 8 beads. How many beads does Sam still need for the game?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-325",
@@ -3252,7 +3252,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":10,"whole":12,"promptText":"Leo has 12 beads. A tray fits exactly 10 beads, and Leo loads it full. How many beads do not fit on the tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":10,"whole":12,"promptText":"Leo has 12 beads. A tray fits exactly 10 beads, and Leo loads it full. How many beads do not fit on the tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-326",
@@ -3262,7 +3262,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"A carton takes 10 buttons and no more. Nora packs it full from a pile of 13 buttons. How many buttons stay in the pile?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"A carton takes 10 buttons and no more. Nora packs it full from a pile of 13 buttons. How many buttons stay in the pile?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-327",
@@ -3272,7 +3272,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"A box holds exactly 10 shells. Theo has 14 shells and fills the box first. How many shells are left outside the box?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"A box holds exactly 10 shells. Theo has 14 shells and fills the box first. How many shells are left outside the box?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-328",
@@ -3282,7 +3282,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":10,"whole":16,"promptText":"Lily has 16 stickers. A tray fits exactly 10 stickers, and Lily loads it full. How many stickers do not fit on the tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":10,"whole":16,"promptText":"Lily has 16 stickers. A tray fits exactly 10 stickers, and Lily loads it full. How many stickers do not fit on the tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-329",
@@ -3292,7 +3292,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":10,"whole":17,"promptText":"A carton takes 10 grapes and no more. Luca packs it full from a pile of 17 grapes. How many grapes stay in the pile?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":10,"whole":17,"promptText":"A carton takes 10 grapes and no more. Luca packs it full from a pile of 17 grapes. How many grapes stay in the pile?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-330",
@@ -3302,7 +3302,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":10,"whole":18,"promptText":"A box holds exactly 10 blocks. Finn has 18 blocks and fills the box first. How many blocks are left outside the box?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":10,"whole":18,"promptText":"A box holds exactly 10 blocks. Finn has 18 blocks and fills the box first. How many blocks are left outside the box?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-331",
@@ -3312,7 +3312,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":10,"whole":19,"promptText":"Priya has 19 leaves. A tray fits exactly 10 leaves, and Priya loads it full. How many leaves do not fit on the tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":10,"whole":19,"promptText":"Priya has 19 leaves. A tray fits exactly 10 leaves, and Priya loads it full. How many leaves do not fit on the tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-332",
@@ -3322,7 +3322,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":10,"whole":12,"promptText":"A carton takes 10 cups and no more. Ava packs it full from a pile of 12 cups. How many cups stay in the pile?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":10,"whole":12,"promptText":"A carton takes 10 cups and no more. Ava packs it full from a pile of 12 cups. How many cups stay in the pile?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-333",
@@ -3332,7 +3332,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"A box holds exactly 10 marbles. Omar has 13 marbles and fills the box first. How many marbles are left outside the box?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"A box holds exactly 10 marbles. Omar has 13 marbles and fills the box first. How many marbles are left outside the box?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-334",
@@ -3342,7 +3342,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"Zoe has 14 socks. A tray fits exactly 10 socks, and Zoe loads it full. How many socks do not fit on the tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"Zoe has 14 socks. A tray fits exactly 10 socks, and Zoe loads it full. How many socks do not fit on the tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-335",
@@ -3352,7 +3352,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":10,"whole":16,"promptText":"A carton takes 10 crayons and no more. Sam packs it full from a pile of 16 crayons. How many crayons stay in the pile?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":10,"whole":16,"promptText":"A carton takes 10 crayons and no more. Sam packs it full from a pile of 16 crayons. How many crayons stay in the pile?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-336",
@@ -3362,7 +3362,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":10,"whole":17,"promptText":"A box holds exactly 10 acorns. Ida has 17 acorns and fills the box first. How many acorns are left outside the box?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":10,"whole":17,"promptText":"A box holds exactly 10 acorns. Ida has 17 acorns and fills the box first. How many acorns are left outside the box?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-337",
@@ -3372,7 +3372,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":10,"whole":18,"promptText":"Amara has 18 beads. A tray fits exactly 10 beads, and Amara loads it full. How many beads do not fit on the tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":10,"whole":18,"promptText":"Amara has 18 beads. A tray fits exactly 10 beads, and Amara loads it full. How many beads do not fit on the tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-338",
@@ -3382,7 +3382,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":10,"whole":19,"promptText":"A carton takes 10 buttons and no more. Mia packs it full from a pile of 19 buttons. How many buttons stay in the pile?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":10,"whole":19,"promptText":"A carton takes 10 buttons and no more. Mia packs it full from a pile of 19 buttons. How many buttons stay in the pile?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-339",
@@ -3392,7 +3392,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":10,"whole":12,"promptText":"A box holds exactly 10 shells. Kai has 12 shells and fills the box first. How many shells are left outside the box?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":10,"whole":12,"promptText":"A box holds exactly 10 shells. Kai has 12 shells and fills the box first. How many shells are left outside the box?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-340",
@@ -3402,7 +3402,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"June has 13 stickers. A tray fits exactly 10 stickers, and June loads it full. How many stickers do not fit on the tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"June has 13 stickers. A tray fits exactly 10 stickers, and June loads it full. How many stickers do not fit on the tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-341",
@@ -3412,7 +3412,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"A carton takes 10 grapes and no more. Ben packs it full from a pile of 14 grapes. How many grapes stay in the pile?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"A carton takes 10 grapes and no more. Ben packs it full from a pile of 14 grapes. How many grapes stay in the pile?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-342",
@@ -3422,7 +3422,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":10,"whole":16,"promptText":"A box holds exactly 10 blocks. Nia has 16 blocks and fills the box first. How many blocks are left outside the box?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":10,"whole":16,"promptText":"A box holds exactly 10 blocks. Nia has 16 blocks and fills the box first. How many blocks are left outside the box?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-343",
@@ -3582,7 +3582,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":10,"whole":11,"promptText":"Mia has 6 cups and wants a full group of ten cups. A friend gives Mia 5 cups. After the group of ten is full, how many extra cups does Mia hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":10,"whole":11,"promptText":"Mia has 6 cups and wants a full group of ten cups. A friend gives Mia 5 cups. After the group of ten is full, how many extra cups does Mia hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-359",
@@ -3592,7 +3592,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":10,"whole":12,"promptText":"Kai stacks 6 marbles in a rack that holds ten. Then Kai gets 6 more marbles and fills the rack. How many marbles are left over after the rack is full?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":10,"whole":12,"promptText":"Kai stacks 6 marbles in a rack that holds ten. Then Kai gets 6 more marbles and fills the rack. How many marbles are left over after the rack is full?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-360",
@@ -3602,7 +3602,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"June has 6 socks and wants a full group of ten socks. A friend gives June 7 socks. After the group of ten is full, how many extra socks does June hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"June has 6 socks and wants a full group of ten socks. A friend gives June 7 socks. After the group of ten is full, how many extra socks does June hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-361",
@@ -3612,7 +3612,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"Ben stacks 6 crayons in a rack that holds ten. Then Ben gets 8 more crayons and fills the rack. How many crayons are left over after the rack is full?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"Ben stacks 6 crayons in a rack that holds ten. Then Ben gets 8 more crayons and fills the rack. How many crayons are left over after the rack is full?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-362",
@@ -3622,7 +3622,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":10,"whole":15,"promptText":"Nia has 6 acorns and wants a full group of ten acorns. A friend gives Nia 9 acorns. After the group of ten is full, how many extra acorns does Nia hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":10,"whole":15,"promptText":"Nia has 6 acorns and wants a full group of ten acorns. A friend gives Nia 9 acorns. After the group of ten is full, how many extra acorns does Nia hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-363",
@@ -3632,7 +3632,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":10,"whole":11,"promptText":"Rosa stacks 7 beads in a rack that holds ten. Then Rosa gets 4 more beads and fills the rack. How many beads are left over after the rack is full?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":10,"whole":11,"promptText":"Rosa stacks 7 beads in a rack that holds ten. Then Rosa gets 4 more beads and fills the rack. How many beads are left over after the rack is full?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-364",
@@ -3642,7 +3642,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":10,"whole":12,"promptText":"Diego has 7 buttons and wants a full group of ten buttons. A friend gives Diego 5 buttons. After the group of ten is full, how many extra buttons does Diego hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":10,"whole":12,"promptText":"Diego has 7 buttons and wants a full group of ten buttons. A friend gives Diego 5 buttons. After the group of ten is full, how many extra buttons does Diego hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-365",
@@ -3652,7 +3652,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"Leo stacks 7 shells in a rack that holds ten. Then Leo gets 6 more shells and fills the rack. How many shells are left over after the rack is full?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"Leo stacks 7 shells in a rack that holds ten. Then Leo gets 6 more shells and fills the rack. How many shells are left over after the rack is full?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-366",
@@ -3662,7 +3662,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"Nora has 7 stickers and wants a full group of ten stickers. A friend gives Nora 7 stickers. After the group of ten is full, how many extra stickers does Nora hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"Nora has 7 stickers and wants a full group of ten stickers. A friend gives Nora 7 stickers. After the group of ten is full, how many extra stickers does Nora hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-367",
@@ -3672,7 +3672,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":10,"whole":15,"promptText":"Theo stacks 7 grapes in a rack that holds ten. Then Theo gets 8 more grapes and fills the rack. How many grapes are left over after the rack is full?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":10,"whole":15,"promptText":"Theo stacks 7 grapes in a rack that holds ten. Then Theo gets 8 more grapes and fills the rack. How many grapes are left over after the rack is full?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-368",
@@ -3682,7 +3682,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":10,"whole":16,"promptText":"Lily has 7 blocks and wants a full group of ten blocks. A friend gives Lily 9 blocks. After the group of ten is full, how many extra blocks does Lily hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":10,"whole":16,"promptText":"Lily has 7 blocks and wants a full group of ten blocks. A friend gives Lily 9 blocks. After the group of ten is full, how many extra blocks does Lily hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-369",
@@ -3692,7 +3692,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":10,"whole":11,"promptText":"Luca stacks 8 leaves in a rack that holds ten. Then Luca gets 3 more leaves and fills the rack. How many leaves are left over after the rack is full?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":10,"whole":11,"promptText":"Luca stacks 8 leaves in a rack that holds ten. Then Luca gets 3 more leaves and fills the rack. How many leaves are left over after the rack is full?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-370",
@@ -3702,7 +3702,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":10,"whole":12,"promptText":"Finn has 8 cups and wants a full group of ten cups. A friend gives Finn 4 cups. After the group of ten is full, how many extra cups does Finn hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":10,"whole":12,"promptText":"Finn has 8 cups and wants a full group of ten cups. A friend gives Finn 4 cups. After the group of ten is full, how many extra cups does Finn hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-371",
@@ -3712,7 +3712,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"Priya stacks 8 marbles in a rack that holds ten. Then Priya gets 5 more marbles and fills the rack. How many marbles are left over after the rack is full?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"Priya stacks 8 marbles in a rack that holds ten. Then Priya gets 5 more marbles and fills the rack. How many marbles are left over after the rack is full?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-372",
@@ -3722,7 +3722,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"Ava has 8 socks and wants a full group of ten socks. A friend gives Ava 6 socks. After the group of ten is full, how many extra socks does Ava hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"Ava has 8 socks and wants a full group of ten socks. A friend gives Ava 6 socks. After the group of ten is full, how many extra socks does Ava hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-373",
@@ -3732,7 +3732,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":10,"whole":15,"promptText":"Omar stacks 8 crayons in a rack that holds ten. Then Omar gets 7 more crayons and fills the rack. How many crayons are left over after the rack is full?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":10,"whole":15,"promptText":"Omar stacks 8 crayons in a rack that holds ten. Then Omar gets 7 more crayons and fills the rack. How many crayons are left over after the rack is full?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-374",
@@ -3742,7 +3742,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":10,"whole":16,"promptText":"Zoe has 8 acorns and wants a full group of ten acorns. A friend gives Zoe 8 acorns. After the group of ten is full, how many extra acorns does Zoe hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":10,"whole":16,"promptText":"Zoe has 8 acorns and wants a full group of ten acorns. A friend gives Zoe 8 acorns. After the group of ten is full, how many extra acorns does Zoe hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-375",
@@ -3752,7 +3752,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":10,"whole":17,"promptText":"Sam stacks 8 beads in a rack that holds ten. Then Sam gets 9 more beads and fills the rack. How many beads are left over after the rack is full?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":10,"whole":17,"promptText":"Sam stacks 8 beads in a rack that holds ten. Then Sam gets 9 more beads and fills the rack. How many beads are left over after the rack is full?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-376",
@@ -3762,7 +3762,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":10,"whole":11,"promptText":"Ida has 9 buttons and wants a full group of ten buttons. A friend gives Ida 2 buttons. After the group of ten is full, how many extra buttons does Ida hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":10,"whole":11,"promptText":"Ida has 9 buttons and wants a full group of ten buttons. A friend gives Ida 2 buttons. After the group of ten is full, how many extra buttons does Ida hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-377",
@@ -3772,7 +3772,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":10,"whole":12,"promptText":"Amara stacks 9 shells in a rack that holds ten. Then Amara gets 3 more shells and fills the rack. How many shells are left over after the rack is full?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":10,"whole":12,"promptText":"Amara stacks 9 shells in a rack that holds ten. Then Amara gets 3 more shells and fills the rack. How many shells are left over after the rack is full?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-378",
@@ -3782,7 +3782,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"Mia has 9 stickers and wants a full group of ten stickers. A friend gives Mia 4 stickers. After the group of ten is full, how many extra stickers does Mia hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"Mia has 9 stickers and wants a full group of ten stickers. A friend gives Mia 4 stickers. After the group of ten is full, how many extra stickers does Mia hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-379",
@@ -3792,7 +3792,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"Kai stacks 9 grapes in a rack that holds ten. Then Kai gets 5 more grapes and fills the rack. How many grapes are left over after the rack is full?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"Kai stacks 9 grapes in a rack that holds ten. Then Kai gets 5 more grapes and fills the rack. How many grapes are left over after the rack is full?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-380",
@@ -3802,7 +3802,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":10,"whole":15,"promptText":"June has 9 blocks and wants a full group of ten blocks. A friend gives June 6 blocks. After the group of ten is full, how many extra blocks does June hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":10,"whole":15,"promptText":"June has 9 blocks and wants a full group of ten blocks. A friend gives June 6 blocks. After the group of ten is full, how many extra blocks does June hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-381",
@@ -3812,7 +3812,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":10,"whole":16,"promptText":"Ben stacks 9 leaves in a rack that holds ten. Then Ben gets 7 more leaves and fills the rack. How many leaves are left over after the rack is full?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":10,"whole":16,"promptText":"Ben stacks 9 leaves in a rack that holds ten. Then Ben gets 7 more leaves and fills the rack. How many leaves are left over after the rack is full?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-382",
@@ -3822,7 +3822,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":10,"whole":17,"promptText":"Nia has 9 cups and wants a full group of ten cups. A friend gives Nia 8 cups. After the group of ten is full, how many extra cups does Nia hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":10,"whole":17,"promptText":"Nia has 9 cups and wants a full group of ten cups. A friend gives Nia 8 cups. After the group of ten is full, how many extra cups does Nia hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-383",
@@ -3832,7 +3832,7 @@ export const ITEMS = [
     structureType: "bondStoryMakeTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":10,"whole":18,"promptText":"Rosa stacks 9 marbles in a rack that holds ten. Then Rosa gets 9 more marbles and fills the rack. How many marbles are left over after the rack is full?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":10,"whole":18,"promptText":"Rosa stacks 9 marbles in a rack that holds ten. Then Rosa gets 9 more marbles and fills the rack. How many marbles are left over after the rack is full?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-384",
@@ -3842,7 +3842,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"A carton takes 10 blocks and no more. Ava packs it full from a pile of 13 blocks. How many blocks stay in the pile?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"A carton takes 10 blocks and no more. Ava packs it full from a pile of 13 blocks. How many blocks stay in the pile?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-385",
@@ -3852,7 +3852,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":10,"whole":15,"promptText":"A box holds exactly 10 leaves. Omar has 15 leaves and fills the box first. How many leaves are left outside the box?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":10,"whole":15,"promptText":"A box holds exactly 10 leaves. Omar has 15 leaves and fills the box first. How many leaves are left outside the box?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-386",
@@ -3862,7 +3862,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":10,"whole":17,"promptText":"Zoe has 17 cups. A tray fits exactly 10 cups, and Zoe loads it full. How many cups do not fit on the tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":10,"whole":17,"promptText":"Zoe has 17 cups. A tray fits exactly 10 cups, and Zoe loads it full. How many cups do not fit on the tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-387",
@@ -3872,7 +3872,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":10,"whole":19,"promptText":"A carton takes 10 marbles and no more. Sam packs it full from a pile of 19 marbles. How many marbles stay in the pile?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":10,"whole":19,"promptText":"A carton takes 10 marbles and no more. Sam packs it full from a pile of 19 marbles. How many marbles stay in the pile?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-388",
@@ -3882,7 +3882,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"A box holds exactly 10 socks. Ida has 14 socks and fills the box first. How many socks are left outside the box?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"A box holds exactly 10 socks. Ida has 14 socks and fills the box first. How many socks are left outside the box?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-389",
@@ -3892,7 +3892,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":10,"whole":16,"promptText":"Amara has 16 crayons. A tray fits exactly 10 crayons, and Amara loads it full. How many crayons do not fit on the tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":10,"whole":16,"promptText":"Amara has 16 crayons. A tray fits exactly 10 crayons, and Amara loads it full. How many crayons do not fit on the tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-390",
@@ -3902,7 +3902,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":10,"whole":18,"promptText":"A carton takes 10 acorns and no more. Mia packs it full from a pile of 18 acorns. How many acorns stay in the pile?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":10,"whole":18,"promptText":"A carton takes 10 acorns and no more. Mia packs it full from a pile of 18 acorns. How many acorns stay in the pile?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-391",
@@ -3912,7 +3912,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"A box holds exactly 10 beads. Kai has 13 beads and fills the box first. How many beads are left outside the box?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"A box holds exactly 10 beads. Kai has 13 beads and fills the box first. How many beads are left outside the box?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-392",
@@ -3922,7 +3922,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":10,"whole":15,"promptText":"June has 15 buttons. A tray fits exactly 10 buttons, and June loads it full. How many buttons do not fit on the tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":10,"whole":15,"promptText":"June has 15 buttons. A tray fits exactly 10 buttons, and June loads it full. How many buttons do not fit on the tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-393",
@@ -3932,7 +3932,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":10,"whole":17,"promptText":"A carton takes 10 shells and no more. Ben packs it full from a pile of 17 shells. How many shells stay in the pile?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":10,"whole":17,"promptText":"A carton takes 10 shells and no more. Ben packs it full from a pile of 17 shells. How many shells stay in the pile?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-394",
@@ -3942,7 +3942,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":10,"whole":19,"promptText":"A box holds exactly 10 stickers. Nia has 19 stickers and fills the box first. How many stickers are left outside the box?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":10,"whole":19,"promptText":"A box holds exactly 10 stickers. Nia has 19 stickers and fills the box first. How many stickers are left outside the box?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-395",
@@ -3952,7 +3952,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"Rosa has 14 grapes. A tray fits exactly 10 grapes, and Rosa loads it full. How many grapes do not fit on the tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"Rosa has 14 grapes. A tray fits exactly 10 grapes, and Rosa loads it full. How many grapes do not fit on the tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-396",
@@ -3962,7 +3962,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":10,"whole":16,"promptText":"A carton takes 10 blocks and no more. Diego packs it full from a pile of 16 blocks. How many blocks stay in the pile?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":10,"whole":16,"promptText":"A carton takes 10 blocks and no more. Diego packs it full from a pile of 16 blocks. How many blocks stay in the pile?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-397",
@@ -3972,7 +3972,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":10,"whole":18,"promptText":"A box holds exactly 10 leaves. Leo has 18 leaves and fills the box first. How many leaves are left outside the box?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":10,"whole":18,"promptText":"A box holds exactly 10 leaves. Leo has 18 leaves and fills the box first. How many leaves are left outside the box?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-398",
@@ -3982,7 +3982,7 @@ export const ITEMS = [
     structureType: "bondStoryFillTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"Nora has 13 cups. A tray fits exactly 10 cups, and Nora loads it full. How many cups do not fit on the tray?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"Nora has 13 cups. A tray fits exactly 10 cups, and Nora loads it full. How many cups do not fit on the tray?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-399",
@@ -4092,7 +4092,7 @@ export const ITEMS = [
     structureType: "bondStoryTakeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":24,"display":{"part":10,"whole":34,"promptText":"Mia bundles ten of the 34 cups with a rubber band. How many cups are outside the bundle?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":24,"display":{"part":10,"whole":34,"promptText":"Mia bundles ten of the 34 cups with a rubber band. How many cups are outside the bundle?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-410",
@@ -4102,7 +4102,7 @@ export const ITEMS = [
     structureType: "bondStoryTakeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":37,"display":{"part":10,"whole":47,"promptText":"From a jar of 47 marbles, Kai scoops out a full group of ten marbles. How many marbles remain in the jar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":37,"display":{"part":10,"whole":47,"promptText":"From a jar of 47 marbles, Kai scoops out a full group of ten marbles. How many marbles remain in the jar?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-411",
@@ -4112,7 +4112,7 @@ export const ITEMS = [
     structureType: "bondStoryTakeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":42,"display":{"part":10,"whole":52,"promptText":"June bundles ten of the 52 socks with a rubber band. How many socks are outside the bundle?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":42,"display":{"part":10,"whole":52,"promptText":"June bundles ten of the 52 socks with a rubber band. How many socks are outside the bundle?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-412",
@@ -4122,7 +4122,7 @@ export const ITEMS = [
     structureType: "bondStoryTakeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":58,"display":{"part":10,"whole":68,"promptText":"From a jar of 68 crayons, Ben scoops out a full group of ten crayons. How many crayons remain in the jar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":58,"display":{"part":10,"whole":68,"promptText":"From a jar of 68 crayons, Ben scoops out a full group of ten crayons. How many crayons remain in the jar?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-413",
@@ -4132,7 +4132,7 @@ export const ITEMS = [
     structureType: "bondStoryTakeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":61,"display":{"part":10,"whole":71,"promptText":"Nia bundles ten of the 71 acorns with a rubber band. How many acorns are outside the bundle?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":61,"display":{"part":10,"whole":71,"promptText":"Nia bundles ten of the 71 acorns with a rubber band. How many acorns are outside the bundle?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-414",
@@ -4142,7 +4142,7 @@ export const ITEMS = [
     structureType: "bondStoryTakeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"part":10,"whole":85,"promptText":"From a jar of 85 beads, Rosa scoops out a full group of ten beads. How many beads remain in the jar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"part":10,"whole":85,"promptText":"From a jar of 85 beads, Rosa scoops out a full group of ten beads. How many beads remain in the jar?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-415",
@@ -4152,7 +4152,7 @@ export const ITEMS = [
     structureType: "bondStoryTakeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"part":10,"whole":26,"promptText":"Diego bundles ten of the 26 buttons with a rubber band. How many buttons are outside the bundle?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"part":10,"whole":26,"promptText":"Diego bundles ten of the 26 buttons with a rubber band. How many buttons are outside the bundle?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-416",
@@ -4162,7 +4162,7 @@ export const ITEMS = [
     structureType: "bondStoryTakeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":49,"display":{"part":10,"whole":59,"promptText":"From a jar of 59 shells, Leo scoops out a full group of ten shells. How many shells remain in the jar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":49,"display":{"part":10,"whole":59,"promptText":"From a jar of 59 shells, Leo scoops out a full group of ten shells. How many shells remain in the jar?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-417",
@@ -4172,7 +4172,7 @@ export const ITEMS = [
     structureType: "bondStoryTakeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":83,"display":{"part":10,"whole":93,"promptText":"Nora bundles ten of the 93 stickers with a rubber band. How many stickers are outside the bundle?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":83,"display":{"part":10,"whole":93,"promptText":"Nora bundles ten of the 93 stickers with a rubber band. How many stickers are outside the bundle?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-418",
@@ -4182,7 +4182,7 @@ export const ITEMS = [
     structureType: "bondStoryTakeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":28,"display":{"part":10,"whole":38,"promptText":"From a jar of 38 grapes, Theo scoops out a full group of ten grapes. How many grapes remain in the jar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":28,"display":{"part":10,"whole":38,"promptText":"From a jar of 38 grapes, Theo scoops out a full group of ten grapes. How many grapes remain in the jar?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-419",
@@ -4192,7 +4192,7 @@ export const ITEMS = [
     structureType: "bondStoryTakeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":34,"display":{"part":10,"whole":44,"promptText":"Lily bundles ten of the 44 blocks with a rubber band. How many blocks are outside the bundle?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":34,"display":{"part":10,"whole":44,"promptText":"Lily bundles ten of the 44 blocks with a rubber band. How many blocks are outside the bundle?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-420",
@@ -4202,7 +4202,7 @@ export const ITEMS = [
     structureType: "bondStoryTakeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":47,"display":{"part":10,"whole":57,"promptText":"From a jar of 57 leaves, Luca scoops out a full group of ten leaves. How many leaves remain in the jar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":47,"display":{"part":10,"whole":57,"promptText":"From a jar of 57 leaves, Luca scoops out a full group of ten leaves. How many leaves remain in the jar?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-421",
@@ -4212,7 +4212,7 @@ export const ITEMS = [
     structureType: "bondStoryTakeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":52,"display":{"part":10,"whole":62,"promptText":"Finn bundles ten of the 62 cups with a rubber band. How many cups are outside the bundle?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":52,"display":{"part":10,"whole":62,"promptText":"Finn bundles ten of the 62 cups with a rubber band. How many cups are outside the bundle?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-422",
@@ -4222,7 +4222,7 @@ export const ITEMS = [
     structureType: "bondStoryTakeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":66,"display":{"part":10,"whole":76,"promptText":"From a jar of 76 marbles, Priya scoops out a full group of ten marbles. How many marbles remain in the jar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":66,"display":{"part":10,"whole":76,"promptText":"From a jar of 76 marbles, Priya scoops out a full group of ten marbles. How many marbles remain in the jar?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-423",
@@ -4232,7 +4232,7 @@ export const ITEMS = [
     structureType: "bondStoryTakeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":71,"display":{"part":10,"whole":81,"promptText":"Ava bundles ten of the 81 socks with a rubber band. How many socks are outside the bundle?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":71,"display":{"part":10,"whole":81,"promptText":"Ava bundles ten of the 81 socks with a rubber band. How many socks are outside the bundle?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-424",
@@ -4242,7 +4242,7 @@ export const ITEMS = [
     structureType: "bondStoryTakeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":85,"display":{"part":10,"whole":95,"promptText":"From a jar of 95 crayons, Omar scoops out a full group of ten crayons. How many crayons remain in the jar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":85,"display":{"part":10,"whole":95,"promptText":"From a jar of 95 crayons, Omar scoops out a full group of ten crayons. How many crayons remain in the jar?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-425",
@@ -4252,7 +4252,7 @@ export const ITEMS = [
     structureType: "bondStoryTakeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"part":10,"whole":28,"promptText":"Zoe bundles ten of the 28 acorns with a rubber band. How many acorns are outside the bundle?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"part":10,"whole":28,"promptText":"Zoe bundles ten of the 28 acorns with a rubber band. How many acorns are outside the bundle?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-426",
@@ -4262,7 +4262,7 @@ export const ITEMS = [
     structureType: "bondStoryTakeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":39,"display":{"part":10,"whole":49,"promptText":"From a jar of 49 beads, Sam scoops out a full group of ten beads. How many beads remain in the jar?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":39,"display":{"part":10,"whole":49,"promptText":"From a jar of 49 beads, Sam scoops out a full group of ten beads. How many beads remain in the jar?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-427",
@@ -4272,7 +4272,7 @@ export const ITEMS = [
     structureType: "bondStoryTensSingles",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":20,"whole":23,"promptText":"Leo bags 23 beads in tens. When no more full bags of ten can be made, how many loose beads does Leo still hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":20,"whole":23,"promptText":"Leo bags 23 beads in tens. When no more full bags of ten can be made, how many loose beads does Leo still hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-428",
@@ -4282,7 +4282,7 @@ export const ITEMS = [
     structureType: "bondStoryTensSingles",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":30,"whole":37,"promptText":"Nora makes piles of ten from 37 buttons. After every full pile of ten is made, how many single buttons are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":30,"whole":37,"promptText":"Nora makes piles of ten from 37 buttons. After every full pile of ten is made, how many single buttons are left?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-429",
@@ -4292,7 +4292,7 @@ export const ITEMS = [
     structureType: "bondStoryTensSingles",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":40,"whole":45,"promptText":"Theo bags 45 shells in tens. When no more full bags of ten can be made, how many loose shells does Theo still hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":40,"whole":45,"promptText":"Theo bags 45 shells in tens. When no more full bags of ten can be made, how many loose shells does Theo still hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-430",
@@ -4302,7 +4302,7 @@ export const ITEMS = [
     structureType: "bondStoryTensSingles",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":50,"whole":58,"promptText":"Lily makes piles of ten from 58 stickers. After every full pile of ten is made, how many single stickers are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":50,"whole":58,"promptText":"Lily makes piles of ten from 58 stickers. After every full pile of ten is made, how many single stickers are left?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-431",
@@ -4312,7 +4312,7 @@ export const ITEMS = [
     structureType: "bondStoryTensSingles",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":60,"whole":64,"promptText":"Luca bags 64 grapes in tens. When no more full bags of ten can be made, how many loose grapes does Luca still hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":60,"whole":64,"promptText":"Luca bags 64 grapes in tens. When no more full bags of ten can be made, how many loose grapes does Luca still hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-432",
@@ -4322,7 +4322,7 @@ export const ITEMS = [
     structureType: "bondStoryTensSingles",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":70,"whole":76,"promptText":"Finn makes piles of ten from 76 blocks. After every full pile of ten is made, how many single blocks are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":70,"whole":76,"promptText":"Finn makes piles of ten from 76 blocks. After every full pile of ten is made, how many single blocks are left?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-433",
@@ -4332,7 +4332,7 @@ export const ITEMS = [
     structureType: "bondStoryTensSingles",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":80,"whole":89,"promptText":"Priya bags 89 leaves in tens. When no more full bags of ten can be made, how many loose leaves does Priya still hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":80,"whole":89,"promptText":"Priya bags 89 leaves in tens. When no more full bags of ten can be made, how many loose leaves does Priya still hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-434",
@@ -4342,7 +4342,7 @@ export const ITEMS = [
     structureType: "bondStoryTensSingles",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":90,"whole":92,"promptText":"Ava makes piles of ten from 92 cups. After every full pile of ten is made, how many single cups are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":90,"whole":92,"promptText":"Ava makes piles of ten from 92 cups. After every full pile of ten is made, how many single cups are left?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-435",
@@ -4352,7 +4352,7 @@ export const ITEMS = [
     structureType: "bondStoryTensSingles",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":30,"whole":31,"promptText":"Omar bags 31 marbles in tens. When no more full bags of ten can be made, how many loose marbles does Omar still hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":30,"whole":31,"promptText":"Omar bags 31 marbles in tens. When no more full bags of ten can be made, how many loose marbles does Omar still hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-436",
@@ -4362,7 +4362,7 @@ export const ITEMS = [
     structureType: "bondStoryTensSingles",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":40,"whole":46,"promptText":"Zoe makes piles of ten from 46 socks. After every full pile of ten is made, how many single socks are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":40,"whole":46,"promptText":"Zoe makes piles of ten from 46 socks. After every full pile of ten is made, how many single socks are left?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-437",
@@ -4372,7 +4372,7 @@ export const ITEMS = [
     structureType: "bondStoryTensSingles",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":50,"whole":53,"promptText":"Sam bags 53 crayons in tens. When no more full bags of ten can be made, how many loose crayons does Sam still hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":50,"whole":53,"promptText":"Sam bags 53 crayons in tens. When no more full bags of ten can be made, how many loose crayons does Sam still hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-438",
@@ -4382,7 +4382,7 @@ export const ITEMS = [
     structureType: "bondStoryTensSingles",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":60,"whole":67,"promptText":"Ida makes piles of ten from 67 acorns. After every full pile of ten is made, how many single acorns are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":60,"whole":67,"promptText":"Ida makes piles of ten from 67 acorns. After every full pile of ten is made, how many single acorns are left?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-439",
@@ -4392,7 +4392,7 @@ export const ITEMS = [
     structureType: "bondStoryTensSingles",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":70,"whole":74,"promptText":"Amara bags 74 beads in tens. When no more full bags of ten can be made, how many loose beads does Amara still hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":70,"whole":74,"promptText":"Amara bags 74 beads in tens. When no more full bags of ten can be made, how many loose beads does Amara still hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-440",
@@ -4402,7 +4402,7 @@ export const ITEMS = [
     structureType: "bondStoryTensSingles",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":80,"whole":88,"promptText":"Mia makes piles of ten from 88 buttons. After every full pile of ten is made, how many single buttons are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":80,"whole":88,"promptText":"Mia makes piles of ten from 88 buttons. After every full pile of ten is made, how many single buttons are left?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-441",
@@ -4412,7 +4412,7 @@ export const ITEMS = [
     structureType: "bondStoryTensSingles",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":90,"whole":96,"promptText":"Kai bags 96 shells in tens. When no more full bags of ten can be made, how many loose shells does Kai still hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":90,"whole":96,"promptText":"Kai bags 96 shells in tens. When no more full bags of ten can be made, how many loose shells does Kai still hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-442",
@@ -4422,7 +4422,7 @@ export const ITEMS = [
     structureType: "bondStoryTensSingles",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":20,"whole":29,"promptText":"June makes piles of ten from 29 stickers. After every full pile of ten is made, how many single stickers are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":20,"whole":29,"promptText":"June makes piles of ten from 29 stickers. After every full pile of ten is made, how many single stickers are left?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-443",
@@ -4432,7 +4432,7 @@ export const ITEMS = [
     structureType: "bondStoryTensSingles",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":20,"whole":23,"promptText":"Ben bags 23 grapes in tens. When no more full bags of ten can be made, how many loose grapes does Ben still hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":20,"whole":23,"promptText":"Ben bags 23 grapes in tens. When no more full bags of ten can be made, how many loose grapes does Ben still hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-444",
@@ -4442,7 +4442,7 @@ export const ITEMS = [
     structureType: "bondStoryTensSingles",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":30,"whole":37,"promptText":"Nia makes piles of ten from 37 blocks. After every full pile of ten is made, how many single blocks are left?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":30,"whole":37,"promptText":"Nia makes piles of ten from 37 blocks. After every full pile of ten is made, how many single blocks are left?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-app-b0820-445",
@@ -4852,7 +4852,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[3,2],"promptText":"One part: 🥚🥚🥚 Other part: 🥚🥚 How many eggs in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[3,2],"promptText":"One part: 🥚🥚🥚 Other part: 🥚🥚 How many eggs in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-027",
@@ -4862,7 +4862,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[4,3],"promptText":"One part: 🐚🐚🐚🐚 Other part: 🐚🐚🐚 How many shells in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[4,3],"promptText":"One part: 🐚🐚🐚🐚 Other part: 🐚🐚🐚 How many shells in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-028",
@@ -4872,7 +4872,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"parts":[2,2],"promptText":"One part: 🍎🍎 Other part: 🍎🍎 How many apples in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"parts":[2,2],"promptText":"One part: 🍎🍎 Other part: 🍎🍎 How many apples in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-029",
@@ -4882,7 +4882,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[5,3],"promptText":"One part: ⭐⭐⭐⭐⭐ Other part: ⭐⭐⭐ How many stars in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[5,3],"promptText":"One part: ⭐⭐⭐⭐⭐ Other part: ⭐⭐⭐ How many stars in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-030",
@@ -4892,7 +4892,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[4,4],"promptText":"One part: 🌸🌸🌸🌸 Other part: 🌸🌸🌸🌸 How many flowers in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[4,4],"promptText":"One part: 🌸🌸🌸🌸 Other part: 🌸🌸🌸🌸 How many flowers in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-031",
@@ -4902,7 +4902,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[3,3],"promptText":"One part: 🎈🎈🎈 Other part: 🎈🎈🎈 How many balloons in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[3,3],"promptText":"One part: 🎈🎈🎈 Other part: 🎈🎈🎈 How many balloons in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-032",
@@ -4912,7 +4912,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[5,4],"promptText":"One part: 🍓🍓🍓🍓🍓 Other part: 🍓🍓🍓🍓 How many berries in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[5,4],"promptText":"One part: 🍓🍓🍓🍓🍓 Other part: 🍓🍓🍓🍓 How many berries in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-033",
@@ -4922,7 +4922,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[6,3],"promptText":"One part: 🐟🐟🐟🐟🐟🐟 Other part: 🐟🐟🐟 How many fish in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[6,3],"promptText":"One part: 🐟🐟🐟🐟🐟🐟 Other part: 🐟🐟🐟 How many fish in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-034",
@@ -4932,7 +4932,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"parts":[2,1],"promptText":"One part: 🥚🥚 Other part: 🥚 How many eggs in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"parts":[2,1],"promptText":"One part: 🥚🥚 Other part: 🥚 How many eggs in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-035",
@@ -4942,7 +4942,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[4,2],"promptText":"One part: 🐚🐚🐚🐚 Other part: 🐚🐚 How many shells in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[4,2],"promptText":"One part: 🐚🐚🐚🐚 Other part: 🐚🐚 How many shells in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-036",
@@ -4952,7 +4952,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[5,2],"promptText":"One part: 🍎🍎🍎🍎🍎 Other part: 🍎🍎 How many apples in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[5,2],"promptText":"One part: 🍎🍎🍎🍎🍎 Other part: 🍎🍎 How many apples in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-037",
@@ -4962,7 +4962,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[6,2],"promptText":"One part: ⭐⭐⭐⭐⭐⭐ Other part: ⭐⭐ How many stars in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[6,2],"promptText":"One part: ⭐⭐⭐⭐⭐⭐ Other part: ⭐⭐ How many stars in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-038",
@@ -4972,7 +4972,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[3,4],"promptText":"One part: 🌸🌸🌸 Other part: 🌸🌸🌸🌸 How many flowers in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[3,4],"promptText":"One part: 🌸🌸🌸 Other part: 🌸🌸🌸🌸 How many flowers in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-039",
@@ -4982,7 +4982,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[2,5],"promptText":"One part: 🎈🎈 Other part: 🎈🎈🎈🎈🎈 How many balloons in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[2,5],"promptText":"One part: 🎈🎈 Other part: 🎈🎈🎈🎈🎈 How many balloons in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-040",
@@ -4992,7 +4992,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[4,5],"promptText":"One part: 🍓🍓🍓🍓 Other part: 🍓🍓🍓🍓🍓 How many berries in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[4,5],"promptText":"One part: 🍓🍓🍓🍓 Other part: 🍓🍓🍓🍓🍓 How many berries in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-041",
@@ -5002,7 +5002,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"parts":[1,3],"promptText":"One part: 🐟 Other part: 🐟🐟🐟 How many fish in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"parts":[1,3],"promptText":"One part: 🐟 Other part: 🐟🐟🐟 How many fish in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-042",
@@ -5012,7 +5012,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[6,4],"promptText":"One part: 🥚🥚🥚🥚🥚🥚 Other part: 🥚🥚🥚🥚 How many eggs in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[6,4],"promptText":"One part: 🥚🥚🥚🥚🥚🥚 Other part: 🥚🥚🥚🥚 How many eggs in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-043",
@@ -5022,7 +5022,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[2,3],"promptText":"One part: 🐚🐚 Other part: 🐚🐚🐚 How many shells in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[2,3],"promptText":"One part: 🐚🐚 Other part: 🐚🐚🐚 How many shells in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-044",
@@ -5032,7 +5032,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[3,5],"promptText":"One part: 🍎🍎🍎 Other part: 🍎🍎🍎🍎🍎 How many apples in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[3,5],"promptText":"One part: 🍎🍎🍎 Other part: 🍎🍎🍎🍎🍎 How many apples in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-045",
@@ -5042,7 +5042,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[5,5],"promptText":"One part: ⭐⭐⭐⭐⭐ Other part: ⭐⭐⭐⭐⭐ How many stars in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[5,5],"promptText":"One part: ⭐⭐⭐⭐⭐ Other part: ⭐⭐⭐⭐⭐ How many stars in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-046",
@@ -5052,7 +5052,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[7,2],"promptText":"One part: 🌸🌸🌸🌸🌸🌸🌸 Other part: 🌸🌸 How many flowers in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[7,2],"promptText":"One part: 🌸🌸🌸🌸🌸🌸🌸 Other part: 🌸🌸 How many flowers in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-047",
@@ -5062,7 +5062,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[1,5],"promptText":"One part: 🎈 Other part: 🎈🎈🎈🎈🎈 How many balloons in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[1,5],"promptText":"One part: 🎈 Other part: 🎈🎈🎈🎈🎈 How many balloons in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-048",
@@ -5072,7 +5072,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[2,6],"promptText":"One part: 🍓🍓 Other part: 🍓🍓🍓🍓🍓🍓 How many berries in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[2,6],"promptText":"One part: 🍓🍓 Other part: 🍓🍓🍓🍓🍓🍓 How many berries in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-049",
@@ -5082,7 +5082,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[3,6],"promptText":"One part: 🐟🐟🐟 Other part: 🐟🐟🐟🐟🐟🐟 How many fish in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[3,6],"promptText":"One part: 🐟🐟🐟 Other part: 🐟🐟🐟🐟🐟🐟 How many fish in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-050",
@@ -5092,7 +5092,7 @@ export const ITEMS = [
     structureType: "pictureWholeUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[7,3],"promptText":"One part: 🥚🥚🥚🥚🥚🥚🥚 Other part: 🥚🥚🥚 How many eggs in all?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[7,3],"promptText":"One part: 🥚🥚🥚🥚🥚🥚🥚 Other part: 🥚🥚🥚 How many eggs in all?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-051",
@@ -5472,7 +5472,7 @@ export const ITEMS = [
     structureType: "threePartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[4,6,3],"promptText":"A bond has three parts: 4, 6, and 3. What is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[4,6,3],"promptText":"A bond has three parts: 4, 6, and 3. What is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-089",
@@ -5482,7 +5482,7 @@ export const ITEMS = [
     structureType: "threePartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"parts":[5,5,7],"promptText":"A bond has three parts: 5, 5, and 7. What is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"parts":[5,5,7],"promptText":"A bond has three parts: 5, 5, and 7. What is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-090",
@@ -5492,7 +5492,7 @@ export const ITEMS = [
     structureType: "threePartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[2,8,4],"promptText":"A bond has three parts: 2, 8, and 4. What is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[2,8,4],"promptText":"A bond has three parts: 2, 8, and 4. What is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-091",
@@ -5502,7 +5502,7 @@ export const ITEMS = [
     structureType: "threePartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"parts":[3,7,6],"promptText":"A bond has three parts: 3, 7, and 6. What is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"parts":[3,7,6],"promptText":"A bond has three parts: 3, 7, and 6. What is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-092",
@@ -5512,7 +5512,7 @@ export const ITEMS = [
     structureType: "threePartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[9,1,5],"promptText":"A bond has three parts: 9, 1, and 5. What is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[9,1,5],"promptText":"A bond has three parts: 9, 1, and 5. What is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-093",
@@ -5522,7 +5522,7 @@ export const ITEMS = [
     structureType: "threePartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"parts":[6,4,8],"promptText":"Three parts make one whole: 6, 4, and 8. What number is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"parts":[6,4,8],"promptText":"Three parts make one whole: 6, 4, and 8. What number is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-094",
@@ -5532,7 +5532,7 @@ export const ITEMS = [
     structureType: "threePartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[2,3,5],"promptText":"Three parts make one whole: 2, 3, and 5. What number is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[2,3,5],"promptText":"Three parts make one whole: 2, 3, and 5. What number is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-095",
@@ -5542,7 +5542,7 @@ export const ITEMS = [
     structureType: "threePartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[7,3,4],"promptText":"Three parts make one whole: 7, 3, and 4. What number is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[7,3,4],"promptText":"Three parts make one whole: 7, 3, and 4. What number is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-096",
@@ -5552,7 +5552,7 @@ export const ITEMS = [
     structureType: "threePartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":19,"display":{"parts":[8,2,9],"promptText":"Three parts make one whole: 8, 2, and 9. What number is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":19,"display":{"parts":[8,2,9],"promptText":"Three parts make one whole: 8, 2, and 9. What number is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-097",
@@ -5562,7 +5562,7 @@ export const ITEMS = [
     structureType: "threePartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[5,4,3],"promptText":"Three parts make one whole: 5, 4, and 3. What number is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[5,4,3],"promptText":"Three parts make one whole: 5, 4, and 3. What number is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-098",
@@ -5572,7 +5572,7 @@ export const ITEMS = [
     structureType: "threePartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"parts":[3,5,8],"promptText":"A three-branch bond holds 3, 5, and 8. What whole do the branches make?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"parts":[3,5,8],"promptText":"A three-branch bond holds 3, 5, and 8. What whole do the branches make?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-099",
@@ -5582,7 +5582,7 @@ export const ITEMS = [
     structureType: "threePartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[6,2,7],"promptText":"A three-branch bond holds 6, 2, and 7. What whole do the branches make?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[6,2,7],"promptText":"A three-branch bond holds 6, 2, and 7. What whole do the branches make?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-100",
@@ -5592,7 +5592,7 @@ export const ITEMS = [
     structureType: "threePartWhole",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"parts":[4,4,9],"promptText":"A three-branch bond holds 4, 4, and 9. What whole do the branches make?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"parts":[4,4,9],"promptText":"A three-branch bond holds 4, 4, and 9. What whole do the branches make?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-101",
@@ -5602,7 +5602,7 @@ export const ITEMS = [
     structureType: "unitFormWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":263,"display":{"parts":[200,60,3],"promptText":"2 hundreds 6 tens 3 ones. What number is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":263,"display":{"parts":[200,60,3],"promptText":"2 hundreds 6 tens 3 ones. What number is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-102",
@@ -5612,7 +5612,7 @@ export const ITEMS = [
     structureType: "unitFormWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":318,"display":{"parts":[300,10,8],"promptText":"3 hundreds 1 ten 8 ones. What number is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":318,"display":{"parts":[300,10,8],"promptText":"3 hundreds 1 ten 8 ones. What number is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-103",
@@ -5622,7 +5622,7 @@ export const ITEMS = [
     structureType: "unitFormWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":452,"display":{"parts":[400,50,2],"promptText":"4 hundreds 5 tens 2 ones. What number is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":452,"display":{"parts":[400,50,2],"promptText":"4 hundreds 5 tens 2 ones. What number is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-104",
@@ -5632,7 +5632,7 @@ export const ITEMS = [
     structureType: "unitFormWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":597,"display":{"parts":[500,90,7],"promptText":"5 hundreds 9 tens 7 ones. What number is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":597,"display":{"parts":[500,90,7],"promptText":"5 hundreds 9 tens 7 ones. What number is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-105",
@@ -5642,7 +5642,7 @@ export const ITEMS = [
     structureType: "unitFormWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":624,"display":{"parts":[600,20,4],"promptText":"6 hundreds 2 tens 4 ones. What number is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":624,"display":{"parts":[600,20,4],"promptText":"6 hundreds 2 tens 4 ones. What number is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-106",
@@ -5652,7 +5652,7 @@ export const ITEMS = [
     structureType: "unitFormWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":781,"display":{"parts":[700,80,1],"promptText":"A bond splits a number into 7 hundreds, 8 tens, and 1 one. What is the number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":781,"display":{"parts":[700,80,1],"promptText":"A bond splits a number into 7 hundreds, 8 tens, and 1 one. What is the number?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-107",
@@ -5662,7 +5662,7 @@ export const ITEMS = [
     structureType: "unitFormWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":839,"display":{"parts":[800,30,9],"promptText":"A bond splits a number into 8 hundreds, 3 tens, and 9 ones. What is the number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":839,"display":{"parts":[800,30,9],"promptText":"A bond splits a number into 8 hundreds, 3 tens, and 9 ones. What is the number?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-108",
@@ -5672,7 +5672,7 @@ export const ITEMS = [
     structureType: "unitFormWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":946,"display":{"parts":[900,40,6],"promptText":"A bond splits a number into 9 hundreds, 4 tens, and 6 ones. What is the number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":946,"display":{"parts":[900,40,6],"promptText":"A bond splits a number into 9 hundreds, 4 tens, and 6 ones. What is the number?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-109",
@@ -5682,7 +5682,7 @@ export const ITEMS = [
     structureType: "unitFormWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":175,"display":{"parts":[100,70,5],"promptText":"A bond splits a number into 1 hundred, 7 tens, and 5 ones. What is the number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":175,"display":{"parts":[100,70,5],"promptText":"A bond splits a number into 1 hundred, 7 tens, and 5 ones. What is the number?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-110",
@@ -5692,7 +5692,7 @@ export const ITEMS = [
     structureType: "unitFormWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":209,"display":{"parts":[200,0,9],"promptText":"A bond splits a number into 2 hundreds, 0 tens, and 9 ones. What is the number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":209,"display":{"parts":[200,0,9],"promptText":"A bond splits a number into 2 hundreds, 0 tens, and 9 ones. What is the number?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-111",
@@ -5702,7 +5702,7 @@ export const ITEMS = [
     structureType: "unitFormWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":350,"display":{"parts":[300,50,0],"promptText":"Put together 3 hundreds, 5 tens, and 0 ones. What number do the parts make?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":350,"display":{"parts":[300,50,0],"promptText":"Put together 3 hundreds, 5 tens, and 0 ones. What number do the parts make?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-112",
@@ -5712,7 +5712,7 @@ export const ITEMS = [
     structureType: "unitFormWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":486,"display":{"parts":[400,80,6],"promptText":"Put together 4 hundreds, 8 tens, and 6 ones. What number do the parts make?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":486,"display":{"parts":[400,80,6],"promptText":"Put together 4 hundreds, 8 tens, and 6 ones. What number do the parts make?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-113",
@@ -5722,7 +5722,7 @@ export const ITEMS = [
     structureType: "unitFormWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":521,"display":{"parts":[500,20,1],"promptText":"Put together 5 hundreds, 2 tens, and 1 one. What number do the parts make?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":521,"display":{"parts":[500,20,1],"promptText":"Put together 5 hundreds, 2 tens, and 1 one. What number do the parts make?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-114",
@@ -5732,7 +5732,7 @@ export const ITEMS = [
     structureType: "unitFormWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":668,"display":{"parts":[600,60,8],"promptText":"Put together 6 hundreds, 6 tens, and 8 ones. What number do the parts make?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":668,"display":{"parts":[600,60,8],"promptText":"Put together 6 hundreds, 6 tens, and 8 ones. What number do the parts make?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-115",
@@ -5742,7 +5742,7 @@ export const ITEMS = [
     structureType: "unitFormWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":703,"display":{"parts":[700,0,3],"promptText":"Put together 7 hundreds, 0 tens, and 3 ones. What number do the parts make?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":703,"display":{"parts":[700,0,3],"promptText":"Put together 7 hundreds, 0 tens, and 3 ones. What number do the parts make?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-116",
@@ -5752,7 +5752,7 @@ export const ITEMS = [
     structureType: "unitFormWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":892,"display":{"parts":[800,90,2],"promptText":"The parts of a number are 8 hundreds, 9 tens, and 2 ones. Name the number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":892,"display":{"parts":[800,90,2],"promptText":"The parts of a number are 8 hundreds, 9 tens, and 2 ones. Name the number."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-117",
@@ -5762,7 +5762,7 @@ export const ITEMS = [
     structureType: "unitFormWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":914,"display":{"parts":[900,10,4],"promptText":"The parts of a number are 9 hundreds, 1 ten, and 4 ones. Name the number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":914,"display":{"parts":[900,10,4],"promptText":"The parts of a number are 9 hundreds, 1 ten, and 4 ones. Name the number."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-118",
@@ -5772,7 +5772,7 @@ export const ITEMS = [
     structureType: "unitFormWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":137,"display":{"parts":[100,30,7],"promptText":"The parts of a number are 1 hundred, 3 tens, and 7 ones. Name the number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":137,"display":{"parts":[100,30,7],"promptText":"The parts of a number are 1 hundred, 3 tens, and 7 ones. Name the number."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-119",
@@ -5782,7 +5782,7 @@ export const ITEMS = [
     structureType: "unitFormWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":248,"display":{"parts":[200,40,8],"promptText":"The parts of a number are 2 hundreds, 4 tens, and 8 ones. Name the number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":248,"display":{"parts":[200,40,8],"promptText":"The parts of a number are 2 hundreds, 4 tens, and 8 ones. Name the number."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-120",
@@ -5792,7 +5792,7 @@ export const ITEMS = [
     structureType: "unitFormWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":395,"display":{"parts":[300,90,5],"promptText":"The parts of a number are 3 hundreds, 9 tens, and 5 ones. Name the number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":395,"display":{"parts":[300,90,5],"promptText":"The parts of a number are 3 hundreds, 9 tens, and 5 ones. Name the number."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-121",
@@ -5802,7 +5802,7 @@ export const ITEMS = [
     structureType: "tensOnesWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":37,"display":{"parts":[30,7],"promptText":"A bond shows 30 and 7 as the parts. What is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":37,"display":{"parts":[30,7],"promptText":"A bond shows 30 and 7 as the parts. What is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-122",
@@ -5812,7 +5812,7 @@ export const ITEMS = [
     structureType: "tensOnesWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":52,"display":{"parts":[50,2],"promptText":"A bond shows 50 and 2 as the parts. What is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":52,"display":{"parts":[50,2],"promptText":"A bond shows 50 and 2 as the parts. What is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-123",
@@ -5822,7 +5822,7 @@ export const ITEMS = [
     structureType: "tensOnesWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":79,"display":{"parts":[70,9],"promptText":"A bond shows 70 and 9 as the parts. What is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":79,"display":{"parts":[70,9],"promptText":"A bond shows 70 and 9 as the parts. What is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-124",
@@ -5832,7 +5832,7 @@ export const ITEMS = [
     structureType: "tensOnesWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":26,"display":{"parts":[20,6],"promptText":"A bond shows 20 and 6 as the parts. What is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":26,"display":{"parts":[20,6],"promptText":"A bond shows 20 and 6 as the parts. What is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-125",
@@ -5842,7 +5842,7 @@ export const ITEMS = [
     structureType: "tensOnesWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":84,"display":{"parts":[80,4],"promptText":"A bond shows 80 and 4 as the parts. What is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":84,"display":{"parts":[80,4],"promptText":"A bond shows 80 and 4 as the parts. What is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-126",
@@ -5852,7 +5852,7 @@ export const ITEMS = [
     structureType: "tensOnesWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":48,"display":{"parts":[40,8],"promptText":"The parts are 40 and 8. What whole number do they make?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":48,"display":{"parts":[40,8],"promptText":"The parts are 40 and 8. What whole number do they make?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-127",
@@ -5862,7 +5862,7 @@ export const ITEMS = [
     structureType: "tensOnesWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":93,"display":{"parts":[90,3],"promptText":"The parts are 90 and 3. What whole number do they make?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":93,"display":{"parts":[90,3],"promptText":"The parts are 90 and 3. What whole number do they make?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-128",
@@ -5872,7 +5872,7 @@ export const ITEMS = [
     structureType: "tensOnesWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":61,"display":{"parts":[60,1],"promptText":"The parts are 60 and 1. What whole number do they make?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":61,"display":{"parts":[60,1],"promptText":"The parts are 60 and 1. What whole number do they make?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-129",
@@ -5882,7 +5882,7 @@ export const ITEMS = [
     structureType: "tensOnesWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"parts":[30,5],"promptText":"The parts are 30 and 5. What whole number do they make?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"parts":[30,5],"promptText":"The parts are 30 and 5. What whole number do they make?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-130",
@@ -5892,7 +5892,7 @@ export const ITEMS = [
     structureType: "tensOnesWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":74,"display":{"parts":[70,4],"promptText":"The parts are 70 and 4. What whole number do they make?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":74,"display":{"parts":[70,4],"promptText":"The parts are 70 and 4. What whole number do they make?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-131",
@@ -5902,7 +5902,7 @@ export const ITEMS = [
     structureType: "tensOnesWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":29,"display":{"parts":[20,9],"promptText":"Join the parts 20 and 9. What is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":29,"display":{"parts":[20,9],"promptText":"Join the parts 20 and 9. What is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-132",
@@ -5912,7 +5912,7 @@ export const ITEMS = [
     structureType: "tensOnesWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":58,"display":{"parts":[50,8],"promptText":"Join the parts 50 and 8. What is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":58,"display":{"parts":[50,8],"promptText":"Join the parts 50 and 8. What is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-133",
@@ -5922,7 +5922,7 @@ export const ITEMS = [
     structureType: "tensOnesWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":43,"display":{"parts":[40,3],"promptText":"Join the parts 40 and 3. What is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":43,"display":{"parts":[40,3],"promptText":"Join the parts 40 and 3. What is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-134",
@@ -5932,7 +5932,7 @@ export const ITEMS = [
     structureType: "tensOnesWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":87,"display":{"parts":[80,7],"promptText":"Join the parts 80 and 7. What is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":87,"display":{"parts":[80,7],"promptText":"Join the parts 80 and 7. What is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-135",
@@ -5942,7 +5942,7 @@ export const ITEMS = [
     structureType: "tensOnesWhole",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":66,"display":{"parts":[60,6],"promptText":"Join the parts 60 and 6. What is the whole?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":66,"display":{"parts":[60,6],"promptText":"Join the parts 60 and 6. What is the whole?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-136",
@@ -6292,7 +6292,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":2,"whole":5,"promptText":"___ and 2 make 5. What is the missing number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":2,"whole":5,"promptText":"___ and 2 make 5. What is the missing number?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-171",
@@ -6302,7 +6302,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":4,"whole":6,"promptText":"___ and 4 make 6. What is the missing number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":4,"whole":6,"promptText":"___ and 4 make 6. What is the missing number?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-172",
@@ -6312,7 +6312,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":3,"whole":7,"promptText":"___ and 3 make 7. What is the missing number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":3,"whole":7,"promptText":"___ and 3 make 7. What is the missing number?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-173",
@@ -6322,7 +6322,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"___ and 5 make 8. What is the missing number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"___ and 5 make 8. What is the missing number?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-174",
@@ -6332,7 +6332,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":6,"whole":9,"promptText":"___ and 6 make 9. What is the missing number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":6,"whole":9,"promptText":"___ and 6 make 9. What is the missing number?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-175",
@@ -6342,7 +6342,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"Some number and 7 go together to make 10. What is that number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"Some number and 7 go together to make 10. What is that number?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-176",
@@ -6352,7 +6352,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":1,"whole":6,"promptText":"Some number and 1 go together to make 6. What is that number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":1,"whole":6,"promptText":"Some number and 1 go together to make 6. What is that number?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-177",
@@ -6362,7 +6362,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":5,"whole":7,"promptText":"Some number and 5 go together to make 7. What is that number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":5,"whole":7,"promptText":"Some number and 5 go together to make 7. What is that number?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-178",
@@ -6372,7 +6372,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":2,"whole":8,"promptText":"Some number and 2 go together to make 8. What is that number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":2,"whole":8,"promptText":"Some number and 2 go together to make 8. What is that number?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-179",
@@ -6382,7 +6382,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":4,"whole":9,"promptText":"Some number and 4 go together to make 9. What is that number?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":4,"whole":9,"promptText":"Some number and 4 go together to make 9. What is that number?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-180",
@@ -6392,7 +6392,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"10 is 3 and ___. Fill in the blank."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"10 is 3 and ___. Fill in the blank."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-181",
@@ -6402,7 +6402,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":1,"whole":5,"promptText":"5 is 1 and ___. Fill in the blank."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":1,"whole":5,"promptText":"5 is 1 and ___. Fill in the blank."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-182",
@@ -6412,7 +6412,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":6,"whole":8,"promptText":"8 is 6 and ___. Fill in the blank."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":6,"whole":8,"promptText":"8 is 6 and ___. Fill in the blank."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-183",
@@ -6422,7 +6422,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":2,"whole":9,"promptText":"9 is 2 and ___. Fill in the blank."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":2,"whole":9,"promptText":"9 is 2 and ___. Fill in the blank."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-184",
@@ -6432,7 +6432,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"10 is 6 and ___. Fill in the blank."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"10 is 6 and ___. Fill in the blank."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-185",
@@ -6442,7 +6442,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":4,"whole":7,"promptText":"A whole of 7 hides two parts. One part is 4 — name the other part."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":4,"whole":7,"promptText":"A whole of 7 hides two parts. One part is 4 — name the other part."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-186",
@@ -6452,7 +6452,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":2,"whole":6,"promptText":"A whole of 6 hides two parts. One part is 2 — name the other part."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":2,"whole":6,"promptText":"A whole of 6 hides two parts. One part is 2 — name the other part."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-187",
@@ -6462,7 +6462,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":8,"whole":9,"promptText":"A whole of 9 hides two parts. One part is 8 — name the other part."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":8,"whole":9,"promptText":"A whole of 9 hides two parts. One part is 8 — name the other part."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-188",
@@ -6472,7 +6472,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":1,"whole":10,"promptText":"A whole of 10 hides two parts. One part is 1 — name the other part."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":1,"whole":10,"promptText":"A whole of 10 hides two parts. One part is 1 — name the other part."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-189",
@@ -6482,7 +6482,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"A whole of 8 hides two parts. One part is 3 — name the other part."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"A whole of 8 hides two parts. One part is 3 — name the other part."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-190",
@@ -6492,7 +6492,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":1,"whole":7,"promptText":"Together with 1, a hidden part makes 7. What is the hidden part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":1,"whole":7,"promptText":"Together with 1, a hidden part makes 7. What is the hidden part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-191",
@@ -6502,7 +6502,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":8,"whole":10,"promptText":"Together with 8, a hidden part makes 10. What is the hidden part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":8,"whole":10,"promptText":"Together with 8, a hidden part makes 10. What is the hidden part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-192",
@@ -6512,7 +6512,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":3,"whole":9,"promptText":"Together with 3, a hidden part makes 9. What is the hidden part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":3,"whole":9,"promptText":"Together with 3, a hidden part makes 9. What is the hidden part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-193",
@@ -6522,7 +6522,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":5,"whole":6,"promptText":"Together with 5, a hidden part makes 6. What is the hidden part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":5,"whole":6,"promptText":"Together with 5, a hidden part makes 6. What is the hidden part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-194",
@@ -6532,7 +6532,7 @@ export const ITEMS = [
     structureType: "bondSentence",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":3,"whole":5,"promptText":"Together with 3, a hidden part makes 5. What is the hidden part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":3,"whole":5,"promptText":"Together with 3, a hidden part makes 5. What is the hidden part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-195",
@@ -6892,7 +6892,7 @@ export const ITEMS = [
     structureType: "teenBondSentence",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":9,"whole":13,"promptText":"___ plus 9 makes 13. Find the missing number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":9,"whole":13,"promptText":"___ plus 9 makes 13. Find the missing number."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-231",
@@ -6902,7 +6902,7 @@ export const ITEMS = [
     structureType: "teenBondSentence",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":7,"whole":15,"promptText":"___ plus 7 makes 15. Find the missing number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":7,"whole":15,"promptText":"___ plus 7 makes 15. Find the missing number."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-232",
@@ -6912,7 +6912,7 @@ export const ITEMS = [
     structureType: "teenBondSentence",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":8,"whole":17,"promptText":"___ plus 8 makes 17. Find the missing number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":8,"whole":17,"promptText":"___ plus 8 makes 17. Find the missing number."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-233",
@@ -6922,7 +6922,7 @@ export const ITEMS = [
     structureType: "teenBondSentence",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":5,"whole":12,"promptText":"___ plus 5 makes 12. Find the missing number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":5,"whole":12,"promptText":"___ plus 5 makes 12. Find the missing number."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-234",
@@ -6932,7 +6932,7 @@ export const ITEMS = [
     structureType: "teenBondSentence",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":6,"whole":14,"promptText":"___ plus 6 makes 14. Find the missing number."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":6,"whole":14,"promptText":"___ plus 6 makes 14. Find the missing number."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-235",
@@ -6942,7 +6942,7 @@ export const ITEMS = [
     structureType: "teenBondSentence",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":9,"whole":16,"promptText":"16 splits into 9 and one more part. How big is that part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":9,"whole":16,"promptText":"16 splits into 9 and one more part. How big is that part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-236",
@@ -6952,7 +6952,7 @@ export const ITEMS = [
     structureType: "teenBondSentence",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"part":7,"whole":18,"promptText":"18 splits into 7 and one more part. How big is that part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"part":7,"whole":18,"promptText":"18 splits into 7 and one more part. How big is that part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-237",
@@ -6962,7 +6962,7 @@ export const ITEMS = [
     structureType: "teenBondSentence",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":4,"whole":13,"promptText":"13 splits into 4 and one more part. How big is that part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":4,"whole":13,"promptText":"13 splits into 4 and one more part. How big is that part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-238",
@@ -6972,7 +6972,7 @@ export const ITEMS = [
     structureType: "teenBondSentence",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":9,"whole":15,"promptText":"15 splits into 9 and one more part. How big is that part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":9,"whole":15,"promptText":"15 splits into 9 and one more part. How big is that part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-239",
@@ -6982,7 +6982,7 @@ export const ITEMS = [
     structureType: "teenBondSentence",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":8,"whole":11,"promptText":"11 splits into 8 and one more part. How big is that part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":8,"whole":11,"promptText":"11 splits into 8 and one more part. How big is that part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-240",
@@ -6992,7 +6992,7 @@ export const ITEMS = [
     structureType: "teenBondSentence",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":3,"whole":12,"promptText":"To reach 12, the number 3 needs a partner. What is the partner?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":3,"whole":12,"promptText":"To reach 12, the number 3 needs a partner. What is the partner?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-241",
@@ -7002,7 +7002,7 @@ export const ITEMS = [
     structureType: "teenBondSentence",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":7,"whole":16,"promptText":"To reach 16, the number 7 needs a partner. What is the partner?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":7,"whole":16,"promptText":"To reach 16, the number 7 needs a partner. What is the partner?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-242",
@@ -7012,7 +7012,7 @@ export const ITEMS = [
     structureType: "teenBondSentence",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":5,"whole":14,"promptText":"To reach 14, the number 5 needs a partner. What is the partner?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":5,"whole":14,"promptText":"To reach 14, the number 5 needs a partner. What is the partner?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-243",
@@ -7022,7 +7022,7 @@ export const ITEMS = [
     structureType: "teenBondSentence",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":9,"whole":17,"promptText":"To reach 17, the number 9 needs a partner. What is the partner?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":9,"whole":17,"promptText":"To reach 17, the number 9 needs a partner. What is the partner?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-244",
@@ -7032,7 +7032,7 @@ export const ITEMS = [
     structureType: "teenBondSentence",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":2,"whole":11,"promptText":"To reach 11, the number 2 needs a partner. What is the partner?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":2,"whole":11,"promptText":"To reach 11, the number 2 needs a partner. What is the partner?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-245",
@@ -7042,7 +7042,7 @@ export const ITEMS = [
     structureType: "errorPartWholeSwap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":6,"whole":14,"promptText":"Sam saw a bond with whole 14 and part 6, and wrote 20. What is the correct missing part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":6,"whole":14,"promptText":"Sam saw a bond with whole 14 and part 6, and wrote 20. What is the correct missing part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-246",
@@ -7052,7 +7052,7 @@ export const ITEMS = [
     structureType: "errorPartWholeSwap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":8,"whole":15,"promptText":"Mina saw a bond with whole 15 and part 8, and wrote 23. What is the correct missing part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":8,"whole":15,"promptText":"Mina saw a bond with whole 15 and part 8, and wrote 23. What is the correct missing part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-247",
@@ -7062,7 +7062,7 @@ export const ITEMS = [
     structureType: "errorPartWholeSwap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":4,"whole":12,"promptText":"Luca saw a bond with whole 12 and part 4, and wrote 16. What is the correct missing part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":4,"whole":12,"promptText":"Luca saw a bond with whole 12 and part 4, and wrote 16. What is the correct missing part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-248",
@@ -7072,7 +7072,7 @@ export const ITEMS = [
     structureType: "errorPartWholeSwap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":7,"whole":16,"promptText":"Nia saw a bond with whole 16 and part 7, and wrote 23. What is the correct missing part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":7,"whole":16,"promptText":"Nia saw a bond with whole 16 and part 7, and wrote 23. What is the correct missing part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-249",
@@ -7082,7 +7082,7 @@ export const ITEMS = [
     structureType: "errorPartWholeSwap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":5,"whole":13,"promptText":"Theo saw a bond with whole 13 and part 5, and wrote 18. What is the correct missing part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":5,"whole":13,"promptText":"Theo saw a bond with whole 13 and part 5, and wrote 18. What is the correct missing part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-250",
@@ -7092,7 +7092,7 @@ export const ITEMS = [
     structureType: "errorPartWholeSwap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":9,"whole":17,"promptText":"Ava added 17 + 9 to finish a bond with whole 17 and part 9. That gave 26, which is wrong. What is the right part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":9,"whole":17,"promptText":"Ava added 17 + 9 to finish a bond with whole 17 and part 9. That gave 26, which is wrong. What is the right part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-251",
@@ -7102,7 +7102,7 @@ export const ITEMS = [
     structureType: "errorPartWholeSwap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":11,"whole":18,"promptText":"Kai added 18 + 11 to finish a bond with whole 18 and part 11. That gave 29, which is wrong. What is the right part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":11,"whole":18,"promptText":"Kai added 18 + 11 to finish a bond with whole 18 and part 11. That gave 29, which is wrong. What is the right part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-252",
@@ -7112,7 +7112,7 @@ export const ITEMS = [
     structureType: "errorPartWholeSwap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":7,"whole":12,"promptText":"Ida added 12 + 7 to finish a bond with whole 12 and part 7. That gave 19, which is wrong. What is the right part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":7,"whole":12,"promptText":"Ida added 12 + 7 to finish a bond with whole 12 and part 7. That gave 19, which is wrong. What is the right part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-253",
@@ -7122,7 +7122,7 @@ export const ITEMS = [
     structureType: "errorPartWholeSwap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":6,"whole":15,"promptText":"Omar added 15 + 6 to finish a bond with whole 15 and part 6. That gave 21, which is wrong. What is the right part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":6,"whole":15,"promptText":"Omar added 15 + 6 to finish a bond with whole 15 and part 6. That gave 21, which is wrong. What is the right part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-254",
@@ -7132,7 +7132,7 @@ export const ITEMS = [
     structureType: "errorPartWholeSwap",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":8,"whole":13,"promptText":"June added 13 + 8 to finish a bond with whole 13 and part 8. That gave 21, which is wrong. What is the right part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":8,"whole":13,"promptText":"June added 13 + 8 to finish a bond with whole 13 and part 8. That gave 21, which is wrong. What is the right part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-255",
@@ -7142,7 +7142,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":33,"whole":43,"promptText":"Split 43 into 33 and one more part. What is the other part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":33,"whole":43,"promptText":"Split 43 into 33 and one more part. What is the other part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-256",
@@ -7152,7 +7152,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":46,"whole":56,"promptText":"Split 56 into 46 and one more part. What is the other part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":46,"whole":56,"promptText":"Split 56 into 46 and one more part. What is the other part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-257",
@@ -7162,7 +7162,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":42,"whole":62,"promptText":"Split 62 into 42 and one more part. What is the other part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":42,"whole":62,"promptText":"Split 62 into 42 and one more part. What is the other part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-258",
@@ -7172,7 +7172,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":55,"whole":75,"promptText":"Split 75 into 55 and one more part. What is the other part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":55,"whole":75,"promptText":"Split 75 into 55 and one more part. What is the other part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-259",
@@ -7182,7 +7182,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":18,"whole":38,"promptText":"Split 38 into 18 and one more part. What is the other part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":18,"whole":38,"promptText":"Split 38 into 18 and one more part. What is the other part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-260",
@@ -7192,7 +7192,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":64,"whole":84,"promptText":"84 breaks into 64 and ___. What number completes the split?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":64,"whole":84,"promptText":"84 breaks into 64 and ___. What number completes the split?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-261",
@@ -7202,7 +7202,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":71,"whole":91,"promptText":"91 breaks into 71 and ___. What number completes the split?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":71,"whole":91,"promptText":"91 breaks into 71 and ___. What number completes the split?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-262",
@@ -7212,7 +7212,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":17,"whole":27,"promptText":"27 breaks into 17 and ___. What number completes the split?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":17,"whole":27,"promptText":"27 breaks into 17 and ___. What number completes the split?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-263",
@@ -7222,7 +7222,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":45,"whole":65,"promptText":"65 breaks into 45 and ___. What number completes the split?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":45,"whole":65,"promptText":"65 breaks into 45 and ___. What number completes the split?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-264",
@@ -7232,7 +7232,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":43,"whole":53,"promptText":"53 breaks into 43 and ___. What number completes the split?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":43,"whole":53,"promptText":"53 breaks into 43 and ___. What number completes the split?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-265",
@@ -7242,7 +7242,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":58,"whole":78,"promptText":"Take 58 out of 78. How much is left in the other part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":58,"whole":78,"promptText":"Take 58 out of 78. How much is left in the other part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-266",
@@ -7252,7 +7252,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":72,"whole":82,"promptText":"Take 72 out of 82. How much is left in the other part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":72,"whole":82,"promptText":"Take 72 out of 82. How much is left in the other part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-267",
@@ -7262,7 +7262,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":26,"whole":36,"promptText":"Take 26 out of 36. How much is left in the other part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":26,"whole":36,"promptText":"Take 26 out of 36. How much is left in the other part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-268",
@@ -7272,7 +7272,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":29,"whole":49,"promptText":"Take 29 out of 49. How much is left in the other part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":29,"whole":49,"promptText":"Take 29 out of 49. How much is left in the other part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-269",
@@ -7282,7 +7282,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":57,"whole":67,"promptText":"Take 57 out of 67. How much is left in the other part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":57,"whole":67,"promptText":"Take 57 out of 67. How much is left in the other part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-270",
@@ -7292,7 +7292,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":74,"whole":94,"promptText":"A bond splits 94 so one part is 74. How big is the second part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":74,"whole":94,"promptText":"A bond splits 94 so one part is 74. How big is the second part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-271",
@@ -7302,7 +7302,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":38,"whole":58,"promptText":"A bond splits 58 so one part is 38. How big is the second part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":38,"whole":58,"promptText":"A bond splits 58 so one part is 38. How big is the second part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-272",
@@ -7312,7 +7312,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":63,"whole":73,"promptText":"A bond splits 73 so one part is 63. How big is the second part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":63,"whole":73,"promptText":"A bond splits 73 so one part is 63. How big is the second part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-273",
@@ -7322,7 +7322,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":66,"whole":86,"promptText":"A bond splits 86 so one part is 66. How big is the second part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":66,"whole":86,"promptText":"A bond splits 86 so one part is 66. How big is the second part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-274",
@@ -7332,7 +7332,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":25,"whole":45,"promptText":"A bond splits 45 so one part is 25. How big is the second part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":25,"whole":45,"promptText":"A bond splits 45 so one part is 25. How big is the second part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-275",
@@ -7342,7 +7342,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":32,"whole":52,"promptText":"One branch of a 52-bond holds 32. What does the other branch hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":32,"whole":52,"promptText":"One branch of a 52-bond holds 32. What does the other branch hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-276",
@@ -7352,7 +7352,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":44,"whole":64,"promptText":"One branch of a 64-bond holds 44. What does the other branch hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":44,"whole":64,"promptText":"One branch of a 64-bond holds 44. What does the other branch hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-277",
@@ -7362,7 +7362,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":66,"whole":76,"promptText":"One branch of a 76-bond holds 66. What does the other branch hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":66,"whole":76,"promptText":"One branch of a 76-bond holds 66. What does the other branch hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-278",
@@ -7372,7 +7372,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":68,"whole":88,"promptText":"One branch of a 88-bond holds 68. What does the other branch hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":68,"whole":88,"promptText":"One branch of a 88-bond holds 68. What does the other branch hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-279",
@@ -7382,7 +7382,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":19,"whole":39,"promptText":"One branch of a 39-bond holds 19. What does the other branch hold?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":19,"whole":39,"promptText":"One branch of a 39-bond holds 19. What does the other branch hold?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-280",
@@ -7392,7 +7392,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":37,"whole":57,"promptText":"57 = 37 + one hidden part. Name the hidden part."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":37,"whole":57,"promptText":"57 = 37 + one hidden part. Name the hidden part."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-281",
@@ -7402,7 +7402,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":49,"whole":69,"promptText":"69 = 49 + one hidden part. Name the hidden part."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":49,"whole":69,"promptText":"69 = 49 + one hidden part. Name the hidden part."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-282",
@@ -7412,7 +7412,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":61,"whole":81,"promptText":"81 = 61 + one hidden part. Name the hidden part."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":61,"whole":81,"promptText":"81 = 61 + one hidden part. Name the hidden part."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-283",
@@ -7422,7 +7422,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":83,"whole":93,"promptText":"93 = 83 + one hidden part. Name the hidden part."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":83,"whole":93,"promptText":"93 = 83 + one hidden part. Name the hidden part."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-284",
@@ -7432,7 +7432,7 @@ export const ITEMS = [
     structureType: "nonCanonicalSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":27,"whole":47,"promptText":"47 = 27 + one hidden part. Name the hidden part."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":27,"whole":47,"promptText":"47 = 27 + one hidden part. Name the hidden part."},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-285",
@@ -7442,7 +7442,7 @@ export const ITEMS = [
     structureType: "errorAtMagnitude",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":15,"whole":40,"promptText":"Nia filled a bond: whole 40, part 15, other part 55. The answer 55 is bigger than the whole! What is the correct part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":15,"whole":40,"promptText":"Nia filled a bond: whole 40, part 15, other part 55. The answer 55 is bigger than the whole! What is the correct part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-286",
@@ -7452,7 +7452,7 @@ export const ITEMS = [
     structureType: "errorAtMagnitude",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":35,"whole":60,"promptText":"Theo filled a bond: whole 60, part 35, other part 95. The answer 95 is bigger than the whole! What is the correct part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":35,"whole":60,"promptText":"Theo filled a bond: whole 60, part 35, other part 95. The answer 95 is bigger than the whole! What is the correct part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-287",
@@ -7462,7 +7462,7 @@ export const ITEMS = [
     structureType: "errorAtMagnitude",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":30,"display":{"part":20,"whole":50,"promptText":"Ava filled a bond: whole 50, part 20, other part 70. The answer 70 is bigger than the whole! What is the correct part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":30,"display":{"part":20,"whole":50,"promptText":"Ava filled a bond: whole 50, part 20, other part 70. The answer 70 is bigger than the whole! What is the correct part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-288",
@@ -7472,7 +7472,7 @@ export const ITEMS = [
     structureType: "errorAtMagnitude",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"part":45,"whole":80,"promptText":"Kai filled a bond: whole 80, part 45, other part 125. The answer 125 is bigger than the whole! What is the correct part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"part":45,"whole":80,"promptText":"Kai filled a bond: whole 80, part 45, other part 125. The answer 125 is bigger than the whole! What is the correct part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-289",
@@ -7482,7 +7482,7 @@ export const ITEMS = [
     structureType: "errorAtMagnitude",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":45,"display":{"part":25,"whole":70,"promptText":"Ida filled a bond: whole 70, part 25, other part 95. The answer 95 is bigger than the whole! What is the correct part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":45,"display":{"part":25,"whole":70,"promptText":"Ida filled a bond: whole 70, part 25, other part 95. The answer 95 is bigger than the whole! What is the correct part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-290",
@@ -7492,7 +7492,7 @@ export const ITEMS = [
     structureType: "errorAtMagnitude",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"part":55,"whole":90,"promptText":"A bond shows whole 90 and part 55. Omar answered 145. A part can never be bigger than its whole! What is the true missing part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"part":55,"whole":90,"promptText":"A bond shows whole 90 and part 55. Omar answered 145. A part can never be bigger than its whole! What is the true missing part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-291",
@@ -7502,7 +7502,7 @@ export const ITEMS = [
     structureType: "errorAtMagnitude",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":60,"display":{"part":40,"whole":100,"promptText":"A bond shows whole 100 and part 40. June answered 140. A part can never be bigger than its whole! What is the true missing part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":60,"display":{"part":40,"whole":100,"promptText":"A bond shows whole 100 and part 40. June answered 140. A part can never be bigger than its whole! What is the true missing part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-292",
@@ -7512,7 +7512,7 @@ export const ITEMS = [
     structureType: "errorAtMagnitude",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"part":12,"whole":30,"promptText":"A bond shows whole 30 and part 12. Sam answered 42. A part can never be bigger than its whole! What is the true missing part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"part":12,"whole":30,"promptText":"A bond shows whole 30 and part 12. Sam answered 42. A part can never be bigger than its whole! What is the true missing part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-293",
@@ -7522,7 +7522,7 @@ export const ITEMS = [
     structureType: "errorAtMagnitude",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"part":65,"whole":100,"promptText":"A bond shows whole 100 and part 65. Mina answered 165. A part can never be bigger than its whole! What is the true missing part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"part":65,"whole":100,"promptText":"A bond shows whole 100 and part 65. Mina answered 165. A part can never be bigger than its whole! What is the true missing part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-294",
@@ -7532,7 +7532,7 @@ export const ITEMS = [
     structureType: "errorAtMagnitude",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":50,"display":{"part":30,"whole":80,"promptText":"A bond shows whole 80 and part 30. Luca answered 110. A part can never be bigger than its whole! What is the true missing part?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":50,"display":{"part":30,"whole":80,"promptText":"A bond shows whole 80 and part 30. Luca answered 110. A part can never be bigger than its whole! What is the true missing part?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-conc-b0820-295",
@@ -10812,7 +10812,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":950,"display":{"part":50,"whole":1000,"promptText":"1000 = 50 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":950,"display":{"part":50,"whole":1000,"promptText":"1000 = 50 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-168",
@@ -10822,7 +10822,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":900,"display":{"part":100,"whole":1000,"promptText":"1000 = 100 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":900,"display":{"part":100,"whole":1000,"promptText":"1000 = 100 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-169",
@@ -10832,7 +10832,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":850,"display":{"part":150,"whole":1000,"promptText":"1000 = 150 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":850,"display":{"part":150,"whole":1000,"promptText":"1000 = 150 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-170",
@@ -10842,7 +10842,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":800,"display":{"part":200,"whole":1000,"promptText":"1000 = 200 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":800,"display":{"part":200,"whole":1000,"promptText":"1000 = 200 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-171",
@@ -10852,7 +10852,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":750,"display":{"part":250,"whole":1000,"promptText":"1000 = 250 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":750,"display":{"part":250,"whole":1000,"promptText":"1000 = 250 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-172",
@@ -10862,7 +10862,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":700,"display":{"part":300,"whole":1000,"promptText":"1000 = 300 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":700,"display":{"part":300,"whole":1000,"promptText":"1000 = 300 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-173",
@@ -10872,7 +10872,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":650,"display":{"part":350,"whole":1000,"promptText":"1000 = 350 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":650,"display":{"part":350,"whole":1000,"promptText":"1000 = 350 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-174",
@@ -10882,7 +10882,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":600,"display":{"part":400,"whole":1000,"promptText":"1000 = 400 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":600,"display":{"part":400,"whole":1000,"promptText":"1000 = 400 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-175",
@@ -10892,7 +10892,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":550,"display":{"part":450,"whole":1000,"promptText":"1000 = 450 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":550,"display":{"part":450,"whole":1000,"promptText":"1000 = 450 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-176",
@@ -10902,7 +10902,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":500,"display":{"part":500,"whole":1000,"promptText":"1000 = 500 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":500,"display":{"part":500,"whole":1000,"promptText":"1000 = 500 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-177",
@@ -10912,7 +10912,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":450,"display":{"part":550,"whole":1000,"promptText":"1000 = 550 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":450,"display":{"part":550,"whole":1000,"promptText":"1000 = 550 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-178",
@@ -10922,7 +10922,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":400,"display":{"part":600,"whole":1000,"promptText":"1000 = 600 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":400,"display":{"part":600,"whole":1000,"promptText":"1000 = 600 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-179",
@@ -10932,7 +10932,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":350,"display":{"part":650,"whole":1000,"promptText":"1000 = 650 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":350,"display":{"part":650,"whole":1000,"promptText":"1000 = 650 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-180",
@@ -10942,7 +10942,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":300,"display":{"part":700,"whole":1000,"promptText":"1000 = 700 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":300,"display":{"part":700,"whole":1000,"promptText":"1000 = 700 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-181",
@@ -10952,7 +10952,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":250,"display":{"part":750,"whole":1000,"promptText":"1000 = 750 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":250,"display":{"part":750,"whole":1000,"promptText":"1000 = 750 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-182",
@@ -10962,7 +10962,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":200,"display":{"part":800,"whole":1000,"promptText":"1000 = 800 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":200,"display":{"part":800,"whole":1000,"promptText":"1000 = 800 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-183",
@@ -10972,7 +10972,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":150,"display":{"part":850,"whole":1000,"promptText":"1000 = 850 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":150,"display":{"part":850,"whole":1000,"promptText":"1000 = 850 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-184",
@@ -10982,7 +10982,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":100,"display":{"part":900,"whole":1000,"promptText":"1000 = 900 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":100,"display":{"part":900,"whole":1000,"promptText":"1000 = 900 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-185",
@@ -10992,7 +10992,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":50,"display":{"part":950,"whole":1000,"promptText":"1000 = 950 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":50,"display":{"part":950,"whole":1000,"promptText":"1000 = 950 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-186",
@@ -11002,7 +11002,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"part":10,"whole":21,"promptText":"21 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"part":10,"whole":21,"promptText":"21 = ? + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-187",
@@ -11012,7 +11012,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"part":10,"whole":26,"promptText":"26 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"part":10,"whole":26,"promptText":"26 = ? + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-188",
@@ -11022,7 +11022,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":24,"display":{"part":10,"whole":34,"promptText":"34 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":24,"display":{"part":10,"whole":34,"promptText":"34 = ? + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-189",
@@ -11032,7 +11032,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":29,"display":{"part":10,"whole":39,"promptText":"39 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":29,"display":{"part":10,"whole":39,"promptText":"39 = ? + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-190",
@@ -11042,7 +11042,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"part":10,"whole":45,"promptText":"45 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"part":10,"whole":45,"promptText":"45 = ? + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-191",
@@ -11052,7 +11052,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":42,"display":{"part":10,"whole":52,"promptText":"52 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":42,"display":{"part":10,"whole":52,"promptText":"52 = ? + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-192",
@@ -11062,7 +11062,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":48,"display":{"part":10,"whole":58,"promptText":"58 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":48,"display":{"part":10,"whole":58,"promptText":"58 = ? + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-193",
@@ -11072,7 +11072,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":53,"display":{"part":10,"whole":63,"promptText":"63 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":53,"display":{"part":10,"whole":63,"promptText":"63 = ? + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-194",
@@ -11082,7 +11082,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":57,"display":{"part":10,"whole":67,"promptText":"67 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":57,"display":{"part":10,"whole":67,"promptText":"67 = ? + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-195",
@@ -11092,7 +11092,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":64,"display":{"part":10,"whole":74,"promptText":"74 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":64,"display":{"part":10,"whole":74,"promptText":"74 = ? + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-196",
@@ -11102,7 +11102,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":68,"display":{"part":10,"whole":78,"promptText":"78 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":68,"display":{"part":10,"whole":78,"promptText":"78 = ? + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-197",
@@ -11112,7 +11112,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"part":10,"whole":85,"promptText":"85 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"part":10,"whole":85,"promptText":"85 = ? + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-198",
@@ -11122,7 +11122,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":79,"display":{"part":10,"whole":89,"promptText":"89 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":79,"display":{"part":10,"whole":89,"promptText":"89 = ? + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-199",
@@ -11132,7 +11132,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":82,"display":{"part":10,"whole":92,"promptText":"92 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":82,"display":{"part":10,"whole":92,"promptText":"92 = ? + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-200",
@@ -11142,7 +11142,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":86,"display":{"part":10,"whole":96,"promptText":"96 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":86,"display":{"part":10,"whole":96,"promptText":"96 = ? + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-201",
@@ -11392,7 +11392,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"parts":[0,2],"promptText":"? = 0 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"parts":[0,2],"promptText":"? = 0 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-226",
@@ -11402,7 +11402,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"parts":[2,0],"promptText":"? = 2 + 0"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"parts":[2,0],"promptText":"? = 2 + 0"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-227",
@@ -11412,7 +11412,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"parts":[1,1],"promptText":"? = 1 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"parts":[1,1],"promptText":"? = 1 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-228",
@@ -11422,7 +11422,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"parts":[0,3],"promptText":"? = 0 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"parts":[0,3],"promptText":"? = 0 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-229",
@@ -11432,7 +11432,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"parts":[3,0],"promptText":"? = 3 + 0"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"parts":[3,0],"promptText":"? = 3 + 0"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-230",
@@ -11442,7 +11442,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"parts":[1,2],"promptText":"? = 1 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"parts":[1,2],"promptText":"? = 1 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-231",
@@ -11452,7 +11452,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"parts":[2,1],"promptText":"? = 2 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"parts":[2,1],"promptText":"? = 2 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-232",
@@ -11462,7 +11462,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"parts":[0,4],"promptText":"? = 0 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"parts":[0,4],"promptText":"? = 0 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-233",
@@ -11472,7 +11472,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"parts":[4,0],"promptText":"? = 4 + 0"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"parts":[4,0],"promptText":"? = 4 + 0"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-234",
@@ -11482,7 +11482,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"parts":[1,3],"promptText":"? = 1 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"parts":[1,3],"promptText":"? = 1 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-235",
@@ -11492,7 +11492,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"parts":[3,1],"promptText":"? = 3 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"parts":[3,1],"promptText":"? = 3 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-236",
@@ -11502,7 +11502,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"parts":[2,2],"promptText":"? = 2 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"parts":[2,2],"promptText":"? = 2 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-237",
@@ -11512,7 +11512,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[0,5],"promptText":"? = 0 + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[0,5],"promptText":"? = 0 + 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-238",
@@ -11522,7 +11522,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[5,0],"promptText":"? = 5 + 0"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[5,0],"promptText":"? = 5 + 0"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-239",
@@ -11532,7 +11532,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[1,4],"promptText":"? = 1 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[1,4],"promptText":"? = 1 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-240",
@@ -11542,7 +11542,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[4,1],"promptText":"? = 4 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[4,1],"promptText":"? = 4 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-241",
@@ -11552,7 +11552,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[2,3],"promptText":"? = 2 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[2,3],"promptText":"? = 2 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-242",
@@ -11562,7 +11562,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[3,2],"promptText":"? = 3 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"parts":[3,2],"promptText":"? = 3 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-243",
@@ -11572,7 +11572,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[0,6],"promptText":"? = 0 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[0,6],"promptText":"? = 0 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-244",
@@ -11582,7 +11582,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[6,0],"promptText":"? = 6 + 0"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[6,0],"promptText":"? = 6 + 0"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-245",
@@ -11592,7 +11592,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[1,5],"promptText":"? = 1 + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[1,5],"promptText":"? = 1 + 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-246",
@@ -11602,7 +11602,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[5,1],"promptText":"? = 5 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[5,1],"promptText":"? = 5 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-247",
@@ -11612,7 +11612,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[2,4],"promptText":"? = 2 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[2,4],"promptText":"? = 2 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-248",
@@ -11622,7 +11622,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[4,2],"promptText":"? = 4 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[4,2],"promptText":"? = 4 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-249",
@@ -11632,7 +11632,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[3,3],"promptText":"? = 3 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"parts":[3,3],"promptText":"? = 3 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-250",
@@ -11642,7 +11642,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[0,7],"promptText":"? = 0 + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[0,7],"promptText":"? = 0 + 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-251",
@@ -11652,7 +11652,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[7,0],"promptText":"? = 7 + 0"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[7,0],"promptText":"? = 7 + 0"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-252",
@@ -11662,7 +11662,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[1,6],"promptText":"? = 1 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[1,6],"promptText":"? = 1 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-253",
@@ -11672,7 +11672,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[6,1],"promptText":"? = 6 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[6,1],"promptText":"? = 6 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-254",
@@ -11682,7 +11682,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[2,5],"promptText":"? = 2 + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[2,5],"promptText":"? = 2 + 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-255",
@@ -11692,7 +11692,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[5,2],"promptText":"? = 5 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[5,2],"promptText":"? = 5 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-256",
@@ -11702,7 +11702,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[3,4],"promptText":"? = 3 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[3,4],"promptText":"? = 3 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-257",
@@ -11712,7 +11712,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[4,3],"promptText":"? = 4 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"parts":[4,3],"promptText":"? = 4 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-258",
@@ -11722,7 +11722,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[0,8],"promptText":"? = 0 + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[0,8],"promptText":"? = 0 + 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-259",
@@ -11732,7 +11732,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[8,0],"promptText":"? = 8 + 0"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[8,0],"promptText":"? = 8 + 0"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-260",
@@ -11742,7 +11742,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[1,7],"promptText":"? = 1 + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[1,7],"promptText":"? = 1 + 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-261",
@@ -11752,7 +11752,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[7,1],"promptText":"? = 7 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[7,1],"promptText":"? = 7 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-262",
@@ -11762,7 +11762,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[2,6],"promptText":"? = 2 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[2,6],"promptText":"? = 2 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-263",
@@ -11772,7 +11772,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[6,2],"promptText":"? = 6 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[6,2],"promptText":"? = 6 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-264",
@@ -11782,7 +11782,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[3,5],"promptText":"? = 3 + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[3,5],"promptText":"? = 3 + 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-265",
@@ -11792,7 +11792,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[5,3],"promptText":"? = 5 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[5,3],"promptText":"? = 5 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-266",
@@ -11802,7 +11802,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[4,4],"promptText":"? = 4 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"parts":[4,4],"promptText":"? = 4 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-267",
@@ -11812,7 +11812,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[0,9],"promptText":"? = 0 + 9"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[0,9],"promptText":"? = 0 + 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-268",
@@ -11822,7 +11822,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[9,0],"promptText":"? = 9 + 0"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[9,0],"promptText":"? = 9 + 0"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-269",
@@ -11832,7 +11832,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[1,8],"promptText":"? = 1 + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[1,8],"promptText":"? = 1 + 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-270",
@@ -11842,7 +11842,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[8,1],"promptText":"? = 8 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[8,1],"promptText":"? = 8 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-271",
@@ -11852,7 +11852,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[2,7],"promptText":"? = 2 + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[2,7],"promptText":"? = 2 + 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-272",
@@ -11862,7 +11862,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[7,2],"promptText":"? = 7 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[7,2],"promptText":"? = 7 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-273",
@@ -11872,7 +11872,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[3,6],"promptText":"? = 3 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[3,6],"promptText":"? = 3 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-274",
@@ -11882,7 +11882,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[6,3],"promptText":"? = 6 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[6,3],"promptText":"? = 6 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-275",
@@ -11892,7 +11892,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[4,5],"promptText":"? = 4 + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[4,5],"promptText":"? = 4 + 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-276",
@@ -11902,7 +11902,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[5,4],"promptText":"? = 5 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"parts":[5,4],"promptText":"? = 5 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-277",
@@ -11912,7 +11912,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[0,10],"promptText":"? = 0 + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[0,10],"promptText":"? = 0 + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-278",
@@ -11922,7 +11922,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[10,0],"promptText":"? = 10 + 0"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[10,0],"promptText":"? = 10 + 0"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-279",
@@ -11932,7 +11932,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[1,9],"promptText":"? = 1 + 9"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[1,9],"promptText":"? = 1 + 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-280",
@@ -11942,7 +11942,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[9,1],"promptText":"? = 9 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[9,1],"promptText":"? = 9 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-281",
@@ -11952,7 +11952,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[2,8],"promptText":"? = 2 + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[2,8],"promptText":"? = 2 + 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-282",
@@ -11962,7 +11962,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[8,2],"promptText":"? = 8 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[8,2],"promptText":"? = 8 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-283",
@@ -11972,7 +11972,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[3,7],"promptText":"? = 3 + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[3,7],"promptText":"? = 3 + 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-284",
@@ -11982,7 +11982,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[7,3],"promptText":"? = 7 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[7,3],"promptText":"? = 7 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-285",
@@ -11992,7 +11992,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[4,6],"promptText":"? = 4 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[4,6],"promptText":"? = 4 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-286",
@@ -12002,7 +12002,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[6,4],"promptText":"? = 6 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[6,4],"promptText":"? = 6 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-287",
@@ -12012,7 +12012,7 @@ export const ITEMS = [
     structureType: "wholeFromParts",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[5,5],"promptText":"? = 5 + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"parts":[5,5],"promptText":"? = 5 + 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-288",
@@ -12022,7 +12022,7 @@ export const ITEMS = [
     structureType: "teenFromTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[10,1],"promptText":"? = 10 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[10,1],"promptText":"? = 10 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-289",
@@ -12032,7 +12032,7 @@ export const ITEMS = [
     structureType: "teenFromTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[1,10],"promptText":"? = 1 + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[1,10],"promptText":"? = 1 + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-290",
@@ -12042,7 +12042,7 @@ export const ITEMS = [
     structureType: "teenFromTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[10,2],"promptText":"? = 10 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[10,2],"promptText":"? = 10 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-291",
@@ -12052,7 +12052,7 @@ export const ITEMS = [
     structureType: "teenFromTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[2,10],"promptText":"? = 2 + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[2,10],"promptText":"? = 2 + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-292",
@@ -12062,7 +12062,7 @@ export const ITEMS = [
     structureType: "teenFromTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[10,3],"promptText":"? = 10 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[10,3],"promptText":"? = 10 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-293",
@@ -12072,7 +12072,7 @@ export const ITEMS = [
     structureType: "teenFromTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[3,10],"promptText":"? = 3 + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[3,10],"promptText":"? = 3 + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-294",
@@ -12082,7 +12082,7 @@ export const ITEMS = [
     structureType: "teenFromTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[10,4],"promptText":"? = 10 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[10,4],"promptText":"? = 10 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-295",
@@ -12092,7 +12092,7 @@ export const ITEMS = [
     structureType: "teenFromTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[4,10],"promptText":"? = 4 + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[4,10],"promptText":"? = 4 + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-296",
@@ -12102,7 +12102,7 @@ export const ITEMS = [
     structureType: "teenFromTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[10,5],"promptText":"? = 10 + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[10,5],"promptText":"? = 10 + 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-297",
@@ -12112,7 +12112,7 @@ export const ITEMS = [
     structureType: "teenFromTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[5,10],"promptText":"? = 5 + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[5,10],"promptText":"? = 5 + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-298",
@@ -12122,7 +12122,7 @@ export const ITEMS = [
     structureType: "teenFromTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"parts":[10,6],"promptText":"? = 10 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"parts":[10,6],"promptText":"? = 10 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-299",
@@ -12132,7 +12132,7 @@ export const ITEMS = [
     structureType: "teenFromTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"parts":[6,10],"promptText":"? = 6 + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"parts":[6,10],"promptText":"? = 6 + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-300",
@@ -12142,7 +12142,7 @@ export const ITEMS = [
     structureType: "teenFromTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"parts":[10,7],"promptText":"? = 10 + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"parts":[10,7],"promptText":"? = 10 + 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-301",
@@ -12152,7 +12152,7 @@ export const ITEMS = [
     structureType: "teenFromTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"parts":[7,10],"promptText":"? = 7 + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"parts":[7,10],"promptText":"? = 7 + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-302",
@@ -12162,7 +12162,7 @@ export const ITEMS = [
     structureType: "teenFromTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"parts":[10,8],"promptText":"? = 10 + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"parts":[10,8],"promptText":"? = 10 + 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-303",
@@ -12172,7 +12172,7 @@ export const ITEMS = [
     structureType: "teenFromTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"parts":[8,10],"promptText":"? = 8 + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"parts":[8,10],"promptText":"? = 8 + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-304",
@@ -12182,7 +12182,7 @@ export const ITEMS = [
     structureType: "teenFromTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":19,"display":{"parts":[10,9],"promptText":"? = 10 + 9"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":19,"display":{"parts":[10,9],"promptText":"? = 10 + 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-305",
@@ -12192,7 +12192,7 @@ export const ITEMS = [
     structureType: "teenFromTen",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":19,"display":{"parts":[9,10],"promptText":"? = 9 + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":19,"display":{"parts":[9,10],"promptText":"? = 9 + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-306",
@@ -12202,7 +12202,7 @@ export const ITEMS = [
     structureType: "bigDouble",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[6,6],"promptText":"? = 6 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[6,6],"promptText":"? = 6 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-307",
@@ -12212,7 +12212,7 @@ export const ITEMS = [
     structureType: "bigDouble",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[7,7],"promptText":"? = 7 + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[7,7],"promptText":"? = 7 + 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-308",
@@ -12222,7 +12222,7 @@ export const ITEMS = [
     structureType: "bigDouble",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"parts":[8,8],"promptText":"? = 8 + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"parts":[8,8],"promptText":"? = 8 + 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-309",
@@ -12232,7 +12232,7 @@ export const ITEMS = [
     structureType: "bigDouble",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"parts":[9,9],"promptText":"? = 9 + 9"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"parts":[9,9],"promptText":"? = 9 + 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-310",
@@ -12242,7 +12242,7 @@ export const ITEMS = [
     structureType: "bigDouble",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"parts":[10,10],"promptText":"? = 10 + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"parts":[10,10],"promptText":"? = 10 + 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-311",
@@ -12252,7 +12252,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[9,1,1],"promptText":"? = 9 + 1 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[9,1,1],"promptText":"? = 9 + 1 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-312",
@@ -12262,7 +12262,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[9,1,2],"promptText":"? = 9 + 1 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[9,1,2],"promptText":"? = 9 + 1 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-313",
@@ -12272,7 +12272,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[9,1,3],"promptText":"? = 9 + 1 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[9,1,3],"promptText":"? = 9 + 1 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-314",
@@ -12282,7 +12282,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[9,1,4],"promptText":"? = 9 + 1 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[9,1,4],"promptText":"? = 9 + 1 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-315",
@@ -12292,7 +12292,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[9,1,5],"promptText":"? = 9 + 1 + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[9,1,5],"promptText":"? = 9 + 1 + 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-316",
@@ -12302,7 +12302,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"parts":[9,1,6],"promptText":"? = 9 + 1 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"parts":[9,1,6],"promptText":"? = 9 + 1 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-317",
@@ -12312,7 +12312,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"parts":[9,1,7],"promptText":"? = 9 + 1 + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"parts":[9,1,7],"promptText":"? = 9 + 1 + 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-318",
@@ -12322,7 +12322,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"parts":[9,1,8],"promptText":"? = 9 + 1 + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"parts":[9,1,8],"promptText":"? = 9 + 1 + 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-319",
@@ -12332,7 +12332,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[8,2,1],"promptText":"? = 8 + 2 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[8,2,1],"promptText":"? = 8 + 2 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-320",
@@ -12342,7 +12342,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[8,2,2],"promptText":"? = 8 + 2 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[8,2,2],"promptText":"? = 8 + 2 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-321",
@@ -12352,7 +12352,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[8,2,3],"promptText":"? = 8 + 2 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[8,2,3],"promptText":"? = 8 + 2 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-322",
@@ -12362,7 +12362,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[8,2,4],"promptText":"? = 8 + 2 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[8,2,4],"promptText":"? = 8 + 2 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-323",
@@ -12372,7 +12372,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[8,2,5],"promptText":"? = 8 + 2 + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[8,2,5],"promptText":"? = 8 + 2 + 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-324",
@@ -12382,7 +12382,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"parts":[8,2,6],"promptText":"? = 8 + 2 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"parts":[8,2,6],"promptText":"? = 8 + 2 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-325",
@@ -12392,7 +12392,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"parts":[8,2,7],"promptText":"? = 8 + 2 + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"parts":[8,2,7],"promptText":"? = 8 + 2 + 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-326",
@@ -12402,7 +12402,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"parts":[8,2,8],"promptText":"? = 8 + 2 + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"parts":[8,2,8],"promptText":"? = 8 + 2 + 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-327",
@@ -12412,7 +12412,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[7,3,1],"promptText":"? = 7 + 3 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[7,3,1],"promptText":"? = 7 + 3 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-328",
@@ -12422,7 +12422,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[7,3,2],"promptText":"? = 7 + 3 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[7,3,2],"promptText":"? = 7 + 3 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-329",
@@ -12432,7 +12432,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[7,3,3],"promptText":"? = 7 + 3 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[7,3,3],"promptText":"? = 7 + 3 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-330",
@@ -12442,7 +12442,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[7,3,4],"promptText":"? = 7 + 3 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[7,3,4],"promptText":"? = 7 + 3 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-331",
@@ -12452,7 +12452,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[7,3,5],"promptText":"? = 7 + 3 + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[7,3,5],"promptText":"? = 7 + 3 + 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-332",
@@ -12462,7 +12462,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"parts":[7,3,6],"promptText":"? = 7 + 3 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"parts":[7,3,6],"promptText":"? = 7 + 3 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-333",
@@ -12472,7 +12472,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"parts":[7,3,7],"promptText":"? = 7 + 3 + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"parts":[7,3,7],"promptText":"? = 7 + 3 + 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-334",
@@ -12482,7 +12482,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"parts":[7,3,8],"promptText":"? = 7 + 3 + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"parts":[7,3,8],"promptText":"? = 7 + 3 + 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-335",
@@ -12492,7 +12492,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[6,4,1],"promptText":"? = 6 + 4 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[6,4,1],"promptText":"? = 6 + 4 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-336",
@@ -12502,7 +12502,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[6,4,2],"promptText":"? = 6 + 4 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[6,4,2],"promptText":"? = 6 + 4 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-337",
@@ -12512,7 +12512,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[6,4,3],"promptText":"? = 6 + 4 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[6,4,3],"promptText":"? = 6 + 4 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-338",
@@ -12522,7 +12522,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[6,4,4],"promptText":"? = 6 + 4 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[6,4,4],"promptText":"? = 6 + 4 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-339",
@@ -12532,7 +12532,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[6,4,5],"promptText":"? = 6 + 4 + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[6,4,5],"promptText":"? = 6 + 4 + 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-340",
@@ -12542,7 +12542,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"parts":[6,4,6],"promptText":"? = 6 + 4 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"parts":[6,4,6],"promptText":"? = 6 + 4 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-341",
@@ -12552,7 +12552,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"parts":[6,4,7],"promptText":"? = 6 + 4 + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"parts":[6,4,7],"promptText":"? = 6 + 4 + 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-342",
@@ -12562,7 +12562,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"parts":[6,4,8],"promptText":"? = 6 + 4 + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"parts":[6,4,8],"promptText":"? = 6 + 4 + 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-343",
@@ -12572,7 +12572,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[5,5,1],"promptText":"? = 5 + 5 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"parts":[5,5,1],"promptText":"? = 5 + 5 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-344",
@@ -12582,7 +12582,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[5,5,2],"promptText":"? = 5 + 5 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"parts":[5,5,2],"promptText":"? = 5 + 5 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-345",
@@ -12592,7 +12592,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[5,5,3],"promptText":"? = 5 + 5 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"parts":[5,5,3],"promptText":"? = 5 + 5 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-346",
@@ -12602,7 +12602,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[5,5,4],"promptText":"? = 5 + 5 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"parts":[5,5,4],"promptText":"? = 5 + 5 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-347",
@@ -12612,7 +12612,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[5,5,5],"promptText":"? = 5 + 5 + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"parts":[5,5,5],"promptText":"? = 5 + 5 + 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-348",
@@ -12622,7 +12622,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"parts":[5,5,6],"promptText":"? = 5 + 5 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"parts":[5,5,6],"promptText":"? = 5 + 5 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-349",
@@ -12632,7 +12632,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"parts":[5,5,7],"promptText":"? = 5 + 5 + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"parts":[5,5,7],"promptText":"? = 5 + 5 + 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-350",
@@ -12642,7 +12642,7 @@ export const ITEMS = [
     structureType: "threeAddendBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"parts":[5,5,8],"promptText":"? = 5 + 5 + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"parts":[5,5,8],"promptText":"? = 5 + 5 + 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-351",
@@ -12652,7 +12652,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":21,"display":{"parts":[20,1],"promptText":"? = 20 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":21,"display":{"parts":[20,1],"promptText":"? = 20 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-352",
@@ -12662,7 +12662,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":22,"display":{"parts":[20,2],"promptText":"? = 20 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":22,"display":{"parts":[20,2],"promptText":"? = 20 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-353",
@@ -12672,7 +12672,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":23,"display":{"parts":[20,3],"promptText":"? = 20 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":23,"display":{"parts":[20,3],"promptText":"? = 20 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-354",
@@ -12682,7 +12682,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":24,"display":{"parts":[20,4],"promptText":"? = 20 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":24,"display":{"parts":[20,4],"promptText":"? = 20 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-355",
@@ -12692,7 +12692,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"parts":[20,5],"promptText":"? = 20 + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"parts":[20,5],"promptText":"? = 20 + 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-356",
@@ -12702,7 +12702,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":26,"display":{"parts":[20,6],"promptText":"? = 20 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":26,"display":{"parts":[20,6],"promptText":"? = 20 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-357",
@@ -12712,7 +12712,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":27,"display":{"parts":[20,7],"promptText":"? = 20 + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":27,"display":{"parts":[20,7],"promptText":"? = 20 + 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-358",
@@ -12722,7 +12722,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":28,"display":{"parts":[20,8],"promptText":"? = 20 + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":28,"display":{"parts":[20,8],"promptText":"? = 20 + 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-359",
@@ -12732,7 +12732,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":29,"display":{"parts":[20,9],"promptText":"? = 20 + 9"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":29,"display":{"parts":[20,9],"promptText":"? = 20 + 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-360",
@@ -12742,7 +12742,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":31,"display":{"parts":[30,1],"promptText":"? = 30 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":31,"display":{"parts":[30,1],"promptText":"? = 30 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-361",
@@ -12752,7 +12752,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"parts":[30,2],"promptText":"? = 30 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":32,"display":{"parts":[30,2],"promptText":"? = 30 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-362",
@@ -12762,7 +12762,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":33,"display":{"parts":[30,3],"promptText":"? = 30 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":33,"display":{"parts":[30,3],"promptText":"? = 30 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-363",
@@ -12772,7 +12772,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":34,"display":{"parts":[30,4],"promptText":"? = 30 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":34,"display":{"parts":[30,4],"promptText":"? = 30 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-364",
@@ -12782,7 +12782,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"parts":[30,5],"promptText":"? = 30 + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"parts":[30,5],"promptText":"? = 30 + 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-365",
@@ -12792,7 +12792,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":36,"display":{"parts":[30,6],"promptText":"? = 30 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":36,"display":{"parts":[30,6],"promptText":"? = 30 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-366",
@@ -12802,7 +12802,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":37,"display":{"parts":[30,7],"promptText":"? = 30 + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":37,"display":{"parts":[30,7],"promptText":"? = 30 + 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-367",
@@ -12812,7 +12812,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":38,"display":{"parts":[30,8],"promptText":"? = 30 + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":38,"display":{"parts":[30,8],"promptText":"? = 30 + 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-368",
@@ -12822,7 +12822,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":39,"display":{"parts":[30,9],"promptText":"? = 30 + 9"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":39,"display":{"parts":[30,9],"promptText":"? = 30 + 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-369",
@@ -12832,7 +12832,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":41,"display":{"parts":[40,1],"promptText":"? = 40 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":41,"display":{"parts":[40,1],"promptText":"? = 40 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-370",
@@ -12842,7 +12842,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":42,"display":{"parts":[40,2],"promptText":"? = 40 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":42,"display":{"parts":[40,2],"promptText":"? = 40 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-371",
@@ -12852,7 +12852,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":43,"display":{"parts":[40,3],"promptText":"? = 40 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":43,"display":{"parts":[40,3],"promptText":"? = 40 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-372",
@@ -12862,7 +12862,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":44,"display":{"parts":[40,4],"promptText":"? = 40 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":44,"display":{"parts":[40,4],"promptText":"? = 40 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-373",
@@ -12872,7 +12872,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":45,"display":{"parts":[40,5],"promptText":"? = 40 + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":45,"display":{"parts":[40,5],"promptText":"? = 40 + 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-374",
@@ -12882,7 +12882,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":46,"display":{"parts":[40,6],"promptText":"? = 40 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":46,"display":{"parts":[40,6],"promptText":"? = 40 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-375",
@@ -12892,7 +12892,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":47,"display":{"parts":[40,7],"promptText":"? = 40 + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":47,"display":{"parts":[40,7],"promptText":"? = 40 + 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-376",
@@ -12902,7 +12902,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":48,"display":{"parts":[40,8],"promptText":"? = 40 + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":48,"display":{"parts":[40,8],"promptText":"? = 40 + 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-377",
@@ -12912,7 +12912,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":49,"display":{"parts":[40,9],"promptText":"? = 40 + 9"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":49,"display":{"parts":[40,9],"promptText":"? = 40 + 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-378",
@@ -12922,7 +12922,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":51,"display":{"parts":[50,1],"promptText":"? = 50 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":51,"display":{"parts":[50,1],"promptText":"? = 50 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-379",
@@ -12932,7 +12932,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":52,"display":{"parts":[50,2],"promptText":"? = 50 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":52,"display":{"parts":[50,2],"promptText":"? = 50 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-380",
@@ -12942,7 +12942,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":53,"display":{"parts":[50,3],"promptText":"? = 50 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":53,"display":{"parts":[50,3],"promptText":"? = 50 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-381",
@@ -12952,7 +12952,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":54,"display":{"parts":[50,4],"promptText":"? = 50 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":54,"display":{"parts":[50,4],"promptText":"? = 50 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-382",
@@ -12962,7 +12962,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":55,"display":{"parts":[50,5],"promptText":"? = 50 + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":55,"display":{"parts":[50,5],"promptText":"? = 50 + 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-383",
@@ -12972,7 +12972,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":56,"display":{"parts":[50,6],"promptText":"? = 50 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":56,"display":{"parts":[50,6],"promptText":"? = 50 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-384",
@@ -12982,7 +12982,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":57,"display":{"parts":[50,7],"promptText":"? = 50 + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":57,"display":{"parts":[50,7],"promptText":"? = 50 + 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-385",
@@ -12992,7 +12992,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":58,"display":{"parts":[50,8],"promptText":"? = 50 + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":58,"display":{"parts":[50,8],"promptText":"? = 50 + 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-386",
@@ -13002,7 +13002,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":59,"display":{"parts":[50,9],"promptText":"? = 50 + 9"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":59,"display":{"parts":[50,9],"promptText":"? = 50 + 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-387",
@@ -13012,7 +13012,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":61,"display":{"parts":[60,1],"promptText":"? = 60 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":61,"display":{"parts":[60,1],"promptText":"? = 60 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-388",
@@ -13022,7 +13022,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":62,"display":{"parts":[60,2],"promptText":"? = 60 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":62,"display":{"parts":[60,2],"promptText":"? = 60 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-389",
@@ -13032,7 +13032,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":63,"display":{"parts":[60,3],"promptText":"? = 60 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":63,"display":{"parts":[60,3],"promptText":"? = 60 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-390",
@@ -13042,7 +13042,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":64,"display":{"parts":[60,4],"promptText":"? = 60 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":64,"display":{"parts":[60,4],"promptText":"? = 60 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-391",
@@ -13052,7 +13052,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":65,"display":{"parts":[60,5],"promptText":"? = 60 + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":65,"display":{"parts":[60,5],"promptText":"? = 60 + 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-392",
@@ -13062,7 +13062,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":66,"display":{"parts":[60,6],"promptText":"? = 60 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":66,"display":{"parts":[60,6],"promptText":"? = 60 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-393",
@@ -13072,7 +13072,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":67,"display":{"parts":[60,7],"promptText":"? = 60 + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":67,"display":{"parts":[60,7],"promptText":"? = 60 + 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-394",
@@ -13082,7 +13082,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":68,"display":{"parts":[60,8],"promptText":"? = 60 + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":68,"display":{"parts":[60,8],"promptText":"? = 60 + 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-395",
@@ -13092,7 +13092,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":69,"display":{"parts":[60,9],"promptText":"? = 60 + 9"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":69,"display":{"parts":[60,9],"promptText":"? = 60 + 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-396",
@@ -13102,7 +13102,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":71,"display":{"parts":[70,1],"promptText":"? = 70 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":71,"display":{"parts":[70,1],"promptText":"? = 70 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-397",
@@ -13112,7 +13112,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":72,"display":{"parts":[70,2],"promptText":"? = 70 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":72,"display":{"parts":[70,2],"promptText":"? = 70 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-398",
@@ -13122,7 +13122,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":73,"display":{"parts":[70,3],"promptText":"? = 70 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":73,"display":{"parts":[70,3],"promptText":"? = 70 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-399",
@@ -13132,7 +13132,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":74,"display":{"parts":[70,4],"promptText":"? = 70 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":74,"display":{"parts":[70,4],"promptText":"? = 70 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-400",
@@ -13142,7 +13142,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"parts":[70,5],"promptText":"? = 70 + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"parts":[70,5],"promptText":"? = 70 + 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-401",
@@ -13152,7 +13152,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":76,"display":{"parts":[70,6],"promptText":"? = 70 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":76,"display":{"parts":[70,6],"promptText":"? = 70 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-402",
@@ -13162,7 +13162,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":77,"display":{"parts":[70,7],"promptText":"? = 70 + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":77,"display":{"parts":[70,7],"promptText":"? = 70 + 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-403",
@@ -13172,7 +13172,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":78,"display":{"parts":[70,8],"promptText":"? = 70 + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":78,"display":{"parts":[70,8],"promptText":"? = 70 + 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-404",
@@ -13182,7 +13182,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":79,"display":{"parts":[70,9],"promptText":"? = 70 + 9"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":79,"display":{"parts":[70,9],"promptText":"? = 70 + 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-405",
@@ -13192,7 +13192,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":81,"display":{"parts":[80,1],"promptText":"? = 80 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":81,"display":{"parts":[80,1],"promptText":"? = 80 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-406",
@@ -13202,7 +13202,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":82,"display":{"parts":[80,2],"promptText":"? = 80 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":82,"display":{"parts":[80,2],"promptText":"? = 80 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-407",
@@ -13212,7 +13212,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":83,"display":{"parts":[80,3],"promptText":"? = 80 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":83,"display":{"parts":[80,3],"promptText":"? = 80 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-408",
@@ -13222,7 +13222,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":84,"display":{"parts":[80,4],"promptText":"? = 80 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":84,"display":{"parts":[80,4],"promptText":"? = 80 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-409",
@@ -13232,7 +13232,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":85,"display":{"parts":[80,5],"promptText":"? = 80 + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":85,"display":{"parts":[80,5],"promptText":"? = 80 + 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-410",
@@ -13242,7 +13242,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":86,"display":{"parts":[80,6],"promptText":"? = 80 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":86,"display":{"parts":[80,6],"promptText":"? = 80 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-411",
@@ -13252,7 +13252,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":87,"display":{"parts":[80,7],"promptText":"? = 80 + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":87,"display":{"parts":[80,7],"promptText":"? = 80 + 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-412",
@@ -13262,7 +13262,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":88,"display":{"parts":[80,8],"promptText":"? = 80 + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":88,"display":{"parts":[80,8],"promptText":"? = 80 + 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-413",
@@ -13272,7 +13272,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":89,"display":{"parts":[80,9],"promptText":"? = 80 + 9"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":89,"display":{"parts":[80,9],"promptText":"? = 80 + 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-414",
@@ -13282,7 +13282,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":91,"display":{"parts":[90,1],"promptText":"? = 90 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":91,"display":{"parts":[90,1],"promptText":"? = 90 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-415",
@@ -13292,7 +13292,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":92,"display":{"parts":[90,2],"promptText":"? = 90 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":92,"display":{"parts":[90,2],"promptText":"? = 90 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-416",
@@ -13302,7 +13302,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":93,"display":{"parts":[90,3],"promptText":"? = 90 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":93,"display":{"parts":[90,3],"promptText":"? = 90 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-417",
@@ -13312,7 +13312,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":94,"display":{"parts":[90,4],"promptText":"? = 90 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":94,"display":{"parts":[90,4],"promptText":"? = 90 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-418",
@@ -13322,7 +13322,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":95,"display":{"parts":[90,5],"promptText":"? = 90 + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":95,"display":{"parts":[90,5],"promptText":"? = 90 + 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-419",
@@ -13332,7 +13332,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":96,"display":{"parts":[90,6],"promptText":"? = 90 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":96,"display":{"parts":[90,6],"promptText":"? = 90 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-420",
@@ -13342,7 +13342,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":97,"display":{"parts":[90,7],"promptText":"? = 90 + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":97,"display":{"parts":[90,7],"promptText":"? = 90 + 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-421",
@@ -13352,7 +13352,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":98,"display":{"parts":[90,8],"promptText":"? = 90 + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":98,"display":{"parts":[90,8],"promptText":"? = 90 + 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-422",
@@ -13362,7 +13362,7 @@ export const ITEMS = [
     structureType: "tensOnesCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":99,"display":{"parts":[90,9],"promptText":"? = 90 + 9"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":99,"display":{"parts":[90,9],"promptText":"? = 90 + 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-423",
@@ -13372,7 +13372,7 @@ export const ITEMS = [
     structureType: "hundredsCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":123,"display":{"parts":[100,20,3],"promptText":"? = 100 + 20 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":123,"display":{"parts":[100,20,3],"promptText":"? = 100 + 20 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-424",
@@ -13382,7 +13382,7 @@ export const ITEMS = [
     structureType: "hundredsCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":235,"display":{"parts":[200,30,5],"promptText":"? = 200 + 30 + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":235,"display":{"parts":[200,30,5],"promptText":"? = 200 + 30 + 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-425",
@@ -13392,7 +13392,7 @@ export const ITEMS = [
     structureType: "hundredsCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":347,"display":{"parts":[300,40,7],"promptText":"? = 300 + 40 + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":347,"display":{"parts":[300,40,7],"promptText":"? = 300 + 40 + 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-426",
@@ -13402,7 +13402,7 @@ export const ITEMS = [
     structureType: "hundredsCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":419,"display":{"parts":[400,10,9],"promptText":"? = 400 + 10 + 9"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":419,"display":{"parts":[400,10,9],"promptText":"? = 400 + 10 + 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-427",
@@ -13412,7 +13412,7 @@ export const ITEMS = [
     structureType: "hundredsCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":562,"display":{"parts":[500,60,2],"promptText":"? = 500 + 60 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":562,"display":{"parts":[500,60,2],"promptText":"? = 500 + 60 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-428",
@@ -13422,7 +13422,7 @@ export const ITEMS = [
     structureType: "hundredsCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":674,"display":{"parts":[600,70,4],"promptText":"? = 600 + 70 + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":674,"display":{"parts":[600,70,4],"promptText":"? = 600 + 70 + 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-429",
@@ -13432,7 +13432,7 @@ export const ITEMS = [
     structureType: "hundredsCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":758,"display":{"parts":[700,50,8],"promptText":"? = 700 + 50 + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":758,"display":{"parts":[700,50,8],"promptText":"? = 700 + 50 + 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-430",
@@ -13442,7 +13442,7 @@ export const ITEMS = [
     structureType: "hundredsCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":891,"display":{"parts":[800,90,1],"promptText":"? = 800 + 90 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":891,"display":{"parts":[800,90,1],"promptText":"? = 800 + 90 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-431",
@@ -13452,7 +13452,7 @@ export const ITEMS = [
     structureType: "hundredsCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":986,"display":{"parts":[900,80,6],"promptText":"? = 900 + 80 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":986,"display":{"parts":[900,80,6],"promptText":"? = 900 + 80 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-432",
@@ -13462,7 +13462,7 @@ export const ITEMS = [
     structureType: "hundredsCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":267,"display":{"parts":[200,60,7],"promptText":"? = 200 + 60 + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":267,"display":{"parts":[200,60,7],"promptText":"? = 200 + 60 + 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-433",
@@ -13472,7 +13472,7 @@ export const ITEMS = [
     structureType: "hundredsCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":329,"display":{"parts":[300,20,9],"promptText":"? = 300 + 20 + 9"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":329,"display":{"parts":[300,20,9],"promptText":"? = 300 + 20 + 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-434",
@@ -13482,7 +13482,7 @@ export const ITEMS = [
     structureType: "hundredsCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":471,"display":{"parts":[400,70,1],"promptText":"? = 400 + 70 + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":471,"display":{"parts":[400,70,1],"promptText":"? = 400 + 70 + 1"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-435",
@@ -13492,7 +13492,7 @@ export const ITEMS = [
     structureType: "hundredsCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":536,"display":{"parts":[500,30,6],"promptText":"? = 500 + 30 + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":536,"display":{"parts":[500,30,6],"promptText":"? = 500 + 30 + 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-436",
@@ -13502,7 +13502,7 @@ export const ITEMS = [
     structureType: "hundredsCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":648,"display":{"parts":[600,40,8],"promptText":"? = 600 + 40 + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":648,"display":{"parts":[600,40,8],"promptText":"? = 600 + 40 + 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-437",
@@ -13512,7 +13512,7 @@ export const ITEMS = [
     structureType: "hundredsCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":712,"display":{"parts":[700,10,2],"promptText":"? = 700 + 10 + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":712,"display":{"parts":[700,10,2],"promptText":"? = 700 + 10 + 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-438",
@@ -13522,7 +13522,7 @@ export const ITEMS = [
     structureType: "hundredsCompose",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":853,"display":{"parts":[800,50,3],"promptText":"? = 800 + 50 + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":853,"display":{"parts":[800,50,3],"promptText":"? = 800 + 50 + 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-439",
@@ -13532,7 +13532,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":2,"whole":5,"promptText":"5 = 1 + 4. 5 = 2 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":2,"whole":5,"promptText":"5 = 1 + 4, so 5 = 2 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-440",
@@ -13542,7 +13542,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":3,"whole":5,"promptText":"5 = 2 + 3. 5 = 3 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":3,"whole":5,"promptText":"5 = 2 + 3, so 5 = 3 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-441",
@@ -13552,7 +13552,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":4,"whole":5,"promptText":"5 = 3 + 2. 5 = 4 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":4,"whole":5,"promptText":"5 = 3 + 2, so 5 = 4 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-442",
@@ -13562,7 +13562,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":1,"whole":5,"promptText":"5 = 2 + 3. 5 = 1 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":1,"whole":5,"promptText":"5 = 2 + 3, so 5 = 1 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-443",
@@ -13572,7 +13572,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":2,"whole":5,"promptText":"5 = 3 + 2. 5 = 2 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":2,"whole":5,"promptText":"5 = 3 + 2, so 5 = 2 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-444",
@@ -13582,7 +13582,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":2,"whole":6,"promptText":"6 = 1 + 5. 6 = 2 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":2,"whole":6,"promptText":"6 = 1 + 5, so 6 = 2 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-445",
@@ -13592,7 +13592,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":3,"whole":6,"promptText":"6 = 2 + 4. 6 = 3 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":3,"whole":6,"promptText":"6 = 2 + 4, so 6 = 3 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-446",
@@ -13602,7 +13602,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":4,"whole":6,"promptText":"6 = 3 + 3. 6 = 4 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":4,"whole":6,"promptText":"6 = 3 + 3, so 6 = 4 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-447",
@@ -13612,7 +13612,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":5,"whole":6,"promptText":"6 = 4 + 2. 6 = 5 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":5,"whole":6,"promptText":"6 = 4 + 2, so 6 = 5 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-448",
@@ -13622,7 +13622,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":1,"whole":6,"promptText":"6 = 2 + 4. 6 = 1 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":1,"whole":6,"promptText":"6 = 2 + 4, so 6 = 1 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-449",
@@ -13632,7 +13632,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":2,"whole":6,"promptText":"6 = 3 + 3. 6 = 2 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":2,"whole":6,"promptText":"6 = 3 + 3, so 6 = 2 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-450",
@@ -13642,7 +13642,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":3,"whole":6,"promptText":"6 = 4 + 2. 6 = 3 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":3,"whole":6,"promptText":"6 = 4 + 2, so 6 = 3 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-451",
@@ -13652,7 +13652,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":2,"whole":7,"promptText":"7 = 1 + 6. 7 = 2 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":2,"whole":7,"promptText":"7 = 1 + 6, so 7 = 2 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-452",
@@ -13662,7 +13662,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":3,"whole":7,"promptText":"7 = 2 + 5. 7 = 3 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":3,"whole":7,"promptText":"7 = 2 + 5, so 7 = 3 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-453",
@@ -13672,7 +13672,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":4,"whole":7,"promptText":"7 = 3 + 4. 7 = 4 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":4,"whole":7,"promptText":"7 = 3 + 4, so 7 = 4 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-454",
@@ -13682,7 +13682,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":5,"whole":7,"promptText":"7 = 4 + 3. 7 = 5 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":5,"whole":7,"promptText":"7 = 4 + 3, so 7 = 5 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-455",
@@ -13692,7 +13692,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":6,"whole":7,"promptText":"7 = 5 + 2. 7 = 6 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":6,"whole":7,"promptText":"7 = 5 + 2, so 7 = 6 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-456",
@@ -13702,7 +13702,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":1,"whole":7,"promptText":"7 = 2 + 5. 7 = 1 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":1,"whole":7,"promptText":"7 = 2 + 5, so 7 = 1 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-457",
@@ -13712,7 +13712,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":2,"whole":7,"promptText":"7 = 3 + 4. 7 = 2 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":2,"whole":7,"promptText":"7 = 3 + 4, so 7 = 2 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-458",
@@ -13722,7 +13722,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":3,"whole":7,"promptText":"7 = 4 + 3. 7 = 3 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":3,"whole":7,"promptText":"7 = 4 + 3, so 7 = 3 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-459",
@@ -13732,7 +13732,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":4,"whole":7,"promptText":"7 = 5 + 2. 7 = 4 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":4,"whole":7,"promptText":"7 = 5 + 2, so 7 = 4 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-460",
@@ -13742,7 +13742,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":2,"whole":8,"promptText":"8 = 1 + 7. 8 = 2 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":2,"whole":8,"promptText":"8 = 1 + 7, so 8 = 2 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-461",
@@ -13752,7 +13752,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"8 = 2 + 6. 8 = 3 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"8 = 2 + 6, so 8 = 3 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-462",
@@ -13762,7 +13762,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":4,"whole":8,"promptText":"8 = 3 + 5. 8 = 4 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":4,"whole":8,"promptText":"8 = 3 + 5, so 8 = 4 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-463",
@@ -13772,7 +13772,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"8 = 4 + 4. 8 = 5 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"8 = 4 + 4, so 8 = 5 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-464",
@@ -13782,7 +13782,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":6,"whole":8,"promptText":"8 = 5 + 3. 8 = 6 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":6,"whole":8,"promptText":"8 = 5 + 3, so 8 = 6 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-465",
@@ -13792,7 +13792,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":7,"whole":8,"promptText":"8 = 6 + 2. 8 = 7 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":7,"whole":8,"promptText":"8 = 6 + 2, so 8 = 7 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-466",
@@ -13802,7 +13802,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":1,"whole":8,"promptText":"8 = 2 + 6. 8 = 1 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":1,"whole":8,"promptText":"8 = 2 + 6, so 8 = 1 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-467",
@@ -13812,7 +13812,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":2,"whole":8,"promptText":"8 = 3 + 5. 8 = 2 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":2,"whole":8,"promptText":"8 = 3 + 5, so 8 = 2 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-468",
@@ -13822,7 +13822,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"8 = 4 + 4. 8 = 3 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"8 = 4 + 4, so 8 = 3 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-469",
@@ -13832,7 +13832,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":4,"whole":8,"promptText":"8 = 5 + 3. 8 = 4 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":4,"whole":8,"promptText":"8 = 5 + 3, so 8 = 4 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-470",
@@ -13842,7 +13842,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"8 = 6 + 2. 8 = 5 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"8 = 6 + 2, so 8 = 5 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-471",
@@ -13852,7 +13852,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":2,"whole":9,"promptText":"9 = 1 + 8. 9 = 2 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":2,"whole":9,"promptText":"9 = 1 + 8, so 9 = 2 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-472",
@@ -13862,7 +13862,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":3,"whole":9,"promptText":"9 = 2 + 7. 9 = 3 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":3,"whole":9,"promptText":"9 = 2 + 7, so 9 = 3 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-473",
@@ -13872,7 +13872,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":4,"whole":9,"promptText":"9 = 3 + 6. 9 = 4 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":4,"whole":9,"promptText":"9 = 3 + 6, so 9 = 4 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-474",
@@ -13882,7 +13882,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":5,"whole":9,"promptText":"9 = 4 + 5. 9 = 5 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":5,"whole":9,"promptText":"9 = 4 + 5, so 9 = 5 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-475",
@@ -13892,7 +13892,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":6,"whole":9,"promptText":"9 = 5 + 4. 9 = 6 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":6,"whole":9,"promptText":"9 = 5 + 4, so 9 = 6 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-476",
@@ -13902,7 +13902,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":7,"whole":9,"promptText":"9 = 6 + 3. 9 = 7 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":7,"whole":9,"promptText":"9 = 6 + 3, so 9 = 7 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-477",
@@ -13912,7 +13912,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":8,"whole":9,"promptText":"9 = 7 + 2. 9 = 8 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":8,"whole":9,"promptText":"9 = 7 + 2, so 9 = 8 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-478",
@@ -13922,7 +13922,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":1,"whole":9,"promptText":"9 = 2 + 7. 9 = 1 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":1,"whole":9,"promptText":"9 = 2 + 7, so 9 = 1 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-479",
@@ -13932,7 +13932,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":2,"whole":9,"promptText":"9 = 3 + 6. 9 = 2 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":2,"whole":9,"promptText":"9 = 3 + 6, so 9 = 2 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-480",
@@ -13942,7 +13942,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":3,"whole":9,"promptText":"9 = 4 + 5. 9 = 3 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":3,"whole":9,"promptText":"9 = 4 + 5, so 9 = 3 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-481",
@@ -13952,7 +13952,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":4,"whole":9,"promptText":"9 = 5 + 4. 9 = 4 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":4,"whole":9,"promptText":"9 = 5 + 4, so 9 = 4 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-482",
@@ -13962,7 +13962,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":5,"whole":9,"promptText":"9 = 6 + 3. 9 = 5 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":5,"whole":9,"promptText":"9 = 6 + 3, so 9 = 5 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-483",
@@ -13972,7 +13972,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":6,"whole":9,"promptText":"9 = 7 + 2. 9 = 6 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":6,"whole":9,"promptText":"9 = 7 + 2, so 9 = 6 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-484",
@@ -13982,7 +13982,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":2,"whole":10,"promptText":"10 = 1 + 9. 10 = 2 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":2,"whole":10,"promptText":"10 = 1 + 9, so 10 = 2 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-485",
@@ -13992,7 +13992,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"10 = 2 + 8. 10 = 3 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"10 = 2 + 8, so 10 = 3 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-486",
@@ -14002,7 +14002,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":4,"whole":10,"promptText":"10 = 3 + 7. 10 = 4 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":4,"whole":10,"promptText":"10 = 3 + 7, so 10 = 4 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-487",
@@ -14012,7 +14012,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":5,"whole":10,"promptText":"10 = 4 + 6. 10 = 5 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":5,"whole":10,"promptText":"10 = 4 + 6, so 10 = 5 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-488",
@@ -14022,7 +14022,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"10 = 5 + 5. 10 = 6 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"10 = 5 + 5, so 10 = 6 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-489",
@@ -14032,7 +14032,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"10 = 6 + 4. 10 = 7 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"10 = 6 + 4, so 10 = 7 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-490",
@@ -14042,7 +14042,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":8,"whole":10,"promptText":"10 = 7 + 3. 10 = 8 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":8,"whole":10,"promptText":"10 = 7 + 3, so 10 = 8 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-491",
@@ -14052,7 +14052,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":9,"whole":10,"promptText":"10 = 8 + 2. 10 = 9 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":9,"whole":10,"promptText":"10 = 8 + 2, so 10 = 9 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-492",
@@ -14062,7 +14062,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":1,"whole":10,"promptText":"10 = 2 + 8. 10 = 1 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":1,"whole":10,"promptText":"10 = 2 + 8, so 10 = 1 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-493",
@@ -14072,7 +14072,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":2,"whole":10,"promptText":"10 = 3 + 7. 10 = 2 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":2,"whole":10,"promptText":"10 = 3 + 7, so 10 = 2 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-494",
@@ -14082,7 +14082,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"10 = 4 + 6. 10 = 3 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"10 = 4 + 6, so 10 = 3 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-495",
@@ -14092,7 +14092,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":4,"whole":10,"promptText":"10 = 5 + 5. 10 = 4 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":4,"whole":10,"promptText":"10 = 5 + 5, so 10 = 4 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-496",
@@ -14102,7 +14102,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":5,"whole":10,"promptText":"10 = 6 + 4. 10 = 5 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":5,"whole":10,"promptText":"10 = 6 + 4, so 10 = 5 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-497",
@@ -14112,7 +14112,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"10 = 7 + 3. 10 = 6 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"10 = 7 + 3, so 10 = 6 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-498",
@@ -14122,7 +14122,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"10 = 8 + 2. 10 = 7 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"10 = 8 + 2, so 10 = 7 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-499",
@@ -14132,7 +14132,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":4,"whole":6,"promptText":"6 = 2 + 4. 6 = 4 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":4,"whole":6,"promptText":"6 = 2 + 4, so 6 = 4 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-500",
@@ -14142,7 +14142,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"8 = 5 + 3. 8 = 3 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"8 = 5 + 3, so 8 = 3 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-501",
@@ -14152,7 +14152,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"8 = 3 + 5. 8 = 5 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"8 = 3 + 5, so 8 = 5 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-502",
@@ -14162,7 +14162,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":7,"whole":9,"promptText":"9 = 2 + 7. 9 = 7 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":7,"whole":9,"promptText":"9 = 2 + 7, so 9 = 7 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-503",
@@ -14172,7 +14172,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"10 = 7 + 3. 10 = 3 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"10 = 7 + 3, so 10 = 3 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-504",
@@ -14182,7 +14182,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"10 = 3 + 7. 10 = 7 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"10 = 3 + 7, so 10 = 7 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-505",
@@ -14192,7 +14192,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"10 = 4 + 6. 10 = 6 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"10 = 4 + 6, so 10 = 6 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-506",
@@ -14202,7 +14202,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":7,"whole":8,"promptText":"8 = 1 + 7. 8 = 7 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":7,"whole":8,"promptText":"8 = 1 + 7, so 8 = 7 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-507",
@@ -14212,7 +14212,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":5,"whole":7,"promptText":"7 = 2 + 5. 7 = 5 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":5,"whole":7,"promptText":"7 = 2 + 5, so 7 = 5 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-508",
@@ -14222,7 +14222,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":5,"whole":6,"promptText":"6 = 1 + 5. 6 = 5 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":5,"whole":6,"promptText":"6 = 1 + 5, so 6 = 5 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-509",
@@ -14232,7 +14232,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":9,"whole":10,"promptText":"10 = 1 + 9. 10 = 9 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":9,"whole":10,"promptText":"10 = 1 + 9, so 10 = 9 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-510",
@@ -14242,7 +14242,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":8,"whole":9,"promptText":"9 = 1 + 8. 9 = 8 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":8,"whole":9,"promptText":"9 = 1 + 8, so 9 = 8 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-511",
@@ -14742,7 +14742,7 @@ export const ITEMS = [
     structureType: "teenBridgePair",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":9,"whole":11,"promptText":"11 = 10 + 1. 11 = 9 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":9,"whole":11,"promptText":"11 = 10 + 1, so 11 = 9 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-561",
@@ -14752,7 +14752,7 @@ export const ITEMS = [
     structureType: "teenBridgePair",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":9,"whole":12,"promptText":"12 = 10 + 2. 12 = 9 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":9,"whole":12,"promptText":"12 = 10 + 2, so 12 = 9 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-562",
@@ -14762,7 +14762,7 @@ export const ITEMS = [
     structureType: "teenBridgePair",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":9,"whole":13,"promptText":"13 = 10 + 3. 13 = 9 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":9,"whole":13,"promptText":"13 = 10 + 3, so 13 = 9 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-563",
@@ -14772,7 +14772,7 @@ export const ITEMS = [
     structureType: "teenBridgePair",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":9,"whole":14,"promptText":"14 = 10 + 4. 14 = 9 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":9,"whole":14,"promptText":"14 = 10 + 4, so 14 = 9 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-564",
@@ -14782,7 +14782,7 @@ export const ITEMS = [
     structureType: "teenBridgePair",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":9,"whole":15,"promptText":"15 = 10 + 5. 15 = 9 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":9,"whole":15,"promptText":"15 = 10 + 5, so 15 = 9 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-565",
@@ -14792,7 +14792,7 @@ export const ITEMS = [
     structureType: "teenBridgePair",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":9,"whole":16,"promptText":"16 = 10 + 6. 16 = 9 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":9,"whole":16,"promptText":"16 = 10 + 6, so 16 = 9 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-566",
@@ -14802,7 +14802,7 @@ export const ITEMS = [
     structureType: "teenBridgePair",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":9,"whole":17,"promptText":"17 = 10 + 7. 17 = 9 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":9,"whole":17,"promptText":"17 = 10 + 7, so 17 = 9 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-567",
@@ -14812,7 +14812,7 @@ export const ITEMS = [
     structureType: "teenBridgePair",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":9,"whole":18,"promptText":"18 = 10 + 8. 18 = 9 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":9,"whole":18,"promptText":"18 = 10 + 8, so 18 = 9 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-568",
@@ -14822,7 +14822,7 @@ export const ITEMS = [
     structureType: "teenBridgePair",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":9,"whole":19,"promptText":"19 = 10 + 9. 19 = 9 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":9,"whole":19,"promptText":"19 = 10 + 9, so 19 = 9 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-569",
@@ -14832,7 +14832,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":9,"whole":11,"promptText":"11 = 10 + 1. 11 − 9 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":9,"whole":11,"promptText":"11 = 10 + 1, so 11 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-570",
@@ -14842,7 +14842,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":9,"whole":12,"promptText":"12 = 10 + 2. 12 − 9 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":9,"whole":12,"promptText":"12 = 10 + 2, so 12 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-571",
@@ -14852,7 +14852,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":9,"whole":13,"promptText":"13 = 10 + 3. 13 − 9 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":9,"whole":13,"promptText":"13 = 10 + 3, so 13 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-572",
@@ -14862,7 +14862,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":9,"whole":14,"promptText":"14 = 10 + 4. 14 − 9 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":9,"whole":14,"promptText":"14 = 10 + 4, so 14 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-573",
@@ -14872,7 +14872,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":9,"whole":15,"promptText":"15 = 10 + 5. 15 − 9 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":9,"whole":15,"promptText":"15 = 10 + 5, so 15 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-574",
@@ -14882,7 +14882,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":9,"whole":16,"promptText":"16 = 10 + 6. 16 − 9 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":9,"whole":16,"promptText":"16 = 10 + 6, so 16 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-575",
@@ -14892,7 +14892,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":9,"whole":17,"promptText":"17 = 10 + 7. 17 − 9 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":9,"whole":17,"promptText":"17 = 10 + 7, so 17 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-576",
@@ -14902,7 +14902,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":9,"whole":18,"promptText":"18 = 10 + 8. 18 − 9 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":9,"whole":18,"promptText":"18 = 10 + 8, so 18 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-577",
@@ -14912,7 +14912,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":8,"whole":11,"promptText":"11 = 10 + 1. 11 − 8 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":8,"whole":11,"promptText":"11 = 10 + 1, so 11 − 8 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-578",
@@ -14922,7 +14922,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":8,"whole":12,"promptText":"12 = 10 + 2. 12 − 8 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":8,"whole":12,"promptText":"12 = 10 + 2, so 12 − 8 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-579",
@@ -14932,7 +14932,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":8,"whole":13,"promptText":"13 = 10 + 3. 13 − 8 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":8,"whole":13,"promptText":"13 = 10 + 3, so 13 − 8 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-580",
@@ -14942,7 +14942,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":8,"whole":14,"promptText":"14 = 10 + 4. 14 − 8 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":8,"whole":14,"promptText":"14 = 10 + 4, so 14 − 8 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-581",
@@ -14952,7 +14952,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":8,"whole":15,"promptText":"15 = 10 + 5. 15 − 8 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":8,"whole":15,"promptText":"15 = 10 + 5, so 15 − 8 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-582",
@@ -14962,7 +14962,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":8,"whole":16,"promptText":"16 = 10 + 6. 16 − 8 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":8,"whole":16,"promptText":"16 = 10 + 6, so 16 − 8 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-583",
@@ -14972,7 +14972,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":8,"whole":17,"promptText":"17 = 10 + 7. 17 − 8 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":8,"whole":17,"promptText":"17 = 10 + 7, so 17 − 8 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-584",
@@ -14982,7 +14982,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":7,"whole":11,"promptText":"11 = 10 + 1. 11 − 7 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":7,"whole":11,"promptText":"11 = 10 + 1, so 11 − 7 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-585",
@@ -14992,7 +14992,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":7,"whole":12,"promptText":"12 = 10 + 2. 12 − 7 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":7,"whole":12,"promptText":"12 = 10 + 2, so 12 − 7 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-586",
@@ -15002,7 +15002,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":7,"whole":13,"promptText":"13 = 10 + 3. 13 − 7 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":7,"whole":13,"promptText":"13 = 10 + 3, so 13 − 7 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-587",
@@ -15012,7 +15012,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":7,"whole":14,"promptText":"14 = 10 + 4. 14 − 7 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":7,"whole":14,"promptText":"14 = 10 + 4, so 14 − 7 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-588",
@@ -15022,7 +15022,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":7,"whole":15,"promptText":"15 = 10 + 5. 15 − 7 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":7,"whole":15,"promptText":"15 = 10 + 5, so 15 − 7 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-589",
@@ -15032,7 +15032,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":7,"whole":16,"promptText":"16 = 10 + 6. 16 − 7 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":7,"whole":16,"promptText":"16 = 10 + 6, so 16 − 7 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-590",
@@ -15402,7 +15402,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"part":8,"whole":23,"promptText":"13 − 8 = 5. 23 − 8 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"part":8,"whole":23,"promptText":"13 − 8 = 5, so 23 − 8 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-627",
@@ -15412,7 +15412,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":8,"whole":33,"promptText":"13 − 8 = 5. 33 − 8 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":8,"whole":33,"promptText":"13 − 8 = 5, so 33 − 8 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-628",
@@ -15422,7 +15422,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"part":8,"whole":43,"promptText":"13 − 8 = 5. 43 − 8 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"part":8,"whole":43,"promptText":"13 − 8 = 5, so 43 − 8 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-629",
@@ -15432,7 +15432,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"part":9,"whole":24,"promptText":"14 − 9 = 5. 24 − 9 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"part":9,"whole":24,"promptText":"14 − 9 = 5, so 24 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-630",
@@ -15442,7 +15442,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":9,"whole":34,"promptText":"14 − 9 = 5. 34 − 9 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":9,"whole":34,"promptText":"14 − 9 = 5, so 34 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-631",
@@ -15452,7 +15452,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"part":9,"whole":44,"promptText":"14 − 9 = 5. 44 − 9 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"part":9,"whole":44,"promptText":"14 − 9 = 5, so 44 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-632",
@@ -15462,7 +15462,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"part":7,"whole":25,"promptText":"15 − 7 = 8. 25 − 7 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"part":7,"whole":25,"promptText":"15 − 7 = 8, so 25 − 7 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-633",
@@ -15472,7 +15472,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":28,"display":{"part":7,"whole":35,"promptText":"15 − 7 = 8. 35 − 7 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":28,"display":{"part":7,"whole":35,"promptText":"15 − 7 = 8, so 35 − 7 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-634",
@@ -15482,7 +15482,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":38,"display":{"part":7,"whole":45,"promptText":"15 − 7 = 8. 45 − 7 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":38,"display":{"part":7,"whole":45,"promptText":"15 − 7 = 8, so 45 − 7 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-635",
@@ -15492,7 +15492,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"part":6,"whole":22,"promptText":"12 − 6 = 6. 22 − 6 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"part":6,"whole":22,"promptText":"12 − 6 = 6, so 22 − 6 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-636",
@@ -15502,7 +15502,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":26,"display":{"part":6,"whole":32,"promptText":"12 − 6 = 6. 32 − 6 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":26,"display":{"part":6,"whole":32,"promptText":"12 − 6 = 6, so 32 − 6 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-637",
@@ -15512,7 +15512,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":36,"display":{"part":6,"whole":42,"promptText":"12 − 6 = 6. 42 − 6 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":36,"display":{"part":6,"whole":42,"promptText":"12 − 6 = 6, so 42 − 6 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-638",
@@ -15522,7 +15522,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"part":9,"whole":26,"promptText":"16 − 9 = 7. 26 − 9 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"part":9,"whole":26,"promptText":"16 − 9 = 7, so 26 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-639",
@@ -15532,7 +15532,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":27,"display":{"part":9,"whole":36,"promptText":"16 − 9 = 7. 36 − 9 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":27,"display":{"part":9,"whole":36,"promptText":"16 − 9 = 7, so 36 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-640",
@@ -15542,7 +15542,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":37,"display":{"part":9,"whole":46,"promptText":"16 − 9 = 7. 46 − 9 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":37,"display":{"part":9,"whole":46,"promptText":"16 − 9 = 7, so 46 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-641",
@@ -15552,7 +15552,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"part":6,"whole":23,"promptText":"13 − 6 = 7. 23 − 6 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"part":6,"whole":23,"promptText":"13 − 6 = 7, so 23 − 6 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-642",
@@ -15562,7 +15562,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":27,"display":{"part":6,"whole":33,"promptText":"13 − 6 = 7. 33 − 6 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":27,"display":{"part":6,"whole":33,"promptText":"13 − 6 = 7, so 33 − 6 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-643",
@@ -15572,7 +15572,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":37,"display":{"part":6,"whole":43,"promptText":"13 − 6 = 7. 43 − 6 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":37,"display":{"part":6,"whole":43,"promptText":"13 − 6 = 7, so 43 − 6 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-644",
@@ -15582,7 +15582,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"part":8,"whole":25,"promptText":"15 − 8 = 7. 25 − 8 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"part":8,"whole":25,"promptText":"15 − 8 = 7, so 25 − 8 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-645",
@@ -15592,7 +15592,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":27,"display":{"part":8,"whole":35,"promptText":"15 − 8 = 7. 35 − 8 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":27,"display":{"part":8,"whole":35,"promptText":"15 − 8 = 7, so 35 − 8 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-646",
@@ -15602,7 +15602,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":37,"display":{"part":8,"whole":45,"promptText":"15 − 8 = 7. 45 − 8 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":37,"display":{"part":8,"whole":45,"promptText":"15 − 8 = 7, so 45 − 8 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-647",
@@ -15612,7 +15612,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"part":7,"whole":21,"promptText":"11 − 7 = 4. 21 − 7 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"part":7,"whole":21,"promptText":"11 − 7 = 4, so 21 − 7 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-648",
@@ -15622,7 +15622,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":24,"display":{"part":7,"whole":31,"promptText":"11 − 7 = 4. 31 − 7 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":24,"display":{"part":7,"whole":31,"promptText":"11 − 7 = 4, so 31 − 7 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-649",
@@ -15632,7 +15632,7 @@ export const ITEMS = [
     structureType: "ladderPair",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":34,"display":{"part":7,"whole":41,"promptText":"11 − 7 = 4. 41 − 7 = ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":34,"display":{"part":7,"whole":41,"promptText":"11 − 7 = 4, so 41 − 7 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-650",
@@ -15642,7 +15642,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":24,"whole":34,"promptText":"34 = 24 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":24,"whole":34,"promptText":"34 = 24 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-651",
@@ -15652,7 +15652,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":37,"whole":47,"promptText":"47 = 37 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":37,"whole":47,"promptText":"47 = 37 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-652",
@@ -15662,7 +15662,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":43,"whole":53,"promptText":"53 = 43 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":43,"whole":53,"promptText":"53 = 43 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-653",
@@ -15672,7 +15672,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":58,"whole":68,"promptText":"68 = 58 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":58,"whole":68,"promptText":"68 = 58 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-654",
@@ -15682,7 +15682,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":62,"whole":72,"promptText":"72 = 62 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":62,"whole":72,"promptText":"72 = 62 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-655",
@@ -15692,7 +15692,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":76,"whole":86,"promptText":"86 = 76 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":76,"whole":86,"promptText":"86 = 76 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-656",
@@ -15702,7 +15702,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":81,"whole":91,"promptText":"91 = 81 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":81,"whole":91,"promptText":"91 = 81 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-657",
@@ -15712,7 +15712,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":19,"whole":29,"promptText":"29 = 19 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":19,"whole":29,"promptText":"29 = 19 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-658",
@@ -15722,7 +15722,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":55,"whole":65,"promptText":"65 = 55 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":55,"whole":65,"promptText":"65 = 55 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-659",
@@ -15732,7 +15732,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":48,"whole":58,"promptText":"58 = 48 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":48,"whole":58,"promptText":"58 = 48 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-660",
@@ -15742,7 +15742,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":33,"whole":43,"promptText":"43 = 33 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":33,"whole":43,"promptText":"43 = 33 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-661",
@@ -15752,7 +15752,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":67,"whole":77,"promptText":"77 = 67 + ?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":67,"whole":77,"promptText":"77 = 67 + ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-662",

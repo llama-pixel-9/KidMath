@@ -68,8 +68,11 @@ const VARIETIES = [
         // switches to the vertical algorithm layout, which is wrong for a bond.
         ...(p1 < 10 && p2 < 10 ? { a: p1, b: p2, op: "+" } : {}),
         answer: whole,
-        answerType: "numberPad",
-        display: { promptText: `The two parts are ${p1} and ${p2}. What is the whole?`, whole, part: p1 },
+        // display.parts drives the missing-WHOLE cherry diagram (blank on
+        // top) in NumberBond.jsx / NumberBondWidget — kids see the bond, not
+        // just prose (user feedback 2026-08-21).
+        answerType: "numberBond",
+        display: { promptText: `The two parts are ${p1} and ${p2}. What is the whole?`, whole, part: p1, parts: [p1, p2] },
         representation: "decomposition",
         cognitiveDemand: "DOK2",
         misconceptions: ["partEchoed", "countAllError"],
@@ -249,11 +252,13 @@ const VARIETIES = [
         const p = randInt(1, whole - 2);
         return {
           answer: whole - p - 1,
-          answerType: "numberPad",
+          // The cherry diagram carries the second bond; ", so" joins the two
+          // equations — a bare period read as a decimal ("8 = 5 + 3.8").
+          answerType: "numberBond",
           display: {
             whole,
             part: p + 1,
-            promptText: `${whole} = ${p} + ${whole - p}. ${whole} = ${p + 1} + ?`,
+            promptText: `${whole} = ${p} + ${whole - p}, so ${whole} = ${p + 1} + ?`,
           },
           representation: "symbolic",
           cognitiveDemand: "DOK1",

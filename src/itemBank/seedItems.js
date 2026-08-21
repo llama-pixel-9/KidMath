@@ -1521,6 +1521,688 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "barModels-proc-b0821-0001",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "barMissingPart_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "part": 7,
+    "type": "barPartWhole",
+    "whole": 12,
+    "counting": {
+     "back": 7,
+     "kind": "countBack",
+     "start": 12
+    },
+    "promptText": "Whole 12, one part 7. The other part = ?"
+   },
+   "answerType": "barModel"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0157",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "comparison",
+  "structureType": "barDiff_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "counting": {
+     "have": 9,
+     "kind": "gap",
+     "target": 14
+    },
+    "promptText": "Long bar 14, short bar 9. The difference = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0313",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "multiplicative",
+  "structureType": "unitsTotal_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      6,
+      6
+     ]
+    },
+    "promptText": "2 equal bar parts of 6 each. The whole = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0469",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "fractionBar",
+  "structureType": "fracOf_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "bar": {
+     "w": 12,
+     "den": 2,
+     "num": 1,
+     "kind": "fracOf"
+    },
+    "promptText": "A bar of 12 is cut into 2 equal pieces. One piece = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0079",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "barWhole_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 13,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      7,
+      6
+     ]
+    },
+    "promptText": "Parts 7 and 6. The whole bar = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0235",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "comparison",
+  "structureType": "barMore_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 14,
+   "display": {
+    "counting": {
+     "kind": "countOn",
+     "more": 5,
+     "start": 9
+    },
+    "promptText": "Short bar 9. The long bar is 5 more. Long bar = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0391",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "multiplicative",
+  "structureType": "unitOf_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "bar": {
+     "k": 2,
+     "w": 12,
+     "kind": "unitOf"
+    },
+    "promptText": "A bar of 12 splits into 2 equal parts. Each part = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0547",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "fractionBar",
+  "structureType": "wholeFromPiece_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      6,
+      6
+     ]
+    },
+    "promptText": "One of 2 equal bar pieces holds 6. The whole bar = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0027",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "barMissingPart_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 18,
+   "display": {
+    "part": 27,
+    "type": "barPartWhole",
+    "whole": 45,
+    "counting": {
+     "back": 27,
+     "kind": "countBack",
+     "start": 45
+    },
+    "promptText": "A whole of 45 splits into 27 and one more part. The missing part = ?"
+   },
+   "answerType": "barModel"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0183",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "comparison",
+  "structureType": "barDiff_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 25,
+   "display": {
+    "counting": {
+     "have": 39,
+     "kind": "gap",
+     "target": 64
+    },
+    "promptText": "Compare bars of 64 and 39. What difference separates them?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0339",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "multiplicative",
+  "structureType": "unitsTotal_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 63,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      21,
+      21,
+      21
+     ]
+    },
+    "promptText": "3 equal sections of 21 line up in one bar. The whole = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0495",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "fractionBar",
+  "structureType": "fracOf_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 21,
+   "display": {
+    "bar": {
+     "w": 84,
+     "den": 4,
+     "num": 1,
+     "kind": "fracOf"
+    },
+    "promptText": "Shade 1 of the 4 equal parts of a 84-bar. What value is shaded?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0105",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "barWhole_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 58,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      27,
+      31
+     ]
+    },
+    "promptText": "A bar joins parts of 27 and 31. The whole = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0261",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "comparison",
+  "structureType": "barMore_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 64,
+   "display": {
+    "counting": {
+     "kind": "countOn",
+     "more": 25,
+     "start": 39
+    },
+    "promptText": "The smaller bar shows 39; the bigger one runs 25 further. Bigger bar = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0417",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "multiplicative",
+  "structureType": "unitOf_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 28,
+   "display": {
+    "bar": {
+     "k": 3,
+     "w": 84,
+     "kind": "unitOf"
+    },
+    "promptText": "Divide a 84-bar into 3 equal sections. One section = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0573",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "fractionBar",
+  "structureType": "wholeFromPiece_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 84,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      28,
+      28,
+      28
+     ]
+    },
+    "promptText": "A single one of 3 equal sections shows 28. The full bar = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0053",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "barMissingPart_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 185,
+   "display": {
+    "part": 267,
+    "type": "barPartWhole",
+    "whole": 452,
+    "counting": {
+     "back": 267,
+     "kind": "countBack",
+     "start": 452
+    },
+    "promptText": "The bar's whole reads 452; one section reads 267. Exactly what does the blank section hold?"
+   },
+   "answerType": "barModel"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0209",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "comparison",
+  "structureType": "barDiff_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 245,
+   "display": {
+    "counting": {
+     "have": 397,
+     "kind": "gap",
+     "target": 642
+    },
+    "promptText": "Bars of 642 and 397: compute the exact difference. What is it?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0365",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "multiplicative",
+  "structureType": "unitsTotal_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 642,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      214,
+      214,
+      214
+     ]
+    },
+    "promptText": "A bar of 3 equal units, 214 apiece. Exactly what is the whole?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0521",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "fractionBar",
+  "structureType": "fracOf_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 212,
+   "display": {
+    "bar": {
+     "w": 848,
+     "den": 4,
+     "num": 1,
+     "kind": "fracOf"
+    },
+    "promptText": "Take exactly 1 of the 4 equal sections of a 848-bar. What amount is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0131",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "barWhole_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 558,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      227,
+      331
+     ]
+    },
+    "promptText": "Sections of 227 and 331 complete one bar. Exactly what is the whole?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0287",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "comparison",
+  "structureType": "barMore_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 642,
+   "display": {
+    "counting": {
+     "kind": "countOn",
+     "more": 245,
+     "start": 397
+    },
+    "promptText": "A base bar of 397 extended by exactly 245. What does the extended bar total?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0443",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "multiplicative",
+  "structureType": "unitOf_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 282,
+   "display": {
+    "bar": {
+     "k": 3,
+     "w": 846,
+     "kind": "unitOf"
+    },
+    "promptText": "Partition 846 into 3 identical units. Exactly what is one unit?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0599",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "fractionBar",
+  "structureType": "wholeFromPiece_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 846,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      282,
+      282,
+      282
+     ]
+    },
+    "promptText": "One of 3 identical sections carries 282. Exactly what is the whole?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
   "itemId": "comparing-app-001",
   "modeId": "comparing",
   "itemFamily": "application",

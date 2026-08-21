@@ -86,6 +86,22 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## barModels — full bank build (2026-08-21)
+
+1,836 items (624 procedural + 600 conceptual + 612 application), batch tag
+`b0821`, every `barModels` cell ≥ 50 new items. Deterministic; see
+`docs/barmodels-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+Singapore-style bar modeling as presented in EngageNY tape diagrams
+(CC BY-NC-SA — structure only): G1-G2 modules' part-whole and comparison
+tape diagrams (add-to/take-from/compare with the bigger/smaller unknown),
+G3 M1/M5 (equal-groups tape diagrams, unit-and-multiple, fraction bars),
+G4 M3 (times-as-many comparisons). The fewer-means-subtract trap and
+whose-bar-is-longer modeling are standard tape-diagram pedagogy. All
+wording original.
+
 ## linesShapes — full bank build (2026-08-21)
 
 2,320 items (792 procedural + 774 conceptual + 754 application), batch tag

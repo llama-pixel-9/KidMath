@@ -1061,7 +1061,10 @@ export function generateFlightLog(mode, level, options = {}) {
     partA = items.slice(0, partACount);
     partB = items.slice(partACount, partACount + partBCount);
   } else {
-    const context = { allowWordProblems: false };
+    // Prompt sheets skip the bank for the same reason the computation blocks
+    // do: bank prose belongs in Part C, and a banked cell's non-verbal pool
+    // can be smaller than a sheet (placeValue L2 starved partB to zero).
+    const context = { allowWordProblems: false, consultBankFamilies: [] };
     const items = drawUnique({
       mode,
       level,

@@ -86,6 +86,245 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## angles — full bank build (2026-08-21)
+
+1,850 items (620 procedural + 618 conceptual + 612 application), batch tag
+`b0821`, every `angles` cell ≥ 50 new items. Deterministic; see
+`docs/angles-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+CCSS 4.MD.C progressions (angles as turns, degree measure as 1/360 of a
+circle, additive angle decomposition) and EngageNY G4 M4 (CC BY-NC-SA —
+structure only): turn-based intuition before degrees, benchmark angles,
+adjacent-angle sums, and the ray-length misconception. All wording
+original.
+
+## areaPerimeter — full bank build (2026-08-21)
+
+1,881 items (651 procedural + 618 conceptual + 612 application), batch tag
+`b0821`, every `areaPerimeter` cell ≥ 50 new items. Deterministic; see
+`docs/areaperimeter-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+CCSS 3.MD.C/3.MD.D and 4.MD.A progressions (area as unit-square tiling,
+perimeter as distance around, composite/L-shape decomposition, same-
+perimeter-different-area investigations) as presented in the CCSS
+Progressions documents and EngageNY G3 M4/M7 (CC BY-NC-SA — structure
+only). The add-the-sides area trap and area/perimeter swap are standard
+MD misconception work. All wording original.
+
+## factorsMultiples — full bank build (2026-08-21)
+
+1,862 items (626 procedural + 624 conceptual + 612 application), batch tag
+`b0821`, every `factorsMultiples` cell ≥ 50 new items. Deterministic; see
+`docs/factorsmultiples-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+CCSS 4.OA.B progressions (factor pairs to 100, prime/composite
+classification, multiples as skip counts) and EngageNY G4 M3 Topic F
+(CC BY-NC-SA — structure only): array-based factor work, the
+1-is-not-prime and 2-is-the-even-prime discussions, lcm/gcf packing and
+meet-again contexts as standard OA/NS pedagogy. All wording original.
+
+## decimals — full bank build (2026-08-21)
+
+1,896 items (660 procedural + 624 conceptual + 612 application), batch tag
+`b0821`, every `decimals` cell ≥ 50 new items. Deterministic; see
+`docs/decimals-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+CCSS 4.NF.C progressions (decimal notation for fractions with denominators
+10/100, decimal comparison with place-value reasoning) and EngageNY G4 M6
+(CC BY-NC-SA — structure only): tenths/hundredths area models, metersticks
+and money as decimal contexts, longer-is-bigger and trailing-zero
+misconception work. All wording original.
+
+## fractions — full bank build (2026-08-21)
+
+2,787 items (949 procedural + 920 conceptual + 918 application), batch tag
+`b0821`, every `fractions` cell ≥ 50 new items. Deterministic; see
+`docs/fractions-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+CCSS 3.NF/4.NF progressions (unit-fraction composition, fraction as a
+number-line point, equivalence by scaling, like-denominator operations,
+fraction of a set) as presented in the CCSS Progressions documents and
+EngageNY G3 M5 / G4 M5 (CC BY-NC-SA — structure only). The misconception
+catalog (part-to-part labeling, add-the-denominators, bigger-denominator-
+bigger, different-wholes) is standard NF pedagogy. All wording original.
+
+## barModels — full bank build (2026-08-21)
+
+1,836 items (624 procedural + 600 conceptual + 612 application), batch tag
+`b0821`, every `barModels` cell ≥ 50 new items. Deterministic; see
+`docs/barmodels-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+Singapore-style bar modeling as presented in EngageNY tape diagrams
+(CC BY-NC-SA — structure only): G1-G2 modules' part-whole and comparison
+tape diagrams (add-to/take-from/compare with the bigger/smaller unknown),
+G3 M1/M5 (equal-groups tape diagrams, unit-and-multiple, fraction bars),
+G4 M3 (times-as-many comparisons). The fewer-means-subtract trap and
+whose-bar-is-longer modeling are standard tape-diagram pedagogy. All
+wording original.
+
+## linesShapes — full bank build (2026-08-21)
+
+2,320 items (792 procedural + 774 conceptual + 754 application), batch tag
+`b0821`, every `linesShapes` cell ≥ 50 new items. Deterministic; see
+`docs/linesshapes-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+EngageNY (CC BY-NC-SA — structure only): GK M2 (name/describe flat shapes,
+sides and corners), G1 M5 (compose shapes, defining vs non-defining
+attributes), G2 M8 (polygon attributes, drawing by property), G3 M7
+(quadrilateral classification, shared attributes), G4 M4 (points/lines/
+rays/segments, parallel and perpendicular, line symmetry). Riddles,
+guess-my-rule circles, and mirror-fold crafts are standard geometry
+pedagogy. All wording original.
+
+## dataGraphs — full bank build (2026-08-21)
+
+1,836 items (610 procedural + 614 conceptual + 612 application), batch tag
+`b0821`, every `dataGraphs` cell ≥ 50 new items. Deterministic; see
+`docs/datagraphs-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+EngageNY (CC BY-NC-SA — structure only): G1 M3 (organize/represent/
+interpret up to three categories, how-many-more/fewer), G2 M7 (picture and
+bar graphs, tally charts, comparison word problems from graphs), G3 M6
+(scaled bar graphs and pictographs with keys, one-and-two-step "how many
+more/less" problems). The key-ignored misconception and pick-the-true-
+statement forms are standard data-literacy pedagogy. All wording original.
+
+## measurement — full bank build (2026-08-21)
+
+2,313 items (779 procedural + 769 conceptual + 765 application), batch tag
+`b0821`, every `measurement` cell ≥ 50 new items. Deterministic; see
+`docs/measurement-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+EngageNY (CC BY-NC-SA — structure only): G1 M3 (indirect/transitive
+comparison, non-standard iteration), G2 M2 (centimetre/metre measurement,
+compare-and-differ), G3 M2 (grams/kilograms/litres/millilitres estimation
+and benchmarks, rounding), G4 M2 (metric conversion tables, mixed units,
+two-step problems). The bigger-number-across-units trap and
+estimate-or-exact judgments are standard measurement pedagogy. All wording
+original.
+
+## time — full bank build (2026-08-21)
+
+1,852 items (623 procedural + 617 conceptual + 612 application), batch tag
+`b0821`, every `time` cell ≥ 50 new items. Deterministic; see
+`docs/time-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+EngageNY (CC BY-NC-SA — structure only): G1 M5 (o'clock and half past,
+hands described in words), G2 M7 (five-minute reads, a.m./p.m., word <->
+digital), G3 M2 (elapsed time on the number line — the absolute-minutes
+discipline — and to-the-minute reads). Calendar hops, duration benchmarks,
+and fencepost-slip judgments are standard measurement-of-time framings.
+All wording original.
+
+## money — full bank build (2026-08-21)
+
+1,837 items (619 procedural + 606 conceptual + 612 application), batch tag
+`b0821`, every `money` cell ≥ 50 new items. Deterministic; see
+`docs/money-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+EngageNY (CC BY-NC-SA — structure only): G2 M7 (counting mixed coins by
+value, coin equivalence trades, fewest-coins reasoning, word problems with
+change per 2.MD.C.8) and G1 money fluency framings (value of a coin, count
+vs value). Coin-machine and trading-post contexts are our own. All wording
+original.
+
+## patterns — full bank build (2026-08-21)
+
+2,322 items (776 procedural + 781 conceptual + 765 application), batch tag
+`b0821`, every `patterns` cell ≥ 50 new items across all five subskills.
+Deterministic; see `docs/patterns-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+EngageNY (CC BY-NC-SA — structure only): GK M1/G1 (AB/ABB/ABC repeating
+patterns, "what comes next", core identification), G3 M1 and G4 M5-adjacent
+arithmetic-pattern work (extend, extend leftwards, state the rule, apply a
+rule N terms out, find the broken term, parity reasoning per 4.OA.C.5).
+Growth stories (doubling ponds, savings-style additive growth) are standard
+pattern-context framings. All wording original.
+
+## placeValueDiscs — full bank build (2026-08-21)
+
+1,406 items (479 procedural + 468 conceptual + 459 application), batch tag
+`b0821`, every `placeValueDiscs` cell ≥ 50 new items. Deterministic; see
+`docs/placevaluediscs-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+EngageNY (CC BY-NC-SA — structure only): G2 M3 (place value disks on a
+place value chart, unit-form reads, trading ten of a unit for one of the
+next), G2 M4/M5 and G4 M1 (regrouping in addition/subtraction with disks,
+"rename with extra ones", error analysis of skipped trades). The letter-free
+mat-caption register, disc-game contexts, and share-the-mat items are our
+own derived extensions. All wording original.
+
+## placeValue — full bank build (2026-08-21)
+
+1,424 items (467 procedural + 498 conceptual + 459 application), batch tag
+`b0821`, every `placeValue` cell ≥ 50 new items. Deterministic; see
+`docs/placevalue-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+EngageNY (CC BY-NC-SA — structure only): GK M5 (teen numbers as 10 ones and
+some ones, Hide Zero cards → the arrow/unit registers), G1 M2/M4 (ten-frame
+teen builds, "1 ten and __ ones", ten more/ten less), G2 M3 (unit form,
+expanded form, word form, non-canonical renames like "2 tens 14 ones",
+bundling straws), G2 M4/G4 M1 (trading tens/hundreds, value-of-digit).
+Bundle-of-ten story contexts (straws, rods, wires, sheets) are standard
+base-ten manipulative framings. All wording original.
+
+## skipCounting — full bank build (2026-08-20)
+
+1,414 items (469 procedural + 486 conceptual + 459 application), batch tag
+`b0821`, every `skipCounting` cell ≥ 50 new items. Deterministic; see
+`docs/skipcounting-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+EngageNY (CC BY-NC-SA — structure only): G2 M6 (equal groups, arrays,
+rows-vs-columns, even/odd via 2s, repeated addition), G3 M1 (unit form "4
+twos", skip-count-to-multiplication chain, the L20 Sprint's blank-position
+difficulty ladder, missing-factor via skip counting). 25s/50s/100s items
+and coin/clock contexts are derived extensions, flagged in the design doc.
+All wording original.
+
+## Comparing — full bank build (2026-08-20)
+
+1,511 items (563 procedural + 489 conceptual + 459 application), batch tag
+`b0821`, every `comparing` cell ≥ 50 new items. Deterministic; see
+`docs/comparing-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+EngageNY (CC BY-NC-SA — structure only): GK M3 E–H (matching ladder,
+more/fewer/same, enough?, both-ways frames), G1 M4 Topic B (symbol
+sequence, mouth convention, reversals 13/31, big-digit trap, mixed forms),
+G2 M3 F–G (three-digit compares across forms, non-standard units, ±1/10/100
+with any slot unknown). All wording original.
+
 ## Counting — full bank build (2026-08-20)
 
 1,506 items (542 procedural + 505 conceptual + 459 application), batch tag

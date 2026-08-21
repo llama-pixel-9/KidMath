@@ -187,7 +187,11 @@ const VARIETIES = [
   {
     id: "compareSameUnit",
     bands: [1],
-    family: CONCEPTUAL,
+    // Reclassified conceptual -> procedural: a same-unit numeric compare is
+    // mechanical, and band 1 otherwise has NO procedural variety — which left
+    // the band-1 procedural bank cell unreachable (the engine consults the
+    // bank by the generated variety's family).
+    family: PROCEDURAL,
     subskills: ["compareOrder"],
     build() {
       // Band 1 compares within ONE unit: comparing across units needs a
@@ -517,15 +521,21 @@ function selectVariety(level, context) {
     if (dry.length) pool = dry;
   }
   if (context.itemFamily) {
+    // Family never wins over the band (the numberBonds level-leak class):
+    // band 1 deliberately has no conversion varieties, and the old any-band
+    // fallback handed metric conversion to level-1 kids. A family miss inside
+    // the band serves a sibling family; the bank answers family-specific
+    // requests once its rows are approved.
     const byFamily = pool.filter((v) => v.family === context.itemFamily);
-    const anyBand = VARIETIES.filter(
-      (v) => v.family === context.itemFamily && !(context.allowWordProblems === false && v.family === APPLICATION)
-    );
-    pool = byFamily.length ? byFamily : anyBand.length ? anyBand : pool;
+    if (byFamily.length) pool = byFamily;
   }
   if (context.targetSubskill) {
     const bySubskill = pool.filter((v) => v.subskills.includes(context.targetSubskill));
+    const inBandAnyFamily = VARIETIES.filter(
+      (v) => v.bands.includes(b) && v.subskills.includes(context.targetSubskill)
+    );
     if (bySubskill.length) pool = bySubskill;
+    else if (inBandAnyFamily.length) pool = inBandAnyFamily;
   }
   return pick(pool);
 }

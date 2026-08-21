@@ -29,7 +29,11 @@ const pick = (arr) => arr[randInt(0, arr.length - 1)];
 const bandOf = (level) => (level <= 3 ? 1 : level <= 6 ? 2 : 3);
 
 function topPlace(level) {
-  if (level <= 3) return 100;
+  // Band 1 (levels 1-3) stays within tens+ones — hundreds mats at level 1
+  // were the reported leak ("998 discs" for a K-1 kid). Hundreds join at
+  // band 2, thousands at band 3.
+  if (level <= 3) return 10;
+  if (level <= 6) return 100;
   return 1000;
 }
 
@@ -569,13 +573,23 @@ function chooseVariety(level, context = {}) {
   }
 
   if (context.targetSubskill) {
-    // A targeted subskill wins over the band filter too: the session engine asks
-    // for the child's weakest subskill, and answering with a different one would
-    // silently defeat the adaptive loop. Magnitude still scales with level.
-    const inBand = pool.filter((v) => v.subskill === context.targetSubskill);
-    const anyBand = VARIETIES.filter((v) => v.subskill === context.targetSubskill);
-    if (inBand.length) pool = inBand;
-    else if (anyBand.length) pool = anyBand;
+    // A targeted subskill wins over the family filter, but NOT over the band
+    // filter — leaving the band served out-of-band magnitudes to little kids
+    // (the numberBonds level-leak bug class). Fallback: family+subskill in
+    // band -> any-family subskill in band -> subskill anywhere (last resort).
+    const bySubskill = (arr) => arr.filter((v) => v.subskill === context.targetSubskill);
+    const noStories = (arr) =>
+      context.allowWordProblems === false
+        ? arr.filter((v) => v.family !== ITEM_FAMILIES.APPLICATION)
+        : arr;
+    const inPool = bySubskill(pool);
+    const inBandAnyFamily = noStories(
+      bySubskill(VARIETIES.filter((v) => v.bands.includes(band)))
+    );
+    const anywhere = noStories(bySubskill(VARIETIES));
+    if (inPool.length) pool = inPool;
+    else if (inBandAnyFamily.length) pool = inBandAnyFamily;
+    else if (anywhere.length) pool = anywhere;
   }
   return pool.length ? pick(pool) : VARIETIES[0];
 }

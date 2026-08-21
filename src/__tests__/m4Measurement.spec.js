@@ -83,7 +83,10 @@ const fmtTime = (total) => `${Math.floor(total / 60)}:${String(total % 60).padSt
 
 function generateMany(mode, level, n = SAMPLES) {
   const out = [];
-  for (let i = 0; i < n; i += 1) out.push(generateQuestion(mode, level));
+  // This spec verifies the GENERATOR's answers against its own prompts, so
+  // the item bank (which now covers these modes and would displace generator
+  // varieties with bank structureTypes the checkers don't know) is bypassed.
+  for (let i = 0; i < n; i += 1) out.push(generateQuestion(mode, level, { consultBankFamilies: [] }));
   return out;
 }
 
@@ -790,7 +793,10 @@ describe("M4 distractors", () => {
     const config = getModeConfig("areaPerimeter");
     let sawSwap = 0;
     for (let i = 0; i < 400; i += 1) {
-      const q = generateQuestion("areaPerimeter", 5);
+      // This verifies the GENERATOR's distractor context; bank items have no
+      // display.width/height and would starve the sample (same reason
+      // generateMany passes consultBankFamilies: []).
+      const q = generateQuestion("areaPerimeter", 5, { consultBankFamilies: [] });
       if ((q.answerType ?? "choice") !== "choice") continue;
       const { width: w, height: h } = q.display;
       if (w == null || h == null) continue;

@@ -585,9 +585,11 @@ function selectVariety(level, context) {
     if (dry.length) pool = dry;
   }
   if (context.itemFamily) {
+    // The itemFamily filter must never leave the band (the numberBonds
+    // level-leak class): a level-1 kid asked for "procedural" was drawing
+    // band-3 missing-side items via the old any-band fallback.
     const byFamily = pool.filter((v) => v.family === context.itemFamily);
-    const anyBand = VARIETIES.filter((v) => v.family === context.itemFamily);
-    pool = byFamily.length ? byFamily : anyBand.length ? anyBand : pool;
+    if (byFamily.length) pool = byFamily;
   }
   if (context.targetSubskill) {
     const bySubskill = pool.filter((v) => v.subskills.includes(context.targetSubskill));

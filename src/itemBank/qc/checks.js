@@ -26,6 +26,7 @@ const numbersIn = (text) => (text.match(/\d+/g) || []).map(Number);
  */
 const COUNTABLE_PLURALS = new Set([
   "apples", "stickers", "marbles", "shells", "books", "pencils", "buttons",
+  "bundles", "rods", "wires", "sheets", "crates", "packs", "straws",
   "crayons", "cards", "blocks", "beads", "leaves", "bunnies", "birds",
   "flowers", "cookies", "plums", "chairs", "coins", "bags", "boxes", "baskets",
   "jars", "plates", "shelves", "rows", "groups", "bears", "ducks", "frogs",
@@ -96,6 +97,39 @@ export const CHECKS = [
   { id: "arithmetic", run: arithmeticCheck },
 
   {
+    // `op: "vs"`/`op: "?"` (comparing) skips arithmeticCheck; verify what the
+    // payload lets us: symbol answers against numeric a/b, and numeric
+    // answers against a display.compare claim
+    // (docs/comparing-bank-design.md).
+    id: "compareMath",
+    run: (item) => {
+      const q = item.question || {};
+      if (q.op !== "vs" && q.op !== "?") return null;
+      if (typeof q.answer === "string" && /^[<>=]$/.test(q.answer)) {
+        if (typeof q.a === "number" && typeof q.b === "number") {
+          const want = q.a > q.b ? ">" : q.a < q.b ? "<" : "=";
+          return q.answer === want
+            ? null
+            : fail("compareMath", `symbol ${q.answer} does not relate ${q.a} and ${q.b}`);
+        }
+        return null; // expression strings — assembler-level asserts cover them
+      }
+      const c = q.display?.compare;
+      if (!c || typeof q.answer !== "number") return null;
+      let want = null;
+      if (c.kind === "difference") want = c.bigger - c.smaller;
+      else if (c.kind === "gap") want = c.target - c.have;
+      else if (c.kind === "oneMoreLess") want = c.n + c.delta;
+      else if (c.kind === "closerTo") want = c.n - c.lo < c.hi - c.n ? c.lo : c.hi;
+      else if (c.kind === "midpoint") want = (c.lo + c.hi) / 2;
+      if (want == null) return null;
+      return q.answer === want
+        ? null
+        : fail("compareMath", `answer ${q.answer} != ${want} from ${c.kind} claim`);
+    },
+  },
+
+  {
     // `op: "bond"` skips arithmeticCheck entirely (no OPS entry), so bond
     // items get their own consistency rule, keyed off the display payload.
     // Bank convention (docs/numberbonds-bank-design.md): missing-part items
@@ -160,7 +194,12 @@ export const CHECKS = [
           break;
         }
         case "between":
-          expected = n("before") != null && n("after") != null && c.after - c.before === 2 ? c.before + 1 : null;
+          // Midpoint of the neighbours — covers unit steps (before+1) AND
+          // skip-count gaps (before + step), as long as the gap is even.
+          expected =
+            n("before") != null && n("after") != null && (c.after - c.before) % 2 === 0 && c.after > c.before
+              ? (c.before + c.after) / 2
+              : null;
           break;
         case "hidden":
           expected = n("total") != null && n("seen") != null ? c.total - c.seen : null;
@@ -173,6 +212,19 @@ export const CHECKS = [
           break;
         case "groups":
           expected = n("tens") != null && n("ones") != null ? c.tens * 10 + c.ones : null;
+          break;
+        case "units":
+          expected =
+            n("hundreds") != null && n("tens") != null && n("ones") != null
+              ? c.hundreds * 100 + c.tens * 10 + c.ones
+              : null;
+          break;
+        case "digit":
+          // The digit standing in `place` (1, 10, or 100) of n.
+          expected = n("n") != null && n("place") != null ? Math.floor(c.n / c.place) % 10 : null;
+          break;
+        case "placeValueOf":
+          expected = n("n") != null && n("place") != null ? (Math.floor(c.n / c.place) % 10) * c.place : null;
           break;
         case "sum": {
           const parts = Array.isArray(c.parts) && c.parts.every((x) => typeof x === "number") ? c.parts : null;

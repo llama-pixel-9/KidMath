@@ -569,6 +569,32 @@ const VARIETIES = [
       };
     },
   },
+
+  // 16 — targetedOnly landmark drill: benchmarkCompare had no procedural
+  // variety at any band, so scheduled procedural+benchmark requests escaped
+  // the band filter (the numberBonds level-leak class) and the bank consult
+  // missed the approved drills.
+  {
+    id: "benchmarkDrill",
+    bands: [1, 2, 3],
+    targetedOnly: true,
+    subskill: "benchmarkCompare",
+    family: ITEM_FAMILIES.PROCEDURAL,
+    build: (level) => {
+      const band = bandOf(level);
+      const bench = band === 1 ? pick([5, 10, 20]) : band === 2 ? pick([20, 50]) : pick([100, 500]);
+      const n = band === 1 ? randInt(0, bench * 2) : randInt(Math.floor(bench / 2), bench + Math.floor(bench / 2));
+      return {
+        a: n,
+        b: bench,
+        answer: symbolFor(n, bench),
+        answerType: "symbolSelect",
+        representation: "symbolic",
+        cognitiveDemand: "DOK1",
+        misconceptions: ["symbolFlip"],
+      };
+    },
+  },
 ];
 
 export const COMPARING_VARIETY_IDS = VARIETIES.map((v) => v.id);
@@ -579,24 +605,34 @@ function chooseVariety(level, context = {}) {
     if (forced) return forced;
   }
   const band = bandOf(level);
-  let pool = VARIETIES.filter((v) => v.bands.includes(band));
+  const targeted = Boolean(context.itemFamily || context.targetSubskill);
+  const eligible = VARIETIES.filter((v) => !v.targetedOnly || targeted);
+  let pool = eligible.filter((v) => v.bands.includes(band));
 
   if (context.itemFamily) {
     const byFamily = pool.filter((v) => v.family === context.itemFamily);
-    const anyBand = VARIETIES.filter((v) => v.family === context.itemFamily);
+    const anyBand = eligible.filter((v) => v.family === context.itemFamily);
     pool = byFamily.length ? byFamily : anyBand.length ? anyBand : pool;
   } else if (context.allowWordProblems === false) {
     pool = pool.filter((v) => v.family !== ITEM_FAMILIES.APPLICATION);
   }
 
   if (context.targetSubskill) {
-    // A targeted subskill wins over the band filter too: the session engine asks
-    // for the child's weakest subskill, and answering with a different one would
-    // silently defeat the adaptive loop. Magnitude still scales with level.
-    const inBand = pool.filter((v) => v.subskill === context.targetSubskill);
-    const anyBand = VARIETIES.filter((v) => v.subskill === context.targetSubskill);
-    if (inBand.length) pool = inBand;
-    else if (anyBand.length) pool = anyBand;
+    // Subskill wins over the family filter, never over the band filter
+    // (out-of-band leaks fed level-1 kids band-3 magnitudes — see
+    // numberBonds). Fallback: family+subskill in band -> any-family
+    // subskill in band -> subskill anywhere.
+    const bySubskill = (arr) => arr.filter((v) => v.subskill === context.targetSubskill);
+    const noStories = (arr) =>
+      context.allowWordProblems === false
+        ? arr.filter((v) => v.family !== ITEM_FAMILIES.APPLICATION)
+        : arr;
+    const inPool = bySubskill(pool);
+    const inBandAnyFamily = noStories(bySubskill(eligible.filter((v) => v.bands.includes(band))));
+    const anywhere = noStories(bySubskill(eligible));
+    if (inPool.length) pool = inPool;
+    else if (inBandAnyFamily.length) pool = inBandAnyFamily;
+    else if (anywhere.length) pool = anywhere;
   }
   return pool.length ? pick(pool) : VARIETIES[0];
 }

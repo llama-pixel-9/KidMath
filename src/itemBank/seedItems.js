@@ -1521,6 +1521,2031 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "angles-proc-b0821-0001",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "classifyAngle",
+  "structureType": "cornerClassify_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "acute",
+   "choices": [
+    "straight",
+    "acute",
+    "right",
+    "obtuse"
+   ],
+   "display": {
+    "ang": {
+     "rel": "less",
+     "kind": "classifyRel"
+    },
+    "promptText": "An angle opens less than a square corner. Pick its kind."
+   }
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0156",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "measureAngle",
+  "structureType": "turnCount_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "ang": {
+     "kind": "divTurn",
+     "unit": 90,
+     "whole": 180
+    },
+    "promptText": "How many square corners fit exactly along a straight line? Type the count."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0311",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "angleSum",
+  "structureType": "turnsMake_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "a straight line",
+   "choices": [
+    "a small tilt",
+    "a full turn",
+    "a quarter turn",
+    "a straight line"
+   ],
+   "display": {
+    "ang": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "Two square corners side by side together make what? Pick it."
+   }
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0465",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "missingAngle",
+  "structureType": "missingQuarters_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "ang": {
+     "a": 90,
+     "kind": "missDeg",
+     "total": 360
+    },
+    "promptText": "A full spin is missing some quarter turns: 1 is done. How many quarter turns are missing? Type it."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0026",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "classifyAngle",
+  "structureType": "turnClassify_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "right",
+   "choices": [
+    "acute",
+    "straight",
+    "right",
+    "obtuse"
+   ],
+   "display": {
+    "ang": {
+     "deg": 90,
+     "kind": "classify"
+    },
+    "promptText": "Which kind of angle comes from a quarter turn?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0181",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "measureAngle",
+  "structureType": "turnCount_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "ang": {
+     "kind": "divTurn",
+     "unit": 90,
+     "whole": 360
+    },
+    "promptText": "It takes how many square corners to build a full turn? Type the number."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0336",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "angleSum",
+  "structureType": "turnsTotal_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "ang": {
+     "a": 2,
+     "b": 2,
+     "kind": "sumUnits"
+    },
+    "promptText": "2 quarter turns, then 2 more. How many quarter turns in all? Type it."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0491",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "missingAngle",
+  "structureType": "missingCornerLine_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1,
+   "display": {
+    "ang": {
+     "a": 90,
+     "kind": "missDeg",
+     "total": 180
+    },
+    "promptText": "The line needs 2 square corners and shows 1. How many square corners does it still need?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0052",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "classifyAngle",
+  "structureType": "degreeClassify_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "acute",
+   "choices": [
+    "straight",
+    "obtuse",
+    "acute",
+    "right"
+   ],
+   "display": {
+    "ang": {
+     "deg": 30,
+     "kind": "classify"
+    },
+    "promptText": "An angle measures 30 degrees. Pick its kind."
+   }
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0233",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "measureAngle",
+  "structureType": "degLF_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 90,
+   "display": {
+    "ang": {
+     "a": 90,
+     "kind": "missDeg",
+     "total": 180
+    },
+    "promptText": "90 + ? = 180 (deg)"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0387",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "angleSum",
+  "structureType": "sumLF_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 75,
+   "display": {
+    "ang": {
+     "a": 30,
+     "b": 45,
+     "kind": "sumDeg"
+    },
+    "promptText": "30 + 45 = ? (deg)"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0543",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "missingAngle",
+  "structureType": "missLF_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 60,
+   "display": {
+    "ang": {
+     "a": 30,
+     "kind": "missDeg",
+     "total": 90
+    },
+    "promptText": "90 - 30 = ? (deg)"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0104",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "classifyAngle",
+  "structureType": "benchKind_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "right",
+   "choices": [
+    "acute",
+    "obtuse",
+    "straight",
+    "right"
+   ],
+   "display": {
+    "ang": {
+     "deg": 90,
+     "kind": "classify"
+    },
+    "promptText": "What kind of angle is a quarter turn? Pick it."
+   }
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0259",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "measureAngle",
+  "structureType": "halfDeg_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 45,
+   "display": {
+    "ang": {
+     "of": 90,
+     "kind": "halfDeg"
+    },
+    "promptText": "Half of a 90-degree angle measures how many degrees? Type it."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0413",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "angleSum",
+  "structureType": "tripleDeg_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 90,
+   "display": {
+    "ang": {
+     "a": 20,
+     "b": 30,
+     "c": 40,
+     "kind": "sumDeg3"
+    },
+    "promptText": "Three angles around a line measure 20, 30, and 40 degrees. Type their total in degrees."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0569",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "missingAngle",
+  "structureType": "missingThird_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 50,
+   "display": {
+    "ang": {
+     "a": 60,
+     "b": 70,
+     "kind": "missDeg3",
+     "total": 180
+    },
+    "promptText": "Three angles make a straight angle. Two measure 60 and 70 degrees. The third = ? Type it."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0065",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "classifyAngle",
+  "structureType": "degreeClassify_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "acute",
+   "choices": [
+    "right",
+    "acute",
+    "straight",
+    "obtuse"
+   ],
+   "display": {
+    "ang": {
+     "deg": 89,
+     "kind": "classify"
+    },
+    "promptText": "Classify precisely: a 89-degree angle is which kind?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0246",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "measureAngle",
+  "structureType": "degLF_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 270,
+   "display": {
+    "ang": {
+     "a": 90,
+     "kind": "missDeg",
+     "total": 360
+    },
+    "promptText": "90 + ? = 360 (deg)"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0400",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "angleSum",
+  "structureType": "sumLF_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 125,
+   "display": {
+    "ang": {
+     "a": 85,
+     "b": 40,
+     "kind": "sumDeg"
+    },
+    "promptText": "85 + 40 = ? (deg)"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0556",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "missingAngle",
+  "structureType": "missLF_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 115,
+   "display": {
+    "ang": {
+     "a": 65,
+     "kind": "missDeg",
+     "total": 180
+    },
+    "promptText": "180 - 65 = ? (deg)"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0117",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "classifyAngle",
+  "structureType": "benchKind_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "right",
+   "choices": [
+    "acute",
+    "right",
+    "obtuse",
+    "straight"
+   ],
+   "display": {
+    "ang": {
+     "deg": 90,
+     "kind": "classify"
+    },
+    "promptText": "Classify precisely: a quarter turn is which kind of angle?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0272",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "measureAngle",
+  "structureType": "halfDeg_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 45,
+   "display": {
+    "ang": {
+     "of": 90,
+     "kind": "halfDeg"
+    },
+    "promptText": "Bisect a 90-degree angle. Each half measures how many degrees?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0426",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "angleSum",
+  "structureType": "tripleDeg_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 180,
+   "display": {
+    "ang": {
+     "a": 50,
+     "b": 60,
+     "c": 70,
+     "kind": "sumDeg3"
+    },
+    "promptText": "Compute the total of three adjacent angles: 50, 60, and 70 degrees."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0582",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "missingAngle",
+  "structureType": "missingThird_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 110,
+   "display": {
+    "ang": {
+     "a": 120,
+     "b": 130,
+     "kind": "missDeg3",
+     "total": 360
+    },
+    "promptText": "Compute the third angle when a full turn contains parts of 120 and 130 degrees."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0049",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "area",
+  "structureType": "areaLF_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "ap": {
+     "h": 3,
+     "w": 2,
+     "kind": "areaOf"
+    },
+    "promptText": "Area: 2 x 3 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0223",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "perimeter",
+  "structureType": "perimLF_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "ap": {
+     "h": 3,
+     "w": 2,
+     "kind": "perimOf"
+    },
+    "promptText": "Perim: 2 + 3 + 2 + 3 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0340",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "compositeFigures",
+  "structureType": "joinAreas_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "ap": {
+     "a": 2,
+     "b": 3,
+     "c": 2,
+     "d": 2,
+     "kind": "joinAreas"
+    },
+    "promptText": "A 2-by-3 rectangle and a 2-by-2 rectangle join with no overlap. How many unit squares do they cover together?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0496",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "measureReasoning",
+  "structureType": "whichMeasure_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "around the edge",
+   "choices": [
+    "around the edge",
+    "inside the shape"
+   ],
+   "display": {
+    "ap": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "To put tape all the way around a card, do you need the trip AROUND the shape or the space INSIDE it? Pick one."
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0014",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "area",
+  "structureType": "areaDims_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 18,
+   "display": {
+    "ap": {
+     "h": 3,
+     "w": 6,
+     "kind": "areaOf"
+    },
+    "promptText": "Count the unit squares: 3 rows, 6 in each row. How many unit squares are there in all?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0186",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "perimeter",
+  "structureType": "perimDims_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 24,
+   "display": {
+    "ap": {
+     "h": 6,
+     "w": 6,
+     "kind": "perimOf"
+    },
+    "promptText": "Walk the edge of a 6-unit by 6-unit rectangle. How many units long is the walk around?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0418",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "compositeFigures",
+  "structureType": "twoSquares_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 13,
+   "display": {
+    "ap": {
+     "a": 2,
+     "b": 2,
+     "c": 3,
+     "d": 3,
+     "kind": "joinAreas"
+    },
+    "promptText": "Two squares sit side by side: one 2 units on a side, one 3 units on a side. How many unit squares do they cover together?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0574",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "measureReasoning",
+  "structureType": "labelPick_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "unit squares",
+   "choices": [
+    "unit squares",
+    "units"
+   ],
+   "display": {
+    "ap": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "A rectangle is 2 units by 3 units. Its area is 6 of which count: unit squares or units? Pick one."
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0065",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "area",
+  "structureType": "areaLF_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 28,
+   "display": {
+    "ap": {
+     "h": 4,
+     "w": 7,
+     "kind": "areaOf"
+    },
+    "promptText": "Area: 7 x 4 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0239",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "perimeter",
+  "structureType": "perimLF_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 22,
+   "display": {
+    "ap": {
+     "h": 4,
+     "w": 7,
+     "kind": "perimOf"
+    },
+    "promptText": "Perim: 7 + 4 + 7 + 4 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0353",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "compositeFigures",
+  "structureType": "joinAreas_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 34,
+   "display": {
+    "ap": {
+     "a": 7,
+     "b": 4,
+     "c": 3,
+     "d": 2,
+     "kind": "joinAreas"
+    },
+    "promptText": "A figure is a 7 cm by 4 cm rectangle joined to a 3 cm by 2 cm rectangle, no overlap. What is its total area in square cm?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0509",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "measureReasoning",
+  "structureType": "whichMeasure_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "perimeter",
+   "choices": [
+    "perimeter",
+    "area"
+   ],
+   "display": {
+    "ap": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "To fence a garden, which measure do you need: perimeter or area?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0030",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "area",
+  "structureType": "areaDims_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 32,
+   "display": {
+    "ap": {
+     "h": 4,
+     "w": 8,
+     "kind": "areaOf"
+    },
+    "promptText": "Compute the area in square cm of a rectangle 8 cm by 4 cm."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0202",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "perimeter",
+  "structureType": "perimDims_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 30,
+   "display": {
+    "ap": {
+     "h": 3,
+     "w": 12,
+     "kind": "perimOf"
+    },
+    "promptText": "Find the perimeter of a 12 cm by 3 cm rectangle in cm."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0431",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "compositeFigures",
+  "structureType": "twoSquares_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 61,
+   "display": {
+    "ap": {
+     "a": 5,
+     "b": 5,
+     "c": 6,
+     "d": 6,
+     "kind": "joinAreas"
+    },
+    "promptText": "Two squares with sides 5 cm and 6 cm combine without overlap. What is the total area in square cm?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0587",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "measureReasoning",
+  "structureType": "labelPick_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "square cm",
+   "choices": [
+    "square cm",
+    "cm"
+   ],
+   "display": {
+    "ap": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "A 7 cm by 4 cm rectangle has area 28. Which unit finishes that: square cm or cm?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0081",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "area",
+  "structureType": "areaLF_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 96,
+   "display": {
+    "ap": {
+     "h": 8,
+     "w": 12,
+     "kind": "areaOf"
+    },
+    "promptText": "Area: 12 x 8 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0255",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "perimeter",
+  "structureType": "perimLF_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 40,
+   "display": {
+    "ap": {
+     "h": 8,
+     "w": 12,
+     "kind": "perimOf"
+    },
+    "promptText": "Perim: 12 + 8 + 12 + 8 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0366",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "compositeFigures",
+  "structureType": "joinAreas_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 120,
+   "display": {
+    "ap": {
+     "a": 12,
+     "b": 8,
+     "c": 6,
+     "d": 4,
+     "kind": "joinAreas"
+    },
+    "promptText": "A composite figure is a 12 m by 8 m rectangle plus a 6 m by 4 m rectangle, no overlap. Compute its area in square m."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0522",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "measureReasoning",
+  "structureType": "whichMeasure_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "perimeter",
+   "choices": [
+    "perimeter",
+    "area"
+   ],
+   "display": {
+    "ap": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "Deciding how to install a railing around a deck calls for which measure: perimeter or area?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0046",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "area",
+  "structureType": "areaDims_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 90,
+   "display": {
+    "ap": {
+     "h": 6,
+     "w": 15,
+     "kind": "areaOf"
+    },
+    "promptText": "The area of a rectangle 15 m long and 6 m wide is how many square m?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0218",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "perimeter",
+  "structureType": "perimDims_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 60,
+   "display": {
+    "ap": {
+     "h": 15,
+     "w": 15,
+     "kind": "perimOf"
+    },
+    "promptText": "Exactly how many m is the perimeter of a 15 m by 15 m rectangle?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0444",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "compositeFigures",
+  "structureType": "twoSquares_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 181,
+   "display": {
+    "ap": {
+     "a": 9,
+     "b": 9,
+     "c": 10,
+     "d": 10,
+     "kind": "joinAreas"
+    },
+    "promptText": "Squares of side 9 m and side 10 m form one non-overlapping figure. Compute its area in square m."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0600",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "measureReasoning",
+  "structureType": "labelPick_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "square m",
+   "choices": [
+    "square m",
+    "m"
+   ],
+   "display": {
+    "ap": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "The area of a 12 m by 8 m rectangle is 96, in which unit: square m or m?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0001",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "barMissingPart_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "part": 7,
+    "type": "barPartWhole",
+    "whole": 12,
+    "counting": {
+     "back": 7,
+     "kind": "countBack",
+     "start": 12
+    },
+    "promptText": "Whole 12, one part 7. The other part = ?"
+   },
+   "answerType": "barModel"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0157",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "comparison",
+  "structureType": "barDiff_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "counting": {
+     "have": 9,
+     "kind": "gap",
+     "target": 14
+    },
+    "promptText": "Long bar 14, short bar 9. The difference = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0313",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "multiplicative",
+  "structureType": "unitsTotal_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      6,
+      6
+     ]
+    },
+    "promptText": "2 equal bar parts of 6 each. The whole = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0469",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "fractionBar",
+  "structureType": "fracOf_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "bar": {
+     "w": 12,
+     "den": 2,
+     "num": 1,
+     "kind": "fracOf"
+    },
+    "promptText": "A bar of 12 is cut into 2 equal pieces. One piece = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0079",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "barWhole_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 13,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      7,
+      6
+     ]
+    },
+    "promptText": "Parts 7 and 6. The whole bar = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0235",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "comparison",
+  "structureType": "barMore_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 14,
+   "display": {
+    "counting": {
+     "kind": "countOn",
+     "more": 5,
+     "start": 9
+    },
+    "promptText": "Short bar 9. The long bar is 5 more. Long bar = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0391",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "multiplicative",
+  "structureType": "unitOf_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "bar": {
+     "k": 2,
+     "w": 12,
+     "kind": "unitOf"
+    },
+    "promptText": "A bar of 12 splits into 2 equal parts. Each part = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0547",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "fractionBar",
+  "structureType": "wholeFromPiece_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      6,
+      6
+     ]
+    },
+    "promptText": "One of 2 equal bar pieces holds 6. The whole bar = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0027",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "barMissingPart_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 18,
+   "display": {
+    "part": 27,
+    "type": "barPartWhole",
+    "whole": 45,
+    "counting": {
+     "back": 27,
+     "kind": "countBack",
+     "start": 45
+    },
+    "promptText": "A whole of 45 splits into 27 and one more part. The missing part = ?"
+   },
+   "answerType": "barModel"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0183",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "comparison",
+  "structureType": "barDiff_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 25,
+   "display": {
+    "counting": {
+     "have": 39,
+     "kind": "gap",
+     "target": 64
+    },
+    "promptText": "Compare bars of 64 and 39. What difference separates them?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0339",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "multiplicative",
+  "structureType": "unitsTotal_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 63,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      21,
+      21,
+      21
+     ]
+    },
+    "promptText": "3 equal sections of 21 line up in one bar. The whole = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0495",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "fractionBar",
+  "structureType": "fracOf_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 21,
+   "display": {
+    "bar": {
+     "w": 84,
+     "den": 4,
+     "num": 1,
+     "kind": "fracOf"
+    },
+    "promptText": "Shade 1 of the 4 equal parts of a 84-bar. What value is shaded?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0105",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "barWhole_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 58,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      27,
+      31
+     ]
+    },
+    "promptText": "A bar joins parts of 27 and 31. The whole = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0261",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "comparison",
+  "structureType": "barMore_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 64,
+   "display": {
+    "counting": {
+     "kind": "countOn",
+     "more": 25,
+     "start": 39
+    },
+    "promptText": "The smaller bar shows 39; the bigger one runs 25 further. Bigger bar = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0417",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "multiplicative",
+  "structureType": "unitOf_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 28,
+   "display": {
+    "bar": {
+     "k": 3,
+     "w": 84,
+     "kind": "unitOf"
+    },
+    "promptText": "Divide a 84-bar into 3 equal sections. One section = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0573",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "fractionBar",
+  "structureType": "wholeFromPiece_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 84,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      28,
+      28,
+      28
+     ]
+    },
+    "promptText": "A single one of 3 equal sections shows 28. The full bar = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0053",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "barMissingPart_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 185,
+   "display": {
+    "part": 267,
+    "type": "barPartWhole",
+    "whole": 452,
+    "counting": {
+     "back": 267,
+     "kind": "countBack",
+     "start": 452
+    },
+    "promptText": "The bar's whole reads 452; one section reads 267. Exactly what does the blank section hold?"
+   },
+   "answerType": "barModel"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0209",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "comparison",
+  "structureType": "barDiff_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 245,
+   "display": {
+    "counting": {
+     "have": 397,
+     "kind": "gap",
+     "target": 642
+    },
+    "promptText": "Bars of 642 and 397: compute the exact difference. What is it?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0365",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "multiplicative",
+  "structureType": "unitsTotal_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 642,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      214,
+      214,
+      214
+     ]
+    },
+    "promptText": "A bar of 3 equal units, 214 apiece. Exactly what is the whole?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0521",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "fractionBar",
+  "structureType": "fracOf_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 212,
+   "display": {
+    "bar": {
+     "w": 848,
+     "den": 4,
+     "num": 1,
+     "kind": "fracOf"
+    },
+    "promptText": "Take exactly 1 of the 4 equal sections of a 848-bar. What amount is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0131",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "barWhole_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 558,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      227,
+      331
+     ]
+    },
+    "promptText": "Sections of 227 and 331 complete one bar. Exactly what is the whole?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0287",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "comparison",
+  "structureType": "barMore_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 642,
+   "display": {
+    "counting": {
+     "kind": "countOn",
+     "more": 245,
+     "start": 397
+    },
+    "promptText": "A base bar of 397 extended by exactly 245. What does the extended bar total?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0443",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "multiplicative",
+  "structureType": "unitOf_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 282,
+   "display": {
+    "bar": {
+     "k": 3,
+     "w": 846,
+     "kind": "unitOf"
+    },
+    "promptText": "Partition 846 into 3 identical units. Exactly what is one unit?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-proc-b0821-0599",
+  "modeId": "barModels",
+  "itemFamily": "procedural",
+  "subskill": "fractionBar",
+  "structureType": "wholeFromPiece_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 846,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      282,
+      282,
+      282
+     ]
+    },
+    "promptText": "One of 3 identical sections carries 282. Exactly what is the whole?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
   "itemId": "comparing-app-001",
   "modeId": "comparing",
   "itemFamily": "application",
@@ -2574,452 +4599,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-proc-benchmarkCompare-23-001",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 47,
-   "b": 50,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Compare 47 and 50."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-23-001",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 18,
-   "b": 25,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Compare 18 and 25."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-symbolSelection-23-001",
+  "itemId": "comparing-proc-b0821-0001",
   "modeId": "comparing",
   "itemFamily": "procedural",
   "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 23,
-   "b": 45,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Compare 23 and 45 with <, >, or =."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-benchmarkCompare-23-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 65,
-   "b": 50,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 65 and 50."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-23-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 75,
-   "b": 42,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 75 and 42."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-symbolSelection-23-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 67,
-   "b": 32,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 67 and 32 with <, >, or =."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-benchmarkCompare-23-003",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 30,
-   "b": 30,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Compare 30 and 30."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-23-003",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 60,
-   "b": 60,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Compare 60 and 60."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-benchmarkCompare-45-001",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 487,
-   "b": 500,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Compare 487 and 500."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-45-001",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 156,
-   "b": 412,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Compare 156 and 412."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-symbolSelection-45-001",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 234,
-   "b": 567,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Compare 234 and 567 with <, >, or =."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-benchmarkCompare-45-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 678,
-   "b": 500,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 678 and 500."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-45-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 789,
-   "b": 321,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 789 and 321."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-symbolSelection-45-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 891,
-   "b": 234,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 891 and 234 with <, >, or =."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-benchmarkCompare-45-003",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 100,
-   "b": 100,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Compare 100 and 100."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-45-003",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 200,
-   "b": 200,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Compare 200 and 200."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-benchmarkCompare-K1-001",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": 5,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Compare 4 and 5."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-K1-001",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 2,
-   "b": 9,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Compare 2 and 9."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-symbolSelection-K1-001",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 5,
-   "b": 8,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Compare 5 and 8 with <, >, or =."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-benchmarkCompare-K1-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": 5,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 7 and 5."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-K1-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": 1,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 8 and 1."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-symbolSelection-K1-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
+  "structureType": "symbolWithin10",
   "levelRange": [
    1,
    3
@@ -3031,37 +4615,66 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": ">",
    "display": {
-    "promptText": "Compare 7 and 4 with <, >, or =."
-   }
+    "promptText": "7 ? 4"
+   },
+   "answerType": "symbolSelect"
   }
  },
  {
-  "itemId": "comparing-proc-benchmarkCompare-K1-003",
+  "itemId": "comparing-proc-b0821-0259",
   "modeId": "comparing",
   "itemFamily": "procedural",
   "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
+  "structureType": "vsFive",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 10,
-   "b": 10,
+   "a": 0,
+   "b": 5,
    "op": "?",
-   "answer": "=",
+   "answer": "<",
    "display": {
-    "promptText": "Compare 10 and 10."
+    "promptText": "0 ? 5"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0412",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "distanceCompare",
+  "structureType": "orderWithin10",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "2, 4, 9",
+   "choices": [
+    "4, 2, 9",
+    "2, 9, 4",
+    "2, 4, 9",
+    "9, 4, 2"
+   ],
+   "display": {
+    "promptText": "Order from smallest to largest: 4, 9, 2."
    }
   }
  },
  {
-  "itemId": "comparing-proc-distanceCompare-K1-003",
+  "itemId": "comparing-proc-b0821-0028",
   "modeId": "comparing",
   "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
+  "subskill": "symbolSelection",
+  "structureType": "symbolWithin10",
   "levelRange": [
    1,
    3
@@ -3069,12 +4682,482 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 5,
-   "b": 5,
+   "b": 1,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "5 ? 1"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0277",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "vsTen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 7,
+   "b": 10,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "7 ? 10"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0466",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "distanceCompare",
+  "structureType": "pickExtremeWithin10",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 3,
+   "choices": [
+    8,
+    3,
+    5
+   ],
+   "display": {
+    "promptText": "Which is the smallest: 3, 8, 5?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0055",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "symbolSelection",
+  "structureType": "symbolClaimJudge",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "promptText": "3 < 9"
+   },
+   "subPrompt": "Is this right?"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0295",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "vsTwenty",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 15,
+   "b": 20,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "15 ? 20"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0080",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "symbolSelection",
+  "structureType": "symbolTwoDigit",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 13,
+   "b": 31,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "13 ? 31"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0310",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "vsFifty",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 12,
+   "b": 50,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "12 ? 50"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0430",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "distanceCompare",
+  "structureType": "orderTwoDigit",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "24, 34, 43",
+   "choices": [
+    "43, 34, 24",
+    "24, 43, 34",
+    "24, 34, 43",
+    "34, 24, 43"
+   ],
+   "display": {
+    "promptText": "Order from smallest to largest: 34, 43, 24."
+   }
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0114",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "symbolSelection",
+  "structureType": "symbolTwoDigit",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 37,
+   "b": 73,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "37 ? 73"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0328",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "vsFifty",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 37,
+   "b": 50,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "37 ? 50"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0447",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "distanceCompare",
+  "structureType": "orderTwoDigit",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "33, 37, 73",
+   "choices": [
+    "73, 37, 33",
+    "37, 33, 73",
+    "33, 73, 37",
+    "33, 37, 73"
+   ],
+   "display": {
+    "promptText": "Line these up, littlest first: 37, 73, 33."
+   }
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0148",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "symbolSelection",
+  "structureType": "expressionCompare",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": "7 + 3",
+   "b": "5 + 5",
    "op": "?",
    "answer": "=",
    "display": {
-    "promptText": "Compare 5 and 5."
+    "promptText": "7 + 3 ? 5 + 5"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0346",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "vsNearestDecade",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 42,
+   "b": 40,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "42 ? 40"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0181",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "symbolSelection",
+  "structureType": "symbolThreeDigit",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 98,
+   "b": 102,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "98 ? 102"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0361",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "vsHundred",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 98,
+   "b": 100,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "98 ? 100"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0448",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "distanceCompare",
+  "structureType": "orderThreeDigit",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "203, 230, 302",
+   "choices": [
+    "302, 230, 203",
+    "203, 230, 302",
+    "230, 203, 302",
+    "203, 302, 230"
+   ],
+   "display": {
+    "promptText": "Order from smallest to largest: 203, 302, 230."
    }
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0208",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "symbolSelection",
+  "structureType": "symbolThreeDigit",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 640,
+   "b": 604,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "640 ? 604"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0379",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "vsHundred",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 118,
+   "b": 100,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "118 ? 100"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0465",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "distanceCompare",
+  "structureType": "orderThreeDigit",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "454, 455, 545",
+   "choices": [
+    "454, 455, 545",
+    "545, 455, 454",
+    "454, 545, 455",
+    "455, 454, 545"
+   ],
+   "display": {
+    "promptText": "Line these up, littlest first: 455, 545, 454."
+   }
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0235",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "symbolSelection",
+  "structureType": "relationalNoCompute",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": "76 + 15",
+   "b": "75 + 14",
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "76 + 15 ? 75 + 14"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0397",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "vsFiveHundred",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 530,
+   "b": 500,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "530 ? 500"
+   },
+   "answerType": "symbolSelect"
   }
  },
  {
@@ -4708,6 +6791,1711 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "dataGraphs-proc-b0821-0001",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "readBar",
+  "structureType": "barRead_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 2
+     },
+     {
+      "label": "puppies",
+      "value": 5
+     },
+     {
+      "label": "bunnies",
+      "value": 3
+     },
+     {
+      "label": "chicks",
+      "value": 7
+     }
+    ],
+    "data": {
+     "kind": "barRead",
+     "label": "kittens"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "The pet fair graph: how many kittens?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0154",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "compareBars",
+  "structureType": "barDiff_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 2
+     },
+     {
+      "label": "puppies",
+      "value": 5
+     },
+     {
+      "label": "bunnies",
+      "value": 3
+     },
+     {
+      "label": "chicks",
+      "value": 7
+     }
+    ],
+    "data": {
+     "a": "chicks",
+     "b": "kittens",
+     "kind": "barDiff"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "The pet fair graph: how many more chicks than kittens?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0307",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "pictograph",
+  "structureType": "pictoRead_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "data": {
+     "kind": "pictoRead",
+     "label": "kittens"
+    },
+    "rows": [
+     {
+      "label": "kittens",
+      "symbols": 2
+     },
+     {
+      "label": "puppies",
+      "symbols": 4
+     }
+    ],
+    "figure": "pictograph",
+    "keyValue": 1,
+    "promptText": "The pet fair picture chart: each picture means 1. How many kittens?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0458",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "dataAnalysis",
+  "structureType": "tallyRead_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "data": {
+     "kind": "tallyRead",
+     "label": "kittens"
+    },
+    "rows": [
+     {
+      "count": 3,
+      "label": "kittens"
+     },
+     {
+      "count": 5,
+      "label": "puppies"
+     }
+    ],
+    "figure": "tallyChart",
+    "promptText": "The pet fair tally chart: how many chose kittens?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0026",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "readBar",
+  "structureType": "barRead_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 1
+     },
+     {
+      "label": "puppies",
+      "value": 8
+     },
+     {
+      "label": "bunnies",
+      "value": 4
+     },
+     {
+      "label": "chicks",
+      "value": 6
+     }
+    ],
+    "data": {
+     "kind": "barRead",
+     "label": "chicks"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Look at the pet fair graph. How many chicks are there?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0179",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "compareBars",
+  "structureType": "barDiffAlt_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "bars": [
+     {
+      "label": "vans",
+      "value": 3
+     },
+     {
+      "label": "bikes",
+      "value": 6
+     },
+     {
+      "label": "buses",
+      "value": 2
+     },
+     {
+      "label": "scooters",
+      "value": 7
+     }
+    ],
+    "data": {
+     "a": "bikes",
+     "b": "vans",
+     "kind": "barDiff"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "In the school ride graph, the bikes bar beats the vans bar by how many votes? Compare carefully."
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0380",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "pictograph",
+  "structureType": "pictoBothRowsTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 9,
+   "display": {
+    "data": {
+     "kind": "pictoBothRows"
+    },
+    "rows": [
+     {
+      "label": "apples",
+      "symbols": 3
+     },
+     {
+      "label": "pears",
+      "symbols": 6
+     }
+    ],
+    "figure": "pictograph",
+    "keyValue": 1,
+    "promptText": "The fruit stand picture chart, key of one: how many pictures in both rows together?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0585",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "dataAnalysis",
+  "structureType": "tallyTotalTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 16,
+   "display": {
+    "data": {
+     "kind": "tallyTotal"
+    },
+    "rows": [
+     {
+      "count": 6,
+      "label": "red"
+     },
+     {
+      "count": 10,
+      "label": "blue"
+     }
+    ],
+    "figure": "tallyChart",
+    "promptText": "In the favorite colors tally chart, how many chose red or blue altogether?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0052",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "readBar",
+  "structureType": "barRead_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 12
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 14
+     },
+     {
+      "label": "chicks",
+      "value": 3
+     }
+    ],
+    "data": {
+     "kind": "barRead",
+     "label": "kittens"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "In the pet fair graph, what count does the kittens bar show?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0205",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "compareBars",
+  "structureType": "barDiff_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 11,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 12
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 14
+     },
+     {
+      "label": "chicks",
+      "value": 3
+     }
+    ],
+    "data": {
+     "a": "bunnies",
+     "b": "chicks",
+     "kind": "barDiff"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Use the pet fair graph. How many more bunnies than chicks does it show?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0331",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "pictograph",
+  "structureType": "pictoRead_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "data": {
+     "kind": "pictoRead",
+     "label": "kittens"
+    },
+    "rows": [
+     {
+      "label": "kittens",
+      "symbols": 2
+     },
+     {
+      "label": "puppies",
+      "symbols": 4
+     }
+    ],
+    "figure": "pictograph",
+    "keyValue": 2,
+    "promptText": "In the pet fair picture chart, each picture means 2. How many kittens?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0482",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "dataAnalysis",
+  "structureType": "tallyRead_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "data": {
+     "kind": "tallyRead",
+     "label": "kittens"
+    },
+    "rows": [
+     {
+      "count": 8,
+      "label": "kittens"
+     },
+     {
+      "count": 10,
+      "label": "puppies"
+     }
+    ],
+    "figure": "tallyChart",
+    "promptText": "Read the pet fair tally chart. How many votes did kittens get?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0077",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "readBar",
+  "structureType": "barRead_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 9,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 13
+     },
+     {
+      "label": "puppies",
+      "value": 8
+     },
+     {
+      "label": "bunnies",
+      "value": 4
+     },
+     {
+      "label": "chicks",
+      "value": 9
+     }
+    ],
+    "data": {
+     "kind": "barRead",
+     "label": "chicks"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Read the pet fair graph carefully. How many chicks does it show?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0230",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "compareBars",
+  "structureType": "barDiffAlt_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "bars": [
+     {
+      "label": "vans",
+      "value": 2
+     },
+     {
+      "label": "bikes",
+      "value": 10
+     },
+     {
+      "label": "buses",
+      "value": 6
+     },
+     {
+      "label": "scooters",
+      "value": 12
+     }
+    ],
+    "data": {
+     "a": "bikes",
+     "b": "buses",
+     "kind": "barDiff"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "From the school ride graph, find the gap between bikes and buses. What is the gap? Compare carefully."
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0407",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "pictograph",
+  "structureType": "pictoSymbolsMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "data": {
+     "n": 10,
+     "key": 2,
+     "kind": "pictoSymbols"
+    },
+    "promptText": "One picture stands for 2. How many pictures show 10?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0507",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "dataAnalysis",
+  "structureType": "barTotal_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 35,
+   "display": {
+    "bars": [
+     {
+      "label": "apples",
+      "value": 9
+     },
+     {
+      "label": "pears",
+      "value": 13
+     },
+     {
+      "label": "plums",
+      "value": 2
+     },
+     {
+      "label": "cherries",
+      "value": 11
+     }
+    ],
+    "data": {
+     "kind": "barTotal"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Add every bar of the fruit stand graph. How many votes were counted in all?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0103",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "readBar",
+  "structureType": "barRead_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 18,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 18
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 12
+     },
+     {
+      "label": "chicks",
+      "value": 20
+     }
+    ],
+    "data": {
+     "kind": "barRead",
+     "label": "kittens"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "The pet fair graph is scaled — read carefully. How many kittens does it show?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0256",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "compareBars",
+  "structureType": "barDiff_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 13,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 18
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 12
+     },
+     {
+      "label": "chicks",
+      "value": 20
+     }
+    ],
+    "data": {
+     "a": "chicks",
+     "b": "puppies",
+     "kind": "barDiff"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "The scaled pet fair graph: exactly how many more chicks than puppies?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0355",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "pictograph",
+  "structureType": "pictoRead_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 20,
+   "display": {
+    "data": {
+     "kind": "pictoRead",
+     "label": "kittens"
+    },
+    "rows": [
+     {
+      "label": "kittens",
+      "symbols": 2
+     },
+     {
+      "label": "puppies",
+      "symbols": 4
+     }
+    ],
+    "figure": "pictograph",
+    "keyValue": 10,
+    "promptText": "The pet fair picture chart uses a key of 10. Exactly how many kittens?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0518",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "dataAnalysis",
+  "structureType": "barTotal_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 57,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 18
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 12
+     },
+     {
+      "label": "chicks",
+      "value": 20
+     }
+    ],
+    "data": {
+     "kind": "barTotal"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Sum the whole pet fair graph, bar by bar. What total does it hold?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0128",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "readBar",
+  "structureType": "barRead_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 15,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 11
+     },
+     {
+      "label": "puppies",
+      "value": 18
+     },
+     {
+      "label": "bunnies",
+      "value": 8
+     },
+     {
+      "label": "chicks",
+      "value": 15
+     }
+    ],
+    "data": {
+     "kind": "barRead",
+     "label": "chicks"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "From the pet fair graph, find the precise count. How many chicks is that?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0281",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "compareBars",
+  "structureType": "barDiffAlt_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "bars": [
+     {
+      "label": "vans",
+      "value": 19
+     },
+     {
+      "label": "bikes",
+      "value": 3
+     },
+     {
+      "label": "buses",
+      "value": 16
+     },
+     {
+      "label": "scooters",
+      "value": 12
+     }
+    ],
+    "data": {
+     "a": "buses",
+     "b": "scooters",
+     "kind": "barDiff"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Compute the exact buses-minus-scooters gap in the school ride graph. What is the gap? Compare carefully."
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0433",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "pictograph",
+  "structureType": "pictoSymbolsBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "data": {
+     "n": 70,
+     "key": 10,
+     "kind": "pictoSymbols"
+    },
+    "promptText": "With a key of 10 per picture, how many pictures make 70?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-proc-b0821-0543",
+  "modeId": "dataGraphs",
+  "itemFamily": "procedural",
+  "subskill": "dataAnalysis",
+  "structureType": "barTotalSkipBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 24,
+   "display": {
+    "bars": [
+     {
+      "label": "apples",
+      "value": 9
+     },
+     {
+      "label": "pears",
+      "value": 13
+     },
+     {
+      "label": "plums",
+      "value": 2
+     },
+     {
+      "label": "cherries",
+      "value": 11
+     }
+    ],
+    "data": {
+     "kind": "barTotalSkip",
+     "skip": "cherries"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Add every fruit stand bar EXCEPT cherries. What total is left?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0157",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "tenthsHundredths",
+  "structureType": "fillNumerator_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 1,
+   "display": {
+    "dec": {
+     "n": 1,
+     "kind": "jumpsDec"
+    },
+    "promptText": "0.1 = ?/10"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0196",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "fractionToDecimal",
+  "structureType": "fracToDec_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.1,
+   "display": {
+    "dec": {
+     "d": 10,
+     "n": 1,
+     "kind": "fromFraction"
+    },
+    "promptText": "1/10 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0349",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "compareDecimals",
+  "structureType": "cmpSymbol_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "<",
+   "choices": [
+    "<",
+    "=",
+    ">"
+   ],
+   "display": {
+    "dec": {
+     "a": 0.3,
+     "b": 0.7,
+     "kind": "cmpDec"
+    },
+    "promptText": "0.3 ? 0.7"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0505",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "decimalAsNumber",
+  "structureType": "countOn_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.3,
+   "display": {
+    "dec": {
+     "k": 3,
+     "kind": "countOnDec",
+     "step": 0.1,
+     "start": 0
+    },
+    "promptText": "0, 0.1, 0.2, ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0046",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "tenthsHundredths",
+  "structureType": "shadeDecimal_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.7,
+   "display": {
+    "dec": {
+     "n": 7,
+     "kind": "tenths"
+    },
+    "promptText": "A strip has 10 equal parts. Exactly 7 parts are colored. The decimal for the colored amount = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0255",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "fractionToDecimal",
+  "structureType": "decToFrac_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "9/10",
+   "choices": [
+    "9/10",
+    "10/9",
+    "9/100",
+    "9/1"
+   ],
+   "display": {
+    "dec": {
+     "d": 10,
+     "n": 9,
+     "kind": "toFraction"
+    },
+    "promptText": "The decimal 0.9 equals which fraction? Pick it."
+   }
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0411",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "compareDecimals",
+  "structureType": "biggerPick_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "0.7",
+   "choices": [
+    "0.7",
+    "0.5"
+   ],
+   "display": {
+    "dec": {
+     "a": 0.5,
+     "b": 0.7,
+     "kind": "cmpPickDec",
+     "labels": [
+      "0.5",
+      "0.7"
+     ]
+    },
+    "promptText": "Which decimal is larger: 0.5 or 0.7? Pick it."
+   }
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0562",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "decimalAsNumber",
+  "structureType": "tickRead_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.4,
+   "display": {
+    "dec": {
+     "k": 4,
+     "den": 10,
+     "kind": "tickDec"
+    },
+    "promptText": "Step 4 of 10 along a 0-1 line lands on which decimal? Type it."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0170",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "tenthsHundredths",
+  "structureType": "fillNumerator_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 15,
+   "display": {
+    "dec": {
+     "h": 5,
+     "t": 1,
+     "kind": "asHundredths"
+    },
+    "promptText": "0.15 = ?/100"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0213",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "fractionToDecimal",
+  "structureType": "fracToDec_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.25,
+   "display": {
+    "dec": {
+     "d": 100,
+     "n": 25,
+     "kind": "fromFraction"
+    },
+    "promptText": "25/100 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0367",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "compareDecimals",
+  "structureType": "cmpSymbol_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": ">",
+   "choices": [
+    ">",
+    "<",
+    "="
+   ],
+   "display": {
+    "dec": {
+     "a": 0.5,
+     "b": 0.45,
+     "kind": "cmpDec"
+    },
+    "promptText": "0.5 ? 0.45"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0523",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "decimalAsNumber",
+  "structureType": "countOn_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 1.2,
+   "display": {
+    "dec": {
+     "k": 3,
+     "kind": "countOnDec",
+     "step": 0.1,
+     "start": 0.9
+    },
+    "promptText": "0.9, 1, 1.1, ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0059",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "tenthsHundredths",
+  "structureType": "shadeDecimal_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.66,
+   "display": {
+    "dec": {
+     "h": 66,
+     "kind": "gridShade"
+    },
+    "promptText": "A 10-by-10 grid has exactly 66 of its 100 small squares colored. The decimal for the colored part = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0272",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "fractionToDecimal",
+  "structureType": "decToFrac_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "88/100",
+   "choices": [
+    "88/100",
+    "100/88",
+    "88/10",
+    "89/100"
+   ],
+   "display": {
+    "dec": {
+     "d": 100,
+     "n": 88,
+     "kind": "toFraction"
+    },
+    "promptText": "Choose the fraction equal to the decimal 0.88."
+   }
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0428",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "compareDecimals",
+  "structureType": "biggerPick_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "0.44",
+   "choices": [
+    "0.4",
+    "0.44"
+   ],
+   "display": {
+    "dec": {
+     "a": 0.44,
+     "b": 0.4,
+     "kind": "cmpPickDec",
+     "labels": [
+      "0.44",
+      "0.4"
+     ]
+    },
+    "promptText": "Select the larger of 0.44 and 0.4."
+   }
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0579",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "decimalAsNumber",
+  "structureType": "tickRead_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.4,
+   "display": {
+    "dec": {
+     "k": 4,
+     "den": 10,
+     "kind": "tickDec"
+    },
+    "promptText": "Between 0 and 1, mark 4 of 10 sits at which decimal? Type it."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0183",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "tenthsHundredths",
+  "structureType": "fillNumerator_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 125,
+   "display": {
+    "dec": {
+     "h": 5,
+     "t": 2,
+     "w": 1,
+     "kind": "asHundredthsAll"
+    },
+    "promptText": "1.25 = ?/100"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0230",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "fractionToDecimal",
+  "structureType": "fracToDec_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.45,
+   "display": {
+    "dec": {
+     "d": 100,
+     "n": 45,
+     "kind": "fromFraction"
+    },
+    "promptText": "45/100 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0385",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "compareDecimals",
+  "structureType": "cmpSymbol_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "<",
+   "choices": [
+    "<",
+    "=",
+    ">"
+   ],
+   "display": {
+    "dec": {
+     "a": 3.45,
+     "b": 3.5,
+     "kind": "cmpDec"
+    },
+    "promptText": "3.45 ? 3.5"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0541",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "decimalAsNumber",
+  "structureType": "countOn_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.14,
+   "display": {
+    "dec": {
+     "k": 3,
+     "kind": "countOnDec",
+     "step": 0.01,
+     "start": 0.11
+    },
+    "promptText": "0.11, 0.12, 0.13, ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0072",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "tenthsHundredths",
+  "structureType": "shadeDecimal_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.61,
+   "display": {
+    "dec": {
+     "h": 61,
+     "kind": "gridShade"
+    },
+    "promptText": "A hundred-square chart shows 61 of 100 squares filled. Type the filled amount as a decimal."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0289",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "fractionToDecimal",
+  "structureType": "decToFrac_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "36/100",
+   "choices": [
+    "36/10",
+    "37/100",
+    "36/100",
+    "100/36"
+   ],
+   "display": {
+    "dec": {
+     "d": 100,
+     "n": 36,
+     "kind": "toFraction"
+    },
+    "promptText": "Identify the exact fraction for the decimal 0.36."
+   }
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0445",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "compareDecimals",
+  "structureType": "biggerPick_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "8.3",
+   "choices": [
+    "8.29",
+    "8.3"
+   ],
+   "display": {
+    "dec": {
+     "a": 8.3,
+     "b": 8.29,
+     "kind": "cmpPickDec",
+     "labels": [
+      "8.3",
+      "8.29"
+     ]
+    },
+    "promptText": "Identify the larger decimal: 8.3 or 8.29."
+   }
+  }
+ },
+ {
+  "itemId": "decimals-proc-b0821-0596",
+  "modeId": "decimals",
+  "itemFamily": "procedural",
+  "subskill": "decimalAsNumber",
+  "structureType": "tickRead_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.35,
+   "display": {
+    "dec": {
+     "k": 35,
+     "den": 100,
+     "kind": "tickDec"
+    },
+    "promptText": "Between 0 and 1, mark 35 of 100 corresponds to which decimal? Type it."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
   "itemId": "division-app-001",
   "modeId": "division",
   "itemFamily": "application",
@@ -6265,6 +10053,3528 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "factorsMultiples-proc-b0821-0040",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorCount",
+  "structureType": "missingFactor_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "fm": {
+     "a": 3,
+     "n": 12,
+     "kind": "pairFor"
+    },
+    "promptText": "12 = 3 x ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0205",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "nthMultiple",
+  "structureType": "multipleSeq_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "fm": {
+     "b": 2,
+     "k": 4,
+     "kind": "nthMult"
+    },
+    "promptText": "x2: 2, 4, 6, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0354",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorPairs",
+  "structureType": "pairRows_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "fm": {
+     "a": 4,
+     "n": 12,
+     "kind": "pairFor"
+    },
+    "promptText": "12 = ? x 4"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0471",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "primesAndCommon",
+  "structureType": "primePick_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "choices": [
+    9,
+    4,
+    6,
+    5
+   ],
+   "display": {
+    "fm": {
+     "kind": "primePick"
+    },
+    "promptText": "Which of these is a prime number: 9, 4, 6, 5? Pick it."
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0079",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorCount",
+  "structureType": "pickFactor_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "choices": [
+    7,
+    11,
+    5,
+    3
+   ],
+   "display": {
+    "fm": {
+     "n": 12,
+     "kind": "pickFactor"
+    },
+    "promptText": "Which of 7, 11, 5, 3 is a factor of 12? Pick it."
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0237",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "nthMultiple",
+  "structureType": "nextMultiple_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "fm": {
+     "b": 2,
+     "m": 8,
+     "kind": "nextMult"
+    },
+    "promptText": "Which multiple of 2 comes right after 8? Type it."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0393",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorPairs",
+  "structureType": "pairPick_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "3 x 4",
+   "choices": [
+    "4 x 5",
+    "2 x 5",
+    "3 x 5",
+    "3 x 4"
+   ],
+   "display": {
+    "fm": {
+     "n": 12,
+     "kind": "pairPick"
+    },
+    "promptText": "Which pair multiplies to 12: 4 x 5, 2 x 5, 3 x 5, 3 x 4? Pick it."
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0549",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "primesAndCommon",
+  "structureType": "commonMultiple_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "fm": {
+     "a": 2,
+     "b": 3,
+     "kind": "lcmOf"
+    },
+    "promptText": "What is the smallest number that is a multiple of both 2 and 3? Type it."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0053",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorCount",
+  "structureType": "missingFactor_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "fm": {
+     "a": 2,
+     "n": 14,
+     "kind": "pairFor"
+    },
+    "promptText": "14 = 2 x ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0212",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "nthMultiple",
+  "structureType": "multipleSeq_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 24,
+   "display": {
+    "fm": {
+     "b": 6,
+     "k": 4,
+     "kind": "nthMult"
+    },
+    "promptText": "x6: 6, 12, 18, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0367",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorPairs",
+  "structureType": "pairRows_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "fm": {
+     "a": 7,
+     "n": 14,
+     "kind": "pairFor"
+    },
+    "promptText": "14 = ? x 7"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0484",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "primesAndCommon",
+  "structureType": "primePick_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 17,
+   "choices": [
+    16,
+    15,
+    18,
+    17
+   ],
+   "display": {
+    "fm": {
+     "kind": "primePick"
+    },
+    "promptText": "Select the prime number: 16, 15, 18, 17. Which is it?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0092",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorCount",
+  "structureType": "pickFactor_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "choices": [
+    4,
+    3,
+    5,
+    7
+   ],
+   "display": {
+    "fm": {
+     "n": 14,
+     "kind": "pickFactor"
+    },
+    "promptText": "Select the factor of 14 from 4, 3, 5, 7. Which is it?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0188",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "nthMultiple",
+  "structureType": "nthMultiple_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 48,
+   "display": {
+    "fm": {
+     "b": 8,
+     "k": 6,
+     "kind": "nthMult"
+    },
+    "promptText": "The 6th entry in the multiples of 8 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0406",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorPairs",
+  "structureType": "pairPick_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "2 x 7",
+   "choices": [
+    "4 x 4",
+    "2 x 6",
+    "2 x 7",
+    "3 x 5"
+   ],
+   "display": {
+    "fm": {
+     "n": 14,
+     "kind": "pairPick"
+    },
+    "promptText": "Select the factor pair of 14 from 4 x 4, 2 x 6, 2 x 7, 3 x 5. Which is it?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0562",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "primesAndCommon",
+  "structureType": "commonMultiple_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "fm": {
+     "a": 4,
+     "b": 6,
+     "kind": "lcmOf"
+    },
+    "promptText": "Find the least common multiple of 4 and 6."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0066",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorCount",
+  "structureType": "missingFactor_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "fm": {
+     "a": 4,
+     "n": 32,
+     "kind": "pairFor"
+    },
+    "promptText": "32 = 4 x ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0220",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "nthMultiple",
+  "structureType": "multipleSeq_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 44,
+   "display": {
+    "fm": {
+     "b": 11,
+     "k": 4,
+     "kind": "nthMult"
+    },
+    "promptText": "x11: 11, 22, 33, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0380",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorPairs",
+  "structureType": "pairRows_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "fm": {
+     "a": 16,
+     "n": 32,
+     "kind": "pairFor"
+    },
+    "promptText": "32 = ? x 16"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0497",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "primesAndCommon",
+  "structureType": "primePick_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 31,
+   "choices": [
+    31,
+    32,
+    34,
+    33
+   ],
+   "display": {
+    "fm": {
+     "kind": "primePick"
+    },
+    "promptText": "Identify the prime number in 31, 32, 34, 33. Which is it?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0105",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorCount",
+  "structureType": "pickFactor_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "choices": [
+    8,
+    3,
+    6,
+    5
+   ],
+   "display": {
+    "fm": {
+     "n": 32,
+     "kind": "pickFactor"
+    },
+    "promptText": "Identify the factor of 32 within 8, 3, 6, 5. Which is it?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0204",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "nthMultiple",
+  "structureType": "nthMultiple_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 60,
+   "display": {
+    "fm": {
+     "b": 15,
+     "k": 4,
+     "kind": "nthMult"
+    },
+    "promptText": "The multiples of 15 reach which value at position 4? Type it."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0419",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "factorPairs",
+  "structureType": "pairPick_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "4 x 8",
+   "choices": [
+    "5 x 6",
+    "3 x 10",
+    "4 x 8",
+    "4 x 7"
+   ],
+   "display": {
+    "fm": {
+     "n": 32,
+     "kind": "pairPick"
+    },
+    "promptText": "Identify the factor pair of 32 within 5 x 6, 3 x 10, 4 x 8, 4 x 7. Which is it?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-proc-b0821-0575",
+  "modeId": "factorsMultiples",
+  "itemFamily": "procedural",
+  "subskill": "primesAndCommon",
+  "structureType": "commonMultiple_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 36,
+   "display": {
+    "fm": {
+     "a": 12,
+     "b": 18,
+     "kind": "lcmOf"
+    },
+    "promptText": "Compute the least common multiple of 12 and 18 exactly."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0001",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "shadeName_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "1/2",
+   "choices": [
+    "1/2",
+    "1/1",
+    "2/1"
+   ],
+   "display": {
+    "frac": {
+     "d": 2,
+     "n": 1,
+     "kind": "name"
+    },
+    "promptText": "1 of 2 equal parts is shaded. The shaded fraction = ?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0163",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "fractionAsNumber",
+  "structureType": "unitMeaning_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "frac": {
+     "d": 2,
+     "kind": "unitCount"
+    },
+    "promptText": "The fraction 1/2 means 1 of ? equal parts"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0323",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "equivalence",
+  "structureType": "scaleUp_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "frac": {
+     "a": 1,
+     "b": 2,
+     "d2": 4,
+     "kind": "equivNum"
+    },
+    "promptText": "1/2 = ?/4. What is the missing top number?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0473",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "compareFractions",
+  "structureType": "sameDenCmp_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "<",
+   "choices": [
+    ">",
+    "=",
+    "<"
+   ],
+   "display": {
+    "frac": {
+     "a": 1,
+     "b": 3,
+     "c": 2,
+     "d": 3,
+     "kind": "cmp"
+    },
+    "promptText": "Which symbol fits: 1/3 ? 2/3 — pick <, >, or =."
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0628",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "addLikeDenominators",
+  "structureType": "addLike_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "2/2",
+   "choices": [
+    "3/2",
+    "2/2",
+    "2/4",
+    "4/2"
+   ],
+   "display": {
+    "frac": {
+     "a": 1,
+     "b": 1,
+     "d": 2,
+     "kind": "addLike"
+    },
+    "promptText": "1/2 + 1/2 = ? Pick the sum."
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0792",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "fractionOfSet",
+  "structureType": "ofSet_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "frac": {
+     "d": 2,
+     "n": 1,
+     "w": 12,
+     "kind": "ofSet"
+    },
+    "promptText": "1/2 of 12 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0076",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "wholeParts_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "frac": {
+     "d": 2,
+     "kind": "unitCount"
+    },
+    "promptText": "One whole cut into halves: how many parts is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0225",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "fractionAsNumber",
+  "structureType": "tickName_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "1/3",
+   "choices": [
+    "3/1",
+    "1/3",
+    "1/4"
+   ],
+   "display": {
+    "frac": {
+     "d": 3,
+     "n": 1,
+     "kind": "name"
+    },
+    "promptText": "Walk a 0-1 path in 3 equal steps. Where are you after step 1? Pick the fraction."
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0013",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "shadeName_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "2/5",
+   "choices": [
+    "5/2",
+    "3/5",
+    "2/5",
+    "2/3"
+   ],
+   "display": {
+    "frac": {
+     "d": 5,
+     "n": 2,
+     "kind": "name"
+    },
+    "promptText": "Shade 2 out of 5 equal parts. What fraction is that?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0169",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "fractionAsNumber",
+  "structureType": "unitMeaning_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "frac": {
+     "d": 5,
+     "kind": "unitCount"
+    },
+    "promptText": "1/5 stands for one piece out of how many equal pieces?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0335",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "equivalence",
+  "structureType": "scaleUp_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "frac": {
+     "a": 1,
+     "b": 2,
+     "d2": 10,
+     "kind": "equivNum"
+    },
+    "promptText": "Scale 1/2 up to denominator 10. The numerator becomes ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0485",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "compareFractions",
+  "structureType": "sameDenCmp_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "<",
+   "choices": [
+    "=",
+    "<",
+    ">"
+   ],
+   "display": {
+    "frac": {
+     "a": 2,
+     "b": 5,
+     "c": 4,
+     "d": 5,
+     "kind": "cmp"
+    },
+    "promptText": "Same bottoms: 2/5 versus 4/5. Choose <, >, or =."
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0640",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "addLikeDenominators",
+  "structureType": "addLike_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "4/5",
+   "choices": [
+    "6/5",
+    "4/10",
+    "5/5",
+    "4/5"
+   ],
+   "display": {
+    "frac": {
+     "a": 2,
+     "b": 2,
+     "d": 5,
+     "kind": "addLike"
+    },
+    "promptText": "Sum the like fractions 2/5 + 2/5. What do you get?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0817",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "fractionOfSet",
+  "structureType": "ofSet_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 9,
+   "display": {
+    "frac": {
+     "d": 5,
+     "n": 1,
+     "w": 45,
+     "kind": "ofSet"
+    },
+    "promptText": "Take 1/5 of the number 45. What do you get?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0080",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "wholeParts_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "frac": {
+     "d": 5,
+     "kind": "unitCount"
+    },
+    "promptText": "Count the fifths in one whole. How many parts are there?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0236",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "fractionAsNumber",
+  "structureType": "tickName_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "1/6",
+   "choices": [
+    "6/1",
+    "1/7",
+    "1/6"
+   ],
+   "display": {
+    "frac": {
+     "d": 6,
+     "n": 1,
+     "kind": "name"
+    },
+    "promptText": "A ruler from 0 to 1 carries 6 equal steps. Step 1 points at which fraction?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0025",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "shadeName_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "3/10",
+   "choices": [
+    "3/7",
+    "10/3",
+    "7/10",
+    "3/10"
+   ],
+   "display": {
+    "frac": {
+     "d": 10,
+     "n": 3,
+     "kind": "name"
+    },
+    "promptText": "Exactly 3 of the 10 equal sections are filled. Which fraction names the filled amount?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0175",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "fractionAsNumber",
+  "structureType": "unitMeaning_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "frac": {
+     "d": 10,
+     "kind": "unitCount"
+    },
+    "promptText": "Reading 1/10 as a number: the whole was partitioned how many ways?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0347",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "equivalence",
+  "structureType": "scaleUp_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 14,
+   "display": {
+    "frac": {
+     "a": 7,
+     "b": 10,
+     "d2": 20,
+     "kind": "equivNum"
+    },
+    "promptText": "Convert 7/10 exactly to ?/20. What numerator is required?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0497",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "compareFractions",
+  "structureType": "sameDenCmp_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "<",
+   "choices": [
+    ">",
+    "=",
+    "<"
+   ],
+   "display": {
+    "frac": {
+     "a": 3,
+     "b": 10,
+     "c": 7,
+     "d": 10,
+     "kind": "cmp"
+    },
+    "promptText": "Precisely relate 3/10 to 7/10. Which of <, >, = is true?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0652",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "addLikeDenominators",
+  "structureType": "addLike_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "7/10",
+   "choices": [
+    "8/10",
+    "7/10",
+    "7/20",
+    "1/10"
+   ],
+   "display": {
+    "frac": {
+     "a": 3,
+     "b": 4,
+     "d": 10,
+     "kind": "addLike"
+    },
+    "promptText": "Compute exactly: 3/10 + 4/10. Which fraction is the sum?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0842",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "fractionOfSet",
+  "structureType": "ofSet_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 24,
+   "display": {
+    "frac": {
+     "d": 10,
+     "n": 1,
+     "w": 240,
+     "kind": "ofSet"
+    },
+    "promptText": "Compute exactly 1/10 of 240. What is the result?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0084",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "wholeParts_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "frac": {
+     "d": 10,
+     "kind": "unitCount"
+    },
+    "promptText": "One whole measured in tenths holds how many parts?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0248",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "fractionAsNumber",
+  "structureType": "tickName_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "11/12",
+   "choices": [
+    "11/13",
+    "11/12",
+    "12/11",
+    "10/12"
+   ],
+   "display": {
+    "frac": {
+     "d": 12,
+     "n": 11,
+     "kind": "name"
+    },
+    "promptText": "Of 12 evenly spaced marks between 0 and 1, mark 11 corresponds to which fraction?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0001",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeSides",
+  "structureType": "namedSides_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "shapeC": {
+     "kind": "sidesByName",
+     "name": "triangle"
+    },
+    "promptText": "How many sides does a triangle have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0187",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "symmetryLines",
+  "structureType": "foldMatchTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "authored"
+    },
+    "promptText": "Fold a square straight down the middle. Do the two halves match exactly?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0320",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeProperties",
+  "structureType": "rightAngles_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "shapeC": {
+     "kind": "rightAnglesByName",
+     "name": "square"
+    },
+    "promptText": "How many right angles does a square have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0474",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeClassification",
+  "structureType": "whichIs_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1,
+   "display": {
+    "shapeC": {
+     "kind": "select",
+     "predicate": {
+      "name": "triangle",
+      "type": "isName"
+     },
+     "correctIdx": 1,
+     "optionKeys": [
+      "square",
+      "triangleEquilateral",
+      "pentagon",
+      "rectangle"
+     ]
+    },
+    "options": [
+     {
+      "shape": "square",
+      "value": 0,
+      "rotate": 0
+     },
+     {
+      "shape": "triangleEquilateral",
+      "value": 1,
+      "rotate": 15
+     },
+     {
+      "shape": "pentagon",
+      "value": 2,
+      "rotate": 0
+     },
+     {
+      "shape": "rectangle",
+      "value": 3,
+      "rotate": 15
+     }
+    ],
+    "shapeMode": "select",
+    "promptText": "Round 1: which one is a triangle?"
+   },
+   "answerType": "shapeFigure"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0630",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "lineFigures",
+  "structureType": "endpoints_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "shapeC": {
+     "n": 2,
+     "kind": "endpoints",
+     "figure": "line segment"
+    },
+    "promptText": "How many endpoints does a line segment have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0071",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeSides",
+  "structureType": "figSides_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "shape": "square",
+    "rotate": 15,
+    "shapeC": {
+     "key": "square",
+     "kind": "sides"
+    },
+    "shapeMode": "count",
+    "promptText": "Shape 6: count its sides. How many sides are there?"
+   },
+   "answerType": "shapeFigure"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0212",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "symmetryLines",
+  "structureType": "foldMatchTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": false,
+    "shapeC": {
+     "kind": "authored"
+    },
+    "promptText": "Nora folds a paper letter L shape along its long stroke. Will the halves line up exactly?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0377",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeProperties",
+  "structureType": "equalSidesTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "shapeC": {
+     "kind": "sidesByName",
+     "name": "square"
+    },
+    "promptText": "A square has all its sides the same length. How many sides are the same?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0017",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeSides",
+  "structureType": "namedSides_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "shapeC": {
+     "kind": "sidesByName",
+     "name": "right triangle"
+    },
+    "promptText": "How many sides does a right triangle have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0157",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "symmetryLines",
+  "structureType": "namedSymmetry_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "shapeC": {
+     "kind": "symmetryByName",
+     "name": "square"
+    },
+    "promptText": "How many lines of symmetry does a square have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0344",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeProperties",
+  "structureType": "rightAngles_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 0,
+   "display": {
+    "shapeC": {
+     "kind": "rightAnglesByName",
+     "name": "trapezoid"
+    },
+    "promptText": "Count the right angles of a trapezoid. How many right angles are there?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0486",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeClassification",
+  "structureType": "whichIs_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1,
+   "display": {
+    "shapeC": {
+     "kind": "select",
+     "predicate": {
+      "name": "trapezoid",
+      "type": "isName"
+     },
+     "correctIdx": 1,
+     "optionKeys": [
+      "square",
+      "trapezoid",
+      "rectangle",
+      "triangleEquilateral"
+     ]
+    },
+    "options": [
+     {
+      "shape": "square",
+      "value": 0,
+      "rotate": 15
+     },
+     {
+      "shape": "trapezoid",
+      "value": 1,
+      "rotate": 30
+     },
+     {
+      "shape": "rectangle",
+      "value": 2,
+      "rotate": 45
+     },
+     {
+      "shape": "triangleEquilateral",
+      "value": 3,
+      "rotate": 15
+     }
+    ],
+    "shapeMode": "select",
+    "promptText": "Round 1: the shapes are tilted. Which one is a trapezoid?"
+   },
+   "answerType": "shapeFigure"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0636",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "lineFigures",
+  "structureType": "endpoints_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "shapeC": {
+     "n": 2,
+     "kind": "endpoints",
+     "figure": "line segment"
+    },
+    "promptText": "How many endpoints does a line segment have? Think before typing."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0091",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeSides",
+  "structureType": "figSides_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "shape": "triangleRight",
+    "rotate": 30,
+    "shapeC": {
+     "key": "triangleRight",
+     "kind": "sides"
+    },
+    "shapeMode": "count",
+    "promptText": "Figure 2 is tilted — count the sides anyway. How many sides?"
+   },
+   "answerType": "shapeFigure"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0247",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "symmetryLines",
+  "structureType": "symSum_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      6,
+      4
+     ]
+    },
+    "promptText": "Add the lines of symmetry of a hexagon and a square. What is the total?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0395",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeProperties",
+  "structureType": "diagonals_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "shapeC": {
+     "n": 2,
+     "kind": "diagonals",
+     "name": "trapezoid"
+    },
+    "promptText": "Count the diagonals of a trapezoid. How many diagonals are there?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0041",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeSides",
+  "structureType": "namedSides_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "shapeC": {
+     "kind": "sidesByName",
+     "name": "scalene triangle"
+    },
+    "promptText": "How many sides does a scalene triangle have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0173",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "symmetryLines",
+  "structureType": "namedSymmetry_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "shapeC": {
+     "kind": "symmetryByName",
+     "name": "octagon"
+    },
+    "promptText": "Exactly how many lines of symmetry does a octagon have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0360",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeProperties",
+  "structureType": "rightAngles_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 0,
+   "display": {
+    "shapeC": {
+     "kind": "rightAnglesByName",
+     "name": "octagon"
+    },
+    "promptText": "Exactly how many right angles does a octagon contain?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0498",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeClassification",
+  "structureType": "whichIs_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1,
+   "display": {
+    "shapeC": {
+     "kind": "select",
+     "predicate": {
+      "name": "octagon",
+      "type": "isName"
+     },
+     "correctIdx": 1,
+     "optionKeys": [
+      "hexagon",
+      "octagon",
+      "pentagon",
+      "trapezoid"
+     ]
+    },
+    "options": [
+     {
+      "shape": "hexagon",
+      "value": 0,
+      "rotate": 30
+     },
+     {
+      "shape": "octagon",
+      "value": 1,
+      "rotate": 45
+     },
+     {
+      "shape": "pentagon",
+      "value": 2,
+      "rotate": 60
+     },
+     {
+      "shape": "trapezoid",
+      "value": 3,
+      "rotate": 30
+     }
+    ],
+    "shapeMode": "select",
+    "promptText": "Round 1: even turned around, one of these is a octagon. Which one?"
+   },
+   "answerType": "shapeFigure"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0642",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "lineFigures",
+  "structureType": "endpoints_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "shapeC": {
+     "n": 2,
+     "kind": "endpoints",
+     "figure": "line segment"
+    },
+    "promptText": "How many endpoints does a line segment have? Recall the exact definition."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0113",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeSides",
+  "structureType": "figSides_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "shape": "square",
+    "rotate": 30,
+    "shapeC": {
+     "key": "square",
+     "kind": "sides"
+    },
+    "shapeMode": "count",
+    "promptText": "Study figure 4 closely. Exactly how many sides does it have?"
+   },
+   "answerType": "shapeFigure"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0269",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "symmetryLines",
+  "structureType": "symSum_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      8,
+      2
+     ]
+    },
+    "promptText": "Combine the symmetry lines of a octagon and a rectangle. Exactly how many lines is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0409",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeProperties",
+  "structureType": "diagonals_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "shapeC": {
+     "n": 5,
+     "kind": "diagonals",
+     "name": "pentagon"
+    },
+    "promptText": "Exactly how many diagonals does a pentagon contain?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0001",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "lengthConvert",
+  "structureType": "longerByTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "counting": {
+     "have": 7,
+     "kind": "gap",
+     "target": 12
+    },
+    "promptText": "A 12 cm ribbon and a 7 cm ribbon. The first is longer by ? cm"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0157",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "massVolumeConvert",
+  "structureType": "heavierByTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "counting": {
+     "have": 7,
+     "kind": "gap",
+     "target": 12
+    },
+    "promptText": "A 12 kg box and a 7 kg box. The first is heavier by ? kg"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0313",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkEstimate",
+  "structureType": "magnitudePickTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "18 cm",
+   "choices": [
+    "18 cm",
+    "18 m"
+   ],
+   "display": {
+    "measure": {
+     "kind": "pickLabel"
+    },
+    "promptText": "a pencil: about 18 cm or 18 m?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0468",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "compareOrder",
+  "structureType": "sameUnitPickTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "12 cm",
+   "choices": [
+    "12 cm",
+    "9 cm"
+   ],
+   "display": {
+    "measure": {
+     "a": 12,
+     "b": 9,
+     "kind": "cmp",
+     "pickLarger": true
+    },
+    "promptText": "Which is more: 12 cm or 9 cm?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0624",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "multiStepMeasure",
+  "structureType": "joinLengthsTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 13,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      7,
+      6
+     ]
+    },
+    "promptText": "A 7 cm strip taped to a 6 cm strip = ? cm"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0027",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "lengthConvert",
+  "structureType": "iterateTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      3,
+      3,
+      3,
+      3
+     ]
+    },
+    "promptText": "4 paperclips, each 3 cm long, laid end to end = ? cm"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0183",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "massVolumeConvert",
+  "structureType": "pourTogether",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 15,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      8,
+      7
+     ]
+    },
+    "promptText": "Pour 8 L and 7 L into one tub. The tub holds ? L"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0338",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkEstimate",
+  "structureType": "benchmarkPickTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "3 cm",
+   "choices": [
+    "3 m",
+    "3 cm",
+    "3 mm",
+    "3 km"
+   ],
+   "display": {
+    "measure": {
+     "kind": "pickLabel"
+    },
+    "promptText": "About how long is a paperclip?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0053",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "lengthConvert",
+  "structureType": "convertDownMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 300,
+   "display": {
+    "measure": {
+     "kind": "convert",
+     "pair": "m>cm",
+     "amount": 3
+    },
+    "promptText": "3 m = ? cm"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0209",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "massVolumeConvert",
+  "structureType": "convertDownMassMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2000,
+   "display": {
+    "measure": {
+     "kind": "convert",
+     "pair": "kg>g",
+     "amount": 2
+    },
+    "promptText": "2 kg = ? g"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0364",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkEstimate",
+  "structureType": "betweenEstimateMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 5,
+     "before": 3
+    },
+    "promptText": "A rope is a bit longer than 3 m and a bit shorter than 5 m. A whole-number estimate = ? m"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0520",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "compareOrder",
+  "structureType": "crossUnitPickMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "2 m",
+   "choices": [
+    "2 m",
+    "180 cm"
+   ],
+   "display": {
+    "measure": {
+     "a": 200,
+     "b": 180,
+     "kind": "cmp"
+    },
+    "promptText": "Which is more: 2 m or 180 cm?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0676",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "multiStepMeasure",
+  "structureType": "joinLengthsMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 61,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      34,
+      27
+     ]
+    },
+    "promptText": "A 34 cm board joined to a 27 cm board = ? cm"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0079",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "lengthConvert",
+  "structureType": "mixedToSmallMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 125,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      100,
+      25
+     ]
+    },
+    "promptText": "1 m 25 cm = ? cm"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0235",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "massVolumeConvert",
+  "structureType": "mixedVolumeMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1250,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      1000,
+      250
+     ]
+    },
+    "promptText": "1 L 250 mL = ? mL"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0390",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkEstimate",
+  "structureType": "roundTenMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 20,
+   "display": {
+    "measure": {
+     "n": 23,
+     "kind": "roundTen"
+    },
+    "promptText": "A stick measures 23 cm. To the nearest ten, that is ? cm"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0105",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "lengthConvert",
+  "structureType": "convertUpBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "measure": {
+     "kind": "convertUp",
+     "pair": "m>cm",
+     "total": 300
+    },
+    "promptText": "300 cm = ? m"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0261",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "massVolumeConvert",
+  "structureType": "convertUpMassBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "measure": {
+     "kind": "convertUp",
+     "pair": "kg>g",
+     "total": 2000
+    },
+    "promptText": "2000 g = ? kg"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0416",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkEstimate",
+  "structureType": "roundHundredBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 200,
+   "display": {
+    "measure": {
+     "n": 234,
+     "kind": "roundHundred"
+    },
+    "promptText": "A trail measures 234 m. To the nearest hundred, that is ? m"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0572",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "compareOrder",
+  "structureType": "pickLongestBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "2 m",
+   "choices": [
+    "180 cm",
+    "1500 mm",
+    "2 m"
+   ],
+   "display": {
+    "measure": {
+     "kind": "cmp3",
+     "values": [
+      200,
+      180,
+      150
+     ]
+    },
+    "promptText": "Which is the longest: 2 m, 180 cm, or 1500 mm?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0728",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "multiStepMeasure",
+  "structureType": "convertThenAddBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 175,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      100,
+      30,
+      45
+     ]
+    },
+    "promptText": "1 m 30 cm of rope plus 45 cm more = ? cm"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0131",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "lengthConvert",
+  "structureType": "addMixedBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 540,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      200,
+      340
+     ]
+    },
+    "promptText": "2 m + 340 cm = ? cm"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0287",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "massVolumeConvert",
+  "structureType": "mixedMassBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2340,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      2000,
+      340
+     ]
+    },
+    "promptText": "2 kg 340 g = ? g"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-proc-b0821-0442",
+  "modeId": "measurement",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkEstimate",
+  "structureType": "midEstimateBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 200,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 210,
+     "before": 190
+    },
+    "promptText": "A path is between 190 m and 210 m long. The halfway estimate = ? m"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0021",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "countCoins",
+  "structureType": "trayCountTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "coins": [
+     "penny",
+     "dime",
+     "penny"
+    ],
+    "coinMode": "count",
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      10,
+      1,
+      1
+     ]
+    },
+    "promptText": "10 + 1 + 1 = ? c"
+   },
+   "answerType": "coinTray"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0155",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "makeChange",
+  "structureType": "changeTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "counting": {
+     "back": 7,
+     "kind": "countBack",
+     "start": 10
+    },
+    "promptText": "Pay 10 cents for a 7-cent toy. Change = ? cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0311",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "coinEquivalence",
+  "structureType": "tradeTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "money": {
+     "per": 5,
+     "kind": "trade",
+     "fromCents": 10
+    },
+    "promptText": "1 dime = ? nickels"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0466",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "moneyReasoning",
+  "structureType": "fewestTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "money": {
+     "kind": "fewest",
+     "cents": 7
+    },
+    "promptText": "Fewest coins for 7 cents = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0007",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "countCoins",
+  "structureType": "coinSumTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 19,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      10,
+      5,
+      1,
+      1,
+      1,
+      1
+     ]
+    },
+    "promptText": "1 dime, 1 nickel and 4 pennies = ? cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0181",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "makeChange",
+  "structureType": "saveUpTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "counting": {
+     "have": 7,
+     "kind": "gap",
+     "target": 10
+    },
+    "promptText": "7 cents saved. ? more cents make 10 cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0336",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "coinEquivalence",
+  "structureType": "coinsForAmountTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "money": {
+     "per": 5,
+     "kind": "trade",
+     "fromCents": 10
+    },
+    "promptText": "? nickels make 10 cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0491",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "moneyReasoning",
+  "structureType": "twoPriceTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 19,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      12,
+      7
+     ]
+    },
+    "promptText": "12c toy + 7c toy = ? c"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0071",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "countCoins",
+  "structureType": "trayCountMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 36,
+   "display": {
+    "coins": [
+     "quarter",
+     "dime",
+     "penny"
+    ],
+    "coinMode": "count",
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      25,
+      10,
+      1
+     ]
+    },
+    "promptText": "25 + 10 + 1 = ? c"
+   },
+   "answerType": "coinTray"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0207",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "makeChange",
+  "structureType": "changeMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "counting": {
+     "back": 18,
+     "kind": "countBack",
+     "start": 25
+    },
+    "promptText": "Pay 25 cents for a 18-cent toy. Change = ? cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0362",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "coinEquivalence",
+  "structureType": "tradeMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "money": {
+     "per": 5,
+     "kind": "trade",
+     "fromCents": 25
+    },
+    "promptText": "1 quarter = ? nickels"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0516",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "moneyReasoning",
+  "structureType": "fewestMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "money": {
+     "kind": "fewest",
+     "cents": 26
+    },
+    "promptText": "Fewest coins for 26 cents = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0062",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "countCoins",
+  "structureType": "coinSumMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 62,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      25,
+      25,
+      10,
+      1,
+      1
+     ]
+    },
+    "promptText": "2 quarters, 1 dime and 2 pennies = ? cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0233",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "makeChange",
+  "structureType": "saveUpMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "counting": {
+     "have": 18,
+     "kind": "gap",
+     "target": 25
+    },
+    "promptText": "18 cents saved. ? more cents make 25 cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0388",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "coinEquivalence",
+  "structureType": "coinsForAmountMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "money": {
+     "per": 5,
+     "kind": "trade",
+     "fromCents": 25
+    },
+    "promptText": "? nickels make 25 cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0542",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "moneyReasoning",
+  "structureType": "twoPriceMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 57,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      26,
+      31
+     ]
+    },
+    "promptText": "26c toy + 31c toy = ? c"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0104",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "countCoins",
+  "structureType": "dollarToCents",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 130,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      100,
+      30
+     ]
+    },
+    "promptText": "$1.30 = ? cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0259",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "makeChange",
+  "structureType": "changeBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 33,
+   "display": {
+    "counting": {
+     "back": 67,
+     "kind": "countBack",
+     "start": 100
+    },
+    "promptText": "Pay 100 cents for a 67-cent toy. Change = ? cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0415",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "coinEquivalence",
+  "structureType": "tradeBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "money": {
+     "per": 10,
+     "kind": "trade",
+     "fromCents": 100
+    },
+    "promptText": "$1 = ? dimes"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0568",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "moneyReasoning",
+  "structureType": "fewestBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "money": {
+     "kind": "fewest",
+     "cents": 126
+    },
+    "promptText": "Fewest coins for 126 cents = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0129",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "countCoins",
+  "structureType": "coinSumBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 176,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25,
+      10,
+      10,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    },
+    "promptText": "6 quarters, 2 dimes and 6 pennies = ? cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0285",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "makeChange",
+  "structureType": "saveUpBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 33,
+   "display": {
+    "counting": {
+     "have": 67,
+     "kind": "gap",
+     "target": 100
+    },
+    "promptText": "67 cents saved. ? more cents make 100 cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0440",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "coinEquivalence",
+  "structureType": "coinsForAmountBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "money": {
+     "per": 25,
+     "kind": "trade",
+     "fromCents": 125
+    },
+    "promptText": "? quarters make 125 cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0594",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "moneyReasoning",
+  "structureType": "twoPriceBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 257,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      126,
+      131
+     ]
+    },
+    "promptText": "126c item + 131c item = ? c"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
   "itemId": "multiplication-app-001",
   "modeId": "multiplication",
   "itemFamily": "application",
@@ -7336,7 +14646,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-arrayReasoning-23-018",
+  "itemId": "multiplication-proc-arrayReasoning-23-008",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "arrayReasoning",
@@ -7347,12 +14657,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 6,
-   "b": 4,
+   "a": 7,
+   "b": 2,
    "op": "×",
-   "answer": 24,
+   "answer": 14,
    "display": {
-    "promptText": "Multiply: 6 × 4."
+    "promptText": "Compute 7 × 2."
    }
   }
  },
@@ -7378,7 +14688,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-factFluency-23-018",
+  "itemId": "multiplication-proc-factFluency-23-031",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "factFluency",
@@ -7389,17 +14699,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 3,
+   "a": 5,
    "b": 7,
    "op": "×",
-   "answer": 21,
+   "answer": 35,
    "display": {
-    "promptText": "Find 3 × 7."
+    "promptText": "5 times 7 = ?"
    }
   }
  },
  {
-  "itemId": "multiplication-proc-arrayReasoning-23-035",
+  "itemId": "multiplication-proc-arrayReasoning-23-025",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "arrayReasoning",
@@ -7411,11 +14721,11 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 8,
-   "b": 6,
+   "b": 3,
    "op": "×",
-   "answer": 48,
+   "answer": 24,
    "display": {
-    "promptText": "Evaluate: 8 × 6."
+    "promptText": "Multiply: 8 × 3."
    }
   }
  },
@@ -7504,7 +14814,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-arrayReasoning-45-018",
+  "itemId": "multiplication-proc-arrayReasoning-45-008",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "arrayReasoning",
@@ -7515,12 +14825,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 8,
-   "b": 10,
+   "a": 10,
+   "b": 11,
    "op": "×",
-   "answer": 80,
+   "answer": 110,
    "display": {
-    "promptText": "Multiply: 8 × 10."
+    "promptText": "Compute 10 × 11."
    }
   }
  },
@@ -7546,7 +14856,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-factFluency-45-018",
+  "itemId": "multiplication-proc-factFluency-45-031",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "factFluency",
@@ -7557,17 +14867,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 7,
-   "b": 11,
+   "a": 10,
+   "b": 9,
    "op": "×",
-   "answer": 77,
+   "answer": 90,
    "display": {
-    "promptText": "Find 7 × 11."
+    "promptText": "10 times 9 = ?"
    }
   }
  },
  {
-  "itemId": "multiplication-proc-arrayReasoning-45-035",
+  "itemId": "multiplication-proc-arrayReasoning-45-025",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "arrayReasoning",
@@ -7578,12 +14888,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 10,
-   "b": 11,
+   "a": 14,
+   "b": 6,
    "op": "×",
-   "answer": 110,
+   "answer": 84,
    "display": {
-    "promptText": "Evaluate: 10 × 11."
+    "promptText": "Multiply: 14 × 6."
    }
   }
  },
@@ -7672,7 +14982,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-arrayReasoning-K1-018",
+  "itemId": "multiplication-proc-arrayReasoning-K1-008",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "arrayReasoning",
@@ -7683,12 +14993,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 2,
-   "b": 3,
+   "a": 3,
+   "b": 2,
    "op": "×",
    "answer": 6,
    "display": {
-    "promptText": "Multiply: 2 × 3."
+    "promptText": "Compute 3 × 2."
    }
   }
  },
@@ -7714,7 +15024,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-factFluency-K1-018",
+  "itemId": "multiplication-proc-factFluency-K1-031",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "factFluency",
@@ -7725,17 +15035,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 1,
+   "a": 2,
    "b": 2,
    "op": "×",
-   "answer": 2,
+   "answer": 4,
    "display": {
-    "promptText": "Find 1 × 2."
+    "promptText": "2 times 2 = ?"
    }
   }
  },
  {
-  "itemId": "multiplication-proc-arrayReasoning-K1-035",
+  "itemId": "multiplication-proc-arrayReasoning-K1-025",
   "modeId": "multiplication",
   "itemFamily": "procedural",
   "subskill": "arrayReasoning",
@@ -7746,12 +15056,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 3,
-   "b": 3,
+   "a": 4,
+   "b": 4,
    "op": "×",
-   "answer": 9,
+   "answer": 16,
    "display": {
-    "promptText": "Evaluate: 3 × 3."
+    "promptText": "Multiply: 4 × 4."
    }
   }
  },
@@ -7799,7 +15109,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "Mia has 2 red cups and 3 blue cups. How many cups does Mia have in all?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -7823,7 +15133,7 @@ export const SEED_ITEMS = [
     "whole": 6,
     "promptText": "Leo owns 6 beads. Leo can see 2 beads on the mat; the rest hide in a pouch. How many beads hide in the pouch?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -7847,7 +15157,7 @@ export const SEED_ITEMS = [
     "whole": 10,
     "promptText": "Mia wants a full ten of cups. Mia has 2 cups so far. How many more cups make ten?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -7873,7 +15183,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "Sam lines up 5 green beads, then adds a row of 4 yellow beads. How many beads are in the two rows together?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -7897,7 +15207,7 @@ export const SEED_ITEMS = [
     "whole": 10,
     "promptText": "A basket holds 10 blocks for Nia. Nia lifts out 3 blocks. How many blocks stay in the basket?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -7921,7 +15231,7 @@ export const SEED_ITEMS = [
     "whole": 10,
     "promptText": "A game needs ten beads. Sam brings 8 beads. How many beads does Sam still need for the game?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -7947,7 +15257,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "Ava glues 4 blocks on one page and 3 blocks on the next page. How many blocks does Ava glue in all?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -7971,7 +15281,7 @@ export const SEED_ITEMS = [
     "whole": 9,
     "promptText": "Kai has 9 crayons in all. 4 of the crayons are new, and the rest are old. How many old crayons does Kai have?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -7997,7 +15307,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "Ava finds 2 blocks in the morning. Later Ava finds 9 more blocks. How many blocks does Ava find that day?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8021,7 +15331,7 @@ export const SEED_ITEMS = [
     "whole": 11,
     "promptText": "Kai started with 2 crayons. After a trade, Kai now has 11 crayons. How many crayons did the trade add?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8045,7 +15355,7 @@ export const SEED_ITEMS = [
     "whole": 11,
     "promptText": "Mia has 6 cups and wants a full group of ten cups. A friend gives Mia 5 cups. After the group of ten is full, how many extra cups does Mia hold?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8071,7 +15381,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "Luca and a friend sort crayons. Luca holds 2 crayons; the friend holds 11 crayons. How many crayons do they hold together?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8095,7 +15405,7 @@ export const SEED_ITEMS = [
     "whole": 13,
     "promptText": "Ida counts 13 stickers altogether. Exactly 3 of the stickers are shiny. How many of the stickers are not shiny?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8119,7 +15429,7 @@ export const SEED_ITEMS = [
     "whole": 17,
     "promptText": "Sam stacks 8 beads in a rack that holds ten. Then Sam gets 9 more beads and fills the rack. How many beads are left over after the rack is full?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8145,7 +15455,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "Nora puts 9 stickers in a box and 5 stickers in a bag. How many stickers does Nora pack altogether?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8169,7 +15479,7 @@ export const SEED_ITEMS = [
     "whole": 14,
     "promptText": "Omar needs 14 marbles for a craft. So far Omar has 11 marbles. How many more marbles does Omar still need?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8195,7 +15505,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "On the shelf, Nora keeps 30 stickers. Under the bed, Nora keeps 15 more stickers. How many stickers does Nora keep in both spots?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8219,7 +15529,7 @@ export const SEED_ITEMS = [
     "whole": 45,
     "promptText": "Omar splits 45 marbles between two trays. One tray gets 20 marbles. How many marbles go on the other tray?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8243,7 +15553,7 @@ export const SEED_ITEMS = [
     "whole": 34,
     "promptText": "Mia bundles ten of the 34 cups with a rubber band. How many cups are outside the bundle?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8269,7 +15579,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "Rosa has 65 striped marbles and 15 clear marbles. How many marbles does Rosa have in all?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8293,7 +15603,7 @@ export const SEED_ITEMS = [
     "whole": 52,
     "promptText": "Finn owns 52 buttons. Finn can see 27 buttons on the mat; the rest hide in a pouch. How many buttons hide in the pouch?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8317,7 +15627,7 @@ export const SEED_ITEMS = [
     "whole": 49,
     "promptText": "From a jar of 49 beads, Sam scoops out a full group of ten beads. How many beads remain in the jar?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8367,7 +15677,7 @@ export const SEED_ITEMS = [
     "whole": 74,
     "promptText": "A basket holds 74 leaves for Theo. Theo lifts out 33 leaves. How many leaves stay in the basket?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8561,7 +15871,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "One part: 🐟🐟🐟🐟🐟🐟 Other part: 🐟🐟🐟 How many fish in all?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8585,7 +15895,7 @@ export const SEED_ITEMS = [
     "whole": 9,
     "promptText": "A whole of 9 hides two parts. One part is 8 — name the other part."
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8811,7 +16121,7 @@ export const SEED_ITEMS = [
     "whole": 13,
     "promptText": "13 splits into 4 and one more part. How big is that part?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8838,7 +16148,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "2 hundreds 6 tens 3 ones. What number is the whole?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8862,7 +16172,7 @@ export const SEED_ITEMS = [
     "whole": 43,
     "promptText": "Split 43 into 33 and one more part. What is the other part?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8916,7 +16226,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "The parts of a number are 9 hundreds, 1 ten, and 4 ones. Name the number."
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8940,7 +16250,7 @@ export const SEED_ITEMS = [
     "whole": 58,
     "promptText": "A bond splits 58 so one part is 38. How big is the second part?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -8993,7 +16303,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "Join the parts 40 and 3. What is the whole?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -9017,7 +16327,7 @@ export const SEED_ITEMS = [
     "whole": 50,
     "promptText": "Ava filled a bond: whole 50, part 20, other part 70. The answer 70 is bigger than the whole! What is the correct part?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -9067,7 +16377,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "? = 0 + 2"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -9089,9 +16399,9 @@ export const SEED_ITEMS = [
    "display": {
     "part": 2,
     "whole": 5,
-    "promptText": "5 = 1 + 4. 5 = 2 + ?"
+    "promptText": "5 = 1 + 4, so 5 = 2 + ?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -9141,7 +16451,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "? = 5 + 1"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -9163,9 +16473,9 @@ export const SEED_ITEMS = [
    "display": {
     "part": 3,
     "whole": 9,
-    "promptText": "9 = 2 + 7. 9 = 3 + ?"
+    "promptText": "9 = 2 + 7, so 9 = 3 + ?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -9215,7 +16525,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "? = 0 + 9"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -9265,7 +16575,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "? = 10 + 1"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -9339,7 +16649,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "? = 9 + 9"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -9361,9 +16671,9 @@ export const SEED_ITEMS = [
    "display": {
     "part": 9,
     "whole": 12,
-    "promptText": "12 = 10 + 2. 12 = 9 + ?"
+    "promptText": "12 = 10 + 2, so 12 = 9 + ?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -9414,7 +16724,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "? = 7 + 3 + 4"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -9464,7 +16774,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "? = 20 + 1"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -9538,7 +16848,7 @@ export const SEED_ITEMS = [
     ],
     "promptText": "? = 50 + 3"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -9560,9 +16870,9 @@ export const SEED_ITEMS = [
    "display": {
     "part": 9,
     "whole": 34,
-    "promptText": "14 − 9 = 5. 34 − 9 = ?"
+    "promptText": "14 − 9 = 5, so 34 − 9 = ?"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -9586,7 +16896,7 @@ export const SEED_ITEMS = [
     "whole": 52,
     "promptText": "52 = ? + 10"
    },
-   "answerType": "numberPad"
+   "answerType": "numberBond"
   }
  },
  {
@@ -9611,6 +16921,880 @@ export const SEED_ITEMS = [
      5
     ],
     "promptText": "? = 80 + 5"
+   },
+   "answerType": "numberBond"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0001",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "repeatingPattern",
+  "structureType": "extendAB",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "circle",
+   "choices": [
+    "circle",
+    "square"
+   ],
+   "display": {
+    "pattern": {
+     "len": 4,
+     "core": [
+      "circle",
+      "square"
+     ],
+     "kind": "repeat"
+    },
+    "sequence": [
+     "circle",
+     "square",
+     "circle",
+     "square"
+    ],
+    "promptText": "Pattern: circle, square, circle, square, ? — what comes next?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0155",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "arithmeticNext",
+  "structureType": "nextTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "step": 2,
+    "counting": {
+     "kind": "next",
+     "step": 2,
+     "sequence": [
+      2,
+      4,
+      6
+     ]
+    },
+    "sequence": [
+     2,
+     4,
+     6
+    ],
+    "promptText": "Pattern: 2, 4, 6, ? — what comes next?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0311",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "geometricNext",
+  "structureType": "doubleTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "step": 2,
+    "pattern": {
+     "kind": "geo",
+     "start": 1,
+     "factor": 2
+    },
+    "sequence": [
+     1,
+     2
+    ],
+    "promptText": "Pattern: 1, 2, ? — each term is 2 times the one before."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0466",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "missingTerm",
+  "structureType": "gapTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "step": 2,
+    "counting": {
+     "kind": "between",
+     "after": 6,
+     "before": 2
+    },
+    "sequence": [
+     2,
+     "?",
+     6,
+     8
+    ],
+    "promptText": "Fill the gap: 2, ?, 6, 8."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0622",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "stepTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "counting": {
+     "have": 2,
+     "kind": "gap",
+     "target": 4
+    },
+    "sequence": [
+     2,
+     4,
+     6
+    ],
+    "promptText": "Pattern: 2, 4, 6. Rule: add ? each time."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0027",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "repeatingPattern",
+  "structureType": "extendAB",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "sun",
+   "choices": [
+    "cloud",
+    "sun"
+   ],
+   "display": {
+    "pattern": {
+     "len": 6,
+     "core": [
+      "sun",
+      "cloud"
+     ],
+     "kind": "repeat"
+    },
+    "sequence": [
+     "sun",
+     "cloud",
+     "sun",
+     "cloud",
+     "sun",
+     "cloud"
+    ],
+    "promptText": "Pattern: sun, cloud, sun, cloud, sun, cloud, ? — what comes next?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0181",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "arithmeticNext",
+  "structureType": "nextTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 17,
+   "display": {
+    "step": 3,
+    "counting": {
+     "kind": "next",
+     "step": 3,
+     "sequence": [
+      8,
+      11,
+      14
+     ]
+    },
+    "sequence": [
+     8,
+     11,
+     14
+    ],
+    "promptText": "Pattern: 8, 11, 14, ? — what comes next?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0336",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "geometricNext",
+  "structureType": "doubleOnce",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "pattern": {
+     "kind": "geoApply",
+     "start": 1,
+     "times": 1,
+     "factor": 2
+    },
+    "promptText": "Double 1. What do you get?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0053",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "repeatingPattern",
+  "structureType": "extendABC",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "square",
+   "choices": [
+    "triangle",
+    "circle",
+    "square"
+   ],
+   "display": {
+    "pattern": {
+     "len": 10,
+     "core": [
+      "circle",
+      "square",
+      "triangle"
+     ],
+     "kind": "repeat"
+    },
+    "sequence": [
+     "circle",
+     "square",
+     "triangle",
+     "circle",
+     "square",
+     "triangle",
+     "circle",
+     "square",
+     "triangle",
+     "circle"
+    ],
+    "promptText": "Pattern: circle, square, triangle, circle, square, triangle, circle, square, triangle, circle, ? — what comes next?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0207",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "arithmeticNext",
+  "structureType": "nextMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 30,
+   "display": {
+    "step": 6,
+    "counting": {
+     "kind": "next",
+     "step": 6,
+     "sequence": [
+      12,
+      18,
+      24
+     ]
+    },
+    "sequence": [
+     12,
+     18,
+     24
+    ],
+    "promptText": "Pattern: 12, 18, 24, ? — what comes next?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0362",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "geometricNext",
+  "structureType": "geoNext_2x",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 24,
+   "display": {
+    "step": 2,
+    "pattern": {
+     "kind": "geo",
+     "start": 3,
+     "factor": 2
+    },
+    "sequence": [
+     3,
+     6,
+     12
+    ],
+    "promptText": "Pattern: 3, 6, 12, ? — each term is 2 times the one before."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0518",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "missingTerm",
+  "structureType": "gapMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 18,
+   "display": {
+    "step": 6,
+    "counting": {
+     "kind": "between",
+     "after": 24,
+     "before": 12
+    },
+    "sequence": [
+     12,
+     "?",
+     24,
+     30
+    ],
+    "promptText": "Fill the gap: 12, ?, 24, 30."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0650",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "stepMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "counting": {
+     "have": 12,
+     "kind": "gap",
+     "target": 18
+    },
+    "sequence": [
+     12,
+     18,
+     24
+    ],
+    "promptText": "Pattern: 12, 18, 24. Rule: add ? each time."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0078",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "repeatingPattern",
+  "structureType": "shapeAtPosition",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "blue",
+   "choices": [
+    "red",
+    "green",
+    "blue"
+   ],
+   "display": {
+    "pattern": {
+     "pos": 11,
+     "core": [
+      "red",
+      "blue",
+      "green"
+     ],
+     "kind": "repeatPos"
+    },
+    "sequence": [
+     "red",
+     "blue",
+     "green",
+     "red",
+     "blue",
+     "green"
+    ],
+    "promptText": "Pattern: red, blue, green, red, blue, green, … Keep going. Which shape lands at position 11?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0233",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "arithmeticNext",
+  "structureType": "firstMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 37,
+   "display": {
+    "step": 8,
+    "counting": {
+     "back": 8,
+     "kind": "countBack",
+     "start": 45
+    },
+    "sequence": [
+     "?",
+     45,
+     53,
+     61
+    ],
+    "promptText": "Pattern: ?, 45, 53, 61 — what comes first?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0388",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "geometricNext",
+  "structureType": "halfMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "pattern": {
+     "kind": "geoDiv",
+     "start": 40,
+     "terms": 3,
+     "factor": 2
+    },
+    "sequence": [
+     40,
+     20,
+     10
+    ],
+    "promptText": "Pattern: 40, 20, 10, ? — each term is half the one before."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0104",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "repeatingPattern",
+  "structureType": "extendABCDLong",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "circle",
+   "choices": [
+    "heart",
+    "square",
+    "circle",
+    "triangle"
+   ],
+   "display": {
+    "pattern": {
+     "len": 12,
+     "core": [
+      "circle",
+      "square",
+      "triangle",
+      "heart"
+     ],
+     "kind": "repeat"
+    },
+    "sequence": [
+     "circle",
+     "square",
+     "triangle",
+     "heart",
+     "circle",
+     "square",
+     "triangle",
+     "heart",
+     "circle",
+     "square",
+     "triangle",
+     "heart"
+    ],
+    "promptText": "Pattern: circle, square, triangle, heart, circle, square, triangle, heart, circle, square, triangle, heart, ? — what comes next?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0259",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "arithmeticNext",
+  "structureType": "nextBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 145,
+   "display": {
+    "step": 11,
+    "counting": {
+     "kind": "next",
+     "step": 11,
+     "sequence": [
+      112,
+      123,
+      134
+     ]
+    },
+    "sequence": [
+     112,
+     123,
+     134
+    ],
+    "promptText": "Pattern: 112, 123, 134, ? — what comes next?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0414",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "geometricNext",
+  "structureType": "geoNextBig_5x",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 500,
+   "display": {
+    "step": 5,
+    "pattern": {
+     "kind": "geo",
+     "start": 4,
+     "factor": 5
+    },
+    "sequence": [
+     4,
+     20,
+     100
+    ],
+    "promptText": "Pattern: 4, 20, 100, ? — each term is 5 times the one before."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0570",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "missingTerm",
+  "structureType": "gapBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 123,
+   "display": {
+    "step": 11,
+    "counting": {
+     "kind": "between",
+     "after": 134,
+     "before": 112
+    },
+    "sequence": [
+     112,
+     "?",
+     134,
+     145
+    ],
+    "promptText": "Fill the gap: 112, ?, 134, 145."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0676",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "stepBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 11,
+   "display": {
+    "counting": {
+     "have": 112,
+     "kind": "gap",
+     "target": 123
+    },
+    "sequence": [
+     112,
+     123,
+     134
+    ],
+    "promptText": "Pattern: 112, 123, 134. Rule: add ? each time."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0129",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "repeatingPattern",
+  "structureType": "shapeAtPositionQuad",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "circle",
+   "choices": [
+    "triangle",
+    "circle",
+    "heart",
+    "square"
+   ],
+   "display": {
+    "pattern": {
+     "pos": 21,
+     "core": [
+      "circle",
+      "square",
+      "triangle",
+      "heart"
+     ],
+     "kind": "repeatPos"
+    },
+    "sequence": [
+     "circle",
+     "square",
+     "triangle",
+     "heart",
+     "circle",
+     "square",
+     "triangle",
+     "heart"
+    ],
+    "promptText": "Pattern: circle, square, triangle, heart, circle, square, triangle, heart, … Keep going. Which shape lands at position 21?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0285",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "arithmeticNext",
+  "structureType": "firstBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 524,
+   "display": {
+    "step": 21,
+    "counting": {
+     "back": 21,
+     "kind": "countBack",
+     "start": 545
+    },
+    "sequence": [
+     "?",
+     545,
+     566,
+     587
+    ],
+    "promptText": "Pattern: ?, 545, 566, 587 — what comes first?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-proc-b0821-0440",
+  "modeId": "patterns",
+  "itemFamily": "procedural",
+  "subskill": "geometricNext",
+  "structureType": "halfBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 60,
+   "display": {
+    "pattern": {
+     "kind": "geoDiv",
+     "start": 480,
+     "terms": 3,
+     "factor": 2
+    },
+    "sequence": [
+     480,
+     240,
+     120
+    ],
+    "promptText": "Pattern: 480, 240, 120, ? — each term is half the one before."
    },
    "answerType": "numberPad"
   }
@@ -10816,603 +19000,1506 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placevalue-proc-expandedForm-23-001",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 58,
-   "b": null,
-   "op": "place",
-   "answer": 58,
-   "display": {
-    "ones": 8,
-    "tens": 5,
-    "type": "build",
-    "number": 58,
-    "promptText": "5 tens + 8 ones = ?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-regroupingSense-23-001",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 35,
-   "b": null,
-   "op": "place",
-   "answer": 35,
-   "display": {
-    "ones": 5,
-    "tens": 3,
-    "type": "build",
-    "number": 35,
-    "promptText": "Combine 3 tens and 5 ones into one number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-tensOnes-23-001",
+  "itemId": "placeValue-proc-b0821-0019",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 47,
-   "b": null,
-   "op": "place",
-   "answer": 4,
-   "display": {
-    "ones": 7,
-    "tens": 4,
-    "type": "tens_in",
-    "number": 47,
-    "promptText": "How many tens in 47?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-expandedForm-23-002",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 72,
-   "b": null,
-   "op": "place",
-   "answer": 72,
-   "display": {
-    "ones": 2,
-    "tens": 7,
-    "type": "build",
-    "number": 72,
-    "promptText": "7 tens + 2 ones = ?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-regroupingSense-23-002",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 63,
-   "b": null,
-   "op": "place",
-   "answer": 63,
-   "display": {
-    "ones": 3,
-    "tens": 6,
-    "type": "build",
-    "number": 63,
-    "promptText": "Combine 6 tens and 3 ones into one number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-tensOnes-23-002",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 53,
-   "b": null,
-   "op": "place",
-   "answer": 5,
-   "display": {
-    "ones": 3,
-    "tens": 5,
-    "type": "tens_in",
-    "number": 53,
-    "promptText": "How many tens in 53?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-expandedForm-23-003",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 49,
-   "b": null,
-   "op": "place",
-   "answer": 49,
-   "display": {
-    "ones": 9,
-    "tens": 4,
-    "type": "build",
-    "number": 49,
-    "promptText": "4 tens + 9 ones = ?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-regroupingSense-23-003",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 87,
-   "b": null,
-   "op": "place",
-   "answer": 87,
-   "display": {
-    "ones": 7,
-    "tens": 8,
-    "type": "build",
-    "number": 87,
-    "promptText": "Combine 8 tens and 7 ones into one number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-expandedForm-45-001",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 234,
-   "b": null,
-   "op": "place",
-   "answer": 234,
-   "display": {
-    "ones": 4,
-    "tens": 23,
-    "type": "build",
-    "number": 234,
-    "promptText": "23 tens + 4 ones = ?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-regroupingSense-45-001",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 234,
-   "b": null,
-   "op": "place",
-   "answer": 234,
-   "display": {
-    "ones": 4,
-    "tens": 23,
-    "type": "build",
-    "number": 234,
-    "promptText": "Combine 23 tens and 4 ones into one number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-tensOnes-45-001",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 234,
-   "b": null,
-   "op": "place",
-   "answer": 23,
-   "display": {
-    "ones": 4,
-    "tens": 23,
-    "type": "tens_in",
-    "number": 234,
-    "promptText": "How many tens in 234?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-expandedForm-45-002",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 580,
-   "b": null,
-   "op": "place",
-   "answer": 580,
-   "display": {
-    "ones": 0,
-    "tens": 58,
-    "type": "build",
-    "number": 580,
-    "promptText": "58 tens + 0 ones = ?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-regroupingSense-45-002",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 580,
-   "b": null,
-   "op": "place",
-   "answer": 580,
-   "display": {
-    "ones": 0,
-    "tens": 58,
-    "type": "build",
-    "number": 580,
-    "promptText": "Combine 58 tens and 0 ones into one number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-tensOnes-45-002",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 580,
-   "b": null,
-   "op": "place",
-   "answer": 58,
-   "display": {
-    "ones": 0,
-    "tens": 58,
-    "type": "tens_in",
-    "number": 580,
-    "promptText": "How many tens in 580?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-expandedForm-45-003",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 374,
-   "b": null,
-   "op": "place",
-   "answer": 374,
-   "display": {
-    "ones": 4,
-    "tens": 37,
-    "type": "build",
-    "number": 374,
-    "promptText": "37 tens + 4 ones = ?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-regroupingSense-45-003",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 374,
-   "b": null,
-   "op": "place",
-   "answer": 374,
-   "display": {
-    "ones": 4,
-    "tens": 37,
-    "type": "build",
-    "number": 374,
-    "promptText": "Combine 37 tens and 4 ones into one number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-expandedForm-K1-001",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
+  "structureType": "teenOnesDigit",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 13,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 13,
+   "op": "count",
+   "answer": 1,
    "display": {
-    "ones": 3,
-    "tens": 1,
-    "type": "build",
-    "number": 13,
-    "promptText": "1 ten + 3 ones = ?"
-   }
+    "counting": {
+     "n": 11,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "11 → 10 + ?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placevalue-proc-regroupingSense-K1-001",
+  "itemId": "placeValue-proc-b0821-0156",
   "modeId": "placeValue",
   "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
+  "subskill": "expandedForm",
+  "structureType": "teenExpandComplete",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 14,
+   "a": null,
    "b": null,
-   "op": "place",
+   "op": "count",
+   "answer": 1,
+   "display": {
+    "counting": {
+     "n": 11,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "11 → 10 + ? ones"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0311",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "regroupingSense",
+  "structureType": "onesToTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 11,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      10,
+      1
+     ]
+    },
+    "promptText": "10 ones + 1 one = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0010",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "tensOnes",
+  "structureType": "teenUnitCompose",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 11,
+   "display": {
+    "counting": {
+     "kind": "groups",
+     "ones": 1,
+     "tens": 1
+    },
+    "promptText": "1 ten 1 one = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0194",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "expandedForm",
+  "structureType": "teenExpandJudge",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "promptText": "10 + 7 = 17"
+   },
+   "subPrompt": "Is this right?"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0330",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "regroupingSense",
+  "structureType": "buildTeenFrames",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 15,
+   "display": {
+    "filled": 0,
+    "frames": 2,
+    "counting": {
+     "kind": "set",
+     "count": 15
+    },
+    "frameMode": "build",
+    "promptText": "Show 15 on the frames by tapping cells. How many counters is that?"
+   },
+   "answerType": "tenFrame"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0037",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "tensOnes",
+  "structureType": "teenTensDigit",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "counting": {
+     "n": 20,
+     "kind": "digit",
+     "place": 10
+    },
+    "promptText": "Tens in 20 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0168",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "expandedForm",
+  "structureType": "wordToNumeralTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
    "answer": 14,
    "display": {
-    "ones": 4,
-    "tens": 1,
-    "type": "build",
-    "number": 14,
-    "promptText": "Combine 1 ten and 4 ones into one number."
-   }
+    "promptText": "fourteen = ?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placevalue-proc-tensOnes-K1-001",
+  "itemId": "placeValue-proc-b0821-0054",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
+  "structureType": "unitCompose",
   "levelRange": [
-   1,
-   3
+   4,
+   6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 12,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 1,
-   "display": {
-    "ones": 2,
-    "tens": 1,
-    "type": "tens_in",
-    "number": 12,
-    "promptText": "How many tens in 12?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-expandedForm-K1-002",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 20,
-   "b": null,
-   "op": "place",
-   "answer": 20,
-   "display": {
-    "ones": 0,
-    "tens": 2,
-    "type": "build",
-    "number": 20,
-    "promptText": "2 tens + 0 ones = ?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-regroupingSense-K1-002",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 18,
-   "b": null,
-   "op": "place",
-   "answer": 18,
-   "display": {
-    "ones": 8,
-    "tens": 1,
-    "type": "build",
-    "number": 18,
-    "promptText": "Combine 1 ten and 8 ones into one number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-tensOnes-K1-002",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 15,
-   "b": null,
-   "op": "place",
-   "answer": 1,
-   "display": {
-    "ones": 5,
-    "tens": 1,
-    "type": "tens_in",
-    "number": 15,
-    "promptText": "How many tens in 15?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-expandedForm-K1-003",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 17,
-   "b": null,
-   "op": "place",
-   "answer": 17,
-   "display": {
-    "ones": 7,
-    "tens": 1,
-    "type": "build",
-    "number": 17,
-    "promptText": "1 ten + 7 ones = ?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-regroupingSense-K1-003",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 25,
-   "b": null,
-   "op": "place",
+   "op": "count",
    "answer": 25,
    "display": {
-    "ones": 5,
-    "tens": 2,
-    "type": "build",
-    "number": 25,
-    "promptText": "Combine 2 tens and 5 ones into one number."
-   }
+    "counting": {
+     "kind": "groups",
+     "ones": 5,
+     "tens": 2
+    },
+    "promptText": "2 tens 5 ones = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0209",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "expandedForm",
+  "structureType": "expandTwoDigit",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "counting": {
+     "n": 25,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "25 → 20 + ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0366",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "regroupingSense",
+  "structureType": "nonCanonicalCompose",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 34,
+   "display": {
+    "counting": {
+     "kind": "groups",
+     "ones": 14,
+     "tens": 2
+    },
+    "promptText": "2 tens 14 ones = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0072",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "tensOnes",
+  "structureType": "digitRead",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "counting": {
+     "n": 47,
+     "kind": "digit",
+     "place": 10
+    },
+    "promptText": "Tens digit of 47 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0227",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "expandedForm",
+  "structureType": "expandTwoDigit",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "counting": {
+     "n": 33,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "33 → 30 + ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0384",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "regroupingSense",
+  "structureType": "renameTens",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 14,
+   "display": {
+    "counting": {
+     "have": 20,
+     "kind": "gap",
+     "target": 34
+    },
+    "promptText": "34 = 2 tens + ? ones"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0090",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "tensOnes",
+  "structureType": "tenMoreLess",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 57,
+   "display": {
+    "counting": {
+     "n": 47,
+     "kind": "moreLess",
+     "delta": 10
+    },
+    "promptText": "10 more than 47 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0245",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "expandedForm",
+  "structureType": "expandJudgeMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "promptText": "40 + 7 = 47"
+   },
+   "subPrompt": "Is this right?"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0106",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "tensOnes",
+  "structureType": "digitReadBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "counting": {
+     "n": 347,
+     "kind": "digit",
+     "place": 100
+    },
+    "promptText": "Hundreds digit of 347 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0260",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "expandedForm",
+  "structureType": "composeThreeDigit",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 347,
+   "display": {
+    "counting": {
+     "kind": "units",
+     "ones": 7,
+     "tens": 4,
+     "hundreds": 3
+    },
+    "promptText": "300 + 40 + 7 → ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0435",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "regroupingSense",
+  "structureType": "renameAsTens",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 34,
+   "display": {
+    "counting": {
+     "have": 0,
+     "kind": "gap",
+     "target": 34
+    },
+    "promptText": "340 = ? tens"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0123",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "tensOnes",
+  "structureType": "digitReadBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 0,
+   "display": {
+    "counting": {
+     "n": 670,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "Ones digit of 670 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0296",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "expandedForm",
+  "structureType": "expandJudgeBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "promptText": "300 + 40 + 6 = 346"
+   },
+   "subPrompt": "Is this right?"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0417",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "regroupingSense",
+  "structureType": "nonCanonicalComposeBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 345,
+   "display": {
+    "counting": {
+     "kind": "units",
+     "ones": 5,
+     "tens": 14,
+     "hundreds": 2
+    },
+    "promptText": "2 hundreds 14 tens 5 ones = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0140",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "tensOnes",
+  "structureType": "hundredMoreLess",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 447,
+   "display": {
+    "counting": {
+     "n": 347,
+     "kind": "moreLess",
+     "delta": 100
+    },
+    "promptText": "100 more than 347 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0281",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "expandedForm",
+  "structureType": "expandPartBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 90,
+   "display": {
+    "counting": {
+     "n": 493,
+     "kind": "placeValueOf",
+     "place": 10
+    },
+    "promptText": "493 → ? from the tens place"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0001",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "readNumber",
+  "structureType": "matReadTeens",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 11,
+   "display": {
+    "cols": [
+     {
+      "count": 1,
+      "place": 10
+     },
+     {
+      "count": 1,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "groups",
+     "ones": 1,
+     "tens": 1
+    },
+    "promptText": "10 | 1 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0162",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "tradeRegroup",
+  "structureType": "overfullMat",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 11,
+   "display": {
+    "cols": [
+     {
+      "count": 0,
+      "place": 10
+     },
+     {
+      "count": 11,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "groups",
+     "ones": 11,
+     "tens": 0
+    },
+    "promptText": "1 1 1 1 1 1 1 1 1 1 1 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0320",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "discOperations",
+  "structureType": "plusTenDisc",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 21,
+   "display": {
+    "counting": {
+     "n": 11,
+     "kind": "moreLess",
+     "delta": 10
+    },
+    "promptText": "11 + 1 tens disc = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0019",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "readNumber",
+  "structureType": "matRead",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 29,
+   "display": {
+    "cols": [
+     {
+      "count": 2,
+      "place": 10
+     },
+     {
+      "count": 9,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "groups",
+     "ones": 9,
+     "tens": 2
+    },
+    "promptText": "10 10 | 1 1 1 1 1 1 1 1 1 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0179",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "tradeRegroup",
+  "structureType": "overfullMat",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 32,
+   "display": {
+    "cols": [
+     {
+      "count": 2,
+      "place": 10
+     },
+     {
+      "count": 12,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "groups",
+     "ones": 12,
+     "tens": 2
+    },
+    "promptText": "10 10 | 1 1 1 1 1 1 1 1 1 1 1 1 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0338",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "discOperations",
+  "structureType": "plusTenDisc",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 24,
+   "display": {
+    "counting": {
+     "n": 14,
+     "kind": "moreLess",
+     "delta": 10
+    },
+    "promptText": "14 + 1 tens disc = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0037",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "readNumber",
+  "structureType": "matRead",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 47,
+   "display": {
+    "cols": [
+     {
+      "count": 4,
+      "place": 10
+     },
+     {
+      "count": 7,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "groups",
+     "ones": 7,
+     "tens": 4
+    },
+    "promptText": "10 10 10 10 | 1 1 1 1 1 1 1 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0209",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "tradeRegroup",
+  "structureType": "overfullMatReversed",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 53,
+   "display": {
+    "cols": [
+     {
+      "count": 4,
+      "place": 10
+     },
+     {
+      "count": 13,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "groups",
+     "ones": 13,
+     "tens": 4
+    },
+    "promptText": "1 1 1 1 1 1 1 1 1 1 1 1 1 | 10 10 10 10 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0056",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "readNumber",
+  "structureType": "matReadHundreds",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 347,
+   "display": {
+    "cols": [
+     {
+      "count": 3,
+      "place": 100
+     },
+     {
+      "count": 4,
+      "place": 10
+     },
+     {
+      "count": 7,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "units",
+     "ones": 7,
+     "tens": 4,
+     "hundreds": 3
+    },
+    "promptText": "100 100 100 | 10 10 10 10 | 1 1 1 1 1 1 1 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0244",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "tradeRegroup",
+  "structureType": "overfullMatBig",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 224,
+   "display": {
+    "cols": [
+     {
+      "count": 1,
+      "place": 100
+     },
+     {
+      "count": 12,
+      "place": 10
+     },
+     {
+      "count": 4,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      100,
+      120,
+      4
+     ]
+    },
+    "promptText": "100 | 10 10 10 10 10 10 10 10 10 10 10 10 | 1 1 1 1 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0399",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "discOperations",
+  "structureType": "discDropSeq",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 60,
+   "display": {
+    "counting": {
+     "kind": "next",
+     "step": 10,
+     "sequence": [
+      30,
+      40,
+      50
+     ]
+    },
+    "promptText": "Discs: 30, 40, 50 → ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0073",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "readNumber",
+  "structureType": "matReadHundreds",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 850,
+   "display": {
+    "cols": [
+     {
+      "count": 8,
+      "place": 100
+     },
+     {
+      "count": 5,
+      "place": 10
+     },
+     {
+      "count": 0,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "units",
+     "ones": 0,
+     "tens": 5,
+     "hundreds": 8
+    },
+    "promptText": "100 100 100 100 100 100 100 100 | 10 10 10 10 10 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0216",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "tradeRegroup",
+  "structureType": "renameDrill",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "counting": {
+     "have": 40,
+     "kind": "gap",
+     "target": 52
+    },
+    "promptText": "52 = 4 tens discs + ? ones discs"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0383",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "discOperations",
+  "structureType": "discMove",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 98,
+   "display": {
+    "counting": {
+     "n": 88,
+     "kind": "moreLess",
+     "delta": 10
+    },
+    "promptText": "88 + 1 tens disc = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0108",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "readNumber",
+  "structureType": "tensOnlyBig",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 190,
+   "display": {
+    "cols": [
+     {
+      "count": 19,
+      "place": 10
+     },
+     {
+      "count": 0,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "groups",
+     "ones": 0,
+     "tens": 19
+    },
+    "promptText": "10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0233",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "tradeRegroup",
+  "structureType": "asTensDrill",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 46,
+   "display": {
+    "counting": {
+     "have": 0,
+     "kind": "gap",
+     "target": 46
+    },
+    "promptText": "460 = ? tens discs"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0109",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "readNumber",
+  "structureType": "matReadThousands",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2473,
+   "display": {
+    "cols": [
+     {
+      "count": 2,
+      "place": 1000
+     },
+     {
+      "count": 4,
+      "place": 100
+     },
+     {
+      "count": 7,
+      "place": 10
+     },
+     {
+      "count": 3,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      2000,
+      400,
+      70,
+      3
+     ]
+    },
+    "promptText": "1000 1000 | 100 100 100 100 | 10 10 10 10 10 10 10 | 1 1 1 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0300",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "tradeRegroup",
+  "structureType": "overfullMatThousands",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2234,
+   "display": {
+    "cols": [
+     {
+      "count": 1,
+      "place": 1000
+     },
+     {
+      "count": 12,
+      "place": 100
+     },
+     {
+      "count": 3,
+      "place": 10
+     },
+     {
+      "count": 4,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      1000,
+      1200,
+      30,
+      4
+     ]
+    },
+    "promptText": "1000 | 100 100 100 100 100 100 100 100 100 100 100 100 | 10 10 10 | 1 1 1 1 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0442",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "discOperations",
+  "structureType": "discDropSeqBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 600,
+   "display": {
+    "counting": {
+     "kind": "next",
+     "step": 100,
+     "sequence": [
+      300,
+      400,
+      500
+     ]
+    },
+    "promptText": "Discs: 300, 400, 500 → ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0126",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "readNumber",
+  "structureType": "matReadThousands",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2099,
+   "display": {
+    "cols": [
+     {
+      "count": 2,
+      "place": 1000
+     },
+     {
+      "count": 0,
+      "place": 100
+     },
+     {
+      "count": 9,
+      "place": 10
+     },
+     {
+      "count": 9,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      2000,
+      0,
+      90,
+      9
+     ]
+    },
+    "promptText": "1000 1000 | 10 10 10 10 10 10 10 10 10 | 1 1 1 1 1 1 1 1 1 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0272",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "tradeRegroup",
+  "structureType": "renameHundredsDrill",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 61,
+   "display": {
+    "counting": {
+     "have": 0,
+     "kind": "gap",
+     "target": 61
+    },
+    "promptText": "6100 = ? hundreds discs"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0436",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "discOperations",
+  "structureType": "discMoveThousands",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8129,
+   "display": {
+    "counting": {
+     "n": 7129,
+     "kind": "moreLess",
+     "delta": 1000
+    },
+    "promptText": "7129 + 1 thousands disc = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0143",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "readNumber",
+  "structureType": "buildDiscCountBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "counting": {
+     "n": 7129,
+     "kind": "digit",
+     "place": 1000
+    },
+    "promptText": "Build 7129 with discs: thousands discs = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0289",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "tradeRegroup",
+  "structureType": "mixedRenameDrill",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 930,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      800,
+      130
+     ]
+    },
+    "promptText": "8 hundreds discs + 13 tens discs = ?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
@@ -12734,448 +21821,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "skipcounting-proc-groupsToProduct-23-001",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 20,
-   "display": {
-    "step": 4,
-    "sequence": [
-     4,
-     8,
-     12,
-     16
-    ],
-    "promptText": "5 groups of 4: 4, 8, 12, 16, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-23-001",
+  "itemId": "skipCounting-proc-b0821-0001",
   "modeId": "skipCounting",
   "itemFamily": "procedural",
   "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 40,
-   "display": {
-    "step": 10,
-    "sequence": [
-     10,
-     20,
-     30
-    ],
-    "promptText": "Skip count by 10: 10, 20, 30. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-stepInference-23-001",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 28,
-   "display": {
-    "step": 7,
-    "sequence": [
-     7,
-     14,
-     21
-    ],
-    "promptText": "Find the next term: 7, 14, 21, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-groupsToProduct-23-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 30,
-   "display": {
-    "step": 5,
-    "sequence": [
-     5,
-     10,
-     15,
-     20,
-     25
-    ],
-    "promptText": "6 groups of 5: 5, 10, 15, 20, 25, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-23-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 24,
-   "display": {
-    "step": 6,
-    "sequence": [
-     6,
-     12,
-     18
-    ],
-    "promptText": "Skip count by 6: 6, 12, 18. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-stepInference-23-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 32,
-   "display": {
-    "step": 8,
-    "sequence": [
-     8,
-     16,
-     24
-    ],
-    "promptText": "Find the next term: 8, 16, 24, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-groupsToProduct-23-003",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 24,
-   "display": {
-    "step": 6,
-    "sequence": [
-     6,
-     12,
-     18
-    ],
-    "promptText": "4 groups of 6: 6, 12, 18, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-23-003",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 44,
-   "display": {
-    "step": 11,
-    "sequence": [
-     11,
-     22,
-     33
-    ],
-    "promptText": "Skip count by 11: 11, 22, 33. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-groupsToProduct-45-001",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 48,
-   "display": {
-    "step": 12,
-    "sequence": [
-     12,
-     24,
-     36
-    ],
-    "promptText": "4 groups of 12: 12, 24, 36, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-45-001",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 100,
-   "display": {
-    "step": 25,
-    "sequence": [
-     25,
-     50,
-     75
-    ],
-    "promptText": "Skip count by 25: 25, 50, 75. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-stepInference-45-001",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 80,
-   "display": {
-    "step": 10,
-    "sequence": [
-     50,
-     60,
-     70
-    ],
-    "promptText": "Find the next term: 50, 60, 70, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-groupsToProduct-45-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 100,
-   "display": {
-    "step": 25,
-    "sequence": [
-     25,
-     50,
-     75
-    ],
-    "promptText": "4 groups of 25: 25, 50, 75, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-45-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 48,
-   "display": {
-    "step": 12,
-    "sequence": [
-     12,
-     24,
-     36
-    ],
-    "promptText": "Skip count by 12: 12, 24, 36. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-stepInference-45-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 140,
-   "display": {
-    "step": 20,
-    "sequence": [
-     80,
-     100,
-     120
-    ],
-    "promptText": "Find the next term: 80, 100, 120, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-groupsToProduct-45-003",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 54,
-   "display": {
-    "step": 9,
-    "sequence": [
-     9,
-     18,
-     27,
-     36,
-     45
-    ],
-    "promptText": "6 groups of 9: 9, 18, 27, 36, 45, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-45-003",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 400,
-   "display": {
-    "step": 100,
-    "sequence": [
-     100,
-     200,
-     300
-    ],
-    "promptText": "Skip count by 100: 100, 200, 300. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-groupsToProduct-K1-001",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
+  "structureType": "nextTermForward",
   "levelRange": [
    1,
    3
@@ -13184,207 +21834,753 @@ export const SEED_ITEMS = [
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 15,
-   "display": {
-    "step": 5,
-    "sequence": [
-     5,
-     10
-    ],
-    "promptText": "3 groups of 5: 5, 10, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-K1-001",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 8,
-   "display": {
-    "step": 2,
-    "sequence": [
-     2,
-     4,
-     6
-    ],
-    "promptText": "Skip count by 2: 2, 4, 6. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-stepInference-K1-001",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 12,
-   "display": {
-    "step": 3,
-    "sequence": [
-     3,
-     6,
-     9
-    ],
-    "promptText": "Find the next term: 3, 6, 9, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-groupsToProduct-K1-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 12,
-   "display": {
-    "step": 3,
-    "sequence": [
-     3,
-     6,
-     9
-    ],
-    "promptText": "4 groups of 3: 3, 6, 9, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-K1-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 20,
-   "display": {
-    "step": 5,
-    "sequence": [
-     5,
-     10,
-     15
-    ],
-    "promptText": "Skip count by 5: 5, 10, 15. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-stepInference-K1-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 9,
-   "display": {
-    "step": 2,
-    "sequence": [
-     1,
-     3,
-     5,
-     7
-    ],
-    "promptText": "Find the next term: 1, 3, 5, 7, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-groupsToProduct-K1-003",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 10,
-   "display": {
-    "step": 2,
-    "sequence": [
-     2,
-     4,
-     6,
-     8
-    ],
-    "promptText": "5 groups of 2: 2, 4, 6, 8, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-K1-003",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
+   "op": "count",
    "answer": 6,
    "display": {
     "step": 2,
+    "counting": {
+     "kind": "next",
+     "step": 2,
+     "sequence": [
+      0,
+      2,
+      4
+     ]
+    },
     "sequence": [
      0,
      2,
      4
     ],
-    "promptText": "Skip count by 2 starting at 0: 0, 2, 4. What's next?"
-   }
+    "promptText": "0, 2, 4, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0162",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "stepInference",
+  "structureType": "missingMiddleTerm",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 4,
+     "before": 0
+    },
+    "promptText": "0, ___, 4, 6"
+   },
+   "answerType": "fillBlank"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0317",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "groupsToProduct",
+  "structureType": "repeatedAddition",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      2,
+      2,
+      2
+     ]
+    },
+    "promptText": "2 + 2 + 2 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0019",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "nextTermForward",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "step": 2,
+    "counting": {
+     "kind": "next",
+     "step": 2,
+     "sequence": [
+      8,
+      10
+     ]
+    },
+    "sequence": [
+     8,
+     10
+    ],
+    "promptText": "8, 10, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0180",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "stepInference",
+  "structureType": "missingMiddleTerm",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 15,
+     "before": 5
+    },
+    "promptText": "0, 5, ___"
+   },
+   "answerType": "fillBlank"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0335",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "groupsToProduct",
+  "structureType": "repeatedAddition",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 50,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      10,
+      10,
+      10,
+      10,
+      10
+     ]
+    },
+    "promptText": "10 + 10 + 10 + 10 + 10 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0037",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "nextTermBackward",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 14,
+   "display": {
+    "step": -2,
+    "counting": {
+     "kind": "next",
+     "step": -2,
+     "sequence": [
+      20,
+      18,
+      16
+     ]
+    },
+    "sequence": [
+     20,
+     18,
+     16
+    ],
+    "promptText": "20, 18, 16, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0198",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "stepInference",
+  "structureType": "missingMiddleLong",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 10,
+     "before": 6
+    },
+    "promptText": "2, 4, 6, ___, 10"
+   },
+   "answerType": "fillBlank"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0052",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "nextTermThreesFours",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 9,
+   "display": {
+    "step": 3,
+    "counting": {
+     "kind": "next",
+     "step": 3,
+     "sequence": [
+      0,
+      3,
+      6
+     ]
+    },
+    "sequence": [
+     0,
+     3,
+     6
+    ],
+    "promptText": "0, 3, 6, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0213",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "stepInference",
+  "structureType": "missingMiddleThreesFours",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 9,
+     "before": 3
+    },
+    "promptText": "3, ___, 9, 12"
+   },
+   "answerType": "fillBlank"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0368",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "groupsToProduct",
+  "structureType": "repeatedAdditionThreesFours",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 9,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      3,
+      3,
+      3
+     ]
+    },
+    "promptText": "3 + 3 + 3 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0072",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "nextTermThreesFours",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 40,
+   "display": {
+    "step": 4,
+    "counting": {
+     "kind": "next",
+     "step": 4,
+     "sequence": [
+      28,
+      32,
+      36
+     ]
+    },
+    "sequence": [
+     28,
+     32,
+     36
+    ],
+    "promptText": "28, 32, 36, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0231",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "stepInference",
+  "structureType": "missingMiddleThreesFours",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 30,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 33,
+     "before": 27
+    },
+    "promptText": "27, ___, 33, 36"
+   },
+   "answerType": "fillBlank"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0386",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "groupsToProduct",
+  "structureType": "repeatedAdditionThreesFours",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 30,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      6,
+      6,
+      6,
+      6,
+      6
+     ]
+    },
+    "promptText": "6 + 6 + 6 + 6 + 6 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0092",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "tensRun",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 50,
+   "display": {
+    "step": 10,
+    "counting": {
+     "kind": "next",
+     "step": 10,
+     "sequence": [
+      10,
+      20,
+      30,
+      40
+     ]
+    },
+    "sequence": [
+     10,
+     20,
+     30,
+     40
+    ],
+    "promptText": "10, 20, 30, 40, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0249",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "stepInference",
+  "structureType": "missingStartThreesFours",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 21,
+   "display": {
+    "counting": {
+     "n": 24,
+     "kind": "moreLess",
+     "delta": -3
+    },
+    "promptText": "___, 24, 27, 30"
+   },
+   "answerType": "fillBlank"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0110",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "nextTermBigSteps",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 18,
+   "display": {
+    "step": 6,
+    "counting": {
+     "kind": "next",
+     "step": 6,
+     "sequence": [
+      0,
+      6,
+      12
+     ]
+    },
+    "sequence": [
+     0,
+     6,
+     12
+    ],
+    "promptText": "0, 6, 12, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0265",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "stepInference",
+  "structureType": "missingMiddleBigSteps",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 18,
+     "before": 6
+    },
+    "promptText": "6, ___, 18, 24"
+   },
+   "answerType": "fillBlank"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0420",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "groupsToProduct",
+  "structureType": "unitFormBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 24,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      6,
+      6,
+      6,
+      6
+     ]
+    },
+    "promptText": "4 sixes = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0128",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "nextTermBigSteps",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 600,
+   "display": {
+    "step": 100,
+    "counting": {
+     "kind": "next",
+     "step": 100,
+     "sequence": [
+      300,
+      400,
+      500
+     ]
+    },
+    "sequence": [
+     300,
+     400,
+     500
+    ],
+    "promptText": "300, 400, 500, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0283",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "stepInference",
+  "structureType": "missingMiddleBigSteps",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 300,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 350,
+     "before": 250
+    },
+    "promptText": "200, 250, ___, 350"
+   },
+   "answerType": "fillBlank"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0456",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "groupsToProduct",
+  "structureType": "repeatedAdditionBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 250,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      50,
+      50,
+      50,
+      50,
+      50
+     ]
+    },
+    "promptText": "50 + 50 + 50 + 50 + 50 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0146",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "offMultipleRun",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 305,
+   "display": {
+    "step": 100,
+    "counting": {
+     "kind": "next",
+     "step": 100,
+     "sequence": [
+      5,
+      105,
+      205
+     ]
+    },
+    "sequence": [
+     5,
+     105,
+     205
+    ],
+    "promptText": "5, 105, 205, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0301",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "stepInference",
+  "structureType": "missingStartBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 125,
+   "display": {
+    "counting": {
+     "n": 150,
+     "kind": "moreLess",
+     "delta": -25
+    },
+    "promptText": "___, 150, 175, 200"
+   },
+   "answerType": "fillBlank"
   }
  },
  {
@@ -14998,6 +24194,704 @@ export const SEED_ITEMS = [
    "display": {
     "promptText": "9 − 8 = ?"
    }
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0001",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "readClock",
+  "structureType": "faceReadTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 30,
+   "display": {
+    "hour": 1,
+    "time": {
+     "kind": "faceRead",
+     "minute": 30
+    },
+    "type": "clock",
+    "minute": 30,
+    "promptText": "The hour hand is near one. How many minutes past the hour does the clock show?"
+   },
+   "answerType": "clock"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0157",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "elapsedTime",
+  "structureType": "wholeHoursTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "counting": {
+     "have": 2,
+     "kind": "gap",
+     "target": 5
+    },
+    "promptText": "Start at two o'clock, finish at five o'clock. How many hours is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0313",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "timeConcepts",
+  "structureType": "unitFactTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 60,
+   "display": {
+    "time": {
+     "n": 1,
+     "kind": "unit",
+     "unit": "hour"
+    },
+    "promptText": "1 hour = ? minutes"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0469",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "calendar",
+  "structureType": "weekDaysTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      7
+     ]
+    },
+    "promptText": "1 week = ? days"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0027",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "readClock",
+  "structureType": "faceReadTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 30,
+   "display": {
+    "hour": 1,
+    "time": {
+     "kind": "faceRead",
+     "minute": 30
+    },
+    "type": "clock",
+    "minute": 30,
+    "promptText": "Look at the clock near one. How many minutes past the hour is it?"
+   },
+   "answerType": "clock"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0183",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "elapsedTime",
+  "structureType": "hourLaterTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "time": {
+     "hour": 2,
+     "kind": "hourLater",
+     "delta": 1
+    },
+    "promptText": "It is two o'clock. What hour will it be one hour later? Answer with the hour number."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0339",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "timeConcepts",
+  "structureType": "hourChimeNext",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "counting": {
+     "kind": "next",
+     "step": 1,
+     "sequence": [
+      1,
+      2,
+      3
+     ]
+    },
+    "promptText": "Clock chimes: one o'clock, two o'clock, three o'clock. Which hour chimes next?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0494",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "calendar",
+  "structureType": "weekdayHopTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Tuesday",
+   "choices": [
+    "Tuesday",
+    "Monday",
+    "Wednesday"
+   ],
+   "display": {
+    "time": {
+     "k": 4,
+     "from": "Friday",
+     "kind": "weekdayHop"
+    },
+    "promptText": "Start on Friday and count on 4 days. Which day do you land on?"
+   }
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0053",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "readClock",
+  "structureType": "faceReadFive",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "hour": 1,
+    "time": {
+     "kind": "faceRead",
+     "minute": 5
+    },
+    "type": "clock",
+    "minute": 5,
+    "promptText": "How many minutes past 1 o'clock is this clock showing?"
+   },
+   "answerType": "clock"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0209",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "elapsedTime",
+  "structureType": "withinHourMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 35,
+   "display": {
+    "counting": {
+     "have": 190,
+     "kind": "gap",
+     "target": 225
+    },
+    "promptText": "Start 3:10, end 3:45. How many minutes passed?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0365",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "timeConcepts",
+  "structureType": "mixedToMinutes",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 75,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      60,
+      15
+     ]
+    },
+    "promptText": "1 hour 15 minutes = ? minutes"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0520",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "calendar",
+  "structureType": "weekDaysMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 21,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      7,
+      7,
+      7
+     ]
+    },
+    "promptText": "3 weeks = ? days"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0079",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "readClock",
+  "structureType": "wordsToDigital",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "4:45",
+   "choices": [
+    "4:00",
+    "4:15",
+    "4:45",
+    "5:45"
+   ],
+   "display": {
+    "time": {
+     "hour": 4,
+     "kind": "wordsDigital",
+     "minute": 45
+    },
+    "promptText": "Which digital time shows \"quarter to five\"?"
+   }
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0235",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "elapsedTime",
+  "structureType": "acrossHourMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 45,
+   "display": {
+    "counting": {
+     "have": 160,
+     "kind": "gap",
+     "target": 205
+    },
+    "promptText": "Start 2:40, end 3:25. Count up through the hour. How many minutes passed?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0391",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "timeConcepts",
+  "structureType": "minutesToMixed",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 15,
+   "display": {
+    "counting": {
+     "have": 60,
+     "kind": "gap",
+     "target": 75
+    },
+    "promptText": "75 minutes = 1 hour and ? minutes"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0546",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "calendar",
+  "structureType": "weekdayBackMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Saturday",
+   "choices": [
+    "Saturday",
+    "Sunday",
+    "Friday"
+   ],
+   "display": {
+    "time": {
+     "k": -3,
+     "from": "Tuesday",
+     "kind": "weekdayHop"
+    },
+    "promptText": "Count back 3 days from Tuesday. Which day is that?"
+   }
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0105",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "readClock",
+  "structureType": "faceReadMinute",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "hour": 1,
+    "time": {
+     "kind": "faceRead",
+     "minute": 7
+    },
+    "type": "clock",
+    "minute": 7,
+    "promptText": "Read this clock to the exact minute. How many minutes past 1?"
+   },
+   "answerType": "clock"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0261",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "elapsedTime",
+  "structureType": "endUnknownBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "3:25",
+   "choices": [
+    "3:25",
+    "3:20",
+    "3:30",
+    "4:25"
+   ],
+   "display": {
+    "time": {
+     "dur": 45,
+     "kind": "endTime",
+     "startH": 2,
+     "startM": 40
+    },
+    "promptText": "Start at 2:40 and go for 45 minutes. Which time does it end?"
+   }
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0417",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "timeConcepts",
+  "structureType": "bigUnitCompose",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 150,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      120,
+      30
+     ]
+    },
+    "promptText": "2 minutes 30 seconds = ? seconds"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0572",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "calendar",
+  "structureType": "dateSpanBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 14,
+   "display": {
+    "counting": {
+     "have": 3,
+     "kind": "gap",
+     "target": 17
+    },
+    "promptText": "From March 3 to March 17 = ? days"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0131",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "readClock",
+  "structureType": "minutesToDigital",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "3:07",
+   "choices": [
+    "3:53",
+    "4:53",
+    "4:07",
+    "3:07"
+   ],
+   "display": {
+    "time": {
+     "hour": 3,
+     "kind": "wordsDigital",
+     "minute": 7
+    },
+    "promptText": "A clock shows 7 minutes past 3. Which digital time is that?"
+   }
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0287",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "elapsedTime",
+  "structureType": "startUnknownBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "2:40",
+   "choices": [
+    "2:30",
+    "2:40",
+    "2:45",
+    "3:40"
+   ],
+   "display": {
+    "time": {
+     "dur": 45,
+     "endH": 3,
+     "endM": 25,
+     "kind": "startTime"
+    },
+    "promptText": "Something ends at 3:25 after 45 minutes. Which time did it start?"
+   }
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0443",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "timeConcepts",
+  "structureType": "bigUnitDecompose",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 30,
+   "display": {
+    "counting": {
+     "have": 120,
+     "kind": "gap",
+     "target": 150
+    },
+    "promptText": "150 seconds = 2 minutes and ? seconds"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-proc-b0821-0598",
+  "modeId": "time",
+  "itemFamily": "procedural",
+  "subskill": "calendar",
+  "structureType": "laterDateBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "counting": {
+     "kind": "countOn",
+     "more": 9,
+     "start": 3
+    },
+    "promptText": "9 days after March 3 is March ?"
+   },
+   "answerType": "numberPad"
   }
  }
 ];

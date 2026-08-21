@@ -7,23 +7,49 @@
 export { REVIEW_STATUS } from "./reviewStatus.js";
 
 import { ITEMS as additionItems } from "./items/addition.js";
+import { ITEMS as anglesItems } from "./items/angles.js";
+import { ITEMS as areaPerimeterItems } from "./items/areaPerimeter.js";
+import { ITEMS as barModelsItems } from "./items/barModels.js";
 import { ITEMS as comparingItems } from "./items/comparing.js";
 import { ITEMS as countingItems } from "./items/counting.js";
+import { ITEMS as dataGraphsItems } from "./items/dataGraphs.js";
+import { ITEMS as decimalsItems } from "./items/decimals.js";
 import { ITEMS as divisionItems } from "./items/division.js";
+import { ITEMS as factorsMultiplesItems } from "./items/factorsMultiples.js";
+import { ITEMS as fractionsItems } from "./items/fractions.js";
+import { ITEMS as linesShapesItems } from "./items/linesShapes.js";
+import { ITEMS as measurementItems } from "./items/measurement.js";
+import { ITEMS as moneyItems } from "./items/money.js";
 import { ITEMS as multiplicationItems } from "./items/multiplication.js";
 import { ITEMS as numberBondsItems } from "./items/numberBonds.js";
+import { ITEMS as patternsItems } from "./items/patterns.js";
 import { ITEMS as placeValueItems } from "./items/placeValue.js";
+import { ITEMS as placeValueDiscsItems } from "./items/placeValueDiscs.js";
 import { ITEMS as skipCountingItems } from "./items/skipCounting.js";
 import { ITEMS as subtractionItems } from "./items/subtraction.js";
+import { ITEMS as timeItems } from "./items/time.js";
 
 export const APPLICATION_ITEM_BANK = [
   ...additionItems,
+  ...anglesItems,
+  ...areaPerimeterItems,
+  ...barModelsItems,
   ...comparingItems,
   ...countingItems,
+  ...dataGraphsItems,
+  ...decimalsItems,
   ...divisionItems,
+  ...factorsMultiplesItems,
+  ...fractionsItems,
+  ...linesShapesItems,
+  ...measurementItems,
+  ...moneyItems,
   ...multiplicationItems,
   ...numberBondsItems,
+  ...patternsItems,
   ...placeValueItems,
+  ...placeValueDiscsItems,
   ...skipCountingItems,
   ...subtractionItems,
+  ...timeItems,
 ];

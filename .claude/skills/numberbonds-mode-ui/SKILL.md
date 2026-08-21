@@ -143,3 +143,25 @@ The reviewer-facing map of what each pattern asks. Bands: K-1 = wholes ≤10,
 | `bondStoryMakeTen` | 2-3 | reach ten, report the leftover | "Has 8, gets 5, rack holds ten — extras?" |
 | `bondStoryEqualSplit` | all | share equally between two | "Deals 12 beads into two equal piles" |
 | `bondStoryTakeOutTen` / `bondStoryTensSingles` | 4-5 | bundle a ten / count leftovers after tens | "Bundles ten of the 34 cups — outside?" |
+
+## Bond visual + prompt rules (2026-08-21 sweep, user feedback)
+
+- **Never join two equations with a bare period** — "8 = 5 + 3. 8 = 4 + ?"
+  reads as "8 = 5 + 3.8" (decimal misread) and gives no cue that the first
+  equation is a given. Join with ", so ": "8 = 5 + 3, so 8 = 4 + ?".
+  ("so" is 2 letters — the drills stay under the 6-letter verbal filter.)
+  Applied to bondPatternStep, commutativeFlip, teenBridgePair, ladderPair,
+  takeFromTenChain and the generator's splitDrill band 1 (the
+  m4NumberSense splitDrill oracle regex is pinned to the ", so " form).
+- **The cherry diagram is the default for part-whole items.** The
+  NumberBond widget (web `NumberBond.jsx`, iOS `NumberBondWidget`) renders
+  two shapes, inferred from the payload: `{whole, part}` → missing-part
+  (blank bottom slot); `display.parts` array of 2-3 known parts →
+  missing-WHOLE (blank top). 933 bank items were switched from numberPad
+  to `answerType: "numberBond"` by `scripts/sweeps/sweepNumberBondVisuals.mjs`.
+- **Exclusions (do NOT give these the widget):** `equalSplit` /
+  `bondStoryEqualSplit` — the shown part equals the answer, the diagram
+  reveals it; `makeTenSplit` / `makeNextTen` — the cherry's whole is the
+  strategy-split addend, not the number under discussion, which misleads.
+- Generator `wholeUnknown` now uses the widget too (display gained
+  `parts: [p1, p2]`); a fresh Fledging Flight shows the diagram.

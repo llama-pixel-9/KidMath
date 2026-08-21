@@ -134,6 +134,18 @@ const COUNTING = {
 };
 
 const SKIP = {
+  midBlankDrill: (q) => {
+    // Three shown terms of a 4-term run, one interior blank: the larger of
+    // the two visible gaps straddles the blank.
+    const nums = (q.display.promptText.match(/\d+/g) || []).map(Number);
+    const d1 = nums[1] - nums[0];
+    const d2 = nums[2] - nums[1];
+    return d1 > d2 ? nums[0] + d2 : nums[1] + d1;
+  },
+  repeatedAdditionDrill: (q) => {
+    const nums = (q.display.promptText.match(/\d+/g) || []).map(Number);
+    return nums.reduce((s, x) => s + x, 0);
+  },
   nextTermForward: (q) => q.display.sequence[2] + q.display.step,
   nextTermBackward: (q) => {
     const [x, y, z] = q.display.sequence;
@@ -424,7 +436,7 @@ const BONDS = {
   },
   splitDrill: (q) => {
     const text = promptOf(q);
-    let m = text.match(/^(\d+) = \d+ \+ \d+\. \d+ = (\d+) \+ \?$/); // pattern step
+    let m = text.match(/^(\d+) = \d+ \+ \d+, so \d+ = (\d+) \+ \?$/); // pattern step
     if (m) return Number(m[1]) - Number(m[2]);
     m = text.match(/^\d+ \+ (\d+) = \d+ \+ (\d+) \+ \?$/); // make ten
     if (m) return Number(m[1]) - Number(m[2]);
@@ -508,6 +520,7 @@ const BONDS = {
 };
 
 const COMPARING = {
+  benchmarkDrill: (q) => symbolFor(q.a, q.b),
   symbolBetweenNumerals: (q) => symbolFor(q.a, q.b),
   compareObjectSets: (q) => {
     const m = promptOf(q).match(/Basket A: (\S+) Basket B: (\S+)/);

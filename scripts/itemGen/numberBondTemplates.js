@@ -275,11 +275,14 @@ export function partWholeProcedural() {
 /* decompose :: procedural — pattern pairs, make ten, take from ten    */
 /* ------------------------------------------------------------------ */
 
+// Judgment convention (house rule, counting-mode-ui skill): "Is this
+// right?" with Yes/No — never "True or false?", which first graders can't
+// parse.
 const TF = (claim, truthy, band, structureType) =>
   item("decompose", "procedural", structureType, band, {
-    answer: truthy ? "True" : "False",
-    subPrompt: "True or false?",
-    choices: ["True", "False"],
+    answer: truthy ? "Yes" : "No",
+    subPrompt: "Is this right?",
+    choices: ["Yes", "No"],
     display: { promptText: claim },
   });
 

@@ -14252,7 +14252,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"2 + 3 = 5"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"2 + 3 = 5"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-512",
@@ -14262,7 +14262,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"1 + 3 = 5"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"1 + 3 = 5"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-513",
@@ -14272,7 +14272,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"2 + 4 = 5"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"2 + 4 = 5"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-514",
@@ -14282,7 +14282,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"4 + 1 = 5"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"4 + 1 = 5"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-515",
@@ -14292,7 +14292,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"3 + 3 = 6"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"3 + 3 = 6"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-516",
@@ -14302,7 +14302,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"2 + 3 = 6"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"2 + 3 = 6"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-517",
@@ -14312,7 +14312,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"2 + 4 = 6"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"2 + 4 = 6"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-518",
@@ -14322,7 +14322,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"2 + 5 = 6"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"2 + 5 = 6"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-519",
@@ -14332,7 +14332,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"4 + 2 = 6"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"4 + 2 = 6"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-520",
@@ -14342,7 +14342,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"4 + 3 = 7"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"4 + 3 = 7"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-521",
@@ -14352,7 +14352,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"3 + 3 = 7"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"3 + 3 = 7"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-522",
@@ -14362,7 +14362,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"2 + 5 = 7"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"2 + 5 = 7"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-523",
@@ -14372,7 +14372,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"2 + 6 = 7"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"2 + 6 = 7"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-524",
@@ -14382,7 +14382,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"5 + 3 = 8"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"5 + 3 = 8"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-525",
@@ -14392,7 +14392,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"4 + 3 = 8"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"4 + 3 = 8"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-526",
@@ -14402,7 +14402,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"2 + 6 = 8"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"2 + 6 = 8"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-527",
@@ -14412,7 +14412,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"2 + 7 = 8"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"2 + 7 = 8"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-528",
@@ -14422,7 +14422,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"4 + 4 = 8"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"4 + 4 = 8"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-529",
@@ -14432,7 +14432,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"6 + 3 = 9"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"6 + 3 = 9"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-530",
@@ -14442,7 +14442,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"5 + 3 = 9"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"5 + 3 = 9"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-531",
@@ -14452,7 +14452,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"2 + 7 = 9"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"2 + 7 = 9"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-532",
@@ -14462,7 +14462,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"2 + 8 = 9"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"2 + 8 = 9"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-533",
@@ -14472,7 +14472,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"4 + 5 = 9"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"4 + 5 = 9"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-534",
@@ -14482,7 +14482,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"7 + 3 = 10"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"7 + 3 = 10"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-535",
@@ -14492,7 +14492,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"6 + 3 = 10"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"6 + 3 = 10"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-536",
@@ -14502,7 +14502,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"2 + 8 = 10"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"2 + 8 = 10"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-537",
@@ -14512,7 +14512,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"2 + 9 = 10"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"2 + 9 = 10"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-538",
@@ -14522,7 +14522,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"4 + 6 = 10"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"4 + 6 = 10"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-539",
@@ -15042,7 +15042,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"9 + 5 = 14"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"9 + 5 = 14"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-591",
@@ -15052,7 +15052,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"9 + 5 = 15"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"9 + 5 = 15"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-592",
@@ -15062,7 +15062,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"8 + 6 = 14"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"8 + 6 = 14"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-593",
@@ -15072,7 +15072,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"8 + 6 = 15"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"8 + 6 = 15"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-594",
@@ -15082,7 +15082,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"7 + 6 = 13"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"7 + 6 = 13"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-595",
@@ -15092,7 +15092,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"7 + 6 = 14"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"7 + 6 = 14"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-596",
@@ -15102,7 +15102,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"9 + 8 = 17"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"9 + 8 = 17"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-597",
@@ -15112,7 +15112,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"9 + 8 = 18"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"9 + 8 = 18"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-598",
@@ -15122,7 +15122,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"8 + 4 = 12"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"8 + 4 = 12"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-599",
@@ -15132,7 +15132,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"8 + 4 = 13"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"8 + 4 = 13"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-600",
@@ -15142,7 +15142,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"7 + 7 = 14"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"7 + 7 = 14"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-601",
@@ -15152,7 +15152,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"7 + 7 = 15"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"7 + 7 = 15"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-602",
@@ -15162,7 +15162,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"9 + 3 = 12"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"9 + 3 = 12"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-603",
@@ -15172,7 +15172,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"9 + 3 = 13"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"9 + 3 = 13"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-604",
@@ -15182,7 +15182,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"8 + 8 = 16"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"8 + 8 = 16"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-605",
@@ -15192,7 +15192,7 @@ export const ITEMS = [
     structureType: "trueFalseBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"8 + 8 = 17"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"8 + 8 = 17"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-606",
@@ -15762,7 +15762,7 @@ export const ITEMS = [
     structureType: "trueFalsePlaceBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"300 + 40 + 5 = 345"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"300 + 40 + 5 = 345"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-663",
@@ -15772,7 +15772,7 @@ export const ITEMS = [
     structureType: "trueFalsePlaceBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"300 + 40 + 5 = 355"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"300 + 40 + 5 = 355"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-664",
@@ -15782,7 +15782,7 @@ export const ITEMS = [
     structureType: "trueFalsePlaceBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"200 + 70 + 8 = 278"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"200 + 70 + 8 = 278"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-665",
@@ -15792,7 +15792,7 @@ export const ITEMS = [
     structureType: "trueFalsePlaceBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"200 + 70 + 8 = 288"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"200 + 70 + 8 = 288"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-666",
@@ -15802,7 +15802,7 @@ export const ITEMS = [
     structureType: "trueFalsePlaceBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"500 + 10 + 6 = 516"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"500 + 10 + 6 = 516"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-667",
@@ -15812,7 +15812,7 @@ export const ITEMS = [
     structureType: "trueFalsePlaceBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"500 + 10 + 6 = 526"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"500 + 10 + 6 = 526"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-668",
@@ -15822,7 +15822,7 @@ export const ITEMS = [
     structureType: "trueFalsePlaceBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"700 + 30 + 2 = 732"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"700 + 30 + 2 = 732"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-669",
@@ -15832,7 +15832,7 @@ export const ITEMS = [
     structureType: "trueFalsePlaceBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"700 + 30 + 2 = 742"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"700 + 30 + 2 = 742"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-670",
@@ -15842,7 +15842,7 @@ export const ITEMS = [
     structureType: "trueFalsePlaceBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"400 + 90 + 1 = 491"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"400 + 90 + 1 = 491"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-671",
@@ -15852,7 +15852,7 @@ export const ITEMS = [
     structureType: "trueFalsePlaceBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"400 + 90 + 1 = 501"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"400 + 90 + 1 = 501"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-672",
@@ -15862,7 +15862,7 @@ export const ITEMS = [
     structureType: "trueFalsePlaceBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"600 + 50 + 9 = 659"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"600 + 50 + 9 = 659"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-673",
@@ -15872,7 +15872,7 @@ export const ITEMS = [
     structureType: "trueFalsePlaceBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"600 + 50 + 9 = 669"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"600 + 50 + 9 = 669"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-674",
@@ -15882,7 +15882,7 @@ export const ITEMS = [
     structureType: "trueFalsePlaceBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"800 + 20 + 4 = 824"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"800 + 20 + 4 = 824"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-675",
@@ -15892,7 +15892,7 @@ export const ITEMS = [
     structureType: "trueFalsePlaceBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"800 + 20 + 4 = 834"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"800 + 20 + 4 = 834"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-676",
@@ -15902,7 +15902,7 @@ export const ITEMS = [
     structureType: "trueFalsePlaceBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"True","choices":["True","False"],"display":{"promptText":"900 + 60 + 3 = 963"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"Yes","choices":["Yes","No"],"display":{"promptText":"900 + 60 + 3 = 963"},"subPrompt":"Is this right?"},
   },
   {
     itemId: "numberBonds-proc-b0820-677",
@@ -15912,6 +15912,6 @@ export const ITEMS = [
     structureType: "trueFalsePlaceBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":"False","choices":["True","False"],"display":{"promptText":"900 + 60 + 3 = 973"},"subPrompt":"True or false?"},
+    question: {"a":null,"b":null,"op":"bond","answer":"No","choices":["Yes","No"],"display":{"promptText":"900 + 60 + 3 = 973"},"subPrompt":"Is this right?"},
   },
 ];

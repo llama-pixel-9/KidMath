@@ -83,7 +83,10 @@ const fmtTime = (total) => `${Math.floor(total / 60)}:${String(total % 60).padSt
 
 function generateMany(mode, level, n = SAMPLES) {
   const out = [];
-  for (let i = 0; i < n; i += 1) out.push(generateQuestion(mode, level));
+  // This spec verifies the GENERATOR's answers against its own prompts, so
+  // the item bank (which now covers these modes and would displace generator
+  // varieties with bank structureTypes the checkers don't know) is bypassed.
+  for (let i = 0; i < n; i += 1) out.push(generateQuestion(mode, level, { consultBankFamilies: [] }));
   return out;
 }
 

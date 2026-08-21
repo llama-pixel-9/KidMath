@@ -7332,6 +7332,755 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "linesShapes-proc-b0821-0001",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeSides",
+  "structureType": "namedSides_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "shapeC": {
+     "kind": "sidesByName",
+     "name": "triangle"
+    },
+    "promptText": "How many sides does a triangle have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0187",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "symmetryLines",
+  "structureType": "foldMatchTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "authored"
+    },
+    "promptText": "Fold a square straight down the middle. Do the two halves match exactly?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0320",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeProperties",
+  "structureType": "rightAngles_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "shapeC": {
+     "kind": "rightAnglesByName",
+     "name": "square"
+    },
+    "promptText": "How many right angles does a square have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0474",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeClassification",
+  "structureType": "whichIs_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1,
+   "display": {
+    "shapeC": {
+     "kind": "select",
+     "predicate": {
+      "name": "triangle",
+      "type": "isName"
+     },
+     "correctIdx": 1,
+     "optionKeys": [
+      "square",
+      "triangleEquilateral",
+      "pentagon",
+      "rectangle"
+     ]
+    },
+    "options": [
+     {
+      "shape": "square",
+      "value": 0,
+      "rotate": 0
+     },
+     {
+      "shape": "triangleEquilateral",
+      "value": 1,
+      "rotate": 15
+     },
+     {
+      "shape": "pentagon",
+      "value": 2,
+      "rotate": 0
+     },
+     {
+      "shape": "rectangle",
+      "value": 3,
+      "rotate": 15
+     }
+    ],
+    "shapeMode": "select",
+    "promptText": "Round 1: which one is a triangle?"
+   },
+   "answerType": "shapeFigure"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0630",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "lineFigures",
+  "structureType": "endpoints_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "shapeC": {
+     "n": 2,
+     "kind": "endpoints",
+     "figure": "line segment"
+    },
+    "promptText": "How many endpoints does a line segment have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0071",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeSides",
+  "structureType": "figSides_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "shape": "square",
+    "rotate": 15,
+    "shapeC": {
+     "key": "square",
+     "kind": "sides"
+    },
+    "shapeMode": "count",
+    "promptText": "Shape 6: count its sides. How many sides are there?"
+   },
+   "answerType": "shapeFigure"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0212",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "symmetryLines",
+  "structureType": "foldMatchTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": false,
+    "shapeC": {
+     "kind": "authored"
+    },
+    "promptText": "Nora folds a paper letter L shape along its long stroke. Will the halves line up exactly?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0377",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeProperties",
+  "structureType": "equalSidesTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "shapeC": {
+     "kind": "sidesByName",
+     "name": "square"
+    },
+    "promptText": "A square has all its sides the same length. How many sides are the same?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0017",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeSides",
+  "structureType": "namedSides_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "shapeC": {
+     "kind": "sidesByName",
+     "name": "right triangle"
+    },
+    "promptText": "How many sides does a right triangle have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0157",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "symmetryLines",
+  "structureType": "namedSymmetry_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "shapeC": {
+     "kind": "symmetryByName",
+     "name": "square"
+    },
+    "promptText": "How many lines of symmetry does a square have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0344",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeProperties",
+  "structureType": "rightAngles_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 0,
+   "display": {
+    "shapeC": {
+     "kind": "rightAnglesByName",
+     "name": "trapezoid"
+    },
+    "promptText": "Count the right angles of a trapezoid. How many right angles are there?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0486",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeClassification",
+  "structureType": "whichIs_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1,
+   "display": {
+    "shapeC": {
+     "kind": "select",
+     "predicate": {
+      "name": "trapezoid",
+      "type": "isName"
+     },
+     "correctIdx": 1,
+     "optionKeys": [
+      "square",
+      "trapezoid",
+      "rectangle",
+      "triangleEquilateral"
+     ]
+    },
+    "options": [
+     {
+      "shape": "square",
+      "value": 0,
+      "rotate": 15
+     },
+     {
+      "shape": "trapezoid",
+      "value": 1,
+      "rotate": 30
+     },
+     {
+      "shape": "rectangle",
+      "value": 2,
+      "rotate": 45
+     },
+     {
+      "shape": "triangleEquilateral",
+      "value": 3,
+      "rotate": 15
+     }
+    ],
+    "shapeMode": "select",
+    "promptText": "Round 1: the shapes are tilted. Which one is a trapezoid?"
+   },
+   "answerType": "shapeFigure"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0636",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "lineFigures",
+  "structureType": "endpoints_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "shapeC": {
+     "n": 2,
+     "kind": "endpoints",
+     "figure": "line segment"
+    },
+    "promptText": "How many endpoints does a line segment have? Think before typing."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0091",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeSides",
+  "structureType": "figSides_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "shape": "triangleRight",
+    "rotate": 30,
+    "shapeC": {
+     "key": "triangleRight",
+     "kind": "sides"
+    },
+    "shapeMode": "count",
+    "promptText": "Figure 2 is tilted — count the sides anyway. How many sides?"
+   },
+   "answerType": "shapeFigure"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0247",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "symmetryLines",
+  "structureType": "symSum_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      6,
+      4
+     ]
+    },
+    "promptText": "Add the lines of symmetry of a hexagon and a square. What is the total?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0395",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeProperties",
+  "structureType": "diagonals_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "shapeC": {
+     "n": 2,
+     "kind": "diagonals",
+     "name": "trapezoid"
+    },
+    "promptText": "Count the diagonals of a trapezoid. How many diagonals are there?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0041",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeSides",
+  "structureType": "namedSides_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "shapeC": {
+     "kind": "sidesByName",
+     "name": "scalene triangle"
+    },
+    "promptText": "How many sides does a scalene triangle have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0173",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "symmetryLines",
+  "structureType": "namedSymmetry_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "shapeC": {
+     "kind": "symmetryByName",
+     "name": "octagon"
+    },
+    "promptText": "Exactly how many lines of symmetry does a octagon have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0360",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeProperties",
+  "structureType": "rightAngles_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 0,
+   "display": {
+    "shapeC": {
+     "kind": "rightAnglesByName",
+     "name": "octagon"
+    },
+    "promptText": "Exactly how many right angles does a octagon contain?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0498",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeClassification",
+  "structureType": "whichIs_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1,
+   "display": {
+    "shapeC": {
+     "kind": "select",
+     "predicate": {
+      "name": "octagon",
+      "type": "isName"
+     },
+     "correctIdx": 1,
+     "optionKeys": [
+      "hexagon",
+      "octagon",
+      "pentagon",
+      "trapezoid"
+     ]
+    },
+    "options": [
+     {
+      "shape": "hexagon",
+      "value": 0,
+      "rotate": 30
+     },
+     {
+      "shape": "octagon",
+      "value": 1,
+      "rotate": 45
+     },
+     {
+      "shape": "pentagon",
+      "value": 2,
+      "rotate": 60
+     },
+     {
+      "shape": "trapezoid",
+      "value": 3,
+      "rotate": 30
+     }
+    ],
+    "shapeMode": "select",
+    "promptText": "Round 1: even turned around, one of these is a octagon. Which one?"
+   },
+   "answerType": "shapeFigure"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0642",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "lineFigures",
+  "structureType": "endpoints_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "shapeC": {
+     "n": 2,
+     "kind": "endpoints",
+     "figure": "line segment"
+    },
+    "promptText": "How many endpoints does a line segment have? Recall the exact definition."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0113",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeSides",
+  "structureType": "figSides_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "shape": "square",
+    "rotate": 30,
+    "shapeC": {
+     "key": "square",
+     "kind": "sides"
+    },
+    "shapeMode": "count",
+    "promptText": "Study figure 4 closely. Exactly how many sides does it have?"
+   },
+   "answerType": "shapeFigure"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0269",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "symmetryLines",
+  "structureType": "symSum_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      8,
+      2
+     ]
+    },
+    "promptText": "Combine the symmetry lines of a octagon and a rectangle. Exactly how many lines is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-proc-b0821-0409",
+  "modeId": "linesShapes",
+  "itemFamily": "procedural",
+  "subskill": "shapeProperties",
+  "structureType": "diagonals_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "shapeC": {
+     "n": 5,
+     "kind": "diagonals",
+     "name": "pentagon"
+    },
+    "promptText": "Exactly how many diagonals does a pentagon contain?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
   "itemId": "measurement-proc-b0821-0001",
   "modeId": "measurement",
   "itemFamily": "procedural",

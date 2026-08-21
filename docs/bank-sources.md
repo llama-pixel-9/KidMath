@@ -86,6 +86,22 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## linesShapes — full bank build (2026-08-21)
+
+2,320 items (792 procedural + 774 conceptual + 754 application), batch tag
+`b0821`, every `linesShapes` cell ≥ 50 new items. Deterministic; see
+`docs/linesshapes-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+EngageNY (CC BY-NC-SA — structure only): GK M2 (name/describe flat shapes,
+sides and corners), G1 M5 (compose shapes, defining vs non-defining
+attributes), G2 M8 (polygon attributes, drawing by property), G3 M7
+(quadrilateral classification, shared attributes), G4 M4 (points/lines/
+rays/segments, parallel and perpendicular, line symmetry). Riddles,
+guess-my-rule circles, and mirror-fold crafts are standard geometry
+pedagogy. All wording original.
+
 ## dataGraphs — full bank build (2026-08-21)
 
 1,836 items (610 procedural + 614 conceptual + 612 application), batch tag

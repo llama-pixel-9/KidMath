@@ -86,6 +86,23 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## Number Bonds — full bank build (2026-08-20)
+
+1,591 items (677 procedural + 455 conceptual + 459 application), batch tag
+`b0820`, every `numberBonds` cell ≥ 50. Generated deterministically by
+`scripts/itemGen/authorNumberBonds.js` — no verbatim or adapted text from
+any source; see `docs/numberbonds-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+Problem *shapes* follow a pattern survey of EngageNY/Eureka Math
+(CC BY-NC-SA — structure only, never wording): GK M4 (number pairs to 10,
+open decomposition, yes/no bond checks), G1 M1 (Number Bond Dash fact space,
+fact families, doubles), G1 M2 (make-ten splits 9→1/8→2/7→3, take-from-ten
+teen bonds), G1 M4 + G2 M1/M3 (tens/ones and non-canonical splits,
+make-next-ten within 100, ladders, bonds to 100/1000, three-branch hundreds
+bonds with zero traps). All prompt wording is original.
+
 ## Phase 2 Batch 4 — Addition (near-final) (2026-04-20)
 
 Added 324 items (108 app + 108 proc + 108 conc) bringing every addition cell to 48-51 items. Bundle now 1910 items.

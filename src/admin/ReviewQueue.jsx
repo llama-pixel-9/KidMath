@@ -75,6 +75,7 @@ export default function ReviewQueue({
   const [selected, setSelected] = useState(() => new Set());
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState(null);
+  const [filterMode, setFilterMode] = useState("");
   const [filterFamily, setFilterFamily] = useState("");
   const [filterBand, setFilterBand] = useState("");
   const [filterQc, setFilterQc] = useState(""); // "", "fail", "flagged"
@@ -116,6 +117,7 @@ export default function ReviewQueue({
   const queue = useMemo(() => {
     const filtered = (items || []).filter((it) => {
       if (!needsReview(it)) return false;
+      if (filterMode && it.modeId !== filterMode) return false;
       if (filterFamily && it.itemFamily !== filterFamily) return false;
       if (filterBand && !itemBands(it).includes(filterBand)) return false;
       if (filterQc) {
@@ -135,7 +137,14 @@ export default function ReviewQueue({
         return af - bf || a.score - b.score || a.it.itemId.localeCompare(b.it.itemId);
       })
       .map((x) => x.it);
-  }, [items, coverageMap, filterFamily, filterBand, filterQc, qcById]);
+  }, [items, coverageMap, filterMode, filterFamily, filterBand, filterQc, qcById]);
+
+  // Modes present in the review queue (unfiltered), for the mode filter.
+  const queueModes = useMemo(() => {
+    const modes = new Set();
+    for (const it of items || []) if (needsReview(it)) modes.add(it.modeId);
+    return [...modes].sort();
+  }, [items]);
 
   const qcSummary = useMemo(() => {
     let fail = 0;
@@ -291,6 +300,18 @@ export default function ReviewQueue({
           {queue.length} item{queue.length === 1 ? "" : "s"} awaiting review
         </span>
         <div className="flex-1" />
+        <select
+          className="rounded-lg border border-gray-300 px-3 py-2 text-sm"
+          value={filterMode}
+          onChange={(e) => setFilterMode(e.target.value)}
+        >
+          <option value="">All modes</option>
+          {queueModes.map((m) => (
+            <option key={m} value={m}>
+              {m}
+            </option>
+          ))}
+        </select>
         <select
           className="rounded-lg border border-gray-300 px-3 py-2 text-sm"
           value={filterFamily}

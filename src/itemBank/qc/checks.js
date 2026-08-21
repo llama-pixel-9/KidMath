@@ -96,6 +96,42 @@ export const CHECKS = [
   { id: "arithmetic", run: arithmeticCheck },
 
   {
+    // `op: "bond"` skips arithmeticCheck entirely (no OPS entry), so bond
+    // items get their own consistency rule, keyed off the display payload.
+    // Bank convention (docs/numberbonds-bank-design.md): missing-part items
+    // set display.whole + display.part; three-part items set display.whole +
+    // display.parts (the givens); whole-unknown items set display.parts only.
+    id: "bondMath",
+    run: (item) => {
+      const q = item.question || {};
+      if (q.op !== "bond" || typeof q.answer !== "number") return null;
+      const d = q.display || {};
+      const whole = typeof d.whole === "number" ? d.whole : null;
+      const part = typeof d.part === "number" ? d.part : null;
+      const parts = Array.isArray(d.parts) && d.parts.every((p) => typeof p === "number") ? d.parts : null;
+
+      if (whole != null && part != null && parts == null) {
+        return part + q.answer === whole
+          ? null
+          : fail("bondMath", `part ${part} + answer ${q.answer} != whole ${whole}`);
+      }
+      if (whole != null && parts != null) {
+        const given = parts.reduce((s, p) => s + p, 0);
+        return given + q.answer === whole
+          ? null
+          : fail("bondMath", `given parts sum ${given} + answer ${q.answer} != whole ${whole}`);
+      }
+      if (whole == null && parts != null) {
+        const sum = parts.reduce((s, p) => s + p, 0);
+        return sum === q.answer
+          ? null
+          : fail("bondMath", `parts sum ${sum} != answer ${q.answer} (whole-unknown bond)`);
+      }
+      return null; // no numeric bond payload to verify (judged/choice forms)
+    },
+  },
+
+  {
     id: "answerGivenAway",
     run: (item) => {
       const text = item.question?.display?.promptText || "";

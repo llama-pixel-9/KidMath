@@ -411,6 +411,25 @@ const BONDS = {
     const [p1, p2] = numsIn(promptOf(q));
     return p1 + p2;
   },
+  // The three targetedOnly drills, re-derived from the symbolic prompt.
+  wholeDrill: (q) => {
+    const [p1, p2] = numsIn(promptOf(q)); // "? = 4 + 5"
+    return p1 + p2;
+  },
+  partnerDrill: (q) => {
+    const [whole, part] = numsIn(promptOf(q)); // "9 = 4 + ?"
+    return whole - part;
+  },
+  splitDrill: (q) => {
+    const text = promptOf(q);
+    let m = text.match(/^(\d+) = \d+ \+ \d+\. \d+ = (\d+) \+ \?$/); // pattern step
+    if (m) return Number(m[1]) - Number(m[2]);
+    m = text.match(/^\d+ \+ (\d+) = \d+ \+ (\d+) \+ \?$/); // make ten
+    if (m) return Number(m[1]) - Number(m[2]);
+    m = text.match(/^(\d+) \+ (\d+) = (\d+) \+ \?$/); // make next ten
+    if (m) return Number(m[1]) + Number(m[2]) - Number(m[3]);
+    return NaN;
+  },
   partUnknown: (q) => q.display.whole - q.display.part,
   largeMagnitudeBond: (q) => q.display.whole - q.display.part,
   bondFromStory: (q) => {
@@ -573,11 +592,25 @@ describe("M4 number-sense modes: every stated answer is actually correct", () =>
   for (const [modeId, mode] of Object.entries(MODES)) {
     it(`${modeId} — answers re-derived from the rendered item`, () => {
       const seen = new Set();
+      // numberBonds' `targetedOnly` drill varieties only join the pool when
+      // the context carries a family/subskill (as real session requests
+      // always do), so reaching them here needs targeted sampling too.
+      const contexts =
+        modeId === "numberBonds"
+          ? [
+              { noFormats: true },
+              ...mode.subskills.map((s) => ({
+                noFormats: true,
+                itemFamily: "procedural",
+                targetSubskill: s,
+              })),
+            ]
+          : [{ noFormats: true }];
       for (const level of LEVELS) {
         for (let i = 0; i < SAMPLES; i++) {
           // Formats are switched off: a format transform legitimately replaces
           // the question, and this test is about the underlying generator.
-          const q = mode.generate(level, { noFormats: true });
+          const q = mode.generate(level, contexts[i % contexts.length]);
           const varietyId = q.metadata.structureType;
           seen.add(varietyId);
 

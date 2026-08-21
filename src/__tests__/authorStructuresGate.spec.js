@@ -116,3 +116,46 @@ describe("arithmetic accepts every operand position of one relation", () => {
     expect(gated(draft("addToStartUnknown", "Some cats sat. 3 more came. Now there are 5. How many before?", { a: 3, b: 5, op: "+", answer: 4 }))).toBe(false); // 5-3=2, not 4
   });
 });
+
+describe("bondMath verifies number-bond payloads that arithmetic skips", () => {
+  // Bank convention (docs/numberbonds-bank-design.md): op "bond", givens in
+  // display — whole+part (missing part), whole+parts (three-part), parts only
+  // (whole unknown). `op: "bond"` has no OPS entry, so without this check a
+  // wrong bond answer would sail through the gate.
+  const bond = (display, answer, levelRange = [1, 3]) => ({
+    itemId: "x",
+    modeId: "numberBonds",
+    structureType: "partUnknown",
+    itemFamily: "procedural",
+    subskill: "missingPart",
+    levelRange,
+    question: { a: null, b: null, op: "bond", answer, display: { promptText: "9 = 4 + ?", ...display } },
+  });
+
+  it("accepts a correct missing-part bond", () => {
+    expect(runChecks(bond({ whole: 9, part: 4 }, 5)).pass).toBe(true);
+  });
+
+  it("rejects a wrong missing-part bond", () => {
+    const qc = runChecks(bond({ whole: 9, part: 4 }, 6));
+    expect(qc.pass).toBe(false);
+    expect(qc.findings.some((f) => f.id === "bondMath")).toBe(true);
+  });
+
+  it("accepts a correct whole-unknown bond (parts only)", () => {
+    expect(runChecks(bond({ parts: [4, 5], promptText: "4 + 5 = ?" }, 9)).pass).toBe(true);
+  });
+
+  it("rejects a three-part bond whose given parts + answer miss the whole", () => {
+    const qc = runChecks(bond({ whole: 10, parts: [2, 3], promptText: "10 = 2 + 3 + ?" }, 6));
+    expect(qc.pass).toBe(false);
+    expect(qc.findings.some((f) => f.id === "bondMath")).toBe(true);
+  });
+
+  it("skips judged forms with no numeric bond payload", () => {
+    const item = bond({ promptText: "4 + 5 = 9" }, 9);
+    item.question.answer = "True";
+    item.question.choices = ["True", "False"];
+    expect(runChecks(item).findings.some((f) => f.id === "bondMath")).toBe(false);
+  });
+});

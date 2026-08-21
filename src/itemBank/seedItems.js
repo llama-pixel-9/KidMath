@@ -1521,6 +1521,683 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "angles-proc-b0821-0001",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "classifyAngle",
+  "structureType": "cornerClassify_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "acute",
+   "choices": [
+    "straight",
+    "acute",
+    "right",
+    "obtuse"
+   ],
+   "display": {
+    "ang": {
+     "rel": "less",
+     "kind": "classifyRel"
+    },
+    "promptText": "An angle opens less than a square corner. Pick its kind."
+   }
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0156",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "measureAngle",
+  "structureType": "turnCount_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "ang": {
+     "kind": "divTurn",
+     "unit": 90,
+     "whole": 180
+    },
+    "promptText": "How many square corners fit exactly along a straight line? Type the count."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0311",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "angleSum",
+  "structureType": "turnsMake_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "a straight line",
+   "choices": [
+    "a small tilt",
+    "a full turn",
+    "a quarter turn",
+    "a straight line"
+   ],
+   "display": {
+    "ang": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "Two square corners side by side together make what? Pick it."
+   }
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0465",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "missingAngle",
+  "structureType": "missingQuarters_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "ang": {
+     "a": 90,
+     "kind": "missDeg",
+     "total": 360
+    },
+    "promptText": "A full spin is missing some quarter turns: 1 is done. How many quarter turns are missing? Type it."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0026",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "classifyAngle",
+  "structureType": "turnClassify_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "right",
+   "choices": [
+    "acute",
+    "straight",
+    "right",
+    "obtuse"
+   ],
+   "display": {
+    "ang": {
+     "deg": 90,
+     "kind": "classify"
+    },
+    "promptText": "Which kind of angle comes from a quarter turn?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0181",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "measureAngle",
+  "structureType": "turnCount_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "ang": {
+     "kind": "divTurn",
+     "unit": 90,
+     "whole": 360
+    },
+    "promptText": "It takes how many square corners to build a full turn? Type the number."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0336",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "angleSum",
+  "structureType": "turnsTotal_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "ang": {
+     "a": 2,
+     "b": 2,
+     "kind": "sumUnits"
+    },
+    "promptText": "2 quarter turns, then 2 more. How many quarter turns in all? Type it."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0491",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "missingAngle",
+  "structureType": "missingCornerLine_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1,
+   "display": {
+    "ang": {
+     "a": 90,
+     "kind": "missDeg",
+     "total": 180
+    },
+    "promptText": "The line needs 2 square corners and shows 1. How many square corners does it still need?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0052",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "classifyAngle",
+  "structureType": "degreeClassify_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "acute",
+   "choices": [
+    "straight",
+    "obtuse",
+    "acute",
+    "right"
+   ],
+   "display": {
+    "ang": {
+     "deg": 30,
+     "kind": "classify"
+    },
+    "promptText": "An angle measures 30 degrees. Pick its kind."
+   }
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0233",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "measureAngle",
+  "structureType": "degLF_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 90,
+   "display": {
+    "ang": {
+     "a": 90,
+     "kind": "missDeg",
+     "total": 180
+    },
+    "promptText": "90 + ? = 180 (deg)"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0387",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "angleSum",
+  "structureType": "sumLF_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 75,
+   "display": {
+    "ang": {
+     "a": 30,
+     "b": 45,
+     "kind": "sumDeg"
+    },
+    "promptText": "30 + 45 = ? (deg)"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0543",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "missingAngle",
+  "structureType": "missLF_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 60,
+   "display": {
+    "ang": {
+     "a": 30,
+     "kind": "missDeg",
+     "total": 90
+    },
+    "promptText": "90 - 30 = ? (deg)"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0104",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "classifyAngle",
+  "structureType": "benchKind_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "right",
+   "choices": [
+    "acute",
+    "obtuse",
+    "straight",
+    "right"
+   ],
+   "display": {
+    "ang": {
+     "deg": 90,
+     "kind": "classify"
+    },
+    "promptText": "What kind of angle is a quarter turn? Pick it."
+   }
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0259",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "measureAngle",
+  "structureType": "halfDeg_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 45,
+   "display": {
+    "ang": {
+     "of": 90,
+     "kind": "halfDeg"
+    },
+    "promptText": "Half of a 90-degree angle measures how many degrees? Type it."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0413",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "angleSum",
+  "structureType": "tripleDeg_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 90,
+   "display": {
+    "ang": {
+     "a": 20,
+     "b": 30,
+     "c": 40,
+     "kind": "sumDeg3"
+    },
+    "promptText": "Three angles around a line measure 20, 30, and 40 degrees. Type their total in degrees."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0569",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "missingAngle",
+  "structureType": "missingThird_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 50,
+   "display": {
+    "ang": {
+     "a": 60,
+     "b": 70,
+     "kind": "missDeg3",
+     "total": 180
+    },
+    "promptText": "Three angles make a straight angle. Two measure 60 and 70 degrees. The third = ? Type it."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0065",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "classifyAngle",
+  "structureType": "degreeClassify_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "acute",
+   "choices": [
+    "right",
+    "acute",
+    "straight",
+    "obtuse"
+   ],
+   "display": {
+    "ang": {
+     "deg": 89,
+     "kind": "classify"
+    },
+    "promptText": "Classify precisely: a 89-degree angle is which kind?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0246",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "measureAngle",
+  "structureType": "degLF_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 270,
+   "display": {
+    "ang": {
+     "a": 90,
+     "kind": "missDeg",
+     "total": 360
+    },
+    "promptText": "90 + ? = 360 (deg)"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0400",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "angleSum",
+  "structureType": "sumLF_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 125,
+   "display": {
+    "ang": {
+     "a": 85,
+     "b": 40,
+     "kind": "sumDeg"
+    },
+    "promptText": "85 + 40 = ? (deg)"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0556",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "missingAngle",
+  "structureType": "missLF_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 115,
+   "display": {
+    "ang": {
+     "a": 65,
+     "kind": "missDeg",
+     "total": 180
+    },
+    "promptText": "180 - 65 = ? (deg)"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0117",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "classifyAngle",
+  "structureType": "benchKind_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "right",
+   "choices": [
+    "acute",
+    "right",
+    "obtuse",
+    "straight"
+   ],
+   "display": {
+    "ang": {
+     "deg": 90,
+     "kind": "classify"
+    },
+    "promptText": "Classify precisely: a quarter turn is which kind of angle?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0272",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "measureAngle",
+  "structureType": "halfDeg_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 45,
+   "display": {
+    "ang": {
+     "of": 90,
+     "kind": "halfDeg"
+    },
+    "promptText": "Bisect a 90-degree angle. Each half measures how many degrees?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0426",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "angleSum",
+  "structureType": "tripleDeg_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 180,
+   "display": {
+    "ang": {
+     "a": 50,
+     "b": 60,
+     "c": 70,
+     "kind": "sumDeg3"
+    },
+    "promptText": "Compute the total of three adjacent angles: 50, 60, and 70 degrees."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-proc-b0821-0582",
+  "modeId": "angles",
+  "itemFamily": "procedural",
+  "subskill": "missingAngle",
+  "structureType": "missingThird_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 110,
+   "display": {
+    "ang": {
+     "a": 120,
+     "b": 130,
+     "kind": "missDeg3",
+     "total": 360
+    },
+    "promptText": "Compute the third angle when a full turn contains parts of 120 and 130 degrees."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
   "itemId": "areaPerimeter-proc-b0821-0049",
   "modeId": "areaPerimeter",
   "itemFamily": "procedural",

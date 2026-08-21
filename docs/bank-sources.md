@@ -86,6 +86,20 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## angles — full bank build (2026-08-21)
+
+1,850 items (620 procedural + 618 conceptual + 612 application), batch tag
+`b0821`, every `angles` cell ≥ 50 new items. Deterministic; see
+`docs/angles-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+CCSS 4.MD.C progressions (angles as turns, degree measure as 1/360 of a
+circle, additive angle decomposition) and EngageNY G4 M4 (CC BY-NC-SA —
+structure only): turn-based intuition before degrees, benchmark angles,
+adjacent-angle sums, and the ray-length misconception. All wording
+original.
+
 ## areaPerimeter — full bank build (2026-08-21)
 
 1,881 items (651 procedural + 618 conceptual + 612 application), batch tag

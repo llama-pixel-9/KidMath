@@ -66,7 +66,11 @@ const VARIETIES = [
   {
     id: "classifyByTurn",
     bands: [1],
-    family: CONCEPTUAL,
+    // Reclassified CONCEPTUAL→PROCEDURAL (2026-08-21): a DOK1 naming drill,
+    // and band 1 otherwise has NO procedural variety — the bank's band-1
+    // procedural cells were unreachable (the engine consults the bank by the
+    // generated family; same fix as fractions' partWholeAreaName).
+    family: PROCEDURAL,
     subskills: ["classifyAngle"],
     build() {
       const kind = pick([
@@ -561,9 +565,11 @@ function selectVariety(level, context) {
     if (dry.length) pool = dry;
   }
   if (context.itemFamily) {
+    // The itemFamily filter must never leave the band (the numberBonds
+    // level-leak class): a level-1 kid asked for "procedural" was drawing
+    // band-2/3 protractor items via the old any-band fallback.
     const byFamily = pool.filter((v) => v.family === context.itemFamily);
-    const anyBand = VARIETIES.filter((v) => v.family === context.itemFamily);
-    pool = byFamily.length ? byFamily : anyBand.length ? anyBand : pool;
+    if (byFamily.length) pool = byFamily;
   }
   if (context.targetSubskill) {
     const bySubskill = pool.filter((v) => v.subskills.includes(context.targetSubskill));

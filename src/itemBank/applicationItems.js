@@ -7,6 +7,7 @@
 export { REVIEW_STATUS } from "./reviewStatus.js";
 
 import { ITEMS as additionItems } from "./items/addition.js";
+import { ITEMS as anglesItems } from "./items/angles.js";
 import { ITEMS as areaPerimeterItems } from "./items/areaPerimeter.js";
 import { ITEMS as barModelsItems } from "./items/barModels.js";
 import { ITEMS as comparingItems } from "./items/comparing.js";
@@ -30,6 +31,7 @@ import { ITEMS as timeItems } from "./items/time.js";
 
 export const APPLICATION_ITEM_BANK = [
   ...additionItems,
+  ...anglesItems,
   ...areaPerimeterItems,
   ...barModelsItems,
   ...comparingItems,

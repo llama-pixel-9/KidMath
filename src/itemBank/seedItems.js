@@ -8014,6 +8014,717 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "fractions-proc-b0821-0001",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "shadeName_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "1/2",
+   "choices": [
+    "1/2",
+    "1/1",
+    "2/1"
+   ],
+   "display": {
+    "frac": {
+     "d": 2,
+     "n": 1,
+     "kind": "name"
+    },
+    "promptText": "1 of 2 equal parts is shaded. The shaded fraction = ?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0163",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "fractionAsNumber",
+  "structureType": "unitMeaning_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "frac": {
+     "d": 2,
+     "kind": "unitCount"
+    },
+    "promptText": "The fraction 1/2 means 1 of ? equal parts"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0323",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "equivalence",
+  "structureType": "scaleUp_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "frac": {
+     "a": 1,
+     "b": 2,
+     "d2": 4,
+     "kind": "equivNum"
+    },
+    "promptText": "1/2 = ?/4. What is the missing top number?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0473",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "compareFractions",
+  "structureType": "sameDenCmp_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "<",
+   "choices": [
+    ">",
+    "=",
+    "<"
+   ],
+   "display": {
+    "frac": {
+     "a": 1,
+     "b": 3,
+     "c": 2,
+     "d": 3,
+     "kind": "cmp"
+    },
+    "promptText": "Which symbol fits: 1/3 ? 2/3 — pick <, >, or =."
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0628",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "addLikeDenominators",
+  "structureType": "addLike_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "2/2",
+   "choices": [
+    "3/2",
+    "2/2",
+    "2/4",
+    "4/2"
+   ],
+   "display": {
+    "frac": {
+     "a": 1,
+     "b": 1,
+     "d": 2,
+     "kind": "addLike"
+    },
+    "promptText": "1/2 + 1/2 = ? Pick the sum."
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0792",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "fractionOfSet",
+  "structureType": "ofSet_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "frac": {
+     "d": 2,
+     "n": 1,
+     "w": 12,
+     "kind": "ofSet"
+    },
+    "promptText": "1/2 of 12 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0076",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "wholeParts_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "frac": {
+     "d": 2,
+     "kind": "unitCount"
+    },
+    "promptText": "One whole cut into halves: how many parts is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0225",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "fractionAsNumber",
+  "structureType": "tickName_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "1/3",
+   "choices": [
+    "3/1",
+    "1/3",
+    "1/4"
+   ],
+   "display": {
+    "frac": {
+     "d": 3,
+     "n": 1,
+     "kind": "name"
+    },
+    "promptText": "Walk a 0-1 path in 3 equal steps. Where are you after step 1? Pick the fraction."
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0013",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "shadeName_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "2/5",
+   "choices": [
+    "5/2",
+    "3/5",
+    "2/5",
+    "2/3"
+   ],
+   "display": {
+    "frac": {
+     "d": 5,
+     "n": 2,
+     "kind": "name"
+    },
+    "promptText": "Shade 2 out of 5 equal parts. What fraction is that?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0169",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "fractionAsNumber",
+  "structureType": "unitMeaning_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "frac": {
+     "d": 5,
+     "kind": "unitCount"
+    },
+    "promptText": "1/5 stands for one piece out of how many equal pieces?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0335",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "equivalence",
+  "structureType": "scaleUp_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "frac": {
+     "a": 1,
+     "b": 2,
+     "d2": 10,
+     "kind": "equivNum"
+    },
+    "promptText": "Scale 1/2 up to denominator 10. The numerator becomes ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0485",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "compareFractions",
+  "structureType": "sameDenCmp_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "<",
+   "choices": [
+    "=",
+    "<",
+    ">"
+   ],
+   "display": {
+    "frac": {
+     "a": 2,
+     "b": 5,
+     "c": 4,
+     "d": 5,
+     "kind": "cmp"
+    },
+    "promptText": "Same bottoms: 2/5 versus 4/5. Choose <, >, or =."
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0640",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "addLikeDenominators",
+  "structureType": "addLike_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "4/5",
+   "choices": [
+    "6/5",
+    "4/10",
+    "5/5",
+    "4/5"
+   ],
+   "display": {
+    "frac": {
+     "a": 2,
+     "b": 2,
+     "d": 5,
+     "kind": "addLike"
+    },
+    "promptText": "Sum the like fractions 2/5 + 2/5. What do you get?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0817",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "fractionOfSet",
+  "structureType": "ofSet_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 9,
+   "display": {
+    "frac": {
+     "d": 5,
+     "n": 1,
+     "w": 45,
+     "kind": "ofSet"
+    },
+    "promptText": "Take 1/5 of the number 45. What do you get?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0080",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "wholeParts_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "frac": {
+     "d": 5,
+     "kind": "unitCount"
+    },
+    "promptText": "Count the fifths in one whole. How many parts are there?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0236",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "fractionAsNumber",
+  "structureType": "tickName_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "1/6",
+   "choices": [
+    "6/1",
+    "1/7",
+    "1/6"
+   ],
+   "display": {
+    "frac": {
+     "d": 6,
+     "n": 1,
+     "kind": "name"
+    },
+    "promptText": "A ruler from 0 to 1 carries 6 equal steps. Step 1 points at which fraction?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0025",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "shadeName_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "3/10",
+   "choices": [
+    "3/7",
+    "10/3",
+    "7/10",
+    "3/10"
+   ],
+   "display": {
+    "frac": {
+     "d": 10,
+     "n": 3,
+     "kind": "name"
+    },
+    "promptText": "Exactly 3 of the 10 equal sections are filled. Which fraction names the filled amount?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0175",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "fractionAsNumber",
+  "structureType": "unitMeaning_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "frac": {
+     "d": 10,
+     "kind": "unitCount"
+    },
+    "promptText": "Reading 1/10 as a number: the whole was partitioned how many ways?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0347",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "equivalence",
+  "structureType": "scaleUp_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 14,
+   "display": {
+    "frac": {
+     "a": 7,
+     "b": 10,
+     "d2": 20,
+     "kind": "equivNum"
+    },
+    "promptText": "Convert 7/10 exactly to ?/20. What numerator is required?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0497",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "compareFractions",
+  "structureType": "sameDenCmp_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "<",
+   "choices": [
+    ">",
+    "=",
+    "<"
+   ],
+   "display": {
+    "frac": {
+     "a": 3,
+     "b": 10,
+     "c": 7,
+     "d": 10,
+     "kind": "cmp"
+    },
+    "promptText": "Precisely relate 3/10 to 7/10. Which of <, >, = is true?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0652",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "addLikeDenominators",
+  "structureType": "addLike_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "7/10",
+   "choices": [
+    "8/10",
+    "7/10",
+    "7/20",
+    "1/10"
+   ],
+   "display": {
+    "frac": {
+     "a": 3,
+     "b": 4,
+     "d": 10,
+     "kind": "addLike"
+    },
+    "promptText": "Compute exactly: 3/10 + 4/10. Which fraction is the sum?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0842",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "fractionOfSet",
+  "structureType": "ofSet_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 24,
+   "display": {
+    "frac": {
+     "d": 10,
+     "n": 1,
+     "w": 240,
+     "kind": "ofSet"
+    },
+    "promptText": "Compute exactly 1/10 of 240. What is the result?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0084",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "wholeParts_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "frac": {
+     "d": 10,
+     "kind": "unitCount"
+    },
+    "promptText": "One whole measured in tenths holds how many parts?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-proc-b0821-0248",
+  "modeId": "fractions",
+  "itemFamily": "procedural",
+  "subskill": "fractionAsNumber",
+  "structureType": "tickName_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "11/12",
+   "choices": [
+    "11/13",
+    "11/12",
+    "12/11",
+    "10/12"
+   ],
+   "display": {
+    "frac": {
+     "d": 12,
+     "n": 11,
+     "kind": "name"
+    },
+    "promptText": "Of 12 evenly spaced marks between 0 and 1, mark 11 corresponds to which fraction?"
+   }
+  }
+ },
+ {
   "itemId": "linesShapes-proc-b0821-0001",
   "modeId": "linesShapes",
   "itemFamily": "procedural",

@@ -86,6 +86,21 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## fractions — full bank build (2026-08-21)
+
+2,787 items (949 procedural + 920 conceptual + 918 application), batch tag
+`b0821`, every `fractions` cell ≥ 50 new items. Deterministic; see
+`docs/fractions-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+CCSS 3.NF/4.NF progressions (unit-fraction composition, fraction as a
+number-line point, equivalence by scaling, like-denominator operations,
+fraction of a set) as presented in the CCSS Progressions documents and
+EngageNY G3 M5 / G4 M5 (CC BY-NC-SA — structure only). The misconception
+catalog (part-to-part labeling, add-the-denominators, bigger-denominator-
+bigger, different-wholes) is standard NF pedagogy. All wording original.
+
 ## barModels — full bank build (2026-08-21)
 
 1,836 items (624 procedural + 600 conceptual + 612 application), batch tag

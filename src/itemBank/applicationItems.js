@@ -12,6 +12,7 @@ import { ITEMS as comparingItems } from "./items/comparing.js";
 import { ITEMS as countingItems } from "./items/counting.js";
 import { ITEMS as dataGraphsItems } from "./items/dataGraphs.js";
 import { ITEMS as divisionItems } from "./items/division.js";
+import { ITEMS as fractionsItems } from "./items/fractions.js";
 import { ITEMS as linesShapesItems } from "./items/linesShapes.js";
 import { ITEMS as measurementItems } from "./items/measurement.js";
 import { ITEMS as moneyItems } from "./items/money.js";
@@ -31,6 +32,7 @@ export const APPLICATION_ITEM_BANK = [
   ...countingItems,
   ...dataGraphsItems,
   ...divisionItems,
+  ...fractionsItems,
   ...linesShapesItems,
   ...measurementItems,
   ...moneyItems,

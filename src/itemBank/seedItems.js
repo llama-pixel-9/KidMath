@@ -7533,6 +7533,601 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "numberBonds-proc-b0820-001",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "missingPart",
+  "structureType": "partUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 2,
+   "display": {
+    "part": 0,
+    "whole": 2,
+    "promptText": "2 = 0 + ?"
+   },
+   "answerType": "numberBond"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-225",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "wholeFromParts",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 2,
+   "display": {
+    "parts": [
+     0,
+     2
+    ],
+    "promptText": "? = 0 + 2"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-439",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "decompose",
+  "structureType": "bondPatternStep",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 3,
+   "display": {
+    "part": 2,
+    "whole": 5,
+    "promptText": "5 = 1 + 4. 5 = 2 + ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-022",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "missingPart",
+  "structureType": "partUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 3,
+   "display": {
+    "part": 3,
+    "whole": 6,
+    "promptText": "6 = 3 + ?"
+   },
+   "answerType": "numberBond"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-246",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "wholeFromParts",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 6,
+   "display": {
+    "parts": [
+     5,
+     1
+    ],
+    "promptText": "? = 5 + 1"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-472",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "decompose",
+  "structureType": "bondPatternStep",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 6,
+   "display": {
+    "part": 3,
+    "whole": 9,
+    "promptText": "9 = 2 + 7. 9 = 3 + ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-043",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "missingPart",
+  "structureType": "partUnknown",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 9,
+   "display": {
+    "part": 0,
+    "whole": 9,
+    "promptText": "9 = 0 + ?"
+   },
+   "answerType": "numberBond"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-267",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "wholeFromParts",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 9,
+   "display": {
+    "parts": [
+     0,
+     9
+    ],
+    "promptText": "? = 0 + 9"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-064",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "missingPart",
+  "structureType": "teenBond",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 1,
+   "display": {
+    "part": 10,
+    "whole": 11,
+    "promptText": "11 = 10 + ?"
+   },
+   "answerType": "numberBond"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-288",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "teenFromTen",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 11,
+   "display": {
+    "parts": [
+     10,
+     1
+    ],
+    "promptText": "? = 10 + 1"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-539",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "decompose",
+  "structureType": "makeTenSplit",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 1,
+   "display": {
+    "part": 1,
+    "whole": 2,
+    "promptText": "9 + 2 = 9 + 1 + ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-085",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "missingPart",
+  "structureType": "takeFromTenFact",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 5,
+   "display": {
+    "part": 9,
+    "whole": 14,
+    "promptText": "14 = 9 + ?"
+   },
+   "answerType": "numberBond"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-309",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "bigDouble",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 18,
+   "display": {
+    "parts": [
+     9,
+     9
+    ],
+    "promptText": "? = 9 + 9"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-561",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "decompose",
+  "structureType": "teenBridgePair",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 3,
+   "display": {
+    "part": 9,
+    "whole": 12,
+    "promptText": "12 = 10 + 2. 12 = 9 + ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-106",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "missingPart",
+  "structureType": "takeFromTenFact",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 8,
+   "display": {
+    "part": 6,
+    "whole": 14,
+    "promptText": "14 = 6 + ?"
+   },
+   "answerType": "numberBond"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-330",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "threeAddendBond",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 14,
+   "display": {
+    "parts": [
+     7,
+     3,
+     4
+    ],
+    "promptText": "? = 7 + 3 + 4"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-127",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "missingPart",
+  "structureType": "partnersOf100",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 95,
+   "display": {
+    "part": 5,
+    "whole": 100,
+    "promptText": "100 = 5 + ?"
+   },
+   "answerType": "numberBond"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-351",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "tensOnesCompose",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 21,
+   "display": {
+    "parts": [
+     20,
+     1
+    ],
+    "promptText": "? = 20 + 1"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-606",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "decompose",
+  "structureType": "makeNextTen",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 2,
+   "display": {
+    "part": 1,
+    "whole": 3,
+    "promptText": "19 + 3 = 20 + ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-159",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "missingPart",
+  "structureType": "partnersOf100",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 4,
+   "display": {
+    "part": 96,
+    "whole": 100,
+    "promptText": "100 = 96 + ?"
+   },
+   "answerType": "numberBond"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-380",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "tensOnesCompose",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 53,
+   "display": {
+    "parts": [
+     50,
+     3
+    ],
+    "promptText": "? = 50 + 3"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-630",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "decompose",
+  "structureType": "ladderPair",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 25,
+   "display": {
+    "part": 9,
+    "whole": 34,
+    "promptText": "14 − 9 = 5. 34 − 9 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-191",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "missingPart",
+  "structureType": "takeOutTen",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 42,
+   "display": {
+    "part": 10,
+    "whole": 52,
+    "promptText": "52 = ? + 10"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "numberBonds-proc-b0820-409",
+  "modeId": "numberBonds",
+  "itemFamily": "procedural",
+  "subskill": "partWhole",
+  "structureType": "tensOnesCompose",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "bond",
+   "answer": 85,
+   "display": {
+    "parts": [
+     80,
+     5
+    ],
+    "promptText": "? = 80 + 5"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
   "itemId": "placevalue-app-001",
   "modeId": "placeValue",
   "itemFamily": "application",

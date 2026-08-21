@@ -86,6 +86,21 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## areaPerimeter — full bank build (2026-08-21)
+
+1,881 items (651 procedural + 618 conceptual + 612 application), batch tag
+`b0821`, every `areaPerimeter` cell ≥ 50 new items. Deterministic; see
+`docs/areaperimeter-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+CCSS 3.MD.C/3.MD.D and 4.MD.A progressions (area as unit-square tiling,
+perimeter as distance around, composite/L-shape decomposition, same-
+perimeter-different-area investigations) as presented in the CCSS
+Progressions documents and EngageNY G3 M4/M7 (CC BY-NC-SA — structure
+only). The add-the-sides area trap and area/perimeter swap are standard
+MD misconception work. All wording original.
+
 ## factorsMultiples — full bank build (2026-08-21)
 
 1,862 items (626 procedural + 624 conceptual + 612 application), batch tag

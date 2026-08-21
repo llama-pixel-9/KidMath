@@ -793,7 +793,10 @@ describe("M4 distractors", () => {
     const config = getModeConfig("areaPerimeter");
     let sawSwap = 0;
     for (let i = 0; i < 400; i += 1) {
-      const q = generateQuestion("areaPerimeter", 5);
+      // This verifies the GENERATOR's distractor context; bank items have no
+      // display.width/height and would starve the sample (same reason
+      // generateMany passes consultBankFamilies: []).
+      const q = generateQuestion("areaPerimeter", 5, { consultBankFamilies: [] });
       if ((q.answerType ?? "choice") !== "choice") continue;
       const { width: w, height: h } = q.display;
       if (w == null || h == null) continue;

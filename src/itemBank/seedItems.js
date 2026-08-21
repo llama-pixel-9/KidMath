@@ -1521,6 +1521,672 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "areaPerimeter-proc-b0821-0049",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "area",
+  "structureType": "areaLF_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "ap": {
+     "h": 3,
+     "w": 2,
+     "kind": "areaOf"
+    },
+    "promptText": "Area: 2 x 3 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0223",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "perimeter",
+  "structureType": "perimLF_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "ap": {
+     "h": 3,
+     "w": 2,
+     "kind": "perimOf"
+    },
+    "promptText": "Perim: 2 + 3 + 2 + 3 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0340",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "compositeFigures",
+  "structureType": "joinAreas_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "ap": {
+     "a": 2,
+     "b": 3,
+     "c": 2,
+     "d": 2,
+     "kind": "joinAreas"
+    },
+    "promptText": "A 2-by-3 rectangle and a 2-by-2 rectangle join with no overlap. How many unit squares do they cover together?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0496",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "measureReasoning",
+  "structureType": "whichMeasure_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "around the edge",
+   "choices": [
+    "around the edge",
+    "inside the shape"
+   ],
+   "display": {
+    "ap": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "To put tape all the way around a card, do you need the trip AROUND the shape or the space INSIDE it? Pick one."
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0014",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "area",
+  "structureType": "areaDims_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 18,
+   "display": {
+    "ap": {
+     "h": 3,
+     "w": 6,
+     "kind": "areaOf"
+    },
+    "promptText": "Count the unit squares: 3 rows, 6 in each row. How many unit squares are there in all?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0186",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "perimeter",
+  "structureType": "perimDims_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 24,
+   "display": {
+    "ap": {
+     "h": 6,
+     "w": 6,
+     "kind": "perimOf"
+    },
+    "promptText": "Walk the edge of a 6-unit by 6-unit rectangle. How many units long is the walk around?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0418",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "compositeFigures",
+  "structureType": "twoSquares_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 13,
+   "display": {
+    "ap": {
+     "a": 2,
+     "b": 2,
+     "c": 3,
+     "d": 3,
+     "kind": "joinAreas"
+    },
+    "promptText": "Two squares sit side by side: one 2 units on a side, one 3 units on a side. How many unit squares do they cover together?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0574",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "measureReasoning",
+  "structureType": "labelPick_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "unit squares",
+   "choices": [
+    "unit squares",
+    "units"
+   ],
+   "display": {
+    "ap": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "A rectangle is 2 units by 3 units. Its area is 6 of which count: unit squares or units? Pick one."
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0065",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "area",
+  "structureType": "areaLF_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 28,
+   "display": {
+    "ap": {
+     "h": 4,
+     "w": 7,
+     "kind": "areaOf"
+    },
+    "promptText": "Area: 7 x 4 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0239",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "perimeter",
+  "structureType": "perimLF_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 22,
+   "display": {
+    "ap": {
+     "h": 4,
+     "w": 7,
+     "kind": "perimOf"
+    },
+    "promptText": "Perim: 7 + 4 + 7 + 4 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0353",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "compositeFigures",
+  "structureType": "joinAreas_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 34,
+   "display": {
+    "ap": {
+     "a": 7,
+     "b": 4,
+     "c": 3,
+     "d": 2,
+     "kind": "joinAreas"
+    },
+    "promptText": "A figure is a 7 cm by 4 cm rectangle joined to a 3 cm by 2 cm rectangle, no overlap. What is its total area in square cm?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0509",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "measureReasoning",
+  "structureType": "whichMeasure_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "perimeter",
+   "choices": [
+    "perimeter",
+    "area"
+   ],
+   "display": {
+    "ap": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "To fence a garden, which measure do you need: perimeter or area?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0030",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "area",
+  "structureType": "areaDims_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 32,
+   "display": {
+    "ap": {
+     "h": 4,
+     "w": 8,
+     "kind": "areaOf"
+    },
+    "promptText": "Compute the area in square cm of a rectangle 8 cm by 4 cm."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0202",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "perimeter",
+  "structureType": "perimDims_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 30,
+   "display": {
+    "ap": {
+     "h": 3,
+     "w": 12,
+     "kind": "perimOf"
+    },
+    "promptText": "Find the perimeter of a 12 cm by 3 cm rectangle in cm."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0431",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "compositeFigures",
+  "structureType": "twoSquares_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 61,
+   "display": {
+    "ap": {
+     "a": 5,
+     "b": 5,
+     "c": 6,
+     "d": 6,
+     "kind": "joinAreas"
+    },
+    "promptText": "Two squares with sides 5 cm and 6 cm combine without overlap. What is the total area in square cm?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0587",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "measureReasoning",
+  "structureType": "labelPick_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "square cm",
+   "choices": [
+    "square cm",
+    "cm"
+   ],
+   "display": {
+    "ap": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "A 7 cm by 4 cm rectangle has area 28. Which unit finishes that: square cm or cm?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0081",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "area",
+  "structureType": "areaLF_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 96,
+   "display": {
+    "ap": {
+     "h": 8,
+     "w": 12,
+     "kind": "areaOf"
+    },
+    "promptText": "Area: 12 x 8 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0255",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "perimeter",
+  "structureType": "perimLF_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 40,
+   "display": {
+    "ap": {
+     "h": 8,
+     "w": 12,
+     "kind": "perimOf"
+    },
+    "promptText": "Perim: 12 + 8 + 12 + 8 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0366",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "compositeFigures",
+  "structureType": "joinAreas_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 120,
+   "display": {
+    "ap": {
+     "a": 12,
+     "b": 8,
+     "c": 6,
+     "d": 4,
+     "kind": "joinAreas"
+    },
+    "promptText": "A composite figure is a 12 m by 8 m rectangle plus a 6 m by 4 m rectangle, no overlap. Compute its area in square m."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0522",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "measureReasoning",
+  "structureType": "whichMeasure_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "perimeter",
+   "choices": [
+    "perimeter",
+    "area"
+   ],
+   "display": {
+    "ap": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "Deciding how to install a railing around a deck calls for which measure: perimeter or area?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0046",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "area",
+  "structureType": "areaDims_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 90,
+   "display": {
+    "ap": {
+     "h": 6,
+     "w": 15,
+     "kind": "areaOf"
+    },
+    "promptText": "The area of a rectangle 15 m long and 6 m wide is how many square m?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0218",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "perimeter",
+  "structureType": "perimDims_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 60,
+   "display": {
+    "ap": {
+     "h": 15,
+     "w": 15,
+     "kind": "perimOf"
+    },
+    "promptText": "Exactly how many m is the perimeter of a 15 m by 15 m rectangle?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0444",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "compositeFigures",
+  "structureType": "twoSquares_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 181,
+   "display": {
+    "ap": {
+     "a": 9,
+     "b": 9,
+     "c": 10,
+     "d": 10,
+     "kind": "joinAreas"
+    },
+    "promptText": "Squares of side 9 m and side 10 m form one non-overlapping figure. Compute its area in square m."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-proc-b0821-0600",
+  "modeId": "areaPerimeter",
+  "itemFamily": "procedural",
+  "subskill": "measureReasoning",
+  "structureType": "labelPick_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "square m",
+   "choices": [
+    "square m",
+    "m"
+   ],
+   "display": {
+    "ap": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "The area of a 12 m by 8 m rectangle is 96, in which unit: square m or m?"
+   }
+  }
+ },
+ {
   "itemId": "barModels-proc-b0821-0001",
   "modeId": "barModels",
   "itemFamily": "procedural",

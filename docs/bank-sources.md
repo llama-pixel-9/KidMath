@@ -86,6 +86,20 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## money — full bank build (2026-08-21)
+
+1,837 items (619 procedural + 606 conceptual + 612 application), batch tag
+`b0821`, every `money` cell ≥ 50 new items. Deterministic; see
+`docs/money-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+EngageNY (CC BY-NC-SA — structure only): G2 M7 (counting mixed coins by
+value, coin equivalence trades, fewest-coins reasoning, word problems with
+change per 2.MD.C.8) and G1 money fluency framings (value of a coin, count
+vs value). Coin-machine and trading-post contexts are our own. All wording
+original.
+
 ## patterns — full bank build (2026-08-21)
 
 2,322 items (776 procedural + 781 conceptual + 765 application), batch tag

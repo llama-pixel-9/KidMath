@@ -6323,6 +6323,712 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "money-proc-b0821-0001",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "countCoins",
+  "structureType": "coinSumTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 13,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      10,
+      1,
+      1,
+      1
+     ]
+    },
+    "promptText": "1 dime and 3 pennies = ? cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0155",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "makeChange",
+  "structureType": "changeTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "counting": {
+     "back": 7,
+     "kind": "countBack",
+     "start": 10
+    },
+    "promptText": "Pay 10 cents for a 7-cent toy. Change = ? cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0311",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "coinEquivalence",
+  "structureType": "tradeTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "money": {
+     "per": 5,
+     "kind": "trade",
+     "fromCents": 10
+    },
+    "promptText": "1 dime = ? nickels"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0466",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "moneyReasoning",
+  "structureType": "fewestTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "money": {
+     "kind": "fewest",
+     "cents": 7
+    },
+    "promptText": "Fewest coins for 7 cents = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0027",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "countCoins",
+  "structureType": "trayCountTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "coins": [
+     "penny",
+     "penny",
+     "penny",
+     "penny",
+     "penny",
+     "penny"
+    ],
+    "coinMode": "count",
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    },
+    "promptText": "1 + 1 + 1 + 1 + 1 + 1 = ? c"
+   },
+   "answerType": "coinTray"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0181",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "makeChange",
+  "structureType": "saveUpTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "counting": {
+     "have": 7,
+     "kind": "gap",
+     "target": 10
+    },
+    "promptText": "7 cents saved. ? more cents make 10 cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0336",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "coinEquivalence",
+  "structureType": "coinsForAmountTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "money": {
+     "per": 5,
+     "kind": "trade",
+     "fromCents": 10
+    },
+    "promptText": "? nickels make 10 cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0491",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "moneyReasoning",
+  "structureType": "twoPriceTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 19,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      12,
+      7
+     ]
+    },
+    "promptText": "12c toy + 7c toy = ? c"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0053",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "countCoins",
+  "structureType": "coinSumMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 38,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      25,
+      10,
+      1,
+      1,
+      1
+     ]
+    },
+    "promptText": "1 quarter, 1 dime and 3 pennies = ? cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0207",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "makeChange",
+  "structureType": "changeMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "counting": {
+     "back": 18,
+     "kind": "countBack",
+     "start": 25
+    },
+    "promptText": "Pay 25 cents for a 18-cent toy. Change = ? cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0362",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "coinEquivalence",
+  "structureType": "tradeMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "money": {
+     "per": 5,
+     "kind": "trade",
+     "fromCents": 25
+    },
+    "promptText": "1 quarter = ? nickels"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0516",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "moneyReasoning",
+  "structureType": "fewestMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "money": {
+     "kind": "fewest",
+     "cents": 26
+    },
+    "promptText": "Fewest coins for 26 cents = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0078",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "countCoins",
+  "structureType": "trayCountMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 50,
+   "display": {
+    "coins": [
+     "nickel",
+     "nickel",
+     "dime",
+     "dime",
+     "dime",
+     "dime"
+    ],
+    "coinMode": "count",
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      10,
+      10,
+      10,
+      10,
+      5,
+      5
+     ]
+    },
+    "promptText": "10 + 10 + 10 + 10 + 5 + 5 = ? c"
+   },
+   "answerType": "coinTray"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0233",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "makeChange",
+  "structureType": "saveUpMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "counting": {
+     "have": 18,
+     "kind": "gap",
+     "target": 25
+    },
+    "promptText": "18 cents saved. ? more cents make 25 cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0388",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "coinEquivalence",
+  "structureType": "coinsForAmountMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "money": {
+     "per": 5,
+     "kind": "trade",
+     "fromCents": 25
+    },
+    "promptText": "? nickels make 25 cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0542",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "moneyReasoning",
+  "structureType": "twoPriceMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 57,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      26,
+      31
+     ]
+    },
+    "promptText": "26c toy + 31c toy = ? c"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0104",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "countCoins",
+  "structureType": "dollarToCents",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 130,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      100,
+      30
+     ]
+    },
+    "promptText": "$1.30 = ? cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0259",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "makeChange",
+  "structureType": "changeBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 33,
+   "display": {
+    "counting": {
+     "back": 67,
+     "kind": "countBack",
+     "start": 100
+    },
+    "promptText": "Pay 100 cents for a 67-cent toy. Change = ? cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0414",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "coinEquivalence",
+  "structureType": "tradeBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "money": {
+     "per": 25,
+     "kind": "trade",
+     "fromCents": 100
+    },
+    "promptText": "$1 = ? quarters"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0568",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "moneyReasoning",
+  "structureType": "fewestBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "money": {
+     "kind": "fewest",
+     "cents": 126
+    },
+    "promptText": "Fewest coins for 126 cents = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0129",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "countCoins",
+  "structureType": "coinSumBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 176,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25,
+      10,
+      10,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    },
+    "promptText": "6 quarters, 2 dimes and 6 pennies = ? cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0285",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "makeChange",
+  "structureType": "saveUpBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 33,
+   "display": {
+    "counting": {
+     "have": 67,
+     "kind": "gap",
+     "target": 100
+    },
+    "promptText": "67 cents saved. ? more cents make 100 cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0440",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "coinEquivalence",
+  "structureType": "coinsForAmountBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "money": {
+     "per": 25,
+     "kind": "trade",
+     "fromCents": 125
+    },
+    "promptText": "? quarters make 125 cents"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-proc-b0821-0594",
+  "modeId": "money",
+  "itemFamily": "procedural",
+  "subskill": "moneyReasoning",
+  "structureType": "twoPriceBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 257,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      126,
+      131
+     ]
+    },
+    "promptText": "126c item + 131c item = ? c"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
   "itemId": "multiplication-app-001",
   "modeId": "multiplication",
   "itemFamily": "application",

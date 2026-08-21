@@ -428,13 +428,21 @@ function selectVariety(level, context) {
     if (dry.length) pool = dry;
   }
   if (context.itemFamily) {
+    // Family never wins over the band: band 1 has no application variety, and
+    // the old any-band fallback handed "change from 92 cents" to level-1 kids
+    // (the numberBonds level-leak class). A family miss inside the band serves
+    // a sibling family instead; the bank still answers family-specific
+    // requests once its rows are approved.
     const byFamily = pool.filter((v) => v.family === context.itemFamily);
-    const anyBand = VARIETIES.filter((v) => v.family === context.itemFamily);
-    pool = byFamily.length ? byFamily : anyBand.length ? anyBand : pool;
+    if (byFamily.length) pool = byFamily;
   }
   if (context.targetSubskill) {
     const bySubskill = pool.filter((v) => v.subskills.includes(context.targetSubskill));
+    const inBandAnyFamily = VARIETIES.filter(
+      (v) => v.bands.includes(b) && v.subskills.includes(context.targetSubskill)
+    );
     if (bySubskill.length) pool = bySubskill;
+    else if (inBandAnyFamily.length) pool = inBandAnyFamily;
   }
   return pick(pool);
 }

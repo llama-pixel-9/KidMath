@@ -10874,603 +10874,655 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placevalue-proc-expandedForm-23-001",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 58,
-   "b": null,
-   "op": "place",
-   "answer": 58,
-   "display": {
-    "ones": 8,
-    "tens": 5,
-    "type": "build",
-    "number": 58,
-    "promptText": "5 tens + 8 ones = ?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-regroupingSense-23-001",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 35,
-   "b": null,
-   "op": "place",
-   "answer": 35,
-   "display": {
-    "ones": 5,
-    "tens": 3,
-    "type": "build",
-    "number": 35,
-    "promptText": "Combine 3 tens and 5 ones into one number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-tensOnes-23-001",
+  "itemId": "placeValue-proc-b0821-0001",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 47,
-   "b": null,
-   "op": "place",
-   "answer": 4,
-   "display": {
-    "ones": 7,
-    "tens": 4,
-    "type": "tens_in",
-    "number": 47,
-    "promptText": "How many tens in 47?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-expandedForm-23-002",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 72,
-   "b": null,
-   "op": "place",
-   "answer": 72,
-   "display": {
-    "ones": 2,
-    "tens": 7,
-    "type": "build",
-    "number": 72,
-    "promptText": "7 tens + 2 ones = ?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-regroupingSense-23-002",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 63,
-   "b": null,
-   "op": "place",
-   "answer": 63,
-   "display": {
-    "ones": 3,
-    "tens": 6,
-    "type": "build",
-    "number": 63,
-    "promptText": "Combine 6 tens and 3 ones into one number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-tensOnes-23-002",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 53,
-   "b": null,
-   "op": "place",
-   "answer": 5,
-   "display": {
-    "ones": 3,
-    "tens": 5,
-    "type": "tens_in",
-    "number": 53,
-    "promptText": "How many tens in 53?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-expandedForm-23-003",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 49,
-   "b": null,
-   "op": "place",
-   "answer": 49,
-   "display": {
-    "ones": 9,
-    "tens": 4,
-    "type": "build",
-    "number": 49,
-    "promptText": "4 tens + 9 ones = ?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-regroupingSense-23-003",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 87,
-   "b": null,
-   "op": "place",
-   "answer": 87,
-   "display": {
-    "ones": 7,
-    "tens": 8,
-    "type": "build",
-    "number": 87,
-    "promptText": "Combine 8 tens and 7 ones into one number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-expandedForm-45-001",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 234,
-   "b": null,
-   "op": "place",
-   "answer": 234,
-   "display": {
-    "ones": 4,
-    "tens": 23,
-    "type": "build",
-    "number": 234,
-    "promptText": "23 tens + 4 ones = ?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-regroupingSense-45-001",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 234,
-   "b": null,
-   "op": "place",
-   "answer": 234,
-   "display": {
-    "ones": 4,
-    "tens": 23,
-    "type": "build",
-    "number": 234,
-    "promptText": "Combine 23 tens and 4 ones into one number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-tensOnes-45-001",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 234,
-   "b": null,
-   "op": "place",
-   "answer": 23,
-   "display": {
-    "ones": 4,
-    "tens": 23,
-    "type": "tens_in",
-    "number": 234,
-    "promptText": "How many tens in 234?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-expandedForm-45-002",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 580,
-   "b": null,
-   "op": "place",
-   "answer": 580,
-   "display": {
-    "ones": 0,
-    "tens": 58,
-    "type": "build",
-    "number": 580,
-    "promptText": "58 tens + 0 ones = ?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-regroupingSense-45-002",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 580,
-   "b": null,
-   "op": "place",
-   "answer": 580,
-   "display": {
-    "ones": 0,
-    "tens": 58,
-    "type": "build",
-    "number": 580,
-    "promptText": "Combine 58 tens and 0 ones into one number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-tensOnes-45-002",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 580,
-   "b": null,
-   "op": "place",
-   "answer": 58,
-   "display": {
-    "ones": 0,
-    "tens": 58,
-    "type": "tens_in",
-    "number": 580,
-    "promptText": "How many tens in 580?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-expandedForm-45-003",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 374,
-   "b": null,
-   "op": "place",
-   "answer": 374,
-   "display": {
-    "ones": 4,
-    "tens": 37,
-    "type": "build",
-    "number": 374,
-    "promptText": "37 tens + 4 ones = ?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-regroupingSense-45-003",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 374,
-   "b": null,
-   "op": "place",
-   "answer": 374,
-   "display": {
-    "ones": 4,
-    "tens": 37,
-    "type": "build",
-    "number": 374,
-    "promptText": "Combine 37 tens and 4 ones into one number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-expandedForm-K1-001",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
+  "structureType": "teenFrameRead",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 13,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 13,
+   "op": "count",
+   "answer": 11,
    "display": {
-    "ones": 3,
-    "tens": 1,
-    "type": "build",
-    "number": 13,
-    "promptText": "1 ten + 3 ones = ?"
-   }
+    "filled": 11,
+    "frames": 2,
+    "counting": {
+     "kind": "groups",
+     "ones": 1,
+     "tens": 1
+    },
+    "frameMode": "count",
+    "promptText": "One full frame and some more. What teen number do the frames show?"
+   },
+   "answerType": "tenFrame"
   }
  },
  {
-  "itemId": "placevalue-proc-regroupingSense-K1-001",
+  "itemId": "placeValue-proc-b0821-0156",
   "modeId": "placeValue",
   "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
+  "subskill": "expandedForm",
+  "structureType": "teenExpandComplete",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 14,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 14,
-   "display": {
-    "ones": 4,
-    "tens": 1,
-    "type": "build",
-    "number": 14,
-    "promptText": "Combine 1 ten and 4 ones into one number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-proc-tensOnes-K1-001",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 12,
-   "b": null,
-   "op": "place",
+   "op": "count",
    "answer": 1,
    "display": {
-    "ones": 2,
-    "tens": 1,
-    "type": "tens_in",
-    "number": 12,
-    "promptText": "How many tens in 12?"
-   }
+    "counting": {
+     "n": 11,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "11 → 10 + ? ones"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placevalue-proc-expandedForm-K1-002",
+  "itemId": "placeValue-proc-b0821-0311",
   "modeId": "placeValue",
   "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
+  "subskill": "regroupingSense",
+  "structureType": "onesToTeen",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 20,
+   "a": null,
    "b": null,
-   "op": "place",
+   "op": "count",
+   "answer": 11,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      10,
+      1
+     ]
+    },
+    "promptText": "10 ones + 1 one = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0019",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "tensOnes",
+  "structureType": "teenOnesDigit",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1,
+   "display": {
+    "counting": {
+     "n": 11,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "11 → 10 + ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0174",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "expandedForm",
+  "structureType": "wordToNumeralTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
    "answer": 20,
    "display": {
-    "ones": 0,
-    "tens": 2,
-    "type": "build",
-    "number": 20,
-    "promptText": "2 tens + 0 ones = ?"
-   }
+    "promptText": "twenty = ?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placevalue-proc-regroupingSense-K1-002",
+  "itemId": "placeValue-proc-b0821-0330",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
+  "structureType": "buildTeenFrames",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 18,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 18,
+   "op": "count",
+   "answer": 15,
    "display": {
-    "ones": 8,
-    "tens": 1,
-    "type": "build",
-    "number": 18,
-    "promptText": "Combine 1 ten and 8 ones into one number."
-   }
+    "filled": 0,
+    "frames": 2,
+    "counting": {
+     "kind": "set",
+     "count": 15
+    },
+    "frameMode": "build",
+    "promptText": "Show 15 on the frames by tapping cells. How many counters is that?"
+   },
+   "answerType": "tenFrame"
   }
  },
  {
-  "itemId": "placevalue-proc-tensOnes-K1-002",
+  "itemId": "placeValue-proc-b0821-0037",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
+  "structureType": "teenTensDigit",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 15,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 1,
+   "op": "count",
+   "answer": 2,
    "display": {
-    "ones": 5,
-    "tens": 1,
-    "type": "tens_in",
-    "number": 15,
-    "promptText": "How many tens in 15?"
-   }
+    "counting": {
+     "n": 20,
+     "kind": "digit",
+     "place": 10
+    },
+    "promptText": "Tens in 20 = ?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placevalue-proc-expandedForm-K1-003",
+  "itemId": "placeValue-proc-b0821-0192",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
+  "structureType": "numeralToWordTeen",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 17,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 17,
+   "op": "count",
+   "answer": "eleven",
+   "choices": [
+    "thirteen",
+    "fourteen",
+    "eleven",
+    "twelve"
+   ],
    "display": {
-    "ones": 7,
-    "tens": 1,
-    "type": "build",
-    "number": 17,
-    "promptText": "1 ten + 7 ones = ?"
+    "promptText": "Which word names 11?"
    }
   }
  },
  {
-  "itemId": "placevalue-proc-regroupingSense-K1-003",
+  "itemId": "placeValue-proc-b0821-0054",
   "modeId": "placeValue",
   "itemFamily": "procedural",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
+  "subskill": "tensOnes",
+  "structureType": "unitCompose",
   "levelRange": [
-   1,
-   3
+   4,
+   6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 25,
+   "a": null,
    "b": null,
-   "op": "place",
+   "op": "count",
    "answer": 25,
    "display": {
-    "ones": 5,
-    "tens": 2,
-    "type": "build",
-    "number": 25,
-    "promptText": "Combine 2 tens and 5 ones into one number."
-   }
+    "counting": {
+     "kind": "groups",
+     "ones": 5,
+     "tens": 2
+    },
+    "promptText": "2 tens 5 ones = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0209",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "expandedForm",
+  "structureType": "expandTwoDigit",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "counting": {
+     "n": 25,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "25 → 20 + ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0366",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "regroupingSense",
+  "structureType": "nonCanonicalCompose",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 34,
+   "display": {
+    "counting": {
+     "kind": "groups",
+     "ones": 14,
+     "tens": 2
+    },
+    "promptText": "2 tens 14 ones = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0072",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "tensOnes",
+  "structureType": "digitRead",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "counting": {
+     "n": 47,
+     "kind": "digit",
+     "place": 10
+    },
+    "promptText": "Tens digit of 47 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0227",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "expandedForm",
+  "structureType": "expandTwoDigit",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "counting": {
+     "n": 33,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "33 → 30 + ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0384",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "regroupingSense",
+  "structureType": "renameTens",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 14,
+   "display": {
+    "counting": {
+     "have": 20,
+     "kind": "gap",
+     "target": 34
+    },
+    "promptText": "34 = 2 tens + ? ones"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0090",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "tensOnes",
+  "structureType": "tenMoreLess",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 57,
+   "display": {
+    "counting": {
+     "n": 47,
+     "kind": "moreLess",
+     "delta": 10
+    },
+    "promptText": "10 more than 47 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0245",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "expandedForm",
+  "structureType": "expandJudgeMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "promptText": "40 + 7 = 47"
+   },
+   "subPrompt": "Is this right?"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0106",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "tensOnes",
+  "structureType": "digitReadBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "counting": {
+     "n": 347,
+     "kind": "digit",
+     "place": 100
+    },
+    "promptText": "Hundreds digit of 347 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0260",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "expandedForm",
+  "structureType": "composeThreeDigit",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 347,
+   "display": {
+    "counting": {
+     "kind": "units",
+     "ones": 7,
+     "tens": 4,
+     "hundreds": 3
+    },
+    "promptText": "300 + 40 + 7 → ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0417",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "regroupingSense",
+  "structureType": "nonCanonicalComposeBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 345,
+   "display": {
+    "counting": {
+     "kind": "units",
+     "ones": 5,
+     "tens": 14,
+     "hundreds": 2
+    },
+    "promptText": "2 hundreds 14 tens 5 ones = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0123",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "tensOnes",
+  "structureType": "digitReadBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 0,
+   "display": {
+    "counting": {
+     "n": 670,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "Ones digit of 670 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0278",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "expandedForm",
+  "structureType": "expandPartBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 40,
+   "display": {
+    "counting": {
+     "n": 347,
+     "kind": "placeValueOf",
+     "place": 10
+    },
+    "promptText": "347 → ? from the tens place"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0435",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "regroupingSense",
+  "structureType": "renameAsTens",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 34,
+   "display": {
+    "counting": {
+     "have": 0,
+     "kind": "gap",
+     "target": 34
+    },
+    "promptText": "340 = ? tens"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0140",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "tensOnes",
+  "structureType": "hundredMoreLess",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 447,
+   "display": {
+    "counting": {
+     "n": 347,
+     "kind": "moreLess",
+     "delta": 100
+    },
+    "promptText": "100 more than 347 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0296",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "expandedForm",
+  "structureType": "expandJudgeBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "promptText": "300 + 40 + 6 = 346"
+   },
+   "subPrompt": "Is this right?"
   }
  },
  {

@@ -26,6 +26,7 @@ const numbersIn = (text) => (text.match(/\d+/g) || []).map(Number);
  */
 const COUNTABLE_PLURALS = new Set([
   "apples", "stickers", "marbles", "shells", "books", "pencils", "buttons",
+  "bundles", "rods", "wires", "sheets", "crates", "packs", "straws",
   "crayons", "cards", "blocks", "beads", "leaves", "bunnies", "birds",
   "flowers", "cookies", "plums", "chairs", "coins", "bags", "boxes", "baskets",
   "jars", "plates", "shelves", "rows", "groups", "bears", "ducks", "frogs",
@@ -211,6 +212,19 @@ export const CHECKS = [
           break;
         case "groups":
           expected = n("tens") != null && n("ones") != null ? c.tens * 10 + c.ones : null;
+          break;
+        case "units":
+          expected =
+            n("hundreds") != null && n("tens") != null && n("ones") != null
+              ? c.hundreds * 100 + c.tens * 10 + c.ones
+              : null;
+          break;
+        case "digit":
+          // The digit standing in `place` (1, 10, or 100) of n.
+          expected = n("n") != null && n("place") != null ? Math.floor(c.n / c.place) % 10 : null;
+          break;
+        case "placeValueOf":
+          expected = n("n") != null && n("place") != null ? (Math.floor(c.n / c.place) % 10) * c.place : null;
           break;
         case "sum": {
           const parts = Array.isArray(c.parts) && c.parts.every((x) => typeof x === "number") ? c.parts : null;

@@ -86,6 +86,22 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## placeValue — full bank build (2026-08-21)
+
+1,424 items (467 procedural + 498 conceptual + 459 application), batch tag
+`b0821`, every `placeValue` cell ≥ 50 new items. Deterministic; see
+`docs/placevalue-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+EngageNY (CC BY-NC-SA — structure only): GK M5 (teen numbers as 10 ones and
+some ones, Hide Zero cards → the arrow/unit registers), G1 M2/M4 (ten-frame
+teen builds, "1 ten and __ ones", ten more/ten less), G2 M3 (unit form,
+expanded form, word form, non-canonical renames like "2 tens 14 ones",
+bundling straws), G2 M4/G4 M1 (trading tens/hundreds, value-of-digit).
+Bundle-of-ten story contexts (straws, rods, wires, sheets) are standard
+base-ten manipulative framings. All wording original.
+
 ## skipCounting — full bank build (2026-08-20)
 
 1,414 items (469 procedural + 486 conceptual + 459 application), batch tag

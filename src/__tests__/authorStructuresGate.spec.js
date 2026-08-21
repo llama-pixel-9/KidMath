@@ -159,3 +159,49 @@ describe("bondMath verifies number-bond payloads that arithmetic skips", () => {
     expect(runChecks(item).findings.some((f) => f.id === "bondMath")).toBe(false);
   });
 });
+
+describe("countMath verifies counting-bank claims that arithmetic skips", () => {
+  // Bank convention (docs/counting-bank-design.md): op "count", the claim in
+  // display.counting ({kind, ...givens}); the check recomputes the answer.
+  const count = (counting, answer, extra = {}) => ({
+    itemId: "x",
+    modeId: "counting",
+    structureType: "setCount",
+    itemFamily: "procedural",
+    subskill: "cardinality",
+    levelRange: [1, 3],
+    question: { a: null, b: null, op: "count", answer, display: { promptText: "5, 6, 7, ?", counting, ...extra } },
+  });
+
+  it("accepts a correct count-on claim", () => {
+    expect(runChecks(count({ kind: "countOn", start: 6, more: 3 }, 9)).pass).toBe(true);
+  });
+
+  it("rejects a wrong next-in-sequence claim", () => {
+    const qc = runChecks(count({ kind: "next", sequence: [5, 6, 7], step: 1 }, 9));
+    expect(qc.pass).toBe(false);
+    expect(qc.findings.some((f) => f.id === "countMath")).toBe(true);
+  });
+
+  it("rejects a hidden-part claim whose givens are missing", () => {
+    const qc = runChecks(count({ kind: "hidden", total: 12 }, 4));
+    expect(qc.findings.some((f) => f.id === "countMath")).toBe(true);
+  });
+
+  it("verifies a sum claim over parts", () => {
+    expect(runChecks(count({ kind: "sum", parts: [4, 2, 5] }, 11)).pass).toBe(true);
+    expect(runChecks(count({ kind: "sum", parts: [4, 2, 5] }, 10)).findings.some((f) => f.id === "countMath")).toBe(true);
+  });
+
+  it("rejects an unknown claim kind", () => {
+    const qc = runChecks(count({ kind: "mystery" }, 4));
+    expect(qc.findings.some((f) => f.id === "countMath")).toBe(true);
+  });
+
+  it("skips items with no claim (legacy prose) and judged forms", () => {
+    expect(runChecks(count(undefined, 8)).findings.some((f) => f.id === "countMath")).toBe(false);
+    const judged = count({ kind: "set", count: 4 }, "Yes");
+    judged.question.choices = ["Yes", "No"];
+    expect(runChecks(judged).findings.some((f) => f.id === "countMath")).toBe(false);
+  });
+});

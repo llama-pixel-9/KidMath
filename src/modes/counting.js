@@ -454,6 +454,50 @@ const VARIETIES = [
     },
   },
 
+  // 20/21 — targetedOnly symbolic drills. These exist so every scheduled
+  // (family, subskill, band) request has an in-band variety: subitizing had
+  // no procedural variety at all, and cardinality none at band 3, so those
+  // requests escaped the band filter (the numberBonds level-leak class) and
+  // mislabeled the family, which then made the bank consult miss the
+  // approved procedural drills.
+  {
+    id: "subitizeDrill",
+    bands: [1, 2, 3],
+    targetedOnly: true,
+    subskill: "subitizing",
+    family: ITEM_FAMILIES.PROCEDURAL,
+    build: (level) => {
+      const band = bandOf(level);
+      const n = band === 1 ? randInt(2, 6) : band === 2 ? randInt(6, 12) : randInt(13, 20);
+      return {
+        answer: n,
+        answerType: "numberPad",
+        display: { emoji: Math.random() < 0.3 ? DOTS : pick(OBJECTS), count: n },
+        representation: "objectSet",
+        cognitiveDemand: "DOK1",
+        misconceptions: ["doubleCount", "skipObject"],
+      };
+    },
+  },
+  {
+    id: "bigSetWriteDrill",
+    bands: [3],
+    targetedOnly: true,
+    subskill: "cardinality",
+    family: ITEM_FAMILIES.PROCEDURAL,
+    build: (level) => {
+      const n = randInt(21, Math.min(50, 20 + level * 4));
+      return {
+        answer: n,
+        answerType: "numberPad",
+        display: { emoji: pick(OBJECTS), count: n },
+        representation: "objectSet",
+        cognitiveDemand: "DOK1",
+        misconceptions: ["doubleCount", "skipObject"],
+      };
+    },
+  },
+
   // 14 — a story carrying a quantity that must NOT be used.
   {
     id: "countGroupsExtraneous",
@@ -487,26 +531,38 @@ function chooseVariety(level, context = {}) {
     if (forced) return forced;
   }
   const band = bandOf(level);
-  let pool = VARIETIES.filter((v) => v.bands.includes(band));
+  // `targetedOnly` drills only join the pool for scheduled (family/subskill)
+  // requests, so the unconditioned pool's variety profile is unchanged.
+  const targeted = Boolean(context.itemFamily || context.targetSubskill);
+  const eligible = VARIETIES.filter((v) => !v.targetedOnly || targeted);
+  let pool = eligible.filter((v) => v.bands.includes(band));
 
   if (context.itemFamily) {
     // An explicitly requested family wins over the band filter: the engine asks
     // for one when it wants a bank item of that family behind it.
     const byFamily = pool.filter((v) => v.family === context.itemFamily);
-    const anyBand = VARIETIES.filter((v) => v.family === context.itemFamily);
+    const anyBand = eligible.filter((v) => v.family === context.itemFamily);
     pool = byFamily.length ? byFamily : anyBand.length ? anyBand : pool;
   } else if (context.allowWordProblems === false) {
     pool = pool.filter((v) => v.family !== ITEM_FAMILIES.APPLICATION);
   }
 
   if (context.targetSubskill) {
-    // A targeted subskill wins over the band filter too: the session engine asks
-    // for the child's weakest subskill, and answering with a different one would
-    // silently defeat the adaptive loop. Magnitude still scales with level.
-    const inBand = pool.filter((v) => v.subskill === context.targetSubskill);
-    const anyBand = VARIETIES.filter((v) => v.subskill === context.targetSubskill);
-    if (inBand.length) pool = inBand;
-    else if (anyBand.length) pool = anyBand;
+    // A targeted subskill wins over the family filter, but NOT over the band
+    // filter — leaving the band served out-of-band magnitudes to little kids
+    // (the numberBonds level-leak bug class). Fallback: family+subskill in
+    // band -> any-family subskill in band -> subskill anywhere (last resort).
+    const bySubskill = (arr) => arr.filter((v) => v.subskill === context.targetSubskill);
+    const noStories = (arr) =>
+      context.allowWordProblems === false
+        ? arr.filter((v) => v.family !== ITEM_FAMILIES.APPLICATION)
+        : arr;
+    const inPool = bySubskill(pool);
+    const inBandAnyFamily = noStories(bySubskill(eligible.filter((v) => v.bands.includes(band))));
+    const anywhere = noStories(bySubskill(eligible));
+    if (inPool.length) pool = inPool;
+    else if (inBandAnyFamily.length) pool = inBandAnyFamily;
+    else if (anywhere.length) pool = anywhere;
   }
   return pool.length ? pick(pool) : VARIETIES[0];
 }

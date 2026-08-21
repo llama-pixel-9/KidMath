@@ -75,3 +75,71 @@ build-time asserts cover them; if you add such a shape, extend
   `NUMBER_BOND_VARIETY_IDS`).
 - Force a widget onto any mode: `/play/numberBonds?input=numberbond`.
 - `bondMath` fixtures live in `src/__tests__/authorStructuresGate.spec.js`.
+
+## Question pattern catalog (every structureType, by family)
+
+The reviewer-facing map of what each pattern asks. Bands: K-1 = wholes ≤10,
+2-3 = within 20, 4-5 = within 100/1000.
+
+### Procedural — symbolic drills (no signature cap; the fluency backbone)
+
+| structureType | Bands | Asks | Example |
+|---|---|---|---|
+| `partUnknown` | K-1 | bond diagram, missing part — every fact, wholes 2–10, zero legal | `9 = 4 + ?` + cherry widget |
+| `teenBond` | 2-3 | teen as ten-and-ones, both slots | `14 = 10 + ?` · `14 = ? + 10` |
+| `takeFromTenFact` | 2-3 | teen minus 9/8/7/6 as a bond | `13 = 9 + ?` |
+| `partnersOf20/100/1000` | 2-3 / 4-5 | complement to a landmark whole | `20 = 7 + ?` · `100 = 35 + ?` · `1000 = 450 + ?` |
+| `takeOutTen` | 4-5 | G2 take-out-ten split | `26 = ? + 10` |
+| `tensOnesBond` | 4-5 | canonical tens/ones, either slot | `37 = 30 + ?` · `37 = ? + 7` |
+| `wholeFromParts` | K-1 | whole unknown, equal sign left — every pair ≤10 | `? = 4 + 5` |
+| `teenFromTen` / `bigDouble` | 2-3 | compose teens / doubles 6–10 | `? = 10 + 4` · `? = 7 + 7` |
+| `threeAddendBond` | 2-3 | three addends holding a partner-of-ten pair | `? = 9 + 1 + 5` |
+| `tensOnesCompose` / `hundredsCompose` | 4-5 | compose from place parts | `? = 30 + 7` · `? = 200 + 30 + 5` |
+| `bondPatternStep` | K-1 | ordered-family step: prior decomposition shown | `9 = 5 + 4. 9 = 6 + ?` |
+| `commutativeFlip` | K-1 | same bond, parts swapped | `8 = 3 + 5. 8 = 5 + ?` |
+| `makeTenSplit` | 2-3 | split the addend to make ten (9→1, 8→2, 7→3) | `9 + 4 = 9 + 1 + ?` |
+| `teenBridgePair` | 2-3 | ten-fact bridges to a nine-fact | `14 = 10 + 4. 14 = 9 + ?` |
+| `takeFromTenChain` | 2-3 | subtract via the ten inside the teen | `13 = 10 + 3. 13 − 9 = ?` |
+| `makeNextTen` | 4-5 | bridge the next ten within 100 | `39 + 4 = 40 + ?` |
+| `ladderPair` | 4-5 | a basic fact lifts +10/+20/+30 | `13 − 8 = 5. 23 − 8 = ?` |
+| `takeOutTenSplit` | 4-5 | expose the ten in any 2-digit number | `34 = 24 + ?` |
+| `trueFalseBond` / `trueFalsePlaceBond` | all / 4-5 | judged claim — "Is this right?" Yes/No | `4 + 5 = 9` · `300 + 40 + 5 = 345` |
+
+### Conceptual — visual & judged forms (≤5 per signature; phrasings rotate)
+
+| structureType | Bands | Asks | Example |
+|---|---|---|---|
+| `frameWholeUnknown` | K-1 | two-color ten frame, count all | "5 red and 3 blue counters — how many in all?" + frame |
+| `pictureWholeUnknown` | K-1 | two emoji groups, join | "One part: 🥚🥚🥚 Other part: 🥚🥚 How many eggs in all?" |
+| `teenFrameWhole` | 2-3 | full frame + partial frame | two stacked frames, 10 red + n blue |
+| `chooseWhole` / `chooseWholeBig` | 2-3 / 4-5 | pick the whole (distractors: part echo, difference, off-by-one) | "Parts 9 and 4 — which is the whole?" |
+| `threePartWhole` / `unitFormWhole` / `tensOnesWhole` | 2-3 / 4-5 | three-part and place-language wholes | "2 hundreds 6 tens 3 ones — what number?" |
+| `makeTenFrame` / `makeFiveFrame` | K-1 | complement read off the frame | "Frame shows 6 — how many more make 10?" |
+| `buildToTen` | K-1 | build mode: tap to complete the ten | child adds counters, submits how many |
+| `bondSentence` / `teenBondSentence` | K-1 / 2-3 | sentence frame, unknown first | "___ and 4 make 9" |
+| `choosePart` / `choosePartTo100` | K-1 / 4-5 | pick the missing part (swap/echo distractors) | "Whole 100, part 35 — other part?" |
+| `hiddenPartFrame` | 2-3 | total told, part visible, rest hidden | "12 in all, frame shows 8 — hidden?" |
+| `errorPartWholeSwap` / `errorAtMagnitude` | 2-3 / 4-5 | fix a child who added whole+part | "…answered 20. What is the correct part?" |
+| `nonCanonicalSplit` | 4-5 | non-place splits (ten out, tens under) | "Split 43 into 33 and one more part" |
+| `whichPairMakesWhole` / `oddOneOutBond` | K-1 | recognize / reject a pair | "Which pair makes 7?" · "Which pair does NOT make 8?" |
+| `openDecomposition(Teen)` | K-1 / 2-3 | multiSelect BOTH valid pairs (K.OA.3) | options "1 and 5", "5 and 3", … pick 2 |
+| `equalSplit` / `frameSplitRead` | K-1 | halves; read one part off a two-color frame | "Split 8 into two equal parts" |
+| `factFamily` | 2-3 | multiSelect the two subtraction sentences a bond makes | "whole 13, parts 9 & 4 → 13−9=4, 13−4=9" |
+| `makeTenStrategy` / `nextTenStrategy` | 2-3 / 4-5 | which split reaches the (next) ten — options are all real splits | "9 + 5: split 5 as 1 and 4" |
+| `judgeSplit` | 2-3 | Yes/No on a claimed split | "Can 13 split into 6 and 7?" |
+| `threeBranchPlace` | 4-5 | hundreds/tens/ones bond, middle branch hidden (zero traps: 305) | "263 → 200, ?, 3" |
+| `twoSplitsOfN` | 4-5 | multiSelect canonical AND take-out-ten splits | "34 → '30 and 4' + '24 and 10'" |
+
+### Application — stories (≤3 per signature; names+nouns rotate)
+
+| structureType | Bands | Situation | Example skeleton |
+|---|---|---|---|
+| `bondStoryWholeUnknown` | all | put-together, total asked | "Mia has 2 red cups and 3 blue cups. How many cups…?" |
+| `bondStoryThreeParts` | 2-3, 4-5 | three collections joined | "…three jars: 4, 6, and 3. How many in all?" |
+| `bondStoryTensOnes` | 4-5 | bags-of-ten + loose ones | "3 full bags of ten and 7 loose beads" |
+| `bondStoryPartUnknown` | all | take-apart / change unknown / still-needs | "9 shells, 4 are spotted — how many plain?" |
+| `bondStoryPartnerToTen` | K-1 | how many more to a full ten | "Has 6, wants a full ten — how many more?" |
+| `bondStoryFillTen` | K-1, 2-3 | fill the 10-box, extras remain | "16 crayons, box takes 10 — how many outside?" |
+| `bondStoryMakeTen` | 2-3 | reach ten, report the leftover | "Has 8, gets 5, rack holds ten — extras?" |
+| `bondStoryEqualSplit` | all | share equally between two | "Deals 12 beads into two equal piles" |
+| `bondStoryTakeOutTen` / `bondStoryTensSingles` | 4-5 | bundle a ten / count leftovers after tens | "Bundles ten of the 34 cups — outside?" |

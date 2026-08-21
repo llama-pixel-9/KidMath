@@ -86,6 +86,23 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## Counting — full bank build (2026-08-20)
+
+1,506 items (542 procedural + 505 conceptual + 459 application), batch tag
+`b0821`, every `counting` cell ≥ 50 new items. Generated deterministically
+by `scripts/itemGen/authorCounting.js` — no verbatim or adapted text; see
+`docs/counting-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+EngageNY/Eureka Math (CC BY-NC-SA — structure only, never wording): GK M1
+(configurations row→array→circle→scatter, cardinality principle,
+conservation, count-out-N production, ±1 ladders, numeral-choice ±1
+distractors), GK M5 (teens as ten-and-ones, decade-boundary staging,
+count-by-tens, counting-error hunts), G1 M6 (blanks in all four sequence
+positions, ±100 twin runs, the 110-for-101 naming-slip error family,
+quick-tens past 100). All prompt wording is original.
+
 ## Number Bonds — full bank build (2026-08-20)
 
 1,591 items (677 procedural + 455 conceptual + 459 application), batch tag

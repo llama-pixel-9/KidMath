@@ -132,6 +132,64 @@ export const CHECKS = [
   },
 
   {
+    // `op: "count"` likewise has no OPS entry. Counting bank items declare
+    // their claim in `display.counting` (docs/counting-bank-design.md) and
+    // this check recomputes the answer from it. Items without the field
+    // (legacy prose) are skipped; judged/choice forms carry no claim.
+    id: "countMath",
+    run: (item) => {
+      const q = item.question || {};
+      if (q.op !== "count" || typeof q.answer !== "number") return null;
+      const c = q.display?.counting;
+      if (!c || typeof c !== "object") return null;
+      const n = (k) => (typeof c[k] === "number" ? c[k] : null);
+      let expected = null;
+      switch (c.kind) {
+        case "set":
+          expected = n("count");
+          break;
+        case "countOn":
+          expected = n("start") != null && n("more") != null ? c.start + c.more : null;
+          break;
+        case "countBack":
+          expected = n("start") != null && n("back") != null ? c.start - c.back : null;
+          break;
+        case "next": {
+          const seq = Array.isArray(c.sequence) && c.sequence.every((x) => typeof x === "number") ? c.sequence : null;
+          expected = seq && seq.length && n("step") != null ? seq[seq.length - 1] + c.step : null;
+          break;
+        }
+        case "between":
+          expected = n("before") != null && n("after") != null && c.after - c.before === 2 ? c.before + 1 : null;
+          break;
+        case "hidden":
+          expected = n("total") != null && n("seen") != null ? c.total - c.seen : null;
+          break;
+        case "gap":
+          expected = n("have") != null && n("target") != null ? c.target - c.have : null;
+          break;
+        case "moreLess":
+          expected = n("n") != null && n("delta") != null ? c.n + c.delta : null;
+          break;
+        case "groups":
+          expected = n("tens") != null && n("ones") != null ? c.tens * 10 + c.ones : null;
+          break;
+        case "sum": {
+          const parts = Array.isArray(c.parts) && c.parts.every((x) => typeof x === "number") ? c.parts : null;
+          expected = parts && parts.length ? parts.reduce((s, x) => s + x, 0) : null;
+          break;
+        }
+        default:
+          return fail("countMath", `unknown counting claim kind "${c.kind}"`);
+      }
+      if (expected == null) return fail("countMath", `counting claim "${c.kind}" is missing its givens`);
+      return expected === q.answer
+        ? null
+        : fail("countMath", `counting claim "${c.kind}" gives ${expected} but answer is ${q.answer}`);
+    },
+  },
+
+  {
     id: "answerGivenAway",
     run: (item) => {
       const text = item.question?.display?.promptText || "";

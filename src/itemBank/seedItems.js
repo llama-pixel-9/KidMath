@@ -11526,6 +11526,834 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "placeValueDiscs-proc-b0821-0001",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "readNumber",
+  "structureType": "matReadTeens",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 11,
+   "display": {
+    "cols": [
+     {
+      "count": 1,
+      "place": 10
+     },
+     {
+      "count": 1,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "groups",
+     "ones": 1,
+     "tens": 1
+    },
+    "promptText": "10 | 1 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0162",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "tradeRegroup",
+  "structureType": "overfullMat",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 11,
+   "display": {
+    "cols": [
+     {
+      "count": 0,
+      "place": 10
+     },
+     {
+      "count": 11,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "groups",
+     "ones": 11,
+     "tens": 0
+    },
+    "promptText": "1 1 1 1 1 1 1 1 1 1 1 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0320",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "discOperations",
+  "structureType": "plusTenDisc",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 21,
+   "display": {
+    "counting": {
+     "n": 11,
+     "kind": "moreLess",
+     "delta": 10
+    },
+    "promptText": "11 + 1 tens disc = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0019",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "readNumber",
+  "structureType": "matRead",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 29,
+   "display": {
+    "cols": [
+     {
+      "count": 2,
+      "place": 10
+     },
+     {
+      "count": 9,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "groups",
+     "ones": 9,
+     "tens": 2
+    },
+    "promptText": "10 10 | 1 1 1 1 1 1 1 1 1 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0179",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "tradeRegroup",
+  "structureType": "overfullMat",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 32,
+   "display": {
+    "cols": [
+     {
+      "count": 2,
+      "place": 10
+     },
+     {
+      "count": 12,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "groups",
+     "ones": 12,
+     "tens": 2
+    },
+    "promptText": "10 10 | 1 1 1 1 1 1 1 1 1 1 1 1 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0338",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "discOperations",
+  "structureType": "plusTenDisc",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 24,
+   "display": {
+    "counting": {
+     "n": 14,
+     "kind": "moreLess",
+     "delta": 10
+    },
+    "promptText": "14 + 1 tens disc = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0037",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "readNumber",
+  "structureType": "matRead",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 47,
+   "display": {
+    "cols": [
+     {
+      "count": 4,
+      "place": 10
+     },
+     {
+      "count": 7,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "groups",
+     "ones": 7,
+     "tens": 4
+    },
+    "promptText": "10 10 10 10 | 1 1 1 1 1 1 1 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0196",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "tradeRegroup",
+  "structureType": "tradeOnesDrill",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "counting": {
+     "n": 13,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "13 ones discs = 1 tens disc + ? ones discs"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0056",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "readNumber",
+  "structureType": "matReadHundreds",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 347,
+   "display": {
+    "cols": [
+     {
+      "count": 3,
+      "place": 100
+     },
+     {
+      "count": 4,
+      "place": 10
+     },
+     {
+      "count": 7,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "units",
+     "ones": 7,
+     "tens": 4,
+     "hundreds": 3
+    },
+    "promptText": "100 100 100 | 10 10 10 10 | 1 1 1 1 1 1 1 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0214",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "tradeRegroup",
+  "structureType": "renameDrill",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 14,
+   "display": {
+    "counting": {
+     "have": 20,
+     "kind": "gap",
+     "target": 34
+    },
+    "promptText": "34 = 2 tens discs + ? ones discs"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0374",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "discOperations",
+  "structureType": "discMove",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 57,
+   "display": {
+    "counting": {
+     "n": 47,
+     "kind": "moreLess",
+     "delta": 10
+    },
+    "promptText": "47 + 1 tens disc = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0073",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "readNumber",
+  "structureType": "matReadHundreds",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 850,
+   "display": {
+    "cols": [
+     {
+      "count": 8,
+      "place": 100
+     },
+     {
+      "count": 5,
+      "place": 10
+     },
+     {
+      "count": 0,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "units",
+     "ones": 0,
+     "tens": 5,
+     "hundreds": 8
+    },
+    "promptText": "100 100 100 100 100 100 100 100 | 10 10 10 10 10 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0231",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "tradeRegroup",
+  "structureType": "asTensDrill",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 78,
+   "display": {
+    "counting": {
+     "have": 0,
+     "kind": "gap",
+     "target": 78
+    },
+    "promptText": "780 = ? tens discs"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0391",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "discOperations",
+  "structureType": "discMoveBig",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 716,
+   "display": {
+    "counting": {
+     "n": 816,
+     "kind": "moreLess",
+     "delta": -100
+    },
+    "promptText": "816 - 1 hundreds disc = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0090",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "readNumber",
+  "structureType": "buildDiscCount",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "counting": {
+     "n": 356,
+     "kind": "digit",
+     "place": 100
+    },
+    "promptText": "Build 356 with discs: hundreds discs = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0248",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "tradeRegroup",
+  "structureType": "overfullMatBig",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 535,
+   "display": {
+    "cols": [
+     {
+      "count": 4,
+      "place": 100
+     },
+     {
+      "count": 13,
+      "place": 10
+     },
+     {
+      "count": 5,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      400,
+      130,
+      5
+     ]
+    },
+    "promptText": "100 100 100 100 | 10 10 10 10 10 10 10 10 10 10 10 10 10 | 1 1 1 1 1 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0109",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "readNumber",
+  "structureType": "matReadThousands",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2473,
+   "display": {
+    "cols": [
+     {
+      "count": 2,
+      "place": 1000
+     },
+     {
+      "count": 4,
+      "place": 100
+     },
+     {
+      "count": 7,
+      "place": 10
+     },
+     {
+      "count": 3,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      2000,
+      400,
+      70,
+      3
+     ]
+    },
+    "promptText": "1000 1000 | 100 100 100 100 | 10 10 10 10 10 10 10 | 1 1 1 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0267",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "tradeRegroup",
+  "structureType": "renameHundredsDrill",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 24,
+   "display": {
+    "counting": {
+     "have": 0,
+     "kind": "gap",
+     "target": 24
+    },
+    "promptText": "2400 = ? hundreds discs"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0427",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "discOperations",
+  "structureType": "discMoveThousands",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3473,
+   "display": {
+    "counting": {
+     "n": 2473,
+     "kind": "moreLess",
+     "delta": 1000
+    },
+    "promptText": "2473 + 1 thousands disc = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0126",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "readNumber",
+  "structureType": "matReadThousands",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2099,
+   "display": {
+    "cols": [
+     {
+      "count": 2,
+      "place": 1000
+     },
+     {
+      "count": 0,
+      "place": 100
+     },
+     {
+      "count": 9,
+      "place": 10
+     },
+     {
+      "count": 9,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      2000,
+      0,
+      90,
+      9
+     ]
+    },
+    "promptText": "1000 1000 | 10 10 10 10 10 10 10 10 10 | 1 1 1 1 1 1 1 1 1 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0284",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "tradeRegroup",
+  "structureType": "mixedRenameDrill",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 580,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      200,
+      380
+     ]
+    },
+    "promptText": "2 hundreds discs + 38 tens discs = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0444",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "discOperations",
+  "structureType": "discDropSeqBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 800,
+   "display": {
+    "counting": {
+     "kind": "next",
+     "step": 100,
+     "sequence": [
+      500,
+      600,
+      700
+     ]
+    },
+    "promptText": "Discs: 500, 600, 700 → ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0143",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "readNumber",
+  "structureType": "buildDiscCountBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "counting": {
+     "n": 7129,
+     "kind": "digit",
+     "place": 1000
+    },
+    "promptText": "Build 7129 with discs: thousands discs = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-proc-b0821-0301",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "procedural",
+  "subskill": "tradeRegroup",
+  "structureType": "overfullMatThousands",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3050,
+   "display": {
+    "cols": [
+     {
+      "count": 2,
+      "place": 1000
+     },
+     {
+      "count": 10,
+      "place": 100
+     },
+     {
+      "count": 5,
+      "place": 10
+     },
+     {
+      "count": 0,
+      "place": 1
+     }
+    ],
+    "type": "discs",
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      2000,
+      1000,
+      50,
+      0
+     ]
+    },
+    "promptText": "1000 1000 | 100 100 100 100 100 100 100 100 100 100 | 10 10 10 10 10 = ?"
+   },
+   "answerType": "placeValueDiscs"
+  }
+ },
+ {
   "itemId": "skipcounting-app-001",
   "modeId": "skipCounting",
   "itemFamily": "application",

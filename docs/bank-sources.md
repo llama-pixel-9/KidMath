@@ -86,6 +86,21 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## placeValueDiscs — full bank build (2026-08-21)
+
+1,406 items (479 procedural + 468 conceptual + 459 application), batch tag
+`b0821`, every `placeValueDiscs` cell ≥ 50 new items. Deterministic; see
+`docs/placevaluediscs-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+EngageNY (CC BY-NC-SA — structure only): G2 M3 (place value disks on a
+place value chart, unit-form reads, trading ten of a unit for one of the
+next), G2 M4/M5 and G4 M1 (regrouping in addition/subtraction with disks,
+"rename with extra ones", error analysis of skipped trades). The letter-free
+mat-caption register, disc-game contexts, and share-the-mat items are our
+own derived extensions. All wording original.
+
 ## placeValue — full bank build (2026-08-21)
 
 1,424 items (467 procedural + 498 conceptual + 459 application), batch tag

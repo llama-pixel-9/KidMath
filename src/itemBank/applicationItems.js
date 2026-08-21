@@ -13,6 +13,7 @@ import { ITEMS as divisionItems } from "./items/division.js";
 import { ITEMS as multiplicationItems } from "./items/multiplication.js";
 import { ITEMS as numberBondsItems } from "./items/numberBonds.js";
 import { ITEMS as placeValueItems } from "./items/placeValue.js";
+import { ITEMS as placeValueDiscsItems } from "./items/placeValueDiscs.js";
 import { ITEMS as skipCountingItems } from "./items/skipCounting.js";
 import { ITEMS as subtractionItems } from "./items/subtraction.js";
 
@@ -24,6 +25,7 @@ export const APPLICATION_ITEM_BANK = [
   ...multiplicationItems,
   ...numberBondsItems,
   ...placeValueItems,
+  ...placeValueDiscsItems,
   ...skipCountingItems,
   ...subtractionItems,
 ];

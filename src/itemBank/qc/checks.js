@@ -193,7 +193,12 @@ export const CHECKS = [
           break;
         }
         case "between":
-          expected = n("before") != null && n("after") != null && c.after - c.before === 2 ? c.before + 1 : null;
+          // Midpoint of the neighbours — covers unit steps (before+1) AND
+          // skip-count gaps (before + step), as long as the gap is even.
+          expected =
+            n("before") != null && n("after") != null && (c.after - c.before) % 2 === 0 && c.after > c.before
+              ? (c.before + c.after) / 2
+              : null;
           break;
         case "hidden":
           expected = n("total") != null && n("seen") != null ? c.total - c.seen : null;

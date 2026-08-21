@@ -12792,448 +12792,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "skipcounting-proc-groupsToProduct-23-001",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 20,
-   "display": {
-    "step": 4,
-    "sequence": [
-     4,
-     8,
-     12,
-     16
-    ],
-    "promptText": "5 groups of 4: 4, 8, 12, 16, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-23-001",
+  "itemId": "skipCounting-proc-b0821-0001",
   "modeId": "skipCounting",
   "itemFamily": "procedural",
   "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 40,
-   "display": {
-    "step": 10,
-    "sequence": [
-     10,
-     20,
-     30
-    ],
-    "promptText": "Skip count by 10: 10, 20, 30. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-stepInference-23-001",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 28,
-   "display": {
-    "step": 7,
-    "sequence": [
-     7,
-     14,
-     21
-    ],
-    "promptText": "Find the next term: 7, 14, 21, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-groupsToProduct-23-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 30,
-   "display": {
-    "step": 5,
-    "sequence": [
-     5,
-     10,
-     15,
-     20,
-     25
-    ],
-    "promptText": "6 groups of 5: 5, 10, 15, 20, 25, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-23-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 24,
-   "display": {
-    "step": 6,
-    "sequence": [
-     6,
-     12,
-     18
-    ],
-    "promptText": "Skip count by 6: 6, 12, 18. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-stepInference-23-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 32,
-   "display": {
-    "step": 8,
-    "sequence": [
-     8,
-     16,
-     24
-    ],
-    "promptText": "Find the next term: 8, 16, 24, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-groupsToProduct-23-003",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 24,
-   "display": {
-    "step": 6,
-    "sequence": [
-     6,
-     12,
-     18
-    ],
-    "promptText": "4 groups of 6: 6, 12, 18, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-23-003",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 44,
-   "display": {
-    "step": 11,
-    "sequence": [
-     11,
-     22,
-     33
-    ],
-    "promptText": "Skip count by 11: 11, 22, 33. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-groupsToProduct-45-001",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 48,
-   "display": {
-    "step": 12,
-    "sequence": [
-     12,
-     24,
-     36
-    ],
-    "promptText": "4 groups of 12: 12, 24, 36, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-45-001",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 100,
-   "display": {
-    "step": 25,
-    "sequence": [
-     25,
-     50,
-     75
-    ],
-    "promptText": "Skip count by 25: 25, 50, 75. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-stepInference-45-001",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 80,
-   "display": {
-    "step": 10,
-    "sequence": [
-     50,
-     60,
-     70
-    ],
-    "promptText": "Find the next term: 50, 60, 70, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-groupsToProduct-45-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 100,
-   "display": {
-    "step": 25,
-    "sequence": [
-     25,
-     50,
-     75
-    ],
-    "promptText": "4 groups of 25: 25, 50, 75, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-45-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 48,
-   "display": {
-    "step": 12,
-    "sequence": [
-     12,
-     24,
-     36
-    ],
-    "promptText": "Skip count by 12: 12, 24, 36. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-stepInference-45-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 140,
-   "display": {
-    "step": 20,
-    "sequence": [
-     80,
-     100,
-     120
-    ],
-    "promptText": "Find the next term: 80, 100, 120, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-groupsToProduct-45-003",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 54,
-   "display": {
-    "step": 9,
-    "sequence": [
-     9,
-     18,
-     27,
-     36,
-     45
-    ],
-    "promptText": "6 groups of 9: 9, 18, 27, 36, 45, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-45-003",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 400,
-   "display": {
-    "step": 100,
-    "sequence": [
-     100,
-     200,
-     300
-    ],
-    "promptText": "Skip count by 100: 100, 200, 300. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-groupsToProduct-K1-001",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
+  "structureType": "nextTermForward",
   "levelRange": [
    1,
    3
@@ -13242,207 +12805,756 @@ export const SEED_ITEMS = [
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 15,
-   "display": {
-    "step": 5,
-    "sequence": [
-     5,
-     10
-    ],
-    "promptText": "3 groups of 5: 5, 10, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-K1-001",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 8,
-   "display": {
-    "step": 2,
-    "sequence": [
-     2,
-     4,
-     6
-    ],
-    "promptText": "Skip count by 2: 2, 4, 6. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-stepInference-K1-001",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 12,
-   "display": {
-    "step": 3,
-    "sequence": [
-     3,
-     6,
-     9
-    ],
-    "promptText": "Find the next term: 3, 6, 9, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-groupsToProduct-K1-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 12,
-   "display": {
-    "step": 3,
-    "sequence": [
-     3,
-     6,
-     9
-    ],
-    "promptText": "4 groups of 3: 3, 6, 9, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-K1-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 20,
-   "display": {
-    "step": 5,
-    "sequence": [
-     5,
-     10,
-     15
-    ],
-    "promptText": "Skip count by 5: 5, 10, 15. What's next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-stepInference-K1-002",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 9,
-   "display": {
-    "step": 2,
-    "sequence": [
-     1,
-     3,
-     5,
-     7
-    ],
-    "promptText": "Find the next term: 1, 3, 5, 7, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-groupsToProduct-K1-003",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 10,
-   "display": {
-    "step": 2,
-    "sequence": [
-     2,
-     4,
-     6,
-     8
-    ],
-    "promptText": "5 groups of 2: 2, 4, 6, 8, ?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-proc-patternRule-K1-003",
-  "modeId": "skipCounting",
-  "itemFamily": "procedural",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
+   "op": "count",
    "answer": 6,
    "display": {
     "step": 2,
+    "counting": {
+     "kind": "next",
+     "step": 2,
+     "sequence": [
+      0,
+      2,
+      4
+     ]
+    },
     "sequence": [
      0,
      2,
      4
     ],
-    "promptText": "Skip count by 2 starting at 0: 0, 2, 4. What's next?"
-   }
+    "promptText": "0, 2, 4, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0162",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "stepInference",
+  "structureType": "missingMiddleTerm",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 4,
+     "before": 0
+    },
+    "promptText": "0, ___, 4, 6"
+   },
+   "answerType": "fillBlank"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0317",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "groupsToProduct",
+  "structureType": "repeatedAddition",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      2,
+      2,
+      2
+     ]
+    },
+    "promptText": "2 + 2 + 2 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0019",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "nextTermForward",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "step": 2,
+    "counting": {
+     "kind": "next",
+     "step": 2,
+     "sequence": [
+      8,
+      10
+     ]
+    },
+    "sequence": [
+     8,
+     10
+    ],
+    "promptText": "8, 10, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0180",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "stepInference",
+  "structureType": "missingMiddleTerm",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 15,
+     "before": 5
+    },
+    "promptText": "0, 5, ___"
+   },
+   "answerType": "fillBlank"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0335",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "groupsToProduct",
+  "structureType": "repeatedAddition",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 50,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      10,
+      10,
+      10,
+      10,
+      10
+     ]
+    },
+    "promptText": "10 + 10 + 10 + 10 + 10 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0037",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "nextTermBackward",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 14,
+   "display": {
+    "step": -2,
+    "counting": {
+     "kind": "next",
+     "step": -2,
+     "sequence": [
+      20,
+      18,
+      16
+     ]
+    },
+    "sequence": [
+     20,
+     18,
+     16
+    ],
+    "promptText": "20, 18, 16, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0198",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "stepInference",
+  "structureType": "missingMiddleLong",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 10,
+     "before": 6
+    },
+    "promptText": "2, 4, 6, ___, 10"
+   },
+   "answerType": "fillBlank"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0052",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "nextTermThreesFours",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 9,
+   "display": {
+    "step": 3,
+    "counting": {
+     "kind": "next",
+     "step": 3,
+     "sequence": [
+      0,
+      3,
+      6
+     ]
+    },
+    "sequence": [
+     0,
+     3,
+     6
+    ],
+    "promptText": "0, 3, 6, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0213",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "stepInference",
+  "structureType": "missingMiddleThreesFours",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 9,
+     "before": 3
+    },
+    "promptText": "3, ___, 9, 12"
+   },
+   "answerType": "fillBlank"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0368",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "groupsToProduct",
+  "structureType": "repeatedAdditionThreesFours",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 9,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      3,
+      3,
+      3
+     ]
+    },
+    "promptText": "3 + 3 + 3 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0072",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "nextTermThreesFours",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 40,
+   "display": {
+    "step": 4,
+    "counting": {
+     "kind": "next",
+     "step": 4,
+     "sequence": [
+      28,
+      32,
+      36
+     ]
+    },
+    "sequence": [
+     28,
+     32,
+     36
+    ],
+    "promptText": "28, 32, 36, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0231",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "stepInference",
+  "structureType": "missingMiddleThreesFours",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 30,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 33,
+     "before": 27
+    },
+    "promptText": "27, ___, 33, 36"
+   },
+   "answerType": "fillBlank"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0386",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "groupsToProduct",
+  "structureType": "repeatedAdditionThreesFours",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 30,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      6,
+      6,
+      6,
+      6,
+      6
+     ]
+    },
+    "promptText": "6 + 6 + 6 + 6 + 6 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0092",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "tensRun",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 50,
+   "display": {
+    "step": 10,
+    "counting": {
+     "kind": "next",
+     "step": 10,
+     "sequence": [
+      10,
+      20,
+      30,
+      40
+     ]
+    },
+    "sequence": [
+     10,
+     20,
+     30,
+     40
+    ],
+    "promptText": "10, 20, 30, 40, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0249",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "stepInference",
+  "structureType": "missingStartThreesFours",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 21,
+   "display": {
+    "counting": {
+     "n": 24,
+     "kind": "moreLess",
+     "delta": -3
+    },
+    "promptText": "___, 24, 27, 30"
+   },
+   "answerType": "fillBlank"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0110",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "nextTermBigSteps",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 18,
+   "display": {
+    "step": 6,
+    "counting": {
+     "kind": "next",
+     "step": 6,
+     "sequence": [
+      0,
+      6,
+      12
+     ]
+    },
+    "sequence": [
+     0,
+     6,
+     12
+    ],
+    "promptText": "0, 6, 12, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0265",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "stepInference",
+  "structureType": "missingMiddleBigSteps",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 18,
+     "before": 6
+    },
+    "promptText": "6, ___, 18, 24"
+   },
+   "answerType": "fillBlank"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0420",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "groupsToProduct",
+  "structureType": "unitFormBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 24,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      6,
+      6,
+      6,
+      6
+     ]
+    },
+    "promptText": "4 sixes = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0128",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "nextTermBigSteps",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 600,
+   "display": {
+    "step": 100,
+    "counting": {
+     "kind": "next",
+     "step": 100,
+     "sequence": [
+      300,
+      400,
+      500
+     ]
+    },
+    "sequence": [
+     300,
+     400,
+     500
+    ],
+    "promptText": "300, 400, 500, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0283",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "stepInference",
+  "structureType": "missingMiddleBigSteps",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 300,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 350,
+     "before": 250
+    },
+    "promptText": "200, 250, ___, 350"
+   },
+   "answerType": "fillBlank"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0437",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "groupsToProduct",
+  "structureType": "unitFormBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 200,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+     ]
+    },
+    "promptText": "8 twenty-fives = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0146",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "patternRule",
+  "structureType": "offMultipleRun",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 305,
+   "display": {
+    "step": 100,
+    "counting": {
+     "kind": "next",
+     "step": 100,
+     "sequence": [
+      5,
+      105,
+      205
+     ]
+    },
+    "sequence": [
+     5,
+     105,
+     205
+    ],
+    "promptText": "5, 105, 205, ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-proc-b0821-0301",
+  "modeId": "skipCounting",
+  "itemFamily": "procedural",
+  "subskill": "stepInference",
+  "structureType": "missingStartBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 125,
+   "display": {
+    "counting": {
+     "n": 150,
+     "kind": "moreLess",
+     "delta": -25
+    },
+    "promptText": "___, 150, 175, 200"
+   },
+   "answerType": "fillBlank"
   }
  },
  {

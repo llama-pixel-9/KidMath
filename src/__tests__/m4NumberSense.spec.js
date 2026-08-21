@@ -134,6 +134,18 @@ const COUNTING = {
 };
 
 const SKIP = {
+  midBlankDrill: (q) => {
+    // Three shown terms of a 4-term run, one interior blank: the larger of
+    // the two visible gaps straddles the blank.
+    const nums = (q.display.promptText.match(/\d+/g) || []).map(Number);
+    const d1 = nums[1] - nums[0];
+    const d2 = nums[2] - nums[1];
+    return d1 > d2 ? nums[0] + d2 : nums[1] + d1;
+  },
+  repeatedAdditionDrill: (q) => {
+    const nums = (q.display.promptText.match(/\d+/g) || []).map(Number);
+    return nums.reduce((s, x) => s + x, 0);
+  },
   nextTermForward: (q) => q.display.sequence[2] + q.display.step,
   nextTermBackward: (q) => {
     const [x, y, z] = q.display.sequence;

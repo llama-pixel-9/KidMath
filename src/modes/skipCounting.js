@@ -590,6 +590,55 @@ const VARIETIES = [
       };
     },
   },
+
+  // 20/21 — targetedOnly drills: stepInference had no band-1 variety and
+  // groupsToProduct no band-1 procedural, so scheduled requests escaped the
+  // band filter (the numberBonds level-leak class).
+  {
+    id: "midBlankDrill",
+    bands: [1, 2, 3],
+    targetedOnly: true,
+    subskill: "stepInference",
+    family: ITEM_FAMILIES.PROCEDURAL,
+    build: (level) => {
+      const cfg = config(level);
+      const step = pick(cfg.steps);
+      const start = randInt(0, Math.max(1, Math.floor(cfg.startMax / step))) * step;
+      const sequence = [start, start + step, start + 2 * step, start + 3 * step];
+      const blank = randInt(1, 2);
+      const shown = sequence.map((n, i) => (i === blank ? "___" : n)).join(", ");
+      return {
+        answer: sequence[blank],
+        answerType: "fillBlank",
+        display: { promptText: shown },
+        representation: "sequence",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["wrongStep", "patternReset"],
+        step,
+      };
+    },
+  },
+  {
+    id: "repeatedAdditionDrill",
+    bands: [1, 2, 3],
+    targetedOnly: true,
+    subskill: "groupsToProduct",
+    family: ITEM_FAMILIES.PROCEDURAL,
+    build: (level) => {
+      const cfg = config(level);
+      const step = pick(cfg.steps);
+      const groups = randInt(3, 6);
+      return {
+        answer: step * groups,
+        answerType: "numberPad",
+        display: { promptText: `${Array.from({ length: groups }, () => step).join(" + ")} = ?` },
+        representation: "symbolic",
+        cognitiveDemand: "DOK1",
+        misconceptions: ["wrongStep", "countsTermsNotValues"],
+        step,
+      };
+    },
+  },
 ];
 
 export const SKIP_COUNTING_VARIETY_IDS = VARIETIES.map((v) => v.id);
@@ -600,24 +649,33 @@ function chooseVariety(level, context = {}) {
     if (forced) return forced;
   }
   const band = bandOf(level);
-  let pool = VARIETIES.filter((v) => v.bands.includes(band));
+  const targeted = Boolean(context.itemFamily || context.targetSubskill);
+  const eligible = VARIETIES.filter((v) => !v.targetedOnly || targeted);
+  let pool = eligible.filter((v) => v.bands.includes(band));
 
   if (context.itemFamily) {
     const byFamily = pool.filter((v) => v.family === context.itemFamily);
-    const anyBand = VARIETIES.filter((v) => v.family === context.itemFamily);
+    const anyBand = eligible.filter((v) => v.family === context.itemFamily);
     pool = byFamily.length ? byFamily : anyBand.length ? anyBand : pool;
   } else if (context.allowWordProblems === false) {
     pool = pool.filter((v) => v.family !== ITEM_FAMILIES.APPLICATION);
   }
 
   if (context.targetSubskill) {
-    // A targeted subskill wins over the band filter too: the session engine asks
-    // for the child's weakest subskill, and answering with a different one would
-    // silently defeat the adaptive loop. Magnitude still scales with level.
-    const inBand = pool.filter((v) => v.subskill === context.targetSubskill);
-    const anyBand = VARIETIES.filter((v) => v.subskill === context.targetSubskill);
-    if (inBand.length) pool = inBand;
-    else if (anyBand.length) pool = anyBand;
+    // Subskill wins over the family filter, never over the band filter
+    // (out-of-band leaks — see numberBonds). Fallback: family+subskill in
+    // band -> any-family subskill in band -> subskill anywhere.
+    const bySubskill = (arr) => arr.filter((v) => v.subskill === context.targetSubskill);
+    const noStories = (arr) =>
+      context.allowWordProblems === false
+        ? arr.filter((v) => v.family !== ITEM_FAMILIES.APPLICATION)
+        : arr;
+    const inPool = bySubskill(pool);
+    const inBandAnyFamily = noStories(bySubskill(eligible.filter((v) => v.bands.includes(band))));
+    const anywhere = noStories(bySubskill(eligible));
+    if (inPool.length) pool = inPool;
+    else if (inBandAnyFamily.length) pool = inBandAnyFamily;
+    else if (anywhere.length) pool = anywhere;
   }
   return pool.length ? pick(pool) : VARIETIES[0];
 }

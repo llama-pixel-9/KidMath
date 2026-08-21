@@ -86,6 +86,21 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## skipCounting — full bank build (2026-08-20)
+
+1,414 items (469 procedural + 486 conceptual + 459 application), batch tag
+`b0821`, every `skipCounting` cell ≥ 50 new items. Deterministic; see
+`docs/skipcounting-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+EngageNY (CC BY-NC-SA — structure only): G2 M6 (equal groups, arrays,
+rows-vs-columns, even/odd via 2s, repeated addition), G3 M1 (unit form "4
+twos", skip-count-to-multiplication chain, the L20 Sprint's blank-position
+difficulty ladder, missing-factor via skip counting). 25s/50s/100s items
+and coin/clock contexts are derived extensions, flagged in the design doc.
+All wording original.
+
 ## Comparing — full bank build (2026-08-20)
 
 1,511 items (563 procedural + 489 conceptual + 459 application), batch tag

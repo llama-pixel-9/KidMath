@@ -508,6 +508,7 @@ const BONDS = {
 };
 
 const COMPARING = {
+  benchmarkDrill: (q) => symbolFor(q.a, q.b),
   symbolBetweenNumerals: (q) => symbolFor(q.a, q.b),
   compareObjectSets: (q) => {
     const m = promptOf(q).match(/Basket A: (\S+) Basket B: (\S+)/);

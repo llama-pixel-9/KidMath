@@ -96,6 +96,39 @@ export const CHECKS = [
   { id: "arithmetic", run: arithmeticCheck },
 
   {
+    // `op: "vs"`/`op: "?"` (comparing) skips arithmeticCheck; verify what the
+    // payload lets us: symbol answers against numeric a/b, and numeric
+    // answers against a display.compare claim
+    // (docs/comparing-bank-design.md).
+    id: "compareMath",
+    run: (item) => {
+      const q = item.question || {};
+      if (q.op !== "vs" && q.op !== "?") return null;
+      if (typeof q.answer === "string" && /^[<>=]$/.test(q.answer)) {
+        if (typeof q.a === "number" && typeof q.b === "number") {
+          const want = q.a > q.b ? ">" : q.a < q.b ? "<" : "=";
+          return q.answer === want
+            ? null
+            : fail("compareMath", `symbol ${q.answer} does not relate ${q.a} and ${q.b}`);
+        }
+        return null; // expression strings — assembler-level asserts cover them
+      }
+      const c = q.display?.compare;
+      if (!c || typeof q.answer !== "number") return null;
+      let want = null;
+      if (c.kind === "difference") want = c.bigger - c.smaller;
+      else if (c.kind === "gap") want = c.target - c.have;
+      else if (c.kind === "oneMoreLess") want = c.n + c.delta;
+      else if (c.kind === "closerTo") want = c.n - c.lo < c.hi - c.n ? c.lo : c.hi;
+      else if (c.kind === "midpoint") want = (c.lo + c.hi) / 2;
+      if (want == null) return null;
+      return q.answer === want
+        ? null
+        : fail("compareMath", `answer ${q.answer} != ${want} from ${c.kind} claim`);
+    },
+  },
+
+  {
     // `op: "bond"` skips arithmeticCheck entirely (no OPS entry), so bond
     // items get their own consistency rule, keyed off the display payload.
     // Bank convention (docs/numberbonds-bank-design.md): missing-part items

@@ -205,3 +205,40 @@ describe("countMath verifies counting-bank claims that arithmetic skips", () => 
     expect(runChecks(judged).findings.some((f) => f.id === "countMath")).toBe(false);
   });
 });
+
+describe("compareMath verifies comparing payloads that arithmetic skips", () => {
+  const cmp = (q) => ({
+    itemId: "x",
+    modeId: "comparing",
+    structureType: "symbolBetweenNumerals",
+    itemFamily: "procedural",
+    subskill: "symbolSelection",
+    levelRange: [1, 3],
+    question: { op: "?", display: { promptText: "12 ? 8" }, ...q },
+  });
+
+  it("accepts a correct symbol", () => {
+    expect(runChecks(cmp({ a: 12, b: 8, answer: ">" })).pass).toBe(true);
+  });
+
+  it("rejects a flipped symbol", () => {
+    const qc = runChecks(cmp({ a: 12, b: 8, answer: "<" }));
+    expect(qc.pass).toBe(false);
+    expect(qc.findings.some((f) => f.id === "compareMath")).toBe(true);
+  });
+
+  it("verifies a difference claim", () => {
+    const qc = runChecks(
+      cmp({ a: null, b: null, op: "vs", answer: 4, display: { promptText: "9 vs 5: how many more? ?", compare: { kind: "difference", bigger: 9, smaller: 5 } } })
+    );
+    expect(qc.pass).toBe(true);
+  });
+
+  it("rejects a wrong closer-to claim", () => {
+    const qc = runChecks(
+      cmp({ a: null, b: null, op: "vs", answer: 20, display: { promptText: "Is 13 closer to 10 or 20? ?", compare: { kind: "closerTo", n: 13, lo: 10, hi: 20 } } })
+    );
+    expect(qc.pass).toBe(false);
+    expect(qc.findings.some((f) => f.id === "compareMath")).toBe(true);
+  });
+});

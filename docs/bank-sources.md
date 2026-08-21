@@ -86,6 +86,20 @@ Each session that adapts from external material appends its citations here.
 
 Items sourced under CC BY 4.0 carry a `source` field in their bank payload with `name`, `url`, `license`, `fetchedAt`, and usually an `adaptedFrom` label identifying the source task.
 
+## Comparing — full bank build (2026-08-20)
+
+1,511 items (563 procedural + 489 conceptual + 459 application), batch tag
+`b0821`, every `comparing` cell ≥ 50 new items. Deterministic; see
+`docs/comparing-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+EngageNY (CC BY-NC-SA — structure only): GK M3 E–H (matching ladder,
+more/fewer/same, enough?, both-ways frames), G1 M4 Topic B (symbol
+sequence, mouth convention, reversals 13/31, big-digit trap, mixed forms),
+G2 M3 F–G (three-digit compares across forms, non-standard units, ±1/10/100
+with any slot unknown). All wording original.
+
 ## Counting — full bank build (2026-08-20)
 
 1,506 items (542 procedural + 505 conceptual + 459 application), batch tag

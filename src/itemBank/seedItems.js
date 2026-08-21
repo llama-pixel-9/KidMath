@@ -2574,452 +2574,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-proc-benchmarkCompare-23-001",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 47,
-   "b": 50,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Compare 47 and 50."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-23-001",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 18,
-   "b": 25,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Compare 18 and 25."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-symbolSelection-23-001",
+  "itemId": "comparing-proc-b0821-0001",
   "modeId": "comparing",
   "itemFamily": "procedural",
   "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 23,
-   "b": 45,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Compare 23 and 45 with <, >, or =."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-benchmarkCompare-23-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 65,
-   "b": 50,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 65 and 50."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-23-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 75,
-   "b": 42,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 75 and 42."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-symbolSelection-23-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 67,
-   "b": 32,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 67 and 32 with <, >, or =."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-benchmarkCompare-23-003",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 30,
-   "b": 30,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Compare 30 and 30."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-23-003",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 60,
-   "b": 60,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Compare 60 and 60."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-benchmarkCompare-45-001",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 487,
-   "b": 500,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Compare 487 and 500."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-45-001",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 156,
-   "b": 412,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Compare 156 and 412."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-symbolSelection-45-001",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 234,
-   "b": 567,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Compare 234 and 567 with <, >, or =."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-benchmarkCompare-45-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 678,
-   "b": 500,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 678 and 500."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-45-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 789,
-   "b": 321,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 789 and 321."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-symbolSelection-45-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 891,
-   "b": 234,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 891 and 234 with <, >, or =."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-benchmarkCompare-45-003",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 100,
-   "b": 100,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Compare 100 and 100."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-45-003",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 200,
-   "b": 200,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Compare 200 and 200."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-benchmarkCompare-K1-001",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": 5,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Compare 4 and 5."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-K1-001",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 2,
-   "b": 9,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Compare 2 and 9."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-symbolSelection-K1-001",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 5,
-   "b": 8,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Compare 5 and 8 with <, >, or =."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-benchmarkCompare-K1-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": 5,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 7 and 5."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-distanceCompare-K1-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": 1,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Compare 8 and 1."
-   }
-  }
- },
- {
-  "itemId": "comparing-proc-symbolSelection-K1-002",
-  "modeId": "comparing",
-  "itemFamily": "procedural",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
+  "structureType": "symbolWithin10",
   "levelRange": [
    1,
    3
@@ -3031,37 +2590,66 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": ">",
    "display": {
-    "promptText": "Compare 7 and 4 with <, >, or =."
-   }
+    "promptText": "7 ? 4"
+   },
+   "answerType": "symbolSelect"
   }
  },
  {
-  "itemId": "comparing-proc-benchmarkCompare-K1-003",
+  "itemId": "comparing-proc-b0821-0259",
   "modeId": "comparing",
   "itemFamily": "procedural",
   "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
+  "structureType": "vsFive",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 10,
-   "b": 10,
+   "a": 0,
+   "b": 5,
    "op": "?",
-   "answer": "=",
+   "answer": "<",
    "display": {
-    "promptText": "Compare 10 and 10."
+    "promptText": "0 ? 5"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0412",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "distanceCompare",
+  "structureType": "orderWithin10",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "2, 4, 9",
+   "choices": [
+    "4, 2, 9",
+    "2, 9, 4",
+    "2, 4, 9",
+    "9, 4, 2"
+   ],
+   "display": {
+    "promptText": "Order from smallest to largest: 4, 9, 2."
    }
   }
  },
  {
-  "itemId": "comparing-proc-distanceCompare-K1-003",
+  "itemId": "comparing-proc-b0821-0028",
   "modeId": "comparing",
   "itemFamily": "procedural",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
+  "subskill": "symbolSelection",
+  "structureType": "symbolWithin10",
   "levelRange": [
    1,
    3
@@ -3069,12 +2657,482 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 5,
-   "b": 5,
+   "b": 1,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "5 ? 1"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0277",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "vsTen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 7,
+   "b": 10,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "7 ? 10"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0466",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "distanceCompare",
+  "structureType": "pickExtremeWithin10",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 3,
+   "choices": [
+    8,
+    3,
+    5
+   ],
+   "display": {
+    "promptText": "Which is the smallest: 3, 8, 5?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0055",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "symbolSelection",
+  "structureType": "symbolClaimJudge",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "promptText": "3 < 9"
+   },
+   "subPrompt": "Is this right?"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0295",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "vsTwenty",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 15,
+   "b": 20,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "15 ? 20"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0080",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "symbolSelection",
+  "structureType": "symbolTwoDigit",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 13,
+   "b": 31,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "13 ? 31"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0310",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "vsFifty",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 12,
+   "b": 50,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "12 ? 50"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0430",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "distanceCompare",
+  "structureType": "orderTwoDigit",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "24, 34, 43",
+   "choices": [
+    "43, 34, 24",
+    "24, 43, 34",
+    "24, 34, 43",
+    "34, 24, 43"
+   ],
+   "display": {
+    "promptText": "Order from smallest to largest: 34, 43, 24."
+   }
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0114",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "symbolSelection",
+  "structureType": "symbolTwoDigit",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 37,
+   "b": 73,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "37 ? 73"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0328",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "vsFifty",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 37,
+   "b": 50,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "37 ? 50"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0447",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "distanceCompare",
+  "structureType": "orderTwoDigit",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "33, 37, 73",
+   "choices": [
+    "73, 37, 33",
+    "37, 33, 73",
+    "33, 73, 37",
+    "33, 37, 73"
+   ],
+   "display": {
+    "promptText": "Line these up, littlest first: 37, 73, 33."
+   }
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0148",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "symbolSelection",
+  "structureType": "expressionCompare",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": "7 + 3",
+   "b": "5 + 5",
    "op": "?",
    "answer": "=",
    "display": {
-    "promptText": "Compare 5 and 5."
+    "promptText": "7 + 3 ? 5 + 5"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0346",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "vsNearestDecade",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 42,
+   "b": 40,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "42 ? 40"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0181",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "symbolSelection",
+  "structureType": "symbolThreeDigit",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 98,
+   "b": 102,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "98 ? 102"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0361",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "vsHundred",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 98,
+   "b": 100,
+   "op": "?",
+   "answer": "<",
+   "display": {
+    "promptText": "98 ? 100"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0448",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "distanceCompare",
+  "structureType": "orderThreeDigit",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "203, 230, 302",
+   "choices": [
+    "302, 230, 203",
+    "203, 230, 302",
+    "230, 203, 302",
+    "203, 302, 230"
+   ],
+   "display": {
+    "promptText": "Order from smallest to largest: 203, 302, 230."
    }
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0208",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "symbolSelection",
+  "structureType": "symbolThreeDigit",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 640,
+   "b": 604,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "640 ? 604"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0379",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "vsHundred",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 118,
+   "b": 100,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "118 ? 100"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0465",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "distanceCompare",
+  "structureType": "orderThreeDigit",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "454, 455, 545",
+   "choices": [
+    "454, 455, 545",
+    "545, 455, 454",
+    "454, 545, 455",
+    "455, 454, 545"
+   ],
+   "display": {
+    "promptText": "Line these up, littlest first: 455, 545, 454."
+   }
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0235",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "symbolSelection",
+  "structureType": "relationalNoCompute",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": "76 + 15",
+   "b": "75 + 14",
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "76 + 15 ? 75 + 14"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-proc-b0821-0397",
+  "modeId": "comparing",
+  "itemFamily": "procedural",
+  "subskill": "benchmarkCompare",
+  "structureType": "vsFiveHundred",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 530,
+   "b": 500,
+   "op": "?",
+   "answer": ">",
+   "display": {
+    "promptText": "530 ? 500"
+   },
+   "answerType": "symbolSelect"
   }
  },
  {

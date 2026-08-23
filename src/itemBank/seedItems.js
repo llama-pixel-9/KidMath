@@ -1521,6 +1521,1397 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "angles-app-b0821-0001",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "classifyAngle",
+  "structureType": "storyDoor_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "acute",
+   "choices": [
+    "straight",
+    "acute",
+    "right",
+    "obtuse"
+   ],
+   "display": {
+    "ang": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "Mina opens a door just a crack. Which kind of angle does the door make with the wall? Pick it."
+   }
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0154",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "measureAngle",
+  "structureType": "storyRobot_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "ang": {
+     "kind": "divTurn",
+     "unit": 90,
+     "whole": 180
+    },
+    "promptText": "Luca's toy robot makes a half turn. How many quarter turns is that? Type it."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0307",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "angleSum",
+  "structureType": "storySpin_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "ang": {
+     "a": 1,
+     "b": 1,
+     "kind": "sumUnits"
+    },
+    "promptText": "Mina spins 1 quarter turn, pauses, then spins 1 more. How many quarter turns does Mina spin in all?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0460",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "missingAngle",
+  "structureType": "storyWind_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "ang": {
+     "a": 90,
+     "kind": "missDeg",
+     "total": 360
+    },
+    "promptText": "Luca's wind-up toy needs 4 quarter turns of its key. Luca has wound 1. How many quarter turns are missing?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0026",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "classifyAngle",
+  "structureType": "storyClock_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "right",
+   "choices": [
+    "acute",
+    "right",
+    "obtuse",
+    "straight"
+   ],
+   "display": {
+    "ang": {
+     "deg": 90,
+     "kind": "classify"
+    },
+    "promptText": "Lily looks at the clock at 3:00. Which kind of angle do the two hands make? Pick it."
+   }
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0179",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "measureAngle",
+  "structureType": "storyDial_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "ang": {
+     "kind": "divTurn",
+     "unit": 90,
+     "whole": 180
+    },
+    "promptText": "Rosa twists a jar lid through a half turn. Count it in quarter turns: how many quarter turns is the twist?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0332",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "angleSum",
+  "structureType": "storyFold_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "ang": {
+     "a": 2,
+     "b": 1,
+     "kind": "sumUnits"
+    },
+    "promptText": "Lily folds a paper 2 square corners' worth, then 1 more square corners' worth. How many square corners of turn is that in all?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0485",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "missingAngle",
+  "structureType": "storyPinwheel_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1,
+   "display": {
+    "ang": {
+     "a": 270,
+     "kind": "missDeg",
+     "total": 360
+    },
+    "promptText": "A pinwheel needs 4 quarter turns for a full spin. After Rosa blows it 3 quarter turns, how many quarter turns are missing?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0052",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "classifyAngle",
+  "structureType": "storyDoor_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "acute",
+   "choices": [
+    "acute",
+    "obtuse",
+    "straight",
+    "right"
+   ],
+   "display": {
+    "ang": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "Omar swings a locker door just a crack. Pick the kind of angle between door and frame."
+   }
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0205",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "measureAngle",
+  "structureType": "storyRobot_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 90,
+   "display": {
+    "ang": {
+     "d": 90,
+     "kind": "benchDeg"
+    },
+    "promptText": "June's drone rotates through a quarter turn. How many degrees does it rotate? Type it."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0358",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "angleSum",
+  "structureType": "storySpin_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 75,
+   "display": {
+    "ang": {
+     "a": 30,
+     "b": 45,
+     "kind": "sumDeg"
+    },
+    "promptText": "Omar tapes together pizza slice tips of 30 degrees and 45 degrees. How many degrees is the combined tip?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0511",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "missingAngle",
+  "structureType": "storyDoorGap_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 60,
+   "display": {
+    "ang": {
+     "a": 30,
+     "kind": "missDeg",
+     "total": 90
+    },
+    "promptText": "June opens a door 30 degrees of the 90 degrees to the wall. How many more degrees can it open?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0077",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "classifyAngle",
+  "structureType": "storyClock_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "right",
+   "choices": [
+    "straight",
+    "acute",
+    "obtuse",
+    "right"
+   ],
+   "display": {
+    "ang": {
+     "deg": 90,
+     "kind": "classify"
+    },
+    "promptText": "At 3:00, Nora checks the clock hands. Pick the kind of angle between them."
+   }
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0230",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "measureAngle",
+  "structureType": "storyDial_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 90,
+   "display": {
+    "ang": {
+     "d": 90,
+     "kind": "benchDeg"
+    },
+    "promptText": "Sam turns an oven dial through a quarter turn. Type the turn in degrees."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0383",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "angleSum",
+  "structureType": "storyFold_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 80,
+   "display": {
+    "ang": {
+     "a": 20,
+     "b": 60,
+     "kind": "sumDeg"
+    },
+    "promptText": "Nora opens a book cover 20 degrees, then 60 degrees more. How many degrees has the cover opened in total?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0536",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "missingAngle",
+  "structureType": "storyPie_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 20,
+   "display": {
+    "ang": {
+     "a": 70,
+     "kind": "missDeg",
+     "total": 90
+    },
+    "promptText": "Of the 90 degrees in the wall, Sam's spinner has swept 70 degrees. How many degrees are left to sweep?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0103",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "classifyAngle",
+  "structureType": "storyDoor_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "acute",
+   "choices": [
+    "right",
+    "obtuse",
+    "straight",
+    "acute"
+   ],
+   "display": {
+    "ang": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "Finn props a hatch just a crack. Which kind of angle does the hatch form with its frame?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0256",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "measureAngle",
+  "structureType": "storyRobot_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 90,
+   "display": {
+    "ang": {
+     "d": 90,
+     "kind": "benchDeg"
+    },
+    "promptText": "Amara programs a camera to sweep a quarter turn. Exactly how many degrees is the sweep?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0409",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "angleSum",
+  "structureType": "storySpin_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 125,
+   "display": {
+    "ang": {
+     "a": 85,
+     "b": 40,
+     "kind": "sumDeg"
+    },
+    "promptText": "Finn joins fan blades sweeping 85 degrees and 40 degrees with no gap. How many degrees do they sweep together?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0562",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "missingAngle",
+  "structureType": "storyDoorGap_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 270,
+   "display": {
+    "ang": {
+     "a": 90,
+     "kind": "missDeg",
+     "total": 360
+    },
+    "promptText": "Amara raises a drawbridge 90 degrees of its full 360-degree lift. How many degrees remain?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0128",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "classifyAngle",
+  "structureType": "storyClock_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "right",
+   "choices": [
+    "acute",
+    "obtuse",
+    "right",
+    "straight"
+   ],
+   "display": {
+    "ang": {
+     "deg": 90,
+     "kind": "classify"
+    },
+    "promptText": "Ava reads the clock at 3:00. Classify the angle between the hands."
+   }
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0281",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "measureAngle",
+  "structureType": "storyDial_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 90,
+   "display": {
+    "ang": {
+     "d": 90,
+     "kind": "benchDeg"
+    },
+    "promptText": "Kai rotates a telescope mount through a quarter turn. Determine the rotation in degrees."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0434",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "angleSum",
+  "structureType": "storyFold_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 170,
+   "display": {
+    "ang": {
+     "a": 55,
+     "b": 115,
+     "kind": "sumDeg"
+    },
+    "promptText": "Ava tilts a solar panel 55 degrees at dawn and 115 degrees more at noon. What total angle has it tilted?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-app-b0821-0587",
+  "modeId": "angles",
+  "itemFamily": "application",
+  "subskill": "missingAngle",
+  "structureType": "storyPie_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 50,
+   "display": {
+    "ang": {
+     "a": 310,
+     "kind": "missDeg",
+     "total": 360
+    },
+    "promptText": "Kai has cut pie slices totaling 310 degrees from the 360-degree pie. How many degrees of pie remain?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0001",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "classifyAngle",
+  "structureType": "classSaidJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "rel": "less",
+     "kind": "relSaid",
+     "said": "acute"
+    },
+    "truth": true,
+    "promptText": "Mina sees an angle that opens less than a square corner and calls it acute. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0157",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "measureAngle",
+  "structureType": "estimateJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "kind": "authoredYes"
+    },
+    "truth": true,
+    "promptText": "Mina says a wide-open gate makes an angle wider than a square corner. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0313",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "angleSum",
+  "structureType": "sumSaidJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "a": 1,
+     "b": 1,
+     "kind": "sumUnitsSaid",
+     "said": 2
+    },
+    "truth": true,
+    "promptText": "Mina says 1 quarter turn plus 1 more make 2 quarter turns in all. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0469",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "missingAngle",
+  "structureType": "missSaidJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "have": 1,
+     "kind": "missUnitsSaid",
+     "said": 3,
+     "whole": 4
+    },
+    "truth": true,
+    "promptText": "Mina says a full spin with 1 quarter turn done is missing 3 quarter turns. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0063",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "classifyAngle",
+  "structureType": "tiltJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "kind": "authored"
+    },
+    "truth": false,
+    "promptText": "Kai says a square corner is only a right angle when one side points straight up. Is Kai right? Think about the opening, not the tilt."
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0219",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "measureAngle",
+  "structureType": "estimateTrap_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Kai claims a wide slice of pie opens less than a square corner. Is Kai right?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0375",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "angleSum",
+  "structureType": "pairMakeJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "kind": "authored"
+    },
+    "truth": true,
+    "promptText": "Kai says two square corners put together make a straight line. Is Kai right? Try drawing it."
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0530",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "missingAngle",
+  "structureType": "splitWholeJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "kind": "authored"
+    },
+    "truth": false,
+    "promptText": "Splitting a square corner loses some of the turn, claims Nia. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0019",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "classifyAngle",
+  "structureType": "classSaidJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "deg": 40,
+     "kind": "classSaid",
+     "said": "acute"
+    },
+    "truth": true,
+    "promptText": "Omar measures an angle at 40 degrees and calls it acute. Does the label fit?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0175",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "measureAngle",
+  "structureType": "estimateJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "kind": "authoredYes"
+    },
+    "truth": true,
+    "promptText": "Omar estimates the angle of a wide-open gate at about 150 degrees. Is that a sensible estimate?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0331",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "angleSum",
+  "structureType": "sumSaidJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "a": 30,
+     "b": 45,
+     "kind": "sumSaid",
+     "said": 75
+    },
+    "truth": true,
+    "promptText": "Omar adds adjacent angles of 30 and 45 degrees and reports 75 degrees. Does the report hold?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0487",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "missingAngle",
+  "structureType": "missSaidJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "a": 30,
+     "kind": "missSaid",
+     "said": 60,
+     "total": 90
+    },
+    "truth": true,
+    "promptText": "Omar says an angle of 30 degrees needs 60 more degrees to make a right angle. Does the number hold?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0079",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "classifyAngle",
+  "structureType": "tiltJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "kind": "authored"
+    },
+    "truth": false,
+    "promptText": "Rosa claims a 90-degree angle stops being right when the page is rotated. Is the claim right? Think about the opening, not the tilt."
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0235",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "measureAngle",
+  "structureType": "estimateTrap_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Rosa estimates a wide slice of pie at 20 degrees. Is that a sensible estimate?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0393",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "angleSum",
+  "structureType": "pairMakeJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "a": 15,
+     "b": 75,
+     "kind": "pairSaid",
+     "total": 90
+    },
+    "truth": true,
+    "promptText": "Rosa claims angles of 15 and 75 degrees together make a right angle. Is the claim right?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0546",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "missingAngle",
+  "structureType": "splitWholeJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "kind": "authored"
+    },
+    "truth": false,
+    "promptText": "Splitting a right angle changes its total, argues Zoe. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0037",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "classifyAngle",
+  "structureType": "classSaidJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "deg": 89,
+     "kind": "classSaid",
+     "said": "acute"
+    },
+    "truth": true,
+    "promptText": "Finn classifies a 89-degree angle as acute. Is the classification valid?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0193",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "measureAngle",
+  "structureType": "estimateJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "kind": "authoredYes"
+    },
+    "truth": true,
+    "promptText": "Finn pegs a wide-open gate near 160 degrees. Is the estimate reasonable?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0349",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "angleSum",
+  "structureType": "sumSaidJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "a": 85,
+     "b": 40,
+     "kind": "sumSaid",
+     "said": 125
+    },
+    "truth": true,
+    "promptText": "Finn certifies 125 degrees as the combined measure of 85 and 40 degrees. Valid?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0505",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "missingAngle",
+  "structureType": "missSaidJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "a": 65,
+     "kind": "missSaid",
+     "said": 115,
+     "total": 180
+    },
+    "truth": true,
+    "promptText": "Finn certifies that 65 degrees and 115 degrees complete a straight angle. Valid?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0095",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "classifyAngle",
+  "structureType": "tiltJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "kind": "authored"
+    },
+    "truth": false,
+    "promptText": "Nora asserts orientation decides rightness: a rotated 90-degree angle is no longer right. Sound assertion? Think about the opening, not the tilt."
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0251",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "measureAngle",
+  "structureType": "estimateTrap_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Nora pegs a wide slice of pie near 15 degrees. Is the estimate reasonable?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0411",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "angleSum",
+  "structureType": "pairMakeJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "a": 65,
+     "b": 115,
+     "kind": "pairSaid",
+     "total": 180
+    },
+    "truth": true,
+    "promptText": "Nora asserts 65 and 115 degrees combine into a straight angle. Is the assertion right?"
+   }
+  }
+ },
+ {
+  "itemId": "angles-conc-b0821-0562",
+  "modeId": "angles",
+  "itemFamily": "conceptual",
+  "subskill": "missingAngle",
+  "structureType": "splitWholeJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ang": {
+     "kind": "authored"
+    },
+    "truth": false,
+    "promptText": "The pieces of a cut straight angle can total more than 180 degrees, asserts Diego. Is the assertion right?"
+   }
+  }
+ },
+ {
   "itemId": "angles-proc-b0821-0001",
   "modeId": "angles",
   "itemFamily": "procedural",
@@ -2198,6 +3589,1380 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "areaPerimeter-app-b0821-0001",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "area",
+  "structureType": "storyRug_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "ap": {
+     "h": 3,
+     "w": 2,
+     "kind": "areaOf"
+    },
+    "promptText": "Mina's play mat is 2 units long and 3 units wide. How many unit squares of floor does the mat cover?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0154",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "perimeter",
+  "structureType": "storyFence_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 18,
+   "display": {
+    "ap": {
+     "h": 5,
+     "w": 4,
+     "kind": "perimOf"
+    },
+    "promptText": "Luca builds a block fence all the way around a 4-unit by 5-unit pen. How many units of fence does Luca build?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0307",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "compositeFigures",
+  "structureType": "storyRooms_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "ap": {
+     "a": 2,
+     "b": 3,
+     "c": 2,
+     "d": 2,
+     "kind": "joinAreas"
+    },
+    "promptText": "Mina covers two mats with paper: one 2 units by 3 units, one 2 units by 2 units. How many unit squares of paper does Mina use in all?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0460",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "measureReasoning",
+  "structureType": "storyChalk_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 16,
+   "display": {
+    "ap": {
+     "h": 6,
+     "w": 2,
+     "kind": "perimOf"
+    },
+    "promptText": "Luca's chalk court is 2 units by 6 units. To chalk the border once around, how many units of chalk line does Luca draw?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0026",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "area",
+  "structureType": "storyGardenA_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 9,
+   "display": {
+    "ap": {
+     "h": 3,
+     "w": 3,
+     "kind": "areaOf"
+    },
+    "promptText": "Lily plants a garden bed 3 units by 3 units. How many unit squares of soil does Lily plant?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0179",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "perimeter",
+  "structureType": "storyFrame_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 24,
+   "display": {
+    "ap": {
+     "h": 6,
+     "w": 6,
+     "kind": "perimOf"
+    },
+    "promptText": "Rosa glues ribbon around the edge of a 6-unit by 6-unit picture. How many units of ribbon does Rosa glue?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0332",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "compositeFigures",
+  "structureType": "storyPatio_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "ap": {
+     "a": 2,
+     "b": 4,
+     "c": 2,
+     "d": 2,
+     "kind": "joinAreas"
+    },
+    "promptText": "Lily joins a 2-by-4 sticker sheet to a 2-by-2 sheet with no overlap. How many unit squares is the combined sheet?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0485",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "measureReasoning",
+  "structureType": "storyCover_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "ap": {
+     "h": 3,
+     "w": 2,
+     "kind": "areaOf"
+    },
+    "promptText": "Rosa covers a 2-unit by 3-unit table top with square tiles, one per unit square. How many tiles does Rosa place?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0052",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "area",
+  "structureType": "storyRug_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 28,
+   "display": {
+    "ap": {
+     "h": 4,
+     "w": 7,
+     "kind": "areaOf"
+    },
+    "promptText": "Omar unrolls a rug 7 cm by 4 cm in the reading nook. How many square cm of floor does the rug cover?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0205",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "perimeter",
+  "structureType": "storyFence_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 32,
+   "display": {
+    "ap": {
+     "h": 6,
+     "w": 10,
+     "kind": "perimOf"
+    },
+    "promptText": "June fences a rabbit run 10 cm by 6 cm on the balcony. How many cm of fencing does June need?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0358",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "compositeFigures",
+  "structureType": "storyRooms_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 34,
+   "display": {
+    "ap": {
+     "a": 7,
+     "b": 4,
+     "c": 3,
+     "d": 2,
+     "kind": "joinAreas"
+    },
+    "promptText": "Omar carpets two rooms, 7 cm by 4 cm and 3 cm by 2 cm on the plan. How many square cm of carpet is that altogether?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0511",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "measureReasoning",
+  "structureType": "storyChalk_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 34,
+   "display": {
+    "ap": {
+     "h": 5,
+     "w": 12,
+     "kind": "perimOf"
+    },
+    "promptText": "June edges a flower bed 12 cm by 5 cm with brick trim. How many cm of trim does the border take?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0077",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "area",
+  "structureType": "storyGardenA_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 63,
+   "display": {
+    "ap": {
+     "h": 7,
+     "w": 9,
+     "kind": "areaOf"
+    },
+    "promptText": "Nora preps a vegetable patch 9 cm by 7 cm in the planter box. How many square cm of soil is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0230",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "perimeter",
+  "structureType": "storyFrame_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 30,
+   "display": {
+    "ap": {
+     "h": 3,
+     "w": 12,
+     "kind": "perimOf"
+    },
+    "promptText": "Sam tapes trim around a photo 12 cm by 3 cm. How many cm of trim go on?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0383",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "compositeFigures",
+  "structureType": "storyPatio_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 37,
+   "display": {
+    "ap": {
+     "a": 9,
+     "b": 3,
+     "c": 5,
+     "d": 2,
+     "kind": "joinAreas"
+    },
+    "promptText": "Nora builds an L-shaped patio from a 9 by 3 slab and a 5 by 2 slab, no overlap. How many square cm is the patio on the plan?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0536",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "measureReasoning",
+  "structureType": "storyCover_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 28,
+   "display": {
+    "ap": {
+     "h": 4,
+     "w": 7,
+     "kind": "areaOf"
+    },
+    "promptText": "Sam papers a display board 7 cm by 4 cm completely. How many square cm of paper is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0103",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "area",
+  "structureType": "storyRug_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 96,
+   "display": {
+    "ap": {
+     "h": 8,
+     "w": 12,
+     "kind": "areaOf"
+    },
+    "promptText": "Finn lays a tarp 12 m by 8 m over the infield. How many square m does the tarp cover?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0256",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "perimeter",
+  "structureType": "storyFence_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 38,
+   "display": {
+    "ap": {
+     "h": 4,
+     "w": 15,
+     "kind": "perimOf"
+    },
+    "promptText": "Amara fences a paddock 15 m by 4 m. How many m of fencing does the paddock take?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0409",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "compositeFigures",
+  "structureType": "storyRooms_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 120,
+   "display": {
+    "ap": {
+     "a": 12,
+     "b": 8,
+     "c": 6,
+     "d": 4,
+     "kind": "joinAreas"
+    },
+    "promptText": "Finn turfs two fields, 12 m by 8 m and 6 m by 4 m. How many square m of turf does Finn lay in total?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0562",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "measureReasoning",
+  "structureType": "storyChalk_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 44,
+   "display": {
+    "ap": {
+     "h": 9,
+     "w": 13,
+     "kind": "perimOf"
+    },
+    "promptText": "Amara tapes off a work zone 13 m by 9 m. How many m of tape run around it?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0128",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "area",
+  "structureType": "storyGardenA_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 132,
+   "display": {
+    "ap": {
+     "h": 11,
+     "w": 12,
+     "kind": "areaOf"
+    },
+    "promptText": "Ava tills a field section 12 m by 11 m. How many square m does Ava till?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0281",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "perimeter",
+  "structureType": "storyFrame_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 60,
+   "display": {
+    "ap": {
+     "h": 15,
+     "w": 15,
+     "kind": "perimOf"
+    },
+    "promptText": "Kai welds edging around a sign 15 m by 15 m. How many m of edging does the sign need?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0434",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "compositeFigures",
+  "structureType": "storyPatio_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 102,
+   "display": {
+    "ap": {
+     "a": 14,
+     "b": 5,
+     "c": 8,
+     "d": 4,
+     "kind": "joinAreas"
+    },
+    "promptText": "Ava pours an L-shaped court from a 14 m by 5 m pad and a 8 m by 4 m pad. How many square m is the court?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-app-b0821-0587",
+  "modeId": "areaPerimeter",
+  "itemFamily": "application",
+  "subskill": "measureReasoning",
+  "structureType": "storyCover_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 96,
+   "display": {
+    "ap": {
+     "h": 8,
+     "w": 12,
+     "kind": "areaOf"
+    },
+    "promptText": "Kai sods a yard 12 m by 8 m corner to corner. How many square m of sod go down?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0001",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "area",
+  "structureType": "areaAddTrap_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Mina finds the area of a 2-by-3 rectangle by adding: 2 + 3 = 5 unit squares. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0157",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "perimeter",
+  "structureType": "perimHalfTrap_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Mina finds the trip around a 2-by-3 rectangle by adding just two sides: 2 + 3 = 5 units. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0313",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "compositeFigures",
+  "structureType": "overlapTrap_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Mina slides two paper rectangles so they overlap, then adds their two areas to get the area they cover on the table. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0469",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "measureReasoning",
+  "structureType": "purposeJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "kind": "authored"
+    },
+    "truth": false,
+    "promptText": "Mina wants to put ribbon around a card and measures the space INSIDE the shape to do it. Is that the right measure?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0063",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "area",
+  "structureType": "areaSaidJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "h": 4,
+     "w": 2,
+     "kind": "areaSaid",
+     "said": 8
+    },
+    "truth": true,
+    "promptText": "Kai says a 2-by-4 rectangle covers 8 unit squares. Is Kai right?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0219",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "perimeter",
+  "structureType": "perimSaidJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "h": 4,
+     "w": 2,
+     "kind": "perimSaid",
+     "said": 12
+    },
+    "truth": true,
+    "promptText": "Kai says the trip around a 2-by-4 rectangle is 12 units. Is Kai right?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0375",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "compositeFigures",
+  "structureType": "splitJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "kind": "authoredYes"
+    },
+    "truth": true,
+    "promptText": "Kai cuts a paper rectangle into two pieces and says the two pieces together cover the same amount as before. Is Kai right? No paper is lost in the cut."
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0530",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "measureReasoning",
+  "structureType": "unitJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Nia labels the border of a 5-by-2 rectangle \"14 unit squares\". Is the label right?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0019",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "area",
+  "structureType": "areaAddTrap_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Omar computes the area of a 7 cm by 4 cm rectangle as 7 + 4 = 11 square cm. Does the work hold?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0175",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "perimeter",
+  "structureType": "perimHalfTrap_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Omar computes the perimeter of a 7 cm by 4 cm rectangle as 7 + 4 = 11 cm. Does the work hold?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0331",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "compositeFigures",
+  "structureType": "overlapTrap_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Omar overlaps two rugs and sums their areas to report the floor space they cover. Does the sum hold?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0487",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "measureReasoning",
+  "structureType": "purposeJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "kind": "authored"
+    },
+    "truth": false,
+    "promptText": "Omar plans to fence a chicken run and calculates the area. Is area the measure the job needs?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0081",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "area",
+  "structureType": "areaSaidJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "h": 7,
+     "w": 9,
+     "kind": "areaSaid",
+     "said": 63
+    },
+    "truth": true,
+    "promptText": "Rosa records 63 square cm for a 9 cm by 7 cm rectangle. Does the record hold?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0237",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "perimeter",
+  "structureType": "perimSaidJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "h": 7,
+     "w": 9,
+     "kind": "perimSaid",
+     "said": 32
+    },
+    "truth": true,
+    "promptText": "Rosa records 32 cm for the perimeter of a 9 cm by 7 cm rectangle. Does the record hold?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0391",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "compositeFigures",
+  "structureType": "splitJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "kind": "authoredYes"
+    },
+    "truth": true,
+    "promptText": "Rosa splits a garden into two beds and claims the total planted area stays the same. Does the claim hold? No paper is lost in the cut."
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0546",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "measureReasoning",
+  "structureType": "unitJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Zoe writes the perimeter of a 8 cm by 8 cm rectangle as 32 square cm. Is the unit right?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0037",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "area",
+  "structureType": "areaAddTrap_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Finn's worked area for a 12 m by 8 m rectangle reads 12 + 8 = 20 square m. Is the work sound?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0193",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "perimeter",
+  "structureType": "perimHalfTrap_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Finn's perimeter for a 12 m by 8 m rectangle reads 12 + 8 = 20 m. Is the work sound?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0349",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "compositeFigures",
+  "structureType": "overlapTrap_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Finn computes covered ground for two overlapping tarps by simple addition of their areas. Is the computation sound?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0505",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "measureReasoning",
+  "structureType": "purposeJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "kind": "authored"
+    },
+    "truth": false,
+    "promptText": "Finn prepares to rail a balcony by computing the area. Does the job call for area?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0099",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "area",
+  "structureType": "areaSaidJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "h": 11,
+     "w": 12,
+     "kind": "areaSaid",
+     "said": 132
+    },
+    "truth": true,
+    "promptText": "Nora certifies 132 square m as the area of a 12 m by 11 m rectangle. Valid?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0255",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "perimeter",
+  "structureType": "perimSaidJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "h": 11,
+     "w": 12,
+     "kind": "perimSaid",
+     "said": 46
+    },
+    "truth": true,
+    "promptText": "Nora certifies 46 m as the perimeter of a 12 m by 11 m rectangle. Valid?"
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0407",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "compositeFigures",
+  "structureType": "splitJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "kind": "authoredYes"
+    },
+    "truth": true,
+    "promptText": "Nora partitions a field into two plots and asserts the combined area equals the original. Is the assertion sound? No paper is lost in the cut."
+   }
+  }
+ },
+ {
+  "itemId": "areaPerimeter-conc-b0821-0562",
+  "modeId": "areaPerimeter",
+  "itemFamily": "conceptual",
+  "subskill": "measureReasoning",
+  "structureType": "unitJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "ap": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Diego states a 15 m by 8 m rectangle's perimeter as 46 square m. Is the unit correct?"
+   }
+  }
+ },
+ {
   "itemId": "areaPerimeter-proc-b0821-0049",
   "modeId": "areaPerimeter",
   "itemFamily": "procedural",
@@ -2860,6 +5625,1431 @@ export const SEED_ITEMS = [
      "kind": "authoredChoice"
     },
     "promptText": "The area of a 12 m by 8 m rectangle is 96, in which unit: square m or m?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0001",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "partWhole",
+  "structureType": "storyJoin_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 13,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      7,
+      6
+     ]
+    },
+    "promptText": "Sam gathers 7 seashells and Zoe gathers 6. How many seashells do they gather altogether?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0154",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "comparison",
+  "structureType": "storyDiff_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "counting": {
+     "have": 9,
+     "kind": "gap",
+     "target": 14
+    },
+    "promptText": "Sam counts 14 seashells; Ben counts 9. How many more seashells does the leader have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0307",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "multiplicative",
+  "structureType": "storyTimes_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "bar": {
+     "k": 2,
+     "u": 6,
+     "kind": "timesOf"
+    },
+    "promptText": "Amara saves 6 seashells; Sam saves 2 times as many. How many seashells does Sam save?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0460",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "fractionBar",
+  "structureType": "storyFrac_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "bar": {
+     "w": 12,
+     "den": 2,
+     "num": 1,
+     "kind": "fracOf"
+    },
+    "promptText": "Sam bakes 12 rolls and shares one half with neighbors. How many rolls go to the neighbors?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0060",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "partWhole",
+  "structureType": "storyLeft_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "part": 12,
+    "type": "barPartWhole",
+    "whole": 19,
+    "counting": {
+     "back": 12,
+     "kind": "countBack",
+     "start": 19
+    },
+    "promptText": "June starts with 19 seashells and gives away 12. How many seashells does June still have?"
+   },
+   "answerType": "barModel"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0213",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "comparison",
+  "structureType": "storyMore_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 17,
+   "display": {
+    "counting": {
+     "kind": "countOn",
+     "more": 8,
+     "start": 9
+    },
+    "promptText": "Sam finds 9 seashells. June finds 8 more than Sam. How many seashells does June find?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0366",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "multiplicative",
+  "structureType": "storyShare_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "bar": {
+     "k": 2,
+     "w": 20,
+     "kind": "unitOf"
+    },
+    "promptText": "June deals 20 seashells evenly into 2 gift bags. How many seashells go in each bag?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0519",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "fractionBar",
+  "structureType": "storyHalf_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "bar": {
+     "w": 4,
+     "den": 2,
+     "num": 1,
+     "kind": "fracOf"
+    },
+    "promptText": "June reads half of a 4-page book on the trip. How many pages has June read?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0018",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "partWhole",
+  "structureType": "storyJoin_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 58,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      27,
+      31
+     ]
+    },
+    "promptText": "Mina's jar holds 27 seashells; Priya's jar holds 31. Poured together, how many seashells fill one jar? Sketch the bar if it helps."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0171",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "comparison",
+  "structureType": "storyDiff_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 25,
+   "display": {
+    "counting": {
+     "have": 39,
+     "kind": "gap",
+     "target": 64
+    },
+    "promptText": "With 64 seashells against Leo's 39, how far ahead is Mina? Sketch the bar if it helps."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0324",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "multiplicative",
+  "structureType": "storyTimes_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 63,
+   "display": {
+    "bar": {
+     "k": 3,
+     "u": 21,
+     "kind": "timesOf"
+    },
+    "promptText": "Mina's haul of seashells is 3 of Luca's piles of 21 stacked together. How many seashells is that? Sketch the bar if it helps."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0477",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "fractionBar",
+  "structureType": "storyFrac_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 21,
+   "display": {
+    "bar": {
+     "w": 84,
+     "den": 4,
+     "num": 1,
+     "kind": "fracOf"
+    },
+    "promptText": "Of Mina's 84-page comic, 1 of the 4 equal chapters are finished. How many pages are finished? Sketch the bar if it helps."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0077",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "partWhole",
+  "structureType": "storyLeft_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 28,
+   "display": {
+    "part": 49,
+    "type": "barPartWhole",
+    "whole": 77,
+    "counting": {
+     "back": 49,
+     "kind": "countBack",
+     "start": 77
+    },
+    "promptText": "Of Zoe's 77 seashells, 49 get traded away. What number of seashells remains? Sketch the bar if it helps."
+   },
+   "answerType": "barModel"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0230",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "comparison",
+  "structureType": "storyMore_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 76,
+   "display": {
+    "counting": {
+     "kind": "countOn",
+     "more": 35,
+     "start": 41
+    },
+    "promptText": "Zoe beats Ida's pile of 41 seashells by 35. What is Zoe's pile of seashells? Sketch the bar if it helps."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0383",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "multiplicative",
+  "structureType": "storyShare_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 32,
+   "display": {
+    "bar": {
+     "k": 3,
+     "w": 96,
+     "kind": "unitOf"
+    },
+    "promptText": "A crate of 96 seashells splits fairly across 3 tables for Zoe's party. How many seashells per table? Sketch the bar if it helps."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0536",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "fractionBar",
+  "structureType": "storyHalf_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 43,
+   "display": {
+    "bar": {
+     "w": 86,
+     "den": 2,
+     "num": 1,
+     "kind": "fracOf"
+    },
+    "promptText": "Half of Zoe's 86 balloons float away. How many balloons drift off? Sketch the bar if it helps."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0035",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "partWhole",
+  "structureType": "storyJoin_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 558,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      227,
+      331
+     ]
+    },
+    "promptText": "Between them, Luca brings 227 seashells and Nia brings 331. What is their combined count of seashells? A bar model makes it clear."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0188",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "comparison",
+  "structureType": "storyDiff_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 245,
+   "display": {
+    "counting": {
+     "have": 397,
+     "kind": "gap",
+     "target": 642
+    },
+    "promptText": "Luca has 642 seashells and Theo has 397. What is the difference in their seashells? A bar model makes it clear."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0341",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "multiplicative",
+  "structureType": "storyTimes_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 642,
+   "display": {
+    "bar": {
+     "k": 3,
+     "u": 214,
+     "kind": "timesOf"
+    },
+    "promptText": "Whatever Omar collects, Luca collects 3 times over. Omar has 214 seashells. What does Luca have? A bar model makes it clear."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0494",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "fractionBar",
+  "structureType": "storyFrac_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 212,
+   "display": {
+    "bar": {
+     "w": 848,
+     "den": 4,
+     "num": 1,
+     "kind": "fracOf"
+    },
+    "promptText": "Luca pours a 848-cup batch into 4 equal jars and hands over 1. How many cups get handed over? A bar model makes it clear."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0094",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "partWhole",
+  "structureType": "storyLeft_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 284,
+   "display": {
+    "part": 491,
+    "type": "barPartWhole",
+    "whole": 775,
+    "counting": {
+     "back": 491,
+     "kind": "countBack",
+     "start": 775
+    },
+    "promptText": "A pouch of 775 seashells loses 491 through a hole. How many seashells stay in Omar's pouch? A bar model makes it clear."
+   },
+   "answerType": "barModel"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0247",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "comparison",
+  "structureType": "storyMore_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 764,
+   "display": {
+    "counting": {
+     "kind": "countOn",
+     "more": 345,
+     "start": 419
+    },
+    "promptText": "Rosa stacks 419 seashells, and Omar stacks 345 on top of that count. How many seashells does Omar stack? A bar model makes it clear."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0400",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "multiplicative",
+  "structureType": "storyShare_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 321,
+   "display": {
+    "bar": {
+     "k": 3,
+     "w": 963,
+     "kind": "unitOf"
+    },
+    "promptText": "Omar lines up 963 seashells in 3 equal rows. How many seashells fill one row? A bar model makes it clear."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-app-b0821-0553",
+  "modeId": "barModels",
+  "itemFamily": "application",
+  "subskill": "fractionBar",
+  "structureType": "storyHalf_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 432,
+   "display": {
+    "bar": {
+     "w": 864,
+     "den": 2,
+     "num": 1,
+     "kind": "fracOf"
+    },
+    "promptText": "Omar freezes half of 864 juice pops for later. How many pops go in the freezer? A bar model makes it clear."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0001",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "partWhole",
+  "structureType": "barJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bar": {
+     "a": 7,
+     "b": 6,
+     "w": 13,
+     "kind": "wholeSaid"
+    },
+    "truth": true,
+    "promptText": "Mina fills a bar: whole 13, parts 7 and 6. Is the bar right?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0151",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "comparison",
+  "structureType": "fewerPick_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 9,
+   "choices": [
+    8,
+    9,
+    19,
+    14
+   ],
+   "display": {
+    "bar": {
+     "a": 14,
+     "d": 5,
+     "kind": "fewerOf"
+    },
+    "promptText": "Theo has 5 fewer stickers than Ava, who has 14. How many stickers does Theo have? Pick the number."
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0301",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "multiplicative",
+  "structureType": "timesPick_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "choices": [
+    12,
+    6,
+    8,
+    18
+   ],
+   "display": {
+    "bar": {
+     "k": 2,
+     "u": 6,
+     "kind": "timesOf"
+    },
+    "promptText": "Mina has 2 times as many shells as Luca, who has 6. How many shells does Mina have? Pick the count."
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0451",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "fractionBar",
+  "structureType": "halfJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bar": {
+     "w": 12,
+     "den": 2,
+     "num": 1,
+     "kind": "fracSaid",
+     "said": 6
+    },
+    "truth": true,
+    "promptText": "Mina says half of a 12-bar is 6. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0062",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "partWhole",
+  "structureType": "eqPick_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "13 - 5",
+   "choices": [
+    "13 + 5",
+    "13 - 5",
+    "5 - 13"
+   ],
+   "display": {
+    "bar": {
+     "p": 5,
+     "w": 13,
+     "kind": "eqPick"
+    },
+    "promptText": "Nia must find the blank part of a whole-13, part-5 bar. Which sentence does the job?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0208",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "comparison",
+  "structureType": "diffJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bar": {
+     "a": 11,
+     "b": 3,
+     "kind": "diffSaid",
+     "said": 7
+    },
+    "truth": false,
+    "promptText": "Between 11 and 3, Rosa measures a difference of 7. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0358",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "multiplicative",
+  "structureType": "equalJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bar": {
+     "k": 2,
+     "u": 6,
+     "w": 14,
+     "kind": "equalSaid"
+    },
+    "truth": false,
+    "promptText": "2 parts of 6 each should rebuild Zoe's whole of 14. Do they?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0512",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "fractionBar",
+  "structureType": "biggerPiece_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "one half",
+   "choices": [
+    "one quarter",
+    "one half"
+   ],
+   "display": {
+    "bar": {
+     "kind": "biggerPiece"
+    },
+    "promptText": "Theo picks a piece of a 20-bar: a half or a quarter. Which piece is bigger?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0019",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "partWhole",
+  "structureType": "barJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bar": {
+     "a": 27,
+     "b": 31,
+     "w": 58,
+     "kind": "wholeSaid"
+    },
+    "truth": true,
+    "promptText": "Omar sketches whole 58 over parts 27 and 31. Does the model check out?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0167",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "comparison",
+  "structureType": "fewerPick_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 39,
+   "choices": [
+    64,
+    39,
+    89,
+    38
+   ],
+   "display": {
+    "bar": {
+     "a": 64,
+     "d": 25,
+     "kind": "fewerOf"
+    },
+    "promptText": "Lily scored 64; Ben scored 25 fewer. Which is Ben's score?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0317",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "multiplicative",
+  "structureType": "timesPick_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 63,
+   "choices": [
+    63,
+    42,
+    24,
+    84
+   ],
+   "display": {
+    "bar": {
+     "k": 3,
+     "u": 21,
+     "kind": "timesOf"
+    },
+    "promptText": "June saved 21; Omar saved 3 times as much. Which amount is Omar's?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0469",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "fractionBar",
+  "structureType": "halfJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bar": {
+     "w": 84,
+     "den": 2,
+     "num": 1,
+     "kind": "fracSaid",
+     "said": 42
+    },
+    "truth": true,
+    "promptText": "Omar halves a 84-bar and writes 42. Does the halving hold up?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0078",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "partWhole",
+  "structureType": "eqPick_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "58 - 24",
+   "choices": [
+    "58 - 24",
+    "24 - 58",
+    "58 + 24"
+   ],
+   "display": {
+    "bar": {
+     "p": 24,
+     "w": 58,
+     "kind": "eqPick"
+    },
+    "promptText": "Zoe's bar model: whole 58, part 24, blank part. Which equation matches?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0226",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "comparison",
+  "structureType": "diffJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bar": {
+     "a": 69,
+     "b": 34,
+     "kind": "diffSaid",
+     "said": 34
+    },
+    "truth": false,
+    "promptText": "Sam figures 69 beats 34 by 34. Is the figure right?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0376",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "multiplicative",
+  "structureType": "equalJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bar": {
+     "k": 3,
+     "u": 28,
+     "w": 87,
+     "kind": "equalSaid"
+    },
+    "truth": false,
+    "promptText": "A 87-bar divided by Priya into 3 sections of 28 — is the division exact?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0528",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "fractionBar",
+  "structureType": "biggerPiece_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "one third",
+   "choices": [
+    "one sixth",
+    "one third"
+   ],
+   "display": {
+    "bar": {
+     "kind": "biggerPiece"
+    },
+    "promptText": "Ben weighs one third of 96 against one sixth of 96. Which share wins?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0037",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "partWhole",
+  "structureType": "barJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bar": {
+     "a": 227,
+     "b": 331,
+     "w": 558,
+     "kind": "wholeSaid"
+    },
+    "truth": true,
+    "promptText": "Finn audits a bar: whole 558, sections 227 and 331. Is the audit clean?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0183",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "comparison",
+  "structureType": "fewerPick_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 385,
+   "choices": [
+    642,
+    384,
+    385,
+    899
+   ],
+   "display": {
+    "bar": {
+     "a": 642,
+     "d": 257,
+     "kind": "fewerOf"
+    },
+    "promptText": "Leo collected 642 points and Priya collected 257 fewer. Which total is Priya's?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0333",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "multiplicative",
+  "structureType": "timesPick_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 642,
+   "choices": [
+    428,
+    217,
+    642,
+    856
+   ],
+   "display": {
+    "bar": {
+     "k": 3,
+     "u": 214,
+     "kind": "timesOf"
+    },
+    "promptText": "Amara logged 214 points; Finn logged 3 times that. Which total is Finn's?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0487",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "fractionBar",
+  "structureType": "halfJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bar": {
+     "w": 848,
+     "den": 2,
+     "num": 1,
+     "kind": "fracSaid",
+     "said": 424
+    },
+    "truth": true,
+    "promptText": "Finn computes half of 848 as 424. Is the computation right?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0094",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "partWhole",
+  "structureType": "eqPick_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "583 - 246",
+   "choices": [
+    "583 - 246",
+    "246 - 583",
+    "583 + 246"
+   ],
+   "display": {
+    "bar": {
+     "p": 246,
+     "w": 583,
+     "kind": "eqPick"
+    },
+    "promptText": "Diego translates a whole-583, part-246 bar into arithmetic. Which sentence is faithful?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0244",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "comparison",
+  "structureType": "diffJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bar": {
+     "a": 697,
+     "b": 342,
+     "kind": "diffSaid",
+     "said": 354
+    },
+    "truth": false,
+    "promptText": "A spread of 354 between 697 and 342 — Kai signs off. Should Kai have?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0394",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "multiplicative",
+  "structureType": "equalJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bar": {
+     "k": 3,
+     "u": 290,
+     "w": 873,
+     "kind": "equalSaid"
+    },
+    "truth": false,
+    "promptText": "3 units of 290 claim to total Nia's 873. Do they truly?"
+   }
+  }
+ },
+ {
+  "itemId": "barModels-conc-b0821-0544",
+  "modeId": "barModels",
+  "itemFamily": "conceptual",
+  "subskill": "fractionBar",
+  "structureType": "biggerPiece_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "one fourth",
+   "choices": [
+    "one fourth",
+    "one fifth"
+   ],
+   "display": {
+    "bar": {
+     "kind": "biggerPiece"
+    },
+    "promptText": "Priya contrasts a fourth of 960 with a fifth of 960. Which piece is larger?"
    }
   }
  },
@@ -3562,12 +7752,7 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "Lane A scored 246 points and Lane B scored 264 points. Which symbol compares Lane A to Lane B?",
-    "promptOptions": [
-     "Sam scored 246 points. Alex scored 264 points. Which symbol compares their scores?",
-     "Two kids played a game. One got 246 points. The other got 264 points. Which symbol compares them?",
-     "Maya has 246 trading cards. Her brother has 264 cards. Which symbol compares how many they have?"
-    ]
+    "promptText": "Sam scored 246 points. Alex scored 264 points. Which symbol compares their scores?"
    }
   }
  },
@@ -3588,12 +7773,7 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": ">",
    "display": {
-    "promptText": "A library counted 510 books on one shelf and 499 on another. Which symbol compares 510 to 499?",
-    "promptOptions": [
-     "The top shelf has 510 books. The bottom shelf has 499 books. Which symbol compares them?",
-     "One shelf holds 510 books. Another shelf holds 499 books. Which symbol compares these amounts?",
-     "A library has books on two shelves. One has 510 books. One has 499 books. Which symbol compares them?"
-    ]
+    "promptText": "The top shelf has 510 books. The bottom shelf has 499 books. Which symbol compares them?"
    }
   }
  },
@@ -3614,127 +7794,139 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "=",
    "display": {
-    "promptText": "Two classes each solved 380 puzzles this month. Which symbol compares the totals?",
-    "promptOptions": [
-     "One class solved 380 puzzles. Another class solved 380 puzzles. Which symbol compares them?",
-     "Team 1 solved 380 puzzles. Team 2 solved 380 puzzles. Which symbol compares their totals?",
-     "Two groups solved puzzles. One group solved 380. The other solved 380. Which symbol compares them?"
-    ]
+    "promptText": "One class solved 380 puzzles. Another class solved 380 puzzles. Which symbol compares them?"
    }
   }
  },
  {
-  "itemId": "comparing-app-013",
+  "itemId": "comparing-app-b0821-0357",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   8,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 304,
-   "b": 340,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "A garden has 304 tulips and 340 daisies. Which symbol compares 304 to 340?",
-    "promptOptions": [
-     "Ms. Lee planted 304 red tulips and 340 white daisies. Compare 304 to 340.",
-     "The garden has 304 tulips and 340 daisies. Compare 304 to 340."
-    ]
-   }
-  }
- },
- {
-  "itemId": "comparing-app-benchmarkCompare-4_5-002",
-  "modeId": "comparing",
-  "itemFamily": "application",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
+  "structureType": "storyChooseSymbol",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 6089,
-   "b": 6098,
-   "op": "?",
-   "answer": "<",
+   "a": 700,
+   "b": 700,
+   "op": "vs",
+   "answer": "=",
    "display": {
-    "promptText": "Monday's count was 6089 steps. Tuesday's count was 6098 steps. Which symbol compares them?"
+    "promptText": "Diego scores 700 points and Ben scores 700 points. Choose the symbol that compares 700 and 700."
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-app-b0821-0240",
+  "modeId": "comparing",
+  "itemFamily": "application",
+  "subskill": "benchmarkCompare",
+  "structureType": "storyCloserTo",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 80,
+   "choices": [
+    80,
+    90
+   ],
+   "display": {
+    "compare": {
+     "n": 83,
+     "hi": 90,
+     "lo": 80,
+     "kind": "closerTo"
+    },
+    "promptText": "Ava's jar holds 83 beads. Is the jar nearer 80 or 90 beads?"
    }
   }
  },
  {
-  "itemId": "comparing-app-009",
+  "itemId": "comparing-app-b0821-0050",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
+  "structureType": "storyWhoMoreFewer",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 145,
-   "b": 145,
-   "op": "?",
-   "answer": "=",
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "Rosa",
+   "choices": [
+    "Rosa",
+    "Theo"
+   ],
    "display": {
-    "promptText": "Two food drives each collected 145 cans. Which symbol compares the two totals?",
-    "promptOptions": [
-     "One food drive collected 145 cans. Another collected 145 cans. Which symbol compares them?",
-     "The third grade collected 145 cans. The fourth grade collected 145 cans. Which symbol compares their totals?",
-     "Two schools gathered cans. One school collected 145. The other collected 145. Which symbol compares them?"
-    ]
+    "promptText": "At the fair, Rosa wins 190 blocks and Theo wins 109 blocks. Who wins more blocks?"
    }
   }
  },
  {
-  "itemId": "comparing-app-symbolSelection-4_5-006",
+  "itemId": "comparing-app-b0821-0446",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
+  "structureType": "storyWroteSign",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 1998,
-   "b": 2013,
-   "op": "?",
-   "answer": "<",
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
    "display": {
-    "promptText": "Coach Ruiz sold 1998 tickets on Friday. He sold 2013 tickets on Saturday. Which symbol compares the two nights?"
+    "truth": false,
+    "promptText": "Mina compares and writes down 368 > 386. Did Mina get it right?"
    }
   }
  },
  {
-  "itemId": "comparing-app-benchmarkCompare-4_5-010",
+  "itemId": "comparing-app-b0821-0296",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
+  "structureType": "storyGapToGoal",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 45600,
-   "b": 45060,
-   "op": "?",
-   "answer": ">",
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 50,
    "display": {
-    "promptText": "The video got 45600 views. The photo got 45060 views. Which symbol compares them?"
-   }
+    "compare": {
+     "have": 850,
+     "kind": "gap",
+     "target": 900
+    },
+    "promptText": "A full box holds 900 marbles. Nia packs 850 marbles. How many more marbles fit in the box?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
@@ -3754,10 +7946,7 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "Mia has 5 candies. Tom has 8 candies. Which symbol compares 5 to 8?",
-    "promptOptions": [
-     "Mia has 5 candies. Tom has 8 candies. Compare 5 to 8."
-    ]
+    "promptText": "Mia has 5 candies. Tom has 8 candies. Compare 5 to 8."
    }
   }
  },
@@ -3778,10 +7967,7 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "A jar holds 4 marbles. The benchmark is 5. Compare 4 to 5.",
-    "promptOptions": [
-     "A jar has 4 marbles. A full jar holds 5 marbles. Compare 4 to 5."
-    ]
+    "promptText": "A jar has 4 marbles. A full jar holds 5 marbles. Compare 4 to 5."
    }
   }
  },
@@ -3802,116 +7988,145 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": ">",
    "display": {
-    "promptText": "Eli has 9 apples and Mia has 4. Compare 9 to 4.",
-    "promptOptions": [
-     "Eli has 9 apples. Mia has 4 apples. Compare 9 to 4."
-    ]
+    "promptText": "Eli has 9 apples. Mia has 4 apples. Compare 9 to 4."
    }
   }
  },
  {
-  "itemId": "comparing-app-symbolSelection-K_1-004",
+  "itemId": "comparing-app-b0821-0361",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
+  "structureType": "storyMoreClaimJudge",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 2,
-   "b": 7,
-   "op": "?",
-   "answer": "<",
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
    "display": {
-    "promptText": "Mateo found 2 shells. Ruby found 7 shells. Compare 2 to 7."
+    "truth": false,
+    "promptText": "Ben claims a pile of 3 shells beats a pile of 8 shells. Is that right?"
    }
   }
  },
  {
-  "itemId": "comparing-app-benchmarkCompare-K_1-004",
+  "itemId": "comparing-app-b0821-0208",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
+  "structureType": "storyCloserTo",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 12,
-   "b": 10,
-   "op": "?",
-   "answer": ">",
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 20,
+   "choices": [
+    10,
+    20
+   ],
    "display": {
-    "promptText": "Priya strung 12 beads. Her friend strung 10 beads. Compare 12 to 10."
+    "compare": {
+     "n": 18,
+     "hi": 20,
+     "lo": 10,
+     "kind": "closerTo"
+    },
+    "promptText": "Finn counts 18 stamps. Is that closer to 10 stamps or to 20 stamps?"
    }
   }
  },
  {
-  "itemId": "comparing-app-distanceCompare-K_1-004",
+  "itemId": "comparing-app-b0821-0123",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
+  "structureType": "storyOneMoreLess",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 15,
-   "b": 14,
-   "op": "?",
-   "answer": ">",
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 11,
    "display": {
-    "promptText": "Theo has 15 marbles. Hana has 14 marbles. Compare 15 to 14."
-   }
+    "compare": {
+     "n": 12,
+     "kind": "oneMoreLess",
+     "delta": -1
+    },
+    "promptText": "Ben counts 12 shells. Kai's pile has one missing. How many shells are in Kai's pile?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "comparing-app-symbolSelection-K_1-010",
+  "itemId": "comparing-app-b0821-0401",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
+  "structureType": "storyWroteSign",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 11,
-   "b": 3,
-   "op": "?",
-   "answer": ">",
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
    "display": {
-    "promptText": "Rosa washed 11 grapes. Milo washed 3 grapes. Compare 11 to 3."
+    "truth": true,
+    "promptText": "In the game, June claims 11 < 15. Is June right?"
    }
   }
  },
  {
-  "itemId": "comparing-app-benchmarkCompare-K_1-010",
+  "itemId": "comparing-app-b0821-0265",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
+  "structureType": "storyGapToGoal",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 8,
-   "b": 10,
-   "op": "?",
-   "answer": "<",
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 9,
    "display": {
-    "promptText": "Leo counted 8 raisins in his snack cup. A full cup holds 10 raisins. Compare 8 to 10."
-   }
+    "compare": {
+     "have": 11,
+     "kind": "gap",
+     "target": 20
+    },
+    "promptText": "A full box holds 20 coins. June packs 11 coins. How many more coins fit in the box?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
@@ -3931,11 +8146,7 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "A class has 23 books. Another class has 45 books. Compare 23 and 45.",
-    "promptOptions": [
-     "Ms. Lee's class has 23 books. Mr. Park's class has 45 books. Compare 23 to 45.",
-     "One class collected 23 books. Another class collected 45 books. Compare 23 to 45."
-    ]
+    "promptText": "Ms. Lee's class has 23 books. Mr. Park's class has 45 books. Compare 23 to 45."
    }
   }
  },
@@ -3956,11 +8167,7 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "A factory made 47 toys; the goal was 50. Compare 47 and 50.",
-    "promptOptions": [
-     "Emma has 47 cookies. Jake has 50 cookies. Who has more cookies?",
-     "One bookcase has 47 books. Another has 50 books. Which has more books?"
-    ]
+    "promptText": "Emma has 47 cookies. Jake has 50 cookies. Who has more cookies?"
    }
   }
  },
@@ -3981,620 +8188,786 @@ export const SEED_ITEMS = [
    "op": "?",
    "answer": "<",
    "display": {
-    "promptText": "Anna ran 18 laps and Ben ran 25 laps. Compare 18 and 25.",
-    "promptOptions": [
-     "Anna ran 18 laps. Ben ran 25 laps. Who ran more laps?",
-     "One runner jumped 18 times. Another jumped 25 times. Who jumped more?"
-    ]
+    "promptText": "Anna ran 18 laps. Ben ran 25 laps. Who ran more laps?"
    }
   }
  },
  {
-  "itemId": "comparing-app-symbolSelection-2_3-004",
+  "itemId": "comparing-app-b0821-0378",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
+  "structureType": "storyMoreClaimJudge",
   "levelRange": [
    4,
    6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 491,
-   "b": 419,
-   "op": "?",
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": false,
+    "promptText": "Finn says 49 stamps are more than 94 stamps. Is Finn right?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-app-b0821-0225",
+  "modeId": "comparing",
+  "itemFamily": "application",
+  "subskill": "benchmarkCompare",
+  "structureType": "storyCloserTo",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 50,
+   "choices": [
+    40,
+    50
+   ],
+   "display": {
+    "compare": {
+     "n": 48,
+     "hi": 50,
+     "lo": 40,
+     "kind": "closerTo"
+    },
+    "promptText": "Ben's jar holds 48 shells. Is the jar nearer 40 or 50 shells?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-app-b0821-0055",
+  "modeId": "comparing",
+  "itemFamily": "application",
+  "subskill": "distanceCompare",
+  "structureType": "storyDifference",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 16,
+   "display": {
+    "compare": {
+     "kind": "difference",
+     "bigger": 67,
+     "smaller": 51
+    },
+    "promptText": "Finn saves 67 stamps; Rosa saves 51 stamps. How many fewer stamps does Rosa have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "comparing-app-b0821-0418",
+  "modeId": "comparing",
+  "itemFamily": "application",
+  "subskill": "symbolSelection",
+  "structureType": "storyWroteSign",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": false,
+    "promptText": "June compares and writes down 37 > 73. Did June get it right?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-app-b0821-0282",
+  "modeId": "comparing",
+  "itemFamily": "application",
+  "subskill": "benchmarkCompare",
+  "structureType": "storyGapToGoal",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 18,
+   "display": {
+    "compare": {
+     "have": 52,
+     "kind": "gap",
+     "target": 70
+    },
+    "promptText": "Lily wants 70 crayons in the album. So far there are 52 crayons. How many more crayons does Lily need?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "comparing-conc-b0821-0001",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "symbolSelection",
+  "structureType": "rowsChooseSymbol",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
    "answer": ">",
    "display": {
-    "promptText": "Amina made 491 paper cranes. Ben made 419 paper cranes. Compare 491 to 419."
-   }
+    "compare": {
+     "a": 5,
+     "b": 3,
+     "kind": "counts"
+    },
+    "promptText": "Row A: 🍎🍎🍎🍎🍎 Row B: 🍎🍎🍎 Choose the symbol that compares Row A to Row B counting apples."
+   },
+   "answerType": "symbolSelect"
   }
  },
  {
-  "itemId": "comparing-app-benchmarkCompare-2_3-004",
-  "modeId": "comparing",
-  "itemFamily": "application",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 96,
-   "b": 100,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Rosa brought 96 cans. Dev brought 100 cans. Who brought more cans?"
-   }
-  }
- },
- {
-  "itemId": "comparing-app-distanceCompare-2_3-004",
-  "modeId": "comparing",
-  "itemFamily": "application",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 312,
-   "b": 321,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Aisha rode 312 meters. Bo rode 321 meters. Who rode farther?"
-   }
-  }
- },
- {
-  "itemId": "comparing-app-symbolSelection-2_3-010",
-  "modeId": "comparing",
-  "itemFamily": "application",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 803,
-   "b": 830,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Jonah saved 803 pennies. Ruth saved 830 pennies. Compare 803 to 830."
-   }
-  }
- },
- {
-  "itemId": "comparing-app-benchmarkCompare-2_3-010",
-  "modeId": "comparing",
-  "itemFamily": "application",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 250,
-   "b": 250,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Ella brought 250 water bottles. Noah brought 250 water bottles. Who brought more water bottles?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-benchmarkCompare-2_3-001",
+  "itemId": "comparing-conc-b0821-0162",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
+  "structureType": "closerToTen",
   "levelRange": [
-   4,
-   6
+   1,
+   3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 83,
-   "b": 100,
-   "op": "?",
-   "answer": "<",
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 10,
+   "choices": [
+    10,
+    20
+   ],
    "display": {
-    "promptText": "Use 100 as a benchmark: is 83 less than 100?"
+    "compare": {
+     "n": 11,
+     "hi": 20,
+     "lo": 10,
+     "kind": "closerTo"
+    },
+    "promptText": "Sam stands at 11 on the number path. Is 11 closer to 10 or to 20?"
    }
   }
  },
  {
-  "itemId": "comparing-conc-distanceCompare-2_3-001",
+  "itemId": "comparing-conc-b0821-0340",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
+  "structureType": "rowsMoreFewer",
   "levelRange": [
-   4,
-   6
+   1,
+   3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 145,
-   "b": 178,
-   "op": "?",
-   "answer": "<",
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "Row A",
+   "choices": [
+    "Row A",
+    "Row B"
+   ],
    "display": {
-    "promptText": "A number line starts at 0. The mark for 145 lands closer to 0 than the mark for 178. Compare 145 and 178."
+    "promptText": "Row A: 🍎🍎🍎🍎🍎 Row B: 🍎🍎🍎 Which row has more apples?"
    }
   }
  },
  {
-  "itemId": "comparing-conc-symbolSelection-2_3-001",
+  "itemId": "comparing-conc-b0821-0024",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
+  "structureType": "rowsChooseSymbol",
   "levelRange": [
-   4,
-   6
+   1,
+   3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 407,
-   "b": 470,
-   "op": "?",
+   "a": null,
+   "b": null,
+   "op": "vs",
    "answer": "<",
    "display": {
-    "promptText": "Compare 407 and 470. Which symbol belongs between them?"
+    "compare": {
+     "a": 3,
+     "b": 8,
+     "kind": "counts"
+    },
+    "promptText": "Row A: 🍓🍓🍓 Row B: 🍓🍓🍓🍓🍓🍓🍓🍓 What sign fits between the two counts of berries?"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-conc-b0821-0227",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "benchmarkCompare",
+  "structureType": "fitsBetween",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 7,
+   "choices": [
+    13,
+    11,
+    7,
+    3
+   ],
+   "display": {
+    "promptText": "Sam hunts for a number bigger than 4 but smaller than 10. Pick it."
    }
   }
  },
  {
-  "itemId": "comparing-conc-benchmarkCompare-2_3-004",
+  "itemId": "comparing-conc-b0821-0363",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "distanceCompare",
+  "structureType": "rowsMoreFewer",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "Top row",
+   "choices": [
+    "Top row",
+    "Bottom row"
+   ],
+   "display": {
+    "promptText": "Top: 🍓🍓🍓 Bottom: 🍓🍓🍓🍓🍓🍓🍓🍓 Which row shows fewer berries?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-b0821-0075",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "symbolSelection",
+  "structureType": "bothTrueWithin10",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": [
+    "6 > 4",
+    "1 < 9"
+   ],
+   "display": {
+    "options": [
+     "10 < 5",
+     "3 > 7",
+     "1 < 9",
+     "6 > 4"
+    ],
+    "promptText": "Check Mina's work: pick the two comparisons that are correct.",
+    "requiredCount": 2
+   },
+   "answerType": "multiSelect"
+  }
+ },
+ {
+  "itemId": "comparing-conc-b0821-0331",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
+  "structureType": "nearerToFull",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 6,
+   "choices": [
+    6,
+    2
+   ],
+   "display": {
+    "promptText": "Frame one holds 6 counters, frame two holds 2. Sam asks: which is nearer ten — 6 or 2?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-b0821-0027",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "symbolSelection",
+  "structureType": "rowsChooseSymbolTeen",
   "levelRange": [
    4,
    6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 340,
-   "b": 250,
-   "op": "?",
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "<",
+   "display": {
+    "compare": {
+     "a": 12,
+     "b": 14,
+     "kind": "counts"
+    },
+    "promptText": "Row A: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐ Row B: ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ Compare the two rows of stars and pick the sign."
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-conc-b0821-0170",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "benchmarkCompare",
+  "structureType": "closerToDecade",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 20,
+   "choices": [
+    20,
+    30
+   ],
+   "display": {
+    "compare": {
+     "n": 23,
+     "hi": 30,
+     "lo": 20,
+     "kind": "closerTo"
+    },
+    "promptText": "Help Sam: which is the shorter hop from 23 — down to 20 or up to 30?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-b0821-0374",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "distanceCompare",
+  "structureType": "rowsMoreFewerTeen",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "Bottom row",
+   "choices": [
+    "Top row",
+    "Bottom row"
+   ],
+   "display": {
+    "promptText": "Top: 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎 | 🍎🍎 Bottom: 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎 | 🍎🍎🍎🍎 Which row shows more apples?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-b0821-0066",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "symbolSelection",
+  "structureType": "mouthReasoningTeen",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 68,
+   "b": 86,
+   "op": "vs",
+   "answer": "<",
+   "display": {
+    "promptText": "Help Finn pick the sign for 68 and 86. Remember which way the mouth opens!"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-conc-b0821-0231",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "benchmarkCompare",
+  "structureType": "fitsBetweenTwoDigit",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 25,
+   "choices": [
+    25,
+    31,
+    33,
+    19
+   ],
+   "display": {
+    "promptText": "Ida needs a number greater than 20 and less than 30. Which one works?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-b0821-0397",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "distanceCompare",
+  "structureType": "closerToTarget",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 85,
+   "choices": [
+    85,
+    97
+   ],
+   "display": {
+    "promptText": "Ida compares 85 and 97. Which one sits nearer 90?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-b0821-0120",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "symbolSelection",
+  "structureType": "symbolFlipFix",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 67,
+   "b": 41,
+   "op": "vs",
    "answer": ">",
    "display": {
-    "promptText": "Rosa read 340 pages this summer. Use 250 as a benchmark: how does 340 compare to 250?"
+    "promptText": "To compare 67 and 41, Luca chose <. Check Luca's work — which symbol makes it true?"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-conc-b0821-0301",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "benchmarkCompare",
+  "structureType": "distanceFromTen",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 2,
+   "display": {
+    "compare": {
+     "kind": "difference",
+     "bigger": 42,
+     "smaller": 40
+    },
+    "promptText": "Theo asks: what is the distance between 42 and 40?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "comparing-conc-b0821-0085",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "symbolSelection",
+  "structureType": "bothTrueBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": [
+    "98 < 102",
+    "310 > 301"
+   ],
+   "display": {
+    "options": [
+     "98 < 102",
+     "467 < 447",
+     "205 > 250",
+     "310 > 301"
+    ],
+    "promptText": "Ida wrote four comparisons; two are true. Choose BOTH true ones.",
+    "requiredCount": 2
+   },
+   "answerType": "multiSelect"
+  }
+ },
+ {
+  "itemId": "comparing-conc-b0821-0190",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "benchmarkCompare",
+  "structureType": "closerToDecadeBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 100,
+   "choices": [
+    110,
+    100
+   ],
+   "display": {
+    "compare": {
+     "n": 104,
+     "hi": 110,
+     "lo": 100,
+     "kind": "closerTo"
+    },
+    "promptText": "Sam wonders: does 104 sit nearer 100 or 110?"
    }
   }
  },
  {
-  "itemId": "comparing-conc-distanceCompare-2_3-007",
+  "itemId": "comparing-conc-b0821-0408",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
+  "structureType": "closerToTargetBig",
   "levelRange": [
-   4,
-   6
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 187,
+   "choices": [
+    220,
+    187
+   ],
+   "display": {
+    "promptText": "Kai aims for 200. Which is closer to 200: 187 or 220?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-b0821-0132",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "symbolSelection",
+  "structureType": "symbolFlipFixBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 289,
+   "b": 298,
+   "op": "vs",
+   "answer": "<",
+   "display": {
+    "promptText": "To compare 289 and 298, Priya chose >. Check Priya's work — which symbol makes it true?"
+   },
+   "answerType": "symbolSelect"
+  }
+ },
+ {
+  "itemId": "comparing-conc-b0821-0251",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "benchmarkCompare",
+  "structureType": "fitsBetweenBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 760,
+   "choices": [
+    771,
+    773,
+    760,
+    749
+   ],
+   "display": {
+    "promptText": "Luca hunts for a number bigger than 750 but smaller than 770. Pick it."
+   }
+  }
+ },
+ {
+  "itemId": "comparing-conc-b0821-0441",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "distanceCompare",
+  "structureType": "lineMidpointBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 45,
+   "display": {
+    "max": 70,
+    "min": 20,
+    "step": 5,
+    "compare": {
+     "hi": 70,
+     "lo": 20,
+     "kind": "midpoint"
+    },
+    "lineMode": "locate",
+    "labelEvery": 5,
+    "promptText": "Show Ben the middle of 20 and 70 on the line."
+   },
+   "answerType": "numberLine"
+  }
+ },
+ {
+  "itemId": "comparing-conc-b0821-0152",
+  "modeId": "comparing",
+  "itemFamily": "conceptual",
+  "subskill": "symbolSelection",
+  "structureType": "digitCountTrap",
+  "levelRange": [
+   7,
+   10
   ],
   "reviewStatus": "approved",
   "question": {
    "a": 99,
-   "b": 101,
-   "op": "?",
+   "b": 100,
+   "op": "vs",
    "answer": "<",
    "display": {
-    "promptText": "A bug crawls from 0 along a number line and stops at 99. It has not reached 101 yet. Compare 99 and 101."
-   }
+    "promptText": "Sam thinks a number that starts with 9 always wins. Choose the true symbol for 99 and 100."
+   },
+   "answerType": "symbolSelect"
   }
  },
  {
-  "itemId": "comparing-conc-symbolSelection-2_3-007",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 703,
-   "b": 730,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Leo saved 703 pennies. Nora saved 730 pennies. Which number is less?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-benchmarkCompare-2_3-014",
+  "itemId": "comparing-conc-b0821-0294",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 520,
-   "b": 500,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Maya's class collected 520 cans. Use 500 as a benchmark: how does 520 compare to 500?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-distanceCompare-2_3-013",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 825,
-   "b": 852,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Nina hops from 0 to 825 on a number line. Her friend hops from 0 to 852 and lands a little farther out. Compare 825 and 852."
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-benchmarkCompare-4_5-007",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
+  "structureType": "moreThanBenchmarkBig",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 1.25,
-   "b": 1,
-   "op": "?",
-   "answer": ">",
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
    "display": {
-    "promptText": "One whole is the benchmark here. How does 1.25 compare to 1?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-distanceCompare-45-001",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 156,
-   "b": 412,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "On a number line, 156 is to the left of 412. Compare 156 and 412."
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-symbolSelection-4_5-001",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4208,
-   "b": 4280,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Compare 4208 and 4280. Which number is smaller?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-benchmarkCompare-4_5-009",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 750,
-   "b": 750,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "A library sets 750 books as its benchmark for the month. How does 750 compare to 750?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-distanceCompare-45-002",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 789,
-   "b": 321,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "On a number line, 789 is farther right than 321. Compare 789 and 321."
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-symbolSelection-4_5-004",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 12483,
-   "b": 12438,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Which number is worth more, 12483 or 12438?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-benchmarkCompare-45-001",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 487,
-   "b": 500,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Use 500 as a benchmark: is 487 less than 500?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-distanceCompare-45-003",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 200,
-   "b": 200,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "200 and 200 sit at the same point on a number line. Compare them."
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-benchmarkCompare-K_1-001",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 3,
-   "b": 5,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Mia found 3 shells. Use 5 as the benchmark: how does 3 compare to 5?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-distanceCompare-K_1-001",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": 10,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Hop from 0 to 4. Then hop from 0 to 10. Which number takes fewer hops? Compare 4 and 10."
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-symbolSelection-K_1-001",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 3,
-   "b": 9,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Which symbol belongs between 3 and 9?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-benchmarkCompare-K_1-007",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": 10,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Think of 10 as your benchmark. Is 4 less than 10?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-distanceCompare-K_1-007",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 10,
-   "b": 10,
-   "op": "?",
-   "answer": "=",
-   "display": {
-    "promptText": "Two bees flew 10 hops from 0 and landed on the very same spot. Compare 10 and 10."
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-symbolSelection-K_1-005",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "symbolSelection",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 2,
-   "b": 11,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Pick the symbol that fits between 2 and 11."
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-benchmarkCompare-K_1-013",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 17,
-   "b": 10,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Using 10 as a benchmark, how does 17 compare to 10?"
-   }
-  }
- },
- {
-  "itemId": "comparing-conc-distanceCompare-K_1-013",
-  "modeId": "comparing",
-  "itemFamily": "conceptual",
-  "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 17,
-   "b": 9,
-   "op": "?",
-   "answer": ">",
-   "display": {
-    "promptText": "Which number is a longer trip from 0 on the number line: 17 or 9?"
+    "truth": false,
+    "promptText": "Nia needs more than 400. Is 396 more than 400?"
    }
   }
  },
@@ -5182,53 +9555,125 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-app-018",
+  "itemId": "counting-app-b0821-0154",
   "modeId": "counting",
   "itemFamily": "application",
-  "subskill": "countOn",
-  "structureType": "countObjects",
+  "subskill": "cardinality",
+  "structureType": "storyTwoSpots",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 7,
+   "a": null,
    "b": null,
    "op": "count",
    "answer": 7,
    "display": {
-    "promptText": "Lin had 5 grapes; her brother gave her 2 more. How many grapes does Lin have?"
-   }
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      4,
+      3
+     ]
+    },
+    "promptText": "Mina keeps 4 flowers on a shelf and 3 flowers in a drawer. Counting both spots, how many flowers does Mina have?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-app-019",
+  "itemId": "counting-app-b0821-0307",
   "modeId": "counting",
   "itemFamily": "application",
-  "subskill": "countOn",
-  "structureType": "countObjects",
+  "subskill": "subitizing",
+  "structureType": "storyQuickLook",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 8,
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      5,
+      2
+     ]
+    },
+    "promptText": "Mina peeks for one second: a five-stack of flowers and 2 more flowers — 5 in the stack. How many flowers did Mina see?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-app-b0821-0056",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "countOn",
+  "structureType": "storyTargetGap",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "counting": {
+     "have": 5,
+     "kind": "gap",
+     "target": 9
+    },
+    "promptText": "A tray fits 9 balloons. Rosa sets down 5 balloons. How many more balloons fit on the tray?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-app-b0821-0205",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "cardinality",
+  "structureType": "storyCountAllKinds",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
    "b": null,
    "op": "count",
    "answer": 8,
    "display": {
-    "promptText": "Sam saw 6 cars, then 2 more drove up. How many cars are there now?"
-   }
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      5,
+      3
+     ]
+    },
+    "promptText": "Mina tips out a tub: 5 flowers and 3 berries. Mina counts only the flowers. Then Mina counts the berries. How many things did Mina count in all?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-app-eng-K_1-001",
+  "itemId": "counting-app-b0821-0324",
   "modeId": "counting",
   "itemFamily": "application",
-  "subskill": "countOn",
-  "structureType": "countToTargetGap",
+  "subskill": "subitizing",
+  "structureType": "storyDicePair",
   "levelRange": [
    1,
    3
@@ -5240,16 +9685,24 @@ export const SEED_ITEMS = [
    "op": "count",
    "answer": 5,
    "display": {
-    "promptText": "There are 5 seats on the bus and 10 children. How many children have no seat?"
-   }
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      3,
+      2
+     ]
+    },
+    "promptText": "Mina rolls two dice. One die shows 3 dots, the other shows 2 dots. Mina knows both at a glance — how many dots in all?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-app-eng-K_1-002",
+  "itemId": "counting-app-b0821-0114",
   "modeId": "counting",
   "itemFamily": "application",
   "subskill": "countOn",
-  "structureType": "countToTargetGap",
+  "structureType": "storyHiddenCount",
   "levelRange": [
    1,
    3
@@ -5259,18 +9712,24 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 1,
+   "answer": 5,
    "display": {
-    "promptText": "There are 3 seats on the bus and 4 children. How many children have no seat?"
-   }
+    "counting": {
+     "kind": "hidden",
+     "seen": 14,
+     "total": 19
+    },
+    "promptText": "Finn brought 19 turtles to school and hands out 14 turtles. How many turtles does Finn still hold?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-app-eng-K_1-003",
+  "itemId": "counting-app-b0821-0222",
   "modeId": "counting",
   "itemFamily": "application",
-  "subskill": "countOn",
-  "structureType": "countToTargetGap",
+  "subskill": "cardinality",
+  "structureType": "storyExtraneous",
   "levelRange": [
    1,
    3
@@ -5280,10 +9739,18 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 2,
+   "answer": 7,
    "display": {
-    "promptText": "There are 3 seats on the bus and 5 children. How many children have no seat?"
-   }
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      4,
+      3
+     ]
+    },
+    "promptText": "Mina collects 4 big flowers, 2 berries, and 3 small flowers. How many flowers does Mina collect?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
@@ -5308,116 +9775,264 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-app-027",
+  "itemId": "counting-app-b0821-0171",
   "modeId": "counting",
   "itemFamily": "application",
-  "subskill": "countOn",
-  "structureType": "countObjects",
+  "subskill": "cardinality",
+  "structureType": "storyTwoSpots",
   "levelRange": [
    4,
    6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 35,
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 13,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      8,
+      5
+     ]
+    },
+    "promptText": "Theo counts 8 balls outside, then 5 balls inside. How many balls did Theo count altogether?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-app-b0821-0358",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "subitizing",
+  "structureType": "storyDotCards",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      7,
+      5
+     ]
+    },
+    "promptText": "Two cards flip over for Theo: a card of 7 dots and a card of 5 dots. Before counting by ones, Theo knows — how many dots is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-app-b0821-0073",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "countOn",
+  "structureType": "storyTargetGap",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "counting": {
+     "have": 16,
+     "kind": "gap",
+     "target": 24
+    },
+    "promptText": "Diego wants a full line of 24 apples and has placed 16 apples. How many apples are still missing?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-app-b0821-0239",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "cardinality",
+  "structureType": "storyExtraneous",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 11,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      7,
+      4
+     ]
+    },
+    "promptText": "Mina collects 7 big flowers, 5 berries, and 4 small flowers. How many flowers does Mina collect?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-app-b0821-0375",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "subitizing",
+  "structureType": "storyDotCards",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      7,
+      5
+     ]
+    },
+    "promptText": "Amara snaps a look at two dot cards: one holds 7 dots, the other 5 dots. How many dots did Amara see in all?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-app-b0821-0131",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "countOn",
+  "structureType": "storyHiddenCount",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 11,
+   "display": {
+    "counting": {
+     "kind": "hidden",
+     "seen": 18,
+     "total": 29
+    },
+    "promptText": "Priya owns 29 cars. Only 18 cars are out on the rug; the rest sit in a box. How many cars are in the box?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-app-b0821-0273",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "cardinality",
+  "structureType": "storyBagsOfTen",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 23,
+   "display": {
+    "counting": {
+     "kind": "groups",
+     "ones": 3,
+     "tens": 2
+    },
+    "promptText": "Mina fills 2 bags with ten flowers each and has 3 loose flowers. How many flowers does Mina have in all?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-app-b0821-0035",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "countOn",
+  "structureType": "storyCountOn",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 73,
+   "display": {
+    "counting": {
+     "kind": "countOn",
+     "more": 5,
+     "start": 68
+    },
+    "promptText": "Theo already has 68 balls in a row. Theo adds 5 more balls to the row. How many balls are in the row?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-app-b0821-0188",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "cardinality",
+  "structureType": "storyTwoSpots",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
    "b": null,
    "op": "count",
    "answer": 35,
    "display": {
-    "promptText": "A bin had 30 blocks; Pat added 5 more. How many blocks are in the bin now?"
-   }
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      22,
+      13
+     ]
+    },
+    "promptText": "Mina keeps 22 flowers on a shelf and 13 flowers in a drawer. Counting both spots, how many flowers does Mina have?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-app-028",
+  "itemId": "counting-app-b0821-0409",
   "modeId": "counting",
   "itemFamily": "application",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 40,
-   "b": null,
-   "op": "count",
-   "answer": 40,
-   "display": {
-    "promptText": "Min counted 35 marbles, then 5 more rolled in. How many marbles in all?"
-   }
-  }
- },
- {
-  "itemId": "counting-app-eng-2_3-001",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "countOn",
-  "structureType": "countToTargetGap",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 2,
-   "display": {
-    "promptText": "There are 23 seats on the bus and 25 children. How many children have no seat?"
-   }
-  }
- },
- {
-  "itemId": "counting-app-eng-2_3-002",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "countOn",
-  "structureType": "countToTargetGap",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 1,
-   "display": {
-    "promptText": "There are 14 seats on the bus and 15 children. How many children have no seat?"
-   }
-  }
- },
- {
-  "itemId": "counting-app-eng-2_3-003",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "countOn",
-  "structureType": "countToTargetGap",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 5,
-   "display": {
-    "promptText": "There are 15 seats on the bus and 20 children. How many children have no seat?"
-   }
-  }
- },
- {
-  "itemId": "counting-app-eng-4_5-001",
-  "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "cardinality",
-  "structureType": "countGroupsExtraneous",
+  "subskill": "subitizing",
+  "structureType": "storyQuickRows",
   "levelRange": [
    7,
    10
@@ -5427,18 +10042,24 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 9,
+   "answer": 24,
    "display": {
-    "promptText": "Sam has 4 red pens, 2 blue erasers, and 5 red pencils. How many red things does Sam have?"
-   }
+    "counting": {
+     "kind": "groups",
+     "ones": 4,
+     "tens": 2
+    },
+    "promptText": "In one look Theo spots 2 ten-strips of balls plus 4 single balls. How many balls is that?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-app-eng-4_5-006",
+  "itemId": "counting-app-b0821-0086",
   "modeId": "counting",
   "itemFamily": "application",
   "subskill": "countOn",
-  "structureType": "countToTargetGap",
+  "structureType": "storyTargetGap",
   "levelRange": [
    7,
    10
@@ -5448,18 +10069,80 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 4,
+   "answer": 8,
    "display": {
-    "promptText": "There are 8 seats on the bus and 12 children. How many children have no seat?"
-   }
+    "counting": {
+     "have": 42,
+     "kind": "gap",
+     "target": 50
+    },
+    "promptText": "Ida wants a full line of 50 turtles and has placed 42 turtles. How many turtles are still missing?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-app-eng-4_5-002",
+  "itemId": "counting-app-b0821-0257",
   "modeId": "counting",
   "itemFamily": "application",
   "subskill": "cardinality",
-  "structureType": "countGroupsExtraneous",
+  "structureType": "storyExtraneous",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 35,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      23,
+      12
+     ]
+    },
+    "promptText": "Ida collects 23 big turtles, 6 balls, and 12 small turtles. How many turtles does Ida collect?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-app-b0821-0426",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "subitizing",
+  "structureType": "storyQuickRows",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 24,
+   "display": {
+    "counting": {
+     "kind": "groups",
+     "ones": 4,
+     "tens": 2
+    },
+    "promptText": "Amara glances at 2 full rows of ten flowers and 4 extra flowers. Without counting by ones, how many flowers does Amara see?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-app-b0821-0137",
+  "modeId": "counting",
+  "itemFamily": "application",
+  "subskill": "countOn",
+  "structureType": "storyHiddenCount",
   "levelRange": [
    7,
    10
@@ -5471,16 +10154,22 @@ export const SEED_ITEMS = [
    "op": "count",
    "answer": 13,
    "display": {
-    "promptText": "Theo has 8 red pens, 3 blue erasers, and 5 red pencils. How many red things does Theo have?"
-   }
+    "counting": {
+     "kind": "hidden",
+     "seen": 32,
+     "total": 45
+    },
+    "promptText": "Ida brought 45 turtles to school and hands out 32 turtles. How many turtles does Ida still hold?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-app-eng-4_5-003",
+  "itemId": "counting-app-b0821-0292",
   "modeId": "counting",
   "itemFamily": "application",
   "subskill": "cardinality",
-  "structureType": "countGroupsExtraneous",
+  "structureType": "storyBagsOfTen",
   "levelRange": [
    7,
    10
@@ -5490,556 +10179,653 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 10,
+   "answer": 86,
    "display": {
-    "promptText": "Theo has 5 red pens, 6 blue erasers, and 5 red pencils. How many red things does Theo have?"
-   }
+    "counting": {
+     "kind": "groups",
+     "ones": 6,
+     "tens": 8
+    },
+    "promptText": "Zoe counts by tens over 8 full boxes of cars, then counts on 6 single cars. What number does Zoe reach?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-app-eng-4_5-004",
+  "itemId": "counting-conc-b0821-0001",
   "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "cardinality",
-  "structureType": "countGroupsExtraneous",
+  "itemFamily": "conceptual",
+  "subskill": "subitizing",
+  "structureType": "sameNumberJudge",
   "levelRange": [
-   7,
-   10
+   1,
+   3
   ],
   "reviewStatus": "approved",
   "question": {
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 8,
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
    "display": {
-    "promptText": "Theo has 5 red pens, 8 blue erasers, and 3 red pencils. How many red things does Theo have?"
+    "truth": true,
+    "promptText": "Group A: 🟠🟠🟠🟠 Group B: 🟠🟠🟠🟠 Do both groups have the same number of dots?"
    }
   }
  },
  {
-  "itemId": "counting-app-eng-4_5-005",
+  "itemId": "counting-conc-b0821-0161",
   "modeId": "counting",
-  "itemFamily": "application",
-  "subskill": "cardinality",
-  "structureType": "countGroupsExtraneous",
+  "itemFamily": "conceptual",
+  "subskill": "countOn",
+  "structureType": "missingInRun",
   "levelRange": [
-   7,
-   10
+   1,
+   3
   ],
   "reviewStatus": "approved",
   "question": {
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 16,
+   "answer": 2,
    "display": {
-    "promptText": "Ava has 8 red pens, 7 blue erasers, and 8 red pencils. How many red things does Ava have?"
-   }
+    "counting": {
+     "kind": "between",
+     "after": 3,
+     "before": 1
+    },
+    "promptText": "Luca counts: 1, ___, 3, 4, 5. Which number did Luca skip?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-conc-cardinality-23-001",
+  "itemId": "counting-conc-b0821-0352",
   "modeId": "counting",
   "itemFamily": "conceptual",
   "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 28,
-   "b": null,
-   "op": "count",
-   "answer": 28,
-   "display": {
-    "promptText": "After counting all 28 items in a set, what is the cardinality?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-countOn-23-001",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 30,
-   "b": null,
-   "op": "count",
-   "answer": 30,
-   "display": {
-    "promptText": "Use count-on from 25 by 5s. After one step, what is the count?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-subitizing-23-001",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 18,
-   "b": null,
-   "op": "count",
-   "answer": 18,
-   "display": {
-    "promptText": "A medium set of 18 dots. What is the count?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-cardinality-23-002",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 32,
-   "b": null,
-   "op": "count",
-   "answer": 32,
-   "display": {
-    "promptText": "After counting all 32 items in a set, what is the cardinality?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-countOn-23-002",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 35,
-   "b": null,
-   "op": "count",
-   "answer": 35,
-   "display": {
-    "promptText": "Use count-on from 30 by 5s. After one step, what is the count?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-subitizing-23-002",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 22,
-   "b": null,
-   "op": "count",
-   "answer": 22,
-   "display": {
-    "promptText": "A medium set of 22 dots. What is the count?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-cardinality-23-003",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 36,
-   "b": null,
-   "op": "count",
-   "answer": 36,
-   "display": {
-    "promptText": "After counting all 36 items in a set, what is the cardinality?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-countOn-23-003",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 40,
-   "b": null,
-   "op": "count",
-   "answer": 40,
-   "display": {
-    "promptText": "Use count-on from 35 by 5s. After one step, what is the count?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-cardinality-45-001",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 50,
-   "b": null,
-   "op": "count",
-   "answer": 50,
-   "display": {
-    "promptText": "After counting all 50 items in a set, what is the cardinality?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-countOn-45-001",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 60,
-   "b": null,
-   "op": "count",
-   "answer": 60,
-   "display": {
-    "promptText": "Use count-on from 50 by 10s. After one step, what is the count?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-subitizing-45-001",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 50,
-   "b": null,
-   "op": "count",
-   "answer": 50,
-   "display": {
-    "promptText": "A large set of 50 items. The count is?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-cardinality-45-002",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 75,
-   "b": null,
-   "op": "count",
-   "answer": 75,
-   "display": {
-    "promptText": "After counting all 75 items in a set, what is the cardinality?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-countOn-45-002",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 80,
-   "b": null,
-   "op": "count",
-   "answer": 80,
-   "display": {
-    "promptText": "Use count-on from 75 by 5s. After one step, what is the count?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-subitizing-45-002",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "subitizing",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 75,
-   "b": null,
-   "op": "count",
-   "answer": 75,
-   "display": {
-    "promptText": "A large set of 75 items. The count is?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-cardinality-45-003",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 100,
-   "b": null,
-   "op": "count",
-   "answer": 100,
-   "display": {
-    "promptText": "After counting all 100 items in a set, what is the cardinality?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-countOn-45-003",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 100,
-   "b": null,
-   "op": "count",
-   "answer": 100,
-   "display": {
-    "promptText": "Use count-on from 90 by 10s. After one step, what is the count?"
-   }
-  }
- },
- {
-  "itemId": "counting-conc-cardinality-K1-001",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
+  "structureType": "countSet",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 10,
+   "a": null,
    "b": null,
    "op": "count",
-   "answer": 10,
+   "answer": 3,
    "display": {
-    "promptText": "After counting all items in a set of 10, what is the cardinality?"
-   }
+    "counting": {
+     "kind": "set",
+     "count": 3
+    },
+    "promptText": "How many apples are there? 🍎🍎🍎"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-conc-countOn-K1-001",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 6,
-   "b": null,
-   "op": "count",
-   "answer": 6,
-   "display": {
-    "promptText": "Use count-on from 4 to find 4 + 2."
-   }
-  }
- },
- {
-  "itemId": "counting-conc-subitizing-K1-001",
+  "itemId": "counting-conc-b0821-0024",
   "modeId": "counting",
   "itemFamily": "conceptual",
   "subskill": "subitizing",
-  "structureType": "countObjects",
+  "structureType": "whichShowsN",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 4,
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "🐤🐤🐤🐤🐤🐤🐤🐤",
+   "choices": [
+    "🐤🐤🐤🐤🐤🐤🐤🐤🐤",
+    "🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤",
+    "🐤🐤🐤🐤🐤🐤🐤🐤",
+    "🐤🐤🐤🐤🐤🐤🐤"
+   ],
+   "display": {
+    "promptText": "Tap the card that shows 8 chicks."
+   }
+  }
+ },
+ {
+  "itemId": "counting-conc-b0821-0187",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "countOn",
+  "structureType": "oneLess",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
    "b": null,
    "op": "count",
    "answer": 4,
    "display": {
-    "promptText": "A small set of 4 dots. Subitize the count."
-   }
+    "counting": {
+     "n": 5,
+     "kind": "moreLess",
+     "delta": -1
+    },
+    "promptText": "What number is 1 less than 5?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-conc-cardinality-K1-002",
+  "itemId": "counting-conc-b0821-0371",
   "modeId": "counting",
   "itemFamily": "conceptual",
   "subskill": "cardinality",
-  "structureType": "countObjects",
+  "structureType": "compareTwoSets",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 8,
+   "a": null,
    "b": null,
    "op": "count",
-   "answer": 8,
+   "answer": "Group A",
+   "choices": [
+    "Group A",
+    "Group B"
+   ],
    "display": {
-    "promptText": "After counting all items in a set of 8, what is the cardinality?"
+    "promptText": "Group A: 🦋🦋🦋 Group B: 🦋🦋🦋🦋🦋🦋 Which group has fewer butterflies?"
    }
   }
  },
  {
-  "itemId": "counting-conc-countOn-K1-002",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "countOn",
-  "structureType": "countObjects",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": null,
-   "op": "count",
-   "answer": 7,
-   "display": {
-    "promptText": "Use count-on from 5 to find 5 + 2."
-   }
-  }
- },
- {
-  "itemId": "counting-conc-subitizing-K1-002",
+  "itemId": "counting-conc-b0821-0047",
   "modeId": "counting",
   "itemFamily": "conceptual",
   "subskill": "subitizing",
-  "structureType": "countObjects",
+  "structureType": "fiveAndMoreSee",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 5,
+   "a": null,
    "b": null,
    "op": "count",
-   "answer": 5,
+   "answer": 10,
    "display": {
-    "promptText": "A small set of 5 stars. Subitize the count."
+    "counting": {
+     "kind": "set",
+     "count": 10
+    },
+    "promptText": "Five cookies and some more: 🍪🍪🍪🍪🍪 🍪🍪🍪🍪🍪 How many cookies in all?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-conc-b0821-0213",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "countOn",
+  "structureType": "countOnJudge",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": false,
+    "promptText": "Zoe holds 7 turtles. A friend hands over 4 more. Zoe says 7, 8, 9, 10. Is Zoe counting on correctly?"
    }
   }
  },
  {
-  "itemId": "counting-conc-cardinality-K1-003",
+  "itemId": "counting-conc-b0821-0053",
   "modeId": "counting",
   "itemFamily": "conceptual",
-  "subskill": "cardinality",
-  "structureType": "countObjects",
+  "subskill": "subitizing",
+  "structureType": "estimateThenCount",
   "levelRange": [
-   1,
-   3
+   4,
+   6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 9,
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "choices": [
+    30,
+    20,
+    40,
+    10
+   ],
+   "display": {
+    "promptText": "A jar holds these dots: 🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠 | 🟠🟠 About how many dots is that?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-conc-b0821-0220",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "countOn",
+  "structureType": "missingAcrossDecade",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 20,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 21,
+     "before": 19
+    },
+    "promptText": "Luca counts: 18, 19, ___, 21, 22. Which number did Luca skip?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-conc-b0821-0406",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "cardinality",
+  "structureType": "countTeenSet",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "counting": {
+     "kind": "set",
+     "count": 12
+    },
+    "promptText": "Count the fish: 🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟 | 🐟🐟 How many fish did you count?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-conc-b0821-0072",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "subitizing",
+  "structureType": "oddOneOutCount",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "🟠🟠🟠🟠🟠 🟠🟠🟠",
+   "choices": [
+    "7",
+    "⭐⭐⭐⭐⭐ ⭐⭐",
+    "🍪🍪🍪🍪🍪 🍪🍪",
+    "🟠🟠🟠🟠🟠 🟠🟠🟠"
+   ],
+   "display": {
+    "promptText": "One card does not show 7 stars. Which card is it?"
+   }
+  }
+ },
+ {
+  "itemId": "counting-conc-b0821-0248",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "countOn",
+  "structureType": "oneLessDecade",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 49,
+   "display": {
+    "counting": {
+     "n": 50,
+     "kind": "moreLess",
+     "delta": -1
+    },
+    "promptText": "What number is 1 less than 50?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-conc-b0821-0423",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "cardinality",
+  "structureType": "countTeenSet",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 13,
+   "display": {
+    "counting": {
+     "kind": "set",
+     "count": 13
+    },
+    "promptText": "How many apples are there? 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎 | 🍎🍎🍎"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-conc-b0821-0091",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "subitizing",
+  "structureType": "tenAndMoreSee",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 15,
+   "display": {
+    "counting": {
+     "kind": "set",
+     "count": 15
+    },
+    "promptText": "The top row is a full ten. 🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 | 🐤🐤🐤🐤🐤 How many chicks are there altogether?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-conc-b0821-0276",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "countOn",
+  "structureType": "hiddenCountSplat",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
    "b": null,
    "op": "count",
    "answer": 9,
    "display": {
-    "promptText": "After counting all items in a set of 9, what is the cardinality?"
+    "counting": {
+     "kind": "hidden",
+     "seen": 6,
+     "total": 15
+    },
+    "promptText": "15 balloons were on the table. Now only 6 balloons show; a cloth covers the others. How many balloons are covered?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-conc-b0821-0107",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "subitizing",
+  "structureType": "estimateThenCountBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 30,
+   "choices": [
+    30,
+    50,
+    20,
+    40
+   ],
+   "display": {
+    "promptText": "A jar holds these dots: 🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠 | 🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠 | 🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠 | 🟠🟠 About how many dots is that?"
    }
   }
  },
  {
-  "itemId": "counting-conc-countOn-K1-003",
+  "itemId": "counting-conc-b0821-0288",
   "modeId": "counting",
   "itemFamily": "conceptual",
   "subskill": "countOn",
-  "structureType": "countObjects",
+  "structureType": "missingAcrossHundred",
   "levelRange": [
-   1,
-   3
+   7,
+   10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 8,
+   "a": null,
    "b": null,
    "op": "count",
-   "answer": 8,
+   "answer": 99,
    "display": {
-    "promptText": "Use count-on from 6 to find 6 + 2."
+    "counting": {
+     "kind": "between",
+     "after": 100,
+     "before": 98
+    },
+    "promptText": "Luca counts: 96, 97, 98, ___, 100. Which number did Luca skip?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-conc-b0821-0456",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "cardinality",
+  "structureType": "doubleCountErrorBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 36,
+   "display": {
+    "counting": {
+     "n": 37,
+     "kind": "moreLess",
+     "delta": -1
+    },
+    "promptText": "Amara counted 37 butterflies. Then Amara noticed one butterflie got pointed at twice. What is the real number of butterflies?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-conc-b0821-0131",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "subitizing",
+  "structureType": "claimTensRowsJudge",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "promptText": "Rosa counts the rows of ten and says 27 stars. ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐⭐⭐ Is Rosa right?"
    }
+  }
+ },
+ {
+  "itemId": "counting-conc-b0821-0314",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "countOn",
+  "structureType": "oneLessHundred",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 99,
+   "display": {
+    "counting": {
+     "n": 100,
+     "kind": "moreLess",
+     "delta": -1
+    },
+    "promptText": "Count back 1 from 100. What number do you say?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-conc-b0821-0473",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "cardinality",
+  "structureType": "mixedSetCount",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 9,
+   "display": {
+    "counting": {
+     "kind": "set",
+     "count": 9
+    },
+    "promptText": "🦋🐟🐟🐟🐟🦋🐟🐟🦋🐟 | 🐟🦋🦋🐟 How many of these are fish?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-conc-b0821-0155",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "subitizing",
+  "structureType": "rowsToNumeral",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 38,
+   "choices": [
+    39,
+    28,
+    48,
+    38
+   ],
+   "display": {
+    "promptText": "Which number do these rows of green dots show? 🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 | 🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 | 🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 | 🟢🟢🟢🟢🟢🟢🟢🟢"
+   }
+  }
+ },
+ {
+  "itemId": "counting-conc-b0821-0340",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "countOn",
+  "structureType": "hiddenCountBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 14,
+   "display": {
+    "counting": {
+     "kind": "hidden",
+     "seen": 36,
+     "total": 50
+    },
+    "promptText": "A bag held 50 flowers. 36 flowers spilled out where you can count them. How many flowers are still in the bag?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
@@ -6788,6 +11574,2118 @@ export const SEED_ITEMS = [
     "promptText": "119, 118, 117, ?"
    },
    "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0001",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "readBar",
+  "structureType": "storySurveyRead_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 2
+     },
+     {
+      "label": "puppies",
+      "value": 5
+     },
+     {
+      "label": "bunnies",
+      "value": 3
+     },
+     {
+      "label": "chicks",
+      "value": 7
+     }
+    ],
+    "data": {
+     "kind": "barRead",
+     "label": "kittens"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Sam surveyed the class and drew the pet fair graph. A friend asks about kittens. How many kittens does the graph show?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0103",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "compareBars",
+  "structureType": "storyMargin_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 2
+     },
+     {
+      "label": "puppies",
+      "value": 5
+     },
+     {
+      "label": "bunnies",
+      "value": 3
+     },
+     {
+      "label": "chicks",
+      "value": 7
+     }
+    ],
+    "data": {
+     "a": "chicks",
+     "b": "kittens",
+     "kind": "barDiff"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "In Ava's pet fair survey, chicks beat kittens. By how many votes did it win?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0205",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "pictograph",
+  "structureType": "storySticker_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "data": {
+     "key": 1,
+     "sym": 2,
+     "kind": "pictoRead2"
+    },
+    "promptText": "Sam's reading chart gives one star picture for every 1 page read. The chart shows 2 stars. How many pages did Sam read?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0307",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "dataAnalysis",
+  "structureType": "storyAllVotes_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 17,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 2
+     },
+     {
+      "label": "puppies",
+      "value": 5
+     },
+     {
+      "label": "bunnies",
+      "value": 3
+     },
+     {
+      "label": "chicks",
+      "value": 7
+     }
+    ],
+    "data": {
+     "kind": "barTotal"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Every vote in June's pet fair survey landed in one of the four bars. How many friends voted in all?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0060",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "readBar",
+  "structureType": "storyWinner_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "tag",
+   "choices": [
+    "soccer",
+    "hopscotch",
+    "tag",
+    "jump rope"
+   ],
+   "display": {
+    "bars": [
+     {
+      "label": "soccer",
+      "value": 1
+     },
+     {
+      "label": "tag",
+      "value": 7
+     },
+     {
+      "label": "hopscotch",
+      "value": 3
+     },
+     {
+      "label": "jump rope",
+      "value": 5
+     }
+    ],
+    "data": {
+     "kind": "barMax"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Ben announces the recess games survey winner at circle time. Which choice won the most votes?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0162",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "compareBars",
+  "structureType": "storyTeamUp_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "bars": [
+     {
+      "label": "soccer",
+      "value": 1
+     },
+     {
+      "label": "tag",
+      "value": 7
+     },
+     {
+      "label": "hopscotch",
+      "value": 3
+     },
+     {
+      "label": "jump rope",
+      "value": 5
+     }
+    ],
+    "data": {
+     "a": "soccer",
+     "b": "tag",
+     "kind": "barSum"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "If the recess games survey merged soccer with tag, how many votes would the pair have? Amara adds the bars."
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0264",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "pictograph",
+  "structureType": "storyDraw_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 11,
+   "display": {
+    "data": {
+     "n": 11,
+     "key": 1,
+     "kind": "pictoSymbols"
+    },
+    "promptText": "Zoe must add 11 to the picture chart, where each picture means 1. How many pictures does Zoe draw?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0366",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "dataAnalysis",
+  "structureType": "storyReachGoal_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "bars": [
+     {
+      "label": "soccer",
+      "value": 1
+     },
+     {
+      "label": "tag",
+      "value": 7
+     },
+     {
+      "label": "hopscotch",
+      "value": 3
+     },
+     {
+      "label": "jump rope",
+      "value": 5
+     }
+    ],
+    "data": {
+     "goal": 10,
+     "kind": "barGoalGap",
+     "label": "jump rope"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Nora hopes jump rope reaches 10 in the recess games survey. How many more votes does it need?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0018",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "readBar",
+  "structureType": "storySurveyRead_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 12
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 14
+     },
+     {
+      "label": "chicks",
+      "value": 3
+     }
+    ],
+    "data": {
+     "kind": "barRead",
+     "label": "kittens"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "For a school project, Ida graphed the pet fair results. The teacher points at kittens. What count does that bar show?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0120",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "compareBars",
+  "structureType": "storyMargin_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 11,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 12
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 14
+     },
+     {
+      "label": "chicks",
+      "value": 3
+     }
+    ],
+    "data": {
+     "a": "bunnies",
+     "b": "chicks",
+     "kind": "barDiff"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Reading the pet fair graph, Lily sees bunnies above chicks. How many votes separate them?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0222",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "pictograph",
+  "structureType": "storySticker_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "data": {
+     "key": 5,
+     "sym": 2,
+     "kind": "pictoRead2"
+    },
+    "promptText": "Each flower picture on Ida's garden chart means 5 seeds planted. With 2 flowers drawn, how many seeds is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0324",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "dataAnalysis",
+  "structureType": "storyAllVotes_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 36,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 12
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 14
+     },
+     {
+      "label": "chicks",
+      "value": 3
+     }
+    ],
+    "data": {
+     "kind": "barTotal"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Before recess, Diego sums the whole pet fair chart. What is the full vote count?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0077",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "readBar",
+  "structureType": "storyWinner_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "soccer",
+   "choices": [
+    "hopscotch",
+    "jump rope",
+    "tag",
+    "soccer"
+   ],
+   "display": {
+    "bars": [
+     {
+      "label": "soccer",
+      "value": 14
+     },
+     {
+      "label": "tag",
+      "value": 6
+     },
+     {
+      "label": "hopscotch",
+      "value": 10
+     },
+     {
+      "label": "jump rope",
+      "value": 1
+     }
+    ],
+    "data": {
+     "kind": "barMax"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "At assembly, Leo reads out which recess games choice came first. Which one is it?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0179",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "compareBars",
+  "structureType": "storyTeamUp_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 20,
+   "display": {
+    "bars": [
+     {
+      "label": "soccer",
+      "value": 14
+     },
+     {
+      "label": "tag",
+      "value": 6
+     },
+     {
+      "label": "hopscotch",
+      "value": 10
+     },
+     {
+      "label": "jump rope",
+      "value": 1
+     }
+    ],
+    "data": {
+     "a": "soccer",
+     "b": "tag",
+     "kind": "barSum"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Luca adds the soccer bar to the tag bar of the recess games graph. What is their combined count?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0281",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "pictograph",
+  "structureType": "storyDraw_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "data": {
+     "n": 50,
+     "key": 5,
+     "kind": "pictoSymbols"
+    },
+    "promptText": "To record 50 on a chart with a key of 5, how many pictures should Priya put up?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0383",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "dataAnalysis",
+  "structureType": "storyReachGoal_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 14,
+   "display": {
+    "bars": [
+     {
+      "label": "soccer",
+      "value": 14
+     },
+     {
+      "label": "tag",
+      "value": 6
+     },
+     {
+      "label": "hopscotch",
+      "value": 10
+     },
+     {
+      "label": "jump rope",
+      "value": 1
+     }
+    ],
+    "data": {
+     "goal": 15,
+     "kind": "barGoalGap",
+     "label": "jump rope"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "The jump rope bar of the recess games graph is chasing a goal of 15. Kai counts the missing votes. How many more votes are needed?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0035",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "readBar",
+  "structureType": "storySurveyRead_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 18,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 18
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 12
+     },
+     {
+      "label": "chicks",
+      "value": 20
+     }
+    ],
+    "data": {
+     "kind": "barRead",
+     "label": "kittens"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "For a school project, Rosa graphed the pet fair results. The teacher points at kittens. What count does that bar show?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0137",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "compareBars",
+  "structureType": "storyMargin_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 13,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 18
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 12
+     },
+     {
+      "label": "chicks",
+      "value": 20
+     }
+    ],
+    "data": {
+     "a": "chicks",
+     "b": "puppies",
+     "kind": "barDiff"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Leo's pet fair report needs the precise spread between chicks and puppies. How many votes wide is it?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0239",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "pictograph",
+  "structureType": "storySticker_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 20,
+   "display": {
+    "data": {
+     "key": 10,
+     "sym": 2,
+     "kind": "pictoRead2"
+    },
+    "promptText": "Rosa's chore chart pays 10 points per smiley picture. There are 2 smileys. How many points has Rosa earned?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0341",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "dataAnalysis",
+  "structureType": "storyAllVotes_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 57,
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 18
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 12
+     },
+     {
+      "label": "chicks",
+      "value": 20
+     }
+    ],
+    "data": {
+     "kind": "barTotal"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "For the data journal, Luca sums every pet fair category exactly. What is the exact total of votes?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0094",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "readBar",
+  "structureType": "storyWinner_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "soccer",
+   "choices": [
+    "tag",
+    "soccer",
+    "hopscotch",
+    "jump rope"
+   ],
+   "display": {
+    "bars": [
+     {
+      "label": "soccer",
+      "value": 20
+     },
+     {
+      "label": "tag",
+      "value": 11
+     },
+     {
+      "label": "hopscotch",
+      "value": 6
+     },
+     {
+      "label": "jump rope",
+      "value": 16
+     }
+    ],
+    "data": {
+     "kind": "barMax"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Scanning the scaled recess games graph, Theo names the front-runner. Which choice leads?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0196",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "compareBars",
+  "structureType": "storyTeamUp_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 31,
+   "display": {
+    "bars": [
+     {
+      "label": "soccer",
+      "value": 20
+     },
+     {
+      "label": "tag",
+      "value": 11
+     },
+     {
+      "label": "hopscotch",
+      "value": 6
+     },
+     {
+      "label": "jump rope",
+      "value": 16
+     }
+    ],
+    "data": {
+     "a": "soccer",
+     "b": "tag",
+     "kind": "barSum"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Omar adds the soccer bar to the tag bar of the recess games graph. What is their combined count?"
+   },
+   "answerType": "barGraph"
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0298",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "pictograph",
+  "structureType": "storyDraw_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 10,
+   "display": {
+    "data": {
+     "n": 100,
+     "key": 10,
+     "kind": "pictoSymbols"
+    },
+    "promptText": "Nia's chart uses one picture for every 10. Showing 100 takes how many pictures?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-app-b0821-0400",
+  "modeId": "dataGraphs",
+  "itemFamily": "application",
+  "subskill": "dataAnalysis",
+  "structureType": "storyReachGoal_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 9,
+   "display": {
+    "bars": [
+     {
+      "label": "soccer",
+      "value": 20
+     },
+     {
+      "label": "tag",
+      "value": 11
+     },
+     {
+      "label": "hopscotch",
+      "value": 6
+     },
+     {
+      "label": "jump rope",
+      "value": 16
+     }
+    ],
+    "data": {
+     "goal": 25,
+     "kind": "barGoalGap",
+     "label": "jump rope"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "The jump rope bar of the recess games graph is chasing a goal of 25. Lily counts the missing votes. How many more votes are needed?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0001",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "readBar",
+  "structureType": "mostPick_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "chicks",
+   "choices": [
+    "chicks",
+    "kittens",
+    "bunnies",
+    "puppies"
+   ],
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 2
+     },
+     {
+      "label": "puppies",
+      "value": 5
+     },
+     {
+      "label": "bunnies",
+      "value": 3
+     },
+     {
+      "label": "chicks",
+      "value": 7
+     }
+    ],
+    "data": {
+     "kind": "barMax"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Mina checks the pet fair graph. Which one was chosen the most?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0154",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "compareBars",
+  "structureType": "cmpJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 2
+     },
+     {
+      "label": "puppies",
+      "value": 5
+     },
+     {
+      "label": "bunnies",
+      "value": 3
+     },
+     {
+      "label": "chicks",
+      "value": 7
+     }
+    ],
+    "data": {
+     "a": "kittens",
+     "b": "puppies",
+     "kind": "barCmpSaid"
+    },
+    "type": "barGraph",
+    "truth": false,
+    "figure": "barGraph",
+    "promptText": "Mina says the pet fair graph shows more kittens than puppies. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0343",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "pictograph",
+  "structureType": "countJudgeTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "data": {
+     "key": 1,
+     "sym": 2,
+     "kind": "pictoSaid",
+     "said": 2
+    },
+    "truth": true,
+    "promptText": "The chart shows 2 pictures of puppies, one each. Luca counts 2. Is Luca right?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0462",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "dataAnalysis",
+  "structureType": "claimJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 2
+     },
+     {
+      "label": "puppies",
+      "value": 5
+     },
+     {
+      "label": "bunnies",
+      "value": 3
+     },
+     {
+      "label": "chicks",
+      "value": 7
+     }
+    ],
+    "data": {
+     "kind": "claimMax",
+     "label": "chicks"
+    },
+    "type": "barGraph",
+    "truth": true,
+    "figure": "barGraph",
+    "promptText": "Mina looks at the pet fair graph and says: \"chicks got the most.\" Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0026",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "readBar",
+  "structureType": "readJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bars": [
+     {
+      "label": "vans",
+      "value": 3
+     },
+     {
+      "label": "bikes",
+      "value": 6
+     },
+     {
+      "label": "buses",
+      "value": 2
+     },
+     {
+      "label": "scooters",
+      "value": 7
+     }
+    ],
+    "data": {
+     "kind": "barReadSaid",
+     "said": 4,
+     "label": "vans"
+    },
+    "type": "barGraph",
+    "truth": false,
+    "figure": "barGraph",
+    "promptText": "Leo reads the vans bar of the school ride graph as 4. Is Leo right?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0179",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "compareBars",
+  "structureType": "diffJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bars": [
+     {
+      "label": "vans",
+      "value": 3
+     },
+     {
+      "label": "bikes",
+      "value": 6
+     },
+     {
+      "label": "buses",
+      "value": 2
+     },
+     {
+      "label": "scooters",
+      "value": 7
+     }
+    ],
+    "data": {
+     "a": "scooters",
+     "b": "buses",
+     "kind": "barDiffSaid",
+     "said": 5
+    },
+    "type": "barGraph",
+    "truth": true,
+    "figure": "barGraph",
+    "promptText": "Luca figures the school ride graph's scooters bar beats buses by 5. Is Luca right?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0368",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "pictograph",
+  "structureType": "rowMoreTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "red",
+   "choices": [
+    "blue",
+    "red"
+   ],
+   "display": {
+    "data": {
+     "kind": "pictoRowMore"
+    },
+    "rows": [
+     {
+      "label": "red",
+      "symbols": 5
+     },
+     {
+      "label": "blue",
+      "symbols": 2
+     }
+    ],
+    "figure": "pictograph",
+    "keyValue": 1,
+    "promptText": "Lily compares the favorite colors chart's picture rows for red and blue. Which row shows more?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0487",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "dataAnalysis",
+  "structureType": "totalJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bars": [
+     {
+      "label": "vans",
+      "value": 3
+     },
+     {
+      "label": "bikes",
+      "value": 6
+     },
+     {
+      "label": "buses",
+      "value": 2
+     },
+     {
+      "label": "scooters",
+      "value": 7
+     }
+    ],
+    "data": {
+     "kind": "barTotalSaid",
+     "said": 19
+    },
+    "type": "barGraph",
+    "truth": false,
+    "figure": "barGraph",
+    "promptText": "Sam adds all the school ride bars and announces 19 in total. Is Sam right?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0052",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "readBar",
+  "structureType": "mostPick_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "bunnies",
+   "choices": [
+    "kittens",
+    "chicks",
+    "bunnies",
+    "puppies"
+   ],
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 12
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 14
+     },
+     {
+      "label": "chicks",
+      "value": 3
+     }
+    ],
+    "data": {
+     "kind": "barMax"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Omar checks the pet fair graph. Which one was chosen the most?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0205",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "compareBars",
+  "structureType": "cmpJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 12
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 14
+     },
+     {
+      "label": "chicks",
+      "value": 3
+     }
+    ],
+    "data": {
+     "a": "kittens",
+     "b": "puppies",
+     "kind": "barCmpSaid"
+    },
+    "type": "barGraph",
+    "truth": true,
+    "figure": "barGraph",
+    "promptText": "Omar says the pet fair graph shows more kittens than puppies. Is Omar right?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0307",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "pictograph",
+  "structureType": "keyIgnoredMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "data": {
+     "key": 5,
+     "kind": "keyIgnored"
+    },
+    "truth": false,
+    "promptText": "Omar counts 2 pictures for kittens and says there are 2 kittens — but each picture means 5. Is Omar right?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0513",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "dataAnalysis",
+  "structureType": "claimJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 12
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 14
+     },
+     {
+      "label": "chicks",
+      "value": 3
+     }
+    ],
+    "data": {
+     "kind": "claimMax",
+     "label": "bunnies"
+    },
+    "type": "barGraph",
+    "truth": true,
+    "figure": "barGraph",
+    "promptText": "Omar looks at the pet fair graph and says: \"bunnies got the most.\" Is Omar right?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0077",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "readBar",
+  "structureType": "readJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bars": [
+     {
+      "label": "vans",
+      "value": 2
+     },
+     {
+      "label": "bikes",
+      "value": 10
+     },
+     {
+      "label": "buses",
+      "value": 6
+     },
+     {
+      "label": "scooters",
+      "value": 12
+     }
+    ],
+    "data": {
+     "kind": "barReadSaid",
+     "said": 11,
+     "label": "bikes"
+    },
+    "type": "barGraph",
+    "truth": false,
+    "figure": "barGraph",
+    "promptText": "Ava reads the bikes bar of the school ride graph as 11. Is Ava right?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0230",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "compareBars",
+  "structureType": "diffJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bars": [
+     {
+      "label": "vans",
+      "value": 2
+     },
+     {
+      "label": "bikes",
+      "value": 10
+     },
+     {
+      "label": "buses",
+      "value": 6
+     },
+     {
+      "label": "scooters",
+      "value": 12
+     }
+    ],
+    "data": {
+     "a": "scooters",
+     "b": "vans",
+     "kind": "barDiffSaid",
+     "said": 10
+    },
+    "type": "barGraph",
+    "truth": true,
+    "figure": "barGraph",
+    "promptText": "June figures the school ride graph's scooters bar beats vans by 10. Is June right?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0402",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "pictograph",
+  "structureType": "halfSymbolMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "data": {
+     "key": 2,
+     "kind": "halfSymbol"
+    },
+    "truth": true,
+    "promptText": "Diego treats a half picture as 1 when the key is 2 per picture. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0538",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "dataAnalysis",
+  "structureType": "totalJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bars": [
+     {
+      "label": "vans",
+      "value": 2
+     },
+     {
+      "label": "bikes",
+      "value": 10
+     },
+     {
+      "label": "buses",
+      "value": 6
+     },
+     {
+      "label": "scooters",
+      "value": 12
+     }
+    ],
+    "data": {
+     "kind": "barTotalSaid",
+     "said": 31
+    },
+    "type": "barGraph",
+    "truth": false,
+    "figure": "barGraph",
+    "promptText": "Ida adds all the school ride bars and announces 31 in total. Is Ida right?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0103",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "readBar",
+  "structureType": "mostPick_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "chicks",
+   "choices": [
+    "kittens",
+    "chicks",
+    "bunnies",
+    "puppies"
+   ],
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 18
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 12
+     },
+     {
+      "label": "chicks",
+      "value": 20
+     }
+    ],
+    "data": {
+     "kind": "barMax"
+    },
+    "type": "barGraph",
+    "figure": "barGraph",
+    "promptText": "Finn checks the pet fair graph. Which one was chosen the most?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0256",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "compareBars",
+  "structureType": "cmpJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 18
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 12
+     },
+     {
+      "label": "chicks",
+      "value": 20
+     }
+    ],
+    "data": {
+     "a": "kittens",
+     "b": "puppies",
+     "kind": "barCmpSaid"
+    },
+    "type": "barGraph",
+    "truth": true,
+    "figure": "barGraph",
+    "promptText": "Finn says the pet fair graph shows more kittens than puppies. Is Finn right?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0325",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "pictograph",
+  "structureType": "keyIgnoredBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "data": {
+     "key": 10,
+     "kind": "keyIgnored"
+    },
+    "truth": false,
+    "promptText": "Finn counts 2 pictures for kittens and says there are 2 kittens — but each picture means 10. Is Finn right?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0564",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "dataAnalysis",
+  "structureType": "claimJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bars": [
+     {
+      "label": "kittens",
+      "value": 18
+     },
+     {
+      "label": "puppies",
+      "value": 7
+     },
+     {
+      "label": "bunnies",
+      "value": 12
+     },
+     {
+      "label": "chicks",
+      "value": 20
+     }
+    ],
+    "data": {
+     "kind": "claimMax",
+     "label": "chicks"
+    },
+    "type": "barGraph",
+    "truth": true,
+    "figure": "barGraph",
+    "promptText": "Finn looks at the pet fair graph and says: \"chicks got the most.\" Is Finn right?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0128",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "readBar",
+  "structureType": "readJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bars": [
+     {
+      "label": "vans",
+      "value": 19
+     },
+     {
+      "label": "bikes",
+      "value": 3
+     },
+     {
+      "label": "buses",
+      "value": 16
+     },
+     {
+      "label": "scooters",
+      "value": 12
+     }
+    ],
+    "data": {
+     "kind": "barReadSaid",
+     "said": 17,
+     "label": "buses"
+    },
+    "type": "barGraph",
+    "truth": false,
+    "figure": "barGraph",
+    "promptText": "Ben reads the buses bar of the school ride graph as 17. Is Ben right?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0281",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "compareBars",
+  "structureType": "diffJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bars": [
+     {
+      "label": "vans",
+      "value": 19
+     },
+     {
+      "label": "bikes",
+      "value": 3
+     },
+     {
+      "label": "buses",
+      "value": 16
+     },
+     {
+      "label": "scooters",
+      "value": 12
+     }
+    ],
+    "data": {
+     "a": "vans",
+     "b": "bikes",
+     "kind": "barDiffSaid",
+     "said": 16
+    },
+    "type": "barGraph",
+    "truth": true,
+    "figure": "barGraph",
+    "promptText": "Amara figures the school ride graph's vans bar beats bikes by 16. Is Amara right?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0418",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "pictograph",
+  "structureType": "halfSymbolBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "data": {
+     "key": 10,
+     "kind": "halfSymbol"
+    },
+    "truth": true,
+    "promptText": "Luca treats a half picture as 5 when the key is 10 per picture. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "dataGraphs-conc-b0821-0589",
+  "modeId": "dataGraphs",
+  "itemFamily": "conceptual",
+  "subskill": "dataAnalysis",
+  "structureType": "totalJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "bars": [
+     {
+      "label": "vans",
+      "value": 19
+     },
+     {
+      "label": "bikes",
+      "value": 3
+     },
+     {
+      "label": "buses",
+      "value": 16
+     },
+     {
+      "label": "scooters",
+      "value": 12
+     }
+    ],
+    "data": {
+     "kind": "barTotalSaid",
+     "said": 51
+    },
+    "type": "barGraph",
+    "truth": false,
+    "figure": "barGraph",
+    "promptText": "Rosa adds all the school ride bars and announces 51 in total. Is Rosa right?"
+   }
   }
  },
  {
@@ -7800,6 +14698,1410 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "decimals-app-b0821-0001",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "tenthsHundredths",
+  "structureType": "storyDimes_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.1,
+   "display": {
+    "dec": {
+     "n": 1,
+     "kind": "tenths"
+    },
+    "promptText": "A dime is one tenth of a dollar. Mina carries 1 dimes and nothing else. Type Mina's money as a decimal part of a dollar."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0154",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "fractionToDecimal",
+  "structureType": "storyRun_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.1,
+   "display": {
+    "dec": {
+     "d": 10,
+     "n": 1,
+     "kind": "fromFraction"
+    },
+    "promptText": "Luca runs 1/10 of a kilometer. Type that distance as a decimal."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0307",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "compareDecimals",
+  "structureType": "storyFar_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "0.7",
+   "choices": [
+    "0.3",
+    "0.7"
+   ],
+   "display": {
+    "dec": {
+     "a": 0.7,
+     "b": 0.3,
+     "kind": "cmpPickDec",
+     "labels": [
+      "0.7",
+      "0.3"
+     ]
+    },
+    "promptText": "Sam swims 0.7 of a lap; a teammate swims 0.3 of a lap. Pick the decimal that is farther."
+   }
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0460",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "decimalAsNumber",
+  "structureType": "storyTrail_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.1,
+   "display": {
+    "dec": {
+     "k": 1,
+     "den": 10,
+     "kind": "tickDec"
+    },
+    "promptText": "A walking path from 0 to 1 kilometer has 10 equal marks. Mina stops at mark 1. Type Mina's spot as a decimal."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0026",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "tenthsHundredths",
+  "structureType": "storyJug_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.9,
+   "display": {
+    "dec": {
+     "n": 9,
+     "kind": "tenths"
+    },
+    "promptText": "Lily's water jug has 10 equal marks and the water reaches mark 9. Type the full part of the jug as a decimal."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0179",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "fractionToDecimal",
+  "structureType": "storyRibbon_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.8,
+   "display": {
+    "dec": {
+     "d": 10,
+     "n": 8,
+     "kind": "fromFraction"
+    },
+    "promptText": "Rosa uses 8/10 of a meter of ribbon for a bow. Type the used length as a decimal."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0332",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "compareDecimals",
+  "structureType": "storyTall_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "0.7",
+   "choices": [
+    "0.5",
+    "0.7"
+   ],
+   "display": {
+    "dec": {
+     "a": 0.5,
+     "b": 0.7,
+     "kind": "cmpPickDec",
+     "labels": [
+      "0.5",
+      "0.7"
+     ]
+    },
+    "promptText": "Ben's bean plant is 0.5 of a meter tall and the sunflower is 0.7 of a meter. Pick the taller height."
+   }
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0485",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "decimalAsNumber",
+  "structureType": "storyPour_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.4,
+   "display": {
+    "dec": {
+     "a": 0.3,
+     "b": 0.1,
+     "kind": "addDec"
+    },
+    "promptText": "Lily's glass holds 0.3 of a liter. Lily pours in one tenth more. Type the new amount as a decimal."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0052",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "tenthsHundredths",
+  "structureType": "storyDimes_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.1,
+   "display": {
+    "dec": {
+     "n": 1,
+     "kind": "tenths"
+    },
+    "promptText": "Omar empties a piggy bank and finds exactly 1 dimes. Each dime is a tenth of a dollar. Type the total as a decimal part of a dollar."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0205",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "fractionToDecimal",
+  "structureType": "storyRun_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.25,
+   "display": {
+    "dec": {
+     "d": 100,
+     "n": 25,
+     "kind": "fromFraction"
+    },
+    "promptText": "On the trail, June covers 25/100 of a kilometer before resting. Type the distance as a decimal."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0358",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "compareDecimals",
+  "structureType": "storyFar_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "0.5",
+   "choices": [
+    "0.5",
+    "0.45"
+   ],
+   "display": {
+    "dec": {
+     "a": 0.5,
+     "b": 0.45,
+     "kind": "cmpPickDec",
+     "labels": [
+      "0.5",
+      "0.45"
+     ]
+    },
+    "promptText": "Ida bikes 0.5 of the loop while a friend bikes 0.45 of it. Which decimal marks the longer ride?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0511",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "decimalAsNumber",
+  "structureType": "storyTrail_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.1,
+   "display": {
+    "dec": {
+     "k": 1,
+     "den": 10,
+     "kind": "tickDec"
+    },
+    "promptText": "Omar jogs a 1-kilometer track marked in 10 equal steps and pauses at mark 1. Type the pause point as a decimal."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0077",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "tenthsHundredths",
+  "structureType": "storyJug_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.9,
+   "display": {
+    "dec": {
+     "n": 9,
+     "kind": "tenths"
+    },
+    "promptText": "The class fish tank shows 10 equal level marks; Nora reads the water at mark 9. Type the filled part as a decimal."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0230",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "fractionToDecimal",
+  "structureType": "storyRibbon_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.99,
+   "display": {
+    "dec": {
+     "d": 100,
+     "n": 99,
+     "kind": "fromFraction"
+    },
+    "promptText": "A craft calls for 99/100 of a meter of string, which Sam cuts. Type the cut length as a decimal."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0383",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "compareDecimals",
+  "structureType": "storyTall_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "0.44",
+   "choices": [
+    "0.4",
+    "0.44"
+   ],
+   "display": {
+    "dec": {
+     "a": 0.44,
+     "b": 0.4,
+     "kind": "cmpPickDec",
+     "labels": [
+      "0.44",
+      "0.4"
+     ]
+    },
+    "promptText": "In Leo's garden, the tomato vine reads 0.44 meters and the pepper plant 0.4 meters. Which decimal is taller?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0536",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "decimalAsNumber",
+  "structureType": "storyPour_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.71,
+   "display": {
+    "dec": {
+     "a": 0.61,
+     "b": 0.1,
+     "kind": "addDec"
+    },
+    "promptText": "A beaker in Nora's experiment reads 0.61 liters, and Nora adds a tenth of a liter. Type the new reading as a decimal."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0103",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "tenthsHundredths",
+  "structureType": "storyDimes_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.1,
+   "display": {
+    "dec": {
+     "n": 1,
+     "kind": "tenths"
+    },
+    "promptText": "Finn's coin pouch holds 1 dimes and no other coins; a dime is a tenth of a dollar. Type the amount as a decimal part of a dollar."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0256",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "fractionToDecimal",
+  "structureType": "storyRun_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.5,
+   "display": {
+    "dec": {
+     "d": 2,
+     "n": 1,
+     "kind": "fromFraction"
+    },
+    "promptText": "Amara's fitness app logs 1/2 of a kilometer for the warm-up. Type the logged distance as a decimal."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0409",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "compareDecimals",
+  "structureType": "storyFar_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "3.5",
+   "choices": [
+    "3.5",
+    "3.45"
+   ],
+   "display": {
+    "dec": {
+     "a": 3.45,
+     "b": 3.5,
+     "kind": "cmpPickDec",
+     "labels": [
+      "3.45",
+      "3.5"
+     ]
+    },
+    "promptText": "Rosa completes 3.45 of the course; a rival completes 3.5. Which decimal represents more of the course?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0562",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "decimalAsNumber",
+  "structureType": "storyTrail_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.05,
+   "display": {
+    "dec": {
+     "k": 5,
+     "den": 100,
+     "kind": "tickDec"
+    },
+    "promptText": "A 1-kilometer greenway is signposted at 100 equal marks; Finn rests at mark 5. Type the rest point as a decimal."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0128",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "tenthsHundredths",
+  "structureType": "storyJug_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.9,
+   "display": {
+    "dec": {
+     "n": 9,
+     "kind": "tenths"
+    },
+    "promptText": "Ava checks a rain barrel with 10 equal level marks; the water sits at mark 9. Type the filled part of the barrel as a decimal."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0281",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "fractionToDecimal",
+  "structureType": "storyRibbon_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 0.48,
+   "display": {
+    "dec": {
+     "d": 25,
+     "n": 12,
+     "kind": "fromFraction"
+    },
+    "promptText": "Kai trims 12/25 of a meter of wire for a model. Type the trimmed length as a decimal."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0434",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "compareDecimals",
+  "structureType": "storyTall_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "8.3",
+   "choices": [
+    "8.3",
+    "8.29"
+   ],
+   "display": {
+    "dec": {
+     "a": 8.3,
+     "b": 8.29,
+     "kind": "cmpPickDec",
+     "labels": [
+      "8.3",
+      "8.29"
+     ]
+    },
+    "promptText": "Theo measures two saplings at 8.3 meters and 8.29 meters. Which decimal shows the taller sapling?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-app-b0821-0587",
+  "modeId": "decimals",
+  "itemFamily": "application",
+  "subskill": "decimalAsNumber",
+  "structureType": "storyPour_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": 9.62,
+   "display": {
+    "dec": {
+     "a": 9.61,
+     "b": 0.01,
+     "kind": "addDec"
+    },
+    "promptText": "Ava tops up a 9.61-liter watering can with one hundredth of a liter. Type the new volume as a decimal."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0001",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "tenthsHundredths",
+  "structureType": "placeTrap_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "dec": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Mina writes 0.01 for one tenth. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0157",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "fractionToDecimal",
+  "structureType": "fracDecJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "dec": {
+     "d": 10,
+     "n": 3,
+     "kind": "fracSaid",
+     "said": "0.3"
+    },
+    "truth": true,
+    "promptText": "Mina says the fraction 3/10 equals the decimal 0.3. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0313",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "compareDecimals",
+  "structureType": "longerTrap_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "dec": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Mina says 0.15 must beat 0.7 because 15 is more than 7. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0469",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "decimalAsNumber",
+  "structureType": "closerEnd_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "0",
+   "choices": [
+    "1",
+    "0"
+   ],
+   "display": {
+    "dec": {
+     "v": 0.1,
+     "kind": "closerDec"
+    },
+    "promptText": "Is the decimal 0.1 closer to 0 or to 1? Mina pictures the line."
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0063",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "tenthsHundredths",
+  "structureType": "trailingZero_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "dec": {
+     "kind": "authored"
+    },
+    "truth": true,
+    "promptText": "Kai says 0.10 names the same amount as 0.1. Is Kai right?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0219",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "fractionToDecimal",
+  "structureType": "halfJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "dec": {
+     "v": 0.5,
+     "kind": "halfSaid"
+    },
+    "truth": true,
+    "promptText": "Kai claims the decimal 0.5 is exactly one half. Is Kai right?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0375",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "compareDecimals",
+  "structureType": "cmpJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "dec": {
+     "a": 0.7,
+     "b": 0.2,
+     "rel": ">",
+     "kind": "cmpSaidDec"
+    },
+    "truth": true,
+    "promptText": "Kai writes 0.7 > 0.2. Is Kai right?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0531",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "decimalAsNumber",
+  "structureType": "betweenJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "dec": {
+     "v": 0.5,
+     "kind": "betweenSaid"
+    },
+    "truth": true,
+    "promptText": "Kai says the decimal 0.5 sits between 0 and 1 on the number line. Is Kai right?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0019",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "tenthsHundredths",
+  "structureType": "placeTrap_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "dec": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Omar turns one tenth into the decimal 0.01. Does the conversion hold?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0175",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "fractionToDecimal",
+  "structureType": "fracDecJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "dec": {
+     "d": 100,
+     "n": 25,
+     "kind": "fracSaid",
+     "said": "0.25"
+    },
+    "truth": true,
+    "promptText": "Omar converts 25/100 and gets 0.25. Does the conversion hold?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0331",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "compareDecimals",
+  "structureType": "longerTrap_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "dec": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Omar claims 0.18 is greater than 0.6 since 18 beats 6. Does the claim hold?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0487",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "decimalAsNumber",
+  "structureType": "closerEnd_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "0",
+   "choices": [
+    "1",
+    "0"
+   ],
+   "display": {
+    "dec": {
+     "v": 0.15,
+     "kind": "closerDec"
+    },
+    "promptText": "Between 0 and 1, does 0.15 sit nearer 0 or nearer 1? Omar decides."
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0079",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "tenthsHundredths",
+  "structureType": "trailingZero_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "dec": {
+     "kind": "authored"
+    },
+    "truth": true,
+    "promptText": "Rosa marks 0.90 and 0.9 at the same point on a number line. Should they share the point?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0235",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "fractionToDecimal",
+  "structureType": "halfJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "dec": {
+     "v": 0.5,
+     "kind": "halfSaid"
+    },
+    "truth": true,
+    "promptText": "Rosa marks 0.50 at the halfway point between 0 and 1. Does it belong there?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0393",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "compareDecimals",
+  "structureType": "cmpJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "dec": {
+     "a": 0.75,
+     "b": 0.57,
+     "rel": ">",
+     "kind": "cmpSaidDec"
+    },
+    "truth": true,
+    "promptText": "Rosa records the comparison 0.75 > 0.57. Does it hold?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0549",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "decimalAsNumber",
+  "structureType": "betweenJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "dec": {
+     "v": 0.25,
+     "kind": "betweenSaid"
+    },
+    "truth": true,
+    "promptText": "Rosa plots 0.25 strictly between 0 and 1. Does it belong there?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0037",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "tenthsHundredths",
+  "structureType": "placeTrap_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "dec": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Finn claims one tenth and 0.01 are the same number. Is the claim right?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0193",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "fractionToDecimal",
+  "structureType": "fracDecJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "dec": {
+     "d": 2,
+     "n": 1,
+     "kind": "fracSaid",
+     "said": "0.5"
+    },
+    "truth": true,
+    "promptText": "Finn certifies 1/2 = 0.5. Is the certification valid?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0349",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "compareDecimals",
+  "structureType": "longerTrap_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "dec": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Finn's rule \"longer decimal, larger value\" puts 0.125 above 0.9. Is the rule sound here?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0505",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "decimalAsNumber",
+  "structureType": "closerEnd_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "0",
+   "choices": [
+    "0",
+    "1"
+   ],
+   "display": {
+    "dec": {
+     "v": 0.05,
+     "kind": "closerDec"
+    },
+    "promptText": "Locate 0.05 precisely: is it nearer 0 or nearer 1? Finn reasons it out."
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0095",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "tenthsHundredths",
+  "structureType": "trailingZero_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "dec": {
+     "kind": "authored"
+    },
+    "truth": true,
+    "promptText": "Nora certifies that 0.90 = 0.9 exactly. Is the certification valid?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0251",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "fractionToDecimal",
+  "structureType": "halfJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "dec": {
+     "v": 0.5,
+     "kind": "halfSaid"
+    },
+    "truth": true,
+    "promptText": "Nora equates 0.50 with 1/2 exactly. Is the equation sound?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0411",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "compareDecimals",
+  "structureType": "cmpJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "dec": {
+     "a": 2.43,
+     "b": 2.34,
+     "rel": ">",
+     "kind": "cmpSaidDec"
+    },
+    "truth": true,
+    "promptText": "Nora certifies 2.43 > 2.34. Is the certification valid?"
+   }
+  }
+ },
+ {
+  "itemId": "decimals-conc-b0821-0567",
+  "modeId": "decimals",
+  "itemFamily": "conceptual",
+  "subskill": "decimalAsNumber",
+  "structureType": "betweenJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "dec",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "dec": {
+     "v": 0.17,
+     "kind": "betweenSaid"
+    },
+    "truth": true,
+    "promptText": "Nora classifies 0.17 as lying between 0 and 1. Is the classification right?"
+   }
+  }
+ },
+ {
   "itemId": "decimals-proc-b0821-0157",
   "modeId": "decimals",
   "itemFamily": "procedural",
@@ -8512,12 +16814,7 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 6,
    "display": {
-    "promptText": "36 apples are shared equally among 6 baskets. How many apples go in each basket?",
-    "promptOptions": [
-     "Jamal has 36 apples. He puts them equally into 6 baskets. How many apples go in each basket?",
-     "Emma has 36 apples. She shares them equally among 6 friends. How many apples does each friend get?",
-     "There are 36 apples to divide equally into 6 groups. How many apples will each group have?"
-    ]
+    "promptText": "Jamal has 36 apples. He puts them equally into 6 baskets. How many apples go in each basket?"
    }
   }
  },
@@ -8538,12 +16835,7 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 7,
    "display": {
-    "promptText": "56 stickers are packed equally into 8 packets. How many stickers are in each packet?",
-    "promptOptions": [
-     "Jake has 56 stickers. He shares them equally among 8 friends. How many stickers does each friend get?",
-     "Lily has 56 stickers. She puts them equally in 8 envelopes. How many stickers are in each envelope?",
-     "There are 56 stickers to divide equally into 8 packets. How many stickers will each packet have?"
-    ]
+    "promptText": "Jake has 56 stickers. He shares them equally among 8 friends. How many stickers does each friend get?"
    }
   }
  },
@@ -8564,33 +16856,28 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 7,
    "display": {
-    "promptText": "A team has 63 cones to share equally among 9 practice groups. How many cones does each group get?",
-    "promptOptions": [
-     "A coach had 63 cones. He divided them equally among 9 practice groups. How many cones did each group get?",
-     "A team had 63 cones. They shared them equally among 9 practice groups. How many cones did each group get?",
-     "The team collected 63 cones for practice. Then they shared them equally among 9 groups. How many cones did each group get?"
-    ]
+    "promptText": "A coach had 63 cones. He divided them equally among 9 practice groups. How many cones did each group get?"
    }
   }
  },
  {
-  "itemId": "division-app-partitioning-4_5-003",
+  "itemId": "division-app-partitioning-4_5-compareSetSizeUnknown-004",
   "modeId": "division",
   "itemFamily": "application",
   "subskill": "partitioning",
-  "structureType": "partitiveDivision",
+  "structureType": "compareSetSizeUnknown",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 175,
-   "b": 7,
+   "a": 84,
+   "b": 12,
    "op": "÷",
-   "answer": 25,
+   "answer": 7,
    "display": {
-    "promptText": "Ms. Ortiz has 175 books. She stacks them equally into 7 piles. How many books are in each pile?"
+    "promptText": "The pizza party for Maya's class costs $84. That's 12 times as much as one pizza costs. How much does one pizza cost?"
    }
   }
  },
@@ -8616,44 +16903,44 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "division-app-unknownQuotient-4_5-003",
+  "itemId": "division-app-unknownQuotient-4_5-arrayRowCountUnknown-b0728-010",
   "modeId": "division",
   "itemFamily": "application",
   "subskill": "unknownQuotient",
-  "structureType": "quotitiveDivision",
+  "structureType": "arrayRowCountUnknown",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 675,
-   "b": 25,
+   "a": 24,
+   "b": 3,
    "op": "÷",
-   "answer": 27,
+   "answer": 8,
    "display": {
-    "promptText": "Ms. Reed had 675 new library books. She put 25 books into every box. How many boxes did she fill?"
+    "promptText": "Ava collected 24 seashells. She arranges them into rows of 3. How many rows of seashells does Ava have?"
    }
   }
  },
  {
-  "itemId": "division-app-partitioning-4_5-010",
+  "itemId": "division-app-partitioning-4_5-compareSetSizeUnknown-b0728-016",
   "modeId": "division",
   "itemFamily": "application",
   "subskill": "partitioning",
-  "structureType": "partitiveDivision",
+  "structureType": "compareSetSizeUnknown",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 360,
-   "b": 15,
+   "a": 99,
+   "b": 9,
    "op": "÷",
-   "answer": 24,
+   "answer": 11,
    "display": {
-    "promptText": "Aunt Rosa has 360 buttons. She gives the same number to each of 15 students. How many buttons does each student get?"
+    "promptText": "Skylar collected 99 stamps, which is 9 times as many as Alex collected. How many stamps did Alex collect?"
    }
   }
  },
@@ -8695,12 +16982,7 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 3,
    "display": {
-    "promptText": "6 cookies are shared equally between 2 kids. How many cookies for each kid?",
-    "promptOptions": [
-     "Mom has 6 cookies. She gives them equally to 2 kids. How many cookies does each kid get?",
-     "There are 6 cookies to share equally between 2 friends. How many cookies does each friend get?",
-     "Grandma made 6 cookies for 2 kids to share equally. How many cookies does each kid get?"
-    ]
+    "promptText": "Mom has 6 cookies. She gives them equally to 2 kids. How many cookies does each kid get?"
    }
   }
  },
@@ -8721,12 +17003,7 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 2,
    "display": {
-    "promptText": "6 small marbles are arranged into 3 equal groups. How many marbles per group?",
-    "promptOptions": [
-     "Ruby has 6 marbles. She arranges them into 3 equal groups. How many marbles per group?",
-     "Tom arranged 6 marbles into 3 equal groups. How many marbles are in each group?",
-     "Alex has 6 marbles to divide into 3 equal groups. How many marbles per group?"
-    ]
+    "promptText": "Ruby has 6 marbles. She arranges them into 3 equal groups. How many marbles per group?"
    }
   }
  },
@@ -8747,12 +17024,7 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 2,
    "display": {
-    "promptText": "8 stickers are shared equally by 4 kids. How many stickers per kid?",
-    "promptOptions": [
-     "Mom has 8 stickers to give equally to 4 kids. How many stickers does each kid get?",
-     "The teacher has 8 stickers. She shares them equally with 4 kids. How many stickers does each kid get?",
-     "4 kids share 8 stickers equally. How many stickers does each kid get?"
-    ]
+    "promptText": "Mom has 8 stickers to give equally to 4 kids. How many stickers does each kid get?"
    }
   }
  },
@@ -8878,12 +17150,7 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 3,
    "display": {
-    "promptText": "12 books are split equally onto 4 shelves. How many books per shelf?",
-    "promptOptions": [
-     "Dad has 12 books. He puts them equally on 4 shelves. How many books per shelf?",
-     "The librarian arranged 12 books equally on 4 shelves. How many books per shelf?",
-     "Maya sorted 12 books equally onto 4 shelves. How many books per shelf?"
-    ]
+    "promptText": "Dad has 12 books. He puts them equally on 4 shelves. How many books per shelf?"
    }
   }
  },
@@ -8904,12 +17171,7 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 6,
    "display": {
-    "promptText": "24 students are split into groups of 4. How many groups are there?",
-    "promptOptions": [
-     "The teacher has 24 students. She puts them into groups of 4. How many groups are there?",
-     "The PE teacher has 24 students. She divides them into groups of 4. How many groups are there?",
-     "Mr. Johnson arranged 24 students into groups of 4. How many groups did he make?"
-    ]
+    "promptText": "The teacher has 24 students. She puts them into groups of 4. How many groups are there?"
    }
   }
  },
@@ -8930,12 +17192,7 @@ export const SEED_ITEMS = [
    "op": "÷",
    "answer": 4,
    "display": {
-    "promptText": "20 books are placed on 5 shelves equally. How many books per shelf?",
-    "promptOptions": [
-     "Tom has 20 books. He puts them equally on 5 shelves. How many books are on each shelf?",
-     "Mrs. Lee had 20 books. She arranged them equally on 5 shelves. How many books went on each shelf?",
-     "The library put 20 books equally on 5 shelves. How many books does each shelf have?"
-    ]
+    "promptText": "Tom has 20 books. He puts them equally on 5 shelves. How many books are on each shelf?"
    }
   }
  },
@@ -10053,6 +18310,1389 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "factorsMultiples-app-b0821-0001",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "factorCount",
+  "structureType": "storyRows_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "fm": {
+     "a": 3,
+     "n": 12,
+     "kind": "pairFor"
+    },
+    "promptText": "Mina lines up 12 shells in equal rows of 3. How many rows of shells does Mina make?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0154",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "nthMultiple",
+  "structureType": "storyBus_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "fm": {
+     "b": 2,
+     "k": 3,
+     "kind": "nthMult"
+    },
+    "promptText": "A bus stops every 2 minutes. Luca waits for the 3rd bus. How many minutes after the start does that bus stop?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0307",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "factorPairs",
+  "structureType": "storyGarden_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "fm": {
+     "a": 3,
+     "n": 12,
+     "kind": "pairFor"
+    },
+    "promptText": "Mina plants 12 seeds in 3 equal rows. How many seeds go in each row?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0460",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "primesAndCommon",
+  "structureType": "storyMeet_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "fm": {
+     "a": 2,
+     "b": 3,
+     "kind": "lcmOf"
+    },
+    "promptText": "Luca waters the fern every 2 days and the cactus every 3 days, starting today. In how many days will Luca water both on the same day again?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0026",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "factorCount",
+  "structureType": "storyBags_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1,
+   "display": {
+    "fm": {
+     "a": 10,
+     "n": 10,
+     "kind": "pairFor"
+    },
+    "promptText": "Lily packs 10 crayons into bags of 10. How many bags does Lily fill?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0179",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "nthMultiple",
+  "structureType": "storyPage_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 14,
+   "display": {
+    "fm": {
+     "b": 2,
+     "k": 7,
+     "kind": "nthMult"
+    },
+    "promptText": "Rosa glues 2 stamps on each page. When page 7 is full, how many stamps has Rosa glued?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0332",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "factorPairs",
+  "structureType": "storyDesk_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1,
+   "display": {
+    "fm": {
+     "a": 6,
+     "n": 6,
+     "kind": "pairFor"
+    },
+    "promptText": "Lily moves 6 desks into 6 equal rows. How many desks stand in each row?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0485",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "primesAndCommon",
+  "structureType": "storyPack_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 14,
+   "display": {
+    "fm": {
+     "a": 2,
+     "b": 7,
+     "kind": "lcmOf"
+    },
+    "promptText": "Rolls come in packs of 2 and juice comes in packs of 7. What is the smallest number of each Rosa can buy to have equal amounts?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0052",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "factorCount",
+  "structureType": "storyRows_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "fm": {
+     "a": 2,
+     "n": 14,
+     "kind": "pairFor"
+    },
+    "promptText": "For the fair, Omar arranges 14 trading cards into equal rows of 2. How many rows of trading cards are there?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0205",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "nthMultiple",
+  "structureType": "storyBus_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 24,
+   "display": {
+    "fm": {
+     "b": 6,
+     "k": 4,
+     "kind": "nthMult"
+    },
+    "promptText": "A ferry departs every 6 minutes, and June plans to board the 4th departure. How many minutes in is that departure?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0358",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "factorPairs",
+  "structureType": "storyGarden_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "fm": {
+     "a": 2,
+     "n": 14,
+     "kind": "pairFor"
+    },
+    "promptText": "Omar sets out 14 seedlings across 2 equal garden rows. How many seedlings fill each row?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0511",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "primesAndCommon",
+  "structureType": "storyMeet_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 12,
+   "display": {
+    "fm": {
+     "a": 4,
+     "b": 6,
+     "kind": "lcmOf"
+    },
+    "promptText": "June jogs every 4 days and swims every 6 days, beginning today. After how many days do both land on the same day again?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0077",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "factorCount",
+  "structureType": "storyBags_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "fm": {
+     "a": 8,
+     "n": 24,
+     "kind": "pairFor"
+    },
+    "promptText": "Nora sorts 24 key chains into pouches of 8 each. How many pouches does Nora fill?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0230",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "nthMultiple",
+  "structureType": "storyPage_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 56,
+   "display": {
+    "fm": {
+     "b": 8,
+     "k": 7,
+     "kind": "nthMult"
+    },
+    "promptText": "Sam pastes 8 photos per album page. After filling 7 pages, how many photos has Sam pasted?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0383",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "factorPairs",
+  "structureType": "storyDesk_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "fm": {
+     "a": 9,
+     "n": 18,
+     "kind": "pairFor"
+    },
+    "promptText": "For the recital, Nora places 18 chairs in 9 equal rows. How many chairs make up each row?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0536",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "primesAndCommon",
+  "structureType": "storyPack_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 18,
+   "display": {
+    "fm": {
+     "a": 6,
+     "b": 9,
+     "kind": "lcmOf"
+    },
+    "promptText": "Pencils sell in boxes of 6 and erasers in boxes of 9. What is the smallest matching count Sam can reach of each?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0103",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "factorCount",
+  "structureType": "storyRows_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "fm": {
+     "a": 4,
+     "n": 32,
+     "kind": "pairFor"
+    },
+    "promptText": "Setting up the exhibit, Finn places 32 raffle tickets in equal rows of 4. How many rows of raffle tickets result?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0256",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "nthMultiple",
+  "structureType": "storyBus_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 55,
+   "display": {
+    "fm": {
+     "b": 11,
+     "k": 5,
+     "kind": "nthMult"
+    },
+    "promptText": "A shuttle leaves every 11 minutes; Amara tracks the 5th shuttle. How many minutes after opening does it leave?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0409",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "factorPairs",
+  "structureType": "storyGarden_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "fm": {
+     "a": 8,
+     "n": 32,
+     "kind": "pairFor"
+    },
+    "promptText": "Finn lays out 32 bulbs over 8 identical beds. How many bulbs land in each bed?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0562",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "primesAndCommon",
+  "structureType": "storyMeet_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 36,
+   "display": {
+    "fm": {
+     "a": 12,
+     "b": 18,
+     "kind": "lcmOf"
+    },
+    "promptText": "Amara backs up files every 12 days and cleans the desk every 18 days, starting now. In how many days do the chores coincide again?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0128",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "factorCount",
+  "structureType": "storyBags_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "fm": {
+     "a": 8,
+     "n": 32,
+     "kind": "pairFor"
+    },
+    "promptText": "Ava boxes 32 bookmarks with exactly 8 per box. How many boxes does Ava fill?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0281",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "nthMultiple",
+  "structureType": "storyPage_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 45,
+   "display": {
+    "fm": {
+     "b": 15,
+     "k": 3,
+     "kind": "nthMult"
+    },
+    "promptText": "Kai prints 15 labels per sheet. Once 3 sheets are done, how many labels has Kai printed?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0434",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "factorPairs",
+  "structureType": "storyDesk_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "fm": {
+     "a": 10,
+     "n": 40,
+     "kind": "pairFor"
+    },
+    "promptText": "Ava arranges 40 folding seats into 10 matched rows. How many seats sit in each row?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-app-b0821-0587",
+  "modeId": "factorsMultiples",
+  "itemFamily": "application",
+  "subskill": "primesAndCommon",
+  "structureType": "storyPack_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 42,
+   "display": {
+    "fm": {
+     "a": 14,
+     "b": 21,
+     "kind": "lcmOf"
+    },
+    "promptText": "Bolts ship in bags of 14 and nuts in bags of 21. What is the least equal quantity of each that Kai can assemble?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0001",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "factorCount",
+  "structureType": "isFactorJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "k": 3,
+     "n": 12,
+     "kind": "isFactor"
+    },
+    "truth": true,
+    "promptText": "Mina says 3 is a factor of 12. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0157",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "nthMultiple",
+  "structureType": "isMultipleJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "b": 2,
+     "k": 8,
+     "kind": "isMultiple"
+    },
+    "truth": true,
+    "promptText": "Mina says 8 is a multiple of 2. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0313",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "factorPairs",
+  "structureType": "pairJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "a": 3,
+     "b": 4,
+     "n": 12,
+     "kind": "pairSaid"
+    },
+    "truth": true,
+    "promptText": "Mina pairs 3 with 4 as a factor pair of 12. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0469",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "primesAndCommon",
+  "structureType": "primeJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "n": 5,
+     "kind": "primeSaid"
+    },
+    "truth": true,
+    "promptText": "Mina calls 5 a prime number. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0063",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "factorCount",
+  "structureType": "rowsJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "k": 3,
+     "n": 9,
+     "kind": "isFactor"
+    },
+    "truth": true,
+    "promptText": "Kai says 9 counters can make equal rows of 3 with none left over. Is Kai right?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0219",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "nthMultiple",
+  "structureType": "nthSaidJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "b": 2,
+     "k": 5,
+     "kind": "nthSaid",
+     "said": 10
+    },
+    "truth": true,
+    "promptText": "Kai says the 5th multiple of 2 is 10. Is Kai right?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0375",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "factorPairs",
+  "structureType": "sumTrap_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Kai pairs 5 and 3 for 8 because 5 + 3 = 8. Is Kai right?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0531",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "primesAndCommon",
+  "structureType": "evenPrimeJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "kind": "authored"
+    },
+    "truth": true,
+    "promptText": "Kai says 2 is a prime number even though it is even. Is Kai right? Think about the factors of 2."
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0019",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "factorCount",
+  "structureType": "isFactorJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "k": 7,
+     "n": 14,
+     "kind": "isFactor"
+    },
+    "truth": true,
+    "promptText": "Omar lists 7 among the factors of 14. Does it belong there?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0175",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "nthMultiple",
+  "structureType": "isMultipleJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "b": 6,
+     "k": 24,
+     "kind": "isMultiple"
+    },
+    "truth": true,
+    "promptText": "Omar marks 24 on the count-by-6 list. Does it belong there?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0331",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "factorPairs",
+  "structureType": "pairJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "a": 2,
+     "b": 7,
+     "n": 14,
+     "kind": "pairSaid"
+    },
+    "truth": true,
+    "promptText": "Omar writes 2 x 7 in the factor-pair list for 14. Does it belong?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0487",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "primesAndCommon",
+  "structureType": "primeJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "n": 17,
+     "kind": "primeSaid"
+    },
+    "truth": true,
+    "promptText": "Omar sorts 17 into the prime bin. Does it belong there?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0081",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "factorCount",
+  "structureType": "rowsJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "k": 5,
+     "n": 20,
+     "kind": "isFactor"
+    },
+    "truth": true,
+    "promptText": "Rosa arranges 20 chairs into equal rows of 5 and expects none left over. Will it work out?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0237",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "nthMultiple",
+  "structureType": "nthSaidJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "b": 6,
+     "k": 6,
+     "kind": "nthSaid",
+     "said": 36
+    },
+    "truth": true,
+    "promptText": "Rosa records 36 as the 6th multiple of 6. Does the record hold?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0393",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "factorPairs",
+  "structureType": "sumTrap_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Rosa adds 17 + 13 = 30 and declares (17, 13) a factor pair of 30. Does the logic hold?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0547",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "primesAndCommon",
+  "structureType": "evenPrimeJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "kind": "authored"
+    },
+    "truth": true,
+    "promptText": "Rosa claims 2 is the only even prime number. Is the claim right? Think about the factors of 2."
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0037",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "factorCount",
+  "structureType": "isFactorJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "k": 8,
+     "n": 32,
+     "kind": "isFactor"
+    },
+    "truth": true,
+    "promptText": "Finn certifies 8 as a factor of 32. Is the certification valid?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0193",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "nthMultiple",
+  "structureType": "isMultipleJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "b": 11,
+     "k": 55,
+     "kind": "isMultiple"
+    },
+    "truth": true,
+    "promptText": "Finn certifies 55 as a multiple of 11. Is the certification valid?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0349",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "factorPairs",
+  "structureType": "pairJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "a": 4,
+     "b": 8,
+     "n": 32,
+     "kind": "pairSaid"
+    },
+    "truth": true,
+    "promptText": "Finn certifies (4, 8) as a factor pair of 32. Valid?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0505",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "primesAndCommon",
+  "structureType": "primeJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "n": 31,
+     "kind": "primeSaid"
+    },
+    "truth": true,
+    "promptText": "Finn certifies 31 as prime. Is the certification valid?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0099",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "factorCount",
+  "structureType": "rowsJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "k": 9,
+     "n": 45,
+     "kind": "isFactor"
+    },
+    "truth": true,
+    "promptText": "Nora plans equal rows of 9 from 45 tiles with zero remainder. Is the plan sound?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0255",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "nthMultiple",
+  "structureType": "nthSaidJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "b": 11,
+     "k": 7,
+     "kind": "nthSaid",
+     "said": 77
+    },
+    "truth": true,
+    "promptText": "Nora certifies the 7th multiple of 11 as 77. Valid?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0411",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "factorPairs",
+  "structureType": "sumTrap_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Nora's rule \"if they add to 60, they factor 60\" blesses (28, 32). Is the rule sound?"
+   }
+  }
+ },
+ {
+  "itemId": "factorsMultiples-conc-b0821-0563",
+  "modeId": "factorsMultiples",
+  "itemFamily": "conceptual",
+  "subskill": "primesAndCommon",
+  "structureType": "evenPrimeJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "fm": {
+     "kind": "authored"
+    },
+    "truth": true,
+    "promptText": "Nora asserts that 2 belongs on the prime list as its only even member. Sound assertion? Think about the factors of 2."
+   }
+  }
+ },
+ {
   "itemId": "factorsMultiples-proc-b0821-0040",
   "modeId": "factorsMultiples",
   "itemFamily": "procedural",
@@ -10731,6 +20371,1465 @@ export const SEED_ITEMS = [
     "promptText": "Compute the least common multiple of 12 and 18 exactly."
    },
    "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0001",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "partWhole",
+  "structureType": "storyEat_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "1/2",
+   "choices": [
+    "1/3",
+    "1/2",
+    "2/1"
+   ],
+   "display": {
+    "frac": {
+     "d": 2,
+     "n": 1,
+     "kind": "name"
+    },
+    "promptText": "Sam cuts a pizza into 2 equal pieces and eats 1 piece. What fraction of the pizza does Sam eat?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0154",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "fractionAsNumber",
+  "structureType": "storyTrail_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "1/2",
+   "choices": [
+    "1/3",
+    "1/2",
+    "2/1"
+   ],
+   "display": {
+    "frac": {
+     "d": 2,
+     "n": 1,
+     "kind": "name"
+    },
+    "promptText": "A trail is split into 2 equal parts. Mina walks 1 part from the start. What fraction of the trail has Mina walked?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0307",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "equivalence",
+  "structureType": "storyScoop_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "frac": {
+     "a": 1,
+     "b": 2,
+     "d2": 4,
+     "kind": "equivNum"
+    },
+    "promptText": "A recipe needs 1/2 cup of sugar. Luca has only a 1/4 cup scoop. How many scoops does Luca need?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0460",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "compareFractions",
+  "structureType": "storyShare_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "2/3",
+   "choices": [
+    "2/3",
+    "1/3"
+   ],
+   "display": {
+    "frac": {
+     "a": 2,
+     "b": 3,
+     "c": 1,
+     "d": 3,
+     "kind": "cmpPick"
+    },
+    "promptText": "Sam eats 2/3 of a sandwich. A friend eats 1/3 of a same-size sandwich. Pick the fraction that is more sandwich."
+   }
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0613",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "addLikeDenominators",
+  "structureType": "storyRead_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "2/3",
+   "choices": [
+    "4/3",
+    "2/3",
+    "2/6",
+    "3/3"
+   ],
+   "display": {
+    "frac": {
+     "a": 1,
+     "b": 1,
+     "d": 3,
+     "kind": "addLike"
+    },
+    "promptText": "Mina reads 1/3 of a book on Saturday and 1/3 on Sunday. What fraction of the book does Mina read in all?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0766",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "fractionOfSet",
+  "structureType": "storyGive_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "frac": {
+     "d": 2,
+     "n": 1,
+     "w": 12,
+     "kind": "ofSet"
+    },
+    "promptText": "Luca has 12 shells. Luca gives 1/2 of them to a friend. How many shells does Luca give away?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0026",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "partWhole",
+  "structureType": "storyPaint_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "2/3",
+   "choices": [
+    "2/3",
+    "1/3",
+    "2/1",
+    "3/2"
+   ],
+   "display": {
+    "frac": {
+     "d": 3,
+     "n": 2,
+     "kind": "name"
+    },
+    "promptText": "Ben splits a kite into 3 equal parts and paints 2 parts. What fraction of the kite is painted?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0179",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "fractionAsNumber",
+  "structureType": "storyRibbon_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "frac": {
+     "d": 3,
+     "n": 2,
+     "kind": "jumps"
+    },
+    "promptText": "Lily cuts a ribbon into 3 equal pieces and uses 2 of them. Lily has used ?/3 of the ribbon. What is the top number?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0052",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "partWhole",
+  "structureType": "storyEat_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "2/5",
+   "choices": [
+    "2/6",
+    "3/5",
+    "5/2",
+    "2/5"
+   ],
+   "display": {
+    "frac": {
+     "d": 5,
+     "n": 2,
+     "kind": "name"
+    },
+    "promptText": "At lunch, Ida slices a veggie pizza into 5 equal servings and eats 2 of them. What fraction of the veggie pizza does Ida eat?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0205",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "fractionAsNumber",
+  "structureType": "storyTrail_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "2/5",
+   "choices": [
+    "2/5",
+    "5/2",
+    "3/5",
+    "2/6"
+   ],
+   "display": {
+    "frac": {
+     "d": 5,
+     "n": 2,
+     "kind": "name"
+    },
+    "promptText": "A bike path is divided into 5 equal legs, and Omar rides 2 of them from the trailhead. What fraction of the path has Omar ridden?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0358",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "equivalence",
+  "structureType": "storyScoop_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "frac": {
+     "a": 1,
+     "b": 2,
+     "d2": 10,
+     "kind": "equivNum"
+    },
+    "promptText": "June must measure 1/2 cup of flour using a 1/10 cup scoop. How many scoops does June fill?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0511",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "compareFractions",
+  "structureType": "storyShare_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "4/5",
+   "choices": [
+    "4/5",
+    "2/5"
+   ],
+   "display": {
+    "frac": {
+     "a": 4,
+     "b": 5,
+     "c": 2,
+     "d": 5,
+     "kind": "cmpPick"
+    },
+    "promptText": "Ida finishes 4/5 of a wrap while a teammate finishes 2/5 of an identical wrap. Which fraction is the bigger share?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0664",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "addLikeDenominators",
+  "structureType": "storyRead_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "4/5",
+   "choices": [
+    "5/5",
+    "4/5",
+    "6/5",
+    "4/10"
+   ],
+   "display": {
+    "frac": {
+     "a": 2,
+     "b": 2,
+     "d": 5,
+     "kind": "addLike"
+    },
+    "promptText": "Omar finishes 2/5 of a comic before school and 2/5 after. What fraction of the comic does Omar finish in total?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0817",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "fractionOfSet",
+  "structureType": "storyGive_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 18,
+   "display": {
+    "frac": {
+     "d": 5,
+     "n": 2,
+     "w": 45,
+     "kind": "ofSet"
+    },
+    "promptText": "June collects 45 trading cards and trades away 2/5 of them at the fair. How many trading cards does June trade away?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0077",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "partWhole",
+  "structureType": "storyPaint_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "1/6",
+   "choices": [
+    "1/6",
+    "6/1",
+    "5/6",
+    "1/5"
+   ],
+   "display": {
+    "frac": {
+     "d": 6,
+     "n": 1,
+     "kind": "name"
+    },
+    "promptText": "Leo marks a wagon into 6 equal sections and paints 1 of them before dinner. What fraction of the wagon is painted?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0230",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "fractionAsNumber",
+  "structureType": "storyRibbon_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1,
+   "display": {
+    "frac": {
+     "d": 6,
+     "n": 1,
+     "kind": "jumps"
+    },
+    "promptText": "Nora snips a rope into 6 equal lengths and ties up 1 of them. That is ?/6 of the rope used. What is the top number?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0103",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "partWhole",
+  "structureType": "storyEat_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "3/10",
+   "choices": [
+    "3/11",
+    "10/3",
+    "7/10",
+    "3/10"
+   ],
+   "display": {
+    "frac": {
+     "d": 10,
+     "n": 3,
+     "kind": "name"
+    },
+    "promptText": "For the bake sale, Rosa portions a sheet cake into 10 equal servings and samples 3. What fraction of the sheet cake does Rosa eat?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0256",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "fractionAsNumber",
+  "structureType": "storyTrail_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "3/10",
+   "choices": [
+    "3/10",
+    "3/11",
+    "7/10",
+    "10/3"
+   ],
+   "display": {
+    "frac": {
+     "d": 10,
+     "n": 3,
+     "kind": "name"
+    },
+    "promptText": "A race course breaks into 10 equal segments. By the water station, Finn has run 3 segments. What fraction of the course has Finn run?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0409",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "equivalence",
+  "structureType": "storyScoop_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 14,
+   "display": {
+    "frac": {
+     "a": 7,
+     "b": 10,
+     "d2": 20,
+     "kind": "equivNum"
+    },
+    "promptText": "The batch calls for 7/10 cup of oats, but Amara owns just a 1/20 cup scoop. Exactly how many scoops does Amara measure?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0562",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "compareFractions",
+  "structureType": "storyShare_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "7/10",
+   "choices": [
+    "7/10",
+    "3/10"
+   ],
+   "display": {
+    "frac": {
+     "a": 7,
+     "b": 10,
+     "c": 3,
+     "d": 10,
+     "kind": "cmpPick"
+    },
+    "promptText": "Rosa consumes 7/10 of a burrito; a cousin consumes 3/10 of an identical burrito. Which fraction represents more food?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0715",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "addLikeDenominators",
+  "structureType": "storyRead_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "7/10",
+   "choices": [
+    "7/10",
+    "8/10",
+    "1/10",
+    "7/20"
+   ],
+   "display": {
+    "frac": {
+     "a": 3,
+     "b": 4,
+     "d": 10,
+     "kind": "addLike"
+    },
+    "promptText": "Finn records 3/10 of a podcast script in the morning and 4/10 at night. What fraction of the script does Finn record altogether?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0868",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "fractionOfSet",
+  "structureType": "storyGive_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 168,
+   "display": {
+    "frac": {
+     "d": 10,
+     "n": 7,
+     "w": 240,
+     "kind": "ofSet"
+    },
+    "promptText": "Amara organizes 240 raffle tickets and donates 7/10 of them to the school drive. How many raffle tickets does Amara donate?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0128",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "partWhole",
+  "structureType": "storyPaint_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "5/12",
+   "choices": [
+    "12/5",
+    "5/12",
+    "7/12",
+    "5/7"
+   ],
+   "display": {
+    "frac": {
+     "d": 12,
+     "n": 5,
+     "kind": "name"
+    },
+    "promptText": "Working all weekend, Theo divides a boat hull into 12 equal sections and finishes painting 5. What fraction of the boat hull is painted?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-app-b0821-0281",
+  "modeId": "fractions",
+  "itemFamily": "application",
+  "subskill": "fractionAsNumber",
+  "structureType": "storyRibbon_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 9,
+   "display": {
+    "frac": {
+     "d": 10,
+     "n": 9,
+     "kind": "jumps"
+    },
+    "promptText": "Ava portions a spool of yarn into 10 equal strands and knits with 9. The used yarn is ?/10 of the spool. What is the numerator?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0001",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "partWhole",
+  "structureType": "partPartTrap_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "frac": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Mina shades 1 of 3 equal parts and writes 1/2 — comparing shaded to unshaded. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0163",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "fractionAsNumber",
+  "structureType": "wholeJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "frac": {
+     "d": 2,
+     "n": 2,
+     "kind": "wholeSaid"
+    },
+    "truth": true,
+    "promptText": "Mina says 2/2 equals exactly one whole. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0313",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "equivalence",
+  "structureType": "equivJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "frac": {
+     "a": 1,
+     "b": 2,
+     "c": 2,
+     "d": 4,
+     "kind": "equivSaid"
+    },
+    "truth": true,
+    "promptText": "Mina says 1/2 and 2/4 are the same amount. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0463",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "compareFractions",
+  "structureType": "bigDenTrap_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "frac": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Mina says 1/3 beats 1/2 because 3 is bigger than 2. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0615",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "addLikeDenominators",
+  "structureType": "denTrap_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "frac": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Mina adds 1/3 + 1/3 and gets 2/6 by adding the bottoms too. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0771",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "fractionOfSet",
+  "structureType": "ofSetJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "frac": {
+     "d": 2,
+     "n": 1,
+     "w": 12,
+     "kind": "ofSetSaid",
+     "said": 6
+    },
+    "truth": true,
+    "promptText": "Mina figures 1/2 of 12 as 6. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0064",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "partWhole",
+  "structureType": "equalPartsJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "frac": {
+     "kind": "authored"
+    },
+    "truth": false,
+    "promptText": "June shares a pie into 2 wedges, one double the other. Do the pieces count as equal parts?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0224",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "fractionAsNumber",
+  "structureType": "closerEnd_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "1",
+   "choices": [
+    "1",
+    "0"
+   ],
+   "display": {
+    "frac": {
+     "d": 3,
+     "n": 2,
+     "kind": "closerEnd"
+    },
+    "promptText": "Nia places 2/3 on a 0-1 line. Which end is it nearer?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0019",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "partWhole",
+  "structureType": "partPartTrap_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "frac": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Omar colors 2 of 5 pieces and labels it 2/3, counting only the blank pieces below the line. Is Omar right?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0181",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "fractionAsNumber",
+  "structureType": "wholeJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "frac": {
+     "d": 5,
+     "n": 5,
+     "kind": "wholeSaid"
+    },
+    "truth": true,
+    "promptText": "Omar marks 5/5 as exactly 1 on the line. Does the mark belong there?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0329",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "equivalence",
+  "structureType": "equivJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "frac": {
+     "a": 2,
+     "b": 5,
+     "c": 4,
+     "d": 10,
+     "kind": "equivSaid"
+    },
+    "truth": true,
+    "promptText": "Omar pairs 2/5 with 4/10 as equivalents. Do they match?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0481",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "compareFractions",
+  "structureType": "bigDenTrap_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "frac": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Omar ranks 1/6 above 1/5 since 6 > 5. Does the ranking hold?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0633",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "addLikeDenominators",
+  "structureType": "denTrap_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "frac": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Omar sums 2/5 and 2/5 as 4/10, doubling the denominator. Does the sum hold?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0789",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "fractionOfSet",
+  "structureType": "ofSetJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "frac": {
+     "d": 5,
+     "n": 1,
+     "w": 45,
+     "kind": "ofSetSaid",
+     "said": 9
+    },
+    "truth": true,
+    "promptText": "Omar computes 1/5 of 45 and lands on 9. Does it check out?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0082",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "partWhole",
+  "structureType": "equalPartsJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "frac": {
+     "kind": "authored"
+    },
+    "truth": false,
+    "promptText": "For fractions to apply, Diego's cut of a loaf into 6 slices thick and thin must give equal parts. Does it?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0240",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "fractionAsNumber",
+  "structureType": "closerEnd_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "1",
+   "choices": [
+    "0",
+    "1"
+   ],
+   "display": {
+    "frac": {
+     "d": 6,
+     "n": 5,
+     "kind": "closerEnd"
+    },
+    "promptText": "Zoe slides a marker to 5/6. Toward which end does it lean?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0037",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "partWhole",
+  "structureType": "partPartTrap_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "frac": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Shading 3 of 10 sections, Finn declares the fraction 3/7. Is the declaration right?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0199",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "fractionAsNumber",
+  "structureType": "wholeJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "frac": {
+     "d": 10,
+     "n": 10,
+     "kind": "wholeSaid"
+    },
+    "truth": true,
+    "promptText": "Finn equates 10/10 with the whole number 1. Is the equation sound?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0345",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "equivalence",
+  "structureType": "equivJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "frac": {
+     "a": 7,
+     "b": 10,
+     "c": 14,
+     "d": 20,
+     "kind": "equivSaid"
+    },
+    "truth": true,
+    "promptText": "Finn certifies 7/10 = 14/20. Is the certification valid?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0499",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "compareFractions",
+  "structureType": "bigDenTrap_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "frac": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Finn's rule \"larger denominator, larger fraction\" makes 3/12 > 3/10. Is the rule sound here?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0651",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "addLikeDenominators",
+  "structureType": "denTrap_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "frac": {
+     "kind": "trapNo"
+    },
+    "truth": false,
+    "promptText": "Finn's worked answer for 3/10 + 4/10 reads 7/20. Is the work sound?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0807",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "fractionOfSet",
+  "structureType": "ofSetJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "frac": {
+     "d": 10,
+     "n": 1,
+     "w": 240,
+     "kind": "ofSetSaid",
+     "said": 24
+    },
+    "truth": true,
+    "promptText": "Finn certifies 1/10 of 240 = 24. Is the certification valid?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0100",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "partWhole",
+  "structureType": "equalPartsJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "frac": {
+     "kind": "authored"
+    },
+    "truth": false,
+    "promptText": "Judge Luca's division of a mosaic into 12 tiles, borders varying: are the parts truly equal?"
+   }
+  }
+ },
+ {
+  "itemId": "fractions-conc-b0821-0256",
+  "modeId": "fractions",
+  "itemFamily": "conceptual",
+  "subskill": "fractionAsNumber",
+  "structureType": "closerEnd_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "1",
+   "choices": [
+    "0",
+    "1"
+   ],
+   "display": {
+    "frac": {
+     "d": 12,
+     "n": 7,
+     "kind": "closerEnd"
+    },
+    "promptText": "Diego audits the position of 7/12. Which endpoint is closer?"
+   }
   }
  },
  {
@@ -11441,6 +22540,1377 @@ export const SEED_ITEMS = [
      "kind": "name"
     },
     "promptText": "Of 12 evenly spaced marks between 0 and 1, mark 11 corresponds to which fraction?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0001",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "shapeSides",
+  "structureType": "storySticks_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "shapeC": {
+     "kind": "sidesByName",
+     "name": "triangle"
+    },
+    "promptText": "Sam builds a triangle out of craft sticks, one stick per side. How many sticks does Sam need?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0154",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "symmetryLines",
+  "structureType": "storyFolds_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "shapeC": {
+     "kind": "symmetryByName",
+     "name": "square"
+    },
+    "promptText": "Sam cuts a paper square and finds every fold that makes matching halves. How many folds does Sam find?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0256",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "shapeProperties",
+  "structureType": "storyRightAngles_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "shapeC": {
+     "kind": "rightAnglesByName",
+     "name": "square"
+    },
+    "promptText": "Sam braces every right angle of a square picture frame with a corner bracket. How many brackets does Sam need?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0358",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "shapeClassification",
+  "structureType": "storyBins_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "shapeC": {
+     "kind": "authoredCount"
+    },
+    "promptText": "Sam sorts blocks into a bin for shapes with straight sides only. From a triangle, a square, and a circle, how many blocks land in the bin?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0477",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "lineFigures",
+  "structureType": "storyStrings_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "a straight path",
+   "choices": [
+    "a corner",
+    "a curved path",
+    "a circle",
+    "a straight path"
+   ],
+   "display": {
+    "shapeC": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "In art class, Mina models a stretched-tight kite string with a figure. Which one fits?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0060",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "shapeSides",
+  "structureType": "storyCorners_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "shapeC": {
+     "kind": "verticesByName",
+     "name": "pentagon"
+    },
+    "promptText": "June pins a paper pentagon to the board with one pin in every corner. How many pins does June use?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0213",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "symmetryLines",
+  "structureType": "storyMirror_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "authored"
+    },
+    "promptText": "June paints a capital letter A and folds the paper down the middle while wet. June expects the halves to match. Will they?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0315",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "shapeProperties",
+  "structureType": "storyEqualSides_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "shapeC": {
+     "kind": "sidesByName",
+     "name": "square"
+    },
+    "promptText": "Zoe glues one gem on each equal side of a square ornament. How many gems does Zoe glue?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0018",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "shapeSides",
+  "structureType": "storySticks_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "shapeC": {
+     "kind": "sidesByName",
+     "name": "hexagon"
+    },
+    "promptText": "To lay a hexagon garden border with one board per side, how many boards does Mina buy? Count carefully."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0171",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "symmetryLines",
+  "structureType": "storyFolds_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "shapeC": {
+     "kind": "symmetryByName",
+     "name": "pentagon"
+    },
+    "promptText": "A pentagon cookie cutter gets tested for matching-half folds. How many such folds does Mina count? Count carefully."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0273",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "shapeProperties",
+  "structureType": "storyParallel_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "shapeC": {
+     "kind": "parallelPairsByName",
+     "name": "square"
+    },
+    "promptText": "A square garden bed gets matching trim on every parallel pair of sides. How many trim colors does Mina pick?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0375",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "shapeClassification",
+  "structureType": "storyBins_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "shapeC": {
+     "kind": "authoredCount"
+    },
+    "promptText": "A sorting game asks Mina to keep only shapes with exactly 4 sides. Out of a rhombus, a trapezoid, and a hexagon, how many shapes are kept? Count carefully."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0494",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "lineFigures",
+  "structureType": "storyStrings_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "a ray",
+   "choices": [
+    "a point",
+    "a line segment",
+    "a circle",
+    "a ray"
+   ],
+   "display": {
+    "shapeC": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "Luca tags a flashlight beam shooting from the bulb in the class scrapbook with a math figure. Which tag fits?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0077",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "shapeSides",
+  "structureType": "storyCorners_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "shapeC": {
+     "kind": "verticesByName",
+     "name": "parallelogram"
+    },
+    "promptText": "A parallelogram tile gets one dab of glue at each vertex. How many dabs does Zoe squeeze? Count carefully."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0230",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "symmetryLines",
+  "structureType": "storyMirror_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "authored"
+    },
+    "promptText": "For the mirror-art wall, Zoe submits a paper hexagon. Do its two halves match across the middle? Look closely."
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0349",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "shapeProperties",
+  "structureType": "storySymPaint_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "shapeC": {
+     "kind": "symmetryByName",
+     "name": "triangle"
+    },
+    "promptText": "June paints every line of symmetry on a triangle mural stencil. How many painted lines is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0035",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "shapeSides",
+  "structureType": "storySticks_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "shapeC": {
+     "kind": "sidesByName",
+     "name": "octagon"
+    },
+    "promptText": "Luca bends wire into a octagon, one straight piece per side. How many pieces is that? Double-check your count."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0188",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "symmetryLines",
+  "structureType": "storyFolds_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "shapeC": {
+     "kind": "symmetryByName",
+     "name": "octagon"
+    },
+    "promptText": "Luca's octagon kite design must show every line of symmetry. How many lines does Luca draw? Double-check your count."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0290",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "shapeProperties",
+  "structureType": "storyDiagonals_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "shapeC": {
+     "n": 2,
+     "kind": "diagonals",
+     "name": "square"
+    },
+    "promptText": "Luca draws all the diagonals of a chalk square. How many chalk diagonals appear?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0392",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "shapeClassification",
+  "structureType": "storyBins_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "shapeC": {
+     "kind": "authoredCount"
+    },
+    "promptText": "Luca's robot grabs every block with an even number of sides. Given a nonagon, a decagon, and an octagon, how many blocks does it grab? Double-check your count."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0460",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "lineFigures",
+  "structureType": "storyStreets_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "parallel lines",
+   "choices": [
+    "intersecting lines",
+    "parallel lines",
+    "curved lines",
+    "perpendicular lines"
+   ],
+   "display": {
+    "shapeC": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "On Sam's walk, two straight roads never meet. Which figure pair does that model?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0094",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "shapeSides",
+  "structureType": "storyCorners_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 9,
+   "display": {
+    "shapeC": {
+     "kind": "verticesByName",
+     "name": "nonagon"
+    },
+    "promptText": "Omar sews a bead onto every corner of a nonagon patch. How many beads is that? Double-check your count."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0247",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "symmetryLines",
+  "structureType": "storyMirror_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "authored"
+    },
+    "promptText": "Omar checks a square quilt block with a small mirror on its middle line. Does the mirror image match the hidden half? Study it before answering."
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-app-b0821-0332",
+  "modeId": "linesShapes",
+  "itemFamily": "application",
+  "subskill": "shapeProperties",
+  "structureType": "storyRightAnglesBig_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 40,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+     ]
+    },
+    "promptText": "Omar checks all right angles on 10 square window panes. How many right angles does Omar check?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0001",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "shapeSides",
+  "structureType": "propJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "propSaid",
+     "name": "triangle",
+     "prop": "sides",
+     "said": 3
+    },
+    "promptText": "Mina says a triangle has 3 sides. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0220",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "symmetryLines",
+  "structureType": "mirrorJudgeTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "authored"
+    },
+    "promptText": "Ida says a butterfly with matching wings looks the same on both sides of a middle fold. Is Ida right?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0309",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "shapeProperties",
+  "structureType": "riddle_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "triangle",
+   "choices": [
+    "pentagon",
+    "square",
+    "triangle",
+    "rectangle"
+   ],
+   "display": {
+    "shapeC": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "June reads a shape riddle: I have 3 sides and 3 corners. Which shape is it?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0461",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "shapeClassification",
+  "structureType": "hierJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "authored"
+    },
+    "promptText": "Mina argues: Every square has 4 sides. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0611",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "lineFigures",
+  "structureType": "defJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "authored"
+    },
+    "promptText": "Theo explains: A straight path does not bend. Is Theo right?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0058",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "shapeSides",
+  "structureType": "sideVertexEq_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "sideVertexEq",
+     "name": "square"
+    },
+    "promptText": "June claims a square's side count and vertex count are equal. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0245",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "symmetryLines",
+  "structureType": "mirrorJudgeTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "authored"
+    },
+    "promptText": "Luca claims a capital letter B has two matching halves. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0366",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "shapeProperties",
+  "structureType": "claimJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": false,
+    "shapeC": {
+     "kind": "authored"
+    },
+    "promptText": "Priya tells the class: A pentagon has 4 sides. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0017",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "shapeSides",
+  "structureType": "propJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "propSaid",
+     "name": "hexagon",
+     "prop": "sides",
+     "said": 6
+    },
+    "promptText": "Omar says a hexagon has 6 sides. Is Omar right?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0156",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "symmetryLines",
+  "structureType": "symJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "symSaid",
+     "name": "square",
+     "said": 4
+    },
+    "promptText": "Lily says a square has 4 lines of symmetry. Is Lily right?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0325",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "shapeProperties",
+  "structureType": "riddle_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "rhombus",
+   "choices": [
+    "square",
+    "rhombus",
+    "rectangle",
+    "trapezoid"
+   ],
+   "display": {
+    "shapeC": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "Diego reads a shape riddle: I have 4 equal sides but no right angles. Which shape is it?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0477",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "shapeClassification",
+  "structureType": "hierJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "authored"
+    },
+    "promptText": "Omar argues: Every square is also a rectangle. Is Omar right?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0629",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "lineFigures",
+  "structureType": "defJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "authored"
+    },
+    "promptText": "Ben explains: A line goes on forever in both directions. Is Ben right?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0077",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "shapeSides",
+  "structureType": "sideVertexEq_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "sideVertexEq",
+     "name": "hexagon"
+    },
+    "promptText": "Nora claims a hexagon's side count and vertex count are equal. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0197",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "symmetryLines",
+  "structureType": "moreSym_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "the pentagon",
+   "choices": [
+    "the pentagon",
+    "the right triangle"
+   ],
+   "display": {
+    "shapeC": {
+     "a": "pentagon",
+     "b": "right triangle",
+     "kind": "moreSym"
+    },
+    "promptText": "Sam compares fold lines: a pentagon against a right triangle. Which shape has more?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0384",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "shapeProperties",
+  "structureType": "claimJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "authored"
+    },
+    "promptText": "Theo tells the class: A trapezoid has 4 sides. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0033",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "shapeSides",
+  "structureType": "propJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "propSaid",
+     "name": "octagon",
+     "prop": "sides",
+     "said": 8
+    },
+    "promptText": "Finn says a octagon has 8 sides. Is Finn right?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0172",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "symmetryLines",
+  "structureType": "symJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "symSaid",
+     "name": "octagon",
+     "said": 8
+    },
+    "promptText": "Leo says a octagon has 8 lines of symmetry. Is Leo right?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0341",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "shapeProperties",
+  "structureType": "riddle_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "nonagon",
+   "choices": [
+    "octagon",
+    "decagon",
+    "heptagon",
+    "nonagon"
+   ],
+   "display": {
+    "shapeC": {
+     "kind": "authoredChoice"
+    },
+    "promptText": "Luca reads a shape riddle: I have 9 sides. Which shape is it?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0493",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "shapeClassification",
+  "structureType": "hierJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "authored"
+    },
+    "promptText": "Finn argues: Every square is a rhombus AND a rectangle. Is Finn right?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0645",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "lineFigures",
+  "structureType": "defJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "authored"
+    },
+    "promptText": "Priya explains: Parallel lines never meet. Is Priya right?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0095",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "shapeSides",
+  "structureType": "sideVertexEq_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "sideVertexEq",
+     "name": "octagon"
+    },
+    "promptText": "Ava claims a octagon's side count and vertex count are equal. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0213",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "symmetryLines",
+  "structureType": "moreSym_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "the nonagon",
+   "choices": [
+    "the parallelogram",
+    "the nonagon"
+   ],
+   "display": {
+    "shapeC": {
+     "a": "nonagon",
+     "b": "parallelogram",
+     "kind": "moreSym"
+    },
+    "promptText": "Kai compares fold lines: a nonagon against a parallelogram. Which shape has more?"
+   }
+  }
+ },
+ {
+  "itemId": "linesShapes-conc-b0821-0403",
+  "modeId": "linesShapes",
+  "itemFamily": "conceptual",
+  "subskill": "shapeProperties",
+  "structureType": "claimJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "shapeC": {
+     "kind": "authored"
+    },
+    "promptText": "Rosa claims: A dodecagon has 12 sides. Is Rosa right?"
    }
   }
  },
@@ -12194,6 +24664,1421 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "measurement-app-b0821-0001",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "lengthConvert",
+  "structureType": "storyGrow_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "counting": {
+     "have": 7,
+     "kind": "gap",
+     "target": 12
+    },
+    "promptText": "Sam's bean plant was 7 cm on Monday and 12 cm on Friday. How many centimetres did it grow?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0137",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "massVolumeConvert",
+  "structureType": "storyPetGain_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "counting": {
+     "have": 3,
+     "kind": "gap",
+     "target": 7
+    },
+    "promptText": "Sam's puppy weighed 3 kg in spring and 7 kg now. How many kilograms did it gain?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0256",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "benchmarkEstimate",
+  "structureType": "storyGuessOff_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "counting": {
+     "have": 6,
+     "kind": "gap",
+     "target": 9
+    },
+    "promptText": "Sam guessed a leaf at 6 cm; the ruler says 9 cm. By how many centimetres was the guess off?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0358",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "compareOrder",
+  "structureType": "storyBoatRace_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "red",
+   "choices": [
+    "red",
+    "blue"
+   ],
+   "display": {
+    "measure": {
+     "a": 12,
+     "b": 9,
+     "kind": "cmp",
+     "pickLarger": true
+    },
+    "promptText": "Sam watches two paper boats: the red one floats 12 m and the blue one 9 m. Which boat went farther, red or blue?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0460",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "multiStepMeasure",
+  "structureType": "storyFence_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 16,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      5,
+      7,
+      4
+     ]
+    },
+    "promptText": "Sam builds a garden edge from strips of 5 cm, 7 cm, and 4 cm. How long is the edge in centimetres?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0094",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "lengthConvert",
+  "structureType": "storyStripJoin",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 17,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      11,
+      6
+     ]
+    },
+    "promptText": "Zoe glues a 11 cm strip of ribbon to a 6 cm strip for a card. How many centimetres of ribbon is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0230",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "massVolumeConvert",
+  "structureType": "storyPourIn",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 17,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      11,
+      6
+     ]
+    },
+    "promptText": "Two watering cans, 11 L and 6 L, both go onto June's garden. How many litres of water is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0298",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "benchmarkEstimate",
+  "structureType": "storySensibleLabel",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "2 g",
+   "choices": [
+    "2 g",
+    "2 kg"
+   ],
+   "display": {
+    "measure": {
+     "kind": "pickLabel"
+    },
+    "promptText": "For a teabag, should June write 2 g or 2 kg? Pick the sensible label."
+   }
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0018",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "lengthConvert",
+  "structureType": "storyGrow_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 35,
+   "display": {
+    "counting": {
+     "have": 27,
+     "kind": "gap",
+     "target": 62
+    },
+    "promptText": "The sunflower by Mina's window rose from 27 cm to 62 cm. How many centimetres taller is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0154",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "massVolumeConvert",
+  "structureType": "storySoupML",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2000,
+   "display": {
+    "measure": {
+     "kind": "convert",
+     "pair": "L>mL",
+     "amount": 2
+    },
+    "promptText": "A lemonade cooler of 2 L stands at Mina's stall. How many millilitres is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0273",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "benchmarkEstimate",
+  "structureType": "storyGuessOff_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 22,
+   "display": {
+    "counting": {
+     "have": 70,
+     "kind": "gap",
+     "target": 92
+    },
+    "promptText": "Before measuring a scooter, Mina guessed 70 cm. It is really 92 cm. How many centimetres off was the guess?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0375",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "compareOrder",
+  "structureType": "storyJarCompare",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "the honey jar",
+   "choices": [
+    "the syrup jar",
+    "the honey jar"
+   ],
+   "display": {
+    "measure": {
+     "a": 2000,
+     "b": 1500,
+     "kind": "cmp"
+    },
+    "promptText": "Two jars sit on Mina's shelf: honey at 2 L, syrup at 1500 mL. Which holds more?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0477",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "multiStepMeasure",
+  "structureType": "storyFence_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 80,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      34,
+      27,
+      19
+     ]
+    },
+    "promptText": "Three sticks — 34 cm, 27 cm, 19 cm — line up along Mina's flower bed. What total length is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0043",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "lengthConvert",
+  "structureType": "storyTrailMetres",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1000,
+   "display": {
+    "measure": {
+     "kind": "convert",
+     "pair": "km>m",
+     "amount": 1
+    },
+    "promptText": "The forest loop near June's camp is 1 km around. What is that in metres?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0179",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "massVolumeConvert",
+  "structureType": "storyFlourG",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1000,
+   "display": {
+    "measure": {
+     "kind": "convert",
+     "pair": "kg>g",
+     "amount": 1
+    },
+    "promptText": "Omar's bakery order needs 1 kg of flour. The scale shows grams. How many grams is the order?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0315",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "benchmarkEstimate",
+  "structureType": "storyRoundWalk",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 310,
+   "display": {
+    "measure": {
+     "n": 312,
+     "kind": "roundTen"
+    },
+    "promptText": "Omar walks 312 m to school. Rounded to the nearest ten, how many metres is the walk?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0052",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "lengthConvert",
+  "structureType": "storyBannerCm",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 234,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      200,
+      34
+     ]
+    },
+    "promptText": "Sam sews a banner 2 m 34 cm long. The shop measures in centimetres. How many centimetres long is it?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0188",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "massVolumeConvert",
+  "structureType": "storyJuiceMix_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 630,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      250,
+      380
+     ]
+    },
+    "promptText": "Into the punch bowl Mina pours 250 mL and then 380 mL. What volume in millilitres is in the bowl?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0324",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "benchmarkEstimate",
+  "structureType": "storyRoundPier",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 500,
+   "display": {
+    "measure": {
+     "n": 534,
+     "kind": "roundHundred"
+    },
+    "promptText": "Mina reads that the pier is 534 m long. How many metres is that, to the nearest hundred?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0392",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "compareOrder",
+  "structureType": "storyParcelHeaviest",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "2100 g",
+   "choices": [
+    "2100 g",
+    "1800 g",
+    "2 kg"
+   ],
+   "display": {
+    "measure": {
+     "kind": "cmp3",
+     "values": [
+      2000,
+      1800,
+      2100
+     ]
+    },
+    "promptText": "Three parcels wait at Sam's door: 2 kg, 1800 g, and 2100 g. Which parcel is heaviest?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0494",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "multiStepMeasure",
+  "structureType": "storyRecipeMore_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 180,
+   "display": {
+    "counting": {
+     "have": 320,
+     "kind": "gap",
+     "target": 500
+    },
+    "promptText": "A recipe of Sam's needs 500 mL of water, and the measuring cup already holds 320 mL. How many more millilitres must Sam add?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0077",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "lengthConvert",
+  "structureType": "storyRaceKm",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1,
+   "display": {
+    "measure": {
+     "kind": "convertUp",
+     "pair": "km>m",
+     "total": 1000
+    },
+    "promptText": "The charity walk June joins is 1000 m long. How many kilometres is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0213",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "massVolumeConvert",
+  "structureType": "storyFeedGrams",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4490,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      4000,
+      490
+     ]
+    },
+    "promptText": "Omar buys 4 kg 490 g of birdseed. The feeder chart wants grams. How many grams of seed is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-app-b0821-0349",
+  "modeId": "measurement",
+  "itemFamily": "application",
+  "subskill": "benchmarkEstimate",
+  "structureType": "storyEstimateOff",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 68,
+   "display": {
+    "counting": {
+     "have": 175,
+     "kind": "gap",
+     "target": 243
+    },
+    "promptText": "Omar estimated the gym at 175 m; it measures 243 m. How many metres off was Omar's estimate?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0001",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "lengthConvert",
+  "structureType": "whichLongerTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "the 12 cm one",
+   "choices": [
+    "the 12 cm one",
+    "the 9 cm one"
+   ],
+   "display": {
+    "measure": {
+     "a": 12,
+     "b": 9,
+     "kind": "cmp",
+     "pickLarger": true
+    },
+    "promptText": "Mina holds a 12 cm straw and a 9 cm straw. Which straw is longer?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0155",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "massVolumeConvert",
+  "structureType": "whichHeavierTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "the 12 kg one",
+   "choices": [
+    "the 9 kg one",
+    "the 12 kg one"
+   ],
+   "display": {
+    "measure": {
+     "a": 12,
+     "b": 9,
+     "kind": "cmp",
+     "pickLarger": true
+    },
+    "promptText": "Mina lifts a 12 kg bag and a 9 kg bag. Which bag is heavier?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0309",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "benchmarkEstimate",
+  "structureType": "estimateJudgeTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "measure": {
+     "kind": "claim"
+    },
+    "promptText": "Mina estimates a goldfish at 5 cm. Does that estimate make sense?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0464",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "compareOrder",
+  "structureType": "transitiveTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "the rope",
+   "choices": [
+    "the scarf",
+    "the ribbon",
+    "the rope"
+   ],
+   "display": {
+    "measure": {
+     "kind": "pickLabel"
+    },
+    "promptText": "Mina knows the rope is longer than the scarf, and the scarf is longer than the ribbon. Which is the longest of the three?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0616",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "multiStepMeasure",
+  "structureType": "joinPlanTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "7 + 6",
+   "choices": [
+    "6 - 7",
+    "7 - 6",
+    "7 + 6"
+   ],
+   "display": {
+    "measure": {
+     "a": 7,
+     "b": 6,
+     "op": "+",
+     "kind": "plan"
+    },
+    "promptText": "Mina tapes a 7 cm strip to a 6 cm strip. Which number sentence finds the new length?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0027",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "lengthConvert",
+  "structureType": "unitScaleJudgeTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "measure": {
+     "kind": "claim"
+    },
+    "promptText": "Ida says a bed is about 2 m long. Is Ida right?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0181",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "massVolumeConvert",
+  "structureType": "massSenseJudgeTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "measure": {
+     "kind": "claim"
+    },
+    "promptText": "Ida says a bag of rice holds about 2 kg. Is Ida right?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0334",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "benchmarkEstimate",
+  "structureType": "bestUnitPickTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "L",
+   "choices": [
+    "g",
+    "mL",
+    "kg",
+    "L"
+   ],
+   "display": {
+    "measure": {
+     "kind": "pickLabel"
+    },
+    "promptText": "To measure the water in a paddling pool, which unit should Theo use?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0053",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "lengthConvert",
+  "structureType": "convJudgeMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "measure": {
+     "kind": "claim"
+    },
+    "promptText": "Luca writes: 3 m is 300 cm. Is Luca right?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0207",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "massVolumeConvert",
+  "structureType": "convJudgeMassMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "measure": {
+     "kind": "claim"
+    },
+    "promptText": "Luca writes: 2 kg is 2000 g. Is Luca right?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0360",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "benchmarkEstimate",
+  "structureType": "roundJudgeMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "measure": {
+     "n": 23,
+     "kind": "roundSaid",
+     "said": 20,
+     "place": 10
+    },
+    "promptText": "Luca rounds 23 cm to the nearest ten and gets 20 cm. Is Luca right?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0514",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "compareOrder",
+  "structureType": "bigNumberTrapMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "measure": {
+     "a": 300,
+     "b": 200,
+     "kind": "cmpSaid",
+     "saidLarger": true
+    },
+    "promptText": "Luca says 300 cm must be more than 2 m because its number is bigger. Is Luca right?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0666",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "multiStepMeasure",
+  "structureType": "twoStepJudgeMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "measure": {
+     "a": 34,
+     "b": 27,
+     "c": 15,
+     "kind": "twoStepSaid",
+     "said": 46
+    },
+    "promptText": "Luca joins boards of 34 cm and 27 cm, then cuts off 15 cm, and reports 46 cm. Is Luca right?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0078",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "lengthConvert",
+  "structureType": "crossLonger_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "420 cm",
+   "choices": [
+    "420 cm",
+    "4 m"
+   ],
+   "display": {
+    "measure": {
+     "a": 420,
+     "b": 400,
+     "kind": "cmp"
+    },
+    "promptText": "Which stretch is longer, 420 cm or 4 m? Ava converts to check."
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0232",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "massVolumeConvert",
+  "structureType": "crossHeavierMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "5400 g",
+   "choices": [
+    "5 kg",
+    "5400 g"
+   ],
+   "display": {
+    "measure": {
+     "a": 5400,
+     "b": 5000,
+     "kind": "cmp"
+    },
+    "promptText": "Ava weighs 5400 g against 5 kg. Which side is heavier?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0386",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "benchmarkEstimate",
+  "structureType": "estimateOrExactMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "measure": {
+     "kind": "claim"
+    },
+    "promptText": "Omar is judging how heavy a pumpkin feels. Does Omar need an EXACT measure, or is an estimate enough? Omar says an estimate is enough. Is Omar right?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0104",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "lengthConvert",
+  "structureType": "factorSlipJudge",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "measure": {
+     "kind": "convertSaid",
+     "pair": "m>cm",
+     "said": 300,
+     "amount": 3
+    },
+    "promptText": "Kai converts 3 m and writes 300 cm. Is Kai right?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0258",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "massVolumeConvert",
+  "structureType": "factorSlipMassJudge",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "measure": {
+     "kind": "convertSaid",
+     "pair": "kg>g",
+     "said": 2000,
+     "amount": 2
+    },
+    "promptText": "Kai converts 2 kg and writes 2000 g. Is Kai right?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0412",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "benchmarkEstimate",
+  "structureType": "roundJudgeBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "measure": {
+     "n": 234,
+     "kind": "roundSaid",
+     "said": 200,
+     "place": 100
+    },
+    "promptText": "Nia rounds 234 cm to the nearest hundred and gets 200 cm. Is Nia right?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0565",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "compareOrder",
+  "structureType": "equalTrapBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "measure": {
+     "a": 200,
+     "b": 200,
+     "kind": "eqSaid"
+    },
+    "promptText": "Kai says 2 m and 200 cm are exactly the same length. Is Kai right?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0718",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "multiStepMeasure",
+  "structureType": "mixedSlipJudgeBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "measure": {
+     "m": 2,
+     "cm": 40,
+     "kind": "mixedSaid",
+     "said": 240
+    },
+    "promptText": "Nia converts 2 m 40 cm and writes 240 cm. Is Nia right?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0129",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "lengthConvert",
+  "structureType": "whichAmountBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "choices": [
+    4,
+    3000,
+    30,
+    3
+   ],
+   "display": {
+    "measure": {
+     "kind": "convertUp",
+     "pair": "km>m",
+     "total": 3000
+    },
+    "promptText": "How many km make 3000 m? June picks the amount."
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0283",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "massVolumeConvert",
+  "structureType": "enoughVolumeJudge",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": false,
+    "measure": {
+     "kind": "enough",
+     "need": 4600,
+     "haveSmall": 4000
+    },
+    "promptText": "June must pour 4600 mL, and the 4 L bottle is full. Does the bottle hold enough?"
+   }
+  }
+ },
+ {
+  "itemId": "measurement-conc-b0821-0438",
+  "modeId": "measurement",
+  "itemFamily": "conceptual",
+  "subskill": "benchmarkEstimate",
+  "structureType": "closestSumBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 400,
+   "choices": [
+    300,
+    400,
+    600,
+    500
+   ],
+   "display": {
+    "measure": {
+     "a": 186,
+     "b": 219,
+     "kind": "closestSum"
+    },
+    "promptText": "June joins a 186 cm board and a 219 cm board. Which estimate is closest to the total?"
+   }
+  }
+ },
+ {
   "itemId": "measurement-proc-b0821-0001",
   "modeId": "measurement",
   "itemFamily": "procedural",
@@ -12876,6 +26761,1431 @@ export const SEED_ITEMS = [
     "promptText": "A path is between 190 m and 210 m long. The halfway estimate = ? m"
    },
    "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0001",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "countCoins",
+  "structureType": "storyPocket_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 16,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      10,
+      5,
+      1
+     ]
+    },
+    "promptText": "Sam empties a pocket at the craft table: coins worth 10, 5, 1 cents. How many cents does Sam have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0154",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "makeChange",
+  "structureType": "storyShop_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "counting": {
+     "back": 7,
+     "kind": "countBack",
+     "start": 10
+    },
+    "promptText": "At the lemonade stand, Sam pays 10 cents for a 7-cent sticker. How many cents come back as change?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0307",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "coinEquivalence",
+  "structureType": "storyMachine_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "money": {
+     "per": 5,
+     "kind": "trade",
+     "fromCents": 10
+    },
+    "promptText": "The coin machine takes Sam's 1 dime and gives back only nickels. How many nickels slide out?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0460",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "moneyReasoning",
+  "structureType": "storySpend_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "counting": {
+     "back": 7,
+     "kind": "countBack",
+     "start": 10
+    },
+    "promptText": "Sam takes 10 cents to the fair and buys a 7-cent sticker. How many cents does Sam still have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0060",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "countCoins",
+  "structureType": "storyEarnCoin_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 18,
+   "display": {
+    "counting": {
+     "n": 8,
+     "kind": "moreLess",
+     "delta": 10
+    },
+    "promptText": "With 8 cents saved, June drops one more dime into the jar. What is the new total of cents?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0213",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "makeChange",
+  "structureType": "storySaveUp_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "counting": {
+     "have": 15,
+     "kind": "gap",
+     "target": 20
+    },
+    "promptText": "A sticker costs 20 cents, and June has 15 cents so far. How many cents are still missing?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0366",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "coinEquivalence",
+  "structureType": "storySwap_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "money": {
+     "av": 15,
+     "bv": 15,
+     "kind": "eq"
+    },
+    "truth": true,
+    "promptText": "June suggests swapping 3 nickels for 15 pennies, value for value. Is the trade fair?"
+   }
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0519",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "moneyReasoning",
+  "structureType": "storyTwoItems_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 17,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      11,
+      6
+     ]
+    },
+    "promptText": "A sticker costs 11 cents and a bookmark costs 6 cents. June buys both. What is the total cost in cents?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0018",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "countCoins",
+  "structureType": "storyPocket_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 36,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      25,
+      10,
+      1
+     ]
+    },
+    "promptText": "Mina lines up coins worth 25, 10, 1 cents. What is the total number of cents?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0171",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "makeChange",
+  "structureType": "storyShop_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "counting": {
+     "back": 18,
+     "kind": "countBack",
+     "start": 25
+    },
+    "promptText": "Mina hands 25 cents to the seller for a sticker that costs 18 cents. How many cents of change does Mina get?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0324",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "coinEquivalence",
+  "structureType": "storyMachine_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "money": {
+     "per": 5,
+     "kind": "trade",
+     "fromCents": 25
+    },
+    "promptText": "Mina feeds 1 quarter into the change machine set to nickels. How many nickels does it return?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0477",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "moneyReasoning",
+  "structureType": "storySpend_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 13,
+   "display": {
+    "counting": {
+     "back": 37,
+     "kind": "countBack",
+     "start": 50
+    },
+    "promptText": "After buying a sticker for 37 cents out of 50 cents, how many cents are left in Mina's pocket?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0077",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "countCoins",
+  "structureType": "storyEarnCoin_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 72,
+   "display": {
+    "counting": {
+     "n": 67,
+     "kind": "moreLess",
+     "delta": 5
+    },
+    "promptText": "Omar's jar holds 67 cents. Omar earns one more nickel for helping. How many cents are in the jar now?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0230",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "makeChange",
+  "structureType": "storySaveUp_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 19,
+   "display": {
+    "counting": {
+     "have": 6,
+     "kind": "gap",
+     "target": 25
+    },
+    "promptText": "Zoe saved 6 cents toward a 25-cent sticker. How many more cents does Zoe need?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0383",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "coinEquivalence",
+  "structureType": "storySwap_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "money": {
+     "av": 50,
+     "bv": 50,
+     "kind": "eq"
+    },
+    "truth": true,
+    "promptText": "At the trading post, Omar offers 2 quarters for a friend's 10 nickels. Is that a fair trade?"
+   }
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0536",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "moneyReasoning",
+  "structureType": "storyTwoItems_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 80,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      63,
+      17
+     ]
+    },
+    "promptText": "Zoe buys a 63-cent sticker and a 17-cent bookmark. How many cents does Zoe spend in all?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0035",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "countCoins",
+  "structureType": "storyPocket_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 135,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      100,
+      25,
+      10
+     ]
+    },
+    "promptText": "Luca empties a pocket at the craft table: coins worth 100, 25, 10 cents. How many cents does Luca have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0188",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "makeChange",
+  "structureType": "storyShop_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 33,
+   "display": {
+    "counting": {
+     "back": 67,
+     "kind": "countBack",
+     "start": 100
+    },
+    "promptText": "At the craft table, Luca pays 100 cents for a 67-cent sticker. How many cents come back as change?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0341",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "coinEquivalence",
+  "structureType": "storyMachine_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "money": {
+     "per": 25,
+     "kind": "trade",
+     "fromCents": 100
+    },
+    "promptText": "The coin machine takes Luca's $1 and gives back only quarters. How many quarters slide out?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0494",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "moneyReasoning",
+  "structureType": "storySpend_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 55,
+   "display": {
+    "counting": {
+     "back": 145,
+     "kind": "countBack",
+     "start": 200
+    },
+    "promptText": "Luca takes 200 cents to the fair and buys a 145-cent sticker. How many cents does Luca still have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0094",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "countCoins",
+  "structureType": "storyEarnCoin_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 192,
+   "display": {
+    "counting": {
+     "n": 167,
+     "kind": "moreLess",
+     "delta": 25
+    },
+    "promptText": "Zoe's jar holds 167 cents. Zoe earns one more quarter for helping. How many cents are in the jar now?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0247",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "makeChange",
+  "structureType": "storySaveUp_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 13,
+   "display": {
+    "counting": {
+     "have": 187,
+     "kind": "gap",
+     "target": 200
+    },
+    "promptText": "Omar saved 187 cents toward a 200-cent sticker. How many more cents does Omar need?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0400",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "coinEquivalence",
+  "structureType": "storySwap_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "money": {
+     "av": 150,
+     "bv": 150,
+     "kind": "eq"
+    },
+    "truth": true,
+    "promptText": "At the trading post, Zoe offers $1 and 2 quarters for a friend's 6 quarters. Is that a fair trade?"
+   }
+  }
+ },
+ {
+  "itemId": "money-app-b0821-0553",
+  "modeId": "money",
+  "itemFamily": "application",
+  "subskill": "moneyReasoning",
+  "structureType": "storyTwoItems_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 337,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      264,
+      73
+     ]
+    },
+    "promptText": "Omar buys a 264-cent sticker and a 73-cent bookmark. How many cents does Omar spend in all?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0001",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "countCoins",
+  "structureType": "coinValueJudge",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "money": {
+     "coin": "penny",
+     "kind": "coinValue",
+     "said": 1
+    },
+    "truth": true,
+    "promptText": "Mina says one penny is worth 1 cents. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0151",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "makeChange",
+  "structureType": "changeJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "money": {
+     "pay": 10,
+     "cost": 7,
+     "kind": "changeSaid",
+     "said": 3
+    },
+    "truth": true,
+    "promptText": "Ben pays 10 cents for a 7-cent snack and expects 3 cents back. Is Ben right?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0307",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "coinEquivalence",
+  "structureType": "eqJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "money": {
+     "av": 10,
+     "bv": 10,
+     "kind": "eq"
+    },
+    "truth": true,
+    "promptText": "Mina says 2 nickels and 1 dime are worth the same. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0457",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "moneyReasoning",
+  "structureType": "affordJudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "money": {
+     "cost": 7,
+     "have": 10,
+     "kind": "afford"
+    },
+    "truth": true,
+    "promptText": "Ben has 10 cents. A prize costs 7 cents. Can Ben buy it?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0026",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "countCoins",
+  "structureType": "countVsValueJudge",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "money": {
+     "kind": "countVsValue",
+     "said": 3,
+     "counts": {
+      "nickel": 3
+     }
+    },
+    "truth": false,
+    "promptText": "Ava counts 3 nickels as 3 cents — one cent per coin. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0213",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "makeChange",
+  "structureType": "whichChange_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "choices": [
+    3,
+    5,
+    7,
+    4
+   ],
+   "display": {
+    "counting": {
+     "back": 11,
+     "kind": "countBack",
+     "start": 15
+    },
+    "promptText": "Theo hands over 15 cents for a 11-cent eraser. Which change is right?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0368",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "coinEquivalence",
+  "structureType": "whichWorthMore_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "1 dime",
+   "choices": [
+    "1 dime",
+    "1 nickel and 3 pennies"
+   ],
+   "display": {
+    "money": {
+     "a": 10,
+     "b": 8,
+     "kind": "compare"
+    },
+    "promptText": "Two piles sit in front of Zoe: 1 dime, or 1 nickel and 3 pennies. Which one is worth more?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0518",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "moneyReasoning",
+  "structureType": "whichBank_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Bank B",
+   "choices": [
+    "Bank A",
+    "Bank B"
+   ],
+   "display": {
+    "money": {
+     "a": 10,
+     "b": 19,
+     "kind": "compare"
+    },
+    "promptText": "Bank A holds 10 cents and bank B holds 19 cents. Which bank should Lily pick for more money?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0051",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "countCoins",
+  "structureType": "quarterValueJudge",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "money": {
+     "coin": "quarter",
+     "kind": "coinValue",
+     "said": 25
+    },
+    "truth": true,
+    "promptText": "Luca says one quarter is worth 25 cents. Is Luca right?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0169",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "makeChange",
+  "structureType": "changeJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "money": {
+     "pay": 25,
+     "cost": 18,
+     "kind": "changeSaid",
+     "said": 7
+    },
+    "truth": true,
+    "promptText": "Ben pays 25 cents for a 18-cent snack and expects 7 cents back. Is Ben right?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0325",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "coinEquivalence",
+  "structureType": "eqJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "money": {
+     "av": 25,
+     "bv": 25,
+     "kind": "eq"
+    },
+    "truth": true,
+    "promptText": "Mina says 1 quarter and 5 nickels are worth the same. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0475",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "moneyReasoning",
+  "structureType": "affordJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "money": {
+     "cost": 37,
+     "have": 50,
+     "kind": "afford"
+    },
+    "truth": true,
+    "promptText": "Ben has 50 cents. A prize costs 37 cents. Can Ben buy it?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0076",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "countCoins",
+  "structureType": "whichTotalMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 65,
+   "choices": [
+    65,
+    70,
+    4,
+    60
+   ],
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      25,
+      25,
+      10,
+      5
+     ]
+    },
+    "promptText": "In Lily's purse sit 2 quarters, 1 dime and 1 nickel. Which amount is that?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0229",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "makeChange",
+  "structureType": "whichChange_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 19,
+   "choices": [
+    19,
+    20,
+    18
+   ],
+   "display": {
+    "counting": {
+     "back": 6,
+     "kind": "countBack",
+     "start": 25
+    },
+    "promptText": "Sam hands over 25 cents for a 6-cent eraser. Which change is right?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0384",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "coinEquivalence",
+  "structureType": "whichWorthMore_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "3 quarters",
+   "choices": [
+    "3 quarters",
+    "7 dimes"
+   ],
+   "display": {
+    "money": {
+     "a": 75,
+     "b": 70,
+     "kind": "compare"
+    },
+    "promptText": "Two piles sit in front of Kai: 3 quarters, or 7 dimes. Which one is worth more?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0534",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "moneyReasoning",
+  "structureType": "whichBank_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Bank B",
+   "choices": [
+    "Bank A",
+    "Bank B"
+   ],
+   "display": {
+    "money": {
+     "a": 30,
+     "b": 89,
+     "kind": "compare"
+    },
+    "promptText": "Bank A holds 30 cents and bank B holds 89 cents. Which bank should Lily pick for more money?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0101",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "countCoins",
+  "structureType": "notationJudge",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "money": {
+     "kind": "notation",
+     "cents": 130,
+     "saidD": "1.30"
+    },
+    "truth": true,
+    "promptText": "Nia writes 130 cents as $1.30. Is Nia right?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0187",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "makeChange",
+  "structureType": "changeJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "money": {
+     "pay": 100,
+     "cost": 67,
+     "kind": "changeSaid",
+     "said": 33
+    },
+    "truth": true,
+    "promptText": "Ben pays 100 cents for a 67-cent snack and expects 33 cents back. Is Ben right?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0343",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "coinEquivalence",
+  "structureType": "eqJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "money": {
+     "av": 100,
+     "bv": 100,
+     "kind": "eq"
+    },
+    "truth": true,
+    "promptText": "Mina says $1 and 4 quarters are worth the same. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0493",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "moneyReasoning",
+  "structureType": "affordJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "money": {
+     "cost": 145,
+     "have": 200,
+     "kind": "afford"
+    },
+    "truth": true,
+    "promptText": "Ben has 200 cents. A prize costs 145 cents. Can Ben buy it?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0126",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "countCoins",
+  "structureType": "whichNotation",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "$2.80",
+   "choices": [
+    "$2.90",
+    "$3.80",
+    "$2.08",
+    "$2.80"
+   ],
+   "display": {
+    "money": {
+     "kind": "notationPick",
+     "cents": 280
+    },
+    "promptText": "Which dollar form shows 280 cents? Ida is labeling a price tag."
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0245",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "makeChange",
+  "structureType": "whichChange_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "choices": [
+    8,
+    7,
+    84,
+    9
+   ],
+   "display": {
+    "counting": {
+     "back": 92,
+     "kind": "countBack",
+     "start": 100
+    },
+    "promptText": "Diego hands over 100 cents for a 92-cent eraser. Which change is right?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0400",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "coinEquivalence",
+  "structureType": "whichWorthMore_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "$1 and 3 quarters",
+   "choices": [
+    "$1 and 3 quarters",
+    "17 dimes"
+   ],
+   "display": {
+    "money": {
+     "a": 175,
+     "b": 170,
+     "kind": "compare"
+    },
+    "promptText": "Two piles sit in front of Luca: $1 and 3 quarters, or 17 dimes. Which one is worth more?"
+   }
+  }
+ },
+ {
+  "itemId": "money-conc-b0821-0550",
+  "modeId": "money",
+  "itemFamily": "conceptual",
+  "subskill": "moneyReasoning",
+  "structureType": "whichBank_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Bank B",
+   "choices": [
+    "Bank A",
+    "Bank B"
+   ],
+   "display": {
+    "money": {
+     "a": 130,
+     "b": 289,
+     "kind": "compare"
+    },
+    "promptText": "Bank A holds 130 cents and bank B holds 289 cents. Which bank should Lily pick for more money?"
+   }
   }
  },
  {
@@ -13638,7 +28948,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-app-121",
+  "itemId": "multiplication-app-325",
   "modeId": "multiplication",
   "itemFamily": "application",
   "subskill": "equalGroups",
@@ -13649,12 +28959,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 20,
-   "b": 7,
+   "a": 18,
+   "b": 5,
    "op": "×",
-   "answer": 140,
+   "answer": 90,
    "display": {
-    "promptText": "Lily organized 20 racks. She put 7 jerseys on each rack. How many jerseys in total?"
+    "promptText": "A baker has 18 trays. Each tray holds 5 cakes. How many cakes in all?"
    }
   }
  },
@@ -13701,23 +29011,23 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-app-323",
+  "itemId": "multiplication-app-equalGroups-4_5-compareProductUnknown-b0728-007",
   "modeId": "multiplication",
   "itemFamily": "application",
   "subskill": "equalGroups",
-  "structureType": "equalGroupsTotalUnknown",
+  "structureType": "compareProductUnknown",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 16,
+   "a": 8,
    "b": 6,
    "op": "×",
-   "answer": 96,
+   "answer": 48,
    "display": {
-    "promptText": "A farmer has 16 pallets of grain. Each pallet holds 6 sacks. How many sacks in all?"
+    "promptText": "Jake has 8 toy cars. His cousin has 6 times as many toy cars. How many toy cars does his cousin have?"
    }
   }
  },
@@ -16926,6 +32236,1690 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "patterns-app-b0821-0001",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "repeatingPattern",
+  "structureType": "storyNextColor_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "red",
+   "choices": [
+    "red",
+    "blue"
+   ],
+   "display": {
+    "pattern": {
+     "len": 4,
+     "core": [
+      "red",
+      "blue"
+     ],
+     "kind": "repeat"
+    },
+    "promptText": "Sam strings beads on a necklace: red, blue, red, blue. Which color comes next?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0154",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "arithmeticNext",
+  "structureType": "storyGrow_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "counting": {
+     "kind": "next",
+     "step": 2,
+     "sequence": [
+      2,
+      4,
+      6
+     ]
+    },
+    "promptText": "Sam's jar of shells grows the same way each day: 2, 4, 6. How many shells come next?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0307",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "geometricNext",
+  "structureType": "storyDouble_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "display": {
+    "pattern": {
+     "kind": "geo",
+     "start": 1,
+     "factor": 2
+    },
+    "sequence": [
+     1,
+     2,
+     4
+    ],
+    "promptText": "Sam watches the lily pads in the pond double each day: 1, 2, 4. How many lily pads come next?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0460",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "missingTerm",
+  "structureType": "storySmudge_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 6,
+     "before": 2
+    },
+    "promptText": "Sam reads house numbers in order, but one is smudged: 2, ?, 6, 8. What is the smudged number?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0613",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "patternRule",
+  "structureType": "storyRate_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "display": {
+    "counting": {
+     "have": 2,
+     "kind": "gap",
+     "target": 4
+    },
+    "promptText": "Sam tracks the leaves on the bean plant each day: 2, 4, 6. How many leaves are added each day?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0060",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "repeatingPattern",
+  "structureType": "storyColorAt_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "green",
+   "choices": [
+    "yellow",
+    "green"
+   ],
+   "display": {
+    "pattern": {
+     "pos": 7,
+     "core": [
+      "green",
+      "yellow"
+     ],
+     "kind": "repeatPos"
+    },
+    "promptText": "June keeps the necklace going: green, yellow, green, yellow, … What color lands at position 7?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0213",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "arithmeticNext",
+  "structureType": "storyShrink_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "counting": {
+     "kind": "next",
+     "step": -5,
+     "sequence": [
+      20,
+      15,
+      10
+     ]
+    },
+    "promptText": "The pile of shells in June's jar shrinks evenly: 20, 15, 10. What count comes next?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0366",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "geometricNext",
+  "structureType": "storyTriple_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 27,
+   "display": {
+    "pattern": {
+     "kind": "geoApply",
+     "start": 3,
+     "times": 2,
+     "factor": 3
+    },
+    "promptText": "June counts 3 lily pads now. Each week the number triples. What is the count of lily pads after 2 weeks?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0018",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "repeatingPattern",
+  "structureType": "storyNextColor_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "red",
+   "choices": [
+    "red",
+    "blue"
+   ],
+   "display": {
+    "pattern": {
+     "len": 6,
+     "core": [
+      "red",
+      "red",
+      "blue"
+     ],
+     "kind": "repeat"
+    },
+    "promptText": "The necklace Mina is making goes red, red, blue, red, red, blue. Which color bead does Mina add next?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0171",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "arithmeticNext",
+  "structureType": "storyGrow_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 30,
+   "display": {
+    "counting": {
+     "kind": "next",
+     "step": 6,
+     "sequence": [
+      12,
+      18,
+      24
+     ]
+    },
+    "promptText": "Day by day Mina counts the shells: 12, 18, 24. If the pattern holds, how many shells on the next day?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0324",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "geometricNext",
+  "structureType": "storyDouble_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 24,
+   "display": {
+    "pattern": {
+     "kind": "geo",
+     "start": 3,
+     "factor": 2
+    },
+    "sequence": [
+     3,
+     6,
+     12
+    ],
+    "promptText": "Every day the lily pads double. Mina counts 3, 6, 12. What is the next count of lily pads?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0477",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "missingTerm",
+  "structureType": "storySmudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 18,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 24,
+     "before": 12
+    },
+    "promptText": "On the street sign, Mina reads house numbers running 12, ?, 24, 30 — one is too faded to read. Which number is missing?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0630",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "patternRule",
+  "structureType": "storyRate_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "counting": {
+     "have": 12,
+     "kind": "gap",
+     "target": 18
+    },
+    "promptText": "Day after day the bean plant grows evenly — Mina records 12, 18, 24 leaves. By how many leaves does it grow each day?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0077",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "repeatingPattern",
+  "structureType": "storyColorAt_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "blue",
+   "choices": [
+    "blue",
+    "red"
+   ],
+   "display": {
+    "pattern": {
+     "pos": 10,
+     "core": [
+      "red",
+      "blue"
+     ],
+     "kind": "repeatPos"
+    },
+    "promptText": "Zoe's necklace repeats like this: red, blue, red, blue, … Which color is bead number 10?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0230",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "arithmeticNext",
+  "structureType": "storyShrink_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 57,
+   "display": {
+    "counting": {
+     "kind": "next",
+     "step": -4,
+     "sequence": [
+      69,
+      65,
+      61
+     ]
+    },
+    "promptText": "Zoe gives away shells the same way each day: 69, 65, 61. How many shells will there be next?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0383",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "geometricNext",
+  "structureType": "storyTriple_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 270,
+   "display": {
+    "pattern": {
+     "kind": "geoApply",
+     "start": 10,
+     "times": 3,
+     "factor": 3
+    },
+    "promptText": "The lily pads in Zoe's pond triple every week. This week there are 10. How many lily pads after 3 weeks of tripling?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0035",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "repeatingPattern",
+  "structureType": "storyNextColor_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "gold",
+   "choices": [
+    "silver",
+    "gold"
+   ],
+   "display": {
+    "pattern": {
+     "len": 8,
+     "core": [
+      "gold",
+      "gold",
+      "silver",
+      "silver"
+     ],
+     "kind": "repeat"
+    },
+    "promptText": "Luca strings beads on a necklace: gold, gold, silver, silver, gold, gold, silver, silver. Which color comes next?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0188",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "arithmeticNext",
+  "structureType": "storyGrow_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 145,
+   "display": {
+    "counting": {
+     "kind": "next",
+     "step": 11,
+     "sequence": [
+      112,
+      123,
+      134
+     ]
+    },
+    "promptText": "Luca's jar of shells grows the same way each day: 112, 123, 134. How many shells come next?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0341",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "geometricNext",
+  "structureType": "storyDouble_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 200,
+   "display": {
+    "pattern": {
+     "kind": "geo",
+     "start": 25,
+     "factor": 2
+    },
+    "sequence": [
+     25,
+     50,
+     100
+    ],
+    "promptText": "Luca watches the lily pads in the pond double each day: 25, 50, 100. How many lily pads come next?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0494",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "missingTerm",
+  "structureType": "storySmudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 123,
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 134,
+     "before": 112
+    },
+    "promptText": "Luca reads house numbers in order, but one is smudged: 112, ?, 134, 145. What is the smudged number?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0647",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "patternRule",
+  "structureType": "storyRate_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 11,
+   "display": {
+    "counting": {
+     "have": 112,
+     "kind": "gap",
+     "target": 123
+    },
+    "promptText": "Luca tracks the leaves on the bean plant each day: 112, 123, 134. How many leaves are added each day?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0094",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "repeatingPattern",
+  "structureType": "storyColorAt_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "green",
+   "choices": [
+    "blue",
+    "yellow",
+    "green"
+   ],
+   "display": {
+    "pattern": {
+     "pos": 17,
+     "core": [
+      "blue",
+      "green",
+      "yellow"
+     ],
+     "kind": "repeatPos"
+    },
+    "promptText": "Omar's necklace repeats like this: blue, green, yellow, blue, green, yellow, … Which color is bead number 17?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0247",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "arithmeticNext",
+  "structureType": "storyShrink_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 527,
+   "display": {
+    "counting": {
+     "kind": "next",
+     "step": -14,
+     "sequence": [
+      569,
+      555,
+      541
+     ]
+    },
+    "promptText": "Omar gives away shells the same way each day: 569, 555, 541. How many shells will there be next?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-app-b0821-0400",
+  "modeId": "patterns",
+  "itemFamily": "application",
+  "subskill": "geometricNext",
+  "structureType": "storyTriple_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1944,
+   "display": {
+    "pattern": {
+     "kind": "geoApply",
+     "start": 8,
+     "times": 5,
+     "factor": 3
+    },
+    "promptText": "The lily pads in Omar's pond triple every week. This week there are 8. How many lily pads after 5 weeks of tripling?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0001",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "repeatingPattern",
+  "structureType": "coreIdentify_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "circle, square",
+   "choices": [
+    "square, circle",
+    "circle, square",
+    "circle, square, circle",
+    "circle"
+   ],
+   "display": {
+    "pattern": {
+     "core": [
+      "circle",
+      "square"
+     ],
+     "kind": "core"
+    },
+    "sequence": [
+     "circle",
+     "square",
+     "circle",
+     "square",
+     "circle",
+     "square"
+    ],
+    "promptText": "Lily made this pattern: circle, square, circle, square, circle, square. Which part repeats?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0154",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "arithmeticNext",
+  "structureType": "whichNext_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 8,
+   "choices": [
+    8,
+    10,
+    9,
+    6
+   ],
+   "display": {
+    "counting": {
+     "kind": "next",
+     "step": 2,
+     "sequence": [
+      2,
+      4,
+      6
+     ]
+    },
+    "sequence": [
+     2,
+     4,
+     6
+    ],
+    "promptText": "Luca studies the pattern 2, 4, 6. Which number comes next?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0310",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "geometricNext",
+  "structureType": "geoRulePick_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "multiply by 2",
+   "choices": [
+    "add 1",
+    "add 2",
+    "multiply by 3",
+    "multiply by 2"
+   ],
+   "display": {
+    "pattern": {
+     "kind": "geoRule",
+     "start": 1,
+     "factor": 2
+    },
+    "sequence": [
+     1,
+     2,
+     4
+    ],
+    "promptText": "Lily wonders how the pattern 1, 2, 4 grows. Which rule fits?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0470",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "missingTerm",
+  "structureType": "whichFills_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "choices": [
+    5,
+    6,
+    4,
+    3
+   ],
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 6,
+     "before": 2
+    },
+    "sequence": [
+     2,
+     "?",
+     6,
+     8
+    ],
+    "promptText": "Luca sees the pattern 2, ?, 6, 8. Which number fills the gap?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0626",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "patternRule",
+  "structureType": "rulePick_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "add 2",
+   "choices": [
+    "add 3",
+    "subtract 2",
+    "multiply by 2",
+    "add 2"
+   ],
+   "display": {
+    "pattern": {
+     "kind": "rule",
+     "step": 2,
+     "start": 2
+    },
+    "counting": null,
+    "sequence": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "promptText": "Lily studies the pattern 2, 4, 6, 8. What is the rule?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0046",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "repeatingPattern",
+  "structureType": "judgeExtend_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": false,
+    "pattern": {
+     "len": 5,
+     "core": [
+      "sun",
+      "cloud"
+     ],
+     "kind": "repeat",
+     "said": "sun"
+    },
+    "sequence": [
+     "sun",
+     "cloud",
+     "sun",
+     "cloud",
+     "sun"
+    ],
+    "promptText": "The pattern goes sun, cloud, sun, cloud, sun. Luca says sun comes next. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0216",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "arithmeticNext",
+  "structureType": "judgeNext_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "pattern": {
+     "kind": "arith",
+     "said": 15,
+     "step": 4,
+     "start": 3
+    },
+    "sequence": [
+     3,
+     7,
+     11
+    ],
+    "promptText": "Nora continues the pattern 3, 7, 11 with 15. Is Nora right?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0408",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "geometricNext",
+  "structureType": "doubleJudge",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "pattern": {
+     "s": 6,
+     "kind": "doubleSaid",
+     "said": 12
+    },
+    "promptText": "Amara says doubling 6 gives 12. Is Amara right?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0009",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "repeatingPattern",
+  "structureType": "coreIdentify_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "circle, square, triangle",
+   "choices": [
+    "circle, square",
+    "circle, square, triangle",
+    "triangle, square, circle",
+    "circle, square, triangle, circle"
+   ],
+   "display": {
+    "pattern": {
+     "core": [
+      "circle",
+      "square",
+      "triangle"
+     ],
+     "kind": "core"
+    },
+    "sequence": [
+     "circle",
+     "square",
+     "triangle",
+     "circle",
+     "square",
+     "triangle",
+     "circle",
+     "square",
+     "triangle"
+    ],
+    "promptText": "Sam made this pattern: circle, square, triangle, circle, square, triangle, circle, square, triangle. Which part repeats?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0172",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "arithmeticNext",
+  "structureType": "whichNext_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 30,
+   "choices": [
+    36,
+    24,
+    30,
+    31
+   ],
+   "display": {
+    "counting": {
+     "kind": "next",
+     "step": 6,
+     "sequence": [
+      12,
+      18,
+      24
+     ]
+    },
+    "sequence": [
+     12,
+     18,
+     24
+    ],
+    "promptText": "Sam studies the pattern 12, 18, 24. Which number comes next?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0318",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "geometricNext",
+  "structureType": "geoRulePick_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "multiply by 2",
+   "choices": [
+    "multiply by 3",
+    "add 2",
+    "multiply by 2",
+    "add 14"
+   ],
+   "display": {
+    "pattern": {
+     "kind": "geoRule",
+     "start": 14,
+     "factor": 2
+    },
+    "sequence": [
+     14,
+     28,
+     56
+    ],
+    "promptText": "Sam wonders how the pattern 14, 28, 56 grows. Which rule fits?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0488",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "missingTerm",
+  "structureType": "whichFills_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 18,
+   "choices": [
+    18,
+    19,
+    17,
+    24
+   ],
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 24,
+     "before": 12
+    },
+    "sequence": [
+     12,
+     "?",
+     24,
+     30
+    ],
+    "promptText": "Sam sees the pattern 12, ?, 24, 30. Which number fills the gap?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0644",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "patternRule",
+  "structureType": "rulePick_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "add 6",
+   "choices": [
+    "add 7",
+    "subtract 6",
+    "multiply by 6",
+    "add 6"
+   ],
+   "display": {
+    "pattern": {
+     "kind": "rule",
+     "step": 6,
+     "start": 12
+    },
+    "counting": null,
+    "sequence": [
+     12,
+     18,
+     24,
+     30
+    ],
+    "promptText": "Zoe studies the pattern 12, 18, 24, 30. What is the rule?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0066",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "repeatingPattern",
+  "structureType": "judgeExtend_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": false,
+    "pattern": {
+     "len": 7,
+     "core": [
+      "star",
+      "moon",
+      "sun"
+     ],
+     "kind": "repeat",
+     "said": "star"
+    },
+    "sequence": [
+     "star",
+     "moon",
+     "sun",
+     "star",
+     "moon",
+     "sun",
+     "star"
+    ],
+    "promptText": "The pattern goes star, moon, sun, star, moon, sun, star. Lily says star comes next. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0234",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "arithmeticNext",
+  "structureType": "judgeNext_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "pattern": {
+     "kind": "arith",
+     "said": 66,
+     "step": 5,
+     "start": 51
+    },
+    "sequence": [
+     51,
+     56,
+     61
+    ],
+    "promptText": "Nora continues the pattern 51, 56, 61 with 66. Is Nora right?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0381",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "geometricNext",
+  "structureType": "addOrMultJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "pattern": {
+     "kind": "addOrMult",
+     "additive": true
+    },
+    "sequence": [
+     16,
+     23,
+     30
+    ],
+    "promptText": "Looking at 16, 23, 30, Luca claims each jump is the same size. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0021",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "repeatingPattern",
+  "structureType": "coreIdentify_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "circle, square, triangle, heart",
+   "choices": [
+    "circle, square, triangle",
+    "circle, square, triangle, heart, circle",
+    "heart, triangle, square, circle",
+    "circle, square, triangle, heart"
+   ],
+   "display": {
+    "pattern": {
+     "core": [
+      "circle",
+      "square",
+      "triangle",
+      "heart"
+     ],
+     "kind": "core"
+    },
+    "sequence": [
+     "circle",
+     "square",
+     "triangle",
+     "heart",
+     "circle",
+     "square",
+     "triangle",
+     "heart",
+     "circle",
+     "square",
+     "triangle",
+     "heart",
+     "circle",
+     "square",
+     "triangle",
+     "heart"
+    ],
+    "promptText": "Lily made this pattern: circle, square, triangle, heart, circle, square, triangle, heart, circle, square, triangle, heart, circle, square, triangle, heart. Which part repeats?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0190",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "arithmeticNext",
+  "structureType": "whichNext_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 145,
+   "choices": [
+    146,
+    156,
+    145,
+    134
+   ],
+   "display": {
+    "counting": {
+     "kind": "next",
+     "step": 11,
+     "sequence": [
+      112,
+      123,
+      134
+     ]
+    },
+    "sequence": [
+     112,
+     123,
+     134
+    ],
+    "promptText": "Leo studies the pattern 112, 123, 134. Which number comes next?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0336",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "geometricNext",
+  "structureType": "geoRulePick_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "multiply by 5",
+   "choices": [
+    "add 16",
+    "multiply by 6",
+    "multiply by 5",
+    "add 5"
+   ],
+   "display": {
+    "pattern": {
+     "kind": "geoRule",
+     "start": 4,
+     "factor": 5
+    },
+    "sequence": [
+     4,
+     20,
+     100
+    ],
+    "promptText": "Leo wonders how the pattern 4, 20, 100 grows. Which rule fits?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0506",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "missingTerm",
+  "structureType": "whichFills_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 123,
+   "choices": [
+    124,
+    134,
+    123,
+    122
+   ],
+   "display": {
+    "counting": {
+     "kind": "between",
+     "after": 134,
+     "before": 112
+    },
+    "sequence": [
+     112,
+     "?",
+     134,
+     145
+    ],
+    "promptText": "Leo sees the pattern 112, ?, 134, 145. Which number fills the gap?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0662",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "patternRule",
+  "structureType": "rulePick_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "add 11",
+   "choices": [
+    "add 11",
+    "subtract 11",
+    "multiply by 11",
+    "add 12"
+   ],
+   "display": {
+    "pattern": {
+     "kind": "rule",
+     "step": 11,
+     "start": 112
+    },
+    "counting": null,
+    "sequence": [
+     112,
+     123,
+     134,
+     145
+    ],
+    "promptText": "Omar studies the pattern 112, 123, 134, 145. What is the rule?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0089",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "repeatingPattern",
+  "structureType": "judgeExtend_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": false,
+    "pattern": {
+     "len": 8,
+     "core": [
+      "star",
+      "star",
+      "moon",
+      "moon"
+     ],
+     "kind": "repeat",
+     "said": "moon"
+    },
+    "sequence": [
+     "star",
+     "star",
+     "moon",
+     "moon",
+     "star",
+     "star",
+     "moon",
+     "moon"
+    ],
+    "promptText": "Finn continues the pattern star, star, moon, moon, star, star, moon, moon with moon. Is Finn right?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0252",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "arithmeticNext",
+  "structureType": "judgeNext_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "pattern": {
+     "kind": "arith",
+     "said": 557,
+     "step": 13,
+     "start": 518
+    },
+    "sequence": [
+     518,
+     531,
+     544
+    ],
+    "promptText": "Nora continues the pattern 518, 531, 544 with 557. Is Nora right?"
+   }
+  }
+ },
+ {
+  "itemId": "patterns-conc-b0821-0399",
+  "modeId": "patterns",
+  "itemFamily": "conceptual",
+  "subskill": "geometricNext",
+  "structureType": "addOrMultJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "pattern": {
+     "kind": "addOrMult",
+     "additive": true
+    },
+    "sequence": [
+     412,
+     426,
+     440
+    ],
+    "promptText": "Looking at 412, 426, 440, Luca claims each jump is the same size. Is that right?"
+   }
+  }
+ },
+ {
   "itemId": "patterns-proc-b0821-0001",
   "modeId": "patterns",
   "itemFamily": "procedural",
@@ -17875,128 +34869,139 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placevalue-app-005",
+  "itemId": "placeValue-app-b0821-0304",
   "modeId": "placeValue",
   "itemFamily": "application",
   "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   9,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 240,
-   "b": null,
-   "op": "place",
-   "answer": 240,
-   "display": {
-    "ones": 0,
-    "tens": 24,
-    "type": "build",
-    "number": 240,
-    "promptText": "A stack has 24 tens and 0 ones. What number does the stack show?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-app-020",
-  "modeId": "placeValue",
-  "itemFamily": "application",
-  "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
+  "structureType": "storyNonCanonical",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 580,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 58,
+   "op": "count",
+   "answer": 175,
    "display": {
-    "ones": 0,
-    "tens": 58,
-    "type": "tens_in",
-    "number": 580,
-    "promptText": "How many total tens are in 580?"
-   }
+    "counting": {
+     "kind": "groups",
+     "ones": 15,
+     "tens": 16
+    },
+    "promptText": "Nia has 16 full wires of ten beads and 15 loose beads — more than ten loose! What total number of beads is that?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placevalue-app-029",
+  "itemId": "placeValue-app-b0821-0089",
+  "modeId": "placeValue",
+  "itemFamily": "application",
+  "subskill": "tensOnes",
+  "structureType": "storyDigitWorth",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "counting": {
+     "n": 493,
+     "kind": "placeValueOf",
+     "place": 1
+    },
+    "promptText": "Rosa's locker number is 493. How much is the ones digit of 493 worth?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-app-b0821-0208",
   "modeId": "placeValue",
   "itemFamily": "application",
   "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
+  "structureType": "storyPickExpansion",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 580,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 580,
+   "op": "count",
+   "answer": "400 + 90 + 3",
+   "choices": [
+    "400 + 90 + 3",
+    "400 + 9 + 3",
+    "4 + 9 + 3",
+    "300 + 90 + 4"
+   ],
    "display": {
-    "ones": 0,
-    "tens": 58,
-    "type": "build",
-    "number": 580,
-    "promptText": "A scoreboard reads 58 tens and 0 ones. What number does it show?"
+    "promptText": "The librarian asks Zoe for 493 in expanded form. Which is it?"
    }
   }
  },
  {
-  "itemId": "placevalue-app-009",
+  "itemId": "placeValue-app-b0821-0415",
   "modeId": "placeValue",
   "itemFamily": "application",
   "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
+  "structureType": "storyLeftoversBig",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 80,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 80,
+   "op": "count",
+   "answer": 5,
    "display": {
-    "ones": 0,
-    "tens": 8,
-    "type": "build",
-    "number": 80,
-    "promptText": "A pencil case organizes pencils as 8 tens and 0 ones. How many pencils in all?"
-   }
+    "counting": {
+     "n": 745,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "Luca fills full wires of ten from 745 beads. How many beads do not fit in a full full wire?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placevalue-app-021",
+  "itemId": "placeValue-app-b0821-0350",
   "modeId": "placeValue",
   "itemFamily": "application",
   "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
+  "structureType": "storyCrates",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 374,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 4,
+   "op": "count",
+   "answer": 356,
    "display": {
-    "ones": 4,
-    "tens": 37,
-    "type": "ones_in",
-    "number": 374,
-    "promptText": "How many ones are in 374?"
-   }
+    "counting": {
+     "kind": "units",
+     "ones": 6,
+     "tens": 5,
+     "hundreds": 3
+    },
+    "promptText": "The store gives Omar 3 hundred-packs, 5 ten-packs, and 6 single oranges. What is the total number of oranges?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
@@ -18075,128 +35080,133 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placevalue-app-014",
+  "itemId": "placeValue-app-b0821-0038",
   "modeId": "placeValue",
   "itemFamily": "application",
   "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
+  "structureType": "storyTenMoreLess",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 15,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 1,
+   "op": "count",
+   "answer": 8,
    "display": {
-    "ones": 5,
-    "tens": 1,
-    "type": "tens_in",
-    "number": 15,
-    "promptText": "How many tens are in 15?"
-   }
+    "counting": {
+     "n": 18,
+     "kind": "moreLess",
+     "delta": -10
+    },
+    "promptText": "Zoe lends a sheet of ten stickers from a pile of 18. How many stickers stay?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placevalue-app-023",
+  "itemId": "placeValue-app-b0821-0157",
   "modeId": "placeValue",
   "itemFamily": "application",
   "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
+  "structureType": "storyTensPart",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 20,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 20,
+   "op": "count",
+   "answer": 10,
    "display": {
-    "ones": 0,
-    "tens": 2,
-    "type": "build",
-    "number": 20,
-    "promptText": "A pile has 2 tens and 0 ones of cubes. How many cubes in the pile?"
-   }
+    "counting": {
+     "n": 19,
+     "kind": "placeValueOf",
+     "place": 10
+    },
+    "promptText": "Zoe breaks 19 into tens and ones for the banner. What is the tens part?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placevalue-app-032",
+  "itemId": "placeValue-app-b0821-0259",
   "modeId": "placeValue",
   "itemFamily": "application",
   "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
+  "structureType": "storyLeftovers",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 18,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 18,
+   "op": "count",
+   "answer": 9,
    "display": {
-    "ones": 8,
-    "tens": 1,
-    "type": "build",
-    "number": 18,
-    "promptText": "A counter has 10 marks plus 8 more. How many marks in total?"
-   }
+    "counting": {
+     "n": 19,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "Rosa bundles 19 stickers into sheets of ten. After bundling, how many loose stickers remain?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placevalue-app-015",
+  "itemId": "placeValue-app-b0821-0316",
   "modeId": "placeValue",
   "itemFamily": "application",
   "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
+  "structureType": "storyDigitOf",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 12,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 2,
+   "op": "count",
+   "answer": 4,
    "display": {
-    "ones": 2,
-    "tens": 1,
-    "type": "ones_in",
-    "number": 12,
-    "promptText": "How many ones are in 12?"
-   }
+    "counting": {
+     "n": 14,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "Ben lives at number 14. Which digit is in the ones place of 14?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placevalue-app-024",
+  "itemId": "placeValue-app-b0821-0197",
   "modeId": "placeValue",
   "itemFamily": "application",
   "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
+  "structureType": "storyWordForm",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 17,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 17,
+   "op": "count",
+   "answer": 20,
    "display": {
-    "ones": 7,
-    "tens": 1,
-    "type": "build",
-    "number": 17,
-    "promptText": "A bin shows 1 ten and 7 ones of marbles. How many marbles in the bin?"
-   }
+    "promptText": "Omar hears \"twenty\" in the story and writes the numeral. What does Omar write?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
@@ -18275,727 +35285,789 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placevalue-app-017",
+  "itemId": "placeValue-app-b0821-0055",
   "modeId": "placeValue",
   "itemFamily": "application",
   "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
+  "structureType": "storyTenMoreLess",
   "levelRange": [
    4,
    6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 53,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 5,
+   "op": "count",
+   "answer": 55,
    "display": {
-    "ones": 3,
-    "tens": 5,
-    "type": "tens_in",
-    "number": 53,
-    "promptText": "How many tens are in 53?"
-   }
+    "counting": {
+     "n": 65,
+     "kind": "moreLess",
+     "delta": -10
+    },
+    "promptText": "Rosa has 65 stickers and gives away one sheet of ten. How many stickers are left?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placevalue-app-026",
+  "itemId": "placeValue-app-b0821-0174",
   "modeId": "placeValue",
   "itemFamily": "application",
   "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
+  "structureType": "storyTensPart",
   "levelRange": [
    4,
    6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 72,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 72,
+   "op": "count",
+   "answer": 50,
    "display": {
-    "ones": 2,
-    "tens": 7,
-    "type": "build",
-    "number": 72,
-    "promptText": "A bin holds 7 tens and 2 ones of cards. How many cards in the bin?"
-   }
+    "counting": {
+     "n": 56,
+     "kind": "placeValueOf",
+     "place": 10
+    },
+    "promptText": "Rosa writes 56 on a poster as tens plus ones. Which number shows the tens part?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placevalue-app-035",
+  "itemId": "placeValue-app-b0821-0276",
   "modeId": "placeValue",
   "itemFamily": "application",
   "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
+  "structureType": "storyLeftovers",
   "levelRange": [
    4,
    6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 63,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 63,
+   "op": "count",
+   "answer": 8,
    "display": {
-    "ones": 3,
-    "tens": 6,
-    "type": "build",
-    "number": 63,
-    "promptText": "A bowl shows 60 grapes plus 3 more. How many grapes in total?"
-   }
+    "counting": {
+     "n": 68,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "Zoe fills sheets of ten from 68 stickers. How many stickers do not fit in a full sheet?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placevalue-app-018",
+  "itemId": "placeValue-app-b0821-0333",
   "modeId": "placeValue",
   "itemFamily": "application",
   "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
+  "structureType": "storyDigitOf",
   "levelRange": [
    4,
    6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 36,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 6,
+   "op": "count",
+   "answer": 8,
    "display": {
-    "ones": 6,
-    "tens": 3,
-    "type": "ones_in",
-    "number": 36,
-    "promptText": "How many ones are in 36?"
-   }
+    "counting": {
+     "n": 88,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "Page 88 is Omar's favorite. Which digit sits in the ones place of 88?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placevalue-app-027",
+  "itemId": "placeValue-app-b0821-0367",
   "modeId": "placeValue",
   "itemFamily": "application",
   "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
+  "structureType": "storyPickExpansionMid",
   "levelRange": [
    4,
    6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 49,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 49,
+   "op": "count",
+   "answer": "30 + 3",
+   "choices": [
+    "30 + 3",
+    "3 + 3",
+    "40 + 3"
+   ],
    "display": {
-    "ones": 9,
-    "tens": 4,
-    "type": "build",
-    "number": 49,
-    "promptText": "A row shows 4 tens and 9 ones of stickers. How many stickers in the row?"
+    "promptText": "Ben labels a box of 33 beads with its expanded form. Which label is right?"
    }
   }
  },
  {
-  "itemId": "placevalue-conc-expandedForm-23-001",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 58,
-   "b": null,
-   "op": "place",
-   "answer": 58,
-   "display": {
-    "ones": 8,
-    "tens": 5,
-    "type": "build",
-    "number": 58,
-    "promptText": "What number equals 5 tens + 8 ones?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-regroupingSense-23-001",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 35,
-   "b": null,
-   "op": "place",
-   "answer": 35,
-   "display": {
-    "ones": 5,
-    "tens": 3,
-    "type": "build",
-    "number": 35,
-    "promptText": "Regroup 30 + 5 to a single number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-tensOnes-23-001",
+  "itemId": "placeValue-conc-b0821-0001",
   "modeId": "placeValue",
   "itemFamily": "conceptual",
   "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 47,
-   "b": null,
-   "op": "place",
-   "answer": 4,
-   "display": {
-    "ones": 7,
-    "tens": 4,
-    "type": "tens_in",
-    "number": 47,
-    "promptText": "Identify the tens digit of 47."
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-expandedForm-23-002",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 72,
-   "b": null,
-   "op": "place",
-   "answer": 72,
-   "display": {
-    "ones": 2,
-    "tens": 7,
-    "type": "build",
-    "number": 72,
-    "promptText": "What number equals 7 tens + 2 ones?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-regroupingSense-23-002",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 63,
-   "b": null,
-   "op": "place",
-   "answer": 63,
-   "display": {
-    "ones": 3,
-    "tens": 6,
-    "type": "build",
-    "number": 63,
-    "promptText": "Regroup 60 + 3 to a single number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-tensOnes-23-002",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 53,
-   "b": null,
-   "op": "place",
-   "answer": 5,
-   "display": {
-    "ones": 3,
-    "tens": 5,
-    "type": "tens_in",
-    "number": 53,
-    "promptText": "Identify the tens digit of 53."
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-expandedForm-23-003",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 49,
-   "b": null,
-   "op": "place",
-   "answer": 49,
-   "display": {
-    "ones": 9,
-    "tens": 4,
-    "type": "build",
-    "number": 49,
-    "promptText": "What number equals 4 tens + 9 ones?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-regroupingSense-23-003",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 87,
-   "b": null,
-   "op": "place",
-   "answer": 87,
-   "display": {
-    "ones": 7,
-    "tens": 8,
-    "type": "build",
-    "number": 87,
-    "promptText": "Regroup 80 + 7 to a single number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-expandedForm-45-001",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 234,
-   "b": null,
-   "op": "place",
-   "answer": 234,
-   "display": {
-    "ones": 4,
-    "tens": 23,
-    "type": "build",
-    "number": 234,
-    "promptText": "What number equals 23 tens + 4 ones?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-regroupingSense-45-001",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 234,
-   "b": null,
-   "op": "place",
-   "answer": 234,
-   "display": {
-    "ones": 4,
-    "tens": 23,
-    "type": "build",
-    "number": 234,
-    "promptText": "Regroup 200 + 30 + 4 to a single number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-tensOnes-45-001",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 234,
-   "b": null,
-   "op": "place",
-   "answer": 23,
-   "display": {
-    "ones": 4,
-    "tens": 23,
-    "type": "tens_in",
-    "number": 234,
-    "promptText": "Determine the total tens in 234."
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-expandedForm-45-002",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 580,
-   "b": null,
-   "op": "place",
-   "answer": 580,
-   "display": {
-    "ones": 0,
-    "tens": 58,
-    "type": "build",
-    "number": 580,
-    "promptText": "What number equals 58 tens + 0 ones?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-regroupingSense-45-002",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 580,
-   "b": null,
-   "op": "place",
-   "answer": 580,
-   "display": {
-    "ones": 0,
-    "tens": 58,
-    "type": "build",
-    "number": 580,
-    "promptText": "Regroup 500 + 80 to a single number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-tensOnes-45-002",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 580,
-   "b": null,
-   "op": "place",
-   "answer": 58,
-   "display": {
-    "ones": 0,
-    "tens": 58,
-    "type": "tens_in",
-    "number": 580,
-    "promptText": "Determine the total tens in 580."
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-expandedForm-45-003",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 374,
-   "b": null,
-   "op": "place",
-   "answer": 374,
-   "display": {
-    "ones": 4,
-    "tens": 37,
-    "type": "build",
-    "number": 374,
-    "promptText": "What number equals 37 tens + 4 ones?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-regroupingSense-45-003",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 374,
-   "b": null,
-   "op": "place",
-   "answer": 374,
-   "display": {
-    "ones": 4,
-    "tens": 37,
-    "type": "build",
-    "number": 374,
-    "promptText": "Regroup 300 + 70 + 4 to a single number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-expandedForm-K1-001",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
+  "structureType": "whichNumberTeens",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 13,
+   "a": null,
    "b": null,
-   "op": "place",
+   "op": "count",
+   "answer": 13,
+   "choices": [
+    23,
+    13,
+    4,
+    31
+   ],
+   "display": {
+    "promptText": "Mina builds 1 ten and 3 ones. Which number did Mina build?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0189",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "expandedForm",
+  "structureType": "wordClaimJudgeTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "promptText": "Nia reads \"fifteen\" and writes 15. Is Nia right?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0343",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "regroupingSense",
+  "structureType": "equivalenceJudgeTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "promptText": "Nia says 1 ten 4 ones is the same as 14. Is Nia right?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0046",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "tensOnes",
+  "structureType": "digitWorthTeens",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2,
+   "choices": [
+    3,
+    2,
+    10
+   ],
+   "display": {
+    "counting": {
+     "n": 12,
+     "kind": "placeValueOf",
+     "place": 1
+    },
+    "promptText": "In 12, what is the value of the ones digit? Priya wants to know."
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0212",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "expandedForm",
+  "structureType": "pickExpansionTeens",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "10 + 4",
+   "choices": [
+    "1 + 4",
+    "20 + 4",
+    "40 + 1",
+    "10 + 4"
+   ],
+   "display": {
+    "promptText": "Which sum shows 14 the expanded way? Finn is checking."
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0384",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "regroupingSense",
+  "structureType": "onesNameJudgeTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": false,
+    "promptText": "Diego writes 13 = 14 ones. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0161",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "tensOnes",
+  "structureType": "lineLocateTeens",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
    "answer": 13,
    "display": {
-    "ones": 3,
-    "tens": 1,
-    "type": "build",
-    "number": 13,
-    "promptText": "What number equals 1 ten + 3 ones?"
-   }
+    "max": 20,
+    "min": 0,
+    "step": 1,
+    "lineMode": "locate",
+    "labelEvery": 5,
+    "promptText": "Ida hunts for 13. Where does 13 sit on the line?"
+   },
+   "answerType": "numberLine"
   }
  },
  {
-  "itemId": "placevalue-conc-regroupingSense-K1-001",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 14,
-   "b": null,
-   "op": "place",
-   "answer": 14,
-   "display": {
-    "ones": 4,
-    "tens": 1,
-    "type": "build",
-    "number": 14,
-    "promptText": "Regroup 10 + 4 to a single number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-tensOnes-K1-001",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 12,
-   "b": null,
-   "op": "place",
-   "answer": 1,
-   "display": {
-    "ones": 2,
-    "tens": 1,
-    "type": "tens_in",
-    "number": 12,
-    "promptText": "Identify the tens digit of 12."
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-expandedForm-K1-002",
+  "itemId": "placeValue-conc-b0821-0338",
   "modeId": "placeValue",
   "itemFamily": "conceptual",
   "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
+  "structureType": "teenFramePlan",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 20,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 20,
+   "op": "count",
+   "answer": 2,
    "display": {
-    "ones": 0,
-    "tens": 2,
-    "type": "build",
-    "number": 20,
-    "promptText": "What number equals 2 tens + 0 ones?"
-   }
+    "counting": {
+     "n": 12,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "To show 12 with a full ten frame, how many extra counters does Theo add?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placevalue-conc-regroupingSense-K1-002",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 18,
-   "b": null,
-   "op": "place",
-   "answer": 18,
-   "display": {
-    "ones": 8,
-    "tens": 1,
-    "type": "build",
-    "number": 18,
-    "promptText": "Regroup 10 + 8 to a single number."
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-tensOnes-K1-002",
+  "itemId": "placeValue-conc-b0821-0017",
   "modeId": "placeValue",
   "itemFamily": "conceptual",
   "subskill": "tensOnes",
-  "structureType": "buildFromUnits",
+  "structureType": "whichNumberBuilt",
   "levelRange": [
-   1,
-   3
+   4,
+   6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 15,
+   "a": null,
    "b": null,
-   "op": "place",
-   "answer": 1,
-   "display": {
-    "ones": 5,
-    "tens": 1,
-    "type": "tens_in",
-    "number": 15,
-    "promptText": "Identify the tens digit of 15."
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-expandedForm-K1-003",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "expandedForm",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 17,
-   "b": null,
-   "op": "place",
-   "answer": 17,
-   "display": {
-    "ones": 7,
-    "tens": 1,
-    "type": "build",
-    "number": 17,
-    "promptText": "What number equals 1 ten + 7 ones?"
-   }
-  }
- },
- {
-  "itemId": "placevalue-conc-regroupingSense-K1-003",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "regroupingSense",
-  "structureType": "buildFromUnits",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 25,
-   "b": null,
-   "op": "place",
+   "op": "count",
    "answer": 25,
+   "choices": [
+    7,
+    35,
+    25,
+    52
+   ],
    "display": {
-    "ones": 5,
-    "tens": 2,
-    "type": "build",
-    "number": 25,
-    "promptText": "Regroup 20 + 5 to a single number."
+    "promptText": "Mina shows 2 tens 5 ones on the mat. Which number is that?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0224",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "expandedForm",
+  "structureType": "pickExpansion",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "20 + 5",
+   "choices": [
+    "20 + 5",
+    "30 + 5",
+    "2 + 5",
+    "50 + 2"
+   ],
+   "display": {
+    "promptText": "Which sum shows 25 the expanded way? Luca is checking."
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0359",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "regroupingSense",
+  "structureType": "equivalenceJudge",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "promptText": "Nia says 2 tens 14 ones is the same as 34. Is Nia right?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0063",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "tensOnes",
+  "structureType": "digitWorth",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1,
+   "choices": [
+    1,
+    2,
+    40
+   ],
+   "display": {
+    "counting": {
+     "n": 41,
+     "kind": "placeValueOf",
+     "place": 1
+    },
+    "promptText": "Sam looks at the ones digit of 41. What is that digit worth?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0265",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "expandedForm",
+  "structureType": "expandClaimJudge",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": false,
+    "promptText": "Sam expands 79 as 7 + 9. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0402",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "regroupingSense",
+  "structureType": "pickRename",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "8 tens 11 ones",
+   "choices": [
+    "8 tens 1 one",
+    "8 tens 11 ones",
+    "9 tens 11 ones",
+    "10 tens 11 ones"
+   ],
+   "display": {
+    "promptText": "Theo wants to rename 91 with extra ones. Which way is right?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0177",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "tensOnes",
+  "structureType": "lineLocate",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 56,
+   "display": {
+    "max": 60,
+    "min": 50,
+    "step": 1,
+    "lineMode": "locate",
+    "labelEvery": 5,
+    "promptText": "Ida hunts for 56. Where does 56 sit on the line?"
+   },
+   "answerType": "numberLine"
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0306",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "expandedForm",
+  "structureType": "oddOneOutForms",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "80 + 6",
+   "choices": [
+    "68",
+    "6 tens 8 ones",
+    "60 + 8",
+    "80 + 6"
+   ],
+   "display": {
+    "promptText": "Three of Leo's cards show 68. Which card does NOT?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0069",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "tensOnes",
+  "structureType": "digitWorthBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 300,
+   "choices": [
+    47,
+    400,
+    300,
+    3
+   ],
+   "display": {
+    "counting": {
+     "n": 347,
+     "kind": "placeValueOf",
+     "place": 100
+    },
+    "promptText": "Theo looks at the hundreds digit of 347. What is that digit worth?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0242",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "expandedForm",
+  "structureType": "pickExpansionBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "300 + 40 + 7",
+   "choices": [
+    "300 + 40 + 7",
+    "700 + 40 + 3",
+    "300 + 50 + 7",
+    "3 + 4 + 7"
+   ],
+   "display": {
+    "promptText": "Which sum shows 347 the expanded way? Luca is checking."
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0448",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "regroupingSense",
+  "structureType": "tensRenameJudgeBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "promptText": "Lily says 13 tens is the same as 130. Is Lily right?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0092",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "tensOnes",
+  "structureType": "whichNumberBuiltBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 739,
+   "choices": [
+    793,
+    739,
+    839,
+    937
+   ],
+   "display": {
+    "promptText": "Priya shows 7 hundreds 3 tens 9 ones with blocks. Which number did Priya build?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0283",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "expandedForm",
+  "structureType": "expandClaimJudgeBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": false,
+    "promptText": "Sam expands 739 as 700 + 3 + 9. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0471",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "regroupingSense",
+  "structureType": "notANameBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "6 hundreds 3 tens 8 ones",
+   "choices": [
+    "600 + 80 + 3",
+    "6 hundreds 3 tens 8 ones",
+    "6 hundreds 8 tens 3 ones",
+    "5 hundreds 18 tens 3 ones"
+   ],
+   "display": {
+    "promptText": "One card is not a true name for 683. June must find it — which is it?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0115",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "tensOnes",
+  "structureType": "unitClaimJudgeBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "promptText": "Amara says 7 hundreds 4 tens 1 one makes 741. Is Amara right?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0322",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "expandedForm",
+  "structureType": "oddOneOutFormsBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "200 + 50 + 3",
+   "choices": [
+    "200 + 30 + 5",
+    "235",
+    "2 hundreds 3 tens 5 ones",
+    "200 + 50 + 3"
+   ],
+   "display": {
+    "promptText": "Three of Diego's cards show 235. Which card does NOT?"
    }
   }
  },
@@ -19646,6 +36718,1324 @@ export const SEED_ITEMS = [
     "promptText": "493 → ? from the tens place"
    },
    "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0001",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "readNumber",
+  "structureType": "storyDiscsNeeded",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "counting": {
+     "n": 14,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "Sam counts 14 beans and shows the number with discs. How many ones discs does Sam need?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0103",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "tradeRegroup",
+  "structureType": "storyLooseOnes",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "counting": {
+     "n": 14,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "After reading 14 pages, Mina has 14 ones discs and trades tens out of them. How many ones discs are left over?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0205",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "discOperations",
+  "structureType": "storyScoreMove",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 23,
+   "display": {
+    "counting": {
+     "n": 13,
+     "kind": "moreLess",
+     "delta": 10
+    },
+    "promptText": "Sam's mat shows 13 beans. Sam counts ten more, so one more tens disc lands on the mat. How many beans does the mat show now?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0052",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "readNumber",
+  "structureType": "storyMatRead",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 14,
+   "display": {
+    "counting": {
+     "kind": "groups",
+     "ones": 4,
+     "tens": 1
+    },
+    "promptText": "On the mat, Mina tracks beans with 1 tens discs and 4 ones discs. What number of beans does the mat show?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0137",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "tradeRegroup",
+  "structureType": "storyTensOut",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 1,
+   "display": {
+    "counting": {
+     "n": 14,
+     "kind": "digit",
+     "place": 10
+    },
+    "promptText": "Sam turns 14 ones discs from tokens into tens discs, trading every 10. How many tens discs does Sam get?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0256",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "discOperations",
+  "structureType": "storyCombineMats",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 17,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      12,
+      5
+     ]
+    },
+    "promptText": "Sam's mat shows 12 beans and a friend's mat shows 5. They push the discs together. How many beans do the discs show?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0324",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "readNumber",
+  "structureType": "storyMatReadOnesFirst",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 14,
+   "display": {
+    "counting": {
+     "kind": "groups",
+     "ones": 4,
+     "tens": 1
+    },
+    "promptText": "Sam piles 4 ones discs first, then 1 tens discs, to track laps. How many laps does the mat show?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0375",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "tradeRegroup",
+  "structureType": "storyNextTradeSmall",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "counting": {
+     "have": 14,
+     "kind": "gap",
+     "target": 20
+    },
+    "promptText": "Mina's pile from counting laps holds 14 ones discs. How many more ones discs make the next full trade of 20?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0018",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "readNumber",
+  "structureType": "storyDiscsNeeded",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "counting": {
+     "n": 34,
+     "kind": "digit",
+     "place": 10
+    },
+    "promptText": "To show the 34 beans Mina counts, Mina builds 34 on a disc mat. How many tens discs go on the mat?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0120",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "tradeRegroup",
+  "structureType": "storyLooseOnes",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "counting": {
+     "n": 34,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "Sam earns 34 ones discs for laps and trades every 10 for a tens disc. How many ones discs stay loose?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0222",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "discOperations",
+  "structureType": "storyScoreMove",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 347,
+   "display": {
+    "counting": {
+     "n": 247,
+     "kind": "moreLess",
+     "delta": 100
+    },
+    "promptText": "The mat for Mina's beans shows 247. One more hundreds disc goes on. What is the new count of beans?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0069",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "readNumber",
+  "structureType": "storyMatRead",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 34,
+   "display": {
+    "counting": {
+     "kind": "groups",
+     "ones": 4,
+     "tens": 3
+    },
+    "promptText": "Luca shows the beans from today with 3 tens discs and 4 ones discs. How many beans is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0154",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "tradeRegroup",
+  "structureType": "storyTensOut",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "counting": {
+     "n": 34,
+     "kind": "digit",
+     "place": 10
+    },
+    "promptText": "Mina lines up 34 ones discs after counting pages, then trades each group of 10 for a tens disc. How many tens discs is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0239",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "discOperations",
+  "structureType": "storyEqualMats",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 64,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      32,
+      32
+     ]
+    },
+    "promptText": "Mina sets up 2 equal mats for beans — 3 tens discs and 2 ones discs on each. What total number of beans is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0341",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "readNumber",
+  "structureType": "storyDiscsNeeded",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "counting": {
+     "n": 34,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "To show the 34 tokens Nia wins, Nia builds 34 on a disc mat. How many ones discs go on the mat?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0392",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "tradeRegroup",
+  "structureType": "storyNextTradeSmall",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "counting": {
+     "have": 34,
+     "kind": "gap",
+     "target": 40
+    },
+    "promptText": "Sam has 34 ones discs from pages and wants a full trade with no discs left loose. How many more ones discs until the next trade at 40?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0035",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "readNumber",
+  "structureType": "storyDiscsNeeded",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "counting": {
+     "n": 347,
+     "kind": "digit",
+     "place": 100
+    },
+    "promptText": "Luca counts 347 beans and shows the number with discs. How many hundreds discs does Luca need?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0171",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "tradeRegroup",
+  "structureType": "storyHundredsOut",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "counting": {
+     "n": 34,
+     "kind": "digit",
+     "place": 10
+    },
+    "promptText": "The jar holds 34 tens discs from counting beans. Mina trades groups of 10 tens for hundreds discs. How many hundreds discs come out?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0290",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "discOperations",
+  "structureType": "storyShareMats",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 48,
+   "display": {
+    "counting": {
+     "kind": "hidden",
+     "seen": 48,
+     "total": 96
+    },
+    "promptText": "Sam shows 96 beans with discs, then deals the discs onto 2 equal mats, trading when needed. How many beans does each mat show?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0086",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "readNumber",
+  "structureType": "storyMatReadBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 347,
+   "display": {
+    "counting": {
+     "kind": "units",
+     "ones": 7,
+     "tens": 4,
+     "hundreds": 3
+    },
+    "promptText": "Sam shows this month's beans with 3 hundreds discs, 4 tens discs, and 7 ones discs. How many beans is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0188",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "tradeRegroup",
+  "structureType": "storyNextTrade",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "display": {
+    "counting": {
+     "have": 234,
+     "kind": "gap",
+     "target": 240
+    },
+    "promptText": "Sam has 234 ones discs from beans and wants a full trade with no discs left loose. How many more ones discs until the next trade at 240?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0307",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "discOperations",
+  "structureType": "storyBigScoreMove",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3473,
+   "display": {
+    "counting": {
+     "n": 2473,
+     "kind": "moreLess",
+     "delta": 1000
+    },
+    "promptText": "Mina watches the mat of beans at 2473 as one more thousands disc lands. What is the new number of beans?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0358",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "readNumber",
+  "structureType": "storyDiscsNeeded",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "counting": {
+     "n": 347,
+     "kind": "digit",
+     "place": 10
+    },
+    "promptText": "To show the 347 pages Mina reads, Mina builds 347 on a disc mat. How many tens discs go on the mat?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-app-b0821-0443",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "application",
+  "subskill": "tradeRegroup",
+  "structureType": "storyLooseOnesBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "counting": {
+     "n": 234,
+     "kind": "digit",
+     "place": 1
+    },
+    "promptText": "A season of beans leaves Mina with 234 ones discs. After trading all the full tens, how many ones discs remain?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0001",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "readNumber",
+  "structureType": "whichNumberMat",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 13,
+   "choices": [
+    4,
+    23,
+    13,
+    31
+   ],
+   "display": {
+    "promptText": "Mina puts 1 disc of ten and 3 discs of one on the mat. Which number is that?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0157",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "tradeRegroup",
+  "structureType": "canTradeJudge",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "promptText": "Luca has 14 ones discs. Can Luca trade 10 of them for a tens disc?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0313",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "discOperations",
+  "structureType": "plusDiscWhich",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 25,
+   "choices": [
+    16,
+    26,
+    25,
+    15
+   ],
+   "display": {
+    "counting": {
+     "n": 15,
+     "kind": "moreLess",
+     "delta": 10
+    },
+    "promptText": "Mina's mat shows 15. Mina adds 1 tens disc. Which number does the mat show now?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0018",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "readNumber",
+  "structureType": "readJudge",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": false,
+    "promptText": "Ida counts a mat of 1 disc of ten and 4 discs of one as 5. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0174",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "tradeRegroup",
+  "structureType": "canTradeJudge",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "promptText": "Rosa holds 18 ones discs. Is there enough to trade ten of them for one tens disc?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0330",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "discOperations",
+  "structureType": "plusDiscWhich",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 20,
+   "choices": [
+    21,
+    29,
+    19,
+    20
+   ],
+   "display": {
+    "counting": {
+     "n": 19,
+     "kind": "moreLess",
+     "delta": 1
+    },
+    "promptText": "A mat in front of Lily shows 19. One more ones disc lands on it. Which number is it now?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0035",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "readNumber",
+  "structureType": "compareMats",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Mat B",
+   "choices": [
+    "Mat A",
+    "Mat B"
+   ],
+   "display": {
+    "promptText": "June compares two mats. Mat A shows 1 disc of ten and 9 discs of one. Mat B shows 2 discs of ten and 1 disc of one. Which mat shows the bigger number?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0191",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "tradeRegroup",
+  "structureType": "whichTrade",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Trade 10 ones for 1 ten",
+   "choices": [
+    "Trade 10 ones for 1 ten",
+    "Trade 1 one for 1 ten",
+    "Trade 1 ten for 10 ones",
+    "No trade is needed"
+   ],
+   "display": {
+    "promptText": "Ida's ones column holds 11 discs. Which trade fixes it?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0053",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "readNumber",
+  "structureType": "whichNumberMatBig",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 347,
+   "choices": [
+    347,
+    14,
+    437,
+    374
+   ],
+   "display": {
+    "promptText": "Luca lays out 3 discs of one hundred, 4 discs of ten, and 7 discs of one. Which number is that?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0209",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "tradeRegroup",
+  "structureType": "predictTradeJudge",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "subPrompt": "Decide without adding.",
+    "promptText": "Mina will add 26 + 38 with discs. Will the ones column need a trade?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0365",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "discOperations",
+  "structureType": "moveWhichMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 57,
+   "choices": [
+    67,
+    47,
+    48,
+    57
+   ],
+   "display": {
+    "counting": {
+     "n": 47,
+     "kind": "moreLess",
+     "delta": 10
+    },
+    "promptText": "Luca's mat shows 47. Luca adds 1 tens disc. Which number does the mat show now?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0070",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "readNumber",
+  "structureType": "whichNumberMatBig",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 163,
+   "choices": [
+    10,
+    136,
+    613,
+    163
+   ],
+   "display": {
+    "promptText": "Rosa's mat: 1 disc worth one hundred, 6 discs worth ten, 3 discs worth one. Which number does it show?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0226",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "tradeRegroup",
+  "structureType": "predictTradeJudge",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "subPrompt": "Decide without adding.",
+    "promptText": "Before adding 37 + 56 with discs, Lily checks the ones. Will they need to trade ones for a ten?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0382",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "discOperations",
+  "structureType": "moveWhichMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 159,
+   "choices": [
+    159,
+    60,
+    259,
+    59
+   ],
+   "display": {
+    "counting": {
+     "n": 59,
+     "kind": "moreLess",
+     "delta": 100
+    },
+    "promptText": "A mat shows 59. Then Rosa adds 1 hundreds disc. Which number is it now?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0087",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "readNumber",
+  "structureType": "compareMatsBig",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Mat B",
+   "choices": [
+    "Mat A",
+    "Mat B"
+   ],
+   "display": {
+    "promptText": "Lily compares two mats. Mat A shows 1 disc of one hundred, 9 discs of ten, 5 discs of one. Mat B shows 2 discs of one hundred, 1 disc of ten, 0 discs of one. Which mat shows the bigger number?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0243",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "tradeRegroup",
+  "structureType": "whichTradeBig",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Trade 10 tens for 1 hundred",
+   "choices": [
+    "Trade 10 tens for 1 hundred",
+    "Trade 1 ten for 1 hundred",
+    "Trade 1 hundred for 10 tens",
+    "No trade is needed"
+   ],
+   "display": {
+    "promptText": "Kai's tens column holds 11 discs. Which trade fixes it?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0105",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "readNumber",
+  "structureType": "whichNumberMatTh",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2473,
+   "choices": [
+    2437,
+    3473,
+    4273,
+    2473
+   ],
+   "display": {
+    "promptText": "Nia builds 2 discs of one thousand, 4 discs of one hundred, 7 discs of ten, and 3 discs of one with discs. Which number is that?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0261",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "tradeRegroup",
+  "structureType": "predictTradeBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "subPrompt": "Decide without adding.",
+    "promptText": "Nia will add 264 + 381 with discs. Will the tens column need a trade?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0417",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "discOperations",
+  "structureType": "errorNoTrade",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 85,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      47,
+      38
+     ]
+    },
+    "promptText": "Nia added 47 + 38 with discs and wrote 7 tens and 15 ones side by side. What is the real answer?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0122",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "readNumber",
+  "structureType": "whichNumberMatTh",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 2099,
+   "choices": [
+    299,
+    3099,
+    2099
+   ],
+   "display": {
+    "promptText": "On Finn's mat sit 2 discs of one thousand, 0 discs of one hundred, 9 discs of ten, and 9 discs of one. Which number does the mat show?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0278",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "tradeRegroup",
+  "structureType": "predictTradeBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "subPrompt": "Decide without adding.",
+    "promptText": "Before adding 364 + 253 with discs, Finn checks the tens column. Will ten tens pile up there?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0434",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "discOperations",
+  "structureType": "moveWhichThousands",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4816,
+   "choices": [
+    5816,
+    5716,
+    4826,
+    4816
+   ],
+   "display": {
+    "counting": {
+     "n": 5816,
+     "kind": "moreLess",
+     "delta": -1000
+    },
+    "promptText": "A mat shows 5816. Then Lily takes away 1 thousands disc. Which number is it after that?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0139",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "readNumber",
+  "structureType": "zeroColumnJudge",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": false,
+    "promptText": "A mat shows 1 disc of one hundred and 6 discs of one — no tens discs. Diego writes 16. Is Diego right?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValueDiscs-conc-b0821-0295",
+  "modeId": "placeValueDiscs",
+  "itemFamily": "conceptual",
+  "subskill": "tradeRegroup",
+  "structureType": "tradeKeepsValueBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": false,
+    "promptText": "Omar trades 10 tens discs for 1 hundreds disc on a mat showing 458, then says the number changed. Is Omar right?"
+   }
   }
  },
  {
@@ -20584,11 +38974,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "skipcounting-app-002",
+  "itemId": "skipCounting-app-b0821-0326",
   "modeId": "skipCounting",
   "itemFamily": "application",
   "subskill": "patternRule",
-  "structureType": "patternNext",
+  "structureType": "storyRuleClaim",
   "levelRange": [
    7,
    10
@@ -20597,106 +38987,51 @@ export const SEED_ITEMS = [
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 24,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
    "display": {
-    "step": 6,
-    "sequence": [
-     6,
-     12,
-     18
-    ],
-    "promptText": "Count by 6s: 6, 12, 18. What number comes next?"
+    "truth": true,
+    "promptText": "Ida says 4 rows of 50 seats hold 200 seats when you count by 50s. Is Ida right?"
    }
   }
  },
  {
-  "itemId": "skipcounting-app-004",
+  "itemId": "skipCounting-app-b0821-0224",
   "modeId": "skipCounting",
   "itemFamily": "application",
   "subskill": "stepInference",
-  "structureType": "patternNext",
+  "structureType": "storyCountJumps",
   "levelRange": [
-   9,
+   7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 80,
+   "op": "count",
+   "answer": 4,
    "display": {
-    "step": 10,
-    "sequence": [
-     50,
-     60,
-     70
-    ],
-    "promptText": "Count by 10s: 50, 60, 70. What number comes next?"
-   }
+    "counting": {
+     "have": 0,
+     "kind": "gap",
+     "target": 4
+    },
+    "promptText": "Ida starts at 0 beads and adds 50 beads at a time until reaching 200. How many times does Ida add?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "skipcounting-app-006",
+  "itemId": "skipCounting-app-b0821-0088",
   "modeId": "skipCounting",
   "itemFamily": "application",
   "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   9,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 90,
-   "display": {
-    "step": 5,
-    "sequence": [
-     75,
-     80,
-     85
-    ],
-    "promptText": "A class earns 5 stars per chapter: 75, 80, 85. How many stars after one more chapter?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-app-007",
-  "modeId": "skipCounting",
-  "itemFamily": "application",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   8,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 28,
-   "display": {
-    "step": 4,
-    "sequence": [
-     16,
-     20,
-     24
-    ],
-    "promptText": "Count by 4s: 16, 20, 24. What number comes next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-app-008",
-  "modeId": "skipCounting",
-  "itemFamily": "application",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
+  "structureType": "storyLastCount",
   "levelRange": [
    7,
    10
@@ -20705,17 +39040,82 @@ export const SEED_ITEMS = [
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
+   "op": "count",
    "answer": 30,
    "display": {
-    "step": 4,
-    "sequence": [
-     18,
-     22,
-     26
-    ],
-    "promptText": "Count by 4s: 18, 22, 26. What number comes next?"
-   }
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      6,
+      6,
+      6,
+      6,
+      6
+     ]
+    },
+    "promptText": "Ida drops half-cartons into a jar one at a time — 6 eggs each — and says the total after each. After 5 half-cartons, what total does Ida say?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-app-b0821-0384",
+  "modeId": "skipCounting",
+  "itemFamily": "application",
+  "subskill": "patternRule",
+  "structureType": "storyPerDay",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 150,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+     ]
+    },
+    "promptText": "Omar plants 25 seeds each morning for 6 mornings. How many seeds does Omar plant in all?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-app-b0821-0434",
+  "modeId": "skipCounting",
+  "itemFamily": "application",
+  "subskill": "stepInference",
+  "structureType": "storyLandOn",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 36,
+   "display": {
+    "counting": {
+     "kind": "countOn",
+     "more": 36,
+     "start": 0
+    },
+    "promptText": "Omar climbs 6 rungs per move and makes 6 moves up the ladder. Which rung is Omar on?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
@@ -20794,20 +39194,16 @@ export const SEED_ITEMS = [
      5,
      10
     ],
-    "promptText": "5 marbles per jar; after 1, 2 jars: 5, 10. After 3 jars?",
-    "promptOptions": [
-     "A jar holds 5 marbles. 1 jar: 5, 2 jars: 10. How many marbles in 3 jars?",
-     "Marbles: 1 jar (5), 2 jars (10). How many marbles in 3 jars?"
-    ]
+    "promptText": "A jar holds 5 marbles. 1 jar: 5, 2 jars: 10. How many marbles in 3 jars?"
    }
   }
  },
  {
-  "itemId": "skipcounting-app-015",
+  "itemId": "skipCounting-app-b0821-0291",
   "modeId": "skipCounting",
   "itemFamily": "application",
   "subskill": "patternRule",
-  "structureType": "patternNext",
+  "structureType": "storyRuleClaim",
   "levelRange": [
    1,
    3
@@ -20816,25 +39212,24 @@ export const SEED_ITEMS = [
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 20,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
    "display": {
-    "step": 5,
-    "sequence": [
-     5,
-     10,
-     15
-    ],
-    "promptText": "Count by 5s: 5, 10, 15. What number comes next?"
+    "truth": false,
+    "promptText": "Theo counts 2 hops of 5 on the number path and lands on 15. Is that right?"
    }
   }
  },
  {
-  "itemId": "skipcounting-app-018",
+  "itemId": "skipCounting-app-b0821-0189",
   "modeId": "skipCounting",
   "itemFamily": "application",
   "subskill": "stepInference",
-  "structureType": "patternNext",
+  "structureType": "storyCountJumps",
   "levelRange": [
    1,
    3
@@ -20843,26 +39238,25 @@ export const SEED_ITEMS = [
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 9,
+   "op": "count",
+   "answer": 2,
    "display": {
-    "step": 2,
-    "sequence": [
-     1,
-     3,
-     5,
-     7
-    ],
-    "promptText": "Count by 2s: 1, 3, 5, 7. What number comes next?"
-   }
+    "counting": {
+     "have": 0,
+     "kind": "gap",
+     "target": 2
+    },
+    "promptText": "A jar holds 0 pages. Theo drops in 5 pages per scoop until it holds 10. How many scoops is that?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "skipcounting-app-021",
+  "itemId": "skipCounting-app-b0821-0055",
   "modeId": "skipCounting",
   "itemFamily": "application",
   "subskill": "groupsToProduct",
-  "structureType": "patternNext",
+  "structureType": "storyLastCount",
   "levelRange": [
    1,
    3
@@ -20871,29 +39265,29 @@ export const SEED_ITEMS = [
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 12,
+   "op": "count",
+   "answer": 8,
    "display": {
-    "step": 3,
-    "sequence": [
-     3,
-     6,
-     9
-    ],
-    "promptText": "3 cookies per plate; after 1, 2, 3 plates: 3, 6, 9. After 4 plates?",
-    "promptOptions": [
-     "Each plate has 3 cookies. 1 plate: 3, 2 plates: 6, 3 plates: 9. How many on 4 plates?",
-     "A baker puts 3 cookies on each plate: 1 (3), 2 (6), 3 (9). How many total on 4 plates?"
-    ]
-   }
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      2,
+      2,
+      2,
+      2
+     ]
+    },
+    "promptText": "Zoe counts the socks of 4 pairs, 2 at a time. What is the last number Zoe says?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "skipcounting-app-016",
+  "itemId": "skipCounting-app-b0821-0346",
   "modeId": "skipCounting",
   "itemFamily": "application",
   "subskill": "patternRule",
-  "structureType": "patternNext",
+  "structureType": "storyPerDay",
   "levelRange": [
    1,
    3
@@ -20902,25 +39296,27 @@ export const SEED_ITEMS = [
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 6,
+   "op": "count",
+   "answer": 20,
    "display": {
-    "step": 2,
-    "sequence": [
-     0,
-     2,
-     4
-    ],
-    "promptText": "Count by 2s: 0, 2, 4. What number comes next?"
-   }
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      10,
+      10
+     ]
+    },
+    "promptText": "Diego plants 10 seeds each morning for 2 mornings. How many seeds does Diego plant in all?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "skipcounting-app-019",
+  "itemId": "skipCounting-app-b0821-0397",
   "modeId": "skipCounting",
   "itemFamily": "application",
   "subskill": "stepInference",
-  "structureType": "patternNext",
+  "structureType": "storyLandOn",
   "levelRange": [
    1,
    3
@@ -20929,17 +39325,17 @@ export const SEED_ITEMS = [
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 16,
+   "op": "count",
+   "answer": 20,
    "display": {
-    "step": 4,
-    "sequence": [
-     4,
-     8,
-     12
-    ],
-    "promptText": "Count by 4s: 4, 8, 12. What number comes next?"
-   }
+    "counting": {
+     "kind": "countOn",
+     "more": 20,
+     "start": 0
+    },
+    "promptText": "Nora hops along the path 10 tiles at a time and makes 2 hops from the start. Which tile does Nora land on?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
@@ -21019,20 +39415,16 @@ export const SEED_ITEMS = [
      8,
      12
     ],
-    "promptText": "4 books per shelf; 4, 8, 12 after 3 shelves. After 4 shelves?",
-    "promptOptions": [
-     "Jayden puts 4 books on each shelf. After 3 shelves he has 4, 8, 12 books. How many books after 4 shelves?",
-     "Counting by 4s for each shelf: 4, 8, 12. What comes next?"
-    ]
+    "promptText": "Jayden puts 4 books on each shelf. After 3 shelves he has 4, 8, 12 books. How many books after 4 shelves?"
    }
   }
  },
  {
-  "itemId": "skipcounting-app-024",
+  "itemId": "skipCounting-app-b0821-0310",
   "modeId": "skipCounting",
   "itemFamily": "application",
   "subskill": "patternRule",
-  "structureType": "patternNext",
+  "structureType": "storyRuleClaim",
   "levelRange": [
    4,
    6
@@ -21041,25 +39433,24 @@ export const SEED_ITEMS = [
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 24,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
    "display": {
-    "step": 6,
-    "sequence": [
-     6,
-     12,
-     18
-    ],
-    "promptText": "Counters jump by 6: 6, 12, 18. What's next?"
+    "truth": false,
+    "promptText": "Rosa says 4 rows of 4 seats hold 20 seats when you count by 4s. Is Rosa right?"
    }
   }
  },
  {
-  "itemId": "skipcounting-app-027",
+  "itemId": "skipCounting-app-b0821-0208",
   "modeId": "skipCounting",
   "itemFamily": "application",
   "subskill": "stepInference",
-  "structureType": "patternNext",
+  "structureType": "storyCountJumps",
   "levelRange": [
    4,
    6
@@ -21068,25 +39459,25 @@ export const SEED_ITEMS = [
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 32,
+   "op": "count",
+   "answer": 4,
    "display": {
-    "step": 8,
-    "sequence": [
-     8,
-     16,
-     24
-    ],
-    "promptText": "Counting in order 8, 16, 24. What's next?"
-   }
+    "counting": {
+     "have": 0,
+     "kind": "gap",
+     "target": 4
+    },
+    "promptText": "Rosa starts at 4 cards and adds 4 cards at a time until reaching 20. How many times does Rosa add?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "skipcounting-app-030",
+  "itemId": "skipCounting-app-b0821-0072",
   "modeId": "skipCounting",
   "itemFamily": "application",
   "subskill": "groupsToProduct",
-  "structureType": "patternNext",
+  "structureType": "storyLastCount",
   "levelRange": [
    4,
    6
@@ -21095,29 +39486,29 @@ export const SEED_ITEMS = [
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 24,
+   "op": "count",
+   "answer": 16,
    "display": {
-    "step": 6,
-    "sequence": [
-     6,
-     12,
-     18
-    ],
-    "promptText": "6 candies per jar; 6, 12, 18 after 3 jars. After 4 jars?",
-    "promptOptions": [
-     "Maria fills jars with 6 candies each. After 3 jars she has 6, 12, 18 candies. How many candies after 4 jars?",
-     "Counting by 6s for each jar: 6, 12, 18. What comes next?"
-    ]
-   }
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      4,
+      4,
+      4,
+      4
+     ]
+    },
+    "promptText": "Rosa drops wagons into a jar one at a time — 4 wheels each — and says the total after each. After 4 wagons, what total does Rosa say?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "skipcounting-app-025",
+  "itemId": "skipCounting-app-b0821-0367",
   "modeId": "skipCounting",
   "itemFamily": "application",
   "subskill": "patternRule",
-  "structureType": "patternNext",
+  "structureType": "storyPerDay",
   "levelRange": [
    4,
    6
@@ -21126,25 +39517,32 @@ export const SEED_ITEMS = [
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 44,
+   "op": "count",
+   "answer": 35,
    "display": {
-    "step": 11,
-    "sequence": [
-     11,
-     22,
-     33
-    ],
-    "promptText": "Count by 11s: 11, 22, 33. What number comes next?"
-   }
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+     ]
+    },
+    "promptText": "Ben reads 5 pages every day. After 7 days, how many pages has Ben read?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "skipcounting-app-028",
+  "itemId": "skipCounting-app-b0821-0418",
   "modeId": "skipCounting",
   "itemFamily": "application",
   "subskill": "stepInference",
-  "structureType": "patternNext",
+  "structureType": "storyLandOn",
   "levelRange": [
    4,
    6
@@ -21153,107 +39551,246 @@ export const SEED_ITEMS = [
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 60,
+   "op": "count",
+   "answer": 35,
    "display": {
-    "step": 15,
-    "sequence": [
-     15,
-     30,
-     45
-    ],
-    "promptText": "Count by 15s: 15, 30, 45. What number comes next?"
-   }
+    "counting": {
+     "kind": "countOn",
+     "more": 35,
+     "start": 0
+    },
+    "promptText": "Omar climbs 5 rungs per move and makes 7 moves up the ladder. Which rung is Omar on?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "skipcounting-conc-groupsToProduct-23-001",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 20,
-   "display": {
-    "step": 4,
-    "sequence": [
-     4,
-     8,
-     12,
-     16
-    ],
-    "promptText": "Use skip-counting by 4s for 5 groups of 4."
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-patternRule-23-001",
+  "itemId": "skipCounting-conc-b0821-0001",
   "modeId": "skipCounting",
   "itemFamily": "conceptual",
   "subskill": "patternRule",
-  "structureType": "patternNext",
+  "structureType": "membershipJudge",
   "levelRange": [
-   4,
-   6
+   1,
+   3
   ],
   "reviewStatus": "approved",
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 40,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
    "display": {
-    "step": 10,
-    "sequence": [
-     10,
-     20,
-     30
-    ],
-    "promptText": "Identify the rule in 10, 20, 30 and find the next term."
+    "truth": true,
+    "promptText": "Luca counts by 2s from 2. Does Luca ever say 8?"
    }
   }
  },
  {
-  "itemId": "skipcounting-conc-stepInference-23-001",
+  "itemId": "skipCounting-conc-b0821-0155",
   "modeId": "skipCounting",
   "itemFamily": "conceptual",
   "subskill": "stepInference",
-  "structureType": "patternNext",
+  "structureType": "identifyRule",
   "levelRange": [
-   4,
-   6
+   1,
+   3
   ],
   "reviewStatus": "approved",
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 28,
+   "op": "count",
+   "answer": 2,
+   "choices": [
+    2,
+    1,
+    3,
+    4
+   ],
    "display": {
-    "step": 7,
-    "sequence": [
-     7,
-     14,
-     21
-    ],
-    "promptText": "What is the step in 7, 14, 21? Use it to find the next term."
+    "promptText": "June counts 2, 4, 6, 8. What is June's skip-count rule?"
    }
   }
  },
  {
-  "itemId": "skipcounting-conc-groupsToProduct-23-002",
+  "itemId": "skipCounting-conc-b0821-0307",
   "modeId": "skipCounting",
   "itemFamily": "conceptual",
   "subskill": "groupsToProduct",
-  "structureType": "patternNext",
+  "structureType": "pairsHandsDimes",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      2,
+      2
+     ]
+    },
+    "promptText": "Nia counts the socks by 2s: 🧦🧦  🧦🧦 How many socks does Nia count?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-conc-b0821-0059",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "patternRule",
+  "structureType": "oddOneOutNotMultiple",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 13,
+   "choices": [
+    12,
+    13,
+    14,
+    10
+   ],
+   "display": {
+    "promptText": "Nora wrote 12, 13, 14, 10 while counting by 2s. Which number is NOT in that count?"
+   }
+  }
+ },
+ {
+  "itemId": "skipCounting-conc-b0821-0214",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "stepInference",
+  "structureType": "errorSkipSlip",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 11,
+   "choices": [
+    12,
+    6,
+    11,
+    8
+   ],
+   "display": {
+    "pattern": {
+     "step": 2,
+     "start": 6,
+     "badIdx": 2
+    },
+    "promptText": "Something slipped in Mina's count: 6, 8, 11, 12. Which number is wrong?"
+   }
+  }
+ },
+ {
+  "itemId": "skipCounting-conc-b0821-0359",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "groupsToProduct",
+  "structureType": "predictLastSmall",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 6,
+   "choices": [
+    8,
+    4,
+    6,
+    7
+   ],
+   "display": {
+    "promptText": "Omar counts 3 groups by 2s. What is the last number Omar says?"
+   }
+  }
+ },
+ {
+  "itemId": "skipCounting-conc-b0821-0113",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "patternRule",
+  "structureType": "nextClaimJudge",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "promptText": "Finn counts 1, 3, 5 and says 7 comes next. Is Finn right?"
+   }
+  }
+ },
+ {
+  "itemId": "skipCounting-conc-b0821-0273",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "stepInference",
+  "structureType": "twoJumps",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 7,
+   "display": {
+    "counting": {
+     "kind": "countOn",
+     "more": 4,
+     "start": 3
+    },
+    "promptText": "Mina starts at 3 and makes two jumps of 2. Where does Mina land?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "skipCounting-conc-b0821-0019",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "patternRule",
+  "structureType": "membershipJudgeThrees",
   "levelRange": [
    4,
    6
@@ -21262,27 +39799,84 @@ export const SEED_ITEMS = [
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "promptText": "Luca counts by 3s from 3. Does Luca ever say 12?"
+   }
+  }
+ },
+ {
+  "itemId": "skipCounting-conc-b0821-0173",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "stepInference",
+  "structureType": "identifyRuleThreesFours",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "choices": [
+    3,
+    2,
+    4,
+    6
+   ],
+   "display": {
+    "promptText": "June counts 3, 6, 9, 12. What is June's skip-count rule?"
+   }
+  }
+ },
+ {
+  "itemId": "skipCounting-conc-b0821-0333",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "groupsToProduct",
+  "structureType": "pairsHandsDimesMore",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
    "answer": 30,
    "display": {
-    "step": 5,
-    "sequence": [
-     5,
-     10,
-     15,
-     20,
-     25
-    ],
-    "promptText": "Use skip-counting by 5s for 6 groups of 5."
-   }
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+     ]
+    },
+    "promptText": "Nia counts the fingers by 5s: ✋  ✋  ✋  ✋  ✋  ✋ How many fingers does Nia count?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "skipcounting-conc-patternRule-23-002",
+  "itemId": "skipCounting-conc-b0821-0076",
   "modeId": "skipCounting",
   "itemFamily": "conceptual",
   "subskill": "patternRule",
-  "structureType": "patternNext",
+  "structureType": "oddOneOutThreesFours",
   "levelRange": [
    4,
    6
@@ -21291,25 +39885,25 @@ export const SEED_ITEMS = [
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 24,
+   "op": "count",
+   "answer": 22,
+   "choices": [
+    22,
+    24,
+    16,
+    20
+   ],
    "display": {
-    "step": 6,
-    "sequence": [
-     6,
-     12,
-     18
-    ],
-    "promptText": "What pattern do 6, 12, 18 follow? Continue it."
+    "promptText": "One of Luca's numbers 22, 24, 16, 20 does not belong to the 4s count. Which one?"
    }
   }
  },
  {
-  "itemId": "skipcounting-conc-stepInference-23-002",
+  "itemId": "skipCounting-conc-b0821-0230",
   "modeId": "skipCounting",
   "itemFamily": "conceptual",
   "subskill": "stepInference",
-  "structureType": "patternNext",
+  "structureType": "errorSkipSlipMid",
   "levelRange": [
    4,
    6
@@ -21318,25 +39912,30 @@ export const SEED_ITEMS = [
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 32,
+   "op": "count",
+   "answer": 26,
+   "choices": [
+    20,
+    12,
+    26,
+    16
+   ],
    "display": {
-    "step": 8,
-    "sequence": [
-     8,
-     16,
-     24
-    ],
-    "promptText": "Count by 8s: 8, 16, 24. What number comes next?"
+    "pattern": {
+     "step": 4,
+     "start": 12,
+     "badIdx": 3
+    },
+    "promptText": "Something slipped in Mina's count: 12, 16, 20, 26. Which number is wrong?"
    }
   }
  },
  {
-  "itemId": "skipcounting-conc-groupsToProduct-23-003",
+  "itemId": "skipCounting-conc-b0821-0377",
   "modeId": "skipCounting",
   "itemFamily": "conceptual",
   "subskill": "groupsToProduct",
-  "structureType": "patternNext",
+  "structureType": "predictLastCount",
   "levelRange": [
    4,
    6
@@ -21345,479 +39944,289 @@ export const SEED_ITEMS = [
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 24,
-   "display": {
-    "step": 6,
-    "sequence": [
-     6,
-     12,
-     18
-    ],
-    "promptText": "Use skip-counting by 6s for 4 groups of 6."
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-patternRule-23-003",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 44,
-   "display": {
-    "step": 11,
-    "sequence": [
-     11,
-     22,
-     33
-    ],
-    "promptText": "Skip-count by 11s: 11, 22, 33, __. What number fills the blank?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-groupsToProduct-45-001",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 48,
-   "display": {
-    "step": 12,
-    "sequence": [
-     12,
-     24,
-     36
-    ],
-    "promptText": "Use skip-counting by 12s for 4 groups of 12."
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-patternRule-45-001",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 100,
-   "display": {
-    "step": 25,
-    "sequence": [
-     25,
-     50,
-     75
-    ],
-    "promptText": "Identify the rule in 25, 50, 75 and find the next term."
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-stepInference-45-001",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 80,
-   "display": {
-    "step": 10,
-    "sequence": [
-     50,
-     60,
-     70
-    ],
-    "promptText": "What is the step in 50, 60, 70? Use it to find the next term."
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-groupsToProduct-45-002",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 100,
-   "display": {
-    "step": 25,
-    "sequence": [
-     25,
-     50,
-     75
-    ],
-    "promptText": "Use skip-counting by 25s for 4 groups of 25."
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-patternRule-45-002",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 48,
-   "display": {
-    "step": 12,
-    "sequence": [
-     12,
-     24,
-     36
-    ],
-    "promptText": "What pattern do 12, 24, 36 follow? Continue it."
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-stepInference-45-002",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "stepInference",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 140,
-   "display": {
-    "step": 20,
-    "sequence": [
-     80,
-     100,
-     120
-    ],
-    "promptText": "Count by 20s: 80, 100, 120. What number comes next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-groupsToProduct-45-003",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 54,
-   "display": {
-    "step": 9,
-    "sequence": [
-     9,
-     18,
-     27,
-     36,
-     45
-    ],
-    "promptText": "Use skip-counting by 9s for 6 groups of 9."
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-patternRule-45-003",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 400,
-   "display": {
-    "step": 100,
-    "sequence": [
-     100,
-     200,
-     300
-    ],
-    "promptText": "Count by 100s: 100, 200, 300. What number comes next?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-groupsToProduct-K1-001",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
+   "op": "count",
    "answer": 15,
+   "choices": [
+    15,
+    18,
+    12,
+    16
+   ],
    "display": {
-    "step": 5,
-    "sequence": [
-     5,
-     10
-    ],
-    "promptText": "Use skip-counting by 5s to find 3 groups of 5."
+    "promptText": "Finn counts 5 groups by 3s. What is the last number Finn says?"
    }
   }
  },
  {
-  "itemId": "skipcounting-conc-patternRule-K1-001",
+  "itemId": "skipCounting-conc-b0821-0133",
   "modeId": "skipCounting",
   "itemFamily": "conceptual",
   "subskill": "patternRule",
-  "structureType": "patternNext",
+  "structureType": "nextClaimJudgeMid",
   "levelRange": [
-   1,
-   3
+   4,
+   6
   ],
   "reviewStatus": "approved",
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 8,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
    "display": {
-    "step": 2,
-    "sequence": [
-     2,
-     4,
-     6
-    ],
-    "promptText": "Identify the rule in 2, 4, 6 and find the next term."
+    "truth": true,
+    "promptText": "Sam counts 18, 21, 24 and says 27 comes next. Is Sam right?"
    }
   }
  },
  {
-  "itemId": "skipcounting-conc-stepInference-K1-001",
+  "itemId": "skipCounting-conc-b0821-0287",
   "modeId": "skipCounting",
   "itemFamily": "conceptual",
   "subskill": "stepInference",
-  "structureType": "patternNext",
+  "structureType": "twoJumpsMid",
   "levelRange": [
-   1,
-   3
+   4,
+   6
   ],
   "reviewStatus": "approved",
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 12,
+   "op": "count",
+   "answer": 21,
    "display": {
-    "step": 3,
-    "sequence": [
-     3,
-     6,
-     9
-    ],
-    "promptText": "What is the step in 3, 6, 9? Use it to find the next term."
-   }
+    "counting": {
+     "kind": "countOn",
+     "more": 6,
+     "start": 15
+    },
+    "promptText": "Amara starts at 15 and makes two jumps of 3. Where does Amara land?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "skipcounting-conc-groupsToProduct-K1-002",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 12,
-   "display": {
-    "step": 3,
-    "sequence": [
-     3,
-     6,
-     9
-    ],
-    "promptText": "Use skip-counting by 3s for 4 groups of 3."
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-patternRule-K1-002",
+  "itemId": "skipCounting-conc-b0821-0037",
   "modeId": "skipCounting",
   "itemFamily": "conceptual",
   "subskill": "patternRule",
-  "structureType": "patternNext",
+  "structureType": "membershipJudgeBig",
   "levelRange": [
-   1,
-   3
+   7,
+   10
   ],
   "reviewStatus": "approved",
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 20,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
    "display": {
-    "step": 5,
-    "sequence": [
-     5,
-     10,
-     15
-    ],
-    "promptText": "What pattern do 5, 10, 15 follow? Find the next term."
+    "truth": true,
+    "promptText": "Luca counts by 6s from 6. Does Luca ever say 42?"
    }
   }
  },
  {
-  "itemId": "skipcounting-conc-stepInference-K1-002",
+  "itemId": "skipCounting-conc-b0821-0191",
   "modeId": "skipCounting",
   "itemFamily": "conceptual",
   "subskill": "stepInference",
-  "structureType": "patternNext",
+  "structureType": "identifyRuleBig",
   "levelRange": [
-   1,
-   3
+   7,
+   10
   ],
   "reviewStatus": "approved",
   "question": {
    "a": null,
    "b": null,
-   "op": "skip",
-   "answer": 9,
-   "display": {
-    "step": 2,
-    "sequence": [
-     1,
-     3,
-     5,
-     7
-    ],
-    "promptText": "Skip-count by 2s: 1, 3, 5, 7, __. What number fills the blank?"
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-groupsToProduct-K1-003",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "groupsToProduct",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
-   "answer": 10,
-   "display": {
-    "step": 2,
-    "sequence": [
-     2,
-     4,
-     6,
-     8
-    ],
-    "promptText": "Use skip-counting by 2s for 5 groups of 2."
-   }
-  }
- },
- {
-  "itemId": "skipcounting-conc-patternRule-K1-003",
-  "modeId": "skipCounting",
-  "itemFamily": "conceptual",
-  "subskill": "patternRule",
-  "structureType": "patternNext",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "skip",
+   "op": "count",
    "answer": 6,
+   "choices": [
+    6,
+    7,
+    12,
+    5
+   ],
    "display": {
-    "step": 2,
-    "sequence": [
-     0,
-     2,
-     4
-    ],
-    "promptText": "Recognize the rule in 0, 2, 4 and continue the pattern."
+    "promptText": "June counts 6, 12, 18, 24. What is June's skip-count rule?"
    }
+  }
+ },
+ {
+  "itemId": "skipCounting-conc-b0821-0401",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "groupsToProduct",
+  "structureType": "predictLastCountBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 24,
+   "choices": [
+    24,
+    30,
+    18,
+    25
+   ],
+   "display": {
+    "promptText": "Omar counts 4 groups by 6s. What is the last number Omar says?"
+   }
+  }
+ },
+ {
+  "itemId": "skipCounting-conc-b0821-0092",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "patternRule",
+  "structureType": "oddOneOutBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 112,
+   "choices": [
+    125,
+    100,
+    75,
+    112
+   ],
+   "display": {
+    "promptText": "One of Luca's numbers 125, 100, 75, 112 does not belong to the 25s count. Which one?"
+   }
+  }
+ },
+ {
+  "itemId": "skipCounting-conc-b0821-0248",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "stepInference",
+  "structureType": "errorSkipSlipBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 102,
+   "choices": [
+    125,
+    50,
+    102,
+    75
+   ],
+   "display": {
+    "pattern": {
+     "step": 25,
+     "start": 50,
+     "badIdx": 2
+    },
+    "promptText": "Something slipped in Mina's count: 50, 75, 102, 125. Which number is wrong?"
+   }
+  }
+ },
+ {
+  "itemId": "skipCounting-conc-b0821-0424",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "groupsToProduct",
+  "structureType": "predictLastCountBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 450,
+   "choices": [
+    451,
+    450,
+    400,
+    500
+   ],
+   "display": {
+    "promptText": "Priya skip counts 9 jumps of 50. Which number does Priya end on?"
+   }
+  }
+ },
+ {
+  "itemId": "skipCounting-conc-b0821-0149",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "patternRule",
+  "structureType": "nextClaimJudgeBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "promptText": "Sam counts 24, 30, 36 and says 42 comes next. Is Sam right?"
+   }
+  }
+ },
+ {
+  "itemId": "skipCounting-conc-b0821-0301",
+  "modeId": "skipCounting",
+  "itemFamily": "conceptual",
+  "subskill": "stepInference",
+  "structureType": "twoJumpsBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 250,
+   "display": {
+    "counting": {
+     "kind": "countOn",
+     "more": 100,
+     "start": 150
+    },
+    "promptText": "Amara starts at 150 and makes two jumps of 50. Where does Amara land?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
@@ -22600,10 +41009,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 15,
    "display": {
-    "promptText": "Nia read 43 pages this week and 28 pages last week. How many more pages did she read this week?",
-    "promptOptions": [
-     "This week Nia read 43 pages. Last week she read 28 pages. How many more pages did she read this week?"
-    ]
+    "promptText": "This week Nia read 43 pages. Last week she read 28 pages. How many more pages did she read this week?"
    }
   }
  },
@@ -22624,11 +41030,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 33,
    "display": {
-    "promptText": "There are 52 markers in a box. 19 are used in art class. How many markers are left?",
-    "promptOptions": [
-     "Mom bought 52 markers. The kids used 19 in art class. How many markers does Mom have left?",
-     "A box had 52 markers. 19 were used for a project. How many markers are left in the box?"
-    ]
+    "promptText": "Mom bought 52 markers. The kids used 19 in art class. How many markers does Mom have left?"
    }
   }
  },
@@ -22649,36 +41051,28 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 24,
    "display": {
-    "promptText": "A shelf held 61 books. After some were borrowed, 37 remained. How many books were borrowed?",
-    "promptOptions": [
-     "Rosa started with 61 books. She lent some away. Now she has 37 books. How many books did she lend?",
-     "Marco had 61 books. After he lent some, he had 37 books. How many books did he lend?",
-     "A shelf held 61 books. Some were borrowed. Now 37 remain. How many books were borrowed?"
-    ]
+    "promptText": "Rosa started with 61 books. She lent some away. Now she has 37 books. How many books did she lend?"
    }
   }
  },
  {
-  "itemId": "subtraction-app-063",
+  "itemId": "subtraction-app-differenceAsDistance-4_5-compareSmallerFewer-b0728b-002",
   "modeId": "subtraction",
   "itemFamily": "application",
   "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceMore",
+  "structureType": "compareSmallerFewer",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 125,
-   "b": 78,
-   "op": "−",
-   "answer": 47,
+   "a": 42,
+   "b": 13,
+   "op": "-",
+   "answer": 29,
    "display": {
-    "promptText": "Ema typed 125 words. Fenix typed 78. How many more words did Ema type?",
-    "promptOptions": [
-     "Ema typed 125 words. Fenix typed 78 words. How many more words did Ema type?"
-    ]
+    "promptText": "James has 13 fewer stickers than Sofia. Sofia has 42 stickers. How many stickers does James have?"
    }
   }
  },
@@ -22699,17 +41093,12 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 75,
    "display": {
-    "promptText": "A museum had 200 visitors. 125 left for lunch. How many visitors remain?",
-    "promptOptions": [
-     "A museum had 200 visitors. Then 125 of them left for lunch. How many visitors remain in the museum?",
-     "Early in the day, the museum had 200 visitors. Then 125 left for lunch. How many visitors remain?",
-     "A busy museum had 200 visitors. After lunch time, 125 of them had left. How many visitors are still there?"
-    ]
+    "promptText": "A museum had 200 visitors. Then 125 of them left for lunch. How many visitors remain in the museum?"
    }
   }
  },
  {
-  "itemId": "subtraction-app-142",
+  "itemId": "subtraction-app-263",
   "modeId": "subtraction",
   "itemFamily": "application",
   "subskill": "unknownSubtrahend",
@@ -22720,43 +41109,33 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 150,
+   "a": 500,
    "b": null,
    "op": "−",
-   "answer": 73,
+   "answer": 175,
    "display": {
-    "promptText": "Varun had 150 postcards. He mailed some. 77 remain. How many postcards did Varun mail?",
-    "promptOptions": [
-     "Varun had 150 postcards. He mailed some. Now 77 remain. How many postcards did Varun mail?",
-     "Varun started with 150 postcards. After mailing some, 77 remained. How many postcards did Varun mail?",
-     "Varun had 150 postcards to send. He mailed some postcards. Now he has 77. How many postcards did Varun mail?"
-    ]
+    "promptText": "The park had 325 trees at first. Some were planted this spring. Now there are 500 trees. How many trees were planted?"
    }
   }
  },
  {
-  "itemId": "subtraction-app-229",
+  "itemId": "subtraction-app-differenceAsDistance-4_5-compareSmallerMore-006",
   "modeId": "subtraction",
   "itemFamily": "application",
   "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
+  "structureType": "compareSmallerMore",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 120,
-   "b": 85,
-   "op": "−",
-   "answer": 35,
+   "a": 45,
+   "b": 19,
+   "op": "-",
+   "answer": 26,
    "display": {
-    "promptText": "A music app played 120 songs on Saturday and 85 on Friday. What is the difference?",
-    "promptOptions": [
-     "A music app played 120 songs on Saturday and 85 on Friday. How many more songs on Saturday?",
-     "A music app played 120 songs on Saturday. It played 85 on Friday. How many more songs on Saturday?",
-     "On Saturday, a music app played 120 songs. On Friday, it played 85. How many more songs on Saturday?"
-    ]
+    "promptText": "Zara and Kai collect coins. Kai has 45 coins and 19 more than Zara. How many coins does Zara have?"
    }
   }
  },
@@ -22777,12 +41156,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 72,
    "display": {
-    "promptText": "A factory had 140 boxes. 68 shipped out. How many boxes are left?",
-    "promptOptions": [
-     "A factory had 140 boxes. 68 shipped out. How many boxes were left?",
-     "A factory packed 140 boxes. 68 got shipped out. How many boxes were left?",
-     "The factory had 140 boxes. 68 were shipped to stores. How many boxes were left?"
-    ]
+    "promptText": "A factory had 140 boxes. 68 shipped out. How many boxes were left?"
    }
   }
  },
@@ -22803,10 +41177,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 5,
    "display": {
-    "promptText": "Sara has 8 apples. Beto has 3 apples. How many more apples does Sara have?",
-    "promptOptions": [
-     "Sara picked 8 apples. Beto picked 3 apples. How many more apples did Sara pick?"
-    ]
+    "promptText": "Sara picked 8 apples. Beto picked 3 apples. How many more apples did Sara pick?"
    }
   }
  },
@@ -22827,11 +41198,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 6,
    "display": {
-    "promptText": "A bag has 10 grapes. Lily eats 4 grapes. How many grapes are left in the bag?",
-    "promptOptions": [
-     "Lily had 10 grapes. She ate 4 grapes. How many grapes does Lily have left?",
-     "A bag had 10 grapes. Lily ate 4. How many grapes are left in the bag?"
-    ]
+    "promptText": "Lily had 10 grapes. She ate 4 grapes. How many grapes does Lily have left?"
    }
   }
  },
@@ -22852,12 +41219,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 4,
    "display": {
-    "promptText": "A jar had 10 candies. Now there are 6 candies. How many candies were eaten?",
-    "promptOptions": [
-     "Tasha had 10 candies. She ate some. Now she has 6 candies. How many candies did she eat?",
-     "A jar held 10 candies. After snack time, 6 candies remained. How many candies were eaten?",
-     "There were 10 candies. Some were eaten. Now there are 6 candies. How many candies were eaten?"
-    ]
+    "promptText": "Tasha had 10 candies. She ate some. Now she has 6 candies. How many candies did she eat?"
    }
   }
  },
@@ -22878,11 +41240,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 8,
    "display": {
-    "promptText": "Makoto has 9 shells and Nur has 1. How many more shells does Makoto have?",
-    "promptOptions": [
-     "Makoto has 9 shells. Nur has 1 shell. How many more shells does Makoto have?",
-     "Makoto found 9 shells. Nur found 1 shell. How many more shells did Makoto find?"
-    ]
+    "promptText": "Makoto has 9 shells. Nur has 1 shell. How many more shells does Makoto have?"
    }
   }
  },
@@ -22903,11 +41261,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 2,
    "display": {
-    "promptText": "Uri had 9 magnets. He took 7 off the fridge. How many magnets are still there?",
-    "promptOptions": [
-     "Uri had 9 magnets on his fridge. He took 7 off. How many magnets are left?",
-     "Uri had 9 magnets. Then he took 7 away. How many magnets are left?"
-    ]
+    "promptText": "Uri had 9 magnets on his fridge. He took 7 off. How many magnets are left?"
    }
   }
  },
@@ -22928,11 +41282,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 2,
    "display": {
-    "promptText": "Cob had 8 crayons. After using some, he had 6. How many crayons did Cob use?",
-    "promptOptions": [
-     "Cob had 8 crayons. He used some. Now he has 6. How many crayons did Cob use?",
-     "Cob started with 8 crayons. He used some to draw. Now he has 6. How many crayons did he use?"
-    ]
+    "promptText": "Cob had 8 crayons. He used some. Now he has 6. How many crayons did Cob use?"
    }
   }
  },
@@ -22953,12 +41303,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 4,
    "display": {
-    "promptText": "A red jar has 10 beads; a blue jar has 6. How many more beads are in the red jar?",
-    "promptOptions": [
-     "The red jar has 10 beads. The blue jar has 6 beads. How many more beads are in the red jar?",
-     "Maya put 10 beads in the red jar and 6 beads in the blue jar. How many more beads are in the red jar?",
-     "One jar is red with 10 beads. Another is blue with 6 beads. How many more beads does the red jar have?"
-    ]
+    "promptText": "The red jar has 10 beads. The blue jar has 6 beads. How many more beads are in the red jar?"
    }
   }
  },
@@ -22979,10 +41324,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 5,
    "display": {
-    "promptText": "Jade had 8 stickers and gave 3 away. How many stickers does Jade have now?",
-    "promptOptions": [
-     "Jade had 8 stickers. She gave 3 to her best friend. How many stickers does Jade have now?"
-    ]
+    "promptText": "Jade had 8 stickers. She gave 3 to her best friend. How many stickers does Jade have now?"
    }
   }
  },
@@ -23003,10 +41345,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 7,
    "display": {
-    "promptText": "Class A has 15 books. Class B has 8 books. How many more books does Class A have?",
-    "promptOptions": [
-     "Class A has 15 books and Class B has 8 books. How many more books does Class A have?"
-    ]
+    "promptText": "Class A has 15 books and Class B has 8 books. How many more books does Class A have?"
    }
   }
  },
@@ -23027,11 +41366,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 13,
    "display": {
-    "promptText": "A box had 20 markers. 7 markers are missing. How many markers remain in the box?",
-    "promptOptions": [
-     "Mom bought 20 markers. 7 were lost. How many markers does Mom have left?",
-     "A box had 20 markers. 7 went missing. How many markers are left in the box?"
-    ]
+    "promptText": "Mom bought 20 markers. 7 were lost. How many markers does Mom have left?"
    }
   }
  },
@@ -23052,12 +41387,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 7,
    "display": {
-    "promptText": "A plate had 15 grapes. After snack time, 8 grapes are left. How many grapes were eaten?",
-    "promptOptions": [
-     "Marcus had 15 grapes. He ate some at snack time. Now he has 8 grapes. How many grapes did he eat?",
-     "A plate held 15 grapes. Some were eaten at snack time. Now 8 remain. How many grapes were eaten?",
-     "There were 15 grapes at snack time. Some were eaten. Now 8 grapes remain. How many grapes were eaten?"
-    ]
+    "promptText": "Marcus had 15 grapes. He ate some at snack time. Now he has 8 grapes. How many grapes did he eat?"
    }
   }
  },
@@ -23078,12 +41408,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 8,
    "display": {
-    "promptText": "Keva knitted 16 scarves. Liam knitted 8. How many more scarves did Keva knit?",
-    "promptOptions": [
-     "Keva knitted 16 scarves. Liam knitted 8 scarves. How many more scarves did Keva knit?",
-     "Keva and Liam were knitting scarves. Keva made 16. Liam made 8. How many more scarves did Keva knit?",
-     "Keva knitted 16 scarves. Liam knitted only 8 scarves. How many more scarves did Keva knit?"
-    ]
+    "promptText": "Keva knitted 16 scarves. Liam knitted 8 scarves. How many more scarves did Keva knit?"
    }
   }
  },
@@ -23104,12 +41429,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 13,
    "display": {
-    "promptText": "A garden had 19 seeds. Harin planted 6. How many seeds are left?",
-    "promptOptions": [
-     "Harin had 19 seeds. She planted 6. How many seeds are left?",
-     "Harin had 19 seeds for a garden. She planted 6. How many seeds are left?",
-     "Harin's garden had 19 seeds. She planted 6. How many seeds are left?"
-    ]
+    "promptText": "Harin had 19 seeds. She planted 6. How many seeds are left?"
    }
   }
  },
@@ -23130,12 +41450,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 12,
    "display": {
-    "promptText": "Maya had 19 feet of rope. After cutting, 7 feet remained. How many feet of rope were cut?",
-    "promptOptions": [
-     "Maya had 19 feet of rope. She cut some of it. Now she has 7 feet left. How many feet of rope did she cut?",
-     "Maya started with 19 feet of rope. She cut some away. Now she has 7 feet. How many feet did she cut?",
-     "Maya had 19 feet of rope. After cutting, 7 feet remained. How many feet of rope did she cut?"
-    ]
+    "promptText": "Maya had 19 feet of rope. She cut some of it. Now she has 7 feet left. How many feet of rope did she cut?"
    }
   }
  },
@@ -23156,11 +41471,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 8,
    "display": {
-    "promptText": "An ice rink had 17 skaters and a pond had 9. How many more skaters were at the rink?",
-    "promptOptions": [
-     "At the ice rink, 17 people skated. At the pond, 9 people skated. How many more skaters were at the rink?",
-     "The ice rink had 17 skaters and the pond had 9 skaters. How many more skaters were at the rink?"
-    ]
+    "promptText": "At the ice rink, 17 people skated. At the pond, 9 people skated. How many more skaters were at the rink?"
    }
   }
  },
@@ -23181,10 +41492,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 11,
    "display": {
-    "promptText": "Vin baked 15 cookies and his cousin ate 4. How many cookies are left?",
-    "promptOptions": [
-     "Vin baked 15 cookies. His cousin ate 4. How many cookies are left?"
-    ]
+    "promptText": "Vin baked 15 cookies. His cousin ate 4. How many cookies are left?"
    }
   }
  },
@@ -24193,6 +42501,1440 @@ export const SEED_ITEMS = [
    "answer": 1,
    "display": {
     "promptText": "9 − 8 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0001",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "readClock",
+  "structureType": "storyHandsRead",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "three o'clock",
+   "choices": [
+    "half past three",
+    "half past four",
+    "three o'clock",
+    "four o'clock"
+   ],
+   "display": {
+    "time": {
+     "hour": 3,
+     "kind": "handsWords",
+     "minute": 0
+    },
+    "promptText": "Sam checks the clock before swim practice: the minute hand points at twelve and the hour hand at three. What time is it?"
+   }
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0052",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "elapsedTime",
+  "structureType": "storyWholeHours",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "counting": {
+     "have": 2,
+     "kind": "gap",
+     "target": 5
+    },
+    "promptText": "swim practice starts at two o'clock and ends at five o'clock. Sam wants to know: how many hours is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0137",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "timeConcepts",
+  "structureType": "storyDayPart",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "morning",
+   "choices": [
+    "afternoon",
+    "morning",
+    "night"
+   ],
+   "display": {
+    "time": {
+     "kind": "dayPart",
+     "part": "morning"
+    },
+    "promptText": "Sam feeds the cat before school. Which part of the day is it?"
+   }
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0239",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "calendar",
+  "structureType": "storyDueDay_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Thursday",
+   "choices": [
+    "Thursday",
+    "Wednesday",
+    "Friday"
+   ],
+   "display": {
+    "time": {
+     "k": 3,
+     "from": "Monday",
+     "kind": "weekdayHop"
+    },
+    "promptText": "Sam borrows a library book on Monday. It is due 3 days later. On which day is it due?"
+   }
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0349",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "readClock",
+  "structureType": "storyMinuteHand",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "straight up at the twelve",
+   "choices": [
+    "straight up at the twelve",
+    "straight down at the six"
+   ],
+   "display": {
+    "time": {
+     "kind": "minuteHandDir",
+     "minute": 0
+    },
+    "promptText": "The alarm rings at six o'clock. June pictures the clock face. Which way does the minute hand point?"
+   }
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0128",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "elapsedTime",
+  "structureType": "storyHourPlan",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "time": {
+     "hour": 6,
+     "kind": "hourLater",
+     "delta": -2
+    },
+    "promptText": "swim practice starts at six o'clock. Omar must leave home two hours earlier. What hour does Omar leave? Answer with the hour number."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0196",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "timeConcepts",
+  "structureType": "storyBenchmark",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "5 seconds",
+   "choices": [
+    "5 seconds",
+    "5 hours",
+    "5 days",
+    "5 minutes"
+   ],
+   "display": {
+    "time": {
+     "kind": "benchmark"
+    },
+    "promptText": "About how long does it take June to zip a jacket? Pick the sensible time."
+   }
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0264",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "calendar",
+  "structureType": "storyCountdown_band1",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 4,
+   "display": {
+    "counting": {
+     "have": 3,
+     "kind": "gap",
+     "target": 7
+    },
+    "promptText": "The bake sale comes in 7 days. After 3 days go by, how many days does June still wait?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0018",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "readClock",
+  "structureType": "storyBoardRead",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "quarter past three",
+   "choices": [
+    "quarter past three",
+    "half past three",
+    "three o'clock"
+   ],
+   "display": {
+    "time": {
+     "hour": 3,
+     "kind": "digitalWords",
+     "words": "quarter past three",
+     "minute": 15
+    },
+    "promptText": "Mina sees \"3:15\" next to swim practice on the board. Which words say that time?"
+   }
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0069",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "elapsedTime",
+  "structureType": "storyTimer_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 35,
+   "display": {
+    "counting": {
+     "have": 190,
+     "kind": "gap",
+     "target": 225
+    },
+    "promptText": "The kitchen timer for Mina's muffins runs from 3:10 to 3:45. How many minutes is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0154",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "timeConcepts",
+  "structureType": "storyRecipe_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 75,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      60,
+      15
+     ]
+    },
+    "promptText": "The model glue must dry for 1 hour 15 minutes, Mina reads. How many total minutes of waiting?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0273",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "calendar",
+  "structureType": "storyCountdown_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 18,
+   "display": {
+    "counting": {
+     "have": 12,
+     "kind": "gap",
+     "target": 30
+    },
+    "promptText": "Sam's class trip is 30 days away. 12 days already passed. How many days are left to wait?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0383",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "readClock",
+  "structureType": "storyGuideWords",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "quarter to four",
+   "choices": [
+    "quarter past three",
+    "three o'clock",
+    "half past three",
+    "quarter to four"
+   ],
+   "display": {
+    "time": {
+     "hour": 3,
+     "kind": "digitalWords",
+     "words": "quarter to four",
+     "minute": 45
+    },
+    "promptText": "The show guide lists Omar's cartoon at 3:45. Which words say that time?"
+   }
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0468",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "elapsedTime",
+  "structureType": "storyPractice_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 45,
+   "display": {
+    "counting": {
+     "have": 185,
+     "kind": "gap",
+     "target": 230
+    },
+    "promptText": "June shoots hoops from 3:05 until 3:50. How many minutes does June play?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0213",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "timeConcepts",
+  "structureType": "storyTimerLeft_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 5,
+   "display": {
+    "counting": {
+     "have": 25,
+     "kind": "gap",
+     "target": 30
+    },
+    "promptText": "Omar's screen-time timer holds 30 minutes. 25 minutes are used up. How many minutes remain?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0298",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "calendar",
+  "structureType": "storyWeeksDays_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 25,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      21,
+      4
+     ]
+    },
+    "promptText": "June's reading challenge runs 3 weeks plus 4 days. What is the total number of days?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0035",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "readClock",
+  "structureType": "storyArrive",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "3:07",
+   "choices": [
+    "4:07",
+    "3:12",
+    "3:53",
+    "3:07"
+   ],
+   "display": {
+    "time": {
+     "hour": 3,
+     "kind": "wordsDigital",
+     "minute": 7
+    },
+    "promptText": "Luca arrives at swim practice when the clock shows 7 minutes past 3. Which digital time is on Luca's watch?"
+   }
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0086",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "elapsedTime",
+  "structureType": "storyTimer_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 45,
+   "display": {
+    "counting": {
+     "have": 160,
+     "kind": "gap",
+     "target": 205
+    },
+    "promptText": "Sam slides cookies into the oven at 2:40 and takes them out at 3:25. How many minutes did they bake?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0171",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "timeConcepts",
+  "structureType": "storyRecipe_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 325,
+   "display": {
+    "counting": {
+     "kind": "sum",
+     "parts": [
+      300,
+      25
+     ]
+    },
+    "promptText": "Sam's bread recipe needs 5 hours and 25 minutes in the oven. How many minutes is that in all?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0307",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "calendar",
+  "structureType": "storyDateSpan",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 14,
+   "display": {
+    "counting": {
+     "have": 4,
+     "kind": "gap",
+     "target": 18
+    },
+    "promptText": "Sam plants seeds on March 4 and the sprouts appear on March 18. How many days did they take?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0417",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "readClock",
+  "structureType": "storyTicketMinutes",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 28,
+   "display": {
+    "time": {
+     "kind": "faceRead",
+     "minute": 28
+    },
+    "promptText": "Omar's ticket reads 7:28. How many minutes past 7 o'clock is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0111",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "elapsedTime",
+  "structureType": "storyBusArrive",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "5:10",
+   "choices": [
+    "5:05",
+    "5:15",
+    "5:10",
+    "6:10"
+   ],
+   "display": {
+    "time": {
+     "dur": 25,
+     "kind": "endTime",
+     "startH": 4,
+     "startM": 45
+    },
+    "promptText": "The trip to the museum starts at 4:45 and lasts 25 minutes. When does June arrive? Pick the time."
+   }
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0230",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "timeConcepts",
+  "structureType": "storyTimerLeft_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 75,
+   "display": {
+    "counting": {
+     "have": 165,
+     "kind": "gap",
+     "target": 240
+    },
+    "promptText": "Of the 240 minutes on June's practice timer, 165 have ticked by. How many minutes are left?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-app-b0821-0332",
+  "modeId": "time",
+  "itemFamily": "application",
+  "subskill": "calendar",
+  "structureType": "storySameWeekday",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Tuesday",
+   "choices": [
+    "Monday",
+    "Tuesday",
+    "Friday",
+    "Wednesday"
+   ],
+   "display": {
+    "time": {
+     "k": 14,
+     "from": "Tuesday",
+     "kind": "weekdayHop"
+    },
+    "promptText": "Game night is always on a Tuesday. In 2 weeks, which day of the week is game night for June?"
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0001",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "readClock",
+  "structureType": "judgeOclockRead",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "time": {
+     "hour": 1,
+     "kind": "judgeRead",
+     "minute": 0,
+     "saidHour": 1,
+     "saidMinute": 0
+    },
+    "truth": true,
+    "promptText": "The minute hand points at twelve and the hour hand at one. Luca says it is one o'clock. Is Luca right?"
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0191",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "elapsedTime",
+  "structureType": "hourCountJudge",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "time": {
+     "e": 5,
+     "s": 2,
+     "kind": "elapsedSaid",
+     "said": 3
+    },
+    "truth": true,
+    "promptText": "Ben says from two o'clock to five o'clock is three hours. Is Ben right?"
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0310",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "timeConcepts",
+  "structureType": "durationBenchmark",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "2 minutes",
+   "choices": [
+    "2 days",
+    "2 minutes",
+    "2 seconds",
+    "2 hours"
+   ],
+   "display": {
+    "time": {
+     "kind": "benchmark"
+    },
+    "promptText": "About how long does it take Mina to brush your teeth?"
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0465",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "calendar",
+  "structureType": "tomorrowPick",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Tuesday",
+   "choices": [
+    "Saturday",
+    "Wednesday",
+    "Tuesday",
+    "Sunday"
+   ],
+   "display": {
+    "time": {
+     "k": 1,
+     "from": "Monday",
+     "kind": "weekdayHop"
+    },
+    "promptText": "Today is Monday, Mina says. What day is tomorrow?"
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0027",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "readClock",
+  "structureType": "whichHandHour",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "the short hand",
+   "choices": [
+    "the long hand",
+    "the short hand"
+   ],
+   "display": {
+    "time": {
+     "kind": "hourHand"
+    },
+    "promptText": "June wants the hand that tells the HOUR. Which hand is it?"
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0217",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "elapsedTime",
+  "structureType": "whichLongerTeen",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Event A",
+   "choices": [
+    "Event A",
+    "Event B"
+   ],
+   "display": {
+    "time": {
+     "la": 3,
+     "lb": 2,
+     "kind": "longer"
+    },
+    "promptText": "Amara compares two events: A runs seven to ten o'clock, B runs two to four o'clock. Which event lasts longer?"
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0336",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "timeConcepts",
+  "structureType": "dayPartPick",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "night",
+   "choices": [
+    "night",
+    "afternoon",
+    "morning"
+   ],
+   "display": {
+    "time": {
+     "kind": "dayPart",
+     "part": "night"
+    },
+    "promptText": "Finn puts on pajamas for bed. Which part of the day is that?"
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0490",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "calendar",
+  "structureType": "weekendJudge",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "time": {
+     "day": "Saturday",
+     "kind": "weekend",
+     "claim": "weekend"
+    },
+    "truth": true,
+    "promptText": "Diego marks Saturday as a weekend day on the calendar. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0053",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "readClock",
+  "structureType": "judgeFiveRead",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "time": {
+     "hour": 3,
+     "kind": "judgeRead",
+     "minute": 15,
+     "saidHour": 3,
+     "saidMinute": 15
+    },
+    "truth": true,
+    "promptText": "Mina reads a clock showing 3:15 and writes 3:15. Is Mina right?"
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0155",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "elapsedTime",
+  "structureType": "elapsedJudge_band2",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "time": {
+     "e": 205,
+     "s": 160,
+     "kind": "elapsedSaid",
+     "said": 85
+    },
+    "truth": false,
+    "promptText": "Ben subtracts the clock numbers to say 2:40 to 3:25 took 85 minutes. Is Ben right?"
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0346",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "timeConcepts",
+  "structureType": "amPmPick",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "a.m.",
+   "choices": [
+    "a.m.",
+    "p.m."
+   ],
+   "display": {
+    "time": {
+     "kind": "amPm",
+     "label": "a.m."
+    },
+    "promptText": "Nia eats breakfast at 7:30. Is that a.m. or p.m.?"
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0516",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "calendar",
+  "structureType": "nextMonthPick",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "February",
+   "choices": [
+    "March",
+    "December",
+    "February",
+    "July"
+   ],
+   "display": {
+    "time": {
+     "k": 1,
+     "from": "January",
+     "kind": "monthHop"
+    },
+    "promptText": "Ava crosses off January. Which month comes next?"
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0079",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "readClock",
+  "structureType": "closerHourJudge",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "time": {
+     "kind": "closerNext",
+     "minute": 35
+    },
+    "truth": true,
+    "promptText": "At 7:35, is the time closer to the hour just passed or the hour coming next? Omar says the hour coming next. Is Omar right?"
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0250",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "elapsedTime",
+  "structureType": "whichLongerMid",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Activity A",
+   "choices": [
+    "Activity A",
+    "Activity B"
+   ],
+   "display": {
+    "time": {
+     "la": 25,
+     "lb": 15,
+     "kind": "longer"
+    },
+    "promptText": "Activity A goes 1:15 to 1:40; activity B goes 2:30 to 2:45. Which lasts longer? Lily checks the clock."
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0372",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "timeConcepts",
+  "structureType": "unitCompare",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "200 minutes",
+   "choices": [
+    "3 hours",
+    "200 minutes"
+   ],
+   "display": {
+    "time": {
+     "la": 180,
+     "lb": 200,
+     "kind": "longer"
+    },
+    "promptText": "Diego compares 3 hours with 200 minutes. Which is longer?"
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0541",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "calendar",
+  "structureType": "monthFactJudge",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "time": {
+     "kind": "claim"
+    },
+    "truth": true,
+    "promptText": "Ava writes: May has 31 days. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0105",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "readClock",
+  "structureType": "judgeMinuteRead",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "time": {
+     "hour": 3,
+     "kind": "judgeRead",
+     "minute": 7,
+     "saidHour": 3,
+     "saidMinute": 7
+    },
+    "truth": true,
+    "promptText": "Nia reads a clock showing 3:07 and writes 3:07. Is Nia right?"
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0173",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "elapsedTime",
+  "structureType": "elapsedJudge_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "time": {
+     "e": 510,
+     "s": 475,
+     "kind": "elapsedSaid",
+     "said": 75
+    },
+    "truth": false,
+    "promptText": "Ben subtracts the clock numbers to say 7:55 to 8:30 took 75 minutes. Is Ben right?"
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0414",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "timeConcepts",
+  "structureType": "longestDuration",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "2 hours",
+   "choices": [
+    "90 minutes",
+    "100 minutes",
+    "2 hours"
+   ],
+   "display": {
+    "time": {
+     "kind": "longest",
+     "values": [
+      120,
+      100,
+      90
+     ]
+    },
+    "promptText": "June lines up three durations: 2 hours, 100 minutes, 90 minutes. Which one is the longest?"
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0567",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "calendar",
+  "structureType": "weeksBetween",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 3,
+   "display": {
+    "time": {
+     "a": 3,
+     "b": 24,
+     "kind": "weeksBetween"
+    },
+    "promptText": "Omar marks March 3 and March 24 on the calendar. Exactly how many WEEKS apart are they?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0130",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "readClock",
+  "structureType": "minutesToNextHour",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 18,
+   "display": {
+    "counting": {
+     "have": 42,
+     "kind": "gap",
+     "target": 60
+    },
+    "promptText": "At 1:42, how many minutes are left before the next full hour? Ida counts on."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0284",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "elapsedTime",
+  "structureType": "pickDuration_band3",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 50,
+   "choices": [
+    50,
+    90,
+    45,
+    55
+   ],
+   "display": {
+    "counting": {
+     "have": 285,
+     "kind": "gap",
+     "target": 335
+    },
+    "promptText": "Sam times an activity from 4:45 to 5:35. Which duration is right?"
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0439",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "timeConcepts",
+  "structureType": "convJudgeBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "time": {
+     "kind": "claim"
+    },
+    "truth": true,
+    "promptText": "June says 300 seconds is 5 minutes. Is June right?"
+   }
+  }
+ },
+ {
+  "itemId": "time-conc-b0821-0592",
+  "modeId": "time",
+  "itemFamily": "conceptual",
+  "subskill": "calendar",
+  "structureType": "spanJudgeBig",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "time": {
+     "a": 3,
+     "b": 21,
+     "kind": "spanSaid",
+     "said": 19
+    },
+    "truth": false,
+    "promptText": "From September 3 to September 21, Zoe figures 19 days. Is that right?"
    }
   }
  },

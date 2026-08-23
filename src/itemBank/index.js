@@ -380,17 +380,25 @@ export function selectApprovedBankItem({
   rng = Math.random,
   allowWordProblems = true,
 } = {}) {
-  let approved = filterApprovedCandidates({ modeId, level, family });
-  if (allowWordProblems === false) {
-    // Even though the scheduler routes APPLICATION away when word problems
-    // are disabled, CONCEPTUAL and PROCEDURAL cells also ship items with
-    // natural-language prompts ("Use near-doubles: 3 + 4 equals?"). Those
-    // count as word problems from a learner's perspective, so filter them.
-    approved = approved.filter(
+  const approved = filterApprovedCandidates({ modeId, level, family });
+  if (approved.length === 0) return null;
+
+  // Even though the scheduler routes APPLICATION away when word problems
+  // are disabled, CONCEPTUAL and PROCEDURAL cells also ship items with
+  // natural-language prompts ("Use near-doubles: 3 + 4 equals?"). Prefer
+  // the terse ones — but only as a preference, applied inside each bucket
+  // below so it never overrides subskill targeting. Conceptual items and
+  // whole modes (patterns, time, graphs, bar models) are verbal by nature,
+  // and a hard filter there does not spare the child words: it just hands
+  // the cell to the template generator, whose prompt is equally verbal and
+  // worse. A reviewed verbal bank item always beats a generated one.
+  const preferTerse = (items) => {
+    if (allowWordProblems !== false) return items;
+    const terse = items.filter(
       (item) => !isVerbalPrompt(item?.question?.display?.promptText)
     );
-  }
-  if (approved.length === 0) return null;
+    return terse.length > 0 ? terse : items;
+  };
 
   const recentSet = new Set(recentItemIds);
 
@@ -398,12 +406,12 @@ export function selectApprovedBankItem({
     ? approved.filter((item) => item.subskill === targetSubskill)
     : [];
   const subskillFresh = bySubskill.filter((item) => !recentSet.has(item.itemId));
-  if (subskillFresh.length > 0) return randomPick(subskillFresh, rng);
-  if (bySubskill.length > 0) return randomPick(bySubskill, rng);
+  if (subskillFresh.length > 0) return randomPick(preferTerse(subskillFresh), rng);
+  if (bySubskill.length > 0) return randomPick(preferTerse(bySubskill), rng);
 
   const fresh = approved.filter((item) => !recentSet.has(item.itemId));
-  if (fresh.length > 0) return randomPick(fresh, rng);
-  return randomPick(approved, rng);
+  if (fresh.length > 0) return randomPick(preferTerse(fresh), rng);
+  return randomPick(preferTerse(approved), rng);
 }
 
 /**

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import QuestionPreview from "./admin/QuestionPreview.jsx";
+import QuestionPreview from "./QuestionPreview.jsx";
 
 /**
  * Layout sweep (DEV only, driven by scripts/layoutSweep.mjs): renders bank

@@ -15,6 +15,7 @@ import AboutPage from "./AboutPage";
 import LegalPage from "./legal/LegalPage";
 import Footer from "./Footer";
 import AdminItemsPage from "./admin/AdminItemsPage";
+import LayoutSweepPage from "./admin/LayoutSweepPage";
 import DiagnosticsPage from "./admin/DiagnosticsPage";
 import MeadowPage from "./engagement/meadow/MeadowPage";
 import ValuePage from "./onboarding/ValuePage";
@@ -88,6 +89,7 @@ function AppShell() {
             subscriber straight into the Stripe Billing Portal. */}
         <Route path="/account/billing" element={<BillingPortalPage />} />
         <Route path="/admin" element={<AdminItemsPage />} />
+        {import.meta.env.DEV && <Route path="/__sweep" element={<LayoutSweepPage />} />}
         <Route path="/diagnostics" element={<DiagnosticsPage />} />
         {/* Unknown paths: send to home rather than expose a bare 404. */}
         <Route path="*" element={<Navigate to="/" replace />} />

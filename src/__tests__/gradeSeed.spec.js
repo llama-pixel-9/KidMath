@@ -1,5 +1,7 @@
 import { describe, it, expect } from "vitest";
-import { startingLevelFor, gradeFitFor, gradeIndex, parseSpan, MAX_SEEDED_LEVEL } from "../gradeSeed.js";
+import { startingLevelFor, gradeFitFor, gradeIndex, parseSpan, MAX_SEEDED_LEVEL, gradeWorkForLevel } from "../gradeSeed.js";
+import { MODE_MAX_LEVELS, maxLevelForMode, maxSeededLevelForMode } from "../modeLevels.js";
+import { getModeConfig } from "../modes/index.js";
 import { GRADE_SPANS } from "../engagement/gradeSpans.js";
 import { MODE_IDS } from "../modes/index.js";
 
@@ -38,6 +40,35 @@ describe("gradeSeed", () => {
         expect(lv).toBeLessThanOrEqual(MAX_SEEDED_LEVEL);
       }
     }
+  });
+
+  it("keeps the per-mode ladder map and mode configs in agreement (Phase 3)", () => {
+    for (const mode of MODE_IDS) {
+      const cfgMax = getModeConfig(mode).maxLevel ?? 10;
+      expect(maxLevelForMode(mode), mode).toBe(cfgMax);
+      expect(maxSeededLevelForMode(mode), mode).toBe(cfgMax - 3);
+    }
+    for (const mode of Object.keys(MODE_MAX_LEVELS)) expect(MODE_IDS).toContain(mode);
+  });
+
+  it("seeds Grade-5 kids into the Grade-5 modes and caps below the top band", () => {
+    expect(startingLevelFor("fractionOps", "4th")).toBe(1);
+    expect(startingLevelFor("fractionOps", "5th")).toBe(4);
+    expect(startingLevelFor("decimalOps", "5th")).toBe(4);
+    expect(startingLevelFor("volumeCoordinates", "5th")).toBe(1); // span "5" — its first grade
+    for (const mode of Object.keys(MODE_MAX_LEVELS)) {
+      for (const g of ["K", "1st", "2nd", "3rd", "4th", "5th", "6th"]) {
+        expect(startingLevelFor(mode, g)).toBeLessThanOrEqual(maxSeededLevelForMode(mode));
+      }
+    }
+  });
+
+  it("maps a level to parent-language grade work", () => {
+    expect(gradeWorkForLevel("fractionOps", 1)).toBe("Grade 4");
+    expect(gradeWorkForLevel("fractionOps", 12)).toBe("Grade 5");
+    expect(gradeWorkForLevel("counting", 1)).toBe("Kindergarten");
+    expect(gradeWorkForLevel("counting", 10)).toBe("Grade 1");
+    expect(gradeWorkForLevel("multiplication", 10)).toBe("Grade 4");
   });
 
   it("classifies a mode against the kid's grade", () => {

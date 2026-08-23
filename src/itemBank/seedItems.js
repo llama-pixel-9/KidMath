@@ -15084,7 +15084,7 @@ export const SEED_ITEMS = [
   "structureType": "measureStoryHundredths",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -15106,7 +15106,7 @@ export const SEED_ITEMS = [
   "structureType": "scaleStory",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -15128,7 +15128,7 @@ export const SEED_ITEMS = [
   "structureType": "moneyStoryTwoStep",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -15150,7 +15150,7 @@ export const SEED_ITEMS = [
   "structureType": "measureStoryHundredths",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -15172,7 +15172,7 @@ export const SEED_ITEMS = [
   "structureType": "scaleStory",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -15194,7 +15194,7 @@ export const SEED_ITEMS = [
   "structureType": "moneyStoryTwoStep",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -15216,7 +15216,7 @@ export const SEED_ITEMS = [
   "structureType": "measureStoryHundredths",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -15238,7 +15238,7 @@ export const SEED_ITEMS = [
   "structureType": "scaleStory",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -15688,7 +15688,7 @@ export const SEED_ITEMS = [
   "structureType": "alignPlacesPick",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -15716,7 +15716,7 @@ export const SEED_ITEMS = [
   "structureType": "shiftDirectionJudged",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -15742,7 +15742,7 @@ export const SEED_ITEMS = [
   "structureType": "productPlacementJudged",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -15768,7 +15768,7 @@ export const SEED_ITEMS = [
   "structureType": "sumSizeJudged",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -15794,7 +15794,7 @@ export const SEED_ITEMS = [
   "structureType": "shiftDirectionJudged",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -15820,7 +15820,7 @@ export const SEED_ITEMS = [
   "structureType": "productPlacementJudged",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -15846,7 +15846,7 @@ export const SEED_ITEMS = [
   "structureType": "sumSizeJudged",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -15872,7 +15872,7 @@ export const SEED_ITEMS = [
   "structureType": "shiftDirectionJudged",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -16250,7 +16250,7 @@ export const SEED_ITEMS = [
   "structureType": "hundredthsAddSub",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -16272,7 +16272,7 @@ export const SEED_ITEMS = [
   "structureType": "powersOfTenShift",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -16294,7 +16294,7 @@ export const SEED_ITEMS = [
   "structureType": "decimalTimesWhole",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -16316,7 +16316,7 @@ export const SEED_ITEMS = [
   "structureType": "hundredthsAddSub",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -16338,7 +16338,7 @@ export const SEED_ITEMS = [
   "structureType": "powersOfTenShift",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -16360,7 +16360,7 @@ export const SEED_ITEMS = [
   "structureType": "decimalTimesWhole",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -16382,7 +16382,7 @@ export const SEED_ITEMS = [
   "structureType": "hundredthsAddSub",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -16404,7 +16404,7 @@ export const SEED_ITEMS = [
   "structureType": "powersOfTenShift",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -22466,7 +22466,7 @@ export const SEED_ITEMS = [
   "structureType": "ribbonStoryUnlike",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -22488,7 +22488,7 @@ export const SEED_ITEMS = [
   "structureType": "brownieStoryMultiply",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -22510,7 +22510,7 @@ export const SEED_ITEMS = [
   "structureType": "servingStoryDivide",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -22532,7 +22532,7 @@ export const SEED_ITEMS = [
   "structureType": "ribbonStoryUnlike",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -22554,7 +22554,7 @@ export const SEED_ITEMS = [
   "structureType": "brownieStoryMultiply",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -22576,7 +22576,7 @@ export const SEED_ITEMS = [
   "structureType": "servingStoryDivide",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -22598,7 +22598,7 @@ export const SEED_ITEMS = [
   "structureType": "ribbonStoryUnlike",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -22620,7 +22620,7 @@ export const SEED_ITEMS = [
   "structureType": "brownieStoryMultiply",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -23037,7 +23037,7 @@ export const SEED_ITEMS = [
   "structureType": "commonDenominatorPick",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -23064,7 +23064,7 @@ export const SEED_ITEMS = [
   "structureType": "productSizeJudged",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -23090,7 +23090,7 @@ export const SEED_ITEMS = [
   "structureType": "divideMeaningJudged",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -23116,7 +23116,7 @@ export const SEED_ITEMS = [
   "structureType": "commonDenominatorPick",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -23143,7 +23143,7 @@ export const SEED_ITEMS = [
   "structureType": "productSizeJudged",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -23169,7 +23169,7 @@ export const SEED_ITEMS = [
   "structureType": "divideMeaningJudged",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -23195,7 +23195,7 @@ export const SEED_ITEMS = [
   "structureType": "commonDenominatorPick",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -23222,7 +23222,7 @@ export const SEED_ITEMS = [
   "structureType": "productSizeJudged",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -23600,7 +23600,7 @@ export const SEED_ITEMS = [
   "structureType": "unlikeSubtract",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -23622,7 +23622,7 @@ export const SEED_ITEMS = [
   "structureType": "fractionTimesFraction",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -23644,7 +23644,7 @@ export const SEED_ITEMS = [
   "structureType": "unitFractionDivide",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -23666,7 +23666,7 @@ export const SEED_ITEMS = [
   "structureType": "unlikeAdd",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -23688,7 +23688,7 @@ export const SEED_ITEMS = [
   "structureType": "fractionTimesFraction",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -23710,7 +23710,7 @@ export const SEED_ITEMS = [
   "structureType": "unitFractionDivide",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -23732,7 +23732,7 @@ export const SEED_ITEMS = [
   "structureType": "unlikeSubtract",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -23754,7 +23754,7 @@ export const SEED_ITEMS = [
   "structureType": "fractionTimesFraction",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -48486,7 +48486,7 @@ export const SEED_ITEMS = [
   "structureType": "aquariumStory",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -48508,7 +48508,7 @@ export const SEED_ITEMS = [
   "structureType": "treasureMapStory",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -48546,7 +48546,7 @@ export const SEED_ITEMS = [
   "structureType": "walkDistanceStory",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -48584,7 +48584,7 @@ export const SEED_ITEMS = [
   "structureType": "aquariumStory",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -48606,7 +48606,7 @@ export const SEED_ITEMS = [
   "structureType": "treasureMapStory",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -48644,7 +48644,7 @@ export const SEED_ITEMS = [
   "structureType": "walkDistanceStory",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -48682,7 +48682,7 @@ export const SEED_ITEMS = [
   "structureType": "aquariumStory",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -48704,7 +48704,7 @@ export const SEED_ITEMS = [
   "structureType": "treasureMapStory",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -49338,7 +49338,7 @@ export const SEED_ITEMS = [
   "structureType": "missingDimension",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -49360,7 +49360,7 @@ export const SEED_ITEMS = [
   "structureType": "coordinatePattern",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -49382,7 +49382,7 @@ export const SEED_ITEMS = [
   "structureType": "compositePlanJudged",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -49408,7 +49408,7 @@ export const SEED_ITEMS = [
   "structureType": "missingDimension",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -49430,7 +49430,7 @@ export const SEED_ITEMS = [
   "structureType": "coordinatePattern",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -49452,7 +49452,7 @@ export const SEED_ITEMS = [
   "structureType": "compositePlanJudged",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -49478,7 +49478,7 @@ export const SEED_ITEMS = [
   "structureType": "missingDimension",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -49500,7 +49500,7 @@ export const SEED_ITEMS = [
   "structureType": "coordinatePattern",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -49982,7 +49982,7 @@ export const SEED_ITEMS = [
   "structureType": "volumeFromDims",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -50004,7 +50004,7 @@ export const SEED_ITEMS = [
   "structureType": "readPointCoordinate",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -50037,7 +50037,7 @@ export const SEED_ITEMS = [
   "structureType": "gridDistance",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -50075,7 +50075,7 @@ export const SEED_ITEMS = [
   "structureType": "volumeFromDims",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -50097,7 +50097,7 @@ export const SEED_ITEMS = [
   "structureType": "readPointCoordinate",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -50130,7 +50130,7 @@ export const SEED_ITEMS = [
   "structureType": "compositeVolume",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -50152,7 +50152,7 @@ export const SEED_ITEMS = [
   "structureType": "volumeFromDims",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {
@@ -50174,7 +50174,7 @@ export const SEED_ITEMS = [
   "structureType": "readPointCoordinate",
   "levelRange": [
    7,
-   10
+   12
   ],
   "reviewStatus": "approved",
   "question": {

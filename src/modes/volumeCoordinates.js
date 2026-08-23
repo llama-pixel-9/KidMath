@@ -504,7 +504,8 @@ export default {
   op: "volume",
   subskills: SUBSKILLS,
   // Band-scoped subskills — coverage gates and targeting respect these ranges.
-  subskillLevels: { countUnitCubes: [1, 6], volumeFormula: [4, 10], compositeAndDistance: [7, 10] },
+  maxLevel: 12,
+  subskillLevels: { countUnitCubes: [1, 6], volumeFormula: [4, 12], compositeAndDistance: [7, 12] },
   supportedFormats: [],
   families: Object.values(ITEM_FAMILIES),
   varieties: VOLUME_COORD_VARIETIES,

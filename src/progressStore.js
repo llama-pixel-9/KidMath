@@ -1,5 +1,6 @@
 import { supabase } from "./supabaseClient";
 import { startingLevelFor as seedLevel } from "./gradeSeed.js";
+import { maxLevelForMode } from "./modeLevels.js";
 
 /**
  * Math progress is PER KID. Locally the blob is scoped by the active kid
@@ -47,8 +48,9 @@ function storeKey(kidId) {
   return kidId ? `${PROGRESS_KEY}:${kidId}` : PROGRESS_KEY;
 }
 
-function clampLevel(level) {
-  return Math.max(1, Math.min(MAX_LEVEL, level));
+function clampLevel(level, mode) {
+  const max = mode ? maxLevelForMode(mode) : MAX_LEVEL;
+  return Math.max(1, Math.min(max, level));
 }
 
 // --- localStorage helpers ---
@@ -143,7 +145,7 @@ function loadLocal(mode, kidId) {
     };
   }
   return {
-    level: clampLevel(entry.level ?? STARTING_LEVEL),
+    level: clampLevel(entry.level ?? STARTING_LEVEL, mode),
     mistakeBank: Array.isArray(entry.mistakeBank) ? entry.mistakeBank : [],
     totalSessions: entry.totalSessions ?? 0,
     lifetimeStars: entry.lifetimeStars ?? 0,
@@ -159,7 +161,7 @@ function saveLocal(mode, { level, mistakeBank, firstTryCorrect, starsEarned, ban
   const store = readLocalStore(kidId);
   const prev = store[mode] || { totalSessions: 0, lifetimeStars: 0, bankItemStats: {} };
   store[mode] = {
-    level: clampLevel(level),
+    level: clampLevel(level, mode),
     mistakeBank: (mistakeBank || []).slice(0, 20),
     totalSessions: (prev.totalSessions ?? 0) + 1,
     lifetimeStars: (prev.lifetimeStars ?? 0) + (starsEarned ?? firstTryCorrect ?? 0),
@@ -267,7 +269,7 @@ async function loadCloud(userId, kidId, mode) {
     };
   }
   return {
-    level: clampLevel(data.level ?? STARTING_LEVEL),
+    level: clampLevel(data.level ?? STARTING_LEVEL, mode),
     mistakeBank: Array.isArray(data.mistake_bank) ? data.mistake_bank : [],
     totalSessions: data.total_sessions ?? 0,
     lifetimeStars: data.lifetime_stars ?? 0,
@@ -287,7 +289,7 @@ async function saveCloud(userId, kidId, mode, { level, mistakeBank, firstTryCorr
         user_id: userId,
         kid_id: kidId || null,
         mode,
-        level: clampLevel(level),
+        level: clampLevel(level, mode),
         mistake_bank: (mistakeBank || []).slice(0, 20),
         total_sessions: newTotalSessions,
         lifetime_stars: newLifetimeStars,
@@ -319,7 +321,7 @@ export async function mergeLocalToCloud(userId, kidId = activeKidIdSync()) {
     const cloud = await loadCloud(userId, kidId, mode);
 
     const merged = {
-      level: Math.max(clampLevel(local.level ?? 1), cloud.level),
+      level: Math.max(clampLevel(local.level ?? 1, mode), cloud.level),
       mistake_bank: cloud.mistakeBank.length > 0 ? cloud.mistakeBank : (local.mistakeBank || []).slice(0, 20),
       total_sessions: cloud.totalSessions + (local.totalSessions ?? 0),
       lifetime_stars: cloud.lifetimeStars + (local.lifetimeStars ?? 0),
@@ -394,7 +396,7 @@ export async function loadProgressSummary({ kidId = activeKidIdSync() } = {}) {
           data.map((row) => [
             row.mode,
             {
-              level: clampLevel(row.level ?? STARTING_LEVEL),
+              level: clampLevel(row.level ?? STARTING_LEVEL, row.mode),
               mistakeBank: Array.isArray(row.mistake_bank) ? row.mistake_bank : [],
               totalSessions: row.total_sessions ?? 0,
               lifetimeStars: row.lifetime_stars ?? 0,

@@ -27,7 +27,8 @@ const MODES = [
   "counting", "skipCounting", "placeValue", "fractions", "decimals",
   "numberBonds", "barModels", "placeValueDiscs", "factorsMultiples",
   "areaPerimeter", "money", "patterns", "measurement", "time",
-  "dataGraphs", "angles", "linesShapes",
+  "dataGraphs", "angles", "linesShapes", "fractionOps", "decimalOps",
+  "volumeCoordinates",
 ];
 const LEVELS = [1, 5];
 

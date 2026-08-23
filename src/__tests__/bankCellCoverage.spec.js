@@ -25,6 +25,10 @@ describe("bank cell coverage (generator retirement gate)", () => {
     for (let level = 1; level <= MAX_LEVEL; level += 1) {
       for (const family of FAMILIES) {
         for (const subskill of cfg.subskills) {
+          // A band-scoped subskill (division remainders, placeValue rounding)
+          // only exists inside its declared level range.
+          const range = cfg.subskillLevels?.[subskill];
+          if (range && (level < range[0] || level > range[1])) continue;
           for (const allowWordProblems of [true, false]) {
             if (!allowWordProblems && family === ITEM_FAMILIES.APPLICATION) continue;
             cells += 1;

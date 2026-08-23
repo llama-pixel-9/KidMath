@@ -85,6 +85,18 @@ function arithmeticCheck(item) {
   return fail("arithmetic", `answer ${answer} is not consistent with ${a} and ${b} under ${op}`);
 }
 
+// Kid-facing vocabulary the pedagogy register leaks into prompts (teacherJargon).
+const TEACHER_JARGON =
+  /\b(subitiz\w*|cardinalit\w*|decompos\w*|commutativ\w*|associativ\w*|identity|inverse|equivalen\w*|numerals?|partition\w*|one-to-one|conserv\w*)\b/i;
+// Emoji presentation characters — an emoji run in the prompt IS the picture.
+const EMOJI_RUN = /[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/u;
+// "4 dots", "a set of 10 items", "a ten frame with 8 counters" … (figurelessQuantity)
+// Only DESCRIPTIONS of a picture count — "a set of 4 dots", "a card shows 3
+// red buttons", "a ten frame with 8 counters". A story quantity ("Lia has 9
+// marbles") is a word problem, not a missing figure.
+const QUANTITY_OF_OBJECTS =
+  /\b(?:(?:small |big )?(?:set|group|row|pile|collection|array) of (?:\d+|some|these) (?:dots?|items?|objects?|counters?|chips?|cubes?|blocks?|stars?|circles?|squares?|buttons?|marbles?|beads?|things)|card (?:shows|with|has) \d+|\d+ (?:dots?|counters?|chips?) (?:filled|in a row|on (?:the|a) (?:top|bottom|first|second) row)|ten[- ]frames?)\b/i;
+
 export const CHECKS = [
   {
     id: "structureMatch",
@@ -432,6 +444,44 @@ export const CHECKS = [
         return warn("bandAppropriate", `Grade 1-2 band item uses ${max}`);
       }
       return null;
+    },
+  },
+
+  {
+    // Kid-facing prompts must not use the teacher's vocabulary. "Subitize the
+    // count" / "what is the cardinality" reached kindergartners — 216 shipped
+    // items (kid-sim QA 2026-08-23). The blocklist is the pedagogy register;
+    // plain words ("how many", "split 7 into two parts") say the same thing.
+    id: "teacherJargon",
+    run: (item) => {
+      const text = item.question?.display?.promptText || "";
+      const hit = text.match(TEACHER_JARGON);
+      return hit ? fail("teacherJargon", `"${hit[0]}" is teacher vocabulary — say it in kid words`) : null;
+    },
+  },
+
+  {
+    // A counting question must show the objects. "A small set of 4 dots.
+    // Subitize the count." with no figure hands the answer to the kid in the
+    // prompt — 66 shipped counting items did this. Any visual payload key
+    // (emoji, counting, tenFrame, …) exempts the item; an emoji run inside
+    // the prompt text is a picture too.
+    id: "figurelessQuantity",
+    run: (item) => {
+      const d = item.question?.display || {};
+      const text = d.promptText || "";
+      const answer = item.question?.answer;
+      if (typeof answer !== "number" || !text) return null;
+      const visualKeys = Object.keys(d).filter((k) => k !== "promptText" && k !== "promptOptions");
+      if (visualKeys.length) return null;
+      if (EMOJI_RUN.test(text)) return null;
+      if (/[?_]\s*[+\-×x÷=]|[+\-×x÷=]\s*[?_]/.test(text)) return null; // equations are not pictures
+      const m = text.match(QUANTITY_OF_OBJECTS);
+      if (!m) return null;
+      return fail(
+        "figurelessQuantity",
+        `"${m[0]}" describes a picture the kid never sees — give the item a figure or reword it`
+      );
     },
   },
 

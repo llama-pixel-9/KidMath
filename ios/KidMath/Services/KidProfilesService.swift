@@ -30,6 +30,7 @@ final class KidProfilesService: ObservableObject {
 
     private static let activeKidIdKey = "kidmath-active-kid"
     private static let activeKidNameKey = "kidmath-active-kid-name"
+    private static let activeKidGradeKey = "kidmath-active-kid-grade"
     private static let selectFields = "id, first_name, age, grade"
 
     @Published private(set) var kids: [KidProfile] = []
@@ -51,14 +52,21 @@ final class KidProfilesService: ObservableObject {
         UserDefaults.standard.string(forKey: Self.activeKidNameKey)
     }
 
+    /// Cached so ProgressStore can seed a fresh mode from the grade (GradeSeed).
+    var activeKidGrade: String? {
+        UserDefaults.standard.string(forKey: Self.activeKidGradeKey)
+    }
+
     func setActiveKid(_ kid: KidProfile?) {
         let defaults = UserDefaults.standard
         if let kid {
             defaults.set(kid.id.uuidString, forKey: Self.activeKidIdKey)
             defaults.set(kid.firstName, forKey: Self.activeKidNameKey)
+            defaults.set(kid.grade, forKey: Self.activeKidGradeKey)
         } else {
             defaults.removeObject(forKey: Self.activeKidIdKey)
             defaults.removeObject(forKey: Self.activeKidNameKey)
+            defaults.removeObject(forKey: Self.activeKidGradeKey)
         }
         objectWillChange.send()
     }

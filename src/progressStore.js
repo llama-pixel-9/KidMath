@@ -1,4 +1,5 @@
 import { supabase } from "./supabaseClient";
+import { startingLevelFor as seedLevel } from "./gradeSeed.js";
 
 /**
  * Math progress is PER KID. Locally the blob is scoped by the active kid
@@ -16,6 +17,23 @@ const ACTIVE_KID_KEY = "kidmath-active-kid"; // kidProfiles.js owns this key
 const MIGRATED_KEY = "kidmath-progress-migrated"; // which kid inherited the device blob
 const STARTING_LEVEL = 1;
 const MAX_LEVEL = 10;
+const ACTIVE_KID_GRADE_KEY = "kidmath-active-kid-grade"; // kidProfiles.js owns this key
+
+/**
+ * Level a never-played mode opens at. Anonymous play (no kid) and kids whose
+ * grade is unknown start at 1; a kid with a grade on file starts where their
+ * grade sits on the mode's ladder (src/gradeSeed.js). Only used when there is
+ * no saved entry — an existing level is never moved.
+ */
+export function startingLevelFor(mode, kidId = activeKidIdSync()) {
+  if (!kidId) return STARTING_LEVEL;
+  try {
+    const grade = localStorage.getItem(ACTIVE_KID_GRADE_KEY);
+    return grade ? seedLevel(mode, grade) : STARTING_LEVEL;
+  } catch {
+    return STARTING_LEVEL;
+  }
+}
 
 export function activeKidIdSync() {
   try {
@@ -116,7 +134,7 @@ function loadLocal(mode, kidId) {
   const entry = readLocalStore(kidId)[mode];
   if (!entry) {
     return {
-      level: STARTING_LEVEL,
+      level: startingLevelFor(mode, kidId),
       mistakeBank: [],
       totalSessions: 0,
       lifetimeStars: 0,
@@ -240,7 +258,7 @@ async function loadCloud(userId, kidId, mode) {
 
   if (!data) {
     return {
-      level: STARTING_LEVEL,
+      level: startingLevelFor(mode, kidId),
       mistakeBank: [],
       totalSessions: 0,
       lifetimeStars: 0,

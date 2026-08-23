@@ -22,6 +22,7 @@ final class ProgressStore {
     nonisolated private static let localKey = "kidmath-progress"
     nonisolated private static let activeKidKey = "kidmath-active-kid" // KidProfilesService owns this key
     nonisolated private static let migratedKey = "kidmath-progress-migrated" // which kid inherited the device blob
+    nonisolated private static let activeKidGradeKey = "kidmath-active-kid-grade" // KidProfilesService owns this key
     nonisolated private static let startingLevel = 1
     nonisolated private static let maxLevel = 10
     nonisolated private static let maxPersistedMistakes = 20
@@ -36,9 +37,17 @@ final class ProgressStore {
         self.defaults = defaults
     }
 
-    nonisolated static func blankProgress() -> [String: Any] {
+    /// Level a never-played mode opens at: 1 for anonymous play or an unknown
+    /// grade, otherwise the kid's grade on the mode's ladder (GradeSeed) —
+    /// same rule as the web's progressStore.startingLevelFor.
+    nonisolated static func startingLevel(mode: String, defaults: UserDefaults = .standard) -> Int {
+        guard defaults.string(forKey: activeKidKey).map({ !$0.isEmpty }) ?? false else { return startingLevel }
+        return GradeSeed.startingLevel(mode: mode, grade: defaults.string(forKey: activeKidGradeKey))
+    }
+
+    nonisolated static func blankProgress(mode: String? = nil) -> [String: Any] {
         [
-            "level": startingLevel,
+            "level": mode.map { startingLevel(mode: $0) } ?? startingLevel,
             "mistakeBank": [[String: Any]](),
             "totalSessions": 0,
             "lifetimeStars": 0,
@@ -142,7 +151,7 @@ final class ProgressStore {
     }
 
     func loadLocal(mode: String) -> [String: Any] {
-        guard let entry = readLocalStore()[mode] else { return Self.blankProgress() }
+        guard let entry = readLocalStore()[mode] else { return Self.blankProgress(mode: mode) }
         return [
             "level": Self.clampLevel(Self.int(entry["level"], default: Self.startingLevel)),
             "mistakeBank": entry["mistakeBank"] as? [[String: Any]] ?? [],
@@ -184,7 +193,7 @@ final class ProgressStore {
             stats = (try? await supabase.fetchBankItemStats(userId: userId, kidId: nil, mode: mode)) ?? [:]
         }
         guard let row else {
-            var blank = Self.blankProgress()
+            var blank = Self.blankProgress(mode: mode)
             blank["bankItemStats"] = stats
             return blank
         }

@@ -83,7 +83,7 @@ function clearLocalStore(kidId) {
 }
 
 const MAX_PERSISTED_BANK_ITEMS = 200;
-const MAX_PERSISTED_RECENT_IDS = 12;
+const MAX_PERSISTED_RECENT_IDS = 24;
 
 function mergeBankItemStats(prev = {}, incoming = {}) {
   const merged = { ...prev };
@@ -211,7 +211,7 @@ async function fetchProgressRow(userId, kidId, mode) {
   const { data, error } = await forKid(
     supabase
       .from("progress")
-      .select("level, mistake_bank, total_sessions, lifetime_stars")
+      .select("level, mistake_bank, total_sessions, lifetime_stars, recent_bank_item_ids")
       .eq("user_id", userId)
       .eq("mode", mode),
     kidId
@@ -254,12 +254,11 @@ async function loadCloud(userId, kidId, mode) {
     totalSessions: data.total_sessions ?? 0,
     lifetimeStars: data.lifetime_stars ?? 0,
     bankItemStats,
-    // recentBankItemIds is a session-window concern; not persisted across devices.
-    recentBankItemIds: [],
+    recentBankItemIds: Array.isArray(data.recent_bank_item_ids) ? data.recent_bank_item_ids : [],
   };
 }
 
-async function saveCloud(userId, kidId, mode, { level, mistakeBank, firstTryCorrect, starsEarned, bankItemStats }) {
+async function saveCloud(userId, kidId, mode, { level, mistakeBank, firstTryCorrect, starsEarned, bankItemStats, recentBankItemIds }) {
   const existing = await loadCloud(userId, kidId, mode);
   const newTotalSessions = existing.totalSessions + 1;
   const newLifetimeStars = existing.lifetimeStars + (starsEarned ?? firstTryCorrect ?? 0);
@@ -274,6 +273,8 @@ async function saveCloud(userId, kidId, mode, { level, mistakeBank, firstTryCorr
         mistake_bank: (mistakeBank || []).slice(0, 20),
         total_sessions: newTotalSessions,
         lifetime_stars: newLifetimeStars,
+        // Persisted since PR B so the no-repeat window survives a device switch.
+        recent_bank_item_ids: (recentBankItemIds || []).slice(-MAX_PERSISTED_RECENT_IDS),
         updated_at: new Date().toISOString(),
       },
       { onConflict: "user_id,kid_id,mode" }

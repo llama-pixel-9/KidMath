@@ -44,7 +44,7 @@ import {
 } from "./mathEngine";
 import { getBankItems } from "./itemBank/index.js";
 import { fetchBankItemById } from "./itemBank/cloudLoader.js";
-import { flightReportEnabled, fledgingEnabled, meadowEnabled } from "./gamificationFlags.js";
+import { flightReportEnabled, fledgingEnabled, meadowEnabled, ladderV2Enabled } from "./gamificationFlags.js";
 import { recordEnsureStarter } from "./engagement/flock.js";
 import {
   recordFlightEnd,
@@ -705,6 +705,7 @@ export default function MathExplorer({ initialMode }) {
     createAdaptiveSession(startMode, undefined, {
       allowWordProblems: loadAllowWordProblemsSync(),
       fledging: fledgingEnabled(),
+      ladderV2: ladderV2Enabled(),
       qaVariety: QA_VARIETY,
     })
   );
@@ -747,6 +748,25 @@ export default function MathExplorer({ initialMode }) {
   // saved in finishSession. Session-creating paths null it so the next
   // loadNextQuestion opens a new one.
   const sessionRecordRef = useRef(null);
+  // A session the kid leaves early (back to the nest, closed tab) used to
+  // vanish from the parent report. Save what happened as a "partial" record —
+  // minutes and questions are real practice; level bookkeeping stays untouched.
+  useEffect(() => {
+    const savePartial = () => {
+      const rec = sessionRecordRef.current;
+      if (!rec || rec.endedAt || (rec.attempts || []).length < 3) return;
+      sessionRecordRef.current = null;
+      const last = rec.attempts[rec.attempts.length - 1];
+      saveSessionRecord(
+        closeSessionRecord({ ...rec, kind: "partial" }, null, { starsEarned: 0, levelEnd: last?.level ?? rec.levelEnd })
+      ).catch((err) => console.warn("partial practice log save failed", err));
+    };
+    window.addEventListener("pagehide", savePartial);
+    return () => {
+      window.removeEventListener("pagehide", savePartial);
+      savePartial();
+    };
+  }, []);
 
   const clearQueuedTimeouts = useCallback(() => {
     diagnosticsRef.current.mark("timeoutsCleared", timeoutIdsRef.current.length);
@@ -805,6 +825,7 @@ export default function MathExplorer({ initialMode }) {
     const newSession = createAdaptiveSession(targetMode, undefined, {
       allowWordProblems: allowWordProblemsOverride,
       fledging: gamFledging,
+      ladderV2: ladderV2Enabled(),
       qaVariety: QA_VARIETY,
     });
     setSession(newSession);
@@ -835,6 +856,7 @@ export default function MathExplorer({ initialMode }) {
     const challenge = createAdaptiveSession(mode, FLEDGING_QUESTIONS, {
       allowWordProblems,
       fledging: true,
+      ladderV2: ladderV2Enabled(),
       challengeSubskills: nomination?.weakSubskills || [],
       savedProgress: { level: session.level },
     });

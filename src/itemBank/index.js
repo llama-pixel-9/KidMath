@@ -371,6 +371,8 @@ function filterApprovedCandidates({ modeId, level, family }) {
  *
  * Returns null when no candidate exists for the (mode, family, level) bucket.
  */
+const THIN_SUBSKILL_POOL = 6;
+
 export function selectApprovedBankItem({
   modeId,
   level,
@@ -407,10 +409,14 @@ export function selectApprovedBankItem({
     : [];
   const subskillFresh = bySubskill.filter((item) => !recentSet.has(item.itemId));
   if (subskillFresh.length > 0) return randomPick(preferTerse(subskillFresh), rng);
-  if (bySubskill.length > 0) return randomPick(preferTerse(bySubskill), rng);
-
   const fresh = approved.filter((item) => !recentSet.has(item.itemId));
+  // A thin subskill pool that the kid has fully seen must not loop the same
+  // few prompts: a fresh item from a sibling subskill beats a stale repeat.
+  if (bySubskill.length > 0 && (bySubskill.length >= THIN_SUBSKILL_POOL || fresh.length === 0)) {
+    return randomPick(preferTerse(bySubskill), rng);
+  }
   if (fresh.length > 0) return randomPick(preferTerse(fresh), rng);
+  if (bySubskill.length > 0) return randomPick(preferTerse(bySubskill), rng);
   return randomPick(preferTerse(approved), rng);
 }
 

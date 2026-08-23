@@ -9152,7 +9152,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":0,"whole":2,"promptText":"2 = 0 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":0,"whole":2,"promptText":"0 + ? = 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-002",
@@ -9162,7 +9162,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":1,"whole":2,"promptText":"2 = 1 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":1,"whole":2,"promptText":"? + 1 = 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-003",
@@ -9172,7 +9172,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":0,"display":{"part":2,"whole":2,"promptText":"2 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":0,"display":{"part":2,"whole":2,"promptText":"2 + ? = 2"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-004",
@@ -9182,7 +9182,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":0,"whole":3,"promptText":"3 = 0 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":0,"whole":3,"promptText":"0 + ? = 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-005",
@@ -9192,7 +9192,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":1,"whole":3,"promptText":"3 = 1 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":1,"whole":3,"promptText":"? + 1 = 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-006",
@@ -9202,7 +9202,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":2,"whole":3,"promptText":"3 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":2,"whole":3,"promptText":"? + 2 = 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-007",
@@ -9212,7 +9212,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":0,"display":{"part":3,"whole":3,"promptText":"3 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":0,"display":{"part":3,"whole":3,"promptText":"3 + ? = 3"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-008",
@@ -9222,7 +9222,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":0,"whole":4,"promptText":"4 = 0 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":0,"whole":4,"promptText":"? + 0 = 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-009",
@@ -9232,7 +9232,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":1,"whole":4,"promptText":"4 = 1 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":1,"whole":4,"promptText":"? + 1 = 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-010",
@@ -9242,7 +9242,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":2,"whole":4,"promptText":"4 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":2,"whole":4,"promptText":"? + 2 = 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-011",
@@ -9252,7 +9252,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":3,"whole":4,"promptText":"4 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":3,"whole":4,"promptText":"3 + ? = 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-012",
@@ -9262,7 +9262,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":0,"display":{"part":4,"whole":4,"promptText":"4 = 4 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":0,"display":{"part":4,"whole":4,"promptText":"4 + ? = 4"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-013",
@@ -9272,7 +9272,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":0,"whole":5,"promptText":"5 = 0 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":0,"whole":5,"promptText":"? + 0 = 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-014",
@@ -9282,7 +9282,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":1,"whole":5,"promptText":"5 = 1 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":1,"whole":5,"promptText":"? + 1 = 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-015",
@@ -9292,7 +9292,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":2,"whole":5,"promptText":"5 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":2,"whole":5,"promptText":"? + 2 = 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-016",
@@ -9302,7 +9302,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":3,"whole":5,"promptText":"5 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":3,"whole":5,"promptText":"? + 3 = 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-017",
@@ -9312,7 +9312,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":4,"whole":5,"promptText":"5 = 4 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":4,"whole":5,"promptText":"? + 4 = 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-018",
@@ -9322,7 +9322,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":0,"display":{"part":5,"whole":5,"promptText":"5 = 5 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":0,"display":{"part":5,"whole":5,"promptText":"5 + ? = 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-019",
@@ -9332,7 +9332,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":0,"whole":6,"promptText":"6 = 0 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":0,"whole":6,"promptText":"? + 0 = 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-020",
@@ -9342,7 +9342,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":1,"whole":6,"promptText":"6 = 1 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":1,"whole":6,"promptText":"? + 1 = 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-021",
@@ -9352,7 +9352,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":2,"whole":6,"promptText":"6 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":2,"whole":6,"promptText":"? + 2 = 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-022",
@@ -9362,7 +9362,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":3,"whole":6,"promptText":"6 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":3,"whole":6,"promptText":"? + 3 = 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-023",
@@ -9372,7 +9372,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":4,"whole":6,"promptText":"6 = 4 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":4,"whole":6,"promptText":"4 + ? = 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-024",
@@ -9382,7 +9382,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":5,"whole":6,"promptText":"6 = 5 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":5,"whole":6,"promptText":"5 + ? = 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-025",
@@ -9392,7 +9392,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":0,"display":{"part":6,"whole":6,"promptText":"6 = 6 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":0,"display":{"part":6,"whole":6,"promptText":"6 + ? = 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-026",
@@ -9402,7 +9402,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":0,"whole":7,"promptText":"7 = 0 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":0,"whole":7,"promptText":"? + 0 = 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-027",
@@ -9412,7 +9412,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":1,"whole":7,"promptText":"7 = 1 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":1,"whole":7,"promptText":"? + 1 = 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-028",
@@ -9422,7 +9422,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":2,"whole":7,"promptText":"7 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":2,"whole":7,"promptText":"? + 2 = 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-029",
@@ -9432,7 +9432,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":3,"whole":7,"promptText":"7 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":3,"whole":7,"promptText":"? + 3 = 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-030",
@@ -9442,7 +9442,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":4,"whole":7,"promptText":"7 = 4 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":4,"whole":7,"promptText":"? + 4 = 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-031",
@@ -9452,7 +9452,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":5,"whole":7,"promptText":"7 = 5 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":5,"whole":7,"promptText":"? + 5 = 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-032",
@@ -9462,7 +9462,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":6,"whole":7,"promptText":"7 = 6 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":6,"whole":7,"promptText":"? + 6 = 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-033",
@@ -9472,7 +9472,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":0,"display":{"part":7,"whole":7,"promptText":"7 = 7 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":0,"display":{"part":7,"whole":7,"promptText":"7 + ? = 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-034",
@@ -9482,7 +9482,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":0,"whole":8,"promptText":"8 = 0 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":0,"whole":8,"promptText":"0 + ? = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-035",
@@ -9492,7 +9492,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":1,"whole":8,"promptText":"8 = 1 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":1,"whole":8,"promptText":"? + 1 = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-036",
@@ -9502,7 +9502,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":2,"whole":8,"promptText":"8 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":2,"whole":8,"promptText":"? + 2 = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-037",
@@ -9512,7 +9512,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"8 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"? + 3 = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-038",
@@ -9522,7 +9522,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":4,"whole":8,"promptText":"8 = 4 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":4,"whole":8,"promptText":"? + 4 = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-039",
@@ -9532,7 +9532,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"8 = 5 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"? + 5 = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-040",
@@ -9542,7 +9542,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":6,"whole":8,"promptText":"8 = 6 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":6,"whole":8,"promptText":"? + 6 = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-041",
@@ -9552,7 +9552,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":7,"whole":8,"promptText":"8 = 7 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":7,"whole":8,"promptText":"? + 7 = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-042",
@@ -9562,7 +9562,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":0,"display":{"part":8,"whole":8,"promptText":"8 = 8 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":0,"display":{"part":8,"whole":8,"promptText":"8 + ? = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-043",
@@ -9572,7 +9572,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":0,"whole":9,"promptText":"9 = 0 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":0,"whole":9,"promptText":"0 + ? = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-044",
@@ -9582,7 +9582,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":1,"whole":9,"promptText":"9 = 1 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":1,"whole":9,"promptText":"? + 1 = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-045",
@@ -9592,7 +9592,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":2,"whole":9,"promptText":"9 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":2,"whole":9,"promptText":"2 + ? = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-046",
@@ -9602,7 +9602,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":3,"whole":9,"promptText":"9 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":3,"whole":9,"promptText":"3 + ? = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-047",
@@ -9612,7 +9612,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":4,"whole":9,"promptText":"9 = 4 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":4,"whole":9,"promptText":"? + 4 = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-048",
@@ -9622,7 +9622,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":5,"whole":9,"promptText":"9 = 5 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":5,"whole":9,"promptText":"? + 5 = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-049",
@@ -9632,7 +9632,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":6,"whole":9,"promptText":"9 = 6 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":6,"whole":9,"promptText":"? + 6 = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-050",
@@ -9642,7 +9642,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":7,"whole":9,"promptText":"9 = 7 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":7,"whole":9,"promptText":"7 + ? = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-051",
@@ -9652,7 +9652,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":8,"whole":9,"promptText":"9 = 8 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":8,"whole":9,"promptText":"? + 8 = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-052",
@@ -9662,7 +9662,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":0,"display":{"part":9,"whole":9,"promptText":"9 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":0,"display":{"part":9,"whole":9,"promptText":"9 + ? = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-053",
@@ -9672,7 +9672,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":0,"whole":10,"promptText":"10 = 0 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":0,"whole":10,"promptText":"? + 0 = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-054",
@@ -9682,7 +9682,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":1,"whole":10,"promptText":"10 = 1 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":1,"whole":10,"promptText":"? + 1 = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-055",
@@ -9692,7 +9692,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":2,"whole":10,"promptText":"10 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":2,"whole":10,"promptText":"2 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-056",
@@ -9702,7 +9702,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"10 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"3 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-057",
@@ -9712,7 +9712,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":4,"whole":10,"promptText":"10 = 4 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":4,"whole":10,"promptText":"? + 4 = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-058",
@@ -9722,7 +9722,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":5,"whole":10,"promptText":"10 = 5 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":5,"whole":10,"promptText":"? + 5 = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-059",
@@ -9732,7 +9732,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"10 = 6 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"? + 6 = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-060",
@@ -9742,7 +9742,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"10 = 7 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"? + 7 = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-061",
@@ -9752,7 +9752,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":8,"whole":10,"promptText":"10 = 8 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":8,"whole":10,"promptText":"8 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-062",
@@ -9762,7 +9762,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":9,"whole":10,"promptText":"10 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":9,"whole":10,"promptText":"? + 9 = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-063",
@@ -9772,7 +9772,7 @@ export const ITEMS = [
     structureType: "partUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":0,"display":{"part":10,"whole":10,"promptText":"10 = 10 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":0,"display":{"part":10,"whole":10,"promptText":"10 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-064",
@@ -9782,7 +9782,7 @@ export const ITEMS = [
     structureType: "teenBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":10,"whole":11,"promptText":"11 = 10 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":10,"whole":11,"promptText":"10 + ? = 11"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-065",
@@ -9792,7 +9792,7 @@ export const ITEMS = [
     structureType: "teenBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":10,"whole":11,"promptText":"11 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":10,"whole":11,"promptText":"? + 10 = 11"},"answerType":"numberPad"},
   },
   {
     itemId: "numberBonds-proc-b0820-066",
@@ -9802,7 +9802,7 @@ export const ITEMS = [
     structureType: "teenBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":10,"whole":12,"promptText":"12 = 10 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":10,"whole":12,"promptText":"10 + ? = 12"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-067",
@@ -9812,7 +9812,7 @@ export const ITEMS = [
     structureType: "teenBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":10,"whole":12,"promptText":"12 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":10,"whole":12,"promptText":"? + 10 = 12"},"answerType":"numberPad"},
   },
   {
     itemId: "numberBonds-proc-b0820-068",
@@ -9822,7 +9822,7 @@ export const ITEMS = [
     structureType: "teenBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"13 = 10 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"10 + ? = 13"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-069",
@@ -9832,7 +9832,7 @@ export const ITEMS = [
     structureType: "teenBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"13 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":10,"whole":13,"promptText":"? + 10 = 13"},"answerType":"numberPad"},
   },
   {
     itemId: "numberBonds-proc-b0820-070",
@@ -9842,17 +9842,7 @@ export const ITEMS = [
     structureType: "teenBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"14 = 10 + ?"},"answerType":"numberBond"},
-  },
-  {
-    itemId: "numberBonds-proc-b0820-071",
-    modeId: "numberBonds",
-    itemFamily: "procedural",
-    subskill: "missingPart",
-    structureType: "teenBond",
-    levelRange: [4,6],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"14 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":10,"whole":14,"promptText":"? + 10 = 14"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-072",
@@ -9862,7 +9852,7 @@ export const ITEMS = [
     structureType: "teenBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":10,"whole":15,"promptText":"15 = 10 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":10,"whole":15,"promptText":"10 + ? = 15"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-073",
@@ -9872,7 +9862,7 @@ export const ITEMS = [
     structureType: "teenBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":10,"whole":15,"promptText":"15 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":10,"whole":15,"promptText":"? + 10 = 15"},"answerType":"numberPad"},
   },
   {
     itemId: "numberBonds-proc-b0820-074",
@@ -9882,7 +9872,7 @@ export const ITEMS = [
     structureType: "teenBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":10,"whole":16,"promptText":"16 = 10 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":10,"whole":16,"promptText":"10 + ? = 16"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-075",
@@ -9892,7 +9882,7 @@ export const ITEMS = [
     structureType: "teenBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":10,"whole":16,"promptText":"16 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":10,"whole":16,"promptText":"? + 10 = 16"},"answerType":"numberPad"},
   },
   {
     itemId: "numberBonds-proc-b0820-076",
@@ -9902,17 +9892,7 @@ export const ITEMS = [
     structureType: "teenBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":10,"whole":17,"promptText":"17 = 10 + ?"},"answerType":"numberBond"},
-  },
-  {
-    itemId: "numberBonds-proc-b0820-077",
-    modeId: "numberBonds",
-    itemFamily: "procedural",
-    subskill: "missingPart",
-    structureType: "teenBond",
-    levelRange: [4,6],
-    reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":10,"whole":17,"promptText":"17 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":10,"whole":17,"promptText":"? + 10 = 17"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-078",
@@ -9922,7 +9902,7 @@ export const ITEMS = [
     structureType: "teenBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":10,"whole":18,"promptText":"18 = 10 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":10,"whole":18,"promptText":"10 + ? = 18"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-079",
@@ -9932,7 +9912,7 @@ export const ITEMS = [
     structureType: "teenBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":10,"whole":18,"promptText":"18 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":10,"whole":18,"promptText":"? + 10 = 18"},"answerType":"numberPad"},
   },
   {
     itemId: "numberBonds-proc-b0820-080",
@@ -9942,7 +9922,7 @@ export const ITEMS = [
     structureType: "teenBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":10,"whole":19,"promptText":"19 = 10 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":10,"whole":19,"promptText":"10 + ? = 19"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-081",
@@ -9952,7 +9932,7 @@ export const ITEMS = [
     structureType: "teenBond",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":10,"whole":19,"promptText":"19 = ? + 10"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":10,"whole":19,"promptText":"? + 10 = 19"},"answerType":"numberPad"},
   },
   {
     itemId: "numberBonds-proc-b0820-082",
@@ -9962,7 +9942,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":9,"whole":11,"promptText":"11 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":9,"whole":11,"promptText":"9 + ? = 11"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-083",
@@ -9972,7 +9952,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":9,"whole":12,"promptText":"12 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":9,"whole":12,"promptText":"9 + ? = 12"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-084",
@@ -9982,7 +9962,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":9,"whole":13,"promptText":"13 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":9,"whole":13,"promptText":"9 + ? = 13"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-085",
@@ -9992,7 +9972,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":9,"whole":14,"promptText":"14 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":9,"whole":14,"promptText":"9 + ? = 14"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-086",
@@ -10002,7 +9982,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":9,"whole":15,"promptText":"15 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":9,"whole":15,"promptText":"? + 9 = 15"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-087",
@@ -10012,7 +9992,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":9,"whole":16,"promptText":"16 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":9,"whole":16,"promptText":"9 + ? = 16"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-088",
@@ -10022,7 +10002,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":9,"whole":17,"promptText":"17 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":9,"whole":17,"promptText":"? + 9 = 17"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-089",
@@ -10032,7 +10012,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":9,"whole":18,"promptText":"18 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":9,"whole":18,"promptText":"? + 9 = 18"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-090",
@@ -10042,7 +10022,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":8,"whole":11,"promptText":"11 = 8 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":8,"whole":11,"promptText":"8 + ? = 11"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-091",
@@ -10052,7 +10032,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":8,"whole":12,"promptText":"12 = 8 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":8,"whole":12,"promptText":"8 + ? = 12"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-092",
@@ -10062,7 +10042,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":8,"whole":13,"promptText":"13 = 8 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":8,"whole":13,"promptText":"8 + ? = 13"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-093",
@@ -10072,7 +10052,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":8,"whole":14,"promptText":"14 = 8 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":8,"whole":14,"promptText":"? + 8 = 14"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-094",
@@ -10082,7 +10062,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":8,"whole":15,"promptText":"15 = 8 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":8,"whole":15,"promptText":"8 + ? = 15"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-095",
@@ -10092,7 +10072,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":8,"whole":16,"promptText":"16 = 8 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":8,"whole":16,"promptText":"? + 8 = 16"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-096",
@@ -10102,7 +10082,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":8,"whole":17,"promptText":"17 = 8 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":8,"whole":17,"promptText":"? + 8 = 17"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-097",
@@ -10112,7 +10092,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":7,"whole":11,"promptText":"11 = 7 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":7,"whole":11,"promptText":"7 + ? = 11"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-098",
@@ -10122,7 +10102,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":7,"whole":12,"promptText":"12 = 7 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":7,"whole":12,"promptText":"7 + ? = 12"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-099",
@@ -10132,7 +10112,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":7,"whole":13,"promptText":"13 = 7 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":7,"whole":13,"promptText":"? + 7 = 13"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-100",
@@ -10142,7 +10122,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":7,"whole":14,"promptText":"14 = 7 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":7,"whole":14,"promptText":"7 + ? = 14"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-101",
@@ -10152,7 +10132,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":7,"whole":15,"promptText":"15 = 7 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":7,"whole":15,"promptText":"? + 7 = 15"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-102",
@@ -10162,7 +10142,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":7,"whole":16,"promptText":"16 = 7 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":7,"whole":16,"promptText":"? + 7 = 16"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-103",
@@ -10172,7 +10152,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":6,"whole":11,"promptText":"11 = 6 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":6,"whole":11,"promptText":"6 + ? = 11"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-104",
@@ -10182,7 +10162,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":6,"whole":12,"promptText":"12 = 6 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":6,"whole":12,"promptText":"? + 6 = 12"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-105",
@@ -10192,7 +10172,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":6,"whole":13,"promptText":"13 = 6 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":6,"whole":13,"promptText":"6 + ? = 13"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-106",
@@ -10202,7 +10182,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":6,"whole":14,"promptText":"14 = 6 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":6,"whole":14,"promptText":"6 + ? = 14"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-107",
@@ -10212,7 +10192,7 @@ export const ITEMS = [
     structureType: "takeFromTenFact",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":6,"whole":15,"promptText":"15 = 6 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":6,"whole":15,"promptText":"? + 6 = 15"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-108",
@@ -10222,7 +10202,7 @@ export const ITEMS = [
     structureType: "partnersOf20",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":19,"display":{"part":1,"whole":20,"promptText":"20 = 1 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":19,"display":{"part":1,"whole":20,"promptText":"? + 1 = 20"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-109",
@@ -10232,7 +10212,7 @@ export const ITEMS = [
     structureType: "partnersOf20",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"part":2,"whole":20,"promptText":"20 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":18,"display":{"part":2,"whole":20,"promptText":"2 + ? = 20"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-110",
@@ -10242,7 +10222,7 @@ export const ITEMS = [
     structureType: "partnersOf20",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"part":3,"whole":20,"promptText":"20 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":17,"display":{"part":3,"whole":20,"promptText":"3 + ? = 20"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-111",
@@ -10252,7 +10232,7 @@ export const ITEMS = [
     structureType: "partnersOf20",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"part":4,"whole":20,"promptText":"20 = 4 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"part":4,"whole":20,"promptText":"4 + ? = 20"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-112",
@@ -10262,7 +10242,7 @@ export const ITEMS = [
     structureType: "partnersOf20",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"part":5,"whole":20,"promptText":"20 = 5 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"part":5,"whole":20,"promptText":"5 + ? = 20"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-113",
@@ -10272,7 +10252,7 @@ export const ITEMS = [
     structureType: "partnersOf20",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"part":6,"whole":20,"promptText":"20 = 6 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":14,"display":{"part":6,"whole":20,"promptText":"? + 6 = 20"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-114",
@@ -10282,7 +10262,7 @@ export const ITEMS = [
     structureType: "partnersOf20",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"part":7,"whole":20,"promptText":"20 = 7 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":13,"display":{"part":7,"whole":20,"promptText":"7 + ? = 20"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-115",
@@ -10292,7 +10272,7 @@ export const ITEMS = [
     structureType: "partnersOf20",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"part":8,"whole":20,"promptText":"20 = 8 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"part":8,"whole":20,"promptText":"8 + ? = 20"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-116",
@@ -10302,7 +10282,7 @@ export const ITEMS = [
     structureType: "partnersOf20",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"part":9,"whole":20,"promptText":"20 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"part":9,"whole":20,"promptText":"9 + ? = 20"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-117",
@@ -10312,7 +10292,7 @@ export const ITEMS = [
     structureType: "partnersOf20",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":10,"whole":20,"promptText":"20 = 10 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":10,"whole":20,"promptText":"? + 10 = 20"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-118",
@@ -10322,7 +10302,7 @@ export const ITEMS = [
     structureType: "partnersOf20",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":11,"whole":20,"promptText":"20 = 11 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":11,"whole":20,"promptText":"11 + ? = 20"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-119",
@@ -10332,7 +10312,7 @@ export const ITEMS = [
     structureType: "partnersOf20",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":12,"whole":20,"promptText":"20 = 12 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":12,"whole":20,"promptText":"12 + ? = 20"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-120",
@@ -10342,7 +10322,7 @@ export const ITEMS = [
     structureType: "partnersOf20",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":13,"whole":20,"promptText":"20 = 13 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":13,"whole":20,"promptText":"? + 13 = 20"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-121",
@@ -10352,7 +10332,7 @@ export const ITEMS = [
     structureType: "partnersOf20",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":14,"whole":20,"promptText":"20 = 14 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":14,"whole":20,"promptText":"? + 14 = 20"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-122",
@@ -10362,7 +10342,7 @@ export const ITEMS = [
     structureType: "partnersOf20",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":15,"whole":20,"promptText":"20 = 15 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":15,"whole":20,"promptText":"? + 15 = 20"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-123",
@@ -10372,7 +10352,7 @@ export const ITEMS = [
     structureType: "partnersOf20",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":16,"whole":20,"promptText":"20 = 16 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":16,"whole":20,"promptText":"? + 16 = 20"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-124",
@@ -10382,7 +10362,7 @@ export const ITEMS = [
     structureType: "partnersOf20",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":17,"whole":20,"promptText":"20 = 17 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":17,"whole":20,"promptText":"? + 17 = 20"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-125",
@@ -10392,7 +10372,7 @@ export const ITEMS = [
     structureType: "partnersOf20",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":18,"whole":20,"promptText":"20 = 18 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":18,"whole":20,"promptText":"? + 18 = 20"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-126",
@@ -10402,7 +10382,7 @@ export const ITEMS = [
     structureType: "partnersOf20",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":19,"whole":20,"promptText":"20 = 19 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":19,"whole":20,"promptText":"? + 19 = 20"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-127",
@@ -10412,7 +10392,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":95,"display":{"part":5,"whole":100,"promptText":"100 = 5 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":95,"display":{"part":5,"whole":100,"promptText":"5 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-128",
@@ -10422,7 +10402,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":90,"display":{"part":10,"whole":100,"promptText":"100 = 10 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":90,"display":{"part":10,"whole":100,"promptText":"10 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-129",
@@ -10432,7 +10412,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":85,"display":{"part":15,"whole":100,"promptText":"100 = 15 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":85,"display":{"part":15,"whole":100,"promptText":"15 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-130",
@@ -10442,7 +10422,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":80,"display":{"part":20,"whole":100,"promptText":"100 = 20 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":80,"display":{"part":20,"whole":100,"promptText":"20 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-131",
@@ -10452,7 +10432,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"part":25,"whole":100,"promptText":"100 = 25 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"part":25,"whole":100,"promptText":"25 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-132",
@@ -10462,7 +10442,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":70,"display":{"part":30,"whole":100,"promptText":"100 = 30 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":70,"display":{"part":30,"whole":100,"promptText":"30 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-133",
@@ -10472,7 +10452,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":65,"display":{"part":35,"whole":100,"promptText":"100 = 35 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":65,"display":{"part":35,"whole":100,"promptText":"35 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-134",
@@ -10482,7 +10462,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":60,"display":{"part":40,"whole":100,"promptText":"100 = 40 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":60,"display":{"part":40,"whole":100,"promptText":"40 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-135",
@@ -10492,7 +10472,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":55,"display":{"part":45,"whole":100,"promptText":"100 = 45 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":55,"display":{"part":45,"whole":100,"promptText":"45 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-136",
@@ -10502,7 +10482,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":50,"display":{"part":50,"whole":100,"promptText":"100 = 50 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":50,"display":{"part":50,"whole":100,"promptText":"50 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-137",
@@ -10512,7 +10492,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":45,"display":{"part":55,"whole":100,"promptText":"100 = 55 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":45,"display":{"part":55,"whole":100,"promptText":"? + 55 = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-138",
@@ -10522,7 +10502,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":40,"display":{"part":60,"whole":100,"promptText":"100 = 60 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":40,"display":{"part":60,"whole":100,"promptText":"60 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-139",
@@ -10532,7 +10512,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"part":65,"whole":100,"promptText":"100 = 65 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"part":65,"whole":100,"promptText":"? + 65 = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-140",
@@ -10542,7 +10522,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":30,"display":{"part":70,"whole":100,"promptText":"100 = 70 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":30,"display":{"part":70,"whole":100,"promptText":"70 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-141",
@@ -10552,7 +10532,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":75,"whole":100,"promptText":"100 = 75 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":25,"display":{"part":75,"whole":100,"promptText":"? + 75 = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-142",
@@ -10562,7 +10542,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":80,"whole":100,"promptText":"100 = 80 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":80,"whole":100,"promptText":"80 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-143",
@@ -10572,7 +10552,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"part":85,"whole":100,"promptText":"100 = 85 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":15,"display":{"part":85,"whole":100,"promptText":"? + 85 = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-144",
@@ -10582,7 +10562,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":90,"whole":100,"promptText":"100 = 90 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":90,"whole":100,"promptText":"? + 90 = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-145",
@@ -10592,7 +10572,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":95,"whole":100,"promptText":"100 = 95 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":95,"whole":100,"promptText":"? + 95 = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-146",
@@ -10602,7 +10582,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":88,"display":{"part":12,"whole":100,"promptText":"100 = 12 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":88,"display":{"part":12,"whole":100,"promptText":"12 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-147",
@@ -10612,7 +10592,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":77,"display":{"part":23,"whole":100,"promptText":"100 = 23 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":77,"display":{"part":23,"whole":100,"promptText":"23 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-148",
@@ -10622,7 +10602,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":66,"display":{"part":34,"whole":100,"promptText":"100 = 34 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":66,"display":{"part":34,"whole":100,"promptText":"34 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-149",
@@ -10632,7 +10612,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":59,"display":{"part":41,"whole":100,"promptText":"100 = 41 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":59,"display":{"part":41,"whole":100,"promptText":"41 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-150",
@@ -10642,7 +10622,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":52,"display":{"part":48,"whole":100,"promptText":"100 = 48 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":52,"display":{"part":48,"whole":100,"promptText":"48 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-151",
@@ -10652,7 +10632,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":44,"display":{"part":56,"whole":100,"promptText":"100 = 56 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":44,"display":{"part":56,"whole":100,"promptText":"56 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-152",
@@ -10662,7 +10642,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":37,"display":{"part":63,"whole":100,"promptText":"100 = 63 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":37,"display":{"part":63,"whole":100,"promptText":"63 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-153",
@@ -10672,7 +10652,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":33,"display":{"part":67,"whole":100,"promptText":"100 = 67 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":33,"display":{"part":67,"whole":100,"promptText":"67 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-154",
@@ -10682,7 +10662,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":28,"display":{"part":72,"whole":100,"promptText":"100 = 72 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":28,"display":{"part":72,"whole":100,"promptText":"? + 72 = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-155",
@@ -10692,7 +10672,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":21,"display":{"part":79,"whole":100,"promptText":"100 = 79 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":21,"display":{"part":79,"whole":100,"promptText":"79 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-156",
@@ -10702,7 +10682,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"part":84,"whole":100,"promptText":"100 = 84 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"part":84,"whole":100,"promptText":"84 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-157",
@@ -10712,7 +10692,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"part":88,"whole":100,"promptText":"100 = 88 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":12,"display":{"part":88,"whole":100,"promptText":"88 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-158",
@@ -10722,7 +10702,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":91,"whole":100,"promptText":"100 = 91 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":91,"whole":100,"promptText":"91 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-159",
@@ -10732,7 +10712,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":96,"whole":100,"promptText":"100 = 96 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":96,"whole":100,"promptText":"96 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-160",
@@ -10742,7 +10722,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":99,"whole":100,"promptText":"100 = 99 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":99,"whole":100,"promptText":"99 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-161",
@@ -10752,7 +10732,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":97,"display":{"part":3,"whole":100,"promptText":"100 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":97,"display":{"part":3,"whole":100,"promptText":"3 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-162",
@@ -10762,7 +10742,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":93,"display":{"part":7,"whole":100,"promptText":"100 = 7 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":93,"display":{"part":7,"whole":100,"promptText":"7 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-163",
@@ -10772,7 +10752,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":82,"display":{"part":18,"whole":100,"promptText":"100 = 18 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":82,"display":{"part":18,"whole":100,"promptText":"18 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-164",
@@ -10782,7 +10762,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":74,"display":{"part":26,"whole":100,"promptText":"100 = 26 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":74,"display":{"part":26,"whole":100,"promptText":"26 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-165",
@@ -10792,7 +10772,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":63,"display":{"part":37,"whole":100,"promptText":"100 = 37 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":63,"display":{"part":37,"whole":100,"promptText":"37 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-166",
@@ -10802,7 +10782,7 @@ export const ITEMS = [
     structureType: "partnersOf100",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":56,"display":{"part":44,"whole":100,"promptText":"100 = 44 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":56,"display":{"part":44,"whole":100,"promptText":"44 + ? = 100"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-167",
@@ -10812,7 +10792,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":950,"display":{"part":50,"whole":1000,"promptText":"1000 = 50 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":950,"display":{"part":50,"whole":1000,"promptText":"50 + ? = 1000"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-168",
@@ -10822,7 +10802,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":900,"display":{"part":100,"whole":1000,"promptText":"1000 = 100 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":900,"display":{"part":100,"whole":1000,"promptText":"100 + ? = 1000"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-169",
@@ -10832,7 +10812,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":850,"display":{"part":150,"whole":1000,"promptText":"1000 = 150 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":850,"display":{"part":150,"whole":1000,"promptText":"150 + ? = 1000"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-170",
@@ -10842,7 +10822,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":800,"display":{"part":200,"whole":1000,"promptText":"1000 = 200 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":800,"display":{"part":200,"whole":1000,"promptText":"200 + ? = 1000"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-171",
@@ -10852,7 +10832,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":750,"display":{"part":250,"whole":1000,"promptText":"1000 = 250 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":750,"display":{"part":250,"whole":1000,"promptText":"250 + ? = 1000"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-172",
@@ -10862,7 +10842,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":700,"display":{"part":300,"whole":1000,"promptText":"1000 = 300 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":700,"display":{"part":300,"whole":1000,"promptText":"300 + ? = 1000"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-173",
@@ -10872,7 +10852,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":650,"display":{"part":350,"whole":1000,"promptText":"1000 = 350 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":650,"display":{"part":350,"whole":1000,"promptText":"350 + ? = 1000"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-174",
@@ -10882,7 +10862,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":600,"display":{"part":400,"whole":1000,"promptText":"1000 = 400 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":600,"display":{"part":400,"whole":1000,"promptText":"400 + ? = 1000"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-175",
@@ -10892,7 +10872,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":550,"display":{"part":450,"whole":1000,"promptText":"1000 = 450 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":550,"display":{"part":450,"whole":1000,"promptText":"450 + ? = 1000"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-176",
@@ -10902,7 +10882,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":500,"display":{"part":500,"whole":1000,"promptText":"1000 = 500 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":500,"display":{"part":500,"whole":1000,"promptText":"? + 500 = 1000"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-177",
@@ -10912,7 +10892,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":450,"display":{"part":550,"whole":1000,"promptText":"1000 = 550 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":450,"display":{"part":550,"whole":1000,"promptText":"550 + ? = 1000"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-178",
@@ -10922,7 +10902,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":400,"display":{"part":600,"whole":1000,"promptText":"1000 = 600 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":400,"display":{"part":600,"whole":1000,"promptText":"? + 600 = 1000"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-179",
@@ -10932,7 +10912,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":350,"display":{"part":650,"whole":1000,"promptText":"1000 = 650 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":350,"display":{"part":650,"whole":1000,"promptText":"650 + ? = 1000"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-180",
@@ -10942,7 +10922,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":300,"display":{"part":700,"whole":1000,"promptText":"1000 = 700 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":300,"display":{"part":700,"whole":1000,"promptText":"700 + ? = 1000"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-181",
@@ -10952,7 +10932,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":250,"display":{"part":750,"whole":1000,"promptText":"1000 = 750 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":250,"display":{"part":750,"whole":1000,"promptText":"750 + ? = 1000"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-182",
@@ -10962,7 +10942,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":200,"display":{"part":800,"whole":1000,"promptText":"1000 = 800 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":200,"display":{"part":800,"whole":1000,"promptText":"800 + ? = 1000"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-183",
@@ -10972,7 +10952,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":150,"display":{"part":850,"whole":1000,"promptText":"1000 = 850 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":150,"display":{"part":850,"whole":1000,"promptText":"850 + ? = 1000"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-184",
@@ -10982,7 +10962,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":100,"display":{"part":900,"whole":1000,"promptText":"1000 = 900 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":100,"display":{"part":900,"whole":1000,"promptText":"900 + ? = 1000"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-185",
@@ -10992,7 +10972,7 @@ export const ITEMS = [
     structureType: "partnersOf1000",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":50,"display":{"part":950,"whole":1000,"promptText":"1000 = 950 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":50,"display":{"part":950,"whole":1000,"promptText":"950 + ? = 1000"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-186",
@@ -11002,7 +10982,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"part":10,"whole":21,"promptText":"21 = ? + 10"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":11,"display":{"part":10,"whole":21,"promptText":"? + 10 = 21"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-187",
@@ -11012,7 +10992,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"part":10,"whole":26,"promptText":"26 = ? + 10"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":16,"display":{"part":10,"whole":26,"promptText":"? + 10 = 26"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-188",
@@ -11022,7 +11002,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":24,"display":{"part":10,"whole":34,"promptText":"34 = ? + 10"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":24,"display":{"part":10,"whole":34,"promptText":"? + 10 = 34"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-189",
@@ -11032,7 +11012,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":29,"display":{"part":10,"whole":39,"promptText":"39 = ? + 10"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":29,"display":{"part":10,"whole":39,"promptText":"? + 10 = 39"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-190",
@@ -11042,7 +11022,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"part":10,"whole":45,"promptText":"45 = ? + 10"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":35,"display":{"part":10,"whole":45,"promptText":"? + 10 = 45"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-191",
@@ -11052,7 +11032,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":42,"display":{"part":10,"whole":52,"promptText":"52 = ? + 10"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":42,"display":{"part":10,"whole":52,"promptText":"? + 10 = 52"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-192",
@@ -11062,7 +11042,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":48,"display":{"part":10,"whole":58,"promptText":"58 = ? + 10"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":48,"display":{"part":10,"whole":58,"promptText":"? + 10 = 58"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-193",
@@ -11072,7 +11052,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":53,"display":{"part":10,"whole":63,"promptText":"63 = ? + 10"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":53,"display":{"part":10,"whole":63,"promptText":"? + 10 = 63"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-194",
@@ -11082,7 +11062,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":57,"display":{"part":10,"whole":67,"promptText":"67 = ? + 10"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":57,"display":{"part":10,"whole":67,"promptText":"? + 10 = 67"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-195",
@@ -11092,7 +11072,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":64,"display":{"part":10,"whole":74,"promptText":"74 = ? + 10"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":64,"display":{"part":10,"whole":74,"promptText":"? + 10 = 74"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-196",
@@ -11102,7 +11082,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":68,"display":{"part":10,"whole":78,"promptText":"78 = ? + 10"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":68,"display":{"part":10,"whole":78,"promptText":"? + 10 = 78"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-197",
@@ -11112,7 +11092,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"part":10,"whole":85,"promptText":"85 = ? + 10"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":75,"display":{"part":10,"whole":85,"promptText":"? + 10 = 85"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-198",
@@ -11122,7 +11102,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":79,"display":{"part":10,"whole":89,"promptText":"89 = ? + 10"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":79,"display":{"part":10,"whole":89,"promptText":"? + 10 = 89"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-199",
@@ -11132,7 +11112,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":82,"display":{"part":10,"whole":92,"promptText":"92 = ? + 10"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":82,"display":{"part":10,"whole":92,"promptText":"? + 10 = 92"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-200",
@@ -11142,7 +11122,7 @@ export const ITEMS = [
     structureType: "takeOutTen",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":86,"display":{"part":10,"whole":96,"promptText":"96 = ? + 10"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":86,"display":{"part":10,"whole":96,"promptText":"? + 10 = 96"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-201",
@@ -11152,7 +11132,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":20,"whole":24,"promptText":"24 = 20 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":20,"whole":24,"promptText":"20 + ? = 24"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-202",
@@ -11162,7 +11142,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":4,"whole":24,"promptText":"24 = ? + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":4,"whole":24,"promptText":"? + 4 = 24"},"answerType":"numberPad"},
   },
   {
     itemId: "numberBonds-proc-b0820-203",
@@ -11172,7 +11152,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":30,"whole":37,"promptText":"37 = 30 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":30,"whole":37,"promptText":"30 + ? = 37"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-204",
@@ -11182,7 +11162,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":30,"display":{"part":7,"whole":37,"promptText":"37 = ? + 7"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":30,"display":{"part":7,"whole":37,"promptText":"? + 7 = 37"},"answerType":"numberPad"},
   },
   {
     itemId: "numberBonds-proc-b0820-205",
@@ -11192,7 +11172,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":40,"whole":42,"promptText":"42 = 40 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":40,"whole":42,"promptText":"40 + ? = 42"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-206",
@@ -11202,7 +11182,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":40,"display":{"part":2,"whole":42,"promptText":"42 = ? + 2"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":40,"display":{"part":2,"whole":42,"promptText":"? + 2 = 42"},"answerType":"numberPad"},
   },
   {
     itemId: "numberBonds-proc-b0820-207",
@@ -11212,7 +11192,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":50,"whole":59,"promptText":"59 = 50 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":50,"whole":59,"promptText":"50 + ? = 59"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-208",
@@ -11222,7 +11202,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":50,"display":{"part":9,"whole":59,"promptText":"59 = ? + 9"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":50,"display":{"part":9,"whole":59,"promptText":"? + 9 = 59"},"answerType":"numberPad"},
   },
   {
     itemId: "numberBonds-proc-b0820-209",
@@ -11232,7 +11212,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":60,"whole":63,"promptText":"63 = 60 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":60,"whole":63,"promptText":"60 + ? = 63"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-210",
@@ -11242,7 +11222,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":60,"display":{"part":3,"whole":63,"promptText":"63 = ? + 3"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":60,"display":{"part":3,"whole":63,"promptText":"? + 3 = 63"},"answerType":"numberPad"},
   },
   {
     itemId: "numberBonds-proc-b0820-211",
@@ -11252,7 +11232,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":70,"whole":78,"promptText":"78 = 70 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":70,"whole":78,"promptText":"70 + ? = 78"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-212",
@@ -11262,7 +11242,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":70,"display":{"part":8,"whole":78,"promptText":"78 = ? + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":70,"display":{"part":8,"whole":78,"promptText":"? + 8 = 78"},"answerType":"numberPad"},
   },
   {
     itemId: "numberBonds-proc-b0820-213",
@@ -11272,7 +11252,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":80,"whole":85,"promptText":"85 = 80 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":80,"whole":85,"promptText":"80 + ? = 85"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-214",
@@ -11282,7 +11262,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":80,"display":{"part":5,"whole":85,"promptText":"85 = ? + 5"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":80,"display":{"part":5,"whole":85,"promptText":"? + 5 = 85"},"answerType":"numberPad"},
   },
   {
     itemId: "numberBonds-proc-b0820-215",
@@ -11292,7 +11272,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":90,"whole":96,"promptText":"96 = 90 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":90,"whole":96,"promptText":"90 + ? = 96"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-216",
@@ -11302,7 +11282,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":90,"display":{"part":6,"whole":96,"promptText":"96 = ? + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":90,"display":{"part":6,"whole":96,"promptText":"? + 6 = 96"},"answerType":"numberPad"},
   },
   {
     itemId: "numberBonds-proc-b0820-217",
@@ -11312,7 +11292,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":20,"whole":28,"promptText":"28 = 20 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":20,"whole":28,"promptText":"20 + ? = 28"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-218",
@@ -11322,7 +11302,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":8,"whole":28,"promptText":"28 = ? + 8"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":20,"display":{"part":8,"whole":28,"promptText":"? + 8 = 28"},"answerType":"numberPad"},
   },
   {
     itemId: "numberBonds-proc-b0820-219",
@@ -11332,7 +11312,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":30,"whole":31,"promptText":"31 = 30 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":30,"whole":31,"promptText":"30 + ? = 31"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-220",
@@ -11342,7 +11322,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":30,"display":{"part":1,"whole":31,"promptText":"31 = ? + 1"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":30,"display":{"part":1,"whole":31,"promptText":"? + 1 = 31"},"answerType":"numberPad"},
   },
   {
     itemId: "numberBonds-proc-b0820-221",
@@ -11352,7 +11332,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":40,"whole":46,"promptText":"46 = 40 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":40,"whole":46,"promptText":"40 + ? = 46"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-222",
@@ -11362,7 +11342,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":40,"display":{"part":6,"whole":46,"promptText":"46 = ? + 6"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":40,"display":{"part":6,"whole":46,"promptText":"? + 6 = 46"},"answerType":"numberPad"},
   },
   {
     itemId: "numberBonds-proc-b0820-223",
@@ -11372,7 +11352,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":50,"whole":54,"promptText":"54 = 50 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":50,"whole":54,"promptText":"50 + ? = 54"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-224",
@@ -11382,7 +11362,7 @@ export const ITEMS = [
     structureType: "tensOnesBond",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":50,"display":{"part":4,"whole":54,"promptText":"54 = ? + 4"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"bond","answer":50,"display":{"part":4,"whole":54,"promptText":"? + 4 = 54"},"answerType":"numberPad"},
   },
   {
     itemId: "numberBonds-proc-b0820-225",
@@ -15642,7 +15622,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":24,"whole":34,"promptText":"34 = 24 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":24,"whole":34,"promptText":"24 + ? = 34"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-651",
@@ -15652,7 +15632,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":37,"whole":47,"promptText":"47 = 37 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":37,"whole":47,"promptText":"37 + ? = 47"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-652",
@@ -15662,7 +15642,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":43,"whole":53,"promptText":"53 = 43 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":43,"whole":53,"promptText":"43 + ? = 53"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-653",
@@ -15672,7 +15652,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":58,"whole":68,"promptText":"68 = 58 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":58,"whole":68,"promptText":"58 + ? = 68"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-654",
@@ -15682,7 +15662,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":62,"whole":72,"promptText":"72 = 62 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":62,"whole":72,"promptText":"62 + ? = 72"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-655",
@@ -15692,7 +15672,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":76,"whole":86,"promptText":"86 = 76 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":76,"whole":86,"promptText":"76 + ? = 86"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-656",
@@ -15702,7 +15682,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":81,"whole":91,"promptText":"91 = 81 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":81,"whole":91,"promptText":"81 + ? = 91"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-657",
@@ -15712,7 +15692,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":19,"whole":29,"promptText":"29 = 19 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":19,"whole":29,"promptText":"19 + ? = 29"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-658",
@@ -15722,7 +15702,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":55,"whole":65,"promptText":"65 = 55 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":55,"whole":65,"promptText":"55 + ? = 65"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-659",
@@ -15732,7 +15712,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":48,"whole":58,"promptText":"58 = 48 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":48,"whole":58,"promptText":"48 + ? = 58"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-660",
@@ -15742,7 +15722,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":33,"whole":43,"promptText":"43 = 33 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":33,"whole":43,"promptText":"33 + ? = 43"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-661",
@@ -15752,7 +15732,7 @@ export const ITEMS = [
     structureType: "takeOutTenSplit",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":67,"whole":77,"promptText":"77 = 67 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":67,"whole":77,"promptText":"67 + ? = 77"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-662",

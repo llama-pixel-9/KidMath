@@ -231,7 +231,7 @@ const VARIETIES = [
       return {
         answer: whole - part,
         answerType: "numberBond",
-        display: { whole, part, promptText: `${whole} = ${part} + ?` },
+        display: { whole, part, promptText: `${part} + ? = ${whole}` },
         representation: "numberBond",
         cognitiveDemand: "DOK1",
         misconceptions: ["partWholeSwap", "partEchoed"],

@@ -431,7 +431,7 @@ const BONDS = {
     return p1 + p2;
   },
   partnerDrill: (q) => {
-    const [whole, part] = numsIn(promptOf(q)); // "9 = 4 + ?"
+    const [part, whole] = numsIn(promptOf(q)); // "4 + ? = 9"
     return whole - part;
   },
   splitDrill: (q) => {

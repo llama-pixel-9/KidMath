@@ -64,7 +64,7 @@ export function missingPartProcedural() {
         item("missingPart", "procedural", "partUnknown", "band1", {
           answer: whole - part,
           answerType: "numberBond",
-          display: { whole, part, promptText: `${whole} = ${part} + ?` },
+          display: { whole, part, promptText: `${part} + ? = ${whole}` },
         })
       );
     }
@@ -94,7 +94,7 @@ export function missingPartProcedural() {
         item("missingPart", "procedural", "takeFromTenFact", "band2", {
           answer: t - part,
           answerType: "numberBond",
-          display: { whole: t, part, promptText: `${t} = ${part} + ?` },
+          display: { whole: t, part, promptText: `${part} + ? = ${t}` },
         })
       );
     }
@@ -156,14 +156,14 @@ export function missingPartProcedural() {
       item("missingPart", "procedural", "tensOnesBond", "band3", {
         answer: o,
         answerType: "numberBond",
-        display: { whole: d + o, part: d, promptText: `${d + o} = ${d} + ?` },
+        display: { whole: d + o, part: d, promptText: `${d} + ? = ${d + o}` },
       })
     );
     items.push(
       item("missingPart", "procedural", "tensOnesBond", "band3", {
         answer: d,
         answerType: "numberPad",
-        display: { whole: d + o, part: o, promptText: `${d + o} = ? + ${o}` },
+        display: { whole: d + o, part: o, promptText: `? + ${o} = ${d + o}` },
       })
     );
   }

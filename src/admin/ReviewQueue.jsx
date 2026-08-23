@@ -1,5 +1,6 @@
 import { Fragment, useEffect, useMemo, useState } from "react";
-import { CheckCircle2, XCircle, RotateCcw, AlertTriangle, ShieldCheck } from "lucide-react";
+import { CheckCircle2, XCircle, RotateCcw, AlertTriangle, ShieldCheck, Eye, ExternalLink } from "lucide-react";
+import QuestionPreview from "./QuestionPreview.jsx";
 import { bulkSetReviewStatus, setReviewStatus } from "./itemBankAdminApi";
 import { runChecksOnAdminItem } from "../itemBank/qc/checks.js";
 import { formatAnswer } from "./reviewFormat.js";
@@ -81,6 +82,8 @@ export default function ReviewQueue({
   const [filterQc, setFilterQc] = useState(""); // "", "fail", "flagged"
   const [expanded, setExpanded] = useState(() => new Set());
   const [viewMode, setViewMode] = useState("cards"); // "cards" | "table" | "batches"
+  // Item shown in the "as the kid sees it" pane (right-hand drawer).
+  const [previewId, setPreviewId] = useState(null);
   // Batch-trust state: which batch is being spot-checked, its frozen sample,
   // and the two-click confirm arm.
   const [openBatch, setOpenBatch] = useState(null);
@@ -293,8 +296,16 @@ export default function ReviewQueue({
     );
   }
 
+  const previewItem = previewId ? queue.find((it) => it.itemId === previewId) || items.find((it) => it.itemId === previewId) : null;
+
   return (
-    <div className="space-y-3">
+    <div className={`space-y-3 ${previewItem ? "xl:pr-[30rem]" : ""}`}>
+      {previewItem && (
+        <PreviewDrawer
+          item={itemWithChoice(previewItem, choices.get(previewItem.itemId))}
+          onClose={() => setPreviewId(null)}
+        />
+      )}
       <div className="flex flex-wrap items-center gap-2">
         <span className="text-sm text-slate-700 font-semibold">
           {queue.length} item{queue.length === 1 ? "" : "s"} awaiting review
@@ -535,9 +546,12 @@ export default function ReviewQueue({
                             <p className="flex-1 text-slate-700 leading-snug">{text}</p>
                             <QcBadge qc={qc} />
                           </div>
-                          <p className="mt-1 text-xs text-slate-500">
-                            Answer <span className="font-extrabold text-slate-700">{formatAnswer(it.payload?.answer)}</span>
-                            <span className="ml-2">{it.structureType || it.subskill}</span>
+                          <p className="mt-1 text-xs text-slate-500 flex items-center gap-2">
+                            <span>
+                              Answer <span className="font-extrabold text-slate-700">{formatAnswer(it.payload?.answer)}</span>
+                              <span className="ml-2">{it.structureType || it.subskill}</span>
+                            </span>
+                            <PreviewButtons item={it} active={previewId === it.itemId} onPreview={setPreviewId} />
                           </p>
                         </div>
                       );
@@ -671,6 +685,7 @@ export default function ReviewQueue({
                   >
                     Edit
                   </button>
+                  <PreviewButtons item={it} active={previewId === it.itemId} onPreview={setPreviewId} />
                 </div>
               </div>
             );
@@ -818,3 +833,61 @@ export default function ReviewQueue({
   );
 }
 
+
+function playUrl(item) {
+  return `/play/${item.modeId}?item=${encodeURIComponent(item.itemId)}`;
+}
+
+/** "Preview" (drawer) + "Play" (real session pinned to this item, new tab). */
+function PreviewButtons({ item, active, onPreview }) {
+  return (
+    <span className="inline-flex items-center gap-1 ml-auto">
+      <button
+        type="button"
+        className={`px-2.5 py-1.5 rounded-lg border text-xs font-semibold inline-flex items-center gap-1 ${
+          active ? "border-teal bg-teal/10 text-deep-teal" : "border-gray-300 text-slate-600"
+        }`}
+        onClick={() => onPreview(active ? null : item.itemId)}
+        title="Render this item exactly as the kid sees it"
+      >
+        <Eye className="h-3.5 w-3.5" /> Preview
+      </button>
+      <a
+        className="px-2.5 py-1.5 rounded-lg border border-gray-300 text-xs font-semibold text-slate-600 inline-flex items-center gap-1"
+        href={playUrl(item)}
+        target="_blank"
+        rel="noreferrer"
+        title="Open a real session pinned to this item"
+      >
+        <ExternalLink className="h-3.5 w-3.5" /> Play
+      </a>
+    </span>
+  );
+}
+
+/** Right-hand pane: the session stage at phone width. Sticky on wide
+ * screens so it stays beside the queue while you scroll and approve. */
+function PreviewDrawer({ item, onClose }) {
+  return (
+    <aside
+      className="xl:fixed xl:right-4 xl:top-20 xl:bottom-4 xl:w-[28rem] xl:overflow-y-auto rounded-2xl border border-gray-200 bg-white shadow-lg p-3 space-y-2 z-30"
+      aria-label="Item preview"
+    >
+      <div className="flex items-center gap-2 text-xs text-slate-500">
+        <span className="font-mono truncate">{item.itemId}</span>
+        <span>· {item.modeId}</span>
+        <span>· L{item.levelMin}-{item.levelMax}</span>
+        <a className="ml-auto underline" href={playUrl(item)} target="_blank" rel="noreferrer">
+          open in play
+        </a>
+        <button type="button" className="px-2 py-1 rounded-md border border-gray-300" onClick={onClose} aria-label="Close preview">
+          ✕
+        </button>
+      </div>
+      <QuestionPreview item={item} />
+      <p className="text-[11px] text-slate-400">
+        Live: tap or type an answer to see the feedback state. Choices re-roll after each answer, as in a session.
+      </p>
+    </aside>
+  );
+}

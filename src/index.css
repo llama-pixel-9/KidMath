@@ -256,3 +256,7 @@ h3 {
     pointer-events: none;
   }
 }
+
+/* Preview pane: keep the phone column even on a wide screen. */
+.play-area--stacked { flex-direction: column !important; gap: 1rem !important; }
+.play-area--stacked .play-pane { max-width: 24rem !important; flex: none !important; }

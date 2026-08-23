@@ -173,6 +173,10 @@ Simulator flags (argument-domain `UserDefaults`, via `simctl launch com.kidmath.
 `-autostartMode <mode>` jumps straight into a mode · `-kidmath-theme <id>` forces
 a theme · `-showPaywall 1` opens the paywall.
 
+Web: `/play/<mode>?item=<itemId>` pins one bank row (any status) as every
+question in the session — the "Play" link in the /admin review queue. The
+queue's "Preview" drawer renders the same `QuestionStage` the session uses.
+
 **StoreKit testing is awkward by design.** `SKTestSession` needs the
 `com.apple.developer.storekit.request-data` entitlement (Debug-only
 `KidMathDebug.entitlements`) *and* still only works Xcode-launched — headless

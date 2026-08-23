@@ -264,6 +264,12 @@ export function generateQuestion(mode, level, context = null) {
       }
     }
   }
+  return finalizeQuestion(mode, bankQuestion, q);
+}
+
+/** Fold a bank payload (or the generated question when there is none) into
+ * the render-ready shape: mode stamped, metadata flattened, itemKey, validated. */
+function finalizeQuestion(mode, bankQuestion, q) {
   const bankMetadata = bankQuestion?.metadataOverrides || null;
   const bankPayload = bankQuestion ? { ...bankQuestion } : null;
   if (bankPayload) delete bankPayload.metadataOverrides;
@@ -290,6 +296,26 @@ export function generateQuestion(mode, level, context = null) {
     throw new Error(`Invalid question for mode ${mode}: ${quality.errors.join("; ")}`);
   }
   return effectiveQuestion;
+}
+
+/**
+ * One specific bank item, render-ready — exactly what a kid would see if the
+ * selector served it: same merge as generateQuestion, choices attached. Used
+ * by the admin preview pane and the `/play/<mode>?item=<id>` pin; any status
+ * is accepted (reviewers preview drafts), unlike the session selector.
+ */
+export function buildBankQuestion(bankItem, level = null) {
+  const mode = bankItem.modeId;
+  const targetLevel = clampLevel(level ?? bankItem.levelRange?.[0] ?? 1);
+  const bankQuestion = buildQuestionFromBankItem(bankItem, targetLevel);
+  // The generator's question supplies the full metadata scaffold (gradeBand,
+  // domain, practices...) exactly as it does on the session path.
+  const scaffold = getModeConfig(mode).generate(targetLevel);
+  const question = finalizeQuestion(mode, bankQuestion, scaffold);
+  if (questionAnswerType(question) === "choice") {
+    question.choices = generateChoices(question.answer, 4, question);
+  }
+  return question;
 }
 
 export function generateChoices(answer, count = 4, question = null) {

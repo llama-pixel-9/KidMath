@@ -46,6 +46,8 @@ test("a finished session writes one practice-log record with its attempts", asyn
     );
   }
 
+  // The record lands when finishSession settles, shortly after the QA `done` flag.
+  await page.waitForFunction(() => JSON.parse(localStorage.getItem("kidmath-sessions") || "[]").length > 0, null, { timeout: 10_000 });
   const rows = await page.evaluate(() => JSON.parse(localStorage.getItem("kidmath-sessions") || "[]"));
   expect(rows).toHaveLength(1);
   const [rec] = rows;

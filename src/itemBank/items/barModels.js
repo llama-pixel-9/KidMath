@@ -7472,7 +7472,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":224,"b":225,"c":226,"w":675,"kind":"threeSaid"},"truth":true,"promptText":"Diego partitions 675 into sections 224, 225, and 226. Is the partition sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":224,"b":225,"c":226,"w":675,"kind":"threeSaid"},"truth":true,"promptText":"Diego splits 675 into parts 224, 225, and 226. Do the parts add up to 675?"}},
   },
   {
     itemId: "barModels-conc-b0821-0136",
@@ -7492,7 +7492,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":226,"b":225,"c":337,"w":788,"kind":"threeSaid"},"truth":true,"promptText":"Luca partitions 788 into sections 226, 225, and 337. Is the partition sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":226,"b":225,"c":337,"w":788,"kind":"threeSaid"},"truth":true,"promptText":"Luca splits 788 into parts 226, 225, and 337. Do the parts add up to 788?"}},
   },
   {
     itemId: "barModels-conc-b0821-0138",
@@ -7512,7 +7512,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":113,"b":224,"c":225,"w":562,"kind":"threeSaid"},"truth":true,"promptText":"Omar partitions 562 into sections 113, 224, and 225. Is the partition sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":113,"b":224,"c":225,"w":562,"kind":"threeSaid"},"truth":true,"promptText":"Omar splits 562 into parts 113, 224, and 225. Do the parts add up to 562?"}},
   },
   {
     itemId: "barModels-conc-b0821-0140",
@@ -7532,7 +7532,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":226,"b":227,"c":437,"w":890,"kind":"threeSaid"},"truth":true,"promptText":"Finn partitions 890 into sections 226, 227, and 437. Is the partition sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":226,"b":227,"c":437,"w":890,"kind":"threeSaid"},"truth":true,"promptText":"Finn splits 890 into parts 226, 227, and 437. Do the parts add up to 890?"}},
   },
   {
     itemId: "barModels-conc-b0821-0142",
@@ -7552,7 +7552,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":113,"b":224,"c":226,"w":563,"kind":"threeSaid"},"truth":true,"promptText":"Sam partitions 563 into sections 113, 224, and 226. Is the partition sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":113,"b":224,"c":226,"w":563,"kind":"threeSaid"},"truth":true,"promptText":"Sam splits 563 into parts 113, 224, and 226. Do the parts add up to 563?"}},
   },
   {
     itemId: "barModels-conc-b0821-0144",
@@ -7572,7 +7572,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":225,"b":226,"c":226,"w":677,"kind":"threeSaid"},"truth":true,"promptText":"Kai partitions 677 into sections 225, 226, and 226. Is the partition sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":225,"b":226,"c":226,"w":677,"kind":"threeSaid"},"truth":true,"promptText":"Kai splits 677 into parts 225, 226, and 226. Do the parts add up to 677?"}},
   },
   {
     itemId: "barModels-conc-b0821-0146",
@@ -7592,7 +7592,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":114,"b":225,"c":227,"w":566,"kind":"threeSaid"},"truth":true,"promptText":"Lily partitions 566 into sections 114, 225, and 227. Is the partition sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":114,"b":225,"c":227,"w":566,"kind":"threeSaid"},"truth":true,"promptText":"Lily splits 566 into parts 114, 225, and 227. Do the parts add up to 566?"}},
   },
   {
     itemId: "barModels-conc-b0821-0148",
@@ -7612,7 +7612,7 @@ export const ITEMS = [
     structureType: "threePartJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":226,"b":226,"c":437,"w":889,"kind":"threeSaid"},"truth":true,"promptText":"Leo partitions 889 into sections 226, 226, and 437. Is the partition sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"a":226,"b":226,"c":437,"w":889,"kind":"threeSaid"},"truth":true,"promptText":"Leo splits 889 into parts 226, 226, and 437. Do the parts add up to 889?"}},
   },
   {
     itemId: "barModels-conc-b0821-0150",
@@ -9972,7 +9972,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":282,"w":846,"kind":"equalSaid"},"truth":true,"promptText":"Diego partitions 846 into 3 units of 282. Is the partition exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":282,"w":846,"kind":"equalSaid"},"truth":true,"promptText":"Diego splits 846 into 3 equal parts of 282. Is that exactly right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0386",
@@ -9992,7 +9992,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":4,"u":191,"w":764,"kind":"equalSaid"},"truth":true,"promptText":"Luca partitions 764 into 4 units of 191. Is the partition exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":4,"u":191,"w":764,"kind":"equalSaid"},"truth":true,"promptText":"Luca splits 764 into 4 equal parts of 191. Is that exactly right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0388",
@@ -10012,7 +10012,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":5,"u":191,"w":955,"kind":"equalSaid"},"truth":true,"promptText":"Omar partitions 955 into 5 units of 191. Is the partition exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":5,"u":191,"w":955,"kind":"equalSaid"},"truth":true,"promptText":"Omar splits 955 into 5 equal parts of 191. Is that exactly right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0390",
@@ -10032,7 +10032,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":6,"u":121,"w":726,"kind":"equalSaid"},"truth":true,"promptText":"Finn partitions 726 into 6 units of 121. Is the partition exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":6,"u":121,"w":726,"kind":"equalSaid"},"truth":true,"promptText":"Finn splits 726 into 6 equal parts of 121. Is that exactly right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0392",
@@ -10052,7 +10052,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":291,"w":873,"kind":"equalSaid"},"truth":true,"promptText":"Sam partitions 873 into 3 units of 291. Is the partition exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":291,"w":873,"kind":"equalSaid"},"truth":true,"promptText":"Sam splits 873 into 3 equal parts of 291. Is that exactly right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0394",
@@ -10072,7 +10072,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":4,"u":232,"w":928,"kind":"equalSaid"},"truth":true,"promptText":"Kai partitions 928 into 4 units of 232. Is the partition exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":4,"u":232,"w":928,"kind":"equalSaid"},"truth":true,"promptText":"Kai splits 928 into 4 equal parts of 232. Is that exactly right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0396",
@@ -10092,7 +10092,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":5,"u":171,"w":855,"kind":"equalSaid"},"truth":true,"promptText":"Lily partitions 855 into 5 units of 171. Is the partition exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":5,"u":171,"w":855,"kind":"equalSaid"},"truth":true,"promptText":"Lily splits 855 into 5 equal parts of 171. Is that exactly right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0398",
@@ -10112,7 +10112,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":6,"u":131,"w":786,"kind":"equalSaid"},"truth":true,"promptText":"Leo partitions 786 into 6 units of 131. Is the partition exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":6,"u":131,"w":786,"kind":"equalSaid"},"truth":true,"promptText":"Leo splits 786 into 6 equal parts of 131. Is that exactly right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0400",
@@ -10132,7 +10132,7 @@ export const ITEMS = [
     structureType: "equalJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":321,"w":963,"kind":"equalSaid"},"truth":true,"promptText":"Theo partitions 963 into 3 units of 321. Is the partition exact?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"bar":{"k":3,"u":321,"w":963,"kind":"equalSaid"},"truth":true,"promptText":"Theo splits 963 into 3 equal parts of 321. Is that exactly right?"}},
   },
   {
     itemId: "barModels-conc-b0821-0402",
@@ -16552,7 +16552,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":282,"display":{"bar":{"k":3,"w":846,"kind":"unitOf"},"promptText":"Partition 846 into 3 identical units. Exactly what is one unit?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":282,"display":{"bar":{"k":3,"w":846,"kind":"unitOf"},"promptText":"Split 846 into 3 equal parts. How big is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0444",
@@ -16572,7 +16572,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":191,"display":{"bar":{"k":5,"w":955,"kind":"unitOf"},"promptText":"Partition 955 into 5 identical units. Exactly what is one unit?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":191,"display":{"bar":{"k":5,"w":955,"kind":"unitOf"},"promptText":"Split 955 into 5 equal parts. How big is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0446",
@@ -16592,7 +16592,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":291,"display":{"bar":{"k":3,"w":873,"kind":"unitOf"},"promptText":"Partition 873 into 3 identical units. Exactly what is one unit?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":291,"display":{"bar":{"k":3,"w":873,"kind":"unitOf"},"promptText":"Split 873 into 3 equal parts. How big is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0448",
@@ -16612,7 +16612,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":171,"display":{"bar":{"k":5,"w":855,"kind":"unitOf"},"promptText":"Partition 855 into 5 identical units. Exactly what is one unit?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":171,"display":{"bar":{"k":5,"w":855,"kind":"unitOf"},"promptText":"Split 855 into 5 equal parts. How big is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0450",
@@ -16632,7 +16632,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":321,"display":{"bar":{"k":3,"w":963,"kind":"unitOf"},"promptText":"Partition 963 into 3 identical units. Exactly what is one unit?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":321,"display":{"bar":{"k":3,"w":963,"kind":"unitOf"},"promptText":"Split 963 into 3 equal parts. How big is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0452",
@@ -16652,7 +16652,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":151,"display":{"bar":{"k":5,"w":755,"kind":"unitOf"},"promptText":"Partition 755 into 5 identical units. Exactly what is one unit?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":151,"display":{"bar":{"k":5,"w":755,"kind":"unitOf"},"promptText":"Split 755 into 5 equal parts. How big is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0454",
@@ -16672,7 +16672,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":313,"display":{"bar":{"k":3,"w":939,"kind":"unitOf"},"promptText":"Partition 939 into 3 identical units. Exactly what is one unit?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":313,"display":{"bar":{"k":3,"w":939,"kind":"unitOf"},"promptText":"Split 939 into 3 equal parts. How big is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0456",
@@ -16692,7 +16692,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":181,"display":{"bar":{"k":5,"w":905,"kind":"unitOf"},"promptText":"Partition 905 into 5 identical units. Exactly what is one unit?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":181,"display":{"bar":{"k":5,"w":905,"kind":"unitOf"},"promptText":"Split 905 into 5 equal parts. How big is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0458",
@@ -16712,7 +16712,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":271,"display":{"bar":{"k":3,"w":813,"kind":"unitOf"},"promptText":"Partition 813 into 3 identical units. Exactly what is one unit?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":271,"display":{"bar":{"k":3,"w":813,"kind":"unitOf"},"promptText":"Split 813 into 3 equal parts. How big is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0460",
@@ -16732,7 +16732,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":161,"display":{"bar":{"k":5,"w":805,"kind":"unitOf"},"promptText":"Partition 805 into 5 identical units. Exactly what is one unit?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":161,"display":{"bar":{"k":5,"w":805,"kind":"unitOf"},"promptText":"Split 805 into 5 equal parts. How big is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0462",
@@ -16752,7 +16752,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":333,"display":{"bar":{"k":3,"w":999,"kind":"unitOf"},"promptText":"Partition 999 into 3 identical units. Exactly what is one unit?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":333,"display":{"bar":{"k":3,"w":999,"kind":"unitOf"},"promptText":"Split 999 into 3 equal parts. How big is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0464",
@@ -16772,7 +16772,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":131,"display":{"bar":{"k":5,"w":655,"kind":"unitOf"},"promptText":"Partition 655 into 5 identical units. Exactly what is one unit?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":131,"display":{"bar":{"k":5,"w":655,"kind":"unitOf"},"promptText":"Split 655 into 5 equal parts. How big is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0466",
@@ -16792,7 +16792,7 @@ export const ITEMS = [
     structureType: "unitOf_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"bar":{"k":7,"w":637,"kind":"unitOf"},"promptText":"Partition 637 into 7 identical units. Exactly what is one unit?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":91,"display":{"bar":{"k":7,"w":637,"kind":"unitOf"},"promptText":"Split 637 into 7 equal parts. How big is one part?"},"answerType":"numberPad"},
   },
   {
     itemId: "barModels-proc-b0821-0468",

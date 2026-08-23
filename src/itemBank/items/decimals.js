@@ -13812,7 +13812,7 @@ export const ITEMS = [
     structureType: "countUnits_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":29,"display":{"dec":{"h":9,"t":2,"kind":"asHundredths"},"promptText":"The decimal 0.29 decomposes into how many hundredths?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":29,"display":{"dec":{"h":9,"t":2,"kind":"asHundredths"},"promptText":"How many hundredths make 0.29?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0146",
@@ -13832,7 +13832,7 @@ export const ITEMS = [
     structureType: "countUnits_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":43,"display":{"dec":{"h":3,"t":4,"kind":"asHundredths"},"promptText":"The decimal 0.43 decomposes into how many hundredths?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":43,"display":{"dec":{"h":3,"t":4,"kind":"asHundredths"},"promptText":"How many hundredths make 0.43?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0148",
@@ -13852,7 +13852,7 @@ export const ITEMS = [
     structureType: "countUnits_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":67,"display":{"dec":{"h":7,"t":6,"kind":"asHundredths"},"promptText":"The decimal 0.67 decomposes into how many hundredths?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":67,"display":{"dec":{"h":7,"t":6,"kind":"asHundredths"},"promptText":"How many hundredths make 0.67?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0150",
@@ -13872,7 +13872,7 @@ export const ITEMS = [
     structureType: "countUnits_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":81,"display":{"dec":{"h":1,"t":8,"kind":"asHundredths"},"promptText":"The decimal 0.81 decomposes into how many hundredths?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":81,"display":{"dec":{"h":1,"t":8,"kind":"asHundredths"},"promptText":"How many hundredths make 0.81?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0152",
@@ -13892,7 +13892,7 @@ export const ITEMS = [
     structureType: "countUnits_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":24,"display":{"dec":{"h":4,"t":2,"kind":"asHundredths"},"promptText":"The decimal 0.24 decomposes into how many hundredths?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":24,"display":{"dec":{"h":4,"t":2,"kind":"asHundredths"},"promptText":"How many hundredths make 0.24?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0154",
@@ -13912,7 +13912,7 @@ export const ITEMS = [
     structureType: "countUnits_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"dec","answer":68,"display":{"dec":{"h":8,"t":6,"kind":"asHundredths"},"promptText":"The decimal 0.68 decomposes into how many hundredths?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"dec","answer":68,"display":{"dec":{"h":8,"t":6,"kind":"asHundredths"},"promptText":"How many hundredths make 0.68?"},"answerType":"numberPad"},
   },
   {
     itemId: "decimals-proc-b0821-0156",

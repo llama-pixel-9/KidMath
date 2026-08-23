@@ -5992,7 +5992,7 @@ export const ITEMS = [
     structureType: "putTogetherAddendUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":null,"op":"+","answer":7,"display":{"promptText":"Decompose 17 as 10 plus another number: 10 + ? = 17"}},
+    question: {"a":10,"b":null,"op":"+","answer":7,"display":{"promptText":"Split 17 into 10 and another number: 10 + ? = 17"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-002",
@@ -6022,7 +6022,7 @@ export const ITEMS = [
     structureType: "putTogetherAddendUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":null,"op":"+","answer":9,"display":{"promptText":"Decompose 20 as 11 and another part: 11 + ? = 20"}},
+    question: {"a":11,"b":null,"op":"+","answer":9,"display":{"promptText":"Split 20 into 11 and another part: 11 + ? = 20"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-005",
@@ -6032,7 +6032,7 @@ export const ITEMS = [
     structureType: "putTogetherAddendUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":null,"op":"+","answer":5,"display":{"promptText":"Decompose 18 as 13 and another part: 13 + ? = 18"}},
+    question: {"a":13,"b":null,"op":"+","answer":5,"display":{"promptText":"Split 18 into 13 and another part: 13 + ? = 18"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-006",
@@ -6042,7 +6042,7 @@ export const ITEMS = [
     structureType: "putTogetherAddendUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":null,"op":"+","answer":6,"display":{"promptText":"Decompose 20 as 14 and another part: 14 + ? = 20"}},
+    question: {"a":14,"b":null,"op":"+","answer":6,"display":{"promptText":"Split 20 into 14 and another part: 14 + ? = 20"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-007",
@@ -6052,7 +6052,7 @@ export const ITEMS = [
     structureType: "putTogetherAddendUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":null,"op":"+","answer":4,"display":{"promptText":"Decompose 20 as 16 and another part: 16 + ? = 20"}},
+    question: {"a":16,"b":null,"op":"+","answer":4,"display":{"promptText":"Split 20 into 16 and another part: 16 + ? = 20"}},
   },
   {
     itemId: "addition-conc-composeDecompose-23-008",
@@ -6472,7 +6472,7 @@ export const ITEMS = [
     structureType: "putTogetherAddendUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":60,"b":null,"op":"+","answer":40,"display":{"promptText":"Decompose 100 as 60 plus another number: 60 + ? = 100"}},
+    question: {"a":60,"b":null,"op":"+","answer":40,"display":{"promptText":"Split 100 into 60 and another number: 60 + ? = 100"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-002",
@@ -6492,7 +6492,7 @@ export const ITEMS = [
     structureType: "putTogetherAddendUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":30,"b":null,"op":"+","answer":20,"display":{"promptText":"Decompose 50 as 30 plus another part: 30 + ? = 50"}},
+    question: {"a":30,"b":null,"op":"+","answer":20,"display":{"promptText":"Split 50 into 30 and another part: 30 + ? = 50"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-004",
@@ -6502,7 +6502,7 @@ export const ITEMS = [
     structureType: "putTogetherAddendUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":150,"b":null,"op":"+","answer":50,"display":{"promptText":"Decompose 200 as 150 and another part. What is the other part?"}},
+    question: {"a":150,"b":null,"op":"+","answer":50,"display":{"promptText":"Split 200 into 150 and another part. What is the other part?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-005",
@@ -6512,7 +6512,7 @@ export const ITEMS = [
     structureType: "putTogetherAddendUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":225,"b":null,"op":"+","answer":75,"display":{"promptText":"Decompose 300 as 225 and another part. What is the other part?"}},
+    question: {"a":225,"b":null,"op":"+","answer":75,"display":{"promptText":"Split 300 into 225 and another part. What is the other part?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-006",
@@ -6522,7 +6522,7 @@ export const ITEMS = [
     structureType: "putTogetherAddendUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":340,"b":null,"op":"+","answer":60,"display":{"promptText":"Decompose 400 as 340 and another part. What is the other part?"}},
+    question: {"a":340,"b":null,"op":"+","answer":60,"display":{"promptText":"Split 400 into 340 and another part. What is the other part?"}},
   },
   {
     itemId: "addition-conc-composeDecompose-45-007",
@@ -6962,7 +6962,7 @@ export const ITEMS = [
     structureType: "partPartWhole",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":null,"op":"+","answer":3,"display":{"promptText":"Decompose 7 into two parts: ? + 4 = 7"}},
+    question: {"a":4,"b":null,"op":"+","answer":3,"display":{"promptText":"Split 7 into two parts: ? + 4 = 7"}},
   },
   {
     itemId: "addition-conc-composeDecompose-K1-003",
@@ -7612,7 +7612,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":9,"op":"+","answer":17,"display":{"promptText":"Commutative property: if 9 + 8 = 17, what is 8 + 9?"}},
+    question: {"a":8,"b":9,"op":"+","answer":17,"display":{"promptText":"If 9 + 8 = 17, what is 8 + 9?"}},
   },
   {
     itemId: "addition-conc-makeTen-23-021",
@@ -8092,7 +8092,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":35,"b":65,"op":"+","answer":100,"display":{"promptText":"Commutative property: if 65 + 35 = 100, what is 35 + 65?"}},
+    question: {"a":35,"b":65,"op":"+","answer":100,"display":{"promptText":"If 65 + 35 = 100, what is 35 + 65?"}},
   },
   {
     itemId: "addition-conc-makeTen-45-021",
@@ -8462,7 +8462,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":null,"op":"+","answer":3,"display":{"promptText":"Decompose 10 as 7 and another number. What is the other number?"}},
+    question: {"a":7,"b":null,"op":"+","answer":3,"display":{"promptText":"Split 10 into 7 and another number. What is the other number?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-012",
@@ -8522,7 +8522,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":0,"op":"+","answer":9,"display":{"promptText":"Identity: adding zero leaves a number unchanged. What is 9 + 0?"}},
+    question: {"a":9,"b":0,"op":"+","answer":9,"display":{"promptText":"Adding zero keeps a number the same. What is 9 + 0?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-018",
@@ -8532,7 +8532,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":7,"op":"+","answer":10,"display":{"promptText":"Commutative property: if 3 + 7 equals 10, what does 7 + 3 equal?"}},
+    question: {"a":3,"b":7,"op":"+","answer":10,"display":{"promptText":"If 3 + 7 equals 10, what is 7 + 3?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-019",
@@ -8582,7 +8582,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":0,"op":"+","answer":7,"display":{"promptText":"Identity: 7 + 0 equals?"}},
+    question: {"a":7,"b":0,"op":"+","answer":7,"display":{"promptText":"What is 7 + 0?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-024",
@@ -8592,7 +8592,7 @@ export const ITEMS = [
     structureType: "joinResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":0,"b":6,"op":"+","answer":6,"display":{"promptText":"Identity: 0 + 6 equals?"}},
+    question: {"a":0,"b":6,"op":"+","answer":6,"display":{"promptText":"What is 0 + 6?"}},
   },
   {
     itemId: "addition-conc-makeTen-K1-025",

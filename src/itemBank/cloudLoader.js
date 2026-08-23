@@ -91,3 +91,16 @@ export function refreshBankFromCloud({ force = false } = {}) {
   });
   return pendingRefresh;
 }
+
+/** One row by id, any review status (reviewers pin drafts). Null if absent,
+ * invalid, or Supabase is not configured. */
+export async function fetchBankItemById(itemId) {
+  if (!supabase || !itemId) return null;
+  const { data, error } = await supabase
+    .from("item_bank")
+    .select(APPROVED_SELECT_FIELDS)
+    .eq("item_id", itemId)
+    .maybeSingle();
+  if (error || !data) return null;
+  return normalizeBankRow(data);
+}

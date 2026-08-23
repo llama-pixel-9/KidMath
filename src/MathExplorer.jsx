@@ -953,14 +953,20 @@ export default function MathExplorer({ initialMode }) {
       const passed = (sess.firstTryCorrect ?? 0) >= FLEDGING_PASS;
       recordFledgingResult(mode, passed);
       const newLevel = passed ? Math.min(sess.level + 1, 10) : sess.level;
-      await saveProgress(mode, {
-        level: newLevel,
-        mistakeBank: sess.mistakeBank,
-        firstTryCorrect: sess.firstTryCorrect,
-        starsEarned: 0,
-        bankItemStats: sess.bankItemStats || {},
-        recentBankItemIds: sess.recentBankItemIds || [],
-      });
+      // The practice log must not depend on the progress save: a rejected
+      // progress row (RLS/constraint/network) used to drop the session record too.
+      try {
+        await saveProgress(mode, {
+          level: newLevel,
+          mistakeBank: sess.mistakeBank,
+          firstTryCorrect: sess.firstTryCorrect,
+          starsEarned: 0,
+          bankItemStats: sess.bankItemStats || {},
+          recentBankItemIds: sess.recentBankItemIds || [],
+        });
+      } catch (err) {
+        console.warn("progress save failed", err);
+      }
       saveSessionRecord(closeSessionRecord(sessionRecordRef.current, sess, { starsEarned: 0, levelEnd: newLevel })).catch(
         (err) => console.warn("practice log save failed", err)
       );
@@ -988,13 +994,20 @@ export default function MathExplorer({ initialMode }) {
         })
       : null;
     const levelAfter = fledgeOutcome?.glideDown ? Math.max(1, sess.level - 1) : sess.level;
-    const lt = await persistSession(
-      mode,
-      sess,
-      payout ? payout.total : undefined,
-      fledgeOutcome?.glideDown ? levelAfter : undefined
-    );
-    setLifetimeStars(lt);
+    // Save the practice log regardless of whether the progress save succeeds —
+    // a rejected progress row must not erase the session from the parent report.
+    let lt = null;
+    try {
+      lt = await persistSession(
+        mode,
+        sess,
+        payout ? payout.total : undefined,
+        fledgeOutcome?.glideDown ? levelAfter : undefined
+      );
+    } catch (err) {
+      console.warn("progress save failed", err);
+    }
+    if (lt !== null) setLifetimeStars(lt);
     setFlightPayout(payout);
     saveSessionRecord(closeSessionRecord(sessionRecordRef.current, sess, { starsEarned, levelEnd: levelAfter })).catch(
       (err) => console.warn("practice log save failed", err)

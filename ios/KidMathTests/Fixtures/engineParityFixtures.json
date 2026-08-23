@@ -396,6 +396,60 @@
       "level": 7,
       "seed": 58025,
       "expectedJSON": "{\"op\":\"shape\",\"answer\":[\"parallelogram\"],\"answerType\":\"multiSelect\",\"level\":7,\"display\":{\"options\":[\"trapezoid\",\"square\",\"parallelogram\",\"octagon\",\"rhombus\"],\"promptText\":\"Select every shape that has no lines of symmetry.\"},\"metadata\":{\"modeId\":\"linesShapes\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"G\",\"cluster\":\"Classify two-dimensional figures; lines and symmetry\",\"subskill\":\"shapeProperties\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK3\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP3\",\"MP6\",\"MP7\"],\"standardRefs\":[\"2.G\",\"3.G\",\"4.G\"],\"misconceptionTags\":[\"prototypeOnly\",\"sideVertexSwap\"],\"blueprintId\":\"linesShapes-conceptual-sortByAttribute\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"sortByAttribute\"},\"mode\":\"linesShapes\",\"itemKey\":\"linesShapes::shape::::::[\\\"parallelogram\\\"]::shapeProperties::linesShapes-conceptual-sortByAttribute::|Select every shape that has no lines of symmetry.|||\"}"
+    },
+    {
+      "mode": "fractionOps",
+      "level": 1,
+      "seed": 10520,
+      "expectedJSON": "{\"op\":\"fracops\",\"answer\":\"3/4\",\"answerType\":\"fraction\",\"level\":1,\"display\":{\"promptText\":\"Leo paints 2/4 of a banner, then 1/4 more of the banner. What fraction of the banner is painted?\"},\"metadata\":{\"modeId\":\"fractionOps\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"NF\",\"cluster\":\"Use equivalent fractions to add, subtract, multiply and divide fractions\",\"subskill\":\"addSubUnlike\",\"itemFamily\":\"application\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP1\",\"MP2\",\"MP7\"],\"standardRefs\":[\"5.NF\"],\"misconceptionTags\":[\"addsDenominators\"],\"blueprintId\":\"fractionOps-application-likeAddStory\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"likeAddStory\"},\"mode\":\"fractionOps\",\"itemKey\":\"fractionOps::fracops::::::3/4::addSubUnlike::fractionOps-application-likeAddStory::|Leo paints 2/4 of a banner, then 1/4 more of the banner. What fraction of the banner is painted?|||\"}"
+    },
+    {
+      "mode": "fractionOps",
+      "level": 4,
+      "seed": 34277,
+      "expectedJSON": "{\"op\":\"fracops\",\"answer\":2,\"answerType\":\"numberPad\",\"level\":4,\"display\":{\"promptText\":\"June has 6 crackers and eats 1/3 of them. How many crackers does June eat?\"},\"metadata\":{\"modeId\":\"fractionOps\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"NF\",\"cluster\":\"Use equivalent fractions to add, subtract, multiply and divide fractions\",\"subskill\":\"fractionOfWhole\",\"itemFamily\":\"application\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP1\",\"MP2\",\"MP7\"],\"standardRefs\":[\"5.NF\"],\"misconceptionTags\":[\"multipliesByDenominator\"],\"blueprintId\":\"fractionOps-application-shareStoryEntry\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"shareStoryEntry\"},\"mode\":\"fractionOps\",\"itemKey\":\"fractionOps::fracops::::::2::fractionOfWhole::fractionOps-application-shareStoryEntry::|June has 6 crackers and eats 1/3 of them. How many crackers does June eat?|||\"}"
+    },
+    {
+      "mode": "fractionOps",
+      "level": 7,
+      "seed": 58034,
+      "expectedJSON": "{\"op\":\"fracops\",\"answer\":\"1/30\",\"answerType\":\"fraction\",\"level\":7,\"display\":{\"promptText\":\"1/5 ÷ 6 = ?\"},\"metadata\":{\"modeId\":\"fractionOps\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"NF\",\"cluster\":\"Use equivalent fractions to add, subtract, multiply and divide fractions\",\"subskill\":\"divideUnitFractions\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP1\",\"MP2\",\"MP7\"],\"standardRefs\":[\"5.NF\"],\"misconceptionTags\":[\"dividesTheWrongWay\"],\"blueprintId\":\"fractionOps-procedural-unitFractionDivide\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"unitFractionDivide\"},\"mode\":\"fractionOps\",\"itemKey\":\"fractionOps::fracops::::::1/30::divideUnitFractions::fractionOps-procedural-unitFractionDivide::|1/5 ÷ 6 = ?|||\"}"
+    },
+    {
+      "mode": "decimalOps",
+      "level": 1,
+      "seed": 10254,
+      "expectedJSON": "{\"op\":\"decops\",\"answer\":\"tenths\",\"answerType\":\"choice\",\"level\":1,\"display\":{\"promptText\":\"A whole cut into 10 parts — 0.2 counts 2 of them. Which parts are they?\"},\"choices\":[\"tenths\",\"ones\",\"hundredths\"],\"metadata\":{\"modeId\":\"decimalOps\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"NBT\",\"cluster\":\"Perform operations with decimals to hundredths\",\"subskill\":\"thousandthsSense\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP6\",\"MP7\"],\"standardRefs\":[\"5.NBT\"],\"misconceptionTags\":[\"placeValueSlip\"],\"blueprintId\":\"decimalOps-conceptual-tenthsMeaningPick\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"tenthsMeaningPick\"},\"mode\":\"decimalOps\",\"itemKey\":\"decimalOps::decops::::::tenths::thousandthsSense::decimalOps-conceptual-tenthsMeaningPick::|A whole cut into 10 parts — 0.2 counts 2 of them. Which parts are they?|||\"}"
+    },
+    {
+      "mode": "decimalOps",
+      "level": 4,
+      "seed": 34011,
+      "expectedJSON": "{\"op\":\"decops\",\"answer\":\"0.45\",\"answerType\":\"choice\",\"level\":4,\"display\":{\"promptText\":\"0.19 plus 0.26 comes to which amount?\"},\"choices\":[\"0.45\",\"4.50\",\"2.79\",\"0.01\"],\"metadata\":{\"modeId\":\"decimalOps\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"NBT\",\"cluster\":\"Perform operations with decimals to hundredths\",\"subskill\":\"addSubDecimals\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP6\",\"MP7\"],\"standardRefs\":[\"5.NBT\"],\"misconceptionTags\":[\"misalignsPlaces\"],\"blueprintId\":\"decimalOps-conceptual-alignPlacesPick\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"alignPlacesPick\"},\"mode\":\"decimalOps\",\"itemKey\":\"decimalOps::decops::::::0.45::addSubDecimals::decimalOps-conceptual-alignPlacesPick::|0.19 plus 0.26 comes to which amount?|||\"}"
+    },
+    {
+      "mode": "decimalOps",
+      "level": 7,
+      "seed": 57768,
+      "expectedJSON": "{\"op\":\"decops\",\"answer\":\"4.08\",\"answerType\":\"decimal\",\"level\":7,\"display\":{\"promptText\":\"Leo measures 1.45 liters and then 2.63 liters more. How many liters is that in all?\"},\"metadata\":{\"modeId\":\"decimalOps\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"NBT\",\"cluster\":\"Perform operations with decimals to hundredths\",\"subskill\":\"addSubDecimals\",\"itemFamily\":\"application\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP2\",\"MP6\",\"MP7\"],\"standardRefs\":[\"5.NBT\"],\"misconceptionTags\":[\"misalignsPlaces\"],\"blueprintId\":\"decimalOps-application-measureStoryHundredths\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"measureStoryHundredths\"},\"mode\":\"decimalOps\",\"itemKey\":\"decimalOps::decops::::::4.08::addSubDecimals::decimalOps-application-measureStoryHundredths::|Leo measures 1.45 liters and then 2.63 liters more. How many liters is that in all?|||\"}"
+    },
+    {
+      "mode": "volumeCoordinates",
+      "level": 1,
+      "seed": 11957,
+      "expectedJSON": "{\"op\":\"volume\",\"answer\":5,\"answerType\":\"numberPad\",\"level\":1,\"display\":{\"figure\":\"coordGrid\",\"coord\":{\"max\":6,\"points\":[{\"x\":5,\"y\":5,\"label\":\"A\"}]},\"promptText\":\"Find point A. What number is its x-coordinate?\"},\"metadata\":{\"modeId\":\"volumeCoordinates\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"MD\",\"cluster\":\"Geometric measurement: volume; graph points on the coordinate plane\",\"subskill\":\"plotAndRead\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"visual\",\"mathPractices\":[\"MP2\",\"MP4\",\"MP7\"],\"standardRefs\":[\"5.MD\",\"5.G\"],\"misconceptionTags\":[\"swapsXandY\"],\"blueprintId\":\"volumeCoordinates-procedural-readPointCoordinate\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"readPointCoordinate\"},\"mode\":\"volumeCoordinates\",\"itemKey\":\"volumeCoordinates::volume::::::5::plotAndRead::volumeCoordinates-procedural-readPointCoordinate::|Find point A. What number is its x-coordinate?|||\"}"
+    },
+    {
+      "mode": "volumeCoordinates",
+      "level": 4,
+      "seed": 35714,
+      "expectedJSON": "{\"op\":\"volume\",\"answer\":24,\"answerType\":\"numberPad\",\"level\":4,\"display\":{\"promptText\":\"A storage bin measures 3 by 4 by 2 units. How many cubic units of space is that?\"},\"distractorContext\":{\"a\":12,\"b\":2},\"metadata\":{\"modeId\":\"volumeCoordinates\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"MD\",\"cluster\":\"Geometric measurement: volume; graph points on the coordinate plane\",\"subskill\":\"volumeFormula\",\"itemFamily\":\"application\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP2\",\"MP4\",\"MP7\"],\"standardRefs\":[\"5.MD\",\"5.G\"],\"misconceptionTags\":[\"addsDimensions\"],\"blueprintId\":\"volumeCoordinates-application-aquariumStory\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"aquariumStory\"},\"mode\":\"volumeCoordinates\",\"itemKey\":\"volumeCoordinates::volume::::::24::volumeFormula::volumeCoordinates-application-aquariumStory::|A storage bin measures 3 by 4 by 2 units. How many cubic units of space is that?|||\"}"
+    },
+    {
+      "mode": "volumeCoordinates",
+      "level": 7,
+      "seed": 59471,
+      "expectedJSON": "{\"op\":\"volume\",\"answer\":60,\"answerType\":\"numberPad\",\"level\":7,\"display\":{\"promptText\":\"June packs a storage bin that is 6 × 2 × 5 units. How many unit cubes fit inside?\"},\"distractorContext\":{\"a\":12,\"b\":5},\"metadata\":{\"modeId\":\"volumeCoordinates\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"MD\",\"cluster\":\"Geometric measurement: volume; graph points on the coordinate plane\",\"subskill\":\"volumeFormula\",\"itemFamily\":\"application\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP2\",\"MP4\",\"MP7\"],\"standardRefs\":[\"5.MD\",\"5.G\"],\"misconceptionTags\":[\"addsDimensions\"],\"blueprintId\":\"volumeCoordinates-application-aquariumStory\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"aquariumStory\"},\"mode\":\"volumeCoordinates\",\"itemKey\":\"volumeCoordinates::volume::::::60::volumeFormula::volumeCoordinates-application-aquariumStory::|June packs a storage bin that is 6 × 2 × 5 units. How many unit cubes fit inside?|||\"}"
     }
   ]
 }

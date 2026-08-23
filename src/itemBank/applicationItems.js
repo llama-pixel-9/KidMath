@@ -13,9 +13,11 @@ import { ITEMS as barModelsItems } from "./items/barModels.js";
 import { ITEMS as comparingItems } from "./items/comparing.js";
 import { ITEMS as countingItems } from "./items/counting.js";
 import { ITEMS as dataGraphsItems } from "./items/dataGraphs.js";
+import { ITEMS as decimalOpsItems } from "./items/decimalOps.js";
 import { ITEMS as decimalsItems } from "./items/decimals.js";
 import { ITEMS as divisionItems } from "./items/division.js";
 import { ITEMS as factorsMultiplesItems } from "./items/factorsMultiples.js";
+import { ITEMS as fractionOpsItems } from "./items/fractionOps.js";
 import { ITEMS as fractionsItems } from "./items/fractions.js";
 import { ITEMS as linesShapesItems } from "./items/linesShapes.js";
 import { ITEMS as measurementItems } from "./items/measurement.js";
@@ -28,6 +30,7 @@ import { ITEMS as placeValueDiscsItems } from "./items/placeValueDiscs.js";
 import { ITEMS as skipCountingItems } from "./items/skipCounting.js";
 import { ITEMS as subtractionItems } from "./items/subtraction.js";
 import { ITEMS as timeItems } from "./items/time.js";
+import { ITEMS as volumeCoordinatesItems } from "./items/volumeCoordinates.js";
 
 export const APPLICATION_ITEM_BANK = [
   ...additionItems,
@@ -37,9 +40,11 @@ export const APPLICATION_ITEM_BANK = [
   ...comparingItems,
   ...countingItems,
   ...dataGraphsItems,
+  ...decimalOpsItems,
   ...decimalsItems,
   ...divisionItems,
   ...factorsMultiplesItems,
+  ...fractionOpsItems,
   ...fractionsItems,
   ...linesShapesItems,
   ...measurementItems,
@@ -52,4 +57,5 @@ export const APPLICATION_ITEM_BANK = [
   ...skipCountingItems,
   ...subtractionItems,
   ...timeItems,
+  ...volumeCoordinatesItems,
 ];

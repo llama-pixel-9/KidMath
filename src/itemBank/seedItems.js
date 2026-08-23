@@ -14701,6 +14701,1724 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "decimalOps-app-b0824-0001",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "addSubDecimals",
+  "structureType": "receiptStoryTenths",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "1.4",
+   "display": {
+    "promptText": "A jug holds 0.9 liters and a bottle holds 0.5 liters. How many liters do they hold together?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0053",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "thousandthsSense",
+  "structureType": "decimalLabelJudged",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Finn measures 3 and 9 tenths kilometers and writes down 3.9. Do you agree?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0014",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "addSubDecimals",
+  "structureType": "receiptStoryTenths",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "1.0",
+   "display": {
+    "promptText": "Nora walks 0.4 of a kilometer and then 0.6 of a kilometer. How many kilometers does Nora walk?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0066",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "thousandthsSense",
+  "structureType": "decimalLabelJudged",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "The hike is 3 kilometers plus 6 tenths more. Nora records 3.6. Is Nora right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0027",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "addSubDecimals",
+  "structureType": "receiptStoryTenths",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "1.5",
+   "display": {
+    "promptText": "Rosa walks 0.7 of a kilometer and then 0.8 of a kilometer. How many kilometers does Rosa walk?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0079",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "thousandthsSense",
+  "structureType": "decimalLabelJudged",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "June measures 8 and 3 tenths liters and writes down 8.3. Do you agree?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0040",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "addSubDecimals",
+  "structureType": "receiptStoryTenths",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "0.6",
+   "display": {
+    "promptText": "Nia uses 0.5 meters of tape and 0.1 meters more. How many meters of tape is that?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0092",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "thousandthsSense",
+  "structureType": "decimalLabelJudged",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Nora measures 5 and 6 tenths liters and writes down 5.6. Do you agree?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0105",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "addSubDecimals",
+  "structureType": "measureStoryHundredths",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "0.41",
+   "display": {
+    "promptText": "A walking trail held 1.05 kilometers. Nia used 0.64 kilometers. How many kilometers are left?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0157",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "powersOfTen",
+  "structureType": "scaleStory",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "35",
+   "display": {
+    "promptText": "Priya zooms a 0.35-meter drawing to 100 times its size. How many meters wide is the zoomed drawing?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0209",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "thousandthsSense",
+  "structureType": "decimalLabelJudged",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Luca's bottle measures 3 and 4 tenths liters. Luca writes it as 3.4. Is that right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0122",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "addSubDecimals",
+  "structureType": "receiptStoryTenths",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "1.25",
+   "display": {
+    "promptText": "Diego spends $0.70 on stickers and $0.55 on a pencil. What is the total in dollars?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0174",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "powersOfTen",
+  "structureType": "scaleStory",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "39",
+   "display": {
+    "promptText": "Theo's model bridge is 0.39 meters long. The real bridge is 100 times longer. How many meters long is the real bridge?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0226",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "thousandthsSense",
+  "structureType": "decimalLabelJudged",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "The jump is 1 meters plus 7 tenths more. Maya records 7.1. Is Maya right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0139",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "addSubDecimals",
+  "structureType": "measureStoryHundredths",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "4.39",
+   "display": {
+    "promptText": "Kai measures 1.56 kilograms and then 2.83 kilograms more. How many kilograms is that in all?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0191",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "powersOfTen",
+  "structureType": "scaleStory",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "23",
+   "display": {
+    "promptText": "Finn's model bridge is 0.23 meters long. The real bridge is 100 times longer. How many meters long is the real bridge?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0261",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "addSubDecimals",
+  "structureType": "measureStoryHundredths",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "4.78",
+   "display": {
+    "promptText": "Diego measures 3.62 liters and then 1.16 liters more. How many liters is that in all?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0313",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "powersOfTen",
+  "structureType": "scaleStory",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "49",
+   "display": {
+    "promptText": "One lap is 0.49 kilometers. Omar plans 100 laps. How many kilometers is the plan?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0365",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "multiplyDivideDecimals",
+  "structureType": "moneyStoryTwoStep",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "1.63",
+   "display": {
+    "promptText": "June buys 3 notebooks at $2.79 each and pays with $10.00. How many dollars of change does June get?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0278",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "addSubDecimals",
+  "structureType": "measureStoryHundredths",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "2.55",
+   "display": {
+    "promptText": "A juice bottle held 4.01 liters. Kai used 1.46 liters. How many liters are left?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0330",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "powersOfTen",
+  "structureType": "scaleStory",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "88",
+   "display": {
+    "promptText": "Ben's model bridge is 0.88 meters long. The real bridge is 100 times longer. How many meters long is the real bridge?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0382",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "multiplyDivideDecimals",
+  "structureType": "moneyStoryTwoStep",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "1.36",
+   "display": {
+    "promptText": "Leo orders 3 smoothies at $2.88 apiece, paying with $10.00. How many dollars come back as change?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0295",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "addSubDecimals",
+  "structureType": "measureStoryHundredths",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "3.75",
+   "display": {
+    "promptText": "Zoe measures 2.84 meters and then 0.91 meters more. How many meters is that in all?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-app-b0824-0347",
+  "modeId": "decimalOps",
+  "itemFamily": "application",
+  "subskill": "powersOfTen",
+  "structureType": "scaleStory",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "1.1",
+   "display": {
+    "promptText": "Ben's model bridge is 0.11 meters long. The real bridge is 10 times longer. How many meters long is the real bridge?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0001",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "addSubDecimals",
+  "structureType": "wholePlusTenthsPick",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "6.5",
+   "choices": [
+    "11",
+    "6.5",
+    "6.55",
+    "5.6"
+   ],
+   "display": {
+    "promptText": "6 wholes and 5 tenths make which number?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0053",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "thousandthsSense",
+  "structureType": "tenthsMeaningPick",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "tenths",
+   "choices": [
+    "tenths",
+    "hundredths",
+    "ones"
+   ],
+   "display": {
+    "promptText": "A whole cut into 10 parts — 0.3 counts 3 of them. Which parts are they?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0014",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "addSubDecimals",
+  "structureType": "tenthsJudged",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Luca works out 0.4 + 0.9 = 1.4. Do you agree?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0066",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "thousandthsSense",
+  "structureType": "tenthsMeaningPick",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "tenths",
+   "choices": [
+    "hundredths",
+    "tenths",
+    "ones"
+   ],
+   "display": {
+    "promptText": "Reading 0.1: the 1 tells how many of which piece?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0027",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "addSubDecimals",
+  "structureType": "tenthsJudged",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Maya says 0.4 + 0.3 = 0.7. Is that right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0079",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "thousandthsSense",
+  "structureType": "tenthsMeaningPick",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "tenths",
+   "choices": [
+    "ones",
+    "hundredths",
+    "tenths"
+   ],
+   "display": {
+    "promptText": "0.8 is 8 of which equal part of one whole?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0040",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "addSubDecimals",
+  "structureType": "tenthsJudged",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Theo adds 0.7 and 0.2 and writes 1.0. Is Theo right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0092",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "thousandthsSense",
+  "structureType": "tenthsMeaningPick",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "tenths",
+   "choices": [
+    "tenths",
+    "hundredths",
+    "ones"
+   ],
+   "display": {
+    "promptText": "The number 0.1 counts 1 of what kind of part?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0105",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "addSubDecimals",
+  "structureType": "alignPlacesPick",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "1.15",
+   "choices": [
+    "11.50",
+    "0.25",
+    "6.28",
+    "1.15"
+   ],
+   "display": {
+    "promptText": "Add 0.58 and 0.57. Which total is right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0157",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "powersOfTen",
+  "structureType": "shiftDirectionJudged",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Ben says 1.2 × 10 gives a bigger number. Is that right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0209",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "thousandthsSense",
+  "structureType": "placeWorthJudged",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Amara says the 4 in 0.43 is worth more than the other digit. Is that right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0122",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "addSubDecimals",
+  "structureType": "alignPlacesPick",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "0.98",
+   "choices": [
+    "6.20",
+    "0.98",
+    "0.08",
+    "9.80"
+   ],
+   "display": {
+    "promptText": "Line up the places: 0.40 + 0.58 equals which of these?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0174",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "powersOfTen",
+  "structureType": "shiftDirectionJudged",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Maya says 2.7 ÷ 10 gives a smaller number. Is that right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0226",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "thousandthsSense",
+  "structureType": "placeWorthJudged",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "In 0.73, Leo claims the digit 7 carries the bigger value. Do you agree?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0139",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "addSubDecimals",
+  "structureType": "alignPlacesPick",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "1.70",
+   "choices": [
+    "0.80",
+    "1.70",
+    "10.34",
+    "17.00"
+   ],
+   "display": {
+    "promptText": "0.74 + 0.96 — pick the correct sum."
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0191",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "powersOfTen",
+  "structureType": "shiftDirectionJudged",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Finn says 7 ÷ 10 gives a smaller number. Is that right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0261",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "addSubDecimals",
+  "structureType": "alignPlacesPick",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "1.23",
+   "choices": [
+    "12.30",
+    "0.33",
+    "7.71",
+    "1.23"
+   ],
+   "display": {
+    "promptText": "0.51 plus 0.72 comes to which amount?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0313",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "powersOfTen",
+  "structureType": "shiftDirectionJudged",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Kai says 2 ÷ 10 gives a smaller number. Is that right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0365",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "multiplyDivideDecimals",
+  "structureType": "productPlacementJudged",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Luca multiplies 0.49 by 6 and writes 29.40. Is that right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0278",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "addSubDecimals",
+  "structureType": "sumSizeJudged",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Without working it out fully, Theo claims 3.36 + 3.83 stays under 8. Is Theo right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0330",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "powersOfTen",
+  "structureType": "shiftDirectionJudged",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Maya says 8.9 × 10 gives a smaller number. Is that right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0382",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "multiplyDivideDecimals",
+  "structureType": "productPlacementJudged",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Nia works out 0.11 × 3 = 3.30. Is the decimal point in the right place?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0295",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "addSubDecimals",
+  "structureType": "sumSizeJudged",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Without working it out fully, Zoe claims 2.94 + 3.06 stays under 6. Is Zoe right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-conc-b0824-0347",
+  "modeId": "decimalOps",
+  "itemFamily": "conceptual",
+  "subskill": "powersOfTen",
+  "structureType": "shiftDirectionJudged",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Theo says 5.7 ÷ 10 gives a bigger number. Is that right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0001",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "addSubDecimals",
+  "structureType": "tenthsAdd",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "0.7",
+   "display": {
+    "promptText": "0.3 + 0.4 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0053",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "thousandthsSense",
+  "structureType": "tenthsSequence",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "0.6",
+   "display": {
+    "promptText": "1.5, 1.2, 0.9, ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0017",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "addSubDecimals",
+  "structureType": "tenthsAdd",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "1.0",
+   "display": {
+    "promptText": "0.7 + 0.3 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0075",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "thousandthsSense",
+  "structureType": "tenthsSequence",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "1.0",
+   "display": {
+    "promptText": "0.1, 0.4, 0.7, ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0034",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "addSubDecimals",
+  "structureType": "tenthsMissingAddend",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "0.7",
+   "display": {
+    "promptText": "0.9 + ? = 1.6"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0104",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "thousandthsSense",
+  "structureType": "tenthsSequence",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "1.2",
+   "display": {
+    "promptText": "0.6, 0.8, 1.0, ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0009",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "addSubDecimals",
+  "structureType": "tenthsMissingAddend",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "0.5",
+   "display": {
+    "promptText": "Fill the blank: 0.3 + ? = 0.8."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0080",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "thousandthsSense",
+  "structureType": "tenthsAsDecimal",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "0.9",
+   "display": {
+    "promptText": "Write 9 tenths as a decimal."
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0105",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "addSubDecimals",
+  "structureType": "hundredthsAddSub",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "6.18",
+   "display": {
+    "promptText": "3.29 + 2.89 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0157",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "powersOfTen",
+  "structureType": "powersOfTenShift",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "7.6",
+   "display": {
+    "promptText": "0.76 × 10 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0209",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "thousandthsSense",
+  "structureType": "thousandthsPlace",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": 6,
+   "display": {
+    "promptText": "In 7.166, which digit is in the thousandths place?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0122",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "addSubDecimals",
+  "structureType": "hundredthsAddSub",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "9.88",
+   "display": {
+    "promptText": "1.53 + 8.35 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0174",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "powersOfTen",
+  "structureType": "powersOfTenShift",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "27",
+   "display": {
+    "promptText": "0.27 × 100 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0226",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "thousandthsSense",
+  "structureType": "thousandthsPlace",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": 1,
+   "display": {
+    "promptText": "In 2.116, which digit is in the hundredths place?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0139",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "addSubDecimals",
+  "structureType": "hundredthsAddSub",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "5.42",
+   "display": {
+    "promptText": "4.98 + 0.44 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0191",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "powersOfTen",
+  "structureType": "powersOfTenShift",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "0.004699999999999999",
+   "display": {
+    "promptText": "0.47 ÷ 100 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0261",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "addSubDecimals",
+  "structureType": "hundredthsAddSub",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "0.88",
+   "display": {
+    "promptText": "8.19 − 7.31 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0313",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "powersOfTen",
+  "structureType": "powersOfTenShift",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "0.054000000000000006",
+   "display": {
+    "promptText": "0.54 ÷ 10 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0366",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "multiplyDivideDecimals",
+  "structureType": "decimalTimesWhole",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "0.66",
+   "display": {
+    "promptText": "0.11 × 6 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0278",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "addSubDecimals",
+  "structureType": "hundredthsAddSub",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "10.94",
+   "display": {
+    "promptText": "3.84 + 7.10 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0330",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "powersOfTen",
+  "structureType": "powersOfTenShift",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "17",
+   "display": {
+    "promptText": "0.17 × 100 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0403",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "multiplyDivideDecimals",
+  "structureType": "decimalTimesWhole",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "0.90",
+   "display": {
+    "promptText": "0.30 × 3 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0295",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "addSubDecimals",
+  "structureType": "hundredthsAddSub",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "8.75",
+   "display": {
+    "promptText": "0.82 + 7.93 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
+  "itemId": "decimalOps-proc-b0824-0347",
+  "modeId": "decimalOps",
+  "itemFamily": "procedural",
+  "subskill": "powersOfTen",
+  "structureType": "powersOfTenShift",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "decops",
+   "answer": "0.0053",
+   "display": {
+    "promptText": "0.53 ÷ 100 = ?"
+   },
+   "answerType": "decimal"
+  }
+ },
+ {
   "itemId": "decimals-app-b0821-0001",
   "modeId": "decimals",
   "itemFamily": "application",
@@ -20386,6 +22104,1668 @@ export const SEED_ITEMS = [
     "promptText": "Compute the least common multiple of 12 and 18 exactly."
    },
    "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0001",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "addSubUnlike",
+  "structureType": "likeAddStory",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "3/4",
+   "display": {
+    "promptText": "Amara walks 2/4 of the trail, rests, then walks 1/4 of the trail. What fraction of the trail is done?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0053",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "fractionOfWhole",
+  "structureType": "shareStoryEntry",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 4,
+   "display": {
+    "promptText": "Diego saves 1/3 of 12 dollars. How many dollars does Diego save?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0014",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "addSubUnlike",
+  "structureType": "likeAddStory",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "4/5",
+   "display": {
+    "promptText": "Amara eats 2/5 of a pizza and later 2/5 more of it. What fraction of the pizza has Amara eaten?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0066",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "fractionOfWhole",
+  "structureType": "shareStoryEntry",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 4,
+   "display": {
+    "promptText": "A ribbon recipe uses 16 cups of flour. Nora makes 1/4 of the recipe. How many cups of flour does Nora use?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0027",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "addSubUnlike",
+  "structureType": "likeAddStory",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "2/4",
+   "display": {
+    "promptText": "Rosa eats 1/4 of a pizza and later 1/4 more of it. What fraction of the pizza has Rosa eaten?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0079",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "fractionOfWhole",
+  "structureType": "shareStoryEntry",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 2,
+   "display": {
+    "promptText": "Nora has 6 crackers and eats 1/3 of them. How many crackers does Nora eat?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0040",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "addSubUnlike",
+  "structureType": "likeAddStory",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "3/6",
+   "display": {
+    "promptText": "Nora reads 2/6 of a book on Monday and 1/6 of the book on Tuesday. What fraction of the book is read?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0092",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "fractionOfWhole",
+  "structureType": "shareStoryEntry",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 5,
+   "display": {
+    "promptText": "A water jug recipe uses 15 cups of flour. Maya makes 1/3 of the recipe. How many cups of flour does Maya use?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0105",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "addSubUnlike",
+  "structureType": "ribbonStoryUnlike",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "14/10",
+   "display": {
+    "promptText": "Omar pours 1/2 of a cup of juice and Kai pours 9/10 of a cup. How many cups of juice is that together?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0157",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "multiplyFractions",
+  "structureType": "fractionTimesWholeStory",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 6,
+   "display": {
+    "promptText": "Luca uses 2/4 of a 12-sticker sheet. How many stickers does Luca use?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0209",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "fractionOfWhole",
+  "structureType": "shareStoryEntry",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 3,
+   "display": {
+    "promptText": "Of the 12 pages in Kai's book, 1/4 are read. How many pages are read?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0122",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "addSubUnlike",
+  "structureType": "ribbonStoryUnlike",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "7/8",
+   "display": {
+    "promptText": "A recipe needs 2/4 of a cup of oats plus 3/8 of a cup of raisins. How many cups is that in all?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0174",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "multiplyFractions",
+  "structureType": "fractionTimesWholeStory",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 8,
+   "display": {
+    "promptText": "A team plays 16 games and wins 2/4 of them. How many games does the team win?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0226",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "fractionOfWhole",
+  "structureType": "shareStoryEntry",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 3,
+   "display": {
+    "promptText": "Nia owns 6 marbles and gives away 1/2 of them. How many marbles does Nia give away?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0139",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "addSubUnlike",
+  "structureType": "ribbonStoryUnlike",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "14/12",
+   "display": {
+    "promptText": "Luca paints 2/4 of a fence before lunch and 8/12 of the fence after. What fraction of the fence is painted?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0191",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "multiplyFractions",
+  "structureType": "fractionTimesWholeStory",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 15,
+   "display": {
+    "promptText": "Amara plants seeds in 3/5 of 25 pots. How many pots get seeds?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0261",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "addSubUnlike",
+  "structureType": "ribbonStoryUnlike",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "18/12",
+   "display": {
+    "promptText": "Ben paints 3/4 of a fence before lunch and 9/12 of the fence after. What fraction of the fence is painted?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0313",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "multiplyFractions",
+  "structureType": "brownieStoryMultiply",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "1/8",
+   "display": {
+    "promptText": "A tank is 1/4 full. Nia uses 1/2 of that water. What fraction of a full tank does Nia use?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0365",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "divideUnitFractions",
+  "structureType": "servingStoryDivide",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 12,
+   "display": {
+    "promptText": "A trail is 3 miles long with a marker every 1/4 of a mile. How many 1/4-mile stretches are there?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0278",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "addSubUnlike",
+  "structureType": "ribbonStoryUnlike",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "14/15",
+   "display": {
+    "promptText": "June walks 1/3 of a mile and then 3/5 of a mile more. How many miles does June walk in all?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0330",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "multiplyFractions",
+  "structureType": "brownieStoryMultiply",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "1/6",
+   "display": {
+    "promptText": "A tank is 1/3 full. Leo uses 1/2 of that water. What fraction of a full tank does Leo use?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0382",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "divideUnitFractions",
+  "structureType": "servingStoryDivide",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 15,
+   "display": {
+    "promptText": "June cuts 5 meters of string into 1/3-meter pieces. How many pieces of string result?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0295",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "addSubUnlike",
+  "structureType": "ribbonStoryUnlike",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "3/4",
+   "display": {
+    "promptText": "Finn rides 1/2 of a kilometer, rests, then rides 1/4 of a kilometer. How many kilometers does Finn ride?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-app-b0824-0347",
+  "modeId": "fractionOps",
+  "itemFamily": "application",
+  "subskill": "multiplyFractions",
+  "structureType": "brownieStoryMultiply",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "1/12",
+   "display": {
+    "promptText": "Zoe has 1/3 of a garden bed and plants flowers on 1/4 of it. What fraction of the whole bed has flowers?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0001",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "addSubUnlike",
+  "structureType": "likeAddJudged",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "June claims 4/8 + 2/8 makes 6/8. Do you agree?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0053",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "fractionOfWhole",
+  "structureType": "howManyUnitFractions",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 6,
+   "display": {
+    "promptText": "Diego pours 1/4 of a cup at a time to reach 6/4 of a cup. How many pours is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0014",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "addSubUnlike",
+  "structureType": "compareToOneJudged",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Amara says 5/6 + 1/6 is less than one whole. Is that right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0066",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "fractionOfWhole",
+  "structureType": "howManyUnitFractions",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 2,
+   "display": {
+    "promptText": "Finn snaps together 1/5 blocks to make 2/5. How many blocks does Finn snap?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0027",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "addSubUnlike",
+  "structureType": "likeAddJudged",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "June adds 1/4 and 1/4 and writes 2/4. Is June right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0079",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "fractionOfWhole",
+  "structureType": "howManyUnitFractions",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 4,
+   "display": {
+    "promptText": "Finn pours 1/6 of a cup at a time to reach 4/6 of a cup. How many pours is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0040",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "addSubUnlike",
+  "structureType": "likeAddJudged",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Diego claims 1/6 + 1/6 makes 2/6. Do you agree?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0092",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "fractionOfWhole",
+  "structureType": "howManyUnitFractions",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 4,
+   "display": {
+    "promptText": "Count the 1/4 steps to reach 4/4. How many steps is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0105",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "addSubUnlike",
+  "structureType": "commonDenominatorPick",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 12,
+   "choices": [
+    18,
+    24,
+    12
+   ],
+   "display": {
+    "promptText": "Before Leo can add 1/6 and 1/12, both need which denominator?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0157",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "multiplyFractions",
+  "structureType": "productSizeJudged",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Ben writes 2/5 × 4 and expects an answer bigger than 4. Is that right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0209",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "fractionOfWhole",
+  "structureType": "howManyUnitFractions",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 3,
+   "display": {
+    "promptText": "Priya builds 3/3 out of 1/3 pieces. How many pieces does Priya use?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0122",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "addSubUnlike",
+  "structureType": "commonDenominatorPick",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 6,
+   "choices": [
+    8,
+    12,
+    6
+   ],
+   "display": {
+    "promptText": "Which denominator fits both 1/2 and 1/6 at once?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0174",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "multiplyFractions",
+  "structureType": "productSizeJudged",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Finn writes 4/5 × 6 and expects an answer smaller than 6. Is that right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0226",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "fractionOfWhole",
+  "structureType": "howManyUnitFractions",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 5,
+   "display": {
+    "promptText": "Stack up 1/5 pieces until you have 5/5. How many pieces is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0139",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "addSubUnlike",
+  "structureType": "commonDenominatorPick",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 12,
+   "choices": [
+    16,
+    12,
+    24
+   ],
+   "display": {
+    "promptText": "Before Diego can add 1/4 and 1/12, both need which denominator?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0191",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "multiplyFractions",
+  "structureType": "productSizeJudged",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Leo predicts that multiplying 6 by 2/4 gives a number bigger than 6. Is Leo right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0261",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "addSubUnlike",
+  "structureType": "commonDenominatorPick",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 12,
+   "choices": [
+    24,
+    12,
+    15
+   ],
+   "display": {
+    "promptText": "Amara wants to add 1/3 and 1/12. Which denominator should Amara rename both to?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0313",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "multiplyFractions",
+  "structureType": "productSizeJudged",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Theo looks at 1/2 × 6 and says the product is smaller than 6. Is Theo right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0365",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "divideUnitFractions",
+  "structureType": "divideMeaningJudged",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Luca says 3 ÷ 1/4 asks how many 1/4s fit in 3, so it equals 12. Is Luca right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0278",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "addSubUnlike",
+  "structureType": "commonDenominatorPick",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 4,
+   "choices": [
+    8,
+    6,
+    4
+   ],
+   "display": {
+    "promptText": "Nia is renaming 1/2 and 1/4 to match. Which denominator works for both?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0330",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "multiplyFractions",
+  "structureType": "productSizeJudged",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Without solving, Nora decides 2/4 × 4 must be smaller than 4. Do you agree?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0382",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "divideUnitFractions",
+  "structureType": "divideMeaningJudged",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Diego claims dividing 6 by 1/5 gives 1. Do you agree?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0295",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "addSubUnlike",
+  "structureType": "commonDenominatorPick",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 6,
+   "choices": [
+    12,
+    9,
+    6
+   ],
+   "display": {
+    "promptText": "Kai is renaming 1/3 and 1/6 to match. Which denominator works for both?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "fractionOps-conc-b0824-0347",
+  "modeId": "fractionOps",
+  "itemFamily": "conceptual",
+  "subskill": "multiplyFractions",
+  "structureType": "productSizeJudged",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Leo writes 1/4 × 5 and expects an answer smaller than 5. Is that right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0004",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "addSubUnlike",
+  "structureType": "likeAddPastWhole",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "8/5",
+   "display": {
+    "promptText": "4/5 + 4/5 = ?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0053",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "fractionOfWhole",
+  "structureType": "fractionOfWholeEntry",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 2,
+   "display": {
+    "promptText": "1/3 × 6 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0003",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "addSubUnlike",
+  "structureType": "missingLikeAddend",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 3,
+   "display": {
+    "promptText": "3/8 + ?/8 = 6/8. What is the missing top number?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0104",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "fractionOfWhole",
+  "structureType": "fractionOfWholeEntry",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 12,
+   "display": {
+    "promptText": "4/5 × 15 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0019",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "addSubUnlike",
+  "structureType": "likeAddPastWhole",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "9/8",
+   "display": {
+    "promptText": "Add the parts: 2/8 + 7/8 = ?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0070",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "fractionOfWhole",
+  "structureType": "fractionOfWholeEntry",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 15,
+   "display": {
+    "promptText": "Find 3/4 of 20."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0033",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "addSubUnlike",
+  "structureType": "missingLikeAddend",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 1,
+   "display": {
+    "promptText": "Fill the blank: 2/8 + ?/8 = 3/8."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0087",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "fractionOfWhole",
+  "structureType": "fractionOfWholeEntry",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 8,
+   "display": {
+    "promptText": "What is 4/5 of 10?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0105",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "addSubUnlike",
+  "structureType": "unlikeSubtract",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "1/4",
+   "display": {
+    "promptText": "3/4 − 1/2 = ?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0157",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "multiplyFractions",
+  "structureType": "fractionTimesWhole",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 2,
+   "display": {
+    "promptText": "1/2 × 4 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0209",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "fractionOfWhole",
+  "structureType": "fractionOfWholeEntry",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 12,
+   "display": {
+    "promptText": "3/6 × 24 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0130",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "addSubUnlike",
+  "structureType": "unlikeAdd",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "11/12",
+   "display": {
+    "promptText": "Add: 3/4 + 2/12 = ?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0190",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "multiplyFractions",
+  "structureType": "fractionTimesWhole",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 4,
+   "display": {
+    "promptText": "1/4 × 16 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0253",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "fractionOfWhole",
+  "structureType": "fractionOfWholeEntry",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 5,
+   "display": {
+    "promptText": "1/2 × 10 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0148",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "addSubUnlike",
+  "structureType": "unlikeSubtract",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "6/10",
+   "display": {
+    "promptText": "8/10 − 1/5 = ?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0170",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "multiplyFractions",
+  "structureType": "fractionTimesWhole",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 2,
+   "display": {
+    "promptText": "What is 2/5 of 5?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0261",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "addSubUnlike",
+  "structureType": "unlikeSubtract",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "5/10",
+   "display": {
+    "promptText": "3/5 − 1/10 = ?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0313",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "multiplyFractions",
+  "structureType": "fractionTimesFraction",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "1/10",
+   "display": {
+    "promptText": "1/5 × 1/2 = ?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0368",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "divideUnitFractions",
+  "structureType": "unitFractionDivide",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "1/15",
+   "display": {
+    "promptText": "1/5 ÷ 3 = ?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0279",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "addSubUnlike",
+  "structureType": "unlikeAdd",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "29/24",
+   "display": {
+    "promptText": "Add: 1/3 + 7/8 = ?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0356",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "multiplyFractions",
+  "structureType": "fractionTimesFraction",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "9/20",
+   "display": {
+    "promptText": "3/4 × 3/5 = ?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0398",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "divideUnitFractions",
+  "structureType": "unitFractionDivide",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": 20,
+   "display": {
+    "promptText": "4 ÷ 1/5 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0304",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "addSubUnlike",
+  "structureType": "unlikeSubtract",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "5/20",
+   "display": {
+    "promptText": "1/2 − 1/4 = ?"
+   },
+   "answerType": "fraction"
+  }
+ },
+ {
+  "itemId": "fractionOps-proc-b0824-0335",
+  "modeId": "fractionOps",
+  "itemFamily": "procedural",
+  "subskill": "multiplyFractions",
+  "structureType": "fractionTimesFraction",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "fracops",
+   "answer": "1/4",
+   "display": {
+    "promptText": "Multiply: 1/2 × 1/2 = ?"
+   },
+   "answerType": "fraction"
   }
  },
  {
@@ -44604,6 +47984,2217 @@ export const SEED_ITEMS = [
      "start": 3
     },
     "promptText": "9 days after March 3 is March ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0001",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "countUnitCubes",
+  "structureType": "cubeGiftStory",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 6,
+   "display": {
+    "cube": {
+     "h": 2,
+     "l": 3,
+     "w": 1
+    },
+    "figure": "cubeGrid",
+    "promptText": "For a game piece, Leo stacks unit cubes like this. How many cubes are in the piece?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0053",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "plotAndRead",
+  "structureType": "treasureMapStory",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 2,
+   "display": {
+    "coord": {
+     "max": 6,
+     "points": [
+      {
+       "x": 2,
+       "y": 2,
+       "label": "A"
+      },
+      {
+       "x": 5,
+       "y": 2,
+       "label": "B"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "On Amara's map, the treasure is at point A. How many steps right of 0 is it (the x-coordinate)?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0014",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "countUnitCubes",
+  "structureType": "cubeGiftStory",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 18,
+   "display": {
+    "cube": {
+     "h": 3,
+     "l": 3,
+     "w": 2
+    },
+    "figure": "cubeGrid",
+    "promptText": "This is Zoe's cube sculpture. How many unit cubes make the sculpture?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0066",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "plotAndRead",
+  "structureType": "treasureMapStory",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 2,
+   "display": {
+    "coord": {
+     "max": 6,
+     "points": [
+      {
+       "x": 2,
+       "y": 3,
+       "label": "A"
+      },
+      {
+       "x": 5,
+       "y": 5,
+       "label": "B"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "Point A on Kai's garden plan is the bench. What is the bench's x-coordinate?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0027",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "countUnitCubes",
+  "structureType": "cubeGiftStory",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 4,
+   "display": {
+    "cube": {
+     "h": 1,
+     "l": 2,
+     "w": 2
+    },
+    "figure": "cubeGrid",
+    "promptText": "For a game piece, Ben stacks unit cubes like this. How many cubes are in the piece?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0079",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "plotAndRead",
+  "structureType": "treasureMapStory",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 3,
+   "display": {
+    "coord": {
+     "max": 6,
+     "points": [
+      {
+       "x": 3,
+       "y": 1,
+       "label": "A"
+      },
+      {
+       "x": 3,
+       "y": 5,
+       "label": "B"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "On Priya's zoo map, the otter pool is point A. What is the pool's x-coordinate?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0040",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "countUnitCubes",
+  "structureType": "cubeGiftStory",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 4,
+   "display": {
+    "cube": {
+     "h": 2,
+     "l": 2,
+     "w": 1
+    },
+    "figure": "cubeGrid",
+    "promptText": "Luca snaps together the cubes shown here. How many cubes did Luca snap together?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0092",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "plotAndRead",
+  "structureType": "treasureMapStory",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 5,
+   "display": {
+    "coord": {
+     "max": 6,
+     "points": [
+      {
+       "x": 5,
+       "y": 3,
+       "label": "A"
+      },
+      {
+       "x": 2,
+       "y": 5,
+       "label": "B"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "Nia plots the library at point A. Which x-coordinate does the library have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0105",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "countUnitCubes",
+  "structureType": "cubeGiftStory",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 48,
+   "display": {
+    "cube": {
+     "h": 3,
+     "l": 4,
+     "w": 4
+    },
+    "figure": "cubeGrid",
+    "promptText": "Luca glues unit cubes into this shape for a gift. How many cubes does Luca glue?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0157",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "volumeFormula",
+  "structureType": "aquariumStory",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 48,
+   "display": {
+    "promptText": "A planter box measures 4 by 3 by 4 units. How many cubic units of space is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0209",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "plotAndRead",
+  "structureType": "treasureMapStory",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 8,
+   "display": {
+    "coord": {
+     "max": 10,
+     "points": [
+      {
+       "x": 8,
+       "y": 9,
+       "label": "A"
+      },
+      {
+       "x": 8,
+       "y": 3,
+       "label": "B"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "Theo marks the camp at point A. What is the camp's x-coordinate?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0122",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "countUnitCubes",
+  "structureType": "cubeGiftStory",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 80,
+   "display": {
+    "cube": {
+     "h": 4,
+     "l": 5,
+     "w": 4
+    },
+    "figure": "cubeGrid",
+    "promptText": "Kai builds this block shape for the class fair. How many unit cubes does Kai use?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0174",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "volumeFormula",
+  "structureType": "aquariumStory",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 18,
+   "display": {
+    "promptText": "Diego builds a aquarium 3 units long, 2 units wide and 3 units tall. How many unit cubes of space does the aquarium hold?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0226",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "plotAndRead",
+  "structureType": "treasureMapStory",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 8,
+   "display": {
+    "coord": {
+     "max": 10,
+     "points": [
+      {
+       "x": 8,
+       "y": 6,
+       "label": "A"
+      },
+      {
+       "x": 1,
+       "y": 7,
+       "label": "B"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "Ida plots the library at point A. Which x-coordinate does the library have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0139",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "countUnitCubes",
+  "structureType": "cubeGiftStory",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 32,
+   "display": {
+    "cube": {
+     "h": 4,
+     "l": 4,
+     "w": 2
+    },
+    "figure": "cubeGrid",
+    "promptText": "Rosa builds this block shape for the class fair. How many unit cubes does Rosa use?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0191",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "volumeFormula",
+  "structureType": "aquariumStory",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 12,
+   "display": {
+    "promptText": "Rosa's aquarium is 2 across, 2 deep and 3 high, in units. What is its volume in cubic units?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0261",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "volumeFormula",
+  "structureType": "aquariumStory",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 45,
+   "display": {
+    "promptText": "Zoe packs a storage bin that is 3 × 3 × 5 units. How many unit cubes fit inside?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0313",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "plotAndRead",
+  "structureType": "treasureMapStory",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 5,
+   "display": {
+    "coord": {
+     "max": 10,
+     "points": [
+      {
+       "x": 5,
+       "y": 4,
+       "label": "A"
+      },
+      {
+       "x": 3,
+       "y": 8,
+       "label": "B"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "The slide on Ben's playground map is at point A. What is the slide's x-coordinate?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0365",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "compositeAndDistance",
+  "structureType": "walkDistanceStory",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 4,
+   "display": {
+    "coord": {
+     "max": 10,
+     "points": [
+      {
+       "x": 4,
+       "y": 7,
+       "label": "A"
+      },
+      {
+       "x": 8,
+       "y": 7,
+       "label": "B"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "Luca goes straight from the tent (point A) to the campfire (point B). How many units is the walk?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0278",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "volumeFormula",
+  "structureType": "aquariumStory",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 75,
+   "display": {
+    "promptText": "Kai builds a planter box 5 units long, 5 units wide and 3 units tall. How many unit cubes of space does the planter box hold?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0330",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "plotAndRead",
+  "structureType": "treasureMapStory",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 1,
+   "display": {
+    "coord": {
+     "max": 10,
+     "points": [
+      {
+       "x": 1,
+       "y": 5,
+       "label": "A"
+      },
+      {
+       "x": 6,
+       "y": 6,
+       "label": "B"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "Theo hides a prize at point A on the map. What is the prize's x-coordinate?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0382",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "compositeAndDistance",
+  "structureType": "walkDistanceStory",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 3,
+   "display": {
+    "coord": {
+     "max": 10,
+     "points": [
+      {
+       "x": 5,
+       "y": 1,
+       "label": "A"
+      },
+      {
+       "x": 8,
+       "y": 1,
+       "label": "B"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "Ida goes straight from the gate (point A) to the fountain (point B). How many units is the walk?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0295",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "volumeFormula",
+  "structureType": "aquariumStory",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 36,
+   "display": {
+    "promptText": "June packs a toy chest that is 6 × 2 × 3 units. How many unit cubes fit inside?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-app-b0824-0347",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "application",
+  "subskill": "plotAndRead",
+  "structureType": "treasureMapStory",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 4,
+   "display": {
+    "coord": {
+     "max": 10,
+     "points": [
+      {
+       "x": 4,
+       "y": 9,
+       "label": "A"
+      },
+      {
+       "x": 7,
+       "y": 2,
+       "label": "B"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "Zoe hides a prize at point A on the map. What is the prize's x-coordinate?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0001",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "countUnitCubes",
+  "structureType": "layersJudged",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "cube": {
+     "h": 2,
+     "l": 2,
+     "w": 1
+    },
+    "figure": "cubeGrid",
+    "promptText": "Maya says this toy box holds 4 unit cubes. Is Maya right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0053",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "plotAndRead",
+  "structureType": "whichPointAt",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": "C",
+   "choices": [
+    "B",
+    "C",
+    "A"
+   ],
+   "display": {
+    "coord": {
+     "max": 6,
+     "points": [
+      {
+       "x": 3,
+       "y": 1,
+       "label": "A"
+      },
+      {
+       "x": 1,
+       "y": 3,
+       "label": "B"
+      },
+      {
+       "x": 1,
+       "y": 4,
+       "label": "C"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "Maya marks a spot at (1, 4). Which labeled point is it?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0014",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "countUnitCubes",
+  "structureType": "layersJudged",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "cube": {
+     "h": 2,
+     "l": 2,
+     "w": 1
+    },
+    "figure": "cubeGrid",
+    "promptText": "Theo says this toy box holds 4 unit cubes. Is Theo right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0066",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "plotAndRead",
+  "structureType": "whichPointAt",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": "C",
+   "choices": [
+    "C",
+    "B",
+    "A"
+   ],
+   "display": {
+    "coord": {
+     "max": 6,
+     "points": [
+      {
+       "x": 2,
+       "y": 1,
+       "label": "A"
+      },
+      {
+       "x": 5,
+       "y": 4,
+       "label": "B"
+      },
+      {
+       "x": 4,
+       "y": 4,
+       "label": "C"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "Theo marks a spot at (4, 4). Which labeled point is it?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0027",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "countUnitCubes",
+  "structureType": "layersJudged",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "cube": {
+     "h": 1,
+     "l": 2,
+     "w": 2
+    },
+    "figure": "cubeGrid",
+    "promptText": "Finn says this gift box holds 4 unit cubes. Is Finn right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0079",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "plotAndRead",
+  "structureType": "whichPointAt",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": "A",
+   "choices": [
+    "C",
+    "B",
+    "A"
+   ],
+   "display": {
+    "coord": {
+     "max": 6,
+     "points": [
+      {
+       "x": 3,
+       "y": 4,
+       "label": "A"
+      },
+      {
+       "x": 2,
+       "y": 1,
+       "label": "B"
+      },
+      {
+       "x": 3,
+       "y": 2,
+       "label": "C"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "The point at (3, 4) is one of Finn's labels. Which letter is it?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0040",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "countUnitCubes",
+  "structureType": "layersJudged",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "cube": {
+     "h": 2,
+     "l": 3,
+     "w": 1
+    },
+    "figure": "cubeGrid",
+    "promptText": "Kai says this block tower holds 6 unit cubes. Is Kai right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0092",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "plotAndRead",
+  "structureType": "whichPointAt",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": "C",
+   "choices": [
+    "A",
+    "B",
+    "C"
+   ],
+   "display": {
+    "coord": {
+     "max": 6,
+     "points": [
+      {
+       "x": 4,
+       "y": 2,
+       "label": "A"
+      },
+      {
+       "x": 2,
+       "y": 3,
+       "label": "B"
+      },
+      {
+       "x": 5,
+       "y": 4,
+       "label": "C"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "Kai calls out (5, 4). Which labeled point matches?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0105",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "countUnitCubes",
+  "structureType": "layersJudged",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "cube": {
+     "h": 2,
+     "l": 2,
+     "w": 4
+    },
+    "figure": "cubeGrid",
+    "promptText": "Maya says this toy box holds 24 unit cubes. Is Maya right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0157",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "volumeFormula",
+  "structureType": "baseTimesHeight",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 32,
+   "display": {
+    "cube": {
+     "h": 4,
+     "l": 2,
+     "w": 4
+    },
+    "figure": "cubeGrid",
+    "promptText": "4 layers of 8 cubes each — what is the total number of cubes?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0209",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "plotAndRead",
+  "structureType": "whichPointAt",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": "A",
+   "choices": [
+    "B",
+    "A",
+    "C"
+   ],
+   "display": {
+    "coord": {
+     "max": 10,
+     "points": [
+      {
+       "x": 7,
+       "y": 8,
+       "label": "A"
+      },
+      {
+       "x": 1,
+       "y": 1,
+       "label": "B"
+      },
+      {
+       "x": 8,
+       "y": 7,
+       "label": "C"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "Maya marks a spot at (7, 8). Which labeled point is it?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0122",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "countUnitCubes",
+  "structureType": "layersJudged",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "cube": {
+     "h": 2,
+     "l": 4,
+     "w": 2
+    },
+    "figure": "cubeGrid",
+    "promptText": "Maya says this gift box holds 16 unit cubes. Is Maya right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0174",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "volumeFormula",
+  "structureType": "baseTimesHeight",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 27,
+   "display": {
+    "cube": {
+     "h": 3,
+     "l": 3,
+     "w": 3
+    },
+    "figure": "cubeGrid",
+    "promptText": "A floor of 9 cubes is copied 3 times going up. How many cubes is the whole stack?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0226",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "plotAndRead",
+  "structureType": "whichPointAt",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": "C",
+   "choices": [
+    "B",
+    "C",
+    "A"
+   ],
+   "display": {
+    "coord": {
+     "max": 10,
+     "points": [
+      {
+       "x": 3,
+       "y": 4,
+       "label": "A"
+      },
+      {
+       "x": 3,
+       "y": 1,
+       "label": "B"
+      },
+      {
+       "x": 3,
+       "y": 5,
+       "label": "C"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "The point at (3, 5) is one of Leo's labels. Which letter is it?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0139",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "countUnitCubes",
+  "structureType": "layersJudged",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "cube": {
+     "h": 3,
+     "l": 4,
+     "w": 4
+    },
+    "figure": "cubeGrid",
+    "promptText": "Maya says this block tower holds 64 unit cubes. Is Maya right?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0191",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "volumeFormula",
+  "structureType": "baseTimesHeight",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 64,
+   "display": {
+    "cube": {
+     "h": 4,
+     "l": 4,
+     "w": 4
+    },
+    "figure": "cubeGrid",
+    "promptText": "The bottom slab uses 16 cubes and the box is 4 slabs high. Total cubes?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0261",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "volumeFormula",
+  "structureType": "missingDimension",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 4,
+   "display": {
+    "promptText": "3 × 3 × ? = 36. What is the missing side in units?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0313",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "plotAndRead",
+  "structureType": "coordinatePattern",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 9,
+   "display": {
+    "promptText": "From (2, 3), each new point is 2 right and 2 up. What is the y-coordinate of the 4th point?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0363",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "compositeAndDistance",
+  "structureType": "compositePlanJudged",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Splitting the figure, Zoe gets 2 × 3 × 3 plus 2 × 2 × 2 and claims 25 in all. Do you agree?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0278",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "volumeFormula",
+  "structureType": "missingDimension",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 6,
+   "display": {
+    "promptText": "A 2 by 3 base holds a volume of 36 cubic units. How many units tall is the box?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0329",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "plotAndRead",
+  "structureType": "coordinatePattern",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 4,
+   "display": {
+    "promptText": "A dot hops from (2, 1) by (+1, +1) each time. Where is y after the 3rd hop?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0380",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "compositeAndDistance",
+  "structureType": "compositePlanJudged",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Splitting the figure, Nia gets 3 × 3 × 3 plus 2 × 2 × 1 and claims 30 in all. Do you agree?"
+   },
+   "answerType": "choice"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0295",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "volumeFormula",
+  "structureType": "missingDimension",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 5,
+   "display": {
+    "promptText": "A box has volume 80 cubic units. Its base is 4 by 4. How tall is it?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-conc-b0824-0345",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "conceptual",
+  "subskill": "plotAndRead",
+  "structureType": "coordinatePattern",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 5,
+   "display": {
+    "promptText": "The rule is: right 1, up 1, starting from (1, 2). What y-value goes with x = 4?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0001",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "countUnitCubes",
+  "structureType": "countCubes",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 12,
+   "display": {
+    "cube": {
+     "h": 2,
+     "l": 3,
+     "w": 2
+    },
+    "figure": "cubeGrid",
+    "promptText": "Maya built this toy box from unit cubes. How many unit cubes did Maya use?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0053",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "plotAndRead",
+  "structureType": "readPointCoordinate",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 2,
+   "display": {
+    "coord": {
+     "max": 6,
+     "points": [
+      {
+       "x": 2,
+       "y": 2,
+       "label": "A"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "On Maya's grid, find point A. What is its x-coordinate?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0014",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "countUnitCubes",
+  "structureType": "countCubes",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 6,
+   "display": {
+    "cube": {
+     "h": 3,
+     "l": 2,
+     "w": 1
+    },
+    "figure": "cubeGrid",
+    "promptText": "Theo built this toy box from unit cubes. How many unit cubes did Theo use?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0066",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "plotAndRead",
+  "structureType": "readPointCoordinate",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 2,
+   "display": {
+    "coord": {
+     "max": 6,
+     "points": [
+      {
+       "x": 2,
+       "y": 5,
+       "label": "A"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "On Theo's grid, find point A. What is its x-coordinate?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0027",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "countUnitCubes",
+  "structureType": "countCubes",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 6,
+   "display": {
+    "cube": {
+     "h": 2,
+     "l": 3,
+     "w": 1
+    },
+    "figure": "cubeGrid",
+    "promptText": "Finn built this gift box from unit cubes. How many unit cubes did Finn use?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0079",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "plotAndRead",
+  "structureType": "readPointCoordinate",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 5,
+   "display": {
+    "coord": {
+     "max": 6,
+     "points": [
+      {
+       "x": 4,
+       "y": 5,
+       "label": "A"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "Finn plotted point A. Read off its y-coordinate."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0040",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "countUnitCubes",
+  "structureType": "countCubes",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 3,
+   "display": {
+    "cube": {
+     "h": 1,
+     "l": 3,
+     "w": 1
+    },
+    "figure": "cubeGrid",
+    "promptText": "Kai built this block tower from unit cubes. How many unit cubes did Kai use?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0092",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "plotAndRead",
+  "structureType": "readPointCoordinate",
+  "levelRange": [
+   1,
+   3
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 3,
+   "display": {
+    "coord": {
+     "max": 6,
+     "points": [
+      {
+       "x": 3,
+       "y": 3,
+       "label": "A"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "Point A sits on Kai's graph. What y-coordinate does it have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0105",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "countUnitCubes",
+  "structureType": "countCubes",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 40,
+   "display": {
+    "cube": {
+     "h": 4,
+     "l": 5,
+     "w": 2
+    },
+    "figure": "cubeGrid",
+    "promptText": "Leo built this crate from unit cubes. How many unit cubes did Leo use?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0157",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "volumeFormula",
+  "structureType": "volumeFromDims",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 80,
+   "display": {
+    "promptText": "Find the volume: a 5 by 4 by 4 box. How many cubic units is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0209",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "plotAndRead",
+  "structureType": "readPointCoordinate",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 5,
+   "display": {
+    "coord": {
+     "max": 10,
+     "points": [
+      {
+       "x": 5,
+       "y": 5,
+       "label": "A"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "On Maya's grid, find point A. What is its y-coordinate?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0122",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "countUnitCubes",
+  "structureType": "countCubes",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 40,
+   "display": {
+    "cube": {
+     "h": 4,
+     "l": 5,
+     "w": 2
+    },
+    "figure": "cubeGrid",
+    "promptText": "Leo built this cube stack from unit cubes. How many unit cubes did Leo use?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0174",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "volumeFormula",
+  "structureType": "volumeFromDims",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 32,
+   "display": {
+    "promptText": "Find the volume: a 4 by 4 by 2 box. How many cubic units is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0226",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "plotAndRead",
+  "structureType": "readPointCoordinate",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 8,
+   "display": {
+    "coord": {
+     "max": 10,
+     "points": [
+      {
+       "x": 8,
+       "y": 1,
+       "label": "A"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "Point A sits on Ida's graph. What x-coordinate does it have?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0139",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "countUnitCubes",
+  "structureType": "countCubes",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 12,
+   "display": {
+    "cube": {
+     "h": 2,
+     "l": 2,
+     "w": 3
+    },
+    "figure": "cubeGrid",
+    "promptText": "Leo built this storage box from unit cubes. How many unit cubes did Leo use?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0191",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "volumeFormula",
+  "structureType": "volumeFromDims",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 32,
+   "display": {
+    "promptText": "Find the volume: a 2 by 4 by 4 box. How many cubic units is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0261",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "volumeFormula",
+  "structureType": "volumeFromDims",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 100,
+   "display": {
+    "promptText": "Find the volume: a 4 by 5 by 5 box. How many cubic units is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0313",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "plotAndRead",
+  "structureType": "readPointCoordinate",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 7,
+   "display": {
+    "coord": {
+     "max": 10,
+     "points": [
+      {
+       "x": 7,
+       "y": 1,
+       "label": "A"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "On Luca's grid, find point A. What is its x-coordinate?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0365",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "compositeAndDistance",
+  "structureType": "gridDistance",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 9,
+   "display": {
+    "coord": {
+     "max": 10,
+     "points": [
+      {
+       "x": 0,
+       "y": 9,
+       "label": "A"
+      },
+      {
+       "x": 9,
+       "y": 9,
+       "label": "B"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "Points A and B are on Maya's grid, on the same gridline. How many units apart are they?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0278",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "volumeFormula",
+  "structureType": "volumeFromDims",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 24,
+   "display": {
+    "promptText": "Find the volume: a 6 by 2 by 2 box. How many cubic units is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0330",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "plotAndRead",
+  "structureType": "readPointCoordinate",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 5,
+   "display": {
+    "coord": {
+     "max": 10,
+     "points": [
+      {
+       "x": 4,
+       "y": 5,
+       "label": "A"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "Look at point A on Luca's grid. Type its y-coordinate."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0382",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "compositeAndDistance",
+  "structureType": "compositeVolume",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 66,
+   "display": {
+    "promptText": "An L-shaped solid is built from a 4 × 3 × 4 part and a 2 × 3 × 3 part. What is its volume in cubic units?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0295",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "volumeFormula",
+  "structureType": "volumeFromDims",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 45,
+   "display": {
+    "promptText": "Find the volume: a 3 by 3 by 5 box. How many cubic units is that?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "volumeCoordinates-proc-b0824-0347",
+  "modeId": "volumeCoordinates",
+  "itemFamily": "procedural",
+  "subskill": "plotAndRead",
+  "structureType": "readPointCoordinate",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "volume",
+   "answer": 4,
+   "display": {
+    "coord": {
+     "max": 10,
+     "points": [
+      {
+       "x": 4,
+       "y": 9,
+       "label": "A"
+      }
+     ]
+    },
+    "figure": "coordGrid",
+    "promptText": "Here is Leo's grid with point A marked. What x-coordinate goes with point A?"
    },
    "answerType": "numberPad"
   }

@@ -5,6 +5,21 @@
  * subskill never renders as a bare identifier.
  */
 const LABELS = {
+  // grade-5 modes (fractionOps / decimalOps / volumeCoordinates)
+  addSubUnlike: "adding and subtracting unlike fractions",
+  multiplyFractions: "multiplying fractions",
+  divideUnitFractions: "dividing with unit fractions",
+  fractionOfWhole: "a fraction of a whole number",
+  addSubDecimals: "adding and subtracting decimals",
+  powersOfTen: "multiplying and dividing by 10 and 100",
+  multiplyDivideDecimals: "multiplying and dividing decimals",
+  thousandthsSense: "decimal places to thousandths",
+  countUnitCubes: "counting unit cubes",
+  volumeFormula: "volume as length × width × height",
+  plotAndRead: "plotting and reading coordinates",
+  compositeAndDistance: "composite volume and grid distance",
+  remainders: "division with remainders",
+  rounding: "rounding to the nearest ten, hundred or thousand",
   // addition / subtraction
   makeTen: "making ten",
   composeDecompose: "breaking numbers apart to add",

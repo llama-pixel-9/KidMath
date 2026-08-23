@@ -27,6 +27,9 @@ export const GRADE_SPANS = {
   decimals: "4",
   factorsMultiples: "4",
   angles: "4",
+  fractionOps: "4–5",
+  decimalOps: "4–5",
+  volumeCoordinates: "5",
 };
 
 export function gradeSpanFor(modeId) {

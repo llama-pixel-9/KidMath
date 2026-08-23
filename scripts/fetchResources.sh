@@ -62,6 +62,8 @@ for m in 1 2 3 4 5 6; do engageny "Grade 1 Module $m" g1 "$m"; done
 for m in 1 2 3 4 5 6 7 8; do engageny "Grade 2 Module $m" g2 "$m"; done
 for m in 1 2 3 4 5 6 7; do engageny "Grade 3 Module $m" g3 "$m"; done
 for m in 1 2 3 4 5 6 7; do engageny "Grade 4 Module $m" g4 "$m"; done
+# Grade 5 (curriculum plan Phase 2 — the G5 modes are authored against these).
+for m in 1 2 3 4 5 6; do engageny "Grade 5 Module $m" g5 "$m"; done
 
 echo
 echo "$(find "$DEST" -name '*.pdf' | wc -l | tr -d ' ') PDFs in $DEST/, $fails failure(s)"

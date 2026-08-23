@@ -431,6 +431,22 @@ The remaining 295 items draw on these IM task patterns for structure but use ori
 
 All inspirations come from https://tasks.illustrativemathematics.org under CC BY 4.0.
 
+## 2026-08-23 — Grade-5 modes (batch `b0824`)
+
+3,742 deterministic items banking the three new Grade-5 modes end to end:
+fractionOps 1,248, decimalOps 1,248, volumeCoordinates 1,246 — every
+reachable (subskill × family × band) cell at the 52-item floor. The modes'
+variety catalogs are the templates: `scripts/itemGen/authorGrade5.js` drives
+each mode's own `generate()` under a seeded RNG through the shared
+`bankAssembler.js`; design notes in `docs/grade5-bank-design.md`.
+
+### Structural inspirations (no verbatim text)
+
+- CCSS 5.NF.1-7, 5.NBT.2/3/7, 5.MD.3-5, 5.G.1-2.
+- EngageNY G5 M1-M6 (CC BY-NC-SA — structure and sequencing only).
+- CCSS Progressions (NF, NBT, MD chapters): unit-fraction reasoning,
+  powers-of-ten shifts, volume as layered arrays. All wording original.
+
 ## 2026-08-23 — Grade-4 completion (batch `b0823`)
 
 886 deterministic items closing the Grade-4 gaps from the curriculum

@@ -6,8 +6,8 @@
  * "1 + ? = 7" (Sai, 2026-08-22). Only the bare equation forms are touched:
  *   "W = P + ?"  -> "P + ? = W"
  *   "W = ? + P"  -> "? + P = W"
- * Prose forms ("5 = 1 + 4, so 5 = 2 + ?") keep the whole-first reading on
- * purpose — there the point is equivalence, not a missing addend.
+ * Prose pattern-step forms flip too (2026-08-22 follow-up):
+ *   "5 = 1 + 4, so 5 = 2 + ?" -> "1 + 4 = 5, so 2 + ? = 5"
  *
  * promptText is globally unique across the bank, and the flipped form often
  * collides with an addition missing-addend drill ("0 + ? = 10"). When it
@@ -36,8 +36,21 @@ const HEADERS = {
 };
 
 const WHOLE_FIRST = /^(\d+) = (\d+|\?) \+ (\d+|\?)$/;
+// Prose pattern-step forms: "5 = 1 + 4, so 5 = 2 + ?" and "5 = 1 + 4, so 5 − 1 = ?"
+const PROSE_STEP = /^(\d+) = (\d+) \+ (\d+), so (\d+) = (\d+) \+ \?$/;
+const PROSE_MINUS = /^(\d+) = (\d+) \+ (\d+), so (\d+ − \d+ = \?)$/;
 
 export function flipPrompt(text) {
+  let pm = text.match(PROSE_STEP);
+  if (pm) {
+    const t = `${pm[2]} + ${pm[3]} = ${pm[1]}, so ${pm[5]} + ? = ${pm[4]}`;
+    return { primary: t, commuted: t };
+  }
+  pm = text.match(PROSE_MINUS);
+  if (pm) {
+    const t = `${pm[2]} + ${pm[3]} = ${pm[1]}, so ${pm[4]}`;
+    return { primary: t, commuted: t };
+  }
   const m = text.match(WHOLE_FIRST);
   if (!m) return null;
   const [, whole, left, right] = m;
@@ -81,7 +94,7 @@ async function main() {
   const plan = [];
   const stuck = [];
   for (const row of rows) {
-    if (row.mode_id !== "numberBonds") continue;
+    if (row.mode_id !== "numberBonds" || row.review_status === "retired") continue;
     const text = row.payload?.display?.promptText?.trim();
     const flip = text && flipPrompt(text);
     if (!flip) continue;

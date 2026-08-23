@@ -13512,7 +13512,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":2,"whole":5,"promptText":"5 = 1 + 4, so 5 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":2,"whole":5,"promptText":"1 + 4 = 5, so 2 + ? = 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-440",
@@ -13522,7 +13522,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":3,"whole":5,"promptText":"5 = 2 + 3, so 5 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":3,"whole":5,"promptText":"2 + 3 = 5, so 3 + ? = 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-441",
@@ -13532,7 +13532,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":4,"whole":5,"promptText":"5 = 3 + 2, so 5 = 4 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":4,"whole":5,"promptText":"3 + 2 = 5, so 4 + ? = 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-442",
@@ -13542,7 +13542,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":1,"whole":5,"promptText":"5 = 2 + 3, so 5 = 1 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":1,"whole":5,"promptText":"2 + 3 = 5, so 1 + ? = 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-443",
@@ -13552,7 +13552,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":2,"whole":5,"promptText":"5 = 3 + 2, so 5 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":2,"whole":5,"promptText":"3 + 2 = 5, so 2 + ? = 5"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-444",
@@ -13562,7 +13562,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":2,"whole":6,"promptText":"6 = 1 + 5, so 6 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":2,"whole":6,"promptText":"1 + 5 = 6, so 2 + ? = 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-445",
@@ -13572,7 +13572,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":3,"whole":6,"promptText":"6 = 2 + 4, so 6 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":3,"whole":6,"promptText":"2 + 4 = 6, so 3 + ? = 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-446",
@@ -13582,7 +13582,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":4,"whole":6,"promptText":"6 = 3 + 3, so 6 = 4 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":4,"whole":6,"promptText":"3 + 3 = 6, so 4 + ? = 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-447",
@@ -13592,7 +13592,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":5,"whole":6,"promptText":"6 = 4 + 2, so 6 = 5 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":5,"whole":6,"promptText":"4 + 2 = 6, so 5 + ? = 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-448",
@@ -13602,7 +13602,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":1,"whole":6,"promptText":"6 = 2 + 4, so 6 = 1 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":1,"whole":6,"promptText":"2 + 4 = 6, so 1 + ? = 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-449",
@@ -13612,7 +13612,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":2,"whole":6,"promptText":"6 = 3 + 3, so 6 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":2,"whole":6,"promptText":"3 + 3 = 6, so 2 + ? = 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-450",
@@ -13622,7 +13622,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":3,"whole":6,"promptText":"6 = 4 + 2, so 6 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":3,"whole":6,"promptText":"4 + 2 = 6, so 3 + ? = 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-451",
@@ -13632,7 +13632,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":2,"whole":7,"promptText":"7 = 1 + 6, so 7 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":2,"whole":7,"promptText":"1 + 6 = 7, so 2 + ? = 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-452",
@@ -13642,7 +13642,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":3,"whole":7,"promptText":"7 = 2 + 5, so 7 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":3,"whole":7,"promptText":"2 + 5 = 7, so 3 + ? = 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-453",
@@ -13652,7 +13652,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":4,"whole":7,"promptText":"7 = 3 + 4, so 7 = 4 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":4,"whole":7,"promptText":"3 + 4 = 7, so 4 + ? = 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-454",
@@ -13662,7 +13662,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":5,"whole":7,"promptText":"7 = 4 + 3, so 7 = 5 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":5,"whole":7,"promptText":"4 + 3 = 7, so 5 + ? = 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-455",
@@ -13672,7 +13672,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":6,"whole":7,"promptText":"7 = 5 + 2, so 7 = 6 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":6,"whole":7,"promptText":"5 + 2 = 7, so 6 + ? = 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-456",
@@ -13682,7 +13682,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":1,"whole":7,"promptText":"7 = 2 + 5, so 7 = 1 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":1,"whole":7,"promptText":"2 + 5 = 7, so 1 + ? = 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-457",
@@ -13692,7 +13692,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":2,"whole":7,"promptText":"7 = 3 + 4, so 7 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":2,"whole":7,"promptText":"3 + 4 = 7, so 2 + ? = 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-458",
@@ -13702,7 +13702,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":3,"whole":7,"promptText":"7 = 4 + 3, so 7 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":3,"whole":7,"promptText":"4 + 3 = 7, so 3 + ? = 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-459",
@@ -13712,7 +13712,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":4,"whole":7,"promptText":"7 = 5 + 2, so 7 = 4 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":4,"whole":7,"promptText":"5 + 2 = 7, so 4 + ? = 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-460",
@@ -13722,7 +13722,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":2,"whole":8,"promptText":"8 = 1 + 7, so 8 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":2,"whole":8,"promptText":"1 + 7 = 8, so 2 + ? = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-461",
@@ -13732,7 +13732,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"8 = 2 + 6, so 8 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"2 + 6 = 8, so 3 + ? = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-462",
@@ -13742,7 +13742,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":4,"whole":8,"promptText":"8 = 3 + 5, so 8 = 4 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":4,"whole":8,"promptText":"3 + 5 = 8, so 4 + ? = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-463",
@@ -13752,7 +13752,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"8 = 4 + 4, so 8 = 5 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"4 + 4 = 8, so 5 + ? = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-464",
@@ -13762,7 +13762,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":6,"whole":8,"promptText":"8 = 5 + 3, so 8 = 6 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":6,"whole":8,"promptText":"5 + 3 = 8, so 6 + ? = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-465",
@@ -13772,7 +13772,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":7,"whole":8,"promptText":"8 = 6 + 2, so 8 = 7 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":7,"whole":8,"promptText":"6 + 2 = 8, so 7 + ? = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-466",
@@ -13782,7 +13782,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":1,"whole":8,"promptText":"8 = 2 + 6, so 8 = 1 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":1,"whole":8,"promptText":"2 + 6 = 8, so 1 + ? = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-467",
@@ -13792,7 +13792,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":2,"whole":8,"promptText":"8 = 3 + 5, so 8 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":2,"whole":8,"promptText":"3 + 5 = 8, so 2 + ? = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-468",
@@ -13802,7 +13802,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"8 = 4 + 4, so 8 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"4 + 4 = 8, so 3 + ? = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-469",
@@ -13812,7 +13812,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":4,"whole":8,"promptText":"8 = 5 + 3, so 8 = 4 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":4,"whole":8,"promptText":"5 + 3 = 8, so 4 + ? = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-470",
@@ -13822,7 +13822,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"8 = 6 + 2, so 8 = 5 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"6 + 2 = 8, so 5 + ? = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-471",
@@ -13832,7 +13832,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":2,"whole":9,"promptText":"9 = 1 + 8, so 9 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":2,"whole":9,"promptText":"1 + 8 = 9, so 2 + ? = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-472",
@@ -13842,7 +13842,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":3,"whole":9,"promptText":"9 = 2 + 7, so 9 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":3,"whole":9,"promptText":"2 + 7 = 9, so 3 + ? = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-473",
@@ -13852,7 +13852,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":4,"whole":9,"promptText":"9 = 3 + 6, so 9 = 4 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":4,"whole":9,"promptText":"3 + 6 = 9, so 4 + ? = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-474",
@@ -13862,7 +13862,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":5,"whole":9,"promptText":"9 = 4 + 5, so 9 = 5 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":5,"whole":9,"promptText":"4 + 5 = 9, so 5 + ? = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-475",
@@ -13872,7 +13872,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":6,"whole":9,"promptText":"9 = 5 + 4, so 9 = 6 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":6,"whole":9,"promptText":"5 + 4 = 9, so 6 + ? = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-476",
@@ -13882,7 +13882,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":7,"whole":9,"promptText":"9 = 6 + 3, so 9 = 7 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":7,"whole":9,"promptText":"6 + 3 = 9, so 7 + ? = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-477",
@@ -13892,7 +13892,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":8,"whole":9,"promptText":"9 = 7 + 2, so 9 = 8 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":8,"whole":9,"promptText":"7 + 2 = 9, so 8 + ? = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-478",
@@ -13902,7 +13902,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":1,"whole":9,"promptText":"9 = 2 + 7, so 9 = 1 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":1,"whole":9,"promptText":"2 + 7 = 9, so 1 + ? = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-479",
@@ -13912,7 +13912,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":2,"whole":9,"promptText":"9 = 3 + 6, so 9 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":2,"whole":9,"promptText":"3 + 6 = 9, so 2 + ? = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-480",
@@ -13922,7 +13922,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":3,"whole":9,"promptText":"9 = 4 + 5, so 9 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":3,"whole":9,"promptText":"4 + 5 = 9, so 3 + ? = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-481",
@@ -13932,7 +13932,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":4,"whole":9,"promptText":"9 = 5 + 4, so 9 = 4 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":4,"whole":9,"promptText":"5 + 4 = 9, so 4 + ? = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-482",
@@ -13942,7 +13942,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":5,"whole":9,"promptText":"9 = 6 + 3, so 9 = 5 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":5,"whole":9,"promptText":"6 + 3 = 9, so 5 + ? = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-483",
@@ -13952,7 +13952,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":6,"whole":9,"promptText":"9 = 7 + 2, so 9 = 6 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":6,"whole":9,"promptText":"7 + 2 = 9, so 6 + ? = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-484",
@@ -13962,7 +13962,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":2,"whole":10,"promptText":"10 = 1 + 9, so 10 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":2,"whole":10,"promptText":"1 + 9 = 10, so 2 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-485",
@@ -13972,7 +13972,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"10 = 2 + 8, so 10 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"2 + 8 = 10, so 3 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-486",
@@ -13982,7 +13982,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":4,"whole":10,"promptText":"10 = 3 + 7, so 10 = 4 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":4,"whole":10,"promptText":"3 + 7 = 10, so 4 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-487",
@@ -13992,7 +13992,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":5,"whole":10,"promptText":"10 = 4 + 6, so 10 = 5 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":5,"whole":10,"promptText":"4 + 6 = 10, so 5 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-488",
@@ -14002,7 +14002,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"10 = 5 + 5, so 10 = 6 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"5 + 5 = 10, so 6 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-489",
@@ -14012,7 +14012,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"10 = 6 + 4, so 10 = 7 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"6 + 4 = 10, so 7 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-490",
@@ -14022,7 +14022,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":8,"whole":10,"promptText":"10 = 7 + 3, so 10 = 8 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":8,"whole":10,"promptText":"7 + 3 = 10, so 8 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-491",
@@ -14032,7 +14032,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":9,"whole":10,"promptText":"10 = 8 + 2, so 10 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":9,"whole":10,"promptText":"8 + 2 = 10, so 9 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-492",
@@ -14042,7 +14042,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":1,"whole":10,"promptText":"10 = 2 + 8, so 10 = 1 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":1,"whole":10,"promptText":"2 + 8 = 10, so 1 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-493",
@@ -14052,7 +14052,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":2,"whole":10,"promptText":"10 = 3 + 7, so 10 = 2 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":2,"whole":10,"promptText":"3 + 7 = 10, so 2 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-494",
@@ -14062,7 +14062,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"10 = 4 + 6, so 10 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"4 + 6 = 10, so 3 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-495",
@@ -14072,7 +14072,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":4,"whole":10,"promptText":"10 = 5 + 5, so 10 = 4 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":4,"whole":10,"promptText":"5 + 5 = 10, so 4 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-496",
@@ -14082,7 +14082,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":5,"whole":10,"promptText":"10 = 6 + 4, so 10 = 5 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":5,"whole":10,"promptText":"6 + 4 = 10, so 5 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-497",
@@ -14092,7 +14092,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"10 = 7 + 3, so 10 = 6 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"7 + 3 = 10, so 6 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-498",
@@ -14102,7 +14102,7 @@ export const ITEMS = [
     structureType: "bondPatternStep",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"10 = 8 + 2, so 10 = 7 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"8 + 2 = 10, so 7 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-499",
@@ -14112,7 +14112,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":4,"whole":6,"promptText":"6 = 2 + 4, so 6 = 4 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":4,"whole":6,"promptText":"2 + 4 = 6, so 4 + ? = 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-500",
@@ -14122,7 +14122,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"8 = 5 + 3, so 8 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":3,"whole":8,"promptText":"5 + 3 = 8, so 3 + ? = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-501",
@@ -14132,7 +14132,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"8 = 3 + 5, so 8 = 5 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":5,"whole":8,"promptText":"3 + 5 = 8, so 5 + ? = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-502",
@@ -14142,7 +14142,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":7,"whole":9,"promptText":"9 = 2 + 7, so 9 = 7 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":7,"whole":9,"promptText":"2 + 7 = 9, so 7 + ? = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-503",
@@ -14152,7 +14152,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"10 = 7 + 3, so 10 = 3 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":3,"whole":10,"promptText":"7 + 3 = 10, so 3 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-504",
@@ -14162,7 +14162,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"10 = 3 + 7, so 10 = 7 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":7,"whole":10,"promptText":"3 + 7 = 10, so 7 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-505",
@@ -14172,7 +14172,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"10 = 4 + 6, so 10 = 6 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":6,"whole":10,"promptText":"4 + 6 = 10, so 6 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-506",
@@ -14182,7 +14182,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":7,"whole":8,"promptText":"8 = 1 + 7, so 8 = 7 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":7,"whole":8,"promptText":"1 + 7 = 8, so 7 + ? = 8"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-507",
@@ -14192,7 +14192,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":5,"whole":7,"promptText":"7 = 2 + 5, so 7 = 5 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":5,"whole":7,"promptText":"2 + 5 = 7, so 5 + ? = 7"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-508",
@@ -14202,7 +14202,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":5,"whole":6,"promptText":"6 = 1 + 5, so 6 = 5 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":5,"whole":6,"promptText":"1 + 5 = 6, so 5 + ? = 6"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-509",
@@ -14212,7 +14212,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":9,"whole":10,"promptText":"10 = 1 + 9, so 10 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":9,"whole":10,"promptText":"1 + 9 = 10, so 9 + ? = 10"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-510",
@@ -14222,7 +14222,7 @@ export const ITEMS = [
     structureType: "commutativeFlip",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":8,"whole":9,"promptText":"9 = 1 + 8, so 9 = 8 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":1,"display":{"part":8,"whole":9,"promptText":"1 + 8 = 9, so 8 + ? = 9"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-511",
@@ -14722,7 +14722,7 @@ export const ITEMS = [
     structureType: "teenBridgePair",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":9,"whole":11,"promptText":"11 = 10 + 1, so 11 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":9,"whole":11,"promptText":"10 + 1 = 11, so 9 + ? = 11"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-561",
@@ -14732,7 +14732,7 @@ export const ITEMS = [
     structureType: "teenBridgePair",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":9,"whole":12,"promptText":"12 = 10 + 2, so 12 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":9,"whole":12,"promptText":"10 + 2 = 12, so 9 + ? = 12"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-562",
@@ -14742,7 +14742,7 @@ export const ITEMS = [
     structureType: "teenBridgePair",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":9,"whole":13,"promptText":"13 = 10 + 3, so 13 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":9,"whole":13,"promptText":"10 + 3 = 13, so 9 + ? = 13"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-563",
@@ -14752,7 +14752,7 @@ export const ITEMS = [
     structureType: "teenBridgePair",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":9,"whole":14,"promptText":"14 = 10 + 4, so 14 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":9,"whole":14,"promptText":"10 + 4 = 14, so 9 + ? = 14"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-564",
@@ -14762,7 +14762,7 @@ export const ITEMS = [
     structureType: "teenBridgePair",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":9,"whole":15,"promptText":"15 = 10 + 5, so 15 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":9,"whole":15,"promptText":"10 + 5 = 15, so 9 + ? = 15"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-565",
@@ -14772,7 +14772,7 @@ export const ITEMS = [
     structureType: "teenBridgePair",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":9,"whole":16,"promptText":"16 = 10 + 6, so 16 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":9,"whole":16,"promptText":"10 + 6 = 16, so 9 + ? = 16"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-566",
@@ -14782,7 +14782,7 @@ export const ITEMS = [
     structureType: "teenBridgePair",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":9,"whole":17,"promptText":"17 = 10 + 7, so 17 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":9,"whole":17,"promptText":"10 + 7 = 17, so 9 + ? = 17"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-567",
@@ -14792,7 +14792,7 @@ export const ITEMS = [
     structureType: "teenBridgePair",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":9,"whole":18,"promptText":"18 = 10 + 8, so 18 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":9,"whole":18,"promptText":"10 + 8 = 18, so 9 + ? = 18"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-568",
@@ -14802,7 +14802,7 @@ export const ITEMS = [
     structureType: "teenBridgePair",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":9,"whole":19,"promptText":"19 = 10 + 9, so 19 = 9 + ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":10,"display":{"part":9,"whole":19,"promptText":"10 + 9 = 19, so 9 + ? = 19"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-569",
@@ -14812,7 +14812,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":9,"whole":11,"promptText":"11 = 10 + 1, so 11 − 9 = ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":2,"display":{"part":9,"whole":11,"promptText":"10 + 1 = 11, so 11 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-570",
@@ -14822,7 +14822,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":9,"whole":12,"promptText":"12 = 10 + 2, so 12 − 9 = ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":9,"whole":12,"promptText":"10 + 2 = 12, so 12 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-571",
@@ -14832,7 +14832,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":9,"whole":13,"promptText":"13 = 10 + 3, so 13 − 9 = ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":9,"whole":13,"promptText":"10 + 3 = 13, so 13 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-572",
@@ -14842,7 +14842,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":9,"whole":14,"promptText":"14 = 10 + 4, so 14 − 9 = ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":9,"whole":14,"promptText":"10 + 4 = 14, so 14 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-573",
@@ -14852,7 +14852,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":9,"whole":15,"promptText":"15 = 10 + 5, so 15 − 9 = ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":9,"whole":15,"promptText":"10 + 5 = 15, so 15 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-574",
@@ -14862,7 +14862,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":9,"whole":16,"promptText":"16 = 10 + 6, so 16 − 9 = ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":9,"whole":16,"promptText":"10 + 6 = 16, so 16 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-575",
@@ -14872,7 +14872,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":9,"whole":17,"promptText":"17 = 10 + 7, so 17 − 9 = ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":9,"whole":17,"promptText":"10 + 7 = 17, so 17 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-576",
@@ -14882,7 +14882,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":9,"whole":18,"promptText":"18 = 10 + 8, so 18 − 9 = ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":9,"whole":18,"promptText":"10 + 8 = 18, so 18 − 9 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-577",
@@ -14892,7 +14892,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":8,"whole":11,"promptText":"11 = 10 + 1, so 11 − 8 = ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":3,"display":{"part":8,"whole":11,"promptText":"10 + 1 = 11, so 11 − 8 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-578",
@@ -14902,7 +14902,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":8,"whole":12,"promptText":"12 = 10 + 2, so 12 − 8 = ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":8,"whole":12,"promptText":"10 + 2 = 12, so 12 − 8 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-579",
@@ -14912,7 +14912,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":8,"whole":13,"promptText":"13 = 10 + 3, so 13 − 8 = ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":8,"whole":13,"promptText":"10 + 3 = 13, so 13 − 8 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-580",
@@ -14922,7 +14922,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":8,"whole":14,"promptText":"14 = 10 + 4, so 14 − 8 = ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":8,"whole":14,"promptText":"10 + 4 = 14, so 14 − 8 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-581",
@@ -14932,7 +14932,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":8,"whole":15,"promptText":"15 = 10 + 5, so 15 − 8 = ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":8,"whole":15,"promptText":"10 + 5 = 15, so 15 − 8 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-582",
@@ -14942,7 +14942,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":8,"whole":16,"promptText":"16 = 10 + 6, so 16 − 8 = ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":8,"whole":16,"promptText":"10 + 6 = 16, so 16 − 8 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-583",
@@ -14952,7 +14952,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":8,"whole":17,"promptText":"17 = 10 + 7, so 17 − 8 = ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":8,"whole":17,"promptText":"10 + 7 = 17, so 17 − 8 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-584",
@@ -14962,7 +14962,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":7,"whole":11,"promptText":"11 = 10 + 1, so 11 − 7 = ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":4,"display":{"part":7,"whole":11,"promptText":"10 + 1 = 11, so 11 − 7 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-585",
@@ -14972,7 +14972,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":7,"whole":12,"promptText":"12 = 10 + 2, so 12 − 7 = ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":5,"display":{"part":7,"whole":12,"promptText":"10 + 2 = 12, so 12 − 7 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-586",
@@ -14982,7 +14982,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":7,"whole":13,"promptText":"13 = 10 + 3, so 13 − 7 = ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":6,"display":{"part":7,"whole":13,"promptText":"10 + 3 = 13, so 13 − 7 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-587",
@@ -14992,7 +14992,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":7,"whole":14,"promptText":"14 = 10 + 4, so 14 − 7 = ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":7,"display":{"part":7,"whole":14,"promptText":"10 + 4 = 14, so 14 − 7 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-588",
@@ -15002,7 +15002,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":7,"whole":15,"promptText":"15 = 10 + 5, so 15 − 7 = ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":8,"display":{"part":7,"whole":15,"promptText":"10 + 5 = 15, so 15 − 7 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-589",
@@ -15012,7 +15012,7 @@ export const ITEMS = [
     structureType: "takeFromTenChain",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":7,"whole":16,"promptText":"16 = 10 + 6, so 16 − 7 = ?"},"answerType":"numberBond"},
+    question: {"a":null,"b":null,"op":"bond","answer":9,"display":{"part":7,"whole":16,"promptText":"10 + 6 = 16, so 16 − 7 = ?"},"answerType":"numberBond"},
   },
   {
     itemId: "numberBonds-proc-b0820-590",

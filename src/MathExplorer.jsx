@@ -104,7 +104,10 @@ function getModeLabel(modeId) {
 
 // One ring color at every level: progress is always Lark Teal on its Ink
 // track — the level is told by the number, not a rainbow hue.
-const LEVEL_RING_COLORS = ["stroke-teal"];
+// One ring colour at every level (brand: Lark Teal). This used to be a
+// 10-entry table indexed by level; collapsing it to one entry while leaving the
+// `[level - 1]` lookup in place left levels 2+ with no stroke class at all.
+const RING_STROKE = "stroke-teal";
 
 function isLikelyLowEndDevice() {
   if (typeof window === "undefined") return false;
@@ -207,7 +210,6 @@ function CircularProgress({ current, total, level }) {
   const circumference = 2 * Math.PI * radius;
   const progress = total > 0 ? current / total : 0;
   const dashOffset = circumference * (1 - progress);
-  const ringColor = LEVEL_RING_COLORS[Math.min(level - 1, 9)];
 
   return (
     <section className="flex items-center justify-center gap-3 py-2 px-4" aria-label="Progress">
@@ -222,7 +224,7 @@ function CircularProgress({ current, total, level }) {
           <motion.circle
             cx="48" cy="48" r={radius}
             fill="none"
-            className={ringColor}
+            className={RING_STROKE}
             strokeWidth="6"
             strokeLinecap="round"
             strokeDasharray={circumference}

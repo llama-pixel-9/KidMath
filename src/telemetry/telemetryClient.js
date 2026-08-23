@@ -216,6 +216,7 @@ class TelemetryClient {
   async ensureSessionRow() {
     if (!supabase) return false;
     if (this.sessionRowCreated) return true;
+    if (!this.userId) return false; // telemetry_insert_own: anonymous rows have no policy
     const device = describeDevice();
     try {
       const { error } = await supabase.from("session_diagnostics").upsert({
@@ -236,6 +237,12 @@ class TelemetryClient {
       if (!error) {
         this.sessionRowCreated = true;
         return true;
+      }
+      // RLS requires user_id = auth.uid(); an anonymous or not-yet-resolved
+      // session is rejected. Record it so it is visible, then give up quietly.
+      if (!this.insertRejected) {
+        this.insertRejected = true;
+        this.recordEvent("telemetry_insert_rejected", String(error.message || error.code));
       }
     } catch (err) {
       this.recordEvent("telemetry_insert_failed", String(err && err.message));
@@ -319,10 +326,16 @@ class TelemetryClient {
     // Track the caller's JWT for the unload-time keepalive flush; the
     // supabase client attaches it automatically on the normal path.
     if (supabase) {
-      supabase.auth.getSession().then(({ data: { session } }) => {
+      // Resolve the user BEFORE the first session-row insert below: the row's
+      // RLS policy is `user_id = auth.uid()`, so inserting with a null user_id
+      // (the old race) was rejected with 403 on every signed-in session.
+      try {
+        const { data: { session } } = await supabase.auth.getSession();
         this.accessToken = session?.access_token || null;
         if (session?.user) this.userId = this.userId || session.user.id;
-      });
+      } catch {
+        /* offline — the keepalive path re-checks the token */
+      }
       supabase.auth.onAuthStateChange((_event, session) => {
         this.accessToken = session?.access_token || null;
       });

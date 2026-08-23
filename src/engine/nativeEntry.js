@@ -37,6 +37,7 @@ import {
 } from "../itemBank/index.js";
 import { normalizeBankRow } from "../itemBank/normalize.js";
 import { MODE_IDS } from "../modes/index.js";
+import { startingLevelFor, gradeFitFor } from "../gradeSeed.js";
 // Bird-world data (§13 roster, §05/§06 zones + perches + placement). Pure
 // data modules with no browser imports — safe in JavaScriptCore, and keeping
 // them here means iOS and web can never disagree on a price or a perch.
@@ -93,6 +94,11 @@ g.KidMath = {
   // §01 flight payout. Swift may ignore this until the iOS bird-world port;
   // the field is additive and pure.
   summarizeFlight: (session) => summarizeFlight(session),
+
+  // Grade → starting level for a never-played mode (src/gradeSeed.js); Swift
+  // ProgressStore calls this so both platforms seed identically.
+  startingLevelFor: (mode, grade) => startingLevelFor(mode, grade),
+  gradeFitFor: (mode, grade) => gradeFitFor(mode, grade),
 
   // §04–§13 bird-world data + placement, shared verbatim with the web.
   roster: () => SPECIES,

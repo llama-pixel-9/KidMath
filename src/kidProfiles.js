@@ -20,6 +20,20 @@ export const KID_AGES = ["5", "6", "7", "8", "9", "10", "11", "12+"];
 export const KID_GRADES = ["K", "1st", "2nd", "3rd", "4th", "5th", "6th"];
 
 const ACTIVE_KID_KEY = "kidmath-active-kid";
+// Cached beside the pointer so the synchronous progress seams (first paint,
+// fresh-entry seeding) can read the kid's grade without a round-trip.
+const ACTIVE_KID_GRADE_KEY = "kidmath-active-kid-grade";
+
+/** Friendly copy for the one DB error a parent can hit while adding a kid. */
+export const KID_LIMIT_MESSAGE = `Four kids is the limit for one account. Remove a profile on the account page to add another.`;
+
+export function activeKidGrade() {
+  try {
+    return localStorage.getItem(ACTIVE_KID_GRADE_KEY) || null;
+  } catch {
+    return null;
+  }
+}
 
 export function activeKidId() {
   try {
@@ -29,10 +43,16 @@ export function activeKidId() {
   }
 }
 
-export function setActiveKid(id) {
+export function setActiveKid(id, grade = null) {
   try {
-    if (id) localStorage.setItem(ACTIVE_KID_KEY, id);
-    else localStorage.removeItem(ACTIVE_KID_KEY);
+    if (id) {
+      localStorage.setItem(ACTIVE_KID_KEY, id);
+      if (grade) localStorage.setItem(ACTIVE_KID_GRADE_KEY, String(grade));
+      else localStorage.removeItem(ACTIVE_KID_GRADE_KEY);
+    } else {
+      localStorage.removeItem(ACTIVE_KID_KEY);
+      localStorage.removeItem(ACTIVE_KID_GRADE_KEY);
+    }
   } catch {
     /* private mode — the picker will just show again next visit */
   }
@@ -108,6 +128,11 @@ export async function addKid(userId, { firstName, age, grade }) {
     .insert({ user_id: userId, first_name: firstName.trim(), age, grade })
     .select("id, first_name, age, grade, created_at")
     .single();
-  if (error) throw new Error(error.message);
+  if (error) {
+    // The 4-kid cap lives in the kid_profiles RLS insert policy, which
+    // surfaces as a row-level-security violation; say it in parent language.
+    if (/row-level security/i.test(error.message)) throw new Error(KID_LIMIT_MESSAGE);
+    throw new Error(error.message);
+  }
   return data;
 }

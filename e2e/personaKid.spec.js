@@ -21,7 +21,7 @@ const IGNORED_CONSOLE = [/favicon/i, /\[vite\]/, /Download the React DevTools/, 
 test.describe.configure({ mode: "parallel" });
 
 for (const kid of plan) {
-  test(`${kid.kid} (${kid.persona}, grade ${kid.grade}) plays ${kid.modes.length} modes × ${kid.sessions}`, async ({ page, context }) => {
+  test(`${kid.kid} (${kid.persona}, grade ${kid.grade}) plays ${kid.modes.length} modes × ${kid.sessions}`, async ({ page }) => {
     test.setTimeout(20 * 60_000);
     const persona = PERSONAS[kid.persona];
     const rand = rng(kid.kid);
@@ -29,7 +29,7 @@ for (const kid of plan) {
     const failedRequests = [];
     page.on("response", async (r) => {
       if (r.status() >= 400 && !/favicon/.test(r.url())) {
-        let body = ""; try { body = (await r.text()).slice(0, 300); } catch {}
+        let body = ""; try { body = (await r.text()).slice(0, 300); } catch { body = "(unreadable)"; }
         failedRequests.push({ status: r.status(), method: r.request().method(), url: r.url().replace(/^https?:\/\/[^/]+/, ""), body });
       }
     });
@@ -65,15 +65,17 @@ for (const kid of plan) {
       }, kid.account);
       expect(r, "sign-in").toBe("ok");
     }
-    await page.evaluate(({ kidId, mode, level, modes }) => {
+    await page.evaluate(({ kidId, level, modes, grade }) => {
       if (kidId) localStorage.setItem("kidmath-active-kid", kidId);
+      if (kidId && grade) localStorage.setItem("kidmath-active-kid-grade", grade);
       localStorage.setItem("kidmath-allow-word-problems", "true");
+      if (kidId) localStorage.setItem("kidmath-progress-migrated", kidId);
+      if (level === "grade") return; // let the app seed from the grade (src/gradeSeed.js)
       const key = kidId ? `kidmath-progress:${kidId}` : "kidmath-progress";
       const store = {};
       for (const m of modes) store[m] = { level, mistakeBank: [], totalSessions: 0, lifetimeStars: 0, bankItemStats: {}, recentBankItemIds: [] };
       localStorage.setItem(key, JSON.stringify(store));
-      if (kidId) localStorage.setItem("kidmath-progress-migrated", kidId);
-    }, { kidId: kid.kidId || null, level: kid.startLevel || 1, modes: kid.modes });
+    }, { kidId: kid.kidId || null, level: kid.startLevel || 1, modes: kid.modes, grade: kid.gradeLabel || null });
     // Seeded start level must also reach the cloud for household kids — the
     // first session save does that (read-modify-write), nothing to do here.
 

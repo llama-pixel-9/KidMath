@@ -37,7 +37,7 @@ export default function ProfilePicker() {
   if (!user || kids === null) return null;
 
   const pick = (kid) => {
-    setActiveKid(kid.id);
+    setActiveKid(kid.id, kid.grade);
     navigate("/");
   };
 

@@ -30,7 +30,7 @@ import {
   Heart,
 } from "lucide-react";
 import Feather from "./components/feather.jsx";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { useTheme } from "./useTheme";
 import LarkMark from "./components/LarkMark";
 import { MODE_IDS, MODE_GROUPS, getModeConfig } from "./modes";
@@ -44,7 +44,8 @@ import GrownUpsPanel from "./engagement/GrownUpsPanel.jsx";
 import { usePremium } from "./PremiumContext";
 import { useAuth } from "./useAuth";
 import { isFreeMode } from "./premium";
-import { activeKidId, fetchKids } from "./kidProfiles";
+import { activeKidId, activeKidGrade, fetchKids } from "./kidProfiles";
+import { gradeIndex, parseSpan, gradeFitFor } from "./gradeSeed.js";
 
 const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork, BarChart3, CircleDot, Sigma, Ruler, Coins, Spline, Scale, Clock, ChartColumn, Triangle, Shapes };
 
@@ -123,10 +124,40 @@ const STEPS = [
 
 // §14: one greeting line above the aviary — time of day, first name when we
 // know it, and the star balance. No exclamation stacking, no streak pressure.
-function greetingLine(user, balance) {
+
+/**
+ * Order the topic groups for a kid: groups with at least one mode at their
+ * grade first (in MODE_GROUPS order), then groups they have outgrown, and
+ * groups entirely above their grade folded away. Unknown grade → as authored.
+ */
+function groupsForGrade(grade) {
+  if (gradeIndex(grade) == null) return { mainGroups: MODE_GROUPS, moreGroups: [] };
+  const fit = (g) => {
+    const fits = g.modeIds.map((id) => gradeFitFor(id, grade));
+    return fits.includes("in") ? 0 : fits.every((f) => f === "above") ? 2 : 1;
+  };
+  const ranked = MODE_GROUPS.map((g, i) => ({ g, i, rank: fit(g) })).sort((a, b) => a.rank - b.rank || a.i - b.i);
+  return {
+    mainGroups: ranked.filter((x) => x.rank < 2).map((x) => x.g),
+    moreGroups: ranked.filter((x) => x.rank === 2).map((x) => x.g),
+  };
+}
+
+/** Quick Start: the in-grade mode with the lowest level — the most room to grow. */
+function quickStartFor(grade) {
+  if (gradeIndex(grade) == null) return null;
+  const inGrade = MODE_GROUPS.flatMap((g) => g.modeIds).filter((id) => gradeFitFor(id, grade) === "in");
+  if (!inGrade.length) return null;
+  return inGrade
+    .map((id) => ({ id, level: loadProgressSync(id)?.level || 1 }))
+    .sort((a, b) => a.level - b.level)[0].id;
+}
+
+function greetingLine(user, balance, kidName) {
   const hour = new Date().getHours();
   const dayPart = hour < 12 ? "Morning" : hour < 18 ? "Afternoon" : "Evening";
-  const first = user?.user_metadata?.full_name?.split(" ")[0] || user?.email?.split("@")[0];
+  // The kid is the one playing — greet them, not the parent's e-mail.
+  const first = kidName || user?.user_metadata?.full_name?.split(" ")[0] || user?.email?.split("@")[0];
   const who = first ? `, ${first}` : "";
   const stars = balance > 0 ? ` — ${balance} ${balance === 1 ? "star" : "stars"} in the nest.` : " — pick a game.";
   return `${dayPart}${who}${stars}`;
@@ -147,6 +178,12 @@ export default function HomePage() {
   // with NO profiles (pre-profiles signups) gets a nudge instead — without it
   // there was no route to the add-kid wizard at all.
   const [needsKid, setNeedsKid] = useState(false);
+  // The active kid (name + grade) drives the greeting, the group order and
+  // Quick Start. Grade is cached beside the pointer so first paint has it.
+  const [kid, setKid] = useState(() => {
+    const grade = activeKidGrade();
+    return grade ? { grade } : null;
+  });
   useEffect(() => {
     if (!user) return;
     let alive = true;
@@ -154,9 +191,82 @@ export default function HomePage() {
       if (!alive) return;
       if (kids.length === 0) setNeedsKid(true);
       else if (!activeKidId()) navigate("/profiles");
+      else {
+        const active = kids.find((k) => k.id === activeKidId());
+        if (active) setKid({ name: active.first_name, grade: active.grade });
+      }
     });
     return () => { alive = false; };
   }, [user, navigate]);
+
+  // Groups at the kid's grade first; groups entirely above it fold under
+  // "Explore more" so a kindergartner isn't handed decimals on tile one.
+  const { mainGroups, moreGroups } = useMemo(() => groupsForGrade(kid?.grade), [kid?.grade]);
+  const [showMore, setShowMore] = useState(false);
+  const quickStartMode = useMemo(() => quickStartFor(kid?.grade), [kid?.grade]);
+
+  const renderGroup = (group) => (
+            <motion.div key={group.id} {...fadeUp}>
+              <div className="flex items-baseline justify-between gap-3 mb-3 px-1">
+                <h3 className={`text-xl font-semibold font-display ${theme.textPrimary}`}>
+                  {group.title}
+                </h3>
+                <span className={`text-xs font-bold ${theme.textMuted} whitespace-nowrap`}>
+                  {group.gradeHint}
+                </span>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                {group.modeIds.map((id) => {
+                  const config = getModeConfig(id);
+                  const tint = CARD_TINTS[COLOR_INDEX[id] % CARD_TINTS.length];
+                  const locked = !isFreeMode(id) && !isPremium && !premiumLoading;
+                  const lv = loadProgressSync(id)?.level || 1;
+                  // §03 step 3: the nomination survives leaving the app as a
+                  // Sun pill on the mode's card (Ink text — cream on Sun is
+                  // forbidden).
+                  const nominated = fledgingEnabled() && !locked && Boolean(getNomination(engagement, id));
+                  return (
+                    <button
+                      key={id}
+                      type="button"
+                      className={`relative ${tint.bg} ${tint.edge} btn-press rounded-[20px] p-[18px] text-left cursor-pointer min-h-[150px] flex flex-col gap-2.5`}
+                      onClick={() => (locked ? openPaywall() : navigate(`/play/${id}`))}
+                      aria-label={locked ? `${config.label} (Premium)` : `Play ${config.label}`}
+                    >
+                      {/* Glyph in a 38px cream well, top-left. Locked cards keep
+                          full opacity and swap the glyph for the lock at 40%. */}
+                      <div
+                        className={`inline-flex items-center justify-center w-[38px] h-[38px] rounded-[10px] bg-cream/60 self-start text-ink ${locked ? "opacity-40" : ""}`}
+                      >
+                        {locked ? <Feather name="lock" size={20} /> : <ModeGlyph config={config} />}
+                      </div>
+                      {nominated && (
+                        <span className="absolute top-[18px] right-[18px] bg-sun text-ink text-[12px] font-display font-semibold rounded-full px-2.5 py-[3px] whitespace-nowrap">
+                          Ready to fledge
+                        </span>
+                      )}
+                      <div className="flex-1" />
+                      <h4 className="text-xl font-display font-semibold text-ink leading-[1.15]">
+                        {config.label}
+                      </h4>
+                      {/* Scope line + level badge share one baseline. Scope is
+                          solid Ink — Ink 60% fails contrast on Sun Light. */}
+                      <div className="flex items-center justify-between gap-2">
+                        <span className="text-[13px] font-semibold text-ink leading-tight">
+                          {config.description}
+                        </span>
+                        {!locked && (
+                          <span className="text-[13px] font-display text-ink bg-cream rounded-full px-2.5 py-[3px] whitespace-nowrap flex-none">
+                            {lv > 1 ? `Level ${lv}` : "New"}
+                          </span>
+                        )}
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </motion.div>
+  );
 
   return (
     <main className="min-h-screen">
@@ -227,7 +337,7 @@ export default function HomePage() {
             >
               Pick a Game
             </button>
-            <button className={BTN_SECONDARY} onClick={() => navigate("/play")}>
+            <button className={BTN_SECONDARY} onClick={() => navigate(quickStartMode ? `/play/${quickStartMode}` : "/play")}>
               Quick Start
             </button>
             <button className={BTN_SECONDARY} onClick={() => navigate("/worksheets")}>
@@ -243,7 +353,7 @@ export default function HomePage() {
           className={`text-[26px] font-semibold font-display ${theme.textPrimary} text-center mb-2`}
           {...fadeUp}
         >
-          {greetingLine(user, starBalance(engagement))}
+          {greetingLine(user, starBalance(engagement), kid?.name)}
         </motion.h2>
         <motion.p
           className={`text-center ${theme.textSecondary} mb-10`}
@@ -253,6 +363,21 @@ export default function HomePage() {
         </motion.p>
 
         <div className="space-y-10">
+          {mainGroups.map(renderGroup)}
+          {moreGroups.length > 0 && (
+            <div className="text-center">
+              <button
+                type="button"
+                className="px-5 h-11 rounded-xl bg-white border-[1.5px] border-ink/10 font-bold text-ink cursor-pointer"
+                onClick={() => setShowMore((v) => !v)}
+                aria-expanded={showMore}
+              >
+                {showMore ? "Hide the bigger-kid topics" : `Explore more — ${moreGroups.length} topic${moreGroups.length === 1 ? "" : "s"} for bigger kids`}
+              </button>
+              {showMore && <div className="space-y-10 mt-8 text-left">{moreGroups.map(renderGroup)}</div>}
+            </div>
+          )}
+
           {MODE_GROUPS.map((group) => (
             <motion.div key={group.id} {...fadeUp}>
               <div className="flex items-baseline justify-between gap-3 mb-3 px-1">

@@ -18,8 +18,7 @@ import {
   fetchKids,
   addKid,
   requestParentalConsent,
-  setActiveKid,
-} from "../kidProfiles";
+  setActiveKid, KID_LIMIT_MESSAGE } from "../kidProfiles";
 
 /**
  * §20 screens 03–04 — add a kid, then the soft paywall. Account flow voice is
@@ -90,6 +89,10 @@ function KidStep({ onDone, kidCount }) {
     setBusy(true);
     try {
       let kids = added;
+      if (complete && !room) {
+        setError(KID_LIMIT_MESSAGE);
+        return;
+      }
       if (complete) {
         const kid = await save();
         if (!kid) return; // consent email sent — the pending panel takes over
@@ -410,10 +413,32 @@ export default function OnboardingFlow() {
 
   if (loading || !user || existingKids === null) return null;
 
+  if (step === "kid" && existingKids.length >= MAX_KIDS) {
+    return (
+      <div className="flex-1 flex flex-col">
+        <WizardRail step={2} onBack={() => navigate(-1)} />
+        <main className="flex-1 max-w-3xl mx-auto w-full px-4 py-10">
+          <h1 className="font-display font-semibold text-4xl text-ink m-0">Your nest is full</h1>
+          <p className="mt-3 text-base font-semibold text-ink/70 max-w-xl">{KID_LIMIT_MESSAGE}</p>
+          <div className="mt-8 flex items-center gap-4 flex-wrap">
+            <button
+              type="button"
+              className="px-8 h-14 bg-teal text-cream font-display font-semibold text-xl rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer"
+              onClick={() => navigate("/profiles")}
+            >
+              Pick who's flying
+            </button>
+            <Link to="/account" className="text-teal font-bold text-base">Manage profiles</Link>
+          </div>
+        </main>
+      </div>
+    );
+  }
+
   const finish = (kids) => {
     const all = [...existingKids, ...kids];
     if (all.length === 1) {
-      setActiveKid(all[0].id);
+      setActiveKid(all[0].id, all[0].grade);
       navigate("/", { replace: true });
     } else {
       navigate("/profiles", { replace: true });

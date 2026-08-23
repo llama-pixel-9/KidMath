@@ -99,6 +99,45 @@ describe("review queue QC adapter", () => {
     expect(bare.findings.some((f) => f.id === "decorativeContext")).toBe(false);
   });
 
+  it("fails teacher vocabulary in a kid-facing prompt", () => {
+    const qc = runChecksOnAdminItem(
+      adminItem({
+        modeId: "counting",
+        payload: { a: 4, b: null, op: "count", answer: 4, display: { promptText: "A small set of 4 dots. Subitize the count.", emoji: "🟠", counting: { count: 4 } } },
+      })
+    );
+    expect(qc.findings.some((f) => f.id === "teacherJargon" && f.severity === "fail")).toBe(true);
+    const ok = runChecksOnAdminItem(
+      adminItem({ payload: { a: 2, b: 3, op: "+", answer: 5, display: { promptText: "Split 5 into two parts: 2 and how many more?" } } })
+    );
+    expect(ok.findings.some((f) => f.id === "teacherJargon")).toBe(false);
+  });
+
+  it("fails a counting prompt that describes a picture the item never shows", () => {
+    const bare = runChecksOnAdminItem(
+      adminItem({
+        modeId: "counting",
+        payload: { a: 10, b: null, op: "count", answer: 10, display: { promptText: "A ten frame is filled with a blue chip in every space. How many chips are on the frame?" } },
+      })
+    );
+    expect(bare.findings.some((f) => f.id === "figurelessQuantity" && f.severity === "fail")).toBe(true);
+    const withFigure = runChecksOnAdminItem(
+      adminItem({
+        modeId: "counting",
+        payload: { a: 4, b: null, op: "count", answer: 4, display: { promptText: "How many dots?", emoji: "🟠", counting: { count: 4 } } },
+      })
+    );
+    expect(withFigure.findings.some((f) => f.id === "figurelessQuantity")).toBe(false);
+    const emojiRun = runChecksOnAdminItem(
+      adminItem({ modeId: "counting", payload: { a: 3, b: null, op: "count", answer: 3, display: { promptText: "🍎🍎🍎 = ?" } } })
+    );
+    expect(emojiRun.findings.some((f) => f.id === "figurelessQuantity")).toBe(false);
+    const story = runChecksOnAdminItem(
+      adminItem({ payload: { a: 5, b: 10, op: "-", answer: 5, display: { promptText: "There are 5 seats on the bus and 10 children. How many children have no seat?" } } })
+    );
+    expect(story.findings.some((f) => f.id === "figurelessQuantity")).toBe(false);
+  });
+
   it("reconciles the admin field shape (payload, levelMin/Max) with the check inputs", () => {
     // A malformed adapter would silently pass everything by feeding undefined.
     const qc = runChecksOnAdminItem(adminItem({ payload: undefined }));

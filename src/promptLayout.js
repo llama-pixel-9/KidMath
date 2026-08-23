@@ -8,8 +8,14 @@
 // counting in tens is visible. Pure functions, shared by the renderer and its
 // spec.
 
-const EMOJI_GROUP = "(?:\\p{Extended_Pictographic}[\\uFE0F\\u200D]*){2,}";
+// A run is one or more space-separated groups of pictographs. Groups may be a
+// single glyph ("🟢🟢🟢🟢🟢 🟢" is six dots shown as five-and-one) — requiring
+// two per group split that run and glued the stray dot onto the next label,
+// so "Top row: 5 / Bottom row: 6" rendered as 5 vs 6 (#62). A lone glyph with
+// no neighbours is still text, filtered below by total glyph count.
+const EMOJI_GROUP = "(?:\\p{Extended_Pictographic}[\\uFE0F\\u200D]*)+";
 const EMOJI_RUN_RE = new RegExp(`${EMOJI_GROUP}(?:[ ]+${EMOJI_GROUP})*`, "gu");
+const glyphCount = (s) => Array.from(s.replace(/[\s\uFE0F\u200D]/g, "")).length;
 const SENTENCE_SPLIT_RE = /(?<=[.!?])\s+/;
 const RUN_ROW_GLYPHS = 10;
 const LABEL_INLINE_MAX = 22;
@@ -47,7 +53,7 @@ export function chunkEmojiRun(run) {
 // Returns [{text, isRun}] lines when the prompt contains emoji runs, else null.
 export function emojiPromptLines(promptText) {
   if (!promptText || typeof promptText !== "string") return null;
-  const matches = [...promptText.matchAll(EMOJI_RUN_RE)];
+  const matches = [...promptText.matchAll(EMOJI_RUN_RE)].filter((m) => glyphCount(m[0]) >= 2);
   if (matches.length === 0) return null;
   const lines = [];
   const pushSentences = (text) =>

@@ -16349,7 +16349,7 @@ export const SEED_ITEMS = [
    "display": {
     "part": 0,
     "whole": 2,
-    "promptText": "2 = 0 + ?"
+    "promptText": "0 + ? = 2"
    },
    "answerType": "numberBond"
   }
@@ -16423,7 +16423,7 @@ export const SEED_ITEMS = [
    "display": {
     "part": 3,
     "whole": 6,
-    "promptText": "6 = 3 + ?"
+    "promptText": "? + 3 = 6"
    },
    "answerType": "numberBond"
   }
@@ -16497,7 +16497,7 @@ export const SEED_ITEMS = [
    "display": {
     "part": 0,
     "whole": 9,
-    "promptText": "9 = 0 + ?"
+    "promptText": "0 + ? = 9"
    },
    "answerType": "numberBond"
   }
@@ -16547,7 +16547,7 @@ export const SEED_ITEMS = [
    "display": {
     "part": 10,
     "whole": 11,
-    "promptText": "11 = 10 + ?"
+    "promptText": "10 + ? = 11"
    },
    "answerType": "numberBond"
   }
@@ -16603,7 +16603,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "numberBonds-proc-b0820-085",
+  "itemId": "numberBonds-proc-b0820-086",
   "modeId": "numberBonds",
   "itemFamily": "procedural",
   "subskill": "missingPart",
@@ -16617,11 +16617,11 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "bond",
-   "answer": 5,
+   "answer": 6,
    "display": {
     "part": 9,
-    "whole": 14,
-    "promptText": "14 = 9 + ?"
+    "whole": 15,
+    "promptText": "? + 9 = 15"
    },
    "answerType": "numberBond"
   }
@@ -16695,7 +16695,7 @@ export const SEED_ITEMS = [
    "display": {
     "part": 6,
     "whole": 14,
-    "promptText": "14 = 6 + ?"
+    "promptText": "6 + ? = 14"
    },
    "answerType": "numberBond"
   }
@@ -16746,7 +16746,7 @@ export const SEED_ITEMS = [
    "display": {
     "part": 5,
     "whole": 100,
-    "promptText": "100 = 5 + ?"
+    "promptText": "5 + ? = 100"
    },
    "answerType": "numberBond"
   }
@@ -16820,7 +16820,7 @@ export const SEED_ITEMS = [
    "display": {
     "part": 96,
     "whole": 100,
-    "promptText": "100 = 96 + ?"
+    "promptText": "96 + ? = 100"
    },
    "answerType": "numberBond"
   }
@@ -16894,7 +16894,7 @@ export const SEED_ITEMS = [
    "display": {
     "part": 10,
     "whole": 52,
-    "promptText": "52 = ? + 10"
+    "promptText": "? + 10 = 52"
    },
    "answerType": "numberBond"
   }

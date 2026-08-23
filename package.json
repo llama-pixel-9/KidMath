@@ -18,7 +18,7 @@
     "bank:report": "node scripts/bankReport.js",
     "bank:variety": "node --import ./scripts/lib/registerResolve.js scripts/varietyReport.js",
     "bank:seed": "node scripts/generateBankSeed.js",
-    "bank:export": "node scripts/exportCloudBank.js",
+    "bank:export": "node scripts/exportCloudBank.js && npm run bank:seed:build",
     "bank:split": "node scripts/splitItemBank.js",
     "bank:gen": "node scripts/itemGen/generateDrafts.js",
     "bank:gen:batch": "node scripts/itemGen/generateBatch.js",

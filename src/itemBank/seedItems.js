@@ -529,7 +529,7 @@ export const SEED_ITEMS = [
    "op": "+",
    "answer": 7,
    "display": {
-    "promptText": "Decompose 17 as 10 plus another number: 10 + ? = 17"
+    "promptText": "Split 17 into 10 and another number: 10 + ? = 17"
    }
   }
  },
@@ -660,7 +660,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "addition-conc-makeTen-23-033",
+  "itemId": "addition-conc-makeTen-23-032",
   "modeId": "addition",
   "itemFamily": "conceptual",
   "subskill": "makeTen",
@@ -671,12 +671,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 5,
-   "b": 8,
+   "a": 9,
+   "b": 9,
    "op": "+",
-   "answer": 13,
+   "answer": 18,
    "display": {
-    "promptText": "Open number sentence: 5 + 8 equals what?"
+    "promptText": "Halve and double reasoning: double 9 is 9 + 9. What is the total?"
    }
   }
  },
@@ -697,7 +697,7 @@ export const SEED_ITEMS = [
    "op": "+",
    "answer": 40,
    "display": {
-    "promptText": "Decompose 100 as 60 plus another number: 60 + ? = 100"
+    "promptText": "Split 100 into 60 and another number: 60 + ? = 100"
    }
   }
  },
@@ -933,7 +933,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "addition-conc-makeTen-K1-017",
+  "itemId": "addition-conc-makeTen-K1-018",
   "modeId": "addition",
   "itemFamily": "conceptual",
   "subskill": "makeTen",
@@ -944,12 +944,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 9,
-   "b": 0,
+   "a": 3,
+   "b": 7,
    "op": "+",
-   "answer": 9,
+   "answer": 10,
    "display": {
-    "promptText": "Identity: adding zero leaves a number unchanged. What is 9 + 0?"
+    "promptText": "If 3 + 7 equals 10, what is 7 + 3?"
    }
   }
  },
@@ -4929,7 +4929,7 @@ export const SEED_ITEMS = [
      "kind": "authoredYes"
     },
     "truth": true,
-    "promptText": "Nora partitions a field into two plots and asserts the combined area equals the original. Is the assertion sound? No paper is lost in the cut."
+    "promptText": "Nora cuts a field into two plots and says the two areas add up to the whole field. Nothing is lost in the cut. Is Nora right?"
    }
   }
  },
@@ -7700,7 +7700,7 @@ export const SEED_ITEMS = [
      "w": 846,
      "kind": "unitOf"
     },
-    "promptText": "Partition 846 into 3 identical units. Exactly what is one unit?"
+    "promptText": "Split 846 into 3 equal parts. How big is one part?"
    },
    "answerType": "numberPad"
   }
@@ -10271,7 +10271,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-conc-b0821-0024",
+  "itemId": "counting-conc-b0821-0021",
   "modeId": "counting",
   "itemFamily": "conceptual",
   "subskill": "subitizing",
@@ -10285,15 +10285,15 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": "🐤🐤🐤🐤🐤🐤🐤🐤",
+   "answer": "🔵🔵🔵🔵🔵",
    "choices": [
-    "🐤🐤🐤🐤🐤🐤🐤🐤🐤",
-    "🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤",
-    "🐤🐤🐤🐤🐤🐤🐤🐤",
-    "🐤🐤🐤🐤🐤🐤🐤"
+    "🔵🔵🔵🔵🔵🔵",
+    "🔵🔵🔵🔵🔵🔵🔵",
+    "🔵🔵🔵🔵🔵",
+    "🔵🔵🔵🔵"
    ],
    "display": {
-    "promptText": "Tap the card that shows 8 chicks."
+    "promptText": "Tap the card that shows 5 blue dots."
    }
   }
  },
@@ -10325,7 +10325,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-conc-b0821-0371",
+  "itemId": "counting-conc-b0821-0370",
   "modeId": "counting",
   "itemFamily": "conceptual",
   "subskill": "cardinality",
@@ -10345,16 +10345,16 @@ export const SEED_ITEMS = [
     "Group B"
    ],
    "display": {
-    "promptText": "Group A: 🦋🦋🦋 Group B: 🦋🦋🦋🦋🦋🦋 Which group has fewer butterflies?"
+    "promptText": "Group A: 🎈🎈🎈🎈🎈🎈🎈🎈 Group B: 🎈🎈🎈🎈🎈🎈 Which group has more balloons?"
    }
   }
  },
  {
-  "itemId": "counting-conc-b0821-0047",
+  "itemId": "counting-conc-b0821-0041",
   "modeId": "counting",
   "itemFamily": "conceptual",
   "subskill": "subitizing",
-  "structureType": "fiveAndMoreSee",
+  "structureType": "claimCountJudge",
   "levelRange": [
    1,
    3
@@ -10364,15 +10364,15 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 10,
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
    "display": {
-    "counting": {
-     "kind": "set",
-     "count": 10
-    },
-    "promptText": "Five cookies and some more: 🍪🍪🍪🍪🍪 🍪🍪🍪🍪🍪 How many cookies in all?"
-   },
-   "answerType": "numberPad"
+    "truth": true,
+    "promptText": "Zoe says there are 10 cookies: 🍪🍪🍪🍪🍪 🍪🍪🍪🍪🍪 Is Zoe right?"
+   }
   }
  },
  {
@@ -10482,7 +10482,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-conc-b0821-0072",
+  "itemId": "counting-conc-b0821-0071",
   "modeId": "counting",
   "itemFamily": "conceptual",
   "subskill": "subitizing",
@@ -10496,15 +10496,15 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": "🟠🟠🟠🟠🟠 🟠🟠🟠",
+   "answer": "🐤🐤🐤🐤🐤 🐤🐤",
    "choices": [
-    "7",
-    "⭐⭐⭐⭐⭐ ⭐⭐",
-    "🍪🍪🍪🍪🍪 🍪🍪",
-    "🟠🟠🟠🟠🟠 🟠🟠🟠"
+    "🟠🟠🟠🟠🟠 🟠",
+    "🟢🟢🟢🟢🟢 🟢",
+    "6",
+    "🐤🐤🐤🐤🐤 🐤🐤"
    ],
    "display": {
-    "promptText": "One card does not show 7 stars. Which card is it?"
+    "promptText": "Three of these show 6 dots. Which one does NOT?"
    }
   }
  },
@@ -10536,11 +10536,37 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-conc-b0821-0423",
+  "itemId": "counting-conc-b0821-0422",
   "modeId": "counting",
   "itemFamily": "conceptual",
   "subskill": "cardinality",
   "structureType": "countTeenSet",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "count",
+   "answer": 20,
+   "display": {
+    "counting": {
+     "kind": "set",
+     "count": 20
+    },
+    "promptText": "🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗 | 🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗 How many cars do you see?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "counting-conc-b0821-0089",
+  "modeId": "counting",
+  "itemFamily": "conceptual",
+  "subskill": "subitizing",
+  "structureType": "tenAndMoreSee",
   "levelRange": [
    4,
    6
@@ -10556,33 +10582,7 @@ export const SEED_ITEMS = [
      "kind": "set",
      "count": 13
     },
-    "promptText": "How many apples are there? 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎 | 🍎🍎🍎"
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "counting-conc-b0821-0091",
-  "modeId": "counting",
-  "itemFamily": "conceptual",
-  "subskill": "subitizing",
-  "structureType": "tenAndMoreSee",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 15,
-   "display": {
-    "counting": {
-     "kind": "set",
-     "count": 15
-    },
-    "promptText": "The top row is a full ten. 🐤🐤🐤🐤🐤🐤🐤🐤🐤🐤 | 🐤🐤🐤🐤🐤 How many chicks are there altogether?"
+    "promptText": "Say ten for the full row, then count on: 🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 | 🟢🟢🟢 How many green dots is that?"
    },
    "answerType": "numberPad"
   }
@@ -10696,7 +10696,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-conc-b0821-0131",
+  "itemId": "counting-conc-b0821-0130",
   "modeId": "counting",
   "itemFamily": "conceptual",
   "subskill": "subitizing",
@@ -10710,14 +10710,14 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": "Yes",
+   "answer": "No",
    "choices": [
     "Yes",
     "No"
    ],
    "display": {
-    "truth": true,
-    "promptText": "Rosa counts the rows of ten and says 27 stars. ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐⭐⭐ Is Rosa right?"
+    "truth": false,
+    "promptText": "Lily says these rows show 43 dots: 🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠 | 🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠 | 🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠 | 🟠🟠🟠🟠🟠🟠🟠🟠🟠🟠 | 🟠🟠 Is that right?"
    }
   }
  },
@@ -10749,7 +10749,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-conc-b0821-0473",
+  "itemId": "counting-conc-b0821-0472",
   "modeId": "counting",
   "itemFamily": "conceptual",
   "subskill": "cardinality",
@@ -10763,19 +10763,19 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 9,
+   "answer": 7,
    "display": {
     "counting": {
      "kind": "set",
-     "count": 9
+     "count": 7
     },
-    "promptText": "🦋🐟🐟🐟🐟🦋🐟🐟🦋🐟 | 🐟🦋🦋🐟 How many of these are fish?"
+    "promptText": "Only count the apples: 🍎🎈🍎🎈🍎🍎🎈🍎🍎🍎 | 🎈 How many apples are there?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-conc-b0821-0155",
+  "itemId": "counting-conc-b0821-0153",
   "modeId": "counting",
   "itemFamily": "conceptual",
   "subskill": "subitizing",
@@ -10789,15 +10789,15 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 38,
+   "answer": 31,
    "choices": [
-    39,
-    28,
-    48,
-    38
+    31,
+    32,
+    41,
+    21
    ],
    "display": {
-    "promptText": "Which number do these rows of green dots show? 🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 | 🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 | 🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 | 🟢🟢🟢🟢🟢🟢🟢🟢"
+    "promptText": "Which number do these rows of stars show? ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⭐"
    }
   }
  },
@@ -10987,7 +10987,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-proc-b0821-0378",
+  "itemId": "counting-proc-b0821-0377",
   "modeId": "counting",
   "itemFamily": "procedural",
   "subskill": "cardinality",
@@ -11001,15 +11001,15 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 6,
+   "answer": 5,
    "display": {
-    "count": 6,
+    "count": 5,
     "emoji": "🌸",
     "counting": {
      "kind": "set",
-     "count": 6
+     "count": 5
     },
-    "promptText": "🌸🌸🌸🌸🌸🌸 = ?"
+    "promptText": "🌸🌸🌸🌸🌸 = ?"
    },
    "answerType": "numberPad"
   }
@@ -11233,7 +11233,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-proc-b0821-0434",
+  "itemId": "counting-proc-b0821-0433",
   "modeId": "counting",
   "itemFamily": "procedural",
   "subskill": "cardinality",
@@ -11247,15 +11247,15 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 20,
+   "answer": 19,
    "display": {
-    "count": 20,
+    "count": 19,
     "emoji": "🐟",
     "counting": {
      "kind": "set",
-     "count": 20
+     "count": 19
     },
-    "promptText": "🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟 | 🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟 = ?"
+    "promptText": "🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟 | 🐟🐟🐟🐟🐟🐟🐟🐟🐟 = ?"
    },
    "answerType": "numberPad"
   }
@@ -11484,7 +11484,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-proc-b0821-0496",
+  "itemId": "counting-proc-b0821-0495",
   "modeId": "counting",
   "itemFamily": "procedural",
   "subskill": "cardinality",
@@ -11498,15 +11498,15 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 46,
+   "answer": 45,
    "display": {
-    "count": 46,
+    "count": 45,
     "emoji": "🦋",
     "counting": {
      "kind": "set",
-     "count": 46
+     "count": 45
     },
-    "promptText": "🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋 | 🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋 | 🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋 | 🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋 | 🦋🦋🦋🦋🦋🦋 = ?"
+    "promptText": "🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋 | 🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋 | 🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋 | 🦋🦋🦋🦋🦋🦋🦋🦋🦋🦋 | 🦋🦋🦋🦋🦋 = ?"
    },
    "answerType": "numberPad"
   }
@@ -21435,7 +21435,7 @@ export const SEED_ITEMS = [
      "kind": "equivSaid"
     },
     "truth": true,
-    "promptText": "Omar pairs 2/5 with 4/10 as equivalents. Do they match?"
+    "promptText": "Omar says 2/5 and 4/10 are the same amount. Is Omar right?"
    }
   }
  },
@@ -22358,7 +22358,7 @@ export const SEED_ITEMS = [
      "d": 10,
      "kind": "unitCount"
     },
-    "promptText": "Reading 1/10 as a number: the whole was partitioned how many ways?"
+    "promptText": "In 1/10, how many equal parts is the whole cut into?"
    },
    "answerType": "numberPad"
   }
@@ -35204,7 +35204,7 @@ export const SEED_ITEMS = [
    "op": "count",
    "answer": 20,
    "display": {
-    "promptText": "Omar hears \"twenty\" in the story and writes the numeral. What does Omar write?"
+    "promptText": "Omar hears \"twenty\" in the story and writes it as a number. What does Omar write?"
    },
    "answerType": "numberPad"
   }
@@ -41513,7 +41513,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 8,
    "display": {
-    "promptText": "Decompose 15 as 7 + 8. What is 15 − 7?"
+    "promptText": "15 is 7 + 8. What is 15 − 7?"
    }
   }
  },
@@ -41681,7 +41681,7 @@ export const SEED_ITEMS = [
    "op": "−",
    "answer": 27,
    "display": {
-    "promptText": "Decompose 50 as 23 + 27. What is 50 − 23?"
+    "promptText": "50 is 23 + 27. What is 50 − 23?"
    }
   }
  },

@@ -58,7 +58,14 @@ export default function ProfilePicker() {
               className="block w-full text-left px-3 py-2 rounded-xl text-sm font-bold text-ink cursor-pointer hover:bg-ink/5"
               onClick={() => { setParentOpen(false); setGrownUpsOpen(true); }}
             >
-              Progress report
+              Quick snapshot
+            </button>
+            <button
+              type="button"
+              className="block w-full text-left px-3 py-2 rounded-xl text-sm font-bold text-ink cursor-pointer hover:bg-ink/5"
+              onClick={() => { setParentOpen(false); navigate("/report"); }}
+            >
+              Full progress report
             </button>
             <button
               type="button"

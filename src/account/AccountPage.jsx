@@ -157,6 +157,10 @@ export default function AccountPage() {
 
       <section className="mt-10">
         <h2 className="font-display font-medium text-2xl text-ink m-0">Practice progress we hold</h2>
+        <p className="mt-1 text-sm font-semibold text-ink/60">
+          The readable version — time, accuracy by skill, and missed questions — is the{" "}
+          <Link to="/report" className="text-teal underline">progress report</Link>.
+        </p>
         {progress.length === 0 ? (
           <p className="mt-3 text-sm font-semibold text-ink/50">No cloud progress yet.</p>
         ) : (

@@ -63,6 +63,11 @@ function seededTables() {
       { user_id: PARENT, mode: "addition", item_id: "a1" },
       { user_id: OTHER_PARENT, mode: "addition", item_id: "a2" },
     ],
+    practice_sessions: [
+      { id: "ps-1", user_id: PARENT, kid_id: "kid-1", mode: "addition" },
+      { id: "ps-2", user_id: PARENT, kid_id: "kid-2", mode: "fractions" },
+      { id: "ps-3", user_id: OTHER_PARENT, kid_id: "kid-3", mode: "addition" },
+    ],
     user_preferences: [{ user_id: PARENT, theme: "meadow" }],
     entitlements: [{ user_id: PARENT, status: "active" }],
     session_diagnostics: [{ user_id: PARENT, session_id: "s1" }],
@@ -80,6 +85,7 @@ describe("account deletion purge", () => {
       "consent_events",
       "entitlements",
       "kid_profiles",
+      "practice_sessions",
       "profiles",
       "progress",
       "progress_item_stats",
@@ -115,6 +121,8 @@ describe("account deletion purge", () => {
     await purgeKidData(fakeDb(tables), { userId: PARENT, kidId: "kid-1" });
     expect(tables.kid_profiles.map((k) => k.id)).toEqual(["kid-2", "kid-3"]);
     expect(tables.progress).toHaveLength(3);
+    // The child's practice log goes with the profile; siblings' logs stay.
+    expect(tables.practice_sessions.map((r) => r.id)).toEqual(["ps-2", "ps-3"]);
   });
 
   it("refuses to delete a kid across accounts (kidId + userId must both match)", async () => {

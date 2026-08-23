@@ -151,6 +151,11 @@ Reruns also overwrite same-cell draft ids — be skip-existing aware.
   a widget keeps the previous question's state.
 - **Engagement state is localStorage-only (v1)** behind a swappable store API;
   cloud sync is a future migration, so don't hand-roll persistence around it.
+- **The practice log (`src/analytics/sessionLog.js`, table `practice_sessions`)**
+  is the parent report's source: one record per finished session with every
+  attempt (prompt, answer, given, ms, subskill), per kid. Local mirror + cloud
+  when signed in. `buildReport` in `reportModel.js` is pure — keep it that way,
+  it is meant to run server-side for the emailed edition (`docs/parent-report.md`).
 - **`entitlements` is a v1 client-write trust model.** Hardening (Edge Function
   receipt validation) is planned, not done — don't assume the row is server-verified.
 
@@ -231,6 +236,7 @@ Product IDs: `com.kidmath.app.premium.{monthly,annual}`.
 | Problem-type research (K–4) | `research-k4-problem-types.md` |
 | Item metadata schema | `item-metadata-model.md` |
 | Ship checklists | `ios-appstore-checklist.md`, `stripe-setup.md` |
+| Parent report + practice log, email plan | `parent-report.md` |
 | Why we skipped RevenueCat (billing decision) | `billing-revenuecat-decision.md` |
 | Source licensing / attribution | `bank-sources.md`, `resources/README.md` |
 

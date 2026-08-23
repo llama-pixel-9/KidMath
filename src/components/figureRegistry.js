@@ -3,6 +3,8 @@ import Pictograph from "./Pictograph.jsx";
 import TallyChart from "./TallyChart.jsx";
 import LinePlot from "./LinePlot.jsx";
 import AreaFigure from "./AreaFigure.jsx";
+import CubeGrid from "./CubeGrid.jsx";
+import CoordGrid from "./CoordGrid.jsx";
 import { areaFigureSpec } from "./areaFigureSpec.js";
 
 /**
@@ -43,6 +45,14 @@ export const FIGURES = {
   areaFigure: {
     Component: AreaFigure,
     props: (q) => ({ spec: areaFigureSpec(q) }),
+  },
+  cubeGrid: {
+    Component: CubeGrid,
+    props: (q) => ({ l: q.display?.cube?.l, w: q.display?.cube?.w, h: q.display?.cube?.h }),
+  },
+  coordGrid: {
+    Component: CoordGrid,
+    props: (q) => ({ max: q.display?.coord?.max, points: q.display?.coord?.points }),
   },
 };
 

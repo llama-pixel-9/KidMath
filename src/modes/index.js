@@ -20,6 +20,9 @@ import time from "./time";
 import dataGraphs from "./dataGraphs";
 import angles from "./angles";
 import linesShapes from "./linesShapes";
+import fractionOps from "./fractionOps";
+import decimalOps from "./decimalOps";
+import volumeCoordinates from "./volumeCoordinates";
 
 const ALL_MODES = [
   addition,
@@ -44,6 +47,9 @@ const ALL_MODES = [
   dataGraphs,
   angles,
   linesShapes,
+  fractionOps,
+  decimalOps,
+  volumeCoordinates,
 ];
 
 export const modeRegistry = Object.fromEntries(ALL_MODES.map((m) => [m.id, m]));
@@ -75,8 +81,8 @@ export const MODE_GROUPS = [
   {
     id: "fractionsDecimals",
     title: "Fractions & Decimals",
-    gradeHint: "Grades 3-4",
-    modeIds: ["fractions", "decimals"],
+    gradeHint: "Grades 3-5",
+    modeIds: ["fractions", "decimals", "fractionOps", "decimalOps"],
   },
   {
     id: "measureMoneyTime",
@@ -87,8 +93,8 @@ export const MODE_GROUPS = [
   {
     id: "shapesData",
     title: "Shapes & Data",
-    gradeHint: "Grades 3-4",
-    modeIds: ["linesShapes", "angles", "dataGraphs"],
+    gradeHint: "Grades 3-5",
+    modeIds: ["linesShapes", "angles", "dataGraphs", "volumeCoordinates"],
   },
 ];
 

@@ -11,7 +11,10 @@
 
 import { runChecks } from "../../src/itemBank/qc/checks.js";
 import { validateBankItem, findPromptOveruse, levelRangeToBands } from "../../src/itemBank/index.js";
-import { BUNDLED_ITEMS } from "../../src/itemBank/bundle.js";
+// FULL_ITEMS, not the first-paint seed: prompt uniqueness is bank-wide, and
+// deduping against the 1,600-item seed let cross-mode duplicates through
+// (decimals b0821 vs decimalOps b0824).
+import { FULL_ITEMS as BUNDLED_ITEMS } from "../../src/itemBank/fullBank.js";
 import { writeDrafts } from "./writeDrafts.js";
 
 const FAMILIES = ["procedural", "conceptual", "application"];
@@ -59,7 +62,9 @@ export async function runAssembler({ modeId, subskills, rawItems, extraProblems,
   }
 
   const newIds = new Set(items.map((i) => i.itemId));
-  const bundledOther = BUNDLED_ITEMS.filter((b) => !newIds.has(b.itemId));
+  // Exclude the batch's own prior rows entirely (not just same-id): a rerun
+  // reshuffles content across ids, and the whole batch is being replaced.
+  const bundledOther = BUNDLED_ITEMS.filter((b) => !newIds.has(b.itemId) && !b.itemId.includes(`-${batchTag}-`));
   const seen = new Map();
   for (const b of bundledOther) {
     const t = b.question?.display?.promptText;

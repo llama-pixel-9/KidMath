@@ -851,7 +851,7 @@ export const FLIGHT_LOG_PROMPT_PART_B = 6;
 // eight of them cannot share one page (measured by the print e2e).
 export const FLIGHT_LOG_FIGURE_PART_A = 2;
 export const FLIGHT_LOG_FIGURE_PART_B = 2;
-const FIGURE_MODES = new Set(["dataGraphs"]);
+const FIGURE_MODES = new Set(["dataGraphs", "volumeCoordinates"]);
 
 const ARITH_OPS = { "+": (a, b) => a + b, "-": (a, b) => a - b, "x": (a, b) => a * b, "/": (a, b) => a / b };
 

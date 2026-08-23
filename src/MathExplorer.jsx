@@ -953,8 +953,11 @@ export default function MathExplorer({ initialMode }) {
       const passed = (sess.firstTryCorrect ?? 0) >= FLEDGING_PASS;
       recordFledgingResult(mode, passed);
       const newLevel = passed ? Math.min(sess.level + 1, 10) : sess.level;
-      // The practice log must not depend on the progress save: a rejected
-      // progress row (RLS/constraint/network) used to drop the session record too.
+      // Practice log first and independent of the progress save (see finishSession).
+      saveSessionRecord(closeSessionRecord(sessionRecordRef.current, sess, { starsEarned: 0, levelEnd: newLevel })).catch(
+        (err) => console.warn("practice log save failed", err)
+      );
+      sessionRecordRef.current = null;
       try {
         await saveProgress(mode, {
           level: newLevel,
@@ -967,10 +970,6 @@ export default function MathExplorer({ initialMode }) {
       } catch (err) {
         console.warn("progress save failed", err);
       }
-      saveSessionRecord(closeSessionRecord(sessionRecordRef.current, sess, { starsEarned: 0, levelEnd: newLevel })).catch(
-        (err) => console.warn("practice log save failed", err)
-      );
-      sessionRecordRef.current = null;
       setFledgingActive(false);
       setFledgingResult({ passed, newLevel });
       if (passed) playLevelUpSound();
@@ -994,8 +993,14 @@ export default function MathExplorer({ initialMode }) {
         })
       : null;
     const levelAfter = fledgeOutcome?.glideDown ? Math.max(1, sess.level - 1) : sess.level;
-    // Save the practice log regardless of whether the progress save succeeds —
-    // a rejected progress row must not erase the session from the parent report.
+    // Save the practice log FIRST and independently of the progress save: its
+    // local mirror is written synchronously, so a tab closed during the cloud
+    // round-trip (or a rejected progress row) cannot erase the session from the
+    // parent report.
+    saveSessionRecord(closeSessionRecord(sessionRecordRef.current, sess, { starsEarned, levelEnd: levelAfter })).catch(
+      (err) => console.warn("practice log save failed", err)
+    );
+    sessionRecordRef.current = null;
     let lt = null;
     try {
       lt = await persistSession(
@@ -1009,10 +1014,6 @@ export default function MathExplorer({ initialMode }) {
     }
     if (lt !== null) setLifetimeStars(lt);
     setFlightPayout(payout);
-    saveSessionRecord(closeSessionRecord(sessionRecordRef.current, sess, { starsEarned, levelEnd: levelAfter })).catch(
-      (err) => console.warn("practice log save failed", err)
-    );
-    sessionRecordRef.current = null;
     // The engagement loop: bank today's stars, roll the day streak, and hand
     // the report the moments worth celebrating.
     const { state: eng, events } = recordSessionEnd(starsEarned, {

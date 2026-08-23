@@ -12,6 +12,7 @@ const EMOJI_GROUP = "(?:\\p{Extended_Pictographic}[\\uFE0F\\u200D]*){2,}";
 const EMOJI_RUN_RE = new RegExp(`${EMOJI_GROUP}(?:[ ]+${EMOJI_GROUP})*`, "gu");
 const SENTENCE_SPLIT_RE = /(?<=[.!?])\s+/;
 const RUN_ROW_GLYPHS = 10;
+const LABEL_INLINE_MAX = 22;
 
 // Reflow one emoji run into rows of at most ten glyphs, keeping any authored
 // sub-grouping ("🍎🍎  🍎🍎" pairs) intact within a row.
@@ -64,7 +65,11 @@ export function emojiPromptLines(promptText) {
       sentences.forEach((s) => lines.push({ text: s, isRun: false }));
     }
     const rows = chunkEmojiRun(m[0].trim());
-    if (label && rows.length === 1) {
+    // A short label ("Group A:") shares the line with its run. A sentence-long
+    // label ("Priya counted these cars and said 17:") plus a run of ten is
+    // wider than the card, so it becomes its own text line above the picture.
+    const shortLabel = label && label.length <= LABEL_INLINE_MAX;
+    if (shortLabel && rows.length === 1) {
       // `label`/`run` are kept apart so the renderer can space out the run's
       // glyphs without stretching the label's letters.
       lines.push({ text: `${label} ${rows[0]}`, isRun: true, label, run: rows[0] });

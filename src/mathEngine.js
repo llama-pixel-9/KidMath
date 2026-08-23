@@ -33,8 +33,13 @@ const LADDER_V2_MIN_SAMPLES = 5;
 const LADDER_V2_MISSES_TO_DEMOTE = 3;
 const MAX_BANK_ITEM_STATS = 200;
 
-function clampLevel(level) {
-  return Math.max(1, Math.min(MAX_LEVEL, level));
+function clampLevel(level, max = MAX_LEVEL) {
+  return Math.max(1, Math.min(max, level));
+}
+
+/** Per-mode ladder length: Grade-5 modes run to 12, everything else to 10. */
+function modeMaxLevel(modeId) {
+  return getModeConfig(modeId)?.maxLevel ?? MAX_LEVEL;
 }
 
 function createSkillMastery(modeConfig) {
@@ -218,7 +223,7 @@ export function resetBankFallbackStats() {
 
 export function generateQuestion(mode, level, context = null) {
   const config = getModeConfig(mode);
-  const targetLevel = clampLevel(level);
+  const targetLevel = clampLevel(level, config.maxLevel ?? MAX_LEVEL);
   const q = config.generate(targetLevel, context || undefined);
   const generatedFamily = q.metadata?.itemFamily;
   const isApplication = generatedFamily === ITEM_FAMILIES.APPLICATION;
@@ -320,7 +325,7 @@ function finalizeQuestion(mode, bankQuestion, q) {
  */
 export function buildBankQuestion(bankItem, level = null) {
   const mode = bankItem.modeId;
-  const targetLevel = clampLevel(level ?? bankItem.levelRange?.[0] ?? 1);
+  const targetLevel = clampLevel(level ?? bankItem.levelRange?.[0] ?? 1, modeMaxLevel(mode));
   const bankQuestion = buildQuestionFromBankItem(bankItem, targetLevel);
   // The generator's question supplies the full metadata scaffold (gradeBand,
   // domain, practices...) exactly as it does on the session path.
@@ -718,14 +723,14 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
       // §03: the signal nominates — nothing interrupts the round, the level
       // holds, and the Fledging Flight is offered at the next take-off. A
       // challenge set never nominates (it IS the test).
-      if (promotionSignal && !next.challengeSubskills && !next.nominated && next.level < MAX_LEVEL) {
+      if (promotionSignal && !next.challengeSubskills && !next.nominated && next.level < modeMaxLevel(session.mode)) {
         next.nominated = true;
         next.nominationWeakSubskills = weakestSubskillList(next, getModeConfig(session.mode));
       }
       return { session: next, correct: true, levelChanged: false, newLevel: next.level };
     }
 
-    if (promotionSignal && next.level < MAX_LEVEL) {
+    if (promotionSignal && next.level < modeMaxLevel(session.mode)) {
       next.level = next.level + 1;
       next.correctStreak = 0;
       next.mistakesAtLevel = 0;

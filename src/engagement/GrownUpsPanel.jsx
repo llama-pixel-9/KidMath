@@ -6,6 +6,7 @@ import { useTheme } from "../useTheme.js";
 import { MODE_IDS, getModeConfig } from "../modes";
 import { loadProgressSync, loadProgressSummary } from "../progressStore";
 import { loadEngagement, starBalance, currentStreak } from "./engagementStore.js";
+import { gradeWorkForLevel } from "../gradeSeed.js";
 import { gradeSpanFor } from "./gradeSpans.js";
 import { SPECIES_BY_ID } from "./roster.js";
 import { meadowEnabled } from "../gamificationFlags.js";
@@ -151,7 +152,10 @@ export default function GrownUpsPanel({ open, onClose }) {
                       </td>
                       {/* Parents get plain vocabulary — no rank names here (bird
                           language is kid-surface only). */}
-                      <td className="py-2 text-slate-600 font-semibold">Level {level} of 10</td>
+                      <td className="py-2 text-slate-600 font-semibold">
+                        Level {level} of {getModeConfig(id).maxLevel ?? 10}
+                        <span className="block text-[11px] font-semibold text-slate-400">{gradeWorkForLevel(id, level)} work</span>
+                      </td>
                       <td className="py-2 text-right font-bold text-slate-700">{progress.lifetimeStars ?? 0}</td>
                       <td className="py-2 text-right">
                         {reviewCount > 0 ? (

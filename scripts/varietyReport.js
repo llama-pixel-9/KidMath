@@ -217,7 +217,10 @@ export function buildReport({
   for (const modeId of modeIds) {
     const mode = registry[modeId];
     if (!mode || typeof mode.generate !== "function") continue;
-    for (const level of levels) {
+    const top = mode.maxLevel ?? Math.max(...levels);
+    const modeLevels = [...levels.filter((l) => l <= top)];
+    for (let l = Math.max(...levels) + 1; l <= top; l += 1) modeLevels.push(l);
+    for (const level of modeLevels) {
       cells.push({ modeId, level, ...sampleCell(mode, level, samples) });
     }
   }

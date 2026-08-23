@@ -33,7 +33,7 @@ const MODES = ["fractionOps", "decimalOps", "volumeCoordinates"];
 const BANDS = [
   { band: 1, levels: [1, 2, 3], range: [1, 3] },
   { band: 2, levels: [4, 5, 6], range: [4, 6] },
-  { band: 3, levels: [7, 8, 9, 10], range: [7, 10] },
+  { band: 3, levels: [7, 8, 9, 10], range: [7, 12] },
 ];
 const FLOOR = 52;
 const CANDIDATE_TRIES = 4000;

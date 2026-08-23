@@ -689,7 +689,8 @@ export default {
   op: "fracops",
   subskills: SUBSKILLS,
   // Band-scoped subskills — coverage gates and targeting respect these ranges.
-  subskillLevels: { multiplyFractions: [4, 10], divideUnitFractions: [7, 10], fractionOfWhole: [1, 6] },
+  maxLevel: 12,
+  subskillLevels: { multiplyFractions: [4, 12], divideUnitFractions: [7, 12], fractionOfWhole: [1, 6] },
   supportedFormats: [],
   families: Object.values(ITEM_FAMILIES),
   varieties: FRACTION_OPS_VARIETIES,

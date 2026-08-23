@@ -94,7 +94,7 @@ final class ProgressStore {
             let cloudMistakes = (cloud["mistakeBank"] as? [[String: Any]] ?? [])
             let merged: [String: Any] = [
                 "level": max(
-                    Self.clampLevel(Self.int(local["level"], default: 1)),
+                    Self.clampLevel(Self.int(local["level"], default: 1), mode: mode),
                     Self.int(cloud["level"], default: Self.startingLevel)
                 ),
                 "mistake_bank": cloudMistakes.isEmpty ? Array(localMistakes.prefix(Self.maxPersistedMistakes)) : cloudMistakes,
@@ -153,7 +153,7 @@ final class ProgressStore {
     func loadLocal(mode: String) -> [String: Any] {
         guard let entry = readLocalStore()[mode] else { return Self.blankProgress(mode: mode) }
         return [
-            "level": Self.clampLevel(Self.int(entry["level"], default: Self.startingLevel)),
+            "level": Self.clampLevel(Self.int(entry["level"], default: Self.startingLevel), mode: mode),
             "mistakeBank": entry["mistakeBank"] as? [[String: Any]] ?? [],
             "totalSessions": Self.int(entry["totalSessions"]),
             "lifetimeStars": Self.int(entry["lifetimeStars"]),
@@ -168,7 +168,7 @@ final class ProgressStore {
         let mistakes = (data["mistakeBank"] as? [[String: Any]] ?? []).prefix(Self.maxPersistedMistakes)
         let recent = (data["recentBankItemIds"] as? [String] ?? []).suffix(Self.maxPersistedRecentIds)
         store[mode] = [
-            "level": Self.clampLevel(Self.int(data["level"], default: Self.startingLevel)),
+            "level": Self.clampLevel(Self.int(data["level"], default: Self.startingLevel), mode: mode),
             "mistakeBank": Array(mistakes),
             "totalSessions": Self.int(previous["totalSessions"]) + 1,
             "lifetimeStars": Self.int(previous["lifetimeStars"]) + Self.starsEarned(from: data),
@@ -198,7 +198,7 @@ final class ProgressStore {
             return blank
         }
         return [
-            "level": Self.clampLevel(Self.int(row["level"], default: Self.startingLevel)),
+            "level": Self.clampLevel(Self.int(row["level"], default: Self.startingLevel), mode: mode),
             "mistakeBank": row["mistake_bank"] as? [[String: Any]] ?? [],
             "totalSessions": Self.int(row["total_sessions"]),
             "lifetimeStars": Self.int(row["lifetime_stars"]),
@@ -211,7 +211,7 @@ final class ProgressStore {
     private func saveCloud(userId: UUID, kidId: UUID?, mode: String, data: [String: Any]) async {
         let existing = await loadCloud(userId: userId, kidId: kidId, mode: mode)
         let row: [String: Any] = [
-            "level": Self.clampLevel(Self.int(data["level"], default: Self.startingLevel)),
+            "level": Self.clampLevel(Self.int(data["level"], default: Self.startingLevel), mode: mode),
             "mistake_bank": Array((data["mistakeBank"] as? [[String: Any]] ?? []).prefix(Self.maxPersistedMistakes)),
             "total_sessions": Self.int(existing["totalSessions"]) + 1,
             "lifetime_stars": Self.int(existing["lifetimeStars"]) + Self.starsEarned(from: data),
@@ -238,8 +238,9 @@ final class ProgressStore {
         (value as? NSNumber)?.doubleValue ?? fallback
     }
 
-    nonisolated static func clampLevel(_ level: Int) -> Int {
-        min(maxLevel, max(1, level))
+    nonisolated static func clampLevel(_ level: Int, mode: String? = nil) -> Int {
+        let cap = mode.map { GradeSeed.maxLevel(mode: $0) } ?? maxLevel
+        return min(cap, max(1, level))
     }
 
     /// §01: `starsEarned` (the flight payout) wins when present — including an

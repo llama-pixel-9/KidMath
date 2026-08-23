@@ -70,6 +70,7 @@ import FlightReport from "./engagement/FlightReport.jsx";
 // — the difficult-tier trap the Word Detective badge rewards beating.
 const LANGUAGE_TRAP_STRUCTURES = new Set(["compareBiggerFewer", "compareSmallerMore"]);
 import { useAuth } from "./useAuth";
+import { maxLevelForMode } from "./modeLevels.js";
 import { useTheme } from "./useTheme";
 import {
   playCorrectSound,
@@ -340,7 +341,7 @@ function FledgingOffer({ level, onAccept, onDecline }) {
           Ready for higher skies?
         </h2>
         <p className="text-[15px] font-semibold text-ink/80 mt-2">
-          Six questions, five to pass — and Level {Math.min(level + 1, 10)} is yours. No stars
+          Six questions, five to pass — and Level {level + 1} is yours. No stars
           ride on this one.
         </p>
         <button
@@ -364,7 +365,7 @@ function FledgingOffer({ level, onAccept, onDecline }) {
 // §17 fledging moment: lark on the Apricot disc, a flight word, the level bar
 // filling over 600ms, one button, auto-advance at 4s. No confetti — that
 // belongs to the end of a run only. The miss copy is kind and keeps the door open.
-function FledgingCeremony({ passed, level, onContinue }) {
+function FledgingCeremony({ passed, level, maxLevel = 10, onContinue }) {
   useEffect(() => {
     const t = setTimeout(onContinue, 4000);
     return () => clearTimeout(t);
@@ -396,8 +397,8 @@ function FledgingCeremony({ passed, level, onContinue }) {
         <div className="mt-4 h-2.5 rounded-full bg-ink/10 overflow-hidden">
           <motion.div
             className="h-full rounded-full bg-teal"
-            initial={{ width: `${((passed ? level - 1 : level) / 10) * 100}%` }}
-            animate={{ width: `${(level / 10) * 100}%` }}
+            initial={{ width: `${((passed ? level - 1 : level) / maxLevel) * 100}%` }}
+            animate={{ width: `${(level / maxLevel) * 100}%` }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           />
         </div>
@@ -426,7 +427,7 @@ const END_CARD_PUNS = [
   "Feather in your cap!",
 ];
 
-function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, lifetimeStars, engagement, lowMotionMode = false, onPlayAgain }) {
+function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, maxLevel = 10, lifetimeStars, engagement, lowMotionMode = false, onPlayAgain }) {
   const { theme } = useTheme();
   const navigate = useNavigate();
   const ratio = total > 0 ? firstTryCorrect / total : 0;
@@ -493,7 +494,7 @@ function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, li
           </motion.p>
         )}
         <div className="mt-3">
-          <JourneyMap level={level} compact />
+          <JourneyMap level={level} maxLevel={maxLevel} compact />
         </div>
         {engagement?.goalJustMet && (
           <motion.p
@@ -987,7 +988,7 @@ export default function MathExplorer({ initialMode }) {
       fledgingRunRef.current = false;
       const passed = (sess.firstTryCorrect ?? 0) >= FLEDGING_PASS;
       recordFledgingResult(mode, passed);
-      const newLevel = passed ? Math.min(sess.level + 1, 10) : sess.level;
+      const newLevel = passed ? Math.min(sess.level + 1, maxLevelForMode(mode)) : sess.level;
       // Practice log first and independent of the progress save (see finishSession).
       saveSessionRecord(closeSessionRecord(sessionRecordRef.current, sess, { starsEarned: 0, levelEnd: newLevel })).catch(
         (err) => console.warn("practice log save failed", err)
@@ -1441,6 +1442,7 @@ export default function MathExplorer({ initialMode }) {
         {fledgingResult && (
           <FledgingCeremony
             passed={fledgingResult.passed}
+            maxLevel={maxLevelForMode(mode)}
             level={fledgingResult.newLevel}
             onContinue={() => {
               setFledgingResult(null);
@@ -1471,6 +1473,7 @@ export default function MathExplorer({ initialMode }) {
         {showComplete &&
           (gamFlightReport && flightPayout ? (
             <FlightReport
+              maxLevel={maxLevelForMode(mode)}
               payout={flightPayout}
               total={session.questionsAnswered}
               level={session.level}
@@ -1482,6 +1485,7 @@ export default function MathExplorer({ initialMode }) {
             />
           ) : (
             <SetCompleteOverlay
+              maxLevel={maxLevelForMode(mode)}
               firstTryCorrect={session.firstTryCorrect}
               retriesMastered={session.retriesMastered}
               total={session.questionsAnswered}

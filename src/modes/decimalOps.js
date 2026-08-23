@@ -638,7 +638,8 @@ export default {
   op: "decops",
   subskills: SUBSKILLS,
   // Band-scoped subskills — coverage gates and targeting respect these ranges.
-  subskillLevels: { powersOfTen: [4, 10], multiplyDivideDecimals: [7, 10], thousandthsSense: [1, 6] },
+  maxLevel: 12,
+  subskillLevels: { powersOfTen: [4, 12], multiplyDivideDecimals: [7, 12], thousandthsSense: [1, 6] },
   supportedFormats: [],
   families: Object.values(ITEM_FAMILIES),
   varieties: DECIMAL_OPS_VARIETIES,

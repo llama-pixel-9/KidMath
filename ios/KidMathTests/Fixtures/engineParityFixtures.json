@@ -416,6 +416,12 @@
       "expectedJSON": "{\"op\":\"fracops\",\"answer\":\"1/30\",\"answerType\":\"fraction\",\"level\":7,\"display\":{\"promptText\":\"1/5 ÷ 6 = ?\"},\"metadata\":{\"modeId\":\"fractionOps\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"NF\",\"cluster\":\"Use equivalent fractions to add, subtract, multiply and divide fractions\",\"subskill\":\"divideUnitFractions\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP1\",\"MP2\",\"MP7\"],\"standardRefs\":[\"5.NF\"],\"misconceptionTags\":[\"dividesTheWrongWay\"],\"blueprintId\":\"fractionOps-procedural-unitFractionDivide\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"unitFractionDivide\"},\"mode\":\"fractionOps\",\"itemKey\":\"fractionOps::fracops::::::1/30::divideUnitFractions::fractionOps-procedural-unitFractionDivide::|1/5 ÷ 6 = ?|||\"}"
     },
     {
+      "mode": "fractionOps",
+      "level": 11,
+      "seed": 89710,
+      "expectedJSON": "{\"op\":\"fracops\",\"answer\":\"1/8\",\"answerType\":\"fraction\",\"level\":11,\"display\":{\"promptText\":\"1/2 ÷ 4 = ?\"},\"metadata\":{\"modeId\":\"fractionOps\",\"level\":11,\"gradeBand\":\"4-5\",\"domain\":\"NF\",\"cluster\":\"Use equivalent fractions to add, subtract, multiply and divide fractions\",\"subskill\":\"divideUnitFractions\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP1\",\"MP2\",\"MP7\"],\"standardRefs\":[\"5.NF\"],\"misconceptionTags\":[\"dividesTheWrongWay\"],\"blueprintId\":\"fractionOps-procedural-unitFractionDivide\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"unitFractionDivide\"},\"mode\":\"fractionOps\",\"itemKey\":\"fractionOps::fracops::::::1/8::divideUnitFractions::fractionOps-procedural-unitFractionDivide::|1/2 ÷ 4 = ?|||\"}"
+    },
+    {
       "mode": "decimalOps",
       "level": 1,
       "seed": 10254,
@@ -434,6 +440,12 @@
       "expectedJSON": "{\"op\":\"decops\",\"answer\":\"4.08\",\"answerType\":\"decimal\",\"level\":7,\"display\":{\"promptText\":\"Leo measures 1.45 liters and then 2.63 liters more. How many liters is that in all?\"},\"metadata\":{\"modeId\":\"decimalOps\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"NBT\",\"cluster\":\"Perform operations with decimals to hundredths\",\"subskill\":\"addSubDecimals\",\"itemFamily\":\"application\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP2\",\"MP6\",\"MP7\"],\"standardRefs\":[\"5.NBT\"],\"misconceptionTags\":[\"misalignsPlaces\"],\"blueprintId\":\"decimalOps-application-measureStoryHundredths\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"measureStoryHundredths\"},\"mode\":\"decimalOps\",\"itemKey\":\"decimalOps::decops::::::4.08::addSubDecimals::decimalOps-application-measureStoryHundredths::|Leo measures 1.45 liters and then 2.63 liters more. How many liters is that in all?|||\"}"
     },
     {
+      "mode": "decimalOps",
+      "level": 11,
+      "seed": 89444,
+      "expectedJSON": "{\"op\":\"decops\",\"answer\":\"11.25\",\"answerType\":\"decimal\",\"level\":11,\"display\":{\"promptText\":\"7.79 + 3.46 = ?\"},\"metadata\":{\"modeId\":\"decimalOps\",\"level\":11,\"gradeBand\":\"4-5\",\"domain\":\"NBT\",\"cluster\":\"Perform operations with decimals to hundredths\",\"subskill\":\"addSubDecimals\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP6\",\"MP7\"],\"standardRefs\":[\"5.NBT\"],\"misconceptionTags\":[\"misalignsPlaces\"],\"blueprintId\":\"decimalOps-procedural-hundredthsAddSub\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"hundredthsAddSub\"},\"mode\":\"decimalOps\",\"itemKey\":\"decimalOps::decops::::::11.25::addSubDecimals::decimalOps-procedural-hundredthsAddSub::|7.79 + 3.46 = ?|||\"}"
+    },
+    {
       "mode": "volumeCoordinates",
       "level": 1,
       "seed": 11957,
@@ -450,6 +462,12 @@
       "level": 7,
       "seed": 59471,
       "expectedJSON": "{\"op\":\"volume\",\"answer\":60,\"answerType\":\"numberPad\",\"level\":7,\"display\":{\"promptText\":\"June packs a storage bin that is 6 × 2 × 5 units. How many unit cubes fit inside?\"},\"distractorContext\":{\"a\":12,\"b\":5},\"metadata\":{\"modeId\":\"volumeCoordinates\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"MD\",\"cluster\":\"Geometric measurement: volume; graph points on the coordinate plane\",\"subskill\":\"volumeFormula\",\"itemFamily\":\"application\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"verbalContext\",\"mathPractices\":[\"MP2\",\"MP4\",\"MP7\"],\"standardRefs\":[\"5.MD\",\"5.G\"],\"misconceptionTags\":[\"addsDimensions\"],\"blueprintId\":\"volumeCoordinates-application-aquariumStory\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"aquariumStory\"},\"mode\":\"volumeCoordinates\",\"itemKey\":\"volumeCoordinates::volume::::::60::volumeFormula::volumeCoordinates-application-aquariumStory::|June packs a storage bin that is 6 × 2 × 5 units. How many unit cubes fit inside?|||\"}"
+    },
+    {
+      "mode": "volumeCoordinates",
+      "level": 11,
+      "seed": 91147,
+      "expectedJSON": "{\"op\":\"volume\",\"answer\":12,\"answerType\":\"numberPad\",\"level\":11,\"display\":{\"promptText\":\"Start at (2, 3). Each step adds 1 across and 3 up. After 3 steps, what is the y-coordinate?\"},\"metadata\":{\"modeId\":\"volumeCoordinates\",\"level\":11,\"gradeBand\":\"4-5\",\"domain\":\"MD\",\"cluster\":\"Geometric measurement: volume; graph points on the coordinate plane\",\"subskill\":\"plotAndRead\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK3\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP4\",\"MP7\"],\"standardRefs\":[\"5.MD\",\"5.G\"],\"misconceptionTags\":[\"swapsXandY\"],\"blueprintId\":\"volumeCoordinates-conceptual-coordinatePattern\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"coordinatePattern\"},\"mode\":\"volumeCoordinates\",\"itemKey\":\"volumeCoordinates::volume::::::12::plotAndRead::volumeCoordinates-conceptual-coordinatePattern::|Start at (2, 3). Each step adds 1 across and 3 up. After 3 steps, what is the y-coordinate?|||\"}"
     }
   ]
 }

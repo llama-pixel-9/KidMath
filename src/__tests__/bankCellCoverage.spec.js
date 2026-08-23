@@ -22,7 +22,8 @@ describe("bank cell coverage (generator retirement gate)", () => {
   let cells = 0;
   for (const modeId of modeIds) {
     const cfg = getModeConfig(modeId);
-    for (let level = 1; level <= MAX_LEVEL; level += 1) {
+    const topLevel = cfg.maxLevel ?? MAX_LEVEL;
+    for (let level = 1; level <= topLevel; level += 1) {
       for (const family of FAMILIES) {
         for (const subskill of cfg.subskills) {
           // A band-scoped subskill (division remainders, placeValue rounding)

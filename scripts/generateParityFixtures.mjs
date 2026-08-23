@@ -17,6 +17,7 @@ import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { createContext, runInContext } from "node:vm";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { maxLevelForMode } from "../src/modeLevels.js";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const bundlePath = resolve(root, "ios/KidMath/Resources/KidMathEngine.bundle.js");
@@ -49,7 +50,8 @@ K.setBankItems([]);
 
 const fixtures = [];
 for (const mode of K.modes()) {
-  for (const level of [1, 4, 7]) {
+  const bandLevels = maxLevelForMode(mode) > 10 ? [1, 4, 7, 11] : [1, 4, 7];
+  for (const level of bandLevels) {
     const seed = (level * 7919 + mode.length * 131 + [...mode].reduce((a, c) => a + c.charCodeAt(0), 0)) >>> 0;
     sandbox.__reseed(seed);
     const question = K.generateQuestion(mode, level);

@@ -115,6 +115,13 @@ final class DataLayerTests: XCTestCase {
         let loaded = store.loadLocal(mode: "division")
         XCTAssertEqual(loaded["level"] as? Int, 10, "level clamps to MAX_LEVEL")
         XCTAssertEqual((loaded["mistakeBank"] as? [[String: Any]])?.count, 20, "mistake bank trims to 20")
+
+        // Phase 3: Grade-5 modes run a 12-level ladder.
+        store.saveLocal(mode: "fractionOps", data: [
+            "level": 99, "mistakeBank": [[String: Any]](), "firstTryCorrect": 0,
+            "bankItemStats": [String: Any](), "recentBankItemIds": [String](),
+        ])
+        XCTAssertEqual(store.loadLocal(mode: "fractionOps")["level"] as? Int, 12, "Grade-5 modes clamp to 12")
     }
 
     // MARK: - Merge math (mirror of mergeBankItemStats)

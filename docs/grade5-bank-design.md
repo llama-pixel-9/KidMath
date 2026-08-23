@@ -46,3 +46,15 @@ sequencing only, wording original; CCSS Progressions 2023 (NF, MD chapters).
 All three families auto-approved with the batch (deterministic, gate-verified,
 same convention as b0823) — flagged in the PR for Sai's spot-check; per-item
 Retire in `/admin` is the rollback.
+
+## Phase 3 — the 12-level ladder (2026-08-23)
+
+The three Grade-5 modes run a 12-level ladder (band 4 = L10-12, "Grade 5
+work" on the `levelToGrade` axis); every other mode stays at 10. The per-mode
+cap lives in `src/modeLevels.js` (mirrored by each mode config's `maxLevel`
+and `GradeSeed.swift`; a gradeSeed spec pins the three in agreement). Their
+band-3 bank rows were re-tagged `[7,10] → [7,12]` (cloud + bundle: 1,402
+rows) so the open top band serves from the bank at L11-12 — no new items.
+Grade seeding caps at `maxLevel - 3`, so the top band is always earned.
+`practice_sessions` level checks widen to 1..12
+(`supabase/migrations/20260823230000_practice_sessions_level_12.sql`).

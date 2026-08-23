@@ -3,10 +3,24 @@ import Foundation
 /// Grade → starting level for a never-played mode. Mirrors `src/gradeSeed.js`
 /// exactly (the JS version is also exposed on the engine as
 /// `KidMath.startingLevelFor` for the parity test): a kid at or below a mode's
-/// first grade starts at 1; each grade above adds three levels, capped at 7.
+/// first grade starts at 1; each grade above adds three levels, capped below
+/// the mode's top band (7 on a 10-level ladder, 9 on a 12-level one).
 enum GradeSeed {
     static let maxSeededLevel = 7
     private static let levelsPerGrade = 3
+
+    /// Mirror of src/modeLevels.js — the Grade-5 modes run to level 12.
+    static let modeMaxLevels: [String: Int] = [
+        "fractionOps": 12, "decimalOps": 12, "volumeCoordinates": 12,
+    ]
+
+    static func maxLevel(mode: String) -> Int {
+        modeMaxLevels[mode] ?? 10
+    }
+
+    static func maxSeededLevel(mode: String) -> Int {
+        maxLevel(mode: mode) - 3
+    }
 
     /// Same table as `src/engagement/gradeSpans.js` — keep in sync.
     static let gradeSpans: [String: String] = [
@@ -32,6 +46,9 @@ enum GradeSeed {
         "decimals": "4",
         "factorsMultiples": "4",
         "angles": "4",
+        "fractionOps": "4–5",
+        "decimalOps": "4–5",
+        "volumeCoordinates": "5",
     ]
 
     /// "K" → 0, "1st" → 1 … "6th" → 6; nil when unknown.
@@ -58,6 +75,6 @@ enum GradeSeed {
         let (start, end) = parseSpan(gradeSpans[mode])
         let effective = min(g, end)
         if effective <= start { return 1 }
-        return min(maxSeededLevel, 1 + levelsPerGrade * (effective - start))
+        return min(maxSeededLevel(mode: mode), 1 + levelsPerGrade * (effective - start))
     }
 }

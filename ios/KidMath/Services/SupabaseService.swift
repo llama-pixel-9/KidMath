@@ -118,25 +118,28 @@ final class SupabaseService: ObservableObject {
 
     // MARK: - Progress (mirrors src/progressStore.js cloud half)
 
-    /// The `progress` row for (user, mode), or nil when none exists yet.
-    func fetchProgressRow(userId: UUID, mode: String) async throws -> [String: Any]? {
-        let response = try await client
+    /// The `progress` row for (user, kid, mode), or nil when none exists yet.
+    /// kid_id nil selects the household row (`.is`, since `.eq` cannot match NULL).
+    func fetchProgressRow(userId: UUID, kidId: UUID?, mode: String) async throws -> [String: Any]? {
+        var query = client
             .from("progress")
             .select("level, mistake_bank, total_sessions, lifetime_stars")
             .eq("user_id", value: userId)
             .eq("mode", value: mode)
-            .execute()
+        query = kidId.map { query.eq("kid_id", value: $0) } ?? query.is("kid_id", value: nil)
+        let response = try await query.limit(1).execute()
         let rows = try JSONSerialization.jsonObject(with: response.data) as? [[String: Any]]
         return rows?.first
     }
 
-    func fetchBankItemStats(userId: UUID, mode: String) async throws -> [String: [String: Any]] {
-        let response = try await client
+    func fetchBankItemStats(userId: UUID, kidId: UUID?, mode: String) async throws -> [String: [String: Any]] {
+        var query = client
             .from("progress_item_stats")
             .select("item_id, attempts, first_try_correct, correct, total_response_ms, last_seen_at")
             .eq("user_id", value: userId)
             .eq("mode", value: mode)
-            .execute()
+        query = kidId.map { query.eq("kid_id", value: $0) } ?? query.is("kid_id", value: nil)
+        let response = try await query.execute()
         let rows = (try JSONSerialization.jsonObject(with: response.data) as? [[String: Any]]) ?? []
         var stats: [String: [String: Any]] = [:]
         for row in rows {
@@ -174,18 +177,19 @@ final class SupabaseService: ObservableObject {
     // verify-entitlement Edge Function (verifyEntitlement above) instead of
     // writing the row themselves.
 
-    func upsertProgress(userId: UUID, mode: String, row: [String: Any]) async throws {
+    func upsertProgress(userId: UUID, kidId: UUID?, mode: String, row: [String: Any]) async throws {
         var payload = row
         payload["user_id"] = userId.uuidString
+        payload["kid_id"] = kidId?.uuidString ?? NSNull()
         payload["mode"] = mode
         payload["updated_at"] = ISO8601DateFormatter().string(from: Date())
         try await client
             .from("progress")
-            .upsert(AnyJSON.from(payload), onConflict: "user_id,mode")
+            .upsert(AnyJSON.from(payload), onConflict: "user_id,kid_id,mode")
             .execute()
     }
 
-    func upsertBankItemStats(userId: UUID, mode: String, stats: [String: [String: Any]]) async throws {
+    func upsertBankItemStats(userId: UUID, kidId: UUID?, mode: String, stats: [String: [String: Any]]) async throws {
         guard !stats.isEmpty else { return }
         let rows: [[String: Any]] = stats.map { itemId, stat in
             let lastSeenAt = (stat["lastSeenAt"] as? Double).flatMap {
@@ -193,6 +197,7 @@ final class SupabaseService: ObservableObject {
             } ?? Date()
             return [
                 "user_id": userId.uuidString,
+                "kid_id": kidId?.uuidString ?? NSNull(),
                 "mode": mode,
                 "item_id": itemId,
                 "attempts": stat["attempts"] as? Int ?? 0,
@@ -204,7 +209,7 @@ final class SupabaseService: ObservableObject {
         }
         try await client
             .from("progress_item_stats")
-            .upsert(AnyJSON.from(rows), onConflict: "user_id,mode,item_id")
+            .upsert(AnyJSON.from(rows), onConflict: "user_id,kid_id,mode,item_id")
             .execute()
     }
 }

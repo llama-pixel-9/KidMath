@@ -25,6 +25,9 @@ export const USER_DATA_TABLES = [
   "profiles",
 ] as const;
 
+/** Tables holding rows keyed to one child (kid_id). */
+export const KID_DATA_TABLES = ["progress", "progress_item_stats", "practice_sessions"] as const;
+
 type Db = {
   from(table: string): {
     delete(): {
@@ -49,9 +52,8 @@ export async function purgeAccountData(db: Db, userId: string): Promise<void> {
 }
 
 /**
- * Delete one child profile. Cloud progress in v1 is account-level (keyed
- * user_id + mode, no kid_id column); the practice log (practice_sessions)
- * is the one kid-scoped table, so both go; deleting it also stops any further collection
+ * Delete one child profile. Progress, item stats and the practice log are
+ * all keyed by kid_id, so they go with the profile; deleting it also stops any further collection
  * about that child (§312.6(a)(2)). Scoped to the owning user so a forged
  * kidId can never cross accounts.
  */
@@ -59,10 +61,12 @@ export async function purgeKidData(
   db: Db,
   { userId, kidId }: { userId: string; kidId: string },
 ): Promise<void> {
-  // The practice log is child-scoped (kid_id) — remove it outright rather
-  // than leaving detached rows behind; the FK's SET NULL is only a backstop.
-  const sessions = await db.from("practice_sessions").delete().eq("kid_id", kidId).eq("user_id", userId);
-  if (sessions.error) throw new Error(`purge practice_sessions: ${sessions.error.message}`);
+  // Child-scoped tables (kid_id) go explicitly — the FK cascade / SET NULL is
+  // only a backstop, and the deletion spec proves the sweep.
+  for (const table of KID_DATA_TABLES) {
+    const { error } = await db.from(table).delete().eq("kid_id", kidId).eq("user_id", userId);
+    if (error) throw new Error(`purge ${table}: ${error.message}`);
+  }
   const { error } = await db.from("kid_profiles").delete().eq("id", kidId).eq("user_id", userId);
   if (error) throw new Error(`purge kid_profiles: ${error.message}`);
 }

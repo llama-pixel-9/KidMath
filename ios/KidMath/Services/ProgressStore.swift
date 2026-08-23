@@ -2,6 +2,13 @@ import Foundation
 
 /// Per-mode saved progress — Swift mirror of src/progressStore.js.
 ///
+/// Progress is PER KID: the local blob is scoped by the active kid pointer
+/// (`kidmath-progress:<kid>`, bare key for anonymous play, first kid inherits
+/// the device blob once — same scheme as EngagementStore) and every cloud row
+/// carries `kid_id`. Rows with a null kid_id are "household" rows merged from
+/// a device before any profile existed; the first kid to load a mode inherits
+/// them as a seed.
+///
 /// Signed out: UserDefaults, same JSON shape as the web's localStorage entry.
 /// Signed in: the shared `progress` + `progress_item_stats` tables, so a child
 /// resumes at the same level on iPad and web. On first sign-in local progress
@@ -13,6 +20,8 @@ import Foundation
 final class ProgressStore {
 
     nonisolated private static let localKey = "kidmath-progress"
+    nonisolated private static let activeKidKey = "kidmath-active-kid" // KidProfilesService owns this key
+    nonisolated private static let migratedKey = "kidmath-progress-migrated" // which kid inherited the device blob
     nonisolated private static let startingLevel = 1
     nonisolated private static let maxLevel = 10
     nonisolated private static let maxPersistedMistakes = 20
@@ -40,9 +49,15 @@ final class ProgressStore {
 
     // MARK: - Public API (same shape as the web's loadProgress/saveProgress)
 
+    /// The active kid profile id, or nil for anonymous play.
+    var activeKidId: UUID? {
+        guard let raw = defaults.string(forKey: Self.activeKidKey), !raw.isEmpty else { return nil }
+        return UUID(uuidString: raw)
+    }
+
     func load(mode: String) async -> [String: Any] {
         if let userId = supabase.userId {
-            return await loadCloud(userId: userId, mode: mode)
+            return await loadCloud(userId: userId, kidId: activeKidId, mode: mode)
         }
         return loadLocal(mode: mode)
     }
@@ -51,19 +66,21 @@ final class ProgressStore {
     /// mistakeBank, firstTryCorrect, bankItemStats, recentBankItemIds.
     func save(mode: String, data: [String: Any]) async {
         if let userId = supabase.userId {
-            await saveCloud(userId: userId, mode: mode, data: data)
+            await saveCloud(userId: userId, kidId: activeKidId, mode: mode, data: data)
         } else {
             saveLocal(mode: mode, data: data)
         }
     }
 
-    /// First sign-in: fold anonymous local progress into the cloud, then
-    /// clear local so the cloud is the single source of truth.
+    /// First sign-in: fold this device's progress for the active kid (or the
+    /// anonymous blob when no profile is active — merged as household rows)
+    /// into the cloud, then clear the local copy.
     func mergeLocalToCloud(userId: UUID) async {
+        let kidId = activeKidId
         let store = readLocalStore()
         guard !store.isEmpty else { return }
         for (mode, local) in store {
-            let cloud = await loadCloud(userId: userId, mode: mode)
+            let cloud = await loadCloud(userId: userId, kidId: kidId, mode: mode)
             let localMistakes = (local["mistakeBank"] as? [[String: Any]] ?? [])
             let cloudMistakes = (cloud["mistakeBank"] as? [[String: Any]] ?? [])
             let merged: [String: Any] = [
@@ -80,28 +97,47 @@ final class ProgressStore {
                 incoming: local["bankItemStats"] as? [String: [String: Any]] ?? [:]
             )
             do {
-                try await supabase.upsertProgress(userId: userId, mode: mode, row: merged)
-                try await supabase.upsertBankItemStats(userId: userId, mode: mode, stats: mergedStats)
+                try await supabase.upsertProgress(userId: userId, kidId: kidId, mode: mode, row: merged)
+                try await supabase.upsertBankItemStats(userId: userId, kidId: kidId, mode: mode, stats: mergedStats)
             } catch {
                 return // keep local copy; retry on a later sign-in
             }
         }
-        defaults.removeObject(forKey: Self.localKey)
+        defaults.removeObject(forKey: storeKey)
     }
 
-    // MARK: - Local (UserDefaults, same JSON shape as web localStorage)
+    // MARK: - Local (UserDefaults, same JSON shape as web localStorage; per-kid keys)
+
+    private var storeKey: String {
+        if let kid = defaults.string(forKey: Self.activeKidKey), !kid.isEmpty {
+            return "\(Self.localKey):\(kid)"
+        }
+        return Self.localKey
+    }
+
+    private func readBlob(_ key: String) -> [String: [String: Any]]? {
+        guard let data = defaults.data(forKey: key) else { return nil }
+        return (try? JSONSerialization.jsonObject(with: data)) as? [String: [String: Any]]
+    }
 
     private func readLocalStore() -> [String: [String: Any]] {
-        guard let data = defaults.data(forKey: Self.localKey),
-              let store = (try? JSONSerialization.jsonObject(with: data)) as? [String: [String: Any]] else {
-            return [:]
+        let key = storeKey
+        if let store = readBlob(key) { return store }
+        // First kid on this device inherits the anonymous blob — exactly once,
+        // stamped even when there was nothing to inherit. Copy, never rename.
+        if key != Self.localKey, defaults.string(forKey: Self.migratedKey) == nil {
+            defaults.set(String(key.dropFirst(Self.localKey.count + 1)), forKey: Self.migratedKey)
+            if let device = readBlob(Self.localKey) {
+                writeLocalStore(device)
+                return device
+            }
         }
-        return store
+        return [:]
     }
 
     private func writeLocalStore(_ store: [String: [String: Any]]) {
         if let data = try? JSONSerialization.data(withJSONObject: store) {
-            defaults.set(data, forKey: Self.localKey)
+            defaults.set(data, forKey: storeKey)
         }
     }
 
@@ -138,9 +174,16 @@ final class ProgressStore {
 
     // MARK: - Cloud
 
-    private func loadCloud(userId: UUID, mode: String) async -> [String: Any] {
-        let stats = (try? await supabase.fetchBankItemStats(userId: userId, mode: mode)) ?? [:]
-        guard let row = try? await supabase.fetchProgressRow(userId: userId, mode: mode) else {
+    /// A kid with no row yet inherits the household row (kid_id null) as a
+    /// seed; their first save writes their own row (web parity).
+    private func loadCloud(userId: UUID, kidId: UUID?, mode: String) async -> [String: Any] {
+        var stats = (try? await supabase.fetchBankItemStats(userId: userId, kidId: kidId, mode: mode)) ?? [:]
+        var row = try? await supabase.fetchProgressRow(userId: userId, kidId: kidId, mode: mode)
+        if row == nil, kidId != nil {
+            row = try? await supabase.fetchProgressRow(userId: userId, kidId: nil, mode: mode)
+            stats = (try? await supabase.fetchBankItemStats(userId: userId, kidId: nil, mode: mode)) ?? [:]
+        }
+        guard let row else {
             var blank = Self.blankProgress()
             blank["bankItemStats"] = stats
             return blank
@@ -156,17 +199,18 @@ final class ProgressStore {
         ]
     }
 
-    private func saveCloud(userId: UUID, mode: String, data: [String: Any]) async {
-        let existing = await loadCloud(userId: userId, mode: mode)
+    private func saveCloud(userId: UUID, kidId: UUID?, mode: String, data: [String: Any]) async {
+        let existing = await loadCloud(userId: userId, kidId: kidId, mode: mode)
         let row: [String: Any] = [
             "level": Self.clampLevel(Self.int(data["level"], default: Self.startingLevel)),
             "mistake_bank": Array((data["mistakeBank"] as? [[String: Any]] ?? []).prefix(Self.maxPersistedMistakes)),
             "total_sessions": Self.int(existing["totalSessions"]) + 1,
             "lifetime_stars": Self.int(existing["lifetimeStars"]) + Self.starsEarned(from: data),
         ]
-        try? await supabase.upsertProgress(userId: userId, mode: mode, row: row)
+        try? await supabase.upsertProgress(userId: userId, kidId: kidId, mode: mode, row: row)
         try? await supabase.upsertBankItemStats(
             userId: userId,
+            kidId: kidId,
             mode: mode,
             stats: data["bankItemStats"] as? [String: [String: Any]] ?? [:]
         )

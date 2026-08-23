@@ -192,7 +192,7 @@ export default function ParentReportPage() {
     (async () => {
       const [log, summary] = await Promise.all([
         loadSessions({ kidId: kidId || null }).catch(() => ({ source: "local", sessions: loadSessionsSync(kidId) })),
-        loadProgressSummary().catch(() => ({ byMode: {} })),
+        loadProgressSummary({ kidId: kidId || null }).catch(() => ({ byMode: {} })),
       ]);
       if (cancelled) return;
       setSessions(log.sessions);

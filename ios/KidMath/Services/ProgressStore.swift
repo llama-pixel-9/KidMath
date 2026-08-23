@@ -27,7 +27,7 @@ final class ProgressStore {
     nonisolated private static let maxLevel = 10
     nonisolated private static let maxPersistedMistakes = 20
     nonisolated private static let maxPersistedBankItems = 200
-    nonisolated private static let maxPersistedRecentIds = 12
+    nonisolated private static let maxPersistedRecentIds = 24
 
     private let supabase: SupabaseService
     private let defaults: UserDefaults
@@ -203,8 +203,8 @@ final class ProgressStore {
             "totalSessions": Self.int(row["total_sessions"]),
             "lifetimeStars": Self.int(row["lifetime_stars"]),
             "bankItemStats": stats,
-            // Session-window concern; not persisted across devices (web parity).
-            "recentBankItemIds": [String](),
+            // Persisted since PR B so the no-repeat window survives a device switch.
+            "recentBankItemIds": row["recent_bank_item_ids"] as? [String] ?? [],
         ]
     }
 
@@ -215,6 +215,7 @@ final class ProgressStore {
             "mistake_bank": Array((data["mistakeBank"] as? [[String: Any]] ?? []).prefix(Self.maxPersistedMistakes)),
             "total_sessions": Self.int(existing["totalSessions"]) + 1,
             "lifetime_stars": Self.int(existing["lifetimeStars"]) + Self.starsEarned(from: data),
+            "recent_bank_item_ids": Array((data["recentBankItemIds"] as? [String] ?? []).suffix(Self.maxPersistedRecentIds)),
         ]
         try? await supabase.upsertProgress(userId: userId, kidId: kidId, mode: mode, row: row)
         try? await supabase.upsertBankItemStats(

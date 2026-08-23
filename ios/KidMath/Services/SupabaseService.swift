@@ -123,7 +123,7 @@ final class SupabaseService: ObservableObject {
     func fetchProgressRow(userId: UUID, kidId: UUID?, mode: String) async throws -> [String: Any]? {
         var query = client
             .from("progress")
-            .select("level, mistake_bank, total_sessions, lifetime_stars")
+            .select("level, mistake_bank, total_sessions, lifetime_stars, recent_bank_item_ids")
             .eq("user_id", value: userId)
             .eq("mode", value: mode)
         query = kidId.map { query.eq("kid_id", value: $0) } ?? query.is("kid_id", value: nil)

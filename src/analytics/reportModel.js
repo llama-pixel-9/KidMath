@@ -272,19 +272,26 @@ function recommendations(modes, strugglesList, totals) {
 export function buildReport(allSessions, { now = Date.now(), days = 30, progressByMode = {} } = {}) {
   const ordered = (allSessions || []).filter((s) => s && s.endedAt).slice().sort((a, b) => a.startedAt - b.startedAt);
   const since = days ? startOfLocalDay(now) - (days - 1) * DAY_MS : -Infinity;
-  const sessions = ordered.filter((s) => s.startedAt >= since && s.kind !== "fledging");
+  // A "partial" record is a session the kid left before the end card (saved on
+  // unmount since PR B): its minutes and questions are real practice, but it
+  // never reached the level/perfect-session bookkeeping, so it is excluded from
+  // those tallies.
+  const practice = ordered.filter((s) => s.startedAt >= since && s.kind !== "fledging");
+  const sessions = practice.filter((s) => s.kind !== "partial");
+  const partials = practice.filter((s) => s.kind === "partial");
   const challenges = ordered.filter((s) => s.startedAt >= since && s.kind === "fledging");
 
-  const questions = sessions.reduce((n, s) => n + s.questions, 0);
-  const correct = sessions.reduce((n, s) => n + s.firstTryCorrect, 0);
-  const totalMs = sessions.reduce((n, s) => n + s.durationMs, 0);
-  const activeDays = new Set(sessions.map((s) => localDayKey(s.startedAt))).size;
+  const questions = practice.reduce((n, s) => n + s.questions, 0);
+  const correct = practice.reduce((n, s) => n + s.firstTryCorrect, 0);
+  const totalMs = practice.reduce((n, s) => n + s.durationMs, 0);
+  const activeDays = new Set(practice.map((s) => localDayKey(s.startedAt))).size;
 
   const totals = {
     days,
     sessions: sessions.length,
+    partialSessions: partials.length,
     minutes: minutes(totalMs),
-    avgSessionMinutes: sessions.length ? Math.round((totalMs / sessions.length / 60000) * 10) / 10 : 0,
+    avgSessionMinutes: practice.length ? Math.round((totalMs / practice.length / 60000) * 10) / 10 : 0,
     questions,
     correct,
     accuracy: pct(correct, questions),
@@ -297,23 +304,23 @@ export function buildReport(allSessions, { now = Date.now(), days = 30, progress
     challengesPassed: challenges.filter((s) => s.levelEnd > s.levelStart).length,
     challengesTaken: challenges.length,
     firstSessionAt: ordered.length ? ordered[0].startedAt : null,
-    lastSessionAt: sessions.length ? sessions[sessions.length - 1].startedAt : null,
+    lastSessionAt: practice.length ? practice[practice.length - 1].startedAt : null,
   };
 
-  const modes = modeSummaries(sessions, progressByMode);
-  const strugglesList = struggles(sessions);
+  const modes = modeSummaries(practice, progressByMode);
+  const strugglesList = struggles(practice);
   const weeks = days ? Math.max(2, Math.min(12, Math.ceil(days / 7))) : 12;
 
   return {
     generatedAt: now,
     range: { days, since: Number.isFinite(since) ? since : null },
     totals,
-    byWeek: activityByWeek(sessions, now, weeks),
-    byDay: days && days <= 14 ? activityByDay(sessions, now, days) : null,
-    when: whenTheyPractice(sessions),
+    byWeek: activityByWeek(practice, now, weeks),
+    byDay: days && days <= 14 ? activityByDay(practice, now, days) : null,
+    when: whenTheyPractice(practice),
     modes,
     struggles: strugglesList,
-    slowButRight: slowButRight(sessions),
+    slowButRight: slowButRight(practice),
     strengths: modes
       .flatMap((m) => m.subskills.filter((s) => s.attempts >= MIN_ATTEMPTS && s.accuracy >= 90).map((s) => ({ ...s, mode: m.id, modeLabel: m.label })))
       .sort((a, b) => b.attempts - a.attempts)

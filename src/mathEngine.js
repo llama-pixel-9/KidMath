@@ -17,6 +17,20 @@ const RETRY_SPACING = 5;
 const REVIEW_INTERVALS = [4, 8, 16];
 const MAX_REVIEW_ITEMS = 20;
 const RECENT_BANK_WINDOW = 8;
+// Level-1–3 cells are the smallest, and the kids there need fresh practice
+// the most — a struggling kid saw "2 × 3 = ?" 126 times in 30 sessions when the
+// window was 8 everywhere (kid-sim QA). Wider window low, the old window high.
+const RECENT_BANK_WINDOW_LOW = 24;
+const LOW_LEVEL_MAX = 3;
+export function recentBankWindow(level) {
+  return level <= LOW_LEVEL_MAX ? RECENT_BANK_WINDOW_LOW : RECENT_BANK_WINDOW;
+}
+// Ladder v2: the fast promotion path compares the kid to THEMSELVES (2.5× their
+// own median response time) instead of an absolute 8.5 s, so a slow-but-right
+// kid is not parked at level 1; demotion waits for the third miss.
+const LADDER_V2_SPEED_RATIO = 2.5;
+const LADDER_V2_MIN_SAMPLES = 5;
+const LADDER_V2_MISSES_TO_DEMOTE = 3;
 const MAX_BANK_ITEM_STATS = 200;
 
 function clampLevel(level) {
@@ -516,7 +530,9 @@ export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE, options 
     skillMastery: createSkillMastery(modeConfig),
     analyticsEvents: [],
     allowWordProblems,
-    recentBankItemIds: Array.isArray(saved.recentBankItemIds) ? saved.recentBankItemIds.slice(-RECENT_BANK_WINDOW) : [],
+    recentBankItemIds: Array.isArray(saved.recentBankItemIds) ? saved.recentBankItemIds.slice(-recentBankWindow(Number(saved.level) || STARTING_LEVEL)) : [],
+    // Ladder v2 keeps every response time this session for the kid's own median.
+    ...(options.ladderV2 ? { ladderV2: true, allResponseTimesMs: [] } : {}),
     bankItemStats: saved.bankItemStats && typeof saved.bankItemStats === "object" ? saved.bankItemStats : {},
     // QA-only: force one generator variety and skip the bank, so a reported
     // item shape can be reproduced deterministically (`?qaVariety=` on web).
@@ -609,10 +625,25 @@ function updateBankItemStats(session, question, correct, responseTimeMs) {
   return Object.fromEntries(sorted.map(([id]) => [id, merged[id]]));
 }
 
-function appendRecentBankItemId(recent, itemId) {
+function appendRecentBankItemId(recent, itemId, level = MAX_LEVEL) {
   if (!itemId) return recent;
   const next = [...(recent || []).filter((id) => id !== itemId), itemId];
-  return next.slice(-RECENT_BANK_WINDOW);
+  return next.slice(-recentBankWindow(level));
+}
+
+function weakestScoreWithEvidence(session, minAttempts) {
+  let weakest = 1;
+  for (const m of Object.values(session.skillMastery || {})) {
+    if (!m || (m.attempts || 0) < minAttempts) continue;
+    weakest = Math.min(weakest, m.correct / m.attempts);
+  }
+  return weakest;
+}
+
+function median(values) {
+  const sorted = [...values].sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  return sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
 }
 
 export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wasRetry) {
@@ -641,6 +672,8 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
       next.mistakeBank = session.mistakeBank.filter((q) => q.itemKey !== question.itemKey);
     } else {
       next.correctStreak = 0;
+      // v2: a missed retry is evidence at this level too.
+      if (session.ladderV2) next.mistakesAtLevel = session.mistakesAtLevel + 1;
       next.mistakeBank = session.mistakeBank.map((q) => {
         if (q.itemKey !== question.itemKey) return q;
         const index = Math.min(REVIEW_INTERVALS.length - 1, q.retryCount || 0);
@@ -658,8 +691,10 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
   next.bankItemStats = updateBankItemStats(session, question, correct, responseTimeMs);
   next.recentBankItemIds = appendRecentBankItemId(
     session.recentBankItemIds,
-    question.metadata?.itemSource === "bank" ? question.metadata?.itemId : null
+    question.metadata?.itemSource === "bank" ? question.metadata?.itemId : null,
+    session.level
   );
+  if (session.ladderV2) next.allResponseTimesMs = [...(session.allResponseTimesMs || []), responseTimeMs];
 
   if (correct) {
     next.correctStreak = session.correctStreak + 1;
@@ -669,8 +704,14 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
     let levelChanged = false;
     const avgTime = next.responseTimesMs.reduce((a, b) => a + b, 0) / next.responseTimesMs.length;
     const { weakestScore } = getMasterySnapshot(next, getModeConfig(session.mode));
+    // v1: an absolute 8.5 s gate. v2: relative to the kid's own median this
+    // session (no gate until there are enough samples to have one).
+    const all = next.allResponseTimesMs || [];
+    const quickEnough = session.ladderV2
+      ? all.length < LADDER_V2_MIN_SAMPLES || avgTime <= LADDER_V2_SPEED_RATIO * median(all)
+      : avgTime < 8500;
     const promotionSignal =
-      (next.correctStreak >= 4 && avgTime < 8500 && weakestScore >= 0.8) ||
+      (next.correctStreak >= 4 && quickEnough && weakestScore >= 0.8) ||
       (next.correctStreak >= 7 && weakestScore >= 0.72);
 
     if (session.fledging) {
@@ -711,7 +752,11 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
   let levelChanged = false;
   if (!session.fledging) {
     const { weakestScore } = getMasterySnapshot(next, getModeConfig(session.mode));
-    if ((next.mistakesAtLevel >= 2 || weakestScore < 0.45) && next.level > 1) {
+    const missesToDemote = session.ladderV2 ? LADDER_V2_MISSES_TO_DEMOTE : 2;
+    // v2: the mastery floor needs evidence — one miss on a just-served
+    // subskill is 0/1 and used to demote on its own.
+    const floorScore = session.ladderV2 ? weakestScoreWithEvidence(next, LADDER_V2_MIN_SAMPLES - 2) : weakestScore;
+    if ((next.mistakesAtLevel >= missesToDemote || floorScore < 0.45) && next.level > 1) {
       next.level = next.level - 1;
       next.mistakesAtLevel = 0;
       levelChanged = true;

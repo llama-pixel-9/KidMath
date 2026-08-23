@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { digitKeyClass, PAD_BACKSPACE } from "./kit";
+import { digitKeyClass, PAD_BACKSPACE, useDigitKeys } from "./kit";
 import ConfettiBurst from "./ConfettiBurst.jsx";
 
 // Number-bond ("cherry") builder. Two shapes:
@@ -40,6 +40,8 @@ export default function NumberBond({ onSubmit, feedback, theme, lowMotionMode, l
       )}
     </div>
   );
+
+  useDigitKeys({ locked, onDigit: pressDigit, onBackspace: backspace, onSubmit: submit });
 
   return (
     <section className="w-full flex flex-col items-center gap-3" aria-label="Number bond">

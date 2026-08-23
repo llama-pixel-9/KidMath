@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import ConfettiBurst from "./ConfettiBurst.jsx";
+import { useAnswerKeys, KeyHint } from "./kit";
 
 const COMPARISON_SYMBOLS = ["<", "=", ">"];
 
@@ -22,6 +23,14 @@ const KEY_DEEPENED = {
 
 export default function SymbolSelect({ onSubmit, feedback, revealAnswer, shakenChoice, lowMotionMode, lowEndDevice }) {
   const locked = feedback === "correct" || feedback === "wrong";
+  // Keyboard: the symbol itself (< = >, shift not needed: , and . work too)
+  // or 1/2/3 by position.
+  useAnswerKeys((e) => {
+    const byKey = { "<": "<", ",": "<", "=": "=", ">": ">", ".": ">", 1: "<", 2: "=", 3: ">" }[e.key];
+    if (!byKey) return false;
+    onSubmit(byKey);
+    return true;
+  }, !locked);
   return (
     <section className="grid grid-cols-3 gap-3 w-full" aria-label="Comparison symbols">
       {COMPARISON_SYMBOLS.map((sym) => {
@@ -48,6 +57,7 @@ export default function SymbolSelect({ onSubmit, feedback, revealAnswer, shakenC
             aria-label={sym === "<" ? "less than" : sym === ">" ? "greater than" : "equal to"}
           >
             {sym}
+            <KeyHint k={sym} />
             {isCorrectChoice && !lowMotionMode && (
               <ConfettiBurst intensity={lowEndDevice ? "light" : "normal"} />
             )}

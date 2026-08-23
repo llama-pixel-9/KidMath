@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { digitKeyClass, PAD_BACKSPACE, PAD_GO } from "./kit";
+import { digitKeyClass, PAD_BACKSPACE, PAD_GO, useAnswerKeys } from "./kit";
 import ConfettiBurst from "./ConfettiBurst.jsx";
 
 /**
@@ -52,6 +52,22 @@ export default function TenFrame({
     if (mode === "build") onSubmit(added.size);
     else if (entry !== "") onSubmit(Number(entry));
   };
+
+  // Keyboard. count: digits + Enter. build: keys 1-9 and 0 toggle cells 1-10
+  // of the first frame (Q-P row keys toggle cells 11-20 of a second frame),
+  // Enter submits.
+  useAnswerKeys((e) => {
+    if (e.key === "Enter") { submit(); return true; }
+    if (mode !== "build") {
+      if (/^[0-9]$/.test(e.key)) { pressDigit(e.key); return true; }
+      if (e.key === "Backspace") { setEntry((v) => v.slice(0, -1)); return true; }
+      return false;
+    }
+    if (/^[0-9]$/.test(e.key)) { toggleCell(e.key === "0" ? 9 : Number(e.key) - 1); return true; }
+    const row2 = "qwertyuiop".indexOf(e.key.toLowerCase());
+    if (frames > 1 && e.key.length === 1 && row2 >= 0) { toggleCell(10 + row2); return true; }
+    return false;
+  }, !locked);
 
   const counterTone = (i) =>
     i < filled

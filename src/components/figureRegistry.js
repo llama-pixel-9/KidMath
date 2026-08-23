@@ -2,6 +2,8 @@ import BarChart from "./BarChart.jsx";
 import Pictograph from "./Pictograph.jsx";
 import TallyChart from "./TallyChart.jsx";
 import LinePlot from "./LinePlot.jsx";
+import AreaFigure from "./AreaFigure.jsx";
+import { areaFigureSpec } from "./areaFigureSpec.js";
 
 /**
  * `display.figure` -> the figure drawn WITH THE QUESTION.
@@ -38,7 +40,23 @@ export const FIGURES = {
     Component: LinePlot,
     props: (q) => ({ points: q.display?.points, axisLabel: q.display?.axisLabel }),
   },
+  areaFigure: {
+    Component: AreaFigure,
+    props: (q) => ({ spec: areaFigureSpec(q) }),
+  },
 };
+
+/**
+ * Figures inferred from the payload when no `figure:` key was authored. The
+ * areaPerimeter bank carries structured dims in `display.ap` (and the
+ * generator in `width`/`height`) without ever naming a figure; drawing them
+ * is a detector here, not a rewrite of 1,800 rows.
+ */
+function inferFigure(question) {
+  const mode = question?.mode || question?.metadata?.modeId;
+  if (mode === "areaPerimeter" && areaFigureSpec(question)) return "areaFigure";
+  return null;
+}
 
 /**
  * Answer widgets that draw the figure themselves. For these the question card
@@ -47,7 +65,7 @@ export const FIGURES = {
 const SELF_DRAWING = new Set(["barGraph"]);
 
 export function getFigure(question) {
-  const key = question?.display?.figure;
+  const key = question?.display?.figure || inferFigure(question);
   if (!key || SELF_DRAWING.has(question?.answerType)) return null;
   return FIGURES[key] || null;
 }

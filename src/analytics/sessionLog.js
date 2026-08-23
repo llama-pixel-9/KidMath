@@ -196,14 +196,19 @@ async function uploadRows(userId, records) {
   return true;
 }
 
-/** Persist a closed record: local mirror first (always), cloud when signed in. */
+/**
+ * Persist a closed record: the local mirror is written synchronously first so
+ * a closed tab never loses the session, then the cloud copy when signed in
+ * (flipping `synced` on success).
+ */
 export async function saveSessionRecord(record) {
   if (!record || !record.endedAt) return;
   const kidId = record.kidId;
+  const put = (synced) =>
+    writeLocal(kidId, [...readLocal(kidId).filter((r) => r.id !== record.id), { ...record, synced }]);
+  put(false);
   const user = await getUser();
-  let synced = false;
-  if (user) synced = await uploadRows(user.id, [record]);
-  writeLocal(kidId, [...readLocal(kidId).filter((r) => r.id !== record.id), { ...record, synced }]);
+  if (user && (await uploadRows(user.id, [record]))) put(true);
 }
 
 /** Push any local rows that never reached the cloud (offline, or pre-sign-in). */

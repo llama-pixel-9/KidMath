@@ -41,10 +41,15 @@ import {
   summarizeFlight,
   MODES,
   buildBankQuestion,
+  checkAnswer,
 } from "./mathEngine";
 import { getBankItems } from "./itemBank/index.js";
 import { fetchBankItemById } from "./itemBank/cloudLoader.js";
-import { flightReportEnabled, fledgingEnabled, meadowEnabled, ladderV2Enabled } from "./gamificationFlags.js";
+import { flightReportEnabled, fledgingEnabled, meadowEnabled, ladderV2Enabled, secondChanceEnabled, readAloudEnabled } from "./gamificationFlags.js";
+import { scaffoldFor } from "./scaffold.js";
+import { speak, stopSpeaking } from "./speech.js";
+import { gradeIndex } from "./gradeSeed.js";
+import { activeKidGrade } from "./kidProfiles";
 import { recordEnsureStarter } from "./engagement/flock.js";
 import {
   recordFlightEnd,
@@ -77,7 +82,7 @@ import {
 } from "./sounds";
 import { createRuntimeDiagnostics } from "./runtimeDiagnostics";
 import { getTelemetry } from "./telemetry/telemetryClient";
-import { openSessionRecord, appendAttempt, closeSessionRecord, saveSessionRecord } from "./analytics/sessionLog";
+import { openSessionRecord, appendAttempt, closeSessionRecord, saveSessionRecord, questionText } from "./analytics/sessionLog";
 import {
   loadAllowWordProblems,
   loadAllowWordProblemsSync,
@@ -711,6 +716,8 @@ export default function MathExplorer({ initialMode }) {
   );
   const [currentQ, setCurrentQ] = useState(null);
   const [isRetry, setIsRetry] = useState(false);
+  // Second chance: the model shown under a missed question while the kid tries once more.
+  const [scaffold, setScaffold] = useState(null);
   const [feedback, setFeedback] = useState(null); // "correct" | "wrong" | null
   const [showSettings, setShowSettings] = useState(false);
   const [showComplete, setShowComplete] = useState(false);
@@ -722,6 +729,10 @@ export default function MathExplorer({ initialMode }) {
   // §01/§02/§03 rollout: resolved once per mount so a session settles consistently.
   const [gamFlightReport] = useState(() => flightReportEnabled());
   const [gamFledging] = useState(() => fledgingEnabled());
+  const [gamSecondChance] = useState(() => secondChanceEnabled());
+  const [gamReadAloud] = useState(() => readAloudEnabled());
+  // K–1 kids get the prompt read automatically; older kids tap the speaker.
+  const [autoRead] = useState(() => readAloudEnabled() && (gradeIndex(activeKidGrade()) ?? 9) <= 1);
   const [flightPayout, setFlightPayout] = useState(null);
   // §03 take-off state: the offer overlay, whether the current session IS a
   // Fledging Flight (ref for async handlers + state for render), and the
@@ -807,6 +818,8 @@ export default function MathExplorer({ initialMode }) {
     });
     setCurrentQ(question);
     setIsRetry(retry);
+    setScaffold(null);
+    stopSpeaking();
     questionStartTime.current = Date.now();
     questionKeyRef.current += 1;
     answerLockRef.current = false;
@@ -1073,6 +1086,12 @@ export default function MathExplorer({ initialMode }) {
     playCompleteSound();
   }, [mode, gamFlightReport, gamFledging]);
 
+  // Read-aloud: K–1 hears every new question; everyone else has the speaker.
+  useEffect(() => {
+    if (!autoRead || !currentQ) return;
+    speak(questionText(currentQ));
+  }, [currentQ, autoRead]);
+
   // The single answer-commit path. Every answer format (bubble tap, number pad,
   // and future builders) routes its value through here so the answer lock,
   // telemetry, mistake bank, and motion/sound feedback stay identical (plan §6b).
@@ -1090,6 +1109,43 @@ export default function MathExplorer({ initialMode }) {
 
     try {
       const responseTimeMs = Date.now() - questionStartTime.current;
+
+      // Second attempt after a scaffold: the engine already recorded the miss
+      // (mistake bank, level bookkeeping, spaced retry). This try is UI-only —
+      // scored here, logged as a retry for the report, never re-counted.
+      if (scaffold) {
+        const correct = checkAnswer(currentQ, value);
+        sessionRecordRef.current = appendAttempt(sessionRecordRef.current, {
+          question: currentQ, submitted: value, correct, wasRetry: true, responseTimeMs, level: session.level,
+        });
+        qaUpdate({ result: { correct, submitted: value, secondChance: true, count: ((typeof window !== "undefined" && window.__kidmathQA?.result?.count) || 0) + 1 } });
+        setScaffold(null);
+        const advance = () => {
+          setFeedback(null);
+          setShakenChoice(null);
+          setRevealAnswer(null);
+          if (isSessionComplete(session)) {
+            finishSession(session);
+            answerLockRef.current = false;
+          } else {
+            loadNextQuestion(session);
+          }
+        };
+        if (correct) {
+          setFeedback("correct");
+          setRevealAnswer(currentQ.answer);
+          playCorrectSound();
+          scheduleTimeout(advance, qaFeedbackMs ?? 1200);
+        } else {
+          setFeedback("wrong");
+          setShakenChoice(value);
+          setRevealAnswer(currentQ.answer);
+          playWrongSound();
+          scheduleTimeout(advance, qaFeedbackMs ?? 2000);
+        }
+        return;
+      }
+
       const result = recordAnswer(session, currentQ, value, responseTimeMs, isRetry);
       setSession(result.session);
       sessionRecordRef.current = appendAttempt(sessionRecordRef.current, {
@@ -1138,6 +1194,16 @@ export default function MathExplorer({ initialMode }) {
             loadNextQuestion(result.session);
           }
         }, qaFeedbackMs ?? 1200);
+      } else if (gamSecondChance && !isRetry && !session.fledging) {
+        // First miss on a fresh question: show a model and allow one more try.
+        setShakenChoice(value);
+        playWrongSound();
+        scheduleTimeout(() => {
+          setShakenChoice(null);
+          setScaffold(scaffoldFor({ ...currentQ, mode })); // `attempt` re-keys the widget, not the card
+          questionStartTime.current = Date.now();
+          answerLockRef.current = false;
+        }, qaFeedbackMs ?? 500);
       } else {
         setFeedback("wrong");
         setShakenChoice(value);
@@ -1333,6 +1399,9 @@ export default function MathExplorer({ initialMode }) {
           revealAnswer={revealAnswer}
           shakenChoice={shakenChoice}
           isRetry={isRetry}
+          scaffold={scaffold}
+          attempt={scaffold ? 1 : 0}
+          onSpeak={gamReadAloud ? () => speak(questionText(currentQ)) : null}
           answerType={answerType}
           lowMotionMode={lowMotionMode}
           lowEndDevice={lowEndDevice}

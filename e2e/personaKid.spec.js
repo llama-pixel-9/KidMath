@@ -14,7 +14,11 @@ import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { answerQuestion } from "./drivers.js";
 import { PERSONAS, rng, pCorrect, responseMs, wrongValue, scheduleSessions } from "./persona.js";
 
-const plan = JSON.parse(readFileSync(process.env.QA_PLAN || "qa-out/plan.json", "utf8"));
+// Opt-in: without a plan file this spec contributes no tests, so a plain
+// `npx playwright test` (the smoke matrix) is unaffected.
+import { existsSync } from "node:fs";
+const PLAN_PATH = process.env.QA_PLAN || "qa-out/plan.json";
+const plan = existsSync(PLAN_PATH) ? JSON.parse(readFileSync(PLAN_PATH, "utf8")) : [];
 const NOW = Number(process.env.QA_NOW || Date.now());
 const IGNORED_CONSOLE = [/favicon/i, /\[vite\]/, /Download the React DevTools/, /Failed to load resource.*40[13]/];
 

@@ -45,6 +45,8 @@ import { usePremium } from "./PremiumContext";
 import { useAuth } from "./useAuth";
 import { isFreeMode } from "./premium";
 import { activeKidId, activeKidGrade, fetchKids } from "./kidProfiles";
+import { loadSessionsSync } from "./analytics/sessionLog.js";
+import { masterySummary, masteryLine } from "./analytics/masterySummary.js";
 import { gradeIndex, gradeFitFor } from "./gradeSeed.js";
 
 const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork, BarChart3, CircleDot, Sigma, Ruler, Coins, Spline, Scale, Clock, ChartColumn, Triangle, Shapes };
@@ -204,6 +206,9 @@ export default function HomePage() {
   const { mainGroups, moreGroups } = useMemo(() => groupsForGrade(kid?.grade), [kid?.grade]);
   const [showMore, setShowMore] = useState(false);
   const quickStartMode = useMemo(() => quickStartFor(kid?.grade), [kid?.grade]);
+  // Kid-facing mastery: which skills in a mode are solid, from the practice
+  // log on this device (same math as the parent report).
+  const practiceLog = useMemo(() => loadSessionsSync(), []);
 
   const renderGroup = (group) => (
             <motion.div key={group.id} {...fadeUp}>
@@ -261,6 +266,11 @@ export default function HomePage() {
                           </span>
                         )}
                       </div>
+                      {!locked && masteryLine(masterySummary(practiceLog, id, config.subskills || [])) && (
+                        <span className="text-[12px] font-bold text-ink/70 leading-tight">
+                          {masteryLine(masterySummary(practiceLog, id, config.subskills || []))}
+                        </span>
+                      )}
                     </button>
                   );
                 })}
@@ -378,68 +388,6 @@ export default function HomePage() {
             </div>
           )}
 
-          {MODE_GROUPS.map((group) => (
-            <motion.div key={group.id} {...fadeUp}>
-              <div className="flex items-baseline justify-between gap-3 mb-3 px-1">
-                <h3 className={`text-xl font-semibold font-display ${theme.textPrimary}`}>
-                  {group.title}
-                </h3>
-                <span className={`text-xs font-bold ${theme.textMuted} whitespace-nowrap`}>
-                  {group.gradeHint}
-                </span>
-              </div>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                {group.modeIds.map((id) => {
-                  const config = getModeConfig(id);
-                  const tint = CARD_TINTS[COLOR_INDEX[id] % CARD_TINTS.length];
-                  const locked = !isFreeMode(id) && !isPremium && !premiumLoading;
-                  const lv = loadProgressSync(id)?.level || 1;
-                  // §03 step 3: the nomination survives leaving the app as a
-                  // Sun pill on the mode's card (Ink text — cream on Sun is
-                  // forbidden).
-                  const nominated = fledgingEnabled() && !locked && Boolean(getNomination(engagement, id));
-                  return (
-                    <button
-                      key={id}
-                      type="button"
-                      className={`relative ${tint.bg} ${tint.edge} btn-press rounded-[20px] p-[18px] text-left cursor-pointer min-h-[150px] flex flex-col gap-2.5`}
-                      onClick={() => (locked ? openPaywall() : navigate(`/play/${id}`))}
-                      aria-label={locked ? `${config.label} (Premium)` : `Play ${config.label}`}
-                    >
-                      {/* Glyph in a 38px cream well, top-left. Locked cards keep
-                          full opacity and swap the glyph for the lock at 40%. */}
-                      <div
-                        className={`inline-flex items-center justify-center w-[38px] h-[38px] rounded-[10px] bg-cream/60 self-start text-ink ${locked ? "opacity-40" : ""}`}
-                      >
-                        {locked ? <Feather name="lock" size={20} /> : <ModeGlyph config={config} />}
-                      </div>
-                      {nominated && (
-                        <span className="absolute top-[18px] right-[18px] bg-sun text-ink text-[12px] font-display font-semibold rounded-full px-2.5 py-[3px] whitespace-nowrap">
-                          Ready to fledge
-                        </span>
-                      )}
-                      <div className="flex-1" />
-                      <h4 className="text-xl font-display font-semibold text-ink leading-[1.15]">
-                        {config.label}
-                      </h4>
-                      {/* Scope line + level badge share one baseline. Scope is
-                          solid Ink — Ink 60% fails contrast on Sun Light. */}
-                      <div className="flex items-center justify-between gap-2">
-                        <span className="text-[13px] font-semibold text-ink leading-tight">
-                          {config.description}
-                        </span>
-                        {!locked && (
-                          <span className="text-[13px] font-display text-ink bg-cream rounded-full px-2.5 py-[3px] whitespace-nowrap flex-none">
-                            {lv > 1 ? `Level ${lv}` : "New"}
-                          </span>
-                        )}
-                      </div>
-                    </button>
-                  );
-                })}
-              </div>
-            </motion.div>
-          ))}
         </div>
       </section>
 

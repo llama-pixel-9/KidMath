@@ -21,6 +21,11 @@ const STEP_ENV_KEYS = {
   // speed gate, demotion on the third miss instead of the second. Off by
   // default so the iOS parity fixtures stay valid until the switch flips.
   ladderV2: "VITE_GAM_LADDER_V2",
+  // Second chance (PR D): a first miss shows a model of the question and
+  // allows one more try before the answer is revealed.
+  secondChance: "VITE_GAM_SECOND_CHANCE",
+  // Read-aloud (PR D): speaker button on the question card; auto-read for K–1.
+  readAloud: "VITE_GAM_READ_ALOUD",
 };
 
 function overrideSet() {
@@ -57,3 +62,5 @@ export const rosterEnabled = (env) => gamStepEnabled("roster", env);
 export const ceremoniesEnabled = (env) => gamStepEnabled("ceremonies", env);
 export const meadowMotionEnabled = (env) => gamStepEnabled("meadowMotion", env);
 export const ladderV2Enabled = (env) => gamStepEnabled("ladderV2", env);
+export const secondChanceEnabled = (env) => gamStepEnabled("secondChance", env);
+export const readAloudEnabled = (env) => gamStepEnabled("readAloud", env);

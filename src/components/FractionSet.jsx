@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { digitKeyClass, PAD_BACKSPACE } from "./kit";
+import { digitKeyClass, PAD_BACKSPACE, useDigitKeys } from "./kit";
 import ConfettiBurst from "./ConfettiBurst.jsx";
 
 // Fraction-of-a-set: the total is shown as objects split into `den` equal
@@ -24,6 +24,8 @@ export default function FractionSet({ onSubmit, feedback, theme, lowMotionMode, 
   const perGroup = den > 0 ? total / den : 0;
   const displayTone =
     feedback === "correct" ? "text-deep-teal" : feedback === "wrong" ? "text-ember" : theme.textPrimary;
+
+  useDigitKeys({ locked, onDigit: pressDigit, onBackspace: backspace, onSubmit: submit });
 
   return (
     <section className="w-full flex flex-col items-center gap-3" aria-label="Fraction of a set">

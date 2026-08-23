@@ -6,6 +6,8 @@ import {
   isLocked,
   tapMotion,
   hoverMotion,
+  useIndexKeys,
+  KeyHint,
 } from "./kit";
 import { COINS } from "./kit/coins.js";
 
@@ -14,7 +16,7 @@ import { COINS } from "./kit/coins.js";
 // touch target while a full 15-coin tray still fits in three rows.
 const SCALE = 1.3;
 
-function Coin({ coin, selected, onClick, locked, lowMotionMode }) {
+function Coin({ coin, selected, onClick, locked, lowMotionMode, hint }) {
   const spec = COINS[coin];
   const size = spec.r * 2 * SCALE;
   return (
@@ -26,7 +28,7 @@ function Coin({ coin, selected, onClick, locked, lowMotionMode }) {
       // reader has to go on.
       aria-label={`${spec.name}, ${spec.label}`}
       aria-pressed={selected}
-      className={`rounded-full disabled:cursor-default cursor-pointer select-none ${
+      className={`relative rounded-full disabled:cursor-default cursor-pointer select-none ${
         selected ? "ring-4 ring-teal" : ""
       }`}
       style={{ width: size, height: size }}
@@ -45,6 +47,7 @@ function Coin({ coin, selected, onClick, locked, lowMotionMode }) {
         // Lifts the coin off the tray so overlapping rims stay readable.
         style={{ filter: "drop-shadow(0 2px 2px rgb(0 0 0 / 0.28))" }}
       />
+      {hint && <KeyHint k={hint} />}
     </motion.button>
   );
 }
@@ -82,6 +85,15 @@ export default function CoinTray({
     onSubmit(mode === "build" ? selectedTotal : Number(entry));
   };
 
+  // Keyboard (build mode): 1-9 and 0 toggle the first ten coins, Enter checks.
+  // Count mode types into the autofocused input.
+  useIndexKeys({
+    locked,
+    count: mode === "build" ? coins.length : 0,
+    onIndex: toggle,
+    onSubmit: mode === "build" ? submit : undefined,
+  });
+
   return (
     <section className="flex flex-col items-center gap-4 w-full" aria-label="Coins">
       <div
@@ -95,6 +107,7 @@ export default function CoinTray({
             onClick={() => toggle(i)}
             locked={locked}
             lowMotionMode={lowMotionMode}
+            hint={mode === "build" && i < 10 ? (i === 9 ? "0" : String(i + 1)) : null}
           />
         ))}
       </div>
@@ -123,6 +136,7 @@ export default function CoinTray({
         </div>
       ) : (
         <input
+          autoFocus
           inputMode="numeric"
           pattern="[0-9]*"
           value={entry}

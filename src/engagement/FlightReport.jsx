@@ -101,7 +101,7 @@ export default function FlightReport({
 
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 backdrop-blur-sm"
+      data-blocks-keys="" className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 backdrop-blur-sm"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -197,6 +197,7 @@ export default function FlightReport({
         </div>
 
         <button
+          autoFocus
           className="mt-6 w-full h-14 bg-teal text-cream text-xl font-display font-semibold rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer"
           onClick={onPlayAgain}
         >

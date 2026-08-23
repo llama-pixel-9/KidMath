@@ -54,7 +54,7 @@ import { getModeConfig } from "./modes";
 import { ensureModeLoaded } from "./itemBank.js";
 import { isVerbalPrompt } from "./modes/helpers";
 import { emojiPromptLines } from "./promptLayout";
-import { FIGURE_COLORS } from "./components/kit";
+import { FIGURE_COLORS, useAnswerKeys, KeyHint } from "./components/kit";
 import { saveProgress, loadProgress, mergeLocalToCloud } from "./progressStore";
 import { recordSessionEnd, currentStreak, starsToday, starBalance, isFirstWeek } from "./engagement/engagementStore";
 import JourneyMap from "./engagement/JourneyMap.jsx";
@@ -300,7 +300,7 @@ function LevelUpToast() {
 function FledgingOffer({ level, onAccept, onDecline }) {
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 backdrop-blur-sm"
+      data-blocks-keys="" className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 backdrop-blur-sm"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -322,6 +322,7 @@ function FledgingOffer({ level, onAccept, onDecline }) {
           ride on this one.
         </p>
         <button
+          autoFocus
           className="mt-5 w-full h-14 bg-teal text-cream text-xl font-display font-semibold rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer"
           onClick={onAccept}
         >
@@ -348,7 +349,7 @@ function FledgingCeremony({ passed, level, onContinue }) {
   }, [onContinue]);
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 backdrop-blur-sm"
+      data-blocks-keys="" className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 backdrop-blur-sm"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -412,7 +413,7 @@ function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, li
 
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 backdrop-blur-sm"
+      data-blocks-keys="" className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 backdrop-blur-sm"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -524,7 +525,7 @@ function SettingsPanel({ mode, allowWordProblems, onAllowWordProblemsChange, cal
   const { theme } = useTheme();
   return (
     <motion.div
-      className="fixed inset-0 z-40 flex items-end sm:items-center justify-center bg-black/30 backdrop-blur-sm"
+      data-blocks-keys="" className="fixed inset-0 z-40 flex items-end sm:items-center justify-center bg-black/30 backdrop-blur-sm"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -630,7 +631,7 @@ function LoginPromptModal({ onLogin, onDismiss }) {
   const { theme } = useTheme();
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm"
+      data-blocks-keys="" className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -1503,6 +1504,45 @@ export default function MathExplorer({ initialMode }) {
     }
   };
 
+  // Keyboard for the multiple-choice bubbles (every other answerType is a
+  // registered widget that owns its own keys). Numeric choices are matched by
+  // VALUE — a child pressing "3" means the number 3, never "the third tile" —
+  // typed digits accumulate and submit as soon as they name exactly one
+  // choice (or on Enter). Word choices use 1-4 by position, with badges.
+  const choiceKeysActive =
+    !!currentQ && !getWidget(forcedInputType || currentQ.answerType || "choice") && !feedback;
+  const choiceList = currentQ?.choices || [];
+  const numericChoices =
+    choiceList.length > 0 && choiceList.every((c) => /^-?\d+(\.\d+)?$/.test(String(c)));
+  const typedChoiceRef = useRef("");
+  useAnswerKeys((e) => {
+    if (!numericChoices) {
+      if (/^[1-9]$/.test(e.key) && Number(e.key) <= choiceList.length) {
+        submitAnswer(choiceList[Number(e.key) - 1]);
+        return true;
+      }
+      return false;
+    }
+    if (e.key === "Backspace") { typedChoiceRef.current = typedChoiceRef.current.slice(0, -1); return true; }
+    if (e.key === "Enter") {
+      const hit = choiceList.find((c) => String(c) === typedChoiceRef.current);
+      typedChoiceRef.current = "";
+      if (hit !== undefined) submitAnswer(hit);
+      return true;
+    }
+    if (!/^[0-9.-]$/.test(e.key)) return false;
+    const typed = typedChoiceRef.current + e.key;
+    const matches = choiceList.filter((c) => String(c).startsWith(typed));
+    if (matches.length === 0) return true; // ignore a stray key, keep the buffer
+    typedChoiceRef.current = typed;
+    if (matches.length === 1 && String(matches[0]) === typed) {
+      typedChoiceRef.current = "";
+      submitAnswer(matches[0]);
+    }
+    return true;
+  }, choiceKeysActive);
+  useEffect(() => { typedChoiceRef.current = ""; }, [currentQ]);
+
   const handleLoginDismiss = () => {
     telemetryRef.current.recordEvent("login_modal_dismissed");
     setShowLoginPrompt(false);
@@ -1702,6 +1742,7 @@ export default function MathExplorer({ initialMode }) {
                 disabled={feedback === "correct" || feedback === "wrong"}
               >
                 {choice}
+                {!numericChoices && i < 9 && <KeyHint k={String(i + 1)} />}
                 {isCorrectChoice && !lowMotionMode && (
                   <ConfettiBurst intensity={lowEndDevice ? "light" : "normal"} />
                 )}

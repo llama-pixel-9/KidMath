@@ -240,10 +240,10 @@ export default function QuestionDisplay({ question, modeColor, feedback, revealA
             {objectLines.map((line, index) => (
               <p
                 key={`${line.text}-${index}`}
-                className={`whitespace-nowrap text-lg sm:text-xl font-extrabold ${theme.textPrimary} leading-snug`}
+                className={`text-lg sm:text-xl font-extrabold ${theme.textPrimary} leading-snug`}
               >
                 {line.label && <span>{line.label} </span>}
-                <span style={{ letterSpacing: "0.18em" }}>{line.run ?? line.text}</span>
+                <span className="whitespace-nowrap" style={{ letterSpacing: "0.18em" }}>{line.run ?? line.text}</span>
               </p>
             ))}
           </div>

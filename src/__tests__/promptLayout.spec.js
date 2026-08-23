@@ -82,3 +82,20 @@ describe("emojiPromptLines", () => {
     }
   });
 });
+
+describe("sentence-long labels", () => {
+  it("puts a long label on its own text line instead of gluing it to the run", () => {
+    const lines = emojiPromptLines("Priya counted these cars and said 17: 🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗 Priya skipped one. How many cars are there really?");
+    expect(lines.filter((l) => !l.isRun).map((l) => l.text)).toEqual([
+      "Priya counted these cars and said 17:",
+      "Priya skipped one.",
+      "How many cars are there really?",
+    ]);
+    expect(lines.filter((l) => l.isRun).every((l) => !l.label)).toBe(true);
+  });
+
+  it("keeps a short label inline with a single-row run", () => {
+    const lines = emojiPromptLines("Group A: 🍪🍪🍪 How many?");
+    expect(lines[0]).toMatchObject({ isRun: true, label: "Group A:" });
+  });
+});

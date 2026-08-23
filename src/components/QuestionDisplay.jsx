@@ -158,17 +158,30 @@ export default function QuestionDisplay({ question, modeColor, feedback, revealA
   }
 
   if (q.display?.sequence) {
+    // Type scales with the row's length and it may wrap: a numeric run
+    // ("1, 2, 3, ?") gets the big size; a word pattern ("red, blue, red,
+    // blue, red, blue, ?" — patterns mode, up to 15 tokens) shrank past the
+    // card edge at a fixed text-4xl. Thresholds are character counts of the
+    // joined row, tuned so each size fills the ~24rem column without clipping.
+    const seqChars = q.display.sequence.join(", ").length + 3;
+    const seqSize =
+      seqChars <= 16
+        ? "text-3xl sm:text-4xl"
+        : seqChars <= 30
+          ? "text-2xl sm:text-3xl"
+          : seqChars <= 48
+            ? "text-xl sm:text-2xl"
+            : "text-lg sm:text-xl";
     return (
       <div className="text-center">
         <p className={`text-sm font-bold ${theme.textMuted} mb-3 uppercase tracking-wide`}>What comes next?</p>
-        <div className={`flex items-center justify-center gap-2 text-3xl sm:text-4xl font-extrabold ${theme.textPrimary}`}>
+        <div className={`flex flex-wrap items-center justify-center gap-x-1 gap-y-1 ${seqSize} font-extrabold leading-tight ${theme.textPrimary}`}>
           {q.display.sequence.map((n, i) => (
-            <span key={i}>
-              {i > 0 && <span className={`${theme.textMuted} mx-1`}>,</span>}
+            <span key={i} className="whitespace-nowrap">
               {n}
+              <span className={`${theme.textMuted} mr-1`}>,</span>
             </span>
           ))}
-          <span className={`${theme.textMuted} mx-1`}>,</span>
           <AnswerSlot feedback={feedback} revealAnswer={revealAnswer} />
         </div>
         <SequenceNumberLine sequence={q.display.sequence} step={q.display.step} answer={q.answer} feedback={feedback} />

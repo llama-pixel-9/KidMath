@@ -91,6 +91,9 @@ export function scheduleSessions(n, days, rand, now) {
       slots.push(start.getTime() - d * DAY + hour * 3600000 + k * 1800000);
     }
   }
+  // Short windows can yield fewer slots than sessions — top up with random
+  // afternoons so every session has a real timestamp.
+  while (slots.length < n) slots.push(start.getTime() - Math.ceil(rand() * days) * DAY + (15 + rand() * 4) * 3600000);
   // keep the most recent n so the last session lands in the final week
   return slots.sort((x, y) => x - y).slice(-n);
 }

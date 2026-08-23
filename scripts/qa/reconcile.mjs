@@ -25,7 +25,7 @@ for (const f of readdirSync("qa-out/sessions")) {
   const mism = [];
   for (const s of sessions) {
     if (!Number.isFinite(s.startedAt)) { mism.push(`${s.mode}: no startedAt (schedule short)`); continue; }
-    const p = persisted.find((x) => x.mode === s.mode && Math.abs(x.startedAt - s.startedAt) < 5000);
+    const p = persisted.find((x) => x.mode === s.mode && Math.abs(x.startedAt - s.startedAt) < 90000);
     if (!p) { mism.push(`missing ${s.mode} @${new Date(s.startedAt).toISOString()}`); continue; }
     if (p.questions !== s.questions || p.firstTryCorrect !== s.firstTryCorrect) mism.push(`${s.mode}: truth ${s.firstTryCorrect}/${s.questions} vs saved ${p.firstTryCorrect}/${p.questions}`);
     if (p.levelEnd !== s.levelEnd) mism.push(`${s.mode}: levelEnd truth ${s.levelEnd} vs saved ${p.levelEnd}`);

@@ -91,15 +91,13 @@ export async function runAssembler({ modeId, subskills, rawItems, extraProblems,
       cellCounts.set(key, (cellCounts.get(key) || 0) + 1);
     }
   }
+  // The floor applies to the cells THIS batch contributes to. A full-mode
+  // build touches every cell and is checked exactly as before; a delta batch
+  // (e.g. the grade-4 remainders/rounding cells) is not required to re-author
+  // the rest of the mode.
   const shortCells = [];
-  for (const subskill of subskills) {
-    for (const family of FAMILIES) {
-      for (const band of BANDS) {
-        const key = `${subskill}::${family}::${band}`;
-        const n = cellCounts.get(key) || 0;
-        if (n < floor) shortCells.push(`${key} = ${n}`);
-      }
-    }
+  for (const [key, n] of cellCounts) {
+    if (n < floor) shortCells.push(`${key} = ${n}`);
   }
 
   console.log(`${modeId} authoring — tag ${batchTag}`);

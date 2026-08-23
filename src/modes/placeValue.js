@@ -40,7 +40,7 @@ function numberToWords(n) {
 /** Ceiling per level. Magnitude is the secondary dial; structure leads. */
 const MAX_BY_LEVEL = [19, 39, 99, 99, 199, 499, 999, 999, 999, 999];
 
-const SUBSKILLS = ["tensOnes", "expandedForm", "regroupingSense"];
+const SUBSKILLS = ["tensOnes", "expandedForm", "regroupingSense", "rounding"];
 
 // Legacy `context.questionType` values still route to a variety so older
 // callers (and the bank fixtures) keep working.
@@ -78,6 +78,23 @@ function expandedForm(n) {
   if (ones) parts.push(ones);
   return parts.length ? parts.join(" + ") : "0";
 }
+
+// 4.NBT reaches six digits; the legacy varieties were written against a 999
+// ceiling, so only the grade-4 varieties below read this table (2026-08-23).
+const BIG_MAX_BY_LEVEL = [19, 39, 99, 99, 199, 499, 999, 9999, 99999, 999999];
+const bigMaxFor = (level) => BIG_MAX_BY_LEVEL[Math.min(Math.max(level, 1), BIG_MAX_BY_LEVEL.length) - 1];
+const POWERS = [10, 100, 1000, 10000, 100000];
+
+/** Round `n` to the nearest `unit` (ties round up, the school convention). */
+const roundTo = (n, unit) => Math.round(n / unit) * unit;
+
+/** A rounding unit that has something to round at this magnitude. */
+function roundingUnitFor(n, level) {
+  const usable = POWERS.filter((u) => u <= (bandOf(level) === 2 ? 10 : n / 10));
+  return usable.length ? usable[randInt(0, usable.length - 1)] : 10;
+}
+
+const UNIT_WORDS = { 10: "ten", 100: "hundred", 1000: "thousand", 10000: "ten thousand", 100000: "hundred thousand" };
 
 const VARIETIES = [
   // 1 — 1.NBT.2 how many tens / hundreds.
@@ -670,6 +687,88 @@ const VARIETIES = [
       };
     },
   },
+  // 16 — 3.NBT.1 / 4.NBT.3 rounding, procedural. Band 2 rounds to the nearest
+  // ten within 99; band 3 rounds bigger numbers to any sensible unit.
+  {
+    id: "roundToNearest",
+    bands: [2, 3],
+    subskill: "rounding",
+    family: ITEM_FAMILIES.PROCEDURAL,
+    build: (level) => {
+      const max = bandOf(level) === 2 ? 99 : bigMaxFor(level);
+      let number = randInt(11, max);
+      const unit = roundingUnitFor(number, level);
+      if (number % unit === 0) number += randInt(1, unit - 1); // something to round
+      const answer = roundTo(number, unit);
+      return {
+        a: number,
+        answer,
+        answerType: "numberPad",
+        display: {
+          promptText: `Round ${number} to the nearest ${UNIT_WORDS[unit]}.`,
+        },
+        representation: "symbolic",
+        cognitiveDemand: "DOK1",
+        misconceptions: ["roundsDown", "placeValueSlip"],
+      };
+    },
+  },
+
+  // 17 — rounding as "which ten/hundred is it nearer to", conceptual: the
+  // number-line meaning behind the rule (3.NBT.1).
+  {
+    id: "roundingWhichNeighbor",
+    bands: [2, 3],
+    subskill: "rounding",
+    family: ITEM_FAMILIES.CONCEPTUAL,
+    build: (level) => {
+      const unit = bandOf(level) === 2 ? 10 : pick([10, 100]);
+      const lowMax = bandOf(level) === 2 ? 8 : unit === 10 ? 90 : 8;
+      const low = randInt(1, lowMax) * unit;
+      let number = low + randInt(1, unit - 1);
+      if (number % unit === unit / 2) number += 1; // skip the exact midpoint
+      const answer = roundTo(number, unit);
+      const other = answer === low ? low + unit : low;
+      return {
+        a: number,
+        answer,
+        choices: Math.random() < 0.5 ? [answer, other] : [other, answer],
+        display: {
+          promptText: `${number} sits between ${low} and ${(low + unit)}. Which is it nearer to?`,
+        },
+        representation: "symbolic",
+        cognitiveDemand: "DOK2",
+        misconceptions: ["roundsDown", "midpointConfusion"],
+      };
+    },
+  },
+
+  // 18 — 4.NBT.2 read/write big numbers: which digit sits in a large place.
+  {
+    id: "bigNumberPlace",
+    bands: [3],
+    subskill: "tensOnes",
+    family: ITEM_FAMILIES.PROCEDURAL,
+    build: (level) => {
+      const number = randInt(1000, bigMaxFor(Math.max(level, 8)));
+      const digits = String(number).split("").map(Number);
+      const placeNames = ["ones", "tens", "hundreds", "thousands", "ten thousands", "hundred thousands"];
+      const idx = randInt(0, digits.length - 1); // 0 = leftmost
+      const place = placeNames[digits.length - 1 - idx];
+      const answer = digits[idx];
+      return {
+        a: number,
+        answer,
+        answerType: "numberPad",
+        display: {
+          promptText: `In ${number}, which digit is in the ${place} place?`,
+        },
+        representation: "symbolic",
+        cognitiveDemand: "DOK1",
+        misconceptions: ["digitNotValue", "placeValueSlip"],
+      };
+    },
+  },
 ];
 
 export const PLACE_VALUE_VARIETY_IDS = VARIETIES.map((v) => v.id);
@@ -722,6 +821,8 @@ export default {
   glyph: "10",
   op: "place",
   subskills: SUBSKILLS,
+  // Rounding is 3.NBT.1/4.NBT.3 — bands 2-3 only (levels 4-10).
+  subskillLevels: { rounding: [4, 10] },
   supportedFormats: SUPPORTED_FORMATS,
   families: Object.values(ITEM_FAMILIES),
   varieties: PLACE_VALUE_VARIETY_IDS,
@@ -751,7 +852,7 @@ export default {
       cognitiveDemand: built.cognitiveDemand,
       representation: built.representation,
       mathPractices: ["MP2", "MP6", "MP7"],
-      standardRefs: ["1.NBT", "2.NBT"],
+      standardRefs: ["1.NBT", "2.NBT", "3.NBT", "4.NBT"],
       misconceptionTags: built.misconceptions,
       blueprintId: `placeValue-${variety.family}-${variety.id}`,
       structureType: variety.id,

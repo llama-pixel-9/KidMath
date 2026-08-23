@@ -513,6 +513,176 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "addition-conc-b0823-0001",
+  "modeId": "addition",
+  "itemFamily": "conceptual",
+  "subskill": "unknownAddend",
+  "structureType": "multiDigitMissingAddend",
+  "levelRange": [
+   8,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 118,
+   "b": null,
+   "op": "+",
+   "answer": 87,
+   "display": {
+    "promptText": "118 + ? = 205"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "addition-conc-composeDecompose-45-001",
+  "modeId": "addition",
+  "itemFamily": "conceptual",
+  "subskill": "composeDecompose",
+  "structureType": "putTogetherAddendUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 60,
+   "b": null,
+   "op": "+",
+   "answer": 40,
+   "display": {
+    "promptText": "Split 100 into 60 and another number: 60 + ? = 100"
+   }
+  }
+ },
+ {
+  "itemId": "addition-conc-makeTen-45-001",
+  "modeId": "addition",
+  "itemFamily": "conceptual",
+  "subskill": "makeTen",
+  "structureType": "joinResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 28,
+   "b": null,
+   "op": "+",
+   "answer": 2,
+   "display": {
+    "promptText": "What number completes 28 + ? = 30?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-conc-b0823-0033",
+  "modeId": "addition",
+  "itemFamily": "conceptual",
+  "subskill": "unknownAddend",
+  "structureType": "multiDigitMissingAddend",
+  "levelRange": [
+   8,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 331,
+   "b": null,
+   "op": "+",
+   "answer": 186,
+   "display": {
+    "promptText": "The jump from 331 up to 517 is how big?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "addition-conc-composeDecompose-45-017",
+  "modeId": "addition",
+  "itemFamily": "conceptual",
+  "subskill": "composeDecompose",
+  "structureType": "putTogetherAddendUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 300,
+   "b": null,
+   "op": "+",
+   "answer": 200,
+   "display": {
+    "promptText": "Write 500 as a sum of 300 and another whole number. The other number is?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-conc-makeTen-45-017",
+  "modeId": "addition",
+  "itemFamily": "conceptual",
+  "subskill": "makeTen",
+  "structureType": "joinResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 40,
+   "b": 40,
+   "op": "+",
+   "answer": 80,
+   "display": {
+    "promptText": "Use doubles: 40 + 40 equals?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-conc-unknownAddend-45-015",
+  "modeId": "addition",
+  "itemFamily": "conceptual",
+  "subskill": "unknownAddend",
+  "structureType": "joinChangeUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 30,
+   "b": null,
+   "op": "+",
+   "answer": 20,
+   "display": {
+    "promptText": "What goes in the circle: 30 + O = 50?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-conc-composeDecompose-45-033",
+  "modeId": "addition",
+  "itemFamily": "conceptual",
+  "subskill": "composeDecompose",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 375,
+   "b": 375,
+   "op": "+",
+   "answer": 750,
+   "display": {
+    "promptText": "Halve and double reasoning: double 375 is 375 + 375. What is the total?"
+   }
+  }
+ },
+ {
   "itemId": "addition-conc-composeDecompose-23-001",
   "modeId": "addition",
   "itemFamily": "conceptual",
@@ -677,174 +847,6 @@ export const SEED_ITEMS = [
    "answer": 18,
    "display": {
     "promptText": "Halve and double reasoning: double 9 is 9 + 9. What is the total?"
-   }
-  }
- },
- {
-  "itemId": "addition-conc-composeDecompose-45-001",
-  "modeId": "addition",
-  "itemFamily": "conceptual",
-  "subskill": "composeDecompose",
-  "structureType": "putTogetherAddendUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 60,
-   "b": null,
-   "op": "+",
-   "answer": 40,
-   "display": {
-    "promptText": "Split 100 into 60 and another number: 60 + ? = 100"
-   }
-  }
- },
- {
-  "itemId": "addition-conc-makeTen-45-001",
-  "modeId": "addition",
-  "itemFamily": "conceptual",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 28,
-   "b": null,
-   "op": "+",
-   "answer": 2,
-   "display": {
-    "promptText": "What number completes 28 + ? = 30?"
-   }
-  }
- },
- {
-  "itemId": "addition-conc-unknownAddend-45-001",
-  "modeId": "addition",
-  "itemFamily": "conceptual",
-  "subskill": "unknownAddend",
-  "structureType": "joinChangeUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 35,
-   "b": null,
-   "op": "+",
-   "answer": 35,
-   "display": {
-    "promptText": "Find the missing addend that makes 35 + ? = 70 true."
-   }
-  }
- },
- {
-  "itemId": "addition-conc-composeDecompose-45-017",
-  "modeId": "addition",
-  "itemFamily": "conceptual",
-  "subskill": "composeDecompose",
-  "structureType": "putTogetherAddendUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 300,
-   "b": null,
-   "op": "+",
-   "answer": 200,
-   "display": {
-    "promptText": "Write 500 as a sum of 300 and another whole number. The other number is?"
-   }
-  }
- },
- {
-  "itemId": "addition-conc-makeTen-45-017",
-  "modeId": "addition",
-  "itemFamily": "conceptual",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 40,
-   "b": 40,
-   "op": "+",
-   "answer": 80,
-   "display": {
-    "promptText": "Use doubles: 40 + 40 equals?"
-   }
-  }
- },
- {
-  "itemId": "addition-conc-unknownAddend-45-017",
-  "modeId": "addition",
-  "itemFamily": "conceptual",
-  "subskill": "unknownAddend",
-  "structureType": "joinChangeUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 68,
-   "b": null,
-   "op": "+",
-   "answer": 32,
-   "display": {
-    "promptText": "What goes in the circle: 68 + O = 100?"
-   }
-  }
- },
- {
-  "itemId": "addition-conc-composeDecompose-45-033",
-  "modeId": "addition",
-  "itemFamily": "conceptual",
-  "subskill": "composeDecompose",
-  "structureType": "putTogetherTotalUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 375,
-   "b": 375,
-   "op": "+",
-   "answer": 750,
-   "display": {
-    "promptText": "Halve and double reasoning: double 375 is 375 + 375. What is the total?"
-   }
-  }
- },
- {
-  "itemId": "addition-conc-makeTen-45-033",
-  "modeId": "addition",
-  "itemFamily": "conceptual",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 35,
-   "b": 35,
-   "op": "+",
-   "answer": 70,
-   "display": {
-    "promptText": "Halve and double reasoning: double 35 is 35 + 35. What is the total?"
    }
   }
  },
@@ -1017,6 +1019,175 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "addition-proc-b0823-0001",
+  "modeId": "addition",
+  "itemFamily": "procedural",
+  "subskill": "composeDecompose",
+  "structureType": "multiDigitSum",
+  "levelRange": [
+   8,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 118,
+   "b": 87,
+   "op": "+",
+   "answer": 205,
+   "display": {
+    "promptText": "118 + 87 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "addition-proc-makeTen-45-001",
+  "modeId": "addition",
+  "itemFamily": "procedural",
+  "subskill": "makeTen",
+  "structureType": "joinResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 18,
+   "b": 12,
+   "op": "+",
+   "answer": 30,
+   "display": {
+    "promptText": "18 + 12 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-proc-unknownAddend-45-001",
+  "modeId": "addition",
+  "itemFamily": "procedural",
+  "subskill": "unknownAddend",
+  "structureType": "joinChangeUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 25,
+   "b": null,
+   "op": "+",
+   "answer": 35,
+   "display": {
+    "promptText": "25 + ? = 60"
+   }
+  }
+ },
+ {
+  "itemId": "addition-proc-composeDecompose-45-008",
+  "modeId": "addition",
+  "itemFamily": "procedural",
+  "subskill": "composeDecompose",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 524,
+   "b": 218,
+   "op": "+",
+   "answer": 742,
+   "display": {
+    "promptText": "524 + 218 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-proc-makeTen-45-017",
+  "modeId": "addition",
+  "itemFamily": "procedural",
+  "subskill": "makeTen",
+  "structureType": "joinResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 49,
+   "b": 11,
+   "op": "+",
+   "answer": 60,
+   "display": {
+    "promptText": "49 + 11 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-proc-unknownAddend-45-017",
+  "modeId": "addition",
+  "itemFamily": "procedural",
+  "subskill": "unknownAddend",
+  "structureType": "joinChangeUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 30,
+   "b": null,
+   "op": "+",
+   "answer": 25,
+   "display": {
+    "promptText": "30 + ? = 55"
+   }
+  }
+ },
+ {
+  "itemId": "addition-proc-composeDecompose-45-042",
+  "modeId": "addition",
+  "itemFamily": "procedural",
+  "subskill": "composeDecompose",
+  "structureType": "putTogetherTotalUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 111,
+   "b": 444,
+   "op": "+",
+   "answer": 555,
+   "display": {
+    "promptText": "111 + 444 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "addition-proc-makeTen-45-033",
+  "modeId": "addition",
+  "itemFamily": "procedural",
+  "subskill": "makeTen",
+  "structureType": "joinResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 52,
+   "b": 18,
+   "op": "+",
+   "answer": 70,
+   "display": {
+    "promptText": "52 + 18 = ?"
+   }
+  }
+ },
+ {
   "itemId": "addition-proc-composeDecompose-23-001",
   "modeId": "addition",
   "itemFamily": "procedural",
@@ -1181,174 +1352,6 @@ export const SEED_ITEMS = [
    "answer": 20,
    "display": {
     "promptText": "19 + 1 = ?"
-   }
-  }
- },
- {
-  "itemId": "addition-proc-composeDecompose-45-001",
-  "modeId": "addition",
-  "itemFamily": "procedural",
-  "subskill": "composeDecompose",
-  "structureType": "putTogetherTotalUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 24,
-   "b": 35,
-   "op": "+",
-   "answer": 59,
-   "display": {
-    "promptText": "24 + 35 = ?"
-   }
-  }
- },
- {
-  "itemId": "addition-proc-makeTen-45-001",
-  "modeId": "addition",
-  "itemFamily": "procedural",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 18,
-   "b": 12,
-   "op": "+",
-   "answer": 30,
-   "display": {
-    "promptText": "18 + 12 = ?"
-   }
-  }
- },
- {
-  "itemId": "addition-proc-unknownAddend-45-001",
-  "modeId": "addition",
-  "itemFamily": "procedural",
-  "subskill": "unknownAddend",
-  "structureType": "joinChangeUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 25,
-   "b": null,
-   "op": "+",
-   "answer": 35,
-   "display": {
-    "promptText": "25 + ? = 60"
-   }
-  }
- },
- {
-  "itemId": "addition-proc-composeDecompose-45-017",
-  "modeId": "addition",
-  "itemFamily": "procedural",
-  "subskill": "composeDecompose",
-  "structureType": "putTogetherTotalUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 314,
-   "b": 145,
-   "op": "+",
-   "answer": 459,
-   "display": {
-    "promptText": "314 + 145 = ?"
-   }
-  }
- },
- {
-  "itemId": "addition-proc-makeTen-45-017",
-  "modeId": "addition",
-  "itemFamily": "procedural",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 49,
-   "b": 11,
-   "op": "+",
-   "answer": 60,
-   "display": {
-    "promptText": "49 + 11 = ?"
-   }
-  }
- },
- {
-  "itemId": "addition-proc-unknownAddend-45-017",
-  "modeId": "addition",
-  "itemFamily": "procedural",
-  "subskill": "unknownAddend",
-  "structureType": "joinChangeUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 30,
-   "b": null,
-   "op": "+",
-   "answer": 25,
-   "display": {
-    "promptText": "30 + ? = 55"
-   }
-  }
- },
- {
-  "itemId": "addition-proc-composeDecompose-45-033",
-  "modeId": "addition",
-  "itemFamily": "procedural",
-  "subskill": "composeDecompose",
-  "structureType": "putTogetherTotalUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 825,
-   "b": 167,
-   "op": "+",
-   "answer": 992,
-   "display": {
-    "promptText": "825 + 167 = ?"
-   }
-  }
- },
- {
-  "itemId": "addition-proc-makeTen-45-033",
-  "modeId": "addition",
-  "itemFamily": "procedural",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 52,
-   "b": 18,
-   "op": "+",
-   "answer": 70,
-   "display": {
-    "promptText": "52 + 18 = ?"
    }
   }
  },
@@ -16861,7 +16864,29 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "division-app-partitioning-4_5-compareSetSizeUnknown-004",
+  "itemId": "division-app-b0823-0001",
+  "modeId": "division",
+  "itemFamily": "application",
+  "subskill": "remainders",
+  "structureType": "remainderStoryLeft",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 17,
+   "b": null,
+   "op": "/",
+   "answer": 2,
+   "display": {
+    "promptText": "Ava shares 17 stickers equally among 3 boxes. How many stickers are left over?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "division-app-partitioning-4_5-compareSetSizeUnknown-b0728-004",
   "modeId": "division",
   "itemFamily": "application",
   "subskill": "partitioning",
@@ -16872,17 +16897,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 84,
-   "b": 12,
+   "a": 48,
+   "b": 6,
    "op": "÷",
-   "answer": 7,
+   "answer": 8,
    "display": {
-    "promptText": "The pizza party for Maya's class costs $84. That's 12 times as much as one pizza costs. How much does one pizza cost?"
+    "promptText": "Jamal collected 48 rocks, which is 6 times as many as Priya collected. How many rocks did Priya collect?"
    }
   }
  },
  {
-  "itemId": "division-app-inverseFact-4_5-003",
+  "itemId": "division-app-inverseFact-4_5-006",
   "modeId": "division",
   "itemFamily": "application",
   "subskill": "inverseFact",
@@ -16893,17 +16918,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 192,
-   "b": 6,
+   "a": 126,
+   "b": 9,
    "op": "÷",
-   "answer": 32,
+   "answer": 14,
    "display": {
-    "promptText": "192 apples are packed equally into 6 crates. How many apples are in each crate?"
+    "promptText": "126 stamps are placed equally on 9 album pages. How many stamps are on each page?"
    }
   }
  },
  {
-  "itemId": "division-app-unknownQuotient-4_5-arrayRowCountUnknown-b0728-010",
+  "itemId": "division-app-unknownQuotient-4_5-arrayRowCountUnknown-b0728-031",
   "modeId": "division",
   "itemFamily": "application",
   "subskill": "unknownQuotient",
@@ -16914,55 +16939,35 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 24,
-   "b": 3,
+   "a": 35,
+   "b": 5,
    "op": "÷",
-   "answer": 8,
+   "answer": 7,
    "display": {
-    "promptText": "Ava collected 24 seashells. She arranges them into rows of 3. How many rows of seashells does Ava have?"
+    "promptText": "Ethan stacked 35 coins into rows of 5. How many rows did he make?"
    }
   }
  },
  {
-  "itemId": "division-app-partitioning-4_5-compareSetSizeUnknown-b0728-016",
+  "itemId": "division-app-b0823-0031",
   "modeId": "division",
   "itemFamily": "application",
-  "subskill": "partitioning",
-  "structureType": "compareSetSizeUnknown",
+  "subskill": "remainders",
+  "structureType": "remainderStoryLeft",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 99,
-   "b": 9,
-   "op": "÷",
-   "answer": 11,
+   "a": 37,
+   "b": null,
+   "op": "/",
+   "answer": 2,
    "display": {
-    "promptText": "Skylar collected 99 stamps, which is 9 times as many as Alex collected. How many stamps did Alex collect?"
-   }
-  }
- },
- {
-  "itemId": "division-app-inverseFact-4_5-010",
-  "modeId": "division",
-  "itemFamily": "application",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 234,
-   "b": 9,
-   "op": "÷",
-   "answer": 26,
-   "display": {
-    "promptText": "234 photos are glued equally onto 9 scrapbook pages. How many photos are on each page?"
-   }
+    "promptText": "Amara shares 37 acorns equally among 5 baskets. How many acorns are left over?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
@@ -17302,6 +17307,182 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "division-conc-b0823-0001",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "remainders",
+  "structureType": "remainderJudged",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 17,
+   "b": null,
+   "op": "/",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Sam says 17 ÷ 3 leaves 2 left over. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-inverseFact-4_5-001",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 288,
+   "b": 12,
+   "op": "÷",
+   "answer": 24,
+   "display": {
+    "promptText": "Mr. Reyes shares 288 colored pencils equally among 12 art tables. Think: 12 times what number makes 288? How many colored pencils are on each art table?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-partitioning-4_5-001",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 144,
+   "b": 6,
+   "op": "÷",
+   "answer": 24,
+   "display": {
+    "promptText": "Nina baked 144 muffins. She put the same number of muffins on each of 6 trays. How many muffins are on each tray?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-unknownQuotient-4_5-001",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "unknownQuotient",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 176,
+   "b": 8,
+   "op": "÷",
+   "answer": 22,
+   "display": {
+    "promptText": "Nia baked 176 muffins for the school sale. She packed them equally into 8 boxes. How many muffins did she pack in each box?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-b0823-0031",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "remainders",
+  "structureType": "remainderJudged",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 37,
+   "b": null,
+   "op": "/",
+   "answer": "No",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "Zoe says 37 ÷ 5 leaves 3 left over. Is that right?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-inverseFact-4_5-010",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 294,
+   "b": 14,
+   "op": "÷",
+   "answer": 21,
+   "display": {
+    "promptText": "Diego sets out 294 chairs in 14 equal rows. Think of the fact 14 × ? = 294. How many chairs are in each row?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-partitioning-4_5-010",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 224,
+   "b": 16,
+   "op": "÷",
+   "answer": 14,
+   "display": {
+    "promptText": "Spread 224 books evenly over 16 shelves. How many books go on each shelf?"
+   }
+  }
+ },
+ {
+  "itemId": "division-conc-unknownQuotient-4_5-010",
+  "modeId": "division",
+  "itemFamily": "conceptual",
+  "subskill": "unknownQuotient",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 148,
+   "b": 4,
+   "op": "÷",
+   "answer": 37,
+   "display": {
+    "promptText": "Ruby saved 148 stickers in a box. She put them equally on 4 pages of her album. How many stickers did she put on each page?"
+   }
+  }
+ },
+ {
   "itemId": "division-conc-inverseFact-2_3-001",
   "modeId": "division",
   "itemFamily": "conceptual",
@@ -17466,174 +17647,6 @@ export const SEED_ITEMS = [
    "answer": 12,
    "display": {
     "promptText": "Divide 72 stamps evenly into 6 albums. Each album holds?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-inverseFact-4_5-001",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 288,
-   "b": 12,
-   "op": "÷",
-   "answer": 24,
-   "display": {
-    "promptText": "Mr. Reyes shares 288 colored pencils equally among 12 art tables. Think: 12 times what number makes 288? How many colored pencils are on each art table?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-partitioning-4_5-001",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 144,
-   "b": 6,
-   "op": "÷",
-   "answer": 24,
-   "display": {
-    "promptText": "Nina baked 144 muffins. She put the same number of muffins on each of 6 trays. How many muffins are on each tray?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-unknownQuotient-4_5-001",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "unknownQuotient",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 176,
-   "b": 8,
-   "op": "÷",
-   "answer": 22,
-   "display": {
-    "promptText": "Nia baked 176 muffins for the school sale. She packed them equally into 8 boxes. How many muffins did she pack in each box?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-inverseFact-4_5-007",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 384,
-   "b": 24,
-   "op": "÷",
-   "answer": 16,
-   "display": {
-    "promptText": "Sam lays 384 tiles in 24 equal rows. What number times 24 makes 384? How many tiles are in each row?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-partitioning-4_5-007",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 476,
-   "b": 4,
-   "op": "÷",
-   "answer": 119,
-   "display": {
-    "promptText": "Break 476 into 4 equal groups. What is the size of one group?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-unknownQuotient-4_5-007",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "unknownQuotient",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 322,
-   "b": 7,
-   "op": "÷",
-   "answer": 46,
-   "display": {
-    "promptText": "Priya picked 322 tomatoes from her plants. She shared them equally into 7 crates. How many tomatoes did she put in each crate?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-inverseFact-4_5-013",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 429,
-   "b": 13,
-   "op": "÷",
-   "answer": 33,
-   "display": {
-    "promptText": "Coach Barnes hands out 429 practice cards equally to 13 players. If 13 × 33 = 429, how many practice cards does each player get?"
-   }
-  }
- },
- {
-  "itemId": "division-conc-partitioning-4_5-013",
-  "modeId": "division",
-  "itemFamily": "conceptual",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 850,
-   "b": 25,
-   "op": "÷",
-   "answer": 34,
-   "display": {
-    "promptText": "Ms. Ruiz has 850 grapes. She puts the same number of grapes on each of 25 plates. How many grapes are on each plate?"
    }
   }
  },
@@ -17806,6 +17819,176 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "division-proc-b0823-0001",
+  "modeId": "division",
+  "itemFamily": "procedural",
+  "subskill": "remainders",
+  "structureType": "divisionRemainderQuotient",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 17,
+   "b": null,
+   "op": "/",
+   "answer": 5,
+   "display": {
+    "promptText": "17 ÷ 3 = ? r 2"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "division-proc-inverseFact-45-001",
+  "modeId": "division",
+  "itemFamily": "procedural",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 72,
+   "b": 9,
+   "op": "÷",
+   "answer": 8,
+   "display": {
+    "promptText": "72 ÷ 9 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "division-proc-partitioning-45-001",
+  "modeId": "division",
+  "itemFamily": "procedural",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 48,
+   "b": 6,
+   "op": "÷",
+   "answer": 8,
+   "display": {
+    "promptText": "48 ÷ 6 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "division-proc-unknownQuotient-45-001",
+  "modeId": "division",
+  "itemFamily": "procedural",
+  "subskill": "unknownQuotient",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 144,
+   "b": 12,
+   "op": "÷",
+   "answer": 12,
+   "display": {
+    "promptText": "144 ÷ 12 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "division-proc-b0823-0033",
+  "modeId": "division",
+  "itemFamily": "procedural",
+  "subskill": "remainders",
+  "structureType": "divisionRemainderQuotient",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 49,
+   "b": null,
+   "op": "/",
+   "answer": 9,
+   "display": {
+    "promptText": "49 ÷ 5 = ? r 4"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "division-proc-inverseFact-45-002",
+  "modeId": "division",
+  "itemFamily": "procedural",
+  "subskill": "inverseFact",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 64,
+   "b": 8,
+   "op": "÷",
+   "answer": 8,
+   "display": {
+    "promptText": "64 ÷ 8 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "division-proc-partitioning-45-002",
+  "modeId": "division",
+  "itemFamily": "procedural",
+  "subskill": "partitioning",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 56,
+   "b": 7,
+   "op": "÷",
+   "answer": 8,
+   "display": {
+    "promptText": "56 ÷ 7 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "division-proc-unknownQuotient-45-002",
+  "modeId": "division",
+  "itemFamily": "procedural",
+  "subskill": "unknownQuotient",
+  "structureType": "partitiveDivision",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 100,
+   "b": 4,
+   "op": "÷",
+   "answer": 25,
+   "display": {
+    "promptText": "100 ÷ 4 = ?"
+   }
+  }
+ },
+ {
   "itemId": "division-proc-inverseFact-23-001",
   "modeId": "division",
   "itemFamily": "procedural",
@@ -17970,174 +18153,6 @@ export const SEED_ITEMS = [
    "answer": 3,
    "display": {
     "promptText": "18 ÷ 6 = ?"
-   }
-  }
- },
- {
-  "itemId": "division-proc-inverseFact-45-001",
-  "modeId": "division",
-  "itemFamily": "procedural",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 72,
-   "b": 9,
-   "op": "÷",
-   "answer": 8,
-   "display": {
-    "promptText": "72 ÷ 9 = ?"
-   }
-  }
- },
- {
-  "itemId": "division-proc-partitioning-45-001",
-  "modeId": "division",
-  "itemFamily": "procedural",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 48,
-   "b": 6,
-   "op": "÷",
-   "answer": 8,
-   "display": {
-    "promptText": "48 ÷ 6 = ?"
-   }
-  }
- },
- {
-  "itemId": "division-proc-unknownQuotient-45-001",
-  "modeId": "division",
-  "itemFamily": "procedural",
-  "subskill": "unknownQuotient",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 144,
-   "b": 12,
-   "op": "÷",
-   "answer": 12,
-   "display": {
-    "promptText": "144 ÷ 12 = ?"
-   }
-  }
- },
- {
-  "itemId": "division-proc-inverseFact-45-002",
-  "modeId": "division",
-  "itemFamily": "procedural",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 64,
-   "b": 8,
-   "op": "÷",
-   "answer": 8,
-   "display": {
-    "promptText": "64 ÷ 8 = ?"
-   }
-  }
- },
- {
-  "itemId": "division-proc-partitioning-45-002",
-  "modeId": "division",
-  "itemFamily": "procedural",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 56,
-   "b": 7,
-   "op": "÷",
-   "answer": 8,
-   "display": {
-    "promptText": "56 ÷ 7 = ?"
-   }
-  }
- },
- {
-  "itemId": "division-proc-unknownQuotient-45-002",
-  "modeId": "division",
-  "itemFamily": "procedural",
-  "subskill": "unknownQuotient",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 100,
-   "b": 4,
-   "op": "÷",
-   "answer": 25,
-   "display": {
-    "promptText": "100 ÷ 4 = ?"
-   }
-  }
- },
- {
-  "itemId": "division-proc-inverseFact-45-003",
-  "modeId": "division",
-  "itemFamily": "procedural",
-  "subskill": "inverseFact",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 49,
-   "b": 7,
-   "op": "÷",
-   "answer": 7,
-   "display": {
-    "promptText": "49 ÷ 7 = ?"
-   }
-  }
- },
- {
-  "itemId": "division-proc-partitioning-45-003",
-  "modeId": "division",
-  "itemFamily": "procedural",
-  "subskill": "partitioning",
-  "structureType": "partitiveDivision",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 81,
-   "b": 9,
-   "op": "÷",
-   "answer": 9,
-   "display": {
-    "promptText": "81 ÷ 9 = ?"
    }
   }
  },
@@ -29578,24 +29593,25 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-conc-equalGroups-45-001",
+  "itemId": "multiplication-conc-b0823-0001",
   "modeId": "multiplication",
   "itemFamily": "conceptual",
   "subskill": "equalGroups",
-  "structureType": "equalGroupsTotalUnknown",
+  "structureType": "multiDigitMissingFactor",
   "levelRange": [
-   7,
+   8,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 8,
-   "b": 7,
-   "op": "×",
-   "answer": 56,
+   "a": 12,
+   "b": null,
+   "op": "x",
+   "answer": 3,
    "display": {
-    "promptText": "Use the equal-groups model: 8 × 7. What is the product?"
-   }
+    "promptText": "12 × ? = 36"
+   },
+   "answerType": "numberPad"
   }
  },
  {
@@ -29620,7 +29636,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-conc-arrayReasoning-45-018",
+  "itemId": "multiplication-conc-arrayReasoning-45-036",
   "modeId": "multiplication",
   "itemFamily": "conceptual",
   "subskill": "arrayReasoning",
@@ -29631,34 +29647,35 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 10,
-   "b": 8,
+   "a": 16,
+   "b": 10,
    "op": "×",
-   "answer": 80,
+   "answer": 160,
    "display": {
-    "promptText": "A 10 by 8 array has how many squares?"
+    "promptText": "Rows and columns: 16 rows × 10 columns gives how many dots?"
    }
   }
  },
  {
-  "itemId": "multiplication-conc-equalGroups-45-018",
+  "itemId": "multiplication-conc-b0823-0035",
   "modeId": "multiplication",
   "itemFamily": "conceptual",
   "subskill": "equalGroups",
-  "structureType": "equalGroupsTotalUnknown",
+  "structureType": "multiDigitMissingFactor",
   "levelRange": [
-   7,
+   8,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 10,
-   "b": 9,
-   "op": "×",
-   "answer": 90,
+   "a": 22,
+   "b": null,
+   "op": "x",
+   "answer": 9,
    "display": {
-    "promptText": "10 groups, each with 9 items. Total items?"
-   }
+    "promptText": "22 times what number makes 198?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
@@ -29683,28 +29700,29 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-conc-arrayReasoning-45-035",
+  "itemId": "multiplication-conc-b0823-0073",
   "modeId": "multiplication",
   "itemFamily": "conceptual",
   "subskill": "arrayReasoning",
-  "structureType": "arrayTotalUnknown",
+  "structureType": "multiDigitDistributive",
   "levelRange": [
-   7,
+   8,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 15,
-   "b": 10,
-   "op": "×",
-   "answer": 150,
+   "a": 62,
+   "b": 7,
+   "op": "x",
+   "answer": 434,
    "display": {
-    "promptText": "Rows and columns: 15 rows × 10 columns gives how many dots?"
-   }
+    "promptText": "First find 62 × 1, then 62 × 6, then add. What is 62 × 7?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "multiplication-conc-equalGroups-45-035",
+  "itemId": "multiplication-conc-equalGroups-45-017",
   "modeId": "multiplication",
   "itemFamily": "conceptual",
   "subskill": "equalGroups",
@@ -29715,12 +29733,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 18,
-   "b": 6,
+   "a": 10,
+   "b": 8,
    "op": "×",
-   "answer": 108,
+   "answer": 80,
    "display": {
-    "promptText": "Area model: 18 × 6 = (10 + 8) × 6. What is the product?"
+    "promptText": "10 groups, each with 8 items. Total items?"
    }
   }
  },
@@ -30082,6 +30100,28 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "multiplication-proc-b0823-0001",
+  "modeId": "multiplication",
+  "itemFamily": "procedural",
+  "subskill": "factFluency",
+  "structureType": "multiDigitProduct",
+  "levelRange": [
+   8,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 12,
+   "b": 3,
+   "op": "x",
+   "answer": 36,
+   "display": {
+    "promptText": "12 × 3 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
   "itemId": "multiplication-proc-equalGroups-45-001",
   "modeId": "multiplication",
   "itemFamily": "procedural",
@@ -30099,27 +30139,6 @@ export const SEED_ITEMS = [
    "answer": 56,
    "display": {
     "promptText": "8 × 7 = ?"
-   }
-  }
- },
- {
-  "itemId": "multiplication-proc-factFluency-45-001",
-  "modeId": "multiplication",
-  "itemFamily": "procedural",
-  "subskill": "factFluency",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": 9,
-   "op": "×",
-   "answer": 72,
-   "display": {
-    "promptText": "8 × 9 = ?"
    }
   }
  },
@@ -30145,6 +30164,28 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "multiplication-proc-b0823-0053",
+  "modeId": "multiplication",
+  "itemFamily": "procedural",
+  "subskill": "factFluency",
+  "structureType": "multiDigitProduct",
+  "levelRange": [
+   8,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 72,
+   "b": 6,
+   "op": "x",
+   "answer": 432,
+   "display": {
+    "promptText": "72 × 6 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
   "itemId": "multiplication-proc-equalGroups-45-018",
   "modeId": "multiplication",
   "itemFamily": "procedural",
@@ -30162,27 +30203,6 @@ export const SEED_ITEMS = [
    "answer": 66,
    "display": {
     "promptText": "Find the product: 11 × 6."
-   }
-  }
- },
- {
-  "itemId": "multiplication-proc-factFluency-45-031",
-  "modeId": "multiplication",
-  "itemFamily": "procedural",
-  "subskill": "factFluency",
-  "structureType": "equalGroupsTotalUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 10,
-   "b": 9,
-   "op": "×",
-   "answer": 90,
-   "display": {
-    "promptText": "10 times 9 = ?"
    }
   }
  },
@@ -30208,24 +30228,25 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-proc-equalGroups-45-035",
+  "itemId": "multiplication-proc-b0823-0018",
   "modeId": "multiplication",
   "itemFamily": "procedural",
-  "subskill": "equalGroups",
-  "structureType": "equalGroupsTotalUnknown",
+  "subskill": "factFluency",
+  "structureType": "multiDigitProduct",
   "levelRange": [
-   7,
+   8,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 12,
-   "b": 11,
-   "op": "×",
-   "answer": 132,
+   "a": 55,
+   "b": 12,
+   "op": "x",
+   "answer": 660,
    "display": {
-    "promptText": "Product of 12 and 11?"
-   }
+    "promptText": "What is 55 × 12?"
+   },
+   "answerType": "numberPad"
   }
  },
  {
@@ -34869,11 +34890,33 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placeValue-app-b0821-0304",
+  "itemId": "placeValue-app-b0823-0055",
+  "modeId": "placeValue",
+  "itemFamily": "application",
+  "subskill": "rounding",
+  "structureType": "roundStory",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 317,
+   "b": null,
+   "op": "place",
+   "answer": 320,
+   "display": {
+    "promptText": "Nia collected 317 beads. About how many beads is that, to the nearest ten?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-app-b0821-0402",
   "modeId": "placeValue",
   "itemFamily": "application",
   "subskill": "regroupingSense",
-  "structureType": "storyNonCanonical",
+  "structureType": "storyTradesBig",
   "levelRange": [
    7,
    10
@@ -34883,20 +34926,20 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 175,
+   "answer": 37,
    "display": {
     "counting": {
-     "kind": "groups",
-     "ones": 15,
-     "tens": 16
+     "have": 0,
+     "kind": "gap",
+     "target": 37
     },
-    "promptText": "Nia has 16 full wires of ten beads and 15 loose beads — more than ten loose! What total number of beads is that?"
+    "promptText": "Ben turns 376 single beads into full wires of ten. How many full full wires does Ben end up with?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placeValue-app-b0821-0089",
+  "itemId": "placeValue-app-b0821-0101",
   "modeId": "placeValue",
   "itemFamily": "application",
   "subskill": "tensOnes",
@@ -34910,20 +34953,20 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 3,
+   "answer": 900,
    "display": {
     "counting": {
-     "n": 493,
+     "n": 951,
      "kind": "placeValueOf",
-     "place": 1
+     "place": 100
     },
-    "promptText": "Rosa's locker number is 493. How much is the ones digit of 493 worth?"
+    "promptText": "June's locker number is 951. How much is the hundreds digit of 951 worth?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placeValue-app-b0821-0208",
+  "itemId": "placeValue-app-b0821-0220",
   "modeId": "placeValue",
   "itemFamily": "application",
   "subskill": "expandedForm",
@@ -34937,69 +34980,36 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": "400 + 90 + 3",
+   "answer": "400 + 20 + 8",
    "choices": [
-    "400 + 90 + 3",
-    "400 + 9 + 3",
-    "4 + 9 + 3",
-    "300 + 90 + 4"
+    "400 + 20 + 8",
+    "400 + 2 + 8",
+    "4 + 2 + 8",
+    "800 + 20 + 4"
    ],
    "display": {
-    "promptText": "The librarian asks Zoe for 493 in expanded form. Which is it?"
+    "promptText": "The librarian asks Kai for 428 in expanded form. Which is it?"
    }
   }
  },
  {
-  "itemId": "placeValue-app-b0821-0415",
+  "itemId": "placeValue-app-b0823-0082",
   "modeId": "placeValue",
   "itemFamily": "application",
-  "subskill": "regroupingSense",
-  "structureType": "storyLeftoversBig",
+  "subskill": "rounding",
+  "structureType": "roundStory",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": null,
+   "a": 182887,
    "b": null,
-   "op": "count",
-   "answer": 5,
+   "op": "place",
+   "answer": 183000,
    "display": {
-    "counting": {
-     "n": 745,
-     "kind": "digit",
-     "place": 1
-    },
-    "promptText": "Luca fills full wires of ten from 745 beads. How many beads do not fit in a full full wire?"
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "placeValue-app-b0821-0350",
-  "modeId": "placeValue",
-  "itemFamily": "application",
-  "subskill": "tensOnes",
-  "structureType": "storyCrates",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 356,
-   "display": {
-    "counting": {
-     "kind": "units",
-     "ones": 6,
-     "tens": 5,
-     "hundreds": 3
-    },
-    "promptText": "The store gives Omar 3 hundred-packs, 5 ten-packs, and 6 single oranges. What is the total number of oranges?"
+    "promptText": "Zoe counted 182887 pennies. About how many pennies is that, to the nearest thousand?"
    },
    "answerType": "numberPad"
   }
@@ -35285,7 +35295,29 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placeValue-app-b0821-0055",
+  "itemId": "placeValue-app-b0823-0001",
+  "modeId": "placeValue",
+  "itemFamily": "application",
+  "subskill": "rounding",
+  "structureType": "roundStory",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 11,
+   "b": null,
+   "op": "place",
+   "answer": 10,
+   "display": {
+    "promptText": "Nia collected 11 beads. About how many beads is that, to the nearest ten?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-app-b0821-0067",
   "modeId": "placeValue",
   "itemFamily": "application",
   "subskill": "tensOnes",
@@ -35299,20 +35331,20 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 55,
+   "answer": 56,
    "display": {
     "counting": {
-     "n": 65,
+     "n": 66,
      "kind": "moreLess",
      "delta": -10
     },
-    "promptText": "Rosa has 65 stickers and gives away one sheet of ten. How many stickers are left?"
+    "promptText": "June has 66 stickers and gives away one sheet of ten. How many stickers are left?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placeValue-app-b0821-0174",
+  "itemId": "placeValue-app-b0821-0186",
   "modeId": "placeValue",
   "itemFamily": "application",
   "subskill": "expandedForm",
@@ -35326,20 +35358,20 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 50,
+   "answer": 90,
    "display": {
     "counting": {
-     "n": 56,
+     "n": 94,
      "kind": "placeValueOf",
      "place": 10
     },
-    "promptText": "Rosa writes 56 on a poster as tens plus ones. Which number shows the tens part?"
+    "promptText": "June writes 94 on a poster as tens plus ones. Which number shows the tens part?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placeValue-app-b0821-0276",
+  "itemId": "placeValue-app-b0821-0288",
   "modeId": "placeValue",
   "itemFamily": "application",
   "subskill": "regroupingSense",
@@ -35353,69 +35385,38 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 8,
+   "answer": 6,
    "display": {
     "counting": {
-     "n": 68,
+     "n": 66,
      "kind": "digit",
      "place": 1
     },
-    "promptText": "Zoe fills sheets of ten from 68 stickers. How many stickers do not fit in a full sheet?"
+    "promptText": "Kai fills sheets of ten from 66 stickers. How many stickers do not fit in a full sheet?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placeValue-app-b0821-0333",
+  "itemId": "placeValue-app-b0823-0028",
   "modeId": "placeValue",
   "itemFamily": "application",
-  "subskill": "tensOnes",
-  "structureType": "storyDigitOf",
+  "subskill": "rounding",
+  "structureType": "roundStory",
   "levelRange": [
    4,
    6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": null,
+   "a": 13,
    "b": null,
-   "op": "count",
-   "answer": 8,
+   "op": "place",
+   "answer": 10,
    "display": {
-    "counting": {
-     "n": 88,
-     "kind": "digit",
-     "place": 1
-    },
-    "promptText": "Page 88 is Omar's favorite. Which digit sits in the ones place of 88?"
+    "promptText": "Zoe counted 13 pennies. About how many pennies is that, to the nearest ten?"
    },
    "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "placeValue-app-b0821-0367",
-  "modeId": "placeValue",
-  "itemFamily": "application",
-  "subskill": "expandedForm",
-  "structureType": "storyPickExpansionMid",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": "30 + 3",
-   "choices": [
-    "30 + 3",
-    "3 + 3",
-    "40 + 3"
-   ],
-   "display": {
-    "promptText": "Ben labels a box of 33 beads with its expanded form. Which label is right?"
-   }
   }
  },
  {
@@ -35716,11 +35717,36 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placeValue-conc-b0821-0063",
+  "itemId": "placeValue-conc-b0823-0001",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "rounding",
+  "structureType": "roundNeighborPick",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 11,
+   "b": null,
+   "op": "place",
+   "answer": 10,
+   "choices": [
+    10,
+    20
+   ],
+   "display": {
+    "promptText": "11 sits between 10 and 20 on the number line. Which is it nearer to?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0146",
   "modeId": "placeValue",
   "itemFamily": "conceptual",
   "subskill": "tensOnes",
-  "structureType": "digitWorth",
+  "structureType": "reversalJudge",
   "levelRange": [
    4,
    6
@@ -35730,24 +35756,19 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 1,
+   "answer": "No",
    "choices": [
-    1,
-    2,
-    40
+    "Yes",
+    "No"
    ],
    "display": {
-    "counting": {
-     "n": 41,
-     "kind": "placeValueOf",
-     "place": 1
-    },
-    "promptText": "Sam looks at the ones digit of 41. What is that digit worth?"
+    "truth": false,
+    "promptText": "Finn writes 13 for 3 tens and 1 one. Is that right?"
    }
   }
  },
  {
-  "itemId": "placeValue-conc-b0821-0265",
+  "itemId": "placeValue-conc-b0821-0277",
   "modeId": "placeValue",
   "itemFamily": "conceptual",
   "subskill": "expandedForm",
@@ -35768,16 +35789,16 @@ export const SEED_ITEMS = [
    ],
    "display": {
     "truth": false,
-    "promptText": "Sam expands 79 as 7 + 9. Is that right?"
+    "promptText": "Diego expands 65 as 6 + 5. Is that right?"
    }
   }
  },
  {
-  "itemId": "placeValue-conc-b0821-0402",
+  "itemId": "placeValue-conc-b0821-0430",
   "modeId": "placeValue",
   "itemFamily": "conceptual",
   "subskill": "regroupingSense",
-  "structureType": "pickRename",
+  "structureType": "tradesFromOnes",
   "levelRange": [
    4,
    6
@@ -35787,69 +35808,40 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": "8 tens 11 ones",
-   "choices": [
-    "8 tens 1 one",
-    "8 tens 11 ones",
-    "9 tens 11 ones",
-    "10 tens 11 ones"
-   ],
+   "answer": 3,
    "display": {
-    "promptText": "Theo wants to rename 91 with extra ones. Which way is right?"
-   }
-  }
- },
- {
-  "itemId": "placeValue-conc-b0821-0177",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "tensOnes",
-  "structureType": "lineLocate",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 56,
-   "display": {
-    "max": 60,
-    "min": 50,
-    "step": 1,
-    "lineMode": "locate",
-    "labelEvery": 5,
-    "promptText": "Ida hunts for 56. Where does 56 sit on the line?"
+    "counting": {
+     "n": 34,
+     "kind": "digit",
+     "place": 10
+    },
+    "promptText": "June holds 34 loose ones and trades every 10 for a ten. How many tens does June get?"
    },
-   "answerType": "numberLine"
+   "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placeValue-conc-b0821-0306",
+  "itemId": "placeValue-conc-b0823-0028",
   "modeId": "placeValue",
   "itemFamily": "conceptual",
-  "subskill": "expandedForm",
-  "structureType": "oddOneOutForms",
+  "subskill": "rounding",
+  "structureType": "roundJudged",
   "levelRange": [
    4,
    6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": null,
+   "a": 13,
    "b": null,
-   "op": "count",
-   "answer": "80 + 6",
+   "op": "place",
+   "answer": "No",
    "choices": [
-    "68",
-    "6 tens 8 ones",
-    "60 + 8",
-    "80 + 6"
+    "Yes",
+    "No"
    ],
    "display": {
-    "promptText": "Three of Leo's cards show 68. Which card does NOT?"
+    "promptText": "Ida rounds 13 to the nearest ten and gets 20. Is that right?"
    }
   }
  },
@@ -35939,7 +35931,32 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placeValue-conc-b0821-0092",
+  "itemId": "placeValue-conc-b0823-0055",
+  "modeId": "placeValue",
+  "itemFamily": "conceptual",
+  "subskill": "rounding",
+  "structureType": "roundNeighborPick",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 317,
+   "b": null,
+   "op": "place",
+   "answer": 320,
+   "choices": [
+    310,
+    320
+   ],
+   "display": {
+    "promptText": "317 is somewhere between 310 and 320. Which end is it closer to?"
+   }
+  }
+ },
+ {
+  "itemId": "placeValue-conc-b0821-0104",
   "modeId": "placeValue",
   "itemFamily": "conceptual",
   "subskill": "tensOnes",
@@ -35953,20 +35970,20 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 739,
+   "answer": 163,
    "choices": [
-    793,
-    739,
-    839,
-    937
+    263,
+    163,
+    361,
+    136
    ],
    "display": {
-    "promptText": "Priya shows 7 hundreds 3 tens 9 ones with blocks. Which number did Priya build?"
+    "promptText": "Rosa shows 1 hundred 6 tens 3 ones with blocks. Which number did Rosa build?"
    }
   }
  },
  {
-  "itemId": "placeValue-conc-b0821-0283",
+  "itemId": "placeValue-conc-b0821-0295",
   "modeId": "placeValue",
   "itemFamily": "conceptual",
   "subskill": "expandedForm",
@@ -35987,12 +36004,12 @@ export const SEED_ITEMS = [
    ],
    "display": {
     "truth": false,
-    "promptText": "Sam expands 739 as 700 + 3 + 9. Is that right?"
+    "promptText": "Diego expands 376 as 300 + 7 + 6. Is that right?"
    }
   }
  },
  {
-  "itemId": "placeValue-conc-b0821-0471",
+  "itemId": "placeValue-conc-b0821-0483",
   "modeId": "placeValue",
   "itemFamily": "conceptual",
   "subskill": "regroupingSense",
@@ -36006,68 +36023,40 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": "6 hundreds 3 tens 8 ones",
+   "answer": "1 hundred 8 tens 4 ones",
    "choices": [
-    "600 + 80 + 3",
-    "6 hundreds 3 tens 8 ones",
-    "6 hundreds 8 tens 3 ones",
-    "5 hundreds 18 tens 3 ones"
+    "0 hundreds 14 tens 8 ones",
+    "100 + 40 + 8",
+    "1 hundred 8 tens 4 ones",
+    "1 hundred 4 tens 8 ones"
    ],
    "display": {
-    "promptText": "One card is not a true name for 683. June must find it — which is it?"
+    "promptText": "One card is not a true name for 148. Ava must find it — which is it?"
    }
   }
  },
  {
-  "itemId": "placeValue-conc-b0821-0115",
+  "itemId": "placeValue-conc-b0823-0082",
   "modeId": "placeValue",
   "itemFamily": "conceptual",
-  "subskill": "tensOnes",
-  "structureType": "unitClaimJudgeBig",
+  "subskill": "rounding",
+  "structureType": "roundJudged",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": null,
+   "a": 182887,
    "b": null,
-   "op": "count",
-   "answer": "Yes",
+   "op": "place",
+   "answer": "No",
    "choices": [
     "Yes",
     "No"
    ],
    "display": {
-    "truth": true,
-    "promptText": "Amara says 7 hundreds 4 tens 1 one makes 741. Is Amara right?"
-   }
-  }
- },
- {
-  "itemId": "placeValue-conc-b0821-0322",
-  "modeId": "placeValue",
-  "itemFamily": "conceptual",
-  "subskill": "expandedForm",
-  "structureType": "oddOneOutFormsBig",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": "200 + 50 + 3",
-   "choices": [
-    "200 + 30 + 5",
-    "235",
-    "2 hundreds 3 tens 5 ones",
-    "200 + 50 + 3"
-   ],
-   "display": {
-    "promptText": "Three of Diego's cards show 235. Which card does NOT?"
+    "promptText": "Ida rounds 182887 to the nearest thousand and gets 182000. Is that right?"
    }
   }
  },
@@ -36368,7 +36357,29 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placeValue-proc-b0821-0072",
+  "itemId": "placeValue-proc-b0823-0001",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "rounding",
+  "structureType": "roundToNearestDrill",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 11,
+   "b": null,
+   "op": "place",
+   "answer": 10,
+   "display": {
+    "promptText": "Round 11 to the nearest ten."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0081",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "tensOnes",
@@ -36382,24 +36393,24 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 4,
+   "answer": 3,
    "display": {
     "counting": {
-     "n": 47,
+     "n": 83,
      "kind": "digit",
-     "place": 10
+     "place": 1
     },
-    "promptText": "Tens digit of 47 = ?"
+    "promptText": "Ones digit of 83 = ?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placeValue-proc-b0821-0227",
+  "itemId": "placeValue-proc-b0821-0236",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "expandedForm",
-  "structureType": "expandTwoDigit",
+  "structureType": "composeTwoDigit",
   "levelRange": [
    4,
    6
@@ -36409,20 +36420,20 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 3,
+   "answer": 72,
    "display": {
     "counting": {
-     "n": 33,
-     "kind": "digit",
-     "place": 1
+     "kind": "groups",
+     "ones": 2,
+     "tens": 7
     },
-    "promptText": "33 → 30 + ?"
+    "promptText": "70 + 2 → ?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placeValue-proc-b0821-0384",
+  "itemId": "placeValue-proc-b0821-0393",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "regroupingSense",
@@ -36436,70 +36447,38 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 14,
+   "answer": 12,
    "display": {
     "counting": {
-     "have": 20,
+     "have": 50,
      "kind": "gap",
-     "target": 34
+     "target": 62
     },
-    "promptText": "34 = 2 tens + ? ones"
+    "promptText": "62 = 5 tens + ? ones"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placeValue-proc-b0821-0090",
+  "itemId": "placeValue-proc-b0823-0028",
   "modeId": "placeValue",
   "itemFamily": "procedural",
-  "subskill": "tensOnes",
-  "structureType": "tenMoreLess",
+  "subskill": "rounding",
+  "structureType": "roundToNearestDrill",
   "levelRange": [
    4,
    6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": null,
+   "a": 13,
    "b": null,
-   "op": "count",
-   "answer": 57,
+   "op": "place",
+   "answer": 10,
    "display": {
-    "counting": {
-     "n": 47,
-     "kind": "moreLess",
-     "delta": 10
-    },
-    "promptText": "10 more than 47 = ?"
+    "promptText": "Round 13 to the nearest ten."
    },
    "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "placeValue-proc-b0821-0245",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "expandJudgeMid",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": "Yes",
-   "choices": [
-    "Yes",
-    "No"
-   ],
-   "display": {
-    "truth": true,
-    "promptText": "40 + 7 = 47"
-   },
-   "subPrompt": "Is this right?"
   }
  },
  {
@@ -36585,11 +36564,33 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "placeValue-proc-b0821-0123",
+  "itemId": "placeValue-proc-b0823-0055",
+  "modeId": "placeValue",
+  "itemFamily": "procedural",
+  "subskill": "rounding",
+  "structureType": "roundToNearestDrill",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 317,
+   "b": null,
+   "op": "place",
+   "answer": 320,
+   "display": {
+    "promptText": "Round 317 to the nearest ten."
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "placeValue-proc-b0821-0132",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "tensOnes",
-  "structureType": "digitReadBig",
+  "structureType": "valueOfDigitDrill",
   "levelRange": [
    7,
    10
@@ -36599,20 +36600,20 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 0,
+   "answer": 100,
    "display": {
     "counting": {
-     "n": 670,
-     "kind": "digit",
-     "place": 1
+     "n": 128,
+     "kind": "placeValueOf",
+     "place": 100
     },
-    "promptText": "Ones digit of 670 = ?"
+    "promptText": "Value of the hundreds digit in 128 = ?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placeValue-proc-b0821-0296",
+  "itemId": "placeValue-proc-b0821-0305",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "expandedForm",
@@ -36626,20 +36627,20 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": "Yes",
+   "answer": "No",
    "choices": [
     "Yes",
     "No"
    ],
    "display": {
-    "truth": true,
-    "promptText": "300 + 40 + 6 = 346"
+    "truth": false,
+    "promptText": "300 + 50 + 8 = 357"
    },
    "subPrompt": "Is this right?"
   }
  },
  {
-  "itemId": "placeValue-proc-b0821-0417",
+  "itemId": "placeValue-proc-b0821-0426",
   "modeId": "placeValue",
   "itemFamily": "procedural",
   "subskill": "regroupingSense",
@@ -36653,69 +36654,37 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 345,
+   "answer": 720,
    "display": {
     "counting": {
      "kind": "units",
-     "ones": 5,
-     "tens": 14,
-     "hundreds": 2
+     "ones": 0,
+     "tens": 12,
+     "hundreds": 6
     },
-    "promptText": "2 hundreds 14 tens 5 ones = ?"
+    "promptText": "6 hundreds 12 tens 0 ones = ?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "placeValue-proc-b0821-0140",
+  "itemId": "placeValue-proc-b0823-0082",
   "modeId": "placeValue",
   "itemFamily": "procedural",
-  "subskill": "tensOnes",
-  "structureType": "hundredMoreLess",
+  "subskill": "rounding",
+  "structureType": "roundToNearestDrill",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": null,
+   "a": 182887,
    "b": null,
-   "op": "count",
-   "answer": 447,
+   "op": "place",
+   "answer": 183000,
    "display": {
-    "counting": {
-     "n": 347,
-     "kind": "moreLess",
-     "delta": 100
-    },
-    "promptText": "100 more than 347 = ?"
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "placeValue-proc-b0821-0281",
-  "modeId": "placeValue",
-  "itemFamily": "procedural",
-  "subskill": "expandedForm",
-  "structureType": "expandPartBig",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 90,
-   "display": {
-    "counting": {
-     "n": 493,
-     "kind": "placeValueOf",
-     "place": 10
-    },
-    "promptText": "493 → ? from the tens place"
+    "promptText": "Round 182887 to the nearest thousand."
    },
    "answerType": "numberPad"
   }
@@ -41497,6 +41466,176 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "subtraction-conc-b0823-0001",
+  "modeId": "subtraction",
+  "itemFamily": "conceptual",
+  "subskill": "unknownSubtrahend",
+  "structureType": "multiDigitMissingSubtrahend",
+  "levelRange": [
+   8,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 205,
+   "b": null,
+   "op": "-",
+   "answer": 87,
+   "display": {
+    "promptText": "205 − ? = 118"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "subtraction-conc-decomposeToSubtract-45-001",
+  "modeId": "subtraction",
+  "itemFamily": "conceptual",
+  "subskill": "decomposeToSubtract",
+  "structureType": "separateResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 50,
+   "b": 23,
+   "op": "−",
+   "answer": 27,
+   "display": {
+    "promptText": "50 is 23 + 27. What is 50 − 23?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-conc-differenceAsDistance-45-001",
+  "modeId": "subtraction",
+  "itemFamily": "conceptual",
+  "subskill": "differenceAsDistance",
+  "structureType": "compareDifferenceUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 50,
+   "b": 22,
+   "op": "−",
+   "answer": 28,
+   "display": {
+    "promptText": "How much greater is 50 than 22?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-conc-b0823-0026",
+  "modeId": "subtraction",
+  "itemFamily": "conceptual",
+  "subskill": "unknownSubtrahend",
+  "structureType": "multiDigitMissingSubtrahend",
+  "levelRange": [
+   8,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 753,
+   "b": null,
+   "op": "-",
+   "answer": 393,
+   "display": {
+    "promptText": "Take what number from 753 to leave 360?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "subtraction-conc-decomposeToSubtract-45-010",
+  "modeId": "subtraction",
+  "itemFamily": "conceptual",
+  "subskill": "decomposeToSubtract",
+  "structureType": "separateResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 150,
+   "b": 75,
+   "op": "−",
+   "answer": 75,
+   "display": {
+    "promptText": "Bar model: whole of 150 with one part 75. The other part is?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-conc-differenceAsDistance-45-010",
+  "modeId": "subtraction",
+  "itemFamily": "conceptual",
+  "subskill": "differenceAsDistance",
+  "structureType": "compareDifferenceUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 95,
+   "b": 42,
+   "op": "−",
+   "answer": 53,
+   "display": {
+    "promptText": "Compare 95 and 42. The difference is?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-conc-unknownSubtrahend-45-001",
+  "modeId": "subtraction",
+  "itemFamily": "conceptual",
+  "subskill": "unknownSubtrahend",
+  "structureType": "separateChangeUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 60,
+   "b": null,
+   "op": "−",
+   "answer": 33,
+   "display": {
+    "promptText": "Find the missing subtrahend: 60 − ? = 27"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-conc-decomposeToSubtract-45-019",
+  "modeId": "subtraction",
+  "itemFamily": "conceptual",
+  "subskill": "decomposeToSubtract",
+  "structureType": "separateResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 100,
+   "b": 37,
+   "op": "−",
+   "answer": 63,
+   "display": {
+    "promptText": "Take 37 from 100. Result?"
+   }
+  }
+ },
+ {
   "itemId": "subtraction-conc-decomposeToSubtract-23-001",
   "modeId": "subtraction",
   "itemFamily": "conceptual",
@@ -41661,174 +41800,6 @@ export const SEED_ITEMS = [
    "answer": 11,
    "display": {
     "promptText": "Count back from 17 by 6. Where do you land?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-conc-decomposeToSubtract-45-001",
-  "modeId": "subtraction",
-  "itemFamily": "conceptual",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 50,
-   "b": 23,
-   "op": "−",
-   "answer": 27,
-   "display": {
-    "promptText": "50 is 23 + 27. What is 50 − 23?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-conc-differenceAsDistance-45-001",
-  "modeId": "subtraction",
-  "itemFamily": "conceptual",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 50,
-   "b": 22,
-   "op": "−",
-   "answer": 28,
-   "display": {
-    "promptText": "How much greater is 50 than 22?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-conc-unknownSubtrahend-45-001",
-  "modeId": "subtraction",
-  "itemFamily": "conceptual",
-  "subskill": "unknownSubtrahend",
-  "structureType": "separateChangeUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 60,
-   "b": null,
-   "op": "−",
-   "answer": 33,
-   "display": {
-    "promptText": "Find the missing subtrahend: 60 − ? = 27"
-   }
-  }
- },
- {
-  "itemId": "subtraction-conc-decomposeToSubtract-45-010",
-  "modeId": "subtraction",
-  "itemFamily": "conceptual",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 150,
-   "b": 75,
-   "op": "−",
-   "answer": 75,
-   "display": {
-    "promptText": "Bar model: whole of 150 with one part 75. The other part is?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-conc-differenceAsDistance-45-010",
-  "modeId": "subtraction",
-  "itemFamily": "conceptual",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 95,
-   "b": 42,
-   "op": "−",
-   "answer": 53,
-   "display": {
-    "promptText": "Compare 95 and 42. The difference is?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-conc-unknownSubtrahend-45-010",
-  "modeId": "subtraction",
-  "itemFamily": "conceptual",
-  "subskill": "unknownSubtrahend",
-  "structureType": "separateChangeUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 120,
-   "b": null,
-   "op": "−",
-   "answer": 55,
-   "display": {
-    "promptText": "Think addition: 65 plus what makes 120?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-conc-decomposeToSubtract-45-019",
-  "modeId": "subtraction",
-  "itemFamily": "conceptual",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 100,
-   "b": 37,
-   "op": "−",
-   "answer": 63,
-   "display": {
-    "promptText": "Take 37 from 100. Result?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-conc-differenceAsDistance-45-019",
-  "modeId": "subtraction",
-  "itemFamily": "conceptual",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 90,
-   "b": 38,
-   "op": "−",
-   "answer": 52,
-   "display": {
-    "promptText": "Count back from 90 by 38. Where do you land?"
    }
   }
  },
@@ -42001,6 +41972,175 @@ export const SEED_ITEMS = [
   }
  },
  {
+  "itemId": "subtraction-proc-b0823-0001",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "decomposeToSubtract",
+  "structureType": "multiDigitDifference",
+  "levelRange": [
+   8,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 205,
+   "b": 87,
+   "op": "-",
+   "answer": 118,
+   "display": {
+    "promptText": "205 − 87 = ?"
+   },
+   "answerType": "numberPad"
+  }
+ },
+ {
+  "itemId": "subtraction-proc-differenceAsDistance-45-001",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "differenceAsDistance",
+  "structureType": "takeFromResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 50,
+   "b": 22,
+   "op": "−",
+   "answer": 28,
+   "display": {
+    "promptText": "50 − 22 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-proc-unknownSubtrahend-45-001",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "unknownSubtrahend",
+  "structureType": "separateChangeUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 60,
+   "b": null,
+   "op": "−",
+   "answer": 33,
+   "display": {
+    "promptText": "60 − ? = 27"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-proc-decomposeToSubtract-45-001",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "decomposeToSubtract",
+  "structureType": "separateResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 50,
+   "b": 23,
+   "op": "−",
+   "answer": 27,
+   "display": {
+    "promptText": "50 − 23 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-proc-differenceAsDistance-45-010",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "differenceAsDistance",
+  "structureType": "takeFromResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 95,
+   "b": 38,
+   "op": "−",
+   "answer": 57,
+   "display": {
+    "promptText": "95 − 38 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-proc-unknownSubtrahend-45-010",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "unknownSubtrahend",
+  "structureType": "separateChangeUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 120,
+   "b": null,
+   "op": "−",
+   "answer": 65,
+   "display": {
+    "promptText": "120 − ? = 55"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-proc-decomposeToSubtract-45-028",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "decomposeToSubtract",
+  "structureType": "separateResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 185,
+   "b": 95,
+   "op": "−",
+   "answer": 90,
+   "display": {
+    "promptText": "185 − 95 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "subtraction-proc-differenceAsDistance-45-019",
+  "modeId": "subtraction",
+  "itemFamily": "procedural",
+  "subskill": "differenceAsDistance",
+  "structureType": "takeFromResultUnknown",
+  "levelRange": [
+   7,
+   10
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": 85,
+   "b": 47,
+   "op": "−",
+   "answer": 38,
+   "display": {
+    "promptText": "85 − 47 = ?"
+   }
+  }
+ },
+ {
   "itemId": "subtraction-proc-decomposeToSubtract-23-001",
   "modeId": "subtraction",
   "itemFamily": "procedural",
@@ -42165,174 +42305,6 @@ export const SEED_ITEMS = [
    "answer": 1,
    "display": {
     "promptText": "12 − 11 = ?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-decomposeToSubtract-45-001",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 50,
-   "b": 23,
-   "op": "−",
-   "answer": 27,
-   "display": {
-    "promptText": "50 − 23 = ?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-differenceAsDistance-45-001",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "differenceAsDistance",
-  "structureType": "takeFromResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 50,
-   "b": 22,
-   "op": "−",
-   "answer": 28,
-   "display": {
-    "promptText": "50 − 22 = ?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-unknownSubtrahend-45-001",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "unknownSubtrahend",
-  "structureType": "separateChangeUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 60,
-   "b": null,
-   "op": "−",
-   "answer": 33,
-   "display": {
-    "promptText": "60 − ? = 27"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-decomposeToSubtract-45-010",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 75,
-   "b": 28,
-   "op": "−",
-   "answer": 47,
-   "display": {
-    "promptText": "75 − 28 = ?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-differenceAsDistance-45-010",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "differenceAsDistance",
-  "structureType": "takeFromResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 95,
-   "b": 38,
-   "op": "−",
-   "answer": 57,
-   "display": {
-    "promptText": "95 − 38 = ?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-unknownSubtrahend-45-010",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "unknownSubtrahend",
-  "structureType": "separateChangeUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 120,
-   "b": null,
-   "op": "−",
-   "answer": 65,
-   "display": {
-    "promptText": "120 − ? = 55"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-decomposeToSubtract-45-019",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 75,
-   "b": 29,
-   "op": "−",
-   "answer": 46,
-   "display": {
-    "promptText": "75 − 29 = ?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-proc-differenceAsDistance-45-019",
-  "modeId": "subtraction",
-  "itemFamily": "procedural",
-  "subskill": "differenceAsDistance",
-  "structureType": "takeFromResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 85,
-   "b": 47,
-   "op": "−",
-   "answer": 38,
-   "display": {
-    "promptText": "85 − 47 = ?"
    }
   }
  },

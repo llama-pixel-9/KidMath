@@ -16,7 +16,8 @@ import { randInt } from "./helpers";
 // missing-factor structures rendered in x-form give conceptual items
 // (`3 x ? = 12`). Both are multiplicative reasoning — only the division
 // *rendering* belongs to the division mode.
-const STRUCTURES = MULTIPLICATIVE_STRUCTURES;
+// Remainder structures are division-only: they have no missing-factor rendering.
+const STRUCTURES = MULTIPLICATIVE_STRUCTURES.filter((s) => !s.remainder);
 
 // Kept as the mode's declared subskills so curated bank items, which are keyed
 // by subskill, keep resolving. Each structure maps onto one of these.

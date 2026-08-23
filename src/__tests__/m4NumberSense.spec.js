@@ -313,6 +313,25 @@ const PLACE_VALUE = {
     const sorted = [...digits].sort((a, b) => (text.includes("largest") ? b - a : a - b));
     return Number(sorted.join(""));
   },
+  roundToNearest: (q) => {
+    const t = promptOf(q);
+    const n = numsIn(t)[0];
+    const unit = t.includes("hundred thousand") ? 100000 : t.includes("ten thousand") ? 10000 : t.includes("thousand") ? 1000 : t.includes("hundred") ? 100 : 10;
+    return Math.round(n / unit) * unit;
+  },
+  roundingWhichNeighbor: (q) => {
+    const [n, low, high] = numsIn(promptOf(q));
+    return n - low < high - n ? low : high;
+  },
+  bigNumberPlace: (q) => {
+    const t = promptOf(q);
+    const n = numsIn(t)[0];
+    const places = ["ones", "tens", "hundreds", "thousands", "ten thousands", "hundred thousands"];
+    // Longest match first: "ten thousands" contains "thousands".
+    const place = [...places].sort((a, b) => b.length - a.length).find((p2) => t.includes(p2));
+    const idx = places.indexOf(place);
+    return Math.floor(n / 10 ** idx) % 10;
+  },
   placeValueInContext: (q) => {
     const pencils = numsIn(promptOf(q))[1];
     return Math.floor(pencils / 10);

@@ -151,6 +151,12 @@ Reruns also overwrite same-cell draft ids — be skip-existing aware.
   a widget keeps the previous question's state.
 - **Engagement state is localStorage-only (v1)** behind a swappable store API;
   cloud sync is a future migration, so don't hand-roll persistence around it.
+- **Progress is per kid.** `progress` / `progress_item_stats` rows carry `kid_id`
+  (null = household row merged before any profile; the first kid inherits it as a
+  seed). Local key is `kidmath-progress:<kid>`. Every cloud read must filter by kid
+  (`.eq` for a kid, `.is null` for household) — an unfiltered read silently returns
+  a sibling's row. Upserts conflict on `user_id,kid_id,mode[,item_id]`; iOS mirrors
+  this exactly in `ProgressStore.swift` / `SupabaseService.swift`.
 - **The practice log (`src/analytics/sessionLog.js`, table `practice_sessions`)**
   is the parent report's source: one record per finished session with every
   attempt (prompt, answer, given, ms, subskill), per kid. Local mirror + cloud

@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
 import {
+  KID_DATA_TABLES,
   USER_DATA_TABLES,
   purgeAccountData,
   purgeKidData,
@@ -55,13 +56,15 @@ function seededTables() {
       { id: "kid-3", user_id: OTHER_PARENT, first_name: "Zoe", age: "6", grade: "1st" },
     ],
     progress: [
-      { user_id: PARENT, mode: "addition", level: 4, total_sessions: 12, lifetime_stars: 40 },
-      { user_id: PARENT, mode: "fractions", level: 2, total_sessions: 3, lifetime_stars: 9 },
-      { user_id: OTHER_PARENT, mode: "addition", level: 1, total_sessions: 1, lifetime_stars: 2 },
+      { user_id: PARENT, kid_id: "kid-1", mode: "addition", level: 4, total_sessions: 12, lifetime_stars: 40 },
+      { user_id: PARENT, kid_id: "kid-2", mode: "fractions", level: 2, total_sessions: 3, lifetime_stars: 9 },
+      { user_id: PARENT, kid_id: null, mode: "counting", level: 2, total_sessions: 1, lifetime_stars: 3 },
+      { user_id: OTHER_PARENT, kid_id: "kid-3", mode: "addition", level: 1, total_sessions: 1, lifetime_stars: 2 },
     ],
     progress_item_stats: [
-      { user_id: PARENT, mode: "addition", item_id: "a1" },
-      { user_id: OTHER_PARENT, mode: "addition", item_id: "a2" },
+      { user_id: PARENT, kid_id: "kid-1", mode: "addition", item_id: "a1" },
+      { user_id: PARENT, kid_id: "kid-2", mode: "fractions", item_id: "f1" },
+      { user_id: OTHER_PARENT, kid_id: "kid-3", mode: "addition", item_id: "a2" },
     ],
     practice_sessions: [
       { id: "ps-1", user_id: PARENT, kid_id: "kid-1", mode: "addition" },
@@ -116,12 +119,20 @@ describe("account deletion purge", () => {
     expect(tables.profiles).toEqual([{ user_id: OTHER_PARENT }]);
   });
 
+  it("lists every kid-keyed table so a new one cannot be forgotten", () => {
+    const seeded = seededTables();
+    const kidKeyed = Object.keys(seeded).filter((t) => seeded[t].some((r) => "kid_id" in r));
+    expect([...KID_DATA_TABLES].sort()).toEqual(kidKeyed.sort());
+  });
+
   it("deletes a single child profile and nothing else", async () => {
     const tables = seededTables();
     await purgeKidData(fakeDb(tables), { userId: PARENT, kidId: "kid-1" });
     expect(tables.kid_profiles.map((k) => k.id)).toEqual(["kid-2", "kid-3"]);
-    expect(tables.progress).toHaveLength(3);
-    // The child's practice log goes with the profile; siblings' logs stay.
+    // Everything keyed to the child goes with the profile (§312.6); the
+    // sibling's rows and the household row stay.
+    expect(tables.progress.map((r) => r.kid_id)).toEqual(["kid-2", null, "kid-3"]);
+    expect(tables.progress_item_stats.map((r) => r.item_id)).toEqual(["f1", "a2"]);
     expect(tables.practice_sessions.map((r) => r.id)).toEqual(["ps-2", "ps-3"]);
   });
 

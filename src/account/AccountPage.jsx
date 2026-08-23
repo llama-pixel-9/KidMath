@@ -62,7 +62,7 @@ export default function AccountPage() {
     setKids(await fetchKids(user.id));
     const { data } = await supabase
       .from("progress")
-      .select("mode, level, total_sessions, lifetime_stars")
+      .select("kid_id, mode, level, total_sessions, lifetime_stars")
       .eq("user_id", user.id)
       .order("mode");
     setProgress(data ?? []);
@@ -115,6 +115,12 @@ export default function AccountPage() {
 
   const totalStars = progress.reduce((sum, row) => sum + (row.lifetime_stars || 0), 0);
   const totalSessions = progress.reduce((sum, row) => sum + (row.total_sessions || 0), 0);
+  const kidName = (id) => kids.find((k) => k.id === id)?.first_name || "A deleted profile";
+  const progressByKid = [...new Set(progress.map((r) => r.kid_id || null))].map((kidId) => ({
+    kidId,
+    label: kidId ? kidName(kidId) : "Before profiles (this household)",
+    rows: progress.filter((r) => (r.kid_id || null) === kidId),
+  }));
 
   return (
     <main className="flex-1 max-w-3xl mx-auto w-full px-4 py-10">
@@ -125,8 +131,8 @@ export default function AccountPage() {
       <section className="mt-10">
         <h2 className="font-display font-medium text-2xl text-ink m-0">Your kids</h2>
         <p className="mt-1 text-sm font-semibold text-ink/60">
-          Everything we store about each child is shown here: first name, age, and grade.
-          Practice progress is kept at the family-account level, summarized below.
+          Everything we store about each child is shown here: first name, age, and grade,
+          plus their practice progress, summarized below.
         </p>
         {kids.length === 0 && (
           <p className="mt-4 text-sm font-semibold text-ink/50">No child profiles yet.</p>
@@ -169,17 +175,24 @@ export default function AccountPage() {
               {totalSessions} practice sessions · {totalStars} stars, across{" "}
               {progress.length} game{progress.length === 1 ? "" : "s"}.
             </p>
-            <ul className="mt-3 m-0 p-0 list-none grid sm:grid-cols-2 gap-2">
-              {progress.map((row) => (
-                <li
-                  key={row.mode}
-                  className="bg-white rounded-xl border-[1.5px] border-ink/10 px-4 py-2 text-sm font-semibold text-ink"
-                >
-                  {row.mode} — level {row.level}, {row.total_sessions} sessions,{" "}
-                  {row.lifetime_stars} stars
-                </li>
-              ))}
-            </ul>
+            {/* Progress is per kid (kid_id); a null kid_id is the household
+                row from a device that practiced before any profile existed. */}
+            {progressByKid.map(({ kidId, label, rows }) => (
+              <div key={kidId || "household"} className="mt-4">
+                <p className="text-sm font-bold text-ink">{label}</p>
+                <ul className="mt-2 m-0 p-0 list-none grid sm:grid-cols-2 gap-2">
+                  {rows.map((row) => (
+                    <li
+                      key={`${kidId}-${row.mode}`}
+                      className="bg-white rounded-xl border-[1.5px] border-ink/10 px-4 py-2 text-sm font-semibold text-ink"
+                    >
+                      {row.mode} — level {row.level}, {row.total_sessions} sessions,{" "}
+                      {row.lifetime_stars} stars
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </>
         )}
       </section>

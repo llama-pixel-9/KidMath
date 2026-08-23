@@ -41,9 +41,9 @@ Print / Save as PDF (controls hidden in print). Entry points: Grown-Ups panel
 - **Cloud**: `public.practice_sessions` (migration `20260822120000`), own-row RLS,
   `kid_id` nullable → `kid_profiles` ON DELETE SET NULL. Reads paginate.
   Unsynced local rows are flushed on the next signed-in read.
-- This is the first **per-kid** progress dimension. `progress` itself is still
-  account-level (ADR-001 step 3 not done), so "Level now" in the report is the
-  household level for that mode.
+- Progress is per kid too (since 2026-08-23, migration `20260823100000`):
+  `progress` and `progress_item_stats` carry `kid_id`, so "Level now" in the
+  report is that child's own level. See the per-kid section below.
 - Account purge: `practice_sessions` is in `USER_DATA_TABLES`; `purgeKidData`
   deletes the kid's rows explicitly (child-scoped data, §312.6).
 
@@ -53,6 +53,32 @@ emailed edition. `headline(report, kidName)` is the one-sentence summary.
 
 `src/analytics/subskillLabels.js` — parent-language labels for every engine
 subskill id (spec asserts full coverage, no bare camelCase).
+
+## Per-kid progress (ADR-001 step 3, shipped 2026-08-23)
+
+`progress` and `progress_item_stats` gained a nullable `kid_id → kid_profiles
+ON DELETE CASCADE`; uniqueness is `UNIQUE NULLS NOT DISTINCT (user_id, kid_id,
+mode[, item_id])` so household rows (`kid_id` null) upsert cleanly.
+
+Rules, identical on web (`src/progressStore.js`) and iOS (`ProgressStore.swift`):
+
+- **Local** blob is `kidmath-progress:<kid>`; bare key for anonymous play. The
+  first kid on a device inherits the bare blob once (`kidmath-progress-migrated`
+  stamps who), copy never rename — same scheme as engagement.
+- **Cloud** reads filter by `kid_id` (`.is null` for the household row). A kid
+  with no row for a mode inherits the household row as a seed; their first
+  save writes their own row, so the inherit is one-time by construction.
+- **Sign-in merge** uploads the active kid's local blob under their `kid_id`
+  (anonymous blob → household rows), then clears that local key.
+- **Backfill** (in the migration): households that already had kids got the
+  shared row copied to every kid, then the household row dropped. Nobody
+  dropped to Level 1; sibling star totals were duplicated, which is what each
+  child had been seeing anyway.
+- **Deleting a kid** deletes their rows in all three kid-keyed tables
+  (`KID_DATA_TABLES` in `accountPurge.ts`; spec asserts the list matches the
+  seeded schema). The FK cascade is the backstop.
+- `loadProgress/saveProgress/loadProgressSummary` default to the active kid and
+  accept `{ kidId }` — the report's kid tabs pass it explicitly.
 
 ## Known limits (deliberate v1)
 

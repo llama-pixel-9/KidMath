@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../useAuth";
 import { supabase } from "../supabaseClient";
-import { fetchKids, activeKidId, setActiveKid } from "../kidProfiles";
+import { MAX_KIDS, fetchKids, activeKidId, setActiveKid } from "../kidProfiles";
 import { paywallEnabled } from "../premium";
 
 /**
@@ -135,7 +135,9 @@ export default function AccountPage() {
           plus their practice progress, summarized below.
         </p>
         {kids.length === 0 && (
-          <p className="mt-4 text-sm font-semibold text-ink/50">No child profiles yet.</p>
+          <p className="mt-4 text-sm font-semibold text-ink/50">
+            No child profiles yet. Add one so each kid gets their own levels, stars, and progress report.
+          </p>
         )}
         <div className="mt-4 space-y-3">
           {kids.map((kid) => (
@@ -159,6 +161,18 @@ export default function AccountPage() {
             </div>
           ))}
         </div>
+        {/* Accounts that signed up before profiles existed (or skipped the
+            wizard) have no other way in — the picker only appears once a kid
+            exists. Reuses the wizard, which handles the consent email. */}
+        {kids.length < MAX_KIDS && (
+          <button
+            type="button"
+            onClick={() => navigate("/onboarding?add=1")}
+            className="mt-4 px-4 h-11 rounded-xl bg-teal text-white text-sm font-bold cursor-pointer hover:bg-deep-teal"
+          >
+            {kids.length === 0 ? "Add a kid" : "Add another kid"}
+          </button>
+        )}
       </section>
 
       <section className="mt-10">

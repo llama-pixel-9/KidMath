@@ -143,18 +143,35 @@ export default function HomePage() {
   const [engagement] = useState(loadEngagement);
 
   // §20 returning path: a signed-in family with kid profiles and no active
-  // kid lands on the profile picker, never a login form.
+  // kid lands on the profile picker, never a login form. A signed-in account
+  // with NO profiles (pre-profiles signups) gets a nudge instead — without it
+  // there was no route to the add-kid wizard at all.
+  const [needsKid, setNeedsKid] = useState(false);
   useEffect(() => {
-    if (!user || activeKidId()) return;
+    if (!user) return;
     let alive = true;
     fetchKids(user.id).then((kids) => {
-      if (alive && kids.length > 0) navigate("/profiles");
+      if (!alive) return;
+      if (kids.length === 0) setNeedsKid(true);
+      else if (!activeKidId()) navigate("/profiles");
     });
     return () => { alive = false; };
   }, [user, navigate]);
 
   return (
     <main className="min-h-screen">
+      {needsKid && (
+        <div className="bg-white border-b-[1.5px] border-ink/10 px-4 py-3 text-center text-sm font-semibold text-ink">
+          Set up a profile for your kid so their levels, stars and progress report are their own.{" "}
+          <button
+            type="button"
+            onClick={() => navigate("/onboarding?add=1")}
+            className="ml-2 px-3 h-9 rounded-xl bg-teal text-white font-bold cursor-pointer hover:bg-deep-teal"
+          >
+            Add a kid
+          </button>
+        </div>
+      )}
       {/* Hero */}
       <section className="relative overflow-hidden px-4 pt-16 pb-20 text-center">
         {/* Math-mark layer — marketing pages only. Fredoka, teal or sun,

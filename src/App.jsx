@@ -23,6 +23,7 @@ import OnboardingFlow from "./onboarding/OnboardingFlow";
 import ProfilePicker from "./onboarding/ProfilePicker";
 import BillingPortalPage from "./BillingPortalPage";
 import AccountPage from "./account/AccountPage";
+import ParentReportPage from "./analytics/ParentReportPage";
 import "./index.css";
 
 function PlayRoute() {
@@ -82,6 +83,7 @@ function AppShell() {
         {/* Parental rights: review what we hold, delete a child, delete the
             account (§312.6; Apple 5.1.1(v)). */}
         <Route path="/account" element={<AccountPage />} />
+        <Route path="/report" element={<ParentReportPage />} />
         {/* One-step online cancellation (auto-renewal law) — sends the
             subscriber straight into the Stripe Billing Portal. */}
         <Route path="/account/billing" element={<BillingPortalPage />} />

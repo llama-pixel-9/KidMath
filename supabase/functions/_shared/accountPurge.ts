@@ -17,6 +17,7 @@ export const USER_DATA_TABLES = [
   "kid_profiles",
   "progress",
   "progress_item_stats",
+  "practice_sessions",
   "user_preferences",
   "entitlements",
   "session_diagnostics",
@@ -49,8 +50,8 @@ export async function purgeAccountData(db: Db, userId: string): Promise<void> {
 
 /**
  * Delete one child profile. Cloud progress in v1 is account-level (keyed
- * user_id + mode, no kid_id column), so the profile row is the only
- * child-scoped cloud data; deleting it also stops any further collection
+ * user_id + mode, no kid_id column); the practice log (practice_sessions)
+ * is the one kid-scoped table, so both go; deleting it also stops any further collection
  * about that child (§312.6(a)(2)). Scoped to the owning user so a forged
  * kidId can never cross accounts.
  */
@@ -58,6 +59,10 @@ export async function purgeKidData(
   db: Db,
   { userId, kidId }: { userId: string; kidId: string },
 ): Promise<void> {
+  // The practice log is child-scoped (kid_id) — remove it outright rather
+  // than leaving detached rows behind; the FK's SET NULL is only a backstop.
+  const sessions = await db.from("practice_sessions").delete().eq("kid_id", kidId).eq("user_id", userId);
+  if (sessions.error) throw new Error(`purge practice_sessions: ${sessions.error.message}`);
   const { error } = await db.from("kid_profiles").delete().eq("id", kidId).eq("user_id", userId);
   if (error) throw new Error(`purge kid_profiles: ${error.message}`);
 }

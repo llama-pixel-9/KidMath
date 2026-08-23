@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 import Feather from "../components/feather.jsx";
 import { useTheme } from "../useTheme.js";
 import { MODE_IDS, getModeConfig } from "../modes";
@@ -80,11 +81,17 @@ export default function GrownUpsPanel({ open, onClose }) {
               <Feather name="close" size={20} className="h-5 w-5" />
             </button>
           </div>
-          <p className="text-sm text-slate-500 mb-4">
+          <p className="text-sm text-slate-500 mb-1">
             {summary.source === "cloud"
               ? "Practice across your family account."
               : "Practice on this device."}{" "}
             Levels climb by skill, not time — the grade range says what each activity covers.
+          </p>
+          <p className="text-sm mb-4">
+            <Link to="/report" className="font-bold text-teal underline underline-offset-2" onClick={onClose}>
+              See the full report →
+            </Link>{" "}
+            <span className="text-slate-400 text-[12px]">time spent, accuracy by skill, and the questions that tripped them up.</span>
           </p>
 
           <div className={`grid ${birdWorld ? "grid-cols-2 sm:grid-cols-4" : "grid-cols-3"} gap-2 mb-5`}>

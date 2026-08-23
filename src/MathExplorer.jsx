@@ -76,6 +76,7 @@ import {
 } from "./sounds";
 import { createRuntimeDiagnostics } from "./runtimeDiagnostics";
 import { getTelemetry } from "./telemetry/telemetryClient";
+import { openSessionRecord, appendAttempt, closeSessionRecord, saveSessionRecord } from "./analytics/sessionLog";
 import {
   loadAllowWordProblems,
   loadAllowWordProblemsSync,
@@ -1155,6 +1156,11 @@ export default function MathExplorer({ initialMode }) {
   const answerLockRef = useRef(false);
   const diagnosticsRef = useRef(createRuntimeDiagnostics("math-explorer"));
   const telemetryRef = useRef(getTelemetry());
+  // The practice-log record for the session in flight (parent report). Opened
+  // on the first question of a fresh session, appended per answer, closed and
+  // saved in finishSession. Session-creating paths null it so the next
+  // loadNextQuestion opens a new one.
+  const sessionRecordRef = useRef(null);
 
   const clearQueuedTimeouts = useCallback(() => {
     diagnosticsRef.current.mark("timeoutsCleared", timeoutIdsRef.current.length);
@@ -1177,6 +1183,13 @@ export default function MathExplorer({ initialMode }) {
 
   const loadNextQuestion = useCallback((sess) => {
     const { question, isRetry: retry } = getNextQuestion(sess);
+    if (!sessionRecordRef.current) {
+      sessionRecordRef.current = openSessionRecord({
+        mode: sess.mode,
+        level: sess.level,
+        kind: sess.challengeSubskills ? "fledging" : "normal",
+      });
+    }
     qaUpdate({
       question,
       isRetry: retry,
@@ -1209,6 +1222,7 @@ export default function MathExplorer({ initialMode }) {
     setFeedback(null);
     setRevealAnswer(null);
     setShowComplete(false);
+    sessionRecordRef.current = null;
     loadNextQuestion(newSession);
     // §03 step 4: a pending nomination is offered at take-off — except right
     // after a Fledging Flight, when the normal session simply begins.
@@ -1241,6 +1255,7 @@ export default function MathExplorer({ initialMode }) {
     setSession(challenge);
     setFeedback(null);
     setRevealAnswer(null);
+    sessionRecordRef.current = null;
     loadNextQuestion(challenge);
   }, [mode, allowWordProblems, session.level, loadNextQuestion, clearQueuedTimeouts]);
 
@@ -1280,6 +1295,7 @@ export default function MathExplorer({ initialMode }) {
       newSession.level = saved.level;
       newSession.mistakeBank = saved.mistakeBank;
       setSession(newSession);
+      sessionRecordRef.current = null;
       loadNextQuestion(newSession);
     })();
     return () => {
@@ -1356,6 +1372,10 @@ export default function MathExplorer({ initialMode }) {
         bankItemStats: sess.bankItemStats || {},
         recentBankItemIds: sess.recentBankItemIds || [],
       });
+      saveSessionRecord(closeSessionRecord(sessionRecordRef.current, sess, { starsEarned: 0, levelEnd: newLevel })).catch(
+        (err) => console.warn("practice log save failed", err)
+      );
+      sessionRecordRef.current = null;
       setFledgingActive(false);
       setFledgingResult({ passed, newLevel });
       if (passed) playLevelUpSound();
@@ -1387,6 +1407,10 @@ export default function MathExplorer({ initialMode }) {
     );
     setLifetimeStars(lt);
     setFlightPayout(payout);
+    saveSessionRecord(closeSessionRecord(sessionRecordRef.current, sess, { starsEarned, levelEnd: levelAfter })).catch(
+      (err) => console.warn("practice log save failed", err)
+    );
+    sessionRecordRef.current = null;
     // The engagement loop: bank today's stars, roll the day streak, and hand
     // the report the moments worth celebrating.
     const { state: eng, events } = recordSessionEnd(starsEarned, {
@@ -1443,6 +1467,14 @@ export default function MathExplorer({ initialMode }) {
       const responseTimeMs = Date.now() - questionStartTime.current;
       const result = recordAnswer(session, currentQ, value, responseTimeMs, isRetry);
       setSession(result.session);
+      sessionRecordRef.current = appendAttempt(sessionRecordRef.current, {
+        question: currentQ,
+        submitted: value,
+        correct: result.correct,
+        wasRetry: isRetry,
+        responseTimeMs,
+        level: session.level,
+      });
       qaUpdate({
         result: {
           correct: result.correct,

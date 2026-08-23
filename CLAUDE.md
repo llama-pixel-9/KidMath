@@ -176,6 +176,9 @@ a theme · `-showPaywall 1` opens the paywall.
 Web: `/play/<mode>?item=<itemId>` pins one bank row (any status) as every
 question in the session — the "Play" link in the /admin review queue. The
 queue's "Preview" drawer renders the same `QuestionStage` the session uses.
+`node scripts/layoutSweep.mjs [--approved] [--mode X]` renders every bank row
+through that stage at phone width and lists anything spilling past the card —
+run it after any change to QuestionDisplay / a figure / a widget.
 
 **StoreKit testing is awkward by design.** `SKTestSession` needs the
 `com.apple.developer.storekit.request-data` entitlement (Debug-only

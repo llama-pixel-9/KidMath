@@ -39,9 +39,17 @@ migrations** (schema drift). Every `saveProgress` for any other mode fails with
 - Empirically verified by inserting each of the 22 modes with the service key:
   3 accepted, 19 rejected. `progress_item_stats` and `practice_sessions` accept all.
 
-Fix: `supabase/migrations/20260823200000_progress_drop_mode_check.sql` (drops the
-constraint; written, **not applied** — needs Sai's go). Also make the session-log
-save independent of the progress save (fire both, don't chain).
+**Fixed 2026-08-23.** `supabase/migrations/20260823200000_progress_drop_mode_check.sql`
+applied to prod by Sai (`supabase db push`); all 22 modes verified to insert.
+`finishSession` now saves the practice log even when the progress save throws
+(commit 2e19979). Post-fix verification: 5 household kids re-run — 0 non-diagnostics
+request failures, progress rows present for every mode, levels carry across
+sessions (Ava fractions L9→10, factors L6→8→10). One of six practice-log rows was
+lost because the harness hard-navigated away while the cloud progress save was
+still in flight — `saveSessionRecord` ran only after that await, so even the
+local mirror was never written. A kid closing the tab right after the flight
+report would hit the same window. Fixed by writing the session record (local
+mirror is synchronous) *before* awaiting the progress save; re-verified 6/6.
 
 ### P1 — `session_diagnostics` inserts are rejected (403, RLS)
 Every session end posts to `/rest/v1/session_diagnostics` and gets

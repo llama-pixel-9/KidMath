@@ -81,12 +81,14 @@ export const FORMATS = {
     bands: [BANDS.G1, BANDS.G2],
     appliesTo: relationHolds,
     transform: (q) => {
-      // `12 = 7 + 5`. Commonly called false by children reading "=" as
-      // "compute now", which is exactly the point of asking.
+      // Historically `12 = 7 + 5` (result first) to probe "=" as "compute
+      // now". Sai (2026-08-22): equations are always written parts first,
+      // then the result, so this now reads `7 + 5 = 12` like trueFalse and
+      // keeps its own id only so mode format lists stay stable.
       const truthy = Math.random() < 0.5;
       const left = truthy ? q.answer : nearMiss(q.answer);
       return {
-        display: { promptText: `${left} = ${q.a} ${OP_SYMBOL[q.op]} ${q.b}` },
+        display: { promptText: `${q.a} ${OP_SYMBOL[q.op]} ${q.b} = ${left}` },
         subPrompt: "Is this right?",
         answer: truthy ? "Yes" : "No",
         choices: [...TF],

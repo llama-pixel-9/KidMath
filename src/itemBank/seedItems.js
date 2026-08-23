@@ -16399,7 +16399,7 @@ export const SEED_ITEMS = [
    "display": {
     "part": 2,
     "whole": 5,
-    "promptText": "5 = 1 + 4, so 5 = 2 + ?"
+    "promptText": "1 + 4 = 5, so 2 + ? = 5"
    },
    "answerType": "numberBond"
   }
@@ -16473,7 +16473,7 @@ export const SEED_ITEMS = [
    "display": {
     "part": 3,
     "whole": 9,
-    "promptText": "9 = 2 + 7, so 9 = 3 + ?"
+    "promptText": "2 + 7 = 9, so 3 + ? = 9"
    },
    "answerType": "numberBond"
   }
@@ -16671,7 +16671,7 @@ export const SEED_ITEMS = [
    "display": {
     "part": 9,
     "whole": 12,
-    "promptText": "12 = 10 + 2, so 12 = 9 + ?"
+    "promptText": "10 + 2 = 12, so 9 + ? = 12"
    },
    "answerType": "numberBond"
   }

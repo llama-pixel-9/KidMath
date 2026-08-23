@@ -258,7 +258,7 @@ const VARIETIES = [
           display: {
             whole,
             part: p + 1,
-            promptText: `${whole} = ${p} + ${whole - p}, so ${whole} = ${p + 1} + ?`,
+            promptText: `${p} + ${whole - p} = ${whole}, so ${p + 1} + ? = ${whole}`,
           },
           representation: "symbolic",
           cognitiveDemand: "DOK1",

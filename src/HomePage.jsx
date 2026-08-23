@@ -45,7 +45,7 @@ import { usePremium } from "./PremiumContext";
 import { useAuth } from "./useAuth";
 import { isFreeMode } from "./premium";
 import { activeKidId, activeKidGrade, fetchKids } from "./kidProfiles";
-import { gradeIndex, parseSpan, gradeFitFor } from "./gradeSeed.js";
+import { gradeIndex, gradeFitFor } from "./gradeSeed.js";
 
 const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork, BarChart3, CircleDot, Sigma, Ruler, Coins, Spline, Scale, Clock, ChartColumn, Triangle, Shapes };
 

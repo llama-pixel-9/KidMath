@@ -7622,7 +7622,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":11,"b":12,"op":"×","answer":132,"display":{"promptText":"Associative: 11 × 12 = 11 × (10 + 2). What is the product?"}},
+    question: {"a":11,"b":12,"op":"×","answer":132,"display":{"promptText":"11 × 12 is the same as 11 × (10 + 2). What is 11 × 12?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-041",
@@ -7632,7 +7632,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":13,"b":8,"op":"×","answer":104,"display":{"promptText":"Associative: 13 × 8 = 13 × (4 × 2). What is the product?"}},
+    question: {"a":13,"b":8,"op":"×","answer":104,"display":{"promptText":"13 × 8 is the same as 13 × (4 × 2). What is 13 × 8?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-042",
@@ -7642,7 +7642,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":14,"b":7,"op":"×","answer":98,"display":{"promptText":"Associative: 14 × 7 = 7 × (2 × 7). What is the product?"}},
+    question: {"a":14,"b":7,"op":"×","answer":98,"display":{"promptText":"14 × 7 is the same as 7 × (2 × 7). What is 14 × 7?"}},
   },
   {
     itemId: "multiplication-conc-equalGroups-45-043",
@@ -8502,7 +8502,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"Commutative: if 6 × 7 = 42, then 7 × 6 = ?"}},
+    question: {"a":7,"b":6,"op":"×","answer":42,"display":{"promptText":"If 6 × 7 = 42, then 7 × 6 = ?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-025",
@@ -8512,7 +8512,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"Commutative: if 7 × 8 = 56, then 8 × 7 = ?"}},
+    question: {"a":8,"b":7,"op":"×","answer":56,"display":{"promptText":"If 7 × 8 = 56, then 8 × 7 = ?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-026",
@@ -8522,7 +8522,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"Commutative: if 8 × 9 = 72, then 9 × 8 = ?"}},
+    question: {"a":9,"b":8,"op":"×","answer":72,"display":{"promptText":"If 8 × 9 = 72, then 9 × 8 = ?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-23-027",
@@ -8912,7 +8912,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":11,"op":"×","answer":99,"display":{"promptText":"Commutative: if 11 × 9 = 99, then 9 × 11 = ?"}},
+    question: {"a":9,"b":11,"op":"×","answer":99,"display":{"promptText":"If 11 × 9 = 99, then 9 × 11 = ?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-45-014",
@@ -9542,7 +9542,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"Commutative: if 5 × 2 = 10, then 2 × 5 = ?"}},
+    question: {"a":2,"b":5,"op":"×","answer":10,"display":{"promptText":"If 5 × 2 = 10, then 2 × 5 = ?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-025",
@@ -9552,7 +9552,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"Commutative: if 2 × 3 = 6, then 3 × 2 = ?"}},
+    question: {"a":3,"b":2,"op":"×","answer":6,"display":{"promptText":"If 2 × 3 = 6, then 3 × 2 = ?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-026",
@@ -9562,7 +9562,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"Commutative: if 2 × 4 = 8, then 4 × 2 = ?"}},
+    question: {"a":4,"b":2,"op":"×","answer":8,"display":{"promptText":"If 2 × 4 = 8, then 4 × 2 = ?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-027",
@@ -9572,7 +9572,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"Commutative: if 3 × 5 = 15, then 5 × 3 = ?"}},
+    question: {"a":5,"b":3,"op":"×","answer":15,"display":{"promptText":"If 3 × 5 = 15, then 5 × 3 = ?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-028",
@@ -9582,7 +9582,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"Commutative: if 3 × 4 = 12, then 4 × 3 = ?"}},
+    question: {"a":4,"b":3,"op":"×","answer":12,"display":{"promptText":"If 3 × 4 = 12, then 4 × 3 = ?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-029",
@@ -9592,7 +9592,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"Commutative: if 4 × 5 = 20, then 5 × 4 = ?"}},
+    question: {"a":5,"b":4,"op":"×","answer":20,"display":{"promptText":"If 4 × 5 = 20, then 5 × 4 = ?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-030",
@@ -9602,7 +9602,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":1,"op":"×","answer":1,"display":{"promptText":"Identity: anything times 1 is itself. What is 1 × 1?"}},
+    question: {"a":1,"b":1,"op":"×","answer":1,"display":{"promptText":"Times 1 keeps a number the same. What is 1 × 1?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-031",
@@ -9612,7 +9612,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":2,"op":"×","answer":2,"display":{"promptText":"Identity: anything times 1 is itself. What is 1 × 2?"}},
+    question: {"a":1,"b":2,"op":"×","answer":2,"display":{"promptText":"Times 1 keeps a number the same. What is 1 × 2?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-032",
@@ -9622,7 +9622,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":3,"op":"×","answer":3,"display":{"promptText":"Identity: anything times 1 is itself. What is 1 × 3?"}},
+    question: {"a":1,"b":3,"op":"×","answer":3,"display":{"promptText":"Times 1 keeps a number the same. What is 1 × 3?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-033",
@@ -9632,7 +9632,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":4,"op":"×","answer":4,"display":{"promptText":"Identity: anything times 1 is itself. What is 1 × 4?"}},
+    question: {"a":1,"b":4,"op":"×","answer":4,"display":{"promptText":"Times 1 keeps a number the same. What is 1 × 4?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-034",
@@ -9642,7 +9642,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":1,"b":5,"op":"×","answer":5,"display":{"promptText":"Identity: anything times 1 is itself. What is 1 × 5?"}},
+    question: {"a":1,"b":5,"op":"×","answer":5,"display":{"promptText":"Times 1 keeps a number the same. What is 1 × 5?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-035",
@@ -9652,7 +9652,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":2,"b":1,"op":"×","answer":2,"display":{"promptText":"Identity: 2 × 1 = ?"}},
+    question: {"a":2,"b":1,"op":"×","answer":2,"display":{"promptText":"What is 2 × 1?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-036",
@@ -9662,7 +9662,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":3,"b":1,"op":"×","answer":3,"display":{"promptText":"Identity: 3 × 1 = ?"}},
+    question: {"a":3,"b":1,"op":"×","answer":3,"display":{"promptText":"What is 3 × 1?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-037",
@@ -9672,7 +9672,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":4,"b":1,"op":"×","answer":4,"display":{"promptText":"Identity: 4 × 1 = ?"}},
+    question: {"a":4,"b":1,"op":"×","answer":4,"display":{"promptText":"What is 4 × 1?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-038",
@@ -9682,7 +9682,7 @@ export const ITEMS = [
     structureType: "equalGroupsTotalUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":1,"op":"×","answer":5,"display":{"promptText":"Identity: 5 × 1 = ?"}},
+    question: {"a":5,"b":1,"op":"×","answer":5,"display":{"promptText":"What is 5 × 1?"}},
   },
   {
     itemId: "multiplication-conc-factFluency-K1-039",

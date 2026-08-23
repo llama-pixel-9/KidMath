@@ -10112,7 +10112,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Amara partitions a field into two plots and asserts the combined area equals the original. Is the assertion sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Amara cuts a field into two plots and says the two areas add up to the whole field. Is Amara right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0400",
@@ -10132,7 +10132,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Mina partitions a field into two plots and asserts the combined area equals the original. Is the assertion sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Mina cuts a field into two plots and says the two areas add up to the whole field. Is Mina right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0402",
@@ -10152,7 +10152,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ida partitions a field into two plots and asserts the combined area equals the original. Is the assertion sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ida cuts a field into two plots and says the two areas add up to the whole field. Is Ida right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0404",
@@ -10172,7 +10172,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Rosa partitions a field into two plots and asserts the combined area equals the original. Is the assertion sound?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Rosa cuts a field into two plots and says the two areas add up to the whole field. Is Rosa right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0406",
@@ -10192,7 +10192,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Nora partitions a field into two plots and asserts the combined area equals the original. Is the assertion sound? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Nora cuts a field into two plots and says the two areas add up to the whole field. Nothing is lost in the cut. Is Nora right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0408",
@@ -10212,7 +10212,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ava partitions a field into two plots and asserts the combined area equals the original. Is the assertion sound? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ava cuts a field into two plots and says the two areas add up to the whole field. Nothing is lost in the cut. Is Ava right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0410",
@@ -10232,7 +10232,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ben partitions a field into two plots and asserts the combined area equals the original. Is the assertion sound? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Ben cuts a field into two plots and says the two areas add up to the whole field. Nothing is lost in the cut. Is Ben right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0412",
@@ -10252,7 +10252,7 @@ export const ITEMS = [
     structureType: "splitJudge_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Priya partitions a field into two plots and asserts the combined area equals the original. Is the assertion sound? No paper is lost in the cut."}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"ap":{"kind":"authoredYes"},"truth":true,"promptText":"Priya cuts a field into two plots and says the two areas add up to the whole field. Nothing is lost in the cut. Is Priya right?"}},
   },
   {
     itemId: "areaPerimeter-conc-b0821-0414",

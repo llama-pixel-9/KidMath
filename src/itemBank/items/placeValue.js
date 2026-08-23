@@ -2252,7 +2252,7 @@ export const ITEMS = [
     structureType: "storyWordForm",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"promptText":"Theo hears \"seventeen\" in the story and writes the numeral. What does Theo write?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"promptText":"Theo hears \"seventeen\" in the story and writes it as a number. What does Theo write?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-app-b0821-0190",
@@ -2272,7 +2272,7 @@ export const ITEMS = [
     structureType: "storyWordForm",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"promptText":"Zoe hears \"nineteen\" in the story and writes the numeral. What does Zoe write?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"promptText":"Zoe hears \"nineteen\" in the story and writes it as a number. What does Zoe write?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-app-b0821-0192",
@@ -2292,7 +2292,7 @@ export const ITEMS = [
     structureType: "storyWordForm",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"promptText":"Diego hears \"sixteen\" in the story and writes the numeral. What does Diego write?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"promptText":"Diego hears \"sixteen\" in the story and writes it as a number. What does Diego write?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-app-b0821-0194",
@@ -2312,7 +2312,7 @@ export const ITEMS = [
     structureType: "storyWordForm",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"promptText":"Luca hears \"fifteen\" in the story and writes the numeral. What does Luca write?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"promptText":"Luca hears \"fifteen\" in the story and writes it as a number. What does Luca write?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-app-b0821-0196",
@@ -2332,7 +2332,7 @@ export const ITEMS = [
     structureType: "storyWordForm",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"promptText":"Omar hears \"twenty\" in the story and writes the numeral. What does Omar write?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"promptText":"Omar hears \"twenty\" in the story and writes it as a number. What does Omar write?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-app-b0821-0198",
@@ -2352,7 +2352,7 @@ export const ITEMS = [
     structureType: "storyWordForm",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"promptText":"Finn hears \"seventeen\" in the story and writes the numeral. What does Finn write?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":17,"display":{"promptText":"Finn hears \"seventeen\" in the story and writes it as a number. What does Finn write?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-app-b0821-0200",
@@ -2372,7 +2372,7 @@ export const ITEMS = [
     structureType: "storyWordForm",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"promptText":"Sam hears \"nineteen\" in the story and writes the numeral. What does Sam write?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":19,"display":{"promptText":"Sam hears \"nineteen\" in the story and writes it as a number. What does Sam write?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-app-b0821-0202",
@@ -2392,7 +2392,7 @@ export const ITEMS = [
     structureType: "storyWordForm",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"promptText":"Kai hears \"fourteen\" in the story and writes the numeral. What does Kai write?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"promptText":"Kai hears \"fourteen\" in the story and writes it as a number. What does Kai write?"},"answerType":"numberPad"},
   },
   {
     itemId: "placeValue-app-b0821-0204",
@@ -8282,7 +8282,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai matches the word \"seventeen\" to the numeral 16. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Kai writes \"seventeen\" as 16. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0191",
@@ -8302,7 +8302,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily matches the word \"nineteen\" to the numeral 18. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Lily writes \"nineteen\" as 18. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0193",
@@ -8322,7 +8322,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo matches the word \"sixteen\" to the numeral 17. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Leo writes \"sixteen\" as 17. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0195",
@@ -8342,7 +8342,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo matches the word \"eighteen\" to the numeral 19. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Theo writes \"eighteen\" as 19. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0197",
@@ -8362,7 +8362,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe matches the word \"twenty\" to the numeral 19. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Zoe writes \"twenty\" as 19. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0199",
@@ -8382,7 +8382,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego matches the word \"twelve\" to the numeral 13. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Diego writes \"twelve\" as 13. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0201",
@@ -8402,7 +8402,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Luca matches the word \"fifteen\" to the numeral 14. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Luca writes \"fifteen\" as 14. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0203",
@@ -8422,7 +8422,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar matches the word \"thirteen\" to the numeral 12. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Omar writes \"thirteen\" as 12. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0205",
@@ -8442,7 +8442,7 @@ export const ITEMS = [
     structureType: "wordClaimJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn matches the word \"eleven\" to the numeral 12. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Finn writes \"eleven\" as 12. Is that right?"}},
   },
   {
     itemId: "placeValue-conc-b0821-0207",

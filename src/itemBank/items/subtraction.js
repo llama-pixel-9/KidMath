@@ -4202,7 +4202,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":7,"op":"−","answer":8,"display":{"promptText":"Decompose 15 as 7 + 8. What is 15 − 7?"}},
+    question: {"a":15,"b":7,"op":"−","answer":8,"display":{"promptText":"15 is 7 + 8. What is 15 − 7?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-002",
@@ -4232,7 +4232,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":15,"b":6,"op":"−","answer":9,"display":{"promptText":"Use inverse: if 6 + 9 = 15, then 15 − 6 equals?"}},
+    question: {"a":15,"b":6,"op":"−","answer":9,"display":{"promptText":"If 6 + 9 = 15, then 15 − 6 = ?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-005",
@@ -4242,7 +4242,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":17,"b":8,"op":"−","answer":9,"display":{"promptText":"Use inverse: if 8 + 9 = 17, then 17 − 8 equals?"}},
+    question: {"a":17,"b":8,"op":"−","answer":9,"display":{"promptText":"If 8 + 9 = 17, then 17 − 8 = ?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-006",
@@ -4252,7 +4252,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":19,"b":7,"op":"−","answer":12,"display":{"promptText":"Use inverse: if 7 + 12 = 19, then 19 − 7 equals?"}},
+    question: {"a":19,"b":7,"op":"−","answer":12,"display":{"promptText":"If 7 + 12 = 19, then 19 − 7 = ?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-007",
@@ -4342,7 +4342,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":16,"b":8,"op":"−","answer":8,"display":{"promptText":"Decompose 16 as 8 + 8. Use this to find 16 − 8."}},
+    question: {"a":16,"b":8,"op":"−","answer":8,"display":{"promptText":"16 is 8 + 8. Use that to find 16 − 8."}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-016",
@@ -4352,7 +4352,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":18,"b":8,"op":"−","answer":10,"display":{"promptText":"Decompose 18 as 8 + 10. Use this to find 18 − 8."}},
+    question: {"a":18,"b":8,"op":"−","answer":10,"display":{"promptText":"18 is 8 + 10. Use that to find 18 − 8."}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-23-017",
@@ -4492,7 +4492,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":50,"b":23,"op":"−","answer":27,"display":{"promptText":"Decompose 50 as 23 + 27. What is 50 − 23?"}},
+    question: {"a":50,"b":23,"op":"−","answer":27,"display":{"promptText":"50 is 23 + 27. What is 50 − 23?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-002",
@@ -4522,7 +4522,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":60,"b":35,"op":"−","answer":25,"display":{"promptText":"Use inverse: if 35 + 25 = 60, then 60 − 35 equals?"}},
+    question: {"a":60,"b":35,"op":"−","answer":25,"display":{"promptText":"If 35 + 25 = 60, then 60 − 35 = ?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-005",
@@ -4532,7 +4532,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":80,"b":45,"op":"−","answer":35,"display":{"promptText":"Use inverse: if 45 + 35 = 80, then 80 − 45 equals?"}},
+    question: {"a":80,"b":45,"op":"−","answer":35,"display":{"promptText":"If 45 + 35 = 80, then 80 − 45 = ?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-006",
@@ -4542,7 +4542,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":100,"b":65,"op":"−","answer":35,"display":{"promptText":"Use inverse: if 65 + 35 = 100, then 100 − 65 equals?"}},
+    question: {"a":100,"b":65,"op":"−","answer":35,"display":{"promptText":"If 65 + 35 = 100, then 100 − 65 = ?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-007",
@@ -4632,7 +4632,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":500,"b":125,"op":"−","answer":375,"display":{"promptText":"Decompose 500 as 125 + 375. Use this to find 500 − 125."}},
+    question: {"a":500,"b":125,"op":"−","answer":375,"display":{"promptText":"500 is 125 + 375. Use that to find 500 − 125."}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-016",
@@ -4642,7 +4642,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":400,"b":150,"op":"−","answer":250,"display":{"promptText":"Decompose 400 as 150 + 250. Use this to find 400 − 150."}},
+    question: {"a":400,"b":150,"op":"−","answer":250,"display":{"promptText":"400 is 150 + 250. Use that to find 400 − 150."}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-45-017",
@@ -4812,7 +4812,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":10,"b":3,"op":"−","answer":7,"display":{"promptText":"Use inverse: if 3 + 7 = 10, then 10 − 3 equals?"}},
+    question: {"a":10,"b":3,"op":"−","answer":7,"display":{"promptText":"If 3 + 7 = 10, then 10 − 3 = ?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-005",
@@ -4822,7 +4822,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":9,"b":4,"op":"−","answer":5,"display":{"promptText":"Use inverse: if 4 + 5 = 9, then 9 − 4 equals?"}},
+    question: {"a":9,"b":4,"op":"−","answer":5,"display":{"promptText":"If 4 + 5 = 9, then 9 − 4 = ?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-006",
@@ -4832,7 +4832,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":3,"op":"−","answer":5,"display":{"promptText":"Use inverse: if 3 + 5 = 8, then 8 − 3 equals?"}},
+    question: {"a":8,"b":3,"op":"−","answer":5,"display":{"promptText":"If 3 + 5 = 8, then 8 − 3 = ?"}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-007",
@@ -4922,7 +4922,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":5,"b":2,"op":"−","answer":3,"display":{"promptText":"Decompose 5 as 2 + 3. Use this to find 5 − 2."}},
+    question: {"a":5,"b":2,"op":"−","answer":3,"display":{"promptText":"5 is 2 + 3. Use that to find 5 − 2."}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-016",
@@ -4932,7 +4932,7 @@ export const ITEMS = [
     structureType: "separateResultUnknown",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":8,"b":2,"op":"−","answer":6,"display":{"promptText":"Decompose 8 as 2 + 6. Use this to find 8 − 2."}},
+    question: {"a":8,"b":2,"op":"−","answer":6,"display":{"promptText":"8 is 2 + 6. Use that to find 8 − 2."}},
   },
   {
     itemId: "subtraction-conc-decomposeToSubtract-K1-017",

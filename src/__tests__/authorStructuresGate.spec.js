@@ -129,7 +129,7 @@ describe("bondMath verifies number-bond payloads that arithmetic skips", () => {
     itemFamily: "procedural",
     subskill: "missingPart",
     levelRange,
-    question: { a: null, b: null, op: "bond", answer, display: { promptText: "9 = 4 + ?", ...display } },
+    question: { a: null, b: null, op: "bond", answer, display: { promptText: "4 + ? = 9", ...display } },
   });
 
   it("accepts a correct missing-part bond", () => {

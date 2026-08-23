@@ -45,7 +45,7 @@ Bands: K-1 `[1,3]` wholes ≤10 · 2-3 `[4,6]` within 20 · 4-5 `[7,10]` within
 | `decompose` | pattern pairs, commutative flips, make-ten splits, ladders, T/F claims | which-pair, odd-one-out, open decomposition (multiSelect), fact families, strategy splits, three-branch place bonds | partner-to-ten, fill-the-ten, make-ten, equal split, take-out-ten, tens-and-singles |
 
 **Numeric-first low levels**: band-1/2 procedural prompts are symbolic
-(`9 = 4 + ?`), so they pass `isVerbalPrompt` and serve in the
+(`4 + ? = 9` — part-first; the whole-first `9 = 4 + ?` reading was dropped 2026-08-22 because kids read it as "compute 7 = 1"; the `? + 4 = 9` slot is used where the part-first form would duplicate an addition drill), so they pass `isVerbalPrompt` and serve in the
 no-word-problems path — this bank is what closed the "first levels should be
 mostly numbers" gap for numberBonds.
 

@@ -85,12 +85,12 @@ The reviewer-facing map of what each pattern asks. Bands: K-1 = wholes ≤10,
 
 | structureType | Bands | Asks | Example |
 |---|---|---|---|
-| `partUnknown` | K-1 | bond diagram, missing part — every fact, wholes 2–10, zero legal | `9 = 4 + ?` + cherry widget |
-| `teenBond` | 2-3 | teen as ten-and-ones, both slots | `14 = 10 + ?` · `14 = ? + 10` |
-| `takeFromTenFact` | 2-3 | teen minus 9/8/7/6 as a bond | `13 = 9 + ?` |
-| `partnersOf20/100/1000` | 2-3 / 4-5 | complement to a landmark whole | `20 = 7 + ?` · `100 = 35 + ?` · `1000 = 450 + ?` |
+| `partUnknown` | K-1 | bond diagram, missing part — every fact, wholes 2–10, zero legal | `4 + ? = 9` + cherry widget (part-first; a few use `? + 4 = 9` to stay unique vs addition) |
+| `teenBond` | 2-3 | teen as ten-and-ones, both slots | `10 + ? = 14` · `? + 10 = 14` |
+| `takeFromTenFact` | 2-3 | teen minus 9/8/7/6 as a bond | `9 + ? = 13` |
+| `partnersOf20/100/1000` | 2-3 / 4-5 | complement to a landmark whole | `7 + ? = 20` · `35 + ? = 100` · `450 + ? = 1000` |
 | `takeOutTen` | 4-5 | G2 take-out-ten split | `26 = ? + 10` |
-| `tensOnesBond` | 4-5 | canonical tens/ones, either slot | `37 = 30 + ?` · `37 = ? + 7` |
+| `tensOnesBond` | 4-5 | canonical tens/ones, either slot | `30 + ? = 37` · `? + 7 = 37` |
 | `wholeFromParts` | K-1 | whole unknown, equal sign left — every pair ≤10 | `? = 4 + 5` |
 | `teenFromTen` / `bigDouble` | 2-3 | compose teens / doubles 6–10 | `? = 10 + 4` · `? = 7 + 7` |
 | `threeAddendBond` | 2-3 | three addends holding a partner-of-ten pair | `? = 9 + 1 + 5` |

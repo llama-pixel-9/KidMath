@@ -12,7 +12,7 @@ export const ITEMS = [
     structureType: "storyHandsRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"three o'clock","choices":["half past three","half past four","three o'clock","four o'clock"],"display":{"time":{"hour":3,"kind":"handsWords","minute":0},"promptText":"Sam checks the clock before swim practice: the minute hand points at twelve and the hour hand at three. What time is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"three o'clock","choices":["half past three","half past four","three o'clock","four o'clock"],"display":{"time":{"hour":3,"kind":"handsWords","minute":0},"clock":{"hour":3,"minute":0},"figure":"clockFace","promptText":"Sam checks the clock before swim practice. What time does the clock show?"}},
   },
   {
     itemId: "time-app-b0821-0002",
@@ -22,7 +22,7 @@ export const ITEMS = [
     structureType: "storyHandsRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"half past seven","choices":["half past seven","seven o'clock","half past eight","eight o'clock"],"display":{"time":{"hour":7,"kind":"handsWords","minute":30},"promptText":"Right before art club, Mina sees the hour hand halfway past seven and the minute hand on the six. Which time is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"half past seven","choices":["half past seven","seven o'clock","half past eight","eight o'clock"],"display":{"time":{"hour":7,"kind":"handsWords","minute":30},"clock":{"hour":7,"minute":30},"figure":"clockFace","promptText":"Right before art club, Mina looks at this clock. Which time is that?"}},
   },
   {
     itemId: "time-app-b0821-0003",
@@ -32,7 +32,7 @@ export const ITEMS = [
     structureType: "storyHandsRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"five o'clock","choices":["half past five","five o'clock","half past six","six o'clock"],"display":{"time":{"hour":5,"kind":"handsWords","minute":0},"promptText":"Luca checks the clock before the puppet show: the minute hand points at twelve and the hour hand at five. What time is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"five o'clock","choices":["half past five","five o'clock","half past six","six o'clock"],"display":{"time":{"hour":5,"kind":"handsWords","minute":0},"clock":{"hour":5,"minute":0},"figure":"clockFace","promptText":"Luca checks the clock before the puppet show. What time does the clock show?"}},
   },
   {
     itemId: "time-app-b0821-0004",
@@ -42,7 +42,7 @@ export const ITEMS = [
     structureType: "storyHandsRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"half past nine","choices":["ten o'clock","half past ten","half past nine","nine o'clock"],"display":{"time":{"hour":9,"kind":"handsWords","minute":30},"promptText":"Right before garden club, Nia sees the hour hand halfway past nine and the minute hand on the six. Which time is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"half past nine","choices":["ten o'clock","half past ten","half past nine","nine o'clock"],"display":{"time":{"hour":9,"kind":"handsWords","minute":30},"clock":{"hour":9,"minute":30},"figure":"clockFace","promptText":"Right before garden club, Nia looks at this clock. Which time is that?"}},
   },
   {
     itemId: "time-app-b0821-0005",
@@ -52,7 +52,7 @@ export const ITEMS = [
     structureType: "storyHandsRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"two o'clock","choices":["half past two","half past three","two o'clock","three o'clock"],"display":{"time":{"hour":2,"kind":"handsWords","minute":0},"promptText":"Theo checks the clock before swim practice: the minute hand points at twelve and the hour hand at two. What time is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"two o'clock","choices":["half past two","half past three","two o'clock","three o'clock"],"display":{"time":{"hour":2,"kind":"handsWords","minute":0},"clock":{"hour":2,"minute":0},"figure":"clockFace","promptText":"Theo checks the clock before swim practice. What time does the clock show?"}},
   },
   {
     itemId: "time-app-b0821-0006",
@@ -62,7 +62,7 @@ export const ITEMS = [
     structureType: "storyHandsRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"half past eleven","choices":["half past eleven","twelve o'clock","half past twelve","eleven o'clock"],"display":{"time":{"hour":11,"kind":"handsWords","minute":30},"promptText":"Right before art club, Ava sees the hour hand halfway past eleven and the minute hand on the six. Which time is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"half past eleven","choices":["half past eleven","twelve o'clock","half past twelve","eleven o'clock"],"display":{"time":{"hour":11,"kind":"handsWords","minute":30},"clock":{"hour":11,"minute":30},"figure":"clockFace","promptText":"Right before art club, Ava looks at this clock. Which time is that?"}},
   },
   {
     itemId: "time-app-b0821-0007",
@@ -72,7 +72,7 @@ export const ITEMS = [
     structureType: "storyHandsRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"four o'clock","choices":["half past four","five o'clock","four o'clock","half past five"],"display":{"time":{"hour":4,"kind":"handsWords","minute":0},"promptText":"Kai checks the clock before the puppet show: the minute hand points at twelve and the hour hand at four. What time is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"four o'clock","choices":["half past four","five o'clock","four o'clock","half past five"],"display":{"time":{"hour":4,"kind":"handsWords","minute":0},"clock":{"hour":4,"minute":0},"figure":"clockFace","promptText":"Mina checks the clock before the puppet show. What time does the clock show?"}},
   },
   {
     itemId: "time-app-b0821-0008",
@@ -82,7 +82,7 @@ export const ITEMS = [
     structureType: "storyHandsRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"half past eight","choices":["half past eight","half past nine","eight o'clock","nine o'clock"],"display":{"time":{"hour":8,"kind":"handsWords","minute":30},"promptText":"Right before garden club, Ida sees the hour hand halfway past eight and the minute hand on the six. Which time is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"half past eight","choices":["half past eight","half past nine","eight o'clock","nine o'clock"],"display":{"time":{"hour":8,"kind":"handsWords","minute":30},"clock":{"hour":8,"minute":30},"figure":"clockFace","promptText":"Right before garden club, Sam looks at this clock. Which time is that?"}},
   },
   {
     itemId: "time-app-b0821-0009",
@@ -92,7 +92,7 @@ export const ITEMS = [
     structureType: "storyHandsRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"six o'clock","choices":["half past seven","half past six","six o'clock","seven o'clock"],"display":{"time":{"hour":6,"kind":"handsWords","minute":0},"promptText":"Omar checks the clock before swim practice: the minute hand points at twelve and the hour hand at six. What time is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"six o'clock","choices":["half past seven","half past six","six o'clock","seven o'clock"],"display":{"time":{"hour":6,"kind":"handsWords","minute":0},"clock":{"hour":6,"minute":0},"figure":"clockFace","promptText":"Ava checks the clock before swim practice. What time does the clock show?"}},
   },
   {
     itemId: "time-app-b0821-0010",
@@ -102,7 +102,7 @@ export const ITEMS = [
     structureType: "storyHandsRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"half past one","choices":["one o'clock","two o'clock","half past one","half past two"],"display":{"time":{"hour":1,"kind":"handsWords","minute":30},"promptText":"Right before art club, June sees the hour hand halfway past one and the minute hand on the six. Which time is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"half past one","choices":["one o'clock","two o'clock","half past one","half past two"],"display":{"time":{"hour":1,"kind":"handsWords","minute":30},"clock":{"hour":1,"minute":30},"figure":"clockFace","promptText":"Right before art club, Theo looks at this clock. Which time is that?"}},
   },
   {
     itemId: "time-app-b0821-0011",
@@ -112,7 +112,7 @@ export const ITEMS = [
     structureType: "storyHandsRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"ten o'clock","choices":["ten o'clock","half past ten","half past eleven","eleven o'clock"],"display":{"time":{"hour":10,"kind":"handsWords","minute":0},"promptText":"Zoe checks the clock before the puppet show: the minute hand points at twelve and the hour hand at ten. What time is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"ten o'clock","choices":["ten o'clock","half past ten","half past eleven","eleven o'clock"],"display":{"time":{"hour":10,"kind":"handsWords","minute":0},"clock":{"hour":10,"minute":0},"figure":"clockFace","promptText":"Nia checks the clock before the puppet show. What time does the clock show?"}},
   },
   {
     itemId: "time-app-b0821-0012",
@@ -122,7 +122,7 @@ export const ITEMS = [
     structureType: "storyHandsRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"half past twelve","choices":["one o'clock","half past one","twelve o'clock","half past twelve"],"display":{"time":{"hour":12,"kind":"handsWords","minute":30},"promptText":"Right before garden club, Ben sees the hour hand halfway past twelve and the minute hand on the six. Which time is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"half past twelve","choices":["one o'clock","half past one","twelve o'clock","half past twelve"],"display":{"time":{"hour":12,"kind":"handsWords","minute":30},"clock":{"hour":12,"minute":30},"figure":"clockFace","promptText":"Right before garden club, Luca looks at this clock. Which time is that?"}},
   },
   {
     itemId: "time-app-b0821-0013",
@@ -132,7 +132,7 @@ export const ITEMS = [
     structureType: "storyHandsRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"half past three","choices":["half past four","three o'clock","half past three","four o'clock"],"display":{"time":{"hour":3,"kind":"handsWords","minute":30},"promptText":"Lily checks the clock before swim practice: the minute hand points at six and the hour hand just past three. What time is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"half past three","choices":["half past four","three o'clock","half past three","four o'clock"],"display":{"time":{"hour":3,"kind":"handsWords","minute":30},"clock":{"hour":3,"minute":30},"figure":"clockFace","promptText":"Mina checks the clock before swim practice. What time does the clock show?"}},
   },
   {
     itemId: "time-app-b0821-0014",
@@ -142,7 +142,7 @@ export const ITEMS = [
     structureType: "storyHandsRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"seven o'clock","choices":["eight o'clock","half past seven","half past eight","seven o'clock"],"display":{"time":{"hour":7,"kind":"handsWords","minute":0},"promptText":"Right before art club, Rosa sees the hour hand on seven and the minute hand on the twelve. Which time is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"seven o'clock","choices":["eight o'clock","half past seven","half past eight","seven o'clock"],"display":{"time":{"hour":7,"kind":"handsWords","minute":0},"clock":{"hour":7,"minute":0},"figure":"clockFace","promptText":"Right before art club, Sam looks at this clock. Which time is that?"}},
   },
   {
     itemId: "time-app-b0821-0015",
@@ -152,7 +152,7 @@ export const ITEMS = [
     structureType: "storyHandsRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"half past five","choices":["six o'clock","half past six","five o'clock","half past five"],"display":{"time":{"hour":5,"kind":"handsWords","minute":30},"promptText":"Finn checks the clock before the puppet show: the minute hand points at six and the hour hand just past five. What time is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"half past five","choices":["six o'clock","half past six","five o'clock","half past five"],"display":{"time":{"hour":5,"kind":"handsWords","minute":30},"clock":{"hour":5,"minute":30},"figure":"clockFace","promptText":"Ava checks the clock before the puppet show. What time does the clock show?"}},
   },
   {
     itemId: "time-app-b0821-0016",
@@ -162,7 +162,7 @@ export const ITEMS = [
     structureType: "storyHandsRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"nine o'clock","choices":["half past nine","half past ten","ten o'clock","nine o'clock"],"display":{"time":{"hour":9,"kind":"handsWords","minute":0},"promptText":"Right before garden club, Amara sees the hour hand on nine and the minute hand on the twelve. Which time is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"nine o'clock","choices":["half past nine","half past ten","ten o'clock","nine o'clock"],"display":{"time":{"hour":9,"kind":"handsWords","minute":0},"clock":{"hour":9,"minute":0},"figure":"clockFace","promptText":"Right before garden club, Theo looks at this clock. Which time is that?"}},
   },
   {
     itemId: "time-app-b0821-0017",
@@ -172,7 +172,7 @@ export const ITEMS = [
     structureType: "storyHandsRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"half past two","choices":["two o'clock","half past two","half past three","three o'clock"],"display":{"time":{"hour":2,"kind":"handsWords","minute":30},"promptText":"Diego checks the clock before swim practice: the minute hand points at six and the hour hand just past two. What time is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"half past two","choices":["two o'clock","half past two","half past three","three o'clock"],"display":{"time":{"hour":2,"kind":"handsWords","minute":30},"clock":{"hour":2,"minute":30},"figure":"clockFace","promptText":"Nia checks the clock before swim practice. What time does the clock show?"}},
   },
   {
     itemId: "time-app-b0821-0018",
@@ -6132,7 +6132,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":1,"kind":"judgeRead","minute":0,"saidHour":1,"saidMinute":0},"truth":true,"promptText":"The minute hand points at twelve and the hour hand at one. Luca says it is one o'clock. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":1,"kind":"judgeRead","minute":0,"saidHour":1,"saidMinute":0},"clock":{"hour":1,"minute":0},"truth":true,"figure":"clockFace","promptText":"Luca calls the time on this clock one o'clock. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0002",
@@ -6142,7 +6142,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"judgeRead","minute":0,"saidHour":3,"saidMinute":0},"truth":false,"promptText":"Ava reads a clock with the hour hand on two and the minute hand on twelve as three o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"judgeRead","minute":0,"saidHour":3,"saidMinute":0},"clock":{"hour":2,"minute":0},"truth":false,"figure":"clockFace","promptText":"Ava reads this clock as three o'clock. Is Ava right?"}},
   },
   {
     itemId: "time-conc-b0821-0003",
@@ -6152,7 +6152,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"judgeRead","minute":0,"saidHour":3,"saidMinute":0},"truth":true,"promptText":"The minute hand points at twelve and the hour hand at three. Omar says it is three o'clock. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"judgeRead","minute":0,"saidHour":3,"saidMinute":0},"clock":{"hour":3,"minute":0},"truth":true,"figure":"clockFace","promptText":"Sam looks at this clock and says it is three o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0004",
@@ -6162,7 +6162,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":4,"kind":"judgeRead","minute":0,"saidHour":5,"saidMinute":0},"truth":false,"promptText":"Ben reads a clock with the hour hand on four and the minute hand on twelve as five o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":4,"kind":"judgeRead","minute":0,"saidHour":5,"saidMinute":0},"clock":{"hour":4,"minute":0},"truth":false,"figure":"clockFace","promptText":"Ava calls the time on this clock five o'clock. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0005",
@@ -6172,7 +6172,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"judgeRead","minute":0,"saidHour":5,"saidMinute":0},"truth":true,"promptText":"The minute hand points at twelve and the hour hand at five. Finn says it is five o'clock. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"judgeRead","minute":0,"saidHour":5,"saidMinute":0},"clock":{"hour":5,"minute":0},"truth":true,"figure":"clockFace","promptText":"Theo reads this clock as five o'clock. Is Theo right?"}},
   },
   {
     itemId: "time-conc-b0821-0006",
@@ -6182,7 +6182,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"judgeRead","minute":0,"saidHour":7,"saidMinute":0},"truth":false,"promptText":"Priya reads a clock with the hour hand on six and the minute hand on twelve as seven o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"judgeRead","minute":0,"saidHour":7,"saidMinute":0},"clock":{"hour":6,"minute":0},"truth":false,"figure":"clockFace","promptText":"Nia looks at this clock and says it is seven o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0007",
@@ -6192,7 +6192,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":7,"kind":"judgeRead","minute":0,"saidHour":7,"saidMinute":0},"truth":true,"promptText":"The minute hand points at twelve and the hour hand at seven. Sam says it is seven o'clock. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":7,"kind":"judgeRead","minute":0,"saidHour":7,"saidMinute":0},"clock":{"hour":7,"minute":0},"truth":true,"figure":"clockFace","promptText":"Sam calls the time on this clock seven o'clock. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0008",
@@ -6202,7 +6202,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":8,"kind":"judgeRead","minute":0,"saidHour":9,"saidMinute":0},"truth":false,"promptText":"Nia reads a clock with the hour hand on eight and the minute hand on twelve as nine o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":8,"kind":"judgeRead","minute":0,"saidHour":9,"saidMinute":0},"clock":{"hour":8,"minute":0},"truth":false,"figure":"clockFace","promptText":"Nia reads this clock as nine o'clock. Is Nia right?"}},
   },
   {
     itemId: "time-conc-b0821-0009",
@@ -6212,7 +6212,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":9,"kind":"judgeRead","minute":0,"saidHour":9,"saidMinute":0},"truth":true,"promptText":"The minute hand points at twelve and the hour hand at nine. Kai says it is nine o'clock. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":9,"kind":"judgeRead","minute":0,"saidHour":9,"saidMinute":0},"clock":{"hour":9,"minute":0},"truth":true,"figure":"clockFace","promptText":"Sam looks at this clock and says it is nine o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0010",
@@ -6222,7 +6222,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":10,"kind":"judgeRead","minute":0,"saidHour":11,"saidMinute":0},"truth":false,"promptText":"June reads a clock with the hour hand on ten and the minute hand on twelve as eleven o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":10,"kind":"judgeRead","minute":0,"saidHour":11,"saidMinute":0},"clock":{"hour":10,"minute":0},"truth":false,"figure":"clockFace","promptText":"Ava calls the time on this clock eleven o'clock. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0011",
@@ -6232,7 +6232,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":11,"kind":"judgeRead","minute":0,"saidHour":11,"saidMinute":0},"truth":true,"promptText":"The minute hand points at twelve and the hour hand at eleven. Lily says it is eleven o'clock. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":11,"kind":"judgeRead","minute":0,"saidHour":11,"saidMinute":0},"clock":{"hour":11,"minute":0},"truth":true,"figure":"clockFace","promptText":"Theo reads this clock as eleven o'clock. Is Theo right?"}},
   },
   {
     itemId: "time-conc-b0821-0012",
@@ -6242,7 +6242,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":12,"kind":"judgeRead","minute":0,"saidHour":1,"saidMinute":0},"truth":false,"promptText":"Amara reads a clock with the hour hand on twelve and the minute hand on twelve as one o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":12,"kind":"judgeRead","minute":0,"saidHour":1,"saidMinute":0},"clock":{"hour":12,"minute":0},"truth":false,"figure":"clockFace","promptText":"Nia looks at this clock and says it is one o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0013",
@@ -6252,7 +6252,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":1,"kind":"judgeRead","minute":0,"saidHour":1,"saidMinute":0},"truth":true,"promptText":"The minute hand points at twelve and the hour hand at one. Leo says it is one o'clock. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":1,"kind":"judgeRead","minute":0,"saidHour":1,"saidMinute":0},"clock":{"hour":1,"minute":0},"truth":true,"figure":"clockFace","promptText":"Mina reads this clock as one o'clock. Is Mina right?"}},
   },
   {
     itemId: "time-conc-b0821-0014",
@@ -6262,7 +6262,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"judgeRead","minute":0,"saidHour":3,"saidMinute":0},"truth":false,"promptText":"Mina reads a clock with the hour hand on two and the minute hand on twelve as three o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"judgeRead","minute":0,"saidHour":3,"saidMinute":0},"clock":{"hour":2,"minute":0},"truth":false,"figure":"clockFace","promptText":"Mina reads this clock as three o'clock. Is Mina right?"}},
   },
   {
     itemId: "time-conc-b0821-0015",
@@ -6272,7 +6272,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"judgeRead","minute":0,"saidHour":3,"saidMinute":0},"truth":true,"promptText":"The minute hand points at twelve and the hour hand at three. Theo says it is three o'clock. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"judgeRead","minute":0,"saidHour":3,"saidMinute":0},"clock":{"hour":3,"minute":0},"truth":true,"figure":"clockFace","promptText":"Theo looks at this clock and says it is three o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0016",
@@ -6282,7 +6282,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":4,"kind":"judgeRead","minute":0,"saidHour":5,"saidMinute":0},"truth":false,"promptText":"Ida reads a clock with the hour hand on four and the minute hand on twelve as five o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":4,"kind":"judgeRead","minute":0,"saidHour":5,"saidMinute":0},"clock":{"hour":4,"minute":0},"truth":false,"figure":"clockFace","promptText":"Nia looks at this clock and says it is five o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0017",
@@ -6292,7 +6292,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"judgeRead","minute":0,"saidHour":5,"saidMinute":0},"truth":true,"promptText":"The minute hand points at twelve and the hour hand at five. Zoe says it is five o'clock. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"judgeRead","minute":0,"saidHour":5,"saidMinute":0},"clock":{"hour":5,"minute":0},"truth":true,"figure":"clockFace","promptText":"Luca calls the time on this clock five o'clock. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0018",
@@ -6302,7 +6302,7 @@ export const ITEMS = [
     structureType: "judgeOclockRead",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"judgeRead","minute":0,"saidHour":7,"saidMinute":0},"truth":false,"promptText":"Rosa reads a clock with the hour hand on six and the minute hand on twelve as seven o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"judgeRead","minute":0,"saidHour":7,"saidMinute":0},"clock":{"hour":6,"minute":0},"truth":false,"figure":"clockFace","promptText":"Luca calls the time on this clock seven o'clock. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0019",
@@ -12582,7 +12582,7 @@ export const ITEMS = [
     structureType: "handsToWords",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"one o'clock","choices":["half past one","two o'clock","one o'clock","half past two"],"display":{"time":{"hour":1,"kind":"handsWords","minute":0},"promptText":"The hour hand points at one and the minute hand points straight up at twelve. What time is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"one o'clock","choices":["half past one","two o'clock","one o'clock","half past two"],"display":{"time":{"hour":1,"kind":"handsWords","minute":0},"clock":{"hour":1,"minute":0},"figure":"clockFace","promptText":"Ava checks this clock. What time does it say?"}},
   },
   {
     itemId: "time-proc-b0821-0030",
@@ -12592,7 +12592,7 @@ export const ITEMS = [
     structureType: "handsToWords",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"two o'clock","choices":["half past two","two o'clock","half past three","three o'clock"],"display":{"time":{"hour":2,"kind":"handsWords","minute":0},"promptText":"Both hands: the minute hand on twelve, the hour hand on two. Which time is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"two o'clock","choices":["half past two","two o'clock","half past three","three o'clock"],"display":{"time":{"hour":2,"kind":"handsWords","minute":0},"clock":{"hour":2,"minute":0},"figure":"clockFace","promptText":"Theo looks at this clock. What time does the clock show?"}},
   },
   {
     itemId: "time-proc-b0821-0031",
@@ -12602,7 +12602,7 @@ export const ITEMS = [
     structureType: "handsToWords",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"three o'clock","choices":["half past four","half past three","three o'clock","four o'clock"],"display":{"time":{"hour":3,"kind":"handsWords","minute":0},"promptText":"The hour hand points at three and the minute hand points straight up at twelve. What time is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"three o'clock","choices":["half past four","half past three","three o'clock","four o'clock"],"display":{"time":{"hour":3,"kind":"handsWords","minute":0},"clock":{"hour":3,"minute":0},"figure":"clockFace","promptText":"This is Theo's clock right now. Which time does it show?"}},
   },
   {
     itemId: "time-proc-b0821-0032",
@@ -12612,7 +12612,7 @@ export const ITEMS = [
     structureType: "handsToWords",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"four o'clock","choices":["five o'clock","half past four","half past five","four o'clock"],"display":{"time":{"hour":4,"kind":"handsWords","minute":0},"promptText":"Both hands: the minute hand on twelve, the hour hand on four. Which time is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"four o'clock","choices":["five o'clock","half past four","half past five","four o'clock"],"display":{"time":{"hour":4,"kind":"handsWords","minute":0},"clock":{"hour":4,"minute":0},"figure":"clockFace","promptText":"Read Theo's clock. What time is it?"}},
   },
   {
     itemId: "time-proc-b0821-0033",
@@ -12622,7 +12622,7 @@ export const ITEMS = [
     structureType: "handsToWords",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"five o'clock","choices":["six o'clock","half past six","half past five","five o'clock"],"display":{"time":{"hour":5,"kind":"handsWords","minute":0},"promptText":"The hour hand points at five and the minute hand points straight up at twelve. What time is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"five o'clock","choices":["six o'clock","half past six","half past five","five o'clock"],"display":{"time":{"hour":5,"kind":"handsWords","minute":0},"clock":{"hour":5,"minute":0},"figure":"clockFace","promptText":"Theo checks this clock. What time does it say?"}},
   },
   {
     itemId: "time-proc-b0821-0034",
@@ -12632,7 +12632,7 @@ export const ITEMS = [
     structureType: "handsToWords",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"six o'clock","choices":["half past six","half past seven","seven o'clock","six o'clock"],"display":{"time":{"hour":6,"kind":"handsWords","minute":0},"promptText":"Both hands: the minute hand on twelve, the hour hand on six. Which time is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"six o'clock","choices":["half past six","half past seven","seven o'clock","six o'clock"],"display":{"time":{"hour":6,"kind":"handsWords","minute":0},"clock":{"hour":6,"minute":0},"figure":"clockFace","promptText":"Nia looks at this clock. What time does the clock show?"}},
   },
   {
     itemId: "time-proc-b0821-0035",
@@ -12642,7 +12642,7 @@ export const ITEMS = [
     structureType: "handsToWords",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"seven o'clock","choices":["seven o'clock","half past seven","half past eight","eight o'clock"],"display":{"time":{"hour":7,"kind":"handsWords","minute":0},"promptText":"The hour hand points at seven and the minute hand points straight up at twelve. What time is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"seven o'clock","choices":["seven o'clock","half past seven","half past eight","eight o'clock"],"display":{"time":{"hour":7,"kind":"handsWords","minute":0},"clock":{"hour":7,"minute":0},"figure":"clockFace","promptText":"This is Nia's clock right now. Which time does it show?"}},
   },
   {
     itemId: "time-proc-b0821-0036",
@@ -12652,7 +12652,7 @@ export const ITEMS = [
     structureType: "handsToWords",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"eight o'clock","choices":["eight o'clock","half past nine","half past eight","nine o'clock"],"display":{"time":{"hour":8,"kind":"handsWords","minute":0},"promptText":"Both hands: the minute hand on twelve, the hour hand on eight. Which time is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"eight o'clock","choices":["eight o'clock","half past nine","half past eight","nine o'clock"],"display":{"time":{"hour":8,"kind":"handsWords","minute":0},"clock":{"hour":8,"minute":0},"figure":"clockFace","promptText":"Read Nia's clock. What time is it?"}},
   },
   {
     itemId: "time-proc-b0821-0037",
@@ -12662,7 +12662,7 @@ export const ITEMS = [
     structureType: "handsToWords",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"nine o'clock","choices":["ten o'clock","half past ten","nine o'clock","half past nine"],"display":{"time":{"hour":9,"kind":"handsWords","minute":0},"promptText":"The hour hand points at nine and the minute hand points straight up at twelve. What time is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"nine o'clock","choices":["ten o'clock","half past ten","nine o'clock","half past nine"],"display":{"time":{"hour":9,"kind":"handsWords","minute":0},"clock":{"hour":9,"minute":0},"figure":"clockFace","promptText":"Nia checks this clock. What time does it say?"}},
   },
   {
     itemId: "time-proc-b0821-0038",
@@ -12672,7 +12672,7 @@ export const ITEMS = [
     structureType: "handsToWords",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"ten o'clock","choices":["half past eleven","ten o'clock","half past ten","eleven o'clock"],"display":{"time":{"hour":10,"kind":"handsWords","minute":0},"promptText":"Both hands: the minute hand on twelve, the hour hand on ten. Which time is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"ten o'clock","choices":["half past eleven","ten o'clock","half past ten","eleven o'clock"],"display":{"time":{"hour":10,"kind":"handsWords","minute":0},"clock":{"hour":10,"minute":0},"figure":"clockFace","promptText":"Luca looks at this clock. What time does the clock show?"}},
   },
   {
     itemId: "time-proc-b0821-0039",
@@ -12682,7 +12682,7 @@ export const ITEMS = [
     structureType: "handsToWords",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"eleven o'clock","choices":["eleven o'clock","twelve o'clock","half past twelve","half past eleven"],"display":{"time":{"hour":11,"kind":"handsWords","minute":0},"promptText":"The hour hand points at eleven and the minute hand points straight up at twelve. What time is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"eleven o'clock","choices":["eleven o'clock","twelve o'clock","half past twelve","half past eleven"],"display":{"time":{"hour":11,"kind":"handsWords","minute":0},"clock":{"hour":11,"minute":0},"figure":"clockFace","promptText":"This is Luca's clock right now. Which time does it show?"}},
   },
   {
     itemId: "time-proc-b0821-0040",
@@ -12692,7 +12692,7 @@ export const ITEMS = [
     structureType: "handsToWords",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"twelve o'clock","choices":["one o'clock","half past one","half past twelve","twelve o'clock"],"display":{"time":{"hour":12,"kind":"handsWords","minute":0},"promptText":"Both hands: the minute hand on twelve, the hour hand on twelve. Which time is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"twelve o'clock","choices":["one o'clock","half past one","half past twelve","twelve o'clock"],"display":{"time":{"hour":12,"kind":"handsWords","minute":0},"clock":{"hour":12,"minute":0},"figure":"clockFace","promptText":"Read Luca's clock. What time is it?"}},
   },
   {
     itemId: "time-proc-b0821-0041",
@@ -12702,7 +12702,7 @@ export const ITEMS = [
     structureType: "handsToWordsHalf",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"half past one","choices":["half past two","two o'clock","one o'clock","half past one"],"display":{"time":{"hour":1,"kind":"handsWords","minute":30},"promptText":"The minute hand points straight down at six, and the hour hand is just past one. What time is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"half past one","choices":["half past two","two o'clock","one o'clock","half past one"],"display":{"time":{"hour":1,"kind":"handsWords","minute":30},"clock":{"hour":1,"minute":30},"figure":"clockFace","promptText":"The clock by Luca's bed looks like this. What time does it show?"}},
   },
   {
     itemId: "time-proc-b0821-0042",
@@ -12712,7 +12712,7 @@ export const ITEMS = [
     structureType: "handsToWordsHalf",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"half past two","choices":["two o'clock","three o'clock","half past three","half past two"],"display":{"time":{"hour":2,"kind":"handsWords","minute":30},"promptText":"Minute hand on the six, hour hand halfway past two. Which time is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"half past two","choices":["two o'clock","three o'clock","half past three","half past two"],"display":{"time":{"hour":2,"kind":"handsWords","minute":30},"clock":{"hour":2,"minute":30},"figure":"clockFace","promptText":"Mina glances at this clock. What time does the clock show?"}},
   },
   {
     itemId: "time-proc-b0821-0043",
@@ -12722,7 +12722,7 @@ export const ITEMS = [
     structureType: "handsToWordsHalf",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"half past three","choices":["half past three","three o'clock","four o'clock","half past four"],"display":{"time":{"hour":3,"kind":"handsWords","minute":30},"promptText":"The minute hand points straight down at six, and the hour hand is just past three. What time is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"half past three","choices":["half past three","three o'clock","four o'clock","half past four"],"display":{"time":{"hour":3,"kind":"handsWords","minute":30},"clock":{"hour":3,"minute":30},"figure":"clockFace","promptText":"Here is the clock Mina sees. Which time is that?"}},
   },
   {
     itemId: "time-proc-b0821-0044",
@@ -12732,7 +12732,7 @@ export const ITEMS = [
     structureType: "handsToWordsHalf",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"half past four","choices":["half past four","five o'clock","four o'clock","half past five"],"display":{"time":{"hour":4,"kind":"handsWords","minute":30},"promptText":"Minute hand on the six, hour hand halfway past four. Which time is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"half past four","choices":["half past four","five o'clock","four o'clock","half past five"],"display":{"time":{"hour":4,"kind":"handsWords","minute":30},"clock":{"hour":4,"minute":30},"figure":"clockFace","promptText":"Look at Mina's clock. What time is it showing?"}},
   },
   {
     itemId: "time-proc-b0821-0045",
@@ -12742,7 +12742,7 @@ export const ITEMS = [
     structureType: "handsToWordsHalf",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"half past five","choices":["half past six","six o'clock","half past five","five o'clock"],"display":{"time":{"hour":5,"kind":"handsWords","minute":30},"promptText":"The minute hand points straight down at six, and the hour hand is just past five. What time is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"half past five","choices":["half past six","six o'clock","half past five","five o'clock"],"display":{"time":{"hour":5,"kind":"handsWords","minute":30},"clock":{"hour":5,"minute":30},"figure":"clockFace","promptText":"The clock by Mina's bed looks like this. What time does it show?"}},
   },
   {
     itemId: "time-proc-b0821-0046",
@@ -12752,7 +12752,7 @@ export const ITEMS = [
     structureType: "handsToWordsHalf",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"half past six","choices":["seven o'clock","half past six","six o'clock","half past seven"],"display":{"time":{"hour":6,"kind":"handsWords","minute":30},"promptText":"Minute hand on the six, hour hand halfway past six. Which time is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"half past six","choices":["seven o'clock","half past six","six o'clock","half past seven"],"display":{"time":{"hour":6,"kind":"handsWords","minute":30},"clock":{"hour":6,"minute":30},"figure":"clockFace","promptText":"Sam glances at this clock. What time does the clock show?"}},
   },
   {
     itemId: "time-proc-b0821-0047",
@@ -12762,7 +12762,7 @@ export const ITEMS = [
     structureType: "handsToWordsHalf",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"half past seven","choices":["half past seven","half past eight","eight o'clock","seven o'clock"],"display":{"time":{"hour":7,"kind":"handsWords","minute":30},"promptText":"The minute hand points straight down at six, and the hour hand is just past seven. What time is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"half past seven","choices":["half past seven","half past eight","eight o'clock","seven o'clock"],"display":{"time":{"hour":7,"kind":"handsWords","minute":30},"clock":{"hour":7,"minute":30},"figure":"clockFace","promptText":"Here is the clock Sam sees. Which time is that?"}},
   },
   {
     itemId: "time-proc-b0821-0048",
@@ -12772,7 +12772,7 @@ export const ITEMS = [
     structureType: "handsToWordsHalf",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"half past eight","choices":["half past nine","nine o'clock","eight o'clock","half past eight"],"display":{"time":{"hour":8,"kind":"handsWords","minute":30},"promptText":"Minute hand on the six, hour hand halfway past eight. Which time is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"half past eight","choices":["half past nine","nine o'clock","eight o'clock","half past eight"],"display":{"time":{"hour":8,"kind":"handsWords","minute":30},"clock":{"hour":8,"minute":30},"figure":"clockFace","promptText":"Look at Sam's clock. What time is it showing?"}},
   },
   {
     itemId: "time-proc-b0821-0049",
@@ -12782,7 +12782,7 @@ export const ITEMS = [
     structureType: "handsToWordsHalf",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"half past nine","choices":["ten o'clock","nine o'clock","half past nine","half past ten"],"display":{"time":{"hour":9,"kind":"handsWords","minute":30},"promptText":"The minute hand points straight down at six, and the hour hand is just past nine. What time is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"half past nine","choices":["ten o'clock","nine o'clock","half past nine","half past ten"],"display":{"time":{"hour":9,"kind":"handsWords","minute":30},"clock":{"hour":9,"minute":30},"figure":"clockFace","promptText":"The clock by Sam's bed looks like this. What time does it show?"}},
   },
   {
     itemId: "time-proc-b0821-0050",
@@ -12792,7 +12792,7 @@ export const ITEMS = [
     structureType: "handsToWordsHalf",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"half past ten","choices":["eleven o'clock","ten o'clock","half past ten","half past eleven"],"display":{"time":{"hour":10,"kind":"handsWords","minute":30},"promptText":"Minute hand on the six, hour hand halfway past ten. Which time is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"half past ten","choices":["eleven o'clock","ten o'clock","half past ten","half past eleven"],"display":{"time":{"hour":10,"kind":"handsWords","minute":30},"clock":{"hour":10,"minute":30},"figure":"clockFace","promptText":"Ava glances at this clock. What time does the clock show?"}},
   },
   {
     itemId: "time-proc-b0821-0051",
@@ -12802,7 +12802,7 @@ export const ITEMS = [
     structureType: "handsToWordsHalf",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"half past eleven","choices":["half past eleven","half past twelve","twelve o'clock","eleven o'clock"],"display":{"time":{"hour":11,"kind":"handsWords","minute":30},"promptText":"The minute hand points straight down at six, and the hour hand is just past eleven. What time is it?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"half past eleven","choices":["half past eleven","half past twelve","twelve o'clock","eleven o'clock"],"display":{"time":{"hour":11,"kind":"handsWords","minute":30},"clock":{"hour":11,"minute":30},"figure":"clockFace","promptText":"Here is the clock Ava sees. Which time is that?"}},
   },
   {
     itemId: "time-proc-b0821-0052",
@@ -12812,7 +12812,7 @@ export const ITEMS = [
     structureType: "handsToWordsHalf",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"half past twelve","choices":["twelve o'clock","half past one","one o'clock","half past twelve"],"display":{"time":{"hour":12,"kind":"handsWords","minute":30},"promptText":"Minute hand on the six, hour hand halfway past twelve. Which time is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"half past twelve","choices":["twelve o'clock","half past one","one o'clock","half past twelve"],"display":{"time":{"hour":12,"kind":"handsWords","minute":30},"clock":{"hour":12,"minute":30},"figure":"clockFace","promptText":"Look at Ava's clock. What time is it showing?"}},
   },
   {
     itemId: "time-proc-b0821-0053",

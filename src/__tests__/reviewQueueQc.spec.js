@@ -45,6 +45,55 @@ describe("review queue QC adapter", () => {
     expect(qc.findings.some((f) => f.id === "bandAppropriate")).toBe(true);
   });
 
+  it("fails a clock item that describes hand positions with no face", () => {
+    const qc = runChecksOnAdminItem(
+      adminItem({
+        itemId: "time-conc-x",
+        modeId: "time",
+        structureType: "judgeOclockRead",
+        itemFamily: "conceptual",
+        payload: {
+          a: null, b: null, op: "time", answer: "No", choices: ["Yes", "No"],
+          display: { promptText: "Rosa reads a clock with the hour hand on six and the minute hand on twelve as seven o'clock. Is that right?" },
+        },
+      })
+    );
+    expect(qc.pass).toBe(false);
+    expect(qc.findings.some((f) => f.id === "describedClockHands")).toBe(true);
+  });
+
+  it("passes the same claim when the clock face is shown", () => {
+    const qc = runChecksOnAdminItem(
+      adminItem({
+        itemId: "time-conc-y",
+        modeId: "time",
+        structureType: "judgeOclockRead",
+        itemFamily: "conceptual",
+        payload: {
+          a: null, b: null, op: "time", answer: "No", choices: ["Yes", "No"],
+          display: { figure: "clockFace", clock: { hour: 6, minute: 0 }, promptText: "Rosa reads this clock as seven o'clock. Is that right?" },
+        },
+      })
+    );
+    expect(qc.findings.some((f) => f.id === "describedClockHands")).toBe(false);
+  });
+
+  it("leaves hands-as-subject prompts alone", () => {
+    const qc = runChecksOnAdminItem(
+      adminItem({
+        itemId: "time-conc-z",
+        modeId: "time",
+        structureType: "whichHandHour",
+        itemFamily: "conceptual",
+        payload: {
+          a: null, b: null, op: "time", answer: "the short hand", choices: ["the short hand", "the long hand"],
+          display: { promptText: "Ava wants the hand that tells the HOUR. Which hand is it?" },
+        },
+      })
+    );
+    expect(qc.findings.some((f) => f.id === "describedClockHands")).toBe(false);
+  });
+
   it("flags a placeholder leak as a failure", () => {
     const qc = runChecksOnAdminItem(
       adminItem({ payload: { a: 2, b: 3, op: "+", answer: 5, display: { promptText: "{actor} has 2 and 3." } } })

@@ -106,6 +106,13 @@ Use the closest matching `structureType` when authoring an item:
   many?" with no figure states the answer. A counting prompt either carries a
   figure or asks something the words alone can't give away
   (`figurelessQuantity` check, severity fail).
+- Describing clock hands instead of showing the face: "the hour hand on six
+  and the minute hand on twelve" turns clock-reading into reading
+  comprehension — and a judged mismatch ("... as seven o'clock. Is that
+  right?") gives itself away in the text. A clock item shows the face
+  (`clockFace` figure or the clock widget) and asks for the time; words about
+  hands are only for items where the hands themselves are the subject
+  ("which hand tells the hour?") (`describedClockHands` check, severity fail).
 
 ## Required Item Fields
 

@@ -45884,7 +45884,12 @@ export const SEED_ITEMS = [
      "kind": "handsWords",
      "minute": 0
     },
-    "promptText": "Sam checks the clock before swim practice: the minute hand points at twelve and the hour hand at three. What time is it?"
+    "clock": {
+     "hour": 3,
+     "minute": 0
+    },
+    "figure": "clockFace",
+    "promptText": "Sam checks the clock before swim practice. What time does the clock show?"
    }
   }
  },
@@ -46581,8 +46586,13 @@ export const SEED_ITEMS = [
      "saidHour": 1,
      "saidMinute": 0
     },
+    "clock": {
+     "hour": 1,
+     "minute": 0
+    },
     "truth": true,
-    "promptText": "The minute hand points at twelve and the hour hand at one. Luca says it is one o'clock. Is Luca right?"
+    "figure": "clockFace",
+    "promptText": "Luca calls the time on this clock one o'clock. Do you agree?"
    }
   }
  },

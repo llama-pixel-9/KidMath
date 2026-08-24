@@ -8,9 +8,19 @@ to-the-minute + across-hour + spans.
 
 ## Rendering notes
 
-- Clock faces render via `answerType: "clock"` + `display {type:"clock",
-  hour, minute}` (`src/components/AnalogClock.jsx`); the child TYPES the
-  minutes past the hour — the minute value must never appear in the prompt.
+- Clock faces render two ways: `answerType: "clock"` + `display
+  {type:"clock", hour, minute}` (`src/components/AnalogClock.jsx`, interactive
+  — the child TYPES the minutes, so the minute value must never appear in the
+  prompt), and the read-only `display.figure: "clockFace"` +
+  `display.clock {hour, minute}` (`src/components/ClockFace.jsx`, question-side
+  figure for choice/judged reads; iOS mirror `ClockFaceView` in
+  `QuestionDisplayView.swift`).
+- **Never describe hand positions in words** ("the hour hand on six…") — that
+  turns clock-reading into reading comprehension, and a judged mismatch gives
+  itself away in the text (Sai, 2026-08-23). Show the face instead. Items
+  where the hands ARE the subject (`whichHandHour`, `handSwapJudge`,
+  `storyMinuteHand`) are the deliberate exception. Enforced as
+  `describedClockHands` (fail) in `src/itemBank/qc/checks.js`.
 - Elapsed answers are computed in absolute minutes, never by digit-wise
   clock subtraction (2:40→3:25 = 85 is the distractor, not the answer).
 - `selectVariety` keeps family subordinate to the band (leak fix) — don't
@@ -23,11 +33,11 @@ to-the-minute + across-hour + spans.
 ### procedural (auto-approved)
 
 **readClock** — `faceReadTeen` o'clock/half-past faces, worded stems ·
-`handsToWords(Half)` "hour hand on three, minute hand on twelve — what
-time?" · `faceReadFive`/`faceReadMinute` typed minute reads (stems rotated
-so (hour, stem) never repeats) · `wordsToDigital` "quarter past three" →
-3:15 · `digitalToWords` · `minutesToDigital` "23 minutes past 8 → which
-digital time?"
+`handsToWords(Half)` clockFace figure → which word time (name-salted stems;
+reworded from hands-in-words 2026-08-23) · `faceReadFive`/`faceReadMinute`
+typed minute reads (stems rotated so (hour, stem) never repeats) ·
+`wordsToDigital` "quarter past three" → 3:15 · `digitalToWords` ·
+`minutesToDigital` "23 minutes past 8 → which digital time?"
 
 **elapsedTime** — `wholeHoursTeen` "Start at two o'clock, finish at five
 o'clock. How many hours?" · `hourLaterTeen` word-time +N hours ·
@@ -95,6 +105,10 @@ due days · `storyCountdown_*` days-to-go · `storyWeeksDays`/
 
 - Band-1 prompts must be digital-free ("6:30" states 30 → hard fail); use
   o'clock/half past and hour words.
+- The 59 hands-in-words items (`handsToWords(Half)`, `judgeOclockRead`,
+  `storyHandsRead`) were reworded IN PLACE to clockFace-figure items
+  (same itemIds, batch b0821) — the sweep pattern lives in the commit log;
+  keep `display.time` kinds intact (authorTime verifier contract).
 - Clock-read prompts can't contain the minute (it's the typed answer) —
   uniqueness comes from (hour × stem) pairs, and stems must end in "?" or
   the answer-in-prompt check fires when hour == minute coincidences occur.

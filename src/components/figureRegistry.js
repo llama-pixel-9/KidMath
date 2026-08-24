@@ -3,6 +3,7 @@ import Pictograph from "./Pictograph.jsx";
 import TallyChart from "./TallyChart.jsx";
 import LinePlot from "./LinePlot.jsx";
 import AreaFigure from "./AreaFigure.jsx";
+import ClockFace from "./ClockFace.jsx";
 import CubeGrid from "./CubeGrid.jsx";
 import CoordGrid from "./CoordGrid.jsx";
 import { areaFigureSpec } from "./areaFigureSpec.js";
@@ -45,6 +46,13 @@ export const FIGURES = {
   areaFigure: {
     Component: AreaFigure,
     props: (q) => ({ spec: areaFigureSpec(q) }),
+  },
+  clockFace: {
+    Component: ClockFace,
+    props: (q) => ({
+      hour: q.display?.clock?.hour ?? q.display?.time?.hour,
+      minute: q.display?.clock?.minute ?? q.display?.time?.minute,
+    }),
   },
   cubeGrid: {
     Component: CubeGrid,

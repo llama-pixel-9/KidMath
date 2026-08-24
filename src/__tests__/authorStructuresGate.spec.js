@@ -166,7 +166,7 @@ describe("countMath verifies counting-bank claims that arithmetic skips", () => 
   const count = (counting, answer, extra = {}) => ({
     itemId: "x",
     modeId: "counting",
-    structureType: "setCount",
+    structureType: "countSet",
     itemFamily: "procedural",
     subskill: "cardinality",
     levelRange: [1, 3],

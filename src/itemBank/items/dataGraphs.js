@@ -16312,7 +16312,7 @@ export const ITEMS = [
     structureType: "pictoSymbolsTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"data":{"n":1,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means 1. How many pictures show 1?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"data":{"n":1,"key":1,"kind":"pictoSymbols"},"promptText":"Each picture means one. How many pictures show one thing?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-proc-b0821-0406",

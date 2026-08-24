@@ -27,9 +27,22 @@ const contractedModes = Object.keys(FIGURE_CONTRACTS);
 function generateAll(modeId) {
   const mode = modeRegistry[modeId];
   const top = mode.maxLevel ?? 10;
+  const per = FIGURE_CONTRACTS[modeId]?.specGenerations ?? 40;
   const out = [];
   for (let level = 1; level <= top; level += 1) {
-    for (let i = 0; i < 40; i += 1) out.push(mode.generate(level));
+    // half words-on, half words-off — some varieties only serve one way
+    for (let i = 0; i < per; i += 1) out.push(mode.generate(level, { allowWordProblems: i % 2 === 0 }));
+  }
+  // targetedOnly drills join the pool only under scheduled targeting — mirror
+  // that serving path so coverage reaches them.
+  for (const family of mode.families || []) {
+    for (const subskill of mode.subskills || []) {
+      for (let level = 1; level <= top; level += 3) {
+        for (let i = 0; i < 6; i += 1) {
+          out.push(mode.generate(level, { itemFamily: family, targetSubskill: subskill, allowWordProblems: i % 2 === 0 }));
+        }
+      }
+    }
   }
   return out;
 }

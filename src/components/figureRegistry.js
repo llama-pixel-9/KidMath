@@ -4,6 +4,7 @@ import TallyChart from "./TallyChart.jsx";
 import LinePlot from "./LinePlot.jsx";
 import AreaFigure from "./AreaFigure.jsx";
 import ClockFace from "./ClockFace.jsx";
+import DiscMat from "./DiscMat.jsx";
 import CubeGrid from "./CubeGrid.jsx";
 import CoordGrid from "./CoordGrid.jsx";
 import { areaFigureSpec } from "./areaFigureSpec.js";
@@ -46,6 +47,10 @@ export const FIGURES = {
   areaFigure: {
     Component: AreaFigure,
     props: (q) => ({ spec: areaFigureSpec(q) }),
+  },
+  discMat: {
+    Component: DiscMat,
+    props: (q) => ({ cols: q.display?.discMat?.cols, mats: q.display?.discMat?.mats }),
   },
   clockFace: {
     Component: ClockFace,

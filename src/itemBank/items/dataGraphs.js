@@ -2052,7 +2052,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"key":1,"sym":2,"kind":"pictoRead2"},"promptText":"Sam's reading chart gives one star picture for every 1 page read. The chart shows 2 stars. How many pages did Sam read?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"key":1,"sym":2,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":2}],"figure":"pictograph","keyValue":1,"promptText":"Each star picture on Sam's chart means 1 page. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0206",
@@ -2062,7 +2062,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"data":{"key":1,"sym":3,"kind":"pictoRead2"},"promptText":"Each flower picture on Mina's garden chart means 1 seed planted. With 3 flowers drawn, how many seeds is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"data":{"key":1,"sym":3,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"Each flower picture on Mina's chart means 1 seed. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0207",
@@ -2072,7 +2072,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"data":{"key":1,"sym":4,"kind":"pictoRead2"},"promptText":"Luca's chore chart pays 1 point per smiley picture. There are 4 smileys. How many points has Luca earned?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"data":{"key":1,"sym":4,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"Each smiley picture on Luca's chart means 1 point. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0208",
@@ -2082,7 +2082,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"key":1,"sym":5,"kind":"pictoRead2"},"promptText":"Nia's reading chart gives one star picture for every 1 page read. The chart shows 5 stars. How many pages did Nia read?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"key":1,"sym":5,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"Each star picture on Nia's chart means 1 page. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0209",
@@ -2092,7 +2092,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"data":{"key":1,"sym":6,"kind":"pictoRead2"},"promptText":"Each flower picture on Theo's garden chart means 1 seed planted. With 6 flowers drawn, how many seeds is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"data":{"key":1,"sym":6,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"Each flower picture on Theo's chart means 1 seed. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0210",
@@ -2102,7 +2102,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"key":1,"sym":7,"kind":"pictoRead2"},"promptText":"Ava's chore chart pays 1 point per smiley picture. There are 7 smileys. How many points has Ava earned?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"key":1,"sym":7,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"Each smiley picture on Ava's chart means 1 point. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0211",
@@ -2112,7 +2112,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"key":1,"sym":8,"kind":"pictoRead2"},"promptText":"Kai's reading chart gives one star picture for every 1 page read. The chart shows 8 stars. How many pages did Kai read?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"key":1,"sym":8,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":8}],"figure":"pictograph","keyValue":1,"promptText":"Each star picture on Kai's chart means 1 page. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0212",
@@ -2122,7 +2122,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"key":1,"sym":9,"kind":"pictoRead2"},"promptText":"Each flower picture on Ida's garden chart means 1 seed planted. With 9 flowers drawn, how many seeds is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"key":1,"sym":9,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":9}],"figure":"pictograph","keyValue":1,"promptText":"Each flower picture on Ida's chart means 1 seed. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0213",
@@ -2132,7 +2132,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"key":1,"sym":10,"kind":"pictoRead2"},"promptText":"Omar's chore chart pays 1 point per smiley picture. There are 10 smileys. How many points has Omar earned?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"key":1,"sym":10,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":10}],"figure":"pictograph","keyValue":1,"promptText":"Each smiley picture on Omar's chart means 1 point. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0214",
@@ -2142,7 +2142,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"key":1,"sym":2,"kind":"pictoRead2"},"promptText":"June's reading chart gives one star picture for every 1 page read. The chart shows 2 stars. How many pages did June read?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"data":{"key":1,"sym":2,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":2}],"figure":"pictograph","keyValue":1,"promptText":"Each star picture on June's chart means 1 page. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0215",
@@ -2152,7 +2152,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"data":{"key":1,"sym":3,"kind":"pictoRead2"},"promptText":"Each flower picture on Zoe's garden chart means 1 seed planted. With 3 flowers drawn, how many seeds is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"data":{"key":1,"sym":3,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"Each flower picture on Zoe's chart means 1 seed. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0216",
@@ -2162,7 +2162,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"data":{"key":1,"sym":4,"kind":"pictoRead2"},"promptText":"Ben's chore chart pays 1 point per smiley picture. There are 4 smileys. How many points has Ben earned?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"data":{"key":1,"sym":4,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"Each smiley picture on Ben's chart means 1 point. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0217",
@@ -2172,7 +2172,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"key":1,"sym":5,"kind":"pictoRead2"},"promptText":"Lily's reading chart gives one star picture for every 1 page read. The chart shows 5 stars. How many pages did Lily read?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"data":{"key":1,"sym":5,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"Each star picture on Lily's chart means 1 page. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0218",
@@ -2182,7 +2182,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"data":{"key":1,"sym":6,"kind":"pictoRead2"},"promptText":"Each flower picture on Rosa's garden chart means 1 seed planted. With 6 flowers drawn, how many seeds is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"data":{"key":1,"sym":6,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"Each flower picture on Rosa's chart means 1 seed. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0219",
@@ -2192,7 +2192,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"key":1,"sym":7,"kind":"pictoRead2"},"promptText":"Finn's chore chart pays 1 point per smiley picture. There are 7 smileys. How many points has Finn earned?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"key":1,"sym":7,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"Each smiley picture on Finn's chart means 1 point. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0220",
@@ -2202,7 +2202,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"key":1,"sym":8,"kind":"pictoRead2"},"promptText":"Amara's reading chart gives one star picture for every 1 page read. The chart shows 8 stars. How many pages did Amara read?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"key":1,"sym":8,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":8}],"figure":"pictograph","keyValue":1,"promptText":"Each star picture on Amara's chart means 1 page. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0221",
@@ -2212,7 +2212,7 @@ export const ITEMS = [
     structureType: "storySticker_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"key":1,"sym":9,"kind":"pictoRead2"},"promptText":"Each flower picture on Diego's garden chart means 1 seed planted. With 9 flowers drawn, how many seeds is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"key":1,"sym":9,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":9}],"figure":"pictograph","keyValue":1,"promptText":"Each flower picture on Diego's chart means 1 seed. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0222",
@@ -2222,7 +2222,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"key":5,"sym":2,"kind":"pictoRead2"},"promptText":"Each flower picture on Ida's garden chart means 5 seeds planted. With 2 flowers drawn, how many seeds is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"key":5,"sym":2,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":2}],"figure":"pictograph","keyValue":5,"promptText":"Each flower picture on Ida's chart means 5 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0223",
@@ -2232,7 +2232,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"data":{"key":5,"sym":3,"kind":"pictoRead2"},"promptText":"Omar's chore chart pays 5 points per smiley picture. There are 3 smileys. How many points has Omar earned?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"data":{"key":5,"sym":3,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":3}],"figure":"pictograph","keyValue":5,"promptText":"Each smiley picture on Omar's chart means 5 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0224",
@@ -2242,7 +2242,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"data":{"key":5,"sym":4,"kind":"pictoRead2"},"promptText":"June's reading chart gives one star picture for every 5 pages read. The chart shows 4 stars. How many pages did June read?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"data":{"key":5,"sym":4,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":4}],"figure":"pictograph","keyValue":5,"promptText":"Each star picture on June's chart means 5 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0225",
@@ -2252,7 +2252,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"data":{"key":5,"sym":5,"kind":"pictoRead2"},"promptText":"Each flower picture on Zoe's garden chart means 5 seeds planted. With 5 flowers drawn, how many seeds is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"data":{"key":5,"sym":5,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":5}],"figure":"pictograph","keyValue":5,"promptText":"Each flower picture on Zoe's chart means 5 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0226",
@@ -2262,7 +2262,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"data":{"key":5,"sym":6,"kind":"pictoRead2"},"promptText":"Ben's chore chart pays 5 points per smiley picture. There are 6 smileys. How many points has Ben earned?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"data":{"key":5,"sym":6,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":6}],"figure":"pictograph","keyValue":5,"promptText":"Each smiley picture on Ben's chart means 5 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0227",
@@ -2272,7 +2272,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"data":{"key":5,"sym":7,"kind":"pictoRead2"},"promptText":"Lily's reading chart gives one star picture for every 5 pages read. The chart shows 7 stars. How many pages did Lily read?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"data":{"key":5,"sym":7,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":7}],"figure":"pictograph","keyValue":5,"promptText":"Each star picture on Lily's chart means 5 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0228",
@@ -2282,7 +2282,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"data":{"key":5,"sym":8,"kind":"pictoRead2"},"promptText":"Each flower picture on Rosa's garden chart means 5 seeds planted. With 8 flowers drawn, how many seeds is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"data":{"key":5,"sym":8,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":8}],"figure":"pictograph","keyValue":5,"promptText":"Each flower picture on Rosa's chart means 5 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0229",
@@ -2292,7 +2292,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"data":{"key":5,"sym":9,"kind":"pictoRead2"},"promptText":"Finn's chore chart pays 5 points per smiley picture. There are 9 smileys. How many points has Finn earned?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"data":{"key":5,"sym":9,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":9}],"figure":"pictograph","keyValue":5,"promptText":"Each smiley picture on Finn's chart means 5 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0230",
@@ -2302,7 +2302,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"data":{"key":5,"sym":10,"kind":"pictoRead2"},"promptText":"Amara's reading chart gives one star picture for every 5 pages read. The chart shows 10 stars. How many pages did Amara read?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"data":{"key":5,"sym":10,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":10}],"figure":"pictograph","keyValue":5,"promptText":"Each star picture on Amara's chart means 5 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0231",
@@ -2312,7 +2312,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"data":{"key":5,"sym":11,"kind":"pictoRead2"},"promptText":"Each flower picture on Diego's garden chart means 5 seeds planted. With 11 flowers drawn, how many seeds is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"data":{"key":5,"sym":11,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":11}],"figure":"pictograph","keyValue":5,"promptText":"Each flower picture on Diego's chart means 5 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0232",
@@ -2322,7 +2322,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"data":{"key":5,"sym":12,"kind":"pictoRead2"},"promptText":"Priya's chore chart pays 5 points per smiley picture. There are 12 smileys. How many points has Priya earned?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"data":{"key":5,"sym":12,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":12}],"figure":"pictograph","keyValue":5,"promptText":"Each smiley picture on Priya's chart means 5 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0233",
@@ -2332,7 +2332,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"key":5,"sym":2,"kind":"pictoRead2"},"promptText":"Leo's reading chart gives one star picture for every 5 pages read. The chart shows 2 stars. How many pages did Leo read?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"key":5,"sym":2,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":2}],"figure":"pictograph","keyValue":5,"promptText":"Each star picture on Leo's chart means 5 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0234",
@@ -2342,7 +2342,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"data":{"key":5,"sym":3,"kind":"pictoRead2"},"promptText":"Each flower picture on Nora's garden chart means 5 seeds planted. With 3 flowers drawn, how many seeds is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"data":{"key":5,"sym":3,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":3}],"figure":"pictograph","keyValue":5,"promptText":"Each flower picture on Nora's chart means 5 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0235",
@@ -2352,7 +2352,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"data":{"key":5,"sym":4,"kind":"pictoRead2"},"promptText":"Sam's chore chart pays 5 points per smiley picture. There are 4 smileys. How many points has Sam earned?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"data":{"key":5,"sym":4,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":4}],"figure":"pictograph","keyValue":5,"promptText":"Each smiley picture on Sam's chart means 5 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0236",
@@ -2362,7 +2362,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"data":{"key":5,"sym":5,"kind":"pictoRead2"},"promptText":"Mina's reading chart gives one star picture for every 5 pages read. The chart shows 5 stars. How many pages did Mina read?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":25,"display":{"data":{"key":5,"sym":5,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":5}],"figure":"pictograph","keyValue":5,"promptText":"Each star picture on Mina's chart means 5 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0237",
@@ -2372,7 +2372,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"data":{"key":5,"sym":6,"kind":"pictoRead2"},"promptText":"Each flower picture on Luca's garden chart means 5 seeds planted. With 6 flowers drawn, how many seeds is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"data":{"key":5,"sym":6,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":6}],"figure":"pictograph","keyValue":5,"promptText":"Each flower picture on Luca's chart means 5 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0238",
@@ -2382,7 +2382,7 @@ export const ITEMS = [
     structureType: "storySticker_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"data":{"key":5,"sym":7,"kind":"pictoRead2"},"promptText":"Nia's chore chart pays 5 points per smiley picture. There are 7 smileys. How many points has Nia earned?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"data":{"key":5,"sym":7,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":7}],"figure":"pictograph","keyValue":5,"promptText":"Each smiley picture on Nia's chart means 5 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0239",
@@ -2392,7 +2392,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"data":{"key":10,"sym":2,"kind":"pictoRead2"},"promptText":"Rosa's chore chart pays 10 points per smiley picture. There are 2 smileys. How many points has Rosa earned?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"data":{"key":10,"sym":2,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":2}],"figure":"pictograph","keyValue":10,"promptText":"Each smiley picture on Rosa's chart means 10 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0240",
@@ -2402,7 +2402,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"data":{"key":10,"sym":3,"kind":"pictoRead2"},"promptText":"Finn's reading chart gives one star picture for every 10 pages read. The chart shows 3 stars. How many pages did Finn read?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"data":{"key":10,"sym":3,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":3}],"figure":"pictograph","keyValue":10,"promptText":"Each star picture on Finn's chart means 10 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0241",
@@ -2412,7 +2412,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"data":{"key":10,"sym":4,"kind":"pictoRead2"},"promptText":"Each flower picture on Amara's garden chart means 10 seeds planted. With 4 flowers drawn, how many seeds is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"data":{"key":10,"sym":4,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":4}],"figure":"pictograph","keyValue":10,"promptText":"Each flower picture on Amara's chart means 10 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0242",
@@ -2422,7 +2422,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"data":{"key":10,"sym":5,"kind":"pictoRead2"},"promptText":"Diego's chore chart pays 10 points per smiley picture. There are 5 smileys. How many points has Diego earned?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"data":{"key":10,"sym":5,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":5}],"figure":"pictograph","keyValue":10,"promptText":"Each smiley picture on Diego's chart means 10 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0243",
@@ -2432,7 +2432,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"data":{"key":10,"sym":6,"kind":"pictoRead2"},"promptText":"Priya's reading chart gives one star picture for every 10 pages read. The chart shows 6 stars. How many pages did Priya read?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"data":{"key":10,"sym":6,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":6}],"figure":"pictograph","keyValue":10,"promptText":"Each star picture on Priya's chart means 10 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0244",
@@ -2442,7 +2442,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"data":{"key":10,"sym":7,"kind":"pictoRead2"},"promptText":"Each flower picture on Leo's garden chart means 10 seeds planted. With 7 flowers drawn, how many seeds is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"data":{"key":10,"sym":7,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":7}],"figure":"pictograph","keyValue":10,"promptText":"Each flower picture on Leo's chart means 10 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0245",
@@ -2452,7 +2452,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"data":{"key":10,"sym":8,"kind":"pictoRead2"},"promptText":"Nora's chore chart pays 10 points per smiley picture. There are 8 smileys. How many points has Nora earned?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"data":{"key":10,"sym":8,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":8}],"figure":"pictograph","keyValue":10,"promptText":"Each smiley picture on Nora's chart means 10 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0246",
@@ -2462,7 +2462,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"data":{"key":10,"sym":9,"kind":"pictoRead2"},"promptText":"Sam's reading chart gives one star picture for every 10 pages read. The chart shows 9 stars. How many pages did Sam read?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"data":{"key":10,"sym":9,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":9}],"figure":"pictograph","keyValue":10,"promptText":"Each star picture on Sam's chart means 10 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0247",
@@ -2472,7 +2472,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"data":{"key":10,"sym":10,"kind":"pictoRead2"},"promptText":"Each flower picture on Mina's garden chart means 10 seeds planted. With 10 flowers drawn, how many seeds is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"data":{"key":10,"sym":10,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":10}],"figure":"pictograph","keyValue":10,"promptText":"Each flower picture on Mina's chart means 10 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0248",
@@ -2482,7 +2482,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"data":{"key":10,"sym":11,"kind":"pictoRead2"},"promptText":"Luca's chore chart pays 10 points per smiley picture. There are 11 smileys. How many points has Luca earned?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"data":{"key":10,"sym":11,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":11}],"figure":"pictograph","keyValue":10,"promptText":"Each smiley picture on Luca's chart means 10 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0249",
@@ -2492,7 +2492,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"data":{"key":10,"sym":12,"kind":"pictoRead2"},"promptText":"Nia's reading chart gives one star picture for every 10 pages read. The chart shows 12 stars. How many pages did Nia read?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":120,"display":{"data":{"key":10,"sym":12,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":12}],"figure":"pictograph","keyValue":10,"promptText":"Each star picture on Nia's chart means 10 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0250",
@@ -2502,7 +2502,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":130,"display":{"data":{"key":10,"sym":13,"kind":"pictoRead2"},"promptText":"Each flower picture on Theo's garden chart means 10 seeds planted. With 13 flowers drawn, how many seeds is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":130,"display":{"data":{"key":10,"sym":13,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":13}],"figure":"pictograph","keyValue":10,"promptText":"Each flower picture on Theo's chart means 10 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0251",
@@ -2512,7 +2512,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":140,"display":{"data":{"key":10,"sym":14,"kind":"pictoRead2"},"promptText":"Ava's chore chart pays 10 points per smiley picture. There are 14 smileys. How many points has Ava earned?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":140,"display":{"data":{"key":10,"sym":14,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":14}],"figure":"pictograph","keyValue":10,"promptText":"Each smiley picture on Ava's chart means 10 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0252",
@@ -2522,7 +2522,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"data":{"key":10,"sym":15,"kind":"pictoRead2"},"promptText":"Kai's reading chart gives one star picture for every 10 pages read. The chart shows 15 stars. How many pages did Kai read?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":150,"display":{"data":{"key":10,"sym":15,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":15}],"figure":"pictograph","keyValue":10,"promptText":"Each star picture on Kai's chart means 10 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0253",
@@ -2532,7 +2532,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":160,"display":{"data":{"key":10,"sym":16,"kind":"pictoRead2"},"promptText":"Each flower picture on Ida's garden chart means 10 seeds planted. With 16 flowers drawn, how many seeds is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":160,"display":{"data":{"key":10,"sym":16,"kind":"pictoRead2"},"rows":[{"label":"Flowers","symbols":16}],"figure":"pictograph","keyValue":10,"promptText":"Each flower picture on Ida's chart means 10 seeds. How many seeds does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0254",
@@ -2542,7 +2542,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":170,"display":{"data":{"key":10,"sym":17,"kind":"pictoRead2"},"promptText":"Omar's chore chart pays 10 points per smiley picture. There are 17 smileys. How many points has Omar earned?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":170,"display":{"data":{"key":10,"sym":17,"kind":"pictoRead2"},"rows":[{"label":"Smileys","symbols":17}],"figure":"pictograph","keyValue":10,"promptText":"Each smiley picture on Omar's chart means 10 points. How many points does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0255",
@@ -2552,7 +2552,7 @@ export const ITEMS = [
     structureType: "storySticker_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"data":{"key":10,"sym":18,"kind":"pictoRead2"},"promptText":"June's reading chart gives one star picture for every 10 pages read. The chart shows 18 stars. How many pages did June read?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":180,"display":{"data":{"key":10,"sym":18,"kind":"pictoRead2"},"rows":[{"label":"Stars","symbols":18}],"figure":"pictograph","keyValue":10,"promptText":"Each star picture on June's chart means 10 pages. How many pages does this chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0256",
@@ -5622,7 +5622,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"s1":2,"s2":5,"key":1,"kind":"pictoTotal2"},"promptText":"Nora's two-row picture chart shows 2 pictures on top and 5 below, each worth 1. What total does the chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"s1":2,"s2":5,"key":1,"kind":"pictoTotal2"},"rows":[{"label":"Book A","symbols":2},{"label":"Book B","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"Read Nora's picture chart. How much do the two rows show in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0563",
@@ -5632,7 +5632,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"s1":3,"s2":4,"key":1,"kind":"pictoTotal2"},"promptText":"With a key of 1, Sam draws 3 pictures in one row and 4 in the other. How much do both rows show together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":7,"display":{"data":{"s1":3,"s2":4,"key":1,"kind":"pictoTotal2"},"rows":[{"label":"Shell A","symbols":3},{"label":"Shell B","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"Sam's picture chart has two rows. How much do both rows show together?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0564",
@@ -5642,7 +5642,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"s1":4,"s2":6,"key":1,"kind":"pictoTotal2"},"promptText":"Each of the 4 + 6 pictures on Mina's chart stands for 1. What is the chart's total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"s1":4,"s2":6,"key":1,"kind":"pictoTotal2"},"rows":[{"label":"Leave A","symbols":4},{"label":"Leave B","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"Here is Mina's two-row picture chart. What total does the chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0565",
@@ -5652,7 +5652,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"s1":2,"s2":7,"key":1,"kind":"pictoTotal2"},"promptText":"Luca's two-row picture chart shows 2 pictures on top and 7 below, each worth 1. What total does the chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"s1":2,"s2":7,"key":1,"kind":"pictoTotal2"},"rows":[{"label":"Coin A","symbols":2},{"label":"Coin B","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"Both rows of Luca's picture chart count toward one total. How much is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0566",
@@ -5662,7 +5662,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"s1":5,"s2":3,"key":1,"kind":"pictoTotal2"},"promptText":"With a key of 1, Nia draws 5 pictures in one row and 3 in the other. How much do both rows show together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"s1":5,"s2":3,"key":1,"kind":"pictoTotal2"},"rows":[{"label":"Card A","symbols":5},{"label":"Card B","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"Read Nia's picture chart. How much do the two rows show in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0567",
@@ -5672,7 +5672,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"s1":6,"s2":2,"key":1,"kind":"pictoTotal2"},"promptText":"Each of the 6 + 2 pictures on Theo's chart stands for 1. What is the chart's total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"s1":6,"s2":2,"key":1,"kind":"pictoTotal2"},"rows":[{"label":"Sticker A","symbols":6},{"label":"Sticker B","symbols":2}],"figure":"pictograph","keyValue":1,"promptText":"Theo's picture chart has two rows. How much do both rows show together?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0568",
@@ -5682,7 +5682,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"s1":3,"s2":7,"key":1,"kind":"pictoTotal2"},"promptText":"Ava's two-row picture chart shows 3 pictures on top and 7 below, each worth 1. What total does the chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"s1":3,"s2":7,"key":1,"kind":"pictoTotal2"},"rows":[{"label":"Star A","symbols":3},{"label":"Star B","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"Here is Ava's two-row picture chart. What total does the chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0569",
@@ -5692,7 +5692,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"s1":4,"s2":5,"key":1,"kind":"pictoTotal2"},"promptText":"With a key of 1, Kai draws 4 pictures in one row and 5 in the other. How much do both rows show together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"s1":4,"s2":5,"key":1,"kind":"pictoTotal2"},"rows":[{"label":"Apple A","symbols":4},{"label":"Apple B","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"Both rows of Kai's picture chart count toward one total. How much is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0570",
@@ -5702,7 +5702,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"s1":2,"s2":6,"key":1,"kind":"pictoTotal2"},"promptText":"Each of the 2 + 6 pictures on Ida's chart stands for 1. What is the chart's total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"s1":2,"s2":6,"key":1,"kind":"pictoTotal2"},"rows":[{"label":"Book A","symbols":2},{"label":"Book B","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"Read Ida's picture chart. How much do the two rows show in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0571",
@@ -5712,7 +5712,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"s1":5,"s2":4,"key":1,"kind":"pictoTotal2"},"promptText":"Omar's two-row picture chart shows 5 pictures on top and 4 below, each worth 1. What total does the chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"s1":5,"s2":4,"key":1,"kind":"pictoTotal2"},"rows":[{"label":"Shell A","symbols":5},{"label":"Shell B","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"Omar's picture chart has two rows. How much do both rows show together?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0572",
@@ -5722,7 +5722,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"s1":6,"s2":3,"key":1,"kind":"pictoTotal2"},"promptText":"With a key of 1, June draws 6 pictures in one row and 3 in the other. How much do both rows show together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"s1":6,"s2":3,"key":1,"kind":"pictoTotal2"},"rows":[{"label":"Leave A","symbols":6},{"label":"Leave B","symbols":3}],"figure":"pictograph","keyValue":1,"promptText":"Here is June's two-row picture chart. What total does the chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0573",
@@ -5732,7 +5732,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"s1":3,"s2":5,"key":1,"kind":"pictoTotal2"},"promptText":"Each of the 3 + 5 pictures on Zoe's chart stands for 1. What is the chart's total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"data":{"s1":3,"s2":5,"key":1,"kind":"pictoTotal2"},"rows":[{"label":"Coin A","symbols":3},{"label":"Coin B","symbols":5}],"figure":"pictograph","keyValue":1,"promptText":"Both rows of Zoe's picture chart count toward one total. How much is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0574",
@@ -5742,7 +5742,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"data":{"s1":4,"s2":7,"key":1,"kind":"pictoTotal2"},"promptText":"Ben's two-row picture chart shows 4 pictures on top and 7 below, each worth 1. What total does the chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"data":{"s1":4,"s2":7,"key":1,"kind":"pictoTotal2"},"rows":[{"label":"Card A","symbols":4},{"label":"Card B","symbols":7}],"figure":"pictograph","keyValue":1,"promptText":"Read Ben's picture chart. How much do the two rows show in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0575",
@@ -5752,7 +5752,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"data":{"s1":2,"s2":4,"key":1,"kind":"pictoTotal2"},"promptText":"With a key of 1, Lily draws 2 pictures in one row and 4 in the other. How much do both rows show together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"data":{"s1":2,"s2":4,"key":1,"kind":"pictoTotal2"},"rows":[{"label":"Sticker A","symbols":2},{"label":"Sticker B","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"Lily's picture chart has two rows. How much do both rows show together?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0576",
@@ -5762,7 +5762,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"data":{"s1":5,"s2":6,"key":1,"kind":"pictoTotal2"},"promptText":"Each of the 5 + 6 pictures on Rosa's chart stands for 1. What is the chart's total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":11,"display":{"data":{"s1":5,"s2":6,"key":1,"kind":"pictoTotal2"},"rows":[{"label":"Star A","symbols":5},{"label":"Star B","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"Here is Rosa's two-row picture chart. What total does the chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0577",
@@ -5772,7 +5772,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"s1":6,"s2":4,"key":1,"kind":"pictoTotal2"},"promptText":"Finn's two-row picture chart shows 6 pictures on top and 4 below, each worth 1. What total does the chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"data":{"s1":6,"s2":4,"key":1,"kind":"pictoTotal2"},"rows":[{"label":"Apple A","symbols":6},{"label":"Apple B","symbols":4}],"figure":"pictograph","keyValue":1,"promptText":"Both rows of Finn's picture chart count toward one total. How much is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0578",
@@ -5782,7 +5782,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"s1":3,"s2":6,"key":1,"kind":"pictoTotal2"},"promptText":"With a key of 1, Amara draws 3 pictures in one row and 6 in the other. How much do both rows show together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"data":{"s1":3,"s2":6,"key":1,"kind":"pictoTotal2"},"rows":[{"label":"Book A","symbols":3},{"label":"Book B","symbols":6}],"figure":"pictograph","keyValue":1,"promptText":"Read Amara's picture chart. How much do the two rows show in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0579",
@@ -5792,7 +5792,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"data":{"s1":2,"s2":5,"key":5,"kind":"pictoTotal2"},"promptText":"With a key of 5, Kai draws 2 pictures in one row and 5 in the other. How much do both rows show together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"data":{"s1":2,"s2":5,"key":5,"kind":"pictoTotal2"},"rows":[{"label":"Shell A","symbols":2},{"label":"Shell B","symbols":5}],"figure":"pictograph","keyValue":5,"promptText":"Kai's picture chart has two rows. How much do both rows show together?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0580",
@@ -5802,7 +5802,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"data":{"s1":3,"s2":4,"key":5,"kind":"pictoTotal2"},"promptText":"Each of the 3 + 4 pictures on Ida's chart stands for 5. What is the chart's total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":35,"display":{"data":{"s1":3,"s2":4,"key":5,"kind":"pictoTotal2"},"rows":[{"label":"Leave A","symbols":3},{"label":"Leave B","symbols":4}],"figure":"pictograph","keyValue":5,"promptText":"Here is Ida's two-row picture chart. What total does the chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0581",
@@ -5812,7 +5812,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"data":{"s1":4,"s2":6,"key":5,"kind":"pictoTotal2"},"promptText":"Omar's two-row picture chart shows 4 pictures on top and 6 below, each worth 5. What total does the chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"data":{"s1":4,"s2":6,"key":5,"kind":"pictoTotal2"},"rows":[{"label":"Coin A","symbols":4},{"label":"Coin B","symbols":6}],"figure":"pictograph","keyValue":5,"promptText":"Both rows of Omar's picture chart count toward one total. How much is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0582",
@@ -5822,7 +5822,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"data":{"s1":2,"s2":7,"key":5,"kind":"pictoTotal2"},"promptText":"With a key of 5, June draws 2 pictures in one row and 7 in the other. How much do both rows show together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"data":{"s1":2,"s2":7,"key":5,"kind":"pictoTotal2"},"rows":[{"label":"Card A","symbols":2},{"label":"Card B","symbols":7}],"figure":"pictograph","keyValue":5,"promptText":"Read June's picture chart. How much do the two rows show in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0583",
@@ -5832,7 +5832,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"data":{"s1":5,"s2":3,"key":5,"kind":"pictoTotal2"},"promptText":"Each of the 5 + 3 pictures on Zoe's chart stands for 5. What is the chart's total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"data":{"s1":5,"s2":3,"key":5,"kind":"pictoTotal2"},"rows":[{"label":"Sticker A","symbols":5},{"label":"Sticker B","symbols":3}],"figure":"pictograph","keyValue":5,"promptText":"Zoe's picture chart has two rows. How much do both rows show together?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0584",
@@ -5842,7 +5842,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"data":{"s1":6,"s2":2,"key":5,"kind":"pictoTotal2"},"promptText":"Ben's two-row picture chart shows 6 pictures on top and 2 below, each worth 5. What total does the chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"data":{"s1":6,"s2":2,"key":5,"kind":"pictoTotal2"},"rows":[{"label":"Star A","symbols":6},{"label":"Star B","symbols":2}],"figure":"pictograph","keyValue":5,"promptText":"Here is Ben's two-row picture chart. What total does the chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0585",
@@ -5852,7 +5852,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"data":{"s1":3,"s2":7,"key":5,"kind":"pictoTotal2"},"promptText":"With a key of 5, Lily draws 3 pictures in one row and 7 in the other. How much do both rows show together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"data":{"s1":3,"s2":7,"key":5,"kind":"pictoTotal2"},"rows":[{"label":"Apple A","symbols":3},{"label":"Apple B","symbols":7}],"figure":"pictograph","keyValue":5,"promptText":"Both rows of Lily's picture chart count toward one total. How much is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0586",
@@ -5862,7 +5862,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"data":{"s1":4,"s2":5,"key":5,"kind":"pictoTotal2"},"promptText":"Each of the 4 + 5 pictures on Rosa's chart stands for 5. What is the chart's total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"data":{"s1":4,"s2":5,"key":5,"kind":"pictoTotal2"},"rows":[{"label":"Book A","symbols":4},{"label":"Book B","symbols":5}],"figure":"pictograph","keyValue":5,"promptText":"Read Rosa's picture chart. How much do the two rows show in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0587",
@@ -5872,7 +5872,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"data":{"s1":2,"s2":6,"key":5,"kind":"pictoTotal2"},"promptText":"Finn's two-row picture chart shows 2 pictures on top and 6 below, each worth 5. What total does the chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"data":{"s1":2,"s2":6,"key":5,"kind":"pictoTotal2"},"rows":[{"label":"Shell A","symbols":2},{"label":"Shell B","symbols":6}],"figure":"pictograph","keyValue":5,"promptText":"Finn's picture chart has two rows. How much do both rows show together?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0588",
@@ -5882,7 +5882,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"data":{"s1":5,"s2":4,"key":5,"kind":"pictoTotal2"},"promptText":"With a key of 5, Amara draws 5 pictures in one row and 4 in the other. How much do both rows show together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"data":{"s1":5,"s2":4,"key":5,"kind":"pictoTotal2"},"rows":[{"label":"Leave A","symbols":5},{"label":"Leave B","symbols":4}],"figure":"pictograph","keyValue":5,"promptText":"Here is Amara's two-row picture chart. What total does the chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0589",
@@ -5892,7 +5892,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"data":{"s1":6,"s2":3,"key":5,"kind":"pictoTotal2"},"promptText":"Each of the 6 + 3 pictures on Diego's chart stands for 5. What is the chart's total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"data":{"s1":6,"s2":3,"key":5,"kind":"pictoTotal2"},"rows":[{"label":"Coin A","symbols":6},{"label":"Coin B","symbols":3}],"figure":"pictograph","keyValue":5,"promptText":"Both rows of Diego's picture chart count toward one total. How much is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0590",
@@ -5902,7 +5902,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"data":{"s1":3,"s2":5,"key":5,"kind":"pictoTotal2"},"promptText":"Priya's two-row picture chart shows 3 pictures on top and 5 below, each worth 5. What total does the chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":40,"display":{"data":{"s1":3,"s2":5,"key":5,"kind":"pictoTotal2"},"rows":[{"label":"Card A","symbols":3},{"label":"Card B","symbols":5}],"figure":"pictograph","keyValue":5,"promptText":"Read Priya's picture chart. How much do the two rows show in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0591",
@@ -5912,7 +5912,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"data":{"s1":4,"s2":7,"key":5,"kind":"pictoTotal2"},"promptText":"With a key of 5, Leo draws 4 pictures in one row and 7 in the other. How much do both rows show together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"data":{"s1":4,"s2":7,"key":5,"kind":"pictoTotal2"},"rows":[{"label":"Sticker A","symbols":4},{"label":"Sticker B","symbols":7}],"figure":"pictograph","keyValue":5,"promptText":"Leo's picture chart has two rows. How much do both rows show together?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0592",
@@ -5922,7 +5922,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"data":{"s1":2,"s2":4,"key":5,"kind":"pictoTotal2"},"promptText":"Each of the 2 + 4 pictures on Nora's chart stands for 5. What is the chart's total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":30,"display":{"data":{"s1":2,"s2":4,"key":5,"kind":"pictoTotal2"},"rows":[{"label":"Star A","symbols":2},{"label":"Star B","symbols":4}],"figure":"pictograph","keyValue":5,"promptText":"Here is Nora's two-row picture chart. What total does the chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0593",
@@ -5932,7 +5932,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"data":{"s1":5,"s2":6,"key":5,"kind":"pictoTotal2"},"promptText":"Sam's two-row picture chart shows 5 pictures on top and 6 below, each worth 5. What total does the chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":55,"display":{"data":{"s1":5,"s2":6,"key":5,"kind":"pictoTotal2"},"rows":[{"label":"Apple A","symbols":5},{"label":"Apple B","symbols":6}],"figure":"pictograph","keyValue":5,"promptText":"Both rows of Sam's picture chart count toward one total. How much is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0594",
@@ -5942,7 +5942,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"data":{"s1":6,"s2":4,"key":5,"kind":"pictoTotal2"},"promptText":"With a key of 5, Mina draws 6 pictures in one row and 4 in the other. How much do both rows show together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":50,"display":{"data":{"s1":6,"s2":4,"key":5,"kind":"pictoTotal2"},"rows":[{"label":"Book A","symbols":6},{"label":"Book B","symbols":4}],"figure":"pictograph","keyValue":5,"promptText":"Read Mina's picture chart. How much do the two rows show in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0595",
@@ -5952,7 +5952,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"data":{"s1":3,"s2":6,"key":5,"kind":"pictoTotal2"},"promptText":"Each of the 3 + 6 pictures on Luca's chart stands for 5. What is the chart's total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":45,"display":{"data":{"s1":3,"s2":6,"key":5,"kind":"pictoTotal2"},"rows":[{"label":"Shell A","symbols":3},{"label":"Shell B","symbols":6}],"figure":"pictograph","keyValue":5,"promptText":"Luca's picture chart has two rows. How much do both rows show together?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0596",
@@ -5962,7 +5962,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"data":{"s1":2,"s2":5,"key":10,"kind":"pictoTotal2"},"promptText":"Each of the 2 + 5 pictures on Rosa's chart stands for 10. What is the chart's total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"data":{"s1":2,"s2":5,"key":10,"kind":"pictoTotal2"},"rows":[{"label":"Shell A","symbols":2},{"label":"Shell B","symbols":5}],"figure":"pictograph","keyValue":10,"promptText":"Rosa's picture chart has two rows. How much do both rows show together?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0597",
@@ -5972,7 +5972,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"data":{"s1":3,"s2":4,"key":10,"kind":"pictoTotal2"},"promptText":"Finn's two-row picture chart shows 3 pictures on top and 4 below, each worth 10. What total does the chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":70,"display":{"data":{"s1":3,"s2":4,"key":10,"kind":"pictoTotal2"},"rows":[{"label":"Leave A","symbols":3},{"label":"Leave B","symbols":4}],"figure":"pictograph","keyValue":10,"promptText":"Here is Finn's two-row picture chart. What total does the chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0598",
@@ -5982,7 +5982,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"data":{"s1":4,"s2":6,"key":10,"kind":"pictoTotal2"},"promptText":"With a key of 10, Amara draws 4 pictures in one row and 6 in the other. How much do both rows show together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"data":{"s1":4,"s2":6,"key":10,"kind":"pictoTotal2"},"rows":[{"label":"Coin A","symbols":4},{"label":"Coin B","symbols":6}],"figure":"pictograph","keyValue":10,"promptText":"Both rows of Amara's picture chart count toward one total. How much is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0599",
@@ -5992,7 +5992,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"data":{"s1":2,"s2":7,"key":10,"kind":"pictoTotal2"},"promptText":"Each of the 2 + 7 pictures on Diego's chart stands for 10. What is the chart's total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"data":{"s1":2,"s2":7,"key":10,"kind":"pictoTotal2"},"rows":[{"label":"Sticker A","symbols":2},{"label":"Sticker B","symbols":7}],"figure":"pictograph","keyValue":10,"promptText":"Diego's picture chart has two rows. How much do both rows show together?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0600",
@@ -6002,7 +6002,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"data":{"s1":5,"s2":3,"key":10,"kind":"pictoTotal2"},"promptText":"Priya's two-row picture chart shows 5 pictures on top and 3 below, each worth 10. What total does the chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"data":{"s1":5,"s2":3,"key":10,"kind":"pictoTotal2"},"rows":[{"label":"Star A","symbols":5},{"label":"Star B","symbols":3}],"figure":"pictograph","keyValue":10,"promptText":"Here is Priya's two-row picture chart. What total does the chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0601",
@@ -6012,7 +6012,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"data":{"s1":6,"s2":2,"key":10,"kind":"pictoTotal2"},"promptText":"With a key of 10, Leo draws 6 pictures in one row and 2 in the other. How much do both rows show together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"data":{"s1":6,"s2":2,"key":10,"kind":"pictoTotal2"},"rows":[{"label":"Apple A","symbols":6},{"label":"Apple B","symbols":2}],"figure":"pictograph","keyValue":10,"promptText":"Both rows of Leo's picture chart count toward one total. How much is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0602",
@@ -6022,7 +6022,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"data":{"s1":3,"s2":7,"key":10,"kind":"pictoTotal2"},"promptText":"Each of the 3 + 7 pictures on Nora's chart stands for 10. What is the chart's total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"data":{"s1":3,"s2":7,"key":10,"kind":"pictoTotal2"},"rows":[{"label":"Apple A","symbols":3},{"label":"Apple B","symbols":7}],"figure":"pictograph","keyValue":10,"promptText":"Both rows of Nora's picture chart count toward one total. How much is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0603",
@@ -6032,7 +6032,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"data":{"s1":4,"s2":5,"key":10,"kind":"pictoTotal2"},"promptText":"Sam's two-row picture chart shows 4 pictures on top and 5 below, each worth 10. What total does the chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"data":{"s1":4,"s2":5,"key":10,"kind":"pictoTotal2"},"rows":[{"label":"Book A","symbols":4},{"label":"Book B","symbols":5}],"figure":"pictograph","keyValue":10,"promptText":"Read Sam's picture chart. How much do the two rows show in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0604",
@@ -6042,7 +6042,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"data":{"s1":2,"s2":6,"key":10,"kind":"pictoTotal2"},"promptText":"With a key of 10, Mina draws 2 pictures in one row and 6 in the other. How much do both rows show together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"data":{"s1":2,"s2":6,"key":10,"kind":"pictoTotal2"},"rows":[{"label":"Shell A","symbols":2},{"label":"Shell B","symbols":6}],"figure":"pictograph","keyValue":10,"promptText":"Mina's picture chart has two rows. How much do both rows show together?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0605",
@@ -6052,7 +6052,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"data":{"s1":5,"s2":4,"key":10,"kind":"pictoTotal2"},"promptText":"Each of the 5 + 4 pictures on Luca's chart stands for 10. What is the chart's total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"data":{"s1":5,"s2":4,"key":10,"kind":"pictoTotal2"},"rows":[{"label":"Leave A","symbols":5},{"label":"Leave B","symbols":4}],"figure":"pictograph","keyValue":10,"promptText":"Here is Luca's two-row picture chart. What total does the chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0606",
@@ -6062,7 +6062,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"data":{"s1":6,"s2":3,"key":10,"kind":"pictoTotal2"},"promptText":"Nia's two-row picture chart shows 6 pictures on top and 3 below, each worth 10. What total does the chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"data":{"s1":6,"s2":3,"key":10,"kind":"pictoTotal2"},"rows":[{"label":"Coin A","symbols":6},{"label":"Coin B","symbols":3}],"figure":"pictograph","keyValue":10,"promptText":"Both rows of Nia's picture chart count toward one total. How much is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0607",
@@ -6072,7 +6072,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"data":{"s1":3,"s2":5,"key":10,"kind":"pictoTotal2"},"promptText":"With a key of 10, Theo draws 3 pictures in one row and 5 in the other. How much do both rows show together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":80,"display":{"data":{"s1":3,"s2":5,"key":10,"kind":"pictoTotal2"},"rows":[{"label":"Card A","symbols":3},{"label":"Card B","symbols":5}],"figure":"pictograph","keyValue":10,"promptText":"Read Theo's picture chart. How much do the two rows show in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0608",
@@ -6082,7 +6082,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"data":{"s1":4,"s2":7,"key":10,"kind":"pictoTotal2"},"promptText":"Each of the 4 + 7 pictures on Ava's chart stands for 10. What is the chart's total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"data":{"s1":4,"s2":7,"key":10,"kind":"pictoTotal2"},"rows":[{"label":"Sticker A","symbols":4},{"label":"Sticker B","symbols":7}],"figure":"pictograph","keyValue":10,"promptText":"Ava's picture chart has two rows. How much do both rows show together?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0609",
@@ -6092,7 +6092,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"data":{"s1":2,"s2":4,"key":10,"kind":"pictoTotal2"},"promptText":"Kai's two-row picture chart shows 2 pictures on top and 4 below, each worth 10. What total does the chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":60,"display":{"data":{"s1":2,"s2":4,"key":10,"kind":"pictoTotal2"},"rows":[{"label":"Star A","symbols":2},{"label":"Star B","symbols":4}],"figure":"pictograph","keyValue":10,"promptText":"Here is Kai's two-row picture chart. What total does the chart show?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0610",
@@ -6102,7 +6102,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"data":{"s1":5,"s2":6,"key":10,"kind":"pictoTotal2"},"promptText":"With a key of 10, Ida draws 5 pictures in one row and 6 in the other. How much do both rows show together?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":110,"display":{"data":{"s1":5,"s2":6,"key":10,"kind":"pictoTotal2"},"rows":[{"label":"Apple A","symbols":5},{"label":"Apple B","symbols":6}],"figure":"pictograph","keyValue":10,"promptText":"Both rows of Ida's picture chart count toward one total. How much is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0611",
@@ -6112,7 +6112,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"data":{"s1":6,"s2":4,"key":10,"kind":"pictoTotal2"},"promptText":"Each of the 6 + 4 pictures on Omar's chart stands for 10. What is the chart's total?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":100,"display":{"data":{"s1":6,"s2":4,"key":10,"kind":"pictoTotal2"},"rows":[{"label":"Book A","symbols":6},{"label":"Book B","symbols":4}],"figure":"pictograph","keyValue":10,"promptText":"Read Omar's picture chart. How much do the two rows show in all?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-app-b0821-0612",
@@ -6122,7 +6122,7 @@ export const ITEMS = [
     structureType: "storyChartTotal_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"data":{"s1":3,"s2":6,"key":10,"kind":"pictoTotal2"},"promptText":"June's two-row picture chart shows 3 pictures on top and 6 below, each worth 10. What total does the chart show?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":90,"display":{"data":{"s1":3,"s2":6,"key":10,"kind":"pictoTotal2"},"rows":[{"label":"Shell A","symbols":3},{"label":"Shell B","symbols":6}],"figure":"pictograph","keyValue":10,"promptText":"June's picture chart has two rows. How much do both rows show together?"},"answerType":"numberPad"},
   },
   {
     itemId: "dataGraphs-conc-b0821-0001",
@@ -9192,7 +9192,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"truth":false,"promptText":"Omar counts 2 pictures for kittens and says there are 2 kittens — but each picture means 5. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Kittens","symbols":2}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Omar says this chart shows 2 kittens. Is Omar right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0308",
@@ -9202,7 +9202,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"truth":false,"promptText":"Ben counts 3 pictures for pears and says there are 3 pears — but each picture means 5. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Pears","symbols":3}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Reading this chart, Ben announces 3 pears. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0309",
@@ -9212,7 +9212,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"truth":false,"promptText":"Finn counts 4 pictures for hopscotch and says there are 4 hopscotch — but each picture means 5. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Hopscotch","symbols":4}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Finn looks at this chart and claims there are 4 hopscotch. Is Finn right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0310",
@@ -9222,7 +9222,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"truth":false,"promptText":"Priya counts 5 pictures for yellow and says there are 5 yellow — but each picture means 5. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Yellow","symbols":5}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Priya says this chart shows 5 yellow. Is Priya right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0311",
@@ -9232,7 +9232,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"truth":false,"promptText":"Sam counts 6 pictures for robins and says there are 6 robins — but each picture means 5. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Robins","symbols":6}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Reading this chart, Sam announces 6 robins. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0312",
@@ -9242,7 +9242,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"truth":false,"promptText":"Nia counts 2 pictures for bikes and says there are 2 bikes — but each picture means 5. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Bikes","symbols":2}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Nia looks at this chart and claims there are 2 bikes. Is Nia right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0313",
@@ -9252,7 +9252,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"truth":false,"promptText":"Kai counts 3 pictures for bunnies and says there are 3 bunnies — but each picture means 5. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Bunnies","symbols":3}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Kai says this chart shows 3 bunnies. Is Kai right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0314",
@@ -9262,7 +9262,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"truth":false,"promptText":"June counts 4 pictures for cherries and says there are 4 cherries — but each picture means 5. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Cherries","symbols":4}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Reading this chart, June announces 4 cherries. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0315",
@@ -9272,7 +9272,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"truth":false,"promptText":"Lily counts 5 pictures for soccer and says there are 5 soccer — but each picture means 5. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Soccer","symbols":5}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Lily looks at this chart and claims there are 5 soccer. Is Lily right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0316",
@@ -9282,7 +9282,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"truth":false,"promptText":"The key says one picture = 5, yet Amara reads 6 pictures as 6 blue. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Blue","symbols":6}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Amara says this chart shows 6 blue. Is Amara right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0317",
@@ -9292,7 +9292,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"truth":false,"promptText":"The key says one picture = 5, yet Leo reads 2 pictures as 2 jays. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Jays","symbols":2}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Reading this chart, Leo announces 2 jays. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0318",
@@ -9302,7 +9302,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"truth":false,"promptText":"The key says one picture = 5, yet Mina reads 3 pictures as 3 scooters. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Scooters","symbols":3}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Mina looks at this chart and claims there are 3 scooters. Is Mina right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0319",
@@ -9312,7 +9312,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"truth":false,"promptText":"The key says one picture = 5, yet Theo reads 4 pictures as 4 kittens. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Kittens","symbols":4}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Theo says this chart shows 4 kittens. Is Theo right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0320",
@@ -9322,7 +9322,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"truth":false,"promptText":"The key says one picture = 5, yet Ida reads 5 pictures as 5 pears. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Pears","symbols":5}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Reading this chart, Ida announces 5 pears. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0321",
@@ -9332,7 +9332,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"truth":false,"promptText":"The key says one picture = 5, yet Zoe reads 6 pictures as 6 hopscotch. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Hopscotch","symbols":6}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Zoe looks at this chart and claims there are 6 hopscotch. Is Zoe right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0322",
@@ -9342,7 +9342,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"truth":false,"promptText":"The key says one picture = 5, yet Rosa reads 2 pictures as 2 yellow. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Yellow","symbols":2}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Rosa says this chart shows 2 yellow. Is Rosa right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0323",
@@ -9352,7 +9352,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"truth":false,"promptText":"The key says one picture = 5, yet Diego reads 3 pictures as 3 robins. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Robins","symbols":3}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Reading this chart, Diego announces 3 robins. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0324",
@@ -9362,7 +9362,7 @@ export const ITEMS = [
     structureType: "keyIgnoredMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"truth":false,"promptText":"The key says one picture = 5, yet Nora reads 4 pictures as 4 bikes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":5,"kind":"keyIgnored"},"rows":[{"label":"Bikes","symbols":4}],"truth":false,"figure":"pictograph","keyValue":5,"promptText":"Nora looks at this chart and claims there are 4 bikes. Is Nora right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0325",
@@ -9372,7 +9372,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"truth":false,"promptText":"Finn counts 2 pictures for kittens and says there are 2 kittens — but each picture means 10. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Kittens","symbols":2}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Finn says this chart shows 2 kittens. Is Finn right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0326",
@@ -9382,7 +9382,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"truth":false,"promptText":"Priya counts 3 pictures for pears and says there are 3 pears — but each picture means 10. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Pears","symbols":3}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Reading this chart, Priya announces 3 pears. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0327",
@@ -9392,7 +9392,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"truth":false,"promptText":"Sam counts 4 pictures for hopscotch and says there are 4 hopscotch — but each picture means 10. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Hopscotch","symbols":4}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Sam looks at this chart and claims there are 4 hopscotch. Is Sam right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0328",
@@ -9402,7 +9402,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"truth":false,"promptText":"Nia counts 5 pictures for yellow and says there are 5 yellow — but each picture means 10. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Yellow","symbols":5}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Nia says this chart shows 5 yellow. Is Nia right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0329",
@@ -9412,7 +9412,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"truth":false,"promptText":"Kai counts 6 pictures for robins and says there are 6 robins — but each picture means 10. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Robins","symbols":6}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Reading this chart, Kai announces 6 robins. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0330",
@@ -9422,7 +9422,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"truth":false,"promptText":"June counts 2 pictures for bikes and says there are 2 bikes — but each picture means 10. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Bikes","symbols":2}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"June looks at this chart and claims there are 2 bikes. Is June right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0331",
@@ -9432,7 +9432,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"truth":false,"promptText":"Lily counts 3 pictures for bunnies and says there are 3 bunnies — but each picture means 10. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Bunnies","symbols":3}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Lily says this chart shows 3 bunnies. Is Lily right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0332",
@@ -9442,7 +9442,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"truth":false,"promptText":"Amara counts 4 pictures for cherries and says there are 4 cherries — but each picture means 10. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Cherries","symbols":4}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Reading this chart, Amara announces 4 cherries. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0333",
@@ -9452,7 +9452,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"truth":false,"promptText":"Leo counts 5 pictures for soccer and says there are 5 soccer — but each picture means 10. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Soccer","symbols":5}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Leo looks at this chart and claims there are 5 soccer. Is Leo right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0334",
@@ -9462,7 +9462,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"truth":false,"promptText":"The key says one picture = 10, yet Mina reads 6 pictures as 6 blue. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Blue","symbols":6}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Mina says this chart shows 6 blue. Is Mina right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0335",
@@ -9472,7 +9472,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"truth":false,"promptText":"The key says one picture = 10, yet Theo reads 2 pictures as 2 jays. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Jays","symbols":2}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Reading this chart, Theo announces 2 jays. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0336",
@@ -9482,7 +9482,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"truth":false,"promptText":"The key says one picture = 10, yet Ida reads 3 pictures as 3 scooters. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Scooters","symbols":3}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Ida looks at this chart and claims there are 3 scooters. Is Ida right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0337",
@@ -9492,7 +9492,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"truth":false,"promptText":"The key says one picture = 10, yet Zoe reads 4 pictures as 4 kittens. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Kittens","symbols":4}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Zoe says this chart shows 4 kittens. Is Zoe right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0338",
@@ -9502,7 +9502,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"truth":false,"promptText":"The key says one picture = 10, yet Rosa reads 5 pictures as 5 pears. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Pears","symbols":5}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Reading this chart, Rosa announces 5 pears. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0339",
@@ -9512,7 +9512,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"truth":false,"promptText":"The key says one picture = 10, yet Diego reads 6 pictures as 6 hopscotch. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Hopscotch","symbols":6}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Diego looks at this chart and claims there are 6 hopscotch. Is Diego right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0340",
@@ -9522,7 +9522,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"truth":false,"promptText":"The key says one picture = 10, yet Nora reads 2 pictures as 2 yellow. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Yellow","symbols":2}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Nora says this chart shows 2 yellow. Is Nora right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0341",
@@ -9532,7 +9532,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"truth":false,"promptText":"The key says one picture = 10, yet Luca reads 3 pictures as 3 robins. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Robins","symbols":3}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Reading this chart, Luca announces 3 robins. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0342",
@@ -9542,7 +9542,7 @@ export const ITEMS = [
     structureType: "keyIgnoredBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"truth":false,"promptText":"The key says one picture = 10, yet Ava reads 4 pictures as 4 bikes. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"keyIgnored"},"rows":[{"label":"Bikes","symbols":4}],"truth":false,"figure":"pictograph","keyValue":10,"promptText":"Ava looks at this chart and claims there are 4 bikes. Is Ava right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0343",
@@ -9552,7 +9552,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":2,"kind":"pictoSaid","said":2},"truth":true,"promptText":"The chart shows 2 pictures of puppies, one each. Luca counts 2. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":2,"kind":"pictoSaid","said":2},"rows":[{"label":"Puppies","symbols":2}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Luca counts the puppies on this chart and says 2. Is Luca right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0344",
@@ -9562,7 +9562,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":3,"kind":"pictoSaid","said":4},"truth":false,"promptText":"The chart shows 3 pictures of plums, one each. Ava counts 4. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":3,"kind":"pictoSaid","said":4},"rows":[{"label":"Plums","symbols":3}],"truth":false,"figure":"pictograph","keyValue":1,"promptText":"Looking at this chart, Ava counts 4 plums. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0345",
@@ -9572,7 +9572,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":4,"kind":"pictoSaid","said":4},"truth":true,"promptText":"The chart shows 4 pictures of jump rope, one each. Omar counts 4. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":4,"kind":"pictoSaid","said":4},"rows":[{"label":"Jump rope","symbols":4}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Omar reads this chart and reports 4 jump rope. Is Omar right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0346",
@@ -9582,7 +9582,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":5,"kind":"pictoSaid","said":4},"truth":false,"promptText":"The chart shows 5 pictures of red, one each. Ben counts 4. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":5,"kind":"pictoSaid","said":4},"rows":[{"label":"Red","symbols":5}],"truth":false,"figure":"pictograph","keyValue":1,"promptText":"Ben counts the red on this chart and says 4. Is Ben right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0347",
@@ -9592,7 +9592,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":6,"kind":"pictoSaid","said":6},"truth":true,"promptText":"The chart shows 6 pictures of wrens, one each. Finn counts 6. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":6,"kind":"pictoSaid","said":6},"rows":[{"label":"Wrens","symbols":6}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Looking at this chart, Finn counts 6 wrens. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0348",
@@ -9602,7 +9602,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":7,"kind":"pictoSaid","said":8},"truth":false,"promptText":"The chart shows 7 pictures of buses, one each. Priya counts 8. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":7,"kind":"pictoSaid","said":8},"rows":[{"label":"Buses","symbols":7}],"truth":false,"figure":"pictograph","keyValue":1,"promptText":"Priya reads this chart and reports 8 buses. Is Priya right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0349",
@@ -9612,7 +9612,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":8,"kind":"pictoSaid","said":8},"truth":true,"promptText":"The chart shows 8 pictures of chicks, one each. Sam counts 8. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":8,"kind":"pictoSaid","said":8},"rows":[{"label":"Chicks","symbols":8}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Sam counts the chicks on this chart and says 8. Is Sam right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0350",
@@ -9622,7 +9622,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":2,"kind":"pictoSaid","said":1},"truth":false,"promptText":"The chart shows 2 pictures of apples, one each. Nia counts 1. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":2,"kind":"pictoSaid","said":1},"rows":[{"label":"Apples","symbols":2}],"truth":false,"figure":"pictograph","keyValue":1,"promptText":"Looking at this chart, Nia counts 1 apple. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0351",
@@ -9632,7 +9632,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":3,"kind":"pictoSaid","said":3},"truth":true,"promptText":"The chart shows 3 pictures of tag, one each. Kai counts 3. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":3,"kind":"pictoSaid","said":3},"rows":[{"label":"Tag","symbols":3}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Kai reads this chart and reports 3 tag. Is Kai right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0352",
@@ -9642,7 +9642,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":4,"kind":"pictoSaid","said":5},"truth":false,"promptText":"The chart shows 4 pictures of green, one each. June counts 5. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":4,"kind":"pictoSaid","said":5},"rows":[{"label":"Green","symbols":4}],"truth":false,"figure":"pictograph","keyValue":1,"promptText":"June counts the green on this chart and says 5. Is June right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0353",
@@ -9652,7 +9652,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":5,"kind":"pictoSaid","said":5},"truth":true,"promptText":"The chart shows 5 pictures of finches, one each. Lily counts 5. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":5,"kind":"pictoSaid","said":5},"rows":[{"label":"Finches","symbols":5}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Looking at this chart, Lily counts 5 finches. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0354",
@@ -9662,7 +9662,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":6,"kind":"pictoSaid","said":5},"truth":false,"promptText":"Amara tallies the vans pictures as 5; the chart has 6, each worth one. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":6,"kind":"pictoSaid","said":5},"rows":[{"label":"Vans","symbols":6}],"truth":false,"figure":"pictograph","keyValue":1,"promptText":"Amara reads this chart and reports 5 vans. Is Amara right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0355",
@@ -9672,7 +9672,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":7,"kind":"pictoSaid","said":7},"truth":true,"promptText":"Leo tallies the puppies pictures as 7; the chart has 7, each worth one. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":7,"kind":"pictoSaid","said":7},"rows":[{"label":"Puppies","symbols":7}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Leo counts the puppies on this chart and says 7. Is Leo right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0356",
@@ -9682,7 +9682,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":8,"kind":"pictoSaid","said":9},"truth":false,"promptText":"Mina tallies the plums pictures as 9; the chart has 8, each worth one. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":8,"kind":"pictoSaid","said":9},"rows":[{"label":"Plums","symbols":8}],"truth":false,"figure":"pictograph","keyValue":1,"promptText":"Looking at this chart, Mina counts 9 plums. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0357",
@@ -9692,7 +9692,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":2,"kind":"pictoSaid","said":2},"truth":true,"promptText":"Theo tallies the jump rope pictures as 2; the chart has 2, each worth one. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":2,"kind":"pictoSaid","said":2},"rows":[{"label":"Jump rope","symbols":2}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Theo reads this chart and reports 2 jump rope. Is Theo right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0358",
@@ -9702,7 +9702,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":3,"kind":"pictoSaid","said":2},"truth":false,"promptText":"Ida tallies the red pictures as 2; the chart has 3, each worth one. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":3,"kind":"pictoSaid","said":2},"rows":[{"label":"Red","symbols":3}],"truth":false,"figure":"pictograph","keyValue":1,"promptText":"Ida counts the red on this chart and says 2. Is Ida right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0359",
@@ -9712,7 +9712,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":4,"kind":"pictoSaid","said":4},"truth":true,"promptText":"Zoe tallies the wrens pictures as 4; the chart has 4, each worth one. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":4,"kind":"pictoSaid","said":4},"rows":[{"label":"Wrens","symbols":4}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Looking at this chart, Zoe counts 4 wrens. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0360",
@@ -9722,7 +9722,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":5,"kind":"pictoSaid","said":6},"truth":false,"promptText":"Rosa tallies the buses pictures as 6; the chart has 5, each worth one. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":5,"kind":"pictoSaid","said":6},"rows":[{"label":"Buses","symbols":5}],"truth":false,"figure":"pictograph","keyValue":1,"promptText":"Rosa reads this chart and reports 6 buses. Is Rosa right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0361",
@@ -9732,7 +9732,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":6,"kind":"pictoSaid","said":6},"truth":true,"promptText":"Diego tallies the chicks pictures as 6; the chart has 6, each worth one. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":6,"kind":"pictoSaid","said":6},"rows":[{"label":"Chicks","symbols":6}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Diego counts the chicks on this chart and says 6. Is Diego right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0362",
@@ -9742,7 +9742,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":7,"kind":"pictoSaid","said":6},"truth":false,"promptText":"Nora tallies the apples pictures as 6; the chart has 7, each worth one. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":7,"kind":"pictoSaid","said":6},"rows":[{"label":"Apples","symbols":7}],"truth":false,"figure":"pictograph","keyValue":1,"promptText":"Looking at this chart, Nora counts 6 apples. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0363",
@@ -9752,7 +9752,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":8,"kind":"pictoSaid","said":8},"truth":true,"promptText":"Luca tallies the tag pictures as 8; the chart has 8, each worth one. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":1,"sym":8,"kind":"pictoSaid","said":8},"rows":[{"label":"Tag","symbols":8}],"truth":true,"figure":"pictograph","keyValue":1,"promptText":"Luca reads this chart and reports 8 tag. Is Luca right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0364",
@@ -9762,7 +9762,7 @@ export const ITEMS = [
     structureType: "countJudgeTeen",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":2,"kind":"pictoSaid","said":3},"truth":false,"promptText":"Ava tallies the green pictures as 3; the chart has 2, each worth one. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"data":{"key":1,"sym":2,"kind":"pictoSaid","said":3},"rows":[{"label":"Green","symbols":2}],"truth":false,"figure":"pictograph","keyValue":1,"promptText":"Ava counts the green on this chart and says 3. Is Ava right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0365",
@@ -10062,7 +10062,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"truth":true,"promptText":"A row ends in HALF a picture, and one whole picture means 2. Lily says the half counts as 1. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Stickers","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"Lily sees the half picture at the end of this chart's row and counts it as 1. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0395",
@@ -10072,7 +10072,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"truth":true,"promptText":"A row ends in HALF a picture, and one whole picture means 2. Amara says the half counts as 1. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Stars","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"On this chart one row ends with half a picture. Amara counts the half as 1. Do you agree?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0396",
@@ -10082,7 +10082,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"truth":true,"promptText":"A row ends in HALF a picture, and one whole picture means 2. Leo says the half counts as 1. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Apples","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"A row on this chart ends in half a picture. Leo says the half counts as 1. Is Leo right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0397",
@@ -10092,7 +10092,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"truth":true,"promptText":"A row ends in HALF a picture, and one whole picture means 2. Mina says the half counts as 1. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Books","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"Mina sees the half picture at the end of this chart's row and counts it as 1. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0398",
@@ -10102,7 +10102,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"truth":true,"promptText":"A row ends in HALF a picture, and one whole picture means 2. Theo says the half counts as 1. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Shells","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"On this chart one row ends with half a picture. Theo counts the half as 1. Do you agree?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0399",
@@ -10112,7 +10112,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"truth":true,"promptText":"A row ends in HALF a picture, and one whole picture means 2. Ida says the half counts as 1. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Leaves","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"A row on this chart ends in half a picture. Ida says the half counts as 1. Is Ida right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0400",
@@ -10122,7 +10122,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"truth":true,"promptText":"A row ends in HALF a picture, and one whole picture means 2. Zoe says the half counts as 1. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Coins","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"Zoe sees the half picture at the end of this chart's row and counts it as 1. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0401",
@@ -10132,7 +10132,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"truth":true,"promptText":"A row ends in HALF a picture, and one whole picture means 2. Rosa says the half counts as 1. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Cards","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"On this chart one row ends with half a picture. Rosa counts the half as 1. Do you agree?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0402",
@@ -10142,7 +10142,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"truth":true,"promptText":"Diego treats a half picture as 1 when the key is 2 per picture. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Stickers","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"A row on this chart ends in half a picture. Diego says the half counts as 1. Is Diego right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0403",
@@ -10152,7 +10152,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"truth":true,"promptText":"Nora treats a half picture as 1 when the key is 2 per picture. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Stars","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"Nora sees the half picture at the end of this chart's row and counts it as 1. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0404",
@@ -10162,7 +10162,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"truth":true,"promptText":"Luca treats a half picture as 1 when the key is 2 per picture. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Apples","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"On this chart one row ends with half a picture. Luca counts the half as 1. Do you agree?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0405",
@@ -10172,7 +10172,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"truth":true,"promptText":"Ava treats a half picture as 1 when the key is 2 per picture. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Books","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"A row on this chart ends in half a picture. Ava says the half counts as 1. Is Ava right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0406",
@@ -10182,7 +10182,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"truth":true,"promptText":"Omar treats a half picture as 1 when the key is 2 per picture. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Shells","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"Omar sees the half picture at the end of this chart's row and counts it as 1. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0407",
@@ -10192,7 +10192,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"truth":true,"promptText":"Ben treats a half picture as 1 when the key is 2 per picture. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Leaves","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"On this chart one row ends with half a picture. Ben counts the half as 1. Do you agree?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0408",
@@ -10202,7 +10202,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"truth":true,"promptText":"Finn treats a half picture as 1 when the key is 2 per picture. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Coins","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"A row on this chart ends in half a picture. Finn says the half counts as 1. Is Finn right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0409",
@@ -10212,7 +10212,7 @@ export const ITEMS = [
     structureType: "halfSymbolMid",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"truth":true,"promptText":"Priya treats a half picture as 1 when the key is 2 per picture. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":2,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Cards","symbols":2}],"truth":true,"figure":"pictograph","keyValue":2,"promptText":"Priya sees the half picture at the end of this chart's row and counts it as 1. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0410",
@@ -10222,7 +10222,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"truth":true,"promptText":"A row ends in HALF a picture, and one whole picture means 10. Leo says the half counts as 5. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Stickers","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"On this chart one row ends with half a picture. Leo counts the half as 5. Do you agree?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0411",
@@ -10232,7 +10232,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"truth":true,"promptText":"A row ends in HALF a picture, and one whole picture means 10. Mina says the half counts as 5. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Stars","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"A row on this chart ends in half a picture. Mina says the half counts as 5. Is Mina right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0412",
@@ -10242,7 +10242,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"truth":true,"promptText":"A row ends in HALF a picture, and one whole picture means 10. Theo says the half counts as 5. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Apples","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"Theo sees the half picture at the end of this chart's row and counts it as 5. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0413",
@@ -10252,7 +10252,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"truth":true,"promptText":"A row ends in HALF a picture, and one whole picture means 10. Ida says the half counts as 5. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Books","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"On this chart one row ends with half a picture. Ida counts the half as 5. Do you agree?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0414",
@@ -10262,7 +10262,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"truth":true,"promptText":"A row ends in HALF a picture, and one whole picture means 10. Zoe says the half counts as 5. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Shells","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"A row on this chart ends in half a picture. Zoe says the half counts as 5. Is Zoe right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0415",
@@ -10272,7 +10272,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"truth":true,"promptText":"A row ends in HALF a picture, and one whole picture means 10. Rosa says the half counts as 5. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Leaves","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"Rosa sees the half picture at the end of this chart's row and counts it as 5. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0416",
@@ -10282,7 +10282,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"truth":true,"promptText":"A row ends in HALF a picture, and one whole picture means 10. Diego says the half counts as 5. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Coins","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"On this chart one row ends with half a picture. Diego counts the half as 5. Do you agree?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0417",
@@ -10292,7 +10292,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"truth":true,"promptText":"A row ends in HALF a picture, and one whole picture means 10. Nora says the half counts as 5. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Cards","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"A row on this chart ends in half a picture. Nora says the half counts as 5. Is Nora right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0418",
@@ -10302,7 +10302,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"truth":true,"promptText":"Luca treats a half picture as 5 when the key is 10 per picture. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Stickers","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"Luca sees the half picture at the end of this chart's row and counts it as 5. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0419",
@@ -10312,7 +10312,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"truth":true,"promptText":"Ava treats a half picture as 5 when the key is 10 per picture. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Stars","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"On this chart one row ends with half a picture. Ava counts the half as 5. Do you agree?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0420",
@@ -10322,7 +10322,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"truth":true,"promptText":"Omar treats a half picture as 5 when the key is 10 per picture. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Apples","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"A row on this chart ends in half a picture. Omar says the half counts as 5. Is Omar right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0421",
@@ -10332,7 +10332,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"truth":true,"promptText":"Ben treats a half picture as 5 when the key is 10 per picture. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Books","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"Ben sees the half picture at the end of this chart's row and counts it as 5. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0422",
@@ -10342,7 +10342,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"truth":true,"promptText":"Finn treats a half picture as 5 when the key is 10 per picture. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Shells","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"On this chart one row ends with half a picture. Finn counts the half as 5. Do you agree?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0423",
@@ -10352,7 +10352,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"truth":true,"promptText":"Priya treats a half picture as 5 when the key is 10 per picture. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Leaves","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"A row on this chart ends in half a picture. Priya says the half counts as 5. Is Priya right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0424",
@@ -10362,7 +10362,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"truth":true,"promptText":"Sam treats a half picture as 5 when the key is 10 per picture. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Coins","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"Sam sees the half picture at the end of this chart's row and counts it as 5. Is that right?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0425",
@@ -10372,7 +10372,7 @@ export const ITEMS = [
     structureType: "halfSymbolBig",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"truth":true,"promptText":"Nia treats a half picture as 5 when the key is 10 per picture. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"data":{"key":10,"kind":"halfSymbol"},"rows":[{"half":true,"label":"Cards","symbols":2}],"truth":true,"figure":"pictograph","keyValue":10,"promptText":"On this chart one row ends with half a picture. Nia counts the half as 5. Do you agree?"}},
   },
   {
     itemId: "dataGraphs-conc-b0821-0426",

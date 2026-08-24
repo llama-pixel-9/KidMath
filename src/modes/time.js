@@ -276,18 +276,18 @@ const VARIETIES = [
       const hour = randInt(1, 11);
       let other = randInt(1, 11);
       while (other === hour) other = randInt(1, 11);
-      const face = (long, short) => `long hand at ${long}, short hand at ${short}`;
+      // Judged single face: the shown face is right, hand-swapped (minute
+      // hand parked on the hour mark reads as a swap), or the wrong hour.
+      // The face carries the hands — never describe positions in words.
+      const kind = randInt(0, 2);
+      const clock = kind === 0 ? { hour, minute: 0 } : kind === 1 ? { hour: 12, minute: hour * 5 } : { hour: other, minute: 0 };
       return {
-        answer: face(12, hour),
+        answer: kind === 0 ? "Yes" : "No",
         answerType: "choice",
-        choices: optionSet(
-          face(12, hour),
-          // The hand swap, the half-past face, and the wrong hour.
-          [face(hour, 12), face(6, hour), face(12, other)],
-          []
-        ),
-        promptText: `Which clock face shows ${hour} o'clock?`,
-        representation: "verbalContext",
+        choices: ["Yes", "No"],
+        display: { figure: "clockFace", clock },
+        promptText: `Does this clock show ${hour} o'clock?`,
+        representation: "visual",
         cognitiveDemand: "DOK2",
         misconceptionTags: ["hourMinuteSwap", "clockDirection"],
       };

@@ -20,7 +20,7 @@
  */
 
 import { runAssembler } from "./bankAssembler.js";
-import { NAMES } from "./countingTemplates.js";
+import { NAMES } from "./counting/countingTemplates.js";
 
 const args = process.argv.slice(2);
 const WRITE = args.includes("--write");

@@ -78,6 +78,24 @@ describe("review queue QC adapter", () => {
     expect(qc.findings.some((f) => f.id === "describedClockHands")).toBe(false);
   });
 
+  it("fails hand-position words hiding in the choices", () => {
+    const qc = runChecksOnAdminItem(
+      adminItem({
+        itemId: "time-conc-w",
+        modeId: "time",
+        structureType: "whichClockShowsHour",
+        itemFamily: "conceptual",
+        payload: {
+          a: null, b: null, op: "time", answer: "long hand at 12, short hand at 3",
+          choices: ["long hand at 12, short hand at 3", "long hand at 3, short hand at 12"],
+          display: { promptText: "Which clock face shows 3 o'clock?" },
+        },
+      })
+    );
+    expect(qc.pass).toBe(false);
+    expect(qc.findings.some((f) => f.id === "describedClockHands")).toBe(true);
+  });
+
   it("leaves hands-as-subject prompts alone", () => {
     const qc = runChecksOnAdminItem(
       adminItem({
@@ -92,6 +110,58 @@ describe("review queue QC adapter", () => {
       })
     );
     expect(qc.findings.some((f) => f.id === "describedClockHands")).toBe(false);
+  });
+
+  it("fails a covered clock class shipped without its face", () => {
+    const base = {
+      itemId: "time-conc-f", modeId: "time", structureType: "judgeFiveRead", itemFamily: "conceptual",
+      payload: {
+        a: null, b: null, op: "time", answer: "No", choices: ["Yes", "No"],
+        display: { time: { kind: "judgeRead", hour: 3, minute: 15 }, promptText: "Mina reads this clock as 3:20. Is Mina right?" },
+      },
+    };
+    const qc = runChecksOnAdminItem(adminItem(base));
+    expect(qc.findings.some((f) => f.id === "missingRequiredFigure")).toBe(true);
+    const fixed = runChecksOnAdminItem(
+      adminItem({ ...base, payload: { ...base.payload, display: { ...base.payload.display, figure: "clockFace", clock: { hour: 3, minute: 15 } } } })
+    );
+    expect(fixed.findings.some((f) => f.id === "missingRequiredFigure")).toBe(false);
+  });
+
+  it("fails an undeclared class under a contracted mode", () => {
+    const qc = runChecksOnAdminItem(
+      adminItem({
+        itemId: "time-conc-u", modeId: "time", structureType: "brandNewClockThing", itemFamily: "conceptual",
+        payload: { a: null, b: null, op: "time", answer: "Yes", choices: ["Yes", "No"], display: { promptText: "A new kind of clock question?" } },
+      })
+    );
+    expect(qc.findings.some((f) => f.id === "undeclaredFigureClass")).toBe(true);
+  });
+
+  it("phantom display keys no longer exempt a described picture", () => {
+    const qc = runChecksOnAdminItem(
+      adminItem({
+        itemId: "counting-conc-p", modeId: "counting", structureType: "countObjects", itemFamily: "conceptual",
+        payload: {
+          a: null, b: null, op: "count", answer: 4,
+          display: { time: { phantom: true }, promptText: "A small set of 4 dots. How many dots are there?" },
+        },
+      })
+    );
+    expect(qc.findings.some((f) => f.id === "figurelessQuantity")).toBe(true);
+  });
+
+  it("leaves widget-rendered items alone (the visual lives in the answer widget)", () => {
+    const qc = runChecksOnAdminItem(
+      adminItem({
+        itemId: "numberBonds-conc-t", modeId: "numberBonds", structureType: "frameWholeUnknown", itemFamily: "conceptual",
+        payload: {
+          a: 6, b: 4, op: "bond", answer: 4, answerType: "tenFrame",
+          display: { filled: 6, frames: 1, frameMode: "empty", promptText: "6 counters are in the ten frame. How many empty cells are left?" },
+        },
+      })
+    );
+    expect(qc.findings.some((f) => f.id === "figurelessQuantity")).toBe(false);
   });
 
   it("flags a placeholder leak as a failure", () => {

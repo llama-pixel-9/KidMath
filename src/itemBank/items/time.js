@@ -6472,7 +6472,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":1,"kind":"handSwap"},"truth":false,"promptText":"A clock shows half past one. Omar reads the LONG hand as the hour and announces six o'clock. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":1,"kind":"handSwap"},"clock":{"hour":1,"minute":0},"truth":false,"figure":"clockFace","promptText":"Omar reads the LONG hand of this clock as the hour and announces six o'clock. Is Omar right?"}},
   },
   {
     itemId: "time-conc-b0821-0036",
@@ -6482,7 +6482,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"handSwap"},"truth":false,"promptText":"Ben swaps the hands on a half past two clock and reads it as six o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"handSwap"},"clock":{"hour":2,"minute":0},"truth":false,"figure":"clockFace","promptText":"Ben mixes up the hands on this clock and reads it as six o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0037",
@@ -6492,7 +6492,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"handSwap"},"truth":false,"promptText":"A clock shows half past three. Finn reads the LONG hand as the hour and announces six o'clock. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"handSwap"},"clock":{"hour":3,"minute":0},"truth":false,"figure":"clockFace","promptText":"Reading this clock, Finn treats the long hand as the hour hand and says six o'clock. Is Finn right?"}},
   },
   {
     itemId: "time-conc-b0821-0038",
@@ -6502,7 +6502,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":4,"kind":"handSwap"},"truth":false,"promptText":"Priya swaps the hands on a half past four clock and reads it as six o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":4,"kind":"handSwap"},"clock":{"hour":4,"minute":0},"truth":false,"figure":"clockFace","promptText":"Priya reads the LONG hand of this clock as the hour and announces six o'clock. Is Priya right?"}},
   },
   {
     itemId: "time-conc-b0821-0039",
@@ -6512,7 +6512,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"handSwap"},"truth":false,"promptText":"A clock shows half past five. Sam reads the LONG hand as the hour and announces six o'clock. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"handSwap"},"clock":{"hour":5,"minute":0},"truth":false,"figure":"clockFace","promptText":"Sam mixes up the hands on this clock and reads it as six o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0040",
@@ -6522,7 +6522,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"handSwap"},"truth":false,"promptText":"Nia swaps the hands on a half past six clock and reads it as six o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"handSwap"},"clock":{"hour":6,"minute":0},"truth":false,"figure":"clockFace","promptText":"Reading this clock, Nia treats the long hand as the hour hand and says six o'clock. Is Nia right?"}},
   },
   {
     itemId: "time-conc-b0821-0041",
@@ -6532,7 +6532,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":7,"kind":"handSwap"},"truth":false,"promptText":"A clock shows half past seven. Kai reads the LONG hand as the hour and announces six o'clock. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":7,"kind":"handSwap"},"clock":{"hour":7,"minute":0},"truth":false,"figure":"clockFace","promptText":"Kai reads the LONG hand of this clock as the hour and announces six o'clock. Is Kai right?"}},
   },
   {
     itemId: "time-conc-b0821-0042",
@@ -6542,7 +6542,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":8,"kind":"handSwap"},"truth":false,"promptText":"June swaps the hands on a half past eight clock and reads it as six o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":8,"kind":"handSwap"},"clock":{"hour":8,"minute":0},"truth":false,"figure":"clockFace","promptText":"June mixes up the hands on this clock and reads it as six o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0043",
@@ -6552,7 +6552,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":9,"kind":"handSwap"},"truth":false,"promptText":"A clock shows half past nine. Lily reads the LONG hand as the hour and announces six o'clock. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":9,"kind":"handSwap"},"clock":{"hour":9,"minute":0},"truth":false,"figure":"clockFace","promptText":"Reading this clock, Lily treats the long hand as the hour hand and says six o'clock. Is Lily right?"}},
   },
   {
     itemId: "time-conc-b0821-0044",
@@ -6562,7 +6562,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":1,"kind":"handSwap"},"truth":false,"promptText":"Amara swaps the hands on a half past one clock and reads it as six o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":1,"kind":"handSwap"},"clock":{"hour":1,"minute":0},"truth":false,"figure":"clockFace","promptText":"Amara reads the LONG hand of this clock as the hour and announces six o'clock. Is Amara right?"}},
   },
   {
     itemId: "time-conc-b0821-0045",
@@ -6572,7 +6572,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"handSwap"},"truth":false,"promptText":"A clock shows half past two. Leo reads the LONG hand as the hour and announces six o'clock. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"handSwap"},"clock":{"hour":2,"minute":0},"truth":false,"figure":"clockFace","promptText":"Leo mixes up the hands on this clock and reads it as six o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0046",
@@ -6582,7 +6582,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"handSwap"},"truth":false,"promptText":"Mina swaps the hands on a half past three clock and reads it as six o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"handSwap"},"clock":{"hour":3,"minute":0},"truth":false,"figure":"clockFace","promptText":"Reading this clock, Mina treats the long hand as the hour hand and says six o'clock. Is Mina right?"}},
   },
   {
     itemId: "time-conc-b0821-0047",
@@ -6592,7 +6592,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":4,"kind":"handSwap"},"truth":false,"promptText":"A clock shows half past four. Theo reads the LONG hand as the hour and announces six o'clock. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":4,"kind":"handSwap"},"clock":{"hour":4,"minute":0},"truth":false,"figure":"clockFace","promptText":"Theo reads the LONG hand of this clock as the hour and announces six o'clock. Is Theo right?"}},
   },
   {
     itemId: "time-conc-b0821-0048",
@@ -6602,7 +6602,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"handSwap"},"truth":false,"promptText":"Ida swaps the hands on a half past five clock and reads it as six o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"handSwap"},"clock":{"hour":5,"minute":0},"truth":false,"figure":"clockFace","promptText":"Ida mixes up the hands on this clock and reads it as six o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0049",
@@ -6612,7 +6612,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"handSwap"},"truth":false,"promptText":"A clock shows half past six. Zoe reads the LONG hand as the hour and announces six o'clock. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"handSwap"},"clock":{"hour":6,"minute":0},"truth":false,"figure":"clockFace","promptText":"Reading this clock, Zoe treats the long hand as the hour hand and says six o'clock. Is Zoe right?"}},
   },
   {
     itemId: "time-conc-b0821-0050",
@@ -6622,7 +6622,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":7,"kind":"handSwap"},"truth":false,"promptText":"Rosa swaps the hands on a half past seven clock and reads it as six o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":7,"kind":"handSwap"},"clock":{"hour":7,"minute":0},"truth":false,"figure":"clockFace","promptText":"Rosa reads the LONG hand of this clock as the hour and announces six o'clock. Is Rosa right?"}},
   },
   {
     itemId: "time-conc-b0821-0051",
@@ -6632,7 +6632,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":8,"kind":"handSwap"},"truth":false,"promptText":"A clock shows half past eight. Diego reads the LONG hand as the hour and announces six o'clock. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":8,"kind":"handSwap"},"clock":{"hour":8,"minute":0},"truth":false,"figure":"clockFace","promptText":"Diego mixes up the hands on this clock and reads it as six o'clock. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0052",
@@ -6642,7 +6642,7 @@ export const ITEMS = [
     structureType: "handSwapJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":9,"kind":"handSwap"},"truth":false,"promptText":"Nora swaps the hands on a half past nine clock and reads it as six o'clock. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":9,"kind":"handSwap"},"clock":{"hour":9,"minute":0},"truth":false,"figure":"clockFace","promptText":"Reading this clock, Nora treats the long hand as the hour hand and says six o'clock. Is Nora right?"}},
   },
   {
     itemId: "time-conc-b0821-0053",
@@ -6652,7 +6652,7 @@ export const ITEMS = [
     structureType: "judgeFiveRead",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"judgeRead","minute":15,"saidHour":3,"saidMinute":15},"truth":true,"promptText":"Mina reads a clock showing 3:15 and writes 3:15. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"judgeRead","minute":15,"saidHour":3,"saidMinute":15},"clock":{"hour":3,"minute":15},"truth":true,"figure":"clockFace","promptText":"Mina reads this clock as 3:15. Is Mina right?"}},
   },
   {
     itemId: "time-conc-b0821-0054",
@@ -6662,7 +6662,7 @@ export const ITEMS = [
     structureType: "judgeFiveRead",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":8,"kind":"judgeRead","minute":45,"saidHour":8,"saidMinute":40},"truth":false,"promptText":"A clock shows 8:45. Theo calls it 8:40. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":8,"kind":"judgeRead","minute":45,"saidHour":8,"saidMinute":40},"clock":{"hour":8,"minute":45},"truth":false,"figure":"clockFace","promptText":"Theo looks at this clock and writes 8:40. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0055",
@@ -6672,7 +6672,7 @@ export const ITEMS = [
     structureType: "judgeFiveRead",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"judgeRead","minute":30,"saidHour":2,"saidMinute":30},"truth":true,"promptText":"Ida reads a clock showing 2:30 and writes 2:30. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"judgeRead","minute":30,"saidHour":2,"saidMinute":30},"clock":{"hour":2,"minute":30},"truth":true,"figure":"clockFace","promptText":"Ida calls the time on this clock 2:30. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0056",
@@ -6682,7 +6682,7 @@ export const ITEMS = [
     structureType: "judgeFiveRead",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"judgeRead","minute":10,"saidHour":6,"saidMinute":15},"truth":false,"promptText":"A clock shows 6:10. Zoe calls it 6:15. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"judgeRead","minute":10,"saidHour":6,"saidMinute":15},"clock":{"hour":6,"minute":10},"truth":false,"figure":"clockFace","promptText":"Zoe reads this clock as 6:15. Is Zoe right?"}},
   },
   {
     itemId: "time-conc-b0821-0057",
@@ -6692,7 +6692,7 @@ export const ITEMS = [
     structureType: "judgeFiveRead",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":11,"kind":"judgeRead","minute":40,"saidHour":11,"saidMinute":40},"truth":true,"promptText":"Rosa reads a clock showing 11:40 and writes 11:40. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":11,"kind":"judgeRead","minute":40,"saidHour":11,"saidMinute":40},"clock":{"hour":11,"minute":40},"truth":true,"figure":"clockFace","promptText":"Rosa looks at this clock and writes 11:40. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0058",
@@ -6702,7 +6702,7 @@ export const ITEMS = [
     structureType: "judgeFiveRead",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"judgeRead","minute":5,"saidHour":5,"saidMinute":10},"truth":false,"promptText":"A clock shows 5:05. Diego calls it 5:10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"judgeRead","minute":5,"saidHour":5,"saidMinute":10},"clock":{"hour":5,"minute":5},"truth":false,"figure":"clockFace","promptText":"Diego calls the time on this clock 5:10. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0059",
@@ -6712,7 +6712,7 @@ export const ITEMS = [
     structureType: "judgeFiveRead",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":9,"kind":"judgeRead","minute":50,"saidHour":9,"saidMinute":50},"truth":true,"promptText":"Nora reads a clock showing 9:50 and writes 9:50. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":9,"kind":"judgeRead","minute":50,"saidHour":9,"saidMinute":50},"clock":{"hour":9,"minute":50},"truth":true,"figure":"clockFace","promptText":"Nora reads this clock as 9:50. Is Nora right?"}},
   },
   {
     itemId: "time-conc-b0821-0060",
@@ -6722,7 +6722,7 @@ export const ITEMS = [
     structureType: "judgeFiveRead",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":1,"kind":"judgeRead","minute":20,"saidHour":1,"saidMinute":15},"truth":false,"promptText":"A clock shows 1:20. Luca calls it 1:15. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":1,"kind":"judgeRead","minute":20,"saidHour":1,"saidMinute":15},"clock":{"hour":1,"minute":20},"truth":false,"figure":"clockFace","promptText":"Luca looks at this clock and writes 1:15. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0061",
@@ -6732,7 +6732,7 @@ export const ITEMS = [
     structureType: "judgeFiveRead",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":7,"kind":"judgeRead","minute":35,"saidHour":7,"saidMinute":35},"truth":true,"promptText":"Ava reads a clock showing 7:35 and writes 7:35. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":7,"kind":"judgeRead","minute":35,"saidHour":7,"saidMinute":35},"clock":{"hour":7,"minute":35},"truth":true,"figure":"clockFace","promptText":"Ava calls the time on this clock 7:35. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0062",
@@ -6742,7 +6742,7 @@ export const ITEMS = [
     structureType: "judgeFiveRead",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":4,"kind":"judgeRead","minute":25,"saidHour":4,"saidMinute":20},"truth":false,"promptText":"A clock shows 4:25. Omar calls it 4:20. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":4,"kind":"judgeRead","minute":25,"saidHour":4,"saidMinute":20},"clock":{"hour":4,"minute":25},"truth":false,"figure":"clockFace","promptText":"Omar reads this clock as 4:20. Is Omar right?"}},
   },
   {
     itemId: "time-conc-b0821-0063",
@@ -6752,7 +6752,7 @@ export const ITEMS = [
     structureType: "judgeFiveRead",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":10,"kind":"judgeRead","minute":55,"saidHour":10,"saidMinute":55},"truth":true,"promptText":"Ben reads a clock showing 10:55 and writes 10:55. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":10,"kind":"judgeRead","minute":55,"saidHour":10,"saidMinute":55},"clock":{"hour":10,"minute":55},"truth":true,"figure":"clockFace","promptText":"Ben looks at this clock and writes 10:55. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0064",
@@ -6762,7 +6762,7 @@ export const ITEMS = [
     structureType: "judgeFiveRead",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":12,"kind":"judgeRead","minute":15,"saidHour":12,"saidMinute":20},"truth":false,"promptText":"A clock shows 12:15. Finn calls it 12:20. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":12,"kind":"judgeRead","minute":15,"saidHour":12,"saidMinute":20},"clock":{"hour":12,"minute":15},"truth":false,"figure":"clockFace","promptText":"Finn calls the time on this clock 12:20. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0065",
@@ -6772,7 +6772,7 @@ export const ITEMS = [
     structureType: "judgeFiveRead",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"judgeRead","minute":40,"saidHour":3,"saidMinute":40},"truth":true,"promptText":"Priya reads a clock showing 3:40 and writes 3:40. Is Priya right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"judgeRead","minute":40,"saidHour":3,"saidMinute":40},"clock":{"hour":3,"minute":40},"truth":true,"figure":"clockFace","promptText":"Priya reads this clock as 3:40. Is Priya right?"}},
   },
   {
     itemId: "time-conc-b0821-0066",
@@ -6782,7 +6782,7 @@ export const ITEMS = [
     structureType: "judgeFiveRead",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":8,"kind":"judgeRead","minute":5,"saidHour":8,"saidMinute":10},"truth":false,"promptText":"A clock shows 8:05. Sam calls it 8:10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":8,"kind":"judgeRead","minute":5,"saidHour":8,"saidMinute":10},"clock":{"hour":8,"minute":5},"truth":false,"figure":"clockFace","promptText":"Sam looks at this clock and writes 8:10. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0067",
@@ -6792,7 +6792,7 @@ export const ITEMS = [
     structureType: "judgeFiveRead",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"judgeRead","minute":50,"saidHour":2,"saidMinute":50},"truth":true,"promptText":"Nia reads a clock showing 2:50 and writes 2:50. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"judgeRead","minute":50,"saidHour":2,"saidMinute":50},"clock":{"hour":2,"minute":50},"truth":true,"figure":"clockFace","promptText":"Nia calls the time on this clock 2:50. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0068",
@@ -6802,7 +6802,7 @@ export const ITEMS = [
     structureType: "judgeFiveRead",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"judgeRead","minute":35,"saidHour":6,"saidMinute":30},"truth":false,"promptText":"A clock shows 6:35. Kai calls it 6:30. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"judgeRead","minute":35,"saidHour":6,"saidMinute":30},"clock":{"hour":6,"minute":35},"truth":false,"figure":"clockFace","promptText":"Kai reads this clock as 6:30. Is Kai right?"}},
   },
   {
     itemId: "time-conc-b0821-0069",
@@ -6812,7 +6812,7 @@ export const ITEMS = [
     structureType: "judgeFiveRead",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":11,"kind":"judgeRead","minute":10,"saidHour":11,"saidMinute":10},"truth":true,"promptText":"June reads a clock showing 11:10 and writes 11:10. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":11,"kind":"judgeRead","minute":10,"saidHour":11,"saidMinute":10},"clock":{"hour":11,"minute":10},"truth":true,"figure":"clockFace","promptText":"June looks at this clock and writes 11:10. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0070",
@@ -6822,7 +6822,7 @@ export const ITEMS = [
     structureType: "judgeFiveRead",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"judgeRead","minute":45,"saidHour":5,"saidMinute":50},"truth":false,"promptText":"A clock shows 5:45. Lily calls it 5:50. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"judgeRead","minute":45,"saidHour":5,"saidMinute":50},"clock":{"hour":5,"minute":45},"truth":false,"figure":"clockFace","promptText":"Lily calls the time on this clock 5:50. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0071",
@@ -7172,7 +7172,7 @@ export const ITEMS = [
     structureType: "judgeMinuteRead",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"judgeRead","minute":7,"saidHour":3,"saidMinute":7},"truth":true,"promptText":"Nia reads a clock showing 3:07 and writes 3:07. Is Nia right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"judgeRead","minute":7,"saidHour":3,"saidMinute":7},"clock":{"hour":3,"minute":7},"truth":true,"figure":"clockFace","promptText":"Nia reads this clock as 3:07. Is Nia right?"}},
   },
   {
     itemId: "time-conc-b0821-0106",
@@ -7182,7 +7182,7 @@ export const ITEMS = [
     structureType: "judgeMinuteRead",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":8,"kind":"judgeRead","minute":23,"saidHour":8,"saidMinute":25},"truth":false,"promptText":"A clock shows 8:23. Kai calls it 8:25. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":8,"kind":"judgeRead","minute":23,"saidHour":8,"saidMinute":25},"clock":{"hour":8,"minute":23},"truth":false,"figure":"clockFace","promptText":"Kai looks at this clock and writes 8:25. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0107",
@@ -7192,7 +7192,7 @@ export const ITEMS = [
     structureType: "judgeMinuteRead",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"judgeRead","minute":48,"saidHour":2,"saidMinute":48},"truth":true,"promptText":"June reads a clock showing 2:48 and writes 2:48. Is June right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"judgeRead","minute":48,"saidHour":2,"saidMinute":48},"clock":{"hour":2,"minute":48},"truth":true,"figure":"clockFace","promptText":"June calls the time on this clock 2:48. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0108",
@@ -7202,7 +7202,7 @@ export const ITEMS = [
     structureType: "judgeMinuteRead",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"judgeRead","minute":11,"saidHour":6,"saidMinute":10},"truth":false,"promptText":"A clock shows 6:11. Lily calls it 6:10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"judgeRead","minute":11,"saidHour":6,"saidMinute":10},"clock":{"hour":6,"minute":11},"truth":false,"figure":"clockFace","promptText":"Lily reads this clock as 6:10. Is Lily right?"}},
   },
   {
     itemId: "time-conc-b0821-0109",
@@ -7212,7 +7212,7 @@ export const ITEMS = [
     structureType: "judgeMinuteRead",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":11,"kind":"judgeRead","minute":37,"saidHour":11,"saidMinute":37},"truth":true,"promptText":"Amara reads a clock showing 11:37 and writes 11:37. Is Amara right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":11,"kind":"judgeRead","minute":37,"saidHour":11,"saidMinute":37},"clock":{"hour":11,"minute":37},"truth":true,"figure":"clockFace","promptText":"Amara looks at this clock and writes 11:37. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0110",
@@ -7222,7 +7222,7 @@ export const ITEMS = [
     structureType: "judgeMinuteRead",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"judgeRead","minute":52,"saidHour":5,"saidMinute":53},"truth":false,"promptText":"A clock shows 5:52. Leo calls it 5:53. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"judgeRead","minute":52,"saidHour":5,"saidMinute":53},"clock":{"hour":5,"minute":52},"truth":false,"figure":"clockFace","promptText":"Leo calls the time on this clock 5:53. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0111",
@@ -7232,7 +7232,7 @@ export const ITEMS = [
     structureType: "judgeMinuteRead",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":9,"kind":"judgeRead","minute":16,"saidHour":9,"saidMinute":16},"truth":true,"promptText":"Mina reads a clock showing 9:16 and writes 9:16. Is Mina right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":9,"kind":"judgeRead","minute":16,"saidHour":9,"saidMinute":16},"clock":{"hour":9,"minute":16},"truth":true,"figure":"clockFace","promptText":"Mina reads this clock as 9:16. Is Mina right?"}},
   },
   {
     itemId: "time-conc-b0821-0112",
@@ -7242,7 +7242,7 @@ export const ITEMS = [
     structureType: "judgeMinuteRead",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":1,"kind":"judgeRead","minute":41,"saidHour":1,"saidMinute":39},"truth":false,"promptText":"A clock shows 1:41. Theo calls it 1:39. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":1,"kind":"judgeRead","minute":41,"saidHour":1,"saidMinute":39},"clock":{"hour":1,"minute":41},"truth":false,"figure":"clockFace","promptText":"Theo looks at this clock and writes 1:39. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0113",
@@ -7252,7 +7252,7 @@ export const ITEMS = [
     structureType: "judgeMinuteRead",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":7,"kind":"judgeRead","minute":28,"saidHour":7,"saidMinute":28},"truth":true,"promptText":"Ida reads a clock showing 7:28 and writes 7:28. Is Ida right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":7,"kind":"judgeRead","minute":28,"saidHour":7,"saidMinute":28},"clock":{"hour":7,"minute":28},"truth":true,"figure":"clockFace","promptText":"Ida calls the time on this clock 7:28. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0114",
@@ -7262,7 +7262,7 @@ export const ITEMS = [
     structureType: "judgeMinuteRead",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":12,"kind":"judgeRead","minute":57,"saidHour":12,"saidMinute":55},"truth":false,"promptText":"A clock shows 12:57. Zoe calls it 12:55. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":12,"kind":"judgeRead","minute":57,"saidHour":12,"saidMinute":55},"clock":{"hour":12,"minute":57},"truth":false,"figure":"clockFace","promptText":"Zoe reads this clock as 12:55. Is Zoe right?"}},
   },
   {
     itemId: "time-conc-b0821-0115",
@@ -7272,7 +7272,7 @@ export const ITEMS = [
     structureType: "judgeMinuteRead",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":4,"kind":"judgeRead","minute":4,"saidHour":4,"saidMinute":4},"truth":true,"promptText":"Rosa reads a clock showing 4:04 and writes 4:04. Is Rosa right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":4,"kind":"judgeRead","minute":4,"saidHour":4,"saidMinute":4},"clock":{"hour":4,"minute":4},"truth":true,"figure":"clockFace","promptText":"Rosa looks at this clock and writes 4:04. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0116",
@@ -7282,7 +7282,7 @@ export const ITEMS = [
     structureType: "judgeMinuteRead",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":10,"kind":"judgeRead","minute":22,"saidHour":10,"saidMinute":23},"truth":false,"promptText":"A clock shows 10:22. Diego calls it 10:23. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":10,"kind":"judgeRead","minute":22,"saidHour":10,"saidMinute":23},"clock":{"hour":10,"minute":22},"truth":false,"figure":"clockFace","promptText":"Diego calls the time on this clock 10:23. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0117",
@@ -7292,7 +7292,7 @@ export const ITEMS = [
     structureType: "judgeMinuteRead",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"judgeRead","minute":46,"saidHour":3,"saidMinute":46},"truth":true,"promptText":"Nora reads a clock showing 3:46 and writes 3:46. Is Nora right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":3,"kind":"judgeRead","minute":46,"saidHour":3,"saidMinute":46},"clock":{"hour":3,"minute":46},"truth":true,"figure":"clockFace","promptText":"Nora reads this clock as 3:46. Is Nora right?"}},
   },
   {
     itemId: "time-conc-b0821-0118",
@@ -7302,7 +7302,7 @@ export const ITEMS = [
     structureType: "judgeMinuteRead",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":8,"kind":"judgeRead","minute":13,"saidHour":8,"saidMinute":12},"truth":false,"promptText":"A clock shows 8:13. Luca calls it 8:12. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":8,"kind":"judgeRead","minute":13,"saidHour":8,"saidMinute":12},"clock":{"hour":8,"minute":13},"truth":false,"figure":"clockFace","promptText":"Luca looks at this clock and writes 8:12. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0119",
@@ -7312,7 +7312,7 @@ export const ITEMS = [
     structureType: "judgeMinuteRead",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"judgeRead","minute":38,"saidHour":2,"saidMinute":38},"truth":true,"promptText":"Ava reads a clock showing 2:38 and writes 2:38. Is Ava right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":2,"kind":"judgeRead","minute":38,"saidHour":2,"saidMinute":38},"clock":{"hour":2,"minute":38},"truth":true,"figure":"clockFace","promptText":"Ava calls the time on this clock 2:38. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0120",
@@ -7322,7 +7322,7 @@ export const ITEMS = [
     structureType: "judgeMinuteRead",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"judgeRead","minute":51,"saidHour":6,"saidMinute":52},"truth":false,"promptText":"A clock shows 6:51. Omar calls it 6:52. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":6,"kind":"judgeRead","minute":51,"saidHour":6,"saidMinute":52},"clock":{"hour":6,"minute":51},"truth":false,"figure":"clockFace","promptText":"Omar reads this clock as 6:52. Is Omar right?"}},
   },
   {
     itemId: "time-conc-b0821-0121",
@@ -7332,7 +7332,7 @@ export const ITEMS = [
     structureType: "judgeMinuteRead",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":11,"kind":"judgeRead","minute":17,"saidHour":11,"saidMinute":17},"truth":true,"promptText":"Ben reads a clock showing 11:17 and writes 11:17. Is Ben right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"time":{"hour":11,"kind":"judgeRead","minute":17,"saidHour":11,"saidMinute":17},"clock":{"hour":11,"minute":17},"truth":true,"figure":"clockFace","promptText":"Ben looks at this clock and writes 11:17. Is that right?"}},
   },
   {
     itemId: "time-conc-b0821-0122",
@@ -7342,7 +7342,7 @@ export const ITEMS = [
     structureType: "judgeMinuteRead",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"judgeRead","minute":43,"saidHour":5,"saidMinute":44},"truth":false,"promptText":"A clock shows 5:43. Finn calls it 5:44. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"time":{"hour":5,"kind":"judgeRead","minute":43,"saidHour":5,"saidMinute":44},"clock":{"hour":5,"minute":43},"truth":false,"figure":"clockFace","promptText":"Finn calls the time on this clock 5:44. Do you agree?"}},
   },
   {
     itemId: "time-conc-b0821-0123",

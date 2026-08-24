@@ -64,7 +64,9 @@ src/
   components/          widgets (NumberLine, AnalogClock, CoinTray, FractionInput, TenFrame, …)
   premium.js           FREE_MODE_IDS + entitlement logic, mirrored by iOS rowIsActive
 ios/                   SwiftUI app; project.yml is the XcodeGen spec
-scripts/itemGen/       LLM authoring pipeline (authorStructures, rewordItems, structureRules)
+scripts/itemGen/       LLM authoring pipeline; shared files at root, per-mode
+                       template/story/author scripts in scripts/itemGen/<mode>/
+                       (new modes follow this convention)
 docs/                  24 spec/plan files — see the map at the bottom
 supabase/              migrations + Edge Functions (stripe-checkout, stripe-webhook)
 resources/             667MB CCSS Progressions + EngageNY PDFs (gitignored payloads)
@@ -92,6 +94,15 @@ bundle was correct.
 Bank items serve preferentially; an empty cell falls back to the template
 generator, whose prose is *worse*. Reword in place. Per-item Retire in the
 Review queue is the surgical tool for genuinely bad items.
+
+**Show the visual, never describe it — and declare it.** `src/itemBank/figureContracts.js`
+is the per-mode render contract (time + dataGraphs so far): which item classes
+must ship a figure, which are legitimately verbal. Enforced by the
+`missingRequiredFigure` QC fail (assembler/admin/bank:qc), `modeFigures.spec`
+(generator + full-bank sweeps), e2e and simulateKid. When adding a visual mode
+or class, add its contract line — an undeclared class under a contracted mode
+fails CI. History: clock hands described in words shipped 121 items (PR #78);
+the same disease hit money/dataGraphs a month earlier.
 
 **Wording rules land at every layer, not one.** See `.claude/skills/item-authoring`
 for the full ladder: guide → structure templates → generator prompts → QC check

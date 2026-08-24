@@ -138,3 +138,11 @@ Add more providers by exporting `generate({ exemplars, n })` from
 - All generated content lands with `reviewStatus=draft` and must clear the
   admin review queue before any learner sees it, so the blast radius of
   prompt regressions is zero.
+
+## Layout (2026-08-23)
+
+Shared pipeline files live at this root (bankAssembler, structureRules,
+prompt, rewordItems, generateDrafts/Batch, writeDrafts, validateDrafts,
+loadExemplars, exportExemplars, authorStructures, authorGrade4/5, qc/,
+providers/). Per-mode template/story/author scripts live in
+`scripts/itemGen/<mode>/` — new modes follow this convention.

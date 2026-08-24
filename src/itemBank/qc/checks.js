@@ -12,6 +12,7 @@
  *   warn  — a human or the model should look
  */
 
+import { contractVerdict, rendersAnything } from "../figureContracts.js";
 import { checkStructure } from "./structureCheck.js";
 
 const fail = (id, message) => ({ id, severity: "fail", message });
@@ -362,8 +363,10 @@ export const CHECKS = [
       // A visual payload (emoji set, discs, sequence…) means the child counts
       // the PICTURE — prose stating the count is then the caption, not the
       // giveaway. Text-only items get no such excuse.
-      const visualKeys = Object.keys(d).filter((k) => k !== "promptText" && k !== "promptOptions");
-      if (visualKeys.length) return null;
+      // Only keys that actually put pixels on screen count — display.time /
+      // display.truth / display.compare are structured data nothing renders,
+      // and dead data must not exempt an item (the clock-incident loophole).
+      if (rendersAnything(item.question)) return null;
       const nums = [...new Set((text.match(/\d+/g) || []).map(Number))];
       if (nums.length === 1 && nums[0] === answer) {
         return fail(
@@ -418,9 +421,28 @@ export const CHECKS = [
   },
 
   {
+    id: "missingRequiredFigure",
+    run: (item) => {
+      const v = contractVerdict(item.modeId, item.question, item);
+      if (!v.covered || v.ok) return null;
+      if (v.reason === "undeclared") {
+        return fail(
+          "undeclaredFigureClass",
+          `"${v.cls}" has no line in figureContracts.js — declare whether it needs a figure or is legitimately verbal`
+        );
+      }
+      return fail(
+        "missingRequiredFigure",
+        `${v.cls} items must show ${v.satisfiedBy.join(" or ")} — text describing the visual is not the visual`
+      );
+    },
+  },
+
+  {
     id: "describedClockHands",
     run: (item) => {
-      const text = item.question?.display?.promptText || "";
+      const choices = (item.question?.choices || []).filter((c) => typeof c === "string").join(". ");
+      const text = `${item.question?.display?.promptText || ""} ${choices}`;
       const display = item.question?.display || {};
       // A clock item must SHOW the face. Stating where the hands point in
       // words turns clock-reading into reading comprehension (and a judged
@@ -497,8 +519,9 @@ export const CHECKS = [
       const text = d.promptText || "";
       const answer = item.question?.answer;
       if (typeof answer !== "number" || !text) return null;
-      const visualKeys = Object.keys(d).filter((k) => k !== "promptText" && k !== "promptOptions");
-      if (visualKeys.length) return null;
+      // Only keys that actually render count (phantom-data loophole closed —
+      // display.time/.truth/.data exempted 400+ described-not-shown items).
+      if (rendersAnything(item.question)) return null;
       if (EMOJI_RUN.test(text)) return null;
       if (/[?_]\s*[+\-×x÷=]|[+\-×x÷=]\s*[?_]/.test(text)) return null; // equations are not pictures
       const m = text.match(QUANTITY_OF_OBJECTS);

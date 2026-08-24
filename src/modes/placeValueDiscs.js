@@ -109,19 +109,25 @@ const VARIETIES = [
       const t = randInt(0, 9);
       const o = randInt(0, 9);
       const number = h * 100 + t * 10 + o;
-      const correct = `${h} hundreds, ${t} tens, ${o} ones`;
-      const wrong = new Set([
-        `${h} hundreds, ${o} tens, ${t} ones`,
-        `${t} hundreds, ${h} tens, ${o} ones`,
-        `${h} hundreds, ${t} tens, ${(o + 1) % 10} ones`,
-        `${(h % 9) + 1} hundreds, ${t} tens, ${o} ones`,
-      ]);
-      wrong.delete(correct);
+      // Judged single mat: the shown mat is right, place-swapped, or off by
+      // one disc — the mat is SHOWN, never described in choice text.
+      const kind = randInt(0, 2);
+      const cols =
+        kind === 0
+          ? [{ place: 100, count: h }, { place: 10, count: t }, { place: 1, count: o }]
+          : kind === 1
+            ? [{ place: 100, count: h }, { place: 10, count: o }, { place: 1, count: t }]
+            : [{ place: 100, count: h }, { place: 10, count: t }, { place: 1, count: (o + 1) % 10 }];
+      const ok = kind === 0 || (kind === 1 && t === o);
       return {
-        answer: correct,
-        choices: shuffleArray([correct, ...[...wrong].slice(0, 3)]),
-        display: { promptText: `Which chart shows ${number}?` },
-        representation: "symbolic",
+        answer: ok ? "Yes" : "No",
+        choices: ["Yes", "No"],
+        display: {
+          figure: "discMat",
+          discMat: { cols },
+          promptText: `Does this mat show ${number}?`,
+        },
+        representation: "visual",
         cognitiveDemand: "DOK2",
         misconceptions: ["placeValueSlip", "zeroColumnSkipped"],
       };
@@ -397,10 +403,17 @@ const VARIETIES = [
       return {
         answer: number,
         choices: shuffleArray(options),
+        // The mat is SHOWN — never describe the disc layout in words.
         display: {
-          promptText: `A mat shows ${discPhrase(tens, "tens")} and ${discPhrase(ones, "ones")}. Which number do the discs make?`,
+          figure: "discMat",
+          discMat: { cols: [{ place: 10, count: tens }, { place: 1, count: ones }] },
+          promptText: pick([
+            "Which number do the discs on this mat make?",
+            "Read this mat. Which number do the discs show?",
+            "Look at the mat. Which number is shown?",
+          ]),
         },
-        representation: "symbolic",
+        representation: "visual",
         cognitiveDemand: "DOK2",
         misconceptions: ["placeValueSlip", "discCountAsDigit"],
       };
@@ -422,9 +435,15 @@ const VARIETIES = [
         answer: tens * 10 + ones,
         answerType: "numberPad",
         display: {
-          promptText: `${actor} puts ${discPhrase(tens, "tens")} and ${discPhrase(ones, "ones")} on a mat. What number does ${actor} make?`,
+          figure: "discMat",
+          discMat: { cols: [{ place: 10, count: tens }, { place: 1, count: ones }] },
+          promptText: pick([
+            `${actor} puts these discs on a mat. What number does ${actor} make?`,
+            `Here are the discs ${actor} laid out. What number do they make?`,
+            `${actor} builds a number with these discs. What number is it?`,
+          ]),
         },
-        representation: "verbalContext",
+        representation: "visual",
         cognitiveDemand: "DOK1",
         misconceptions: ["placeValueSlip", "discCountAsDigit"],
       };
@@ -447,9 +466,11 @@ const VARIETIES = [
         answer: number + (addTen ? 10 : 1),
         answerType: "numberPad",
         display: {
-          promptText: `The mat shows ${number}. You add 1 more ${addTen ? "tens" : "ones"} disc. What number do the discs show now?`,
+          figure: "discMat",
+          discMat: { cols: [{ place: 10, count: tens }, { place: 1, count: ones }] },
+          promptText: `You add 1 more ${addTen ? "tens" : "ones"} disc to this mat. What number do the discs show now?`,
         },
-        representation: "verbalContext",
+        representation: "visual",
         cognitiveDemand: "DOK2",
         misconceptions: ["placeValueSlip", "discCountAsDigit"],
       };
@@ -470,9 +491,11 @@ const VARIETIES = [
         answer: tens * 10 + ones - (takeTen ? 10 : 1),
         answerType: "numberPad",
         display: {
-          promptText: `The mat shows ${discPhrase(tens, "tens")} and ${discPhrase(ones, "ones")}. Take away 1 ${takeTen ? "tens" : "ones"} disc. What number is left on the mat?`,
+          figure: "discMat",
+          discMat: { cols: [{ place: 10, count: tens }, { place: 1, count: ones }] },
+          promptText: `Take away 1 ${takeTen ? "tens" : "ones"} disc from this mat. What number is left?`,
         },
-        representation: "verbalContext",
+        representation: "visual",
         cognitiveDemand: "DOK2",
         misconceptions: ["placeValueSlip", "discCountAsDigit"],
       };
@@ -521,9 +544,20 @@ const VARIETIES = [
         answer: t1 * 10 + o1 > t2 * 10 + o2 ? "Mat A" : "Mat B",
         choices: ["Mat A", "Mat B"],
         display: {
-          promptText: `Mat A shows ${discPhrase(t1, "tens")} and ${discPhrase(o1, "ones")}. Mat B shows ${discPhrase(t2, "tens")} and ${discPhrase(o2, "ones")}. Which mat shows the bigger number?`,
+          figure: "discMat",
+          discMat: {
+            mats: [
+              { label: "Mat A", cols: [{ place: 10, count: t1 }, { place: 1, count: o1 }] },
+              { label: "Mat B", cols: [{ place: 10, count: t2 }, { place: 1, count: o2 }] },
+            ],
+          },
+          promptText: pick([
+            "Which mat shows the bigger number?",
+            "Compare the two mats. Which one shows more?",
+            "Read both mats. Which mat makes the bigger number?",
+          ]),
         },
-        representation: "symbolic",
+        representation: "visual",
         cognitiveDemand: "DOK2",
         misconceptions: ["placeValueSlip"],
       };

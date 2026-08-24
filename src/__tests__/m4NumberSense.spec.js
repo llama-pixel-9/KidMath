@@ -361,15 +361,12 @@ const DISCS = {
     if (place === "thousands") return Math.floor(number / 1000) % 10;
     return digitAt(number, place);
   },
+  // Reworked 2026-08-24 (figure contract): the mat is a discMat figure, so
+  // these re-derive from display.discMat, not the prose.
   whichChartShows: (q) => {
     const number = numsIn(promptOf(q))[0];
-    const valueOf = (text) => {
-      const [h, t, o] = numsIn(text);
-      return h * 100 + t * 10 + o;
-    };
-    const right = q.choices.filter((c) => valueOf(c) === number);
-    expect(right).toHaveLength(1);
-    return right[0];
+    const shown = q.display.discMat.cols.reduce((s, c) => s + c.place * c.count, 0);
+    return shown === number ? "Yes" : "No";
   },
   missingDiscCount: (q) => {
     const text = promptOf(q);
@@ -406,22 +403,10 @@ const DISCS = {
     return total / boxes;
   },
   countTensDiscs: (q) => q.display.cols.reduce((s, c) => s + c.place * c.count, 0),
-  whichNumberShown: (q) => {
-    const [tens, ones] = numsIn(promptOf(q));
-    return tens * 10 + ones;
-  },
-  makeNumberFromDiscs: (q) => {
-    const [tens, ones] = numsIn(promptOf(q));
-    return tens * 10 + ones;
-  },
-  oneMoreDisc: (q) => {
-    const number = numsIn(promptOf(q))[0];
-    return number + (/1 more tens disc/.test(promptOf(q)) ? 10 : 1);
-  },
-  oneLessDisc: (q) => {
-    const [tens, ones] = numsIn(promptOf(q));
-    return tens * 10 + ones - (/Take away 1 tens disc/.test(promptOf(q)) ? 10 : 1);
-  },
+  whichNumberShown: (q) => q.display.discMat.cols.reduce((s, c) => s + c.place * c.count, 0),
+  makeNumberFromDiscs: (q) => q.display.discMat.cols.reduce((s, c) => s + c.place * c.count, 0),
+  oneMoreDisc: (q) => q.display.discMat.cols.reduce((s, c) => s + c.place * c.count, 0) + (/1 more tens disc/.test(promptOf(q)) ? 10 : 1),
+  oneLessDisc: (q) => q.display.discMat.cols.reduce((s, c) => s + c.place * c.count, 0) - (/1 tens disc/.test(promptOf(q)) ? 10 : 1),
   tradeTenOnesForTens: (q) => {
     // numsIn -> [total ones, 10 per trade, 1 ten received].
     const [total, perTrade] = numsIn(promptOf(q));
@@ -429,8 +414,9 @@ const DISCS = {
     return total / perTrade;
   },
   compareTwoMats: (q) => {
-    const [t1, o1, t2, o2] = numsIn(promptOf(q));
-    return t1 * 10 + o1 > t2 * 10 + o2 ? "Mat A" : "Mat B";
+    const value = (m) => m.cols.reduce((s, c) => s + c.place * c.count, 0);
+    const [a, b] = q.display.discMat.mats;
+    return value(a) > value(b) ? "Mat A" : "Mat B";
   },
   nextDiscCount: (q) => {
     const run = numsIn(promptOf(q));

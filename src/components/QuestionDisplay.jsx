@@ -203,7 +203,7 @@ export default function QuestionDisplay({ question, modeColor, feedback, revealA
     const { Component: Figure, props } = figure;
     const settled = feedback === "correct" || feedback === "wrong";
     return (
-      <div className="text-center space-y-3">
+      <div className="text-center space-y-3" data-qa-figure={q.display?.figure || "inferred"}>
         <Figure theme={theme} {...(props ? props(q, { settled }) : {})} />
         {promptText && (
           <p className={`text-2xl sm:text-3xl font-extrabold ${theme.textPrimary} leading-snug`}>

@@ -166,6 +166,48 @@ const COUNTING_VERBAL = [
   "countOnJudge", "decadeCrossingJudge", "centuryCrossingJudge",
 ];
 
+
+// placeValueDiscs: mat-DESCRIBING classes show a DiscMat; trade/value
+// reasoning classes are legitimately verbal; everything else renders through
+// the interactive discs widget.
+const DISCS_MAT = [
+  "whichNumberMat", "whichNumberMatBig", "whichNumberMatTh", "readJudge",
+  "readJudgeBig", "zeroColumnJudge", "compareMats", "compareMatsBig",
+  // generator varieties
+  "whichNumberShown", "makeNumberFromDiscs", "compareTwoMats", "oneMoreDisc",
+  "oneLessDisc", "whichChartShows",
+];
+const DISCS_VERBAL = [
+  "canTradeJudge", "whichTrade", "whichTradeBig", "predictTradeJudge",
+  "predictTradeBig", "tradeKeepsValueBig", "discWorthCompare",
+  "valueUnchangedJudge", "valueUnchangedBig", "tensOnlyPlan",
+  // generator varieties: construction/trade reasoning, all givens stated
+  "buildWithDiscs", "regroupOnesToTens", "renameNonCanonical",
+  "tradeDownForSubtraction", "predictRegroupNeeded", "midComputationNext",
+  "errorAnalysisNoTrade", "discsForEqualGroups", "dealDiscsDivision",
+  "tradeTenOnesForTens", "nextDiscCount", "missingDiscCount",
+];
+const DISCS_RENDERED = [
+  "storyDiscsNeeded", "storyMatRead", "storyMatReadBig", "storyLooseOnes",
+  "storyTensOut", "storyHundredsOut", "storyNextTrade", "storyScoreMove",
+  "storyEqualMats", "storyCombineMats", "storyDropCount", "storyShareMats",
+  "storyBigScoreMove", "storyMatReadOnesFirst", "storyNextTradeSmall",
+  "storyDropCountMid", "storyMultiMove", "storyLooseOnesBig", "plusDiscWhich",
+  "minusDiscWhich", "moveWhichMid", "equalMatsPlan", "nextDiscCountMid",
+  "errorNoTrade", "moveWhichThousands", "dealShares", "matReadTeens",
+  "matRead", "matReadReversed", "matReadHundreds", "buildDiscCount",
+  "tensOnlyBig", "matReadThousands", "buildDiscCountBig", "discWorth",
+  "overfullMat", "tradeOnesDrill", "tensFromOnes", "onesFromTens",
+  "overfullMatReversed", "renameDrill", "asTensDrill", "overfullMatBig",
+  "tradeTensDrill", "renameHundredsDrill", "mixedRenameDrill",
+  "overfullMatThousands", "tradeHundredsDrill", "plusTenDisc", "plusOneDisc",
+  "minusOneDisc", "minusTenDisc", "plusTwoOnesDiscs", "plusTwoTensDiscs",
+  "discMove", "discMoveBig", "discDropSeq", "equalMats", "discMoveThousands",
+  "discDropSeqBig", "equalMatsBig", "multiDiscMove",
+  // generator varieties served through the widget
+  "readDiscs", "countTensDiscs",
+];
+
 export const FIGURE_CONTRACTS = {
   time: {
     classify: (question, meta) =>
@@ -207,6 +249,18 @@ export const FIGURE_CONTRACTS = {
     unlisted: "fail",
   },
 
+  placeValueDiscs: {
+    specGenerations: 120,
+    classify: (question, meta) =>
+      meta?.structureType ?? question?.metadata?.structureType ?? null,
+    classes: {
+      ...Object.fromEntries(DISCS_MAT.map((st) => [st, { satisfiedBy: ["figure:discMat"] }])),
+      ...Object.fromEntries(DISCS_VERBAL.map((st) => [st, VERBAL])),
+      ...Object.fromEntries(DISCS_RENDERED.map((st) => [st, { satisfiedBy: ["rendered"] }])),
+    },
+    unlisted: "fail",
+  },
+
   dataGraphs: {
     classify: (question, meta) =>
       meta?.structureType ?? question?.metadata?.structureType ?? null,
@@ -228,8 +282,8 @@ export const FIGURE_CONTRACTS = {
  * modeFigures.spec asserts iOS-playable contracted modes require only these —
  * volumeCoordinates stays playable:false until cubeGrid/coordGrid get mirrors.
  */
-export const IOS_MIRRORED_FIGURES = ["clockFace", "barGraph"];
-export const IOS_PLAYABLE_CONTRACT_MODES = ["time", "dataGraphs", "counting"];
+export const IOS_MIRRORED_FIGURES = ["clockFace", "barGraph", "discMat"];
+export const IOS_PLAYABLE_CONTRACT_MODES = ["time", "dataGraphs", "counting", "placeValueDiscs"];
 
 /**
  * Display keys that actually put pixels on screen (mirror of what

@@ -172,7 +172,7 @@ for (const mode of MODES) {
               Boolean(main.querySelector("svg, img, canvas")),
             // scoped to the CARD: for contract-covered classes, prompt text
             // alone must NOT pass (the clock-incident hole).
-            cardDrawsFigure: Boolean((card || main).querySelector("svg, img, canvas")),
+            cardDrawsFigure: Boolean((card || main).querySelector("svg, img, canvas, [data-qa-figure]")),
           };
         }, qa.seq);
         if (!rendered.hasContent) problems.push(`nothing rendered for ${label}`);

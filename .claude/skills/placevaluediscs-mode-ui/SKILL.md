@@ -105,3 +105,14 @@ into equal mats
   rotating child name.
 - Band-2 prose stating 3-digit numbers draws advisory `bandAppropriate`
   warnings; accepted deliberately (matches the generator and 2.NBT).
+
+## Figure contract (2026-08-24)
+
+Mat-describing classes are governed by `src/itemBank/figureContracts.js` —
+the mat is SHOWN (read-only `discMat` figure, `src/components/DiscMat.jsx`,
+iOS mirror `DiscMatView`), never described in words. Swept in place:
+whichNumberMat(+Big/Th), readJudge(+Big), zeroColumnJudge, compareMats(+Big)
+(140 rows) + 6 generator varieties (whichChartShows became a judged single
+mat). Trade/value-reasoning classes (canTradeJudge, whichTrade,
+predictTrade*, valueUnchanged*, tensOnlyPlan…) are the declared verbal
+exception. `display.discMat` is `{cols}` or `{mats: [{label, cols}]}`.

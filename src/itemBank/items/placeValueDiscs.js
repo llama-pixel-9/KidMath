@@ -4602,7 +4602,7 @@ export const ITEMS = [
     structureType: "whichNumberMat",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[4,23,13,31],"display":{"promptText":"Mina puts 1 disc of ten and 3 discs of one on the mat. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":13,"choices":[4,23,13,31],"display":{"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":3,"place":1}]},"promptText":"Mina puts these discs on the mat. Which number is that?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0002",
@@ -4612,7 +4612,7 @@ export const ITEMS = [
     structureType: "whichNumberMat",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":24,"choices":[34,24,42,6],"display":{"promptText":"Theo's mat holds 2 discs worth ten each and 4 discs worth one each. Which number does the mat make?"}},
+    question: {"a":null,"b":null,"op":"count","answer":24,"choices":[34,24,42,6],"display":{"figure":"discMat","discMat":{"cols":[{"count":2,"place":10},{"count":4,"place":1}]},"promptText":"Read the discs on Theo's mat. Which number do they make?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0003",
@@ -4622,7 +4622,7 @@ export const ITEMS = [
     structureType: "whichNumberMat",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":31,"choices":[31,4,41,13],"display":{"promptText":"Ida puts 3 discs of ten and 1 disc of one on the mat. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":31,"choices":[31,4,41,13],"display":{"figure":"discMat","discMat":{"cols":[{"count":3,"place":10},{"count":1,"place":1}]},"promptText":"Ida builds a number with the discs on this mat. Which number is it?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0004",
@@ -4632,7 +4632,7 @@ export const ITEMS = [
     structureType: "whichNumberMat",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":42,"choices":[6,52,24,42],"display":{"promptText":"Zoe's mat holds 4 discs worth ten each and 2 discs worth one each. Which number does the mat make?"}},
+    question: {"a":null,"b":null,"op":"count","answer":42,"choices":[6,52,24,42],"display":{"figure":"discMat","discMat":{"cols":[{"count":4,"place":10},{"count":2,"place":1}]},"promptText":"Here is Zoe's disc mat. Which number does it show?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0005",
@@ -4642,7 +4642,7 @@ export const ITEMS = [
     structureType: "whichNumberMat",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"choices":[28,81,18,9],"display":{"promptText":"Rosa puts 1 disc of ten and 8 discs of one on the mat. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":18,"choices":[28,81,18,9],"display":{"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":8,"place":1}]},"promptText":"Rosa puts these discs on the mat. Which number is that?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0006",
@@ -4652,7 +4652,7 @@ export const ITEMS = [
     structureType: "whichNumberMat",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":27,"choices":[37,72,27,9],"display":{"promptText":"Diego's mat holds 2 discs worth ten each and 7 discs worth one each. Which number does the mat make?"}},
+    question: {"a":null,"b":null,"op":"count","answer":27,"choices":[37,72,27,9],"display":{"figure":"discMat","discMat":{"cols":[{"count":2,"place":10},{"count":7,"place":1}]},"promptText":"Read the discs on Diego's mat. Which number do they make?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0007",
@@ -4662,7 +4662,7 @@ export const ITEMS = [
     structureType: "whichNumberMat",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":35,"choices":[35,8,45,53],"display":{"promptText":"Nora puts 3 discs of ten and 5 discs of one on the mat. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":35,"choices":[35,8,45,53],"display":{"figure":"discMat","discMat":{"cols":[{"count":3,"place":10},{"count":5,"place":1}]},"promptText":"Nora builds a number with the discs on this mat. Which number is it?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0008",
@@ -4672,7 +4672,7 @@ export const ITEMS = [
     structureType: "whichNumberMat",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":46,"choices":[64,10,56,46],"display":{"promptText":"Luca's mat holds 4 discs worth ten each and 6 discs worth one each. Which number does the mat make?"}},
+    question: {"a":null,"b":null,"op":"count","answer":46,"choices":[64,10,56,46],"display":{"figure":"discMat","discMat":{"cols":[{"count":4,"place":10},{"count":6,"place":1}]},"promptText":"Here is Luca's disc mat. Which number does it show?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0009",
@@ -4682,7 +4682,7 @@ export const ITEMS = [
     structureType: "whichNumberMat",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[15,6,51,25],"display":{"promptText":"Ava puts 1 disc of ten and 5 discs of one on the mat. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":15,"choices":[15,6,51,25],"display":{"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":5,"place":1}]},"promptText":"Ava puts these discs on the mat. Which number is that?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0010",
@@ -4692,7 +4692,7 @@ export const ITEMS = [
     structureType: "whichNumberMat",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":29,"choices":[11,29,39,92],"display":{"promptText":"Omar's mat holds 2 discs worth ten each and 9 discs worth one each. Which number does the mat make?"}},
+    question: {"a":null,"b":null,"op":"count","answer":29,"choices":[11,29,39,92],"display":{"figure":"discMat","discMat":{"cols":[{"count":2,"place":10},{"count":9,"place":1}]},"promptText":"Read the discs on Omar's mat. Which number do they make?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0011",
@@ -4702,7 +4702,7 @@ export const ITEMS = [
     structureType: "whichNumberMat",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":38,"choices":[83,48,38,11],"display":{"promptText":"Ben puts 3 discs of ten and 8 discs of one on the mat. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":38,"choices":[83,48,38,11],"display":{"figure":"discMat","discMat":{"cols":[{"count":3,"place":10},{"count":8,"place":1}]},"promptText":"Ben builds a number with the discs on this mat. Which number is it?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0012",
@@ -4712,7 +4712,7 @@ export const ITEMS = [
     structureType: "whichNumberMat",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":41,"choices":[5,14,51,41],"display":{"promptText":"Finn's mat holds 4 discs worth ten each and 1 disc worth one each. Which number does the mat make?"}},
+    question: {"a":null,"b":null,"op":"count","answer":41,"choices":[5,14,51,41],"display":{"figure":"discMat","discMat":{"cols":[{"count":4,"place":10},{"count":1,"place":1}]},"promptText":"Here is Finn's disc mat. Which number does it show?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0013",
@@ -4722,7 +4722,7 @@ export const ITEMS = [
     structureType: "whichNumberMat",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":23,"choices":[33,23,5,32],"display":{"promptText":"Priya puts 2 discs of ten and 3 discs of one on the mat. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":23,"choices":[33,23,5,32],"display":{"figure":"discMat","discMat":{"cols":[{"count":2,"place":10},{"count":3,"place":1}]},"promptText":"Priya puts these discs on the mat. Which number is that?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0014",
@@ -4732,7 +4732,7 @@ export const ITEMS = [
     structureType: "whichNumberMat",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"choices":[16,61,26,7],"display":{"promptText":"Sam's mat holds 1 disc worth ten each and 6 discs worth one each. Which number does the mat make?"}},
+    question: {"a":null,"b":null,"op":"count","answer":16,"choices":[16,61,26,7],"display":{"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":6,"place":1}]},"promptText":"Read the discs on Sam's mat. Which number do they make?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0015",
@@ -4742,7 +4742,7 @@ export const ITEMS = [
     structureType: "whichNumberMat",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":32,"choices":[32,23,42,5],"display":{"promptText":"Nia puts 3 discs of ten and 2 discs of one on the mat. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":32,"choices":[32,23,42,5],"display":{"figure":"discMat","discMat":{"cols":[{"count":3,"place":10},{"count":2,"place":1}]},"promptText":"Nia builds a number with the discs on this mat. Which number is it?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0016",
@@ -4752,7 +4752,7 @@ export const ITEMS = [
     structureType: "whichNumberMat",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":49,"choices":[59,13,49,94],"display":{"promptText":"Kai's mat holds 4 discs worth ten each and 9 discs worth one each. Which number does the mat make?"}},
+    question: {"a":null,"b":null,"op":"count","answer":49,"choices":[59,13,49,94],"display":{"figure":"discMat","discMat":{"cols":[{"count":4,"place":10},{"count":9,"place":1}]},"promptText":"Here is Kai's disc mat. Which number does it show?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0017",
@@ -4762,7 +4762,7 @@ export const ITEMS = [
     structureType: "readJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Theo sees 1 disc of ten and 3 discs of one, and says the mat shows 13. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":3,"place":1}]},"promptText":"Looking at this mat, Theo writes 13. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0018",
@@ -4772,7 +4772,7 @@ export const ITEMS = [
     structureType: "readJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ida counts a mat of 1 disc of ten and 4 discs of one as 5. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":4,"place":1}]},"promptText":"Ida calls the number on this mat 5. Do you agree?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0019",
@@ -4782,7 +4782,7 @@ export const ITEMS = [
     structureType: "readJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe sees 1 disc of ten and 7 discs of one, and says the mat shows 17. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":7,"place":1}]},"promptText":"Zoe reads this mat and says it shows 17. Is Zoe right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0020",
@@ -4792,7 +4792,7 @@ export const ITEMS = [
     structureType: "readJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Rosa counts a mat of 1 disc of ten and 2 discs of one as 3. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":2,"place":1}]},"promptText":"Looking at this mat, Rosa writes 3. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0021",
@@ -4802,7 +4802,7 @@ export const ITEMS = [
     structureType: "readJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Diego sees 1 disc of ten and 9 discs of one, and says the mat shows 19. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":9,"place":1}]},"promptText":"Diego calls the number on this mat 19. Do you agree?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0022",
@@ -4812,7 +4812,7 @@ export const ITEMS = [
     structureType: "readJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nora counts a mat of 1 disc of ten and 5 discs of one as 6. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":5,"place":1}]},"promptText":"Nora reads this mat and says it shows 6. Is Nora right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0023",
@@ -4822,7 +4822,7 @@ export const ITEMS = [
     structureType: "readJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Luca sees 1 disc of ten and 6 discs of one, and says the mat shows 16. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":6,"place":1}]},"promptText":"Looking at this mat, Luca writes 16. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0024",
@@ -4832,7 +4832,7 @@ export const ITEMS = [
     structureType: "readJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ava counts a mat of 1 disc of ten and 8 discs of one as 9. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":8,"place":1}]},"promptText":"Ava calls the number on this mat 9. Do you agree?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0025",
@@ -4842,7 +4842,7 @@ export const ITEMS = [
     structureType: "readJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Omar sees 1 disc of ten and 1 disc of one, and says the mat shows 11. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":1,"place":1}]},"promptText":"Omar reads this mat and says it shows 11. Is Omar right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0026",
@@ -4852,7 +4852,7 @@ export const ITEMS = [
     structureType: "readJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Ben counts a mat of 1 disc of ten and 3 discs of one as 4. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":3,"place":1}]},"promptText":"Looking at this mat, Ben writes 4. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0027",
@@ -4862,7 +4862,7 @@ export const ITEMS = [
     structureType: "readJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Finn sees 1 disc of ten and 5 discs of one, and says the mat shows 15. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":5,"place":1}]},"promptText":"Finn calls the number on this mat 15. Do you agree?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0028",
@@ -4872,7 +4872,7 @@ export const ITEMS = [
     structureType: "readJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Priya counts a mat of 1 disc of ten and 9 discs of one as 10. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":9,"place":1}]},"promptText":"Priya reads this mat and says it shows 10. Is Priya right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0029",
@@ -4882,7 +4882,7 @@ export const ITEMS = [
     structureType: "readJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Sam sees 1 disc of ten and 2 discs of one, and says the mat shows 12. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":2,"place":1}]},"promptText":"Looking at this mat, Sam writes 12. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0030",
@@ -4892,7 +4892,7 @@ export const ITEMS = [
     structureType: "readJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Nia counts a mat of 1 disc of ten and 7 discs of one as 8. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":7,"place":1}]},"promptText":"Nia calls the number on this mat 8. Do you agree?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0031",
@@ -4902,7 +4902,7 @@ export const ITEMS = [
     structureType: "readJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Kai sees 1 disc of ten and 8 discs of one, and says the mat shows 18. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":8,"place":1}]},"promptText":"Kai reads this mat and says it shows 18. Is Kai right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0032",
@@ -4912,7 +4912,7 @@ export const ITEMS = [
     structureType: "readJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"June counts a mat of 1 disc of ten and 6 discs of one as 7. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":6,"place":1}]},"promptText":"Looking at this mat, June writes 7. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0033",
@@ -4922,7 +4922,7 @@ export const ITEMS = [
     structureType: "readJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Lily sees 1 disc of ten and 4 discs of one, and says the mat shows 14. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":4,"place":1}]},"promptText":"Lily calls the number on this mat 14. Do you agree?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0034",
@@ -4932,7 +4932,7 @@ export const ITEMS = [
     structureType: "readJudge",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"Amara counts a mat of 1 disc of ten and 1 disc of one as 2. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":1,"place":10},{"count":1,"place":1}]},"promptText":"Amara reads this mat and says it shows 2. Is Amara right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0035",
@@ -4942,7 +4942,7 @@ export const ITEMS = [
     structureType: "compareMats",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"promptText":"June compares two mats. Mat A shows 1 disc of ten and 9 discs of one. Mat B shows 2 discs of ten and 1 disc of one. Which mat shows the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":1,"place":10},{"count":9,"place":1}],"label":"Mat A"},{"cols":[{"count":2,"place":10},{"count":1,"place":1}],"label":"Mat B"}]},"promptText":"Read both of June's mats. Which one makes the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0036",
@@ -4952,7 +4952,7 @@ export const ITEMS = [
     structureType: "compareMats",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"promptText":"Lily checks two mats: A holds 2 discs of ten and 8 discs of one, B holds 3 discs of ten and 0 discs of one. Which mat makes the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":2,"place":10},{"count":8,"place":1}],"label":"Mat A"},{"cols":[{"count":3,"place":10},{"count":0,"place":1}],"label":"Mat B"}]},"promptText":"Lily lays out two mats. Which mat shows more?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0037",
@@ -4962,7 +4962,7 @@ export const ITEMS = [
     structureType: "compareMats",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"promptText":"Amara compares two mats. Mat A shows 1 disc of ten and 5 discs of one. Mat B shows 2 discs of ten and 2 discs of one. Which mat shows the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":1,"place":10},{"count":5,"place":1}],"label":"Mat A"},{"cols":[{"count":2,"place":10},{"count":2,"place":1}],"label":"Mat B"}]},"promptText":"Amara compares two mats. Which mat shows the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0038",
@@ -4972,7 +4972,7 @@ export const ITEMS = [
     structureType: "compareMats",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"promptText":"Leo checks two mats: A holds 3 discs of ten and 1 disc of one, B holds 2 discs of ten and 9 discs of one. Which mat makes the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":3,"place":10},{"count":1,"place":1}],"label":"Mat A"},{"cols":[{"count":2,"place":10},{"count":9,"place":1}],"label":"Mat B"}]},"promptText":"Read both of Leo's mats. Which one makes the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0039",
@@ -4982,7 +4982,7 @@ export const ITEMS = [
     structureType: "compareMats",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"promptText":"Mina compares two mats. Mat A shows 4 discs of ten and 0 discs of one. Mat B shows 3 discs of ten and 8 discs of one. Which mat shows the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":4,"place":10},{"count":0,"place":1}],"label":"Mat A"},{"cols":[{"count":3,"place":10},{"count":8,"place":1}],"label":"Mat B"}]},"promptText":"Mina lays out two mats. Which mat shows more?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0040",
@@ -4992,7 +4992,7 @@ export const ITEMS = [
     structureType: "compareMats",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"promptText":"Theo checks two mats: A holds 1 disc of ten and 7 discs of one, B holds 2 discs of ten and 0 discs of one. Which mat makes the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":1,"place":10},{"count":7,"place":1}],"label":"Mat A"},{"cols":[{"count":2,"place":10},{"count":0,"place":1}],"label":"Mat B"}]},"promptText":"Theo compares two mats. Which mat shows the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0041",
@@ -5002,7 +5002,7 @@ export const ITEMS = [
     structureType: "compareMats",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"promptText":"Ida compares two mats. Mat A shows 2 discs of ten and 4 discs of one. Mat B shows 1 disc of ten and 9 discs of one. Which mat shows the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":2,"place":10},{"count":4,"place":1}],"label":"Mat A"},{"cols":[{"count":1,"place":10},{"count":9,"place":1}],"label":"Mat B"}]},"promptText":"Read both of Ida's mats. Which one makes the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0042",
@@ -5012,7 +5012,7 @@ export const ITEMS = [
     structureType: "compareMats",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"promptText":"Zoe checks two mats: A holds 3 discs of ten and 6 discs of one, B holds 4 discs of ten and 1 disc of one. Which mat makes the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":3,"place":10},{"count":6,"place":1}],"label":"Mat A"},{"cols":[{"count":4,"place":10},{"count":1,"place":1}],"label":"Mat B"}]},"promptText":"Zoe lays out two mats. Which mat shows more?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0043",
@@ -5022,7 +5022,7 @@ export const ITEMS = [
     structureType: "compareMats",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"promptText":"Rosa compares two mats. Mat A shows 2 discs of ten and 2 discs of one. Mat B shows 1 disc of ten and 8 discs of one. Which mat shows the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":2,"place":10},{"count":2,"place":1}],"label":"Mat A"},{"cols":[{"count":1,"place":10},{"count":8,"place":1}],"label":"Mat B"}]},"promptText":"Rosa compares two mats. Which mat shows the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0044",
@@ -5032,7 +5032,7 @@ export const ITEMS = [
     structureType: "compareMats",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"promptText":"Diego checks two mats: A holds 4 discs of ten and 3 discs of one, B holds 3 discs of ten and 9 discs of one. Which mat makes the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":4,"place":10},{"count":3,"place":1}],"label":"Mat A"},{"cols":[{"count":3,"place":10},{"count":9,"place":1}],"label":"Mat B"}]},"promptText":"Read both of Diego's mats. Which one makes the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0045",
@@ -5042,7 +5042,7 @@ export const ITEMS = [
     structureType: "compareMats",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"promptText":"Nora compares two mats. Mat A shows 1 disc of ten and 1 disc of one. Mat B shows 2 discs of ten and 0 discs of one. Which mat shows the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":1,"place":10},{"count":1,"place":1}],"label":"Mat A"},{"cols":[{"count":2,"place":10},{"count":0,"place":1}],"label":"Mat B"}]},"promptText":"Nora lays out two mats. Which mat shows more?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0046",
@@ -5052,7 +5052,7 @@ export const ITEMS = [
     structureType: "compareMats",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"promptText":"Luca checks two mats: A holds 3 discs of ten and 5 discs of one, B holds 2 discs of ten and 7 discs of one. Which mat makes the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":3,"place":10},{"count":5,"place":1}],"label":"Mat A"},{"cols":[{"count":2,"place":10},{"count":7,"place":1}],"label":"Mat B"}]},"promptText":"Luca compares two mats. Which mat shows the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0047",
@@ -5062,7 +5062,7 @@ export const ITEMS = [
     structureType: "compareMats",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"promptText":"Ava compares two mats. Mat A shows 2 discs of ten and 6 discs of one. Mat B shows 3 discs of ten and 2 discs of one. Which mat shows the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":2,"place":10},{"count":6,"place":1}],"label":"Mat A"},{"cols":[{"count":3,"place":10},{"count":2,"place":1}],"label":"Mat B"}]},"promptText":"Read both of Ava's mats. Which one makes the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0048",
@@ -5072,7 +5072,7 @@ export const ITEMS = [
     structureType: "compareMats",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"promptText":"Omar checks two mats: A holds 4 discs of ten and 8 discs of one, B holds 4 discs of ten and 2 discs of one. Which mat makes the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":4,"place":10},{"count":8,"place":1}],"label":"Mat A"},{"cols":[{"count":4,"place":10},{"count":2,"place":1}],"label":"Mat B"}]},"promptText":"Omar lays out two mats. Which mat shows more?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0049",
@@ -5082,7 +5082,7 @@ export const ITEMS = [
     structureType: "compareMats",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"promptText":"Ben compares two mats. Mat A shows 1 disc of ten and 4 discs of one. Mat B shows 1 disc of ten and 8 discs of one. Which mat shows the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":1,"place":10},{"count":4,"place":1}],"label":"Mat A"},{"cols":[{"count":1,"place":10},{"count":8,"place":1}],"label":"Mat B"}]},"promptText":"Ben compares two mats. Which mat shows the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0050",
@@ -5092,7 +5092,7 @@ export const ITEMS = [
     structureType: "compareMats",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"promptText":"Finn checks two mats: A holds 3 discs of ten and 3 discs of one, B holds 4 discs of ten and 0 discs of one. Which mat makes the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":3,"place":10},{"count":3,"place":1}],"label":"Mat A"},{"cols":[{"count":4,"place":10},{"count":0,"place":1}],"label":"Mat B"}]},"promptText":"Read both of Finn's mats. Which one makes the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0051",
@@ -5102,7 +5102,7 @@ export const ITEMS = [
     structureType: "compareMats",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"promptText":"Priya compares two mats. Mat A shows 2 discs of ten and 5 discs of one. Mat B shows 2 discs of ten and 9 discs of one. Which mat shows the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":2,"place":10},{"count":5,"place":1}],"label":"Mat A"},{"cols":[{"count":2,"place":10},{"count":9,"place":1}],"label":"Mat B"}]},"promptText":"Priya lays out two mats. Which mat shows more?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0052",
@@ -5112,7 +5112,7 @@ export const ITEMS = [
     structureType: "compareMats",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"promptText":"Sam checks two mats: A holds 4 discs of ten and 7 discs of one, B holds 3 discs of ten and 4 discs of one. Which mat makes the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":4,"place":10},{"count":7,"place":1}],"label":"Mat A"},{"cols":[{"count":3,"place":10},{"count":4,"place":1}],"label":"Mat B"}]},"promptText":"Sam compares two mats. Which mat shows the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0053",
@@ -5122,7 +5122,7 @@ export const ITEMS = [
     structureType: "whichNumberMatBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":347,"choices":[347,14,437,374],"display":{"promptText":"Luca lays out 3 discs of one hundred, 4 discs of ten, and 7 discs of one. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":347,"choices":[347,14,437,374],"display":{"figure":"discMat","discMat":{"cols":[{"count":3,"place":100},{"count":4,"place":10},{"count":7,"place":1}]},"promptText":"Luca puts these discs on the mat. Which number is that?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0054",
@@ -5132,7 +5132,7 @@ export const ITEMS = [
     structureType: "whichNumberMatBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":582,"choices":[528,852,15,582],"display":{"promptText":"Ava's mat: 5 discs worth one hundred, 8 discs worth ten, 2 discs worth one. Which number does it show?"}},
+    question: {"a":null,"b":null,"op":"count","answer":582,"choices":[528,852,15,582],"display":{"figure":"discMat","discMat":{"cols":[{"count":5,"place":100},{"count":8,"place":10},{"count":2,"place":1}]},"promptText":"Read the discs on Ava's mat. Which number do they make?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0055",
@@ -5142,7 +5142,7 @@ export const ITEMS = [
     structureType: "whichNumberMatBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":816,"choices":[861,816,186,15],"display":{"promptText":"Omar lays out 8 discs of one hundred, 1 disc of ten, and 6 discs of one. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":816,"choices":[861,816,186,15],"display":{"figure":"discMat","discMat":{"cols":[{"count":8,"place":100},{"count":1,"place":10},{"count":6,"place":1}]},"promptText":"Omar builds a number with the discs on this mat. Which number is it?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0056",
@@ -5152,7 +5152,7 @@ export const ITEMS = [
     structureType: "whichNumberMatBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":493,"choices":[493,439,16,943],"display":{"promptText":"Ben's mat: 4 discs worth one hundred, 9 discs worth ten, 3 discs worth one. Which number does it show?"}},
+    question: {"a":null,"b":null,"op":"count","answer":493,"choices":[493,439,16,943],"display":{"figure":"discMat","discMat":{"cols":[{"count":4,"place":100},{"count":9,"place":10},{"count":3,"place":1}]},"promptText":"Here is Ben's disc mat. Which number does it show?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0057",
@@ -5162,7 +5162,7 @@ export const ITEMS = [
     structureType: "whichNumberMatBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":265,"choices":[13,265,625,256],"display":{"promptText":"Finn lays out 2 discs of one hundred, 6 discs of ten, and 5 discs of one. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":265,"choices":[13,265,625,256],"display":{"figure":"discMat","discMat":{"cols":[{"count":2,"place":100},{"count":6,"place":10},{"count":5,"place":1}]},"promptText":"Finn puts these discs on the mat. Which number is that?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0058",
@@ -5172,7 +5172,7 @@ export const ITEMS = [
     structureType: "whichNumberMatBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":739,"choices":[739,793,19,379],"display":{"promptText":"Priya's mat: 7 discs worth one hundred, 3 discs worth ten, 9 discs worth one. Which number does it show?"}},
+    question: {"a":null,"b":null,"op":"count","answer":739,"choices":[739,793,19,379],"display":{"figure":"discMat","discMat":{"cols":[{"count":7,"place":100},{"count":3,"place":10},{"count":9,"place":1}]},"promptText":"Read the discs on Priya's mat. Which number do they make?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0059",
@@ -5182,7 +5182,7 @@ export const ITEMS = [
     structureType: "whichNumberMatBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":924,"choices":[942,924,15,294],"display":{"promptText":"Sam lays out 9 discs of one hundred, 2 discs of ten, and 4 discs of one. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":924,"choices":[942,924,15,294],"display":{"figure":"discMat","discMat":{"cols":[{"count":9,"place":100},{"count":2,"place":10},{"count":4,"place":1}]},"promptText":"Sam builds a number with the discs on this mat. Which number is it?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0060",
@@ -5192,7 +5192,7 @@ export const ITEMS = [
     structureType: "whichNumberMatBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":675,"choices":[18,765,657,675],"display":{"promptText":"Nia's mat: 6 discs worth one hundred, 7 discs worth ten, 5 discs worth one. Which number does it show?"}},
+    question: {"a":null,"b":null,"op":"count","answer":675,"choices":[18,765,657,675],"display":{"figure":"discMat","discMat":{"cols":[{"count":6,"place":100},{"count":7,"place":10},{"count":5,"place":1}]},"promptText":"Here is Nia's disc mat. Which number does it show?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0061",
@@ -5202,7 +5202,7 @@ export const ITEMS = [
     structureType: "whichNumberMatBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":128,"choices":[182,128,218,11],"display":{"promptText":"Kai lays out 1 disc of one hundred, 2 discs of ten, and 8 discs of one. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":128,"choices":[182,128,218,11],"display":{"figure":"discMat","discMat":{"cols":[{"count":1,"place":100},{"count":2,"place":10},{"count":8,"place":1}]},"promptText":"Kai puts these discs on the mat. Which number is that?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0062",
@@ -5212,7 +5212,7 @@ export const ITEMS = [
     structureType: "whichNumberMatBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":356,"choices":[365,356,14,536],"display":{"promptText":"June's mat: 3 discs worth one hundred, 5 discs worth ten, 6 discs worth one. Which number does it show?"}},
+    question: {"a":null,"b":null,"op":"count","answer":356,"choices":[365,356,14,536],"display":{"figure":"discMat","discMat":{"cols":[{"count":3,"place":100},{"count":5,"place":10},{"count":6,"place":1}]},"promptText":"Read the discs on June's mat. Which number do they make?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0063",
@@ -5222,7 +5222,7 @@ export const ITEMS = [
     structureType: "whichNumberMatBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":741,"choices":[714,741,12,471],"display":{"promptText":"Lily lays out 7 discs of one hundred, 4 discs of ten, and 1 disc of one. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":741,"choices":[714,741,12,471],"display":{"figure":"discMat","discMat":{"cols":[{"count":7,"place":100},{"count":4,"place":10},{"count":1,"place":1}]},"promptText":"Lily builds a number with the discs on this mat. Which number is it?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0064",
@@ -5232,7 +5232,7 @@ export const ITEMS = [
     structureType: "whichNumberMatBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":869,"choices":[23,896,689,869],"display":{"promptText":"Amara's mat: 8 discs worth one hundred, 6 discs worth ten, 9 discs worth one. Which number does it show?"}},
+    question: {"a":null,"b":null,"op":"count","answer":869,"choices":[23,896,689,869],"display":{"figure":"discMat","discMat":{"cols":[{"count":8,"place":100},{"count":6,"place":10},{"count":9,"place":1}]},"promptText":"Here is Amara's disc mat. Which number does it show?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0065",
@@ -5242,7 +5242,7 @@ export const ITEMS = [
     structureType: "whichNumberMatBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":235,"choices":[253,235,10,325],"display":{"promptText":"Leo lays out 2 discs of one hundred, 3 discs of ten, and 5 discs of one. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":235,"choices":[253,235,10,325],"display":{"figure":"discMat","discMat":{"cols":[{"count":2,"place":100},{"count":3,"place":10},{"count":5,"place":1}]},"promptText":"Leo puts these discs on the mat. Which number is that?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0066",
@@ -5252,7 +5252,7 @@ export const ITEMS = [
     structureType: "whichNumberMatBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":517,"choices":[517,157,571,13],"display":{"promptText":"Mina's mat: 5 discs worth one hundred, 1 disc worth ten, 7 discs worth one. Which number does it show?"}},
+    question: {"a":null,"b":null,"op":"count","answer":517,"choices":[517,157,571,13],"display":{"figure":"discMat","discMat":{"cols":[{"count":5,"place":100},{"count":1,"place":10},{"count":7,"place":1}]},"promptText":"Read the discs on Mina's mat. Which number do they make?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0067",
@@ -5262,7 +5262,7 @@ export const ITEMS = [
     structureType: "whichNumberMatBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":682,"choices":[682,16,628,862],"display":{"promptText":"Theo lays out 6 discs of one hundred, 8 discs of ten, and 2 discs of one. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":682,"choices":[682,16,628,862],"display":{"figure":"discMat","discMat":{"cols":[{"count":6,"place":100},{"count":8,"place":10},{"count":2,"place":1}]},"promptText":"Theo builds a number with the discs on this mat. Which number is it?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0068",
@@ -5272,7 +5272,7 @@ export const ITEMS = [
     structureType: "whichNumberMatBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":951,"choices":[591,915,951,15],"display":{"promptText":"Ida's mat: 9 discs worth one hundred, 5 discs worth ten, 1 disc worth one. Which number does it show?"}},
+    question: {"a":null,"b":null,"op":"count","answer":951,"choices":[591,915,951,15],"display":{"figure":"discMat","discMat":{"cols":[{"count":9,"place":100},{"count":5,"place":10},{"count":1,"place":1}]},"promptText":"Here is Ida's disc mat. Which number does it show?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0069",
@@ -5282,7 +5282,7 @@ export const ITEMS = [
     structureType: "whichNumberMatBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":438,"choices":[483,348,438,15],"display":{"promptText":"Zoe lays out 4 discs of one hundred, 3 discs of ten, and 8 discs of one. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":438,"choices":[483,348,438,15],"display":{"figure":"discMat","discMat":{"cols":[{"count":4,"place":100},{"count":3,"place":10},{"count":8,"place":1}]},"promptText":"Zoe puts these discs on the mat. Which number is that?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0070",
@@ -5292,7 +5292,7 @@ export const ITEMS = [
     structureType: "whichNumberMatBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":163,"choices":[10,136,613,163],"display":{"promptText":"Rosa's mat: 1 disc worth one hundred, 6 discs worth ten, 3 discs worth one. Which number does it show?"}},
+    question: {"a":null,"b":null,"op":"count","answer":163,"choices":[10,136,613,163],"display":{"figure":"discMat","discMat":{"cols":[{"count":1,"place":100},{"count":6,"place":10},{"count":3,"place":1}]},"promptText":"Read the discs on Rosa's mat. Which number do they make?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0071",
@@ -5302,7 +5302,7 @@ export const ITEMS = [
     structureType: "readJudgeBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Kai reads a mat of 3 discs of one hundred, 4 discs of ten, and 7 discs of one as 347. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":3,"place":100},{"count":4,"place":10},{"count":7,"place":1}]},"promptText":"Looking at this mat, Kai writes 347. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0072",
@@ -5312,7 +5312,7 @@ export const ITEMS = [
     structureType: "readJudgeBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat holds 5 discs of one hundred, 8 discs of ten, and 2 discs of one. June writes 528. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":5,"place":100},{"count":8,"place":10},{"count":2,"place":1}]},"promptText":"June calls the number on this mat 528. Do you agree?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0073",
@@ -5322,7 +5322,7 @@ export const ITEMS = [
     structureType: "readJudgeBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Lily reads a mat of 8 discs of one hundred, 1 disc of ten, and 6 discs of one as 816. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":8,"place":100},{"count":1,"place":10},{"count":6,"place":1}]},"promptText":"Lily reads this mat and says it shows 816. Is Lily right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0074",
@@ -5332,7 +5332,7 @@ export const ITEMS = [
     structureType: "readJudgeBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat holds 4 discs of one hundred, 9 discs of ten, and 3 discs of one. Amara writes 439. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":4,"place":100},{"count":9,"place":10},{"count":3,"place":1}]},"promptText":"Looking at this mat, Amara writes 439. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0075",
@@ -5342,7 +5342,7 @@ export const ITEMS = [
     structureType: "readJudgeBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Leo reads a mat of 2 discs of one hundred, 6 discs of ten, and 5 discs of one as 265. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":2,"place":100},{"count":6,"place":10},{"count":5,"place":1}]},"promptText":"Leo calls the number on this mat 265. Do you agree?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0076",
@@ -5352,7 +5352,7 @@ export const ITEMS = [
     structureType: "readJudgeBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat holds 7 discs of one hundred, 3 discs of ten, and 9 discs of one. Mina writes 793. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":7,"place":100},{"count":3,"place":10},{"count":9,"place":1}]},"promptText":"Mina reads this mat and says it shows 793. Is Mina right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0077",
@@ -5362,7 +5362,7 @@ export const ITEMS = [
     structureType: "readJudgeBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Theo reads a mat of 9 discs of one hundred, 2 discs of ten, and 4 discs of one as 924. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":9,"place":100},{"count":2,"place":10},{"count":4,"place":1}]},"promptText":"Looking at this mat, Theo writes 924. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0078",
@@ -5372,7 +5372,7 @@ export const ITEMS = [
     structureType: "readJudgeBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat holds 6 discs of one hundred, 7 discs of ten, and 5 discs of one. Ida writes 657. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":6,"place":100},{"count":7,"place":10},{"count":5,"place":1}]},"promptText":"Ida calls the number on this mat 657. Do you agree?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0079",
@@ -5382,7 +5382,7 @@ export const ITEMS = [
     structureType: "readJudgeBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Zoe reads a mat of 1 disc of one hundred, 2 discs of ten, and 8 discs of one as 128. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":1,"place":100},{"count":2,"place":10},{"count":8,"place":1}]},"promptText":"Zoe reads this mat and says it shows 128. Is Zoe right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0080",
@@ -5392,7 +5392,7 @@ export const ITEMS = [
     structureType: "readJudgeBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat holds 3 discs of one hundred, 5 discs of ten, and 6 discs of one. Rosa writes 365. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":3,"place":100},{"count":5,"place":10},{"count":6,"place":1}]},"promptText":"Looking at this mat, Rosa writes 365. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0081",
@@ -5402,7 +5402,7 @@ export const ITEMS = [
     structureType: "readJudgeBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Diego reads a mat of 7 discs of one hundred, 4 discs of ten, and 1 disc of one as 741. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":7,"place":100},{"count":4,"place":10},{"count":1,"place":1}]},"promptText":"Diego calls the number on this mat 741. Do you agree?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0082",
@@ -5412,7 +5412,7 @@ export const ITEMS = [
     structureType: "readJudgeBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat holds 8 discs of one hundred, 6 discs of ten, and 9 discs of one. Nora writes 896. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":8,"place":100},{"count":6,"place":10},{"count":9,"place":1}]},"promptText":"Nora reads this mat and says it shows 896. Is Nora right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0083",
@@ -5422,7 +5422,7 @@ export const ITEMS = [
     structureType: "readJudgeBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Luca reads a mat of 2 discs of one hundred, 3 discs of ten, and 5 discs of one as 235. Is Luca right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":2,"place":100},{"count":3,"place":10},{"count":5,"place":1}]},"promptText":"Looking at this mat, Luca writes 235. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0084",
@@ -5432,7 +5432,7 @@ export const ITEMS = [
     structureType: "readJudgeBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat holds 5 discs of one hundred, 1 disc of ten, and 7 discs of one. Ava writes 571. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":5,"place":100},{"count":1,"place":10},{"count":7,"place":1}]},"promptText":"Ava calls the number on this mat 571. Do you agree?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0085",
@@ -5442,7 +5442,7 @@ export const ITEMS = [
     structureType: "readJudgeBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Omar reads a mat of 6 discs of one hundred, 8 discs of ten, and 2 discs of one as 682. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":6,"place":100},{"count":8,"place":10},{"count":2,"place":1}]},"promptText":"Omar reads this mat and says it shows 682. Is Omar right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0086",
@@ -5452,7 +5452,7 @@ export const ITEMS = [
     structureType: "readJudgeBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat holds 9 discs of one hundred, 5 discs of ten, and 1 disc of one. Ben writes 915. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":9,"place":100},{"count":5,"place":10},{"count":1,"place":1}]},"promptText":"Looking at this mat, Ben writes 915. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0087",
@@ -5462,7 +5462,7 @@ export const ITEMS = [
     structureType: "compareMatsBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"promptText":"Lily compares two mats. Mat A shows 1 disc of one hundred, 9 discs of ten, 5 discs of one. Mat B shows 2 discs of one hundred, 1 disc of ten, 0 discs of one. Which mat shows the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":1,"place":100},{"count":9,"place":10},{"count":5,"place":1}],"label":"Mat A"},{"cols":[{"count":2,"place":100},{"count":1,"place":10},{"count":0,"place":1}],"label":"Mat B"}]},"promptText":"Lily compares two mats. Which mat shows the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0088",
@@ -5472,7 +5472,7 @@ export const ITEMS = [
     structureType: "compareMatsBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"promptText":"Amara checks two mats: A holds 2 discs of one hundred, 8 discs of ten, 3 discs of one, B holds 3 discs of one hundred, 0 discs of ten, 1 disc of one. Which mat makes the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":2,"place":100},{"count":8,"place":10},{"count":3,"place":1}],"label":"Mat A"},{"cols":[{"count":3,"place":100},{"count":0,"place":10},{"count":1,"place":1}],"label":"Mat B"}]},"promptText":"Read both of Amara's mats. Which one makes the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0089",
@@ -5482,7 +5482,7 @@ export const ITEMS = [
     structureType: "compareMatsBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"promptText":"Leo compares two mats. Mat A shows 4 discs of one hundred, 1 disc of ten, 7 discs of one. Mat B shows 3 discs of one hundred, 9 discs of ten, 8 discs of one. Which mat shows the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":4,"place":100},{"count":1,"place":10},{"count":7,"place":1}],"label":"Mat A"},{"cols":[{"count":3,"place":100},{"count":9,"place":10},{"count":8,"place":1}],"label":"Mat B"}]},"promptText":"Leo lays out two mats. Which mat shows more?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0090",
@@ -5492,7 +5492,7 @@ export const ITEMS = [
     structureType: "compareMatsBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"promptText":"Mina checks two mats: A holds 2 discs of one hundred, 2 discs of ten, 6 discs of one, B holds 1 disc of one hundred, 9 discs of ten, 9 discs of one. Which mat makes the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":2,"place":100},{"count":2,"place":10},{"count":6,"place":1}],"label":"Mat A"},{"cols":[{"count":1,"place":100},{"count":9,"place":10},{"count":9,"place":1}],"label":"Mat B"}]},"promptText":"Mina compares two mats. Which mat shows the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0091",
@@ -5502,7 +5502,7 @@ export const ITEMS = [
     structureType: "compareMatsBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"promptText":"Theo compares two mats. Mat A shows 5 discs of one hundred, 0 discs of ten, 4 discs of one. Mat B shows 4 discs of one hundred, 9 discs of ten, 8 discs of one. Which mat shows the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":5,"place":100},{"count":0,"place":10},{"count":4,"place":1}],"label":"Mat A"},{"cols":[{"count":4,"place":100},{"count":9,"place":10},{"count":8,"place":1}],"label":"Mat B"}]},"promptText":"Read both of Theo's mats. Which one makes the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0092",
@@ -5512,7 +5512,7 @@ export const ITEMS = [
     structureType: "compareMatsBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"promptText":"Ida checks two mats: A holds 3 discs of one hundred, 6 discs of ten, 2 discs of one, B holds 3 discs of one hundred, 5 discs of ten, 9 discs of one. Which mat makes the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":3,"place":100},{"count":6,"place":10},{"count":2,"place":1}],"label":"Mat A"},{"cols":[{"count":3,"place":100},{"count":5,"place":10},{"count":9,"place":1}],"label":"Mat B"}]},"promptText":"Ida lays out two mats. Which mat shows more?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0093",
@@ -5522,7 +5522,7 @@ export const ITEMS = [
     structureType: "compareMatsBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"promptText":"Zoe compares two mats. Mat A shows 6 discs of one hundred, 1 disc of ten, 0 discs of one. Mat B shows 5 discs of one hundred, 9 discs of ten, 9 discs of one. Which mat shows the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":6,"place":100},{"count":1,"place":10},{"count":0,"place":1}],"label":"Mat A"},{"cols":[{"count":5,"place":100},{"count":9,"place":10},{"count":9,"place":1}],"label":"Mat B"}]},"promptText":"Zoe compares two mats. Which mat shows the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0094",
@@ -5532,7 +5532,7 @@ export const ITEMS = [
     structureType: "compareMatsBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"promptText":"Rosa checks two mats: A holds 2 discs of one hundred, 7 discs of ten, 4 discs of one, B holds 3 discs of one hundred, 0 discs of ten, 0 discs of one. Which mat makes the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":2,"place":100},{"count":7,"place":10},{"count":4,"place":1}],"label":"Mat A"},{"cols":[{"count":3,"place":100},{"count":0,"place":10},{"count":0,"place":1}],"label":"Mat B"}]},"promptText":"Read both of Rosa's mats. Which one makes the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0095",
@@ -5542,7 +5542,7 @@ export const ITEMS = [
     structureType: "compareMatsBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"promptText":"Diego compares two mats. Mat A shows 7 discs of one hundred, 3 discs of ten, 2 discs of one. Mat B shows 7 discs of one hundred, 2 discs of ten, 9 discs of one. Which mat shows the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":7,"place":100},{"count":3,"place":10},{"count":2,"place":1}],"label":"Mat A"},{"cols":[{"count":7,"place":100},{"count":2,"place":10},{"count":9,"place":1}],"label":"Mat B"}]},"promptText":"Diego lays out two mats. Which mat shows more?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0096",
@@ -5552,7 +5552,7 @@ export const ITEMS = [
     structureType: "compareMatsBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"promptText":"Nora checks two mats: A holds 1 disc of one hundred, 8 discs of ten, 6 discs of one, B holds 2 discs of one hundred, 0 discs of ten, 3 discs of one. Which mat makes the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":1,"place":100},{"count":8,"place":10},{"count":6,"place":1}],"label":"Mat A"},{"cols":[{"count":2,"place":100},{"count":0,"place":10},{"count":3,"place":1}],"label":"Mat B"}]},"promptText":"Nora compares two mats. Which mat shows the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0097",
@@ -5562,7 +5562,7 @@ export const ITEMS = [
     structureType: "compareMatsBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"promptText":"Luca compares two mats. Mat A shows 4 discs of one hundred, 4 discs of ten, 4 discs of one. Mat B shows 4 discs of one hundred, 5 discs of ten, 0 discs of one. Which mat shows the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":4,"place":100},{"count":4,"place":10},{"count":4,"place":1}],"label":"Mat A"},{"cols":[{"count":4,"place":100},{"count":5,"place":10},{"count":0,"place":1}],"label":"Mat B"}]},"promptText":"Read both of Luca's mats. Which one makes the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0098",
@@ -5572,7 +5572,7 @@ export const ITEMS = [
     structureType: "compareMatsBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"promptText":"Ava checks two mats: A holds 8 discs of one hundred, 0 discs of ten, 5 discs of one, B holds 7 discs of one hundred, 9 discs of ten, 9 discs of one. Which mat makes the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":8,"place":100},{"count":0,"place":10},{"count":5,"place":1}],"label":"Mat A"},{"cols":[{"count":7,"place":100},{"count":9,"place":10},{"count":9,"place":1}],"label":"Mat B"}]},"promptText":"Ava lays out two mats. Which mat shows more?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0099",
@@ -5582,7 +5582,7 @@ export const ITEMS = [
     structureType: "compareMatsBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"promptText":"Omar compares two mats. Mat A shows 3 discs of one hundred, 2 discs of ten, 8 discs of one. Mat B shows 3 discs of one hundred, 3 discs of ten, 1 disc of one. Which mat shows the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":3,"place":100},{"count":2,"place":10},{"count":8,"place":1}],"label":"Mat A"},{"cols":[{"count":3,"place":100},{"count":3,"place":10},{"count":1,"place":1}],"label":"Mat B"}]},"promptText":"Omar compares two mats. Which mat shows the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0100",
@@ -5592,7 +5592,7 @@ export const ITEMS = [
     structureType: "compareMatsBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"promptText":"Ben checks two mats: A holds 5 discs of one hundred, 6 discs of ten, 7 discs of one, B holds 6 discs of one hundred, 0 discs of ten, 2 discs of one. Which mat makes the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":5,"place":100},{"count":6,"place":10},{"count":7,"place":1}],"label":"Mat A"},{"cols":[{"count":6,"place":100},{"count":0,"place":10},{"count":2,"place":1}],"label":"Mat B"}]},"promptText":"Read both of Ben's mats. Which one makes the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0101",
@@ -5602,7 +5602,7 @@ export const ITEMS = [
     structureType: "compareMatsBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"promptText":"Finn compares two mats. Mat A shows 2 discs of one hundred, 9 discs of ten, 9 discs of one. Mat B shows 3 discs of one hundred, 0 discs of ten, 4 discs of one. Which mat shows the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":2,"place":100},{"count":9,"place":10},{"count":9,"place":1}],"label":"Mat A"},{"cols":[{"count":3,"place":100},{"count":0,"place":10},{"count":4,"place":1}],"label":"Mat B"}]},"promptText":"Finn lays out two mats. Which mat shows more?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0102",
@@ -5612,7 +5612,7 @@ export const ITEMS = [
     structureType: "compareMatsBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"promptText":"Priya checks two mats: A holds 6 discs of one hundred, 5 discs of ten, 1 disc of one, B holds 6 discs of one hundred, 4 discs of ten, 8 discs of one. Which mat makes the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat A","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":6,"place":100},{"count":5,"place":10},{"count":1,"place":1}],"label":"Mat A"},{"cols":[{"count":6,"place":100},{"count":4,"place":10},{"count":8,"place":1}],"label":"Mat B"}]},"promptText":"Priya compares two mats. Which mat shows the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0103",
@@ -5622,7 +5622,7 @@ export const ITEMS = [
     structureType: "compareMatsBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"promptText":"Sam compares two mats. Mat A shows 1 disc of one hundred, 3 discs of ten, 7 discs of one. Mat B shows 1 disc of one hundred, 4 discs of ten, 2 discs of one. Which mat shows the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":1,"place":100},{"count":3,"place":10},{"count":7,"place":1}],"label":"Mat A"},{"cols":[{"count":1,"place":100},{"count":4,"place":10},{"count":2,"place":1}],"label":"Mat B"}]},"promptText":"Read both of Sam's mats. Which one makes the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0104",
@@ -5632,7 +5632,7 @@ export const ITEMS = [
     structureType: "compareMatsBig",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"promptText":"Nia checks two mats: A holds 7 discs of one hundred, 8 discs of ten, 0 discs of one, B holds 8 discs of one hundred, 0 discs of ten, 1 disc of one. Which mat makes the bigger number?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Mat B","choices":["Mat A","Mat B"],"display":{"figure":"discMat","discMat":{"mats":[{"cols":[{"count":7,"place":100},{"count":8,"place":10},{"count":0,"place":1}],"label":"Mat A"},{"cols":[{"count":8,"place":100},{"count":0,"place":10},{"count":1,"place":1}],"label":"Mat B"}]},"promptText":"Read both of Nia's mats. Which one makes the bigger number?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0105",
@@ -5642,7 +5642,7 @@ export const ITEMS = [
     structureType: "whichNumberMatTh",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2473,"choices":[2437,3473,4273,2473],"display":{"promptText":"Nia builds 2 discs of one thousand, 4 discs of one hundred, 7 discs of ten, and 3 discs of one with discs. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":2473,"choices":[2437,3473,4273,2473],"display":{"figure":"discMat","discMat":{"cols":[{"count":2,"place":1000},{"count":4,"place":100},{"count":7,"place":10},{"count":3,"place":1}]},"promptText":"Nia puts these discs on the mat. Which number is that?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0106",
@@ -5652,7 +5652,7 @@ export const ITEMS = [
     structureType: "whichNumberMatTh",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1058,"choices":[1085,2058,1058,158],"display":{"promptText":"On Kai's mat sit 1 disc of one thousand, 0 discs of one hundred, 5 discs of ten, and 8 discs of one. Which number does the mat show?"}},
+    question: {"a":null,"b":null,"op":"count","answer":1058,"choices":[1085,2058,1058,158],"display":{"figure":"discMat","discMat":{"cols":[{"count":1,"place":1000},{"count":0,"place":100},{"count":5,"place":10},{"count":8,"place":1}]},"promptText":"Read the discs on Kai's mat. Which number do they make?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0107",
@@ -5662,7 +5662,7 @@ export const ITEMS = [
     structureType: "whichNumberMatTh",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3620,"choices":[6320,3620,3602,4620],"display":{"promptText":"June builds 3 discs of one thousand, 6 discs of one hundred, 2 discs of ten, and 0 discs of one with discs. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":3620,"choices":[6320,3620,3602,4620],"display":{"figure":"discMat","discMat":{"cols":[{"count":3,"place":1000},{"count":6,"place":100},{"count":2,"place":10},{"count":0,"place":1}]},"promptText":"June builds a number with the discs on this mat. Which number is it?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0108",
@@ -5672,7 +5672,7 @@ export const ITEMS = [
     structureType: "whichNumberMatTh",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4195,"choices":[4195,1495,5195,4159],"display":{"promptText":"On Lily's mat sit 4 discs of one thousand, 1 disc of one hundred, 9 discs of ten, and 5 discs of one. Which number does the mat show?"}},
+    question: {"a":null,"b":null,"op":"count","answer":4195,"choices":[4195,1495,5195,4159],"display":{"figure":"discMat","discMat":{"cols":[{"count":4,"place":1000},{"count":1,"place":100},{"count":9,"place":10},{"count":5,"place":1}]},"promptText":"Here is Lily's disc mat. Which number does it show?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0109",
@@ -5682,7 +5682,7 @@ export const ITEMS = [
     structureType: "whichNumberMatTh",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1802,"choices":[1820,2802,1802,8102],"display":{"promptText":"Amara builds 1 disc of one thousand, 8 discs of one hundred, 0 discs of ten, and 2 discs of one with discs. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":1802,"choices":[1820,2802,1802,8102],"display":{"figure":"discMat","discMat":{"cols":[{"count":1,"place":1000},{"count":8,"place":100},{"count":0,"place":10},{"count":2,"place":1}]},"promptText":"Amara puts these discs on the mat. Which number is that?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0110",
@@ -5692,7 +5692,7 @@ export const ITEMS = [
     structureType: "whichNumberMatTh",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2337,"choices":[2373,3237,3337,2337],"display":{"promptText":"On Leo's mat sit 2 discs of one thousand, 3 discs of one hundred, 3 discs of ten, and 7 discs of one. Which number does the mat show?"}},
+    question: {"a":null,"b":null,"op":"count","answer":2337,"choices":[2373,3237,3337,2337],"display":{"figure":"discMat","discMat":{"cols":[{"count":2,"place":1000},{"count":3,"place":100},{"count":3,"place":10},{"count":7,"place":1}]},"promptText":"Read the discs on Leo's mat. Which number do they make?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0111",
@@ -5702,7 +5702,7 @@ export const ITEMS = [
     structureType: "whichNumberMatTh",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5004,"choices":[5040,504,6004,5004],"display":{"promptText":"Mina builds 5 discs of one thousand, 0 discs of one hundred, 0 discs of ten, and 4 discs of one with discs. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":5004,"choices":[5040,504,6004,5004],"display":{"figure":"discMat","discMat":{"cols":[{"count":5,"place":1000},{"count":0,"place":100},{"count":0,"place":10},{"count":4,"place":1}]},"promptText":"Mina builds a number with the discs on this mat. Which number is it?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0112",
@@ -5712,7 +5712,7 @@ export const ITEMS = [
     structureType: "whichNumberMatTh",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1269,"choices":[1296,2269,2169,1269],"display":{"promptText":"On Theo's mat sit 1 disc of one thousand, 2 discs of one hundred, 6 discs of ten, and 9 discs of one. Which number does the mat show?"}},
+    question: {"a":null,"b":null,"op":"count","answer":1269,"choices":[1296,2269,2169,1269],"display":{"figure":"discMat","discMat":{"cols":[{"count":1,"place":1000},{"count":2,"place":100},{"count":6,"place":10},{"count":9,"place":1}]},"promptText":"Here is Theo's disc mat. Which number does it show?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0113",
@@ -5722,7 +5722,7 @@ export const ITEMS = [
     structureType: "whichNumberMatTh",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3911,"choices":[4911,9311,3911],"display":{"promptText":"Ida builds 3 discs of one thousand, 9 discs of one hundred, 1 disc of ten, and 1 disc of one with discs. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":3911,"choices":[4911,9311,3911],"display":{"figure":"discMat","discMat":{"cols":[{"count":3,"place":1000},{"count":9,"place":100},{"count":1,"place":10},{"count":1,"place":1}]},"promptText":"Ida puts these discs on the mat. Which number is that?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0114",
@@ -5732,7 +5732,7 @@ export const ITEMS = [
     structureType: "whichNumberMatTh",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2786,"choices":[2786,3786,7286,2768],"display":{"promptText":"On Zoe's mat sit 2 discs of one thousand, 7 discs of one hundred, 8 discs of ten, and 6 discs of one. Which number does the mat show?"}},
+    question: {"a":null,"b":null,"op":"count","answer":2786,"choices":[2786,3786,7286,2768],"display":{"figure":"discMat","discMat":{"cols":[{"count":2,"place":1000},{"count":7,"place":100},{"count":8,"place":10},{"count":6,"place":1}]},"promptText":"Read the discs on Zoe's mat. Which number do they make?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0115",
@@ -5742,7 +5742,7 @@ export const ITEMS = [
     structureType: "whichNumberMatTh",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4540,"choices":[5540,5440,4504,4540],"display":{"promptText":"Rosa builds 4 discs of one thousand, 5 discs of one hundred, 4 discs of ten, and 0 discs of one with discs. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":4540,"choices":[5540,5440,4504,4540],"display":{"figure":"discMat","discMat":{"cols":[{"count":4,"place":1000},{"count":5,"place":100},{"count":4,"place":10},{"count":0,"place":1}]},"promptText":"Rosa builds a number with the discs on this mat. Which number is it?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0116",
@@ -5752,7 +5752,7 @@ export const ITEMS = [
     structureType: "whichNumberMatTh",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1633,"choices":[6133,1633,2633],"display":{"promptText":"On Diego's mat sit 1 disc of one thousand, 6 discs of one hundred, 3 discs of ten, and 3 discs of one. Which number does the mat show?"}},
+    question: {"a":null,"b":null,"op":"count","answer":1633,"choices":[6133,1633,2633],"display":{"figure":"discMat","discMat":{"cols":[{"count":1,"place":1000},{"count":6,"place":100},{"count":3,"place":10},{"count":3,"place":1}]},"promptText":"Here is Diego's disc mat. Which number does it show?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0117",
@@ -5762,7 +5762,7 @@ export const ITEMS = [
     structureType: "whichNumberMatTh",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3072,"choices":[3072,372,4072,3027],"display":{"promptText":"Nora builds 3 discs of one thousand, 0 discs of one hundred, 7 discs of ten, and 2 discs of one with discs. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":3072,"choices":[3072,372,4072,3027],"display":{"figure":"discMat","discMat":{"cols":[{"count":3,"place":1000},{"count":0,"place":100},{"count":7,"place":10},{"count":2,"place":1}]},"promptText":"Nora puts these discs on the mat. Which number is that?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0118",
@@ -5772,7 +5772,7 @@ export const ITEMS = [
     structureType: "whichNumberMatTh",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2855,"choices":[2855,3855,8255],"display":{"promptText":"On Luca's mat sit 2 discs of one thousand, 8 discs of one hundred, 5 discs of ten, and 5 discs of one. Which number does the mat show?"}},
+    question: {"a":null,"b":null,"op":"count","answer":2855,"choices":[2855,3855,8255],"display":{"figure":"discMat","discMat":{"cols":[{"count":2,"place":1000},{"count":8,"place":100},{"count":5,"place":10},{"count":5,"place":1}]},"promptText":"Read the discs on Luca's mat. Which number do they make?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0119",
@@ -5782,7 +5782,7 @@ export const ITEMS = [
     structureType: "whichNumberMatTh",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5208,"choices":[6208,2508,5208,5280],"display":{"promptText":"Ava builds 5 discs of one thousand, 2 discs of one hundred, 0 discs of ten, and 8 discs of one with discs. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":5208,"choices":[6208,2508,5208,5280],"display":{"figure":"discMat","discMat":{"cols":[{"count":5,"place":1000},{"count":2,"place":100},{"count":0,"place":10},{"count":8,"place":1}]},"promptText":"Ava builds a number with the discs on this mat. Which number is it?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0120",
@@ -5792,7 +5792,7 @@ export const ITEMS = [
     structureType: "whichNumberMatTh",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1446,"choices":[1446,1464,2446,4146],"display":{"promptText":"On Omar's mat sit 1 disc of one thousand, 4 discs of one hundred, 4 discs of ten, and 6 discs of one. Which number does the mat show?"}},
+    question: {"a":null,"b":null,"op":"count","answer":1446,"choices":[1446,1464,2446,4146],"display":{"figure":"discMat","discMat":{"cols":[{"count":1,"place":1000},{"count":4,"place":100},{"count":4,"place":10},{"count":6,"place":1}]},"promptText":"Here is Omar's disc mat. Which number does it show?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0121",
@@ -5802,7 +5802,7 @@ export const ITEMS = [
     structureType: "whichNumberMatTh",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4721,"choices":[4712,5721,4721,7421],"display":{"promptText":"Ben builds 4 discs of one thousand, 7 discs of one hundred, 2 discs of ten, and 1 disc of one with discs. Which number is that?"}},
+    question: {"a":null,"b":null,"op":"count","answer":4721,"choices":[4712,5721,4721,7421],"display":{"figure":"discMat","discMat":{"cols":[{"count":4,"place":1000},{"count":7,"place":100},{"count":2,"place":10},{"count":1,"place":1}]},"promptText":"Ben puts these discs on the mat. Which number is that?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0122",
@@ -5812,7 +5812,7 @@ export const ITEMS = [
     structureType: "whichNumberMatTh",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2099,"choices":[299,3099,2099],"display":{"promptText":"On Finn's mat sit 2 discs of one thousand, 0 discs of one hundred, 9 discs of ten, and 9 discs of one. Which number does the mat show?"}},
+    question: {"a":null,"b":null,"op":"count","answer":2099,"choices":[299,3099,2099],"display":{"figure":"discMat","discMat":{"cols":[{"count":2,"place":1000},{"count":0,"place":100},{"count":9,"place":10},{"count":9,"place":1}]},"promptText":"Read the discs on Finn's mat. Which number do they make?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0123",
@@ -5822,7 +5822,7 @@ export const ITEMS = [
     structureType: "zeroColumnJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat shows 4 discs of one hundred and 7 discs of one — no tens discs. Omar writes 47. Is Omar right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":4,"place":100},{"count":0,"place":10},{"count":7,"place":1}]},"promptText":"Omar calls the number on this mat 4. Do you agree?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0124",
@@ -5832,7 +5832,7 @@ export const ITEMS = [
     structureType: "zeroColumnJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ben's mat holds 3 discs of one hundred, an empty tens column, and 5 discs of one. Ben reads it as 305. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":3,"place":100},{"count":5,"place":1}]},"promptText":"Ben reads this mat and says it shows 305. Is Ben right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0125",
@@ -5842,7 +5842,7 @@ export const ITEMS = [
     structureType: "zeroColumnJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat shows 2 discs of one hundred and 9 discs of one — no tens discs. Finn writes 29. Is Finn right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":2,"place":100},{"count":0,"place":10},{"count":9,"place":1}]},"promptText":"Looking at this mat, Finn writes 2. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0126",
@@ -5852,7 +5852,7 @@ export const ITEMS = [
     structureType: "zeroColumnJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Priya's mat holds 6 discs of one hundred, an empty tens column, and 1 disc of one. Priya reads it as 601. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":6,"place":100},{"count":1,"place":1}]},"promptText":"Priya calls the number on this mat 601. Do you agree?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0127",
@@ -5862,7 +5862,7 @@ export const ITEMS = [
     structureType: "zeroColumnJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat shows 5 discs of one hundred and 4 discs of one — no tens discs. Sam writes 54. Is Sam right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":5,"place":100},{"count":0,"place":10},{"count":4,"place":1}]},"promptText":"Sam reads this mat and says it shows 5. Is Sam right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0128",
@@ -5872,7 +5872,7 @@ export const ITEMS = [
     structureType: "zeroColumnJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nia's mat holds 8 discs of one hundred, an empty tens column, and 2 discs of one. Nia reads it as 802. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":8,"place":100},{"count":2,"place":1}]},"promptText":"Looking at this mat, Nia writes 802. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0129",
@@ -5882,7 +5882,7 @@ export const ITEMS = [
     structureType: "zeroColumnJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat shows 1 disc of one hundred and 8 discs of one — no tens discs. Kai writes 18. Is Kai right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":1,"place":100},{"count":0,"place":10},{"count":8,"place":1}]},"promptText":"Kai calls the number on this mat 1. Do you agree?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0130",
@@ -5892,7 +5892,7 @@ export const ITEMS = [
     structureType: "zeroColumnJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"June's mat holds 7 discs of one hundred, an empty tens column, and 6 discs of one. June reads it as 706. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":7,"place":100},{"count":6,"place":1}]},"promptText":"June reads this mat and says it shows 706. Is June right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0131",
@@ -5902,7 +5902,7 @@ export const ITEMS = [
     structureType: "zeroColumnJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat shows 9 discs of one hundred and 3 discs of one — no tens discs. Lily writes 93. Is Lily right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":9,"place":100},{"count":0,"place":10},{"count":3,"place":1}]},"promptText":"Looking at this mat, Lily writes 9. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0132",
@@ -5912,7 +5912,7 @@ export const ITEMS = [
     structureType: "zeroColumnJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Amara's mat holds 2 discs of one hundred, an empty tens column, and 5 discs of one. Amara reads it as 205. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":2,"place":100},{"count":5,"place":1}]},"promptText":"Amara calls the number on this mat 205. Do you agree?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0133",
@@ -5922,7 +5922,7 @@ export const ITEMS = [
     structureType: "zeroColumnJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat shows 4 discs of one hundred and 1 disc of one — no tens discs. Leo writes 41. Is Leo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":4,"place":100},{"count":0,"place":10},{"count":1,"place":1}]},"promptText":"Leo reads this mat and says it shows 4. Is Leo right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0134",
@@ -5932,7 +5932,7 @@ export const ITEMS = [
     structureType: "zeroColumnJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Mina's mat holds 3 discs of one hundred, an empty tens column, and 9 discs of one. Mina reads it as 309. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":3,"place":100},{"count":9,"place":1}]},"promptText":"Looking at this mat, Mina writes 309. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0135",
@@ -5942,7 +5942,7 @@ export const ITEMS = [
     structureType: "zeroColumnJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat shows 6 discs of one hundred and 7 discs of one — no tens discs. Theo writes 67. Is Theo right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":6,"place":100},{"count":0,"place":10},{"count":7,"place":1}]},"promptText":"Theo calls the number on this mat 6. Do you agree?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0136",
@@ -5952,7 +5952,7 @@ export const ITEMS = [
     structureType: "zeroColumnJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Ida's mat holds 5 discs of one hundred, an empty tens column, and 8 discs of one. Ida reads it as 508. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":5,"place":100},{"count":8,"place":1}]},"promptText":"Ida reads this mat and says it shows 508. Is Ida right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0137",
@@ -5962,7 +5962,7 @@ export const ITEMS = [
     structureType: "zeroColumnJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat shows 8 discs of one hundred and 4 discs of one — no tens discs. Zoe writes 84. Is Zoe right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":8,"place":100},{"count":0,"place":10},{"count":4,"place":1}]},"promptText":"Looking at this mat, Zoe writes 8. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0138",
@@ -5972,7 +5972,7 @@ export const ITEMS = [
     structureType: "zeroColumnJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Rosa's mat holds 7 discs of one hundred, an empty tens column, and 2 discs of one. Rosa reads it as 702. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":7,"place":100},{"count":2,"place":1}]},"promptText":"Rosa calls the number on this mat 702. Do you agree?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0139",
@@ -5982,7 +5982,7 @@ export const ITEMS = [
     structureType: "zeroColumnJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"promptText":"A mat shows 1 disc of one hundred and 6 discs of one — no tens discs. Diego writes 16. Is Diego right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"No","choices":["Yes","No"],"display":{"truth":false,"figure":"discMat","discMat":{"cols":[{"count":1,"place":100},{"count":0,"place":10},{"count":6,"place":1}]},"promptText":"Diego reads this mat and says it shows 1. Is Diego right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0140",
@@ -5992,7 +5992,7 @@ export const ITEMS = [
     structureType: "zeroColumnJudge",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"promptText":"Nora's mat holds 9 discs of one hundred, an empty tens column, and 9 discs of one. Nora reads it as 909. Is that right?"}},
+    question: {"a":null,"b":null,"op":"count","answer":"Yes","choices":["Yes","No"],"display":{"truth":true,"figure":"discMat","discMat":{"cols":[{"count":9,"place":100},{"count":9,"place":1}]},"promptText":"Looking at this mat, Nora writes 909. Is that right?"}},
   },
   {
     itemId: "placeValueDiscs-conc-b0821-0141",

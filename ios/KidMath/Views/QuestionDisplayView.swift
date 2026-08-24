@@ -24,6 +24,8 @@ struct QuestionDisplayView: View {
             barChartQuestion
         } else if display["figure"] as? String == "clockFace" {
             clockFaceQuestion
+        } else if display["figure"] as? String == "discMat" {
+            discMatQuestion
         } else if let emoji = display["emoji"] as? String {
             emojiCount(emoji: emoji, count: (display["count"] as? NSNumber)?.intValue ?? 0)
         } else if let sequence = display["sequence"] as? [Any] {
@@ -44,6 +46,32 @@ struct QuestionDisplayView: View {
     /// Web heuristic: six or more letters means a verbal prompt.
     static func isVerbalPrompt(_ text: String) -> Bool {
         text.filter { $0.isLetter }.count >= 6
+    }
+
+    // MARK: - 0b. Disc-mat question (read-only place-value disc mat(s);
+    // mirror of DiscMat.jsx — the interactive discs widget draws its own)
+
+    private var discMatQuestion: some View {
+        let dm = display["discMat"] as? [String: Any] ?? [:]
+        let matsRaw = dm["mats"] as? [[String: Any]]
+        let single = dm["cols"] as? [[String: Any]]
+        return VStack(spacing: 12) {
+            if let mats = matsRaw {
+                HStack(alignment: .top, spacing: 24) {
+                    ForEach(Array(mats.enumerated()), id: \.offset) { _, m in
+                        DiscMatView(cols: m["cols"] as? [[String: Any]] ?? [], label: m["label"] as? String)
+                    }
+                }
+            } else {
+                DiscMatView(cols: single ?? [], label: nil)
+            }
+            if let prompt = promptText {
+                Text(prompt)
+                    .font(.system(size: 24, weight: .heavy, design: .rounded))
+                    .foregroundStyle(theme.textPrimary)
+                    .multilineTextAlignment(.center)
+            }
+        }
     }
 
     // MARK: - 0a. Clock-face question (read-only face above the prompt;
@@ -287,5 +315,47 @@ struct ClockFaceView: View {
     private func handPoint(center: CGPoint, length: CGFloat, angleDegrees: Double) -> CGPoint {
         let radians = angleDegrees * .pi / 180
         return CGPoint(x: center.x + length * sin(radians), y: center.y - length * cos(radians))
+    }
+}
+
+/// Read-only place-value disc mat — mirror of DiscMat.jsx (the interactive
+/// PlaceValueDiscsWidget in FigureWidgets.swift draws its own mat + pad).
+struct DiscMatView: View {
+    @Environment(\.theme) private var theme
+    let cols: [[String: Any]]
+    let label: String?
+
+    private static let placeColors: [Int: Color] = [
+        1000: FigureColors.accentSoft, 100: FigureColors.accent,
+        10: FigureColors.ink, 1: FigureColors.inkSoft,
+    ]
+
+    var body: some View {
+        VStack(spacing: 4) {
+            if let label { Text(label).font(.system(size: 12, weight: .heavy, design: .rounded)).foregroundStyle(theme.textSecondary) }
+            HStack(alignment: .bottom, spacing: 8) {
+                ForEach(Array(cols.enumerated()), id: \.offset) { _, col in
+                    let place = (col["place"] as? NSNumber)?.intValue ?? 1
+                    let count = (col["count"] as? NSNumber)?.intValue ?? 0
+                    VStack(spacing: 3) {
+                        Text("\(place)").font(.system(size: 11, weight: .bold, design: .rounded)).foregroundStyle(theme.textSecondary)
+                        VStack(spacing: 3) {
+                            if count == 0 {
+                                Text("—").font(.system(size: 11, weight: .bold)).foregroundStyle(theme.textSecondary)
+                            }
+                            ForEach(0..<max(count, 0), id: \.self) { _ in
+                                Text("\(place)")
+                                    .font(.system(size: 9, weight: .bold, design: .rounded))
+                                    .foregroundStyle(.white)
+                                    .frame(width: 26, height: 26)
+                                    .background(Circle().fill(Self.placeColors[place] ?? FigureColors.ink))
+                            }
+                        }
+                    }
+                    .padding(6)
+                    .background(RoundedRectangle(cornerRadius: 10).fill(theme.cardBg.opacity(0.6)))
+                }
+            }
+        }
     }
 }

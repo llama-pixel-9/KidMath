@@ -40811,7 +40811,20 @@ export const SEED_ITEMS = [
     31
    ],
    "display": {
-    "promptText": "Mina puts 1 disc of ten and 3 discs of one on the mat. Which number is that?"
+    "figure": "discMat",
+    "discMat": {
+     "cols": [
+      {
+       "count": 1,
+       "place": 10
+      },
+      {
+       "count": 3,
+       "place": 1
+      }
+     ]
+    },
+    "promptText": "Mina puts these discs on the mat. Which number is that?"
    }
   }
  },
@@ -40895,7 +40908,20 @@ export const SEED_ITEMS = [
    ],
    "display": {
     "truth": false,
-    "promptText": "Ida counts a mat of 1 disc of ten and 4 discs of one as 5. Is that right?"
+    "figure": "discMat",
+    "discMat": {
+     "cols": [
+      {
+       "count": 1,
+       "place": 10
+      },
+      {
+       "count": 4,
+       "place": 1
+      }
+     ]
+    },
+    "promptText": "Ida calls the number on this mat 5. Do you agree?"
    }
   }
  },
@@ -40978,7 +41004,38 @@ export const SEED_ITEMS = [
     "Mat B"
    ],
    "display": {
-    "promptText": "June compares two mats. Mat A shows 1 disc of ten and 9 discs of one. Mat B shows 2 discs of ten and 1 disc of one. Which mat shows the bigger number?"
+    "figure": "discMat",
+    "discMat": {
+     "mats": [
+      {
+       "cols": [
+        {
+         "count": 1,
+         "place": 10
+        },
+        {
+         "count": 9,
+         "place": 1
+        }
+       ],
+       "label": "Mat A"
+      },
+      {
+       "cols": [
+        {
+         "count": 2,
+         "place": 10
+        },
+        {
+         "count": 1,
+         "place": 1
+        }
+       ],
+       "label": "Mat B"
+      }
+     ]
+    },
+    "promptText": "Read both of June's mats. Which one makes the bigger number?"
    }
   }
  },
@@ -41032,7 +41089,24 @@ export const SEED_ITEMS = [
     374
    ],
    "display": {
-    "promptText": "Luca lays out 3 discs of one hundred, 4 discs of ten, and 7 discs of one. Which number is that?"
+    "figure": "discMat",
+    "discMat": {
+     "cols": [
+      {
+       "count": 3,
+       "place": 100
+      },
+      {
+       "count": 4,
+       "place": 10
+      },
+      {
+       "count": 7,
+       "place": 1
+      }
+     ]
+    },
+    "promptText": "Luca puts these discs on the mat. Which number is that?"
    }
   }
  },
@@ -41118,7 +41192,24 @@ export const SEED_ITEMS = [
     163
    ],
    "display": {
-    "promptText": "Rosa's mat: 1 disc worth one hundred, 6 discs worth ten, 3 discs worth one. Which number does it show?"
+    "figure": "discMat",
+    "discMat": {
+     "cols": [
+      {
+       "count": 1,
+       "place": 100
+      },
+      {
+       "count": 6,
+       "place": 10
+      },
+      {
+       "count": 3,
+       "place": 1
+      }
+     ]
+    },
+    "promptText": "Read the discs on Rosa's mat. Which number do they make?"
    }
   }
  },
@@ -41202,7 +41293,46 @@ export const SEED_ITEMS = [
     "Mat B"
    ],
    "display": {
-    "promptText": "Lily compares two mats. Mat A shows 1 disc of one hundred, 9 discs of ten, 5 discs of one. Mat B shows 2 discs of one hundred, 1 disc of ten, 0 discs of one. Which mat shows the bigger number?"
+    "figure": "discMat",
+    "discMat": {
+     "mats": [
+      {
+       "cols": [
+        {
+         "count": 1,
+         "place": 100
+        },
+        {
+         "count": 9,
+         "place": 10
+        },
+        {
+         "count": 5,
+         "place": 1
+        }
+       ],
+       "label": "Mat A"
+      },
+      {
+       "cols": [
+        {
+         "count": 2,
+         "place": 100
+        },
+        {
+         "count": 1,
+         "place": 10
+        },
+        {
+         "count": 0,
+         "place": 1
+        }
+       ],
+       "label": "Mat B"
+      }
+     ]
+    },
+    "promptText": "Lily compares two mats. Which mat shows the bigger number?"
    }
   }
  },
@@ -41256,7 +41386,28 @@ export const SEED_ITEMS = [
     2473
    ],
    "display": {
-    "promptText": "Nia builds 2 discs of one thousand, 4 discs of one hundred, 7 discs of ten, and 3 discs of one with discs. Which number is that?"
+    "figure": "discMat",
+    "discMat": {
+     "cols": [
+      {
+       "count": 2,
+       "place": 1000
+      },
+      {
+       "count": 4,
+       "place": 100
+      },
+      {
+       "count": 7,
+       "place": 10
+      },
+      {
+       "count": 3,
+       "place": 1
+      }
+     ]
+    },
+    "promptText": "Nia puts these discs on the mat. Which number is that?"
    }
   }
  },
@@ -41338,7 +41489,28 @@ export const SEED_ITEMS = [
     2099
    ],
    "display": {
-    "promptText": "On Finn's mat sit 2 discs of one thousand, 0 discs of one hundred, 9 discs of ten, and 9 discs of one. Which number does the mat show?"
+    "figure": "discMat",
+    "discMat": {
+     "cols": [
+      {
+       "count": 2,
+       "place": 1000
+      },
+      {
+       "count": 0,
+       "place": 100
+      },
+      {
+       "count": 9,
+       "place": 10
+      },
+      {
+       "count": 9,
+       "place": 1
+      }
+     ]
+    },
+    "promptText": "Read the discs on Finn's mat. Which number do they make?"
    }
   }
  },
@@ -41423,7 +41595,24 @@ export const SEED_ITEMS = [
    ],
    "display": {
     "truth": false,
-    "promptText": "A mat shows 1 disc of one hundred and 6 discs of one — no tens discs. Diego writes 16. Is Diego right?"
+    "figure": "discMat",
+    "discMat": {
+     "cols": [
+      {
+       "count": 1,
+       "place": 100
+      },
+      {
+       "count": 0,
+       "place": 10
+      },
+      {
+       "count": 6,
+       "place": 1
+      }
+     ]
+    },
+    "promptText": "Diego reads this mat and says it shows 1. Is Diego right?"
    }
   }
  },

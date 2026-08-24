@@ -79,10 +79,12 @@ export function readClockProcedural() {
     );
   }
 
-  // Hands described in words -> which time (words, no digits over 12).
+  // The face carries the hands (clockFace figure) -> which time (words).
   const handsPhr = rotor([
-    (hw) => `The hour hand points at ${hw} and the minute hand points straight up at twelve. What time is it?`,
-    (hw) => `Both hands: the minute hand on twelve, the hour hand on ${hw}. Which time is that?`,
+    (nm) => `${nm} looks at this clock. What time does the clock show?`,
+    (nm) => `This is ${nm}'s clock right now. Which time does it show?`,
+    (nm) => `Read ${nm}'s clock. What time is it?`,
+    (nm) => `${nm} checks this clock. What time does it say?`,
   ]);
   for (let h = 1; h <= 12; h += 1) {
     const good = `${HOUR_WORDS[h]} o'clock`;
@@ -91,13 +93,15 @@ export function readClockProcedural() {
       item("readClock", "procedural", "handsToWords", "band1", {
         answer: good,
         choices: shuffled([good, ...wrong], h + 3),
-        display: { time: { kind: "handsWords", hour: h, minute: 0 }, promptText: handsPhr()(HOUR_WORDS[h]) },
+        display: { figure: "clockFace", clock: { hour: h, minute: 0 }, time: { kind: "handsWords", hour: h, minute: 0 }, promptText: handsPhr()(nameAt(h)) },
       })
     );
   }
   const halfPhr = rotor([
-    (hw) => `The minute hand points straight down at six, and the hour hand is just past ${hw}. What time is it?`,
-    (hw) => `Minute hand on the six, hour hand halfway past ${hw}. Which time is that?`,
+    (nm) => `${nm} glances at this clock. What time does the clock show?`,
+    (nm) => `Here is the clock ${nm} sees. Which time is that?`,
+    (nm) => `Look at ${nm}'s clock. What time is it showing?`,
+    (nm) => `The clock by ${nm}'s bed looks like this. What time does it show?`,
   ]);
   for (let h = 1; h <= 12; h += 1) {
     const good = `half past ${HOUR_WORDS[h]}`;
@@ -106,7 +110,7 @@ export function readClockProcedural() {
       item("readClock", "procedural", "handsToWordsHalf", "band1", {
         answer: good,
         choices: shuffled([good, ...wrong], h + 7),
-        display: { time: { kind: "handsWords", hour: h, minute: 30 }, promptText: halfPhr()(HOUR_WORDS[h]) },
+        display: { figure: "clockFace", clock: { hour: h, minute: 30 }, time: { kind: "handsWords", hour: h, minute: 30 }, promptText: halfPhr()(nameAt(h + 3)) },
       })
     );
   }
@@ -215,8 +219,9 @@ export function readClockConceptual() {
 
   // Band 1 — judged reads and hour-hand-vs-minute-hand reasoning.
   const judgeReadPhr = rotor([
-    (nm, hw, saidW) => `The minute hand points at twelve and the hour hand at ${hw}. ${nm} says it is ${saidW}. Is ${nm} right?`,
-    (nm, hw, saidW) => `${nm} reads a clock with the hour hand on ${hw} and the minute hand on twelve as ${saidW}. Is that right?`,
+    (nm, hw, saidW) => `${nm} reads this clock as ${saidW}. Is ${nm} right?`,
+    (nm, hw, saidW) => `${nm} looks at this clock and says it is ${saidW}. Is that right?`,
+    (nm, hw, saidW) => `${nm} calls the time on this clock ${saidW}. Do you agree?`,
   ]);
   for (let i = 0; i < 18; i += 1) {
     const h = (i % 12) + 1;
@@ -227,7 +232,7 @@ export function readClockConceptual() {
       item("readClock", "conceptual", "judgeOclockRead", "band1", {
         answer: ok ? "Yes" : "No",
         choices: ["Yes", "No"],
-        display: { time: { kind: "judgeRead", hour: h, minute: 0, saidHour: saidH, saidMinute: 0 }, promptText: judgeReadPhr()(nameAt(i * 3 + 2), HOUR_WORDS[h], saidW), truth: ok },
+        display: { figure: "clockFace", clock: { hour: h, minute: 0 }, time: { kind: "judgeRead", hour: h, minute: 0, saidHour: saidH, saidMinute: 0 }, promptText: judgeReadPhr()(nameAt(i * 3 + 2), HOUR_WORDS[h], saidW), truth: ok },
       })
     );
   }

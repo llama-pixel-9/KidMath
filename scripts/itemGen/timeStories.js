@@ -50,8 +50,8 @@ export function buildStoryItems() {
 
   // Band 1: hands described -> what time does the event start (words).
   const HANDS_SKELETONS = [
-    (nm, ev, hw, half) => `${nm} checks the clock before ${ev}: the minute hand points at ${half ? "six" : "twelve"} and the hour hand ${half ? `just past ${hw}` : `at ${hw}`}. What time is it?`,
-    (nm, ev, hw, half) => `Right before ${ev}, ${nm} sees the hour hand ${half ? `halfway past ${hw}` : `on ${hw}`} and the minute hand on ${half ? "the six" : "the twelve"}. Which time is that?`,
+    (nm, ev) => `${nm} checks the clock before ${ev}. What time does the clock show?`,
+    (nm, ev) => `Right before ${ev}, ${nm} looks at this clock. Which time is that?`,
   ];
   const handsEmit = ([h, half, ei], sk, nm) => {
     const good = half ? `half past ${HOUR_WORDS[h]}` : `${HOUR_WORDS[h]} o'clock`;
@@ -59,7 +59,7 @@ export function buildStoryItems() {
     return mk("readClock", "storyHandsRead", B1, {
       answer: good,
       choices: shuffled([good, ...wrong], h + (half ? 3 : 0)),
-      display: { time: { kind: "handsWords", hour: h, minute: half ? 30 : 0 }, promptText: sk(nm, EVENTS[ei % 4], HOUR_WORDS[h], half) },
+      display: { figure: "clockFace", clock: { hour: h, minute: half ? 30 : 0 }, time: { kind: "handsWords", hour: h, minute: half ? 30 : 0 }, promptText: sk(nm, EVENTS[ei % 4]) },
     });
   };
   const hB1 = [[3, false, 0], [7, true, 1], [5, false, 2], [9, true, 3], [2, false, 0], [11, true, 1], [4, false, 2], [8, true, 3], [6, false, 0], [1, true, 1], [10, false, 2], [12, true, 3], [3, true, 0], [7, false, 1], [5, true, 2], [9, false, 3], [2, true, 0]];

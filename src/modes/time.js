@@ -257,8 +257,11 @@ const VARIETIES = [
           [label(wrapHour(hour + 1)), label(wrapHour(hour - 1)), label(wrapHour(hour + 6))],
           []
         ),
-        promptText: `The long hand points at 12. The short hand points at ${hour}. What time is it?`,
-        representation: "verbalContext",
+        // The face carries the hands — never describe hand positions in words
+        // (that turns clock-reading into reading comprehension).
+        display: { figure: "clockFace", clock: { hour, minute: 0 } },
+        promptText: "What time does this clock show?",
+        representation: "visual",
         cognitiveDemand: "DOK1",
         misconceptionTags: ["hourMinuteSwap", "clockDirection"],
       };

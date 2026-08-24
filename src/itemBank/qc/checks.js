@@ -418,6 +418,31 @@ export const CHECKS = [
   },
 
   {
+    id: "describedClockHands",
+    run: (item) => {
+      const text = item.question?.display?.promptText || "";
+      const display = item.question?.display || {};
+      // A clock item must SHOW the face. Stating where the hands point in
+      // words turns clock-reading into reading comprehension (and a judged
+      // mismatch gives itself away: "hour hand on six ... as seven o'clock").
+      // Items where the hands are the SUBJECT ("which hand tells the hour?")
+      // don't state positions and stay exempt.
+      const statesHandPosition =
+        /\b(hour|minute|long|short) hand\b[^.?!]{0,40}\b(points? (at|to)|is (on|at|near)|on|at|near|just past|halfway past)\b[^.?!]{0,20}\b(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|\d{1,2})\b/i.test(
+          text
+        );
+      const showsFace = display.figure === "clockFace" || display.type === "clock";
+      if (statesHandPosition && !showsFace) {
+        return fail(
+          "describedClockHands",
+          "the prompt states clock-hand positions in words with no clock face shown — attach the clockFace figure and ask for the time instead"
+        );
+      }
+      return null;
+    },
+  },
+
+  {
     id: "readability",
     run: (item) => {
       const text = item.question?.display?.promptText || "";

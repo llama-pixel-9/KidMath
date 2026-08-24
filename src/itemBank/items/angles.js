@@ -14142,7 +14142,7 @@ export const ITEMS = [
     structureType: "quartersLeft_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","unit":90,"total":360},"promptText":"2 quarter turns of a full turn leaves how many quarter turns to finish? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","unit":90,"total":360},"promptText":"A full turn is 4 quarter turns. 2 quarter turns of a full turn leaves how many quarter turns to finish? Type it."},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0185",
@@ -14202,7 +14202,7 @@ export const ITEMS = [
     structureType: "quartersLeft_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","unit":90,"total":360},"promptText":"2 quarter turns are done. How many quarter turns complete the full turn?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","unit":90,"total":360},"promptText":"A full turn is 4 quarter turns. 2 quarter turns are done. How many quarter turns complete the full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0191",
@@ -14262,7 +14262,7 @@ export const ITEMS = [
     structureType: "quartersLeft_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","unit":90,"total":360},"promptText":"A spinner makes 2 quarter turns. How many more quarter turns finish the full spin?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","unit":90,"total":360},"promptText":"A full turn is 4 quarter turns. A spinner makes 2 quarter turns. How many more quarter turns finish the full spin?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0197",
@@ -14292,7 +14292,7 @@ export const ITEMS = [
     structureType: "quartersLeft_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","unit":90,"total":360},"promptText":"After 2 quarter turns, how many quarter turns are still needed for a full turn?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","unit":90,"total":360},"promptText":"A full turn is 4 quarter turns. After 2 quarter turns, how many quarter turns are still needed for a full turn?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0200",
@@ -16962,7 +16962,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A full spin is missing some quarter turns: 2 are done. How many quarter turns are missing? Type it."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A full turn is 4 quarter turns. A full spin is missing some quarter turns: 2 are done. How many quarter turns are missing? Type it."},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0467",
@@ -16992,7 +16992,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"To finish a full spin after 2 quarter turns, how many quarter turns are missing?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A full turn is 4 quarter turns. To finish a full spin after 2 quarter turns, how many quarter turns are missing?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0470",
@@ -17082,7 +17082,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A skater completes 2 quarter turns of a full spin. How many quarter turns does the skater still need?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A full turn is 4 quarter turns. A skater completes 2 quarter turns of a full spin. How many quarter turns does the skater still need?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0479",
@@ -17112,7 +17112,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"With 2 quarter turns marked, how many quarter turns are missing from the full spin?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A full turn is 4 quarter turns. With 2 quarter turns marked, how many quarter turns are missing from the full spin?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0482",
@@ -17172,7 +17172,7 @@ export const ITEMS = [
     structureType: "missingQuarters_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"Count the gap: 2 quarter turns shown, a full spin needed. How many quarter turns short is it?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"ang":{"a":180,"kind":"missDeg","total":360},"promptText":"A full turn is 4 quarter turns. Count the gap: 2 quarter turns shown, a full spin needed. How many quarter turns short is it?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0488",
@@ -17202,7 +17202,7 @@ export const ITEMS = [
     structureType: "missingCornerLine_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"Two square corners make a straight line; 1 is in place. How many square corners are missing now?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"2 square corners make a straight line; 1 is in place. How many square corners are missing now?"},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0491",
@@ -17282,7 +17282,7 @@ export const ITEMS = [
     structureType: "missingCornerLine_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"Two square corners make a straight line; 1 is in place. How many square corners are missing now? The line is on the whiteboard."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"ang":{"a":90,"kind":"missDeg","total":180},"promptText":"2 square corners make a straight line; 1 is in place. How many square corners are missing now? The line is on the whiteboard."},"answerType":"numberPad"},
   },
   {
     itemId: "angles-proc-b0821-0499",

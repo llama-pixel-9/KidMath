@@ -127,6 +127,45 @@ const GRAPH_VERBAL = [
   "storyDraw_band3", "whichKeyBig", "whichKeyMid",
 ];
 
+
+// counting classes whose visual is the emoji run itself (in the prompt or the
+// choices) or a rendered payload (ten frames, display.counting/emoji) — the
+// mode's deliberate design: the run IS the figure.
+const COUNTING_VISUAL = [
+  "storyCountOn", "storyTargetGap", "storyHiddenCount", "storyTwoSpots",
+  "storyCountAllKinds", "storyExtraneous", "storyBagsOfTen",
+  "storyQuickLook", "storyDicePair", "storyFlashCard", "storyDotCards",
+  "storyQuickRows", "sameNumberJudge", "whichShowsN", "claimCountJudge",
+  "fiveAndMoreSee", "estimateThenCount", "oddOneOutCount", "claimTeenJudge",
+  "tenAndMoreSee", "whichShowsTeen", "estimateThenCountBig", "oddOneOutTeen",
+  "claimTensRowsJudge", "tensAndOnesSee", "rowsToNumeral", "missingInRun",
+  "oneMore", "oneLess", "betweenTwo", "tenFrameMakeTen",
+  "missingAcrossDecade", "oneMoreDecade", "oneLessDecade", "betweenDecade",
+  "missingAcrossHundred", "oneMoreHundred",
+  "oneLessHundred", "betweenHundred", "hiddenCountBig", "countSet",
+  "compareTwoSets", "lastNumberSaid", "tenFrameEmpty", "rearrangedSet",
+  "countTeenSet", "compareTeenSets", "teenFrameCount", "doubleCountError",
+  "skippedOneError", "doubleCountErrorBig", "skippedOneErrorBig",
+  "mixedSetCount", "compareBigSets", "bigCountJudge", "smallSetRead",
+  "fiveGroupRead", "tenFrameRead", "tenAndMoreRead", "doubleFiveRead",
+  "twoFrameRead", "tensRowsRead", "nextNumber", "countBackNext",
+  "nextAcrossDecade", "backAcrossDecade",
+  "nextWithinDecade", "backWithinDecade", "countOnFromTwoDigit",
+  "nextAcrossHundred", "backAcrossHundred", "countOnBigJump",
+  "setCountWrite", "countOutOnFrame", "teenSetWrite", "countOutTeenOnFrames",
+  "bigSetWrite", "arrayCount", "countScatteredSet", "writeNumeralForSet",
+  "subitizeSmallSet", "arrangementInvariance", "tenFrameCount",
+  "tenFrameBuild", "subitizeDrill", "bigSetWriteDrill",
+];
+
+// counting classes that are genuine word problems or verbal sequence work —
+// nothing pictured is described.
+const COUNTING_VERBAL = [
+  "countOnFromGiven", "countBackFrom", "missingInCountSequence", "hiddenCountSplat", "errorAnalysisDoubleCount",
+  "countObjects", "countToTargetGap", "countGroupsExtraneous",
+  "countOnJudge", "decadeCrossingJudge", "centuryCrossingJudge",
+];
+
 export const FIGURE_CONTRACTS = {
   time: {
     classify: (question, meta) =>
@@ -156,6 +195,18 @@ export const FIGURE_CONTRACTS = {
     unlisted: "fail",
   },
 
+  counting: {
+    // 21 varieties across bands/families — 40 gens/level misses the rare ones
+    specGenerations: 120,
+    classify: (question, meta) =>
+      meta?.structureType ?? question?.metadata?.structureType ?? null,
+    classes: {
+      ...Object.fromEntries(COUNTING_VISUAL.map((st) => [st, { satisfiedBy: ["emoji", "rendered"] }])),
+      ...Object.fromEntries(COUNTING_VERBAL.map((st) => [st, VERBAL])),
+    },
+    unlisted: "fail",
+  },
+
   dataGraphs: {
     classify: (question, meta) =>
       meta?.structureType ?? question?.metadata?.structureType ?? null,
@@ -178,7 +229,7 @@ export const FIGURE_CONTRACTS = {
  * volumeCoordinates stays playable:false until cubeGrid/coordGrid get mirrors.
  */
 export const IOS_MIRRORED_FIGURES = ["clockFace", "barGraph"];
-export const IOS_PLAYABLE_CONTRACT_MODES = ["time", "dataGraphs"];
+export const IOS_PLAYABLE_CONTRACT_MODES = ["time", "dataGraphs", "counting"];
 
 /**
  * Display keys that actually put pixels on screen (mirror of what
@@ -215,8 +266,17 @@ export function rendersAnything(question) {
   return false;
 }
 
+const EMOJI_RUN_RX = /[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{FE0F}]/u;
+
 function satisfies(question, satisfier) {
   if (satisfier === "none") return true;
+  if (satisfier === "emoji") {
+    if (EMOJI_RUN_RX.test(question?.display?.promptText || "")) return true;
+    return (question?.choices || question?.display?.choices || []).some(
+      (c) => typeof c === "string" && EMOJI_RUN_RX.test(c)
+    );
+  }
+  if (satisfier === "rendered") return rendersAnything(question);
   if (satisfier === "any-figure") return Boolean(question?.display?.figure);
   if (satisfier.startsWith("figure:")) return question?.display?.figure === satisfier.slice(7);
   if (satisfier.startsWith("widget:")) {
@@ -237,6 +297,7 @@ export function figureSatisfies(question, satisfiers) {
 export function requiredSatisfiers(modeId, question, meta) {
   const c = FIGURE_CONTRACTS[modeId];
   if (!c) return null;
+  if (meta?.formatId ?? question?.metadata?.formatId) return null;
   const entry = c.all || c.classes?.[c.classify(question, meta)] || null;
   if (!entry || entry.satisfiedBy.includes("none")) return null;
   return entry.satisfiedBy;
@@ -252,6 +313,10 @@ export function requiredSatisfiers(modeId, question, meta) {
 export function contractVerdict(modeId, question, meta) {
   const c = FIGURE_CONTRACTS[modeId];
   if (!c) return { covered: false };
+  // The formats layer (src/modes/formats) deliberately re-dresses items into
+  // bare symbolic drill forms ("10 = 20 — is this right?") — drills are
+  // drills; a format-applied question is exempt from its class's figure rule.
+  if (meta?.formatId ?? question?.metadata?.formatId) return { covered: true, ok: true, cls: "(format)" };
   const cls = c.classify(question, meta);
   const entry = c.all || (cls != null ? c.classes?.[cls] : null) || null;
   if (!entry) {

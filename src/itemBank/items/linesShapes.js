@@ -3682,7 +3682,7 @@ export const ITEMS = [
     structureType: "storyBins_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Zoe to keep only shapes with exactly 4 sides. Out of four squares and a triangle, how many shapes are kept?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Zoe to keep only shapes with exactly four sides. Out of four squares and a triangle, how many shapes are kept?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0369",
@@ -3762,7 +3762,7 @@ export const ITEMS = [
     structureType: "storyBins_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Luca's robot grabs every block with 2 pairs of parallel sides. Given a parallelogram, a square, and a pentagon, how many blocks does it grab? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Luca's robot grabs every block with two pairs of parallel sides. Given a parallelogram, a square, and a pentagon, how many blocks does it grab? Count carefully."},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0377",
@@ -3882,7 +3882,7 @@ export const ITEMS = [
     structureType: "storyBins_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Finn's robot grabs every block with exactly 1 pair of parallel sides. Given a trapezoid, a square, and a hexagon, how many blocks does it grab? Count carefully."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Finn's robot grabs every block with exactly one pair of parallel sides. Given a trapezoid, a square, and a hexagon, how many blocks does it grab? Count carefully."},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0389",
@@ -3942,7 +3942,7 @@ export const ITEMS = [
     structureType: "storyBins_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Theo to keep only shapes with 2 pairs of parallel sides. Out of a square, a rhombus, and a trapezoid, how many shapes are kept? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"A sorting game asks Theo to keep only shapes with two pairs of parallel sides. Out of a square, a rhombus, and a trapezoid, how many shapes are kept? Double-check your count."},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0395",
@@ -4052,7 +4052,7 @@ export const ITEMS = [
     structureType: "storyBins_band3",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Amara sorts blocks into a bin for shapes with exactly 1 pair of parallel sides. From a trapezoid, a parallelogram, and a rhombus, how many blocks land in the bin? Double-check your count."},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Amara sorts blocks into a bin for shapes with exactly one pair of parallel sides. From a trapezoid, a parallelogram, and a rhombus, how many blocks land in the bin? Double-check your count."},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0406",
@@ -7422,7 +7422,7 @@ export const ITEMS = [
     structureType: "storyHunt_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Zoe's scavenger list shows four square crackers and a triangle chip. How many of those have exactly 4 sides?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Zoe's scavenger list shows four square crackers and a triangle chip. How many of those have exactly four sides?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0743",
@@ -7502,7 +7502,7 @@ export const ITEMS = [
     structureType: "storyHunt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Around the room Luca finds a parallelogram ramp, a square gate, and a pentagon plaque. Counting only the ones with 2 pairs of parallel sides, how many shapes make the cut?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Around the room Luca finds a parallelogram ramp, a square gate, and a pentagon plaque. Counting only the ones with two pairs of parallel sides, how many shapes make the cut?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0751",
@@ -7622,7 +7622,7 @@ export const ITEMS = [
     structureType: "storyHunt_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Around the room Finn finds a trapezoid shelf, a square shelf, and a hexagon shelf. Counting only the ones with exactly 1 pair of parallel sides, how many shapes make the cut?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Around the room Finn finds a trapezoid shelf, a square shelf, and a hexagon shelf. Counting only the ones with exactly one pair of parallel sides, how many shapes make the cut?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-app-b0821-0763",
@@ -21122,7 +21122,7 @@ export const ITEMS = [
     structureType: "sortCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"From this list — trapezoid, hexagon, rectangle, triangle — how many shapes have exactly 1 pair of parallel sides?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"From this list — trapezoid, hexagon, rectangle, triangle — how many shapes have exactly one pair of parallel sides?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0585",
@@ -21132,7 +21132,7 @@ export const ITEMS = [
     structureType: "sortCount_band2",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Count the shapes with exactly 1 pair of parallel sides in this list: trapezoid, hexagon, rectangle, triangle. How many shapes match?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":1,"display":{"shapeC":{"kind":"authoredCount"},"promptText":"Count the shapes with exactly one pair of parallel sides in this list: trapezoid, hexagon, rectangle, triangle. How many shapes match?"},"answerType":"numberPad"},
   },
   {
     itemId: "linesShapes-proc-b0821-0586",

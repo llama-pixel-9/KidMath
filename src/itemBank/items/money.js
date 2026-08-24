@@ -3192,7 +3192,7 @@ export const ITEMS = [
     structureType: "storyMachine_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":10,"kind":"trade","fromCents":20},"promptText":"The coin machine takes Lily's 2 dimes and gives back only dimes. How many dimes slide out?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"per":10,"kind":"trade","fromCents":20},"promptText":"The coin machine takes 20 cents from Lily and gives back only dimes. How many dimes slide out?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0320",
@@ -4122,7 +4122,7 @@ export const ITEMS = [
     structureType: "storyNeedCoins_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":1,"kind":"trade","fromCents":10},"promptText":"Ava pays a 10-cent fare using only pennies. How many pennies is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":10,"display":{"money":{"per":1,"kind":"trade","fromCents":10},"promptText":"Ava pays a fare worth a dime using only pennies. How many pennies is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0413",
@@ -4142,7 +4142,7 @@ export const ITEMS = [
     structureType: "storyNeedCoins_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"money":{"per":1,"kind":"trade","fromCents":8},"promptText":"Ida pays a 8-cent fare using only pennies. How many pennies is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":8,"display":{"money":{"per":1,"kind":"trade","fromCents":8},"promptText":"Ida pays a fare worth a nickel and 3 cents using only pennies. How many pennies is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0415",
@@ -4162,7 +4162,7 @@ export const ITEMS = [
     structureType: "storyNeedCoins_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"per":1,"kind":"trade","fromCents":12},"promptText":"June pays a 12-cent fare using only pennies. How many pennies is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":12,"display":{"money":{"per":1,"kind":"trade","fromCents":12},"promptText":"June pays a fare worth a dime and 2 cents using only pennies. How many pennies is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0417",
@@ -4172,7 +4172,7 @@ export const ITEMS = [
     structureType: "storyNeedCoins_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"per":1,"kind":"trade","fromCents":5},"promptText":"The sticker machine only takes pennies. A sticker costs 5 cents. How many pennies does Zoe drop in?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":5,"display":{"money":{"per":1,"kind":"trade","fromCents":5},"promptText":"The sticker machine only takes pennies. A sticker costs a nickel. How many pennies does Zoe drop in?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0418",
@@ -4182,7 +4182,7 @@ export const ITEMS = [
     structureType: "storyNeedCoins_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"per":1,"kind":"trade","fromCents":15},"promptText":"Ben pays a 15-cent fare using only pennies. How many pennies is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":15,"display":{"money":{"per":1,"kind":"trade","fromCents":15},"promptText":"Ben pays a fare worth a dime and a nickel using only pennies. How many pennies is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0419",
@@ -4192,7 +4192,7 @@ export const ITEMS = [
     structureType: "storyNeedCoins_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":1,"kind":"trade","fromCents":20},"promptText":"The sticker machine only takes pennies. A sticker costs 20 cents. How many pennies does Lily drop in?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":20,"display":{"money":{"per":1,"kind":"trade","fromCents":20},"promptText":"The sticker machine only takes pennies. A sticker costs two dimes. How many pennies does Lily drop in?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0420",
@@ -4202,7 +4202,7 @@ export const ITEMS = [
     structureType: "storyNeedCoins_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"per":1,"kind":"trade","fromCents":6},"promptText":"Rosa pays a 6-cent fare using only pennies. How many pennies is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":6,"display":{"money":{"per":1,"kind":"trade","fromCents":6},"promptText":"Rosa pays a fare worth a nickel and 1 cent using only pennies. How many pennies is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0421",
@@ -4222,7 +4222,7 @@ export const ITEMS = [
     structureType: "storyNeedCoins_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"money":{"per":1,"kind":"trade","fromCents":14},"promptText":"Amara pays a 14-cent fare using only pennies. How many pennies is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":14,"display":{"money":{"per":1,"kind":"trade","fromCents":14},"promptText":"Amara pays a fare worth a dime and 4 cents using only pennies. How many pennies is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0423",
@@ -4232,7 +4232,7 @@ export const ITEMS = [
     structureType: "storyNeedCoins_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"money":{"per":1,"kind":"trade","fromCents":18},"promptText":"The sticker machine only takes pennies. A sticker costs 18 cents. How many pennies does Diego drop in?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":18,"display":{"money":{"per":1,"kind":"trade","fromCents":18},"promptText":"The sticker machine only takes pennies. A sticker costs a dime, a nickel and 3 cents. How many pennies does Diego drop in?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0424",
@@ -4242,7 +4242,7 @@ export const ITEMS = [
     structureType: "storyNeedCoins_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"money":{"per":1,"kind":"trade","fromCents":16},"promptText":"Priya pays a 16-cent fare using only pennies. How many pennies is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":16,"display":{"money":{"per":1,"kind":"trade","fromCents":16},"promptText":"Priya pays a fare worth a dime, a nickel and 1 cent using only pennies. How many pennies is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0425",
@@ -4252,7 +4252,7 @@ export const ITEMS = [
     structureType: "storyNeedCoins_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"money":{"per":1,"kind":"trade","fromCents":9},"promptText":"The sticker machine only takes pennies. A sticker costs 9 cents. How many pennies does Leo drop in?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":9,"display":{"money":{"per":1,"kind":"trade","fromCents":9},"promptText":"The sticker machine only takes pennies. A sticker costs a nickel and 4 cents. How many pennies does Leo drop in?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0426",
@@ -5722,7 +5722,7 @@ export const ITEMS = [
     structureType: "storyFewest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"kind":"fewest","cents":3},"promptText":"Lily wants to pay 3 cents exactly, carrying as few coins as possible. How many coins is that?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":3,"display":{"money":{"kind":"fewest","cents":3},"promptText":"Lily wants to pay three cents exactly, carrying as few coins as possible. How many coins is that?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0573",
@@ -5752,7 +5752,7 @@ export const ITEMS = [
     structureType: "storyFewest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"kind":"fewest","cents":2},"promptText":"To pay a 2-cent fare with the fewest coins, how many coins does Amara hand over?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":2,"display":{"money":{"kind":"fewest","cents":2},"promptText":"To pay a two-cent fare with the fewest coins, how many coins does Amara hand over?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0576",
@@ -5772,7 +5772,7 @@ export const ITEMS = [
     structureType: "storyFewest_band1",
     levelRange: [1,3],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"kind":"fewest","cents":4},"promptText":"To pay a 4-cent fare with the fewest coins, how many coins does Priya hand over?"},"answerType":"numberPad"},
+    question: {"a":null,"b":null,"op":"count","answer":4,"display":{"money":{"kind":"fewest","cents":4},"promptText":"To pay a four-cent fare with the fewest coins, how many coins does Priya hand over?"},"answerType":"numberPad"},
   },
   {
     itemId: "money-app-b0821-0578",

@@ -22,7 +22,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":128,"b":null,"op":"place","answer":128,"display":{"ones":8,"tens":12,"type":"build","number":128,"promptText":"A puzzle card shows 12 tens and 8 ones. What number is shown?"}},
+    question: {"a":128,"b":null,"op":"place","answer":128,"display":{"ones":8,"tens":12,"type":"build","number":128,"promptText":"12 tens and 8 ones make what number?"}},
   },
   {
     itemId: "placevalue-app-003",
@@ -13832,7 +13832,7 @@ export const ITEMS = [
     structureType: "buildFromUnits",
     levelRange: [7,10],
     reviewStatus: APPROVED,
-    question: {"a":6407,"b":null,"op":"place","answer":6407,"display":{"ones":7,"tens":640,"type":"build","number":6407,"promptText":"A card shows 640 tens and 7 ones. What number does the card show?"}},
+    question: {"a":6407,"b":null,"op":"place","answer":6407,"display":{"ones":7,"tens":640,"type":"build","number":6407,"promptText":"640 tens and 7 ones make what number?"}},
   },
   {
     itemId: "placeValue-conc-expandedForm-4_5-014",

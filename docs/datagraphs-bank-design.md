@@ -45,3 +45,10 @@ count-the-pictures-not-the-key slip), halfSymbol, whichKey. A graph can
 never disagree with its question. multiSelect is deliberately unused.
 
 Pattern catalog: `.claude/skills/datagraphs-mode-ui/SKILL.md`.
+
+## Figure contract (2026-08-23)
+
+Chart-describing classes (countJudgeTeen, keyIgnored*, storySticker_*,
+storyChartTotal_*, halfSymbol*) were swept in place to Pictograph-figure
+items; hypothetical key-conversion classes (pictoSymbols*, whichKey*,
+storyDraw_*) are declared verbal in `src/itemBank/figureContracts.js`.

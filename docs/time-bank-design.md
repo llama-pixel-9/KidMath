@@ -54,3 +54,11 @@ and hour WORDS.
   25% variety boundary. Six consecutive `bank:variety` runs: 220/220.
 
 Pattern catalog: `.claude/skills/time-mode-ui/SKILL.md`.
+
+## Figure contract (2026-08-23)
+
+Clock-reading classes are governed by `src/itemBank/figureContracts.js` —
+the face is shown (clockFace figure or the clock widget), never described in
+words. judgeFiveRead/judgeMinuteRead/handSwapJudge were swept in place to
+clockFace items (PR #79); hands-as-subject classes (whichHandHour,
+storyMinuteHand) are the declared exception.

@@ -11694,7 +11694,15 @@ export const SEED_ITEMS = [
      "sym": 2,
      "kind": "pictoRead2"
     },
-    "promptText": "Sam's reading chart gives one star picture for every 1 page read. The chart shows 2 stars. How many pages did Sam read?"
+    "rows": [
+     {
+      "label": "Stars",
+      "symbols": 2
+     }
+    ],
+    "figure": "pictograph",
+    "keyValue": 1,
+    "promptText": "Each star picture on Sam's chart means 1 page. How many pages does this chart show?"
    },
    "answerType": "numberPad"
   }
@@ -12030,7 +12038,15 @@ export const SEED_ITEMS = [
      "sym": 2,
      "kind": "pictoRead2"
     },
-    "promptText": "Each flower picture on Ida's garden chart means 5 seeds planted. With 2 flowers drawn, how many seeds is that?"
+    "rows": [
+     {
+      "label": "Flowers",
+      "symbols": 2
+     }
+    ],
+    "figure": "pictograph",
+    "keyValue": 5,
+    "promptText": "Each flower picture on Ida's chart means 5 seeds. How many seeds does this chart show?"
    },
    "answerType": "numberPad"
   }
@@ -12366,7 +12382,15 @@ export const SEED_ITEMS = [
      "sym": 2,
      "kind": "pictoRead2"
     },
-    "promptText": "Rosa's chore chart pays 10 points per smiley picture. There are 2 smileys. How many points has Rosa earned?"
+    "rows": [
+     {
+      "label": "Smileys",
+      "symbols": 2
+     }
+    ],
+    "figure": "pictograph",
+    "keyValue": 10,
+    "promptText": "Each smiley picture on Rosa's chart means 10 points. How many points does this chart show?"
    },
    "answerType": "numberPad"
   }
@@ -12715,8 +12739,16 @@ export const SEED_ITEMS = [
      "kind": "pictoSaid",
      "said": 2
     },
+    "rows": [
+     {
+      "label": "Puppies",
+      "symbols": 2
+     }
+    ],
     "truth": true,
-    "promptText": "The chart shows 2 pictures of puppies, one each. Luca counts 2. Is Luca right?"
+    "figure": "pictograph",
+    "keyValue": 1,
+    "promptText": "Luca counts the puppies on this chart and says 2. Is Luca right?"
    }
   }
  },
@@ -13089,8 +13121,16 @@ export const SEED_ITEMS = [
      "key": 5,
      "kind": "keyIgnored"
     },
+    "rows": [
+     {
+      "label": "Kittens",
+      "symbols": 2
+     }
+    ],
     "truth": false,
-    "promptText": "Omar counts 2 pictures for kittens and says there are 2 kittens — but each picture means 5. Is Omar right?"
+    "figure": "pictograph",
+    "keyValue": 5,
+    "promptText": "Omar says this chart shows 2 kittens. Is Omar right?"
    }
   }
  },
@@ -13272,8 +13312,17 @@ export const SEED_ITEMS = [
      "key": 2,
      "kind": "halfSymbol"
     },
+    "rows": [
+     {
+      "half": true,
+      "label": "Stickers",
+      "symbols": 2
+     }
+    ],
     "truth": true,
-    "promptText": "Diego treats a half picture as 1 when the key is 2 per picture. Is that right?"
+    "figure": "pictograph",
+    "keyValue": 2,
+    "promptText": "A row on this chart ends in half a picture. Diego says the half counts as 1. Is Diego right?"
    }
   }
  },
@@ -13453,8 +13502,16 @@ export const SEED_ITEMS = [
      "key": 10,
      "kind": "keyIgnored"
     },
+    "rows": [
+     {
+      "label": "Kittens",
+      "symbols": 2
+     }
+    ],
     "truth": false,
-    "promptText": "Finn counts 2 pictures for kittens and says there are 2 kittens — but each picture means 10. Is Finn right?"
+    "figure": "pictograph",
+    "keyValue": 10,
+    "promptText": "Finn says this chart shows 2 kittens. Is Finn right?"
    }
   }
  },
@@ -13636,8 +13693,17 @@ export const SEED_ITEMS = [
      "key": 10,
      "kind": "halfSymbol"
     },
+    "rows": [
+     {
+      "half": true,
+      "label": "Stickers",
+      "symbols": 2
+     }
+    ],
     "truth": true,
-    "promptText": "Luca treats a half picture as 5 when the key is 10 per picture. Is that right?"
+    "figure": "pictograph",
+    "keyValue": 10,
+    "promptText": "Luca sees the half picture at the end of this chart's row and counts it as 5. Is that right?"
    }
   }
  },
@@ -46837,8 +46903,13 @@ export const SEED_ITEMS = [
      "saidHour": 3,
      "saidMinute": 15
     },
+    "clock": {
+     "hour": 3,
+     "minute": 15
+    },
     "truth": true,
-    "promptText": "Mina reads a clock showing 3:15 and writes 3:15. Is Mina right?"
+    "figure": "clockFace",
+    "promptText": "Mina reads this clock as 3:15. Is Mina right?"
    }
   }
  },
@@ -47082,8 +47153,13 @@ export const SEED_ITEMS = [
      "saidHour": 3,
      "saidMinute": 7
     },
+    "clock": {
+     "hour": 3,
+     "minute": 7
+    },
     "truth": true,
-    "promptText": "Nia reads a clock showing 3:07 and writes 3:07. Is Nia right?"
+    "figure": "clockFace",
+    "promptText": "Nia reads this clock as 3:07. Is Nia right?"
    }
   }
  },

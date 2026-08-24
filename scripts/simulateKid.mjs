@@ -22,6 +22,7 @@
  */
 
 import { writeFileSync } from "node:fs";
+import { requiredSatisfiers, figureSatisfies } from "../src/itemBank/figureContracts.js";
 
 import {
   MODES,
@@ -156,6 +157,9 @@ function validateQuestion(q, mode, level) {
   const fig = q.display?.figure;
   if (fig && !FIGURE_KEYS.includes(fig))
     report("CRITICAL", "unregistered-figure", mode, String(fig), ref());
+  const needed = requiredSatisfiers(mode, q, q.metadata);
+  if (needed && !figureSatisfies(q, needed))
+    report("CRITICAL", "missing-required-figure", mode, String(q.metadata?.structureType), ref());
 }
 
 // --- Submissions -------------------------------------------------------------

@@ -13,6 +13,7 @@ import MathExplorer from "./MathExplorer";
 import PrintableWorksheet from "./PrintableWorksheet";
 import AboutPage from "./AboutPage";
 import LegalPage from "./legal/LegalPage";
+import { ConfirmConsentPage, RevokeConsentPage } from "./ConsentLinkPages.jsx";
 import Footer from "./Footer";
 import AdminItemsPage from "./admin/AdminItemsPage";
 import LayoutSweepPage from "./admin/LayoutSweepPage";
@@ -75,6 +76,11 @@ function AppShell() {
         <Route path="/terms" element={<LegalPage slug="terms" />} />
         <Route path="/security" element={<LegalPage slug="security" />} />
         <Route path="/parental-consent" element={<LegalPage slug="parental-consent" />} />
+        {/* The two links in the COPPA consent emails land here — branded
+            pages that POST the signed token to the Edge Functions on an
+            explicit tap (see src/ConsentLinkPages.jsx). */}
+        <Route path="/confirm-consent" element={<ConfirmConsentPage />} />
+        <Route path="/revoke-consent" element={<RevokeConsentPage />} />
         {/* First flight (§20): value → parent account → add a kid → soft
             paywall; returning families land on the profile picker. */}
         <Route path="/welcome" element={<ValuePage />} />

@@ -14,6 +14,7 @@ import {
 const SECRET = "consent-secret";
 const NOW = 1_800_000_000_000;
 const BASE = "https://example.supabase.co/functions/v1";
+const APP = "https://app.example";
 
 /** Fake service-role client: tables + the two SQL functions the migration
  *  defines, with grant_parental_consent behaving transactionally. */
@@ -109,7 +110,7 @@ function fakeTransport() {
 }
 
 function deps(db, transport) {
-  return { db, transport, secret: SECRET, functionsBaseUrl: BASE, now: () => NOW };
+  return { db, transport, secret: SECRET, functionsBaseUrl: BASE, appBaseUrl: APP, now: () => NOW };
 }
 
 const KID = { firstName: "Maya", age: "7", grade: "2nd" };
@@ -145,7 +146,9 @@ describe("email-plus consent flow", () => {
     expect(transport.sent).toHaveLength(1);
     expect(transport.sent[0].to).toBe("parent@example.com");
     expect(transport.sent[0].text).toContain("Parental Consent Notice");
-    expect(transport.sent[0].text).toContain(`${BASE}/consent-confirm?token=`);
+    // The link lands on the BRANDED APP page, never the raw functions host.
+    expect(transport.sent[0].text).toContain(`${APP}/confirm-consent?token=`);
+    expect(transport.sent[0].text).not.toContain("supabase.co");
   });
 
   it("on confirmation: profile + consent event appear together, with all three timestamps", async () => {
@@ -182,7 +185,8 @@ describe("email-plus consent flow", () => {
     const confirmation = transport.sent[1];
     expect(confirmation.to).toBe("parent@example.com");
     expect(confirmation.text).toContain("YOU CAN REVOKE THIS CONSENT AT ANY TIME");
-    expect(confirmation.text).toContain(`${BASE}/revoke-consent?token=`);
+    expect(confirmation.text).toContain(`${APP}/revoke-consent?token=`);
+    expect(confirmation.text).not.toContain("supabase.co");
     expect(confirmation.text).toContain(result.revocationUrl);
     expect(confirmation.text).toContain("WHAT YOU CONSENTED TO");
   });

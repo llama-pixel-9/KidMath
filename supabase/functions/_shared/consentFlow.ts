@@ -38,6 +38,10 @@ export type ConsentDeps = {
   secret: string;
   /** e.g. https://<ref>.supabase.co/functions/v1 */
   functionsBaseUrl: string;
+  /** Where the branded consent pages live, e.g. https://larkit.io — email
+   *  links land there (a parent-facing URL, not the raw functions host) and
+   *  the page POSTs the token back to the function. */
+  appBaseUrl: string;
   now?: () => number;
 };
 
@@ -81,7 +85,7 @@ export async function beginConsentRequest(
     { userId: args.userId, kidId: data.id, expiresAt: now + CONSENT_REQUEST_TTL_MS },
     deps.secret,
   );
-  const confirmUrl = `${deps.functionsBaseUrl}/consent-confirm?token=${encodeURIComponent(confirmToken)}`;
+  const confirmUrl = `${deps.appBaseUrl}/confirm-consent?token=${encodeURIComponent(confirmToken)}`;
 
   await deps.transport.send({
     to: args.parentEmail,
@@ -89,7 +93,7 @@ export async function beginConsentRequest(
     text:
       `${args.noticeText}\n\n` +
       `------------------------------------------------------------\n` +
-      `TO GIVE CONSENT, open this link (one tap):\n${confirmUrl}\n\n` +
+      `TO GIVE CONSENT, open this link and tap the Confirm button:\n${confirmUrl}\n\n` +
       `If you do nothing, we will delete your contact information and the ` +
       `name you entered within 14 days, and no profile will be created.\n`,
   });
@@ -148,7 +152,7 @@ export async function confirmConsent(
     { userId: claims.userId, kidId: grant.kid_profile_id, expiresAt: now + REVOCATION_LINK_TTL_MS },
     deps.secret,
   );
-  const revocationUrl = `${deps.functionsBaseUrl}/revoke-consent?token=${encodeURIComponent(revocationToken)}`;
+  const revocationUrl = `${deps.appBaseUrl}/revoke-consent?token=${encodeURIComponent(revocationToken)}`;
 
   await deps.transport.send({
     to: grant.parent_email,

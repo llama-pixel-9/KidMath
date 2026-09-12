@@ -56,6 +56,7 @@ import { isVerbalPrompt } from "./modes/helpers";
 import { emojiPromptLines } from "./promptLayout";
 import { saveProgress, loadProgress, mergeLocalToCloud } from "./progressStore";
 import { recordSessionEnd, currentStreak, starsToday, starBalance, isFirstWeek } from "./engagement/engagementStore";
+import GoogleSignInButton from "./auth/GoogleSignInButton.jsx";
 import JourneyMap from "./engagement/JourneyMap.jsx";
 import FlightReport from "./engagement/FlightReport.jsx";
 
@@ -625,7 +626,7 @@ function SettingsPanel({ mode, allowWordProblems, onAllowWordProblemsChange, cal
   );
 }
 
-function LoginPromptModal({ onLogin, onDismiss }) {
+function LoginPromptModal({ onLogin, onSignedIn, onDismiss }) {
   const { theme } = useTheme();
   return (
     <motion.div
@@ -652,15 +653,22 @@ function LoginPromptModal({ onLogin, onDismiss }) {
           Want to save your stars and track your progress?
         </p>
         <div className="flex flex-col gap-3 mt-6">
-          <motion.button
-            className={`flex items-center justify-center gap-2 w-full py-3 bg-gradient-to-r ${theme.worksheetCalloutBtn} text-cream font-display font-semibold text-lg rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer`}
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={onLogin}
-          >
-            <LogIn className="h-5 w-5" />
-            Log In / Sign Up
-          </motion.button>
+          {/* GIS signs in without leaving the page, so the kid's in-flight
+              session survives; the fallback is the old full-page redirect. */}
+          <GoogleSignInButton
+            onSignedIn={onSignedIn}
+            fallback={
+              <motion.button
+                className={`flex items-center justify-center gap-2 w-full py-3 bg-gradient-to-r ${theme.worksheetCalloutBtn} text-cream font-display font-semibold text-lg rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer`}
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={onLogin}
+              >
+                <LogIn className="h-5 w-5" />
+                Log In / Sign Up
+              </motion.button>
+            }
+          />
           <button
             className={`w-full py-3 ${theme.textMuted} font-medium text-base cursor-pointer hover:opacity-80 transition-colors`}
             onClick={onDismiss}
@@ -1709,7 +1717,11 @@ export default function MathExplorer({ initialMode }) {
 
       <AnimatePresence>
         {showLoginPrompt && (
-          <LoginPromptModal onLogin={handleLogin} onDismiss={handleLoginDismiss} />
+          <LoginPromptModal
+            onLogin={handleLogin}
+            onSignedIn={() => setShowLoginPrompt(false)}
+            onDismiss={handleLoginDismiss}
+          />
         )}
       </AnimatePresence>
       </main>

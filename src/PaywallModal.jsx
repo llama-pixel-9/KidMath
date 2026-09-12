@@ -11,6 +11,7 @@ import {
   AUTORENEW_ACK_DEFAULT,
 } from "./legal/disclosures";
 import { supabase } from "./supabaseClient";
+import GoogleSignInButton from "./auth/GoogleSignInButton";
 
 /**
  * The web paywall. Same presentation rules as iOS: lead with the annual plan
@@ -104,13 +105,19 @@ export default function PaywallModal({ onClose }) {
             <p className="text-sm font-semibold text-slate-500">
               Parents: sign in first so the subscription follows your family everywhere.
             </p>
-            <button
-              type="button"
-              onClick={signInWithGoogle}
-              className="w-full py-3 rounded-2xl bg-white border-2 border-slate-200 text-slate-700 font-extrabold cursor-pointer hover:border-slate-300"
-            >
-              Continue with Google
-            </button>
+            {/* Signing in flips `user`, so this pane swaps to the plan picker
+                on its own — no navigation, the modal stays open. */}
+            <GoogleSignInButton
+              fallback={
+                <button
+                  type="button"
+                  onClick={signInWithGoogle}
+                  className="w-full py-3 rounded-2xl bg-white border-2 border-slate-200 text-slate-700 font-extrabold cursor-pointer hover:border-slate-300"
+                >
+                  Continue with Google
+                </button>
+              }
+            />
           </div>
         ) : (
           <div className="mt-6">

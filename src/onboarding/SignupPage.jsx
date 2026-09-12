@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../useAuth";
 import { signupsOpen } from "../launchFlags";
+import GoogleSignInButton from "../auth/GoogleSignInButton";
 
 /**
  * §20 screen 02 — parent account. Apple + Google only, centred on cream,
@@ -87,14 +88,21 @@ export default function SignupPage() {
             <AppleLogo />
             Continue with Apple
           </button>
-          <button
-            type="button"
-            className="w-full h-14 rounded-[14px] bg-white border-[1.5px] border-ink/15 text-ink font-bold text-base inline-flex items-center justify-center gap-2.5 cursor-pointer hover:border-ink/30"
-            onClick={() => signInWithProvider("google", "/onboarding")}
-          >
-            <GoogleLogo />
-            Continue with Google
-          </button>
+          {/* GIS keeps the flow on larkit.io ("to continue to Larkit"); the
+              fallback is the old redirect through supabase.co. Sign-in sets
+              `user`, and the effect above routes to /onboarding either way. */}
+          <GoogleSignInButton
+            fallback={
+              <button
+                type="button"
+                className="w-full h-14 rounded-[14px] bg-white border-[1.5px] border-ink/15 text-ink font-bold text-base inline-flex items-center justify-center gap-2.5 cursor-pointer hover:border-ink/30"
+                onClick={() => signInWithProvider("google", "/onboarding")}
+              >
+                <GoogleLogo />
+                Continue with Google
+              </button>
+            }
+          />
         </div>
 
         <p className="mt-6 text-sm text-ink/60 leading-relaxed">

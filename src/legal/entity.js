@@ -12,16 +12,13 @@
  * placeholder contracting party is not an enforceable contract.
  */
 export const ENTITY = {
-  // TODO: exact name as registered with the state, including the suffix.
-  ENTITY_NAME: "Larkit LLC",
+  // Exact name as registered with the Commonwealth of Pennsylvania.
+  ENTITY_NAME: "Larkit Labs LLC",
 
-  // TODO: state of formation. Also the governing law in the Terms.
-  ENTITY_STATE: "Delaware",
+  // State of formation. Also the governing law in the Terms.
+  ENTITY_STATE: "Pennsylvania",
 
-  // TODO: a real mailing address. A registered-agent or virtual-office
-  // address is fine; a PO box is accepted by most, but Apple's App Store
-  // Connect and several ARL statutes expect a street address.
-  ENTITY_ADDRESS: "1234 Example St, Suite 100, Wilmington, DE 19801",
+  ENTITY_ADDRESS: "502 W 7th St, Ste 100, Erie, PA 16502-1333",
 
   // TODO: a monitored telephone number. NOT optional — 16 CFR §312.4(d)(1)
   // requires the online notice to state "the name, address, telephone number,

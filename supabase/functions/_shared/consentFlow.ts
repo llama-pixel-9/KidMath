@@ -19,6 +19,11 @@
 
 import { signRevocationToken, verifyRevocationToken } from "./revocationToken.ts";
 import type { EmailTransport } from "./emailTransport.ts";
+import {
+  stripDraftingNotes,
+  consentRequestEmailHtml,
+  consentConfirmedEmailHtml,
+} from "./emailTemplates.ts";
 
 /** "Reasonable time" to hold the parent's contact info awaiting consent —
  *  after this the scheduled job deletes the pending request outright. */
@@ -87,15 +92,24 @@ export async function beginConsentRequest(
   );
   const confirmUrl = `${deps.appBaseUrl}/confirm-consent?token=${encodeURIComponent(confirmToken)}`;
 
+  // Server-side hygiene regardless of what the client sent: parents never
+  // see internal drafting notes, in either part.
+  const cleanNotice = stripDraftingNotes(args.noticeText);
   await deps.transport.send({
     to: args.parentEmail,
     subject: "Your consent is needed before your child can start practising",
     text:
-      `${args.noticeText}\n\n` +
-      `------------------------------------------------------------\n` +
       `TO GIVE CONSENT, open this link and tap the Confirm button:\n${confirmUrl}\n\n` +
+      `The full notice is below for your records.\n\n` +
+      `------------------------------------------------------------\n` +
+      `${cleanNotice}\n\n` +
       `If you do nothing, we will delete your contact information and the ` +
       `name you entered within 14 days, and no profile will be created.\n`,
+    html: consentRequestEmailHtml({
+      kidFirstName: args.kid.firstName,
+      noticeMd: args.noticeText,
+      confirmUrl,
+    }),
   });
 
   return { requestId: data.id, confirmUrl };
@@ -158,6 +172,11 @@ export async function confirmConsent(
     to: grant.parent_email,
     subject: `Consent confirmed — ${grant.kid_first_name} is ready to practise`,
     text: buildConfirmationMessage({ kidFirstName: grant.kid_first_name, revocationUrl }),
+    html: consentConfirmedEmailHtml({
+      kidFirstName: grant.kid_first_name,
+      revocationUrl,
+      appBaseUrl: deps.appBaseUrl,
+    }),
   });
 
   // The confirming message is part of the method — record when it went out,

@@ -120,7 +120,10 @@ async function begin(db, transport) {
     userId: "user-1",
     parentEmail: "parent@example.com",
     kid: KID,
-    noticeText: "## Parental Consent Notice\n(full rendered direct notice)",
+    noticeText:
+      "# Parental Consent Notice\n\n" +
+      "> **Drafting note — remove before publication.** Internal margin note.\n\n" +
+      "## About this notice\n(full rendered direct notice)",
     termsVersion: "2026-08-05",
     privacyVersion: "2026-08-05",
   });
@@ -149,6 +152,12 @@ describe("email-plus consent flow", () => {
     // The link lands on the BRANDED APP page, never the raw functions host.
     expect(transport.sent[0].text).toContain(`${APP}/confirm-consent?token=`);
     expect(transport.sent[0].text).not.toContain("supabase.co");
+    // Internal drafting notes never reach a parent, in either part; the
+    // branded HTML part carries the same confirm link.
+    expect(transport.sent[0].text).not.toMatch(/drafting note/i);
+    expect(transport.sent[0].html).not.toMatch(/drafting note/i);
+    expect(transport.sent[0].html).toContain(`${APP}/confirm-consent?token=`);
+    expect(transport.sent[0].html).toContain("About this notice");
   });
 
   it("on confirmation: profile + consent event appear together, with all three timestamps", async () => {

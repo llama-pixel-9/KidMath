@@ -13,7 +13,10 @@
 export type OutboundEmail = {
   to: string;
   subject: string;
+  /** Plain-text part — the legally load-bearing copy; always present. */
   text: string;
+  /** Optional branded HTML part (see emailTemplates.ts). */
+  html?: string;
 };
 
 export type EmailTransport = {
@@ -47,6 +50,7 @@ export function resendTransport(apiKey: string, from: string): EmailTransport {
           to: email.to,
           subject: email.subject,
           text: email.text,
+          ...(email.html ? { html: email.html } : {}),
         }),
       });
       if (!res.ok) {

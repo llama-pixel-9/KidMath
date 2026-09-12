@@ -52,6 +52,11 @@ export function stripDraftingNotes(md: string): string {
   return out.join("\n").replace(/\n{3,}/g, "\n\n").trim();
 }
 
+/** Display-capitalize a kid's name ("baba" -> "Baba"); stored value untouched. */
+function displayName(name: string): string {
+  return name.charAt(0).toUpperCase() + name.slice(1);
+}
+
 function escapeHtml(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
@@ -178,7 +183,7 @@ function layout(args: { preheader: string; contentHtml: string; footerHtml: stri
     `<body style="margin:0;padding:0;background:${CREAM};">` +
     `<div style="display:none;max-height:0;overflow:hidden;">${escapeHtml(args.preheader)}</div>` +
     `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${CREAM};"><tr><td align="center" style="padding:32px 16px;">` +
-    `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;">` +
+    `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;">` +
     `<tr><td style="padding:0 8px 16px;">` +
     `<table role="presentation" cellpadding="0" cellspacing="0"><tr>` +
     `<td style="vertical-align:middle;"><img src="${LOGO_URL}" width="44" height="44" alt="" style="display:block;border-radius:11px;border:1px solid ${HAIRLINE};"></td>` +
@@ -210,18 +215,21 @@ export function consentRequestEmailHtml(args: {
   noticeMd: string;
   confirmUrl: string;
 }): string {
-  const kid = escapeHtml(args.kidFirstName);
+  const kid = escapeHtml(displayName(args.kidFirstName));
   const content =
+    `<div style="width:44px;height:7px;border-radius:4px;background:#f26b3a;margin:0 0 16px;"></div>` +
     `<h1 style="margin:0 0 10px;font-family:${DISPLAY_FONT};font-weight:600;font-size:24px;line-height:1.3;color:${INK};">One tap, and ${kid} can start practising</h1>` +
     `<p style="${P_STYLE}">You started creating a profile for ${kid} on larkit. Because larkit is made for kids, U.S. law (COPPA) asks us to get your consent as the parent before anything about ${kid} is saved.</p>` +
     ctaButton("Review & give consent", args.confirmUrl) +
-    `<p style="margin:6px 0 22px;font-size:12px;line-height:1.6;color:${MUTED};text-align:center;">The button opens a page on larkit.io where one tap confirms. If it doesn't work, copy this link:<br><a href="${args.confirmUrl}" style="color:${TEAL};word-break:break-all;">${args.confirmUrl}</a></p>` +
+    `<p style="margin:6px 0 24px;font-size:12px;line-height:1.6;color:${MUTED};text-align:center;">The button opens a page on larkit.io where one tap confirms.</p>` +
     `<hr style="border:none;border-top:1px solid ${HAIRLINE};margin:0 0 22px;">` +
-    `<p style="margin:0 0 14px;font-size:12px;letter-spacing:0.06em;font-weight:700;color:${MUTED};">THE FULL NOTICE, FOR YOUR RECORDS</p>` +
+    `<p style="margin:0 0 14px;font-size:12px;letter-spacing:0.06em;font-weight:700;color:${TEAL};">THE FULL NOTICE, FOR YOUR RECORDS</p>` +
     mdToEmailHtml(stripDraftingNotes(args.noticeMd)) +
-    `<p style="${P_STYLE}margin-top:18px;color:${MUTED};">If you do nothing, we delete your contact information and the name you entered within 14 days, and no profile is created.</p>`;
+    `<p style="${P_STYLE}margin-top:18px;color:${MUTED};">If you do nothing, we delete your contact information and the name you entered within 14 days, and no profile is created.</p>` +
+    `<hr style="border:none;border-top:1px solid ${HAIRLINE};margin:20px 0 12px;">` +
+    `<p style="margin:0;font-size:11px;line-height:1.6;color:${MUTED};">Button not working? Copy this address into your browser:<br><span style="word-break:break-all;">${args.confirmUrl}</span></p>`;
   return layout({
-    preheader: `Your consent is needed before ${args.kidFirstName} can start practising — one tap.`,
+    preheader: `Your consent is needed before ${displayName(args.kidFirstName)} can start practising — one tap.`,
     contentHtml: content,
     footerHtml:
       `You're receiving this because this email address was used to start creating a child profile on larkit. ` +
@@ -235,8 +243,9 @@ export function consentConfirmedEmailHtml(args: {
   revocationUrl: string;
   appBaseUrl: string;
 }): string {
-  const kid = escapeHtml(args.kidFirstName);
+  const kid = escapeHtml(displayName(args.kidFirstName));
   const content =
+    `<div style="width:44px;height:7px;border-radius:4px;background:#f26b3a;margin:0 0 16px;"></div>` +
     `<h1 style="margin:0 0 10px;font-family:${DISPLAY_FONT};font-weight:600;font-size:24px;line-height:1.3;color:${INK};">Consent confirmed — ${kid} is ready to practise</h1>` +
     `<p style="${P_STYLE}">Thank you. ${kid}'s profile is set up, and you can hand over the screen whenever you're both ready.</p>` +
     `<h2 style="margin:24px 0 8px;font-family:${DISPLAY_FONT};font-weight:600;font-size:17px;color:${INK};">What you consented to</h2>` +
@@ -244,7 +253,7 @@ export function consentConfirmedEmailHtml(args: {
     `<h2 style="margin:24px 0 8px;font-family:${DISPLAY_FONT};font-weight:600;font-size:17px;color:${INK};">You can revoke this consent at any time</h2>` +
     `<p style="${P_STYLE}">Revoking deletes ${kid}'s profile and all associated information, and stops any further collection. <a href="${args.revocationUrl}" style="color:${TEAL};">Revoke consent</a> (this link stays in this email — keep it), or review and delete everything from your account page whenever you like.</p>`;
   return layout({
-    preheader: `${args.kidFirstName}'s profile is ready — and how to revoke consent, any time.`,
+    preheader: `${displayName(args.kidFirstName)}'s profile is ready — and how to revoke consent, any time.`,
     contentHtml: content,
     footerHtml:
       `You're receiving this because you confirmed parental consent for a child profile on larkit. ` +

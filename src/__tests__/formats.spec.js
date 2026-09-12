@@ -90,7 +90,7 @@ describe("format transforms are mathematically sound", () => {
         expect(
           out.answer,
           `${id} claims ${out.answer} for "${out.display.promptText}"`
-        ).toBe(actuallyTrue ? "True" : "False");
+        ).toBe(actuallyTrue ? "Yes" : "No");
       }
     }
   });
@@ -107,7 +107,7 @@ describe("format transforms are mathematically sound", () => {
       if (!FORMATS[id].appliesTo(q)) continue;
       const seen = new Set();
       for (let i = 0; i < 200; i++) seen.add(applyFormat(q, id).answer);
-      expect([...seen].sort(), `${id} should vary its truth value`).toEqual(["False", "True"]);
+      expect([...seen].sort(), `${id} should vary its truth value`).toEqual(["No", "Yes"]);
     }
   });
 
@@ -298,11 +298,11 @@ describe("modes emit formats end to end", () => {
           }
 
           // Any true/false equation must be labelled with its real truth value.
-          if (q.answer === "True" || q.answer === "False") {
+          if (q.answer === "Yes" || q.answer === "No") {
             const truth = equationIsTrue(text);
             if (truth !== null) {
               expect(q.answer, `${mode}/${fid}: "${text}" mislabelled`).toBe(
-                truth ? "True" : "False"
+                truth ? "Yes" : "No"
               );
             }
           }

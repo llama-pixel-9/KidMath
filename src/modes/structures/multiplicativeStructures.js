@@ -134,6 +134,40 @@ export const MULTIPLICATIVE_STRUCTURES = [
     story: (ctx, { s, p }) =>
       `A red ${ctx.singular} costs ${p} cents and a blue one costs ${s} cents. How many times as much is the red one?`,
   },
+
+  // ---- Division with remainders (4.OA.3 / 4.NBT.6) ------------------------
+  // Not in Table 2, but required by Grade 4 (spec-part-ab §B2 #10-11). Both
+  // keep single-number answers so no new widget is needed: one asks for the
+  // leftover, the other for the rounded-up group count — same arithmetic,
+  // different interpretation, which is exactly the G4 lesson.
+  {
+    id: "divisionWithRemainder",
+    situation: "equalGroups",
+    solveFor: "r",
+    tier: TIERS.DIFFICULT,
+    minLevel: 7,
+    remainder: true,
+    op: "/",
+    subskill: "remainders",
+    division: "partitive",
+    equation: (g, _s, p) => `${p} ÷ ${g} — how many are left over?`,
+    story: (ctx, { g, p }) =>
+      `${p} ${ctx.plural} are shared equally into ${g} bags. How many ${ctx.plural} are left over?`,
+  },
+  {
+    id: "remainderInterpretation",
+    situation: "remainderStory",
+    solveFor: "ceil",
+    tier: TIERS.DIFFICULT,
+    minLevel: 7,
+    remainder: true,
+    op: "/",
+    subskill: "remainders",
+    division: "quotitive",
+    equation: (_g, s, p) => `Boxes hold ${s} each. How many boxes are needed for ${p}?`,
+    story: (ctx, { s, p }) =>
+      `${p} ${ctx.plural} are packed ${s} to a box. Every single one must be packed. How many boxes are needed?`,
+  },
 ];
 
 export const MULTIPLICATIVE_BY_ID = Object.fromEntries(
@@ -160,7 +194,23 @@ export function divisionEquation(structure, { g, s, p }) {
 }
 
 /** Resolve against `g x s = p`. `form` picks the symbolic rendering. */
-export function buildMultiplicative(structure, { g, s, p }, ctx, { asStory, form = "auto" }) {
+export function buildMultiplicative(structure, { g, s, p, r = 0 }, ctx, { asStory, form = "auto" }) {
+  // Remainder structures: `p = divisor × quotient + r`, r ≥ 1. solveFor "r"
+  // asks for the leftover; "ceil" asks for the rounded-up container count.
+  if (structure.remainder) {
+    const divisor = g;
+    const answer = structure.solveFor === "ceil" ? Math.ceil(p / divisor) : r;
+    const promptText = asStory ? structure.story(ctx, { g, s, p, r }) : structure.equation(g, s, p);
+    return {
+      a: p,
+      b: divisor,
+      op: structure.op,
+      answer,
+      display: { promptText },
+      givens: { a: p, b: divisor },
+      structureType: structure.id,
+    };
+  }
   const answer = structure.solveFor === "g" ? g : structure.solveFor === "s" ? s : p;
   const useDivision =
     structure.op === "/" && (form === "division" || (form === "auto" && Math.random() < 0.5));

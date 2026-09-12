@@ -124,3 +124,13 @@ Steps 1–2 are pure additions and can ship immediately after approval; steps 3�
 - The consumer launch is unaffected: household flows keep identical behaviour through step 5, and E5's consent plumbing attaches to the household owner path unchanged.
 - District features (rostering, SSO, audit logging — E9d/E9e) become additive work on top of a stable seam instead of a schema rewrite.
 - We accept two records for a child who uses both channels, permanently, as a feature of the consent model rather than a limitation.
+
+
+### Status note — 2026-08-23
+
+Step 3 shipped in a reduced form: `kid_id → kid_profiles` (not `learner_id →
+learners`, since steps 1–2 are not built) on `progress`, `progress_item_stats`
+and `practice_sessions`, with reads and writes cut over directly rather than
+dual-written — the app has no other consumer of the household key. The
+`learners` rename, when it comes, is a column rename plus FK swap on these
+three tables. Details: `docs/parent-report.md` § Per-kid progress.

@@ -49,7 +49,18 @@ export function promptTextOf(question) {
   if (Array.isArray(display.sequence)) parts.push(display.sequence.join(" "));
   if (display.count != null) parts.push(`count ${display.count}`);
   if (display.step != null) parts.push(`step ${display.step}`);
-  if (display.emoji) parts.push("emoji");
+  // The emoji IS the visual prompt: a duck picture and an apple picture are
+  // different items to a kid, so signature by glyph rather than the constant
+  // "emoji" (which lumped every picture item into one boundary-riding bucket).
+  // promptSignature() strips non-word characters, so encode the codepoint as
+  // letters that survive normalization.
+  if (display.emoji) {
+    const letters = [...String(display.emoji)]
+      .map((ch) => ch.codePointAt(0).toString(16))
+      .join("")
+      .replace(/[0-9a-f]/g, (c) => "ghijklmnopqrstuv"[parseInt(c, 16)]);
+    parts.push(`emoji ${letters}`);
+  }
   if (!parts.length && question?.op) {
     parts.push(`${question.a ?? "?"} ${question.op} ${question.b ?? "?"} = ?`);
   }
@@ -206,7 +217,10 @@ export function buildReport({
   for (const modeId of modeIds) {
     const mode = registry[modeId];
     if (!mode || typeof mode.generate !== "function") continue;
-    for (const level of levels) {
+    const top = mode.maxLevel ?? Math.max(...levels);
+    const modeLevels = [...levels.filter((l) => l <= top)];
+    for (let l = Math.max(...levels) + 1; l <= top; l += 1) modeLevels.push(l);
+    for (const level of modeLevels) {
       cells.push({ modeId, level, ...sampleCell(mode, level, samples) });
     }
   }

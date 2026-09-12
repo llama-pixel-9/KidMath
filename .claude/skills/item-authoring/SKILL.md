@@ -68,6 +68,13 @@ When the reviewer flags a wording pattern, the fix is never one edit:
 - **Gate exemplars before export** — approved-but-legacy items are not
   gate-clean; ungated exemplars taught the model the self-answering disease.
   `exportExemplars.js` runs `runChecks` on every candidate.
+- **Figure rules land in `src/itemBank/figureContracts.js`**, not in a prompt
+  tweak: each mode declares which item classes MUST show a figure and which
+  are legitimately verbal. `missingRequiredFigure` (fail) enforces it at the
+  assembler, admin Review and `bank:qc`; `modeFigures.spec.js` sweeps both
+  the generator and the shipped bank. A NEW structureType under a contracted
+  mode fails CI until declared. Text describing a visual is not the visual
+  (clock incident, PR #78/#79).
 - **Visual subskills are not text-authorable** — "count the objects" needs a
   picture; a text pipeline degenerates it into self-answering prose. Refill
   such cells from the mode's own engine templates (within the 3-per-signature

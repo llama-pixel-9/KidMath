@@ -1,8 +1,14 @@
 import { motion } from "framer-motion";
-import { digitKeyClass, PAD_BACKSPACE } from "./kit";
+import { digitKeyClass, PAD_BACKSPACE, useDigitKeys } from "./kit";
 
 // Shared digit pad used by the read-a-figure builders below (bar graph, angle).
 export default function FigureDigitPad({ entry, onDigit, onBackspace, onSubmit, lowMotionMode, locked }) {
+  useDigitKeys({
+    locked,
+    onDigit,
+    onBackspace,
+    onSubmit: () => entry !== "" && onSubmit(),
+  });
   return (
     <div className="grid grid-cols-3 gap-2 w-full">
       {["1", "2", "3", "4", "5", "6", "7", "8", "9"].map((d) => (

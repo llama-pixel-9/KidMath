@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { digitKeyClass, PAD_BACKSPACE } from "./kit";
+import { digitKeyClass, PAD_BACKSPACE, useDigitKeys } from "./kit";
 import ConfettiBurst from "./ConfettiBurst.jsx";
 import { clockHand } from "./clockHand.js";
 
@@ -25,6 +25,8 @@ export default function AnalogClock({ onSubmit, feedback, theme, lowMotionMode, 
   const hh = clockHand(cx, cy, 40, hourAngle);
   const displayTone =
     feedback === "correct" ? "text-deep-teal" : feedback === "wrong" ? "text-ember" : theme.textPrimary;
+
+  useDigitKeys({ locked, onDigit: pressDigit, onBackspace: backspace, onSubmit: submit });
 
   return (
     <section className="w-full flex flex-col items-center gap-3" aria-label="Clock">

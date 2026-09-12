@@ -119,7 +119,11 @@ export const FRACTION_VARIETIES = [
     id: "partWholeAreaName",
     subskill: "partWhole",
     bands: [1, 2, 3],
-    family: CONCEPTUAL,
+    // Reclassified CONCEPTUAL→PROCEDURAL (2026-08-21): naming the shaded
+    // fraction is a DOK1 drill, and band 1 otherwise has no procedural
+    // partWhole variety — which made the bank's band-1 procedural cell
+    // unreachable (the engine consults the bank by the generated family).
+    family: PROCEDURAL,
     demand: "DOK1",
     representation: "visual",
     misconceptions: ["partToPartConfusion"],
@@ -227,7 +231,10 @@ export const FRACTION_VARIETIES = [
     id: "fractionOnNumberLine",
     subskill: "fractionAsNumber",
     bands: [1, 2, 3],
-    family: CONCEPTUAL,
+    // Reclassified CONCEPTUAL→PROCEDURAL (2026-08-21): band 1's only
+    // fractionAsNumber variety — the bank's band-1 procedural cell was
+    // unreachable while this was conceptual.
+    family: PROCEDURAL,
     demand: "DOK2",
     representation: "visual",
     misconceptions: ["numberLineCountsTicks", "wholeNumberBias"],
@@ -415,7 +422,10 @@ export const FRACTION_VARIETIES = [
     id: "compareSameDenominator",
     subskill: "compareFractions",
     bands: [1, 2, 3],
-    family: CONCEPTUAL,
+    // Reclassified CONCEPTUAL→PROCEDURAL (2026-08-21): a bare symbol drill,
+    // and band 1's only compareFractions variety — kept conceptual it blocked
+    // the bank's band-1 procedural cell.
+    family: PROCEDURAL,
     demand: "DOK1",
     representation: "symbolic",
     misconceptions: ["symbolFlip"],
@@ -615,13 +625,13 @@ export const FRACTION_VARIETIES = [
       const b = randInt(1, den - 1 - a);
       const truthy = Math.random() < 0.5;
       // The false version is exactly the `denominatorAdd` error, so a child who
-      // holds the misconception answers "True" and we learn something.
+      // holds the misconception answers "Yes" and we learn something.
       const shown = truthy ? fracLabel(a + b, den) : fracLabel(a + b, den * 2);
       return {
-        answer: truthy ? "True" : "False",
+        answer: truthy ? "Yes" : "No",
         answerType: "choice",
-        choices: ["True", "False"],
-        prompt: `${fracLabel(a, den)} + ${fracLabel(b, den)} = ${shown}. True or false?`,
+        choices: ["Yes", "No"],
+        prompt: `${fracLabel(a, den)} + ${fracLabel(b, den)} = ${shown}. Is this right?`,
       };
     },
   },

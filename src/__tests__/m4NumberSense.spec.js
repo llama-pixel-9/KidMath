@@ -69,6 +69,8 @@ function wordsToNumber(text) {
 // Each returns the answer the item SHOULD have, recomputed from the rendering.
 
 const COUNTING = {
+  subitizeDrill: (q) => q.display.count,
+  bigSetWriteDrill: (q) => q.display.count,
   countScatteredSet: (q) => q.display.count,
   writeNumeralForSet: (q) => q.display.count,
   subitizeSmallSet: (q) => q.display.count,
@@ -132,6 +134,18 @@ const COUNTING = {
 };
 
 const SKIP = {
+  midBlankDrill: (q) => {
+    // Three shown terms of a 4-term run, one interior blank: the larger of
+    // the two visible gaps straddles the blank.
+    const nums = (q.display.promptText.match(/\d+/g) || []).map(Number);
+    const d1 = nums[1] - nums[0];
+    const d2 = nums[2] - nums[1];
+    return d1 > d2 ? nums[0] + d2 : nums[1] + d1;
+  },
+  repeatedAdditionDrill: (q) => {
+    const nums = (q.display.promptText.match(/\d+/g) || []).map(Number);
+    return nums.reduce((s, x) => s + x, 0);
+  },
   nextTermForward: (q) => q.display.sequence[2] + q.display.step,
   nextTermBackward: (q) => {
     const [x, y, z] = q.display.sequence;
@@ -160,7 +174,7 @@ const SKIP = {
   },
   membershipTrueFalse: (q) => {
     const m = promptOf(q).match(/count by (\d+)s from 0, will you say (\d+)/);
-    return Number(m[2]) % Number(m[1]) === 0 ? "True" : "False";
+    return Number(m[2]) % Number(m[1]) === 0 ? "Yes" : "No";
   },
   groupsToTotal: (q) => {
     const [per, boxes] = numsIn(promptOf(q));
@@ -274,7 +288,7 @@ const PLACE_VALUE = {
   crossingBoundary: (q) => numsIn(promptOf(q))[1] + 10,
   trueFalseDecomposition: (q) => {
     const [tens, ones, claimed] = numsIn(promptOf(q));
-    return tens * 10 + ones === claimed ? "True" : "False";
+    return tens * 10 + ones === claimed ? "Yes" : "No";
   },
   oddOneOutSameValue: (q) => {
     const number = numsIn(promptOf(q))[0];
@@ -298,6 +312,25 @@ const PLACE_VALUE = {
     const digits = numsIn(text.slice(0, text.indexOf("once each")));
     const sorted = [...digits].sort((a, b) => (text.includes("largest") ? b - a : a - b));
     return Number(sorted.join(""));
+  },
+  roundToNearest: (q) => {
+    const t = promptOf(q);
+    const n = numsIn(t)[0];
+    const unit = t.includes("hundred thousand") ? 100000 : t.includes("ten thousand") ? 10000 : t.includes("thousand") ? 1000 : t.includes("hundred") ? 100 : 10;
+    return Math.round(n / unit) * unit;
+  },
+  roundingWhichNeighbor: (q) => {
+    const [n, low, high] = numsIn(promptOf(q));
+    return n - low < high - n ? low : high;
+  },
+  bigNumberPlace: (q) => {
+    const t = promptOf(q);
+    const n = numsIn(t)[0];
+    const places = ["ones", "tens", "hundreds", "thousands", "ten thousands", "hundred thousands"];
+    // Longest match first: "ten thousands" contains "thousands".
+    const place = [...places].sort((a, b) => b.length - a.length).find((p2) => t.includes(p2));
+    const idx = places.indexOf(place);
+    return Math.floor(n / 10 ** idx) % 10;
   },
   placeValueInContext: (q) => {
     const pencils = numsIn(promptOf(q))[1];
@@ -328,15 +361,12 @@ const DISCS = {
     if (place === "thousands") return Math.floor(number / 1000) % 10;
     return digitAt(number, place);
   },
+  // Reworked 2026-08-24 (figure contract): the mat is a discMat figure, so
+  // these re-derive from display.discMat, not the prose.
   whichChartShows: (q) => {
     const number = numsIn(promptOf(q))[0];
-    const valueOf = (text) => {
-      const [h, t, o] = numsIn(text);
-      return h * 100 + t * 10 + o;
-    };
-    const right = q.choices.filter((c) => valueOf(c) === number);
-    expect(right).toHaveLength(1);
-    return right[0];
+    const shown = q.display.discMat.cols.reduce((s, c) => s + c.place * c.count, 0);
+    return shown === number ? "Yes" : "No";
   },
   missingDiscCount: (q) => {
     const text = promptOf(q);
@@ -373,22 +403,10 @@ const DISCS = {
     return total / boxes;
   },
   countTensDiscs: (q) => q.display.cols.reduce((s, c) => s + c.place * c.count, 0),
-  whichNumberShown: (q) => {
-    const [tens, ones] = numsIn(promptOf(q));
-    return tens * 10 + ones;
-  },
-  makeNumberFromDiscs: (q) => {
-    const [tens, ones] = numsIn(promptOf(q));
-    return tens * 10 + ones;
-  },
-  oneMoreDisc: (q) => {
-    const number = numsIn(promptOf(q))[0];
-    return number + (/1 more tens disc/.test(promptOf(q)) ? 10 : 1);
-  },
-  oneLessDisc: (q) => {
-    const [tens, ones] = numsIn(promptOf(q));
-    return tens * 10 + ones - (/Take away 1 tens disc/.test(promptOf(q)) ? 10 : 1);
-  },
+  whichNumberShown: (q) => q.display.discMat.cols.reduce((s, c) => s + c.place * c.count, 0),
+  makeNumberFromDiscs: (q) => q.display.discMat.cols.reduce((s, c) => s + c.place * c.count, 0),
+  oneMoreDisc: (q) => q.display.discMat.cols.reduce((s, c) => s + c.place * c.count, 0) + (/1 more tens disc/.test(promptOf(q)) ? 10 : 1),
+  oneLessDisc: (q) => q.display.discMat.cols.reduce((s, c) => s + c.place * c.count, 0) - (/1 tens disc/.test(promptOf(q)) ? 10 : 1),
   tradeTenOnesForTens: (q) => {
     // numsIn -> [total ones, 10 per trade, 1 ten received].
     const [total, perTrade] = numsIn(promptOf(q));
@@ -396,8 +414,9 @@ const DISCS = {
     return total / perTrade;
   },
   compareTwoMats: (q) => {
-    const [t1, o1, t2, o2] = numsIn(promptOf(q));
-    return t1 * 10 + o1 > t2 * 10 + o2 ? "Mat A" : "Mat B";
+    const value = (m) => m.cols.reduce((s, c) => s + c.place * c.count, 0);
+    const [a, b] = q.display.discMat.mats;
+    return value(a) > value(b) ? "Mat A" : "Mat B";
   },
   nextDiscCount: (q) => {
     const run = numsIn(promptOf(q));
@@ -410,6 +429,25 @@ const BONDS = {
   wholeUnknown: (q) => {
     const [p1, p2] = numsIn(promptOf(q));
     return p1 + p2;
+  },
+  // The three targetedOnly drills, re-derived from the symbolic prompt.
+  wholeDrill: (q) => {
+    const [p1, p2] = numsIn(promptOf(q)); // "? = 4 + 5"
+    return p1 + p2;
+  },
+  partnerDrill: (q) => {
+    const [part, whole] = numsIn(promptOf(q)); // "4 + ? = 9"
+    return whole - part;
+  },
+  splitDrill: (q) => {
+    const text = promptOf(q);
+    let m = text.match(/^\d+ \+ \d+ = (\d+), so (\d+) \+ \? = \d+$/); // pattern step
+    if (m) return Number(m[1]) - Number(m[2]);
+    m = text.match(/^\d+ \+ (\d+) = \d+ \+ (\d+) \+ \?$/); // make ten
+    if (m) return Number(m[1]) - Number(m[2]);
+    m = text.match(/^(\d+) \+ (\d+) = (\d+) \+ \?$/); // make next ten
+    if (m) return Number(m[1]) + Number(m[2]) - Number(m[3]);
+    return NaN;
   },
   partUnknown: (q) => q.display.whole - q.display.part,
   largeMagnitudeBond: (q) => q.display.whole - q.display.part,
@@ -451,7 +489,7 @@ const BONDS = {
   },
   trueFalseBond: (q) => {
     const [whole, p1, p2] = numsIn(promptOf(q));
-    return p1 + p2 === whole ? "True" : "False";
+    return p1 + p2 === whole ? "Yes" : "No";
   },
   errorAnalysisPartWholeSwap: (q) => {
     const [whole, part] = numsIn(promptOf(q));
@@ -487,6 +525,7 @@ const BONDS = {
 };
 
 const COMPARING = {
+  benchmarkDrill: (q) => symbolFor(q.a, q.b),
   symbolBetweenNumerals: (q) => symbolFor(q.a, q.b),
   compareObjectSets: (q) => {
     const m = promptOf(q).match(/Basket A: (\S+) Basket B: (\S+)/);
@@ -510,10 +549,10 @@ const COMPARING = {
     return Math.abs(n - lower) < Math.abs(n - upper) ? lower : upper;
   },
   trueFalseInequality: (q) => {
-    const text = promptOf(q).replace("True or false: ", "");
+    const text = promptOf(q);
     const symbol = text.match(/[<>=]/)[0];
     const [a, b] = numsIn(text);
-    return symbolFor(a, b) === symbol ? "True" : "False";
+    return symbolFor(a, b) === symbol ? "Yes" : "No";
   },
   differenceUnknown: (q) => {
     const [big, small] = numsIn(promptOf(q));
@@ -593,6 +632,25 @@ describe("M4 number-sense modes: every stated answer is actually correct", () =>
             expect(checkAnswer(q, q.answer)).toBe(true);
           } else {
             expect(q.answer, `${modeId}/${varietyId} L${level}: ${promptOf(q)}`).toBe(expected);
+          }
+        }
+      }
+      // `targetedOnly` drill varieties only join the pool when the context
+      // carries a family/subskill (as real session requests always do) — a
+      // separate targeted pass reaches and verifies them without diluting
+      // the unconditioned sampling above.
+      for (const level of LEVELS) {
+        for (const s of mode.subskills || []) {
+          for (let i = 0; i < 3; i++) {
+            const q = mode.generate(level, { noFormats: true, itemFamily: "procedural", targetSubskill: s });
+            const varietyId = q.metadata.structureType;
+            seen.add(varietyId);
+            const verify = VERIFIERS[modeId][varietyId];
+            expect(verify, `${modeId}: no verifier for variety ${varietyId}`).toBeTypeOf("function");
+            const expected = verify(q);
+            if (!Array.isArray(expected)) {
+              expect(q.answer, `${modeId}/${varietyId} targeted L${level}`).toBe(expected);
+            }
           }
         }
       }

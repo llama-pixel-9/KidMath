@@ -20,7 +20,7 @@ const STRUCTURES = DIVISION_STRUCTURES;
 // by subskill, keep resolving. Each structure maps onto one of these.
 const SUPPORTED_FORMATS = ["trueFalse","equationReversed","missingOperator","factFamily","errorAnalysis"];
 
-const SUBSKILLS = ["partitioning", "inverseFact", "unknownQuotient"];
+const SUBSKILLS = ["partitioning", "inverseFact", "unknownQuotient", "remainders"];
 
 export default {
   id: "division",
@@ -31,6 +31,10 @@ export default {
   glyph: "÷",
   op: "/",
   subskills: SUBSKILLS,
+  // Band-scoped subskills: remainders are Grade-4 work (4.OA.3 / 4.NBT.6) and
+  // only exist at levels 7-10 — targeting, coverage gates and seeding respect
+  // this range instead of expecting the cell at every level.
+  subskillLevels: { remainders: [7, 10] },
   supportedFormats: SUPPORTED_FORMATS,
   families: ["conceptual", "procedural", "application"],
   structureTypes: STRUCTURES.map((s) => s.id),
@@ -50,6 +54,9 @@ export default {
       // the misconception distractor builders.
       distractorContext: item.givens,
     };
+    // Remainder answers are small counts near the divisor — four generated
+    // choices are no discrimination there; the kid types instead.
+    if (structure.remainder) question.answerType = "numberPad";
 
     // Re-dress a share of plain-quotient renders: the bare "# ÷ # = ?" and
     // "# x ? = #" signatures otherwise dominate the small entry band. The
@@ -94,7 +101,10 @@ export default {
     });
 
     // Same mathematics, asked another way (M3). Story items are left alone —
-    // turning prose into an equation discards the context.
+    // turning prose into an equation discards the context. Remainder items are
+    // exempt too: every format assumes an exact fact (fact families, reversed
+    // equations), which a remainder item is not.
+    if (structure.remainder) return question;
     return maybeApplyFormat(
       question,
       level,

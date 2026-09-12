@@ -64,7 +64,9 @@ src/
   components/          widgets (NumberLine, AnalogClock, CoinTray, FractionInput, TenFrame, …)
   premium.js           FREE_MODE_IDS + entitlement logic, mirrored by iOS rowIsActive
 ios/                   SwiftUI app; project.yml is the XcodeGen spec
-scripts/itemGen/       LLM authoring pipeline (authorStructures, rewordItems, structureRules)
+scripts/itemGen/       LLM authoring pipeline; shared files at root, per-mode
+                       template/story/author scripts in scripts/itemGen/<mode>/
+                       (new modes follow this convention)
 docs/                  24 spec/plan files — see the map at the bottom
 supabase/              migrations + Edge Functions (stripe-checkout, stripe-webhook)
 resources/             667MB CCSS Progressions + EngageNY PDFs (gitignored payloads)
@@ -92,6 +94,15 @@ bundle was correct.
 Bank items serve preferentially; an empty cell falls back to the template
 generator, whose prose is *worse*. Reword in place. Per-item Retire in the
 Review queue is the surgical tool for genuinely bad items.
+
+**Show the visual, never describe it — and declare it.** `src/itemBank/figureContracts.js`
+is the per-mode render contract (time + dataGraphs so far): which item classes
+must ship a figure, which are legitimately verbal. Enforced by the
+`missingRequiredFigure` QC fail (assembler/admin/bank:qc), `modeFigures.spec`
+(generator + full-bank sweeps), e2e and simulateKid. When adding a visual mode
+or class, add its contract line — an undeclared class under a contracted mode
+fails CI. History: clock hands described in words shipped 121 items (PR #78);
+the same disease hit money/dataGraphs a month earlier.
 
 **Wording rules land at every layer, not one.** See `.claude/skills/item-authoring`
 for the full ladder: guide → structure templates → generator prompts → QC check
@@ -151,6 +162,17 @@ Reruns also overwrite same-cell draft ids — be skip-existing aware.
   a widget keeps the previous question's state.
 - **Engagement state is localStorage-only (v1)** behind a swappable store API;
   cloud sync is a future migration, so don't hand-roll persistence around it.
+- **Progress is per kid.** `progress` / `progress_item_stats` rows carry `kid_id`
+  (null = household row merged before any profile; the first kid inherits it as a
+  seed). Local key is `kidmath-progress:<kid>`. Every cloud read must filter by kid
+  (`.eq` for a kid, `.is null` for household) — an unfiltered read silently returns
+  a sibling's row. Upserts conflict on `user_id,kid_id,mode[,item_id]`; iOS mirrors
+  this exactly in `ProgressStore.swift` / `SupabaseService.swift`.
+- **The practice log (`src/analytics/sessionLog.js`, table `practice_sessions`)**
+  is the parent report's source: one record per finished session with every
+  attempt (prompt, answer, given, ms, subskill), per kid. Local mirror + cloud
+  when signed in. `buildReport` in `reportModel.js` is pure — keep it that way,
+  it is meant to run server-side for the emailed edition (`docs/parent-report.md`).
 - **`entitlements` is a v1 client-write trust model.** Hardening (Edge Function
   receipt validation) is planned, not done — don't assume the row is server-verified.
 
@@ -161,6 +183,13 @@ Reruns also overwrite same-cell draft ids — be skip-existing aware.
 Simulator flags (argument-domain `UserDefaults`, via `simctl launch com.kidmath.app`):
 `-autostartMode <mode>` jumps straight into a mode · `-kidmath-theme <id>` forces
 a theme · `-showPaywall 1` opens the paywall.
+
+Web: `/play/<mode>?item=<itemId>` pins one bank row (any status) as every
+question in the session — the "Play" link in the /admin review queue. The
+queue's "Preview" drawer renders the same `QuestionStage` the session uses.
+`node scripts/layoutSweep.mjs [--approved] [--mode X]` renders every bank row
+through that stage at phone width and lists anything spilling past the card —
+run it after any change to QuestionDisplay / a figure / a widget.
 
 **StoreKit testing is awkward by design.** `SKTestSession` needs the
 `com.apple.developer.storekit.request-data` entitlement (Debug-only
@@ -227,6 +256,7 @@ Product IDs: `com.kidmath.app.premium.{monthly,annual}`.
 | Problem-type research (K–4) | `research-k4-problem-types.md` |
 | Item metadata schema | `item-metadata-model.md` |
 | Ship checklists | `ios-appstore-checklist.md`, `stripe-setup.md` |
+| Parent report + practice log, email plan | `parent-report.md` |
 | Why we skipped RevenueCat (billing decision) | `billing-revenuecat-decision.md` |
 | Source licensing / attribution | `bank-sources.md`, `resources/README.md` |
 

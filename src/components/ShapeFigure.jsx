@@ -7,6 +7,8 @@ import {
   isLocked,
   tapMotion,
   hoverMotion,
+  useIndexKeys,
+  KeyHint,
 } from "./kit";
 import { Figure } from "./kit/shapes.jsx";
 import { SHAPE_META } from "./kit/shapeData.js";
@@ -51,6 +53,15 @@ export default function ShapeFigure({
 
   const canSubmit = mode === "select" ? picked !== null : entry !== "";
 
+  // Keyboard (select mode): 1-9 picks a shape, Enter checks. Count mode is a
+  // real text input, autofocused, with its own Enter handler.
+  useIndexKeys({
+    locked,
+    count: mode === "select" ? options.length : 0,
+    onIndex: (i) => setPicked(i),
+    onSubmit: mode === "select" ? submit : undefined,
+  });
+
   return (
     <section className="flex flex-col items-center gap-4 w-full" aria-label="Shape">
       {mode === "select" ? (
@@ -63,11 +74,12 @@ export default function ShapeFigure({
               onClick={() => setPicked(i)}
               aria-pressed={picked === i}
               aria-label={SHAPE_META[opt.shape]?.name || "shape"}
-              className={`p-2 rounded-2xl ${theme?.cardBg || "bg-white/80"} ${selectionClasses(picked === i, feedback)} cursor-pointer`}
+              className={`relative p-2 rounded-2xl ${theme?.cardBg || "bg-white/80"} ${selectionClasses(picked === i, feedback)} cursor-pointer`}
               {...hoverMotion(lowMotionMode)}
               {...tapMotion(lowMotionMode)}
             >
               <Figure shape={opt.shape} rotate={opt.rotate || 0} size={72} />
+              {i < 10 && <KeyHint k={i === 9 ? "0" : String(i + 1)} />}
             </motion.button>
           ))}
         </div>
@@ -77,6 +89,7 @@ export default function ShapeFigure({
             <Figure shape={shape} rotate={rotate} showSymmetry={showSymmetry} size={120} />
           </div>
           <input
+            autoFocus
             inputMode="numeric"
             pattern="[0-9]*"
             value={entry}

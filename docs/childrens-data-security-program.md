@@ -1,6 +1,6 @@
 # Children's Personal Information Security Program
 
-**Larkit LLC · larkit**
+**Larkit Labs LLC · larkit**
 **Version 1.0 · Adopted August 3, 2026 · Next review due August 3, 2027**
 
 > **INTERNAL — do not publish.** This document is required by 16 CFR §312.8(b),
@@ -30,7 +30,7 @@ It applies to production systems, backups, the admin interface, and any laptop o
 
 ## 2. Program coordinator (§312.8(b)(1))
 
-**Coordinator: Sai — founder and sole operator of Larkit LLC.**
+**Coordinator: Sai — founder and sole operator of Larkit Labs LLC.**
 
 The coordinator is accountable for maintaining this program, performing the annual assessment, approving vendors that will receive children's data, and responding to security incidents.
 

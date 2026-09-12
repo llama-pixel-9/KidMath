@@ -13,8 +13,10 @@ import MathExplorer from "./MathExplorer";
 import PrintableWorksheet from "./PrintableWorksheet";
 import AboutPage from "./AboutPage";
 import LegalPage from "./legal/LegalPage";
+import { ConfirmConsentPage, RevokeConsentPage } from "./ConsentLinkPages.jsx";
 import Footer from "./Footer";
 import AdminItemsPage from "./admin/AdminItemsPage";
+import LayoutSweepPage from "./admin/LayoutSweepPage";
 import DiagnosticsPage from "./admin/DiagnosticsPage";
 import MeadowPage from "./engagement/meadow/MeadowPage";
 import ValuePage from "./onboarding/ValuePage";
@@ -23,6 +25,7 @@ import OnboardingFlow from "./onboarding/OnboardingFlow";
 import ProfilePicker from "./onboarding/ProfilePicker";
 import BillingPortalPage from "./BillingPortalPage";
 import AccountPage from "./account/AccountPage";
+import ParentReportPage from "./analytics/ParentReportPage";
 import "./index.css";
 
 function PlayRoute() {
@@ -73,6 +76,11 @@ function AppShell() {
         <Route path="/terms" element={<LegalPage slug="terms" />} />
         <Route path="/security" element={<LegalPage slug="security" />} />
         <Route path="/parental-consent" element={<LegalPage slug="parental-consent" />} />
+        {/* The two links in the COPPA consent emails land here — branded
+            pages that POST the signed token to the Edge Functions on an
+            explicit tap (see src/ConsentLinkPages.jsx). */}
+        <Route path="/confirm-consent" element={<ConfirmConsentPage />} />
+        <Route path="/revoke-consent" element={<RevokeConsentPage />} />
         {/* First flight (§20): value → parent account → add a kid → soft
             paywall; returning families land on the profile picker. */}
         <Route path="/welcome" element={<ValuePage />} />
@@ -82,10 +90,12 @@ function AppShell() {
         {/* Parental rights: review what we hold, delete a child, delete the
             account (§312.6; Apple 5.1.1(v)). */}
         <Route path="/account" element={<AccountPage />} />
+        <Route path="/report" element={<ParentReportPage />} />
         {/* One-step online cancellation (auto-renewal law) — sends the
             subscriber straight into the Stripe Billing Portal. */}
         <Route path="/account/billing" element={<BillingPortalPage />} />
         <Route path="/admin" element={<AdminItemsPage />} />
+        {import.meta.env.DEV && <Route path="/__sweep" element={<LayoutSweepPage />} />}
         <Route path="/diagnostics" element={<DiagnosticsPage />} />
         {/* Unknown paths: send to home rather than expose a bare 404. */}
         <Route path="*" element={<Navigate to="/" replace />} />

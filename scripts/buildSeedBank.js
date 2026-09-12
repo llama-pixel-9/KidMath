@@ -21,6 +21,7 @@ import { writeFileSync } from "node:fs";
 // Read the FULL corpus, never bundle.js — that now exports this script's own
 // output, and seeding from the seed would silently shrink it on every run.
 import { FULL_ITEMS as BUNDLED_ITEMS } from "../src/itemBank/fullBank.js";
+import { isVerbalPrompt } from "../src/modes/helpers.js";
 
 const args = process.argv.slice(2);
 // Default 8 to match RECENT_BANK_WINDOW in mathEngine: the session engine
@@ -56,6 +57,20 @@ function buildSeed(items, n) {
       const key = item.subskill || "";
       if (!bySubskill.has(key)) bySubskill.set(key, []);
       bySubskill.get(key).push(item);
+    }
+    // Within each subskill, sample letter-free items first: sessions default
+    // to word-problems OFF and the runtime selector filters verbal prompts —
+    // an all-verbal seed cell serves NOTHING offline under default settings
+    // (found via the factorsMultiples seed, which sampled 24 verbal drills).
+    for (const [key, list] of bySubskill) {
+      bySubskill.set(
+        key,
+        [...list].sort(
+          (a, b) =>
+            (isVerbalPrompt(a.question?.display?.promptText) ? 1 : 0) -
+            (isVerbalPrompt(b.question?.display?.promptText) ? 1 : 0)
+        )
+      );
     }
     const buckets = [...bySubskill.values()].map((items) => ({
       items,

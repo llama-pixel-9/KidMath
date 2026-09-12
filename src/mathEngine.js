@@ -17,10 +17,29 @@ const RETRY_SPACING = 5;
 const REVIEW_INTERVALS = [4, 8, 16];
 const MAX_REVIEW_ITEMS = 20;
 const RECENT_BANK_WINDOW = 8;
+// Level-1–3 cells are the smallest, and the kids there need fresh practice
+// the most — a struggling kid saw "2 × 3 = ?" 126 times in 30 sessions when the
+// window was 8 everywhere (kid-sim QA). Wider window low, the old window high.
+const RECENT_BANK_WINDOW_LOW = 24;
+const LOW_LEVEL_MAX = 3;
+export function recentBankWindow(level) {
+  return level <= LOW_LEVEL_MAX ? RECENT_BANK_WINDOW_LOW : RECENT_BANK_WINDOW;
+}
+// Ladder v2: the fast promotion path compares the kid to THEMSELVES (2.5× their
+// own median response time) instead of an absolute 8.5 s, so a slow-but-right
+// kid is not parked at level 1; demotion waits for the third miss.
+const LADDER_V2_SPEED_RATIO = 2.5;
+const LADDER_V2_MIN_SAMPLES = 5;
+const LADDER_V2_MISSES_TO_DEMOTE = 3;
 const MAX_BANK_ITEM_STATS = 200;
 
-function clampLevel(level) {
-  return Math.max(1, Math.min(MAX_LEVEL, level));
+function clampLevel(level, max = MAX_LEVEL) {
+  return Math.max(1, Math.min(max, level));
+}
+
+/** Per-mode ladder length: Grade-5 modes run to 12, everything else to 10. */
+function modeMaxLevel(modeId) {
+  return getModeConfig(modeId)?.maxLevel ?? MAX_LEVEL;
 }
 
 function createSkillMastery(modeConfig) {
@@ -204,7 +223,7 @@ export function resetBankFallbackStats() {
 
 export function generateQuestion(mode, level, context = null) {
   const config = getModeConfig(mode);
-  const targetLevel = clampLevel(level);
+  const targetLevel = clampLevel(level, config.maxLevel ?? MAX_LEVEL);
   const q = config.generate(targetLevel, context || undefined);
   const generatedFamily = q.metadata?.itemFamily;
   const isApplication = generatedFamily === ITEM_FAMILIES.APPLICATION;
@@ -264,6 +283,12 @@ export function generateQuestion(mode, level, context = null) {
       }
     }
   }
+  return finalizeQuestion(mode, bankQuestion, q);
+}
+
+/** Fold a bank payload (or the generated question when there is none) into
+ * the render-ready shape: mode stamped, metadata flattened, itemKey, validated. */
+function finalizeQuestion(mode, bankQuestion, q) {
   const bankMetadata = bankQuestion?.metadataOverrides || null;
   const bankPayload = bankQuestion ? { ...bankQuestion } : null;
   if (bankPayload) delete bankPayload.metadataOverrides;
@@ -290,6 +315,26 @@ export function generateQuestion(mode, level, context = null) {
     throw new Error(`Invalid question for mode ${mode}: ${quality.errors.join("; ")}`);
   }
   return effectiveQuestion;
+}
+
+/**
+ * One specific bank item, render-ready — exactly what a kid would see if the
+ * selector served it: same merge as generateQuestion, choices attached. Used
+ * by the admin preview pane and the `/play/<mode>?item=<id>` pin; any status
+ * is accepted (reviewers preview drafts), unlike the session selector.
+ */
+export function buildBankQuestion(bankItem, level = null) {
+  const mode = bankItem.modeId;
+  const targetLevel = clampLevel(level ?? bankItem.levelRange?.[0] ?? 1, modeMaxLevel(mode));
+  const bankQuestion = buildQuestionFromBankItem(bankItem, targetLevel);
+  // The generator's question supplies the full metadata scaffold (gradeBand,
+  // domain, practices...) exactly as it does on the session path.
+  const scaffold = getModeConfig(mode).generate(targetLevel);
+  const question = finalizeQuestion(mode, bankQuestion, scaffold);
+  if (questionAnswerType(question) === "choice") {
+    question.choices = generateChoices(question.answer, 4, question);
+  }
+  return question;
 }
 
 export function generateChoices(answer, count = 4, question = null) {
@@ -490,7 +535,9 @@ export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE, options 
     skillMastery: createSkillMastery(modeConfig),
     analyticsEvents: [],
     allowWordProblems,
-    recentBankItemIds: Array.isArray(saved.recentBankItemIds) ? saved.recentBankItemIds.slice(-RECENT_BANK_WINDOW) : [],
+    recentBankItemIds: Array.isArray(saved.recentBankItemIds) ? saved.recentBankItemIds.slice(-recentBankWindow(Number(saved.level) || STARTING_LEVEL)) : [],
+    // Ladder v2 keeps every response time this session for the kid's own median.
+    ...(options.ladderV2 ? { ladderV2: true, allResponseTimesMs: [] } : {}),
     bankItemStats: saved.bankItemStats && typeof saved.bankItemStats === "object" ? saved.bankItemStats : {},
     // QA-only: force one generator variety and skip the bank, so a reported
     // item shape can be reproduced deterministically (`?qaVariety=` on web).
@@ -583,10 +630,25 @@ function updateBankItemStats(session, question, correct, responseTimeMs) {
   return Object.fromEntries(sorted.map(([id]) => [id, merged[id]]));
 }
 
-function appendRecentBankItemId(recent, itemId) {
+function appendRecentBankItemId(recent, itemId, level = MAX_LEVEL) {
   if (!itemId) return recent;
   const next = [...(recent || []).filter((id) => id !== itemId), itemId];
-  return next.slice(-RECENT_BANK_WINDOW);
+  return next.slice(-recentBankWindow(level));
+}
+
+function weakestScoreWithEvidence(session, minAttempts) {
+  let weakest = 1;
+  for (const m of Object.values(session.skillMastery || {})) {
+    if (!m || (m.attempts || 0) < minAttempts) continue;
+    weakest = Math.min(weakest, m.correct / m.attempts);
+  }
+  return weakest;
+}
+
+function median(values) {
+  const sorted = [...values].sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  return sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
 }
 
 export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wasRetry) {
@@ -615,6 +677,8 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
       next.mistakeBank = session.mistakeBank.filter((q) => q.itemKey !== question.itemKey);
     } else {
       next.correctStreak = 0;
+      // v2: a missed retry is evidence at this level too.
+      if (session.ladderV2) next.mistakesAtLevel = session.mistakesAtLevel + 1;
       next.mistakeBank = session.mistakeBank.map((q) => {
         if (q.itemKey !== question.itemKey) return q;
         const index = Math.min(REVIEW_INTERVALS.length - 1, q.retryCount || 0);
@@ -632,8 +696,10 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
   next.bankItemStats = updateBankItemStats(session, question, correct, responseTimeMs);
   next.recentBankItemIds = appendRecentBankItemId(
     session.recentBankItemIds,
-    question.metadata?.itemSource === "bank" ? question.metadata?.itemId : null
+    question.metadata?.itemSource === "bank" ? question.metadata?.itemId : null,
+    session.level
   );
+  if (session.ladderV2) next.allResponseTimesMs = [...(session.allResponseTimesMs || []), responseTimeMs];
 
   if (correct) {
     next.correctStreak = session.correctStreak + 1;
@@ -643,22 +709,28 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
     let levelChanged = false;
     const avgTime = next.responseTimesMs.reduce((a, b) => a + b, 0) / next.responseTimesMs.length;
     const { weakestScore } = getMasterySnapshot(next, getModeConfig(session.mode));
+    // v1: an absolute 8.5 s gate. v2: relative to the kid's own median this
+    // session (no gate until there are enough samples to have one).
+    const all = next.allResponseTimesMs || [];
+    const quickEnough = session.ladderV2
+      ? all.length < LADDER_V2_MIN_SAMPLES || avgTime <= LADDER_V2_SPEED_RATIO * median(all)
+      : avgTime < 8500;
     const promotionSignal =
-      (next.correctStreak >= 4 && avgTime < 8500 && weakestScore >= 0.8) ||
+      (next.correctStreak >= 4 && quickEnough && weakestScore >= 0.8) ||
       (next.correctStreak >= 7 && weakestScore >= 0.72);
 
     if (session.fledging) {
       // §03: the signal nominates — nothing interrupts the round, the level
       // holds, and the Fledging Flight is offered at the next take-off. A
       // challenge set never nominates (it IS the test).
-      if (promotionSignal && !next.challengeSubskills && !next.nominated && next.level < MAX_LEVEL) {
+      if (promotionSignal && !next.challengeSubskills && !next.nominated && next.level < modeMaxLevel(session.mode)) {
         next.nominated = true;
         next.nominationWeakSubskills = weakestSubskillList(next, getModeConfig(session.mode));
       }
       return { session: next, correct: true, levelChanged: false, newLevel: next.level };
     }
 
-    if (promotionSignal && next.level < MAX_LEVEL) {
+    if (promotionSignal && next.level < modeMaxLevel(session.mode)) {
       next.level = next.level + 1;
       next.correctStreak = 0;
       next.mistakesAtLevel = 0;
@@ -685,7 +757,11 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
   let levelChanged = false;
   if (!session.fledging) {
     const { weakestScore } = getMasterySnapshot(next, getModeConfig(session.mode));
-    if ((next.mistakesAtLevel >= 2 || weakestScore < 0.45) && next.level > 1) {
+    const missesToDemote = session.ladderV2 ? LADDER_V2_MISSES_TO_DEMOTE : 2;
+    // v2: the mastery floor needs evidence — one miss on a just-served
+    // subskill is 0/1 and used to demote on its own.
+    const floorScore = session.ladderV2 ? weakestScoreWithEvidence(next, LADDER_V2_MIN_SAMPLES - 2) : weakestScore;
+    if ((next.mistakesAtLevel >= missesToDemote || floorScore < 0.45) && next.level > 1) {
       next.level = next.level - 1;
       next.mistakesAtLevel = 0;
       levelChanged = true;
@@ -766,9 +842,21 @@ export function generateWorksheetSet(mode, level, size = SESSION_SIZE, options =
 // the sheet being printable: operands inside the level range, the result slot
 // always the blank, no duplicate items or wording, at most one zero-fact.
 
-export const FLIGHT_LOG_PART_A = 6;
-export const FLIGHT_LOG_PART_B = 4;
+// Budgets are sized to FILL one US Letter page — not spill onto a second and
+// not strand half a page of white (#34 both ways). The print e2e renders the
+// real PDF and pins every sheet to exactly one page.
+export const FLIGHT_LOG_PART_A = 12;
+export const FLIGHT_LOG_PART_B = 6;
 export const FLIGHT_LOG_ITEMS = FLIGHT_LOG_PART_A + FLIGHT_LOG_PART_B + 1;
+// Prompt items run two to three lines where a stacked sum runs one, so the
+// prompt modes get a smaller budget.
+export const FLIGHT_LOG_PROMPT_PART_A = 6;
+export const FLIGHT_LOG_PROMPT_PART_B = 6;
+// Figure sheets budget lower still: a bar chart is ~15 text lines tall, and
+// eight of them cannot share one page (measured by the print e2e).
+export const FLIGHT_LOG_FIGURE_PART_A = 2;
+export const FLIGHT_LOG_FIGURE_PART_B = 2;
+const FIGURE_MODES = new Set(["dataGraphs", "volumeCoordinates"]);
 
 const ARITH_OPS = { "+": (a, b) => a + b, "-": (a, b) => a - b, "x": (a, b) => a * b, "/": (a, b) => a / b };
 
@@ -815,13 +903,76 @@ function normalizedPrompt(q) {
   return typeof text === "string" ? text.trim().toLowerCase() : null;
 }
 
+// --- Print-safe wording (#34) ----------------------------------------------
+// Screen verbs don't survive paper: "Tap the number that is 9 hundreds" makes
+// no sense on a sheet a child answers with a pencil. Every drawn flight-log
+// question is reworded BEFORE dedupe keying, so the printed prompt is also the
+// deduped prompt.
+const PRINT_REWORDS = [
+  [/\btap where you land\b/gi, "what number do you land on?"],
+  [/\. what number do you land on\?\.?$/i, ". What number do you land on?"],
+  [/\bTap the\b/g, "Write the"],
+  [/\btap the\b/g, "write the"],
+  [/\bTap\b/g, "Write"],
+  [/\btap\b/g, "write"],
+];
+const SCREEN_VERBS = /\b(tap|press|drag|swipe|click|touch)\b/i;
+
+function printableWording(q) {
+  const text = q.display?.promptText;
+  if (typeof text !== "string" || !SCREEN_VERBS.test(text)) return q;
+  let out = text;
+  for (const [re, rep] of PRINT_REWORDS) out = out.replace(re, rep);
+  return { ...q, display: { ...q.display, promptText: out } };
+}
+
 function isPrintablePrompt(q) {
   if (q.answerType === "multiSelect" || q.answerType === "tenFrame") return false;
-  if (q.display?.promptText) {
+  const text = q.display?.promptText;
+  if (text) {
     const t = typeof q.answer;
-    return t === "number" || t === "string";
+    if (t !== "number" && t !== "string") return false;
+    // A prompt that still carries a screen verb after rewording cannot be
+    // answered with a pencil ("press Go", coin taps).
+    if (SCREEN_VERBS.test(text)) return false;
+    // Degenerate on paper: the answer is printed inside the prompt ("Mark 0.7
+    // on the number line" — the widget was the question; the sheet is not).
+    if (t === "number" && new RegExp(`\\b${String(q.answer).replace(/\./g, "\\.")}\\b`).test(text)) {
+      return false;
+    }
+    return true;
   }
   return Boolean(q.display?.sequence || q.display?.emoji);
+}
+
+/**
+ * The option bank prints only when the options ARE the question (#34):
+ * identify-among-options items ("Which one shows 780 in expanded form?"),
+ * non-numeric answers, and estimation items whose choices define the
+ * granularity ("About how many…"). A plain numeric answer gets a blank box —
+ * printing four candidate numbers next to "What is 10 more than 68?" just
+ * turns writing into guessing.
+ */
+export function printOptionBank(q) {
+  if (questionAnswerType(q) !== "choice") return null;
+  const choices = Array.isArray(q.choices) && q.choices.length > 1 ? q.choices : null;
+  if (!choices) return null;
+  if (isYesNoJudgment(q)) return null; // printed as "circle Yes / No" instead
+  const numericAnswer =
+    typeof q.answer === "number" ||
+    (typeof q.answer === "string" && /^-?\d+([./]\d+)?$/.test(q.answer.trim()));
+  const text = q.display?.promptText || "";
+  if (!numericAnswer) return choices;
+  return /\bwhich\b|\bNOT\b|\babout\b/i.test(text) ? choices : null;
+}
+
+/** Judgment items ("8 = 9 — Is this right?") print as circle-Yes-or-No. */
+export function isYesNoJudgment(q) {
+  return (
+    Array.isArray(q.choices) &&
+    q.choices.length === 2 &&
+    q.choices.every((c) => c === "Yes" || c === "No")
+  );
 }
 
 function promptKey(q) {
@@ -830,8 +981,11 @@ function promptKey(q) {
 
 // Draw questions until `accept` says yes, `count` times, without repeating a
 // key. Relaxation order on starvation: first admit trivial facts beyond the
-// cap, then give up on the remaining slots rather than loop forever.
-function drawUnique({ mode, level, context, count, accept, keyOf, seenKeys, state }) {
+// cap, then (drill sheets only) admit repeats of already-used facts — a small
+// fact pool (multiplication L1 has ten non-trivial facts) must still fill its
+// page, and "3 × 4" appearing twice on a drill sheet is unremarkable. Worded
+// prompts never repeat: the same sentence twice reads as a misprint.
+function drawUnique({ mode, level, context, count, accept, keyOf, seenKeys, state, capStructures = false, allowRepeatsOnStarvation = false }) {
   const out = [];
   let attempts = 0;
   const maxAttempts = count * 60;
@@ -843,6 +997,7 @@ function drawUnique({ mode, level, context, count, accept, keyOf, seenKeys, stat
     } catch {
       continue;
     }
+    q = printableWording(q);
     if (!accept(q)) continue;
     if (isTrivialFact(q)) {
       if (state.trivialUsed) continue;
@@ -852,53 +1007,89 @@ function drawUnique({ mode, level, context, count, accept, keyOf, seenKeys, stat
     if (seenKeys.has(key)) continue;
     const prompt = normalizedPrompt(q);
     if (prompt && seenKeys.has(`prompt:${prompt}`)) continue;
+    // Same template thrice on one sheet ("Every hand shows 5 fingers…" ×3)
+    // reads as a copy-paste job even when the numbers differ. Prompt sheets
+    // only — a page of stacked sums shares one structure by design.
+    const structure = capStructures ? q.metadata?.structureType : null;
+    if (structure) {
+      const used = state.structureCounts?.[structure] || 0;
+      if (used >= 2) continue;
+      state.structureCounts = { ...(state.structureCounts || {}), [structure]: used + 1 };
+    }
     seenKeys.add(key);
     if (prompt) seenKeys.add(`prompt:${prompt}`);
     out.push(q);
   }
+  if (allowRepeatsOnStarvation && out.length < count) {
+    const usedKeys = new Set(out.map(keyOf));
+    let repeatAttempts = 0;
+    let lastKey = null;
+    while (out.length < count && repeatAttempts < count * 60) {
+      repeatAttempts += 1;
+      let q;
+      try {
+        q = generateQuestion(mode, level, context);
+      } catch {
+        continue;
+      }
+      q = printableWording(q);
+      if (!accept(q) || isTrivialFact(q)) continue;
+      const key = keyOf(q);
+      // Spread the repeats: never the same fact back-to-back in the draw.
+      if (key === lastKey) continue;
+      lastKey = key;
+      usedKeys.add(key);
+      out.push(q);
+    }
+  }
   return out;
 }
 
-// The one thought problem, at the end of the sheet. Preference order: a
-// "pick two numbers" item (which must ship its number bank), then a story
-// problem, then a plain computation as the last resort.
-function drawThoughtProblem({ mode, level, seenKeys, state }) {
+// The word-problems block at the end of the sheet — the whole point of the
+// Include Word Problems toggle (#34): OFF is a pure fact-fluency sheet with
+// NOTHING worded on it (a "pick two numbers…" item counts as worded — serving
+// one with the toggle off is why the toggle looked broken); ON guarantees the
+// sheet visibly carries stories. Stories are preferred; pick-two fills in
+// when a mode's story pool runs dry. No computation fallback — a drill sheet
+// short one word problem beats a "word problem" that is secretly a sum.
+function drawWordProblems({ mode, level, seenKeys, count }) {
   const context = { allowWordProblems: true };
-  for (let attempts = 0; attempts < 60; attempts += 1) {
+  const out = [];
+  for (let attempts = 0; attempts < count * 60 && out.length < count; attempts += 1) {
     let q;
     try {
       q = generateQuestion(mode, level, context);
     } catch {
       continue;
     }
+    q = printableWording(q);
     const prompt = normalizedPrompt(q);
     if (!prompt || seenKeys.has(`prompt:${prompt}`)) continue;
 
-    // Pick-two prompts carry their bank in display.options and a list-of-lists
-    // answer; anything multiSelect without a bank is unprintable.
-    if (q.answerType === "multiSelect") {
-      if (!Array.isArray(q.display?.options) || q.display.options.length === 0) continue;
-      seenKeys.add(`prompt:${prompt}`);
-      return { kind: "pickTwo", question: q };
-    }
     const isStory = q.metadata?.itemFamily === ITEM_FAMILIES.APPLICATION && isVerbalPrompt(q.display?.promptText);
     if (isStory && (typeof q.answer === "number" || typeof q.answer === "string")) {
       seenKeys.add(`prompt:${prompt}`);
-      return { kind: "story", question: q };
+      out.push({ kind: "story", question: q });
     }
   }
-  // Last resort: one more computation, still under the sheet's dedupe rules.
-  const [q] = drawUnique({
-    mode,
-    level,
-    context: { allowWordProblems: false, consultBankFamilies: [] },
-    count: 1,
-    accept: (c) => isPureComputation(c) && withinLevelRange(c, level),
-    keyOf: computationKey,
-    seenKeys,
-    state,
-  });
-  return q ? { kind: "computation", question: q } : null;
+  // Pick-two prompts carry their bank in display.options and a list-of-lists
+  // answer; anything multiSelect without a bank is unprintable.
+  for (let attempts = 0; attempts < 60 && out.length < count; attempts += 1) {
+    let q;
+    try {
+      q = generateQuestion(mode, level, context);
+    } catch {
+      continue;
+    }
+    q = printableWording(q);
+    const prompt = normalizedPrompt(q);
+    if (!prompt || seenKeys.has(`prompt:${prompt}`)) continue;
+    if (q.answerType !== "multiSelect") continue;
+    if (!Array.isArray(q.display?.options) || q.display.options.length === 0) continue;
+    seenKeys.add(`prompt:${prompt}`);
+    out.push({ kind: "pickTwo", question: q });
+  }
+  return out;
 }
 
 /**
@@ -907,11 +1098,23 @@ function drawThoughtProblem({ mode, level, seenKeys, state }) {
  * `computational` is false for modes without an a-op-b form (time, graphs…),
  * whose Parts A/B hold short prompt items instead of stacked/inline sums.
  */
-export function generateFlightLog(mode, level) {
+export function generateFlightLog(mode, level, options = {}) {
+  const { allowWordProblems = true } = options;
   const config = getModeConfig(mode);
   const computational = Object.prototype.hasOwnProperty.call(ARITH_OPS, config.op);
   const seenKeys = new Set();
   const state = { trivialUsed: false };
+  const figureMode = FIGURE_MODES.has(mode);
+  const partACount = computational
+    ? FLIGHT_LOG_PART_A
+    : figureMode
+      ? FLIGHT_LOG_FIGURE_PART_A
+      : FLIGHT_LOG_PROMPT_PART_A;
+  const partBCount = computational
+    ? FLIGHT_LOG_PART_B
+    : figureMode
+      ? FLIGHT_LOG_FIGURE_PART_B
+      : FLIGHT_LOG_PROMPT_PART_B;
 
   let partA;
   let partB;
@@ -924,25 +1127,30 @@ export function generateFlightLog(mode, level) {
       mode,
       level,
       context,
-      count: FLIGHT_LOG_PART_A + FLIGHT_LOG_PART_B,
+      count: partACount + partBCount,
       accept,
       keyOf: computationKey,
       seenKeys,
       state,
+      allowRepeatsOnStarvation: true,
     });
-    partA = items.slice(0, FLIGHT_LOG_PART_A);
-    partB = items.slice(FLIGHT_LOG_PART_A, FLIGHT_LOG_PART_A + FLIGHT_LOG_PART_B);
+    partA = items.slice(0, partACount);
+    partB = items.slice(partACount, partACount + partBCount);
   } else {
-    const context = { allowWordProblems: false };
+    // Prompt sheets skip the bank for the same reason the computation blocks
+    // do: bank prose belongs in Part C, and a banked cell's non-verbal pool
+    // can be smaller than a sheet (placeValue L2 starved partB to zero).
+    const context = { allowWordProblems: false, consultBankFamilies: [] };
     const items = drawUnique({
       mode,
       level,
       context,
-      count: FLIGHT_LOG_PART_A + FLIGHT_LOG_PART_B,
+      count: partACount + partBCount,
       accept: isPrintablePrompt,
       keyOf: promptKey,
       seenKeys,
       state,
+      capStructures: true,
     });
     // Prompt items may need their option bank to be answerable on paper.
     for (const q of items) {
@@ -950,12 +1158,15 @@ export function generateFlightLog(mode, level) {
         q.choices = generateChoices(q.answer, 4, q);
       }
     }
-    partA = items.slice(0, FLIGHT_LOG_PART_A);
-    partB = items.slice(FLIGHT_LOG_PART_A, FLIGHT_LOG_PART_A + FLIGHT_LOG_PART_B);
+    partA = items.slice(0, partACount);
+    partB = items.slice(partACount, partACount + partBCount);
   }
 
-  const partC = drawThoughtProblem({ mode, level, seenKeys, state });
-  return { partA, partB, partC, computational };
+  const wordProblems = allowWordProblems
+    ? drawWordProblems({ mode, level, seenKeys, count: figureMode ? 1 : 2 })
+    : [];
+  const itemCount = partA.length + partB.length + wordProblems.length;
+  return { partA, partB, wordProblems, computational, itemCount };
 }
 
 /**

@@ -267,7 +267,7 @@ final class SessionViewModel: ObservableObject {
             isFledgingRun = false
             let passed = firstTryCorrect >= EngagementStore.fledgingPass
             engagementStore.recordFledgingResult(mode: modeId, passed: passed)
-            let newLevel = passed ? min(level + 1, 10) : level
+            let newLevel = passed ? min(level + 1, GradeSeed.maxLevel(mode: modeId)) : level
             await progressStore.save(mode: modeId, data: [
                 "level": newLevel,
                 "mistakeBank": snapshot["mistakeBank"] ?? [[String: Any]](),

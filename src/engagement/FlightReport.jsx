@@ -41,15 +41,15 @@ function LedgerRow({ label, value, strong = false }) {
   );
 }
 
-function LevelBar({ level, balance }) {
+function LevelBar({ level, maxLevel = 10, balance }) {
   const rank = rankForLevel(level);
   return (
-    <div aria-label={`Level ${level} of 10 — ${rank.name}. ${balance} stars in the Nest.`}>
+    <div aria-label={`Level ${level} of ${maxLevel} — ${rank.name}. ${balance} stars in the Nest.`}>
       <div className="h-2.5 rounded-full bg-ink/10 overflow-hidden">
         <motion.div
           className="h-full rounded-full bg-teal"
           initial={{ width: 0 }}
-          animate={{ width: `${(level / 10) * 100}%` }}
+          animate={{ width: `${(level / maxLevel) * 100}%` }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         />
       </div>
@@ -82,6 +82,7 @@ function NominationNote({ nextLevel }) {
 }
 
 export default function FlightReport({
+  maxLevel = 10,
   payout,
   total,
   level,
@@ -101,7 +102,7 @@ export default function FlightReport({
 
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 backdrop-blur-sm"
+      data-blocks-keys="" className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 backdrop-blur-sm"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -185,9 +186,9 @@ export default function FlightReport({
             content — never fixed. */}
         <div className="mt-3 text-left">
           {nomination ? (
-            <NominationNote nextLevel={Math.min(level + 1, 10)} />
+            <NominationNote nextLevel={level + 1} />
           ) : (
-            <LevelBar level={engagement?.levelAfter ?? level} balance={engagement?.balance ?? 0} />
+            <LevelBar level={engagement?.levelAfter ?? level} maxLevel={maxLevel} balance={engagement?.balance ?? 0} />
           )}
           {engagement?.glideDown && (
             <p className="text-[13px] font-bold text-deep-teal mt-2 text-center">
@@ -197,6 +198,7 @@ export default function FlightReport({
         </div>
 
         <button
+          autoFocus
           className="mt-6 w-full h-14 bg-teal text-cream text-xl font-display font-semibold rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer"
           onClick={onPlayAgain}
         >

@@ -116,3 +116,129 @@ describe("arithmetic accepts every operand position of one relation", () => {
     expect(gated(draft("addToStartUnknown", "Some cats sat. 3 more came. Now there are 5. How many before?", { a: 3, b: 5, op: "+", answer: 4 }))).toBe(false); // 5-3=2, not 4
   });
 });
+
+describe("bondMath verifies number-bond payloads that arithmetic skips", () => {
+  // Bank convention (docs/numberbonds-bank-design.md): op "bond", givens in
+  // display — whole+part (missing part), whole+parts (three-part), parts only
+  // (whole unknown). `op: "bond"` has no OPS entry, so without this check a
+  // wrong bond answer would sail through the gate.
+  const bond = (display, answer, levelRange = [1, 3]) => ({
+    itemId: "x",
+    modeId: "numberBonds",
+    structureType: "partUnknown",
+    itemFamily: "procedural",
+    subskill: "missingPart",
+    levelRange,
+    question: { a: null, b: null, op: "bond", answer, display: { promptText: "4 + ? = 9", ...display } },
+  });
+
+  it("accepts a correct missing-part bond", () => {
+    expect(runChecks(bond({ whole: 9, part: 4 }, 5)).pass).toBe(true);
+  });
+
+  it("rejects a wrong missing-part bond", () => {
+    const qc = runChecks(bond({ whole: 9, part: 4 }, 6));
+    expect(qc.pass).toBe(false);
+    expect(qc.findings.some((f) => f.id === "bondMath")).toBe(true);
+  });
+
+  it("accepts a correct whole-unknown bond (parts only)", () => {
+    expect(runChecks(bond({ parts: [4, 5], promptText: "4 + 5 = ?" }, 9)).pass).toBe(true);
+  });
+
+  it("rejects a three-part bond whose given parts + answer miss the whole", () => {
+    const qc = runChecks(bond({ whole: 10, parts: [2, 3], promptText: "10 = 2 + 3 + ?" }, 6));
+    expect(qc.pass).toBe(false);
+    expect(qc.findings.some((f) => f.id === "bondMath")).toBe(true);
+  });
+
+  it("skips judged forms with no numeric bond payload", () => {
+    const item = bond({ promptText: "4 + 5 = 9" }, 9);
+    item.question.answer = "True";
+    item.question.choices = ["True", "False"];
+    expect(runChecks(item).findings.some((f) => f.id === "bondMath")).toBe(false);
+  });
+});
+
+describe("countMath verifies counting-bank claims that arithmetic skips", () => {
+  // Bank convention (docs/counting-bank-design.md): op "count", the claim in
+  // display.counting ({kind, ...givens}); the check recomputes the answer.
+  const count = (counting, answer, extra = {}) => ({
+    itemId: "x",
+    modeId: "counting",
+    structureType: "countSet",
+    itemFamily: "procedural",
+    subskill: "cardinality",
+    levelRange: [1, 3],
+    question: { a: null, b: null, op: "count", answer, display: { promptText: "5, 6, 7, ?", counting, ...extra } },
+  });
+
+  it("accepts a correct count-on claim", () => {
+    expect(runChecks(count({ kind: "countOn", start: 6, more: 3 }, 9)).pass).toBe(true);
+  });
+
+  it("rejects a wrong next-in-sequence claim", () => {
+    const qc = runChecks(count({ kind: "next", sequence: [5, 6, 7], step: 1 }, 9));
+    expect(qc.pass).toBe(false);
+    expect(qc.findings.some((f) => f.id === "countMath")).toBe(true);
+  });
+
+  it("rejects a hidden-part claim whose givens are missing", () => {
+    const qc = runChecks(count({ kind: "hidden", total: 12 }, 4));
+    expect(qc.findings.some((f) => f.id === "countMath")).toBe(true);
+  });
+
+  it("verifies a sum claim over parts", () => {
+    expect(runChecks(count({ kind: "sum", parts: [4, 2, 5] }, 11)).pass).toBe(true);
+    expect(runChecks(count({ kind: "sum", parts: [4, 2, 5] }, 10)).findings.some((f) => f.id === "countMath")).toBe(true);
+  });
+
+  it("rejects an unknown claim kind", () => {
+    const qc = runChecks(count({ kind: "mystery" }, 4));
+    expect(qc.findings.some((f) => f.id === "countMath")).toBe(true);
+  });
+
+  it("skips items with no claim (legacy prose) and judged forms", () => {
+    expect(runChecks(count(undefined, 8)).findings.some((f) => f.id === "countMath")).toBe(false);
+    const judged = count({ kind: "set", count: 4 }, "Yes");
+    judged.question.choices = ["Yes", "No"];
+    expect(runChecks(judged).findings.some((f) => f.id === "countMath")).toBe(false);
+  });
+});
+
+describe("compareMath verifies comparing payloads that arithmetic skips", () => {
+  const cmp = (q) => ({
+    itemId: "x",
+    modeId: "comparing",
+    structureType: "symbolBetweenNumerals",
+    itemFamily: "procedural",
+    subskill: "symbolSelection",
+    levelRange: [1, 3],
+    question: { op: "?", display: { promptText: "12 ? 8" }, ...q },
+  });
+
+  it("accepts a correct symbol", () => {
+    expect(runChecks(cmp({ a: 12, b: 8, answer: ">" })).pass).toBe(true);
+  });
+
+  it("rejects a flipped symbol", () => {
+    const qc = runChecks(cmp({ a: 12, b: 8, answer: "<" }));
+    expect(qc.pass).toBe(false);
+    expect(qc.findings.some((f) => f.id === "compareMath")).toBe(true);
+  });
+
+  it("verifies a difference claim", () => {
+    const qc = runChecks(
+      cmp({ a: null, b: null, op: "vs", answer: 4, display: { promptText: "9 vs 5: how many more? ?", compare: { kind: "difference", bigger: 9, smaller: 5 } } })
+    );
+    expect(qc.pass).toBe(true);
+  });
+
+  it("rejects a wrong closer-to claim", () => {
+    const qc = runChecks(
+      cmp({ a: null, b: null, op: "vs", answer: 20, display: { promptText: "Is 13 closer to 10 or 20? ?", compare: { kind: "closerTo", n: 13, lo: 10, hi: 20 } } })
+    );
+    expect(qc.pass).toBe(false);
+    expect(qc.findings.some((f) => f.id === "compareMath")).toBe(true);
+  });
+});

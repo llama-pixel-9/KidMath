@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { digitKeyClass, PAD_BACKSPACE } from "./kit";
+import { digitKeyClass, PAD_BACKSPACE, useDigitKeys } from "./kit";
 import ConfettiBurst from "./ConfettiBurst.jsx";
 
 // Fraction entry: tap the numerator or denominator to select it, then use the
@@ -23,6 +23,22 @@ export default function FractionInput({ onSubmit, feedback, theme, lowMotionMode
       onSubmit({ num: Number(num), den: Number(den) });
     }
   };
+
+  // Keyboard: digits fill the active field; "/", Tab or the up/down arrows
+  // hop between numerator and denominator.
+  useDigitKeys({
+    locked,
+    onDigit: pressDigit,
+    onBackspace: backspace,
+    onSubmit: submit,
+    onExtra: (e) => {
+      if (e.key === "/" || e.key === "Tab" || e.key === "ArrowUp" || e.key === "ArrowDown") {
+        setActive((a) => (a === "num" ? "den" : "num"));
+        return true;
+      }
+      return false;
+    },
+  });
 
   const tone =
     feedback === "correct"

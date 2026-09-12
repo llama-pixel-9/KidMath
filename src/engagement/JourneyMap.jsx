@@ -8,14 +8,14 @@ import { RANKS, rankForLevel } from "./ranks.js";
  * structural bands are landmarks — named ranks a child can hold on to — so a
  * level-up reads as travel, not as a number changing.
  */
-export default function JourneyMap({ level, compact = false }) {
+export default function JourneyMap({ level, maxLevel = 10, compact = false }) {
   const { theme } = useTheme();
   const rank = rankForLevel(level);
 
   return (
-    <div className="w-full" aria-label={`Level ${level} of 10 — ${rank.name}`}>
+    <div className="w-full" aria-label={`Level ${level} of ${maxLevel} — ${rank.name}`}>
       <div className="flex items-center gap-1">
-        {Array.from({ length: 10 }, (_, i) => {
+        {Array.from({ length: maxLevel }, (_, i) => {
           const lv = i + 1;
           const done = lv < level;
           const here = lv === level;

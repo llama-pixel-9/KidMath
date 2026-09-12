@@ -6,6 +6,8 @@ import {
   isLocked,
   tapMotion,
   hoverMotion,
+  useIndexKeys,
+  KeyHint,
 } from "./kit";
 
 /**
@@ -45,10 +47,17 @@ export default function MultiSelect({
     if (!locked && canSubmit) onSubmit(selected);
   };
 
+  useIndexKeys({
+    locked,
+    count: options.length,
+    onIndex: (i) => toggle(typeof options[i] === "object" ? options[i].value : options[i]),
+    onSubmit: submit,
+  });
+
   return (
     <section className="flex flex-col items-center gap-4 w-full" aria-label="Choose all that apply">
       <div className="grid grid-cols-2 gap-3 w-full">
-        {options.map((opt) => {
+        {options.map((opt, i) => {
           const value = typeof opt === "object" ? opt.value : opt;
           const label = typeof opt === "object" ? opt.label : String(opt);
           const on = selected.includes(value);
@@ -59,12 +68,13 @@ export default function MultiSelect({
               disabled={locked}
               onClick={() => toggle(value)}
               aria-pressed={on}
-              className={`min-h-[72px] rounded-3xl text-2xl font-extrabold shadow-md cursor-pointer select-none
+              className={`relative min-h-[72px] rounded-3xl text-2xl font-extrabold shadow-md cursor-pointer select-none
                 ${on ? "bg-seafoam text-ink" : `${theme?.cardBg || "bg-white"} ${theme?.textPrimary || "text-ink"}`}
                 ${selectionClasses(on, feedback)}`}
               {...hoverMotion(lowMotionMode)}
               {...tapMotion(lowMotionMode)}
             >
+              {i < 10 && <KeyHint k={i === 9 ? "0" : String(i + 1)} />}
               {label}
             </motion.button>
           );

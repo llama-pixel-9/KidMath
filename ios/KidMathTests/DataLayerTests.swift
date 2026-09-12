@@ -115,6 +115,13 @@ final class DataLayerTests: XCTestCase {
         let loaded = store.loadLocal(mode: "division")
         XCTAssertEqual(loaded["level"] as? Int, 10, "level clamps to MAX_LEVEL")
         XCTAssertEqual((loaded["mistakeBank"] as? [[String: Any]])?.count, 20, "mistake bank trims to 20")
+
+        // Phase 3: Grade-5 modes run a 12-level ladder.
+        store.saveLocal(mode: "fractionOps", data: [
+            "level": 99, "mistakeBank": [[String: Any]](), "firstTryCorrect": 0,
+            "bankItemStats": [String: Any](), "recentBankItemIds": [String](),
+        ])
+        XCTAssertEqual(store.loadLocal(mode: "fractionOps")["level"] as? Int, 12, "Grade-5 modes clamp to 12")
     }
 
     // MARK: - Merge math (mirror of mergeBankItemStats)
@@ -152,5 +159,41 @@ final class DataLayerTests: XCTestCase {
         } catch {
             throw XCTSkip("network unavailable: \(error)")
         }
+    }
+
+    // MARK: - Per-kid scoping (mirror of src/__tests__/progressPerKid.spec.js)
+
+    @MainActor
+    func testFirstKidInheritsDeviceProgressOnceAndSiblingsStayIndependent() throws {
+        let defaults = try XCTUnwrap(UserDefaults(suiteName: #function))
+        defaults.removePersistentDomain(forName: #function)
+        let store = ProgressStore(supabase: SupabaseService.shared, defaults: defaults)
+        let flight: (Int, Int) -> [String: Any] = { level, stars in
+            ["level": level, "mistakeBank": [[String: Any]](), "firstTryCorrect": stars, "starsEarned": stars,
+             "bankItemStats": [String: Any](), "recentBankItemIds": [String]()]
+        }
+
+        // Anonymous play lands on the bare key.
+        store.saveLocal(mode: "addition", data: flight(4, 7))
+        XCTAssertNil(store.activeKidId)
+        XCTAssertNotNil(defaults.data(forKey: "kidmath-progress"))
+
+        // First kid inherits it exactly once; the device blob is copied, not renamed.
+        let kidA = UUID().uuidString
+        defaults.set(kidA, forKey: "kidmath-active-kid")
+        XCTAssertEqual(ProgressStore.int(store.loadLocal(mode: "addition")["level"]), 4)
+        XCTAssertEqual(defaults.string(forKey: "kidmath-progress-migrated"), kidA)
+        XCTAssertNotNil(defaults.data(forKey: "kidmath-progress:\(kidA)"))
+        XCTAssertNotNil(defaults.data(forKey: "kidmath-progress"))
+
+        // A second kid starts fresh and never sees the sibling's level.
+        let kidB = UUID().uuidString
+        defaults.set(kidB, forKey: "kidmath-active-kid")
+        XCTAssertEqual(ProgressStore.int(store.loadLocal(mode: "addition")["level"]), 1)
+        store.saveLocal(mode: "addition", data: flight(2, 3))
+        XCTAssertEqual(ProgressStore.int(store.loadLocal(mode: "addition")["lifetimeStars"]), 3)
+
+        defaults.set(kidA, forKey: "kidmath-active-kid")
+        XCTAssertEqual(ProgressStore.int(store.loadLocal(mode: "addition")["lifetimeStars"]), 7)
     }
 }

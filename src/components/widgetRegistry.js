@@ -41,7 +41,9 @@ export const WIDGETS = {
   barModel: { Component: BarModel, props: (q) => ({ spec: q.display }) },
   numberBond: {
     Component: NumberBond,
-    props: (q) => ({ whole: q.display?.whole, part: q.display?.part }),
+    // display.parts present => missing-whole shape (blank on top); otherwise
+    // the classic missing-part shape from {whole, part}.
+    props: (q) => ({ whole: q.display?.whole, part: q.display?.part, parts: q.display?.parts }),
   },
   symbolSelect: {
     Component: SymbolSelect,

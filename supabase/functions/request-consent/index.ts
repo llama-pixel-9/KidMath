@@ -60,6 +60,7 @@ Deno.serve(async (request) => {
         transport: getTransport(),
         secret,
         functionsBaseUrl: `${Deno.env.get("SUPABASE_URL")}/functions/v1`,
+        appBaseUrl: Deno.env.get("PUBLIC_APP_URL") ?? "https://larkit.io",
       },
       {
         userId: user.id,

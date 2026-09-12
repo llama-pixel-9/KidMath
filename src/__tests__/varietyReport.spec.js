@@ -167,7 +167,8 @@ describe("buildReport over real modes", () => {
   it("runs over every registered mode without throwing", () => {
     const report = buildReport({ samples: 5 });
     expect(report.modes.length).toBe(Object.keys(modeRegistry).length);
-    expect(report.cells.length).toBe(Object.keys(modeRegistry).length * 10);
+    const expectedCells = Object.values(modeRegistry).reduce((n, m) => n + (m.maxLevel ?? 10), 0);
+    expect(report.cells.length).toBe(expectedCells);
     expect(report.summary.meanMaxShare).toBeGreaterThan(0);
   });
 

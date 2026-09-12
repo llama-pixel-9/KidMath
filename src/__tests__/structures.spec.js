@@ -85,8 +85,9 @@ describe("CCSS Table 1 coverage", () => {
 });
 
 describe("CCSS Table 2 coverage", () => {
-  it("implements all 9 multiplicative structures", () => {
-    expect(MULTIPLICATIVE_STRUCTURES).toHaveLength(9);
+  it("implements all 9 Table-2 structures plus the two Grade-4 remainder shapes", () => {
+    expect(MULTIPLICATIVE_STRUCTURES).toHaveLength(11);
+    expect(MULTIPLICATIVE_STRUCTURES.filter((s) => s.remainder)).toHaveLength(2);
   });
 
   it("covers both meanings of division", () => {
@@ -105,10 +106,19 @@ describe("CCSS Table 2 coverage", () => {
 
   it("solves for the stated unknown", () => {
     const c = ctx();
-    for (const s of MULTIPLICATIVE_STRUCTURES) {
+    for (const s of MULTIPLICATIVE_STRUCTURES.filter((x) => !x.remainder)) {
       const q = { g: 3, s: 6, p: 18 };
       expect(buildMultiplicative(s, q, c, { asStory: false }).answer, s.id).toBe(q[s.solveFor]);
     }
+  });
+
+  it("remainder structures answer the leftover and the rounded-up count", () => {
+    const c = ctx();
+    const nums = { g: 5, s: 5, p: 23, r: 3 }; // 23 = 5×4 + 3
+    const rem = MULTIPLICATIVE_STRUCTURES.find((x) => x.id === "divisionWithRemainder");
+    const ceil = MULTIPLICATIVE_STRUCTURES.find((x) => x.id === "remainderInterpretation");
+    expect(buildMultiplicative(rem, nums, c, { asStory: true }).answer).toBe(3);
+    expect(buildMultiplicative(ceil, nums, c, { asStory: true }).answer).toBe(5);
   });
 
   it("renders division both ways so both families are reachable", () => {

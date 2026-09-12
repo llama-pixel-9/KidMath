@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ConfettiBurst from "./ConfettiBurst.jsx";
-import { digitKeyClass, PAD_BACKSPACE, PAD_GO } from "./kit";
+import { digitKeyClass, PAD_BACKSPACE, PAD_GO, useDigitKeys } from "./kit";
 
 // Typed numeric answer control. It reports its value through the same
 // `onSubmit` -> submitAnswer -> checkAnswer path as a tapped bubble, so the
@@ -24,6 +24,14 @@ export default function NumberPad({ onSubmit, feedback, theme, lowMotionMode, lo
   const submit = () => {
     if (!locked && entry !== "" && entry !== ".") onSubmit(Number(entry));
   };
+
+  useDigitKeys({
+    locked,
+    onDigit: pressDigit,
+    onBackspace: backspace,
+    onSubmit: submit,
+    onDot: allowDecimal ? pressDot : undefined,
+  });
 
   const displayTone =
     feedback === "correct"

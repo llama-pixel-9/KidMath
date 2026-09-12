@@ -20,6 +20,7 @@
  */
 
 import { test, expect } from "@playwright/test";
+import { requiredSatisfiers, figureSatisfies } from "../src/itemBank/figureContracts.js";
 import { answerQuestion } from "./drivers.js";
 
 const MODES = [
@@ -27,7 +28,8 @@ const MODES = [
   "counting", "skipCounting", "placeValue", "fractions", "decimals",
   "numberBonds", "barModels", "placeValueDiscs", "factorsMultiples",
   "areaPerimeter", "money", "patterns", "measurement", "time",
-  "dataGraphs", "angles", "linesShapes",
+  "dataGraphs", "angles", "linesShapes", "fractionOps", "decimalOps",
+  "volumeCoordinates",
 ];
 const LEVELS = [1, 5];
 
@@ -168,9 +170,23 @@ for (const mode of MODES) {
             hasContent:
               (main.innerText || "").trim().length > 0 ||
               Boolean(main.querySelector("svg, img, canvas")),
+            // scoped to the CARD: for contract-covered classes, prompt text
+            // alone must NOT pass (the clock-incident hole).
+            cardDrawsFigure: Boolean((card || main).querySelector("svg, img, canvas, [data-qa-figure]")),
           };
         }, qa.seq);
         if (!rendered.hasContent) problems.push(`nothing rendered for ${label}`);
+        const neededFigure = requiredSatisfiers(mode, q, q.metadata);
+        if (neededFigure) {
+          if (!figureSatisfies(q, neededFigure)) {
+            problems.push(`figure contract violated in payload for ${label}`);
+          } else if (q.display?.figure && q.answerType !== q.display.figure && !rendered.cardDrawsFigure) {
+            // Self-drawing answer widgets (answerType === figure, e.g.
+            // barGraph) render the chart in the widget — getFigure suppresses
+            // the card copy, so only card-drawn figures assert here.
+            problems.push(`figure contract: nothing drawn for ${label}`);
+          }
+        }
 
         // 2. Answer like a KID: compute from the rendered pixels when the
         //    on-screen question is a pure symbolic claim; otherwise fall back
@@ -195,7 +211,9 @@ for (const mode of MODES) {
           .then((h) => h.jsonValue());
         if (outcome.missingFromChoices) {
           problems.push(
-            `the on-screen question computes to ${kidAnswer}, but that is not among the choices on ${label} — a kid cannot answer what they worked out`
+            outcome.wasOverride
+              ? `the on-screen question computes to ${kidAnswer}, but that is not among the choices on ${label} — a kid cannot answer what they worked out`
+              : `the engine's correct answer ${JSON.stringify(q.answer).slice(0, 40)} is not among the rendered choices on ${label} — no clickable option scores correct`
           );
         } else if (kidAnswer !== null && !result.correct) {
           problems.push(

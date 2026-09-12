@@ -133,7 +133,9 @@ struct NumberLineWidget: View {
     }
 }
 
-// MARK: - Number bond ("cherry" diagram; fill the missing part)
+// MARK: - Number bond ("cherry" diagram). Two shapes, mirroring the web
+// widget: missing PART (default, {whole, part}) and missing WHOLE (a
+// display.parts array of 2-3 known parts; the top circle is the blank).
 
 struct NumberBondWidget: View {
     @Environment(\.theme) private var theme
@@ -143,22 +145,41 @@ struct NumberBondWidget: View {
 
     @State private var entry = ""
 
+    private var knownParts: [String]? {
+        guard let raw = display["parts"] as? [Any], raw.count >= 2 else { return nil }
+        return raw.map { AnswerFormatting.text($0) }
+    }
+
     var body: some View {
+        let parts = knownParts
         VStack(spacing: 12) {
             VStack(spacing: 0) {
-                bondCircle(AnswerFormatting.text(display["whole"] ?? "?"), highlight: false)
+                if parts != nil {
+                    bondCircle(entry.isEmpty ? "?" : entry, highlight: true)
+                } else {
+                    bondCircle(AnswerFormatting.text(display["whole"] ?? "?"), highlight: false)
+                }
                 Canvas { ctx, size in
-                    for targetX in [size.width / 2 - 40, size.width / 2 + 40] {
+                    let offsets: [CGFloat] = (parts?.count ?? 2) == 3 ? [-48, 0, 48] : [-40, 40]
+                    for offset in offsets {
                         var branch = Path()
                         branch.move(to: CGPoint(x: size.width / 2, y: 2))
-                        branch.addLine(to: CGPoint(x: targetX, y: size.height - 2))
+                        branch.addLine(to: CGPoint(x: size.width / 2 + offset, y: size.height - 2))
                         ctx.stroke(branch, with: .color(theme.cardBorder), lineWidth: 3)
                     }
                 }
-                .frame(width: 140, height: 30)
-                HStack(spacing: 40) {
-                    bondCircle(AnswerFormatting.text(display["part"] ?? "?"), highlight: false)
-                    bondCircle(entry.isEmpty ? "?" : entry, highlight: true)
+                .frame(width: 160, height: 30)
+                if let parts {
+                    HStack(spacing: parts.count == 3 ? 16 : 40) {
+                        ForEach(Array(parts.enumerated()), id: \.offset) { _, text in
+                            bondCircle(text, highlight: false)
+                        }
+                    }
+                } else {
+                    HStack(spacing: 40) {
+                        bondCircle(AnswerFormatting.text(display["part"] ?? "?"), highlight: false)
+                        bondCircle(entry.isEmpty ? "?" : entry, highlight: true)
+                    }
                 }
             }
             DigitPadView(entry: $entry) {

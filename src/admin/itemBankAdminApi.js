@@ -146,11 +146,18 @@ export async function bulkSetReviewStatus(entries, reviewStatus) {
     );
     updated.push(...wave);
   }
-  if (plainIds.length > 0) {
+  // Chunked: PostgREST encodes `in.(...)` as a URL query filter, and a
+  // 914-id batch approve produced a request line past the server's limit —
+  // the whole batch died with a bare 400 Bad Request. ~100 ids per request
+  // stays far under every URL cap while keeping the batch to a few round
+  // trips.
+  const ID_CHUNK = 100;
+  for (let i = 0; i < plainIds.length; i += ID_CHUNK) {
+    const ids = plainIds.slice(i, i + ID_CHUNK);
     const { data, error } = await supabase
       .from("item_bank")
       .update(patch)
-      .in("item_id", plainIds)
+      .in("item_id", ids)
       .select(ADMIN_SELECT_FIELDS);
     if (error) throw error;
     updated.push(...(data || []).map(rowToItem));

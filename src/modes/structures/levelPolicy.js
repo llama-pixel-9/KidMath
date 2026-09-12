@@ -35,7 +35,9 @@ const TIERS_BY_BAND = {
 const DIFFICULT_WEIGHT = { [BANDS.K]: 0, [BANDS.G1]: 0.15, [BANDS.G2]: 0.35 };
 
 /** Total size ceiling per level. Secondary to structure, never the only dial. */
-const MAX_TOTAL = [10, 10, 10, 20, 20, 30, 50, 70, 100, 100];
+// L8-10 extended 2026-08-23 (grade-4 completion): multi-digit ± with
+// regrouping (3.NBT.2 / 4.NBT.4) was unreachable when sums capped at 100.
+const MAX_TOTAL = [10, 10, 10, 20, 20, 30, 50, 200, 500, 1000];
 
 /**
  * Word problems are ON at every level, including Kindergarten.
@@ -72,7 +74,9 @@ export function storyShare(level) {
  */
 export function structuresForLevel(structures, level) {
   const tiers = allowedTiers(level);
-  let pool = structures.filter((s) => tiers.includes(s.tier));
+  let pool = structures.filter(
+    (s) => tiers.includes(s.tier) && (s.minLevel == null || level >= s.minLevel)
+  );
 
   // Some modes have no structure at the easiest tier at all — division's
   // easiest situation is still Level-2 reasoning. Rather than emit nothing,

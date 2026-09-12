@@ -120,3 +120,6 @@ export const SUBMIT_BUTTON =
   "px-8 h-14 rounded-[18px] bg-teal shadow-[0_5px_0_#064A41] btn-press " +
   "text-cream text-xl font-display font-semibold disabled:opacity-40 " +
   "disabled:cursor-not-allowed cursor-pointer select-none";
+
+export { useAnswerKeys, useDigitKeys, useIndexKeys } from "./useAnswerKeys.js";
+export { default as KeyHint } from "./KeyHint.jsx";

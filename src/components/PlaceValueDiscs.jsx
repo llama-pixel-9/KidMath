@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { digitKeyClass, PAD_BACKSPACE } from "./kit";
+import { digitKeyClass, PAD_BACKSPACE, useDigitKeys } from "./kit";
 import ConfettiBurst from "./ConfettiBurst.jsx";
 
 const PLACE_LABEL = { 1000: "1000", 100: "100", 10: "10", 1: "1" };
@@ -22,6 +22,8 @@ export default function PlaceValueDiscs({ onSubmit, feedback, theme, lowMotionMo
 
   const displayTone =
     feedback === "correct" ? "text-deep-teal" : feedback === "wrong" ? "text-ember" : theme.textPrimary;
+
+  useDigitKeys({ locked, onDigit: pressDigit, onBackspace: backspace, onSubmit: submit });
 
   return (
     <section className="w-full flex flex-col items-center gap-3" aria-label="Place value discs">

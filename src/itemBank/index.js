@@ -371,6 +371,8 @@ function filterApprovedCandidates({ modeId, level, family }) {
  *
  * Returns null when no candidate exists for the (mode, family, level) bucket.
  */
+const THIN_SUBSKILL_POOL = 6;
+
 export function selectApprovedBankItem({
   modeId,
   level,
@@ -380,17 +382,25 @@ export function selectApprovedBankItem({
   rng = Math.random,
   allowWordProblems = true,
 } = {}) {
-  let approved = filterApprovedCandidates({ modeId, level, family });
-  if (allowWordProblems === false) {
-    // Even though the scheduler routes APPLICATION away when word problems
-    // are disabled, CONCEPTUAL and PROCEDURAL cells also ship items with
-    // natural-language prompts ("Use near-doubles: 3 + 4 equals?"). Those
-    // count as word problems from a learner's perspective, so filter them.
-    approved = approved.filter(
+  const approved = filterApprovedCandidates({ modeId, level, family });
+  if (approved.length === 0) return null;
+
+  // Even though the scheduler routes APPLICATION away when word problems
+  // are disabled, CONCEPTUAL and PROCEDURAL cells also ship items with
+  // natural-language prompts ("Use near-doubles: 3 + 4 equals?"). Prefer
+  // the terse ones — but only as a preference, applied inside each bucket
+  // below so it never overrides subskill targeting. Conceptual items and
+  // whole modes (patterns, time, graphs, bar models) are verbal by nature,
+  // and a hard filter there does not spare the child words: it just hands
+  // the cell to the template generator, whose prompt is equally verbal and
+  // worse. A reviewed verbal bank item always beats a generated one.
+  const preferTerse = (items) => {
+    if (allowWordProblems !== false) return items;
+    const terse = items.filter(
       (item) => !isVerbalPrompt(item?.question?.display?.promptText)
     );
-  }
-  if (approved.length === 0) return null;
+    return terse.length > 0 ? terse : items;
+  };
 
   const recentSet = new Set(recentItemIds);
 
@@ -398,12 +408,16 @@ export function selectApprovedBankItem({
     ? approved.filter((item) => item.subskill === targetSubskill)
     : [];
   const subskillFresh = bySubskill.filter((item) => !recentSet.has(item.itemId));
-  if (subskillFresh.length > 0) return randomPick(subskillFresh, rng);
-  if (bySubskill.length > 0) return randomPick(bySubskill, rng);
-
+  if (subskillFresh.length > 0) return randomPick(preferTerse(subskillFresh), rng);
   const fresh = approved.filter((item) => !recentSet.has(item.itemId));
-  if (fresh.length > 0) return randomPick(fresh, rng);
-  return randomPick(approved, rng);
+  // A thin subskill pool that the kid has fully seen must not loop the same
+  // few prompts: a fresh item from a sibling subskill beats a stale repeat.
+  if (bySubskill.length > 0 && (bySubskill.length >= THIN_SUBSKILL_POOL || fresh.length === 0)) {
+    return randomPick(preferTerse(bySubskill), rng);
+  }
+  if (fresh.length > 0) return randomPick(preferTerse(fresh), rng);
+  if (bySubskill.length > 0) return randomPick(preferTerse(bySubskill), rng);
+  return randomPick(preferTerse(approved), rng);
 }
 
 /**

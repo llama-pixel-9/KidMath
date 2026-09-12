@@ -404,7 +404,7 @@ const FRACTION_CHECKS = {
     const [a, b, claimed] = fractionsIn(q.display.promptText);
     expect(a.den).toBe(b.den);
     const truth = { num: a.num + b.num, den: a.den };
-    expect(q.answer).toBe(fracEq(claimed, truth) ? "True" : "False");
+    expect(q.answer).toBe(fracEq(claimed, truth) ? "Yes" : "No");
   },
   fractionOfSetForward(q) {
     const text = q.display.promptText;

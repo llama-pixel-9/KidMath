@@ -40,8 +40,16 @@ import {
   isSessionComplete,
   summarizeFlight,
   MODES,
+  buildBankQuestion,
+  checkAnswer,
 } from "./mathEngine";
-import { flightReportEnabled, fledgingEnabled, meadowEnabled } from "./gamificationFlags.js";
+import { getBankItems } from "./itemBank/index.js";
+import { fetchBankItemById } from "./itemBank/cloudLoader.js";
+import { flightReportEnabled, fledgingEnabled, meadowEnabled, ladderV2Enabled, secondChanceEnabled, readAloudEnabled } from "./gamificationFlags.js";
+import { scaffoldFor } from "./scaffold.js";
+import { speak, stopSpeaking } from "./speech.js";
+import { gradeIndex } from "./gradeSeed.js";
+import { activeKidGrade } from "./kidProfiles";
 import { recordEnsureStarter } from "./engagement/flock.js";
 import {
   recordFlightEnd,
@@ -52,8 +60,7 @@ import {
 } from "./engagement/fledging.js";
 import { getModeConfig } from "./modes";
 import { ensureModeLoaded } from "./itemBank.js";
-import { isVerbalPrompt } from "./modes/helpers";
-import { emojiPromptLines } from "./promptLayout";
+import { FIGURE_COLORS, useAnswerKeys, KeyHint } from "./components/kit";
 import { saveProgress, loadProgress, mergeLocalToCloud } from "./progressStore";
 import { recordSessionEnd, currentStreak, starsToday, starBalance, isFirstWeek } from "./engagement/engagementStore";
 import GoogleSignInButton from "./auth/GoogleSignInButton.jsx";
@@ -64,6 +71,7 @@ import FlightReport from "./engagement/FlightReport.jsx";
 // — the difficult-tier trap the Word Detective badge rewards beating.
 const LANGUAGE_TRAP_STRUCTURES = new Set(["compareBiggerFewer", "compareSmallerMore"]);
 import { useAuth } from "./useAuth";
+import { maxLevelForMode } from "./modeLevels.js";
 import { useTheme } from "./useTheme";
 import {
   playCorrectSound,
@@ -76,6 +84,7 @@ import {
 } from "./sounds";
 import { createRuntimeDiagnostics } from "./runtimeDiagnostics";
 import { getTelemetry } from "./telemetry/telemetryClient";
+import { openSessionRecord, appendAttempt, closeSessionRecord, saveSessionRecord, questionText } from "./analytics/sessionLog";
 import {
   loadAllowWordProblems,
   loadAllowWordProblemsSync,
@@ -87,8 +96,8 @@ import ConfettiBurst from "./components/ConfettiBurst.jsx";
 import Feather from "./components/feather.jsx";
 import ConfettiRain from "./components/ConfettiRain.jsx";
 import LarkMark from "./components/LarkMark.jsx";
+import QuestionStage from "./components/QuestionStage.jsx";
 import { getWidget } from "./components/widgetRegistry.js";
-import { getFigure } from "./components/figureRegistry.js";
 
 const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork, BarChart3, CircleDot, Sigma, Ruler, Coins, Spline, Scale, Clock, ChartColumn, Triangle, Shapes };
 
@@ -104,7 +113,10 @@ function getModeLabel(modeId) {
 
 // One ring color at every level: progress is always Lark Teal on its Ink
 // track — the level is told by the number, not a rainbow hue.
-const LEVEL_RING_COLORS = ["stroke-teal"];
+// One ring colour at every level (brand: Lark Teal). This used to be a
+// 10-entry table indexed by level; collapsing it to one entry while leaving the
+// `[level - 1]` lookup in place left levels 2+ with no stroke class at all.
+const RING_STROKE = "stroke-teal";
 
 function isLikelyLowEndDevice() {
   if (typeof window === "undefined") return false;
@@ -201,13 +213,25 @@ function getQaVariety() {
 }
 const QA_VARIETY = typeof window === "undefined" ? null : getQaVariety();
 
+// `/play/<mode>?item=<itemId>` pins one bank row: every question in the
+// session is that item, rendered through the normal stage. Reviewers use it
+// ("Open in play" in /admin) to see an item exactly as a kid would, with
+// feedback, keyboard and sounds. Not DEV-gated — review happens on prod.
+function getPinnedItemId() {
+  try {
+    return new URLSearchParams(window.location.search || "").get("item") || null;
+  } catch {
+    return null;
+  }
+}
+const PINNED_ITEM_ID = typeof window === "undefined" ? null : getPinnedItemId();
+
 function CircularProgress({ current, total, level }) {
   const { theme } = useTheme();
   const radius = 38;
   const circumference = 2 * Math.PI * radius;
   const progress = total > 0 ? current / total : 0;
   const dashOffset = circumference * (1 - progress);
-  const ringColor = LEVEL_RING_COLORS[Math.min(level - 1, 9)];
 
   return (
     <section className="flex items-center justify-center gap-3 py-2 px-4" aria-label="Progress">
@@ -222,7 +246,7 @@ function CircularProgress({ current, total, level }) {
           <motion.circle
             cx="48" cy="48" r={radius}
             fill="none"
-            className={ringColor}
+            className={RING_STROKE}
             strokeWidth="6"
             strokeLinecap="round"
             strokeDasharray={circumference}
@@ -300,7 +324,7 @@ function LevelUpToast() {
 function FledgingOffer({ level, onAccept, onDecline }) {
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 backdrop-blur-sm"
+      data-blocks-keys="" className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 backdrop-blur-sm"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -318,10 +342,11 @@ function FledgingOffer({ level, onAccept, onDecline }) {
           Ready for higher skies?
         </h2>
         <p className="text-[15px] font-semibold text-ink/80 mt-2">
-          Six questions, five to pass — and Level {Math.min(level + 1, 10)} is yours. No stars
+          Six questions, five to pass — and Level {level + 1} is yours. No stars
           ride on this one.
         </p>
         <button
+          autoFocus
           className="mt-5 w-full h-14 bg-teal text-cream text-xl font-display font-semibold rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer"
           onClick={onAccept}
         >
@@ -341,14 +366,14 @@ function FledgingOffer({ level, onAccept, onDecline }) {
 // §17 fledging moment: lark on the Apricot disc, a flight word, the level bar
 // filling over 600ms, one button, auto-advance at 4s. No confetti — that
 // belongs to the end of a run only. The miss copy is kind and keeps the door open.
-function FledgingCeremony({ passed, level, onContinue }) {
+function FledgingCeremony({ passed, level, maxLevel = 10, onContinue }) {
   useEffect(() => {
     const t = setTimeout(onContinue, 4000);
     return () => clearTimeout(t);
   }, [onContinue]);
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 backdrop-blur-sm"
+      data-blocks-keys="" className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 backdrop-blur-sm"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -373,8 +398,8 @@ function FledgingCeremony({ passed, level, onContinue }) {
         <div className="mt-4 h-2.5 rounded-full bg-ink/10 overflow-hidden">
           <motion.div
             className="h-full rounded-full bg-teal"
-            initial={{ width: `${((passed ? level - 1 : level) / 10) * 100}%` }}
-            animate={{ width: `${(level / 10) * 100}%` }}
+            initial={{ width: `${((passed ? level - 1 : level) / maxLevel) * 100}%` }}
+            animate={{ width: `${(level / maxLevel) * 100}%` }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           />
         </div>
@@ -403,7 +428,7 @@ const END_CARD_PUNS = [
   "Feather in your cap!",
 ];
 
-function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, lifetimeStars, engagement, lowMotionMode = false, onPlayAgain }) {
+function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, maxLevel = 10, lifetimeStars, engagement, lowMotionMode = false, onPlayAgain }) {
   const { theme } = useTheme();
   const navigate = useNavigate();
   const ratio = total > 0 ? firstTryCorrect / total : 0;
@@ -412,7 +437,7 @@ function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, li
 
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 backdrop-blur-sm"
+      data-blocks-keys="" className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 backdrop-blur-sm"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -470,7 +495,7 @@ function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, li
           </motion.p>
         )}
         <div className="mt-3">
-          <JourneyMap level={level} compact />
+          <JourneyMap level={level} maxLevel={maxLevel} compact />
         </div>
         {engagement?.goalJustMet && (
           <motion.p
@@ -524,7 +549,7 @@ function SettingsPanel({ mode, allowWordProblems, onAllowWordProblemsChange, cal
   const { theme } = useTheme();
   return (
     <motion.div
-      className="fixed inset-0 z-40 flex items-end sm:items-center justify-center bg-black/30 backdrop-blur-sm"
+      data-blocks-keys="" className="fixed inset-0 z-40 flex items-end sm:items-center justify-center bg-black/30 backdrop-blur-sm"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -630,7 +655,7 @@ function LoginPromptModal({ onLogin, onSignedIn, onDismiss }) {
   const { theme } = useTheme();
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm"
+      data-blocks-keys="" className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -681,345 +706,6 @@ function LoginPromptModal({ onLogin, onSignedIn, onDismiss }) {
   );
 }
 
-function AnswerSlot({ feedback, revealAnswer }) {
-  if (feedback === "correct" && revealAnswer != null) {
-    return (
-      <motion.span
-        className="text-teal"
-        initial={{ scale: 0, rotate: -20 }}
-        animate={{ scale: [0, 1.4, 1], rotate: 0 }}
-        transition={{ duration: 0.4, type: "spring", stiffness: 300 }}
-      >
-        {revealAnswer}
-      </motion.span>
-    );
-  }
-  if (feedback === "wrong" && revealAnswer != null) {
-    return (
-      <motion.span
-        className="text-teal"
-        initial={{ opacity: 0, y: 8 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3 }}
-      >
-        {revealAnswer}
-      </motion.span>
-    );
-  }
-  return <span className="text-sun">?</span>;
-}
-
-// The worked-algorithm layout with a STATED result — used by judgment items
-// whose claim ("2 + 19 = 21") must be shown complete, never as "?".
-function VerticalEquation({ a, op, b, result, theme }) {
-  const aDigits = String(a).split("");
-  const bDigits = String(b).split("");
-  const rDigits = String(result).split("");
-  const cols = Math.max(aDigits.length, bDigits.length, rDigits.length) + 1;
-  return (
-    <div className="flex justify-center">
-      <div
-        className={`inline-grid items-center justify-items-center font-extrabold ${theme.textPrimary}`}
-        style={{
-          gridTemplateColumns: `repeat(${cols}, 0.75em)`,
-          fontSize: "clamp(2.5rem, 8vw, 3.5rem)",
-          lineHeight: 1.4,
-        }}
-      >
-        {Array.from({ length: cols - aDigits.length }, (_, i) => <span key={`pa${i}`} />)}
-        {aDigits.map((d, i) => <span key={`a${i}`}>{d}</span>)}
-        <span className="text-[0.85em]">{op}</span>
-        {Array.from({ length: cols - bDigits.length - 1 }, (_, i) => <span key={`pb${i}`} />)}
-        {bDigits.map((d, i) => <span key={`b${i}`}>{d}</span>)}
-        <span className="border-b-4 border-ink/40 w-full my-1" style={{ gridColumn: "1 / -1" }} />
-        {Array.from({ length: cols - rDigits.length }, (_, i) => <span key={`pr${i}`} />)}
-        {rDigits.map((d, i) => (
-          <span key={`r${i}`} className="text-teal">{d}</span>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
-  const { theme } = useTheme();
-  const q = question;
-  const showAnswer = feedback && revealAnswer != null;
-
-  if (q.display?.emoji) {
-    const items = Array.from({ length: q.display.count }, (_, i) => (
-      <span key={i} className="text-3xl sm:text-4xl">{q.display.emoji}</span>
-    ));
-    return (
-      <div className="text-center">
-        <p className={`text-sm font-bold ${theme.textMuted} mb-3 uppercase tracking-wide`}>How many?</p>
-        <div className="flex flex-wrap items-center justify-center gap-2 max-w-[280px] mx-auto">
-          {items}
-        </div>
-      </div>
-    );
-  }
-
-  if (q.display?.sequence) {
-    return (
-      <div className="text-center">
-        <p className={`text-sm font-bold ${theme.textMuted} mb-3 uppercase tracking-wide`}>What comes next?</p>
-        <div className={`flex items-center justify-center gap-2 text-3xl sm:text-4xl font-extrabold ${theme.textPrimary}`}>
-          {q.display.sequence.map((n, i) => (
-            <span key={i}>
-              {i > 0 && <span className={`${theme.textMuted} mx-1`}>,</span>}
-              {n}
-            </span>
-          ))}
-          <span className={`${theme.textMuted} mx-1`}>,</span>
-          <AnswerSlot feedback={feedback} revealAnswer={revealAnswer} />
-        </div>
-      </div>
-    );
-  }
-
-  // Word/story prompts take precedence. Bank-authored items sometimes ship a
-  // fully symbolic prompt like "65 + 35 = ?" though, which should still get
-  // the vertical treatment below for double-digit add/sub.
-  const promptText = q.display?.promptText;
-  const hasVerbalPrompt = promptText && isVerbalPrompt(promptText);
-
-  // A figure the question asks ABOUT — bar graph, pictograph, tally, line plot
-  // — answered through some other widget (choice, number pad, multiSelect).
-  // Widgets that draw their own figure are excluded by the registry.
-  const figure = getFigure(q);
-  if (figure) {
-    const { Component: Figure, props } = figure;
-    const settled = feedback === "correct" || feedback === "wrong";
-    return (
-      <div className="text-center space-y-3">
-        <Figure theme={theme} {...(props ? props(q, { settled }) : {})} />
-        {promptText && (
-          <p className={`text-2xl sm:text-3xl font-extrabold ${theme.textPrimary} leading-snug`}>
-            {promptText}
-          </p>
-        )}
-        {showAnswer && (
-          <div className="mt-2 text-3xl sm:text-4xl font-extrabold">
-            <AnswerSlot feedback={feedback} revealAnswer={revealAnswer} />
-          </div>
-        )}
-      </div>
-    );
-  }
-
-  if (hasVerbalPrompt) {
-    const runLines = emojiPromptLines(promptText);
-    if (runLines) {
-      return (
-        <div className="text-center space-y-2">
-          <div className="w-fit max-w-full mx-auto text-left space-y-1">
-            {runLines.map((line, index) => (
-              <p
-                key={`${line.text}-${index}`}
-                className={`${
-                  line.isRun ? "whitespace-nowrap text-lg sm:text-xl" : "text-xl sm:text-2xl"
-                } font-extrabold ${theme.textPrimary} leading-snug`}
-              >
-                {line.text}
-              </p>
-            ))}
-          </div>
-          {q.subPrompt && (
-            <p className={`text-sm font-bold uppercase tracking-wide ${theme.textMuted}`}>
-              {q.subPrompt}
-            </p>
-          )}
-          {showAnswer && (
-            <div className="mt-2 text-4xl sm:text-5xl font-extrabold">
-              <AnswerSlot feedback={feedback} revealAnswer={revealAnswer} />
-            </div>
-          )}
-        </div>
-      );
-    }
-    const promptLines = promptText
-      .split(/(?<=[.!?])\s+/)
-      .map((line) => line.trim())
-      .filter(Boolean);
-    const isStoryProblem = q.metadata?.itemFamily === "application";
-    return (
-      <div className="text-center space-y-2">
-        {isStoryProblem && (
-          <p className={`text-xs sm:text-sm font-bold uppercase tracking-wide ${theme.textMuted}`}>
-            Story problem
-          </p>
-        )}
-        <div className="space-y-1">
-          {(promptLines.length > 0 ? promptLines : [promptText]).map((line, index, arr) => (
-            <p
-              key={`${line}-${index}`}
-              className={`${
-                index === arr.length - 1 ? "text-2xl sm:text-3xl" : "text-xl sm:text-2xl"
-              } font-extrabold ${theme.textPrimary} leading-snug`}
-            >
-              {line}
-            </p>
-          ))}
-        </div>
-        {q.subPrompt && (
-          <p className={`text-sm font-bold uppercase tracking-wide ${theme.textMuted}`}>
-            {q.subPrompt}
-          </p>
-        )}
-        {showAnswer && (
-          <div className="mt-2 text-4xl sm:text-5xl font-extrabold">
-            <AnswerSlot feedback={feedback} revealAnswer={revealAnswer} />
-          </div>
-        )}
-      </div>
-    );
-  }
-
-  if (q.op === "?") {
-    return (
-      <div className={`flex items-center justify-center gap-4 text-5xl sm:text-6xl font-extrabold ${theme.textPrimary}`}>
-        <span>{q.a}</span>
-        <span
-          className={`${modeColor} text-ink w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center text-3xl sm:text-4xl`}
-        >
-          {showAnswer ? <AnswerSlot feedback={feedback} revealAnswer={revealAnswer} /> : "?"}
-        </span>
-        <span>{q.b}</span>
-      </div>
-    );
-  }
-
-  // Format-transformed judgment items ("2 + 19 = 21" + "True or false?")
-  // carry a COMPLETE claim. The vertical compute layout below would replace
-  // the claimed result with "?" and make the question unanswerable — so any
-  // item with a subPrompt renders its full equation, vertically when the
-  // claim fits that shape, and always shows the sub-prompt instruction.
-  if (promptText && q.subPrompt && !hasVerbalPrompt) {
-    const claim = promptText.match(/^\s*(\d+)\s*([+−])\s*(\d+)\s*=\s*(\d+)\s*$/);
-    const bigClaim = claim && (Number(claim[1]) >= 10 || Number(claim[3]) >= 10 || Number(claim[4]) >= 10);
-    return (
-      <div className="text-center space-y-4">
-        {bigClaim ? (
-          <VerticalEquation a={claim[1]} op={claim[2]} b={claim[3]} result={claim[4]} theme={theme} />
-        ) : (
-          <p
-            className={`font-extrabold ${theme.textPrimary}`}
-            style={{ fontSize: "clamp(1.8rem, 7vw, 3rem)", lineHeight: 1.3 }}
-          >
-            {promptText}
-          </p>
-        )}
-        <p className={`text-sm sm:text-base font-bold uppercase tracking-wide ${theme.textMuted}`}>
-          {q.subPrompt}
-        </p>
-      </div>
-    );
-  }
-
-  // Vertical form for addition/subtraction with double-digit numbers. Runs
-  // even when the item has a symbolic promptText (e.g. bank-authored
-  // "65 + 35 = ?") so long as both operands are concrete integers AND the
-  // answer really is `a op b`. Unknown-addend/compare items ("10 + ? = 17",
-  // answer 7) also carry numeric a/b — laying those out as "10 + 17 = ?"
-  // shows a different question than the one being scored, so any item whose
-  // answer isn't the computed result must fall through to its promptText.
-  const isVertical =
-    (q.op === "+" || q.op === "−") &&
-    typeof q.a === "number" &&
-    typeof q.b === "number" &&
-    (q.a >= 10 || q.b >= 10) &&
-    Number(q.answer) === (q.op === "+" ? q.a + q.b : q.a - q.b);
-
-  if (isVertical) {
-    const aDigits = String(q.a).split("");
-    const bDigits = String(q.b).split("");
-    const ansLen = String(q.answer).length;
-    const maxLen = Math.max(aDigits.length, bDigits.length, ansLen);
-    const cols = maxLen + 1; // +1 for operator column
-    const padA = cols - aDigits.length;
-    const padB = cols - bDigits.length - 1; // -1 because operator takes first cell
-
-    return (
-      <div className="flex justify-center">
-        <div
-          className={`inline-grid items-center justify-items-center font-extrabold ${theme.textPrimary}`}
-          style={{
-            gridTemplateColumns: `repeat(${cols}, 0.75em)`,
-            fontSize: "clamp(2.5rem, 8vw, 3.5rem)",
-            lineHeight: 1.4,
-          }}
-        >
-          {Array.from({ length: padA }, (_, i) => <span key={`pa${i}`} />)}
-          {aDigits.map((d, i) => <span key={`a${i}`}>{d}</span>)}
-
-          <span className="text-[0.85em]">{q.op}</span>
-          {Array.from({ length: padB }, (_, i) => <span key={`pb${i}`} />)}
-          {bDigits.map((d, i) => <span key={`b${i}`}>{d}</span>)}
-
-          <span className="border-b-4 border-ink/40 w-full my-1" style={{ gridColumn: "1 / -1" }} />
-
-          {showAnswer ? (
-            <>
-              {Array.from({ length: cols - String(revealAnswer).length }, (_, i) => <span key={`pans${i}`} />)}
-              {String(revealAnswer).split("").map((d, i) => (
-                <motion.span
-                  key={`ans${i}`}
-                  className="text-teal"
-                  initial={{ scale: 0, rotate: -20 }}
-                  animate={{ scale: [0, 1.4, 1], rotate: 0 }}
-                  transition={{ delay: i * 0.08, duration: 0.4, type: "spring", stiffness: 300 }}
-                >
-                  {d}
-                </motion.span>
-              ))}
-            </>
-          ) : (
-            <>
-              {Array.from({ length: cols - 1 }, (_, i) => <span key={`pq${i}`} />)}
-              <span className="text-sun">?</span>
-            </>
-          )}
-        </div>
-      </div>
-    );
-  }
-
-  // Symbolic-but-non-vertical prompts (e.g. "6 + ? = 10", "3 tens and 5 ones = ?").
-  // These don't fit the vertical layout (often because one operand is unknown)
-  // but still need to render the authored prompt text rather than fall back to
-  // "a op b = ?" which would print "null" for missing operands.
-  if (promptText) {
-    return (
-      <div className="text-center space-y-2">
-        <p className={`text-3xl sm:text-4xl font-extrabold ${theme.textPrimary} leading-snug`}>
-          {promptText}
-        </p>
-        {showAnswer && (
-          <div className="mt-2 text-4xl sm:text-5xl font-extrabold">
-            <AnswerSlot feedback={feedback} revealAnswer={revealAnswer} />
-          </div>
-        )}
-      </div>
-    );
-  }
-
-  // Default horizontal: a op b = ?
-  return (
-    <div className={`flex items-center justify-center gap-3 text-5xl sm:text-6xl font-extrabold ${theme.textPrimary}`}>
-      <span>{q.a}</span>
-      <span
-        className={`${modeColor} text-ink w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center text-3xl sm:text-4xl`}
-      >
-        {q.op}
-      </span>
-      <span>{q.b}</span>
-      <span className={theme.textMuted}>=</span>
-      <AnswerSlot feedback={feedback} revealAnswer={revealAnswer} />
-    </div>
-  );
-}
-
 export default function MathExplorer({ initialMode }) {
   const startMode = initialMode || "addition";
   const { theme } = useTheme();
@@ -1033,11 +719,14 @@ export default function MathExplorer({ initialMode }) {
     createAdaptiveSession(startMode, undefined, {
       allowWordProblems: loadAllowWordProblemsSync(),
       fledging: fledgingEnabled(),
+      ladderV2: ladderV2Enabled(),
       qaVariety: QA_VARIETY,
     })
   );
   const [currentQ, setCurrentQ] = useState(null);
   const [isRetry, setIsRetry] = useState(false);
+  // Second chance: the model shown under a missed question while the kid tries once more.
+  const [scaffold, setScaffold] = useState(null);
   const [feedback, setFeedback] = useState(null); // "correct" | "wrong" | null
   const [showSettings, setShowSettings] = useState(false);
   const [showComplete, setShowComplete] = useState(false);
@@ -1049,6 +738,10 @@ export default function MathExplorer({ initialMode }) {
   // §01/§02/§03 rollout: resolved once per mount so a session settles consistently.
   const [gamFlightReport] = useState(() => flightReportEnabled());
   const [gamFledging] = useState(() => fledgingEnabled());
+  const [gamSecondChance] = useState(() => secondChanceEnabled());
+  const [gamReadAloud] = useState(() => readAloudEnabled());
+  // K–1 kids get the prompt read automatically; older kids tap the speaker.
+  const [autoRead] = useState(() => readAloudEnabled() && (gradeIndex(activeKidGrade()) ?? 9) <= 1);
   const [flightPayout, setFlightPayout] = useState(null);
   // §03 take-off state: the offer overlay, whether the current session IS a
   // Fledging Flight (ref for async handlers + state for render), and the
@@ -1070,6 +763,30 @@ export default function MathExplorer({ initialMode }) {
   const answerLockRef = useRef(false);
   const diagnosticsRef = useRef(createRuntimeDiagnostics("math-explorer"));
   const telemetryRef = useRef(getTelemetry());
+  // The practice-log record for the session in flight (parent report). Opened
+  // on the first question of a fresh session, appended per answer, closed and
+  // saved in finishSession. Session-creating paths null it so the next
+  // loadNextQuestion opens a new one.
+  const sessionRecordRef = useRef(null);
+  // A session the kid leaves early (back to the nest, closed tab) used to
+  // vanish from the parent report. Save what happened as a "partial" record —
+  // minutes and questions are real practice; level bookkeeping stays untouched.
+  useEffect(() => {
+    const savePartial = () => {
+      const rec = sessionRecordRef.current;
+      if (!rec || rec.endedAt || (rec.attempts || []).length < 3) return;
+      sessionRecordRef.current = null;
+      const last = rec.attempts[rec.attempts.length - 1];
+      saveSessionRecord(
+        closeSessionRecord({ ...rec, kind: "partial" }, null, { starsEarned: 0, levelEnd: last?.level ?? rec.levelEnd })
+      ).catch((err) => console.warn("partial practice log save failed", err));
+    };
+    window.addEventListener("pagehide", savePartial);
+    return () => {
+      window.removeEventListener("pagehide", savePartial);
+      savePartial();
+    };
+  }, []);
 
   const clearQueuedTimeouts = useCallback(() => {
     diagnosticsRef.current.mark("timeoutsCleared", timeoutIdsRef.current.length);
@@ -1090,8 +807,18 @@ export default function MathExplorer({ initialMode }) {
     return id;
   }, []);
 
+  const pinnedItemRef = useRef(null);
   const loadNextQuestion = useCallback((sess) => {
-    const { question, isRetry: retry } = getNextQuestion(sess);
+    const { question, isRetry: retry } = pinnedItemRef.current
+      ? { question: buildBankQuestion(pinnedItemRef.current, sess.level), isRetry: false }
+      : getNextQuestion(sess);
+    if (!sessionRecordRef.current) {
+      sessionRecordRef.current = openSessionRecord({
+        mode: sess.mode,
+        level: sess.level,
+        kind: sess.challengeSubskills ? "fledging" : "normal",
+      });
+    }
     qaUpdate({
       question,
       isRetry: retry,
@@ -1100,6 +827,8 @@ export default function MathExplorer({ initialMode }) {
     });
     setCurrentQ(question);
     setIsRetry(retry);
+    setScaffold(null);
+    stopSpeaking();
     questionStartTime.current = Date.now();
     questionKeyRef.current += 1;
     answerLockRef.current = false;
@@ -1118,12 +847,14 @@ export default function MathExplorer({ initialMode }) {
     const newSession = createAdaptiveSession(targetMode, undefined, {
       allowWordProblems: allowWordProblemsOverride,
       fledging: gamFledging,
+      ladderV2: ladderV2Enabled(),
       qaVariety: QA_VARIETY,
     });
     setSession(newSession);
     setFeedback(null);
     setRevealAnswer(null);
     setShowComplete(false);
+    sessionRecordRef.current = null;
     loadNextQuestion(newSession);
     // §03 step 4: a pending nomination is offered at take-off — except right
     // after a Fledging Flight, when the normal session simply begins.
@@ -1147,6 +878,7 @@ export default function MathExplorer({ initialMode }) {
     const challenge = createAdaptiveSession(mode, FLEDGING_QUESTIONS, {
       allowWordProblems,
       fledging: true,
+      ladderV2: ladderV2Enabled(),
       challengeSubskills: nomination?.weakSubskills || [],
       savedProgress: { level: session.level },
     });
@@ -1156,6 +888,7 @@ export default function MathExplorer({ initialMode }) {
     setSession(challenge);
     setFeedback(null);
     setRevealAnswer(null);
+    sessionRecordRef.current = null;
     loadNextQuestion(challenge);
   }, [mode, allowWordProblems, session.level, loadNextQuestion, clearQueuedTimeouts]);
 
@@ -1195,6 +928,7 @@ export default function MathExplorer({ initialMode }) {
       newSession.level = saved.level;
       newSession.mistakeBank = saved.mistakeBank;
       setSession(newSession);
+      sessionRecordRef.current = null;
       loadNextQuestion(newSession);
     })();
     return () => {
@@ -1262,15 +996,24 @@ export default function MathExplorer({ initialMode }) {
       fledgingRunRef.current = false;
       const passed = (sess.firstTryCorrect ?? 0) >= FLEDGING_PASS;
       recordFledgingResult(mode, passed);
-      const newLevel = passed ? Math.min(sess.level + 1, 10) : sess.level;
-      await saveProgress(mode, {
-        level: newLevel,
-        mistakeBank: sess.mistakeBank,
-        firstTryCorrect: sess.firstTryCorrect,
-        starsEarned: 0,
-        bankItemStats: sess.bankItemStats || {},
-        recentBankItemIds: sess.recentBankItemIds || [],
-      });
+      const newLevel = passed ? Math.min(sess.level + 1, maxLevelForMode(mode)) : sess.level;
+      // Practice log first and independent of the progress save (see finishSession).
+      saveSessionRecord(closeSessionRecord(sessionRecordRef.current, sess, { starsEarned: 0, levelEnd: newLevel })).catch(
+        (err) => console.warn("practice log save failed", err)
+      );
+      sessionRecordRef.current = null;
+      try {
+        await saveProgress(mode, {
+          level: newLevel,
+          mistakeBank: sess.mistakeBank,
+          firstTryCorrect: sess.firstTryCorrect,
+          starsEarned: 0,
+          bankItemStats: sess.bankItemStats || {},
+          recentBankItemIds: sess.recentBankItemIds || [],
+        });
+      } catch (err) {
+        console.warn("progress save failed", err);
+      }
       setFledgingActive(false);
       setFledgingResult({ passed, newLevel });
       if (passed) playLevelUpSound();
@@ -1294,13 +1037,26 @@ export default function MathExplorer({ initialMode }) {
         })
       : null;
     const levelAfter = fledgeOutcome?.glideDown ? Math.max(1, sess.level - 1) : sess.level;
-    const lt = await persistSession(
-      mode,
-      sess,
-      payout ? payout.total : undefined,
-      fledgeOutcome?.glideDown ? levelAfter : undefined
+    // Save the practice log FIRST and independently of the progress save: its
+    // local mirror is written synchronously, so a tab closed during the cloud
+    // round-trip (or a rejected progress row) cannot erase the session from the
+    // parent report.
+    saveSessionRecord(closeSessionRecord(sessionRecordRef.current, sess, { starsEarned, levelEnd: levelAfter })).catch(
+      (err) => console.warn("practice log save failed", err)
     );
-    setLifetimeStars(lt);
+    sessionRecordRef.current = null;
+    let lt = null;
+    try {
+      lt = await persistSession(
+        mode,
+        sess,
+        payout ? payout.total : undefined,
+        fledgeOutcome?.glideDown ? levelAfter : undefined
+      );
+    } catch (err) {
+      console.warn("progress save failed", err);
+    }
+    if (lt !== null) setLifetimeStars(lt);
     setFlightPayout(payout);
     // The engagement loop: bank today's stars, roll the day streak, and hand
     // the report the moments worth celebrating.
@@ -1339,6 +1095,12 @@ export default function MathExplorer({ initialMode }) {
     playCompleteSound();
   }, [mode, gamFlightReport, gamFledging]);
 
+  // Read-aloud: K–1 hears every new question; everyone else has the speaker.
+  useEffect(() => {
+    if (!autoRead || !currentQ) return;
+    speak(questionText(currentQ));
+  }, [currentQ, autoRead]);
+
   // The single answer-commit path. Every answer format (bubble tap, number pad,
   // and future builders) routes its value through here so the answer lock,
   // telemetry, mistake bank, and motion/sound feedback stay identical (plan §6b).
@@ -1356,8 +1118,53 @@ export default function MathExplorer({ initialMode }) {
 
     try {
       const responseTimeMs = Date.now() - questionStartTime.current;
+
+      // Second attempt after a scaffold: the engine already recorded the miss
+      // (mistake bank, level bookkeeping, spaced retry). This try is UI-only —
+      // scored here, logged as a retry for the report, never re-counted.
+      if (scaffold) {
+        const correct = checkAnswer(currentQ, value);
+        sessionRecordRef.current = appendAttempt(sessionRecordRef.current, {
+          question: currentQ, submitted: value, correct, wasRetry: true, responseTimeMs, level: session.level,
+        });
+        qaUpdate({ result: { correct, submitted: value, secondChance: true, count: ((typeof window !== "undefined" && window.__kidmathQA?.result?.count) || 0) + 1 } });
+        setScaffold(null);
+        const advance = () => {
+          setFeedback(null);
+          setShakenChoice(null);
+          setRevealAnswer(null);
+          if (isSessionComplete(session)) {
+            finishSession(session);
+            answerLockRef.current = false;
+          } else {
+            loadNextQuestion(session);
+          }
+        };
+        if (correct) {
+          setFeedback("correct");
+          setRevealAnswer(currentQ.answer);
+          playCorrectSound();
+          scheduleTimeout(advance, qaFeedbackMs ?? 1200);
+        } else {
+          setFeedback("wrong");
+          setShakenChoice(value);
+          setRevealAnswer(currentQ.answer);
+          playWrongSound();
+          scheduleTimeout(advance, qaFeedbackMs ?? 2000);
+        }
+        return;
+      }
+
       const result = recordAnswer(session, currentQ, value, responseTimeMs, isRetry);
       setSession(result.session);
+      sessionRecordRef.current = appendAttempt(sessionRecordRef.current, {
+        question: currentQ,
+        submitted: value,
+        correct: result.correct,
+        wasRetry: isRetry,
+        responseTimeMs,
+        level: session.level,
+      });
       qaUpdate({
         result: {
           correct: result.correct,
@@ -1396,6 +1203,16 @@ export default function MathExplorer({ initialMode }) {
             loadNextQuestion(result.session);
           }
         }, qaFeedbackMs ?? 1200);
+      } else if (gamSecondChance && !isRetry && !session.fledging) {
+        // First miss on a fresh question: show a model and allow one more try.
+        setShakenChoice(value);
+        playWrongSound();
+        scheduleTimeout(() => {
+          setShakenChoice(null);
+          setScaffold(scaffoldFor({ ...currentQ, mode })); // `attempt` re-keys the widget, not the card
+          questionStartTime.current = Date.now();
+          answerLockRef.current = false;
+        }, qaFeedbackMs ?? 500);
       } else {
         setFeedback("wrong");
         setShakenChoice(value);
@@ -1420,6 +1237,64 @@ export default function MathExplorer({ initialMode }) {
       console.error("Failed to process answer", error);
     }
   };
+
+  // Keyboard for the multiple-choice bubbles (every other answerType is a
+  // registered widget that owns its own keys). Numeric choices are matched by
+  // VALUE — a child pressing "3" means the number 3, never "the third tile" —
+  // typed digits accumulate and submit as soon as they name exactly one
+  // choice (or on Enter). Word choices use 1-4 by position, with badges.
+  const choiceKeysActive =
+    !!currentQ && !getWidget(forcedInputType || currentQ.answerType || "choice") && !feedback;
+  const choiceList = currentQ?.choices || [];
+  const numericChoices =
+    choiceList.length > 0 && choiceList.every((c) => /^-?\d+(\.\d+)?$/.test(String(c)));
+  const typedChoiceRef = useRef("");
+  useAnswerKeys((e) => {
+    if (!numericChoices) {
+      if (/^[1-9]$/.test(e.key) && Number(e.key) <= choiceList.length) {
+        submitAnswer(choiceList[Number(e.key) - 1]);
+        return true;
+      }
+      return false;
+    }
+    if (e.key === "Backspace") { typedChoiceRef.current = typedChoiceRef.current.slice(0, -1); return true; }
+    if (e.key === "Enter") {
+      const hit = choiceList.find((c) => String(c) === typedChoiceRef.current);
+      typedChoiceRef.current = "";
+      if (hit !== undefined) submitAnswer(hit);
+      return true;
+    }
+    if (!/^[0-9.-]$/.test(e.key)) return false;
+    const typed = typedChoiceRef.current + e.key;
+    const matches = choiceList.filter((c) => String(c).startsWith(typed));
+    if (matches.length === 0) return true; // ignore a stray key, keep the buffer
+    typedChoiceRef.current = typed;
+    if (matches.length === 1 && String(matches[0]) === typed) {
+      typedChoiceRef.current = "";
+      submitAnswer(matches[0]);
+    }
+    return true;
+  }, choiceKeysActive);
+  useEffect(() => { typedChoiceRef.current = ""; }, [currentQ]);
+
+  // Resolve the pinned item (bundle first, then the cloud row) and replace
+  // whatever question the session opened with.
+  useEffect(() => {
+    if (!PINNED_ITEM_ID) return undefined;
+    let cancelled = false;
+    const apply = (item) => {
+      if (cancelled || !item || item.modeId !== mode) return;
+      pinnedItemRef.current = item;
+      if (session) loadNextQuestion(session);
+    };
+    const local = getBankItems().find((it) => it.itemId === PINNED_ITEM_ID);
+    if (local) apply(local);
+    else fetchBankItemById(PINNED_ITEM_ID).then(apply);
+    return () => {
+      cancelled = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const handleLoginDismiss = () => {
     telemetryRef.current.recordEvent("login_modal_dismissed");
@@ -1524,112 +1399,25 @@ export default function MathExplorer({ initialMode }) {
       )}
 
       <div className="flex-1 flex flex-col items-center justify-center px-4 gap-4">
-        <div className="play-area">
-        <div className="play-pane">
-        <AnimatePresence mode="wait">
-          <motion.section
-            key={questionKeyRef.current}
-            className={`${theme.cardBg} rounded-3xl shadow-[0_6px_0_#14231F0f] p-5 sm:p-8 w-full`}
-            initial={{ opacity: 0, scale: 0.8, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.8, y: -20 }}
-            transition={{ type: "spring", stiffness: 300, damping: 25 }}
-            aria-label="Math question"
-            // QA (DEV only): AnimatePresence keeps the EXITING card — old
-            // question plus its revealed answer — in the DOM while the new one
-            // waits to enter. The seq stamp lets e2e drivers read exactly the
-            // card belonging to the current question, never stale pixels.
-            {...(QA_HOOKS ? { "data-qa-seq": window.__kidmathQA?.seq ?? 0 } : {})}
-          >
-            {isRetry && (
-              <p className={`text-center text-xs font-bold ${theme.textMuted} mb-2 uppercase tracking-wide`}>
-                Let's try this one again!
-              </p>
-            )}
-            <QuestionDisplay question={currentQ} modeColor={modeColor} feedback={feedback} revealAnswer={revealAnswer} />
-          </motion.section>
-        </AnimatePresence>
-        </div>
-
-        <div className="play-pane">
-        {getWidget(answerType) ? (
-          (() => {
-            const { Component, props } = getWidget(answerType);
-            return (
-              // Same celebration as the choice bubbles: a correct answer earns
-              // confetti no matter which widget it came through. w-full: the
-              // pane centers its children, so without it this wrapper
-              // shrink-wraps and every pad collapses to sliver-width keys.
-              <div className="relative w-full">
-                <Component
-                  key={questionKeyRef.current}
-                  onSubmit={submitAnswer}
-                  feedback={feedback}
-                  theme={theme}
-                  lowMotionMode={lowMotionMode}
-                  lowEndDevice={lowEndDevice}
-                  {...(props ? props(currentQ, { revealAnswer, shakenChoice }) : {})}
-                />
-                {feedback === "correct" && !lowMotionMode && (
-                  <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-                    <ConfettiBurst intensity={lowEndDevice ? "light" : "normal"} />
-                  </div>
-                )}
-              </div>
-            );
-          })()
-        ) : (
-        <section className="grid grid-cols-2 gap-3 w-full" aria-label="Answer choices">
-          {(currentQ.choices || []).map((choice, i) => {
-            const isCorrectChoice = feedback === "correct" && choice === currentQ.answer;
-            const isRevealedCorrect = feedback === "wrong" && choice === revealAnswer;
-            const isWrong = shakenChoice === choice;
-            // Binary pairs use Seafoam and Apricot at equal visual weight
-            // (§08) — never a light tile against a darker one, so color
-            // never hints at the answer.
-            const tintIndex = (currentQ.choices || []).length === 2 ? i * 2 : i;
-            return (
-              <motion.button
-                key={`${questionKeyRef.current}-${choice}`}
-                // Choices are numbers in most modes but words in others
-                // ("Grapes", "a rectangle"), and a fixed text-3xl overflowed
-                // the bubble for those. Type scales with the answer's length,
-                // and long words wrap instead of spilling.
-                className={`relative min-h-[72px] sm:min-h-[76px] px-3 py-2 rounded-[20px] bg-gradient-to-br ${theme.bubbleColors[tintIndex % theme.bubbleColors.length]} ${theme.bubbleEdges[tintIndex % theme.bubbleEdges.length]} btn-press text-ink font-display font-semibold cursor-pointer select-none leading-tight break-words ${
-                  String(choice).length > 8
-                    ? "text-lg sm:text-xl"
-                    : String(choice).length > 4
-                      ? "text-xl sm:text-2xl"
-                      : "text-2xl sm:text-3xl"
-                } ${
-                  isCorrectChoice || isRevealedCorrect ? "ring-4 ring-teal" : ""
-                } ${isWrong ? "ring-4 ring-ember" : ""}`}
-                whileHover={lowMotionMode ? undefined : { scale: 1.05 }}
-                whileTap={{ scale: 0.9 }}
-                animate={
-                  isWrong
-                    ? { x: lowEndDevice ? [0, -6, 6, 0] : [0, -10, 10, -10, 10, 0] }
-                    : isCorrectChoice
-                      ? { scale: [1, 1.1, 1] }
-                      : isRevealedCorrect
-                        ? { scale: [1, 1.15, 1.05] }
-                        : {}
-                }
-                transition={isWrong ? { duration: lowEndDevice ? 0.22 : 0.4 } : { duration: 0.3 }}
-                onClick={() => submitAnswer(choice)}
-                disabled={feedback === "correct" || feedback === "wrong"}
-              >
-                {choice}
-                {isCorrectChoice && !lowMotionMode && (
-                  <ConfettiBurst intensity={lowEndDevice ? "light" : "normal"} />
-                )}
-              </motion.button>
-            );
-          })}
-        </section>
-        )}
-        </div>
-        </div>
+        <QuestionStage
+          question={currentQ}
+          questionKey={questionKeyRef.current}
+          theme={theme}
+          modeColor={modeColor}
+          feedback={feedback}
+          revealAnswer={revealAnswer}
+          shakenChoice={shakenChoice}
+          isRetry={isRetry}
+          scaffold={scaffold}
+          attempt={scaffold ? 1 : 0}
+          onSpeak={gamReadAloud ? () => speak(questionText(currentQ)) : null}
+          answerType={answerType}
+          lowMotionMode={lowMotionMode}
+          lowEndDevice={lowEndDevice}
+          numericChoices={numericChoices}
+          onSubmit={submitAnswer}
+          qaSeq={QA_HOOKS ? window.__kidmathQA?.seq ?? 0 : null}
+        />
 
         {feedback === "wrong" && revealAnswer !== null && (
           <motion.p
@@ -1662,6 +1450,7 @@ export default function MathExplorer({ initialMode }) {
         {fledgingResult && (
           <FledgingCeremony
             passed={fledgingResult.passed}
+            maxLevel={maxLevelForMode(mode)}
             level={fledgingResult.newLevel}
             onContinue={() => {
               setFledgingResult(null);
@@ -1692,6 +1481,7 @@ export default function MathExplorer({ initialMode }) {
         {showComplete &&
           (gamFlightReport && flightPayout ? (
             <FlightReport
+              maxLevel={maxLevelForMode(mode)}
               payout={flightPayout}
               total={session.questionsAnswered}
               level={session.level}
@@ -1703,6 +1493,7 @@ export default function MathExplorer({ initialMode }) {
             />
           ) : (
             <SetCompleteOverlay
+              maxLevel={maxLevelForMode(mode)}
               firstTryCorrect={session.firstTryCorrect}
               retriesMastered={session.retriesMastered}
               total={session.questionsAnswered}

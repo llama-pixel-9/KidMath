@@ -6,6 +6,16 @@ import countingMode from "../modes/counting";
 // and a 30-bead estimation run overflowed the question card. The renderer now
 // splits these prompts into labelled lines and chunks runs into rows of ten.
 describe("emojiPromptLines", () => {
+  it("keeps a single-glyph sub-group inside its run (#62: 5 + 1 dots rendered as 5 vs 6)", () => {
+    const lines = emojiPromptLines("Top row: 🟢🟢🟢🟢🟢 🟢 Bottom row: 🟢🟢🟢🟢🟢 Is the number of green dots the same in both rows?");
+    const runs = lines.filter((l) => l.isRun);
+    expect(runs).toHaveLength(2);
+    expect(runs[0].label).toBe("Top row:");
+    expect(Array.from(runs[0].run.replace(/\s/g, "")).length).toBe(6);
+    expect(runs[1].label).toBe("Bottom row:");
+    expect(Array.from(runs[1].run.replace(/\s/g, "")).length).toBe(5);
+  });
+
   it("returns null for prompts without emoji runs", () => {
     expect(emojiPromptLines("Start at 5 and count on 3 more. What number do you land on?")).toBeNull();
     expect(emojiPromptLines("")).toBeNull();
@@ -80,5 +90,22 @@ describe("emojiPromptLines", () => {
       }
       expect(seen, `${varietyId} should produce run prompts`).toBeGreaterThan(3);
     }
+  });
+});
+
+describe("sentence-long labels", () => {
+  it("puts a long label on its own text line instead of gluing it to the run", () => {
+    const lines = emojiPromptLines("Priya counted these cars and said 17: 🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗 Priya skipped one. How many cars are there really?");
+    expect(lines.filter((l) => !l.isRun).map((l) => l.text)).toEqual([
+      "Priya counted these cars and said 17:",
+      "Priya skipped one.",
+      "How many cars are there really?",
+    ]);
+    expect(lines.filter((l) => l.isRun).every((l) => !l.label)).toBe(true);
+  });
+
+  it("keeps a short label inline with a single-row run", () => {
+    const lines = emojiPromptLines("Group A: 🍪🍪🍪 How many?");
+    expect(lines[0]).toMatchObject({ isRun: true, label: "Group A:" });
   });
 });

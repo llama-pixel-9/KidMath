@@ -52,3 +52,62 @@ Shaped by issues #29 (PR #30) and #32 (PR #33). The generator is
   conceptually: generate with forced varieties and assert
   `q.choices.some(c => checkAnswer(q, c))`. The bank equivalent must
   paginate (supabase caps at 1,000 rows).
+
+## Question pattern catalog (bank batch b0821 — every structureType, by family)
+
+Bank design: `docs/counting-bank-design.md`. Bands: K-1 counts ≤20 ·
+2-3 teens/decades · 4-5 to 120.
+
+### Procedural — letter-free drills (numeric-first; serve in the no-words path)
+
+| structureType | Bands | Asks | Example |
+|---|---|---|---|
+| `smallSetRead` / `fiveGroupRead` | K-1 | read a small set / a 5-group at a glance | `🟠🟠🟠 = ?` · `🟠🟠🟠🟠🟠 🟠 = ?` |
+| `tenFrameRead` / `twoFrameRead` | K-1 / 2-3 | how many counters in the frame(s) | frame widget + pad |
+| `tenAndMoreRead` / `doubleFiveRead` | 2-3 | teen as a full ten-row + extras / two five-rows | `🟠×10 \| 🟠🟠 = ?` |
+| `tensRowsRead` | 4-5 | count rows of ten + rest, to 50 | 3 rows + 4 = 34 |
+| `setCountWrite` / `teenSetWrite` / `bigSetWrite` | K-1/2-3/4-5 | count the pictured set, type the numeral | `🍎🍎🍎🍎 = ?` |
+| `countOutOnFrame` / `countOutTeenOnFrames` | K-1 / 2-3 | PRODUCTION: match pictured objects 1:1 on the frame | build-mode frame |
+| `arrayCount` | 4-5 | equal rows counted | 4 rows of 6 emoji |
+| `nextNumber` / `countBackNext` | K-1 | next in a ±1 run | `8, 9, 10, ?` |
+| `nextAcrossDecade` / `backAcrossDecade` | 2-3 | decade seam both ways | `28, 29, 30, ?` |
+| `nextWithinDecade` / `backWithinDecade` | 2-3 | inside-decade runs | `22, 23, 24, ?` |
+| `nextAcrossHundred` / `backAcrossHundred` | 4-5 | the 100/110/120 seams | `99, 100, 101, ?` |
+| `countOnFromGiven` / `countOnFromTwoDigit` / `countOnBigJump` | all | count on n from a start (number-line scaffold) | "Start at 37 and count on 6 more…" |
+| `subitizeDrill` / `bigSetWriteDrill` (generator, targetedOnly) | all / 4-5 | in-band figure reads for scheduled requests | figure + pad |
+
+### Conceptual — pictured judgment & reasoning (wording rotates; ≤5/signature)
+
+| structureType | Bands | Asks | Example |
+|---|---|---|---|
+| `sameNumberJudge` | K-1 | conservation: two arrangements, same count? | "Group A … Group B … same number of dots?" |
+| `whichShowsN` / `whichShowsTeen` | K-1 / 2-3 | pick the card showing N | choices are emoji runs |
+| `claimCountJudge` / `claimTeenJudge` / `claimTensRowsJudge` | K-1→4-5 | a child claims a count of the pictured set — right? | "Sam says 5 dots: 🟠🟠🟠🟠🟠 Is Sam right?" |
+| `fiveAndMoreSee` / `tenAndMoreSee` / `tensAndOnesSee` | K-1→4-5 | structured reads (5+n, 10+n, tens+ones) | "A full ten of stars and some more: …" |
+| `estimateThenCount(Big)` | 2-3 / 4-5 | about how many (choices are tens) | jar of pictured dots |
+| `oddOneOutCount` / `oddOneOutTeen` | 2-3 / 4-5 | which card does NOT show N | 3 representations + 1 off-by-one |
+| `rowsToNumeral` | 4-5 | rows of ten → numeral choice | distractors ±10, ±1 |
+| `missingInRun` / `missingAcrossDecade` / `missingAcrossHundred` | all | beep! the blank moves through the run | "96, 97, 98, ___, 100" |
+| `oneMore/oneLess(Decade/Hundred)` | all | ±1 at plain numbers, then at seams | "1 more than 99?" |
+| `betweenTwo/Decade/Hundred` | all | the number between | "99, ___, 101" |
+| `tenFrameMakeTen` | K-1 | build to 10, submit how many you added | build-mode frame |
+| `countOnJudge` / `decadeCrossingJudge` / `centuryCrossingJudge` | all | is this count right? (recount-from-1, 29→40, 109→120 slips) | "Ben counts: 27, 28, 29, 30. Is that right?" |
+| `countSet` / `countTeenSet` / `lastNumberSaid` / `rearrangedSet` | K-1 / 2-3 | how many; last number said IS the count; conservation | "…What number does Mina say last?" |
+| `compareTwoSets/TeenSets/BigSets` | all | which group has more/fewer (pictured) | two emoji groups |
+| `tenFrameEmpty` | K-1 | empty cells = complement | frame + pad |
+| `doubleCountError` / `skippedOneError` (+`Big`) | 2-3 / 4-5 | fix a double-count / skip (picture present, then reasoned) | "counted one twice — really?" |
+| `mixedSetCount` | 4-5 | count only the target kind in a mixed run | "Only count the apples: 🍎🎈🍎…" |
+| `bigCountJudge` | 4-5 | judge a claimed big count | rows of ten pictured |
+
+### Application — stories (≤3/signature; names+nouns rotate)
+
+| structureType | Bands | Situation |
+|---|---|---|
+| `storyCountOn` | all | had N, counted M more — what number now |
+| `storyTargetGap` | all | needs T, has H — how many more |
+| `storyHiddenCount` | all | T in all, S visible — how many hidden |
+| `storyTwoSpots` / `storyCountAllKinds` | all / K-1 | count across two places / count everything on the mat |
+| `storyExtraneous` | K-1→4-5 | count only the named kind (a number must NOT be used) |
+| `storyBagsOfTen` | 2-3, 4-5 | bags of ten + loose ones |
+| `storyQuickLook` / `storyDicePair` / `storyFlashCard` / `storyDotCards` | K-1 / 2-3 | subitize-in-context: five-stacks, dice, flashed cards |
+| `storyQuickRows` | 2-3, 4-5 | ten-strips seen at a glance + singles |

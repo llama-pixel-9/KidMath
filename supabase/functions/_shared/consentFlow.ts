@@ -19,6 +19,11 @@
 
 import { signRevocationToken, verifyRevocationToken } from "./revocationToken.ts";
 import type { EmailTransport } from "./emailTransport.ts";
+import {
+  stripDraftingNotes,
+  consentRequestEmailHtml,
+  consentConfirmedEmailHtml,
+} from "./emailTemplates.ts";
 
 /** "Reasonable time" to hold the parent's contact info awaiting consent —
  *  after this the scheduled job deletes the pending request outright. */
@@ -38,6 +43,10 @@ export type ConsentDeps = {
   secret: string;
   /** e.g. https://<ref>.supabase.co/functions/v1 */
   functionsBaseUrl: string;
+  /** Where the branded consent pages live, e.g. https://larkit.io — email
+   *  links land there (a parent-facing URL, not the raw functions host) and
+   *  the page POSTs the token back to the function. */
+  appBaseUrl: string;
   now?: () => number;
 };
 
@@ -81,17 +90,26 @@ export async function beginConsentRequest(
     { userId: args.userId, kidId: data.id, expiresAt: now + CONSENT_REQUEST_TTL_MS },
     deps.secret,
   );
-  const confirmUrl = `${deps.functionsBaseUrl}/consent-confirm?token=${encodeURIComponent(confirmToken)}`;
+  const confirmUrl = `${deps.appBaseUrl}/confirm-consent?token=${encodeURIComponent(confirmToken)}`;
 
+  // Server-side hygiene regardless of what the client sent: parents never
+  // see internal drafting notes, in either part.
+  const cleanNotice = stripDraftingNotes(args.noticeText);
   await deps.transport.send({
     to: args.parentEmail,
     subject: "Your consent is needed before your child can start practising",
     text:
-      `${args.noticeText}\n\n` +
+      `TO GIVE CONSENT, open this link and tap the Confirm button:\n${confirmUrl}\n\n` +
+      `The full notice is below for your records.\n\n` +
       `------------------------------------------------------------\n` +
-      `TO GIVE CONSENT, open this link (one tap):\n${confirmUrl}\n\n` +
+      `${cleanNotice}\n\n` +
       `If you do nothing, we will delete your contact information and the ` +
       `name you entered within 14 days, and no profile will be created.\n`,
+    html: consentRequestEmailHtml({
+      kidFirstName: args.kid.firstName,
+      noticeMd: args.noticeText,
+      confirmUrl,
+    }),
   });
 
   return { requestId: data.id, confirmUrl };
@@ -148,12 +166,17 @@ export async function confirmConsent(
     { userId: claims.userId, kidId: grant.kid_profile_id, expiresAt: now + REVOCATION_LINK_TTL_MS },
     deps.secret,
   );
-  const revocationUrl = `${deps.functionsBaseUrl}/revoke-consent?token=${encodeURIComponent(revocationToken)}`;
+  const revocationUrl = `${deps.appBaseUrl}/revoke-consent?token=${encodeURIComponent(revocationToken)}`;
 
   await deps.transport.send({
     to: grant.parent_email,
     subject: `Consent confirmed — ${grant.kid_first_name} is ready to practise`,
     text: buildConfirmationMessage({ kidFirstName: grant.kid_first_name, revocationUrl }),
+    html: consentConfirmedEmailHtml({
+      kidFirstName: grant.kid_first_name,
+      revocationUrl,
+      appBaseUrl: deps.appBaseUrl,
+    }),
   });
 
   // The confirming message is part of the method — record when it went out,

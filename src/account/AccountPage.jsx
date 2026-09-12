@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../useAuth";
 import { supabase } from "../supabaseClient";
-import { fetchKids, updateKid, activeKidId, setActiveKid, KID_AGES, KID_GRADES } from "../kidProfiles";
+import { MAX_KIDS, fetchKids, updateKid, activeKidId, setActiveKid, KID_AGES, KID_GRADES } from "../kidProfiles";
 import { paywallEnabled } from "../premium";
 
 /**
@@ -154,7 +154,7 @@ export default function AccountPage() {
     setKids(await fetchKids(user.id));
     const { data } = await supabase
       .from("progress")
-      .select("mode, level, total_sessions, lifetime_stars")
+      .select("kid_id, mode, level, total_sessions, lifetime_stars")
       .eq("user_id", user.id)
       .order("mode");
     setProgress(data ?? []);
@@ -207,6 +207,12 @@ export default function AccountPage() {
 
   const totalStars = progress.reduce((sum, row) => sum + (row.lifetime_stars || 0), 0);
   const totalSessions = progress.reduce((sum, row) => sum + (row.total_sessions || 0), 0);
+  const kidName = (id) => kids.find((k) => k.id === id)?.first_name || "A deleted profile";
+  const progressByKid = [...new Set(progress.map((r) => r.kid_id || null))].map((kidId) => ({
+    kidId,
+    label: kidId ? kidName(kidId) : "Before profiles (this household)",
+    rows: progress.filter((r) => (r.kid_id || null) === kidId),
+  }));
 
   return (
     <main className="flex-1 max-w-3xl mx-auto w-full px-4 py-10">
@@ -230,11 +236,13 @@ export default function AccountPage() {
       <section className="mt-10">
         <h2 className="font-display font-medium text-2xl text-ink m-0">Your kids</h2>
         <p className="mt-1 text-sm font-semibold text-ink/60">
-          Everything we store about each child is shown here: first name, age, and grade.
-          Practice progress is kept at the family-account level, summarized below.
+          Everything we store about each child is shown here: first name, age, and grade,
+          plus their practice progress, summarized below.
         </p>
         {kids.length === 0 && (
-          <p className="mt-4 text-sm font-semibold text-ink/50">No child profiles yet.</p>
+          <p className="mt-4 text-sm font-semibold text-ink/50">
+            No child profiles yet. Add one so each kid gets their own levels, stars, and progress report.
+          </p>
         )}
         <div className="mt-4 space-y-3">
           {kids.map((kid) => (
@@ -281,10 +289,26 @@ export default function AccountPage() {
             </div>
           ))}
         </div>
+        {/* Accounts that signed up before profiles existed (or skipped the
+            wizard) have no other way in — the picker only appears once a kid
+            exists. Reuses the wizard, which handles the consent email. */}
+        {kids.length < MAX_KIDS && (
+          <button
+            type="button"
+            onClick={() => navigate("/onboarding?add=1")}
+            className="mt-4 px-4 h-11 rounded-xl bg-teal text-white text-sm font-bold cursor-pointer hover:bg-deep-teal"
+          >
+            {kids.length === 0 ? "Add a kid" : "Add another kid"}
+          </button>
+        )}
       </section>
 
       <section className="mt-10">
         <h2 className="font-display font-medium text-2xl text-ink m-0">Practice progress we hold</h2>
+        <p className="mt-1 text-sm font-semibold text-ink/60">
+          The readable version — time, accuracy by skill, and missed questions — is the{" "}
+          <Link to="/report" className="text-teal underline">progress report</Link>.
+        </p>
         {progress.length === 0 ? (
           <p className="mt-3 text-sm font-semibold text-ink/50">No cloud progress yet.</p>
         ) : (
@@ -293,17 +317,24 @@ export default function AccountPage() {
               {totalSessions} practice sessions · {totalStars} stars, across{" "}
               {progress.length} game{progress.length === 1 ? "" : "s"}.
             </p>
-            <ul className="mt-3 m-0 p-0 list-none grid sm:grid-cols-2 gap-2">
-              {progress.map((row) => (
-                <li
-                  key={row.mode}
-                  className="bg-white rounded-xl border-[1.5px] border-ink/10 px-4 py-2 text-sm font-semibold text-ink"
-                >
-                  {row.mode} — level {row.level}, {row.total_sessions} sessions,{" "}
-                  {row.lifetime_stars} stars
-                </li>
-              ))}
-            </ul>
+            {/* Progress is per kid (kid_id); a null kid_id is the household
+                row from a device that practiced before any profile existed. */}
+            {progressByKid.map(({ kidId, label, rows }) => (
+              <div key={kidId || "household"} className="mt-4">
+                <p className="text-sm font-bold text-ink">{label}</p>
+                <ul className="mt-2 m-0 p-0 list-none grid sm:grid-cols-2 gap-2">
+                  {rows.map((row) => (
+                    <li
+                      key={`${kidId}-${row.mode}`}
+                      className="bg-white rounded-xl border-[1.5px] border-ink/10 px-4 py-2 text-sm font-semibold text-ink"
+                    >
+                      {row.mode} — level {row.level}, {row.total_sessions} sessions,{" "}
+                      {row.lifetime_stars} stars
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </>
         )}
       </section>

@@ -138,21 +138,48 @@ export function generateAdditiveItem(level, context = {}, { pool = ADDITIVE_STRU
 }
 
 /** `g x s = p`, sized so products stay inside the level's ceiling. */
-function multiplicativeQuantities(level) {
+function multiplicativeQuantities(level, { division = false } = {}) {
   const band = bandForLevel(level);
   const maxFactor = band === "K" ? 5 : band === "G1" ? 9 : 12;
-  // Levels 9-10 are the two-digit band: one factor is always >= 10, which is
-  // what switches the mode to a typed answer rather than four choices.
-  if (level >= 9) {
-    const big = randInt(10, 20);
+  // Division keeps a one-digit divisor with growing dividends (4.NBT.6 is
+  // multi-digit ÷ one-digit); multiplication grows both factors (4.NBT.5).
+  if (division && level >= 8) {
+    const divisor = randInt(2, 9);
+    const quotient = level >= 9 ? randInt(10, 99) : randInt(10, 30);
+    return { g: divisor, s: quotient, p: divisor * quotient };
+  }
+  if (!division && level >= 9) {
+    // Two-digit × two-digit (4.NBT.5); typed answer, judged on the givens.
+    const g = randInt(11, 25);
+    const s = randInt(11, 25);
+    return { g, s, p: g * s };
+  }
+  if (!division && level >= 8) {
+    // Two-digit × one-digit steps in one level earlier.
+    const big = randInt(10, 99);
     const small = randInt(2, 9);
     const g = Math.random() < 0.5 ? big : small;
     const s = g === big ? small : big;
     return { g, s, p: g * s };
   }
+  if (division && level >= 7) {
+    // Division's legacy two-digit entry at the old gate.
+    const big = randInt(10, 20);
+    const small = randInt(2, 9);
+    return { g: small, s: big, p: small * big };
+  }
   const g = randInt(2, maxFactor);
   const s = randInt(2, maxFactor);
   return { g, s, p: g * s };
+}
+
+/** Quantities for a remainder structure: p = divisor × quotient + r, r ≥ 1. */
+function remainderQuantities(level) {
+  const divisor = randInt(3, 9);
+  const quotient = level >= 9 ? randInt(10, 30) : randInt(3, 9);
+  const r = randInt(1, divisor - 1);
+  // Both g and s carry the divisor role a remainder structure reads; p is the total.
+  return { g: divisor, s: divisor, p: divisor * quotient + r, r };
 }
 
 export function generateMultiplicativeItem(
@@ -165,7 +192,10 @@ export function generateMultiplicativeItem(
     form,
   });
   const asStory = wantsStory(level, context, structure);
-  const nums = multiplicativeQuantities(level);
+  const isDivision = pool.length > 0 && pool.every((st) => st.op === "/");
+  const nums = structure.remainder
+    ? remainderQuantities(level)
+    : multiplicativeQuantities(level, { division: isDivision });
   const ctx = pickContext();
   const payload = buildMultiplicative(structure, nums, ctx, { asStory, form });
 

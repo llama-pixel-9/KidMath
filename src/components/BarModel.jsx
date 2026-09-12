@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { digitKeyClass, PAD_BACKSPACE } from "./kit";
+import { digitKeyClass, PAD_BACKSPACE, useDigitKeys } from "./kit";
 import ConfettiBurst from "./ConfettiBurst.jsx";
 
 // Bar-model builder (part-whole or comparison). The bar segments are drawn to
@@ -66,6 +66,8 @@ export default function BarModel({ onSubmit, feedback, theme, lowMotionMode, low
       </div>
     );
   }
+
+  useDigitKeys({ locked, onDigit: pressDigit, onBackspace: backspace, onSubmit: submit });
 
   return (
     <section className="w-full flex flex-col items-center gap-3" aria-label="Bar model">

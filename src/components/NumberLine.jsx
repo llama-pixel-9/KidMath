@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { SUBMIT_BUTTON, feedbackRing, isLocked, tapMotion, FIGURE_COLORS } from "./kit";
+import { SUBMIT_BUTTON, feedbackRing, isLocked, tapMotion, FIGURE_COLORS, useAnswerKeys } from "./kit";
 
 /**
  * The canonical Grade 2-3 model, and the one representation the app had no way
@@ -44,6 +44,19 @@ export default function NumberLine({
   };
 
   const canSubmit = mode === "jump" || picked !== null;
+
+  // Keyboard: left/right arrows walk the ticks (starting from the left end),
+  // Home/End jump to the ends, Enter checks.
+  useAnswerKeys((e) => {
+    if (e.key === "Enter") { submit(); return true; }
+    if (mode !== "locate") return false;
+    const idx = picked === null ? -1 : ticks.indexOf(picked);
+    if (e.key === "ArrowRight") { setPicked(ticks[Math.min(ticks.length - 1, idx + 1)]); return true; }
+    if (e.key === "ArrowLeft") { setPicked(ticks[Math.max(0, idx - 1)]); return true; }
+    if (e.key === "Home") { setPicked(ticks[0]); return true; }
+    if (e.key === "End") { setPicked(ticks[ticks.length - 1]); return true; }
+    return false;
+  }, !locked);
 
   return (
     <section className="flex flex-col items-center gap-4 w-full" aria-label="Number line">
@@ -118,6 +131,7 @@ export default function NumberLine({
       {mode === "locate" && (
         <p className={`text-xl font-bold ${theme?.textSecondary || "text-slate-500"}`}>
           {picked === null ? "Tap the number line" : `You picked ${picked}`}
+          <span className="key-hint static ml-2 align-middle">← →</span>
         </p>
       )}
 

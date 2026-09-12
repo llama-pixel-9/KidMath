@@ -45,9 +45,11 @@ enum ModeCatalog {
             ModeInfo(id: "factorsMultiples", label: "Factor Lab!", emoji: "🧪", playable: true),
             ModeInfo(id: "patterns", label: "Pattern Play!", emoji: "🧩", playable: true),
         ]),
-        ModeGroup(id: "fractionsDecimals", title: "Fractions & Decimals", gradeHint: "Grades 3-4", modes: [
+        ModeGroup(id: "fractionsDecimals", title: "Fractions & Decimals", gradeHint: "Grades 3-5", modes: [
             ModeInfo(id: "fractions", label: "Fractions Feather", emoji: "🍕", playable: true),
             ModeInfo(id: "decimals", label: "Decimal Dash!", emoji: "🎯", playable: true),
+            ModeInfo(id: "fractionOps", label: "Fraction Forge", emoji: "🍕", playable: true),
+            ModeInfo(id: "decimalOps", label: "Decimal Drift", emoji: "💧", playable: true),
         ]),
         ModeGroup(id: "measureMoneyTime", title: "Measure, Money & Time", gradeHint: "Grades 1-4", modes: [
             ModeInfo(id: "measurement", label: "Measuring Wings", emoji: "📏", playable: true),
@@ -55,10 +57,13 @@ enum ModeCatalog {
             ModeInfo(id: "time", label: "Time Tweet", emoji: "⏰", playable: true),
             ModeInfo(id: "areaPerimeter", label: "Area & Perimeter!", emoji: "🖼️", playable: true),
         ]),
-        ModeGroup(id: "shapesData", title: "Shapes & Data", gradeHint: "Grades 3-4", modes: [
+        ModeGroup(id: "shapesData", title: "Shapes & Data", gradeHint: "Grades 3-5", modes: [
             ModeInfo(id: "linesShapes", label: "Shapes Shell", emoji: "🔷", playable: true),
             ModeInfo(id: "angles", label: "Angle Ace!", emoji: "📐", playable: true),
             ModeInfo(id: "dataGraphs", label: "Graph Reader!", emoji: "📈", playable: true),
+            // Grade-5 volume/coordinates: cubeGrid + coordGrid figures are not
+            // drawn in Swift yet — SOON badge until they are.
+            ModeInfo(id: "volumeCoordinates", label: "Cube & Compass", emoji: "🧊", playable: false),
         ]),
     ]
 

@@ -51,3 +51,5 @@ resources/**/*.pdf
 # Playwright
 test-results/
 playwright-report/
+public/__sweep.json
+qa-out/

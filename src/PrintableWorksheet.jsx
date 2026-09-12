@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { motion } from "framer-motion";
 import {
   Plus,
@@ -15,9 +15,11 @@ import LarkMark from "./components/LarkMark.jsx";
 import {
   generateFlightLog,
   flightLogScope,
-  FLIGHT_LOG_ITEMS,
+  printOptionBank,
+  isYesNoJudgment,
   MODES,
 } from "./mathEngine";
+import { FIGURES } from "./components/figureRegistry";
 import { getModeConfig } from "./modes";
 import { useTheme } from "./useTheme";
 
@@ -31,7 +33,6 @@ const LEVEL_GROUPS = [
 
 // Question ops are ASCII; the printed sheet uses the maths symbols.
 const OP_SYMBOL = { "+": "+", "-": "−", "x": "×", "/": "÷" };
-const OP_VERB = { "+": "ADD", "-": "SUBTRACT", "x": "MULTIPLY", "/": "DIVIDE" };
 
 // §15: every mark on a flight log is 100% black — no tints, no colour, no
 // decorative glyphs. The sheet is Fredoka for the maths, Nunito for the rest.
@@ -54,20 +55,12 @@ function AnswerBox({ value = null, wide = false }) {
   );
 }
 
-function PartCaption({ children }) {
-  return (
-    <p className="text-[11px] font-black text-black uppercase tracking-[0.14em] mb-2">
-      {children}
-    </p>
-  );
-}
-
 // Part A stacked item: both operands right-aligned in one digit column, the
 // operator hanging left on the second line, one 1.5px rule, then 34px of
 // clear space for the child's own writing.
 function StackedItem({ question: q, number, answer = null }) {
   return (
-    <div className="flex gap-1.5">
+    <div className="flex gap-1.5" style={{ breakInside: "avoid" }}>
       <ItemNumber n={number} />
       <div
         className="w-[88px] font-display font-semibold text-[20px] text-black leading-[1.25]"
@@ -89,7 +82,7 @@ function StackedItem({ question: q, number, answer = null }) {
 // printed "?", never a printed answer.
 function InlineItem({ question: q, number, answer = null }) {
   return (
-    <div className="flex items-start gap-1.5">
+    <div className="flex items-start gap-1.5" style={{ breakInside: "avoid" }}>
       <ItemNumber n={number} />
       <span className="font-display font-semibold text-[18px] text-black leading-[1.4]">
         {q.a} {OP_SYMBOL[q.op]} {q.b} ={" "}
@@ -100,8 +93,10 @@ function InlineItem({ question: q, number, answer = null }) {
 }
 
 // Prompt item for the modes without an a-op-b form (time, graphs, shapes…).
-// Choice questions print their option bank — a prompt with no bank has no
-// answer.
+// The option bank prints only when the options ARE the question (#34) — a
+// plain numeric answer gets just the blank box. Judgment items print as
+// circle-Yes-or-No, and figure questions (bar graph, pictograph…) print their
+// figure — a graph question without its graph is unanswerable on paper.
 function PromptItem({ question: q, number, answer = null }) {
   let body = null;
   if (q.display?.promptText) {
@@ -111,12 +106,22 @@ function PromptItem({ question: q, number, answer = null }) {
   } else if (q.display?.emoji) {
     body = Array.from({ length: q.display.count }, () => q.display.emoji).join(" ");
   }
-  const bank = Array.isArray(q.choices) && q.choices.length > 1 ? q.choices : null;
+  const subPrompt = q.subPrompt ?? q.display?.subPrompt;
+  const judgment = isYesNoJudgment(q);
+  const bank = printOptionBank(q);
+  const figure = q.display?.figure ? FIGURES[q.display.figure] : null;
+  const monoTheme = { textPrimary: "text-black", textSecondary: "text-black", textMuted: "text-black" };
   return (
-    <div className="flex items-start gap-1.5">
+    <div className="flex items-start gap-1.5" style={{ breakInside: "avoid" }}>
       <ItemNumber n={number} />
       <div className="flex-1 text-[13px] font-semibold text-black leading-[1.45]">
+        {figure && (
+          <div className="max-w-[240px] mb-1.5" style={{ filter: "grayscale(1)" }}>
+            <figure.Component theme={monoTheme} {...(figure.props ? figure.props(q, { settled: answer != null }) : {})} />
+          </div>
+        )}
         <span>{body} </span>
+        {subPrompt && <span>{subPrompt} </span>}
         {bank && (
           <span className="inline-flex flex-wrap gap-1.5 align-middle mx-1">
             {bank.map((c, i) => (
@@ -129,19 +134,35 @@ function PromptItem({ question: q, number, answer = null }) {
             ))}
           </span>
         )}
-        <AnswerBox value={answer} wide />
+        {judgment ? (
+          <span className="inline-flex items-center gap-2 align-middle mx-1 font-display font-semibold text-[14px]">
+            <span className="mr-0.5">Circle one:</span>
+            {["Yes", "No"].map((label) => (
+              <span
+                key={label}
+                className={`inline-flex items-center justify-center rounded-full px-2.5 h-[24px] ${
+                  answer === label ? "border-[2.5px] border-black" : "border border-black/40"
+                }`}
+              >
+                {label}
+              </span>
+            ))}
+          </span>
+        ) : (
+          <AnswerBox value={answer} wide />
+        )}
       </div>
     </div>
   );
 }
 
-// Part C: the one thought problem, full width, at the end. A "pick two
-// numbers" prompt prints the number bank it picks from and a structured
-// answer line (☐ + ☐ = 6).
-function ThoughtProblem({ partC, number, showAnswer = false }) {
-  if (!partC) return null;
-  const q = partC.question;
-  if (partC.kind === "pickTwo") {
+// A word problem, full width, at the end — printed only when the Include
+// Word Problems toggle is on. A "pick two numbers" prompt prints the number
+// bank it picks from and a structured answer line (☐ + ☐ = 6).
+function WordProblem({ item, number, showAnswer = false }) {
+  if (!item) return null;
+  const q = item.question;
+  if (item.kind === "pickTwo") {
     const pair = Array.isArray(q.answer?.[0]) ? q.answer[0] : q.answer;
     return (
       <div className="flex items-start gap-1.5">
@@ -170,13 +191,20 @@ function ThoughtProblem({ partC, number, showAnswer = false }) {
       </div>
     );
   }
-  if (partC.kind === "computation") {
-    return <InlineItem question={q} number={number} answer={showAnswer ? q.answer : null} />;
-  }
+
+  const figure = q.display?.figure ? FIGURES[q.display.figure] : null;
   return (
-    <div className="flex items-start gap-1.5">
+    <div className="flex items-start gap-1.5" style={{ breakInside: "avoid" }}>
       <ItemNumber n={number} />
       <div className="flex-1 text-[14px] font-semibold text-black leading-[1.5]">
+        {figure && (
+          <div className="max-w-[240px] mb-1.5" style={{ filter: "grayscale(1)" }}>
+            <figure.Component
+              theme={{ textPrimary: "text-black", textSecondary: "text-black", textMuted: "text-black" }}
+              {...(figure.props ? figure.props(q, { settled: showAnswer }) : {})}
+            />
+          </div>
+        )}
         <span>{q.display?.promptText} </span>
         <AnswerBox value={showAnswer ? q.answer : null} wide />
       </div>
@@ -188,7 +216,6 @@ function ThoughtProblem({ partC, number, showAnswer = false }) {
 // boxes, "Answer key" in place of Name and Date; always a separate sheet).
 function FlightLogSheet({ log, mode, level, scope, answerKey = false, logIndex, logCount, breakBefore = false }) {
   const config = getModeConfig(mode);
-  const partAVerb = log.computational ? `STACK AND ${OP_VERB[config.op]}` : "WARM UP";
   let n = 0;
   const next = () => ++n;
   const answerOf = (q) => (answerKey ? q.answer : null);
@@ -226,9 +253,9 @@ function FlightLogSheet({ log, mode, level, scope, answerKey = false, logIndex, 
         </div>
       )}
 
-      {/* Part A — stacked ×6 (three per row), or warm-up prompts */}
-      <div className="mt-2">
-        <PartCaption>Part A · {partAVerb}</PartCaption>
+      {/* Stacked computations (three per row), or short prompts. No PART
+          A/B/C captions (#34): the sheet is a drill, not a test paper. */}
+      <div className="mt-4">
         {log.computational ? (
           <div className="grid grid-cols-3 gap-x-6" style={{ rowGap: "18px" }}>
             {log.partA.map((q, i) => (
@@ -244,9 +271,8 @@ function FlightLogSheet({ log, mode, level, scope, answerKey = false, logIndex, 
         )}
       </div>
 
-      {/* Part B — inline ×4, two per row */}
-      <div className="mt-5">
-        <PartCaption>Part B · Write the answer</PartCaption>
+      {/* Inline items, two per row */}
+      <div className="mt-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 print:grid-cols-2 gap-x-6" style={{ rowGap: "14px" }}>
           {log.partB.map((q, i) =>
             log.computational ? (
@@ -258,11 +284,12 @@ function FlightLogSheet({ log, mode, level, scope, answerKey = false, logIndex, 
         </div>
       </div>
 
-      {/* Part C — one thought problem, full width, at the end */}
-      {log.partC && (
-        <div className="mt-5">
-          <PartCaption>Part C · Think it through</PartCaption>
-          <ThoughtProblem partC={log.partC} number={next()} showAnswer={answerKey} />
+      {/* Word problems, full width, at the end — only when toggled on */}
+      {log.wordProblems?.length > 0 && (
+        <div className="mt-6 space-y-4">
+          {log.wordProblems.map((item, i) => (
+            <WordProblem key={i} item={item} number={next()} showAnswer={answerKey} />
+          ))}
         </div>
       )}
 
@@ -272,10 +299,10 @@ function FlightLogSheet({ log, mode, level, scope, answerKey = false, logIndex, 
         <span className="inline-flex items-center gap-1.5">
           Landed
           <span className="inline-block w-[14px] h-[14px] border-[1.5px] border-black align-middle" />
-          of {FLIGHT_LOG_ITEMS}
+          of {log.itemCount}
         </span>
         <span>
-          {config.label} · L{level} · Page 1 of 1
+          {config.label} · L{level}
         </span>
       </div>
     </div>
@@ -289,13 +316,22 @@ export default function PrintableWorksheet() {
   const [sheetCount, setSheetCount] = useState(1);
   const [generated, setGenerated] = useState(false);
   const [showAnswerKey, setShowAnswerKey] = useState(true);
+  const [allowWordProblems, setAllowWordProblems] = useState(true);
 
   const logs = useMemo(() => {
     if (!generated) return [];
-    return Array.from({ length: sheetCount }, () => generateFlightLog(mode, level));
-  }, [generated, mode, level, sheetCount]);
+    return Array.from({ length: sheetCount }, () => generateFlightLog(mode, level, { allowWordProblems }));
+  }, [generated, mode, level, sheetCount, allowWordProblems]);
 
   const scope = flightLogScope(mode, level);
+
+  // DEV-only QA hook: the e2e asserts sheet COMPOSITION (word problems on/off)
+  // from here instead of scraping prose out of the printed DOM.
+  useEffect(() => {
+    if (import.meta.env.DEV && typeof window !== "undefined") {
+      window.__larkitWorksheets = { logs, allowWordProblems };
+    }
+  }, [logs, allowWordProblems]);
 
   const handleGenerate = () => {
     setGenerated(false);
@@ -311,8 +347,8 @@ export default function PrintableWorksheet() {
           Print a Flight Log
         </h1>
         <p className={`text-sm ${theme.textSecondary} mb-6`}>
-          One sheet, one skill: {FLIGHT_LOG_ITEMS} problems in three parts, from the
-          same levels the games use. The answer key prints as its own sheet.
+          One sheet, one skill: three parts of problems from the same levels
+          the games use. The answer key prints as its own sheet.
         </p>
 
         <div className={`${theme.cardBg} backdrop-blur rounded-3xl shadow-lg p-6 space-y-5`}>
@@ -357,6 +393,7 @@ export default function PrintableWorksheet() {
                     {group.levels.map((lv) => (
                       <button
                         key={lv}
+                        aria-label={`Level ${lv}`}
                         className={`flex-1 py-2 rounded-xl border-2 font-bold text-sm cursor-pointer transition-colors ${
                           lv === level
                             ? theme.selectedBorder + " " + theme.selectedText
@@ -382,6 +419,7 @@ export default function PrintableWorksheet() {
               {[1, 2, 3, 5].map((n) => (
                 <button
                   key={n}
+                  aria-label={`${n} ${n === 1 ? "log" : "logs"}`}
                   className={`flex-1 py-3 rounded-2xl border-2 font-bold text-lg cursor-pointer transition-colors ${
                     n === sheetCount
                       ? theme.selectedBorder + " " + theme.selectedText
@@ -393,6 +431,26 @@ export default function PrintableWorksheet() {
                 </button>
               ))}
             </div>
+          </div>
+
+          {/* Word problems toggle — mirrors the play-screen preference (#34) */}
+          <div className="flex items-center justify-between">
+            <p className={`text-sm font-semibold ${theme.textSecondary} uppercase tracking-wide`}>
+              Include Word Problems
+            </p>
+            <button
+              className={`relative w-12 h-7 rounded-full transition-colors cursor-pointer ${
+                allowWordProblems ? "bg-teal" : "bg-gray-300"
+              }`}
+              onClick={() => { setAllowWordProblems(!allowWordProblems); setGenerated(false); }}
+              aria-label={allowWordProblems ? "Skip word problems" : "Include word problems"}
+            >
+              <span
+                className={`absolute top-0.5 left-0.5 w-6 h-6 bg-white rounded-full shadow transition-transform ${
+                  allowWordProblems ? "translate-x-5" : ""
+                }`}
+              />
+            </button>
           </div>
 
           {/* Answer Key toggle */}

@@ -99,6 +99,20 @@ Use the closest matching `structureType` when authoring an item:
 - Idioms or figurative language ("a ton of apples").
 - Negative framing that flips the operation unexpectedly ("how many fewer
   did NOT come?").
+- Teacher vocabulary in the kid-facing prompt: "subitize", "cardinality",
+  "decompose", "commutative property", "identity", "inverse", "numeral",
+  "partition". Say it in kid words (`teacherJargon` check, severity fail).
+- Describing a picture instead of showing it: "A small set of 4 dots. How
+  many?" with no figure states the answer. A counting prompt either carries a
+  figure or asks something the words alone can't give away
+  (`figurelessQuantity` check, severity fail).
+- Describing clock hands instead of showing the face: "the hour hand on six
+  and the minute hand on twelve" turns clock-reading into reading
+  comprehension — and a judged mismatch ("... as seven o'clock. Is that
+  right?") gives itself away in the text. A clock item shows the face
+  (`clockFace` figure or the clock widget) and asks for the time; words about
+  hands are only for items where the hands themselves are the subject
+  ("which hand tells the hour?") (`describedClockHands` check, severity fail).
 
 ## Required Item Fields
 
@@ -186,6 +200,9 @@ Phase 2 healthy threshold:
     representation/structural shape for conceptual/procedural)
   - numeric consistency when `a`, `b`, `op` are present
   - no duplicate `itemId` or `promptText`
+- `src/itemBank/qc/checks.js` (the gate in `bank:qc` and the Review queue) adds
+  `nounlessQuestion`, `decorativeContext`, `selfAnswering`, `teacherJargon`
+  and `figurelessQuantity` as `fail` findings — approval is blocked on any of them.
 - The draft pipeline (`scripts/itemGen/validateDrafts.js`) adds:
   - license allowlist check against the exemplar source,
   - batch-local duplicate prompt detection,

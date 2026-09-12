@@ -30,7 +30,7 @@ import {
   Heart,
 } from "lucide-react";
 import Feather from "./components/feather.jsx";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { useTheme } from "./useTheme";
 import LarkMark from "./components/LarkMark";
 import { MODE_IDS, MODE_GROUPS, getModeConfig } from "./modes";
@@ -44,7 +44,10 @@ import GrownUpsPanel from "./engagement/GrownUpsPanel.jsx";
 import { usePremium } from "./PremiumContext";
 import { useAuth } from "./useAuth";
 import { isFreeMode } from "./premium";
-import { activeKidId, fetchKids } from "./kidProfiles";
+import { activeKidId, activeKidGrade, fetchKids } from "./kidProfiles";
+import { loadSessionsSync } from "./analytics/sessionLog.js";
+import { masterySummary, masteryLine } from "./analytics/masterySummary.js";
+import { gradeIndex, gradeFitFor } from "./gradeSeed.js";
 
 const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork, BarChart3, CircleDot, Sigma, Ruler, Coins, Spline, Scale, Clock, ChartColumn, Triangle, Shapes };
 
@@ -123,10 +126,40 @@ const STEPS = [
 
 // §14: one greeting line above the aviary — time of day, first name when we
 // know it, and the star balance. No exclamation stacking, no streak pressure.
-function greetingLine(user, balance) {
+
+/**
+ * Order the topic groups for a kid: groups with at least one mode at their
+ * grade first (in MODE_GROUPS order), then groups they have outgrown, and
+ * groups entirely above their grade folded away. Unknown grade → as authored.
+ */
+function groupsForGrade(grade) {
+  if (gradeIndex(grade) == null) return { mainGroups: MODE_GROUPS, moreGroups: [] };
+  const fit = (g) => {
+    const fits = g.modeIds.map((id) => gradeFitFor(id, grade));
+    return fits.includes("in") ? 0 : fits.every((f) => f === "above") ? 2 : 1;
+  };
+  const ranked = MODE_GROUPS.map((g, i) => ({ g, i, rank: fit(g) })).sort((a, b) => a.rank - b.rank || a.i - b.i);
+  return {
+    mainGroups: ranked.filter((x) => x.rank < 2).map((x) => x.g),
+    moreGroups: ranked.filter((x) => x.rank === 2).map((x) => x.g),
+  };
+}
+
+/** Quick Start: the in-grade mode with the lowest level — the most room to grow. */
+function quickStartFor(grade) {
+  if (gradeIndex(grade) == null) return null;
+  const inGrade = MODE_GROUPS.flatMap((g) => g.modeIds).filter((id) => gradeFitFor(id, grade) === "in");
+  if (!inGrade.length) return null;
+  return inGrade
+    .map((id) => ({ id, level: loadProgressSync(id)?.level || 1 }))
+    .sort((a, b) => a.level - b.level)[0].id;
+}
+
+function greetingLine(user, balance, kidName) {
   const hour = new Date().getHours();
   const dayPart = hour < 12 ? "Morning" : hour < 18 ? "Afternoon" : "Evening";
-  const first = user?.user_metadata?.full_name?.split(" ")[0] || user?.email?.split("@")[0];
+  // The kid is the one playing — greet them, not the parent's e-mail.
+  const first = kidName || user?.user_metadata?.full_name?.split(" ")[0] || user?.email?.split("@")[0];
   const who = first ? `, ${first}` : "";
   const stars = balance > 0 ? ` — ${balance} ${balance === 1 ? "star" : "stars"} in the nest.` : " — pick a game.";
   return `${dayPart}${who}${stars}`;
@@ -143,100 +176,41 @@ export default function HomePage() {
   const [engagement] = useState(loadEngagement);
 
   // §20 returning path: a signed-in family with kid profiles and no active
-  // kid lands on the profile picker, never a login form.
+  // kid lands on the profile picker, never a login form. A signed-in account
+  // with NO profiles (pre-profiles signups) gets a nudge instead — without it
+  // there was no route to the add-kid wizard at all.
+  const [needsKid, setNeedsKid] = useState(false);
+  // The active kid (name + grade) drives the greeting, the group order and
+  // Quick Start. Grade is cached beside the pointer so first paint has it.
+  const [kid, setKid] = useState(() => {
+    const grade = activeKidGrade();
+    return grade ? { grade } : null;
+  });
   useEffect(() => {
-    if (!user || activeKidId()) return;
+    if (!user) return;
     let alive = true;
     fetchKids(user.id).then((kids) => {
-      if (alive && kids.length > 0) navigate("/profiles");
+      if (!alive) return;
+      if (kids.length === 0) setNeedsKid(true);
+      else if (!activeKidId()) navigate("/profiles");
+      else {
+        const active = kids.find((k) => k.id === activeKidId());
+        if (active) setKid({ name: active.first_name, grade: active.grade });
+      }
     });
     return () => { alive = false; };
   }, [user, navigate]);
 
-  return (
-    <main className="min-h-screen">
-      {/* Hero */}
-      <section className="relative overflow-hidden px-4 pt-16 pb-20 text-center">
-        {/* Math-mark layer — marketing pages only. Fredoka, teal or sun,
-            30–50% opacity, small rotations, behind content. */}
-        <div aria-hidden="true" className="absolute inset-0 pointer-events-none font-display select-none">
-          <span className="absolute top-10 left-[8%] text-5xl text-sun opacity-50 rotate-[-9deg]">π</span>
-          <span className="absolute top-24 right-[10%] text-3xl text-teal opacity-40 rotate-[4deg]">45°</span>
-          <span className="absolute bottom-16 left-[16%] text-4xl text-teal opacity-40 rotate-[6deg]">½</span>
-          <span className="absolute bottom-10 right-[18%] text-4xl text-sun opacity-45 rotate-[-12deg]">×</span>
-        </div>
+  // Groups at the kid's grade first; groups entirely above it fold under
+  // "Explore more" so a kindergartner isn't handed decimals on tile one.
+  const { mainGroups, moreGroups } = useMemo(() => groupsForGrade(kid?.grade), [kid?.grade]);
+  const [showMore, setShowMore] = useState(false);
+  const quickStartMode = useMemo(() => quickStartFor(kid?.grade), [kid?.grade]);
+  // Kid-facing mastery: which skills in a mode are solid, from the practice
+  // log on this device (same math as the parent report).
+  const practiceLog = useMemo(() => loadSessionsSync(), []);
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="relative max-w-2xl mx-auto"
-        >
-          <div className="inline-flex items-center gap-2 bg-white rounded-full px-4 py-1.5 mb-3 shadow-sm">
-            <LarkMark size={16} />
-            <span className={`text-sm font-semibold ${theme.textSecondary}`}>
-              Free math practice for K-5
-            </span>
-          </div>
-          <div className="mb-6">
-            <EngagementBar
-              balance={starBalance(engagement)}
-              streak={currentStreak(engagement)}
-              today={starsToday(engagement)}
-              // The Meadow replaces the sticker book as the tap-target behind
-              // the star chip (§04); the book stays only while the flag is off.
-              onOpenStickers={() => (meadowEnabled() ? navigate("/meadow") : setStickersOpen(true))}
-            />
-          </div>
-          <h1 className="flex items-center justify-center gap-4">
-            <LarkMark size={56} />
-            <span className="font-display font-semibold lowercase tracking-[-0.01em] text-6xl sm:text-7xl text-teal leading-none">
-              larkit
-            </span>
-          </h1>
-          <p className="mt-4 font-display font-medium text-2xl sm:text-3xl text-ink">
-            Math that feels like play.
-          </p>
-          <p className={`mt-3 text-lg ${theme.textSecondary} max-w-md mx-auto`}>
-            {MODE_COUNT} skills from counting to fractions, decimals, and shapes
-            — adaptive practice with star rewards, no timers, no pressure.
-          </p>
-          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
-            <button
-              className={BTN_PRIMARY}
-              onClick={() =>
-                document.getElementById("modes")?.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              Pick a Game
-            </button>
-            <button className={BTN_SECONDARY} onClick={() => navigate("/play")}>
-              Quick Start
-            </button>
-            <button className={BTN_SECONDARY} onClick={() => navigate("/worksheets")}>
-              Print a Flight Log
-            </button>
-          </div>
-        </motion.div>
-      </section>
-
-      {/* Pick a game — grouped so kids can find a skill fast */}
-      <section id="modes" className="px-4 py-16 max-w-5xl mx-auto">
-        <motion.h2
-          className={`text-[26px] font-semibold font-display ${theme.textPrimary} text-center mb-2`}
-          {...fadeUp}
-        >
-          {greetingLine(user, starBalance(engagement))}
-        </motion.h2>
-        <motion.p
-          className={`text-center ${theme.textSecondary} mb-10`}
-          {...fadeUp}
-        >
-          {MODE_COUNT} skills, grouped by topic — tap any one to start.
-        </motion.p>
-
-        <div className="space-y-10">
-          {MODE_GROUPS.map((group) => (
+  const renderGroup = (group) => (
             <motion.div key={group.id} {...fadeUp}>
               <div className="flex items-baseline justify-between gap-3 mb-3 px-1">
                 <h3 className={`text-xl font-semibold font-display ${theme.textPrimary}`}>
@@ -292,12 +266,128 @@ export default function HomePage() {
                           </span>
                         )}
                       </div>
+                      {!locked && masteryLine(masterySummary(practiceLog, id, config.subskills || [])) && (
+                        <span className="text-[12px] font-bold text-ink/70 leading-tight">
+                          {masteryLine(masterySummary(practiceLog, id, config.subskills || []))}
+                        </span>
+                      )}
                     </button>
                   );
                 })}
               </div>
             </motion.div>
-          ))}
+  );
+
+  return (
+    <main className="min-h-screen">
+      {needsKid && (
+        <div className="bg-white border-b-[1.5px] border-ink/10 px-4 py-3 text-center text-sm font-semibold text-ink">
+          Set up a profile for your kid so their levels, stars and progress report are their own.{" "}
+          <button
+            type="button"
+            onClick={() => navigate("/onboarding?add=1")}
+            className="ml-2 px-3 h-9 rounded-xl bg-teal text-white font-bold cursor-pointer hover:bg-deep-teal"
+          >
+            Add a kid
+          </button>
+        </div>
+      )}
+      {/* Hero */}
+      <section className="relative overflow-hidden px-4 pt-16 pb-20 text-center">
+        {/* Math-mark layer — marketing pages only. Fredoka, teal or sun,
+            30–50% opacity, small rotations, behind content. */}
+        <div aria-hidden="true" className="absolute inset-0 pointer-events-none font-display select-none">
+          <span className="absolute top-10 left-[8%] text-5xl text-sun opacity-50 rotate-[-9deg]">π</span>
+          <span className="absolute top-24 right-[10%] text-3xl text-teal opacity-40 rotate-[4deg]">45°</span>
+          <span className="absolute bottom-16 left-[16%] text-4xl text-teal opacity-40 rotate-[6deg]">½</span>
+          <span className="absolute bottom-10 right-[18%] text-4xl text-sun opacity-45 rotate-[-12deg]">×</span>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="relative max-w-2xl mx-auto"
+        >
+          <div className="inline-flex items-center gap-2 bg-white rounded-full px-4 py-1.5 mb-3 shadow-sm">
+            <LarkMark size={16} />
+            <span className={`text-sm font-semibold ${theme.textSecondary}`}>
+              Free math practice for K-5
+            </span>
+          </div>
+          <div className="mb-6">
+            <EngagementBar
+              balance={starBalance(engagement)}
+              streak={currentStreak(engagement)}
+              today={starsToday(engagement)}
+              // The Meadow replaces the sticker book as the tap-target behind
+              // the star chip (§04); the book stays only while the flag is off.
+              onOpenStickers={() => (meadowEnabled() ? navigate("/meadow") : setStickersOpen(true))}
+            />
+          </div>
+          <h1 className="flex items-center justify-center gap-4">
+            <LarkMark size={56} />
+            <span className="font-display font-semibold lowercase tracking-[-0.01em] text-6xl sm:text-7xl text-teal leading-none">
+              larkit
+            </span>
+          </h1>
+          <p className="mt-4 font-display font-medium text-2xl sm:text-3xl text-ink">
+            Math that feels like play.
+          </p>
+          <p className={`mt-3 text-lg ${theme.textSecondary} max-w-md mx-auto`}>
+            {MODE_COUNT} skills from counting to fractions, decimals, and shapes
+            — adaptive practice with star rewards, no timers, no pressure.
+          </p>
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+            <button
+              className={BTN_PRIMARY}
+              onClick={() =>
+                document.getElementById("modes")?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Pick a Game
+            </button>
+            <button className={BTN_SECONDARY} onClick={() => navigate(quickStartMode ? `/play/${quickStartMode}` : "/play")}>
+              Quick Start
+            </button>
+            <button className={BTN_SECONDARY} onClick={() => navigate("/worksheets")}>
+              Print a Flight Log
+            </button>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Pick a game — grouped so kids can find a skill fast */}
+      <section id="modes" className="px-4 py-16 max-w-5xl mx-auto">
+        <motion.h2
+          className={`text-[26px] font-semibold font-display ${theme.textPrimary} text-center mb-2`}
+          {...fadeUp}
+        >
+          {greetingLine(user, starBalance(engagement), kid?.name)}
+        </motion.h2>
+        <motion.p
+          className={`text-center ${theme.textSecondary} mb-10`}
+          {...fadeUp}
+        >
+          {MODE_COUNT} skills, grouped by topic — tap any one to start.
+        </motion.p>
+
+        <div className="space-y-10">
+          {mainGroups.map(renderGroup)}
+          {moreGroups.length > 0 && (
+            <div className="text-center">
+              <button
+                type="button"
+                className="px-5 h-11 rounded-xl bg-white border-[1.5px] border-ink/10 font-bold text-ink cursor-pointer"
+                onClick={() => setShowMore((v) => !v)}
+                aria-expanded={showMore}
+              >
+                {showMore ? "Hide the bigger-kid topics" : `Explore more — ${moreGroups.length} topic${moreGroups.length === 1 ? "" : "s"} for bigger kids`}
+              </button>
+              {showMore && <div className="space-y-10 mt-8 text-left">{moreGroups.map(renderGroup)}</div>}
+            </div>
+          )}
+
         </div>
       </section>
 

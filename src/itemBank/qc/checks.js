@@ -12,6 +12,7 @@
  *   warn  — a human or the model should look
  */
 
+import { contractVerdict, rendersAnything } from "../figureContracts.js";
 import { checkStructure } from "./structureCheck.js";
 
 const fail = (id, message) => ({ id, severity: "fail", message });
@@ -26,6 +27,7 @@ const numbersIn = (text) => (text.match(/\d+/g) || []).map(Number);
  */
 const COUNTABLE_PLURALS = new Set([
   "apples", "stickers", "marbles", "shells", "books", "pencils", "buttons",
+  "bundles", "rods", "wires", "sheets", "crates", "packs", "straws",
   "crayons", "cards", "blocks", "beads", "leaves", "bunnies", "birds",
   "flowers", "cookies", "plums", "chairs", "coins", "bags", "boxes", "baskets",
   "jars", "plates", "shelves", "rows", "groups", "bears", "ducks", "frogs",
@@ -84,6 +86,18 @@ function arithmeticCheck(item) {
   return fail("arithmetic", `answer ${answer} is not consistent with ${a} and ${b} under ${op}`);
 }
 
+// Kid-facing vocabulary the pedagogy register leaks into prompts (teacherJargon).
+const TEACHER_JARGON =
+  /\b(subitiz\w*|cardinalit\w*|decompos\w*|commutativ\w*|associativ\w*|identity|inverse|equivalen\w*|numerals?|partition\w*|one-to-one|conserv\w*)\b/i;
+// Emoji presentation characters — an emoji run in the prompt IS the picture.
+const EMOJI_RUN = /[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/u;
+// "4 dots", "a set of 10 items", "a ten frame with 8 counters" … (figurelessQuantity)
+// Only DESCRIPTIONS of a picture count — "a set of 4 dots", "a card shows 3
+// red buttons", "a ten frame with 8 counters". A story quantity ("Lia has 9
+// marbles") is a word problem, not a missing figure.
+const QUANTITY_OF_OBJECTS =
+  /\b(?:(?:small |big )?(?:set|group|row|pile|collection|array) of (?:\d+|some|these) (?:dots?|items?|objects?|counters?|chips?|cubes?|blocks?|stars?|circles?|squares?|buttons?|marbles?|beads?|things)|card (?:shows|with|has) \d+|\d+ (?:dots?|counters?|chips?) (?:filled|in a row|on (?:the|a) (?:top|bottom|first|second) row)|ten[- ]frames?)\b/i;
+
 export const CHECKS = [
   {
     id: "structureMatch",
@@ -94,6 +108,151 @@ export const CHECKS = [
   },
 
   { id: "arithmetic", run: arithmeticCheck },
+
+  {
+    // `op: "vs"`/`op: "?"` (comparing) skips arithmeticCheck; verify what the
+    // payload lets us: symbol answers against numeric a/b, and numeric
+    // answers against a display.compare claim
+    // (docs/comparing-bank-design.md).
+    id: "compareMath",
+    run: (item) => {
+      const q = item.question || {};
+      if (q.op !== "vs" && q.op !== "?") return null;
+      if (typeof q.answer === "string" && /^[<>=]$/.test(q.answer)) {
+        if (typeof q.a === "number" && typeof q.b === "number") {
+          const want = q.a > q.b ? ">" : q.a < q.b ? "<" : "=";
+          return q.answer === want
+            ? null
+            : fail("compareMath", `symbol ${q.answer} does not relate ${q.a} and ${q.b}`);
+        }
+        return null; // expression strings — assembler-level asserts cover them
+      }
+      const c = q.display?.compare;
+      if (!c || typeof q.answer !== "number") return null;
+      let want = null;
+      if (c.kind === "difference") want = c.bigger - c.smaller;
+      else if (c.kind === "gap") want = c.target - c.have;
+      else if (c.kind === "oneMoreLess") want = c.n + c.delta;
+      else if (c.kind === "closerTo") want = c.n - c.lo < c.hi - c.n ? c.lo : c.hi;
+      else if (c.kind === "midpoint") want = (c.lo + c.hi) / 2;
+      if (want == null) return null;
+      return q.answer === want
+        ? null
+        : fail("compareMath", `answer ${q.answer} != ${want} from ${c.kind} claim`);
+    },
+  },
+
+  {
+    // `op: "bond"` skips arithmeticCheck entirely (no OPS entry), so bond
+    // items get their own consistency rule, keyed off the display payload.
+    // Bank convention (docs/numberbonds-bank-design.md): missing-part items
+    // set display.whole + display.part; three-part items set display.whole +
+    // display.parts (the givens); whole-unknown items set display.parts only.
+    id: "bondMath",
+    run: (item) => {
+      const q = item.question || {};
+      if (q.op !== "bond" || typeof q.answer !== "number") return null;
+      const d = q.display || {};
+      const whole = typeof d.whole === "number" ? d.whole : null;
+      const part = typeof d.part === "number" ? d.part : null;
+      const parts = Array.isArray(d.parts) && d.parts.every((p) => typeof p === "number") ? d.parts : null;
+
+      if (whole != null && part != null && parts == null) {
+        return part + q.answer === whole
+          ? null
+          : fail("bondMath", `part ${part} + answer ${q.answer} != whole ${whole}`);
+      }
+      if (whole != null && parts != null) {
+        const given = parts.reduce((s, p) => s + p, 0);
+        return given + q.answer === whole
+          ? null
+          : fail("bondMath", `given parts sum ${given} + answer ${q.answer} != whole ${whole}`);
+      }
+      if (whole == null && parts != null) {
+        const sum = parts.reduce((s, p) => s + p, 0);
+        return sum === q.answer
+          ? null
+          : fail("bondMath", `parts sum ${sum} != answer ${q.answer} (whole-unknown bond)`);
+      }
+      return null; // no numeric bond payload to verify (judged/choice forms)
+    },
+  },
+
+  {
+    // `op: "count"` likewise has no OPS entry. Counting bank items declare
+    // their claim in `display.counting` (docs/counting-bank-design.md) and
+    // this check recomputes the answer from it. Items without the field
+    // (legacy prose) are skipped; judged/choice forms carry no claim.
+    id: "countMath",
+    run: (item) => {
+      const q = item.question || {};
+      if (q.op !== "count" || typeof q.answer !== "number") return null;
+      const c = q.display?.counting;
+      if (!c || typeof c !== "object") return null;
+      const n = (k) => (typeof c[k] === "number" ? c[k] : null);
+      let expected = null;
+      switch (c.kind) {
+        case "set":
+          expected = n("count");
+          break;
+        case "countOn":
+          expected = n("start") != null && n("more") != null ? c.start + c.more : null;
+          break;
+        case "countBack":
+          expected = n("start") != null && n("back") != null ? c.start - c.back : null;
+          break;
+        case "next": {
+          const seq = Array.isArray(c.sequence) && c.sequence.every((x) => typeof x === "number") ? c.sequence : null;
+          expected = seq && seq.length && n("step") != null ? seq[seq.length - 1] + c.step : null;
+          break;
+        }
+        case "between":
+          // Midpoint of the neighbours — covers unit steps (before+1) AND
+          // skip-count gaps (before + step), as long as the gap is even.
+          expected =
+            n("before") != null && n("after") != null && (c.after - c.before) % 2 === 0 && c.after > c.before
+              ? (c.before + c.after) / 2
+              : null;
+          break;
+        case "hidden":
+          expected = n("total") != null && n("seen") != null ? c.total - c.seen : null;
+          break;
+        case "gap":
+          expected = n("have") != null && n("target") != null ? c.target - c.have : null;
+          break;
+        case "moreLess":
+          expected = n("n") != null && n("delta") != null ? c.n + c.delta : null;
+          break;
+        case "groups":
+          expected = n("tens") != null && n("ones") != null ? c.tens * 10 + c.ones : null;
+          break;
+        case "units":
+          expected =
+            n("hundreds") != null && n("tens") != null && n("ones") != null
+              ? c.hundreds * 100 + c.tens * 10 + c.ones
+              : null;
+          break;
+        case "digit":
+          // The digit standing in `place` (1, 10, or 100) of n.
+          expected = n("n") != null && n("place") != null ? Math.floor(c.n / c.place) % 10 : null;
+          break;
+        case "placeValueOf":
+          expected = n("n") != null && n("place") != null ? (Math.floor(c.n / c.place) % 10) * c.place : null;
+          break;
+        case "sum": {
+          const parts = Array.isArray(c.parts) && c.parts.every((x) => typeof x === "number") ? c.parts : null;
+          expected = parts && parts.length ? parts.reduce((s, x) => s + x, 0) : null;
+          break;
+        }
+        default:
+          return fail("countMath", `unknown counting claim kind "${c.kind}"`);
+      }
+      if (expected == null) return fail("countMath", `counting claim "${c.kind}" is missing its givens`);
+      return expected === q.answer
+        ? null
+        : fail("countMath", `counting claim "${c.kind}" gives ${expected} but answer is ${q.answer}`);
+    },
+  },
 
   {
     id: "answerGivenAway",
@@ -204,8 +363,10 @@ export const CHECKS = [
       // A visual payload (emoji set, discs, sequence…) means the child counts
       // the PICTURE — prose stating the count is then the caption, not the
       // giveaway. Text-only items get no such excuse.
-      const visualKeys = Object.keys(d).filter((k) => k !== "promptText" && k !== "promptOptions");
-      if (visualKeys.length) return null;
+      // Only keys that actually put pixels on screen count — display.time /
+      // display.truth / display.compare are structured data nothing renders,
+      // and dead data must not exempt an item (the clock-incident loophole).
+      if (rendersAnything(item.question)) return null;
       const nums = [...new Set((text.match(/\d+/g) || []).map(Number))];
       if (nums.length === 1 && nums[0] === answer) {
         return fail(
@@ -260,6 +421,50 @@ export const CHECKS = [
   },
 
   {
+    id: "missingRequiredFigure",
+    run: (item) => {
+      const v = contractVerdict(item.modeId, item.question, item);
+      if (!v.covered || v.ok) return null;
+      if (v.reason === "undeclared") {
+        return fail(
+          "undeclaredFigureClass",
+          `"${v.cls}" has no line in figureContracts.js — declare whether it needs a figure or is legitimately verbal`
+        );
+      }
+      return fail(
+        "missingRequiredFigure",
+        `${v.cls} items must show ${v.satisfiedBy.join(" or ")} — text describing the visual is not the visual`
+      );
+    },
+  },
+
+  {
+    id: "describedClockHands",
+    run: (item) => {
+      const choices = (item.question?.choices || []).filter((c) => typeof c === "string").join(". ");
+      const text = `${item.question?.display?.promptText || ""} ${choices}`;
+      const display = item.question?.display || {};
+      // A clock item must SHOW the face. Stating where the hands point in
+      // words turns clock-reading into reading comprehension (and a judged
+      // mismatch gives itself away: "hour hand on six ... as seven o'clock").
+      // Items where the hands are the SUBJECT ("which hand tells the hour?")
+      // don't state positions and stay exempt.
+      const statesHandPosition =
+        /\b(hour|minute|long|short) hand\b[^.?!]{0,40}\b(points? (at|to)|is (on|at|near)|on|at|near|just past|halfway past)\b[^.?!]{0,20}\b(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|\d{1,2})\b/i.test(
+          text
+        );
+      const showsFace = display.figure === "clockFace" || display.type === "clock";
+      if (statesHandPosition && !showsFace) {
+        return fail(
+          "describedClockHands",
+          "the prompt states clock-hand positions in words with no clock face shown — attach the clockFace figure and ask for the time instead"
+        );
+      }
+      return null;
+    },
+  },
+
+  {
     id: "readability",
     run: (item) => {
       const text = item.question?.display?.promptText || "";
@@ -286,6 +491,45 @@ export const CHECKS = [
         return warn("bandAppropriate", `Grade 1-2 band item uses ${max}`);
       }
       return null;
+    },
+  },
+
+  {
+    // Kid-facing prompts must not use the teacher's vocabulary. "Subitize the
+    // count" / "what is the cardinality" reached kindergartners — 216 shipped
+    // items (kid-sim QA 2026-08-23). The blocklist is the pedagogy register;
+    // plain words ("how many", "split 7 into two parts") say the same thing.
+    id: "teacherJargon",
+    run: (item) => {
+      const text = item.question?.display?.promptText || "";
+      const hit = text.match(TEACHER_JARGON);
+      return hit ? fail("teacherJargon", `"${hit[0]}" is teacher vocabulary — say it in kid words`) : null;
+    },
+  },
+
+  {
+    // A counting question must show the objects. "A small set of 4 dots.
+    // Subitize the count." with no figure hands the answer to the kid in the
+    // prompt — 66 shipped counting items did this. Any visual payload key
+    // (emoji, counting, tenFrame, …) exempts the item; an emoji run inside
+    // the prompt text is a picture too.
+    id: "figurelessQuantity",
+    run: (item) => {
+      const d = item.question?.display || {};
+      const text = d.promptText || "";
+      const answer = item.question?.answer;
+      if (typeof answer !== "number" || !text) return null;
+      // Only keys that actually render count (phantom-data loophole closed —
+      // display.time/.truth/.data exempted 400+ described-not-shown items).
+      if (rendersAnything(item.question)) return null;
+      if (EMOJI_RUN.test(text)) return null;
+      if (/[?_]\s*[+\-×x÷=]|[+\-×x÷=]\s*[?_]/.test(text)) return null; // equations are not pictures
+      const m = text.match(QUANTITY_OF_OBJECTS);
+      if (!m) return null;
+      return fail(
+        "figurelessQuantity",
+        `"${m[0]}" describes a picture the kid never sees — give the item a figure or reword it`
+      );
     },
   },
 

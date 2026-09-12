@@ -221,7 +221,7 @@ export function consentRequestEmailHtml(args: {
     `<h1 style="margin:0 0 10px;font-family:${DISPLAY_FONT};font-weight:600;font-size:24px;line-height:1.3;color:${INK};">One tap, and ${kid} can start practising</h1>` +
     `<p style="${P_STYLE}">You started creating a profile for ${kid} on larkit. Because larkit is made for kids, U.S. law (COPPA) asks us to get your consent as the parent before anything about ${kid} is saved.</p>` +
     ctaButton("Review & give consent", args.confirmUrl) +
-    `<p style="margin:6px 0 24px;font-size:12px;line-height:1.6;color:${MUTED};text-align:center;">The button opens a page on larkit.io where one tap confirms.</p>` +
+    `<div style="height:24px;"></div>` +
     `<hr style="border:none;border-top:1px solid ${HAIRLINE};margin:0 0 22px;">` +
     `<p style="margin:0 0 14px;font-size:12px;letter-spacing:0.06em;font-weight:700;color:${TEAL};">THE FULL NOTICE, FOR YOUR RECORDS</p>` +
     mdToEmailHtml(stripDraftingNotes(args.noticeMd)) +

@@ -57,14 +57,16 @@ function AuthButton({ compact = false }) {
             Billing
           </button>
         )}
-        <button
-          className="p-2 rounded-xl cursor-pointer transition-colors hover:bg-ink/5"
-          onClick={signOut}
-          aria-label="Sign out"
-          title="Sign out"
-        >
-          <Feather name="close" size={16} className="text-ink" />
-        </button>
+        {/* A word, not a glyph (§13) — a bare ✕ reads as "close", and testing
+            proved nobody finds it. Mobile signs out from /account instead. */}
+        {!compact && (
+          <button
+            className="px-2 py-2 rounded-xl text-sm font-bold cursor-pointer transition-colors text-ink hover:bg-ink/5 hover:text-teal"
+            onClick={signOut}
+          >
+            Sign out
+          </button>
+        )}
       </div>
     );
   }

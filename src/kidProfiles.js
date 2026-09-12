@@ -93,6 +93,23 @@ export async function requestParentalConsent({ firstName, age, grade }) {
 }
 
 /**
+ * Update a kid's profile fields. Grade changes every September, so this is
+ * routine maintenance, not new collection — the fields are the same three
+ * the consent already covers. RLS scopes the write to the parent's own rows.
+ */
+export async function updateKid(kidId, { firstName, age, grade }) {
+  if (!supabase || !kidId) throw new Error("Sign in first");
+  const { data, error } = await supabase
+    .from("kid_profiles")
+    .update({ first_name: firstName.trim(), age, grade })
+    .eq("id", kidId)
+    .select("id, first_name, age, grade, created_at")
+    .single();
+  if (error) throw new Error(error.message);
+  return data;
+}
+
+/**
  * Add a kid. Without parental consent on file this does NOT write — it
  * kicks off the consent flow and returns `{ pendingConsent: true }`; the
  * profile appears (via the one-transaction grant) when the parent confirms.

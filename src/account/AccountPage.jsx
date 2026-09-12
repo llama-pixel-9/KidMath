@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../useAuth";
 import { supabase } from "../supabaseClient";
-import { fetchKids, activeKidId, setActiveKid } from "../kidProfiles";
+import { fetchKids, updateKid, activeKidId, setActiveKid, KID_AGES, KID_GRADES } from "../kidProfiles";
 import { paywallEnabled } from "../premium";
 
 /**
@@ -13,6 +13,97 @@ import { paywallEnabled } from "../premium";
  * delete-account Edge Function purges rows and the auth user; nothing is
  * merely deactivated.
  */
+
+// Same segment vocabulary as the onboarding wizard, sized down for the card.
+const SEGMENT = "h-10 rounded-[12px] border-[1.5px] font-bold text-sm cursor-pointer transition-colors";
+const SEGMENT_IDLE = "bg-white border-ink/10 text-ink hover:border-ink/25";
+const SEGMENT_ACTIVE = "bg-seafoam border-teal text-ink";
+
+/** Inline editor for one kid card — grade changes every September. */
+function KidEditForm({ kid, onSaved, onCancel }) {
+  const [firstName, setFirstName] = useState(kid.first_name);
+  const [age, setAge] = useState(kid.age);
+  const [grade, setGrade] = useState(kid.grade);
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState("");
+  const complete = firstName.trim().length > 0 && age && grade;
+
+  const save = async () => {
+    setError("");
+    setBusy(true);
+    try {
+      await updateKid(kid.id, { firstName, age, grade });
+      await onSaved();
+    } catch (e) {
+      setError(e.message || "Could not save the changes — try again.");
+      setBusy(false);
+    }
+  };
+
+  return (
+    <div className="w-full">
+      <label className="block text-sm font-bold text-ink">
+        First name
+        <input
+          type="text"
+          value={firstName}
+          maxLength={40}
+          onChange={(e) => setFirstName(e.target.value)}
+          className="mt-1 w-full h-11 rounded-[12px] border-[1.5px] border-ink/15 focus:border-teal focus:outline-none bg-white px-3 text-base font-semibold text-ink"
+        />
+      </label>
+
+      <p className="mt-4 mb-1.5 text-sm font-bold text-ink">Age</p>
+      <div className="grid grid-cols-4 sm:grid-cols-8 gap-1.5">
+        {KID_AGES.map((a) => (
+          <button
+            key={a}
+            type="button"
+            className={`${SEGMENT} ${a === age ? SEGMENT_ACTIVE : SEGMENT_IDLE}`}
+            onClick={() => setAge(a)}
+          >
+            {a}
+          </button>
+        ))}
+      </div>
+
+      <p className="mt-4 mb-1.5 text-sm font-bold text-ink">Grade</p>
+      <div className="grid grid-cols-4 sm:grid-cols-7 gap-1.5">
+        {KID_GRADES.map((g) => (
+          <button
+            key={g}
+            type="button"
+            className={`${SEGMENT} ${g === grade ? SEGMENT_ACTIVE : SEGMENT_IDLE}`}
+            onClick={() => setGrade(g)}
+          >
+            {g}
+          </button>
+        ))}
+      </div>
+
+      {error && <p className="mt-3 text-sm font-bold text-ember">{error}</p>}
+
+      <div className="mt-4 flex items-center gap-3">
+        <button
+          type="button"
+          disabled={busy || !complete}
+          onClick={save}
+          className="px-5 h-11 rounded-xl bg-teal text-cream font-bold text-sm cursor-pointer disabled:opacity-50"
+        >
+          {busy ? "Saving…" : "Save"}
+        </button>
+        <button
+          type="button"
+          disabled={busy}
+          onClick={onCancel}
+          className="px-4 h-11 rounded-xl text-sm font-bold text-ink/60 cursor-pointer hover:bg-ink/5"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  );
+}
 
 /** Buttons that destroy data ask twice, inline — no browser confirm(). */
 function DangerButton({ label, confirmLabel, onConfirm, busy }) {
@@ -52,6 +143,7 @@ export default function AccountPage() {
   const [progress, setProgress] = useState([]);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
+  const [editingKidId, setEditingKidId] = useState(null);
 
   useEffect(() => {
     if (!loading && !user) navigate("/signup", { replace: true });
@@ -119,7 +211,20 @@ export default function AccountPage() {
   return (
     <main className="flex-1 max-w-3xl mx-auto w-full px-4 py-10">
       <h1 className="font-display font-semibold text-4xl text-ink m-0">Your account</h1>
-      <p className="mt-2 text-base font-semibold text-ink/60">{user.email}</p>
+      <div className="mt-2 flex items-center gap-4 flex-wrap">
+        <p className="m-0 text-base font-semibold text-ink/60">{user.email}</p>
+        {/* The labeled way out — the navbar button is desktop-only. */}
+        <button
+          type="button"
+          onClick={async () => {
+            await signOut();
+            navigate("/", { replace: true });
+          }}
+          className="px-4 h-10 rounded-xl border-2 border-ink/15 text-sm font-bold text-ink cursor-pointer transition-colors hover:border-teal hover:text-teal"
+        >
+          Sign out
+        </button>
+      </div>
 
       {/* §312.6(a)(1): show the parent everything we hold about each child. */}
       <section className="mt-10">
@@ -137,19 +242,42 @@ export default function AccountPage() {
               key={kid.id}
               className="bg-white rounded-[18px] border-[1.5px] border-ink/10 p-5 flex items-center justify-between gap-4 flex-wrap"
             >
-              <div>
-                <p className="m-0 font-bold text-lg text-ink">{kid.first_name}</p>
-                <p className="m-0 mt-1 text-sm font-semibold text-ink/60">
-                  Age {kid.age} · Grade {kid.grade} · added{" "}
-                  {new Date(kid.created_at).toLocaleDateString()}
-                </p>
-              </div>
-              <DangerButton
-                label="Delete this profile"
-                confirmLabel={`Really delete ${kid.first_name}'s profile?`}
-                busy={busy}
-                onConfirm={() => deleteKid(kid)}
-              />
+              {editingKidId === kid.id ? (
+                <KidEditForm
+                  kid={kid}
+                  onSaved={async () => {
+                    await refresh();
+                    setEditingKidId(null);
+                  }}
+                  onCancel={() => setEditingKidId(null)}
+                />
+              ) : (
+                <>
+                  <div>
+                    <p className="m-0 font-bold text-lg text-ink">{kid.first_name}</p>
+                    <p className="m-0 mt-1 text-sm font-semibold text-ink/60">
+                      Age {kid.age} · Grade {kid.grade} · added{" "}
+                      {new Date(kid.created_at).toLocaleDateString()}
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <button
+                      type="button"
+                      disabled={busy}
+                      onClick={() => setEditingKidId(kid.id)}
+                      className="px-4 h-11 rounded-xl border-2 border-ink/15 text-sm font-bold text-ink cursor-pointer transition-colors hover:border-teal hover:text-teal disabled:opacity-50"
+                    >
+                      Edit
+                    </button>
+                    <DangerButton
+                      label="Delete this profile"
+                      confirmLabel={`Really delete ${kid.first_name}'s profile?`}
+                      busy={busy}
+                      onConfirm={() => deleteKid(kid)}
+                    />
+                  </div>
+                </>
+              )}
             </div>
           ))}
         </div>

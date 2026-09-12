@@ -19,6 +19,12 @@ const BODY_FONT = "'Segoe UI', system-ui, -apple-system, sans-serif";
 const DISPLAY_FONT = `'Fredoka', 'Trebuchet MS', ${BODY_FONT}`;
 const MUTED = "rgba(20,35,31,0.62)";
 const HAIRLINE = "rgba(20,35,31,0.12)";
+// Served from public/ by the web deploy; www is the canonical host (the apex
+// 308s, and email clients don't reliably follow image redirects).
+const LOGO_URL = "https://www.larkit.io/icon-192.png";
+// Keep in sync with src/legal/entity.js — edge functions bundle only files
+// under supabase/functions/, so the constant can't be imported from there.
+const ENTITY_FOOTER = "Larkit Labs LLC \u00b7 502 W 7th St, Ste 100, Erie, PA 16502";
 
 /**
  * Remove blockquote blocks that are internal drafting notes ("remove before
@@ -173,12 +179,17 @@ function layout(args: { preheader: string; contentHtml: string; footerHtml: stri
     `<div style="display:none;max-height:0;overflow:hidden;">${escapeHtml(args.preheader)}</div>` +
     `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${CREAM};"><tr><td align="center" style="padding:32px 16px;">` +
     `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;">` +
-    `<tr><td style="padding:0 8px 18px;font-family:${DISPLAY_FONT};font-weight:600;font-size:30px;color:${TEAL};">larkit</td></tr>` +
+    `<tr><td style="padding:0 8px 16px;">` +
+    `<table role="presentation" cellpadding="0" cellspacing="0"><tr>` +
+    `<td style="vertical-align:middle;"><img src="${LOGO_URL}" width="44" height="44" alt="" style="display:block;border-radius:11px;border:1px solid ${HAIRLINE};"></td>` +
+    `<td style="vertical-align:middle;padding-left:12px;font-family:${DISPLAY_FONT};font-weight:600;font-size:30px;line-height:1;color:${TEAL};">larkit</td>` +
+    `</tr></table></td></tr>` +
     `<tr><td style="background:#ffffff;border:1.5px solid ${HAIRLINE};border-radius:18px;padding:32px 28px;font-family:${BODY_FONT};">` +
     args.contentHtml +
     `</td></tr>` +
-    `<tr><td style="padding:18px 8px 0;font-family:${BODY_FONT};font-size:12px;line-height:1.6;color:${MUTED};">` +
+    `<tr><td style="padding:20px 8px 0;font-family:${BODY_FONT};font-size:12px;line-height:1.7;color:${MUTED};">` +
     args.footerHtml +
+    `<br>${ENTITY_FOOTER} \u00b7 <a href="https://www.larkit.io" style="color:${TEAL};">larkit.io</a>` +
     `</td></tr>` +
     `</table></td></tr></table></body></html>`
   );

@@ -57,9 +57,13 @@ Prod carries all the code while staying closed to new users:
   without the drafting note, with the real address + phone; the shipped
   bundle carries no 555 number; no fonts.googleapis request in the HTML;
   /.well-known/security.txt serves (200 via www).
-- [ ] After the env flip: /signup shows the real sign-in buttons (not the
-  "almost ready" page); add a kid → consent email arrives with the phone in
-  the footer.
+- [x] Env flip done 2026-09-13 — **signups are open on prod.** /signup
+  shows the sign-in buttons.
+- [ ] First real add-a-kid on prod → consent email arrives with the phone
+  in the footer (not yet observed post-flip).
+- [x] "Continue with Apple" hidden behind `VITE_APPLE_SIGNIN_ENABLED`
+  (default hidden) until Apple enrollment completes — Google is the only
+  web sign-in for now. Set the var to `true` in Vercel + redeploy to show it.
 
 ## 2 · Blocks charging real money (before `VITE_PAYWALL_ENABLED=true`)
 
@@ -91,9 +95,20 @@ expired. Remaining items are live-mode setup and emails.
   immediate, no survey (Stripe portal config `kidmath_cancel_v1`). Repeat
   once in live mode: the portal configuration is per-mode and is created on
   first call.
-- [ ] Confirmation + reminder emails (trial day 11, 35 days pre-annual-renewal,
-  annual, pre-price-change). Sender is now live (§3) — confirm these are
-  actually built and wired to Resend before flipping the paywall.
+- [ ] Stripe-sent emails (Settings → Billing → Subscriptions and emails):
+  turn ON trial-ending reminder (7 days), upcoming renewals (set the
+  upcoming-renewal event to **30 days** in Prevent failed payments — CA
+  window is 15–45 days for annual), expiring cards, card payment failures;
+  plus the "trial over" statement descriptor; plus payment receipts under
+  Settings → Customer emails. Apple sends its own for App Store subs — no
+  iOS-side work.
+- [ ] **Build: subscription-started confirmation email** (Resend, from the
+  `checkout.session.completed` webhook): plan, trial end date, first-charge
+  amount, renewal terms, billing-portal link. Stripe sends nothing for a $0
+  trial start, and the auto-renewal statutes require an acknowledgment.
+  Also the pre-price-change notice (10–14 days) when the founding price is
+  retired for *new* subscribers only — existing ones keep $39.99, so no
+  notice is owed to them.
 - [ ] Stripe Tax before live mode: Pennsylvania taxes digital products, so
   PA parents owe sales tax from the first sale. Enable under Settings → Tax
   and set `automatic_tax: { enabled: true }` on the Checkout session.
@@ -143,7 +158,9 @@ Enrollment submitted; nothing below can start until it completes.
   (`TODO(B2)`); unskip the test in `accountDeletion.spec.js`. Needs the
   Apple Developer key for the client_secret.
 - [ ] Team signing for Sign in with Apple on device; `kidmath://auth-callback`
-  redirect registered in the Supabase Google provider.
+  redirect registered in the Supabase Google provider. Then configure the
+  Supabase Apple provider (Services ID, key, team id) and set
+  `VITE_APPLE_SIGNIN_ENABLED=true` in Vercel to show the web button again.
 - [ ] App Store Connect: app record, both subscriptions
   (`…premium.monthly` $8.99, `…premium.annual` **$39.99** — the launch price
   itself, no intro offer; Apple requires parity with web), TestFlight.
@@ -162,10 +179,10 @@ Enrollment submitted; nothing below can start until it completes.
 
 ## 5 · Verify the automated controls actually run
 
-- [ ] `cron.job_run_details`: `purge-session-diagnostics` and
-  `expire-consent-requests` have each run at least once. As of 2026-09-13
-  four `consent_requests` rows from 2026-09-12 are still `pending` — a good
-  canary. Not checkable from the CLI without a DB URL; use the dashboard.
+- [x] `cron.job_run_details`: both `purge-session-diagnostics` (04:17 UTC)
+  and `expire-consent-requests` (04:43 UTC) run daily, every run
+  `succeeded` (checked 2026-09-13 via the SQL editor). Recheck monthly per
+  the security program §6.
 - [x] `consent_events` rows appear on real signup with the literal
   disclosure text and real dates (verified 2026-09-13; `account` and
   `coppa_vpc` kinds). Subscribe-time rows unverified until §2.

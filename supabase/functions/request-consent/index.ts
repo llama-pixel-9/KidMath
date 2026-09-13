@@ -54,7 +54,7 @@ Deno.serve(async (request) => {
       Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "",
     );
 
-    const { requestId } = await beginConsentRequest(
+    const { requestId, sentAt } = await beginConsentRequest(
       {
         db: admin,
         transport: getTransport(),
@@ -72,7 +72,7 @@ Deno.serve(async (request) => {
       },
     );
 
-    return json({ requested: true, requestId });
+    return json({ requested: true, requestId, sentAt });
   } catch (error) {
     return json({ error: `${error}` }, 500);
   }

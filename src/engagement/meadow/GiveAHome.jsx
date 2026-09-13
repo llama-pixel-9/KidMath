@@ -94,7 +94,7 @@ function PurchaseScreen({ speciesId, state, onGiveHome, onBack }) {
     <div className="max-w-md mx-auto px-6 py-6 text-center">
       <div className="h-[180px] rounded-2xl bg-seafoam/60 flex items-center justify-center">
         <svg width="200" height="150" viewBox="-100 -135 200 150">
-          <BirdSprite speciesId={speciesId} x={0} y={0} depth={1.5} label={species.name} />
+          <BirdSprite speciesId={speciesId} x={0} y={0} fit={{ w: 180, h: 128 }} label={species.name} />
         </svg>
       </div>
       <h2 className="mt-4 text-3xl font-display font-semibold text-ink">{species.name}</h2>

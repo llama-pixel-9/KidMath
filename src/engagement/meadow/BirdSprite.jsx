@@ -34,6 +34,7 @@ const ASLEEP_TINT = "brightness(0.72) saturate(0.8)";
 /**
  * Renders with the feet at (x, y), scaled by the perch's depth band.
  * `variant`: optional art variant (e.g. "cling" while on a trunkHollow perch).
+ * `fit`: optional {w, h} that overrides the SPRITE_SIZES × depth footprint.
  */
 export default function BirdSprite({
   speciesId,
@@ -45,8 +46,11 @@ export default function BirdSprite({
   onClick,
   asleep = false,
   variant = null,
+  fit = null,
 }) {
-  const { w, h } = spriteSize(speciesId, depth);
+  // `fit`: explicit {w, h} footprint for portraits (Field Guide, Give a home)
+  // where the bird should fill its frame instead of using the scene footprint.
+  const { w, h } = fit ?? spriteSize(speciesId, depth);
   const art = birdArt(speciesId, variant);
 
   if (art) {

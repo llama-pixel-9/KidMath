@@ -51,6 +51,7 @@ import { visitorForDate, visitorQuest, VISITOR_SPOT } from "../engine/visitor";
 import { seasonForDate } from "../../engagement/seasons.js";
 import { MIGRATION_STOPS, migrationSpot, migrationQuest } from "../engine/migration";
 import { music } from "../worldMusic";
+import { openSessionRecord, appendAttempt, closeSessionRecord, saveSessionRecord } from "../../analytics/sessionLog";
 import { QuestRunner } from "../engine/questRunner";
 import { sparkle, DEPTH } from "../engine/juice";
 
@@ -127,6 +128,17 @@ export default class WorldScene extends Phaser.Scene {
     this.cameraRig = setupCamera(this, this.avatar.sprite);
     this.cameras.main.centerOn(start.x, start.y - 120);
     this.cameraRig.follow();
+
+    // Every island question is real practice: each quest becomes a session
+    // in the practice log under its strand's mode, so the parent report
+    // shows the island's questions alongside the minigames.
+    this.log = null;
+    this.logPickShownAt = 0;
+    this.game.events.on("dialog", this.onLogDialog = (d) => {
+      if (d?.hint === "pick") this.logPickShownAt = this.time.now;
+    });
+    this.game.events.on("pick-right", this.onLogRight = (value) => this.logPick(value, true));
+    this.game.events.on("pick-wrong", this.onLogWrong = (value) => this.logPick(value, false));
 
     this.runner = new QuestRunner(this, {
       fixturesFor: (zoneId) => this.fixtures[zoneId],
@@ -250,7 +262,9 @@ export default class WorldScene extends Phaser.Scene {
           onArrive: () => {
             npc.face(this.avatar.x);
             this.avatar.face(-1);
-            this.runner.start({ id: "meadow", quests: [], objects: {} }, visitorQuest(v), npc);
+            const vq = visitorQuest(v);
+            this.logStart({ id: "pond" }, vq);
+            this.runner.start({ id: "meadow", quests: [], objects: {} }, vq, npc);
           },
         });
       },
@@ -373,12 +387,59 @@ export default class WorldScene extends Phaser.Scene {
     this.migration?.group?.destroy();
     this.game.events.off("dialog", this.onDialogDuck);
     this.game.events.off("dialog-close", this.onDialogUnduck);
+    this.game.events.off("dialog", this.onLogDialog);
+    this.game.events.off("pick-right", this.onLogRight);
+    this.game.events.off("pick-wrong", this.onLogWrong);
     music.stop();
     this.reactive?.destroy();
     destroyAmbient(this.ambient);
     this.cameraRig?.destroy();
     this.avatar?.destroy();
     this.follower?.destroy();
+  }
+
+  // ------------------------------------------------------- practice log
+
+  /** The strand's first mode stands in for the island in the practice log. */
+  logModeFor(zoneId) {
+    const region = REGIONS.find((r) => r.id === zoneId);
+    return region?.modeIds?.[0] ?? "counting";
+  }
+
+  logStart(zone, quest) {
+    if (!quest.steps.some((st) => st.type === "pickNumber")) return;
+    try {
+      this.log = { record: openSessionRecord({ mode: this.logModeFor(zone.id), level: 1 }), quest, attempts: 0 };
+    } catch {
+      this.log = null;
+    }
+  }
+
+  logPick(value, correct) {
+    if (!this.log) return;
+    const step = this.runner.step();
+    if (!step || step.type !== "pickNumber") return;
+    const question = { prompt: step.line, answer: step.answer, metadata: { subskill: this.log.quest.id, itemFamily: "application" } };
+    const wasRetry = this.log.lastStep === step;
+    this.log.lastStep = step;
+    this.log.record = appendAttempt(this.log.record, {
+      question,
+      submitted: value,
+      correct,
+      wasRetry,
+      responseTimeMs: this.time.now - this.logPickShownAt,
+      level: 1,
+    });
+    this.logPickShownAt = this.time.now;
+  }
+
+  logEnd(quest) {
+    if (!this.log || this.log.quest !== quest) return;
+    const stars = quest.steps.at(-1)?.stars ?? 0;
+    const record = closeSessionRecord(this.log.record, null, { starsEarned: stars, levelEnd: 1 });
+    this.log = null;
+    if (!record.attempts.length) return;
+    saveSessionRecord(record).catch(() => {});
   }
 
   // ------------------------------------------------------------- quests
@@ -398,6 +459,7 @@ export default class WorldScene extends Phaser.Scene {
             this.world = applyTutorialDone(this.world);
             this.save();
           }
+          this.logStart(zone, quest);
           this.runner.start(zone, quest, npc);
         } else {
           this.sayHello(zone, npc);
@@ -427,6 +489,7 @@ export default class WorldScene extends Phaser.Scene {
     this.avatar.goTo(spot.x, spot.y, {
       onArrive: () => {
         this.avatar.face(1);
+        this.logStart(zone, quest);
         this.runner.start(zone, quest, null);
       },
     });
@@ -440,6 +503,7 @@ export default class WorldScene extends Phaser.Scene {
 
   onQuestEnd(quest, npc) {
     if (!quest) return;
+    this.logEnd(quest);
     if (this.pendingHatch) this.time.delayedCall(400, () => this.playHatch());
     if (quest.id.startsWith("migration-")) {
       this.time.delayedCall(600, () => this.sendMigrantOff());
@@ -503,7 +567,9 @@ export default class WorldScene extends Phaser.Scene {
     this.time.delayedCall(1900, () => {
       this.avatar.face(1);
       npc.face(this.avatar.x);
-      this.runner.start({ id: "cliffs", quests: [], objects: {} }, migrationQuest(stop, m.index), npc);
+      const mq = migrationQuest(stop, m.index);
+      this.logStart({ id: ["meadow", "pond", "woods", "cliffs", "pond", "meadow"][m.index] ?? "meadow" }, mq);
+      this.runner.start({ id: "cliffs", quests: [], objects: {} }, mq, npc);
     });
   }
 

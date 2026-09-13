@@ -17,8 +17,8 @@ export const TRIAL_DAYS = 14;
 /**
  * The two plans we sell. Amounts are NOT literals in the client: they come
  * from Stripe via the `stripe-prices` Edge Function (see fetchPlanPricing in
- * premium.js), so the paywall, the disclosure, and the charge can never
- * disagree. A plan's `period` is what the disclosure says after "per".
+ * premium.js), which resolves the same lookup keys checkout sells, so the
+ * paywall, the disclosure, and the charge can never disagree. A plan's `period` is what the disclosure says after "per".
  */
 export const PLAN_IDS = ["annual", "monthly"];
 const INTERVAL_PERIOD = { year: "year", month: "month" };

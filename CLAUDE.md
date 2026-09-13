@@ -225,8 +225,9 @@ $8.99/mo · **$39.99/yr launch (founding) price** — locks for as long as the
 subscriber stays subscribed; the eventual full price is $54.99/yr · **all kids
 in the household included, one price — no per-child tiers, ever** · 14-day
 trial, card required. Web reads amounts from Stripe (`stripe-prices`) and iOS
-from StoreKit — **no price literal in `src/`**; a price change is a dashboard +
-`STRIPE_PRICE_*` secret change, not a deploy.
+from StoreKit — **no price literal in `src/`**. Functions find prices by Stripe
+lookup key (`larkit_monthly` / `larkit_annual`), so a price change is a
+dashboard-only act: new price with the same lookup key, archive the old one.
 Free tier is **both platforms** (decided 2026-08-02 with the §20 soft
 paywall): addition, subtraction, multiplication, division, counting.
 Paywalled: the other 17 modes, PDF worksheets, and cloud sync.

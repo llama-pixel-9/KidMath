@@ -3,26 +3,22 @@
 // The paywall and the auto-renewal disclosure must show the EXACT amount
 // Stripe will charge (CA B&P §17602 and siblings). Rather than keep a literal
 // in the client that can drift from the dashboard, the client asks here and
-// this function reads the configured prices straight from Stripe. Whatever
-// STRIPE_PRICE_MONTHLY / STRIPE_PRICE_ANNUAL point at is what gets displayed,
-// disclosed, and sold — one source of truth.
+// this function reads the prices straight from Stripe — the same resolution
+// stripe-checkout uses to sell them (lookup keys, see _shared/stripePrices.ts),
+// so what is displayed, disclosed, and charged is one thing.
 //
 // No auth (deploy with --no-verify-jwt): prices are public, and the paywall
 // renders before sign-in. Nothing here writes anything.
-// Secrets: STRIPE_SECRET_KEY, STRIPE_PRICE_MONTHLY, STRIPE_PRICE_ANNUAL.
+// Secrets: STRIPE_SECRET_KEY only.
 
 import Stripe from "npm:stripe@17";
+import { PLAN_LOOKUP_KEYS, resolvePlanPrice } from "../_shared/stripePrices.ts";
 
 const stripe = new Stripe(Deno.env.get("STRIPE_SECRET_KEY") ?? "");
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
-};
-
-const PLANS: Record<string, string> = {
-  monthly: "STRIPE_PRICE_MONTHLY",
-  annual: "STRIPE_PRICE_ANNUAL",
 };
 
 function describe(price: Stripe.Price) {
@@ -49,10 +45,8 @@ Deno.serve(async (request) => {
   }
   try {
     const out: Record<string, unknown> = {};
-    for (const [plan, envName] of Object.entries(PLANS)) {
-      const id = Deno.env.get(envName);
-      if (!id) return json({ error: `${envName} not configured` }, 500);
-      out[plan] = describe(await stripe.prices.retrieve(id));
+    for (const plan of Object.keys(PLAN_LOOKUP_KEYS)) {
+      out[plan] = describe(await resolvePlanPrice(stripe, plan));
     }
     return json(out, 200, { "Cache-Control": "public, max-age=300" });
   } catch (error) {

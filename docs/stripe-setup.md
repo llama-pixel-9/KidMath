@@ -13,18 +13,23 @@ one subscription unlocks both platforms.
   - **$54.99 / year**
 - Both prices get their 14-day trial from the Checkout session
   (`trial_period_days: 14` in the function), not from the price object.
+- **Give each price a lookup key** — `larkit_monthly` and `larkit_annual`
+  (in the price form under *More pricing options → Lookup key*). That key is
+  how the functions find the price to sell; there is no price id in any
+  secret and no price literal in `src/`.
 - **Stripe is the only source of the displayed price.** The web paywall,
-  the onboarding plan step and the auto-renewal disclosure all read the
-  amounts from the `stripe-prices` function, which returns whatever
-  `STRIPE_PRICE_MONTHLY` / `STRIPE_PRICE_ANNUAL` point at. Nothing in
-  `src/` carries a price literal; until prices load the purchase button is
+  the onboarding plan step and the auto-renewal disclosure read the amounts
+  from the `stripe-prices` function, which resolves the same lookup keys
+  `stripe-checkout` sells. Until prices load the purchase button is
   disabled. iOS does the same via StoreKit `displayPrice`.
-- Founding / launch pricing: create the launch annual price (e.g.
-  **$39.99/year**) and point `STRIPE_PRICE_ANNUAL` at it. To retire it,
-  create the full price and re-point the secret — existing subscribers keep
-  the price their subscription was created with, automatically. Promotion
-  codes are the wrong tool here: coupons apply per product, not per price,
-  so a founding coupon would also discount the monthly plan.
+- **Changing a price is dashboard-only.** Create the new price with the
+  same lookup key (Stripe asks to transfer the key off the old one), then
+  archive the old price. Existing subscribers keep the price their
+  subscription was created with. Launch: $39.99/yr; later $54.99/yr.
+  Promotion codes are the wrong tool for a founding price: coupons apply
+  per product, not per price, so one would also discount the monthly plan.
+- `STRIPE_PRICE_MONTHLY` / `STRIPE_PRICE_ANNUAL` still work as optional
+  overrides for a one-off test; do not set them in normal operation.
 
 ## 2. Deploy the Edge Functions
 
@@ -36,9 +41,7 @@ supabase functions deploy stripe-webhook --no-verify-jwt   # Stripe sends no JWT
 
 supabase secrets set \
   STRIPE_SECRET_KEY=sk_live_... \
-  STRIPE_WEBHOOK_SECRET=whsec_... \
-  STRIPE_PRICE_MONTHLY=price_... \
-  STRIPE_PRICE_ANNUAL=price_...
+  STRIPE_WEBHOOK_SECRET=whsec_...
 ```
 
 ## 3. Stripe webhook endpoint

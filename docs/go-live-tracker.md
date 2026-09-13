@@ -65,16 +65,18 @@ Prod carries all the code while staying closed to new users:
 Nothing here has started. As of 2026-09-13 `stripe-checkout` and
 `stripe-webhook` are **not deployed** and no `STRIPE_*` secrets exist.
 
-- [ ] Stripe dashboard (live mode): product with **$8.99/mo** and
-  **$54.99/yr** prices, plus the **$39/yr founding** price (promotion code
-  restricted to it, or point `STRIPE_PRICE_ANNUAL` at it temporarily).
+- [ ] Stripe dashboard (live mode): product **Larkit Premium** with
+  **$8.99/mo** (lookup key `larkit_monthly`) and **$39.99/yr** launch price
+  (lookup key `larkit_annual`). Retiring the launch price later = new
+  $54.99 price with the same lookup key, archive the old one.
 - [ ] Deploy `stripe-checkout`, `stripe-portal`, `stripe-prices
   --no-verify-jwt` and `stripe-webhook --no-verify-jwt` from a main-based
   tree. (PR #94: prices are read from Stripe at runtime — the paywall and
   disclosure carry no literals, so the launch price is purely a dashboard +
   secret decision.)
-- [ ] Secrets: `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`,
-  `STRIPE_PRICE_MONTHLY`, `STRIPE_PRICE_ANNUAL`.
+- [ ] Secrets: `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`. (No price ids:
+  prices are found by lookup key `larkit_monthly` / `larkit_annual` set on
+  the price in the dashboard.)
 - [ ] Webhook endpoint at `…/functions/v1/stripe-webhook` with
   `checkout.session.completed`, `customer.subscription.updated`,
   `customer.subscription.deleted`.

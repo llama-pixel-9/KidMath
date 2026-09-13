@@ -51,6 +51,11 @@ final class SessionViewModel: ObservableObject {
     @Published private(set) var isFledgingRun = false
 
     private let engine: EngineBridge
+    /// The practice log (parent report). One record per flight, opened with
+    /// the first question, closed at the end card — or saved as "partial" if
+    /// the kid leaves early with three or more answers in it.
+    private let practiceLog: PracticeLog?
+    private var record: PracticeLog.Record?
     private let progressStore: ProgressStore
     private let engagementStore: EngagementStore
 
@@ -76,8 +81,10 @@ final class SessionViewModel: ObservableObject {
         sessionSize: Int = 10,
         correctHold: Duration = .milliseconds(1200),
         wrongHold: Duration = .milliseconds(2000),
-        engagementStore: EngagementStore = EngagementStore()
+        engagementStore: EngagementStore = EngagementStore(),
+        practiceLog: PracticeLog? = nil
     ) {
+        self.practiceLog = practiceLog
         self.modeId = modeId
         self.engine = engine
         self.progressStore = progressStore
@@ -191,6 +198,9 @@ final class SessionViewModel: ObservableObject {
 
     private func loadNextQuestion() {
         guard let session else { return }
+        if record == nil {
+            record = practiceLog?.open(mode: modeId, level: level, kind: isFledgingRun ? "fledging" : "normal")
+        }
         do {
             let (question, isRetry) = try engine.nextQuestion(in: session)
             self.question = question
@@ -223,6 +233,10 @@ final class SessionViewModel: ObservableObject {
                 wasRetry: isRetry
             )
             phase = .feedback(correct: outcome.correct)
+            record = practiceLog?.append(
+                record, question: question, submitted: value, correct: outcome.correct,
+                wasRetry: isRetry, responseTimeMs: responseTimeMs, level: level
+            )
             if !outcome.correct { revealAnswer = question["answer"] }
             if outcome.levelChanged, outcome.newLevel > level {
                 showLevelUp = true
@@ -283,6 +297,8 @@ final class SessionViewModel: ObservableObject {
                 "recentBankItemIds": snapshot["recentBankItemIds"] ?? [String](),
             ])
             level = newLevel
+            // Practice log first and independent of the progress save.
+            await closeRecord(session: snapshot, starsEarned: 0, levelEnd: newLevel)
             if passed { SoundPlayer.shared.playLevelUp() }
             phase = .fledgingResult(passed: passed, newLevel: newLevel)
             return
@@ -321,6 +337,7 @@ final class SessionViewModel: ObservableObject {
             "recentBankItemIds": snapshot["recentBankItemIds"] ?? [String](),
         ]
         if let payout { data["starsEarned"] = payout.total }
+        await closeRecord(session: snapshot, starsEarned: starsEarned, levelEnd: ProgressStore.int(levelToSave, default: level))
         await progressStore.save(mode: modeId, data: data)
 
         if let payout {
@@ -334,5 +351,29 @@ final class SessionViewModel: ObservableObject {
             starsEarned: starsEarned,
             lifetimeStars: ProgressStore.int(progress["lifetimeStars"])
         )
+    }
+
+    // MARK: - Practice log
+
+    private func closeRecord(session: [String: Any], starsEarned: Int, levelEnd: Int) async {
+        guard let practiceLog, let open = record else { return }
+        let closed = practiceLog.close(open, session: session, starsEarned: starsEarned, levelEnd: levelEnd)
+        record = closed
+        await practiceLog.save(closed)
+    }
+
+    /// A flight the kid leaves early (back to the nest) used to vanish from
+    /// the parent report. With three or more answers it is saved as a
+    /// "partial" record — minutes and questions are real practice; level
+    /// bookkeeping stays untouched. Mirrors MathExplorer's pagehide handler.
+    func savePartialIfAbandoned() {
+        guard let practiceLog, var open = record,
+              open["endedAt"] == nil || open["endedAt"] is NSNull,
+              (open["attempts"] as? [Any])?.count ?? 0 >= 3 else { return }
+        record = nil
+        open["kind"] = "partial"
+        let lastLevel = ((open["attempts"] as? [[String: Any]])?.last?["level"] as? NSNumber)?.intValue ?? level
+        let closed = practiceLog.close(open, session: nil, starsEarned: 0, levelEnd: lastLevel)
+        Task { await practiceLog.save(closed) }
     }
 }

@@ -19,7 +19,7 @@ Status legend: ☐ open · ◐ partial · ☑ done (PR).
 | 1 | **COPPA consent flow.** `addKid` now gates on `hasParentalConsent` and returns `.pendingConsent` after invoking `request-consent` with the notice from the engine bundle (`KidMath.parentalConsentNotice`, one source with the web); `ConsentPendingView` = web ConsentPendingPanel (sent-at, 60s resend cooldown, "I've confirmed" check). `updateKid` + parent-language 4-kid message added. **End-to-end on a signed-in simulator still to be run by Sai.** | critical | M | ☑ PR ios/parity-3 |
 | 2 | **Item-bank reads don't paginate** (`SupabaseService.fetchModeItemRows`) — fractions (2,787), time (1,852), placeValueDiscs (1,406) clipped to 1,000 rows. CLAUDE.md hard rule. | critical | S | ☑ PR ios/parity-1 |
 | 3 | **Missing widgets/figures.** `tenFrame` answer widget, figures `pictograph`, `tallyChart`, `linePlot`, `areaFigure` (spec shared via `KidMath.areaFigureSpec`), `SequenceNumberLine`. `IOS_MIRRORED_FIGURES` updated. `FigureRenderTests` snapshot every shape (`TEST_RUNNER_KIDMATH_FIGURE_SNAPSHOT_DIR=… ` writes PNGs). Still open: `display.numberLine.marks` under story prompts (rare). | high | M | ☑ PR ios/parity-2 |
-| 4 | **No practice log.** `practice_sessions` never written from iOS → parent report blind to iPad sessions. `buildReport` is pure; expose via `nativeEntry` rather than reimplement. | high | M | ☐ |
+| 4 | **Practice log + parent report.** `PracticeLog.swift` drives the shared record (`KidMath.openSessionRecord/appendAttempt/closeSessionRecord`, pure module `src/analytics/sessionRecord.js` split out of sessionLog.js), mirrors locally under `kidmath-sessions[:kid]`, upserts `practice_sessions` (paginated reads), saves "partial" on early exit (≥3 answers). `ParentReportView` over the shared `buildReport` + `reportHeadline`, in Settings → For grown-ups. `PracticeLogTests`. | high | M | ☑ PR ios/parity-4 |
 | 5 | **Work space + hint panes** (web PR #93). `hintFor` not on the bridge; no Scratchpad (PencilKit), no HintPane, no SidePane for iPad. | high | L | ☐ |
 | 6 | **Worksheets on the old generator** (`generateWorksheetSet`). Web uses `generateFlightLog` + `flightLogScope`: per-level, three-part sheet, separate answer-key sheet, page-fit rules, `allowWordProblems` pref. Neither is on the bridge. | med | M | ☐ |
 | 7 | **Paywall literals** — `$54.99`, `49% OFF`, `$4.58/mo`, "22 modes, Grades 1-4" hardcoded; launch price is $39.99. | med | S | ☑ PR ios/parity-1 (derived from `Product.price`, fail-closed) |
@@ -45,13 +45,14 @@ account review + per-child delete + full delete, billing via App Store.
 ## Bridge additions needed (`src/engine/nativeEntry.js`)
 
 `generateFlightLog`, `flightLogScope` (#6) · `hintFor` (#5) · `scaffoldFor`
-(#9) · `buildReport` (#4). Done: `areaFigureSpec` (#3 — the file moved to
+(#9). Done: `buildReport`/`reportHeadline` + the session record (#4),
+`parentalConsentNotice` (#1), `areaFigureSpec` (#3 — the file moved to
 `src/figures/` because the bundle guard rejects anything under
 `components/`; pure modules that iOS needs live outside `components/`).
 Keep the bridge dependency-free (no progressStore/supabaseClient).
 
 ## Order of work
 
-parity-1 (☑ #2 #7 #12) → parity-2 (☑ #3) → parity-3 (☑ #1 #14) → #4 practice log →
+parity-1 (☑ #2 #7 #12) → parity-2 (☑ #3) → parity-3 (☑ #1 #14) → parity-4 (☑ #4) →
 #6 worksheets → #10 home/kids → #8 badges/stickers → #9 teach-don't-grade →
 #5 hints/work space → #11 meadow art → #13 #15 #16 #17.

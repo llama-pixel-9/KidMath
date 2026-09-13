@@ -21,6 +21,7 @@ struct SettingsView: View {
     var body: some View {
         NavigationStack {
             List {
+                grownUpsSection
                 subscriptionSection
                 soundSection
                 accountSection
@@ -35,6 +36,17 @@ struct SettingsView: View {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Done") { dismiss() }
                 }
+            }
+        }
+    }
+
+    /// The parent report — same practice log and model as larkit.io/report.
+    private var grownUpsSection: some View {
+        Section("For grown-ups") {
+            NavigationLink {
+                ParentReportView()
+            } label: {
+                Label("Progress report", systemImage: "chart.bar.doc.horizontal")
             }
         }
     }

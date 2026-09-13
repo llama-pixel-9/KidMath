@@ -10,6 +10,8 @@ final class AppModel: ObservableObject {
     let supabase: SupabaseService
     let progressStore: ProgressStore
     let bankService: BankService?
+    /// The practice log (parent report source); nil only when the engine failed.
+    let practiceLog: PracticeLog?
     let store: StoreService
     let kidProfiles: KidProfilesService
 
@@ -42,10 +44,12 @@ final class AppModel: ObservableObject {
             let engine = try EngineBridge()
             self.engine = engine
             self.bankService = BankService(supabase: supabase, engine: engine)
+            self.practiceLog = PracticeLog(engine: engine, supabase: supabase)
             self.engineError = nil
         } catch {
             self.engine = nil
             self.bankService = nil
+            self.practiceLog = nil
             self.engineError = "\(error)"
         }
     }

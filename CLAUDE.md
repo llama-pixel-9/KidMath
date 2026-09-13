@@ -45,6 +45,15 @@ cd ios && xcodegen generate && ./patch-scheme.sh   # .xcodeproj is generated + g
 `patch-scheme.sh` must run after **every** `xcodegen generate` — XcodeGen can't
 put the StoreKit config on the scheme's TEST action.
 
+**There is no iOS CI.** Any PR touching `ios/` (or the engine) must be compiled
+locally before merge — `main` shipped 20 days with two compile errors
+(2026-08-24 → 09-13) because nothing checked:
+```bash
+npm run build:engine && cd ios && xcodegen generate && ./patch-scheme.sh && \
+xcodebuild test -project KidMath.xcodeproj -scheme KidMath \
+  -destination 'platform=iOS Simulator,name=iPhone 17 Pro' -quiet
+```
+
 ---
 
 ## Architecture

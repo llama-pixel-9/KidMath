@@ -325,9 +325,10 @@ struct DiscMatView: View {
     let cols: [[String: Any]]
     let label: String?
 
+    // Same palette as PlaceValueDiscs.jsx: apricot / seafoam / teal-mid / sun-light.
     private static let placeColors: [Int: Color] = [
-        1000: FigureColors.accentSoft, 100: FigureColors.accent,
-        10: FigureColors.ink, 1: FigureColors.inkSoft,
+        1000: Theme.apricot, 100: Theme.seafoam,
+        10: Theme.tealMid, 1: Theme.sunLight,
     ]
 
     var body: some View {
@@ -353,7 +354,7 @@ struct DiscMatView: View {
                         }
                     }
                     .padding(6)
-                    .background(RoundedRectangle(cornerRadius: 10).fill(theme.cardBg.opacity(0.6)))
+                    .background(RoundedRectangle(cornerRadius: 10).fill(theme.cardBackground.opacity(0.6)))
                 }
             }
         }

@@ -91,7 +91,7 @@ Deno.serve(async (request) => {
     const { origin } = await request.json().catch(() => ({}));
     const base = typeof origin === "string" && origin.startsWith("http")
       ? origin
-      : "https://kidmath.vercel.app";
+      : "https://larkit.io";
 
     const customer = await findCustomerId(user.id, user.email ?? undefined);
     if (!customer) {

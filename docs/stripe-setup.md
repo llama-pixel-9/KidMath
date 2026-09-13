@@ -7,29 +7,47 @@ one subscription unlocks both platforms.
 
 ## 1. Stripe dashboard
 
-- Create a product **KidMath Premium** with two recurring prices (matching
+- Create a product **Larkit Premium** with two recurring prices (matching
   the App Store — Apple requires identical pricing):
   - **$8.99 / month**
   - **$54.99 / year**
 - Both prices get their 14-day trial from the Checkout session
   (`trial_period_days: 14` in the function), not from the price object.
-- Launch pricing: create an extra **$39/year** price and a promotion code
-  restricted to it for the founding-member cohort (the checkout session
-  already sets `allow_promotion_codes: true`), or temporarily point
-  `STRIPE_PRICE_ANNUAL` at the $39 price and swap back after month-3
-  retention — grandfathered subscribers keep their price automatically.
+- **Give each price a lookup key** — `larkit_monthly` and `larkit_annual`
+  (in the price form under *More pricing options → Lookup key*). That key is
+  how the functions find the price to sell; there is no price id in any
+  secret and no price literal in `src/`.
+- **Stripe is the only source of the displayed price.** The web paywall,
+  the onboarding plan step and the auto-renewal disclosure read the amounts
+  from the `stripe-prices` function, which resolves the same lookup keys
+  `stripe-checkout` sells. Until prices load the purchase button is
+  disabled. iOS does the same via StoreKit `displayPrice`.
+- **Changing a price is dashboard-only.** Create the new price with the
+  same lookup key (Stripe asks to transfer the key off the old one), then
+  archive the old price. Existing subscribers keep the price their
+  subscription was created with. Launch: $39.99/yr; later $54.99/yr.
+  Promotion codes are the wrong tool for a founding price: coupons apply
+  per product, not per price, so one would also discount the monthly plan.
+- `STRIPE_PRICE_MONTHLY` / `STRIPE_PRICE_ANNUAL` still work as optional
+  overrides for a one-off test; do not set them in normal operation.
+
+- **API key.** Test mode: the standard *Secret key* (`sk_test_`) from
+  Developers → API keys. Live mode: a *restricted* key with only Checkout
+  Sessions write, Billing Portal write, and Prices / Products / Customers /
+  Subscriptions read. The publishable key is never needed (hosted
+  Checkout — the browser doesn't call Stripe).
 
 ## 2. Deploy the Edge Functions
 
 ```sh
 supabase functions deploy stripe-checkout
+supabase functions deploy stripe-portal
+supabase functions deploy stripe-prices --no-verify-jwt    # public read of the two prices
 supabase functions deploy stripe-webhook --no-verify-jwt   # Stripe sends no JWT
 
 supabase secrets set \
   STRIPE_SECRET_KEY=sk_live_... \
-  STRIPE_WEBHOOK_SECRET=whsec_... \
-  STRIPE_PRICE_MONTHLY=price_... \
-  STRIPE_PRICE_ANNUAL=price_...
+  STRIPE_WEBHOOK_SECRET=whsec_...
 ```
 
 ## 3. Stripe webhook endpoint

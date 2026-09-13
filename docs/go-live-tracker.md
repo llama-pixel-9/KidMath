@@ -65,13 +65,18 @@ Prod carries all the code while staying closed to new users:
 Nothing here has started. As of 2026-09-13 `stripe-checkout` and
 `stripe-webhook` are **not deployed** and no `STRIPE_*` secrets exist.
 
-- [ ] Stripe dashboard (live mode): product with **$8.99/mo** and
-  **$54.99/yr** prices, plus the **$39/yr founding** price (promotion code
-  restricted to it, or point `STRIPE_PRICE_ANNUAL` at it temporarily).
-- [ ] Deploy `stripe-checkout` and `stripe-webhook --no-verify-jwt` from a
-  main-based tree.
-- [ ] Secrets: `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`,
-  `STRIPE_PRICE_MONTHLY`, `STRIPE_PRICE_ANNUAL`.
+- [ ] Stripe dashboard (live mode): product **Larkit Premium** with
+  **$8.99/mo** (lookup key `larkit_monthly`) and **$39.99/yr** launch price
+  (lookup key `larkit_annual`). Retiring the launch price later = new
+  $54.99 price with the same lookup key, archive the old one.
+- [ ] Deploy `stripe-checkout`, `stripe-portal`, `stripe-prices
+  --no-verify-jwt` and `stripe-webhook --no-verify-jwt` from a main-based
+  tree. (PR #94: prices are read from Stripe at runtime — the paywall and
+  disclosure carry no literals, so the launch price is purely a dashboard +
+  secret decision.)
+- [ ] Secrets: `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`. (No price ids:
+  prices are found by lookup key `larkit_monthly` / `larkit_annual` set on
+  the price in the dashboard.)
 - [ ] Webhook endpoint at `…/functions/v1/stripe-webhook` with
   `checkout.session.completed`, `customer.subscription.updated`,
   `customer.subscription.deleted`.
@@ -83,6 +88,17 @@ Nothing here has started. As of 2026-09-13 `stripe-checkout` and
 - [ ] Confirmation + reminder emails (trial day 11, 35 days pre-annual-renewal,
   annual, pre-price-change). Sender is now live (§3) — confirm these are
   actually built and wired to Resend before flipping the paywall.
+- [ ] Stripe Tax before live mode: Pennsylvania taxes digital products, so
+  PA parents owe sales tax from the first sale. Enable under Settings → Tax
+  and set `automatic_tax: { enabled: true }` on the Checkout session.
+- [ ] **Live mode uses a restricted key, not the standard secret key.**
+  Developers → API keys → Create restricted key, permissions: Checkout
+  Sessions *write*, Billing Portal *write* (configurations + sessions),
+  Prices *read*, Products *read*, Customers *read*, Subscriptions *read*.
+  Everything else *none*. Set it as `STRIPE_SECRET_KEY`. The standard
+  `sk_live_` key can do anything (refunds, payouts, deleting customers);
+  the functions only need the list above. Test mode keeps the standard
+  `sk_test_` key — no need to harden a sandbox.
 - [ ] Set `VITE_PAYWALL_ENABLED=true` in Vercel Production; redeploy.
 
 ## 3 · Consent flow (B7 — email sender) — DONE 2026-09-12/13
@@ -117,7 +133,11 @@ Enrollment submitted; nothing below can start until it completes.
 - [ ] Team signing for Sign in with Apple on device; `kidmath://auth-callback`
   redirect registered in the Supabase Google provider.
 - [ ] App Store Connect: app record, both subscriptions
-  (`…premium.monthly` / `…premium.annual`), $39/yr intro offer, TestFlight.
+  (`…premium.monthly` $8.99, `…premium.annual` **$39.99** — the launch price
+  itself, no intro offer; Apple requires parity with web), TestFlight.
+- [ ] iOS paywall fallbacks: `PaywallView.swift` still falls back to literal
+  "$54.99"/"$8.99" when StoreKit products haven't loaded. Match the web —
+  disable purchase until `displayPrice` is real, never show a literal.
 - [ ] Privacy nutrition labels in ASC, checked against PrivacyInfo.xcprivacy
   (declares child name/age/grade — labels must match).
 - [ ] Manual first-run pass in Xcode: purchase, sign-in, and every external

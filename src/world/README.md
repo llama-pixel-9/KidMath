@@ -98,7 +98,7 @@ engine/textures.js    procedural textures + brand colours
 
 WorldPage.jsx         React host: canvas + HUD + toasts + panels; talks to the scene over game.events
 QuestDialog.jsx       the card in the SKY (top of screen) so the ground band stays tappable
-HomePanel.jsx / PracticePanel.jsx / RegionRibbon.jsx / ui.jsx
+HomePanel.jsx / PracticePanel.jsx / MapPanel.jsx / ui.jsx
 WorldRoute.jsx        the one mount point (flag check + lazy chunk)
 ```
 

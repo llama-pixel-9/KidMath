@@ -102,13 +102,16 @@ expired. Remaining items are live-mode setup and emails.
   plus the "trial over" statement descriptor; plus payment receipts under
   Settings → Customer emails. Apple sends its own for App Store subs — no
   iOS-side work.
-- [ ] **Build: subscription-started confirmation email** (Resend, from the
-  `checkout.session.completed` webhook): plan, trial end date, first-charge
-  amount, renewal terms, billing-portal link. Stripe sends nothing for a $0
-  trial start, and the auto-renewal statutes require an acknowledgment.
-  Also the pre-price-change notice (10–14 days) when the founding price is
-  retired for *new* subscribers only — existing ones keep $39.99, so no
-  notice is owed to them.
+- [x] **Subscription-started confirmation email** built 2026-09-13
+  (`_shared/billingEmails.ts`, sent by `stripe-webhook` on
+  `checkout.session.completed` via the shared Resend transport; spec
+  `billingEmails.spec`). Plan, trial end date, first-charge amount + date,
+  renewal terms "until you cancel", one-step cancel link, entity footer.
+  Known gap: a duplicate Stripe delivery would send it twice (no dedupe
+  table) — acceptable.
+- [ ] Verify on the next test checkout that the email arrives (webhook v2).
+- [ ] Pre-price-change notice when the founding price is retired — owed to
+  nobody: existing subscribers keep $39.99. Nothing to build.
 - [ ] Stripe Tax before live mode: Pennsylvania taxes digital products, so
   PA parents owe sales tax from the first sale. Enable under Settings → Tax
   and set `automatic_tax: { enabled: true }` on the Checkout session.
@@ -127,6 +130,16 @@ expired. Remaining items are live-mode setup and emails.
 - [ ] Onboarding plan step says "or $8.99 monthly" but only starts the
   annual plan — either add a monthly toggle or drop the phrase.
 - [ ] Set `VITE_PAYWALL_ENABLED=true` in Vercel Production; redeploy.
+
+### Pilot / complimentary accounts
+
+`npm run comp -- parent@example.com [--until YYYY-MM-DD] [--revoke]` and
+`npm run comp -- --list` (service role; `set -a && source .env.local && set +a`
+first). Writes an `entitlements` row with `product_id = 'comp'`, no source, no
+expiry — both platforms treat that as a promotional grant. The parent must
+have signed in once. A real Stripe/App Store purchase later overwrites it.
+Until `VITE_PAYWALL_ENABLED=true` is set on prod, nobody needs a comp —
+every mode is free for everyone.
 
 ## 3 · Consent flow (B7 — email sender) — DONE 2026-09-12/13
 

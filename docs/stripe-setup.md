@@ -83,3 +83,20 @@ Enable Stripe's **customer portal** and link it from the web account menu
 so parents can cancel/update cards without emailing you. (Not built into
 the app yet — the paywall copy says "cancel anytime from your billing
 portal".)
+
+## 6. Emails
+
+Stripe sends (Settings → Billing → Subscriptions and emails): trial-ending
+reminder, upcoming renewals (set the upcoming-renewal event to 30 days),
+expiring cards, failed payments; receipts under Settings → Customer emails.
+
+We send (Resend, from `stripe-webhook` on `checkout.session.completed`): the
+subscription-started acknowledgment — `_shared/billingEmails.ts`. Stripe
+sends nothing for a $0 trial start and the auto-renewal statutes require a
+retainable copy of the terms right after signup. `PUBLIC_APP_URL` (default
+larkit.io) sets the links.
+
+## 7. Complimentary accounts
+
+`npm run comp -- <email> [--until YYYY-MM-DD] [--revoke]` / `--list` —
+see docs/go-live-tracker.md §2 "Pilot / complimentary accounts".

@@ -10,9 +10,18 @@
 // customer.subscription.deleted. Secrets:
 //   supabase secrets set STRIPE_WEBHOOK_SECRET=whsec_...
 // Deploy with --no-verify-jwt (Stripe doesn't send a Supabase JWT).
+//
+// checkout.session.completed also sends the subscription-started
+// acknowledgment email (billingEmails.ts) through the shared transport
+// (Resend when RESEND_API_KEY is set, stub otherwise).
 
 import Stripe from "npm:stripe@17";
 import { createClient } from "npm:@supabase/supabase-js@2";
+import { getTransport } from "../_shared/emailTransport.ts";
+import { buildSubscriptionStartedEmail } from "../_shared/billingEmails.ts";
+import { describePrice } from "../_shared/stripePrices.ts";
+
+const APP_BASE_URL = Deno.env.get("PUBLIC_APP_URL") ?? "https://larkit.io";
 
 const stripe = new Stripe(Deno.env.get("STRIPE_SECRET_KEY") ?? "");
 const cryptoProvider = Stripe.createSubtleCryptoProvider();
@@ -50,6 +59,28 @@ async function upsertFromSubscription(subscription: Stripe.Subscription, fallbac
   }, { onConflict: "user_id" });
 }
 
+async function sendSubscriptionStarted(session: Stripe.Checkout.Session, subscription: Stripe.Subscription) {
+  const to = session.customer_details?.email ?? session.customer_email;
+  if (!to) {
+    console.warn("subscription-started: no email on session", session.id);
+    return;
+  }
+  const price = subscription.items.data[0]?.price;
+  if (!price) throw new Error(`subscription ${subscription.id} has no price`);
+  const { amount, interval } = describePrice(price);
+  if (interval !== "month" && interval !== "year") {
+    throw new Error(`unexpected interval ${interval} on ${price.id}`);
+  }
+  await getTransport().send(buildSubscriptionStartedEmail({
+    to,
+    amount,
+    interval,
+    trialEndsAt: subscription.trial_end ? new Date(subscription.trial_end * 1000) : null,
+    billingUrl: `${APP_BASE_URL}/account/billing`,
+    appBaseUrl: APP_BASE_URL,
+  }));
+}
+
 Deno.serve(async (request) => {
   const signature = request.headers.get("stripe-signature");
   const secret = Deno.env.get("STRIPE_WEBHOOK_SECRET");
@@ -77,6 +108,10 @@ Deno.serve(async (request) => {
         if (session.subscription) {
           const subscription = await stripe.subscriptions.retrieve(String(session.subscription));
           await upsertFromSubscription(subscription, session.client_reference_id ?? undefined);
+          // The statutory acknowledgment. Sent AFTER the entitlement is
+          // written (upsert is idempotent) so a failed send makes Stripe
+          // retry the event rather than leave the subscriber unacknowledged.
+          await sendSubscriptionStarted(session, subscription);
         }
         break;
       }

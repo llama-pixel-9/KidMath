@@ -100,7 +100,7 @@ export function openSessionRecord({ mode, level, kind = "normal", now = Date.now
   };
 }
 
-export function appendAttempt(record, { question, submitted, correct, wasRetry, responseTimeMs, level, now = Date.now() }) {
+export function appendAttempt(record, { question, submitted, correct, wasRetry, responseTimeMs, level, hintUsed = false, now = Date.now() }) {
   if (!record) return record;
   const attempt = {
     t: now,
@@ -114,6 +114,8 @@ export function appendAttempt(record, { question, submitted, correct, wasRetry, 
     subskill: question?.metadata?.subskill || "unknown",
     family: question?.metadata?.itemFamily || "unknown",
     itemId: question?.metadata?.itemId || null,
+    // The kid opened the hint pane before answering (feature: hints).
+    hint: Boolean(hintUsed),
   };
   const attempts = [...record.attempts, attempt].slice(-MAX_ATTEMPTS_PER_SESSION);
   return { ...record, attempts, activeMs: record.activeMs + attempt.ms };

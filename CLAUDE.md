@@ -61,6 +61,8 @@ src/
   engine/nativeEntry.js  flat JSON-in/JSON-out `KidMath` global for JavaScriptCore
   admin/               /admin: Items, Review queue (card + batch view), coverage heatmap
   engagement/          star wallet, stickers, streaks, journey map, badges (localStorage v1)
+  hints/               per-question hint pane content: concepts.js (mode × subskill, kid
+                       language), steps.js (steps from the live item's numbers, no answer)
   components/          widgets (NumberLine, AnalogClock, CoinTray, FractionInput, TenFrame, …)
   premium.js           FREE_MODE_IDS + entitlement logic, mirrored by iOS rowIsActive
 ios/                   SwiftUI app; project.yml is the XcodeGen spec

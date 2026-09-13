@@ -260,3 +260,68 @@ h3 {
 /* Preview pane: keep the phone column even on a wide screen. */
 .play-area--stacked { flex-direction: column !important; gap: 1rem !important; }
 .play-area--stacked .play-pane { max-width: 24rem !important; flex: none !important; }
+
+/*
+ * Session side pane (work space / hint). Bottom sheet by default so the
+ * question card stays visible above it; on the wide-and-short screens that
+ * already lay question and answer side by side it becomes a right column and
+ * the session slides left to make room.
+ */
+.side-pane {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--sheet-h, 56vh);
+  max-height: 640px;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px 24px 0 0;
+  box-shadow: 0 -8px 32px rgba(20, 35, 31, 0.18);
+  overflow: hidden;
+}
+.side-pane-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.side-pane-body > * {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+.side-pane-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 29;
+  background: rgba(20, 35, 31, 0.08);
+}
+.session {
+  transition: padding-right 0.25s ease, padding-bottom 0.25s ease;
+}
+/* Sheet open on a narrow screen: pad the session's bottom by the sheet's
+   height so the centered question card rises above it and stays readable. */
+.session--pane-open {
+  padding-bottom: var(--sheet-h, 56vh);
+}
+
+@media (min-width: 1024px) and (max-height: 900px) {
+  .side-pane {
+    top: 0;
+    left: auto;
+    height: auto;
+    max-height: none;
+    width: var(--side-pane-w, min(44vw, 560px));
+    border-radius: 24px 0 0 24px;
+    box-shadow: -8px 0 32px rgba(20, 35, 31, 0.14);
+  }
+  .side-pane-backdrop {
+    display: none;
+  }
+  .session--pane-open {
+    padding-right: var(--side-pane-w, min(44vw, 560px));
+    padding-bottom: 0;
+  }
+}

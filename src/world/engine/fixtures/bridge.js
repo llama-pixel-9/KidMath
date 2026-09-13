@@ -172,7 +172,28 @@ export function buildBridge(scene, zone, region) {
       this.rings = [];
       drawOutlines(false);
     },
-    /** countTap: tap each empty spot once. */
+    /** Tap points for the empty slots (e2e and the companion's pointing). */
+    targets() {
+      return emptyIdx().map((i) => ({ x: slotPos[i].x, y: vertical ? slotPos[i].y : cy - 14 }));
+    },
+    /** The slot nearest a tap, if it is close enough for a small finger. */
+    nearestSlot(pointer, candidates) {
+      const wx = pointer?.worldX ?? cx;
+      const wy = pointer?.worldY ?? cy;
+      let best = null;
+      let bestD = Infinity;
+      for (const i of candidates) {
+        const p = slotPos[i];
+        const d = Math.hypot(p.x - wx, (vertical ? p.y : cy) - wy);
+        if (d < bestD) {
+          bestD = d;
+          best = i;
+        }
+      }
+      return bestD <= 110 ? best : null;
+    },
+    /** countTap: tap each empty spot once. One big target; the nearest
+     *  untapped slot counts, so 25px planks are fine for 5-year-old fingers. */
     armCounting(onCount, onDone) {
       this.clear();
       drawOutlines(true);
@@ -181,35 +202,38 @@ export function buildBridge(scene, zone, region) {
       for (const i of targets) {
         const p = slotPos[i];
         const ring = pulseRing(scene, p.x, vertical ? p.y : cy - 14, 34);
+        ring.slot = i;
         this.rings.push(ring);
-        // Non-overlapping targets: a tap on one slot never lands on its neighbour.
-        const zw = vertical ? 64 : Math.min(64, p.w + 2);
-        const zh = vertical ? Math.min(64, span / (o.slots - 1) - 2) : 64;
-        const z = hitZone(scene, p.x, vertical ? p.y : cy - 14, zw, zh, () => {
-          if (tapped.has(i)) return;
-          tapped.add(i);
-          ring.destroy();
-          sfx.pop(tapped.size);
-          countPop(scene, p.x, (vertical ? p.y : cy) - 40, tapped.size);
-          sparkle(scene, p.x, vertical ? p.y : cy - 10, { count: 6, tint: 0xfff3d6, radius: 20 });
-          onCount?.(tapped.size);
-          if (tapped.size === targets.length) scene.time.delayedCall(350, () => onDone?.());
-        });
-        this.zones.push(z);
       }
+      const w = vertical ? 220 : span * 1.5;
+      const h = vertical ? span + 120 : 160;
+      const z = hitZone(scene, cx, vertical ? cy : cy - 20, w, h, (pointer) => {
+        const i = this.nearestSlot(pointer, targets.filter((t) => !tapped.has(t)));
+        if (i == null) return;
+        tapped.add(i);
+        this.rings.find((r) => r.slot === i)?.destroy();
+        const p = slotPos[i];
+        sfx.pop(tapped.size);
+        countPop(scene, p.x, (vertical ? p.y : cy) - 40, tapped.size);
+        sparkle(scene, p.x, vertical ? p.y : cy - 10, { count: 6, tint: 0xfff3d6, radius: 20 });
+        onCount?.(tapped.size);
+        if (tapped.size === targets.length) scene.time.delayedCall(350, () => onDone?.());
+      });
+      this.zones.push(z);
     },
-    /** placeItems: each tap on the crossing lays the next piece. */
+    /** placeItems: each tap on the crossing lays the piece nearest the finger. */
     armPlacing(onPlaced, onDone, count) {
       this.clear();
       drawOutlines(true);
       let placed = 0;
-      const w = vertical ? 160 : span * 1.4;
-      const h = vertical ? span + 80 : 120;
+      const w = vertical ? 220 : span * 1.5;
+      const h = vertical ? span + 120 : 160;
       const ring = pulseRing(scene, cx, vertical ? cy : cy - 14, 60);
       this.rings.push(ring);
-      const z = hitZone(scene, cx, vertical ? cy : cy - 20, w, h, () => {
-        const next = emptyIdx()[0];
-        if (next == null || placed >= count) return;
+      const z = hitZone(scene, cx, vertical ? cy : cy - 20, w, h, (pointer) => {
+        if (placed >= count) return;
+        const next = this.nearestSlot(pointer, emptyIdx()) ?? emptyIdx()[0];
+        if (next == null) return;
         placed += 1;
         this.placeOne(next);
         onPlaced?.(placed);
@@ -219,6 +243,23 @@ export function buildBridge(scene, zone, region) {
         }
       });
       this.zones.push(z);
+    },
+    /** Show, don't tell: count the relevant slots out loud with pops. */
+    hint(mode = "empty") {
+      const idx = mode === "all" ? slotPos.map((_, i) => i) : emptyIdx();
+      const groups = mode === "pairs" ? idx.reduce((g, i, k) => ((k % 2 ? g[g.length - 1].push(i) : g.push([i])), g), []) : idx.map((i) => [i]);
+      groups.forEach((group, n) => {
+        scene.time.delayedCall(n * 420, () => {
+          for (const i of group) {
+            const p = slotPos[i];
+            sparkle(scene, p.x, vertical ? p.y : cy - 10, { count: 6, tint: 0xfff3d6, radius: 18 });
+          }
+          const p = slotPos[group[group.length - 1]];
+          sfx.pop(n + 1);
+          countPop(scene, p.x, (vertical ? p.y : cy) - 44, n + 1);
+        });
+      });
+      return groups.length;
     },
     placeOne(i, instant = false) {
       filled[i] = true;

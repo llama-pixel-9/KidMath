@@ -27,7 +27,7 @@ import { groupPlayed } from "../mastery/masteryModel";
 import { birdSize } from "../worldArt";
 import { sfx } from "../worldAudio";
 import { buildTerrain, updateTerrain, worldRects } from "../engine/terrain";
-import { buildAmbient, updateAmbient, destroyAmbient } from "../engine/ambient";
+import { buildAmbient, updateAmbient, destroyAmbient, cullEmitters } from "../engine/ambient";
 import { buildMist } from "../engine/mist";
 import { createAvatar, createFollower } from "../engine/avatar";
 import { setupCamera } from "../engine/cameraRig";
@@ -157,7 +157,7 @@ export default class WorldScene extends Phaser.Scene {
     // and a robin that beckons until the kid follows.
     const needsTutorial = !this.world.tutorialDone && !Object.values(this.world.quests).some((q) => q.done);
     const beginTutorial = () => {
-      if (!needsTutorial || this.tutorial) return;
+      if (!needsTutorial || this.tutorial || this.runner.isActive) return;
       const robin = this.npcs.meadow?.byId("robin");
       const welcome = ZONES.meadow.feathers.find((f) => f.id === "welcomeFeather");
       const feather = welcome && !this.world.feathers.includes(welcome.id) ? toWorld(REGIONS[0], welcome) : null;
@@ -320,7 +320,7 @@ export default class WorldScene extends Phaser.Scene {
     this.input.on("pointerup", (p) => {
       const consumed = this.pointerConsumed;
       this.pointerConsumed = false;
-      if (consumed || this.inputLocked || this.runner.isActive) return;
+      if (consumed || this.inputLocked || (this.runner.isActive && !this.runner.allowsWalking())) return;
       if (!this.downAt || Phaser.Math.Distance.Between(this.downAt.x, this.downAt.y, p.x, p.y) > TAP_SLOP) return;
       const wp = this.cameras.main.getWorldPoint(p.x, p.y);
       this.moveTo(wp.x, wp.y);
@@ -394,6 +394,10 @@ export default class WorldScene extends Phaser.Scene {
         this.avatar.face(1);
         if (quest) {
           this.tutorial?.questStarted();
+          if (!this.world.tutorialDone) {
+            this.world = applyTutorialDone(this.world);
+            this.save();
+          }
           this.runner.start(zone, quest, npc);
         } else {
           this.sayHello(zone, npc);
@@ -745,6 +749,12 @@ export default class WorldScene extends Phaser.Scene {
     updateTerrain(this.terrain, time);
     updateAmbient(this.ambient, time);
     if (!this.avatar) return;
+    if (time - (this.lastCullAt ?? 0) > 400) {
+      this.lastCullAt = time;
+      const view = this.cameras.main.worldView;
+      cullEmitters(this.ambient.emitters, view);
+      cullEmitters(this.terrain.sea, view);
+    }
     const r = regionAtX(this.avatar.x);
     if (r) this.onRegionEnter(r);
     if ((time | 0) % 6 === 0) {

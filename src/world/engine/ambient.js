@@ -45,6 +45,7 @@ export function buildAmbient(scene, { mode = "day", calm = false } = {}) {
     blendMode: Phaser.BlendModes.ADD,
   });
   sparkle.setDepth(DEPTH.ground - 2);
+  sparkle.cullRange = [pond.x0, pond.x1];
   h.emitters.push(sparkle);
 
   // ----------------------------------------------------------- leaves
@@ -63,6 +64,7 @@ export function buildAmbient(scene, { mode = "day", calm = false } = {}) {
     tint: [0xd98b3a, 0xe6b04a, 0xb86a2f],
   });
   leaves.setDepth(DEPTH.ground - 3);
+  leaves.cullRange = [woods.x0, woods.x1];
   h.emitters.push(leaves);
 
   // ----------------------------------------------------- dandelion seeds
@@ -78,6 +80,7 @@ export function buildAmbient(scene, { mode = "day", calm = false } = {}) {
     quantity: 1,
   });
   seeds.setDepth(DEPTH.ground - 3);
+  seeds.cullRange = [meadow.x0, meadow.x1];
   h.emitters.push(seeds);
 
   // ------------------------------------------------------------ swallows
@@ -201,6 +204,7 @@ function applyTimeOfDay(scene, h, mode) {
         blendMode: Phaser.BlendModes.ADD,
       });
       ff.setDepth(DEPTH.overlay + 2);
+      ff.cullRange = [r.x0, r.x1];
       h.emitters.push(ff);
     }
   }
@@ -230,6 +234,16 @@ export function updateAmbient(h, time) {
       c.obj.y = fromY + (toY - fromY) * e + Math.sin(t * 9) * 2;
       c.obj.scaleX = toX >= fromX ? 1 : -1;
     }
+  }
+}
+
+/** Emitters whose region is far off-screen stop emitting (cheap on old iPads). */
+export function cullEmitters(emitters, view, margin = 500) {
+  for (const e of emitters) {
+    if (!e?.cullRange) continue;
+    const [a, b] = e.cullRange;
+    const visible = b > view.x - margin && a < view.right + margin;
+    if (e.emitting !== visible) e.emitting = visible;
   }
 }
 

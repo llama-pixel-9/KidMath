@@ -77,6 +77,27 @@ export function buildChicks(scene, zone, region, { found = false } = {}) {
     label: o.label,
     zones: [],
     rings: [],
+    /** Tap points for chicks not yet found. */
+    targets() {
+      return chicks.filter((c) => !c.tapped).map((c) => ({ x: c.x, y: c.y - 30 }));
+    },
+    /** Show, don't tell: count the chicks (all, in pairs, or half of them). */
+    hint(mode = "found") {
+      const list = mode === "half" ? chicks.slice(0, Math.ceil(chicks.length / 2)) : chicks;
+      const groups = mode === "pairs" ? list.reduce((g, c, k) => ((k % 2 ? g[g.length - 1].push(c) : g.push([c])), g), []) : list.map((c) => [c]);
+      groups.forEach((group, n) => {
+        scene.time.delayedCall(n * 420, () => {
+          for (const c of group) {
+            scene.tweens.add({ targets: c.sprite, y: c.sprite.y - 18, duration: 150, yoyo: true });
+            sparkle(scene, c.sprite.x, c.sprite.y - 30, { count: 5, tint: 0xfff3d6, radius: 16 });
+          }
+          const c = group[group.length - 1];
+          sfx.pop(n + 1);
+          countPop(scene, c.sprite.x, c.sprite.y - 80, n + 1, { size: 32 });
+        });
+      });
+      return groups.length;
+    },
     clear() {
       this.zones.forEach((z) => z.destroy());
       this.rings.forEach((r) => r.destroy());

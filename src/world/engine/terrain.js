@@ -85,6 +85,7 @@ export function buildTerrain(scene) {
       blendMode: Phaser.BlendModes.ADD,
     });
     e.setDepth(DEPTH.backdrop - 1);
+    e.cullRange = [x0, x0 + w];
     handles.sea.push(e);
     for (let i = 0; i < 9; i++) {
       const r = scene.add

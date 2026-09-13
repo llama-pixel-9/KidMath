@@ -108,7 +108,7 @@ export const MEADOW_ZONE = {
       steps: [
         { type: "talk", line: "My bridge is broken! Some planks are missing." },
         { type: "countTap", line: "Tap each empty spot so we can count them!", targets: "bridge-slots" },
-        { type: "pickNumber", line: "How many planks do we need?", options: [3, 4, 5], answer: 4 },
+        { type: "pickNumber", line: "How many planks do we need?", options: [3, 4, 5], answer: 4, hint: { target: "bridge", mode: "empty" } },
         { type: "placeItems", line: "Tap the bridge to lay each plank!", target: "bridge", count: 4 },
         { type: "celebrate", line: "You fixed my bridge! Thank you!", stars: 3, fixture: "bridgeFixed" },
       ],
@@ -118,7 +118,7 @@ export const MEADOW_ZONE = {
       npcId: "cardinal",
       steps: [
         { type: "talk", line: "The feeder holds six seeds. I only found two." },
-        { type: "pickNumber", line: "How many more seeds do we need?", options: [3, 4, 6], answer: 4 },
+        { type: "pickNumber", line: "How many more seeds do we need?", options: [3, 4, 6], answer: 4, hint: { target: "feeder", mode: "empty" } },
         { type: "placeItems", line: "Tap the feeder to drop each seed in!", target: "feeder", count: 4 },
         { type: "celebrate", line: "Six seeds! Every bird eats today!", stars: 3, fixture: "feederFull" },
       ],
@@ -129,7 +129,7 @@ export const MEADOW_ZONE = {
       steps: [
         { type: "talk", line: "Three nests, and every nest needs two eggs." },
         { type: "placeItems", line: "Tap each nest to tuck the eggs in!", target: "nests", count: 6 },
-        { type: "pickNumber", line: "How many eggs did you tuck in all together?", options: [5, 6, 7], answer: 6 },
+        { type: "pickNumber", line: "How many eggs did you tuck in all together?", options: [5, 6, 7], answer: 6, hint: { target: "nests", mode: "eggs" } },
         { type: "celebrate", line: "Two and two and two. Six warm eggs!", stars: 3, fixture: "nestsFull" },
       ],
     },
@@ -138,7 +138,7 @@ export const MEADOW_ZONE = {
       npcId: null, // the gate itself asks — the skylark reads it out
       steps: [
         { type: "talk", line: "The old gate only opens for a full ten frame." },
-        { type: "pickNumber", line: "Seven dots are lit. How many more make ten?", options: [2, 3, 4], answer: 3 },
+        { type: "pickNumber", line: "Seven dots are lit. How many more make ten?", options: [2, 3, 4], answer: 3, hint: { target: "gate", mode: "unlit" } },
         { type: "placeItems", line: "Tap the gate to light each dot!", target: "gate", count: 3 },
         { type: "celebrate", line: "Ten! The gate swings open!", stars: 4, fixture: "gateOpen" },
       ],
@@ -150,7 +150,7 @@ export const MEADOW_ZONE = {
       steps: [
         { type: "talk", line: "The chicks wandered off across your new bridge!" },
         { type: "countTap", line: "Find every chick and tap it!", targets: "chicks" },
-        { type: "pickNumber", line: "How many chicks did you find?", options: [4, 5, 6], answer: 5 },
+        { type: "pickNumber", line: "How many chicks did you find?", options: [4, 5, 6], answer: 5, hint: { target: "chicks", mode: "found" } },
         { type: "celebrate", line: "All five chicks are safe. You are a hero!", stars: 5, fixture: "chicksFound" },
       ],
     },

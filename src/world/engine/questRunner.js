@@ -48,6 +48,7 @@ export class QuestRunner {
     this.active = quest;
     this.npc = npc;
     this.stepIndex = 0;
+    this.hinted = false;
     this.runStep();
   }
 
@@ -74,14 +75,17 @@ export class QuestRunner {
       }
       case "countTap": {
         const fx = this.targetFixture(step);
-        this.focus(fx.anchor.x, fx.anchor.y, 1.0);
+        // Look at the thing, then let the camera follow the kid — a hunt
+        // means walking, and every play step allows it.
+        if (step.targets === "chicks") this.glance(fx.anchor.x, fx.anchor.y, 900);
+        else this.focus(fx.anchor.x, fx.anchor.y, 1.0);
         this.emitDialog({ line: step.line, hint: "play" });
         this.armed = fx;
         fx.armCounting(null, () => this.advance());
         break;
       }
       case "pickNumber": {
-        this.emitDialog({ line: step.line, options: step.options, hint: "pick" });
+        this.emitDialog({ line: step.line, options: step.options, hint: "pick", hintable: Boolean(step.hint) });
         break;
       }
       case "placeItems": {
@@ -111,6 +115,21 @@ export class QuestRunner {
     }
   }
 
+  /** True while the kid may walk: the play steps (counting, placing). */
+  allowsWalking() {
+    const t = this.step()?.type;
+    return t === "countTap" || t === "placeItems";
+  }
+
+  /** Pan to a point, hold, then hand the camera back to the skylark. */
+  glance(x, y, hold = 1400) {
+    this.focus(x, y, 1.0);
+    this.glanceTimer?.remove();
+    this.glanceTimer = this.scene.time.delayedCall(hold, () => {
+      if (this.active && this.allowsWalking()) this.release();
+    });
+  }
+
   disarm() {
     this.armed?.clear?.();
     this.armed = null;
@@ -119,6 +138,7 @@ export class QuestRunner {
   advance() {
     if (!this.active) return;
     this.stepIndex += 1;
+    this.hinted = false;
     this.runStep();
   }
 
@@ -140,12 +160,27 @@ export class QuestRunner {
     } else {
       sfx.wobble();
       this.scene.game.events.emit("pick-wrong", value);
+      // Show, don't tell: count the relevant things out loud, once per step.
+      if (step.hint && !this.hinted) {
+        this.hinted = true;
+        const fx = this.fixturesFor(this.zone.id)?.[step.hint.target];
+        if (fx?.hint) {
+          this.scene.time.delayedCall(700, () => {
+            this.focus(fx.anchor.x, fx.anchor.y, 1.0);
+            const total = fx.hint(step.hint.mode);
+            this.scene.time.delayedCall(total * 420 + 500, () => {
+              this.scene.game.events.emit("hint-done", total);
+            });
+          });
+        }
+      }
     }
   }
 
   end() {
     const quest = this.active;
     const npc = this.npc;
+    this.glanceTimer?.remove();
     this.disarm();
     this.active = null;
     this.npc = null;

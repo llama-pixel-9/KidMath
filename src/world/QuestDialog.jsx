@@ -21,16 +21,17 @@ export default function QuestDialog({ dialog, wrongTick, rightTick, onNext, onPi
     return stopSpeaking;
   }, [dialog]);
 
+  const hintable = dialog?.hint === "pick" && Boolean(dialog?.hintable);
   useEffect(() => {
     if (!wrongTick) return;
-    speak("Hmm, try again!");
+    speak(hintable ? "Let's count together." : "Hmm, try again!");
     cardRef.current?.animate(
       [{ transform: "translateX(0)" }, { transform: "translateX(-10px)" }, { transform: "translateX(10px)" }, { transform: "translateX(-6px)" }, { transform: "translateX(0)" }],
       { duration: 360, easing: "ease-in-out" },
     );
     const t = setTimeout(() => setPicked(null), 380);
     return () => clearTimeout(t);
-  }, [wrongTick]);
+  }, [wrongTick, hintable]);
 
   if (!dialog) return null;
   const portrait = dialog.portrait ? birdUrl(dialog.portrait) : null;

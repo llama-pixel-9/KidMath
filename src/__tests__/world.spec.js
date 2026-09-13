@@ -44,6 +44,7 @@ import {
   applyDiscover,
   applyLastRegion,
   applySecretFound,
+  storageKey,
 } from "../world/worldStore";
 
 const publicDir = path.resolve(__dirname, "../../public");
@@ -245,6 +246,12 @@ describe("world store", () => {
     expect(applySecretFound(s, "hollowOwl")).toBe(s);
   });
 
+  it("keeps one island per kid, and a household key before any profile", () => {
+    expect(storageKey("kid-1")).toBe("larkit-world-v1:kid-1");
+    expect(storageKey("kid-2")).not.toBe(storageKey("kid-1"));
+    expect(storageKey(null)).toBe("larkit-world-v1");
+  });
+
   it("remembers discovered regions and the last one visited", () => {
     let s = emptyWorldState();
     expect(s.discovered).toEqual([]);
@@ -295,6 +302,19 @@ describe("zone content (every region)", () => {
         for (const step of quest.steps.filter((s) => s.type === "pickNumber")) {
           expect(step.options).toContain(step.answer);
           expect(new Set(step.options).size).toBe(step.options.length);
+          // Show-don't-tell hints must count to the answer.
+          expect(step.hint, `${quest.id}: pickNumber without a hint`).toBeDefined();
+          const o = zone.objects[step.hint.target];
+          expect(o, `${quest.id}: hint target ${step.hint.target}`).toBeDefined();
+          const counts = {
+            bridge: { empty: o.slots - o.present, all: o.slots, pairs: Math.ceil((o.slots - o.present) / 2) },
+            feeder: { empty: o.capacity - o.present, present: o.present, all: o.capacity },
+            nests: { eggs: (o.spots ?? []).length * (o.eggsPer ?? 0), perNest: o.eggsPer, nests: (o.spots ?? []).length },
+            gate: { unlit: 10 - o.tenFrameFilled, lit: o.tenFrameFilled },
+            chicks: { found: (o.spots ?? []).length, pairs: Math.ceil((o.spots ?? []).length / 2), half: Math.ceil((o.spots ?? []).length / 2) },
+          }[step.hint.target];
+          expect(counts, `${quest.id}: no hint table for ${step.hint.target}`).toBeDefined();
+          expect(counts[step.hint.mode], `${quest.id}: hint ${step.hint.target}/${step.hint.mode} counts to ${counts[step.hint.mode]}, answer is ${step.answer}`).toBe(step.answer);
         }
         for (const step of quest.steps.filter((s) => s.type === "placeItems")) {
           const o = zone.objects[step.target];

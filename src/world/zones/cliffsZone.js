@@ -58,7 +58,7 @@ export const CLIFFS_ZONE = {
       npcId: "kestrel",
       steps: [
         { type: "talk", line: "My tray holds eight seeds. It is exactly half full." },
-        { type: "pickNumber", line: "Half of eight is four. How many more seeds make it full?", options: [2, 4, 8], answer: 4 },
+        { type: "pickNumber", line: "Half of eight is four. How many more seeds make it full?", options: [2, 4, 8], answer: 4, hint: { target: "feeder", mode: "empty" } },
         { type: "placeItems", line: "Tap the tray to drop each seed in!", target: "feeder", count: 4 },
         { type: "celebrate", line: "Two halves make one whole tray!", stars: 3, fixture: "trayFull" },
       ],
@@ -69,7 +69,7 @@ export const CLIFFS_ZONE = {
       steps: [
         { type: "talk", line: "The rope crossing is three quarters done. Eight planks in all." },
         { type: "countTap", line: "Tap each empty spot on the crossing!", targets: "bridge-slots" },
-        { type: "pickNumber", line: "One quarter of eight planks is missing. How many is that?", options: [2, 3, 4], answer: 2 },
+        { type: "pickNumber", line: "One quarter of eight planks is missing. How many is that?", options: [2, 3, 4], answer: 2, hint: { target: "bridge", mode: "empty" } },
         { type: "placeItems", line: "Tap the crossing to tie on each plank!", target: "bridge", count: 2 },
         { type: "celebrate", line: "Four quarters. The crossing is whole!", stars: 3, fixture: "ropeBridgeFixed" },
       ],
@@ -79,7 +79,7 @@ export const CLIFFS_ZONE = {
       npcId: "crane",
       steps: [
         { type: "talk", line: "Six eggs and two nests. Each nest gets half." },
-        { type: "pickNumber", line: "Half of six eggs. How many in each nest?", options: [2, 3, 4], answer: 3 },
+        { type: "pickNumber", line: "Half of six eggs. How many in each nest?", options: [2, 3, 4], answer: 3, hint: { target: "nests", mode: "perNest" } },
         { type: "placeItems", line: "Tap each nest to share the eggs!", target: "nests", count: 6 },
         { type: "celebrate", line: "Three and three. Half each, fair and warm!", stars: 4, fixture: "cliffNestsFull" },
       ],
@@ -89,7 +89,7 @@ export const CLIFFS_ZONE = {
       npcId: null,
       steps: [
         { type: "talk", line: "The lookout gate opens for a full ten frame." },
-        { type: "pickNumber", line: "Five dots are lit. That is one half. How many more make ten?", options: [4, 5, 6], answer: 5 },
+        { type: "pickNumber", line: "Five dots are lit. That is one half. How many more make ten?", options: [4, 5, 6], answer: 5, hint: { target: "gate", mode: "unlit" } },
         { type: "placeItems", line: "Tap the gate to light each dot!", target: "gate", count: 5 },
         { type: "celebrate", line: "Ten! The lookout is open. Look who is flying past!", stars: 5, fixture: "lookoutOpen" },
       ],
@@ -101,7 +101,7 @@ export const CLIFFS_ZONE = {
       steps: [
         { type: "talk", line: "My chicks crossed your rope bridge and hid in the rocks!" },
         { type: "countTap", line: "Find every crane chick and tap it!", targets: "chicks" },
-        { type: "pickNumber", line: "Four chicks, and half of them are hiding behind rocks. How many is half of four?", options: [1, 2, 3], answer: 2 },
+        { type: "pickNumber", line: "Four chicks, and half of them are hiding behind rocks. How many is half of four?", options: [1, 2, 3], answer: 2, hint: { target: "chicks", mode: "half" } },
         { type: "celebrate", line: "Half of four is two. All four are safe!", stars: 5, fixture: "craneChicksFound" },
       ],
     },

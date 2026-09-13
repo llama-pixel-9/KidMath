@@ -61,7 +61,7 @@ export const WOODS_ZONE = {
       steps: [
         { type: "talk", line: "The log bridge lost its planks. They come in bundles of two!" },
         { type: "countTap", line: "Tap each empty spot so we know how many planks!", targets: "bridge-slots" },
-        { type: "pickNumber", line: "Six planks, two in each bundle. How many bundles?", options: [2, 3, 4], answer: 3 },
+        { type: "pickNumber", line: "Six planks, two in each bundle. How many bundles?", options: [2, 3, 4], answer: 3, hint: { target: "bridge", mode: "pairs" } },
         { type: "placeItems", line: "Tap the bridge to lay each plank!", target: "bridge", count: 6 },
         { type: "celebrate", line: "Three bundles of two. Six planks. Solid!", stars: 3, fixture: "logBridgeFixed" },
       ],
@@ -71,7 +71,7 @@ export const WOODS_ZONE = {
       npcId: "chickadee",
       steps: [
         { type: "talk", line: "My pantry log holds four rows of three acorns. I only have three so far." },
-        { type: "pickNumber", line: "Four rows of three. How many acorns fill the log?", options: [7, 12, 14], answer: 12 },
+        { type: "pickNumber", line: "Four rows of three. How many acorns fill the log?", options: [7, 12, 14], answer: 12, hint: { target: "feeder", mode: "all" } },
         { type: "placeItems", line: "Tap the log to tuck in each acorn!", target: "feeder", count: 9 },
         { type: "celebrate", line: "Four threes make twelve. The pantry is full!", stars: 4, fixture: "pantryFull" },
       ],
@@ -81,7 +81,7 @@ export const WOODS_ZONE = {
       npcId: "woodpecker",
       steps: [
         { type: "talk", line: "Twelve eggs, four nests, and every nest gets the same." },
-        { type: "pickNumber", line: "Twelve eggs shared into four nests. How many in each nest?", options: [2, 3, 4], answer: 3 },
+        { type: "pickNumber", line: "Twelve eggs shared into four nests. How many in each nest?", options: [2, 3, 4], answer: 3, hint: { target: "nests", mode: "perNest" } },
         { type: "placeItems", line: "Tap each nest to share the eggs out!", target: "nests", count: 12 },
         { type: "celebrate", line: "Three in every nest. Fair and square!", stars: 4, fixture: "woodsNestsFull" },
       ],
@@ -91,7 +91,7 @@ export const WOODS_ZONE = {
       npcId: null,
       steps: [
         { type: "talk", line: "The gate to the cliffs opens for a full ten frame." },
-        { type: "pickNumber", line: "Five dots are lit, half the frame. How many more make ten?", options: [4, 5, 6], answer: 5 },
+        { type: "pickNumber", line: "Five dots are lit, half the frame. How many more make ten?", options: [4, 5, 6], answer: 5, hint: { target: "gate", mode: "unlit" } },
         { type: "placeItems", line: "Tap the gate to light each dot!", target: "gate", count: 5 },
         { type: "celebrate", line: "Five and five, two equal halves. Ten! The way is open!", stars: 4, fixture: "woodsGateOpen" },
       ],
@@ -103,7 +103,7 @@ export const WOODS_ZONE = {
       steps: [
         { type: "talk", line: "The chicks scattered across your new bridge, two by two!" },
         { type: "countTap", line: "Find every chick and tap it!", targets: "chicks" },
-        { type: "pickNumber", line: "Six chicks in pairs. How many pairs is that?", options: [2, 3, 4], answer: 3 },
+        { type: "pickNumber", line: "Six chicks in pairs. How many pairs is that?", options: [2, 3, 4], answer: 3, hint: { target: "chicks", mode: "pairs" } },
         { type: "celebrate", line: "Three pairs, six chicks, all home!", stars: 5, fixture: "woodsChicksFound" },
       ],
     },

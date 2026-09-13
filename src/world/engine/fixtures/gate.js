@@ -39,8 +39,8 @@ export function buildGate(scene, zone, region) {
 
   // The ten-frame board: a free-standing sign on the near side, left of the
   // gate, where it never hides the fence.
-  const boardGround = cy + 46;
-  const bx = cx - o.size * ds * 1.9;
+  const boardGround = cy + 100;
+  const bx = cx - o.size * ds * 1.65;
   const by = boardGround - 118 * ds;
   const board = scene.add.container(bx, by).setDepth(boardGround);
   const bw = 214;
@@ -82,6 +82,21 @@ export function buildGate(scene, zone, region) {
     board,
     gate,
     isOpen: () => open,
+    /** Show, don't tell: count the unlit (or lit) dots on the frame. */
+    hint(mode = "unlit") {
+      const list = dots.filter((d) => (mode === "lit" ? d.lit : !d.lit));
+      list.forEach((d, n) => {
+        scene.time.delayedCall(n * 420, () => {
+          const wx = bx + d.x * board.scaleX;
+          const wy = by + d.y * board.scaleY;
+          scene.tweens.add({ targets: d.img, scale: 1.25, duration: 160, yoyo: true });
+          sparkle(scene, wx, wy, { count: 5, tint: 0xfff3d6, radius: 14 });
+          sfx.pop(n + 1);
+          countPop(scene, wx, wy - 34, n + 1, { size: 30 });
+        });
+      });
+      return list.length;
+    },
     clear() {
       this.zones.forEach((z) => z.destroy());
       this.rings.forEach((r) => r.destroy());

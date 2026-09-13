@@ -42,11 +42,30 @@ export function buildNests(scene, zone, region) {
   };
 
   let total = 0;
+  const hintPop = (spots) => {
+    spots.forEach(({ x, y }, n) => {
+      scene.time.delayedCall(n * 420, () => {
+        sparkle(scene, x, y, { count: 6, tint: 0xfff3d6, radius: 16 });
+        sfx.pop(n + 1);
+        countPop(scene, x, y - 34, n + 1, { size: 32 });
+      });
+    });
+    return spots.length;
+  };
   const handle = {
     anchor: { x: nests[0].x, y: nests[0].y + 70 },
     fixture: o.fixture,
     zones: [],
     rings: [],
+    /** Show, don't tell: count every egg, the eggs in one nest, or the nests. */
+    hint(mode = "eggs") {
+      if (mode === "nests") return hintPop(nests.map((n) => ({ x: n.x, y: n.y - o.size * depthScaleAt(n.y) * 0.4 })));
+      if (mode === "perNest") {
+        const n = nests[0];
+        return hintPop(Array.from({ length: o.eggsPer }, (_, k) => eggSpot(n, k)));
+      }
+      return hintPop(nests.flatMap((n) => n.eggs.map((e) => ({ x: e.x, y: e.y - 10 }))));
+    },
     clear() {
       this.zones.forEach((z) => z.destroy());
       this.rings.forEach((r) => r.destroy());

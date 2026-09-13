@@ -9,6 +9,24 @@
  */
 
 const KEY = "larkit-world-v1";
+const ACTIVE_KID_KEY = "kidmath-active-kid"; // owned by kidProfiles.js
+
+/**
+ * The island is per kid, like progress and the engagement blob: siblings
+ * sharing a device each get their own. The plain (pre-profile) key is
+ * inherited by the first kid who opens the island, then left alone.
+ */
+export function storageKey(kidId = activeKidId()) {
+  return kidId ? `${KEY}:${kidId}` : KEY;
+}
+
+function activeKidId() {
+  try {
+    return localStorage.getItem(ACTIVE_KID_KEY) || null;
+  } catch {
+    return null;
+  }
+}
 
 export function emptyWorldState() {
   return {
@@ -32,7 +50,17 @@ export function emptyWorldState() {
 
 export function loadWorldState() {
   try {
-    const raw = JSON.parse(localStorage.getItem(KEY));
+    const key = storageKey();
+    let stored = localStorage.getItem(key);
+    if (stored == null && key !== KEY) {
+      // First kid on this device inherits the pre-profile island.
+      stored = localStorage.getItem(KEY);
+      if (stored != null) {
+        localStorage.setItem(key, stored);
+        localStorage.removeItem(KEY);
+      }
+    }
+    const raw = JSON.parse(stored);
     if (!raw || raw.version !== 1) return emptyWorldState();
     return {
       ...emptyWorldState(),
@@ -71,7 +99,7 @@ export function todayKey(date = new Date()) {
 
 export function persistWorldState(state) {
   try {
-    localStorage.setItem(KEY, JSON.stringify(state));
+    localStorage.setItem(storageKey(), JSON.stringify(state));
   } catch {
     /* private mode — the session still works, it just won't stick */
   }

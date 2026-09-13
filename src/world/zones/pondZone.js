@@ -24,7 +24,7 @@ export const POND_ZONE = {
 
   npcs: [
     { id: "kingfisher", name: "Kingfisher", bird: "kingfisher", x: 1480, y: 840, size: 110, questId: "pondStones", thanks: "The crossing is solid. Seven stones strong!", voice: 4 },
-    { id: "puffin", name: "Puffin", bird: "puffin", x: 700, y: 1112, size: 118, questId: "pondPicnic", thanks: "Eight berries! Best picnic ever.", voice: 5 },
+    { id: "puffin", name: "Puffin", bird: "puffin", x: 1230, y: 1112, size: 118, questId: "pondPicnic", thanks: "Eight berries! Best picnic ever.", voice: 5 },
     { id: "dove", name: "Mourning Dove", bird: "mourningDove", x: 320, y: 985, size: 100, questId: "pondNests", thanks: "The floating nests are full and warm.", voice: 6 },
   ],
 
@@ -77,7 +77,7 @@ export const POND_ZONE = {
       steps: [
         { type: "talk", line: "Seven stones make the crossing, but some sank!" },
         { type: "countTap", line: "Tap each empty spot in the water!", targets: "bridge-slots" },
-        { type: "pickNumber", line: "Three stones plus how many more make seven?", options: [3, 4, 5], answer: 4 },
+        { type: "pickNumber", line: "Three stones plus how many more make seven?", options: [3, 4, 5], answer: 4, hint: { target: "bridge", mode: "empty" } },
         { type: "placeItems", line: "Tap the water to roll each stone in!", target: "bridge", count: 4 },
         { type: "celebrate", line: "Three and four make seven. The crossing holds!", stars: 3, fixture: "pondStonesFixed" },
       ],
@@ -87,7 +87,7 @@ export const POND_ZONE = {
       npcId: "puffin",
       steps: [
         { type: "talk", line: "Picnic day! I need eight berries and I picked three." },
-        { type: "pickNumber", line: "Three plus how many more make eight?", options: [4, 5, 6], answer: 5 },
+        { type: "pickNumber", line: "Three plus how many more make eight?", options: [4, 5, 6], answer: 5, hint: { target: "feeder", mode: "empty" } },
         { type: "placeItems", line: "Tap the log to set out each berry!", target: "feeder", count: 5 },
         { type: "celebrate", line: "Three plus five. Eight berries! Dig in!", stars: 3, fixture: "pondPicnicFull" },
       ],
@@ -98,7 +98,7 @@ export const POND_ZONE = {
       steps: [
         { type: "talk", line: "My three floating nests each need two eggs." },
         { type: "placeItems", line: "Tap each nest to settle the eggs in!", target: "nests", count: 6 },
-        { type: "pickNumber", line: "Two and two and two. How many eggs is that?", options: [5, 6, 7], answer: 6 },
+        { type: "pickNumber", line: "Two and two and two. How many eggs is that?", options: [5, 6, 7], answer: 6, hint: { target: "nests", mode: "eggs" } },
         { type: "celebrate", line: "Six eggs bobbing safe and sound!", stars: 3, fixture: "pondNestsFull" },
       ],
     },
@@ -107,7 +107,7 @@ export const POND_ZONE = {
       npcId: null,
       steps: [
         { type: "talk", line: "The gate between the trees opens for a full ten frame." },
-        { type: "pickNumber", line: "Six dots are lit. How many more make ten?", options: [3, 4, 5], answer: 4 },
+        { type: "pickNumber", line: "Six dots are lit. How many more make ten?", options: [3, 4, 5], answer: 4, hint: { target: "gate", mode: "unlit" } },
         { type: "placeItems", line: "Tap the gate to light each dot!", target: "gate", count: 4 },
         { type: "celebrate", line: "Six plus four is ten. The gate swings wide!", stars: 4, fixture: "pondGateOpen" },
       ],
@@ -119,8 +119,8 @@ export const POND_ZONE = {
       steps: [
         { type: "talk", line: "The ducklings paddled off across your stones!" },
         { type: "countTap", line: "Find every duckling and tap it!", targets: "chicks" },
-        { type: "pickNumber", line: "Five ducklings and two parents. How many swim home?", options: [6, 7, 8], answer: 7 },
-        { type: "celebrate", line: "Seven paddlers, all together again!", stars: 5, fixture: "ducklingsFound" },
+        { type: "pickNumber", line: "How many ducklings did you find?", options: [4, 5, 6], answer: 5, hint: { target: "chicks", mode: "found" } },
+        { type: "celebrate", line: "Five paddlers, all together again!", stars: 5, fixture: "ducklingsFound" },
       ],
     },
   ],

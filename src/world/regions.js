@@ -52,7 +52,7 @@ const REGION_DEFS = [
     seam: "trees",
     waterColor: 0xa6d4e4,
     waterDeep: 0x86bfd6,
-    signpost: { x: 1150, y: 1118, groups: ["addSubtract", "measureMoneyTime"] },
+    signpost: { x: 880, y: 1118, groups: ["addSubtract", "measureMoneyTime"] },
   },
   {
     id: "woods",

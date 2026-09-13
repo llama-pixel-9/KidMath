@@ -43,11 +43,37 @@ export function buildFeeder(scene, zone, region) {
   };
   for (let i = 0; i < o.present; i++) addItem(i, false);
 
+  const hintPop = (spots, delayStep = 420) => {
+    spots.forEach(({ x, y }, n) => {
+      scene.time.delayedCall(n * delayStep, () => {
+        sparkle(scene, x, y, { count: 6, tint: 0xfff3d6, radius: 16 });
+        sfx.pop(n + 1);
+        countPop(scene, x, y - 30, n + 1, { size: 32 });
+      });
+    });
+    return spots.length;
+  };
+
   const handle = {
     anchor: { x: cx - 30, y: cy + 60 },
     fixture: o.fixture,
     zones: [],
     rings: [],
+    /** Show, don't tell: count the empty spots, the present items, or all. */
+    hint(mode = "empty") {
+      const all = Array.from({ length: o.capacity }, (_, i) => spotFor(i));
+      if (mode === "present") return hintPop(all.slice(0, items.length));
+      if (mode === "all") return hintPop(all, 300);
+      // Empty spots: show them first so there is something to count.
+      const empties = all.slice(items.length);
+      const g = scene.add.graphics().setDepth(cy + 2);
+      for (const e of empties) {
+        g.lineStyle(2, 0xfffbeb, 0.95);
+        g.strokeCircle(e.x, e.y, 9 * ds);
+      }
+      scene.time.delayedCall(empties.length * 420 + 1200, () => g.destroy());
+      return hintPop(empties);
+    },
     clear() {
       this.zones.forEach((z) => z.destroy());
       this.rings.forEach((r) => r.destroy());

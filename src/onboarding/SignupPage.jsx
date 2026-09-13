@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../useAuth";
-import { signupsOpen } from "../launchFlags";
+import { signupsOpen, appleSignInEnabled } from "../launchFlags";
 import GoogleSignInButton from "../auth/GoogleSignInButton";
 
 /**
@@ -80,14 +80,18 @@ export default function SignupPage() {
         </p>
 
         <div className="mt-8 space-y-3">
-          <button
-            type="button"
-            className="w-full h-14 rounded-[14px] bg-ink text-white font-bold text-base inline-flex items-center justify-center gap-2.5 cursor-pointer"
-            onClick={() => signInWithProvider("apple", "/onboarding")}
-          >
-            <AppleLogo />
-            Continue with Apple
-          </button>
+          {/* Hidden until Apple Developer enrollment completes — see
+              appleSignInEnabled. */}
+          {appleSignInEnabled() && (
+            <button
+              type="button"
+              className="w-full h-14 rounded-[14px] bg-ink text-white font-bold text-base inline-flex items-center justify-center gap-2.5 cursor-pointer"
+              onClick={() => signInWithProvider("apple", "/onboarding")}
+            >
+              <AppleLogo />
+              Continue with Apple
+            </button>
+          )}
           {/* GIS keeps the flow on larkit.io ("to continue to Larkit"); the
               fallback is the old redirect through supabase.co. Sign-in sets
               `user`, and the effect above routes to /onboarding either way. */}

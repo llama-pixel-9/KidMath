@@ -18,7 +18,7 @@ Status legend: ☐ open · ◐ partial · ☑ done (PR).
 |---|---|---|---|---|
 | 1 | **COPPA consent flow.** `KidProfilesService.addKid` inserts a child's name/age/grade directly; the web refuses until the parent confirms by email (`request-consent` → link → `consent-confirm` creates the profile). Ship-blocker for App Review and §312.5. | critical | M | ☐ |
 | 2 | **Item-bank reads don't paginate** (`SupabaseService.fetchModeItemRows`) — fractions (2,787), time (1,852), placeValueDiscs (1,406) clipped to 1,000 rows. CLAUDE.md hard rule. | critical | S | ☑ PR ios/parity-1 |
-| 3 | **Missing widgets/figures.** `tenFrame` answer widget falls back to a choice grid (7 modes, 3 free). Figures `pictograph`, `tallyChart`, `linePlot` (dataGraphs), `areaFigure` (every dimensioned areaPerimeter item), `SequenceNumberLine` under counting sequences, `display.numberLine.marks` — all render as bare text. Violates "show the visual, never describe it". `figureContracts.js` `IOS_MIRRORED_FIGURES` must grow with each one. | high | M | ☐ |
+| 3 | **Missing widgets/figures.** `tenFrame` answer widget, figures `pictograph`, `tallyChart`, `linePlot`, `areaFigure` (spec shared via `KidMath.areaFigureSpec`), `SequenceNumberLine`. `IOS_MIRRORED_FIGURES` updated. `FigureRenderTests` snapshot every shape (`TEST_RUNNER_KIDMATH_FIGURE_SNAPSHOT_DIR=… ` writes PNGs). Still open: `display.numberLine.marks` under story prompts (rare). | high | M | ☑ PR ios/parity-2 |
 | 4 | **No practice log.** `practice_sessions` never written from iOS → parent report blind to iPad sessions. `buildReport` is pure; expose via `nativeEntry` rather than reimplement. | high | M | ☐ |
 | 5 | **Work space + hint panes** (web PR #93). `hintFor` not on the bridge; no Scratchpad (PencilKit), no HintPane, no SidePane for iPad. | high | L | ☐ |
 | 6 | **Worksheets on the old generator** (`generateWorksheetSet`). Web uses `generateFlightLog` + `flightLogScope`: per-level, three-part sheet, separate answer-key sheet, page-fit rules, `allowWordProblems` pref. Neither is on the bridge. | med | M | ☐ |
@@ -45,11 +45,13 @@ account review + per-child delete + full delete, billing via App Store.
 ## Bridge additions needed (`src/engine/nativeEntry.js`)
 
 `generateFlightLog`, `flightLogScope` (#6) · `hintFor` (#5) · `scaffoldFor`
-(#9) · `buildReport` (#4). Keep the bridge dependency-free (no
-progressStore/supabaseClient).
+(#9) · `buildReport` (#4). Done: `areaFigureSpec` (#3 — the file moved to
+`src/figures/` because the bundle guard rejects anything under
+`components/`; pure modules that iOS needs live outside `components/`).
+Keep the bridge dependency-free (no progressStore/supabaseClient).
 
 ## Order of work
 
-parity-1 (☑ #2 #7 #12) → #1 consent → #3 widgets/figures → #4 practice log →
+parity-1 (☑ #2 #7 #12) → parity-2 (☑ #3) → #1 consent → #4 practice log →
 #6 worksheets → #10 home/kids → #8 badges/stickers → #9 teach-don't-grade →
 #5 hints/work space → #11 meadow art → #13 #15 #16 #17.

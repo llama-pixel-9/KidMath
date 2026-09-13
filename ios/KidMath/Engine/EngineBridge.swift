@@ -220,6 +220,13 @@ final class EngineBridge {
     /// §01: the four-part settlement (landing / precision / altitude /
     /// circle-back), computed by the same shared engine code the web uses so
     /// the two platforms can never pay differently.
+    /// Shared areaFigureSpec (src/figures/areaFigureSpec.js): the drawable
+    /// spec for an areaPerimeter item, or nil when there is nothing to draw.
+    func areaFigureSpec(question: [String: Any]) -> [String: Any]? {
+        guard let result = try? call("areaFigureSpec", [question]), !result.isNull, !result.isUndefined else { return nil }
+        return result.toDictionary() as? [String: Any]
+    }
+
     func summarizeFlight(_ session: Session) throws -> FlightPayout {
         let result = try call("summarizeFlight", [session.value])
         let payload = try dictionary(from: result, in: "summarizeFlight")

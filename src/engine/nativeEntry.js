@@ -39,6 +39,9 @@ import { normalizeBankRow } from "../itemBank/normalize.js";
 import { MODE_IDS } from "../modes/index.js";
 import { startingLevelFor, gradeFitFor } from "../gradeSeed.js";
 import { areaFigureSpec } from "../figures/areaFigureSpec.js";
+import consentNoticeMd from "../legal/parental-consent-notice.md";
+import { fillTokens } from "../legal/entity.js";
+import { LEGAL_VERSIONS } from "../legal/versions.js";
 // Bird-world data (§13 roster, §05/§06 zones + perches + placement). Pure
 // data modules with no browser imports — safe in JavaScriptCore, and keeping
 // them here means iOS and web can never disagree on a price or a perch.
@@ -106,6 +109,16 @@ g.KidMath = {
   // drawable spec. Shared so the iOS AreaFigureView draws exactly what the
   // web draws; null when the item has nothing to draw.
   areaFigureSpec: (question) => areaFigureSpec(question),
+
+  // The COPPA direct notice, tokens filled, plus the versions recorded on the
+  // consent event — what KidProfilesService sends to request-consent. Same
+  // bytes the web sends (src/kidProfiles.js requestParentalConsent).
+  parentalConsentNotice: () => ({
+    markdown: fillTokens(consentNoticeMd),
+    version: LEGAL_VERSIONS["parental-consent"],
+    termsVersion: LEGAL_VERSIONS.terms,
+    privacyVersion: LEGAL_VERSIONS.privacy,
+  }),
 
   // §04–§13 bird-world data + placement, shared verbatim with the web.
   roster: () => SPECIES,

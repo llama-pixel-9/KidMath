@@ -220,6 +220,28 @@ final class EngineBridge {
     /// §01: the four-part settlement (landing / precision / altitude /
     /// circle-back), computed by the same shared engine code the web uses so
     /// the two platforms can never pay differently.
+    /// The COPPA direct notice (tokens filled) and the legal versions to
+    /// record — the same bytes the web sends to request-consent.
+    struct ConsentNotice {
+        let markdown: String
+        let version: String
+        let termsVersion: String
+        let privacyVersion: String
+    }
+
+    func parentalConsentNotice() throws -> ConsentNotice {
+        let payload = try dictionary(from: try call("parentalConsentNotice"), in: "parentalConsentNotice")
+        guard let markdown = payload["markdown"] as? String, markdown.count > 200 else {
+            throw EngineError.badResult("parentalConsentNotice: empty notice")
+        }
+        return ConsentNotice(
+            markdown: markdown,
+            version: payload["version"] as? String ?? "unversioned",
+            termsVersion: payload["termsVersion"] as? String ?? "unversioned",
+            privacyVersion: payload["privacyVersion"] as? String ?? "unversioned"
+        )
+    }
+
     /// Shared areaFigureSpec (src/figures/areaFigureSpec.js): the drawable
     /// spec for an areaPerimeter item, or nil when there is nothing to draw.
     func areaFigureSpec(question: [String: Any]) -> [String: Any]? {

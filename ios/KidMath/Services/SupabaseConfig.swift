@@ -19,6 +19,9 @@ enum AppLinks {
     /// Connect listing's privacy-policy field; all three routes are served by
     /// the web app's LegalPage renderer.
     static let privacyPolicy = URL(string: "https://larkit.io/privacy")!
+    /// The COPPA direct notice, published so the pending-consent screen can
+    /// link to it (the email carries the full text).
+    static let parentalConsent = URL(string: "https://larkit.io/parental-consent")!
     static let terms = URL(string: "https://larkit.io/terms")!
     static let security = URL(string: "https://larkit.io/security")!
     /// Apple's subscription management page — how an iOS subscriber cancels.

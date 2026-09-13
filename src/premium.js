@@ -94,9 +94,26 @@ export async function startCheckout(plan) {
     body: { plan, origin: window.location.origin },
   });
   if (error || !data?.url) {
-    throw new Error(error?.message || "Could not start checkout");
+    throw new Error(await functionErrorMessage(error, "Could not start checkout"));
   }
   window.location.assign(data.url);
+}
+
+/**
+ * supabase-js collapses any non-2xx into "Edge Function returned a non-2xx
+ * status code" and hides the body. Our functions always answer `{ error }`,
+ * so surface that — it is the difference between "no subscription found" and
+ * a Stripe configuration error.
+ */
+async function functionErrorMessage(error, fallback) {
+  if (!error) return fallback;
+  try {
+    const body = await error.context?.json?.();
+    if (body?.error) return String(body.error);
+  } catch {
+    // body wasn't JSON — fall through to the generic message
+  }
+  return error.message || fallback;
 }
 
 /**
@@ -110,7 +127,7 @@ export async function openBillingPortal() {
     body: { origin: window.location.origin },
   });
   if (error || !data?.url) {
-    throw new Error(error?.message || "Could not open the billing portal");
+    throw new Error(await functionErrorMessage(error, "Could not open the billing portal"));
   }
   window.location.assign(data.url);
 }

@@ -118,6 +118,12 @@ Two wording rules currently enforced as `fail` checks:
 - `decorativeContext` — context must *matter*. Never a story sentence on a
   bare-number question ("Emma has 53 pencils. How many tens are in 53?").
 
+**A worktree needs BOTH `.env` and `.env.local` copied in.** `.env` holds
+`VITE_SUPABASE_URL`/`VITE_SUPABASE_ANON_KEY`; without it the Supabase client is
+null and every sign-in button silently does nothing (no console error). Google
+sign-in also only works from `localhost:5173` — the origin registered on the
+OAuth client — so kill whatever holds that port rather than picking another.
+
 **Never symlink `node_modules` into a deploy worktree** — it breaks vitest/vite.
 Always `npm ci` inside the worktree. (A cleanup of such a symlink once deleted
 the repo's real `node_modules`.)

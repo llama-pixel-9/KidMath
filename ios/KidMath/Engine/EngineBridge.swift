@@ -369,6 +369,20 @@ final class EngineBridge {
     // MARK: - Plumbing
 
     @discardableResult
+    /// Generic JSON-in/JSON-out calls for services that own their own
+    /// payload shape (PracticeLog). The typed methods above stay the norm.
+    func callDictionary(_ method: String, _ arguments: [Any] = []) throws -> [String: Any] {
+        try dictionary(from: try call(method, arguments), in: method)
+    }
+
+    func callString(_ method: String, _ arguments: [Any] = []) throws -> String {
+        let value = try call(method, arguments)
+        guard value.isString, let text = value.toString() else {
+            throw EngineError.badResult("\(method) did not return a string")
+        }
+        return text
+    }
+
     private func call(_ method: String, _ arguments: [Any] = []) throws -> JSValue {
         exceptions.message = nil
         guard let result = api.invokeMethod(method, withArguments: arguments) else {

@@ -21,7 +21,8 @@ struct SessionView: View {
             modeId: mode.id,
             engine: app.engine ?? (try! EngineBridge()),
             progressStore: app.progressStore,
-            bankService: app.bankService
+            bankService: app.bankService,
+            practiceLog: app.practiceLog
         ))
     }
 
@@ -94,6 +95,7 @@ struct SessionView: View {
             }
         }
         .task { await viewModel.start() }
+        .onDisappear { leaveSession() }
     }
 
     private var skeletonCard: some View {
@@ -121,6 +123,12 @@ struct SessionView: View {
     private func finish() {
         Task { await app.refreshModeLevels() }
         dismiss()
+    }
+
+    /// Any way out of the session (X, swipe, app killed later) — a flight left
+    /// early still reaches the parent report as a partial record.
+    private func leaveSession() {
+        viewModel.savePartialIfAbandoned()
     }
 
     // MARK: - Play area (centered column, like the web's max-w-sm)

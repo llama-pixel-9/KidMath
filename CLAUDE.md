@@ -278,6 +278,7 @@ Product IDs: `com.kidmath.app.premium.{monthly,annual}`.
 | Problem-type research (K–4) | `research-k4-problem-types.md` |
 | Item metadata schema | `item-metadata-model.md` |
 | Ship checklists | `ios-appstore-checklist.md`, `stripe-setup.md` |
+| iOS ↔ web parity gaps, ranked, with status | `ios-parity-plan.md` |
 | Parent report + practice log, email plan | `parent-report.md` |
 | Why we skipped RevenueCat (billing decision) | `billing-revenuecat-decision.md` |
 | Source licensing / attribution | `bank-sources.md`, `resources/README.md` |

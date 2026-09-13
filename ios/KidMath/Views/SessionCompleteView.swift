@@ -199,7 +199,7 @@ struct SessionCompleteView: View {
                     VStack(alignment: .leading, spacing: 2) {
                         Text("Ready for higher skies")
                             .font(theme.bodyFont(size: 15, weight: .heavy))
-                        Text("Next time, six questions to reach Level \(min(level + 1, 10)).")
+                        Text("Next time, six questions to reach Level \(min(level + 1, GradeSeed.maxLevel(mode: mode.id))).")
                             .font(theme.bodyFont(size: 14, weight: .bold))
                             .foregroundStyle(Theme.ink.opacity(0.8))
                     }

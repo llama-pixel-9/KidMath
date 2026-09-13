@@ -48,7 +48,7 @@ struct SettingsView: View {
                     .font(.footnote)
                     .foregroundStyle(theme.textSecondary)
             } else {
-                Text("Free trial available — all 22 modes, flight logs, and sync.")
+                Text("Free trial available — all 25 games, K–5, flight logs, and sync.")
                     .font(.footnote)
                     .foregroundStyle(theme.textSecondary)
                 Button("Restore purchases") {

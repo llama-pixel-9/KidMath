@@ -21,6 +21,7 @@ import {
   applyTutorialDone,
   applySecretFound,
   applyVisitorHelped,
+  applyMigrationDone,
 } from "../worldStore";
 import { groupPlayed } from "../mastery/masteryModel";
 import { birdSize } from "../worldArt";
@@ -48,6 +49,8 @@ import { startLife } from "../engine/life";
 import { applySeason, destroySeasonal } from "../engine/seasonal";
 import { visitorForDate, visitorQuest, VISITOR_SPOT } from "../engine/visitor";
 import { seasonForDate } from "../../engagement/seasons.js";
+import { MIGRATION_STOPS, migrationSpot, migrationQuest } from "../engine/migration";
+import { music } from "../worldMusic";
 import { QuestRunner } from "../engine/questRunner";
 import { sparkle, DEPTH } from "../engine/juice";
 
@@ -87,9 +90,10 @@ export default class WorldScene extends Phaser.Scene {
   create() {
     this.discovered = this.computeDiscovered();
     this.terrain = buildTerrain(this);
-    this.ambient = buildAmbient(this, { mode: this.worldData.timeOfDay ?? "day" });
+    this.calm = Boolean(this.worldData.calm);
+    this.ambient = buildAmbient(this, { mode: this.worldData.timeOfDay ?? "day", calm: this.calm });
     this.reactive = buildReactive(this, this.terrain);
-    this.seasonal = applySeason(this, this.terrain, this.worldData.season ?? seasonForDate(new Date()));
+    this.seasonal = this.calm ? null : applySeason(this, this.terrain, this.worldData.season ?? seasonForDate(new Date()));
     this.featherHandles = {};
     this.lastInputAt = 0;
 
@@ -111,10 +115,12 @@ export default class WorldScene extends Phaser.Scene {
     });
 
     // Where to stand: last region if remembered and discovered, else the meadow.
-    const startRegion = (this.world.lastRegion && this.discovered.has(this.world.lastRegion) && regionById(this.world.lastRegion)) || REGIONS[0];
+    const firstFlight = Boolean(this.worldData.firstFlight);
+    // An arrival always lands at the front door; otherwise pick up where the
+    // skylark was last seen.
+    const startRegion = (!firstFlight && this.world.lastRegion && this.discovered.has(this.world.lastRegion) && regionById(this.world.lastRegion)) || REGIONS[0];
     const startZone = ZONES[startRegion.id];
     const spawn = { x: startRegion.x0 + startZone.spawn.x, y: startZone.spawn.y };
-    const firstFlight = Boolean(this.worldData.firstFlight);
     const start = firstFlight ? { x: 160, y: 1000 } : spawn;
 
     this.avatar = createAvatar(this, start.x, start.y, { waterRects: this.allWater(), landRects: this.allLand() });
@@ -143,6 +149,9 @@ export default class WorldScene extends Phaser.Scene {
     this.refreshPet(true);
     this.emitState();
     this.game.events.emit("world-ready");
+    music.start(startRegion.id);
+    this.game.events.on("dialog", this.onDialogDuck = () => music.duck(true));
+    this.game.events.on("dialog-close", this.onDialogUnduck = () => music.duck(false));
 
     // The wordless first minute: no instructions, a feather two hops away
     // and a robin that beckons until the kid follows.
@@ -361,6 +370,10 @@ export default class WorldScene extends Phaser.Scene {
     this.life?.destroy();
     destroySeasonal(this.seasonal);
     this.visitor?.group.destroy();
+    this.migration?.group?.destroy();
+    this.game.events.off("dialog", this.onDialogDuck);
+    this.game.events.off("dialog-close", this.onDialogUnduck);
+    music.stop();
     this.reactive?.destroy();
     destroyAmbient(this.ambient);
     this.cameraRig?.destroy();
@@ -402,7 +415,8 @@ export default class WorldScene extends Phaser.Scene {
     const gate = this.fixtures[zone.id].gate;
     const quest = availableQuests(this.world, zone).find((q) => q.id === zone.objects.gate.questId);
     if (!quest) {
-      if (gate.isOpen()) this.toast("The gate is open.", "The way ahead is clear!");
+      if (gate.isOpen() && zone.id === "cliffs" && this.world.migrationDone) this.flockFlyover(regionById(zone.regionId));
+      else if (gate.isOpen()) this.toast("The gate is open.", "The way ahead is clear!");
       return;
     }
     const spot = gate.anchor;
@@ -422,6 +436,10 @@ export default class WorldScene extends Phaser.Scene {
 
   onQuestEnd(quest, npc) {
     if (!quest) return;
+    if (quest.id.startsWith("migration-")) {
+      this.time.delayedCall(600, () => this.sendMigrantOff());
+      return;
+    }
     if (quest.id.startsWith("visitor-")) {
       this.world = applyVisitorHelped(this.world, this.visitor?.day);
       this.save();
@@ -449,8 +467,69 @@ export default class WorldScene extends Phaser.Scene {
     if (last.fixture === zone.objects.gate.fixture) {
       const next = REGIONS[region.index + 1];
       if (next) this.time.delayedCall(500, () => this.discover(next));
-      else this.time.delayedCall(500, () => this.flockFlyover(region));
+      else this.time.delayedCall(800, () => this.startMigration(region));
     }
+  }
+
+  // ------------------------------------------------------ the finale
+
+  /** One bird after another lands on the lookout with one last thing to ask. */
+  startMigration(region) {
+    if (this.migration) return;
+    const spot = migrationSpot();
+    this.migration = { index: 0, region };
+    this.toast("The Big Migration!", "Every bird needs one more thing before it flies.");
+    this.avatar.goTo(spot.x - 150, spot.y + 10, { onArrive: () => this.nextMigrant() });
+  }
+
+  nextMigrant() {
+    const m = this.migration;
+    if (!m) return;
+    if (m.index >= MIGRATION_STOPS.length) return this.finishMigration();
+    const stop = MIGRATION_STOPS[m.index];
+    const spot = migrationSpot();
+    const def = { id: "migrant", name: stop.name, bird: stop.bird, x: spot.x, y: spot.y, size: 110, questId: `migration-${m.index}`, thanks: stop.thanks, voice: stop.voice };
+    const group = buildNpcs(this, { npcs: [def] }, { x0: 0, id: "migration" }, { onTap: () => {} });
+    const npc = group.list[0];
+    npc.hide();
+    npc.flyIn(0);
+    m.group = group;
+    m.npc = npc;
+    this.time.delayedCall(1900, () => {
+      this.avatar.face(1);
+      npc.face(this.avatar.x);
+      this.runner.start({ id: "cliffs", quests: [], objects: {} }, migrationQuest(stop, m.index), npc);
+    });
+  }
+
+  /** A migrant helped: it takes off into the sky; the next one lands. */
+  sendMigrantOff() {
+    const m = this.migration;
+    if (!m?.npc) return;
+    const sprite = m.npc.sprite;
+    const group = m.group;
+    sfx.takeoff();
+    this.tweens.add({ targets: sprite, scaleY: sprite.scaleY * 0.7, duration: 100, yoyo: true, repeat: 18 });
+    this.tweens.add({ targets: sprite, x: sprite.x + 1100, y: sprite.y - 700, alpha: 0.3, duration: 2200, ease: "Sine.easeIn", onComplete: () => group.destroy() });
+    m.npc = null;
+    m.group = null;
+    m.index += 1;
+    this.time.delayedCall(1300, () => this.nextMigrant());
+  }
+
+  finishMigration() {
+    const region = this.migration?.region ?? REGIONS[REGIONS.length - 1];
+    this.migration = null;
+    this.world = applyMigrationDone(this.world);
+    this.save();
+    this.flockFlyover(region);
+    // The whole island cheers: every bird hops, sparkles everywhere.
+    for (const group of Object.values(this.npcs)) for (const n of group.list) this.time.delayedCall(Math.random() * 1500, () => n.cheer());
+    for (let i = 0; i < 14; i++) {
+      this.time.delayedCall(300 + i * 350, () => sparkle(this, region.x0 + Math.random() * 2000, 700 + Math.random() * 400, { count: 14, tint: [0xfff3d6, 0xffd166, 0xfbc7a8][i % 3], radius: 70 }));
+    }
+    this.time.delayedCall(6500, () => this.toast("You did it!", "Every bird on Skylark Island is on its way. See you next season."));
+    this.emitState();
   }
 
   zoneOfQuest(questId) {
@@ -507,6 +586,7 @@ export default class WorldScene extends Phaser.Scene {
     this.save();
     if (!first) this.toast(region.title, region.groupTitle);
     this.game.events.emit("region-change", region.id);
+    music.setRegion(region.id);
     this.emitState();
   }
 
@@ -651,6 +731,7 @@ export default class WorldScene extends Phaser.Scene {
       quests: this.world.quests,
       secrets: this.world.secrets,
       secretCount: SECRET_COUNT,
+      migrationDone: this.world.migrationDone,
     });
   }
 

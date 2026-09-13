@@ -2,6 +2,7 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { loadProgressSummary } from "../progressStore";
 import { usePremium } from "../PremiumContext";
+import { loadCalmMode } from "../userPreferences";
 import { createWorldGame } from "./createWorldGame";
 import { loadWorldState } from "./worldStore";
 import { timeOfDay } from "./worldTime";
@@ -85,8 +86,15 @@ export default function WorldPage() {
         if (cancelled || !hostRef.current) return;
         const byMode = summary?.byMode ?? {};
         const practiceStars = Object.values(byMode).reduce((sum, m) => sum + (m?.lifetimeStars ?? 0), 0);
+        let calm = loadCalmMode() || tokens.includes("calm");
+        try {
+          calm = calm || Boolean(window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches);
+        } catch {
+          /* no matchMedia */
+        }
         game = createWorldGame(hostRef.current, {
           byMode,
+          calm,
           practiceStars,
           isPremium,
           override,
@@ -97,7 +105,18 @@ export default function WorldPage() {
         gameRef.current = game;
         const ev = game.events;
         ev.on("boot-progress", setProgress);
-        ev.on("world-ready", () => setReady(true));
+        ev.on("world-ready", () => {
+          setReady(true);
+          // A phone held upright shows a thin slice of the island; say so once.
+          try {
+            if (window.innerWidth < window.innerHeight && window.innerWidth < 600 && localStorage.getItem("larkit-world-rotate-hint") !== "1") {
+              localStorage.setItem("larkit-world-rotate-hint", "1");
+              setTimeout(() => setToast({ title: "Turn your phone sideways", sub: "You'll see more of the island.", id: Date.now() }), 2600);
+            }
+          } catch {
+            /* ignore */
+          }
+        });
         ev.on("world-state", setWorld);
         ev.on("first-flight-complete", markFirstFlight);
         ev.on("dialog", (d) => {

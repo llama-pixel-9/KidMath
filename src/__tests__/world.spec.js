@@ -25,6 +25,7 @@ import { buildLoadList, birdUrl, propUrl, zoneUrl } from "../world/worldArt";
 import { timeOfDay } from "../world/worldTime";
 import { zoomFor } from "../world/engine/cameraRig";
 import { VISITORS, visitorForDate, visitorQuest } from "../world/engine/visitor";
+import { MIGRATION_STOPS, migrationQuest, migrationSpot } from "../world/engine/migration";
 import {
   emptyWorldState,
   applyQuestComplete,
@@ -130,6 +131,23 @@ describe("the daily visitor", () => {
     expect(a.day).toBe("2026-09-13");
     const week = new Set(Array.from({ length: 7 }, (_, i) => visitorForDate(new Date(2026, 8, 13 + i)).bird));
     expect(week.size).toBeGreaterThan(3);
+  });
+});
+
+describe("the Big Migration", () => {
+  it("has one honest stop per strand, with real birds, landing on the cliffs", () => {
+    expect(MIGRATION_STOPS.length).toBeGreaterThanOrEqual(6);
+    for (const [i, stop] of MIGRATION_STOPS.entries()) {
+      expect(exists(birdUrl(stop.bird)), stop.bird).toBe(true);
+      expect(stop.options).toContain(stop.answer);
+      const q = migrationQuest(stop, i);
+      expect(q.id).toBe(`migration-${i}`);
+      expect(q.steps.at(-1).stars).toBe(1);
+    }
+    const spot = migrationSpot();
+    expect(regionAtX(spot.x).id).toBe("cliffs");
+    expect(spot.y).toBeGreaterThanOrEqual(GROUND_TOP);
+    expect(spot.y).toBeLessThanOrEqual(GROUND_BOTTOM);
   });
 });
 

@@ -27,6 +27,39 @@ full ten frame) rolls the mist back from the next one with a camera reveal.
 Progress in the app itself also opens regions (mastery model). The cliffs'
 gate is the finale: the whole flock flies past.
 
+## The Nintendo layer (what makes it feel good)
+
+- **Teach by doing.** No instructions. After the arrival flight a feather
+  glints two hops away and the robin beckons until the kid follows
+  (`engine/tutorial.js`). Runs once per kid.
+- **Every tap answers back.** Trees drop leaves (sometimes a bird flies
+  out), water ripples and a frog plops in, flowers release a butterfly,
+  rocks tumble pebbles, helped birds show off a species move
+  (`engine/reactive.js`, `npcs.js flourish`).
+- **Secrets in plain sight.** Five hidden interactions (owl in the hollow,
+  all five meadow flowers, the flipping lily pad, the woods knot, the cliff
+  crack); each tap nudges, the third opens it, two stars once
+  (`engine/secrets.js`).
+- **Rhythm.** When the kid is still, birds visit each other, sing, preen;
+  a newly revealed region's birds fly in while the camera lingers
+  (`engine/life.js`, `npcs.js flyIn`). A tap interrupts.
+- **The chick is a companion.** Points at a feather or a quest bird when the
+  kid idles, hides behind the skylark near an owl, sleeps in the nest at
+  night, grows with practice (`avatar.js createFollower`).
+- **Daily hooks in growth framing.** Today's visitor lands on the beach with
+  one problem worth two stars (`engine/visitor.js`); the island follows the
+  season (`engine/seasonal.js`); the seed plot sprouts tomorrow.
+- **The map is the island.** A parchment scroll with the regions as they
+  are, the skylark's position, mist, per-region progress (`MapPanel.jsx`).
+- **A finale.** The lookout gate on the cliffs starts the Big Migration:
+  six birds, one per strand, one last question each, then the flock crosses
+  and the island cheers (`engine/migration.js`).
+- **Sound as character.** Synth cues per action, a soft generative melody
+  per region that ducks under dialog (`worldMusic.js`), spoken lines.
+- **Calm mode.** The app's calm setting or `prefers-reduced-motion` keeps the
+  colours and birds but stills the fluttering layer; portrait phones get a
+  one-time "turn sideways" hint.
+
 Everything else from the plan is here: the practice signpost in each region
 opens that strand's minigames (every `MODE_GROUPS` entry is reachable from
 some signpost); the home nest by the front door holds the pet egg (warmed by
@@ -86,9 +119,13 @@ WorldRoute.jsx        the one mount point (flag check + lazy chunk)
 ## Testing
 
 - `npm run test` includes `src/__tests__/world.spec.js` (Phaser-free).
-- URL overrides for local QA: `/world?world=all` (all regions discovered, no
-  first flight), `?world=arrive` (force the arrival flight), `?world=night` /
-  `dusk` / `day`. Combine with commas: `?world=all,night`.
+- URL overrides for local QA, comma-separated: `all` (every region open, no
+  first flight), `arrive` (force the arrival flight), `day` / `dusk` /
+  `night`, `spring` / `summer` / `autumn` / `winter`, `calm`.
+  e.g. `/world?world=all,night,winter`.
 - Debug handles on `window.__larkitWorld`: `worldScene`, `toScreen(x, y)`,
   `tapTargets()`. A synthetic click must be a press (down, ~70 ms, up);
-  Phaser drops a 0 ms click.
+  Phaser drops a 0 ms click, and a tap during a camera pan lands on the
+  wrong spot — wait for `panEffect`/`zoomEffect` to finish. Presses on the
+  DOM layer never reach the world (`windowEvents: false` + a canvas-target
+  check), so panels can sit over the canvas safely.

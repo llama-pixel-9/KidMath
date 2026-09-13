@@ -10,10 +10,17 @@ import { DEPTH } from "./juice";
  * a dusk glow or night with stars and fireflies. Cheap by design: a few
  * dozen sprites, no per-frame allocation.
  */
-export function buildAmbient(scene, { mode = "day" } = {}) {
-  const h = { critters: [], swallows: [], emitters: [], overlay: null, stars: [], fireflies: null, mode };
+export function buildAmbient(scene, { mode = "day", calm = false } = {}) {
+  const h = { critters: [], swallows: [], emitters: [], overlay: null, stars: [], fireflies: null, mode, calm };
 
   const region = (id) => REGIONS.find((r) => r.id === id);
+  // Calm mode (the app's setting, or prefers-reduced-motion): the island
+  // keeps its colours and its birds, but the fluttering, drifting layer
+  // stays still.
+  if (calm) {
+    applyTimeOfDay(scene, h, mode);
+    return h;
+  }
 
   // ---------------------------------------------------------- butterflies
   const meadow = region("meadow");

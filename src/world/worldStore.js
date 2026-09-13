@@ -26,6 +26,7 @@ export function emptyWorldState() {
     tutorialDone: false, // the wordless first minute has been played
     secrets: [], // hidden things found (secrets.js ids)
     visitorDay: null, // the last calendar day the visitor was helped
+    migrationDone: false, // the Big Migration finale has been played
   };
 }
 
@@ -53,6 +54,7 @@ export function loadWorldState() {
       tutorialDone: Boolean(raw.tutorialDone),
       secrets: Array.isArray(raw.secrets) ? raw.secrets.filter((d) => typeof d === "string") : [],
       visitorDay: typeof raw.visitorDay === "string" ? raw.visitorDay : null,
+      migrationDone: Boolean(raw.migrationDone),
     };
   } catch {
     return emptyWorldState();
@@ -232,4 +234,9 @@ export function applySecretFound(state, secretId, stars = 2) {
 export function applyVisitorHelped(state, dayKey) {
   if (state.visitorDay === dayKey) return state;
   return { ...state, visitorDay: dayKey };
+}
+
+export function applyMigrationDone(state) {
+  if (state.migrationDone) return state;
+  return { ...state, migrationDone: true };
 }

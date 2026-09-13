@@ -1,0 +1,94 @@
+# src/world — Skylark Island (open-world mode, v2)
+
+The second take on `docs/larkit-open-world-implementation-plan.md`. The
+first build (branch `feature/open-world`) was a map of circular island
+vignettes plus one walkable zone; it read as a prototype. This rewrite keeps
+the plan's principles (intrinsic integration, autonomy, the 10-minute loop,
+never a padlock) and the reusable pieces (world store, mastery model, quest
+step DSL, zone content) and replaces everything the kid sees.
+
+## What it is
+
+One continuous island. The four painted zone backdrops (`public/meadow/zones`,
+all 2048×1176 with the same sky and horizon) sit side by side: meadow → pond
+→ woods → cliffs, sea at both ends. The kid's skylark hops along the ground
+band (short trips) or flies (long trips, or anything over water). Each region
+is one math strand:
+
+| Region | Strand | Quests |
+|---|---|---|
+| The Meadow | Counting & Numbers | bridge planks, feeder seeds, nest eggs, ten-frame gate, chick hunt |
+| The Pond | Add & Subtract | stepping stones, picnic berries, floating nests, gate, ducklings |
+| The Woods | Multiply & Divide | plank bundles, acorn rows, eggs shared equally, gate, chicks in pairs |
+| The Cliffs | Fractions & Decimals | half-full tray, quarter crossing, half the eggs, the lookout gate, half the chicks |
+
+Regions the kid hasn't reached sit under mist. Opening a region's gate (a
+full ten frame) rolls the mist back from the next one with a camera reveal.
+Progress in the app itself also opens regions (mastery model). The cliffs'
+gate is the finale: the whole flock flies past.
+
+Everything else from the plan is here: the practice signpost in each region
+opens that strand's minigames (every `MODE_GROUPS` entry is reachable from
+some signpost); the home nest by the front door holds the pet egg (warmed by
+quest stars and practice stars, hatches into a chick that follows the
+skylark) and the decoration shop (earned stars only; premium items simply
+absent for free families); feathers to find; the seed plot that sprouts
+tomorrow and blooms the day after.
+
+## Layout
+
+```
+regions.js            the panorama: region x-offsets, ground band, depth scale
+zones/*.js            CONTENT (world_defs-shaped): NPCs, objects, quests — region-local coords
+zones/index.js        registry; quest ids / fixtures / NPC ids must be globally unique
+worldStore.js         localStorage v1: stars, quests, fixtures, egg, seed, feathers,
+                      decorations, discovered regions, last region
+mastery/masteryModel.js  progress → discovery (pure, tested)
+worldArt.js           asset URLs + sizes from artManifest.json; the boot load list
+worldAudio.js         synthesized cues (hop, pop, chime, wobble, reveal, chirp…)
+worldTime.js          day / dusk / night (Phaser-free)
+speech.js             Web Speech for every quest line (audio-first)
+
+scenes/BootScene.js   loads the art, generates procedural textures
+scenes/WorldScene.js  the orchestrator: builds everything, input, quests, discovery, pet
+engine/terrain.js     sky/sea, backdrops + crossfade seams, landmark props, parallax clouds + grass
+engine/ambient.js     butterflies, dragonflies, leaves, swallows, sparkle, night/dusk, fireflies
+engine/mist.js        undiscovered regions + the reveal
+engine/avatar.js      the skylark: hop / fly, shadow, squash & stretch, idle life; the chick follower
+engine/npcs.js        birds with idle life, quest markers, greetings
+engine/fixtures/*.js  bridge (planks/logs/rope/stones + the stream), feeder, nests, gate + ten frame,
+                      chicks, home nest, feathers, seed plot, signpost
+engine/questRunner.js the step DSL interpreter (talk / countTap / pickNumber / placeItems / celebrate)
+engine/cameraRig.js   zoom for the viewport, follow with look-ahead, focus/release, cinematics
+engine/juice.js       dust, sparkle, star burst (Sun diamonds), hearts, count pops, pulse rings
+engine/textures.js    procedural textures + brand colours
+
+WorldPage.jsx         React host: canvas + HUD + toasts + panels; talks to the scene over game.events
+QuestDialog.jsx       the card in the SKY (top of screen) so the ground band stays tappable
+HomePanel.jsx / PracticePanel.jsx / RegionRibbon.jsx / ui.jsx
+WorldRoute.jsx        the one mount point (flag check + lazy chunk)
+```
+
+## Rules
+
+- **Flag:** mounts only with `VITE_WORLD_ENABLED=true`. Set it in `.env.local`.
+  It is currently `true` in Vercel for Production AND Preview — do not merge
+  this branch until that is deliberate.
+- **Zones are content.** New quests/regions are data against the object
+  vocabulary; the scene has no per-zone code. `world.spec.js` validates every
+  zone (real art, ground-band positions, honest options, matching counts).
+- **Every tap target is a Phaser Zone** created by `fixtures/common.js`
+  `hitZone`; scene-level taps move the skylark only when no zone consumed the
+  pointer. Keep targets non-overlapping.
+- **Brand:** reward star = the Sun diamond, never five points; correct = teal,
+  wrong = wobble (never red); no padlocks, no prices in money.
+
+## Testing
+
+- `npm run test` includes `src/__tests__/world.spec.js` (Phaser-free).
+- URL overrides for local QA: `/world?world=all` (all regions discovered, no
+  first flight), `?world=arrive` (force the arrival flight), `?world=night` /
+  `dusk` / `day`. Combine with commas: `?world=all,night`.
+- Debug handles on `window.__larkitWorld`: `worldScene`, `toScreen(x, y)`,
+  `tapTargets()`. A synthetic click must be a press (down, ~70 ms, up);
+  Phaser drops a 0 ms click.

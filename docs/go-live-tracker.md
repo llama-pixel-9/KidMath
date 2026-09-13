@@ -123,7 +123,11 @@ Enrollment submitted; nothing below can start until it completes.
 - [ ] Team signing for Sign in with Apple on device; `kidmath://auth-callback`
   redirect registered in the Supabase Google provider.
 - [ ] App Store Connect: app record, both subscriptions
-  (`…premium.monthly` / `…premium.annual`), $39/yr intro offer, TestFlight.
+  (`…premium.monthly` $8.99, `…premium.annual` **$39.99** — the launch price
+  itself, no intro offer; Apple requires parity with web), TestFlight.
+- [ ] iOS paywall fallbacks: `PaywallView.swift` still falls back to literal
+  "$54.99"/"$8.99" when StoreKit products haven't loaded. Match the web —
+  disable purchase until `displayPrice` is real, never show a literal.
 - [ ] Privacy nutrition labels in ASC, checked against PrivacyInfo.xcprivacy
   (declares child name/age/grade — labels must match).
 - [ ] Manual first-run pass in Xcode: purchase, sign-in, and every external

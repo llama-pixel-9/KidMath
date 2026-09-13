@@ -205,7 +205,12 @@ struct SessionView: View {
                     .foregroundStyle(theme.textMuted)
                     .textCase(.uppercase)
             }
-            QuestionDisplayView(question: viewModel.question, modeColor: theme.modeColor(mode.id))
+            QuestionDisplayView(
+                question: viewModel.question,
+                modeColor: theme.modeColor(mode.id),
+                revealed: feedbackState != nil,
+                areaFigure: mode.id == "areaPerimeter" ? viewModel.areaFigureSpec : nil
+            )
             feedbackLine
         }
         .padding(24)
@@ -308,6 +313,8 @@ struct SessionView: View {
             BarModelWidget(display: display, disabled: locked) { viewModel.submit($0) }
         case "shapeFigure":
             ShapeFigureWidget(display: display, disabled: locked) { viewModel.submit($0) }
+        case "tenFrame":
+            TenFrameWidget(display: display, disabled: locked) { viewModel.submit($0) }
         default:
             ChoiceWidget(choices: viewModel.choices, disabled: locked) {
                 viewModel.submit($0)

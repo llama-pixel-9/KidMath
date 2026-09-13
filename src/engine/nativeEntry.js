@@ -38,6 +38,7 @@ import {
 import { normalizeBankRow } from "../itemBank/normalize.js";
 import { MODE_IDS } from "../modes/index.js";
 import { startingLevelFor, gradeFitFor } from "../gradeSeed.js";
+import { areaFigureSpec } from "../figures/areaFigureSpec.js";
 // Bird-world data (§13 roster, §05/§06 zones + perches + placement). Pure
 // data modules with no browser imports — safe in JavaScriptCore, and keeping
 // them here means iOS and web can never disagree on a price or a perch.
@@ -99,6 +100,12 @@ g.KidMath = {
   // ProgressStore calls this so both platforms seed identically.
   startingLevelFor: (mode, grade) => startingLevelFor(mode, grade),
   gradeFitFor: (mode, grade) => gradeFitFor(mode, grade),
+
+  // Area & perimeter figure spec (src/components/areaFigureSpec.js) — pure,
+  // regex-heavy normalisation of bank/generator/prose payloads into one
+  // drawable spec. Shared so the iOS AreaFigureView draws exactly what the
+  // web draws; null when the item has nothing to draw.
+  areaFigureSpec: (question) => areaFigureSpec(question),
 
   // §04–§13 bird-world data + placement, shared verbatim with the web.
   roster: () => SPECIES,

@@ -12,6 +12,13 @@ struct QuestionDisplayView: View {
     @Environment(\.theme) private var theme
     let question: [String: Any]
     let modeColor: Color
+    /// True once the answer has been judged — figures that reveal more after
+    /// the fact (the sequence number line's "?") read this.
+    var revealed: Bool = false
+    /// `KidMath.areaFigureSpec(question)` from the engine, resolved by the
+    /// session view (the display view has no engine handle). nil = nothing
+    /// to draw.
+    var areaFigure: [String: Any]? = nil
 
     private var display: [String: Any] { question["display"] as? [String: Any] ?? [:] }
     private var promptText: String? { display["promptText"] as? String }
@@ -26,6 +33,23 @@ struct QuestionDisplayView: View {
             clockFaceQuestion
         } else if display["figure"] as? String == "discMat" {
             discMatQuestion
+        } else if display["figure"] as? String == "pictograph" {
+            figureQuestion {
+                PictographView(
+                    rows: display["rows"] as? [[String: Any]] ?? [],
+                    keyValue: (display["keyValue"] as? NSNumber)?.doubleValue ?? 1
+                )
+            }
+        } else if display["figure"] as? String == "tallyChart" {
+            figureQuestion { TallyChartView(rows: display["rows"] as? [[String: Any]] ?? []) }
+        } else if display["figure"] as? String == "linePlot" {
+            figureQuestion {
+                LinePlotView(points: display["points"] as? [[String: Any]] ?? [], axisLabel: display["axisLabel"] as? String)
+            }
+        } else if let areaFigure {
+            // areaPerimeter never authors a `figure:` key; the spec comes from
+            // the shared areaFigureSpec (figureRegistry.js inferFigure).
+            figureQuestion { AreaFigureView(spec: areaFigure) }
         } else if let emoji = display["emoji"] as? String {
             emojiCount(emoji: emoji, count: (display["count"] as? NSNumber)?.intValue ?? 0)
         } else if let sequence = display["sequence"] as? [Any] {
@@ -124,9 +148,32 @@ struct QuestionDisplayView: View {
 
     // MARK: - 2. Sequence
 
+    /// Prompt above, figure below — the layout every read-only figure shares.
+    private func figureQuestion<Content: View>(@ViewBuilder _ content: () -> Content) -> some View {
+        VStack(spacing: 12) {
+            if let prompt = promptText {
+                Text(prompt)
+                    .font(.system(size: 20, weight: .bold, design: .rounded))
+                    .foregroundStyle(theme.textPrimary)
+                    .multilineTextAlignment(.center)
+            }
+            content()
+        }
+    }
+
     private func sequenceDisplay(_ sequence: [Any]) -> some View {
         VStack(spacing: 10) {
             caption("What comes next?")
+            sequenceTerms(sequence)
+            if let line = SequenceNumberLineView.eligible(sequence: sequence, step: display["step"], answer: question["answer"]) {
+                SequenceNumberLineView(sequence: line.seq, answer: line.answer, revealed: revealed)
+                    .padding(.top, 4)
+            }
+        }
+    }
+
+    private func sequenceTerms(_ sequence: [Any]) -> some View {
+        VStack(spacing: 0) {
             HStack(spacing: 4) {
                 ForEach(Array(sequence.enumerated()), id: \.offset) { index, term in
                     if index > 0 { comma }

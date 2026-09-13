@@ -58,6 +58,10 @@ final class SessionViewModel: ObservableObject {
     /// Test-only: lets XCTest reach the live engine session (e.g. to force
     /// mastery via EngineBridge.forceHighMastery). Never used by the app.
     var engineSessionForTesting: EngineBridge.Session? { session }
+
+    /// Drawable spec for an areaPerimeter question (nil for other modes or
+    /// when the item has nothing to draw) — see AreaFigureView.
+    var areaFigureSpec: [String: Any]? { engine.areaFigureSpec(question: question) }
     #endif
     private let bankService: BankService?
     private var session: EngineBridge.Session?

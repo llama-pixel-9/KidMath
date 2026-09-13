@@ -26,6 +26,7 @@ export default function QuestionStage({
   isRetry = false,
   scaffold = null,
   onSpeak = null,
+  onHint = null,
   attempt = 0,
   answerType,
   lowMotionMode = false,
@@ -58,6 +59,22 @@ export default function QuestionStage({
             // card belonging to the current question, never stale pixels.
             {...(qaSeq != null ? { "data-qa-seq": qaSeq } : {})}
           >
+            {onHint && (
+              <button
+                type="button"
+                onClick={onHint}
+                aria-label="Show a hint"
+                title="Hint"
+                data-testid="hint-button"
+                className="absolute top-3 left-3 w-9 h-9 rounded-full bg-apricot/60 text-ink flex items-center justify-center cursor-pointer btn-press"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M9 18h6" />
+                  <path d="M10 21h4" />
+                  <path d="M12 3a6 6 0 0 0-4 10.5c.7.6 1 1.4 1 2.5h6c0-1.1.3-1.9 1-2.5A6 6 0 0 0 12 3z" />
+                </svg>
+              </button>
+            )}
             {onSpeak && (
               <button
                 type="button"

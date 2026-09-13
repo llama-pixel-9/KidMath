@@ -41,7 +41,7 @@ const REGION_DEFS = [
     waterDeep: 0x7cc0da,
     // The practice signpost: the strand's minigames live here (plan Part 2:
     // "the existing minigames slot in as practice spots").
-    signpost: { x: 900, y: 1112, groups: ["numbers"] },
+    signpost: { x: 700, y: 1116, groups: ["numbers"] },
   },
   {
     id: "pond",

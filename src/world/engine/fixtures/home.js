@@ -76,8 +76,10 @@ export function buildHome(scene, zone, region) {
         return;
       }
       if (stage === "hatched") {
+        // The chick is the follower now; the bowl stays empty (it sleeps here at night).
         hatched = true;
-        showChick();
+        petSprite?.destroy();
+        petSprite = null;
       } else {
         showEgg(stage);
       }
@@ -101,7 +103,11 @@ export function buildHome(scene, zone, region) {
           petSprite.setScale(petSprite.scaleX * 0.2);
           scene.tweens.add({ targets: petSprite, scale: petSprite.scaleX * 5, duration: 500, ease: "Back.easeOut" });
           hearts(scene, cx, bowlY - 50, 4);
-          scene.time.delayedCall(900, () => onDone?.());
+          scene.time.delayedCall(900, () => {
+            petSprite?.destroy();
+            petSprite = null;
+            onDone?.();
+          });
         }
       };
       step();

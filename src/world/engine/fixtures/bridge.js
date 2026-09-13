@@ -161,6 +161,8 @@ export function buildBridge(scene, zone, region) {
   const handle = {
     anchor: { x: cx, y: vertical ? cy + span / 2 + 40 : cy + 70 },
     fixture: o.fixture,
+    /** Where the water is (for tap reactions); null for the rope gap. */
+    streamRect: !vertical && style !== "rope" ? { x: cx - span * 0.55, y: HORIZON_Y + 12, w: span * 1.1, h: WORLD_H - HORIZON_Y } : null,
     zones: [],
     rings: [],
     clear() {

@@ -90,6 +90,8 @@ export const MEADOW_ZONE = {
   // Collectible feathers hidden around the region — spotting games between
   // quests. Art is the existing feather badge set.
   feathers: [
+    // The first tap of the game: two hops from where the skylark lands.
+    { id: "welcomeFeather", art: "comeback5", x: 660, y: 1050 },
     { id: "sunFeather", art: "firstSession", x: 1400, y: 830 },
     { id: "songFeather", art: "perfectRound", x: 95, y: 905 },
     { id: "cloudFeather", art: "streak3", x: 1840, y: 1122 },

@@ -18,6 +18,7 @@ import {
   fixtureOn,
   applyDiscover,
   applyLastRegion,
+  applyTutorialDone,
 } from "../worldStore";
 import { groupPlayed } from "../mastery/masteryModel";
 import { birdSize } from "../worldArt";
@@ -37,7 +38,9 @@ import { buildHome } from "../engine/fixtures/home";
 import { buildFeathers } from "../engine/fixtures/feathers";
 import { buildSeedPlot } from "../engine/fixtures/seedPlot";
 import { buildSignpost } from "../engine/fixtures/signpost";
-import { hitZone } from "../engine/fixtures/common";
+import { hitZone, toWorld } from "../engine/fixtures/common";
+import { buildReactive } from "../engine/reactive";
+import { startTutorial } from "../engine/tutorial";
 import { QuestRunner } from "../engine/questRunner";
 import { sparkle, DEPTH } from "../engine/juice";
 
@@ -78,6 +81,9 @@ export default class WorldScene extends Phaser.Scene {
     this.discovered = this.computeDiscovered();
     this.terrain = buildTerrain(this);
     this.ambient = buildAmbient(this, { mode: this.worldData.timeOfDay ?? "day" });
+    this.reactive = buildReactive(this, this.terrain);
+    this.featherHandles = {};
+    this.lastInputAt = 0;
 
     for (const region of REGIONS) {
       const zone = ZONES[region.id];
@@ -120,6 +126,24 @@ export default class WorldScene extends Phaser.Scene {
     this.emitState();
     this.game.events.emit("world-ready");
 
+    // The wordless first minute: no instructions, a feather two hops away
+    // and a robin that beckons until the kid follows.
+    const needsTutorial = !this.world.tutorialDone && !Object.values(this.world.quests).some((q) => q.done);
+    const beginTutorial = () => {
+      if (!needsTutorial || this.tutorial) return;
+      const robin = this.npcs.meadow?.byId("robin");
+      const welcome = ZONES.meadow.feathers.find((f) => f.id === "welcomeFeather");
+      const feather = welcome && !this.world.feathers.includes(welcome.id) ? toWorld(REGIONS[0], welcome) : null;
+      this.tutorial = startTutorial(this, {
+        robin,
+        feather,
+        onDone: () => {
+          this.world = applyTutorialDone(this.world);
+          this.save();
+        },
+      });
+      if (!feather) this.tutorial.featherCollected();
+    };
     if (firstFlight) {
       this.inputLocked = true;
       this.time.delayedCall(600, () => {
@@ -128,15 +152,17 @@ export default class WorldScene extends Phaser.Scene {
           onArrive: () => {
             this.inputLocked = false;
             this.game.events.emit("first-flight-complete");
-            this.toast("Welcome to Skylark Island!", "Tap the ground to hop. Tap a bird to say hello.");
-            const robin = this.npcs.meadow?.byId("robin");
-            this.time.delayedCall(900, () => robin?.greet(this.avatar.x));
+            this.toast("Welcome to Skylark Island!");
+            beginTutorial();
           },
         });
       });
     } else {
       this.time.delayedCall(400, () => this.toast(startRegion.title, startRegion.groupTitle));
+      if (startRegion.id === "meadow") this.time.delayedCall(1500, beginTutorial);
     }
+    // The companion thinks every so often.
+    this.time.addEvent({ delay: 700, loop: true, callback: () => this.tickFollower() });
 
     this.events.once("shutdown", () => this.teardown());
   }
@@ -155,7 +181,7 @@ export default class WorldScene extends Phaser.Scene {
     this.fixtures[zone.id] = f;
     this.npcs[zone.id] = buildNpcs(this, zone, region, { onTap: (npc) => this.onNpcTap(zone, region, npc) });
     this.signposts[zone.id] = buildSignpost(this, region);
-    buildFeathers(this, zone, region, this.world.feathers, (id) => this.collectFeather(id));
+    this.featherHandles[zone.id] = buildFeathers(this, zone, region, this.world.feathers, (id) => this.collectFeather(id));
     if (zone.home) {
       this.home = buildHome(this, zone, region);
       this.home.renderDecorations(zone.home.shop, this.world.decorations);
@@ -220,12 +246,23 @@ export default class WorldScene extends Phaser.Scene {
   }
 
   wireInput() {
+    // Game-object handlers run BEFORE this scene-level handler, so a tap
+    // target has already marked the pointer consumed by the time we get
+    // here. Phaser occasionally misses a target when a move and a press
+    // arrive in the same frame, so re-check with a fresh hit test and hand
+    // the press to the top-most target ourselves.
     this.input.on("pointerdown", (p) => {
-      this.pointerConsumed = false;
       this.downAt = { x: p.x, y: p.y };
+      this.lastInputAt = this.time.now;
+      if (this.pointerConsumed) return;
+      const zones = this.input.hitTestPointer(p).filter((o) => o.type === "Zone" && o.input?.enabled);
+      const top = zones[zones.length - 1];
+      if (top) top.emit("pointerdown", p, 0, 0, { stopPropagation() {} });
     });
     this.input.on("pointerup", (p) => {
-      if (this.pointerConsumed || this.inputLocked || this.runner.isActive) return;
+      const consumed = this.pointerConsumed;
+      this.pointerConsumed = false;
+      if (consumed || this.inputLocked || this.runner.isActive) return;
       if (!this.downAt || Phaser.Math.Distance.Between(this.downAt.x, this.downAt.y, p.x, p.y) > TAP_SLOP) return;
       const wp = this.cameras.main.getWorldPoint(p.x, p.y);
       this.moveTo(wp.x, wp.y);
@@ -236,11 +273,15 @@ export default class WorldScene extends Phaser.Scene {
     const { minX, maxX } = this.moveBounds();
     let tx = Phaser.Math.Clamp(x, minX, maxX);
     let ty = clampToGround(y);
-    // Don't land in the pond: snap to the near bank.
+    // Don't land in the pond: snap to the near bank. But water answers the
+    // tap first — ripples, and maybe a frog.
     const water = this.allWater();
     const land = this.allLand();
     const inRect = (r) => tx >= r.x && tx <= r.x + r.w && ty >= r.y && ty <= r.y + r.h;
+    const streams = Object.values(this.fixtures).map((f) => f.bridge?.streamRect).filter(Boolean);
+    if (streams.some(inRect)) this.reactive.water(tx, ty);
     if (water.some(inRect) && !land.some(inRect)) {
+      this.reactive.water(tx, ty);
       const w = water.find(inRect);
       ty = Math.min(WORLD_H - 40, w.y + w.h + 18);
     }
@@ -265,6 +306,8 @@ export default class WorldScene extends Phaser.Scene {
   teardown() {
     for (const [name, fn] of Object.entries(this.handlers ?? {})) this.game.events.off(name, fn);
     this.runner?.destroy();
+    this.tutorial?.destroy();
+    this.reactive?.destroy();
     destroyAmbient(this.ambient);
     this.cameraRig?.destroy();
     this.avatar?.destroy();
@@ -282,8 +325,12 @@ export default class WorldScene extends Phaser.Scene {
       onArrive: () => {
         npc.face(this.avatar.x);
         this.avatar.face(1);
-        if (quest) this.runner.start(zone, quest, npc);
-        else this.sayHello(zone, npc);
+        if (quest) {
+          this.tutorial?.questStarted();
+          this.runner.start(zone, quest, npc);
+        } else {
+          this.sayHello(zone, npc);
+        }
       },
     });
   }
@@ -291,7 +338,7 @@ export default class WorldScene extends Phaser.Scene {
   sayHello(zone, npc) {
     const helped = zone.quests.some((q) => q.npcId === npc.def.id && questDone(this.world, q.id));
     const line = helped ? npc.def.thanks : `Hello! I'm ${npc.def.name}. Come back soon!`;
-    if (helped) npc.cheer();
+    if (helped) npc.flourish();
     this.cameraRig.focus(npc.x, npc.y, 1.12);
     this.game.events.emit("dialog", { speaker: npc.def.name, portrait: npc.def.bird, line, hint: "done" });
   }
@@ -450,9 +497,37 @@ export default class WorldScene extends Phaser.Scene {
   spawnFollower() {
     if (this.follower || !this.home) return;
     const p = this.home.petPosition();
-    this.follower = createFollower(this, p.x, p.y + 8, "bird-condorChick", 54);
+    // Three sizes: the chick grows with practice.
+    const size = this.practiceStars >= 120 ? 62 : this.practiceStars >= 40 ? 54 : 46;
+    this.follower = createFollower(this, p.x, p.y + 8, "bird-condorChick", size);
     this.avatar.setFollower(this.follower);
     this.follower.follow(this.avatar.x, this.avatar.y, this.avatar.facing);
+  }
+
+  tickFollower() {
+    if (!this.follower || !this.avatar) return;
+    const feathers = Object.values(this.featherHandles)
+      .flat()
+      .filter((f) => f.img?.active)
+      .map((f) => ({ x: f.img.x, y: f.img.y }));
+    const questNpcs = Object.values(this.npcs)
+      .flatMap((n) => n.list)
+      .filter((n) => n.marker)
+      .map((n) => ({ x: n.x, y: n.y }));
+    const owls = Object.values(this.npcs)
+      .flatMap((n) => n.list)
+      .filter((n) => n.def.bird === "snowyOwl" || n.def.bird === "barnOwl")
+      .map((n) => ({ x: n.x, y: n.y }));
+    this.follower.tick({
+      avatar: { x: this.avatar.x, y: this.avatar.y, facing: this.avatar.facing },
+      idleMs: this.time.now - this.lastInputAt,
+      questActive: this.runner.isActive || this.inputLocked || this.avatar.moving,
+      feathers,
+      questNpcs,
+      owls,
+      night: this.ambient?.mode === "night",
+      nest: this.home?.petPosition() ?? null,
+    });
   }
 
   // ------------------------------------------------------------- economy
@@ -460,6 +535,7 @@ export default class WorldScene extends Phaser.Scene {
   collectFeather(id) {
     this.world = applyCollectFeather(this.world, id);
     this.save();
+    if (id === "welcomeFeather") this.tutorial?.featherCollected();
     this.toast("A feather!", "Tucked into your pocket.");
     this.emitState();
   }

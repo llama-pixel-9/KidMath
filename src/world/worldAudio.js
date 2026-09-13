@@ -165,6 +165,23 @@ export const sfx = {
     if (!on()) return;
     [523.25, 659.25, 783.99, 1046.5].forEach((f, i) => tone(f, { dur: 0.3, vol: 0.05, at: i * 0.06 }));
   },
+  /** Leaves rustling in a tapped tree. */
+  rustle() {
+    if (!on()) return;
+    noise({ dur: 0.35, vol: 0.05, freq: 2600, q: 0.4 });
+    noise({ dur: 0.25, vol: 0.03, freq: 1800, q: 0.5, at: 0.12 });
+  },
+  /** A frog into the pond. */
+  plop() {
+    if (!on()) return;
+    tone(320, { type: "sine", dur: 0.16, vol: 0.09, slideTo: 140 });
+    noise({ dur: 0.12, vol: 0.04, freq: 700, q: 0.6, at: 0.05 });
+  },
+  /** Woodpecker taps. */
+  peck(n = 5) {
+    if (!on()) return;
+    for (let i = 0; i < n; i++) noise({ dur: 0.03, vol: 0.06, freq: 1200, q: 2, at: i * 0.075 });
+  },
   /** The egg hatching: crack, crack, chirp! */
   hatch() {
     if (!on()) return;

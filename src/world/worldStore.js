@@ -23,6 +23,7 @@ export function emptyWorldState() {
     seed: null, // { plantedDay: "YYYY-MM-DD" } — the come-back-tomorrow hook
     discovered: [], // region ids the mist has rolled back from (gates opened)
     lastRegion: null, // where the skylark was last seen; spawn there next time
+    tutorialDone: false, // the wordless first minute has been played
   };
 }
 
@@ -47,6 +48,7 @@ export function loadWorldState() {
       seed: raw.seed && typeof raw.seed.plantedDay === "string" ? { plantedDay: raw.seed.plantedDay } : null,
       discovered: Array.isArray(raw.discovered) ? raw.discovered.filter((d) => typeof d === "string") : [],
       lastRegion: typeof raw.lastRegion === "string" ? raw.lastRegion : null,
+      tutorialDone: Boolean(raw.tutorialDone),
     };
   } catch {
     return emptyWorldState();
@@ -205,4 +207,9 @@ export function applyDiscover(state, regionId) {
 export function applyLastRegion(state, regionId) {
   if (state.lastRegion === regionId) return state;
   return { ...state, lastRegion: regionId };
+}
+
+export function applyTutorialDone(state) {
+  if (state.tutorialDone) return state;
+  return { ...state, tutorialDone: true };
 }

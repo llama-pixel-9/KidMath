@@ -306,47 +306,139 @@ export function createAvatar(scene, x, y, { waterRects = [], landRects = [] } = 
   };
 }
 
-/** The hatched chick that hops after the skylark, a step behind. */
+/**
+ * The hatched chick: a companion, not a counter. It hops after the skylark,
+ * but it also acts on its own — points at a feather or a bird with a quest
+ * when the kid has been idle a while, hides behind the skylark near an owl,
+ * and sleeps in the home nest at night. `tick(ctx)` is called by the scene
+ * every ~700ms with what it needs to know.
+ */
 export function createFollower(scene, x, y, birdKey, height = 56) {
   const sprite = scene.add.image(x, y, birdKey).setOrigin(0.5, 1);
   const scaleAt = (feetY) => (height / sprite.height) * depthScaleAt(feetY);
   sprite.setScale(scaleAt(y)).setDepth(y);
   let busy = false;
+  let mode = "follow"; // follow | point | hide | sleep
+  let pointUntil = 0;
+  let zzz = null;
   const bob = scene.tweens.add({ targets: sprite, y: y - 4, duration: 600, yoyo: true, repeat: -1, ease: "Sine.easeInOut" });
+
+  const hopTo = (gx, gy, onDone) => {
+    if (busy) return false;
+    busy = true;
+    bob.pause();
+    sprite.setFlipX(gx < sprite.x);
+    const sx = sprite.x;
+    const sy = sprite.y;
+    const p = { t: 0 };
+    scene.tweens.add({
+      targets: p,
+      t: 1,
+      duration: Math.min(1100, 300 + Math.hypot(gx - sx, gy - sy) * 1.2),
+      ease: "Sine.easeInOut",
+      onUpdate: () => {
+        sprite.x = sx + (gx - sx) * p.t;
+        const feet = sy + (gy - sy) * p.t;
+        sprite.y = feet - Math.abs(Math.sin(p.t * Math.PI * 3)) * 16;
+        sprite.setScale(scaleAt(feet)).setDepth(feet);
+      },
+      onComplete: () => {
+        sprite.y = gy;
+        busy = false;
+        bob.restart();
+        onDone?.();
+      },
+    });
+    return true;
+  };
+
+  const sleep = (nest) => {
+    mode = "sleep";
+    hopTo(nest.x + 18, nest.y, () => {
+      sprite.setAngle(12);
+      zzz = scene.add
+        .text(sprite.x + 16, sprite.y - 44, "z", { fontFamily: "Fredoka, system-ui, sans-serif", fontSize: "22px", color: "#14231f" })
+        .setOrigin(0.5)
+        .setDepth(sprite.depth + 1)
+        .setAlpha(0.8);
+      scene.tweens.add({ targets: zzz, y: zzz.y - 18, alpha: 0.2, scale: 1.4, duration: 1600, repeat: -1, ease: "Sine.easeOut" });
+    });
+  };
+  const wake = () => {
+    mode = "follow";
+    sprite.setAngle(0);
+    zzz?.destroy();
+    zzz = null;
+  };
+
   return {
     sprite,
+    get mode() {
+      return mode;
+    },
     follow(tx, ty, facing) {
+      if (mode !== "follow") return;
       const gx = tx - facing * 70;
       const gy = clampToGround(Math.min(GROUND_BOTTOM, ty + 14));
-      if (busy) return;
-      busy = true;
-      bob.pause();
-      sprite.setFlipX(tx < sprite.x);
-      const sx = sprite.x;
-      const sy = sprite.y;
-      const p = { t: 0 };
-      scene.time.delayedCall(180, () => {
-        scene.tweens.add({
-          targets: p,
-          t: 1,
-          duration: Math.min(900, 300 + Math.hypot(gx - sx, gy - sy) * 1.2),
-          ease: "Sine.easeInOut",
-          onUpdate: () => {
-            sprite.x = sx + (gx - sx) * p.t;
-            const feet = sy + (gy - sy) * p.t;
-            sprite.y = feet - Math.abs(Math.sin(p.t * Math.PI * 3)) * 16;
-            sprite.setScale(scaleAt(feet)).setDepth(feet);
-          },
-          onComplete: () => {
-            sprite.y = gy;
-            busy = false;
-            bob.restart();
-          },
+      scene.time.delayedCall(180, () => hopTo(gx, gy));
+    },
+    tick(ctx) {
+      const now = scene.time.now;
+      // Night: bed time in the nest (the kid can still play; the chick rests).
+      if (ctx.night && ctx.nest) {
+        if (mode !== "sleep") sleep(ctx.nest);
+        return;
+      }
+      if (mode === "sleep") wake();
+      // An owl nearby: hide behind the skylark and shiver.
+      const owl = ctx.owls.find((o) => Math.hypot(o.x - ctx.avatar.x, o.y - ctx.avatar.y) < 340);
+      if (owl) {
+        if (mode !== "hide") {
+          mode = "hide";
+          const side = Math.sign(ctx.avatar.x - owl.x) || 1;
+          hopTo(ctx.avatar.x + side * 44, Math.min(GROUND_BOTTOM, ctx.avatar.y + 10), () => {
+            scene.tweens.add({ targets: sprite, x: sprite.x + 3, duration: 60, yoyo: true, repeat: 9 });
+            sfx.chirp(3);
+          });
+        }
+        return;
+      }
+      if (mode === "hide") {
+        mode = "follow";
+        this.follow(ctx.avatar.x, ctx.avatar.y, ctx.avatar.facing);
+        return;
+      }
+      if (mode === "point") {
+        if (now > pointUntil) {
+          mode = "follow";
+          this.follow(ctx.avatar.x, ctx.avatar.y, ctx.avatar.facing);
+        }
+        return;
+      }
+      // Idle kid: point the way to something worth tapping.
+      if (ctx.idleMs > 7000 && !ctx.questActive) {
+        const near = (list, max) =>
+          list
+            .map((t) => ({ t, d: Math.hypot(t.x - ctx.avatar.x, t.y - ctx.avatar.y) }))
+            .filter((e) => e.d > 80 && e.d < max)
+            .sort((a, b) => a.d - b.d)[0]?.t;
+        const target = near(ctx.feathers, 620) ?? near(ctx.questNpcs, 820);
+        if (!target) return;
+        mode = "point";
+        pointUntil = now + 6000;
+        const gx = ctx.avatar.x + (target.x - ctx.avatar.x) * 0.55;
+        const gy = clampToGround(ctx.avatar.y + (target.y - ctx.avatar.y) * 0.55);
+        hopTo(gx, gy, () => {
+          sprite.setFlipX(target.x < sprite.x);
+          sfx.chirp(6);
+          scene.tweens.add({ targets: sprite, y: sprite.y - 18, duration: 160, yoyo: true, repeat: 3, ease: "Quad.easeOut" });
+          scene.tweens.add({ targets: sprite, angle: (target.x < sprite.x ? 1 : -1) * 10, duration: 200, yoyo: true, repeat: 2 });
         });
-      });
+      }
     },
     destroy() {
       bob.stop();
+      zzz?.destroy();
       sprite.destroy();
     },
   };

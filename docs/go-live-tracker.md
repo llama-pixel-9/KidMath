@@ -133,11 +133,14 @@ expired. Remaining items are live-mode setup and emails.
 
 ### Pilot / complimentary accounts
 
-`npm run comp -- parent@example.com [--until YYYY-MM-DD] [--revoke]` and
-`npm run comp -- --list` (service role; `set -a && source .env.local && set +a`
-first). Writes an `entitlements` row with `product_id = 'comp'`, no source, no
-expiry — both platforms treat that as a promotional grant. The parent must
-have signed in once. A real Stripe/App Store purchase later overwrites it.
+**/admin → Comps tab** (grant by email, optional end date, revoke, list) —
+backed by the `admin-comps` Edge Function, which re-checks
+`profiles.is_admin` and writes with the service role. Same thing from a
+terminal: `npm run comp -- parent@example.com [--until YYYY-MM-DD] [--revoke]`
+/ `--list`. Either way it is an `entitlements` row with `product_id = 'comp'`,
+no source, no expiry — both platforms treat that as a promotional grant. The
+parent must have signed in once. A comp never replaces a live paid
+subscription; a real purchase later overwrites the comp.
 Until `VITE_PAYWALL_ENABLED=true` is set on prod, nobody needs a comp —
 every mode is free for everyone.
 

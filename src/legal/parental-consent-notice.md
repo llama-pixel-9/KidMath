@@ -2,14 +2,6 @@
 
 **Effective date:** August 6, 2026 · **Last updated:** August 6, 2026 · **Version:** 2026-08-06
 
-> **Drafting note — remove before publication.** This is the **direct notice to parents** required by 16 C.F.R. § 312.4(c)(1). It is not a substitute for the Privacy Policy; it is the separate notice that must be **delivered to the parent** at the moment we seek consent.
->
-> **Delivery:** this text is sent by email when a parent creates their first child profile, and is also published at `/parental-consent` so the Privacy Policy can link to it. The consent method is **"email plus"** under 16 C.F.R. § 312.5(b)(2)(viii) — the parent's reply, followed by a confirmatory message carrying the revocation notice.
->
-> **Two things must remain true or this method becomes unavailable:** (1) we must not "disclose" children's personal information as § 312.2 defines it — service providers supplying support for internal operations are carved out, so Supabase and Vercel are fine, but **any advertising SDK, marketing pixel, or analytics tool that receives children's data ends our eligibility for this method immediately**; and (2) the confirmatory message must carry the revocation notice, which § 312.5(b)(2)(viii) requires in terms.
->
-> The seven statutory elements of § 312.4(c)(1) are mapped in the comment block in `src/legal/index.js`. Do not edit the substance without checking each one still appears.
-
 ---
 
 ## About this notice

@@ -19,7 +19,9 @@ export function createWorldGame(parent, worldData = {}) {
       height: parent.clientHeight || window.innerHeight,
     },
     render: { antialias: true, roundPixels: false, powerPreference: "high-performance" },
-    input: { activePointers: 2 },
+    // The DOM layer (dialog, map, panels) sits over the canvas: presses on
+    // it must never reach the world, so no window-level pointer events.
+    input: { activePointers: 2, windowEvents: false },
     callbacks: {
       preBoot: (g) => g.registry.set("worldData", worldData),
     },

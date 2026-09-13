@@ -11,7 +11,7 @@ import { birdUrl } from "./worldArt";
 import QuestDialog from "./QuestDialog";
 import HomePanel from "./HomePanel";
 import PracticePanel from "./PracticePanel";
-import RegionRibbon from "./RegionRibbon";
+import MapPanel from "./MapPanel";
 import { Diamond } from "./ui";
 
 const FIRST_FLIGHT_KEY = "larkit-world-first-flight";
@@ -67,6 +67,8 @@ export default function WorldPage() {
   const [homeOpen, setHomeOpen] = useState(false);
   const [practiceRegion, setPracticeRegion] = useState(null);
   const [pocketBump, setPocketBump] = useState(0);
+  const [mapOpen, setMapOpen] = useState(false);
+  const [avatarX, setAvatarX] = useState(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -74,6 +76,7 @@ export default function WorldPage() {
     const tokens = readOverrides();
     const override = tokens.includes("all") ? "all" : null;
     const timeToken = tokens.find((t) => t === "day" || t === "dusk" || t === "night") ?? null;
+    const seasonToken = tokens.find((t) => t === "spring" || t === "summer" || t === "autumn" || t === "winter") ?? null;
     const worldState = loadWorldState();
 
     loadProgressSummary()
@@ -88,6 +91,7 @@ export default function WorldPage() {
           isPremium,
           override,
           timeOfDay: timeOfDay(new Date(), timeToken),
+          season: seasonToken,
           firstFlight: tokens.includes("arrive") ? true : override === "all" ? false : firstFlightPending(worldState),
         });
         gameRef.current = game;
@@ -116,6 +120,7 @@ export default function WorldPage() {
           setPracticeRegion(regionId);
         });
         ev.on("toast", (t) => setToast({ ...t, id: Date.now() }));
+        ev.on("avatar-x", setAvatarX);
       });
 
     return () => {
@@ -185,9 +190,33 @@ export default function WorldPage() {
         </div>
       )}
 
-      {/* Bottom layer: ribbon, dialog, panels */}
-      {ready && !dialog && !homeOpen && !practiceRegion && (
-        <RegionRibbon regions={REGIONS} discovered={world.discovered} current={world.region} onPick={(id) => emit("go-region", id)} />
+      {/* Bottom layer: map button, dialog, panels */}
+      {ready && !dialog && !homeOpen && !practiceRegion && !mapOpen && (
+        <button
+          type="button"
+          onClick={() => {
+            emit("map-open");
+            setMapOpen(true);
+          }}
+          aria-label="Open the island map"
+          className="absolute bottom-3 left-3 z-20 rounded-full bg-cream/95 shadow-md pl-2 pr-4 py-1.5 font-display font-semibold text-teal text-base flex items-center gap-2 backdrop-blur hover:scale-105 active:scale-95"
+        >
+          <span className="world-scroll-icon" aria-hidden="true" />
+          Map
+        </button>
+      )}
+      {mapOpen && (
+        <MapPanel
+          regions={REGIONS}
+          zones={ZONES}
+          world={world}
+          avatarX={avatarX}
+          onFly={(id) => {
+            setMapOpen(false);
+            emit("go-region", id);
+          }}
+          onClose={() => setMapOpen(false)}
+        />
       )}
       {dialog && (
         <QuestDialog

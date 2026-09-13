@@ -41,6 +41,19 @@ export function startLife(scene, { npcsFor, currentRegion, isQuiet }) {
 
   schedule();
   return {
+    get running() {
+      return running;
+    },
+    /** The kid tapped: whoever is out visiting hops straight home. */
+    interrupt() {
+      if (!running) return;
+      running = false;
+      const npcs = npcsFor(currentRegion())?.list ?? [];
+      for (const n of npcs) {
+        scene.tweens.killTweensOf(n.sprite);
+        scene.tweens.add({ targets: n.sprite, x: n.x, y: n.y, angle: 0, duration: 260, ease: "Sine.easeOut" });
+      }
+    },
     destroy() {
       timer?.remove();
     },
@@ -76,6 +89,7 @@ function visit(scene, npcs, done) {
   const goOut = () => {
     i += 1;
     hop(homeX + ((stopX - homeX) * i) / hops, () => {
+      if (Math.abs(sprite.x - (homeX + ((stopX - homeX) * i) / hops)) > 5) return done(); // interrupted
       if (i < hops) return goOut();
       b.face(a.sprite.x);
       sfx.chirp(a.def.voice ?? 0);

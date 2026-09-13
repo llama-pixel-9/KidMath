@@ -25,6 +25,7 @@ export function emptyWorldState() {
     lastRegion: null, // where the skylark was last seen; spawn there next time
     tutorialDone: false, // the wordless first minute has been played
     secrets: [], // hidden things found (secrets.js ids)
+    visitorDay: null, // the last calendar day the visitor was helped
   };
 }
 
@@ -51,6 +52,7 @@ export function loadWorldState() {
       lastRegion: typeof raw.lastRegion === "string" ? raw.lastRegion : null,
       tutorialDone: Boolean(raw.tutorialDone),
       secrets: Array.isArray(raw.secrets) ? raw.secrets.filter((d) => typeof d === "string") : [],
+      visitorDay: typeof raw.visitorDay === "string" ? raw.visitorDay : null,
     };
   } catch {
     return emptyWorldState();
@@ -225,4 +227,9 @@ export function applySecretFound(state, secretId, stars = 2) {
     secrets: [...state.secrets, secretId],
     egg: state.egg ? { ...state.egg, warmth: state.egg.warmth + stars } : state.egg,
   };
+}
+
+export function applyVisitorHelped(state, dayKey) {
+  if (state.visitorDay === dayKey) return state;
+  return { ...state, visitorDay: dayKey };
 }

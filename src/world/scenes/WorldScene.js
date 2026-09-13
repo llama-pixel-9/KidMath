@@ -20,6 +20,7 @@ import {
   applyLastRegion,
   applyTutorialDone,
   applySecretFound,
+  applyVisitorHelped,
 } from "../worldStore";
 import { groupPlayed } from "../mastery/masteryModel";
 import { birdSize } from "../worldArt";
@@ -44,6 +45,9 @@ import { buildReactive } from "../engine/reactive";
 import { startTutorial } from "../engine/tutorial";
 import { buildSecrets, SECRET_COUNT } from "../engine/secrets";
 import { startLife } from "../engine/life";
+import { applySeason, destroySeasonal } from "../engine/seasonal";
+import { visitorForDate, visitorQuest, VISITOR_SPOT } from "../engine/visitor";
+import { seasonForDate } from "../../engagement/seasons.js";
 import { QuestRunner } from "../engine/questRunner";
 import { sparkle, DEPTH } from "../engine/juice";
 
@@ -85,6 +89,7 @@ export default class WorldScene extends Phaser.Scene {
     this.terrain = buildTerrain(this);
     this.ambient = buildAmbient(this, { mode: this.worldData.timeOfDay ?? "day" });
     this.reactive = buildReactive(this, this.terrain);
+    this.seasonal = applySeason(this, this.terrain, this.worldData.season ?? seasonForDate(new Date()));
     this.featherHandles = {};
     this.lastInputAt = 0;
 
@@ -98,6 +103,7 @@ export default class WorldScene extends Phaser.Scene {
       }
     }
     this.secrets = buildSecrets(this, [...this.world.secrets], (id) => this.onSecretFound(id));
+    this.buildVisitor();
     this.life = startLife(this, {
       npcsFor: (id) => this.npcs[id],
       currentRegion: () => this.currentRegionId,
@@ -219,6 +225,31 @@ export default class WorldScene extends Phaser.Scene {
     hitZone(this, gate.board.x, gate.board.y, 240, 130, () => this.onGateTap(zone));
   }
 
+  /** Today's visitor on the beach, unless already helped today. */
+  buildVisitor() {
+    const v = visitorForDate(new Date());
+    if (this.world.visitorDay === v.day) return;
+    if (!this.textures.exists(`bird-${v.bird}`)) return;
+    const def = { id: "visitor", name: v.name, bird: v.bird, x: VISITOR_SPOT.x, y: VISITOR_SPOT.y, size: 104, questId: `visitor-${v.day}`, thanks: v.thanks, voice: v.voice };
+    const region = { x0: 0, id: "visitor" };
+    const group = buildNpcs(this, { npcs: [def] }, region, {
+      onTap: (npc) => {
+        if (this.runner.isActive || this.inputLocked) return;
+        npc.greet(this.avatar.x);
+        const spot = npc.talkSpot();
+        this.avatar.goTo(spot.x + 240, spot.y, {
+          onArrive: () => {
+            npc.face(this.avatar.x);
+            this.avatar.face(-1);
+            this.runner.start({ id: "meadow", quests: [], objects: {} }, visitorQuest(v), npc);
+          },
+        });
+      },
+    });
+    this.visitor = { group, npc: group.list[0], day: v.day };
+    this.visitor.npc.setMarker(true);
+  }
+
   allWater() {
     return REGIONS.flatMap((r) => (ZONES[r.id] ? worldRects(ZONES[r.id], r) : []));
   }
@@ -264,8 +295,14 @@ export default class WorldScene extends Phaser.Scene {
     // arrive in the same frame, so re-check with a fresh hit test and hand
     // the press to the top-most target ourselves.
     this.input.on("pointerdown", (p) => {
+      // A press that started on the DOM layer is not a tap on the island.
+      if (p.event?.target && p.event.target !== this.game.canvas) {
+        this.downAt = null;
+        return;
+      }
       this.downAt = { x: p.x, y: p.y };
       this.lastInputAt = this.time.now;
+      this.life?.interrupt();
       if (this.pointerConsumed) return;
       const zones = this.input.hitTestPointer(p).filter((o) => o.type === "Zone" && o.input?.enabled);
       const top = zones[zones.length - 1];
@@ -305,6 +342,7 @@ export default class WorldScene extends Phaser.Scene {
     this.handlers = {
       "shop-buy": (itemId) => this.buyDecoration(itemId),
       "go-region": (id) => this.goToRegion(id),
+      "map-open": () => this.game.events.emit("avatar-x", this.avatar?.x ?? null),
       "dialog-next": () => {
         if (!this.runner.isActive) {
           ev.emit("dialog-close");
@@ -321,6 +359,8 @@ export default class WorldScene extends Phaser.Scene {
     this.tutorial?.destroy();
     this.secrets?.destroy();
     this.life?.destroy();
+    destroySeasonal(this.seasonal);
+    this.visitor?.group.destroy();
     this.reactive?.destroy();
     destroyAmbient(this.ambient);
     this.cameraRig?.destroy();
@@ -382,6 +422,25 @@ export default class WorldScene extends Phaser.Scene {
 
   onQuestEnd(quest, npc) {
     if (!quest) return;
+    if (quest.id.startsWith("visitor-")) {
+      this.world = applyVisitorHelped(this.world, this.visitor?.day);
+      this.save();
+      this.refreshPet();
+      this.emitState();
+      const v = this.visitor;
+      if (v) {
+        v.npc.setMarker(false);
+        this.time.delayedCall(1500, () => {
+          const sprite = v.npc.sprite;
+          sfx.takeoff();
+          this.tweens.add({ targets: sprite, scaleY: sprite.scaleY * 0.7, duration: 100, yoyo: true, repeat: 16 });
+          this.tweens.add({ targets: sprite, x: sprite.x - 900, y: sprite.y - 600, alpha: 0.2, duration: 2400, ease: "Sine.easeIn", onComplete: () => v.group.destroy() });
+          this.toast("Safe travels!", "Someone new lands tomorrow.");
+        });
+        this.visitor = null;
+      }
+      return;
+    }
     const zone = ZONES[regionAtX(npc?.x ?? this.avatar.x)?.id] ?? this.zoneOfQuest(quest.id);
     const region = regionById(zone.regionId);
     const last = quest.steps.at(-1);
@@ -611,5 +670,6 @@ export default class WorldScene extends Phaser.Scene {
       for (const n of Object.values(this.npcs)) n.watch(this.avatar.x);
     }
     this.cameraRig.setLookAhead(this.avatar.moving ? this.avatar.facing : 0);
+    if ((time | 0) % 30 === 0) this.game.events.emit("avatar-x", this.avatar.x);
   }
 }

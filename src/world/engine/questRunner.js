@@ -93,8 +93,8 @@ export class QuestRunner {
         break;
       }
       case "celebrate": {
-        const f = this.fixturesFor(this.zone.id);
-        const fx = Object.values(f).find((h) => h && h.fixture === step.fixture);
+        const f = this.fixturesFor(this.zone.id) ?? {};
+        const fx = step.fixture ? Object.values(f).find((h) => h && h.fixture === step.fixture) : null;
         const at = fx?.anchor ?? (this.npc ? { x: this.npc.x, y: this.npc.y - 60 } : { x: 0, y: 0 });
         this.onCelebrate?.(this.active, step, fx);
         fx?.complete?.(false);

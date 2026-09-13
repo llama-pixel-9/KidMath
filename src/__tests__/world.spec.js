@@ -24,6 +24,7 @@ import { MEADOW_ZONE } from "../world/zones/meadowZone";
 import { buildLoadList, birdUrl, propUrl, zoneUrl } from "../world/worldArt";
 import { timeOfDay } from "../world/worldTime";
 import { zoomFor } from "../world/engine/cameraRig";
+import { VISITORS, visitorForDate, visitorQuest } from "../world/engine/visitor";
 import {
   emptyWorldState,
   applyQuestComplete,
@@ -108,6 +109,27 @@ describe("the island layout", () => {
     expect(timeOfDay(new Date(2026, 0, 1, 3))).toBe("night");
     expect(timeOfDay(new Date(2026, 0, 1, 12), "night")).toBe("night");
     expect(timeOfDay(new Date(2026, 0, 1, 23), "all")).toBe("night");
+  });
+});
+
+describe("the daily visitor", () => {
+  it("every visitor has real art, honest options, and a full quest", () => {
+    for (const v of VISITORS) {
+      expect(exists(birdUrl(v.bird)), v.bird).toBe(true);
+      expect(v.options).toContain(v.answer);
+      expect(new Set(v.options).size).toBe(v.options.length);
+      const q = visitorQuest({ ...v, day: "2026-09-13" });
+      expect(q.steps.map((s) => s.type)).toEqual(["talk", "pickNumber", "celebrate"]);
+      expect(q.steps.at(-1).stars).toBe(2);
+    }
+  });
+  it("is the same bird all day and a different one another day", () => {
+    const a = visitorForDate(new Date(2026, 8, 13, 9));
+    const b = visitorForDate(new Date(2026, 8, 13, 20));
+    expect(a.bird).toBe(b.bird);
+    expect(a.day).toBe("2026-09-13");
+    const week = new Set(Array.from({ length: 7 }, (_, i) => visitorForDate(new Date(2026, 8, 13 + i)).bird));
+    expect(week.size).toBeGreaterThan(3);
   });
 });
 

@@ -62,29 +62,34 @@ Prod carries all the code while staying closed to new users:
 
 ## 2 · Blocks charging real money (before `VITE_PAYWALL_ENABLED=true`)
 
-Nothing here has started. As of 2026-09-13 `stripe-checkout` and
-`stripe-webhook` are **not deployed** and no `STRIPE_*` secrets exist.
+**Test-mode loop verified end to end 2026-09-13:** disclosure logged →
+Checkout ($0 today, trial) → webhook wrote `entitlements` active → portal
+opened → cancelled on a phone in one tap → webhook flipped the row to
+expired. Remaining items are live-mode setup and emails.
 
+- [x] Stripe dashboard (test mode / sandbox): product **Larkit Premium**,
+  $8.99/mo `larkit_monthly`, $39.99/yr `larkit_annual` (2026-09-13).
 - [ ] Stripe dashboard (live mode): product **Larkit Premium** with
   **$8.99/mo** (lookup key `larkit_monthly`) and **$39.99/yr** launch price
   (lookup key `larkit_annual`). Retiring the launch price later = new
   $54.99 price with the same lookup key, archive the old one.
-- [ ] Deploy `stripe-checkout`, `stripe-portal`, `stripe-prices
+- [x] Deploy `stripe-checkout`, `stripe-portal`, `stripe-prices
   --no-verify-jwt` and `stripe-webhook --no-verify-jwt` from a main-based
-  tree. (PR #94: prices are read from Stripe at runtime — the paywall and
+  tree (2026-09-13). Redeploy after PR #95 (portal fixes) merges. (PR #94: prices are read from Stripe at runtime — the paywall and
   disclosure carry no literals, so the launch price is purely a dashboard +
   secret decision.)
-- [ ] Secrets: `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`. (No price ids:
+- [x] Secrets (test values): `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`. (No price ids:
   prices are found by lookup key `larkit_monthly` / `larkit_annual` set on
   the price in the dashboard.)
-- [ ] Webhook endpoint at `…/functions/v1/stripe-webhook` with
+- [x] Webhook endpoint (test mode) at `…/functions/v1/stripe-webhook` with
   `checkout.session.completed`, `customer.subscription.updated`,
   `customer.subscription.deleted`.
-- [ ] Test-mode end-to-end per stripe-setup.md §4 (checkout → entitlements
-  row `active` → premium unlocks on web; iOS honors the same row).
-- [ ] **Cancel-flow test on a phone browser:** subscribe (test card) →
-  /account/billing → cancelled in one tap, no survey. "Use a desktop" was a
-  named FTC violation (*Chegg*) — test on the phone, not the laptop.
+- [x] Test-mode end-to-end per stripe-setup.md §4 (checkout → entitlements
+  row `active` → premium unlocks on web). iOS side untested until §4.
+- [x] **Cancel-flow test on a phone browser** — 2026-09-13, one tap,
+  immediate, no survey (Stripe portal config `kidmath_cancel_v1`). Repeat
+  once in live mode: the portal configuration is per-mode and is created on
+  first call.
 - [ ] Confirmation + reminder emails (trial day 11, 35 days pre-annual-renewal,
   annual, pre-price-change). Sender is now live (§3) — confirm these are
   actually built and wired to Resend before flipping the paywall.
@@ -99,6 +104,12 @@ Nothing here has started. As of 2026-09-13 `stripe-checkout` and
   `sk_live_` key can do anything (refunds, payouts, deleting customers);
   the functions only need the list above. Test mode keeps the standard
   `sk_test_` key — no need to harden a sandbox.
+- [ ] Live-mode switch: activate the Stripe account (EIN, bank, statement
+  descriptor "LARKIT"), copy the product to live mode with the same lookup
+  keys, create the live webhook endpoint, set the live restricted key and
+  live `STRIPE_WEBHOOK_SECRET`.
+- [ ] Onboarding plan step says "or $8.99 monthly" but only starts the
+  annual plan — either add a monthly toggle or drop the phrase.
 - [ ] Set `VITE_PAYWALL_ENABLED=true` in Vercel Production; redeploy.
 
 ## 3 · Consent flow (B7 — email sender) — DONE 2026-09-12/13

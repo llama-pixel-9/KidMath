@@ -98,5 +98,6 @@ larkit.io) sets the links.
 
 ## 7. Complimentary accounts
 
-`npm run comp -- <email> [--until YYYY-MM-DD] [--revoke]` / `--list` —
-see docs/go-live-tracker.md §2 "Pilot / complimentary accounts".
+/admin → **Comps** tab (or `npm run comp -- <email> [--until YYYY-MM-DD]
+[--revoke]` / `--list`) — see docs/go-live-tracker.md §2 "Pilot /
+complimentary accounts". Function: `admin-comps`.

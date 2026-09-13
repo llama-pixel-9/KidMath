@@ -133,7 +133,7 @@ export function FieldGuideEntry({ speciesId, metBirds, onFlipTo, onClose, onRena
               transition={{ duration: 0.18, ease: "easeOut" }}
             >
               <svg width="220" height="170" viewBox="-110 -150 220 170">
-                <BirdSprite speciesId={speciesId} x={0} y={0} depth={1.6} label={species.name} />
+                <BirdSprite speciesId={speciesId} x={0} y={0} fit={{ w: 200, h: 142 }} label={species.name} />
               </svg>
             </motion.div>
           </AnimatePresence>

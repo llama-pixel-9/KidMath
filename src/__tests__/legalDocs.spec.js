@@ -48,6 +48,9 @@ describe("legal documents", () => {
     // the one operators most often drop; assert it explicitly.
     expect(md).toMatch(/\*\*Telephone\*\*/);
     expect(md).toMatch(/\*\*Address\*\*/);
+    // ...and a real number, not the 555 placeholder the file shipped with.
+    expect(md).not.toMatch(/555[- ]?555/);
+    expect(md).toContain("(814) 273-8760");
     // (d)(2) named third parties — categories alone are not sufficient in the
     // ONLINE notice, only in the direct notice.
     for (const vendor of ["Supabase", "Vercel", "Stripe", "Apple", "Google"]) {

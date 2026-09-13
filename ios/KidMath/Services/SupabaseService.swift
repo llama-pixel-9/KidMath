@@ -36,6 +36,7 @@ final class SupabaseService: ObservableObject {
 
     var isSignedIn: Bool { user != nil }
     var userId: UUID? { user?.id }
+    var userEmail: String? { user?.email }
 
     // MARK: - Auth
 

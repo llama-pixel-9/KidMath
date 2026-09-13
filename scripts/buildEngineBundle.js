@@ -57,6 +57,9 @@ const result = await build({
   platform: "neutral",
   target: "es2020",
   minify: false, // readable for debugging; JSC parses it fine
+  // The parental-consent notice ships inside the bundle so iOS can send the
+  // rendered direct notice to request-consent (one source for both apps).
+  loader: { ".md": "text" },
   legalComments: "none",
   logLevel: "info",
   // Guard against a browser global sneaking in: these must be UNDEFINED in the
@@ -69,9 +72,16 @@ const result = await build({
 // Report size + a scan for stray browser globals as a second safety net.
 const code = readFileSync(outfile, "utf8");
 const kb = (code.length / 1024).toFixed(0);
-const strayGlobals = ["import.meta", "window.", "document.", "localStorage", "XMLHttpRequest"].filter(
-  (g) => code.includes(g)
-);
+// `window.` / `document.` only count as PROPERTY ACCESS (followed by an
+// identifier) — the bundled legal notice legitimately ends a sentence with
+// "identity document."
+const strayGlobals = [
+  ["import.meta", /import\.meta/],
+  ["window.", /\bwindow\.[A-Za-z_$]/],
+  ["document.", /\bdocument\.[A-Za-z_$]/],
+  ["localStorage", /localStorage/],
+  ["XMLHttpRequest", /XMLHttpRequest/],
+].filter(([, re]) => re.test(code)).map(([name]) => name);
 
 process.stdout.write(`\nBuilt ios/KidMath/Resources/KidMathEngine.bundle.js (${kb} KB)\n`);
 if (strayGlobals.length) {

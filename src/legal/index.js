@@ -3,6 +3,7 @@ import termsMd from "./terms-of-service.md?raw";
 import securityMd from "./vulnerability-disclosure.md?raw";
 import consentMd from "./parental-consent-notice.md?raw";
 import { fillTokens } from "./entity.js";
+import { LEGAL_VERSIONS } from "./versions.js";
 
 /**
  * The legal document registry.
@@ -24,7 +25,7 @@ export const LEGAL_DOCS = {
   privacy: {
     slug: "privacy",
     title: "Privacy Policy",
-    version: "2026-08-06",
+    version: LEGAL_VERSIONS["privacy"],
     markdown: privacyMd,
     // Doubles as the COPPA online notice under 16 CFR §312.4(d). A link to it
     // must appear on the home screen AND at every point where personal
@@ -34,19 +35,19 @@ export const LEGAL_DOCS = {
   terms: {
     slug: "terms",
     title: "Terms of Service",
-    version: "2026-08-05",
+    version: LEGAL_VERSIONS["terms"],
     markdown: termsMd,
   },
   security: {
     slug: "security",
     title: "Vulnerability Disclosure Policy",
-    version: "2026-08-05",
+    version: LEGAL_VERSIONS["security"],
     markdown: securityMd,
   },
   "parental-consent": {
     slug: "parental-consent",
     title: "Parental Consent Notice",
-    version: "2026-08-06",
+    version: LEGAL_VERSIONS["parental-consent"],
     markdown: consentMd,
     /**
      * The DIRECT notice under 16 CFR §312.4(c)(1) — a distinct legal

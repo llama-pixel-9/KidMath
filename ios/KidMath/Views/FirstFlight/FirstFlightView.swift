@@ -345,6 +345,9 @@ struct KidStep: View {
     @State private var added: [KidProfile] = []
     @State private var errorMessage = ""
     @State private var busy = false
+    /// Set when the first kid's details are waiting on the parent's email
+    /// tap — the form gives way to ConsentPendingView (web: ConsentPendingPanel).
+    @State private var pending: KidProfilesService.PendingConsent?
 
     private var complete: Bool {
         !firstName.trimmingCharacters(in: .whitespaces).isEmpty && age != nil && grade != nil
@@ -355,6 +358,24 @@ struct KidStep: View {
     }
 
     var body: some View {
+        if let pending {
+            ConsentPendingView(
+                pending: pending,
+                email: app.supabase.userEmail ?? "your email",
+                onResend: { try await app.kidProfiles.requestParentalConsent(firstName: pending.firstName, age: pending.age, grade: pending.grade) },
+                onConfirmed: { kid in
+                    self.pending = nil
+                    added.append(kid)
+                    onDone(added)
+                },
+                checkConfirmed: { await app.kidProfiles.confirmedKid(named: pending.firstName) }
+            )
+        } else {
+            form
+        }
+    }
+
+    private var form: some View {
         VStack(alignment: .leading, spacing: 0) {
             Text("Who's learning?")
                 .font(theme.displayFont(size: 34))
@@ -478,13 +499,20 @@ struct KidStep: View {
         busy = true
         defer { busy = false }
         do {
-            let kid = try await app.kidProfiles.addKid(firstName: firstName, age: age, grade: grade)
-            added.append(kid)
-            firstName = ""
-            self.age = nil
-            self.grade = nil
-            errorMessage = ""
-            return kid
+            switch try await app.kidProfiles.addKid(firstName: firstName, age: age, grade: grade) {
+            case .added(let kid):
+                added.append(kid)
+                firstName = ""
+                self.age = nil
+                self.grade = nil
+                errorMessage = ""
+                return kid
+            case .pendingConsent(let request):
+                // Nothing is stored yet; the parent confirms by email.
+                errorMessage = ""
+                pending = request
+                return nil
+            }
         } catch {
             errorMessage = "Could not save — \(error.localizedDescription)"
             return nil
@@ -493,7 +521,7 @@ struct KidStep: View {
 
     private func handleContinue() async {
         if complete {
-            guard await save() != nil else { return }
+            guard await save() != nil else { return }  // nil also while consent is pending
         }
         guard !added.isEmpty else {
             errorMessage = "Add a first name, age and grade to continue."
@@ -527,9 +555,10 @@ private struct PlanStep: View {
         annualSelected ? app.store.annual : app.store.monthly
     }
 
-    private var disclosureLabel: String {
-        let price = selectedProduct?.displayPrice ?? (annualSelected ? "$54.99" : "$8.99")
-        return AutoRenewalTerms.label(price: price, period: annualSelected ? "year" : "month")
+    /// nil until StoreKit answers — no disclosure without the real price.
+    private var disclosureLabel: String? {
+        guard let product = selectedProduct else { return nil }
+        return AutoRenewalTerms.label(price: product.displayPrice, period: annualSelected ? "year" : "month")
     }
 
     var body: some View {
@@ -657,7 +686,10 @@ private struct PlanStep: View {
             VStack(spacing: 8) {
                 // The state auto-renewal disclosure, before the purchase step:
                 // trial end date, first charge amount and date, renewal terms.
-                AutoRenewalConsentBox(ack: $autoRenewAck, label: disclosureLabel)
+                AutoRenewalConsentBox(
+                    ack: $autoRenewAck,
+                    label: disclosureLabel ?? "The auto-renewal terms will appear once prices load."
+                )
                     .padding(.top, 4)
 
                 Button {

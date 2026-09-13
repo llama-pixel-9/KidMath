@@ -16,7 +16,7 @@ Status legend: ☐ open · ◐ partial · ☑ done (PR).
 
 | # | Gap | Impact | Size | Status |
 |---|---|---|---|---|
-| 1 | **COPPA consent flow.** `KidProfilesService.addKid` inserts a child's name/age/grade directly; the web refuses until the parent confirms by email (`request-consent` → link → `consent-confirm` creates the profile). Ship-blocker for App Review and §312.5. | critical | M | ☐ |
+| 1 | **COPPA consent flow.** `addKid` now gates on `hasParentalConsent` and returns `.pendingConsent` after invoking `request-consent` with the notice from the engine bundle (`KidMath.parentalConsentNotice`, one source with the web); `ConsentPendingView` = web ConsentPendingPanel (sent-at, 60s resend cooldown, "I've confirmed" check). `updateKid` + parent-language 4-kid message added. **End-to-end on a signed-in simulator still to be run by Sai.** | critical | M | ☑ PR ios/parity-3 |
 | 2 | **Item-bank reads don't paginate** (`SupabaseService.fetchModeItemRows`) — fractions (2,787), time (1,852), placeValueDiscs (1,406) clipped to 1,000 rows. CLAUDE.md hard rule. | critical | S | ☑ PR ios/parity-1 |
 | 3 | **Missing widgets/figures.** `tenFrame` answer widget, figures `pictograph`, `tallyChart`, `linePlot`, `areaFigure` (spec shared via `KidMath.areaFigureSpec`), `SequenceNumberLine`. `IOS_MIRRORED_FIGURES` updated. `FigureRenderTests` snapshot every shape (`TEST_RUNNER_KIDMATH_FIGURE_SNAPSHOT_DIR=… ` writes PNGs). Still open: `display.numberLine.marks` under story prompts (rare). | high | M | ☑ PR ios/parity-2 |
 | 4 | **No practice log.** `practice_sessions` never written from iOS → parent report blind to iPad sessions. `buildReport` is pure; expose via `nativeEntry` rather than reimplement. | high | M | ☐ |
@@ -29,7 +29,7 @@ Status legend: ☐ open · ◐ partial · ☑ done (PR).
 | 11 | **Meadow art** — 59 WebP assets on web; iOS still draws placeholder shapes (`MeadowView.swift` "rough sketch"). | med | M | ☐ |
 | 12 | **Ladder v2 unreachable** — `GamFlags` lacked `ladderV2`/`secondChance`/`readAloud`/`birdStore`; `GamFlags.all` defaulted OFF while web prod has `VITE_GAM_ALL=true`; `createAdaptiveSession` never got `options.ladderV2`; level-up copy capped at 10. | med | S | ☑ PR ios/parity-1 |
 | 13 | **Allow-word-problems preference** (`user_preferences.allow_word_problems`) — no toggle, not passed to sessions. | low | S | ☐ |
-| 14 | **Kid profiles service** — no `updateKid`, `hasParentalConsent`, `requestParentalConsent`, `KID_LIMIT_MESSAGE` (raw Postgres error shown). Folds into #1/#10. | — | — | ☐ |
+| 14 | **Kid profiles service** — `updateKid`, `hasParentalConsent`, `requestParentalConsent`, kid-limit message. | — | — | ☑ PR ios/parity-3 |
 | 15 | **Branding leftovers** — `CFBundleName` = KidMath (shows in iOS Settings), `kidmath://` URL scheme (OAuth sheet says "open KidMath"), bundle id `com.kidmath.app` (must change before ASC anyway), `ios/README.md` stale. | low | S–M | ☐ (bundle id waits on Apple) |
 | 16 | **Telemetry / diagnostics** — web freeze-detection has no native analogue (MetricKit). Low priority. | low | M | ☐ |
 | 17 | **iOS CI** — none. Compile-before-merge rule added to CLAUDE.md; a GitHub Actions macOS job is the real fix. | — | S | ☐ |
@@ -52,6 +52,6 @@ Keep the bridge dependency-free (no progressStore/supabaseClient).
 
 ## Order of work
 
-parity-1 (☑ #2 #7 #12) → parity-2 (☑ #3) → #1 consent → #4 practice log →
+parity-1 (☑ #2 #7 #12) → parity-2 (☑ #3) → parity-3 (☑ #1 #14) → #4 practice log →
 #6 worksheets → #10 home/kids → #8 badges/stickers → #9 teach-don't-grade →
 #5 hints/work space → #11 meadow art → #13 #15 #16 #17.

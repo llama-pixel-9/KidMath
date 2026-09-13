@@ -35,3 +35,29 @@ export async function resolvePlanPrice(stripe: Stripe, plan: string): Promise<St
   }
   return price;
 }
+
+/** "$8.99" — one formatter for everything a subscriber sees. */
+export function formatMoney(cents: number, currency: string): string {
+  return new Intl.NumberFormat("en-US", { style: "currency", currency: currency.toUpperCase() })
+    .format(cents / 100);
+}
+
+/** A recurring price as the subscriber will read it: amount + interval. */
+export function describePrice(price: Stripe.Price): {
+  amount: string;
+  cents: number;
+  currency: string;
+  interval: "day" | "week" | "month" | "year";
+  intervalCount: number;
+} {
+  if (price.unit_amount == null || !price.recurring) {
+    throw new Error(`price ${price.id} is not a fixed recurring price`);
+  }
+  return {
+    amount: formatMoney(price.unit_amount, price.currency),
+    cents: price.unit_amount,
+    currency: price.currency.toUpperCase(),
+    interval: price.recurring.interval,
+    intervalCount: price.recurring.interval_count,
+  };
+}

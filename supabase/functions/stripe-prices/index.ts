@@ -12,7 +12,7 @@
 // Secrets: STRIPE_SECRET_KEY only.
 
 import Stripe from "npm:stripe@17";
-import { PLAN_LOOKUP_KEYS, resolvePlanPrice } from "../_shared/stripePrices.ts";
+import { PLAN_LOOKUP_KEYS, resolvePlanPrice, describePrice } from "../_shared/stripePrices.ts";
 
 const stripe = new Stripe(Deno.env.get("STRIPE_SECRET_KEY") ?? "");
 
@@ -22,21 +22,8 @@ const corsHeaders = {
 };
 
 function describe(price: Stripe.Price) {
-  if (price.unit_amount == null || !price.recurring) {
-    throw new Error(`price ${price.id} is not a fixed recurring price`);
-  }
-  const currency = price.currency.toUpperCase();
-  const amount = new Intl.NumberFormat("en-US", { style: "currency", currency })
-    .format(price.unit_amount / 100);
-  return {
-    id: price.id,
-    cents: price.unit_amount,
-    currency,
-    amount, // "$8.99" — the literal the disclosure shows
-    interval: price.recurring.interval, // "month" | "year"
-    intervalCount: price.recurring.interval_count,
-    nickname: price.nickname ?? null,
-  };
+  const d = describePrice(price);
+  return { id: price.id, ...d, nickname: price.nickname ?? null };
 }
 
 Deno.serve(async (request) => {

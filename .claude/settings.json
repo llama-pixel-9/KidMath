@@ -18,6 +18,9 @@
       "mcp__claude-in-chrome__navigate",
       "mcp__claude-in-chrome__computer",
       "mcp__claude-in-chrome__read_page"
+    ],
+    "deny": [
+      "Bash(supabase db reset *)"
     ]
   }
 }

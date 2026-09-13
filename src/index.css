@@ -307,7 +307,10 @@ h3 {
   padding-bottom: var(--sheet-h, 56vh);
 }
 
-@media (min-width: 1024px) and (max-height: 900px) {
+/* Any screen with room for a column beside the play area gets the pane on
+   the right (a kid's window, an iPad in landscape or portrait); only phones
+   and narrow windows fall back to the bottom sheet. */
+@media (min-width: 800px) {
   .side-pane {
     top: 0;
     left: auto;

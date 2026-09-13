@@ -1,4 +1,7 @@
+import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+
+const SHEET_MAX_WIDTH = 800; // must match the @media (min-width: 800px) rule in index.css
 
 /**
  * The session's side pane — home of the work space and the hint.
@@ -11,6 +14,14 @@ import { motion, AnimatePresence } from "framer-motion";
  * screens — a kid writes in it while answering.
  */
 export default function SidePane({ open, title, icon = null, onClose, children, testId }) {
+  // Bottom-sheet mode: bring the question card to the top of the viewport
+  // so the sheet never hides what the kid is working on.
+  useEffect(() => {
+    if (!open || typeof window === "undefined" || window.innerWidth >= SHEET_MAX_WIDTH) return;
+    const card = document.querySelector('[aria-label="Math question"]');
+    card?.scrollIntoView({ block: "start", behavior: "smooth" });
+  }, [open]);
+
   return (
     <AnimatePresence>
       {open && (

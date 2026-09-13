@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>body{margin:0;background:#FFFBEB}a{color:#0B7A6A}a:hover{color:#C4471B}</style>
+</helmet>
+
+<section style="padding:56px 48px 96px; font-family:Nunito, sans-serif; display:flex; flex-direction:column; gap:32px; align-items:center; background:#FFFBEB">
+  <div style="width:100%; max-width:1240px; display:flex; flex-direction:column; gap:10px">
+    <h1 style="margin:0; font-family:Fredoka, sans-serif; font-weight:500; font-size:28px; color:#14231F">Mark — five accent treatments</h1>
+    <p style="margin:0; max-width:70ch; font-size:17px; line-height:1.6; color:#14231F; text-wrap:pretty">Same silhouette everywhere — tail, crest, body, beak. What changes is where the warm accent goes. Each row: 160px on cream, the black worksheet version, the 32px teal tile, and 16px actual size. Tell me a letter.</p>
+  </div>
+
+  <div style="width:100%; max-width:1240px; display:flex; flex-direction:column; gap:18px">
+
+    <div id="A" style="display:grid; grid-template-columns:150px 1fr; gap:28px; align-items:center; background:#fff; border:1.5px solid #14231F1a; border-radius:18px; padding:26px 30px">
+      <div>
+        <div style="display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:13px; background:#0B7A6A; color:#FFFBEB; padding:4px 10px; border-radius:6px">A</div>
+        <div style="font-family:Fredoka,sans-serif; font-size:19px; color:#14231F; margin-top:10px">Beak only</div>
+        <div style="font-size:14px; line-height:1.5; color:#14231F99; margin-top:6px">Pure silhouette. Strongest at small sizes, quietest at large.</div>
+      </div>
+      <div style="display:flex; align-items:center; gap:36px; flex-wrap:wrap">
+        <div style="background:#FFFBEB; border-radius:12px; padding:16px 20px"><dc-import name="LarkMarkV" variant="A" size="{{ big }}" hint-size="160px,160px"></dc-import></div>
+        <dc-import name="LarkMarkV" variant="A" size="{{ mid }}" color="#000000" accent="#000000" eye="#FFFFFF" hint-size="88px,88px"></dc-import>
+        <div style="background:#0B7A6A; border-radius:8px; padding:8px"><dc-import name="LarkMarkV" variant="A" size="{{ small }}" color="#FFFBEB" accent="#F26B3A" eye="#0B7A6A" eye-r="{{ bigEye }}" hint-size="32px,32px"></dc-import></div>
+        <div style="background:#0B7A6A; border-radius:5px; padding:4px"><dc-import name="LarkMarkV" variant="A" size="{{ tiny }}" color="#FFFBEB" accent="#F26B3A" eye="#0B7A6A" eye-r="{{ bigEye }}" hint-size="16px,16px"></dc-import></div>
+      </div>
+    </div>
+
+    <div id="B" style="display:grid; grid-template-columns:150px 1fr; gap:28px; align-items:center; background:#fff; border:1.5px solid #14231F1a; border-radius:18px; padding:26px 30px">
+      <div>
+        <div style="display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:13px; background:#0B7A6A; color:#FFFBEB; padding:4px 10px; border-radius:6px">B</div>
+        <div style="font-family:Fredoka,sans-serif; font-size:19px; color:#14231F; margin-top:10px">Wing dart</div>
+        <div style="font-size:14px; line-height:1.5; color:#14231F99; margin-top:6px">A single folded-wing triangle, floating clear of the body edge.</div>
+      </div>
+      <div style="display:flex; align-items:center; gap:36px; flex-wrap:wrap">
+        <div style="background:#FFFBEB; border-radius:12px; padding:16px 20px"><dc-import name="LarkMarkV" variant="B" size="{{ big }}" hint-size="160px,160px"></dc-import></div>
+        <dc-import name="LarkMarkV" variant="B" size="{{ mid }}" color="#000000" accent="#000000" eye="#FFFFFF" hint-size="88px,88px"></dc-import>
+        <div style="background:#0B7A6A; border-radius:8px; padding:8px"><dc-import name="LarkMarkV" variant="B" size="{{ small }}" color="#FFFBEB" accent="#F26B3A" eye="#0B7A6A" eye-r="{{ bigEye }}" hint-size="32px,32px"></dc-import></div>
+        <div style="background:#0B7A6A; border-radius:5px; padding:4px"><dc-import name="LarkMarkV" variant="B" size="{{ tiny }}" color="#FFFBEB" accent="#F26B3A" eye="#0B7A6A" eye-r="{{ bigEye }}" hint-size="16px,16px"></dc-import></div>
+      </div>
+    </div>
+
+    <div id="C" style="display:grid; grid-template-columns:150px 1fr; gap:28px; align-items:center; background:#fff; border:1.5px solid #14231F1a; border-radius:18px; padding:26px 30px">
+      <div>
+        <div style="display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:13px; background:#0B7A6A; color:#FFFBEB; padding:4px 10px; border-radius:6px">C</div>
+        <div style="font-family:Fredoka,sans-serif; font-size:19px; color:#14231F; margin-top:10px">Straight cut</div>
+        <div style="font-size:14px; line-height:1.5; color:#14231F99; margin-top:6px">One horizontal division. Deliberate, flag-like, very easy to redraw.</div>
+      </div>
+      <div style="display:flex; align-items:center; gap:36px; flex-wrap:wrap">
+        <div style="background:#FFFBEB; border-radius:12px; padding:16px 20px"><dc-import name="LarkMarkV" variant="C" size="{{ big }}" hint-size="160px,160px"></dc-import></div>
+        <dc-import name="LarkMarkV" variant="C" size="{{ mid }}" color="#000000" accent="#000000" eye="#FFFFFF" hint-size="88px,88px"></dc-import>
+        <div style="background:#0B7A6A; border-radius:8px; padding:8px"><dc-import name="LarkMarkV" variant="C" size="{{ small }}" color="#FFFBEB" accent="#F26B3A" eye="#0B7A6A" eye-r="{{ bigEye }}" hint-size="32px,32px"></dc-import></div>
+        <div style="background:#0B7A6A; border-radius:5px; padding:4px"><dc-import name="LarkMarkV" variant="C" size="{{ tiny }}" color="#FFFBEB" accent="#F26B3A" eye="#0B7A6A" eye-r="{{ bigEye }}" hint-size="16px,16px"></dc-import></div>
+      </div>
+    </div>
+
+    <div id="D" style="display:grid; grid-template-columns:150px 1fr; gap:28px; align-items:center; background:#fff; border:1.5px solid #14231F1a; border-radius:18px; padding:26px 30px">
+      <div>
+        <div style="display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:13px; background:#0B7A6A; color:#FFFBEB; padding:4px 10px; border-radius:6px">D</div>
+        <div style="font-family:Fredoka,sans-serif; font-size:19px; color:#14231F; margin-top:10px">Warm tail</div>
+        <div style="font-size:14px; line-height:1.5; color:#14231F99; margin-top:6px">Accent moves to the tail and beak — the body stays one clean teal shape.</div>
+      </div>
+      <div style="display:flex; align-items:center; gap:36px; flex-wrap:wrap">
+        <div style="background:#FFFBEB; border-radius:12px; padding:16px 20px"><dc-import name="LarkMarkV" variant="D" size="{{ big }}" hint-size="160px,160px"></dc-import></div>
+        <dc-import name="LarkMarkV" variant="D" size="{{ mid }}" color="#000000" accent="#000000" eye="#FFFFFF" hint-size="88px,88px"></dc-import>
+        <div style="background:#0B7A6A; border-radius:8px; padding:8px"><dc-import name="LarkMarkV" variant="D" size="{{ small }}" color="#FFFBEB" accent="#F26B3A" eye="#0B7A6A" eye-r="{{ bigEye }}" hint-size="32px,32px"></dc-import></div>
+        <div style="background:#0B7A6A; border-radius:5px; padding:4px"><dc-import name="LarkMarkV" variant="D" size="{{ tiny }}" color="#FFFBEB" accent="#F26B3A" eye="#0B7A6A" eye-r="{{ bigEye }}" hint-size="16px,16px"></dc-import></div>
+      </div>
+    </div>
+
+    <div id="E" style="display:grid; grid-template-columns:150px 1fr; gap:28px; align-items:center; background:#fff; border:1.5px solid #14231F1a; border-radius:18px; padding:26px 30px">
+      <div>
+        <div style="display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:13px; background:#0B7A6A; color:#FFFBEB; padding:4px 10px; border-radius:6px">E</div>
+        <div style="font-family:Fredoka,sans-serif; font-size:19px; color:#14231F; margin-top:10px">Crescent</div>
+        <div style="font-size:14px; line-height:1.5; color:#14231F99; margin-top:6px">Accent hugs the lower-right edge — a moon-slice underbelly, no floating stripe.</div>
+      </div>
+      <div style="display:flex; align-items:center; gap:36px; flex-wrap:wrap">
+        <div style="background:#FFFBEB; border-radius:12px; padding:16px 20px"><dc-import name="LarkMarkV" variant="E" size="{{ big }}" hint-size="160px,160px"></dc-import></div>
+        <dc-import name="LarkMarkV" variant="E" size="{{ mid }}" color="#000000" accent="#000000" eye="#FFFFFF" hint-size="88px,88px"></dc-import>
+        <div style="background:#0B7A6A; border-radius:8px; padding:8px"><dc-import name="LarkMarkV" variant="E" size="{{ small }}" color="#FFFBEB" accent="#F26B3A" eye="#0B7A6A" eye-r="{{ bigEye }}" hint-size="32px,32px"></dc-import></div>
+        <div style="background:#0B7A6A; border-radius:5px; padding:4px"><dc-import name="LarkMarkV" variant="E" size="{{ tiny }}" color="#FFFBEB" accent="#F26B3A" eye="#0B7A6A" eye-r="{{ bigEye }}" hint-size="16px,16px"></dc-import></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="width:100%; max-width:1240px; display:flex; gap:44px; flex-wrap:wrap; background:#10221E; border-radius:18px; padding:34px 40px; align-items:center">
+    <span style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:#FFFBEB99">ON NIGHT · MINT + PEACH</span>
+    <dc-import name="LarkMarkV" variant="A" size="{{ mid }}" color="#4FD1BC" accent="#FFB088" eye="#10221E" hint-size="88px,88px"></dc-import>
+    <dc-import name="LarkMarkV" variant="B" size="{{ mid }}" color="#4FD1BC" accent="#FFB088" eye="#10221E" hint-size="88px,88px"></dc-import>
+    <dc-import name="LarkMarkV" variant="C" size="{{ mid }}" color="#4FD1BC" accent="#FFB088" eye="#10221E" hint-size="88px,88px"></dc-import>
+    <dc-import name="LarkMarkV" variant="D" size="{{ mid }}" color="#4FD1BC" accent="#FFB088" eye="#10221E" hint-size="88px,88px"></dc-import>
+    <dc-import name="LarkMarkV" variant="E" size="{{ mid }}" color="#4FD1BC" accent="#FFB088" eye="#10221E" hint-size="88px,88px"></dc-import>
+  </div>
+</section>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return { big: 160, mid: 88, small: 32, tiny: 16, bigEye: 3.4 };
+  }
+}
+</script>
+</body>
+</html>

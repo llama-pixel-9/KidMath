@@ -1,5 +1,5 @@
 // The larkit mark — five flat shapes on a 61×52 viewBox, straight from the
-// brand geometry (design/larkit/README.md). No strokes, no gradients.
+// brand geometry (design/Larkit rebrand design system/design_handoff_larkit_rebrand/README.md). No strokes, no gradients.
 //
 // Rules that matter here: the lark always faces right, one bird per surface,
 // never rotate/stretch/recolor outside the palette. At tile sizes (≤32px)

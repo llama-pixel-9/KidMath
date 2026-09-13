@@ -114,6 +114,22 @@ a:hover{color:#C4471B}
     </div>
   </header>
 
+  <section style="position:relative; z-index:1; width:100%; max-width:1040px; background:#FFFFFF; border:1.5px solid #14231F1a; border-left:6px solid #F26B3A; border-radius:16px; padding:24px 28px; display:flex; flex-direction:column; gap:14px">
+    <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap">
+      <span style="background:#F26B3A; color:#14231F; font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:500; letter-spacing:.1em; padding:5px 10px; border-radius:999px">NEW · NOT YET PUSHED</span>
+      <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F">Since the last push</span>
+      <span style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:#14231F99">last push: 2 Aug 2026 · sections 01–19</span>
+    </div>
+    <p style="margin:0; font-size:15px; line-height:1.6; color:#14231F; max-width:74ch">Anything a developer still has to implement carries the orange badge above, beside its section heading. Everything unbadged is already live. The full running list, including work that lives outside this guide, is in <span style="font-family:'IBM Plex Mono',monospace; color:#0B7A6A">CHANGELOG.md</span>.</p>
+    <ul style="margin:0; padding-left:20px; font-size:15px; line-height:1.7; color:#14231F">
+      <li><strong>§14 · game modes renamed</strong> — all twelve modes move to one formula, [plain skill] + [alliterating bird word]: Addition Acorns, Subtraction Swoop, Multiplication Meadow, Division Dive, Fractions Feather, Counting Chicks, Comparison Crow, Time Tweet, Money Magpie, Shapes Shell, Measuring Wings, Place Value Perch. Old names are dead everywhere — knock-on edits in <strong>§13</strong> (in-game header) and <strong>§15</strong> (flight-log header), plus store copy.</li>
+<li><strong>§20 · first flight — signup &amp; onboarding</strong> (new section) — approved flow: value page → parent account (Apple/Google) → add a kid → soft paywall → profile picker, plus the voice rule that the account flow is plain English and bird voice stays on kid-facing screens. Screens in <span style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:#0B7A6A">Larkit Auth Onboarding.dc.html</span> (2a).</li>
+            <li><strong>§15 · flight logs rebuilt</strong> — three fixed blocks (stacked / inline / thought problem), single-rule stacked items in one digit column, number banks on pick-two prompts, no decorative colour, score box in the footer. Generator must also obey the level range and never fill the result slot.</li>
+      <li><strong>§14 · card icons</strong> — one Ink math glyph in the 38px cream well; home grid now lists all twelve modes.</li>
+      <li><strong>Login, signup &amp; onboarding</strong> — three directions (iPad + web desktop) in <span style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:#0B7A6A">Larkit Auth Onboarding.dc.html</span>. Direction not chosen yet — do not build.</li>
+    </ul>
+  </section>
+
   <section style="position:relative; z-index:1; width:100%; max-width:1040px; display:flex; flex-direction:column; gap:24px">
     <h2 style="margin:0; font-family:Fredoka, sans-serif; font-weight:600; font-size:20px; color:#14231F; letter-spacing:0.06em; text-transform:uppercase">01 · Color</h2>
     <p style="margin:0; max-width:62ch; font-size:17px; line-height:1.6; color:#14231F; text-wrap:pretty">The cream stays. One saturated primary (Lark Teal) carries the brand; one warm accent (Sun) is reserved for the beak, the wing, and moments of delight. Every pairing below is checked against WCAG 2.1 AA.</p>
@@ -828,7 +844,7 @@ a:hover{color:#C4471B}
       <div style="background:#fff; border:1.5px solid #14231F1a; border-radius:16px; padding:22px 24px">
         <div style="font-family:Fredoka,sans-serif; font-size:19px; color:#14231F; margin-bottom:12px">In-game header</div><ul style="margin:0; padding-left:20px; font-size:15px; line-height:1.7; color:#14231F">
           <li>One line below the bar: the game glyph, the game name in Fredoka 600 / 26px Ink, then sound and settings as ghost buttons.</li>
-          <li>Game names keep the bird register — "Measure Up!" becomes <strong>Weigh Station</strong>, and the set reads as one flock: Countdown Coop, Sum Perch, Times Tree, Split the Nest, Tell the Hour.</li>
+          <li>Game names follow the section 14 formula — plain skill word first, alliterating bird word second: <strong>Addition Acorns</strong>, <strong>Division Dive</strong>, <strong>Time Tweet</strong>. The header shows the full two-word name, never an abbreviation and never a retired name (Sum Perch, Countdown Coop, Times Tree, Split the Nest, Tell the Hour, Weigh Station, Measure Up!).</li>
           <li>The score ring and level pill sit under the header, never inside the bar.</li>
           <li>Level pill: Sun fill, Ink label, Fredoka 600 / 15px, 999px radius. Never a gradient.</li>
         </ul></div>
@@ -879,54 +895,140 @@ a:hover{color:#C4471B}
   </section>
 
   <section style="position:relative; z-index:1; width:100%; max-width:1040px; display:flex; flex-direction:column; gap:24px">
-    <h2 style="margin:0; font-family:Fredoka, sans-serif; font-weight:600; font-size:20px; color:#14231F; letter-spacing:0.06em; text-transform:uppercase">14 · The aviary — game select</h2>
+    <h2 style="margin:0; font-family:Fredoka, sans-serif; font-weight:600; font-size:20px; color:#14231F; letter-spacing:0.06em; text-transform:uppercase; display:flex; align-items:center; gap:12px; flex-wrap:wrap">14 · The aviary — game select <span style="background:#F26B3A; color:#14231F; font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:500; letter-spacing:.1em; padding:4px 9px; border-radius:999px; text-transform:none">NEW · NOT YET PUSHED</span></h2>
     <p style="margin:0; max-width:62ch; font-size:17px; line-height:1.6; color:#14231F; text-wrap:pretty">The home screen. One card per game, no marketing copy, no hero image, no carousel. A child arriving should be one tap from the thing they were doing yesterday.</p>
     <div style="background:#FFFBEB; border:1.5px solid #14231F1a; border-radius:16px; padding:24px">
       <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px">
         <div style="background:#A7DED3; border-bottom:5px solid #7FCFBE; border-radius:20px; padding:18px; display:flex; flex-direction:column; gap:10px; min-height:150px">
-          <div style="width:38px; height:38px; border-radius:10px; background:#FFFBEB99"></div>
+          <div style="width:38px; height:38px; border-radius:10px; background:#FFFBEB99; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F">+</div>
           <div style="flex:1"></div>
-          <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F; line-height:1.15">Sum Perch</div>
+          <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F; line-height:1.15">Addition Acorns</div>
           <div style="display:flex; align-items:center; justify-content:space-between; gap:8px">
-            <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:13px; color:#14231F99">Addition</span>
-            <span style="font-family:Fredoka,sans-serif; font-size:13px; color:#14231F; background:#FFFBEB; border-radius:999px; padding:3px 10px">Level 3</span>
+            <span style="font-family:Nunito,sans-serif; font-weight:600; font-size:13px; color:#14231F">Sums to 20</span>
+            <span style="font-family:Fredoka,sans-serif; font-size:13px; color:#14231F; background:#FFFBEB; border-radius:999px; padding:3px 10px; white-space:nowrap; flex:none">Level 3</span>
+          </div>
+        </div>
+        <div style="background:#6FC3B2; border-bottom:5px solid #3E9E8E; border-radius:20px; padding:18px; display:flex; flex-direction:column; gap:10px; min-height:150px">
+          <div style="width:38px; height:38px; border-radius:10px; background:#FFFBEB99; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F"><svg width="20" height="20" viewBox="0 0 24 24" stroke="#14231F" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"></path></svg></div>
+          <div style="flex:1"></div>
+          <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F; line-height:1.15">Subtraction Swoop</div>
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:8px">
+            <span style="font-family:Nunito,sans-serif; font-weight:600; font-size:13px; color:#14231F">Take away to 20</span>
+            <span style="font-family:Fredoka,sans-serif; font-size:13px; color:#14231F; background:#FFFBEB; border-radius:999px; padding:3px 10px; white-space:nowrap; flex:none">Level 2</span>
           </div>
         </div>
         <div style="background:#FBC7A8; border-bottom:5px solid #F0A47A; border-radius:20px; padding:18px; display:flex; flex-direction:column; gap:10px; min-height:150px">
-          <div style="width:38px; height:38px; border-radius:10px; background:#FFFBEB99"></div>
+          <div style="width:38px; height:38px; border-radius:10px; background:#FFFBEB99; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F">×</div>
           <div style="flex:1"></div>
-          <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F; line-height:1.15">Countdown Coop</div>
+          <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F; line-height:1.15">Multiplication Meadow</div>
           <div style="display:flex; align-items:center; justify-content:space-between; gap:8px">
-            <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:13px; color:#14231F99">Subtraction</span>
-            <span style="font-family:Fredoka,sans-serif; font-size:13px; color:#14231F; background:#FFFBEB; border-radius:999px; padding:3px 10px">Level 2</span>
+            <span style="font-family:Nunito,sans-serif; font-weight:600; font-size:13px; color:#14231F">2× to 12×</span>
+            <span style="font-family:Fredoka,sans-serif; font-size:13px; color:#14231F; background:#FFFBEB; border-radius:999px; padding:3px 10px; white-space:nowrap; flex:none">Level 1</span>
+          </div>
+        </div>
+        <div style="background:#F9A97F; border-bottom:5px solid #E8895A; border-radius:20px; padding:18px; display:flex; flex-direction:column; gap:10px; min-height:150px">
+          <div style="width:38px; height:38px; border-radius:10px; background:#FFFBEB99; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F">÷</div>
+          <div style="flex:1"></div>
+          <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F; line-height:1.15">Division Dive</div>
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:8px">
+            <span style="font-family:Nunito,sans-serif; font-weight:600; font-size:13px; color:#14231F">Sharing groups</span>
+            <span style="font-family:Fredoka,sans-serif; font-size:13px; color:#14231F; background:#FFFBEB; border-radius:999px; padding:3px 10px; white-space:nowrap; flex:none">Level 1</span>
           </div>
         </div>
         <div style="background:#A7DED3; border-bottom:5px solid #7FCFBE; border-radius:20px; padding:18px; display:flex; flex-direction:column; gap:10px; min-height:150px">
-          <div style="width:38px; height:38px; border-radius:10px; background:#FFFBEB99"></div>
+          <div style="width:38px; height:38px; border-radius:10px; background:#FFFBEB99; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F">½</div>
           <div style="flex:1"></div>
-          <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F; line-height:1.15">Times Tree</div>
+          <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F; line-height:1.15">Fractions Feather</div>
           <div style="display:flex; align-items:center; justify-content:space-between; gap:8px">
-            <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:13px; color:#14231F99">Multiplication</span>
-            <span style="font-family:Fredoka,sans-serif; font-size:13px; color:#14231F; background:#FFFBEB; border-radius:999px; padding:3px 10px">Level 1</span>
+            <span style="font-family:Nunito,sans-serif; font-weight:600; font-size:13px; color:#14231F">Halves & thirds</span>
+            <span style="font-family:Fredoka,sans-serif; font-size:13px; color:#14231F; background:#FFFBEB; border-radius:999px; padding:3px 10px; white-space:nowrap; flex:none">Level 2</span>
+          </div>
+        </div>
+        <div style="background:#6FC3B2; border-bottom:5px solid #3E9E8E; border-radius:20px; padding:18px; display:flex; flex-direction:column; gap:10px; min-height:150px">
+          <div style="width:38px; height:38px; border-radius:10px; background:#FFFBEB99; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F">12</div>
+          <div style="flex:1"></div>
+          <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F; line-height:1.15">Counting Chicks</div>
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:8px">
+            <span style="font-family:Nunito,sans-serif; font-weight:600; font-size:13px; color:#14231F">Count to 100</span>
+            <span style="font-family:Fredoka,sans-serif; font-size:13px; color:#14231F; background:#FFFBEB; border-radius:999px; padding:3px 10px; white-space:nowrap; flex:none">Level 4</span>
           </div>
         </div>
         <div style="background:#FBC7A8; border-bottom:5px solid #F0A47A; border-radius:20px; padding:18px; display:flex; flex-direction:column; gap:10px; min-height:150px">
-          <div style="width:38px; height:38px; border-radius:10px; background:#FFFBEB99"></div>
+          <div style="width:38px; height:38px; border-radius:10px; background:#FFFBEB99; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F">&lt;</div>
           <div style="flex:1"></div>
-          <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F; line-height:1.15">Weigh Station</div>
+          <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F; line-height:1.15">Comparison Crow</div>
           <div style="display:flex; align-items:center; justify-content:space-between; gap:8px">
-            <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:13px; color:#14231F99">Compare &amp; measure</span>
-            <span style="font-family:Fredoka,sans-serif; font-size:13px; color:#14231F; background:#FFFBEB; border-radius:999px; padding:3px 10px">New</span>
+            <span style="font-family:Nunito,sans-serif; font-weight:600; font-size:13px; color:#14231F">More, less, equal</span>
+            <span style="font-family:Fredoka,sans-serif; font-size:13px; color:#14231F; background:#FFFBEB; border-radius:999px; padding:3px 10px; white-space:nowrap; flex:none">New</span>
+          </div>
+        </div>
+        <div style="background:#F9A97F; border-bottom:5px solid #E8895A; border-radius:20px; padding:18px; display:flex; flex-direction:column; gap:10px; min-height:150px">
+          <div style="width:38px; height:38px; border-radius:10px; background:#FFFBEB99; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14231F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg></div>
+          <div style="flex:1"></div>
+          <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F; line-height:1.15">Time Tweet</div>
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:8px">
+            <span style="font-family:Nunito,sans-serif; font-weight:600; font-size:13px; color:#14231F">Read a clock</span>
+            <span style="font-family:Fredoka,sans-serif; font-size:13px; color:#14231F; background:#FFFBEB; border-radius:999px; padding:3px 10px; white-space:nowrap; flex:none">Level 1</span>
+          </div>
+        </div>
+        <div style="background:#A7DED3; border-bottom:5px solid #7FCFBE; border-radius:20px; padding:18px; display:flex; flex-direction:column; gap:10px; min-height:150px">
+          <div style="width:38px; height:38px; border-radius:10px; background:#FFFBEB99; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F">¢</div>
+          <div style="flex:1"></div>
+          <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F; line-height:1.15">Money Magpie</div>
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:8px">
+            <span style="font-family:Nunito,sans-serif; font-weight:600; font-size:13px; color:#14231F">Coins & change</span>
+            <span style="font-family:Fredoka,sans-serif; font-size:13px; color:#14231F; background:#FFFBEB; border-radius:999px; padding:3px 10px; white-space:nowrap; flex:none">New</span>
+          </div>
+        </div>
+        <div style="background:#6FC3B2; border-bottom:5px solid #3E9E8E; border-radius:20px; padding:18px; display:flex; flex-direction:column; gap:10px; min-height:150px">
+          <div style="width:38px; height:38px; border-radius:10px; background:#FFFBEB99; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F">▲</div>
+          <div style="flex:1"></div>
+          <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F; line-height:1.15">Shapes Shell</div>
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:8px">
+            <span style="font-family:Nunito,sans-serif; font-weight:600; font-size:13px; color:#14231F">2D shapes</span>
+            <span style="font-family:Fredoka,sans-serif; font-size:13px; color:#14231F; background:#FFFBEB; border-radius:999px; padding:3px 10px; white-space:nowrap; flex:none">Level 2</span>
+          </div>
+        </div>
+        <div style="background:#FBC7A8; border-bottom:5px solid #F0A47A; border-radius:20px; padding:18px; display:flex; flex-direction:column; gap:10px; min-height:150px">
+          <div style="width:38px; height:38px; border-radius:10px; background:#FFFBEB99; display:flex; align-items:center; justify-content:center; opacity:0.4">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14231F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10.5" width="16" height="10.5" rx="2.5"></rect><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"></path></svg>
+          </div>
+          <div style="flex:1"></div>
+          <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F; line-height:1.15">Measuring Wings</div>
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:8px">
+            <span style="font-family:Nunito,sans-serif; font-weight:600; font-size:13px; color:#14231F">Length & angles</span>
+          </div>
+        </div>
+        <div style="background:#F9A97F; border-bottom:5px solid #E8895A; border-radius:20px; padding:18px; display:flex; flex-direction:column; gap:10px; min-height:150px">
+          <div style="width:38px; height:38px; border-radius:10px; background:#FFFBEB99; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F">10</div>
+          <div style="flex:1"></div>
+          <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#14231F; line-height:1.15">Place Value Perch</div>
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:8px">
+            <span style="font-family:Nunito,sans-serif; font-weight:600; font-size:13px; color:#14231F">Tens and ones</span>
+            <span style="font-family:Fredoka,sans-serif; font-size:13px; color:#14231F; background:#FFFBEB; border-radius:999px; padding:3px 10px; white-space:nowrap; flex:none">Level 1</span>
           </div>
         </div>
       </div>
     </div>
     <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px">
+      <div style="background:#fff; border:1.5px solid #14231F1a; border-radius:16px; padding:22px 24px; grid-column:1/-1">
+        <div style="font-family:Fredoka,sans-serif; font-size:19px; color:#14231F; margin-bottom:12px">Naming the flock</div>
+        <ul style="margin:0; padding-left:20px; font-size:15px; line-height:1.7; color:#14231F">
+          <li><strong>One formula, no exceptions: [plain skill] + [alliterating bird word].</strong> Addition Acorns, Fractions Feather, Time Tweet. The skill word always comes first and is always the word a parent or teacher would search for — a child never has to decode the name to find multiplication.</li>
+          <li><strong>The second word alliterates with the first</strong> — same opening sound, always. It can be a place, a part, a species or a flight word (Acorns, Swoop, Meadow, Dive, Feather, Chicks, Crow, Tweet, Magpie, Shell, Wings, Perch), and each word is used once across the whole set.</li>
+          <li><strong>Every bird word must be one a five-year-old already owns</strong> — dive, wings, shell, tweet, chicks, feather, acorns. No species a child cannot picture and no word over two syllables: murmuration, dovecote and thrush were all cut for exactly this reason. Read the name aloud to a five-year-old; if they cannot repeat it back, it is the wrong word.</li>
+          <li>Pick the bird word that <em>carries the maths</em> where one exists — a dive goes down and so does division, a magpie collects coins, wings get measured. Sound first, sense second, never nonsense.</li>
+          <li>Two words, title case, never punctuated, never exclaimed. No "Addition Acorns!", no "Times Tree Pro", no numerals in the name. Place Value is the one three-word title — the skill itself is two words.</li>
+          <li>The line under the name is the <strong>scope, not a restatement</strong> — "Sums to 20", "2× to 12×". Nunito 600 / 13px, <strong>solid Ink</strong> — never Ink at 60%, which drops to 3.4:1 on Sun Light. Weight separates it from the name, not opacity. Never repeat the skill word there.</li>
+          <li>Retired names — Sum Perch, Countdown Coop, Times Tree, Split the Nest, Tell the Hour, Weigh Station, Measure Up! — are dead everywhere: home screen, in-game header, flight logs, App Store copy.</li>
+        </ul>
+      </div>
       <div style="background:#fff; border:1.5px solid #14231F1a; border-radius:16px; padding:22px 24px">
         <div style="font-family:Fredoka,sans-serif; font-size:19px; color:#14231F; margin-bottom:12px">Card rules</div><ul style="margin:0; padding-left:20px; font-size:15px; line-height:1.7; color:#14231F">
           <li>Same four tile tints, alternating in reading order — the home screen teaches the palette before the first question does.</li>
           <li>20px radius, 5px bottom edge, 150px minimum height, Ink text throughout. Identical press behaviour to an answer tile.</li>
-          <li>Game glyph top-left in a 38px cream well; name bottom-left in Fredoka 600 / 20px; skill and level on one baseline underneath.</li>
+          <li>Icon top-left in a 38px cream well: <strong>one Ink math glyph, Fredoka 600 / 20px, centred</strong> — the operator where one exists, otherwise the smallest true mark for that skill (½, ¢, ▲, ∠). Fredoka does not carry every operator — where it is missing (minus, clock), use the section 12 feather icon at 20px, 2.2–2.6px stroke, Ink, never a substituted system-font character. Never a bird, never an illustration, never two glyphs.</li>
+          <li>Name bottom-left in Fredoka 600 / 20px; scope line and level badge on one baseline underneath.</li>
           <li>Level badge is cream with Ink text — the only badge on the card. Locked games get the lock glyph at 40% and no badge.</li>
           <li>Cards never reorder themselves by "recommended". Fixed order, so muscle memory works.</li>
         </ul></div>
@@ -941,49 +1043,161 @@ a:hover{color:#C4471B}
   </section>
 
   <section style="position:relative; z-index:1; width:100%; max-width:1040px; display:flex; flex-direction:column; gap:24px">
-    <h2 style="margin:0; font-family:Fredoka, sans-serif; font-weight:600; font-size:20px; color:#14231F; letter-spacing:0.06em; text-transform:uppercase">15 · Flight logs — printable worksheets</h2>
-    <p style="margin:0; max-width:62ch; font-size:17px; line-height:1.6; color:#14231F; text-wrap:pretty">The printed half of the product, and the reason the mark is tested in pure black. A flight log is one sheet, one skill, printed on a home inkjet with no colour and no bleed.</p>
+    <h2 style="margin:0; font-family:Fredoka, sans-serif; font-weight:600; font-size:20px; color:#14231F; letter-spacing:0.06em; text-transform:uppercase; display:flex; align-items:center; gap:12px; flex-wrap:wrap">15 · Flight logs — printable worksheets <span style="background:#F26B3A; color:#14231F; font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:500; letter-spacing:.1em; padding:4px 9px; border-radius:999px; text-transform:none">NEW · NOT YET PUSHED</span></h2>
+    <p style="margin:0; max-width:62ch; font-size:17px; line-height:1.6; color:#14231F; text-wrap:pretty">The printed half of the product, and the reason the mark is tested in pure black. A flight log is one sheet, one skill, printed on a home inkjet with no colour and no bleed. Eleven items in three fixed blocks — stacked, inline, one thought problem — never interleaved.</p>
     <div style="background:#14231F0d; border-radius:20px; padding:28px; display:flex; justify-content:center">
-      <div style="width:100%; max-width:420px; background:#fff; border:1px solid #14231F1a; padding:28px; display:flex; flex-direction:column; gap:18px">
+      <div style="width:100%; max-width:560px; background:#fff; border:1px solid #14231F1a; padding:34px 36px; display:flex; flex-direction:column; gap:20px">
         <div style="display:flex; align-items:center; gap:12px; border-bottom:2px solid #000; padding-bottom:12px; color:#000; --a:#000">
           <dc-import name="LarkMark" size="{{ s32 }}" color="#000000" accent="#000000" eye="#FFFFFF" hint-size="32px,32px"></dc-import>
           <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:22px; color:#000; line-height:1">larkit</span>
           <div style="flex:1"></div>
-          <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:12px; color:#000">Flight log · Sum Perch · Level 2</span>
+          <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:12px; color:#000">Flight log · Addition Acorns · Level 1 · Sums to 10</span>
         </div>
-        <div style="display:flex; gap:16px; font-family:Nunito,sans-serif; font-size:12px; color:#000">
-          <span style="flex:1; border-bottom:1px solid #000; padding-bottom:2px">Name</span>
-          <span style="width:96px; border-bottom:1px solid #000; padding-bottom:2px">Date</span>
+        <div style="display:flex; gap:20px; font-family:Nunito,sans-serif; font-weight:600; font-size:12px; color:#000">
+          <span style="flex:1; border-bottom:1px solid #000; padding-bottom:3px">Name</span>
+          <span style="width:120px; border-bottom:1px solid #000; padding-bottom:3px">Date</span>
         </div>
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px 20px">
-          <div style="display:flex; align-items:center; gap:10px; font-family:Fredoka,sans-serif; font-weight:600; font-size:19px; color:#000"><span style="font-family:Nunito,sans-serif; font-weight:700; font-size:12px; width:16px">1.</span><span>7 + 6 =</span><span style="flex:1; height:28px; border:1.5px solid #000"></span></div>
-          <div style="display:flex; align-items:center; gap:10px; font-family:Fredoka,sans-serif; font-weight:600; font-size:19px; color:#000"><span style="font-family:Nunito,sans-serif; font-weight:700; font-size:12px; width:16px">2.</span><span>12 + 5 =</span><span style="flex:1; height:28px; border:1.5px solid #000"></span></div>
-          <div style="display:flex; align-items:center; gap:10px; font-family:Fredoka,sans-serif; font-weight:600; font-size:19px; color:#000"><span style="font-family:Nunito,sans-serif; font-weight:700; font-size:12px; width:16px">3.</span><span>9 + 8 =</span><span style="flex:1; height:28px; border:1.5px solid #000"></span></div>
-          <div style="display:flex; align-items:center; gap:10px; font-family:Fredoka,sans-serif; font-weight:600; font-size:19px; color:#000"><span style="font-family:Nunito,sans-serif; font-weight:700; font-size:12px; width:16px">4.</span><span>14 + 3 =</span><span style="flex:1; height:28px; border:1.5px solid #000"></span></div>
-          <div style="display:flex; align-items:center; gap:10px; font-family:Fredoka,sans-serif; font-weight:600; font-size:19px; color:#000"><span style="font-family:Nunito,sans-serif; font-weight:700; font-size:12px; width:16px">5.</span><span>6 + 6 =</span><span style="flex:1; height:28px; border:1.5px solid #000"></span></div>
-          <div style="display:flex; align-items:center; gap:10px; font-family:Fredoka,sans-serif; font-weight:600; font-size:19px; color:#000"><span style="font-family:Nunito,sans-serif; font-weight:700; font-size:12px; width:16px">6.</span><span>11 + 7 =</span><span style="flex:1; height:28px; border:1.5px solid #000"></span></div>
+
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:Nunito,sans-serif; font-weight:900; font-size:11px; letter-spacing:.1em; color:#000">PART A · STACK AND ADD</div>
+          <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:18px 24px">
+          <div style="display:flex; gap:8px; align-items:flex-start">
+            <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:11px; color:#000; line-height:1.6; width:14px">1.</span>
+            <div style="flex:1; max-width:88px">
+              <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#000; text-align:right; line-height:1.25">4</div>
+              <div style="display:flex; justify-content:space-between; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#000; line-height:1.25; border-bottom:1.5px solid #000; padding-bottom:2px">+<span>3</span></div>
+              <div style="height:34px"></div>
+            </div>
+          </div>
+          <div style="display:flex; gap:8px; align-items:flex-start">
+            <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:11px; color:#000; line-height:1.6; width:14px">2.</span>
+            <div style="flex:1; max-width:88px">
+              <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#000; text-align:right; line-height:1.25">6</div>
+              <div style="display:flex; justify-content:space-between; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#000; line-height:1.25; border-bottom:1.5px solid #000; padding-bottom:2px">+<span>2</span></div>
+              <div style="height:34px"></div>
+            </div>
+          </div>
+          <div style="display:flex; gap:8px; align-items:flex-start">
+            <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:11px; color:#000; line-height:1.6; width:14px">3.</span>
+            <div style="flex:1; max-width:88px">
+              <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#000; text-align:right; line-height:1.25">5</div>
+              <div style="display:flex; justify-content:space-between; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#000; line-height:1.25; border-bottom:1.5px solid #000; padding-bottom:2px">+<span>5</span></div>
+              <div style="height:34px"></div>
+            </div>
+          </div>
+          <div style="display:flex; gap:8px; align-items:flex-start">
+            <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:11px; color:#000; line-height:1.6; width:14px">4.</span>
+            <div style="flex:1; max-width:88px">
+              <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#000; text-align:right; line-height:1.25">7</div>
+              <div style="display:flex; justify-content:space-between; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#000; line-height:1.25; border-bottom:1.5px solid #000; padding-bottom:2px">+<span>1</span></div>
+              <div style="height:34px"></div>
+            </div>
+          </div>
+          <div style="display:flex; gap:8px; align-items:flex-start">
+            <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:11px; color:#000; line-height:1.6; width:14px">5.</span>
+            <div style="flex:1; max-width:88px">
+              <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#000; text-align:right; line-height:1.25">3</div>
+              <div style="display:flex; justify-content:space-between; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#000; line-height:1.25; border-bottom:1.5px solid #000; padding-bottom:2px">+<span>6</span></div>
+              <div style="height:34px"></div>
+            </div>
+          </div>
+          <div style="display:flex; gap:8px; align-items:flex-start">
+            <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:11px; color:#000; line-height:1.6; width:14px">6.</span>
+            <div style="flex:1; max-width:88px">
+              <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#000; text-align:right; line-height:1.25">2</div>
+              <div style="display:flex; justify-content:space-between; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; color:#000; line-height:1.25; border-bottom:1.5px solid #000; padding-bottom:2px">+<span>8</span></div>
+              <div style="height:34px"></div>
+            </div>
+          </div>
+          </div>
         </div>
-        <div style="border-top:1px solid #00000033; padding-top:10px; display:flex; justify-content:space-between; font-family:Nunito,sans-serif; font-size:10px; color:#000">
-          <span>larkit.io</span><span>Page 1 of 1</span>
+
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:Nunito,sans-serif; font-weight:900; font-size:11px; letter-spacing:.1em; color:#000">PART B · WRITE THE ANSWER</div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px 24px">
+          <div style="display:flex; align-items:center; gap:8px">
+            <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:11px; color:#000; width:16px">7.</span>
+            <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:18px; color:#000; white-space:nowrap">7 + 2 =</span>
+            <span style="flex:1; max-width:70px; height:28px; border:1.5px solid #000"></span>
+          </div>
+          <div style="display:flex; align-items:center; gap:8px">
+            <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:11px; color:#000; width:16px">8.</span>
+            <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:18px; color:#000; white-space:nowrap">1 + 8 =</span>
+            <span style="flex:1; max-width:70px; height:28px; border:1.5px solid #000"></span>
+          </div>
+          <div style="display:flex; align-items:center; gap:8px">
+            <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:11px; color:#000; width:16px">9.</span>
+            <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:18px; color:#000; white-space:nowrap">4 + 5 =</span>
+            <span style="flex:1; max-width:70px; height:28px; border:1.5px solid #000"></span>
+          </div>
+          <div style="display:flex; align-items:center; gap:8px">
+            <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:11px; color:#000; width:16px">10.</span>
+            <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:18px; color:#000; white-space:nowrap">6 + 3 =</span>
+            <span style="flex:1; max-width:70px; height:28px; border:1.5px solid #000"></span>
+          </div>
+          </div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:Nunito,sans-serif; font-weight:900; font-size:11px; letter-spacing:.1em; color:#000">PART C · THINK IT THROUGH</div>
+          <div style="display:flex; gap:8px; align-items:flex-start">
+            <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:11px; color:#000; width:16px; line-height:1.5">11.</span>
+            <div style="flex:1; display:flex; flex-direction:column; gap:10px">
+              <span style="font-family:Nunito,sans-serif; font-weight:600; font-size:14px; color:#000; line-height:1.5">Pick two numbers from the box that make 6 together.</span>
+              <div style="display:flex; gap:8px">
+                <span style="border:1.5px solid #000; padding:4px 12px; font-family:Fredoka,sans-serif; font-weight:600; font-size:16px; color:#000">1</span>
+                <span style="border:1.5px solid #000; padding:4px 12px; font-family:Fredoka,sans-serif; font-weight:600; font-size:16px; color:#000">2</span>
+                <span style="border:1.5px solid #000; padding:4px 12px; font-family:Fredoka,sans-serif; font-weight:600; font-size:16px; color:#000">4</span>
+                <span style="border:1.5px solid #000; padding:4px 12px; font-family:Fredoka,sans-serif; font-weight:600; font-size:16px; color:#000">5</span>
+                <span style="border:1.5px solid #000; padding:4px 12px; font-family:Fredoka,sans-serif; font-weight:600; font-size:16px; color:#000">7</span>
+              </div>
+              <div style="display:flex; align-items:center; gap:8px">
+                <span style="width:56px; height:28px; border:1.5px solid #000"></span>
+                <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:18px; color:#000">+</span>
+                <span style="width:56px; height:28px; border:1.5px solid #000"></span>
+                <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:18px; color:#000">= 6</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:4px; border-top:1px solid #00000033; padding-top:10px; display:flex; align-items:center; justify-content:space-between; font-family:Nunito,sans-serif; font-size:10px; color:#000">
+          <span>larkit.io</span>
+          <span style="display:flex; align-items:center; gap:6px; font-weight:700; font-size:11px">Landed <span style="border:1.5px solid #000; width:34px; height:20px; display:inline-block"></span> of 11</span>
+          <span>Addition Acorns · L1 · Page 1 of 1</span>
         </div>
       </div>
     </div>
     <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px">
+      <div style="background:#fff; border:1.5px solid #14231F1a; border-radius:16px; padding:22px 24px; grid-column:1/-1">
+        <div style="font-family:Fredoka,sans-serif; font-size:19px; color:#14231F; margin-bottom:12px">Item templates — the only three</div>
+        <ul style="margin:0; padding-left:20px; font-size:15px; line-height:1.7; color:#14231F">
+          <li><strong>Formats never interleave.</strong> A sheet runs Part A (stacked) → Part B (inline) → Part C (thought problems), each under a Nunito 900 / 11pt tracked caption. Mixing formats row by row is what makes the current generator output look broken.</li>
+          <li><strong>Stacked (Part A):</strong> three per row, 88px column. Both operands <strong>right-aligned in one digit column</strong>, no letter-spacing — a single-digit operand sits under the ones place, never centred. Operator hangs left on the second line. <strong>One 1.5px rule, and one only</strong>; the child writes in the 34px of clear space beneath it. Never a second line under the answer space.</li>
+          <li><strong>Inline (Part B):</strong> two per row, <code style="font-family:'IBM Plex Mono',monospace; font-size:13px">a + b =</code> then a 28px bordered box. <strong>The blank is the box.</strong> Never print a <strong>?</strong> as well, and never print the answer.</li>
+          <li><strong>Thought problem (Part C):</strong> one or two per sheet, at the end, never in a column. Any "pick two numbers" prompt <strong>must print the number box it picks from</strong> and a structured answer line (☐ + ☐ = 6). A prompt with no bank has no answer.</li>
+          <li>Item numbers are Nunito 700 / 11pt, 14–16px wide, sitting on the <strong>first baseline</strong> of the item — never vertically centred against a tall item.</li>
+          <li>Row rhythm is fixed per part (18px stacked, 14px inline). Gaps never vary item to item.</li>
+        </ul>
+      </div>
       <div style="background:#fff; border:1.5px solid #14231F1a; border-radius:16px; padding:22px 24px">
         <div style="font-family:Fredoka,sans-serif; font-size:19px; color:#14231F; margin-bottom:12px">Print rules</div><ul style="margin:0; padding-left:20px; font-size:15px; line-height:1.7; color:#14231F">
-          <li>100% black only. No greys under 40%, no tints, no colour — a parent printing this should never lose a stroke to a dry cartridge.</li>
-          <li>Header lockup at 32px with a 2px rule under it, and the log name — game, level — on the same baseline right.</li>
-          <li>Name and Date rules always, top of sheet. Nunito 12pt, 1px rules.</li>
-          <li>Answer boxes are 28px tall with a 1.5px black border — big enough for a pencil grip, square corners like the shape figures.</li>
-          <li>Body maths in Fredoka 600 / 19pt; nothing on the sheet below 12pt.</li>
-          <li>Footer: larkit.io left, page count right, 10pt. That is the entire footer.</li>
+          <li>100% black only. No greys under 40%, no tints, <strong>no colour anywhere</strong> — the hearts, moons and stars the current generator sprinkles between items are out. Nothing decorative shares the page with a child's own marks.</li>
+          <li>Header lockup at 32px with a 2px rule under it; game, level and scope — "Addition Acorns · Level 1 · Sums to 10" — on the same baseline right.</li>
+          <li>Name and Date rules always, top of sheet. Nunito 600 / 12pt, 1px rules.</li>
+          <li>Answer boxes 28px tall, 1.5px black border, square corners. Body maths Fredoka 600 / 18–20pt; nothing on the sheet below 10pt.</li>
+          <li>Footer, one line: larkit.io left · "Landed ☐ of 11" centre · game, level and page right.</li>
+          <li>US Letter, 36px margins, portrait. One sheet means one sheet — a flight log never runs to page 2.</li>
         </ul></div>
       <div style="background:#fff; border:1.5px solid #14231F1a; border-radius:16px; padding:22px 24px">
-        <div style="font-family:Fredoka,sans-serif; font-size:19px; color:#14231F; margin-bottom:12px">Content rules</div><ul style="margin:0; padding-left:20px; font-size:15px; line-height:1.7; color:#14231F">
-          <li>One skill per sheet, twelve problems, two columns. A sheet a child can finish in one sitting beats a sheet that looks thorough.</li>
+        <div style="font-family:Fredoka,sans-serif; font-size:19px; color:#14231F; margin-bottom:12px">Generator rules</div><ul style="margin:0; padding-left:20px; font-size:15px; line-height:1.7; color:#14231F">
+          <li><strong>Operands obey the level, not the page.</strong> Level 1 is sums within 10 — an operand of 14 on a Beginner sheet is a bug, not a stretch goal.</li>
+          <li><strong>Never print the answer.</strong> "3 + 1 = 5 ___" and "2 + 2 = 2 ___" are the same fault: the template filled the result slot and left the blank empty. The result slot is always the blank.</li>
+          <li>No duplicate items and no repeated prompt wording on one sheet — "make 6 together" three times reads as a printing error.</li>
+          <li>Identity and zero facts (n + 0, 0 + n) are capped at one per sheet; a sheet of "+ 0" teaches nothing.</li>
+          <li>Eleven items: 6 stacked, 4 inline, 1 thought problem. A sheet a child finishes beats a sheet that looks thorough.</li>
           <li>Diagrams follow the worksheet mode in section 10: Ink stays black, Lark Teal becomes 60% grey, Sun becomes a dashed black line.</li>
-          <li>The answer key is a separate sheet, never the reverse side — parents photocopy.</li>
-          <li>No mascot art in the sheet body. The lark appears only in the header lockup, so nothing competes with the child&rsquo;s own marks.</li>
+          <li>The answer key is a separate sheet — same grid, answers in the boxes, "Answer key" in place of Name and Date. Never the reverse side; parents photocopy.</li>
           <li>Every sheet is generated from the same level data the app uses. A flight log is never a hand-made PDF.</li>
         </ul></div>
     </div>
@@ -1128,6 +1342,95 @@ a:hover{color:#C4471B}
       <div style="font-family:Fredoka,sans-serif; font-weight:500; font-size:52px; color:#14231F; line-height:1.15; max-width:820px; text-wrap:balance">Math that feels like play.</div>
       <div style="font-family:Nunito,sans-serif; font-weight:700; font-size:26px; color:#C4471B; letter-spacing:0.02em">larkit.io</div>
     </div>
+    </div>
+  </section>
+
+  <section style="position:relative; z-index:1; width:100%; max-width:1040px; display:flex; flex-direction:column; gap:24px">
+    <h2 style="margin:0; font-family:Fredoka, sans-serif; font-weight:600; font-size:20px; color:#14231F; letter-spacing:0.06em; text-transform:uppercase; display:flex; align-items:center; gap:12px; flex-wrap:wrap">20 · First flight — signup &amp; onboarding <span style="background:#F26B3A; color:#14231F; font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:500; letter-spacing:.1em; padding:4px 9px; border-radius:999px; text-transform:none">NEW · NOT YET PUSHED</span></h2>
+    <p style="margin:0; max-width:62ch; font-size:17px; line-height:1.6; color:#14231F; text-wrap:pretty">A parent creates the account; kids get profiles under it. One value page, then straight in — five screens on iPad, the same five on web at 1440. Full screen designs live in <span style="font-family:'IBM Plex Mono',monospace; font-size:15px; color:#0B7A6A">Larkit Auth Onboarding.dc.html</span>, direction 2a.</p>
+
+    <div style="background:#FFFBEB; border:1.5px solid #14231F1a; border-radius:20px; padding:28px 30px; display:flex; flex-direction:column; gap:20px">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">THE FLOW — IPAD 1024 × 768</div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px">
+      <figure style="margin:0; display:flex; flex-direction:column; gap:10px">
+        <img src="brand/onboarding/01-value.png" alt="Value — one page" style="width:100%; display:block; border:1.5px solid #14231F1a; border-radius:14px">
+        <figcaption style="display:flex; flex-direction:column; gap:3px">
+          <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:17px; color:#14231F">01 · Value — one page</span>
+          <span style="font-family:Nunito,sans-serif; font-weight:600; font-size:13px; line-height:1.45; color:#14231F">Slogan, four benefits, live play cards in the teal panel. One page only — never a carousel.</span>
+        </figcaption>
+      </figure>
+      <figure style="margin:0; display:flex; flex-direction:column; gap:10px">
+        <img src="brand/onboarding/02-account.png" alt="Parent account" style="width:100%; display:block; border:1.5px solid #14231F1a; border-radius:14px">
+        <figcaption style="display:flex; flex-direction:column; gap:3px">
+          <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:17px; color:#14231F">02 · Parent account</span>
+          <span style="font-family:Nunito,sans-serif; font-weight:600; font-size:13px; line-height:1.45; color:#14231F">Apple and Google only, centred on cream. Legal line under the buttons.</span>
+        </figcaption>
+      </figure>
+      <figure style="margin:0; display:flex; flex-direction:column; gap:10px">
+        <img src="brand/onboarding/03-add-kid.png" alt="Add a kid · step 2 of 3" style="width:100%; display:block; border:1.5px solid #14231F1a; border-radius:14px">
+        <figcaption style="display:flex; flex-direction:column; gap:3px">
+          <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:17px; color:#14231F">03 · Add a kid · step 2 of 3</span>
+          <span style="font-family:Nunito,sans-serif; font-weight:600; font-size:13px; line-height:1.45; color:#14231F">First name, age, grade. Three-segment rail; Seafoam marks the choice.</span>
+        </figcaption>
+      </figure>
+      <figure style="margin:0; display:flex; flex-direction:column; gap:10px">
+        <img src="brand/onboarding/04-paywall.png" alt="Soft paywall" style="width:100%; display:block; border:1.5px solid #14231F1a; border-radius:14px">
+        <figcaption style="display:flex; flex-direction:column; gap:3px">
+          <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:17px; color:#14231F">04 · Soft paywall</span>
+          <span style="font-family:Nunito,sans-serif; font-weight:600; font-size:13px; line-height:1.45; color:#14231F">Free and Plus side by side. Sun button on Plus, outline button on Free.</span>
+        </figcaption>
+      </figure>
+      <figure style="margin:0; display:flex; flex-direction:column; gap:10px">
+        <img src="brand/onboarding/05-profiles.png" alt="Profile picker" style="width:100%; display:block; border:1.5px solid #14231F1a; border-radius:14px">
+        <figcaption style="display:flex; flex-direction:column; gap:3px">
+          <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:17px; color:#14231F">05 · Profile picker</span>
+          <span style="font-family:Nunito,sans-serif; font-weight:600; font-size:13px; line-height:1.45; color:#14231F">Returning path. 150px tinted discs, first name only, no level or streak.</span>
+        </figcaption>
+      </figure>
+      </div>
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em; margin-top:6px">WEB — 1440 × 900</div>
+      <figure style="margin:0; display:flex; flex-direction:column; gap:10px">
+        <img src="brand/onboarding/06-web.png" alt="Web value page" style="width:100%; display:block; border:1.5px solid #14231F1a; border-radius:14px">
+        <figcaption style="display:flex; flex-direction:column; gap:3px">
+          <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:17px; color:#14231F">06 · Web value page</span>
+          <span style="font-family:Nunito,sans-serif; font-weight:600; font-size:13px; line-height:1.45; color:#14231F">Same design as the app: same split, same benefits, same three play cards, with a nav row added.</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px">
+      <div style="background:#fff; border:1.5px solid #14231F1a; border-radius:16px; padding:22px 24px">
+        <div style="font-family:Fredoka,sans-serif; font-size:19px; color:#14231F; margin-bottom:12px">Voice</div>
+        <ul style="margin:0; padding-left:20px; font-size:15px; line-height:1.7; color:#14231F">
+          <li><strong>The account flow is plain English.</strong> "Create your parent account", "Who's learning?", "Get started", "Already have an account? Sign in". A parent mid-signup should never have to decode a metaphor.</li>
+          <li><strong>Bird voice belongs to the kid-facing screens</strong> — "Welcome back — who's flying?" on the profile picker, and the game names themselves. Nowhere in signup, payment or legal copy.</li>
+          <li>The slogan is the one piece of brand voice on the value page: <strong>Math that takes flight.</strong> No second tagline underneath it.</li>
+          <li>Plans name the maths, not the games: "3 modes — addition, subtraction, counting", never "Addition Acorns" on a pricing card.</li>
+          <li>Feature names are glossed on first use — "Flight logs — printable worksheets for any game, with answer keys".</li>
+        </ul>
+      </div>
+      <div style="background:#fff; border:1.5px solid #14231F1a; border-radius:16px; padding:22px 24px">
+        <div style="font-family:Fredoka,sans-serif; font-size:19px; color:#14231F; margin-bottom:12px">Layout &amp; colour</div>
+        <ul style="margin:0; padding-left:20px; font-size:15px; line-height:1.7; color:#14231F">
+          <li><strong>One full-bleed teal panel per screen, maximum.</strong> Colour arrives in blocks — never as scattered decoration on cream.</li>
+          <li>The teal panel holds live play cards, never mascot art. All four tile tints appear there, in the fixed section 08 order.</li>
+          <li><strong>Play cards are standardised:</strong> cream card, name in Nunito 700 / 14px left, Sun level pill right, the figure, then the prompt in Fredoka 600 centred. Charts and number lines follow sections 09 and 10 exactly — axis rule at Ink 15%, gridlines at 8%, Teal dots, Sun arc.</li>
+          <li>Sun is reserved for the single paid action. Every other primary button is Lark Teal with a 5px bottom edge.</li>
+          <li>Benefit icons are feather icons (section 12) in 44px tinted wells — never text glyphs, which Fredoka does not carry consistently.</li>
+          <li><strong>Web is the same design, not a second one.</strong> 1440 desktop keeps the split, the same benefit list and the same three play cards; only the nav row is added.</li>
+          <li>Cream on Lark Teal is always solid — never an alpha, which drops below AA immediately.</li>
+        </ul>
+      </div>
+      <div style="background:#fff; border:1.5px solid #14231F1a; border-radius:16px; padding:22px 24px; grid-column:1/-1">
+        <div style="font-family:Fredoka,sans-serif; font-size:19px; color:#14231F; margin-bottom:12px">Accounts &amp; data</div>
+        <ul style="margin:0; padding-left:20px; font-size:15px; line-height:1.7; color:#14231F">
+          <li>Parent signs up with <strong>Apple or Google</strong>. No email-and-password form, no social login beyond those two.</li>
+          <li>One account holds <strong>up to four kids</strong>. We store <strong>first name, age and grade</strong> — nothing else about the child, ever, and the screen says so.</li>
+          <li>Parents drive the whole flow, so there is no math parent-gate; the legal line sits directly under the sign-in buttons.</li>
+          <li>The paywall is soft: the free plan is a real plan (3 modes, 1 kid) and "Stay on the free plan" is a full-weight button, not a grey link.</li>
+          <li>Returning kids land on the profile picker, never on a login form. Parent settings is a small link in the corner.</li>
+        </ul>
+      </div>
     </div>
   </section>
 

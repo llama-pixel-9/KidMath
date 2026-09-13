@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F1E3;font-family:Nunito,sans-serif}
+a{color:#0B7A6A;text-decoration:underline;text-underline-offset:3px}
+a:hover{color:#C4471B}
+@keyframes larkFlap{0%,100%{transform:rotate(0deg)}45%{transform:rotate(-14deg)}}
+</style>
+</helmet>
+
+<section style="display:flex; flex-direction:column; gap:56px; padding:64px; align-items:flex-start">
+
+  <div style="display:flex; align-items:baseline; gap:16px">
+    <h1 style="margin:0; font-family:Fredoka,sans-serif; font-weight:600; font-size:34px; color:#14231F">Larkit — login, signup &amp; onboarding</h1>
+    <span style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:#14231F99">Turn 1 explorations up top · turn 2 merged direction (2a) below · iPad 1024×768 + web 1440×900</span>
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap; gap:80px; align-items:flex-start">
+
+    <!-- ============ 1a ============ -->
+    <div id="1a" style="display:flex; flex-direction:column; gap:22px">
+      <div style="display:flex; align-items:center; gap:14px">
+        <span style="font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:500; background:#0B7A6A; color:#FFFBEB; padding:5px 11px; border-radius:999px">1a</span>
+        <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:26px; color:#14231F">The Perch — calm &amp; parental</span>
+      </div>
+      <p style="margin:0; max-width:76ch; font-size:16px; line-height:1.6; color:#14231F99">Cream, restrained, plain-spoken. A stepped wizard with a visible progress rail. The lark stays a small mark in the corner — this direction treats the parent as a busy adult, not a player. Safest for App Review and for grandparents.</p>
+
+      <div style="display:flex; gap:28px; align-items:flex-start">
+
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">01 · VALUE 1/3</div>
+          <div style="width:1024px; height:768px; border-radius:26px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#FFFBEB; display:flex; flex:none">
+            <div style="flex:1.05; padding:52px 48px; display:flex; flex-direction:column; justify-content:space-between">
+              <div style="display:flex; align-items:center; gap:11px">
+                <img src="brand/larkit-mark.svg" width="38" height="32" alt="">
+                <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:25px; color:#0B7A6A">larkit</span>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:20px">
+                <h2 style="margin:0; font-family:Fredoka,sans-serif; font-weight:600; font-size:50px; line-height:1.1; color:#14231F; text-wrap:pretty">Ten minutes of math your kid will actually finish.</h2>
+                <p style="margin:0; font-size:20px; line-height:1.55; color:#14231F; max-width:34ch">Short sessions built around one skill at a time. No timers, no streaks to lose, no ads.</p>
+              </div>
+              <div style="display:flex; align-items:center; justify-content:space-between">
+                <div style="display:flex; gap:9px; align-items:center">
+                  <span style="width:28px; height:8px; border-radius:4px; background:#0B7A6A"></span>
+                  <span style="width:8px; height:8px; border-radius:4px; background:#0B7A6A33"></span>
+                  <span style="width:8px; height:8px; border-radius:4px; background:#0B7A6A33"></span>
+                </div>
+                <div style="display:flex; align-items:center; gap:22px">
+                  <span style="font-size:17px; font-weight:700; color:#14231F99">Skip</span>
+                  <span style="background:#0B7A6A; color:#FFFBEB; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; padding:15px 40px; border-radius:16px; box-shadow:0 5px 0 #085B4F">Next</span>
+                </div>
+              </div>
+            </div>
+            <div style="flex:1; background:#A7DED3; display:flex; align-items:center; justify-content:center; padding:44px">
+              <div style="background:#FFFFFF; border-radius:22px; padding:34px 32px; width:100%; display:flex; flex-direction:column; gap:22px">
+                <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:44px; color:#14231F; text-align:center">7 × 6</div>
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px">
+                  <div style="height:64px; border-radius:18px; background:#A7DED3; box-shadow:0 5px 0 #7FCFBE; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:26px; color:#14231F">42</div>
+                  <div style="height:64px; border-radius:18px; background:#6FC3B2; box-shadow:0 5px 0 #3E9E8E; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:26px; color:#14231F">36</div>
+                  <div style="height:64px; border-radius:18px; background:#FBC7A8; box-shadow:0 5px 0 #F0A47A; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:26px; color:#14231F">48</div>
+                  <div style="height:64px; border-radius:18px; background:#F9A97F; box-shadow:0 5px 0 #E8895A; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:26px; color:#14231F">40</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">02 · PARENT ACCOUNT</div>
+          <div style="width:1024px; height:768px; border-radius:26px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#FFFBEB; display:flex; align-items:center; justify-content:center; flex:none; position:relative">
+            <div style="position:absolute; top:36px; left:44px; display:flex; align-items:center; gap:11px">
+              <img src="brand/larkit-mark.svg" width="34" height="28" alt="">
+              <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:22px; color:#0B7A6A">larkit</span>
+            </div>
+            <div style="width:520px; display:flex; flex-direction:column; gap:26px">
+              <div style="display:flex; flex-direction:column; gap:10px">
+                <h2 style="margin:0; font-family:Fredoka,sans-serif; font-weight:600; font-size:38px; color:#14231F">Create your parent account</h2>
+                <p style="margin:0; font-size:17px; line-height:1.55; color:#14231F99">You'll add your kids next. One account covers up to four.</p>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:12px">
+                <div style="height:60px; border-radius:16px; background:#14231F; display:flex; align-items:center; justify-content:center; gap:12px">
+                  <svg width="17" height="21" viewBox="0 0 14 17" fill="#FFFBEB" aria-hidden="true"><path d="M11.6 9.03c.02 2.35 2.06 3.13 2.08 3.14-.02.05-.33 1.12-1.08 2.22-.65.95-1.32 1.9-2.38 1.92-1.04.02-1.38-.62-2.57-.62-1.19 0-1.56.6-2.55.64-1.02.04-1.8-1.03-2.46-1.98C1.3 12.42.27 8.9 1.65 6.52c.68-1.18 1.9-1.93 3.23-1.95 1-.02 1.95.68 2.57.68.61 0 1.77-.84 2.98-.72.51.02 1.94.2 2.86 1.55-.07.05-1.71 1-1.69 2.95M9.64 3.2c.55-.66.92-1.58.82-2.5-.79.03-1.75.53-2.32 1.19-.51.58-.95 1.52-.83 2.42.88.07 1.78-.45 2.33-1.11"></path></svg>
+                  <span style="font-size:19px; font-weight:700; color:#FFFBEB">Continue with Apple</span>
+                </div>
+                <div style="height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; gap:12px">
+                  <svg width="21" height="21" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"></path><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"></path><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"></path><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"></path></svg>
+                  <span style="font-size:19px; font-weight:700; color:#14231F">Continue with Google</span>
+                </div>
+              </div>
+              <p style="margin:0; font-size:14px; line-height:1.6; color:#14231F99; text-align:center">By continuing you agree to the <a href="#1a">Terms</a> and <a href="#1a">Privacy Policy</a>. We never show ads and never sell data about your kids.</p>
+              <div style="text-align:center; font-size:17px; font-weight:700; color:#0B7A6A">I already have a nest — sign in</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">03 · ADD A KID · STEP 2 OF 3</div>
+          <div style="width:1024px; height:768px; border-radius:26px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#FFFBEB; display:flex; flex-direction:column; flex:none">
+            <div style="padding:30px 48px; display:flex; align-items:center; gap:20px; border-bottom:1.5px solid #14231F14">
+              <span style="font-size:17px; font-weight:700; color:#14231F99">Back</span>
+              <div style="flex:1; display:flex; gap:8px">
+                <span style="flex:1; height:6px; border-radius:3px; background:#0B7A6A"></span>
+                <span style="flex:1; height:6px; border-radius:3px; background:#0B7A6A"></span>
+                <span style="flex:1; height:6px; border-radius:3px; background:#0B7A6A26"></span>
+              </div>
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:14px; color:#14231F99">2 / 3</span>
+            </div>
+            <div style="flex:1; padding:44px 48px; display:flex; flex-direction:column; gap:34px">
+              <div style="display:flex; flex-direction:column; gap:8px">
+                <h2 style="margin:0; font-family:Fredoka,sans-serif; font-weight:600; font-size:38px; color:#14231F">Who's learning?</h2>
+                <p style="margin:0; font-size:17px; color:#14231F99">First name only — that's all we store about your child.</p>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:10px">
+                <label style="font-size:15px; font-weight:700; color:#14231F">First name</label>
+                <div style="height:64px; border-radius:16px; background:#FFFFFF; border:2px solid #0B7A6A; display:flex; align-items:center; padding:0 22px; font-family:Fredoka,sans-serif; font-size:24px; color:#14231F">Maya<span style="width:2px; height:28px; background:#0B7A6A; margin-left:3px"></span></div>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:12px">
+                <label style="font-size:15px; font-weight:700; color:#14231F">Age</label>
+                <div style="display:flex; gap:10px">
+                  <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:22px; color:#14231F">5</span>
+                  <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:22px; color:#14231F">6</span>
+                  <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:22px; color:#14231F">7</span>
+                  <span style="flex:1; height:60px; border-radius:16px; background:#A7DED3; border:1.5px solid #0B7A6A; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:22px; color:#14231F">8</span>
+                  <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:22px; color:#14231F">9</span>
+                  <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:22px; color:#14231F">10</span>
+                  <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:22px; color:#14231F">11</span>
+                  <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:22px; color:#14231F">12+</span>
+                </div>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:12px">
+                <label style="font-size:15px; font-weight:700; color:#14231F">Grade</label>
+                <div style="display:flex; gap:10px">
+                  <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:20px; color:#14231F">K</span>
+                  <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:20px; color:#14231F">1st</span>
+                  <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:20px; color:#14231F">2nd</span>
+                  <span style="flex:1; height:60px; border-radius:16px; background:#A7DED3; border:1.5px solid #0B7A6A; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:20px; color:#14231F">3rd</span>
+                  <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:20px; color:#14231F">4th</span>
+                  <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:20px; color:#14231F">5th</span>
+                  <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:20px; color:#14231F">6th</span>
+                </div>
+              </div>
+              <div style="margin-top:auto; display:flex; align-items:center; justify-content:space-between">
+                <span style="font-size:16px; font-weight:700; color:#0B7A6A">+ Add another kid</span>
+                <span style="background:#0B7A6A; color:#FFFBEB; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; padding:16px 46px; border-radius:16px; box-shadow:0 5px 0 #085B4F; white-space:nowrap; flex:none">Continue</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">04 · SOFT PAYWALL</div>
+          <div style="width:1024px; height:768px; border-radius:26px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#FFFBEB; display:flex; align-items:center; justify-content:center; flex:none">
+            <div style="width:600px; background:#FFFFFF; border-radius:24px; padding:44px 44px 36px; display:flex; flex-direction:column; gap:26px; border:1.5px solid #14231F14">
+              <div style="display:flex; flex-direction:column; gap:8px">
+                <span style="font-family:'IBM Plex Mono',monospace; font-size:13px; letter-spacing:.1em; color:#0B7A6A">LARKIT PLUS</span>
+                <h2 style="margin:0; font-family:Fredoka,sans-serif; font-weight:600; font-size:36px; color:#14231F">Everything unlocked for Maya</h2>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:14px">
+                <div style="display:flex; align-items:center; gap:14px"><span style="width:26px; height:26px; border-radius:50%; background:#A7DED3; display:flex; align-items:center; justify-content:center; font-size:15px; color:#14231F; flex:none">✓</span><span style="font-size:18px; color:#14231F">All 24 games, K through 6th grade</span></div>
+                <div style="display:flex; align-items:center; gap:14px"><span style="width:26px; height:26px; border-radius:50%; background:#A7DED3; display:flex; align-items:center; justify-content:center; font-size:15px; color:#14231F; flex:none">✓</span><span style="font-size:18px; color:#14231F">Printable worksheets, weekly progress email</span></div>
+                <div style="display:flex; align-items:center; gap:14px"><span style="width:26px; height:26px; border-radius:50%; background:#A7DED3; display:flex; align-items:center; justify-content:center; font-size:15px; color:#14231F; flex:none">✓</span><span style="font-size:18px; color:#14231F">Up to 4 kids on one account</span></div>
+              </div>
+              <div style="background:#FFFBEB; border-radius:18px; padding:20px 22px; display:flex; align-items:center; justify-content:space-between">
+                <div style="display:flex; flex-direction:column; gap:3px"><span style="font-family:Fredoka,sans-serif; font-size:22px; color:#14231F">$6.99 / month</span><span style="font-size:14px; color:#14231F99">or $49/year — save 41%</span></div>
+                <span style="background:#A7DED3; color:#14231F; font-size:14px; font-weight:700; padding:8px 14px; border-radius:999px">7 days free</span>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:14px; align-items:center">
+                <div style="width:100%; height:64px; border-radius:18px; background:#F26B3A; box-shadow:0 5px 0 #C4471B; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:22px; color:#14231F">Start the free trial</div>
+                <span style="font-size:17px; font-weight:700; color:#14231F99">Keep using the free version</span>
+                <span style="font-size:13px; color:#14231F99; text-align:center">Cancel any time. We'll remind you two days before it ends.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <sc-if value="{{ showReturning }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">05 · RETURNING · PROFILE PICKER</div>
+          <div style="width:1024px; height:768px; border-radius:26px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#FFFBEB; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:52px; flex:none; position:relative">
+            <div style="position:absolute; top:36px; left:44px; display:flex; align-items:center; gap:11px">
+              <img src="brand/larkit-mark.svg" width="34" height="28" alt="">
+              <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:22px; color:#0B7A6A">larkit</span>
+            </div>
+            <div style="position:absolute; top:36px; right:44px; font-size:16px; font-weight:700; color:#14231F99">Parent settings</div>
+            <h2 style="margin:0; font-family:Fredoka,sans-serif; font-weight:600; font-size:42px; color:#14231F">Who's practicing today?</h2>
+            <div style="display:flex; gap:44px">
+              <div style="display:flex; flex-direction:column; align-items:center; gap:16px">
+                <div style="width:150px; height:150px; border-radius:50%; background:#A7DED3; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:56px; color:#14231F">M</div>
+                <span style="font-family:Fredoka,sans-serif; font-size:24px; color:#14231F">Maya</span>
+              </div>
+              <div style="display:flex; flex-direction:column; align-items:center; gap:16px">
+                <div style="width:150px; height:150px; border-radius:50%; background:#FBC7A8; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:56px; color:#14231F">J</div>
+                <span style="font-family:Fredoka,sans-serif; font-size:24px; color:#14231F">Jonah</span>
+              </div>
+              <div style="display:flex; flex-direction:column; align-items:center; gap:16px">
+                <div style="width:150px; height:150px; border-radius:50%; background:#6FC3B2; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:56px; color:#14231F">A</div>
+                <span style="font-family:Fredoka,sans-serif; font-size:24px; color:#14231F">Ada</span>
+              </div>
+              <div style="display:flex; flex-direction:column; align-items:center; gap:16px">
+                <div style="width:150px; height:150px; border-radius:50%; border:2.5px dashed #0B7A6A66; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:52px; color:#0B7A6A">+</div>
+                <span style="font-family:Fredoka,sans-serif; font-size:24px; color:#0B7A6A">Add</span>
+              </div>
+            </div>
+            <span style="font-size:16px; color:#14231F99">Parents: tap your name in settings to see progress.</span>
+          </div>
+        </div>
+        </sc-if>
+
+        <sc-if value="{{ showDesktop }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">06 · WEB DESKTOP 1440×900</div>
+          <div style="width:1440px; height:900px; border-radius:14px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#FFFBEB; flex:none; display:flex; flex-direction:column">
+            <div style="height:44px; background:#14231F0d; display:flex; align-items:center; gap:8px; padding:0 16px">
+              <span style="width:11px; height:11px; border-radius:50%; background:#14231F26"></span>
+              <span style="width:11px; height:11px; border-radius:50%; background:#14231F26"></span>
+              <span style="width:11px; height:11px; border-radius:50%; background:#14231F26"></span>
+              <span style="margin-left:14px; background:#FFFFFF; border-radius:8px; padding:5px 16px; font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99">larkit.io/signup</span>
+            </div>
+            <div style="padding:26px 60px; display:flex; align-items:center; justify-content:space-between; border-bottom:1.5px solid #14231F14">
+              <div style="display:flex; align-items:center; gap:11px">
+                <img src="brand/larkit-mark.svg" width="34" height="28" alt="">
+                <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:24px; color:#0B7A6A">larkit</span>
+              </div>
+              <div style="display:flex; align-items:center; gap:34px; font-size:16px; font-weight:700; color:#14231F">
+                <span>Games</span><span>For parents</span><span>Worksheets</span><span>Pricing</span>
+                <span style="background:#0B7A6A; color:#FFFBEB; padding:11px 24px; border-radius:12px; font-family:Fredoka,sans-serif; font-weight:600">Sign in</span>
+              </div>
+            </div>
+            <div style="flex:1; display:flex; align-items:center; padding:0 60px; gap:70px">
+              <div style="flex:1.1; display:flex; flex-direction:column; gap:26px">
+                <h2 style="margin:0; font-family:Fredoka,sans-serif; font-weight:600; font-size:62px; line-height:1.05; color:#14231F; text-wrap:pretty">Ten minutes of math your kid will actually finish.</h2>
+                <p style="margin:0; font-size:21px; line-height:1.55; color:#14231F; max-width:44ch">Twenty-four games across K–6. No ads, no timers, no dark patterns — just short sessions that build one skill at a time.</p>
+                <div style="display:flex; gap:26px; font-size:16px; font-weight:700; color:#14231F99">
+                  <span>✓ Free to start</span><span>✓ Up to 4 kids</span><span>✓ Cancel any time</span>
+                </div>
+              </div>
+              <div style="width:430px; background:#FFFFFF; border:1.5px solid #14231F14; border-radius:24px; padding:38px 34px; display:flex; flex-direction:column; gap:20px">
+                <h3 style="margin:0; font-family:Fredoka,sans-serif; font-weight:600; font-size:27px; color:#14231F">Create your parent account</h3>
+                <div style="height:58px; border-radius:16px; background:#14231F; display:flex; align-items:center; justify-content:center; gap:12px">
+                  <svg width="16" height="20" viewBox="0 0 14 17" fill="#FFFBEB" aria-hidden="true"><path d="M11.6 9.03c.02 2.35 2.06 3.13 2.08 3.14-.02.05-.33 1.12-1.08 2.22-.65.95-1.32 1.9-2.38 1.92-1.04.02-1.38-.62-2.57-.62-1.19 0-1.56.6-2.55.64-1.02.04-1.8-1.03-2.46-1.98C1.3 12.42.27 8.9 1.65 6.52c.68-1.18 1.9-1.93 3.23-1.95 1-.02 1.95.68 2.57.68.61 0 1.77-.84 2.98-.72.51.02 1.94.2 2.86 1.55-.07.05-1.71 1-1.69 2.95M9.64 3.2c.55-.66.92-1.58.82-2.5-.79.03-1.75.53-2.32 1.19-.51.58-.95 1.52-.83 2.42.88.07 1.78-.45 2.33-1.11"></path></svg>
+                  <span style="font-size:18px; font-weight:700; color:#FFFBEB">Continue with Apple</span>
+                </div>
+                <div style="height:58px; border-radius:16px; background:#FFFBEB; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; gap:12px">
+                  <svg width="20" height="20" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"></path><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"></path><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"></path><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"></path></svg>
+                  <span style="font-size:18px; font-weight:700; color:#14231F">Continue with Google</span>
+                </div>
+                <p style="margin:0; font-size:13px; line-height:1.6; color:#14231F99">By continuing you agree to the <a href="#1a">Terms</a> and <a href="#1a">Privacy Policy</a>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </sc-if>
+
+      </div>
+    </div>
+
+    <!-- ============ 1b ============ -->
+    <div id="1b" style="display:flex; flex-direction:column; gap:22px">
+      <div style="display:flex; align-items:center; gap:14px">
+        <span style="font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:500; background:#F26B3A; color:#14231F; padding:5px 11px; border-radius:999px">1b</span>
+        <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:26px; color:#14231F">The Flock — teal-immersive, one screen</span>
+      </div>
+      <p style="margin:0; max-width:76ch; font-size:16px; line-height:1.6; color:#14231F99">Full-bleed Lark Teal, cream type, Sun for every action. Value and signup collapse into a single scrolling screen — no wizard, no back button. Copy leans into bird puns. Boldest brand read; riskiest for parents who just want to get in.</p>
+
+      <div style="display:flex; gap:28px; align-items:flex-start">
+
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">01 · WELCOME</div>
+          <div style="width:1024px; height:768px; border-radius:26px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#0B7A6A; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:34px; padding:60px; flex:none; position:relative">
+            <div style="position:absolute; inset:0; background-image:radial-gradient(#FFFBEB1f 1.5px, transparent 1.5px); background-size:34px 34px"></div>
+            <img src="brand/larkit-mark-white.svg" width="180" height="150" alt="" style="position:relative; animation:larkFlap 3.4s ease-in-out infinite; transform-origin:60% 70%">
+            <h2 style="margin:0; position:relative; font-family:Fredoka,sans-serif; font-weight:600; font-size:64px; color:#FFFBEB; text-align:center; line-height:1.05">Little lark,<br>big numbers.</h2>
+            <p style="margin:0; position:relative; font-size:22px; line-height:1.55; color:#FFFBEBcc; text-align:center; max-width:36ch">Ten minutes a day. Twenty-four games. Your kid leaves the nest knowing their times tables.</p>
+            <div style="position:relative; display:flex; flex-direction:column; align-items:center; gap:18px; margin-top:14px">
+              <div style="background:#F26B3A; box-shadow:0 5px 0 #C4471B; color:#14231F; font-family:Fredoka,sans-serif; font-weight:600; font-size:23px; padding:19px 58px; border-radius:18px">Let's take off</div>
+              <span style="font-size:17px; font-weight:700; color:#FFFBEBcc">I already have a nest — sign in</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">02 · ONE-SCREEN SIGNUP</div>
+          <div style="width:1024px; height:768px; border-radius:26px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#0B7A6A; padding:44px; display:flex; flex:none">
+            <div style="flex:1; background:#FFFBEB; border-radius:22px; padding:38px 44px; display:flex; flex-direction:column; gap:24px; overflow:hidden">
+              <div style="display:flex; align-items:center; justify-content:space-between">
+                <h2 style="margin:0; font-family:Fredoka,sans-serif; font-weight:600; font-size:34px; color:#14231F">Set up the nest</h2>
+                <span style="font-size:15px; font-weight:700; color:#14231F99">Takes about a minute</span>
+              </div>
+              <div style="display:flex; gap:12px">
+                <div style="flex:1; height:58px; border-radius:16px; background:#14231F; display:flex; align-items:center; justify-content:center; gap:11px">
+                  <svg width="16" height="20" viewBox="0 0 14 17" fill="#FFFBEB" aria-hidden="true"><path d="M11.6 9.03c.02 2.35 2.06 3.13 2.08 3.14-.02.05-.33 1.12-1.08 2.22-.65.95-1.32 1.9-2.38 1.92-1.04.02-1.38-.62-2.57-.62-1.19 0-1.56.6-2.55.64-1.02.04-1.8-1.03-2.46-1.98C1.3 12.42.27 8.9 1.65 6.52c.68-1.18 1.9-1.93 3.23-1.95 1-.02 1.95.68 2.57.68.61 0 1.77-.84 2.98-.72.51.02 1.94.2 2.86 1.55-.07.05-1.71 1-1.69 2.95M9.64 3.2c.55-.66.92-1.58.82-2.5-.79.03-1.75.53-2.32 1.19-.51.58-.95 1.52-.83 2.42.88.07 1.78-.45 2.33-1.11"></path></svg>
+                  <span style="font-size:18px; font-weight:700; color:#FFFBEB">Apple</span>
+                </div>
+                <div style="flex:1; height:58px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; gap:11px">
+                  <svg width="20" height="20" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"></path><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"></path><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"></path><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"></path></svg>
+                  <span style="font-size:18px; font-weight:700; color:#14231F">Google</span>
+                </div>
+              </div>
+              <div style="height:1.5px; background:#14231F14"></div>
+              <div style="display:flex; align-items:center; gap:12px">
+                <span style="width:30px; height:30px; border-radius:50%; background:#0B7A6A; color:#FFFBEB; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:16px">2</span>
+                <span style="font-family:Fredoka,sans-serif; font-size:24px; color:#14231F">Your first fledgling</span>
+              </div>
+              <div style="display:flex; gap:14px">
+                <div style="flex:1.4; display:flex; flex-direction:column; gap:8px">
+                  <label style="font-size:14px; font-weight:700; color:#14231F99">First name</label>
+                  <div style="height:58px; border-radius:14px; background:#FFFFFF; border:2px solid #0B7A6A; display:flex; align-items:center; padding:0 18px; font-family:Fredoka,sans-serif; font-size:22px; color:#14231F">Maya</div>
+                </div>
+                <div style="flex:1; display:flex; flex-direction:column; gap:8px">
+                  <label style="font-size:14px; font-weight:700; color:#14231F99">Age</label>
+                  <div style="height:58px; border-radius:14px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:space-between; padding:0 18px; font-family:Fredoka,sans-serif; font-size:22px; color:#14231F">8 <span style="font-size:15px; color:#14231F99">▾</span></div>
+                </div>
+                <div style="flex:1; display:flex; flex-direction:column; gap:8px">
+                  <label style="font-size:14px; font-weight:700; color:#14231F99">Grade</label>
+                  <div style="height:58px; border-radius:14px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:space-between; padding:0 18px; font-family:Fredoka,sans-serif; font-size:22px; color:#14231F">3rd <span style="font-size:15px; color:#14231F99">▾</span></div>
+                </div>
+              </div>
+              <div style="display:flex; align-items:center; gap:10px; font-size:16px; font-weight:700; color:#0B7A6A">+ Add another fledgling</div>
+              <div style="height:1.5px; background:#14231F14"></div>
+              <div style="display:flex; align-items:center; gap:12px">
+                <span style="width:30px; height:30px; border-radius:50%; background:#0B7A6A; color:#FFFBEB; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:16px">3</span>
+                <span style="font-family:Fredoka,sans-serif; font-size:24px; color:#14231F">Pick a first flight</span>
+              </div>
+              <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:12px">
+                <div style="height:74px; border-radius:16px; background:#A7DED3; box-shadow:0 5px 0 #7FCFBE; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:19px; color:#14231F">Times tables</div>
+                <div style="height:74px; border-radius:16px; background:#6FC3B2; box-shadow:0 5px 0 #3E9E8E; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:19px; color:#14231F">Fractions</div>
+                <div style="height:74px; border-radius:16px; background:#FBC7A8; box-shadow:0 5px 0 #F0A47A; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:19px; color:#14231F">Telling time</div>
+                <div style="height:74px; border-radius:16px; background:#F9A97F; box-shadow:0 5px 0 #E8895A; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:19px; color:#14231F">Money</div>
+              </div>
+              <div style="margin-top:auto; display:flex; align-items:center; justify-content:space-between">
+                <span style="font-size:13px; color:#14231F99; max-width:44ch">First name only. Nothing about your child is ever sold or shown to advertisers.</span>
+                <span style="background:#F26B3A; box-shadow:0 5px 0 #C4471B; color:#14231F; font-family:Fredoka,sans-serif; font-weight:600; font-size:21px; padding:17px 46px; border-radius:16px">Open the nest</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">03 · SOFT PAYWALL</div>
+          <div style="width:1024px; height:768px; border-radius:26px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#0B7A6A; display:flex; align-items:center; justify-content:center; padding:60px; flex:none">
+            <div style="width:100%; display:flex; gap:44px; align-items:center">
+              <div style="flex:1; display:flex; flex-direction:column; gap:22px">
+                <img src="brand/larkit-mark-white.svg" width="88" height="73" alt="">
+                <h2 style="margin:0; font-family:Fredoka,sans-serif; font-weight:600; font-size:48px; line-height:1.1; color:#FFFBEB">Give Maya<br>the whole sky.</h2>
+                <p style="margin:0; font-size:19px; line-height:1.6; color:#FFFBEBcc; max-width:32ch">Free covers three games. Plus opens all twenty-four, plus worksheets and a weekly progress note.</p>
+              </div>
+              <div style="width:430px; background:#FFFBEB; border-radius:22px; padding:34px; display:flex; flex-direction:column; gap:20px">
+                <div style="display:flex; align-items:center; justify-content:space-between">
+                  <span style="font-family:Fredoka,sans-serif; font-size:26px; color:#14231F">Larkit Plus</span>
+                  <span style="background:#FBC7A8; color:#14231F; font-size:13px; font-weight:700; padding:7px 12px; border-radius:999px">7 days free</span>
+                </div>
+                <div style="display:flex; flex-direction:column; gap:10px">
+                  <div style="border:2px solid #0B7A6A; border-radius:16px; padding:16px 18px; display:flex; align-items:center; justify-content:space-between; background:#FFFFFF">
+                    <div style="display:flex; flex-direction:column"><span style="font-family:Fredoka,sans-serif; font-size:19px; color:#14231F">Yearly</span><span style="font-size:13px; color:#14231F99">$49 — $4.08/mo</span></div>
+                    <span style="width:22px; height:22px; border-radius:50%; background:#0B7A6A"></span>
+                  </div>
+                  <div style="border:1.5px solid #14231F26; border-radius:16px; padding:16px 18px; display:flex; align-items:center; justify-content:space-between; background:#FFFFFF">
+                    <div style="display:flex; flex-direction:column"><span style="font-family:Fredoka,sans-serif; font-size:19px; color:#14231F">Monthly</span><span style="font-size:13px; color:#14231F99">$6.99/mo</span></div>
+                    <span style="width:22px; height:22px; border-radius:50%; border:2px solid #14231F26"></span>
+                  </div>
+                </div>
+                <div style="height:62px; border-radius:18px; background:#F26B3A; box-shadow:0 5px 0 #C4471B; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:21px; color:#14231F">Start 7 days free</div>
+                <span style="text-align:center; font-size:16px; font-weight:700; color:#14231F99">Stay on the free perch</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <sc-if value="{{ showReturning }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">04 · RETURNING · THE NEST</div>
+          <div style="width:1024px; height:768px; border-radius:26px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#0B7A6A; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:46px; flex:none; position:relative">
+            <div style="position:absolute; inset:0; background-image:radial-gradient(#FFFBEB1f 1.5px, transparent 1.5px); background-size:34px 34px"></div>
+            <h2 style="margin:0; position:relative; font-family:Fredoka,sans-serif; font-weight:600; font-size:44px; color:#FFFBEB">Welcome back — who's flying?</h2>
+            <div style="position:relative; display:flex; gap:38px">
+              <div style="display:flex; flex-direction:column; align-items:center; gap:14px">
+                <div style="width:156px; height:156px; border-radius:40px; background:#FFFBEB; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:58px; color:#0B7A6A">M</div>
+                <span style="font-family:Fredoka,sans-serif; font-size:23px; color:#FFFBEB">Maya</span>
+                <span style="font-size:14px; color:#FFFBEB99">4-day streak</span>
+              </div>
+              <div style="display:flex; flex-direction:column; align-items:center; gap:14px">
+                <div style="width:156px; height:156px; border-radius:40px; background:#FFFBEB; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:58px; color:#F26B3A">J</div>
+                <span style="font-family:Fredoka,sans-serif; font-size:23px; color:#FFFBEB">Jonah</span>
+                <span style="font-size:14px; color:#FFFBEB99">Back after 3 days</span>
+              </div>
+              <div style="display:flex; flex-direction:column; align-items:center; gap:14px">
+                <div style="width:156px; height:156px; border-radius:40px; border:2.5px dashed #FFFBEB66; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:52px; color:#FFFBEB">+</div>
+                <span style="font-family:Fredoka,sans-serif; font-size:23px; color:#FFFBEB">Add</span>
+              </div>
+            </div>
+            <span style="position:relative; font-size:17px; font-weight:700; color:#FFFBEBcc">I'm the grown-up →</span>
+          </div>
+        </div>
+        </sc-if>
+
+        <sc-if value="{{ showDesktop }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">05 · WEB DESKTOP 1440×900</div>
+          <div style="width:1440px; height:900px; border-radius:14px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#0B7A6A; flex:none; display:flex; flex-direction:column">
+            <div style="height:44px; background:#14231F26; display:flex; align-items:center; gap:8px; padding:0 16px">
+              <span style="width:11px; height:11px; border-radius:50%; background:#FFFBEB40"></span>
+              <span style="width:11px; height:11px; border-radius:50%; background:#FFFBEB40"></span>
+              <span style="width:11px; height:11px; border-radius:50%; background:#FFFBEB40"></span>
+              <span style="margin-left:14px; background:#FFFBEB26; border-radius:8px; padding:5px 16px; font-family:'IBM Plex Mono',monospace; font-size:12px; color:#FFFBEBcc">larkit.io</span>
+            </div>
+            <div style="padding:26px 60px; display:flex; align-items:center; justify-content:space-between">
+              <div style="display:flex; align-items:center; gap:11px">
+                <img src="brand/larkit-mark-white.svg" width="34" height="28" alt="">
+                <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:24px; color:#FFFBEB">larkit</span>
+              </div>
+              <div style="display:flex; align-items:center; gap:34px; font-size:16px; font-weight:700; color:#FFFBEB">
+                <span>Games</span><span>For parents</span><span>Pricing</span>
+                <span style="background:#F26B3A; color:#14231F; padding:11px 24px; border-radius:12px; font-family:Fredoka,sans-serif; font-weight:600">Sign in</span>
+              </div>
+            </div>
+            <div style="flex:1; display:flex; align-items:center; padding:0 60px; gap:60px">
+              <div style="flex:1.15; display:flex; flex-direction:column; gap:26px">
+                <h2 style="margin:0; font-family:Fredoka,sans-serif; font-weight:600; font-size:76px; line-height:1.02; color:#FFFBEB">Little lark,<br>big numbers.</h2>
+                <p style="margin:0; font-size:22px; line-height:1.55; color:#FFFBEBcc; max-width:38ch">Ten minutes a day of math that doesn't feel like homework. Twenty-four games, K through 6th.</p>
+                <div style="display:flex; align-items:center; gap:22px">
+                  <span style="background:#F26B3A; box-shadow:0 5px 0 #C4471B; color:#14231F; font-family:Fredoka,sans-serif; font-weight:600; font-size:22px; padding:18px 44px; border-radius:16px">Let's take off</span>
+                  <span style="font-size:17px; font-weight:700; color:#FFFBEBcc">Watch a 40-second flyover</span>
+                </div>
+              </div>
+              <div style="width:520px; height:420px; background:#FFFBEB; border-radius:26px; display:flex; align-items:center; justify-content:center; padding:44px">
+                <div style="width:100%; display:flex; flex-direction:column; gap:22px">
+                  <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:52px; color:#14231F; text-align:center">7 × 6</div>
+                  <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px">
+                    <div style="height:74px; border-radius:20px; background:#A7DED3; box-shadow:0 5px 0 #7FCFBE; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:30px; color:#14231F">42</div>
+                    <div style="height:74px; border-radius:20px; background:#6FC3B2; box-shadow:0 5px 0 #3E9E8E; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:30px; color:#14231F">36</div>
+                    <div style="height:74px; border-radius:20px; background:#FBC7A8; box-shadow:0 5px 0 #F0A47A; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:30px; color:#14231F">48</div>
+                    <div style="height:74px; border-radius:20px; background:#F9A97F; box-shadow:0 5px 0 #E8895A; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:30px; color:#14231F">40</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </sc-if>
+
+      </div>
+    </div>
+
+    <!-- ============ 1c ============ -->
+    <div id="1c" style="display:flex; flex-direction:column; gap:22px">
+      <div style="display:flex; align-items:center; gap:14px">
+        <span style="font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:500; background:#FBC7A8; color:#14231F; padding:5px 11px; border-radius:999px">1c</span>
+        <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:26px; color:#14231F">The Aviary — conversational, one question at a time</span>
+      </div>
+      <p style="margin:0; max-width:76ch; font-size:16px; line-height:1.6; color:#14231F99">Cream ground with big tinted answer tiles borrowed straight from the play area, so onboarding teaches the game's own vocabulary. One question per screen, asked by the lark. Light puns. Slowest flow, highest completion — the parent never sees a form.</p>
+
+      <div style="display:flex; gap:28px; align-items:flex-start">
+
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">01 · VALUE 2/3</div>
+          <div style="width:1024px; height:768px; border-radius:26px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#FFFBEB; padding:52px; display:flex; flex-direction:column; gap:30px; flex:none">
+            <div style="display:flex; align-items:center; justify-content:space-between">
+              <div style="display:flex; align-items:center; gap:11px">
+                <img src="brand/larkit-mark.svg" width="36" height="30" alt="">
+                <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:24px; color:#0B7A6A">larkit</span>
+              </div>
+              <span style="font-size:17px; font-weight:700; color:#14231F99">Skip</span>
+            </div>
+            <div style="flex:1; background:#FBC7A8; border-radius:26px; padding:44px; display:flex; align-items:center; gap:44px">
+              <div style="flex:1; display:flex; flex-direction:column; gap:18px">
+                <h2 style="margin:0; font-family:Fredoka,sans-serif; font-weight:600; font-size:46px; line-height:1.1; color:#14231F">Practice that ends before the whining starts.</h2>
+                <p style="margin:0; font-size:20px; line-height:1.55; color:#14231F; max-width:30ch">Sessions are ten questions long. When they're done, they're done — nothing tries to pull your kid back in.</p>
+              </div>
+              <div style="width:320px; background:#FFFBEB; border-radius:22px; padding:30px; display:flex; flex-direction:column; gap:18px; align-items:center">
+                <img src="brand/larkit-mark.svg" width="80" height="67" alt="">
+                <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:26px; color:#14231F; text-align:center">Nice flying!</div>
+                <div style="display:flex; gap:8px">
+                  <span style="width:34px; height:34px; border-radius:50%; background:#F26B3A"></span>
+                  <span style="width:34px; height:34px; border-radius:50%; background:#F26B3A"></span>
+                  <span style="width:34px; height:34px; border-radius:50%; background:#F26B3A"></span>
+                  <span style="width:34px; height:34px; border-radius:50%; background:#14231F14"></span>
+                </div>
+                <span style="font-size:16px; color:#14231F99">10 of 10 · 4 minutes</span>
+              </div>
+            </div>
+            <div style="display:flex; align-items:center; justify-content:space-between">
+              <div style="display:flex; gap:9px; align-items:center">
+                <span style="width:8px; height:8px; border-radius:4px; background:#14231F26"></span>
+                <span style="width:28px; height:8px; border-radius:4px; background:#F26B3A"></span>
+                <span style="width:8px; height:8px; border-radius:4px; background:#14231F26"></span>
+              </div>
+              <span style="background:#0B7A6A; color:#FFFBEB; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; padding:16px 44px; border-radius:16px; box-shadow:0 5px 0 #085B4F">Next</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">02 · GROWN-UP CHECK-IN</div>
+          <div style="width:1024px; height:768px; border-radius:26px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#FFFBEB; padding:60px; display:flex; flex-direction:column; justify-content:center; gap:38px; flex:none">
+            <div style="display:flex; align-items:flex-end; gap:22px">
+              <img src="brand/larkit-mark.svg" width="96" height="80" alt="" style="flex:none">
+              <div style="background:#A7DED3; border-radius:24px 24px 24px 6px; padding:26px 30px; max-width:56ch">
+                <p style="margin:0; font-family:Fredoka,sans-serif; font-weight:500; font-size:30px; line-height:1.3; color:#14231F">First, a grown-up. I'll keep the account, you keep the kid.</p>
+              </div>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:14px; max-width:560px; margin-left:118px">
+              <div style="height:66px; border-radius:18px; background:#14231F; display:flex; align-items:center; justify-content:center; gap:12px">
+                <svg width="18" height="22" viewBox="0 0 14 17" fill="#FFFBEB" aria-hidden="true"><path d="M11.6 9.03c.02 2.35 2.06 3.13 2.08 3.14-.02.05-.33 1.12-1.08 2.22-.65.95-1.32 1.9-2.38 1.92-1.04.02-1.38-.62-2.57-.62-1.19 0-1.56.6-2.55.64-1.02.04-1.8-1.03-2.46-1.98C1.3 12.42.27 8.9 1.65 6.52c.68-1.18 1.9-1.93 3.23-1.95 1-.02 1.95.68 2.57.68.61 0 1.77-.84 2.98-.72.51.02 1.94.2 2.86 1.55-.07.05-1.71 1-1.69 2.95M9.64 3.2c.55-.66.92-1.58.82-2.5-.79.03-1.75.53-2.32 1.19-.51.58-.95 1.52-.83 2.42.88.07 1.78-.45 2.33-1.11"></path></svg>
+                <span style="font-size:20px; font-weight:700; color:#FFFBEB">Continue with Apple</span>
+              </div>
+              <div style="height:66px; border-radius:18px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; gap:12px">
+                <svg width="22" height="22" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"></path><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"></path><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"></path><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"></path></svg>
+                <span style="font-size:20px; font-weight:700; color:#14231F">Continue with Google</span>
+              </div>
+              <p style="margin:6px 0 0; font-size:14px; line-height:1.6; color:#14231F99">We ask for a grown-up's account so progress is yours to keep. <a href="#1c">Terms</a> · <a href="#1c">Privacy</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">03 · ONE QUESTION · AGE</div>
+          <div style="width:1024px; height:768px; border-radius:26px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#FFFBEB; padding:52px; display:flex; flex-direction:column; gap:36px; flex:none">
+            <div style="display:flex; align-items:center; gap:20px">
+              <span style="font-size:17px; font-weight:700; color:#14231F99">Back</span>
+              <div style="flex:1; height:8px; border-radius:4px; background:#14231F14; overflow:hidden"><span style="display:block; width:62%; height:8px; background:#0B7A6A"></span></div>
+            </div>
+            <div style="display:flex; align-items:flex-end; gap:20px">
+              <img src="brand/larkit-mark.svg" width="76" height="63" alt="" style="flex:none">
+              <div style="background:#A7DED3; border-radius:22px 22px 22px 6px; padding:22px 28px">
+                <p style="margin:0; font-family:Fredoka,sans-serif; font-weight:500; font-size:30px; color:#14231F">How old is Maya?</p>
+              </div>
+            </div>
+            <div style="flex:1; display:grid; grid-template-columns:repeat(4,1fr); grid-template-rows:repeat(2,1fr); gap:16px">
+              <div style="border-radius:22px; background:#A7DED3; box-shadow:0 6px 0 #7FCFBE; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:44px; color:#14231F">5</div>
+              <div style="border-radius:22px; background:#A7DED3; box-shadow:0 6px 0 #7FCFBE; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:44px; color:#14231F">6</div>
+              <div style="border-radius:22px; background:#6FC3B2; box-shadow:0 6px 0 #3E9E8E; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:44px; color:#14231F">7</div>
+              <div style="border-radius:22px; background:#6FC3B2; box-shadow:0 2px 0 #3E9E8E; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:44px; color:#14231F; transform:translateY(4px); outline:3px solid #0B7A6A; outline-offset:-3px">8</div>
+              <div style="border-radius:22px; background:#FBC7A8; box-shadow:0 6px 0 #F0A47A; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:44px; color:#14231F">9</div>
+              <div style="border-radius:22px; background:#FBC7A8; box-shadow:0 6px 0 #F0A47A; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:44px; color:#14231F">10</div>
+              <div style="border-radius:22px; background:#F9A97F; box-shadow:0 6px 0 #E8895A; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:44px; color:#14231F">11</div>
+              <div style="border-radius:22px; background:#F9A97F; box-shadow:0 6px 0 #E8895A; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:38px; color:#14231F">12+</div>
+            </div>
+            <div style="display:flex; align-items:center; justify-content:space-between">
+              <span style="font-size:16px; color:#14231F99">Age sets the starting level — she can move up any time.</span>
+              <span style="background:#0B7A6A; color:#FFFBEB; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; padding:16px 46px; border-radius:16px; box-shadow:0 5px 0 #085B4F; white-space:nowrap; flex:none">Next</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">04 · SOFT PAYWALL</div>
+          <div style="width:1024px; height:768px; border-radius:26px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#FFFBEB; padding:52px; display:flex; flex-direction:column; gap:30px; flex:none">
+            <div style="display:flex; align-items:flex-end; gap:20px">
+              <img src="brand/larkit-mark.svg" width="76" height="63" alt="" style="flex:none">
+              <div style="background:#FBC7A8; border-radius:22px 22px 22px 6px; padding:22px 28px">
+                <p style="margin:0; font-family:Fredoka,sans-serif; font-weight:500; font-size:30px; color:#14231F">Maya's set. Want the whole aviary?</p>
+              </div>
+            </div>
+            <div style="flex:1; display:grid; grid-template-columns:1fr 1fr; gap:20px">
+              <div style="background:#FFFFFF; border:1.5px solid #14231F1a; border-radius:24px; padding:32px; display:flex; flex-direction:column; gap:16px">
+                <span style="font-family:Fredoka,sans-serif; font-size:26px; color:#14231F">Free</span>
+                <span style="font-family:Fredoka,sans-serif; font-size:34px; color:#14231F">$0</span>
+                <div style="display:flex; flex-direction:column; gap:10px; font-size:17px; color:#14231F; line-height:1.5">
+                  <span>3 modes — addition, subtraction, counting</span><span>1 kid</span>
+                </div>
+                <div style="margin-top:auto; height:58px; border-radius:16px; border:2px solid #0B7A6A; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:19px; color:#0B7A6A">Keep it free</div>
+              </div>
+              <div style="background:#A7DED3; border-radius:24px; padding:32px; display:flex; flex-direction:column; gap:16px; position:relative">
+                <span style="position:absolute; top:-1px; right:26px; background:#F26B3A; color:#14231F; font-size:13px; font-weight:700; padding:7px 14px; border-radius:0 0 10px 10px">7 days free</span>
+                <span style="font-family:Fredoka,sans-serif; font-size:26px; color:#14231F">Larkit Plus</span>
+                <div style="display:flex; align-items:baseline; gap:8px"><span style="font-family:Fredoka,sans-serif; font-size:34px; color:#14231F">$49</span><span style="font-size:16px; color:#14231F99">/ year</span></div>
+                <div style="display:flex; flex-direction:column; gap:10px; font-size:17px; color:#14231F; line-height:1.5">
+                  <span>All 24 games, K–6</span><span>Up to 4 kids</span><span>Printable worksheets</span><span>Weekly progress email</span>
+                </div>
+                <div style="margin-top:auto; height:58px; border-radius:16px; background:#F26B3A; box-shadow:0 5px 0 #C4471B; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:19px; color:#14231F">Start the free week</div>
+              </div>
+            </div>
+            <span style="text-align:center; font-size:14px; color:#14231F99">Cancel any time in Settings. We email a reminder two days before the trial ends.</span>
+          </div>
+        </div>
+
+        <sc-if value="{{ showDesktop }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">05 · WEB DESKTOP · SIGN IN + PROFILES</div>
+          <div style="width:1440px; height:900px; border-radius:14px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#FFFBEB; flex:none; display:flex; flex-direction:column">
+            <div style="height:44px; background:#14231F0d; display:flex; align-items:center; gap:8px; padding:0 16px">
+              <span style="width:11px; height:11px; border-radius:50%; background:#14231F26"></span>
+              <span style="width:11px; height:11px; border-radius:50%; background:#14231F26"></span>
+              <span style="width:11px; height:11px; border-radius:50%; background:#14231F26"></span>
+              <span style="margin-left:14px; background:#FFFFFF; border-radius:8px; padding:5px 16px; font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99">larkit.io/play</span>
+            </div>
+            <div style="flex:1; display:flex">
+              <div style="flex:1; padding:64px; display:flex; flex-direction:column; justify-content:center; gap:40px">
+                <div style="display:flex; align-items:center; gap:12px">
+                  <img src="brand/larkit-mark.svg" width="40" height="33" alt="">
+                  <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:28px; color:#0B7A6A">larkit</span>
+                </div>
+                <h2 style="margin:0; font-family:Fredoka,sans-serif; font-weight:600; font-size:52px; line-height:1.1; color:#14231F">Welcome back.<br>Who's practicing?</h2>
+                <div style="display:flex; gap:28px">
+                  <div style="display:flex; flex-direction:column; align-items:center; gap:12px">
+                    <div style="width:120px; height:120px; border-radius:32px; background:#A7DED3; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:46px; color:#14231F">M</div>
+                    <span style="font-family:Fredoka,sans-serif; font-size:20px; color:#14231F">Maya</span>
+                  </div>
+                  <div style="display:flex; flex-direction:column; align-items:center; gap:12px">
+                    <div style="width:120px; height:120px; border-radius:32px; background:#FBC7A8; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:46px; color:#14231F">J</div>
+                    <span style="font-family:Fredoka,sans-serif; font-size:20px; color:#14231F">Jonah</span>
+                  </div>
+                  <div style="display:flex; flex-direction:column; align-items:center; gap:12px">
+                    <div style="width:120px; height:120px; border-radius:32px; border:2.5px dashed #0B7A6A66; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:42px; color:#0B7A6A">+</div>
+                    <span style="font-family:Fredoka,sans-serif; font-size:20px; color:#0B7A6A">Add a kid</span>
+                  </div>
+                </div>
+                <span style="font-size:17px; font-weight:700; color:#0B7A6A">Not you? Switch account</span>
+              </div>
+              <div style="width:520px; background:#A7DED3; display:flex; align-items:center; justify-content:center; padding:56px">
+                <div style="background:#FFFBEB; border-radius:24px; padding:36px; width:100%; display:flex; flex-direction:column; gap:20px">
+                  <span style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; color:#0B7A6A">THIS WEEK</span>
+                  <div style="font-family:Fredoka,sans-serif; font-size:28px; color:#14231F">Maya did 4 sessions</div>
+                  <div style="display:flex; align-items:flex-end; gap:10px; height:130px">
+                    <div style="flex:1; height:52%; background:#6FC3B2; border-radius:6px 6px 0 0"></div>
+                    <div style="flex:1; height:78%; background:#6FC3B2; border-radius:6px 6px 0 0"></div>
+                    <div style="flex:1; height:34%; background:#6FC3B2; border-radius:6px 6px 0 0"></div>
+                    <div style="flex:1; height:0%; background:#14231F14; border-radius:6px 6px 0 0"></div>
+                    <div style="flex:1; height:92%; background:#6FC3B2; border-radius:6px 6px 0 0"></div>
+                    <div style="flex:1; height:0%; background:#14231F14; border-radius:6px 6px 0 0"></div>
+                    <div style="flex:1; height:0%; background:#14231F14; border-radius:6px 6px 0 0"></div>
+                  </div>
+                  <div style="font-size:15px; color:#14231F99">Strongest: telling time · Working on: 7× table</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </sc-if>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section style="display:flex; flex-direction:column; gap:36px; padding:0 64px 80px; align-items:flex-start">
+
+  <div id="2a" style="display:flex; flex-direction:column; gap:22px">
+    <div style="display:flex; align-items:center; gap:14px">
+      <span style="font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:500; background:#0B7A6A; color:#FFFBEB; padding:5px 11px; border-radius:999px">2a</span>
+      <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:26px; color:#14231F">The Perch — merged direction</span>
+    </div>
+    <p style="margin:0; max-width:82ch; font-size:16px; line-height:1.6; color:#14231F99">Perch layout and restraint. Plain parent-facing copy — bird names stay on the games, not in the account flow. One value page — the play area itself, in all four tile tints — then straight into signup. Colour arrives in blocks: a teal panel, Seafoam and Apricot on the tiles and profiles, Sun kept for the single paid action. Paywall is the Aviary's two-card compare redrawn in Perch type.</p>
+
+    <div style="display:flex; gap:28px; align-items:flex-start">
+
+      <div style="display:flex; flex-direction:column; gap:10px">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">01 · VALUE — ONE PAGE</div>
+        <div style="width:1024px; height:768px; border-radius:26px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#FFFBEB; display:flex; flex:none">
+          <div style="flex:1.08; padding:44px 44px; display:flex; flex-direction:column; justify-content:space-between; box-sizing:border-box">
+            <div style="display:flex; align-items:center; gap:11px">
+              <img src="brand/larkit-mark.svg" width="38" height="32" alt="">
+              <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:25px; color:#0B7A6A">larkit</span>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:16px; margin-top:26px">
+              <h2 style="margin:0; font-family:Fredoka,sans-serif; font-weight:600; font-size:46px; line-height:1.05; color:#14231F">Math that<br>takes flight.</h2>
+            </div>
+            <div style="flex:1; display:flex; flex-direction:column; justify-content:space-evenly; margin:8px 0">
+              <div style="display:flex; gap:16px; align-items:center">
+                <span style="width:44px; height:44px; border-radius:11px; background:#A7DED3; display:flex; align-items:center; justify-content:center; flex:none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14231F" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M6 18 18 6"></path></svg></span>
+                <div style="display:flex; flex-direction:column; gap:2px">
+                  <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:21px; color:#14231F; line-height:1.25">No ads. Not one.</span>
+                </div>
+              </div>
+              <div style="display:flex; gap:16px; align-items:center">
+                <span style="width:44px; height:44px; border-radius:11px; background:#6FC3B2; display:flex; align-items:center; justify-content:center; flex:none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14231F" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 12.5 10 16l7.5-8"></path><circle cx="12" cy="12" r="9.2"></circle></svg></span>
+                <div style="display:flex; flex-direction:column; gap:2px">
+                  <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:21px; color:#14231F; line-height:1.25">Wrong answers are never punished.</span>
+                </div>
+              </div>
+              <div style="display:flex; gap:16px; align-items:center">
+                <span style="width:44px; height:44px; border-radius:11px; background:#FBC7A8; display:flex; align-items:center; justify-content:center; flex:none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14231F" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="2"></rect><path d="M8.5 8.5h7M8.5 12h7M8.5 15.5h4"></path></svg></span>
+                <div style="display:flex; flex-direction:column; gap:2px">
+                  <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:21px; color:#14231F; line-height:1.25">Print real worksheets.</span>
+                </div>
+              </div>
+              <div style="display:flex; gap:16px; align-items:center">
+                <span style="width:44px; height:44px; border-radius:11px; background:#F9A97F; display:flex; align-items:center; justify-content:center; flex:none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14231F" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg></span>
+                <div style="display:flex; flex-direction:column; gap:2px">
+                  <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:21px; color:#14231F; line-height:1.25">Built for fun and focus.</span>
+                </div>
+              </div>
+            </div>
+            <div style="display:flex; align-items:center; gap:22px; flex-wrap:wrap">
+              <span style="background:#0B7A6A; color:#FFFBEB; font-family:Fredoka,sans-serif; font-weight:600; font-size:21px; padding:17px 46px; border-radius:16px; box-shadow:0 5px 0 #085B4F; white-space:nowrap; flex:none">Get started</span>
+              <span style="font-size:17px; font-weight:700; color:#0B7A6A; white-space:nowrap; flex:none">Already have an account? Sign in</span>
+            </div>
+          </div>
+          <div style="flex:1; background:#0B7A6A; display:flex; flex-direction:column; justify-content:center; gap:18px; padding:44px 40px; box-sizing:border-box">
+            <div style="background:#FFFBEB; border-radius:22px; padding:20px 22px; display:flex; flex-direction:column; gap:12px">
+              <div style="display:flex; align-items:center; justify-content:space-between">
+                <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:14px; color:#14231F">Multiplication Meadow</span>
+                <span style="background:#F26B3A; color:#14231F; font-family:Fredoka,sans-serif; font-weight:600; font-size:13px; padding:4px 12px; border-radius:999px">Level 3</span>
+              </div>
+              <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:34px; color:#14231F; text-align:center">7 × 6</div>
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px">
+                <div style="height:52px; border-radius:18px; background:#A7DED3; box-shadow:0 5px 0 #7FCFBE; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:22px; color:#14231F">42</div>
+                <div style="height:52px; border-radius:18px; background:#6FC3B2; box-shadow:0 5px 0 #3E9E8E; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:22px; color:#14231F">36</div>
+                <div style="height:52px; border-radius:18px; background:#FBC7A8; box-shadow:0 5px 0 #F0A47A; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:22px; color:#14231F">48</div>
+                <div style="height:52px; border-radius:18px; background:#F9A97F; box-shadow:0 5px 0 #E8895A; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:22px; color:#14231F">40</div>
+              </div>
+            </div>
+            <div style="background:#FFFBEB; border-radius:22px; padding:20px 22px; display:flex; flex-direction:column; gap:12px">
+              <div style="display:flex; align-items:center; justify-content:space-between">
+                <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:14px; color:#14231F">Counting Chicks</span>
+                <span style="background:#F26B3A; color:#14231F; font-family:Fredoka,sans-serif; font-weight:600; font-size:13px; padding:4px 12px; border-radius:999px">Level 2</span>
+              </div>
+              <div style="display:flex; gap:10px">
+                <div style="display:flex; flex-direction:column; justify-content:space-between; height:100px; font-family:Nunito,sans-serif; font-weight:700; font-size:12px; color:#14231F; padding:0 8px 2px 0; border-right:2px solid #14231F26">
+                  <span>8</span><span>6</span><span>4</span><span>2</span><span>0</span>
+                </div>
+                <div style="flex:1; position:relative">
+                  <div style="position:absolute; inset:0 0 2px 0; display:flex; flex-direction:column; justify-content:space-between; pointer-events:none">
+                    <div style="height:1px; background:#14231F14"></div>
+                    <div style="height:1px; background:#14231F14"></div>
+                    <div style="height:1px; background:#14231F14"></div>
+                    <div style="height:1px; background:#14231F14"></div>
+                    <div style="height:1px; background:transparent"></div>
+                  </div>
+                  <div style="display:flex; align-items:flex-end; gap:14px; height:100px; border-bottom:2px solid #14231F26; padding:0 6px">
+                    <div style="flex:1; height:50%; background:#A7DED3; border-radius:6px 6px 0 0"></div>
+                    <div style="flex:1; height:75%; background:#6FC3B2; border-radius:6px 6px 0 0"></div>
+                    <div style="flex:1; height:62%; background:#FBC7A8; border-radius:6px 6px 0 0"></div>
+                    <div style="flex:1; height:37%; background:#F9A97F; border-radius:6px 6px 0 0"></div>
+                  </div>
+                  <div style="display:flex; gap:14px; padding:8px 6px 0">
+                    <span style="flex:1; text-align:center; font-family:Nunito,sans-serif; font-weight:700; font-size:13px; color:#14231F">Mon</span>
+                    <span style="flex:1; text-align:center; font-family:Nunito,sans-serif; font-weight:700; font-size:13px; color:#14231F">Tue</span>
+                    <span style="flex:1; text-align:center; font-family:Nunito,sans-serif; font-weight:700; font-size:13px; color:#14231F">Wed</span>
+                    <span style="flex:1; text-align:center; font-family:Nunito,sans-serif; font-weight:700; font-size:13px; color:#14231F">Thu</span>
+                  </div>
+                </div>
+              </div>
+              <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:18px; color:#14231F; text-align:center">Which day had the most?</div>
+            </div>
+            <div style="background:#FFFBEB; border-radius:22px; padding:20px 22px; display:flex; flex-direction:column; gap:12px">
+              <div style="display:flex; align-items:center; justify-content:space-between">
+                <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:14px; color:#14231F">Fractions Feather</span>
+                <span style="background:#F26B3A; color:#14231F; font-family:Fredoka,sans-serif; font-weight:600; font-size:13px; padding:4px 12px; border-radius:999px">Level 1</span>
+              </div>
+              <svg viewBox="0 0 300 96" width="100%" height="84" fill="none" aria-hidden="true">
+                <line x1="20" y1="52" x2="280" y2="52" stroke="#14231F" stroke-width="5" stroke-linecap="round"></line>
+                <g stroke="#14231F" stroke-width="4" stroke-linecap="round">
+                  <line x1="20" y1="44" x2="20" y2="60"></line><line x1="72" y1="44" x2="72" y2="60"></line>
+                  <line x1="124" y1="44" x2="124" y2="60"></line><line x1="176" y1="44" x2="176" y2="60"></line>
+                  <line x1="228" y1="44" x2="228" y2="60"></line><line x1="280" y1="44" x2="280" y2="60"></line>
+                </g>
+                <path d="M98 40 C130 8, 170 8, 202 40" stroke="#F26B3A" stroke-width="6" stroke-linecap="round"></path>
+                <circle cx="98" cy="52" r="8" fill="#0B7A6A"></circle>
+                <circle cx="202" cy="52" r="8" fill="#0B7A6A"></circle>
+                <g font-family="Nunito, sans-serif" font-weight="700" font-size="15" fill="#14231F" text-anchor="middle">
+                  <text x="20" y="84">0</text><text x="72" y="84">2</text><text x="124" y="84">4</text>
+                  <text x="176" y="84">6</text><text x="228" y="84">8</text><text x="280" y="84">10</text>
+                </g>
+              </svg>
+              <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:18px; color:#14231F; text-align:center">How far did she hop?</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:10px">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">02 · PARENT ACCOUNT</div>
+        <div style="width:1024px; height:768px; border-radius:26px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#FFFBEB; display:flex; align-items:center; justify-content:center; flex:none; position:relative">
+          <div style="position:absolute; top:36px; left:44px; display:flex; align-items:center; gap:11px">
+            <img src="brand/larkit-mark.svg" width="34" height="28" alt="">
+            <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:22px; color:#0B7A6A">larkit</span>
+          </div>
+          <div style="width:520px; display:flex; flex-direction:column; gap:26px">
+            <div style="display:flex; flex-direction:column; gap:10px; text-align:center">
+              <h2 style="margin:0; font-family:Fredoka,sans-serif; font-weight:600; font-size:38px; color:#14231F">Create your parent account</h2>
+              <p style="margin:0; font-size:17px; line-height:1.55; color:#14231F99">You'll add your kids next. One account covers up to four.</p>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:12px">
+              <div style="height:60px; border-radius:16px; background:#14231F; display:flex; align-items:center; justify-content:center; gap:12px">
+                <svg width="17" height="21" viewBox="0 0 14 17" fill="#FFFBEB" aria-hidden="true"><path d="M11.6 9.03c.02 2.35 2.06 3.13 2.08 3.14-.02.05-.33 1.12-1.08 2.22-.65.95-1.32 1.9-2.38 1.92-1.04.02-1.38-.62-2.57-.62-1.19 0-1.56.6-2.55.64-1.02.04-1.8-1.03-2.46-1.98C1.3 12.42.27 8.9 1.65 6.52c.68-1.18 1.9-1.93 3.23-1.95 1-.02 1.95.68 2.57.68.61 0 1.77-.84 2.98-.72.51.02 1.94.2 2.86 1.55-.07.05-1.71 1-1.69 2.95M9.64 3.2c.55-.66.92-1.58.82-2.5-.79.03-1.75.53-2.32 1.19-.51.58-.95 1.52-.83 2.42.88.07 1.78-.45 2.33-1.11"></path></svg>
+                <span style="font-size:19px; font-weight:700; color:#FFFBEB">Continue with Apple</span>
+              </div>
+              <div style="height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; gap:12px">
+                <svg width="21" height="21" viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"></path><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"></path><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"></path><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"></path></svg>
+                <span style="font-size:19px; font-weight:700; color:#14231F">Continue with Google</span>
+              </div>
+            </div>
+            <p style="margin:0; font-size:14px; line-height:1.6; color:#14231F99; text-align:center">By continuing you agree to the <a href="#2a">Terms</a> and <a href="#2a">Privacy Policy</a>. We never show ads and never sell data about your kids.</p>
+            <div style="text-align:center; font-size:17px; font-weight:700; color:#0B7A6A">Already have an account? Sign in</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:10px">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">03 · ADD A KID · STEP 2 OF 3</div>
+        <div style="width:1024px; height:768px; border-radius:26px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#FFFBEB; display:flex; flex-direction:column; flex:none">
+          <div style="padding:30px 48px; display:flex; align-items:center; gap:20px; border-bottom:1.5px solid #14231F14; box-sizing:border-box">
+            <span style="font-size:17px; font-weight:700; color:#14231F99">Back</span>
+            <div style="flex:1; display:flex; gap:8px">
+              <span style="flex:1; height:6px; border-radius:3px; background:#0B7A6A"></span>
+              <span style="flex:1; height:6px; border-radius:3px; background:#0B7A6A"></span>
+              <span style="flex:1; height:6px; border-radius:3px; background:#0B7A6A26"></span>
+            </div>
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:14px; color:#14231F99">2 / 3</span>
+          </div>
+          <div style="flex:1; padding:44px 48px; display:flex; flex-direction:column; gap:32px; box-sizing:border-box">
+            <div style="display:flex; flex-direction:column; gap:8px">
+              <h2 style="margin:0; font-family:Fredoka,sans-serif; font-weight:600; font-size:38px; color:#14231F">Who's learning?</h2>
+              <p style="margin:0; font-size:17px; color:#14231F99">First name only — that's all we store about your child.</p>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:10px">
+              <label style="font-size:15px; font-weight:700; color:#14231F">First name</label>
+              <div style="height:64px; border-radius:16px; background:#FFFFFF; border:2px solid #0B7A6A; display:flex; align-items:center; padding:0 22px; font-family:Fredoka,sans-serif; font-size:24px; color:#14231F; box-sizing:border-box">Maya<span style="width:2px; height:28px; background:#0B7A6A; margin-left:3px"></span></div>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:12px">
+              <label style="font-size:15px; font-weight:700; color:#14231F">Age</label>
+              <div style="display:flex; gap:10px">
+                <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:22px; color:#14231F">5</span>
+                <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:22px; color:#14231F">6</span>
+                <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:22px; color:#14231F">7</span>
+                <span style="flex:1; height:60px; border-radius:16px; background:#A7DED3; border:1.5px solid #0B7A6A; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:22px; color:#14231F">8</span>
+                <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:22px; color:#14231F">9</span>
+                <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:22px; color:#14231F">10</span>
+                <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:22px; color:#14231F">11</span>
+                <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:22px; color:#14231F">12+</span>
+              </div>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:12px">
+              <label style="font-size:15px; font-weight:700; color:#14231F">Grade</label>
+              <div style="display:flex; gap:10px">
+                <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:20px; color:#14231F">K</span>
+                <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:20px; color:#14231F">1st</span>
+                <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:20px; color:#14231F">2nd</span>
+                <span style="flex:1; height:60px; border-radius:16px; background:#A7DED3; border:1.5px solid #0B7A6A; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:20px; color:#14231F">3rd</span>
+                <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:20px; color:#14231F">4th</span>
+                <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:20px; color:#14231F">5th</span>
+                <span style="flex:1; height:60px; border-radius:16px; background:#FFFFFF; border:1.5px solid #14231F26; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:20px; color:#14231F">6th</span>
+              </div>
+            </div>
+            <div style="margin-top:auto; display:flex; align-items:center; justify-content:space-between">
+              <span style="font-size:16px; font-weight:700; color:#0B7A6A">+ Add another kid</span>
+              <span style="background:#0B7A6A; color:#FFFBEB; font-family:Fredoka,sans-serif; font-weight:600; font-size:20px; padding:16px 46px; border-radius:16px; box-shadow:0 5px 0 #085B4F; white-space:nowrap; flex:none">Continue</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:10px">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">04 · SOFT PAYWALL</div>
+        <div style="width:1024px; height:768px; border-radius:26px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#FFFBEB; padding:52px; display:flex; flex-direction:column; gap:30px; flex:none">
+          <div style="display:flex; flex-direction:column; gap:10px">
+            <h2 style="margin:0; font-family:Fredoka,sans-serif; font-weight:600; font-size:44px; color:#14231F">Unlock everything for Maya.</h2>
+            <p style="margin:0; font-size:18px; line-height:1.55; color:#14231F99; max-width:52ch">She's set up and ready. Choose how far she goes — you can change it any time from Settings.</p>
+          </div>
+          <div style="flex:1; display:grid; grid-template-columns:1fr 1fr; gap:20px">
+            <div style="background:#FFFFFF; border:1.5px solid #14231F1a; border-radius:24px; padding:32px; display:flex; flex-direction:column; gap:16px; box-sizing:border-box">
+              <span style="font-family:Fredoka,sans-serif; font-size:26px; color:#14231F">Free</span>
+              <span style="font-family:Fredoka,sans-serif; font-size:34px; color:#14231F">$0</span>
+              <div style="display:flex; flex-direction:column; gap:10px; font-size:17px; color:#14231F; line-height:1.5">
+                <span>3 modes — addition, subtraction, counting</span><span>1 kid</span>
+              </div>
+              <div style="margin-top:auto; height:58px; border-radius:16px; border:2px solid #0B7A6A; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:19px; color:#0B7A6A">Stay on the free plan</div>
+            </div>
+            <div style="background:#A7DED3; border-radius:24px; padding:32px; display:flex; flex-direction:column; gap:16px; position:relative; box-sizing:border-box">
+              <span style="position:absolute; top:0; right:26px; background:#F26B3A; color:#14231F; font-size:13px; font-weight:700; padding:7px 14px; border-radius:0 0 10px 10px">7 days free</span>
+              <span style="font-family:Fredoka,sans-serif; font-size:26px; color:#14231F">Larkit Plus</span>
+              <div style="display:flex; align-items:baseline; gap:8px"><span style="font-family:Fredoka,sans-serif; font-size:34px; color:#14231F">$49</span><span style="font-size:16px; color:#14231F99">/ year · or $6.99 monthly</span></div>
+              <div style="display:flex; flex-direction:column; gap:10px; font-size:17px; color:#14231F; line-height:1.5">
+                <span>All 12 games, K–6</span><span>Up to 4 kids</span><span>Flight logs — printable worksheets for any game, with answer keys</span><span>Weekly progress email</span>
+              </div>
+              <div style="margin-top:auto; height:58px; border-radius:16px; background:#F26B3A; box-shadow:0 5px 0 #C4471B; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:19px; color:#14231F">Start the free week</div>
+            </div>
+          </div>
+          <span style="text-align:center; font-size:14px; color:#14231F99">Cancel any time in Settings. We email a reminder two days before the trial ends.</span>
+        </div>
+      </div>
+
+      <sc-if value="{{ showReturning }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex; flex-direction:column; gap:10px">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">05 · RETURNING · PROFILE PICKER</div>
+        <div style="width:1024px; height:768px; border-radius:26px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#FFFBEB; display:flex; flex-direction:column; flex:none">
+          <div style="padding:30px 44px; display:flex; align-items:center; justify-content:space-between; box-sizing:border-box">
+            <div style="display:flex; align-items:center; gap:11px">
+              <img src="brand/larkit-mark.svg" width="34" height="28" alt="">
+              <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:22px; color:#0B7A6A">larkit</span>
+            </div>
+            <span style="font-size:16px; font-weight:700; color:#14231F99">Parent settings</span>
+          </div>
+          <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:48px">
+            <h2 style="margin:0; font-family:Fredoka,sans-serif; font-weight:600; font-size:42px; color:#14231F">Welcome back — who's flying?</h2>
+            <div style="display:flex; gap:44px">
+              <div style="display:flex; flex-direction:column; align-items:center; gap:14px">
+                <div style="width:150px; height:150px; border-radius:50%; background:#6FC3B2; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:56px; color:#14231F">M</div>
+                <span style="font-family:Fredoka,sans-serif; font-size:24px; color:#14231F">Maya</span>
+              </div>
+              <div style="display:flex; flex-direction:column; align-items:center; gap:14px">
+                <div style="width:150px; height:150px; border-radius:50%; background:#FBC7A8; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:56px; color:#14231F">J</div>
+                <span style="font-family:Fredoka,sans-serif; font-size:24px; color:#14231F">Jonah</span>
+              </div>
+              <div style="display:flex; flex-direction:column; align-items:center; gap:14px">
+                <div style="width:150px; height:150px; border-radius:50%; border:2.5px dashed #0B7A6A66; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-size:52px; color:#0B7A6A">+</div>
+                <span style="font-family:Fredoka,sans-serif; font-size:24px; color:#0B7A6A">Add</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </sc-if>
+
+      <sc-if value="{{ showDesktop }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex; flex-direction:column; gap:10px">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99; letter-spacing:.08em">06 · WEB DESKTOP 1440×900</div>
+        <div style="width:1440px; height:900px; border-radius:14px; overflow:hidden; box-sizing:border-box; border:1.5px solid #14231F1a; background:#FFFBEB; flex:none; display:flex; flex-direction:column">
+          <div style="height:44px; background:#14231F0d; display:flex; align-items:center; gap:8px; padding:0 16px; box-sizing:border-box; flex:none">
+            <span style="width:11px; height:11px; border-radius:50%; background:#14231F26"></span>
+            <span style="width:11px; height:11px; border-radius:50%; background:#14231F26"></span>
+            <span style="width:11px; height:11px; border-radius:50%; background:#14231F26"></span>
+            <span style="margin-left:14px; background:#FFFFFF; border-radius:8px; padding:5px 16px; font-family:'IBM Plex Mono',monospace; font-size:12px; color:#14231F99">larkit.io</span>
+          </div>
+          <div style="flex:1; display:flex; box-sizing:border-box">
+            <div style="flex:1.08; padding:32px 56px 44px; display:flex; flex-direction:column; box-sizing:border-box">
+              <div style="display:flex; align-items:center; justify-content:space-between">
+                <div style="display:flex; align-items:center; gap:11px">
+                  <img src="brand/larkit-mark.svg" width="38" height="32" alt="">
+                  <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:25px; color:#0B7A6A">larkit</span>
+                </div>
+                <div style="display:flex; align-items:center; gap:28px; font-size:16px; font-weight:700; color:#14231F">
+                  <span>Games</span><span>For parents</span><span>Pricing</span>
+                </div>
+              </div>
+              <div style="margin-top:44px; display:flex; flex-direction:column; gap:16px">
+                <h2 style="margin:0; font-family:Fredoka,sans-serif; font-weight:600; font-size:64px; line-height:1.02; color:#14231F">Math that<br>takes flight.</h2>
+              </div>
+              <div style="flex:1; display:flex; flex-direction:column; justify-content:space-evenly; margin:8px 0">
+              <div style="display:flex; gap:16px; align-items:center">
+                <span style="width:48px; height:48px; border-radius:13px; background:#A7DED3; display:flex; align-items:center; justify-content:center; flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#14231F" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M6 18 18 6"></path></svg></span>
+                <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:22px; color:#14231F; line-height:1.25">No ads. Not one.</span>
+              </div>
+              <div style="display:flex; gap:16px; align-items:center">
+                <span style="width:48px; height:48px; border-radius:13px; background:#6FC3B2; display:flex; align-items:center; justify-content:center; flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#14231F" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 12.5 10 16l7.5-8"></path><circle cx="12" cy="12" r="9.2"></circle></svg></span>
+                <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:22px; color:#14231F; line-height:1.25">Wrong answers are never punished.</span>
+              </div>
+              <div style="display:flex; gap:16px; align-items:center">
+                <span style="width:48px; height:48px; border-radius:13px; background:#FBC7A8; display:flex; align-items:center; justify-content:center; flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#14231F" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="2"></rect><path d="M8.5 8.5h7M8.5 12h7M8.5 15.5h4"></path></svg></span>
+                <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:22px; color:#14231F; line-height:1.25">Print real worksheets.</span>
+              </div>
+              <div style="display:flex; gap:16px; align-items:center">
+                <span style="width:48px; height:48px; border-radius:13px; background:#F9A97F; display:flex; align-items:center; justify-content:center; flex:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#14231F" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg></span>
+                <span style="font-family:Fredoka,sans-serif; font-weight:600; font-size:22px; color:#14231F; line-height:1.25">Built for fun and focus.</span>
+              </div>
+              </div>
+              <div style="display:flex; align-items:center; gap:24px; flex-wrap:wrap">
+                <span style="background:#0B7A6A; color:#FFFBEB; font-family:Fredoka,sans-serif; font-weight:600; font-size:22px; padding:18px 50px; border-radius:16px; box-shadow:0 5px 0 #085B4F; white-space:nowrap; flex:none">Get started</span>
+                <span style="font-size:17px; font-weight:700; color:#0B7A6A; white-space:nowrap; flex:none">Already have an account? Sign in</span>
+              </div>
+            </div>
+            <div style="width:600px; background:#0B7A6A; display:flex; flex-direction:column; justify-content:center; gap:20px; padding:56px 52px; box-sizing:border-box; flex:none">
+              <div style="background:#FFFBEB; border-radius:22px; padding:20px 22px; display:flex; flex-direction:column; gap:12px">
+                <div style="display:flex; align-items:center; justify-content:space-between">
+                  <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:14px; color:#14231F">Multiplication Meadow</span>
+                  <span style="background:#F26B3A; color:#14231F; font-family:Fredoka,sans-serif; font-weight:600; font-size:13px; padding:4px 12px; border-radius:999px">Level 3</span>
+                </div>
+                <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:34px; color:#14231F; text-align:center">7 × 6</div>
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px">
+                  <div style="height:52px; border-radius:18px; background:#A7DED3; box-shadow:0 5px 0 #7FCFBE; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:22px; color:#14231F">42</div>
+                  <div style="height:52px; border-radius:18px; background:#6FC3B2; box-shadow:0 5px 0 #3E9E8E; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:22px; color:#14231F">36</div>
+                  <div style="height:52px; border-radius:18px; background:#FBC7A8; box-shadow:0 5px 0 #F0A47A; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:22px; color:#14231F">48</div>
+                  <div style="height:52px; border-radius:18px; background:#F9A97F; box-shadow:0 5px 0 #E8895A; display:flex; align-items:center; justify-content:center; font-family:Fredoka,sans-serif; font-weight:600; font-size:22px; color:#14231F">40</div>
+                </div>
+              </div>
+              <div style="background:#FFFBEB; border-radius:22px; padding:20px 22px; display:flex; flex-direction:column; gap:12px">
+                <div style="display:flex; align-items:center; justify-content:space-between">
+                  <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:14px; color:#14231F">Counting Chicks</span>
+                  <span style="background:#F26B3A; color:#14231F; font-family:Fredoka,sans-serif; font-weight:600; font-size:13px; padding:4px 12px; border-radius:999px">Level 2</span>
+                </div>
+                <div style="display:flex; gap:10px">
+                  <div style="display:flex; flex-direction:column; justify-content:space-between; height:100px; font-family:Nunito,sans-serif; font-weight:700; font-size:12px; color:#14231F; padding:0 8px 2px 0; border-right:2px solid #14231F26">
+                    <span>8</span><span>6</span><span>4</span><span>2</span><span>0</span>
+                  </div>
+                  <div style="flex:1; position:relative">
+                    <div style="position:absolute; inset:0 0 2px 0; display:flex; flex-direction:column; justify-content:space-between; pointer-events:none">
+                      <div style="height:1px; background:#14231F14"></div>
+                      <div style="height:1px; background:#14231F14"></div>
+                      <div style="height:1px; background:#14231F14"></div>
+                      <div style="height:1px; background:#14231F14"></div>
+                      <div style="height:1px; background:transparent"></div>
+                    </div>
+                    <div style="display:flex; align-items:flex-end; gap:14px; height:100px; border-bottom:2px solid #14231F26; padding:0 6px">
+                      <div style="flex:1; height:50%; background:#A7DED3; border-radius:6px 6px 0 0"></div>
+                      <div style="flex:1; height:75%; background:#6FC3B2; border-radius:6px 6px 0 0"></div>
+                      <div style="flex:1; height:62%; background:#FBC7A8; border-radius:6px 6px 0 0"></div>
+                      <div style="flex:1; height:37%; background:#F9A97F; border-radius:6px 6px 0 0"></div>
+                    </div>
+                    <div style="display:flex; gap:14px; padding:8px 6px 0">
+                      <span style="flex:1; text-align:center; font-family:Nunito,sans-serif; font-weight:700; font-size:13px; color:#14231F">Mon</span>
+                      <span style="flex:1; text-align:center; font-family:Nunito,sans-serif; font-weight:700; font-size:13px; color:#14231F">Tue</span>
+                      <span style="flex:1; text-align:center; font-family:Nunito,sans-serif; font-weight:700; font-size:13px; color:#14231F">Wed</span>
+                      <span style="flex:1; text-align:center; font-family:Nunito,sans-serif; font-weight:700; font-size:13px; color:#14231F">Thu</span>
+                    </div>
+                  </div>
+                </div>
+                <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:18px; color:#14231F; text-align:center">Which day had the most?</div>
+              </div>
+              <div style="background:#FFFBEB; border-radius:22px; padding:20px 22px; display:flex; flex-direction:column; gap:12px">
+                <div style="display:flex; align-items:center; justify-content:space-between">
+                  <span style="font-family:Nunito,sans-serif; font-weight:700; font-size:14px; color:#14231F">Fractions Feather</span>
+                  <span style="background:#F26B3A; color:#14231F; font-family:Fredoka,sans-serif; font-weight:600; font-size:13px; padding:4px 12px; border-radius:999px">Level 1</span>
+                </div>
+                <svg viewBox="0 0 300 96" width="100%" height="84" fill="none" aria-hidden="true">
+                  <line x1="20" y1="52" x2="280" y2="52" stroke="#14231F" stroke-width="5" stroke-linecap="round"></line>
+                  <g stroke="#14231F" stroke-width="4" stroke-linecap="round">
+                    <line x1="20" y1="44" x2="20" y2="60"></line><line x1="72" y1="44" x2="72" y2="60"></line>
+                    <line x1="124" y1="44" x2="124" y2="60"></line><line x1="176" y1="44" x2="176" y2="60"></line>
+                    <line x1="228" y1="44" x2="228" y2="60"></line><line x1="280" y1="44" x2="280" y2="60"></line>
+                  </g>
+                  <path d="M98 40 C130 8, 170 8, 202 40" stroke="#F26B3A" stroke-width="6" stroke-linecap="round"></path>
+                  <circle cx="98" cy="52" r="8" fill="#0B7A6A"></circle>
+                  <circle cx="202" cy="52" r="8" fill="#0B7A6A"></circle>
+                  <g font-family="Nunito, sans-serif" font-weight="700" font-size="15" fill="#14231F" text-anchor="middle">
+                    <text x="20" y="84">0</text><text x="72" y="84">2</text><text x="124" y="84">4</text>
+                    <text x="176" y="84">6</text><text x="228" y="84">8</text><text x="280" y="84">10</text>
+                  </g>
+                </svg>
+                <div style="font-family:Fredoka,sans-serif; font-weight:600; font-size:18px; color:#14231F; text-align:center">How far did she hop?</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </sc-if>
+
+    </div>
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showDesktop&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Scope&quot;},&quot;showReturning&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Scope&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      showDesktop: this.props.showDesktop ?? true,
+      showReturning: this.props.showReturning ?? true
+    };
+  }
+}
+</script>
+</body>
+</html>

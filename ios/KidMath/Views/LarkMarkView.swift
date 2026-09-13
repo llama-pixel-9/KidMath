@@ -1,7 +1,7 @@
 import SwiftUI
 
 /// The larkit mark — five flat shapes on a 61×51 canvas, the same geometry as
-/// the web SVG and the shipped favicons (design/larkit/README.md). No strokes,
+/// the web SVG and the shipped favicons (design/Larkit rebrand design system/design_handoff_larkit_rebrand/README.md). No strokes,
 /// no gradients. The lark always faces right; one bird per surface; never
 /// rotate, stretch, or recolor outside the palette.
 struct LarkMarkView: View {

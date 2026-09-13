@@ -7,7 +7,7 @@ one subscription unlocks both platforms.
 
 ## 1. Stripe dashboard
 
-- Create a product **KidMath Premium** with two recurring prices (matching
+- Create a product **Larkit Premium** with two recurring prices (matching
   the App Store — Apple requires identical pricing):
   - **$8.99 / month**
   - **$54.99 / year**

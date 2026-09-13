@@ -47,7 +47,7 @@ Deno.serve(async (request) => {
 
     const base = typeof origin === "string" && origin.startsWith("http")
       ? origin
-      : "https://kidmath.vercel.app";
+      : "https://larkit.io";
 
     const session = await stripe.checkout.sessions.create({
       mode: "subscription",

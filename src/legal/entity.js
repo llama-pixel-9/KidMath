@@ -20,11 +20,10 @@ export const ENTITY = {
 
   ENTITY_ADDRESS: "502 W 7th St, Ste 100, Erie, PA 16502-1333",
 
-  // TODO: a monitored telephone number. NOT optional — 16 CFR §312.4(d)(1)
-  // requires the online notice to state "the name, address, telephone number,
-  // and email address of all operators." The telephone number is the element
-  // operators most often omit. A Google Voice line that forwards is fine.
-  ENTITY_PHONE: "(555) 555-0100",
+  // Monitored telephone number. NOT optional — 16 CFR §312.4(d)(1) requires
+  // the online notice to state "the name, address, telephone number, and
+  // email address of all operators." Set 2026-09-13.
+  ENTITY_PHONE: "(814) 273-8760",
 
   // TODO: confirm these mailboxes exist and are monitored. `privacy@` is
   // named in the privacy policy as the deletion-request channel, which

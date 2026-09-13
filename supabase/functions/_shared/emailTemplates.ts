@@ -24,7 +24,8 @@ const HAIRLINE = "rgba(20,35,31,0.12)";
 const LOGO_URL = "https://www.larkit.io/icon-192.png";
 // Keep in sync with src/legal/entity.js — edge functions bundle only files
 // under supabase/functions/, so the constant can't be imported from there.
-const ENTITY_FOOTER = "Larkit Labs LLC \u00b7 502 W 7th St, Ste 100, Erie, PA 16502";
+const ENTITY_FOOTER =
+  "Larkit Labs LLC \u00b7 502 W 7th St, Ste 100, Erie, PA 16502 \u00b7 (814) 273-8760";
 
 /**
  * Remove blockquote blocks that are internal drafting notes ("remove before

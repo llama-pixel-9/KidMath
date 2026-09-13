@@ -156,7 +156,28 @@ Enrollment submitted; nothing below can start until it completes.
   docs/accessibility-audit.md has the ordered plan. Months; start early.
 - [ ] Tenancy ADR decision (docs/adr-001-tenancy.md) — approve/amend before
   real user volume makes the RLS rewrite expensive.
-- [ ] 24-month inactive-account purge (warning email now unblocked by §3).
+- [ ] **24-month inactive-account purge.** A promise in the privacy policy
+  (§7.2 retention table: "24 months without a sign-in; we email you and
+  delete 30 days later absent a response"; `legalDocs.spec.js` asserts the
+  text). Nothing is built and nothing determines inactivity today. First
+  possible purge date is ~2028-09 (24 months after the first real signup),
+  so not a launch item — but it must exist before then.
+  - **Inactive =** no sign-in AND no usage in 24 months. Do not use
+    `auth.users.last_sign_in_at` alone: it updates on fresh login/OAuth
+    exchange, not on silent token refresh, so a parent whose phone stays
+    signed in while the kid practices weekly would look dormant. Also
+    require no `practice_sessions` row and no `progress` write for the
+    user in the window.
+  - **Mechanism,** following the `purge-session-diagnostics` /
+    `expire-consent-requests` pattern: (1) daily SQL cron finds accounts
+    past 24 months on both signals with no warning yet sent, inserts a row
+    in a small `account_purge_notices` table; (2) scheduled Edge Function
+    emails those parents via Resend (§3 sender) with a "sign in to keep
+    your account" link and stamps the row; (3) a second pass 30 days
+    later, still no activity, runs the same deletion path as
+    `delete-account` so kids, progress, and consent requests go together.
+    `consent_events` keep their own 3-year retention (no child data).
+    Any sign-in or practice in the 30-day window cancels the notice.
 - [ ] Admin view over consent_events (arbitration opt-out window evidence).
 
 ---

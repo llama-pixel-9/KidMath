@@ -12,6 +12,7 @@ import { ZONE_W, ZONE_H, HORIZON_Y } from "../perches.js";
 import { motion } from "framer-motion";
 import { SEASON_TINTS } from "../seasons.js";
 import { TIER1, TIER3 } from "./motionSpec.js";
+import { zoneArt, propArt, SCENERY } from "./artAssets.js";
 
 const TRUNK = "#B08968";
 const ROCK = "#9FBFB6";
@@ -267,9 +268,55 @@ const BACKDROPS = {
   cliffs: CliffsBackdrop,
 };
 
+/** One furniture prop image, base-center anchored; the perch tree sways. */
+function Furniture({ item, ambient }) {
+  const art = propArt(item.prop);
+  if (!art) return null;
+  const iw = (art.w / art.h) * item.h;
+  const img = (
+    <image href={art.url} x={item.x - iw / 2} y={item.y - item.h} width={iw} height={item.h} />
+  );
+  if (!item.sway) return img;
+  const sway = TIER1.canopySway;
+  return (
+    <motion.g
+      style={{ transformBox: "fill-box", transformOrigin: "50% 100%" }}
+      animate={ambient ? { rotate: [-sway.degrees, sway.degrees] } : { rotate: 0 }}
+      transition={
+        ambient
+          ? { duration: sway.loopS, repeat: Infinity, repeatType: "mirror", ease: sway.ease }
+          : { duration: 0.2 }
+      }
+    >
+      {img}
+    </motion.g>
+  );
+}
+
 export function ZoneBackdrop({ zoneId, season, ambient = false }) {
-  const Backdrop = BACKDROPS[zoneId] || MeadowBackdrop;
+  const art = zoneArt(zoneId);
   const p = paletteFor(season);
+  if (art) {
+    // Generated backdrop + furniture at the perch coordinates. Seasonal
+    // dressing (§12) on art backdrops ships with the seasons phase — until
+    // then a light canopy-tint wash keeps the calendar legible.
+    const tint = season && SEASON_TINTS[season];
+    return (
+      <g>
+        <image
+          href={art.url}
+          width={ZONE_W}
+          height={ZONE_H}
+          preserveAspectRatio="xMidYMid slice"
+        />
+        {tint && <rect width={ZONE_W} height={ZONE_H} fill={tint.canopy} opacity={0.12} />}
+        {(SCENERY[zoneId] || []).map((item, i) => (
+          <Furniture key={`${item.prop}-${i}`} item={item} ambient={ambient} />
+        ))}
+      </g>
+    );
+  }
+  const Backdrop = BACKDROPS[zoneId] || MeadowBackdrop;
   return (
     <g>
       <Ground p={p} />
@@ -322,7 +369,18 @@ export function NestTree({ balance, countFrom = null, countDelayMs = 0 }) {
         transition={{ duration: 0.3, ease: "easeOut" }}
         onAnimationComplete={() => setPulse(false)}
       >
-        <path d={`M ${cx - 56} ${cy} a 56 50 0 0 0 112 0 z`} fill="#FFFDF4" stroke={INK} strokeWidth={3} />
+        {propArt("nestBig") ? (
+          <image
+            href={propArt("nestBig").url}
+            x={cx - 58}
+            y={cy - 28}
+            width={116}
+            height={(propArt("nestBig").h / propArt("nestBig").w) * 116}
+            preserveAspectRatio="xMidYMid meet"
+          />
+        ) : (
+          <path d={`M ${cx - 56} ${cy} a 56 50 0 0 0 112 0 z`} fill="#FFFDF4" stroke={INK} strokeWidth={3} />
+        )}
         {[-26, 0, 26].map((dx, i) => (
           <rect
             key={i}
@@ -371,18 +429,28 @@ export function Hedge({ nextZone, remaining, width = 300, opening = false }) {
         animate={opening ? { x: -width * 0.75, opacity: 0.6 } : { x: 0, opacity: 1 }}
         transition={{ duration: partMs, ease: "easeInOut", delay: opening ? swingMs : 0 }}
       >
-        <path d={hedgeHalf()} fill="#3E9E8E" />
-        <path d={`M 24 150 q 20 -22 40 0`} stroke="#2E7A6D" strokeWidth={5} fill="none" strokeLinecap="round" />
-        <path d={`M 70 320 q 20 -22 40 0`} stroke="#2E7A6D" strokeWidth={5} fill="none" strokeLinecap="round" />
+        {propArt("hedgeL") ? (
+          <image href={propArt("hedgeL").url} x={0} y={84} width={width * 0.58} height={ZONE_H - 84} preserveAspectRatio="none" />
+        ) : (
+          <>
+            <path d={hedgeHalf()} fill="#3E9E8E" />
+            <path d={`M 24 150 q 20 -22 40 0`} stroke="#2E7A6D" strokeWidth={5} fill="none" strokeLinecap="round" />
+            <path d={`M 70 320 q 20 -22 40 0`} stroke="#2E7A6D" strokeWidth={5} fill="none" strokeLinecap="round" />
+          </>
+        )}
       </motion.g>
       <motion.g
         animate={opening ? { x: width * 0.75, opacity: 0.6 } : { x: 0, opacity: 1 }}
         transition={{ duration: partMs, ease: "easeInOut", delay: opening ? swingMs : 0 }}
       >
-        <g transform={`translate(${width}, 0) scale(-1, 1)`}>
-          <path d={hedgeHalf()} fill="#3E9E8E" />
-          <path d={`M 40 220 q 20 -22 40 0`} stroke="#2E7A6D" strokeWidth={5} fill="none" strokeLinecap="round" />
-        </g>
+        {propArt("hedgeR") ? (
+          <image href={propArt("hedgeR").url} x={width * 0.42} y={84} width={width * 0.58} height={ZONE_H - 84} preserveAspectRatio="none" />
+        ) : (
+          <g transform={`translate(${width}, 0) scale(-1, 1)`}>
+            <path d={hedgeHalf()} fill="#3E9E8E" />
+            <path d={`M 40 220 q 20 -22 40 0`} stroke="#2E7A6D" strokeWidth={5} fill="none" strokeLinecap="round" />
+          </g>
+        )}
       </motion.g>
       {nextZone && (
         <g transform={`translate(${width / 2 - 8}, 300)`}>

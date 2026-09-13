@@ -123,6 +123,7 @@ function PerchedBird({ bird, sceneOffsetX, onTap, tapped, lowMotionMode, perform
           y={perch.y}
           depth={depth}
           asleep={asleep}
+          variant={perch.type === "trunkHollow" ? "cling" : null}
           label={`${birdName(bird)} the ${species.name}`}
           onClick={() => onTap(bird, perch)}
         />
@@ -186,6 +187,7 @@ function ArrivingBird({ bird, onDone, lowMotionMode }) {
           x={perch.x + offset}
           y={perch.y}
           depth={depth}
+          variant="fly"
           label={`${birdName(bird)} the ${species.name} arriving`}
         />
       </motion.g>

@@ -103,7 +103,7 @@ function PurchaseScreen({ speciesId, state, onGiveHome, onBack }) {
       </p>
       <p className="mt-3 text-[16px] font-bold text-ink leading-snug">{species.wow}</p>
       <p className="mt-4 text-[15px] font-bold text-ink">
-        {price} stars now · {after} left after
+        {after >= 0 ? `${price} stars now · ${after} left after` : `${price} stars · ${price - balance} away`}
       </p>
       <button
         type="button"

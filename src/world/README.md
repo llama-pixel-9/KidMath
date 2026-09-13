@@ -112,7 +112,15 @@ WorldRoute.jsx        the one mount point (flag check + lazy chunk)
   zone (real art, ground-band positions, honest options, matching counts).
 - **Every tap target is a Phaser Zone** created by `fixtures/common.js`
   `hitZone`; scene-level taps move the skylark only when no zone consumed the
-  pointer. Keep targets non-overlapping.
+  pointer. Keep targets non-overlapping — or, for rows of small things (the
+  crossing slots), use one big zone and resolve to the nearest slot.
+- **Every question has a hint.** `pickNumber` steps carry
+  `hint: { target, mode }`; a wrong pick counts the relevant things out loud.
+  `world.spec.js` proves each hint counts to the answer, so content cannot
+  drift from the math.
+- **The island is per kid** (`worldStore.storageKey`), like progress. The
+  kid may walk during counting and placing steps; the camera keeps a fixture
+  in view while placing and follows the kid on a chick hunt.
 - **Brand:** reward star = the Sun diamond, never five points; correct = teal,
   wrong = wobble (never red); no padlocks, no prices in money.
 

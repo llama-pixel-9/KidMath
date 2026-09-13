@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { loadProgressSummary } from "../progressStore";
 import { usePremium } from "../PremiumContext";
 import { loadCalmMode } from "../userPreferences";
+import { isMuted, setMuted } from "../sounds";
+import { music } from "./worldMusic";
 import { createWorldGame } from "./createWorldGame";
 import { loadWorldState } from "./worldStore";
 import { timeOfDay } from "./worldTime";
@@ -69,6 +71,14 @@ export default function WorldPage() {
   const [practiceRegion, setPracticeRegion] = useState(null);
   const [pocketBump, setPocketBump] = useState(0);
   const [mapOpen, setMapOpen] = useState(false);
+  const [muted, setMutedState] = useState(() => isMuted());
+  const toggleMute = () => {
+    const next = !muted;
+    setMuted(next);
+    setMutedState(next);
+    if (next) music.stop();
+    else music.start(world.region ?? "meadow");
+  };
   const [avatarX, setAvatarX] = useState(null);
 
   useEffect(() => {
@@ -183,6 +193,15 @@ export default function WorldPage() {
         )}
       </div>
       <div className="absolute top-3 right-3 z-20 flex items-center gap-2 pointer-events-none">
+        <button
+          type="button"
+          onClick={toggleMute}
+          aria-label={muted ? "Turn sound on" : "Turn sound off"}
+          aria-pressed={muted}
+          className="pointer-events-auto rounded-full bg-cream/90 shadow-md w-9 h-9 flex items-center justify-center text-base backdrop-blur hover:scale-105 active:scale-95"
+        >
+          {muted ? "🔇" : "🔊"}
+        </button>
         {world.feathers.length > 0 && (
           <div className="rounded-full bg-cream/90 shadow-md px-3 py-1.5 font-display font-semibold text-ink text-base backdrop-blur flex items-center gap-1.5">
             <img src="/meadow/feathers/firstSession.webp" alt="" className="w-5 h-5 object-contain" />

@@ -440,6 +440,7 @@ export default class WorldScene extends Phaser.Scene {
 
   onQuestEnd(quest, npc) {
     if (!quest) return;
+    if (this.pendingHatch) this.time.delayedCall(400, () => this.playHatch());
     if (quest.id.startsWith("migration-")) {
       this.time.delayedCall(600, () => this.sendMigrantOff());
       return;
@@ -645,13 +646,32 @@ export default class WorldScene extends Phaser.Scene {
     if (!this.home) return;
     const stage = petStage(this.world, this.practiceStars);
     if (stage === "hatched" && this.petStageShown !== "hatched" && !initial) {
-      this.home.hatch(() => this.spawnFollower());
+      // A hatching is a moment: wait for the quest dialog to close, then
+      // take the camera to the nest and play it where the kid can see it.
+      this.pendingHatch = true;
+      if (!this.runner.isActive) this.playHatch();
     } else {
       this.home.renderPet(stage);
       if (stage === "hatched") this.spawnFollower();
     }
     this.petStageShown = stage;
     this.emitState();
+  }
+
+  playHatch() {
+    if (!this.pendingHatch || !this.home) return;
+    this.pendingHatch = false;
+    this.inputLocked = true;
+    const p = this.home.petPosition();
+    this.cameraRig.cinematic(p.x, p.y + 40, 1100, 6800, () => {
+      this.inputLocked = false;
+    });
+    this.time.delayedCall(1300, () => {
+      this.home.hatch(() => {
+        this.spawnFollower();
+        this.toast("Your egg hatched!", "A chick! It will follow you everywhere.");
+      });
+    });
   }
 
   spawnFollower() {
@@ -678,6 +698,9 @@ export default class WorldScene extends Phaser.Scene {
       .flatMap((n) => n.list)
       .filter((n) => n.def.bird === "snowyOwl" || n.def.bird === "barnOwl")
       .map((n) => ({ x: n.x, y: n.y }));
+    // An empty seed plot, or a bloom ready to pick, is worth pointing at too.
+    const seedStageNow = seedStage(this.world, todayKey());
+    if (this.seedPlot && (seedStageNow == null || seedStageNow === 2)) feathers.push({ x: this.seedPlot.x, y: this.seedPlot.y - 20 });
     this.follower.tick({
       avatar: { x: this.avatar.x, y: this.avatar.y, facing: this.avatar.facing },
       idleMs: this.time.now - this.lastInputAt,
@@ -739,6 +762,21 @@ export default class WorldScene extends Phaser.Scene {
     });
   }
 
+  /** A bird with a quest chirps hello the first time the kid comes close. */
+  greetNearby() {
+    if (this.runner.isActive || this.inputLocked) return;
+    this.greeted ??= new Set();
+    for (const group of Object.values(this.npcs)) {
+      for (const n of group.list) {
+        if (!n.marker || this.greeted.has(n.def.id)) continue;
+        if (Math.abs(n.x - this.avatar.x) < 260 && Math.abs(n.y - this.avatar.y) < 220) {
+          this.greeted.add(n.def.id);
+          n.greet(this.avatar.x);
+        }
+      }
+    }
+  }
+
   toast(title, sub) {
     this.game.events.emit("toast", { title, sub });
   }
@@ -759,6 +797,10 @@ export default class WorldScene extends Phaser.Scene {
     if (r) this.onRegionEnter(r);
     if ((time | 0) % 6 === 0) {
       for (const n of Object.values(this.npcs)) n.watch(this.avatar.x);
+    }
+    if (time - (this.lastNearAt ?? 0) > 600) {
+      this.lastNearAt = time;
+      this.greetNearby();
     }
     this.cameraRig.setLookAhead(this.avatar.moving ? this.avatar.facing : 0);
     if ((time | 0) % 30 === 0) this.game.events.emit("avatar-x", this.avatar.x);

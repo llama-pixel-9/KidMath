@@ -84,33 +84,36 @@ export function buildHome(scene, zone, region) {
         showEgg(stage);
       }
     },
-    /** The hatching ceremony: wobble, crack through the stages, burst, chick. */
+    /** The hatching ceremony: the egg rocks harder and harder, cracks, bursts;
+     *  the chick sits up in the nest and chirps, then (onDone) hops out. */
     hatch(onDone) {
       if (hatched) return onDone?.();
       hatched = true;
-      sfx.hatch();
-      let stage = typeof petStage === "number" ? petStage : 0;
-      const step = () => {
-        stage += 1;
-        if (stage <= 3) {
-          showEgg(stage);
-          scene.tweens.add({ targets: petSprite, angle: 12, duration: 70, yoyo: true, repeat: 5 });
-          scene.time.delayedCall(520, step);
-        } else {
-          sparkle(scene, cx, bowlY - 20, { count: 26, tint: 0xfff3d6, radius: 80 });
-          dust(scene, cx, bowlY + 4, { count: 12, tint: 0xfffbeb });
-          showChick();
-          petSprite.setScale(petSprite.scaleX * 0.2);
-          scene.tweens.add({ targets: petSprite, scale: petSprite.scaleX * 5, duration: 500, ease: "Back.easeOut" });
-          hearts(scene, cx, bowlY - 50, 4);
-          scene.time.delayedCall(900, () => {
-            petSprite?.destroy();
-            petSprite = null;
-            onDone?.();
+      if (!petSprite) showEgg(3);
+      scene.tweens.killTweensOf(petSprite);
+      const egg = petSprite;
+      const rock = (amp, dur, reps, onEnd) => scene.tweens.add({ targets: egg, angle: amp, duration: dur, yoyo: true, repeat: reps, ease: "Sine.easeInOut", onComplete: onEnd });
+      rock(8, 120, 3, () => {
+        sfx.hatch();
+        scene.time.delayedCall(200, () => egg.setTexture(`egg-${Math.min(3, (typeof petStage === "number" ? petStage : 0) + 1)}`));
+        rock(16, 90, 5, () => {
+          egg.setTexture("egg-3");
+          rock(26, 70, 7, () => {
+            sparkle(scene, cx, bowlY - 20, { count: 30, tint: 0xfff3d6, radius: 90 });
+            dust(scene, cx, bowlY + 4, { count: 14, tint: 0xfffbeb });
+            showChick();
+            petSprite.setScale(petSprite.scaleX * 0.2);
+            scene.tweens.add({ targets: petSprite, scale: petSprite.scaleX * 5, duration: 500, ease: "Back.easeOut" });
+            hearts(scene, cx, bowlY - 50, 4);
+            [300, 700, 1100].forEach((d, i) => scene.time.delayedCall(d, () => sfx.chirp(6 + i)));
+            scene.time.delayedCall(2600, () => {
+              petSprite?.destroy();
+              petSprite = null;
+              onDone?.();
+            });
           });
-        }
-      };
-      step();
+        });
+      });
     },
     renderDecorations(items, ownedIds, justBoughtId = null) {
       for (const item of items) {

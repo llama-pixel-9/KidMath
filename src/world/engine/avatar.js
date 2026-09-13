@@ -77,9 +77,13 @@ export function createAvatar(scene, x, y, { waterRects = [], landRects = [] } = 
           scene.time.delayedCall(260, () => {
             if (!state.moving) breathe.resume();
           });
-        } else if (r < 0.8) {
+        } else if (r < 0.7) {
           // Head tilt.
           scene.tweens.add({ targets: sprite, angle: state.facing * -6, duration: 220, yoyo: true, hold: 300, ease: "Sine.easeInOut" });
+        } else if (r < 0.85) {
+          // A little song to itself.
+          [0, 180, 360].forEach((d, i) => scene.time.delayedCall(d, () => sfx.chirp(i * 2)));
+          scene.tweens.add({ targets: sprite, y: sprite.y - 6, duration: 120, yoyo: true, repeat: 2 });
         } else {
           face(-state.facing);
         }

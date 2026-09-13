@@ -5,6 +5,7 @@ import { birdName, recordRename } from "../flock.js";
 import { isAway, awayChip, leavingSoon, seasonKeyForDate } from "../seasons.js";
 import { playBirdCall } from "../../sounds.js";
 import BirdSprite from "./BirdSprite.jsx";
+import { birdArt } from "./artAssets.js";
 import { useDragDismiss } from "./useDragDismiss.js";
 
 /**
@@ -137,7 +138,7 @@ export function FieldGuideEntry({ speciesId, metBirds, onFlipTo, onClose, onRena
             </motion.div>
           </AnimatePresence>
           <span className="absolute top-2 left-3 font-brand-mono text-[9px] tracking-[0.08em] uppercase text-ink/40">
-            Sketch · plate slot
+            {birdArt(speciesId) ? `Plate ${String(plateNumber).padStart(2, "0")}` : "Sketch · plate slot"}
           </span>
         </div>
 

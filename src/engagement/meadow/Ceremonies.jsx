@@ -7,6 +7,7 @@ import { EGG_WARMTH_TARGET } from "../engagementStore.js";
 import { TIER3 } from "./motionSpec.js";
 import { playSoftTap, playBirdCall } from "../../sounds.js";
 import BirdSprite from "./BirdSprite.jsx";
+import { eggArt, propArt } from "./artAssets.js";
 
 /**
  * §10 eggs + hatching and §11 the leaving. The hatch is the longest ceremony
@@ -64,15 +65,42 @@ export function EggSprite({ state, x = 460, y = 512, onHatchStart, lowMotionMode
           transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
         />
       )}
-      <ellipse cx={x} cy={y - 18} rx={20} ry={26} fill="#FFFDF4" stroke="#14231F" strokeWidth={2} />
-      {pct >= 25 && (
-        <motion.path d={`M ${x - 8} ${y - 30} l 5 6 l -4 5`} fill="none" stroke="#14231F" strokeWidth={1.5} {...crackAnim(25)} />
-      )}
-      {pct >= 50 && (
-        <motion.path d={`M ${x + 7} ${y - 24} l -4 6 l 5 5`} fill="none" stroke="#14231F" strokeWidth={1.5} {...crackAnim(50)} />
-      )}
-      {pct >= 75 && (
-        <motion.path d={`M ${x - 2} ${y - 12} l 5 4 l -3 5`} fill="none" stroke="#14231F" strokeWidth={1.5} {...crackAnim(75)} />
+      {eggArt(pct) ? (
+        // Generated egg art: the crack stages are baked into the staged images
+        // (crossed thresholds swap the stage; the drawn-crack shiver retires).
+        <>
+          {propArt("nestSmall") && (
+            <image
+              href={propArt("nestSmall").url}
+              x={x - 23}
+              y={y - 12}
+              width={46}
+              height={(propArt("nestSmall").h / propArt("nestSmall").w) * 46}
+              preserveAspectRatio="xMidYMid meet"
+            />
+          )}
+          <image
+            href={eggArt(pct).url}
+            x={x - 20}
+            y={y - 44}
+            width={40}
+            height={52}
+            preserveAspectRatio="xMidYMax meet"
+          />
+        </>
+      ) : (
+        <>
+          <ellipse cx={x} cy={y - 18} rx={20} ry={26} fill="#FFFDF4" stroke="#14231F" strokeWidth={2} />
+          {pct >= 25 && (
+            <motion.path d={`M ${x - 8} ${y - 30} l 5 6 l -4 5`} fill="none" stroke="#14231F" strokeWidth={1.5} {...crackAnim(25)} />
+          )}
+          {pct >= 50 && (
+            <motion.path d={`M ${x + 7} ${y - 24} l -4 6 l 5 5`} fill="none" stroke="#14231F" strokeWidth={1.5} {...crackAnim(50)} />
+          )}
+          {pct >= 75 && (
+            <motion.path d={`M ${x - 2} ${y - 12} l 5 4 l -3 5`} fill="none" stroke="#14231F" strokeWidth={1.5} {...crackAnim(75)} />
+          )}
+        </>
       )}
       {!ready && (
         <g transform={`translate(${x}, ${y - 18}) rotate(-90)`}>
@@ -318,7 +346,7 @@ export function DepartureFlight({ bird, onDone, lowMotionMode }) {
         }
         transition={{ duration: lowMotionMode ? 0.4 : 3, ease: "easeInOut" }}
       >
-        <BirdSprite speciesId={bird.speciesId} x={perch.x + offset} y={perch.y} depth={1} label="" />
+        <BirdSprite speciesId={bird.speciesId} x={perch.x + offset} y={perch.y} depth={1} variant="fly" label="" />
       </motion.g>
       {!lowMotionMode && (
         <motion.g

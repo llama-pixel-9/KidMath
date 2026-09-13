@@ -1,15 +1,15 @@
+import { birdArt } from "./artAssets.js";
+
 /**
- * Placeholder bird art (spec: "ALL BIRD ART IS A ROUGH SKETCH").
+ * Bird sprite slot. With generated art present (public/meadow/birds/), renders
+ * the species' WebP fitted to its SPRITE_SIZES footprint — feet at (0,0),
+ * facing right, flipped by the caller via `facing`. Without art (tests,
+ * offline, an unshipped species) the original sketch blob renders, so the
+ * layout/interaction contract never depends on assets loading.
  *
- * Every species renders through this named slot — an SVG <g> in scene
- * coordinates — at the sizes the spec gives: three scales (depth bands),
- * an idle pose, and a per-tier behaviour rig hook (§09/§14). Commissioned art
- * replaces SPRITE_SIZES entries and the drawing below without any layout
- * change: the slot's anchor is the bird's FEET at (0,0).
- *
- * The sketch is the mock's blob bird: Apricot body, Ink eye and legs, Sun
- * beak. Deliberately unlike the flat geometric teal LarkMark — the logo stays
- * the logo.
+ * §12 night: birds are TINTED, keeping their colors (decision 2026-08 — the
+ * scene overlay in MeadowScene does the heavy lift; asleep birds also dim
+ * slightly here so they read as settled). Owls stay bright via `asleep=false`.
  */
 
 // Per-species footprint overrides (w×h at depth 1.0). Cranes stand tall; the
@@ -29,16 +29,56 @@ function spriteSize(speciesId, depth = 1.0) {
   return { w: base.w * depth, h: base.h * depth };
 }
 
+const ASLEEP_TINT = "brightness(0.72) saturate(0.8)";
+
 /**
  * Renders with the feet at (x, y), scaled by the perch's depth band.
- * `pose`: idle | hop (visual state is driven by the parent via motion).
+ * `variant`: optional art variant (e.g. "cling" while on a trunkHollow perch).
  */
-export default function BirdSprite({ speciesId, x = 0, y = 0, depth = 1.0, facing = 1, label, onClick, asleep = false }) {
+export default function BirdSprite({
+  speciesId,
+  x = 0,
+  y = 0,
+  depth = 1.0,
+  facing = 1,
+  label,
+  onClick,
+  asleep = false,
+  variant = null,
+}) {
   const { w, h } = spriteSize(speciesId, depth);
+  const art = birdArt(speciesId, variant);
+
+  if (art) {
+    // Fit the image inside the footprint, keep aspect, anchor feet bottom-center.
+    const s = Math.min(w / art.w, h / art.h);
+    const iw = art.w * s;
+    const ih = art.h * s;
+    return (
+      <g
+        transform={`translate(${x}, ${y}) scale(${facing}, 1)`}
+        data-species={speciesId}
+        role={onClick ? "button" : undefined}
+        aria-label={label}
+        onClick={onClick}
+        style={onClick ? { cursor: "pointer" } : undefined}
+      >
+        <image
+          href={art.url}
+          x={-iw / 2}
+          y={-ih}
+          width={iw}
+          height={ih}
+          preserveAspectRatio="xMidYMax meet"
+          style={asleep ? { filter: ASLEEP_TINT } : undefined}
+        />
+      </g>
+    );
+  }
+
+  // ---- fallback: the original sketch blob (kept for tests/missing assets) ----
   const bodyW = w;
   const bodyH = h * 0.72;
-  // §12 night: birds settle as silhouettes (only the owls stay awake — the
-  // caller decides who sleeps).
   const bodyFill = asleep ? "#0A2E28" : "#FBC7A8";
   const inkStroke = asleep ? "#0A2E28" : "#14231F";
   const beakFill = asleep ? "#0A2E28" : "#F26B3A";

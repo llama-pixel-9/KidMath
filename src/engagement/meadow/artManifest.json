@@ -1,0 +1,248 @@
+{
+ "birds": {
+  "skylark": {
+   "w": 511,
+   "h": 489
+  },
+  "houseFinch": {
+   "w": 512,
+   "h": 492
+  },
+  "mourningDove": {
+   "w": 512,
+   "h": 427
+  },
+  "chickadee": {
+   "w": 511,
+   "h": 438
+  },
+  "houseWren": {
+   "w": 511,
+   "h": 431
+  },
+  "robin": {
+   "w": 507,
+   "h": 512
+  },
+  "junco": {
+   "w": 511,
+   "h": 512
+  },
+  "cardinal": {
+   "w": 456,
+   "h": 511
+  },
+  "downyWoodpecker": {
+   "w": 512,
+   "h": 453
+  },
+  "goldfinch": {
+   "w": 512,
+   "h": 451
+  },
+  "blueJay": {
+   "w": 512,
+   "h": 470
+  },
+  "hummingbird": {
+   "w": 512,
+   "h": 439
+  },
+  "kingfisher": {
+   "w": 512,
+   "h": 463
+  },
+  "barnSwallow": {
+   "w": 512,
+   "h": 435
+  },
+  "barnOwl": {
+   "w": 512,
+   "h": 508
+  },
+  "puffin": {
+   "w": 512,
+   "h": 505
+  },
+  "sandhillCrane": {
+   "w": 347,
+   "h": 512
+  },
+  "paintedBunting": {
+   "w": 512,
+   "h": 481
+  },
+  "kestrel": {
+   "w": 512,
+   "h": 508
+  },
+  "snowyOwl": {
+   "w": 431,
+   "h": 512
+  },
+  "whoopingCrane": {
+   "w": 378,
+   "h": 512
+  },
+  "condor": {
+   "w": 503,
+   "h": 512
+  },
+  "whoopingCraneChick": {
+   "w": 347,
+   "h": 512
+  },
+  "condorChick": {
+   "w": 452,
+   "h": 512
+  },
+  "downyWoodpecker-cling": {
+   "w": 227,
+   "h": 511
+  },
+  "skylark-fly": {
+   "w": 512,
+   "h": 443
+  },
+  "barnOwl-fly": {
+   "w": 512,
+   "h": 465
+  },
+  "whoopingCrane-fly": {
+   "w": 512,
+   "h": 393
+  },
+  "condor-fly": {
+   "w": 512,
+   "h": 358
+  },
+  "condor-spread": {
+   "w": 512,
+   "h": 426
+  },
+  "whoopingCrane-dance": {
+   "w": 486,
+   "h": 512
+  }
+ },
+ "props": {
+  "tree": {
+   "w": 652,
+   "h": 900
+  },
+  "nestbox": {
+   "w": 284,
+   "h": 640
+  },
+  "feeder": {
+   "w": 302,
+   "h": 640
+  },
+  "reeds": {
+   "w": 259,
+   "h": 640
+  },
+  "rocks": {
+   "w": 474,
+   "h": 640
+  },
+  "log": {
+   "w": 640,
+   "h": 259
+  },
+  "fence": {
+   "w": 580,
+   "h": 361
+  },
+  "sign": {
+   "w": 396,
+   "h": 640
+  },
+  "nestBig": {
+   "w": 420,
+   "h": 323
+  },
+  "nestSmall": {
+   "w": 320,
+   "h": 237
+  },
+  "hedgeL": {
+   "w": 264,
+   "h": 640
+  },
+  "hedgeR": {
+   "w": 265,
+   "h": 640
+  }
+ },
+ "zones": {
+  "meadow": {
+   "w": 2048,
+   "h": 1176
+  },
+  "pond": {
+   "w": 2048,
+   "h": 1176
+  },
+  "woods": {
+   "w": 2048,
+   "h": 1176
+  },
+  "cliffs": {
+   "w": 2048,
+   "h": 1176
+  }
+ },
+ "egg": [
+  {
+   "w": 225,
+   "h": 300
+  },
+  {
+   "w": 223,
+   "h": 300
+  },
+  {
+   "w": 223,
+   "h": 300
+  },
+  {
+   "w": 225,
+   "h": 300
+  }
+ ],
+ "feathers": {
+  "firstSession": {
+   "w": 186,
+   "h": 256
+  },
+  "perfectRound": {
+   "w": 160,
+   "h": 256
+  },
+  "streak3": {
+   "w": 159,
+   "h": 256
+  },
+  "streak7": {
+   "w": 129,
+   "h": 256
+  },
+  "stars100": {
+   "w": 173,
+   "h": 256
+  },
+  "comeback5": {
+   "w": 170,
+   "h": 256
+  },
+  "wordDetective": {
+   "w": 149,
+   "h": 256
+  },
+  "peakClimber": {
+   "w": 115,
+   "h": 256
+  }
+ }
+}

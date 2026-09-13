@@ -4,6 +4,7 @@ import Feather from "../components/feather.jsx";
 import { useTheme } from "../useTheme.js";
 import { STICKERS } from "./stickers.js";
 import { BADGES } from "./badges.js";
+import { featherArt } from "./meadow/artAssets.js";
 import { loadEngagement, starBalance, buySticker } from "./engagementStore.js";
 
 /**
@@ -74,7 +75,16 @@ export default function StickerBook({ open, onClose }) {
                       ${has ? "bg-violet-50 text-violet-700 ring-1 ring-violet-300" : "bg-slate-100 text-slate-400"}`}
                     title={has ? `${b.name} — ${b.blurb}` : `Locked: ${b.blurb}`}
                   >
-                    <span className={has ? "" : "grayscale opacity-60"} aria-hidden="true">{b.emoji}</span>
+                    {featherArt(b.id) ? (
+                      <img
+                        src={featherArt(b.id).url}
+                        alt=""
+                        className={`w-4 h-4 object-contain ${has ? "" : "grayscale opacity-60"}`}
+                        aria-hidden="true"
+                      />
+                    ) : (
+                      <span className={has ? "" : "grayscale opacity-60"} aria-hidden="true">{b.emoji}</span>
+                    )}
                     {b.name}
                   </span>
                 );

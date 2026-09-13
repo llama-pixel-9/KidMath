@@ -3,7 +3,8 @@ import StoreKit
 
 /// StoreKit 2 subscriptions + the shared Supabase entitlement.
 ///
-/// Pricing (locked): $8.99/month (anchor, never discounted) · $54.99/year
+/// Pricing: amounts come from StoreKit (`Product.displayPrice`) — never a
+/// literal in Swift. Launch price is $39.99/yr, $8.99/mo (CLAUDE.md).
 /// (49% off — the plan the paywall leads with) · every child in the household
 /// included · 14-day free trial on both plans.
 ///

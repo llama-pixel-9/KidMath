@@ -95,6 +95,7 @@ final class SessionViewModel: ObservableObject {
                 sessionSize: sessionSize,
                 options: [
                     "savedProgress": savedProgress,
+                    "ladderV2": GamFlags.ladderV2,
                     // §03: with the flag on, promotion signals nominate
                     // instead of leveling mid-flight (shared engine rule).
                     "fledging": GamFlags.fledging,
@@ -137,6 +138,7 @@ final class SessionViewModel: ObservableObject {
                     "fledging": true,
                     "challengeSubskills": nomination?["weakSubskills"] as? [String] ?? [String](),
                     "savedProgress": ["level": level],
+                    "ladderV2": GamFlags.ladderV2,
                 ]
             )
             self.session = challenge

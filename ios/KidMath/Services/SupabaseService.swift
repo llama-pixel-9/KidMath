@@ -100,20 +100,38 @@ final class SupabaseService: ObservableObject {
 
     /// Approved rows for one mode, optionally narrowed to a level window.
     /// Raw PostgREST JSON — hand directly to EngineBridge.addBankRows.
+    ///
+    /// PAGINATED — CLAUDE.md hard rule. PostgREST silently caps a select at
+    /// 1,000 rows and fractions / time / placeValueDiscs each exceed that; an
+    /// unpaginated read is a *wrong* read (the kid gets the first 1,000 by
+    /// item_id). Mirrors modeLoader.js fetchMode: order by item_id, page by
+    /// 1,000, stop on a short page.
     func fetchModeItemRows(modeId: String, levelRange: ClosedRange<Int>? = nil) async throws -> [[String: Any]] {
-        var query = client
-            .from("item_bank")
-            .select(Self.itemSelectFields)
-            .eq("review_status", value: "approved")
-            .eq("mode_id", value: modeId)
-        if let levelRange {
-            query = query
-                .lte("level_min", value: levelRange.upperBound)
-                .gte("level_max", value: levelRange.lowerBound)
+        let page = 1000
+        var rows: [[String: Any]] = []
+        var from = 0
+        while true {
+            var query = client
+                .from("item_bank")
+                .select(Self.itemSelectFields)
+                .eq("review_status", value: "approved")
+                .eq("mode_id", value: modeId)
+            if let levelRange {
+                query = query
+                    .lte("level_min", value: levelRange.upperBound)
+                    .gte("level_max", value: levelRange.lowerBound)
+            }
+            let response = try await query
+                .order("item_id")
+                .range(from: from, to: from + page - 1)
+                .execute()
+            let parsed = try JSONSerialization.jsonObject(with: response.data)
+            let batch = parsed as? [[String: Any]] ?? []
+            rows.append(contentsOf: batch)
+            if batch.count < page { break }
+            from += page
         }
-        let response = try await query.execute()
-        let parsed = try JSONSerialization.jsonObject(with: response.data)
-        return parsed as? [[String: Any]] ?? []
+        return rows
     }
 
     // MARK: - Progress (mirrors src/progressStore.js cloud half)

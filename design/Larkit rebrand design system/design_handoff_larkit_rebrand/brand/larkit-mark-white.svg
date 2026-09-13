@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 1 61 51" width="244" height="204" role="img" aria-label="larkit">
+  <defs><clipPath id="b"><circle cx="30" cy="32" r="18"></circle></clipPath></defs>
+  <path d="M27,24 C19,18 9,12 2,6 C5,18 8,31 15,42 C20,36 24,29 27,24 Z" fill="#FFFFFF"></path>
+  <path d="M25,17 C24,10 27,5 31,3 C31,9 33,14 35,18 Z" fill="#FFFFFF"></path>
+  <circle cx="30" cy="32" r="18" fill="#FFFFFF"></circle>
+  <path d="M44,22 L61,26 L44,31 Z" fill="#FFFFFF"></path>
+  <g clip-path="url(#b)"><path d="M14,32 L37,40 L21,48 Z" fill="#FFFFFF"></path></g>
+  <circle cx="39" cy="24" r="2.6" fill="#14231F"></circle>
+</svg>

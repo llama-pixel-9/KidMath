@@ -1,6 +1,6 @@
 // The larkit palette — the only theme. The alt skins (mario/zelda/minecraft/
 // neon) and the theme picker are gone by design: color carries meaning here
-// (see design/larkit/README.md §12), so it is not decoration to hand out.
+// (see design/Larkit rebrand design system/design_handoff_larkit_rebrand/README.md §12), so it is not decoration to hand out.
 //
 // The shape of a theme object is unchanged so every `useTheme()` consumer
 // keeps working; getTheme() ignores the stored id and always returns larkit.

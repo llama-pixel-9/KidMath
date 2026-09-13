@@ -1,7 +1,7 @@
 import SwiftUI
 
 /// The larkit palette — the only theme. Mirrors src/themes.js on the web;
-/// design/larkit/README.md is the source of truth for every value here.
+/// design/Larkit rebrand design system/design_handoff_larkit_rebrand/README.md is the source of truth for every value here.
 ///
 /// The alt skins (mario/zelda/minecraft/neon) and the theme picker are gone
 /// by design: color carries meaning in this brand (Ink is what is given,
@@ -57,7 +57,7 @@ struct Theme: Identifiable {
         return bubbleGradients[index % bubbleGradients.count][0]
     }
 
-    // MARK: - Brand constants (design/larkit/README.md §Color)
+    // MARK: - Brand constants (design/Larkit rebrand design system/design_handoff_larkit_rebrand/README.md §Color)
 
     static let cream = Color(hex: 0xFFFBEB)
     static let teal = Color(hex: 0x0B7A6A)

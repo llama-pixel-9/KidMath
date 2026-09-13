@@ -1,5 +1,5 @@
 // Renders AppIcon.png (1024×1024, opaque) from the larkit mark geometry —
-// the same five shapes as design/larkit/brand/larkit-mark.svg, full color on
+// the same five shapes as design/Larkit rebrand design system/design_handoff_larkit_rebrand/brand/larkit-mark.svg, full color on
 // cream, matching the shipped apple-touch-icon. Run from the repo root:
 //
 //   swift ios/make-appicon.swift

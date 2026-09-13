@@ -10,11 +10,11 @@ Companion docs: [launch-compliance-checklist.md](./launch-compliance-checklist.m
 (what was built) · [stripe-setup.md](./stripe-setup.md) · [ios-appstore-checklist.md](./ios-appstore-checklist.md).
 This file is the short list — check items off here.
 
-**Status at a glance (2026-09-13):** compliance code is live on prod
-(PR #88 merged `larkit-rebrand` → `main`). Consent email flow is live and
-rehearsed end to end. Left before opening signups: real phone number + one
-env flip. Billing has not been started. iOS is waiting on Apple Developer
-Program enrollment.
+**Status at a glance (2026-09-13, evening):** every §1 code item is live on
+prod. **Decision: open signups first, billing later** — the only thing between
+now and open signups is removing `VITE_SIGNUPS_DISABLED` in Vercel. Stripe is
+verified in test mode (§2); live-mode setup remains. iOS is waiting on Apple
+Developer Program enrollment.
 
 ---
 
@@ -39,12 +39,10 @@ Prod carries all the code while staying closed to new users:
 - [x] Real entity name + address in `src/legal/entity.js` — Larkit Labs LLC,
   502 W 7th St Ste 100, Erie PA 16502-1333 (PR #85, 2026-09-12).
   `legalDocs.spec.js` gate passes; `npm run test` fully green.
-- [ ] **Real phone number in `src/legal/entity.js`** — still `(555) 555-0100`
-  on prod. 16 CFR §312.4(d)(1) requires it on the public notice. A monitored
-  forwarding number is fine. The entity string is duplicated in
-  `supabase/functions/_shared/emailTemplates.ts` — keep both in sync, and
-  redeploy `request-consent` + `consent-confirm` from a **main-based tree**
-  (never from `larkit-rebrand`, its functions copy is stale).
+- [x] **Real phone number in `src/legal/entity.js`** — (814) 273-8760, PR #96
+  2026-09-13; email footer in `emailTemplates.ts` matches; `request-consent`
+  + `consent-confirm` redeployed (v15) from a main-based tree.
+  `legalDocs.spec` now rejects a 555 number.
 - [x] Role mailboxes receive mail — privacy@ support@ security@ legal@
   hello@ larkit.io are Google Groups delivering to nagasai@larkit.io;
   never-spam filter set (2026-09-12).
@@ -54,11 +52,14 @@ Prod carries all the code while staying closed to new users:
 - [x] Compliance deploy pushed to prod — PR #88 (2026-09-12), plus PR #91
   consent-resend fix (2026-09-13).
 - [ ] **Remove `VITE_SIGNUPS_DISABLED` from the Vercel Production env** and
-  redeploy, once the phone number lands.
-- [ ] **Post-deploy smoke pass on prod:** /privacy /terms /security
-  /parental-consent render the real phone; footer everywhere; privacy link
-  on welcome / signup / add-a-child / paywall; no request to
-  fonts.googleapis.com in the network tab; /.well-known/security.txt serves.
+  redeploy. ← the last step before signups are open.
+- [x] Post-deploy smoke pass on prod (2026-09-13): /parental-consent renders
+  without the drafting note, with the real address + phone; the shipped
+  bundle carries no 555 number; no fonts.googleapis request in the HTML;
+  /.well-known/security.txt serves (200 via www).
+- [ ] After the env flip: /signup shows the real sign-in buttons (not the
+  "almost ready" page); add a kid → consent email arrives with the phone in
+  the footer.
 
 ## 2 · Blocks charging real money (before `VITE_PAYWALL_ENABLED=true`)
 

@@ -68,8 +68,18 @@ export async function beginConsentRequest(
     termsVersion: string;
     privacyVersion: string;
   },
-): Promise<{ requestId: string; confirmUrl: string }> {
+): Promise<{ requestId: string; confirmUrl: string; sentAt: string }> {
   const now = deps.now?.() ?? Date.now();
+
+  // A resend replaces the earlier email: only the newest link may grant.
+  // Otherwise a parent tapping an older email's link (Gmail threads them
+  // under one subject) would create a second profile for the same child.
+  const { error: supersedeError } = await deps.db
+    .from("consent_requests")
+    .update({ status: "superseded" })
+    .match({ user_id: args.userId, status: "pending" });
+  if (supersedeError) throw new Error(`consent request supersede: ${supersedeError.message}`);
+
   const { data, error } = await deps.db
     .from("consent_requests")
     .insert({
@@ -112,7 +122,7 @@ export async function beginConsentRequest(
     }),
   });
 
-  return { requestId: data.id, confirmUrl };
+  return { requestId: data.id, confirmUrl, sentAt: new Date(now).toISOString() };
 }
 
 /** The confirming message — carries (a) what was consented to, (b) that
@@ -160,7 +170,19 @@ export async function confirmConsent(
   });
   if (error) return { ok: false, reason: error.message };
   const grant = Array.isArray(data) ? data[0] : data;
-  if (!grant?.kid_profile_id) return { ok: false, reason: "request_not_pending" };
+  if (!grant?.kid_profile_id) {
+    // Tell the parent WHICH soft case this is: a link replaced by a resend
+    // reads very differently from "already confirmed".
+    const { data: request } = await deps.db
+      .from("consent_requests")
+      .select("status")
+      .eq("id", claims.kidId)
+      .maybeSingle();
+    return {
+      ok: false,
+      reason: request?.status === "superseded" ? "request_superseded" : "request_not_pending",
+    };
+  }
 
   const revocationToken = await signRevocationToken(
     { userId: claims.userId, kidId: grant.kid_profile_id, expiresAt: now + REVOCATION_LINK_TTL_MS },

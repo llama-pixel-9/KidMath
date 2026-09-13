@@ -43,12 +43,22 @@ function fakeDb() {
           };
         },
         update(patch) {
+          const apply = (where) => {
+            tables[name].forEach((row) => {
+              if (Object.entries(where).every(([k, v]) => row[k] === v)) Object.assign(row, patch);
+            });
+            return Promise.resolve({ error: null });
+          };
+          return {
+            eq: (column, value) => apply({ [column]: value }),
+            match: (where) => apply(where),
+          };
+        },
+        select() {
           return {
             eq(column, value) {
-              tables[name].forEach((row) => {
-                if (row[column] === value) Object.assign(row, patch);
-              });
-              return Promise.resolve({ error: null });
+              const rows = tables[name].filter((row) => row[column] === value);
+              return { maybeSingle: () => Promise.resolve({ data: rows[0] ?? null, error: null }) };
             },
           };
         },
@@ -70,6 +80,11 @@ function fakeDb() {
         tables.kid_profiles.push(kid);
         req.status = "granted";
         req.consent_received_at = new Date(NOW).toISOString();
+        tables.consent_requests.forEach((r) => {
+          if (r.user_id === req.user_id && r.status === "pending" && r.id !== req.id) {
+            r.status = "superseded";
+          }
+        });
         const event = {
           id: id("evt"),
           user_id: req.user_id,
@@ -221,6 +236,50 @@ describe("email-plus consent flow", () => {
     const again = await confirmConsent(deps(db, transport), token);
     expect(again.ok).toBe(false);
     expect(again.reason).toBe("request_not_pending");
+    expect(db.tables.kid_profiles).toHaveLength(1);
+  });
+
+  // The resend bug (2026-09-12): a parent tapped "Resend the email" without
+  // noticing, got two emails threaded under one subject, and each carried a
+  // live 14-day link — confirming both would have created two profiles for
+  // the same child. A resend now replaces the earlier email.
+  it("a resend supersedes the earlier request — only the newest link can grant", async () => {
+    const db = fakeDb();
+    const transport = fakeTransport();
+    const first = await begin(db, transport);
+    const second = await begin(db, transport);
+    expect(second.sentAt).toBe(new Date(NOW).toISOString());
+
+    expect(db.tables.consent_requests.map((r) => r.status)).toEqual(["superseded", "pending"]);
+
+    const oldToken = new URL(first.confirmUrl).searchParams.get("token");
+    const stale = await confirmConsent(deps(db, transport), oldToken);
+    expect(stale.ok).toBe(false);
+    expect(stale.reason).toBe("request_superseded");
+    expect(db.tables.kid_profiles).toEqual([]);
+
+    const newToken = new URL(second.confirmUrl).searchParams.get("token");
+    expect((await confirmConsent(deps(db, transport), newToken)).ok).toBe(true);
+    expect(db.tables.kid_profiles).toHaveLength(1);
+  });
+
+  it("granting one request closes every other pending request on the account", async () => {
+    const db = fakeDb();
+    const transport = fakeTransport();
+    const first = await begin(db, transport);
+    // Simulate a pre-fix resend that left both rows pending.
+    db.tables.consent_requests[0].status = "pending";
+    const second = await begin(db, transport);
+    db.tables.consent_requests[0].status = "pending";
+    expect(db.tables.consent_requests.map((r) => r.status)).toEqual(["pending", "pending"]);
+
+    const newToken = new URL(second.confirmUrl).searchParams.get("token");
+    expect((await confirmConsent(deps(db, transport), newToken)).ok).toBe(true);
+    expect(db.tables.consent_requests.map((r) => r.status)).toEqual(["superseded", "granted"]);
+
+    const oldToken = new URL(first.confirmUrl).searchParams.get("token");
+    const stale = await confirmConsent(deps(db, transport), oldToken);
+    expect(stale.reason).toBe("request_superseded");
     expect(db.tables.kid_profiles).toHaveLength(1);
   });
 });

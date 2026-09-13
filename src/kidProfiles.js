@@ -109,7 +109,8 @@ export async function requestParentalConsent({ firstName, age, grade }) {
   if (error || !data?.requested) {
     throw new Error(error?.message || "Could not send the consent email — try again.");
   }
-  return data;
+  // `sentAt` is the server's send time; older deploys don't return it.
+  return { ...data, sentAt: data.sentAt || new Date().toISOString() };
 }
 
 /**
@@ -137,8 +138,8 @@ export async function updateKid(kidId, { firstName, age, grade }) {
 export async function addKid(userId, { firstName, age, grade }) {
   if (!supabase || !userId) throw new Error("Sign in first");
   if (!(await hasParentalConsent(userId))) {
-    await requestParentalConsent({ firstName, age, grade });
-    return { pendingConsent: true, firstName: firstName.trim(), age, grade };
+    const { sentAt } = await requestParentalConsent({ firstName, age, grade });
+    return { pendingConsent: true, firstName: firstName.trim(), age, grade, sentAt };
   }
   const { data, error } = await supabase
     .from("kid_profiles")

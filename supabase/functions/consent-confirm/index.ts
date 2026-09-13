@@ -58,8 +58,10 @@ Deno.serve(async (request) => {
 
     if (!result.ok) {
       return respond(wantsJson, { ok: false, reason: result.reason }, 400,
-        result.reason === "request_not_pending"
-          ? "This consent was already confirmed (or the request expired). If your child's profile exists, you're all set — otherwise just add them again from the app."
+        result.reason === "request_superseded"
+          ? "This link was replaced by a newer email. Open the most recent consent email from us and tap the link there."
+          : result.reason === "request_not_pending"
+          ? "This consent was already confirmed. If your child's profile exists, you're all set — otherwise just add them again from the app."
           : "This confirmation link is invalid or has expired. Start adding your child again from the app and we'll send a fresh one.");
     }
 

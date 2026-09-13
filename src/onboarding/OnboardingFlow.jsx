@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../useAuth";
 import { usePremium } from "../PremiumContext";
 import { paywallEnabled, startCheckout } from "../premium";
+import { usePlanPricing } from "../hooks/usePlanPricing";
 import { logConsent } from "../legal";
 import {
   buildAutoRenewalDisclosure,
@@ -345,10 +346,14 @@ function PlanStep({ kidName, onFree }) {
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
   const [autoRenewAck, setAutoRenewAck] = useState(AUTORENEW_ACK_DEFAULT);
+  const { pricing, error: pricingError, retry: retryPricing } = usePlanPricing();
 
-  const disclosure = buildAutoRenewalDisclosure("annual");
+  // Prices come from Stripe; until they load there is no disclosure and no
+  // purchase button — never a hardcoded amount.
+  const disclosure = pricing ? buildAutoRenewalDisclosure("annual", { pricing }) : null;
 
   const subscribe = async () => {
+    if (!disclosure) return;
     setError("");
     setBusy(true);
     try {
@@ -406,8 +411,21 @@ function PlanStep({ kidName, onFree }) {
           </span>
           <h2 className="font-display font-medium text-2xl text-ink m-0">larkit Plus</h2>
           <p className="mt-3 mb-4">
-            <span className="font-display font-semibold text-4xl text-ink">$54.99</span>
-            <span className="text-sm font-semibold text-ink/70"> / year · or $8.99 monthly</span>
+            {pricing ? (
+              <>
+                <span className="font-display font-semibold text-4xl text-ink">{pricing.annual.amount}</span>
+                <span className="text-sm font-semibold text-ink/70"> / year · or {pricing.monthly.amount} monthly</span>
+              </>
+            ) : pricingError ? (
+              <span className="text-sm font-semibold text-ink/70">
+                Couldn't load prices.{" "}
+                <button type="button" onClick={retryPricing} className="underline cursor-pointer bg-transparent border-0 p-0 font-semibold text-ink/70">
+                  Try again
+                </button>
+              </span>
+            ) : (
+              <span className="text-sm font-semibold text-ink/70">Loading prices…</span>
+            )}
           </p>
           <ul className="m-0 p-0 list-none space-y-2 text-[15px] font-semibold text-ink">
             <li>All 22 games, K–5</li>
@@ -425,11 +443,13 @@ function PlanStep({ kidName, onFree }) {
               onChange={(e) => setAutoRenewAck(e.target.checked)}
               className="mt-1 h-5 w-5 shrink-0"
             />
-            <span className="text-sm text-ink/70 leading-relaxed">{disclosure.label}</span>
+            <span className="text-sm text-ink/70 leading-relaxed">
+              {disclosure ? disclosure.label : "The auto-renewal terms will appear once prices load."}
+            </span>
           </label>
           <button
             type="button"
-            disabled={planButtonsDisabled({ autoRenewAck, busy })}
+            disabled={planButtonsDisabled({ autoRenewAck, busy, pricing })}
             className="mt-4 w-full h-14 rounded-[18px] bg-sun text-ink font-display font-semibold text-lg shadow-[0_5px_0_#C4471B] btn-press cursor-pointer disabled:opacity-50"
             onClick={subscribe}
           >

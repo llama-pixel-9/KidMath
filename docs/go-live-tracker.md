@@ -68,8 +68,11 @@ Nothing here has started. As of 2026-09-13 `stripe-checkout` and
 - [ ] Stripe dashboard (live mode): product with **$8.99/mo** and
   **$54.99/yr** prices, plus the **$39/yr founding** price (promotion code
   restricted to it, or point `STRIPE_PRICE_ANNUAL` at it temporarily).
-- [ ] Deploy `stripe-checkout` and `stripe-webhook --no-verify-jwt` from a
-  main-based tree.
+- [ ] Deploy `stripe-checkout`, `stripe-portal`, `stripe-prices
+  --no-verify-jwt` and `stripe-webhook --no-verify-jwt` from a main-based
+  tree. (PR #94: prices are read from Stripe at runtime — the paywall and
+  disclosure carry no literals, so the launch price is purely a dashboard +
+  secret decision.)
 - [ ] Secrets: `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`,
   `STRIPE_PRICE_MONTHLY`, `STRIPE_PRICE_ANNUAL`.
 - [ ] Webhook endpoint at `…/functions/v1/stripe-webhook` with
@@ -83,6 +86,9 @@ Nothing here has started. As of 2026-09-13 `stripe-checkout` and
 - [ ] Confirmation + reminder emails (trial day 11, 35 days pre-annual-renewal,
   annual, pre-price-change). Sender is now live (§3) — confirm these are
   actually built and wired to Resend before flipping the paywall.
+- [ ] Stripe Tax before live mode: Pennsylvania taxes digital products, so
+  PA parents owe sales tax from the first sale. Enable under Settings → Tax
+  and set `automatic_tax: { enabled: true }` on the Checkout session.
 - [ ] Set `VITE_PAYWALL_ENABLED=true` in Vercel Production; redeploy.
 
 ## 3 · Consent flow (B7 — email sender) — DONE 2026-09-12/13

@@ -31,6 +31,12 @@ one subscription unlocks both platforms.
 - `STRIPE_PRICE_MONTHLY` / `STRIPE_PRICE_ANNUAL` still work as optional
   overrides for a one-off test; do not set them in normal operation.
 
+- **API key.** Test mode: the standard *Secret key* (`sk_test_`) from
+  Developers → API keys. Live mode: a *restricted* key with only Checkout
+  Sessions write, Billing Portal write, and Prices / Products / Customers /
+  Subscriptions read. The publishable key is never needed (hosted
+  Checkout — the browser doesn't call Stripe).
+
 ## 2. Deploy the Edge Functions
 
 ```sh

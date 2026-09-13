@@ -91,6 +91,14 @@ Nothing here has started. As of 2026-09-13 `stripe-checkout` and
 - [ ] Stripe Tax before live mode: Pennsylvania taxes digital products, so
   PA parents owe sales tax from the first sale. Enable under Settings → Tax
   and set `automatic_tax: { enabled: true }` on the Checkout session.
+- [ ] **Live mode uses a restricted key, not the standard secret key.**
+  Developers → API keys → Create restricted key, permissions: Checkout
+  Sessions *write*, Billing Portal *write* (configurations + sessions),
+  Prices *read*, Products *read*, Customers *read*, Subscriptions *read*.
+  Everything else *none*. Set it as `STRIPE_SECRET_KEY`. The standard
+  `sk_live_` key can do anything (refunds, payouts, deleting customers);
+  the functions only need the list above. Test mode keeps the standard
+  `sk_test_` key — no need to harden a sandbox.
 - [ ] Set `VITE_PAYWALL_ENABLED=true` in Vercel Production; redeploy.
 
 ## 3 · Consent flow (B7 — email sender) — DONE 2026-09-12/13

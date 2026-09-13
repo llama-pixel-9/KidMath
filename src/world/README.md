@@ -118,6 +118,11 @@ WorldRoute.jsx        the one mount point (flag check + lazy chunk)
   `hint: { target, mode }`; a wrong pick counts the relevant things out loud.
   `world.spec.js` proves each hint counts to the answer, so content cannot
   drift from the math.
+- **Island questions are practice.** Each quest with a question is saved to
+  the practice log as a session of its strand's first mode (`logStart` /
+  `logPick` / `logEnd` in WorldScene), so the parent report includes them.
+  `kind` stays `normal` and `mode` a registry mode: the practice_sessions
+  table constrains both.
 - **The island is per kid** (`worldStore.storageKey`), like progress. The
   kid may walk during counting and placing steps; the camera keeps a fixture
   in view while placing and follows the kid on a chick hunt.

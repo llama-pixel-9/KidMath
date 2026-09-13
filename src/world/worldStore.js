@@ -24,6 +24,7 @@ export function emptyWorldState() {
     discovered: [], // region ids the mist has rolled back from (gates opened)
     lastRegion: null, // where the skylark was last seen; spawn there next time
     tutorialDone: false, // the wordless first minute has been played
+    secrets: [], // hidden things found (secrets.js ids)
   };
 }
 
@@ -49,6 +50,7 @@ export function loadWorldState() {
       discovered: Array.isArray(raw.discovered) ? raw.discovered.filter((d) => typeof d === "string") : [],
       lastRegion: typeof raw.lastRegion === "string" ? raw.lastRegion : null,
       tutorialDone: Boolean(raw.tutorialDone),
+      secrets: Array.isArray(raw.secrets) ? raw.secrets.filter((d) => typeof d === "string") : [],
     };
   } catch {
     return emptyWorldState();
@@ -212,4 +214,15 @@ export function applyLastRegion(state, regionId) {
 export function applyTutorialDone(state) {
   if (state.tutorialDone) return state;
   return { ...state, tutorialDone: true };
+}
+
+/** A secret found: two stars the first time, remembered forever. */
+export function applySecretFound(state, secretId, stars = 2) {
+  if (state.secrets.includes(secretId)) return state;
+  return {
+    ...state,
+    stars: state.stars + stars,
+    secrets: [...state.secrets, secretId],
+    egg: state.egg ? { ...state.egg, warmth: state.egg.warmth + stars } : state.egg,
+  };
 }

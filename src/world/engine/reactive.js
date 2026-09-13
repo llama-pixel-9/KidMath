@@ -212,6 +212,7 @@ function makeFlower(scene, x, y, color) {
   scene.tweens.add({ targets: head, angle: 8, duration: 1600 + Math.random() * 800, yoyo: true, repeat: -1, ease: "Sine.easeInOut" });
 
   const zone = hitZone(scene, x, y - 30 * ds, 60, 70, () => {
+    scene.events.emit("flower-tap", { regionId: REGIONS.find((r) => x >= r.x0 && x < r.x1)?.id, key: `${x},${y}` });
     scene.tweens.add({ targets: head, scale: 1.3, duration: 120, yoyo: true, ease: "Quad.easeOut" });
     sfx.pop(9 + Math.floor(Math.random() * 4));
     sparkle(scene, x, y - 36 * ds, { count: 6, tint: 0xfff3d6, radius: 20 });

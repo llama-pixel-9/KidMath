@@ -37,6 +37,11 @@ export default function HomePanel({ zoneHome, world, onBuy, onClose }) {
           <p className="mb-3 text-sm font-bold text-ink bg-seafoam/50 rounded-xl px-3 py-2">{PET_LINES[world.pet]}</p>
         )}
         {world.pet == null && <p className="mb-3 text-sm font-bold text-ink/70">Help a bird and something might arrive for your nest.</p>}
+        {(world.secrets?.length ?? 0) > 0 && (
+          <p className="mb-3 text-xs font-bold text-teal">
+            Secrets found: {world.secrets.length} of {world.secretCount}
+          </p>
+        )}
 
         <div className="grid grid-cols-3 gap-2">
           {items.map((item) => {

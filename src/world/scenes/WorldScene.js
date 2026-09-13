@@ -19,6 +19,7 @@ import {
   applyDiscover,
   applyLastRegion,
   applyTutorialDone,
+  applySecretFound,
 } from "../worldStore";
 import { groupPlayed } from "../mastery/masteryModel";
 import { birdSize } from "../worldArt";
@@ -41,6 +42,8 @@ import { buildSignpost } from "../engine/fixtures/signpost";
 import { hitZone, toWorld } from "../engine/fixtures/common";
 import { buildReactive } from "../engine/reactive";
 import { startTutorial } from "../engine/tutorial";
+import { buildSecrets, SECRET_COUNT } from "../engine/secrets";
+import { startLife } from "../engine/life";
 import { QuestRunner } from "../engine/questRunner";
 import { sparkle, DEPTH } from "../engine/juice";
 
@@ -89,8 +92,17 @@ export default class WorldScene extends Phaser.Scene {
       const zone = ZONES[region.id];
       if (!zone) continue;
       this.buildZone(zone, region);
-      if (!this.discovered.has(region.id)) this.mists[region.id] = buildMist(this, region);
+      if (!this.discovered.has(region.id)) {
+        this.mists[region.id] = buildMist(this, region);
+        this.npcs[region.id]?.hideAll();
+      }
     }
+    this.secrets = buildSecrets(this, [...this.world.secrets], (id) => this.onSecretFound(id));
+    this.life = startLife(this, {
+      npcsFor: (id) => this.npcs[id],
+      currentRegion: () => this.currentRegionId,
+      isQuiet: () => !this.runner.isActive && !this.inputLocked && !this.avatar?.moving && this.time.now - this.lastInputAt > 4000 && this.discovered.has(this.currentRegionId),
+    });
 
     // Where to stand: last region if remembered and discovered, else the meadow.
     const startRegion = (this.world.lastRegion && this.discovered.has(this.world.lastRegion) && regionById(this.world.lastRegion)) || REGIONS[0];
@@ -307,6 +319,8 @@ export default class WorldScene extends Phaser.Scene {
     for (const [name, fn] of Object.entries(this.handlers ?? {})) this.game.events.off(name, fn);
     this.runner?.destroy();
     this.tutorial?.destroy();
+    this.secrets?.destroy();
+    this.life?.destroy();
     this.reactive?.destroy();
     destroyAmbient(this.ambient);
     this.cameraRig?.destroy();
@@ -406,7 +420,10 @@ export default class WorldScene extends Phaser.Scene {
     const mist = this.mists[region.id];
     this.time.delayedCall(200, () => mist?.reveal());
     this.toast(region.title, "A new place to explore!");
-    this.cameraRig.cinematic(region.x0 + 640, 880, 1500, 1500, () => {
+    // The birds of the new region fly in as the mist clears — a moment to
+    // watch, nothing to tap, then the camera comes home.
+    this.time.delayedCall(1500, () => this.npcs[region.id]?.flyInAll());
+    this.cameraRig.cinematic(region.x0 + 640, 880, 1500, 3600, () => {
       this.inputLocked = false;
       this.refreshMarkers();
     });
@@ -532,6 +549,13 @@ export default class WorldScene extends Phaser.Scene {
 
   // ------------------------------------------------------------- economy
 
+  onSecretFound(id) {
+    this.world = applySecretFound(this.world, id, 2);
+    this.save();
+    this.toast("You found a secret!", `${this.world.secrets.length} of ${SECRET_COUNT} on the island.`);
+    this.refreshPet();
+  }
+
   collectFeather(id) {
     this.world = applyCollectFeather(this.world, id);
     this.save();
@@ -566,6 +590,8 @@ export default class WorldScene extends Phaser.Scene {
       discovered: [...this.discovered],
       region: this.currentRegionId,
       quests: this.world.quests,
+      secrets: this.world.secrets,
+      secretCount: SECRET_COUNT,
     });
   }
 

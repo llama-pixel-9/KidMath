@@ -41,6 +41,7 @@ import {
   applyHarvestFlower,
   applyDiscover,
   applyLastRegion,
+  applySecretFound,
 } from "../world/worldStore";
 
 const publicDir = path.resolve(__dirname, "../../public");
@@ -193,6 +194,15 @@ describe("world store", () => {
     const picked = applyHarvestFlower(s, "2026-08-11");
     expect(picked.stars).toBe(2);
     expect(picked.seed).toBeNull();
+  });
+
+  it("pays a secret once and remembers it", () => {
+    let s = applyReceiveEgg(emptyWorldState(), 0);
+    s = applySecretFound(s, "hollowOwl");
+    expect(s.stars).toBe(2);
+    expect(s.secrets).toEqual(["hollowOwl"]);
+    expect(s.egg.warmth).toBe(2);
+    expect(applySecretFound(s, "hollowOwl")).toBe(s);
   });
 
   it("remembers discovered regions and the last one visited", () => {

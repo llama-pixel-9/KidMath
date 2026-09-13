@@ -151,6 +151,42 @@ export function buildNpcs(scene, zone, region, { onTap }) {
         }
         hearts(scene, p.x, p.y - npc.size * ds - 10, 2);
       },
+      /** Under the mist nobody is home yet. */
+      hide() {
+        sprite.setAlpha(0);
+        shadow.setAlpha(0);
+        this.hidden = true;
+      },
+      /** Arrive from the sky and land on the spot (region reveal). */
+      flyIn(delay = 0) {
+        if (!this.hidden) return;
+        this.hidden = false;
+        const dir = Math.random() < 0.5 ? -1 : 1;
+        const startX = p.x - dir * 700;
+        const startY = p.y - 520;
+        sprite.setPosition(startX, startY).setAlpha(1).setFlipX(dir < 0);
+        const q = { t: 0 };
+        scene.time.delayedCall(delay, () => {
+          scene.tweens.add({ targets: sprite, scaleY: scale * 0.72, duration: 100, yoyo: true, repeat: 14 });
+          scene.tweens.add({
+            targets: q,
+            t: 1,
+            duration: 1600,
+            ease: "Sine.easeOut",
+            onUpdate: () => {
+              sprite.x = startX + (p.x - startX) * q.t;
+              sprite.y = startY + (p.y - startY) * (q.t * q.t) - Math.sin(q.t * Math.PI) * 60;
+            },
+            onComplete: () => {
+              sprite.setPosition(p.x, p.y).setScale(scale).setAngle(0);
+              shadow.setAlpha(0.16);
+              squash(scene, sprite, scale, { amount: 0.14, duration: 110 });
+              sfx.land();
+              sfx.chirp(npc.voice ?? 0);
+            },
+          });
+        });
+      },
       destroy() {
         idle.remove();
         this.marker?.destroy();
@@ -166,6 +202,12 @@ export function buildNpcs(scene, zone, region, { onTap }) {
   return {
     list,
     byId: (id) => list.find((n) => n.def.id === id) ?? null,
+    hideAll() {
+      list.forEach((n) => n.hide());
+    },
+    flyInAll() {
+      list.forEach((n, i) => n.flyIn(400 + i * 650));
+    },
     /** Any bird within reach turns to watch the skylark go by. */
     watch(x) {
       for (const n of list) if (Math.abs(n.x - x) < 420) n.face(x);

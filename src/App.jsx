@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes, useParams } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes, useParams, useLocation } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { ThemeProvider } from "./ThemeContext";
@@ -26,6 +26,7 @@ import ProfilePicker from "./onboarding/ProfilePicker";
 import BillingPortalPage from "./BillingPortalPage";
 import AccountPage from "./account/AccountPage";
 import ParentReportPage from "./analytics/ParentReportPage";
+import WorldRoute from "./world/WorldRoute";
 import "./index.css";
 
 function PlayRoute() {
@@ -48,6 +49,8 @@ function WorksheetsRoute() {
 }
 
 function AppShell() {
+  // The world is full-bleed: no footer under the island.
+  const inWorld = useLocation().pathname === "/world";
   const { theme } = useTheme();
   return (
     // Column shell: the navbar takes its natural height and the routed page
@@ -67,6 +70,11 @@ function AppShell() {
         <Route path="/play/:mode" element={<PlayRoute />} />
         <Route path="/worksheets" element={<WorksheetsRoute />} />
         <Route path="/meadow" element={<MeadowPage />} />
+        {/* Skylark Island (open world): mounts only when VITE_WORLD_ENABLED
+            is on; otherwise redirects home like any unknown path. The shell
+            owns exactly this line plus the footer hide below — everything
+            else lives under src/world/. */}
+        <Route path="/world" element={<WorldRoute />} />
         <Route path="/about" element={<AboutPage />} />
         {/* Legal documents — one renderer, four routes. /privacy doubles as
             the COPPA §312.4(d) online notice; a prominent link to it must
@@ -101,7 +109,7 @@ function AppShell() {
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       </div>
-      <Footer />
+      {!inWorld && <Footer />}
       <Analytics />
       <SpeedInsights />
     </div>

@@ -1,0 +1,234 @@
+import Phaser from "phaser";
+import { depthScaleAt } from "../regions";
+import { birdSize } from "../worldArt";
+import { sfx } from "../worldAudio";
+import { questMarker, hearts, squash, sparkle } from "./juice";
+import { toWorld, hitZone } from "./fixtures/common";
+import { attachWings } from "./wings";
+
+/**
+ * The birds who live on the island. Each stands at its spot with a little
+ * idle life (breathing, the odd hop, a head tilt), wears a marker when it
+ * has a quest to offer, turns to face the skylark when it comes near, and
+ * remembers you once you've helped ("You fixed my bridge!").
+ */
+export function buildNpcs(scene, zone, region, { onTap }) {
+  const list = zone.npcs.map((npc) => {
+    const p = toWorld(region, npc);
+    const ds = depthScaleAt(p.y);
+    const { h } = birdSize(npc.bird);
+    const scale = (npc.size / h) * ds;
+    const sprite = scene.add.image(p.x, p.y, `bird-${npc.bird}`).setOrigin(0.5, 1).setScale(scale).setDepth(p.y);
+    const shadow = scene.add.ellipse(p.x, p.y + 2, npc.size * 0.55 * ds, 12 * ds, 0x14231f, 0.16).setDepth(p.y - 1);
+
+    // Breathing.
+    scene.tweens.add({ targets: sprite, scaleY: scale * 1.03, duration: 1500 + Math.random() * 600, yoyo: true, repeat: -1, ease: "Sine.easeInOut" });
+    // Wings, tinted from this bird's own colours; synced by the scene each frame.
+    const wings = attachWings(scene, sprite, { key: `bird-${npc.bird}` });
+    scene.wingRigs?.add(wings);
+    // Idle: hop, tilt, or stretch a wing every few seconds.
+    const idle = scene.time.addEvent({
+      delay: Phaser.Math.Between(3500, 7000),
+      loop: true,
+      callback: () => {
+        const r = Math.random();
+        if (r < 0.35) {
+          scene.tweens.add({ targets: sprite, y: p.y - 14, duration: 150, yoyo: true, ease: "Quad.easeOut" });
+        } else if (r < 0.65) {
+          scene.tweens.add({ targets: sprite, angle: -5, duration: 260, yoyo: true, hold: 260, ease: "Sine.easeInOut" });
+        } else {
+          wings.stretch();
+        }
+      },
+    });
+
+    const handle = {
+      def: npc,
+      x: p.x,
+      y: p.y,
+      sprite,
+      shadow,
+      wings,
+      marker: null,
+      /** Where the skylark stands to talk: just in front, on the near side. */
+      talkSpot() {
+        return { x: p.x - 120, y: Math.min(1120, p.y + 26) };
+      },
+      setMarker(on) {
+        if (on && !this.marker) this.marker = questMarker(scene, p.x, p.y - npc.size * ds - 34);
+        if (!on && this.marker) {
+          this.marker.destroy();
+          this.marker = null;
+        }
+      },
+      face(x) {
+        sprite.setFlipX(x < p.x);
+      },
+      /** A happy hop with hearts (thanks, celebration). */
+      cheer() {
+        hearts(scene, p.x, p.y - npc.size * ds - 10, 3);
+        scene.tweens.add({ targets: sprite, y: p.y - 30, duration: 190, yoyo: true, repeat: 1, ease: "Quad.easeOut" });
+        squash(scene, sprite, scale, { amount: 0.1, duration: 100 });
+        wings.flap(8);
+        scene.time.delayedCall(800, () => wings.rest());
+        sfx.happy();
+      },
+      /** Turn toward the speaker and chirp. */
+      greet(fromX) {
+        this.face(fromX);
+        scene.tweens.add({ targets: sprite, y: p.y - 12, duration: 140, yoyo: true, ease: "Quad.easeOut" });
+        sfx.chirp(npc.voice ?? 0);
+      },
+      /** "Come here!": two hops toward the skylark, a chirp, two hops back. */
+      beckon(towardX) {
+        if (this.beckoning) return;
+        this.beckoning = true;
+        const dir = Math.sign(towardX - p.x) || -1;
+        this.face(towardX);
+        const hop = (toX, onDone) =>
+          scene.tweens.add({
+            targets: sprite,
+            x: toX,
+            duration: 220,
+            ease: "Sine.easeInOut",
+            onUpdate: (tw) => {
+              sprite.y = p.y - Math.sin(tw.progress * Math.PI) * 26;
+            },
+            onComplete: () => {
+              sprite.y = p.y;
+              onDone?.();
+            },
+          });
+        hop(p.x + dir * 55, () =>
+          hop(p.x + dir * 110, () => {
+            sfx.chirp(npc.voice ?? 0);
+            scene.tweens.add({ targets: sprite, angle: dir * -8, duration: 160, yoyo: true, repeat: 1 });
+            scene.time.delayedCall(700, () => {
+              this.face(p.x + dir * -200);
+              hop(p.x + dir * 55, () =>
+                hop(p.x, () => {
+                  this.face(towardX);
+                  this.beckoning = false;
+                }),
+              );
+            });
+          }),
+        );
+      },
+      /** A species-flavoured show-off, for birds you've already helped. */
+      flourish() {
+        const id = npc.bird;
+        const dance = `bird-${id}-dance`;
+        if (id === "downyWoodpecker") {
+          sfx.peck(6);
+          scene.tweens.add({ targets: sprite, angle: -14, duration: 70, yoyo: true, repeat: 5 });
+        } else if (id === "hummingbird") {
+          scene.tweens.add({ targets: sprite, y: p.y - 40, duration: 300, ease: "Quad.easeOut", yoyo: true, hold: 900 });
+          scene.tweens.add({ targets: sprite, angle: 4, duration: 60, yoyo: true, repeat: 20 });
+          sfx.chirp(9);
+        } else if (id === "snowyOwl" || id === "barnOwl") {
+          [0, 250, 500, 750].forEach((d) => scene.time.delayedCall(d, () => sprite.setFlipX(!sprite.flipX)));
+          scene.time.delayedCall(1000, () => this.face(scene.avatar?.x ?? p.x));
+          sfx.chirp(1);
+        } else if (id === "puffin") {
+          scene.tweens.add({ targets: sprite, angle: 9, duration: 150, yoyo: true, repeat: 5, ease: "Sine.easeInOut" });
+          scene.tweens.add({ targets: sprite, x: p.x + 24, duration: 450, yoyo: true, repeat: 1, ease: "Sine.easeInOut" });
+          sfx.chirp(5);
+        } else if (id === "kingfisher") {
+          sfx.takeoff();
+          wings.flap(9);
+          scene.time.delayedCall(900, () => wings.rest());
+          scene.tweens.add({
+            targets: sprite,
+            y: p.y - 140,
+            duration: 380,
+            ease: "Quad.easeOut",
+            yoyo: true,
+            hold: 120,
+            onComplete: () => {
+              sparkle(scene, p.x, p.y, { count: 12, tint: 0xe8f7ff, radius: 36 });
+              sfx.plop();
+            },
+          });
+        } else if (scene.textures.exists(dance)) {
+          const key = sprite.texture.key;
+          const sc = sprite.scaleX;
+          sprite.setTexture(dance).setScale((npc.size / sprite.height) * ds);
+          scene.tweens.add({ targets: sprite, angle: 6, duration: 220, yoyo: true, repeat: 3, ease: "Sine.easeInOut" });
+          scene.time.delayedCall(1400, () => sprite.setTexture(key).setScale(sc));
+          sfx.happy();
+        } else {
+          scene.tweens.add({ targets: sprite, y: p.y - 26, duration: 170, yoyo: true, repeat: 3, ease: "Quad.easeOut" });
+          sfx.chirp(npc.voice ?? 0);
+        }
+        hearts(scene, p.x, p.y - npc.size * ds - 10, 2);
+      },
+      /** Under the mist nobody is home yet. */
+      hide() {
+        sprite.setAlpha(0);
+        shadow.setAlpha(0);
+        this.hidden = true;
+      },
+      /** Arrive from the sky and land on the spot (region reveal). */
+      flyIn(delay = 0) {
+        if (!this.hidden) return;
+        this.hidden = false;
+        const dir = Math.random() < 0.5 ? -1 : 1;
+        const startX = p.x - dir * 700;
+        const startY = p.y - 520;
+        sprite.setPosition(startX, startY).setAlpha(1).setFlipX(dir < 0);
+        const q = { t: 0 };
+        scene.time.delayedCall(delay, () => {
+          wings.flap(7);
+          scene.tweens.add({
+            targets: q,
+            t: 1,
+            duration: 1600,
+            ease: "Sine.easeOut",
+            onUpdate: () => {
+              sprite.x = startX + (p.x - startX) * q.t;
+              sprite.y = startY + (p.y - startY) * (q.t * q.t) - Math.sin(q.t * Math.PI) * 60;
+            },
+            onComplete: () => {
+              sprite.setPosition(p.x, p.y).setScale(scale).setAngle(0);
+              shadow.setAlpha(0.16);
+              wings.rest();
+              squash(scene, sprite, scale, { amount: 0.14, duration: 110 });
+              sfx.land();
+              sfx.chirp(npc.voice ?? 0);
+            },
+          });
+        });
+      },
+      destroy() {
+        idle.remove();
+        this.marker?.destroy();
+        scene.wingRigs?.delete(wings);
+        wings.destroy();
+        sprite.destroy();
+        shadow.destroy();
+      },
+    };
+
+    hitZone(scene, p.x, p.y - (npc.size * ds) / 2, npc.size * ds * 1.1, npc.size * ds * 1.15, () => onTap?.(handle));
+    return handle;
+  });
+
+  return {
+    list,
+    byId: (id) => list.find((n) => n.def.id === id) ?? null,
+    hideAll() {
+      list.forEach((n) => n.hide());
+    },
+    flyInAll() {
+      list.forEach((n, i) => n.flyIn(400 + i * 650));
+    },
+    /** Any bird within reach turns to watch the skylark go by. */
+    watch(x) {
+      for (const n of list) if (Math.abs(n.x - x) < 420) n.face(x);
+    },
+    destroy() {
+      list.forEach((n) => n.destroy());
+    },
+  };
+}

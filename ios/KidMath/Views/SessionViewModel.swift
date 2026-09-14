@@ -51,6 +51,24 @@ final class SessionViewModel: ObservableObject {
     @Published private(set) var isFledgingRun = false
 
     private let engine: EngineBridge
+    /// The practice log (parent report). One record per flight, opened with
+    /// the first question, closed at the end card — or saved as "partial" if
+    /// the kid leaves early with three or more answers in it.
+    private let practiceLog: PracticeLog?
+    private var record: PracticeLog.Record?
+    /// Word Detective input: first-try wins on language-trap structures
+    /// (shared rule isLanguageTrapWin), counted per flight like the web.
+    private var trapWins = 0
+    /// Teach-don't-grade (GamFlags.secondChance): after a first miss on a
+    /// fresh question the card shows a model instead of the answer and the
+    /// kid gets one more try. The engine already recorded the miss; the
+    /// second try is UI-only — scored here, logged as a retry, never
+    /// re-counted. Mirrors MathExplorer's scaffold branch.
+    @Published private(set) var scaffold: [String: Any]?
+    @Published private(set) var scaffoldHint = ""
+    /// True during the short "not quite" beat before the scaffold appears.
+    @Published private(set) var secondChancePending = false
+    private let secondChanceHold: Duration = .milliseconds(500)
     private let progressStore: ProgressStore
     private let engagementStore: EngagementStore
 
@@ -58,6 +76,10 @@ final class SessionViewModel: ObservableObject {
     /// Test-only: lets XCTest reach the live engine session (e.g. to force
     /// mastery via EngineBridge.forceHighMastery). Never used by the app.
     var engineSessionForTesting: EngineBridge.Session? { session }
+
+    /// Drawable spec for an areaPerimeter question (nil for other modes or
+    /// when the item has nothing to draw) — see AreaFigureView.
+    var areaFigureSpec: [String: Any]? { engine.areaFigureSpec(question: question) }
     #endif
     private let bankService: BankService?
     private var session: EngineBridge.Session?
@@ -72,8 +94,10 @@ final class SessionViewModel: ObservableObject {
         sessionSize: Int = 10,
         correctHold: Duration = .milliseconds(1200),
         wrongHold: Duration = .milliseconds(2000),
-        engagementStore: EngagementStore = EngagementStore()
+        engagementStore: EngagementStore = EngagementStore(),
+        practiceLog: PracticeLog? = nil
     ) {
+        self.practiceLog = practiceLog
         self.modeId = modeId
         self.engine = engine
         self.progressStore = progressStore
@@ -95,6 +119,7 @@ final class SessionViewModel: ObservableObject {
                 sessionSize: sessionSize,
                 options: [
                     "savedProgress": savedProgress,
+                    "ladderV2": GamFlags.ladderV2,
                     // §03: with the flag on, promotion signals nominate
                     // instead of leveling mid-flight (shared engine rule).
                     "fledging": GamFlags.fledging,
@@ -137,6 +162,7 @@ final class SessionViewModel: ObservableObject {
                     "fledging": true,
                     "challengeSubskills": nomination?["weakSubskills"] as? [String] ?? [String](),
                     "savedProgress": ["level": level],
+                    "ladderV2": GamFlags.ladderV2,
                 ]
             )
             self.session = challenge
@@ -185,6 +211,11 @@ final class SessionViewModel: ObservableObject {
 
     private func loadNextQuestion() {
         guard let session else { return }
+        if record == nil {
+            record = practiceLog?.open(mode: modeId, level: level, kind: isFledgingRun ? "fledging" : "normal")
+        }
+        scaffold = nil
+        scaffoldHint = ""
         do {
             let (question, isRetry) = try engine.nextQuestion(in: session)
             self.question = question
@@ -209,6 +240,26 @@ final class SessionViewModel: ObservableObject {
         locked = true
         do {
             let responseTimeMs = Int(Date().timeIntervalSince(questionStart) * 1000)
+
+            // Second attempt after a scaffold.
+            if scaffold != nil {
+                let correct = try engine.checkAnswer(question: question, submitted: value)
+                record = practiceLog?.append(
+                    record, question: question, submitted: value, correct: correct,
+                    wasRetry: true, responseTimeMs: responseTimeMs, level: level
+                )
+                scaffold = nil
+                scaffoldHint = ""
+                phase = .feedback(correct: correct)
+                if !correct { revealAnswer = question["answer"] }
+                if correct { SoundPlayer.shared.playCorrect() } else { SoundPlayer.shared.playWrong() }
+                Task { [weak self] in
+                    try? await Task.sleep(for: correctHold)
+                    await self?.advance()
+                }
+                return
+            }
+
             let outcome = try engine.recordAnswer(
                 in: session,
                 question: question,
@@ -217,6 +268,37 @@ final class SessionViewModel: ObservableObject {
                 wasRetry: isRetry
             )
             phase = .feedback(correct: outcome.correct)
+            if outcome.correct, (try? engine.call("isLanguageTrapWin", [question, isRetry]))?.toBool() == true {
+                trapWins += 1
+            }
+            record = practiceLog?.append(
+                record, question: question, submitted: value, correct: outcome.correct,
+                wasRetry: isRetry, responseTimeMs: responseTimeMs, level: level
+            )
+            level = outcome.newLevel
+
+            // First miss on a fresh question: show a model and allow one more
+            // try (no reveal). The miss is already in the mistake bank.
+            if !outcome.correct, GamFlags.secondChance, !isRetry, !isFledgingRun {
+                secondChancePending = true
+                SoundPlayer.shared.playWrong()
+                var model = question
+                model["mode"] = modeId
+                let built = engine.scaffoldFor(question: model)
+                Task { [weak self] in
+                    guard let self else { return }
+                    try? await Task.sleep(for: secondChanceHold)
+                    self.secondChancePending = false
+                    self.scaffold = built
+                    self.scaffoldHint = self.engine.scaffoldHint(built)
+                    self.questionKey += 1 // re-keys the widget, not the card
+                    self.questionStart = Date()
+                    self.phase = .question
+                    self.locked = false
+                }
+                return
+            }
+
             if !outcome.correct { revealAnswer = question["answer"] }
             if outcome.levelChanged, outcome.newLevel > level {
                 showLevelUp = true
@@ -234,7 +316,6 @@ final class SessionViewModel: ObservableObject {
             } else {
                 SoundPlayer.shared.playWrong()
             }
-            level = outcome.newLevel
 
             Task { [weak self] in
                 try? await Task.sleep(for: outcome.correct ? correctHold : wrongHold)
@@ -277,6 +358,8 @@ final class SessionViewModel: ObservableObject {
                 "recentBankItemIds": snapshot["recentBankItemIds"] ?? [String](),
             ])
             level = newLevel
+            // Practice log first and independent of the progress save.
+            await closeRecord(session: snapshot, starsEarned: 0, levelEnd: newLevel)
             if passed { SoundPlayer.shared.playLevelUp() }
             phase = .fledgingResult(passed: passed, newLevel: newLevel)
             return
@@ -315,11 +398,19 @@ final class SessionViewModel: ObservableObject {
             "recentBankItemIds": snapshot["recentBankItemIds"] ?? [String](),
         ]
         if let payout { data["starsEarned"] = payout.total }
+        await closeRecord(session: snapshot, starsEarned: starsEarned, levelEnd: ProgressStore.int(levelToSave, default: level))
         await progressStore.save(mode: modeId, data: data)
 
         if let payout {
             flightPayout = payout
-            flightSummary = engagementStore.recordSessionEnd(starsEarned: starsEarned)
+            let facts = EngagementStore.SessionFacts(
+                perfect: questionsAnswered > 0 && firstTryCorrect == questionsAnswered,
+                comebacks: ProgressStore.int(snapshot["retriesMastered"]),
+                trapWins: trapWins,
+                levelReached: ProgressStore.int(levelToSave, default: level)
+            )
+            trapWins = 0
+            flightSummary = engagementStore.recordSessionEnd(starsEarned: starsEarned, facts: facts)
         }
 
         let progress = await progressStore.load(mode: modeId)
@@ -328,5 +419,29 @@ final class SessionViewModel: ObservableObject {
             starsEarned: starsEarned,
             lifetimeStars: ProgressStore.int(progress["lifetimeStars"])
         )
+    }
+
+    // MARK: - Practice log
+
+    private func closeRecord(session: [String: Any], starsEarned: Int, levelEnd: Int) async {
+        guard let practiceLog, let open = record else { return }
+        let closed = practiceLog.close(open, session: session, starsEarned: starsEarned, levelEnd: levelEnd)
+        record = closed
+        await practiceLog.save(closed)
+    }
+
+    /// A flight the kid leaves early (back to the nest) used to vanish from
+    /// the parent report. With three or more answers it is saved as a
+    /// "partial" record — minutes and questions are real practice; level
+    /// bookkeeping stays untouched. Mirrors MathExplorer's pagehide handler.
+    func savePartialIfAbandoned() {
+        guard let practiceLog, var open = record,
+              open["endedAt"] == nil || open["endedAt"] is NSNull,
+              (open["attempts"] as? [Any])?.count ?? 0 >= 3 else { return }
+        record = nil
+        open["kind"] = "partial"
+        let lastLevel = ((open["attempts"] as? [[String: Any]])?.last?["level"] as? NSNumber)?.intValue ?? level
+        let closed = practiceLog.close(open, session: nil, starsEarned: 0, levelEnd: lastLevel)
+        Task { await practiceLog.save(closed) }
     }
 }

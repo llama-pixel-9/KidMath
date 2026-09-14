@@ -3,6 +3,7 @@ import termsMd from "./terms-of-service.md?raw";
 import securityMd from "./vulnerability-disclosure.md?raw";
 import consentMd from "./parental-consent-notice.md?raw";
 import { fillTokens } from "./entity.js";
+import { LEGAL_VERSIONS } from "./versions.js";
 
 /**
  * The legal document registry.
@@ -24,7 +25,7 @@ export const LEGAL_DOCS = {
   privacy: {
     slug: "privacy",
     title: "Privacy Policy",
-    version: "2026-08-06",
+    version: LEGAL_VERSIONS["privacy"],
     markdown: privacyMd,
     // Doubles as the COPPA online notice under 16 CFR §312.4(d). A link to it
     // must appear on the home screen AND at every point where personal
@@ -34,19 +35,19 @@ export const LEGAL_DOCS = {
   terms: {
     slug: "terms",
     title: "Terms of Service",
-    version: "2026-08-05",
+    version: LEGAL_VERSIONS["terms"],
     markdown: termsMd,
   },
   security: {
     slug: "security",
     title: "Vulnerability Disclosure Policy",
-    version: "2026-08-05",
+    version: LEGAL_VERSIONS["security"],
     markdown: securityMd,
   },
   "parental-consent": {
     slug: "parental-consent",
     title: "Parental Consent Notice",
-    version: "2026-08-06",
+    version: LEGAL_VERSIONS["parental-consent"],
     markdown: consentMd,
     /**
      * The DIRECT notice under 16 CFR §312.4(c)(1) — a distinct legal
@@ -66,6 +67,16 @@ export const LEGAL_DOCS = {
      *   (v)   hyperlink to the online notice .................. §7
      *   (vi)  means of providing verifiable consent ........... §4
      *   (vii) deletion of contact info if no consent .......... §5
+     *
+     * Consent method is "email plus" (§312.5(b)(2)(viii)): the parent's reply,
+     * followed by a confirmatory message carrying the revocation notice. Two
+     * things must remain true or the method becomes unavailable:
+     *   1. We must not "disclose" children's personal information as §312.2
+     *      defines it. Service providers supporting internal operations are
+     *      carved out (Supabase, Vercel, Resend), but ANY advertising SDK,
+     *      marketing pixel, or analytics tool receiving children's data ends
+     *      our eligibility immediately.
+     *   2. The confirmatory email must carry the revocation notice.
      */
   },
 };

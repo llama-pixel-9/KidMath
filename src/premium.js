@@ -1,4 +1,5 @@
 import { supabase } from "./supabaseClient";
+import { normalizePlanPricing } from "./legal/disclosures";
 
 /**
  * Premium split (pricing decision 2026-07-21; free tier extended to iOS
@@ -56,6 +57,33 @@ export async function fetchEntitlement(userId) {
   return data;
 }
 
+let pricingPromise = null;
+
+/**
+ * Load the two plan prices from Stripe via the `stripe-prices` Edge Function
+ * and normalize them for the paywall + disclosure. Memoized per page load;
+ * a failure clears the memo so the next call retries. Never returns a
+ * guessed price — on failure it throws and the caller keeps purchase buttons
+ * disabled.
+ */
+export function fetchPlanPricing() {
+  if (!supabase) return Promise.reject(new Error("Supabase not configured"));
+  if (!pricingPromise) {
+    pricingPromise = supabase.functions
+      .invoke("stripe-prices", { method: "GET" })
+      .then(({ data, error }) => {
+        if (error) throw new Error(error.message || "Could not load prices");
+        if (data?.error) throw new Error(data.error);
+        return normalizePlanPricing(data);
+      })
+      .catch((e) => {
+        pricingPromise = null;
+        throw e;
+      });
+  }
+  return pricingPromise;
+}
+
 /**
  * Start a Stripe Checkout session (via the stripe-checkout Edge Function)
  * and send the browser there. `plan` is "annual" or "monthly".
@@ -66,9 +94,26 @@ export async function startCheckout(plan) {
     body: { plan, origin: window.location.origin },
   });
   if (error || !data?.url) {
-    throw new Error(error?.message || "Could not start checkout");
+    throw new Error(await functionErrorMessage(error, "Could not start checkout"));
   }
   window.location.assign(data.url);
+}
+
+/**
+ * supabase-js collapses any non-2xx into "Edge Function returned a non-2xx
+ * status code" and hides the body. Our functions always answer `{ error }`,
+ * so surface that — it is the difference between "no subscription found" and
+ * a Stripe configuration error.
+ */
+async function functionErrorMessage(error, fallback) {
+  if (!error) return fallback;
+  try {
+    const body = await error.context?.json?.();
+    if (body?.error) return String(body.error);
+  } catch {
+    // body wasn't JSON — fall through to the generic message
+  }
+  return error.message || fallback;
 }
 
 /**
@@ -82,7 +127,7 @@ export async function openBillingPortal() {
     body: { origin: window.location.origin },
   });
   if (error || !data?.url) {
-    throw new Error(error?.message || "Could not open the billing portal");
+    throw new Error(await functionErrorMessage(error, "Could not open the billing portal"));
   }
   window.location.assign(data.url);
 }

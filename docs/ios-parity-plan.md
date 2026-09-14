@@ -1,0 +1,58 @@
+# iOS ↔ web parity plan
+
+Audit date: **2026-09-13**. Scope: bring the native app to feature parity with
+the web app. **Out of scope:** the open-world / Skylark Island feature.
+
+The iOS port tracked the web faithfully until 2026-08-24 (all 25 modes
+registered, per-kid progress, meadow/fledging/first-flight, compliance
+E1–E7, single larkit theme, free tier, auto-renewal disclosure). Nothing in
+`ios/` changed for the next 20 days while `src/` took 22 commits — and `main`
+did not compile for iOS in that window (fixed in PR #101). There is no iOS
+CI; see the compile-before-merge rule in CLAUDE.md.
+
+Status legend: ☐ open · ◐ partial · ☑ done (PR).
+
+## Ranked gaps
+
+| # | Gap | Impact | Size | Status |
+|---|---|---|---|---|
+| 1 | **COPPA consent flow.** `addKid` now gates on `hasParentalConsent` and returns `.pendingConsent` after invoking `request-consent` with the notice from the engine bundle (`KidMath.parentalConsentNotice`, one source with the web); `ConsentPendingView` = web ConsentPendingPanel (sent-at, 60s resend cooldown, "I've confirmed" check). `updateKid` + parent-language 4-kid message added. **End-to-end on a signed-in simulator still to be run by Sai.** | critical | M | ☑ PR ios/parity-3 |
+| 2 | **Item-bank reads don't paginate** (`SupabaseService.fetchModeItemRows`) — fractions (2,787), time (1,852), placeValueDiscs (1,406) clipped to 1,000 rows. CLAUDE.md hard rule. | critical | S | ☑ PR ios/parity-1 |
+| 3 | **Missing widgets/figures.** `tenFrame` answer widget, figures `pictograph`, `tallyChart`, `linePlot`, `areaFigure` (spec shared via `KidMath.areaFigureSpec`), `SequenceNumberLine`. `IOS_MIRRORED_FIGURES` updated. `FigureRenderTests` snapshot every shape (`TEST_RUNNER_KIDMATH_FIGURE_SNAPSHOT_DIR=… ` writes PNGs). Still open: `display.numberLine.marks` under story prompts (rare). | high | M | ☑ PR ios/parity-2 |
+| 4 | **Practice log + parent report.** `PracticeLog.swift` drives the shared record (`KidMath.openSessionRecord/appendAttempt/closeSessionRecord`, pure module `src/analytics/sessionRecord.js` split out of sessionLog.js), mirrors locally under `kidmath-sessions[:kid]`, upserts `practice_sessions` (paginated reads), saves "partial" on early exit (≥3 answers). `ParentReportView` over the shared `buildReport` + `reportHeadline`, in Settings → For grown-ups. `PracticeLogTests`. | high | M | ☑ PR ios/parity-4 |
+| 5 | **Work space + hint panes** (web PR #93). `hintFor` not on the bridge; no Scratchpad (PencilKit), no HintPane, no SidePane for iPad. | high | L | ☐ |
+| 6 | **Flight-log worksheets.** `FlightLogPDF.swift` renders the shared `generateFlightLog` draw on Letter pages (header lockup + scope, name/date, stacked 3-up or prompts 2-up, inline 2-up, word problems, footer; answer key as its own sheet). `WorksheetView` = per-level picker grouped like the web, 1–3 logs, word-problem toggle on the web's `kidmath-allow-word-problems` key. Bridge: `generateFlightLog`, `flightLogScope`, `printOptionBank`, `isYesNoJudgment`. Old `generateWorksheetSet` renderer removed. | med | M | ☑ PR ios/parity-5 |
+| 7 | **Paywall literals** — `$54.99`, `49% OFF`, `$4.58/mo`, "22 modes, Grades 1-4" hardcoded; launch price is $39.99. | med | S | ☑ PR ios/parity-1 (derived from `Product.price`, fail-closed) |
+| 8 | **Badges, stickers, engagement bar, daily goal.** The web's rules moved to the pure `src/engagement/engagementRules.js` (+ `LANGUAGE_TRAP_STRUCTURES`) and are on the bridge; `EngagementStore.recordSessionEnd(starsEarned:facts:)` applies the shared `applySessionEnd` (badges, goal crossing, facts), `buySticker` the shared `applySpend`; catalogues from `badges()`/`stickers()`. `EngagementBarView` on Home, `StickerBookView`, end-card badge + goal rows. `EngagementRulesTests`. Still open: journey map, grown-ups panel, DepartureFlight animation (cosmetic). | med | M | ◐ PR ios/parity-7 |
+| 9 | **Teach-don't-grade.** Second chance: first miss shows the shared `scaffoldFor` model (`ScaffoldView`: dots/array/strip/number line) + `scaffoldHint`, one more try scored by `checkAnswer`, logged as a retry (web's scaffold branch). Read-aloud: `SpeechService` (AVSpeechSynthesizer) over the shared `speakableText` (`src/speakable.js` split from speech.js); speaker button + auto-read for K–1. Mastery line on mode cards via shared `masterySummary`/`masteryLine` + `modeSubskills`. `TeachDontGradeTests`. | med | M | ☑ PR ios/parity-8 |
+| 10 | **Grade-aware Home + kid switching/editing.** `GradeSeed.groupsForGrade/quickStart/gradeFit/gradeWork` mirror HomePage.jsx; Home shows in-grade groups first, "Explore more" folds bigger-kid topics, Quick Start, a kid chip opens `ProfilePickerView`, set-up-a-profile prompt when signed in with no active kid. Settings: Edit (`KidEditSheet` → `updateKid`) and "Switch who's playing". `GradeAwareHomeTests`. | med | M | ☑ PR ios/parity-6 |
+| 11 | **Meadow art** — 59 WebP assets on web; iOS still draws placeholder shapes (`MeadowView.swift` "rough sketch"). | med | M | ☐ |
+| 12 | **Ladder v2 unreachable** — `GamFlags` lacked `ladderV2`/`secondChance`/`readAloud`/`birdStore`; `GamFlags.all` defaulted OFF while web prod has `VITE_GAM_ALL=true`; `createAdaptiveSession` never got `options.ladderV2`; level-up copy capped at 10. | med | S | ☑ PR ios/parity-1 |
+| 13 | **Allow-word-problems preference** — local toggle on the flight-log screen (web key). Cloud `user_preferences` sync and passing it into sessions still open. | low | S | ◐ PR ios/parity-5 |
+| 14 | **Kid profiles service** — `updateKid`, `hasParentalConsent`, `requestParentalConsent`, kid-limit message. | — | — | ☑ PR ios/parity-3 |
+| 15 | **Branding leftovers** — `CFBundleName` = KidMath (shows in iOS Settings), `kidmath://` URL scheme (OAuth sheet says "open KidMath"), bundle id `com.kidmath.app` (must change before ASC anyway), `ios/README.md` stale. | low | S–M | ☐ (bundle id waits on Apple) |
+| 16 | **Telemetry / diagnostics** — web freeze-detection has no native analogue (MetricKit). Low priority. | low | M | ☐ |
+| 17 | **iOS CI** — none. Compile-before-merge rule added to CLAUDE.md; a GitHub Actions macOS job is the real fix. | — | S | ☐ |
+
+## Already at parity (don't redo)
+
+Per-kid progress (`ProgressStore`, `SupabaseService` kid_id filters), engagement
+blob + fledging + flight report + meadow logic (roster/zones/perches from the
+engine), grade seeding (`GradeSeed.swift`), auto-renewal disclosure text,
+free-tier ids, `rowIsActive`, theme/fonts/sounds/calm mode/reduce-motion,
+account review + per-child delete + full delete, billing via App Store.
+
+## Bridge additions needed (`src/engine/nativeEntry.js`)
+
+`hintFor` (#5). Done: `scaffoldFor`/`scaffoldHint`/`speakableText`/`masterySummary`/`modeSubskills` (#9), engagement rules + catalogues (#8), `generateFlightLog`/`flightLogScope`
+(#6), `buildReport`/`reportHeadline` + the session record (#4),
+`parentalConsentNotice` (#1), `areaFigureSpec` (#3 — the file moved to
+`src/figures/` because the bundle guard rejects anything under
+`components/`; pure modules that iOS needs live outside `components/`).
+Keep the bridge dependency-free (no progressStore/supabaseClient).
+
+## Order of work
+
+parity-1 (☑ #2 #7 #12) → parity-2 (☑ #3) → parity-3 (☑ #1 #14) → parity-4 (☑ #4) →
+parity-5 (☑ #6) → parity-6 (☑ #10) → parity-7 (◐ #8) → parity-8 (☑ #9) →
+#5 hints/work space → #11 meadow art → #13 #15 #16 #17.

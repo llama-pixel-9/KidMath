@@ -6,6 +6,20 @@ import XCTest
 @MainActor
 final class SessionFlowTests: XCTestCase {
 
+    // These tests assert the BASE economy (one star per first-try-correct
+    // answer). GamFlags.all is on by default since parity-1 (matching web
+    // prod), which adds Flight Report bonuses — FlightReportTests cover
+    // those. Pin the base economy here.
+    override func setUp() {
+        super.setUp()
+        UserDefaults.standard.set(false, forKey: "gamAll")
+    }
+
+    override func tearDown() {
+        UserDefaults.standard.removeObject(forKey: "gamAll")
+        super.tearDown()
+    }
+
     private func waitFor(_ condition: @escaping () -> Bool, timeout: TimeInterval = 5) async throws {
         let deadline = Date().addingTimeInterval(timeout)
         while !condition() {

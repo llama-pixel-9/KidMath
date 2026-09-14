@@ -14,6 +14,8 @@ struct SettingsView: View {
     @State private var showGate = false
     @State private var gatePendingAction: (() -> Void)?
     @State private var kidToDelete: KidProfile?
+    @State private var kidToEdit: KidProfile?
+    @State private var showProfilePicker = false
     @State private var confirmAccountDelete = false
     @State private var deletionMessage = ""
     @State private var deleting = false
@@ -21,6 +23,7 @@ struct SettingsView: View {
     var body: some View {
         NavigationStack {
             List {
+                grownUpsSection
                 subscriptionSection
                 soundSection
                 accountSection
@@ -39,6 +42,17 @@ struct SettingsView: View {
         }
     }
 
+    /// The parent report — same practice log and model as larkit.io/report.
+    private var grownUpsSection: some View {
+        Section("For grown-ups") {
+            NavigationLink {
+                ParentReportView()
+            } label: {
+                Label("Progress report", systemImage: "chart.bar.doc.horizontal")
+            }
+        }
+    }
+
     private var subscriptionSection: some View {
         Section("Subscription") {
             if app.store.hasPremium {
@@ -48,7 +62,7 @@ struct SettingsView: View {
                     .font(.footnote)
                     .foregroundStyle(theme.textSecondary)
             } else {
-                Text("Free trial available — all 22 modes, flight logs, and sync.")
+                Text("Free trial available — all 25 games, K–5, flight logs, and sync.")
                     .font(.footnote)
                     .foregroundStyle(theme.textSecondary)
                 Button("Restore purchases") {
@@ -149,16 +163,30 @@ struct SettingsView: View {
         Section {
             ForEach(app.kidProfiles.kids) { kid in
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(kid.firstName)
+                    HStack {
+                        Text(kid.firstName)
+                        if app.kidProfiles.activeKidId == kid.id.uuidString {
+                            Text("playing now").font(.caption.weight(.bold)).foregroundStyle(Theme.teal)
+                        }
+                    }
                     Text("Age \(kid.age) · Grade \(kid.grade) — all we store about them")
                         .font(.footnote)
                         .foregroundStyle(theme.textSecondary)
-                    Button("Delete \(kid.firstName)'s profile", role: .destructive) {
-                        guardGate { kidToDelete = kid }
+                    HStack(spacing: 16) {
+                        // Grade changes every September: routine maintenance
+                        // under the existing consent, not new collection.
+                        Button("Edit") { kidToEdit = kid }
+                            .font(.footnote.weight(.semibold))
+                        Button("Delete \(kid.firstName)'s profile", role: .destructive) {
+                            guardGate { kidToDelete = kid }
+                        }
+                        .font(.footnote.weight(.semibold))
+                        .disabled(deleting)
                     }
-                    .font(.footnote.weight(.semibold))
-                    .disabled(deleting)
                 }
+            }
+            if app.kidProfiles.kids.count > 1 {
+                Button("Switch who's playing") { showProfilePicker = true }
             }
             Button("Delete my account and all data", role: .destructive) {
                 guardGate { confirmAccountDelete = true }
@@ -172,6 +200,10 @@ struct SettingsView: View {
         } footer: {
             Text("Deletion is permanent: profiles and practice progress are removed from our servers, not archived. Progress syncs at the family level; deleting the account removes all of it.")
         }
+        .sheet(item: $kidToEdit) { kid in
+            KidEditSheet(kid: kid)
+        }
+        .fullScreenCover(isPresented: $showProfilePicker) { ProfilePickerView() }
         .confirmationDialog(
             "Delete \(kidToDelete?.firstName ?? "this kid")'s profile?",
             isPresented: Binding(get: { kidToDelete != nil }, set: { if !$0 { kidToDelete = nil } }),
@@ -265,5 +297,75 @@ struct SettingsView: View {
             await app.progressStore.mergeLocalToCloud(userId: userId)
         }
         await app.refreshModeLevels()
+    }
+}
+
+
+/// Edit a kid's first name, age and grade — the same three fields the
+/// consent covers (web: AccountPage KidEditForm → updateKid).
+struct KidEditSheet: View {
+    @EnvironmentObject private var app: AppModel
+    @Environment(\.dismiss) private var dismiss
+    let kid: KidProfile
+
+    @State private var firstName: String
+    @State private var age: String
+    @State private var grade: String
+    @State private var busy = false
+    @State private var error = ""
+
+    init(kid: KidProfile) {
+        self.kid = kid
+        _firstName = State(initialValue: kid.firstName)
+        _age = State(initialValue: kid.age)
+        _grade = State(initialValue: kid.grade)
+    }
+
+    var body: some View {
+        NavigationStack {
+            Form {
+                Section("First name") {
+                    TextField("First name", text: $firstName)
+                        .autocorrectionDisabled()
+                        .textInputAutocapitalization(.words)
+                }
+                Section("Age") {
+                    Picker("Age", selection: $age) {
+                        ForEach(KidProfilesService.ages, id: \.self) { Text($0).tag($0) }
+                    }
+                    .pickerStyle(.segmented)
+                }
+                Section("Grade") {
+                    Picker("Grade", selection: $grade) {
+                        ForEach(KidProfilesService.grades, id: \.self) { Text($0).tag($0) }
+                    }
+                    .pickerStyle(.segmented)
+                }
+                if !error.isEmpty {
+                    Text(error).font(.footnote).foregroundStyle(.red)
+                }
+            }
+            .navigationTitle("Edit \(kid.firstName)")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) { Button("Cancel") { dismiss() } }
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Save") { Task { await save() } }
+                        .disabled(busy || firstName.trimmingCharacters(in: .whitespaces).isEmpty)
+                }
+            }
+        }
+    }
+
+    private func save() async {
+        busy = true
+        defer { busy = false }
+        do {
+            _ = try await app.kidProfiles.updateKid(kid, firstName: firstName, age: age, grade: grade)
+            await app.refreshModeLevels()
+            dismiss()
+        } catch {
+            self.error = "Could not save — \(error.localizedDescription)"
+        }
     }
 }

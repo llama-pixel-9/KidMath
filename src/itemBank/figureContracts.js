@@ -282,7 +282,7 @@ export const FIGURE_CONTRACTS = {
  * modeFigures.spec asserts iOS-playable contracted modes require only these —
  * volumeCoordinates stays playable:false until cubeGrid/coordGrid get mirrors.
  */
-export const IOS_MIRRORED_FIGURES = ["clockFace", "barGraph", "discMat"];
+export const IOS_MIRRORED_FIGURES = ["clockFace", "barGraph", "discMat", "pictograph", "tallyChart", "linePlot", "areaFigure"];
 export const IOS_PLAYABLE_CONTRACT_MODES = ["time", "dataGraphs", "counting", "placeValueDiscs"];
 
 /**

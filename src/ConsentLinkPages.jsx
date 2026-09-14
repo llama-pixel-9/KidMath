@@ -53,7 +53,7 @@ const bigButton =
 /** larkit.io/confirm-consent?token=… — the link in the direct-notice email. */
 export function ConfirmConsentPage() {
   const token = useTokenFromUrl();
-  const [state, setState] = useState("ready"); // ready | busy | done | already | failed
+  const [state, setState] = useState("ready"); // ready | busy | done | already | superseded | failed
   const [kidName, setKidName] = useState("");
   const [message, setMessage] = useState("");
 
@@ -66,6 +66,8 @@ export function ConfirmConsentPage() {
         setState("done");
       } else if (result.reason === "request_not_pending") {
         setState("already");
+      } else if (result.reason === "request_superseded") {
+        setState("superseded");
       } else {
         setMessage(
           "This confirmation link is invalid or has expired. Start adding your child again from the app and we'll send a fresh one."
@@ -108,12 +110,33 @@ export function ConfirmConsentPage() {
     );
   }
 
+  if (state === "superseded") {
+    // A resend replaced this email. Say so — "expired" here sent a parent
+    // back to re-add their child when their newest email was fine.
+    return (
+      <Shell title="This link was replaced">
+        <p className={bodyText}>
+          You asked us to resend the consent email, so this older link no longer works. Open the
+          most recent email from hello@larkit.io and tap the link there.
+        </p>
+        <p className={smallText}>
+          Already confirmed from the newer email? Then you're all set.
+        </p>
+        <div className="mt-8">
+          <Link to="/profiles" className={`${bigButton} inline-flex items-center no-underline`}>
+            Go to profiles
+          </Link>
+        </div>
+      </Shell>
+    );
+  }
+
   if (state === "already") {
     return (
       <Shell title="Already confirmed">
         <p className={bodyText}>
-          This consent was already confirmed (or the request expired). If your child's profile
-          exists, you're all set — otherwise just add them again from the app.
+          This consent was already confirmed — nothing more to do. If your child's profile
+          exists, you're all set; otherwise just add them again from the app.
         </p>
         <div className="mt-8">
           <Link to="/profiles" className={`${bigButton} inline-flex items-center no-underline`}>

@@ -27,10 +27,32 @@ struct PaywallView: View {
         selectedPlan == .annual ? store.annual : store.monthly
     }
 
-    private var disclosureLabel: String {
-        let price = selectedProduct?.displayPrice ?? (selectedPlan == .annual ? "$54.99" : "$8.99")
+    /// nil until StoreKit has answered — no disclosure without a real price
+    /// (mirrors the web: buildAutoRenewalDisclosure requires loaded pricing).
+    private var disclosureLabel: String? {
+        guard let product = selectedProduct else { return nil }
         let period = selectedPlan == .annual ? "year" : "month"
-        return AutoRenewalTerms.label(price: price, period: period)
+        return AutoRenewalTerms.label(price: product.displayPrice, period: period)
+    }
+
+    /// "63% OFF" from the two StoreKit prices; nil when annual isn't cheaper
+    /// than 12 × monthly (mirrors annualSavingsPercent in disclosures.js).
+    private var savingsTagline: String {
+        guard let annual = store.annual, let monthly = store.monthly else { return "BEST VALUE" }
+        let yearOfMonthly = monthly.price * 12
+        guard yearOfMonthly > 0, annual.price < yearOfMonthly else { return "BEST VALUE" }
+        let pct = ((1 - annual.price / yearOfMonthly) * 100 as NSDecimalNumber).doubleValue.rounded()
+        return "BEST VALUE · \(Int(pct))% OFF"
+    }
+
+    /// "$3.33" — the annual price over 12 months, in the product's own
+    /// currency formatting (mirrors perMonthOfAnnual).
+    private func perMonth(of annual: Product) -> String {
+        let monthly = (annual.price / 12 as NSDecimalNumber)
+            .rounding(accordingToBehavior: NSDecimalNumberHandler(
+                roundingMode: .plain, scale: 2, raiseOnExactness: false,
+                raiseOnOverflow: false, raiseOnUnderflow: false, raiseOnDivideByZero: false))
+        return (monthly as Decimal).formatted(annual.priceFormatStyle)
     }
 
     var body: some View {
@@ -99,7 +121,7 @@ struct PaywallView: View {
 
     private var featureList: some View {
         VStack(alignment: .leading, spacing: 10) {
-            feature("🧮", "All 22 practice modes, Grades 1-4")
+            feature("🧮", "All 25 games, K–5")
             feature("🖨️", "Printable PDF worksheets with answer keys")
             feature("☁️", "Progress syncs across iPad, iPhone, and the web")
             feature("👧👦", "Every child in your household — one price")
@@ -123,18 +145,18 @@ struct PaywallView: View {
     // auto-renewal box is ticked.
     private var planCards: some View {
         VStack(spacing: 12) {
-            if store.annual != nil {
+            if let annual = store.annual {
                 planCard(
                     .annual,
-                    tagline: "BEST VALUE · 49% OFF",
-                    detail: "\(store.annual?.displayPrice ?? "$54.99")/year — that's $4.58/month"
+                    tagline: savingsTagline,
+                    detail: "\(annual.displayPrice)/year — that's \(perMonth(of: annual))/month"
                 )
             }
-            if store.monthly != nil {
+            if let monthly = store.monthly {
                 planCard(
                     .monthly,
                     tagline: nil,
-                    detail: "\(store.monthly?.displayPrice ?? "$8.99")/month"
+                    detail: "\(monthly.displayPrice)/month"
                 )
             }
             if store.annual == nil && store.monthly == nil {
@@ -186,7 +208,13 @@ struct PaywallView: View {
     /// before the purchase step. See docs/legal-implementation.md step 5.
     private var disclosureBlock: some View {
         VStack(alignment: .leading, spacing: 10) {
-            AutoRenewalConsentBox(ack: $autoRenewAck, label: disclosureLabel)
+            // Same rule as the web: the checkbox text appears only once the
+            // real price is known, and the purchase button stays disabled
+            // until then (selectedProduct == nil).
+            AutoRenewalConsentBox(
+                ack: $autoRenewAck,
+                label: disclosureLabel ?? "The auto-renewal terms will appear once prices load."
+            )
             HStack(spacing: 6) {
                 legalLink("How to cancel", AppLinks.manageSubscriptions)
                 Text("·").foregroundStyle(theme.textMuted)

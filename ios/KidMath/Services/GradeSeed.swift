@@ -77,4 +77,47 @@ enum GradeSeed {
         if effective <= start { return 1 }
         return min(maxSeededLevel(mode: mode), 1 + levelsPerGrade * (effective - start))
     }
+
+    /// "in" | "below" | "above" — the mode's relationship to the kid's grade
+    /// (src/gradeSeed.js gradeFitFor). Unknown grade → "in".
+    static func gradeFit(mode: String, grade: String?) -> String {
+        guard let g = gradeIndex(grade) else { return "in" }
+        let (start, end) = parseSpan(gradeSpans[mode])
+        if g < start { return "above" }
+        if g > end { return "below" }
+        return "in"
+    }
+
+    /// "Grade 3" / "Kindergarten" for a level on a mode's ladder
+    /// (gradeWorkForLevel): the span stretched across the seeded ladder + 3.
+    static func gradeWork(mode: String, level: Int) -> String {
+        let (start, end) = parseSpan(gradeSpans[mode])
+        let maxL = maxSeededLevel(mode: mode) + 3
+        let clamped = max(1, min(maxL, level))
+        let g = start + Int((Double(clamped - 1) / Double(max(1, maxL - 1)) * Double(end - start)).rounded())
+        return g == 0 ? "Kindergarten" : "Grade \(g)"
+    }
+
+    /// Order the topic groups for a kid (HomePage.jsx groupsForGrade): groups
+    /// with at least one in-grade mode first, then outgrown groups, and
+    /// groups entirely above the kid folded away. Unknown grade → as authored.
+    static func groupsForGrade(_ grade: String?, groups: [ModeGroup] = ModeCatalog.groups) -> (main: [ModeGroup], more: [ModeGroup]) {
+        guard gradeIndex(grade) != nil else { return (groups, []) }
+        func rank(_ g: ModeGroup) -> Int {
+            let fits = g.modes.map { gradeFit(mode: $0.id, grade: grade) }
+            if fits.contains("in") { return 0 }
+            return fits.allSatisfy { $0 == "above" } ? 2 : 1
+        }
+        let ranked = groups.enumerated().map { (g: $0.element, i: $0.offset, rank: rank($0.element)) }
+            .sorted { $0.rank != $1.rank ? $0.rank < $1.rank : $0.i < $1.i }
+        return (ranked.filter { $0.rank < 2 }.map(\.g), ranked.filter { $0.rank == 2 }.map(\.g))
+    }
+
+    /// Quick Start (HomePage.jsx quickStartFor): the in-grade playable mode
+    /// with the lowest level — the most room to grow.
+    static func quickStart(grade: String?, levels: [String: Int], groups: [ModeGroup] = ModeCatalog.groups) -> String? {
+        guard gradeIndex(grade) != nil else { return nil }
+        let inGrade = groups.flatMap(\.modes).filter { $0.playable && gradeFit(mode: $0.id, grade: grade) == "in" }
+        return inGrade.map { ($0.id, levels[$0.id] ?? 1) }.min { $0.1 < $1.1 }?.0
+    }
 }

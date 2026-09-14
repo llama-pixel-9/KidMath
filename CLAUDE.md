@@ -45,6 +45,15 @@ cd ios && xcodegen generate && ./patch-scheme.sh   # .xcodeproj is generated + g
 `patch-scheme.sh` must run after **every** `xcodegen generate` — XcodeGen can't
 put the StoreKit config on the scheme's TEST action.
 
+**There is no iOS CI.** Any PR touching `ios/` (or the engine) must be compiled
+locally before merge — `main` shipped 20 days with two compile errors
+(2026-08-24 → 09-13) because nothing checked:
+```bash
+npm run build:engine && cd ios && xcodegen generate && ./patch-scheme.sh && \
+xcodebuild test -project KidMath.xcodeproj -scheme KidMath \
+  -destination 'platform=iOS Simulator,name=iPhone 17 Pro' -quiet
+```
+
 ---
 
 ## Architecture
@@ -61,6 +70,8 @@ src/
   engine/nativeEntry.js  flat JSON-in/JSON-out `KidMath` global for JavaScriptCore
   admin/               /admin: Items, Review queue (card + batch view), coverage heatmap
   engagement/          star wallet, stickers, streaks, journey map, badges (localStorage v1)
+  hints/               per-question hint pane content: concepts.js (mode × subskill, kid
+                       language), steps.js (steps from the live item's numbers, no answer)
   components/          widgets (NumberLine, AnalogClock, CoinTray, FractionInput, TenFrame, …)
   premium.js           FREE_MODE_IDS + entitlement logic, mirrored by iOS rowIsActive
 ios/                   SwiftUI app; project.yml is the XcodeGen spec
@@ -115,6 +126,12 @@ Two wording rules currently enforced as `fail` checks:
   cars does Lily have?", never "How many does Lily have?"
 - `decorativeContext` — context must *matter*. Never a story sentence on a
   bare-number question ("Emma has 53 pencils. How many tens are in 53?").
+
+**A worktree needs BOTH `.env` and `.env.local` copied in.** `.env` holds
+`VITE_SUPABASE_URL`/`VITE_SUPABASE_ANON_KEY`; without it the Supabase client is
+null and every sign-in button silently does nothing (no console error). Google
+sign-in also only works from `localhost:5173` — the origin registered on the
+OAuth client — so kill whatever holds that port rather than picking another.
 
 **Never symlink `node_modules` into a deploy worktree** — it breaks vitest/vite.
 Always `npm ci` inside the worktree. (A cleanup of such a symlink once deleted
@@ -219,11 +236,16 @@ the noun — revisit only if he raises it.
 
 ## Pricing (locked)
 
-$8.99/mo · $54.99/yr (49% off) · **all kids in the household included, one price —
-no per-child tiers, ever** · 14-day trial, card required.
+$8.99/mo · **$39.99/yr launch (founding) price** — locks for as long as the
+subscriber stays subscribed; the eventual full price is $54.99/yr · **all kids
+in the household included, one price — no per-child tiers, ever** · 14-day
+trial, card required. Web reads amounts from Stripe (`stripe-prices`) and iOS
+from StoreKit — **no price literal in `src/`**. Functions find prices by Stripe
+lookup key (`larkit_monthly` / `larkit_annual`), so a price change is a
+dashboard-only act: new price with the same lookup key, archive the old one.
 Free tier is **both platforms** (decided 2026-08-02 with the §20 soft
 paywall): addition, subtraction, multiplication, division, counting.
-Paywalled: the other 17 modes, PDF worksheets, and cloud sync. Launch offer: $39/yr founding price that locks while subscribed.
+Paywalled: the other 17 modes, PDF worksheets, and cloud sync.
 Price identically on both platforms (Apple requires it).
 Product IDs: `com.kidmath.app.premium.{monthly,annual}`.
 
@@ -256,6 +278,7 @@ Product IDs: `com.kidmath.app.premium.{monthly,annual}`.
 | Problem-type research (K–4) | `research-k4-problem-types.md` |
 | Item metadata schema | `item-metadata-model.md` |
 | Ship checklists | `ios-appstore-checklist.md`, `stripe-setup.md` |
+| iOS ↔ web parity gaps, ranked, with status | `ios-parity-plan.md` |
 | Parent report + practice log, email plan | `parent-report.md` |
 | Why we skipped RevenueCat (billing decision) | `billing-revenuecat-decision.md` |
 | Source licensing / attribution | `bank-sources.md`, `resources/README.md` |

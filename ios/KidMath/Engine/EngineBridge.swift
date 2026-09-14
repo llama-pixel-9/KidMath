@@ -172,6 +172,51 @@ final class EngineBridge {
         return set
     }
 
+    /// A flight log (printable sheet): { partA, partB, wordProblems,
+    /// computational, itemCount } — the same three-part draw the web prints.
+    func generateFlightLog(mode: String, level: Int, allowWordProblems: Bool) throws -> [String: Any] {
+        try dictionary(from: try call("generateFlightLog", [mode, level, ["allowWordProblems": allowWordProblems]]), in: "generateFlightLog")
+    }
+
+    /// The header scope phrase ("Sums to 10" on a Level 1 addition log).
+    func flightLogScope(mode: String, level: Int) -> String {
+        (try? callString("flightLogScope", [mode, level])) ?? ""
+    }
+
+    /// Choices to print as a bank next to a prompt, or nil.
+    func printOptionBank(question: [String: Any]) -> [Any]? {
+        guard let result = try? call("printOptionBank", [question]), !result.isNull, !result.isUndefined else { return nil }
+        return result.toArray()
+    }
+
+    func isYesNoJudgment(question: [String: Any]) -> Bool {
+        (try? call("isYesNoJudgment", [question]))?.toBool() ?? false
+    }
+
+    /// Teach-don't-grade (src/scaffold.js): the model to show on a first
+    /// miss — dots / array / strip / numberLine / look — and its one-line hint.
+    func scaffoldFor(question: [String: Any]) -> [String: Any] {
+        (try? callDictionary("scaffoldFor", [question])) ?? ["kind": "look"]
+    }
+
+    func scaffoldHint(_ scaffold: [String: Any]) -> String {
+        (try? callString("scaffoldHint", [scaffold])) ?? "Look again — take your time."
+    }
+
+    /// The prompt as it should be spoken (src/speakable.js).
+    func speakableText(_ promptText: String, noun: String? = nil) -> String {
+        (try? callString("speakableText", [promptText, noun ?? NSNull()])) ?? promptText
+    }
+
+    /// "1 of 3 skills solid" over the practice log, or nil when there is
+    /// nothing to say yet (src/analytics/masterySummary.js).
+    func masteryLine(sessions: [[String: Any]], mode: String) -> String? {
+        let declared = (try? call("modeSubskills", [mode]).toArray() as? [String]) ?? []
+        guard let summary = try? callDictionary("masterySummary", [sessions, mode, declared]),
+              let line = try? call("masteryLine", [summary]), line.isString else { return nil }
+        return line.toString()
+    }
+
     // MARK: - Adaptive session
 
     /// `options` may carry `savedProgress` (level/mistakeBank/bankItemStats/
@@ -220,6 +265,35 @@ final class EngineBridge {
     /// §01: the four-part settlement (landing / precision / altitude /
     /// circle-back), computed by the same shared engine code the web uses so
     /// the two platforms can never pay differently.
+    /// The COPPA direct notice (tokens filled) and the legal versions to
+    /// record — the same bytes the web sends to request-consent.
+    struct ConsentNotice {
+        let markdown: String
+        let version: String
+        let termsVersion: String
+        let privacyVersion: String
+    }
+
+    func parentalConsentNotice() throws -> ConsentNotice {
+        let payload = try dictionary(from: try call("parentalConsentNotice"), in: "parentalConsentNotice")
+        guard let markdown = payload["markdown"] as? String, markdown.count > 200 else {
+            throw EngineError.badResult("parentalConsentNotice: empty notice")
+        }
+        return ConsentNotice(
+            markdown: markdown,
+            version: payload["version"] as? String ?? "unversioned",
+            termsVersion: payload["termsVersion"] as? String ?? "unversioned",
+            privacyVersion: payload["privacyVersion"] as? String ?? "unversioned"
+        )
+    }
+
+    /// Shared areaFigureSpec (src/figures/areaFigureSpec.js): the drawable
+    /// spec for an areaPerimeter item, or nil when there is nothing to draw.
+    func areaFigureSpec(question: [String: Any]) -> [String: Any]? {
+        guard let result = try? call("areaFigureSpec", [question]), !result.isNull, !result.isUndefined else { return nil }
+        return result.toDictionary() as? [String: Any]
+    }
+
     func summarizeFlight(_ session: Session) throws -> FlightPayout {
         let result = try call("summarizeFlight", [session.value])
         let payload = try dictionary(from: result, in: "summarizeFlight")
@@ -340,7 +414,21 @@ final class EngineBridge {
     // MARK: - Plumbing
 
     @discardableResult
-    private func call(_ method: String, _ arguments: [Any] = []) throws -> JSValue {
+    /// Generic JSON-in/JSON-out calls for services that own their own
+    /// payload shape (PracticeLog). The typed methods above stay the norm.
+    func callDictionary(_ method: String, _ arguments: [Any] = []) throws -> [String: Any] {
+        try dictionary(from: try call(method, arguments), in: method)
+    }
+
+    func callString(_ method: String, _ arguments: [Any] = []) throws -> String {
+        let value = try call(method, arguments)
+        guard value.isString, let text = value.toString() else {
+            throw EngineError.badResult("\(method) did not return a string")
+        }
+        return text
+    }
+
+    func call(_ method: String, _ arguments: [Any] = []) throws -> JSValue {
         exceptions.message = nil
         guard let result = api.invokeMethod(method, withArguments: arguments) else {
             throw EngineError.badResult("\(method) returned nothing")

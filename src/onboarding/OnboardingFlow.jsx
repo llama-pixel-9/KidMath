@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../useAuth";
 import { usePremium } from "../PremiumContext";
 import { paywallEnabled, startCheckout } from "../premium";
+import { usePlanPricing } from "../hooks/usePlanPricing";
 import { logConsent } from "../legal";
 import {
   buildAutoRenewalDisclosure,
@@ -19,6 +20,7 @@ import {
   addKid,
   requestParentalConsent,
   setActiveKid, KID_LIMIT_MESSAGE } from "../kidProfiles";
+import { RESEND_COOLDOWN_S, formatSentAt } from "./consentResend.js";
 
 /**
  * §20 screens 03–04 — add a kid, then the soft paywall. Account flow voice is
@@ -28,6 +30,115 @@ import {
  */
 
 const SEGMENT = "h-12 rounded-[12px] border-[1.5px] font-bold text-base cursor-pointer transition-colors";
+
+/**
+ * The "Check your email" holding panel. Every send — the first and each
+ * resend — is stated on screen with the address and the time, the resend is
+ * a real button on a cooldown, and a failure to send is said out loud.
+ */
+export function ConsentPendingPanel({ email, kidFirstName, sentAt, onResend, onCheck, busy, error }) {
+  const [sends, setSends] = useState([{ at: sentAt, kind: "first" }]);
+  const [resendState, setResendState] = useState("idle"); // idle | sending | sent | failed
+  const [resendError, setResendError] = useState("");
+  const [cooldown, setCooldown] = useState(RESEND_COOLDOWN_S);
+  const lastSentAt = sends[sends.length - 1].at;
+  const timerRef = useRef(null);
+
+  // Countdown from the most recent send.
+  useEffect(() => {
+    const started = new Date(lastSentAt).getTime() || Date.now();
+    const tick = () => {
+      const left = Math.max(0, RESEND_COOLDOWN_S - Math.floor((Date.now() - started) / 1000));
+      setCooldown(left);
+      if (left === 0 && timerRef.current) {
+        clearInterval(timerRef.current);
+        timerRef.current = null;
+      }
+    };
+    tick();
+    timerRef.current = setInterval(tick, 1000);
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+      timerRef.current = null;
+    };
+  }, [lastSentAt]);
+
+  const resend = async () => {
+    if (cooldown > 0 || resendState === "sending") return;
+    setResendState("sending");
+    setResendError("");
+    try {
+      const result = await onResend();
+      setSends((prev) => [...prev, { at: result?.sentAt || new Date().toISOString(), kind: "resend" }]);
+      setResendState("sent");
+    } catch (e) {
+      setResendError(e?.message || "Could not send the email — try again.");
+      setResendState("failed");
+    }
+  };
+
+  const resendLabel =
+    resendState === "sending" ? "Sending…" : cooldown > 0 ? `Resend in ${cooldown}s` : "Resend the email";
+
+  return (
+    <main className="flex-1 max-w-3xl mx-auto w-full px-4 py-10">
+      <h1 className="font-display font-semibold text-4xl text-ink m-0">Check your email</h1>
+      <p
+        className="mt-3 text-base font-semibold text-ink/70 max-w-xl"
+        role="status"
+        aria-live="polite"
+        data-testid="consent-sent-status"
+      >
+        {resendState === "sent" ? (
+          <>
+            Sent again to <strong>{email}</strong> at {formatSentAt(lastSentAt)}. Only the link in
+            this newest email works — earlier ones are cancelled.
+          </>
+        ) : (
+          <>
+            We sent the parental consent notice to <strong>{email}</strong> at{" "}
+            {formatSentAt(lastSentAt)}.
+          </>
+        )}
+      </p>
+      <p className="mt-3 text-base font-semibold text-ink/70 max-w-xl">
+        Because larkit is made for kids, the law asks us to get your consent before we create{" "}
+        {kidFirstName}'s profile — one tap on the link in that email does it.
+      </p>
+      <p className="mt-3 text-sm font-semibold text-ink/60 max-w-xl">
+        Until you confirm, nothing about {kidFirstName} is stored in a profile. If you do nothing,
+        we delete what you typed within 14 days.{" "}
+        <Link to="/parental-consent" className="underline text-teal">Read the notice</Link>
+      </p>
+      {error && <p className="mt-4 text-sm font-bold text-ember">{error}</p>}
+      {resendState === "failed" && resendError && (
+        <p className="mt-4 text-sm font-bold text-ember" role="alert">{resendError}</p>
+      )}
+      <div className="mt-8 flex items-center gap-4 flex-wrap">
+        <button
+          type="button"
+          disabled={busy}
+          className="px-8 h-14 bg-teal text-cream font-display font-semibold text-xl rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer disabled:opacity-40"
+          onClick={onCheck}
+        >
+          I've confirmed — continue
+        </button>
+        <button
+          type="button"
+          disabled={busy || cooldown > 0 || resendState === "sending"}
+          aria-disabled={cooldown > 0}
+          className="px-6 h-14 rounded-[14px] bg-white border-[1.5px] border-ink/15 text-ink font-bold text-base cursor-pointer hover:border-ink/30 disabled:opacity-50 disabled:cursor-default"
+          onClick={resend}
+        >
+          {resendLabel}
+        </button>
+      </div>
+      <p className="mt-4 text-sm font-semibold text-ink/60 max-w-xl">
+        Not there? Check spam, and give it a minute — the sender is hello@larkit.io.
+      </p>
+    </main>
+  );
+}
 const SEGMENT_IDLE = "bg-white border-ink/10 text-ink hover:border-ink/25";
 const SEGMENT_ACTIVE = "bg-seafoam border-teal text-ink";
 
@@ -132,41 +243,15 @@ function KidStep({ onDone, kidCount }) {
 
   if (pendingConsent) {
     return (
-      <main className="flex-1 max-w-3xl mx-auto w-full px-4 py-10">
-        <h1 className="font-display font-semibold text-4xl text-ink m-0">Check your email</h1>
-        <p className="mt-3 text-base font-semibold text-ink/70 max-w-xl">
-          We sent the parental consent notice to <strong>{user.email}</strong>. Because larkit is
-          made for kids, the law asks us to get your consent before we create{" "}
-          {pendingConsent.firstName}'s profile — one tap on the link in that email does it.
-        </p>
-        <p className="mt-3 text-sm font-semibold text-ink/60 max-w-xl">
-          Until you confirm, nothing about {pendingConsent.firstName} is stored in a profile.
-          If you do nothing, we delete what you typed within 14 days.{" "}
-          <Link to="/parental-consent" className="underline text-teal">Read the notice</Link>
-        </p>
-        {error && <p className="mt-4 text-sm font-bold text-ember">{error}</p>}
-        <div className="mt-8 flex items-center gap-4 flex-wrap">
-          <button
-            type="button"
-            disabled={busy}
-            className="px-8 h-14 bg-teal text-cream font-display font-semibold text-xl rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer disabled:opacity-40"
-            onClick={checkConfirmed}
-          >
-            I've confirmed — continue
-          </button>
-          <button
-            type="button"
-            disabled={busy}
-            className="text-teal font-bold text-base cursor-pointer bg-transparent border-none p-0"
-            onClick={() => {
-              setError("");
-              requestParentalConsent(pendingConsent).catch((e) => setError(e.message));
-            }}
-          >
-            Resend the email
-          </button>
-        </div>
-      </main>
+      <ConsentPendingPanel
+        email={user.email}
+        kidFirstName={pendingConsent.firstName}
+        sentAt={pendingConsent.sentAt}
+        busy={busy}
+        error={error}
+        onCheck={checkConfirmed}
+        onResend={() => requestParentalConsent(pendingConsent)}
+      />
     );
   }
 
@@ -261,10 +346,14 @@ function PlanStep({ kidName, onFree }) {
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
   const [autoRenewAck, setAutoRenewAck] = useState(AUTORENEW_ACK_DEFAULT);
+  const { pricing, error: pricingError, retry: retryPricing } = usePlanPricing();
 
-  const disclosure = buildAutoRenewalDisclosure("annual");
+  // Prices come from Stripe; until they load there is no disclosure and no
+  // purchase button — never a hardcoded amount.
+  const disclosure = pricing ? buildAutoRenewalDisclosure("annual", { pricing }) : null;
 
   const subscribe = async () => {
+    if (!disclosure) return;
     setError("");
     setBusy(true);
     try {
@@ -322,8 +411,21 @@ function PlanStep({ kidName, onFree }) {
           </span>
           <h2 className="font-display font-medium text-2xl text-ink m-0">larkit Plus</h2>
           <p className="mt-3 mb-4">
-            <span className="font-display font-semibold text-4xl text-ink">$54.99</span>
-            <span className="text-sm font-semibold text-ink/70"> / year · or $8.99 monthly</span>
+            {pricing ? (
+              <>
+                <span className="font-display font-semibold text-4xl text-ink">{pricing.annual.amount}</span>
+                <span className="text-sm font-semibold text-ink/70"> / year · or {pricing.monthly.amount} monthly</span>
+              </>
+            ) : pricingError ? (
+              <span className="text-sm font-semibold text-ink/70">
+                Couldn't load prices.{" "}
+                <button type="button" onClick={retryPricing} className="underline cursor-pointer bg-transparent border-0 p-0 font-semibold text-ink/70">
+                  Try again
+                </button>
+              </span>
+            ) : (
+              <span className="text-sm font-semibold text-ink/70">Loading prices…</span>
+            )}
           </p>
           <ul className="m-0 p-0 list-none space-y-2 text-[15px] font-semibold text-ink">
             <li>All 22 games, K–5</li>
@@ -341,11 +443,13 @@ function PlanStep({ kidName, onFree }) {
               onChange={(e) => setAutoRenewAck(e.target.checked)}
               className="mt-1 h-5 w-5 shrink-0"
             />
-            <span className="text-sm text-ink/70 leading-relaxed">{disclosure.label}</span>
+            <span className="text-sm text-ink/70 leading-relaxed">
+              {disclosure ? disclosure.label : "The auto-renewal terms will appear once prices load."}
+            </span>
           </label>
           <button
             type="button"
-            disabled={planButtonsDisabled({ autoRenewAck, busy })}
+            disabled={planButtonsDisabled({ autoRenewAck, busy, pricing })}
             className="mt-4 w-full h-14 rounded-[18px] bg-sun text-ink font-display font-semibold text-lg shadow-[0_5px_0_#C4471B] btn-press cursor-pointer disabled:opacity-50"
             onClick={subscribe}
           >

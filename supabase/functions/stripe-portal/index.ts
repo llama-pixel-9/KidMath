@@ -27,7 +27,12 @@ const corsHeaders = {
 // edit silently reintroduce a retention flow.
 const PORTAL_CONFIG_MARKER = "kidmath_cancel_v1";
 
-async function getPortalConfiguration(origin: string): Promise<string> {
+// The portal is Stripe-hosted; its legal links point at the canonical pages,
+// never the caller's origin (which is localhost in dev — Stripe rejects
+// non-https URLs here).
+const LEGAL_BASE = "https://larkit.io";
+
+async function getPortalConfiguration(): Promise<string> {
   const existing = await stripe.billingPortal.configurations.list({ limit: 100 });
   const found = existing.data.find((c) => c.metadata?.marker === PORTAL_CONFIG_MARKER && c.active);
   if (found) return found.id;
@@ -35,19 +40,21 @@ async function getPortalConfiguration(origin: string): Promise<string> {
   const created = await stripe.billingPortal.configurations.create({
     business_profile: {
       headline: "larkit — manage your subscription",
-      privacy_policy_url: `${origin}/privacy`,
-      terms_of_service_url: `${origin}/terms`,
+      privacy_policy_url: `${LEGAL_BASE}/privacy`,
+      terms_of_service_url: `${LEGAL_BASE}/terms`,
     },
     features: {
       subscription_cancel: {
         enabled: true,
         mode: "immediately",
         proration_behavior: "none",
-        cancellation_reason: { enabled: false, options: [] },
+        // Survey OFF: leaving `cancellation_reason` out entirely is the only
+        // form Stripe accepts (it demands `options` whenever the hash is sent,
+        // even with enabled:false). Default is disabled.
       },
       payment_method_update: { enabled: true },
       invoice_history: { enabled: true },
-      customer_update: { enabled: false, allowed_updates: [] },
+      customer_update: { enabled: false },
     },
     metadata: { marker: PORTAL_CONFIG_MARKER },
   });
@@ -55,21 +62,40 @@ async function getPortalConfiguration(origin: string): Promise<string> {
 }
 
 /** Find the Stripe customer for a Supabase user. The checkout function stamps
- *  supabase_user_id into the subscription metadata; email is the fallback for
- *  customers created before that or whose subscription already ended. */
-async function findCustomerId(userId: string, email: string | undefined): Promise<string | null> {
-  const bySubscription = await stripe.subscriptions.search({
-    query: `metadata['supabase_user_id']:'${userId}'`,
-    limit: 1,
-  });
-  const sub = bySubscription.data[0];
-  if (sub) return typeof sub.customer === "string" ? sub.customer : sub.customer.id;
+ *  supabase_user_id into the subscription metadata. Stripe's search index can
+ *  lag or be unavailable, so after search we scan subscriptions directly, and
+ *  finally fall back to the account email. Returns the customer id plus which
+ *  step found it (for the not-found message). */
+async function findCustomerId(
+  userId: string,
+  email: string | undefined,
+): Promise<{ customer: string | null; via: string }> {
+  const customerOf = (sub: Stripe.Subscription) =>
+    typeof sub.customer === "string" ? sub.customer : sub.customer.id;
 
+  try {
+    const bySearch = await stripe.subscriptions.search({
+      query: `metadata['supabase_user_id']:'${userId}'`,
+      limit: 1,
+    });
+    if (bySearch.data[0]) return { customer: customerOf(bySearch.data[0]), via: "search" };
+  } catch (error) {
+    console.warn("subscriptions.search unavailable, scanning", error);
+  }
+
+  let scanned = 0;
+  for await (const sub of stripe.subscriptions.list({ status: "all", limit: 100 })) {
+    scanned++;
+    if (sub.metadata?.supabase_user_id === userId) return { customer: customerOf(sub), via: "scan" };
+  }
+
+  let byEmailCount = 0;
   if (email) {
     const byEmail = await stripe.customers.list({ email, limit: 1 });
-    if (byEmail.data[0]) return byEmail.data[0].id;
+    byEmailCount = byEmail.data.length;
+    if (byEmail.data[0]) return { customer: byEmail.data[0].id, via: "email" };
   }
-  return null;
+  return { customer: null, via: `none (scanned ${scanned} subscriptions, ${byEmailCount} customers with email ${email ? "present" : "missing"})` };
 }
 
 Deno.serve(async (request) => {
@@ -91,21 +117,23 @@ Deno.serve(async (request) => {
     const { origin } = await request.json().catch(() => ({}));
     const base = typeof origin === "string" && origin.startsWith("http")
       ? origin
-      : "https://kidmath.vercel.app";
+      : "https://larkit.io";
 
-    const customer = await findCustomerId(user.id, user.email ?? undefined);
+    const { customer, via } = await findCustomerId(user.id, user.email ?? undefined);
     if (!customer) {
-      return json({ error: "No subscription found for this account" }, 404);
+      console.warn("stripe-portal: no customer", { userId: user.id, via });
+      return json({ error: `No subscription found for this account [${via}]` }, 404);
     }
 
     const session = await stripe.billingPortal.sessions.create({
       customer,
-      configuration: await getPortalConfiguration(base),
+      configuration: await getPortalConfiguration(),
       return_url: base,
     });
 
     return json({ url: session.url });
   } catch (error) {
+    console.error("stripe-portal failed", error);
     return json({ error: `${error}` }, 500);
   }
 });

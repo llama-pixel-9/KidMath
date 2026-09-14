@@ -8,15 +8,20 @@ import { logConsent } from "./legal";
 import {
   buildAutoRenewalDisclosure,
   planButtonsDisabled,
+  perMonthOfAnnual,
+  annualSavingsPercent,
   AUTORENEW_ACK_DEFAULT,
 } from "./legal/disclosures";
+import { usePlanPricing } from "./hooks/usePlanPricing";
 import { supabase } from "./supabaseClient";
 import GoogleSignInButton from "./auth/GoogleSignInButton";
 
 /**
  * The web paywall. Same presentation rules as iOS: lead with the annual plan
- * (49% off — the price that's meant to be bought), monthly shown flat and
- * never discounted, 14-day trial on both, every child included.
+ * (the price that's meant to be bought), monthly shown flat and never
+ * discounted, 14-day trial on both, every child included. Amounts come from
+ * Stripe (usePlanPricing) — nothing here may render a hardcoded price, and
+ * the purchase button stays disabled until real prices are loaded.
  *
  * The auto-renewal disclosure + separate unchecked checkbox below the plan
  * picker is a legal requirement (CA B&P §17602 and sibling statutes), not
@@ -35,10 +40,13 @@ export default function PaywallModal({ onClose }) {
   const [error, setError] = useState("");
   const [plan, setPlan] = useState("annual");
   const [autoRenewAck, setAutoRenewAck] = useState(AUTORENEW_ACK_DEFAULT);
+  const { pricing, error: pricingError, retry: retryPricing } = usePlanPricing();
 
-  const disclosure = buildAutoRenewalDisclosure(plan);
+  const disclosure = pricing ? buildAutoRenewalDisclosure(plan, { pricing }) : null;
+  const savings = pricing ? annualSavingsPercent(pricing) : 0;
 
   const subscribe = async () => {
+    if (!disclosure) return;
     setError("");
     setBusy(true);
     try {
@@ -121,6 +129,20 @@ export default function PaywallModal({ onClose }) {
           </div>
         ) : (
           <div className="mt-6">
+            {!pricing ? (
+              <div className="rounded-2xl border-2 border-slate-200 p-4 text-center text-sm font-semibold text-slate-500">
+                {pricingError ? (
+                  <>
+                    Couldn't load prices.{" "}
+                    <button type="button" onClick={retryPricing} className="underline cursor-pointer bg-transparent border-0 p-0 font-semibold text-slate-600">
+                      Try again
+                    </button>
+                  </>
+                ) : (
+                  "Loading prices…"
+                )}
+              </div>
+            ) : (
             <div className="space-y-3" role="radiogroup" aria-label="Choose a plan">
               <button
                 type="button"
@@ -129,8 +151,12 @@ export default function PaywallModal({ onClose }) {
                 onClick={() => setPlan("annual")}
                 className={planCard("annual", plan === "annual")}
               >
-                <span className="block text-xs tracking-widest font-bold text-teal">BEST VALUE · 49% OFF</span>
-                <span className="block text-lg font-extrabold text-ink">$54.99/year — that's $4.58/month</span>
+                <span className="block text-xs tracking-widest font-bold text-teal">
+                  {savings > 0 ? `BEST VALUE · ${savings}% OFF` : "BEST VALUE"}
+                </span>
+                <span className="block text-lg font-extrabold text-ink">
+                  {pricing.annual.amount}/year — that's {perMonthOfAnnual(pricing)}/month
+                </span>
                 <span className="block text-xs font-semibold text-slate-500">14-day free trial, then auto-renews</span>
               </button>
               <button
@@ -140,10 +166,11 @@ export default function PaywallModal({ onClose }) {
                 onClick={() => setPlan("monthly")}
                 className={planCard("monthly", plan === "monthly")}
               >
-                <span className="block text-lg font-extrabold text-ink">$8.99/month</span>
+                <span className="block text-lg font-extrabold text-ink">{pricing.monthly.amount}/month</span>
                 <span className="block text-xs font-semibold text-slate-500">14-day free trial, then auto-renews</span>
               </button>
             </div>
+            )}
 
             {/* The separate auto-renewal consent — its own affirmative act,
                 never pre-ticked, never merged into Terms acceptance. */}
@@ -154,12 +181,14 @@ export default function PaywallModal({ onClose }) {
                 onChange={(e) => setAutoRenewAck(e.target.checked)}
                 className="mt-1 h-5 w-5 shrink-0"
               />
-              <span className="text-sm text-slate-600 leading-relaxed">{disclosure.label}</span>
+              <span className="text-sm text-slate-600 leading-relaxed">
+                {disclosure ? disclosure.label : "The auto-renewal terms will appear once prices load."}
+              </span>
             </label>
 
             <button
               type="button"
-              disabled={planButtonsDisabled({ autoRenewAck, busy })}
+              disabled={planButtonsDisabled({ autoRenewAck, busy, pricing })}
               onClick={subscribe}
               className="mt-4 w-full py-4 rounded-[18px] bg-teal text-cream font-display font-semibold text-lg shadow-[0_5px_0_#064A41] btn-press cursor-pointer disabled:opacity-50"
             >

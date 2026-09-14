@@ -1,10 +1,9 @@
 // Create a Stripe Checkout session for the signed-in user.
 //
 // The web paywall calls this with { plan: "annual" | "monthly", origin }.
-// Pricing (locked): $8.99/month · $54.99/year · 14-day trial on both.
-// Price IDs come from function secrets so test/live mode is a config swap:
-//   supabase secrets set STRIPE_SECRET_KEY=sk_... \
-//     STRIPE_PRICE_MONTHLY=price_... STRIPE_PRICE_ANNUAL=price_...
+// 14-day trial on both plans. The price to sell is found by Stripe lookup
+// key (_shared/stripePrices.ts) — no price id or amount lives here, and
+// test/live mode is just STRIPE_SECRET_KEY.
 //
 // The session carries the Supabase user id in client_reference_id AND in the
 // subscription metadata, so the stripe-webhook function can write the shared
@@ -12,6 +11,7 @@
 
 import Stripe from "npm:stripe@17";
 import { createClient } from "npm:@supabase/supabase-js@2";
+import { resolvePlanPrice } from "../_shared/stripePrices.ts";
 
 const stripe = new Stripe(Deno.env.get("STRIPE_SECRET_KEY") ?? "");
 
@@ -38,16 +38,14 @@ Deno.serve(async (request) => {
     }
 
     const { plan, origin } = await request.json();
-    const price = plan === "monthly"
-      ? Deno.env.get("STRIPE_PRICE_MONTHLY")
-      : Deno.env.get("STRIPE_PRICE_ANNUAL");
-    if (!price) {
-      return json({ error: "Stripe prices not configured" }, 500);
+    if (plan !== "monthly" && plan !== "annual") {
+      return json({ error: "Unknown plan" }, 400);
     }
+    const price = (await resolvePlanPrice(stripe, plan)).id;
 
     const base = typeof origin === "string" && origin.startsWith("http")
       ? origin
-      : "https://kidmath.vercel.app";
+      : "https://larkit.io";
 
     const session = await stripe.checkout.sessions.create({
       mode: "subscription",

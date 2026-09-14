@@ -1,115 +1,209 @@
 # Go-live tracker
 
 The punch list between "built" and "officially live." Started 2026-08-05
-after the compliance work-orders (WO-1..9) merged to `larkit-rebrand` and
-the backend (4 migrations, 6 Edge Functions, `CONSENT_REVOCATION_SECRET`)
-went live on Supabase.
+after the compliance work-orders (WO-1..9) merged; **refreshed 2026-09-13**
+against what is actually deployed (prod `main`, Supabase functions/secrets,
+consent tables).
 
 Companion docs: [launch-compliance-checklist.md](./launch-compliance-checklist.md)
 (the full legal analysis) · [compliance-claude-code-workorders.md](./compliance-claude-code-workorders.md)
-(what was built). This file is the short list — check items off here.
+(what was built) · [stripe-setup.md](./stripe-setup.md) · [ios-appstore-checklist.md](./ios-appstore-checklist.md).
+This file is the short list — check items off here.
 
-**Rule:** nothing ships to prod (`main`) until every item in §1 is checked —
-**except under private-test mode (§0), which §1 items may follow.**
+**Status at a glance (2026-09-13, evening):** every §1 code item is live on
+prod. **Decision: open signups first, billing later** — the only thing between
+now and open signups is removing `VITE_SIGNUPS_DISABLED` in Vercel. Stripe is
+verified in test mode (§2); live-mode setup remains. iOS is waiting on Apple
+Developer Program enrollment.
 
 ---
 
 ## 0 · Private-test mode (current posture)
 
-Prod can carry all the code while staying closed to new users:
+Prod carries all the code while staying closed to new users:
 
 - `VITE_PAYWALL_ENABLED` **unset** → no Stripe calls, all modes free, no plan
-  step. (Already the default.)
+  step. (Still the default.)
 - `VITE_SIGNUPS_DISABLED=true` in the Vercel **Production** env → /signup
   shows a friendly "accounts are almost ready" page; the account-free free
-  tier keeps working for everyone. Testers open `https://larkit.io/?invite=1`
-  once, which marks their browser and lets them through the gate.
-- With signups closed, nobody can reach the add-a-kid consent flow, so the
-  stub email sender (§3) and the placeholder entity address (§1) are not
-  exposed to real parents. That is what makes deploying ahead of §1/§3
-  acceptable — **flip `VITE_SIGNUPS_DISABLED` off only after §1 and §3 are
-  done.**
-- Going live for real = finish §1 + §3, remove `VITE_SIGNUPS_DISABLED`,
-  redeploy. Billing additionally needs §2 + `VITE_PAYWALL_ENABLED=true`.
+  tier keeps working. Testers open `https://larkit.io/?invite=1` once.
+- Going live for real = finish §1, remove `VITE_SIGNUPS_DISABLED`, redeploy.
+  Billing additionally needs §2 + `VITE_PAYWALL_ENABLED=true`. Opening
+  signups before billing is acceptable (everyone gets every mode free until
+  the paywall flag flips).
 
 ---
 
-## 1 · Blocks the prod deploy (do these, then push)
+## 1 · Blocks opening signups
 
-- [ ] **Real entity address + phone in `src/legal/entity.js`.** Registered-agent
-  address and a forwarding number are fine. This clears the deliberate
-  `legalDocs.spec.js` launch gate (the one failing test) and is required by
-  16 CFR §312.4(d)(1) on the public notice. *Waiting on: Sai has the values.*
-- [ ] **Verify the four mailboxes actually receive mail:** privacy@, support@,
-  security@, legal@ larkit.io. `privacy@` starts a 30-day legal response
-  clock; `legal@` receives arbitration opt-outs — a missed one can void the
-  arbitration clause for that user.
-- [ ] **Delete the "Drafting note — remove before publication" block** from
-  `src/legal/parental-consent-notice.md` (top of file). No version bump
-  needed (not a substance change).
-- [ ] **Push the deploy.** The merge is already prepared and gate-green in the
-  `/Users/sai/kidmath-deploy` worktree (`deploy-compliance` = origin/main +
-  larkit-rebrand, clean merge, fresh npm ci). After the items above land on
-  `larkit-rebrand`, refresh and push:
-  ```bash
-  cd /Users/sai/kidmath-deploy
-  git merge larkit-rebrand --no-edit && npm run build && npm run test
-  git push origin deploy-compliance:main     # or open a PR like #27
-  ```
-- [ ] **Post-deploy smoke pass on prod:** /privacy /terms /security
-  /parental-consent render with real entity details; footer everywhere;
-  privacy link on welcome / signup / add-a-child / paywall; no request to
-  fonts.googleapis.com in the network tab; /.well-known/security.txt serves.
+- [x] Real entity name + address in `src/legal/entity.js` — Larkit Labs LLC,
+  502 W 7th St Ste 100, Erie PA 16502-1333 (PR #85, 2026-09-12).
+  `legalDocs.spec.js` gate passes; `npm run test` fully green.
+- [x] **Real phone number in `src/legal/entity.js`** — (814) 273-8760, PR #96
+  2026-09-13; email footer in `emailTemplates.ts` matches; `request-consent`
+  + `consent-confirm` redeployed (v15) from a main-based tree.
+  `legalDocs.spec` now rejects a 555 number.
+- [x] Role mailboxes receive mail — privacy@ support@ security@ legal@
+  hello@ larkit.io are Google Groups delivering to nagasai@larkit.io;
+  never-spam filter set (2026-09-12).
+- [x] "Drafting note — remove before publication" block removed from
+  `src/legal/parental-consent-notice.md` (2026-09-13; its guidance moved to
+  the comment block in `src/legal/index.js`).
+- [x] Compliance deploy pushed to prod — PR #88 (2026-09-12), plus PR #91
+  consent-resend fix (2026-09-13).
+- [ ] **Remove `VITE_SIGNUPS_DISABLED` from the Vercel Production env** and
+  redeploy. ← the last step before signups are open.
+- [x] Post-deploy smoke pass on prod (2026-09-13): /parental-consent renders
+  without the drafting note, with the real address + phone; the shipped
+  bundle carries no 555 number; no fonts.googleapis request in the HTML;
+  /.well-known/security.txt serves (200 via www).
+- [x] Env flip done 2026-09-13 — **signups are open on prod.** /signup
+  shows the sign-in buttons.
+- [ ] First real add-a-kid on prod → consent email arrives with the phone
+  in the footer (not yet observed post-flip).
+- [x] "Continue with Apple" hidden behind `VITE_APPLE_SIGNIN_ENABLED`
+  (default hidden) until Apple enrollment completes — Google is the only
+  web sign-in for now. Set the var to `true` in Vercel + redeploy to show it.
 
 ## 2 · Blocks charging real money (before `VITE_PAYWALL_ENABLED=true`)
 
-- [ ] Stripe live mode: products + prices ($8.99/mo, $54.99/yr), secrets set
-  (`STRIPE_SECRET_KEY`, `STRIPE_PRICE_MONTHLY`, `STRIPE_PRICE_ANNUAL`,
-  `STRIPE_WEBHOOK_SECRET`), webhook endpoint registered (docs/stripe-setup.md).
-- [ ] **Cancel-flow test on a phone browser:** subscribe (test card) →
-  /account/billing → cancelled in one click, no survey. "Use a desktop" was
-  a named FTC violation (*Chegg*) — test on the phone, not the laptop.
-- [ ] Confirmation + reminder emails (trial day 11, 35 days pre-annual-renewal,
-  annual, pre-price-change) — **blocked on §3 email sender.**
+**Test-mode loop verified end to end 2026-09-13:** disclosure logged →
+Checkout ($0 today, trial) → webhook wrote `entitlements` active → portal
+opened → cancelled on a phone in one tap → webhook flipped the row to
+expired. Remaining items are live-mode setup and emails.
 
-## 3 · Blocks the consent flow going live (B7 — email sender)
+- [x] Stripe dashboard (test mode / sandbox): product **Larkit Premium**,
+  $8.99/mo `larkit_monthly`, $39.99/yr `larkit_annual` (2026-09-13).
+- [ ] Stripe dashboard (live mode): product **Larkit Premium** with
+  **$8.99/mo** (lookup key `larkit_monthly`) and **$39.99/yr** launch price
+  (lookup key `larkit_annual`). Retiring the launch price later = new
+  $54.99 price with the same lookup key, archive the old one.
+- [x] Deploy `stripe-checkout`, `stripe-portal`, `stripe-prices
+  --no-verify-jwt` and `stripe-webhook --no-verify-jwt` from a main-based
+  tree (2026-09-13). Redeploy after PR #95 (portal fixes) merges. (PR #94: prices are read from Stripe at runtime — the paywall and
+  disclosure carry no literals, so the launch price is purely a dashboard +
+  secret decision.)
+- [x] Secrets (test values): `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`. (No price ids:
+  prices are found by lookup key `larkit_monthly` / `larkit_annual` set on
+  the price in the dashboard.)
+- [x] Webhook endpoint (test mode) at `…/functions/v1/stripe-webhook` with
+  `checkout.session.completed`, `customer.subscription.updated`,
+  `customer.subscription.deleted`.
+- [x] Test-mode end-to-end per stripe-setup.md §4 (checkout → entitlements
+  row `active` → premium unlocks on web). iOS side untested until §4.
+- [x] **Cancel-flow test on a phone browser** — 2026-09-13, one tap,
+  immediate, no survey (Stripe portal config `kidmath_cancel_v1`). Repeat
+  once in live mode: the portal configuration is per-mode and is created on
+  first call.
+- [ ] Stripe-sent emails (Settings → Billing → Subscriptions and emails):
+  turn ON trial-ending reminder (7 days), upcoming renewals (set the
+  upcoming-renewal event to **30 days** in Prevent failed payments — CA
+  window is 15–45 days for annual), expiring cards, card payment failures;
+  plus the "trial over" statement descriptor; plus payment receipts under
+  Settings → Customer emails. Apple sends its own for App Store subs — no
+  iOS-side work.
+- [x] **Subscription-started confirmation email** built 2026-09-13
+  (`_shared/billingEmails.ts`, sent by `stripe-webhook` on
+  `checkout.session.completed` via the shared Resend transport; spec
+  `billingEmails.spec`). Plan, trial end date, first-charge amount + date,
+  renewal terms "until you cancel", one-step cancel link, entity footer.
+  Known gap: a duplicate Stripe delivery would send it twice (no dedupe
+  table) — acceptable.
+- [ ] Verify on the next test checkout that the email arrives (webhook v2).
+- [ ] Pre-price-change notice when the founding price is retired — owed to
+  nobody: existing subscribers keep $39.99. Nothing to build.
+- [ ] Stripe Tax before live mode: Pennsylvania taxes digital products, so
+  PA parents owe sales tax from the first sale. Enable under Settings → Tax
+  and set `automatic_tax: { enabled: true }` on the Checkout session.
+- [ ] **Live mode uses a restricted key, not the standard secret key.**
+  Developers → API keys → Create restricted key, permissions: Checkout
+  Sessions *write*, Billing Portal *write* (configurations + sessions),
+  Prices *read*, Products *read*, Customers *read*, Subscriptions *read*.
+  Everything else *none*. Set it as `STRIPE_SECRET_KEY`. The standard
+  `sk_live_` key can do anything (refunds, payouts, deleting customers);
+  the functions only need the list above. Test mode keeps the standard
+  `sk_test_` key — no need to harden a sandbox.
+- [ ] Live-mode switch: activate the Stripe account (EIN, bank, statement
+  descriptor "LARKIT"), copy the product to live mode with the same lookup
+  keys, create the live webhook endpoint, set the live restricted key and
+  live `STRIPE_WEBHOOK_SECRET`.
+- [ ] Onboarding plan step says "or $8.99 monthly" but only starts the
+  annual plan — either add a monthly toggle or drop the phrase.
+- [ ] Set `VITE_PAYWALL_ENABLED=true` in Vercel Production; redeploy.
 
-- [ ] Choose the transactional sender (Resend / Postmark / SES).
-- [ ] Implement it in `supabase/functions/_shared/emailTransport.ts` (the one
-  swap point — nothing else changes), redeploy `request-consent` and
-  `consent-confirm`.
-- [ ] Domain auth on larkit.io: SPF, DKIM, DMARC. Deliverability is a
-  compliance dependency — a consent notice in spam means the account is stuck.
-- [ ] End-to-end rehearsal: add first kid → notice email arrives → confirm
-  link → profile appears + coppa_vpc event has all three timestamps →
-  confirmation email carries a revocation link → revocation link works.
-- [ ] Until this section is done, first-kid creation on prod sends nothing
-  (stub logs to function logs) — parents would be stuck at "check your
-  email." **Either finish §3 before or together with §1's deploy, or
-  temporarily feature-flag the consent gate.** ⚠️ decide explicitly.
+### Pilot / complimentary accounts
 
-## 4 · Blocks App Store submission (B2 — Apple credentials)
+**/admin → Comps tab** (grant by email, optional end date, revoke, list) —
+backed by the `admin-comps` Edge Function, which re-checks
+`profiles.is_admin` and writes with the service role. Same thing from a
+terminal: `npm run comp -- parent@example.com [--until YYYY-MM-DD] [--revoke]`
+/ `--list`. Either way it is an `entitlements` row with `product_id = 'comp'`,
+no source, no expiry — both platforms treat that as a promotional grant. The
+parent must have signed in once. A comp never replaces a live paid
+subscription; a real purchase later overwrites the comp.
+Until `VITE_PAYWALL_ENABLED=true` is set on prod, nobody needs a comp —
+every mode is free for everyone.
 
-- [ ] Replace bundle-id placeholder `com.kidmath.app` everywhere (project.yml,
-  StoreKit config, `APP_BUNDLE_ID` secret).
-- [ ] Set `APPLE_ROOT_CERTS_B64` + `APPSTORE_ENV` secrets so verify-entitlement
-  stops failing closed (501) for App Store receipts.
-- [ ] Sign in with Apple token revocation in delete-account (TODO in the
-  function; unskip the test in accountDeletion.spec.js).
+## 3 · Consent flow (B7 — email sender) — DONE 2026-09-12/13
+
+- [x] Sender: Resend. `RESEND_API_KEY` + `EMAIL_FROM="Larkit <hello@larkit.io>"`
+  set; `emailTransport.ts` swapped (PR #85).
+- [x] Domain auth on larkit.io: SPF, DKIM, DMARC verified.
+- [x] Links land on branded pages (`/confirm-consent`, `/revoke-consent`,
+  PR #82); explicit button POST, so scanner prefetch cannot grant/revoke.
+- [x] Resend supersedes prior pending requests; sent-state panel with 60s
+  cooldown (PR #91, migration 20260913020000).
+- [x] End-to-end rehearsal: real signup 2026-09-13 → notice email → confirm
+  → `consent_events` coppa_vpc row carries noticeSentAt, consentReceivedAt,
+  confirmationSentAt.
+- [ ] Revocation link from the confirmation email exercised once on prod
+  (not yet recorded here — do it during the §1 smoke pass).
+
+## 4 · Blocks App Store submission (B2 — waiting on Apple Developer Program)
+
+Enrollment submitted; nothing below can start until it completes.
+
+- [ ] Replace bundle-id placeholder `com.kidmath.app` in `ios/project.yml`,
+  both product IDs in `ios/KidMath/KidMath.storekit`, and the
+  `APP_BUNDLE_ID` function secret.
+- [ ] Set `APPLE_ROOT_CERTS_B64` + `APPSTORE_ENV` secrets so
+  `verify-entitlement` stops failing closed (501) for App Store receipts.
+  Coordinate with the first iOS release — old builds write `entitlements`
+  directly, new builds call the function.
+- [ ] Sign in with Apple token revocation in `delete-account`
+  (`TODO(B2)`); unskip the test in `accountDeletion.spec.js`. Needs the
+  Apple Developer key for the client_secret.
+- [ ] Team signing for Sign in with Apple on device; `kidmath://auth-callback`
+  redirect registered in the Supabase Google provider. Then configure the
+  Supabase Apple provider (Services ID, key, team id) and set
+  `VITE_APPLE_SIGNIN_ENABLED=true` in Vercel to show the web button again.
+- [ ] App Store Connect: app record, both subscriptions
+  (`…premium.monthly` $8.99, `…premium.annual` **$39.99** — the launch price
+  itself, no intro offer; Apple requires parity with web), TestFlight.
+- [ ] iOS paywall fallbacks: `PaywallView.swift` still falls back to literal
+  "$54.99"/"$8.99" when StoreKit products haven't loaded. Match the web —
+  disable purchase until `displayPrice` is real, never show a literal.
 - [ ] Privacy nutrition labels in ASC, checked against PrivacyInfo.xcprivacy
-  (now declares child name/age/grade — labels must match).
+  (declares child name/age/grade — labels must match).
 - [ ] Manual first-run pass in Xcode: purchase, sign-in, and every external
   link unreachable without solving the parental gate; three wrong answers →
   60s lockout that survives reopening the sheet.
+- [ ] **Larkit branding on iOS.** The app was built as KidMath before the
+  rebrand: display name, generated placeholder icon, and theme names all
+  predate Larkit. Decide the scope before submission.
 - [ ] The rest of docs/ios-appstore-checklist.md.
 
 ## 5 · Verify the automated controls actually run
 
-- [ ] `cron.job_run_details`: `purge-session-diagnostics` and
-  `expire-consent-requests` have each run at least once (check ~1 day after
-  the migrations were applied, then monthly per the security program §6).
-- [ ] `consent_events` rows appear on real signup/subscribe with the literal
-  disclosure text and real dates.
+- [x] `cron.job_run_details`: both `purge-session-diagnostics` (04:17 UTC)
+  and `expire-consent-requests` (04:43 UTC) run daily, every run
+  `succeeded` (checked 2026-09-13 via the SQL editor). Recheck monthly per
+  the security program §6.
+- [x] `consent_events` rows appear on real signup with the literal
+  disclosure text and real dates (verified 2026-09-13; `account` and
+  `coppa_vpc` kinds). Subscribe-time rows unverified until §2.
+- [ ] Google OAuth brand verification ("to continue to Larkit") — submitted
+  2026-09-11, pending at Google.
 
 ## 6 · Human review (lawyer, hours not a retainer) — from legal-implementation.md
 
@@ -127,7 +221,28 @@ Prod can carry all the code while staying closed to new users:
   docs/accessibility-audit.md has the ordered plan. Months; start early.
 - [ ] Tenancy ADR decision (docs/adr-001-tenancy.md) — approve/amend before
   real user volume makes the RLS rewrite expensive.
-- [ ] 24-month inactive-account purge (warning email part blocked on §3).
+- [ ] **24-month inactive-account purge.** A promise in the privacy policy
+  (§7.2 retention table: "24 months without a sign-in; we email you and
+  delete 30 days later absent a response"; `legalDocs.spec.js` asserts the
+  text). Nothing is built and nothing determines inactivity today. First
+  possible purge date is ~2028-09 (24 months after the first real signup),
+  so not a launch item — but it must exist before then.
+  - **Inactive =** no sign-in AND no usage in 24 months. Do not use
+    `auth.users.last_sign_in_at` alone: it updates on fresh login/OAuth
+    exchange, not on silent token refresh, so a parent whose phone stays
+    signed in while the kid practices weekly would look dormant. Also
+    require no `practice_sessions` row and no `progress` write for the
+    user in the window.
+  - **Mechanism,** following the `purge-session-diagnostics` /
+    `expire-consent-requests` pattern: (1) daily SQL cron finds accounts
+    past 24 months on both signals with no warning yet sent, inserts a row
+    in a small `account_purge_notices` table; (2) scheduled Edge Function
+    emails those parents via Resend (§3 sender) with a "sign in to keep
+    your account" link and stamps the row; (3) a second pass 30 days
+    later, still no activity, runs the same deletion path as
+    `delete-account` so kids, progress, and consent requests go together.
+    `consent_events` keep their own 3-year retention (no child data).
+    Any sign-in or practice in the 30-day window cancels the notice.
 - [ ] Admin view over consent_events (arbitration opt-out window evidence).
 
 ---

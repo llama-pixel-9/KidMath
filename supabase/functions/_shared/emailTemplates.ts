@@ -24,7 +24,8 @@ const HAIRLINE = "rgba(20,35,31,0.12)";
 const LOGO_URL = "https://www.larkit.io/icon-192.png";
 // Keep in sync with src/legal/entity.js — edge functions bundle only files
 // under supabase/functions/, so the constant can't be imported from there.
-const ENTITY_FOOTER = "Larkit Labs LLC \u00b7 502 W 7th St, Ste 100, Erie, PA 16502";
+const ENTITY_FOOTER =
+  "Larkit Labs LLC \u00b7 502 W 7th St, Ste 100, Erie, PA 16502 \u00b7 (814) 273-8760";
 
 /**
  * Remove blockquote blocks that are internal drafting notes ("remove before
@@ -257,6 +258,42 @@ export function consentConfirmedEmailHtml(args: {
     contentHtml: content,
     footerHtml:
       `You're receiving this because you confirmed parental consent for a child profile on larkit. ` +
+      `Questions: <a href="mailto:support@larkit.io" style="color:${TEAL};">support@larkit.io</a>`,
+  });
+}
+
+/** Subscription-started acknowledgment (see billingEmails.ts for the text
+ *  part, which is the legally load-bearing copy — keep the two in step). */
+export function subscriptionStartedEmailHtml(args: {
+  planName: string;
+  amount: string;
+  per: string;
+  trialLine: string;
+  renewLine: string;
+  billingUrl: string;
+  appBaseUrl: string;
+}): string {
+  const content =
+    `<div style="width:44px;height:7px;border-radius:4px;background:#f26b3a;margin:0 0 16px;"></div>` +
+    `<h1 style="margin:0 0 10px;font-family:${DISPLAY_FONT};font-weight:600;font-size:24px;line-height:1.3;color:${INK};">Welcome to larkit Plus</h1>` +
+    `<p style="${P_STYLE}">Thanks for subscribing. Every game, every kid in your household, printable flight logs, and progress that follows you across web, iPad, and iPhone.</p>` +
+    `<h2 style="margin:24px 0 8px;font-family:${DISPLAY_FONT};font-weight:600;font-size:17px;color:${INK};">Your copy of the terms</h2>` +
+    `<ul style="margin:0 0 12px;padding-left:20px;font-size:15px;line-height:1.65;color:${INK};">` +
+    `<li><strong>Plan:</strong> larkit Plus, ${escapeHtml(args.planName)} — ${escapeHtml(args.amount)} per ${escapeHtml(args.per)}</li>` +
+    `<li>${escapeHtml(args.trialLine)}</li>` +
+    `<li>${escapeHtml(args.renewLine)}</li>` +
+    `</ul>` +
+    `<h2 style="margin:24px 0 8px;font-family:${DISPLAY_FONT};font-weight:600;font-size:17px;color:${INK};">How to cancel</h2>` +
+    `<p style="${P_STYLE}">One step, any time, no phone call and no survey. Cancel during the trial and you will not be charged; cancel later and you keep access until the end of the period you already paid for.</p>` +
+    ctaButton("Manage or cancel", args.billingUrl) +
+    `<p style="margin:14px 0 0;font-size:12px;line-height:1.6;color:${MUTED};">` +
+    `<a href="${args.appBaseUrl}/terms" style="color:${TEAL};">Terms</a> \u00b7 ` +
+    `<a href="${args.appBaseUrl}/privacy" style="color:${TEAL};">Privacy</a></p>`;
+  return layout({
+    preheader: `Your larkit Plus terms, and the one-step cancel link.`,
+    contentHtml: content,
+    footerHtml:
+      `You're receiving this because you started a larkit Plus subscription with this email address. ` +
       `Questions: <a href="mailto:support@larkit.io" style="color:${TEAL};">support@larkit.io</a>`,
   });
 }

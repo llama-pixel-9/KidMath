@@ -18,7 +18,8 @@ enum GamFlags {
         if UserDefaults.standard.object(forKey: "gamAll") != nil {
             return UserDefaults.standard.bool(forKey: "gamAll")
         }
-        return false
+        // Web prod has had VITE_GAM_ALL=true since 2026-09-12 — iOS follows.
+        return true
     }
 
     nonisolated static func step(_ key: String) -> Bool {
@@ -41,4 +42,16 @@ enum GamFlags {
     /// §14 ambient motion (idle bob etc.); always subordinate to the OS
     /// reduce-motion setting and Calm mode.
     nonisolated static var meadowMotion: Bool { step("gamMeadowMotion") }
+    /// §07 Field Guide + §08 Give a home (web: VITE_GAM_BIRD_STORE).
+    nonisolated static var birdStore: Bool { step("gamBirdStore") }
+    /// Ladder v2 — relative-pace promotion, no-repeat window
+    /// (web: VITE_GAM_LADDER_V2). Passed to createAdaptiveSession as
+    /// options.ladderV2; the engine owns the rule, so both platforms climb
+    /// the same ladder.
+    nonisolated static var ladderV2: Bool { step("gamLadderV2") }
+    /// Teach-don't-grade second chance with a scaffold on the first miss
+    /// (web: VITE_GAM_SECOND_CHANCE). Not yet rendered on iOS.
+    nonisolated static var secondChance: Bool { step("gamSecondChance") }
+    /// Read-aloud prompts (web: VITE_GAM_READ_ALOUD). Not yet wired on iOS.
+    nonisolated static var readAloud: Bool { step("gamReadAloud") }
 }

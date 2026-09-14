@@ -69,7 +69,7 @@ import FlightReport from "./engagement/FlightReport.jsx";
 
 // The two CCSS compare structures whose wording points at the WRONG operation
 // — the difficult-tier trap the Word Detective badge rewards beating.
-const LANGUAGE_TRAP_STRUCTURES = new Set(["compareBiggerFewer", "compareSmallerMore"]);
+import { isLanguageTrapWin } from "./engagement/engagementRules.js";
 import { useAuth } from "./useAuth";
 import { maxLevelForMode } from "./modeLevels.js";
 import { useTheme } from "./useTheme";
@@ -98,6 +98,44 @@ import ConfettiRain from "./components/ConfettiRain.jsx";
 import LarkMark from "./components/LarkMark.jsx";
 import QuestionStage from "./components/QuestionStage.jsx";
 import { getWidget } from "./components/widgetRegistry.js";
+import SidePane from "./components/SidePane.jsx";
+import Scratchpad from "./components/Scratchpad.jsx";
+import HintPane from "./components/HintPane.jsx";
+
+const WORK_PANE_KEY = "kidmath-workpane-open";
+function loadWorkPaneOpen() {
+  try {
+    return localStorage.getItem(WORK_PANE_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+function saveWorkPaneOpen(open) {
+  try {
+    localStorage.setItem(WORK_PANE_KEY, open ? "1" : "0");
+  } catch {
+    /* private mode */
+  }
+}
+
+function PencilIcon({ size = 20, className = "" }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+      <path d="M12 20h9" />
+      <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+    </svg>
+  );
+}
+
+function BulbIcon({ size = 18, className = "" }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+      <path d="M9 18h6" />
+      <path d="M10 21h4" />
+      <path d="M12 3a6 6 0 0 0-4 10.5c.7.6 1 1.4 1 2.5h6c0-1.1.3-1.9 1-2.5A6 6 0 0 0 12 3z" />
+    </svg>
+  );
+}
 
 const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork, BarChart3, CircleDot, Sigma, Ruler, Coins, Spline, Scale, Clock, ChartColumn, Triangle, Shapes };
 
@@ -756,6 +794,10 @@ export default function MathExplorer({ initialMode }) {
   const [muted, setMutedState] = useState(isMuted);
   const [allowWordProblems, setAllowWordProblems] = useState(() => loadAllowWordProblemsSync());
   const [calmMode, setCalmMode] = useState(() => loadCalmMode());
+  // Side pane: "work" (the drawing pad — remembered across sessions) or
+  // "hint" (per question; closes when the question changes). One at a time.
+  const [pane, setPane] = useState(() => (loadWorkPaneOpen() ? "work" : null));
+  const hintUsedRef = useRef(false);
   const questionStartTime = useRef(Date.now());
   const loginTimerRef = useRef(null);
   const questionKeyRef = useRef(0);
@@ -828,6 +870,8 @@ export default function MathExplorer({ initialMode }) {
     setCurrentQ(question);
     setIsRetry(retry);
     setScaffold(null);
+    hintUsedRef.current = false;
+    setPane((p) => (p === "hint" ? null : p));
     stopSpeaking();
     questionStartTime.current = Date.now();
     questionKeyRef.current += 1;
@@ -1164,6 +1208,7 @@ export default function MathExplorer({ initialMode }) {
         wasRetry: isRetry,
         responseTimeMs,
         level: session.level,
+        hintUsed: hintUsedRef.current,
       });
       qaUpdate({
         result: {
@@ -1179,7 +1224,7 @@ export default function MathExplorer({ initialMode }) {
 
         // A first-try win on a language-trap structure ("3 fewer... so ADD")
         // feeds the Word Detective badge.
-        if (!isRetry && LANGUAGE_TRAP_STRUCTURES.has(currentQ.metadata?.structureType)) {
+        if (isLanguageTrapWin(currentQ, isRetry)) {
           sessionFactsRef.current.trapWins += 1;
         }
 
@@ -1296,6 +1341,26 @@ export default function MathExplorer({ initialMode }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const toggleWorkPane = () => {
+    setPane((p) => {
+      const next = p === "work" ? null : "work";
+      saveWorkPaneOpen(next === "work");
+      return next;
+    });
+  };
+
+  const openHint = () => {
+    if (!hintUsedRef.current) {
+      hintUsedRef.current = true;
+      telemetryRef.current.recordEvent("hint_opened", {
+        mode,
+        subskill: currentQ?.metadata?.subskill || null,
+        level: session.level,
+      });
+    }
+    setPane((p) => (p === "hint" ? null : "hint"));
+  };
+
   const handleLoginDismiss = () => {
     telemetryRef.current.recordEvent("login_modal_dismissed");
     setShowLoginPrompt(false);
@@ -1338,7 +1403,7 @@ export default function MathExplorer({ initialMode }) {
 
   return (
     <MotionConfig reducedMotion={lowMotionMode ? "always" : "never"}>
-      <main className={`flex-1 ${theme.playBg} flex flex-col`}>
+      <main className={`session flex-1 ${theme.playBg} flex flex-col${pane ? " session--pane-open" : ""}`}>
       <header className="no-print flex items-center justify-between px-4 py-3">
         <div className="flex items-center gap-2">
           <div className={`${modeColor} p-2 rounded-xl`}>
@@ -1347,6 +1412,16 @@ export default function MathExplorer({ initialMode }) {
           <h1 className={`text-xl font-display font-semibold ${theme.textPrimary}`}>{getModeLabel(mode)}</h1>
         </div>
         <div className="flex items-center gap-2">
+          <motion.button
+            className={`p-2 rounded-xl shadow cursor-pointer ${pane === "work" ? "bg-ink text-cream" : theme.cardBg}`}
+            whileTap={{ scale: 0.9 }}
+            onClick={toggleWorkPane}
+            aria-label={pane === "work" ? "Close the work space" : "Open the work space"}
+            aria-pressed={pane === "work"}
+            data-testid="workpane-toggle"
+          >
+            <PencilIcon className={pane === "work" ? "text-cream" : theme.textSecondary} />
+          </motion.button>
           <motion.button
             className={`p-2 rounded-xl ${theme.cardBg} shadow cursor-pointer`}
             whileTap={{ scale: 0.9 }}
@@ -1411,6 +1486,7 @@ export default function MathExplorer({ initialMode }) {
           scaffold={scaffold}
           attempt={scaffold ? 1 : 0}
           onSpeak={gamReadAloud ? () => speak(questionText(currentQ)) : null}
+          onHint={openHint}
           answerType={answerType}
           lowMotionMode={lowMotionMode}
           lowEndDevice={lowEndDevice}
@@ -1431,6 +1507,26 @@ export default function MathExplorer({ initialMode }) {
 
         <StarRow count={session.firstTryCorrect} />
       </div>
+
+      <SidePane
+        open={pane === "work"}
+        title="Work space"
+        icon={<PencilIcon size={18} className="text-teal" />}
+        onClose={toggleWorkPane}
+        testId="work-pane"
+      >
+        <Scratchpad key={questionKeyRef.current} />
+      </SidePane>
+
+      <SidePane
+        open={pane === "hint"}
+        title="Hint"
+        icon={<BulbIcon className="text-sun" />}
+        onClose={() => setPane(null)}
+        testId="hint-pane-shell"
+      >
+        <HintPane question={currentQ} />
+      </SidePane>
 
       <AnimatePresence>
         {showLevelUp && <LevelUpToast />}

@@ -59,6 +59,13 @@ export function buildFeeder(scene, zone, region) {
     fixture: o.fixture,
     zones: [],
     rings: [],
+    /** A chore: back to `present` items (the rest were eaten overnight). */
+    reset(present) {
+      this.clear();
+      for (const img of items) img.destroy();
+      items.length = 0;
+      for (let i = 0; i < present; i++) addItem(i, false);
+    },
     /** Show, don't tell: count the empty spots, the present items, or all. */
     hint(mode = "empty") {
       const all = Array.from({ length: o.capacity }, (_, i) => spotFor(i));

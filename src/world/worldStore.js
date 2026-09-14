@@ -45,6 +45,7 @@ export function emptyWorldState() {
     secrets: [], // hidden things found (secrets.js ids)
     visitorDay: null, // the last calendar day the visitor was helped
     migrationDone: false, // the Big Migration finale has been played
+    chores: { day: null, done: [] }, // today's chores finished
   };
 }
 
@@ -83,6 +84,7 @@ export function loadWorldState() {
       secrets: Array.isArray(raw.secrets) ? raw.secrets.filter((d) => typeof d === "string") : [],
       visitorDay: typeof raw.visitorDay === "string" ? raw.visitorDay : null,
       migrationDone: Boolean(raw.migrationDone),
+      chores: raw.chores && typeof raw.chores.day === "string" && Array.isArray(raw.chores.done) ? { day: raw.chores.day, done: raw.chores.done } : { day: null, done: [] },
     };
   } catch {
     return emptyWorldState();
@@ -267,4 +269,20 @@ export function applyVisitorHelped(state, dayKey) {
 export function applyMigrationDone(state) {
   if (state.migrationDone) return state;
   return { ...state, migrationDone: true };
+}
+
+/** A chore finished: two stars, remembered for the day (yesterday's list is dropped). */
+export function applyChoreDone(state, choreId, dayKey, stars = 2) {
+  const done = state.chores.day === dayKey ? state.chores.done : [];
+  if (done.includes(choreId)) return state;
+  return {
+    ...state,
+    stars: state.stars + stars,
+    chores: { day: dayKey, done: [...done, choreId] },
+    egg: state.egg ? { ...state.egg, warmth: state.egg.warmth + stars } : state.egg,
+  };
+}
+
+export function choreDone(state, choreId, dayKey) {
+  return state.chores.day === dayKey && state.chores.done.includes(choreId);
 }

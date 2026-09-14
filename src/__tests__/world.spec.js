@@ -26,6 +26,7 @@ import { timeOfDay } from "../world/worldTime";
 import { zoomFor } from "../world/engine/cameraRig";
 import { VISITORS, visitorForDate, visitorQuest } from "../world/engine/visitor";
 import { MIGRATION_STOPS, migrationQuest, migrationSpot } from "../world/engine/migration";
+import { choresFor } from "../world/engine/chores";
 import {
   emptyWorldState,
   applyQuestComplete,
@@ -45,6 +46,8 @@ import {
   applyLastRegion,
   applySecretFound,
   storageKey,
+  applyChoreDone,
+  choreDone,
 } from "../world/worldStore";
 
 const publicDir = path.resolve(__dirname, "../../public");
@@ -149,6 +152,51 @@ describe("the Big Migration", () => {
     expect(regionAtX(spot.x).id).toBe("cliffs");
     expect(spot.y).toBeGreaterThanOrEqual(GROUND_TOP);
     expect(spot.y).toBeLessThanOrEqual(GROUND_BOTTOM);
+  });
+});
+
+describe("daily chores", () => {
+  const allDone = (zone) => Object.fromEntries(zone.quests.map((q) => [q.steps.at(-1).fixture, true]));
+
+  it("exist only where the story quest is done, two a day, honest and deterministic", () => {
+    for (const zone of ZONE_LIST) {
+      expect(choresFor(zone, "2026-09-13", {})).toEqual([]);
+      const a = choresFor(zone, "2026-09-13", allDone(zone));
+      const b = choresFor(zone, "2026-09-13", allDone(zone));
+      expect(a.map((c) => c.id)).toEqual(b.map((c) => c.id));
+      expect(a.length).toBe(2);
+      for (const chore of a) {
+        const o = zone.objects[chore.chore.target];
+        const pick = chore.steps.find((s) => s.type === "pickNumber");
+        const place = chore.steps.find((s) => s.type === "placeItems");
+        expect(pick.options).toContain(pick.answer);
+        expect(new Set(pick.options).size).toBe(3);
+        expect(pick.options.every((n) => n >= 1)).toBe(true);
+        if (chore.chore.target === "feeder") expect(place.count).toBe(o.capacity - chore.chore.present);
+        if (chore.chore.target === "bridge") expect(place.count).toBe(o.slots - chore.chore.present);
+        if (chore.chore.target === "gate") expect(place.count).toBe(10 - chore.chore.present);
+        if (chore.chore.target === "nests") expect(place.count).toBe(o.spots.length * o.eggsPer);
+        expect(chore.steps.at(-1).stars).toBe(2);
+        if (chore.npcId) expect(zone.npcs.some((n) => n.id === chore.npcId)).toBe(true);
+      }
+    }
+  });
+
+  it("vary from day to day", () => {
+    const zone = ZONE_LIST[0];
+    const days = ["2026-09-13", "2026-09-14", "2026-09-15", "2026-09-16", "2026-09-17"];
+    const sigs = new Set(days.map((d) => choresFor(zone, d, allDone(zone)).map((c) => `${c.chore.target}:${c.chore.present}`).join(",")));
+    expect(sigs.size).toBeGreaterThan(2);
+  });
+
+  it("are remembered for the day only", () => {
+    let s = applyChoreDone(emptyWorldState(), "chore-x", "2026-09-13");
+    expect(s.stars).toBe(2);
+    expect(choreDone(s, "chore-x", "2026-09-13")).toBe(true);
+    expect(choreDone(s, "chore-x", "2026-09-14")).toBe(false);
+    expect(applyChoreDone(s, "chore-x", "2026-09-13")).toBe(s);
+    s = applyChoreDone(s, "chore-y", "2026-09-14");
+    expect(s.chores.done).toEqual(["chore-y"]);
   });
 });
 

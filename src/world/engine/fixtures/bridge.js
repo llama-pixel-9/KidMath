@@ -172,6 +172,28 @@ export function buildBridge(scene, zone, region) {
       this.rings = [];
       drawOutlines(false);
     },
+    /** A chore: the wind took some pieces — back to `present` of them. */
+    reset(present) {
+      this.clear();
+      const keep = new Set(presentIdx.slice(0, present));
+      for (let i = 0; i < o.slots; i++) {
+        if (keep.has(i)) continue;
+        if (pieces[i]) {
+          pieces[i].destroy();
+          pieces[i] = null;
+        }
+        filled[i] = false;
+      }
+      // Fill the kept set up to `present` if the original pattern was shorter.
+      let have = filled.filter(Boolean).length;
+      for (let i = 0; i < o.slots && have < present; i++) {
+        if (filled[i]) continue;
+        filled[i] = true;
+        pieces[i] = drawPiece(i);
+        have += 1;
+      }
+      drawOutlines(false);
+    },
     /** Tap points for the empty slots (e2e and the companion's pointing). */
     targets() {
       return emptyIdx().map((i) => ({ x: slotPos[i].x, y: vertical ? slotPos[i].y : cy - 14 }));

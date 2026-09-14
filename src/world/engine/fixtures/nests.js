@@ -57,6 +57,15 @@ export function buildNests(scene, zone, region) {
     fixture: o.fixture,
     zones: [],
     rings: [],
+    /** A chore: the eggs hatched and flew — every nest empty again. */
+    reset() {
+      this.clear();
+      for (const nest of nests) {
+        nest.eggs.forEach((e) => e.destroy());
+        nest.eggs = [];
+      }
+      total = 0;
+    },
     /** Show, don't tell: count every egg, the eggs in one nest, or the nests. */
     hint(mode = "eggs") {
       if (mode === "nests") return hintPop(nests.map((n) => ({ x: n.x, y: n.y - o.size * depthScaleAt(n.y) * 0.4 })));

@@ -82,6 +82,14 @@ export function buildGate(scene, zone, region) {
     board,
     gate,
     isOpen: () => open,
+    /** A chore: the frame dimmed overnight to `lit` dots (the gate stays open). */
+    reset(lit) {
+      this.clear();
+      dots.forEach((d, i) => {
+        d.lit = i < lit;
+        d.img.setTexture(d.lit ? "tfdot-on" : "tfdot-off");
+      });
+    },
     /** Show, don't tell: count the unlit (or lit) dots on the frame. */
     hint(mode = "unlit") {
       const list = dots.filter((d) => (mode === "lit" ? d.lit : !d.lit));

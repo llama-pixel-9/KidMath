@@ -22,6 +22,8 @@ import {
   applySecretFound,
   applyVisitorHelped,
   applyMigrationDone,
+  applyChoreDone,
+  choreDone,
 } from "../worldStore";
 import { groupPlayed } from "../mastery/masteryModel";
 import { birdSize } from "../worldArt";
@@ -51,6 +53,7 @@ import { visitorForDate, visitorQuest, VISITOR_SPOT } from "../engine/visitor";
 import { seasonForDate } from "../../engagement/seasons.js";
 import { MIGRATION_STOPS, migrationSpot, migrationQuest } from "../engine/migration";
 import { music } from "../worldMusic";
+import { choresFor } from "../engine/chores";
 import { openSessionRecord, appendAttempt, closeSessionRecord, saveSessionRecord } from "../../analytics/sessionLog";
 import { QuestRunner } from "../engine/questRunner";
 import { sparkle, DEPTH } from "../engine/juice";
@@ -444,9 +447,23 @@ export default class WorldScene extends Phaser.Scene {
 
   // ------------------------------------------------------------- quests
 
+  /** Story quests still open, then today's chores not yet done. */
+  openQuests(zone) {
+    const today = todayKey();
+    const chores = choresFor(zone, today, this.world.fixtures).filter((c) => !choreDone(this.world, c.id, today));
+    return [...availableQuests(this.world, zone), ...chores];
+  }
+
+  /** A chore starts by undoing a little of yesterday's work. */
+  prepareQuest(zone, quest) {
+    if (!quest.chore) return;
+    const fx = this.fixtures[zone.id]?.[quest.chore.target];
+    fx?.reset?.(quest.chore.present);
+  }
+
   onNpcTap(zone, region, npc) {
     if (this.runner.isActive || this.inputLocked) return;
-    const quest = availableQuests(this.world, zone).find((q) => q.npcId === npc.def.id) ?? null;
+    const quest = this.openQuests(zone).find((q) => q.npcId === npc.def.id) ?? null;
     npc.greet(this.avatar.x);
     const spot = npc.talkSpot();
     this.avatar.goTo(spot.x, spot.y, {
@@ -459,6 +476,7 @@ export default class WorldScene extends Phaser.Scene {
             this.world = applyTutorialDone(this.world);
             this.save();
           }
+          this.prepareQuest(zone, quest);
           this.logStart(zone, quest);
           this.runner.start(zone, quest, npc);
         } else {
@@ -479,7 +497,7 @@ export default class WorldScene extends Phaser.Scene {
   onGateTap(zone) {
     if (this.runner.isActive || this.inputLocked) return;
     const gate = this.fixtures[zone.id].gate;
-    const quest = availableQuests(this.world, zone).find((q) => q.id === zone.objects.gate.questId);
+    const quest = this.openQuests(zone).find((q) => q.id === zone.objects.gate.questId || q.chore?.target === "gate");
     if (!quest) {
       if (gate.isOpen() && zone.id === "cliffs" && this.world.migrationDone) this.flockFlyover(regionById(zone.regionId));
       else if (gate.isOpen()) this.toast("The gate is open.", "The way ahead is clear!");
@@ -489,6 +507,7 @@ export default class WorldScene extends Phaser.Scene {
     this.avatar.goTo(spot.x, spot.y, {
       onArrive: () => {
         this.avatar.face(1);
+        this.prepareQuest(zone, quest);
         this.logStart(zone, quest);
         this.runner.start(zone, quest, null);
       },
@@ -496,7 +515,8 @@ export default class WorldScene extends Phaser.Scene {
   }
 
   onCelebrate(quest, step) {
-    this.world = applyQuestComplete(this.world, quest.id, step.stars, step.fixture);
+    if (quest.chore) this.world = applyChoreDone(this.world, quest.id, todayKey(), step.stars);
+    else this.world = applyQuestComplete(this.world, quest.id, step.stars, step.fixture);
     this.save();
     this.refreshPet();
   }
@@ -533,6 +553,7 @@ export default class WorldScene extends Phaser.Scene {
     const last = quest.steps.at(-1);
     this.refreshMarkers();
     this.maybeGiftEgg();
+    if (quest.chore) return;
     if (last.fixture === zone.objects.gate.fixture) {
       const next = REGIONS[region.index + 1];
       if (next) this.time.delayedCall(500, () => this.discover(next));
@@ -612,7 +633,7 @@ export default class WorldScene extends Phaser.Scene {
       const zone = ZONES[region.id];
       const npcs = this.npcs[region.id];
       if (!zone || !npcs) continue;
-      const open = availableQuests(this.world, zone);
+      const open = this.openQuests(zone);
       for (const n of npcs.list) n.setMarker(this.discovered.has(region.id) && open.some((q) => q.npcId === n.def.id));
     }
     this.emitState();

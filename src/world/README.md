@@ -48,7 +48,11 @@ gate is the finale: the whole flock flies past.
   night, grows with practice (`avatar.js createFollower`).
 - **Daily hooks in growth framing.** Today's visitor lands on the beach with
   one problem worth two stars (`engine/visitor.js`); the island follows the
-  season (`engine/seasonal.js`); the seed plot sprouts tomorrow.
+  season (`engine/seasonal.js`); the seed plot sprouts tomorrow; and once a
+  bird's own quest is done it has a daily chore — the feeder emptied, planks
+  came loose, the frame dimmed, the nests need eggs — same fixtures, new
+  numbers seeded by the date, two per region per day (`engine/chores.js`,
+  fixtures' `reset()`).
 - **The map is the island.** A parchment scroll with the regions as they
   are, the skylark's position, mist, per-region progress (`MapPanel.jsx`).
 - **A finale.** The lookout gate on the cliffs starts the Big Migration:

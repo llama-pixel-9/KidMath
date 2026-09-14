@@ -69,7 +69,7 @@ import FlightReport from "./engagement/FlightReport.jsx";
 
 // The two CCSS compare structures whose wording points at the WRONG operation
 // — the difficult-tier trap the Word Detective badge rewards beating.
-const LANGUAGE_TRAP_STRUCTURES = new Set(["compareBiggerFewer", "compareSmallerMore"]);
+import { isLanguageTrapWin } from "./engagement/engagementRules.js";
 import { useAuth } from "./useAuth";
 import { maxLevelForMode } from "./modeLevels.js";
 import { useTheme } from "./useTheme";
@@ -1224,7 +1224,7 @@ export default function MathExplorer({ initialMode }) {
 
         // A first-try win on a language-trap structure ("3 fewer... so ADD")
         // feeds the Word Detective badge.
-        if (!isRetry && LANGUAGE_TRAP_STRUCTURES.has(currentQ.metadata?.structureType)) {
+        if (isLanguageTrapWin(currentQ, isRetry)) {
           sessionFactsRef.current.trapWins += 1;
         }
 

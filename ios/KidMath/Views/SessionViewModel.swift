@@ -56,6 +56,9 @@ final class SessionViewModel: ObservableObject {
     /// the kid leaves early with three or more answers in it.
     private let practiceLog: PracticeLog?
     private var record: PracticeLog.Record?
+    /// Word Detective input: first-try wins on language-trap structures
+    /// (shared rule isLanguageTrapWin), counted per flight like the web.
+    private var trapWins = 0
     private let progressStore: ProgressStore
     private let engagementStore: EngagementStore
 
@@ -233,6 +236,9 @@ final class SessionViewModel: ObservableObject {
                 wasRetry: isRetry
             )
             phase = .feedback(correct: outcome.correct)
+            if outcome.correct, (try? engine.call("isLanguageTrapWin", [question, isRetry]))?.toBool() == true {
+                trapWins += 1
+            }
             record = practiceLog?.append(
                 record, question: question, submitted: value, correct: outcome.correct,
                 wasRetry: isRetry, responseTimeMs: responseTimeMs, level: level
@@ -342,7 +348,14 @@ final class SessionViewModel: ObservableObject {
 
         if let payout {
             flightPayout = payout
-            flightSummary = engagementStore.recordSessionEnd(starsEarned: starsEarned)
+            let facts = EngagementStore.SessionFacts(
+                perfect: questionsAnswered > 0 && firstTryCorrect == questionsAnswered,
+                comebacks: ProgressStore.int(snapshot["retriesMastered"]),
+                trapWins: trapWins,
+                levelReached: ProgressStore.int(levelToSave, default: level)
+            )
+            trapWins = 0
+            flightSummary = engagementStore.recordSessionEnd(starsEarned: starsEarned, facts: facts)
         }
 
         let progress = await progressStore.load(mode: modeId)

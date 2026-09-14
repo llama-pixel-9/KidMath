@@ -25,8 +25,79 @@ final class EngagementStore {
 
     private let defaults: UserDefaults
 
+    /// The shared engagement RULES (src/engagement/engagementRules.js) run in
+    /// one long-lived JSContext: session-end transition, sticker spend, the
+    /// badge and sticker catalogues. One instance for the app — the bundle is
+    /// parsed once. nil only if the engine fails to load, in which case the
+    /// step-1 Swift mirror below still banks stars.
+    nonisolated(unsafe) static let rules: EngineBridge? = try? EngineBridge()
+
     init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
+    }
+
+    // MARK: - Facts a session measures (applySessionEnd's `facts`)
+
+    struct SessionFacts {
+        var perfect = false
+        var comebacks = 0
+        var trapWins = 0
+        var levelReached = 1
+
+        var json: [String: Any] {
+            ["perfect": perfect, "comebacks": comebacks, "trapWins": trapWins, "levelReached": levelReached]
+        }
+    }
+
+    /// A badge or sticker as the catalogue describes it.
+    struct Badge: Identifiable, Equatable {
+        let id: String
+        let emoji: String
+        let name: String
+        let blurb: String
+    }
+
+    struct Sticker: Identifiable, Equatable {
+        let id: String
+        let emoji: String
+        let name: String
+        let cost: Int
+    }
+
+    static func badges() -> [Badge] {
+        guard let raw = try? rules?.call("badges").toArray() as? [[String: Any]] else { return [] }
+        return raw.map { Badge(id: $0["id"] as? String ?? "", emoji: $0["emoji"] as? String ?? "", name: $0["name"] as? String ?? "", blurb: $0["blurb"] as? String ?? "") }
+    }
+
+    static func stickers() -> [Sticker] {
+        guard let raw = try? rules?.call("stickers").toArray() as? [[String: Any]] else { return [] }
+        return raw.map { Sticker(id: $0["id"] as? String ?? "", emoji: $0["emoji"] as? String ?? "", name: $0["name"] as? String ?? "", cost: ($0["cost"] as? NSNumber)?.intValue ?? 0) }
+    }
+
+    /// Badge ids the kid has earned, in the order earned.
+    func earnedBadgeIds() -> [String] {
+        ((load()["badges"] as? [[String: Any]]) ?? []).compactMap { $0["id"] as? String }
+    }
+
+    func ownedStickerIds() -> [String] {
+        (load()["stickers"] as? [String]) ?? []
+    }
+
+    /// Today's stars, treating a stale todayDay as an empty day.
+    nonisolated static func starsToday(_ state: [String: Any], dayKey: String = todayKey()) -> Int {
+        (state["todayDay"] as? String) == dayKey ? ProgressStore.int(state["todayStars"]) : 0
+    }
+
+    /// Buy a sticker through the shared spend rule; false when refused
+    /// (already owned, or the balance is short). Persists on success.
+    @discardableResult
+    func buySticker(_ sticker: Sticker) -> Bool {
+        guard let rules = Self.rules else { return false }
+        let payload: [String: Any] = ["id": sticker.id, "emoji": sticker.emoji, "name": sticker.name, "cost": sticker.cost]
+        guard let result = try? rules.call("applySpend", [load(), payload]), !result.isNull, !result.isUndefined,
+              let next = result.toDictionary() as? [String: Any] else { return false }
+        persist(next)
+        return true
     }
 
     // MARK: - Day math (device-LOCAL calendar day, like a child counts days)
@@ -125,6 +196,11 @@ final class EngagementStore {
         let streak: Int
         let balance: Int
         let firstWeek: Bool
+        /// Badges earned by THIS session (web: events.newBadges).
+        var newBadges: [Badge] = []
+        /// Exactly the crossing of the daily goal, so the toast fires once a day.
+        var goalJustMet = false
+        var streakExtended = false
     }
 
     /// Bank the flight's stars, roll the local-day streak, stamp the first
@@ -132,7 +208,33 @@ final class EngagementStore {
     /// the stars for the Meadow's nest drop. Persists and returns the summary
     /// the Flight Report shows.
     @discardableResult
-    func recordSessionEnd(starsEarned: Int, dayKey: String = EngagementStore.todayKey()) -> SessionEndResult {
+    func recordSessionEnd(starsEarned: Int, facts: SessionFacts = SessionFacts(), dayKey: String = EngagementStore.todayKey()) -> SessionEndResult {
+        // The shared rule when the engine is up — identical transition to the
+        // web, badges and daily goal included.
+        if let rules = Self.rules,
+           let result = try? rules.callDictionary("applySessionEnd", [load(), starsEarned, dayKey, facts.json]),
+           let next = result["state"] as? [String: Any] {
+            persist(next)
+            let events = result["events"] as? [String: Any] ?? [:]
+            let badges = (events["newBadges"] as? [[String: Any]] ?? []).map {
+                Badge(id: $0["id"] as? String ?? "", emoji: $0["emoji"] as? String ?? "", name: $0["name"] as? String ?? "", blurb: $0["blurb"] as? String ?? "")
+            }
+            return SessionEndResult(
+                state: next,
+                streak: Self.currentStreak(next, dayKey: dayKey),
+                balance: Self.starBalance(next),
+                firstWeek: Self.isFirstWeek(next, dayKey: dayKey),
+                newBadges: badges,
+                goalJustMet: (events["goalJustMet"] as? Bool) == true,
+                streakExtended: (events["streakExtended"] as? Bool) == true
+            )
+        }
+        return recordSessionEndMirror(starsEarned: starsEarned, dayKey: dayKey)
+    }
+
+    /// The step-1 Swift mirror (stars, streak, first flight, egg warmth) —
+    /// only reached if the engine failed to load.
+    private func recordSessionEndMirror(starsEarned: Int, dayKey: String) -> SessionEndResult {
         var state = load()
         let before = (state["todayDay"] as? String) == dayKey ? ProgressStore.int(state["todayStars"]) : 0
 

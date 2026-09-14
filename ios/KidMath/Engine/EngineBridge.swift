@@ -404,7 +404,7 @@ final class EngineBridge {
         return text
     }
 
-    private func call(_ method: String, _ arguments: [Any] = []) throws -> JSValue {
+    func call(_ method: String, _ arguments: [Any] = []) throws -> JSValue {
         exceptions.message = nil
         guard let result = api.invokeMethod(method, withArguments: arguments) else {
             throw EngineError.badResult("\(method) returned nothing")

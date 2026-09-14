@@ -14,6 +14,14 @@ struct SessionView: View {
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @StateObject private var viewModel: SessionViewModel
 
+    /// Side pane (web SidePane.jsx): the hint or the work space. A right
+    /// column when the play area is 800pt or wider (iPad landscape), a bottom
+    /// sheet below that. The work pane's open state persists on the web's
+    /// key; the hint pane closes with each new question.
+    enum Pane: String { case hint, work }
+    @State private var pane: Pane? = UserDefaults.standard.string(forKey: "kidmath-workpane-open") == "1" ? .work : nil
+    private static let sidePaneBreakpoint: CGFloat = 800
+
     init(mode: ModeInfo) {
         self.mode = mode
         let app = AppEnvironment.current
@@ -35,7 +43,27 @@ struct SessionView: View {
                 // no spinner, no layout jump when the question lands.
                 skeletonCard
             case .question, .feedback:
-                playArea
+                GeometryReader { proxy in
+                    let wide = proxy.size.width >= Self.sidePaneBreakpoint
+                    HStack(spacing: 0) {
+                        playArea
+                        if wide, let pane {
+                            sidePaneContent(pane)
+                                .frame(width: 340)
+                                .background(theme.cardBackground)
+                                .overlay(alignment: .leading) { Rectangle().fill(Theme.ink.opacity(0.08)).frame(width: 1) }
+                                .transition(.move(edge: .trailing))
+                        }
+                    }
+                    .animation(.easeOut(duration: 0.2), value: pane)
+                    .sheet(isPresented: Binding(get: { !wide && pane != nil }, set: { if !$0 { closePane() } })) {
+                        if let pane {
+                            sidePaneContent(pane)
+                                .presentationDetents([.medium, .large])
+                                .presentationDragIndicator(.visible)
+                        }
+                    }
+                }
             case .fledgingOffer(let level):
                 FledgingOfferView(
                     level: level,
@@ -96,6 +124,9 @@ struct SessionView: View {
         }
         .task { await viewModel.start() }
         .onDisappear { leaveSession() }
+        .onChange(of: viewModel.questionKey) { _, _ in
+            if pane == .hint { pane = nil }
+        }
     }
 
     private var skeletonCard: some View {
@@ -129,6 +160,51 @@ struct SessionView: View {
     /// early still reaches the parent report as a partial record.
     private func leaveSession() {
         viewModel.savePartialIfAbandoned()
+    }
+
+    private func closePane() {
+        if pane == .work { UserDefaults.standard.set("0", forKey: "kidmath-workpane-open") }
+        pane = nil
+    }
+
+    private func toggleWorkPane() {
+        let next: Pane? = pane == .work ? nil : .work
+        UserDefaults.standard.set(next == .work ? "1" : "0", forKey: "kidmath-workpane-open")
+        pane = next
+    }
+
+    private func openHint() {
+        viewModel.markHintUsed()
+        pane = pane == .hint ? nil : .hint
+    }
+
+    @ViewBuilder
+    private func sidePaneContent(_ pane: Pane) -> some View {
+        VStack(spacing: 0) {
+            HStack {
+                Label(pane == .hint ? "Hint" : "Work space", systemImage: pane == .hint ? "lightbulb.fill" : "pencil.tip")
+                    .font(theme.bodyFont(size: 15, weight: .heavy)).foregroundStyle(Theme.ink)
+                Spacer()
+                Button { closePane() } label: {
+                    Image(systemName: "xmark").font(.system(size: 13, weight: .bold)).foregroundStyle(Theme.ink)
+                        .frame(width: 32, height: 32).background(Circle().fill(Theme.ink.opacity(0.06)))
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel(pane == .hint ? "Close the hint" : "Close the work space")
+            }
+            .padding(.horizontal, 16).padding(.top, 14).padding(.bottom, 6)
+            switch pane {
+            case .hint:
+                if let hint = viewModel.hint {
+                    HintPaneView(hint: hint)
+                } else {
+                    Text("No hint for this one — give it a go.").padding()
+                }
+            case .work:
+                WorkspaceView().id(viewModel.questionKey)
+            }
+        }
+        .background(theme.cardBackground)
     }
 
     // MARK: - Play area (centered column, like the web's max-w-sm)
@@ -193,6 +269,26 @@ struct SessionView: View {
                         .foregroundStyle(Theme.ember)
                 }
             }
+
+            Button { openHint() } label: {
+                Image(systemName: "lightbulb.fill")
+                    .font(.system(size: 15, weight: .bold))
+                    .foregroundStyle(pane == .hint ? Theme.cream : Theme.ink)
+                    .frame(width: 38, height: 38)
+                    .background(Circle().fill(pane == .hint ? Theme.ink : theme.cardBackground))
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel(pane == .hint ? "Close the hint" : "Show a hint")
+
+            Button { toggleWorkPane() } label: {
+                Image(systemName: "pencil.tip")
+                    .font(.system(size: 15, weight: .bold))
+                    .foregroundStyle(pane == .work ? Theme.cream : Theme.ink)
+                    .frame(width: 38, height: 38)
+                    .background(Circle().fill(pane == .work ? Theme.ink : theme.cardBackground))
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel(pane == .work ? "Close the work space" : "Open the work space")
 
             Text("Lv \(viewModel.level)")
                 .font(.subheadline.weight(.heavy))

@@ -171,6 +171,8 @@ export default function WorldPage() {
   return (
     <div className="flex-1 min-h-0 relative overflow-hidden bg-[#c1e6d5] select-none">
       <div ref={hostRef} data-testid="world-canvas-host" className="absolute inset-0 touch-none" />
+      {/* A soft vignette gives the frame depth; purely decorative. */}
+      <div aria-hidden="true" className="world-vignette absolute inset-0 pointer-events-none" />
 
       {/* Loading curtain */}
       <div

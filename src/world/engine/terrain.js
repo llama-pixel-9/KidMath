@@ -131,6 +131,8 @@ export function buildTerrain(scene) {
     if (!scene.textures.exists(key)) return null;
     const { h } = propSize(id);
     const img = scene.add.image(x, feetY, key).setOrigin(0.5, 1).setScale(height / h).setDepth(depth).setFlipX(flip);
+    // A contact shadow grounds every landmark on the grass.
+    scene.add.ellipse(x, feetY - 2, img.displayWidth * 0.55, Math.max(10, img.displayWidth * 0.1), 0x14231f, 0.13).setDepth(depth - 0.5);
     return img;
   };
   handles.seams.push(prop("tree", SEA_LEFT_W + 50, 930, 400, 870), prop("reeds", SEA_LEFT_W + 140, 1125, 120), prop("rocks", SEA_LEFT_W - 60, 1130, 120));

@@ -80,7 +80,13 @@ export function createAvatar(scene, x, y, { waterRects = [], landRects = [] } = 
         } else if (r < 0.7) {
           // Head tilt.
           scene.tweens.add({ targets: sprite, angle: state.facing * -6, duration: 220, yoyo: true, hold: 300, ease: "Sine.easeInOut" });
-        } else if (r < 0.85) {
+        } else if (r < 0.78) {
+          // A wing stretch: the flying pose for a beat.
+          sprite.setTexture(`bird-${AVATAR.flying}`);
+          scene.time.delayedCall(420, () => {
+            if (!state.moving) sprite.setTexture(`bird-${AVATAR.standing}`);
+          });
+        } else if (r < 0.9) {
           // A little song to itself.
           [0, 180, 360].forEach((d, i) => scene.time.delayedCall(d, () => sfx.chirp(i * 2)));
           scene.tweens.add({ targets: sprite, y: sprite.y - 6, duration: 120, yoyo: true, repeat: 2 });

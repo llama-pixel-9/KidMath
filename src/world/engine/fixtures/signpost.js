@@ -16,11 +16,11 @@ export function buildSignpost(scene, region) {
   const sign = standProp(scene, "sign", x, y, 140);
   if (!sign) return null;
   const faceY = y - 140 * ds * 0.72;
-  const diamond = scene.add.image(x - 26 * ds, faceY, "diamond").setScale(0.75 * ds).setDepth(y + 0.1);
+  const diamond = scene.add.image(x - 34 * ds, faceY, "diamond").setScale(0.62 * ds).setDepth(y + 0.1);
   const label = scene.add
-    .text(x + 10 * ds, faceY, "PLAY", {
+    .text(x + 14 * ds, faceY, "PLAY", {
       fontFamily: "Fredoka, system-ui, sans-serif",
-      fontSize: `${Math.round(24 * ds)}px`,
+      fontSize: `${Math.round(21 * ds)}px`,
       fontStyle: "600",
       color: "#14231f",
     })

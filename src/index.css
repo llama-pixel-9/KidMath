@@ -308,3 +308,7 @@ h3 {
   box-shadow: inset 0 0 0 2px #fff6dd;
   display: inline-block;
 }
+
+.world-vignette {
+  background: radial-gradient(ellipse at 50% 45%, rgba(20, 35, 31, 0) 55%, rgba(20, 35, 31, 0.22) 100%);
+}

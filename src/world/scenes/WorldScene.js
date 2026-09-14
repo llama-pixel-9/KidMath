@@ -54,6 +54,7 @@ import { seasonForDate } from "../../engagement/seasons.js";
 import { MIGRATION_STOPS, migrationSpot, migrationQuest } from "../engine/migration";
 import { music } from "../worldMusic";
 import { choresFor } from "../engine/chores";
+import { attachWings } from "../engine/wings";
 import { openSessionRecord, appendAttempt, closeSessionRecord, saveSessionRecord } from "../../analytics/sessionLog";
 import { QuestRunner } from "../engine/questRunner";
 import { sparkle, DEPTH } from "../engine/juice";
@@ -92,6 +93,9 @@ export default class WorldScene extends Phaser.Scene {
   // ------------------------------------------------------------------ setup
 
   create() {
+    // Every winged thing registers its rig here; update() keeps wings on
+    // shoulders and drops rigs whose bird is gone.
+    this.wingRigs = new Set();
     this.discovered = this.computeDiscovered();
     this.terrain = buildTerrain(this);
     this.calm = Boolean(this.worldData.calm);
@@ -247,6 +251,15 @@ export default class WorldScene extends Phaser.Scene {
     // Tapping the ten-frame board starts the gate quest.
     const gate = f.gate;
     hitZone(this, gate.board.x, gate.board.y, 240, 130, () => this.onGateTap(zone));
+  }
+
+  /** Wings on a transient bird (visitor, migrant, the flock): flap until it is gone. */
+  wingedFlight(sprite, key, hz = 7) {
+    const rig = attachWings(this, sprite, { key });
+    rig.sprite = sprite;
+    this.wingRigs.add(rig);
+    rig.flap(hz);
+    return rig;
   }
 
   /** Today's visitor on the beach, unless already helped today. */
@@ -540,7 +553,8 @@ export default class WorldScene extends Phaser.Scene {
         this.time.delayedCall(1500, () => {
           const sprite = v.npc.sprite;
           sfx.takeoff();
-          this.tweens.add({ targets: sprite, scaleY: sprite.scaleY * 0.7, duration: 100, yoyo: true, repeat: 16 });
+          v.npc.wings.flap(7);
+          sprite.setFlipX(true);
           this.tweens.add({ targets: sprite, x: sprite.x - 900, y: sprite.y - 600, alpha: 0.2, duration: 2400, ease: "Sine.easeIn", onComplete: () => v.group.destroy() });
           this.toast("Safe travels!", "Someone new lands tomorrow.");
         });
@@ -601,7 +615,8 @@ export default class WorldScene extends Phaser.Scene {
     const sprite = m.npc.sprite;
     const group = m.group;
     sfx.takeoff();
-    this.tweens.add({ targets: sprite, scaleY: sprite.scaleY * 0.7, duration: 100, yoyo: true, repeat: 18 });
+    m.npc.wings.flap(7);
+    sprite.setFlipX(false);
     this.tweens.add({ targets: sprite, x: sprite.x + 1100, y: sprite.y - 700, alpha: 0.3, duration: 2200, ease: "Sine.easeIn", onComplete: () => group.destroy() });
     m.npc = null;
     m.group = null;
@@ -692,7 +707,8 @@ export default class WorldScene extends Phaser.Scene {
       if (!this.textures.exists(key)) return;
       const { h } = birdSize(id.split("-")[0]);
       const y0 = 260 + (i % 5) * 70 + Math.random() * 30;
-      const s = this.add.image(region.x0 - 300, y0, key).setScale((70 + Math.random() * 30) / h).setDepth(DEPTH.sky).setAlpha(0.95);
+      const s = this.add.image(region.x0 - 300, y0, key).setOrigin(0.5, 1).setScale((70 + Math.random() * 30) / h).setDepth(DEPTH.sky).setAlpha(0.95);
+      this.time.delayedCall(i * 180, () => this.wingedFlight(s, key, 6 + (i % 3)));
       const p = { t: 0 };
       this.tweens.add({
         targets: p,
@@ -706,7 +722,6 @@ export default class WorldScene extends Phaser.Scene {
         },
         onComplete: () => s.destroy(),
       });
-      this.tweens.add({ targets: s, scaleY: s.scaleY * 0.7, duration: 130, yoyo: true, repeat: 40, delay: i * 180 });
     });
     for (let i = 0; i < 8; i++) {
       this.time.delayedCall(500 + i * 400, () => sparkle(this, region.x0 + 200 + Math.random() * 1700, 300 + Math.random() * 400, { count: 12, tint: 0xfff3d6, radius: 60 }));
@@ -873,6 +888,15 @@ export default class WorldScene extends Phaser.Scene {
   update(time) {
     updateTerrain(this.terrain, time);
     updateAmbient(this.ambient, time);
+    for (const rig of this.wingRigs) {
+      const sp = rig.sprite;
+      if (sp && !sp.active) {
+        this.wingRigs.delete(rig);
+        rig.destroy();
+        continue;
+      }
+      rig.sync();
+    }
     if (!this.avatar) return;
     if (time - (this.lastCullAt ?? 0) > 400) {
       this.lastCullAt = time;

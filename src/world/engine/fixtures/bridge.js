@@ -40,6 +40,30 @@ export function buildBridge(scene, zone, region) {
       g.fillPoints([{ x: cx - topW / 2, y: yTop }, { x: cx + topW / 2, y: yTop }, { x: cx + botW / 2, y: yBot }, { x: cx - botW / 2, y: yBot }], true);
       g.fillStyle(region.waterDeep, 1);
       g.fillPoints([{ x: cx - topW / 4, y: yTop + 30 }, { x: cx + topW / 4, y: yTop + 30 }, { x: cx + botW / 4, y: yBot }, { x: cx - botW / 4, y: yBot }], true);
+      // A sunlit streak down the middle.
+      g.fillStyle(0xffffff, 0.16);
+      g.fillPoints([{ x: cx - topW * 0.08, y: yTop + 20 }, { x: cx + topW * 0.08, y: yTop + 20 }, { x: cx + botW * 0.07, y: yBot }, { x: cx - botW * 0.07, y: yBot }], true);
+      // Grass lips over the banks so the water reads as cut into the ground.
+      g.fillStyle(0x6fbb7f, 0.9);
+      g.fillPoints([{ x: cx - topW / 2 - 14, y: yTop }, { x: cx - topW / 2 + 2, y: yTop }, { x: cx - botW / 2 + 4, y: yBot }, { x: cx - botW / 2 - 18, y: yBot }], true);
+      g.fillPoints([{ x: cx + topW / 2 - 2, y: yTop }, { x: cx + topW / 2 + 14, y: yTop }, { x: cx + botW / 2 + 18, y: yBot }, { x: cx + botW / 2 - 4, y: yBot }], true);
+      // Pebbles along both banks, and reeds where the stream leaves the hills.
+      for (let i = 0; i < 10; i++) {
+        const y = yTop + 80 + i * 40 + (i % 3) * 9;
+        const w = topW + ((botW - topW) * (y - yTop)) / (yBot - yTop);
+        const side = i % 2 ? 1 : -1;
+        scene.add
+          .image(cx + side * (w / 2 + 6 + (i % 3) * 5), y, "stone")
+          .setScale(0.28 + (i % 3) * 0.08)
+          .setAlpha(0.95)
+          .setDepth(DEPTH.ground - 3);
+      }
+      for (const [dx, hgt] of [[-topW * 0.55, 70], [topW * 0.5, 62]]) {
+        if (scene.textures.exists("prop-reeds")) {
+          const r = scene.add.image(cx + dx, yTop + 14, "prop-reeds").setOrigin(0.5, 1).setDepth(DEPTH.ground - 3);
+          r.setScale(hgt / r.height);
+        }
+      }
       for (let i = 0; i < 7; i++) {
         const y = yTop + 60 + i * 55;
         const w = topW + ((botW - topW) * (y - yTop)) / (yBot - yTop);

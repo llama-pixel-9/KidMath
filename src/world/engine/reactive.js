@@ -4,6 +4,7 @@ import { sfx } from "../worldAudio";
 import { sparkle, DEPTH } from "./juice";
 import { SUN, APRICOT, PEACH, MINT } from "./textures";
 import { hitZone } from "./fixtures/common";
+import { attachWings } from "./wings";
 
 /**
  * Every tap answers back. Nothing here advances a quest; it exists because
@@ -125,9 +126,13 @@ export function buildReactive(scene, terrain) {
 function flyOut(scene, x, y) {
   const key = "bird-barnSwallow";
   if (!scene.textures.exists(key)) return;
-  const s = scene.add.image(x, y, key).setScale(0.09).setDepth(DEPTH.sky).setAlpha(0);
+  const s = scene.add.image(x, y, key).setOrigin(0.5, 1).setScale(0.09).setDepth(DEPTH.sky).setAlpha(0);
   const dir = Math.random() < 0.5 ? -1 : 1;
   s.setFlipX(dir < 0);
+  const rig = attachWings(scene, s, { key, size: 0.9 });
+  rig.sprite = s;
+  scene.wingRigs?.add(rig);
+  rig.flap(9);
   scene.tweens.add({ targets: s, alpha: 1, duration: 150 });
   const p = { t: 0 };
   scene.tweens.add({
@@ -141,7 +146,6 @@ function flyOut(scene, x, y) {
     },
     onComplete: () => s.destroy(),
   });
-  scene.tweens.add({ targets: s, scaleY: 0.06, duration: 110, yoyo: true, repeat: 12 });
   sfx.chirp(2);
 }
 

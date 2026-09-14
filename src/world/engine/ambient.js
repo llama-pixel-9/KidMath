@@ -2,6 +2,7 @@ import Phaser from "phaser";
 import { REGIONS, HORIZON_Y, WORLD_W, WORLD_H, SEA_LEFT_W, GROUND_TOP } from "../regions";
 import { birdSize } from "../worldArt";
 import { DEPTH } from "./juice";
+import { attachWings } from "./wings";
 
 /**
  * The living layer: butterflies in the meadow, dragonflies and water
@@ -131,7 +132,11 @@ function launchSwallow(scene, h) {
   const endX = dir > 0 ? view.right + 300 : view.left - 300;
   const y0 = 140 + Math.random() * 380;
   const { h: sh } = birdSize("barnSwallow");
-  const s = scene.add.image(startX, y0, key).setScale((44 + Math.random() * 20) / sh).setDepth(DEPTH.sky).setFlipX(dir < 0).setScrollFactor(0.75, 0.9).setAlpha(0.9);
+  const s = scene.add.image(startX, y0, key).setOrigin(0.5, 1).setScale((44 + Math.random() * 20) / sh).setDepth(DEPTH.sky).setFlipX(dir < 0).setScrollFactor(0.75, 0.9).setAlpha(0.9);
+  const rig = attachWings(scene, s, { key, size: 0.9 });
+  rig.sprite = s;
+  scene.wingRigs?.add(rig);
+  rig.flap(9);
   const p = { t: 0 };
   const swoop = 60 + Math.random() * 90;
   scene.tweens.add({
@@ -146,8 +151,6 @@ function launchSwallow(scene, h) {
     },
     onComplete: () => s.destroy(),
   });
-  // Wing flicker: swap the sprite's vertical scale for a flap read.
-  scene.tweens.add({ targets: s, scaleY: s.scaleY * 0.65, duration: 120, yoyo: true, repeat: 30, ease: "Sine.easeInOut" });
   h.swallows.push(s);
 }
 

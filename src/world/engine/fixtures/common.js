@@ -7,18 +7,24 @@ export function toWorld(region, p) {
   return { x: region.x0 + p.x, y: p.y };
 }
 
-/** A prop image standing on the ground at (x, feetY), `height` px at depth 1. */
-export function standProp(scene, id, x, feetY, height, { depth = null, flip = false, depthScale = true } = {}) {
+/** A prop image standing on the ground at (x, feetY), `height` px at depth 1,
+ *  with a soft contact shadow so it sits on the grass instead of floating. */
+export function standProp(scene, id, x, feetY, height, { depth = null, flip = false, depthScale = true, shadow = true } = {}) {
   const key = `prop-${id}`;
   if (!scene.textures.exists(key)) return null;
   const { h } = propSize(id);
   const s = (height / h) * (depthScale ? depthScaleAt(feetY) : 1);
-  return scene.add
+  const img = scene.add
     .image(x, feetY, key)
     .setOrigin(0.5, 1)
     .setScale(s)
     .setDepth(depth ?? feetY)
     .setFlipX(flip);
+  if (shadow) {
+    const sh = scene.add.ellipse(x, feetY - 2, img.displayWidth * 0.62, Math.max(8, img.displayWidth * 0.11), 0x14231f, 0.14).setDepth((depth ?? feetY) - 0.5);
+    img.contactShadow = sh;
+  }
+  return img;
 }
 
 /** An invisible tap target; `onTap` receives the pointer. Consumes the tap. */

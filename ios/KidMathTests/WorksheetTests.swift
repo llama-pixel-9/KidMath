@@ -2,47 +2,69 @@ import PDFKit
 import XCTest
 @testable import KidMath
 
+/// Flight logs render through the shared generateFlightLog draw to a Letter
+/// PDF — one page per log, then one answer-key page per log.
 final class WorksheetTests: XCTestCase {
 
-    /// Generate a worksheet through the engine and render it to PDF — the
-    /// full path behind the Share/Print button. 20 problems + answer key at
-    /// 10 per page must produce a 4-page document.
     @MainActor
-    func testWorksheetRendersMultiPagePDF() throws {
+    func testFlightLogRendersOnePagePerLogPlusKeys() throws {
         let engine = try EngineBridge()
         try engine.setBankItems([])
-        let problems = try engine.generateWorksheetSet(
-            mode: "addition", level: 2, size: 20, options: ["allowWordProblems": false]
-        )
-        XCTAssertEqual(problems.count, 20)
+        let mode = try XCTUnwrap(ModeCatalog.mode("addition"))
+        let scope = engine.flightLogScope(mode: "addition", level: 2)
+        XCTAssertEqual(scope, "Sums to 10", "level-aware scope phrase")
+        let logs = try (0..<2).map { _ in
+            FlightLogPDF.Log(mode: mode, level: 2, scope: scope,
+                             payload: try engine.generateFlightLog(mode: "addition", level: 2, allowWordProblems: true))
+        }
+        XCTAssertTrue(logs[0].computational)
+        XCTAssertEqual(logs[0].partA.count, 12)
+        XCTAssertEqual(logs[0].partB.count, 6)
+        XCTAssertEqual(logs[0].wordProblems.count, 2)
+        XCTAssertEqual(logs[0].itemCount, 20)
 
-        let url = try XCTUnwrap(
-            WorksheetPDF.render(modeLabel: "Addition Fun", problems: problems, includeAnswerKey: true)
-        )
+        let url = try XCTUnwrap(FlightLogPDF.render(logs: logs, engine: engine))
+        if let dir = ProcessInfo.processInfo.environment["KIDMATH_FIGURE_SNAPSHOT_DIR"] {
+            try? FileManager.default.removeItem(at: URL(fileURLWithPath: dir).appendingPathComponent("flight-log.pdf"))
+            try FileManager.default.copyItem(at: url, to: URL(fileURLWithPath: dir).appendingPathComponent("flight-log.pdf"))
+            // A prompt sheet too, for the figure/bank/judgment layouts.
+            let dg = try XCTUnwrap(ModeCatalog.mode("dataGraphs"))
+            let promptLog = FlightLogPDF.Log(mode: dg, level: 3, scope: engine.flightLogScope(mode: "dataGraphs", level: 3),
+                                             payload: try engine.generateFlightLog(mode: "dataGraphs", level: 3, allowWordProblems: true))
+            if let purl = FlightLogPDF.render(logs: [promptLog], engine: engine) {
+                try? FileManager.default.removeItem(at: URL(fileURLWithPath: dir).appendingPathComponent("flight-log-prompts.pdf"))
+                try FileManager.default.copyItem(at: purl, to: URL(fileURLWithPath: dir).appendingPathComponent("flight-log-prompts.pdf"))
+            }
+        }
         let document = try XCTUnwrap(PDFDocument(url: url))
-        XCTAssertEqual(document.pageCount, 4, "20 problems at 10/page + answer key = 4 pages")
-
-        // Problem pages carry the header and blanks; key pages carry answers.
+        XCTAssertEqual(document.pageCount, 4, "2 logs + 2 answer keys")
         let firstPage = document.page(at: 0)?.string ?? ""
-        XCTAssertTrue(firstPage.contains("larkit"), "header missing from page 1")
-        XCTAssertTrue(firstPage.contains("Name"), "name line missing from page 1")
+        XCTAssertTrue(firstPage.contains("larkit"), "header lockup")
+        XCTAssertTrue(firstPage.contains("Flight log"), "header line")
+        XCTAssertTrue(firstPage.contains("Sums to 10"), "scope in header")
+        XCTAssertTrue(firstPage.contains("Log 1 of 2"))
+        XCTAssertTrue(firstPage.contains("Name"), "name line")
+        XCTAssertTrue(firstPage.contains("Landed"), "footer")
         let keyPage = document.page(at: 2)?.string ?? ""
-        XCTAssertTrue(keyPage.contains("Answer Key"), "answer key page missing")
+        XCTAssertTrue(keyPage.contains("Answer key"))
+        XCTAssertFalse(keyPage.contains("Name"), "the key sheet has no name line")
     }
 
-    /// Every catalog mode must produce a renderable worksheet line for each
-    /// of its problems (no silent "? = _" fallbacks from missing fields
-    /// would be caught by inspecting the attributed output being non-trivial).
+    /// Every playable mode draws a non-empty flight log, prompt sheets
+    /// included, and renders without a word problem when the parent says no.
     @MainActor
-    func testEveryModeGeneratesWorksheetProblems() throws {
+    func testEveryPlayableModeDrawsAFlightLog() throws {
         let engine = try EngineBridge()
         try engine.setBankItems([])
-        for mode in ModeCatalog.allModes {
-            let problems = try engine.generateWorksheetSet(mode: mode.id, level: 3, size: 5, options: [:])
-            XCTAssertEqual(problems.count, 5, "\(mode.id): worksheet generation failed")
-            for problem in problems {
-                XCTAssertNotNil(problem["answer"], "\(mode.id): worksheet problem has no answer")
+        for mode in ModeCatalog.allModes where mode.playable {
+            let log = FlightLogPDF.Log(mode: mode, level: 3, scope: engine.flightLogScope(mode: mode.id, level: 3),
+                                       payload: try engine.generateFlightLog(mode: mode.id, level: 3, allowWordProblems: false))
+            XCTAssertGreaterThan(log.partA.count + log.partB.count, 0, "\(mode.id): empty flight log")
+            XCTAssertEqual(log.wordProblems.count, 0, "\(mode.id): word problems off means none")
+            for q in log.partA + log.partB {
+                XCTAssertNotNil(q["answer"], "\(mode.id): item has no answer")
             }
+            XCTAssertNotNil(FlightLogPDF.render(logs: [log], engine: engine), "\(mode.id): PDF failed")
         }
     }
 }

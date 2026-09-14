@@ -21,14 +21,14 @@ Status legend: ☐ open · ◐ partial · ☑ done (PR).
 | 3 | **Missing widgets/figures.** `tenFrame` answer widget, figures `pictograph`, `tallyChart`, `linePlot`, `areaFigure` (spec shared via `KidMath.areaFigureSpec`), `SequenceNumberLine`. `IOS_MIRRORED_FIGURES` updated. `FigureRenderTests` snapshot every shape (`TEST_RUNNER_KIDMATH_FIGURE_SNAPSHOT_DIR=… ` writes PNGs). Still open: `display.numberLine.marks` under story prompts (rare). | high | M | ☑ PR ios/parity-2 |
 | 4 | **Practice log + parent report.** `PracticeLog.swift` drives the shared record (`KidMath.openSessionRecord/appendAttempt/closeSessionRecord`, pure module `src/analytics/sessionRecord.js` split out of sessionLog.js), mirrors locally under `kidmath-sessions[:kid]`, upserts `practice_sessions` (paginated reads), saves "partial" on early exit (≥3 answers). `ParentReportView` over the shared `buildReport` + `reportHeadline`, in Settings → For grown-ups. `PracticeLogTests`. | high | M | ☑ PR ios/parity-4 |
 | 5 | **Work space + hint panes** (web PR #93). `hintFor` not on the bridge; no Scratchpad (PencilKit), no HintPane, no SidePane for iPad. | high | L | ☐ |
-| 6 | **Worksheets on the old generator** (`generateWorksheetSet`). Web uses `generateFlightLog` + `flightLogScope`: per-level, three-part sheet, separate answer-key sheet, page-fit rules, `allowWordProblems` pref. Neither is on the bridge. | med | M | ☐ |
+| 6 | **Flight-log worksheets.** `FlightLogPDF.swift` renders the shared `generateFlightLog` draw on Letter pages (header lockup + scope, name/date, stacked 3-up or prompts 2-up, inline 2-up, word problems, footer; answer key as its own sheet). `WorksheetView` = per-level picker grouped like the web, 1–3 logs, word-problem toggle on the web's `kidmath-allow-word-problems` key. Bridge: `generateFlightLog`, `flightLogScope`, `printOptionBank`, `isYesNoJudgment`. Old `generateWorksheetSet` renderer removed. | med | M | ☑ PR ios/parity-5 |
 | 7 | **Paywall literals** — `$54.99`, `49% OFF`, `$4.58/mo`, "22 modes, Grades 1-4" hardcoded; launch price is $39.99. | med | S | ☑ PR ios/parity-1 (derived from `Product.price`, fail-closed) |
 | 8 | **Badges (8), stickers (22), engagement bar, journey map, grown-ups panel, `goalJustMet` toast, DepartureFlight animation** — missing. Facts they need (`perfectSessions`, `comebacks`, `trapWins`, `maxLevel`) not recorded. | med | M | ☐ |
 | 9 | **Teach-don't-grade** — no `scaffoldFor` second chance, no read-aloud (`speech.js` → AVSpeechSynthesizer), no mastery line. | med | M | ☐ |
 | 10 | **Home not grade-aware; kid can't be switched or edited** — no `groupsForGrade`, no Quick Start, `ProfilePickerView` only on cold start, no `updateKid`. Siblings on one iPad is the expected case. | med | M | ☐ |
 | 11 | **Meadow art** — 59 WebP assets on web; iOS still draws placeholder shapes (`MeadowView.swift` "rough sketch"). | med | M | ☐ |
 | 12 | **Ladder v2 unreachable** — `GamFlags` lacked `ladderV2`/`secondChance`/`readAloud`/`birdStore`; `GamFlags.all` defaulted OFF while web prod has `VITE_GAM_ALL=true`; `createAdaptiveSession` never got `options.ladderV2`; level-up copy capped at 10. | med | S | ☑ PR ios/parity-1 |
-| 13 | **Allow-word-problems preference** (`user_preferences.allow_word_problems`) — no toggle, not passed to sessions. | low | S | ☐ |
+| 13 | **Allow-word-problems preference** — local toggle on the flight-log screen (web key). Cloud `user_preferences` sync and passing it into sessions still open. | low | S | ◐ PR ios/parity-5 |
 | 14 | **Kid profiles service** — `updateKid`, `hasParentalConsent`, `requestParentalConsent`, kid-limit message. | — | — | ☑ PR ios/parity-3 |
 | 15 | **Branding leftovers** — `CFBundleName` = KidMath (shows in iOS Settings), `kidmath://` URL scheme (OAuth sheet says "open KidMath"), bundle id `com.kidmath.app` (must change before ASC anyway), `ios/README.md` stale. | low | S–M | ☐ (bundle id waits on Apple) |
 | 16 | **Telemetry / diagnostics** — web freeze-detection has no native analogue (MetricKit). Low priority. | low | M | ☐ |
@@ -44,8 +44,8 @@ account review + per-child delete + full delete, billing via App Store.
 
 ## Bridge additions needed (`src/engine/nativeEntry.js`)
 
-`generateFlightLog`, `flightLogScope` (#6) · `hintFor` (#5) · `scaffoldFor`
-(#9). Done: `buildReport`/`reportHeadline` + the session record (#4),
+`hintFor` (#5) · `scaffoldFor` (#9). Done: `generateFlightLog`/`flightLogScope`
+(#6), `buildReport`/`reportHeadline` + the session record (#4),
 `parentalConsentNotice` (#1), `areaFigureSpec` (#3 — the file moved to
 `src/figures/` because the bundle guard rejects anything under
 `components/`; pure modules that iOS needs live outside `components/`).
@@ -54,5 +54,5 @@ Keep the bridge dependency-free (no progressStore/supabaseClient).
 ## Order of work
 
 parity-1 (☑ #2 #7 #12) → parity-2 (☑ #3) → parity-3 (☑ #1 #14) → parity-4 (☑ #4) →
-#6 worksheets → #10 home/kids → #8 badges/stickers → #9 teach-don't-grade →
+parity-5 (☑ #6) → #10 home/kids → #8 badges/stickers → #9 teach-don't-grade →
 #5 hints/work space → #11 meadow art → #13 #15 #16 #17.

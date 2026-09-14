@@ -14,6 +14,8 @@ struct HomeView: View {
     @State private var showProfilePicker = false
     @State private var showMeadow = false
     @State private var showMore = false
+    @State private var showStickers = false
+    @State private var engagement: [String: Any] = [:]
 
     private let columns = [GridItem(.adaptive(minimum: 150, maximum: 220), spacing: 12)]
 
@@ -83,13 +85,18 @@ struct HomeView: View {
             .sheet(isPresented: $showWorksheets) { WorksheetView() }
             .fullScreenCover(isPresented: $showMeadow) { MeadowView() }
             .sheet(isPresented: $showAbout) { AboutView() }
+            .sheet(isPresented: $showStickers, onDismiss: { engagement = EngagementStore().load() }) { StickerBookView(store: EngagementStore()) }
             .sheet(isPresented: $showPaywall) { PaywallView() }
             .fullScreenCover(item: $activeMode) { mode in
                 SessionView(mode: mode)
             }
             .fullScreenCover(isPresented: $showFirstFlight) { FirstFlightView() }
             .fullScreenCover(isPresented: $showProfilePicker) { ProfilePickerView() }
+            .onChange(of: activeMode) { _, mode in
+                if mode == nil { engagement = EngagementStore().load() }
+            }
             .task {
+                engagement = EngagementStore().load()
                 await app.refreshModeLevels()
                 autostartIfRequested()
                 await presentFirstFlightIfNeeded()
@@ -140,6 +147,10 @@ struct HomeView: View {
             Text(greeting)
                 .font(theme.bodyFont(size: 19, weight: .semibold))
                 .foregroundStyle(theme.textSecondary)
+            if GamFlags.flightReport {
+                EngagementBarView(state: engagement) { showStickers = true }
+                    .padding(.top, 4)
+            }
             HStack(spacing: 10) {
                 // Quick Start: the in-grade mode with the most room to grow.
                 if let quick = GradeSeed.quickStart(grade: app.kidProfiles.activeKidGrade, levels: app.modeLevels),

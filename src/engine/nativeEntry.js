@@ -54,6 +54,18 @@ import {
   fromRow as sessionRecordFromRow,
 } from "../analytics/sessionRecord.js";
 import { buildReport, headline as reportHeadline } from "../analytics/reportModel.js";
+import {
+  DAILY_GOAL,
+  applySessionEnd,
+  applySpend,
+  starBalance,
+  starsToday,
+  currentStreak,
+  isFirstWeek,
+  isLanguageTrapWin,
+} from "../engagement/engagementRules.js";
+import { BADGES, newlyEarnedBadges } from "../engagement/badges.js";
+import { STICKERS } from "../engagement/stickers.js";
 // Bird-world data (§13 roster, §05/§06 zones + perches + placement). Pure
 // data modules with no browser imports — safe in JavaScriptCore, and keeping
 // them here means iOS and web can never disagree on a price or a perch.
@@ -142,6 +154,21 @@ g.KidMath = {
   sessionRecordFromRow: (row) => sessionRecordFromRow(row),
   buildReport: (sessions, options) => buildReport(sessions ?? [], options ?? {}),
   reportHeadline: (report, kidName) => reportHeadline(report, kidName ?? null),
+
+  // Engagement rules (src/engagement/engagementRules.js) — the session-end
+  // transition (streak, daily goal, badges, egg warmth), sticker spend, and
+  // the badge/sticker catalogues, shared verbatim with the web.
+  applySessionEnd: (state, starsEarned, dayKey, facts) => applySessionEnd(state ?? {}, starsEarned ?? 0, dayKey, facts ?? {}),
+  applySpend: (state, sticker) => applySpend(state ?? {}, sticker) ?? null,
+  newlyEarnedBadges: (state) => newlyEarnedBadges(state ?? {}).map(({ id, emoji, name, blurb }) => ({ id, emoji, name, blurb })),
+  badges: () => BADGES.map(({ id, emoji, name, blurb }) => ({ id, emoji, name, blurb })),
+  stickers: () => STICKERS.map(({ id, emoji, name, cost }) => ({ id, emoji, name, cost })),
+  dailyGoal: () => DAILY_GOAL,
+  starBalance: (state) => starBalance(state ?? {}),
+  starsToday: (state, dayKey) => starsToday(state ?? {}, dayKey),
+  currentStreak: (state, dayKey) => currentStreak(state ?? {}, dayKey),
+  isFirstWeek: (state, dayKey) => isFirstWeek(state ?? {}, dayKey),
+  isLanguageTrapWin: (question, isRetry) => isLanguageTrapWin(question, Boolean(isRetry)),
 
   parentalConsentNotice: () => ({
     markdown: fillTokens(consentNoticeMd),

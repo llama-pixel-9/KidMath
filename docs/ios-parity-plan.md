@@ -23,7 +23,7 @@ Status legend: ☐ open · ◐ partial · ☑ done (PR).
 | 5 | **Work space + hint panes** (web PR #93). `hintFor` not on the bridge; no Scratchpad (PencilKit), no HintPane, no SidePane for iPad. | high | L | ☐ |
 | 6 | **Flight-log worksheets.** `FlightLogPDF.swift` renders the shared `generateFlightLog` draw on Letter pages (header lockup + scope, name/date, stacked 3-up or prompts 2-up, inline 2-up, word problems, footer; answer key as its own sheet). `WorksheetView` = per-level picker grouped like the web, 1–3 logs, word-problem toggle on the web's `kidmath-allow-word-problems` key. Bridge: `generateFlightLog`, `flightLogScope`, `printOptionBank`, `isYesNoJudgment`. Old `generateWorksheetSet` renderer removed. | med | M | ☑ PR ios/parity-5 |
 | 7 | **Paywall literals** — `$54.99`, `49% OFF`, `$4.58/mo`, "22 modes, Grades 1-4" hardcoded; launch price is $39.99. | med | S | ☑ PR ios/parity-1 (derived from `Product.price`, fail-closed) |
-| 8 | **Badges (8), stickers (22), engagement bar, journey map, grown-ups panel, `goalJustMet` toast, DepartureFlight animation** — missing. Facts they need (`perfectSessions`, `comebacks`, `trapWins`, `maxLevel`) not recorded. | med | M | ☐ |
+| 8 | **Badges, stickers, engagement bar, daily goal.** The web's rules moved to the pure `src/engagement/engagementRules.js` (+ `LANGUAGE_TRAP_STRUCTURES`) and are on the bridge; `EngagementStore.recordSessionEnd(starsEarned:facts:)` applies the shared `applySessionEnd` (badges, goal crossing, facts), `buySticker` the shared `applySpend`; catalogues from `badges()`/`stickers()`. `EngagementBarView` on Home, `StickerBookView`, end-card badge + goal rows. `EngagementRulesTests`. Still open: journey map, grown-ups panel, DepartureFlight animation (cosmetic). | med | M | ◐ PR ios/parity-7 |
 | 9 | **Teach-don't-grade** — no `scaffoldFor` second chance, no read-aloud (`speech.js` → AVSpeechSynthesizer), no mastery line. | med | M | ☐ |
 | 10 | **Grade-aware Home + kid switching/editing.** `GradeSeed.groupsForGrade/quickStart/gradeFit/gradeWork` mirror HomePage.jsx; Home shows in-grade groups first, "Explore more" folds bigger-kid topics, Quick Start, a kid chip opens `ProfilePickerView`, set-up-a-profile prompt when signed in with no active kid. Settings: Edit (`KidEditSheet` → `updateKid`) and "Switch who's playing". `GradeAwareHomeTests`. | med | M | ☑ PR ios/parity-6 |
 | 11 | **Meadow art** — 59 WebP assets on web; iOS still draws placeholder shapes (`MeadowView.swift` "rough sketch"). | med | M | ☐ |
@@ -44,7 +44,7 @@ account review + per-child delete + full delete, billing via App Store.
 
 ## Bridge additions needed (`src/engine/nativeEntry.js`)
 
-`hintFor` (#5) · `scaffoldFor` (#9). Done: `generateFlightLog`/`flightLogScope`
+`hintFor` (#5) · `scaffoldFor` (#9). Done: engagement rules + catalogues (#8), `generateFlightLog`/`flightLogScope`
 (#6), `buildReport`/`reportHeadline` + the session record (#4),
 `parentalConsentNotice` (#1), `areaFigureSpec` (#3 — the file moved to
 `src/figures/` because the bundle guard rejects anything under
@@ -54,5 +54,5 @@ Keep the bridge dependency-free (no progressStore/supabaseClient).
 ## Order of work
 
 parity-1 (☑ #2 #7 #12) → parity-2 (☑ #3) → parity-3 (☑ #1 #14) → parity-4 (☑ #4) →
-parity-5 (☑ #6) → parity-6 (☑ #10) → #8 badges/stickers → #9 teach-don't-grade →
+parity-5 (☑ #6) → parity-6 (☑ #10) → parity-7 (◐ #8) → #9 teach-don't-grade →
 #5 hints/work space → #11 meadow art → #13 #15 #16 #17.

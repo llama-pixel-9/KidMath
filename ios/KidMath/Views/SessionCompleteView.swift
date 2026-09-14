@@ -155,6 +155,32 @@ struct SessionCompleteView: View {
                             .font(theme.bodyFont(size: 15, weight: .bold))
                     }
                 }
+                // Newly earned badges and the daily-goal crossing (web: the
+                // engagement events the end card celebrates).
+                if let summary, summary.goalJustMet {
+                    Text("Daily goal done — \(EngagementStore.dailyGoal) stars today!")
+                        .font(theme.bodyFont(size: 14, weight: .heavy))
+                        .foregroundStyle(Theme.deepTeal)
+                        .padding(.top, 4)
+                }
+                if let summary, !summary.newBadges.isEmpty {
+                    VStack(spacing: 6) {
+                        ForEach(summary.newBadges) { badge in
+                            HStack(spacing: 8) {
+                                Text(badge.emoji).font(.system(size: 22))
+                                VStack(alignment: .leading, spacing: 1) {
+                                    Text("New badge: \(badge.name)").font(theme.bodyFont(size: 14, weight: .heavy))
+                                    Text(badge.blurb).font(theme.bodyFont(size: 12, weight: .semibold)).foregroundStyle(Theme.ink.opacity(0.7))
+                                }
+                                Spacer(minLength: 0)
+                            }
+                            .padding(10)
+                            .background(RoundedRectangle(cornerRadius: 12).fill(Theme.seafoam.opacity(0.5)))
+                        }
+                    }
+                    .padding(.top, 6)
+                    .accessibilityElement(children: .combine)
+                }
                 if ledgerOpen {
                     VStack(spacing: 5) {
                         Divider().overlay(Theme.ink.opacity(0.15)).padding(.vertical, 6)

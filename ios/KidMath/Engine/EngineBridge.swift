@@ -172,6 +172,27 @@ final class EngineBridge {
         return set
     }
 
+    /// A flight log (printable sheet): { partA, partB, wordProblems,
+    /// computational, itemCount } — the same three-part draw the web prints.
+    func generateFlightLog(mode: String, level: Int, allowWordProblems: Bool) throws -> [String: Any] {
+        try dictionary(from: try call("generateFlightLog", [mode, level, ["allowWordProblems": allowWordProblems]]), in: "generateFlightLog")
+    }
+
+    /// The header scope phrase ("Sums to 10" on a Level 1 addition log).
+    func flightLogScope(mode: String, level: Int) -> String {
+        (try? callString("flightLogScope", [mode, level])) ?? ""
+    }
+
+    /// Choices to print as a bank next to a prompt, or nil.
+    func printOptionBank(question: [String: Any]) -> [Any]? {
+        guard let result = try? call("printOptionBank", [question]), !result.isNull, !result.isUndefined else { return nil }
+        return result.toArray()
+    }
+
+    func isYesNoJudgment(question: [String: Any]) -> Bool {
+        (try? call("isYesNoJudgment", [question]))?.toBool() ?? false
+    }
+
     // MARK: - Adaptive session
 
     /// `options` may carry `savedProgress` (level/mistakeBank/bankItemStats/

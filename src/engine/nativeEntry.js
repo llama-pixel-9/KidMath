@@ -26,6 +26,10 @@ import {
   isSessionComplete,
   summarizeFlight,
   generateWorksheetSet,
+  generateFlightLog,
+  flightLogScope,
+  printOptionBank,
+  isYesNoJudgment,
   questionAnswerType,
 } from "../mathEngine.js";
 import {
@@ -93,6 +97,13 @@ g.KidMath = {
   generateChoices: (answer, count, question) => generateChoices(answer, count ?? 4, question ?? null),
   checkAnswer: (question, submitted) => checkAnswer(question, submitted),
   questionAnswerType: (question) => questionAnswerType(question),
+  // Flight logs (the printable sheets): same three-part draw as
+  // PrintableWorksheet.jsx — parts A/B skip the bank, word problems only when
+  // the parent allows them. Swift lays the result out on a Letter page.
+  generateFlightLog: (mode, level, options) => generateFlightLog(mode, level, options ?? {}),
+  flightLogScope: (mode, level) => flightLogScope(mode, level),
+  printOptionBank: (question) => printOptionBank(question),
+  isYesNoJudgment: (question) => isYesNoJudgment(question),
   generateWorksheetSet: (mode, level, size, options) =>
     generateWorksheetSet(mode, level, size, options ?? {}),
 

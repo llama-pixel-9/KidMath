@@ -13,6 +13,7 @@ struct HomeView: View {
     @State private var showFirstFlight = false
     @State private var showProfilePicker = false
     @State private var showMeadow = false
+    @State private var showMore = false
 
     private let columns = [GridItem(.adaptive(minimum: 150, maximum: 220), spacing: 12)]
 
@@ -21,8 +22,33 @@ struct HomeView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
                     hero
-                    ForEach(ModeCatalog.groups) { group in
+                    if app.supabase.isSignedIn, app.kidProfiles.activeKidId == nil {
+                        profilePrompt
+                    }
+                    // Grade-aware order (HomePage.jsx groupsForGrade): the
+                    // kid's groups first, outgrown ones after, bigger-kid
+                    // topics folded away behind "Explore more".
+                    let grouped = GradeSeed.groupsForGrade(app.kidProfiles.activeKidGrade)
+                    ForEach(grouped.main) { group in
                         groupSection(group)
+                    }
+                    if !grouped.more.isEmpty {
+                        Button {
+                            withAnimation(.easeOut(duration: 0.2)) { showMore.toggle() }
+                        } label: {
+                            Text(showMore ? "Hide the bigger-kid topics" : "Explore more — \(grouped.more.count) topic\(grouped.more.count == 1 ? "" : "s") for bigger kids")
+                                .font(theme.bodyFont(size: 15, weight: .bold))
+                                .foregroundStyle(Theme.teal)
+                                .frame(maxWidth: .infinity)
+                                .frame(height: 48)
+                                .background(RoundedRectangle(cornerRadius: 14).stroke(Theme.teal, lineWidth: 1.5))
+                        }
+                        .buttonStyle(.plain)
+                        if showMore {
+                            ForEach(grouped.more) { group in
+                                groupSection(group)
+                            }
+                        }
                     }
                     if GamFlags.meadow {
                         meadowCallout
@@ -114,9 +140,66 @@ struct HomeView: View {
             Text(greeting)
                 .font(theme.bodyFont(size: 19, weight: .semibold))
                 .foregroundStyle(theme.textSecondary)
+            HStack(spacing: 10) {
+                // Quick Start: the in-grade mode with the most room to grow.
+                if let quick = GradeSeed.quickStart(grade: app.kidProfiles.activeKidGrade, levels: app.modeLevels),
+                   let mode = ModeCatalog.mode(quick) {
+                    Button {
+                        if app.store.canPlay(mode.id) { activeMode = mode } else { showPaywall = true }
+                    } label: {
+                        Label("Quick Start", systemImage: "bolt.fill")
+                            .font(theme.bodyFont(size: 15, weight: .bold))
+                            .foregroundStyle(Theme.cream)
+                            .padding(.horizontal, 16)
+                            .frame(height: 40)
+                            .background(Capsule().fill(Theme.teal))
+                    }
+                    .buttonStyle(SpringButtonStyle())
+                    .accessibilityHint("Starts \(mode.label)")
+                }
+                // The kid chip: who is playing, and the way to switch.
+                if app.supabase.isSignedIn, !app.kidProfiles.kids.isEmpty {
+                    Button {
+                        showProfilePicker = true
+                    } label: {
+                        HStack(spacing: 6) {
+                            Image(systemName: "person.crop.circle")
+                            Text(app.kidProfiles.activeKidName ?? "Who's playing?")
+                            Image(systemName: "chevron.down").font(.caption.weight(.bold))
+                        }
+                        .font(theme.bodyFont(size: 14, weight: .bold))
+                        .foregroundStyle(Theme.ink)
+                        .padding(.horizontal, 12)
+                        .frame(height: 40)
+                        .background(Capsule().fill(Color.white))
+                        .overlay(Capsule().stroke(Theme.ink.opacity(0.12), lineWidth: 1.5))
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel("Switch kid")
+                }
+            }
+            .padding(.top, 6)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.top, 8)
+    }
+
+    /// Signed in with no active kid: levels, stars and the progress report
+    /// are per kid, so ask for a profile before anything is played.
+    private var profilePrompt: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Set up a profile for your kid so their levels, stars and progress report are their own.")
+                .font(theme.bodyFont(size: 15, weight: .semibold))
+                .foregroundStyle(Theme.ink)
+            Button(app.kidProfiles.kids.isEmpty ? "Add a kid" : "Choose who's playing") {
+                if app.kidProfiles.kids.isEmpty { showFirstFlight = true } else { showProfilePicker = true }
+            }
+            .font(theme.bodyFont(size: 15, weight: .bold))
+            .foregroundStyle(Theme.teal)
+        }
+        .padding(16)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(RoundedRectangle(cornerRadius: 18).fill(Theme.seafoam.opacity(0.35)))
     }
 
     private func groupSection(_ group: ModeGroup) -> some View {

@@ -25,7 +25,7 @@ Status legend: ☐ open · ◐ partial · ☑ done (PR).
 | 7 | **Paywall literals** — `$54.99`, `49% OFF`, `$4.58/mo`, "22 modes, Grades 1-4" hardcoded; launch price is $39.99. | med | S | ☑ PR ios/parity-1 (derived from `Product.price`, fail-closed) |
 | 8 | **Badges (8), stickers (22), engagement bar, journey map, grown-ups panel, `goalJustMet` toast, DepartureFlight animation** — missing. Facts they need (`perfectSessions`, `comebacks`, `trapWins`, `maxLevel`) not recorded. | med | M | ☐ |
 | 9 | **Teach-don't-grade** — no `scaffoldFor` second chance, no read-aloud (`speech.js` → AVSpeechSynthesizer), no mastery line. | med | M | ☐ |
-| 10 | **Home not grade-aware; kid can't be switched or edited** — no `groupsForGrade`, no Quick Start, `ProfilePickerView` only on cold start, no `updateKid`. Siblings on one iPad is the expected case. | med | M | ☐ |
+| 10 | **Grade-aware Home + kid switching/editing.** `GradeSeed.groupsForGrade/quickStart/gradeFit/gradeWork` mirror HomePage.jsx; Home shows in-grade groups first, "Explore more" folds bigger-kid topics, Quick Start, a kid chip opens `ProfilePickerView`, set-up-a-profile prompt when signed in with no active kid. Settings: Edit (`KidEditSheet` → `updateKid`) and "Switch who's playing". `GradeAwareHomeTests`. | med | M | ☑ PR ios/parity-6 |
 | 11 | **Meadow art** — 59 WebP assets on web; iOS still draws placeholder shapes (`MeadowView.swift` "rough sketch"). | med | M | ☐ |
 | 12 | **Ladder v2 unreachable** — `GamFlags` lacked `ladderV2`/`secondChance`/`readAloud`/`birdStore`; `GamFlags.all` defaulted OFF while web prod has `VITE_GAM_ALL=true`; `createAdaptiveSession` never got `options.ladderV2`; level-up copy capped at 10. | med | S | ☑ PR ios/parity-1 |
 | 13 | **Allow-word-problems preference** — local toggle on the flight-log screen (web key). Cloud `user_preferences` sync and passing it into sessions still open. | low | S | ◐ PR ios/parity-5 |
@@ -54,5 +54,5 @@ Keep the bridge dependency-free (no progressStore/supabaseClient).
 ## Order of work
 
 parity-1 (☑ #2 #7 #12) → parity-2 (☑ #3) → parity-3 (☑ #1 #14) → parity-4 (☑ #4) →
-parity-5 (☑ #6) → #10 home/kids → #8 badges/stickers → #9 teach-don't-grade →
+parity-5 (☑ #6) → parity-6 (☑ #10) → #8 badges/stickers → #9 teach-don't-grade →
 #5 hints/work space → #11 meadow art → #13 #15 #16 #17.

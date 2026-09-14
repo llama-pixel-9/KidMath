@@ -16,6 +16,9 @@ struct HomeView: View {
     @State private var showMore = false
     @State private var showStickers = false
     @State private var engagement: [String: Any] = [:]
+    /// The active kid's local practice log — the mastery line on each card
+    /// ("1 of 3 skills solid", HomePage.jsx) is computed over it.
+    @State private var practiceSessions: [[String: Any]] = []
 
     private let columns = [GridItem(.adaptive(minimum: 150, maximum: 220), spacing: 12)]
 
@@ -93,10 +96,14 @@ struct HomeView: View {
             .fullScreenCover(isPresented: $showFirstFlight) { FirstFlightView() }
             .fullScreenCover(isPresented: $showProfilePicker) { ProfilePickerView() }
             .onChange(of: activeMode) { _, mode in
-                if mode == nil { engagement = EngagementStore().load() }
+                if mode == nil {
+                    engagement = EngagementStore().load()
+                    practiceSessions = app.practiceLog?.readLocal(kidId: app.practiceLog?.activeKidId) ?? []
+                }
             }
             .task {
                 engagement = EngagementStore().load()
+                practiceSessions = app.practiceLog?.readLocal(kidId: app.practiceLog?.activeKidId) ?? []
                 await app.refreshModeLevels()
                 autostartIfRequested()
                 await presentFirstFlightIfNeeded()
@@ -279,6 +286,14 @@ struct HomeView: View {
                     .foregroundStyle(Theme.ink)
                     .lineLimit(2, reservesSpace: true)
                     .multilineTextAlignment(.leading)
+                // "1 of 3 skills solid" — mastery over the practice log, the
+                // shared masterySummary (teach-don't-grade: skills, not scores).
+                if !locked, let line = app.engine?.masteryLine(sessions: practiceSessions, mode: mode.id) {
+                    Text(line)
+                        .font(theme.bodyFont(size: 11, weight: .bold))
+                        .foregroundStyle(Theme.ink.opacity(0.65))
+                        .lineLimit(1)
+                }
             }
             .padding(14)
             .frame(maxWidth: .infinity, alignment: .leading)

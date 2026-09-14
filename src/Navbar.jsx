@@ -7,6 +7,7 @@ import { paywallEnabled } from "./premium";
 import LarkMark from "./components/LarkMark";
 import Feather from "./components/feather.jsx";
 import { meadowEnabled } from "./gamificationFlags.js";
+import { worldEnabled } from "./world/worldFlags.js";
 
 // Nav links are words, not glyphs (§13: icons never replace a word a
 // five-year-old can read) — the feather set covers the controls only.
@@ -16,6 +17,8 @@ const BASE_NAV_ITEMS = [
   { to: "/play", label: "Play" },
   { to: "/worksheets", label: "Worksheets" },
   ...(meadowEnabled() ? [{ to: "/meadow", label: "Meadow" }] : []),
+  // Skylark Island sits behind its own flag; dark in production until set.
+  ...(worldEnabled() ? [{ to: "/world", label: "Island" }] : []),
   { to: "/about", label: "About" },
 ];
 

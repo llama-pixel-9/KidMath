@@ -68,6 +68,19 @@ final class SessionViewModel: ObservableObject {
     @Published private(set) var scaffoldHint = ""
     /// True during the short "not quite" beat before the scaffold appears.
     @Published private(set) var secondChancePending = false
+    /// The kid opened the hint pane before answering this question (logged
+    /// on the attempt; reset per question — MathExplorer's hintUsedRef).
+    private(set) var hintUsed = false
+
+    func markHintUsed() { hintUsed = true }
+
+    /// The per-question hint from the shared hintFor (nil before a question).
+    var hint: [String: Any]? {
+        guard !question.isEmpty else { return nil }
+        var q = question
+        q["mode"] = modeId
+        return engine.hintFor(question: q)
+    }
     private let secondChanceHold: Duration = .milliseconds(500)
     private let progressStore: ProgressStore
     private let engagementStore: EngagementStore
@@ -216,6 +229,7 @@ final class SessionViewModel: ObservableObject {
         }
         scaffold = nil
         scaffoldHint = ""
+        hintUsed = false
         do {
             let (question, isRetry) = try engine.nextQuestion(in: session)
             self.question = question
@@ -246,7 +260,7 @@ final class SessionViewModel: ObservableObject {
                 let correct = try engine.checkAnswer(question: question, submitted: value)
                 record = practiceLog?.append(
                     record, question: question, submitted: value, correct: correct,
-                    wasRetry: true, responseTimeMs: responseTimeMs, level: level
+                    wasRetry: true, responseTimeMs: responseTimeMs, level: level, hintUsed: hintUsed
                 )
                 scaffold = nil
                 scaffoldHint = ""
@@ -273,7 +287,7 @@ final class SessionViewModel: ObservableObject {
             }
             record = practiceLog?.append(
                 record, question: question, submitted: value, correct: outcome.correct,
-                wasRetry: isRetry, responseTimeMs: responseTimeMs, level: level
+                wasRetry: isRetry, responseTimeMs: responseTimeMs, level: level, hintUsed: hintUsed
             )
             level = outcome.newLevel
 

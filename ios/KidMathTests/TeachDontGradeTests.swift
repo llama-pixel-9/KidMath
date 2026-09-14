@@ -52,3 +52,20 @@ final class TeachDontGradeTests: XCTestCase {
         XCTAssertFalse(SpeechService.autoReadEnabled(grade: nil))
     }
 }
+
+@MainActor
+final class HintPaneTests: XCTestCase {
+    func testHintComesFromTheSharedHintFor() throws {
+        let engine = try EngineBridge()
+        let q: [String: Any] = ["mode": "addition", "a": 6, "b": 3, "op": "+", "answer": 9,
+                                "display": ["promptText": "6 + 3 = ?"], "metadata": ["subskill": "joinResultUnknown", "modeId": "addition"]]
+        let hint = try XCTUnwrap(engine.hintFor(question: q))
+        XCTAssertFalse((hint["title"] as? String ?? "").isEmpty)
+        XCTAssertEqual(hint["modeTitle"] as? String, "Adding")
+        let steps = try XCTUnwrap(hint["steps"] as? [String])
+        XCTAssertFalse(steps.isEmpty)
+        XCTAssertFalse(steps.joined(separator: " ").contains("= 9"), "steps never give the answer")
+        XCTAssertEqual((hint["visual"] as? [String: Any])?["kind"] as? String, "dots")
+        XCTAssertNotNil(hint["example"])
+    }
+}

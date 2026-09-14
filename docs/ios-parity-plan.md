@@ -20,7 +20,7 @@ Status legend: ☐ open · ◐ partial · ☑ done (PR).
 | 2 | **Item-bank reads don't paginate** (`SupabaseService.fetchModeItemRows`) — fractions (2,787), time (1,852), placeValueDiscs (1,406) clipped to 1,000 rows. CLAUDE.md hard rule. | critical | S | ☑ PR ios/parity-1 |
 | 3 | **Missing widgets/figures.** `tenFrame` answer widget, figures `pictograph`, `tallyChart`, `linePlot`, `areaFigure` (spec shared via `KidMath.areaFigureSpec`), `SequenceNumberLine`. `IOS_MIRRORED_FIGURES` updated. `FigureRenderTests` snapshot every shape (`TEST_RUNNER_KIDMATH_FIGURE_SNAPSHOT_DIR=… ` writes PNGs). Still open: `display.numberLine.marks` under story prompts (rare). | high | M | ☑ PR ios/parity-2 |
 | 4 | **Practice log + parent report.** `PracticeLog.swift` drives the shared record (`KidMath.openSessionRecord/appendAttempt/closeSessionRecord`, pure module `src/analytics/sessionRecord.js` split out of sessionLog.js), mirrors locally under `kidmath-sessions[:kid]`, upserts `practice_sessions` (paginated reads), saves "partial" on early exit (≥3 answers). `ParentReportView` over the shared `buildReport` + `reportHeadline`, in Settings → For grown-ups. `PracticeLogTests`. | high | M | ☑ PR ios/parity-4 |
-| 5 | **Work space + hint panes** (web PR #93). `hintFor` not on the bridge; no Scratchpad (PencilKit), no HintPane, no SidePane for iPad. | high | L | ☐ |
+| 5 | **Hint + work-space panes.** `hintFor` on the bridge; `HintPaneView` (idea / try this / picture it / worked example), `WorkspaceView` (PencilKit: three inks, eraser, undo, clear, Pencil pressure, finger ok), side pane in `SessionView` — right column ≥800pt, bottom sheet below; hint use logged on the attempt; work-pane state on the web's `kidmath-workpane-open` key; hint pane closes per question. Hint-costs-a-star still undecided on both platforms. | high | L | ☑ PR ios/parity-9 |
 | 6 | **Flight-log worksheets.** `FlightLogPDF.swift` renders the shared `generateFlightLog` draw on Letter pages (header lockup + scope, name/date, stacked 3-up or prompts 2-up, inline 2-up, word problems, footer; answer key as its own sheet). `WorksheetView` = per-level picker grouped like the web, 1–3 logs, word-problem toggle on the web's `kidmath-allow-word-problems` key. Bridge: `generateFlightLog`, `flightLogScope`, `printOptionBank`, `isYesNoJudgment`. Old `generateWorksheetSet` renderer removed. | med | M | ☑ PR ios/parity-5 |
 | 7 | **Paywall literals** — `$54.99`, `49% OFF`, `$4.58/mo`, "22 modes, Grades 1-4" hardcoded; launch price is $39.99. | med | S | ☑ PR ios/parity-1 (derived from `Product.price`, fail-closed) |
 | 8 | **Badges, stickers, engagement bar, daily goal.** The web's rules moved to the pure `src/engagement/engagementRules.js` (+ `LANGUAGE_TRAP_STRUCTURES`) and are on the bridge; `EngagementStore.recordSessionEnd(starsEarned:facts:)` applies the shared `applySessionEnd` (badges, goal crossing, facts), `buySticker` the shared `applySpend`; catalogues from `badges()`/`stickers()`. `EngagementBarView` on Home, `StickerBookView`, end-card badge + goal rows. `EngagementRulesTests`. Still open: journey map, grown-ups panel, DepartureFlight animation (cosmetic). | med | M | ◐ PR ios/parity-7 |
@@ -44,7 +44,7 @@ account review + per-child delete + full delete, billing via App Store.
 
 ## Bridge additions needed (`src/engine/nativeEntry.js`)
 
-`hintFor` (#5). Done: `scaffoldFor`/`scaffoldHint`/`speakableText`/`masterySummary`/`modeSubskills` (#9), engagement rules + catalogues (#8), `generateFlightLog`/`flightLogScope`
+All done: `hintFor` (#5), `scaffoldFor`/`scaffoldHint`/`speakableText`/`masterySummary`/`modeSubskills` (#9), engagement rules + catalogues (#8), `generateFlightLog`/`flightLogScope`
 (#6), `buildReport`/`reportHeadline` + the session record (#4),
 `parentalConsentNotice` (#1), `areaFigureSpec` (#3 — the file moved to
 `src/figures/` because the bundle guard rejects anything under
@@ -55,4 +55,4 @@ Keep the bridge dependency-free (no progressStore/supabaseClient).
 
 parity-1 (☑ #2 #7 #12) → parity-2 (☑ #3) → parity-3 (☑ #1 #14) → parity-4 (☑ #4) →
 parity-5 (☑ #6) → parity-6 (☑ #10) → parity-7 (◐ #8) → parity-8 (☑ #9) →
-#5 hints/work space → #11 meadow art → #13 #15 #16 #17.
+parity-9 (☑ #5) → #11 meadow art → #13 #15 #16 #17.

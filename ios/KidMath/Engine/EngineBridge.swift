@@ -193,6 +193,12 @@ final class EngineBridge {
         (try? call("isYesNoJudgment", [question]))?.toBool() ?? false
     }
 
+    /// The per-question hint (src/hints/index.js hintFor): title, modeTitle,
+    /// idea, steps[], example { problem, steps[], answer }, visual (scaffold).
+    func hintFor(question: [String: Any]) -> [String: Any]? {
+        try? callDictionary("hintFor", [question])
+    }
+
     /// Teach-don't-grade (src/scaffold.js): the model to show on a first
     /// miss — dots / array / strip / numberLine / look — and its one-line hint.
     func scaffoldFor(question: [String: Any]) -> [String: Any] {

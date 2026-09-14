@@ -70,6 +70,7 @@ import { scaffoldFor, scaffoldHint } from "../scaffold.js";
 import { speakableText } from "../speakable.js";
 import { masterySummary, masteryLine } from "../analytics/masterySummary.js";
 import { getModeConfig } from "../modes";
+import { hintFor } from "../hints/index.js";
 // Bird-world data (§13 roster, §05/§06 zones + perches + placement). Pure
 // data modules with no browser imports — safe in JavaScriptCore, and keeping
 // them here means iOS and web can never disagree on a price or a perch.
@@ -177,6 +178,9 @@ g.KidMath = {
   // Teach-don't-grade: the second-chance scaffold (src/scaffold.js), the
   // read-aloud text (src/speakable.js), and the mastery line over the
   // practice log (src/analytics/masterySummary.js).
+  // Per-question hint (src/hints): concept idea, steps built from the live
+  // item's numbers (never the answer), the picture, a worked example.
+  hintFor: (question) => hintFor(question),
   scaffoldFor: (question) => scaffoldFor(question),
   scaffoldHint: (scaffold) => scaffoldHint(scaffold),
   speakableText: (promptText, noun) => speakableText(promptText, noun ? { noun } : {}),

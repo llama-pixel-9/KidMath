@@ -311,6 +311,7 @@ h3 {
 
 .world-vignette {
   background: radial-gradient(ellipse at 50% 45%, rgba(20, 35, 31, 0) 55%, rgba(20, 35, 31, 0.22) 100%);
+}
 /*
  * Session side pane (work space / hint). Bottom sheet by default so the
  * question card stays visible above it; on the wide-and-short screens that

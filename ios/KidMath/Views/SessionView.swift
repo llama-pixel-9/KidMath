@@ -219,7 +219,30 @@ struct SessionView: View {
                 revealed: feedbackState != nil,
                 areaFigure: mode.id == "areaPerimeter" ? viewModel.areaFigureSpec : nil
             )
+            // Read-aloud (GamFlags.readAloud): the speaker reads the prompt
+            // through the shared speakableText; K–1 kids hear it automatically.
+            if GamFlags.readAloud, let prompt = promptText {
+                Button {
+                    SpeechService.shared.speak(app.engine?.speakableText(prompt) ?? prompt)
+                } label: {
+                    Label("Read it to me", systemImage: "speaker.wave.2.fill")
+                        .font(theme.bodyFont(size: 13, weight: .bold))
+                        .foregroundStyle(Theme.teal)
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Read the question aloud")
+            }
+            // Teach-don't-grade: the model shown after a first miss.
+            if let scaffold = viewModel.scaffold {
+                ScaffoldView(scaffold: scaffold, hint: viewModel.scaffoldHint)
+                    .transition(.opacity)
+            }
             feedbackLine
+        }
+        .onChange(of: viewModel.questionKey) { _, _ in
+            guard viewModel.scaffold == nil, SpeechService.autoReadEnabled(grade: app.kidProfiles.activeKidGrade),
+                  let prompt = promptText else { return }
+            SpeechService.shared.speak(app.engine?.speakableText(prompt) ?? prompt)
         }
         .padding(24)
         .frame(maxWidth: .infinity, minHeight: 150)
@@ -239,6 +262,16 @@ struct SessionView: View {
 
     private var feedbackState: Bool? {
         if case .feedback(let correct) = viewModel.phase { return correct }
+        return nil
+    }
+
+    /// The prompt to read aloud — the same text the practice log stores.
+    private var promptText: String? {
+        let display = viewModel.question["display"] as? [String: Any] ?? [:]
+        if let p = display["promptText"] as? String, !p.isEmpty { return p }
+        if let a = viewModel.question["a"], let op = viewModel.question["op"] as? String, let b = viewModel.question["b"] {
+            return "\(AnswerFormatting.text(a)) \(op) \(AnswerFormatting.text(b)) = ?"
+        }
         return nil
     }
 
@@ -266,9 +299,10 @@ struct SessionView: View {
             }
         case .some(false):
             VStack(spacing: 2) {
-                Text("Not quite!")
+                Text(viewModel.secondChancePending ? "Not quite — look at this, then try once more." : "Not quite!")
                     .font(.headline.weight(.heavy))
                     .foregroundStyle(theme.wrong)
+                    .multilineTextAlignment(.center)
                 if let answer = viewModel.revealAnswer {
                     Text("The answer is \(AnswerFormatting.text(answer))")
                         .font(theme.bodyFont(size: 15, weight: .semibold))

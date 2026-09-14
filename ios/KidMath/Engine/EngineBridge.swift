@@ -193,6 +193,30 @@ final class EngineBridge {
         (try? call("isYesNoJudgment", [question]))?.toBool() ?? false
     }
 
+    /// Teach-don't-grade (src/scaffold.js): the model to show on a first
+    /// miss — dots / array / strip / numberLine / look — and its one-line hint.
+    func scaffoldFor(question: [String: Any]) -> [String: Any] {
+        (try? callDictionary("scaffoldFor", [question])) ?? ["kind": "look"]
+    }
+
+    func scaffoldHint(_ scaffold: [String: Any]) -> String {
+        (try? callString("scaffoldHint", [scaffold])) ?? "Look again — take your time."
+    }
+
+    /// The prompt as it should be spoken (src/speakable.js).
+    func speakableText(_ promptText: String, noun: String? = nil) -> String {
+        (try? callString("speakableText", [promptText, noun ?? NSNull()])) ?? promptText
+    }
+
+    /// "1 of 3 skills solid" over the practice log, or nil when there is
+    /// nothing to say yet (src/analytics/masterySummary.js).
+    func masteryLine(sessions: [[String: Any]], mode: String) -> String? {
+        let declared = (try? call("modeSubskills", [mode]).toArray() as? [String]) ?? []
+        guard let summary = try? callDictionary("masterySummary", [sessions, mode, declared]),
+              let line = try? call("masteryLine", [summary]), line.isString else { return nil }
+        return line.toString()
+    }
+
     // MARK: - Adaptive session
 
     /// `options` may carry `savedProgress` (level/mistakeBank/bankItemStats/

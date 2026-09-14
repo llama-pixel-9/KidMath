@@ -59,6 +59,16 @@ final class SessionViewModel: ObservableObject {
     /// Word Detective input: first-try wins on language-trap structures
     /// (shared rule isLanguageTrapWin), counted per flight like the web.
     private var trapWins = 0
+    /// Teach-don't-grade (GamFlags.secondChance): after a first miss on a
+    /// fresh question the card shows a model instead of the answer and the
+    /// kid gets one more try. The engine already recorded the miss; the
+    /// second try is UI-only — scored here, logged as a retry, never
+    /// re-counted. Mirrors MathExplorer's scaffold branch.
+    @Published private(set) var scaffold: [String: Any]?
+    @Published private(set) var scaffoldHint = ""
+    /// True during the short "not quite" beat before the scaffold appears.
+    @Published private(set) var secondChancePending = false
+    private let secondChanceHold: Duration = .milliseconds(500)
     private let progressStore: ProgressStore
     private let engagementStore: EngagementStore
 
@@ -204,6 +214,8 @@ final class SessionViewModel: ObservableObject {
         if record == nil {
             record = practiceLog?.open(mode: modeId, level: level, kind: isFledgingRun ? "fledging" : "normal")
         }
+        scaffold = nil
+        scaffoldHint = ""
         do {
             let (question, isRetry) = try engine.nextQuestion(in: session)
             self.question = question
@@ -228,6 +240,26 @@ final class SessionViewModel: ObservableObject {
         locked = true
         do {
             let responseTimeMs = Int(Date().timeIntervalSince(questionStart) * 1000)
+
+            // Second attempt after a scaffold.
+            if scaffold != nil {
+                let correct = try engine.checkAnswer(question: question, submitted: value)
+                record = practiceLog?.append(
+                    record, question: question, submitted: value, correct: correct,
+                    wasRetry: true, responseTimeMs: responseTimeMs, level: level
+                )
+                scaffold = nil
+                scaffoldHint = ""
+                phase = .feedback(correct: correct)
+                if !correct { revealAnswer = question["answer"] }
+                if correct { SoundPlayer.shared.playCorrect() } else { SoundPlayer.shared.playWrong() }
+                Task { [weak self] in
+                    try? await Task.sleep(for: correctHold)
+                    await self?.advance()
+                }
+                return
+            }
+
             let outcome = try engine.recordAnswer(
                 in: session,
                 question: question,
@@ -243,6 +275,30 @@ final class SessionViewModel: ObservableObject {
                 record, question: question, submitted: value, correct: outcome.correct,
                 wasRetry: isRetry, responseTimeMs: responseTimeMs, level: level
             )
+            level = outcome.newLevel
+
+            // First miss on a fresh question: show a model and allow one more
+            // try (no reveal). The miss is already in the mistake bank.
+            if !outcome.correct, GamFlags.secondChance, !isRetry, !isFledgingRun {
+                secondChancePending = true
+                SoundPlayer.shared.playWrong()
+                var model = question
+                model["mode"] = modeId
+                let built = engine.scaffoldFor(question: model)
+                Task { [weak self] in
+                    guard let self else { return }
+                    try? await Task.sleep(for: secondChanceHold)
+                    self.secondChancePending = false
+                    self.scaffold = built
+                    self.scaffoldHint = self.engine.scaffoldHint(built)
+                    self.questionKey += 1 // re-keys the widget, not the card
+                    self.questionStart = Date()
+                    self.phase = .question
+                    self.locked = false
+                }
+                return
+            }
+
             if !outcome.correct { revealAnswer = question["answer"] }
             if outcome.levelChanged, outcome.newLevel > level {
                 showLevelUp = true
@@ -260,7 +316,6 @@ final class SessionViewModel: ObservableObject {
             } else {
                 SoundPlayer.shared.playWrong()
             }
-            level = outcome.newLevel
 
             Task { [weak self] in
                 try? await Task.sleep(for: outcome.correct ? correctHold : wrongHold)

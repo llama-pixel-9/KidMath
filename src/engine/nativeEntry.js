@@ -66,6 +66,10 @@ import {
 } from "../engagement/engagementRules.js";
 import { BADGES, newlyEarnedBadges } from "../engagement/badges.js";
 import { STICKERS } from "../engagement/stickers.js";
+import { scaffoldFor, scaffoldHint } from "../scaffold.js";
+import { speakableText } from "../speakable.js";
+import { masterySummary, masteryLine } from "../analytics/masterySummary.js";
+import { getModeConfig } from "../modes";
 // Bird-world data (§13 roster, §05/§06 zones + perches + placement). Pure
 // data modules with no browser imports — safe in JavaScriptCore, and keeping
 // them here means iOS and web can never disagree on a price or a perch.
@@ -169,6 +173,16 @@ g.KidMath = {
   currentStreak: (state, dayKey) => currentStreak(state ?? {}, dayKey),
   isFirstWeek: (state, dayKey) => isFirstWeek(state ?? {}, dayKey),
   isLanguageTrapWin: (question, isRetry) => isLanguageTrapWin(question, Boolean(isRetry)),
+
+  // Teach-don't-grade: the second-chance scaffold (src/scaffold.js), the
+  // read-aloud text (src/speakable.js), and the mastery line over the
+  // practice log (src/analytics/masterySummary.js).
+  scaffoldFor: (question) => scaffoldFor(question),
+  scaffoldHint: (scaffold) => scaffoldHint(scaffold),
+  speakableText: (promptText, noun) => speakableText(promptText, noun ? { noun } : {}),
+  masterySummary: (sessions, mode, declared) => masterySummary(sessions ?? [], mode, declared ?? []),
+  masteryLine: (summary) => masteryLine(summary) ?? null,
+  modeSubskills: (mode) => (getModeConfig(mode)?.subskills ?? []).slice(),
 
   parentalConsentNotice: () => ({
     markdown: fillTokens(consentNoticeMd),

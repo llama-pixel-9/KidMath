@@ -23,11 +23,19 @@ struct EggSpriteView: View {
                         .animation(.easeInOut(duration: 1.5).repeatForever(autoreverses: true), value: glowing)
                         .onAppear { glowing = true }
                 }
-                Ellipse()
-                    .fill(Color(red: 1, green: 0.99, blue: 0.96))
-                    .overlay(Ellipse().stroke(Theme.ink, lineWidth: 2))
-                    .frame(width: 40, height: 52)
-                cracks
+                if let egg = MeadowArt.egg(percent: warmthPercent) {
+                    // Generated egg art: pristine → three crack stages by warmth.
+                    egg.asset.image
+                        .resizable()
+                        .aspectRatio(egg.asset.aspect, contentMode: .fit)
+                        .frame(height: 52)
+                } else {
+                    Ellipse()
+                        .fill(Color(red: 1, green: 0.99, blue: 0.96))
+                        .overlay(Ellipse().stroke(Theme.ink, lineWidth: 2))
+                        .frame(width: 40, height: 52)
+                    cracks
+                }
                 if !ready {
                     Circle()
                         .stroke(Theme.ink.opacity(0.1), lineWidth: 4)
@@ -118,7 +126,7 @@ struct HatchSheet: View {
                     .font(theme.displayFont(size: 22))
                     .foregroundStyle(Theme.ink)
             case 3:
-                BirdSpriteView()
+                BirdSpriteView(speciesId: species.id)
                     .frame(width: 84, height: 73)
                     .scaleEffect(0.9)
                     .onAppear {
@@ -131,7 +139,7 @@ struct HatchSheet: View {
                     .font(theme.displayFont(size: 22))
                     .foregroundStyle(Theme.ink)
             default:
-                BirdSpriteView().frame(width: 96, height: 84)
+                BirdSpriteView(speciesId: species.id).frame(width: 96, height: 84)
                 Text("You name \(pronoun == "she" ? "her" : "him")")
                     .font(theme.displayFont(size: 24))
                     .foregroundStyle(Theme.ink)

@@ -67,6 +67,8 @@ struct MeadowView: View {
         let x: CGFloat
         let y: CGFloat
         let depth: Double
+        /// perches.js `type` — "trunkHollow" perches use the "cling" art.
+        let type: String
     }
 
     struct Bubble {
@@ -314,7 +316,8 @@ struct MeadowView: View {
                 zone: raw["zone"] as? String ?? "meadow",
                 x: CGFloat(ProgressStore.double(raw["x"])),
                 y: CGFloat(ProgressStore.double(raw["y"])),
-                depth: depthValue(raw["depth"] as? String)
+                depth: depthValue(raw["depth"] as? String),
+                type: raw["type"] as? String ?? ""
             )
         }
         return map
@@ -449,6 +452,8 @@ struct MeadowView: View {
                         : .zero
                     PerchedBirdView(
                         depth: perch.depth,
+                        speciesId: speciesId,
+                        variant: departingId == speciesId ? "fly" : (perch.type == "trunkHollow" ? "cling" : nil),
                         asleep: night && !["barnOwl", "snowyOwl"].contains(speciesId),
                         bob: bobRig(bird),
                         hopping: hoppingSpecies == speciesId,
@@ -588,8 +593,28 @@ struct MeadowView: View {
 
 struct BirdSpriteView: View {
     var asleep = false
+    /// The species' generated art when present; the sketch below is the
+    /// fallback (tests, a partial kit). `variant` e.g. "cling" on a hollow.
+    var speciesId: String? = nil
+    var variant: String? = nil
 
     var body: some View {
+        if let speciesId, let art = MeadowArt.bird(speciesId, variant: variant) {
+            // Fit inside the footprint, keep aspect, feet bottom-centre —
+            // the web's BirdSprite contract. Sleeping birds are dimmed.
+            art.image
+                .resizable()
+                .aspectRatio(art.aspect, contentMode: .fit)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+                .brightness(asleep ? -0.28 : 0)
+                .saturation(asleep ? 0.8 : 1)
+                .accessibilityHidden(true)
+        } else {
+            sketch
+        }
+    }
+
+    private var sketch: some View {
         GeometryReader { proxy in
             let w = proxy.size.width
             let h = proxy.size.height
@@ -644,6 +669,9 @@ struct PerchedBirdView: View {
     enum RigStyle { case wiggle, arc }
 
     let depth: Double
+    var speciesId: String? = nil
+    /// Art variant while on a hollow/trunk perch ("cling"), like the web.
+    var variant: String? = nil
     var asleep = false
     var bob: MeadowView.BobRig?
     var hopping = false
@@ -661,7 +689,7 @@ struct PerchedBirdView: View {
 
     var body: some View {
         let size = 46 * depth
-        BirdSpriteView(asleep: asleep)
+        BirdSpriteView(asleep: asleep, speciesId: speciesId, variant: variant)
             .frame(width: size, height: size * 0.87)
             .rotationEffect(.degrees(performing ? (performPhase ? 8 : -8) : (hopping ? 2 : 0)))
             .offset(y: yOffset)

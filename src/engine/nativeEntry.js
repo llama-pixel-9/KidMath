@@ -71,6 +71,7 @@ import { speakableText } from "../speakable.js";
 import { masterySummary, masteryLine } from "../analytics/masterySummary.js";
 import { getModeConfig } from "../modes";
 import { hintFor } from "../hints/index.js";
+import { SCENERY as MEADOW_SCENERY } from "../engagement/meadow/scenery.js";
 // Bird-world data (§13 roster, §05/§06 zones + perches + placement). Pure
 // data modules with no browser imports — safe in JavaScriptCore, and keeping
 // them here means iOS and web can never disagree on a price or a perch.
@@ -196,6 +197,8 @@ g.KidMath = {
   }),
 
   // §04–§13 bird-world data + placement, shared verbatim with the web.
+  // §04 zone furniture: prop id, base-centre (x, y) in zone px, target height.
+  meadowScenery: () => MEADOW_SCENERY,
   roster: () => SPECIES,
   rosterTiers: () => TIERS,
   zones: () => ZONES,

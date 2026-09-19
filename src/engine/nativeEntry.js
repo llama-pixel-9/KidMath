@@ -26,8 +26,6 @@ import {
   isSessionComplete,
   summarizeFlight,
   generateWorksheetSet,
-  generateFlightLog,
-  flightLogScope,
   printOptionBank,
   isYesNoJudgment,
   questionAnswerType,
@@ -119,11 +117,6 @@ g.KidMath = {
   generateChoices: (answer, count, question) => generateChoices(answer, count ?? 4, question ?? null),
   checkAnswer: (question, submitted) => checkAnswer(question, submitted),
   questionAnswerType: (question) => questionAnswerType(question),
-  // Flight logs (the printable sheets): same three-part draw as
-  // PrintableWorksheet.jsx — parts A/B skip the bank, word problems only when
-  // the parent allows them. Swift lays the result out on a Letter page.
-  generateFlightLog: (mode, level, options) => generateFlightLog(mode, level, options ?? {}),
-  flightLogScope: (mode, level) => flightLogScope(mode, level),
   // Worksheets by SKILL (src/worksheets/): the catalog the picker lists, what
   // the injected bank can fill, and a print run. Swift lays each sheet out on
   // a Letter page from `layout` + the budgets in `layouts`.

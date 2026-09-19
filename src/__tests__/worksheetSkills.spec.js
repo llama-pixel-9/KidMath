@@ -1,6 +1,7 @@
 import { beforeAll, describe, expect, it } from "vitest";
 import { FULL_ITEMS } from "../itemBank/fullBank";
 import { setBankItems } from "../itemBank";
+import { isTrivialFact, isYesNoJudgment, printOptionBank, questionAnswerType } from "../mathEngine";
 import { MODE_IDS } from "../modes";
 import { checkItems, storyMatches } from "../worksheets/claimCheck";
 import { generateWorksheet, paperFigureKey, practiceAvailability, storyPlan } from "../worksheets/generateWorksheet";
@@ -72,6 +73,38 @@ describe("worksheet skill catalog", () => {
   });
 });
 
+// The paper rules (#34): everything a sheet prints must be answerable with a
+// pencil. They used to be checked on the old mode + level sheets; they are
+// checked on every skill now.
+function expectPaperRules(sheet, id) {
+  const questions = [...sheet.items, ...sheet.wordProblems.map((item) => item.question)];
+  for (const q of questions) {
+    const text = q.display?.promptText || "";
+    const where = `${id}: "${text}"`;
+    expect(SCREEN_VERBS.test(text), where).toBe(false);
+    // The answer is never printed inside its own prompt.
+    if (typeof q.answer === "number" && text) {
+      expect(new RegExp(`\\b${String(q.answer).replace(/\./g, "\\.")}\\b`).test(text), where).toBe(false);
+    }
+    if (questionAnswerType(q) !== "choice") continue;
+    const bank = printOptionBank(q);
+    const numeric = typeof q.answer === "number" || (typeof q.answer === "string" && /^-?\d+([./]\d+)?$/.test(q.answer.trim()));
+    // Judgments print as circle-Yes-or-No; a non-numeric answer is
+    // unanswerable without its options; a printed bank holds the answer.
+    if (isYesNoJudgment(q)) expect(bank, where).toBeNull();
+    else if (!numeric) expect(bank, where).not.toBeNull();
+    if (bank) expect(bank.map(String), where).toContain(String(q.answer));
+  }
+  // A page of n × 1 teaches nothing: at most one identity fact a drill
+  // (pools smaller than a page excepted — they repeat by design).
+  if (sheet.items.every((q) => q.metadata?.itemSource === "worksheetSampler")) {
+    const keys = new Set(sheet.items.map((q) => `${q.a},${q.b}`));
+    if (keys.size === sheet.items.length) {
+      expect(sheet.items.filter(isTrivialFact).length, id).toBeLessThanOrEqual(1);
+    }
+  }
+}
+
 describe("worksheet skills keep their promise", () => {
   for (const skill of WORKSHEET_SKILLS) {
     it(`${skill.id}: practice sheets are full and match "${skill.title}"`, () => {
@@ -81,8 +114,8 @@ describe("worksheet skills keep their promise", () => {
         expect(sheet.items.length, "fills the page").toBe(LAYOUTS[skill.layout].practice);
         expect(sheet.shortfall).toBe(0);
         expect(checkItems(sheet.items, skill.source)).toEqual([]);
+        expectPaperRules(sheet, skill.id);
         for (const q of sheet.items) {
-          expect(SCREEN_VERBS.test(q.display?.promptText || ""), q.display?.promptText).toBe(false);
           // One sheet, one kind of item: all pictured, or none.
           if (skill.source.kind === "bank") expect(Boolean(paperFigureKey(q)), q.display?.promptText).toBe(isFigureLayout(skill.layout));
         }
@@ -111,6 +144,8 @@ describe("worksheet skills keep their promise", () => {
       expect(new Set(pictured).size).toBeLessThanOrEqual(1);
       expect(mixed.items.length).toBe(LAYOUTS[skill.layout].mixed);
       expect(checkItems(mixed.items, skill.source)).toEqual([]);
+      expectPaperRules(mixed, skill.id);
+      expectPaperRules(stories, skill.id);
       for (const { kind, question: q } of [...mixed.wordProblems, ...stories.wordProblems]) {
         expect(kind).toBe("story");
         expect(q.metadata.itemSource).toBe("bank");

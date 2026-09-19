@@ -1,5 +1,4 @@
 import { MODE_IDS, getModeConfig } from "./modes";
-import { maxTotalForLevel } from "./modes/structures/levelPolicy";
 import { shuffleArray, isVerbalPrompt } from "./modes/helpers";
 import { buildItemKey, ITEM_FAMILIES } from "./modes/itemMetadata";
 import { validateChoices, validateQuestion } from "./modes/itemQuality";
@@ -834,29 +833,13 @@ export function generateWorksheetSet(mode, level, size = SESSION_SIZE, options =
   return questions;
 }
 
-// --- Flight logs (§15): eleven items in three fixed blocks ---
+// --- Printed worksheets: the paper rules ---
 //
-// A flight log is one printed sheet: Part A (6 stacked computations),
-// Part B (4 inline computations), Part C (one thought problem). The blocks
-// never interleave, and the generator — not the layout — is responsible for
-// the sheet being printable: operands inside the level range, the result slot
-// always the blank, no duplicate items or wording, at most one zero-fact.
-
-// Budgets are sized to FILL one US Letter page — not spill onto a second and
-// not strand half a page of white (#34 both ways). The print e2e renders the
-// real PDF and pins every sheet to exactly one page.
-export const FLIGHT_LOG_PART_A = 12;
-export const FLIGHT_LOG_PART_B = 6;
-export const FLIGHT_LOG_ITEMS = FLIGHT_LOG_PART_A + FLIGHT_LOG_PART_B + 1;
-// Prompt items run two to three lines where a stacked sum runs one, so the
-// prompt modes get a smaller budget.
-export const FLIGHT_LOG_PROMPT_PART_A = 6;
-export const FLIGHT_LOG_PROMPT_PART_B = 6;
-// Figure sheets budget lower still: a bar chart is ~15 text lines tall, and
-// eight of them cannot share one page (measured by the print e2e).
-export const FLIGHT_LOG_FIGURE_PART_A = 2;
-export const FLIGHT_LOG_FIGURE_PART_B = 2;
-const FIGURE_MODES = new Set(["dataGraphs", "volumeCoordinates"]);
+// What a sheet may print, shared by src/worksheets/ (the skill catalog, the
+// bank-first draw and the computation sampler live there): a bare computation
+// whose blank is the result slot, no duplicate facts, at most one identity
+// fact, print-safe wording, and an option bank only where the options ARE the
+// question.
 
 const ARITH_OPS = { "+": (a, b) => a + b, "-": (a, b) => a - b, "x": (a, b) => a * b, "/": (a, b) => a / b };
 
@@ -869,17 +852,6 @@ export function isPureComputation(q) {
   // with an empty blank — the "3 + 1 = 5 ___" fault.
   if (fn(q.a, q.b) !== q.answer) return false;
   if (!Number.isInteger(q.answer) || q.answer < 0) return false;
-  return true;
-}
-
-// Level range: the additive ceiling is the level policy's total ceiling.
-// Multiplicative modes size their own factors, so only the computed result is
-// sanity-checked; an additive operand above the ceiling is a bug, not stretch.
-function withinLevelRange(q, level) {
-  const cap = maxTotalForLevel(level);
-  if (q.op === "+" || q.op === "-") {
-    return q.a <= cap && q.b <= cap && q.answer <= cap;
-  }
   return true;
 }
 
@@ -905,7 +877,7 @@ function normalizedPrompt(q) {
 
 // --- Print-safe wording (#34) ----------------------------------------------
 // Screen verbs don't survive paper: "Tap the number that is 9 hundreds" makes
-// no sense on a sheet a child answers with a pencil. Every drawn flight-log
+// no sense on a sheet a child answers with a pencil. Every drawn worksheet
 // question is reworded BEFORE dedupe keying, so the printed prompt is also the
 // deduped prompt.
 const PRINT_REWORDS = [
@@ -977,206 +949,4 @@ export function isYesNoJudgment(q) {
 
 export function promptKey(q) {
   return normalizedPrompt(q) || (q.display?.sequence ? `seq:${q.display.sequence.join(",")}` : `emoji:${q.display?.count}`);
-}
-
-// Draw questions until `accept` says yes, `count` times, without repeating a
-// key. Relaxation order on starvation: first admit trivial facts beyond the
-// cap, then (drill sheets only) admit repeats of already-used facts — a small
-// fact pool (multiplication L1 has ten non-trivial facts) must still fill its
-// page, and "3 × 4" appearing twice on a drill sheet is unremarkable. Worded
-// prompts never repeat: the same sentence twice reads as a misprint.
-function drawUnique({ mode, level, context, count, accept, keyOf, seenKeys, state, capStructures = false, allowRepeatsOnStarvation = false }) {
-  const out = [];
-  let attempts = 0;
-  const maxAttempts = count * 60;
-  while (out.length < count && attempts < maxAttempts) {
-    attempts += 1;
-    let q;
-    try {
-      q = generateQuestion(mode, level, context);
-    } catch {
-      continue;
-    }
-    q = printableWording(q);
-    if (!accept(q)) continue;
-    if (isTrivialFact(q)) {
-      if (state.trivialUsed) continue;
-      state.trivialUsed = true;
-    }
-    const key = keyOf(q);
-    if (seenKeys.has(key)) continue;
-    const prompt = normalizedPrompt(q);
-    if (prompt && seenKeys.has(`prompt:${prompt}`)) continue;
-    // Same template thrice on one sheet ("Every hand shows 5 fingers…" ×3)
-    // reads as a copy-paste job even when the numbers differ. Prompt sheets
-    // only — a page of stacked sums shares one structure by design.
-    const structure = capStructures ? q.metadata?.structureType : null;
-    if (structure) {
-      const used = state.structureCounts?.[structure] || 0;
-      if (used >= 2) continue;
-      state.structureCounts = { ...(state.structureCounts || {}), [structure]: used + 1 };
-    }
-    seenKeys.add(key);
-    if (prompt) seenKeys.add(`prompt:${prompt}`);
-    out.push(q);
-  }
-  if (allowRepeatsOnStarvation && out.length < count) {
-    const usedKeys = new Set(out.map(keyOf));
-    let repeatAttempts = 0;
-    let lastKey = null;
-    while (out.length < count && repeatAttempts < count * 60) {
-      repeatAttempts += 1;
-      let q;
-      try {
-        q = generateQuestion(mode, level, context);
-      } catch {
-        continue;
-      }
-      q = printableWording(q);
-      if (!accept(q) || isTrivialFact(q)) continue;
-      const key = keyOf(q);
-      // Spread the repeats: never the same fact back-to-back in the draw.
-      if (key === lastKey) continue;
-      lastKey = key;
-      usedKeys.add(key);
-      out.push(q);
-    }
-  }
-  return out;
-}
-
-// The word-problems block at the end of the sheet — the whole point of the
-// Include Word Problems toggle (#34): OFF is a pure fact-fluency sheet with
-// NOTHING worded on it (a "pick two numbers…" item counts as worded — serving
-// one with the toggle off is why the toggle looked broken); ON guarantees the
-// sheet visibly carries stories. Stories are preferred; pick-two fills in
-// when a mode's story pool runs dry. No computation fallback — a drill sheet
-// short one word problem beats a "word problem" that is secretly a sum.
-function drawWordProblems({ mode, level, seenKeys, count }) {
-  const context = { allowWordProblems: true };
-  const out = [];
-  for (let attempts = 0; attempts < count * 60 && out.length < count; attempts += 1) {
-    let q;
-    try {
-      q = generateQuestion(mode, level, context);
-    } catch {
-      continue;
-    }
-    q = printableWording(q);
-    const prompt = normalizedPrompt(q);
-    if (!prompt || seenKeys.has(`prompt:${prompt}`)) continue;
-
-    const isStory = q.metadata?.itemFamily === ITEM_FAMILIES.APPLICATION && isVerbalPrompt(q.display?.promptText);
-    if (isStory && (typeof q.answer === "number" || typeof q.answer === "string")) {
-      seenKeys.add(`prompt:${prompt}`);
-      out.push({ kind: "story", question: q });
-    }
-  }
-  // Pick-two prompts carry their bank in display.options and a list-of-lists
-  // answer; anything multiSelect without a bank is unprintable.
-  for (let attempts = 0; attempts < 60 && out.length < count; attempts += 1) {
-    let q;
-    try {
-      q = generateQuestion(mode, level, context);
-    } catch {
-      continue;
-    }
-    q = printableWording(q);
-    const prompt = normalizedPrompt(q);
-    if (!prompt || seenKeys.has(`prompt:${prompt}`)) continue;
-    if (q.answerType !== "multiSelect") continue;
-    if (!Array.isArray(q.display?.options) || q.display.options.length === 0) continue;
-    seenKeys.add(`prompt:${prompt}`);
-    out.push({ kind: "pickTwo", question: q });
-  }
-  return out;
-}
-
-/**
- * Generate one flight log: `{ partA, partB, partC, computational }`.
- * `partC` is `{ kind: "pickTwo" | "story" | "computation", question }`.
- * `computational` is false for modes without an a-op-b form (time, graphs…),
- * whose Parts A/B hold short prompt items instead of stacked/inline sums.
- */
-export function generateFlightLog(mode, level, options = {}) {
-  const { allowWordProblems = true } = options;
-  const config = getModeConfig(mode);
-  const computational = Object.prototype.hasOwnProperty.call(ARITH_OPS, config.op);
-  const seenKeys = new Set();
-  const state = { trivialUsed: false };
-  const figureMode = FIGURE_MODES.has(mode);
-  const partACount = computational
-    ? FLIGHT_LOG_PART_A
-    : figureMode
-      ? FLIGHT_LOG_FIGURE_PART_A
-      : FLIGHT_LOG_PROMPT_PART_A;
-  const partBCount = computational
-    ? FLIGHT_LOG_PART_B
-    : figureMode
-      ? FLIGHT_LOG_FIGURE_PART_B
-      : FLIGHT_LOG_PROMPT_PART_B;
-
-  let partA;
-  let partB;
-  if (computational) {
-    // Parts A/B skip the item bank: bank prose belongs in Part C, and the
-    // computation blocks must be exactly `a op b = ☐`.
-    const context = { allowWordProblems: false, consultBankFamilies: [] };
-    const accept = (q) => isPureComputation(q) && withinLevelRange(q, level);
-    const items = drawUnique({
-      mode,
-      level,
-      context,
-      count: partACount + partBCount,
-      accept,
-      keyOf: computationKey,
-      seenKeys,
-      state,
-      allowRepeatsOnStarvation: true,
-    });
-    partA = items.slice(0, partACount);
-    partB = items.slice(partACount, partACount + partBCount);
-  } else {
-    // Prompt sheets skip the bank for the same reason the computation blocks
-    // do: bank prose belongs in Part C, and a banked cell's non-verbal pool
-    // can be smaller than a sheet (placeValue L2 starved partB to zero).
-    const context = { allowWordProblems: false, consultBankFamilies: [] };
-    const items = drawUnique({
-      mode,
-      level,
-      context,
-      count: partACount + partBCount,
-      accept: isPrintablePrompt,
-      keyOf: promptKey,
-      seenKeys,
-      state,
-      capStructures: true,
-    });
-    // Prompt items may need their option bank to be answerable on paper.
-    for (const q of items) {
-      if (questionAnswerType(q) === "choice") {
-        q.choices = generateChoices(q.answer, 4, q);
-      }
-    }
-    partA = items.slice(0, partACount);
-    partB = items.slice(partACount, partACount + partBCount);
-  }
-
-  const wordProblems = allowWordProblems
-    ? drawWordProblems({ mode, level, seenKeys, count: figureMode ? 1 : 2 })
-    : [];
-  const itemCount = partA.length + partB.length + wordProblems.length;
-  return { partA, partB, wordProblems, computational, itemCount };
-}
-
-/**
- * The scope phrase in the sheet header — level-aware for the additive modes
- * ("Sums to 10" on a Level 1 log), the mode's card scope line otherwise.
- */
-export function flightLogScope(mode, level) {
-  const config = getModeConfig(mode);
-  const cap = maxTotalForLevel(level);
-  if (config.op === "+") return `Sums to ${cap}`;
-  if (config.op === "-") return `Take away to ${cap}`;
-  return config.description;
 }

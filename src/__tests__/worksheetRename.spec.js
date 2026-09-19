@@ -3,9 +3,8 @@ import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join, relative } from "node:path";
 
 // Parents search for "worksheets", not "flight logs". The rebrand's cute name
-// is retired from everything a parent (or a crawler) can read. Internal
-// identifiers (generateFlightLog, FlightLogSheet, …) and comments are exempt —
-// this guards COPY only.
+// is retired from everything a parent (or a crawler) can read. Comments are
+// exempt — this guards COPY only.
 
 const ROOT = join(import.meta.dirname, "..", "..");
 const FLIGHT_LOG = /flight[\s-]?logs?/i;

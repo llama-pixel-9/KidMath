@@ -7,7 +7,8 @@ description: How printable worksheets are generated, laid out and printed — th
 
 Premium launch feature (#34). User-facing name is **"worksheets"**, never
 "flight log" — parents search for worksheets (`worksheetRename.spec.js`
-guards the copy; internal identifiers may still say flightLog).
+guards the copy). The old mode + level generator (`generateFlightLog`) is
+gone on both platforms.
 
 A parent picks **grade → skill → problem type → sheets**. There is no mode
 grid and no "Level" anywhere, on screen or on paper. One sheet = one skill
@@ -110,11 +111,16 @@ by piece so the public worksheet pages can share the renderer.
 ## Tests
 
 - `worksheetSkills.spec.js` — catalog integrity + every skill × 3 problem
-  types keeps its promise, pools cover 3 sheets, one kind of item a sheet.
+  types keeps its promise AND the paper rules, pools cover 3 sheets, one
+  kind of item a sheet.
 - `computationSampler.spec.js`, `worksheetRename.spec.js`.
-- `worksheets.spec.js` / `flightLog.spec.js` — the legacy
-  `generateFlightLog`. The web no longer calls it; iOS does until its
-  parity phase (WorksheetView / FlightLogPDF), after which it is deleted.
+- iOS: `ios/KidMath/Views/WorksheetView.swift` (same picker) and
+  `WorksheetPDF.swift` (same layouts, web CSS px × 548/744 so the measured
+  budgets hold; `naturalHeight` is the page-fit check). Both go through
+  `worksheetCatalog` / `worksheetCapacity` / `generateWorksheetRun` in
+  `nativeEntry.js`. Topics iOS cannot play (volumeCoordinates) are hidden.
+  `WorksheetTests.swift` pins layout, claim, remainders-on-key, page fit and
+  orientation (ImageRenderer draws straight into PDF space — do NOT flip).
 - Deep links: `/worksheets?skill=<id>&type=practice|stories|mixed&sheets=N&key=0&go=1`;
   old `?mode=&level=` lands on the nearest skill (`skillForModeLevel`). The
   screen rewrites the address as choices change, so it is always shareable.

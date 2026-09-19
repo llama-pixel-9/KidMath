@@ -111,6 +111,7 @@ export default function PrintableWorksheet() {
   const [searchParams, setSearchParams] = useSearchParams();
   const [linked] = useState(() => linkedState(searchParams));
   const [grade, setGrade] = useState(() => linked.skill?.grade ?? initialGrade());
+  const [topicMode, setTopicMode] = useState(linked.skill?.mode ?? null);
   const [skillId, setSkillId] = useState(linked.skill?.id ?? null);
   const [problemType, setProblemType] = useState(() => linked.problemType ?? initialProblemType());
   const [sheetCount, setSheetCount] = useState(linked.sheetCount ?? 1);
@@ -126,6 +127,8 @@ export default function PrintableWorksheet() {
     const inGrade = WORKSHEET_SKILLS.filter((s) => s.grade === grade);
     return MODE_IDS.map((mode) => ({ mode, skills: inGrade.filter((s) => s.mode === mode) })).filter((t) => t.skills.length);
   }, [grade]);
+
+  const topicSkills = useMemo(() => topics.find((t) => t.mode === topicMode)?.skills || [], [topics, topicMode]);
 
   const ready = Boolean(skill) && loadedMode === skill.mode;
   const capacity = useMemo(() => (ready ? capacityFor(skill) : null), [ready, skill]);
@@ -144,6 +147,16 @@ export default function PrintableWorksheet() {
     setGrade(next);
     store(GRADE_KEY, next);
     if (skill && skill.grade !== next) {
+      setSkillId(null);
+      setSheets(null);
+    }
+    // Keep the topic when the new grade has it too (Grade 3 → 4 Multiplication).
+    if (topicMode && !WORKSHEET_SKILLS.some((s) => s.grade === next && s.mode === topicMode)) setTopicMode(null);
+  };
+
+  const chooseTopic = (next) => {
+    setTopicMode(next);
+    if (skill && skill.mode !== next) {
       setSkillId(null);
       setSheets(null);
     }
@@ -226,7 +239,7 @@ export default function PrintableWorksheet() {
       <div className="no-print max-w-xl mx-auto px-4 py-6">
         <h1 className={`text-2xl font-semibold font-display ${theme.textPrimary} mb-2`}>Print a Worksheet</h1>
         <p className={`text-sm ${theme.textSecondary} mb-6`}>
-          Pick a grade, then the skill to practice. One sheet, one skill — the answer key prints as its own sheet.
+          Pick a grade, a topic, then the skill to practice. One sheet, one skill — the answer key prints as its own sheet.
         </p>
 
         <div className={`${theme.cardBg} backdrop-blur rounded-3xl shadow-lg p-6 space-y-5`}>
@@ -248,53 +261,69 @@ export default function PrintableWorksheet() {
             </div>
           </div>
 
-          {/* Skills for the grade, grouped by topic */}
+          {/* Topic: the grade's high-level areas */}
           <div>
-            <p className={sectionLabel}>What to practice</p>
+            <p className={sectionLabel}>Topic</p>
             {!grade ? (
-              <p className={`text-sm ${theme.textMuted}`}>Pick a grade to see its skills.</p>
+              <p className={`text-sm ${theme.textMuted}`}>Pick a grade to see its topics.</p>
             ) : (
-              <div
-                className={`max-h-[46vh] overflow-y-auto rounded-2xl border-2 ${theme.cardBorder} bg-white`}
-                role="radiogroup"
-                aria-label={`${GRADE_LABELS[grade]} skills`}
-              >
-                {topics.map(({ mode, skills }) => (
-                  <section key={mode} aria-label={TOPIC_LABELS[mode]}>
-                    <h2 className={`sticky top-0 z-10 bg-white/95 backdrop-blur px-4 pt-3 pb-1.5 text-xs font-bold uppercase tracking-wider ${theme.textMuted}`}>
-                      {TOPIC_LABELS[mode]}
-                    </h2>
-                    {skills.map((s) => {
-                      const active = s.id === skillId;
-                      return (
-                        <button
-                          key={s.id}
-                          role="radio"
-                          aria-checked={active}
-                          className={`w-full flex items-start gap-3 px-4 py-2.5 text-left cursor-pointer transition-colors ${
-                            active ? "bg-teal/10" : "hover:bg-gray-50"
-                          }`}
-                          onClick={() => chooseSkill(s)}
-                        >
-                          <span
-                            className={`mt-1 h-4 w-4 flex-none rounded-full border-2 ${
-                              active ? "border-teal bg-teal shadow-[inset_0_0_0_3px_white]" : "border-gray-300"
-                            }`}
-                          />
-                          <span className={`flex-1 text-sm font-semibold leading-snug ${active ? theme.selectedText : theme.textPrimary}`}>
-                            {s.title}
-                          </span>
-                          {s.ccss[0] && (
-                            <span className={`flex-none pt-0.5 text-[11px] font-bold tabular-nums ${theme.textMuted}`}>{s.ccss[0]}</span>
-                          )}
-                        </button>
-                      );
-                    })}
-                  </section>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2" role="group" aria-label={`${GRADE_LABELS[grade]} topics`}>
+                {topics.map(({ mode }) => (
+                  <button
+                    key={mode}
+                    aria-pressed={mode === topicMode}
+                    className={`px-3 py-2.5 text-sm leading-tight ${chip(mode === topicMode)}`}
+                    onClick={() => chooseTopic(mode)}
+                  >
+                    {TOPIC_LABELS[mode]}
+                  </button>
                 ))}
               </div>
             )}
           </div>
+
+          {/* Skill: what exactly, within the topic */}
+          {grade && (
+            <div>
+              <p className={sectionLabel}>Skill</p>
+              {!topicSkills.length ? (
+                <p className={`text-sm ${theme.textMuted}`}>Pick a topic to see its skills.</p>
+              ) : (
+                <div
+                  className={`rounded-2xl border-2 ${theme.cardBorder} bg-white overflow-hidden`}
+                  role="radiogroup"
+                  aria-label={`${GRADE_LABELS[grade]} ${TOPIC_LABELS[topicMode]} skills`}
+                >
+                  {topicSkills.map((s) => {
+                    const active = s.id === skillId;
+                    return (
+                      <button
+                        key={s.id}
+                        role="radio"
+                        aria-checked={active}
+                        className={`w-full flex items-start gap-3 px-4 py-2.5 text-left cursor-pointer transition-colors ${
+                          active ? "bg-teal/10" : "hover:bg-gray-50"
+                        }`}
+                        onClick={() => chooseSkill(s)}
+                      >
+                        <span
+                          className={`mt-1 h-4 w-4 flex-none rounded-full border-2 ${
+                            active ? "border-teal bg-teal shadow-[inset_0_0_0_3px_white]" : "border-gray-300"
+                          }`}
+                        />
+                        <span className={`flex-1 text-sm font-semibold leading-snug ${active ? theme.selectedText : theme.textPrimary}`}>
+                          {s.title}
+                        </span>
+                        {s.ccss[0] && (
+                          <span className={`flex-none pt-0.5 text-[11px] font-bold tabular-nums ${theme.textMuted}`}>{s.ccss[0]}</span>
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          )}
 
           {/* Problem type */}
           <div>
@@ -378,7 +407,7 @@ export default function PrintableWorksheet() {
               disabled={!ready || Boolean(blocked)}
               onClick={handleGenerate}
             >
-              {!skill ? "Pick a skill" : ready ? "Generate" : "Loading…"}
+              {!grade ? "Pick a grade" : !topicMode ? "Pick a topic" : !skill ? "Pick a skill" : ready ? "Generate" : "Loading…"}
             </motion.button>
             {sheets && (
               <motion.button

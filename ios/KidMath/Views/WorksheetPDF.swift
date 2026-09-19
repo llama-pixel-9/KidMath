@@ -506,7 +506,7 @@ private struct PrintFigure: View {
             LinePlotView(points: display["points"] as? [[String: Any]] ?? [], axisLabel: display["axisLabel"] as? String)
         case "clockFace":
             let clock = (display["clock"] as? [String: Any]) ?? (display["time"] as? [String: Any]) ?? [:]
-            ClockFaceView(hour: (clock["hour"] as? NSNumber)?.doubleValue ?? 12, minute: (clock["minute"] as? NSNumber)?.doubleValue ?? 0)
+            ClockFaceView(hour: (clock["hour"] as? NSNumber)?.doubleValue ?? 12, minute: (clock["minute"] as? NSNumber)?.doubleValue ?? 0, numbered: true)
         case "discMat":
             let dm = display["discMat"] as? [String: Any] ?? [:]
             if let cols = dm["cols"] as? [[String: Any]] { DiscMatView(cols: cols, label: nil) }

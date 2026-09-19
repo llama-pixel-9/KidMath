@@ -1,6 +1,6 @@
 /**
  * Worksheet print regression (#34). Generates worksheets through the real UI
- * — grade → skill → problem type → sheets — and checks the PAPER rules: no
+ * — grade → topic → skill → problem type → sheets — and checks the PAPER rules: no
  * screen-verb language on a sheet, graphs actually drawn, one layout per
  * sheet, and, via Chromium's own print pipeline (page.pdf), that every sheet
  * fits its page: N sheets (+ keys) produce exactly N (+N) PDF pages.
@@ -13,7 +13,7 @@
  * the dev server reads the full bank from disk, so bank skills are testable.
  */
 import { expect, test } from "@playwright/test";
-import { GRADE_LABELS, WORKSHEET_SKILLS } from "../src/worksheets/skills.js";
+import { GRADE_LABELS, TOPIC_LABELS, WORKSHEET_SKILLS } from "../src/worksheets/skills.js";
 
 const TYPE_BUTTON = { practice: "Practice problems only", stories: "Word problems only", mixed: "Mixed" };
 
@@ -25,9 +25,10 @@ function pdfPageCount(buffer) {
   return counts.length ? Math.max(...counts) : 0;
 }
 
-async function pickSkill(page, { grade, title }) {
+async function pickSkill(page, { grade, mode, title }) {
   await page.goto("/worksheets");
   await page.getByRole("button", { name: GRADE_LABELS[grade], exact: true }).click();
+  await page.getByRole("button", { name: TOPIC_LABELS[mode], exact: true }).click();
   // The row's name is "<title> <code>"; titles can prefix one another
   // ("…within 100" / "…within 1000"), so anchor both ends.
   const escaped = title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -167,6 +168,9 @@ test("worksheets: a deep link picks the skill, prints on go=1, and the address s
   // Changing a choice rewrites the address, so copying it shares the sheet.
   await page.getByRole("button", { name: "Practice problems only", exact: true }).click();
   await expect(page).toHaveURL(/skill=sub-3digit-regroup.*type=practice/);
+
+  // The topic step follows the link too.
+  await expect(page.getByRole("button", { name: "Subtraction", exact: true })).toHaveAttribute("aria-pressed", "true");
 
   // Old mode + level links land on the nearest skill in that topic.
   await page.goto("/worksheets?mode=time&level=5");

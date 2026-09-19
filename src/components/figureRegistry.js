@@ -54,9 +54,11 @@ export const FIGURES = {
   },
   clockFace: {
     Component: ClockFace,
-    props: (q) => ({
+    props: (q, ctx) => ({
       hour: q.display?.clock?.hour ?? q.display?.time?.hour,
       minute: q.display?.clock?.minute ?? q.display?.time?.minute,
+      // Paper gets the numbered face (see ClockFace).
+      numbered: Boolean(ctx?.paper),
     }),
   },
   cubeGrid: {

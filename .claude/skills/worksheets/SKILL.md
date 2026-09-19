@@ -10,7 +10,9 @@ Premium launch feature (#34). User-facing name is **"worksheets"**, never
 guards the copy). The old mode + level generator (`generateFlightLog`) is
 gone on both platforms.
 
-A parent picks **grade → skill → problem type → sheets**. There is no mode
+A parent picks **grade → topic → skill → problem type → sheets** (Sai
+asked for the topic step explicitly: one long grouped list was too much to
+scan). There is no mode
 grid and no "Level" anywhere, on screen or on paper. One sheet = one skill
 = **one layout**.
 
@@ -91,14 +93,19 @@ budget or the layout; never delete the assertion.
   the areaPerimeter bank implies). Grayscale with the contrast pushed
   (on-screen tints print as pale ghosts otherwise), ≤240px. Two-mat disc
   items are excluded (`ONE_MAT`): twice the height of everything else.
+- **Clocks print numbered** (`ClockFace numbered`, passed via `ctx.paper`;
+  iOS `ClockFaceView(numbered:)`): numerals, minute track, black hands. The
+  on-screen dotted face is unreadable on paper — no way to tell which dot is
+  12, and the minute hand's tip reads as a thirteenth dot.
 - **Option banks only where the options ARE the question**
   (`printOptionBank`); judgment items print "Circle one: Yes / No".
 - §15 brand rule: every mark on a sheet is 100% black.
 
 ## The screen (`src/PrintableWorksheet.jsx`)
 
-Grade chips (default: active kid's grade, else last used) → one scrollable
-skill list grouped under topic headings, each row title + CCSS code →
+Grade chips (default: active kid's grade, else last used) → topic tiles
+(plain names, only the grade's topics) → that topic's skills, each row
+title + CCSS code →
 Problems (Computation|Practice · Word problems · Mixed) → sheets → answer
 key → Generate → Print. Picking a skill calls `ensureModeLoaded`; Generate
 waits for it. `capacityFor` disables what the LOADED bank cannot fill,

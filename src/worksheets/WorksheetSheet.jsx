@@ -102,7 +102,7 @@ function PromptFigure({ question: q, settled }) {
     // On-screen figures are drawn in soft tints; grayscale alone prints them
     // as pale ghosts, so the contrast is pushed toward black (§15).
     <div className="max-w-[240px] mb-1.5" style={{ filter: "grayscale(1) contrast(2.2)" }}>
-      <figure.Component theme={MONO_THEME} {...(figure.props ? figure.props(q, { settled }) : {})} />
+      <figure.Component theme={MONO_THEME} {...(figure.props ? figure.props(q, { settled, paper: true }) : {})} />
     </div>
   );
 }

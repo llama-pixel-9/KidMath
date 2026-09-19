@@ -1,8 +1,9 @@
 import SwiftUI
 
 /// Worksheets — port of PrintableWorksheet.jsx over the shared skill catalog
-/// (src/worksheets/). A parent picks a grade, then one of that grade's skills
-/// (grouped under plain topic names, with their standard codes), then the
+/// (src/worksheets/). A parent picks a grade, then one of that grade's topics
+/// (plain names: Multiplication, Fractions, Decimals…), then one of the
+/// topic's skills (with its standard code), then the
 /// problem type, sheet count and answer key, and shares the PDF (AirPrint,
 /// Files, Mail come free with the share sheet — the native replacement for
 /// window.print()). There is no game picker and no "Level": the skill's
@@ -40,6 +41,7 @@ struct WorksheetView: View {
     @State private var catalog: [String: Any] = [:]
     @State private var skills: [Skill] = []
     @State private var grade = UserDefaults.standard.string(forKey: WorksheetView.gradeKey) ?? ""
+    @State private var topicMode = ""
     @State private var skill: Skill?
     @State private var problemType = WorksheetView.initialProblemType()
     @State private var sheetCount = 1
@@ -91,14 +93,34 @@ struct WorksheetView: View {
                     .onChange(of: grade) { _, value in
                         UserDefaults.standard.set(value, forKey: Self.gradeKey)
                         if skill?.grade != value { pick(nil) }
+                        // Keep the topic when the new grade has it too.
+                        if !topics.contains(where: { $0.mode == topicMode }) { topicMode = "" }
                     }
                 }
 
                 if grade.isEmpty {
-                    Section { Text("Pick a grade to see its skills.").foregroundStyle(theme.textMuted) }
+                    Section { Text("Pick a grade to see its topics.").foregroundStyle(theme.textMuted) }
+                } else {
+                    Section("Topic") {
+                        ForEach(topics, id: \.mode) { topic in
+                            Button {
+                                topicMode = topic.mode
+                                if skill?.mode != topic.mode { pick(nil) }
+                            } label: {
+                                HStack {
+                                    Text(topicLabels[topic.mode] ?? topic.mode).font(.subheadline.weight(.semibold))
+                                        .foregroundStyle(topic.mode == topicMode ? Theme.teal : Theme.ink)
+                                    Spacer()
+                                    if topic.mode == topicMode { Image(systemName: "checkmark").foregroundStyle(Theme.teal) }
+                                }
+                            }
+                            .buttonStyle(.plain)
+                            .accessibilityAddTraits(topic.mode == topicMode ? .isSelected : [])
+                        }
+                    }
                 }
-                ForEach(topics, id: \.mode) { topic in
-                    Section(topicLabels[topic.mode] ?? topic.mode) {
+                if let topic = topics.first(where: { $0.mode == topicMode }) {
+                    Section("Skill") {
                         ForEach(topic.skills) { row in
                             Button { pick(row) } label: {
                                 HStack(alignment: .top, spacing: 10) {

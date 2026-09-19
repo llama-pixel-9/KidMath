@@ -8,8 +8,8 @@ import { activeKidGrade } from "./kidProfiles.js";
 import { gradeIndex } from "./gradeSeed.js";
 import { loadAllowWordProblemsSync } from "./userPreferences.js";
 import { useTheme } from "./useTheme";
-import { generateWorksheet, practiceAvailability, storyPlan } from "./worksheets/generateWorksheet.js";
-import { LAYOUTS, PROBLEM_TYPES } from "./worksheets/layouts.js";
+import { generateWorksheetRun, worksheetCapacity } from "./worksheets/generateWorksheet.js";
+import { PROBLEM_TYPES } from "./worksheets/layouts.js";
 import { documentTitle, headerLine, skillById, skillForModeLevel } from "./worksheets/skillIndex.js";
 import { GRADES, GRADE_LABELS, TOPIC_LABELS, WORKSHEET_SKILLS } from "./worksheets/skills.js";
 import WorksheetSheet from "./worksheets/WorksheetSheet.jsx";
@@ -89,38 +89,20 @@ function linkedState(params) {
   };
 }
 
-// The sheets of one print run — clamped to what the loaded bank can fill, or
-// null when it can fill none. One seen-set for the whole run, so five sheets
-// are five different sheets.
-function printRun(skill, problemType, sheetCount) {
-  const capacity = capacityFor(skill);
-  const type = capacity[problemType].sheets ? problemType : "practice";
-  const count = Math.min(sheetCount, capacity[type].sheets);
-  if (count < 1) return null;
-  const seenKeys = new Set();
-  return Array.from({ length: count }, () => generateWorksheet(skill.id, { problemType: type, seenKeys }));
-}
-
 // What the loaded bank can fill for a skill: which problem types, how many
 // sheets. Nothing is ever padded with generated filler — an option the bank
 // cannot fill is switched off, with the reason.
 function capacityFor(skill) {
   if (!skill) return null;
-  const budget = LAYOUTS[skill.layout];
-  const plan = storyPlan(skill.id);
-  const stories = plan.pool.length;
-  const practice = practiceAvailability(skill.id);
-  const thin = stories === 0
-    ? "There are no word problems for this skill yet."
-    : "There are not enough word problems for this skill yet.";
-  const practiceSheets = Math.floor(practice / budget.practice);
-  const mixedSheets = Math.min(Math.floor(practice / budget.mixed), Math.floor(stories / plan.perMixedSheet));
-  const storySheets = Math.floor(stories / plan.perSheet);
+  const sheets = worksheetCapacity(skill.id);
   const offline = "Couldn't load this topic's problems — check your connection.";
+  const thin = sheets.practice
+    ? "There are not enough word problems for this skill yet."
+    : offline;
   return {
-    practice: { sheets: practiceSheets, reason: practiceSheets ? null : offline },
-    mixed: { sheets: mixedSheets, reason: mixedSheets ? null : practiceSheets ? thin : offline },
-    stories: { sheets: storySheets, reason: storySheets ? null : thin },
+    practice: { sheets: sheets.practice, reason: sheets.practice ? null : offline },
+    mixed: { sheets: sheets.mixed, reason: sheets.mixed ? null : thin },
+    stories: { sheets: sheets.stories, reason: sheets.stories ? null : thin },
   };
 }
 
@@ -175,7 +157,7 @@ export default function PrintableWorksheet() {
 
   const handleGenerate = () => {
     if (!ready || blocked) return;
-    setSheets(printRun(skill, activeType, activeCount));
+    setSheets(generateWorksheetRun(skill.id, { problemType: activeType, sheets: activeCount }));
   };
 
   // Worded problems come from the bank: load the picked skill's topic, and
@@ -189,8 +171,11 @@ export default function PrintableWorksheet() {
       setLoadedMode(mode);
       if (!autoGenerate.current) return;
       autoGenerate.current = false;
-      const run = printRun(linked.skill, linked.problemType ?? initialProblemType(), linked.sheetCount ?? 1);
-      if (run) setSheets(run);
+      const run = generateWorksheetRun(linked.skill.id, {
+        problemType: linked.problemType ?? initialProblemType(),
+        sheets: linked.sheetCount ?? 1,
+      });
+      if (run.length) setSheets(run);
     });
     return () => {
       live = false;

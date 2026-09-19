@@ -146,6 +146,43 @@ export function practiceAvailability(skillId) {
   return skill.source.kind === "bank" ? practicePool(skill).length : Infinity;
 }
 
+// "Unbounded" as a number, so the answer survives JSON on its way to Swift.
+const UNBOUNDED_SHEETS = 99;
+
+/**
+ * How many sheets of each problem type the LOADED bank can fill for a skill.
+ * Nothing is ever padded with generated filler: a type the bank cannot fill
+ * reports 0 and the screen (web and iOS) switches it off.
+ */
+export function worksheetCapacity(skillId) {
+  const skill = skillById(skillId);
+  if (!skill) return { practice: 0, mixed: 0, stories: 0 };
+  const budget = LAYOUTS[skill.layout];
+  const plan = storyPlan(skillId);
+  const stories = plan.pool.length;
+  const practice = practiceAvailability(skillId);
+  const sheetsOf = (pool, perSheet) => (pool === Infinity ? UNBOUNDED_SHEETS : Math.floor(pool / perSheet));
+  return {
+    practice: sheetsOf(practice, budget.practice),
+    mixed: Math.min(sheetsOf(practice, budget.mixed), Math.floor(stories / plan.perMixedSheet)),
+    stories: Math.floor(stories / plan.perSheet),
+  };
+}
+
+/**
+ * The sheets of one print run, clamped to what the loaded bank can fill (a
+ * problem type it cannot fill falls back to practice). One seen-set for the
+ * whole run, so five sheets are five different sheets. Empty when the bank
+ * can fill nothing.
+ */
+export function generateWorksheetRun(skillId, { problemType = "practice", sheets = 1 } = {}) {
+  const capacity = worksheetCapacity(skillId);
+  const type = capacity[problemType] ? problemType : "practice";
+  const count = Math.min(sheets, capacity[type]);
+  const seenKeys = new Set();
+  return Array.from({ length: Math.max(0, count) }, () => generateWorksheet(skillId, { problemType: type, seenKeys }));
+}
+
 /**
  * @param {string} skillId
  * @param {{problemType?: "practice"|"stories"|"mixed", seenKeys?: Set<string>}} options

@@ -172,15 +172,30 @@ final class EngineBridge {
         return set
     }
 
-    /// A flight log (printable sheet): { partA, partB, wordProblems,
-    /// computational, itemCount } — the same three-part draw the web prints.
-    func generateFlightLog(mode: String, level: Int, allowWordProblems: Bool) throws -> [String: Any] {
-        try dictionary(from: try call("generateFlightLog", [mode, level, ["allowWordProblems": allowWordProblems]]), in: "generateFlightLog")
+    // MARK: Worksheets (src/worksheets/)
+
+    /// The skill catalog the picker lists: grades, plain topic names, the
+    /// layouts' page budgets, and every skill with its header line.
+    func worksheetCatalog() throws -> [String: Any] {
+        try callDictionary("worksheetCatalog")
     }
 
-    /// The header scope phrase ("Sums to 10" on a Level 1 addition log).
-    func flightLogScope(mode: String, level: Int) -> String {
-        (try? callString("flightLogScope", [mode, level])) ?? ""
+    /// Sheets of each problem type the INJECTED bank can fill for a skill —
+    /// { practice, mixed, stories }. 0 means switch the option off; nothing is
+    /// ever padded with generated filler.
+    func worksheetCapacity(skillId: String) -> [String: Int] {
+        guard let raw = try? callDictionary("worksheetCapacity", [skillId]) else { return [:] }
+        return raw.compactMapValues { ($0 as? NSNumber)?.intValue }
+    }
+
+    /// One print run: `sheets` different sheets for a skill, each
+    /// { layout, items, wordProblems, itemCount, shortfall }.
+    func generateWorksheetRun(skillId: String, problemType: String, sheets: Int) throws -> [[String: Any]] {
+        let result = try call("generateWorksheetRun", [skillId, ["problemType": problemType, "sheets": sheets]])
+        guard let run = result.toObject() as? [[String: Any]] else {
+            throw EngineError.badResult("generateWorksheetRun did not return an array of sheets")
+        }
+        return run
     }
 
     /// Choices to print as a bank next to a prompt, or nil.

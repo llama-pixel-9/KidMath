@@ -63,7 +63,7 @@ final class StoreTests: XCTestCase {
         let row = StoreService.entitlementRow(productID: StoreService.annualID, expiresAt: expires)
         XCTAssertEqual(row["status"] as? String, "active")
         XCTAssertEqual(row["source"] as? String, "appstore")
-        XCTAssertEqual(row["product_id"] as? String, "com.kidmath.app.premium.annual")
+        XCTAssertEqual(row["product_id"] as? String, "io.larkit.app.premium.annual")
         XCTAssertNotNil(row["expires_at"] as? String)
     }
 

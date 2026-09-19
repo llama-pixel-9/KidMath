@@ -184,7 +184,7 @@ Paperwork, accounts, and signatures. No code. Roughly ordered by what unblocks t
 
 - [ ] Enroll in the Apple Developer Program **as the LLC**, not as an individual. Kids Category apps from individual accounts get extra scrutiny, and the seller name should match the entity in your Terms.
 - [ ] Enroll in the Small Business Program (15% commission — the $54.99 annual nets ~$46.74)
-- [ ] Pick the real bundle ID; replace `com.kidmath.app` in `ios/project.yml`
+- [ ] Pick the real bundle ID; replace `io.larkit.app` in `ios/project.yml`
 - [ ] Select the Kids Category age band (6–8 or 9–11)
 - [ ] *Unblocks: Apple token revocation, nutrition labels, Texas APIs*
 

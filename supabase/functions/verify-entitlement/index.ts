@@ -16,7 +16,7 @@
 // App Store verification uses Apple's own library and needs secrets:
 //   APPLE_ROOT_CERTS_B64  comma-separated base64 DER of Apple's root CAs
 //                         (https://www.apple.com/certificateauthority/)
-//   APP_BUNDLE_ID         defaults to com.kidmath.app — ⚠️ placeholder, must
+//   APP_BUNDLE_ID         defaults to io.larkit.app — the registered id, must
 //                         match the shipping bundle id
 //   APPSTORE_ENV          "Production" | "Sandbox"
 // Until those are set the appstore path answers 501 rather than trusting the
@@ -104,7 +104,7 @@ Deno.serve(async (request) => {
       const environment = Deno.env.get("APPSTORE_ENV") === "Sandbox"
         ? Environment.SANDBOX
         : Environment.PRODUCTION;
-      const bundleId = Deno.env.get("APP_BUNDLE_ID") ?? "com.kidmath.app";
+      const bundleId = Deno.env.get("APP_BUNDLE_ID") ?? "io.larkit.app";
       const verifier = new SignedDataVerifier(roots, false, environment, bundleId);
 
       const tx = await verifier.verifyAndDecodeTransaction(body.jws);

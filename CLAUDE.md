@@ -197,7 +197,7 @@ Reruns also overwrite same-cell draft ids — be skip-existing aware.
 
 ## Dev tricks & known weak spots
 
-Simulator flags (argument-domain `UserDefaults`, via `simctl launch com.kidmath.app`):
+Simulator flags (argument-domain `UserDefaults`, via `simctl launch io.larkit.app`):
 `-autostartMode <mode>` jumps straight into a mode · `-kidmath-theme <id>` forces
 a theme · `-showPaywall 1` opens the paywall.
 
@@ -247,7 +247,7 @@ Free tier is **both platforms** (decided 2026-08-02 with the §20 soft
 paywall): addition, subtraction, multiplication, division, counting.
 Paywalled: the other 17 modes, PDF worksheets, and cloud sync.
 Price identically on both platforms (Apple requires it).
-Product IDs: `com.kidmath.app.premium.{monthly,annual}`.
+Product IDs: `io.larkit.app.premium.{monthly,annual}`.
 
 ---
 
@@ -256,7 +256,8 @@ Product IDs: `com.kidmath.app.premium.{monthly,annual}`.
 - iOS port is **code-complete** through P6 — all 22 modes playable, 5 themes,
   sounds, worksheets/PDF, StoreKit paywall, privacy manifest. Remaining work is
   account-side: `docs/ios-appstore-checklist.md` and `docs/stripe-setup.md`.
-  Bundle ID placeholder `com.kidmath.app` must be replaced before ASC.
+  Bundle ID is `io.larkit.app`; the App Store Connect record "larkit" exists
+  (2026-09-19).
 - Item bank: 4,078 approved items exported. **~3,200 items pending Sai's review**
   in `/admin`, ~1,440 of them with wording options awaiting a pick. Batch-trust
   mode (spot-check a sample, approve the batch) is built and deployed.

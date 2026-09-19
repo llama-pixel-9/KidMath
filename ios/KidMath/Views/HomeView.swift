@@ -383,7 +383,7 @@ struct HomeView: View {
             .foregroundStyle(Theme.ink)
     }
 
-    /// Dev hooks: `simctl launch … com.kidmath.app -autostartMode addition`
+    /// Dev hooks: `simctl launch … io.larkit.app -autostartMode addition`
     /// jumps straight into a session; `-showPaywall 1` presents the paywall
     /// (screenshots, quick manual testing).
     private func autostartIfRequested() {

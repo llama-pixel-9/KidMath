@@ -12,7 +12,7 @@ need the account owner; everything else is already done in the repo.
 - [ ] **[you]** Enroll in the **Small Business Program** (15% commission
       instead of 30% — the $54.99 annual nets ~$46.74).
 - [ ] **[you]** Pick the real bundle ID and replace the placeholder
-      `com.kidmath.app` in `ios/project.yml` (one line), then
+      `io.larkit.app` in `ios/project.yml` (one line), then
       `xcodegen generate && ./patch-scheme.sh`.
 - [ ] **[you]** In Xcode → Signing & Capabilities, select your team.
       Sign in with Apple is already in the entitlements files.
@@ -22,8 +22,8 @@ need the account owner; everything else is already done in the repo.
 - [ ] **[you]** Create the app record (Kids category, age band 6–8 or 9–11).
 - [ ] **[you]** Subscription group "KidMath Premium" with two products,
       matching `ios/KidMath/KidMath.storekit` exactly:
-      - `com.kidmath.app.premium.monthly` — $8.99/month, 14-day free trial
-      - `com.kidmath.app.premium.annual` — $54.99/year, 14-day free trial
+      - `io.larkit.app.premium.monthly` — $8.99/month, 14-day free trial
+      - `io.larkit.app.premium.annual` — $39.99/year (launch price), 14-day free trial
       - Family Sharing: ON for both (the "every child included" promise).
 - [ ] **[you]** Launch pricing: add an **introductory offer** on the annual
       plan at **$39/yr** (founding-member price, locks while subscribed).
@@ -79,7 +79,7 @@ listing.
 
 ## 6. Known placeholders to resolve before submission
 
-- Bundle ID `com.kidmath.app` (project.yml).
+- Bundle ID `io.larkit.app` (project.yml).
 - Privacy/marketing domain in `AppLinks.privacyPolicy`.
 - Contact email in the web privacy page (`src/PrivacyPage.jsx`,
   currently privacy@kidmath.app).

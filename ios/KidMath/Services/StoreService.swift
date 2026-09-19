@@ -18,8 +18,8 @@ import StoreKit
 @MainActor
 final class StoreService: ObservableObject {
 
-    static let monthlyID = "com.kidmath.app.premium.monthly"
-    static let annualID = "com.kidmath.app.premium.annual"
+    static let monthlyID = "io.larkit.app.premium.monthly"
+    static let annualID = "io.larkit.app.premium.annual"
 
     /// Launch switch — the Swift mirror of the web's `paywallEnabled()`
     /// (VITE_PAYWALL_ENABLED in src/premium.js). While OFF, every surface is

@@ -34,7 +34,7 @@
               "locale": "en_US"
             }
           ],
-          "productID": "com.kidmath.app.premium.monthly",
+          "productID": "io.larkit.app.premium.monthly",
           "recurringSubscriptionPeriod": "P1M",
           "referenceName": "Premium Monthly",
           "subscriptionGroupID": "21000001",
@@ -61,7 +61,7 @@
               "locale": "en_US"
             }
           ],
-          "productID": "com.kidmath.app.premium.annual",
+          "productID": "io.larkit.app.premium.annual",
           "recurringSubscriptionPeriod": "P1Y",
           "referenceName": "Premium Annual",
           "subscriptionGroupID": "21000001",

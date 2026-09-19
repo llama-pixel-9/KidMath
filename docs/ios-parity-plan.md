@@ -30,7 +30,7 @@ Status legend: ☐ open · ◐ partial · ☑ done (PR).
 | 12 | **Ladder v2 unreachable** — `GamFlags` lacked `ladderV2`/`secondChance`/`readAloud`/`birdStore`; `GamFlags.all` defaulted OFF while web prod has `VITE_GAM_ALL=true`; `createAdaptiveSession` never got `options.ladderV2`; level-up copy capped at 10. | med | S | ☑ PR ios/parity-1 |
 | 13 | **Allow-word-problems preference** — local toggle on the flight-log screen (web key). Cloud `user_preferences` sync and passing it into sessions still open. | low | S | ◐ PR ios/parity-5 |
 | 14 | **Kid profiles service** — `updateKid`, `hasParentalConsent`, `requestParentalConsent`, kid-limit message. | — | — | ☑ PR ios/parity-3 |
-| 15 | **Branding leftovers** — `CFBundleName` = KidMath (shows in iOS Settings), `kidmath://` URL scheme (OAuth sheet says "open KidMath"), bundle id `com.kidmath.app` (must change before ASC anyway), `ios/README.md` stale. | low | S–M | ☐ (bundle id waits on Apple) |
+| 15 | **Branding leftovers** — `CFBundleName` = KidMath (shows in iOS Settings), `kidmath://` URL scheme (OAuth sheet says "open KidMath"), bundle id done (`io.larkit.app`, 2026-09-19), `ios/README.md` stale. | low | S–M | ☐ (bundle id waits on Apple) |
 | 16 | **Telemetry / diagnostics** — web freeze-detection has no native analogue (MetricKit). Low priority. | low | M | ☐ |
 | 17 | **iOS CI** — none. Compile-before-merge rule added to CLAUDE.md; a GitHub Actions macOS job is the real fix. | — | S | ☐ |
 

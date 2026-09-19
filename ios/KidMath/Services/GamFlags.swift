@@ -4,7 +4,7 @@ import Foundation
 /// following the same launch-switch pattern as `StoreService.paywallEnabled`:
 /// every step is OFF by default and can be forced on for manual testing via
 /// the simulator argument domain, e.g.
-/// `simctl launch com.kidmath.app -gamFlightReport 1`.
+/// `simctl launch io.larkit.app -gamFlightReport 1`.
 ///
 /// Flip a step's default to `true` together with the matching web env var
 /// (`VITE_GAM_FLIGHT_REPORT` etc.) so both platforms settle flights the same

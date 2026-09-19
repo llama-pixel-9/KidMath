@@ -161,11 +161,12 @@ every mode is free for everyone.
 
 ## 4 · Blocks App Store submission (B2 — waiting on Apple Developer Program)
 
-Enrollment submitted; nothing below can start until it completes.
+Apple Developer Program enrollment complete (2026-09-19).
 
-- [ ] Replace bundle-id placeholder `com.kidmath.app` in `ios/project.yml`,
-  both product IDs in `ios/KidMath/KidMath.storekit`, and the
-  `APP_BUNDLE_ID` function secret.
+- [x] Bundle id **`io.larkit.app`** registered and the App Store Connect
+  record "larkit" created 2026-09-19; `project.yml`, StoreKit product ids
+  (`io.larkit.app.premium.{monthly,annual}`), `verify-entitlement` default
+  and the `APP_BUNDLE_ID` secret all updated (PR ios/bundle-id).
 - [ ] Set `APPLE_ROOT_CERTS_B64` + `APPSTORE_ENV` secrets so
   `verify-entitlement` stops failing closed (501) for App Store receipts.
   Coordinate with the first iOS release — old builds write `entitlements`

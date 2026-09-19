@@ -21,20 +21,29 @@ export const LAYOUTS = {
   // Bracket with work space below — division is never stacked like a subtraction.
   longDivision: { columns: 3, practice: 12, mixed: 6, rowGap: 14, workSpace: 128 },
   // Worded bank items whose prompts run two to three lines.
-  prompt: { columns: 2, practice: 12, mixed: 8, rowGap: 30 },
+  prompt: { columns: 2, practice: 10, mixed: 8, rowGap: 38 },
   // Worded bank items that are mostly one line ("250 − ? = 75"): the audit's
   // `avg chars` column says which skills these are (median ≲ 45).
   promptShort: { columns: 2, practice: 16, mixed: 10, rowGap: 56 },
-  // A chart is ~15 text lines tall.
-  figure: { columns: 2, practice: 4, mixed: 3, rowGap: 14 },
+  // A chart (bar graph, pictograph, tally) is ~15 text lines tall.
+  // A disc mat and a coordinate grid are just as tall.
+  figure: { columns: 2, practice: 4, mixed: 2, rowGap: 14 },
+  // Small figures: a clock face, a rectangle, a cube stack.
+  figureSmall: { columns: 2, practice: 6, mixed: 4, rowGap: 14 },
 };
+
+/** Figure layouts print ONLY items that draw a figure; every other layout
+ * prints only items that do not — a budget cannot hold for a mix. */
+export function isFigureLayout(layout) {
+  return layout === "figure" || layout === "figureSmall";
+}
 
 // Scratch room under each word problem on a mixed sheet.
 export const STORY_WORK_SPACE = 52;
 
 // A word-problems-only sheet: bordered work boxes, 2 × 3.
 export const STORIES_PER_SHEET = 6;
-export const STORIES_PER_FIGURE_SHEET = 3;
+export const STORIES_PER_FIGURE_SHEET = 2;
 // The stories under a mixed sheet.
 export const MIXED_STORIES = 2;
 export const MIXED_STORIES_FIGURE = 1;

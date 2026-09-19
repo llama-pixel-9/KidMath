@@ -28,8 +28,12 @@ function pdfPageCount(buffer) {
 async function pickSkill(page, { grade, title }) {
   await page.goto("/worksheets");
   await page.getByRole("button", { name: GRADE_LABELS[grade], exact: true }).click();
-  await page.getByRole("radio", { name: new RegExp(`^${title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}`) }).click();
-  await expect(page.getByRole("button", { name: "Generate", exact: true })).toBeEnabled();
+  // The row's name is "<title> <code>"; titles can prefix one another
+  // ("…within 100" / "…within 1000"), so anchor both ends.
+  const escaped = title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  await page.getByRole("radio", { name: new RegExp(`^${escaped}( \\S+)?$`) }).click();
+  // The topic's bank loads on pick; under a full parallel run that can take a while.
+  await expect(page.getByRole("button", { name: "Generate", exact: true })).toBeEnabled({ timeout: 20000 });
 }
 
 async function generate(page, { type = "practice", sheets = 1 } = {}) {
@@ -38,7 +42,7 @@ async function generate(page, { type = "practice", sheets = 1 } = {}) {
   await typeButton.click();
   await page.getByRole("button", { name: `${sheets} ${sheets === 1 ? "sheet" : "sheets"}`, exact: true }).click();
   await page.getByRole("button", { name: "Generate", exact: true }).click();
-  await expect(page.getByText("Landed").first()).toBeVisible();
+  await expect(page.getByText("Landed").first()).toBeVisible({ timeout: 15000 });
   return true;
 }
 
@@ -63,9 +67,18 @@ const REPRESENTATIVES = [
   "mul-by-multiples-of-10",
   "div-2digit-remainder", // longDivision + the longest title in the catalog
   "div-by-2digit",
-  "sub-missing-number-1000", // prompt
+  "sub-missing-number-1000", // promptShort
   "add-make-ten",
-  "div-remainders",
+  "area-perimeter-composite-figures-1", // prompt-length text + a figure
+  "fractions-compare-fractions-4", // prompt, longest titles
+  "patterns-repeating-pattern-7", // prompt, ~110-char prompts
+  "counting-cardinality-7", // prompt with emoji runs
+  "data-graphs-data-analysis-7", // figure: bar graphs + tally charts
+  "data-graphs-pictograph-7",
+  "time-read-clock-7-pic", // figureSmall
+  "place-value-discs-read-number-7",
+  "volume-coordinates-count-unit-cubes-4",
+  "volume-coordinates-plot-and-read-4",
 ];
 
 const printAll = process.env.WORKSHEETS_E2E_ALL === "1";
@@ -120,37 +133,20 @@ test("worksheets: the PDF is named for the skill", async ({ page }) => {
   await expect(page).toHaveTitle(/Worksheet - Multiplication - Times tables: 7, 8 and 9 \(Grade 3\)/);
 });
 
-// Topics whose skills are not authored yet print through the bridge rows
-// (legacySkills.js). These are the original #34 reports.
-const BRIDGED = [
-  // The reported overstuffed sheet: skip counting spilled onto a second page.
-  { topic: "Skip Counting", band: "starting out", sheets: 2 },
-  // The reported tap-language + true/false sheet.
-  { topic: "Place Value", band: "stretching", sheets: 1 },
-  // The reported missing-graphs sheet.
-  { topic: "Graphs & Data", band: "building up", sheets: 1, expectFigures: true },
+// The original #34 reports, now ordinary skills: the overstuffed skip-counting
+// sheet, the tap-language place-value sheet, and the graphs sheet with no graphs.
+const REPORTED = [
+  { id: "skip-counting-groups-to-product-1", sheets: 2 },
+  { id: "place-value-tens-ones-7", sheets: 1 },
+  { id: "data-graphs-read-bar-4", sheets: 1, expectFigures: true },
 ];
 
-for (const { topic, band, sheets, expectFigures } of BRIDGED) {
-  test(`worksheets: ${topic} (${band}) ×${sheets} prints one page per sheet`, async ({ page }) => {
-    await page.goto("/worksheets");
-    let found = false;
-    for (const label of Object.values(GRADE_LABELS)) {
-      await page.getByRole("button", { name: label, exact: true }).click();
-      const row = page.getByRole("region", { name: topic, exact: true }).getByRole("radio", { name: new RegExp(`— ${band}`) });
-      if (await row.count()) {
-        await row.first().click();
-        found = true;
-        break;
-      }
-    }
-    expect(found, `${topic} — ${band} is listed under some grade`).toBe(true);
-    await expect(page.getByRole("button", { name: "Generate", exact: true })).toBeEnabled();
+for (const { id, sheets, expectFigures } of REPORTED) {
+  test(`worksheets: ${id} ×${sheets} (mixed) prints one page per sheet`, async ({ page }) => {
+    await pickSkill(page, WORKSHEET_SKILLS.find((s) => s.id === id));
     await generate(page, { type: "mixed", sheets });
-
     const text = await printedText(page);
     expect(/\b(tap|drag|swipe)\b/i.test(text), "screen-interaction language on a printed sheet").toBe(false);
-    expect(text).not.toMatch(/\bLevel \d|flight log/i);
     if (expectFigures) {
       // A graph question without its graph is unanswerable on paper.
       expect(await page.locator("svg").count(), "graph sheets draw their figures").toBeGreaterThan(2);
@@ -158,3 +154,21 @@ for (const { topic, band, sheets, expectFigures } of BRIDGED) {
     await expectOnePagePerSheet(page, sheets);
   });
 }
+
+test("worksheets: a deep link picks the skill, prints on go=1, and the address stays shareable", async ({ page }) => {
+  await page.goto("/worksheets?skill=sub-3digit-regroup&type=mixed&sheets=2&go=1");
+  await expect(page.getByText("Landed").first()).toBeVisible({ timeout: 20000 });
+  const state = await page.evaluate(() => window.__larkitWorksheets);
+  expect(state.skillId).toBe("sub-3digit-regroup");
+  expect(state.problemType).toBe("mixed");
+  expect(state.sheets).toHaveLength(2);
+  await expect(page.getByRole("button", { name: "Grade 3", exact: true })).toHaveAttribute("aria-pressed", "true");
+
+  // Changing a choice rewrites the address, so copying it shares the sheet.
+  await page.getByRole("button", { name: "Practice problems only", exact: true }).click();
+  await expect(page).toHaveURL(/skill=sub-3digit-regroup.*type=practice/);
+
+  // Old mode + level links land on the nearest skill in that topic.
+  await page.goto("/worksheets?mode=time&level=5");
+  await expect(page.getByRole("radio", { checked: true })).toContainText("Read a clock to five minutes");
+});

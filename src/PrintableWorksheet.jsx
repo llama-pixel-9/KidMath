@@ -1,30 +1,19 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { useSearchParams } from "react-router-dom";
 import { Printer } from "lucide-react";
-import { generateFlightLog } from "./mathEngine";
 import { MODE_IDS } from "./modes";
 import { addBankItems, ensureModeLoaded } from "./itemBank.js";
 import { activeKidGrade } from "./kidProfiles.js";
 import { gradeIndex } from "./gradeSeed.js";
 import { loadAllowWordProblemsSync } from "./userPreferences.js";
 import { useTheme } from "./useTheme";
-import { generateWorksheet, practiceAvailability, storyAvailability } from "./worksheets/generateWorksheet.js";
-import { LAYOUTS, MIXED_STORIES, PROBLEM_TYPES, STORIES_PER_SHEET } from "./worksheets/layouts.js";
-import { LEGACY_SKILLS } from "./worksheets/legacySkills.js";
-import { documentTitle, headerLine } from "./worksheets/skillIndex.js";
+import { generateWorksheet, practiceAvailability, storyPlan } from "./worksheets/generateWorksheet.js";
+import { LAYOUTS, PROBLEM_TYPES } from "./worksheets/layouts.js";
+import { documentTitle, headerLine, skillById, skillForModeLevel } from "./worksheets/skillIndex.js";
 import { GRADES, GRADE_LABELS, TOPIC_LABELS, WORKSHEET_SKILLS } from "./worksheets/skills.js";
-import WorksheetSheet, {
-  InlineItem,
-  NameDateRow,
-  PromptItem,
-  SHEET_FRAME,
-  SheetFooter,
-  SheetHeader,
-  StackedItem,
-  WordProblem,
-} from "./worksheets/WorksheetSheet.jsx";
+import WorksheetSheet from "./worksheets/WorksheetSheet.jsx";
 
-const ALL_SKILLS = [...WORKSHEET_SKILLS, ...LEGACY_SKILLS];
 const SHEET_COUNTS = [1, 2, 3, 5];
 const GRADE_KEY = "larkit-worksheet-grade";
 const PROBLEM_TYPE_KEY = "larkit-worksheet-problem-type";
@@ -82,27 +71,51 @@ async function loadTopic(mode) {
   return result;
 }
 
+// Deep links: /worksheets?skill=<id>&type=mixed&sheets=2&key=0&go=1 — what the
+// home page and the public worksheet pages link to. `skill` alone fixes the
+// grade and topic; old ?mode=&level= links land on the nearest skill.
+function linkedState(params) {
+  const skill =
+    skillById(params.get("skill")) ||
+    (params.get("mode") ? skillForModeLevel(params.get("mode"), Number(params.get("level")) || 1) : null);
+  const type = params.get("type");
+  const count = Number(params.get("sheets"));
+  return {
+    skill,
+    problemType: PROBLEM_TYPES.includes(type) ? type : null,
+    sheetCount: SHEET_COUNTS.includes(count) ? count : null,
+    answerKey: params.has("key") ? params.get("key") !== "0" : null,
+    go: params.get("go") === "1",
+  };
+}
+
+// The sheets of one print run — clamped to what the loaded bank can fill, or
+// null when it can fill none. One seen-set for the whole run, so five sheets
+// are five different sheets.
+function printRun(skill, problemType, sheetCount) {
+  const capacity = capacityFor(skill);
+  const type = capacity[problemType].sheets ? problemType : "practice";
+  const count = Math.min(sheetCount, capacity[type].sheets);
+  if (count < 1) return null;
+  const seenKeys = new Set();
+  return Array.from({ length: count }, () => generateWorksheet(skill.id, { problemType: type, seenKeys }));
+}
+
 // What the loaded bank can fill for a skill: which problem types, how many
 // sheets. Nothing is ever padded with generated filler — an option the bank
 // cannot fill is switched off, with the reason.
 function capacityFor(skill) {
   if (!skill) return null;
-  if (skill.legacy) {
-    return {
-      practice: { sheets: Infinity },
-      mixed: { sheets: Infinity },
-      stories: { sheets: 0, reason: "Word-problem sheets for this topic are on the way." },
-    };
-  }
   const budget = LAYOUTS[skill.layout];
-  const stories = storyAvailability(skill.id);
+  const plan = storyPlan(skill.id);
+  const stories = plan.pool.length;
   const practice = practiceAvailability(skill.id);
   const thin = stories === 0
     ? "There are no word problems for this skill yet."
     : "There are not enough word problems for this skill yet.";
   const practiceSheets = Math.floor(practice / budget.practice);
-  const mixedSheets = Math.min(Math.floor(practice / budget.mixed), Math.floor(stories / MIXED_STORIES));
-  const storySheets = Math.floor(stories / STORIES_PER_SHEET);
+  const mixedSheets = Math.min(Math.floor(practice / budget.mixed), Math.floor(stories / plan.perMixedSheet));
+  const storySheets = Math.floor(stories / plan.perSheet);
   const offline = "Couldn't load this topic's problems — check your connection.";
   return {
     practice: { sheets: practiceSheets, reason: practiceSheets ? null : offline },
@@ -111,70 +124,28 @@ function capacityFor(skill) {
   };
 }
 
-// Bridge sheet for topics without authored skills yet (legacySkills.js): the
-// old two-block drill. Goes away with the last bridge row.
-function LegacySheet({ log, title, footer, answerKey = false, sheetIndex, sheetCount, breakBefore = false }) {
-  let n = 0;
-  const next = () => ++n;
-  const answerOf = (q) => (answerKey ? q.answer : null);
-  const Second = log.computational ? InlineItem : PromptItem;
-  return (
-    <div className={SHEET_FRAME} style={breakBefore ? { pageBreakBefore: "always" } : undefined}>
-      <SheetHeader line={`${title}${sheetCount > 1 ? ` · Sheet ${sheetIndex + 1} of ${sheetCount}` : ""}`} />
-      <NameDateRow answerKey={answerKey} />
-      <div className="mt-4">
-        {log.computational ? (
-          <div className="grid grid-cols-3 gap-x-6" style={{ rowGap: "18px" }}>
-            {log.partA.map((q, i) => (
-              <StackedItem key={i} question={q} number={next()} answer={answerOf(q)} />
-            ))}
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 print:grid-cols-2 gap-x-6" style={{ rowGap: "14px" }}>
-            {log.partA.map((q, i) => (
-              <PromptItem key={i} question={q} number={next()} answer={answerOf(q)} />
-            ))}
-          </div>
-        )}
-      </div>
-      <div className="mt-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 print:grid-cols-2 gap-x-6" style={{ rowGap: "14px" }}>
-          {log.partB.map((q, i) => (
-            <Second key={i} question={q} number={next()} answer={answerOf(q)} />
-          ))}
-        </div>
-      </div>
-      {log.wordProblems?.length > 0 && (
-        <div className="mt-6 space-y-4">
-          {log.wordProblems.map((item, i) => (
-            <WordProblem key={i} item={item} number={next()} showAnswer={answerKey} />
-          ))}
-        </div>
-      )}
-      <SheetFooter itemCount={log.itemCount} right={footer} />
-    </div>
-  );
-}
-
 export default function PrintableWorksheet() {
   const { theme } = useTheme();
-  const [grade, setGrade] = useState(initialGrade);
-  const [skillId, setSkillId] = useState(null);
-  const [problemType, setProblemType] = useState(initialProblemType);
-  const [sheetCount, setSheetCount] = useState(1);
-  const [showAnswerKey, setShowAnswerKey] = useState(true);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [linked] = useState(() => linkedState(searchParams));
+  const [grade, setGrade] = useState(() => linked.skill?.grade ?? initialGrade());
+  const [skillId, setSkillId] = useState(linked.skill?.id ?? null);
+  const [problemType, setProblemType] = useState(() => linked.problemType ?? initialProblemType());
+  const [sheetCount, setSheetCount] = useState(linked.sheetCount ?? 1);
+  const [showAnswerKey, setShowAnswerKey] = useState(linked.answerKey ?? true);
+  const autoGenerate = useRef(linked.go);
   const [sheets, setSheets] = useState(null);
-  // { mode, status: "loading" | "ready" } — the topic whose bank is in memory.
-  const [topic, setTopic] = useState(null);
-  const loading = useRef(null);
+  // The topic whose bank is in memory; `attempt` re-runs a failed load.
+  const [loadedMode, setLoadedMode] = useState(null);
+  const [attempt, setAttempt] = useState(0);
 
-  const skill = useMemo(() => ALL_SKILLS.find((s) => s.id === skillId) || null, [skillId]);
+  const skill = useMemo(() => WORKSHEET_SKILLS.find((s) => s.id === skillId) || null, [skillId]);
   const topics = useMemo(() => {
-    const inGrade = ALL_SKILLS.filter((s) => s.grade === grade);
+    const inGrade = WORKSHEET_SKILLS.filter((s) => s.grade === grade);
     return MODE_IDS.map((mode) => ({ mode, skills: inGrade.filter((s) => s.mode === mode) })).filter((t) => t.skills.length);
   }, [grade]);
 
-  const ready = skill && topic?.mode === skill.mode && topic.status === "ready";
+  const ready = Boolean(skill) && loadedMode === skill.mode;
   const capacity = useMemo(() => (ready ? capacityFor(skill) : null), [ready, skill]);
   // A remembered "Word problems" choice must not strand a skill that has none.
   const activeType = capacity && !capacity[problemType].sheets && capacity.practice.sheets ? "practice" : problemType;
@@ -182,19 +153,10 @@ export default function PrintableWorksheet() {
   const activeCount = Math.max(1, Math.min(sheetCount, maxSheets));
   const blocked = capacity && !capacity[activeType].sheets ? capacity[activeType].reason : null;
 
-  const chooseSkill = useCallback((next) => {
+  const chooseSkill = (next) => {
     setSkillId(next.id);
     setSheets(null);
-    if (next.legacy) {
-      setTopic({ mode: next.mode, status: "ready" });
-      return;
-    }
-    setTopic({ mode: next.mode, status: "loading" });
-    const request = loadTopic(next.mode).then(() => {
-      if (loading.current === request) setTopic({ mode: next.mode, status: "ready" });
-    });
-    loading.current = request;
-  }, []);
+  };
 
   const chooseGrade = (next) => {
     setGrade(next);
@@ -213,23 +175,41 @@ export default function PrintableWorksheet() {
 
   const handleGenerate = () => {
     if (!ready || blocked) return;
-    if (skill.legacy) {
-      const allowWordProblems = activeType === "mixed";
-      setSheets(Array.from({ length: activeCount }, () => generateFlightLog(skill.mode, skill.level, { allowWordProblems })));
-      return;
-    }
-    // One seen-set for the whole print run, so five sheets are five different sheets.
-    const seenKeys = new Set();
-    setSheets(Array.from({ length: activeCount }, () => generateWorksheet(skill.id, { problemType: activeType, seenKeys })));
+    setSheets(printRun(skill, activeType, activeCount));
   };
+
+  // Worded problems come from the bank: load the picked skill's topic, and
+  // for a go=1 deep link print as soon as it is in.
+  const mode = skill?.mode;
+  useEffect(() => {
+    if (!mode) return undefined;
+    let live = true;
+    loadTopic(mode).then(() => {
+      if (!live) return;
+      setLoadedMode(mode);
+      if (!autoGenerate.current) return;
+      autoGenerate.current = false;
+      const run = printRun(linked.skill, linked.problemType ?? initialProblemType(), linked.sheetCount ?? 1);
+      if (run) setSheets(run);
+    });
+    return () => {
+      live = false;
+    };
+  }, [mode, attempt, linked]);
+
+  // Keep the address shareable: it always names what is on screen.
+  useEffect(() => {
+    if (!skillId) return;
+    const next = { skill: skillId, type: activeType, sheets: String(activeCount) };
+    if (!showAnswerKey) next.key = "0";
+    setSearchParams(next, { replace: true });
+  }, [skillId, activeType, activeCount, showAnswerKey, setSearchParams]);
 
   // The browser's default PDF filename is the document title.
   useEffect(() => {
     if (!sheets || !skill) return undefined;
     const previous = document.title;
-    document.title = skill.legacy
-      ? `Larkit Worksheet - ${TOPIC_LABELS[skill.mode]} (${GRADE_LABELS[skill.grade]})`
-      : documentTitle(skill);
+    document.title = documentTitle(skill);
     return () => {
       document.title = previous;
     };
@@ -243,13 +223,8 @@ export default function PrintableWorksheet() {
     }
   }, [sheets, skillId, activeType]);
 
-  const title = skill
-    ? skill.legacy
-      ? [TOPIC_LABELS[skill.mode], skill.title, GRADE_LABELS[skill.grade]].join(" · ")
-      : headerLine(skill)
-    : "";
+  const title = skill ? headerLine(skill) : "";
   const footer = skill ? [TOPIC_LABELS[skill.mode], skill.ccss[0]].filter(Boolean).join(" · ") : "";
-  const Sheet = skill?.legacy ? LegacySheet : WorksheetSheet;
   const sectionLabel = `text-sm font-semibold ${theme.textSecondary} mb-2 uppercase tracking-wide`;
   const chip = (active) =>
     `rounded-2xl border-2 font-bold cursor-pointer transition-colors ${
@@ -405,7 +380,7 @@ export default function PrintableWorksheet() {
           {blocked && (
             <p className="text-sm font-semibold text-red-700" role="alert">
               {blocked}{" "}
-              <button className="underline cursor-pointer" onClick={() => chooseSkill(skill)}>
+              <button className="underline cursor-pointer" onClick={() => setAttempt((n) => n + 1)}>
                 Retry
               </button>
             </p>
@@ -437,17 +412,14 @@ export default function PrintableWorksheet() {
 
       {/* The sheets */}
       {sheets &&
-        sheets.map((sheet, i) => {
-          const props = skill.legacy ? { log: sheet } : { sheet };
-          return (
-            <div key={i} className="max-w-2xl mx-auto px-4 pb-8 print:px-0 print:pb-0 print:max-w-none space-y-4 print:space-y-0">
-              <Sheet {...props} title={title} footer={footer} sheetIndex={i} sheetCount={sheets.length} breakBefore={i > 0} />
-              {showAnswerKey && (
-                <Sheet {...props} title={title} footer={footer} answerKey sheetIndex={i} sheetCount={sheets.length} breakBefore />
-              )}
-            </div>
-          );
-        })}
+        sheets.map((sheet, i) => (
+          <div key={i} className="max-w-2xl mx-auto px-4 pb-8 print:px-0 print:pb-0 print:max-w-none space-y-4 print:space-y-0">
+            <WorksheetSheet sheet={sheet} title={title} footer={footer} sheetIndex={i} sheetCount={sheets.length} breakBefore={i > 0} />
+            {showAnswerKey && (
+              <WorksheetSheet sheet={sheet} title={title} footer={footer} answerKey sheetIndex={i} sheetCount={sheets.length} breakBefore />
+            )}
+          </div>
+        ))}
     </div>
   );
 }

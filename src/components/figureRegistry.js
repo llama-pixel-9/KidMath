@@ -87,6 +87,14 @@ function inferFigure(question) {
  */
 const SELF_DRAWING = new Set(["barGraph"]);
 
+/** The figure a PRINTED question draws. Paper has no answer widget, so the
+ * self-drawing exception below does not apply: a bar-graph question answered
+ * by tapping the graph still needs its graph on the sheet. */
+export function getPaperFigure(question) {
+  const key = question?.display?.figure || inferFigure(question);
+  return key ? FIGURES[key] || null : null;
+}
+
 export function getFigure(question) {
   const key = question?.display?.figure || inferFigure(question);
   if (!key || SELF_DRAWING.has(question?.answerType)) return null;

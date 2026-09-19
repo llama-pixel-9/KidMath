@@ -8,7 +8,7 @@
  * stacked and 13–18 sideways.
  */
 import LarkMark from "../components/LarkMark.jsx";
-import { FIGURES } from "../components/figureRegistry";
+import { getPaperFigure } from "../components/figureRegistry";
 import { isYesNoJudgment, printOptionBank } from "../mathEngine";
 import { LAYOUTS, STORY_WORK_SPACE, printedAnswer } from "./layouts.js";
 
@@ -96,10 +96,12 @@ export function LongDivisionItem({ question: q, number, answer = null, workSpace
 }
 
 function PromptFigure({ question: q, settled }) {
-  const figure = q.display?.figure ? FIGURES[q.display.figure] : null;
+  const figure = getPaperFigure(q);
   if (!figure) return null;
   return (
-    <div className="max-w-[240px] mb-1.5" style={{ filter: "grayscale(1)" }}>
+    // On-screen figures are drawn in soft tints; grayscale alone prints them
+    // as pale ghosts, so the contrast is pushed toward black (§15).
+    <div className="max-w-[240px] mb-1.5" style={{ filter: "grayscale(1) contrast(2.2)" }}>
       <figure.Component theme={MONO_THEME} {...(figure.props ? figure.props(q, { settled }) : {})} />
     </div>
   );
@@ -299,7 +301,7 @@ export default function WorksheetSheet({ sheet, title, footer, answerKey = false
   const next = () => ++n;
   const storiesOnly = sheet.layout === "stories";
   const practiceLayout = storiesOnly ? null : sheet.layout;
-  const withFigures = sheet.wordProblems.some((item) => item.question.display?.figure);
+  const withFigures = sheet.wordProblems.some((item) => getPaperFigure(item.question));
 
   return (
     <div className={SHEET_FRAME} style={breakBefore ? { pageBreakBefore: "always" } : undefined}>

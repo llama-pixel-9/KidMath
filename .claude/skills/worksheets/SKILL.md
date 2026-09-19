@@ -1,88 +1,134 @@
 ---
 name: worksheets
-description: How flight-log worksheets are generated, laid out and printed — the paper rules, page-fit budgets, print pipeline, and the tests that guard them. Use when changing worksheet generation, the /worksheets screen, print CSS, or anything a sheet renders.
+description: How printable worksheets are generated, laid out and printed — the skill catalog, the bank-first draw, the title-is-a-promise rule, paper rules, measured page-fit budgets, and the tests that guard them. Use when changing worksheet generation, the /worksheets screen, the skill catalog, print CSS, or anything a sheet renders.
 ---
 
-# Flight-log worksheets
+# Worksheets
 
-Premium launch feature (#34). One sheet = one skill: a stacked/prompt
-block, an inline block, and — only when Include Word Problems is on — a
-word-problems block (2 stories; 1 on figure sheets; pick-two fills in
-when stories starve). No PART A/B/C captions: the sheet is a drill, not
-a test paper. Toggle OFF = pure fact fluency, NOTHING worded (pick-two
-counts as worded — serving it with the toggle off is why the toggle
-once looked broken). Generation is
-`generateFlightLog` in `src/mathEngine.js` (shared with iOS); layout is
-`src/PrintableWorksheet.jsx`; print CSS is the `@media print` block in
-`src/index.css` (US Letter portrait, 0.375in margins).
+Premium launch feature (#34). User-facing name is **"worksheets"**, never
+"flight log" — parents search for worksheets (`worksheetRename.spec.js`
+guards the copy; internal identifiers may still say flightLog).
 
-## The paper rules (engine-enforced)
+A parent picks **grade → skill → problem type → sheets**. There is no mode
+grid and no "Level" anywhere, on screen or on paper. One sheet = one skill
+= **one layout**.
 
-- **No screen verbs.** Every drawn question passes `printableWording`
-  ("Tap the number…" → "Write the number…"); anything still carrying
-  tap/press/drag/swipe after rewording is rejected. Rewording happens
-  BEFORE dedupe keying.
-- **No degenerate prompts.** A numeric answer appearing verbatim in its
-  own prompt ("Mark 0.7 on the number line") is unprintable — the widget
-  was the question.
+## The skill catalog (`src/worksheets/`)
+
+- `skills.js` + `promptSkills.js` — pure data, ~294 skills across all 25
+  topics, K–5. Each: `id, grade, mode, ccss[], title, layout, source,
+  stories, level`. `grade` is the grade of `ccss[0]`; `ccss` may be empty
+  (calendars, early coins, repeating patterns — we never invent a code).
+  CCSS is cited by code only; every title is our own wording.
+  `TOPIC_LABELS` are plain names ("Subtraction"), never game names.
+- **A title is a promise about every problem on the sheet.**
+  `worksheetSkills.spec.js` holds each skill to it, across all three
+  problem types. "Subtract 3-digit numbers with regrouping" may not print
+  380 − 35 (the original level-10 sheet did).
+- Two source kinds:
+  - `bank` — a filter over approved bank cells (`families, subskills,
+    structureTypes, levels, numbers`). **Everything worded comes from the
+    bank**, drawn without replacement, never generated, no fallback: a
+    thin pool returns `shortfall` and the screen disables the option.
+    Worksheets were the last surface still on the generators.
+  - `computation` — bare `a op b`, built to the claim by
+    `computationSampler.js` (digits, regrouping column by column, tables,
+    remainders, across zeros). The one exception to bank-first: neither the
+    generators nor the bank can promise "3-digit with regrouping", there is
+    no wording to review, and the number space is unbounded.
+- `claimCheck.js` — `checkItems(items, claim)`: the independent honesty
+  check, plus `storyMatches` (number size always; regrouping/tables only
+  when the story payload is a plain `a op b = answer` — change-unknown
+  stories keep their numbers in other slots).
+- `generateWorksheet(skillId, { problemType, seenKeys })` →
+  `{ layout, items, wordProblems, itemCount, requested, shortfall }`.
+  `problemType`: `practice` | `stories` | `mixed`. Share one `seenKeys`
+  across a print run so five sheets are five different sheets.
+- **Authoring a skill**: run `npm run worksheets:audit` (every bank cell:
+  printable count, how it lands on a sheet, number sizes, avg prompt
+  length, samples → `docs/worksheet-skill-audit.md` with `--md`). Read
+  the skill off the table — never guess a title. Pool must cover 3 sheets.
+
+## Layouts and budgets (`layouts.js`) — measured, not guessed
+
+| layout | grid | practice | mixed | for |
+|---|---|---|---|---|
+| `stacked` | 4 col | 24 | 16 | ≤3-digit ±, n-digit × 1-digit |
+| `stackedWide` | 3 col | 12 | 9 | 4-digit, 2×2-digit (partial-product room) |
+| `horizontal` | 3 col | 36 | 24 | facts: `7 × 8 = ☐` |
+| `longDivision` | 3 col | 12 | 6 | bracket + work space — never stacked like a subtraction |
+| `prompt` | 2 col | 12 | 8 | worded, 2–3 lines |
+| `promptShort` | 2 col | 16 | 10 | worded one-liners (audit avg chars ≲ 45) |
+| `figure` | 2 col | 4 | 3 | bar graph, pictograph, tally |
+| `figureSmall` | 2 col | 6 | 4 | clock, disc mat, rectangle, cubes, grid |
+| `stories` | 2×3 boxes | 6 | — | word problems only (3, one column, if pictured) |
+
+`layoutForClaim` fixes the layout of computation skills (multi-digit
+stacks, facts go sideways, division gets a bracket). **A figure layout
+prints only pictured items; every other layout only un-pictured ones** —
+a budget cannot hold for a mix. Stories likewise print all-pictured or
+all-plain (`storyPlan`). `workSpace`/`rowGap` are part of the fit: a
+sheet should FILL its page, not strand the bottom third.
+
+The budgets are validated by Chromium's own print pipeline:
+`e2e/worksheets.spec.js` renders via `page.pdf()` and asserts N sheets +
+N keys = exactly 2N pages. `WORKSHEETS_E2E_ALL=1` prints every skill ×
+problem type (~900 cases, minutes) — run it after ANY change to a
+layout, an item component, or the catalog. If a sheet spills, shrink the
+budget or the layout; never delete the assertion.
+
+## The paper rules
+
+- **No screen verbs.** `printableWording` ("Tap the number…" → "Write the
+  number…"); anything still carrying tap/press/drag/swipe is rejected.
+- **No degenerate prompts.** A numeric answer printed in its own prompt
+  ("Mark 0.7 on the number line") is unprintable.
+- **No pointing at a missing picture.** An un-pictured item that says
+  "this clock / this chart / shown" is rejected — on screen the answer
+  widget drew it; paper has no widget.
+- **Figures print** (`getPaperFigure`: `display.figure`, or the rectangle
+  the areaPerimeter bank implies). Grayscale, ≤240px.
 - **Option banks only where the options ARE the question**
-  (`printOptionBank`): non-numeric answers, "which…/NOT…" items, and
-  estimation ("About how many") keep their bank; plain numeric answers
-  get only the blank box.
-- **Judgment items** (Yes/No choices, `isYesNoJudgment`) print as
-  "Circle one: Yes / No" — no bank, no box. The answer key thickens the
-  correct circle.
-- **Figures print.** Any item with `display.figure` draws its chart
-  (grayscale, ≤240px) — Part C included; a graph question without its
-  graph is unanswerable on paper.
-- **Template variety**: prompt sheets cap each `structureType` at 2 per
-  sheet (`capStructures` in `drawUnique`); computation sheets are exempt
-  (a page of stacked sums shares one structure by design).
+  (`printOptionBank`); judgment items print "Circle one: Yes / No".
+- §15 brand rule: every mark on a sheet is 100% black.
 
-## Page-fit budgets (measured, not guessed)
+## The screen (`src/PrintableWorksheet.jsx`)
 
-| Sheet kind | Part A | Part B | Why |
-|---|---|---|---|
-| Computational (`+ − × ÷`) | 12 stacked | 6 inline | one line each; fills ~85% of the page |
-| Prompt modes | 6 | 6 | prompts run 2–3 lines |
-| Figure modes (`dataGraphs`) | 2 | 2 | a chart is ~15 lines tall |
-
-Small fact pools (multiplication L1 has ten non-trivial facts) fill via
-`allowRepeatsOnStarvation` — spaced repeats, drill sheets only; worded
-prompts never repeat.
-
-`log.itemCount` is the real total — the footer's "Landed ☐ of N" and any
-copy must use it, never a hard-coded 11. **The budgets are validated by
-Chromium's own print pipeline**: `e2e/worksheets.spec.js` renders via
-`page.pdf()` and asserts N logs + N keys = exactly 2N PDF pages. If a
-layout change makes a sheet spill, that test fails — shrink the budget
-or the layout, don't delete the assertion.
-
-## Generate screen
-
-Mode grid → level (aria-label "Level N") → number of logs (aria-label
-"N logs") → **Include Word Problems** (threads `{ allowWordProblems }`
-into `generateFlightLog`; off = no word-problems block, no application
-items anywhere — the fact-fluency sheet parents asked for) → Include
-Answer Key → Generate → Print (`window.print()`). DEV exposes
-`window.__larkitWorksheets = { logs, allowWordProblems }` so the e2e
-asserts sheet composition instead of scraping prose.
+Grade chips (default: active kid's grade, else last used) → one scrollable
+skill list grouped under topic headings, each row title + CCSS code →
+Problems (Computation|Practice · Word problems · Mixed) → sheets → answer
+key → Generate → Print. Picking a skill calls `ensureModeLoaded`; Generate
+waits for it. `capacityFor` disables what the LOADED bank cannot fill,
+with the reason. `document.title` is set to the skill so the PDF is named
+for it. The screen reads the household word-problem preference as a
+default and **never writes it**. DEV exposes `window.__larkitWorksheets =
+{ sheets, skillId, problemType }`. `WorksheetSheet.jsx` is exported piece
+by piece so the public worksheet pages can share the renderer.
 
 ## Tests
 
-- `src/__tests__/worksheets.spec.js` (in the `npm run test` list): paper
-  rules across all 22 modes × L1/5/10 — screen verbs, answer-reveals,
-  bank policy, budgets, story exclusion, figure presence, dedupe.
-- `e2e/worksheets.spec.js`: real-UI generation + PDF page counts +
-  language sweep. Headless-only (`page.pdf`). Run with
+- `worksheetSkills.spec.js` — catalog integrity + every skill × 3 problem
+  types keeps its promise, pools cover 3 sheets, one kind of item a sheet.
+- `computationSampler.spec.js`, `worksheetRename.spec.js`.
+- `worksheets.spec.js` / `flightLog.spec.js` — the legacy
+  `generateFlightLog` (still used by iOS until its parity phase).
+- `e2e/worksheets.spec.js` — real UI + PDF page counts. Headless-only.
   `KIDMATH_E2E_PORT=5199 npx playwright test worksheets`.
+- All new specs are in the hand-maintained `npm run test` list.
 
 ## Traps
 
+- Without Supabase (local dev, e2e) the mode fetch fails; DEV then reads
+  `fullBank.js` from disk through a dynamic import that is compiled out of
+  production. The production bundle must never carry the corpus — check
+  `dist/` after touching `loadTopic`.
+- `finalizeQuestion` keeps the generator scaffold's `itemFamily`; the bank
+  draw re-stamps the bank row's.
+- Bank story `op` is Unicode (`−`, `×`, `÷`); normalize with `asciiOp`.
 - The paywall is OFF in dev (`VITE_PAYWALL_ENABLED` unset) — that's why
   e2e can reach /worksheets anonymously. Don't "fix" that.
-- §15 brand rule: every mark on a sheet is 100% black. Figures get
-  `filter: grayscale(1)`; keep new marks black.
 - The answer key prints as its OWN sheet (`breakBefore`), same grid.
-- `page.pdf()` needs `preferCSSPageSize: true` or the `@page letter`
-  rule is ignored.
+- `page.pdf()` needs `preferCSSPageSize: true` or `@page letter` is ignored.
+- The unmerged marketing branch has its own `src/worksheets/catalog.js` +
+  `SeoSheet.jsx`; it should adopt this catalog and `WorksheetSheet.jsx`.
+  Stay off its filenames.

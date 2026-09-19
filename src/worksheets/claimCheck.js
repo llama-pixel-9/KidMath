@@ -104,6 +104,7 @@ function checkBanked(q, claim, label) {
   if (claim.families && !claim.families.includes(meta.itemFamily)) out.push(`${label}: family ${meta.itemFamily}`);
   if (claim.subskills && !claim.subskills.includes(meta.subskill)) out.push(`${label}: subskill ${meta.subskill}`);
   if (claim.structureTypes && !claim.structureTypes.includes(meta.structureType)) out.push(`${label}: structure ${meta.structureType}`);
+  if (claim.excludeStructureTypes?.includes(meta.structureType)) out.push(`${label}: structure ${meta.structureType} is excluded`);
   if (!withinNumbers(q, claim.numbers)) out.push(`${label}: numbers outside ${JSON.stringify(claim.numbers)}`);
   return out;
 }

@@ -3,8 +3,8 @@ import { FULL_ITEMS } from "../itemBank/fullBank";
 import { setBankItems } from "../itemBank";
 import { MODE_IDS } from "../modes";
 import { checkItems, storyMatches } from "../worksheets/claimCheck";
-import { generateWorksheet, practiceAvailability, storyAvailability } from "../worksheets/generateWorksheet";
-import { LAYOUTS, STORIES_PER_SHEET, layoutForClaim } from "../worksheets/layouts";
+import { generateWorksheet, paperFigureKey, practiceAvailability, storyPlan } from "../worksheets/generateWorksheet";
+import { LAYOUTS, isFigureLayout, layoutForClaim } from "../worksheets/layouts";
 import { documentTitle, headerLine, skillForModeLevel, topicsForGrade } from "../worksheets/skillIndex";
 import { GRADES, GRADE_SLUGS, TOPIC_LABELS, WORKSHEET_SKILLS } from "../worksheets/skills";
 
@@ -14,10 +14,6 @@ import { GRADES, GRADE_SLUGS, TOPIC_LABELS, WORKSHEET_SKILLS } from "../workshee
 const CCSS = /^(K|[1-5])\.(CC|OA|NBT|NF|MD|G)\.[A-D]\.\d+[a-d]?$/;
 const SCREEN_VERBS = /\b(tap|press|drag|swipe|click|touch)\b/i;
 const SHEETS = 3;
-
-// Modes whose skills are authored. Grows to all of MODE_IDS as the prompt
-// modes are read off the audit (docs/worksheet-skill-audit.md).
-const AUTHORED_MODES = ["addition", "subtraction", "multiplication", "division"];
 
 function printRun(skill, problemType) {
   const seenKeys = new Set();
@@ -40,19 +36,21 @@ describe("worksheet skill catalog", () => {
       expect(MODE_IDS, skill.id).toContain(skill.mode);
       expect(TOPIC_LABELS[skill.mode], skill.id).toBeTruthy();
       for (const code of skill.ccss) expect(code, skill.id).toMatch(CCSS);
-      expect(skill.ccss[0].split(".")[0], skill.id).toBe(skill.grade);
+      // No standard (calendars, early coins) is fine; a wrong grade is not.
+      if (skill.ccss[0]) expect(skill.ccss[0].split(".")[0], skill.id).toBe(skill.grade);
     }
   });
 
-  it("every authored mode has skills, and every topic has a plain name", () => {
-    for (const mode of AUTHORED_MODES) {
+  it("every mode and every grade has skills, and every topic has a plain name", () => {
+    for (const mode of MODE_IDS) {
       expect(WORKSHEET_SKILLS.some((s) => s.mode === mode), mode).toBe(true);
+      expect(TOPIC_LABELS[mode], mode).toBeTruthy();
     }
-    for (const mode of MODE_IDS) expect(TOPIC_LABELS[mode], mode).toBeTruthy();
-    for (const grade of GRADES) expect(GRADE_SLUGS[grade]).toBeTruthy();
+    for (const grade of GRADES) {
+      expect(WORKSHEET_SKILLS.some((s) => s.grade === grade), grade).toBe(true);
+      expect(GRADE_SLUGS[grade]).toBeTruthy();
+    }
   });
-
-  it.todo("every mode in MODE_IDS has at least one skill (prompt modes: phase 6)");
 
   it("one sheet, one layout: multi-digit stacks, facts go sideways, division gets a bracket", () => {
     for (const skill of WORKSHEET_SKILLS) {
@@ -64,7 +62,8 @@ describe("worksheet skill catalog", () => {
   });
 
   it("lookups: topics per grade, legacy mode+level bridge, header and PDF title", () => {
-    expect(topicsForGrade("3", MODE_IDS)).toEqual(["addition", "subtraction", "multiplication", "division"]);
+    expect(topicsForGrade("3", MODE_IDS).slice(0, 4)).toEqual(["addition", "subtraction", "multiplication", "division"]);
+    expect(topicsForGrade("K", MODE_IDS)).not.toContain("division");
     expect(skillForModeLevel("subtraction", 10).mode).toBe("subtraction");
     const skill = WORKSHEET_SKILLS.find((s) => s.id === "sub-3digit-regroup");
     expect(headerLine(skill)).toBe("Subtraction · Subtract 3-digit numbers with regrouping · Grade 3 · 3.NBT.A.2");
@@ -84,6 +83,8 @@ describe("worksheet skills keep their promise", () => {
         expect(checkItems(sheet.items, skill.source)).toEqual([]);
         for (const q of sheet.items) {
           expect(SCREEN_VERBS.test(q.display?.promptText || ""), q.display?.promptText).toBe(false);
+          // One sheet, one kind of item: all pictured, or none.
+          if (skill.source.kind === "bank") expect(Boolean(paperFigureKey(q)), q.display?.promptText).toBe(isFigureLayout(skill.layout));
         }
       }
     });
@@ -97,14 +98,17 @@ describe("worksheet skills keep their promise", () => {
     }
 
     it(`${skill.id}: word problems are bank stories that fit the skill`, () => {
-      const available = storyAvailability(skill.id);
+      const plan = storyPlan(skill.id);
       const [mixed] = printRun(skill, "mixed");
       const [stories] = printRun(skill, "stories");
       expect(stories.layout).toBe("stories");
       expect(stories.items).toEqual([]);
       // Never a fake story: a thin pool comes back short and says so.
-      expect(stories.wordProblems.length).toBe(Math.min(available, STORIES_PER_SHEET));
-      expect(stories.shortfall).toBe(STORIES_PER_SHEET - stories.wordProblems.length);
+      expect(stories.wordProblems.length).toBe(Math.min(plan.pool.length, plan.perSheet));
+      expect(stories.shortfall).toBe(plan.perSheet - stories.wordProblems.length);
+      // All pictured or none, so the page budget holds.
+      const pictured = stories.wordProblems.map(({ question }) => Boolean(paperFigureKey(question)));
+      expect(new Set(pictured).size).toBeLessThanOrEqual(1);
       expect(mixed.items.length).toBe(LAYOUTS[skill.layout].mixed);
       expect(checkItems(mixed.items, skill.source)).toEqual([]);
       for (const { kind, question: q } of [...mixed.wordProblems, ...stories.wordProblems]) {

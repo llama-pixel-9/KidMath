@@ -1,6 +1,6 @@
 /* The worksheet skill catalog — what a parent picks.
  *
- * PURE DATA, NO IMPORTS: read by the /worksheets screen, by Node (audit, specs,
+ * PURE DATA (its only import is more of the same, promptSkills.js): read by the /worksheets screen, by Node (audit, specs,
  * the SEO prerender) and by the native engine bundle, and exported to Swift as
  * JSON — so no functions in the exported values.
  *
@@ -14,10 +14,13 @@
  *   bank        — a filter over approved bank cells (see `npm run
  *                 worksheets:audit` for the menu). Everything worded.
  *
- * `grade` is the grade of `ccss[0]`. CCSS codes are cited as codes only; every
+ * `grade` is the grade of `ccss[0]` where there is a standard (`ccss` may be
+ * empty — calendars, early coins). CCSS codes are cited as codes only; every
  * title is our own wording. `level` is the legacy engine level — the bridge for
  * old ?mode=&level= links and the marketing catalog.
  */
+
+import { PROMPT_SKILLS } from "./promptSkills.js";
 
 export const GRADES = ["K", "1", "2", "3", "4", "5"];
 
@@ -85,7 +88,8 @@ function banked(id, grade, mode, ccss, title, source, stories, level, layout = "
 
 const BOTH = ["procedural", "conceptual"];
 
-export const WORKSHEET_SKILLS = [
+// The four operations: drills built to a claim, plus their worded cells.
+const OPERATION_SKILLS = [
   // ── Addition ────────────────────────────────────────────────────────────
   drill("add-within-5", "K", "addition", "K.OA.A.5", "Add within 5", "horizontal",
     { op: "+", a: [1, 4], b: [1, 4], total: [2, 5], ordered: true },
@@ -247,3 +251,5 @@ export const WORKSHEET_SKILLS = [
     { families: BOTH, subskills: ["remainders"], structureTypes: ["divisionRemainderLeft", "divisionRemainderQuotient", "remainderBounded"], levels: [7, 10] },
     null, 8, "promptShort"),
 ];
+
+export const WORKSHEET_SKILLS = [...OPERATION_SKILLS, ...PROMPT_SKILLS];

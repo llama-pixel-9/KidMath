@@ -13,6 +13,7 @@
 import { getBankItems } from "../itemBank/index.js";
 import { APPROVED } from "../itemBank/reviewStatus.js";
 import { buildBankQuestion, isPrintablePrompt, printableWording, promptKey } from "../mathEngine.js";
+import { areaFigureSpec } from "../figures/areaFigureSpec.js";
 import { isVerbalPrompt, shuffleArray } from "../modes/helpers.js";
 import { asciiOp, storyMatches, withinNumbers } from "./claimCheck.js";
 import { sampleSheet } from "./computationSampler.js";
@@ -23,6 +24,7 @@ import {
   PROBLEM_TYPES,
   STORIES_PER_FIGURE_SHEET,
   STORIES_PER_SHEET,
+  isFigureLayout,
 } from "./layouts.js";
 import { skillById } from "./skillIndex.js";
 
@@ -33,12 +35,26 @@ function cellMatches(item, mode, filter) {
   if (!filter.families.includes(item.itemFamily)) return false;
   if (filter.subskills && !filter.subskills.includes(item.subskill)) return false;
   if (filter.structureTypes && !filter.structureTypes.includes(item.structureType)) return false;
+  if (filter.excludeStructureTypes?.includes(item.structureType)) return false;
   return overlaps(item.levelRange, filter.levels);
 }
 
+/** The figure a question prints with: the authored `display.figure`, or the
+ * rectangle the areaPerimeter bank implies through its dimensions (same
+ * inference the question card makes — figureRegistry.getFigure). */
+export function paperFigureKey(q) {
+  if (q.display?.figure) return q.display.figure;
+  const mode = q.mode || q.metadata?.modeId;
+  return mode === "areaPerimeter" && areaFigureSpec(q) ? "areaFigure" : null;
+}
+
+// "Looking at this chart…" with no chart on the page cannot be answered with a
+// pencil: on screen the answer widget drew it; paper has no widget.
+const POINTS_AT_A_PICTURE = /\bthis (clock|chart|graph|mat|grid|picture|pictograph|tally)\b|\b(shown|pictured)\b/i;
+
 // The render-ready, print-worded question for a bank item — or null when the
 // paper rules reject it (screen verbs, answer printed in its own prompt…).
-function printableFromBank(item, skill) {
+function printableFromBank(item, skill, { story = false } = {}) {
   const level = Math.min(Math.max(skill.level, item.levelRange[0]), item.levelRange[1]);
   let q;
   try {
@@ -50,14 +66,20 @@ function printableFromBank(item, skill) {
   // the true one.
   q.metadata.itemFamily = item.itemFamily;
   q = printableWording({ ...q, op: asciiOp(q.op) });
-  return isPrintablePrompt(q) ? q : null;
+  if (!isPrintablePrompt(q)) return null;
+  const drawn = Boolean(paperFigureKey(q));
+  // One sheet, one kind of practice item: a page budget cannot hold for a mix
+  // of charts and one-liners. (Stories are sorted by storyPlan instead.)
+  if (!story && drawn !== isFigureLayout(skill.layout)) return null;
+  if (!drawn && POINTS_AT_A_PICTURE.test(q.display?.promptText || "")) return null;
+  return q;
 }
 
-function bankPool(skill, filter, accept) {
+function bankPool(skill, filter, accept, options) {
   const out = [];
   for (const item of getBankItems()) {
     if (!cellMatches(item, skill.mode, filter)) continue;
-    const q = printableFromBank(item, skill);
+    const q = printableFromBank(item, skill, options);
     if (q && accept(q)) out.push(q);
   }
   return out;
@@ -70,10 +92,30 @@ function practicePool(skill) {
 function storyPool(skill) {
   if (!skill.stories) return [];
   const filter = { ...skill.stories, families: ["application"] };
-  return bankPool(skill, filter, (q) => {
-    if (!isVerbalPrompt(q.display?.promptText)) return false;
-    return storyMatches(q, skill.stories);
-  });
+  return bankPool(
+    skill,
+    filter,
+    (q) => isVerbalPrompt(q.display?.promptText) && storyMatches(q, skill.stories),
+    { story: true }
+  );
+}
+
+/**
+ * A skill's word problems, and how many fit a page. Stories that draw a chart
+ * or a rectangle need three times the room of plain ones, and a page budget
+ * cannot hold for a mix — so a skill prints whichever kind it has more of.
+ */
+export function storyPlan(skillId) {
+  const skill = skillById(skillId);
+  const all = skill ? storyPool(skill) : [];
+  const pictured = all.filter((q) => paperFigureKey(q));
+  const usePictured = pictured.length > all.length - pictured.length;
+  const pool = usePictured ? pictured : all.filter((q) => !paperFigureKey(q));
+  return {
+    pool,
+    perSheet: usePictured ? STORIES_PER_FIGURE_SHEET : STORIES_PER_SHEET,
+    perMixedSheet: usePictured ? MIXED_STORIES_FIGURE : MIXED_STORIES,
+  };
 }
 
 // Without replacement, and never the same sentence twice across the sheets of
@@ -93,8 +135,7 @@ function take(pool, count, seenKeys) {
 /** How many printable word problems the LOADED bank holds for a skill — the
  * screen disables "Word problems" / "Mixed" and caps the sheet count on this. */
 export function storyAvailability(skillId) {
-  const skill = skillById(skillId);
-  return skill ? storyPool(skill).length : 0;
+  return storyPlan(skillId).pool.length;
 }
 
 /** Same, for the practice problems of a bank-sourced skill. Computation
@@ -116,14 +157,9 @@ export function generateWorksheet(skillId, { problemType = "practice", seenKeys 
   if (!PROBLEM_TYPES.includes(problemType)) throw new Error(`Unknown problem type: ${problemType}`);
 
   const budget = LAYOUTS[skill.layout];
-  const figureSheet = skill.layout === "figure";
+  const plan = problemType === "practice" ? null : storyPlan(skillId);
   const wantItems = problemType === "stories" ? 0 : budget[problemType];
-  const wantStories =
-    problemType === "stories"
-      ? figureSheet ? STORIES_PER_FIGURE_SHEET : STORIES_PER_SHEET
-      : problemType === "mixed"
-        ? figureSheet ? MIXED_STORIES_FIGURE : MIXED_STORIES
-        : 0;
+  const wantStories = !plan ? 0 : problemType === "stories" ? plan.perSheet : plan.perMixedSheet;
 
   const items = !wantItems
     ? []
@@ -131,7 +167,7 @@ export function generateWorksheet(skillId, { problemType = "practice", seenKeys 
       ? sampleSheet(skill.source, skill.mode, wantItems, seenKeys)
       : take(practicePool(skill), wantItems, seenKeys);
   const wordProblems = wantStories
-    ? take(storyPool(skill), wantStories, seenKeys).map((question) => ({ kind: "story", question }))
+    ? take(plan.pool, wantStories, seenKeys).map((question) => ({ kind: "story", question }))
     : [];
 
   const requested = wantItems + wantStories;

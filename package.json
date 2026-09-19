@@ -18,6 +18,7 @@
     "bank:audit": "node --import ./scripts/lib/registerResolve.js scripts/bankStructureAudit.js",
     "bank:report": "node scripts/bankReport.js",
     "bank:variety": "node --import ./scripts/lib/registerResolve.js scripts/varietyReport.js",
+    "worksheets:audit": "node --import ./scripts/lib/registerResolve.js scripts/worksheetAudit.mjs",
     "bank:seed": "node scripts/generateBankSeed.js",
     "bank:export": "node scripts/exportCloudBank.js && npm run bank:seed:build",
     "bank:split": "node scripts/splitItemBank.js",

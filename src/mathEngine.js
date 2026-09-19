@@ -860,7 +860,7 @@ const FIGURE_MODES = new Set(["dataGraphs", "volumeCoordinates"]);
 
 const ARITH_OPS = { "+": (a, b) => a + b, "-": (a, b) => a - b, "x": (a, b) => a * b, "/": (a, b) => a / b };
 
-function isPureComputation(q) {
+export function isPureComputation(q) {
   const fn = ARITH_OPS[q.op];
   if (!fn) return false;
   if (typeof q.a !== "number" || typeof q.b !== "number" || typeof q.answer !== "number") return false;
@@ -885,7 +885,7 @@ function withinLevelRange(q, level) {
 
 // Identity/zero facts (n + 0, n − 0, n × 1, n ÷ 1…) are capped at one per
 // sheet; a page of them teaches nothing.
-function isTrivialFact(q) {
+export function isTrivialFact(q) {
   if (q.op === "+" || q.op === "-") return q.a === 0 || q.b === 0;
   if (q.op === "x") return q.a <= 1 || q.b <= 1;
   if (q.op === "/") return q.b === 1 || q.answer === 0;
@@ -893,7 +893,7 @@ function isTrivialFact(q) {
 }
 
 // Duplicate key: commutative ops treat 4+3 and 3+4 as the same item.
-function computationKey(q) {
+export function computationKey(q) {
   const pair = q.op === "+" || q.op === "x" ? [q.a, q.b].sort((x, y) => x - y) : [q.a, q.b];
   return `${q.op}:${pair.join(",")}`;
 }
@@ -918,7 +918,7 @@ const PRINT_REWORDS = [
 ];
 const SCREEN_VERBS = /\b(tap|press|drag|swipe|click|touch)\b/i;
 
-function printableWording(q) {
+export function printableWording(q) {
   const text = q.display?.promptText;
   if (typeof text !== "string" || !SCREEN_VERBS.test(text)) return q;
   let out = text;
@@ -926,7 +926,7 @@ function printableWording(q) {
   return { ...q, display: { ...q.display, promptText: out } };
 }
 
-function isPrintablePrompt(q) {
+export function isPrintablePrompt(q) {
   if (q.answerType === "multiSelect" || q.answerType === "tenFrame") return false;
   const text = q.display?.promptText;
   if (text) {
@@ -975,7 +975,7 @@ export function isYesNoJudgment(q) {
   );
 }
 
-function promptKey(q) {
+export function promptKey(q) {
   return normalizedPrompt(q) || (q.display?.sequence ? `seq:${q.display.sequence.join(",")}` : `emoji:${q.display?.count}`);
 }
 

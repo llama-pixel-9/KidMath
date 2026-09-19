@@ -17,6 +17,43 @@ struct ZoneBackdropView: View {
     private static let rock = Color(red: 0.62, green: 0.75, blue: 0.71)
 
     var body: some View {
+        if let art = MeadowArt.zone(zoneId) {
+            // Generated backdrop + furniture at the perch coordinates (the
+            // shared SCENERY table). Seasonal dressing on art backdrops ships
+            // with the seasons phase — until then a light canopy-tint wash
+            // keeps the calendar legible, as on the web.
+            ZStack(alignment: .topLeading) {
+                art.image
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 1024, height: 588)
+                    .clipped()
+                if season != nil {
+                    Rectangle().fill(t.farGrass).opacity(0.12)
+                }
+                ForEach(Array(MeadowArt.scenery(zoneId: zoneId).enumerated()), id: \.offset) { _, item in
+                    if let prop = MeadowArt.prop(item.prop) {
+                        let w = prop.aspect * item.height
+                        prop.image
+                            .resizable()
+                            .aspectRatio(prop.aspect, contentMode: .fit)
+                            .frame(width: w, height: item.height)
+                            .position(x: item.x, y: item.y - item.height / 2)
+                    }
+                }
+                if let nestBalance {
+                    nest(balance: nestBalance)
+                }
+            }
+            .frame(width: 1024, height: 588)
+            .clipped()
+        } else {
+            drawn
+        }
+    }
+
+    /// The code-drawn scene — the fallback when the art kit is missing.
+    private var drawn: some View {
         ZStack(alignment: .topLeading) {
             t.sky
             Rectangle().fill(t.farGrass)

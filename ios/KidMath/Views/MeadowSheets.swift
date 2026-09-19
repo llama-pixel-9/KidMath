@@ -30,7 +30,7 @@ struct FieldGuideSheet: View {
                 RoundedRectangle(cornerRadius: 14)
                     .fill(Theme.seafoam.opacity(0.6))
                     .frame(height: 206)
-                    .overlay { BirdSpriteView().frame(width: 130, height: 112) }
+                    .overlay { BirdSpriteView(speciesId: species.id).frame(width: 130, height: 112) }
                     .overlay(alignment: .topLeading) {
                         Text("SKETCH · PLATE SLOT")
                             .font(.system(size: 9, weight: .medium, design: .monospaced))
@@ -226,7 +226,7 @@ struct GiveAHomeSheet: View {
             if affordable || eggBuyable { picked = species }
         } label: {
             HStack(spacing: 14) {
-                BirdSpriteView().frame(width: 46, height: 40)
+                BirdSpriteView(speciesId: species.id).frame(width: 46, height: 40)
                 VStack(alignment: .leading, spacing: 2) {
                     HStack(spacing: 8) {
                         Text(species.name)
@@ -310,7 +310,7 @@ struct GiveAHomeSheet: View {
                 RoundedRectangle(cornerRadius: 16)
                     .fill(Theme.seafoam.opacity(0.6))
                     .frame(height: 170)
-                    .overlay { BirdSpriteView().frame(width: 120, height: 104) }
+                    .overlay { BirdSpriteView(speciesId: species.id).frame(width: 120, height: 104) }
                 Text(species.name)
                     .font(theme.displayFont(size: 28))
                     .foregroundStyle(Theme.ink)

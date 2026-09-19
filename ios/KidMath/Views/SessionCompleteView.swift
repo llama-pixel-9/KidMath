@@ -167,7 +167,7 @@ struct SessionCompleteView: View {
                     VStack(spacing: 6) {
                         ForEach(summary.newBadges) { badge in
                             HStack(spacing: 8) {
-                                Text(badge.emoji).font(.system(size: 22))
+                                BadgeGlyph(badge: badge, size: 30)
                                 VStack(alignment: .leading, spacing: 1) {
                                     Text("New badge: \(badge.name)").font(theme.bodyFont(size: 14, weight: .heavy))
                                     Text(badge.blurb).font(theme.bodyFont(size: 12, weight: .semibold)).foregroundStyle(Theme.ink.opacity(0.7))

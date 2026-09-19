@@ -87,7 +87,7 @@ struct StickerBookView: View {
                         ForEach(EngagementStore.badges()) { badge in
                             let has = earned.contains(badge.id)
                             HStack(spacing: 8) {
-                                Text(badge.emoji).font(.system(size: 26)).grayscale(has ? 0 : 1).opacity(has ? 1 : 0.45)
+                                BadgeGlyph(badge: badge, size: 34).grayscale(has ? 0 : 1).opacity(has ? 1 : 0.45)
                                 VStack(alignment: .leading, spacing: 1) {
                                     Text(badge.name).font(theme.bodyFont(size: 13, weight: .heavy))
                                     Text(badge.blurb).font(theme.bodyFont(size: 11, weight: .semibold)).foregroundStyle(theme.textMuted)
@@ -139,6 +139,20 @@ struct StickerBookView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar { ToolbarItem(placement: .topBarTrailing) { Button("Done") { dismiss() } } }
             .onAppear { state = store.load() }
+        }
+    }
+}
+
+
+/// A badge's commissioned feather art when the kit has it, else its emoji.
+struct BadgeGlyph: View {
+    let badge: EngagementStore.Badge
+    let size: CGFloat
+    var body: some View {
+        if let art = MeadowArt.feather(badge.id) {
+            art.image.resizable().aspectRatio(art.aspect, contentMode: .fit).frame(height: size)
+        } else {
+            Text(badge.emoji).font(.system(size: size * 0.8))
         }
     }
 }

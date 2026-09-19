@@ -43,7 +43,7 @@ function PlayRoute() {
 function WorksheetsRoute() {
   const { isPremium, loading } = usePremium();
   if (!isPremium && !loading) {
-    return <PremiumGate title="Printable flight logs are part of larkit Premium" />;
+    return <PremiumGate title="Printable worksheets are part of larkit Premium" />;
   }
   return <PrintableWorksheet />;
 }

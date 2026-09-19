@@ -36,7 +36,7 @@ struct WorksheetView: View {
     var body: some View {
         NavigationStack {
             List {
-                Section("Flight log") {
+                Section("Worksheet") {
                     Picker("Game", selection: $modeId) {
                         ForEach(ModeCatalog.allModes.filter(\.playable)) { mode in
                             Text("\(mode.emoji) \(mode.label)").tag(mode.id)
@@ -64,7 +64,7 @@ struct WorksheetView: View {
                             .font(.caption).foregroundStyle(theme.textMuted)
                     }
                     .padding(.vertical, 4)
-                    Picker("Logs", selection: $sheetCount) {
+                    Picker("Sheets", selection: $sheetCount) {
                         Text("1").tag(1)
                         Text("2").tag(2)
                         Text("3").tag(3)
@@ -81,7 +81,7 @@ struct WorksheetView: View {
                     Button {
                         generate()
                     } label: {
-                        Label(rendering ? "Building…" : "Build the flight log", systemImage: "wand.and.stars").font(.headline)
+                        Label(rendering ? "Building…" : "Build the worksheet", systemImage: "wand.and.stars").font(.headline)
                     }
                     .disabled(rendering)
                     if let pdfURL {
@@ -97,7 +97,7 @@ struct WorksheetView: View {
 
                 if let first = logs.first {
                     Section("Preview") {
-                        Text("\(first.mode.label) · Level \(first.level) · \(first.scope) — \(first.itemCount) items\(logs.count > 1 ? " per log × \(logs.count)" : "") + answer key")
+                        Text("\(first.mode.label) · Level \(first.level) · \(first.scope) — \(first.itemCount) items\(logs.count > 1 ? " per sheet × \(logs.count)" : "") + answer key")
                             .font(.footnote).foregroundStyle(theme.textMuted)
                         ForEach(Array((first.partA + first.partB).prefix(6).enumerated()), id: \.offset) { index, q in
                             HStack(alignment: .top, spacing: 8) {
@@ -108,7 +108,7 @@ struct WorksheetView: View {
                     }
                 }
             }
-            .navigationTitle("Flight logs")
+            .navigationTitle("Worksheets")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) { Button("Done") { dismiss() } }

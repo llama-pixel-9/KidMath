@@ -681,7 +681,7 @@ private struct PlanStep: View {
             }
             bullet("All 22 games on iPad, iPhone, and the web")
             bullet("Every kid in your household — one price")
-            bullet("Flight logs — printable worksheets for any game, with answer keys")
+            bullet("Printable worksheets for any game, with answer keys")
             bullet("Progress syncs across devices")
             VStack(spacing: 8) {
                 // The state auto-renewal disclosure, before the purchase step:

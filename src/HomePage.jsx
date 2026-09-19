@@ -351,7 +351,7 @@ export default function HomePage() {
               Quick Start
             </button>
             <button className={BTN_SECONDARY} onClick={() => navigate("/worksheets")}>
-              Print a Flight Log
+              Print a Worksheet
             </button>
           </div>
         </motion.div>
@@ -448,7 +448,7 @@ export default function HomePage() {
         >
           <FileText className="h-10 w-10 text-teal mx-auto mb-4" />
           <h2 className={`text-2xl font-semibold font-display ${theme.textPrimary}`}>
-            Flight Logs — printable worksheets
+            Printable math worksheets
           </h2>
           <p className={`mt-2 ${theme.textSecondary} max-w-md mx-auto`}>
             Generate kid-friendly practice sheets from the same levels the games
@@ -458,7 +458,7 @@ export default function HomePage() {
             className={`mt-6 ${BTN_PRIMARY} text-lg`}
             onClick={() => navigate("/worksheets")}
           >
-            Print a Flight Log
+            Print a Worksheet
           </button>
         </motion.div>
       </section>

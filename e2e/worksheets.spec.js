@@ -20,9 +20,9 @@ async function generateSheets(page, { modeLabel, level, logs = 1 }) {
   await page.goto("/worksheets");
   await page.getByRole("button", { name: modeLabel, exact: true }).click();
   await page.getByRole("button", { name: `Level ${level}`, exact: true }).click();
-  await page.getByRole("button", { name: `${logs} ${logs === 1 ? "log" : "logs"}`, exact: true }).click();
+  await page.getByRole("button", { name: `${logs} ${logs === 1 ? "sheet" : "sheets"}`, exact: true }).click();
   await page.getByRole("button", { name: "Generate", exact: true }).click();
-  await expect(page.getByText("Flight log ·").first()).toBeVisible();
+  await expect(page.getByText("Worksheet ·").first()).toBeVisible();
 }
 
 const CASES = [
@@ -42,7 +42,7 @@ for (const { modeLabel, level, logs, expectFigures } of CASES) {
 
     // Paper language: no screen verbs anywhere on the printed sheets.
     const sheetText = await page.locator("body").innerText();
-    const sheets = sheetText.slice(sheetText.indexOf("Flight log"));
+    const sheets = sheetText.slice(sheetText.indexOf("Worksheet ·"));
     expect(
       /\b(tap|drag|swipe)\b/i.test(sheets),
       "screen-interaction language on a printed sheet"
@@ -67,7 +67,7 @@ test("worksheets: the word-problems toggle changes the sheet both ways", async (
 
   // ON (default): the sheet visibly carries word problems.
   await page.getByRole("button", { name: "Generate", exact: true }).click();
-  await expect(page.getByText("Flight log ·").first()).toBeVisible();
+  await expect(page.getByText("Worksheet ·").first()).toBeVisible();
   const withStories = await page.evaluate(() => window.__larkitWorksheets);
   expect(withStories.allowWordProblems).toBe(true);
   for (const log of withStories.logs) {
@@ -77,13 +77,13 @@ test("worksheets: the word-problems toggle changes the sheet both ways", async (
   // OFF: a pure fluency sheet — no word-problems block, nothing worded.
   await page.getByRole("button", { name: "Skip word problems", exact: true }).click();
   await page.getByRole("button", { name: "Generate", exact: true }).click();
-  await expect(page.getByText("Flight log ·").first()).toBeVisible();
+  await expect(page.getByText("Worksheet ·").first()).toBeVisible();
   const fluency = await page.evaluate(() => window.__larkitWorksheets);
   expect(fluency.allowWordProblems).toBe(false);
   for (const log of fluency.logs) {
     expect(log.wordProblems, "toggle OFF strips every worded item").toEqual([]);
   }
   const text = await page.locator("body").innerText();
-  const sheets = text.slice(text.indexOf("Flight log"));
+  const sheets = text.slice(text.indexOf("Worksheet ·"));
   expect(sheets).not.toContain("Pick two numbers");
 });

@@ -430,7 +430,7 @@ function PlanStep({ kidName, onFree }) {
           <ul className="m-0 p-0 list-none space-y-2 text-[15px] font-semibold text-ink">
             <li>All 22 games, K–5</li>
             <li>Every kid in your household — one price</li>
-            <li>Flight logs — printable worksheets for any game, with answer keys</li>
+            <li>Printable worksheets for any game, with answer keys</li>
             <li>Progress syncs across web, iPad, and iPhone</li>
           </ul>
           <div className="flex-1" />

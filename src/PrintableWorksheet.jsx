@@ -232,8 +232,8 @@ function FlightLogSheet({ log, mode, level, scope, answerKey = false, logIndex, 
           larkit
         </span>
         <span className="ml-auto text-[12px] font-bold text-right">
-          Flight log · {config.label} · Level {level} · {scope}
-          {logCount > 1 && ` · Log ${logIndex + 1} of ${logCount}`}
+          Worksheet · {config.shortLabel || config.label} · Level {level} · {scope}
+          {logCount > 1 && ` · Sheet ${logIndex + 1} of ${logCount}`}
         </span>
       </div>
 
@@ -344,7 +344,7 @@ export default function PrintableWorksheet() {
     <div className={`min-h-screen ${theme.bg} transition-colors duration-300`}>
       <div className="no-print max-w-md mx-auto px-4 py-6">
         <h1 className={`text-2xl font-semibold font-display ${theme.textPrimary} mb-2`}>
-          Print a Flight Log
+          Print a Worksheet
         </h1>
         <p className={`text-sm ${theme.textSecondary} mb-6`}>
           One sheet, one skill: three parts of problems from the same levels
@@ -413,13 +413,13 @@ export default function PrintableWorksheet() {
           {/* Number of logs */}
           <div>
             <p className={`text-sm font-semibold ${theme.textSecondary} mb-2 uppercase tracking-wide`}>
-              Number of Logs
+              Number of Sheets
             </p>
             <div className="flex gap-2">
               {[1, 2, 3, 5].map((n) => (
                 <button
                   key={n}
-                  aria-label={`${n} ${n === 1 ? "log" : "logs"}`}
+                  aria-label={`${n} ${n === 1 ? "sheet" : "sheets"}`}
                   className={`flex-1 py-3 rounded-2xl border-2 font-bold text-lg cursor-pointer transition-colors ${
                     n === sheetCount
                       ? theme.selectedBorder + " " + theme.selectedText

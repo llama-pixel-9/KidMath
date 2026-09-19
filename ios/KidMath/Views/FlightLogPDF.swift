@@ -38,7 +38,7 @@ enum FlightLogPDF {
 
         let safeLabel = first.mode.label.replacingOccurrences(of: "!", with: "").replacingOccurrences(of: " ", with: "")
         let url = FileManager.default.temporaryDirectory
-            .appendingPathComponent("larkit-flight-log-\(safeLabel)-L\(first.level).pdf")
+            .appendingPathComponent("larkit-worksheet-\(safeLabel)-L\(first.level).pdf")
         var mediaBox = CGRect(origin: .zero, size: pageSize)
         guard let context = CGContext(url as CFURL, mediaBox: &mediaBox, nil) else { return nil }
         for page in pages {
@@ -136,7 +136,7 @@ struct FlightLogSheetView: View {
             LarkMarkView(color: .black, accent: .black, eye: .white).frame(height: 32)
             Text("larkit").font(.custom("Fredoka-SemiBold", size: 24)).foregroundStyle(ink)
             Spacer()
-            Text("Flight log · \(log.mode.label) · Level \(log.level) · \(log.scope)\(logCount > 1 ? " · Log \(logIndex + 1) of \(logCount)" : "")")
+            Text("Worksheet · \(log.mode.label) · Level \(log.level) · \(log.scope)\(logCount > 1 ? " · Sheet \(logIndex + 1) of \(logCount)" : "")")
                 .font(.system(size: 12, weight: .bold)).foregroundStyle(ink).multilineTextAlignment(.trailing)
         }
         .padding(.bottom, 12)

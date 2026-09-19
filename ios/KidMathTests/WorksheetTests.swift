@@ -40,7 +40,7 @@ final class WorksheetTests: XCTestCase {
         XCTAssertEqual(document.pageCount, 4, "2 logs + 2 answer keys")
         let firstPage = document.page(at: 0)?.string ?? ""
         XCTAssertTrue(firstPage.contains("larkit"), "header lockup")
-        XCTAssertTrue(firstPage.contains("Flight log"), "header line")
+        XCTAssertTrue(firstPage.contains("Worksheet"), "header line")
         XCTAssertTrue(firstPage.contains("Sums to 10"), "scope in header")
         XCTAssertTrue(firstPage.contains("Log 1 of 2"))
         XCTAssertTrue(firstPage.contains("Name"), "name line")

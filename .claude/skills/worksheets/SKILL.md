@@ -57,11 +57,11 @@ grid and no "Level" anywhere, on screen or on paper. One sheet = one skill
 | `stackedWide` | 3 col | 12 | 9 | 4-digit, 2×2-digit (partial-product room) |
 | `horizontal` | 3 col | 36 | 24 | facts: `7 × 8 = ☐` |
 | `longDivision` | 3 col | 12 | 6 | bracket + work space — never stacked like a subtraction |
-| `prompt` | 2 col | 12 | 8 | worded, 2–3 lines |
+| `prompt` | 2 col | 10 | 8 | worded, 2–3 lines, option banks |
 | `promptShort` | 2 col | 16 | 10 | worded one-liners (audit avg chars ≲ 45) |
-| `figure` | 2 col | 4 | 3 | bar graph, pictograph, tally |
-| `figureSmall` | 2 col | 6 | 4 | clock, disc mat, rectangle, cubes, grid |
-| `stories` | 2×3 boxes | 6 | — | word problems only (3, one column, if pictured) |
+| `figure` | 2 col | 4 | 2 | bar graph, pictograph, tally, disc mat, coordinate grid |
+| `figureSmall` | 2 col | 6 | 4 | clock face, rectangle, cube stack |
+| `stories` | 2×3 boxes | 6 | — | word problems only (2, one column, if pictured) |
 
 `layoutForClaim` fixes the layout of computation skills (multi-digit
 stacks, facts go sideways, division gets a bracket). **A figure layout
@@ -87,7 +87,9 @@ budget or the layout; never delete the assertion.
   "this clock / this chart / shown" is rejected — on screen the answer
   widget drew it; paper has no widget.
 - **Figures print** (`getPaperFigure`: `display.figure`, or the rectangle
-  the areaPerimeter bank implies). Grayscale, ≤240px.
+  the areaPerimeter bank implies). Grayscale with the contrast pushed
+  (on-screen tints print as pale ghosts otherwise), ≤240px. Two-mat disc
+  items are excluded (`ONE_MAT`): twice the height of everything else.
 - **Option banks only where the options ARE the question**
   (`printOptionBank`); judgment items print "Circle one: Yes / No".
 - §15 brand rule: every mark on a sheet is 100% black.
@@ -111,7 +113,11 @@ by piece so the public worksheet pages can share the renderer.
   types keeps its promise, pools cover 3 sheets, one kind of item a sheet.
 - `computationSampler.spec.js`, `worksheetRename.spec.js`.
 - `worksheets.spec.js` / `flightLog.spec.js` — the legacy
-  `generateFlightLog` (still used by iOS until its parity phase).
+  `generateFlightLog`. The web no longer calls it; iOS does until its
+  parity phase (WorksheetView / FlightLogPDF), after which it is deleted.
+- Deep links: `/worksheets?skill=<id>&type=practice|stories|mixed&sheets=N&key=0&go=1`;
+  old `?mode=&level=` lands on the nearest skill (`skillForModeLevel`). The
+  screen rewrites the address as choices change, so it is always shareable.
 - `e2e/worksheets.spec.js` — real UI + PDF page counts. Headless-only.
   `KIDMATH_E2E_PORT=5199 npx playwright test worksheets`.
 - All new specs are in the hand-maintained `npm run test` list.

@@ -26,10 +26,6 @@ const STEP_ENV_KEYS = {
   secondChance: "VITE_GAM_SECOND_CHANCE",
   // Read-aloud (PR D): speaker button on the question card; auto-read for K–1.
   readAloud: "VITE_GAM_READ_ALOUD",
-  // Play by skill: Grade → Topic → Skill sessions with durable mastery instead
-  // of the level ladder. Off until iOS catches up. The practice_sessions
-  // skill columns (migration 20260920120000) MUST be applied before it goes on.
-  skillsPlay: "VITE_SKILLS_PLAY",
 };
 
 function overrideSet() {
@@ -68,4 +64,19 @@ export const meadowMotionEnabled = (env) => gamStepEnabled("meadowMotion", env);
 export const ladderV2Enabled = (env) => gamStepEnabled("ladderV2", env);
 export const secondChanceEnabled = (env) => gamStepEnabled("secondChance", env);
 export const readAloudEnabled = (env) => gamStepEnabled("readAloud", env);
-export const skillsPlayEnabled = (env) => gamStepEnabled("skillsPlay", env);
+
+/**
+ * Play by skill: Grade → Topic → Skill sessions with durable mastery instead
+ * of the level ladder.
+ *
+ * NOT a gamification step, on purpose: VITE_GAM_ALL is already "true" in
+ * production, and as a step this would have switched itself on the moment it
+ * merged — before iOS has it and before the practice_sessions skill columns
+ * (migration 20260920120000) exist. It has its own switch and ignores the
+ * master one. `?gam=skillsPlay` / localStorage still force it on for QA.
+ */
+export function skillsPlayEnabled(env = import.meta.env) {
+  if (env?.VITE_SKILLS_PLAY === "true") return true;
+  if (env?.VITE_SKILLS_PLAY === "false") return false;
+  return overrideSet().has("skillsPlay");
+}

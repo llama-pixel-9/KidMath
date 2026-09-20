@@ -10,8 +10,8 @@ import { loadAllowWordProblemsSync } from "./userPreferences.js";
 import { useTheme } from "./useTheme";
 import { generateWorksheetRun, worksheetCapacity } from "./worksheets/generateWorksheet.js";
 import { PROBLEM_TYPES } from "./worksheets/layouts.js";
-import { documentTitle, headerLine, skillById, skillForModeLevel } from "./worksheets/skillIndex.js";
-import { GRADES, GRADE_LABELS, TOPIC_LABELS, WORKSHEET_SKILLS } from "./worksheets/skills.js";
+import { documentTitle, headerLine, skillById, skillForModeLevel } from "./skills/index.js";
+import { GRADES, GRADE_LABELS, TOPIC_LABELS, WORKSHEET_SKILLS } from "./skills/catalog.js";
 import WorksheetSheet from "./worksheets/WorksheetSheet.jsx";
 
 const SHEET_COUNTS = [1, 2, 3, 5];

@@ -26,7 +26,7 @@ import {
   STORIES_PER_SHEET,
   isFigureLayout,
 } from "./layouts.js";
-import { skillById } from "./skillIndex.js";
+import { skillById } from "../skills/index.js";
 
 const overlaps = (range, levels) => Array.isArray(range) && range[0] <= levels[1] && range[1] >= levels[0];
 

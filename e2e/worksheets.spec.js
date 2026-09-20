@@ -13,7 +13,7 @@
  * the dev server reads the full bank from disk, so bank skills are testable.
  */
 import { expect, test } from "@playwright/test";
-import { GRADE_LABELS, TOPIC_LABELS, WORKSHEET_SKILLS } from "../src/worksheets/skills.js";
+import { GRADE_LABELS, TOPIC_LABELS, WORKSHEET_SKILLS } from "../src/skills/catalog.js";
 
 const TYPE_BUTTON = { practice: "Practice problems only", stories: "Word problems only", mixed: "Mixed" };
 

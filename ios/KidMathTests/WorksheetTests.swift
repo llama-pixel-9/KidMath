@@ -180,6 +180,9 @@ final class WorksheetTests: XCTestCase {
         let charted = document.page(at: 0)?.string ?? ""
         // A labelled value axis — and never the bar's value handed over on top of it.
         XCTAssertTrue(charted.contains("14") && charted.contains("cherries"), "axis + category labels")
+        // The bars are 7, 14, 11 and 5. 14 is an axis label; 7, 11 and 5 sit between
+        // labels on a scale of 2, so none of them may appear as text on the chart.
+        XCTAssertFalse(charted.contains("11"), "a bar value printed on the chart hands the answer over")
         XCTAssertTrue(charted.contains("Circle one:"), "option banks are circled, not copied into a box")
         XCTAssertTrue(charted.contains("Key:"))
         let smalls = document.page(at: 1)?.string ?? ""

@@ -313,9 +313,29 @@ struct AngleFigureWidget: View {
 /// The scaled bar chart shared by DataGraphWidget and the question card
 /// (mirrors the web's BarChart.jsx). Question-card use: modes like
 /// mostLeastIdentify ask about a chart but answer through choice buttons.
+/// The bar chart shared by the DataGraph answer widget, the question card and
+/// the printed worksheet — mirror of BarChart.jsx. A chart a textbook would
+/// recognise: a labelled value axis with major ticks and minor gridlines (same
+/// scale rule as chartScale.js), a baseline, and a category axis.
+///
+/// The values are deliberately NOT printed on the bars — reading a bar against
+/// the scale is the skill, and a printed value hands the answer over (the
+/// `axisMisread` misconception only means something once there is an axis to
+/// misread). `showValues` reveals them only after the answer is judged. The
+/// web made this change on 2026-08-01 (1c87f7c); this view kept the old
+/// value-on-every-bar chart until now.
+///
+/// `paper` is the printed design: solid black bars, black labels, darker
+/// gridlines — the brand ramp prints as four shades of nearly-white.
 struct BarChartView: View {
     @Environment(\.theme) private var theme
     let display: [String: Any]
+    var showValues = false
+    var paper = false
+    var width: CGFloat = 340
+
+    private let viewW: CGFloat = 340, viewH: CGFloat = 240
+    private let padLeft: CGFloat = 40, padRight: CGFloat = 10, padTop: CGFloat = 22, padBottom: CGFloat = 46
 
     private var bars: [(label: String, value: Double)] {
         (display["bars"] as? [[String: Any]] ?? []).map { bar in
@@ -324,27 +344,68 @@ struct BarChartView: View {
     }
 
     var body: some View {
-        HStack(alignment: .bottom, spacing: 12) {
-            let maxValue = max(1, bars.map(\.value).max() ?? 1)
-            // Fixed brand ramp in reading order (§09) — no bar singled out.
-            let ramp = [Theme.seafoam, Theme.tealMid, Theme.apricot, Theme.sunLight]
-            ForEach(Array(bars.enumerated()), id: \.offset) { index, bar in
-                VStack(spacing: 4) {
-                    Text(AnswerFormatting.text(bar.value as NSNumber))
-                        .font(.caption.weight(.bold))
-                        .foregroundStyle(theme.textSecondary)
-                    RoundedRectangle(cornerRadius: 5)
-                        .fill(ramp[index % ramp.count])
-                        .frame(width: 40, height: bar.value / maxValue * 110 + 6)
-                    Text(bar.label)
-                        .font(.system(size: 10, weight: .bold))
-                        .foregroundStyle(theme.textSecondary)
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.6)
+        let k = width / viewW
+        let muted = paper ? Color.black : theme.textMuted
+        let secondary = paper ? Color.black : theme.textSecondary
+        // Fixed brand ramp in reading order (§09) — no bar singled out.
+        let ramp = [Theme.seafoam, Theme.tealMid, Theme.apricot, Theme.sunLight]
+        Canvas { ctx, _ in
+            ctx.scaleBy(x: k, y: k)
+            let plotW = viewW - padLeft - padRight, plotH = viewH - padTop - padBottom
+            let top = max(1, bars.map(\.value).max() ?? 1)
+            let step: Double = top <= 10 ? 1 : top <= 20 ? 2 : top <= 50 ? 5 : 10
+            let axisMax = (top / step).rounded(.up) * step
+            func y(_ v: Double) -> CGFloat { padTop + plotH - CGFloat(v / axisMax) * plotH }
+            func rule(_ v: Double, _ lineWidth: CGFloat, _ opacity: Double) {
+                var p = Path()
+                p.move(to: CGPoint(x: padLeft, y: y(v)))
+                p.addLine(to: CGPoint(x: padLeft + plotW, y: y(v)))
+                ctx.stroke(p, with: .color(muted.opacity(opacity)), lineWidth: lineWidth)
+            }
+            // Minor lines only where they add resolution and not so many that
+            // the plot turns into graph paper.
+            if step > 1, axisMax <= 24 {
+                for v in stride(from: 0, through: axisMax, by: 1) where v.truncatingRemainder(dividingBy: step) != 0 {
+                    rule(v, paper ? 0.6 : 1, paper ? 0.3 : 0.25)
+                }
+            }
+            for v in stride(from: 0, through: axisMax, by: step) {
+                rule(v, 1, paper ? 0.6 : 0.45)
+                var tick = Path()
+                tick.move(to: CGPoint(x: padLeft - 4, y: y(v)))
+                tick.addLine(to: CGPoint(x: padLeft, y: y(v)))
+                ctx.stroke(tick, with: .color(muted), lineWidth: 1.5)
+                ctx.draw(Text(verbatim: "\(Int(v))").font(.system(size: 11, weight: .bold)).foregroundColor(muted),
+                         at: CGPoint(x: padLeft - 8, y: y(v)), anchor: .trailing)
+            }
+            var axes = Path()
+            axes.move(to: CGPoint(x: padLeft, y: padTop))
+            axes.addLine(to: CGPoint(x: padLeft, y: padTop + plotH))
+            axes.addLine(to: CGPoint(x: padLeft + plotW, y: padTop + plotH))
+            ctx.stroke(axes, with: .color(muted), lineWidth: 2)
+            // The value-axis title, reading upward like the web's.
+            var titled = ctx
+            titled.translateBy(x: 11, y: padTop + plotH / 2)
+            titled.rotate(by: .degrees(-90))
+            titled.draw(Text("Number").font(.system(size: 11, weight: .bold)).foregroundColor(muted), at: .zero, anchor: .center)
+
+            let band = plotW / CGFloat(max(1, bars.count))
+            let barW = min(band * 0.58, 46)
+            for (i, bar) in bars.enumerated() {
+                let cx = padLeft + band * CGFloat(i) + band / 2
+                let rect = CGRect(x: cx - barW / 2, y: y(bar.value), width: barW, height: padTop + plotH - y(bar.value))
+                ctx.fill(Path(roundedRect: rect, cornerRadius: paper ? 0 : 4), with: .color(paper ? .black : ramp[i % ramp.count]))
+                ctx.draw(Text(bar.label).font(.system(size: 12, weight: .bold)).foregroundColor(secondary),
+                         at: CGPoint(x: cx, y: padTop + plotH + 14), anchor: .center)
+                // Only ever after the answer is settled, as feedback.
+                if showValues {
+                    ctx.draw(Text(verbatim: AnswerFormatting.text(bar.value as NSNumber)).font(.system(size: 12, weight: .bold)).foregroundColor(secondary),
+                             at: CGPoint(x: cx, y: y(bar.value) - 8), anchor: .center)
                 }
             }
         }
-        .frame(height: 170, alignment: .bottom)
+        .frame(width: width, height: viewH * k)
+        .accessibilityLabel("Bar graph. " + bars.map { "\($0.label) \(AnswerFormatting.text($0.value as NSNumber))" }.joined(separator: ", "))
     }
 }
 
@@ -358,7 +419,7 @@ struct DataGraphWidget: View {
 
     var body: some View {
         VStack(spacing: 12) {
-            BarChartView(display: display)
+            BarChartView(display: display, showValues: disabled, width: 300)
 
             EntryReadout(entry: entry)
             DigitPadView(entry: $entry) {

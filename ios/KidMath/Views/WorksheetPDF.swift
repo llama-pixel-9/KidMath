@@ -504,7 +504,7 @@ private struct PrintFigure: View {
     private var figure: some View {
         switch display["figure"] as? String {
         case "barGraph":
-            PaperBarChart(display: display)
+            BarChartView(display: display, paper: true, width: px(240))
         case "pictograph":
             // The chart views reserve their on-screen height; on paper the
             // width is known, so give them exactly the height they draw.
@@ -528,73 +528,13 @@ private struct PrintFigure: View {
                let spec = engine.areaFigureSpec(question: question) {
                 AreaFigureView(spec: spec)
             } else if display["bars"] != nil {
-                PaperBarChart(display: display)
+                BarChartView(display: display, paper: true, width: px(240))
             }
         }
     }
 }
 
 // MARK: - Print designs
-
-/// The PRINTED bar graph — mirror of BarChart.jsx `paper`: a labelled value
-/// axis with gridlines (same scale rule as chartScale.js), solid black bars,
-/// and NO values on the bars: reading a bar against the scale is the skill,
-/// and a printed value hands the answer over.
-private struct PaperBarChart: View {
-    let display: [String: Any]
-
-    private let viewW: CGFloat = 340, viewH: CGFloat = 240
-    private let padLeft: CGFloat = 40, padRight: CGFloat = 10, padTop: CGFloat = 22, padBottom: CGFloat = 46
-
-    private var bars: [(label: String, value: Double)] {
-        (display["bars"] as? [[String: Any]] ?? []).map { ($0["label"] as? String ?? "?", ($0["value"] as? NSNumber)?.doubleValue ?? 0) }
-    }
-
-    var body: some View {
-        let k = px(240) / viewW
-        Canvas { ctx, _ in
-            ctx.scaleBy(x: k, y: k)
-            let plotW = viewW - padLeft - padRight, plotH = viewH - padTop - padBottom
-            let top = max(1, bars.map(\.value).max() ?? 1)
-            let step: Double = top <= 10 ? 1 : top <= 20 ? 2 : top <= 50 ? 5 : 10
-            let axisMax = (top / step).rounded(.up) * step
-            func y(_ v: Double) -> CGFloat { padTop + plotH - CGFloat(v / axisMax) * plotH }
-            func rule(_ v: Double, _ width: CGFloat, _ opacity: Double) {
-                var p = Path()
-                p.move(to: CGPoint(x: padLeft, y: y(v)))
-                p.addLine(to: CGPoint(x: padLeft + plotW, y: y(v)))
-                ctx.stroke(p, with: .color(.black.opacity(opacity)), lineWidth: width)
-            }
-            if step > 1, axisMax <= 24 {
-                for v in stride(from: 0, through: axisMax, by: 1) where v.truncatingRemainder(dividingBy: step) != 0 { rule(v, 0.6, 0.3) }
-            }
-            for v in stride(from: 0, through: axisMax, by: step) {
-                rule(v, 1, 0.6)
-                var tick = Path()
-                tick.move(to: CGPoint(x: padLeft - 4, y: y(v)))
-                tick.addLine(to: CGPoint(x: padLeft, y: y(v)))
-                ctx.stroke(tick, with: .color(.black), lineWidth: 1.5)
-                ctx.draw(Text("\(Int(v))").font(.system(size: 11, weight: .bold)).foregroundColor(.black),
-                         at: CGPoint(x: padLeft - 8, y: y(v)), anchor: .trailing)
-            }
-            var axes = Path()
-            axes.move(to: CGPoint(x: padLeft, y: padTop))
-            axes.addLine(to: CGPoint(x: padLeft, y: padTop + plotH))
-            axes.addLine(to: CGPoint(x: padLeft + plotW, y: padTop + plotH))
-            ctx.stroke(axes, with: .color(.black), lineWidth: 2)
-
-            let band = plotW / CGFloat(max(1, bars.count))
-            let barW = min(band * 0.58, 46)
-            for (i, bar) in bars.enumerated() {
-                let cx = padLeft + band * CGFloat(i) + band / 2
-                ctx.fill(Path(CGRect(x: cx - barW / 2, y: y(bar.value), width: barW, height: padTop + plotH - y(bar.value))), with: .color(.black))
-                ctx.draw(Text(bar.label).font(.system(size: 12, weight: .bold)).foregroundColor(.black),
-                         at: CGPoint(x: cx, y: padTop + plotH + 14), anchor: .center)
-            }
-        }
-        .frame(width: px(240), height: viewH * k)
-    }
-}
 
 /// The PRINTED disc mat — mirror of DiscMat.jsx `paper`: ruled columns with a
 /// header row, outlined discs two across (five rows hold nine, so fives are

@@ -50,7 +50,9 @@ describe("pinned skill session", () => {
       expect(q.level >= skill.source.levels[0] && q.level <= skill.source.levels[1]).toBe(true);
     }
     // The merged twin serves pictured AND un-pictured items — one skill in play.
-    expect(new Set(served.map(({ question: q }) => Boolean(q.display?.figure))).size).toBe(2);
+    // (About one row in six is pictured, so look across a long session.)
+    const long = play("time", { skillId: skill.id }, { size: 60 }).served;
+    expect(new Set(long.map(({ question: q }) => Boolean(q.display?.figure))).size).toBe(2);
     expect(session.level).toBe(skill.level);
   });
 

@@ -74,6 +74,9 @@ src/
   hints/               per-question hint pane content: concepts.js (mode × subskill, kid
                        language), steps.js (steps from the live item's numbers, no answer)
   components/          widgets (NumberLine, AnalogClock, CoinTray, FractionInput, TenFrame, …)
+  skills/              THE skill catalog (shared by play and print), play helpers, skill
+                       sessions, mastery reducer, per-topic grade state
+  play/                topic sheet + end-card standing (play by skill, flagged)
   worksheets/          printable worksheets: skill catalog (grade → skill, ~294), bank-first
                        generateWorksheet, computation sampler, claim check, sheet renderer
   premium.js           FREE_MODE_IDS + entitlement logic, mirrored by iOS rowIsActive
@@ -294,6 +297,10 @@ Product IDs: `io.larkit.app.premium.{monthly,annual}`.
 - `.claude/skills/robot-kid-e2e` — the Playwright smoke matrix (`npm run
   test:e2e`): kid oracle, widget drivers, and its traps. Load it before
   running/extending e2e or adding an answer widget.
+- `.claude/skills/play-by-skill` — play as Grade → Topic → Skill: skill sessions,
+  durable mastery, the grade pointer, the earned grade-up, the topic sheet, and the
+  `VITE_SKILLS_PLAY` flag (two migrations first). Load it before touching what a
+  session practices, mastery, or grades.
 - `.claude/skills/worksheets` — the skill catalog, the title-is-a-promise rule,
   bank-first draw, measured page budgets. Load it before touching /worksheets,
   a sheet layout, or the catalog. User-facing name is "worksheets", never

@@ -1,6 +1,8 @@
 import { supabase } from "./supabaseClient";
 import { startingLevelFor as seedLevel } from "./gradeSeed.js";
 import { maxLevelForMode } from "./modeLevels.js";
+import { skillsPlayEnabled } from "./gamificationFlags.js";
+import { mergeTopicState } from "./skills/topicState.js";
 
 /**
  * Math progress is PER KID. Locally the blob is scoped by the active kid
@@ -151,16 +153,60 @@ function loadLocal(mode, kidId) {
     lifetimeStars: entry.lifetimeStars ?? 0,
     bankItemStats: entry.bankItemStats && typeof entry.bankItemStats === "object" ? entry.bankItemStats : {},
     recentBankItemIds: Array.isArray(entry.recentBankItemIds) ? entry.recentBankItemIds : [],
+    ...skillFields(entry),
   };
 }
+
+// --- Play by skill: the per-topic grade pointer and skill mastery ---
+//
+// They live on the SAME per-kid, per-mode progress row as the level: that row
+// is already scoped by kid, covered by RLS and by the account-deletion purge,
+// and merged on sign-in — a second table of child data would have needed all
+// of that again. `skillMastery` is { [skillId]: entry } for this topic's
+// skills only (skills/mastery.js), a few KB at most.
+//
+//   grade          the grade "Larkit picks" practices in this topic
+//   gradeUnlocked  the highest grade earned, or opened by a parent
+//   pinnedSkillId  a skill a parent pinned for this kid
+//
+// All optional: null/absent means "not decided yet" and skills/topicState.js
+// resolves it (from the kid's level and practice log) without moving the level.
+function skillFields(entry) {
+  return {
+    grade: entry?.grade ?? null,
+    gradeUnlocked: entry?.gradeUnlocked ?? null,
+    pinnedSkillId: entry?.pinnedSkillId ?? null,
+    skillMastery: entry?.skillMastery && typeof entry.skillMastery === "object" ? entry.skillMastery : null,
+  };
+}
+
+/** Skill fields present in a save payload — absent keys leave the stored value alone. */
+function skillPatch(data) {
+  const out = {};
+  for (const key of ["grade", "gradeUnlocked", "pinnedSkillId", "skillMastery"]) {
+    if (data && key in data && data[key] !== undefined) out[key] = data[key];
+  }
+  return out;
+}
+
+const SKILL_COLUMNS = { grade: "grade", gradeUnlocked: "grade_unlocked", pinnedSkillId: "pinned_skill_id", skillMastery: "skill_mastery" };
+const skillColumns = (patch) => Object.fromEntries(Object.entries(patch).map(([key, value]) => [SKILL_COLUMNS[key], value]));
+// The columns arrive with migration 20260920130000; naming them before it is
+// applied fails the whole query, so they ride only when play-by-skill is on.
+const skillSelect = () => (skillsPlayEnabled() ? ", grade, grade_unlocked, pinned_skill_id, skill_mastery" : "");
+const skillFieldsFromRow = (row) =>
+  skillFields({ grade: row?.grade, gradeUnlocked: row?.grade_unlocked, pinnedSkillId: row?.pinned_skill_id, skillMastery: row?.skill_mastery });
 
 // `starsEarned` is the flight payout (§01 economy). Callers not yet on the
 // Flight Report (and iOS until its port) omit it and keep the historical
 // one-star-per-first-try formula.
-function saveLocal(mode, { level, mistakeBank, firstTryCorrect, starsEarned, bankItemStats, recentBankItemIds }, kidId) {
+function saveLocal(mode, data, kidId) {
+  const { level, mistakeBank, firstTryCorrect, starsEarned, bankItemStats, recentBankItemIds } = data;
   const store = readLocalStore(kidId);
   const prev = store[mode] || { totalSessions: 0, lifetimeStars: 0, bankItemStats: {} };
   store[mode] = {
+    ...skillFields(prev),
+    ...skillPatch(data),
     level: clampLevel(level, mode),
     mistakeBank: (mistakeBank || []).slice(0, 20),
     totalSessions: (prev.totalSessions ?? 0) + 1,
@@ -231,7 +277,7 @@ async function fetchProgressRow(userId, kidId, mode) {
   const { data, error } = await forKid(
     supabase
       .from("progress")
-      .select("level, mistake_bank, total_sessions, lifetime_stars, recent_bank_item_ids")
+      .select(`level, mistake_bank, total_sessions, lifetime_stars, recent_bank_item_ids${skillSelect()}`)
       .eq("user_id", userId)
       .eq("mode", mode),
     kidId
@@ -266,9 +312,11 @@ async function loadCloud(userId, kidId, mode) {
       lifetimeStars: 0,
       bankItemStats: bankItemStats || {},
       recentBankItemIds: [],
+      ...skillFields(null),
     };
   }
   return {
+    ...skillFieldsFromRow(data),
     level: clampLevel(data.level ?? STARTING_LEVEL, mode),
     mistakeBank: Array.isArray(data.mistake_bank) ? data.mistake_bank : [],
     totalSessions: data.total_sessions ?? 0,
@@ -278,7 +326,8 @@ async function loadCloud(userId, kidId, mode) {
   };
 }
 
-async function saveCloud(userId, kidId, mode, { level, mistakeBank, firstTryCorrect, starsEarned, bankItemStats, recentBankItemIds }) {
+async function saveCloud(userId, kidId, mode, data) {
+  const { level, mistakeBank, firstTryCorrect, starsEarned, bankItemStats, recentBankItemIds } = data;
   const existing = await loadCloud(userId, kidId, mode);
   const newTotalSessions = existing.totalSessions + 1;
   const newLifetimeStars = existing.lifetimeStars + (starsEarned ?? firstTryCorrect ?? 0);
@@ -295,6 +344,7 @@ async function saveCloud(userId, kidId, mode, { level, mistakeBank, firstTryCorr
         lifetime_stars: newLifetimeStars,
         // Persisted since PR B so the no-repeat window survives a device switch.
         recent_bank_item_ids: (recentBankItemIds || []).slice(-MAX_PERSISTED_RECENT_IDS),
+        ...(skillsPlayEnabled() ? skillColumns(skillPatch(data)) : {}),
         updated_at: new Date().toISOString(),
       },
       { onConflict: "user_id,kid_id,mode" }
@@ -325,6 +375,8 @@ export async function mergeLocalToCloud(userId, kidId = activeKidIdSync()) {
       mistake_bank: cloud.mistakeBank.length > 0 ? cloud.mistakeBank : (local.mistakeBank || []).slice(0, 20),
       total_sessions: cloud.totalSessions + (local.totalSessions ?? 0),
       lifetime_stars: cloud.lifetimeStars + (local.lifetimeStars ?? 0),
+      // Nothing a kid earned on this device is lost on sign-in.
+      ...(skillsPlayEnabled() ? skillColumns(mergeTopicState(cloud, skillFields(local))) : {}),
       updated_at: new Date().toISOString(),
     };
 
@@ -358,6 +410,38 @@ export async function saveProgress(mode, data, { kidId = activeKidIdSync() } = {
   }
 }
 
+/**
+ * Change a topic's skill state WITHOUT counting a session: a parent unlocking
+ * a grade or pinning a skill, the lazy grade migration, a grade-up. Never
+ * touches level, stars or the session count.
+ */
+export async function saveTopicState(mode, patch, { kidId = activeKidIdSync() } = {}) {
+  const fields = skillPatch(patch);
+  if (!Object.keys(fields).length) return;
+  const user = await getUser();
+  if (user && skillsPlayEnabled()) {
+    const existing = await fetchProgressRow(user.id, kidId, mode);
+    await supabase.from("progress").upsert(
+      {
+        user_id: user.id,
+        kid_id: kidId || null,
+        mode,
+        // A row must exist to carry the fields; a never-played topic gets one
+        // at the level it would have opened at — which is not a change.
+        level: existing?.level ?? startingLevelFor(mode, kidId),
+        ...skillColumns(fields),
+        updated_at: new Date().toISOString(),
+      },
+      { onConflict: "user_id,kid_id,mode" }
+    );
+    return;
+  }
+  const store = readLocalStore(kidId);
+  const prev = store[mode] || { level: startingLevelFor(mode, kidId), mistakeBank: [], totalSessions: 0, lifetimeStars: 0, bankItemStats: {}, recentBankItemIds: [] };
+  store[mode] = { ...prev, ...fields };
+  writeLocalStore(store, kidId);
+}
+
 // Synchronous fallback for initial render before auth resolves (also the
 // engine's injected progressLoader — keep it sync and cheap).
 export function loadProgressSync(mode, kidId = activeKidIdSync()) {
@@ -376,7 +460,7 @@ export async function loadProgressSummary({ kidId = activeKidIdSync() } = {}) {
     let { data, error } = await forKid(
       supabase
         .from("progress")
-        .select("mode, level, mistake_bank, total_sessions, lifetime_stars")
+        .select(`mode, level, mistake_bank, total_sessions, lifetime_stars${skillSelect()}`)
         .eq("user_id", user.id),
       kidId
     );
@@ -385,7 +469,7 @@ export async function loadProgressSummary({ kidId = activeKidIdSync() } = {}) {
     if (!error && kidId && Array.isArray(data) && data.length === 0) {
       ({ data, error } = await supabase
         .from("progress")
-        .select("mode, level, mistake_bank, total_sessions, lifetime_stars")
+        .select(`mode, level, mistake_bank, total_sessions, lifetime_stars${skillSelect()}`)
         .eq("user_id", user.id)
         .is("kid_id", null));
     }
@@ -400,6 +484,7 @@ export async function loadProgressSummary({ kidId = activeKidIdSync() } = {}) {
               mistakeBank: Array.isArray(row.mistake_bank) ? row.mistake_bank : [],
               totalSessions: row.total_sessions ?? 0,
               lifetimeStars: row.lifetime_stars ?? 0,
+              ...skillFieldsFromRow(row),
             },
           ])
         ),

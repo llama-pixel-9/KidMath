@@ -1,3 +1,4 @@
+import SkillStanding from "../play/SkillStanding.jsx";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
@@ -82,6 +83,8 @@ function NominationNote({ nextLevel }) {
 }
 
 export default function FlightReport({
+  // A skill session's standing (SkillStanding) — replaces the level bar.
+  skillStanding = null,
   maxLevel = 10,
   payout,
   total,
@@ -187,6 +190,8 @@ export default function FlightReport({
         <div className="mt-3 text-left">
           {nomination ? (
             <NominationNote nextLevel={level + 1} />
+          ) : skillStanding ? (
+            <SkillStanding standing={skillStanding} balance={engagement?.balance ?? 0} />
           ) : (
             <LevelBar level={engagement?.levelAfter ?? level} maxLevel={maxLevel} balance={engagement?.balance ?? 0} />
           )}

@@ -45,7 +45,7 @@ import {
 } from "./mathEngine";
 import { getBankItems } from "./itemBank/index.js";
 import { fetchBankItemById } from "./itemBank/cloudLoader.js";
-import { flightReportEnabled, fledgingEnabled, meadowEnabled, ladderV2Enabled, secondChanceEnabled, readAloudEnabled } from "./gamificationFlags.js";
+import { flightReportEnabled, fledgingEnabled, meadowEnabled, ladderV2Enabled, secondChanceEnabled, readAloudEnabled, skillsPlayEnabled } from "./gamificationFlags.js";
 import { scaffoldFor } from "./scaffold.js";
 import { speak, stopSpeaking } from "./speech.js";
 import { gradeIndex } from "./gradeSeed.js";
@@ -60,8 +60,12 @@ import {
 } from "./engagement/fledging.js";
 import { getModeConfig } from "./modes";
 import { ensureModeLoaded } from "./itemBank.js";
+import { loadTopic } from "./itemBank/loadTopic.js";
+import { loadSessionsSync } from "./analytics/sessionLog.js";
+import { deriveMastery } from "./skills/mastery.js";
+import { clampGrade, playSkillById, skillsForPlay, topicGrades } from "./skills/play.js";
 import { FIGURE_COLORS, useAnswerKeys, KeyHint } from "./components/kit";
-import { saveProgress, loadProgress, mergeLocalToCloud } from "./progressStore";
+import { saveProgress, loadProgress, loadProgressSync, mergeLocalToCloud } from "./progressStore";
 import { recordSessionEnd, currentStreak, starsToday, starBalance, isFirstWeek } from "./engagement/engagementStore";
 import GoogleSignInButton from "./auth/GoogleSignInButton.jsx";
 import JourneyMap from "./engagement/JourneyMap.jsx";
@@ -250,6 +254,26 @@ function getQaVariety() {
   }
 }
 const QA_VARIETY = typeof window === "undefined" ? null : getQaVariety();
+
+// Play by skill (flagged): `/play/<mode>?skill=<id>` pins one catalog skill;
+// `?mix=1[&grade=3]` is "Larkit picks" across a grade's skills for the topic,
+// weakest first. The topic sheet links here; it is also the e2e/deep-link hook.
+function skillOptionsFor(mode) {
+  if (typeof window === "undefined" || !skillsPlayEnabled()) return null;
+  let params;
+  try {
+    params = new URLSearchParams(window.location.search || "");
+  } catch {
+    return null;
+  }
+  const masterySnapshot = () => deriveMastery(loadSessionsSync());
+  const pinned = playSkillById(params.get("skill"));
+  if (pinned && pinned.mode === mode) return { skillId: pinned.id, grade: pinned.grade, masterySnapshot: masterySnapshot() };
+  if (params.get("mix") !== "1") return null;
+  const grade = topicGrades(mode).includes(params.get("grade")) ? params.get("grade") : clampGrade(mode, activeKidGrade());
+  const skills = grade ? skillsForPlay(grade, mode) : [];
+  return skills.length ? { skillIds: skills.map((s) => s.id), grade, masterySnapshot: masterySnapshot() } : null;
+}
 
 // `/play/<mode>?item=<itemId>` pins one bank row: every question in the
 // session is that item, rendered through the normal stage. Reviewers use it
@@ -753,12 +777,15 @@ export default function MathExplorer({ initialMode }) {
   const [forcedInputType] = useState(() => getForcedInputType());
   const [qaFeedbackMs] = useState(() => getQaFeedbackMs());
   const [mode, setMode] = useState(startMode);
+  // The skills this play session is for (null = the level ladder, as ever).
+  const [skillOptions] = useState(() => skillOptionsFor(startMode));
   const [session, setSession] = useState(() =>
     createAdaptiveSession(startMode, undefined, {
       allowWordProblems: loadAllowWordProblemsSync(),
       fledging: fledgingEnabled(),
       ladderV2: ladderV2Enabled(),
       qaVariety: QA_VARIETY,
+      ...(skillOptions || {}),
     })
   );
   const [currentQ, setCurrentQ] = useState(null);
@@ -858,7 +885,10 @@ export default function MathExplorer({ initialMode }) {
       sessionRecordRef.current = openSessionRecord({
         mode: sess.mode,
         level: sess.level,
-        kind: sess.challengeSubskills ? "fledging" : "normal",
+        kind: sess.challengeSubskills || sess.challenge ? "fledging" : "normal",
+        ...(sess.skillIds
+          ? { sessionKind: sess.pinned ? "skill" : "mix", skillId: sess.pinned ? sess.skillIds[0] : null, grade: sess.grade }
+          : {}),
       });
     }
     qaUpdate({
@@ -893,6 +923,8 @@ export default function MathExplorer({ initialMode }) {
       fledging: gamFledging,
       ladderV2: ladderV2Enabled(),
       qaVariety: QA_VARIETY,
+      // "Play again" replays the same skills; a different topic is the ladder.
+      ...(targetMode === startMode && skillOptions ? { ...skillOptions, masterySnapshot: deriveMastery(loadSessionsSync()) } : {}),
     });
     setSession(newSession);
     setFeedback(null);
@@ -903,11 +935,23 @@ export default function MathExplorer({ initialMode }) {
     // §03 step 4: a pending nomination is offered at take-off — except right
     // after a Fledging Flight, when the normal session simply begins.
     if (offer && gamFledging && nominationFor(targetMode)) setFledgingOffer(true);
-  }, [mode, allowWordProblems, gamFledging, loadNextQuestion, clearQueuedTimeouts]);
+  }, [mode, allowWordProblems, gamFledging, loadNextQuestion, clearQueuedTimeouts, skillOptions, startMode]);
 
   useEffect(() => {
+    // A skill session draws from the skill's own bank cell, so its first
+    // question waits for the topic's rows; the ladder starts on the seed.
+    if (session.skillIds) {
+      let cancelled = false;
+      loadTopic(mode).then(() => {
+        if (!cancelled) loadNextQuestion(session);
+      });
+      return () => {
+        cancelled = true;
+      };
+    }
     loadNextQuestion(session);
     if (gamFledging && nominationFor(mode)) setFledgingOffer(true);
+    return undefined;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -968,8 +1012,10 @@ export default function MathExplorer({ initialMode }) {
         allowWordProblems: cloudAllowWordProblems,
         fledging: gamFledging,
         qaVariety: QA_VARIETY,
+        ...(mode === startMode && skillOptions ? skillOptions : {}),
       });
-      newSession.level = saved.level;
+      // A skill session plays at its skill's level, not the saved ladder level.
+      if (!newSession.skillIds) newSession.level = saved.level;
       newSession.mistakeBank = saved.mistakeBank;
       setSession(newSession);
       sessionRecordRef.current = null;
@@ -1072,7 +1118,8 @@ export default function MathExplorer({ initialMode }) {
     // §03 bookkeeping at flight end: nominations set on the engine's signal,
     // rough flights (< 40% precision) clear them silently, and two consecutive
     // rough flights glide the level down one — persisted with the session.
-    const fledgeOutcome = gamFledging
+    // Skill sessions have no ladder to nominate on or glide down.
+    const fledgeOutcome = gamFledging && !sess.skillIds
       ? recordFlightEnd(mode, {
           precisionRatio:
             sess.questionsAnswered > 0 ? (sess.firstTryCorrect ?? 0) / sess.questionsAnswered : 0,
@@ -1080,7 +1127,10 @@ export default function MathExplorer({ initialMode }) {
           weakSubskills: sess.nominationWeakSubskills || [],
         })
       : null;
-    const levelAfter = fledgeOutcome?.glideDown ? Math.max(1, sess.level - 1) : sess.level;
+    // A skill session's `level` is only its skill's band. The kid's saved
+    // ladder level must never be moved by practicing a skill above or below it.
+    const savedLevel = sess.skillIds ? loadProgressSync(mode)?.level ?? sess.level : null;
+    const levelAfter = savedLevel ?? (fledgeOutcome?.glideDown ? Math.max(1, sess.level - 1) : sess.level);
     // Save the practice log FIRST and independently of the progress save: its
     // local mirror is written synchronously, so a tab closed during the cloud
     // round-trip (or a rejected progress row) cannot erase the session from the
@@ -1095,7 +1145,7 @@ export default function MathExplorer({ initialMode }) {
         mode,
         sess,
         payout ? payout.total : undefined,
-        fledgeOutcome?.glideDown ? levelAfter : undefined
+        fledgeOutcome?.glideDown || savedLevel != null ? levelAfter : undefined
       );
     } catch (err) {
       console.warn("progress save failed", err);

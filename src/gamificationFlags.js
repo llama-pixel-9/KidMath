@@ -26,6 +26,10 @@ const STEP_ENV_KEYS = {
   secondChance: "VITE_GAM_SECOND_CHANCE",
   // Read-aloud (PR D): speaker button on the question card; auto-read for K–1.
   readAloud: "VITE_GAM_READ_ALOUD",
+  // Play by skill: Grade → Topic → Skill sessions with durable mastery instead
+  // of the level ladder. Off until iOS catches up. The practice_sessions
+  // skill columns (migration 20260920120000) MUST be applied before it goes on.
+  skillsPlay: "VITE_SKILLS_PLAY",
 };
 
 function overrideSet() {
@@ -64,3 +68,4 @@ export const meadowMotionEnabled = (env) => gamStepEnabled("meadowMotion", env);
 export const ladderV2Enabled = (env) => gamStepEnabled("ladderV2", env);
 export const secondChanceEnabled = (env) => gamStepEnabled("secondChance", env);
 export const readAloudEnabled = (env) => gamStepEnabled("readAloud", env);
+export const skillsPlayEnabled = (env) => gamStepEnabled("skillsPlay", env);

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useSearchParams } from "react-router-dom";
 import { Printer } from "lucide-react";
 import { MODE_IDS } from "./modes";
-import { addBankItems, ensureModeLoaded } from "./itemBank.js";
+import { loadTopic } from "./itemBank/loadTopic.js";
 import { activeKidGrade } from "./kidProfiles.js";
 import { gradeIndex } from "./gradeSeed.js";
 import { loadAllowWordProblemsSync } from "./userPreferences.js";
@@ -55,20 +55,6 @@ function initialProblemType() {
   const last = stored(PROBLEM_TYPE_KEY);
   if (PROBLEM_TYPES.includes(last)) return last;
   return loadAllowWordProblemsSync() ? "mixed" : "practice";
-}
-
-// Worded problems come from the bank, so the topic's items must be in memory
-// before a sheet is drawn. Without Supabase (local dev, e2e) the fetch fails;
-// DEV then reads the full corpus from disk. The branch is compiled out of the
-// production bundle, which must never carry the corpus.
-async function loadTopic(mode) {
-  const result = await ensureModeLoaded(mode);
-  if (result.status === "failed" && import.meta.env.DEV) {
-    const { FULL_ITEMS } = await import("./itemBank/fullBank.js");
-    addBankItems(FULL_ITEMS.filter((item) => item.modeId === mode), "dev-disk");
-    return { ...result, status: "loaded" };
-  }
-  return result;
 }
 
 // Deep links: /worksheets?skill=<id>&type=mixed&sheets=2&key=0&go=1 — what the

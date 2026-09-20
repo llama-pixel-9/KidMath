@@ -36,12 +36,17 @@ export function questionText(q) {
 
 // --- record lifecycle ---
 
-export function openSessionRecord({ mode, level, kind = "normal", now = Date.now(), kidId = null, id = newId() }) {
+/**
+ * `skillId` / `grade` / `sessionKind` describe a SKILL session (skills/session.js):
+ * a pinned skill, or "mix" across a grade's skills. Absent on ladder sessions.
+ */
+export function openSessionRecord({ mode, level, kind = "normal", now = Date.now(), kidId = null, id = newId(), skillId = null, grade = null, sessionKind = null }) {
   return {
     id,
     kidId,
     mode,
     kind,
+    ...(sessionKind ? { sessionKind, skillId, grade } : {}),
     levelStart: level,
     levelEnd: level,
     startedAt: now,
@@ -70,6 +75,8 @@ export function appendAttempt(record, { question, submitted, correct, wasRetry, 
     subskill: question?.metadata?.subskill || "unknown",
     family: question?.metadata?.itemFamily || "unknown",
     itemId: question?.metadata?.itemId || null,
+    // The skill this question was served for — what mastery is credited to.
+    ...(question?.skillId ? { skillId: question.skillId } : {}),
     // The kid opened the hint pane before answering (feature: hints).
     hint: Boolean(hintUsed),
   };
@@ -112,6 +119,9 @@ export function toRow(record, userId) {
     retries_mastered: record.retriesMastered,
     stars_earned: record.starsEarned,
     attempts: record.attempts,
+    // Only on skill sessions, so ladder sessions write exactly the row they
+    // always did (the columns arrive with 20260920120000_practice_sessions_skill).
+    ...(record.sessionKind ? { skill_id: record.skillId || null, grade: record.grade || null } : {}),
   };
 }
 
@@ -121,6 +131,7 @@ export function fromRow(row) {
     kidId: row.kid_id,
     mode: row.mode,
     kind: row.kind,
+    ...(row.skill_id || row.grade ? { sessionKind: row.skill_id ? "skill" : "mix", skillId: row.skill_id || null, grade: row.grade || null } : {}),
     levelStart: row.level_start,
     levelEnd: row.level_end,
     startedAt: Date.parse(row.started_at),

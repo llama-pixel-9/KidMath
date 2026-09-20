@@ -3,7 +3,7 @@ import SwiftUI
 /// Worksheets — port of PrintableWorksheet.jsx over the shared skill catalog
 /// (src/worksheets/). A parent picks a grade, then one of that grade's topics
 /// (plain names: Multiplication, Fractions, Decimals…), then one of the
-/// topic's skills (with its standard code), then the
+/// topic's skills (plain titles — no standard codes), then the
 /// problem type, sheet count and answer key, and shares the PDF (AirPrint,
 /// Files, Mail come free with the share sheet — the native replacement for
 /// window.print()). There is no game picker and no "Level": the skill's
@@ -28,7 +28,6 @@ struct WorksheetView: View {
         let id: String
         let grade: String
         let mode: String
-        let code: String?
         let title: String
         let computation: Bool
         let header: String
@@ -60,6 +59,7 @@ struct WorksheetView: View {
 
     private var grades: [String] { catalog["grades"] as? [String] ?? [] }
     private var topicLabels: [String: String] { catalog["topicLabels"] as? [String: String] ?? [:] }
+    private var gradeLabels: [String: String] { catalog["gradeLabels"] as? [String: String] ?? [:] }
 
     /// The picked grade's skills, grouped by topic in home-screen order.
     private var topics: [(mode: String, skills: [Skill])] {
@@ -129,10 +129,6 @@ struct WorksheetView: View {
                                     Text(row.title).font(.subheadline.weight(.semibold))
                                         .foregroundStyle(row == skill ? Theme.teal : Theme.ink)
                                         .multilineTextAlignment(.leading)
-                                    Spacer(minLength: 8)
-                                    if let code = row.code {
-                                        Text(code).font(.caption2.weight(.bold)).monospacedDigit().foregroundStyle(theme.textMuted)
-                                    }
                                 }
                             }
                             .buttonStyle(.plain)
@@ -212,7 +208,7 @@ struct WorksheetView: View {
         skills = (raw["skills"] as? [[String: Any]] ?? []).compactMap { row in
             guard let id = row["id"] as? String, let grade = row["grade"] as? String, let mode = row["mode"] as? String,
                   let title = row["title"] as? String, playable.contains(mode) else { return nil }
-            return Skill(id: id, grade: grade, mode: mode, code: (row["ccss"] as? [String])?.first, title: title,
+            return Skill(id: id, grade: grade, mode: mode, title: title,
                          computation: (row["computation"] as? Bool) == true,
                          header: row["header"] as? String ?? title,
                          documentTitle: row["documentTitle"] as? String ?? title)
@@ -268,7 +264,7 @@ struct WorksheetView: View {
         pdfURL = nil
         do {
             let run = try engine.generateWorksheetRun(skillId: skill.id, problemType: activeType, sheets: activeCount)
-            let footer = [topicLabels[skill.mode] ?? skill.mode, skill.code].compactMap { $0 }.joined(separator: " · ")
+            let footer = "\(topicLabels[skill.mode] ?? skill.mode) · \(gradeLabels[skill.grade] ?? skill.grade)"
             sheets = run.map {
                 WorksheetPDF.Sheet(header: skill.header, footer: footer,
                                    layouts: catalog["layouts"] as? [String: Any] ?? [:],

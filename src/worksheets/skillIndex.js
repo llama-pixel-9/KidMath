@@ -32,9 +32,11 @@ export function skillForModeLevel(mode, level) {
   );
 }
 
-/** "Subtraction · Subtract 3-digit numbers with regrouping · Grade 3 · 3.NBT.A.2" */
+/** "Subtraction · Subtract 3-digit numbers with regrouping · Grade 3" — plain
+ * words only. The standard code (skill.ccss) is kept as data, never shown to a
+ * parent: "3.NBT.A.2" is jargon on a picker row and on a kid's sheet. */
 export function headerLine(skill) {
-  return [TOPIC_LABELS[skill.mode], skill.title, GRADE_LABELS[skill.grade], skill.ccss[0]].filter(Boolean).join(" · ");
+  return [TOPIC_LABELS[skill.mode], skill.title, GRADE_LABELS[skill.grade]].join(" · ");
 }
 
 /** The browser's default PDF filename comes from document.title. */

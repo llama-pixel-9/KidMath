@@ -29,10 +29,7 @@ async function pickSkill(page, { grade, mode, title }) {
   await page.goto("/worksheets");
   await page.getByRole("button", { name: GRADE_LABELS[grade], exact: true }).click();
   await page.getByRole("button", { name: TOPIC_LABELS[mode], exact: true }).click();
-  // The row's name is "<title> <code>"; titles can prefix one another
-  // ("…within 100" / "…within 1000"), so anchor both ends.
-  const escaped = title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  await page.getByRole("radio", { name: new RegExp(`^${escaped}( \\S+)?$`) }).click();
+  await page.getByRole("radio", { name: title, exact: true }).click();
   // The topic's bank loads on pick; under a full parallel run that can take a while.
   await expect(page.getByRole("button", { name: "Generate", exact: true })).toBeEnabled({ timeout: 20000 });
 }
@@ -107,6 +104,7 @@ for (const skill of skills) {
       expect(/\b(tap|drag|swipe)\b/i.test(text), "screen-interaction language on a printed sheet").toBe(false);
       expect(text, "the header names the skill, never a level").toContain(skill.title);
       expect(text).not.toMatch(/\bLevel \d|flight log/i);
+      if (skill.ccss[0]) expect(text, "no standard codes on paper").not.toContain(skill.ccss[0]);
       await expectOnePagePerSheet(page, sheets);
     });
   }

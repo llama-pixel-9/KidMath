@@ -67,7 +67,9 @@ describe("worksheet skill catalog", () => {
     expect(topicsForGrade("K", MODE_IDS)).not.toContain("division");
     expect(skillForModeLevel("subtraction", 10).mode).toBe("subtraction");
     const skill = WORKSHEET_SKILLS.find((s) => s.id === "sub-3digit-regroup");
-    expect(headerLine(skill)).toBe("Subtraction · Subtract 3-digit numbers with regrouping · Grade 3 · 3.NBT.A.2");
+    expect(headerLine(skill)).toBe("Subtraction · Subtract 3-digit numbers with regrouping · Grade 3");
+    // Standard codes are data, not copy: never on a sheet or a PDF name.
+    expect(`${headerLine(skill)} ${documentTitle(skill)}`).not.toContain(skill.ccss[0]);
     expect(documentTitle(skill)).toContain("Worksheet");
     expect(`${headerLine(skill)} ${documentTitle(skill)}`).not.toMatch(/level|flight/i);
   });

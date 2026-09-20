@@ -22,7 +22,9 @@ grid and no "Level" anywhere, on screen or on paper. One sheet = one skill
   topics, K–5. Each: `id, grade, mode, ccss[], title, layout, source,
   stories, level`. `grade` is the grade of `ccss[0]`; `ccss` may be empty
   (calendars, early coins, repeating patterns — we never invent a code).
-  CCSS is cited by code only; every title is our own wording.
+  CCSS codes are DATA ONLY — never shown on the picker, the sheet or the
+  PDF name (Sai: parents don't need "K.OA.A.5"); they fix a skill's grade and
+  are there for SEO pages. Every title is our own wording.
   `TOPIC_LABELS` are plain names ("Subtraction"), never game names.
 - **A title is a promise about every problem on the sheet.**
   `worksheetSkills.spec.js` holds each skill to it, across all three
@@ -104,8 +106,7 @@ budget or the layout; never delete the assertion.
 ## The screen (`src/PrintableWorksheet.jsx`)
 
 Grade chips (default: active kid's grade, else last used) → topic tiles
-(plain names, only the grade's topics) → that topic's skills, each row
-title + CCSS code →
+(plain names, only the grade's topics) → that topic's skills (plain titles) →
 Problems (Computation|Practice · Word problems · Mixed) → sheets → answer
 key → Generate → Print. Picking a skill calls `ensureModeLoaded`; Generate
 waits for it. `capacityFor` disables what the LOADED bank cannot fill,

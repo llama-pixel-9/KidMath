@@ -50,7 +50,7 @@ final class WorksheetTests: XCTestCase {
         XCTAssertTrue(firstPage.contains("larkit"), "header lockup")
         XCTAssertTrue(firstPage.contains("Subtract 3-digit numbers with regrouping"), "the header names the skill")
         XCTAssertTrue(firstPage.contains("Grade 3"))
-        XCTAssertTrue(firstPage.contains("3.NBT.A.2"))
+        XCTAssertFalse(firstPage.contains("3.NBT.A.2"), "standard codes are data, not copy")
         XCTAssertTrue(firstPage.contains("Sheet 1 of 2"))
         XCTAssertFalse(firstPage.contains("Level"), "no level on paper")
         XCTAssertFalse(firstPage.lowercased().contains("flight log"))

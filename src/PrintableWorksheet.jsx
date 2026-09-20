@@ -222,7 +222,7 @@ export default function PrintableWorksheet() {
   }, [sheets, skillId, activeType]);
 
   const title = skill ? headerLine(skill) : "";
-  const footer = skill ? [TOPIC_LABELS[skill.mode], skill.ccss[0]].filter(Boolean).join(" · ") : "";
+  const footer = skill ? `${TOPIC_LABELS[skill.mode]} · ${GRADE_LABELS[skill.grade]}` : "";
   const sectionLabel = `text-sm font-semibold ${theme.textSecondary} mb-2 uppercase tracking-wide`;
   const chip = (active) =>
     `rounded-2xl border-2 font-bold cursor-pointer transition-colors ${
@@ -314,9 +314,6 @@ export default function PrintableWorksheet() {
                         <span className={`flex-1 text-sm font-semibold leading-snug ${active ? theme.selectedText : theme.textPrimary}`}>
                           {s.title}
                         </span>
-                        {s.ccss[0] && (
-                          <span className={`flex-none pt-0.5 text-[11px] font-bold tabular-nums ${theme.textMuted}`}>{s.ccss[0]}</span>
-                        )}
                       </button>
                     );
                   })}

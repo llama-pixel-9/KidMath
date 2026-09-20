@@ -130,4 +130,60 @@ final class WorksheetTests: XCTestCase {
             XCTAssertFalse(header.contains("Level"), header)
         }
     }
+
+    /// Figures print in their PAPER designs (black bars on a labelled axis,
+    /// outlined discs on a ruled mat, a numbered clock…), and a sheet of them
+    /// fits its page. The bank is not bundled with the tests, so the items are
+    /// hand-built in the bank's payload shapes.
+    @MainActor
+    func testFigureSheetsPrintTheirPaperDesigns() throws {
+        let engine = try EngineBridge()
+        try engine.setBankItems([])
+        let catalog = try engine.worksheetCatalog()
+        func item(_ prompt: String, _ display: [String: Any], answer: Any, choices: [Any]? = nil) -> [String: Any] {
+            var q: [String: Any] = ["mode": "dataGraphs", "answer": answer, "display": display.merging(["promptText": prompt]) { a, _ in a }]
+            if let choices { q["choices"] = choices; q["answerType"] = "choice" }
+            return q
+        }
+        let bars: [[String: Any]] = [["label": "apples", "value": 7], ["label": "pears", "value": 14], ["label": "plums", "value": 11], ["label": "cherries", "value": 5]]
+        let charts = [
+            item("Read the fruit stand graph carefully. How many cherries does it show?", ["figure": "barGraph", "bars": bars], answer: 5),
+            item("Which statement matches the fruit stand graph?", ["figure": "barGraph", "bars": bars], answer: "pears got the most",
+                 choices: ["pears got the most", "plums got the fewest", "every bar is the same", "apples got the most"]),
+            item("In the pet fair picture chart, each picture means 2. How many kittens?",
+                 ["figure": "pictograph", "keyValue": 2, "rows": [["label": "kittens", "symbols": 2, "half": true], ["label": "puppies", "symbols": 4]]], answer: 5),
+            item("Add the fruit stand tallies for plums and cherries. How many marks in all?",
+                 ["figure": "tallyChart", "rows": [["label": "plums", "count": 8], ["label": "cherries", "count": 13]]], answer: 21),
+        ]
+        let small = [
+            item("Nia reads this clock as 3:07. Is Nia right?", ["figure": "clockFace", "clock": ["hour": 3, "minute": 7]], answer: "Yes", choices: ["Yes", "No"]),
+            item("Here is Theo's disc mat. Which number does it show?",
+                 ["figure": "discMat", "discMat": ["cols": [["place": 1000, "count": 1], ["place": 100, "count": 2], ["place": 10, "count": 6], ["place": 1, "count": 9]]]],
+                 answer: 1269, choices: [1296, 2269, 2169, 1269]),
+        ]
+        func sheet(_ layout: String, _ items: [[String: Any]]) -> WorksheetPDF.Sheet {
+            WorksheetPDF.Sheet(header: "Graphs & Data · Test figures · Grade 2", footer: "Test",
+                               layouts: catalog["layouts"] as? [String: Any] ?? [:], storyWorkSpace: 52,
+                               payload: ["layout": layout, "items": items, "wordProblems": [], "itemCount": items.count])
+        }
+        let sheets = [sheet("figure", charts), sheet("figureSmall", small + small + small)]
+        for page in sheets {
+            XCTAssertLessThanOrEqual(WorksheetPDF.naturalHeight(of: page, engine: engine), WorksheetPDF.pageSize.height, "\(page.layoutName) spills past the page")
+        }
+        let url = try XCTUnwrap(WorksheetPDF.render(sheets: sheets, engine: engine, fileName: "Larkit Worksheet - Figures"))
+        if let dir = ProcessInfo.processInfo.environment["KIDMATH_FIGURE_SNAPSHOT_DIR"] {
+            let copy = URL(fileURLWithPath: dir).appendingPathComponent("worksheet-figures.pdf")
+            try? FileManager.default.removeItem(at: copy)
+            try FileManager.default.copyItem(at: url, to: copy)
+        }
+        let document = try XCTUnwrap(PDFDocument(url: url))
+        let charted = document.page(at: 0)?.string ?? ""
+        // A labelled value axis — and never the bar's value handed over on top of it.
+        XCTAssertTrue(charted.contains("14") && charted.contains("cherries"), "axis + category labels")
+        XCTAssertTrue(charted.contains("Circle one:"), "option banks are circled, not copied into a box")
+        XCTAssertTrue(charted.contains("Key:"))
+        let smalls = document.page(at: 1)?.string ?? ""
+        XCTAssertTrue(smalls.contains("12") && smalls.contains("11"), "the printed clock is numbered")
+        XCTAssertTrue(smalls.contains("1000"), "disc mat header")
+    }
 }

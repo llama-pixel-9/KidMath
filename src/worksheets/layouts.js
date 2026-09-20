@@ -28,14 +28,16 @@ export const LAYOUTS = {
   // A chart (bar graph, pictograph, tally) is ~15 text lines tall.
   // A disc mat and a coordinate grid are just as tall.
   figure: { columns: 2, practice: 4, mixed: 2, rowGap: 14 },
-  // Small figures: a clock face, a rectangle, a cube stack.
+  // A picture graph is a few ruled rows: eight to a page.
+  figureCompact: { columns: 2, practice: 8, mixed: 6, rowGap: 22 },
+  // Small figures: a clock face, a disc mat, a rectangle, a cube stack.
   figureSmall: { columns: 2, practice: 6, mixed: 4, rowGap: 14 },
 };
 
 /** Figure layouts print ONLY items that draw a figure; every other layout
  * prints only items that do not — a budget cannot hold for a mix. */
 export function isFigureLayout(layout) {
-  return layout === "figure" || layout === "figureSmall";
+  return layout === "figure" || layout === "figureSmall" || layout === "figureCompact";
 }
 
 // Scratch room under each word problem on a mixed sheet.

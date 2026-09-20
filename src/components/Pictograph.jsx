@@ -13,27 +13,31 @@ const LABEL_W = 84;
 const SYMBOL_R = 9;
 const SYMBOL_GAP = 24;
 
-function Symbol({ cx, cy, half }) {
-  if (!half) return <circle cx={cx} cy={cy} r={SYMBOL_R} className="fill-teal" />;
+// `paper` (worksheets): black symbols inside a ruled table, the way a printed
+// picture graph looks. Teal symbols print as mid-gray blobs on a bare page.
+function Symbol({ cx, cy, half, paper = false }) {
+  const fill = paper ? "fill-black" : "fill-teal";
+  const stroke = paper ? "stroke-black" : "stroke-teal";
+  if (!half) return <circle cx={cx} cy={cy} r={SYMBOL_R} className={fill} />;
   return (
     <g>
       <circle
         cx={cx}
         cy={cy}
         r={SYMBOL_R}
-        className="fill-none stroke-teal"
+        className={`fill-none ${stroke}`}
         strokeWidth="1.5"
       />
       {/* Left half only: "half of one symbol" has to look like half of one. */}
       <path
         d={`M ${cx},${cy - SYMBOL_R} A ${SYMBOL_R},${SYMBOL_R} 0 0,0 ${cx},${cy + SYMBOL_R} Z`}
-        className="fill-teal"
+        className={fill}
       />
     </g>
   );
 }
 
-export default function Pictograph({ rows, keyValue, theme }) {
+export default function Pictograph({ rows, keyValue, theme, paper = false }) {
   const data = rows || [];
   const anyHalf = data.some((r) => r.half);
   const height = PAD_TOP + data.length * ROW_H + KEY_H;
@@ -51,6 +55,15 @@ export default function Pictograph({ rows, keyValue, theme }) {
       role="img"
       aria-label={`Pictograph. Each symbol stands for ${keyValue}. ${describe}.`}
     >
+      {paper && (
+        <g stroke="#000" strokeWidth="1.2" fill="none">
+          <rect x="1" y={PAD_TOP} width={VIEW_W - 2} height={data.length * ROW_H} />
+          <line x1={LABEL_W} x2={LABEL_W} y1={PAD_TOP} y2={PAD_TOP + data.length * ROW_H} />
+          {data.slice(1).map((r, i) => (
+            <line key={r.label} x1="1" x2={VIEW_W - 1} y1={PAD_TOP + (i + 1) * ROW_H} y2={PAD_TOP + (i + 1) * ROW_H} />
+          ))}
+        </g>
+      )}
       {data.map((r, i) => {
         const cy = PAD_TOP + i * ROW_H + ROW_H / 2;
         return (
@@ -66,13 +79,14 @@ export default function Pictograph({ rows, keyValue, theme }) {
               {r.label}
             </text>
             {Array.from({ length: r.symbols }, (_, s) => (
-              <Symbol key={s} cx={LABEL_W + SYMBOL_GAP / 2 + s * SYMBOL_GAP} cy={cy} half={false} />
+              <Symbol key={s} cx={LABEL_W + SYMBOL_GAP / 2 + s * SYMBOL_GAP} cy={cy} half={false} paper={paper} />
             ))}
             {r.half && (
               <Symbol
                 cx={LABEL_W + SYMBOL_GAP / 2 + r.symbols * SYMBOL_GAP}
                 cy={cy}
                 half
+                paper={paper}
               />
             )}
           </g>
@@ -87,19 +101,19 @@ export default function Pictograph({ rows, keyValue, theme }) {
           y1={PAD_TOP + data.length * ROW_H + 6}
           y2={PAD_TOP + data.length * ROW_H + 6}
           stroke="currentColor"
-          strokeOpacity="0.3"
+          strokeOpacity={paper ? "0" : "0.3"}
           strokeWidth="1"
         />
         <text x="10" y={height - 10} fontSize="13" className="font-bold">
           Key:
         </text>
-        <Symbol cx={56} cy={height - 14} half={false} />
+        <Symbol cx={56} cy={height - 14} half={false} paper={paper} />
         <text x="70" y={height - 10} fontSize="13" className="font-bold">
           = {keyValue}
         </text>
         {anyHalf && (
           <>
-            <Symbol cx={128} cy={height - 14} half />
+            <Symbol cx={128} cy={height - 14} half paper={paper} />
             <text x="142" y={height - 10} fontSize="13" className="font-bold">
               = {keyValue / 2}
             </text>

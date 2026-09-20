@@ -884,11 +884,15 @@ const PRINT_REWORDS = [
   [/\btap where you land\b/gi, "what number do you land on?"],
   [/\. what number do you land on\?\.?$/i, ". What number do you land on?"],
   [/\bTap the\b/g, "Write the"],
+  // "Type its x-coordinate." — the keyboard is a screen too. Only the
+  // imperative: "which type of angle" is a noun and stays.
+  [/\bType (the|its|in|your|a|an)\b/g, "Write $1"],
+  [/\btype (the|its|in|your) (answer|number)\b/g, "write $1 $2"],
   [/\btap the\b/g, "write the"],
   [/\bTap\b/g, "Write"],
   [/\btap\b/g, "write"],
 ];
-const SCREEN_VERBS = /\b(tap|press|drag|swipe|click|touch)\b/i;
+const SCREEN_VERBS = /\b(tap|press|drag|swipe|click|touch)\b|\bType (the|its|in|your|a|an)\b/i;
 
 export function printableWording(q) {
   const text = q.display?.promptText;

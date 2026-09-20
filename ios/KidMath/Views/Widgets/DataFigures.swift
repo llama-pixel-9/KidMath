@@ -60,6 +60,10 @@ private func label(_ v: Double?, unit: String, unknown: Bool = false) -> String 
 struct PictographView: View {
     let rows: [[String: Any]]
     let keyValue: Double
+    /// The PRINTED chart (worksheets): black symbols inside a ruled table —
+    /// mirror of Pictograph.jsx `paper`.
+    var paper = false
+    private var symbolColor: Color { paper ? .black : FigureColors.accent }
 
     private let viewW: CGFloat = 340
     private let rowH: CGFloat = 34
@@ -75,7 +79,8 @@ struct PictographView: View {
     var body: some View {
         ViewBoxCanvas(width: viewW, height: height) {
             Canvas { ctx, _ in
-                let secondary = FigureColors.inkSoft
+                let secondary = paper ? Color.black : FigureColors.inkSoft
+                if paper { ruledTable(&ctx, top: padTop, rowHeight: rowH, rowCount: rows.count, width: viewW, divider: labelW) }
                 for (i, r) in rows.enumerated() {
                     let cy = padTop + CGFloat(i) * rowH + rowH / 2
                     let name = r["label"] as? String ?? "?"
@@ -97,7 +102,7 @@ struct PictographView: View {
                 var rule = Path()
                 rule.move(to: CGPoint(x: 8, y: ruleY))
                 rule.addLine(to: CGPoint(x: viewW - 8, y: ruleY))
-                ctx.stroke(rule, with: .color(secondary.opacity(0.3)), lineWidth: 1)
+                if !paper { ctx.stroke(rule, with: .color(secondary.opacity(0.3)), lineWidth: 1) }
                 let keyY = height - 14
                 ctx.draw(Text("Key:").font(.system(size: 13, weight: .bold)).foregroundColor(secondary),
                          at: CGPoint(x: 10, y: keyY), anchor: .leading)
@@ -121,24 +126,41 @@ struct PictographView: View {
     private func symbol(_ ctx: inout GraphicsContext, cx: CGFloat, cy: CGFloat, half: Bool) {
         let rect = CGRect(x: cx - symbolR, y: cy - symbolR, width: symbolR * 2, height: symbolR * 2)
         if !half {
-            ctx.fill(Path(ellipseIn: rect), with: .color(FigureColors.accent))
+            ctx.fill(Path(ellipseIn: rect), with: .color(symbolColor))
             return
         }
-        ctx.stroke(Path(ellipseIn: rect), with: .color(FigureColors.accent), lineWidth: 1.5)
+        ctx.stroke(Path(ellipseIn: rect), with: .color(symbolColor), lineWidth: 1.5)
         // Left half only: "half of one symbol" has to look like half of one.
         var p = Path()
         p.move(to: CGPoint(x: cx, y: cy - symbolR))
         p.addArc(center: CGPoint(x: cx, y: cy), radius: symbolR,
                  startAngle: .degrees(-90), endAngle: .degrees(90), clockwise: true)
         p.closeSubpath()
-        ctx.fill(p, with: .color(FigureColors.accent))
+        ctx.fill(p, with: .color(symbolColor))
     }
+}
+
+/// The frame a printed picture graph or tally chart sits in: an outer box, a
+/// rule under every row, and a divider between labels and data.
+private func ruledTable(_ ctx: inout GraphicsContext, top: CGFloat, rowHeight: CGFloat, rowCount: Int, width: CGFloat, divider: CGFloat) {
+    let bottom = top + CGFloat(rowCount) * rowHeight
+    var p = Path()
+    p.addRect(CGRect(x: 1, y: top, width: width - 2, height: bottom - top))
+    p.move(to: CGPoint(x: divider, y: top))
+    p.addLine(to: CGPoint(x: divider, y: bottom))
+    for i in 1..<max(rowCount, 1) {
+        p.move(to: CGPoint(x: 1, y: top + CGFloat(i) * rowHeight))
+        p.addLine(to: CGPoint(x: width - 1, y: top + CGFloat(i) * rowHeight))
+    }
+    ctx.stroke(p, with: .color(.black), lineWidth: 1.2)
 }
 
 // MARK: - Tally chart
 
 struct TallyChartView: View {
     let rows: [[String: Any]]
+    /// The PRINTED chart (worksheets): ruled into a table, black marks.
+    var paper = false
 
     private let viewW: CGFloat = 340
     private let rowH: CGFloat = 40
@@ -153,7 +175,8 @@ struct TallyChartView: View {
     var body: some View {
         ViewBoxCanvas(width: viewW, height: height) {
             Canvas { ctx, _ in
-                let ink = FigureColors.inkSoft
+                let ink = paper ? Color.black : FigureColors.inkSoft
+                if paper { ruledTable(&ctx, top: padTop, rowHeight: rowH, rowCount: rows.count, width: viewW, divider: labelW - 4) }
                 for (i, r) in rows.enumerated() {
                     let cy = padTop + CGFloat(i) * rowH + rowH / 2
                     let name = r["label"] as? String ?? "?"

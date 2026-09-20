@@ -40,7 +40,9 @@ const blank = () => ({
   state: STATES.NEW,
   attempts: 0,
   correct: 0,
-  window: "", // "1" right, "0" wrong — newest last
+  // "1" right, "0" wrong, newest last. (Not called `window`: the native
+  // bundle is checked for browser globals by name.)
+  recent: "",
   sessions: 0,
   needsReview: false,
   masteredAt: null,
@@ -57,7 +59,7 @@ function counts(attempt) {
 }
 
 function meetsRule(entry) {
-  const recent = entry.window;
+  const recent = entry.recent;
   if (recent.length < MASTERY_RULE.minAttempts) return false;
   const misses = recent.split("").filter((c) => c === "0").length;
   if (misses > MASTERY_RULE.maxMisses) return false;
@@ -82,7 +84,7 @@ export function applySession(map, record) {
     const mark = attempt.correct ? "1" : "0";
     entry.attempts += 1;
     entry.correct += attempt.correct ? 1 : 0;
-    entry.window = (entry.window + mark).slice(-MASTERY_RULE.window);
+    entry.recent = (entry.recent + mark).slice(-MASTERY_RULE.window);
     if (entry.state === STATES.MASTERED) {
       entry.sinceMastery = (entry.sinceMastery + mark).slice(-MASTERY_RULE.window);
     }
@@ -119,7 +121,7 @@ export function stateOf(map, skillId) {
 /** "5 of 8" for the ◐ mark: evidence gathered toward the rule. */
 export function progressToward(map, skillId) {
   const entry = map?.[skillId];
-  const have = entry ? Math.min(entry.window.split("").filter((c) => c === "1").length, MASTERY_RULE.minAttempts) : 0;
+  const have = entry ? Math.min(entry.recent.split("").filter((c) => c === "1").length, MASTERY_RULE.minAttempts) : 0;
   return { have, need: MASTERY_RULE.minAttempts };
 }
 

@@ -47,7 +47,7 @@ describe("skill mastery rule", () => {
     let map = [session("", { extra: retries }), session("", { extra: hinted })].reduce(applySession, {});
     expect(stateOf(map, SKILL)).toBe(STATES.NEW);
     map = applySession(map, session("", { extra: [{ skillId: SKILL, correct: false, retry: false, hint: true }] }));
-    expect(map[SKILL].window).toBe("0");
+    expect(map[SKILL].recent).toBe("0");
   });
 
   it("the grade-up challenge is a test, not practice", () => {

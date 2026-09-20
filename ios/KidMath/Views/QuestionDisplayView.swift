@@ -122,7 +122,7 @@ struct QuestionDisplayView: View {
 
     private var barChartQuestion: some View {
         VStack(spacing: 12) {
-            BarChartView(display: display)
+            BarChartView(display: display, showValues: revealed, width: 300)
             if let prompt = promptText {
                 Text(prompt)
                     .font(.system(size: 24, weight: .heavy, design: .rounded))

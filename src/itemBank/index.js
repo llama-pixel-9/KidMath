@@ -350,13 +350,20 @@ function randomPick(items, rng = Math.random) {
   return items[index];
 }
 
-function filterApprovedCandidates({ modeId, level, family }) {
+// `levels` ([lo, hi], range overlap) and `accept` (row predicate) are how a
+// SKILL session narrows the pool to its own bank cell; with neither set this is
+// the exact-level match it always was.
+function filterApprovedCandidates({ modeId, level, family, levels, accept }) {
+  const inBand = Array.isArray(levels)
+    ? (range) => Array.isArray(range) && range[0] <= levels[1] && range[1] >= levels[0]
+    : (range) => inLevelRange(level, range);
   return currentBank.filter(
     (item) =>
       item.modeId === modeId &&
       (!family || item.itemFamily === family) &&
       item.reviewStatus === REVIEW_STATUS.APPROVED &&
-      inLevelRange(level, item.levelRange)
+      inBand(item.levelRange) &&
+      (!accept || accept(item))
   );
 }
 
@@ -381,8 +388,10 @@ export function selectApprovedBankItem({
   recentItemIds = [],
   rng = Math.random,
   allowWordProblems = true,
+  levels,
+  accept,
 } = {}) {
-  const approved = filterApprovedCandidates({ modeId, level, family });
+  const approved = filterApprovedCandidates({ modeId, level, family, levels, accept });
   if (approved.length === 0) return null;
 
   // Even though the scheduler routes APPLICATION away when word problems

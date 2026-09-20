@@ -134,10 +134,64 @@ describe("buildReport", () => {
 
   it("writes a headline and focus recommendation in plain language", () => {
     const r = buildReport(sessions, { now: NOW, days: 30, progressByMode: { addition: { level: 4 } } });
-    expect(headline(r, "Maya")).toBe("Maya practiced 18 minutes over 3 sessions in the last 30 days, 80% right on the first try, 1 level-up.");
+    expect(headline(r, "Maya")).toBe("Maya practiced 18 minutes over 3 sessions in the last 30 days, 80% right on the first try.");
     expect(r.recommendations.some((x) => x.kind === "focus" && /missing addend/.test(x.text))).toBe(true);
-    expect(r.recommendations.some((x) => x.kind === "celebrate")).toBe(true);
+    // Parents read skills, never levels.
+    expect(JSON.stringify(r.recommendations) + headline(r, "Maya")).not.toMatch(/level/i);
     expect(headline(buildReport([], { now: NOW }), null)).toMatch(/hasn't practiced/);
+  });
+});
+
+describe("the report speaks in skills", () => {
+  /** A session of first-try attempts served for one skill: "1" right, "0" wrong. */
+  function skillSession(skillId, marks, { mode = "subtraction", daysAgo = 0, level = 9 } = {}) {
+    const start = NOW - daysAgo * DAY;
+    let rec = openSessionRecord({ mode, level, now: start, kidId: "kid-1" });
+    marks.split("").forEach((m, i) => {
+      rec = appendAttempt(rec, { question: q(`problem ${i}`, 1, "decomposeToSubtract"), submitted: m === "1" ? 1 : 0, correct: m === "1", wasRetry: false, responseTimeMs: 3000, level, now: start + i * 1000 });
+      rec.attempts[rec.attempts.length - 1].skillId = skillId;
+    });
+    const right = marks.split("").filter((m) => m === "1").length;
+    return closeSessionRecord(rec, { level, questionsAnswered: marks.length, firstTryCorrect: right, retriesMastered: 0 }, { starsEarned: right, levelEnd: level, now: start + 5 * 60000 });
+  }
+
+  it("says where the kid stands: Grade 3 Subtraction · N of M skills mastered, skill by skill", () => {
+    const log = [skillSession("sub-3digit-regroup", "11111", { daysAgo: 3 }), skillSession("sub-3digit-regroup", "11111", { daysAgo: 1 }), skillSession("sub-across-zeros", "10010100", { daysAgo: 0 })];
+    const r = buildReport(log, { now: NOW, days: 30, progressByMode: { subtraction: { level: 9, grade: "3" } } });
+    const standing = r.modes.find((m) => m.id === "subtraction").skills;
+    expect(standing).toMatchObject({ grade: "3", gradeLabel: "Grade 3", topicLabel: "Subtraction", mastered: 1, complete: false });
+    expect(standing.total).toBeGreaterThan(1);
+    expect(standing.list.find((s) => s.id === "sub-3digit-regroup").state).toBe("mastered");
+    expect(standing.weakest).toMatchObject({ id: "sub-across-zeros", title: "Subtract across zeros" });
+    expect(standing.newlyMastered.map((s) => s.id)).toEqual(["sub-3digit-regroup"]);
+
+    expect(headline(r, "Maya")).toMatch(/1 skill mastered\.$/);
+    const focus = r.recommendations.find((x) => x.kind === "focus");
+    expect(focus.text).toContain('"Subtract across zeros" is the shaky spot');
+    expect(focus.skillId).toBe("sub-across-zeros"); // the page links it to a printable worksheet
+    expect(r.recommendations.find((x) => x.kind === "celebrate").text).toContain("Subtract 3-digit numbers with regrouping");
+  });
+
+  it("mastery is a fact about all practice: a skill mastered before the window is not 'new' in it", () => {
+    const log = [skillSession("sub-3digit-regroup", "11111", { daysAgo: 40 }), skillSession("sub-3digit-regroup", "11111", { daysAgo: 35 }), skillSession("sub-3digit-regroup", "111", { daysAgo: 1 })];
+    const r = buildReport(log, { now: NOW, days: 7, progressByMode: { subtraction: { level: 9, grade: "3" } } });
+    const standing = r.modes[0].skills;
+    expect(standing.mastered).toBe(1);
+    expect(standing.newlyMastered).toEqual([]);
+    expect(r.totals.skillsMastered).toBe(0);
+  });
+
+  it("without a saved grade, the grade is read off the kid's level", () => {
+    const r = buildReport([skillSession("sub-3digit-regroup", "111")], { now: NOW, days: 30, progressByMode: { subtraction: { level: 9 } } });
+    expect(["2", "3"]).toContain(r.modes[0].skills.grade);
+  });
+
+  it("when every skill of a grade is mastered, the advice is the next grade", () => {
+    const skills = buildReport([skillSession("sub-3digit-regroup", "1")], { now: NOW, progressByMode: { subtraction: { level: 9, grade: "3" } } }).modes[0].skills.list;
+    const log = skills.flatMap((s) => [skillSession(s.id, "11111", { daysAgo: 2 }), skillSession(s.id, "11111", { daysAgo: 1 })]);
+    const r = buildReport(log, { now: NOW, days: 30, progressByMode: { subtraction: { level: 9, grade: "3" } } });
+    expect(r.modes[0].skills.complete).toBe(true);
+    expect(r.recommendations.find((x) => x.kind === "stretch").text).toBe("Every Grade 3 Subtraction skill is mastered — ready for Grade 4 Subtraction.");
   });
 });
 

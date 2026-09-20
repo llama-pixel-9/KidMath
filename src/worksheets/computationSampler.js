@@ -5,7 +5,7 @@
  * few dozen bare facts per band. A drill has no wording to review and an
  * unbounded number space, so it is built here, to the claim.
  */
-import { randInt } from "../modes/helpers.js";
+import { randInt, shuffleArray } from "../modes/helpers.js";
 import { computationKey, isTrivialFact } from "../mathEngine.js";
 import { regroups } from "./claimCheck.js";
 
@@ -122,9 +122,15 @@ export function sampleSheet(claim, mode, count, seenKeys = new Set()) {
   const keyOf = (q) => (claim.ordered ? `${q.op}:${q.a},${q.b}` : computationKey(q));
   const out = [];
   let trivialUsed = false;
+  // `reach` is part of the promise ("facts to 10 × 10" must get past 30), so it
+  // is built in, not left to chance: the first share of the sheet is drawn from
+  // the far side of the line, then the whole sheet is shuffled.
+  const mustReach = claim.reach ? Math.ceil(claim.reach.share * count) : 0;
+  const size = (q) => (q.op === "+" ? q.a + q.b : q.op === "x" ? q.a * q.b : q.a);
   for (let attempt = 0; attempt < count * 80 && out.length < count; attempt += 1) {
     const q = sampleComputation(claim, mode);
     if (!q) break;
+    if (out.length < mustReach && size(q) <= claim.reach.over) continue;
     const key = keyOf(q);
     if (seenKeys.has(key)) continue;
     if (isTrivialFact(q)) {
@@ -138,8 +144,11 @@ export function sampleSheet(claim, mode, count, seenKeys = new Set()) {
     const q = sampleComputation(claim, mode);
     if (!q) break;
     const previous = out[out.length - 1];
+    // Later sheets of a run can exhaust the fresh far-side facts; repeats must
+    // still keep the promise.
+    if (out.length < mustReach && size(q) <= claim.reach.over) continue;
     if (isTrivialFact(q) || (previous && keyOf(q) === keyOf(previous))) continue;
     out.push(q);
   }
-  return out;
+  return mustReach ? shuffleArray(out) : out;
 }

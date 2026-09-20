@@ -1,6 +1,7 @@
 import { MODE_IDS, getModeConfig } from "./modes";
 import { shuffleArray, isVerbalPrompt } from "./modes/helpers";
 import { buildItemKey, ITEM_FAMILIES } from "./modes/itemMetadata";
+import { initSkillSession, nextSkillQuestion, recordSkillAnswer, retryBelongs } from "./skills/session.js";
 import { validateChoices, validateQuestion } from "./modes/itemQuality";
 import { buildQuestionFromBankItem, selectApprovedBankItem } from "./itemBank/index.js";
 import { fractionsEqual } from "./fractions.js";
@@ -287,7 +288,7 @@ export function generateQuestion(mode, level, context = null) {
 
 /** Fold a bank payload (or the generated question when there is none) into
  * the render-ready shape: mode stamped, metadata flattened, itemKey, validated. */
-function finalizeQuestion(mode, bankQuestion, q) {
+export function finalizeQuestion(mode, bankQuestion, q) {
   const bankMetadata = bankQuestion?.metadataOverrides || null;
   const bankPayload = bankQuestion ? { ...bankQuestion } : null;
   if (bankPayload) delete bankPayload.metadataOverrides;
@@ -541,6 +542,9 @@ export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE, options 
     // QA-only: force one generator variety and skip the bank, so a reported
     // item shape can be reproduced deterministically (`?qaVariety=` on web).
     ...(options.qaVariety ? { qaVariety: options.qaVariety } : {}),
+    // A SKILL session (skills/session.js): chosen skills instead of the level
+    // ladder. Without skillId/skillIds this is the session it always was.
+    ...(initSkillSession(options) || {}),
   };
 }
 
@@ -549,6 +553,7 @@ export function getNextQuestion(session) {
   const dueReview = session.mistakeBank.find(
     (q) =>
       (q.dueAt ?? RETRY_SPACING) <= session.questionsAnswered &&
+      (!session.skillIds || retryBelongs(session, q)) &&
       !(
         suppressWordProblems &&
         (q.metadata?.itemFamily === ITEM_FAMILIES.APPLICATION ||
@@ -576,6 +581,8 @@ export function getNextQuestion(session) {
     // Legacy poison entry (persisted before reviewChoices existed): options
     // can't be rebuilt at all — fall through and serve a fresh question.
   }
+
+  if (session.skillIds) return { question: nextSkillQuestion(session), isRetry: false };
 
   const modeConfig = getModeConfig(session.mode);
   const { nextFamily, nextCursor } = getNextFamily(session, modeConfig);
@@ -699,6 +706,27 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
     session.level
   );
   if (session.ladderV2) next.allResponseTimesMs = [...(session.allResponseTimesMs || []), responseTimeMs];
+
+  // A skill session has no ladder: nothing promotes or demotes mid-session.
+  // Mastery is settled from the practice log (skills/mastery.js), and moving
+  // up a grade is earned in the challenge.
+  if (session.skillIds) {
+    recordSkillAnswer(next, question, correct);
+    if (correct) {
+      next.correctStreak = session.correctStreak + 1;
+      next.firstTryCorrect = session.firstTryCorrect + 1;
+      next.responseTimesMs = [...session.responseTimesMs.slice(-4), responseTimeMs];
+    } else {
+      next.correctStreak = 0;
+      if (!session.mistakeBank.some((q) => q.itemKey === question.itemKey)) {
+        next.mistakeBank = [
+          ...session.mistakeBank,
+          cloneQuestionForReview(question, next.questionsAnswered + RETRY_SPACING),
+        ].slice(-MAX_REVIEW_ITEMS);
+      }
+    }
+    return { session: next, correct, levelChanged: false, newLevel: next.level };
+  }
 
   if (correct) {
     next.correctStreak = session.correctStreak + 1;

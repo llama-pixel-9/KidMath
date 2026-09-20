@@ -64,3 +64,19 @@ export const meadowMotionEnabled = (env) => gamStepEnabled("meadowMotion", env);
 export const ladderV2Enabled = (env) => gamStepEnabled("ladderV2", env);
 export const secondChanceEnabled = (env) => gamStepEnabled("secondChance", env);
 export const readAloudEnabled = (env) => gamStepEnabled("readAloud", env);
+
+/**
+ * Play by skill: Grade → Topic → Skill sessions with durable mastery instead
+ * of the level ladder.
+ *
+ * NOT a gamification step, on purpose: VITE_GAM_ALL is already "true" in
+ * production, and as a step this would have switched itself on the moment it
+ * merged — before iOS has it and before the practice_sessions skill columns
+ * (migration 20260920120000) exist. It has its own switch and ignores the
+ * master one. `?gam=skillsPlay` / localStorage still force it on for QA.
+ */
+export function skillsPlayEnabled(env = import.meta.env) {
+  if (env?.VITE_SKILLS_PLAY === "true") return true;
+  if (env?.VITE_SKILLS_PLAY === "false") return false;
+  return overrideSet().has("skillsPlay");
+}

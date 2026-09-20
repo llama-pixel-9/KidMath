@@ -11,7 +11,6 @@
  * with only the offline seed in memory most bank skills come back short.
  */
 import { getBankItems } from "../itemBank/index.js";
-import { APPROVED } from "../itemBank/reviewStatus.js";
 import { buildBankQuestion, isPrintablePrompt, printableWording, promptKey } from "../mathEngine.js";
 import { areaFigureSpec } from "../figures/areaFigureSpec.js";
 import { isVerbalPrompt, shuffleArray } from "../modes/helpers.js";
@@ -26,18 +25,8 @@ import {
   STORIES_PER_SHEET,
   isFigureLayout,
 } from "./layouts.js";
-import { skillById } from "./skillIndex.js";
-
-const overlaps = (range, levels) => Array.isArray(range) && range[0] <= levels[1] && range[1] >= levels[0];
-
-function cellMatches(item, mode, filter) {
-  if (item.modeId !== mode || item.reviewStatus !== APPROVED) return false;
-  if (!filter.families.includes(item.itemFamily)) return false;
-  if (filter.subskills && !filter.subskills.includes(item.subskill)) return false;
-  if (filter.structureTypes && !filter.structureTypes.includes(item.structureType)) return false;
-  if (filter.excludeStructureTypes?.includes(item.structureType)) return false;
-  return overlaps(item.levelRange, filter.levels);
-}
+import { skillById } from "../skills/index.js";
+import { cellMatches } from "../skills/skillPool.js";
 
 /** The figure a question prints with: the authored `display.figure`, or the
  * rectangle the areaPerimeter bank implies through its dimensions (same

@@ -1,6 +1,9 @@
 import { getModeConfig, MODE_IDS } from "../modes";
 import { gradeSpanFor } from "../engagement/gradeSpans.js";
 import { subskillLabel } from "./subskillLabels.js";
+import { GRADE_LABELS, TOPIC_LABELS } from "../skills/catalog.js";
+import { STATES, deriveMastery, progressToward, stateOf, summarize } from "../skills/mastery.js";
+import { gradeForModeLevel, nextTopicGrade, playSkills, skillsForPlay, topicGrades } from "../skills/play.js";
 
 /**
  * Pure: practice-session records → the parent report. No I/O, no dates read
@@ -130,7 +133,56 @@ function subskillStats(attempts) {
     .sort((a, b) => b.attempts - a.attempts);
 }
 
-function modeSummaries(sessions, progressByMode) {
+/**
+ * Where a kid stands in a topic, in the words a parent uses: "Grade 3
+ * Subtraction · 2 of 4 skills mastered". The grade is the one the kid is
+ * working in (saved with their progress once play is skill-based; until then
+ * read off their level), and the skills are the catalog's — the same list the
+ * worksheets print from, so a parent can print what their kid is stuck on.
+ */
+export function skillStanding(modeId, levelNow, progress, mastery, masteryBefore = mastery) {
+  const grade = progress?.grade || gradeForModeLevel(modeId, levelNow);
+  const skills = grade ? skillsForPlay(grade, modeId) : [];
+  if (!skills.length) return null;
+  const counts = summarize(mastery, skills);
+  const list = skills.map((skill) => {
+    const entry = mastery[skill.id];
+    return {
+      id: skill.id,
+      title: skill.title,
+      state: stateOf(mastery, skill.id),
+      progress: progressToward(mastery, skill.id),
+      attempts: entry?.attempts ?? 0,
+      accuracy: entry ? pct(entry.correct, entry.attempts) : null,
+      needsReview: Boolean(entry?.needsReview),
+    };
+  });
+  const shaky = list
+    .filter((s) => s.attempts >= MIN_ATTEMPTS && s.accuracy != null && (s.state === STATES.PRACTICING || s.needsReview))
+    .sort((a, b) => a.accuracy - b.accuracy)[0];
+  const newly = playSkills()
+    .filter((skill) => skill.mode === modeId)
+    .filter((skill) => stateOf(mastery, skill.id) === STATES.MASTERED && stateOf(masteryBefore, skill.id) !== STATES.MASTERED)
+    .map((skill) => ({ id: skill.id, title: skill.title, grade: skill.grade }));
+  return {
+    grade,
+    gradeLabel: GRADE_LABELS[grade],
+    topicLabel: TOPIC_LABELS[modeId],
+    // The grades the topic really has skills in — the old per-mode span said
+    // "K–2" for a Subtraction that runs to grade 4.
+    topicGrades: topicGrades(modeId),
+    total: counts.total,
+    mastered: counts.mastered,
+    practicing: counts.practicing,
+    complete: counts.complete,
+    nextGrade: nextTopicGrade(modeId, grade),
+    list,
+    weakest: shaky || null,
+    newlyMastered: newly,
+  };
+}
+
+function modeSummaries(sessions, progressByMode, mastery = {}, masteryBefore = {}) {
   const byMode = new Map();
   for (const s of sessions) {
     const list = byMode.get(s.mode) || [];
@@ -153,6 +205,7 @@ function modeSummaries(sessions, progressByMode) {
         id,
         label: modeLabel(id),
         gradeSpan: gradeSpanFor(id),
+        skills: skillStanding(id, levelNow, progressByMode?.[id], mastery, masteryBefore),
         sessions: list.length,
         minutes: minutes(ms),
         questions: q,
@@ -242,19 +295,47 @@ function recommendations(modes, strugglesList, totals) {
     .filter(Boolean)
     .sort((a, b) => a.sub.accuracy - b.sub.accuracy)
     .slice(0, 2);
-  for (const { mode, sub } of weak) {
+  // Parents get skills, never levels: "Subtract across zeros" is something a
+  // grown-up can help with (and print a worksheet for); "Level 8" is not.
+  const shakySkills = modes
+    .filter((m) => m.skills?.weakest && m.skills.weakest.accuracy < 70)
+    .sort((a, b) => a.skills.weakest.accuracy - b.skills.weakest.accuracy)
+    .slice(0, 2);
+  for (const mode of shakySkills) {
+    const skill = mode.skills.weakest;
     out.push({
       kind: "focus",
-      text: `${mode.label}: ${sub.label} is the shaky spot (${sub.accuracy}% right on ${sub.attempts} tries). A few minutes there, at Level ${mode.levelNow}, will help most.`,
+      skillId: skill.id,
+      text: `${mode.skills.topicLabel}: "${skill.title}" is the shaky spot (${skill.accuracy}% right on ${skill.attempts} tries). A few minutes there will help most.`,
     });
   }
-  const climbing = modes.filter((m) => m.levelDelta > 0).sort((a, b) => b.levelDelta - a.levelDelta)[0];
-  if (climbing) {
-    out.push({ kind: "celebrate", text: `${climbing.label} climbed ${climbing.levelDelta} level${climbing.levelDelta > 1 ? "s" : ""} — worth a high-five.` });
+  if (!shakySkills.length) {
+    for (const { mode, sub } of weak) {
+      out.push({
+        kind: "focus",
+        text: `${mode.label}: ${sub.label} is the shaky spot (${sub.accuracy}% right on ${sub.attempts} tries). A few minutes there will help most.`,
+      });
+    }
   }
-  const ready = modes.filter((m) => m.accuracy != null && m.accuracy >= 90 && m.questions >= 20 && m.levelDelta === 0);
-  if (ready.length) {
-    out.push({ kind: "stretch", text: `${ready.map((m) => m.label).join(" and ")} ${ready.length > 1 ? "are" : "is"} consistently above 90% — the app will raise the level soon; a new activity could stretch things too.` });
+  const newly = modes.flatMap((m) => (m.skills?.newlyMastered || []).map((s) => ({ ...s, topic: m.skills.topicLabel })));
+  if (newly.length === 1) {
+    out.push({ kind: "celebrate", text: `Mastered "${newly[0].title}" — worth a high-five.` });
+  } else if (newly.length > 1) {
+    out.push({ kind: "celebrate", text: `Mastered ${newly.length} new skills, "${newly[0].title}" among them — worth a high-five.` });
+  }
+  const finished = modes.filter((m) => m.skills?.complete);
+  for (const mode of finished.slice(0, 2)) {
+    const { gradeLabel, topicLabel, nextGrade } = mode.skills;
+    out.push({
+      kind: "stretch",
+      text: nextGrade
+        ? `Every ${gradeLabel} ${topicLabel} skill is mastered — ready for ${GRADE_LABELS[nextGrade]} ${topicLabel}.`
+        : `Every ${topicLabel} skill is mastered — a new topic will stretch things.`,
+    });
+  }
+  const ready = modes.filter((m) => !m.skills?.complete && m.accuracy != null && m.accuracy >= 90 && m.questions >= 20);
+  if (ready.length && !finished.length) {
+    out.push({ kind: "stretch", text: `${ready.map((m) => m.label).join(" and ")} ${ready.length > 1 ? "are" : "is"} consistently above 90% — the next skill, or a new topic, will stretch things.` });
   }
   if (totals.sessions > 0 && totals.activeDays < 3 && totals.days >= 14) {
     out.push({ kind: "habit", text: "Short and frequent beats long and rare: three 5-minute sessions a week builds fluency faster than one long one." });
@@ -307,7 +388,12 @@ export function buildReport(allSessions, { now = Date.now(), days = 30, progress
     lastSessionAt: practice.length ? practice[practice.length - 1].startedAt : null,
   };
 
-  const modes = modeSummaries(practice, progressByMode);
+  // Mastery is a fact about ALL of a kid's practice, not the report window:
+  // fold the whole log, and again up to the window's start to see what is new.
+  const mastery = deriveMastery(ordered);
+  const masteryBefore = Number.isFinite(since) ? deriveMastery(ordered.filter((s) => s.startedAt < since)) : {};
+  const modes = modeSummaries(practice, progressByMode, mastery, masteryBefore);
+  totals.skillsMastered = modes.reduce((n, m) => n + (m.skills?.newlyMastered.length || 0), 0);
   const strugglesList = struggles(practice);
   const weeks = days ? Math.max(2, Math.min(12, Math.ceil(days / 7))) : 12;
 
@@ -342,6 +428,6 @@ export function headline(report, kidName) {
   const acc = t.accuracy != null ? `${t.accuracy}% right on the first try` : "";
   const parts = [`${who} practiced ${t.minutes} minute${t.minutes === 1 ? "" : "s"} over ${t.sessions} session${t.sessions === 1 ? "" : "s"} in ${span}`];
   if (acc) parts.push(acc);
-  if (t.levelUps > 0) parts.push(`${t.levelUps} level-up${t.levelUps > 1 ? "s" : ""}`);
+  if (t.skillsMastered > 0) parts.push(`${t.skillsMastered} skill${t.skillsMastered > 1 ? "s" : ""} mastered`);
   return `${parts.join(", ")}.`;
 }

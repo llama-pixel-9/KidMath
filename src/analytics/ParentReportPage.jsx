@@ -92,20 +92,29 @@ function BarChart({ buckets, valueKey = "minutes", unit = "min", subKey, compact
   );
 }
 
-function LevelBar({ start, now }) {
+// Where the kid stands in a topic, in a parent's words: the grade they are
+// working in and how many of its skills are mastered. Never a level number.
+function Standing({ skills }) {
+  if (!skills) return <span className="text-sm font-semibold text-ink/45">—</span>;
+  const newly = skills.newlyMastered.length;
   return (
-    <div className="flex items-center gap-2">
-      <div className="h-2 w-24 rounded-full bg-ink/10 overflow-hidden relative" aria-hidden="true">
-        <div className="absolute inset-y-0 left-0 bg-teal rounded-full" style={{ width: `${(now / 10) * 100}%` }} />
+    <div>
+      <div className="flex items-center gap-2">
+        <div className="h-2 w-20 rounded-full bg-ink/10 overflow-hidden relative" aria-hidden="true">
+          <div className="absolute inset-y-0 left-0 bg-teal rounded-full" style={{ width: `${(skills.mastered / skills.total) * 100}%` }} />
+        </div>
+        <span className="text-sm font-bold text-ink whitespace-nowrap">{skills.gradeLabel}</span>
       </div>
-      <span className="text-sm font-bold text-ink whitespace-nowrap">
-        Level {now}
-        {now > start && <span className="text-teal"> ↑{now - start}</span>}
-        {now < start && <span className="text-ember"> ↓{start - now}</span>}
-      </span>
+      <p className="text-[11px] font-semibold text-ink/55 whitespace-nowrap">
+        {skills.mastered} of {skills.total} skills mastered
+        {newly > 0 && <span className="text-teal"> · {newly} new</span>}
+      </p>
     </div>
   );
 }
+
+const SKILL_MARK = { mastered: "★", practicing: "◐", new: "○" };
+const gradeRange = (grades) => (grades.length > 1 ? `${grades[0]}–${grades[grades.length - 1]}` : grades[0]);
 
 function Accuracy({ value }) {
   if (value == null) return <span className="text-ink/30">—</span>;
@@ -121,12 +130,14 @@ function SkillRow({ m }) {
         <td className="py-3 pr-2">
           <button type="button" className="text-left cursor-pointer" onClick={() => setOpen((o) => !o)} aria-expanded={open}>
             <p className="font-bold text-ink">
-              {m.label} <span className="text-ink/40 text-xs">{open ? "▾" : "▸"}</span>
+              {m.skills?.topicLabel || m.label} <span className="text-ink/40 text-xs">{open ? "▾" : "▸"}</span>
             </p>
-            <p className="text-[11px] font-semibold text-ink/45">Grades {m.gradeSpan}</p>
+            <p className="text-[11px] font-semibold text-ink/45">
+              Grades {m.skills ? gradeRange(m.skills.topicGrades) : m.gradeSpan}
+            </p>
           </button>
         </td>
-        <td className="py-3 pr-2"><LevelBar start={m.levelStart} now={m.levelNow} /></td>
+        <td className="py-3 pr-2"><Standing skills={m.skills} /></td>
         <td className="py-3 pr-2 text-right text-sm font-semibold text-ink whitespace-nowrap">{m.minutes} min<br /><span className="text-[11px] text-ink/45">{m.sessions} session{m.sessions === 1 ? "" : "s"}</span></td>
         <td className="py-3 pr-2 text-right text-sm font-semibold text-ink whitespace-nowrap">{m.questions}<br /><span className="text-[11px] text-ink/45">{m.avgResponseMs != null ? `${Math.round(m.avgResponseMs / 1000)}s each` : ""}</span></td>
         <td className="py-3 text-right text-sm"><Accuracy value={m.accuracy} /></td>
@@ -134,7 +145,28 @@ function SkillRow({ m }) {
       {open && (
         <tr className="bg-ink/[0.03]">
           <td colSpan={5} className="px-3 py-3">
-            <p className="text-[11px] uppercase font-bold text-ink/45 mb-1.5">By skill</p>
+            {m.skills && (
+              <div className="mb-3">
+                <p className="text-[11px] uppercase font-bold text-ink/45 mb-1.5">{m.skills.gradeLabel} {m.skills.topicLabel} skills</p>
+                <ul className="space-y-1">
+                  {m.skills.list.map((s) => (
+                    <li key={s.id} className="flex items-start justify-between gap-3 text-sm">
+                      <span className="font-semibold text-ink/80">
+                        <span className={s.state === "mastered" ? "text-teal" : "text-ink/40"} aria-hidden="true">{SKILL_MARK[s.state]} </span>
+                        {s.title}
+                        {s.needsReview && <span className="text-ember text-[11px]"> · worth a review</span>}
+                      </span>
+                      <span className="whitespace-nowrap text-[12px] font-semibold text-ink/60">
+                        {s.state === "mastered" ? "mastered" : s.state === "practicing" ? `${s.progress.have} of ${s.progress.need}` : "not started"}
+                        {" · "}
+                        <Link to={`/worksheets?skill=${s.id}`} className="text-teal underline underline-offset-2">print</Link>
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            <p className="text-[11px] uppercase font-bold text-ink/45 mb-1.5">Accuracy in this period</p>
             <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1">
               {m.subskills.map((s) => (
                 <div key={s.id} className="flex items-center justify-between gap-3 text-sm">
@@ -268,7 +300,7 @@ export default function ParentReportPage() {
           <p>No finished practice sessions in this period.</p>
           <p className="mt-2">
             The practice log starts with the next session your kid finishes — earlier play is summarized
-            in the <Link to="/" className="text-teal underline">home page's grown-ups panel</Link> as levels and stars.
+            in the <Link to="/" className="text-teal underline">home page's grown-ups panel</Link> as skills and stars.
             {!user && " Sign in to keep the log across devices."}
           </p>
         </div>
@@ -282,7 +314,7 @@ export default function ParentReportPage() {
             <Tile value={t.questions} label="questions answered" />
             <Tile value={t.accuracy != null ? `${t.accuracy}%` : "—"} label="right on the first try" sub={t.retriesMastered > 0 ? `${t.retriesMastered} fixed on a retry` : undefined} />
             <Tile value={t.streakDays} label="day streak" sub={t.perfectSessions > 0 ? `${t.perfectSessions} perfect session${t.perfectSessions === 1 ? "" : "s"}` : undefined} />
-            <Tile value={t.levelUps} label={`level-up${t.levelUps === 1 ? "" : "s"}`} sub={t.challengesTaken > 0 ? `${t.challengesPassed}/${t.challengesTaken} challenge flights passed` : undefined} />
+            <Tile value={t.skillsMastered} label={`skill${t.skillsMastered === 1 ? "" : "s"} mastered`} sub={t.challengesTaken > 0 ? `${t.challengesPassed}/${t.challengesTaken} challenge flights passed` : undefined} />
           </div>
 
           {report.recommendations.length > 0 && (
@@ -291,7 +323,15 @@ export default function ParentReportPage() {
                 {report.recommendations.map((r, i) => (
                   <li key={i} className="bg-white rounded-2xl border-[1.5px] border-ink/10 px-4 py-3 text-sm font-semibold text-ink/80 flex gap-3">
                     <span aria-hidden="true">{r.kind === "focus" ? "🎯" : r.kind === "celebrate" ? "🎉" : r.kind === "stretch" ? "🚀" : r.kind === "habit" ? "📅" : "🔁"}</span>
-                    <span>{r.text}</span>
+                    <span>
+                      {r.text}
+                      {r.skillId && (
+                        <>
+                          {" "}
+                          <Link to={`/worksheets?skill=${r.skillId}`} className="text-teal underline underline-offset-2 whitespace-nowrap">Print a worksheet →</Link>
+                        </>
+                      )}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -302,7 +342,7 @@ export default function ParentReportPage() {
             {report.byDay ? <BarChart buckets={report.byDay} /> : <BarChart buckets={report.byWeek} subKey="accuracy" />}
           </Section>
 
-          <Section title="Skills" intro="Levels climb by skill, not time: each activity has its own 10-level ladder, and the grade range says what it covers. Tap a row to see it broken down by skill.">
+          <Section title="Skills" intro="Each topic is a set of skills by grade. A skill is mastered on steady first-try accuracy across at least two sessions — not on speed, and not in one sitting. Tap a row for the skills, each with a printable worksheet.">
             <div className="bg-white rounded-2xl border-[1.5px] border-ink/10 px-4 py-1 overflow-x-auto">
               <table className="w-full text-sm">
                 <thead className="text-left text-[11px] uppercase text-ink/45">
@@ -342,7 +382,7 @@ export default function ParentReportPage() {
                   <ul className="space-y-1.5">
                     {report.needsWork.map((s) => (
                       <li key={`${s.mode}-${s.id}`} className="text-sm font-semibold text-ink/80 flex justify-between gap-3">
-                        <span>{s.label} <span className="text-ink/45">· {s.modeLabel}, Level {s.level}</span></span>
+                        <span>{s.label} <span className="text-ink/45">· {s.modeLabel}</span></span>
                         <span className="text-ember font-bold whitespace-nowrap">{s.accuracy}%</span>
                       </li>
                     ))}
@@ -359,7 +399,7 @@ export default function ParentReportPage() {
                   <li key={`${s.mode}|${s.prompt}`} className="bg-white rounded-2xl border-[1.5px] border-ink/10 px-4 py-3">
                     <p className="text-sm font-semibold text-ink">{s.prompt}</p>
                     <p className="mt-1 text-[12px] font-semibold text-ink/60 flex flex-wrap gap-x-3 gap-y-0.5">
-                      <span>{s.modeLabel} · Level {s.level} · {s.subskillLabel}</span>
+                      <span>{s.modeLabel} · {s.subskillLabel}</span>
                       {s.answer && <span>Answer: <span className="text-ink">{s.answer}</span></span>}
                       {s.given.length > 0 && <span>Tried: <span className="text-ember">{s.given.join(", ")}</span></span>}
                       {s.misses > 1 && <span className="text-ember">missed {s.misses}×</span>}

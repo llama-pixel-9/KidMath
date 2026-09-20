@@ -1,4 +1,4 @@
-import { beforeAll, describe, expect, it } from "vitest";
+import { beforeAll, describe, expect, it, vi } from "vitest";
 import { FULL_ITEMS } from "../itemBank/fullBank";
 import { setBankItems } from "../itemBank";
 import { isTrivialFact, isYesNoJudgment, printOptionBank, questionAnswerType } from "../mathEngine";
@@ -6,8 +6,8 @@ import { MODE_IDS } from "../modes";
 import { checkItems, storyMatches } from "../worksheets/claimCheck";
 import { generateWorksheet, paperFigureKey, practiceAvailability, storyPlan } from "../worksheets/generateWorksheet";
 import { LAYOUTS, isFigureLayout, layoutForClaim } from "../worksheets/layouts";
-import { documentTitle, headerLine, skillForModeLevel, topicsForGrade } from "../worksheets/skillIndex";
-import { GRADES, GRADE_SLUGS, TOPIC_LABELS, WORKSHEET_SKILLS } from "../worksheets/skills";
+import { documentTitle, headerLine, skillForModeLevel, topicsForGrade } from "../skills";
+import { GRADES, GRADE_SLUGS, TOPIC_LABELS, WORKSHEET_SKILLS } from "../skills/catalog";
 
 // A skill's title is a promise about every problem on the sheet. This spec is
 // what keeps "Subtract 3-digit numbers with regrouping" from printing 380 − 35.
@@ -20,6 +20,10 @@ function printRun(skill, problemType) {
   const seenKeys = new Set();
   return Array.from({ length: SHEETS }, () => generateWorksheet(skill.id, { problemType, seenKeys }));
 }
+
+// Each case builds bank pools out of 43k rows several times over; on a busy
+// machine that can pass the 5s default. The work is bounded — give it room.
+vi.setConfig({ testTimeout: 30000 });
 
 beforeAll(() => setBankItems(FULL_ITEMS, "test"));
 

@@ -6,7 +6,7 @@ import {
   ALTITUDE_BONUS,
   CIRCLE_BACK_CAP,
 } from "../mathEngine";
-import { gamStepEnabled, flightReportEnabled } from "../gamificationFlags.js";
+import { gamStepEnabled, flightReportEnabled, skillsPlayEnabled } from "../gamificationFlags.js";
 import { emptyEngagement, applySessionEnd, isFirstWeek } from "../engagement/engagementStore.js";
 
 // Gamification spec §01: four payouts, settled once at the end of a flight.
@@ -110,5 +110,17 @@ describe("firstFlightDay / isFirstWeek (§02 ledger default)", () => {
     const eom = { ...emptyEngagement(), firstFlightDay: "2026-08-29" };
     expect(isFirstWeek(eom, "2026-09-04")).toBe(true);
     expect(isFirstWeek(eom, "2026-09-05")).toBe(false);
+  });
+});
+
+describe("skillsPlay is not a gamification step", () => {
+  it("the production master switch does not turn it on; only its own switch does", () => {
+    // VITE_GAM_ALL is already "true" in prod. Play-by-skill must not switch
+    // itself on at merge — before iOS has it and before its migration exists.
+    expect(skillsPlayEnabled({ VITE_GAM_ALL: "true" })).toBe(false);
+    expect(gamStepEnabled("skillsPlay", { VITE_GAM_ALL: "true" })).toBe(false);
+    expect(skillsPlayEnabled({ VITE_SKILLS_PLAY: "true" })).toBe(true);
+    expect(skillsPlayEnabled({ VITE_SKILLS_PLAY: "false", VITE_GAM_ALL: "true" })).toBe(false);
+    expect(skillsPlayEnabled({})).toBe(false);
   });
 });

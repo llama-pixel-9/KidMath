@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import Feather from "../components/feather.jsx";
@@ -6,10 +6,12 @@ import { useTheme } from "../useTheme.js";
 import { MODE_IDS, getModeConfig } from "../modes";
 import { loadProgressSync, loadProgressSummary } from "../progressStore";
 import { loadEngagement, starBalance, currentStreak } from "./engagementStore.js";
-import { gradeWorkForLevel } from "../gradeSeed.js";
 import { gradeSpanFor } from "./gradeSpans.js";
 import { SPECIES_BY_ID } from "./roster.js";
 import { meadowEnabled } from "../gamificationFlags.js";
+import { loadSessions, loadSessionsSync } from "../analytics/sessionLog.js";
+import { skillStanding } from "../analytics/reportModel.js";
+import { deriveMastery } from "../skills/mastery.js";
 
 /**
  * The parent snapshot: one screen answering "is my kid practicing, and where
@@ -28,9 +30,18 @@ function localSummary() {
 export default function GrownUpsPanel({ open, onClose }) {
   const { theme } = useTheme();
   const [summary, setSummary] = useState(localSummary);
+  // Standing is told in skills mastered, and mastery is read off the practice
+  // log — this device's first, then the family account's when signed in.
+  const [practiceLog, setPracticeLog] = useState(loadSessionsSync);
+  const mastery = useMemo(() => deriveMastery(practiceLog), [practiceLog]);
   useEffect(() => {
     if (!open) return undefined;
     let cancelled = false;
+    loadSessions()
+      .then(({ sessions }) => {
+        if (!cancelled) setPracticeLog(sessions);
+      })
+      .catch(() => {});
     // The async read re-reads localStorage for anonymous play too, so it
     // refreshes the initial snapshot on every open.
     loadProgressSummary()
@@ -86,7 +97,7 @@ export default function GrownUpsPanel({ open, onClose }) {
             {summary.source === "cloud"
               ? "Practice across your family account."
               : "Practice on this device."}{" "}
-            Levels climb by skill, not time — the grade range says what each activity covers.
+            Each topic is a set of skills by grade; a skill is mastered on steady first-try accuracy, not speed.
           </p>
           <p className="text-sm mb-4">
             <Link to="/report" className="font-bold text-teal underline underline-offset-2" onClick={onClose}>
@@ -134,7 +145,7 @@ export default function GrownUpsPanel({ open, onClose }) {
             <table className="w-full text-sm">
               <thead className="text-left text-[11px] uppercase text-slate-400">
                 <tr>
-                  <th className="py-1.5">Skill</th>
+                  <th className="py-1.5">Topic</th>
                   <th className="py-1.5">Standing</th>
                   <th className="py-1.5 text-right">Stars</th>
                   <th className="py-1.5 text-right">In review</th>
@@ -142,19 +153,39 @@ export default function GrownUpsPanel({ open, onClose }) {
               </thead>
               <tbody>
                 {rows.map(({ id, progress }) => {
-                  const level = progress.level ?? 1;
+                  const standing = skillStanding(id, progress.level ?? 1, progress, mastery);
                   const reviewCount = Array.isArray(progress.mistakeBank) ? progress.mistakeBank.length : 0;
                   return (
                     <tr key={id} className="border-t border-slate-100">
                       <td className="py-2">
-                        <p className="font-bold text-slate-700">{getModeConfig(id).shortLabel}</p>
-                        <p className="text-[11px] text-slate-400">Grades {gradeSpanFor(id)}</p>
+                        <p className="font-bold text-slate-700">{standing?.topicLabel || getModeConfig(id).shortLabel}</p>
+                        <p className="text-[11px] text-slate-400">
+                          Grades{" "}
+                          {standing
+                            ? standing.topicGrades.length > 1
+                              ? `${standing.topicGrades[0]}–${standing.topicGrades.at(-1)}`
+                              : standing.topicGrades[0]
+                            : gradeSpanFor(id)}
+                        </p>
                       </td>
                       {/* Parents get plain vocabulary — no rank names here (bird
                           language is kid-surface only). */}
                       <td className="py-2 text-slate-600 font-semibold">
-                        Level {level} of {getModeConfig(id).maxLevel ?? 10}
-                        <span className="block text-[11px] font-semibold text-slate-400">{gradeWorkForLevel(id, level)} work</span>
+                        {standing ? (
+                          <>
+                            {standing.gradeLabel} · {standing.mastered} of {standing.total} skills mastered
+                            {standing.weakest && (
+                              <span className="block text-[11px] font-semibold text-slate-400">
+                                Shaky: {standing.weakest.title} ·{" "}
+                                <Link to={`/worksheets?skill=${standing.weakest.id}`} className="text-teal underline underline-offset-2" onClick={onClose}>
+                                  print
+                                </Link>
+                              </span>
+                            )}
+                          </>
+                        ) : (
+                          "—"
+                        )}
                       </td>
                       <td className="py-2 text-right font-bold text-slate-700">{progress.lifetimeStars ?? 0}</td>
                       <td className="py-2 text-right">

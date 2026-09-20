@@ -18,6 +18,13 @@ import { GRADES } from "./catalog.js";
 import { STATES, deriveMastery, practiceOrder, stateOf, summarize } from "./mastery.js";
 import { clampGrade, gradeForModeLevel, nextTopicGrade, openGrades, playSkillById, skillsForPlay, topicGrades } from "./play.js";
 
+// The grade-up challenge keeps the Fledging Flight's numbers: six questions,
+// five to pass, three tries before one more practice session is asked for.
+export const GRADE_UP = { questions: 6, pass: 5, maxAttempts: 3 };
+// Its bookkeeping rides inside the topic's mastery map under a reserved key
+// (no skill id starts with "__"), so it is stored, merged and purged with it.
+const META = "__gradeUp";
+
 const rank = (grade) => GRADES.indexOf(grade);
 const higher = (a, b) => (rank(a) >= rank(b) ? a : b);
 
@@ -37,6 +44,7 @@ export function resolveTopic(mode, progress = {}, { profileGrade = null, session
     mode,
     grade,
     gradeUnlocked,
+    gradeUp: { attempts: 0, needsPractice: false, ...(mastery[META] || {}) },
     open: openGrades(mode, { gradeUnlocked, profileGrade }),
     mastery,
     pinnedSkillId: pinned && pinned.mode === mode ? pinned.id : null,
@@ -91,4 +99,71 @@ export function mergeTopicState(cloud = {}, local = {}) {
     pinnedSkillId: cloud.pinnedSkillId ?? local.pinnedSkillId ?? null,
     skillMastery: mastery,
   };
+}
+
+/**
+ * What finishing a grade means for this kid, right now:
+ *   "advance"    every skill mastered and the next grade is ALREADY open (the
+ *                profile grade, or a parent, opened it) — nothing to earn, the
+ *                focus simply moves up.
+ *   "challenge"  every skill mastered and the next grade is locked — it is
+ *                earned in the challenge. (`needsPractice`: three tries are
+ *                used up; one more practice session first.)
+ *   "auto"       as "challenge", but the grade has a single skill: six
+ *                questions on the one skill just mastered would test nothing.
+ *   "complete"   the topic's top grade is mastered.
+ *   null         still working on it.
+ */
+export function gradeUpStatus(topic) {
+  const view = gradeView(topic);
+  if (!view.complete) return null;
+  if (!view.nextGrade) return { kind: "complete", grade: topic.grade };
+  const base = { grade: topic.grade, nextGrade: view.nextGrade };
+  if (topic.open.includes(view.nextGrade)) return { kind: "advance", ...base };
+  if (view.total === 1) return { kind: "auto", ...base };
+  return { kind: "challenge", ...base, attempts: topic.gradeUp.attempts, needsPractice: Boolean(topic.gradeUp.needsPractice) };
+}
+
+/** The challenge: the grade's skills, shakiest first, cycled to six questions. */
+export function challengeFor(topic) {
+  const skills = skillsForPlay(topic.grade, topic.mode);
+  const accuracy = (skill) => {
+    const entry = topic.mastery[skill.id];
+    return entry?.attempts ? entry.correct / entry.attempts : 1;
+  };
+  return { skillIds: [...skills].sort((a, b) => accuracy(a) - accuracy(b)).map((s) => s.id), grade: topic.grade, challenge: true };
+}
+
+const withMeta = (topic, meta) => ({ ...topic.mastery, [META]: meta });
+
+/** Move the focus (and, when earned, the unlock) up a grade. The patch to save. */
+export function advanceGrade(topic, nextGrade) {
+  return {
+    grade: nextGrade,
+    gradeUnlocked: higher(topic.gradeUnlocked, nextGrade),
+    skillMastery: withMeta(topic, { attempts: 0, needsPractice: false }),
+  };
+}
+
+/** After a challenge: pass opens the next grade; a third miss asks for one more
+ * practice session first ("the lark wants to see one more great flight"). */
+export function applyChallengeResult(topic, firstTryCorrect) {
+  const status = gradeUpStatus(topic);
+  if (!status || status.kind !== "challenge") return { passed: false, patch: {} };
+  if (firstTryCorrect >= GRADE_UP.pass) return { passed: true, nextGrade: status.nextGrade, patch: advanceGrade(topic, status.nextGrade) };
+  const attempts = topic.gradeUp.attempts + 1;
+  const spent = attempts >= GRADE_UP.maxAttempts;
+  return { passed: false, reearn: spent, patch: { skillMastery: withMeta(topic, { attempts: spent ? 0 : attempts, needsPractice: spent }) } };
+}
+
+/** A finished practice session answers "one more practice session first". */
+export function afterPractice(mastery) {
+  const meta = mastery?.[META];
+  return meta?.needsPractice ? { ...mastery, [META]: { ...meta, needsPractice: false } } : mastery;
+}
+
+/** A parent opens a grade for a topic (the 2nd grader who is ahead). */
+export function unlockGrade(topic, grade) {
+  if (!topicGrades(topic.mode).includes(grade)) return {};
+  return { gradeUnlocked: higher(topic.gradeUnlocked, grade), grade };
 }

@@ -43,7 +43,7 @@ function PlayRoute() {
   // Play by skill: a topic opens on its sheet (Larkit picks / pick a skill); a
   // session is a link FROM the sheet. The admin item pin and bare /play keep
   // going straight in.
-  if (mode && skillsPlayEnabled() && !params.has("skill") && !params.has("mix") && !params.has("item")) {
+  if (mode && skillsPlayEnabled() && !params.has("skill") && !params.has("mix") && !params.has("challenge") && !params.has("item")) {
     return <TopicSheet mode={mode} />;
   }
   return <MathExplorer initialMode={mode} />;

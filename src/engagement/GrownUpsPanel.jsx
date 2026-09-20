@@ -4,7 +4,12 @@ import { Link } from "react-router-dom";
 import Feather from "../components/feather.jsx";
 import { useTheme } from "../useTheme.js";
 import { MODE_IDS, getModeConfig } from "../modes";
-import { loadProgressSync, loadProgressSummary } from "../progressStore";
+import { loadProgressSync, loadProgressSummary, saveTopicState } from "../progressStore";
+import { activeKidGrade } from "../kidProfiles";
+import { skillsPlayEnabled } from "../gamificationFlags.js";
+import { GRADE_LABELS } from "../skills/catalog.js";
+import { skillsForPlay, topicGrades } from "../skills/play.js";
+import { resolveTopic, unlockGrade } from "../skills/topicState.js";
 import { loadEngagement, starBalance, currentStreak } from "./engagementStore.js";
 import { gradeSpanFor } from "./gradeSpans.js";
 import { SPECIES_BY_ID } from "./roster.js";
@@ -25,6 +30,46 @@ function localSummary() {
     source: "local",
     byMode: Object.fromEntries(MODE_IDS.map((id) => [id, loadProgressSync(id)])),
   };
+}
+
+function TopicControls({ id, progress, practiceLog, onChange }) {
+  const topic = resolveTopic(id, progress, { profileGrade: activeKidGrade(), sessions: practiceLog });
+  if (!topic) return null;
+  const label = `${getModeConfig(id).shortLabel}`;
+  const select = "mt-1 w-full rounded-lg border border-slate-200 bg-white px-2 py-1 text-[12px] font-semibold text-slate-600";
+  return (
+    <span className="mt-1.5 block space-y-1">
+      <select
+        className={select}
+        aria-label={`Open a grade for ${label}`}
+        value={topic.gradeUnlocked}
+        onChange={(e) => onChange(id, unlockGrade(topic, e.target.value))}
+      >
+        {topicGrades(id).map((g) => (
+          <option key={g} value={g}>
+            {topic.open.includes(g) ? `${GRADE_LABELS[g]} — open` : `Open ${GRADE_LABELS[g]}`}
+          </option>
+        ))}
+      </select>
+      <select
+        className={select}
+        aria-label={`Pin a skill for ${label}`}
+        value={topic.pinnedSkillId || ""}
+        onChange={(e) => onChange(id, { pinnedSkillId: e.target.value || null })}
+      >
+        <option value="">No pinned skill — Larkit picks</option>
+        {topic.open.map((g) => (
+          <optgroup key={g} label={GRADE_LABELS[g]}>
+            {skillsForPlay(g, id).map((skill) => (
+              <option key={skill.id} value={skill.id}>
+                {skill.title}
+              </option>
+            ))}
+          </optgroup>
+        ))}
+      </select>
+    </span>
+  );
 }
 
 export default function GrownUpsPanel({ open, onClose }) {
@@ -54,6 +99,15 @@ export default function GrownUpsPanel({ open, onClose }) {
     };
   }, [open]);
   if (!open) return null;
+
+  // The two things a grown-up can decide for a kid (play by skill): open a
+  // grade for a topic — the 2nd grader who is ahead in multiplication — and
+  // pin one skill, which becomes what "Practice" plays until it is mastered.
+  const bySkill = skillsPlayEnabled();
+  const changeTopic = async (id, patch) => {
+    await saveTopicState(id, patch).catch(() => {});
+    setSummary(await loadProgressSummary().catch(() => localSummary()));
+  };
 
   const eng = loadEngagement();
   const streak = currentStreak(eng);
@@ -186,8 +240,9 @@ export default function GrownUpsPanel({ open, onClose }) {
                         ) : (
                           "—"
                         )}
+                        {bySkill && standing && <TopicControls id={id} progress={progress} practiceLog={practiceLog} onChange={changeTopic} />}
                       </td>
-                      <td className="py-2 text-right font-bold text-slate-700">{progress.lifetimeStars ?? 0}</td>
+                      <td className="py-2 text-right font-bold text-slate-700 align-top">{progress.lifetimeStars ?? 0}</td>
                       <td className="py-2 text-right">
                         {reviewCount > 0 ? (
                           <span className="font-bold text-amber-600" title="Tricky problems the app will bring back">

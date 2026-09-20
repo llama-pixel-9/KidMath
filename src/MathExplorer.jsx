@@ -66,7 +66,7 @@ import { loadTopic } from "./itemBank/loadTopic.js";
 import { loadSessionsSync } from "./analytics/sessionLog.js";
 import { playSkillById } from "./skills/play.js";
 import { applySession } from "./skills/mastery.js";
-import { gradeView, larkitPicks, resolveTopic } from "./skills/topicState.js";
+import { GRADE_UP, advanceGrade, afterPractice, applyChallengeResult, challengeFor, gradeUpStatus, gradeView, larkitPicks, resolveTopic } from "./skills/topicState.js";
 import { GRADE_LABELS, TOPIC_LABELS } from "./skills/catalog.js";
 import SkillStanding from "./play/SkillStanding.jsx";
 import { FIGURE_COLORS, useAnswerKeys, KeyHint } from "./components/kit";
@@ -278,6 +278,14 @@ function skillOptionsFor(mode) {
   if (!topic) return null;
   const pinned = playSkillById(params.get("skill"));
   if (pinned && pinned.mode === mode) return { skillId: pinned.id, grade: pinned.grade, masterySnapshot: topic.mastery };
+  // The grade-up challenge: only when it has really been earned — every skill
+  // of the focus grade mastered, the next grade still locked — never by URL alone.
+  if (params.get("challenge") === "1") {
+    const status = gradeUpStatus(topic);
+    return status?.kind === "challenge" && !status.needsPractice
+      ? { ...challengeFor(topic), fledging: true, masterySnapshot: topic.mastery }
+      : null;
+  }
   if (params.get("mix") !== "1") return null;
   // "Larkit picks": the skill a parent pinned while it is unmastered, else the
   // chosen (open) grade's skills with what is in motion first.
@@ -807,7 +815,7 @@ export default function MathExplorer({ initialMode }) {
   // The skills this play session is for (null = the level ladder, as ever).
   const [skillOptions] = useState(() => skillOptionsFor(startMode));
   const [session, setSession] = useState(() =>
-    createAdaptiveSession(startMode, undefined, {
+    createAdaptiveSession(startMode, skillOptions?.challenge ? GRADE_UP.questions : undefined, {
       allowWordProblems: loadAllowWordProblemsSync(),
       fledging: fledgingEnabled(),
       ladderV2: ladderV2Enabled(),
@@ -1159,8 +1167,9 @@ export default function MathExplorer({ initialMode }) {
     // §01: the four-part settlement replaces one-star-per-first-try when the
     // Flight Report is on. Quitting mid-flight never reaches here, so an
     // unfinished flight pays nothing either way.
-    const payout = gamFlightReport ? summarizeFlight(sess) : null;
-    const starsEarned = payout ? payout.total : sess.firstTryCorrect ?? 0;
+    // The grade-up challenge is a test, not practice: no stars ride on it.
+    const payout = gamFlightReport && !sess.challenge ? summarizeFlight(sess) : null;
+    const starsEarned = sess.challenge ? 0 : payout ? payout.total : sess.firstTryCorrect ?? 0;
     // §03 bookkeeping at flight end: nominations set on the engine's signal,
     // rough flights (< 40% precision) clear them silently, and two consecutive
     // rough flights glide the level down one — persisted with the session.
@@ -1193,8 +1202,26 @@ export default function MathExplorer({ initialMode }) {
       let skillState = null;
       if (sess.skillIds) {
         const before = resolveTopic(mode, await loadProgress(mode), { profileGrade: activeKidGrade(), sessions: loadSessionsSync() });
-        const skillMastery = applySession(before.mastery, closedRecord);
+        // (A challenge record is kind "fledging", which the reducer ignores.)
+        const skillMastery = afterPractice(applySession(before.mastery, closedRecord));
         skillState = { ...before.toSave, skillMastery };
+        const after = { ...before, mastery: skillMastery };
+        let gradeUp = null;
+        if (sess.challenge) {
+          const result = applyChallengeResult(before, sess.firstTryCorrect ?? 0);
+          skillState = { ...skillState, ...result.patch };
+          gradeUp = { challenge: true, passed: result.passed, reearn: Boolean(result.reearn), nextGrade: result.nextGrade, score: sess.firstTryCorrect ?? 0 };
+        } else {
+          const status = gradeUpStatus(after);
+          if (status?.kind === "advance" || status?.kind === "auto") {
+            // Nothing left to earn (the next grade is open, or this grade was a
+            // single skill): the focus moves up now.
+            skillState = { ...skillState, ...advanceGrade(after, status.nextGrade) };
+            gradeUp = { passed: true, nextGrade: status.nextGrade };
+          } else if (status) {
+            gradeUp = { ready: status.kind === "challenge", complete: status.kind === "complete", nextGrade: status.nextGrade };
+          }
+        }
         const view = gradeView({ ...before, mastery: skillMastery }, sess.grade);
         setSkillStanding({
           gradeLabel: GRADE_LABELS[sess.grade],
@@ -1203,15 +1230,18 @@ export default function MathExplorer({ initialMode }) {
           mastered: view.mastered,
           total: view.total,
           newlyMastered: Object.keys(skillMastery)
-            .filter((id) => skillMastery[id].state === "mastered" && before.mastery[id]?.state !== "mastered")
+            .filter((id) => skillMastery[id]?.state === "mastered" && before.mastery[id]?.state !== "mastered")
             .map((id) => playSkillById(id)?.title)
             .filter(Boolean),
+          gradeUp: gradeUp && { ...gradeUp, nextGradeLabel: gradeUp.nextGrade ? GRADE_LABELS[gradeUp.nextGrade] : null },
         });
       }
       lt = await persistSession(
         mode,
         sess,
-        payout ? payout.total : undefined,
+        // A challenge pays nothing — and `undefined` would fall back to one
+        // star per right answer.
+        sess.challenge ? 0 : payout ? payout.total : undefined,
         fledgeOutcome?.glideDown || savedLevel != null ? levelAfter : undefined,
         skillState
       );

@@ -132,3 +132,71 @@ test("Larkit picks plays the grade's skills, and the end card says where the kid
   expect(saved.level).toBe(9);
   expect(saved.skillMastery["sub-across-zeros"].state).toBe("mastered");
 });
+
+// ── moving up a grade is earned ────────────────────────────────────────────
+
+const masteredLog = (ids) => ids.flatMap((id, i) => [practiced(id, "11111", 9 + i), practiced(id, "11111", 3 + i)]);
+const GRADE3_SUBTRACTION = ["sub-3digit-regroup", "sub-across-zeros", "sub-missing-number-1000"];
+
+test("every skill mastered → the challenge is offered; five of six opens the next grade, with no stars", async ({ page }) => {
+  await seedKid(page, {
+    progress: { subtraction: { level: 9, mistakeBank: [], totalSessions: 6, lifetimeStars: 30, bankItemStats: {}, recentBankItemIds: [], grade: "3" } },
+    sessions: masteredLog(GRADE3_SUBTRACTION),
+  });
+  await page.goto("/play/subtraction");
+  await expect(page.getByText("Every Grade 3 skill mastered!")).toBeVisible();
+  await page.getByRole("button", { name: "Take the Grade 4 challenge" }).click();
+  await expect(page).toHaveURL(/challenge=1/);
+
+  let seq = 0;
+  const asked = [];
+  for (let i = 0; i < 6; i += 1) {
+    const next = await nextQuestion(page, seq);
+    seq = next.seq;
+    asked.push(next.q.skillId);
+    if (i === 0) await expect(page.getByText("Grade 3 challenge")).toBeVisible();
+    await answerQuestion(page, next.q);
+  }
+  // Six questions, spread across the grade's skills.
+  expect(new Set(asked)).toEqual(new Set(GRADE3_SUBTRACTION));
+  await page.waitForFunction(() => window.__kidmathQA?.done === true, null, { timeout: 20000 });
+  await expect(page.getByText("You finished Grade 3 Subtraction!")).toBeVisible();
+  await expect(page.getByText("Grade 4 is open.")).toBeVisible();
+
+  const saved = await page.evaluate(() => JSON.parse(localStorage.getItem("kidmath-progress")).subtraction);
+  expect(saved).toMatchObject({ grade: "4", gradeUnlocked: "4", level: 9, lifetimeStars: 30 });
+  const log = await page.evaluate(() => JSON.parse(localStorage.getItem("kidmath-sessions")));
+  expect(log.at(-1)).toMatchObject({ kind: "fledging", starsEarned: 0 });
+
+  // Back on the sheet: Grade 4 is the focus now, Grade 3 still open below it.
+  await page.goto("/play/subtraction");
+  await expect(page.getByText("0 of 1 Grade 4 skills mastered")).toBeVisible();
+  await expect(page.getByRole("button", { name: "Grade 3", exact: true })).toBeVisible();
+});
+
+test("the challenge cannot be reached by URL alone", async ({ page }) => {
+  await seedKid(page, { progress: { subtraction: { level: 9, mistakeBank: [], totalSessions: 2, lifetimeStars: 0, bankItemStats: {}, recentBankItemIds: [], grade: "3" } } });
+  await page.goto("/play/subtraction?challenge=1&qaFeedbackMs=120");
+  const { q } = await nextQuestion(page, 0);
+  expect(q.skillId, "not earned → an ordinary ladder session, no challenge").toBeUndefined();
+});
+
+test("a grown-up can open a grade and pin a skill; the pin becomes what Practice plays", async ({ page }) => {
+  await seedKid(page, {
+    grade: "2nd",
+    progress: { multiplication: { level: 2, mistakeBank: [], totalSessions: 2, lifetimeStars: 8, bankItemStats: {}, recentBankItemIds: [] } },
+    sessions: [practiced("mul-tables-2-5-10", "1101", 1, "multiplication")],
+  });
+  await page.goto("/");
+  await page.getByText("For grown-ups").first().click();
+  await page.getByLabel("Open a grade for Multiply").selectOption("4");
+  await page.getByLabel("Pin a skill for Multiply").selectOption("mul-2digit-by-1digit");
+  await expect
+    .poll(() => page.evaluate(() => JSON.parse(localStorage.getItem("kidmath-progress")).multiplication))
+    .toMatchObject({ gradeUnlocked: "4", pinnedSkillId: "mul-2digit-by-1digit", level: 2 });
+
+  await page.goto("/play/multiplication");
+  await expect(page.getByRole("button", { name: /Practice — Multiply a 2-digit number by a 1-digit number/ })).toBeVisible();
+  await expect(page.getByText("Picked by a grown-up.")).toBeVisible();
+  await expect(page.getByRole("button", { name: "Grade 4", exact: true })).toBeVisible();
+});

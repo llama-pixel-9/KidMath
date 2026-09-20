@@ -2,8 +2,8 @@ import { describe, expect, it } from "vitest";
 import { MODE_IDS } from "../modes";
 import { maxLevelForMode } from "../modeLevels";
 import { applySession } from "../skills/mastery";
-import { skillsForPlay, topicGrades } from "../skills/play";
-import { gradeView, larkitPicks, mergeTopicState, resolveTopic } from "../skills/topicState";
+import { nextTopicGrade, skillsForPlay, topicGrades } from "../skills/play";
+import { GRADE_UP, advanceGrade, afterPractice, applyChallengeResult, challengeFor, gradeUpStatus, gradeView, larkitPicks, mergeTopicState, resolveTopic, unlockGrade } from "../skills/topicState";
 
 let clock = 0;
 const session = (skillId, marks, mode = "subtraction") => {
@@ -92,5 +92,66 @@ describe("signing in merges a device's skills into the account's", () => {
     expect(merged).toMatchObject({ grade: "3", gradeUnlocked: "3", pinnedSkillId: "sub-across-zeros" });
     expect(merged.skillMastery["sub-across-zeros"].state).toBe("mastered");
     expect(merged.skillMastery["sub-3digit-regroup"].attempts).toBe(6);
+  });
+});
+
+describe("moving up a grade is earned", () => {
+  const grade3 = skillsForPlay("3", "subtraction");
+  const mastered3 = masterAll(grade3, "subtraction");
+  const kid = (profileGrade, extra = {}) =>
+    resolveTopic("subtraction", { level: 9, totalSessions: 9, grade: "3", ...extra }, { profileGrade, sessions: mastered3 });
+
+  it("still working → nothing; all mastered and the next grade locked → the challenge", () => {
+    expect(gradeUpStatus(resolveTopic("subtraction", { grade: "3", level: 9, totalSessions: 1 }, { profileGrade: "3rd" }))).toBeNull();
+    expect(gradeUpStatus(kid("3rd"))).toMatchObject({ kind: "challenge", grade: "3", nextGrade: "4", attempts: 0, needsPractice: false });
+  });
+
+  it("all mastered and the next grade already open (profile grade, or a parent) → the focus just moves up", () => {
+    expect(gradeUpStatus(kid("4th"))).toMatchObject({ kind: "advance", nextGrade: "4" });
+    expect(gradeUpStatus(kid("3rd", { gradeUnlocked: "4" }))).toMatchObject({ kind: "advance" });
+    expect(advanceGrade(kid("4th"), "4")).toMatchObject({ grade: "4", gradeUnlocked: "4" });
+  });
+
+  it("a one-skill grade skips the challenge; the top grade is 'complete'", () => {
+    const one = MODE_IDS.flatMap((mode) => topicGrades(mode).map((g) => [mode, g])).find(([mode, g]) => skillsForPlay(g, mode).length === 1 && nextTopicGrade(mode, g));
+    expect(one, "the catalog has single-skill grades").toBeTruthy();
+    const [mode, g] = one;
+    const topic = resolveTopic(mode, { level: 1, totalSessions: 3, grade: g }, { profileGrade: g, sessions: masterAll(skillsForPlay(g, mode), mode) });
+    expect(["auto", "advance"]).toContain(gradeUpStatus(topic).kind);
+
+    const top = topicGrades("subtraction").at(-1);
+    const done = resolveTopic("subtraction", { level: 10, totalSessions: 9, grade: top }, { profileGrade: "5th", sessions: masterAll(skillsForPlay(top, "subtraction"), "subtraction") });
+    expect(gradeUpStatus(done)).toEqual({ kind: "complete", grade: top });
+  });
+
+  it("the challenge walks the grade's skills, shakiest first", () => {
+    const shaky = [...mastered3, session(grade3[1].id, "0000")];
+    const topic = resolveTopic("subtraction", { level: 9, totalSessions: 9, grade: "3" }, { profileGrade: "3rd", sessions: shaky });
+    expect(challengeFor(topic)).toMatchObject({ challenge: true, grade: "3" });
+    expect(challengeFor(topic).skillIds[0]).toBe(grade3[1].id);
+  });
+
+  it("five of six opens the next grade; a third miss asks for one more practice session, which a session then answers", () => {
+    let topic = kid("3rd");
+    expect(applyChallengeResult(topic, GRADE_UP.pass)).toMatchObject({ passed: true, nextGrade: "4", patch: { grade: "4", gradeUnlocked: "4" } });
+
+    for (let miss = 1; miss <= GRADE_UP.maxAttempts; miss += 1) {
+      const result = applyChallengeResult(topic, 3);
+      expect(result.passed).toBe(false);
+      expect(Boolean(result.reearn)).toBe(miss === GRADE_UP.maxAttempts);
+      topic = resolveTopic("subtraction", { level: 9, totalSessions: 9, grade: "3", skillMastery: result.patch.skillMastery }, { profileGrade: "3rd" });
+    }
+    expect(gradeUpStatus(topic)).toMatchObject({ kind: "challenge", needsPractice: true, attempts: 0 });
+    const practiced = resolveTopic("subtraction", { level: 9, totalSessions: 10, grade: "3", skillMastery: afterPractice(topic.mastery) }, { profileGrade: "3rd" });
+    expect(gradeUpStatus(practiced)).toMatchObject({ kind: "challenge", needsPractice: false });
+    // The bookkeeping never counts as a skill.
+    expect(gradeView(practiced).total).toBe(grade3.length);
+  });
+
+  it("a parent can open a later grade; it never closes an earned one", () => {
+    const topic = resolveTopic("multiplication", {}, { profileGrade: "2nd" });
+    expect(unlockGrade(topic, "4")).toMatchObject({ gradeUnlocked: "4", grade: "4" });
+    expect(unlockGrade(kid("3rd", { gradeUnlocked: "4" }), "2")).toMatchObject({ gradeUnlocked: "4", grade: "2" });
+    expect(unlockGrade(topic, "9")).toEqual({});
   });
 });

@@ -9,8 +9,9 @@ import { loadSessions, loadSessionsSync } from "../analytics/sessionLog.js";
 import { loadTopic } from "../itemBank/loadTopic.js";
 import { speak, speechAvailable } from "../speech.js";
 import { GRADE_LABELS, TOPIC_LABELS } from "../skills/catalog.js";
-import { MASTERY_RULE } from "../skills/mastery.js";
-import { gradeView, resolveTopic } from "../skills/topicState.js";
+import { MASTERY_RULE, STATES, stateOf } from "../skills/mastery.js";
+import { playSkillById } from "../skills/play.js";
+import { GRADE_UP, advanceGrade, gradeUpStatus, gradeView, resolveTopic } from "../skills/topicState.js";
 
 /**
  * What a kid sees after tapping a topic: one big default — "Practice — Larkit
@@ -38,7 +39,17 @@ export default function TopicSheet({ mode }) {
   const profileGrade = activeKidGrade();
   const [progress, setProgress] = useState(() => loadProgressSync(mode));
   const [sessions, setSessions] = useState(loadSessionsSync);
-  const topic = useMemo(() => resolveTopic(mode, progress, { profileGrade, sessions }), [mode, progress, profileGrade, sessions]);
+  const topic = useMemo(() => {
+    const resolved = resolveTopic(mode, progress, { profileGrade, sessions });
+    // A finished grade whose next grade is already open (or that was a single
+    // skill) has nothing left to earn: the focus moves up, and that is saved
+    // along with anything else the store was missing.
+    const status = resolved ? gradeUpStatus(resolved) : null;
+    if (status?.kind !== "advance" && status?.kind !== "auto") return resolved;
+    const patch = advanceGrade(resolved, status.nextGrade);
+    const moved = resolveTopic(mode, { ...progress, ...resolved.toSave, ...patch }, { profileGrade, sessions });
+    return { ...moved, toSave: { ...resolved.toSave, ...patch } };
+  }, [mode, progress, profileGrade, sessions]);
   const [shownGrade, setShownGrade] = useState(null);
   const grade = shownGrade && topic?.open.includes(shownGrade) ? shownGrade : topic?.grade;
   const view = useMemo(() => (topic ? gradeView(topic, grade) : null), [topic, grade]);
@@ -70,9 +81,14 @@ export default function TopicSheet({ mode }) {
     if (pending !== "{}") saveTopicState(mode, JSON.parse(pending)).catch(() => {});
   }, [mode, pending]);
 
-  if (!topic || !view) return null;
+  const status = useMemo(() => (topic ? gradeUpStatus(topic) : null), [topic]);
 
-  const pinned = topic.pinnedSkillId ? view.skills.find((s) => s.id === topic.pinnedSkillId && s.state !== "mastered") : null;
+  if (!topic || !view) return null;
+  const challenge = status?.kind === "challenge" && grade === topic.grade ? status : null;
+
+  // A grown-up's pin wins whatever grade is showing — until it is mastered.
+  const pinned =
+    topic.pinnedSkillId && stateOf(topic.mastery, topic.pinnedSkillId) !== STATES.MASTERED ? playSkillById(topic.pinnedSkillId) : null;
   const start = (query) => navigate(`/play/${mode}?${query}`);
 
   return (
@@ -97,6 +113,27 @@ export default function TopicSheet({ mode }) {
                 {g}
               </button>
             ))}
+          </div>
+        )}
+
+        {challenge && (
+          <div className="mt-5 rounded-2xl bg-sun-light px-4 py-3 text-ink">
+            <p className="text-[15px] font-extrabold">Every {GRADE_LABELS[grade]} skill mastered!</p>
+            {challenge.needsPractice ? (
+              <p className="text-[14px] font-bold text-ink/80">One more good practice first, then the {GRADE_LABELS[challenge.nextGrade]} challenge comes back.</p>
+            ) : (
+              <>
+                <p className="text-[14px] font-bold text-ink/80">
+                  {GRADE_UP.questions} questions, {GRADE_UP.pass} to pass — and {GRADE_LABELS[challenge.nextGrade]} opens. No stars ride on it.
+                </p>
+                <button
+                  className="mt-2 w-full h-12 rounded-[14px] bg-ink text-cream font-display font-semibold text-lg cursor-pointer"
+                  onClick={() => start("challenge=1")}
+                >
+                  Take the {GRADE_LABELS[challenge.nextGrade]} challenge
+                </button>
+              </>
+            )}
           </div>
         )}
 

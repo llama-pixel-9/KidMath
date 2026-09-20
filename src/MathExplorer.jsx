@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import { usePremium } from "./PremiumContext";
+import { isFreeMode } from "./premium";
 import { motion, AnimatePresence, MotionConfig, useReducedMotion } from "framer-motion";
 import {
   Plus,
@@ -62,8 +64,11 @@ import { getModeConfig } from "./modes";
 import { ensureModeLoaded } from "./itemBank.js";
 import { loadTopic } from "./itemBank/loadTopic.js";
 import { loadSessionsSync } from "./analytics/sessionLog.js";
-import { deriveMastery } from "./skills/mastery.js";
-import { clampGrade, playSkillById, skillsForPlay, topicGrades } from "./skills/play.js";
+import { playSkillById } from "./skills/play.js";
+import { applySession } from "./skills/mastery.js";
+import { gradeView, larkitPicks, resolveTopic } from "./skills/topicState.js";
+import { GRADE_LABELS, TOPIC_LABELS } from "./skills/catalog.js";
+import SkillStanding from "./play/SkillStanding.jsx";
 import { FIGURE_COLORS, useAnswerKeys, KeyHint } from "./components/kit";
 import { saveProgress, loadProgress, loadProgressSync, mergeLocalToCloud } from "./progressStore";
 import { recordSessionEnd, currentStreak, starsToday, starBalance, isFirstWeek } from "./engagement/engagementStore";
@@ -176,8 +181,11 @@ function isLikelyLowEndDevice() {
   return iPadUA || iPadDesktopUA || lowCores || lowMemory;
 }
 
-async function persistSession(mode, session, starsEarned, levelOverride) {
+async function persistSession(mode, session, starsEarned, levelOverride, skillState) {
   await saveProgress(mode, {
+    // Skill sessions: the topic's mastery after this session (+ the grade
+    // pointer the first time). Absent on ladder sessions.
+    ...(skillState || {}),
     level: levelOverride ?? session.level,
     mistakeBank: session.mistakeBank,
     firstTryCorrect: session.firstTryCorrect,
@@ -266,13 +274,15 @@ function skillOptionsFor(mode) {
   } catch {
     return null;
   }
-  const masterySnapshot = () => deriveMastery(loadSessionsSync());
+  const topic = resolveTopic(mode, loadProgressSync(mode), { profileGrade: activeKidGrade(), sessions: loadSessionsSync() });
+  if (!topic) return null;
   const pinned = playSkillById(params.get("skill"));
-  if (pinned && pinned.mode === mode) return { skillId: pinned.id, grade: pinned.grade, masterySnapshot: masterySnapshot() };
+  if (pinned && pinned.mode === mode) return { skillId: pinned.id, grade: pinned.grade, masterySnapshot: topic.mastery };
   if (params.get("mix") !== "1") return null;
-  const grade = topicGrades(mode).includes(params.get("grade")) ? params.get("grade") : clampGrade(mode, activeKidGrade());
-  const skills = grade ? skillsForPlay(grade, mode) : [];
-  return skills.length ? { skillIds: skills.map((s) => s.id), grade, masterySnapshot: masterySnapshot() } : null;
+  // "Larkit picks": the skill a parent pinned while it is unmastered, else the
+  // chosen (open) grade's skills with what is in motion first.
+  const grade = topic.open.includes(params.get("grade")) ? params.get("grade") : topic.grade;
+  return { ...larkitPicks({ ...topic, grade }), masterySnapshot: topic.mastery };
 }
 
 // `/play/<mode>?item=<itemId>` pins one bank row: every question in the
@@ -288,7 +298,9 @@ function getPinnedItemId() {
 }
 const PINNED_ITEM_ID = typeof window === "undefined" ? null : getPinnedItemId();
 
-function CircularProgress({ current, total, level }) {
+// `label` replaces the level chip on a skill session: the skill being
+// practiced, or "Mixed · Grade 3".
+function CircularProgress({ current, total, level, label = null }) {
   const { theme } = useTheme();
   const radius = 38;
   const circumference = 2 * Math.PI * radius;
@@ -324,13 +336,15 @@ function CircularProgress({ current, total, level }) {
         </div>
       </div>
       <motion.div
-        className={`px-3 py-1.5 rounded-xl bg-gradient-to-r ${theme.ctaPrimary} text-cream text-sm font-bold shadow-[0_3px_0_#064A41]`}
-        key={level}
+        className={`px-3 py-1.5 rounded-xl bg-gradient-to-r ${theme.ctaPrimary} text-cream text-sm font-bold shadow-[0_3px_0_#064A41] ${
+          label ? "max-w-[13rem] text-[13px] leading-tight" : ""
+        }`}
+        key={label || level}
         initial={{ scale: 0.8 }}
         animate={{ scale: 1 }}
         transition={{ type: "spring", stiffness: 300 }}
       >
-        Lv. {level}
+        {label || `Lv. ${level}`}
       </motion.div>
     </section>
   );
@@ -490,7 +504,7 @@ const END_CARD_PUNS = [
   "Feather in your cap!",
 ];
 
-function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, maxLevel = 10, lifetimeStars, engagement, lowMotionMode = false, onPlayAgain }) {
+function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, maxLevel = 10, skillStanding = null, lifetimeStars, engagement, lowMotionMode = false, onPlayAgain }) {
   const { theme } = useTheme();
   const navigate = useNavigate();
   const ratio = total > 0 ? firstTryCorrect / total : 0;
@@ -557,7 +571,7 @@ function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, ma
           </motion.p>
         )}
         <div className="mt-3">
-          <JourneyMap level={level} maxLevel={maxLevel} compact />
+          {skillStanding ? <SkillStanding standing={skillStanding} /> : <JourneyMap level={level} maxLevel={maxLevel} compact />}
         </div>
         {engagement?.goalJustMet && (
           <motion.p
@@ -609,6 +623,10 @@ function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, ma
 
 function SettingsPanel({ mode, allowWordProblems, onAllowWordProblemsChange, calmMode, onCalmModeChange, onModeChange, onClose }) {
   const { theme } = useTheme();
+  const navigate = useNavigate();
+  // Play by skill: a topic is chosen on Home and a skill on its sheet — there
+  // is no mode grid in here, and no difficulty that "adjusts automatically".
+  const bySkill = skillsPlayEnabled();
   return (
     <motion.div
       data-blocks-keys="" className="fixed inset-0 z-40 flex items-end sm:items-center justify-center bg-black/30 backdrop-blur-sm"
@@ -627,7 +645,15 @@ function SettingsPanel({ mode, allowWordProblems, onAllowWordProblemsChange, cal
       >
         <h2 className={`text-2xl font-extrabold ${theme.textPrimary} text-center mb-5`}>Settings</h2>
 
-        <div className="mb-5">
+        {bySkill && (
+          <button
+            className={`w-full mb-5 h-12 rounded-2xl border-2 ${theme.cardBorder} bg-white font-bold ${theme.textPrimary} cursor-pointer`}
+            onClick={() => navigate(`/play/${mode}`)}
+          >
+            ← Change skill or topic
+          </button>
+        )}
+        <div className={bySkill ? "hidden" : "mb-5"}>
           <p className={`text-sm font-semibold ${theme.textSecondary} mb-2 uppercase tracking-wide`}>Mode</p>
           <div className="grid grid-cols-4 gap-2">
             {MODES.map((m) => {
@@ -653,7 +679,7 @@ function SettingsPanel({ mode, allowWordProblems, onAllowWordProblemsChange, cal
           </div>
         </div>
 
-        <p className={`text-xs ${theme.textMuted} text-center mb-4`}>
+        <p className={`text-xs ${theme.textMuted} text-center mb-4 ${bySkill ? "hidden" : ""}`}>
           Difficulty adjusts automatically based on how you play!
         </p>
 
@@ -772,6 +798,7 @@ export default function MathExplorer({ initialMode }) {
   const startMode = initialMode || "addition";
   const { theme } = useTheme();
   const { user, signInWithGoogle } = useAuth();
+  const { isPremium, loading: premiumLoading, openPaywall } = usePremium();
   const prefersReducedMotion = useReducedMotion();
   const [lowEndDevice] = useState(() => isLikelyLowEndDevice());
   const [forcedInputType] = useState(() => getForcedInputType());
@@ -797,6 +824,16 @@ export default function MathExplorer({ initialMode }) {
   const [showComplete, setShowComplete] = useState(false);
   const [shakenChoice, setShakenChoice] = useState(null);
   const [showLevelUp, setShowLevelUp] = useState(false);
+  // Skills that reached mastery in the session just finished (end card).
+  const [skillStanding, setSkillStanding] = useState(null);
+  // What the chip says on a skill session: the pinned skill, or the mix's grade.
+  const sessionLabel = !session.skillIds
+    ? null
+    : session.challenge
+      ? `${GRADE_LABELS[session.grade]} challenge`
+      : session.pinned
+        ? playSkillById(session.skillIds[0])?.title
+        : `Mixed · ${GRADE_LABELS[session.grade]}`;
   const [revealAnswer, setRevealAnswer] = useState(null);
   const [lifetimeStars, setLifetimeStars] = useState(0);
   const [engagement, setEngagement] = useState(null);
@@ -924,7 +961,7 @@ export default function MathExplorer({ initialMode }) {
       ladderV2: ladderV2Enabled(),
       qaVariety: QA_VARIETY,
       // "Play again" replays the same skills; a different topic is the ladder.
-      ...(targetMode === startMode && skillOptions ? { ...skillOptions, masterySnapshot: deriveMastery(loadSessionsSync()) } : {}),
+      ...(targetMode === startMode ? skillOptionsFor(targetMode) || {} : {}),
     });
     setSession(newSession);
     setFeedback(null);
@@ -935,7 +972,7 @@ export default function MathExplorer({ initialMode }) {
     // §03 step 4: a pending nomination is offered at take-off — except right
     // after a Fledging Flight, when the normal session simply begins.
     if (offer && gamFledging && nominationFor(targetMode)) setFledgingOffer(true);
-  }, [mode, allowWordProblems, gamFledging, loadNextQuestion, clearQueuedTimeouts, skillOptions, startMode]);
+  }, [mode, allowWordProblems, gamFledging, loadNextQuestion, clearQueuedTimeouts, startMode]);
 
   useEffect(() => {
     // A skill session draws from the skill's own bank cell, so its first
@@ -1054,6 +1091,13 @@ export default function MathExplorer({ initialMode }) {
   }, [clearQueuedTimeouts]);
 
   const handleModeChange = (m) => {
+    // The route gates /play/<mode>, but switching modes in here never re-ran
+    // it: a free account could walk from Addition into any paid mode.
+    if (!isFreeMode(m) && !isPremium && !premiumLoading) {
+      setShowSettings(false);
+      openPaywall();
+      return;
+    }
     telemetryRef.current.inc("modeChanges");
     telemetryRef.current.recordEvent("mode_change", { from: mode, to: m });
     setMode(m);
@@ -1135,17 +1179,39 @@ export default function MathExplorer({ initialMode }) {
     // local mirror is written synchronously, so a tab closed during the cloud
     // round-trip (or a rejected progress row) cannot erase the session from the
     // parent report.
-    saveSessionRecord(closeSessionRecord(sessionRecordRef.current, sess, { starsEarned, levelEnd: levelAfter })).catch(
+    const closedRecord = closeSessionRecord(sessionRecordRef.current, sess, { starsEarned, levelEnd: levelAfter });
+    saveSessionRecord(closedRecord).catch(
       (err) => console.warn("practice log save failed", err)
     );
     sessionRecordRef.current = null;
     let lt = null;
     try {
+      // Mastery is settled here, from the finished session, by the same
+      // reducer that can rebuild it from the practice log.
+      let skillState = null;
+      if (sess.skillIds) {
+        const before = resolveTopic(mode, await loadProgress(mode), { profileGrade: activeKidGrade(), sessions: loadSessionsSync() });
+        const skillMastery = applySession(before.mastery, closedRecord);
+        skillState = { ...before.toSave, skillMastery };
+        const view = gradeView({ ...before, mastery: skillMastery }, sess.grade);
+        setSkillStanding({
+          gradeLabel: GRADE_LABELS[sess.grade],
+          topicLabel: TOPIC_LABELS[mode],
+          skills: view.skills,
+          mastered: view.mastered,
+          total: view.total,
+          newlyMastered: Object.keys(skillMastery)
+            .filter((id) => skillMastery[id].state === "mastered" && before.mastery[id]?.state !== "mastered")
+            .map((id) => playSkillById(id)?.title)
+            .filter(Boolean),
+        });
+      }
       lt = await persistSession(
         mode,
         sess,
         payout ? payout.total : undefined,
-        fledgeOutcome?.glideDown || savedLevel != null ? levelAfter : undefined
+        fledgeOutcome?.glideDown || savedLevel != null ? levelAfter : undefined,
+        skillState
       );
     } catch (err) {
       console.warn("progress save failed", err);
@@ -1498,6 +1564,7 @@ export default function MathExplorer({ initialMode }) {
         current={session.questionsAnswered}
         total={session.sessionSize}
         level={session.level}
+        label={sessionLabel}
       />
 
       {fledgingActive && (
@@ -1631,8 +1698,9 @@ export default function MathExplorer({ initialMode }) {
               payout={flightPayout}
               total={session.questionsAnswered}
               level={session.level}
+              skillStanding={skillStanding}
               engagement={engagement}
-              nomination={gamFledging ? engagement?.nomination ?? null : null}
+              nomination={gamFledging && !session.skillIds ? engagement?.nomination ?? null : null}
               lifetimeStars={lifetimeStars}
               lowMotionMode={lowMotionMode}
               onPlayAgain={() => startNewSession()}
@@ -1644,6 +1712,7 @@ export default function MathExplorer({ initialMode }) {
               retriesMastered={session.retriesMastered}
               total={session.questionsAnswered}
               level={session.level}
+              skillStanding={skillStanding}
               lifetimeStars={lifetimeStars}
               engagement={engagement}
               lowMotionMode={lowMotionMode}

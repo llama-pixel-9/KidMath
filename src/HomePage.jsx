@@ -44,6 +44,9 @@ import GrownUpsPanel from "./engagement/GrownUpsPanel.jsx";
 import { usePremium } from "./PremiumContext";
 import { useAuth } from "./useAuth";
 import { isFreeMode } from "./premium";
+import { skillsPlayEnabled } from "./gamificationFlags.js";
+import { GRADE_LABELS } from "./skills/catalog.js";
+import { gradeView, resolveTopic } from "./skills/topicState.js";
 import { activeKidId, activeKidGrade, fetchKids } from "./kidProfiles";
 import { loadSessionsSync } from "./analytics/sessionLog.js";
 import { masterySummary, masteryLine } from "./analytics/masterySummary.js";
@@ -145,11 +148,30 @@ function groupsForGrade(grade) {
   };
 }
 
-/** Quick Start: the in-grade mode with the lowest level — the most room to grow. */
-function quickStartFor(grade) {
+/** Where a kid stands in a topic, for the tile chip and Quick Start (play by skill). */
+function topicStanding(id, grade, practiceLog) {
+  const topic = resolveTopic(id, loadProgressSync(id), { profileGrade: grade, sessions: practiceLog });
+  if (!topic) return null;
+  const view = gradeView(topic);
+  return { grade: topic.grade, mastered: view.mastered, total: view.total, started: view.mastered + view.practicing > 0 };
+}
+
+/**
+ * Quick Start: the in-grade topic with the most room to grow — and one the
+ * family can actually open (it used to pick locked modes and land on the
+ * paywall). By skill: the lowest share of its grade's skills mastered. On the
+ * ladder: the lowest level.
+ */
+function quickStartFor(grade, { canPlay = () => true, practiceLog = [] } = {}) {
   if (gradeIndex(grade) == null) return null;
-  const inGrade = MODE_GROUPS.flatMap((g) => g.modeIds).filter((id) => gradeFitFor(id, grade) === "in");
+  const inGrade = MODE_GROUPS.flatMap((g) => g.modeIds).filter((id) => gradeFitFor(id, grade) === "in" && canPlay(id));
   if (!inGrade.length) return null;
+  if (skillsPlayEnabled()) {
+    return inGrade
+      .map((id) => ({ id, standing: topicStanding(id, grade, practiceLog) }))
+      .filter((t) => t.standing)
+      .sort((a, b) => a.standing.mastered / a.standing.total - b.standing.mastered / b.standing.total)[0]?.id ?? null;
+  }
   return inGrade
     .map((id) => ({ id, level: loadProgressSync(id)?.level || 1 }))
     .sort((a, b) => a.level - b.level)[0].id;
@@ -205,10 +227,15 @@ export default function HomePage() {
   // "Explore more" so a kindergartner isn't handed decimals on tile one.
   const { mainGroups, moreGroups } = useMemo(() => groupsForGrade(kid?.grade), [kid?.grade]);
   const [showMore, setShowMore] = useState(false);
-  const quickStartMode = useMemo(() => quickStartFor(kid?.grade), [kid?.grade]);
+
   // Kid-facing mastery: which skills in a mode are solid, from the practice
   // log on this device (same math as the parent report).
   const practiceLog = useMemo(() => loadSessionsSync(), []);
+  const bySkill = skillsPlayEnabled();
+  const quickStartMode = useMemo(
+    () => quickStartFor(kid?.grade, { canPlay: (id) => isFreeMode(id) || isPremium || premiumLoading, practiceLog }),
+    [kid?.grade, isPremium, premiumLoading, practiceLog]
+  );
 
   const renderGroup = (group) => (
             <motion.div key={group.id} {...fadeUp}>
@@ -226,6 +253,7 @@ export default function HomePage() {
                   const tint = CARD_TINTS[COLOR_INDEX[id] % CARD_TINTS.length];
                   const locked = !isFreeMode(id) && !isPremium && !premiumLoading;
                   const lv = loadProgressSync(id)?.level || 1;
+                  const standing = bySkill && !locked ? topicStanding(id, kid?.grade, practiceLog) : null;
                   // §03 step 3: the nomination survives leaving the app as a
                   // Sun pill on the mode's card (Ink text — cream on Sun is
                   // forbidden).
@@ -262,11 +290,17 @@ export default function HomePage() {
                         </span>
                         {!locked && (
                           <span className="text-[13px] font-display text-ink bg-cream rounded-full px-2.5 py-[3px] whitespace-nowrap flex-none">
-                            {lv > 1 ? `Level ${lv}` : "New"}
+                            {bySkill
+                              ? standing?.started
+                                ? `${GRADE_LABELS[standing.grade]} · ${standing.mastered}/${standing.total}`
+                                : "New"
+                              : lv > 1
+                                ? `Level ${lv}`
+                                : "New"}
                           </span>
                         )}
                       </div>
-                      {!locked && masteryLine(masterySummary(practiceLog, id, config.subskills || [])) && (
+                      {!locked && !bySkill && masteryLine(masterySummary(practiceLog, id, config.subskills || [])) && (
                         <span className="text-[12px] font-bold text-ink/70 leading-tight">
                           {masteryLine(masterySummary(practiceLog, id, config.subskills || []))}
                         </span>
@@ -347,7 +381,7 @@ export default function HomePage() {
             >
               Pick a Game
             </button>
-            <button className={BTN_SECONDARY} onClick={() => navigate(quickStartMode ? `/play/${quickStartMode}` : "/play")}>
+            <button className={BTN_SECONDARY} onClick={() => navigate(quickStartMode ? `/play/${quickStartMode}${bySkill ? "?mix=1" : ""}` : "/play")}>
               Quick Start
             </button>
             <button className={BTN_SECONDARY} onClick={() => navigate("/worksheets")}>

@@ -1,4 +1,6 @@
-import { BrowserRouter, Navigate, Route, Routes, useParams, useLocation } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes, useParams, useLocation, useSearchParams } from "react-router-dom";
+import TopicSheet from "./play/TopicSheet.jsx";
+import { skillsPlayEnabled } from "./gamificationFlags.js";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { ThemeProvider } from "./ThemeContext";
@@ -32,10 +34,17 @@ import "./index.css";
 function PlayRoute() {
   const { mode } = useParams();
   const { isPremium, loading } = usePremium();
+  const [params] = useSearchParams();
   // Free tier: the four operations + counting, unlimited and free forever.
   // Everything else needs the subscription (deep links included).
   if (mode && !isFreeMode(mode) && !isPremium && !loading) {
     return <PremiumGate />;
+  }
+  // Play by skill: a topic opens on its sheet (Larkit picks / pick a skill); a
+  // session is a link FROM the sheet. The admin item pin and bare /play keep
+  // going straight in.
+  if (mode && skillsPlayEnabled() && !params.has("skill") && !params.has("mix") && !params.has("item")) {
+    return <TopicSheet mode={mode} />;
   }
   return <MathExplorer initialMode={mode} />;
 }

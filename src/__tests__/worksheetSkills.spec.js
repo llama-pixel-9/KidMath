@@ -13,7 +13,7 @@ import { GRADES, GRADE_SLUGS, TOPIC_LABELS, WORKSHEET_SKILLS } from "../workshee
 // what keeps "Subtract 3-digit numbers with regrouping" from printing 380 − 35.
 
 const CCSS = /^(K|[1-5])\.(CC|OA|NBT|NF|MD|G)\.[A-D]\.\d+[a-d]?$/;
-const SCREEN_VERBS = /\b(tap|press|drag|swipe|click|touch)\b/i;
+const SCREEN_VERBS = /\b(tap|press|drag|swipe|click|touch)\b|\bType (the|its|in|your|a|an)\b/i;
 const SHEETS = 3;
 
 function printRun(skill, problemType) {

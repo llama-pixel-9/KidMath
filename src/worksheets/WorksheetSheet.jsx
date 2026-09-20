@@ -99,9 +99,10 @@ function PromptFigure({ question: q, settled }) {
   const figure = getPaperFigure(q);
   if (!figure) return null;
   return (
-    // On-screen figures are drawn in soft tints; grayscale alone prints them
-    // as pale ghosts, so the contrast is pushed toward black (§15).
-    <div className="max-w-[240px] mb-1.5" style={{ filter: "grayscale(1) contrast(2.2)" }}>
+    // Figures that are drawn in soft tints on screen (bar graph, disc mat,
+    // clock) have a print design of their own, asked for with `paper: true`.
+    // A blanket contrast filter is NOT the fix: it turned pale bars white.
+    <div className="max-w-[240px] mb-1.5" style={{ filter: "grayscale(1)" }}>
       <figure.Component theme={MONO_THEME} {...(figure.props ? figure.props(q, { settled, paper: true }) : {})} />
     </div>
   );
@@ -130,19 +131,25 @@ export function PromptItem({ question: q, number, answer = null }) {
         <PromptFigure question={q} settled={answer != null} />
         <span>{body} </span>
         {subPrompt && <span>{subPrompt} </span>}
+        {/* A printed option bank is answered by circling: a blank box beside
+            four choices asks the child to copy one of them out. The key marks
+            the right one with a heavy border. */}
         {bank && (
-          <span className="inline-flex flex-wrap gap-1.5 align-middle mx-1">
+          <span className="flex flex-wrap items-center gap-1.5 mt-1 font-display font-semibold text-[13px]">
+            <span className="mr-0.5 text-[14px]">Circle one:</span>
             {bank.map((c, i) => (
               <span
                 key={i}
-                className="inline-flex items-center justify-center border border-black px-1.5 h-[22px] font-display font-semibold text-[13px]"
+                className={`inline-flex items-center justify-center rounded-full px-2.5 min-h-[24px] ${
+                  answer != null && String(c) === String(answer) ? "border-[2.5px] border-black" : "border border-black/40"
+                }`}
               >
                 {String(c)}
               </span>
             ))}
           </span>
         )}
-        {judgment ? (
+        {bank ? null : judgment ? (
           <span className="inline-flex items-center gap-2 align-middle mx-1 font-display font-semibold text-[14px]">
             <span className="mr-0.5">Circle one:</span>
             {["Yes", "No"].map((label) => (

@@ -29,7 +29,8 @@ function Gate({ x, cy, count }) {
   );
 }
 
-export default function TallyChart({ rows, theme }) {
+// `paper` (worksheets) rules the chart into a table, as a printed tally is.
+export default function TallyChart({ rows, theme, paper = false }) {
   const data = rows || [];
   const height = PAD_TOP * 2 + data.length * ROW_H;
   const secondary = theme?.textSecondary || "text-slate-500";
@@ -42,6 +43,15 @@ export default function TallyChart({ rows, theme }) {
       role="img"
       aria-label={`Tally chart. ${data.map((r) => `${r.label} ${r.count}`).join(", ")}.`}
     >
+      {paper && (
+        <g stroke="#000" strokeWidth="1.2" fill="none">
+          <rect x="1" y={PAD_TOP} width={VIEW_W - 2} height={data.length * ROW_H} />
+          <line x1={LABEL_W - 4} x2={LABEL_W - 4} y1={PAD_TOP} y2={PAD_TOP + data.length * ROW_H} />
+          {data.slice(1).map((r, i) => (
+            <line key={r.label} x1="1" x2={VIEW_W - 1} y1={PAD_TOP + (i + 1) * ROW_H} y2={PAD_TOP + (i + 1) * ROW_H} />
+          ))}
+        </g>
+      )}
       {data.map((r, i) => {
         const cy = PAD_TOP + i * ROW_H + ROW_H / 2;
         const fives = Math.floor(r.count / 5);

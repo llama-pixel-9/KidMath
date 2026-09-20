@@ -30,15 +30,15 @@ import { areaFigureSpec } from "./areaFigureSpec.js";
 export const FIGURES = {
   barGraph: {
     Component: BarChart,
-    props: (q, ctx) => ({ bars: q.display?.bars, showValues: ctx.settled }),
+    props: (q, ctx) => ({ bars: q.display?.bars, showValues: ctx.settled, paper: Boolean(ctx?.paper) }),
   },
   pictograph: {
     Component: Pictograph,
-    props: (q) => ({ rows: q.display?.rows, keyValue: q.display?.keyValue }),
+    props: (q, ctx) => ({ rows: q.display?.rows, keyValue: q.display?.keyValue, paper: Boolean(ctx?.paper) }),
   },
   tallyChart: {
     Component: TallyChart,
-    props: (q) => ({ rows: q.display?.rows }),
+    props: (q, ctx) => ({ rows: q.display?.rows, paper: Boolean(ctx?.paper) }),
   },
   linePlot: {
     Component: LinePlot,
@@ -50,7 +50,7 @@ export const FIGURES = {
   },
   discMat: {
     Component: DiscMat,
-    props: (q) => ({ cols: q.display?.discMat?.cols, mats: q.display?.discMat?.mats }),
+    props: (q, ctx) => ({ cols: q.display?.discMat?.cols, mats: q.display?.discMat?.mats, paper: Boolean(ctx?.paper) }),
   },
   clockFace: {
     Component: ClockFace,

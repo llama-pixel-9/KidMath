@@ -389,15 +389,20 @@ private struct PromptItem: View {
                 PrintFigure(question: question, engine: engine, settled: answer != nil)
                 Text([bodyText, subPrompt ?? ""].filter { !$0.isEmpty }.joined(separator: " "))
                     .font(.system(size: px(13), weight: .semibold)).foregroundStyle(ink).fixedSize(horizontal: false, vertical: true)
+                // A printed option bank is answered by circling — a blank box
+                // beside four choices asks the child to copy one out. The key
+                // marks the right one with a heavy border.
                 if let bank {
-                    HStack(spacing: px(6)) {
+                    FlowRow(spacing: px(6)) {
+                        Text("Circle one:").font(.custom("Fredoka-SemiBold", size: px(14))).foregroundStyle(ink)
                         ForEach(Array(bank.enumerated()), id: \.offset) { _, c in
+                            let chosen = answer.map { AnswerFormatting.text($0) == AnswerFormatting.text(c) } ?? false
                             Text(AnswerFormatting.text(c)).font(.custom("Fredoka-SemiBold", size: px(13))).foregroundStyle(ink)
-                                .padding(.horizontal, px(6)).frame(height: px(22)).overlay(Rectangle().stroke(ink, lineWidth: 1))
+                                .padding(.horizontal, px(10)).frame(minHeight: px(24))
+                                .overlay(Capsule().stroke(chosen ? ink : ink.opacity(0.4), lineWidth: chosen ? 2 : 1))
                         }
                     }
-                }
-                if judgment {
+                } else if judgment {
                     HStack(spacing: px(8)) {
                         Text("Circle one:").font(.custom("Fredoka-SemiBold", size: px(14))).foregroundStyle(ink)
                         ForEach(["Yes", "No"], id: \.self) { label in
@@ -487,21 +492,29 @@ private struct PrintFigure: View {
     private var display: [String: Any] { question["display"] as? [String: Any] ?? [:] }
 
     var body: some View {
+        // Figures drawn in soft tints on screen (bar graph, disc mat, clock,
+        // picture graph, tally) have a print design of their own. A blanket
+        // contrast filter is NOT the fix: it turned pale bars white.
         figure
             .frame(maxWidth: px(240), alignment: .leading)
             .grayscale(1)
-            .contrast(2.2)
     }
 
     @ViewBuilder
     private var figure: some View {
         switch display["figure"] as? String {
         case "barGraph":
-            BarChartView(display: display)
+            PaperBarChart(display: display)
         case "pictograph":
-            PictographView(rows: display["rows"] as? [[String: Any]] ?? [], keyValue: (display["keyValue"] as? NSNumber)?.doubleValue ?? 1)
+            // The chart views reserve their on-screen height; on paper the
+            // width is known, so give them exactly the height they draw.
+            let rows = display["rows"] as? [[String: Any]] ?? []
+            PictographView(rows: rows, keyValue: (display["keyValue"] as? NSNumber)?.doubleValue ?? 1, paper: true)
+                .frame(width: px(240), height: (6 + CGFloat(rows.count) * 34 + 34) * px(240) / 340, alignment: .top)
         case "tallyChart":
-            TallyChartView(rows: display["rows"] as? [[String: Any]] ?? [])
+            let rows = display["rows"] as? [[String: Any]] ?? []
+            TallyChartView(rows: rows, paper: true)
+                .frame(width: px(240), height: (16 + CGFloat(rows.count) * 40) * px(240) / 340, alignment: .top)
         case "linePlot":
             LinePlotView(points: display["points"] as? [[String: Any]] ?? [], axisLabel: display["axisLabel"] as? String)
         case "clockFace":
@@ -509,14 +522,148 @@ private struct PrintFigure: View {
             ClockFaceView(hour: (clock["hour"] as? NSNumber)?.doubleValue ?? 12, minute: (clock["minute"] as? NSNumber)?.doubleValue ?? 0, numbered: true)
         case "discMat":
             let dm = display["discMat"] as? [String: Any] ?? [:]
-            if let cols = dm["cols"] as? [[String: Any]] { DiscMatView(cols: cols, label: nil) }
+            if let cols = dm["cols"] as? [[String: Any]] { PaperDiscMat(cols: cols) }
         default:
             if (question["mode"] as? String) == "areaPerimeter" || ((question["metadata"] as? [String: Any])?["modeId"] as? String) == "areaPerimeter",
                let spec = engine.areaFigureSpec(question: question) {
                 AreaFigureView(spec: spec)
             } else if display["bars"] != nil {
-                BarChartView(display: display)
+                PaperBarChart(display: display)
             }
         }
+    }
+}
+
+// MARK: - Print designs
+
+/// The PRINTED bar graph — mirror of BarChart.jsx `paper`: a labelled value
+/// axis with gridlines (same scale rule as chartScale.js), solid black bars,
+/// and NO values on the bars: reading a bar against the scale is the skill,
+/// and a printed value hands the answer over.
+private struct PaperBarChart: View {
+    let display: [String: Any]
+
+    private let viewW: CGFloat = 340, viewH: CGFloat = 240
+    private let padLeft: CGFloat = 40, padRight: CGFloat = 10, padTop: CGFloat = 22, padBottom: CGFloat = 46
+
+    private var bars: [(label: String, value: Double)] {
+        (display["bars"] as? [[String: Any]] ?? []).map { ($0["label"] as? String ?? "?", ($0["value"] as? NSNumber)?.doubleValue ?? 0) }
+    }
+
+    var body: some View {
+        let k = px(240) / viewW
+        Canvas { ctx, _ in
+            ctx.scaleBy(x: k, y: k)
+            let plotW = viewW - padLeft - padRight, plotH = viewH - padTop - padBottom
+            let top = max(1, bars.map(\.value).max() ?? 1)
+            let step: Double = top <= 10 ? 1 : top <= 20 ? 2 : top <= 50 ? 5 : 10
+            let axisMax = (top / step).rounded(.up) * step
+            func y(_ v: Double) -> CGFloat { padTop + plotH - CGFloat(v / axisMax) * plotH }
+            func rule(_ v: Double, _ width: CGFloat, _ opacity: Double) {
+                var p = Path()
+                p.move(to: CGPoint(x: padLeft, y: y(v)))
+                p.addLine(to: CGPoint(x: padLeft + plotW, y: y(v)))
+                ctx.stroke(p, with: .color(.black.opacity(opacity)), lineWidth: width)
+            }
+            if step > 1, axisMax <= 24 {
+                for v in stride(from: 0, through: axisMax, by: 1) where v.truncatingRemainder(dividingBy: step) != 0 { rule(v, 0.6, 0.3) }
+            }
+            for v in stride(from: 0, through: axisMax, by: step) {
+                rule(v, 1, 0.6)
+                var tick = Path()
+                tick.move(to: CGPoint(x: padLeft - 4, y: y(v)))
+                tick.addLine(to: CGPoint(x: padLeft, y: y(v)))
+                ctx.stroke(tick, with: .color(.black), lineWidth: 1.5)
+                ctx.draw(Text("\(Int(v))").font(.system(size: 11, weight: .bold)).foregroundColor(.black),
+                         at: CGPoint(x: padLeft - 8, y: y(v)), anchor: .trailing)
+            }
+            var axes = Path()
+            axes.move(to: CGPoint(x: padLeft, y: padTop))
+            axes.addLine(to: CGPoint(x: padLeft, y: padTop + plotH))
+            axes.addLine(to: CGPoint(x: padLeft + plotW, y: padTop + plotH))
+            ctx.stroke(axes, with: .color(.black), lineWidth: 2)
+
+            let band = plotW / CGFloat(max(1, bars.count))
+            let barW = min(band * 0.58, 46)
+            for (i, bar) in bars.enumerated() {
+                let cx = padLeft + band * CGFloat(i) + band / 2
+                ctx.fill(Path(CGRect(x: cx - barW / 2, y: y(bar.value), width: barW, height: padTop + plotH - y(bar.value))), with: .color(.black))
+                ctx.draw(Text(bar.label).font(.system(size: 12, weight: .bold)).foregroundColor(.black),
+                         at: CGPoint(x: cx, y: padTop + plotH + 14), anchor: .center)
+            }
+        }
+        .frame(width: px(240), height: viewH * k)
+    }
+}
+
+/// The PRINTED disc mat — mirror of DiscMat.jsx `paper`: ruled columns with a
+/// header row, outlined discs two across (five rows hold nine, so fives are
+/// easy to see and the mat is half as tall).
+private struct PaperDiscMat: View {
+    let cols: [[String: Any]]
+
+    var body: some View {
+        HStack(alignment: .top, spacing: 0) {
+            ForEach(Array(cols.enumerated()), id: \.offset) { index, col in
+                let place = (col["place"] as? NSNumber)?.intValue ?? 1
+                let count = max(0, (col["count"] as? NSNumber)?.intValue ?? 0)
+                VStack(spacing: 0) {
+                    Text(verbatim: "\(place)").font(.system(size: px(12), weight: .heavy)).foregroundStyle(.black)
+                        .frame(maxWidth: .infinity).padding(.vertical, px(2))
+                        .overlay(alignment: .bottom) { Rectangle().fill(.black).frame(height: 1.2) }
+                    VStack(alignment: .leading, spacing: px(4)) {
+                        ForEach(0..<((count + 1) / 2), id: \.self) { row in
+                            HStack(spacing: px(4)) {
+                                ForEach(0..<min(2, count - row * 2), id: \.self) { _ in
+                                    Text(verbatim: "\(place)").font(.system(size: px(place >= 1000 ? 7 : 9), weight: .bold)).foregroundStyle(.black)
+                                        .frame(width: px(22), height: px(22))
+                                        .overlay(Circle().stroke(.black, lineWidth: 1.2))
+                                }
+                            }
+                        }
+                    }
+                    .padding(px(5))
+                    .frame(minWidth: px(58), minHeight: px(56), alignment: .topLeading)
+                }
+                .frame(maxHeight: .infinity, alignment: .top)
+                .overlay(alignment: .leading) { if index > 0 { Rectangle().fill(.black).frame(width: 1.2) } }
+            }
+        }
+        .fixedSize()
+        .overlay(Rectangle().stroke(.black, lineWidth: 1.2))
+    }
+}
+
+/// Wrapping row for option banks: statement-length options ("jump rope got the
+/// most") do not fit four across in half a page.
+private struct FlowRow: Layout {
+    var spacing: CGFloat
+
+    func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
+        arrange(width: proposal.width ?? .infinity, subviews: subviews).size
+    }
+
+    func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
+        for (index, origin) in arrange(width: bounds.width, subviews: subviews).origins.enumerated() {
+            subviews[index].place(at: CGPoint(x: bounds.minX + origin.x, y: bounds.minY + origin.y), proposal: .unspecified)
+        }
+    }
+
+    private func arrange(width: CGFloat, subviews: Subviews) -> (size: CGSize, origins: [CGPoint]) {
+        var origins: [CGPoint] = []
+        var x: CGFloat = 0, y: CGFloat = 0, rowHeight: CGFloat = 0, widest: CGFloat = 0
+        for subview in subviews {
+            let size = subview.sizeThatFits(.unspecified)
+            if x > 0, x + size.width > width {
+                x = 0
+                y += rowHeight + spacing
+                rowHeight = 0
+            }
+            origins.append(CGPoint(x: x, y: y))
+            x += size.width + spacing
+            rowHeight = max(rowHeight, size.height)
+            widest = max(widest, x - spacing)
+        }
+        return (CGSize(width: widest, height: y + rowHeight), origins)
     }
 }

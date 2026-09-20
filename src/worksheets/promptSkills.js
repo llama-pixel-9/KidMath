@@ -8,7 +8,8 @@
  * on-screen widget, or that are too thin for three sheets, are left out.
  *
  * Layouts: P prompt · S promptShort (mostly one-liners) · F figure (charts) ·
- * FS figureSmall (clock, rectangle, cubes; disc mats and grids are F). A figure layout
+ * FS figureSmall (clock, disc mat, rectangle, cubes) · FC figureCompact (picture
+ * graphs); coordinate grids are as tall as charts, so F. A figure layout
  * prints only the cell's pictured items; the others only its un-pictured ones.
  *
  * `ccss` may be empty: calendars, coins below grade 2 and repeating patterns
@@ -19,6 +20,7 @@ const P = "prompt";
 const S = "promptShort";
 const F = "figure";
 const FS = "figureSmall";
+const FC = "figureCompact";
 const BOTH = ["procedural", "conceptual"];
 const B1 = [1, 3];
 const B2 = [4, 6];
@@ -90,7 +92,7 @@ export const PROMPT_SKILLS = [
   cell("placeValue", "rounding", B3, "4", "4.NBT.A.3", "Round large numbers to the nearest hundred", P),
 
   // ── Number bonds ────────────────────────────────────────────────────────
-  cell("numberBonds", "decompose", B1, "K", "K.OA.A.3", "Break numbers to 10 into pairs", S),
+  cell("numberBonds", "decompose", B1, "K", "K.OA.A.3", "Break numbers to 10 into pairs",P),
   cell("numberBonds", "decompose", B2, "1", "1.OA.C.6", "Split a number to make ten", S),
   cell("numberBonds", "decompose", B3, "2", "2.NBT.A.1", "Split numbers by place value and to the next ten", S),
   cell("numberBonds", "missingPart", B1, "K", "K.OA.A.4", "Find the missing part (wholes to 10)", S),
@@ -101,9 +103,9 @@ export const PROMPT_SKILLS = [
   cell("numberBonds", "partWhole", B3, "2", "2.NBT.A.1", "Build the whole from hundreds, tens and ones", S),
 
   // ── Place value discs ───────────────────────────────────────────────────
-  cell("placeValueDiscs", "readNumber", B1, "1", "1.NBT.B.2", "Read tens and ones discs on a mat", F, "", ONE_MAT),
-  cell("placeValueDiscs", "readNumber", B2, "2", "2.NBT.A.1", "Read hundreds, tens and ones discs on a mat", F, "", ONE_MAT),
-  cell("placeValueDiscs", "readNumber", B3, "4", "4.NBT.A.2", "Read place value discs to the thousands", F, "", ONE_MAT),
+  cell("placeValueDiscs", "readNumber", B1, "1", "1.NBT.B.2", "Read tens and ones discs on a mat", FS, "", ONE_MAT),
+  cell("placeValueDiscs", "readNumber", B2, "2", "2.NBT.A.1", "Read hundreds, tens and ones discs on a mat", FS, "", ONE_MAT),
+  cell("placeValueDiscs", "readNumber", B3, "4", "4.NBT.A.2", "Read place value discs to the thousands", FS, "", ONE_MAT),
   cell("placeValueDiscs", "discOperations", B1, "1", "1.NBT.C.5", "Add or take away one disc (numbers to 20)", P),
   cell("placeValueDiscs", "discOperations", B2, "2", "2.NBT.B.8", "Add or move tens and hundreds discs", P),
   cell("placeValueDiscs", "discOperations", B3, "4", "4.NBT.A.1", "Disc moves to the thousands, and fixing a missed trade", P),
@@ -247,9 +249,9 @@ export const PROMPT_SKILLS = [
   cell("dataGraphs", "dataAnalysis", B1, "1", "1.MD.C.4", "Tally charts and totals (to 20)", F),
   cell("dataGraphs", "dataAnalysis", B2, "2", "2.MD.D.10", "True statements, totals and ties on a graph", F),
   cell("dataGraphs", "dataAnalysis", B3, "3", "3.MD.B.3", "Check claims and totals on a bar graph", F),
-  cell("dataGraphs", "pictograph", B1, "2", "2.MD.D.10", "Read a picture graph: one picture is one", F),
-  cell("dataGraphs", "pictograph", B2, "3", "3.MD.B.3", "Read a picture graph with a key and half pictures", F),
-  cell("dataGraphs", "pictograph", B3, "3", "3.MD.B.3", "Read a picture graph with a bigger key", F),
+  cell("dataGraphs", "pictograph", B1, "2", "2.MD.D.10", "Read a picture graph: one picture is one", FC),
+  cell("dataGraphs", "pictograph", B2, "3", "3.MD.B.3", "Read a picture graph with a key and half pictures", FC),
+  cell("dataGraphs", "pictograph", B3, "3", "3.MD.B.3", "Read a picture graph with a bigger key", FC),
 
   // ── Area & perimeter ────────────────────────────────────────────────────
   cell("areaPerimeter", "area", B1, "3", "3.MD.C.6", "Area of a rectangle by counting unit squares", FS),

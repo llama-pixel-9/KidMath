@@ -22,7 +22,10 @@ const PAD_BOTTOM = 46;
 const PLOT_W = VIEW_W - PAD_LEFT - PAD_RIGHT;
 const PLOT_H = VIEW_H - PAD_TOP - PAD_BOTTOM;
 
-export default function BarChart({ bars, theme, showValues = false, valueLabel = "Number" }) {
+// `paper` is the PRINTED chart (worksheets): solid black bars, black labels and
+// gridlines dark enough to survive a home printer. The brand ramp is four soft
+// tints — in grayscale they print as four shades of nearly-white.
+export default function BarChart({ bars, theme, showValues = false, valueLabel = "Number", paper = false }) {
   const data = bars || [];
   const { axisMax, step, minorStep } = chartScale(data.map((b) => b.value));
 
@@ -39,8 +42,10 @@ export default function BarChart({ bars, theme, showValues = false, valueLabel =
     for (let v = 0; v <= axisMax; v += minorStep) if (v % step !== 0) minors.push(v);
   }
 
-  const muted = theme?.textMuted || "text-slate-400";
-  const secondary = theme?.textSecondary || "text-slate-500";
+  const muted = paper ? "text-black" : theme?.textMuted || "text-slate-400";
+  const secondary = paper ? "text-black" : theme?.textSecondary || "text-slate-500";
+  const minorOpacity = paper ? "0.3" : "0.25";
+  const majorOpacity = paper ? "0.6" : "0.45";
 
   return (
     <svg
@@ -58,8 +63,8 @@ export default function BarChart({ bars, theme, showValues = false, valueLabel =
             x2={PAD_LEFT + PLOT_W}
             y1={y(v)}
             y2={y(v)}
-            strokeWidth="1"
-            strokeOpacity="0.25"
+            strokeWidth={paper ? "0.6" : "1"}
+            strokeOpacity={minorOpacity}
           />
         ))}
         {majors.map((v) => (
@@ -70,7 +75,7 @@ export default function BarChart({ bars, theme, showValues = false, valueLabel =
               y1={y(v)}
               y2={y(v)}
               strokeWidth="1"
-              strokeOpacity="0.45"
+              strokeOpacity={majorOpacity}
             />
             <line x1={PAD_LEFT - 4} x2={PAD_LEFT} y1={y(v)} y2={y(v)} strokeWidth="1.5" />
             <text
@@ -121,8 +126,8 @@ export default function BarChart({ bars, theme, showValues = false, valueLabel =
               y={top}
               width={barW}
               height={PAD_TOP + PLOT_H - top}
-              rx="4"
-              className={ramp[i % ramp.length]}
+              rx={paper ? "0" : "4"}
+              className={paper ? "fill-black" : ramp[i % ramp.length]}
             />
             <text
               x={cx}

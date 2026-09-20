@@ -64,8 +64,9 @@ grid and no "Level" anywhere, on screen or on paper. One sheet = one skill
 | `longDivision` | 3 col | 12 | 6 | bracket + work space — never stacked like a subtraction |
 | `prompt` | 2 col | 10 | 8 | worded, 2–3 lines, option banks |
 | `promptShort` | 2 col | 16 | 10 | worded one-liners (audit avg chars ≲ 45) |
-| `figure` | 2 col | 4 | 2 | bar graph, pictograph, tally, disc mat, coordinate grid |
-| `figureSmall` | 2 col | 6 | 4 | clock face, rectangle, cube stack |
+| `figure` | 2 col | 4 | 2 | bar graph, tally, coordinate grid |
+| `figureCompact` | 2 col | 8 | 6 | picture graphs (a few ruled rows) |
+| `figureSmall` | 2 col | 6 | 4 | clock face, disc mat, rectangle, cube stack |
 | `stories` | 2×3 boxes | 6 | — | word problems only (2, one column, if pictured) |
 
 `layoutForClaim` fixes the layout of computation skills (multi-digit
@@ -92,15 +93,24 @@ budget or the layout; never delete the assertion.
   "this clock / this chart / shown" is rejected — on screen the answer
   widget drew it; paper has no widget.
 - **Figures print** (`getPaperFigure`: `display.figure`, or the rectangle
-  the areaPerimeter bank implies). Grayscale with the contrast pushed
-  (on-screen tints print as pale ghosts otherwise), ≤240px. Two-mat disc
+  the areaPerimeter bank implies), ≤240px, in a PRINT DESIGN of their own —
+  `ctx.paper` → a `paper`/`numbered` prop: solid black bars on a labelled
+  axis, outlined discs two across on a ruled mat, ruled picture graphs and
+  tallies with black symbols, a numbered clock. On-screen tints do not
+  survive grayscale, and a blanket `contrast()` filter is NOT the fix (it
+  turned pale bars white and erased the discs). Any new figure needs its
+  paper design; iOS mirrors each (`PaperBarChart`, `PaperDiscMat`,
+  `paper:` on Pictograph/Tally, `numbered:` on the clock). Two-mat disc
   items are excluded (`ONE_MAT`): twice the height of everything else.
 - **Clocks print numbered** (`ClockFace numbered`, passed via `ctx.paper`;
   iOS `ClockFaceView(numbered:)`): numerals, minute track, black hands. The
   on-screen dotted face is unreadable on paper — no way to tell which dot is
   12, and the minute hand's tip reads as a thirteenth dot.
 - **Option banks only where the options ARE the question**
-  (`printOptionBank`); judgment items print "Circle one: Yes / No".
+  (`printOptionBank`), and a printed bank is answered by CIRCLING ("Circle
+  one: …", no blank box beside it; the key heavies the right option).
+  Judgment items print "Circle one: Yes / No".
+- "Type the…" is a screen verb too (reworded to "Write the…").
 - §15 brand rule: every mark on a sheet is 100% black.
 
 ## The screen (`src/PrintableWorksheet.jsx`)

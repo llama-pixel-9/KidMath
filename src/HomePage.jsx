@@ -257,7 +257,7 @@ export default function HomePage() {
                   // §03 step 3: the nomination survives leaving the app as a
                   // Sun pill on the mode's card (Ink text — cream on Sun is
                   // forbidden).
-                  const nominated = fledgingEnabled() && !locked && Boolean(getNomination(engagement, id));
+                  const nominated = fledgingEnabled() && !bySkill && !locked && Boolean(getNomination(engagement, id));
                   return (
                     <button
                       key={id}

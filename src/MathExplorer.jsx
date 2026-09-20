@@ -971,7 +971,9 @@ export default function MathExplorer({ initialMode }) {
     loadNextQuestion(newSession);
     // §03 step 4: a pending nomination is offered at take-off — except right
     // after a Fledging Flight, when the normal session simply begins.
-    if (offer && gamFledging && nominationFor(targetMode)) setFledgingOffer(true);
+    // A ladder nomination ("Level N+1 is yours") has no meaning in a skill
+    // session; the grade-up challenge replaces it.
+    if (offer && gamFledging && !newSession.skillIds && nominationFor(targetMode)) setFledgingOffer(true);
   }, [mode, allowWordProblems, gamFledging, loadNextQuestion, clearQueuedTimeouts, startMode]);
 
   useEffect(() => {

@@ -27,6 +27,7 @@ npm run bank:qc          # QC agent over the bank
 npm run bank:export      # approved cloud rows → shipped bundle (src/itemBank/items/)
 npm run bank:seed        # timestamped Supabase seed migration
 npm run bank:gen         # generateDrafts.js
+npm run worksheets:audit # every bank cell as a worksheet author sees it (--mode X, --md)
 ```
 
 - **`npm run test` is a hand-maintained file list, not a glob.** Adding a spec file
@@ -73,6 +74,8 @@ src/
   hints/               per-question hint pane content: concepts.js (mode × subskill, kid
                        language), steps.js (steps from the live item's numbers, no answer)
   components/          widgets (NumberLine, AnalogClock, CoinTray, FractionInput, TenFrame, …)
+  worksheets/          printable worksheets: skill catalog (grade → skill, ~294), bank-first
+                       generateWorksheet, computation sampler, claim check, sheet renderer
   premium.js           FREE_MODE_IDS + entitlement logic, mirrored by iOS rowIsActive
 ios/                   SwiftUI app; project.yml is the XcodeGen spec
 scripts/itemGen/       LLM authoring pipeline; shared files at root, per-mode
@@ -291,6 +294,10 @@ Product IDs: `io.larkit.app.premium.{monthly,annual}`.
 - `.claude/skills/robot-kid-e2e` — the Playwright smoke matrix (`npm run
   test:e2e`): kid oracle, widget drivers, and its traps. Load it before
   running/extending e2e or adding an answer widget.
+- `.claude/skills/worksheets` — the skill catalog, the title-is-a-promise rule,
+  bank-first draw, measured page budgets. Load it before touching /worksheets,
+  a sheet layout, or the catalog. User-facing name is "worksheets", never
+  "flight log".
 - `.cursor/skills/kidmath-{add,audit}-mode-standards`, `kidmath-phase2-expand-mode`
   — Cursor-only, but their standards are summarized in Conventions above.
 - `.agents/skills/supabase*` — vendored from `supabase/agent-skills`.

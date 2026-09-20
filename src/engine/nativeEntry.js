@@ -26,8 +26,6 @@ import {
   isSessionComplete,
   summarizeFlight,
   generateWorksheetSet,
-  generateFlightLog,
-  flightLogScope,
   printOptionBank,
   isYesNoJudgment,
   questionAnswerType,
@@ -43,6 +41,10 @@ import { normalizeBankRow } from "../itemBank/normalize.js";
 import { MODE_IDS } from "../modes/index.js";
 import { startingLevelFor, gradeFitFor } from "../gradeSeed.js";
 import { areaFigureSpec } from "../figures/areaFigureSpec.js";
+import { generateWorksheetRun, paperFigureKey, worksheetCapacity } from "../worksheets/generateWorksheet.js";
+import { LAYOUTS, STORY_WORK_SPACE } from "../worksheets/layouts.js";
+import { documentTitle, headerLine } from "../worksheets/skillIndex.js";
+import { GRADES, GRADE_LABELS, TOPIC_LABELS, WORKSHEET_SKILLS } from "../worksheets/skills.js";
 import consentNoticeMd from "../legal/parental-consent-notice.md";
 import { fillTokens } from "../legal/entity.js";
 import { LEGAL_VERSIONS } from "../legal/versions.js";
@@ -115,11 +117,31 @@ g.KidMath = {
   generateChoices: (answer, count, question) => generateChoices(answer, count ?? 4, question ?? null),
   checkAnswer: (question, submitted) => checkAnswer(question, submitted),
   questionAnswerType: (question) => questionAnswerType(question),
-  // Flight logs (the printable sheets): same three-part draw as
-  // PrintableWorksheet.jsx — parts A/B skip the bank, word problems only when
-  // the parent allows them. Swift lays the result out on a Letter page.
-  generateFlightLog: (mode, level, options) => generateFlightLog(mode, level, options ?? {}),
-  flightLogScope: (mode, level) => flightLogScope(mode, level),
+  // Worksheets by SKILL (src/worksheets/): the catalog the picker lists, what
+  // the injected bank can fill, and a print run. Swift lays each sheet out on
+  // a Letter page from `layout` + the budgets in `layouts`.
+  worksheetCatalog: () => ({
+    grades: GRADES,
+    gradeLabels: GRADE_LABELS,
+    topicLabels: TOPIC_LABELS,
+    topicOrder: MODE_IDS,
+    layouts: LAYOUTS,
+    storyWorkSpace: STORY_WORK_SPACE,
+    skills: WORKSHEET_SKILLS.map((skill) => ({
+      id: skill.id,
+      grade: skill.grade,
+      mode: skill.mode,
+      ccss: skill.ccss,
+      title: skill.title,
+      layout: skill.layout,
+      computation: skill.source.kind === "computation",
+      header: headerLine(skill),
+      documentTitle: documentTitle(skill),
+    })),
+  }),
+  worksheetCapacity: (skillId) => worksheetCapacity(skillId),
+  generateWorksheetRun: (skillId, options) => generateWorksheetRun(skillId, options ?? {}),
+  paperFigureKey: (question) => paperFigureKey(question),
   printOptionBank: (question) => printOptionBank(question),
   isYesNoJudgment: (question) => isYesNoJudgment(question),
   generateWorksheetSet: (mode, level, size, options) =>

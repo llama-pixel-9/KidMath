@@ -1,467 +1,385 @@
-import { useState, useMemo, useEffect } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import {
-  Plus,
-  Minus,
-  X,
-  Divide,
-  ArrowLeftRight,
-  Hash,
-  FastForward,
-  Layers,
-  Printer,
-} from "lucide-react";
-import LarkMark from "./components/LarkMark.jsx";
-import {
-  generateFlightLog,
-  flightLogScope,
-  printOptionBank,
-  isYesNoJudgment,
-  MODES,
-} from "./mathEngine";
-import { FIGURES } from "./components/figureRegistry";
-import { getModeConfig } from "./modes";
+import { useSearchParams } from "react-router-dom";
+import { Printer } from "lucide-react";
+import { MODE_IDS } from "./modes";
+import { addBankItems, ensureModeLoaded } from "./itemBank.js";
+import { activeKidGrade } from "./kidProfiles.js";
+import { gradeIndex } from "./gradeSeed.js";
+import { loadAllowWordProblemsSync } from "./userPreferences.js";
 import { useTheme } from "./useTheme";
+import { generateWorksheetRun, worksheetCapacity } from "./worksheets/generateWorksheet.js";
+import { PROBLEM_TYPES } from "./worksheets/layouts.js";
+import { documentTitle, headerLine, skillById, skillForModeLevel } from "./worksheets/skillIndex.js";
+import { GRADES, GRADE_LABELS, TOPIC_LABELS, WORKSHEET_SKILLS } from "./worksheets/skills.js";
+import WorksheetSheet from "./worksheets/WorksheetSheet.jsx";
 
-const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers };
+const SHEET_COUNTS = [1, 2, 3, 5];
+const GRADE_KEY = "larkit-worksheet-grade";
+const PROBLEM_TYPE_KEY = "larkit-worksheet-problem-type";
 
-const LEVEL_GROUPS = [
-  { label: "Beginner", levels: [1, 2, 3] },
-  { label: "Intermediate", levels: [4, 5, 6] },
-  { label: "Advanced", levels: [7, 8, 9, 10] },
-];
+const PROBLEM_TYPE_ARIA = {
+  practice: "Practice problems only",
+  stories: "Word problems only",
+  mixed: "Mixed",
+};
 
-// Question ops are ASCII; the printed sheet uses the maths symbols.
-const OP_SYMBOL = { "+": "+", "-": "−", "x": "×", "/": "÷" };
-
-// §15: every mark on a flight log is 100% black — no tints, no colour, no
-// decorative glyphs. The sheet is Fredoka for the maths, Nunito for the rest.
-
-function ItemNumber({ n }) {
-  return (
-    <span className="w-5 flex-none text-right text-[11px] font-bold text-black leading-[1.4] pt-[3px]">
-      {n}.
-    </span>
-  );
-}
-
-function AnswerBox({ value = null, wide = false }) {
-  return (
-    <span
-      className={`inline-flex items-center justify-center align-middle border-[1.5px] border-black h-[28px] ${wide ? "min-w-[64px] px-2" : "w-[44px]"} font-display font-semibold text-[16px] text-black`}
-    >
-      {value}
-    </span>
-  );
-}
-
-// Part A stacked item: both operands right-aligned in one digit column, the
-// operator hanging left on the second line, one 1.5px rule, then 34px of
-// clear space for the child's own writing.
-function StackedItem({ question: q, number, answer = null }) {
-  return (
-    <div className="flex gap-1.5" style={{ breakInside: "avoid" }}>
-      <ItemNumber n={number} />
-      <div
-        className="w-[88px] font-display font-semibold text-[20px] text-black leading-[1.25]"
-        style={{ fontVariantNumeric: "tabular-nums" }}
-      >
-        <div className="text-right pr-1">{q.a}</div>
-        <div className="flex justify-between pr-1">
-          <span>{OP_SYMBOL[q.op]}</span>
-          <span>{q.b}</span>
-        </div>
-        <div className="border-t-[1.5px] border-black mt-[3px]" />
-        <div className="h-[34px] text-right pr-1">{answer}</div>
-      </div>
-    </div>
-  );
-}
-
-// Part B inline item: `a + b =` then the box. The box IS the blank — never a
-// printed "?", never a printed answer.
-function InlineItem({ question: q, number, answer = null }) {
-  return (
-    <div className="flex items-start gap-1.5" style={{ breakInside: "avoid" }}>
-      <ItemNumber n={number} />
-      <span className="font-display font-semibold text-[18px] text-black leading-[1.4]">
-        {q.a} {OP_SYMBOL[q.op]} {q.b} ={" "}
-      </span>
-      <AnswerBox value={answer} />
-    </div>
-  );
-}
-
-// Prompt item for the modes without an a-op-b form (time, graphs, shapes…).
-// The option bank prints only when the options ARE the question (#34) — a
-// plain numeric answer gets just the blank box. Judgment items print as
-// circle-Yes-or-No, and figure questions (bar graph, pictograph…) print their
-// figure — a graph question without its graph is unanswerable on paper.
-function PromptItem({ question: q, number, answer = null }) {
-  let body = null;
-  if (q.display?.promptText) {
-    body = q.display.promptText;
-  } else if (q.display?.sequence) {
-    body = `${q.display.sequence.join(", ")}, …`;
-  } else if (q.display?.emoji) {
-    body = Array.from({ length: q.display.count }, () => q.display.emoji).join(" ");
+function stored(key) {
+  try {
+    return localStorage.getItem(key);
+  } catch {
+    return null;
   }
-  const subPrompt = q.subPrompt ?? q.display?.subPrompt;
-  const judgment = isYesNoJudgment(q);
-  const bank = printOptionBank(q);
-  const figure = q.display?.figure ? FIGURES[q.display.figure] : null;
-  const monoTheme = { textPrimary: "text-black", textSecondary: "text-black", textMuted: "text-black" };
-  return (
-    <div className="flex items-start gap-1.5" style={{ breakInside: "avoid" }}>
-      <ItemNumber n={number} />
-      <div className="flex-1 text-[13px] font-semibold text-black leading-[1.45]">
-        {figure && (
-          <div className="max-w-[240px] mb-1.5" style={{ filter: "grayscale(1)" }}>
-            <figure.Component theme={monoTheme} {...(figure.props ? figure.props(q, { settled: answer != null }) : {})} />
-          </div>
-        )}
-        <span>{body} </span>
-        {subPrompt && <span>{subPrompt} </span>}
-        {bank && (
-          <span className="inline-flex flex-wrap gap-1.5 align-middle mx-1">
-            {bank.map((c, i) => (
-              <span
-                key={i}
-                className="inline-flex items-center justify-center border border-black px-1.5 h-[22px] font-display font-semibold text-[13px]"
-              >
-                {String(c)}
-              </span>
-            ))}
-          </span>
-        )}
-        {judgment ? (
-          <span className="inline-flex items-center gap-2 align-middle mx-1 font-display font-semibold text-[14px]">
-            <span className="mr-0.5">Circle one:</span>
-            {["Yes", "No"].map((label) => (
-              <span
-                key={label}
-                className={`inline-flex items-center justify-center rounded-full px-2.5 h-[24px] ${
-                  answer === label ? "border-[2.5px] border-black" : "border border-black/40"
-                }`}
-              >
-                {label}
-              </span>
-            ))}
-          </span>
-        ) : (
-          <AnswerBox value={answer} wide />
-        )}
-      </div>
-    </div>
-  );
 }
 
-// A word problem, full width, at the end — printed only when the Include
-// Word Problems toggle is on. A "pick two numbers" prompt prints the number
-// bank it picks from and a structured answer line (☐ + ☐ = 6).
-function WordProblem({ item, number, showAnswer = false }) {
-  if (!item) return null;
-  const q = item.question;
-  if (item.kind === "pickTwo") {
-    const pair = Array.isArray(q.answer?.[0]) ? q.answer[0] : q.answer;
-    return (
-      <div className="flex items-start gap-1.5">
-        <ItemNumber n={number} />
-        <div className="space-y-3">
-          <p className="text-[14px] font-semibold text-black leading-[1.5] m-0">
-            {q.display.promptText.replace("Pick two numbers", "Pick two numbers from the box")}
-          </p>
-          <div className="flex gap-2">
-            {q.display.options.map((opt, i) => (
-              <span
-                key={i}
-                className="inline-flex items-center justify-center border-[1.5px] border-black w-[34px] h-[30px] font-display font-semibold text-[17px] text-black"
-              >
-                {opt}
-              </span>
-            ))}
-          </div>
-          <div className="flex items-center gap-2 font-display font-semibold text-[19px] text-black">
-            <AnswerBox value={showAnswer ? pair?.[0] : null} />
-            <span>+</span>
-            <AnswerBox value={showAnswer ? pair?.[1] : null} />
-            <span>= {q.a}</span>
-          </div>
-        </div>
-      </div>
-    );
+function store(key, value) {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    /* private mode — the choice just is not remembered */
   }
-
-  const figure = q.display?.figure ? FIGURES[q.display.figure] : null;
-  return (
-    <div className="flex items-start gap-1.5" style={{ breakInside: "avoid" }}>
-      <ItemNumber n={number} />
-      <div className="flex-1 text-[14px] font-semibold text-black leading-[1.5]">
-        {figure && (
-          <div className="max-w-[240px] mb-1.5" style={{ filter: "grayscale(1)" }}>
-            <figure.Component
-              theme={{ textPrimary: "text-black", textSecondary: "text-black", textMuted: "text-black" }}
-              {...(figure.props ? figure.props(q, { settled: showAnswer }) : {})}
-            />
-          </div>
-        )}
-        <span>{q.display?.promptText} </span>
-        <AnswerBox value={showAnswer ? q.answer : null} wide />
-      </div>
-    </div>
-  );
 }
 
-// One sheet — the log itself, or its answer key (same grid, answers in the
-// boxes, "Answer key" in place of Name and Date; always a separate sheet).
-function FlightLogSheet({ log, mode, level, scope, answerKey = false, logIndex, logCount, breakBefore = false }) {
-  const config = getModeConfig(mode);
-  let n = 0;
-  const next = () => ++n;
-  const answerOf = (q) => (answerKey ? q.answer : null);
+// The active kid's grade when there is one, else the last grade printed for.
+function initialGrade() {
+  const kid = gradeIndex(activeKidGrade());
+  if (kid != null) return kid === 0 ? "K" : String(Math.min(kid, 5));
+  const last = stored(GRADE_KEY);
+  return GRADES.includes(last) ? last : null;
+}
 
-  return (
-    <div
-      className="bg-white rounded-3xl shadow-lg p-8 print:shadow-none print:rounded-none print:p-0 text-black"
-      style={breakBefore ? { pageBreakBefore: "always" } : undefined}
-    >
-      {/* Header: 32px black lockup, 2px rule, log name · level · scope right */}
-      <div className="flex items-center gap-2.5 border-b-2 border-black pb-3">
-        <LarkMark size={32} color="#000000" accent="#000000" eye="#FFFFFF" />
-        <span className="font-display font-semibold text-2xl lowercase leading-none tracking-[-0.01em]">
-          larkit
-        </span>
-        <span className="ml-auto text-[12px] font-bold text-right">
-          Flight log · {config.label} · Level {level} · {scope}
-          {logCount > 1 && ` · Log ${logIndex + 1} of ${logCount}`}
-        </span>
-      </div>
+// Last worksheet choice, else the household's play preference. This screen
+// never WRITES that preference: printing a drill must not switch word problems
+// off in the kid's games.
+function initialProblemType() {
+  const last = stored(PROBLEM_TYPE_KEY);
+  if (PROBLEM_TYPES.includes(last)) return last;
+  return loadAllowWordProblemsSync() ? "mixed" : "practice";
+}
 
-      {/* Name/Date rules — or "Answer key" on the key sheet */}
-      {answerKey ? (
-        <p className="text-[12px] font-semibold py-3 m-0">Answer key</p>
-      ) : (
-        <div className="flex gap-8 py-3 text-[12px] font-semibold">
-          <label className="flex items-end gap-2 flex-1">
-            Name
-            <span className="inline-block border-b border-black flex-1 max-w-64" />
-          </label>
-          <label className="flex items-end gap-2">
-            Date
-            <span className="inline-block border-b border-black w-32" />
-          </label>
-        </div>
-      )}
+// Worded problems come from the bank, so the topic's items must be in memory
+// before a sheet is drawn. Without Supabase (local dev, e2e) the fetch fails;
+// DEV then reads the full corpus from disk. The branch is compiled out of the
+// production bundle, which must never carry the corpus.
+async function loadTopic(mode) {
+  const result = await ensureModeLoaded(mode);
+  if (result.status === "failed" && import.meta.env.DEV) {
+    const { FULL_ITEMS } = await import("./itemBank/fullBank.js");
+    addBankItems(FULL_ITEMS.filter((item) => item.modeId === mode), "dev-disk");
+    return { ...result, status: "loaded" };
+  }
+  return result;
+}
 
-      {/* Stacked computations (three per row), or short prompts. No PART
-          A/B/C captions (#34): the sheet is a drill, not a test paper. */}
-      <div className="mt-4">
-        {log.computational ? (
-          <div className="grid grid-cols-3 gap-x-6" style={{ rowGap: "18px" }}>
-            {log.partA.map((q, i) => (
-              <StackedItem key={i} question={q} number={next()} answer={answerOf(q)} />
-            ))}
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 print:grid-cols-2 gap-x-6" style={{ rowGap: "14px" }}>
-            {log.partA.map((q, i) => (
-              <PromptItem key={i} question={q} number={next()} answer={answerOf(q)} />
-            ))}
-          </div>
-        )}
-      </div>
+// Deep links: /worksheets?skill=<id>&type=mixed&sheets=2&key=0&go=1 — what the
+// home page and the public worksheet pages link to. `skill` alone fixes the
+// grade and topic; old ?mode=&level= links land on the nearest skill.
+function linkedState(params) {
+  const skill =
+    skillById(params.get("skill")) ||
+    (params.get("mode") ? skillForModeLevel(params.get("mode"), Number(params.get("level")) || 1) : null);
+  const type = params.get("type");
+  const count = Number(params.get("sheets"));
+  return {
+    skill,
+    problemType: PROBLEM_TYPES.includes(type) ? type : null,
+    sheetCount: SHEET_COUNTS.includes(count) ? count : null,
+    answerKey: params.has("key") ? params.get("key") !== "0" : null,
+    go: params.get("go") === "1",
+  };
+}
 
-      {/* Inline items, two per row */}
-      <div className="mt-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 print:grid-cols-2 gap-x-6" style={{ rowGap: "14px" }}>
-          {log.partB.map((q, i) =>
-            log.computational ? (
-              <InlineItem key={i} question={q} number={next()} answer={answerOf(q)} />
-            ) : (
-              <PromptItem key={i} question={q} number={next()} answer={answerOf(q)} />
-            )
-          )}
-        </div>
-      </div>
-
-      {/* Word problems, full width, at the end — only when toggled on */}
-      {log.wordProblems?.length > 0 && (
-        <div className="mt-6 space-y-4">
-          {log.wordProblems.map((item, i) => (
-            <WordProblem key={i} item={item} number={next()} showAnswer={answerKey} />
-          ))}
-        </div>
-      )}
-
-      {/* Footer, one line */}
-      <div className="mt-6 pt-2 border-t border-black flex items-center justify-between text-[10px] font-bold">
-        <span>larkit.io</span>
-        <span className="inline-flex items-center gap-1.5">
-          Landed
-          <span className="inline-block w-[14px] h-[14px] border-[1.5px] border-black align-middle" />
-          of {log.itemCount}
-        </span>
-        <span>
-          {config.label} · L{level}
-        </span>
-      </div>
-    </div>
-  );
+// What the loaded bank can fill for a skill: which problem types, how many
+// sheets. Nothing is ever padded with generated filler — an option the bank
+// cannot fill is switched off, with the reason.
+function capacityFor(skill) {
+  if (!skill) return null;
+  const sheets = worksheetCapacity(skill.id);
+  const offline = "Couldn't load this topic's problems — check your connection.";
+  const thin = sheets.practice
+    ? "There are not enough word problems for this skill yet."
+    : offline;
+  return {
+    practice: { sheets: sheets.practice, reason: sheets.practice ? null : offline },
+    mixed: { sheets: sheets.mixed, reason: sheets.mixed ? null : thin },
+    stories: { sheets: sheets.stories, reason: sheets.stories ? null : thin },
+  };
 }
 
 export default function PrintableWorksheet() {
   const { theme } = useTheme();
-  const [mode, setMode] = useState("addition");
-  const [level, setLevel] = useState(1);
-  const [sheetCount, setSheetCount] = useState(1);
-  const [generated, setGenerated] = useState(false);
-  const [showAnswerKey, setShowAnswerKey] = useState(true);
-  const [allowWordProblems, setAllowWordProblems] = useState(true);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [linked] = useState(() => linkedState(searchParams));
+  const [grade, setGrade] = useState(() => linked.skill?.grade ?? initialGrade());
+  const [topicMode, setTopicMode] = useState(linked.skill?.mode ?? null);
+  const [skillId, setSkillId] = useState(linked.skill?.id ?? null);
+  const [problemType, setProblemType] = useState(() => linked.problemType ?? initialProblemType());
+  const [sheetCount, setSheetCount] = useState(linked.sheetCount ?? 1);
+  const [showAnswerKey, setShowAnswerKey] = useState(linked.answerKey ?? true);
+  const autoGenerate = useRef(linked.go);
+  const [sheets, setSheets] = useState(null);
+  // The topic whose bank is in memory; `attempt` re-runs a failed load.
+  const [loadedMode, setLoadedMode] = useState(null);
+  const [attempt, setAttempt] = useState(0);
 
-  const logs = useMemo(() => {
-    if (!generated) return [];
-    return Array.from({ length: sheetCount }, () => generateFlightLog(mode, level, { allowWordProblems }));
-  }, [generated, mode, level, sheetCount, allowWordProblems]);
+  const skill = useMemo(() => WORKSHEET_SKILLS.find((s) => s.id === skillId) || null, [skillId]);
+  const topics = useMemo(() => {
+    const inGrade = WORKSHEET_SKILLS.filter((s) => s.grade === grade);
+    return MODE_IDS.map((mode) => ({ mode, skills: inGrade.filter((s) => s.mode === mode) })).filter((t) => t.skills.length);
+  }, [grade]);
 
-  const scope = flightLogScope(mode, level);
+  const topicSkills = useMemo(() => topics.find((t) => t.mode === topicMode)?.skills || [], [topics, topicMode]);
 
-  // DEV-only QA hook: the e2e asserts sheet COMPOSITION (word problems on/off)
-  // from here instead of scraping prose out of the printed DOM.
-  useEffect(() => {
-    if (import.meta.env.DEV && typeof window !== "undefined") {
-      window.__larkitWorksheets = { logs, allowWordProblems };
-    }
-  }, [logs, allowWordProblems]);
+  const ready = Boolean(skill) && loadedMode === skill.mode;
+  const capacity = useMemo(() => (ready ? capacityFor(skill) : null), [ready, skill]);
+  // A remembered "Word problems" choice must not strand a skill that has none.
+  const activeType = capacity && !capacity[problemType].sheets && capacity.practice.sheets ? "practice" : problemType;
+  const maxSheets = capacity ? capacity[activeType].sheets : Infinity;
+  const activeCount = Math.max(1, Math.min(sheetCount, maxSheets));
+  const blocked = capacity && !capacity[activeType].sheets ? capacity[activeType].reason : null;
 
-  const handleGenerate = () => {
-    setGenerated(false);
-    setTimeout(() => setGenerated(true), 0);
+  const chooseSkill = (next) => {
+    setSkillId(next.id);
+    setSheets(null);
   };
 
-  const levelLabel = level <= 3 ? "Beginner" : level <= 6 ? "Intermediate" : "Advanced";
+  const chooseGrade = (next) => {
+    setGrade(next);
+    store(GRADE_KEY, next);
+    if (skill && skill.grade !== next) {
+      setSkillId(null);
+      setSheets(null);
+    }
+    // Keep the topic when the new grade has it too (Grade 3 → 4 Multiplication).
+    if (topicMode && !WORKSHEET_SKILLS.some((s) => s.grade === next && s.mode === topicMode)) setTopicMode(null);
+  };
+
+  const chooseTopic = (next) => {
+    setTopicMode(next);
+    if (skill && skill.mode !== next) {
+      setSkillId(null);
+      setSheets(null);
+    }
+  };
+
+  const chooseProblemType = (next) => {
+    setProblemType(next);
+    store(PROBLEM_TYPE_KEY, next);
+    setSheets(null);
+  };
+
+  const handleGenerate = () => {
+    if (!ready || blocked) return;
+    setSheets(generateWorksheetRun(skill.id, { problemType: activeType, sheets: activeCount }));
+  };
+
+  // Worded problems come from the bank: load the picked skill's topic, and
+  // for a go=1 deep link print as soon as it is in.
+  const mode = skill?.mode;
+  useEffect(() => {
+    if (!mode) return undefined;
+    let live = true;
+    loadTopic(mode).then(() => {
+      if (!live) return;
+      setLoadedMode(mode);
+      if (!autoGenerate.current) return;
+      autoGenerate.current = false;
+      const run = generateWorksheetRun(linked.skill.id, {
+        problemType: linked.problemType ?? initialProblemType(),
+        sheets: linked.sheetCount ?? 1,
+      });
+      if (run.length) setSheets(run);
+    });
+    return () => {
+      live = false;
+    };
+  }, [mode, attempt, linked]);
+
+  // Keep the address shareable: it always names what is on screen.
+  useEffect(() => {
+    if (!skillId) return;
+    const next = { skill: skillId, type: activeType, sheets: String(activeCount) };
+    if (!showAnswerKey) next.key = "0";
+    setSearchParams(next, { replace: true });
+  }, [skillId, activeType, activeCount, showAnswerKey, setSearchParams]);
+
+  // The browser's default PDF filename is the document title.
+  useEffect(() => {
+    if (!sheets || !skill) return undefined;
+    const previous = document.title;
+    document.title = documentTitle(skill);
+    return () => {
+      document.title = previous;
+    };
+  }, [sheets, skill]);
+
+  // DEV-only QA hook: the e2e asserts sheet COMPOSITION from here instead of
+  // scraping prose out of the printed DOM.
+  useEffect(() => {
+    if (import.meta.env.DEV && typeof window !== "undefined") {
+      window.__larkitWorksheets = { sheets: sheets || [], skillId, problemType: activeType };
+    }
+  }, [sheets, skillId, activeType]);
+
+  const title = skill ? headerLine(skill) : "";
+  const footer = skill ? [TOPIC_LABELS[skill.mode], skill.ccss[0]].filter(Boolean).join(" · ") : "";
+  const sectionLabel = `text-sm font-semibold ${theme.textSecondary} mb-2 uppercase tracking-wide`;
+  const chip = (active) =>
+    `rounded-2xl border-2 font-bold cursor-pointer transition-colors ${
+      active ? `${theme.selectedBorder} ${theme.selectedText}` : `${theme.cardBorder} bg-white ${theme.textSecondary} hover:bg-gray-50`
+    }`;
+  const typeLabels = {
+    practice: skill?.source?.kind === "computation" ? "Computation" : "Practice",
+    stories: "Word problems",
+    mixed: "Mixed",
+  };
 
   return (
     <div className={`min-h-screen ${theme.bg} transition-colors duration-300`}>
-      <div className="no-print max-w-md mx-auto px-4 py-6">
-        <h1 className={`text-2xl font-semibold font-display ${theme.textPrimary} mb-2`}>
-          Print a Flight Log
-        </h1>
+      <div className="no-print max-w-xl mx-auto px-4 py-6">
+        <h1 className={`text-2xl font-semibold font-display ${theme.textPrimary} mb-2`}>Print a Worksheet</h1>
         <p className={`text-sm ${theme.textSecondary} mb-6`}>
-          One sheet, one skill: three parts of problems from the same levels
-          the games use. The answer key prints as its own sheet.
+          Pick a grade, a topic, then the skill to practice. One sheet, one skill — the answer key prints as its own sheet.
         </p>
 
         <div className={`${theme.cardBg} backdrop-blur rounded-3xl shadow-lg p-6 space-y-5`}>
-          {/* Math type */}
+          {/* Grade */}
           <div>
-            <p className={`text-sm font-semibold ${theme.textSecondary} mb-2 uppercase tracking-wide`}>
-              Math Type
-            </p>
-            <div className="grid grid-cols-4 gap-2">
-              {MODES.map((m) => {
-                const cfg = getModeConfig(m);
-                const Icon = ICON_MAP[cfg.icon] || Plus;
-                const active = m === mode;
-                return (
-                  <button
-                    key={m}
-                    className={`flex flex-col items-center gap-1 p-2.5 rounded-2xl border-2 cursor-pointer transition-colors ${
-                      active ? theme.selectedBorder : `${theme.cardBorder} bg-white hover:bg-gray-50`
-                    }`}
-                    onClick={() => { setMode(m); setGenerated(false); }}
-                  >
-                    <Icon className={`h-6 w-6 ${active ? theme.selectedIcon : theme.textMuted}`} />
-                    <span className={`text-[10px] font-bold ${active ? theme.selectedText : theme.textSecondary} leading-tight text-center`}>
-                      {cfg.shortLabel}
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* Level selector */}
-          <div>
-            <p className={`text-sm font-semibold ${theme.textSecondary} mb-2 uppercase tracking-wide`}>
-              Level ({levelLabel})
-            </p>
-            <div className="space-y-2">
-              {LEVEL_GROUPS.map((group) => (
-                <div key={group.label}>
-                  <p className={`text-xs ${theme.textMuted} mb-1 font-medium`}>{group.label}</p>
-                  <div className="flex gap-1.5">
-                    {group.levels.map((lv) => (
-                      <button
-                        key={lv}
-                        aria-label={`Level ${lv}`}
-                        className={`flex-1 py-2 rounded-xl border-2 font-bold text-sm cursor-pointer transition-colors ${
-                          lv === level
-                            ? theme.selectedBorder + " " + theme.selectedText
-                            : `${theme.cardBorder} bg-white ${theme.textSecondary} hover:bg-gray-50`
-                        }`}
-                        onClick={() => { setLevel(lv); setGenerated(false); }}
-                      >
-                        {lv}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Number of logs */}
-          <div>
-            <p className={`text-sm font-semibold ${theme.textSecondary} mb-2 uppercase tracking-wide`}>
-              Number of Logs
-            </p>
-            <div className="flex gap-2">
-              {[1, 2, 3, 5].map((n) => (
+            <p className={sectionLabel}>Grade</p>
+            <div className="grid grid-cols-6 gap-2" role="group" aria-label="Grade">
+              {GRADES.map((g) => (
                 <button
-                  key={n}
-                  aria-label={`${n} ${n === 1 ? "log" : "logs"}`}
-                  className={`flex-1 py-3 rounded-2xl border-2 font-bold text-lg cursor-pointer transition-colors ${
-                    n === sheetCount
-                      ? theme.selectedBorder + " " + theme.selectedText
-                      : `${theme.cardBorder} bg-white ${theme.textSecondary} hover:bg-gray-50`
-                  }`}
-                  onClick={() => { setSheetCount(n); setGenerated(false); }}
+                  key={g}
+                  aria-label={GRADE_LABELS[g]}
+                  aria-pressed={g === grade}
+                  className={`py-2.5 text-lg ${chip(g === grade)}`}
+                  onClick={() => chooseGrade(g)}
                 >
-                  {n}
+                  {g}
                 </button>
               ))}
             </div>
           </div>
 
-          {/* Word problems toggle — mirrors the play-screen preference (#34) */}
-          <div className="flex items-center justify-between">
-            <p className={`text-sm font-semibold ${theme.textSecondary} uppercase tracking-wide`}>
-              Include Word Problems
-            </p>
-            <button
-              className={`relative w-12 h-7 rounded-full transition-colors cursor-pointer ${
-                allowWordProblems ? "bg-teal" : "bg-gray-300"
-              }`}
-              onClick={() => { setAllowWordProblems(!allowWordProblems); setGenerated(false); }}
-              aria-label={allowWordProblems ? "Skip word problems" : "Include word problems"}
-            >
-              <span
-                className={`absolute top-0.5 left-0.5 w-6 h-6 bg-white rounded-full shadow transition-transform ${
-                  allowWordProblems ? "translate-x-5" : ""
-                }`}
-              />
-            </button>
+          {/* Topic: the grade's high-level areas */}
+          <div>
+            <p className={sectionLabel}>Topic</p>
+            {!grade ? (
+              <p className={`text-sm ${theme.textMuted}`}>Pick a grade to see its topics.</p>
+            ) : (
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2" role="group" aria-label={`${GRADE_LABELS[grade]} topics`}>
+                {topics.map(({ mode }) => (
+                  <button
+                    key={mode}
+                    aria-pressed={mode === topicMode}
+                    className={`px-3 py-2.5 text-sm leading-tight ${chip(mode === topicMode)}`}
+                    onClick={() => chooseTopic(mode)}
+                  >
+                    {TOPIC_LABELS[mode]}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Skill: what exactly, within the topic */}
+          {grade && (
+            <div>
+              <p className={sectionLabel}>Skill</p>
+              {!topicSkills.length ? (
+                <p className={`text-sm ${theme.textMuted}`}>Pick a topic to see its skills.</p>
+              ) : (
+                <div
+                  className={`rounded-2xl border-2 ${theme.cardBorder} bg-white overflow-hidden`}
+                  role="radiogroup"
+                  aria-label={`${GRADE_LABELS[grade]} ${TOPIC_LABELS[topicMode]} skills`}
+                >
+                  {topicSkills.map((s) => {
+                    const active = s.id === skillId;
+                    return (
+                      <button
+                        key={s.id}
+                        role="radio"
+                        aria-checked={active}
+                        className={`w-full flex items-start gap-3 px-4 py-2.5 text-left cursor-pointer transition-colors ${
+                          active ? "bg-teal/10" : "hover:bg-gray-50"
+                        }`}
+                        onClick={() => chooseSkill(s)}
+                      >
+                        <span
+                          className={`mt-1 h-4 w-4 flex-none rounded-full border-2 ${
+                            active ? "border-teal bg-teal shadow-[inset_0_0_0_3px_white]" : "border-gray-300"
+                          }`}
+                        />
+                        <span className={`flex-1 text-sm font-semibold leading-snug ${active ? theme.selectedText : theme.textPrimary}`}>
+                          {s.title}
+                        </span>
+                        {s.ccss[0] && (
+                          <span className={`flex-none pt-0.5 text-[11px] font-bold tabular-nums ${theme.textMuted}`}>{s.ccss[0]}</span>
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Problem type */}
+          <div>
+            <p className={sectionLabel}>Problems</p>
+            <div className="grid grid-cols-3 gap-2" role="group" aria-label="Problem type">
+              {PROBLEM_TYPES.map((type) => {
+                const off = capacity && !capacity[type].sheets;
+                return (
+                  <button
+                    key={type}
+                    aria-label={PROBLEM_TYPE_ARIA[type]}
+                    aria-pressed={type === activeType}
+                    disabled={Boolean(off)}
+                    className={`py-2.5 text-sm ${chip(type === activeType)} disabled:opacity-40 disabled:cursor-not-allowed`}
+                    onClick={() => chooseProblemType(type)}
+                  >
+                    {typeLabels[type]}
+                  </button>
+                );
+              })}
+            </div>
+            {capacity &&
+              PROBLEM_TYPES.filter((type) => type !== "practice" && !capacity[type].sheets)
+                .slice(0, 1)
+                .map((type) => (
+                  <p key={type} className={`mt-2 text-xs ${theme.textMuted}`}>{capacity[type].reason}</p>
+                ))}
+          </div>
+
+          {/* Number of sheets */}
+          <div>
+            <p className={sectionLabel}>Number of Sheets</p>
+            <div className="flex gap-2">
+              {SHEET_COUNTS.map((count) => (
+                <button
+                  key={count}
+                  aria-label={`${count} ${count === 1 ? "sheet" : "sheets"}`}
+                  aria-pressed={count === activeCount}
+                  disabled={count > maxSheets && count > 1}
+                  className={`flex-1 py-3 text-lg ${chip(count === activeCount)} disabled:opacity-40 disabled:cursor-not-allowed`}
+                  onClick={() => {
+                    setSheetCount(count);
+                    setSheets(null);
+                  }}
+                >
+                  {count}
+                </button>
+              ))}
+            </div>
           </div>
 
           {/* Answer Key toggle */}
           <div className="flex items-center justify-between">
-            <p className={`text-sm font-semibold ${theme.textSecondary} uppercase tracking-wide`}>
-              Include Answer Key
-            </p>
+            <p className={`text-sm font-semibold ${theme.textSecondary} uppercase tracking-wide`}>Include Answer Key</p>
             <button
-              className={`relative w-12 h-7 rounded-full transition-colors cursor-pointer ${
-                showAnswerKey ? "bg-teal" : "bg-gray-300"
-              }`}
+              className={`relative w-12 h-7 rounded-full transition-colors cursor-pointer ${showAnswerKey ? "bg-teal" : "bg-gray-300"}`}
               onClick={() => setShowAnswerKey(!showAnswerKey)}
               aria-label={showAnswerKey ? "Skip the answer key" : "Include the answer key"}
             >
@@ -473,15 +391,25 @@ export default function PrintableWorksheet() {
             </button>
           </div>
 
+          {blocked && (
+            <p className="text-sm font-semibold text-red-700" role="alert">
+              {blocked}{" "}
+              <button className="underline cursor-pointer" onClick={() => setAttempt((n) => n + 1)}>
+                Retry
+              </button>
+            </p>
+          )}
+
           {/* Buttons */}
           <div className="flex gap-3">
             <motion.button
-              className="flex-1 h-14 bg-teal text-cream font-display font-semibold text-lg rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer"
+              className="flex-1 h-14 bg-teal text-cream font-display font-semibold text-lg rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+              disabled={!ready || Boolean(blocked)}
               onClick={handleGenerate}
             >
-              Generate
+              {!grade ? "Pick a grade" : !topicMode ? "Pick a topic" : !skill ? "Pick a skill" : ready ? "Generate" : "Loading…"}
             </motion.button>
-            {generated && (
+            {sheets && (
               <motion.button
                 className="flex items-center justify-center gap-2 flex-1 h-14 bg-white text-teal font-display font-semibold text-lg rounded-[18px] shadow-[0_5px_0_#14231F1a] [--press-edge:#14231F1a] btn-press cursor-pointer"
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -496,30 +424,13 @@ export default function PrintableWorksheet() {
         </div>
       </div>
 
-      {/* The flight logs */}
-      {generated &&
-        logs.map((log, i) => (
+      {/* The sheets */}
+      {sheets &&
+        sheets.map((sheet, i) => (
           <div key={i} className="max-w-2xl mx-auto px-4 pb-8 print:px-0 print:pb-0 print:max-w-none space-y-4 print:space-y-0">
-            <FlightLogSheet
-              log={log}
-              mode={mode}
-              level={level}
-              scope={scope}
-              logIndex={i}
-              logCount={logs.length}
-              breakBefore={i > 0}
-            />
+            <WorksheetSheet sheet={sheet} title={title} footer={footer} sheetIndex={i} sheetCount={sheets.length} breakBefore={i > 0} />
             {showAnswerKey && (
-              <FlightLogSheet
-                log={log}
-                mode={mode}
-                level={level}
-                scope={scope}
-                answerKey
-                logIndex={i}
-                logCount={logs.length}
-                breakBefore
-              />
+              <WorksheetSheet sheet={sheet} title={title} footer={footer} answerKey sheetIndex={i} sheetCount={sheets.length} breakBefore />
             )}
           </div>
         ))}

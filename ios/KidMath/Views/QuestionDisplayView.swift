@@ -333,8 +333,48 @@ struct ClockFaceView: View {
     @Environment(\.theme) private var theme
     let hour: Double
     let minute: Double
+    /// The PRINTED face (worksheets): numerals 1–12, a minute track, a solid
+    /// rim and all-black hands — mirror of ClockFace.jsx `numbered`. On paper
+    /// the twelve soft dots cannot be told apart, and the tip of the minute
+    /// hand reads as a thirteenth.
+    var numbered = false
 
     var body: some View {
+        if numbered { numberedFace } else { dottedFace }
+    }
+
+    private var numberedFace: some View {
+        Canvas { ctx, size in
+            let center = CGPoint(x: size.width / 2, y: size.height / 2)
+            let ink = GraphicsContext.Shading.color(.black)
+            let face = Path(ellipseIn: CGRect(x: center.x - 74, y: center.y - 74, width: 148, height: 148))
+            ctx.fill(face, with: .color(.white))
+            ctx.stroke(face, with: ink, lineWidth: 2.5)
+            for i in 0..<60 {
+                let onHour = i % 5 == 0
+                var tick = Path()
+                tick.move(to: handPoint(center: center, length: onHour ? 65 : 68, angleDegrees: Double(i) * 6))
+                tick.addLine(to: handPoint(center: center, length: 72, angleDegrees: Double(i) * 6))
+                ctx.stroke(tick, with: ink, lineWidth: onHour ? 1.8 : 0.7)
+            }
+            for n in 1...12 {
+                let at = handPoint(center: center, length: 54, angleDegrees: Double(n) * 30)
+                ctx.draw(Text("\(n)").font(.custom("Fredoka-SemiBold", size: 13)).foregroundColor(.black), at: at)
+            }
+            var hourHand = Path()
+            hourHand.move(to: center)
+            hourHand.addLine(to: handPoint(center: center, length: 34, angleDegrees: (hour.truncatingRemainder(dividingBy: 12) + minute / 60) * 30))
+            ctx.stroke(hourHand, with: ink, style: StrokeStyle(lineWidth: 5, lineCap: .round))
+            var minuteHand = Path()
+            minuteHand.move(to: center)
+            minuteHand.addLine(to: handPoint(center: center, length: 60, angleDegrees: minute * 6))
+            ctx.stroke(minuteHand, with: ink, style: StrokeStyle(lineWidth: 2, lineCap: .round))
+            ctx.fill(Path(ellipseIn: CGRect(x: center.x - 4, y: center.y - 4, width: 8, height: 8)), with: ink)
+        }
+        .frame(width: 160, height: 160)
+    }
+
+    private var dottedFace: some View {
         Canvas { ctx, size in
             let center = CGPoint(x: size.width / 2, y: size.height / 2)
             let face = Path(ellipseIn: CGRect(x: center.x - 70, y: center.y - 70, width: 140, height: 140))

@@ -314,7 +314,7 @@ export default function ParentReportPage() {
             <Tile value={t.questions} label="questions answered" />
             <Tile value={t.accuracy != null ? `${t.accuracy}%` : "—"} label="right on the first try" sub={t.retriesMastered > 0 ? `${t.retriesMastered} fixed on a retry` : undefined} />
             <Tile value={t.streakDays} label="day streak" sub={t.perfectSessions > 0 ? `${t.perfectSessions} perfect session${t.perfectSessions === 1 ? "" : "s"}` : undefined} />
-            <Tile value={t.skillsMastered} label={`skill${t.skillsMastered === 1 ? "" : "s"} mastered`} sub={t.challengesTaken > 0 ? `${t.challengesPassed}/${t.challengesTaken} challenge flights passed` : undefined} />
+            <Tile value={t.skillsMastered} label={`skill${t.skillsMastered === 1 ? "" : "s"} mastered`} sub={t.challengesTaken > 0 ? `${t.challengesPassed}/${t.challengesTaken} Fledging Flights passed` : undefined} />
           </div>
 
           {report.recommendations.length > 0 && (

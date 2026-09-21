@@ -145,7 +145,7 @@ test("every skill mastered → the challenge is offered; five of six opens the n
   });
   await page.goto("/play/subtraction");
   await expect(page.getByText("Every Grade 3 skill mastered!")).toBeVisible();
-  await page.getByRole("button", { name: "Take the Grade 4 challenge" }).click();
+  await page.getByRole("button", { name: "Take the Fledging Flight" }).click();
   await expect(page).toHaveURL(/challenge=1/);
 
   let seq = 0;
@@ -154,7 +154,7 @@ test("every skill mastered → the challenge is offered; five of six opens the n
     const next = await nextQuestion(page, seq);
     seq = next.seq;
     asked.push(next.q.skillId);
-    if (i === 0) await expect(page.getByText("Grade 3 challenge")).toBeVisible();
+    if (i === 0) await expect(page.getByText("Fledging Flight to Grade 4")).toBeVisible();
     await answerQuestion(page, next.q);
   }
   // Six questions, spread across the grade's skills.

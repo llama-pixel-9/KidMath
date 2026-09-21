@@ -3,6 +3,7 @@ import { gradeSpanFor } from "../engagement/gradeSpans.js";
 import { subskillLabel } from "./subskillLabels.js";
 import { GRADE_LABELS, TOPIC_LABELS } from "../skills/catalog.js";
 import { STATES, deriveMastery, progressToward, stateOf, summarize } from "../skills/mastery.js";
+import { GRADE_UP } from "../skills/topicState.js";
 import { gradeForModeLevel, nextTopicGrade, playSkills, skillsForPlay, topicGrades } from "../skills/play.js";
 
 /**
@@ -350,6 +351,10 @@ function recommendations(modes, strugglesList, totals) {
  * @param {Array} allSessions  records from sessionLog (any kid filter applied already)
  * @param {object} opts        { now, days (null = all time), progressByMode }
  */
+// A ladder Fledging Flight passes by raising the level. A grade-up one (a skill
+// session: it carries a grade) never moves the level — it passes on its score.
+const flightPassed = (s) => (s.grade ? s.firstTryCorrect >= GRADE_UP.pass : s.levelEnd > s.levelStart);
+
 export function buildReport(allSessions, { now = Date.now(), days = 30, progressByMode = {} } = {}) {
   const ordered = (allSessions || []).filter((s) => s && s.endedAt).slice().sort((a, b) => a.startedAt - b.startedAt);
   const since = days ? startOfLocalDay(now) - (days - 1) * DAY_MS : -Infinity;
@@ -382,7 +387,7 @@ export function buildReport(allSessions, { now = Date.now(), days = 30, progress
     retriesMastered: sessions.reduce((n, s) => n + s.retriesMastered, 0),
     perfectSessions: sessions.filter((s) => s.questions > 0 && s.firstTryCorrect === s.questions).length,
     levelUps: sessions.filter((s) => s.levelEnd > s.levelStart).length,
-    challengesPassed: challenges.filter((s) => s.levelEnd > s.levelStart).length,
+    challengesPassed: challenges.filter(flightPassed).length,
     challengesTaken: challenges.length,
     firstSessionAt: ordered.length ? ordered[0].startedAt : null,
     lastSessionAt: practice.length ? practice[practice.length - 1].startedAt : null,

@@ -45,8 +45,7 @@ import { usePremium } from "./PremiumContext";
 import { useAuth } from "./useAuth";
 import { isFreeMode } from "./premium";
 import { skillsPlayEnabled } from "./gamificationFlags.js";
-import { GRADE_LABELS } from "./skills/catalog.js";
-import { gradeView, resolveTopic } from "./skills/topicState.js";
+import { topicChip } from "./skills/flow.js";
 import { activeKidId, activeKidGrade, fetchKids } from "./kidProfiles";
 import { loadSessionsSync } from "./analytics/sessionLog.js";
 import { masterySummary, masteryLine } from "./analytics/masterySummary.js";
@@ -150,10 +149,7 @@ function groupsForGrade(grade) {
 
 /** Where a kid stands in a topic, for the tile chip and Quick Start (play by skill). */
 function topicStanding(id, grade, practiceLog) {
-  const topic = resolveTopic(id, loadProgressSync(id), { profileGrade: grade, sessions: practiceLog });
-  if (!topic) return null;
-  const view = gradeView(topic);
-  return { grade: topic.grade, mastered: view.mastered, total: view.total, started: view.mastered + view.practicing > 0 };
+  return topicChip(id, loadProgressSync(id), { profileGrade: grade, sessions: practiceLog });
 }
 
 /**
@@ -292,7 +288,7 @@ export default function HomePage() {
                           <span className="text-[13px] font-display text-ink bg-cream rounded-full px-2.5 py-[3px] whitespace-nowrap flex-none">
                             {bySkill
                               ? standing?.started
-                                ? `${GRADE_LABELS[standing.grade]} · ${standing.mastered}/${standing.total}`
+                                ? standing.text
                                 : "New"
                               : lv > 1
                                 ? `Level ${lv}`

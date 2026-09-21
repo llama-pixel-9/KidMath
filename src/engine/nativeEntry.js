@@ -17,6 +17,17 @@
  */
 
 import {
+  GRADE_UP,
+  mergeTopicState,
+  parentControls,
+  sessionLabel as skillSessionLabel,
+  sessionOptionsFor,
+  settleSkillSession,
+  topicChip,
+  topicSheetModel,
+  unlockGradePatch,
+} from "../skills/flow.js";
+import {
   generateQuestion,
   checkAnswer,
   generateChoices,
@@ -146,6 +157,24 @@ g.KidMath = {
   isYesNoJudgment: (question) => isYesNoJudgment(question),
   generateWorksheetSet: (mode, level, size, options) =>
     generateWorksheetSet(mode, level, size, options ?? {}),
+
+  // Play by skill (src/skills/flow.js) — the same flow the web page runs.
+  // Swift owns the screen and the stores; it passes the topic's saved progress
+  // ({ level, totalSessions, grade, gradeUnlocked, pinnedSkillId, skillMastery })
+  // and `context` = { profileGrade, sessions } in, and saves the patches it
+  // gets back. Nothing here reads a store.
+  topicSheetModel: (mode, progress, context, shownGrade) =>
+    topicSheetModel(mode, progress ?? {}, context ?? {}, shownGrade ?? null),
+  topicChip: (mode, progress, context) => topicChip(mode, progress ?? {}, context ?? {}),
+  skillSessionOptions: (mode, progress, context, request) =>
+    sessionOptionsFor(mode, progress ?? {}, context ?? {}, request ?? {}),
+  skillSessionLabel: (session, mode) => skillSessionLabel(session ?? null, mode),
+  settleSkillSession: (mode, progress, context, session, closedRecord) =>
+    settleSkillSession(mode, progress ?? {}, context ?? {}, session ?? null, closedRecord ?? null),
+  skillParentControls: (mode, progress, context) => parentControls(mode, progress ?? {}, context ?? {}),
+  unlockGradePatch: (mode, progress, context, grade) => unlockGradePatch(mode, progress ?? {}, context ?? {}, grade),
+  mergeTopicState: (cloud, local) => mergeTopicState(cloud ?? {}, local ?? {}),
+  fledgingFlightRule: () => ({ ...GRADE_UP }),
 
   // Adaptive session. Swift owns persistence and passes savedProgress in.
   createAdaptiveSession: (mode, sessionSize, options) =>

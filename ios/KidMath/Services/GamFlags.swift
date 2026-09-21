@@ -54,4 +54,10 @@ enum GamFlags {
     nonisolated static var secondChance: Bool { step("gamSecondChance") }
     /// Read-aloud prompts (web: VITE_GAM_READ_ALOUD). Not yet wired on iOS.
     nonisolated static var readAloud: Bool { step("gamReadAloud") }
+
+    /// Play by skill — Grade → Topic → Skill with durable mastery instead of
+    /// the level ladder (web: VITE_SKILLS_PLAY). NOT a gamification step, on
+    /// purpose: `all` is already true, and this must stay off until it is
+    /// switched on for both platforms together. `-skillsPlay 1` forces it on.
+    nonisolated static var skillsPlay: Bool { UserDefaults.standard.bool(forKey: "skillsPlay") }
 }

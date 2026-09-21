@@ -37,9 +37,13 @@ final class PracticeLog {
 
     // MARK: - Record lifecycle (engine-owned)
 
-    func open(mode: String, level: Int, kind: String = "normal", now: Date = Date()) -> Record? {
+    /// `skill` describes a skill session: `sessionKind` ("skill" | "mix"),
+    /// `skillId` (pinned sessions) and `grade` — they ride into the row's
+    /// `skill_id` / `grade` columns through the shared sessionRecordToRow.
+    func open(mode: String, level: Int, kind: String = "normal", skill: [String: Any]? = nil, now: Date = Date()) -> Record? {
         var args: [String: Any] = ["mode": mode, "level": level, "kind": kind, "now": now.timeIntervalSince1970 * 1000]
         args["kidId"] = activeKidId ?? NSNull()
+        if let skill { args.merge(skill) { _, new in new } }
         return try? engine.callDictionary("openSessionRecord", [args])
     }
 

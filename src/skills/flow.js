@@ -154,7 +154,12 @@ function gradeUpNote(gradeUp, gradeLabel, topicLabel) {
  */
 export function settleSkillSession(mode, progress = {}, context = {}, session, closedRecord) {
   if (!session?.skillIds) return null;
-  const before = resolveTopic(mode, progress, context);
+  // The practice log is saved BEFORE progress, so by now it usually holds this
+  // very session. A kid with no saved mastery has it rebuilt from that log —
+  // and then this session applied on top would count twice (a first session
+  // of ten right answers read as "mastered in two sessions").
+  const earlier = (context.sessions || []).filter((s) => s.id !== closedRecord?.id);
+  const before = resolveTopic(mode, progress, { ...context, sessions: earlier });
   if (!before) return null;
   // (A challenge record is kind "fledging", which the reducer ignores.)
   const skillMastery = afterPractice(applySession(before.mastery, closedRecord));

@@ -19,6 +19,12 @@ struct HomeView: View {
     /// The active kid's local practice log — the mastery line on each card
     /// ("1 of 3 skills solid", HomePage.jsx) is computed over it.
     @State private var practiceSessions: [[String: Any]] = []
+    /// Play by skill (GamFlags.skillsPlay): tapping a topic opens its sheet,
+    /// and each card carries "Grade 3 · 1/3" — the shared topicChip, computed
+    /// once per refresh rather than per render.
+    @State private var topicMode: ModeInfo?
+    @State private var topicAutostart: SessionViewModel.SkillRequest?
+    @State private var topicChips: [String: [String: Any]] = [:]
 
     private let columns = [GridItem(.adaptive(minimum: 150, maximum: 220), spacing: 12)]
 
@@ -93,6 +99,9 @@ struct HomeView: View {
             .fullScreenCover(item: $activeMode) { mode in
                 SessionView(mode: mode)
             }
+            .fullScreenCover(item: $topicMode, onDismiss: { Task { await refreshAfterPlay() } }) { mode in
+                TopicSheetView(mode: mode, autostart: topicAutostart)
+            }
             .fullScreenCover(isPresented: $showFirstFlight) { FirstFlightView() }
             .fullScreenCover(isPresented: $showProfilePicker) { ProfilePickerView() }
             .onChange(of: activeMode) { _, mode in
@@ -105,10 +114,55 @@ struct HomeView: View {
                 engagement = EngagementStore().load()
                 practiceSessions = app.practiceLog?.readLocal(kidId: app.practiceLog?.activeKidId) ?? []
                 await app.refreshModeLevels()
+                refreshTopicChips()
                 autostartIfRequested()
                 await presentFirstFlightIfNeeded()
             }
         }
+    }
+
+    /// Open a topic: its sheet when playing by skill, else straight into the
+    /// ladder session.
+    private func open(_ mode: ModeInfo) {
+        if GamFlags.skillsPlay { topicMode = mode } else { activeMode = mode }
+    }
+
+    private func refreshAfterPlay() async {
+        topicAutostart = nil
+        engagement = EngagementStore().load()
+        practiceSessions = app.practiceLog?.readLocal(kidId: app.practiceLog?.activeKidId) ?? []
+        await app.refreshModeLevels()
+        refreshTopicChips()
+    }
+
+    private func refreshTopicChips() {
+        guard GamFlags.skillsPlay, let engine = app.engine else { return }
+        var chips: [String: [String: Any]] = [:]
+        for mode in ModeCatalog.allModes where mode.playable {
+            let context: [String: Any] = [
+                "profileGrade": app.kidProfiles.activeKidGrade ?? NSNull(),
+                "sessions": practiceSessions.filter { ($0["mode"] as? String) == mode.id },
+            ]
+            chips[mode.id] = engine.topicChip(mode: mode.id, progress: app.modeProgress[mode.id] ?? [:], context: context)
+        }
+        topicChips = chips
+    }
+
+    /// Quick Start by skill: the in-grade topic the family can open with the
+    /// lowest share of its grade's skills mastered (HomePage.jsx quickStartFor).
+    private var quickStartMode: ModeInfo? {
+        let grade = app.kidProfiles.activeKidGrade
+        guard GamFlags.skillsPlay else {
+            return GradeSeed.quickStart(grade: grade, levels: app.modeLevels).flatMap { ModeCatalog.mode($0) }
+        }
+        guard GradeSeed.gradeIndex(grade) != nil else { return nil }
+        func share(_ id: String) -> Double? {
+            guard let chip = topicChips[id] else { return nil }
+            return ProgressStore.double(chip["mastered"]) / max(1, ProgressStore.double(chip["total"], default: 1))
+        }
+        return ModeCatalog.groups.flatMap(\.modes)
+            .filter { $0.playable && GradeSeed.gradeFit(mode: $0.id, grade: grade) == "in" && app.store.canPlay($0.id) && share($0.id) != nil }
+            .min { (share($0.id) ?? 1) < (share($1.id) ?? 1) }
     }
 
     /// §14: one greeting line above the aviary — time of day, first name when
@@ -160,10 +214,17 @@ struct HomeView: View {
             }
             HStack(spacing: 10) {
                 // Quick Start: the in-grade mode with the most room to grow.
-                if let quick = GradeSeed.quickStart(grade: app.kidProfiles.activeKidGrade, levels: app.modeLevels),
-                   let mode = ModeCatalog.mode(quick) {
+                if let mode = quickStartMode {
                     Button {
-                        if app.store.canPlay(mode.id) { activeMode = mode } else { showPaywall = true }
+                        if !app.store.canPlay(mode.id) {
+                            showPaywall = true
+                        } else if GamFlags.skillsPlay {
+                            // Straight into "Larkit picks" for the topic's focus grade.
+                            topicAutostart = .mix(grade: nil)
+                            topicMode = mode
+                        } else {
+                            activeMode = mode
+                        }
                     } label: {
                         Label("Quick Start", systemImage: "bolt.fill")
                             .font(theme.bodyFont(size: 15, weight: .bold))
@@ -249,7 +310,7 @@ struct HomeView: View {
             if locked {
                 showPaywall = true
             } else {
-                activeMode = mode
+                open(mode)
             }
         } label: {
             VStack(alignment: .leading, spacing: 8) {
@@ -267,7 +328,9 @@ struct HomeView: View {
                     // §03 step 3: the nomination survives leaving the app as
                     // a Sun pill on the mode's card (Ink text — cream on Sun
                     // is forbidden).
-                    if !locked, GamFlags.fledging, EngagementStore().nomination(for: mode.id) != nil {
+                    // (A ladder nomination has no meaning by skill: the Fledging
+                    // Flight is earned by mastering the grade, on the topic sheet.)
+                    if !locked, GamFlags.fledging, !GamFlags.skillsPlay, EngagementStore().nomination(for: mode.id) != nil {
                         Text("Ready to fledge")
                             .font(theme.bodyFont(size: 11, weight: .heavy))
                             .foregroundStyle(Theme.ink)
@@ -277,6 +340,11 @@ struct HomeView: View {
                     }
                     if !mode.playable {
                         soonBadge
+                    } else if !locked, GamFlags.skillsPlay {
+                        if let chip = topicChips[mode.id] {
+                            chipBadge((chip["flightReady"] as? Bool ?? false) ? "Fledging Flight ready"
+                                : (chip["started"] as? Bool ?? false) ? (chip["text"] as? String ?? "") : "New")
+                        }
                     } else if !locked, let level = app.modeLevels[mode.id], level > 1 {
                         levelBadge(level)
                     }
@@ -288,7 +356,7 @@ struct HomeView: View {
                     .multilineTextAlignment(.leading)
                 // "1 of 3 skills solid" — mastery over the practice log, the
                 // shared masterySummary (teach-don't-grade: skills, not scores).
-                if !locked, let line = app.engine?.masteryLine(sessions: practiceSessions, mode: mode.id) {
+                if !locked, !GamFlags.skillsPlay, let line = app.engine?.masteryLine(sessions: practiceSessions, mode: mode.id) {
                     Text(line)
                         .font(theme.bodyFont(size: 11, weight: .bold))
                         .foregroundStyle(Theme.ink.opacity(0.65))
@@ -365,6 +433,17 @@ struct HomeView: View {
         .buttonStyle(SpringButtonStyle())
     }
 
+    private func chipBadge(_ text: String) -> some View {
+        Text(text)
+            .font(.caption.weight(.bold))
+            .lineLimit(1)
+            .minimumScaleFactor(0.7)
+            .padding(.horizontal, 8)
+            .padding(.vertical, 4)
+            .background(Capsule().fill(Theme.cream))
+            .foregroundStyle(Theme.ink)
+    }
+
     private func levelBadge(_ level: Int) -> some View {
         Text("Lv \(level)")
             .font(.caption.weight(.bold))
@@ -395,9 +474,17 @@ struct HomeView: View {
             showMeadow = true
             return
         }
-        guard activeMode == nil,
+        guard activeMode == nil, topicMode == nil,
               let modeId = UserDefaults.standard.string(forKey: "autostartMode"),
               let mode = ModeCatalog.mode(modeId), mode.playable else { return }
+        // `-skillsPlay 1 -autostartMode subtraction -autostartSkill sub-across-zeros`
+        // opens the topic sheet and starts that skill; without a skill the
+        // sheet itself is the landing.
+        if GamFlags.skillsPlay {
+            topicAutostart = UserDefaults.standard.string(forKey: "autostartSkill").map { .skill($0) }
+            topicMode = mode
+            return
+        }
         activeMode = mode
     }
 }

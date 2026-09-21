@@ -106,6 +106,16 @@ describe("settling a finished session", () => {
     expect(settled.standing.gradeUpNote).toBeNull();
   });
 
+  it("a session already written to the practice log is not counted twice", () => {
+    // The log is saved before progress, so the closed record is usually in `sessions`.
+    const first = session(G3[0].id, "1111111111");
+    const settled = settleSkillSession("subtraction", {}, { ...kid, sessions: [first] }, { skillIds: [G3[0].id], pinned: true, grade: "3" }, first);
+    const entry = settled.patch.skillMastery[G3[0].id];
+    expect(entry.attempts).toBe(10);
+    expect(entry.sessions).toBe(1);
+    expect(entry.state).toBe("practicing"); // ten right in ONE session is not mastery
+  });
+
   it("the session that masters the last skill announces the Fledging Flight", () => {
     const log = masterAll(G3, "subtraction");
     const last = log.pop();

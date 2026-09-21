@@ -102,3 +102,42 @@ pays no stars, parent controls). Must stay green unchanged: `bankCellCoverage`,
 iOS parity (nativeEntry exports + TopicSheetView, SessionViewModel options,
 ProgressStore columns, copy) · then flag on by default and retire the ladder
 paths · marketing/onboarding copy that still says "level up".
+
+## One flow, two apps (`src/skills/flow.js`)
+
+Everything between a screen and a store is in `flow.js`, pure, and exported
+through `nativeEntry.js` — the web renders it and the SwiftUI app renders the
+same output. Do not re-derive any of this in a component or in Swift:
+
+| flow.js | native export | what it is |
+|---|---|---|
+| `topicSheetModel` | `topicSheetModel` | everything the topic sheet shows (+ `toSave`) |
+| `sessionOptionsFor` | `skillSessionOptions` | `{skill}` / `{mix,grade}` / `{challenge}` → session options, or null (not earned / not open → the ladder) |
+| `sessionLabel` | `skillSessionLabel` | the sub-header under the topic title |
+| `settleSkillSession` | `settleSkillSession` | end of session → `patch` (never the level) + `standing` for the end card |
+| `topicChip` | `topicChip` | Home tile "Grade 3 · 1/3", `flightReady` |
+| `parentControls`, `unlockGradePatch` | `skillParentControls`, `unlockGradePatch` | grown-up open-a-grade / pin-a-skill |
+
+**Trap (fixed 2026-09-21):** the practice log is saved BEFORE progress, so the
+just-closed record is usually already in `context.sessions`. A kid with no
+saved mastery has it rebuilt from that log — settling must drop the closed
+record's id first or the first session counts twice. `settleSkillSession` does.
+
+## iOS
+
+Flag: `GamFlags.skillsPlay` — its own switch (`-skillsPlay 1`), NOT `step()`,
+because `GamFlags.all` defaults to true. Off by default until both platforms flip.
+- `TopicSheetView` (tap a Home card) → `SessionView(mode:skillRequest:)`;
+  `SessionViewModel.SkillRequest` = `.skill(id)` / `.mix(grade:)` / `.flight`.
+- A skill session saves `savedLevel` (what was loaded), never the session's
+  `level` (that is only the skill's band). Pinned by `SkillsPlayTests`.
+- Mastery is settled from the CLOSED practice record → a view model without a
+  `PracticeLog` settles nothing (tests must pass one).
+- `ProgressStore.saveTopicState` never counts a session; skill fields ride on
+  the progress row (`grade`, `grade_unlocked`, `pinned_skill_id`,
+  `skill_mastery`) and are always selected — the migration is applied.
+- Grown-up controls: Settings → "Skills to practice", behind the parental gate.
+- Dev: `-skillsPlay 1 -autostartMode subtraction [-autostartSkill sub-across-zeros]`.
+- SwiftUI traps met here: "▶" in a `Text` renders as an emoji (use
+  `Image(systemName: "play.fill")`); with two `.background`s the FIRST is
+  nearest the content — face first, then the offset edge.

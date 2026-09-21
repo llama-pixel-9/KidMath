@@ -113,14 +113,19 @@ struct TopicSheetView: View {
         Button {
             start(practiceRequest(sheet))
         } label: {
-            Text("▶ \(sheet["practiceLabel"] as? String ?? "Practice")")
-                .font(theme.displayFont(size: 21))
-                .foregroundStyle(Theme.cream)
-                .multilineTextAlignment(.center)
-                .padding(.horizontal, 12)
-                .frame(maxWidth: .infinity, minHeight: 64)
-                .background(RoundedRectangle(cornerRadius: 18).fill(Theme.deepTeal).offset(y: 5))
-                .background(RoundedRectangle(cornerRadius: 18).fill(Theme.teal))
+            // (SF Symbol, not "▶": iOS draws that character as an emoji.)
+            HStack(spacing: 8) {
+                Image(systemName: "play.fill").font(.system(size: 16, weight: .bold))
+                Text(sheet["practiceLabel"] as? String ?? "Practice")
+                    .font(theme.displayFont(size: 21))
+                    .multilineTextAlignment(.center)
+            }
+            .foregroundStyle(Theme.cream)
+            .padding(.horizontal, 12)
+            .frame(maxWidth: .infinity, minHeight: 64)
+            // Nearest background first: the teal face, then its deep-teal edge.
+            .background(RoundedRectangle(cornerRadius: 18).fill(Theme.teal))
+            .background(RoundedRectangle(cornerRadius: 18).fill(Theme.deepTeal).offset(y: 5))
         }
         .buttonStyle(SpringButtonStyle())
         .padding(.top, 20)
@@ -234,8 +239,8 @@ struct TopicSheetView: View {
                 .accessibilityLabel("Read aloud: \(title)")
             }
         }
-        .background(RoundedRectangle(cornerRadius: 16).fill(Theme.deepTeal.opacity(0.08)).offset(y: 3))
         .background(RoundedRectangle(cornerRadius: 16).fill(Color.white))
+        .background(RoundedRectangle(cornerRadius: 16).fill(Theme.deepTeal.opacity(0.08)).offset(y: 3))
         .overlay(RoundedRectangle(cornerRadius: 16).stroke(Theme.ink.opacity(0.1), lineWidth: 2))
     }
 

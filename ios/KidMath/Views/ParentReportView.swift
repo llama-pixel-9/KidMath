@@ -92,7 +92,7 @@ struct ParentReportView: View {
     private func tiles(_ t: [String: Any]) -> some View {
         let minutes = int(t["minutes"]), sessionsN = int(t["sessions"]), questions = int(t["questions"])
         let accuracy = t["accuracy"] as? NSNumber
-        let streak = int(t["streakDays"]), levelUps = int(t["levelUps"])
+        let streak = int(t["streakDays"]), skillsMastered = int(t["skillsMastered"])
         let activeDays = int(t["activeDays"]), retries = int(t["retriesMastered"]), perfect = int(t["perfectSessions"])
         let taken = int(t["challengesTaken"]), passed = int(t["challengesPassed"])
         let avg = (t["avgSessionMinutes"] as? NSNumber)?.doubleValue ?? 0
@@ -103,7 +103,7 @@ struct ParentReportView: View {
             tile("\(questions)", "questions answered", sub: nil)
             tile(accuracy.map { "\($0.intValue)%" } ?? "—", "right on the first try", sub: retries > 0 ? "\(retries) fixed on a retry" : nil)
             tile("\(streak)", "day streak", sub: perfect > 0 ? "\(perfect) perfect session\(perfect == 1 ? "" : "s")" : nil)
-            tile("\(levelUps)", "level-up\(levelUps == 1 ? "" : "s")", sub: taken > 0 ? "\(passed)/\(taken) challenge flights passed" : nil)
+            tile("\(skillsMastered)", "skill\(skillsMastered == 1 ? "" : "s") mastered", sub: taken > 0 ? "\(passed)/\(taken) Fledging Flights passed" : nil)
         }
     }
 
@@ -173,7 +173,7 @@ struct ParentReportView: View {
     }
 
     private func skills(_ modes: [[String: Any]]) -> some View {
-        section("Skills", intro: "Levels climb by skill, not time: each activity has its own ladder, and the grade range says what it covers. Tap a row to see it broken down by skill.") {
+        section("Skills", intro: "Each topic is a set of skills by grade. A skill is mastered on steady first-try accuracy across at least two sessions — not on speed, and not in one sitting. Tap a row for the skills.") {
             VStack(spacing: 0) {
                 if modes.isEmpty {
                     Text("No practice in this period yet.").font(theme.bodyFont(size: 14, weight: .semibold)).foregroundStyle(theme.textMuted)
@@ -189,14 +189,20 @@ struct ParentReportView: View {
         let id = m["id"] as? String ?? ""
         let expanded = expandedMode == id
         let subskills = m["subskills"] as? [[String: Any]] ?? []
+        // Standing is told in skills (reportModel `skills`), never a level number.
+        let standing = m["skills"] as? [String: Any]
+        let skillList = standing?["list"] as? [[String: Any]] ?? []
+        let standingLine = standing.map {
+            "\($0["gradeLabel"] as? String ?? "") · \(int($0["mastered"])) of \(int($0["total"])) skills mastered"
+        } ?? (m["gradeSpan"] as? String ?? "")
         return VStack(alignment: .leading, spacing: 6) {
             Button {
                 withAnimation(.easeOut(duration: 0.2)) { expandedMode = expanded ? nil : id }
             } label: {
                 HStack(alignment: .firstTextBaseline) {
                     VStack(alignment: .leading, spacing: 2) {
-                        Text(m["label"] as? String ?? id).font(theme.bodyFont(size: 16, weight: .heavy)).foregroundStyle(Theme.ink)
-                        Text("Level \(int(m["levelNow"]))\(int(m["levelStart"]) != int(m["levelNow"]) ? " (from \(int(m["levelStart"])))" : "") · \(m["gradeSpan"] as? String ?? "")")
+                        Text(standing?["topicLabel"] as? String ?? m["label"] as? String ?? id).font(theme.bodyFont(size: 16, weight: .heavy)).foregroundStyle(Theme.ink)
+                        Text(standingLine)
                             .font(theme.bodyFont(size: 12, weight: .semibold)).foregroundStyle(theme.textMuted)
                     }
                     Spacer()
@@ -210,6 +216,24 @@ struct ParentReportView: View {
             }
             .buttonStyle(.plain)
             if expanded {
+                ForEach(Array(skillList.enumerated()), id: \.offset) { _, s in
+                    let state = s["state"] as? String ?? "new"
+                    let progress = s["progress"] as? [String: Any] ?? [:]
+                    HStack(alignment: .firstTextBaseline) {
+                        Text(state == "mastered" ? "★" : state == "practicing" ? "◐" : "○")
+                            .foregroundStyle(state == "mastered" ? Theme.teal : Theme.ink.opacity(0.4))
+                        Text((s["title"] as? String ?? "") + ((s["needsReview"] as? Bool ?? false) ? " · worth a review" : ""))
+                            .font(theme.bodyFont(size: 13, weight: .semibold)).foregroundStyle(Theme.ink.opacity(0.8))
+                            .fixedSize(horizontal: false, vertical: true)
+                        Spacer()
+                        Text(state == "mastered" ? "mastered" : state == "practicing" ? "\(int(progress["have"])) of \(int(progress["need"]))" : "not started")
+                            .font(theme.bodyFont(size: 12, weight: .semibold)).foregroundStyle(theme.textMuted)
+                    }
+                    .padding(.leading, 8)
+                }
+                if !skillList.isEmpty, !subskills.isEmpty {
+                    Text("BY QUESTION TYPE").font(theme.bodyFont(size: 11, weight: .bold)).foregroundStyle(theme.textMuted).padding(.leading, 8).padding(.top, 4)
+                }
                 ForEach(Array(subskills.enumerated()), id: \.offset) { _, s in
                     HStack {
                         Text(s["label"] as? String ?? s["id"] as? String ?? "").font(theme.bodyFont(size: 13, weight: .semibold)).foregroundStyle(Theme.ink.opacity(0.8))

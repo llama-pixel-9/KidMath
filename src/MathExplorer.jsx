@@ -306,9 +306,9 @@ function getPinnedItemId() {
 }
 const PINNED_ITEM_ID = typeof window === "undefined" ? null : getPinnedItemId();
 
-// `label` replaces the level chip on a skill session: the skill being
-// practiced, or "Mixed · Grade 3".
-function CircularProgress({ current, total, level, label = null }) {
+// A skill session has no level chip: what is being practiced is named in the
+// header, under the topic.
+function CircularProgress({ current, total, level, showLevel = true }) {
   const { theme } = useTheme();
   const radius = 38;
   const circumference = 2 * Math.PI * radius;
@@ -343,17 +343,17 @@ function CircularProgress({ current, total, level, label = null }) {
           </span>
         </div>
       </div>
-      <motion.div
-        className={`px-3 py-1.5 rounded-xl bg-gradient-to-r ${theme.ctaPrimary} text-cream text-sm font-bold shadow-[0_3px_0_#064A41] ${
-          label ? "max-w-[13rem] text-[13px] leading-tight" : ""
-        }`}
-        key={label || level}
-        initial={{ scale: 0.8 }}
-        animate={{ scale: 1 }}
-        transition={{ type: "spring", stiffness: 300 }}
-      >
-        {label || `Lv. ${level}`}
-      </motion.div>
+      {showLevel && (
+        <motion.div
+          className={`px-3 py-1.5 rounded-xl bg-gradient-to-r ${theme.ctaPrimary} text-cream text-sm font-bold shadow-[0_3px_0_#064A41]`}
+          key={level}
+          initial={{ scale: 0.8 }}
+          animate={{ scale: 1 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
+          Lv. {level}
+        </motion.div>
+      )}
     </section>
   );
 }
@@ -834,7 +834,7 @@ export default function MathExplorer({ initialMode }) {
   const [showLevelUp, setShowLevelUp] = useState(false);
   // Skills that reached mastery in the session just finished (end card).
   const [skillStanding, setSkillStanding] = useState(null);
-  // What the chip says on a skill session: the pinned skill, or the mix's grade.
+  // The sub-header on a skill session: the pinned skill, or the mix's grade.
   const sessionLabel = !session.skillIds
     ? null
     : session.challenge
@@ -1553,11 +1553,17 @@ export default function MathExplorer({ initialMode }) {
     <MotionConfig reducedMotion={lowMotionMode ? "always" : "never"}>
       <main className={`session flex-1 ${theme.playBg} flex flex-col${pane ? " session--pane-open" : ""}`}>
       <header className="no-print flex items-center justify-between px-4 py-3">
-        <div className="flex items-center gap-2">
-          <div className={`${modeColor} p-2 rounded-xl`}>
+        <div className="flex items-center gap-2 min-w-0">
+          <div className={`${modeColor} p-2 rounded-xl flex-none`}>
             <ModeIcon className="h-6 w-6 text-ink" />
           </div>
-          <h1 className={`text-xl font-display font-semibold ${theme.textPrimary}`}>{getModeLabel(mode)}</h1>
+          <div className="min-w-0">
+            <h1 className={`text-xl font-display font-semibold leading-tight ${theme.textPrimary}`}>{getModeLabel(mode)}</h1>
+            {/* Topic and skill read as one title: the skill sits under its topic. */}
+            {sessionLabel && (
+              <p className={`text-[13px] font-bold leading-tight ${theme.textSecondary}`} data-testid="session-skill">{sessionLabel}</p>
+            )}
+          </div>
         </div>
         <div className="flex items-center gap-2">
           <motion.button
@@ -1596,7 +1602,7 @@ export default function MathExplorer({ initialMode }) {
         current={session.questionsAnswered}
         total={session.sessionSize}
         level={session.level}
-        label={sessionLabel}
+        showLevel={!sessionLabel}
       />
 
       {fledgingActive && (

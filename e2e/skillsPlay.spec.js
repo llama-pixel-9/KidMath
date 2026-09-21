@@ -119,7 +119,7 @@ test("Larkit picks plays the grade's skills, and the end card says where the kid
     const next = await nextQuestion(page, seq);
     seq = next.seq;
     expect(next.q.skillId).toBe("sub-across-zeros");
-    if (i === 0) await expect(page.getByText("Subtract across zeros", { exact: true })).toBeVisible(); // the chip, not "Lv."
+    if (i === 0) await expect(page.getByText("Subtract across zeros", { exact: true })).toBeVisible(); // named under the topic, not "Lv."
     // The robot kid's own driver: choices for small answers, the number pad
     // (typed) for three-digit ones.
     await answerQuestion(page, next.q);

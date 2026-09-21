@@ -73,6 +73,11 @@ the log — and returns `toSave`; callers persist it with `saveTopicState`
 `needsPractice`, cleared by the next finished session) · `auto` (one-skill
 grade) · `complete`. Grades never re-lock.
 
+**Naming (Sai, 2026-09-20): kids see the grade-up challenge as a "Fledging
+Flight"** — "Take the Fledging Flight", header "Fledging Flight to Grade 4".
+"challenge" is code vocabulary only. The parent report counts one as passed by
+score (`GRADE_UP.pass`), not by a level change — it never moves the level.
+
 ## UI
 - `/play/:mode` → `src/play/TopicSheet.jsx` unless `?skill=`, `?mix=1`,
   `?challenge=1` or the admin `?item=` is present. `?challenge=1` only starts

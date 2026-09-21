@@ -92,6 +92,13 @@ describe("buildReport", () => {
     expect(r.totals.challengesPassed).toBe(1);
   });
 
+  it("a grade-up Fledging Flight passes on its score — it never moves the level", () => {
+    const flight = (misses) => ({ ...session({ kind: "fledging", level: 5, misses }), sessionKind: "mix", grade: "3" });
+    const t = buildReport([flight([]), flight([0, 1])], { now: NOW, days: 7 }).totals;
+    expect(t.challengesTaken).toBe(2);
+    expect(t.challengesPassed).toBe(1); // 5 right passes; 3 right does not
+  });
+
   it("all-time includes the old session", () => {
     expect(buildReport(sessions, { now: NOW, days: null }).totals.sessions).toBe(4);
   });

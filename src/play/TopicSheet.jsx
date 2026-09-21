@@ -168,17 +168,17 @@ export default function TopicSheet({ mode }) {
           <div className="mt-5 rounded-2xl bg-sun-light px-4 py-3 text-ink">
             <p className="text-[15px] font-extrabold">Every {GRADE_LABELS[grade]} skill mastered!</p>
             {challenge.needsPractice ? (
-              <p className="text-[14px] font-bold text-ink/80">One more good practice first, then the {GRADE_LABELS[challenge.nextGrade]} challenge comes back.</p>
+              <p className="text-[14px] font-bold text-ink/80">One more good practice first, then your Fledging Flight comes back.</p>
             ) : (
               <>
                 <p className="text-[14px] font-bold text-ink/80">
-                  {GRADE_UP.questions} questions, {GRADE_UP.pass} to pass — and {GRADE_LABELS[challenge.nextGrade]} opens. No stars ride on it.
+                  A Fledging Flight: {GRADE_UP.questions} questions, {GRADE_UP.pass} to pass — and {GRADE_LABELS[challenge.nextGrade]} opens. No stars ride on it.
                 </p>
                 <button
                   className="mt-2 w-full h-12 rounded-[14px] bg-ink text-cream font-display font-semibold text-lg cursor-pointer"
                   onClick={() => start("challenge=1")}
                 >
-                  Take the {GRADE_LABELS[challenge.nextGrade]} challenge
+                  Take the Fledging Flight
                 </button>
               </>
             )}

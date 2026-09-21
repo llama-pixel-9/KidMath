@@ -13,10 +13,10 @@ function GradeUpNote({ standing }) {
     detail = `${gradeUp.nextGradeLabel} is open.`;
   } else if (gradeUp.challenge) {
     headline = `${gradeUp.score} of 6 — not yet.`;
-    detail = gradeUp.reearn ? "One more good practice first, then the challenge comes back." : "A little more practice, then try again.";
+    detail = gradeUp.reearn ? "One more good practice first, then your Fledging Flight comes back." : "A little more practice, then try again.";
   } else if (gradeUp.ready) {
     headline = `Every ${gradeLabel} skill mastered!`;
-    detail = `Next time: six questions to open ${gradeUp.nextGradeLabel}.`;
+    detail = `Next time: a Fledging Flight — six questions to open ${gradeUp.nextGradeLabel}.`;
   } else if (gradeUp.complete) {
     headline = `${topicLabel} complete!`;
     detail = "Every skill in every grade. Time for a new topic.";

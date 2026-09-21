@@ -64,7 +64,7 @@ import { getModeConfig } from "./modes";
 import { ensureModeLoaded } from "./itemBank.js";
 import { loadTopic } from "./itemBank/loadTopic.js";
 import { loadSessionsSync } from "./analytics/sessionLog.js";
-import { playSkillById } from "./skills/play.js";
+import { nextTopicGrade, playSkillById } from "./skills/play.js";
 import { applySession } from "./skills/mastery.js";
 import { GRADE_UP, advanceGrade, afterPractice, applyChallengeResult, challengeFor, gradeUpStatus, gradeView, larkitPicks, resolveTopic } from "./skills/topicState.js";
 import { GRADE_LABELS, TOPIC_LABELS } from "./skills/catalog.js";
@@ -838,7 +838,7 @@ export default function MathExplorer({ initialMode }) {
   const sessionLabel = !session.skillIds
     ? null
     : session.challenge
-      ? `${GRADE_LABELS[session.grade]} challenge`
+      ? `Fledging Flight to ${GRADE_LABELS[nextTopicGrade(mode, session.grade)] || "the next grade"}`
       : session.pinned
         ? playSkillById(session.skillIds[0])?.title
         : `Mixed · ${GRADE_LABELS[session.grade]}`;

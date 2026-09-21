@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Volume2 } from "lucide-react";
+import { ChevronRight, Play, Star, Volume2 } from "lucide-react";
 import { useTheme } from "../useTheme";
 import { activeKidGrade } from "../kidProfiles";
 import { gradeIndex } from "../gradeSeed.js";
@@ -24,13 +24,61 @@ import { GRADE_UP, advanceGrade, gradeUpStatus, gradeView, resolveTopic } from "
  * it. The same skills, with the same names, are what /worksheets prints.
  */
 
-const MARK = { mastered: "★", practicing: "◐", new: "○" };
+const rightCount = (skill, mastery) =>
+  Math.min((mastery[skill.id]?.recent || "").split("").filter((c) => c === "1").length, MASTERY_RULE.minAttempts);
 
 function stateLabel(skill, mastery) {
   if (skill.state === "mastered") return skill.needsReview ? "mastered · worth a review" : "mastered";
   if (skill.state === "new") return "new";
-  const right = (mastery[skill.id]?.recent || "").split("").filter((c) => c === "1").length;
-  return `${Math.min(right, MASTERY_RULE.minAttempts)} of ${MASTERY_RULE.minAttempts}`;
+  return `${rightCount(skill, mastery)} of ${MASTERY_RULE.minAttempts}`;
+}
+
+// Where a skill stands, as a badge a kid can read without words: a play
+// button (not started), a ring filling toward mastery, a star.
+function SkillBadge({ skill, right }) {
+  if (skill.state === "mastered") {
+    return (
+      <span className="flex-none h-10 w-10 rounded-full bg-teal flex items-center justify-center" aria-hidden="true">
+        <Star className="h-5 w-5 text-sun fill-sun" />
+      </span>
+    );
+  }
+  if (skill.state === "new") {
+    return (
+      <span className="flex-none h-10 w-10 rounded-full bg-seafoam/50 flex items-center justify-center" aria-hidden="true">
+        <Play className="h-4 w-4 text-teal fill-teal translate-x-px" />
+      </span>
+    );
+  }
+  const radius = 17;
+  const around = 2 * Math.PI * radius;
+  return (
+    <span className="relative flex-none h-10 w-10" aria-hidden="true">
+      <svg viewBox="0 0 40 40" className="h-10 w-10 -rotate-90">
+        <circle cx="20" cy="20" r={radius} fill="none" strokeWidth="4" className="stroke-ink/10" />
+        <circle
+          cx="20" cy="20" r={radius} fill="none" strokeWidth="4" strokeLinecap="round"
+          className="stroke-teal"
+          strokeDasharray={around}
+          strokeDashoffset={around * (1 - right / MASTERY_RULE.minAttempts)}
+        />
+      </svg>
+      <span className="absolute inset-0 flex items-center justify-center text-[13px] font-extrabold text-teal">{right}</span>
+    </span>
+  );
+}
+
+function SkillStatus({ skill, right }) {
+  const { theme } = useTheme();
+  const text =
+    skill.state === "mastered"
+      ? skill.needsReview ? "Mastered · worth a review" : "Mastered"
+      : skill.state === "new"
+        ? "Not started"
+        : `${right} of ${MASTERY_RULE.minAttempts} right — keep going`;
+  return (
+    <span className={`block mt-0.5 text-xs font-semibold ${skill.state === "mastered" ? "text-teal" : theme.textMuted}`}>{text}</span>
+  );
 }
 
 export default function TopicSheet({ mode }) {
@@ -147,23 +195,31 @@ export default function TopicSheet({ mode }) {
           {pinned ? "Picked by a grown-up." : "A mix of these skills — the ones you need most come first."}
         </p>
 
-        <h2 className={`mt-6 mb-2 text-xs font-bold uppercase tracking-wider ${theme.textMuted}`}>Or pick a skill</h2>
-        <ul className={`rounded-2xl border-2 ${theme.cardBorder} bg-white overflow-hidden divide-y divide-slate-100`}>
+        <h2 className={`mt-7 mb-2 text-xs font-bold uppercase tracking-wider ${theme.textMuted}`}>Or pick a skill</h2>
+        <ul className="space-y-2">
           {view.skills.map((skill) => (
-            <li key={skill.id} className="flex items-stretch">
+            <li
+              key={skill.id}
+              className={`flex items-stretch rounded-2xl border-2 ${theme.cardBorder} bg-white shadow-[0_3px_0_rgba(6,74,65,0.08)] overflow-hidden`}
+            >
               <button
-                className="flex-1 flex items-start gap-3 px-4 py-3 text-left cursor-pointer hover:bg-gray-50"
+                className="flex-1 min-w-0 flex items-center gap-3 pl-3 pr-2 py-3 text-left cursor-pointer btn-press hover:bg-seafoam/20"
                 aria-label={`${skill.title} — ${stateLabel(skill, topic.mastery)}`}
                 onClick={() => start(`skill=${skill.id}`)}
               >
-                <span className={`text-lg leading-none pt-0.5 ${skill.state === "mastered" ? "text-teal" : "text-slate-400"}`} aria-hidden="true">
-                  {MARK[skill.state]}
+                <SkillBadge skill={skill} right={rightCount(skill, topic.mastery)} />
+                <span className="flex-1 min-w-0">
+                  <span className={`block text-[15px] font-bold leading-snug ${theme.textPrimary}`}>{skill.title}</span>
+                  <SkillStatus skill={skill} right={rightCount(skill, topic.mastery)} />
                 </span>
-                <span className={`flex-1 text-sm font-semibold leading-snug ${theme.textPrimary}`}>{skill.title}</span>
-                <span className={`flex-none pt-0.5 text-[11px] font-bold ${theme.textMuted}`}>{stateLabel(skill, topic.mastery)}</span>
+                {!readAloud && <ChevronRight className="flex-none h-5 w-5 text-ink/30" aria-hidden="true" />}
               </button>
               {readAloud && (
-                <button className="px-3 text-teal cursor-pointer" aria-label={`Read aloud: ${skill.title}`} onClick={() => speak(skill.title)}>
+                <button
+                  className="flex-none px-3 border-l-2 border-ink/5 text-teal cursor-pointer hover:bg-seafoam/20"
+                  aria-label={`Read aloud: ${skill.title}`}
+                  onClick={() => speak(skill.title)}
+                >
                   <Volume2 className="h-5 w-5" />
                 </button>
               )}

@@ -47,7 +47,7 @@ export default function QuestionStage({
         <AnimatePresence mode="popLayout">
           <motion.section
             key={questionKey}
-            className={`${theme.cardBg} relative rounded-3xl shadow-[0_6px_0_#14231F0f] p-5 sm:p-8 w-full`}
+            className={`${theme.cardBg} relative rounded-3xl shadow-[0_6px_0_#14231F0f] p-5 sm:p-8 w-full ${onHint || onSpeak ? "pt-12 sm:pt-12" : ""}`}
             initial={{ opacity: 0, scale: 0.8, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: -20 }}
@@ -59,6 +59,8 @@ export default function QuestionStage({
             // card belonging to the current question, never stale pixels.
             {...(qaSeq != null ? { "data-qa-seq": qaSeq } : {})}
           >
+            {/* The corner buttons get their own strip (the pt-12 above): a wide
+                prompt used to run underneath them. */}
             {onHint && (
               <button
                 type="button"

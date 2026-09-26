@@ -293,6 +293,19 @@ export const CHECKS = [
   },
 
   {
+    // 0.28 ÷ 100 computed in floats is "0.0028000000000000004": the kid who
+    // types 0.0047 is scored right (the checker is tolerant), but the revealed
+    // answer and a worksheet key print the artifact. 14 shipped once.
+    id: "floatArtifactAnswer",
+    run: (item) => {
+      const answer = item.question?.answer;
+      const text = typeof answer === "number" ? String(answer) : typeof answer === "string" ? answer : null;
+      if (text && /\d\.\d*(9{6,}|0{6,})\d/.test(text)) return fail("floatArtifactAnswer", `answer carries a float artifact (${text})`);
+      return null;
+    },
+  },
+
+  {
     id: "promptLength",
     run: (item) => {
       const text = (item.question?.display?.promptText || "").trim();

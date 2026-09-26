@@ -22,6 +22,11 @@ const pick = (arr) => arr[randInt(0, arr.length - 1)];
 const bandOf = (level) => (level <= 3 ? 1 : level <= 6 ? 2 : 3);
 const dec1 = (tenths) => (tenths / 10).toFixed(1);
 const dec2 = (hundredths) => (hundredths / 100).toFixed(2);
+/** `int` ÷ 10^places as an exact decimal string, trailing zeros trimmed. */
+const shiftRight = (int, places) => {
+  const digits = String(int).padStart(places + 1, "0");
+  return `${digits.slice(0, -places)}.${digits.slice(-places)}`.replace(/\.?0+$/, "");
+};
 
 const NAMES = ["Maya", "Leo", "Priya", "Omar", "Zoe", "Kai", "Nora", "Diego", "Rosa", "Finn", "Ida", "Luca", "Amara", "Theo", "Nia", "Ben", "June"];
 const ITEMS = [
@@ -382,9 +387,12 @@ const VARIETIES = [
       const n = hundredths / 100;
       const factor = pick([10, 100]);
       const mul = Math.random() < 0.5;
-      const answer = mul ? (hundredths * factor) / 100 : hundredths / factor / 100;
+      // Work in integer hundredths and place the point by string, never by
+      // float division: 0.28 ÷ 100 in floats is 0.0028000000000000004, and 14
+      // such answers reached the bank (fixed 2026-09-26).
+      const answer = mul ? String((hundredths * factor) / 100) : shiftRight(hundredths, 2 + Math.log10(factor));
       return {
-        answer: String(answer),
+        answer,
         answerType: "decimal",
         promptText: mul ? `${n} × ${factor} = ?` : `${n} ÷ ${factor} = ?`,
         representation: "symbolic",

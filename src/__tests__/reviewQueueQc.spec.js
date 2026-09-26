@@ -25,6 +25,20 @@ describe("review queue QC adapter", () => {
     expect(qc.pass).toBe(true);
   });
 
+  it("fails an answer carrying a float artifact, and passes the exact decimal", () => {
+    // 0.28 ÷ 100 in floats — 14 of these reached the bank (fixed 2026-09-26).
+    const shift = (answer) =>
+      adminItem({
+        itemId: "decimalOps-proc-x", modeId: "decimalOps", structureType: "powersOfTenShift", itemFamily: "procedural",
+        levelMin: 4, levelMax: 6,
+        payload: { a: null, b: null, op: "decops", answer, answerType: "decimal", display: { promptText: "0.28 ÷ 100 = ?" } },
+      });
+    const bad = runChecksOnAdminItem(shift("0.0028000000000000004"));
+    expect(bad.pass).toBe(false);
+    expect(bad.findings.some((f) => f.id === "floatArtifactAnswer")).toBe(true);
+    expect(runChecksOnAdminItem(shift("0.0028")).findings.some((f) => f.id === "floatArtifactAnswer")).toBe(false);
+  });
+
   it("fails an item whose arithmetic is wrong", () => {
     const qc = runChecksOnAdminItem(
       adminItem({ payload: { a: 2, b: 3, op: "+", answer: 6, display: { promptText: "2 and 3?" } } })

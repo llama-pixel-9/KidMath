@@ -9962,7 +9962,7 @@ export const ITEMS = [
     structureType: "powersOfTenShift",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.0028000000000000004","display":{"promptText":"0.28 ÷ 100 = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.0028","display":{"promptText":"0.28 ÷ 100 = ?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0165",
@@ -10132,7 +10132,7 @@ export const ITEMS = [
     structureType: "powersOfTenShift",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.0068000000000000005","display":{"promptText":"0.68 ÷ 100 = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.0068","display":{"promptText":"0.68 ÷ 100 = ?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0182",
@@ -10142,7 +10142,7 @@ export const ITEMS = [
     structureType: "powersOfTenShift",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.07200000000000001","display":{"promptText":"0.72 ÷ 10 = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.072","display":{"promptText":"0.72 ÷ 10 = ?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0183",
@@ -10172,7 +10172,7 @@ export const ITEMS = [
     structureType: "powersOfTenShift",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.0078000000000000005","display":{"promptText":"0.78 ÷ 100 = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.0078","display":{"promptText":"0.78 ÷ 100 = ?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0186",
@@ -10202,7 +10202,7 @@ export const ITEMS = [
     structureType: "powersOfTenShift",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.0040999999999999995","display":{"promptText":"0.41 ÷ 100 = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.0041","display":{"promptText":"0.41 ÷ 100 = ?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0189",
@@ -10232,7 +10232,7 @@ export const ITEMS = [
     structureType: "powersOfTenShift",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.004699999999999999","display":{"promptText":"0.47 ÷ 100 = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.0047","display":{"promptText":"0.47 ÷ 100 = ?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0192",
@@ -10242,7 +10242,7 @@ export const ITEMS = [
     structureType: "powersOfTenShift",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.07400000000000001","display":{"promptText":"7.4 ÷ 100 = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.074","display":{"promptText":"7.4 ÷ 100 = ?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0193",
@@ -10362,7 +10362,7 @@ export const ITEMS = [
     structureType: "powersOfTenShift",
     levelRange: [4,6],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.006999999999999999","display":{"promptText":"0.7 ÷ 100 = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.007","display":{"promptText":"0.7 ÷ 100 = ?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0205",
@@ -11452,7 +11452,7 @@ export const ITEMS = [
     structureType: "powersOfTenShift",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.054000000000000006","display":{"promptText":"0.54 ÷ 10 = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.054","display":{"promptText":"0.54 ÷ 10 = ?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0314",
@@ -11682,7 +11682,7 @@ export const ITEMS = [
     structureType: "powersOfTenShift",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.026000000000000002","display":{"promptText":"0.26 ÷ 10 = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.026","display":{"promptText":"0.26 ÷ 10 = ?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0337",
@@ -11772,7 +11772,7 @@ export const ITEMS = [
     structureType: "powersOfTenShift",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.08900000000000001","display":{"promptText":"8.9 ÷ 100 = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.089","display":{"promptText":"8.9 ÷ 100 = ?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0346",
@@ -11822,7 +11822,7 @@ export const ITEMS = [
     structureType: "powersOfTenShift",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.013000000000000001","display":{"promptText":"1.3 ÷ 100 = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.013","display":{"promptText":"1.3 ÷ 100 = ?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0351",
@@ -11882,7 +11882,7 @@ export const ITEMS = [
     structureType: "powersOfTenShift",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.005699999999999999","display":{"promptText":"0.57 ÷ 100 = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.0057","display":{"promptText":"0.57 ÷ 100 = ?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0357",
@@ -11892,7 +11892,7 @@ export const ITEMS = [
     structureType: "powersOfTenShift",
     levelRange: [7,12],
     reviewStatus: APPROVED,
-    question: {"a":null,"b":null,"op":"decops","answer":"0.0045000000000000005","display":{"promptText":"0.45 ÷ 100 = ?"},"answerType":"decimal"},
+    question: {"a":null,"b":null,"op":"decops","answer":"0.0045","display":{"promptText":"0.45 ÷ 100 = ?"},"answerType":"decimal"},
   },
   {
     itemId: "decimalOps-proc-b0824-0358",

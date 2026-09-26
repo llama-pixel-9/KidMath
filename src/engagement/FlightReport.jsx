@@ -12,9 +12,8 @@ import { rankForLevel } from "./ranks.js";
  * Ring, lark, pun headline, Apricot strip, teal button and text link are the
  * §11 end card unchanged. New here: the strip carries the four-payout total
  * and can grow downward into the itemised ledger ("How did I get 14?"), and
- * the slot beneath holds one of three states — level read-out, Seafoam
- * nomination note (§03), or the expanded ledger. The card must never be
- * fixed-height: the nomination note is 84px against the level bar's 39px.
+ * the slot beneath holds the kid's standing in the topic, or the expanded
+ * ledger. The card must never be fixed-height.
  */
 
 // Headlines are bird puns, never a score judgement (§11).
@@ -42,55 +41,14 @@ function LedgerRow({ label, value, strong = false }) {
   );
 }
 
-function LevelBar({ level, maxLevel = 10, balance }) {
-  const rank = rankForLevel(level);
-  return (
-    <div aria-label={`Level ${level} of ${maxLevel} — ${rank.name}. ${balance} stars in the Nest.`}>
-      <div className="h-2.5 rounded-full bg-ink/10 overflow-hidden">
-        <motion.div
-          className="h-full rounded-full bg-teal"
-          initial={{ width: 0 }}
-          animate={{ width: `${(level / maxLevel) * 100}%` }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-        />
-      </div>
-      <div className="flex items-center justify-between mt-1.5 text-[14px] font-bold text-ink">
-        <span>
-          Level {level} · {rank.name}
-        </span>
-        <span>{balance} in the Nest</span>
-      </div>
-    </div>
-  );
-}
-
-// §03 state 2: news, never a modal, never a blocking offer. The Fledging
-// Flight itself is proposed at the next take-off.
-function NominationNote({ nextLevel }) {
-  return (
-    <div className="flex items-center gap-3 bg-seafoam rounded-2xl px-4 py-3 min-h-[84px] text-left">
-      <span className="flex items-center justify-center w-11 h-11 rounded-full bg-cream shrink-0">
-        <LarkMark size={26} />
-      </span>
-      <span>
-        <span className="block text-[15px] font-extrabold text-ink">Ready for higher skies</span>
-        <span className="block text-[14px] font-bold text-ink/80">
-          Next time, six questions to reach Level {nextLevel}.
-        </span>
-      </span>
-    </div>
-  );
-}
-
 export default function FlightReport({
-  // A skill session's standing (SkillStanding) — replaces the level bar.
+  // Where the kid stands in the topic (SkillStanding). A QA-pinned plain
+  // session has none and shows only the Nest total.
   skillStanding = null,
-  maxLevel = 10,
   payout,
   total,
   level,
   engagement,
-  nomination = null,
   lifetimeStars,
   lowMotionMode = false,
   onPlayAgain,
@@ -184,21 +142,13 @@ export default function FlightReport({
           {ledgerOpen ? "Hide" : `How did I get ${payout.total}?`}
         </button>
 
-        {/* The slot: level read-out, or the Seafoam nomination note (§03).
-            (The third state is the ledger above.) Container height follows
-            content — never fixed. */}
+        {/* The slot: the kid's standing in the topic (the ledger above is the
+            other state). Container height follows content — never fixed. */}
         <div className="mt-3 text-left">
-          {nomination ? (
-            <NominationNote nextLevel={level + 1} />
-          ) : skillStanding ? (
+          {skillStanding ? (
             <SkillStanding standing={skillStanding} balance={engagement?.balance ?? 0} />
           ) : (
-            <LevelBar level={engagement?.levelAfter ?? level} maxLevel={maxLevel} balance={engagement?.balance ?? 0} />
-          )}
-          {engagement?.glideDown && (
-            <p className="text-[13px] font-bold text-deep-teal mt-2 text-center">
-              Smoother skies for a bit.
-            </p>
+            <p className="text-[14px] font-bold text-ink text-right">{engagement?.balance ?? 0} in the Nest</p>
           )}
         </div>
 

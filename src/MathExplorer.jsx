@@ -1,7 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import { usePremium } from "./PremiumContext";
-import { isFreeMode } from "./premium";
 import { motion, AnimatePresence, MotionConfig, useReducedMotion } from "framer-motion";
 import {
   Plus,
@@ -47,19 +45,12 @@ import {
 } from "./mathEngine";
 import { getBankItems } from "./itemBank/index.js";
 import { fetchBankItemById } from "./itemBank/cloudLoader.js";
-import { flightReportEnabled, fledgingEnabled, meadowEnabled, ladderV2Enabled, secondChanceEnabled, readAloudEnabled, skillsPlayEnabled } from "./gamificationFlags.js";
+import { flightReportEnabled, meadowEnabled, secondChanceEnabled, readAloudEnabled } from "./gamificationFlags.js";
 import { scaffoldFor } from "./scaffold.js";
 import { speak, stopSpeaking } from "./speech.js";
 import { gradeIndex } from "./gradeSeed.js";
 import { activeKidGrade } from "./kidProfiles";
 import { recordEnsureStarter } from "./engagement/flock.js";
-import {
-  recordFlightEnd,
-  recordFledgingResult,
-  nominationFor,
-  FLEDGING_QUESTIONS,
-  FLEDGING_PASS,
-} from "./engagement/fledging.js";
 import { getModeConfig } from "./modes";
 import { ensureModeLoaded } from "./itemBank.js";
 import { loadTopic } from "./itemBank/loadTopic.js";
@@ -71,19 +62,16 @@ import { FIGURE_COLORS, useAnswerKeys, KeyHint } from "./components/kit";
 import { saveProgress, loadProgress, loadProgressSync, mergeLocalToCloud } from "./progressStore";
 import { recordSessionEnd, currentStreak, starsToday, starBalance, isFirstWeek } from "./engagement/engagementStore";
 import GoogleSignInButton from "./auth/GoogleSignInButton.jsx";
-import JourneyMap from "./engagement/JourneyMap.jsx";
 import FlightReport from "./engagement/FlightReport.jsx";
 
 // The two CCSS compare structures whose wording points at the WRONG operation
 // — the difficult-tier trap the Word Detective badge rewards beating.
 import { isLanguageTrapWin } from "./engagement/engagementRules.js";
 import { useAuth } from "./useAuth";
-import { maxLevelForMode } from "./modeLevels.js";
 import { useTheme } from "./useTheme";
 import {
   playCorrectSound,
   playStreakSound,
-  playLevelUpSound,
   playWrongSound,
   playCompleteSound,
   isMuted,
@@ -265,7 +253,7 @@ const QA_VARIETY = typeof window === "undefined" ? null : getQaVariety();
 // `?mix=1[&grade=3]` is "Larkit picks" across a grade's skills for the topic,
 // weakest first. The topic sheet links here; it is also the e2e/deep-link hook.
 function skillOptionsFor(mode) {
-  if (typeof window === "undefined" || !skillsPlayEnabled()) return null;
+  if (typeof window === "undefined") return null;
   let params;
   try {
     params = new URLSearchParams(window.location.search || "");
@@ -295,9 +283,9 @@ function getPinnedItemId() {
 }
 const PINNED_ITEM_ID = typeof window === "undefined" ? null : getPinnedItemId();
 
-// A skill session has no level chip: what is being practiced is named in the
-// header, under the topic.
-function CircularProgress({ current, total, level, showLevel = true }) {
+// No level chip: what is being practiced is named in the header, under the
+// topic (a QA-pinned plain session names nothing).
+function CircularProgress({ current, total }) {
   const { theme } = useTheme();
   const radius = 38;
   const circumference = 2 * Math.PI * radius;
@@ -332,17 +320,6 @@ function CircularProgress({ current, total, level, showLevel = true }) {
           </span>
         </div>
       </div>
-      {showLevel && (
-        <motion.div
-          className={`px-3 py-1.5 rounded-xl bg-gradient-to-r ${theme.ctaPrimary} text-cream text-sm font-bold shadow-[0_3px_0_#064A41]`}
-          key={level}
-          initial={{ scale: 0.8 }}
-          animate={{ scale: 1 }}
-          transition={{ type: "spring", stiffness: 300 }}
-        >
-          Lv. {level}
-        </motion.div>
-      )}
     </section>
   );
 }
@@ -364,129 +341,6 @@ function StarRow({ count }) {
   );
 }
 
-// Fledging (§17): the between-levels moment — the lark on an Apricot disc
-// (the teal ring belongs to the end card), a flight word, no confetti here.
-function LevelUpToast() {
-  return (
-    <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center pointer-events-none"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      <motion.div
-        className="bg-white px-8 py-5 rounded-3xl shadow-[0_8px_0_#14231F14] flex items-center gap-4"
-        initial={{ scale: 0, y: 30 }}
-        animate={{ scale: [0, 1.15, 1], y: 0 }}
-        exit={{ scale: 0, y: -30, opacity: 0 }}
-        transition={{ duration: 0.5, type: "spring" }}
-      >
-        <span className="flex items-center justify-center w-14 h-14 rounded-full bg-apricot">
-          <LarkMark size={30} />
-        </span>
-        <span className="text-2xl font-display font-semibold text-ink">
-          You&rsquo;ve fledged — level up!
-        </span>
-      </motion.div>
-    </motion.div>
-  );
-}
-
-// §03 step 4: the Fledging Flight offered at take-off. Declining costs
-// nothing and is plain text at body size — never a shrunken escape hatch.
-function FledgingOffer({ level, onAccept, onDecline }) {
-  return (
-    <motion.div
-      data-blocks-keys="" className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 backdrop-blur-sm"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      <motion.div
-        className="relative bg-white rounded-3xl shadow-[0_8px_0_#14231F14] p-8 mx-4 max-w-sm w-full text-center"
-        initial={{ scale: 0.6, y: 30 }}
-        animate={{ scale: 1, y: 0 }}
-        transition={{ type: "spring", stiffness: 220, damping: 22 }}
-      >
-        <span className="mx-auto flex items-center justify-center w-16 h-16 rounded-full bg-seafoam">
-          <LarkMark size={34} />
-        </span>
-        <h2 className="text-2xl font-display font-semibold text-ink mt-4">
-          Ready for higher skies?
-        </h2>
-        <p className="text-[15px] font-semibold text-ink/80 mt-2">
-          Six questions, five to pass — and Level {level + 1} is yours. No stars
-          ride on this one.
-        </p>
-        <button
-          autoFocus
-          className="mt-5 w-full h-14 bg-teal text-cream text-xl font-display font-semibold rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer"
-          onClick={onAccept}
-        >
-          Take the Fledging Flight
-        </button>
-        <button
-          className="mt-3 text-[15px] font-semibold text-ink/80 cursor-pointer"
-          onClick={onDecline}
-        >
-          Just a normal flight today
-        </button>
-      </motion.div>
-    </motion.div>
-  );
-}
-
-// §17 fledging moment: lark on the Apricot disc, a flight word, the level bar
-// filling over 600ms, one button, auto-advance at 4s. No confetti — that
-// belongs to the end of a run only. The miss copy is kind and keeps the door open.
-function FledgingCeremony({ passed, level, maxLevel = 10, onContinue }) {
-  useEffect(() => {
-    const t = setTimeout(onContinue, 4000);
-    return () => clearTimeout(t);
-  }, [onContinue]);
-  return (
-    <motion.div
-      data-blocks-keys="" className="fixed inset-0 z-50 flex items-center justify-center bg-ink/40 backdrop-blur-sm"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      <motion.div
-        className="relative bg-white rounded-3xl shadow-[0_8px_0_#14231F14] p-8 mx-4 max-w-sm w-full text-center"
-        initial={{ scale: 0.6, y: 30 }}
-        animate={{ scale: 1, y: 0 }}
-        transition={{ type: "spring", stiffness: 220, damping: 22 }}
-      >
-        <span className="mx-auto flex items-center justify-center w-20 h-20 rounded-full bg-apricot">
-          <LarkMark size={42} />
-        </span>
-        <h2 className="text-3xl font-display font-semibold text-ink mt-4">
-          {passed ? "You’ve fledged!" : "Almost there"}
-        </h2>
-        <p className="text-[15px] font-semibold text-ink/80 mt-2">
-          {passed
-            ? `Level ${level} skies are yours now.`
-            : "A little more practice and you’ll be soaring."}
-        </p>
-        <div className="mt-4 h-2.5 rounded-full bg-ink/10 overflow-hidden">
-          <motion.div
-            className="h-full rounded-full bg-teal"
-            initial={{ width: `${((passed ? level - 1 : level) / maxLevel) * 100}%` }}
-            animate={{ width: `${(level / maxLevel) * 100}%` }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          />
-        </div>
-        <button
-          className="mt-5 w-full h-14 bg-teal text-cream text-xl font-display font-semibold rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer"
-          onClick={onContinue}
-        >
-          Fly on
-        </button>
-      </motion.div>
-    </motion.div>
-  );
-}
-
 // The end card (§11): the lark sits inside the score ring so one object
 // carries both the celebration and the result; everything below it is
 // information. Headlines are bird puns, never a score judgement.
@@ -501,7 +355,7 @@ const END_CARD_PUNS = [
   "Feather in your cap!",
 ];
 
-function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, maxLevel = 10, skillStanding = null, lifetimeStars, engagement, lowMotionMode = false, onPlayAgain }) {
+function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, skillStanding = null, lifetimeStars, engagement, lowMotionMode = false, onPlayAgain }) {
   const { theme } = useTheme();
   const navigate = useNavigate();
   const ratio = total > 0 ? firstTryCorrect / total : 0;
@@ -567,9 +421,11 @@ function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, ma
             You mastered {retriesMastered} tricky {retriesMastered === 1 ? "one" : "ones"} today!
           </motion.p>
         )}
-        <div className="mt-3">
-          {skillStanding ? <SkillStanding standing={skillStanding} /> : <JourneyMap level={level} maxLevel={maxLevel} compact />}
-        </div>
+        {skillStanding && (
+          <div className="mt-3">
+            <SkillStanding standing={skillStanding} />
+          </div>
+        )}
         {engagement?.goalJustMet && (
           <motion.p
             className="text-sm font-bold text-deep-teal mt-1"
@@ -618,12 +474,10 @@ function SetCompleteOverlay({ firstTryCorrect, retriesMastered, total, level, ma
   );
 }
 
-function SettingsPanel({ mode, allowWordProblems, onAllowWordProblemsChange, calmMode, onCalmModeChange, onModeChange, onClose }) {
+function SettingsPanel({ mode, allowWordProblems, onAllowWordProblemsChange, calmMode, onCalmModeChange, onClose }) {
   const { theme } = useTheme();
   const navigate = useNavigate();
-  // Play by skill: a topic is chosen on Home and a skill on its sheet — there
-  // is no mode grid in here, and no difficulty that "adjusts automatically".
-  const bySkill = skillsPlayEnabled();
+  // A topic is chosen on Home and a skill on its sheet — no mode grid here.
   return (
     <motion.div
       data-blocks-keys="" className="fixed inset-0 z-40 flex items-end sm:items-center justify-center bg-black/30 backdrop-blur-sm"
@@ -642,43 +496,12 @@ function SettingsPanel({ mode, allowWordProblems, onAllowWordProblemsChange, cal
       >
         <h2 className={`text-2xl font-extrabold ${theme.textPrimary} text-center mb-5`}>Settings</h2>
 
-        {bySkill && (
-          <button
-            className={`w-full mb-5 h-12 rounded-2xl border-2 ${theme.cardBorder} bg-white font-bold ${theme.textPrimary} cursor-pointer`}
-            onClick={() => navigate(`/play/${mode}`)}
-          >
-            ← Change skill or topic
-          </button>
-        )}
-        <div className={bySkill ? "hidden" : "mb-5"}>
-          <p className={`text-sm font-semibold ${theme.textSecondary} mb-2 uppercase tracking-wide`}>Mode</p>
-          <div className="grid grid-cols-4 gap-2">
-            {MODES.map((m) => {
-              const Icon = getModeIcon(m);
-              const config = getModeConfig(m);
-              const active = m === mode;
-              return (
-                <motion.button
-                  key={m}
-                  className={`flex flex-col items-center gap-1 p-2.5 rounded-2xl border-2 cursor-pointer transition-colors ${
-                    active ? theme.selectedBorder : `${theme.cardBorder} bg-white hover:bg-cream`
-                  }`}
-                  whileTap={{ scale: 0.95 }}
-                  onClick={() => onModeChange(m)}
-                >
-                  <Icon className={`h-6 w-6 ${active ? theme.selectedIcon : theme.textMuted}`} />
-                  <span className={`text-[10px] font-bold ${active ? theme.selectedText : theme.textSecondary} leading-tight text-center`}>
-                    {config.shortLabel}
-                  </span>
-                </motion.button>
-              );
-            })}
-          </div>
-        </div>
-
-        <p className={`text-xs ${theme.textMuted} text-center mb-4 ${bySkill ? "hidden" : ""}`}>
-          Difficulty adjusts automatically based on how you play!
-        </p>
+        <button
+          className={`w-full mb-5 h-12 rounded-2xl border-2 ${theme.cardBorder} bg-white font-bold ${theme.textPrimary} cursor-pointer`}
+          onClick={() => navigate(`/play/${mode}`)}
+        >
+          ← Change skill or topic
+        </button>
 
         <div className="mb-5 flex items-center justify-between gap-3 rounded-2xl border border-ink/10 bg-cream px-4 py-3">
           <div>
@@ -795,19 +618,18 @@ export default function MathExplorer({ initialMode }) {
   const startMode = initialMode || "addition";
   const { theme } = useTheme();
   const { user, signInWithGoogle } = useAuth();
-  const { isPremium, loading: premiumLoading, openPaywall } = usePremium();
   const prefersReducedMotion = useReducedMotion();
   const [lowEndDevice] = useState(() => isLikelyLowEndDevice());
   const [forcedInputType] = useState(() => getForcedInputType());
   const [qaFeedbackMs] = useState(() => getQaFeedbackMs());
-  const [mode, setMode] = useState(startMode);
-  // The skills this play session is for (null = the level ladder, as ever).
+  // The mode is the route's; a different topic is chosen on Home. (The
+  // in-session mode grid that once changed it bypassed the paywall.)
+  const [mode] = useState(startMode);
+  // The skills this play session is for (null = a QA-pinned plain session).
   const [skillOptions] = useState(() => skillOptionsFor(startMode));
   const [session, setSession] = useState(() =>
     createAdaptiveSession(startMode, skillOptions?.challenge ? GRADE_UP.questions : undefined, {
       allowWordProblems: loadAllowWordProblemsSync(),
-      fledging: fledgingEnabled(),
-      ladderV2: ladderV2Enabled(),
       qaVariety: QA_VARIETY,
       ...(skillOptions || {}),
     })
@@ -820,7 +642,6 @@ export default function MathExplorer({ initialMode }) {
   const [showSettings, setShowSettings] = useState(false);
   const [showComplete, setShowComplete] = useState(false);
   const [shakenChoice, setShakenChoice] = useState(null);
-  const [showLevelUp, setShowLevelUp] = useState(false);
   // Skills that reached mastery in the session just finished (end card).
   const [skillStanding, setSkillStanding] = useState(null);
   // The sub-header on a skill session: the pinned skill, or the mix's grade.
@@ -830,19 +651,11 @@ export default function MathExplorer({ initialMode }) {
   const [engagement, setEngagement] = useState(null);
   // §01/§02/§03 rollout: resolved once per mount so a session settles consistently.
   const [gamFlightReport] = useState(() => flightReportEnabled());
-  const [gamFledging] = useState(() => fledgingEnabled());
   const [gamSecondChance] = useState(() => secondChanceEnabled());
   const [gamReadAloud] = useState(() => readAloudEnabled());
   // K–1 kids get the prompt read automatically; older kids tap the speaker.
   const [autoRead] = useState(() => readAloudEnabled() && (gradeIndex(activeKidGrade()) ?? 9) <= 1);
   const [flightPayout, setFlightPayout] = useState(null);
-  // §03 take-off state: the offer overlay, whether the current session IS a
-  // Fledging Flight (ref for async handlers + state for render), and the
-  // post-flight ceremony/kind-copy card.
-  const [fledgingOffer, setFledgingOffer] = useState(false);
-  const fledgingRunRef = useRef(false);
-  const [fledgingActive, setFledgingActive] = useState(false);
-  const [fledgingResult, setFledgingResult] = useState(null);
   // Per-session badge inputs the engine doesn't aggregate itself.
   const sessionFactsRef = useRef({ trapWins: 0 });
   const [showLoginPrompt, setShowLoginPrompt] = useState(false);
@@ -913,7 +726,7 @@ export default function MathExplorer({ initialMode }) {
       sessionRecordRef.current = openSessionRecord({
         mode: sess.mode,
         level: sess.level,
-        kind: sess.challengeSubskills || sess.challenge ? "fledging" : "normal",
+        kind: sess.challenge ? "fledging" : "normal",
         ...(sess.skillIds
           ? { sessionKind: sess.pinned ? "skill" : "mix", skillId: sess.pinned ? sess.skillIds[0] : null, grade: sess.grade }
           : {}),
@@ -940,18 +753,14 @@ export default function MathExplorer({ initialMode }) {
     if (retry) telemetryRef.current.inc("retryQuestionsLoaded");
   }, []);
 
-  const startNewSession = useCallback((m, allowWordProblemsOverride = allowWordProblems, { offer = true } = {}) => {
+  const startNewSession = useCallback((m, allowWordProblemsOverride = allowWordProblems) => {
     clearQueuedTimeouts();
     answerLockRef.current = false;
-    fledgingRunRef.current = false;
-    setFledgingActive(false);
     const targetMode = m || mode;
     const newSession = createAdaptiveSession(targetMode, undefined, {
       allowWordProblems: allowWordProblemsOverride,
-      fledging: gamFledging,
-      ladderV2: ladderV2Enabled(),
       qaVariety: QA_VARIETY,
-      // "Play again" replays the same skills; a different topic is the ladder.
+      // "Play again" replays the same skills.
       ...(targetMode === startMode ? skillOptionsFor(targetMode) || {} : {}),
     });
     setSession(newSession);
@@ -960,12 +769,7 @@ export default function MathExplorer({ initialMode }) {
     setShowComplete(false);
     sessionRecordRef.current = null;
     loadNextQuestion(newSession);
-    // §03 step 4: a pending nomination is offered at take-off — except right
-    // after a Fledging Flight, when the normal session simply begins.
-    // A ladder nomination ("Level N+1 is yours") has no meaning in a skill
-    // session; the grade-up challenge replaces it.
-    if (offer && gamFledging && !newSession.skillIds && nominationFor(targetMode)) setFledgingOffer(true);
-  }, [mode, allowWordProblems, gamFledging, loadNextQuestion, clearQueuedTimeouts, startMode]);
+  }, [mode, allowWordProblems, loadNextQuestion, clearQueuedTimeouts, startMode]);
 
   useEffect(() => {
     // A skill session draws from the skill's own bank cell, so its first
@@ -980,35 +784,10 @@ export default function MathExplorer({ initialMode }) {
       };
     }
     loadNextQuestion(session);
-    if (gamFledging && nominationFor(mode)) setFledgingOffer(true);
     return undefined;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-
-  // Accepting the offer swaps the fresh normal session for the challenge set:
-  // six questions at the CURRENT level, rotating through the weakest subskills
-  // recorded when the lark nominated. No stars ride on it.
-  const startFledgingFlight = useCallback(() => {
-    const nomination = nominationFor(mode);
-    clearQueuedTimeouts();
-    answerLockRef.current = false;
-    const challenge = createAdaptiveSession(mode, FLEDGING_QUESTIONS, {
-      allowWordProblems,
-      fledging: true,
-      ladderV2: ladderV2Enabled(),
-      challengeSubskills: nomination?.weakSubskills || [],
-      savedProgress: { level: session.level },
-    });
-    fledgingRunRef.current = true;
-    setFledgingActive(true);
-    setFledgingOffer(false);
-    setSession(challenge);
-    setFeedback(null);
-    setRevealAnswer(null);
-    sessionRecordRef.current = null;
-    loadNextQuestion(challenge);
-  }, [mode, allowWordProblems, session.level, loadNextQuestion, clearQueuedTimeouts]);
 
   // Fetch this mode's items on entry. The app ships only a seed (a few items
   // per cell) so first paint is fast; the rest of a mode arrives when the child
@@ -1036,15 +815,12 @@ export default function MathExplorer({ initialMode }) {
       if (cloudAllowWordProblems !== allowWordProblems) {
         setAllowWordProblems(cloudAllowWordProblems);
       }
-      // Never stomp a Fledging Flight in progress with the cloud rebuild.
-      if (fledgingRunRef.current) return;
       const newSession = createAdaptiveSession(mode, undefined, {
         allowWordProblems: cloudAllowWordProblems,
-        fledging: gamFledging,
         qaVariety: QA_VARIETY,
         ...(mode === startMode && skillOptions ? skillOptions : {}),
       });
-      // A skill session plays at its skill's level, not the saved ladder level.
+      // A skill session plays at its skill's level, not the saved level.
       if (!newSession.skillIds) newSession.level = saved.level;
       newSession.mistakeBank = saved.mistakeBank;
       setSession(newSession);
@@ -1083,20 +859,6 @@ export default function MathExplorer({ initialMode }) {
     };
   }, [clearQueuedTimeouts]);
 
-  const handleModeChange = (m) => {
-    // The route gates /play/<mode>, but switching modes in here never re-ran
-    // it: a free account could walk from Addition into any paid mode.
-    if (!isFreeMode(m) && !isPremium && !premiumLoading) {
-      setShowSettings(false);
-      openPaywall();
-      return;
-    }
-    telemetryRef.current.inc("modeChanges");
-    telemetryRef.current.recordEvent("mode_change", { from: mode, to: m });
-    setMode(m);
-    startNewSession(m);
-  };
-
   const toggleMute = () => {
     const next = !muted;
     setMutedState(next);
@@ -1116,59 +878,16 @@ export default function MathExplorer({ initialMode }) {
 
   const finishSession = useCallback(async (sess) => {
     qaUpdate({ done: true });
-    // §03: a Fledging Flight settles its own way — no stars, no report. Pass
-    // (≥ 5/6 first-try) fledges now; a miss keeps the nomination (three misses
-    // clear it) and the normal flight follows either way.
-    if (fledgingRunRef.current) {
-      fledgingRunRef.current = false;
-      const passed = (sess.firstTryCorrect ?? 0) >= FLEDGING_PASS;
-      recordFledgingResult(mode, passed);
-      const newLevel = passed ? Math.min(sess.level + 1, maxLevelForMode(mode)) : sess.level;
-      // Practice log first and independent of the progress save (see finishSession).
-      saveSessionRecord(closeSessionRecord(sessionRecordRef.current, sess, { starsEarned: 0, levelEnd: newLevel })).catch(
-        (err) => console.warn("practice log save failed", err)
-      );
-      sessionRecordRef.current = null;
-      try {
-        await saveProgress(mode, {
-          level: newLevel,
-          mistakeBank: sess.mistakeBank,
-          firstTryCorrect: sess.firstTryCorrect,
-          starsEarned: 0,
-          bankItemStats: sess.bankItemStats || {},
-          recentBankItemIds: sess.recentBankItemIds || [],
-        });
-      } catch (err) {
-        console.warn("progress save failed", err);
-      }
-      setFledgingActive(false);
-      setFledgingResult({ passed, newLevel });
-      if (passed) playLevelUpSound();
-      return;
-    }
-
     // §01: the four-part settlement replaces one-star-per-first-try when the
     // Flight Report is on. Quitting mid-flight never reaches here, so an
     // unfinished flight pays nothing either way.
-    // The grade-up challenge is a test, not practice: no stars ride on it.
+    // The Fledging Flight is a test, not practice: no stars ride on it.
     const payout = gamFlightReport && !sess.challenge ? summarizeFlight(sess) : null;
     const starsEarned = sess.challenge ? 0 : payout ? payout.total : sess.firstTryCorrect ?? 0;
-    // §03 bookkeeping at flight end: nominations set on the engine's signal,
-    // rough flights (< 40% precision) clear them silently, and two consecutive
-    // rough flights glide the level down one — persisted with the session.
-    // Skill sessions have no ladder to nominate on or glide down.
-    const fledgeOutcome = gamFledging && !sess.skillIds
-      ? recordFlightEnd(mode, {
-          precisionRatio:
-            sess.questionsAnswered > 0 ? (sess.firstTryCorrect ?? 0) / sess.questionsAnswered : 0,
-          nominated: Boolean(sess.nominated),
-          weakSubskills: sess.nominationWeakSubskills || [],
-        })
-      : null;
     // A skill session's `level` is only its skill's band. The kid's saved
-    // ladder level must never be moved by practicing a skill above or below it.
+    // level must never be moved by practicing a skill above or below it.
     const savedLevel = sess.skillIds ? loadProgressSync(mode)?.level ?? sess.level : null;
-    const levelAfter = savedLevel ?? (fledgeOutcome?.glideDown ? Math.max(1, sess.level - 1) : sess.level);
+    const levelAfter = savedLevel ?? sess.level;
     // Save the practice log FIRST and independently of the progress save: its
     // local mirror is written synchronously, so a tab closed during the cloud
     // round-trip (or a rejected progress row) cannot erase the session from the
@@ -1200,7 +919,7 @@ export default function MathExplorer({ initialMode }) {
         // A challenge pays nothing — and `undefined` would fall back to one
         // star per right answer.
         sess.challenge ? 0 : payout ? payout.total : undefined,
-        fledgeOutcome?.glideDown || savedLevel != null ? levelAfter : undefined,
+        savedLevel != null ? levelAfter : undefined,
         skillState
       );
     } catch (err) {
@@ -1227,10 +946,6 @@ export default function MathExplorer({ initialMode }) {
       newBadges: events.newBadges,
       balance: starBalance(eng),
       firstWeek: isFirstWeek(eng),
-      // §02 state 2 / §03: the Seafoam note and the glide-down level for the bar.
-      nomination: fledgeOutcome?.nomination ?? null,
-      glideDown: Boolean(fledgeOutcome?.glideDown),
-      levelAfter,
     });
     setShowComplete(true);
     telemetryRef.current.inc("setsCompleted");
@@ -1243,7 +958,7 @@ export default function MathExplorer({ initialMode }) {
       dailyGoalMet: starsToday(eng) >= 10,
     });
     playCompleteSound();
-  }, [mode, gamFlightReport, gamFledging]);
+  }, [mode, gamFlightReport]);
 
   // Read-aloud: K–1 hears every new question; everyone else has the speaker.
   useEffect(() => {
@@ -1334,11 +1049,7 @@ export default function MathExplorer({ initialMode }) {
           sessionFactsRef.current.trapWins += 1;
         }
 
-        if (result.levelChanged && result.newLevel > session.level) {
-          playLevelUpSound();
-          setShowLevelUp(true);
-          scheduleTimeout(() => setShowLevelUp(false), 1200);
-        } else if (result.session.correctStreak >= 3) {
+        if (result.session.correctStreak >= 3) {
           playStreakSound();
         } else {
           playCorrectSound();
@@ -1354,7 +1065,7 @@ export default function MathExplorer({ initialMode }) {
             loadNextQuestion(result.session);
           }
         }, qaFeedbackMs ?? 1200);
-      } else if (gamSecondChance && !isRetry && !session.fledging) {
+      } else if (gamSecondChance && !isRetry && !session.challenge) {
         // First miss on a fresh question: show a model and allow one more try.
         setShakenChoice(value);
         playWrongSound();
@@ -1559,14 +1270,12 @@ export default function MathExplorer({ initialMode }) {
       <CircularProgress
         current={session.questionsAnswered}
         total={session.sessionSize}
-        level={session.level}
-        showLevel={!sessionLabel}
       />
 
-      {fledgingActive && (
+      {session.challenge && (
         <div className="flex justify-center -mt-1 mb-1">
           <span className="bg-seafoam text-ink text-[13px] font-display font-semibold rounded-full px-3 py-1">
-            Fledging Flight · {FLEDGING_PASS} of {FLEDGING_QUESTIONS} to pass
+            {GRADE_UP.pass} of {GRADE_UP.questions} to pass
           </span>
         </div>
       )}
@@ -1642,34 +1351,6 @@ export default function MathExplorer({ initialMode }) {
       </SidePane>
 
       <AnimatePresence>
-        {showLevelUp && <LevelUpToast />}
-      </AnimatePresence>
-
-      <AnimatePresence>
-        {fledgingOffer && !showComplete && (
-          <FledgingOffer
-            level={session.level}
-            onAccept={startFledgingFlight}
-            onDecline={() => setFledgingOffer(false)}
-          />
-        )}
-      </AnimatePresence>
-
-      <AnimatePresence>
-        {fledgingResult && (
-          <FledgingCeremony
-            passed={fledgingResult.passed}
-            maxLevel={maxLevelForMode(mode)}
-            level={fledgingResult.newLevel}
-            onContinue={() => {
-              setFledgingResult(null);
-              startNewSession(undefined, undefined, { offer: false });
-            }}
-          />
-        )}
-      </AnimatePresence>
-
-      <AnimatePresence>
         {showSettings && (
           <SettingsPanel
             mode={mode}
@@ -1680,7 +1361,6 @@ export default function MathExplorer({ initialMode }) {
               setCalmMode(value);
               saveCalmMode(value);
             }}
-            onModeChange={handleModeChange}
             onClose={() => setShowSettings(false)}
           />
         )}
@@ -1690,24 +1370,20 @@ export default function MathExplorer({ initialMode }) {
         {showComplete &&
           (gamFlightReport && flightPayout ? (
             <FlightReport
-              maxLevel={maxLevelForMode(mode)}
               payout={flightPayout}
               total={session.questionsAnswered}
               level={session.level}
               skillStanding={skillStanding}
               engagement={engagement}
-              nomination={gamFledging && !session.skillIds ? engagement?.nomination ?? null : null}
               lifetimeStars={lifetimeStars}
               lowMotionMode={lowMotionMode}
               onPlayAgain={() => startNewSession()}
             />
           ) : (
             <SetCompleteOverlay
-              maxLevel={maxLevelForMode(mode)}
               firstTryCorrect={session.firstTryCorrect}
               retriesMastered={session.retriesMastered}
               total={session.questionsAnswered}
-              level={session.level}
               skillStanding={skillStanding}
               lifetimeStars={lifetimeStars}
               engagement={engagement}

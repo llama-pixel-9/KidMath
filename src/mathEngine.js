@@ -25,12 +25,6 @@ const LOW_LEVEL_MAX = 3;
 export function recentBankWindow(level) {
   return level <= LOW_LEVEL_MAX ? RECENT_BANK_WINDOW_LOW : RECENT_BANK_WINDOW;
 }
-// Ladder v2: the fast promotion path compares the kid to THEMSELVES (2.5× their
-// own median response time) instead of an absolute 8.5 s, so a slow-but-right
-// kid is not parked at level 1; demotion waits for the third miss.
-const LADDER_V2_SPEED_RATIO = 2.5;
-const LADDER_V2_MIN_SAMPLES = 5;
-const LADDER_V2_MISSES_TO_DEMOTE = 3;
 const MAX_BANK_ITEM_STATS = 200;
 
 function clampLevel(level, max = MAX_LEVEL) {
@@ -70,43 +64,6 @@ function getWeakestSubskill(session, modeConfig) {
     }
   }
   return weakest;
-}
-
-function getMasterySnapshot(session, modeConfig) {
-  // Level moves are judged over the subskills actually SERVED this session.
-  // Unserved subskills default to 0.5, and not every subskill is generatable
-  // at every level — counting them meant the weakest score could never reach
-  // the 0.8 promotion gate, holding a kid at the level forever (money, time,
-  // angles and five other modes were permanently capped at level 1).
-  // Targeting deliberately still uses the full list (getWeakestSubskill), so
-  // unserved subskills keep getting requested from the generator.
-  const skills = (modeConfig.subskills || Object.keys(session.skillMastery || {})).filter(
-    (skill) => (session.skillMastery?.[skill]?.attempts ?? 0) > 0
-  );
-  if (skills.length === 0) {
-    return { weakestSubskill: getWeakestSubskill(session, modeConfig), weakestScore: 0.5 };
-  }
-  let weakestSubskill = skills[0];
-  let weakestScore = Number.POSITIVE_INFINITY;
-  for (const skill of skills) {
-    const score = getSkillMasteryRate(session.skillMastery?.[skill]);
-    if (score < weakestScore) {
-      weakestScore = score;
-      weakestSubskill = skill;
-    }
-  }
-  return { weakestSubskill, weakestScore };
-}
-
-/** The n weakest subskills by observed rate — a Fledging Flight targets these. */
-function weakestSubskillList(session, modeConfig, n = 3) {
-  const skills = modeConfig.subskills || Object.keys(session.skillMastery || {});
-  return [...skills]
-    .sort(
-      (a, b) =>
-        getSkillMasteryRate(session.skillMastery?.[a]) - getSkillMasteryRate(session.skillMastery?.[b])
-    )
-    .slice(0, n);
 }
 
 function getNextFamily(session, modeConfig) {
@@ -513,20 +470,9 @@ export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE, options 
   return {
     mode,
     level: saved.level,
-    // §03 fledging: when true, promotion signals nominate instead of changing
-    // the level, and mid-session demotion is off. challengeSubskills marks a
-    // Fledging Flight itself: a short set at fixed level rotating through the
-    // nominating flight's weakest subskills.
-    fledging: Boolean(options.fledging),
-    challengeSubskills:
-      Array.isArray(options.challengeSubskills) && options.challengeSubskills.length
-        ? options.challengeSubskills.slice()
-        : undefined,
     questionsAnswered: 0,
     firstTryCorrect: 0,
     retriesMastered: 0,
-    correctStreak: 0,
-    mistakesAtLevel: 0,
     mistakeBank: (saved.mistakeBank || []).slice(-MAX_REVIEW_ITEMS),
     responseTimesMs: [],
     sessionSize,
@@ -536,8 +482,6 @@ export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE, options 
     analyticsEvents: [],
     allowWordProblems,
     recentBankItemIds: Array.isArray(saved.recentBankItemIds) ? saved.recentBankItemIds.slice(-recentBankWindow(Number(saved.level) || STARTING_LEVEL)) : [],
-    // Ladder v2 keeps every response time this session for the kid's own median.
-    ...(options.ladderV2 ? { ladderV2: true, allResponseTimesMs: [] } : {}),
     bankItemStats: saved.bankItemStats && typeof saved.bankItemStats === "object" ? saved.bankItemStats : {},
     // QA-only: force one generator variety and skip the bank, so a reported
     // item shape can be reproduced deterministically (`?qaVariety=` on web).
@@ -590,9 +534,7 @@ export function getNextQuestion(session) {
     session.allowWordProblems === false && nextFamily === ITEM_FAMILIES.APPLICATION
       ? ITEM_FAMILIES.PROCEDURAL
       : nextFamily;
-  const targetSubskill = session.challengeSubskills?.length
-    ? session.challengeSubskills[session.questionsAnswered % session.challengeSubskills.length]
-    : getWeakestSubskill(session, modeConfig);
+  const targetSubskill = getWeakestSubskill(session, modeConfig);
   const q = generateQuestion(session.mode, session.level, {
     itemFamily: scheduledFamily,
     targetSubskill,
@@ -642,21 +584,6 @@ function appendRecentBankItemId(recent, itemId, level = MAX_LEVEL) {
   return next.slice(-recentBankWindow(level));
 }
 
-function weakestScoreWithEvidence(session, minAttempts) {
-  let weakest = 1;
-  for (const m of Object.values(session.skillMastery || {})) {
-    if (!m || (m.attempts || 0) < minAttempts) continue;
-    weakest = Math.min(weakest, m.correct / m.attempts);
-  }
-  return weakest;
-}
-
-function median(values) {
-  const sorted = [...values].sort((a, b) => a - b);
-  const mid = Math.floor(sorted.length / 2);
-  return sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
-}
-
 export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wasRetry) {
   const correct = checkAnswer(question, chosenAnswer);
   const next = { ...session };
@@ -683,8 +610,6 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
       next.mistakeBank = session.mistakeBank.filter((q) => q.itemKey !== question.itemKey);
     } else {
       next.correctStreak = 0;
-      // v2: a missed retry is evidence at this level too.
-      if (session.ladderV2) next.mistakesAtLevel = session.mistakesAtLevel + 1;
       next.mistakeBank = session.mistakeBank.map((q) => {
         if (q.itemKey !== question.itemKey) return q;
         const index = Math.min(REVIEW_INTERVALS.length - 1, q.retryCount || 0);
@@ -705,97 +630,27 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
     question.metadata?.itemSource === "bank" ? question.metadata?.itemId : null,
     session.level
   );
-  if (session.ladderV2) next.allResponseTimesMs = [...(session.allResponseTimesMs || []), responseTimeMs];
 
-  // A skill session has no ladder: nothing promotes or demotes mid-session.
-  // Mastery is settled from the practice log (skills/mastery.js), and moving
-  // up a grade is earned in the challenge.
-  if (session.skillIds) {
-    recordSkillAnswer(next, question, correct);
-    if (correct) {
-      next.correctStreak = session.correctStreak + 1;
-      next.firstTryCorrect = session.firstTryCorrect + 1;
-      next.responseTimesMs = [...session.responseTimesMs.slice(-4), responseTimeMs];
-    } else {
-      next.correctStreak = 0;
-      if (!session.mistakeBank.some((q) => q.itemKey === question.itemKey)) {
-        next.mistakeBank = [
-          ...session.mistakeBank,
-          cloneQuestionForReview(question, next.questionsAnswered + RETRY_SPACING),
-        ].slice(-MAX_REVIEW_ITEMS);
-      }
-    }
-    return { session: next, correct, levelChanged: false, newLevel: next.level };
-  }
+  // No ladder: nothing promotes or demotes mid-session. The level only picks
+  // the bank band. Mastery is settled from the practice log (skills/
+  // mastery.js), and moving up a grade is earned in the Fledging Flight.
+  // (`levelChanged` / `newLevel` stay in the result for the native bridge.)
+  if (session.skillIds) recordSkillAnswer(next, question, correct);
 
   if (correct) {
     next.correctStreak = session.correctStreak + 1;
     next.firstTryCorrect = session.firstTryCorrect + 1;
     next.responseTimesMs = [...session.responseTimesMs.slice(-4), responseTimeMs];
-
-    let levelChanged = false;
-    const avgTime = next.responseTimesMs.reduce((a, b) => a + b, 0) / next.responseTimesMs.length;
-    const { weakestScore } = getMasterySnapshot(next, getModeConfig(session.mode));
-    // v1: an absolute 8.5 s gate. v2: relative to the kid's own median this
-    // session (no gate until there are enough samples to have one).
-    const all = next.allResponseTimesMs || [];
-    const quickEnough = session.ladderV2
-      ? all.length < LADDER_V2_MIN_SAMPLES || avgTime <= LADDER_V2_SPEED_RATIO * median(all)
-      : avgTime < 8500;
-    const promotionSignal =
-      (next.correctStreak >= 4 && quickEnough && weakestScore >= 0.8) ||
-      (next.correctStreak >= 7 && weakestScore >= 0.72);
-
-    if (session.fledging) {
-      // §03: the signal nominates — nothing interrupts the round, the level
-      // holds, and the Fledging Flight is offered at the next take-off. A
-      // challenge set never nominates (it IS the test).
-      if (promotionSignal && !next.challengeSubskills && !next.nominated && next.level < modeMaxLevel(session.mode)) {
-        next.nominated = true;
-        next.nominationWeakSubskills = weakestSubskillList(next, getModeConfig(session.mode));
-      }
-      return { session: next, correct: true, levelChanged: false, newLevel: next.level };
-    }
-
-    if (promotionSignal && next.level < modeMaxLevel(session.mode)) {
-      next.level = next.level + 1;
-      next.correctStreak = 0;
-      next.mistakesAtLevel = 0;
-      levelChanged = true;
-    }
-
-    return { session: next, correct: true, levelChanged, newLevel: next.level };
-  }
-
-  // Incorrect on a new question
-  next.correctStreak = 0;
-  next.mistakesAtLevel = session.mistakesAtLevel + 1;
-
-  const alreadyInBank = session.mistakeBank.some((q) => q.itemKey === question.itemKey);
-  if (!alreadyInBank) {
-    next.mistakeBank = [
-      ...session.mistakeBank,
-      cloneQuestionForReview(question, next.questionsAnswered + RETRY_SPACING),
-    ].slice(-MAX_REVIEW_ITEMS);
-  }
-
-  // §03: mid-session demotion is off under fledging — two consecutive rough
-  // flights glide a kid down instead (engagement/fledging.js).
-  let levelChanged = false;
-  if (!session.fledging) {
-    const { weakestScore } = getMasterySnapshot(next, getModeConfig(session.mode));
-    const missesToDemote = session.ladderV2 ? LADDER_V2_MISSES_TO_DEMOTE : 2;
-    // v2: the mastery floor needs evidence — one miss on a just-served
-    // subskill is 0/1 and used to demote on its own.
-    const floorScore = session.ladderV2 ? weakestScoreWithEvidence(next, LADDER_V2_MIN_SAMPLES - 2) : weakestScore;
-    if ((next.mistakesAtLevel >= missesToDemote || floorScore < 0.45) && next.level > 1) {
-      next.level = next.level - 1;
-      next.mistakesAtLevel = 0;
-      levelChanged = true;
+  } else {
+    next.correctStreak = 0;
+    if (!session.mistakeBank.some((q) => q.itemKey === question.itemKey)) {
+      next.mistakeBank = [
+        ...session.mistakeBank,
+        cloneQuestionForReview(question, next.questionsAnswered + RETRY_SPACING),
+      ].slice(-MAX_REVIEW_ITEMS);
     }
   }
-
-  return { session: next, correct: false, levelChanged, newLevel: next.level };
+  return { session: next, correct, levelChanged: false, newLevel: next.level };
 }
 
 export function isSessionComplete(session) {

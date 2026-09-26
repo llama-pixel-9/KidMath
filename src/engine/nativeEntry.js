@@ -81,7 +81,6 @@ import { BADGES, newlyEarnedBadges } from "../engagement/badges.js";
 import { STICKERS } from "../engagement/stickers.js";
 import { scaffoldFor, scaffoldHint } from "../scaffold.js";
 import { speakableText } from "../speakable.js";
-import { masterySummary, masteryLine } from "../analytics/masterySummary.js";
 import { getModeConfig } from "../modes";
 import { hintFor } from "../hints/index.js";
 import { SCENERY as MEADOW_SCENERY } from "../engagement/meadow/scenery.js";
@@ -227,17 +226,14 @@ g.KidMath = {
   isFirstWeek: (state, dayKey) => isFirstWeek(state ?? {}, dayKey),
   isLanguageTrapWin: (question, isRetry) => isLanguageTrapWin(question, Boolean(isRetry)),
 
-  // Teach-don't-grade: the second-chance scaffold (src/scaffold.js), the
-  // read-aloud text (src/speakable.js), and the mastery line over the
-  // practice log (src/analytics/masterySummary.js).
+  // Teach-don't-grade: the second-chance scaffold (src/scaffold.js) and the
+  // read-aloud text (src/speakable.js).
   // Per-question hint (src/hints): concept idea, steps built from the live
   // item's numbers (never the answer), the picture, a worked example.
   hintFor: (question) => hintFor(question),
   scaffoldFor: (question) => scaffoldFor(question),
   scaffoldHint: (scaffold) => scaffoldHint(scaffold),
   speakableText: (promptText, noun) => speakableText(promptText, noun ? { noun } : {}),
-  masterySummary: (sessions, mode, declared) => masterySummary(sessions ?? [], mode, declared ?? []),
-  masteryLine: (summary) => masteryLine(summary) ?? null,
   modeSubskills: (mode) => (getModeConfig(mode)?.subskills ?? []).slice(),
 
   parentalConsentNotice: () => ({

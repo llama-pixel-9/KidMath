@@ -6,7 +6,7 @@ import {
   ALTITUDE_BONUS,
   CIRCLE_BACK_CAP,
 } from "../mathEngine";
-import { gamStepEnabled, flightReportEnabled, skillsPlayEnabled } from "../gamificationFlags.js";
+import { gamStepEnabled, flightReportEnabled } from "../gamificationFlags.js";
 import { emptyEngagement, applySessionEnd, isFirstWeek } from "../engagement/engagementStore.js";
 
 // Gamification spec §01: four payouts, settled once at the end of a flight.
@@ -82,7 +82,7 @@ describe("gamification flags", () => {
   });
 
   it("the master switch turns every step on, and an explicit false still wins", () => {
-    for (const step of ["flightReport", "fledging", "meadow", "birdStore", "roster", "ceremonies", "meadowMotion"]) {
+    for (const step of ["flightReport", "meadow", "birdStore", "roster", "ceremonies", "meadowMotion"]) {
       expect(gamStepEnabled(step, { VITE_GAM_ALL: "true" }), step).toBe(true);
     }
     // The selective kill switch: one step off while the master stays on.
@@ -110,15 +110,5 @@ describe("firstFlightDay / isFirstWeek (§02 ledger default)", () => {
     const eom = { ...emptyEngagement(), firstFlightDay: "2026-08-29" };
     expect(isFirstWeek(eom, "2026-09-04")).toBe(true);
     expect(isFirstWeek(eom, "2026-09-05")).toBe(false);
-  });
-});
-
-describe("skillsPlay is on by default, with its own kill switch", () => {
-  it("only VITE_SKILLS_PLAY=false turns it off; the gamification switches are unrelated", () => {
-    expect(skillsPlayEnabled({})).toBe(true);
-    expect(skillsPlayEnabled({ VITE_GAM_ALL: "false" })).toBe(true);
-    expect(skillsPlayEnabled({ VITE_SKILLS_PLAY: "true" })).toBe(true);
-    expect(skillsPlayEnabled({ VITE_SKILLS_PLAY: "false", VITE_GAM_ALL: "true" })).toBe(false);
-    expect(gamStepEnabled("skillsPlay", { VITE_GAM_ALL: "true" })).toBe(false);
   });
 });

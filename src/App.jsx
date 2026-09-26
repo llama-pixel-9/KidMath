@@ -1,6 +1,5 @@
 import { BrowserRouter, Navigate, Route, Routes, useParams, useLocation, useSearchParams } from "react-router-dom";
 import TopicSheet from "./play/TopicSheet.jsx";
-import { skillsPlayEnabled } from "./gamificationFlags.js";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { ThemeProvider } from "./ThemeContext";
@@ -43,7 +42,7 @@ function PlayRoute() {
   // Play by skill: a topic opens on its sheet (Larkit picks / pick a skill); a
   // session is a link FROM the sheet. The QA pins (`?item=` from /admin,
   // `?qaVariety=` for one generator) and bare /play keep going straight in.
-  if (mode && skillsPlayEnabled() && !["skill", "mix", "challenge", "item", "qaVariety"].some((k) => params.has(k))) {
+  if (mode && !["skill", "mix", "challenge", "item", "qaVariety"].some((k) => params.has(k))) {
     return <TopicSheet mode={mode} />;
   }
   return <MathExplorer initialMode={mode} />;

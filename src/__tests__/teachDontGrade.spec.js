@@ -1,7 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { scaffoldFor, scaffoldHint } from "../scaffold.js";
 import { speakableText } from "../speech.js";
-import { masterySummary, masteryLine } from "../analytics/masterySummary.js";
 
 describe("scaffoldFor", () => {
   it("models small sums and differences as dot groups", () => {
@@ -32,20 +31,5 @@ describe("speakableText", () => {
   });
   it("leaves plain sentences alone", () => {
     expect(speakableText("Lily has 4 apples. How many apples does Lily have now?")).toBe("Lily has 4 apples. How many apples does Lily have now what");
-  });
-});
-
-describe("masterySummary", () => {
-  const attempt = (subskill, correct) => ({ subskill, correct, retry: false });
-  const sessions = [
-    { mode: "addition", kind: "normal", attempts: [...Array(5)].map(() => attempt("makeTen", true)) },
-    { mode: "addition", kind: "normal", attempts: [attempt("unknownAddend", false), attempt("unknownAddend", true), attempt("unknownAddend", true), attempt("unknownAddend", false)] },
-    { mode: "subtraction", kind: "normal", attempts: [attempt("takeAway", true)] },
-  ];
-  it("counts solid skills over enough tries, per mode", () => {
-    const s = masterySummary(sessions, "addition", ["makeTen", "unknownAddend", "composeDecompose"]);
-    expect(s).toEqual({ solid: 1, tried: 2, total: 3 });
-    expect(masteryLine(s)).toBe("1 of 3 skills solid");
-    expect(masteryLine(masterySummary(sessions, "subtraction", ["takeAway"]))).toBeNull();
   });
 });

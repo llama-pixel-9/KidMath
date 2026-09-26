@@ -1,7 +1,6 @@
 import { supabase } from "./supabaseClient";
 import { startingLevelFor as seedLevel } from "./gradeSeed.js";
 import { maxLevelForMode } from "./modeLevels.js";
-import { skillsPlayEnabled } from "./gamificationFlags.js";
 import { mergeTopicState } from "./skills/topicState.js";
 
 /**
@@ -191,9 +190,8 @@ function skillPatch(data) {
 
 const SKILL_COLUMNS = { grade: "grade", gradeUnlocked: "grade_unlocked", pinnedSkillId: "pinned_skill_id", skillMastery: "skill_mastery" };
 const skillColumns = (patch) => Object.fromEntries(Object.entries(patch).map(([key, value]) => [SKILL_COLUMNS[key], value]));
-// The columns arrive with migration 20260920130000; naming them before it is
-// applied fails the whole query, so they ride only when play-by-skill is on.
-const skillSelect = () => (skillsPlayEnabled() ? ", grade, grade_unlocked, pinned_skill_id, skill_mastery" : "");
+// The columns arrived with migration 20260920130000 (applied 2026-09-20).
+const skillSelect = () => ", grade, grade_unlocked, pinned_skill_id, skill_mastery";
 const skillFieldsFromRow = (row) =>
   skillFields({ grade: row?.grade, gradeUnlocked: row?.grade_unlocked, pinnedSkillId: row?.pinned_skill_id, skillMastery: row?.skill_mastery });
 
@@ -344,7 +342,7 @@ async function saveCloud(userId, kidId, mode, data) {
         lifetime_stars: newLifetimeStars,
         // Persisted since PR B so the no-repeat window survives a device switch.
         recent_bank_item_ids: (recentBankItemIds || []).slice(-MAX_PERSISTED_RECENT_IDS),
-        ...(skillsPlayEnabled() ? skillColumns(skillPatch(data)) : {}),
+        ...skillColumns(skillPatch(data)),
         updated_at: new Date().toISOString(),
       },
       { onConflict: "user_id,kid_id,mode" }
@@ -376,7 +374,7 @@ export async function mergeLocalToCloud(userId, kidId = activeKidIdSync()) {
       total_sessions: cloud.totalSessions + (local.totalSessions ?? 0),
       lifetime_stars: cloud.lifetimeStars + (local.lifetimeStars ?? 0),
       // Nothing a kid earned on this device is lost on sign-in.
-      ...(skillsPlayEnabled() ? skillColumns(mergeTopicState(cloud, skillFields(local))) : {}),
+      ...skillColumns(mergeTopicState(cloud, skillFields(local))),
       updated_at: new Date().toISOString(),
     };
 
@@ -419,7 +417,7 @@ export async function saveTopicState(mode, patch, { kidId = activeKidIdSync() } 
   const fields = skillPatch(patch);
   if (!Object.keys(fields).length) return;
   const user = await getUser();
-  if (user && skillsPlayEnabled()) {
+  if (user) {
     const existing = await fetchProgressRow(user.id, kidId, mode);
     await supabase.from("progress").upsert(
       {

@@ -6,7 +6,6 @@ import { useTheme } from "../useTheme.js";
 import { MODE_IDS, getModeConfig } from "../modes";
 import { loadProgressSync, loadProgressSummary, saveTopicState } from "../progressStore";
 import { activeKidGrade } from "../kidProfiles";
-import { skillsPlayEnabled } from "../gamificationFlags.js";
 import { GRADE_LABELS } from "../skills/catalog.js";
 import { skillsForPlay, topicGrades } from "../skills/play.js";
 import { resolveTopic, unlockGrade } from "../skills/topicState.js";
@@ -103,7 +102,6 @@ export default function GrownUpsPanel({ open, onClose }) {
   // The two things a grown-up can decide for a kid (play by skill): open a
   // grade for a topic — the 2nd grader who is ahead in multiplication — and
   // pin one skill, which becomes what "Practice" plays until it is mastered.
-  const bySkill = skillsPlayEnabled();
   const changeTopic = async (id, patch) => {
     await saveTopicState(id, patch).catch(() => {});
     setSummary(await loadProgressSummary().catch(() => localSummary()));
@@ -240,7 +238,7 @@ export default function GrownUpsPanel({ open, onClose }) {
                         ) : (
                           "—"
                         )}
-                        {bySkill && standing && <TopicControls id={id} progress={progress} practiceLog={practiceLog} onChange={changeTopic} />}
+                        {standing && <TopicControls id={id} progress={progress} practiceLog={practiceLog} onChange={changeTopic} />}
                       </td>
                       <td className="py-2 text-right font-bold text-slate-700 align-top">{progress.lifetimeStars ?? 0}</td>
                       <td className="py-2 text-right">

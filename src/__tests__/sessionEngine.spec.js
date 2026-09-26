@@ -123,24 +123,22 @@ describe("adaptive session engine", () => {
     expect(question).toBeTruthy();
   });
 
-  it("promotes on served-subskill mastery even when a declared subskill is never generated", () => {
-    // money L1 cannot generate makeChange/moneyReasoning; with unserved
-    // subskills defaulting to 0.5, the 0.8 promotion gate could never pass and
-    // the mode was capped at level 1 forever. The gate now judges only what
-    // was actually served.
-    const session = createAdaptiveSession("money", 15);
-    session.skillMastery.countCoins = { attempts: 5, correct: 5, streak: 5, mastery: 1, lastSeenAt: 4, lastCorrectAt: 4 };
-    session.skillMastery.coinEquivalence = { attempts: 4, correct: 4, streak: 4, mastery: 1, lastSeenAt: 3, lastCorrectAt: 3 };
-    session.correctStreak = 3;
-    session.responseTimesMs = [3000, 3000, 3000];
-
-    const { question } = getNextQuestion(session);
-    const submission = Array.isArray(question.answer) && Array.isArray(question.answer[0])
-      ? question.answer[0]
-      : question.answer;
-    const result = recordAnswer(session, question, submission, 3000, false);
-    expect(result.correct).toBe(true);
-    expect(result.levelChanged).toBe(true);
-    expect(result.newLevel).toBe(2);
+  it("never moves the level mid-session — the ladder is gone, the level only picks the band", () => {
+    // Play by skill (2026-09): mastery is settled from the practice log and a
+    // grade is earned in the Fledging Flight. A run of right answers that once
+    // promoted, and a run of misses that once demoted, both leave the level.
+    const session = createAdaptiveSession("money", 15, { savedProgress: { level: 4 } });
+    let s = session;
+    for (let i = 0; i < 12; i += 1) {
+      const { question } = getNextQuestion(s);
+      const right = i % 2 === 0;
+      const submission = Array.isArray(question.answer) && Array.isArray(question.answer[0]) ? question.answer[0] : question.answer;
+      const result = recordAnswer(s, question, right ? submission : "__wrong__", 3000, false);
+      expect(result.levelChanged).toBe(false);
+      expect(result.newLevel).toBe(4);
+      s = result.session;
+    }
+    expect(s.level).toBe(4);
+    expect(s).not.toHaveProperty("mistakesAtLevel");
   });
 });

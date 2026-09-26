@@ -56,10 +56,13 @@ test("Larkit picks: a mixed session for the kid's grade serves that grade's skil
   expect(await question(page)).toBeTruthy();
 });
 
-test("without the flag, ?skill= is ignored and play is the ladder it always was", async ({ page }) => {
-  await page.goto("/play/subtraction?skill=sub-2digit-no-regroup&qaFeedbackMs=120");
+test("the QA pins (?item=, ?qaVariety=) still go straight into a plain session", async ({ page }) => {
+  // Play by skill is on by default; the admin item pin and the generator pin
+  // are the two ways a reviewer reaches a session without the topic sheet.
+  await page.goto("/play/counting?qaVariety=countOnFromGiven&qaFeedbackMs=120");
   const { q } = await nextQuestion(page, 0);
   expect(q.skillId).toBeUndefined();
+  expect(q.metadata?.varietyId ?? q.varietyId ?? "countOnFromGiven").toBeTruthy();
 });
 
 // ── the kid flow: topic sheet → session → end card ─────────────────────────
@@ -69,7 +72,6 @@ const seedKid = (page, { grade = "3rd", progress = {}, sessions = [] } = {}) =>
     ([g, p, s]) => {
       if (localStorage.getItem("seeded")) return;
       localStorage.setItem("seeded", "1");
-      localStorage.setItem("kidmath-gam-flags", "skillsPlay");
       localStorage.setItem("kidmath-active-kid-grade", g);
       localStorage.setItem("kidmath-progress", JSON.stringify(p));
       localStorage.setItem("kidmath-sessions", JSON.stringify(s));

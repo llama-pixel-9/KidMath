@@ -12,14 +12,15 @@ what to practice. Now: **grade (from the kid profile, never asked) → topic →
 skill**, on the SAME catalog the worksheets print from (`src/skills/`).
 
 ## The flag
-`VITE_SKILLS_PLAY` (`skillsPlayEnabled`) — **not** a gamification step:
-`VITE_GAM_ALL` is "true" in production and would have switched it on at merge.
-`?gam=skillsPlay` / localStorage `kidmath-gam-flags` force it on for QA.
-**Before turning it on in an environment, apply migrations `20260920120000`
-(practice_sessions.skill_id/grade) and `20260920130000` (progress.grade,
-grade_unlocked, pinned_skill_id, skill_mastery)** — the client only names
-those columns when the flag is on, and a query naming an unknown column fails.
-With the flag off everything is the ladder, bit for bit.
+**ON by default on both platforms since 2026-09-26** (`skillsPlayEnabled`,
+`GamFlags.skillsPlay`). `VITE_SKILLS_PLAY=false` / `-skillsPlay 0` is the kill
+switch, kept for one release; with it off everything is the ladder, bit for bit.
+Never a gamification step — it must not follow `VITE_GAM_ALL` / `GamFlags.all`.
+Migrations `20260920120000` and `20260920130000` are applied in prod; a fresh
+environment needs them before the flag is on (the client names the columns).
+`/play/<mode>` is the topic sheet; the QA pins `?item=` (from /admin) and
+`?qaVariety=` still open a plain session (e2e and reviewers rely on this), and
+the robot-kid / persona e2e play `?mix=1`.
 
 ## Catalog (`src/skills/`)
 - `catalog.js` + `promptSkills.js` + `index.js` — the one list (see the
@@ -98,10 +99,15 @@ pays no stars, parent controls). Must stay green unchanged: `bankCellCoverage`,
 `ladderV2`, `sessionEngine`, `fledging`; parity fixtures need no regeneration
 (stateless `generateQuestion` is untouched).
 
-## Still to do
-iOS parity (nativeEntry exports + TopicSheetView, SessionViewModel options,
-ProgressStore columns, copy) · then flag on by default and retire the ladder
-paths · marketing/onboarding copy that still says "level up".
+## Still to do (phase 6b)
+Once the kill switch has gone unused for a release: delete the `bySkill` /
+`skillsPlayEnabled()` branches, the ladder-only UI (Lv chip, level-up toast,
+FledgingOffer, nomination pill, masterySummary tile line, "Difficulty adjusts
+automatically"), the engine's promotion / demotion / nomination / glide-down
+and `ladderV2`, and their specs (`ladderV2`, `fledging`, parts of
+`sessionEngine`). Keep `level` itself: it picks the bank band, feeds the
+altitude bonus and the NOT NULL `level_*` columns, and the QA pins still run a
+plain session. Keep `startingLevelFor` — a topic's first row needs a level.
 
 ## One flow, two apps (`src/skills/flow.js`)
 
@@ -125,8 +131,8 @@ record's id first or the first session counts twice. `settleSkillSession` does.
 
 ## iOS
 
-Flag: `GamFlags.skillsPlay` — its own switch (`-skillsPlay 1`), NOT `step()`,
-because `GamFlags.all` defaults to true. Off by default until both platforms flip.
+Flag: `GamFlags.skillsPlay` — its own switch, NOT `step()`, because
+`GamFlags.all` defaults to true. On by default; `-skillsPlay 0` turns it off.
 - `TopicSheetView` (tap a Home card) → `SessionView(mode:skillRequest:)`;
   `SessionViewModel.SkillRequest` = `.skill(id)` / `.mix(grade:)` / `.flight`.
 - A skill session saves `savedLevel` (what was loaded), never the session's

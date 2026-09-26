@@ -1,7 +1,7 @@
 import SwiftUI
 
 /// The standardised play cards for the first-flight screens (§20): cream
-/// card, name Nunito 700/14 left, Sun level pill right, the figure, then the
+/// card, name Nunito 700/14 left, Sun grade pill right, the figure, then the
 /// prompt in Fredoka 600 centred. The one full-bleed teal panel a screen is
 /// allowed — it holds live play cards, never mascot art, and shows all four
 /// tile tints in §08 order.
@@ -20,7 +20,7 @@ struct PlayCardPanel: View {
     }
 
     private func card<Content: View>(
-        _ name: String, level: Int, @ViewBuilder content: () -> Content
+        _ name: String, grade: String, @ViewBuilder content: () -> Content
     ) -> some View {
         VStack(spacing: 10) {
             HStack {
@@ -28,7 +28,7 @@ struct PlayCardPanel: View {
                     .font(theme.bodyFont(size: 14, weight: .bold))
                     .foregroundStyle(Theme.ink)
                 Spacer()
-                Text("Level \(level)")
+                Text(grade)
                     .font(theme.bodyFont(size: 12, weight: .bold))
                     .padding(.horizontal, 10)
                     .padding(.vertical, 3)
@@ -56,7 +56,7 @@ struct PlayCardPanel: View {
     ]
 
     private var multiplicationCard: some View {
-        card("Multiplication Meadow", level: 3) {
+        card("Multiplication Meadow", grade: "Grade 3") {
             Text("7 × 6")
                 .font(theme.displayFont(size: 30))
                 .foregroundStyle(Theme.ink)
@@ -81,7 +81,7 @@ struct PlayCardPanel: View {
     }
 
     private var countingCard: some View {
-        card("Counting Chicks", level: 2) {
+        card("Counting Chicks", grade: "Kindergarten") {
             // Bars in the fixed §09 ramp; axis Ink 15%, baseline only.
             let days: [(label: String, value: CGFloat, fill: Color)] = [
                 ("Mon", 4, Theme.seafoam),
@@ -114,7 +114,7 @@ struct PlayCardPanel: View {
     }
 
     private var fractionsCard: some View {
-        card("Fractions Feather", level: 1) {
+        card("Fractions Feather", grade: "Grade 3") {
             NumberLineHop()
                 .frame(height: 64)
             prompt("How far did she hop?")

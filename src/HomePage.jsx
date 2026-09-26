@@ -121,8 +121,8 @@ const STEPS = [
   },
   {
     icon: Trophy,
-    title: "Earn stars & level up",
-    desc: "Collect stars for correct answers and level up as you improve!",
+    title: "Earn stars & master skills",
+    desc: "Collect stars for correct answers, master each skill, and open the next grade.",
   },
 ];
 

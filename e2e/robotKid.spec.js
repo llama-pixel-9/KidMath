@@ -130,7 +130,8 @@ for (const mode of MODES) {
         [mode, level]
       );
 
-      await page.goto(`/play/${mode}?qaFeedbackMs=120`);
+      // Larkit picks at the grade the seeded level means (play by skill).
+      await page.goto(`/play/${mode}?qaFeedbackMs=120&mix=1`);
 
       const problems = [];
       let lastSeq = 0;

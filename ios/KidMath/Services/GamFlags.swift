@@ -56,8 +56,13 @@ enum GamFlags {
     nonisolated static var readAloud: Bool { step("gamReadAloud") }
 
     /// Play by skill — Grade → Topic → Skill with durable mastery instead of
-    /// the level ladder (web: VITE_SKILLS_PLAY). NOT a gamification step, on
-    /// purpose: `all` is already true, and this must stay off until it is
-    /// switched on for both platforms together. `-skillsPlay 1` forces it on.
-    nonisolated static var skillsPlay: Bool { UserDefaults.standard.bool(forKey: "skillsPlay") }
+    /// the level ladder (web: VITE_SKILLS_PLAY, on in prod since 2026-09-26).
+    /// ON by default; `-skillsPlay 0` is the kill switch. Never a gamification
+    /// step — it does not follow `all`.
+    nonisolated static var skillsPlay: Bool {
+        if UserDefaults.standard.object(forKey: "skillsPlay") != nil {
+            return UserDefaults.standard.bool(forKey: "skillsPlay")
+        }
+        return true
+    }
 }

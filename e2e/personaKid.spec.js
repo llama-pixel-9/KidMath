@@ -93,7 +93,7 @@ for (const kid of plan) {
       const mode = kid.modes[s % kid.modes.length];
       const startAt = times[s];
       await setClock(startAt);
-      await page.goto(`/play/${mode}?qaFeedbackMs=120${kid.gam ? `&gam=${kid.gam}` : ""}`);
+      await page.goto(`/play/${mode}?qaFeedbackMs=120&mix=1${kid.gam ? `&gam=${kid.gam}` : ""}`);
 
       let lastSeq = 0, answered = 0;
       const attempts = [];

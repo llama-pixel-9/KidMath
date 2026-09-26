@@ -112,12 +112,4 @@ enum GradeSeed {
             .sorted { $0.rank != $1.rank ? $0.rank < $1.rank : $0.i < $1.i }
         return (ranked.filter { $0.rank < 2 }.map(\.g), ranked.filter { $0.rank == 2 }.map(\.g))
     }
-
-    /// Quick Start (HomePage.jsx quickStartFor): the in-grade playable mode
-    /// with the lowest level — the most room to grow.
-    static func quickStart(grade: String?, levels: [String: Int], groups: [ModeGroup] = ModeCatalog.groups) -> String? {
-        guard gradeIndex(grade) != nil else { return nil }
-        let inGrade = groups.flatMap(\.modes).filter { $0.playable && gradeFit(mode: $0.id, grade: grade) == "in" }
-        return inGrade.map { ($0.id, levels[$0.id] ?? 1) }.min { $0.1 < $1.1 }?.0
-    }
 }

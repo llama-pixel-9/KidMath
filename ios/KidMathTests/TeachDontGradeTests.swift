@@ -33,16 +33,6 @@ final class TeachDontGradeTests: XCTestCase {
         XCTAssertEqual(engine.speakableText("What is 1/2 of 8?"), "What is 1 over 2 of 8 what")
     }
 
-    func testMasteryLineOverThePracticeLog() throws {
-        let engine = try EngineBridge()
-        XCTAssertNil(engine.masteryLine(sessions: [], mode: "addition"), "nothing to say yet")
-        let attempts: [[String: Any]] = (0..<5).map { ["subskill": "joinResultUnknown", "correct": true, "retry": false, "t": $0] }
-        let session: [String: Any] = ["mode": "addition", "endedAt": 1, "startedAt": 0, "questions": 5, "firstTryCorrect": 5, "attempts": attempts]
-        let line = try XCTUnwrap(engine.masteryLine(sessions: [session], mode: "addition"))
-        XCTAssertTrue(line.hasSuffix("skills solid"), line)
-        XCTAssertTrue(line.hasPrefix("1 of "), line)
-    }
-
     func testAutoReadOnlyForKAndFirstGrade() {
         UserDefaults.standard.set(true, forKey: "gamReadAloud")
         defer { UserDefaults.standard.removeObject(forKey: "gamReadAloud") }

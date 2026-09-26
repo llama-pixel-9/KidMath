@@ -229,15 +229,6 @@ final class EngineBridge {
         (try? callString("speakableText", [promptText, noun ?? NSNull()])) ?? promptText
     }
 
-    /// "1 of 3 skills solid" over the practice log, or nil when there is
-    /// nothing to say yet (src/analytics/masterySummary.js).
-    func masteryLine(sessions: [[String: Any]], mode: String) -> String? {
-        let declared = (try? call("modeSubskills", [mode]).toArray() as? [String]) ?? []
-        guard let summary = try? callDictionary("masterySummary", [sessions, mode, declared]),
-              let line = try? call("masteryLine", [summary]), line.isString else { return nil }
-        return line.toString()
-    }
-
     // MARK: - Play by skill (src/skills/flow.js — the flow both apps run)
 
     /// `progress` is the topic's saved progress (level, totalSessions, grade,
@@ -286,9 +277,10 @@ final class EngineBridge {
         (try? callDictionary("mergeTopicState", [cloud, local])) ?? [:]
     }
 
-    /// The Fledging Flight's numbers (questions / pass / maxAttempts).
-    func fledgingFlightQuestions() -> Int {
-        ProgressStore.int((try? callDictionary("fledgingFlightRule"))?["questions"], default: 6)
+    /// The Fledging Flight's numbers (the shared GRADE_UP rule).
+    func fledgingFlightRule() -> (questions: Int, pass: Int) {
+        let rule = (try? callDictionary("fledgingFlightRule")) ?? [:]
+        return (ProgressStore.int(rule["questions"], default: 6), ProgressStore.int(rule["pass"], default: 5))
     }
 
     // MARK: - Adaptive session
@@ -449,24 +441,6 @@ final class EngineBridge {
     ) throws -> String? {
         let result = try call("choosePerch", [birds, speciesId, viewedZoneId, earnedZoneIds])
         return result.isString ? result.toString() : nil
-    }
-
-    /// Force every subskill in the session to a high observed mastery rate, so
-    /// promotion/nomination signals can be exercised deterministically.
-    /// Test-only, like reseedRandom.
-    func forceHighMastery(in session: Session) throws {
-        exceptions.message = nil
-        context.globalObject.setObject(session.value, forKeyedSubscript: "__kidmathTestSession" as NSString)
-        context.evaluateScript(
-            """
-            Object.values(__kidmathTestSession.skillMastery || {}).forEach(function (entry) {
-              entry.attempts = 10;
-              entry.correct = 10;
-            });
-            delete globalThis.__kidmathTestSession;
-            """
-        )
-        try throwPendingException()
     }
 
     /// Canonical JSON of a generated question, stringified INSIDE the JS realm

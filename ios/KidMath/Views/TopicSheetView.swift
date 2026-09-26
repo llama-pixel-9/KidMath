@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// What a kid sees after tapping a topic (GamFlags.skillsPlay): one big
+/// What a kid sees after tapping a topic: one big
 /// default — "Practice — Larkit picks", an adaptive mix across their grade's
 /// skills — and under it the grade's skills with where they stand, each
 /// tappable. No levels. The SwiftUI twin of src/play/TopicSheet.jsx.

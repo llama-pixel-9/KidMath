@@ -1,7 +1,7 @@
 import XCTest
 @testable import KidMath
 
-/// Play by skill on iOS (GamFlags.skillsPlay): the same flow the web runs
+/// Play by skill on iOS: the same flow the web runs
 /// (src/skills/flow.js through the bridge), driven the way the UI drives it.
 @MainActor
 final class SkillsPlayTests: XCTestCase {
@@ -11,12 +11,10 @@ final class SkillsPlayTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        UserDefaults.standard.set(true, forKey: "skillsPlay")
         UserDefaults.standard.set(false, forKey: "gamAll") // base economy, as SessionFlowTests
     }
 
     override func tearDown() {
-        UserDefaults.standard.removeObject(forKey: "skillsPlay")
         UserDefaults.standard.removeObject(forKey: "gamAll")
         super.tearDown()
     }
@@ -83,7 +81,6 @@ final class SkillsPlayTests: XCTestCase {
         let served = try await play(viewModel)
         XCTAssertEqual(served.count, 5)
         XCTAssertTrue(served.allSatisfy { $0 == "sub-2digit-regroup" }, "served: \(served)")
-        XCTAssertFalse(viewModel.showLevelUp)
 
         let saved = progress.loadLocal(mode: "subtraction")
         XCTAssertEqual(ProgressStore.int(saved["level"]), 9, "a skill session never moves the saved level")
@@ -131,17 +128,15 @@ final class SkillsPlayTests: XCTestCase {
         XCTAssertEqual(ProgressStore.int(saved["lifetimeStars"]), 0)
     }
 
-    func testUnearnedFlightAndFlagOffBothPlayTheLadder() async throws {
+    func testUnearnedFlightFallsBackToAPlainSessionThatNeverMovesTheLevel() async throws {
         let (progress, engine) = try store(#function)
+        progress.saveLocal(mode: "subtraction", data: ["level": 6])
         let unearned = model(.flight, progress, engine)
         await unearned.start()
         XCTAssertFalse(unearned.isSkillSession, "a Fledging Flight cannot be started before it is earned")
         XCTAssertNil(unearned.sessionLabel)
-
-        UserDefaults.standard.set(false, forKey: "skillsPlay")
-        let flagOff = model(.skill("sub-2digit-regroup"), progress, engine)
-        await flagOff.start()
-        XCTAssertFalse(flagOff.isSkillSession)
+        _ = try await play(unearned)
+        XCTAssertEqual(ProgressStore.int(progress.loadLocal(mode: "subtraction")["level"]), 6, "there is no ladder: a plain session leaves the level")
     }
 
     func testSavingTopicStateNeverCountsASessionOrMovesTheLevel() async throws {

@@ -11,16 +11,18 @@ third), mastery was session-local and thrown away, and nobody could choose
 what to practice. Now: **grade (from the kid profile, never asked) → topic →
 skill**, on the SAME catalog the worksheets print from (`src/skills/`).
 
-## The flag
-**ON by default on both platforms since 2026-09-26** (`skillsPlayEnabled`,
-`GamFlags.skillsPlay`). `VITE_SKILLS_PLAY=false` / `-skillsPlay 0` is the kill
-switch, kept for one release; with it off everything is the ladder, bit for bit.
-Never a gamification step — it must not follow `VITE_GAM_ALL` / `GamFlags.all`.
-Migrations `20260920120000` and `20260920130000` are applied in prod; a fresh
-environment needs them before the flag is on (the client names the columns).
-`/play/<mode>` is the topic sheet; the QA pins `?item=` (from /admin) and
-`?qaVariety=` still open a plain session (e2e and reviewers rely on this), and
-the robot-kid / persona e2e play `?mix=1`.
+## No flag, no ladder (since 2026-09-26)
+Play by skill is the only play. The ladder — promotion, demotion, nomination,
+the Fledging offer/ceremony, `ladderV2`, glide-down, the Lv chip, the level-up
+toast, `masterySummary` — was deleted in phase 6b; there is no kill switch.
+`level` survives only as the bank band a session draws from (a skill session's
+`level` is `levelForSkill`), the altitude bonus's input, and the NOT NULL
+`level_*` columns; a skill session never writes it. `startingLevelFor` still
+seeds a topic's first row. Migrations `20260920120000` and `20260920130000`
+are applied in prod (a fresh environment needs them — the client names the
+columns). `/play/<mode>` is the topic sheet; the QA pins `?item=` (from
+/admin) and `?qaVariety=` open a PLAIN session (no skills, no level change —
+e2e and reviewers rely on this), and the robot-kid / persona e2e play `?mix=1`.
 
 ## Catalog (`src/skills/`)
 - `catalog.js` + `promptSkills.js` + `index.js` — the one list (see the
@@ -96,18 +98,8 @@ skill serves five valid questions of its own, words on and off),
 `topicState.spec`, `parentReport.spec`, `e2e/skillsPlay.spec.js` (whole
 sessions through the real widgets: level untouched, mastery saved, challenge
 pays no stars, parent controls). Must stay green unchanged: `bankCellCoverage`,
-`ladderV2`, `sessionEngine`, `fledging`; parity fixtures need no regeneration
-(stateless `generateQuestion` is untouched).
-
-## Still to do (phase 6b)
-Once the kill switch has gone unused for a release: delete the `bySkill` /
-`skillsPlayEnabled()` branches, the ladder-only UI (Lv chip, level-up toast,
-FledgingOffer, nomination pill, masterySummary tile line, "Difficulty adjusts
-automatically"), the engine's promotion / demotion / nomination / glide-down
-and `ladderV2`, and their specs (`ladderV2`, `fledging`, parts of
-`sessionEngine`). Keep `level` itself: it picks the bank band, feeds the
-altitude bonus and the NOT NULL `level_*` columns, and the QA pins still run a
-plain session. Keep `startingLevelFor` — a topic's first row needs a level.
+`sessionEngine` (which pins "the level never moves mid-session"); parity
+fixtures need no regeneration (stateless `generateQuestion` is untouched).
 
 ## One flow, two apps (`src/skills/flow.js`)
 
@@ -131,8 +123,8 @@ record's id first or the first session counts twice. `settleSkillSession` does.
 
 ## iOS
 
-Flag: `GamFlags.skillsPlay` — its own switch, NOT `step()`, because
-`GamFlags.all` defaults to true. On by default; `-skillsPlay 0` turns it off.
+No flag. A `SessionViewModel` without a `skillRequest` is a plain session
+(tests only — Home always opens the topic sheet).
 - `TopicSheetView` (tap a Home card) → `SessionView(mode:skillRequest:)`;
   `SessionViewModel.SkillRequest` = `.skill(id)` / `.mix(grade:)` / `.flight`.
 - A skill session saves `savedLevel` (what was loaded), never the session's

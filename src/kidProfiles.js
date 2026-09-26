@@ -114,6 +114,18 @@ export async function requestParentalConsent({ firstName, age, grade }) {
 }
 
 /**
+ * Where a consent request stands — polled by the "Check your email" screen so
+ * the app moves on by itself the moment the parent taps the emailed link.
+ * "pending" | "granted" | "superseded" | "expired" | null (not ours / gone).
+ * RLS: a parent reads only their own requests.
+ */
+export async function consentRequestStatus(requestId) {
+  if (!supabase || !requestId) return null;
+  const { data } = await supabase.from("consent_requests").select("status").eq("id", requestId).maybeSingle();
+  return data?.status ?? null;
+}
+
+/**
  * Update a kid's profile fields. Grade changes every September, so this is
  * routine maintenance, not new collection — the fields are the same three
  * the consent already covers. RLS scopes the write to the parent's own rows.
@@ -138,8 +150,8 @@ export async function updateKid(kidId, { firstName, age, grade }) {
 export async function addKid(userId, { firstName, age, grade }) {
   if (!supabase || !userId) throw new Error("Sign in first");
   if (!(await hasParentalConsent(userId))) {
-    const { sentAt } = await requestParentalConsent({ firstName, age, grade });
-    return { pendingConsent: true, firstName: firstName.trim(), age, grade, sentAt };
+    const { sentAt, requestId } = await requestParentalConsent({ firstName, age, grade });
+    return { pendingConsent: true, firstName: firstName.trim(), age, grade, sentAt, requestId };
   }
   const { data, error } = await supabase
     .from("kid_profiles")

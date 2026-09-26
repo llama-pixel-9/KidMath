@@ -8,8 +8,9 @@
 // affirmative act, and it keeps email-scanner prefetches from granting (or,
 // worse, revoking) consent on their own.
 
-import { useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
+import { confirmOutcome } from "./consent/confirmOutcome.js";
 
 const FUNCTIONS_BASE = import.meta.env.VITE_SUPABASE_URL
   ? `${import.meta.env.VITE_SUPABASE_URL.replace(/\/$/, "")}/functions/v1`
@@ -50,35 +51,52 @@ const smallText = "mt-3 text-sm font-semibold text-ink/60 max-w-xl";
 const bigButton =
   "px-8 h-14 bg-teal text-cream font-display font-semibold text-xl rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer disabled:opacity-40";
 
-/** larkit.io/confirm-consent?token=… — the link in the direct-notice email. */
+/**
+ * larkit.io/confirm-consent?token=… — the link in the direct-notice email.
+ *
+ * The email button IS the consent ("I give my consent for Aaru"), so this page
+ * confirms as soon as it loads — no second button. It confirms from script (a
+ * POST), never from the link itself, so an email security scanner that
+ * prefetches links cannot consent on a parent's behalf.
+ *
+ * Failures are told apart: a token that is really expired or was replaced by
+ * a resend sends the parent back to the app; anything else (the service down,
+ * a deploy without --no-verify-jwt answering 401, no network) is a retry —
+ * that catch-all once read "Link expired" and sent two families in a loop.
+ */
 export function ConfirmConsentPage() {
   const token = useTokenFromUrl();
-  const [state, setState] = useState("ready"); // ready | busy | done | already | superseded | failed
+  const [state, setState] = useState("busy"); // busy | done | already | superseded | expired | unavailable
   const [kidName, setKidName] = useState("");
-  const [message, setMessage] = useState("");
+  const [detail, setDetail] = useState("");
 
-  const confirm = async () => {
-    setState("busy");
+  const confirm = useCallback(async () => {
+    let result;
     try {
-      const result = await postToken("consent-confirm", token);
-      if (result.ok) {
-        setKidName(result.kidFirstName || "your child");
-        setState("done");
-      } else if (result.reason === "request_not_pending") {
-        setState("already");
-      } else if (result.reason === "request_superseded") {
-        setState("superseded");
-      } else {
-        setMessage(
-          "This confirmation link is invalid or has expired. Start adding your child again from the app and we'll send a fresh one."
-        );
-        setState("failed");
-      }
+      result = await postToken("consent-confirm", token);
     } catch {
-      setMessage("We couldn't reach the server — check your connection and try again.");
-      setState("ready");
+      result = { status: 0 };
     }
-  };
+    const outcome = confirmOutcome(result);
+    if (outcome.state === "done") setKidName(outcome.kidFirstName);
+    if (outcome.state === "unavailable") {
+      setDetail(
+        outcome.reason === "network"
+          ? "We couldn't reach the server — check your connection and try again."
+          : "We couldn't confirm just now. Your link is still good — try again in a moment."
+      );
+    }
+    setState(outcome.state);
+  }, [token]);
+
+  // Confirm on load. (The state changes happen after the network round trip,
+  // never synchronously inside the effect.)
+  useEffect(() => {
+    if (!token) return;
+    const run = () => confirm();
+    const id = setTimeout(run, 0);
+    return () => clearTimeout(id);
+  }, [token, confirm]);
 
   if (!token) {
     return (
@@ -91,11 +109,20 @@ export function ConfirmConsentPage() {
     );
   }
 
+  if (state === "busy") {
+    return (
+      <Shell title="Confirming…">
+        <p className={bodyText} role="status" aria-live="polite">Recording your consent — one moment.</p>
+      </Shell>
+    );
+  }
+
   if (state === "done") {
     return (
-      <Shell title="Consent confirmed">
+      <Shell title={`Done — ${kidName} is ready`}>
         <p className={bodyText}>
-          Thank you — your consent is recorded and {kidName}'s profile is ready.
+          Your consent is recorded and {kidName}'s profile is ready. If larkit is still open on
+          another tab or device, it will move on by itself.
         </p>
         <p className={smallText}>
           A confirmation email is on its way; it includes the link to revoke this consent at any
@@ -103,7 +130,7 @@ export function ConfirmConsentPage() {
         </p>
         <div className="mt-8">
           <Link to="/profiles" className={`${bigButton} inline-flex items-center no-underline`}>
-            Start practising
+            Back to larkit
           </Link>
         </div>
       </Shell>
@@ -147,10 +174,13 @@ export function ConfirmConsentPage() {
     );
   }
 
-  if (state === "failed") {
+  if (state === "expired") {
     return (
       <Shell title="Link expired">
-        <p className={bodyText}>{message}</p>
+        <p className={bodyText}>
+          Consent links work for 14 days, and this one has run out. Add your child again from the
+          app and we'll send a fresh one.
+        </p>
         <div className="mt-8">
           <Link to="/onboarding" className={`${bigButton} inline-flex items-center no-underline`}>
             Add your child again
@@ -161,21 +191,11 @@ export function ConfirmConsentPage() {
   }
 
   return (
-    <Shell title="One last tap">
-      <p className={bodyText}>
-        You're confirming your parental consent, as described in the email we sent you: we'll create
-        your child's profile and collect only what the notice lists — first name, age, grade, and
-        practice activity. No ads, no sale of data, and you can revoke at any time.
-      </p>
-      <p className={smallText}>
-        The full notice is at{" "}
-        <Link to="/parental-consent" className="underline text-teal">larkit.io/parental-consent</Link>{" "}
-        and our Privacy Policy at <Link to="/privacy" className="underline text-teal">larkit.io/privacy</Link>.
-      </p>
-      {message && <p className="mt-4 text-sm font-bold text-ember">{message}</p>}
+    <Shell title="We couldn't confirm just now">
+      <p className={bodyText} role="alert">{detail}</p>
       <div className="mt-8">
-        <button type="button" disabled={state === "busy"} className={bigButton} onClick={confirm}>
-          {state === "busy" ? "Confirming…" : "I give my consent"}
+        <button type="button" className={bigButton} onClick={() => { setState("busy"); confirm(); }}>
+          Try again
         </button>
       </div>
     </Shell>

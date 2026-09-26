@@ -1,0 +1,22 @@
+# Supabase CLI project config. Only what must never be forgotten lives here.
+#
+# These functions are called by people and services that carry no Supabase
+# JWT — a parent arriving from an email, Stripe's webhook, the public price
+# read — so the gateway must not demand one. A deploy without
+# `--no-verify-jwt` used to silently re-enable the check: consent-confirm
+# answered every parent with 401, the page read it as "Link expired", and two
+# families looped through "add your child again" (2026-09-26). With these
+# entries the setting rides with every `supabase functions deploy`.
+project_id = "rmxvevpocgflhaaelbod"
+
+[functions.consent-confirm]
+verify_jwt = false
+
+[functions.revoke-consent]
+verify_jwt = false
+
+[functions.stripe-webhook]
+verify_jwt = false
+
+[functions.stripe-prices]
+verify_jwt = false

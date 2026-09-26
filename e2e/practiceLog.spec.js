@@ -16,7 +16,7 @@ test("a finished session writes one practice-log record with its attempts", asyn
     localStorage.removeItem("kidmath-sessions");
     localStorage.removeItem("kidmath-active-kid");
   });
-  await page.goto("/play/addition?qaFeedbackMs=120");
+  await page.goto("/play/addition?qaFeedbackMs=120&mix=1");
 
   let lastSeq = 0;
   let answered = 0;
@@ -53,6 +53,7 @@ test("a finished session writes one practice-log record with its attempts", asyn
   const [rec] = rows;
   expect(rec.mode).toBe("addition");
   expect(rec.kind).toBe("normal");
+  expect(rec.sessionKind).toBe("mix");
   expect(rec.questions).toBe(15);
   expect(rec.attempts.length).toBeGreaterThanOrEqual(15);
   expect(rec.attempts.every((a) => a.prompt && typeof a.correct === "boolean" && a.ms >= 0)).toBe(true);

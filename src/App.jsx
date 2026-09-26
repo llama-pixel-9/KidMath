@@ -41,9 +41,9 @@ function PlayRoute() {
     return <PremiumGate />;
   }
   // Play by skill: a topic opens on its sheet (Larkit picks / pick a skill); a
-  // session is a link FROM the sheet. The admin item pin and bare /play keep
-  // going straight in.
-  if (mode && skillsPlayEnabled() && !params.has("skill") && !params.has("mix") && !params.has("challenge") && !params.has("item")) {
+  // session is a link FROM the sheet. The QA pins (`?item=` from /admin,
+  // `?qaVariety=` for one generator) and bare /play keep going straight in.
+  if (mode && skillsPlayEnabled() && !["skill", "mix", "challenge", "item", "qaVariety"].some((k) => params.has(k))) {
     return <TopicSheet mode={mode} />;
   }
   return <MathExplorer initialMode={mode} />;

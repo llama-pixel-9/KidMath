@@ -1,18 +1,18 @@
 /**
  * The standardised play cards for the first-flight screens (§20): cream card,
- * name Nunito 700/14 left, Sun level pill right, the figure, then the prompt
+ * name Nunito 700/14 left, Sun grade pill right, the figure, then the prompt
  * in Fredoka 600 centred. Charts and number lines follow §09/§10 — axis 2px
  * Ink 15%, gridlines 1px 8%, Teal dots, Sun arc. The teal panel holds these
  * live cards, never mascot art, and shows all four tile tints in §08 order.
  */
 
-function PlayCard({ name, level, children }) {
+function PlayCard({ name, grade, children }) {
   return (
     <div className="bg-cream rounded-2xl p-4 shadow-sm">
       <div className="flex items-center justify-between gap-2 mb-2">
         <span className="text-sm font-bold text-ink">{name}</span>
         <span className="text-xs font-bold text-ink bg-sun rounded-full px-2.5 py-0.5 whitespace-nowrap">
-          Level {level}
+          {grade}
         </span>
       </div>
       {children}
@@ -37,7 +37,7 @@ const TILE_TINTS = [
 function MultiplicationCard() {
   const tiles = [42, 36, 48, 40];
   return (
-    <PlayCard name="Multiplication Meadow" level={3}>
+    <PlayCard name="Multiplication Meadow" grade="Grade 3">
       <p className="m-0 text-center font-display font-semibold text-ink text-3xl">7 × 6</p>
       <div className="grid grid-cols-2 gap-2.5 mt-3">
         {tiles.map((t, i) => (
@@ -67,7 +67,7 @@ function CountingCard() {
   const bottom = 96;
   const scale = (v) => (v / 8) * 80;
   return (
-    <PlayCard name="Counting Chicks" level={2}>
+    <PlayCard name="Counting Chicks" grade="Kindergarten">
       <svg viewBox={`0 0 ${w} ${h + 16}`} className="w-full" role="img" aria-label="Bar chart of chicks counted each day">
         {[0, 2, 4, 6, 8].map((t) => (
           <g key={t}>
@@ -102,7 +102,7 @@ function FractionsCard() {
   const y = 46;
   const x = (v) => 12 + (v / 10) * (w - 24);
   return (
-    <PlayCard name="Fractions Feather" level={1}>
+    <PlayCard name="Fractions Feather" grade="Grade 3">
       <svg viewBox={`0 0 ${w} 70`} className="w-full" role="img" aria-label="Number line from 0 to 10 with a hop from 3 to 6">
         <path
           d={`M ${x(3)} ${y - 4} Q ${x(4.5)} ${y - 34} ${x(6)} ${y - 4}`}

@@ -113,14 +113,12 @@ describe("firstFlightDay / isFirstWeek (§02 ledger default)", () => {
   });
 });
 
-describe("skillsPlay is not a gamification step", () => {
-  it("the production master switch does not turn it on; only its own switch does", () => {
-    // VITE_GAM_ALL is already "true" in prod. Play-by-skill must not switch
-    // itself on at merge — before iOS has it and before its migration exists.
-    expect(skillsPlayEnabled({ VITE_GAM_ALL: "true" })).toBe(false);
-    expect(gamStepEnabled("skillsPlay", { VITE_GAM_ALL: "true" })).toBe(false);
+describe("skillsPlay is on by default, with its own kill switch", () => {
+  it("only VITE_SKILLS_PLAY=false turns it off; the gamification switches are unrelated", () => {
+    expect(skillsPlayEnabled({})).toBe(true);
+    expect(skillsPlayEnabled({ VITE_GAM_ALL: "false" })).toBe(true);
     expect(skillsPlayEnabled({ VITE_SKILLS_PLAY: "true" })).toBe(true);
     expect(skillsPlayEnabled({ VITE_SKILLS_PLAY: "false", VITE_GAM_ALL: "true" })).toBe(false);
-    expect(skillsPlayEnabled({})).toBe(false);
+    expect(gamStepEnabled("skillsPlay", { VITE_GAM_ALL: "true" })).toBe(false);
   });
 });

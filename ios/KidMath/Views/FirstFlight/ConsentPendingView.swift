@@ -3,8 +3,9 @@ import SwiftUI
 /// "Check your email" — the parent has typed a child's details and the direct
 /// notice has gone out; nothing is stored until they tap the link. Port of
 /// ConsentPendingPanel in src/onboarding/OnboardingFlow.jsx: sent-at stamp,
-/// 60-second resend cooldown (each email supersedes the last), and an
-/// "I've confirmed" check that looks for the server-created profile.
+/// 60-second resend cooldown (each email supersedes the last), and a poll
+/// that looks for the server-created profile so the screen moves on by
+/// itself the moment the parent taps the emailed link — no button to press.
 struct ConsentPendingView: View {
     @Environment(\.theme) private var theme
     @Environment(\.openURL) private var openURL
@@ -21,6 +22,9 @@ struct ConsentPendingView: View {
     @State private var busy = false
     @State private var error = ""
     @State private var showGate = false
+    @State private var pulse = false
+    /// Seconds between polls for the server-created profile.
+    static let pollSeconds: Double = 4
 
     enum ResendState { case idle, sending, sent, failed(String) }
 
@@ -97,25 +101,19 @@ struct ConsentPendingView: View {
                     .padding(.top, 14)
             }
 
-            VStack(alignment: .leading, spacing: 12) {
-                Button {
-                    Task { await confirm() }
-                } label: {
-                    Text("I've confirmed — continue")
-                        .font(theme.displayFont(size: 20))
-                        .foregroundStyle(Theme.cream)
-                        .padding(.horizontal, 28)
-                        .frame(height: 56)
-                        .background(
-                            RoundedRectangle(cornerRadius: 18)
-                                .fill(Theme.teal)
-                                .shadow(color: Theme.deepTeal, radius: 0, x: 0, y: 5)
-                        )
-                        .opacity(busy ? 0.4 : 1)
-                }
-                .buttonStyle(SpringButtonStyle())
-                .disabled(busy)
+            HStack(spacing: 8) {
+                Circle().fill(Theme.teal).frame(width: 10, height: 10)
+                    .opacity(pulse ? 1 : 0.3)
+                    .animation(.easeInOut(duration: 0.9).repeatForever(autoreverses: true), value: pulse)
+                Text("Waiting for your tap — this screen moves on by itself.")
+                    .font(theme.bodyFont(size: 14, weight: .bold))
+                    .foregroundStyle(Theme.teal)
+            }
+            .padding(.top, 20)
+            .onAppear { pulse = true }
+            .accessibilityElement(children: .combine)
 
+            VStack(alignment: .leading, spacing: 12) {
                 Button {
                     Task { await resend() }
                 } label: {
@@ -138,6 +136,16 @@ struct ConsentPendingView: View {
             .padding(.top, 32)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
+        .task {
+            // Poll until the profile exists — the emailed tap creates it.
+            while !Task.isCancelled {
+                if let kid = await checkConfirmed() {
+                    onConfirmed(kid)
+                    return
+                }
+                try? await Task.sleep(for: .seconds(Self.pollSeconds))
+            }
+        }
         .task(id: lastSentAt) {
             // Countdown from the most recent send.
             while !Task.isCancelled {
@@ -173,14 +181,4 @@ struct ConsentPendingView: View {
         }
     }
 
-    private func confirm() async {
-        busy = true
-        error = ""
-        defer { busy = false }
-        if let kid = await checkConfirmed() {
-            onConfirmed(kid)
-        } else {
-            error = "We haven't received your confirmation yet — tap the link in the email first."
-        }
-    }
 }

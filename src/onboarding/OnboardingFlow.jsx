@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../useAuth";
 import { usePremium } from "../PremiumContext";
@@ -18,9 +18,10 @@ import {
   KID_GRADES,
   fetchKids,
   addKid,
+  consentRequestStatus,
   requestParentalConsent,
   setActiveKid, KID_LIMIT_MESSAGE } from "../kidProfiles";
-import { RESEND_COOLDOWN_S, formatSentAt } from "./consentResend.js";
+import { CONSENT_POLL_MS, RESEND_COOLDOWN_S, formatSentAt } from "./consentResend.js";
 
 /**
  * §20 screens 03–04 — add a kid, then the soft paywall. Account flow voice is
@@ -36,7 +37,7 @@ const SEGMENT = "h-12 rounded-[12px] border-[1.5px] font-bold text-base cursor-p
  * resend — is stated on screen with the address and the time, the resend is
  * a real button on a cooldown, and a failure to send is said out loud.
  */
-export function ConsentPendingPanel({ email, kidFirstName, sentAt, onResend, onCheck, busy, error }) {
+export function ConsentPendingPanel({ email, kidFirstName, sentAt, onResend, busy, error, waiting = true }) {
   const [sends, setSends] = useState([{ at: sentAt, kind: "first" }]);
   const [resendState, setResendState] = useState("idle"); // idle | sending | sent | failed
   const [resendError, setResendError] = useState("");
@@ -114,15 +115,13 @@ export function ConsentPendingPanel({ email, kidFirstName, sentAt, onResend, onC
       {resendState === "failed" && resendError && (
         <p className="mt-4 text-sm font-bold text-ember" role="alert">{resendError}</p>
       )}
-      <div className="mt-8 flex items-center gap-4 flex-wrap">
-        <button
-          type="button"
-          disabled={busy}
-          className="px-8 h-14 bg-teal text-cream font-display font-semibold text-xl rounded-[18px] shadow-[0_5px_0_#064A41] btn-press cursor-pointer disabled:opacity-40"
-          onClick={onCheck}
-        >
-          I've confirmed — continue
-        </button>
+      {waiting && (
+        <p className="mt-6 flex items-center gap-2 text-sm font-bold text-teal" role="status" data-testid="consent-waiting">
+          <span className="inline-block h-2.5 w-2.5 rounded-full bg-teal animate-pulse" aria-hidden="true" />
+          Waiting for your tap — this page moves on by itself.
+        </p>
+      )}
+      <div className="mt-6 flex items-center gap-4 flex-wrap">
         <button
           type="button"
           disabled={busy || cooldown > 0 || resendState === "sending"}
@@ -222,24 +221,39 @@ function KidStep({ onDone, kidCount }) {
   };
 
   // After the parent taps the emailed confirmation link, the profile exists
-  // server-side (created in one transaction with the consent record) —
-  // re-fetch and continue.
-  const checkConfirmed = async () => {
-    setError("");
-    setBusy(true);
-    try {
-      const kids = await fetchKids(user.id);
-      const found = kids.find((k) => k.first_name === pendingConsent.firstName);
-      if (found) {
-        setPendingConsent(null);
-        onDone([found]);
-      } else {
-        setError("We haven't received your confirmation yet — tap the link in the email first.");
+  // server-side (created in one transaction with the consent record). This
+  // screen polls the request and moves on by itself — the parent never has
+  // to come back and press anything.
+  const checkConfirmed = useCallback(async () => {
+    const kids = await fetchKids(user.id);
+    const found = kids.find((k) => k.first_name === pendingConsent.firstName);
+    if (!found) return false;
+    setPendingConsent(null);
+    onDone([found]);
+    return true;
+  }, [user.id, pendingConsent, onDone]);
+
+  useEffect(() => {
+    if (!pendingConsent) return undefined;
+    let live = true;
+    const tick = async () => {
+      if (!live || document.visibilityState === "hidden") return;
+      try {
+        const status = await consentRequestStatus(pendingConsent.requestId);
+        if (status === "granted" && (await checkConfirmed())) live = false;
+      } catch {
+        // A missed poll is nothing — the next one is in a few seconds.
       }
-    } finally {
-      setBusy(false);
-    }
-  };
+    };
+    tick();
+    const timer = setInterval(tick, CONSENT_POLL_MS);
+    document.addEventListener("visibilitychange", tick);
+    return () => {
+      live = false;
+      clearInterval(timer);
+      document.removeEventListener("visibilitychange", tick);
+    };
+  }, [pendingConsent, checkConfirmed]);
 
   if (pendingConsent) {
     return (
@@ -249,8 +263,12 @@ function KidStep({ onDone, kidCount }) {
         sentAt={pendingConsent.sentAt}
         busy={busy}
         error={error}
-        onCheck={checkConfirmed}
-        onResend={() => requestParentalConsent(pendingConsent)}
+        onResend={async () => {
+          const sent = await requestParentalConsent(pendingConsent);
+          // The resend supersedes the earlier request: poll the new one.
+          setPendingConsent((p) => ({ ...p, requestId: sent.requestId, sentAt: sent.sentAt }));
+          return sent;
+        }}
       />
     );
   }

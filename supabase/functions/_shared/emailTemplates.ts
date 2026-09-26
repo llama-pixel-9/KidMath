@@ -221,7 +221,7 @@ export function consentRequestEmailHtml(args: {
     `<div style="width:44px;height:7px;border-radius:4px;background:#f26b3a;margin:0 0 16px;"></div>` +
     `<h1 style="margin:0 0 10px;font-family:${DISPLAY_FONT};font-weight:600;font-size:24px;line-height:1.3;color:${INK};">One tap, and ${kid} can start practising</h1>` +
     `<p style="${P_STYLE}">You started creating a profile for ${kid} on larkit. Because larkit is made for kids, U.S. law (COPPA) asks us to get your consent as the parent before anything about ${kid} is saved.</p>` +
-    ctaButton("Review & give consent", args.confirmUrl) +
+    ctaButton(`I give my consent for ${displayName(args.kidFirstName)}`, args.confirmUrl) +
     `<div style="height:24px;"></div>` +
     `<hr style="border:none;border-top:1px solid ${HAIRLINE};margin:0 0 22px;">` +
     `<p style="margin:0 0 14px;font-size:12px;letter-spacing:0.06em;font-weight:700;color:${TEAL};">THE FULL NOTICE, FOR YOUR RECORDS</p>` +

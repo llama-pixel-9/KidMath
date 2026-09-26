@@ -109,7 +109,7 @@ export async function beginConsentRequest(
     to: args.parentEmail,
     subject: "Your consent is needed before your child can start practising",
     text:
-      `TO GIVE CONSENT, open this link and tap the Confirm button:\n${confirmUrl}\n\n` +
+      `TO GIVE CONSENT, open this link — opening it records your consent:\n${confirmUrl}\n\n` +
       `The full notice is below for your records.\n\n` +
       `------------------------------------------------------------\n` +
       `${cleanNotice}\n\n` +

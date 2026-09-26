@@ -8,6 +8,9 @@
  */
 export const RESEND_COOLDOWN_S = 60;
 
+/** How often the panel asks whether the emailed link has been tapped. */
+export const CONSENT_POLL_MS = 4000;
+
 /** "10:58 PM" in the parent's locale; empty for an unparseable stamp. */
 export function formatSentAt(iso) {
   const d = new Date(iso);

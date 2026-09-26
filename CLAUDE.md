@@ -61,7 +61,7 @@ xcodebuild test -project KidMath.xcodeproj -scheme KidMath \
 
 ```
 src/
-  mathEngine.js        adaptive session: level, family scheduling, weakest-subskill targeting, mistake bank
+  mathEngine.js        adaptive session: skill scheduling, family rotation, mistake bank (no level ladder since 2026-09-26)
   modes/               22 modes, one file each; index.js is the registry
     structures/        CCSS additive/multiplicative structure templates — reference wording per structure
     formats/  distractors.js  itemMetadata.js  blueprints.js (STALE: only the original 8 modes)
@@ -298,9 +298,9 @@ Product IDs: `io.larkit.app.premium.{monthly,annual}`.
   test:e2e`): kid oracle, widget drivers, and its traps. Load it before
   running/extending e2e or adding an answer widget.
 - `.claude/skills/play-by-skill` — play as Grade → Topic → Skill: skill sessions,
-  durable mastery, the grade pointer, the earned Fledging Flight, the topic sheet,
-  and the kill switch (`VITE_SKILLS_PLAY=false` / `-skillsPlay 0`). Load it before
-  touching what a session practices, mastery, or grades.
+  durable mastery, the grade pointer, the earned Fledging Flight, the topic sheet.
+  The level ladder is gone (2026-09-26); `level` is only the bank band. Load it
+  before touching what a session practices, mastery, or grades.
 - `.claude/skills/worksheets` — the skill catalog, the title-is-a-promise rule,
   bank-first draw, measured page budgets. Load it before touching /worksheets,
   a sheet layout, or the catalog. User-facing name is "worksheets", never

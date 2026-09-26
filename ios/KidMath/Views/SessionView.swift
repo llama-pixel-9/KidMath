@@ -23,7 +23,7 @@ struct SessionView: View {
     private static let sidePaneBreakpoint: CGFloat = 800
 
     /// `skillRequest` (play by skill) is what the topic sheet started: one
-    /// skill, "Larkit picks", or the Fledging Flight. Nil plays the ladder.
+    /// skill, "Larkit picks", or the Fledging Flight. Nil is a plain session (tests).
     init(mode: ModeInfo, skillRequest: SessionViewModel.SkillRequest? = nil) {
         self.mode = mode
         let app = AppEnvironment.current
@@ -67,18 +67,6 @@ struct SessionView: View {
                         }
                     }
                 }
-            case .fledgingOffer(let level):
-                FledgingOfferView(
-                    level: level,
-                    accept: { viewModel.acceptFledging() },
-                    decline: { viewModel.declineFledging() }
-                )
-            case .fledgingResult(let passed, let newLevel):
-                FledgingCeremonyView(
-                    passed: passed,
-                    level: newLevel,
-                    flyOn: { Task { await viewModel.continueAfterFledging() } }
-                )
             case .complete(let stars, let lifetime):
                 SessionCompleteView(
                     mode: mode,
@@ -88,8 +76,6 @@ struct SessionView: View {
                     level: viewModel.level,
                     payout: viewModel.flightPayout,
                     summary: viewModel.flightSummary,
-                    nominationPending: viewModel.nominationPending,
-                    glideDown: viewModel.glideDown,
                     skillStanding: viewModel.skillStanding,
                     firstTryCount: viewModel.firstTryCount,
                     // A Fledging Flight is taken once: back to the topic sheet.
@@ -124,9 +110,6 @@ struct SessionView: View {
                 .padding()
             }
 
-            if viewModel.showLevelUp {
-                levelUpBanner
-            }
         }
         .task { await viewModel.start() }
         .onDisappear { leaveSession() }
@@ -236,7 +219,7 @@ struct SessionView: View {
                 .accessibilityIdentifier("session-skill")
             }
             if viewModel.isFledgingRun {
-                Text("Fledging Flight · \(EngagementStore.fledgingPass) of \(EngagementStore.fledgingQuestions) to pass")
+                Text("\(viewModel.flightPass) of \(viewModel.sessionSize) to pass")
                     .font(theme.bodyFont(size: 13, weight: .bold))
                     .foregroundStyle(Theme.ink)
                     .padding(.horizontal, 12)
@@ -312,16 +295,6 @@ struct SessionView: View {
             .buttonStyle(.plain)
             .accessibilityLabel(pane == .work ? "Close the work space" : "Open the work space")
 
-            // No level on a skill session — what is practiced is named below.
-            if viewModel.sessionLabel == nil {
-                Text("Lv \(viewModel.level)")
-                    .font(.subheadline.weight(.heavy))
-                    .fontDesign(.rounded)
-                    .padding(.horizontal, 10)
-                    .padding(.vertical, 6)
-                    .background(Capsule().fill(theme.modeColor(mode.id)))
-                    .foregroundStyle(Theme.ink)
-            }
         }
         .padding(.top, 8)
     }
@@ -485,15 +458,6 @@ struct SessionView: View {
         }
     }
 
-    private var levelUpBanner: some View {
-        Text("You've fledged — level up!")
-            .font(theme.displayFont(size: 24))
-            .padding(.horizontal, 28)
-            .padding(.vertical, 16)
-            .background(Capsule().fill(Theme.apricot))
-            .foregroundStyle(Theme.ink)
-            .transition(.scale.combined(with: .opacity))
-    }
 }
 
 /// Formats an engine answer value for the "The answer is …" reveal.

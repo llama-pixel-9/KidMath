@@ -36,19 +36,16 @@ import LarkMark from "./components/LarkMark";
 import { MODE_IDS, MODE_GROUPS, getModeConfig } from "./modes";
 import { loadProgressSync } from "./progressStore";
 import { loadEngagement, starBalance, currentStreak, starsToday } from "./engagement/engagementStore";
-import { getNomination } from "./engagement/fledging.js";
-import { fledgingEnabled, meadowEnabled } from "./gamificationFlags.js";
+import { meadowEnabled } from "./gamificationFlags.js";
 import EngagementBar from "./engagement/EngagementBar.jsx";
 import StickerBook from "./engagement/StickerBook.jsx";
 import GrownUpsPanel from "./engagement/GrownUpsPanel.jsx";
 import { usePremium } from "./PremiumContext";
 import { useAuth } from "./useAuth";
 import { isFreeMode } from "./premium";
-import { skillsPlayEnabled } from "./gamificationFlags.js";
 import { topicChip } from "./skills/flow.js";
 import { activeKidId, activeKidGrade, fetchKids } from "./kidProfiles";
 import { loadSessionsSync } from "./analytics/sessionLog.js";
-import { masterySummary, masteryLine } from "./analytics/masterySummary.js";
 import { gradeIndex, gradeFitFor } from "./gradeSeed.js";
 
 const ICON_MAP = { Plus, Minus, X, Divide, ArrowLeftRight, Hash, FastForward, Layers, PieChart, Percent, GitFork, BarChart3, CircleDot, Sigma, Ruler, Coins, Spline, Scale, Clock, ChartColumn, Triangle, Shapes };
@@ -162,15 +159,10 @@ function quickStartFor(grade, { canPlay = () => true, practiceLog = [] } = {}) {
   if (gradeIndex(grade) == null) return null;
   const inGrade = MODE_GROUPS.flatMap((g) => g.modeIds).filter((id) => gradeFitFor(id, grade) === "in" && canPlay(id));
   if (!inGrade.length) return null;
-  if (skillsPlayEnabled()) {
-    return inGrade
-      .map((id) => ({ id, standing: topicStanding(id, grade, practiceLog) }))
-      .filter((t) => t.standing)
-      .sort((a, b) => a.standing.mastered / a.standing.total - b.standing.mastered / b.standing.total)[0]?.id ?? null;
-  }
   return inGrade
-    .map((id) => ({ id, level: loadProgressSync(id)?.level || 1 }))
-    .sort((a, b) => a.level - b.level)[0].id;
+    .map((id) => ({ id, standing: topicStanding(id, grade, practiceLog) }))
+    .filter((t) => t.standing)
+    .sort((a, b) => a.standing.mastered / a.standing.total - b.standing.mastered / b.standing.total)[0]?.id ?? null;
 }
 
 function greetingLine(user, balance, kidName) {
@@ -227,7 +219,6 @@ export default function HomePage() {
   // Kid-facing mastery: which skills in a mode are solid, from the practice
   // log on this device (same math as the parent report).
   const practiceLog = useMemo(() => loadSessionsSync(), []);
-  const bySkill = skillsPlayEnabled();
   const quickStartMode = useMemo(
     () => quickStartFor(kid?.grade, { canPlay: (id) => isFreeMode(id) || isPremium || premiumLoading, practiceLog }),
     [kid?.grade, isPremium, premiumLoading, practiceLog]
@@ -248,12 +239,7 @@ export default function HomePage() {
                   const config = getModeConfig(id);
                   const tint = CARD_TINTS[COLOR_INDEX[id] % CARD_TINTS.length];
                   const locked = !isFreeMode(id) && !isPremium && !premiumLoading;
-                  const lv = loadProgressSync(id)?.level || 1;
-                  const standing = bySkill && !locked ? topicStanding(id, kid?.grade, practiceLog) : null;
-                  // §03 step 3: the nomination survives leaving the app as a
-                  // Sun pill on the mode's card (Ink text — cream on Sun is
-                  // forbidden).
-                  const nominated = fledgingEnabled() && !bySkill && !locked && Boolean(getNomination(engagement, id));
+                  const standing = !locked ? topicStanding(id, kid?.grade, practiceLog) : null;
                   return (
                     <button
                       key={id}
@@ -269,16 +255,11 @@ export default function HomePage() {
                       >
                         {locked ? <Feather name="lock" size={20} /> : <ModeGlyph config={config} />}
                       </div>
-                      {nominated && (
-                        <span className="absolute top-[18px] right-[18px] bg-sun text-ink text-[12px] font-display font-semibold rounded-full px-2.5 py-[3px] whitespace-nowrap">
-                          Ready to fledge
-                        </span>
-                      )}
                       <div className="flex-1" />
                       <h4 className="text-xl font-display font-semibold text-ink leading-[1.15]">
                         {config.label}
                       </h4>
-                      {/* Scope line + level badge share one baseline. Scope is
+                      {/* Scope line + standing chip share one baseline. Scope is
                           solid Ink — Ink 60% fails contrast on Sun Light. */}
                       <div className="flex items-center justify-between gap-2">
                         <span className="text-[13px] font-semibold text-ink leading-tight">
@@ -286,21 +267,10 @@ export default function HomePage() {
                         </span>
                         {!locked && (
                           <span className="text-[13px] font-display text-ink bg-cream rounded-full px-2.5 py-[3px] whitespace-nowrap flex-none">
-                            {bySkill
-                              ? standing?.started
-                                ? standing.text
-                                : "New"
-                              : lv > 1
-                                ? `Level ${lv}`
-                                : "New"}
+                            {standing?.started ? standing.text : "New"}
                           </span>
                         )}
                       </div>
-                      {!locked && !bySkill && masteryLine(masterySummary(practiceLog, id, config.subskills || [])) && (
-                        <span className="text-[12px] font-bold text-ink/70 leading-tight">
-                          {masteryLine(masterySummary(practiceLog, id, config.subskills || []))}
-                        </span>
-                      )}
                     </button>
                   );
                 })}
@@ -377,7 +347,7 @@ export default function HomePage() {
             >
               Pick a Game
             </button>
-            <button className={BTN_SECONDARY} onClick={() => navigate(quickStartMode ? `/play/${quickStartMode}${bySkill ? "?mix=1" : ""}` : "/play")}>
+            <button className={BTN_SECONDARY} onClick={() => navigate(quickStartMode ? `/play/${quickStartMode}?mix=1` : "/play")}>
               Quick Start
             </button>
             <button className={BTN_SECONDARY} onClick={() => navigate("/worksheets")}>

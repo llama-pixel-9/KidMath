@@ -6,7 +6,7 @@ import SwiftUI
 ///
 /// With the Flight Report flag on (§01/§02), the Apricot strip carries the
 /// four-part settlement and can grow downward into the itemised ledger
-/// ("How did I get 14?"), and the slot beneath holds the level bar with the
+/// ("How did I get 14?"), and the slot beneath holds the kid's standing with the
 /// Nest total. The card is never fixed-height.
 struct SessionCompleteView: View {
     @Environment(\.theme) private var theme
@@ -17,12 +17,8 @@ struct SessionCompleteView: View {
     var level: Int = 1
     var payout: EngineBridge.FlightPayout?
     var summary: EngagementStore.SessionEndResult?
-    /// §03 state 2: the Seafoam note replaces the level bar in the slot when
-    /// the lark has nominated; glide-down adds one kind line.
-    var nominationPending: Bool = false
-    var glideDown: Bool = false
-    /// Play by skill: where the kid now stands (skills/flow.js `standing`).
-    /// Replaces the level bar / nomination slot — a skill session has no level.
+    /// Where the kid now stands in the topic (skills/flow.js `standing`);
+    /// nil on a plain session (tests), which shows only the Nest total.
     var skillStanding: [String: Any]?
     /// First-try answers when there is no payout to read them from (a
     /// Fledging Flight pays no stars, so `starsEarned` is 0 there).
@@ -32,7 +28,6 @@ struct SessionCompleteView: View {
 
     /// Collapsed by default from the second week on (§02 state 3).
     @State private var ledgerOpen = false
-    @State private var appeared = false
 
     private static let puns = [
         "Talon-ted!", "Nice flying!", "Owl be impressed!", "Toucan-t stop you!",
@@ -224,61 +219,17 @@ struct SessionCompleteView: View {
                     .frame(minHeight: 32)
             }
 
-            // The slot — three states, never fixed-height: level read-out,
-            // the Seafoam nomination note (84px vs the bar's 39px), or the
-            // expanded ledger above. "N stars to Level X" is gone.
-            if skillStanding != nil {
-                EmptyView()
-            } else if nominationPending {
-                HStack(spacing: 12) {
-                    ZStack {
-                        Circle().fill(Theme.cream)
-                        LarkMarkView().frame(width: 26)
-                    }
-                    .frame(width: 44, height: 44)
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text("Ready for higher skies")
-                            .font(theme.bodyFont(size: 15, weight: .heavy))
-                        Text("Next time, six questions to reach Level \(min(level + 1, GradeSeed.maxLevel(mode: mode.id))).")
-                            .font(theme.bodyFont(size: 14, weight: .bold))
-                            .foregroundStyle(Theme.ink.opacity(0.8))
-                    }
-                    Spacer(minLength: 0)
+            // The slot: the standing is rendered above; a plain session keeps
+            // the Nest total. Never fixed-height.
+            if skillStanding == nil {
+                HStack {
+                    Spacer()
+                    Text("\(summary?.balance ?? 0) in the Nest")
                 }
+                .font(theme.bodyFont(size: 14, weight: .bold))
                 .foregroundStyle(Theme.ink)
-                .padding(.horizontal, 16)
-                .padding(.vertical, 12)
-                .frame(maxWidth: 320, minHeight: 84)
-                .background(RoundedRectangle(cornerRadius: 16).fill(Theme.seafoam))
-                .padding(.top, 4)
-            } else {
-                VStack(alignment: .leading, spacing: 6) {
-                    GeometryReader { proxy in
-                        ZStack(alignment: .leading) {
-                            Capsule().fill(Theme.ink.opacity(0.1))
-                            Capsule()
-                                .fill(Theme.teal)
-                                .frame(width: proxy.size.width * (appeared ? Double(level) / 10 : 0))
-                                .animation(.easeOut(duration: 0.6), value: appeared)
-                        }
-                    }
-                    .frame(height: 10)
-                    .onAppear { appeared = true }
-                    HStack {
-                        Text("Level \(level) · \(RankBand.name(forLevel: level))")
-                        Spacer()
-                        Text("\(summary?.balance ?? 0) in the Nest")
-                    }
-                    .font(theme.bodyFont(size: 14, weight: .bold))
-                    .foregroundStyle(Theme.ink)
-                }
                 .frame(maxWidth: 320)
                 .padding(.top, 4)
-            }
-            if glideDown {
-                Text("Smoother skies for a bit.")
-                    .font(theme.bodyFont(size: 13, weight: .bold))
-                    .foregroundStyle(Theme.deepTeal)
             }
         }
     }

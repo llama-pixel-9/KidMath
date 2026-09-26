@@ -54,17 +54,15 @@ struct SettingsView: View {
             }
             // Play by skill: open a grade early, pin a skill. A kid must not
             // be able to open Grade 5 for themselves — behind the gate.
-            if GamFlags.skillsPlay {
-                Button {
-                    showSkillsGate = true
-                } label: {
-                    Label("Skills to practice", systemImage: "checklist")
-                }
-                .sheet(isPresented: $showSkillsGate) {
-                    ParentalGateView { showTopicControls = true }
-                }
-                .navigationDestination(isPresented: $showTopicControls) { TopicControlsView() }
+            Button {
+                showSkillsGate = true
+            } label: {
+                Label("Skills to practice", systemImage: "checklist")
             }
+            .sheet(isPresented: $showSkillsGate) {
+                ParentalGateView { showTopicControls = true }
+            }
+            .navigationDestination(isPresented: $showTopicControls) { TopicControlsView() }
         }
     }
 

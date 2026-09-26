@@ -31,16 +31,6 @@ final class GradeAwareHomeTests: XCTestCase {
         XCTAssertEqual(ranks, ranks.sorted())
     }
 
-    func testQuickStartPicksTheInGradeModeWithTheLowestLevel() {
-        let inGrade = ModeCatalog.allModes.filter { $0.playable && GradeSeed.gradeFit(mode: $0.id, grade: "2nd") == "in" }.map(\.id)
-        XCTAssertGreaterThan(inGrade.count, 1)
-        var levels = Dictionary(uniqueKeysWithValues: inGrade.map { ($0, 5) })
-        levels[inGrade[1]] = 2
-        XCTAssertEqual(GradeSeed.quickStart(grade: "2nd", levels: levels), inGrade[1])
-        XCTAssertNil(GradeSeed.quickStart(grade: nil, levels: levels), "no grade, no quick start")
-        XCTAssertNotEqual(GradeSeed.quickStart(grade: "K", levels: [:]), "volumeCoordinates", "never a SOON mode")
-    }
-
     func testGradeWorkLabelStretchesTheSpan() {
         XCTAssertEqual(GradeSeed.gradeWork(mode: "counting", level: 1), "Kindergarten")
         XCTAssertTrue(GradeSeed.gradeWork(mode: "fractionOps", level: 12).hasPrefix("Grade "))

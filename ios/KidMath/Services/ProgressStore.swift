@@ -31,6 +31,9 @@ final class ProgressStore {
 
     private let supabase: SupabaseService
     private let defaults: UserDefaults
+    /// The shared engine, for the sign-in merge of skill state (set by
+    /// AppModel once the engine is up; nil leaves skill fields unmerged).
+    var engine: EngineBridge?
 
     init(supabase: SupabaseService = .shared, defaults: UserDefaults = .standard) {
         self.supabase = supabase
@@ -92,7 +95,7 @@ final class ProgressStore {
             let cloud = await loadCloud(userId: userId, kidId: kidId, mode: mode)
             let localMistakes = (local["mistakeBank"] as? [[String: Any]] ?? [])
             let cloudMistakes = (cloud["mistakeBank"] as? [[String: Any]] ?? [])
-            let merged: [String: Any] = [
+            var merged: [String: Any] = [
                 "level": max(
                     Self.clampLevel(Self.int(local["level"], default: 1), mode: mode),
                     Self.int(cloud["level"], default: Self.startingLevel)
@@ -101,6 +104,11 @@ final class ProgressStore {
                 "total_sessions": Self.int(cloud["totalSessions"]) + Self.int(local["totalSessions"]),
                 "lifetime_stars": Self.int(cloud["lifetimeStars"]) + Self.int(local["lifetimeStars"]),
             ]
+            // Nothing earned is lost: the shared mergeTopicState (skills/topicState.js).
+            if let engine {
+                let topic = engine.mergeTopicState(cloud: Self.skillFields(cloud), local: Self.skillFields(local))
+                merged.merge(Self.skillColumns(Self.skillPatch(topic))) { _, new in new }
+            }
             let mergedStats = Self.mergeBankItemStats(
                 cloud["bankItemStats"] as? [String: [String: Any]] ?? [:],
                 incoming: local["bankItemStats"] as? [String: [String: Any]] ?? [:]
@@ -159,7 +167,7 @@ final class ProgressStore {
             "lifetimeStars": Self.int(entry["lifetimeStars"]),
             "bankItemStats": entry["bankItemStats"] as? [String: Any] ?? [:],
             "recentBankItemIds": entry["recentBankItemIds"] as? [String] ?? [],
-        ]
+        ].merging(Self.skillFields(entry)) { _, new in new }
     }
 
     func saveLocal(mode: String, data: [String: Any]) {
@@ -178,6 +186,34 @@ final class ProgressStore {
             ),
             "recentBankItemIds": Array(recent),
         ]
+        .merging(Self.skillFields(previous)) { _, new in new }
+        .merging(Self.skillPatch(data)) { _, new in new }
+        writeLocalStore(store)
+    }
+
+    // MARK: - Play by skill (the topic's grade pointer + mastery ride on the progress row)
+
+    /// Change a topic's skill state WITHOUT counting a session: a grown-up
+    /// opening a grade or pinning a skill, the lazy grade migration, a
+    /// grade-up. Never touches level, stars or the session count (mirror of
+    /// the web's saveTopicState).
+    func saveTopicState(mode: String, patch: [String: Any]) async {
+        let fields = Self.skillPatch(patch)
+        guard !fields.isEmpty else { return }
+        if let userId = supabase.userId {
+            let kidId = activeKidId
+            // A row must exist to carry the fields; a never-played topic gets
+            // one at the level it would have opened at — which is not a change.
+            let existing = try? await supabase.fetchProgressRow(userId: userId, kidId: kidId, mode: mode)
+            var row = Self.skillColumns(fields)
+            row["level"] = existing.map { Self.int($0["level"], default: Self.startingLevel) } ?? Self.startingLevel(mode: mode, defaults: defaults)
+            try? await supabase.upsertProgress(userId: userId, kidId: kidId, mode: mode, row: row)
+            return
+        }
+        var store = readLocalStore()
+        var entry = store[mode] ?? Self.blankProgress(mode: mode)
+        entry.merge(fields) { _, new in new }
+        store[mode] = entry
         writeLocalStore(store)
     }
 
@@ -205,18 +241,20 @@ final class ProgressStore {
             "bankItemStats": stats,
             // Persisted since PR B so the no-repeat window survives a device switch.
             "recentBankItemIds": row["recent_bank_item_ids"] as? [String] ?? [],
-        ]
+        ].merging(Self.skillFields(fromRow: row)) { _, new in new }
     }
 
     private func saveCloud(userId: UUID, kidId: UUID?, mode: String, data: [String: Any]) async {
         let existing = await loadCloud(userId: userId, kidId: kidId, mode: mode)
-        let row: [String: Any] = [
+        var row: [String: Any] = [
             "level": Self.clampLevel(Self.int(data["level"], default: Self.startingLevel), mode: mode),
             "mistake_bank": Array((data["mistakeBank"] as? [[String: Any]] ?? []).prefix(Self.maxPersistedMistakes)),
             "total_sessions": Self.int(existing["totalSessions"]) + 1,
             "lifetime_stars": Self.int(existing["lifetimeStars"]) + Self.starsEarned(from: data),
             "recent_bank_item_ids": Array((data["recentBankItemIds"] as? [String] ?? []).suffix(Self.maxPersistedRecentIds)),
         ]
+        // Only a skill session carries these; a ladder session leaves them alone.
+        row.merge(Self.skillColumns(Self.skillPatch(data))) { _, new in new }
         try? await supabase.upsertProgress(userId: userId, kidId: kidId, mode: mode, row: row)
         try? await supabase.upsertBankItemStats(
             userId: userId,
@@ -227,6 +265,45 @@ final class ProgressStore {
     }
 
     // MARK: - Pure helpers (mirrors of the web functions, unit-tested)
+
+    nonisolated static let skillKeys = ["grade", "gradeUnlocked", "pinnedSkillId", "skillMastery"]
+    nonisolated private static let skillColumnNames = [
+        "grade": "grade", "gradeUnlocked": "grade_unlocked", "pinnedSkillId": "pinned_skill_id", "skillMastery": "skill_mastery",
+    ]
+
+    /// The skill fields a stored entry carries — absent ones are simply
+    /// absent (the shared resolveTopic fills the gaps, never the store).
+    nonisolated static func skillFields(_ entry: [String: Any]) -> [String: Any] {
+        var out: [String: Any] = [:]
+        for key in skillKeys {
+            if let value = entry[key], !(value is NSNull) { out[key] = value }
+        }
+        return out
+    }
+
+    nonisolated static func skillFields(fromRow row: [String: Any]) -> [String: Any] {
+        var entry: [String: Any] = [:]
+        for (key, column) in skillColumnNames { entry[key] = row[column] }
+        return skillFields(entry)
+    }
+
+    /// Skill fields present in a save payload — absent keys leave the stored
+    /// value alone; an explicit NSNull clears (un-pinning a skill).
+    nonisolated static func skillPatch(_ data: [String: Any]) -> [String: Any] {
+        var out: [String: Any] = [:]
+        for key in skillKeys {
+            if let value = data[key] { out[key] = value }
+        }
+        return out
+    }
+
+    nonisolated static func skillColumns(_ patch: [String: Any]) -> [String: Any] {
+        var out: [String: Any] = [:]
+        for (key, value) in patch {
+            if let column = skillColumnNames[key] { out[column] = value }
+        }
+        return out
+    }
 
     /// Numbers arrive as JSC doubles, JSON NSNumbers, or native Int/Double
     /// literals; only NSNumber bridges all three, so never `as? Int` directly.

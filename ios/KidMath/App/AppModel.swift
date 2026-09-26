@@ -17,6 +17,9 @@ final class AppModel: ObservableObject {
 
     /// modeId -> saved level, for the badges on the home grid.
     @Published var modeLevels: [String: Int] = [:]
+    /// Each topic's saved progress — play by skill reads the grade pointer
+    /// and mastery off it for the Home chip and Quick Start.
+    @Published var modeProgress: [String: [String: Any]] = [:]
 
     /// Active theme, persisted like the web's theme choice.
     @Published var themeId: String = UserDefaults.standard.string(forKey: "kidmath-theme") ?? "default" {
@@ -43,6 +46,7 @@ final class AppModel: ObservableObject {
         do {
             let engine = try EngineBridge()
             self.engine = engine
+            progressStore.engine = engine
             self.bankService = BankService(supabase: supabase, engine: engine)
             self.practiceLog = PracticeLog(engine: engine, supabase: supabase)
             self.engineError = nil
@@ -56,10 +60,13 @@ final class AppModel: ObservableObject {
 
     func refreshModeLevels() async {
         var levels: [String: Int] = [:]
+        var saved: [String: [String: Any]] = [:]
         for mode in ModeCatalog.allModes where mode.playable {
             let progress = await progressStore.load(mode: mode.id)
             levels[mode.id] = ProgressStore.int(progress["level"], default: 1)
+            saved[mode.id] = progress
         }
         modeLevels = levels
+        modeProgress = saved
     }
 }

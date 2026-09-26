@@ -2,27 +2,12 @@ import { motion } from "framer-motion";
 
 const MARK = { mastered: "★", practicing: "◐", new: "○" };
 
-// Moving up a grade is news, stated kindly either way: earned in the challenge
-// (or handed over when there was nothing left to earn), not yet, or next time.
+// Moving up a grade is news, stated kindly either way: earned in the Fledging
+// Flight (or handed over when there was nothing left to earn), not yet, or
+// next time. The words are skills/flow.js's, shared with iOS.
 function GradeUpNote({ standing }) {
-  const { gradeUp, gradeLabel, topicLabel } = standing;
-  let headline;
-  let detail;
-  if (gradeUp.passed) {
-    headline = `You finished ${gradeLabel} ${topicLabel}!`;
-    detail = `${gradeUp.nextGradeLabel} is open.`;
-  } else if (gradeUp.challenge) {
-    headline = `${gradeUp.score} of 6 — not yet.`;
-    detail = gradeUp.reearn ? "One more good practice first, then your Fledging Flight comes back." : "A little more practice, then try again.";
-  } else if (gradeUp.ready) {
-    headline = `Every ${gradeLabel} skill mastered!`;
-    detail = `Next time: a Fledging Flight — six questions to open ${gradeUp.nextGradeLabel}.`;
-  } else if (gradeUp.complete) {
-    headline = `${topicLabel} complete!`;
-    detail = "Every skill in every grade. Time for a new topic.";
-  } else {
-    return null;
-  }
+  if (!standing.gradeUpNote) return null;
+  const { headline, detail } = standing.gradeUpNote;
   return (
     <motion.div className="mb-2 rounded-2xl bg-sun-light px-4 py-3 text-ink" initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }}>
       <p className="text-[15px] font-extrabold">{headline}</p>

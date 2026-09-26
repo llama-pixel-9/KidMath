@@ -142,7 +142,8 @@ final class SupabaseService: ObservableObject {
     func fetchProgressRow(userId: UUID, kidId: UUID?, mode: String) async throws -> [String: Any]? {
         var query = client
             .from("progress")
-            .select("level, mistake_bank, total_sessions, lifetime_stars, recent_bank_item_ids")
+            // The skill columns arrived with migration 20260920130000 (applied 2026-09-20).
+            .select("level, mistake_bank, total_sessions, lifetime_stars, recent_bank_item_ids, grade, grade_unlocked, pinned_skill_id, skill_mastery")
             .eq("user_id", value: userId)
             .eq("mode", value: mode)
         query = kidId.map { query.eq("kid_id", value: $0) } ?? query.is("kid_id", value: nil)

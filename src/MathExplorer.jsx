@@ -64,10 +64,8 @@ import { getModeConfig } from "./modes";
 import { ensureModeLoaded } from "./itemBank.js";
 import { loadTopic } from "./itemBank/loadTopic.js";
 import { loadSessionsSync } from "./analytics/sessionLog.js";
-import { nextTopicGrade, playSkillById } from "./skills/play.js";
-import { applySession } from "./skills/mastery.js";
-import { GRADE_UP, advanceGrade, afterPractice, applyChallengeResult, challengeFor, gradeUpStatus, gradeView, larkitPicks, resolveTopic } from "./skills/topicState.js";
-import { GRADE_LABELS, TOPIC_LABELS } from "./skills/catalog.js";
+import { GRADE_UP } from "./skills/topicState.js";
+import { sessionLabel as skillSessionLabel, sessionOptionsFor, settleSkillSession } from "./skills/flow.js";
 import SkillStanding from "./play/SkillStanding.jsx";
 import { FIGURE_COLORS, useAnswerKeys, KeyHint } from "./components/kit";
 import { saveProgress, loadProgress, loadProgressSync, mergeLocalToCloud } from "./progressStore";
@@ -274,23 +272,14 @@ function skillOptionsFor(mode) {
   } catch {
     return null;
   }
-  const topic = resolveTopic(mode, loadProgressSync(mode), { profileGrade: activeKidGrade(), sessions: loadSessionsSync() });
-  if (!topic) return null;
-  const pinned = playSkillById(params.get("skill"));
-  if (pinned && pinned.mode === mode) return { skillId: pinned.id, grade: pinned.grade, masterySnapshot: topic.mastery };
-  // The grade-up challenge: only when it has really been earned — every skill
-  // of the focus grade mastered, the next grade still locked — never by URL alone.
-  if (params.get("challenge") === "1") {
-    const status = gradeUpStatus(topic);
-    return status?.kind === "challenge" && !status.needsPractice
-      ? { ...challengeFor(topic), fledging: true, masterySnapshot: topic.mastery }
-      : null;
-  }
-  if (params.get("mix") !== "1") return null;
-  // "Larkit picks": the skill a parent pinned while it is unmastered, else the
-  // chosen (open) grade's skills with what is in motion first.
-  const grade = topic.open.includes(params.get("grade")) ? params.get("grade") : topic.grade;
-  return { ...larkitPicks({ ...topic, grade }), masterySnapshot: topic.mastery };
+  // Never by URL alone: a Fledging Flight starts only when it is earned, and a
+  // grade only when it is open (skills/flow.js decides, as it does on iOS).
+  return sessionOptionsFor(
+    mode,
+    loadProgressSync(mode),
+    { profileGrade: activeKidGrade(), sessions: loadSessionsSync() },
+    { skill: params.get("skill"), challenge: params.get("challenge") === "1", mix: params.get("mix") === "1", grade: params.get("grade") }
+  );
 }
 
 // `/play/<mode>?item=<itemId>` pins one bank row: every question in the
@@ -835,13 +824,7 @@ export default function MathExplorer({ initialMode }) {
   // Skills that reached mastery in the session just finished (end card).
   const [skillStanding, setSkillStanding] = useState(null);
   // The sub-header on a skill session: the pinned skill, or the mix's grade.
-  const sessionLabel = !session.skillIds
-    ? null
-    : session.challenge
-      ? `Fledging Flight to ${GRADE_LABELS[nextTopicGrade(mode, session.grade)] || "the next grade"}`
-      : session.pinned
-        ? playSkillById(session.skillIds[0])?.title
-        : `Mixed · ${GRADE_LABELS[session.grade]}`;
+  const sessionLabel = skillSessionLabel(session, mode);
   const [revealAnswer, setRevealAnswer] = useState(null);
   const [lifetimeStars, setLifetimeStars] = useState(0);
   const [engagement, setEngagement] = useState(null);
@@ -1201,40 +1184,15 @@ export default function MathExplorer({ initialMode }) {
       // reducer that can rebuild it from the practice log.
       let skillState = null;
       if (sess.skillIds) {
-        const before = resolveTopic(mode, await loadProgress(mode), { profileGrade: activeKidGrade(), sessions: loadSessionsSync() });
-        // (A challenge record is kind "fledging", which the reducer ignores.)
-        const skillMastery = afterPractice(applySession(before.mastery, closedRecord));
-        skillState = { ...before.toSave, skillMastery };
-        const after = { ...before, mastery: skillMastery };
-        let gradeUp = null;
-        if (sess.challenge) {
-          const result = applyChallengeResult(before, sess.firstTryCorrect ?? 0);
-          skillState = { ...skillState, ...result.patch };
-          gradeUp = { challenge: true, passed: result.passed, reearn: Boolean(result.reearn), nextGrade: result.nextGrade, score: sess.firstTryCorrect ?? 0 };
-        } else {
-          const status = gradeUpStatus(after);
-          if (status?.kind === "advance" || status?.kind === "auto") {
-            // Nothing left to earn (the next grade is open, or this grade was a
-            // single skill): the focus moves up now.
-            skillState = { ...skillState, ...advanceGrade(after, status.nextGrade) };
-            gradeUp = { passed: true, nextGrade: status.nextGrade };
-          } else if (status) {
-            gradeUp = { ready: status.kind === "challenge", complete: status.kind === "complete", nextGrade: status.nextGrade };
-          }
-        }
-        const view = gradeView({ ...before, mastery: skillMastery }, sess.grade);
-        setSkillStanding({
-          gradeLabel: GRADE_LABELS[sess.grade],
-          topicLabel: TOPIC_LABELS[mode],
-          skills: view.skills,
-          mastered: view.mastered,
-          total: view.total,
-          newlyMastered: Object.keys(skillMastery)
-            .filter((id) => skillMastery[id]?.state === "mastered" && before.mastery[id]?.state !== "mastered")
-            .map((id) => playSkillById(id)?.title)
-            .filter(Boolean),
-          gradeUp: gradeUp && { ...gradeUp, nextGradeLabel: gradeUp.nextGrade ? GRADE_LABELS[gradeUp.nextGrade] : null },
-        });
+        const settled = settleSkillSession(
+          mode,
+          await loadProgress(mode),
+          { profileGrade: activeKidGrade(), sessions: loadSessionsSync() },
+          sess,
+          closedRecord
+        );
+        skillState = settled?.patch ?? null;
+        setSkillStanding(settled?.standing ?? null);
       }
       lt = await persistSession(
         mode,

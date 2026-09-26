@@ -22,7 +22,9 @@ struct SessionView: View {
     @State private var pane: Pane? = UserDefaults.standard.string(forKey: "kidmath-workpane-open") == "1" ? .work : nil
     private static let sidePaneBreakpoint: CGFloat = 800
 
-    init(mode: ModeInfo) {
+    /// `skillRequest` (play by skill) is what the topic sheet started: one
+    /// skill, "Larkit picks", or the Fledging Flight. Nil plays the ladder.
+    init(mode: ModeInfo, skillRequest: SessionViewModel.SkillRequest? = nil) {
         self.mode = mode
         let app = AppEnvironment.current
         _viewModel = StateObject(wrappedValue: SessionViewModel(
@@ -30,6 +32,7 @@ struct SessionView: View {
             engine: app.engine ?? (try! EngineBridge()),
             progressStore: app.progressStore,
             bankService: app.bankService,
+            skillRequest: skillRequest,
             practiceLog: app.practiceLog
         ))
     }
@@ -87,7 +90,10 @@ struct SessionView: View {
                     summary: viewModel.flightSummary,
                     nominationPending: viewModel.nominationPending,
                     glideDown: viewModel.glideDown,
-                    playAgain: { Task { await viewModel.start() } },
+                    skillStanding: viewModel.skillStanding,
+                    firstTryCount: viewModel.firstTryCount,
+                    // A Fledging Flight is taken once: back to the topic sheet.
+                    playAgain: { if viewModel.skillRequest == .flight { finish() } else { Task { await viewModel.start() } } },
                     goHome: { finish() }
                 )
             case .failed(let message):
@@ -213,6 +219,22 @@ struct SessionView: View {
         VStack(spacing: 0) {
             header
                 .frame(maxWidth: 520)
+            // Play by skill: topic and skill read as one title, the skill
+            // under its topic (the web's session header).
+            if let label = viewModel.sessionLabel {
+                VStack(spacing: 1) {
+                    Text(mode.label)
+                        .font(theme.displayFont(size: 17))
+                        .foregroundStyle(theme.textPrimary)
+                    Text(label)
+                        .font(theme.bodyFont(size: 13, weight: .bold))
+                        .foregroundStyle(theme.textSecondary)
+                        .multilineTextAlignment(.center)
+                }
+                .padding(.top, 6)
+                .accessibilityElement(children: .combine)
+                .accessibilityIdentifier("session-skill")
+            }
             if viewModel.isFledgingRun {
                 Text("Fledging Flight · \(EngagementStore.fledgingPass) of \(EngagementStore.fledgingQuestions) to pass")
                     .font(theme.bodyFont(size: 13, weight: .bold))
@@ -290,13 +312,16 @@ struct SessionView: View {
             .buttonStyle(.plain)
             .accessibilityLabel(pane == .work ? "Close the work space" : "Open the work space")
 
-            Text("Lv \(viewModel.level)")
-                .font(.subheadline.weight(.heavy))
-                .fontDesign(.rounded)
-                .padding(.horizontal, 10)
-                .padding(.vertical, 6)
-                .background(Capsule().fill(theme.modeColor(mode.id)))
-                .foregroundStyle(Theme.ink)
+            // No level on a skill session — what is practiced is named below.
+            if viewModel.sessionLabel == nil {
+                Text("Lv \(viewModel.level)")
+                    .font(.subheadline.weight(.heavy))
+                    .fontDesign(.rounded)
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 6)
+                    .background(Capsule().fill(theme.modeColor(mode.id)))
+                    .foregroundStyle(Theme.ink)
+            }
         }
         .padding(.top, 8)
     }

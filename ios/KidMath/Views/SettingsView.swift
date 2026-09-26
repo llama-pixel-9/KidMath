@@ -8,6 +8,8 @@ struct SettingsView: View {
     @Environment(\.theme) private var theme
     @Environment(\.dismiss) private var dismiss
     @State private var authMessage = ""
+    @State private var showSkillsGate = false
+    @State private var showTopicControls = false
     /// Kids category: account actions (which open sign-in flows) sit behind
     /// the parental gate, like purchases.
     @State private var accountUnlocked = false
@@ -50,6 +52,19 @@ struct SettingsView: View {
             } label: {
                 Label("Progress report", systemImage: "chart.bar.doc.horizontal")
             }
+            // Play by skill: open a grade early, pin a skill. A kid must not
+            // be able to open Grade 5 for themselves — behind the gate.
+            if GamFlags.skillsPlay {
+                Button {
+                    showSkillsGate = true
+                } label: {
+                    Label("Skills to practice", systemImage: "checklist")
+                }
+                .sheet(isPresented: $showSkillsGate) {
+                    ParentalGateView { showTopicControls = true }
+                }
+                .navigationDestination(isPresented: $showTopicControls) { TopicControlsView() }
+            }
         }
     }
 
@@ -86,7 +101,7 @@ struct SettingsView: View {
             Toggle(isOn: $app.calmMode) {
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Calm mode")
-                    Text("No confetti or shaking — stars and levels stay.")
+                    Text("No confetti or shaking — stars and skills stay.")
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                 }

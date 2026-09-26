@@ -21,8 +21,28 @@ final class SessionViewModel: ObservableObject {
         case failed(String)
     }
 
+    /// What a play-by-skill session practices (GamFlags.skillsPlay): one
+    /// skill, "Larkit picks" across a grade, or the earned Fledging Flight
+    /// that opens the next grade. Nil = the level ladder.
+    enum SkillRequest: Equatable {
+        case skill(String)
+        case mix(grade: String?)
+        case flight
+
+        var payload: [String: Any] {
+            switch self {
+            case .skill(let id): return ["skill": id]
+            case .mix(let grade): return grade.map { ["mix": true, "grade": $0] } ?? ["mix": true]
+            case .flight: return ["challenge": true]
+            }
+        }
+    }
+
     let modeId: String
-    let sessionSize: Int
+    let skillRequest: SkillRequest?
+    /// Questions in the current run (a Fledging Flight is six).
+    @Published private(set) var sessionSize: Int
+    private let baseSessionSize: Int
     /// Feedback hold times; tests shrink these to keep suites fast.
     let correctHold: Duration
     let wrongHold: Duration
@@ -49,6 +69,16 @@ final class SessionViewModel: ObservableObject {
     @Published private(set) var nominationPending = false
     @Published private(set) var glideDown = false
     @Published private(set) var isFledgingRun = false
+    /// Play by skill: what the session is called under the topic title
+    /// ("Subtract across zeros", "Mixed · Grade 3", "Fledging Flight to Grade
+    /// 4") and, at the end, where the kid now stands (skills/flow.js).
+    @Published private(set) var sessionLabel: String?
+    @Published private(set) var skillStanding: [String: Any]?
+    /// First-try answers of the flight just finished (the end card's ring).
+    @Published private(set) var firstTryCount: Int?
+    /// True for a skill session: no ladder — the saved level never moves.
+    private(set) var isSkillSession = false
+    private var savedLevel = 1
 
     private let engine: EngineBridge
     /// The practice log (parent report). One record per flight, opened with
@@ -105,6 +135,7 @@ final class SessionViewModel: ObservableObject {
         progressStore: ProgressStore,
         bankService: BankService?,
         sessionSize: Int = 10,
+        skillRequest: SkillRequest? = nil,
         correctHold: Duration = .milliseconds(1200),
         wrongHold: Duration = .milliseconds(2000),
         engagementStore: EngagementStore = EngagementStore(),
@@ -116,6 +147,8 @@ final class SessionViewModel: ObservableObject {
         self.progressStore = progressStore
         self.bankService = bankService
         self.sessionSize = sessionSize
+        self.baseSessionSize = sessionSize
+        self.skillRequest = skillRequest
         self.correctHold = correctHold
         self.wrongHold = wrongHold
         self.engagementStore = engagementStore
@@ -126,6 +159,16 @@ final class SessionViewModel: ObservableObject {
     func start(offerFledging: Bool = true) async {
         await bankService?.ensureModeLoaded(modeId)
         let savedProgress = await progressStore.load(mode: modeId)
+        savedLevel = ProgressStore.int(savedProgress["level"], default: 1)
+        record = nil // a finished flight's record is closed; "play again" opens a new one
+        skillStanding = nil
+        sessionLabel = nil
+        firstTryCount = nil
+        isSkillSession = false
+        sessionSize = baseSessionSize
+        if GamFlags.skillsPlay, let skillRequest, await startSkillSession(skillRequest, savedProgress: savedProgress) {
+            return
+        }
         do {
             let session = try engine.createSession(
                 mode: modeId,
@@ -151,6 +194,44 @@ final class SessionViewModel: ObservableObject {
             loadNextQuestion()
         } catch {
             phase = .failed("\(error)")
+        }
+    }
+
+    /// The kid's profile grade and this device's practice log — what the
+    /// shared flow needs to fill in whatever the saved row is missing.
+    private var skillContext: [String: Any] {
+        [
+            "profileGrade": UserDefaults.standard.string(forKey: "kidmath-active-kid-grade") ?? NSNull(),
+            "sessions": practiceLog?.readLocal(kidId: practiceLog?.activeKidId) ?? [],
+        ]
+    }
+
+    /// A skill session, when the request is one this kid can make (the shared
+    /// skillSessionOptions decides — a Fledging Flight must be earned). False
+    /// falls through to the ladder, exactly as the web does.
+    private func startSkillSession(_ request: SkillRequest, savedProgress: [String: Any]) async -> Bool {
+        guard var options = engine.skillSessionOptions(
+            mode: modeId, progress: savedProgress, context: skillContext, request: request.payload
+        ) else { return false }
+        let flight = options["challenge"] as? Bool ?? false
+        options["savedProgress"] = savedProgress
+        options["ladderV2"] = GamFlags.ladderV2
+        do {
+            let size = flight ? engine.fledgingFlightQuestions() : baseSessionSize
+            let session = try engine.createSession(mode: modeId, sessionSize: size, options: options)
+            self.session = session
+            self.sessionSize = size
+            self.isSkillSession = true
+            self.isFledgingRun = flight
+            self.nominationPending = false
+            self.glideDown = false
+            self.level = ProgressStore.int(session.snapshot["level"], default: 1)
+            self.sessionLabel = engine.skillSessionLabel(session, mode: modeId)
+            loadNextQuestion()
+            return true
+        } catch {
+            phase = .failed("\(error)")
+            return true
         }
     }
 
@@ -225,7 +306,14 @@ final class SessionViewModel: ObservableObject {
     private func loadNextQuestion() {
         guard let session else { return }
         if record == nil {
-            record = practiceLog?.open(mode: modeId, level: level, kind: isFledgingRun ? "fledging" : "normal")
+            let snapshot = session.snapshot
+            let pinned = snapshot["pinned"] as? Bool ?? false
+            var skill: [String: Any]?
+            if isSkillSession {
+                let pinnedId: Any = pinned ? ((snapshot["skillIds"] as? [String])?.first as Any? ?? NSNull()) : NSNull()
+                skill = ["sessionKind": pinned ? "skill" : "mix", "skillId": pinnedId, "grade": snapshot["grade"] ?? NSNull()]
+            }
+            record = practiceLog?.open(mode: modeId, level: level, kind: isFledgingRun ? "fledging" : "normal", skill: skill)
         }
         scaffold = nil
         scaffoldHint = ""
@@ -314,7 +402,7 @@ final class SessionViewModel: ObservableObject {
             }
 
             if !outcome.correct { revealAnswer = question["answer"] }
-            if outcome.levelChanged, outcome.newLevel > level {
+            if outcome.levelChanged, outcome.newLevel > level, !isSkillSession {
                 showLevelUp = true
             }
             // Same sound priority as the web's submitAnswer.
@@ -356,6 +444,11 @@ final class SessionViewModel: ObservableObject {
         let snapshot = session.snapshot
         let firstTryCorrect = ProgressStore.int(snapshot["firstTryCorrect"])
         let questionsAnswered = ProgressStore.int(snapshot["questionsAnswered"])
+
+        if isSkillSession {
+            await finishSkillSession(snapshot: snapshot, firstTryCorrect: firstTryCorrect, questionsAnswered: questionsAnswered)
+            return
+        }
 
         // §03: a Fledging Flight settles its own way — no stars, no report.
         if isFledgingRun {
@@ -435,13 +528,68 @@ final class SessionViewModel: ObservableObject {
         )
     }
 
+    /// A skill session's end: mastery is settled from the finished record by
+    /// the shared reducer, the saved LEVEL never moves (its `level` was only
+    /// the skill's band), and a Fledging Flight pays no stars.
+    private func finishSkillSession(snapshot: [String: Any], firstTryCorrect: Int, questionsAnswered: Int) async {
+        let flight = isFledgingRun
+        isFledgingRun = false
+        let payout = GamFlags.flightReport && !flight ? (try? engine.summarizeFlight(session!)) : nil
+        let starsEarned = flight ? 0 : payout?.total ?? firstTryCorrect
+
+        // Practice log first and independent of the progress save.
+        let closed = await closeRecord(session: snapshot, starsEarned: starsEarned, levelEnd: savedLevel)
+
+        let before = await progressStore.load(mode: modeId)
+        let settled = closed.flatMap {
+            engine.settleSkillSession(mode: modeId, progress: before, context: skillContext, session: snapshot, record: $0)
+        }
+        var data: [String: Any] = [
+            "level": savedLevel,
+            "mistakeBank": snapshot["mistakeBank"] ?? [[String: Any]](),
+            "firstTryCorrect": firstTryCorrect,
+            "starsEarned": starsEarned,
+            "bankItemStats": snapshot["bankItemStats"] ?? [String: Any](),
+            "recentBankItemIds": snapshot["recentBankItemIds"] ?? [String](),
+        ]
+        if let patch = settled?["patch"] as? [String: Any] {
+            data.merge(ProgressStore.skillPatch(patch)) { _, new in new }
+        }
+        await progressStore.save(mode: modeId, data: data)
+        skillStanding = settled?["standing"] as? [String: Any]
+        firstTryCount = firstTryCorrect
+        level = savedLevel
+
+        if let payout {
+            flightPayout = payout
+            let facts = EngagementStore.SessionFacts(
+                perfect: questionsAnswered > 0 && firstTryCorrect == questionsAnswered,
+                comebacks: ProgressStore.int(snapshot["retriesMastered"]),
+                trapWins: trapWins,
+                levelReached: savedLevel
+            )
+            trapWins = 0
+            flightSummary = engagementStore.recordSessionEnd(starsEarned: starsEarned, facts: facts)
+        } else {
+            flightPayout = nil
+            flightSummary = nil
+        }
+
+        let progress = await progressStore.load(mode: modeId)
+        let passed = ((skillStanding?["gradeUp"] as? [String: Any])?["passed"] as? Bool) ?? false
+        if passed { SoundPlayer.shared.playLevelUp() } else { SoundPlayer.shared.playComplete() }
+        phase = .complete(starsEarned: starsEarned, lifetimeStars: ProgressStore.int(progress["lifetimeStars"]))
+    }
+
     // MARK: - Practice log
 
-    private func closeRecord(session: [String: Any], starsEarned: Int, levelEnd: Int) async {
-        guard let practiceLog, let open = record else { return }
+    @discardableResult
+    private func closeRecord(session: [String: Any], starsEarned: Int, levelEnd: Int) async -> PracticeLog.Record? {
+        guard let practiceLog, let open = record else { return nil }
         let closed = practiceLog.close(open, session: session, starsEarned: starsEarned, levelEnd: levelEnd)
         record = closed
         await practiceLog.save(closed)
+        return closed
     }
 
     /// A flight the kid leaves early (back to the nest) used to vanish from

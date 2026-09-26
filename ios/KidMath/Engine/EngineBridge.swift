@@ -238,6 +238,59 @@ final class EngineBridge {
         return line.toString()
     }
 
+    // MARK: - Play by skill (src/skills/flow.js — the flow both apps run)
+
+    /// `progress` is the topic's saved progress (level, totalSessions, grade,
+    /// gradeUnlocked, pinnedSkillId, skillMastery); `context` carries the
+    /// kid's `profileGrade` and practice `sessions`. Nothing here reads a store.
+    func topicSheetModel(mode: String, progress: [String: Any], context: [String: Any], shownGrade: String? = nil) -> [String: Any]? {
+        try? callDictionary("topicSheetModel", [mode, progress, context, shownGrade ?? NSNull()])
+    }
+
+    /// "Grade 3 · 1/3" for the Home card.
+    func topicChip(mode: String, progress: [String: Any], context: [String: Any]) -> [String: Any]? {
+        try? callDictionary("topicChip", [mode, progress, context])
+    }
+
+    /// `createSession` options for a request (`skill` / `mix`+`grade` /
+    /// `challenge`), or nil when this kid cannot make it — a Fledging Flight
+    /// that is not earned, a skill from another topic.
+    func skillSessionOptions(mode: String, progress: [String: Any], context: [String: Any], request: [String: Any]) -> [String: Any]? {
+        guard let value = try? call("skillSessionOptions", [mode, progress, context, request]), value.isObject else { return nil }
+        return value.toObject() as? [String: Any]
+    }
+
+    /// What a skill session is called under the topic title; nil on the ladder.
+    func skillSessionLabel(_ session: Session, mode: String) -> String? {
+        guard let value = try? call("skillSessionLabel", [session.value, mode]), value.isString else { return nil }
+        return value.toString()
+    }
+
+    /// A finished skill session settled: `patch` for the progress row (never
+    /// the level) and `standing` for the end card.
+    func settleSkillSession(mode: String, progress: [String: Any], context: [String: Any], session: [String: Any], record: [String: Any]) -> [String: Any]? {
+        guard let value = try? call("settleSkillSession", [mode, progress, context, session, record]), value.isObject else { return nil }
+        return value.toObject() as? [String: Any]
+    }
+
+    func skillParentControls(mode: String, progress: [String: Any], context: [String: Any]) -> [String: Any]? {
+        guard let value = try? call("skillParentControls", [mode, progress, context]), value.isObject else { return nil }
+        return value.toObject() as? [String: Any]
+    }
+
+    func unlockGradePatch(mode: String, progress: [String: Any], context: [String: Any], grade: String) -> [String: Any] {
+        (try? callDictionary("unlockGradePatch", [mode, progress, context, grade])) ?? [:]
+    }
+
+    func mergeTopicState(cloud: [String: Any], local: [String: Any]) -> [String: Any] {
+        (try? callDictionary("mergeTopicState", [cloud, local])) ?? [:]
+    }
+
+    /// The Fledging Flight's numbers (questions / pass / maxAttempts).
+    func fledgingFlightQuestions() -> Int {
+        ProgressStore.int((try? callDictionary("fledgingFlightRule"))?["questions"], default: 6)
+    }
+
     // MARK: - Adaptive session
 
     /// `options` may carry `savedProgress` (level/mistakeBank/bankItemStats/

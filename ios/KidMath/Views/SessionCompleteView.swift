@@ -21,6 +21,12 @@ struct SessionCompleteView: View {
     /// the lark has nominated; glide-down adds one kind line.
     var nominationPending: Bool = false
     var glideDown: Bool = false
+    /// Play by skill: where the kid now stands (skills/flow.js `standing`).
+    /// Replaces the level bar / nomination slot — a skill session has no level.
+    var skillStanding: [String: Any]?
+    /// First-try answers when there is no payout to read them from (a
+    /// Fledging Flight pays no stars, so `starsEarned` is 0 there).
+    var firstTryCount: Int?
     let playAgain: () -> Void
     let goHome: () -> Void
 
@@ -38,7 +44,7 @@ struct SessionCompleteView: View {
     }
 
     private var firstTryCorrect: Int {
-        payout?.firstTryCorrect ?? starsEarned
+        payout?.firstTryCorrect ?? firstTryCount ?? starsEarned
     }
 
     private var ratio: Double {
@@ -79,8 +85,14 @@ struct SessionCompleteView: View {
                 .lineLimit(1)
                 .foregroundStyle(Theme.ink)
 
+            if let skillStanding {
+                SkillStandingView(standing: skillStanding, balance: payout == nil ? nil : summary?.balance)
+            }
             if let payout {
                 flightReportStrip(payout)
+            } else if skillStanding != nil, starsEarned == 0 {
+                // A Fledging Flight: no stars ride on it — the note above is the news.
+                EmptyView()
             } else {
                 // Stat strip on Apricot: Sun star diamond, +N stars, lifetime.
                 HStack(spacing: 10) {
@@ -215,7 +227,9 @@ struct SessionCompleteView: View {
             // The slot — three states, never fixed-height: level read-out,
             // the Seafoam nomination note (84px vs the bar's 39px), or the
             // expanded ledger above. "N stars to Level X" is gone.
-            if nominationPending {
+            if skillStanding != nil {
+                EmptyView()
+            } else if nominationPending {
                 HStack(spacing: 12) {
                     ZStack {
                         Circle().fill(Theme.cream)
@@ -277,5 +291,64 @@ struct SessionCompleteView: View {
         }
         .font(theme.bodyFont(size: 14, weight: strong ? .heavy : .bold))
         .foregroundStyle(Theme.ink)
+    }
+}
+
+
+/// The end card's "where you stand" for a skill session — what the level bar
+/// was for the ladder: the grade's skills as ★ ◐ ○ pins, the count, a line for
+/// every skill this session mastered, and the grade-up news. Twin of
+/// src/play/SkillStanding.jsx; the words are the shared flow's.
+struct SkillStandingView: View {
+    @Environment(\.theme) private var theme
+    let standing: [String: Any]
+    var balance: Int?
+
+    private static let marks = ["mastered": "★", "practicing": "◐", "new": "○"]
+
+    var body: some View {
+        let skills = standing["skills"] as? [[String: Any]] ?? []
+        let newly = standing["newlyMastered"] as? [String] ?? []
+        VStack(alignment: .leading, spacing: 8) {
+            if let note = standing["gradeUpNote"] as? [String: Any] {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(note["headline"] as? String ?? "")
+                        .font(theme.bodyFont(size: 15, weight: .heavy))
+                    Text(note["detail"] as? String ?? "")
+                        .font(theme.bodyFont(size: 14, weight: .bold))
+                        .foregroundStyle(Theme.ink.opacity(0.8))
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                .foregroundStyle(Theme.ink)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 12)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background(RoundedRectangle(cornerRadius: 16).fill(Theme.sunLight))
+            }
+            ForEach(newly, id: \.self) { title in
+                Text("★ Skill mastered: \(title)")
+                    .font(theme.bodyFont(size: 14, weight: .heavy))
+                    .foregroundStyle(Theme.teal)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            HStack(spacing: 6) {
+                ForEach(skills.indices, id: \.self) { i in
+                    let state = skills[i]["state"] as? String ?? "new"
+                    Text(Self.marks[state] ?? "○")
+                        .font(.system(size: 18, weight: .bold))
+                        .foregroundStyle(state == "mastered" ? Theme.teal : Theme.ink.opacity(0.35))
+                }
+                Spacer(minLength: 0)
+            }
+            .accessibilityHidden(true)
+            HStack {
+                Text(standing["line"] as? String ?? "")
+                Spacer()
+                if let balance { Text("\(balance) in the Nest") }
+            }
+            .font(theme.bodyFont(size: 14, weight: .bold))
+            .foregroundStyle(Theme.ink)
+        }
+        .frame(maxWidth: 320)
     }
 }

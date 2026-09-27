@@ -13,6 +13,7 @@ struct FirstFlightView: View {
     @EnvironmentObject private var app: AppModel
     @Environment(\.theme) private var theme
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.horizontalSizeClass) private var sizeClass
 
     enum Step {
         case value
@@ -26,62 +27,111 @@ struct FirstFlightView: View {
 
     static let completedKey = "kidmath-first-flight-done"
 
+    /// The grown-up check over Welcome (handoff 2a · 02): both "Get started"
+    /// and "I have an account" go through it; a pass runs `gatedAction`.
+    @State private var showGate = false
+    @State private var gatedAction: (() -> Void)?
+
     var body: some View {
-        ScrollView {
-            VStack(spacing: 0) {
-                if step == .kid || step == .plan {
-                    wizardRail
+        GeometryReader { proxy in
+        ZStack {
+            if step == .value {
+                WelcomeStep(
+                    onStart: { gate { advancePastValue() } },
+                    onHaveAccount: { gate { advancePastValue() } }
+                )
+            } else {
+                HStack(spacing: 0) {
+                ScrollView {
+                    VStack(spacing: 0) {
+                        if step == .account || step == .kid {
+                            wizardRail
+                        }
+                        switch step {
+                        case .value:
+                            EmptyView()
+                        case .account:
+                            AccountStep(onSignedIn: { onSignedIn() })
+                        case .kid:
+                            KidStep(onDone: { kids in onKidsAdded(kids) })
+                        case .plan:
+                            PlanStep(
+                                kidName: newKids.first?.firstName,
+                                onDone: { finish(activateKid: newKids.count == 1 ? newKids.first : nil) }
+                            )
+                        }
+                    }
+                    .frame(maxWidth: 720)
+                    .padding(.horizontal, sizeClass == .regular ? 64 : 24)
+                    .padding(.bottom, 32)
+                    // The account step fills the height so its note sits at the bottom.
+                    .frame(maxWidth: .infinity, minHeight: step == .account ? proxy.size.height : 0)
                 }
-                switch step {
-                case .value:
-                    ValueStep(
-                        onStart: { advancePastValue() },
-                        onSkip: { finish(activateKid: nil) }
-                    )
-                case .account:
-                    AccountStep(onSignedIn: { onSignedIn() })
-                case .kid:
-                    KidStep(onDone: { kids in onKidsAdded(kids) })
-                case .plan:
-                    PlanStep(
-                        kidName: newKids.first?.firstName,
-                        onDone: { finish(activateKid: newKids.count == 1 ? newKids.first : nil) }
-                    )
+                .background(GraphPaperBackground())
+                // 2a · 03: the Seafoam "What we keep" panel beside the account step.
+                if step == .account && sizeClass == .regular {
+                    WhatWeKeepPanel().ignoresSafeArea()
+                }
                 }
             }
-            .frame(maxWidth: 720)
-            .padding(.horizontal)
-            .padding(.bottom, 32)
-            .frame(maxWidth: .infinity)
+
+            if showGate {
+                GateOverlay(
+                    onPass: {
+                        withAnimation(.easeOut(duration: 0.2)) { showGate = false }
+                        gatedAction?()
+                        gatedAction = nil
+                    },
+                    onClose: {
+                        withAnimation(.easeOut(duration: 0.2)) { showGate = false }
+                        gatedAction = nil
+                    }
+                )
+                .zIndex(1)
+            }
         }
-        .background(Theme.cream)
+        }
         .task {
             // A signed-in parent never sees the account step again.
             if app.supabase.isSignedIn { step = .value }
+            // Dev hook: `-firstFlightStep gate|account|kid` lands on that screen
+            // (screenshots, quick manual checks).
+            switch UserDefaults.standard.string(forKey: "firstFlightStep") {
+            case "gate": showGate = true
+            case "account": step = .account
+            case "kid": step = .kid
+            default: break
+            }
         }
     }
 
-    /// Three segments: account, kid, plan.
+    private func gate(_ action: @escaping () -> Void) {
+        gatedAction = action
+        withAnimation(.easeOut(duration: 0.2)) { showGate = true }
+    }
+
+    /// Two segments: parent account (1/2), who's learning (2/2).
     private var wizardRail: some View {
-        let position = step == .kid ? 2 : 3
-        return HStack(spacing: 12) {
+        let position = step == .account ? 1 : 2
+        return HStack(spacing: 16) {
             Button("Back") {
-                if step == .plan { step = .kid } else { step = .value }
+                step = step == .kid ? .account : .value
             }
-            .font(theme.bodyFont(size: 14, weight: .bold))
-            .foregroundStyle(Theme.ink.opacity(0.6))
+            .font(theme.bodyFont(size: 17, weight: .bold))
+            .foregroundStyle(Theme.ink.opacity(0.7))
             HStack(spacing: 8) {
-                ForEach(1...3, id: \.self) { segment in
+                ForEach(1...2, id: \.self) { segment in
                     Capsule()
                         .fill(segment <= position ? Theme.teal : Theme.teal.opacity(0.15))
-                        .frame(height: 5)
+                        .frame(height: 6)
                 }
             }
-            Text("\(position) / 3")
-                .font(theme.bodyFont(size: 14, weight: .bold))
+            Text("\(position) / 2")
+                .font(.system(size: 15, weight: .medium, design: .monospaced))
                 .foregroundStyle(Theme.ink.opacity(0.6))
         }
-        .padding(.vertical, 14)
+        .padding(.top, 36)
+        .padding(.bottom, 14)
     }
 
     private func advancePastValue() {
@@ -119,78 +169,120 @@ struct FirstFlightView: View {
     }
 }
 
-// MARK: - 01 · Value
+// MARK: - 01 · Welcome (handoff 2a)
 
-private struct ValueStep: View {
+/// Landscape iPad: two columns — the pitch on graph paper, a 520pt Lark Teal
+/// panel with the "Try one" card. Portrait iPad and iPhone: the teal panel on
+/// top (500pt / 330pt), the pitch and CTA below.
+private struct WelcomeStep: View {
     @Environment(\.theme) private var theme
+    @Environment(\.horizontalSizeClass) private var sizeClass
     let onStart: () -> Void
-    let onSkip: () -> Void
+    let onHaveAccount: () -> Void
+
+    private let bullets = ["No ads. Not one.", "Wrong answers are never punished.", "Print real worksheets."]
 
     var body: some View {
-        let benefits: [(well: Color, icon: String, text: String)] = [
-            (Theme.seafoam, "nosign", "No ads. Not one."),
-            (Theme.tealMid, "checkmark.circle", "Wrong answers are never punished."),
-            (Theme.apricot, "doc.text", "Print real worksheets."),
-            (Theme.sunLight, "clock", "Built for fun and focus."),
-        ]
+        GeometryReader { proxy in
+            let landscape = sizeClass == .regular && proxy.size.width > proxy.size.height
+            let phone = sizeClass == .compact
+            if landscape {
+                HStack(spacing: 0) {
+                    pitch(phone: false)
+                        .padding(.vertical, 56)
+                        .padding(.horizontal, 64)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+                        .background(GraphPaperBackground())
+                    tealPanel(phone: false)
+                        .frame(width: 520)
+                        .frame(maxHeight: .infinity)
+                }
+                .ignoresSafeArea()
+            } else {
+                ScrollView(showsIndicators: false) {
+                    VStack(spacing: 0) {
+                        tealPanel(phone: phone, topInset: proxy.safeAreaInsets.top)
+                            .frame(height: (phone ? 330 : 500) + proxy.safeAreaInsets.top)
+                        pitch(phone: phone)
+                            .padding(.top, phone ? 28 : 48)
+                            .padding(.horizontal, phone ? 24 : 64)
+                            .padding(.bottom, 32)
+                            .frame(maxWidth: .infinity, minHeight: proxy.size.height - (phone ? 330 : 500), alignment: .leading)
+                    }
+                }
+                .background(GraphPaperBackground())
+                .ignoresSafeArea(edges: .top)
+            }
+        }
+    }
 
-        return VStack(alignment: .leading, spacing: 28) {
+    private func pitch(phone: Bool) -> some View {
+        VStack(alignment: .leading, spacing: 0) {
             HStack(spacing: 10) {
-                LarkMarkView().frame(height: 30)
+                LarkMarkView().frame(width: 40, height: 34)
                 Text("larkit")
-                    .font(theme.displayFont(size: 30))
+                    .font(theme.displayFont(size: 28))
                     .foregroundStyle(Theme.teal)
             }
-            .padding(.top, 16)
-
-            Text("Math that\ntakes flight.")
-                .font(theme.displayFont(size: 46))
+            if !phone { Spacer(minLength: 24) }
+            Text("Math that takes flight.")
+                .font(theme.displayFont(size: phone ? 40 : 68))
+                .lineSpacing(phone ? 0 : 1)
                 .foregroundStyle(Theme.ink)
-                .lineSpacing(2)
-
-            VStack(alignment: .leading, spacing: 18) {
-                ForEach(benefits, id: \.text) { benefit in
-                    HStack(spacing: 14) {
-                        Image(systemName: benefit.icon)
-                            .font(.system(size: 19, weight: .medium))
-                            .foregroundStyle(Theme.ink)
-                            .frame(width: 44, height: 44)
-                            .background(RoundedRectangle(cornerRadius: 12).fill(benefit.well))
-                        Text(benefit.text)
-                            .font(theme.bodyFont(size: 17, weight: .bold))
+                .fixedSize(horizontal: false, vertical: true)
+                .padding(.top, phone ? 18 : 0)
+            VStack(alignment: .leading, spacing: 14) {
+                ForEach(bullets, id: \.self) { line in
+                    HStack(alignment: .center, spacing: 14) {
+                        Circle().fill(Theme.teal).frame(width: 10, height: 10)
+                        Text(line)
+                            .font(theme.bodyFont(size: phone ? 18 : 21, weight: .semibold))
                             .foregroundStyle(Theme.ink)
                     }
                 }
             }
-
-            PlayCardPanel()
-
-            VStack(alignment: .leading, spacing: 14) {
-                Button(action: onStart) {
-                    Text("Get started")
-                        .font(theme.displayFont(size: 20))
-                        .foregroundStyle(Theme.cream)
-                        .padding(.horizontal, 32)
-                        .frame(height: 56)
-                        .background(
-                            RoundedRectangle(cornerRadius: 18)
-                                .fill(Theme.teal)
-                                .shadow(color: Theme.deepTeal, radius: 0, x: 0, y: 5)
-                        )
+            .padding(.top, phone ? 20 : 28)
+            Spacer(minLength: phone ? 40 : 32)
+            if phone {
+                VStack(spacing: 14) {
+                    primary(fullWidth: true)
+                    Button("I have an account", action: onHaveAccount)
+                        .font(theme.bodyFont(size: 18, weight: .bold))
+                        .foregroundStyle(Theme.teal)
                 }
-                .buttonStyle(SpringButtonStyle())
-
-                Button("Already have an account? Sign in", action: onStart)
-                    .font(theme.bodyFont(size: 16, weight: .bold))
-                    .foregroundStyle(Theme.teal)
-
-                Button("Skip for now", action: onSkip)
-                    .font(theme.bodyFont(size: 14, weight: .semibold))
-                    .foregroundStyle(Theme.ink.opacity(0.45))
+            } else {
+                HStack(spacing: 28) {
+                    primary(fullWidth: false)
+                    Button("I have an account", action: onHaveAccount)
+                        .font(theme.bodyFont(size: 18, weight: .bold))
+                        .foregroundStyle(Theme.teal)
+                }
             }
-            .padding(.bottom, 8)
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    private func primary(fullWidth: Bool) -> some View {
+        Button(action: onStart) {
+            Text("Get started")
+                .font(theme.displayFont(size: 20))
+                .foregroundStyle(Theme.cream)
+                .padding(.horizontal, fullWidth ? 0 : 52)
+                .frame(maxWidth: fullWidth ? .infinity : nil)
+                .frame(height: fullWidth ? 56 : 64)
+                .background(RoundedRectangle(cornerRadius: 18).fill(Theme.teal).shadow(color: Theme.deepTeal, radius: 0, x: 0, y: 5))
+        }
+        .buttonStyle(SpringButtonStyle())
+    }
+
+    private func tealPanel(phone: Bool, topInset: CGFloat = 0) -> some View {
+        ZStack {
+            Theme.teal
+            WelcomeDemoCard(compact: phone)
+                .frame(maxWidth: phone ? .infinity : 420)
+                .padding(.horizontal, phone ? 20 : 50)
+                // The card lives below the status bar, not under it.
+                .padding(.top, topInset)
+        }
     }
 }
 
@@ -199,174 +291,198 @@ private struct ValueStep: View {
 private struct AccountStep: View {
     @EnvironmentObject private var app: AppModel
     @Environment(\.theme) private var theme
+    @Environment(\.horizontalSizeClass) private var sizeClass
     @Environment(\.openURL) private var openURL
     let onSignedIn: () -> Void
     @State private var authMessage = ""
-    /// Kids category: sign-in flows and external links sit behind the
-    /// parental gate — this is the first screen App Review opens.
-    @State private var gateUnlocked = false
-    @State private var showGate = false
-    @State private var gatedAction: (() -> Void)?
 
     var body: some View {
-        VStack(spacing: 0) {
-            Spacer(minLength: 60)
+        VStack(alignment: .leading, spacing: 0) {
+            Spacer(minLength: sizeClass == .regular ? 120 : 60)
             Text("Create your parent account")
-                .font(theme.displayFont(size: 30))
+                .font(theme.displayFont(size: sizeClass == .regular ? 42 : 36))
                 .foregroundStyle(Theme.ink)
-                .multilineTextAlignment(.center)
+                .fixedSize(horizontal: false, vertical: true)
             Text("You'll add your kids next. One account covers up to four.")
-                .font(theme.bodyFont(size: 16, weight: .semibold))
-                .foregroundStyle(Theme.ink.opacity(0.6))
-                .multilineTextAlignment(.center)
-                .padding(.top, 8)
+                .font(theme.bodyFont(size: 18, weight: .semibold))
+                .foregroundStyle(Theme.ink.opacity(0.7))
+                .fixedSize(horizontal: false, vertical: true)
+                .padding(.top, 12)
 
-            VStack(spacing: 12) {
-                if !gateUnlocked {
-                    Button {
-                        gate {}
-                    } label: {
-                        Label("Parents: continue", systemImage: "lock.shield")
-                            .font(theme.bodyFont(size: 17, weight: .bold))
-                            .foregroundStyle(Theme.cream)
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 54)
-                            .background(RoundedRectangle(cornerRadius: 14).fill(Theme.teal))
-                    }
-                    .buttonStyle(.plain)
-                } else {
-                    SignInWithAppleButton(.continue) { request in
-                        AppleSignInCoordinator.configure(request)
-                    } onCompletion: { result in
-                        Task {
-                            do {
-                                try await AppleSignInCoordinator.complete(result, supabase: app.supabase)
-                                onSignedIn()
-                            } catch {
-                                authMessage = "Apple sign-in failed: \(error.localizedDescription)"
-                            }
+            VStack(spacing: 14) {
+                SignInWithAppleButton(.continue) { request in
+                    AppleSignInCoordinator.configure(request)
+                } onCompletion: { result in
+                    Task {
+                        do {
+                            try await AppleSignInCoordinator.complete(result, supabase: app.supabase)
+                            onSignedIn()
+                        } catch {
+                            authMessage = "Apple sign-in failed: \(error.localizedDescription)"
                         }
                     }
-                    .signInWithAppleButtonStyle(.black)
-                    .frame(height: 54)
-                    .clipShape(RoundedRectangle(cornerRadius: 14))
-
-                    Button {
-                        Task {
-                            do {
-                                try await app.supabase.signInWithGoogle()
-                                onSignedIn()
-                            } catch {
-                                authMessage = "Google sign-in failed: \(error.localizedDescription)"
-                            }
-                        }
-                    } label: {
-                        Text("Continue with Google")
-                            .font(theme.bodyFont(size: 17, weight: .bold))
-                            .foregroundStyle(Theme.ink)
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 54)
-                            .background(
-                                RoundedRectangle(cornerRadius: 14)
-                                    .fill(.white)
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 14)
-                                            .stroke(Theme.ink.opacity(0.15), lineWidth: 1.5)
-                                    )
-                            )
-                    }
-                    .buttonStyle(.plain)
                 }
+                .signInWithAppleButtonStyle(.black)
+                .frame(height: 64)
+                .clipShape(RoundedRectangle(cornerRadius: 16))
+
+                Button {
+                    Task {
+                        do {
+                            try await app.supabase.signInWithGoogle()
+                            onSignedIn()
+                        } catch {
+                            authMessage = "Google sign-in failed: \(error.localizedDescription)"
+                        }
+                    }
+                } label: {
+                    HStack(spacing: 12) {
+                        GoogleGMark().frame(width: 20, height: 20)
+                        Text("Continue with Google")
+                            .font(theme.bodyFont(size: 18, weight: .bold))
+                            .foregroundStyle(Theme.ink)
+                    }
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 64)
+                    .background(RoundedRectangle(cornerRadius: 16).fill(.white))
+                    .overlay(RoundedRectangle(cornerRadius: 16).stroke(Theme.ink.opacity(0.12), lineWidth: 1.5))
+                }
+                .buttonStyle(.plain)
             }
-            .frame(maxWidth: 420)
+            .frame(maxWidth: 520)
             .padding(.top, 32)
 
             if !authMessage.isEmpty {
                 Text(authMessage)
-                    .font(theme.bodyFont(size: 13, weight: .bold))
+                    .font(theme.bodyFont(size: 14, weight: .bold))
                     .foregroundStyle(Theme.ember)
                     .padding(.top, 12)
             }
 
-            Text("By continuing you agree to the Terms and Privacy Policy. We never show ads and never sell data about your kids.")
-                .font(theme.bodyFont(size: 13))
-                .foregroundStyle(Theme.ink.opacity(0.6))
-                .multilineTextAlignment(.center)
-                .frame(maxWidth: 420)
-                .padding(.top, 20)
-
-            HStack(spacing: 6) {
-                Button("Terms") { gate { openURL(AppLinks.terms) } }
-                Text("·").foregroundStyle(Theme.ink.opacity(0.4))
-                Button("Privacy Policy") { gate { openURL(AppLinks.privacyPolicy) } }
-            }
-            .font(theme.bodyFont(size: 13, weight: .bold))
-            .foregroundStyle(Theme.teal)
-            .padding(.top, 6)
-
-            Text("Already have an account? The same buttons sign you in.")
-                .font(theme.bodyFont(size: 15, weight: .bold))
-                .foregroundStyle(Theme.teal)
+            legal
                 .padding(.top, 24)
+                .frame(maxWidth: 520, alignment: .leading)
+
+            if sizeClass != .regular {
+                Spacer(minLength: 40)
+                keepNote
+            }
             Spacer(minLength: 40)
         }
-        .frame(maxWidth: .infinity)
-        .sheet(isPresented: $showGate) {
-            ParentalGateView {
-                gateUnlocked = true
-                gatedAction?()
-                gatedAction = nil
-            }
-        }
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 
-    /// External links and sign-in reveal go through the parental gate once;
-    /// after a pass the session stays unlocked.
-    private func gate(_ action: @escaping () -> Void) {
-        if gateUnlocked {
-            action()
-        } else {
-            gatedAction = action
-            showGate = true
-        }
+    /// The gate was passed on Welcome, so the legal links open directly.
+    private var legal: some View {
+        var text = AttributedString("By continuing you agree to the ")
+        var terms = AttributedString("Terms"); terms.link = AppLinks.terms; terms.foregroundColor = Theme.teal; terms.underlineStyle = .single
+        var and = AttributedString(" and ")
+        var privacy = AttributedString("Privacy Policy"); privacy.link = AppLinks.privacyPolicy; privacy.foregroundColor = Theme.teal; privacy.underlineStyle = .single
+        var tail = AttributedString(". Already have an account? The same buttons sign you in.")
+        text.foregroundColor = Theme.ink.opacity(0.7); and.foregroundColor = Theme.ink.opacity(0.7); tail.foregroundColor = Theme.ink.opacity(0.7)
+        return Text(text + terms + and + privacy + tail)
+            .font(theme.bodyFont(size: 14, weight: .semibold))
+            .fixedSize(horizontal: false, vertical: true)
+    }
+
+    /// iPhone: the Seafoam "What we keep" note at the bottom of the column
+    /// (on iPad it is the right panel, drawn by FirstFlightView).
+    private var keepNote: some View {
+        (Text("What we keep: ").font(theme.bodyFont(size: 17, weight: .bold)) + Text("your email, and each kid's first name and grade. Nothing else.").font(theme.bodyFont(size: 17, weight: .semibold)))
+            .foregroundStyle(Theme.ink)
+            .fixedSize(horizontal: false, vertical: true)
+            .padding(20)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(RoundedRectangle(cornerRadius: 20).fill(Theme.seafoam))
     }
 }
 
-// MARK: - 03 · Add a kid
+/// The Seafoam side panel beside the parent-account step on iPad (2a · 03).
+struct WhatWeKeepPanel: View {
+    @Environment(\.theme) private var theme
 
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Spacer()
+            Text("What we keep")
+                .font(theme.displayFont(size: 30))
+                .foregroundStyle(Theme.ink)
+            Text("Your email, and each kid's first name and grade. Nothing else. We never show ads and never sell data about your kids.")
+                .font(theme.bodyFont(size: 17, weight: .semibold))
+                .foregroundStyle(Theme.ink)
+                .lineSpacing(4)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding(48)
+        .frame(width: 420)
+        .frame(maxHeight: .infinity, alignment: .bottomLeading)
+        .background(Theme.seafoam)
+    }
+}
+
+/// Google's four-colour "G", drawn — the SDK ships no SwiftUI asset.
+struct GoogleGMark: View {
+    var body: some View {
+        Canvas { context, size in
+            let r = min(size.width, size.height) / 2
+            let c = CGPoint(x: size.width / 2, y: size.height / 2)
+            let w = r * 0.42
+            func arc(_ from: Double, _ to: Double, _ color: Color) {
+                var p = Path()
+                p.addArc(center: c, radius: r - w / 2, startAngle: .degrees(from), endAngle: .degrees(to), clockwise: false)
+                context.stroke(p, with: .color(color), style: StrokeStyle(lineWidth: w, lineCap: .butt))
+            }
+            // Screen-space degrees, clockwise from +x; the opening is top-right.
+            arc(225, 315, Color(red: 0.92, green: 0.26, blue: 0.21))   // red: top
+            arc(135, 225, Color(red: 0.98, green: 0.74, blue: 0.02))   // yellow: left
+            arc(45, 135, Color(red: 0.20, green: 0.66, blue: 0.33))    // green: bottom
+            arc(0, 45, Color(red: 0.26, green: 0.52, blue: 0.96))      // blue: right
+            var bar = Path()
+            bar.addRect(CGRect(x: c.x - 2, y: c.y - w / 2, width: r + 2 - 0.5, height: w))
+            context.fill(bar, with: .color(Color(red: 0.26, green: 0.52, blue: 0.96)))
+        }
+        .accessibilityHidden(true)
+    }
+}
+
+// MARK: - 03 · Who's learning (handoff 2a · 04)
+
+/// First name, their colour, grade — no age. The CTA reads "Start {name}'s
+/// first flight" and is disabled until name and grade are set. Also hosts the
+/// consent-pending screen when the household has no consent on file yet.
 struct KidStep: View {
     @EnvironmentObject private var app: AppModel
     @Environment(\.theme) private var theme
+    @Environment(\.horizontalSizeClass) private var sizeClass
     let onDone: ([KidProfile]) -> Void
 
     @State private var firstName = ""
-    @State private var age: String?
+    @State private var colour: KidColour = .seafoam
     @State private var grade: String?
-    @State private var added: [KidProfile] = []
     @State private var errorMessage = ""
     @State private var busy = false
-    /// Set when the first kid's details are waiting on the parent's email
-    /// tap — the form gives way to ConsentPendingView (web: ConsentPendingPanel).
+    @FocusState private var nameFocused: Bool
+    /// Set when the kid's details are waiting on the parent's email tap —
+    /// the form gives way to ConsentPendingView (web: ConsentPendingPanel).
     @State private var pending: KidProfilesService.PendingConsent?
 
-    private var complete: Bool {
-        !firstName.trimmingCharacters(in: .whitespaces).isEmpty && age != nil && grade != nil
-    }
-
-    private var hasRoom: Bool {
-        app.kidProfiles.kids.count + added.count < KidProfilesService.maxKids
-    }
+    private var trimmedName: String { firstName.trimmingCharacters(in: .whitespaces) }
+    private var complete: Bool { !trimmedName.isEmpty && grade != nil }
 
     var body: some View {
         if let pending {
             ConsentPendingView(
                 pending: pending,
                 email: app.supabase.userEmail ?? "your email",
-                onResend: { try await app.kidProfiles.requestParentalConsent(firstName: pending.firstName, age: pending.age, grade: pending.grade) },
+                onResend: { try await app.kidProfiles.requestParentalConsent(firstName: pending.firstName, grade: pending.grade, colour: pending.colour) },
                 onConfirmed: { kid in
                     self.pending = nil
-                    added.append(kid)
-                    onDone(added)
+                    Task {
+                        // The grant made the profile without the colour; write it now.
+                        var saved = kid
+                        if let colour = pending.colour { saved = await app.kidProfiles.setColour(colour, for: kid) }
+                        onDone([saved])
+                    }
                 },
                 checkConfirmed: { await app.kidProfiles.confirmedKid(named: pending.firstName) }
             )
@@ -376,46 +492,36 @@ struct KidStep: View {
     }
 
     private var form: some View {
-        VStack(alignment: .leading, spacing: 0) {
+        let regular = sizeClass == .regular
+        return VStack(alignment: .leading, spacing: 0) {
             Text("Who's learning?")
-                .font(theme.displayFont(size: 34))
+                .font(theme.displayFont(size: regular ? 42 : 36))
                 .foregroundStyle(Theme.ink)
                 .padding(.top, 20)
-            Text("First name only — that's all we store about your child.")
-                .font(theme.bodyFont(size: 16, weight: .semibold))
-                .foregroundStyle(Theme.ink.opacity(0.6))
-                .padding(.top, 6)
-
-            if !added.isEmpty {
-                Text("Added: \(added.map(\.firstName).joined(separator: ", "))")
-                    .font(theme.bodyFont(size: 14, weight: .bold))
-                    .foregroundStyle(Theme.teal)
-                    .padding(.top, 14)
-            }
-
-            Text("First name")
-                .font(theme.bodyFont(size: 14, weight: .bold))
-                .foregroundStyle(Theme.ink)
-                .padding(.top, 28)
-            TextField("", text: $firstName)
+            Text("First name and grade. That's all we store about your child.")
                 .font(theme.bodyFont(size: 18, weight: .semibold))
-                .foregroundStyle(Theme.ink)
-                .autocorrectionDisabled()
-                .textInputAutocapitalization(.words)
-                .padding(.horizontal, 16)
-                .frame(height: 54)
-                .background(
-                    RoundedRectangle(cornerRadius: 14)
-                        .fill(.white)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 14)
-                                .stroke(Theme.ink.opacity(0.15), lineWidth: 1.5)
-                        )
-                )
+                .foregroundStyle(Theme.ink.opacity(0.7))
+                .fixedSize(horizontal: false, vertical: true)
                 .padding(.top, 8)
 
-            segmentRail("Age", options: KidProfilesService.ages, selection: $age)
-            segmentRail("Grade", options: KidProfilesService.grades, selection: $grade)
+            // iPad: name and colour share a row; iPhone stacks them.
+            if regular {
+                HStack(alignment: .top, spacing: 48) {
+                    nameField.frame(maxWidth: 500)
+                    colourField
+                }
+                .padding(.top, 40)
+            } else {
+                nameField.padding(.top, 36)
+                colourField.padding(.top, 28)
+            }
+
+            Text("Grade")
+                .font(theme.bodyFont(size: 16, weight: .bold))
+                .foregroundStyle(Theme.ink)
+                .padding(.top, regular ? 40 : 28)
+                .padding(.bottom, 10)
+            gradeGrid(regular: regular)
 
             if !errorMessage.isEmpty {
                 Text(errorMessage)
@@ -424,110 +530,148 @@ struct KidStep: View {
                     .padding(.top, 14)
             }
 
-            HStack {
-                if hasRoom && complete {
-                    Button("+ Add another kid") {
-                        Task { _ = await save() }
-                    }
-                    .font(theme.bodyFont(size: 16, weight: .bold))
-                    .foregroundStyle(Theme.teal)
-                    .disabled(busy)
+            Spacer(minLength: 40)
+
+            if regular {
+                HStack(alignment: .center) {
+                    footnote
+                    Spacer()
+                    cta(fullWidth: false)
                 }
-                Spacer()
-                Button {
-                    Task { await handleContinue() }
-                } label: {
-                    Text("Continue")
-                        .font(theme.displayFont(size: 20))
-                        .foregroundStyle(Theme.cream)
-                        .padding(.horizontal, 32)
-                        .frame(height: 56)
-                        .background(
-                            RoundedRectangle(cornerRadius: 18)
-                                .fill(Theme.teal)
-                                .shadow(color: Theme.deepTeal, radius: 0, x: 0, y: 5)
-                        )
-                        .opacity(busy || (!complete && added.isEmpty) ? 0.4 : 1)
-                }
-                .buttonStyle(SpringButtonStyle())
-                .disabled(busy || (!complete && added.isEmpty))
+            } else {
+                cta(fullWidth: true)
+                footnote.padding(.top, 14)
             }
-            .padding(.top, 36)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }
 
-    private func segmentRail(_ title: String, options: [String], selection: Binding<String?>) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text(title)
-                .font(theme.bodyFont(size: 14, weight: .bold))
+    private var nameField: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("First name")
+                .font(theme.bodyFont(size: 16, weight: .bold))
                 .foregroundStyle(Theme.ink)
-            let columns = [GridItem(.adaptive(minimum: 58, maximum: 120), spacing: 8)]
-            LazyVGrid(columns: columns, spacing: 8) {
-                ForEach(options, id: \.self) { option in
-                    let isSelected = selection.wrappedValue == option
-                    Button {
-                        selection.wrappedValue = option
-                    } label: {
-                        Text(option)
-                            .font(theme.bodyFont(size: 16, weight: .bold))
-                            .foregroundStyle(Theme.ink)
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 48)
-                            .background(
-                                RoundedRectangle(cornerRadius: 12)
-                                    // Seafoam marks the selection (§20).
-                                    .fill(isSelected ? Theme.seafoam : .white)
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 12)
-                                            .stroke(
-                                                isSelected ? Theme.teal : Theme.ink.opacity(0.1),
-                                                lineWidth: 1.5
-                                            )
-                                    )
-                            )
-                    }
-                    .buttonStyle(.plain)
-                }
-            }
+            TextField("", text: $firstName)
+                .font(theme.bodyFont(size: 22, weight: .semibold))
+                .foregroundStyle(Theme.ink)
+                .autocorrectionDisabled()
+                .textInputAutocapitalization(.words)
+                .focused($nameFocused)
+                .padding(.horizontal, 22)
+                .frame(height: 68)
+                .background(RoundedRectangle(cornerRadius: 16).fill(.white))
+                .overlay(RoundedRectangle(cornerRadius: 16).stroke(nameFocused ? Theme.teal : Theme.ink.opacity(0.12), lineWidth: nameFocused ? 2 : 1.5))
         }
-        .padding(.top, 22)
     }
 
-    private func save() async -> KidProfile? {
-        guard let age, let grade else { return nil }
+    private var colourField: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            (Text("Their colour").font(theme.bodyFont(size: 16, weight: .bold)).foregroundColor(Theme.ink)
+                + Text(sizeClass == .regular ? " · helps them find their profile" : "").font(theme.bodyFont(size: 15, weight: .semibold)).foregroundColor(Theme.ink.opacity(0.6)))
+            KidColourPicker(selected: $colour, initial: String(trimmedName.prefix(1)).uppercased(), size: sizeClass == .regular ? 64 : 52)
+        }
+    }
+
+    private func gradeGrid(regular: Bool) -> some View {
+        let grades = KidProfilesService.grades
+        let columns = Array(repeating: GridItem(.flexible(), spacing: 12), count: regular ? 7 : 4)
+        return LazyVGrid(columns: columns, spacing: 12) {
+            ForEach(grades, id: \.self) { option in
+                let isSelected = grade == option
+                Button { grade = option } label: {
+                    Text(option)
+                        .font(theme.displayFont(size: 20))
+                        .foregroundStyle(isSelected ? Theme.cream : Theme.ink)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: regular ? 72 : 56)
+                        .background(
+                            RoundedRectangle(cornerRadius: 16)
+                                .fill(isSelected ? Theme.teal : Color.white)
+                                .shadow(color: isSelected ? Theme.deepTeal : .clear, radius: 0, x: 0, y: 4)
+                        )
+                        .overlay(RoundedRectangle(cornerRadius: 16).stroke(isSelected ? Color.clear : Theme.ink.opacity(0.12), lineWidth: 1.5))
+                }
+                .buttonStyle(SpringButtonStyle())
+                .accessibilityAddTraits(isSelected ? .isSelected : [])
+            }
+        }
+    }
+
+    private var footnote: some View {
+        Text("You can add more kids from Grown-ups at any time.")
+            .font(theme.bodyFont(size: 14, weight: .semibold))
+            .foregroundStyle(Theme.ink.opacity(0.6))
+    }
+
+    private func cta(fullWidth: Bool) -> some View {
+        Button {
+            Task { await save() }
+        } label: {
+            Text(trimmedName.isEmpty ? "Start their first flight" : "Start \(trimmedName)'s first flight")
+                .font(theme.displayFont(size: 20))
+                .foregroundStyle(Theme.cream)
+                .lineLimit(1)
+                .minimumScaleFactor(0.8)
+                .padding(.horizontal, fullWidth ? 16 : 52)
+                .frame(maxWidth: fullWidth ? .infinity : nil)
+                .frame(height: 64)
+                .background(RoundedRectangle(cornerRadius: 18).fill(Theme.teal).shadow(color: Theme.deepTeal, radius: 0, x: 0, y: 5))
+                .opacity(busy || !complete ? 0.4 : 1)
+        }
+        .buttonStyle(SpringButtonStyle())
+        .disabled(busy || !complete)
+    }
+
+    private func save() async {
+        guard let grade, complete else { return }
         busy = true
         defer { busy = false }
         do {
-            switch try await app.kidProfiles.addKid(firstName: firstName, age: age, grade: grade) {
+            switch try await app.kidProfiles.addKid(firstName: trimmedName, grade: grade, colour: colour) {
             case .added(let kid):
-                added.append(kid)
-                firstName = ""
-                self.age = nil
-                self.grade = nil
                 errorMessage = ""
-                return kid
+                onDone([kid])
             case .pendingConsent(let request):
                 // Nothing is stored yet; the parent confirms by email.
                 errorMessage = ""
                 pending = request
-                return nil
             }
         } catch {
             errorMessage = "Could not save — \(error.localizedDescription)"
-            return nil
         }
     }
+}
 
-    private func handleContinue() async {
-        if complete {
-            guard await save() != nil else { return }  // nil also while consent is pending
+/// The four colour circles (2a · 04): the selected one shows the kid's
+/// initial and a teal ring.
+struct KidColourPicker: View {
+    @Environment(\.theme) private var theme
+    @Binding var selected: KidColour
+    var initial: String = ""
+    var size: CGFloat = 64
+
+    var body: some View {
+        HStack(spacing: 14) {
+            ForEach(KidColour.allCases) { colour in
+                let isSelected = colour == selected
+                Button { selected = colour } label: {
+                    ZStack {
+                        Circle().fill(colour.fill)
+                        if isSelected {
+                            Text(initial)
+                                .font(theme.displayFont(size: size * 0.42))
+                                .foregroundStyle(Theme.ink)
+                        }
+                    }
+                    .frame(width: size, height: size)
+                    .overlay(Circle().stroke(Theme.teal, lineWidth: isSelected ? 3 : 0).padding(-4))
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("\(colour.rawValue) colour")
+                .accessibilityAddTraits(isSelected ? .isSelected : [])
+            }
         }
-        guard !added.isEmpty else {
-            errorMessage = "Add a first name, age and grade to continue."
-            return
-        }
-        onDone(added)
+        .padding(4)
     }
 }
 

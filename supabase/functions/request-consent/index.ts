@@ -42,7 +42,10 @@ Deno.serve(async (request) => {
     const body = await request.json().catch(() => ({}));
     const firstName = typeof body.firstName === "string" ? body.firstName.trim() : "";
     if (!firstName || firstName.length > 40) return json({ error: "firstName required" }, 400);
-    if (!AGES.includes(body.age)) return json({ error: "invalid age" }, 400);
+    // Age is optional since the 2a onboarding (first name + grade only); an
+    // older client still sends it.
+    const age = body.age == null || body.age === "" ? null : body.age;
+    if (age !== null && !AGES.includes(age)) return json({ error: "invalid age" }, 400);
     if (!GRADES.includes(body.grade)) return json({ error: "invalid grade" }, 400);
     const noticeText = typeof body.noticeText === "string" && body.noticeText.length > 200
       ? body.noticeText
@@ -65,7 +68,7 @@ Deno.serve(async (request) => {
       {
         userId: user.id,
         parentEmail: user.email,
-        kid: { firstName, age: body.age, grade: body.grade },
+        kid: { firstName, age, grade: body.grade },
         noticeText,
         termsVersion: typeof body.termsVersion === "string" ? body.termsVersion : "unversioned",
         privacyVersion: typeof body.privacyVersion === "string" ? body.privacyVersion : "unversioned",

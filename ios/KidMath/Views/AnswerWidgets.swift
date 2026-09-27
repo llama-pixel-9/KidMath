@@ -54,46 +54,66 @@ struct NumberPadWidget: View {
     @Environment(\.theme) private var theme
     var allowDecimal = false
     let disabled: Bool
+    /// The typed answer. The session owns it so the answer box can sit in the
+    /// problem card (handoff 2a · 07); `showsBox` draws one here instead.
+    @Binding var entry: String
+    var showsBox = true
+    /// Compact rows for iPhone.
+    @Environment(\.horizontalSizeClass) private var sizeClass
+    private var compact: Bool { sizeClass == .compact }
     let submit: (Any) -> Void
 
-    @State private var entry = ""
-
     private var keys: [[String]] {
-        [
-            ["1", "2", "3"],
-            ["4", "5", "6"],
-            ["7", "8", "9"],
-            [allowDecimal ? "." : "-", "0", "⌫"],
-        ]
+        let last = allowDecimal ? [".", "0", "⌫"] : ["0", "⌫"]
+        return [["1", "2", "3"], ["4", "5", "6"], ["7", "8", "9"], last]
+    }
+
+    // Rows tinted Seafoam / Teal Mid / Apricot, then Sun Light 0 and a Sun backspace.
+    private func tint(_ key: String, row: Int) -> (fill: Color, edge: Color, text: Color) {
+        switch key {
+        case "⌫": return (Theme.sun, Theme.ember, Theme.ink)
+        case "0", ".": return (Theme.sunLight, Theme.sunLightDeep, Theme.ink)
+        default:
+            switch row {
+            case 0: return (Theme.seafoam, Theme.seafoamDeep, Theme.ink)
+            case 1: return (Theme.tealMid, Theme.tealMidDeep, Theme.ink)
+            default: return (Theme.apricot, Theme.apricotDeep, Theme.ink)
+            }
+        }
     }
 
     var body: some View {
-        VStack(spacing: 10) {
-            Text(entry.isEmpty ? " " : entry)
-                .font(.system(size: 34, weight: .heavy, design: .rounded))
-                .foregroundStyle(theme.textPrimary)
-                .frame(maxWidth: .infinity, minHeight: 48)
-                .background(
-                    RoundedRectangle(cornerRadius: 16)
-                        .fill(.white)
-                        .overlay(RoundedRectangle(cornerRadius: 16).stroke(theme.cardBorder))
-                )
-
-            ForEach(keys, id: \.self) { row in
-                HStack(spacing: 10) {
-                    ForEach(row, id: \.self) { key in
-                        let tint = DigitPadView.keyTint(key)
-                        Button {
-                            tap(key)
-                        } label: {
-                            Text(key)
-                                .font(.system(size: 26, weight: .bold, design: .rounded))
-                                .frame(maxWidth: .infinity, minHeight: 54)
-                                .background(RoundedRectangle(cornerRadius: 14).fill(tint.edge).offset(y: 4))
-                                .background(RoundedRectangle(cornerRadius: 14).fill(tint.fill))
-                                .foregroundStyle(Theme.ink)
+        let keyHeight: CGFloat = compact ? 64 : 84
+        VStack(spacing: 12) {
+            if showsBox {
+                Text(entry.isEmpty ? " " : entry)
+                    .font(theme.displayFont(size: 34))
+                    .foregroundStyle(Theme.ink)
+                    .frame(maxWidth: .infinity, minHeight: 56)
+                    .background(RoundedRectangle(cornerRadius: 16).fill(Theme.cream))
+                    .overlay(RoundedRectangle(cornerRadius: 16).stroke(Theme.teal, lineWidth: 2.5))
+            }
+            ForEach(Array(keys.enumerated()), id: \.offset) { row, line in
+                HStack(spacing: 12) {
+                    // The last row keeps the 3-column grid: 0 sits under the 8.
+                    if line.count == 2 { Color.clear.frame(maxWidth: .infinity).frame(height: keyHeight) }
+                    ForEach(line, id: \.self) { key in
+                        let t = tint(key, row: row)
+                        Button { tap(key) } label: {
+                            Group {
+                                if key == "⌫" {
+                                    Image(systemName: "delete.left").font(.system(size: 26, weight: .semibold))
+                                } else {
+                                    Text(key).font(theme.displayFont(size: 30))
+                                }
+                            }
+                            .foregroundStyle(t.text)
+                            .frame(maxWidth: .infinity)
+                            .frame(height: keyHeight)
+                            .background(RoundedRectangle(cornerRadius: 18).fill(t.fill).shadow(color: t.edge, radius: 0, x: 0, y: 5))
                         }
                         .buttonStyle(SpringButtonStyle())
+                        .accessibilityLabel(key == "⌫" ? "Delete" : key)
                     }
                 }
             }
@@ -103,28 +123,25 @@ struct NumberPadWidget: View {
                 submit(value == value.rounded() ? Int(value) as Any : value as Any)
                 entry = ""
             } label: {
-                Text("Check!")
-                    .font(.title3.weight(.heavy))
-                    .fontDesign(.rounded)
-                    .frame(maxWidth: .infinity, minHeight: 52)
-                    .background(RoundedRectangle(cornerRadius: 16).fill(Theme.deepTeal).offset(y: 4))
-                    .background(RoundedRectangle(cornerRadius: 16).fill(Theme.teal))
+                Text("Check")
+                    .font(theme.displayFont(size: 24))
                     .foregroundStyle(Theme.cream)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: compact ? 64 : 80)
+                    .background(RoundedRectangle(cornerRadius: 18).fill(Theme.teal).shadow(color: Theme.deepTeal, radius: 0, x: 0, y: 5))
                     .opacity(Double(entry) == nil ? 0.4 : 1)
             }
             .disabled(Double(entry) == nil)
             .buttonStyle(SpringButtonStyle())
+            .padding(.top, 4)
         }
         .disabled(disabled)
-        .frame(maxWidth: 380)
     }
 
     private func tap(_ key: String) {
         switch key {
         case "⌫":
             if !entry.isEmpty { entry.removeLast() }
-        case "-":
-            if entry.isEmpty { entry = "-" }
         case ".":
             if !entry.contains(".") { entry += entry.isEmpty ? "0." : "." }
         default:

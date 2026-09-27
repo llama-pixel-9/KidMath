@@ -1,5 +1,7 @@
 import Foundation
+import GoogleSignIn
 import Supabase
+import UIKit
 
 /// All Supabase I/O. The backend is PostgREST + Auth with RLS policies as the
 /// API contract — the same tables, key, and policies the web app uses, zero
@@ -48,17 +50,40 @@ final class SupabaseService: ObservableObject {
         )
     }
 
-    /// Google OAuth through the system browser sheet; Supabase redirects back
-    /// via the kidmath:// URL scheme.
+    /// Native Google Sign-In: the SDK's sheet (branded "Larkit", never the
+    /// Supabase host the redirect flow showed) yields an ID token that
+    /// Supabase verifies directly — the iOS twin of the web's
+    /// signInWithIdToken path (src/auth/googleIdentity.js). The iOS client
+    /// id must be in the Supabase Google provider's authorized client ids,
+    /// with nonce checks skipped (the SDK sends none).
+    @MainActor
     func signInWithGoogle() async throws {
-        try await client.auth.signInWithOAuth(
-            provider: .google,
-            redirectTo: SupabaseConfig.authRedirectURL
+        guard let presenter = Self.topViewController() else {
+            throw NSError(domain: "Auth", code: 1, userInfo: [NSLocalizedDescriptionKey: "No screen to show the Google sign-in on."])
+        }
+        let result = try await GIDSignIn.sharedInstance.signIn(withPresenting: presenter)
+        guard let idToken = result.user.idToken?.tokenString else {
+            throw NSError(domain: "Auth", code: 2, userInfo: [NSLocalizedDescriptionKey: "Google returned no identity token."])
+        }
+        try await client.auth.signInWithIdToken(
+            credentials: .init(provider: .google, idToken: idToken, accessToken: result.user.accessToken.tokenString)
         )
     }
 
-    /// Deliver the OAuth callback URL (from .onOpenURL) to the auth client.
+    /// The view controller the Google sheet presents from.
+    @MainActor
+    private static func topViewController() -> UIViewController? {
+        let scenes = UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }
+        let window = scenes.flatMap(\.windows).first { $0.isKeyWindow } ?? scenes.first?.windows.first
+        var top = window?.rootViewController
+        while let presented = top?.presentedViewController { top = presented }
+        return top
+    }
+
+    /// Deliver an incoming URL (from .onOpenURL): the Google SDK's return
+    /// first, else any Supabase OAuth callback on kidmath://.
     func handleAuthCallback(_ url: URL) {
+        if GIDSignIn.sharedInstance.handle(url) { return }
         client.auth.handle(url)
     }
 

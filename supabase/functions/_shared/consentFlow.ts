@@ -50,7 +50,7 @@ export type ConsentDeps = {
   now?: () => number;
 };
 
-export type PendingKid = { firstName: string; age: string; grade: string };
+export type PendingKid = { firstName: string; age: string | null; grade: string };
 
 /**
  * Step 1 — the parent has begun creating their first child profile. Record

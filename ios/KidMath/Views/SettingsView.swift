@@ -182,7 +182,7 @@ struct SettingsView: View {
                             Text("playing now").font(.caption.weight(.bold)).foregroundStyle(Theme.teal)
                         }
                     }
-                    Text("Age \(kid.age) · Grade \(kid.grade) — all we store about them")
+                    Text("Grade \(kid.grade) — all we store about them")
                         .font(.footnote)
                         .foregroundStyle(theme.textSecondary)
                     HStack(spacing: 16) {
@@ -314,24 +314,24 @@ struct SettingsView: View {
 }
 
 
-/// Edit a kid's first name, age and grade — the same three fields the
-/// consent covers (web: AccountPage KidEditForm → updateKid).
+/// Edit a kid's first name, grade and colour — the same fields the consent
+/// covers (web: AccountPage KidEditForm → updateKid). Age is no longer asked.
 struct KidEditSheet: View {
     @EnvironmentObject private var app: AppModel
     @Environment(\.dismiss) private var dismiss
     let kid: KidProfile
 
     @State private var firstName: String
-    @State private var age: String
     @State private var grade: String
+    @State private var colour: KidColour
     @State private var busy = false
     @State private var error = ""
 
     init(kid: KidProfile) {
         self.kid = kid
         _firstName = State(initialValue: kid.firstName)
-        _age = State(initialValue: kid.age)
         _grade = State(initialValue: kid.grade)
+        _colour = State(initialValue: kid.colour.flatMap(KidColour.init(rawValue:)) ?? .seafoam)
     }
 
     var body: some View {
@@ -342,11 +342,8 @@ struct KidEditSheet: View {
                         .autocorrectionDisabled()
                         .textInputAutocapitalization(.words)
                 }
-                Section("Age") {
-                    Picker("Age", selection: $age) {
-                        ForEach(KidProfilesService.ages, id: \.self) { Text($0).tag($0) }
-                    }
-                    .pickerStyle(.segmented)
+                Section("Their colour") {
+                    KidColourPicker(selected: $colour, initial: String(firstName.prefix(1)).uppercased(), size: 52)
                 }
                 Section("Grade") {
                     Picker("Grade", selection: $grade) {
@@ -374,7 +371,7 @@ struct KidEditSheet: View {
         busy = true
         defer { busy = false }
         do {
-            _ = try await app.kidProfiles.updateKid(kid, firstName: firstName, age: age, grade: grade)
+            _ = try await app.kidProfiles.updateKid(kid, firstName: firstName, grade: grade, colour: colour)
             await app.refreshModeLevels()
             dismiss()
         } catch {

@@ -14,8 +14,8 @@ struct SessionView: View {
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @StateObject private var viewModel: SessionViewModel
 
-    /// Handoff 2a · 07: the hint is a sheet; the scratch pad opens IN the
-    /// problem card's column (the card shrinks to a strip) — closed by
+    /// Handoff 2a · 07 (revised): the hint is a sheet; the work space is a
+    /// right-hand drawer on iPad (a full-height sheet on iPhone) — closed by
     /// default in every mode, and it closes and clears on the next problem.
     enum Pane: String { case hint, work }
     @State private var pane: Pane?
@@ -40,7 +40,7 @@ struct SessionView: View {
 
     var body: some View {
         ZStack {
-            theme.background.ignoresSafeArea()
+            GraphPaperBackground()
             switch viewModel.phase {
             case .loading:
                 // Nesting (§16): a skeleton in the question card's shape —
@@ -48,12 +48,42 @@ struct SessionView: View {
                 skeletonCard
             case .question, .feedback:
                 GeometryReader { proxy in
-                    playArea(landscape: proxy.size.width > proxy.size.height && proxy.size.width >= 900, compact: proxy.size.width < 500)
-                        .animation(.easeOut(duration: 0.2), value: pane)
+                    let compact = proxy.size.width < 500
+                    let landscape = proxy.size.width > proxy.size.height
+                    playArea(size: proxy.size, landscape: landscape, compact: compact)
+                        .animation(reduceMotion ? nil : .easeOut(duration: 0.22), value: pane)
                         .sheet(isPresented: Binding(get: { pane == .hint }, set: { if !$0 { closePane() } })) {
                             hintSheet
                                 .presentationDetents([.medium, .large])
                                 .presentationDragIndicator(.visible)
+                        }
+                        // iPhone: the work space is a full-height sheet with the
+                        // problem pinned in short form and a way back.
+                        .sheet(isPresented: Binding(get: { compact && pane == .work }, set: { if !$0 { closePane() } })) {
+                            VStack(spacing: 0) {
+                                Text(promptText ?? "")
+                                    .font(theme.displayFont(size: 22))
+                                    .foregroundStyle(Theme.ink)
+                                    .lineLimit(2)
+                                    .minimumScaleFactor(0.6)
+                                    .padding(.horizontal, 20)
+                                    .padding(.top, 18)
+                                WorkspaceView()
+                                    .id(viewModel.questionKey)
+                                Button { closePane() } label: {
+                                    Text("Back to the problem")
+                                        .font(theme.displayFont(size: 18))
+                                        .foregroundStyle(Theme.cream)
+                                        .frame(maxWidth: .infinity)
+                                        .frame(height: 56)
+                                        .background(RoundedRectangle(cornerRadius: 16).fill(Theme.teal).shadow(color: Theme.deepTeal, radius: 0, x: 0, y: 4))
+                                }
+                                .buttonStyle(SpringButtonStyle())
+                                .padding(16)
+                            }
+                            .background(GraphPaperBackground())
+                            .presentationDetents([.large])
+                            .presentationCornerRadius(28)
                         }
                 }
             case .complete(let stars, let lifetime):
@@ -103,7 +133,7 @@ struct SessionView: View {
         .task { await viewModel.start() }
         .onDisappear { leaveSession() }
         .onChange(of: viewModel.questionKey) { _, _ in
-            // A new problem: the hint and the scratch pad close, the answer clears.
+            // A new problem: the hint and the work space close, the answer clears.
             pane = nil
             entry = ""
         }
@@ -182,93 +212,54 @@ struct SessionView: View {
         .background(theme.cardBackground)
     }
 
-    // MARK: - Play area (handoff 2a · 07)
+    // MARK: - Play area (handoff 2a · 07, revised)
 
-    /// Landscape iPad: two columns (1.1 : 1, 40 gap) — the problem card (or,
-    /// with the scratch pad open, the strip + pad) and the answer widget.
-    /// Portrait / iPhone: the card above the widget. The keypad never moves.
-    private func playArea(landscape: Bool, compact: Bool) -> some View {
-        VStack(spacing: 0) {
-            hud(compact: compact)
-                .padding(.horizontal, compact ? 16 : 48)
-                .padding(.top, 8)
-            if viewModel.isFledgingRun {
-                Text("\(viewModel.flightPass) of \(viewModel.sessionSize) to pass")
-                    .font(theme.bodyFont(size: 13, weight: .bold))
-                    .foregroundStyle(Theme.ink)
-                    .padding(.horizontal, 12)
-                    .padding(.vertical, 5)
-                    .background(Capsule().fill(Theme.seafoam))
-                    .padding(.top, 6)
-            }
-            GeometryReader { proxy in
-                if landscape {
-                    HStack(alignment: .top, spacing: 40) {
-                        problemColumn(compact: false)
-                            .frame(width: (proxy.size.width - 96 - 40) * 1.1 / 2.1)
-                            .frame(maxHeight: .infinity, alignment: .top)
-                        ScrollView(showsIndicators: false) {
-                            answerWidget
-                                .id(viewModel.questionKey)
-                                .padding(.bottom, 12)
-                        }
-                    }
-                    .padding(.horizontal, 48)
-                    .padding(.vertical, 16)
-                } else {
+    /// One centred column (560pt landscape, 620pt portrait, full width on
+    /// iPhone): problem card → figure → keypad, vertically centred. The work
+    /// space is a right-hand drawer (480 / 400pt) that the column shifts left
+    /// for, so the keypad and Go are never covered.
+    private func playArea(size: CGSize, landscape: Bool, compact: Bool) -> some View {
+        let drawerWidth: CGFloat = landscape ? 480 : 400
+        let drawerOpen = pane == .work && !compact
+        return HStack(spacing: 0) {
+            VStack(spacing: 0) {
+                hud(compact: compact, tight: drawerOpen)
+                    .padding(.horizontal, compact ? 16 : 40)
+                    .padding(.top, 8)
+                if viewModel.isFledgingRun {
+                    Text("\(viewModel.flightPass) of \(viewModel.sessionSize) to pass")
+                        .font(theme.bodyFont(size: 13, weight: .bold))
+                        .foregroundStyle(Theme.ink)
+                        .padding(.horizontal, 12)
+                        .padding(.vertical, 5)
+                        .background(Capsule().fill(Theme.seafoam))
+                        .padding(.top, 6)
+                }
+                GeometryReader { proxy in
                     ScrollView(showsIndicators: false) {
-                        VStack(spacing: compact ? 20 : 28) {
-                            problemColumn(compact: compact)
+                        VStack(spacing: compact ? 20 : 24) {
+                            questionCard
                             answerWidget
                                 .id(viewModel.questionKey)
                         }
-                        .frame(maxWidth: compact ? .infinity : 620)
-                        .padding(.horizontal, compact ? 16 : 48)
+                        .frame(maxWidth: compact ? .infinity : (landscape ? 560 : 620))
+                        .padding(.horizontal, compact ? 16 : 40)
                         .padding(.vertical, 12)
                         .frame(maxWidth: .infinity, minHeight: proxy.size.height)
                     }
                 }
             }
-        }
-    }
+            .frame(maxWidth: .infinity)
 
-    /// The problem card, or the strip + scratch pad when the pad is open.
-    @ViewBuilder
-    private func problemColumn(compact: Bool) -> some View {
-        if pane == .work {
-            VStack(spacing: 14) {
-                problemStrip
-                WorkspaceView()
+            if drawerOpen {
+                WorkspaceView(onClose: { closePane() })
                     .id(viewModel.questionKey)
-                    .frame(minHeight: compact ? 260 : 380)
-                    .frame(maxHeight: .infinity)
+                    .frame(width: drawerWidth)
+                    .background(Color.white)
+                    .overlay(alignment: .leading) { Rectangle().fill(Theme.ink.opacity(0.08)).frame(width: 1) }
+                    .transition(reduceMotion ? .opacity : .move(edge: .trailing))
             }
-        } else {
-            questionCard
         }
-    }
-
-    /// With the pad open the card shrinks to its mode label, the problem at
-    /// Fredoka 36 and the answer box.
-    private var problemStrip: some View {
-        HStack(alignment: .center, spacing: 16) {
-            VStack(alignment: .leading, spacing: 4) {
-                Text(mode.label.uppercased())
-                    .font(theme.bodyFont(size: 13, weight: .heavy))
-                    .tracking(1)
-                    .foregroundStyle(Theme.ink.opacity(0.6))
-                Text(promptText ?? "")
-                    .font(theme.displayFont(size: 36))
-                    .foregroundStyle(Theme.ink)
-                    .lineLimit(2)
-                    .minimumScaleFactor(0.5)
-            }
-            Spacer(minLength: 0)
-            if usesNumberPad { answerBox }
-        }
-        .padding(20)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(RoundedRectangle(cornerRadius: 28).fill(theme.cardBackground).shadow(color: Theme.ink.opacity(0.08), radius: 0, y: 5))
     }
 
     private var usesNumberPad: Bool {
@@ -288,9 +279,10 @@ struct SessionView: View {
             .accessibilityLabel(entry.isEmpty ? "Your answer, empty" : "Your answer: \(entry)")
     }
 
-    /// The HUD: close · lark progress bar · stars this flight · Hint · Scratch pad.
-    private func hud(compact: Bool) -> some View {
-        HStack(spacing: compact ? 10 : 14) {
+    /// The HUD: close · lark progress bar · stars this flight · Hint · Work space.
+    private func hud(compact: Bool, tight: Bool = false) -> some View {
+        let iconOnly = compact || tight
+        return HStack(spacing: compact ? 10 : 14) {
             Button { finish() } label: {
                 FeatherIcon(glyph: .close, size: 18, color: Theme.ink)
                     .frame(width: 52, height: 52)
@@ -311,8 +303,8 @@ struct SessionView: View {
             .accessibilityElement(children: .ignore)
             .accessibilityLabel("\(viewModel.starsThisFlight) stars this flight")
 
-            hudPill(label: "Hint", icon: "lightbulb", active: pane == .hint, compact: compact, accessibility: pane == .hint ? "Close the hint" : "Show a hint") { openHint() }
-            hudPill(label: "Scratch pad", icon: "pencil", active: pane == .work, compact: compact, accessibility: pane == .work ? "Close the scratch pad" : "Open the scratch pad") { toggleWorkPane() }
+            hudPill(label: "Hint", icon: "lightbulb", active: pane == .hint, compact: iconOnly, accessibility: pane == .hint ? "Close the hint" : "Show a hint") { openHint() }
+            hudPill(label: "Work space", icon: "pencil", active: pane == .work, compact: iconOnly, accessibility: pane == .work ? "Close the work space" : "Open the work space") { toggleWorkPane() }
         }
     }
 

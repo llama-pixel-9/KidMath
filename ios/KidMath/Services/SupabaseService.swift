@@ -37,6 +37,18 @@ final class SupabaseService: ObservableObject {
     }
 
     var isSignedIn: Bool { user != nil }
+
+    /// The stored session, restored. `isSignedIn` is false until the auth
+    /// stream has emitted once; anything that decides a launch screen must
+    /// await this first or a signed-in parent looks signed out.
+    func restoredSession() async -> Bool {
+        if user != nil { return true }
+        if let session = try? await client.auth.session {
+            user = session.user
+            return true
+        }
+        return false
+    }
     var userId: UUID? { user?.id }
     var userEmail: String? { user?.email }
 

@@ -140,14 +140,22 @@ struct HomeView: View {
     /// First flight (§20): new families get the value → account → kid flow;
     /// a returning signed-in family with kids and no active kid gets the
     /// profile picker — never a login form.
+    /// The landing (2a flow §4): a signed-in parent never sees Welcome again —
+    /// one kid goes straight to Home, two or more to the profile picker
+    /// (no grown-up check on the way in; editing kids is gated inside).
+    /// Signed out and never finished first flight → Welcome.
     private func presentFirstFlightIfNeeded() async {
         guard topicMode == nil, !showPaywall else { return }
-        if app.supabase.isSignedIn {
+        if await app.supabase.restoredSession() {
             UserDefaults.standard.set(true, forKey: FirstFlightView.completedKey)
             await app.kidProfiles.refresh()
-            if !app.kidProfiles.kids.isEmpty && app.kidProfiles.activeKidId == nil {
+            let kids = app.kidProfiles.kids
+            if kids.count == 1, app.kidProfiles.activeKidId == nil {
+                app.kidProfiles.setActiveKid(kids[0])
+            } else if kids.count > 1, app.kidProfiles.activeKidId == nil || !kids.contains(where: { $0.id.uuidString == app.kidProfiles.activeKidId }) {
                 showProfilePicker = true
             }
+            refreshTopicChips()
         } else if !UserDefaults.standard.bool(forKey: FirstFlightView.completedKey) {
             showFirstFlight = true
         }

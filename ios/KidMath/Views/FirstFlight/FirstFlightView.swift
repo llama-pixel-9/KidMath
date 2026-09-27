@@ -144,8 +144,12 @@ struct FirstFlightView: View {
                 await app.progressStore.mergeLocalToCloud(userId: userId)
             }
             await app.kidProfiles.refresh()
-            // Returning parents with kids skip straight out to the picker.
-            if !app.kidProfiles.kids.isEmpty {
+            // Returning parents: one kid flies straight in, more go to the
+            // picker (Home presents it); no kids yet → add one.
+            let kids = app.kidProfiles.kids
+            if kids.count == 1 {
+                finish(activateKid: kids[0])
+            } else if kids.count > 1 {
                 finish(activateKid: nil)
             } else {
                 step = .kid

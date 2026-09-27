@@ -52,6 +52,10 @@ targets:
         # Home-screen label. The target stays KidMath (renaming it would ripple
         # through TEST_HOST and @testable imports); the user-facing name is larkit.
         CFBundleDisplayName: larkit
+        # The system's own sheets ("“larkit” Wants to Use accounts.google.com
+        # to Sign In", permission prompts) read CFBundleName, not the display
+        # name — without this they said "KidMath".
+        CFBundleName: larkit
         UILaunchScreen:
           UIColorName: LaunchBackground
         # HTTPS only (standard crypto) — skips the export-compliance question

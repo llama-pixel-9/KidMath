@@ -447,9 +447,10 @@ struct GoogleGMark: View {
 
 // MARK: - 03 · Who's learning (handoff 2a · 04)
 
-/// First name, their colour, grade — no age. The CTA reads "Start {name}'s
-/// first flight" and is disabled until name and grade are set. Also hosts the
-/// consent-pending screen when the household has no consent on file yet.
+/// First name, their colour, age, grade — the fields the consent notice
+/// lists. The CTA reads "Start {name}'s first flight" and is disabled until
+/// name, age and grade are set. Also hosts the consent-pending screen when
+/// the household has no consent on file yet.
 struct KidStep: View {
     @EnvironmentObject private var app: AppModel
     @Environment(\.theme) private var theme
@@ -458,6 +459,7 @@ struct KidStep: View {
 
     @State private var firstName = ""
     @State private var colour: KidColour = .seafoam
+    @State private var age: String?
     @State private var grade: String?
     @State private var errorMessage = ""
     @State private var busy = false
@@ -467,14 +469,14 @@ struct KidStep: View {
     @State private var pending: KidProfilesService.PendingConsent?
 
     private var trimmedName: String { firstName.trimmingCharacters(in: .whitespaces) }
-    private var complete: Bool { !trimmedName.isEmpty && grade != nil }
+    private var complete: Bool { !trimmedName.isEmpty && age != nil && grade != nil }
 
     var body: some View {
         if let pending {
             ConsentPendingView(
                 pending: pending,
                 email: app.supabase.userEmail ?? "your email",
-                onResend: { try await app.kidProfiles.requestParentalConsent(firstName: pending.firstName, grade: pending.grade, colour: pending.colour) },
+                onResend: { try await app.kidProfiles.requestParentalConsent(firstName: pending.firstName, age: pending.age, grade: pending.grade, colour: pending.colour) },
                 onConfirmed: { kid in
                     self.pending = nil
                     Task {
@@ -498,7 +500,7 @@ struct KidStep: View {
                 .font(theme.displayFont(size: regular ? 42 : 36))
                 .foregroundStyle(Theme.ink)
                 .padding(.top, 20)
-            Text("First name and grade. That's all we store about your child.")
+            Text("First name, age and grade. That's all we store about your child.")
                 .font(theme.bodyFont(size: 18, weight: .semibold))
                 .foregroundStyle(Theme.ink.opacity(0.7))
                 .fixedSize(horizontal: false, vertical: true)
@@ -516,12 +518,19 @@ struct KidStep: View {
                 colourField.padding(.top, 28)
             }
 
-            Text("Grade")
+            Text("Age")
                 .font(theme.bodyFont(size: 16, weight: .bold))
                 .foregroundStyle(Theme.ink)
                 .padding(.top, regular ? 40 : 28)
                 .padding(.bottom, 10)
-            gradeGrid(regular: regular)
+            tileGrid(KidProfilesService.ages, selection: $age, columns: regular ? 8 : 4, regular: regular)
+
+            Text("Grade")
+                .font(theme.bodyFont(size: 16, weight: .bold))
+                .foregroundStyle(Theme.ink)
+                .padding(.top, regular ? 32 : 24)
+                .padding(.bottom, 10)
+            tileGrid(KidProfilesService.grades, selection: $grade, columns: regular ? 7 : 4, regular: regular)
 
             if !errorMessage.isEmpty {
                 Text(errorMessage)
@@ -572,18 +581,19 @@ struct KidStep: View {
         }
     }
 
-    private func gradeGrid(regular: Bool) -> some View {
-        let grades = KidProfilesService.grades
-        let columns = Array(repeating: GridItem(.flexible(), spacing: 12), count: regular ? 7 : 4)
+    /// The 2a tile row (age and grade share it): white tiles, the selected
+    /// one teal with a bottom edge.
+    private func tileGrid(_ options: [String], selection: Binding<String?>, columns count: Int, regular: Bool) -> some View {
+        let columns = Array(repeating: GridItem(.flexible(), spacing: 12), count: count)
         return LazyVGrid(columns: columns, spacing: 12) {
-            ForEach(grades, id: \.self) { option in
-                let isSelected = grade == option
-                Button { grade = option } label: {
+            ForEach(options, id: \.self) { option in
+                let isSelected = selection.wrappedValue == option
+                Button { selection.wrappedValue = option } label: {
                     Text(option)
                         .font(theme.displayFont(size: 20))
                         .foregroundStyle(isSelected ? Theme.cream : Theme.ink)
                         .frame(maxWidth: .infinity)
-                        .frame(height: regular ? 72 : 56)
+                        .frame(height: regular ? 64 : 56)
                         .background(
                             RoundedRectangle(cornerRadius: 16)
                                 .fill(isSelected ? Theme.teal : Color.white)
@@ -623,11 +633,11 @@ struct KidStep: View {
     }
 
     private func save() async {
-        guard let grade, complete else { return }
+        guard let age, let grade, complete else { return }
         busy = true
         defer { busy = false }
         do {
-            switch try await app.kidProfiles.addKid(firstName: trimmedName, grade: grade, colour: colour) {
+            switch try await app.kidProfiles.addKid(firstName: trimmedName, age: age, grade: grade, colour: colour) {
             case .added(let kid):
                 errorMessage = ""
                 onDone([kid])

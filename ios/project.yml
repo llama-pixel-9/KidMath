@@ -21,6 +21,11 @@ packages:
   Supabase:
     url: https://github.com/supabase/supabase-swift
     majorVersion: 2.0.0
+  # Native Google Sign-In: the consent sheet carries the Larkit brand and no
+  # Supabase host (the same fix the web made with Google Identity Services).
+  GoogleSignIn:
+    url: https://github.com/google/GoogleSignIn-iOS
+    majorVersion: 8.0.0
 
 targets:
   KidMath:
@@ -36,6 +41,8 @@ targets:
     dependencies:
       - package: Supabase
         product: Supabase
+      - package: GoogleSignIn
+        product: GoogleSignIn
     # Entitlements are hand-managed files (not XcodeGen-generated) because
     # Debug and Release differ: Debug carries the StoreKit-testing key.
     # Release: KidMath/KidMath.entitlements · Debug: KidMathDebug.entitlements
@@ -61,10 +68,18 @@ targets:
           [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
         UISupportedInterfaceOrientations~ipad:
           [UIInterfaceOrientationPortrait, UIInterfaceOrientationPortraitUpsideDown, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
-        # OAuth (Google via Supabase) redirects back into the app on this scheme.
+        # kidmath://auth-callback — kept for any Supabase-redirect OAuth (none
+        # today; Apple and Google both use signInWithIdToken).
+        # The second scheme is the Google iOS client's reversed id: the Google
+        # Sign-In SDK returns to the app on it.
         CFBundleURLTypes:
           - CFBundleURLName: auth-callback
             CFBundleURLSchemes: [kidmath]
+          - CFBundleURLName: google-signin
+            CFBundleURLSchemes: [com.googleusercontent.apps.978428509112-pfgifb9cskjosp959kjbpcdma05afvv8]
+        # The iOS OAuth client (Google Cloud project under nagasai@larkit.io,
+        # created 2026-09-26). An iOS client has no secret; the bundle id binds it.
+        GIDClientID: 978428509112-pfgifb9cskjosp959kjbpcdma05afvv8.apps.googleusercontent.com
     preBuildScripts:
       - name: Check engine bundle
         shell: /bin/sh

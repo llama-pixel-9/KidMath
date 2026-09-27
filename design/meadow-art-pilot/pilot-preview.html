@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Larkit Meadow — pilot bird art v0.2</title>
+<style>
+  body { font-family: Nunito, -apple-system, sans-serif; background:#FAF9F5; color:#14231F;
+         max-width: 1000px; margin: 0 auto; padding: 32px 20px; }
+  h1 { font-family: Fredoka, sans-serif; font-weight:600; }
+  .pill { display:inline-block; font: 11px 'IBM Plex Mono', monospace; letter-spacing:.1em;
+          border:1.5px solid #C4471B; color:#C4471B; border-radius:999px; padding:4px 12px; }
+  .card { background:#fff; border-radius:20px; padding:20px 24px; margin:18px 0;
+          box-shadow:0 1px 6px rgba(20,35,31,.08); }
+  .card h2 { margin:0; font-family:Fredoka,sans-serif; font-weight:600; }
+  .note { color:#14231F99; margin:4px 0 12px; font-size:14px; }
+  .row { display:flex; gap:14px; align-items:stretch; flex-wrap:wrap; }
+  .scene { border-radius:14px; height:190px; }
+  .portrait svg { height:190px; border-radius:10px; }
+  .lbl { font: 9px 'IBM Plex Mono', monospace; fill:#14231F88; letter-spacing:.06em; }
+  .night-lbl { fill:#C9E8DF99; }
+</style></head><body>
+<span class="pill">DRAFT v0.3 · PILOT BATCH · 4 OF 22</span>
+<h1>Meadow bird art — pilot</h1>
+<p>v0.3 — the round v0.1 geometry kept, execution polished: hidden head/body seams,
+feet with toes, two-feather tails, two-mandible beaks, restrained feather hints,
+upgraded Field Guide plates. Compare all three rounds in compare.html.</p>
+
+  <div class="card">
+    <h2>Skylark</h2><p class="note">The starter — she arrives with the kid on day one · footprint 46×40</p>
+    <div class="row">
+      <svg viewBox="0 0 440 190" class="scene">
+        <rect width="440" height="190" fill="#C9E8DF"/>
+        <rect y="120" width="440" height="70" fill="#A7DED3"/>
+        <rect y="118" width="440" height="10" fill="#8ED0C0"/>
+        <g transform="translate(80,170) scale(0.7)">
+<g stroke-linejoin="round" stroke-linecap="round">
+  <!-- legs + toes (long hind claw) -->
+  <g stroke="#B98A5F" stroke-width="1.8" fill="none">
+    <path d="M -2.5 -7.5 L -1.5 -1 M -1.5 -1 L 1.6 -0.2 M -1.5 -1 L -2.8 0.2 M -1.5 -1 L -5.4 -0.3"/>
+    <path d="M 6 -7.8 L 6.8 -1 M 6.8 -1 L 9.9 -0.2 M 6.8 -1 L 5.5 0.2 M 6.8 -1 L 3 -0.3"/>
+  </g>
+  <!-- tail: two feathers -->
+  <path d="M -22.5 -22.5 L -11 -17.5 L -12 -12 L -20.5 -16.5 Z" fill="#8A6A50" stroke="#14231F" stroke-width="1.5"/>
+  <path d="M -19.5 -19.8 L -12.5 -16.2" stroke="#6E5138" stroke-width="1.1" fill="none"/>
+  <!-- body (v0.1 round base) -->
+  <path d="M -13 -15 Q -14 -24 -5 -27 Q 6 -30 12 -24 Q 16 -19 14 -13 Q 11 -7 2 -6.5 Q -8 -6.5 -13 -15 Z"
+        fill="#D9B98A" stroke="#14231F" stroke-width="1.6"/>
+  <!-- cream belly -->
+  <path d="M -8 -9.5 Q 0 -5.5 9 -9.5 Q 12 -12 12 -15 Q 4 -10.5 -6 -12.5 Z" fill="#F6ECD9" stroke="none"/>
+  <!-- head -->
+  <circle cx="12" cy="-28" r="7.2" fill="#D9B98A" stroke="#14231F" stroke-width="1.6"/>
+  <!-- blend patch: hides the head/body seam -->
+  <path d="M 5.6 -26.6 Q 10.5 -29.5 14.5 -25.5 Q 13.5 -21.5 9 -20.8 Q 6 -23 5.6 -26.6 Z"
+        fill="#D9B98A" stroke="none"/>
+  <!-- folded wing (v0.1 teardrop) + tucked primary hints -->
+  <path d="M -11 -19 Q -3 -25 6 -22 Q 3 -14 -5 -13 Q -10 -14 -11 -19 Z"
+        fill="#B9905F" stroke="#14231F" stroke-width="1.2"/>
+  <g stroke="#8A6448" stroke-width="2.3" fill="none">
+    <path d="M -6.5 -14.8 C -10 -15.2 -13 -16.2 -15.5 -17.6"/>
+  </g>
+  <path d="M -8 -17.5 L 1 -20 M -7 -15 L 2 -17" stroke="#6E5138" stroke-width="1.1" fill="none"/>
+  <!-- crest tuft -->
+  <path d="M 9 -34.6 L 10.2 -38.2 L 11.8 -34.7 Z M 12.4 -34.7 L 14 -37.6 L 15 -34 Z"
+        fill="#B9905F" stroke="#14231F" stroke-width="1.2"/>
+  <!-- cream eyebrow -->
+  <path d="M 8.5 -30.5 Q 12.5 -32.5 16.5 -30" stroke="#F6ECD9" stroke-width="1.7" fill="none"/>
+  <!-- beak: two mandibles -->
+  <path d="M 18.6 -29.2 L 24.5 -27.9 L 18.7 -27.1 Z" fill="#C79A5B" stroke="#14231F" stroke-width="1.05"/>
+  <path d="M 18.7 -26.9 L 23.3 -26.5 L 18.7 -25.7 Z" fill="#B08448" stroke="#14231F" stroke-width="1.05"/>
+  <!-- eye -->
+  <circle cx="14.2" cy="-29" r="1.75" fill="#14231F"/>
+  <circle cx="14.85" cy="-29.65" r="0.58" fill="#FFFFFF"/>
+</g></g><g transform="translate(200,170) scale(0.85)">
+<g stroke-linejoin="round" stroke-linecap="round">
+  <!-- legs + toes (long hind claw) -->
+  <g stroke="#B98A5F" stroke-width="1.8" fill="none">
+    <path d="M -2.5 -7.5 L -1.5 -1 M -1.5 -1 L 1.6 -0.2 M -1.5 -1 L -2.8 0.2 M -1.5 -1 L -5.4 -0.3"/>
+    <path d="M 6 -7.8 L 6.8 -1 M 6.8 -1 L 9.9 -0.2 M 6.8 -1 L 5.5 0.2 M 6.8 -1 L 3 -0.3"/>
+  </g>
+  <!-- tail: two feathers -->
+  <path d="M -22.5 -22.5 L -11 -17.5 L -12 -12 L -20.5 -16.5 Z" fill="#8A6A50" stroke="#14231F" stroke-width="1.5"/>
+  <path d="M -19.5 -19.8 L -12.5 -16.2" stroke="#6E5138" stroke-width="1.1" fill="none"/>
+  <!-- body (v0.1 round base) -->
+  <path d="M -13 -15 Q -14 -24 -5 -27 Q 6 -30 12 -24 Q 16 -19 14 -13 Q 11 -7 2 -6.5 Q -8 -6.5 -13 -15 Z"
+        fill="#D9B98A" stroke="#14231F" stroke-width="1.6"/>
+  <!-- cream belly -->
+  <path d="M -8 -9.5 Q 0 -5.5 9 -9.5 Q 12 -12 12 -15 Q 4 -10.5 -6 -12.5 Z" fill="#F6ECD9" stroke="none"/>
+  <!-- head -->
+  <circle cx="12" cy="-28" r="7.2" fill="#D9B98A" stroke="#14231F" stroke-width="1.6"/>
+  <!-- blend patch: hides the head/body seam -->
+  <path d="M 5.6 -26.6 Q 10.5 -29.5 14.5 -25.5 Q 13.5 -21.5 9 -20.8 Q 6 -23 5.6 -26.6 Z"
+        fill="#D9B98A" stroke="none"/>
+  <!-- folded wing (v0.1 teardrop) + tucked primary hints -->
+  <path d="M -11 -19 Q -3 -25 6 -22 Q 3 -14 -5 -13 Q -10 -14 -11 -19 Z"
+        fill="#B9905F" stroke="#14231F" stroke-width="1.2"/>
+  <g stroke="#8A6448" stroke-width="2.3" fill="none">
+    <path d="M -6.5 -14.8 C -10 -15.2 -13 -16.2 -15.5 -17.6"/>
+  </g>
+  <path d="M -8 -17.5 L 1 -20 M -7 -15 L 2 -17" stroke="#6E5138" stroke-width="1.1" fill="none"/>
+  <!-- crest tuft -->
+  <path d="M 9 -34.6 L 10.2 -38.2 L 11.8 -34.7 Z M 12.4 -34.7 L 14 -37.6 L 15 -34 Z"
+        fill="#B9905F" stroke="#14231F" stroke-width="1.2"/>
+  <!-- cream eyebrow -->
+  <path d="M 8.5 -30.5 Q 12.5 -32.5 16.5 -30" stroke="#F6ECD9" stroke-width="1.7" fill="none"/>
+  <!-- beak: two mandibles -->
+  <path d="M 18.6 -29.2 L 24.5 -27.9 L 18.7 -27.1 Z" fill="#C79A5B" stroke="#14231F" stroke-width="1.05"/>
+  <path d="M 18.7 -26.9 L 23.3 -26.5 L 18.7 -25.7 Z" fill="#B08448" stroke="#14231F" stroke-width="1.05"/>
+  <!-- eye -->
+  <circle cx="14.2" cy="-29" r="1.75" fill="#14231F"/>
+  <circle cx="14.85" cy="-29.65" r="0.58" fill="#FFFFFF"/>
+</g></g><g transform="translate(340,170) scale(1.0)">
+<g stroke-linejoin="round" stroke-linecap="round">
+  <!-- legs + toes (long hind claw) -->
+  <g stroke="#B98A5F" stroke-width="1.8" fill="none">
+    <path d="M -2.5 -7.5 L -1.5 -1 M -1.5 -1 L 1.6 -0.2 M -1.5 -1 L -2.8 0.2 M -1.5 -1 L -5.4 -0.3"/>
+    <path d="M 6 -7.8 L 6.8 -1 M 6.8 -1 L 9.9 -0.2 M 6.8 -1 L 5.5 0.2 M 6.8 -1 L 3 -0.3"/>
+  </g>
+  <!-- tail: two feathers -->
+  <path d="M -22.5 -22.5 L -11 -17.5 L -12 -12 L -20.5 -16.5 Z" fill="#8A6A50" stroke="#14231F" stroke-width="1.5"/>
+  <path d="M -19.5 -19.8 L -12.5 -16.2" stroke="#6E5138" stroke-width="1.1" fill="none"/>
+  <!-- body (v0.1 round base) -->
+  <path d="M -13 -15 Q -14 -24 -5 -27 Q 6 -30 12 -24 Q 16 -19 14 -13 Q 11 -7 2 -6.5 Q -8 -6.5 -13 -15 Z"
+        fill="#D9B98A" stroke="#14231F" stroke-width="1.6"/>
+  <!-- cream belly -->
+  <path d="M -8 -9.5 Q 0 -5.5 9 -9.5 Q 12 -12 12 -15 Q 4 -10.5 -6 -12.5 Z" fill="#F6ECD9" stroke="none"/>
+  <!-- head -->
+  <circle cx="12" cy="-28" r="7.2" fill="#D9B98A" stroke="#14231F" stroke-width="1.6"/>
+  <!-- blend patch: hides the head/body seam -->
+  <path d="M 5.6 -26.6 Q 10.5 -29.5 14.5 -25.5 Q 13.5 -21.5 9 -20.8 Q 6 -23 5.6 -26.6 Z"
+        fill="#D9B98A" stroke="none"/>
+  <!-- folded wing (v0.1 teardrop) + tucked primary hints -->
+  <path d="M -11 -19 Q -3 -25 6 -22 Q 3 -14 -5 -13 Q -10 -14 -11 -19 Z"
+        fill="#B9905F" stroke="#14231F" stroke-width="1.2"/>
+  <g stroke="#8A6448" stroke-width="2.3" fill="none">
+    <path d="M -6.5 -14.8 C -10 -15.2 -13 -16.2 -15.5 -17.6"/>
+  </g>
+  <path d="M -8 -17.5 L 1 -20 M -7 -15 L 2 -17" stroke="#6E5138" stroke-width="1.1" fill="none"/>
+  <!-- crest tuft -->
+  <path d="M 9 -34.6 L 10.2 -38.2 L 11.8 -34.7 Z M 12.4 -34.7 L 14 -37.6 L 15 -34 Z"
+        fill="#B9905F" stroke="#14231F" stroke-width="1.2"/>
+  <!-- cream eyebrow -->
+  <path d="M 8.5 -30.5 Q 12.5 -32.5 16.5 -30" stroke="#F6ECD9" stroke-width="1.7" fill="none"/>
+  <!-- beak: two mandibles -->
+  <path d="M 18.6 -29.2 L 24.5 -27.9 L 18.7 -27.1 Z" fill="#C79A5B" stroke="#14231F" stroke-width="1.05"/>
+  <path d="M 18.7 -26.9 L 23.3 -26.5 L 18.7 -25.7 Z" fill="#B08448" stroke="#14231F" stroke-width="1.05"/>
+  <!-- eye -->
+  <circle cx="14.2" cy="-29" r="1.75" fill="#14231F"/>
+  <circle cx="14.85" cy="-29.65" r="0.58" fill="#FFFFFF"/>
+</g></g>
+        <text x="80" y="184" text-anchor="middle" class="lbl">sky ×0.7</text>
+        <text x="200" y="184" text-anchor="middle" class="lbl">canopy ×0.85</text>
+        <text x="340" y="184" text-anchor="middle" class="lbl">mid ×1.0</text>
+      </svg>
+      <svg viewBox="0 0 160 190" class="scene night">
+        <rect width="160" height="190" fill="#1E5A50"/>
+        <rect y="120" width="160" height="70" fill="#174A41"/>
+        <g transform="translate(80,170)">
+<g stroke-linejoin="round" stroke-linecap="round">
+  <!-- legs + toes (long hind claw) -->
+  <g stroke="#0A2E28" stroke-width="1.8" fill="none">
+    <path d="M -2.5 -7.5 L -1.5 -1 M -1.5 -1 L 1.6 -0.2 M -1.5 -1 L -2.8 0.2 M -1.5 -1 L -5.4 -0.3"/>
+    <path d="M 6 -7.8 L 6.8 -1 M 6.8 -1 L 9.9 -0.2 M 6.8 -1 L 5.5 0.2 M 6.8 -1 L 3 -0.3"/>
+  </g>
+  <!-- tail: two feathers -->
+  <path d="M -22.5 -22.5 L -11 -17.5 L -12 -12 L -20.5 -16.5 Z" fill="#0A2E28" stroke="#0A2E28" stroke-width="1.5"/>
+  <path d="M -19.5 -19.8 L -12.5 -16.2" stroke="#0A2E28" stroke-width="1.1" fill="none"/>
+  <!-- body (v0.1 round base) -->
+  <path d="M -13 -15 Q -14 -24 -5 -27 Q 6 -30 12 -24 Q 16 -19 14 -13 Q 11 -7 2 -6.5 Q -8 -6.5 -13 -15 Z"
+        fill="#0A2E28" stroke="#0A2E28" stroke-width="1.6"/>
+  <!-- cream belly -->
+  <path d="M -8 -9.5 Q 0 -5.5 9 -9.5 Q 12 -12 12 -15 Q 4 -10.5 -6 -12.5 Z" fill="#0A2E28" stroke="none"/>
+  <!-- head -->
+  <circle cx="12" cy="-28" r="7.2" fill="#0A2E28" stroke="#0A2E28" stroke-width="1.6"/>
+  <!-- blend patch: hides the head/body seam -->
+  <path d="M 5.6 -26.6 Q 10.5 -29.5 14.5 -25.5 Q 13.5 -21.5 9 -20.8 Q 6 -23 5.6 -26.6 Z"
+        fill="#0A2E28" stroke="none"/>
+  <!-- folded wing (v0.1 teardrop) + tucked primary hints -->
+  <path d="M -11 -19 Q -3 -25 6 -22 Q 3 -14 -5 -13 Q -10 -14 -11 -19 Z"
+        fill="#0A2E28" stroke="#0A2E28" stroke-width="1.2"/>
+  <g stroke="#0A2E28" stroke-width="2.3" fill="none">
+    <path d="M -6.5 -14.8 C -10 -15.2 -13 -16.2 -15.5 -17.6"/>
+  </g>
+  <path d="M -8 -17.5 L 1 -20 M -7 -15 L 2 -17" stroke="#0A2E28" stroke-width="1.1" fill="none"/>
+  <!-- crest tuft -->
+  <path d="M 9 -34.6 L 10.2 -38.2 L 11.8 -34.7 Z M 12.4 -34.7 L 14 -37.6 L 15 -34 Z"
+        fill="#0A2E28" stroke="#0A2E28" stroke-width="1.2"/>
+  <!-- cream eyebrow -->
+  <path d="M 8.5 -30.5 Q 12.5 -32.5 16.5 -30" stroke="#0A2E28" stroke-width="1.7" fill="none"/>
+  <!-- beak: two mandibles -->
+  <path d="M 18.6 -29.2 L 24.5 -27.9 L 18.7 -27.1 Z" fill="#0A2E28" stroke="#0A2E28" stroke-width="1.05"/>
+  <path d="M 18.7 -26.9 L 23.3 -26.5 L 18.7 -25.7 Z" fill="#0A2E28" stroke="#0A2E28" stroke-width="1.05"/>
+  <!-- eye -->
+  <circle cx="14.2" cy="-29" r="1.75" fill="#0A2E28"/>
+  <circle cx="14.85" cy="-29.65" r="0.58" fill="#0A2E28"/>
+</g></g>
+        <text x="80" y="184" text-anchor="middle" class="lbl night-lbl">asleep silhouette</text>
+      </svg>
+      <div class="portrait"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400">
+  <rect width="300" height="400" fill="#FFFDF4"/>
+  <rect x="10" y="10" width="280" height="380" rx="14" fill="none" stroke="#14231F" stroke-width="2.5"/>
+  <rect x="20" y="20" width="260" height="296" rx="10" fill="#DCEFE7"/>
+  <!-- distant meadow line -->
+  <path d="M 20 268 Q 90 258 150 266 T 280 264 V 316 H 20 Z" fill="#BFE3D6"/>
+  <!-- branch from the left with leaf sprigs -->
+  <path d="M 20 292 C 70 288 120 290 158 291" stroke="#B08968" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M 60 289 q -6 -12 3 -18 q 7 10 -3 18 Z M 104 288 q -4 -13 6 -17 q 5 11 -6 17 Z"
+        fill="#7FCFBE" stroke="#3E9E8E" stroke-width="1.2"/>
+  <!-- soft ground shadow -->
+  <ellipse cx="150" cy="293" rx="46" ry="6" fill="#14231F" opacity="0.08"/>
+  <g transform="translate(150,291) scale(3.17)">
+<g stroke-linejoin="round" stroke-linecap="round">
+  <!-- legs + toes (long hind claw) -->
+  <g stroke="#B98A5F" stroke-width="1.8" fill="none">
+    <path d="M -2.5 -7.5 L -1.5 -1 M -1.5 -1 L 1.6 -0.2 M -1.5 -1 L -2.8 0.2 M -1.5 -1 L -5.4 -0.3"/>
+    <path d="M 6 -7.8 L 6.8 -1 M 6.8 -1 L 9.9 -0.2 M 6.8 -1 L 5.5 0.2 M 6.8 -1 L 3 -0.3"/>
+  </g>
+  <!-- tail: two feathers -->
+  <path d="M -22.5 -22.5 L -11 -17.5 L -12 -12 L -20.5 -16.5 Z" fill="#8A6A50" stroke="#14231F" stroke-width="1.5"/>
+  <path d="M -19.5 -19.8 L -12.5 -16.2" stroke="#6E5138" stroke-width="1.1" fill="none"/>
+  <!-- body (v0.1 round base) -->
+  <path d="M -13 -15 Q -14 -24 -5 -27 Q 6 -30 12 -24 Q 16 -19 14 -13 Q 11 -7 2 -6.5 Q -8 -6.5 -13 -15 Z"
+        fill="#D9B98A" stroke="#14231F" stroke-width="1.6"/>
+  <!-- cream belly -->
+  <path d="M -8 -9.5 Q 0 -5.5 9 -9.5 Q 12 -12 12 -15 Q 4 -10.5 -6 -12.5 Z" fill="#F6ECD9" stroke="none"/>
+  <!-- head -->
+  <circle cx="12" cy="-28" r="7.2" fill="#D9B98A" stroke="#14231F" stroke-width="1.6"/>
+  <!-- blend patch: hides the head/body seam -->
+  <path d="M 5.6 -26.6 Q 10.5 -29.5 14.5 -25.5 Q 13.5 -21.5 9 -20.8 Q 6 -23 5.6 -26.6 Z"
+        fill="#D9B98A" stroke="none"/>
+  <!-- folded wing (v0.1 teardrop) + tucked primary hints -->
+  <path d="M -11 -19 Q -3 -25 6 -22 Q 3 -14 -5 -13 Q -10 -14 -11 -19 Z"
+        fill="#B9905F" stroke="#14231F" stroke-width="1.2"/>
+  <g stroke="#8A6448" stroke-width="2.3" fill="none">
+    <path d="M -6.5 -14.8 C -10 -15.2 -13 -16.2 -15.5 -17.6"/>
+  </g>
+  <path d="M -8 -17.5 L 1 -20 M -7 -15 L 2 -17" stroke="#6E5138" stroke-width="1.1" fill="none"/>
+  <!-- crest tuft -->
+  <path d="M 9 -34.6 L 10.2 -38.2 L 11.8 -34.7 Z M 12.4 -34.7 L 14 -37.6 L 15 -34 Z"
+        fill="#B9905F" stroke="#14231F" stroke-width="1.2"/>
+  <!-- cream eyebrow -->
+  <path d="M 8.5 -30.5 Q 12.5 -32.5 16.5 -30" stroke="#F6ECD9" stroke-width="1.7" fill="none"/>
+  <!-- beak: two mandibles -->
+  <path d="M 18.6 -29.2 L 24.5 -27.9 L 18.7 -27.1 Z" fill="#C79A5B" stroke="#14231F" stroke-width="1.05"/>
+  <path d="M 18.7 -26.9 L 23.3 -26.5 L 18.7 -25.7 Z" fill="#B08448" stroke="#14231F" stroke-width="1.05"/>
+  <!-- eye -->
+  <circle cx="14.2" cy="-29" r="1.75" fill="#14231F"/>
+  <circle cx="14.85" cy="-29.65" r="0.58" fill="#FFFFFF"/>
+</g></g>
+  <text x="30" y="42" font-family="'IBM Plex Mono', monospace" font-size="11" letter-spacing="2"
+        fill="#14231F88">PLATE 01</text>
+  <text x="150" y="349" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="24"
+        font-weight="600" fill="#14231F">Skylark</text>
+  <text x="150" y="370" text-anchor="middle" font-family="Nunito, sans-serif" font-style="italic"
+        font-size="13" fill="#14231F99">Alauda arvensis</text>
+</svg>
+</div>
+    </div>
+  </div>
+  <div class="card">
+    <h2>Northern Cardinal</h2><p class="note">Female — the roster celebrates that she sings too · footprint 46×40</p>
+    <div class="row">
+      <svg viewBox="0 0 440 190" class="scene">
+        <rect width="440" height="190" fill="#C9E8DF"/>
+        <rect y="120" width="440" height="70" fill="#A7DED3"/>
+        <rect y="118" width="440" height="10" fill="#8ED0C0"/>
+        <g transform="translate(80,170) scale(0.7)">
+<g stroke-linejoin="round" stroke-linecap="round">
+  <!-- legs + toes -->
+  <g stroke="#9A7358" stroke-width="1.8" fill="none">
+    <path d="M -2.5 -7.5 L -1.5 -1 M -1.5 -1 L 1.6 -0.2 M -1.5 -1 L -2.9 0.2 M -1.5 -1 L -4.4 -0.2"/>
+    <path d="M 6 -7.8 L 6.8 -1 M 6.8 -1 L 9.9 -0.2 M 6.8 -1 L 5.4 0.2 M 6.8 -1 L 3.9 -0.2"/>
+  </g>
+  <!-- tail: long red, two feathers -->
+  <path d="M -23.5 -18.8 L -10 -19.5 L -11 -11.5 L -22.8 -13.2 Z" fill="#D96A4A" stroke="#14231F" stroke-width="1.5"/>
+  <path d="M -21 -16.4 L -11.5 -15.8" stroke="#C05038" stroke-width="1.1" fill="none"/>
+  <!-- body (v0.1 round base) -->
+  <path d="M -12 -14 Q -13 -23 -4 -26.5 Q 7 -29.5 13 -23.5 Q 16.5 -18.5 14 -12.5 Q 10.5 -6.5 1.5 -6.5 Q -8 -7 -12 -14 Z"
+        fill="#CBA98A" stroke="#14231F" stroke-width="1.6"/>
+  <!-- warm breast blush -->
+  <path d="M 6 -8.5 Q 13 -12 14.5 -18 Q 10 -20 7 -17 Q 4 -12 6 -8.5 Z" fill="#E7A57E" stroke="none"/>
+  <!-- head -->
+  <circle cx="12" cy="-27.5" r="7.4" fill="#CBA98A" stroke="#14231F" stroke-width="1.6"/>
+  <!-- blend patch: hides the head/body seam -->
+  <path d="M 5.4 -26 Q 10.5 -29 14.6 -25 Q 13.6 -21 9 -20.3 Q 6 -22.5 5.4 -26 Z"
+        fill="#CBA98A" stroke="none"/>
+  <!-- red folded wing + tucked primary hint -->
+  <path d="M -10 -18.5 Q -2 -24.5 7 -21.5 Q 4 -13.5 -4.5 -12.5 Q -9.5 -13.5 -10 -18.5 Z"
+        fill="#D96A4A" stroke="#14231F" stroke-width="1.2"/>
+  <path d="M -6 -14.2 C -9.5 -14.6 -12.5 -15.4 -15 -16.6" stroke="#C05038" stroke-width="2.3" fill="none"/>
+  <!-- crest: tall red spikes joined to the crown -->
+  <path d="M 6.5 -32 L 8 -39 L 10.5 -33.5 L 12.5 -40.5 L 14.5 -33.8 L 16.8 -37.5 L 17 -32.5 Z"
+        fill="#E2503C" stroke="#14231F" stroke-width="1.3"/>
+  <path d="M 6.6 -31.8 Q 12 -35.4 17 -32.3 Q 15 -29.5 11 -29.8 Q 8 -30.2 6.6 -31.8 Z" fill="#E2503C" stroke="none"/>
+  <!-- black mask hugging the beak -->
+  <path d="M 15.5 -29.5 Q 18.6 -28.6 18.8 -26.6 Q 17 -24.8 14.6 -25.4 Q 13.4 -27.6 15.5 -29.5 Z"
+        fill="#3A2A24" stroke="none"/>
+  <!-- thick orange conical beak, two mandibles -->
+  <path d="M 18.4 -29 L 25 -27.1 L 18.5 -26.5 C 18.1 -27.3 18.1 -28.2 18.4 -29 Z"
+        fill="#F26B3A" stroke="#14231F" stroke-width="1.05"/>
+  <path d="M 18.5 -26.3 L 23.6 -26 L 18.6 -24.9 Z" fill="#E05A2B" stroke="#14231F" stroke-width="1.05"/>
+  <!-- eye -->
+  <circle cx="13.6" cy="-29.2" r="1.75" fill="#14231F"/>
+  <circle cx="14.25" cy="-29.85" r="0.58" fill="#FFFFFF"/>
+</g></g><g transform="translate(200,170) scale(0.85)">
+<g stroke-linejoin="round" stroke-linecap="round">
+  <!-- legs + toes -->
+  <g stroke="#9A7358" stroke-width="1.8" fill="none">
+    <path d="M -2.5 -7.5 L -1.5 -1 M -1.5 -1 L 1.6 -0.2 M -1.5 -1 L -2.9 0.2 M -1.5 -1 L -4.4 -0.2"/>
+    <path d="M 6 -7.8 L 6.8 -1 M 6.8 -1 L 9.9 -0.2 M 6.8 -1 L 5.4 0.2 M 6.8 -1 L 3.9 -0.2"/>
+  </g>
+  <!-- tail: long red, two feathers -->
+  <path d="M -23.5 -18.8 L -10 -19.5 L -11 -11.5 L -22.8 -13.2 Z" fill="#D96A4A" stroke="#14231F" stroke-width="1.5"/>
+  <path d="M -21 -16.4 L -11.5 -15.8" stroke="#C05038" stroke-width="1.1" fill="none"/>
+  <!-- body (v0.1 round base) -->
+  <path d="M -12 -14 Q -13 -23 -4 -26.5 Q 7 -29.5 13 -23.5 Q 16.5 -18.5 14 -12.5 Q 10.5 -6.5 1.5 -6.5 Q -8 -7 -12 -14 Z"
+        fill="#CBA98A" stroke="#14231F" stroke-width="1.6"/>
+  <!-- warm breast blush -->
+  <path d="M 6 -8.5 Q 13 -12 14.5 -18 Q 10 -20 7 -17 Q 4 -12 6 -8.5 Z" fill="#E7A57E" stroke="none"/>
+  <!-- head -->
+  <circle cx="12" cy="-27.5" r="7.4" fill="#CBA98A" stroke="#14231F" stroke-width="1.6"/>
+  <!-- blend patch: hides the head/body seam -->
+  <path d="M 5.4 -26 Q 10.5 -29 14.6 -25 Q 13.6 -21 9 -20.3 Q 6 -22.5 5.4 -26 Z"
+        fill="#CBA98A" stroke="none"/>
+  <!-- red folded wing + tucked primary hint -->
+  <path d="M -10 -18.5 Q -2 -24.5 7 -21.5 Q 4 -13.5 -4.5 -12.5 Q -9.5 -13.5 -10 -18.5 Z"
+        fill="#D96A4A" stroke="#14231F" stroke-width="1.2"/>
+  <path d="M -6 -14.2 C -9.5 -14.6 -12.5 -15.4 -15 -16.6" stroke="#C05038" stroke-width="2.3" fill="none"/>
+  <!-- crest: tall red spikes joined to the crown -->
+  <path d="M 6.5 -32 L 8 -39 L 10.5 -33.5 L 12.5 -40.5 L 14.5 -33.8 L 16.8 -37.5 L 17 -32.5 Z"
+        fill="#E2503C" stroke="#14231F" stroke-width="1.3"/>
+  <path d="M 6.6 -31.8 Q 12 -35.4 17 -32.3 Q 15 -29.5 11 -29.8 Q 8 -30.2 6.6 -31.8 Z" fill="#E2503C" stroke="none"/>
+  <!-- black mask hugging the beak -->
+  <path d="M 15.5 -29.5 Q 18.6 -28.6 18.8 -26.6 Q 17 -24.8 14.6 -25.4 Q 13.4 -27.6 15.5 -29.5 Z"
+        fill="#3A2A24" stroke="none"/>
+  <!-- thick orange conical beak, two mandibles -->
+  <path d="M 18.4 -29 L 25 -27.1 L 18.5 -26.5 C 18.1 -27.3 18.1 -28.2 18.4 -29 Z"
+        fill="#F26B3A" stroke="#14231F" stroke-width="1.05"/>
+  <path d="M 18.5 -26.3 L 23.6 -26 L 18.6 -24.9 Z" fill="#E05A2B" stroke="#14231F" stroke-width="1.05"/>
+  <!-- eye -->
+  <circle cx="13.6" cy="-29.2" r="1.75" fill="#14231F"/>
+  <circle cx="14.25" cy="-29.85" r="0.58" fill="#FFFFFF"/>
+</g></g><g transform="translate(340,170) scale(1.0)">
+<g stroke-linejoin="round" stroke-linecap="round">
+  <!-- legs + toes -->
+  <g stroke="#9A7358" stroke-width="1.8" fill="none">
+    <path d="M -2.5 -7.5 L -1.5 -1 M -1.5 -1 L 1.6 -0.2 M -1.5 -1 L -2.9 0.2 M -1.5 -1 L -4.4 -0.2"/>
+    <path d="M 6 -7.8 L 6.8 -1 M 6.8 -1 L 9.9 -0.2 M 6.8 -1 L 5.4 0.2 M 6.8 -1 L 3.9 -0.2"/>
+  </g>
+  <!-- tail: long red, two feathers -->
+  <path d="M -23.5 -18.8 L -10 -19.5 L -11 -11.5 L -22.8 -13.2 Z" fill="#D96A4A" stroke="#14231F" stroke-width="1.5"/>
+  <path d="M -21 -16.4 L -11.5 -15.8" stroke="#C05038" stroke-width="1.1" fill="none"/>
+  <!-- body (v0.1 round base) -->
+  <path d="M -12 -14 Q -13 -23 -4 -26.5 Q 7 -29.5 13 -23.5 Q 16.5 -18.5 14 -12.5 Q 10.5 -6.5 1.5 -6.5 Q -8 -7 -12 -14 Z"
+        fill="#CBA98A" stroke="#14231F" stroke-width="1.6"/>
+  <!-- warm breast blush -->
+  <path d="M 6 -8.5 Q 13 -12 14.5 -18 Q 10 -20 7 -17 Q 4 -12 6 -8.5 Z" fill="#E7A57E" stroke="none"/>
+  <!-- head -->
+  <circle cx="12" cy="-27.5" r="7.4" fill="#CBA98A" stroke="#14231F" stroke-width="1.6"/>
+  <!-- blend patch: hides the head/body seam -->
+  <path d="M 5.4 -26 Q 10.5 -29 14.6 -25 Q 13.6 -21 9 -20.3 Q 6 -22.5 5.4 -26 Z"
+        fill="#CBA98A" stroke="none"/>
+  <!-- red folded wing + tucked primary hint -->
+  <path d="M -10 -18.5 Q -2 -24.5 7 -21.5 Q 4 -13.5 -4.5 -12.5 Q -9.5 -13.5 -10 -18.5 Z"
+        fill="#D96A4A" stroke="#14231F" stroke-width="1.2"/>
+  <path d="M -6 -14.2 C -9.5 -14.6 -12.5 -15.4 -15 -16.6" stroke="#C05038" stroke-width="2.3" fill="none"/>
+  <!-- crest: tall red spikes joined to the crown -->
+  <path d="M 6.5 -32 L 8 -39 L 10.5 -33.5 L 12.5 -40.5 L 14.5 -33.8 L 16.8 -37.5 L 17 -32.5 Z"
+        fill="#E2503C" stroke="#14231F" stroke-width="1.3"/>
+  <path d="M 6.6 -31.8 Q 12 -35.4 17 -32.3 Q 15 -29.5 11 -29.8 Q 8 -30.2 6.6 -31.8 Z" fill="#E2503C" stroke="none"/>
+  <!-- black mask hugging the beak -->
+  <path d="M 15.5 -29.5 Q 18.6 -28.6 18.8 -26.6 Q 17 -24.8 14.6 -25.4 Q 13.4 -27.6 15.5 -29.5 Z"
+        fill="#3A2A24" stroke="none"/>
+  <!-- thick orange conical beak, two mandibles -->
+  <path d="M 18.4 -29 L 25 -27.1 L 18.5 -26.5 C 18.1 -27.3 18.1 -28.2 18.4 -29 Z"
+        fill="#F26B3A" stroke="#14231F" stroke-width="1.05"/>
+  <path d="M 18.5 -26.3 L 23.6 -26 L 18.6 -24.9 Z" fill="#E05A2B" stroke="#14231F" stroke-width="1.05"/>
+  <!-- eye -->
+  <circle cx="13.6" cy="-29.2" r="1.75" fill="#14231F"/>
+  <circle cx="14.25" cy="-29.85" r="0.58" fill="#FFFFFF"/>
+</g></g>
+        <text x="80" y="184" text-anchor="middle" class="lbl">sky ×0.7</text>
+        <text x="200" y="184" text-anchor="middle" class="lbl">canopy ×0.85</text>
+        <text x="340" y="184" text-anchor="middle" class="lbl">mid ×1.0</text>
+      </svg>
+      <svg viewBox="0 0 160 190" class="scene night">
+        <rect width="160" height="190" fill="#1E5A50"/>
+        <rect y="120" width="160" height="70" fill="#174A41"/>
+        <g transform="translate(80,170)">
+<g stroke-linejoin="round" stroke-linecap="round">
+  <!-- legs + toes -->
+  <g stroke="#0A2E28" stroke-width="1.8" fill="none">
+    <path d="M -2.5 -7.5 L -1.5 -1 M -1.5 -1 L 1.6 -0.2 M -1.5 -1 L -2.9 0.2 M -1.5 -1 L -4.4 -0.2"/>
+    <path d="M 6 -7.8 L 6.8 -1 M 6.8 -1 L 9.9 -0.2 M 6.8 -1 L 5.4 0.2 M 6.8 -1 L 3.9 -0.2"/>
+  </g>
+  <!-- tail: long red, two feathers -->
+  <path d="M -23.5 -18.8 L -10 -19.5 L -11 -11.5 L -22.8 -13.2 Z" fill="#0A2E28" stroke="#0A2E28" stroke-width="1.5"/>
+  <path d="M -21 -16.4 L -11.5 -15.8" stroke="#0A2E28" stroke-width="1.1" fill="none"/>
+  <!-- body (v0.1 round base) -->
+  <path d="M -12 -14 Q -13 -23 -4 -26.5 Q 7 -29.5 13 -23.5 Q 16.5 -18.5 14 -12.5 Q 10.5 -6.5 1.5 -6.5 Q -8 -7 -12 -14 Z"
+        fill="#0A2E28" stroke="#0A2E28" stroke-width="1.6"/>
+  <!-- warm breast blush -->
+  <path d="M 6 -8.5 Q 13 -12 14.5 -18 Q 10 -20 7 -17 Q 4 -12 6 -8.5 Z" fill="#0A2E28" stroke="none"/>
+  <!-- head -->
+  <circle cx="12" cy="-27.5" r="7.4" fill="#0A2E28" stroke="#0A2E28" stroke-width="1.6"/>
+  <!-- blend patch: hides the head/body seam -->
+  <path d="M 5.4 -26 Q 10.5 -29 14.6 -25 Q 13.6 -21 9 -20.3 Q 6 -22.5 5.4 -26 Z"
+        fill="#0A2E28" stroke="none"/>
+  <!-- red folded wing + tucked primary hint -->
+  <path d="M -10 -18.5 Q -2 -24.5 7 -21.5 Q 4 -13.5 -4.5 -12.5 Q -9.5 -13.5 -10 -18.5 Z"
+        fill="#0A2E28" stroke="#0A2E28" stroke-width="1.2"/>
+  <path d="M -6 -14.2 C -9.5 -14.6 -12.5 -15.4 -15 -16.6" stroke="#0A2E28" stroke-width="2.3" fill="none"/>
+  <!-- crest: tall red spikes joined to the crown -->
+  <path d="M 6.5 -32 L 8 -39 L 10.5 -33.5 L 12.5 -40.5 L 14.5 -33.8 L 16.8 -37.5 L 17 -32.5 Z"
+        fill="#0A2E28" stroke="#0A2E28" stroke-width="1.3"/>
+  <path d="M 6.6 -31.8 Q 12 -35.4 17 -32.3 Q 15 -29.5 11 -29.8 Q 8 -30.2 6.6 -31.8 Z" fill="#0A2E28" stroke="none"/>
+  <!-- black mask hugging the beak -->
+  <path d="M 15.5 -29.5 Q 18.6 -28.6 18.8 -26.6 Q 17 -24.8 14.6 -25.4 Q 13.4 -27.6 15.5 -29.5 Z"
+        fill="#0A2E28" stroke="none"/>
+  <!-- thick orange conical beak, two mandibles -->
+  <path d="M 18.4 -29 L 25 -27.1 L 18.5 -26.5 C 18.1 -27.3 18.1 -28.2 18.4 -29 Z"
+        fill="#0A2E28" stroke="#0A2E28" stroke-width="1.05"/>
+  <path d="M 18.5 -26.3 L 23.6 -26 L 18.6 -24.9 Z" fill="#0A2E28" stroke="#0A2E28" stroke-width="1.05"/>
+  <!-- eye -->
+  <circle cx="13.6" cy="-29.2" r="1.75" fill="#0A2E28"/>
+  <circle cx="14.25" cy="-29.85" r="0.58" fill="#0A2E28"/>
+</g></g>
+        <text x="80" y="184" text-anchor="middle" class="lbl night-lbl">asleep silhouette</text>
+      </svg>
+      <div class="portrait"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400">
+  <rect width="300" height="400" fill="#FFFDF4"/>
+  <rect x="10" y="10" width="280" height="380" rx="14" fill="none" stroke="#14231F" stroke-width="2.5"/>
+  <rect x="20" y="20" width="260" height="296" rx="10" fill="#DCEFE7"/>
+  <!-- distant meadow line -->
+  <path d="M 20 268 Q 90 258 150 266 T 280 264 V 316 H 20 Z" fill="#BFE3D6"/>
+  <!-- branch from the left with leaf sprigs -->
+  <path d="M 20 292 C 70 288 120 290 158 291" stroke="#B08968" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M 60 289 q -6 -12 3 -18 q 7 10 -3 18 Z M 104 288 q -4 -13 6 -17 q 5 11 -6 17 Z"
+        fill="#7FCFBE" stroke="#3E9E8E" stroke-width="1.2"/>
+  <!-- soft ground shadow -->
+  <ellipse cx="150" cy="293" rx="46" ry="6" fill="#14231F" opacity="0.08"/>
+  <g transform="translate(150,291) scale(3.17)">
+<g stroke-linejoin="round" stroke-linecap="round">
+  <!-- legs + toes -->
+  <g stroke="#9A7358" stroke-width="1.8" fill="none">
+    <path d="M -2.5 -7.5 L -1.5 -1 M -1.5 -1 L 1.6 -0.2 M -1.5 -1 L -2.9 0.2 M -1.5 -1 L -4.4 -0.2"/>
+    <path d="M 6 -7.8 L 6.8 -1 M 6.8 -1 L 9.9 -0.2 M 6.8 -1 L 5.4 0.2 M 6.8 -1 L 3.9 -0.2"/>
+  </g>
+  <!-- tail: long red, two feathers -->
+  <path d="M -23.5 -18.8 L -10 -19.5 L -11 -11.5 L -22.8 -13.2 Z" fill="#D96A4A" stroke="#14231F" stroke-width="1.5"/>
+  <path d="M -21 -16.4 L -11.5 -15.8" stroke="#C05038" stroke-width="1.1" fill="none"/>
+  <!-- body (v0.1 round base) -->
+  <path d="M -12 -14 Q -13 -23 -4 -26.5 Q 7 -29.5 13 -23.5 Q 16.5 -18.5 14 -12.5 Q 10.5 -6.5 1.5 -6.5 Q -8 -7 -12 -14 Z"
+        fill="#CBA98A" stroke="#14231F" stroke-width="1.6"/>
+  <!-- warm breast blush -->
+  <path d="M 6 -8.5 Q 13 -12 14.5 -18 Q 10 -20 7 -17 Q 4 -12 6 -8.5 Z" fill="#E7A57E" stroke="none"/>
+  <!-- head -->
+  <circle cx="12" cy="-27.5" r="7.4" fill="#CBA98A" stroke="#14231F" stroke-width="1.6"/>
+  <!-- blend patch: hides the head/body seam -->
+  <path d="M 5.4 -26 Q 10.5 -29 14.6 -25 Q 13.6 -21 9 -20.3 Q 6 -22.5 5.4 -26 Z"
+        fill="#CBA98A" stroke="none"/>
+  <!-- red folded wing + tucked primary hint -->
+  <path d="M -10 -18.5 Q -2 -24.5 7 -21.5 Q 4 -13.5 -4.5 -12.5 Q -9.5 -13.5 -10 -18.5 Z"
+        fill="#D96A4A" stroke="#14231F" stroke-width="1.2"/>
+  <path d="M -6 -14.2 C -9.5 -14.6 -12.5 -15.4 -15 -16.6" stroke="#C05038" stroke-width="2.3" fill="none"/>
+  <!-- crest: tall red spikes joined to the crown -->
+  <path d="M 6.5 -32 L 8 -39 L 10.5 -33.5 L 12.5 -40.5 L 14.5 -33.8 L 16.8 -37.5 L 17 -32.5 Z"
+        fill="#E2503C" stroke="#14231F" stroke-width="1.3"/>
+  <path d="M 6.6 -31.8 Q 12 -35.4 17 -32.3 Q 15 -29.5 11 -29.8 Q 8 -30.2 6.6 -31.8 Z" fill="#E2503C" stroke="none"/>
+  <!-- black mask hugging the beak -->
+  <path d="M 15.5 -29.5 Q 18.6 -28.6 18.8 -26.6 Q 17 -24.8 14.6 -25.4 Q 13.4 -27.6 15.5 -29.5 Z"
+        fill="#3A2A24" stroke="none"/>
+  <!-- thick orange conical beak, two mandibles -->
+  <path d="M 18.4 -29 L 25 -27.1 L 18.5 -26.5 C 18.1 -27.3 18.1 -28.2 18.4 -29 Z"
+        fill="#F26B3A" stroke="#14231F" stroke-width="1.05"/>
+  <path d="M 18.5 -26.3 L 23.6 -26 L 18.6 -24.9 Z" fill="#E05A2B" stroke="#14231F" stroke-width="1.05"/>
+  <!-- eye -->
+  <circle cx="13.6" cy="-29.2" r="1.75" fill="#14231F"/>
+  <circle cx="14.25" cy="-29.85" r="0.58" fill="#FFFFFF"/>
+</g></g>
+  <text x="30" y="42" font-family="'IBM Plex Mono', monospace" font-size="11" letter-spacing="2"
+        fill="#14231F88">PLATE 08</text>
+  <text x="150" y="349" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="24"
+        font-weight="600" fill="#14231F">Northern Cardinal</text>
+  <text x="150" y="370" text-anchor="middle" font-family="Nunito, sans-serif" font-style="italic"
+        font-size="13" fill="#14231F99">Cardinalis cardinalis</text>
+</svg>
+</div>
+    </div>
+  </div>
+  <div class="card">
+    <h2>Barn Owl</h2><p class="note">Awake at night; white heart face · footprint 46×48</p>
+    <div class="row">
+      <svg viewBox="0 0 440 190" class="scene">
+        <rect width="440" height="190" fill="#C9E8DF"/>
+        <rect y="120" width="440" height="70" fill="#A7DED3"/>
+        <rect y="118" width="440" height="10" fill="#8ED0C0"/>
+        <g transform="translate(80,170) scale(0.7)">
+<g stroke-linejoin="round" stroke-linecap="round">
+  <!-- feathered legs + toes -->
+  <g stroke="#C9A876" stroke-width="1.8" fill="none">
+    <path d="M -4.5 -5.5 L -4 -1 M -4 -1 L -1.4 -0.2 M -4 -1 L -5.2 0.2 M -4 -1 L -6.8 -0.2"/>
+    <path d="M 5.5 -5.5 L 5 -1 M 5 -1 L 7.6 -0.2 M 5 -1 L 3.8 0.2 M 5 -1 L 2.2 -0.2"/>
+  </g>
+  <path d="M -7 -4.8 Q -4.5 -8.2 -2 -4.8 Z M 3 -4.8 Q 5.5 -8.2 8 -4.8 Z"
+        fill="#F8F2E4" stroke="#14231F" stroke-width="1.1"/>
+  <!-- body (v0.1 base) -->
+  <path d="M -10 -22 Q -11 -36 0 -39 Q 11 -36 10.5 -22 Q 10 -10 0 -5.5 Q -9.5 -10 -10 -22 Z"
+        fill="#DDB77E" stroke="#14231F" stroke-width="1.6"/>
+  <!-- white breast -->
+  <path d="M -6.5 -20 Q -6 -8.5 0 -6 Q 6.5 -9 6.8 -20 Q 3 -25 0 -25 Q -3.5 -25 -6.5 -20 Z"
+        fill="#F8F2E4" stroke="none"/>
+  <g fill="#C9A876"><circle cx="-2.5" cy="-17" r="0.8"/><circle cx="2.5" cy="-14" r="0.8"/>
+  <circle cx="-1" cy="-11" r="0.8"/><circle cx="3.5" cy="-19" r="0.8"/><circle cx="-4" cy="-13.5" r="0.8"/></g>
+  <!-- folded wing edge + pearl spots -->
+  <path d="M -10 -23 Q -8 -14 -3.5 -9 Q -8.5 -12 -10 -23 Z" fill="#C9A05E" stroke="none"/>
+  <g fill="#8A6A50"><circle cx="-8.2" cy="-20" r="0.7"/><circle cx="-7.2" cy="-15.5" r="0.7"/><circle cx="-5.6" cy="-11.5" r="0.7"/></g>
+  <!-- head -->
+  <circle cx="1" cy="-38" r="9.6" fill="#DDB77E" stroke="#14231F" stroke-width="1.6"/>
+  <!-- blend patch: owl has no neck — merge head into shoulders -->
+  <path d="M -7.5 -33.5 Q 1 -37.5 9 -33.5 Q 8.5 -28.5 1 -27.5 Q -6.5 -28.5 -7.5 -33.5 Z"
+        fill="#DDB77E" stroke="none"/>
+  <!-- white heart face, buff rim -->
+  <path d="M 1 -30.5 Q -7.5 -34 -6 -41 Q -5 -45.5 1 -45.2 Q 7 -45.5 8 -41 Q 9.5 -34 1 -30.5 Z"
+        fill="#FFFDF4" stroke="#B98A5F" stroke-width="1.4"/>
+  <!-- almond dark eyes -->
+  <ellipse cx="-2.6" cy="-39" rx="1.8" ry="2.2" fill="#14231F" transform="rotate(-8 -2.6 -39)"/>
+  <ellipse cx="4.6" cy="-39" rx="1.8" ry="2.2" fill="#14231F" transform="rotate(8 4.6 -39)"/>
+  <circle cx="-2" cy="-39.7" r="0.55" fill="#FFFFFF"/>
+  <circle cx="5.2" cy="-39.7" r="0.55" fill="#FFFFFF"/>
+  <!-- small hooked beak -->
+  <path d="M 1 -37.8 Q 2.6 -36.6 1 -34 Q -0.6 -36.6 1 -37.8 Z" fill="#E8CFA5" stroke="#14231F" stroke-width="1"/>
+</g></g><g transform="translate(200,170) scale(0.85)">
+<g stroke-linejoin="round" stroke-linecap="round">
+  <!-- feathered legs + toes -->
+  <g stroke="#C9A876" stroke-width="1.8" fill="none">
+    <path d="M -4.5 -5.5 L -4 -1 M -4 -1 L -1.4 -0.2 M -4 -1 L -5.2 0.2 M -4 -1 L -6.8 -0.2"/>
+    <path d="M 5.5 -5.5 L 5 -1 M 5 -1 L 7.6 -0.2 M 5 -1 L 3.8 0.2 M 5 -1 L 2.2 -0.2"/>
+  </g>
+  <path d="M -7 -4.8 Q -4.5 -8.2 -2 -4.8 Z M 3 -4.8 Q 5.5 -8.2 8 -4.8 Z"
+        fill="#F8F2E4" stroke="#14231F" stroke-width="1.1"/>
+  <!-- body (v0.1 base) -->
+  <path d="M -10 -22 Q -11 -36 0 -39 Q 11 -36 10.5 -22 Q 10 -10 0 -5.5 Q -9.5 -10 -10 -22 Z"
+        fill="#DDB77E" stroke="#14231F" stroke-width="1.6"/>
+  <!-- white breast -->
+  <path d="M -6.5 -20 Q -6 -8.5 0 -6 Q 6.5 -9 6.8 -20 Q 3 -25 0 -25 Q -3.5 -25 -6.5 -20 Z"
+        fill="#F8F2E4" stroke="none"/>
+  <g fill="#C9A876"><circle cx="-2.5" cy="-17" r="0.8"/><circle cx="2.5" cy="-14" r="0.8"/>
+  <circle cx="-1" cy="-11" r="0.8"/><circle cx="3.5" cy="-19" r="0.8"/><circle cx="-4" cy="-13.5" r="0.8"/></g>
+  <!-- folded wing edge + pearl spots -->
+  <path d="M -10 -23 Q -8 -14 -3.5 -9 Q -8.5 -12 -10 -23 Z" fill="#C9A05E" stroke="none"/>
+  <g fill="#8A6A50"><circle cx="-8.2" cy="-20" r="0.7"/><circle cx="-7.2" cy="-15.5" r="0.7"/><circle cx="-5.6" cy="-11.5" r="0.7"/></g>
+  <!-- head -->
+  <circle cx="1" cy="-38" r="9.6" fill="#DDB77E" stroke="#14231F" stroke-width="1.6"/>
+  <!-- blend patch: owl has no neck — merge head into shoulders -->
+  <path d="M -7.5 -33.5 Q 1 -37.5 9 -33.5 Q 8.5 -28.5 1 -27.5 Q -6.5 -28.5 -7.5 -33.5 Z"
+        fill="#DDB77E" stroke="none"/>
+  <!-- white heart face, buff rim -->
+  <path d="M 1 -30.5 Q -7.5 -34 -6 -41 Q -5 -45.5 1 -45.2 Q 7 -45.5 8 -41 Q 9.5 -34 1 -30.5 Z"
+        fill="#FFFDF4" stroke="#B98A5F" stroke-width="1.4"/>
+  <!-- almond dark eyes -->
+  <ellipse cx="-2.6" cy="-39" rx="1.8" ry="2.2" fill="#14231F" transform="rotate(-8 -2.6 -39)"/>
+  <ellipse cx="4.6" cy="-39" rx="1.8" ry="2.2" fill="#14231F" transform="rotate(8 4.6 -39)"/>
+  <circle cx="-2" cy="-39.7" r="0.55" fill="#FFFFFF"/>
+  <circle cx="5.2" cy="-39.7" r="0.55" fill="#FFFFFF"/>
+  <!-- small hooked beak -->
+  <path d="M 1 -37.8 Q 2.6 -36.6 1 -34 Q -0.6 -36.6 1 -37.8 Z" fill="#E8CFA5" stroke="#14231F" stroke-width="1"/>
+</g></g><g transform="translate(340,170) scale(1.0)">
+<g stroke-linejoin="round" stroke-linecap="round">
+  <!-- feathered legs + toes -->
+  <g stroke="#C9A876" stroke-width="1.8" fill="none">
+    <path d="M -4.5 -5.5 L -4 -1 M -4 -1 L -1.4 -0.2 M -4 -1 L -5.2 0.2 M -4 -1 L -6.8 -0.2"/>
+    <path d="M 5.5 -5.5 L 5 -1 M 5 -1 L 7.6 -0.2 M 5 -1 L 3.8 0.2 M 5 -1 L 2.2 -0.2"/>
+  </g>
+  <path d="M -7 -4.8 Q -4.5 -8.2 -2 -4.8 Z M 3 -4.8 Q 5.5 -8.2 8 -4.8 Z"
+        fill="#F8F2E4" stroke="#14231F" stroke-width="1.1"/>
+  <!-- body (v0.1 base) -->
+  <path d="M -10 -22 Q -11 -36 0 -39 Q 11 -36 10.5 -22 Q 10 -10 0 -5.5 Q -9.5 -10 -10 -22 Z"
+        fill="#DDB77E" stroke="#14231F" stroke-width="1.6"/>
+  <!-- white breast -->
+  <path d="M -6.5 -20 Q -6 -8.5 0 -6 Q 6.5 -9 6.8 -20 Q 3 -25 0 -25 Q -3.5 -25 -6.5 -20 Z"
+        fill="#F8F2E4" stroke="none"/>
+  <g fill="#C9A876"><circle cx="-2.5" cy="-17" r="0.8"/><circle cx="2.5" cy="-14" r="0.8"/>
+  <circle cx="-1" cy="-11" r="0.8"/><circle cx="3.5" cy="-19" r="0.8"/><circle cx="-4" cy="-13.5" r="0.8"/></g>
+  <!-- folded wing edge + pearl spots -->
+  <path d="M -10 -23 Q -8 -14 -3.5 -9 Q -8.5 -12 -10 -23 Z" fill="#C9A05E" stroke="none"/>
+  <g fill="#8A6A50"><circle cx="-8.2" cy="-20" r="0.7"/><circle cx="-7.2" cy="-15.5" r="0.7"/><circle cx="-5.6" cy="-11.5" r="0.7"/></g>
+  <!-- head -->
+  <circle cx="1" cy="-38" r="9.6" fill="#DDB77E" stroke="#14231F" stroke-width="1.6"/>
+  <!-- blend patch: owl has no neck — merge head into shoulders -->
+  <path d="M -7.5 -33.5 Q 1 -37.5 9 -33.5 Q 8.5 -28.5 1 -27.5 Q -6.5 -28.5 -7.5 -33.5 Z"
+        fill="#DDB77E" stroke="none"/>
+  <!-- white heart face, buff rim -->
+  <path d="M 1 -30.5 Q -7.5 -34 -6 -41 Q -5 -45.5 1 -45.2 Q 7 -45.5 8 -41 Q 9.5 -34 1 -30.5 Z"
+        fill="#FFFDF4" stroke="#B98A5F" stroke-width="1.4"/>
+  <!-- almond dark eyes -->
+  <ellipse cx="-2.6" cy="-39" rx="1.8" ry="2.2" fill="#14231F" transform="rotate(-8 -2.6 -39)"/>
+  <ellipse cx="4.6" cy="-39" rx="1.8" ry="2.2" fill="#14231F" transform="rotate(8 4.6 -39)"/>
+  <circle cx="-2" cy="-39.7" r="0.55" fill="#FFFFFF"/>
+  <circle cx="5.2" cy="-39.7" r="0.55" fill="#FFFFFF"/>
+  <!-- small hooked beak -->
+  <path d="M 1 -37.8 Q 2.6 -36.6 1 -34 Q -0.6 -36.6 1 -37.8 Z" fill="#E8CFA5" stroke="#14231F" stroke-width="1"/>
+</g></g>
+        <text x="80" y="184" text-anchor="middle" class="lbl">sky ×0.7</text>
+        <text x="200" y="184" text-anchor="middle" class="lbl">canopy ×0.85</text>
+        <text x="340" y="184" text-anchor="middle" class="lbl">mid ×1.0</text>
+      </svg>
+      <svg viewBox="0 0 160 190" class="scene night">
+        <rect width="160" height="190" fill="#1E5A50"/>
+        <rect y="120" width="160" height="70" fill="#174A41"/>
+        <g transform="translate(80,170)">
+<g stroke-linejoin="round" stroke-linecap="round">
+  <!-- feathered legs + toes -->
+  <g stroke="#0A2E28" stroke-width="1.8" fill="none">
+    <path d="M -4.5 -5.5 L -4 -1 M -4 -1 L -1.4 -0.2 M -4 -1 L -5.2 0.2 M -4 -1 L -6.8 -0.2"/>
+    <path d="M 5.5 -5.5 L 5 -1 M 5 -1 L 7.6 -0.2 M 5 -1 L 3.8 0.2 M 5 -1 L 2.2 -0.2"/>
+  </g>
+  <path d="M -7 -4.8 Q -4.5 -8.2 -2 -4.8 Z M 3 -4.8 Q 5.5 -8.2 8 -4.8 Z"
+        fill="#0A2E28" stroke="#0A2E28" stroke-width="1.1"/>
+  <!-- body (v0.1 base) -->
+  <path d="M -10 -22 Q -11 -36 0 -39 Q 11 -36 10.5 -22 Q 10 -10 0 -5.5 Q -9.5 -10 -10 -22 Z"
+        fill="#0A2E28" stroke="#0A2E28" stroke-width="1.6"/>
+  <!-- white breast -->
+  <path d="M -6.5 -20 Q -6 -8.5 0 -6 Q 6.5 -9 6.8 -20 Q 3 -25 0 -25 Q -3.5 -25 -6.5 -20 Z"
+        fill="#0A2E28" stroke="none"/>
+  <g fill="#0A2E28"><circle cx="-2.5" cy="-17" r="0.8"/><circle cx="2.5" cy="-14" r="0.8"/>
+  <circle cx="-1" cy="-11" r="0.8"/><circle cx="3.5" cy="-19" r="0.8"/><circle cx="-4" cy="-13.5" r="0.8"/></g>
+  <!-- folded wing edge + pearl spots -->
+  <path d="M -10 -23 Q -8 -14 -3.5 -9 Q -8.5 -12 -10 -23 Z" fill="#0A2E28" stroke="none"/>
+  <g fill="#0A2E28"><circle cx="-8.2" cy="-20" r="0.7"/><circle cx="-7.2" cy="-15.5" r="0.7"/><circle cx="-5.6" cy="-11.5" r="0.7"/></g>
+  <!-- head -->
+  <circle cx="1" cy="-38" r="9.6" fill="#0A2E28" stroke="#0A2E28" stroke-width="1.6"/>
+  <!-- blend patch: owl has no neck — merge head into shoulders -->
+  <path d="M -7.5 -33.5 Q 1 -37.5 9 -33.5 Q 8.5 -28.5 1 -27.5 Q -6.5 -28.5 -7.5 -33.5 Z"
+        fill="#0A2E28" stroke="none"/>
+  <!-- white heart face, buff rim -->
+  <path d="M 1 -30.5 Q -7.5 -34 -6 -41 Q -5 -45.5 1 -45.2 Q 7 -45.5 8 -41 Q 9.5 -34 1 -30.5 Z"
+        fill="#0A2E28" stroke="#0A2E28" stroke-width="1.4"/>
+  <!-- almond dark eyes -->
+  <ellipse cx="-2.6" cy="-39" rx="1.8" ry="2.2" fill="#0A2E28" transform="rotate(-8 -2.6 -39)"/>
+  <ellipse cx="4.6" cy="-39" rx="1.8" ry="2.2" fill="#0A2E28" transform="rotate(8 4.6 -39)"/>
+  <circle cx="-2" cy="-39.7" r="0.55" fill="#0A2E28"/>
+  <circle cx="5.2" cy="-39.7" r="0.55" fill="#0A2E28"/>
+  <!-- small hooked beak -->
+  <path d="M 1 -37.8 Q 2.6 -36.6 1 -34 Q -0.6 -36.6 1 -37.8 Z" fill="#0A2E28" stroke="#0A2E28" stroke-width="1"/>
+</g></g>
+        <text x="80" y="184" text-anchor="middle" class="lbl night-lbl">asleep silhouette</text>
+      </svg>
+      <div class="portrait"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400">
+  <rect width="300" height="400" fill="#FFFDF4"/>
+  <rect x="10" y="10" width="280" height="380" rx="14" fill="none" stroke="#14231F" stroke-width="2.5"/>
+  <rect x="20" y="20" width="260" height="296" rx="10" fill="#DCEFE7"/>
+  <!-- distant meadow line -->
+  <path d="M 20 268 Q 90 258 150 266 T 280 264 V 316 H 20 Z" fill="#BFE3D6"/>
+  <!-- branch from the left with leaf sprigs -->
+  <path d="M 20 292 C 70 288 120 290 158 291" stroke="#B08968" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M 60 289 q -6 -12 3 -18 q 7 10 -3 18 Z M 104 288 q -4 -13 6 -17 q 5 11 -6 17 Z"
+        fill="#7FCFBE" stroke="#3E9E8E" stroke-width="1.2"/>
+  <!-- soft ground shadow -->
+  <ellipse cx="150" cy="293" rx="46" ry="6" fill="#14231F" opacity="0.08"/>
+  <g transform="translate(150,291) scale(3.17)">
+<g stroke-linejoin="round" stroke-linecap="round">
+  <!-- feathered legs + toes -->
+  <g stroke="#C9A876" stroke-width="1.8" fill="none">
+    <path d="M -4.5 -5.5 L -4 -1 M -4 -1 L -1.4 -0.2 M -4 -1 L -5.2 0.2 M -4 -1 L -6.8 -0.2"/>
+    <path d="M 5.5 -5.5 L 5 -1 M 5 -1 L 7.6 -0.2 M 5 -1 L 3.8 0.2 M 5 -1 L 2.2 -0.2"/>
+  </g>
+  <path d="M -7 -4.8 Q -4.5 -8.2 -2 -4.8 Z M 3 -4.8 Q 5.5 -8.2 8 -4.8 Z"
+        fill="#F8F2E4" stroke="#14231F" stroke-width="1.1"/>
+  <!-- body (v0.1 base) -->
+  <path d="M -10 -22 Q -11 -36 0 -39 Q 11 -36 10.5 -22 Q 10 -10 0 -5.5 Q -9.5 -10 -10 -22 Z"
+        fill="#DDB77E" stroke="#14231F" stroke-width="1.6"/>
+  <!-- white breast -->
+  <path d="M -6.5 -20 Q -6 -8.5 0 -6 Q 6.5 -9 6.8 -20 Q 3 -25 0 -25 Q -3.5 -25 -6.5 -20 Z"
+        fill="#F8F2E4" stroke="none"/>
+  <g fill="#C9A876"><circle cx="-2.5" cy="-17" r="0.8"/><circle cx="2.5" cy="-14" r="0.8"/>
+  <circle cx="-1" cy="-11" r="0.8"/><circle cx="3.5" cy="-19" r="0.8"/><circle cx="-4" cy="-13.5" r="0.8"/></g>
+  <!-- folded wing edge + pearl spots -->
+  <path d="M -10 -23 Q -8 -14 -3.5 -9 Q -8.5 -12 -10 -23 Z" fill="#C9A05E" stroke="none"/>
+  <g fill="#8A6A50"><circle cx="-8.2" cy="-20" r="0.7"/><circle cx="-7.2" cy="-15.5" r="0.7"/><circle cx="-5.6" cy="-11.5" r="0.7"/></g>
+  <!-- head -->
+  <circle cx="1" cy="-38" r="9.6" fill="#DDB77E" stroke="#14231F" stroke-width="1.6"/>
+  <!-- blend patch: owl has no neck — merge head into shoulders -->
+  <path d="M -7.5 -33.5 Q 1 -37.5 9 -33.5 Q 8.5 -28.5 1 -27.5 Q -6.5 -28.5 -7.5 -33.5 Z"
+        fill="#DDB77E" stroke="none"/>
+  <!-- white heart face, buff rim -->
+  <path d="M 1 -30.5 Q -7.5 -34 -6 -41 Q -5 -45.5 1 -45.2 Q 7 -45.5 8 -41 Q 9.5 -34 1 -30.5 Z"
+        fill="#FFFDF4" stroke="#B98A5F" stroke-width="1.4"/>
+  <!-- almond dark eyes -->
+  <ellipse cx="-2.6" cy="-39" rx="1.8" ry="2.2" fill="#14231F" transform="rotate(-8 -2.6 -39)"/>
+  <ellipse cx="4.6" cy="-39" rx="1.8" ry="2.2" fill="#14231F" transform="rotate(8 4.6 -39)"/>
+  <circle cx="-2" cy="-39.7" r="0.55" fill="#FFFFFF"/>
+  <circle cx="5.2" cy="-39.7" r="0.55" fill="#FFFFFF"/>
+  <!-- small hooked beak -->
+  <path d="M 1 -37.8 Q 2.6 -36.6 1 -34 Q -0.6 -36.6 1 -37.8 Z" fill="#E8CFA5" stroke="#14231F" stroke-width="1"/>
+</g></g>
+  <text x="30" y="42" font-family="'IBM Plex Mono', monospace" font-size="11" letter-spacing="2"
+        fill="#14231F88">PLATE 15</text>
+  <text x="150" y="349" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="24"
+        font-weight="600" fill="#14231F">Barn Owl</text>
+  <text x="150" y="370" text-anchor="middle" font-family="Nunito, sans-serif" font-style="italic"
+        font-size="13" fill="#14231F99">Tyto alba</text>
+</svg>
+</div>
+    </div>
+  </div>
+  <div class="card">
+    <h2>Whooping Crane</h2><p class="note">Legendary — tallest bird in the app · footprint 56×92</p>
+    <div class="row">
+      <svg viewBox="0 0 440 190" class="scene">
+        <rect width="440" height="190" fill="#C9E8DF"/>
+        <rect y="120" width="440" height="70" fill="#A7DED3"/>
+        <rect y="118" width="440" height="10" fill="#8ED0C0"/>
+        <g transform="translate(80,170) scale(0.7)">
+<g stroke-linejoin="round" stroke-linecap="round">
+  <!-- long legs + toes -->
+  <g stroke="#3A3F3B" stroke-width="2" fill="none">
+    <path d="M -6 -26 C -6.6 -18 -6.2 -8.5 -5.4 -1 M -5.4 -1 L -1.8 -0.2 M -5.4 -1 L -6.8 0.4 M -5.4 -1 L -9 -0.2"/>
+    <path d="M 7.5 -26 C 7.1 -18 7.3 -8.5 7.9 -1 M 7.9 -1 L 11.5 -0.2 M 7.9 -1 L 6.5 0.4 M 7.9 -1 L 4.3 -0.2"/>
+  </g>
+  <!-- white body (v0.1 base) -->
+  <path d="M -17 -34 Q -17 -46 -5 -48 Q 9 -49.5 14 -41 Q 17.5 -34 13.5 -28 Q 8 -22.5 -3 -23.5 Q -14 -25.5 -17 -34 Z"
+        fill="#FCFAF2" stroke="#14231F" stroke-width="1.6"/>
+  <!-- soft wing shading -->
+  <path d="M -13 -37.5 Q -4 -43.5 6 -40.5 Q 3 -31.5 -6.5 -30.5 Q -12 -32.5 -13 -37.5 Z"
+        fill="#EDE7D6" stroke="none"/>
+  <!-- black primaries drooping over the tail, wavy plume tips -->
+  <path d="M -12.5 -45 C -18.5 -47 -23.5 -44.5 -24.6 -39.5
+           C -25.2 -35.5 -23.6 -31.5 -20.8 -28.5
+           L -19.4 -31.2 L -17.8 -28.8 L -16.4 -31.4 L -15 -29.4
+           C -13.6 -34.5 -13 -40 -12.5 -45 Z"
+        fill="#20262B" stroke="#14231F" stroke-width="1.4"/>
+  <g stroke="#3A424A" stroke-width="1.3" fill="none">
+    <path d="M -18 -42.5 C -21.5 -41.5 -23 -38.5 -22.4 -34.5"/>
+    <path d="M -16 -39 C -18 -37 -18.6 -34.2 -18 -31.4"/>
+  </g>
+  <!-- neck: slim S-curve (v0.1 base) -->
+  <path d="M 11 -42 Q 17 -46 16.5 -58 Q 16 -70 18 -78 L 23.5 -77 Q 21.5 -68 22 -58 Q 22.5 -44 14.5 -37.5 Z"
+        fill="#FCFAF2" stroke="#14231F" stroke-width="1.6"/>
+  <!-- head -->
+  <circle cx="21.5" cy="-80" r="6.2" fill="#FCFAF2" stroke="#14231F" stroke-width="1.6"/>
+  <!-- blend patch: hides the neck/head seam -->
+  <path d="M 17.2 -79.5 Q 20 -82.5 24 -80 Q 23.4 -76.5 20.2 -76.2 Q 17.8 -77.5 17.2 -79.5 Z"
+        fill="#FCFAF2" stroke="none"/>
+  <!-- red crown down the forehead -->
+  <path d="M 16.4 -83.2 C 18.2 -86.4 22.2 -87.4 25.4 -85.4 C 24.4 -83.6 22.6 -82.4 20.4 -82.2
+           C 18.8 -82.1 17.4 -82.5 16.4 -83.2 Z"
+        fill="#D93A2B" stroke="#14231F" stroke-width="1.1"/>
+  <!-- dark mustache -->
+  <path d="M 18.4 -80 C 20.8 -81.2 23.8 -81 26 -79.6 C 24.4 -77.6 21.6 -77.2 19.4 -78.2
+           C 18.9 -78.8 18.6 -79.4 18.4 -80 Z" fill="#4A3F3A" stroke="none"/>
+  <!-- long straight beak, two mandibles -->
+  <path d="M 27.3 -80.4 L 38.6 -77.9 L 27.5 -76.5 C 27 -77.8 27 -79.1 27.3 -80.4 Z"
+        fill="#6E5A46" stroke="#14231F" stroke-width="1.05"/>
+  <path d="M 27.4 -78.3 L 38.6 -77.9" stroke="#14231F" stroke-width="0.75" fill="none"/>
+  <!-- golden eye -->
+  <circle cx="23.6" cy="-81.2" r="1.6" fill="#E8B33A" stroke="#14231F" stroke-width="0.8"/>
+  <circle cx="24.15" cy="-81.75" r="0.48" fill="#FFFFFF"/>
+</g></g><g transform="translate(200,170) scale(0.85)">
+<g stroke-linejoin="round" stroke-linecap="round">
+  <!-- long legs + toes -->
+  <g stroke="#3A3F3B" stroke-width="2" fill="none">
+    <path d="M -6 -26 C -6.6 -18 -6.2 -8.5 -5.4 -1 M -5.4 -1 L -1.8 -0.2 M -5.4 -1 L -6.8 0.4 M -5.4 -1 L -9 -0.2"/>
+    <path d="M 7.5 -26 C 7.1 -18 7.3 -8.5 7.9 -1 M 7.9 -1 L 11.5 -0.2 M 7.9 -1 L 6.5 0.4 M 7.9 -1 L 4.3 -0.2"/>
+  </g>
+  <!-- white body (v0.1 base) -->
+  <path d="M -17 -34 Q -17 -46 -5 -48 Q 9 -49.5 14 -41 Q 17.5 -34 13.5 -28 Q 8 -22.5 -3 -23.5 Q -14 -25.5 -17 -34 Z"
+        fill="#FCFAF2" stroke="#14231F" stroke-width="1.6"/>
+  <!-- soft wing shading -->
+  <path d="M -13 -37.5 Q -4 -43.5 6 -40.5 Q 3 -31.5 -6.5 -30.5 Q -12 -32.5 -13 -37.5 Z"
+        fill="#EDE7D6" stroke="none"/>
+  <!-- black primaries drooping over the tail, wavy plume tips -->
+  <path d="M -12.5 -45 C -18.5 -47 -23.5 -44.5 -24.6 -39.5
+           C -25.2 -35.5 -23.6 -31.5 -20.8 -28.5
+           L -19.4 -31.2 L -17.8 -28.8 L -16.4 -31.4 L -15 -29.4
+           C -13.6 -34.5 -13 -40 -12.5 -45 Z"
+        fill="#20262B" stroke="#14231F" stroke-width="1.4"/>
+  <g stroke="#3A424A" stroke-width="1.3" fill="none">
+    <path d="M -18 -42.5 C -21.5 -41.5 -23 -38.5 -22.4 -34.5"/>
+    <path d="M -16 -39 C -18 -37 -18.6 -34.2 -18 -31.4"/>
+  </g>
+  <!-- neck: slim S-curve (v0.1 base) -->
+  <path d="M 11 -42 Q 17 -46 16.5 -58 Q 16 -70 18 -78 L 23.5 -77 Q 21.5 -68 22 -58 Q 22.5 -44 14.5 -37.5 Z"
+        fill="#FCFAF2" stroke="#14231F" stroke-width="1.6"/>
+  <!-- head -->
+  <circle cx="21.5" cy="-80" r="6.2" fill="#FCFAF2" stroke="#14231F" stroke-width="1.6"/>
+  <!-- blend patch: hides the neck/head seam -->
+  <path d="M 17.2 -79.5 Q 20 -82.5 24 -80 Q 23.4 -76.5 20.2 -76.2 Q 17.8 -77.5 17.2 -79.5 Z"
+        fill="#FCFAF2" stroke="none"/>
+  <!-- red crown down the forehead -->
+  <path d="M 16.4 -83.2 C 18.2 -86.4 22.2 -87.4 25.4 -85.4 C 24.4 -83.6 22.6 -82.4 20.4 -82.2
+           C 18.8 -82.1 17.4 -82.5 16.4 -83.2 Z"
+        fill="#D93A2B" stroke="#14231F" stroke-width="1.1"/>
+  <!-- dark mustache -->
+  <path d="M 18.4 -80 C 20.8 -81.2 23.8 -81 26 -79.6 C 24.4 -77.6 21.6 -77.2 19.4 -78.2
+           C 18.9 -78.8 18.6 -79.4 18.4 -80 Z" fill="#4A3F3A" stroke="none"/>
+  <!-- long straight beak, two mandibles -->
+  <path d="M 27.3 -80.4 L 38.6 -77.9 L 27.5 -76.5 C 27 -77.8 27 -79.1 27.3 -80.4 Z"
+        fill="#6E5A46" stroke="#14231F" stroke-width="1.05"/>
+  <path d="M 27.4 -78.3 L 38.6 -77.9" stroke="#14231F" stroke-width="0.75" fill="none"/>
+  <!-- golden eye -->
+  <circle cx="23.6" cy="-81.2" r="1.6" fill="#E8B33A" stroke="#14231F" stroke-width="0.8"/>
+  <circle cx="24.15" cy="-81.75" r="0.48" fill="#FFFFFF"/>
+</g></g><g transform="translate(340,170) scale(1.0)">
+<g stroke-linejoin="round" stroke-linecap="round">
+  <!-- long legs + toes -->
+  <g stroke="#3A3F3B" stroke-width="2" fill="none">
+    <path d="M -6 -26 C -6.6 -18 -6.2 -8.5 -5.4 -1 M -5.4 -1 L -1.8 -0.2 M -5.4 -1 L -6.8 0.4 M -5.4 -1 L -9 -0.2"/>
+    <path d="M 7.5 -26 C 7.1 -18 7.3 -8.5 7.9 -1 M 7.9 -1 L 11.5 -0.2 M 7.9 -1 L 6.5 0.4 M 7.9 -1 L 4.3 -0.2"/>
+  </g>
+  <!-- white body (v0.1 base) -->
+  <path d="M -17 -34 Q -17 -46 -5 -48 Q 9 -49.5 14 -41 Q 17.5 -34 13.5 -28 Q 8 -22.5 -3 -23.5 Q -14 -25.5 -17 -34 Z"
+        fill="#FCFAF2" stroke="#14231F" stroke-width="1.6"/>
+  <!-- soft wing shading -->
+  <path d="M -13 -37.5 Q -4 -43.5 6 -40.5 Q 3 -31.5 -6.5 -30.5 Q -12 -32.5 -13 -37.5 Z"
+        fill="#EDE7D6" stroke="none"/>
+  <!-- black primaries drooping over the tail, wavy plume tips -->
+  <path d="M -12.5 -45 C -18.5 -47 -23.5 -44.5 -24.6 -39.5
+           C -25.2 -35.5 -23.6 -31.5 -20.8 -28.5
+           L -19.4 -31.2 L -17.8 -28.8 L -16.4 -31.4 L -15 -29.4
+           C -13.6 -34.5 -13 -40 -12.5 -45 Z"
+        fill="#20262B" stroke="#14231F" stroke-width="1.4"/>
+  <g stroke="#3A424A" stroke-width="1.3" fill="none">
+    <path d="M -18 -42.5 C -21.5 -41.5 -23 -38.5 -22.4 -34.5"/>
+    <path d="M -16 -39 C -18 -37 -18.6 -34.2 -18 -31.4"/>
+  </g>
+  <!-- neck: slim S-curve (v0.1 base) -->
+  <path d="M 11 -42 Q 17 -46 16.5 -58 Q 16 -70 18 -78 L 23.5 -77 Q 21.5 -68 22 -58 Q 22.5 -44 14.5 -37.5 Z"
+        fill="#FCFAF2" stroke="#14231F" stroke-width="1.6"/>
+  <!-- head -->
+  <circle cx="21.5" cy="-80" r="6.2" fill="#FCFAF2" stroke="#14231F" stroke-width="1.6"/>
+  <!-- blend patch: hides the neck/head seam -->
+  <path d="M 17.2 -79.5 Q 20 -82.5 24 -80 Q 23.4 -76.5 20.2 -76.2 Q 17.8 -77.5 17.2 -79.5 Z"
+        fill="#FCFAF2" stroke="none"/>
+  <!-- red crown down the forehead -->
+  <path d="M 16.4 -83.2 C 18.2 -86.4 22.2 -87.4 25.4 -85.4 C 24.4 -83.6 22.6 -82.4 20.4 -82.2
+           C 18.8 -82.1 17.4 -82.5 16.4 -83.2 Z"
+        fill="#D93A2B" stroke="#14231F" stroke-width="1.1"/>
+  <!-- dark mustache -->
+  <path d="M 18.4 -80 C 20.8 -81.2 23.8 -81 26 -79.6 C 24.4 -77.6 21.6 -77.2 19.4 -78.2
+           C 18.9 -78.8 18.6 -79.4 18.4 -80 Z" fill="#4A3F3A" stroke="none"/>
+  <!-- long straight beak, two mandibles -->
+  <path d="M 27.3 -80.4 L 38.6 -77.9 L 27.5 -76.5 C 27 -77.8 27 -79.1 27.3 -80.4 Z"
+        fill="#6E5A46" stroke="#14231F" stroke-width="1.05"/>
+  <path d="M 27.4 -78.3 L 38.6 -77.9" stroke="#14231F" stroke-width="0.75" fill="none"/>
+  <!-- golden eye -->
+  <circle cx="23.6" cy="-81.2" r="1.6" fill="#E8B33A" stroke="#14231F" stroke-width="0.8"/>
+  <circle cx="24.15" cy="-81.75" r="0.48" fill="#FFFFFF"/>
+</g></g>
+        <text x="80" y="184" text-anchor="middle" class="lbl">sky ×0.7</text>
+        <text x="200" y="184" text-anchor="middle" class="lbl">canopy ×0.85</text>
+        <text x="340" y="184" text-anchor="middle" class="lbl">mid ×1.0</text>
+      </svg>
+      <svg viewBox="0 0 160 190" class="scene night">
+        <rect width="160" height="190" fill="#1E5A50"/>
+        <rect y="120" width="160" height="70" fill="#174A41"/>
+        <g transform="translate(80,170)">
+<g stroke-linejoin="round" stroke-linecap="round">
+  <!-- long legs + toes -->
+  <g stroke="#0A2E28" stroke-width="2" fill="none">
+    <path d="M -6 -26 C -6.6 -18 -6.2 -8.5 -5.4 -1 M -5.4 -1 L -1.8 -0.2 M -5.4 -1 L -6.8 0.4 M -5.4 -1 L -9 -0.2"/>
+    <path d="M 7.5 -26 C 7.1 -18 7.3 -8.5 7.9 -1 M 7.9 -1 L 11.5 -0.2 M 7.9 -1 L 6.5 0.4 M 7.9 -1 L 4.3 -0.2"/>
+  </g>
+  <!-- white body (v0.1 base) -->
+  <path d="M -17 -34 Q -17 -46 -5 -48 Q 9 -49.5 14 -41 Q 17.5 -34 13.5 -28 Q 8 -22.5 -3 -23.5 Q -14 -25.5 -17 -34 Z"
+        fill="#0A2E28" stroke="#0A2E28" stroke-width="1.6"/>
+  <!-- soft wing shading -->
+  <path d="M -13 -37.5 Q -4 -43.5 6 -40.5 Q 3 -31.5 -6.5 -30.5 Q -12 -32.5 -13 -37.5 Z"
+        fill="#0A2E28" stroke="none"/>
+  <!-- black primaries drooping over the tail, wavy plume tips -->
+  <path d="M -12.5 -45 C -18.5 -47 -23.5 -44.5 -24.6 -39.5
+           C -25.2 -35.5 -23.6 -31.5 -20.8 -28.5
+           L -19.4 -31.2 L -17.8 -28.8 L -16.4 -31.4 L -15 -29.4
+           C -13.6 -34.5 -13 -40 -12.5 -45 Z"
+        fill="#0A2E28" stroke="#0A2E28" stroke-width="1.4"/>
+  <g stroke="#0A2E28" stroke-width="1.3" fill="none">
+    <path d="M -18 -42.5 C -21.5 -41.5 -23 -38.5 -22.4 -34.5"/>
+    <path d="M -16 -39 C -18 -37 -18.6 -34.2 -18 -31.4"/>
+  </g>
+  <!-- neck: slim S-curve (v0.1 base) -->
+  <path d="M 11 -42 Q 17 -46 16.5 -58 Q 16 -70 18 -78 L 23.5 -77 Q 21.5 -68 22 -58 Q 22.5 -44 14.5 -37.5 Z"
+        fill="#0A2E28" stroke="#0A2E28" stroke-width="1.6"/>
+  <!-- head -->
+  <circle cx="21.5" cy="-80" r="6.2" fill="#0A2E28" stroke="#0A2E28" stroke-width="1.6"/>
+  <!-- blend patch: hides the neck/head seam -->
+  <path d="M 17.2 -79.5 Q 20 -82.5 24 -80 Q 23.4 -76.5 20.2 -76.2 Q 17.8 -77.5 17.2 -79.5 Z"
+        fill="#0A2E28" stroke="none"/>
+  <!-- red crown down the forehead -->
+  <path d="M 16.4 -83.2 C 18.2 -86.4 22.2 -87.4 25.4 -85.4 C 24.4 -83.6 22.6 -82.4 20.4 -82.2
+           C 18.8 -82.1 17.4 -82.5 16.4 -83.2 Z"
+        fill="#0A2E28" stroke="#0A2E28" stroke-width="1.1"/>
+  <!-- dark mustache -->
+  <path d="M 18.4 -80 C 20.8 -81.2 23.8 -81 26 -79.6 C 24.4 -77.6 21.6 -77.2 19.4 -78.2
+           C 18.9 -78.8 18.6 -79.4 18.4 -80 Z" fill="#0A2E28" stroke="none"/>
+  <!-- long straight beak, two mandibles -->
+  <path d="M 27.3 -80.4 L 38.6 -77.9 L 27.5 -76.5 C 27 -77.8 27 -79.1 27.3 -80.4 Z"
+        fill="#0A2E28" stroke="#0A2E28" stroke-width="1.05"/>
+  <path d="M 27.4 -78.3 L 38.6 -77.9" stroke="#0A2E28" stroke-width="0.75" fill="none"/>
+  <!-- golden eye -->
+  <circle cx="23.6" cy="-81.2" r="1.6" fill="#0A2E28" stroke="#0A2E28" stroke-width="0.8"/>
+  <circle cx="24.15" cy="-81.75" r="0.48" fill="#0A2E28"/>
+</g></g>
+        <text x="80" y="184" text-anchor="middle" class="lbl night-lbl">asleep silhouette</text>
+      </svg>
+      <div class="portrait"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400">
+  <rect width="300" height="400" fill="#FFFDF4"/>
+  <rect x="10" y="10" width="280" height="380" rx="14" fill="none" stroke="#14231F" stroke-width="2.5"/>
+  <rect x="20" y="20" width="260" height="296" rx="10" fill="#DCEFE7"/>
+  <!-- distant meadow line -->
+  <path d="M 20 268 Q 90 258 150 266 T 280 264 V 316 H 20 Z" fill="#BFE3D6"/>
+  <!-- branch from the left with leaf sprigs -->
+  <path d="M 20 292 C 70 288 120 290 158 291" stroke="#B08968" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M 60 289 q -6 -12 3 -18 q 7 10 -3 18 Z M 104 288 q -4 -13 6 -17 q 5 11 -6 17 Z"
+        fill="#7FCFBE" stroke="#3E9E8E" stroke-width="1.2"/>
+  <!-- soft ground shadow -->
+  <ellipse cx="150" cy="293" rx="46" ry="6" fill="#14231F" opacity="0.08"/>
+  <g transform="translate(150,291) scale(2.23)">
+<g stroke-linejoin="round" stroke-linecap="round">
+  <!-- long legs + toes -->
+  <g stroke="#3A3F3B" stroke-width="2" fill="none">
+    <path d="M -6 -26 C -6.6 -18 -6.2 -8.5 -5.4 -1 M -5.4 -1 L -1.8 -0.2 M -5.4 -1 L -6.8 0.4 M -5.4 -1 L -9 -0.2"/>
+    <path d="M 7.5 -26 C 7.1 -18 7.3 -8.5 7.9 -1 M 7.9 -1 L 11.5 -0.2 M 7.9 -1 L 6.5 0.4 M 7.9 -1 L 4.3 -0.2"/>
+  </g>
+  <!-- white body (v0.1 base) -->
+  <path d="M -17 -34 Q -17 -46 -5 -48 Q 9 -49.5 14 -41 Q 17.5 -34 13.5 -28 Q 8 -22.5 -3 -23.5 Q -14 -25.5 -17 -34 Z"
+        fill="#FCFAF2" stroke="#14231F" stroke-width="1.6"/>
+  <!-- soft wing shading -->
+  <path d="M -13 -37.5 Q -4 -43.5 6 -40.5 Q 3 -31.5 -6.5 -30.5 Q -12 -32.5 -13 -37.5 Z"
+        fill="#EDE7D6" stroke="none"/>
+  <!-- black primaries drooping over the tail, wavy plume tips -->
+  <path d="M -12.5 -45 C -18.5 -47 -23.5 -44.5 -24.6 -39.5
+           C -25.2 -35.5 -23.6 -31.5 -20.8 -28.5
+           L -19.4 -31.2 L -17.8 -28.8 L -16.4 -31.4 L -15 -29.4
+           C -13.6 -34.5 -13 -40 -12.5 -45 Z"
+        fill="#20262B" stroke="#14231F" stroke-width="1.4"/>
+  <g stroke="#3A424A" stroke-width="1.3" fill="none">
+    <path d="M -18 -42.5 C -21.5 -41.5 -23 -38.5 -22.4 -34.5"/>
+    <path d="M -16 -39 C -18 -37 -18.6 -34.2 -18 -31.4"/>
+  </g>
+  <!-- neck: slim S-curve (v0.1 base) -->
+  <path d="M 11 -42 Q 17 -46 16.5 -58 Q 16 -70 18 -78 L 23.5 -77 Q 21.5 -68 22 -58 Q 22.5 -44 14.5 -37.5 Z"
+        fill="#FCFAF2" stroke="#14231F" stroke-width="1.6"/>
+  <!-- head -->
+  <circle cx="21.5" cy="-80" r="6.2" fill="#FCFAF2" stroke="#14231F" stroke-width="1.6"/>
+  <!-- blend patch: hides the neck/head seam -->
+  <path d="M 17.2 -79.5 Q 20 -82.5 24 -80 Q 23.4 -76.5 20.2 -76.2 Q 17.8 -77.5 17.2 -79.5 Z"
+        fill="#FCFAF2" stroke="none"/>
+  <!-- red crown down the forehead -->
+  <path d="M 16.4 -83.2 C 18.2 -86.4 22.2 -87.4 25.4 -85.4 C 24.4 -83.6 22.6 -82.4 20.4 -82.2
+           C 18.8 -82.1 17.4 -82.5 16.4 -83.2 Z"
+        fill="#D93A2B" stroke="#14231F" stroke-width="1.1"/>
+  <!-- dark mustache -->
+  <path d="M 18.4 -80 C 20.8 -81.2 23.8 -81 26 -79.6 C 24.4 -77.6 21.6 -77.2 19.4 -78.2
+           C 18.9 -78.8 18.6 -79.4 18.4 -80 Z" fill="#4A3F3A" stroke="none"/>
+  <!-- long straight beak, two mandibles -->
+  <path d="M 27.3 -80.4 L 38.6 -77.9 L 27.5 -76.5 C 27 -77.8 27 -79.1 27.3 -80.4 Z"
+        fill="#6E5A46" stroke="#14231F" stroke-width="1.05"/>
+  <path d="M 27.4 -78.3 L 38.6 -77.9" stroke="#14231F" stroke-width="0.75" fill="none"/>
+  <!-- golden eye -->
+  <circle cx="23.6" cy="-81.2" r="1.6" fill="#E8B33A" stroke="#14231F" stroke-width="0.8"/>
+  <circle cx="24.15" cy="-81.75" r="0.48" fill="#FFFFFF"/>
+</g></g>
+  <text x="30" y="42" font-family="'IBM Plex Mono', monospace" font-size="11" letter-spacing="2"
+        fill="#14231F88">PLATE 21</text>
+  <text x="150" y="349" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="24"
+        font-weight="600" fill="#14231F">Whooping Crane</text>
+  <text x="150" y="370" text-anchor="middle" font-family="Nunito, sans-serif" font-style="italic"
+        font-size="13" fill="#14231F99">Grus americana</text>
+</svg>
+</div>
+    </div>
+  </div>
+</body></html>

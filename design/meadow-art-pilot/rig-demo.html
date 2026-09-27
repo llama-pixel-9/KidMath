@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Layered-rig animation demo — actual v0.3 sprites</title>
+<style>
+  body { font-family: Nunito, -apple-system, sans-serif; background:#FAF9F5; color:#14231F;
+         max-width: 1000px; margin: 0 auto; padding: 32px 20px; }
+  h1 { font-family: Fredoka, sans-serif; font-weight:600; }
+  .pill { display:inline-block; font: 11px 'IBM Plex Mono', monospace; letter-spacing:.1em;
+          border:1.5px solid #C4471B; color:#C4471B; border-radius:999px; padding:4px 12px; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:18px; }
+  .card { background:#fff; border-radius:20px; padding:16px; box-shadow:0 1px 6px rgba(20,35,31,.08); }
+  .card h2 { margin:0 0 4px; font-family:Fredoka,sans-serif; font-weight:600; font-size:18px; }
+  .card p { margin:0 0 10px; font-size:12.5px; color:#14231F99; }
+  svg { background:#C9E8DF; border-radius:14px; width:100%; }
+  g { transform-box: fill-box; }
+
+  /* Level 0 (built today): whole-sprite idle bob */
+  .bob { animation: bob 5s ease-in-out infinite alternate; }
+  @keyframes bob { from { transform: translateY(0); } to { transform: translateY(-5px); } }
+
+  /* Tap response: hop (existing) + NEW head cock via head layer */
+  .hop { animation: hop 3s cubic-bezier(.34,1.3,.64,1) infinite; }
+  @keyframes hop { 0%,8%,100% { transform: translateY(0) rotate(0); }
+                   3% { transform: translateY(-14px) rotate(2deg); } }
+  .headCock { transform-origin: 20% 88%; animation: cock 3s ease-in-out infinite; }
+  @keyframes cock { 0%,6%,26%,100% { transform: rotate(0); } 10%,20% { transform: rotate(-9deg); } }
+
+  /* Takeoff: body tilt + wing-layer flap at ~5Hz */
+  .flightTilt { animation: tilt 4s ease-in-out infinite; }
+  @keyframes tilt { 0%,15%,85%,100% { transform: translateY(0) rotate(0); }
+                    30%,70% { transform: translateY(-26px) rotate(-8deg); } }
+  .flap { transform-origin: 80% 15%; animation: flap 0.2s ease-in-out infinite alternate; }
+  @keyframes flap { from { transform: rotate(6deg); } to { transform: rotate(-38deg); } }
+
+  /* Crane dance: leaps + bow (neck layer) + bustle flare (tail layer) */
+  .danceLeap { animation: leap 6s ease-in-out infinite; }
+  @keyframes leap { 0%,12%,38%,62%,88%,100% { transform: translateY(0) rotate(0); }
+                    20%,30% { transform: translateY(-30px) rotate(0); }
+                    48%,56% { transform: translateY(0) rotate(10deg); }
+                    70%,80% { transform: translateY(-22px) rotate(-4deg); } }
+  .bow { transform-origin: 10% 90%; animation: bow 6s ease-in-out infinite; }
+  @keyframes bow { 0%,38%,64%,100% { transform: rotate(0); }
+                   46%,58% { transform: rotate(34deg); } }
+  .flare { transform-origin: 90% 30%; animation: flare 6s ease-in-out infinite; }
+  @keyframes flare { 0%,14%,36%,100% { transform: rotate(0) scale(1); }
+                     20%,30% { transform: rotate(-14deg) scale(1.12,1.06); } }
+  .lbl { font: 9px 'IBM Plex Mono', monospace; fill:#14231F88; }
+</style></head><body>
+<span class="pill">LAYERED-RIG DEMO · THE ACTUAL v0.3 SPRITES · NO NEW ASSETS</span>
+<h1>Animation = layered art + the motion system you already built</h1>
+<p>Every move below is a CSS/keyframe transform on a <b>layer</b> (wing, head, tail) of the
+same v0.3 sprite — a 1:1 preview of framer-motion rigs in <code>birdBehaviors.js</code>.
+This is why the only hard requirement on final art is <b>separable layers</b>.</p>
+
+<!-- Layered skylark, reusable -->
+<defs id="defsHolder" style="display:none"></defs>
+<div class="grid">
+
+  <div class="card"><h2>Idle bob</h2><p>Level 0 — ships today, whole sprite</p>
+    <svg viewBox="-50 -60 100 70">
+      <g class="bob"><use href="#larkBody"/></g>
+    </svg>
+  </div>
+
+  <div class="card"><h2>Tap: hop + head cock</h2><p>Level 1 — head layer rotates 9°</p>
+    <svg viewBox="-50 -60 100 70">
+      <g class="hop"><g id="l2"><use href="#larkNoHead"/><g class="headCock"><use href="#larkHead"/></g></g></g>
+    </svg>
+  </div>
+
+  <div class="card"><h2>Takeoff flap</h2><p>Level 1 — wing layer, ~5 Hz, body tilts</p>
+    <svg viewBox="-50 -78 100 88">
+      <g class="flightTilt"><use href="#larkNoWing"/><g class="flap"><use href="#larkWing"/></g></g>
+    </svg>
+  </div>
+
+  <div class="card"><h2>Crane dance (set piece)</h2><p>Level 1 — leaps, bow, bustle flare</p>
+    <svg viewBox="-56 -120 110 126">
+      <g class="danceLeap">
+        <use href="#craneLegsBody"/>
+        <g class="flare"><use href="#craneBustle"/></g>
+        <g class="bow"><use href="#craneNeckHead"/></g>
+      </g>
+    </svg>
+  </div>
+</div>
+
+<svg width="0" height="0" style="position:absolute">
+<defs>
+  <!-- ============ SKYLARK v0.3, cut into layers ============ -->
+  <g id="larkLegs" stroke="#B98A5F" stroke-width="1.8" fill="none" stroke-linecap="round">
+    <path d="M -2.5 -7.5 L -1.5 -1 M -1.5 -1 L 1.6 -0.2 M -1.5 -1 L -2.8 0.2 M -1.5 -1 L -5.4 -0.3"/>
+    <path d="M 6 -7.8 L 6.8 -1 M 6.8 -1 L 9.9 -0.2 M 6.8 -1 L 5.5 0.2 M 6.8 -1 L 3 -0.3"/>
+  </g>
+  <g id="larkTail" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M -22.5 -22.5 L -11 -17.5 L -12 -12 L -20.5 -16.5 Z" fill="#8A6A50" stroke="#14231F" stroke-width="1.5"/>
+    <path d="M -19.5 -19.8 L -12.5 -16.2" stroke="#6E5138" stroke-width="1.1" fill="none"/>
+  </g>
+  <g id="larkTorso" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M -13 -15 Q -14 -24 -5 -27 Q 6 -30 12 -24 Q 16 -19 14 -13 Q 11 -7 2 -6.5 Q -8 -6.5 -13 -15 Z"
+          fill="#D9B98A" stroke="#14231F" stroke-width="1.6"/>
+    <path d="M -8 -9.5 Q 0 -5.5 9 -9.5 Q 12 -12 12 -15 Q 4 -10.5 -6 -12.5 Z" fill="#F6ECD9" stroke="none"/>
+  </g>
+  <g id="larkWing" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M -11 -19 Q -3 -25 6 -22 Q 3 -14 -5 -13 Q -10 -14 -11 -19 Z"
+          fill="#B9905F" stroke="#14231F" stroke-width="1.2"/>
+    <path d="M -6.5 -14.8 C -10 -15.2 -13 -16.2 -15.5 -17.6" stroke="#8A6448" stroke-width="2.3" fill="none"/>
+    <path d="M -8 -17.5 L 1 -20 M -7 -15 L 2 -17" stroke="#6E5138" stroke-width="1.1" fill="none"/>
+  </g>
+  <g id="larkHead" stroke-linejoin="round" stroke-linecap="round">
+    <circle cx="12" cy="-28" r="7.2" fill="#D9B98A" stroke="#14231F" stroke-width="1.6"/>
+    <path d="M 5.6 -26.6 Q 10.5 -29.5 14.5 -25.5 Q 13.5 -21.5 9 -20.8 Q 6 -23 5.6 -26.6 Z"
+          fill="#D9B98A" stroke="none"/>
+    <path d="M 9 -34.6 L 10.2 -38.2 L 11.8 -34.7 Z M 12.4 -34.7 L 14 -37.6 L 15 -34 Z"
+          fill="#B9905F" stroke="#14231F" stroke-width="1.2"/>
+    <path d="M 8.5 -30.5 Q 12.5 -32.5 16.5 -30" stroke="#F6ECD9" stroke-width="1.7" fill="none"/>
+    <path d="M 18.6 -29.2 L 24.5 -27.9 L 18.7 -27.1 Z" fill="#C79A5B" stroke="#14231F" stroke-width="1.05"/>
+    <path d="M 18.7 -26.9 L 23.3 -26.5 L 18.7 -25.7 Z" fill="#B08448" stroke="#14231F" stroke-width="1.05"/>
+    <circle cx="14.2" cy="-29" r="1.75" fill="#14231F"/>
+    <circle cx="14.85" cy="-29.65" r="0.58" fill="#FFFFFF"/>
+  </g>
+  <g id="larkBody"><use href="#larkLegs"/><use href="#larkTail"/><use href="#larkTorso"/><use href="#larkWing"/><use href="#larkHead"/></g>
+  <g id="larkNoHead"><use href="#larkLegs"/><use href="#larkTail"/><use href="#larkTorso"/><use href="#larkWing"/></g>
+  <g id="larkNoWing"><use href="#larkLegs"/><use href="#larkTail"/><use href="#larkTorso"/><use href="#larkHead"/></g>
+
+  <!-- ============ WHOOPING CRANE v0.3, cut into layers ============ -->
+  <g id="craneLegsBody" stroke-linejoin="round" stroke-linecap="round">
+    <g stroke="#3A3F3B" stroke-width="2" fill="none">
+      <path d="M -6 -26 C -6.6 -18 -6.2 -8.5 -5.4 -1 M -5.4 -1 L -1.8 -0.2 M -5.4 -1 L -6.8 0.4 M -5.4 -1 L -9 -0.2"/>
+      <path d="M 7.5 -26 C 7.1 -18 7.3 -8.5 7.9 -1 M 7.9 -1 L 11.5 -0.2 M 7.9 -1 L 6.5 0.4 M 7.9 -1 L 4.3 -0.2"/>
+    </g>
+    <path d="M -17 -34 Q -17 -46 -5 -48 Q 9 -49.5 14 -41 Q 17.5 -34 13.5 -28 Q 8 -22.5 -3 -23.5 Q -14 -25.5 -17 -34 Z"
+          fill="#FCFAF2" stroke="#14231F" stroke-width="1.6"/>
+    <path d="M -13 -37.5 Q -4 -43.5 6 -40.5 Q 3 -31.5 -6.5 -30.5 Q -12 -32.5 -13 -37.5 Z"
+          fill="#EDE7D6" stroke="none"/>
+  </g>
+  <g id="craneBustle" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M -12.5 -45 C -18.5 -47 -23.5 -44.5 -24.6 -39.5 C -25.2 -35.5 -23.6 -31.5 -20.8 -28.5
+             L -19.4 -31.2 L -17.8 -28.8 L -16.4 -31.4 L -15 -29.4 C -13.6 -34.5 -13 -40 -12.5 -45 Z"
+          fill="#20262B" stroke="#14231F" stroke-width="1.4"/>
+    <g stroke="#3A424A" stroke-width="1.3" fill="none">
+      <path d="M -18 -42.5 C -21.5 -41.5 -23 -38.5 -22.4 -34.5"/>
+      <path d="M -16 -39 C -18 -37 -18.6 -34.2 -18 -31.4"/>
+    </g>
+  </g>
+  <g id="craneNeckHead" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M 11 -42 Q 17 -46 16.5 -58 Q 16 -70 18 -78 L 23.5 -77 Q 21.5 -68 22 -58 Q 22.5 -44 14.5 -37.5 Z"
+          fill="#FCFAF2" stroke="#14231F" stroke-width="1.6"/>
+    <circle cx="21.5" cy="-80" r="6.2" fill="#FCFAF2" stroke="#14231F" stroke-width="1.6"/>
+    <path d="M 17.2 -79.5 Q 20 -82.5 24 -80 Q 23.4 -76.5 20.2 -76.2 Q 17.8 -77.5 17.2 -79.5 Z"
+          fill="#FCFAF2" stroke="none"/>
+    <path d="M 16.4 -83.2 C 18.2 -86.4 22.2 -87.4 25.4 -85.4 C 24.4 -83.6 22.6 -82.4 20.4 -82.2
+             C 18.8 -82.1 17.4 -82.5 16.4 -83.2 Z" fill="#D93A2B" stroke="#14231F" stroke-width="1.1"/>
+    <path d="M 18.4 -80 C 20.8 -81.2 23.8 -81 26 -79.6 C 24.4 -77.6 21.6 -77.2 19.4 -78.2
+             C 18.9 -78.8 18.6 -79.4 18.4 -80 Z" fill="#4A3F3A" stroke="none"/>
+    <path d="M 27.3 -80.4 L 38.6 -77.9 L 27.5 -76.5 C 27 -77.8 27 -79.1 27.3 -80.4 Z"
+          fill="#6E5A46" stroke="#14231F" stroke-width="1.05"/>
+    <path d="M 27.4 -78.3 L 38.6 -77.9" stroke="#14231F" stroke-width="0.75" fill="none"/>
+    <circle cx="23.6" cy="-81.2" r="1.6" fill="#E8B33A" stroke="#14231F" stroke-width="0.8"/>
+    <circle cx="24.15" cy="-81.75" r="0.48" fill="#FFFFFF"/>
+  </g>
+</defs>
+</svg>
+</body></html>

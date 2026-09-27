@@ -63,15 +63,17 @@ struct NumberPadWidget: View {
     private var compact: Bool { sizeClass == .compact }
     let submit: (Any) -> Void
 
+    /// The bottom row is ⌫ · 0 · Go (a decimal mode squeezes "." beside 0).
     private var keys: [[String]] {
-        let last = allowDecimal ? [".", "0", "⌫"] : ["0", "⌫"]
+        let last = allowDecimal ? ["⌫", ".", "0", "Go"] : ["⌫", "0", "Go"]
         return [["1", "2", "3"], ["4", "5", "6"], ["7", "8", "9"], last]
     }
 
-    // Rows tinted Seafoam / Teal Mid / Apricot, then Sun Light 0 and a Sun backspace.
+    // Rows tinted Seafoam / Teal Mid / Apricot; ⌫ Sun, 0 Sun Light, Go Lark Teal.
     private func tint(_ key: String, row: Int) -> (fill: Color, edge: Color, text: Color) {
         switch key {
         case "⌫": return (Theme.sun, Theme.ember, Theme.ink)
+        case "Go": return (Theme.teal, Theme.deepTeal, Theme.cream)
         case "0", ".": return (Theme.sunLight, Theme.sunLightDeep, Theme.ink)
         default:
             switch row {
@@ -95,51 +97,40 @@ struct NumberPadWidget: View {
             }
             ForEach(Array(keys.enumerated()), id: \.offset) { row, line in
                 HStack(spacing: 12) {
-                    // The last row keeps the 3-column grid: 0 sits under the 8.
-                    if line.count == 2 { Color.clear.frame(maxWidth: .infinity).frame(height: keyHeight) }
                     ForEach(line, id: \.self) { key in
                         let t = tint(key, row: row)
+                        let go = key == "Go"
+                        let goOff = go && Double(entry) == nil
                         Button { tap(key) } label: {
                             Group {
                                 if key == "⌫" {
                                     Image(systemName: "delete.left").font(.system(size: 26, weight: .semibold))
                                 } else {
-                                    Text(key).font(theme.displayFont(size: 30))
+                                    Text(key).font(theme.displayFont(size: go ? 28 : 30))
                                 }
                             }
                             .foregroundStyle(t.text)
                             .frame(maxWidth: .infinity)
                             .frame(height: keyHeight)
                             .background(RoundedRectangle(cornerRadius: 18).fill(t.fill).shadow(color: t.edge, radius: 0, x: 0, y: 5))
+                            .opacity(goOff ? 0.4 : 1)
                         }
                         .buttonStyle(SpringButtonStyle())
-                        .accessibilityLabel(key == "⌫" ? "Delete" : key)
+                        .disabled(goOff)
+                        .accessibilityLabel(key == "⌫" ? "Delete" : key == "Go" ? "Check the answer" : key)
                     }
                 }
             }
-
-            Button {
-                guard let value = Double(entry) else { return }
-                submit(value == value.rounded() ? Int(value) as Any : value as Any)
-                entry = ""
-            } label: {
-                Text("Check")
-                    .font(theme.displayFont(size: 24))
-                    .foregroundStyle(Theme.cream)
-                    .frame(maxWidth: .infinity)
-                    .frame(height: compact ? 64 : 80)
-                    .background(RoundedRectangle(cornerRadius: 18).fill(Theme.teal).shadow(color: Theme.deepTeal, radius: 0, x: 0, y: 5))
-                    .opacity(Double(entry) == nil ? 0.4 : 1)
-            }
-            .disabled(Double(entry) == nil)
-            .buttonStyle(SpringButtonStyle())
-            .padding(.top, 4)
         }
         .disabled(disabled)
     }
 
     private func tap(_ key: String) {
         switch key {
+        case "Go":
+            guard let value = Double(entry) else { return }
+            submit(value == value.rounded() ? Int(value) as Any : value as Any)
+            entry = ""
         case "⌫":
             if !entry.isEmpty { entry.removeLast() }
         case ".":

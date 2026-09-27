@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400">
+  <rect width="300" height="400" fill="#FFFDF4"/>
+  <rect x="10" y="10" width="280" height="380" rx="14" fill="none" stroke="#14231F" stroke-width="2.5"/>
+  <rect x="20" y="20" width="260" height="296" rx="10" fill="#DCEFE7"/>
+  <!-- distant meadow line -->
+  <path d="M 20 268 Q 90 258 150 266 T 280 264 V 316 H 20 Z" fill="#BFE3D6"/>
+  <!-- branch from the left with leaf sprigs -->
+  <path d="M 20 292 C 70 288 120 290 158 291" stroke="#B08968" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M 60 289 q -6 -12 3 -18 q 7 10 -3 18 Z M 104 288 q -4 -13 6 -17 q 5 11 -6 17 Z"
+        fill="#7FCFBE" stroke="#3E9E8E" stroke-width="1.2"/>
+  <!-- soft ground shadow -->
+  <ellipse cx="150" cy="293" rx="46" ry="6" fill="#14231F" opacity="0.08"/>
+  <g transform="translate(150,291) scale(3.17)">
+<g stroke-linejoin="round" stroke-linecap="round">
+  <!-- legs + toes -->
+  <g stroke="#9A7358" stroke-width="1.8" fill="none">
+    <path d="M -2.5 -7.5 L -1.5 -1 M -1.5 -1 L 1.6 -0.2 M -1.5 -1 L -2.9 0.2 M -1.5 -1 L -4.4 -0.2"/>
+    <path d="M 6 -7.8 L 6.8 -1 M 6.8 -1 L 9.9 -0.2 M 6.8 -1 L 5.4 0.2 M 6.8 -1 L 3.9 -0.2"/>
+  </g>
+  <!-- tail: long red, two feathers -->
+  <path d="M -23.5 -18.8 L -10 -19.5 L -11 -11.5 L -22.8 -13.2 Z" fill="#D96A4A" stroke="#14231F" stroke-width="1.5"/>
+  <path d="M -21 -16.4 L -11.5 -15.8" stroke="#C05038" stroke-width="1.1" fill="none"/>
+  <!-- body (v0.1 round base) -->
+  <path d="M -12 -14 Q -13 -23 -4 -26.5 Q 7 -29.5 13 -23.5 Q 16.5 -18.5 14 -12.5 Q 10.5 -6.5 1.5 -6.5 Q -8 -7 -12 -14 Z"
+        fill="#CBA98A" stroke="#14231F" stroke-width="1.6"/>
+  <!-- warm breast blush -->
+  <path d="M 6 -8.5 Q 13 -12 14.5 -18 Q 10 -20 7 -17 Q 4 -12 6 -8.5 Z" fill="#E7A57E" stroke="none"/>
+  <!-- head -->
+  <circle cx="12" cy="-27.5" r="7.4" fill="#CBA98A" stroke="#14231F" stroke-width="1.6"/>
+  <!-- blend patch: hides the head/body seam -->
+  <path d="M 5.4 -26 Q 10.5 -29 14.6 -25 Q 13.6 -21 9 -20.3 Q 6 -22.5 5.4 -26 Z"
+        fill="#CBA98A" stroke="none"/>
+  <!-- red folded wing + tucked primary hint -->
+  <path d="M -10 -18.5 Q -2 -24.5 7 -21.5 Q 4 -13.5 -4.5 -12.5 Q -9.5 -13.5 -10 -18.5 Z"
+        fill="#D96A4A" stroke="#14231F" stroke-width="1.2"/>
+  <path d="M -6 -14.2 C -9.5 -14.6 -12.5 -15.4 -15 -16.6" stroke="#C05038" stroke-width="2.3" fill="none"/>
+  <!-- crest: tall red spikes joined to the crown -->
+  <path d="M 6.5 -32 L 8 -39 L 10.5 -33.5 L 12.5 -40.5 L 14.5 -33.8 L 16.8 -37.5 L 17 -32.5 Z"
+        fill="#E2503C" stroke="#14231F" stroke-width="1.3"/>
+  <path d="M 6.6 -31.8 Q 12 -35.4 17 -32.3 Q 15 -29.5 11 -29.8 Q 8 -30.2 6.6 -31.8 Z" fill="#E2503C" stroke="none"/>
+  <!-- black mask hugging the beak -->
+  <path d="M 15.5 -29.5 Q 18.6 -28.6 18.8 -26.6 Q 17 -24.8 14.6 -25.4 Q 13.4 -27.6 15.5 -29.5 Z"
+        fill="#3A2A24" stroke="none"/>
+  <!-- thick orange conical beak, two mandibles -->
+  <path d="M 18.4 -29 L 25 -27.1 L 18.5 -26.5 C 18.1 -27.3 18.1 -28.2 18.4 -29 Z"
+        fill="#F26B3A" stroke="#14231F" stroke-width="1.05"/>
+  <path d="M 18.5 -26.3 L 23.6 -26 L 18.6 -24.9 Z" fill="#E05A2B" stroke="#14231F" stroke-width="1.05"/>
+  <!-- eye -->
+  <circle cx="13.6" cy="-29.2" r="1.75" fill="#14231F"/>
+  <circle cx="14.25" cy="-29.85" r="0.58" fill="#FFFFFF"/>
+</g></g>
+  <text x="30" y="42" font-family="'IBM Plex Mono', monospace" font-size="11" letter-spacing="2"
+        fill="#14231F88">PLATE 08</text>
+  <text x="150" y="349" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="24"
+        font-weight="600" fill="#14231F">Northern Cardinal</text>
+  <text x="150" y="370" text-anchor="middle" font-family="Nunito, sans-serif" font-style="italic"
+        font-size="13" fill="#14231F99">Cardinalis cardinalis</text>
+</svg>

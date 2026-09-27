@@ -185,7 +185,9 @@ struct ParentalGateView: View {
             return
         }
         if Int(entry) == challenge.answer {
-            close()
+            // A host with its own close (GateOverlay) closes inside onPass;
+            // calling its onClose first threw the gated action away.
+            if onClose == nil { dismiss() }
             onPass()
             return
         }

@@ -27,6 +27,7 @@ struct FirstFlightView: View {
     static let completedKey = "kidmath-first-flight-done"
 
     var body: some View {
+        GeometryReader { proxy in
         ScrollView {
             VStack(spacing: 0) {
                 if step == .kid || step == .plan {
@@ -49,12 +50,22 @@ struct FirstFlightView: View {
                     )
                 }
             }
-            .frame(maxWidth: 720)
+            .frame(maxWidth: step == .value ? 900 : 720)
             .padding(.horizontal)
             .padding(.bottom, 32)
-            .frame(maxWidth: .infinity)
+            // The value screen sits in the vertical middle of a tall screen
+            // (an iPad) instead of hugging the top; the wizard steps stay top-aligned.
+            .frame(maxWidth: .infinity, minHeight: step == .value ? proxy.size.height : 0, alignment: .center)
+        }
         }
         .background(Theme.cream)
+        // The value screen's actions stay on screen: they were the last thing
+        // in a scroll that, on an iPad, ended below the fold.
+        .safeAreaInset(edge: .bottom) {
+            if step == .value {
+                ValueActions(onStart: { advancePastValue() }, onSkip: { finish(activateKid: nil) })
+            }
+        }
         .task {
             // A signed-in parent never sees the account step again.
             if app.supabase.isSignedIn { step = .value }
@@ -123,6 +134,7 @@ struct FirstFlightView: View {
 
 private struct ValueStep: View {
     @Environment(\.theme) private var theme
+    @Environment(\.horizontalSizeClass) private var sizeClass
     let onStart: () -> Void
     let onSkip: () -> Void
 
@@ -134,7 +146,7 @@ private struct ValueStep: View {
             (Theme.sunLight, "clock", "Built for fun and focus."),
         ]
 
-        return VStack(alignment: .leading, spacing: 28) {
+        let pitch = VStack(alignment: .leading, spacing: 28) {
             HStack(spacing: 10) {
                 LarkMarkView().frame(height: 30)
                 Text("larkit")
@@ -162,35 +174,66 @@ private struct ValueStep: View {
                     }
                 }
             }
+        }
 
-            PlayCardPanel()
-
-            VStack(alignment: .leading, spacing: 14) {
-                Button(action: onStart) {
-                    Text("Get started")
-                        .font(theme.displayFont(size: 20))
-                        .foregroundStyle(Theme.cream)
-                        .padding(.horizontal, 32)
-                        .frame(height: 56)
-                        .background(
-                            RoundedRectangle(cornerRadius: 18)
-                                .fill(Theme.teal)
-                                .shadow(color: Theme.deepTeal, radius: 0, x: 0, y: 5)
-                        )
+        // Regular width (iPad, big phones in landscape): the pitch beside the
+        // play cards, so the whole screen fits without a scroll. Compact:
+        // stacked, as on the web at phone width.
+        return Group {
+            if sizeClass == .regular {
+                HStack(alignment: .top, spacing: 36) {
+                    pitch.frame(maxWidth: .infinity, alignment: .leading)
+                    PlayCardPanel().frame(maxWidth: 420)
+                        .padding(.top, 16)
                 }
-                .buttonStyle(SpringButtonStyle())
+            } else {
+                VStack(alignment: .leading, spacing: 28) {
+                    pitch
+                    PlayCardPanel()
+                }
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+}
 
+/// The value screen's actions, pinned below the scroll (safeAreaInset) so
+/// "Get started" is always on screen.
+private struct ValueActions: View {
+    @Environment(\.theme) private var theme
+    let onStart: () -> Void
+    let onSkip: () -> Void
+
+    var body: some View {
+        VStack(spacing: 10) {
+            Button(action: onStart) {
+                Text("Get started")
+                    .font(theme.displayFont(size: 20))
+                    .foregroundStyle(Theme.cream)
+                    .frame(maxWidth: 400)
+                    .frame(height: 56)
+                    .background(
+                        RoundedRectangle(cornerRadius: 18)
+                            .fill(Theme.teal)
+                            .shadow(color: Theme.deepTeal, radius: 0, x: 0, y: 5)
+                    )
+            }
+            .buttonStyle(SpringButtonStyle())
+            HStack(spacing: 18) {
                 Button("Already have an account? Sign in", action: onStart)
-                    .font(theme.bodyFont(size: 16, weight: .bold))
+                    .font(theme.bodyFont(size: 15, weight: .bold))
                     .foregroundStyle(Theme.teal)
-
                 Button("Skip for now", action: onSkip)
                     .font(theme.bodyFont(size: 14, weight: .semibold))
                     .foregroundStyle(Theme.ink.opacity(0.45))
             }
-            .padding(.bottom, 8)
+            .frame(minHeight: 32)
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.horizontal, 16)
+        .padding(.top, 12)
+        .padding(.bottom, 8)
+        .frame(maxWidth: .infinity)
+        .background(Theme.cream.shadow(.drop(color: Theme.ink.opacity(0.08), radius: 10, y: -4)))
     }
 }
 

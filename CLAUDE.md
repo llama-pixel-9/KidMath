@@ -216,7 +216,9 @@ run it after any change to QuestionDisplay / a figure / a widget.
 
 **StoreKit testing is awkward by design.** `SKTestSession` needs the
 `com.apple.developer.storekit.request-data` entitlement (Debug-only
-`KidMathDebug.entitlements`) *and* still only works Xcode-launched — headless
+`KidMathDebug.entitlements`, and **simulator-only**: a device profile cannot
+carry it, so `project.yml` maps Debug-on-device to the clean entitlements —
+without that split, ⌘R on a real iPad fails signing) *and* still only works Xcode-launched — headless
 `xcodebuild` returns `notEntitled` and the test self-skips. The app must not
 touch StoreKit before the test session exists, hence `StoreService(autostart:false)`
 under XCTest.

@@ -14,6 +14,7 @@ settings:
     TARGETED_DEVICE_FAMILY: "1,2" # iPhone + iPad
     GENERATE_INFOPLIST_FILE: YES
     CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: FSFK6BL44U # Larkit Labs LLC — set here so xcodegen never loses it
     MARKETING_VERSION: 1.0.0
     CURRENT_PROJECT_VERSION: 1
 
@@ -99,10 +100,13 @@ targets:
         GENERATE_INFOPLIST_FILE: NO # explicit Info.plist above (URL scheme needs a real file)
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
       configs:
-        # Debug adds the StoreKit-testing entitlement (SKTestSession needs it);
-        # Release keeps the clean production entitlements.
+        # Debug adds the StoreKit-testing entitlement (SKTestSession needs it)
+        # — on the SIMULATOR only: a device provisioning profile cannot carry
+        # it, and a Debug run on a real iPad failed to sign until this split.
+        # Release keeps the clean production entitlements everywhere.
         Debug:
-          CODE_SIGN_ENTITLEMENTS: KidMath/KidMathDebug.entitlements
+          CODE_SIGN_ENTITLEMENTS: KidMath/KidMath.entitlements
+          CODE_SIGN_ENTITLEMENTS[sdk=iphonesimulator*]: KidMath/KidMathDebug.entitlements
         Release:
           CODE_SIGN_ENTITLEMENTS: KidMath/KidMath.entitlements
 

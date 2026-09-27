@@ -48,7 +48,7 @@ final class ConsentFlowTests: XCTestCase {
         let consented = await service.hasParentalConsent()
         XCTAssertFalse(consented)
         do {
-            _ = try await service.addKid(firstName: "Ari", age: "6", grade: "1st")
+            _ = try await service.addKid(firstName: "Ari", grade: "1st")
             XCTFail("expected Sign in first")
         } catch {
             XCTAssertEqual(error.localizedDescription, "Sign in first")

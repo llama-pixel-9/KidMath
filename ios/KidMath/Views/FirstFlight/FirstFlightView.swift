@@ -445,41 +445,44 @@ struct GoogleGMark: View {
     }
 }
 
-// MARK: - 03 · Add a kid
+// MARK: - 03 · Who's learning (handoff 2a · 04)
 
+/// First name, their colour, grade — no age. The CTA reads "Start {name}'s
+/// first flight" and is disabled until name and grade are set. Also hosts the
+/// consent-pending screen when the household has no consent on file yet.
 struct KidStep: View {
     @EnvironmentObject private var app: AppModel
     @Environment(\.theme) private var theme
+    @Environment(\.horizontalSizeClass) private var sizeClass
     let onDone: ([KidProfile]) -> Void
 
     @State private var firstName = ""
-    @State private var age: String?
+    @State private var colour: KidColour = .seafoam
     @State private var grade: String?
-    @State private var added: [KidProfile] = []
     @State private var errorMessage = ""
     @State private var busy = false
-    /// Set when the first kid's details are waiting on the parent's email
-    /// tap — the form gives way to ConsentPendingView (web: ConsentPendingPanel).
+    @FocusState private var nameFocused: Bool
+    /// Set when the kid's details are waiting on the parent's email tap —
+    /// the form gives way to ConsentPendingView (web: ConsentPendingPanel).
     @State private var pending: KidProfilesService.PendingConsent?
 
-    private var complete: Bool {
-        !firstName.trimmingCharacters(in: .whitespaces).isEmpty && age != nil && grade != nil
-    }
-
-    private var hasRoom: Bool {
-        app.kidProfiles.kids.count + added.count < KidProfilesService.maxKids
-    }
+    private var trimmedName: String { firstName.trimmingCharacters(in: .whitespaces) }
+    private var complete: Bool { !trimmedName.isEmpty && grade != nil }
 
     var body: some View {
         if let pending {
             ConsentPendingView(
                 pending: pending,
                 email: app.supabase.userEmail ?? "your email",
-                onResend: { try await app.kidProfiles.requestParentalConsent(firstName: pending.firstName, age: pending.age, grade: pending.grade) },
+                onResend: { try await app.kidProfiles.requestParentalConsent(firstName: pending.firstName, grade: pending.grade, colour: pending.colour) },
                 onConfirmed: { kid in
                     self.pending = nil
-                    added.append(kid)
-                    onDone(added)
+                    Task {
+                        // The grant made the profile without the colour; write it now.
+                        var saved = kid
+                        if let colour = pending.colour { saved = await app.kidProfiles.setColour(colour, for: kid) }
+                        onDone([saved])
+                    }
                 },
                 checkConfirmed: { await app.kidProfiles.confirmedKid(named: pending.firstName) }
             )
@@ -489,46 +492,36 @@ struct KidStep: View {
     }
 
     private var form: some View {
-        VStack(alignment: .leading, spacing: 0) {
+        let regular = sizeClass == .regular
+        return VStack(alignment: .leading, spacing: 0) {
             Text("Who's learning?")
-                .font(theme.displayFont(size: 34))
+                .font(theme.displayFont(size: regular ? 42 : 36))
                 .foregroundStyle(Theme.ink)
                 .padding(.top, 20)
-            Text("First name only — that's all we store about your child.")
-                .font(theme.bodyFont(size: 16, weight: .semibold))
-                .foregroundStyle(Theme.ink.opacity(0.6))
-                .padding(.top, 6)
-
-            if !added.isEmpty {
-                Text("Added: \(added.map(\.firstName).joined(separator: ", "))")
-                    .font(theme.bodyFont(size: 14, weight: .bold))
-                    .foregroundStyle(Theme.teal)
-                    .padding(.top, 14)
-            }
-
-            Text("First name")
-                .font(theme.bodyFont(size: 14, weight: .bold))
-                .foregroundStyle(Theme.ink)
-                .padding(.top, 28)
-            TextField("", text: $firstName)
+            Text("First name and grade. That's all we store about your child.")
                 .font(theme.bodyFont(size: 18, weight: .semibold))
-                .foregroundStyle(Theme.ink)
-                .autocorrectionDisabled()
-                .textInputAutocapitalization(.words)
-                .padding(.horizontal, 16)
-                .frame(height: 54)
-                .background(
-                    RoundedRectangle(cornerRadius: 14)
-                        .fill(.white)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 14)
-                                .stroke(Theme.ink.opacity(0.15), lineWidth: 1.5)
-                        )
-                )
+                .foregroundStyle(Theme.ink.opacity(0.7))
+                .fixedSize(horizontal: false, vertical: true)
                 .padding(.top, 8)
 
-            segmentRail("Age", options: KidProfilesService.ages, selection: $age)
-            segmentRail("Grade", options: KidProfilesService.grades, selection: $grade)
+            // iPad: name and colour share a row; iPhone stacks them.
+            if regular {
+                HStack(alignment: .top, spacing: 48) {
+                    nameField.frame(maxWidth: 500)
+                    colourField
+                }
+                .padding(.top, 40)
+            } else {
+                nameField.padding(.top, 36)
+                colourField.padding(.top, 28)
+            }
+
+            Text("Grade")
+                .font(theme.bodyFont(size: 16, weight: .bold))
+                .foregroundStyle(Theme.ink)
+                .padding(.top, regular ? 40 : 28)
+                .padding(.bottom, 10)
+            gradeGrid(regular: regular)
 
             if !errorMessage.isEmpty {
                 Text(errorMessage)
@@ -537,110 +530,148 @@ struct KidStep: View {
                     .padding(.top, 14)
             }
 
-            HStack {
-                if hasRoom && complete {
-                    Button("+ Add another kid") {
-                        Task { _ = await save() }
-                    }
-                    .font(theme.bodyFont(size: 16, weight: .bold))
-                    .foregroundStyle(Theme.teal)
-                    .disabled(busy)
+            Spacer(minLength: 40)
+
+            if regular {
+                HStack(alignment: .center) {
+                    footnote
+                    Spacer()
+                    cta(fullWidth: false)
                 }
-                Spacer()
-                Button {
-                    Task { await handleContinue() }
-                } label: {
-                    Text("Continue")
-                        .font(theme.displayFont(size: 20))
-                        .foregroundStyle(Theme.cream)
-                        .padding(.horizontal, 32)
-                        .frame(height: 56)
-                        .background(
-                            RoundedRectangle(cornerRadius: 18)
-                                .fill(Theme.teal)
-                                .shadow(color: Theme.deepTeal, radius: 0, x: 0, y: 5)
-                        )
-                        .opacity(busy || (!complete && added.isEmpty) ? 0.4 : 1)
-                }
-                .buttonStyle(SpringButtonStyle())
-                .disabled(busy || (!complete && added.isEmpty))
+            } else {
+                cta(fullWidth: true)
+                footnote.padding(.top, 14)
             }
-            .padding(.top, 36)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }
 
-    private func segmentRail(_ title: String, options: [String], selection: Binding<String?>) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text(title)
-                .font(theme.bodyFont(size: 14, weight: .bold))
+    private var nameField: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("First name")
+                .font(theme.bodyFont(size: 16, weight: .bold))
                 .foregroundStyle(Theme.ink)
-            let columns = [GridItem(.adaptive(minimum: 58, maximum: 120), spacing: 8)]
-            LazyVGrid(columns: columns, spacing: 8) {
-                ForEach(options, id: \.self) { option in
-                    let isSelected = selection.wrappedValue == option
-                    Button {
-                        selection.wrappedValue = option
-                    } label: {
-                        Text(option)
-                            .font(theme.bodyFont(size: 16, weight: .bold))
-                            .foregroundStyle(Theme.ink)
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 48)
-                            .background(
-                                RoundedRectangle(cornerRadius: 12)
-                                    // Seafoam marks the selection (§20).
-                                    .fill(isSelected ? Theme.seafoam : .white)
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 12)
-                                            .stroke(
-                                                isSelected ? Theme.teal : Theme.ink.opacity(0.1),
-                                                lineWidth: 1.5
-                                            )
-                                    )
-                            )
-                    }
-                    .buttonStyle(.plain)
-                }
-            }
+            TextField("", text: $firstName)
+                .font(theme.bodyFont(size: 22, weight: .semibold))
+                .foregroundStyle(Theme.ink)
+                .autocorrectionDisabled()
+                .textInputAutocapitalization(.words)
+                .focused($nameFocused)
+                .padding(.horizontal, 22)
+                .frame(height: 68)
+                .background(RoundedRectangle(cornerRadius: 16).fill(.white))
+                .overlay(RoundedRectangle(cornerRadius: 16).stroke(nameFocused ? Theme.teal : Theme.ink.opacity(0.12), lineWidth: nameFocused ? 2 : 1.5))
         }
-        .padding(.top, 22)
     }
 
-    private func save() async -> KidProfile? {
-        guard let age, let grade else { return nil }
+    private var colourField: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            (Text("Their colour").font(theme.bodyFont(size: 16, weight: .bold)).foregroundColor(Theme.ink)
+                + Text(sizeClass == .regular ? " · helps them find their profile" : "").font(theme.bodyFont(size: 15, weight: .semibold)).foregroundColor(Theme.ink.opacity(0.6)))
+            KidColourPicker(selected: $colour, initial: String(trimmedName.prefix(1)).uppercased(), size: sizeClass == .regular ? 64 : 52)
+        }
+    }
+
+    private func gradeGrid(regular: Bool) -> some View {
+        let grades = KidProfilesService.grades
+        let columns = Array(repeating: GridItem(.flexible(), spacing: 12), count: regular ? 7 : 4)
+        return LazyVGrid(columns: columns, spacing: 12) {
+            ForEach(grades, id: \.self) { option in
+                let isSelected = grade == option
+                Button { grade = option } label: {
+                    Text(option)
+                        .font(theme.displayFont(size: 20))
+                        .foregroundStyle(isSelected ? Theme.cream : Theme.ink)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: regular ? 72 : 56)
+                        .background(
+                            RoundedRectangle(cornerRadius: 16)
+                                .fill(isSelected ? Theme.teal : Color.white)
+                                .shadow(color: isSelected ? Theme.deepTeal : .clear, radius: 0, x: 0, y: 4)
+                        )
+                        .overlay(RoundedRectangle(cornerRadius: 16).stroke(isSelected ? Color.clear : Theme.ink.opacity(0.12), lineWidth: 1.5))
+                }
+                .buttonStyle(SpringButtonStyle())
+                .accessibilityAddTraits(isSelected ? .isSelected : [])
+            }
+        }
+    }
+
+    private var footnote: some View {
+        Text("You can add more kids from Grown-ups at any time.")
+            .font(theme.bodyFont(size: 14, weight: .semibold))
+            .foregroundStyle(Theme.ink.opacity(0.6))
+    }
+
+    private func cta(fullWidth: Bool) -> some View {
+        Button {
+            Task { await save() }
+        } label: {
+            Text(trimmedName.isEmpty ? "Start their first flight" : "Start \(trimmedName)'s first flight")
+                .font(theme.displayFont(size: 20))
+                .foregroundStyle(Theme.cream)
+                .lineLimit(1)
+                .minimumScaleFactor(0.8)
+                .padding(.horizontal, fullWidth ? 16 : 52)
+                .frame(maxWidth: fullWidth ? .infinity : nil)
+                .frame(height: 64)
+                .background(RoundedRectangle(cornerRadius: 18).fill(Theme.teal).shadow(color: Theme.deepTeal, radius: 0, x: 0, y: 5))
+                .opacity(busy || !complete ? 0.4 : 1)
+        }
+        .buttonStyle(SpringButtonStyle())
+        .disabled(busy || !complete)
+    }
+
+    private func save() async {
+        guard let grade, complete else { return }
         busy = true
         defer { busy = false }
         do {
-            switch try await app.kidProfiles.addKid(firstName: firstName, age: age, grade: grade) {
+            switch try await app.kidProfiles.addKid(firstName: trimmedName, grade: grade, colour: colour) {
             case .added(let kid):
-                added.append(kid)
-                firstName = ""
-                self.age = nil
-                self.grade = nil
                 errorMessage = ""
-                return kid
+                onDone([kid])
             case .pendingConsent(let request):
                 // Nothing is stored yet; the parent confirms by email.
                 errorMessage = ""
                 pending = request
-                return nil
             }
         } catch {
             errorMessage = "Could not save — \(error.localizedDescription)"
-            return nil
         }
     }
+}
 
-    private func handleContinue() async {
-        if complete {
-            guard await save() != nil else { return }  // nil also while consent is pending
+/// The four colour circles (2a · 04): the selected one shows the kid's
+/// initial and a teal ring.
+struct KidColourPicker: View {
+    @Environment(\.theme) private var theme
+    @Binding var selected: KidColour
+    var initial: String = ""
+    var size: CGFloat = 64
+
+    var body: some View {
+        HStack(spacing: 14) {
+            ForEach(KidColour.allCases) { colour in
+                let isSelected = colour == selected
+                Button { selected = colour } label: {
+                    ZStack {
+                        Circle().fill(colour.fill)
+                        if isSelected {
+                            Text(initial)
+                                .font(theme.displayFont(size: size * 0.42))
+                                .foregroundStyle(Theme.ink)
+                        }
+                    }
+                    .frame(width: size, height: size)
+                    .overlay(Circle().stroke(Theme.teal, lineWidth: isSelected ? 3 : 0).padding(-4))
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("\(colour.rawValue) colour")
+                .accessibilityAddTraits(isSelected ? .isSelected : [])
+            }
         }
-        guard !added.isEmpty else {
-            errorMessage = "Add a first name, age and grade to continue."
-            return
-        }
-        onDone(added)
+        .padding(4)
     }
 }
 

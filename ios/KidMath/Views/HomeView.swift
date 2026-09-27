@@ -7,7 +7,6 @@ struct HomeView: View {
     @EnvironmentObject private var app: AppModel
     @Environment(\.theme) private var theme
     @State private var showSettings = false
-    @State private var showWorksheets = false
     @State private var showAbout = false
     @State private var showPaywall = false
     @State private var showFirstFlight = false
@@ -35,6 +34,13 @@ struct HomeView: View {
         NavigationStack {
             GeometryReader { proxy in
             let regular = proxy.size.width >= 700
+            if tab == .worksheets {
+                // The web's /worksheets page: a destination, not a popup.
+                WorksheetView(embedded: true)
+                    .padding(.top, proxy.safeAreaInsets.top)
+                    .ignoresSafeArea(edges: .top)
+                    .safeAreaInset(edge: .bottom) { tabBar }
+            } else {
             ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 0) {
                     header(regular: regular, topInset: proxy.safeAreaInsets.top)
@@ -62,9 +68,9 @@ struct HomeView: View {
             .ignoresSafeArea(edges: .top)
             .safeAreaInset(edge: .bottom) { tabBar }
             }
+            }
             .toolbar(.hidden, for: .navigationBar)
             .sheet(isPresented: $showSettings) { SettingsView() }
-            .sheet(isPresented: $showWorksheets) { WorksheetView() }
             .fullScreenCover(isPresented: $showMeadow) { MeadowView() }
             .sheet(isPresented: $showAbout) { AboutView() }
             .sheet(isPresented: $showStickers, onDismiss: { engagement = EngagementStore().load() }) { StickerBookView(store: EngagementStore()) }
@@ -188,7 +194,7 @@ struct HomeView: View {
             return
         }
         if UserDefaults.standard.bool(forKey: "showSettings") { showSettings = true; return }
-        if UserDefaults.standard.bool(forKey: "showWorksheets") { showWorksheets = true; return }
+        if UserDefaults.standard.bool(forKey: "showWorksheets") { tab = .worksheets; return }
         if GamFlags.meadow, UserDefaults.standard.bool(forKey: "autostartMeadow") {
             showMeadow = true
             return
@@ -545,7 +551,8 @@ struct HomeView: View {
                 Button {
                     switch item {
                     case .home, .play: withAnimation(.easeOut(duration: 0.2)) { tab = item }
-                    case .worksheets: if app.store.isUnlocked { showWorksheets = true } else { showPaywall = true }
+                    case .worksheets:
+                        if app.store.isUnlocked { withAnimation(.easeOut(duration: 0.2)) { tab = .worksheets } } else { showPaywall = true }
                     case .meadow: showMeadow = true
                     }
                 } label: {

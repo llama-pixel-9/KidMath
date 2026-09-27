@@ -13,6 +13,9 @@ import SwiftUI
 /// it is picked; what the loaded bank cannot fill is switched off, with the
 /// reason — never padded with generated filler.
 struct WorksheetView: View {
+    /// True when Home's Worksheets tab hosts it (no nav bar, no Done — the
+    /// tab bar is the way out, as on the web); false as a standalone sheet.
+    var embedded = false
     @EnvironmentObject private var app: AppModel
     @Environment(\.theme) private var theme
     @Environment(\.dismiss) private var dismiss
@@ -83,7 +86,22 @@ struct WorksheetView: View {
     }
 
     var body: some View {
-        NavigationStack {
+        if embedded {
+            content.onAppear(perform: loadCatalog)
+        } else {
+            NavigationStack {
+                content
+                    .navigationTitle("Worksheets")
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbar {
+                        ToolbarItem(placement: .topBarTrailing) { Button("Done") { dismiss() } }
+                    }
+                    .onAppear(perform: loadCatalog)
+            }
+        }
+    }
+
+    private var content: some View {
             ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 0) {
                     Text("Print a Worksheet")
@@ -103,17 +121,11 @@ struct WorksheetView: View {
                 }
                 .frame(maxWidth: 720, alignment: .leading)
                 .padding(.horizontal, 24)
-                .padding(.vertical, 24)
+                .padding(.top, embedded ? 8 : 24)
+                .padding(.bottom, embedded ? 120 : 24)
                 .frame(maxWidth: .infinity)
             }
             .background(GraphPaperBackground())
-            .navigationTitle("Worksheets")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) { Button("Done") { dismiss() } }
-            }
-            .onAppear(perform: loadCatalog)
-        }
     }
 
     // MARK: - The picker card (the web's PrintableWorksheet, in the 2a style)

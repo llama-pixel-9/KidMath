@@ -26,14 +26,20 @@ struct SettingsView: View {
         NavigationStack {
             List {
                 grownUpsSection
-                subscriptionSection
-                soundSection
-                accountSection
                 if app.supabase.isSignedIn {
                     dataSection
                 }
+                subscriptionSection
+                soundSection
+                accountSection
                 engineSection
             }
+            .scrollContentBackground(.hidden)
+            .background(GraphPaperBackground())
+            .listSectionSpacing(20)
+            .tint(Theme.teal)
+            .font(theme.bodyFont(size: 17, weight: .semibold))
+            .foregroundStyle(Theme.ink)
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -44,9 +50,18 @@ struct SettingsView: View {
         }
     }
 
+    /// Fredoka section titles (2a): Ink, no uppercase system style.
+    private func sectionTitle(_ text: String) -> some View {
+        Text(text)
+            .font(theme.displayFont(size: 20))
+            .foregroundStyle(Theme.ink)
+            .textCase(nil)
+            .padding(.bottom, 4)
+    }
+
     /// The parent report — same practice log and model as larkit.io/report.
     private var grownUpsSection: some View {
-        Section("For grown-ups") {
+        Section {
             NavigationLink {
                 ParentReportView()
             } label: {
@@ -63,11 +78,11 @@ struct SettingsView: View {
                 ParentalGateView { showTopicControls = true }
             }
             .navigationDestination(isPresented: $showTopicControls) { TopicControlsView() }
-        }
+        } header: { sectionTitle("For grown-ups") }
     }
 
     private var subscriptionSection: some View {
-        Section("Subscription") {
+        Section {
             if app.store.hasPremium {
                 Label("larkit Premium is active", systemImage: "star.circle.fill")
                     .foregroundStyle(Theme.teal)
@@ -86,12 +101,12 @@ struct SettingsView: View {
                     }
                 }
             }
-        }
+        } header: { sectionTitle("Subscription") }
     }
 
 
     private var soundSection: some View {
-        Section("Sound & Motion") {
+        Section {
             Toggle("Sound effects", isOn: Binding(
                 get: { !app.isMuted },
                 set: { app.isMuted = !$0 }
@@ -104,11 +119,11 @@ struct SettingsView: View {
                         .foregroundStyle(.secondary)
                 }
             }
-        }
+        } header: { sectionTitle("Sound & motion") }
     }
 
     private var accountSection: some View {
-        Section("Account") {
+        Section {
             if app.supabase.isSignedIn {
                 Label("Signed in — progress syncs across devices", systemImage: "checkmark.circle.fill")
                     .foregroundStyle(.green)
@@ -158,7 +173,7 @@ struct SettingsView: View {
             if !authMessage.isEmpty {
                 Text(authMessage).font(.footnote).foregroundStyle(.red)
             }
-        }
+        } header: { sectionTitle("Account") }
         .sheet(isPresented: $showGate) {
             ParentalGateView {
                 accountUnlocked = true
@@ -209,7 +224,7 @@ struct SettingsView: View {
                 Text(deletionMessage).font(.footnote).foregroundStyle(.red)
             }
         } header: {
-            Text("Your data")
+            sectionTitle("Kids")
         } footer: {
             Text("Deletion is permanent: profiles and practice progress are removed from our servers, not archived. Progress syncs at the family level; deleting the account removes all of it.")
         }
@@ -288,7 +303,7 @@ struct SettingsView: View {
     }
 
     private var engineSection: some View {
-        Section("Engine") {
+        Section {
             if let engine = app.engine {
                 Text("engine v\(engine.version) · \((try? engine.modes().count) ?? 0) modes · JavaScriptCore")
                     .font(.footnote)
@@ -301,7 +316,7 @@ struct SettingsView: View {
                     .font(.footnote)
                     .foregroundStyle(.red)
             }
-        }
+        } header: { sectionTitle("Engine") }
     }
 
     private func afterSignIn() async {

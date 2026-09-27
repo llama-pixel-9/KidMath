@@ -84,113 +84,29 @@ struct WorksheetView: View {
 
     var body: some View {
         NavigationStack {
-            List {
-                Section("Grade") {
-                    Picker("Grade", selection: $grade) {
-                        ForEach(grades, id: \.self) { Text($0).tag($0) }
-                    }
-                    .pickerStyle(.segmented)
-                    .onChange(of: grade) { _, value in
-                        UserDefaults.standard.set(value, forKey: Self.gradeKey)
-                        if skill?.grade != value { pick(nil) }
-                        // Keep the topic when the new grade has it too.
-                        if !topics.contains(where: { $0.mode == topicMode }) { topicMode = "" }
-                    }
-                }
+            ScrollView(showsIndicators: false) {
+                VStack(alignment: .leading, spacing: 0) {
+                    Text("Print a Worksheet")
+                        .font(theme.displayFont(size: 34))
+                        .foregroundStyle(Theme.ink)
+                    Text("Pick a grade, a topic, then the skill to practice. One sheet, one skill — the answer key prints as its own sheet.")
+                        .font(theme.bodyFont(size: 17, weight: .semibold))
+                        .foregroundStyle(Theme.ink.opacity(0.7))
+                        .fixedSize(horizontal: false, vertical: true)
+                        .padding(.top, 8)
 
-                if grade.isEmpty {
-                    Section { Text("Pick a grade to see its topics.").foregroundStyle(theme.textMuted) }
-                } else {
-                    Section("Topic") {
-                        ForEach(topics, id: \.mode) { topic in
-                            Button {
-                                topicMode = topic.mode
-                                if skill?.mode != topic.mode { pick(nil) }
-                            } label: {
-                                HStack {
-                                    Text(topicLabels[topic.mode] ?? topic.mode).font(.subheadline.weight(.semibold))
-                                        .foregroundStyle(topic.mode == topicMode ? Theme.teal : Theme.ink)
-                                    Spacer()
-                                    if topic.mode == topicMode { Image(systemName: "checkmark").foregroundStyle(Theme.teal) }
-                                }
-                            }
-                            .buttonStyle(.plain)
-                            .accessibilityAddTraits(topic.mode == topicMode ? .isSelected : [])
-                        }
-                    }
-                }
-                if let topic = topics.first(where: { $0.mode == topicMode }) {
-                    Section("Skill") {
-                        ForEach(topic.skills) { row in
-                            Button { pick(row) } label: {
-                                HStack(alignment: .top, spacing: 10) {
-                                    Image(systemName: row == skill ? "largecircle.fill.circle" : "circle")
-                                        .foregroundStyle(row == skill ? Theme.teal : theme.textMuted)
-                                    Text(row.title).font(.subheadline.weight(.semibold))
-                                        .foregroundStyle(row == skill ? Theme.teal : Theme.ink)
-                                        .multilineTextAlignment(.leading)
-                                }
-                            }
-                            .buttonStyle(.plain)
-                            .accessibilityAddTraits(row == skill ? .isSelected : [])
-                        }
-                    }
-                }
+                    card.padding(.top, 28)
 
-                if skill != nil {
-                    Section("Problems") {
-                        Picker("Problems", selection: $problemType) {
-                            Text(skill?.computation == true ? "Computation" : "Practice").tag("practice")
-                            Text("Word problems").tag("stories")
-                            Text("Mixed").tag("mixed")
-                        }
-                        .pickerStyle(.segmented)
-                        .onChange(of: problemType) { _, value in
-                            UserDefaults.standard.set(value, forKey: Self.problemTypeKey)
-                            pdfURL = nil
-                        }
-                        if let capacity, (capacity["stories"] ?? 0) == 0 || (capacity["mixed"] ?? 0) == 0, (capacity["practice"] ?? 0) > 0 {
-                            Text("There are not enough word problems for this skill yet.")
-                                .font(.caption).foregroundStyle(theme.textMuted)
-                        }
-                        Picker("Sheets", selection: $sheetCount) {
-                            ForEach(Self.sheetCounts.filter { $0 == 1 || $0 <= maxSheets }, id: \.self) { Text("\($0)").tag($0) }
-                        }
-                        .pickerStyle(.segmented)
-                        .onChange(of: sheetCount) { _, _ in pdfURL = nil }
-                        Toggle("Include answer key", isOn: $answerKey)
-                            .onChange(of: answerKey) { _, _ in pdfURL = nil }
-                    }
-
-                    Section {
-                        Button { generate() } label: {
-                            Label(loading ? "Loading…" : "Build the worksheet", systemImage: "wand.and.stars").font(.headline)
-                        }
-                        .disabled(loading || blocked != nil)
-                        if let pdfURL {
-                            ShareLink(item: pdfURL) {
-                                Label { Text("Share / Print PDF") } icon: { FeatherIcon(glyph: .print, size: 20, color: Theme.cream) }
-                                    .font(.headline)
-                            }
-                        }
-                        if let blocked { Text(blocked).font(.footnote).foregroundStyle(.red) }
-                        if !errorMessage.isEmpty { Text(errorMessage).font(.footnote).foregroundStyle(.red) }
+                    if let first = sheets.first, let skill {
+                        preview(first, skill: skill).padding(.top, 20)
                     }
                 }
-
-                if let first = sheets.first, let skill {
-                    Section("Preview") {
-                        Text("\(skill.header) — \(first.itemCount) problems\(sheets.count > 1 ? " per sheet × \(sheets.count)" : "")\(answerKey ? " + answer key" : "")")
-                            .font(.footnote).foregroundStyle(theme.textMuted)
-                        ForEach(Array(previewQuestions(first).prefix(6).enumerated()), id: \.offset) { index, q in
-                            HStack(alignment: .top, spacing: 8) {
-                                Text("\(index + 1).").foregroundStyle(theme.textMuted)
-                                Text(previewLine(q)).font(.system(size: 16, weight: .semibold))
-                            }
-                        }
-                    }
-                }
+                .frame(maxWidth: 720, alignment: .leading)
+                .padding(.horizontal, 24)
+                .padding(.vertical, 24)
+                .frame(maxWidth: .infinity)
             }
+            .background(GraphPaperBackground())
             .navigationTitle("Worksheets")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -198,6 +114,200 @@ struct WorksheetView: View {
             }
             .onAppear(perform: loadCatalog)
         }
+    }
+
+    // MARK: - The picker card (the web's PrintableWorksheet, in the 2a style)
+
+    private var card: some View {
+        VStack(alignment: .leading, spacing: 28) {
+            field("Grade") {
+                pillRow(grades, selected: grade, label: { $0 }, columns: 6) { value in
+                    grade = value
+                    UserDefaults.standard.set(value, forKey: Self.gradeKey)
+                    if skill?.grade != value { pick(nil) }
+                    // Keep the topic when the new grade has it too.
+                    if !topics.contains(where: { $0.mode == topicMode }) { topicMode = "" }
+                }
+            }
+
+            field("Topic") {
+                if grade.isEmpty {
+                    hint("Pick a grade to see its topics.")
+                } else {
+                    pillRow(topics.map(\.mode), selected: topicMode, label: { topicLabels[$0] ?? $0 }, columns: 3) { mode in
+                        topicMode = mode
+                        if skill?.mode != mode { pick(nil) }
+                    }
+                }
+            }
+
+            field("Skill") {
+                if let topic = topics.first(where: { $0.mode == topicMode }) {
+                    VStack(spacing: 10) {
+                        ForEach(topic.skills) { row in
+                            let on = row == skill
+                            Button { pick(row) } label: {
+                                HStack(spacing: 12) {
+                                    Circle()
+                                        .stroke(on ? Theme.teal : Theme.ink.opacity(0.25), lineWidth: 2)
+                                        .background(Circle().fill(on ? Theme.teal : .clear).padding(4))
+                                        .frame(width: 22, height: 22)
+                                    Text(row.title)
+                                        .font(theme.bodyFont(size: 17, weight: .bold))
+                                        .foregroundStyle(on ? Theme.teal : Theme.ink)
+                                        .multilineTextAlignment(.leading)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                    Spacer(minLength: 0)
+                                }
+                                .padding(.horizontal, 18)
+                                .frame(minHeight: 56)
+                                .background(RoundedRectangle(cornerRadius: 16).fill(on ? Theme.seafoam.opacity(0.3) : .white))
+                                .overlay(RoundedRectangle(cornerRadius: 16).stroke(on ? Theme.teal : Theme.ink.opacity(0.1), lineWidth: on ? 2 : 1.5))
+                            }
+                            .buttonStyle(.plain)
+                            .accessibilityAddTraits(on ? .isSelected : [])
+                        }
+                    }
+                } else {
+                    hint("Pick a topic to see its skills.")
+                }
+            }
+
+            field("Problems") {
+                pillRow(Self.problemTypes, selected: problemType, label: { type in
+                    switch type {
+                    case "stories": return "Word problems"
+                    case "mixed": return "Mixed"
+                    default: return skill?.computation == true ? "Computation" : "Practice"
+                    }
+                }, columns: 3, disabled: { type in
+                    guard let capacity, type != "practice" else { return false }
+                    return (capacity[type] ?? 0) == 0
+                }) { value in
+                    problemType = value
+                    UserDefaults.standard.set(value, forKey: Self.problemTypeKey)
+                    pdfURL = nil
+                }
+                if let capacity, (capacity["stories"] ?? 0) == 0 || (capacity["mixed"] ?? 0) == 0, (capacity["practice"] ?? 0) > 0 {
+                    hint("There are not enough word problems for this skill yet.")
+                }
+            }
+
+            field("Number of sheets") {
+                pillRow(Self.sheetCounts.filter { $0 == 1 || $0 <= maxSheets }, selected: activeCount, label: { "\($0)" }, columns: 4) { value in
+                    sheetCount = value
+                    pdfURL = nil
+                }
+            }
+
+            HStack {
+                Text("INCLUDE ANSWER KEY")
+                    .font(theme.bodyFont(size: 14, weight: .bold))
+                    .tracking(0.8)
+                    .foregroundStyle(Theme.ink.opacity(0.7))
+                Spacer()
+                Toggle("", isOn: $answerKey).labelsHidden().tint(Theme.teal)
+                    .onChange(of: answerKey) { _, _ in pdfURL = nil }
+            }
+
+            VStack(spacing: 12) {
+                Button { generate() } label: {
+                    Text(ctaLabel)
+                        .font(theme.displayFont(size: 20))
+                        .foregroundStyle(Theme.cream)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 64)
+                        .background(RoundedRectangle(cornerRadius: 18).fill(Theme.teal).shadow(color: Theme.deepTeal, radius: 0, x: 0, y: 5))
+                        .opacity(ctaEnabled ? 1 : 0.45)
+                }
+                .buttonStyle(SpringButtonStyle())
+                .disabled(!ctaEnabled)
+
+                if let pdfURL {
+                    ShareLink(item: pdfURL) {
+                        HStack(spacing: 10) {
+                            FeatherIcon(glyph: .print, size: 20, color: Theme.ink)
+                            Text("Share / Print PDF").font(theme.displayFont(size: 18)).foregroundStyle(Theme.ink)
+                        }
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 56)
+                        .background(RoundedRectangle(cornerRadius: 16).fill(.white))
+                        .overlay(RoundedRectangle(cornerRadius: 16).stroke(Theme.ink.opacity(0.12), lineWidth: 1.5))
+                    }
+                }
+                if let blocked { Text(blocked).font(theme.bodyFont(size: 14, weight: .bold)).foregroundStyle(Theme.ember) }
+                if !errorMessage.isEmpty { Text(errorMessage).font(theme.bodyFont(size: 14, weight: .bold)).foregroundStyle(Theme.ember) }
+            }
+        }
+        .padding(28)
+        .background(RoundedRectangle(cornerRadius: 28).fill(.white).shadow(color: Theme.ink.opacity(0.06), radius: 0, y: 5))
+    }
+
+    /// The button says what is still missing, as the web's does.
+    private var ctaLabel: String {
+        if grade.isEmpty { return "Pick a grade" }
+        if topicMode.isEmpty { return "Pick a topic" }
+        if skill == nil { return "Pick a skill" }
+        if loading { return "Loading…" }
+        return "Build the worksheet"
+    }
+    private var ctaEnabled: Bool { skill != nil && !loading && blocked == nil }
+
+    private func field<Content: View>(_ title: String, @ViewBuilder content: () -> Content) -> some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text(title.uppercased())
+                .font(theme.bodyFont(size: 14, weight: .bold))
+                .tracking(0.8)
+                .foregroundStyle(Theme.ink.opacity(0.7))
+            content()
+        }
+    }
+
+    private func hint(_ text: String) -> some View {
+        Text(text).font(theme.bodyFont(size: 16, weight: .semibold)).foregroundStyle(Theme.ink.opacity(0.45))
+    }
+
+    /// A grid of pill choices; the selected one is Seafoam with a teal ring.
+    private func pillRow<T: Hashable>(_ options: [T], selected: T, label: @escaping (T) -> String, columns: Int, disabled: @escaping (T) -> Bool = { _ in false }, onPick: @escaping (T) -> Void) -> some View {
+        let grid = Array(repeating: GridItem(.flexible(), spacing: 12), count: columns)
+        return LazyVGrid(columns: grid, spacing: 12) {
+            ForEach(options, id: \.self) { option in
+                let on = option == selected
+                let off = disabled(option)
+                Button { onPick(option) } label: {
+                    Text(label(option))
+                        .font(theme.bodyFont(size: 17, weight: .bold))
+                        .foregroundStyle(on ? Theme.teal : Theme.ink.opacity(off ? 0.35 : 0.8))
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 10)
+                        .frame(maxWidth: .infinity, minHeight: 56)
+                        .background(RoundedRectangle(cornerRadius: 16).fill(on ? Theme.seafoam.opacity(0.3) : .white))
+                        .overlay(RoundedRectangle(cornerRadius: 16).stroke(on ? Theme.teal : Theme.ink.opacity(0.12), lineWidth: on ? 2 : 1.5))
+                }
+                .buttonStyle(.plain)
+                .disabled(off)
+                .accessibilityAddTraits(on ? .isSelected : [])
+            }
+        }
+    }
+
+    private func preview(_ first: WorksheetPDF.Sheet, skill: Skill) -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("PREVIEW")
+                .font(theme.bodyFont(size: 14, weight: .bold)).tracking(0.8).foregroundStyle(Theme.ink.opacity(0.7))
+            Text("\(skill.header) — \(first.itemCount) problems\(sheets.count > 1 ? " per sheet × \(sheets.count)" : "")\(answerKey ? " + answer key" : "")")
+                .font(theme.bodyFont(size: 14, weight: .semibold)).foregroundStyle(Theme.ink.opacity(0.6))
+            ForEach(Array(previewQuestions(first).prefix(6).enumerated()), id: \.offset) { index, q in
+                HStack(alignment: .top, spacing: 8) {
+                    Text("\(index + 1).").foregroundStyle(Theme.ink.opacity(0.5))
+                    Text(previewLine(q)).foregroundStyle(Theme.ink)
+                }
+                .font(theme.bodyFont(size: 16, weight: .semibold))
+            }
+        }
+        .padding(24)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(RoundedRectangle(cornerRadius: 24).fill(.white))
     }
 
     private func loadCatalog() {

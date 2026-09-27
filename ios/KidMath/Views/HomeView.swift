@@ -187,6 +187,8 @@ struct HomeView: View {
             showPaywall = true
             return
         }
+        if UserDefaults.standard.bool(forKey: "showSettings") { showSettings = true; return }
+        if UserDefaults.standard.bool(forKey: "showWorksheets") { showWorksheets = true; return }
         if GamFlags.meadow, UserDefaults.standard.bool(forKey: "autostartMeadow") {
             showMeadow = true
             return

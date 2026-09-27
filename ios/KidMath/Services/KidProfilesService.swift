@@ -7,7 +7,8 @@ import Supabase
 struct KidProfile: Identifiable, Codable, Equatable {
     let id: UUID
     let firstName: String
-    /// Kept for profiles made before the 2a onboarding; no longer asked.
+    /// Asked alongside grade (the consent notice lists first name, age and
+    /// grade). Optional in storage for profiles that predate it.
     let age: String?
     let grade: String
     /// One of KidColour's ids — the kid's circle on the profile picker.
@@ -97,6 +98,7 @@ final class KidProfilesService: ObservableObject {
     /// The child the parent typed, waiting server-side for their email tap.
     struct PendingConsent: Equatable {
         let firstName: String
+        let age: String
         let grade: String
         let colour: KidColour?
         let sentAt: Date
@@ -133,7 +135,7 @@ final class KidProfilesService: ObservableObject {
     /// account email with a one-tap confirmation link. The kid's details wait
     /// server-side in consent_requests; no kid_profiles row exists until the
     /// parent confirms. Returns the server's send time.
-    func requestParentalConsent(firstName: String, grade: String, colour: KidColour? = nil) async throws -> PendingConsent {
+    func requestParentalConsent(firstName: String, age: String, grade: String, colour: KidColour? = nil) async throws -> PendingConsent {
         let notice = try consentNotice()
         struct Response: Decodable {
             let requested: Bool?
@@ -143,6 +145,7 @@ final class KidProfilesService: ObservableObject {
             "request-consent",
             options: FunctionInvokeOptions(body: [
                 "firstName": firstName.trimmingCharacters(in: .whitespaces),
+                "age": age,
                 "grade": grade,
                 "noticeText": notice.markdown,
                 "termsVersion": notice.termsVersion,
@@ -155,7 +158,7 @@ final class KidProfilesService: ObservableObject {
             ])
         }
         let sentAt = response.sentAt.flatMap { ISO8601DateFormatter.flexible.dateFlexible(from: $0) } ?? Date()
-        return PendingConsent(firstName: firstName.trimmingCharacters(in: .whitespaces), grade: grade, colour: colour, sentAt: sentAt)
+        return PendingConsent(firstName: firstName.trimmingCharacters(in: .whitespaces), age: age, grade: grade, colour: colour, sentAt: sentAt)
     }
 
     /// After the parent taps the link: the profile the server created for the
@@ -237,23 +240,24 @@ final class KidProfilesService: ObservableObject {
     /// `.pendingConsent` — the profile row is created server-side, in one
     /// transaction with the consent record, when the parent taps the link.
     /// (§312.5(c)(1): nothing about the child is stored before consent.)
-    func addKid(firstName: String, grade: String, colour: KidColour? = nil) async throws -> AddResult {
+    func addKid(firstName: String, age: String, grade: String, colour: KidColour? = nil) async throws -> AddResult {
         guard supabase.userId != nil else {
             throw NSError(domain: "KidProfiles", code: 1, userInfo: [NSLocalizedDescriptionKey: "Sign in first"])
         }
         if !(await hasParentalConsent()) {
-            return .pendingConsent(try await requestParentalConsent(firstName: firstName, grade: grade, colour: colour))
+            return .pendingConsent(try await requestParentalConsent(firstName: firstName, age: age, grade: grade, colour: colour))
         }
-        return .added(try await insertKid(firstName: firstName, grade: grade, colour: colour))
+        return .added(try await insertKid(firstName: firstName, age: age, grade: grade, colour: colour))
     }
 
-    private func insertKid(firstName: String, grade: String, colour: KidColour?) async throws -> KidProfile {
+    private func insertKid(firstName: String, age: String, grade: String, colour: KidColour?) async throws -> KidProfile {
         guard let userId = supabase.userId else {
             throw NSError(domain: "KidProfiles", code: 1, userInfo: [NSLocalizedDescriptionKey: "Sign in first"])
         }
         struct NewKid: Encodable {
             let user_id: UUID
             let first_name: String
+            let age: String
             let grade: String
             let colour: String?
         }
@@ -263,6 +267,7 @@ final class KidProfilesService: ObservableObject {
                 .insert(NewKid(
                     user_id: userId,
                     first_name: firstName.trimmingCharacters(in: .whitespaces),
+                    age: age,
                     grade: grade,
                     colour: colour?.rawValue
                 ))
@@ -283,11 +288,11 @@ final class KidProfilesService: ObservableObject {
 
     /// Update a kid's fields (grade changes every September — routine
     /// maintenance under the existing consent, not new collection).
-    func updateKid(_ kid: KidProfile, firstName: String, grade: String, colour: KidColour? = nil) async throws -> KidProfile {
-        struct Patch: Encodable { let first_name: String; let grade: String; let colour: String? }
+    func updateKid(_ kid: KidProfile, firstName: String, age: String, grade: String, colour: KidColour? = nil) async throws -> KidProfile {
+        struct Patch: Encodable { let first_name: String; let age: String; let grade: String; let colour: String? }
         let updated: KidProfile = try await supabase.client
             .from("kid_profiles")
-            .update(Patch(first_name: firstName.trimmingCharacters(in: .whitespaces), grade: grade, colour: (colour ?? kid.colour.flatMap(KidColour.init(rawValue:)))?.rawValue))
+            .update(Patch(first_name: firstName.trimmingCharacters(in: .whitespaces), age: age, grade: grade, colour: (colour ?? kid.colour.flatMap(KidColour.init(rawValue:)))?.rawValue))
             .eq("id", value: kid.id.uuidString)
             .select(Self.selectFields)
             .single()

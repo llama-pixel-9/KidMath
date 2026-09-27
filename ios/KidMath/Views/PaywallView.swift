@@ -81,7 +81,7 @@ struct PaywallView: View {
                 .padding()
                 .frame(maxWidth: .infinity)
             }
-            .background(theme.background)
+            .background(GraphPaperBackground())
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {

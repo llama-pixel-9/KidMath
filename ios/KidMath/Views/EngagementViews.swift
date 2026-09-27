@@ -134,7 +134,7 @@ struct StickerBookView: View {
                 .frame(maxWidth: 760)
                 .frame(maxWidth: .infinity)
             }
-            .background(theme.background.ignoresSafeArea())
+            .background(GraphPaperBackground())
             .navigationTitle("Sticker book")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar { ToolbarItem(placement: .topBarTrailing) { Button("Done") { dismiss() } } }

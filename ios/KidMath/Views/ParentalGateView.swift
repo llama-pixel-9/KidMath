@@ -109,7 +109,7 @@ struct ParentalGateView: View {
         }
         .padding(36)
         .frame(maxWidth: 440)
-        .background(Theme.cream)
+        .background(GraphPaperBackground())
         .presentationDetents([.medium, .large])
         .presentationDragIndicator(.visible)
         .presentationCornerRadius(32)
@@ -231,7 +231,7 @@ struct GateOverlay: View {
                 }
                 .padding(.bottom, 24)
                 .frame(maxWidth: .infinity)
-                .background(Theme.cream, ignoresSafeAreaEdges: .bottom)
+                .background(GraphPaperBackground())
                 .clipShape(UnevenRoundedRectangle(topLeadingRadius: 32, topTrailingRadius: 32))
                 .ignoresSafeArea(edges: .bottom)
                 .transition(.move(edge: .bottom))

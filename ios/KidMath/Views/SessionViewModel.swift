@@ -46,6 +46,8 @@ final class SessionViewModel: ObservableObject {
     @Published private(set) var isRetry = false
     @Published private(set) var level = 1
     @Published private(set) var answeredCount = 0
+    /// First-try right answers so far — the HUD's star count.
+    @Published private(set) var starsThisFlight = 0
     @Published private(set) var streak = 0
     /// Bumped per question so widget @State (entries, picks) resets with it.
     @Published private(set) var questionKey = 0
@@ -260,6 +262,7 @@ final class SessionViewModel: ObservableObject {
             self.answerType = try engine.questionAnswerType(question: question)
             self.level = ProgressStore.int(session.snapshot["level"], default: level)
             self.answeredCount = ProgressStore.int(session.snapshot["questionsAnswered"])
+            self.starsThisFlight = ProgressStore.int(session.snapshot["firstTryCorrect"])
             self.streak = ProgressStore.int(session.snapshot["correctStreak"])
             self.revealAnswer = nil
             self.questionStart = Date()

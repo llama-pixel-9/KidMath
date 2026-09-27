@@ -14,13 +14,14 @@ struct SessionView: View {
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @StateObject private var viewModel: SessionViewModel
 
-    /// Side pane (web SidePane.jsx): the hint or the work space. A right
-    /// column when the play area is 800pt or wider (iPad landscape), a bottom
-    /// sheet below that. The work pane's open state persists on the web's
-    /// key; the hint pane closes with each new question.
+    /// Handoff 2a · 07: the hint is a sheet; the scratch pad opens IN the
+    /// problem card's column (the card shrinks to a strip) — closed by
+    /// default in every mode, and it closes and clears on the next problem.
     enum Pane: String { case hint, work }
-    @State private var pane: Pane? = UserDefaults.standard.string(forKey: "kidmath-workpane-open") == "1" ? .work : nil
-    private static let sidePaneBreakpoint: CGFloat = 800
+    @State private var pane: Pane?
+    /// The typed answer for number-pad questions — owned here so the answer
+    /// box lives in the problem card while the keys sit beside it.
+    @State private var entry = ""
 
     /// `skillRequest` (play by skill) is what the topic sheet started: one
     /// skill, "Larkit picks", or the Fledging Flight. Nil is a plain session (tests).
@@ -47,25 +48,13 @@ struct SessionView: View {
                 skeletonCard
             case .question, .feedback:
                 GeometryReader { proxy in
-                    let wide = proxy.size.width >= Self.sidePaneBreakpoint
-                    HStack(spacing: 0) {
-                        playArea
-                        if wide, let pane {
-                            sidePaneContent(pane)
-                                .frame(width: 340)
-                                .background(theme.cardBackground)
-                                .overlay(alignment: .leading) { Rectangle().fill(Theme.ink.opacity(0.08)).frame(width: 1) }
-                                .transition(.move(edge: .trailing))
-                        }
-                    }
-                    .animation(.easeOut(duration: 0.2), value: pane)
-                    .sheet(isPresented: Binding(get: { !wide && pane != nil }, set: { if !$0 { closePane() } })) {
-                        if let pane {
-                            sidePaneContent(pane)
+                    playArea(landscape: proxy.size.width > proxy.size.height && proxy.size.width >= 900, compact: proxy.size.width < 500)
+                        .animation(.easeOut(duration: 0.2), value: pane)
+                        .sheet(isPresented: Binding(get: { pane == .hint }, set: { if !$0 { closePane() } })) {
+                            hintSheet
                                 .presentationDetents([.medium, .large])
                                 .presentationDragIndicator(.visible)
                         }
-                    }
                 }
             case .complete(let stars, let lifetime):
                 SessionCompleteView(
@@ -114,7 +103,9 @@ struct SessionView: View {
         .task { await viewModel.start() }
         .onDisappear { leaveSession() }
         .onChange(of: viewModel.questionKey) { _, _ in
-            if pane == .hint { pane = nil }
+            // A new problem: the hint and the scratch pad close, the answer clears.
+            pane = nil
+            entry = ""
         }
     }
 
@@ -152,14 +143,11 @@ struct SessionView: View {
     }
 
     private func closePane() {
-        if pane == .work { UserDefaults.standard.set("0", forKey: "kidmath-workpane-open") }
         pane = nil
     }
 
     private func toggleWorkPane() {
-        let next: Pane? = pane == .work ? nil : .work
-        UserDefaults.standard.set(next == .work ? "1" : "0", forKey: "kidmath-workpane-open")
-        pane = next
+        pane = pane == .work ? nil : .work
     }
 
     private func openHint() {
@@ -167,11 +155,10 @@ struct SessionView: View {
         pane = pane == .hint ? nil : .hint
     }
 
-    @ViewBuilder
-    private func sidePaneContent(_ pane: Pane) -> some View {
+    private var hintSheet: some View {
         VStack(spacing: 0) {
             HStack {
-                Label(pane == .hint ? "Hint" : "Work space", systemImage: pane == .hint ? "lightbulb.fill" : "pencil.tip")
+                Label("Hint", systemImage: "lightbulb")
                     .font(theme.bodyFont(size: 15, weight: .heavy)).foregroundStyle(Theme.ink)
                 Spacer()
                 Button { closePane() } label: {
@@ -179,45 +166,32 @@ struct SessionView: View {
                         .frame(width: 32, height: 32).background(Circle().fill(Theme.ink.opacity(0.06)))
                 }
                 .buttonStyle(.plain)
-                .accessibilityLabel(pane == .hint ? "Close the hint" : "Close the work space")
+                .accessibilityLabel("Close the hint")
             }
             .padding(.horizontal, 16).padding(.top, 14).padding(.bottom, 6)
-            switch pane {
-            case .hint:
-                if let hint = viewModel.hint {
-                    HintPaneView(hint: hint)
-                } else {
-                    Text("No hint for this one — give it a go.").padding()
-                }
-            case .work:
-                WorkspaceView().id(viewModel.questionKey)
+            if let hint = viewModel.hint {
+                HintPaneView(hint: hint)
+            } else {
+                Text("No hint for this one — give it a go.")
+                    .font(theme.bodyFont(size: 15, weight: .semibold))
+                    .foregroundStyle(theme.textSecondary)
+                    .padding()
             }
+            Spacer(minLength: 0)
         }
         .background(theme.cardBackground)
     }
 
-    // MARK: - Play area (centered column, like the web's max-w-sm)
+    // MARK: - Play area (handoff 2a · 07)
 
-    private var playArea: some View {
+    /// Landscape iPad: two columns (1.1 : 1, 40 gap) — the problem card (or,
+    /// with the scratch pad open, the strip + pad) and the answer widget.
+    /// Portrait / iPhone: the card above the widget. The keypad never moves.
+    private func playArea(landscape: Bool, compact: Bool) -> some View {
         VStack(spacing: 0) {
-            header
-                .frame(maxWidth: 520)
-            // Play by skill: topic and skill read as one title, the skill
-            // under its topic (the web's session header).
-            if let label = viewModel.sessionLabel {
-                VStack(spacing: 1) {
-                    Text(mode.label)
-                        .font(theme.displayFont(size: 17))
-                        .foregroundStyle(theme.textPrimary)
-                    Text(label)
-                        .font(theme.bodyFont(size: 13, weight: .bold))
-                        .foregroundStyle(theme.textSecondary)
-                        .multilineTextAlignment(.center)
-                }
-                .padding(.top, 6)
-                .accessibilityElement(children: .combine)
-                .accessibilityIdentifier("session-skill")
-            }
+            hud(compact: compact)
+                .padding(.horizontal, compact ? 16 : 48)
+                .padding(.top, 8)
             if viewModel.isFledgingRun {
                 Text("\(viewModel.flightPass) of \(viewModel.sessionSize) to pass")
                     .font(theme.bodyFont(size: 13, weight: .bold))
@@ -228,79 +202,141 @@ struct SessionView: View {
                     .padding(.top, 6)
             }
             GeometryReader { proxy in
-                ScrollView(showsIndicators: false) {
-                    VStack(spacing: 22) {
-                        questionCard
-                        answerWidget
-                            .id(viewModel.questionKey)
+                if landscape {
+                    HStack(alignment: .top, spacing: 40) {
+                        problemColumn(compact: false)
+                            .frame(width: (proxy.size.width - 96 - 40) * 1.1 / 2.1)
+                            .frame(maxHeight: .infinity, alignment: .top)
+                        ScrollView(showsIndicators: false) {
+                            answerWidget
+                                .id(viewModel.questionKey)
+                                .padding(.bottom, 12)
+                        }
                     }
-                    .frame(maxWidth: 400)
-                    .padding(.horizontal)
-                    .padding(.vertical, 12)
-                    .frame(maxWidth: .infinity, minHeight: proxy.size.height)
+                    .padding(.horizontal, 48)
+                    .padding(.vertical, 16)
+                } else {
+                    ScrollView(showsIndicators: false) {
+                        VStack(spacing: compact ? 20 : 28) {
+                            problemColumn(compact: compact)
+                            answerWidget
+                                .id(viewModel.questionKey)
+                        }
+                        .frame(maxWidth: compact ? .infinity : 620)
+                        .padding(.horizontal, compact ? 16 : 48)
+                        .padding(.vertical, 12)
+                        .frame(maxWidth: .infinity, minHeight: proxy.size.height)
+                    }
                 }
             }
         }
-        .padding(.horizontal)
     }
 
-    private var header: some View {
-        HStack(spacing: 12) {
-            Button {
-                finish()
-            } label: {
+    /// The problem card, or the strip + scratch pad when the pad is open.
+    @ViewBuilder
+    private func problemColumn(compact: Bool) -> some View {
+        if pane == .work {
+            VStack(spacing: 14) {
+                problemStrip
+                WorkspaceView()
+                    .id(viewModel.questionKey)
+                    .frame(minHeight: compact ? 260 : 380)
+                    .frame(maxHeight: .infinity)
+            }
+        } else {
+            questionCard
+        }
+    }
+
+    /// With the pad open the card shrinks to its mode label, the problem at
+    /// Fredoka 36 and the answer box.
+    private var problemStrip: some View {
+        HStack(alignment: .center, spacing: 16) {
+            VStack(alignment: .leading, spacing: 4) {
+                Text(mode.label.uppercased())
+                    .font(theme.bodyFont(size: 13, weight: .heavy))
+                    .tracking(1)
+                    .foregroundStyle(Theme.ink.opacity(0.6))
+                Text(promptText ?? "")
+                    .font(theme.displayFont(size: 36))
+                    .foregroundStyle(Theme.ink)
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.5)
+            }
+            Spacer(minLength: 0)
+            if usesNumberPad { answerBox }
+        }
+        .padding(20)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(RoundedRectangle(cornerRadius: 28).fill(theme.cardBackground).shadow(color: Theme.ink.opacity(0.08), radius: 0, y: 5))
+    }
+
+    private var usesNumberPad: Bool {
+        ["numberPad", "fillBlank", "decimal"].contains(viewModel.answerType)
+    }
+
+    /// The typed answer (140×84, 2.5pt teal border) — in the card, not the pad.
+    private var answerBox: some View {
+        Text(entry.isEmpty ? " " : entry)
+            .font(theme.displayFont(size: 34))
+            .foregroundStyle(Theme.ink)
+            .lineLimit(1)
+            .minimumScaleFactor(0.5)
+            .frame(width: 140, height: 84)
+            .background(RoundedRectangle(cornerRadius: 16).fill(Theme.cream))
+            .overlay(RoundedRectangle(cornerRadius: 16).stroke(Theme.teal, lineWidth: 2.5))
+            .accessibilityLabel(entry.isEmpty ? "Your answer, empty" : "Your answer: \(entry)")
+    }
+
+    /// The HUD: close · lark progress bar · stars this flight · Hint · Scratch pad.
+    private func hud(compact: Bool) -> some View {
+        HStack(spacing: compact ? 10 : 14) {
+            Button { finish() } label: {
                 FeatherIcon(glyph: .close, size: 18, color: Theme.ink)
-                    .padding(12)
+                    .frame(width: 52, height: 52)
                     .background(Circle().fill(theme.cardBackground))
                     .accessibilityLabel("close")
             }
-
-            GeometryReader { proxy in
-                ZStack(alignment: .leading) {
-                    Capsule().fill(theme.progressTrack)
-                    Capsule()
-                        .fill(LinearGradient(colors: theme.progressFill, startPoint: .leading, endPoint: .trailing))
-                        .frame(width: max(12, proxy.size.width * viewModel.progressFraction))
-                        .animation(.spring(duration: 0.4), value: viewModel.progressFraction)
-                }
-            }
-            .frame(height: 14)
-
-            if viewModel.streak >= 3 {
-                HStack(spacing: 4) {
-                    FeatherIcon(glyph: .streak, size: 16, color: Theme.sun)
-                    Text("\(viewModel.streak)")
-                        .font(.subheadline.weight(.heavy))
-                        .foregroundStyle(Theme.ember)
-                }
-            }
-
-            Button { openHint() } label: {
-                Image(systemName: "lightbulb.fill")
-                    .font(.system(size: 15, weight: .bold))
-                    .foregroundStyle(pane == .hint ? Theme.cream : Theme.ink)
-                    .frame(width: 38, height: 38)
-                    .background(Circle().fill(pane == .hint ? Theme.ink : theme.cardBackground))
-            }
             .buttonStyle(.plain)
-            .accessibilityLabel(pane == .hint ? "Close the hint" : "Show a hint")
 
-            Button { toggleWorkPane() } label: {
-                Image(systemName: "pencil.tip")
-                    .font(.system(size: 15, weight: .bold))
-                    .foregroundStyle(pane == .work ? Theme.cream : Theme.ink)
-                    .frame(width: 38, height: 38)
-                    .background(Circle().fill(pane == .work ? Theme.ink : theme.cardBackground))
+            LarkProgressBar(progress: viewModel.progressFraction, showsNest: !compact)
+                .frame(height: 34)
+
+            HStack(spacing: 6) {
+                RoundedRectangle(cornerRadius: 2).fill(Theme.sun).frame(width: 12, height: 12).rotationEffect(.degrees(45))
+                Text("\(viewModel.starsThisFlight)")
+                    .font(theme.displayFont(size: 18))
+                    .foregroundStyle(Theme.ink)
             }
-            .buttonStyle(.plain)
-            .accessibilityLabel(pane == .work ? "Close the work space" : "Open the work space")
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel("\(viewModel.starsThisFlight) stars this flight")
 
+            hudPill(label: "Hint", icon: "lightbulb", active: pane == .hint, compact: compact, accessibility: pane == .hint ? "Close the hint" : "Show a hint") { openHint() }
+            hudPill(label: "Scratch pad", icon: "pencil", active: pane == .work, compact: compact, accessibility: pane == .work ? "Close the scratch pad" : "Open the scratch pad") { toggleWorkPane() }
         }
-        .padding(.top, 8)
+    }
+
+    private func hudPill(label: String, icon: String, active: Bool, compact: Bool, accessibility: String, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            HStack(spacing: 8) {
+                Image(systemName: icon).font(.system(size: 15, weight: .semibold))
+                if !compact { Text(label).font(theme.bodyFont(size: 15, weight: .bold)) }
+            }
+            .foregroundStyle(active ? Theme.cream : Theme.ink)
+            .padding(.horizontal, compact ? 0 : 18)
+            .frame(width: compact ? 52 : nil, height: 52)
+            .background(Capsule().fill(active ? Theme.ink : theme.cardBackground))
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(accessibility)
     }
 
     private var questionCard: some View {
-        VStack(spacing: 10) {
+        VStack(spacing: 12) {
+            Text(mode.label.uppercased())
+                .font(theme.bodyFont(size: 13, weight: .heavy))
+                .tracking(1)
+                .foregroundStyle(Theme.ink.opacity(0.6))
             if viewModel.isRetry {
                 Text("Let's try this one again!")
                     .font(theme.bodyFont(size: 12, weight: .bold))
@@ -313,19 +349,24 @@ struct SessionView: View {
                 revealed: feedbackState != nil,
                 areaFigure: mode.id == "areaPerimeter" ? viewModel.areaFigureSpec : nil
             )
+            // The answer box (number-pad questions) and read-aloud share a row.
             // Read-aloud (GamFlags.readAloud): the speaker reads the prompt
             // through the shared speakableText; K–1 kids hear it automatically.
-            if GamFlags.readAloud, let prompt = promptText {
-                Button {
-                    SpeechService.shared.speak(app.engine?.speakableText(prompt) ?? prompt)
-                } label: {
-                    Label("Read it to me", systemImage: "speaker.wave.2.fill")
-                        .font(theme.bodyFont(size: 13, weight: .bold))
-                        .foregroundStyle(Theme.teal)
+            HStack(spacing: 20) {
+                if usesNumberPad { answerBox }
+                if GamFlags.readAloud, let prompt = promptText {
+                    Button {
+                        SpeechService.shared.speak(app.engine?.speakableText(prompt) ?? prompt)
+                    } label: {
+                        Label("Read it to me", systemImage: "speaker.wave.2")
+                            .font(theme.bodyFont(size: 15, weight: .bold))
+                            .foregroundStyle(Theme.teal)
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel("Read the question aloud")
                 }
-                .buttonStyle(.plain)
-                .accessibilityLabel("Read the question aloud")
             }
+            .padding(.top, 6)
             // Teach-don't-grade: the model shown after a first miss.
             if let scaffold = viewModel.scaffold {
                 ScaffoldView(scaffold: scaffold, hint: viewModel.scaffoldHint)
@@ -338,13 +379,13 @@ struct SessionView: View {
                   let prompt = promptText else { return }
             SpeechService.shared.speak(app.engine?.speakableText(prompt) ?? prompt)
         }
-        .padding(24)
+        .padding(28)
         .frame(maxWidth: .infinity, minHeight: 150)
         .background(
             RoundedRectangle(cornerRadius: 28)
                 .fill(theme.cardBackground)
                 .overlay(RoundedRectangle(cornerRadius: 28).stroke(borderColor, lineWidth: 3))
-                .shadow(color: Theme.ink.opacity(0.06), radius: 0, y: 6)
+                .shadow(color: Theme.ink.opacity(0.08), radius: 0, y: 5)
         )
         .overlay {
             if feedbackState == true, !reduceMotion, !app.calmMode {
@@ -416,9 +457,9 @@ struct SessionView: View {
         let display = viewModel.display
         switch viewModel.answerType {
         case "numberPad", "fillBlank":
-            NumberPadWidget(disabled: locked) { viewModel.submit($0) }
+            NumberPadWidget(disabled: locked, entry: $entry, showsBox: false) { viewModel.submit($0) }
         case "decimal":
-            NumberPadWidget(allowDecimal: true, disabled: locked) { viewModel.submit($0) }
+            NumberPadWidget(allowDecimal: true, disabled: locked, entry: $entry, showsBox: false) { viewModel.submit($0) }
         case "fraction":
             FractionInputWidget(disabled: locked) { viewModel.submit($0) }
         case "symbolSelect":
@@ -485,5 +526,44 @@ enum AnswerFormatting {
         default:
             return "\(value)"
         }
+    }
+}
+
+
+/// The lark progress bar (2a · 07): a 3pt dotted Ink line at 20%, a solid
+/// teal line up to progress, the lark riding the leading edge, "NEST" at the
+/// end (dropped on iPhone).
+struct LarkProgressBar: View {
+    @Environment(\.theme) private var theme
+    let progress: Double
+    var showsNest = true
+
+    var body: some View {
+        HStack(spacing: 10) {
+            GeometryReader { proxy in
+                let width = proxy.size.width
+                let mid = proxy.size.height / 2
+                let x = width * min(max(progress, 0), 1)
+                ZStack(alignment: .leading) {
+                    Path { p in p.move(to: CGPoint(x: 0, y: mid)); p.addLine(to: CGPoint(x: width, y: mid)) }
+                        .stroke(Theme.ink.opacity(0.2), style: StrokeStyle(lineWidth: 3, lineCap: .round, dash: [1, 6]))
+                    Path { p in p.move(to: CGPoint(x: 0, y: mid)); p.addLine(to: CGPoint(x: x, y: mid)) }
+                        .stroke(Theme.teal, style: StrokeStyle(lineWidth: 3, lineCap: .round))
+                        .animation(.spring(duration: 0.4), value: progress)
+                    LarkMarkView()
+                        .frame(width: 40, height: 34)
+                        .position(x: max(20, min(width - 20, x)), y: mid - 4)
+                        .animation(.spring(duration: 0.4), value: progress)
+                }
+            }
+            if showsNest {
+                Text("NEST")
+                    .font(theme.bodyFont(size: 12, weight: .heavy))
+                    .tracking(1.2)
+                    .foregroundStyle(Theme.ink.opacity(0.6))
+            }
+        }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("Progress \(Int(progress * 100)) percent")
     }
 }

@@ -34,6 +34,8 @@ struct TopicControlsView: View {
                 }
             }
         }
+        .scrollContentBackground(.hidden)
+        .background(GraphPaperBackground())
         .navigationTitle("Skills to practice")
         .navigationBarTitleDisplayMode(.inline)
         .task { await load() }

@@ -51,7 +51,7 @@ struct ParentReportView: View {
             .frame(maxWidth: 760)
             .frame(maxWidth: .infinity)
         }
-        .background(theme.background.ignoresSafeArea())
+        .background(GraphPaperBackground())
         .navigationTitle("Progress report")
         .navigationBarTitleDisplayMode(.inline)
         .task { await load() }

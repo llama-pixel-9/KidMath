@@ -38,7 +38,7 @@ struct TopicSheetView: View {
 
     var body: some View {
         ZStack {
-            theme.background.ignoresSafeArea()
+            GraphPaperBackground()
             ScrollView {
                 VStack(alignment: .leading, spacing: 0) {
                     Button { dismiss() } label: {

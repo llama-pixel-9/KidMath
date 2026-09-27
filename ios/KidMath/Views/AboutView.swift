@@ -73,7 +73,7 @@ struct AboutView: View {
                 .padding()
                 .frame(maxWidth: .infinity)
             }
-            .background(theme.background)
+            .background(GraphPaperBackground())
             .navigationTitle("About")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

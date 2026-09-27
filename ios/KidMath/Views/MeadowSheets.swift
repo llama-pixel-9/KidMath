@@ -166,7 +166,7 @@ struct GiveAHomeSheet: View {
                     list
                 }
             }
-            .background(theme.background.ignoresSafeArea())
+            .background(GraphPaperBackground())
         }
         .onAppear { balance = EngagementStore.starBalance(EngagementStore().load()) }
     }

@@ -10,6 +10,7 @@ import {
   KeyHint,
 } from "./kit";
 import { COINS } from "./kit/coins.js";
+import NumberPad from "./NumberPad.jsx";
 
 
 // mm -> px. 1.3 keeps the smallest coin (a dime, 46px) above the 44px minimum
@@ -56,8 +57,12 @@ function Coin({ coin, selected, onClick, locked, lowMotionMode, hint }) {
  * Tap coins to build or count an amount. `coins` is the tray contents, e.g.
  * ["quarter", "dime", "dime", "penny"]. Answer is the total in cents.
  *
- * mode="count"  — the tray is fixed; the child totals it and types the answer.
+ * mode="count"  — the tray is fixed; the child totals it and enters the answer
+ *   on the app's own keypad (the same NumberPad the number items use), so a
+ *   phone never has to open its system keyboard.
  * mode="build"  — the child taps coins to reach a target; total is the answer.
+ *   With `requiredCount`, Check stays off until exactly that many coins are
+ *   picked, so "6 coins worth 51¢" cannot be answered with two quarters.
  */
 export default function CoinTray({
   onSubmit,
@@ -67,9 +72,9 @@ export default function CoinTray({
   coins = [],
   mode = "count",
   targetCents = null,
+  requiredCount = null,
 }) {
   const [selected, setSelected] = useState([]);
-  const [entry, setEntry] = useState("");
   const locked = isLocked(feedback);
 
   const toggle = (i) => {
@@ -78,15 +83,16 @@ export default function CoinTray({
   };
 
   const selectedTotal = selected.reduce((sum, i) => sum + COINS[coins[i]].value, 0);
-  const canSubmit = mode === "build" ? true : entry !== "";
+  const needCount = mode === "build" && Number.isInteger(requiredCount) && requiredCount > 0;
+  const canSubmit = !needCount || selected.length === requiredCount;
 
   const submit = () => {
     if (locked || !canSubmit) return;
-    onSubmit(mode === "build" ? selectedTotal : Number(entry));
+    onSubmit(selectedTotal);
   };
 
   // Keyboard (build mode): 1-9 and 0 toggle the first ten coins, Enter checks.
-  // Count mode types into the autofocused input.
+  // Count mode's keypad listens for digits itself.
   useIndexKeys({
     locked,
     count: mode === "build" ? coins.length : 0,
@@ -126,6 +132,15 @@ export default function CoinTray({
           >
             {selectedTotal}¢
           </motion.p>
+          {needCount && (
+            <p
+              className={`text-sm font-bold ${selected.length === requiredCount ? "text-deep-teal" : theme?.textMuted || "text-slate-500"}`}
+              aria-live="polite"
+              data-qa="coin-count"
+            >
+              {selected.length} of {requiredCount} coins
+            </p>
+          )}
           {feedback === "wrong" && targetCents != null && selectedTotal !== targetCents && (
             <p className="text-sm font-bold text-ember">
               {selectedTotal < targetCents
@@ -135,23 +150,14 @@ export default function CoinTray({
           )}
         </div>
       ) : (
-        <input
-          autoFocus
-          inputMode="numeric"
-          pattern="[0-9]*"
-          value={entry}
-          disabled={locked}
-          onChange={(e) => setEntry(e.target.value.replace(/\D/g, "").slice(0, 4))}
-          onKeyDown={(e) => e.key === "Enter" && submit()}
-          aria-label="Total in cents"
-          placeholder="?"
-          className={`w-32 text-center text-3xl font-extrabold rounded-2xl py-2 ${theme?.cardBg || "bg-white/80"} ${theme?.textPrimary || "text-slate-700"} ${feedbackRing(feedback)}`}
-        />
+        <NumberPad onSubmit={onSubmit} feedback={feedback} theme={theme || {}} lowMotionMode={lowMotionMode} />
       )}
 
-      <button type="button" className={SUBMIT_BUTTON} disabled={locked || !canSubmit} onClick={submit}>
-        Check
-      </button>
+      {mode === "build" && (
+        <button type="button" className={SUBMIT_BUTTON} disabled={locked || !canSubmit} onClick={submit}>
+          Check
+        </button>
+      )}
     </section>
   );
 }

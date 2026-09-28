@@ -86,6 +86,8 @@ export const WIDGETS = {
     props: (q) => ({
       coins: q.display?.coins || [],
       mode: q.display?.coinMode || "count",
+      // Build mode may demand an exact number of coins ("6 coins worth 51¢").
+      requiredCount: q.display?.requiredCount ?? null,
       // For the §18 wrong-answer coaching line ("7¢ short") — the tray
       // states the shortfall, never a red X.
       targetCents: typeof q.answer === "number" ? q.answer : null,

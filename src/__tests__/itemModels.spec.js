@@ -5,6 +5,8 @@ import { evalExpr, identifiersIn, parseExpr } from "../itemModels/expr.js";
 import { WIDGET_IDS, slotTokensIn, resolveSlotToken } from "../itemModels/schema.js";
 import { NAMES } from "../itemModels/names.js";
 import { GRADE2_MONEY_MODELS, changeFromOneDollar, compareTwoAmounts } from "../itemModels/samples/grade2Money.js";
+import PILOT_MODELS from "../itemModels/pilot/grade2Money.json";
+import GRADE5_MODELS from "../itemModels/money/grade5.json";
 import { runChecks } from "../itemBank/qc/checks.js";
 import { validateBankItem } from "../itemBank/index.js";
 import { hintContainsAnswer, validateHint } from "../hints/hintSchema.js";
@@ -49,6 +51,35 @@ describe("fill", () => {
       const prompts = new Set(SEEDS.slice(0, 40).map((seed) => fill(model, { seed }).question.display.promptText));
       expect(prompts.size, model.id).toBeGreaterThan(20);
     }
+  });
+
+  it("fills the same item whether the spec's keys come in file order or database order", () => {
+    // jsonb stores object keys sorted by length, then bytes; a spec read back
+    // from item_models arrives that way, with a slot's dependencies after it.
+    const jsonbOrder = (obj) =>
+      Object.fromEntries(
+        Object.keys(obj)
+          .sort((a, b) => a.length - b.length || (a < b ? -1 : a > b ? 1 : 0))
+          .map((k) => [k, obj[k]]),
+      );
+    const original = PILOT_MODELS.find((m) => m.id === "money-g2-equivBillsForCoins-hard");
+    expect(original).toBeTruthy();
+    const fromDb = jsonbOrder({ ...original, slots: jsonbOrder(original.slots) });
+    expect(Object.keys(fromDb.slots)).not.toEqual(Object.keys(original.slots));
+    for (const seed of [1, 2, 3, 4, 5]) expect(fill(fromDb, { seed })).toEqual(fill(original, { seed }));
+    // Every pilot model fills from database order too.
+    for (const model of PILOT_MODELS) {
+      const reordered = { ...model, slots: jsonbOrder(model.slots) };
+      expect(() => fill(reordered, { seed: 1 }), model.id).not.toThrow();
+    }
+  });
+
+  it("refuses expression slots that depend on each other", () => {
+    const loop = {
+      ...changeFromOneDollar,
+      slots: { ...changeFromOneDollar.slots, a: { kind: "expr", expr: "b + 1", format: "int" }, b: { kind: "expr", expr: "a + 1", format: "int" } },
+    };
+    expect(() => fill(loop, { seed: 1 })).toThrow(/depend on each other/);
   });
 
   it("gives a v2 bank item the loader, the gate and the served question all accept", () => {
@@ -137,6 +168,15 @@ describe("fill", () => {
     }
   });
 
+  it("honors a model's own money style and level range", () => {
+    const pinned = { ...changeFromOneDollar, moneyStyle: "dollars", levelRange: [6, 7] };
+    const item = fill(pinned, { seed: 11 });
+    expect(item.question.display.promptText).toMatch(/\$0\.\d\d/);
+    expect(item.question.display.promptText).not.toMatch(/¢/);
+    expect(item.levelRange).toEqual([6, 7]);
+    expect(fill(changeFromOneDollar, { seed: 11 }).levelRange).toEqual([4, 6]);
+  });
+
   it("carries the operation on the payload when the prompt states its numbers", () => {
     const change = fill(changeFromOneDollar, { seed: 5 }).question;
     expect(change.op).toBe("-");
@@ -174,6 +214,15 @@ describe("validateModel", () => {
     expect(validateModel({ ...base, widget: "sliderThing" }).errors[0]).toMatch(/not a registered answer type/);
   });
 
+  it("checks the optional money style, level range and prompt-variant count", () => {
+    const bad = (extra) => validateModel({ ...changeFromOneDollar, ...extra }).errors.join("; ");
+    expect(bad({ moneyStyle: "pounds" })).toMatch(/moneyStyle/);
+    expect(bad({ levelRange: [0, 11] })).toMatch(/levelRange/);
+    expect(bad({ levelRange: [7, 6] })).toMatch(/levelRange/);
+    expect(bad({ promptVariants: 0 })).toMatch(/promptVariants/);
+    expect(validateModel({ ...changeFromOneDollar, moneyStyle: "dollars", levelRange: [6, 7], promptVariants: 9 }).ok).toBe(true);
+  });
+
   it("refuses a slot form on a non-object slot", () => {
     const { errors } = validateModel({ ...base, template: { prompt: "{name_plural} buy {object_a} for {price}. How much change?" } });
     expect(errors[0]).toMatch(/only an object slot has a plural form/);
@@ -181,6 +230,13 @@ describe("validateModel", () => {
 });
 
 describe("the pieces", () => {
+  it("writes money as text for choices that carry an amount", () => {
+    expect(evalExpr("money(145)", {})).toBe("$1.45");
+    expect(evalExpr("money(45)", {})).toBe("45¢");
+    expect(evalExpr("dollars(45)", {})).toBe("$0.45");
+    expect(evalExpr("'Yes, ' + money(230) + ' left over'", {})).toBe("Yes, $2.30 left over");
+  });
+
   it("evaluates model expressions without running code", () => {
     const scope = { price: 65, paid: 100, coins: ["quarter", "dime", "penny"], name1: "Mia", name2: "Leo" };
     expect(evalExpr("paid - price", scope)).toBe(35);
@@ -225,5 +281,33 @@ describe("the pieces", () => {
       expect(findObjectsInText(name), name).toEqual([]);
       expect(findKidSafeHits(name), name).toEqual([]);
     }
+  });
+});
+
+describe("pack prices", () => {
+  it("draws a pack money slot from the object's pack price and exposes the pack size", () => {
+    const model = GRADE5_MODELS.find((m) => m.id === "money-g5-unitPriceFromPack-easy");
+    expect(model).toBeTruthy();
+    for (let seed = 1; seed <= 10; seed += 1) {
+      const item = fill(model, seed);
+      const m = item.question.display.promptText.match(/^A pack of (\d+) .* costs \$(\d+)\.(\d\d) /);
+      expect(m, item.question.display.promptText).toBeTruthy();
+      const size = Number(m[1]);
+      const packCents = Number(m[2]) * 100 + Number(m[3]);
+      expect(size).toBeGreaterThanOrEqual(4);
+      expect(size).toBeLessThanOrEqual(12);
+      expect(packCents % size).toBe(0);
+      expect(item.question.answer).toBe(formatMoney(packCents / size, "dollars"));
+    }
+  });
+
+  it("rejects a pack flag that is not true or has no object to price", () => {
+    const base = GRADE5_MODELS.find((m) => m.id === "money-g5-unitPriceFromPack-easy");
+    const bad = JSON.parse(JSON.stringify(base));
+    bad.slots.pack.pack = "yes";
+    expect(validateModel(bad).errors.join("\n")).toMatch(/pack must be true/);
+    const loose = JSON.parse(JSON.stringify(base));
+    loose.slots.pack.of = [100, 200];
+    expect(validateModel(loose).errors.join("\n")).toMatch(/needs of to name an object slot/);
   });
 });

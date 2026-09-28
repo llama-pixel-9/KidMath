@@ -21,6 +21,7 @@ import {
   WIDGET_IDS,
   resolveSlotToken,
   slotTokensIn,
+  MONEY_STYLES,
 } from "./schema.js";
 
 const isText = (x) => typeof x === "string" && x.trim().length > 0;
@@ -89,6 +90,8 @@ export function validateModel(model) {
           } else if (typeof spec.of !== "number" && !isRange(spec.of)) {
             err(`slot "${name}".of must name an object slot, be [lo, hi], or be a fixed amount`);
           }
+          if (spec.pack != null && spec.pack !== true) err(`slot "${name}".pack must be true when given`);
+          if (spec.pack === true && typeof spec.of !== "string") err(`slot "${name}".pack needs of to name an object slot`);
           break;
         case "int":
           if (!isRange([spec.min, spec.max])) err(`slot "${name}" needs min <= max`);
@@ -197,6 +200,14 @@ export function validateModel(model) {
     if (!isRecord(model.display)) err("display must be an object of expressions");
     else checkFields(model.display, "display", checkExpr);
   }
+
+  if (model.moneyStyle != null && !MONEY_STYLES.includes(model.moneyStyle)) err(`moneyStyle must be one of ${MONEY_STYLES.join(", ")}`);
+  if (model.levelRange != null) {
+    const r = model.levelRange;
+    const okRange = Array.isArray(r) && r.length === 2 && r.every((v) => Number.isInteger(v) && v >= 1 && v <= 10) && r[0] <= r[1];
+    if (!okRange) err("levelRange must be [min, max] with levels 1-10 and min <= max");
+  }
+  if (model.promptVariants != null && !(Number.isInteger(model.promptVariants) && model.promptVariants > 0)) err("promptVariants must be a positive integer");
 
   return { ok: errors.length === 0, errors };
 }

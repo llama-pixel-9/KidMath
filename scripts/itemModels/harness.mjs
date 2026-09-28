@@ -64,10 +64,13 @@ for (const model of models) {
   }
   if (seenIds.has(model.id)) err(`duplicate id ${model.id}`);
   seenIds.add(model.id);
-  if (!/^money-g2-[a-z0-9]+(?:-[a-z0-9]+)*-(easy|moderate|hard)(?:-\d+)?$/i.test(String(model.id))) warn(`id "${model.id}" does not follow money-g2-<shape>-<difficulty>[-n]`);
+  const grade = String(model.grade);
+  const idPattern = new RegExp(`^money-g${grade}-[a-z0-9]+(?:-[a-z0-9]+)*-(easy|moderate|hard)(?:-\\d+)?$`, "i");
+  if (!idPattern.test(String(model.id))) warn(`id "${model.id}" does not follow money-g${grade}-<shape>-<difficulty>[-n]`);
   if (model.modeId !== "money") err(`modeId must be "money"`);
-  if (String(model.grade) !== "2") err(`grade must be "2"`);
-  if (!model.standards?.ccss?.includes("2.MD.C.8")) err("standards.ccss must include 2.MD.C.8");
+  if (!["2", "3", "4", "5"].includes(grade)) err(`grade must be "2", "3", "4" or "5"`);
+  if (grade === "2" && !model.standards?.ccss?.includes("2.MD.C.8")) err("standards.ccss must include 2.MD.C.8");
+  if (grade !== "2" && !(model.standards?.ccss?.length > 0)) err("standards.ccss must name at least one standard");
   const v = validateModel(model);
   if (!v.ok) {
     for (const e of v.errors) err(`validateModel: ${e}`);

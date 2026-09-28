@@ -27,6 +27,14 @@ const num = (x, fn) => {
 
 /** The functions an expression may call. Each is pure and total over its
  * documented inputs; a wrong input type throws, which the fill reports. */
+
+function formatCents(cents, style) {
+  const c = Math.round(Number(cents));
+  if (!Number.isFinite(c)) throw new Error("money() needs a number of cents");
+  if (style === "dollars" || c >= 100) return `$${(c / 100).toFixed(2)}`;
+  return `${c}¢`;
+}
+
 export const HELPERS = Object.freeze({
   min: (...xs) => Math.min(...xs.map((x) => num(x, "min"))),
   max: (...xs) => Math.max(...xs.map((x) => num(x, "max"))),
@@ -62,6 +70,11 @@ export const HELPERS = Object.freeze({
     }
     return out;
   },
+  // Money as text, for text choices that carry an amount ("Yes, $1.45 left
+  // over"): money() writes 45¢ under a dollar and $1.45 from one, dollars()
+  // always writes $0.45.
+  money: (c) => formatCents(c, "auto"),
+  dollars: (c) => formatCents(c, "dollars"),
 });
 
 function coinCents(name) {

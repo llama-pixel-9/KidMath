@@ -15,10 +15,10 @@
  * plus the v2 fields): runChecks and validateBankItem accept it as is.
  * Pure apart from the tables it reads; no network, no DOM.
  */
-import { findObjectsInText, objectsFor, priceRangeFor } from "../content/contextTable.js";
+import { findObjectsInText, objectsFor, priceRangeFor, packFor } from "../content/contextTable.js";
 import { localize, moneyRuleFor } from "../content/stateWords.js";
 import { NAMES } from "./names.js";
-import { evalExpr } from "./expr.js";
+import { evalExpr, identifiersIn } from "./expr.js";
 import { GRADES, resolveSlotToken } from "./schema.js";
 
 /** The engine's seeded PRNG (scripts/engineParity.mjs); same seed, same run. */
@@ -127,8 +127,16 @@ function shuffle(rng, list) {
   return out;
 }
 
-/** The [lo, hi] cent range a money slot may draw from for an object. */
-function objectCentRange(object, objectSpec) {
+/** The [lo, hi] cent range a money slot may draw from for an object. With
+ * `pack`, the range sits within 30% of the table's pack price (the price
+ * check allows half to double), and the object slot's priceCents, which
+ * narrows single prices, is ignored. */
+function objectCentRange(object, objectSpec, pack = false) {
+  if (pack) {
+    const p = packFor(object.id);
+    if (!p) return null;
+    return [Math.ceil(p.price_usd * 70), Math.floor(p.price_usd * 130)];
+  }
   const usd = priceRangeFor(object.id);
   if (!usd) return null;
   let lo = Math.ceil(usd[0] * 100 - 1e-6);
@@ -141,7 +149,8 @@ function objectCentRange(object, objectSpec) {
 }
 
 function objectCandidates(name, spec, model) {
-  const priced = Object.values(model.slots).some((s) => s.kind === "money" && s.of === name);
+  const priced = Object.values(model.slots).some((s) => s.kind === "money" && s.of === name && s.pack !== true);
+  const packPriced = Object.values(model.slots).some((s) => s.kind === "money" && s.of === name && s.pack === true);
   const exclude = new Set(spec.exclude || []);
   const excludeCategories = new Set(spec.excludeCategories || []);
   return objectsFor({ skill: spec.skill, band: spec.band, minAppeal: spec.minAppeal }).filter((o) => {
@@ -149,6 +158,7 @@ function objectCandidates(name, spec, model) {
     if (CURRENCY_IDS.has(o.id) || PACK_NOUN.test(o.singular)) return false;
     if (exclude.has(o.id) || excludeCategories.has(o.category)) return false;
     if (Array.isArray(spec.categories) && !spec.categories.includes(o.category)) return false;
+    if (packPriced && objectCentRange(o, spec, true) == null) return false;
     if (priced || spec.priceCents) return objectCentRange(o, spec) != null;
     return true;
   });
@@ -229,8 +239,8 @@ function drawScope(model, rng) {
           value = randInt(rng, spec.of[0], spec.of[1], spec.step || 1);
         } else {
           const object = get(spec.of);
-          const range = objectCentRange(object, model.slots[spec.of]);
-          if (!range) throw new Error(`"${object.id}" has no price range for slot "${name}"`);
+          const range = objectCentRange(object, model.slots[spec.of], spec.pack === true);
+          if (!range) throw new Error(`"${object.id}" has no ${spec.pack === true ? "pack " : ""}price range for slot "${name}"`);
           const step = spec.step || 1;
           const lo = Math.ceil(range[0] / step) * step;
           if (lo > range[1]) throw new Error(`no ${step}¢ step price for "${object.id}"`);
@@ -255,8 +265,24 @@ function drawScope(model, rng) {
     return value;
   };
 
-  for (const [name, spec] of Object.entries(model.slots)) if (spec.kind !== "expr") get(name);
-  for (const [name, spec] of Object.entries(model.slots)) if (spec.kind === "expr") scope[name] = evalExpr(spec.expr, scope);
+  // Slots are drawn in name order, whatever order the spec's keys arrive in
+  // (the database stores jsonb keys sorted by length), so a seed gives the
+  // same item from the repo file and from the review screen.
+  const names = Object.keys(model.slots).sort();
+  for (const name of names) if (model.slots[name].kind !== "expr") get(name);
+  // Expression slots follow their dependencies: a slot may name any other
+  // slot, wherever it sits in the spec.
+  const pending = new Set(names.filter((name) => model.slots[name].kind === "expr"));
+  while (pending.size) {
+    let progressed = false;
+    for (const name of pending) {
+      if (identifiersIn(model.slots[name].expr).some((id) => pending.has(id))) continue;
+      scope[name] = evalExpr(model.slots[name].expr, scope);
+      pending.delete(name);
+      progressed = true;
+    }
+    if (!progressed) throw new Error(`expression slots depend on each other: ${[...pending].join(", ")}`);
+  }
   return scope;
 }
 
@@ -368,7 +394,9 @@ function fillOnce(model, { seed, state, grade, depth }) {
   if (!scope) throw new Error(`fill of "${model.id}" gave up after ${MAX_ATTEMPTS} draws: ${lastReason}`);
 
   // One money style for the whole choice set — never "90¢" beside "$1.10".
-  const promptStyle = promptMoneyStyle(state, grade);
+  // A model may pin dollars-and-cents notation (grade 4-5 decimals: $0.75);
+  // otherwise the state rule decides.
+  const promptStyle = model.moneyStyle === "dollars" ? "dollars" : promptMoneyStyle(state, grade);
   const choiceStyle =
     promptStyle === "dollars" || (answerType === "money" && [answerValue, ...kept.map((d) => d.value)].some((v) => v >= 100))
       ? "dollars"
@@ -437,7 +465,7 @@ function fillOnce(model, { seed, state, grade, depth }) {
     itemFamily: model.family || "application",
     subskill: model.subskill,
     structureType: model.structureType || model.id,
-    levelRange: GRADE_LEVEL_RANGE[grade],
+    levelRange: Array.isArray(model.levelRange) ? [...model.levelRange] : GRADE_LEVEL_RANGE[grade],
     levelBand: GRADE_BAND[grade],
     reviewStatus: "draft",
     representationType: model.representationType ?? null,

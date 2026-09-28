@@ -17,6 +17,8 @@ import LegalPage from "./legal/LegalPage";
 import { ConfirmConsentPage, RevokeConsentPage } from "./ConsentLinkPages.jsx";
 import Footer from "./Footer";
 import AdminItemsPage from "./admin/AdminItemsPage";
+import ModelReviewPage from "./admin/ModelReviewPage";
+import VersionSwitchPanel from "./admin/VersionSwitchPanel";
 import LayoutSweepPage from "./admin/LayoutSweepPage";
 import DiagnosticsPage from "./admin/DiagnosticsPage";
 import MeadowPage from "./engagement/meadow/MeadowPage";
@@ -111,6 +113,10 @@ function AppShell() {
             subscriber straight into the Stripe Billing Portal. */}
         <Route path="/account/billing" element={<BillingPortalPage />} />
         <Route path="/admin" element={<AdminItemsPage />} />
+        {/* Item bank v2: review item models one at a time, and flip which
+            bank version each skill serves (admin-only writes, by RLS). */}
+        <Route path="/admin/models" element={<ModelReviewPage />} />
+        <Route path="/admin/switch" element={<VersionSwitchPanel />} />
         {import.meta.env.DEV && <Route path="/__sweep" element={<LayoutSweepPage />} />}
         <Route path="/diagnostics" element={<DiagnosticsPage />} />
         {/* Unknown paths: send to home rather than expose a bare 404. */}

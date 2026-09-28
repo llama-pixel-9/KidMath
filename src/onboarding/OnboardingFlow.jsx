@@ -560,7 +560,7 @@ export default function OnboardingFlow() {
   const finish = (kids) => {
     const all = [...existingKids, ...kids];
     if (all.length === 1) {
-      setActiveKid(all[0].id, all[0].grade);
+      setActiveKid(all[0].id, all[0].grade, all[0].state);
       navigate("/", { replace: true });
     } else {
       navigate("/profiles", { replace: true });

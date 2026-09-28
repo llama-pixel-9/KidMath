@@ -28,6 +28,7 @@
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
+import { findKidSafeHits } from "../../../src/content/kidSafeList.js";
 import { kidFacingText, kidView, loadItems } from "./kidView.js";
 import { askInBatches, BATCH_SIZE, claudeAvailable, DEFAULT_MODEL, parseArgs } from "./qcCli.js";
 
@@ -65,44 +66,6 @@ Reply with JSON only: an array with one object per item, in the order given:
   {"itemId": string, "printable": boolean, "reason": string}
 reason is one sentence: what makes it unprintable, or why it is fine.
 Include EVERY item you were given.`;
-
-// TODO: remove once every checkout carries src/content/kidSafeList.js — a
-// stopgap so the list pass still runs, with far less reach and no allowlist.
-const MINIMAL_TERMS = {
-  weapons: ["gun", "guns", "knife", "knives", "bomb", "bombs", "sword", "swords", "weapon", "weapons", "bullet", "bullets"],
-  violence: ["kill", "killed", "killing", "murder", "dead", "death", "died", "fight", "fighting", "war", "attack", "bully"],
-  substances: ["beer", "wine", "alcohol", "cigarette", "cigarettes", "drugs", "vape", "drunk"],
-  gambling: ["casino", "poker", "bet", "betting", "lottery", "gamble", "gambling", "jackpot"],
-  bodyWeight: ["diet", "dieting", "calories", "fat", "skinny", "overweight"],
-  romance: ["kiss", "kissing", "boyfriend", "girlfriend", "dating", "romantic"],
-  religion: ["church", "bible", "pray", "prayer", "god", "jesus", "mosque", "temple"],
-  politics: ["democrat", "republican", "president", "politics", "protest", "senator"],
-  scary: ["zombie", "vampire", "haunted", "blood", "monster", "ghost", "nightmare"],
-  putDowns: ["stupid", "dumb", "idiot", "loser", "ugly", "dummy"],
-  brands: ["lego", "pokemon", "disney", "mcdonald's", "iphone", "youtube", "roblox", "minecraft"],
-};
-
-function minimalHits(text) {
-  const hits = [];
-  for (const [category, terms] of Object.entries(MINIMAL_TERMS)) {
-    for (const term of terms) {
-      const re = new RegExp(`(^|[^\\p{L}\\p{N}])${term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?![\\p{L}\\p{N}])`, "iu");
-      if (re.test(text)) hits.push({ term, category });
-    }
-  }
-  return hits;
-}
-
-async function loadKidSafeList() {
-  try {
-    const mod = await import("../../../src/content/kidSafeList.js");
-    if (typeof mod.findKidSafeHits === "function") return { findKidSafeHits: mod.findKidSafeHits, source: "src/content/kidSafeList.js" };
-  } catch (err) {
-    if (err.code !== "ERR_MODULE_NOT_FOUND") throw err;
-  }
-  process.stderr.write("kid-safe review: src/content/kidSafeList.js not found; using the built-in minimal list.\n");
-  return { findKidSafeHits: minimalHits, source: "built-in minimal list" };
-}
 
 function itemBlock(view) {
   if (view.kind === "model") {
@@ -145,7 +108,7 @@ async function main() {
   const outPath = args.options.out || "qa-out/kid-safe-review.json";
 
   // Pass 1 — the list.
-  const { findKidSafeHits, source: listSource } = await loadKidSafeList();
+  const listSource = "src/content/kidSafeList.js";
   const hitsById = new Map(views.map((v) => [v.itemId, findKidSafeHits(kidFacingText(v))]));
   const clean = views.filter((v) => !hitsById.get(v.itemId).length);
 

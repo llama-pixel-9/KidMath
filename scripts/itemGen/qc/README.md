@@ -9,8 +9,8 @@ and the report carries `skipped: true`); nothing is silently marked clean.
 | Script | Question it answers | Exit 1 when |
 |---|---|---|
 | `reviewAgent.js` (`npm run bank:qc`) | deterministic checks, then readability/coherence judgment | a deterministic check fails |
-| `blindSolve.js` | does a solver who sees only what the kid sees reach the key? | any item disagrees (`--fail-on-ambiguous` adds ambiguous ones) |
-| `kidSafeReview.js` | would a US public elementary school print this for that grade? | any item is not printable |
+| `blindSolve.js` (`npm run bank:blind-solve`) | does a solver who sees only what the kid sees reach the key? | any item disagrees (`--fail-on-ambiguous` adds ambiguous ones) |
+| `kidSafeReview.js` (`npm run bank:kid-safe`) | would a US public elementary school print this for that grade? | any item is not printable |
 
 Shared plumbing: `qcCli.js` (args, transport, batching) and `kidView.js`
 (item loading and the kid's view: served choices, sub-prompt, a plain
@@ -35,12 +35,8 @@ Common options: `--item id[,id]`, `--limit n`, `--out path` (default
 (default `KIDMATH_QC_MODEL`, else Claude Code's pick), `--dry-run` (prints the
 first batch's prompt, no model call), `--help`.
 
-Suggested `package.json` scripts (not added here):
-
-```json
-"bank:blind-solve": "node --import ./scripts/lib/registerResolve.js scripts/itemGen/qc/blindSolve.js",
-"bank:kid-safe": "node --import ./scripts/lib/registerResolve.js scripts/itemGen/qc/kidSafeReview.js"
-```
+Shortcuts: `npm run bank:blind-solve -- <args>` and `npm run bank:kid-safe -- <args>`
+run the same two commands.
 
 ## Reports
 

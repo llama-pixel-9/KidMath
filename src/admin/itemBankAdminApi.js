@@ -1,10 +1,27 @@
 import { supabase } from "../supabaseClient";
-import { refreshBankFromCloud } from "../itemBank/cloudLoader";
+import { bankSelectFields, noteMissingV2Columns, refreshBankFromCloud } from "../itemBank/cloudLoader";
 
-const ADMIN_SELECT_FIELDS =
+// The v1 admin columns. `version` is not listed: cloudLoader's bankSelectFields
+// appends it with the other v2 columns (item_model_id, difficulty, hint, tags)
+// while the table has them, and drops the set on a 42703 so the admin keeps
+// working on a project the migration has not reached yet. The review queue's
+// hint checks (hintNoAnswer, hintPresent) read hint and tags from these rows.
+const ADMIN_BASE_FIELDS =
   "item_id, mode_id, item_family, subskill, structure_type, level_min, level_max, " +
   "review_status, payload, representation_type, source, level_band, " +
-  "version, created_at, updated_at, reviewed_by, reviewed_at";
+  "created_at, updated_at, reviewed_by, reviewed_at";
+
+/**
+ * Run one item_bank query that selects the admin columns. `run(fields)` builds
+ * and awaits the query; when the select names a v2 column the table lacks,
+ * the same query is re-run once with the v1 list. Safe on writes too: PostgREST
+ * rejects the whole request before executing it, so nothing was written.
+ */
+async function withAdminSelect(run) {
+  let res = await run(bankSelectFields(ADMIN_BASE_FIELDS));
+  if (res.error && noteMissingV2Columns(res.error)) res = await run(bankSelectFields(ADMIN_BASE_FIELDS));
+  return res;
+}
 
 function rowToItem(row) {
   return {
@@ -21,6 +38,11 @@ function rowToItem(row) {
     source: row.source || null,
     levelBand: row.level_band || null,
     version: row.version,
+    // v2 columns: undefined before the migration, null on v1 rows after it.
+    itemModelId: row.item_model_id ?? null,
+    difficulty: row.difficulty ?? null,
+    hint: row.hint ?? null,
+    tags: row.tags ?? null,
     createdAt: row.created_at,
     updatedAt: row.updated_at,
     reviewedBy: row.reviewed_by || null,
@@ -52,12 +74,14 @@ export async function listAllItems() {
   const PAGE = 1000;
   const rows = [];
   for (let from = 0; ; from += PAGE) {
-    const { data, error } = await supabase
-      .from("item_bank")
-      .select(ADMIN_SELECT_FIELDS)
-      .order("mode_id", { ascending: true })
-      .order("item_id", { ascending: true })
-      .range(from, from + PAGE - 1);
+    const { data, error } = await withAdminSelect((fields) =>
+      supabase
+        .from("item_bank")
+        .select(fields)
+        .order("mode_id", { ascending: true })
+        .order("item_id", { ascending: true })
+        .range(from, from + PAGE - 1)
+    );
     if (error) throw error;
     rows.push(...(data || []));
     if (!data || data.length < PAGE) break;
@@ -68,11 +92,9 @@ export async function listAllItems() {
 export async function upsertItem(item) {
   if (!supabase) throw new Error("Supabase not configured");
   const row = itemToRow(item);
-  const { data, error } = await supabase
-    .from("item_bank")
-    .upsert(row, { onConflict: "item_id" })
-    .select(ADMIN_SELECT_FIELDS)
-    .single();
+  const { data, error } = await withAdminSelect((fields) =>
+    supabase.from("item_bank").upsert(row, { onConflict: "item_id" }).select(fields).single()
+  );
   if (error) throw error;
   // Refresh the in-memory cache so an approval is reflected in the next session.
   refreshBankFromCloud({ force: true });
@@ -103,12 +125,9 @@ export async function setReviewStatus(itemId, reviewStatus, payload = undefined)
   // A status change may carry the reviewer's chosen wording (payload with the
   // pick applied and promptOptions stripped) so choice + approval are atomic.
   if (payload !== undefined) patch.payload = payload;
-  const { data, error } = await supabase
-    .from("item_bank")
-    .update(patch)
-    .eq("item_id", itemId)
-    .select(ADMIN_SELECT_FIELDS)
-    .single();
+  const { data, error } = await withAdminSelect((fields) =>
+    supabase.from("item_bank").update(patch).eq("item_id", itemId).select(fields).single()
+  );
   if (error) throw error;
   refreshBankFromCloud({ force: true });
   return rowToItem(data);
@@ -134,12 +153,14 @@ export async function bulkSetReviewStatus(entries, reviewStatus) {
   for (let i = 0; i < withPayload.length; i += WAVE) {
     const wave = await Promise.all(
       withPayload.slice(i, i + WAVE).map(async (entry) => {
-        const { data, error } = await supabase
-          .from("item_bank")
-          .update({ ...patch, payload: entry.payload })
-          .eq("item_id", entry.itemId)
-          .select(ADMIN_SELECT_FIELDS)
-          .single();
+        const { data, error } = await withAdminSelect((fields) =>
+          supabase
+            .from("item_bank")
+            .update({ ...patch, payload: entry.payload })
+            .eq("item_id", entry.itemId)
+            .select(fields)
+            .single()
+        );
         if (error) throw error;
         return rowToItem(data);
       })
@@ -154,11 +175,9 @@ export async function bulkSetReviewStatus(entries, reviewStatus) {
   const ID_CHUNK = 100;
   for (let i = 0; i < plainIds.length; i += ID_CHUNK) {
     const ids = plainIds.slice(i, i + ID_CHUNK);
-    const { data, error } = await supabase
-      .from("item_bank")
-      .update(patch)
-      .in("item_id", ids)
-      .select(ADMIN_SELECT_FIELDS);
+    const { data, error } = await withAdminSelect((fields) =>
+      supabase.from("item_bank").update(patch).in("item_id", ids).select(fields)
+    );
     if (error) throw error;
     updated.push(...(data || []).map(rowToItem));
   }

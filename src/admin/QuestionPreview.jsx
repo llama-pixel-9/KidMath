@@ -17,6 +17,14 @@ function toBankItem(item) {
     levelRange: [Number(item.levelMin), Number(item.levelMax)],
     reviewStatus: item.reviewStatus,
     question: item.payload,
+    // v2 fields ride onto the served question here exactly as in a session
+    // (mathEngine stamps version, itemModelId, difficulty and hint from the
+    // bank item), so a preview shows what the kid would get.
+    version: item.version,
+    itemModelId: item.itemModelId ?? null,
+    difficulty: item.difficulty ?? null,
+    hint: item.hint ?? null,
+    tags: item.tags ?? null,
   };
 }
 

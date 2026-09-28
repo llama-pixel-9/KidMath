@@ -45,12 +45,17 @@ const ROW = { id: "kid-1", first_name: "Maya", age: "7", grade: "2nd", state: "T
 /**
  * A fake supabase-js client for kid_profiles: records the update / insert
  * payload and the selected columns, and answers reads from `rows`. When
- * `hasStateColumn` is false the select of `state` fails the way PostgREST
- * does before the migration lands.
+ * `hasStateColumn` is false a select of `state` fails with 42703 and a write
+ * body naming it with PGRST204, the two ways PostgREST rejects the column
+ * before the migration lands.
  */
 function fakeClient({ rows = [ROW], hasStateColumn = true, consent = true } = {}) {
-  const calls = { updates: [], inserts: [], selects: [] };
+  const calls = { updates: [], inserts: [], selects: [], updateSelects: [] };
   const missing = { code: "42703", message: "column kid_profiles.state does not exist" };
+  const unknownInBody = {
+    code: "PGRST204",
+    message: "Could not find the 'state' column of 'kid_profiles' in the schema cache",
+  };
   const answer = (columns, data) =>
     Promise.resolve(
       !hasStateColumn && /\bstate\b/.test(columns) ? { data: null, error: missing } : { data, error: null },
@@ -76,7 +81,14 @@ function fakeClient({ rows = [ROW], hasStateColumn = true, consent = true } = {}
         calls.updates.push(patch);
         return {
           eq: () => ({
-            select: (columns) => ({ single: () => answer(columns, { ...rows[0], ...patch }) }),
+            select: (columns) => {
+              calls.updateSelects.push(columns);
+              const single = () =>
+                !hasStateColumn && "state" in patch
+                  ? Promise.resolve({ data: null, error: unknownInBody })
+                  : answer(columns, { ...rows[0], ...patch });
+              return { single };
+            },
           }),
         };
       },
@@ -186,6 +198,38 @@ describe("updateKid", () => {
       updateKid("kid-1", { firstName: "Maya", age: "7", grade: "2nd", state: "Texas" }),
     ).rejects.toThrow(KID_STATE_MESSAGE);
     expect(calls.updates).toEqual([]);
+  });
+
+  it("saves the other fields until the migration lands, retrying without the state", async () => {
+    // The edit form always sends a state, so a plain grade change must survive
+    // a table that has no such column yet.
+    const { client, calls } = fakeClient({ rows: [{ ...ROW, state: undefined }], hasStateColumn: false });
+    state.client = client;
+    const saved = await updateKid("kid-1", { firstName: "Maya", age: "8", grade: "3rd", state: "tx" });
+    expect(calls.updates).toEqual([
+      { first_name: "Maya", age: "8", grade: "3rd", state: "TX" },
+      { first_name: "Maya", age: "8", grade: "3rd" },
+    ]);
+    expect(calls.updateSelects).toEqual([
+      "id, first_name, age, grade, state, created_at",
+      "id, first_name, age, grade, created_at",
+    ]);
+    expect(saved).toMatchObject({ id: "kid-1", grade: "3rd", state: null });
+  });
+
+  it("surfaces any other write error unchanged", async () => {
+    const { client } = fakeClient();
+    client.from = () => ({
+      update: () => ({
+        eq: () => ({
+          select: () => ({ single: () => Promise.resolve({ data: null, error: { message: "network down" } }) }),
+        }),
+      }),
+    });
+    state.client = client;
+    await expect(updateKid("kid-1", { firstName: "Maya", age: "7", grade: "2nd", state: "" })).rejects.toThrow(
+      "network down",
+    );
   });
 });
 

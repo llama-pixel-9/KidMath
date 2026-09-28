@@ -34,8 +34,12 @@ const ACTIVE_KID_STATE_KEY = "kidmath-active-kid-state";
 // column the table lacks, and an empty kid list would lock the family out).
 const KID_COLUMNS = "id, first_name, age, grade, state, created_at";
 const KID_COLUMNS_PRE_STATE = "id, first_name, age, grade, created_at";
+// 42703 is a select naming the column; PGRST204 ("Could not find the 'state'
+// column ... in the schema cache") is an update or insert body naming it.
 const missingStateColumn = (error) =>
-  error?.code === "42703" || /column .*\bstate\b/i.test(error?.message || "");
+  error?.code === "42703" ||
+  error?.code === "PGRST204" ||
+  /'state' column|column .*\bstate\b/i.test(error?.message || "");
 
 /** Friendly copy for a state code that is not a US state or DC. */
 export const KID_STATE_MESSAGE = "Pick a state from the list, or leave it unset for Common Core wording.";
@@ -188,16 +192,18 @@ export async function consentRequestStatus(requestId) {
  */
 export async function updateKid(kidId, { firstName, age, grade, state }) {
   if (!supabase || !kidId) throw new Error("Sign in first");
-  const patch = { first_name: firstName.trim(), age, grade };
-  if (state !== undefined) patch.state = normalizeKidState(state);
-  const { data, error } = await supabase
-    .from("kid_profiles")
-    .update(patch)
-    .eq("id", kidId)
-    .select(KID_COLUMNS)
-    .single();
+  const fields = { first_name: firstName.trim(), age, grade };
+  const patch = state !== undefined ? { ...fields, state: normalizeKidState(state) } : fields;
+  const write = (body, columns) =>
+    supabase.from("kid_profiles").update(body).eq("id", kidId).select(columns).single();
+  let { data, error } = await write(patch, KID_COLUMNS);
+  // Until the 20260928110000 migration lands the table has no `state`: the
+  // edit form always sends one, so without this retry a parent could not save
+  // a grade change. The other fields are saved; a state picked now is dropped,
+  // and the card shows Common Core wording, which is what the kid gets.
+  if (error && missingStateColumn(error)) ({ data, error } = await write(fields, KID_COLUMNS_PRE_STATE));
   if (error) throw new Error(error.message);
-  return data;
+  return { ...data, state: data.state ?? null };
 }
 
 /**

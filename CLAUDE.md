@@ -24,6 +24,8 @@ npm run bank:report      # cell counts, PASS/FAIL
 npm run bank:variety     # variety report (220 cells; all must pass)
 npm run bank:audit       # structure audit
 npm run bank:qc          # QC agent over the bank
+npm run bank:blind-solve # a model solves items as the kid sees them; must reach the key
+npm run bank:kid-safe    # kid-safe list, then "would a school print this?"
 npm run bank:export      # approved cloud rows → shipped bundle (src/itemBank/items/)
 npm run bank:seed        # timestamped Supabase seed migration
 npm run bank:gen         # generateDrafts.js
@@ -66,7 +68,7 @@ src/
     structures/        CCSS additive/multiplicative structure templates — reference wording per structure
     formats/  distractors.js  itemMetadata.js  blueprints.js (STALE: only the original 8 modes)
   itemBank/            bundled seed + cloud loader + normalize + QC checks
-    items/             exported approved rows (4,078 items) — the shipped bundle
+    items/             exported approved rows (43,616 items) — the shipped bundle
     qc/checks.js       mechanical gate; severity `fail` blocks approval
   engine/nativeEntry.js  flat JSON-in/JSON-out `KidMath` global for JavaScriptCore
   admin/               /admin: Items, Review queue (card + batch view), coverage heatmap
@@ -97,7 +99,7 @@ It was deliberately not rewritten in Swift.
 ## Hard rules
 
 **Supabase reads on `item_bank` MUST paginate.** supabase-js silently caps at
-1,000 rows and the bank is ~4,078. An unpaginated read is not a slow read — it
+1,000 rows and the bank is ~43,600. An unpaginated read is not a slow read — it
 is a wrong read, and this class of bug already caused a phantom-empty admin
 queue, clipped mode loads, and kids' in-memory banks being replaced with the
 first alphabetical 1,000 items. All five existing read paths page; new ones must too.
@@ -266,9 +268,13 @@ Product IDs: `io.larkit.app.premium.{monthly,annual}`.
   account-side: `docs/ios-appstore-checklist.md` and `docs/stripe-setup.md`.
   Bundle ID is `io.larkit.app`; the App Store Connect record "larkit" exists
   (2026-09-19).
-- Item bank: 4,078 approved items exported. **~3,200 items pending Sai's review**
-  in `/admin`, ~1,440 of them with wording options awaiting a pick. Batch-trust
-  mode (spot-check a sample, approve the batch) is built and deployed.
+- Item bank: 43,616 approved items in the shipped bundle. 113 rows retired in the
+  live bank on 27-28 Sep (wrong keys, kid-safe) await the next `bank:export`.
+  Batch-trust mode (spot-check a sample, approve the batch) is built and deployed.
+- Item bank v2 groundwork (2026-09-28): per-skill version switch, per-item hints,
+  item models and their review screen, kid state — see
+  `docs/item-bank-v2-groundwork.md`. Nothing flips until the migration is applied
+  and a skill is switched in `/admin/switch`.
 - Variety: 220/220 cells passing, 271 structures.
 - Known stale: `src/modes/blueprints.js` (original 8 modes only); most modes
   effectively have 3 difficulty tiers, not 10.
@@ -291,6 +297,7 @@ Product IDs: `io.larkit.app.premium.{monthly,annual}`.
 | Parent report + practice log, email plan | `parent-report.md` |
 | Why we skipped RevenueCat (billing decision) | `billing-revenuecat-decision.md` |
 | Source licensing / attribution | `bank-sources.md`, `resources/README.md` |
+| Item bank v2 groundwork: migration, switch + preview, hints, checks, item models, kid state, CI | `item-bank-v2-groundwork.md` |
 
 ## Skills
 

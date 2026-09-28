@@ -21,6 +21,7 @@ import {
   fetchApprovedBank,
   hydrateBankFromCloud,
   normalizeBankRow,
+  noteMissingV2Columns,
   resetCloudLoader,
 } from "../itemBank/cloudLoader.js";
 import {
@@ -227,6 +228,17 @@ describe("fetchApprovedBank", () => {
     await fetchApprovedBank();
     expect(mockChain.select.mock.calls[0][0]).not.toContain("hint");
     expect(console.warn).toHaveBeenCalledTimes(1);
+  });
+
+  it("answers a missing column for every caller that hit it, warning once", () => {
+    // Two reads are in flight together on every reload; the second to see the
+    // 42703 must retry too, or its load fails on today's database.
+    const missing = { code: "42703", message: "column item_bank.hint does not exist" };
+    expect(noteMissingV2Columns(missing)).toBe(true);
+    expect(noteMissingV2Columns(missing)).toBe(true);
+    expect(console.warn).toHaveBeenCalledTimes(1);
+    expect(noteMissingV2Columns({ code: "PGRST301", message: "JWT expired" })).toBe(false);
+    expect(noteMissingV2Columns(null)).toBe(false);
   });
 
   it("keeps v1 rows and drops v2 rows when the switch table is missing", async () => {

@@ -28,14 +28,19 @@ function isMissingColumnError(error) {
 }
 
 /**
- * Note a select error. Returns true when it was a missing v2 column and the
- * module has just switched to the v1 select, so the caller should re-run the
- * same query once. Logged once per session so the fallback is visible.
+ * Note a select error. Returns true when it was a missing column, so the
+ * caller should re-run the same query once on the v1 select. Answered per
+ * error, not per session: the full refresh (main.jsx) and the first mode load
+ * (MathExplorer) are in flight together on every reload, and both hit the
+ * missing column before either can switch the module. Logged once per
+ * session so the fallback is visible.
  */
 export function noteMissingV2Columns(error) {
-  if (!v2ColumnsAvailable || !isMissingColumnError(error)) return false;
-  v2ColumnsAvailable = false;
-  console.warn("[itemBank] item_bank lacks the v2 columns; using the v1 select until the migration is applied");
+  if (!isMissingColumnError(error)) return false;
+  if (v2ColumnsAvailable) {
+    v2ColumnsAvailable = false;
+    console.warn("[itemBank] item_bank lacks the v2 columns; using the v1 select until the migration is applied");
+  }
   return true;
 }
 

@@ -10,7 +10,7 @@ vi.mock("../supabaseClient.js", () => ({
 }));
 
 import { addBankItems, getBankItems, resetBankToBundle } from "../itemBank/index.js";
-import { resetCloudLoader } from "../itemBank/cloudLoader.js";
+import { fetchApprovedBank, resetCloudLoader } from "../itemBank/cloudLoader.js";
 import { SEED_ITEMS } from "../itemBank/bundle.js";
 import { FULL_ITEMS } from "../itemBank/fullBank.js";
 import { MODE_IDS } from "../modes";
@@ -229,6 +229,33 @@ describe("ensureModeLoaded honours the version switch", () => {
     expect(result).toMatchObject({ status: "loaded", added: 1 });
     expect(bankChain.select.mock.calls[1][0]).not.toContain("hint");
     expect(getBankItems().map((i) => i.itemId)).toContain("money-app-x1");
+  });
+
+  it("loads when the full refresh and the mode load hit the missing columns together", async () => {
+    // Every reload fires both reads at once (main.jsx and MathExplorer's mount
+    // effect); on a pre-migration table each first select is a 42703, and the
+    // second to come back must still retry on the v1 list.
+    switchChain.select.mockResolvedValue({ data: [], error: null });
+    let selected = "";
+    bankChain.select.mockImplementation((fields) => {
+      selected = fields;
+      return bankChain;
+    });
+    // select().…range() is one synchronous chain, so `selected` is this
+    // caller's own field list when range runs.
+    bankChain.range.mockImplementation(() =>
+      Promise.resolve(
+        /\bhint\b/.test(selected)
+          ? { data: null, error: { code: "42703", message: "column item_bank.hint does not exist" } }
+          : { data: [row("addition-app-x1", "addition")], error: null }
+      )
+    );
+    const { ensureModeLoaded } = await import("../itemBank/modeLoader.js");
+    const [bank, mode] = await Promise.all([fetchApprovedBank(), ensureModeLoaded("addition")]);
+    expect(bank.map((i) => i.itemId)).toEqual(["addition-app-x1"]);
+    expect(mode).toMatchObject({ status: "loaded", added: 1 });
+    expect(getBankItems().map((i) => i.itemId)).toContain("addition-app-x1");
+    expect(console.warn).toHaveBeenCalledTimes(1);
   });
 });
 

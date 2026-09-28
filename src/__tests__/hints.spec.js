@@ -153,6 +153,8 @@ describe("validateHint and usableHintFields", () => {
     expect(validateHint({ picture: { kind: "dots", groups: [3, 4] } }).ok).toBe(true);
     expect(validateHint({ picture: { kind: "array", rows: 2 } }).ok).toBe(false);
     expect(validateHint({ picture: { kind: "numberLine", min: 0, max: 20, mark: 8 } }).ok).toBe(true);
+    expect(validateHint({ picture: { kind: "numberLine", min: 0, max: 15, mark: 5, step: 5 } }).ok).toBe(true);
+    expect(validateHint({ picture: { kind: "numberLine", min: 0, max: 15, mark: 5, step: 0 } }).ok).toBe(false);
     expect(validateHint({ picture: { kind: "coinTray", coins: ["quarter", "dime"] } }).ok).toBe(true);
   });
 
@@ -207,6 +209,15 @@ describe("HintPane", () => {
     const own = html(withHint({ ...ownHint, picture: { kind: "array", rows: 2, cols: 4 } }));
     expect(own).toContain(ownHint.nudge);
     expect(own).toContain('data-scaffold="array"');
+  });
+
+  it("labels a number line by the hint's step, else by ones or fives from its width", () => {
+    const labels = (picture) =>
+      [...html(withHint({ ...ownHint, picture })).matchAll(/<text[^>]*>(\d+)<\/text>/g)].map((m) => Number(m[1]));
+    expect(labels({ kind: "numberLine", min: 0, max: 15, mark: 5 })).toEqual([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]);
+    expect(labels({ kind: "numberLine", min: 0, max: 15, mark: 5, step: 5 })).toEqual([0, 5, 10, 15]);
+    expect(labels({ kind: "numberLine", min: 0, max: 25, mark: 5 })).toEqual([0, 5, 10, 15, 20, 25]);
+    expect(labels({ kind: "numberLine", min: 10, max: 100, mark: 10, step: 10 })).toEqual([10, 20, 30, 40, 50, 60, 70, 80, 90, 100]);
   });
 
   it("omits the picture section for a kind it cannot draw instead of describing it", () => {

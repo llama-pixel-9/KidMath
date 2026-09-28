@@ -57,7 +57,9 @@
  * @property {string[]} steps   the strategy with this item's numbers, stopping
  *   before the answer
  * @property {Object|null} picture  { kind: one of PICTURE_KINDS, ...fields }
- *   where each string field is an expression over the slots
+ *   where each string field is an expression over the slots (a numberLine
+ *   takes min, max, mark and an optional step, the tick spacing, so a hint
+ *   that counts by nickels labels the line by fives)
  * @property {"auto"|Object|null} example  "auto" fills the same model with
  *   other numbers and solves it; or a fixed { problem, steps, answer }
  * @property {Object<string,string>|null} feedback  mistake tag -> the sentence

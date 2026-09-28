@@ -873,7 +873,8 @@
     "kind": "numberLine",
     "min": "0",
     "max": "goal",
-    "mark": "10"
+    "mark": "10",
+    "step": "10"
    },
    "example": "auto",
    "feedback": {
@@ -1024,7 +1025,8 @@
     "kind": "numberLine",
     "min": "0",
     "max": "goal",
-    "mark": "5"
+    "mark": "5",
+    "step": "5"
    },
    "example": "auto",
    "feedback": {
@@ -1147,7 +1149,8 @@
     "kind": "numberLine",
     "min": "0",
     "max": "goal",
-    "mark": "10"
+    "mark": "10",
+    "step": "10"
    },
    "example": "auto",
    "feedback": {
@@ -2566,7 +2569,8 @@
     "kind": "numberLine",
     "min": "0",
     "max": "amount",
-    "mark": "amount - d * 10"
+    "mark": "amount - d * 10",
+    "step": "5"
    },
    "example": "auto",
    "feedback": {
@@ -2744,7 +2748,8 @@
     "kind": "numberLine",
     "min": "0",
     "max": "100",
-    "mark": "each"
+    "mark": "each",
+    "step": "each"
    },
    "example": "auto",
    "feedback": {
@@ -3552,7 +3557,8 @@
     "kind": "numberLine",
     "min": "q * 25 - 25",
     "max": "amount",
-    "mark": "q * 25"
+    "mark": "q * 25",
+    "step": "5"
    },
    "example": "auto",
    "feedback": {
@@ -4035,7 +4041,8 @@
     "kind": "numberLine",
     "min": "0",
     "max": "goal",
-    "mark": "afterQuarters"
+    "mark": "afterQuarters",
+    "step": "5"
    },
    "example": "auto",
    "feedback": {
@@ -4290,7 +4297,8 @@
     "kind": "numberLine",
     "min": "0",
     "max": "amount",
-    "mark": "quartersPart"
+    "mark": "quartersPart",
+    "step": "5"
    },
    "example": "auto",
    "feedback": {
@@ -4873,7 +4881,8 @@
     "kind": "numberLine",
     "min": "0",
     "max": "goal",
-    "mark": "have"
+    "mark": "have",
+    "step": "5"
    },
    "example": "auto",
    "feedback": {
@@ -12578,7 +12587,8 @@
     "kind": "numberLine",
     "min": "price",
     "max": "paid",
-    "mark": "price"
+    "mark": "price",
+    "step": "10"
    },
    "example": "auto",
    "feedback": {
@@ -13098,7 +13108,8 @@
     "kind": "numberLine",
     "min": "floorTen(price)",
     "max": "paid",
-    "mark": "price"
+    "mark": "price",
+    "step": "5"
    },
    "example": "auto",
    "feedback": {
@@ -13597,7 +13608,8 @@
     "kind": "numberLine",
     "min": "floorTen(price)",
     "max": "paid",
-    "mark": "price"
+    "mark": "price",
+    "step": "5"
    },
    "example": "auto",
    "feedback": {
@@ -13845,7 +13857,8 @@
     "kind": "numberLine",
     "min": "floorTen(price)",
     "max": "paid",
-    "mark": "price"
+    "mark": "price",
+    "step": "10"
    },
    "example": "auto",
    "feedback": {

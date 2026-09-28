@@ -39,11 +39,14 @@ const isNum = (x) => typeof x === "number" && Number.isFinite(x);
 // (the same shapes scaffold.js builds). A picture missing them would crash
 // the drawer, so it is malformed and hintFor falls back to the number-based
 // scaffold. The other kinds have no drawer yet, so only their kind is held.
+// A number line may also say how far apart its ticks go (`step`, so a hint
+// that counts by nickels labels the line by fives); without it the drawer
+// labels a short line by ones and a wider one by fives.
 const PICTURE_FIELDS = {
   dots: (p) => Array.isArray(p.groups) && p.groups.length > 0 && p.groups.every(isCount) && (p.takeAway == null || isCount(p.takeAway)),
   array: (p) => isCount(p.rows) && isCount(p.cols),
   strip: (p) => isCount(p.den) && p.den > 0 && isCount(p.shaded),
-  numberLine: (p) => isNum(p.min) && isNum(p.max) && isNum(p.mark) && p.max > p.min,
+  numberLine: (p) => isNum(p.min) && isNum(p.max) && isNum(p.mark) && p.max > p.min && (p.step == null || (isNum(p.step) && p.step > 0)),
 };
 
 function checkPicture(v) {

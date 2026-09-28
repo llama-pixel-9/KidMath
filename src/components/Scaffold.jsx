@@ -50,10 +50,13 @@ function Strip({ den, shaded }) {
   );
 }
 
-function Line({ min, max, mark }) {
+function Line({ min, max, mark, step }) {
   const ticks = [];
-  const step = max - min > 20 ? 5 : 1;
-  for (let v = min; v <= max; v += step) ticks.push(v);
+  // A hint that counts by one coin says how far apart the ticks go (5 for
+  // nickels, 10 for dimes); otherwise a short line is labeled by ones and
+  // one wider than 20 by fives.
+  const by = step > 0 ? step : max - min > 20 ? 5 : 1;
+  for (let v = min; v <= max; v += by) ticks.push(v);
   return (
     <svg viewBox="0 0 320 60" className="w-full max-w-[320px] mx-auto block" aria-label={`number line from ${min} to ${max}, start at ${mark}`}>
       <line x1="16" y1="30" x2="304" y2="30" stroke="#14231F" strokeWidth="2" />
@@ -79,7 +82,7 @@ export default function Scaffold({ scaffold }) {
       {scaffold.kind === "dots" && <Dots groups={scaffold.groups} takeAway={scaffold.takeAway} />}
       {scaffold.kind === "array" && <ArrayGrid rows={scaffold.rows} cols={scaffold.cols} />}
       {scaffold.kind === "strip" && <Strip den={scaffold.den} shaded={scaffold.shaded} />}
-      {scaffold.kind === "numberLine" && <Line min={scaffold.min} max={scaffold.max} mark={scaffold.mark} />}
+      {scaffold.kind === "numberLine" && <Line min={scaffold.min} max={scaffold.max} mark={scaffold.mark} step={scaffold.step} />}
     </div>
   );
 }

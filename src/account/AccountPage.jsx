@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../useAuth";
 import { supabase } from "../supabaseClient";
 import { MAX_KIDS, fetchKids, updateKid, activeKidId, setActiveKid, KID_AGES, KID_GRADES } from "../kidProfiles";
+import { US_STATES, usStateName } from "../usStates";
 import { paywallEnabled } from "../premium";
 
 /**
@@ -18,12 +19,17 @@ import { paywallEnabled } from "../premium";
 const SEGMENT = "h-10 rounded-[12px] border-[1.5px] font-bold text-sm cursor-pointer transition-colors";
 const SEGMENT_IDLE = "bg-white border-ink/10 text-ink hover:border-ink/25";
 const SEGMENT_ACTIVE = "bg-seafoam border-teal text-ink";
+const FIELD = "mt-1 w-full h-11 rounded-[12px] border-[1.5px] border-ink/15 focus:border-teal focus:outline-none bg-white px-3 text-base font-semibold text-ink";
+
+/** What the card says about a kid's state: the wording they see, not a location. */
+const wordingLabel = (state) => (state ? `${usStateName(state) ?? state} wording` : "Common Core wording");
 
 /** Inline editor for one kid card — grade changes every September. */
 function KidEditForm({ kid, onSaved, onCancel }) {
   const [firstName, setFirstName] = useState(kid.first_name);
   const [age, setAge] = useState(kid.age);
   const [grade, setGrade] = useState(kid.grade);
+  const [state, setState] = useState(kid.state ?? "");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const complete = firstName.trim().length > 0 && age && grade;
@@ -32,7 +38,10 @@ function KidEditForm({ kid, onSaved, onCancel }) {
     setError("");
     setBusy(true);
     try {
-      await updateKid(kid.id, { firstName, age, grade });
+      const saved = await updateKid(kid.id, { firstName, age, grade, state });
+      // The session reads grade and state from the local cache; keep it
+      // current when the kid being edited is the one playing.
+      if (activeKidId() === kid.id) setActiveKid(kid.id, saved.grade, saved.state);
       await onSaved();
     } catch (e) {
       setError(e.message || "Could not save the changes — try again.");
@@ -49,7 +58,7 @@ function KidEditForm({ kid, onSaved, onCancel }) {
           value={firstName}
           maxLength={40}
           onChange={(e) => setFirstName(e.target.value)}
-          className="mt-1 w-full h-11 rounded-[12px] border-[1.5px] border-ink/15 focus:border-teal focus:outline-none bg-white px-3 text-base font-semibold text-ink"
+          className={FIELD}
         />
       </label>
 
@@ -80,6 +89,21 @@ function KidEditForm({ kid, onSaved, onCancel }) {
           </button>
         ))}
       </div>
+
+      <label className="mt-4 block text-sm font-bold text-ink">
+        State
+        <select value={state} onChange={(e) => setState(e.target.value)} className={FIELD}>
+          <option value="">Not set</option>
+          {US_STATES.map((s) => (
+            <option key={s.code} value={s.code}>
+              {s.name}
+            </option>
+          ))}
+        </select>
+      </label>
+      <p className="m-0 mt-1 text-xs font-semibold text-ink/50">
+        Only changes the math words to match your state&apos;s test. Not set means Common Core wording.
+      </p>
 
       {error && <p className="mt-3 text-sm font-bold text-ember">{error}</p>}
 
@@ -236,8 +260,8 @@ export default function AccountPage() {
       <section className="mt-10">
         <h2 className="font-display font-medium text-2xl text-ink m-0">Your kids</h2>
         <p className="mt-1 text-sm font-semibold text-ink/60">
-          Everything we store about each child is shown here: first name, age, and grade,
-          plus their practice progress, summarized below.
+          Everything we store about each child is shown here: first name, age, grade, and the
+          state you picked for test wording (if any), plus their practice progress, summarized below.
         </p>
         {kids.length === 0 && (
           <p className="mt-4 text-sm font-semibold text-ink/50">
@@ -264,7 +288,7 @@ export default function AccountPage() {
                   <div>
                     <p className="m-0 font-bold text-lg text-ink">{kid.first_name}</p>
                     <p className="m-0 mt-1 text-sm font-semibold text-ink/60">
-                      Age {kid.age} · Grade {kid.grade} · added{" "}
+                      Age {kid.age} · Grade {kid.grade} · {wordingLabel(kid.state)} · added{" "}
                       {new Date(kid.created_at).toLocaleDateString()}
                     </p>
                   </div>

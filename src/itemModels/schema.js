@@ -57,7 +57,9 @@
  * @property {string[]} steps   the strategy with this item's numbers, stopping
  *   before the answer
  * @property {Object|null} picture  { kind: one of PICTURE_KINDS, ...fields }
- *   where each string field is an expression over the slots
+ *   where each string field is an expression over the slots (a numberLine
+ *   takes min, max, mark and an optional step, the tick spacing, so a hint
+ *   that counts by nickels labels the line by fives)
  * @property {"auto"|Object|null} example  "auto" fills the same model with
  *   other numbers and solves it; or a fixed { problem, steps, answer }
  * @property {Object<string,string>|null} feedback  mistake tag -> the sentence
@@ -78,6 +80,10 @@
  * @property {string|null} widget   an answerType from src/components/widgetRegistry.js,
  *   or null for the choice grid
  * @property {{prompt: string}} template  the prompt with {slot} placeholders
+ * @property {number} [promptVariants]  for a bare drill whose text can only
+ *   take a few forms (a picture-first tray item has one): how many distinct
+ *   prompts the model can produce, so the harness holds it to that instead of
+ *   the usual twenty; item identity then includes the pictured coins
  * @property {Object<string, NameSlot|ObjectSlot|SettingSlot|MoneySlot|IntSlot|CoinsSlot|ExprSlot>} slots
  * @property {string[]} [constraints]  expressions that must all hold; the
  *   fill re-rolls until they do (a slot may also carry its own)

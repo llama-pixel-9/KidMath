@@ -38,6 +38,7 @@ export const NARRATIVE_RULES = [
   'End with an explicit time anchor: "at the start", "at first", "to begin with" — not a bare "before".',
   'The question must restate the thing being counted: "How many cards did he have at the start?", never "How many did he have?"',
   "2-4 short sentences, each easy to picture.",
+  "Vary the packaging across a set: fold two facts into one sentence, ask the question first on harder items, let a picture carry the numbers, and (hard only) add one detail the kid must ignore. Ten items of one shape read as a worksheet, not a test.",
   'Context must MATTER. Never bolt a name onto a bare number question: "Emma has 53 pencils. How many tens are in 53?" is wrong — the story does no work. Either ask the bare question ("How many tens are in 53?") or make the story load-bearing ("Emma bundles her 53 pencils into packs of 10 — how many full packs?").',
   'Kid words only. Never the teacher\'s vocabulary in the prompt: no "subitize", "cardinality", "decompose", "commutative", "identity", "inverse", "equivalent", "numeral", "partition". Say "How many?", "Split 7 into two parts", "If 9 + 8 = 17, what is 8 + 9?".',
   'Show the picture, never describe it. "A small set of 4 dots. How many?" hands the kid the answer — a counting item either carries a figure (emoji run, ten frame, object set) or asks something the kid can work out from the words alone.',

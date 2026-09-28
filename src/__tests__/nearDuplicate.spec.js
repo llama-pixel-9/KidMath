@@ -191,6 +191,23 @@ describe("validateBank + overuse integration", () => {
     expect(result.issues.some((i) => /template overused/.test(i.errors.join(" ")))).toBe(true);
   });
 
+  it("treats picture-first items as distinct when their pictured coins differ", () => {
+    const tray = (i, coins) => ({
+      itemId: `tray-${i}`,
+      modeId: "money",
+      itemFamily: "procedural",
+      subskill: "countCoins",
+      structureType: "bareTray",
+      levelRange: [1, 3],
+      reviewStatus: "approved",
+      question: { answer: 15, answerType: "coinTray", display: { promptText: "Count the coins. How many cents?", coins } },
+    });
+    const distinct = validateBank([tray(1, ["dime", "nickel"]), tray(2, ["nickel", "nickel", "nickel"])]);
+    expect(distinct.issues.filter((i) => /duplicate promptText/.test(i.errors.join(" ")))).toEqual([]);
+    const same = validateBank([tray(1, ["dime", "nickel"]), tray(2, ["dime", "nickel"])]);
+    expect(same.issues.some((i) => /duplicate promptText/.test(i.errors.join(" ")))).toBe(true);
+  });
+
   it("exposes per-family default limits", () => {
     expect(DEFAULT_SIGNATURE_LIMITS.application).toBe(3);
     expect(DEFAULT_SIGNATURE_LIMITS.conceptual).toBe(5);

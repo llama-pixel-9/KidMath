@@ -53,6 +53,12 @@ Use the closest matching `structureType` when authoring an item:
 
 - Maximum prompt length: **220 characters**.
 - 2-4 short sentences, each easy to picture; every sentence one step of the story.
+- **Vary the packaging across a set.** Setup, numbers, question is the order, but
+  not every item is three sentences on three lines: fold two facts into one
+  sentence, ask the question first on moderate and hard items, let a picture or
+  a named coin list carry the numbers, and (hard only) add one detail the kid
+  must ignore, with a distractor that uses it. Ten items of one shape read as a
+  worksheet, not a test. The shapes are listed in `item-model-writing-kit.md`.
 - **Anchor on a person first, not the objects**: "Carlos started with some
   trading cards", never "Some trading cards were in Carlos's deck". Object-first
   openers force passive voice and are hard for a child to picture.

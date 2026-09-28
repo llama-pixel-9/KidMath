@@ -22,7 +22,7 @@ vi.mock("../itemBank/cloudLoader.js", () => ({
   refreshBankFromCloud: (...args) => refreshBankFromCloud(...args),
 }));
 
-import { listItemModels, setModelReview, MODEL_REVIEW_STATUSES } from "../admin/itemModelsApi.js";
+import { listItemModels, setModelReview, saveModelSpec, MODEL_REVIEW_STATUSES } from "../admin/itemModelsApi.js";
 import { listVersionSwitch, setLiveVersion, LIVE_VERSIONS } from "../admin/versionSwitchApi.js";
 
 const UID = "11111111-2222-3333-4444-555555555555";
@@ -154,6 +154,20 @@ describe("itemModelsApi", () => {
     expect(patch.spec).toEqual(spec);
     expect(patch.review_note).toBeNull();
     expect(updated.spec).toEqual(spec);
+  });
+
+  it("saves an inline spec edit on its own, without touching the review columns", async () => {
+    const chain = installClient();
+    const spec = { id: "m1", template: { prompt: "{name} buys {object_a}." }, hint: { nudge: "Start with the price." } };
+    chain.single.mockResolvedValueOnce({ data: modelRow("m1", { review_status: "draft", spec }), error: null });
+
+    const updated = await saveModelSpec("m1", spec);
+
+    expect(chain.update).toHaveBeenCalledWith({ spec });
+    expect(chain.eq).toHaveBeenCalledWith("id", "m1");
+    expect(updated).toMatchObject({ id: "m1", reviewStatus: "draft" });
+    expect(updated.spec).toEqual(spec);
+    await expect(saveModelSpec("m1", null)).rejects.toThrow(/spec object/);
   });
 
   it("leaves reviewed_by alone when the session cannot be read", async () => {

@@ -313,9 +313,14 @@ export function validateBank(items = currentBank, options = {}) {
     }
     const promptText = item?.question?.display?.promptText?.trim();
     if (promptText) {
-      const dupOf = seenPrompts.get(promptText);
+      // A picture-first item ("Count the coins. How many cents?") repeats its
+      // text on purpose; the pictured coins are what make it a different
+      // question, so they are part of its identity.
+      const coins = item?.question?.display?.coins;
+      const key = Array.isArray(coins) && coins.length ? `${promptText}\u0000${coins.join(",")}` : promptText;
+      const dupOf = seenPrompts.get(key);
       if (dupOf) issues.push({ itemId: item.itemId, errors: [`duplicate promptText shared with ${dupOf}`] });
-      else seenPrompts.set(promptText, item.itemId);
+      else seenPrompts.set(key, item.itemId);
     }
   }
 

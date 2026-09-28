@@ -88,3 +88,21 @@ export async function setModelReview(id, reviewStatus, { note = null, spec } = {
   if (error) throw error;
   return rowToModel(data);
 }
+
+/**
+ * Save an inline edit of a model's spec without recording a decision, so a
+ * wording fix survives closing the editor. The review columns are left as
+ * they are; a later approve, reject or flag writes those.
+ */
+export async function saveModelSpec(id, spec) {
+  if (!supabase) throw new Error("Supabase not configured");
+  if (!spec || typeof spec !== "object") throw new Error("A spec object is required");
+  const { data, error } = await supabase
+    .from("item_models")
+    .update({ spec })
+    .eq("id", id)
+    .select(MODEL_SELECT_FIELDS)
+    .single();
+  if (error) throw error;
+  return rowToModel(data);
+}

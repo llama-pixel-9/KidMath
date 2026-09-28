@@ -1,5 +1,16 @@
-import { describe, it, expect, beforeEach } from "vitest";
+import { afterEach, describe, it, expect, beforeEach, vi } from "vitest";
+
+// Null by default (the unconfigured-deploy path the tests below rely on); the
+// version-switch block swaps in a chain. A getter keeps the binding live.
+const supabaseState = { client: null };
+vi.mock("../supabaseClient.js", () => ({
+  get supabase() {
+    return supabaseState.client;
+  },
+}));
+
 import { addBankItems, getBankItems, resetBankToBundle } from "../itemBank/index.js";
+import { resetCloudLoader } from "../itemBank/cloudLoader.js";
 import { SEED_ITEMS } from "../itemBank/bundle.js";
 import { FULL_ITEMS } from "../itemBank/fullBank.js";
 import { MODE_IDS } from "../modes";
@@ -131,6 +142,93 @@ describe("ensureModeLoaded", () => {
   it("handles an unknown mode id without throwing", async () => {
     const { ensureModeLoaded } = await import("../itemBank/modeLoader.js");
     await expect(ensureModeLoaded(undefined)).resolves.toMatchObject({ status: "skipped" });
+  });
+});
+
+describe("ensureModeLoaded honours the version switch", () => {
+  const bankChain = { select: vi.fn(), eq: vi.fn(), order: vi.fn(), range: vi.fn() };
+  const switchChain = { select: vi.fn() };
+
+  function row(itemId, modeId, extra = {}) {
+    return {
+      item_id: itemId,
+      mode_id: modeId,
+      item_family: "application",
+      subskill: "makeTen",
+      structure_type: "joinResultUnknown",
+      level_min: 7,
+      level_max: 10,
+      review_status: "approved",
+      payload: {
+        a: 5,
+        b: 5,
+        op: "+",
+        answer: 10,
+        display: { promptText: `Row ${itemId}: 5 red and 5 blue balloons. How many balloons in all?` },
+      },
+      ...extra,
+    };
+  }
+
+  beforeEach(async () => {
+    resetBankToBundle();
+    resetCloudLoader();
+    const { resetModeLoader } = await import("../itemBank/modeLoader.js");
+    resetModeLoader();
+    for (const fn of Object.values(bankChain)) fn.mockReset();
+    bankChain.select.mockReturnValue(bankChain);
+    bankChain.eq.mockReturnValue(bankChain);
+    bankChain.order.mockReturnValue(bankChain);
+    switchChain.select.mockReset();
+    supabaseState.client = {
+      from: vi.fn((table) => (table === "item_version_switch" ? switchChain : bankChain)),
+    };
+    vi.spyOn(console, "warn").mockImplementation(() => {});
+  });
+
+  afterEach(() => {
+    supabaseState.client = null;
+    vi.restoreAllMocks();
+  });
+
+  it("keeps v1 rows and drops v2 rows when the switch map is empty", async () => {
+    switchChain.select.mockResolvedValue({ data: [], error: null });
+    bankChain.range.mockResolvedValue({
+      data: [row("money-app-x1", "money"), row("money-app-x1-v2", "money", { version: 2 })],
+      error: null,
+    });
+    const { ensureModeLoaded } = await import("../itemBank/modeLoader.js");
+    const result = await ensureModeLoaded("money");
+    expect(result).toMatchObject({ status: "loaded", added: 1 });
+    const ids = getBankItems().map((i) => i.itemId);
+    expect(ids).toContain("money-app-x1");
+    expect(ids).not.toContain("money-app-x1-v2");
+    expect(bankChain.select.mock.calls[0][0]).toContain("hint");
+  });
+
+  it("serves the v2 rows once the skill is flipped", async () => {
+    switchChain.select.mockResolvedValue({ data: [{ mode_id: "money", live_version: "v2" }], error: null });
+    bankChain.range.mockResolvedValue({
+      data: [row("money-app-x1", "money"), row("money-app-x1-v2", "money", { version: 2 })],
+      error: null,
+    });
+    const { ensureModeLoaded } = await import("../itemBank/modeLoader.js");
+    await ensureModeLoaded("money");
+    const ids = getBankItems().map((i) => i.itemId);
+    expect(ids).toContain("money-app-x1-v2");
+    expect(ids).not.toContain("money-app-x1");
+  });
+
+  it("falls back to the v1 select when the database lacks the v2 columns", async () => {
+    switchChain.select.mockResolvedValue({ data: null, error: { code: "PGRST205", message: "no table" } });
+    bankChain.range
+      .mockResolvedValueOnce({ data: null, error: { code: "42703", message: "column item_bank.tags does not exist" } })
+      .mockResolvedValue({ data: [row("money-app-x1", "money")], error: null });
+    const { ensureModeLoaded } = await import("../itemBank/modeLoader.js");
+    const result = await ensureModeLoaded("money");
+    expect(result).toMatchObject({ status: "loaded", added: 1 });
+    expect(bankChain.select.mock.calls[1][0]).not.toContain("hint");
+    expect(getBankItems().map((i) => i.itemId)).toContain("money-app-x1");
   });
 });
 

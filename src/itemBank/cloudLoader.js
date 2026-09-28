@@ -1,6 +1,7 @@
 import { supabase } from "../supabaseClient.js";
 import { setBankItems } from "./index.js";
 import { normalizeBankRow } from "./normalize.js";
+import { isServable, loadVersionSwitch, previewEnabled } from "./versionSwitch.js";
 
 // Re-exported so existing callers (modeLoader, admin UI) keep their import path.
 export { normalizeBankRow };
@@ -9,6 +10,65 @@ const APPROVED_SELECT_FIELDS =
   "item_id, mode_id, item_family, subskill, structure_type, level_min, level_max, " +
   "review_status, payload, representation_type, source, level_band";
 
+// Columns added by the v2 groundwork migration. Kept apart from the v1 list so
+// a web deploy that lands before the migration is applied (or against a
+// project that never gets it) falls back to the v1 select instead of failing
+// every bank read and stranding kids on the seed.
+const V2_SELECT_FIELDS = "version, item_model_id, difficulty, hint, tags";
+let v2ColumnsAvailable = true;
+
+/** The item_bank select list, with the v2 columns while the table has them. */
+export function bankSelectFields(base = APPROVED_SELECT_FIELDS) {
+  return v2ColumnsAvailable ? `${base}, ${V2_SELECT_FIELDS}` : base;
+}
+
+function isMissingColumnError(error) {
+  // PostgREST reports an unknown column in a select as Postgres 42703.
+  return error?.code === "42703" || /column .* does not exist/i.test(error?.message || "");
+}
+
+/**
+ * Note a select error. Returns true when it was a missing v2 column and the
+ * module has just switched to the v1 select, so the caller should re-run the
+ * same query once. Logged once per session so the fallback is visible.
+ */
+export function noteMissingV2Columns(error) {
+  if (!v2ColumnsAvailable || !isMissingColumnError(error)) return false;
+  v2ColumnsAvailable = false;
+  console.warn("[itemBank] item_bank lacks the v2 columns; using the v1 select until the migration is applied");
+  return true;
+}
+
+/**
+ * The per-skill version switch, cached for the session so mode loads never
+ * wait on a second round trip. The first caller loads it; `refresh: true`
+ * re-reads it, which the debounced full refresh does so a flip in the admin
+ * page reaches the next session without a redeploy. Never rejects: the
+ * fallback is an empty map, meaning every skill on v1.
+ */
+let switchMap = null;
+let switchPromise = null;
+export function getVersionSwitch({ refresh = false } = {}) {
+  if (switchMap && !refresh) return Promise.resolve(switchMap);
+  if (!switchPromise) {
+    switchPromise = loadVersionSwitch()
+      .then((map) => {
+        switchMap = map;
+        return map;
+      })
+      .finally(() => {
+        switchPromise = null;
+      });
+  }
+  return switchPromise;
+}
+
+/** Forget the cached switch and column probe. Tests and sign-out. */
+export function resetCloudLoader() {
+  switchMap = null;
+  switchPromise = null;
+  v2ColumnsAvailable = true;
+}
 
 /**
  * Fetch all approved items from Supabase. Returns null when Supabase is
@@ -22,7 +82,11 @@ const PAGE = 1000;
 async function fetchAllPages(buildQuery) {
   const rows = [];
   for (let from = 0; ; from += PAGE) {
-    const { data, error } = await buildQuery().range(from, from + PAGE - 1);
+    let { data, error } = await buildQuery().range(from, from + PAGE - 1);
+    // buildQuery re-reads bankSelectFields, so one retry picks up the v1 list.
+    if (error && noteMissingV2Columns(error)) {
+      ({ data, error } = await buildQuery().range(from, from + PAGE - 1));
+    }
     if (error || !Array.isArray(data)) return rows.length ? rows : null;
     rows.push(...data);
     if (data.length < PAGE) return rows;
@@ -32,25 +96,32 @@ async function fetchAllPages(buildQuery) {
 export async function fetchApprovedBank() {
   if (!supabase) return null;
   try {
-    const data = await fetchAllPages(() =>
-      supabase.from("item_bank").select(APPROVED_SELECT_FIELDS).eq("review_status", "approved").order("item_id")
-    );
+    // The switch is re-read with every full fetch (this is the debounced
+    // refresh path) and loads alongside the first page rather than before it.
+    const [map, data] = await Promise.all([
+      getVersionSwitch({ refresh: true }),
+      fetchAllPages(() =>
+        supabase.from("item_bank").select(bankSelectFields()).eq("review_status", "approved").order("item_id")
+      ),
+    ]);
     if (!data) return null;
-    return data.map(normalizeBankRow).filter(Boolean);
+    const preview = previewEnabled();
+    return data.map(normalizeBankRow).filter((item) => isServable(item, map, { preview }));
   } catch {
     return null;
   }
 }
 
 /**
- * Fetch all bank items (any review_status). Used by the admin UI.
+ * Fetch all bank items (any review_status, any version). Used by the admin UI,
+ * which must see every row regardless of the switch.
  */
 export async function fetchAllBankItems() {
   if (!supabase) return [];
   const data = await fetchAllPages(() =>
     supabase
       .from("item_bank")
-      .select(APPROVED_SELECT_FIELDS + ", created_at, updated_at")
+      .select(bankSelectFields(APPROVED_SELECT_FIELDS + ", created_at, updated_at"))
       .order("mode_id", { ascending: true })
       .order("item_id", { ascending: true })
   );
@@ -92,15 +163,13 @@ export function refreshBankFromCloud({ force = false } = {}) {
   return pendingRefresh;
 }
 
-/** One row by id, any review status (reviewers pin drafts). Null if absent,
- * invalid, or Supabase is not configured. */
+/** One row by id, any review status or version (reviewers pin drafts). Null
+ * if absent, invalid, or Supabase is not configured. */
 export async function fetchBankItemById(itemId) {
   if (!supabase || !itemId) return null;
-  const { data, error } = await supabase
-    .from("item_bank")
-    .select(APPROVED_SELECT_FIELDS)
-    .eq("item_id", itemId)
-    .maybeSingle();
+  const query = () => supabase.from("item_bank").select(bankSelectFields()).eq("item_id", itemId).maybeSingle();
+  let { data, error } = await query();
+  if (error && noteMissingV2Columns(error)) ({ data, error } = await query());
   if (error || !data) return null;
   return normalizeBankRow(data);
 }

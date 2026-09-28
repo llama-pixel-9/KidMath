@@ -1,6 +1,7 @@
 import { supabase } from "../supabaseClient.js";
-import { normalizeBankRow } from "./cloudLoader.js";
+import { bankSelectFields, getVersionSwitch, noteMissingV2Columns, normalizeBankRow } from "./cloudLoader.js";
 import { addBankItems, getBankItems } from "./index.js";
+import { isServable, previewEnabled } from "./versionSwitch.js";
 
 /**
  * Mode-scoped item loading.
@@ -46,29 +47,46 @@ export function resetModeLoader() {
 
 async function fetchMode(modeId, { levelRange } = {}) {
   if (!supabase) return null;
+  // The version switch is cached after its first load (cloudLoader refreshes
+  // it with the debounced full refresh); kick it off now so it overlaps the
+  // first page rather than adding a round trip after the last one.
+  const switchLoad = getVersionSwitch();
   // Paginated: a single mode (addition ~1,400 approved rows) now exceeds
   // supabase-js's 1,000-row select cap.
   const PAGE = 1000;
   const rows = [];
   for (let from = 0; ; from += PAGE) {
-    let query = supabase
-      .from("item_bank")
-      .select(SELECT_FIELDS)
-      .eq("review_status", "approved")
-      .eq("mode_id", modeId)
-      .order("item_id");
+    const page = () => {
+      let query = supabase
+        .from("item_bank")
+        .select(bankSelectFields(SELECT_FIELDS))
+        .eq("review_status", "approved")
+        .eq("mode_id", modeId)
+        .order("item_id");
 
-    // Optional narrowing: a child at level 3 does not need the Grade 4 items.
-    if (levelRange) {
-      query = query.lte("level_min", levelRange[1]).gte("level_max", levelRange[0]);
-    }
+      // Optional narrowing: a child at level 3 does not need the Grade 4 items.
+      if (levelRange) {
+        query = query.lte("level_min", levelRange[1]).gte("level_max", levelRange[0]);
+      }
+      return query.range(from, from + PAGE - 1);
+    };
 
-    const { data, error } = await query.range(from, from + PAGE - 1);
-    if (error || !Array.isArray(data)) return rows.length ? rows.map(normalizeBankRow).filter(Boolean) : null;
+    let { data, error } = await page();
+    // Pre-migration database: retry once on the v1 column list.
+    if (error && noteMissingV2Columns(error)) ({ data, error } = await page());
+    // A failed first page is a failed load; a failure after some pages keeps
+    // what arrived (the seed plus a partial mode beats the seed alone).
+    if (error || !Array.isArray(data)) return rows.length ? serve(rows, await switchLoad) : null;
     rows.push(...data);
     if (data.length < PAGE) break;
   }
-  return rows.map(normalizeBankRow).filter(Boolean);
+  return serve(rows, await switchLoad);
+}
+
+/** Normalize rows and keep only what the version switch says this viewer gets. */
+function serve(rows, switchMap) {
+  const preview = previewEnabled();
+  return rows.map(normalizeBankRow).filter((item) => isServable(item, switchMap, { preview }));
 }
 
 /**

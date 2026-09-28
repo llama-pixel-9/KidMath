@@ -80,6 +80,10 @@
  * @property {string|null} widget   an answerType from src/components/widgetRegistry.js,
  *   or null for the choice grid
  * @property {{prompt: string}} template  the prompt with {slot} placeholders
+ * @property {number} [promptVariants]  for a bare drill whose text can only
+ *   take a few forms (a picture-first tray item has one): how many distinct
+ *   prompts the model can produce, so the harness holds it to that instead of
+ *   the usual twenty; item identity then includes the pictured coins
  * @property {Object<string, NameSlot|ObjectSlot|SettingSlot|MoneySlot|IntSlot|CoinsSlot|ExprSlot>} slots
  * @property {string[]} [constraints]  expressions that must all hold; the
  *   fill re-rolls until they do (a slot may also carry its own)

@@ -27170,5 +27170,1680 @@
     "VA SOL 2.MG.1"
    ]
   }
+ },
+ {
+  "id": "money-g2-bareTrayOneKind-easy",
+  "modeId": "money",
+  "subskill": "countCoins",
+  "family": "procedural",
+  "structureType": "bareTrayOneKind",
+  "grade": "2",
+  "standards": {
+   "ccss": [
+    "2.MD.C.8"
+   ],
+   "tx": [
+    "2.5A",
+    "2.5B"
+   ],
+   "fl": [
+    "MA.2.M.2.2"
+   ],
+   "va": [
+    "2.MG.1"
+   ],
+   "ga": []
+  },
+  "difficulty": "easy",
+  "format": "number",
+  "widget": "coinTray",
+  "representationType": "objectSet",
+  "promptVariants": 1,
+  "template": {
+   "prompt": "Count the coins. How many cents?"
+  },
+  "slots": {
+   "coins": {
+    "kind": "coins",
+    "count": [
+     2,
+     7
+    ],
+    "kinds": [
+     "nickel",
+     "dime",
+     "quarter"
+    ],
+    "sameKind": true,
+    "maxCents": 99
+   },
+   "each": {
+    "kind": "expr",
+    "expr": "coinValue(take(coins, 1))",
+    "format": "int"
+   },
+   "eachWord": {
+    "kind": "expr",
+    "expr": "each == 5 ? 'five cents' : each == 10 ? 'ten cents' : 'twenty-five cents'",
+    "format": "text"
+   },
+   "byWord": {
+    "kind": "expr",
+    "expr": "each == 5 ? 'fives' : each == 10 ? 'tens' : 'twenty-fives'",
+    "format": "text"
+   },
+   "howMany": {
+    "kind": "expr",
+    "expr": "len(coins)",
+    "format": "int"
+   },
+   "totalMoney": {
+    "kind": "expr",
+    "expr": "coinValue(coins)",
+    "format": "money"
+   }
+  },
+  "operation": {
+   "op": "count"
+  },
+  "display": {
+   "coins": "coins",
+   "coinMode": "'count'",
+   "counting": {
+    "kind": "sum",
+    "parts": "coinValues(coins)"
+   }
+  },
+  "answer": {
+   "expr": "coinValue(coins)",
+   "type": "int"
+  },
+  "distractors": [
+   {
+    "expr": "len(coins)",
+    "mistake": "countedCoinsNotValue"
+   },
+   {
+    "expr": "coinValue(coins) - each",
+    "mistake": "skippedACoin"
+   },
+   {
+    "expr": "coinValue(coins) + each",
+    "mistake": "countedACoinTwice"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks how many cents, not how many coins. Every coin on the tray is the same kind, so find what one coin is worth and count by that.",
+   "steps": [
+    "Each coin is worth {eachWord}.",
+    "Touch one coin at a time and count by {byWord}.",
+    "The last number you say is the total."
+   ],
+   "picture": {
+    "kind": "coinTray",
+    "coins": "sortByValue(coins)"
+   },
+   "example": {
+    "problem": "4 nickels on the tray. How many cents?",
+    "steps": [
+     "Each nickel is worth five cents.",
+     "Count by fives: 5, 10, 15, 20."
+    ],
+    "answer": 20
+   },
+   "feedback": {
+    "countedCoinsNotValue": "That is how many coins are on the tray. The question asks how many cents they are worth.",
+    "skippedACoin": "One coin was left out. Touch each coin as you count.",
+    "countedACoinTwice": "One coin was counted twice. Touch each coin once."
+   },
+   "solution": {
+    "steps": [
+     "Each coin is worth {eachWord}.",
+     "There are {howMany} coins, so count by {byWord} {howMany} times.",
+     "The coins are worth {totalMoney}."
+    ],
+    "answer": "coinValue(coins)"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS 2.MD.C.8",
+    "TEKS 2.5A-B",
+    "FL B.E.S.T. MA.2.M.2.2",
+    "VA SOL 2.MG.1"
+   ],
+   "shape": "picture-first or bare item, the textbook drill form (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g2-bareTrayTotalValue-moderate",
+  "modeId": "money",
+  "subskill": "countCoins",
+  "family": "procedural",
+  "structureType": "bareTrayTotalValue",
+  "grade": "2",
+  "standards": {
+   "ccss": [
+    "2.MD.C.8"
+   ],
+   "tx": [
+    "2.5A",
+    "2.5B"
+   ],
+   "fl": [
+    "MA.2.M.2.2"
+   ],
+   "va": [
+    "2.MG.1"
+   ],
+   "ga": []
+  },
+  "difficulty": "moderate",
+  "format": "number",
+  "widget": "coinTray",
+  "representationType": "objectSet",
+  "promptVariants": 1,
+  "template": {
+   "prompt": "What is the total value of the coins?"
+  },
+  "slots": {
+   "coins": {
+    "kind": "coins",
+    "count": [
+     3,
+     6
+    ],
+    "kinds": [
+     "quarter",
+     "dime",
+     "nickel",
+     "penny"
+    ],
+    "sameKind": false,
+    "maxCents": 99
+   },
+   "sorted": {
+    "kind": "expr",
+    "expr": "sortByValue(coins)",
+    "format": "coins"
+   },
+   "totalMoney": {
+    "kind": "expr",
+    "expr": "coinValue(coins)",
+    "format": "money"
+   }
+  },
+  "operation": {
+   "op": "count"
+  },
+  "display": {
+   "coins": "coins",
+   "coinMode": "'count'",
+   "counting": {
+    "kind": "sum",
+    "parts": "coinValues(coins)"
+   }
+  },
+  "answer": {
+   "expr": "coinValue(coins)",
+   "type": "int"
+  },
+  "distractors": [
+   {
+    "expr": "len(coins)",
+    "mistake": "countedCoinsNotValue"
+   },
+   {
+    "expr": "coinValue(coins) - coinValue(take(coins, 1))",
+    "mistake": "skippedACoin"
+   },
+   {
+    "expr": "coinValue(coins) + coinValue(take(coins, 1))",
+    "mistake": "countedACoinTwice"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks for the value of all the coins together. Start with the coin worth the most and count on.",
+   "steps": [
+    "Find the coin worth the most and start there.",
+    "Count on with the next biggest coins.",
+    "Count the pennies last, by ones."
+   ],
+   "picture": {
+    "kind": "coinTray",
+    "coins": "sortByValue(coins)"
+   },
+   "example": {
+    "problem": "1 quarter, 2 dimes and 1 penny on the tray. What is the total value?",
+    "steps": [
+     "Start with the quarter: 25.",
+     "Count on by tens: 35, 45.",
+     "Count on by one: 46."
+    ],
+    "answer": 46
+   },
+   "feedback": {
+    "countedCoinsNotValue": "That counts the coins, not what they are worth. Start with the biggest coin's value.",
+    "skippedACoin": "One coin was left out. Touch each coin as you count on.",
+    "countedACoinTwice": "One coin was counted twice. Touch each coin only once."
+   },
+   "solution": {
+    "steps": [
+     "The coins are {sorted}.",
+     "Count on from the biggest coin.",
+     "The total is {totalMoney}."
+    ],
+    "answer": "coinValue(coins)"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS 2.MD.C.8",
+    "TEKS 2.5A-B",
+    "FL B.E.S.T. MA.2.M.2.2",
+    "VA SOL 2.MG.1"
+   ],
+   "shape": "picture-first or bare item, the textbook drill form (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g2-bareTrayEightCoins-hard",
+  "modeId": "money",
+  "subskill": "countCoins",
+  "family": "procedural",
+  "structureType": "bareTrayEightCoins",
+  "grade": "2",
+  "standards": {
+   "ccss": [
+    "2.MD.C.8"
+   ],
+   "tx": [
+    "2.5A",
+    "2.5B"
+   ],
+   "fl": [
+    "MA.2.M.2.2"
+   ],
+   "va": [
+    "2.MG.1"
+   ],
+   "ga": []
+  },
+  "difficulty": "hard",
+  "format": "number",
+  "widget": "coinTray",
+  "representationType": "objectSet",
+  "promptVariants": 1,
+  "template": {
+   "prompt": "Count the coins. How many cents in all?"
+  },
+  "slots": {
+   "quarters": {
+    "kind": "coins",
+    "count": [
+     1,
+     2
+    ],
+    "kinds": [
+     "quarter"
+    ]
+   },
+   "rest": {
+    "kind": "coins",
+    "count": [
+     5,
+     6
+    ],
+    "kinds": [
+     "dime",
+     "nickel",
+     "penny"
+    ],
+    "sameKind": false
+   },
+   "pos": {
+    "kind": "int",
+    "min": 0,
+    "max": 2
+   },
+   "tray": {
+    "kind": "expr",
+    "expr": "pos == 0 ? concat(quarters, rest) : pos == 1 ? concat(rest, quarters) : concat(take(rest, 2), concat(quarters, drop(rest, 2)))",
+    "format": "coins"
+   },
+   "sorted": {
+    "kind": "expr",
+    "expr": "sortByValue(tray)",
+    "format": "coins"
+   },
+   "totalMoney": {
+    "kind": "expr",
+    "expr": "coinValue(tray)",
+    "format": "money"
+   }
+  },
+  "constraints": [
+   "len(tray) <= 8",
+   "coinValue(tray) <= 99"
+  ],
+  "operation": {
+   "op": "count"
+  },
+  "display": {
+   "coins": "tray",
+   "coinMode": "'count'",
+   "counting": {
+    "kind": "sum",
+    "parts": "coinValues(tray)"
+   }
+  },
+  "answer": {
+   "expr": "coinValue(tray)",
+   "type": "int"
+  },
+  "distractors": [
+   {
+    "expr": "len(tray)",
+    "mistake": "countedCoinsNotValue"
+   },
+   {
+    "expr": "coinValue(tray) - 25",
+    "mistake": "skippedAQuarter"
+   },
+   {
+    "expr": "coinValue(tray) + 25",
+    "mistake": "countedAQuarterTwice"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks how many cents in all. Start with the quarters, then the dimes, then the small coins.",
+   "steps": [
+    "Start with the quarters and count by twenty-fives.",
+    "Count on by tens for the dimes.",
+    "Then count on by fives and by ones."
+   ],
+   "picture": {
+    "kind": "coinTray",
+    "coins": "sortByValue(tray)"
+   },
+   "example": {
+    "problem": "2 quarters, 1 dime, 1 nickel and 3 pennies on the tray. How many cents in all?",
+    "steps": [
+     "Quarters: 25, 50.",
+     "Dime: 60.",
+     "Nickel: 65.",
+     "Pennies: 66, 67, 68."
+    ],
+    "answer": 68
+   },
+   "feedback": {
+    "countedCoinsNotValue": "That is how many coins there are. Count what they are worth.",
+    "skippedAQuarter": "A quarter was left out. Start your count with every quarter.",
+    "countedAQuarterTwice": "A quarter was counted twice. Touch each quarter once."
+   },
+   "solution": {
+    "steps": [
+     "The coins are {sorted}.",
+     "Count on from the quarters.",
+     "The coins are worth {totalMoney}."
+    ],
+    "answer": "coinValue(tray)"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS 2.MD.C.8",
+    "TEKS 2.5A-B",
+    "FL B.E.S.T. MA.2.M.2.2",
+    "VA SOL 2.MG.1"
+   ],
+   "shape": "picture-first or bare item, the textbook drill form (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g2-bareCoinsMakeCoin-easy",
+  "modeId": "money",
+  "subskill": "coinEquivalence",
+  "family": "conceptual",
+  "structureType": "bareCoinsMakeCoin",
+  "grade": "2",
+  "standards": {
+   "ccss": [
+    "2.MD.C.8"
+   ],
+   "tx": [
+    "2.5A",
+    "2.5B"
+   ],
+   "fl": [
+    "MA.2.M.2.2"
+   ],
+   "va": [
+    "2.MG.1"
+   ],
+   "ga": []
+  },
+  "difficulty": "easy",
+  "format": "number",
+  "widget": "numberPad",
+  "representationType": "symbolic",
+  "promptVariants": 24,
+  "template": {
+   "prompt": "{ask}"
+  },
+  "slots": {
+   "pair": {
+    "kind": "int",
+    "min": 0,
+    "max": 7
+   },
+   "phr": {
+    "kind": "int",
+    "min": 0,
+    "max": 2
+   },
+   "smallPlural": {
+    "kind": "expr",
+    "expr": "pair == 0 || pair == 1 || pair == 4 ? 'pennies' : pair == 2 || pair == 3 || pair == 7 ? 'nickels' : pair == 5 ? 'quarters' : 'dimes'",
+    "format": "text"
+   },
+   "smallSingular": {
+    "kind": "expr",
+    "expr": "pair == 0 || pair == 1 || pair == 4 ? 'penny' : pair == 2 || pair == 3 || pair == 7 ? 'nickel' : pair == 5 ? 'quarter' : 'dime'",
+    "format": "text"
+   },
+   "smallWord": {
+    "kind": "expr",
+    "expr": "pair == 0 || pair == 1 || pair == 4 ? 'one cent' : pair == 2 || pair == 3 || pair == 7 ? 'five cents' : pair == 5 ? 'twenty-five cents' : 'ten cents'",
+    "format": "text"
+   },
+   "byWord": {
+    "kind": "expr",
+    "expr": "pair == 0 || pair == 1 || pair == 4 ? 'ones' : pair == 2 || pair == 3 || pair == 7 ? 'fives' : pair == 5 ? 'twenty-fives' : 'tens'",
+    "format": "text"
+   },
+   "big": {
+    "kind": "expr",
+    "expr": "pair == 0 ? 'a nickel' : pair == 1 || pair == 2 ? 'a dime' : pair == 3 || pair == 4 ? 'a quarter' : 'one dollar'",
+    "format": "text"
+   },
+   "bigCap": {
+    "kind": "expr",
+    "expr": "pair == 0 ? 'A nickel' : pair == 1 || pair == 2 ? 'A dime' : pair == 3 || pair == 4 ? 'A quarter' : 'One dollar'",
+    "format": "text"
+   },
+   "bigWord": {
+    "kind": "expr",
+    "expr": "pair == 0 ? 'five cents' : pair == 1 || pair == 2 ? 'ten cents' : pair == 3 || pair == 4 ? 'twenty-five cents' : 'one dollar'",
+    "format": "text"
+   },
+   "n": {
+    "kind": "expr",
+    "expr": "pair == 0 ? 5 : pair == 1 ? 10 : pair == 2 ? 2 : pair == 3 ? 5 : pair == 4 ? 25 : pair == 5 ? 4 : pair == 6 ? 10 : 20",
+    "format": "int"
+   },
+   "chain": {
+    "kind": "expr",
+    "expr": "pair == 0 ? '1, 2, 3, 4, 5' : pair == 1 ? '1, 2, 3, 4, 5, 6, 7, 8, 9, 10' : pair == 2 ? '5, 10' : pair == 3 ? '5, 10, 15, 20, 25' : pair == 4 ? '1, 2, 3, and on up to 25' : pair == 5 ? '25, 50, 75, 100' : pair == 6 ? '10, 20, 30, 40, 50, 60, 70, 80, 90, 100' : '5, 10, 15, and on up to 100'",
+    "format": "text"
+   },
+   "ask": {
+    "kind": "expr",
+    "expr": "phr == 0 ? 'How many ' + smallPlural + ' make ' + big + '?' : phr == 1 ? 'How many ' + smallPlural + ' are worth the same as ' + big + '?' : bigCap + ' is worth how many ' + smallPlural + '?'",
+    "format": "text"
+   }
+  },
+  "answer": {
+   "expr": "n",
+   "type": "int"
+  },
+  "distractors": [
+   {
+    "expr": "n + 1",
+    "mistake": "countedOneTooMany"
+   },
+   {
+    "expr": "n - 1",
+    "mistake": "countedOneTooFew"
+   },
+   {
+    "expr": "n * 2",
+    "mistake": "doubled"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks how many {smallPlural} it takes to equal {big}. Think about what one {smallSingular} is worth.",
+   "steps": [
+    "{bigCap} is worth {bigWord}.",
+    "Each {smallSingular} is worth {smallWord}.",
+    "Count by {byWord} until you reach {bigWord}, and count how many numbers you said."
+   ],
+   "picture": null,
+   "example": "auto",
+   "feedback": {
+    "countedOneTooMany": "That is one too many. Count by {byWord} again and stop exactly at {bigWord}.",
+    "countedOneTooFew": "That is one too few. Keep counting by {byWord} until you reach {bigWord}.",
+    "doubled": "That is twice as many as you need. Stop as soon as you reach {bigWord}."
+   },
+   "solution": {
+    "steps": [
+     "{bigCap} is worth {bigWord}.",
+     "Count by {byWord}: {chain}.",
+     "That is {n} {smallPlural}."
+    ],
+    "answer": "n"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS 2.MD.C.8",
+    "TEKS 2.5A-B",
+    "FL B.E.S.T. MA.2.M.2.2",
+    "VA SOL 2.MG.1"
+   ],
+   "shape": "picture-first or bare item, the textbook drill form (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g2-bareWhichCoinWorth-easy",
+  "modeId": "money",
+  "subskill": "coinEquivalence",
+  "family": "conceptual",
+  "structureType": "bareWhichCoinWorth",
+  "grade": "2",
+  "standards": {
+   "ccss": [
+    "2.MD.C.8"
+   ],
+   "tx": [
+    "2.5A",
+    "2.5B"
+   ],
+   "fl": [
+    "MA.2.M.2.2"
+   ],
+   "va": [
+    "2.MG.1"
+   ],
+   "ga": []
+  },
+  "difficulty": "easy",
+  "format": "choice",
+  "widget": null,
+  "representationType": "symbolic",
+  "promptVariants": 12,
+  "template": {
+   "prompt": "{opener} {valueMoney}?"
+  },
+  "slots": {
+   "v": {
+    "kind": "int",
+    "min": 0,
+    "max": 3
+   },
+   "phr": {
+    "kind": "int",
+    "min": 0,
+    "max": 2
+   },
+   "value": {
+    "kind": "expr",
+    "expr": "v == 0 ? 1 : v == 1 ? 5 : v == 2 ? 10 : 25",
+    "format": "int"
+   },
+   "valueMoney": {
+    "kind": "expr",
+    "expr": "value",
+    "format": "money"
+   },
+   "valueWord": {
+    "kind": "expr",
+    "expr": "v == 0 ? 'one cent' : v == 1 ? 'five cents' : v == 2 ? 'ten cents' : 'twenty-five cents'",
+    "format": "text"
+   },
+   "coin": {
+    "kind": "expr",
+    "expr": "v == 0 ? 'penny' : v == 1 ? 'nickel' : v == 2 ? 'dime' : 'quarter'",
+    "format": "text"
+   },
+   "opener": {
+    "kind": "expr",
+    "expr": "phr == 0 ? 'Which coin is worth' : phr == 1 ? 'Which coin has a value of' : 'Which one coin equals'",
+    "format": "text"
+   }
+  },
+  "answer": {
+   "expr": "coin",
+   "type": "text"
+  },
+  "distractors": [
+   {
+    "expr": "v == 0 ? 'dime' : v == 2 ? 'penny' : v == 1 ? 'quarter' : 'nickel'",
+    "mistake": "mixedUpBySize"
+   },
+   {
+    "expr": "v == 0 ? 'nickel' : v == 1 ? 'dime' : v == 2 ? 'quarter' : 'dime'",
+    "mistake": "pickedTheNextValue"
+   },
+   {
+    "expr": "v == 0 ? 'quarter' : v == 1 ? 'penny' : v == 2 ? 'nickel' : 'penny'",
+    "mistake": "guessedACoin"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks which coin has that value. Say each coin's value before you pick.",
+   "steps": [
+    "Look at the coins in the choices one at a time.",
+    "Say what each one is worth.",
+    "Pick the one that matches {valueWord}."
+   ],
+   "picture": null,
+   "example": "auto",
+   "feedback": {
+    "mixedUpBySize": "Size does not tell the value. A small coin can be worth more than a big one.",
+    "pickedTheNextValue": "That coin is close in value but not the same. Check its value again.",
+    "guessedACoin": "Say the value of each coin, then match it to {valueWord}."
+   },
+   "solution": {
+    "steps": [
+     "A {coin} is worth {valueWord}."
+    ],
+    "answer": "coin"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS 2.MD.C.8",
+    "TEKS 2.5A-B",
+    "FL B.E.S.T. MA.2.M.2.2",
+    "VA SOL 2.MG.1"
+   ],
+   "shape": "picture-first or bare item, the textbook drill form (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g2-bareHowMuchMoneyWords-moderate",
+  "modeId": "money",
+  "subskill": "countCoins",
+  "family": "procedural",
+  "structureType": "bareHowMuchMoneyWords",
+  "grade": "2",
+  "standards": {
+   "ccss": [
+    "2.MD.C.8"
+   ],
+   "tx": [
+    "2.5A",
+    "2.5B"
+   ],
+   "fl": [
+    "MA.2.M.2.2"
+   ],
+   "va": [
+    "2.MG.1"
+   ],
+   "ga": []
+  },
+  "difficulty": "moderate",
+  "format": "money",
+  "widget": null,
+  "representationType": "verbalContext",
+  "template": {
+   "prompt": "How much money is {coins}?"
+  },
+  "slots": {
+   "coins": {
+    "kind": "coins",
+    "count": [
+     2,
+     5
+    ],
+    "kinds": [
+     "quarter",
+     "dime",
+     "nickel",
+     "penny"
+    ],
+    "sameKind": false,
+    "maxCents": 99
+   },
+   "sorted": {
+    "kind": "expr",
+    "expr": "sortByValue(coins)",
+    "format": "coins"
+   },
+   "totalMoney": {
+    "kind": "expr",
+    "expr": "coinValue(coins)",
+    "format": "money"
+   }
+  },
+  "operation": {
+   "op": "count"
+  },
+  "answer": {
+   "expr": "coinValue(coins)",
+   "type": "money"
+  },
+  "distractors": [
+   {
+    "expr": "len(coins)",
+    "mistake": "countedCoinsNotValue"
+   },
+   {
+    "expr": "coinValue(coins) - coinValue(take(coins, 1))",
+    "mistake": "skippedACoin"
+   },
+   {
+    "expr": "coinValue(coins) + coinValue(take(coins, 1))",
+    "mistake": "countedACoinTwice"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks how much money the coins are worth together. Start with the coin worth the most.",
+   "steps": [
+    "Start with the coin worth the most.",
+    "Count on by tens, then by fives, then by ones.",
+    "Say the amount you land on."
+   ],
+   "picture": {
+    "kind": "coinTray",
+    "coins": "sortByValue(coins)"
+   },
+   "example": "auto",
+   "feedback": {
+    "countedCoinsNotValue": "That counts the coins. The question asks what they are worth together.",
+    "skippedACoin": "One coin was left out. Count every coin named in the question.",
+    "countedACoinTwice": "One coin was counted twice. Count each coin once."
+   },
+   "solution": {
+    "steps": [
+     "The coins are {sorted}.",
+     "Count on from the biggest coin.",
+     "The coins are worth {totalMoney}."
+    ],
+    "answer": "coinValue(coins)"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS 2.MD.C.8",
+    "TEKS 2.5A-B",
+    "FL B.E.S.T. MA.2.M.2.2",
+    "VA SOL 2.MG.1"
+   ],
+   "shape": "picture-first or bare item, the textbook drill form (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g2-bareChangeTerse-moderate",
+  "modeId": "money",
+  "subskill": "makeChange",
+  "family": "procedural",
+  "structureType": "bareChangeTerse",
+  "grade": "2",
+  "standards": {
+   "ccss": [
+    "2.MD.C.8"
+   ],
+   "tx": [
+    "2.5A",
+    "2.5B"
+   ],
+   "fl": [
+    "MA.2.M.2.2"
+   ],
+   "va": [
+    "2.MG.1"
+   ],
+   "ga": []
+  },
+  "difficulty": "moderate",
+  "format": "money",
+  "widget": null,
+  "representationType": "symbolic",
+  "template": {
+   "prompt": "The price is {price} and you pay {paidMoney}. How much change?"
+  },
+  "slots": {
+   "price": {
+    "kind": "money",
+    "of": [
+     11,
+     69
+    ]
+   },
+   "pick": {
+    "kind": "int",
+    "min": 0,
+    "max": 1
+   },
+   "paid": {
+    "kind": "expr",
+    "expr": "pick == 0 ? 50 : 75",
+    "format": "int"
+   },
+   "paidMoney": {
+    "kind": "expr",
+    "expr": "paid",
+    "format": "money"
+   },
+   "nextTen": {
+    "kind": "expr",
+    "expr": "nextTen(price)",
+    "format": "money"
+   },
+   "hop1": {
+    "kind": "expr",
+    "expr": "nextTen(price) - price",
+    "format": "money"
+   },
+   "hop2": {
+    "kind": "expr",
+    "expr": "paid - nextTen(price)",
+    "format": "money"
+   },
+   "change": {
+    "kind": "expr",
+    "expr": "paid - price",
+    "format": "money"
+   }
+  },
+  "constraints": [
+   "price % 10 != 0",
+   "price < paid",
+   "paid - price >= 11",
+   "paid - price != price",
+   "nextTen(price) != paid - price"
+  ],
+  "operation": {
+   "op": "-"
+  },
+  "display": {
+   "money": {
+    "kind": "change",
+    "price": "price",
+    "paid": "paid",
+    "change": "paid - price"
+   }
+  },
+  "answer": {
+   "expr": "paid - price",
+   "type": "money"
+  },
+  "distractors": [
+   {
+    "expr": "price",
+    "mistake": "answeredWithAGiven"
+   },
+   {
+    "expr": "paid - nextTen(price)",
+    "mistake": "skippedFirstHop"
+   },
+   {
+    "expr": "paid - price - 10",
+    "mistake": "offByTen"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks how much change. Start at the price and count up to the amount paid.",
+   "steps": [
+    "Start at {price}.",
+    "Hop up to {nextTen} first.",
+    "Then hop from {nextTen} to {paidMoney}, and add your hops."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": "floorTen(price)",
+    "max": "paid",
+    "mark": "price"
+   },
+   "example": "auto",
+   "feedback": {
+    "answeredWithAGiven": "That is the price, not the change. Count up from the price to what was paid.",
+    "skippedFirstHop": "The first small hop is missing. Start at {price} and hop to {nextTen} first.",
+    "offByTen": "That is ten cents short. Count the tens again from {nextTen} to {paidMoney}."
+   },
+   "solution": {
+    "steps": [
+     "{price} up to {nextTen} is {hop1}.",
+     "{nextTen} up to {paidMoney} is {hop2}.",
+     "{hop1} + {hop2} = {change}."
+    ],
+    "answer": "paid - price"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS 2.MD.C.8",
+    "TEKS 2.5A-B",
+    "FL B.E.S.T. MA.2.M.2.2",
+    "VA SOL 2.MG.1"
+   ],
+   "shape": "picture-first or bare item, the textbook drill form (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g2-bareSumThreeCoins-easy",
+  "modeId": "money",
+  "subskill": "countCoins",
+  "family": "procedural",
+  "structureType": "bareSumThreeCoins",
+  "grade": "2",
+  "standards": {
+   "ccss": [
+    "2.MD.C.8"
+   ],
+   "tx": [
+    "2.5A",
+    "2.5B"
+   ],
+   "fl": [
+    "MA.2.M.2.2"
+   ],
+   "va": [
+    "2.MG.1"
+   ],
+   "ga": []
+  },
+  "difficulty": "easy",
+  "format": "money",
+  "widget": null,
+  "representationType": "symbolic",
+  "template": {
+   "prompt": "What is {a} + {b} + {c}?"
+  },
+  "slots": {
+   "coins": {
+    "kind": "coins",
+    "count": [
+     3,
+     3
+    ],
+    "kinds": [
+     "quarter",
+     "dime",
+     "nickel",
+     "penny"
+    ],
+    "sameKind": false,
+    "maxCents": 99
+   },
+   "a": {
+    "kind": "expr",
+    "expr": "coinValue(take(coins, 1))",
+    "format": "money"
+   },
+   "b": {
+    "kind": "expr",
+    "expr": "coinValue(take(drop(coins, 1), 1))",
+    "format": "money"
+   },
+   "c": {
+    "kind": "expr",
+    "expr": "coinValue(drop(coins, 2))",
+    "format": "money"
+   },
+   "totalMoney": {
+    "kind": "expr",
+    "expr": "coinValue(coins)",
+    "format": "money"
+   }
+  },
+  "operation": {
+   "op": "+"
+  },
+  "answer": {
+   "expr": "coinValue(coins)",
+   "type": "money"
+  },
+  "distractors": [
+   {
+    "expr": "coinValue(drop(coins, 1))",
+    "mistake": "skippedACoin"
+   },
+   {
+    "expr": "coinValue(coins) + coinValue(take(coins, 1))",
+    "mistake": "countedACoinTwice"
+   },
+   {
+    "expr": "3",
+    "mistake": "countedCoinsNotValue"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks for the total of the three coin values. Add the biggest value first.",
+   "steps": [
+    "Find the biggest of the three values and start there.",
+    "Add the next value to it.",
+    "Then add the last one."
+   ],
+   "picture": {
+    "kind": "coinTray",
+    "coins": "sortByValue(coins)"
+   },
+   "example": "auto",
+   "feedback": {
+    "skippedACoin": "One of the three values was left out. Add all three.",
+    "countedACoinTwice": "One value was added twice. Add each value once.",
+    "countedCoinsNotValue": "That counts three coins. Add what the coins are worth."
+   },
+   "solution": {
+    "steps": [
+     "Add the biggest value and the next one first.",
+     "Then add the smallest value.",
+     "{a} + {b} + {c} = {totalMoney}."
+    ],
+    "answer": "coinValue(coins)"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS 2.MD.C.8",
+    "TEKS 2.5A-B",
+    "FL B.E.S.T. MA.2.M.2.2",
+    "VA SOL 2.MG.1"
+   ],
+   "shape": "picture-first or bare item, the textbook drill form (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g2-bareCoinsInDollars-hard",
+  "modeId": "money",
+  "subskill": "coinEquivalence",
+  "family": "conceptual",
+  "structureType": "bareCoinsInDollars",
+  "grade": "2",
+  "standards": {
+   "ccss": [
+    "2.MD.C.8"
+   ],
+   "tx": [
+    "2.5A",
+    "2.5B"
+   ],
+   "fl": [
+    "MA.2.M.2.2"
+   ],
+   "va": [
+    "2.MG.1"
+   ],
+   "ga": []
+  },
+  "difficulty": "hard",
+  "format": "number",
+  "widget": "numberPad",
+  "representationType": "symbolic",
+  "promptVariants": 20,
+  "template": {
+   "prompt": "How many {coinPlural} {verb} {amountMoney}?"
+  },
+  "slots": {
+   "kindIx": {
+    "kind": "int",
+    "min": 0,
+    "max": 2
+   },
+   "bills": {
+    "kind": "int",
+    "min": 1,
+    "max": 4
+   },
+   "v": {
+    "kind": "int",
+    "min": 0,
+    "max": 1
+   },
+   "coinPlural": {
+    "kind": "expr",
+    "expr": "kindIx == 0 ? 'quarters' : kindIx == 1 ? 'dimes' : 'nickels'",
+    "format": "text"
+   },
+   "each": {
+    "kind": "expr",
+    "expr": "kindIx == 0 ? 25 : kindIx == 1 ? 10 : 5",
+    "format": "int"
+   },
+   "perDollar": {
+    "kind": "expr",
+    "expr": "100 / each",
+    "format": "int"
+   },
+   "amount": {
+    "kind": "expr",
+    "expr": "bills * 100",
+    "format": "int"
+   },
+   "amountMoney": {
+    "kind": "expr",
+    "expr": "amount",
+    "format": "money"
+   },
+   "n": {
+    "kind": "expr",
+    "expr": "bills * perDollar",
+    "format": "int"
+   },
+   "byWord": {
+    "kind": "expr",
+    "expr": "kindIx == 0 ? 'twenty-fives' : kindIx == 1 ? 'tens' : 'fives'",
+    "format": "text"
+   },
+   "chain": {
+    "kind": "expr",
+    "expr": "bills == 1 ? perDollar + '' : bills == 2 ? perDollar + ', ' + 2 * perDollar : bills == 3 ? perDollar + ', ' + 2 * perDollar + ', ' + 3 * perDollar : perDollar + ', ' + 2 * perDollar + ', ' + 3 * perDollar + ', ' + 4 * perDollar",
+    "format": "text"
+   },
+   "verb": {
+    "kind": "expr",
+    "expr": "v == 0 ? 'are in' : 'make'",
+    "format": "text"
+   }
+  },
+  "constraints": [
+   "!(kindIx == 2 && bills > 2)"
+  ],
+  "answer": {
+   "expr": "n",
+   "type": "int"
+  },
+  "distractors": [
+   {
+    "expr": "n + 1",
+    "mistake": "countedOneTooMany"
+   },
+   {
+    "expr": "n - 1",
+    "mistake": "countedOneTooFew"
+   },
+   {
+    "expr": "n + perDollar",
+    "mistake": "countedAnExtraDollar"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks how many {coinPlural} are in {amountMoney}. Find how many make one dollar, then count that for every dollar.",
+   "steps": [
+    "Count by {byWord} up to one dollar. That many {coinPlural} make one dollar.",
+    "Do that once for each dollar.",
+    "Add the counts together."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": "0",
+    "max": "amount",
+    "mark": "100",
+    "step": "each"
+   },
+   "example": "auto",
+   "feedback": {
+    "countedOneTooMany": "That is one coin too many. Stop exactly at {amountMoney}.",
+    "countedOneTooFew": "That is one coin too few. Keep counting until you reach {amountMoney}.",
+    "countedAnExtraDollar": "That is a whole dollar too many. Count the dollars in {amountMoney} again."
+   },
+   "solution": {
+    "steps": [
+     "{perDollar} {coinPlural} make one dollar.",
+     "Count {perDollar} for each dollar: {chain}.",
+     "{n} {coinPlural} are in {amountMoney}."
+    ],
+    "answer": "n"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS 2.MD.C.8",
+    "TEKS 2.5A-B",
+    "FL B.E.S.T. MA.2.M.2.2",
+    "VA SOL 2.MG.1"
+   ],
+   "shape": "picture-first or bare item, the textbook drill form (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g2-bareWhichSetEqualsCoin-moderate",
+  "modeId": "money",
+  "subskill": "coinEquivalence",
+  "family": "conceptual",
+  "structureType": "bareWhichSetEqualsCoin",
+  "grade": "2",
+  "standards": {
+   "ccss": [
+    "2.MD.C.8"
+   ],
+   "tx": [
+    "2.5A",
+    "2.5B"
+   ],
+   "fl": [
+    "MA.2.M.2.2"
+   ],
+   "va": [
+    "2.MG.1"
+   ],
+   "ga": []
+  },
+  "difficulty": "moderate",
+  "format": "choice",
+  "widget": null,
+  "representationType": "symbolic",
+  "promptVariants": 9,
+  "template": {
+   "prompt": "{opener} {wantCoin}?"
+  },
+  "slots": {
+   "t": {
+    "kind": "int",
+    "min": 0,
+    "max": 2
+   },
+   "k": {
+    "kind": "int",
+    "min": 0,
+    "max": 2
+   },
+   "phr": {
+    "kind": "int",
+    "min": 0,
+    "max": 2
+   },
+   "wantCoin": {
+    "kind": "expr",
+    "expr": "t == 0 ? '1 dime' : t == 1 ? '1 quarter' : '2 quarters'",
+    "format": "text"
+   },
+   "wantCap": {
+    "kind": "expr",
+    "expr": "t == 0 ? 'A dime' : t == 1 ? 'A quarter' : 'Two quarters'",
+    "format": "text"
+   },
+   "wantCents": {
+    "kind": "expr",
+    "expr": "t == 0 ? 10 : t == 1 ? 25 : 50",
+    "format": "int"
+   },
+   "wantMoney": {
+    "kind": "expr",
+    "expr": "wantCents",
+    "format": "money"
+   },
+   "wantWord": {
+    "kind": "expr",
+    "expr": "t == 0 ? 'ten cents' : t == 1 ? 'twenty-five cents' : 'fifty cents'",
+    "format": "text"
+   },
+   "opener": {
+    "kind": "expr",
+    "expr": "phr == 0 ? 'Which set of coins is worth the same as' : phr == 1 ? 'Which set of coins has the same value as' : 'Which coins are worth exactly as much as'",
+    "format": "text"
+   },
+   "keySet": {
+    "kind": "expr",
+    "expr": "t == 0 && k == 0 ? '2 nickels' : t == 0 && k == 1 ? '1 nickel and 5 pennies' : t == 0 && k == 2 ? '10 pennies' : t == 1 && k == 0 ? '2 dimes and 1 nickel' : t == 1 && k == 1 ? '5 nickels' : t == 1 && k == 2 ? '1 dime and 3 nickels' : t == 2 && k == 0 ? '5 dimes' : t == 2 && k == 1 ? '1 quarter, 2 dimes and 1 nickel' : t == 2 && k == 2 ? '4 dimes and 2 nickels' : ''",
+    "format": "text"
+   },
+   "extraSet": {
+    "kind": "expr",
+    "expr": "t == 0 && k == 0 ? '2 nickels and 1 penny' : t == 0 && k == 1 ? '1 nickel and 6 pennies' : t == 0 && k == 2 ? '10 pennies and 1 nickel' : t == 1 && k == 0 ? '2 dimes and 2 nickels' : t == 1 && k == 1 ? '6 nickels' : t == 1 && k == 2 ? '1 dime and 4 nickels' : t == 2 && k == 0 ? '6 dimes' : t == 2 && k == 1 ? '1 quarter, 2 dimes and 2 nickels' : t == 2 && k == 2 ? '4 dimes and 3 nickels' : ''",
+    "format": "text"
+   },
+   "shortSet": {
+    "kind": "expr",
+    "expr": "t == 0 && k == 0 ? '1 nickel' : t == 0 && k == 1 ? '1 nickel and 4 pennies' : t == 0 && k == 2 ? '9 pennies' : t == 1 && k == 0 ? '2 dimes' : t == 1 && k == 1 ? '4 nickels' : t == 1 && k == 2 ? '1 dime and 2 nickels' : t == 2 && k == 0 ? '4 dimes' : t == 2 && k == 1 ? '1 quarter and 2 dimes' : t == 2 && k == 2 ? '4 dimes and 1 nickel' : ''",
+    "format": "text"
+   },
+   "swapSet": {
+    "kind": "expr",
+    "expr": "t == 0 && k == 0 ? '2 dimes' : t == 0 && k == 1 ? '1 dime and 5 pennies' : t == 0 && k == 2 ? '10 nickels' : t == 1 && k == 0 ? '2 nickels and 1 dime' : t == 1 && k == 1 ? '5 dimes' : t == 1 && k == 2 ? '1 nickel and 3 dimes' : t == 2 && k == 0 ? '5 nickels' : t == 2 && k == 1 ? '1 quarter, 2 nickels and 1 dime' : t == 2 && k == 2 ? '4 nickels and 2 dimes' : ''",
+    "format": "text"
+   }
+  },
+  "answer": {
+   "expr": "keySet",
+   "type": "text"
+  },
+  "distractors": [
+   {
+    "expr": "extraSet",
+    "mistake": "oneCoinTooMany"
+   },
+   {
+    "expr": "shortSet",
+    "mistake": "oneCoinShort"
+   },
+   {
+    "expr": "swapSet",
+    "mistake": "mixedUpNickelsAndDimes"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks which set is worth the same as the coins named. Find what each set is worth and match it to {wantWord}.",
+   "steps": [
+    "{wantCap} is worth {wantWord}.",
+    "Count what each set is worth, starting with its biggest coin.",
+    "Pick the set that lands exactly on {wantWord}."
+   ],
+   "picture": {
+    "kind": "coinTray",
+    "coins": "fewestCoins(wantCents)"
+   },
+   "example": "auto",
+   "feedback": {
+    "oneCoinTooMany": "That set is worth a little more than {wantWord}. Count it again.",
+    "oneCoinShort": "That set is worth a little less than {wantWord}. Count it again.",
+    "mixedUpNickelsAndDimes": "Check the two small silver coins. The bigger one is worth five cents and the smaller one is worth ten cents."
+   },
+   "solution": {
+    "steps": [
+     "{wantCap} is worth {wantWord}.",
+     "{keySet} is also worth {wantMoney}."
+    ],
+    "answer": "keySet"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS 2.MD.C.8",
+    "TEKS 2.5A-B",
+    "FL B.E.S.T. MA.2.M.2.2",
+    "VA SOL 2.MG.1"
+   ],
+   "shape": "bare item from the K-5 money framework Sai shared (2026-09-28): equivalent sets, missing addend to a dollar, relational comparison"
+  }
+ },
+ {
+  "id": "money-g2-bareMoreToMakeDollar-easy",
+  "modeId": "money",
+  "subskill": "makeChange",
+  "family": "procedural",
+  "structureType": "bareMoreToMakeDollar",
+  "grade": "2",
+  "standards": {
+   "ccss": [
+    "2.MD.C.8"
+   ],
+   "tx": [
+    "2.5A",
+    "2.5B"
+   ],
+   "fl": [
+    "MA.2.M.2.2"
+   ],
+   "va": [
+    "2.MG.1"
+   ],
+   "ga": []
+  },
+  "difficulty": "easy",
+  "format": "number",
+  "widget": "numberPad",
+  "representationType": "symbolic",
+  "template": {
+   "prompt": "You have {haveMoney}. {ask}"
+  },
+  "slots": {
+   "have": {
+    "kind": "money",
+    "of": [
+     5,
+     85
+    ],
+    "step": 5
+   },
+   "haveMoney": {
+    "kind": "expr",
+    "expr": "have",
+    "format": "money"
+   },
+   "more": {
+    "kind": "expr",
+    "expr": "100 - have",
+    "format": "int"
+   },
+   "moreMoney": {
+    "kind": "expr",
+    "expr": "100 - have",
+    "format": "money"
+   },
+   "phr": {
+    "kind": "int",
+    "min": 0,
+    "max": 1
+   },
+   "ask": {
+    "kind": "expr",
+    "expr": "phr == 0 ? 'How many more cents make $1.00?' : 'How many more cents do you need to make $1.00?'",
+    "format": "text"
+   }
+  },
+  "constraints": [
+   "have != 50"
+  ],
+  "operation": {
+   "op": "-"
+  },
+  "answer": {
+   "expr": "100 - have",
+   "type": "int"
+  },
+  "distractors": [
+   {
+    "expr": "have",
+    "mistake": "answeredWithAGiven"
+   },
+   {
+    "expr": "100 - have + 5",
+    "mistake": "overshotByANickel"
+   },
+   {
+    "expr": "100 - have - 5",
+    "mistake": "stoppedANickelShort"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks how many more cents make one dollar. One dollar is 100 cents, so count up from {haveMoney} to 100.",
+   "steps": [
+    "One dollar is 100 cents.",
+    "Start at {haveMoney} and count up by fives or tens until you reach 100.",
+    "The number of cents you counted up is the answer."
+   ],
+   "picture": {
+    "kind": "numberLine",
+    "min": 0,
+    "max": 100,
+    "mark": "have",
+    "step": 10
+   },
+   "example": "auto",
+   "feedback": {
+    "answeredWithAGiven": "That is the amount you already have. Count up from it to 100 cents.",
+    "overshotByANickel": "That goes past one dollar. Stop counting exactly at 100 cents.",
+    "stoppedANickelShort": "That stops before one dollar. Keep counting until you reach 100 cents."
+   },
+   "solution": {
+    "steps": [
+     "One dollar is 100 cents.",
+     "Count up from {haveMoney} to 100 cents. That is {moreMoney}.",
+     "{more} more cents make $1.00."
+    ],
+    "answer": "100 - have"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS 2.MD.C.8",
+    "TEKS 2.5A-B",
+    "FL B.E.S.T. MA.2.M.2.2",
+    "VA SOL 2.MG.1"
+   ],
+   "shape": "bare item from the K-5 money framework Sai shared (2026-09-28): equivalent sets, missing addend to a dollar, relational comparison"
+  }
+ },
+ {
+  "id": "money-g2-bareCompareTwoSets-hard",
+  "modeId": "money",
+  "subskill": "coinEquivalence",
+  "family": "conceptual",
+  "structureType": "bareCompareTwoSets",
+  "grade": "2",
+  "standards": {
+   "ccss": [
+    "2.MD.C.8"
+   ],
+   "tx": [
+    "2.5A",
+    "2.5B"
+   ],
+   "fl": [
+    "MA.2.M.2.2"
+   ],
+   "va": [
+    "2.MG.1"
+   ],
+   "ga": []
+  },
+  "difficulty": "hard",
+  "format": "symbol",
+  "widget": "symbolSelect",
+  "representationType": "symbolic",
+  "template": {
+   "prompt": "Set A is {setA}. Set B is {setB}. Which sign compares Set A to Set B?"
+  },
+  "slots": {
+   "setA": {
+    "kind": "coins",
+    "count": [
+     2,
+     4
+    ],
+    "kinds": [
+     "quarter",
+     "dime",
+     "nickel",
+     "penny"
+    ],
+    "sameKind": false,
+    "maxCents": 60
+   },
+   "setBraw": {
+    "kind": "coins",
+    "count": [
+     2,
+     4
+    ],
+    "kinds": [
+     "quarter",
+     "dime",
+     "nickel",
+     "penny"
+    ],
+    "sameKind": false,
+    "maxCents": 60
+   },
+   "eq": {
+    "kind": "int",
+    "min": 0,
+    "max": 3
+   },
+   "setB": {
+    "kind": "expr",
+    "expr": "eq == 0 ? fewestCoins(coinValue(setA)) : setBraw",
+    "format": "coins"
+   },
+   "valueA": {
+    "kind": "expr",
+    "expr": "coinValue(setA)",
+    "format": "int"
+   },
+   "valueB": {
+    "kind": "expr",
+    "expr": "coinValue(setB)",
+    "format": "int"
+   },
+   "valueAMoney": {
+    "kind": "expr",
+    "expr": "valueA",
+    "format": "money"
+   },
+   "valueBMoney": {
+    "kind": "expr",
+    "expr": "valueB",
+    "format": "money"
+   },
+   "cmp": {
+    "kind": "expr",
+    "expr": "valueA < valueB ? '<' : valueA > valueB ? '>' : '='",
+    "format": "text"
+   },
+   "cmpWord": {
+    "kind": "expr",
+    "expr": "valueA < valueB ? 'is less than' : valueA > valueB ? 'is more than' : 'is the same as'",
+    "format": "text"
+   }
+  },
+  "constraints": [
+   "!(eq == 0 && len(setA) == len(fewestCoins(coinValue(setA))))",
+   "!(eq != 0 && valueA == valueB && len(setA) == len(setB))"
+  ],
+  "operation": {
+   "op": "?"
+  },
+  "answer": {
+   "expr": "cmp",
+   "type": "text"
+  },
+  "distractors": [
+   {
+    "expr": "cmp == '>' ? '<' : '>'",
+    "mistake": "pointedTheSignTheWrongWay"
+   },
+   {
+    "expr": "cmp == '=' ? '<' : '='",
+    "mistake": "missedTheMatch"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks which sign compares Set A to Set B. Find the value of each set first, then compare the two amounts.",
+   "steps": [
+    "Count Set A, starting with its biggest coin.",
+    "Count Set B the same way.",
+    "The sign opens toward the bigger amount. Use the equal sign when the amounts match."
+   ],
+   "picture": null,
+   "example": "auto",
+   "feedback": {
+    "pointedTheSignTheWrongWay": "Count each set again. The open side of the sign faces the bigger amount, and the equal sign means the two sets match.",
+    "missedTheMatch": "Count each set again and compare the two totals. Use the equal sign only when both sets are worth exactly the same."
+   },
+   "solution": {
+    "steps": [
+     "Set A is worth {valueAMoney}.",
+     "Set B is worth {valueBMoney}.",
+     "{valueAMoney} {cmpWord} {valueBMoney}, so the sign is {cmp}."
+    ],
+    "answer": "cmp"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS 2.MD.C.8",
+    "TEKS 2.5A-B",
+    "FL B.E.S.T. MA.2.M.2.2",
+    "VA SOL 2.MG.1"
+   ],
+   "shape": "bare item from the K-5 money framework Sai shared (2026-09-28): equivalent sets, missing addend to a dollar, relational comparison"
+  }
  }
 ]

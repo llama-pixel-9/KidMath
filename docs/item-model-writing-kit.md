@@ -143,3 +143,17 @@ Every one of these came up as a reviewer finding; write to them from the start.
 - Every distractor stays in the same money format as the key: no single choice over a dollar in a cents grid (fill.js switches the whole grid to dollars).
 - Feedback for a direction-dependent slip must cover both directions ("two things do not always cost more than one").
 - Each model's shape must differ from every other cell's, not only within its cell: the same template in two cells at two difficulties is a duplicate.
+
+## Picture-first and bare items (added 2026-09-28)
+
+Textbooks and state tests mix story problems with items that have no story at all: a tray of coins under "Count the coins. How many cents?", "How many nickels make a dime?", "Which coin is worth 10¢?", "The price is 38¢ and you pay 50¢. How much change?", "Set A is 3 dimes. Set B is 1 quarter. Which sign compares Set A to Set B?". About a third of a cell can take this shape. The Grade 2 money pilot's twelve are the `money-g2-bare*` models.
+
+- **The picture carries the numbers.** A tray item uses the coinTray widget in count mode (`display: {coins, coinMode: "'count'", counting: {kind: "sum", parts: "coinValues(coins)"}}`, `operation: {op: "count"}`, an int answer) and keeps its text to one or two short sentences.
+- **Fixed text is fine.** An item's identity is its prompt text plus the pictured coins: `validateBank` and the harness key duplicates on both, so a tray item may repeat its sentence across fills.
+- **Declare the wordings a bare drill can take.** A model whose text can only take a few forms ("Which coin is worth 10¢?" has four values and three openers) sets `promptVariants: N`, the number of distinct prompts it can produce; the harness then holds it to half of that instead of twenty distinct prompts in forty seeds. Vary the phrasing with an int slot and a text expr, and keep money slots in the template (`You have {haveMoney}. {ask}`), since a money value pasted inside a text expr loses its ¢ sign.
+- **A bare equation is not a question.** "25¢ + 10¢ = ?" fails the one-question-mark rule; write "What is 25¢ + 10¢?".
+- **Match the question word to the answer.** "Which" needs choices (choice, multiSelect or symbolSelect); "How many" needs an int; "How much money" a money amount.
+- **Fixed-text items need a fixed example.** `example: "auto"` skips fills that share the prompt, so a tray item gives `example: {problem, steps, answer}` of its own.
+- **Text answers leak through coin names.** When the key is a coin set or a coin name, no nudge, step or feedback line may contain any word or digit of it, so write values in words ("ten cents"), name no coins in those lines, and keep counts out of them. The solution and example may state the key.
+- **Comparing two sets** uses `format: "symbol"`, `widget: "symbolSelect"` and a text answer of `<`, `>` or `=`. Leave `operation.a`/`b` out (the sentence carries the sets, and payload numbers would have to appear in the prompt) and never write the = sign in a hint line ("the equal sign"), or a fill whose key is = fails the hint-leak check.
+- **Where the forms sit.** Easy: one-kind tray, "which coin is worth", "how many make a", cents to a dollar. Moderate: mixed tray, terse change, which set equals a coin, "how much money is 2 dimes and 1 nickel". Hard: a 7-8 coin tray, coins in dollars, compare two sets with a sign.

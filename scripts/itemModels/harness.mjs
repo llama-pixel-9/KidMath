@@ -96,7 +96,9 @@ for (const model of models) {
     filled += 1;
     const q = item.question;
     const prompt = q.display.promptText;
-    if (seed <= 40) prompts.add(prompt);
+    // A picture-first item repeats its text; the pictured coins make it a
+    // different question (validateBank keys duplicates the same way).
+    if (seed <= 40) prompts.add(Array.isArray(q.display.coins) && q.display.coins.length ? `${prompt}|${q.display.coins.join(",")}` : prompt);
     answers.add(String(q.answer));
     const bv = validateBankItem(item);
     if (bv.errors?.length) err(`seed ${seed}: validateBankItem: ${bv.errors.join("; ")}`);
@@ -147,7 +149,10 @@ for (const model of models) {
     }
   }
   r.stats = { filled, uniquePromptsIn40: prompts.size, uniqueAnswers: answers.size, droppedDistractorFills: dropped, fillsWithoutExample: noExample, fails: failCounts, warns: warnCounts };
-  if (filled && prompts.size < 20) err(`only ${prompts.size} distinct prompts in 40 seeds (need 20+)`);
+  // A bare drill may only have so many wordings ("Which coin is worth 10¢?"
+  // has four values); it declares them as promptVariants and is held to half.
+  const variantFloor = model.promptVariants > 0 ? Math.min(20, Math.ceil(model.promptVariants / 2)) : 20;
+  if (filled && prompts.size < variantFloor) err(`only ${prompts.size} distinct prompts in 40 seeds (need ${variantFloor}+)`);
   if (filled && answers.size < 8) warn(`only ${answers.size} distinct answers in ${SEEDS} seeds`);
   if (filled && dropped / filled > 0.2) err(`a distractor collides with the key in ${Math.round((100 * dropped) / filled)}% of fills (limit 20%)`);
   if (filled && model.hint.example === "auto" && noExample / filled > 0.1) warn(`no worked example in ${Math.round((100 * noExample) / filled)}% of fills`);

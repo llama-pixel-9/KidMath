@@ -1,9 +1,51 @@
 import { describe, expect, it } from "vitest";
 import {
+  buildBankQuestion,
   createAdaptiveSession,
   getNextQuestion,
+  isSessionComplete,
   recordAnswer,
 } from "../mathEngine";
+import { resetBankToBundle, setBankItems } from "../itemBank";
+
+// A bank row as the loaders hand it to the engine (bundle shape: the v2
+// columns are absent, as on every v1 row).
+function angleItem(overrides = {}, payload = {}) {
+  return {
+    itemId: "angles-test-served",
+    modeId: "angles",
+    itemFamily: "conceptual",
+    subskill: "classifyAngle",
+    structureType: "classifyAngle",
+    levelRange: [1, 10],
+    reviewStatus: "approved",
+    question: {
+      answer: "acute",
+      choices: ["acute", "obtuse", "right", "straight"],
+      display: { promptText: "Which kind of angle is smaller than a right angle?" },
+      ...payload,
+    },
+    ...overrides,
+  };
+}
+
+// A drill with a misconception-linked option set no near-miss rebuild could
+// produce, so a retry that reuses it is told apart from one that rebuilt.
+const DRILL = {
+  mode: "addition",
+  a: 9,
+  b: 7,
+  op: "+",
+  answer: 16,
+  choices: [16, 97, 2, 79],
+  display: { promptText: "9 + 7 = ?" },
+  metadata: { subskill: "makeTen", itemFamily: "procedural", itemSource: "bank", itemId: "addition-test-drill" },
+};
+
+// multiSelect answers may be a list of acceptable selections (a list of
+// lists) — q.answer itself is not a valid submission; submit answer[0].
+const submissionFor = (question) =>
+  Array.isArray(question.answer) && Array.isArray(question.answer[0]) ? question.answer[0] : question.answer;
 
 describe("adaptive session engine", () => {
   it("stores full question context in mistake bank", () => {
@@ -45,7 +87,11 @@ describe("adaptive session engine", () => {
     }
   });
 
-  it("skips due retry story items when word problems are off", () => {
+  it("serves a due retry of a story item even when word problems are off", () => {
+    // The setting decides which NEW questions get scheduled (the test above);
+    // an item the kid already met always comes back. With it off — the
+    // default — the retry step used to skip every miss whose prompt had
+    // words in it, which is most of the bank.
     const session = createAdaptiveSession("addition", 15, { allowWordProblems: false });
     session.questionsAnswered = 10;
     session.questionsSinceRetry = 10;
@@ -58,6 +104,8 @@ describe("adaptive session engine", () => {
         answer: 15,
         dueAt: 0,
         itemKey: "addition|application|story",
+        reviewChoices: [15, 14, 16, 1],
+        display: { promptText: "Mina found 7 shells. Then she found 8 more. How many shells does Mina have now?" },
         metadata: {
           modeId: "addition",
           itemFamily: "application",
@@ -70,16 +118,15 @@ describe("adaptive session engine", () => {
     ];
 
     const { question, isRetry } = getNextQuestion(session);
-    expect(isRetry).toBe(false);
-    expect(question.metadata.itemFamily).not.toBe("application");
+    expect(isRetry).toBe(true);
+    expect(question.itemKey).toBe("addition|application|story");
   });
 
   it("retries string-answer choice items without crashing (poison-item fix)", () => {
     // "Is 3 a factor of 4?" → "No": numeric distractor synthesis can't rebuild
     // options around a string answer. getNextQuestion used to throw here, and
     // the item persisted in the saved mistakeBank — crashing every later
-    // session of the mode too. (allowWordProblems on, else the verbal-prompt
-    // filter skips the due retry before the choice rebuild is ever reached.)
+    // session of the mode too.
     const session = createAdaptiveSession("factorsMultiples", 15, { allowWordProblems: true });
     const q = {
       mode: "factorsMultiples",
@@ -140,5 +187,201 @@ describe("adaptive session engine", () => {
     }
     expect(s.level).toBe(4);
     expect(s).not.toHaveProperty("mistakesAtLevel");
+  });
+});
+
+describe("authored choices are served shuffled", () => {
+  it("lands the key in every position over 400 served copies of a bank item", () => {
+    const item = angleItem();
+    const positions = [0, 0, 0, 0];
+    for (let i = 0; i < 400; i += 1) {
+      const q = buildBankQuestion(item);
+      expect([...q.choices].sort()).toEqual([...item.question.choices].sort());
+      positions[q.choices.indexOf(q.answer)] += 1;
+    }
+    for (const count of positions) expect(count).toBeGreaterThanOrEqual(400 * 0.15);
+    // The row's own array is never touched: it is the in-memory bank's.
+    expect(item.question.choices).toEqual(["acute", "obtuse", "right", "straight"]);
+  });
+
+  it("keeps a Yes/No judgment pair and a choicesFixed set in authored order", () => {
+    const yesNo = angleItem(
+      { itemId: "angles-test-yes-no" },
+      { answer: "No", choices: ["Yes", "No"], display: { promptText: "Is a right angle smaller than an acute angle?" } }
+    );
+    const fixed = angleItem({ itemId: "angles-test-fixed" }, { choicesFixed: true });
+    for (let i = 0; i < 20; i += 1) {
+      expect(buildBankQuestion(yesNo).choices).toEqual(["Yes", "No"]);
+      expect(buildBankQuestion(fixed).choices).toEqual(["acute", "obtuse", "right", "straight"]);
+    }
+  });
+
+  it("shuffles on the session path as well, and leaves generator sets alone", () => {
+    setBankItems(
+      ["conceptual", "procedural", "application"].map((family) =>
+        angleItem({ itemId: `angles-test-${family}`, itemFamily: family })
+      ),
+      "test"
+    );
+    try {
+      const session = createAdaptiveSession("angles", 15, { savedProgress: { level: 1 } });
+      const positions = new Set();
+      for (let i = 0; i < 60; i += 1) {
+        const { question } = getNextQuestion(session);
+        expect(question.metadata.itemSource).toBe("bank");
+        positions.add(question.choices.indexOf(question.answer));
+      }
+      expect(positions.size).toBe(4);
+    } finally {
+      resetBankToBundle();
+    }
+    // A generator's own set (a format's Yes/No, a comparing item's trays) is
+    // the generator's to order: with the bank empty the engine serves it as is.
+    setBankItems([], "test");
+    try {
+      const session = createAdaptiveSession("counting", 15, { savedProgress: { level: 4 } });
+      for (let i = 0; i < 40; i += 1) {
+        const { question } = getNextQuestion(session);
+        if (Array.isArray(question.choices) && question.choices.length === 2 && question.choices.includes("Yes")) {
+          expect(question.choices).toEqual(["Yes", "No"]);
+        }
+      }
+    } finally {
+      resetBankToBundle();
+    }
+  });
+});
+
+describe("retry choices", () => {
+  it("a retry reuses a reshuffled copy of the choices the kid missed against", () => {
+    const session = createAdaptiveSession("addition", 15);
+    const s = recordAnswer(session, DRILL, 97, 1500, false).session;
+    expect(s.mistakeBank[0].reviewChoices).toEqual([16, 97, 2, 79]);
+
+    s.questionsAnswered = 10;
+    s.questionsSinceRetry = 10;
+    s.mistakeBank[0].dueAt = 0;
+    const seen = new Set();
+    for (let i = 0; i < 40; i += 1) {
+      const { question: retryQ, isRetry } = getNextQuestion(s);
+      expect(isRetry).toBe(true);
+      expect([...retryQ.choices].sort((x, y) => x - y)).toEqual([2, 16, 79, 97]);
+      expect(retryQ.choices).not.toBe(s.mistakeBank[0].reviewChoices);
+      seen.add(retryQ.choices.join(","));
+    }
+    expect(seen.size).toBeGreaterThan(1);
+  });
+
+  it("rebuilds options only for a miss saved without them", () => {
+    const session = createAdaptiveSession("addition", 15);
+    session.questionsAnswered = 10;
+    session.questionsSinceRetry = 10;
+    session.mistakeBank = [
+      {
+        mode: "addition",
+        a: 9,
+        b: 7,
+        op: "+",
+        answer: 16,
+        dueAt: 0,
+        itemKey: "addition|legacy|numeric",
+        display: { promptText: "9 + 7 = ?" },
+        metadata: { subskill: "makeTen", itemFamily: "procedural" },
+      },
+    ];
+    const { question, isRetry } = getNextQuestion(session);
+    expect(isRetry).toBe(true);
+    expect(question.choices.length).toBeGreaterThanOrEqual(2);
+    expect(question.choices).toContain(16);
+  });
+});
+
+describe("a miss late in the session", () => {
+  const dueAtAfterMiss = (questionsAnswered) => {
+    const session = createAdaptiveSession("addition", 15);
+    session.questionsAnswered = questionsAnswered;
+    return recordAnswer(session, DRILL, 97, 1500, false).session.mistakeBank[0].dueAt;
+  };
+
+  it("keeps the usual spacing while it fits in the session", () => {
+    expect(dueAtAfterMiss(5)).toBe(11);
+    expect(dueAtAfterMiss(8)).toBe(14);
+  });
+
+  it("is pulled forward to the last retry slot when at least two fresh questions remain", () => {
+    // The miss is the 12th fresh question; three remain. The retry is served
+    // after the 14th, before the last fresh question closes the session.
+    expect(dueAtAfterMiss(11)).toBe(14);
+    expect(dueAtAfterMiss(12)).toBe(14);
+  });
+
+  it("persists to the next session when it is the last fresh question", () => {
+    expect(dueAtAfterMiss(14)).toBe(20);
+  });
+
+  it("comes back before the session ends", () => {
+    let session = createAdaptiveSession("addition", 15, { savedProgress: { level: 4 } });
+    let retried = null;
+    let guard = 0;
+    while (!isSessionComplete(session) && guard < 60) {
+      guard += 1;
+      const { question, isRetry } = getNextQuestion(session);
+      if (isRetry) retried = question;
+      // Miss the 12th fresh question, get everything else right.
+      const miss = !isRetry && session.questionsAnswered === 11;
+      session = recordAnswer(session, question, miss ? "__wrong__" : submissionFor(question), 2000, isRetry).session;
+    }
+    expect(isSessionComplete(session)).toBe(true);
+    expect(retried).toBeTruthy();
+    expect(session.mistakeBank).toHaveLength(0);
+  });
+});
+
+describe("a served bank question carries the row's version identity", () => {
+  it("passes version, itemModelId, difficulty and hint through", () => {
+    const hint = {
+      nudge: "Start from what a square corner looks like.",
+      steps: ["Picture a square corner.", "Is this angle narrower than that?"],
+      picture: null,
+      example: null,
+      feedback: null,
+      solution: null,
+    };
+    const q = buildBankQuestion(
+      angleItem({ itemId: "angles-test-v2", version: 2, itemModelId: "angles-classify-01", difficulty: "moderate", hint })
+    );
+    expect(q.version).toBe(2);
+    expect(q.itemModelId).toBe("angles-classify-01");
+    expect(q.difficulty).toBe("moderate");
+    expect(q.hint).toEqual(hint);
+    expect(q.metadata.itemId).toBe("angles-test-v2");
+  });
+
+  it("defaults to version 1 and nothing else on a v1 row", () => {
+    const q = buildBankQuestion(angleItem());
+    expect(q.version).toBe(1);
+    expect(q.itemModelId).toBeNull();
+    expect(q.difficulty).toBeNull();
+    expect(q.hint).toBeNull();
+  });
+
+  it("reaches the session path and the mistake bank", () => {
+    setBankItems(
+      ["conceptual", "procedural", "application"].map((family) =>
+        angleItem({ itemId: `angles-test-${family}`, itemFamily: family, version: 2, difficulty: "hard" })
+      ),
+      "test"
+    );
+    try {
+      const session = createAdaptiveSession("angles", 15, { savedProgress: { level: 1 } });
+      const { question } = getNextQuestion(session);
+      expect(question.version).toBe(2);
+      expect(question.difficulty).toBe("hard");
+      const stored = recordAnswer(session, question, "__wrong__", 1500, false).session.mistakeBank[0];
+      expect(stored.version).toBe(2);
+      expect(stored.difficulty).toBe("hard");
+    } finally {
+      resetBankToBundle();
+    }
   });
 });

@@ -1,5 +1,5 @@
 import { MODE_IDS, getModeConfig } from "./modes";
-import { shuffleArray, isVerbalPrompt } from "./modes/helpers";
+import { shuffleArray } from "./modes/helpers";
 import { buildItemKey, ITEM_FAMILIES } from "./modes/itemMetadata";
 import { initSkillSession, nextSkillQuestion, recordSkillAnswer, retryBelongs } from "./skills/session.js";
 import { validateChoices, validateQuestion } from "./modes/itemQuality";
@@ -72,14 +72,29 @@ function getNextFamily(session, modeConfig) {
   return { nextFamily: families[cursor % families.length], nextCursor: cursor + 1 };
 }
 
+// A miss comes back RETRY_SPACING fresh questions later. Near the end of a
+// session that fell past the last question, so a miss in the last five was
+// never retried in that session. A retry is served before a fresh question
+// and the session closes on the last fresh answer, so the last slot a retry
+// can take is sessionSize - 1: pull the retry forward to it — but only with
+// two or more fresh questions left, so one fresh question still separates the
+// miss from its retry. A miss on the last question persists to the next
+// session as before.
+function firstRetryDueAt(session, questionsAnswered) {
+  const dueAt = questionsAnswered + RETRY_SPACING;
+  const lastSlot = session.sessionSize - 1;
+  const remaining = session.sessionSize - questionsAnswered;
+  return dueAt > lastSlot && remaining >= 2 ? lastSlot : dueAt;
+}
+
 function cloneQuestionForReview(question, dueAt) {
   return {
     ...question,
-    // Choices are rebuilt fresh when the retry is served (new shuffle, new
-    // distractors). Keep the originals as `reviewChoices`: non-numeric choice
-    // answers ("2/3", "No", "18 cm") can't be rebuilt from the answer alone,
-    // and regeneration throwing used to crash the session — with the poison
-    // item persisted in the saved mistake bank.
+    // The retry serves a reshuffled copy of the options the kid missed
+    // against (`reviewChoices`) — an authored distractor set matters most on
+    // the retry, and non-numeric choice answers ("2/3", "No", "18 cm") can't
+    // be rebuilt from the answer alone. Rebuilding is only the fallback for a
+    // legacy entry persisted without them.
     choices: undefined,
     reviewChoices:
       Array.isArray(question.choices) && question.choices.length >= 2
@@ -215,7 +230,7 @@ export function generateQuestion(mode, level, context = null) {
       recentItemIds: context?.recentBankItemIds || [],
       allowWordProblems,
     });
-    bankQuestion = buildQuestionFromBankItem(bankItem, targetLevel);
+    bankQuestion = bankQuestionFor(bankItem, targetLevel);
     if (bankQuestion) {
       recordBankStat(generatedFamily, "bankServed");
     } else {
@@ -241,6 +256,27 @@ export function generateQuestion(mode, level, context = null) {
     }
   }
   return finalizeQuestion(mode, bankQuestion, q);
+}
+
+/**
+ * The bank row's payload as a question, carrying the row's identity beyond
+ * the payload (item bank v2): which version of the cell it is — 1 unless the
+ * row says otherwise — the item model it was generated from, its difficulty
+ * label and its own hint content. They ride on the served question so the
+ * bulb panel, the practice log and the mistake bank see them without a
+ * second lookup. Bundled v1 rows carry none of them.
+ */
+function bankQuestionFor(bankItem, level) {
+  const bankQuestion = buildQuestionFromBankItem(bankItem, level);
+  if (!bankQuestion) return null;
+  const version = Number(bankItem.version);
+  return {
+    ...bankQuestion,
+    version: Number.isInteger(version) && version >= 1 ? version : 1,
+    itemModelId: bankItem.itemModelId ?? null,
+    difficulty: bankItem.difficulty ?? null,
+    hint: bankItem.hint ?? bankQuestion.hint ?? null,
+  };
 }
 
 /** Fold a bank payload (or the generated question when there is none) into
@@ -283,7 +319,7 @@ export function finalizeQuestion(mode, bankQuestion, q) {
 export function buildBankQuestion(bankItem, level = null) {
   const mode = bankItem.modeId;
   const targetLevel = clampLevel(level ?? bankItem.levelRange?.[0] ?? 1, modeMaxLevel(mode));
-  const bankQuestion = buildQuestionFromBankItem(bankItem, targetLevel);
+  const bankQuestion = bankQuestionFor(bankItem, targetLevel);
   // The generator's question supplies the full metadata scaffold (gradeBand,
   // domain, practices...) exactly as it does on the session path.
   const scaffold = getModeConfig(mode).generate(targetLevel);
@@ -294,12 +330,33 @@ export function buildBankQuestion(bankItem, level = null) {
   return question;
 }
 
+/**
+ * An authored option set, served. A bank row's choices are a fixed list, and
+ * serving them in authored order put the key in the top row most of the time
+ * (84% across the bank): a kid who always taps top-left was right far more
+ * often than chance. So the kid gets a shuffled COPY — the array on the
+ * question is the bank row's own, and shuffling it in place would corrupt
+ * the in-memory bank.
+ *
+ * Two sets keep their order: one the author marked `choicesFixed`, and the
+ * Yes/No judgment pair, whose order is meaning ("Is this right?"), not a
+ * position a shuffle could leak.
+ */
+function serveAuthoredChoices(question, choices) {
+  if (question?.choicesFixed === true || isYesNoJudgment({ choices })) return [...choices];
+  return shuffleArray([...choices]);
+}
+
 export function generateChoices(answer, count = 4, question = null) {
   // A generator may supply its own option set. Format transforms depend on
   // this: true/false, odd-one-out and missing-operator items have a fixed set
-  // of options that numeric distractors would make nonsense of.
+  // of options that numeric distractors would make nonsense of. A generator's
+  // set is served as the generator ordered it (a format that wants randomness
+  // shuffles itself); a bank row's is where authored order leaked the key.
   if (Array.isArray(question?.choices) && question.choices.length >= 2) {
-    return question.choices;
+    return question.metadata?.itemSource === "bank"
+      ? serveAuthoredChoices(question, question.choices)
+      : question.choices;
   }
   if (question?.mode) {
     try {
@@ -493,30 +550,31 @@ export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE, options 
 }
 
 export function getNextQuestion(session) {
-  const suppressWordProblems = session.allowWordProblems === false;
+  // A due retry is served whatever the word-problem setting. The kid already
+  // met this item; the setting decides which NEW questions get scheduled
+  // (below). With it off — the default — the old filter skipped every retry
+  // whose prompt had words in it, which is most of the bank.
   const dueReview = session.mistakeBank.find(
     (q) =>
       (q.dueAt ?? RETRY_SPACING) <= session.questionsAnswered &&
-      (!session.skillIds || retryBelongs(session, q)) &&
-      !(
-        suppressWordProblems &&
-        (q.metadata?.itemFamily === ITEM_FAMILIES.APPLICATION ||
-          isVerbalPrompt(q.display?.promptText))
-      )
+      (!session.skillIds || retryBelongs(session, q))
   );
   if (dueReview && session.questionsSinceRetry >= RETRY_SPACING) {
     const retryQ = { ...dueReview, mode: dueReview.mode || session.mode };
     retryQ.itemKey = retryQ.itemKey || buildItemKey(retryQ);
     if (questionAnswerType(retryQ) === "choice") {
-      try {
-        retryQ.choices = generateChoices(retryQ.answer, 4, retryQ);
-      } catch {
-        // Regeneration can't rebuild options around a non-numeric answer.
-        // Reshuffle the originals saved at mistake time instead of crashing.
-        retryQ.choices =
-          Array.isArray(retryQ.reviewChoices) && retryQ.reviewChoices.length >= 2
-            ? shuffleArray([...retryQ.reviewChoices])
-            : null;
+      if (Array.isArray(retryQ.reviewChoices) && retryQ.reviewChoices.length >= 2) {
+        // The options the kid missed against, reshuffled. Rebuilding near
+        // misses around the answer threw an authored distractor set away on
+        // exactly the question where it matters most.
+        retryQ.choices = serveAuthoredChoices(retryQ, retryQ.reviewChoices);
+      } else {
+        try {
+          retryQ.choices = generateChoices(retryQ.answer, 4, retryQ);
+        } catch {
+          // A non-numeric answer with no saved options can't be rebuilt.
+          retryQ.choices = null;
+        }
       }
     }
     if (questionAnswerType(retryQ) !== "choice" || retryQ.choices) {
@@ -646,7 +704,7 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
     if (!session.mistakeBank.some((q) => q.itemKey === question.itemKey)) {
       next.mistakeBank = [
         ...session.mistakeBank,
-        cloneQuestionForReview(question, next.questionsAnswered + RETRY_SPACING),
+        cloneQuestionForReview(question, firstRetryDueAt(session, next.questionsAnswered)),
       ].slice(-MAX_REVIEW_ITEMS);
     }
   }

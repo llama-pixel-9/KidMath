@@ -8,6 +8,7 @@ import {
   Pencil,
   Play,
   RefreshCw,
+  Save,
   ShieldCheck,
   XCircle,
 } from "lucide-react";
@@ -15,7 +16,7 @@ import RequireAdmin from "../RequireAdmin";
 import { useAuth } from "../useAuth";
 import QuestionPreview from "./QuestionPreview.jsx";
 import Scaffold from "../components/Scaffold.jsx";
-import { listItemModels, setModelReview } from "./itemModelsApi.js";
+import { listItemModels, setModelReview, saveModelSpec } from "./itemModelsApi.js";
 import { GRADE2_MONEY_MODELS } from "../itemModels/samples/grade2Money.js";
 import { fill } from "../itemModels/fill.js";
 import { validateModel } from "../itemModels/validate.js";
@@ -497,12 +498,44 @@ function ModelReviewInner() {
   function toggleEdit() {
     if (!current) return;
     if (editing) {
-      resetModelState();
+      // Closing keeps an unsaved edit (the "edited" badge shows it) until
+      // it is saved, carried by a decision, or discarded.
+      setEditing(false);
+      setEditError(null);
       return;
     }
-    setEditText(JSON.stringify({ template: current.spec.template, hint: current.spec.hint }, null, 2));
+    const base = draftSpec || current.spec;
+    setEditText(JSON.stringify({ template: base.template, hint: base.hint }, null, 2));
     setEditError(null);
     setEditing(true);
+  }
+
+  // Save the edit on its own, without a decision, so a wording fix is not
+  // lost when the reviewer closes the editor or moves on.
+  async function saveEdit() {
+    if (!current || busy || !draftSpec || editError) return;
+    if (current.sample) {
+      setError("The bundled samples are read-only; edits save once models are loaded into the table.");
+      return;
+    }
+    setBusy(true);
+    setError(null);
+    try {
+      const updated = await saveModelSpec(current.id, draftSpec);
+      setModels((list) => list.map((m) => (m.id === updated.id ? updated : m)));
+      setDraftSpec(null);
+      setEditText(JSON.stringify({ template: updated.spec.template, hint: updated.spec.hint }, null, 2));
+    } catch (err) {
+      setError(err.message || "Save failed");
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  function discardEdit() {
+    setDraftSpec(null);
+    setEditError(null);
+    if (current) setEditText(JSON.stringify({ template: current.spec.template, hint: current.spec.hint }, null, 2));
   }
 
   // Live re-render: every keystroke that parses to a template and a hint
@@ -543,12 +576,12 @@ function ModelReviewInner() {
     sectionRef.current?.focus({ preventScroll: true });
   }, [current?.id, seeds, state]);
 
-  // Keys: A approve, E edit, R reject, F flag, Space rolls. The handlers
+  // Keys: A approve, E edit, S save the edit, R reject, F flag, Space rolls. The handlers
   // change every render, so the listener reads the latest through a ref
   // that an effect keeps current, and is registered once.
   const handlers = useRef({});
   useEffect(() => {
-    handlers.current = { decide, toggleEdit, rollAll, toggleReject };
+    handlers.current = { decide, toggleEdit, rollAll, toggleReject, saveEdit };
   });
   useEffect(() => {
     function onKey(e) {
@@ -573,6 +606,10 @@ function ModelReviewInner() {
         case "f":
         case "F":
           h.decide("flagged");
+          break;
+        case "s":
+        case "S":
+          h.saveEdit();
           break;
         case " ":
           // A focused button keeps its own Space (it clicks).
@@ -846,8 +883,9 @@ function ModelReviewInner() {
                 {editing && (
                   <div className="space-y-1">
                     <p className="text-xs text-slate-500">
-                      Template and hint as JSON; the samples re-render as you type. The edit is saved with your next decision
-                      {current.sample ? " (not for samples)" : ""}.
+                      Template and hint as JSON; the samples re-render as you type. Save keeps the edit on the model, and a decision (A, R, F)
+                      saves it too. Closing the editor keeps an unsaved edit until you save, decide or discard it
+                      {current.sample ? " (samples never save)" : ""}.
                     </p>
                     <textarea
                       className="w-full h-72 rounded-xl border border-gray-300 p-2 font-mono text-xs"
@@ -856,6 +894,25 @@ function ModelReviewInner() {
                       spellCheck={false}
                     />
                     {editError && <p className="text-xs text-red-700">✗ {editError}</p>}
+                    <div className="flex flex-wrap items-center gap-2">
+                      <button
+                        type="button"
+                        className="px-4 py-2 rounded-xl bg-violet-600 text-white text-sm font-bold disabled:opacity-30 flex items-center gap-1.5"
+                        onClick={saveEdit}
+                        disabled={busy || !draftSpec || !!editError || !!current.sample}
+                        title={current.sample ? "Samples never save" : draftSpec ? "S" : "Nothing changed yet"}
+                      >
+                        <Save className="h-4 w-4" /> Save edit <kbd className="opacity-70">S</kbd>
+                      </button>
+                      <button
+                        type="button"
+                        className="px-4 py-2 rounded-xl border border-gray-300 text-sm font-semibold text-slate-600 disabled:opacity-30"
+                        onClick={discardEdit}
+                        disabled={busy || !draftSpec}
+                      >
+                        Discard edit
+                      </button>
+                    </div>
                   </div>
                 )}
               </div>

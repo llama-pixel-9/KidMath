@@ -304,10 +304,13 @@ changed), none of the 107 ids remain in `src/itemBank/items`, the six 28 Sep
 ids (`select item_id from item_bank where review_status = 'retired' and
 updated_at >= '2026-09-28'`) are gone, the four retired seed ids are out of
 `seedItems.js`, `git diff --stat` is removals only, and the six bank specs
-still pass. `scripts/exportCloudBank.js` selects only today's columns on
-purpose; add `version, item_model_id, difficulty, hint, tags` (and carry them
-through `rowToItem`) after the migration is applied, before the first skill
-flips, so the export can follow the switch.
+still pass. `scripts/exportCloudBank.js` exports version-1 rows only
+(`version` is null or 1; the column predates v2) because bundled items never
+pass the version switch, so an approved v2 row in the bundle would reach every
+offline and pre-hydration kid whatever the switch says. Before the first
+version-2 row is approved, either keep that restriction or add
+`item_model_id, difficulty, hint, tags` to the select, carry them through
+`rowToItem`, and filter the bundle through `isServable` at load time.
 
 ## Engine fixes (plan section 7)
 

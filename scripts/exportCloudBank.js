@@ -53,9 +53,14 @@ async function main() {
     const { data: page, error } = await supabase
       .from("item_bank")
       .select(
-        "item_id, mode_id, item_family, subskill, structure_type, level_min, level_max, review_status, payload"
+        "item_id, mode_id, item_family, subskill, structure_type, level_min, level_max, review_status, payload, version"
       )
       .eq("review_status", "approved")
+      // Version 1 only. Bundled items never pass the version switch (it runs
+      // on cloud rows), and a missing version reads as 1 everywhere, so an
+      // approved v2 row exported here would reach every offline and
+      // pre-hydration kid, without its hint, whatever the switch says.
+      .or("version.is.null,version.eq.1")
       .order("mode_id", { ascending: true })
       .order("item_id", { ascending: true })
       .range(from, from + PAGE - 1);

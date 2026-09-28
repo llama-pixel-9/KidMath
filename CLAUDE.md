@@ -26,7 +26,7 @@ npm run bank:audit       # structure audit
 npm run bank:qc          # QC agent over the bank
 npm run bank:blind-solve # a model solves items as the kid sees them; must reach the key
 npm run bank:kid-safe    # kid-safe list, then "would a school print this?"
-npm run bank:export      # approved cloud rows → shipped bundle (src/itemBank/items/)
+npm run bank:export      # approved v1 cloud rows → shipped bundle (src/itemBank/items/)
 npm run bank:seed        # timestamped Supabase seed migration
 npm run bank:gen         # generateDrafts.js
 npm run worksheets:audit # every bank cell as a worksheet author sees it (--mode X, --md)

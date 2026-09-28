@@ -18,7 +18,7 @@
 import { findObjectsInText, objectsFor, priceRangeFor } from "../content/contextTable.js";
 import { localize, moneyRuleFor } from "../content/stateWords.js";
 import { NAMES } from "./names.js";
-import { evalExpr } from "./expr.js";
+import { evalExpr, identifiersIn } from "./expr.js";
 import { GRADES, resolveSlotToken } from "./schema.js";
 
 /** The engine's seeded PRNG (scripts/engineParity.mjs); same seed, same run. */
@@ -255,8 +255,24 @@ function drawScope(model, rng) {
     return value;
   };
 
-  for (const [name, spec] of Object.entries(model.slots)) if (spec.kind !== "expr") get(name);
-  for (const [name, spec] of Object.entries(model.slots)) if (spec.kind === "expr") scope[name] = evalExpr(spec.expr, scope);
+  // Slots are drawn in name order, whatever order the spec's keys arrive in
+  // (the database stores jsonb keys sorted by length), so a seed gives the
+  // same item from the repo file and from the review screen.
+  const names = Object.keys(model.slots).sort();
+  for (const name of names) if (model.slots[name].kind !== "expr") get(name);
+  // Expression slots follow their dependencies: a slot may name any other
+  // slot, wherever it sits in the spec.
+  const pending = new Set(names.filter((name) => model.slots[name].kind === "expr"));
+  while (pending.size) {
+    let progressed = false;
+    for (const name of pending) {
+      if (identifiersIn(model.slots[name].expr).some((id) => pending.has(id))) continue;
+      scope[name] = evalExpr(model.slots[name].expr, scope);
+      pending.delete(name);
+      progressed = true;
+    }
+    if (!progressed) throw new Error(`expression slots depend on each other: ${[...pending].join(", ")}`);
+  }
   return scope;
 }
 

@@ -5,6 +5,7 @@ import { evalExpr, identifiersIn, parseExpr } from "../itemModels/expr.js";
 import { WIDGET_IDS, slotTokensIn, resolveSlotToken } from "../itemModels/schema.js";
 import { NAMES } from "../itemModels/names.js";
 import { GRADE2_MONEY_MODELS, changeFromOneDollar, compareTwoAmounts } from "../itemModels/samples/grade2Money.js";
+import PILOT_MODELS from "../itemModels/pilot/grade2Money.json";
 import { runChecks } from "../itemBank/qc/checks.js";
 import { validateBankItem } from "../itemBank/index.js";
 import { hintContainsAnswer, validateHint } from "../hints/hintSchema.js";
@@ -49,6 +50,35 @@ describe("fill", () => {
       const prompts = new Set(SEEDS.slice(0, 40).map((seed) => fill(model, { seed }).question.display.promptText));
       expect(prompts.size, model.id).toBeGreaterThan(20);
     }
+  });
+
+  it("fills the same item whether the spec's keys come in file order or database order", () => {
+    // jsonb stores object keys sorted by length, then bytes; a spec read back
+    // from item_models arrives that way, with a slot's dependencies after it.
+    const jsonbOrder = (obj) =>
+      Object.fromEntries(
+        Object.keys(obj)
+          .sort((a, b) => a.length - b.length || (a < b ? -1 : a > b ? 1 : 0))
+          .map((k) => [k, obj[k]]),
+      );
+    const original = PILOT_MODELS.find((m) => m.id === "money-g2-equivBillsForCoins-hard");
+    expect(original).toBeTruthy();
+    const fromDb = jsonbOrder({ ...original, slots: jsonbOrder(original.slots) });
+    expect(Object.keys(fromDb.slots)).not.toEqual(Object.keys(original.slots));
+    for (const seed of [1, 2, 3, 4, 5]) expect(fill(fromDb, { seed })).toEqual(fill(original, { seed }));
+    // Every pilot model fills from database order too.
+    for (const model of PILOT_MODELS) {
+      const reordered = { ...model, slots: jsonbOrder(model.slots) };
+      expect(() => fill(reordered, { seed: 1 }), model.id).not.toThrow();
+    }
+  });
+
+  it("refuses expression slots that depend on each other", () => {
+    const loop = {
+      ...changeFromOneDollar,
+      slots: { ...changeFromOneDollar.slots, a: { kind: "expr", expr: "b + 1", format: "int" }, b: { kind: "expr", expr: "a + 1", format: "int" } },
+    };
+    expect(() => fill(loop, { seed: 1 })).toThrow(/depend on each other/);
   });
 
   it("gives a v2 bank item the loader, the gate and the served question all accept", () => {

@@ -53,3 +53,7 @@ test-results/
 playwright-report/
 public/__sweep.json
 qa-out/
+
+# item model harness output (npm run models:harness)
+src/itemModels/**/*.report.json
+src/itemModels/**/*.items.json

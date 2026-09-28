@@ -253,6 +253,13 @@ describe("priceInRange", () => {
     expect(find(runChecks(money("Sam finds 3 seashells and buys a bucket for $60. How many dollars does the bucket cost after a $10 coupon?", 50)), "priceInRange")).toBeNull();
   });
 
+  it("does not read money in hand or the bill handed over as the object's price", () => {
+    expect(find(runChecks(money("Mia buys a pencil for 45¢ at the store and pays with a $1 bill. How many cents of change does Mia get?", 55)), "priceInRange")).toBeNull();
+    expect(find(runChecks(money("Mia has 38¢ and wants a pencil that costs 45¢. How many more cents does Mia need?", 7)), "priceInRange")).toBeNull();
+    expect(find(runChecks(money("Mia earns 60¢ and then spends 45¢ on a pencil. How many cents does Mia have left?", 15)), "priceInRange")).toBeNull();
+    expect(find(runChecks(money("Mia has 38¢ and wants a pencil that costs $45. How many more cents does Mia need?", 7)), "priceInRange")?.severity).toBe("fail");
+  });
+
   it("holds a sentence with several priced objects between the cheapest and their total", () => {
     expect(find(runChecks(money("A pencil and a bookmark cost $3 together. Mia pays with $5. How many dollars of change does Mia get?", 2)), "priceInRange")).toBeNull();
     expect(find(runChecks(money("A pencil and a bookmark cost $50 together. Mia pays with $60. How many dollars of change does Mia get?", 10)), "priceInRange")?.severity).toBe("fail");

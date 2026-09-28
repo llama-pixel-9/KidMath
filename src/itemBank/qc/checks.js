@@ -142,10 +142,17 @@ const CURRENCY_IDS = new Set(["penny", "nickel", "dime", "quarter", "half-dollar
 const PACK_WORD = /\b(?:pack|packs|box|boxes|bag|bags)\b/i;
 // "$1.25", "$3", "75¢", "75 cents" — the amount in dollars either way.
 const AMOUNT_RE = /\$\s?(\d+(?:,\d{3})*(?:\.\d{1,2})?)|(\d+(?:\.\d{1,2})?)\s?(?:¢|cents?\b)/g;
+// Money that is never a price even when it shares a sentence with the priced
+// object: what the kid has, earns, saves or finds ("has 38¢ and wants a
+// bookmark that costs 51¢") and the bill handed over ("pays with a $5 bill").
+// A folded test sentence puts both facts next to the object.
+const HELD_BEFORE_RE = /\b(?:has|have|had|earns?|earned|saves?|saved|finds?|found|gets?|got|brings?|brought|keeps?|kept)\s+(?:only\s+|exactly\s+|about\s+|just\s+)?$/i;
+const BILL_AFTER_RE = /^\s*bills?\b/i;
 
 function amountsIn(sentence) {
   const out = [];
   for (const m of sentence.matchAll(AMOUNT_RE)) {
+    if (HELD_BEFORE_RE.test(sentence.slice(0, m.index)) || BILL_AFTER_RE.test(sentence.slice(m.index + m[0].length))) continue;
     const dollars = m[1] != null ? Number(m[1].replace(/,/g, "")) : Number(m[2]) / 100;
     if (Number.isFinite(dollars)) out.push({ text: m[0].trim(), dollars });
   }

@@ -1,0 +1,31 @@
+{
+  "CC": {
+    "notes": "Common Core wording is the default and what every item is written in. A state entry lists only what differs: phrase -> replacement, whole phrases only. Reserved keys in a state entry: notes, gradeLimits (phrase -> grades the swap applies to, K..5), money (how amounts are written)."
+  },
+  "TX": {
+    "tape diagram": "strip diagram",
+    "equation": "number sentence",
+    "gradeLimits": {
+      "equation": ["K", "1", "2"]
+    },
+    "notes": "TEKS / STAAR: 'strip diagram' for tape diagram at every grade. 'number sentence' for equation in K-2 only; from grade 3 STAAR says 'equation'. Grade 3 says 'expanded notation' for expanded form (not swapped yet — grade 3 only, and 'expanded form' is also used; add it here once confirmed against released items). 'number line' stays."
+  },
+  "VA": {
+    "equation": "number sentence",
+    "gradeLimits": {
+      "equation": ["K", "1", "2"]
+    },
+    "notes": "Virginia SOL: 'number sentence' for equation in K-2; 'equation' from grade 3. Diagram terms not confirmed yet."
+  },
+  "FL": {
+    "money": {
+      "fromGrade": "2",
+      "style": "dollarsDecimal",
+      "notes": "From grade 2, money is written with $ and a decimal ($0.45), never with a cent sign (45¢)."
+    },
+    "notes": "Florida B.E.S.T. keeps the Common Core terms; the difference is money notation (see money)."
+  },
+  "GA": {
+    "notes": "Georgia: no word swaps."
+  }
+}

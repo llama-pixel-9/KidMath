@@ -14,11 +14,173 @@
 
 import { contractVerdict, rendersAnything } from "../figureContracts.js";
 import { checkStructure } from "./structureCheck.js";
+import { LEVEL_BANDS, levelRangeToBands, gradeToLegacyBand } from "../../bands.js";
+import { findKidSafeHits } from "../../content/kidSafeList.js";
+import { objectMatchesInText, packFor, priceRangeFor } from "../../content/contextTable.js";
+import { hintContainsAnswer } from "../../hints/hintSchema.js";
 
 const fail = (id, message) => ({ id, severity: "fail", message });
 const warn = (id, message) => ({ id, severity: "warn", message });
 
 const numbersIn = (text) => (text.match(/\d+/g) || []).map(Number);
+
+// ---------------------------------------------------------------------------
+// Item bank v2 helpers. v2 rows are held to rules the live v1 bank was never
+// written to, so several checks below fail only from version 2 up: a v1 row
+// (version 1, or no version at all — the bundle and pre-migration rows) must
+// never pick up a new fail from this file, or the approved bank turns red.
+// ---------------------------------------------------------------------------
+
+const versionOf = (item) => {
+  const n = Number(item?.version);
+  return Number.isInteger(n) && n >= 1 ? n : 1;
+};
+const isV2 = (item) => versionOf(item) >= 2;
+
+const promptOf = (item) => item.question?.display?.promptText || "";
+
+const GRADE_TO_BAND = { K: "K-1", 0: "K-1", 1: "K-1", 2: "2-3", 3: "2-3", 4: "4-5", 5: "4-5" };
+function bandOf(value) {
+  if (value == null || value === "") return null;
+  const s = String(value).trim();
+  if (LEVEL_BANDS.includes(s)) return s;
+  return gradeToLegacyBand(s) || GRADE_TO_BAND[s.toUpperCase()] || null;
+}
+
+/**
+ * The bands (K-1 / 2-3 / 4-5, the context table's age bands) whose kids see
+ * this item: a v2 row's grade tag when it has one, else the row's band, else
+ * every band its level range touches.
+ */
+function itemBands(item) {
+  const tagged = bandOf(item?.tags?.grade) || bandOf(item?.gradeBand) || bandOf(item?.levelBand);
+  return tagged ? [tagged] : levelRangeToBands(item?.levelRange);
+}
+
+/**
+ * Question marks that ask a question. A "?" standing for the unknown in an
+ * equation ("8 + ? = 15", "? − 12 = 31") is a blank, not a question, so it is
+ * blanked out first. The operator must be its own token: "box?" is a word
+ * ending in x, not "x ?".
+ */
+function questionCount(text) {
+  const stripped = text
+    .replace(/((?:^|[\s\d])(?:[+\-−×÷=<>]|x)\s*)\?/g, "$1_")
+    .replace(/\?(\s*(?:[+\-−×÷=<>]|x)(?=[\s\d]|$))/g, "_$1");
+  return (stripped.match(/\?/g) || []).length;
+}
+
+// Sentences, keeping a decimal point inside its number ("$1.09" is not two
+// sentences).
+const sentencesOf = (text) => text.match(/(?:[^.!?]|\.(?=\d))+[.!?]*/g) || [];
+
+/** The last sentence of the prompt that asks a question, or null. */
+function questionSentence(text) {
+  const asking = sentencesOf(text).filter((s) => questionCount(s) > 0);
+  return asking.length ? asking[asking.length - 1].trim() : null;
+}
+
+/**
+ * Table objects named as THINGS in the text. The table has objects whose
+ * names are also verbs ("pins", "likes", "turns", "steps"), and "Luca pins
+ * the graph to the wall" is not a story about pins. A match right after a
+ * subject (a name or pronoun), after "to" or a linking verb ("looks like"),
+ * or before an object pronoun ("likes it") is read as the verb and dropped.
+ */
+const VERB_BEFORE =
+  /(?:^|[\s,;:])(?:he|she|they|we|I|you|it|who|to|look|looks|looked|looking|feel|feels|seem|seems|sound|sounds|taste|tastes|smell|smells|would|will|can|could|might|may|should|do|does|did|don't|doesn't|didn't|not|really|also|just|still|always|never|[A-Z][a-z]+)\s+$/;
+const VERB_AFTER = /^\s+(?:it|them|him|her|us|me)\b/;
+function storyObjectMatches(text) {
+  return objectMatchesInText(text).filter(
+    ({ index, length }) => !VERB_BEFORE.test(text.slice(0, index)) && !VERB_AFTER.test(text.slice(index + length))
+  );
+}
+
+// Answer types by what the kid does: picks from options, sets a clock, or
+// enters a number (everything else — number pad, fraction, ten frame, discs).
+const CHOICE_TYPES = new Set(["choice", "multiSelect", "symbolSelect", "shapeFigure", "fractionSet"]);
+const TIME_TYPES = new Set(["clock"]);
+// A number as an answer can wear money or a unit: "$3.50", "175 cm", "14/10".
+const NUMERIC_TEXT = /^\s*\$?\s*-?\d[\d,]*(?:\.\d+)?(?:\s*\/\s*\d+)?\s*(?:¢|cents?|dollars?|[a-zA-Z°]{1,8}\.?)?\s*$/;
+const TIME_TEXT = /\d{1,2}:\d{2}|o'?clock|half past|quarter (?:past|to|after|till)|\b(?:noon|midnight)\b|\b[ap]\.?m\.?\b/i;
+
+function isNumericAnswer(answer) {
+  if (typeof answer === "number") return Number.isFinite(answer);
+  if (typeof answer === "string") return NUMERIC_TEXT.test(answer);
+  if (Array.isArray(answer)) return answer.length > 0 && answer.every(isNumericAnswer);
+  if (answer && typeof answer === "object") return "num" in answer && "den" in answer;
+  return false;
+}
+
+const isTimeAnswer = (answer) => typeof answer === "string" && TIME_TEXT.test(answer);
+
+// An unset answerType is the multiple-choice grid when the row has choices
+// (widgetRegistry falls back to it), and unknown otherwise.
+const answerTypeOf = (q) => q?.answerType || (Array.isArray(q?.choices) ? "choice" : null);
+
+// Every line a kid can read on the item: prompt, string choices and the
+// hint's own text (the worked example and solution included — a kid sees
+// them after a miss).
+function kidFacingText(item) {
+  const q = item.question || {};
+  const parts = [promptOf(item)];
+  if (Array.isArray(q.choices)) parts.push(...q.choices.filter((c) => typeof c === "string"));
+  const h = item.hint;
+  if (h && typeof h === "object") {
+    const lines = (x) => (Array.isArray(x) ? x : typeof x === "string" ? [x] : []);
+    parts.push(...lines(h.nudge), ...lines(h.steps));
+    if (h.example && typeof h.example === "object") parts.push(...lines(h.example.problem), ...lines(h.example.steps));
+    if (h.feedback && typeof h.feedback === "object") parts.push(...Object.values(h.feedback).filter((s) => typeof s === "string"));
+    if (h.solution && typeof h.solution === "object") parts.push(...lines(h.solution.steps));
+  }
+  return parts.filter(Boolean).join("\n");
+}
+
+// Coins and bills: a dollar amount beside "quarters" is money being counted,
+// not a price to hold against the table.
+const CURRENCY_IDS = new Set(["penny", "nickel", "dime", "quarter", "half-dollar", "dollar-bill", "coin", "game-coin"]);
+const PACK_WORD = /\b(?:pack|packs|box|boxes|bag|bags)\b/i;
+// "$1.25", "$3", "75¢", "75 cents" — the amount in dollars either way.
+const AMOUNT_RE = /\$\s?(\d+(?:,\d{3})*(?:\.\d{1,2})?)|(\d+(?:\.\d{1,2})?)\s?(?:¢|cents?\b)/g;
+
+function amountsIn(sentence) {
+  const out = [];
+  for (const m of sentence.matchAll(AMOUNT_RE)) {
+    const dollars = m[1] != null ? Number(m[1].replace(/,/g, "")) : Number(m[2]) / 100;
+    if (Number.isFinite(dollars)) out.push({ text: m[0].trim(), dollars });
+  }
+  return out;
+}
+
+/**
+ * The dollar ranges an amount tied to this object may fall in. The unit
+ * range is the table's; a count right before the noun ("4 apples") allows
+ * the total for that many; a sentence about a pack, box or bag uses the pack
+ * price — a single number in the table, so it is read with room either side
+ * and widened to the unit range times the pack size.
+ */
+function priceBoundsFor(match, sentence, isPack) {
+  const unit = priceRangeFor(match.object.id);
+  const pack = packFor(match.object.id);
+  const bounds = [];
+  if (isPack && pack) {
+    bounds.push([
+      Math.min(pack.price_usd / 2, unit ? unit[0] * pack.size : Infinity),
+      Math.max(pack.price_usd * 2, unit ? unit[1] * pack.size : 0),
+    ]);
+  } else if (unit) {
+    bounds.push(unit);
+    const count = sentence.slice(0, match.index).match(/(\d+)\s+(?:[a-z-]+\s+)?$/i);
+    const n = count ? Number(count[1]) : 1;
+    if (n > 1) bounds.push([unit[0] * n, unit[1] * n]);
+  } else if (pack) {
+    bounds.push([pack.price_usd / 2, pack.price_usd * 2]);
+  }
+  return bounds;
+}
+
+const within = (x, [lo, hi]) => x >= lo - 0.005 && x <= hi + 0.005;
+const money = (x) => (Number.isInteger(x) ? `$${x}` : `$${x.toFixed(2)}`);
 
 /**
  * Plurals of the countable nouns items actually use. Deliberately a closed
@@ -562,6 +724,180 @@ export const CHECKS = [
       return null;
     },
   },
+
+  // -------------------------------------------------------------------------
+  // Item bank v2 checks (plan sections 6, 9). Each one that could newly flag
+  // a v1 row runs as a warning below version 2.
+  // -------------------------------------------------------------------------
+
+  {
+    // Nothing on the kid-safe list reaches a kid: no weapon, drink, brand,
+    // put-down or phone number in the prompt, the choices or the hint. The
+    // live v1 bank was scanned separately, so a v1 hit is advisory.
+    id: "kidSafe",
+    run: (item) => {
+      const hits = findKidSafeHits(kidFacingText(item));
+      if (!hits.length) return null;
+      const list = hits
+        .slice(0, 4)
+        .map((h) => `"${h.term}" (${h.category})`)
+        .join(", ");
+      const message = `not kid-safe: ${list}${hits.length > 4 ? ` and ${hits.length - 4} more` : ""} — see src/content/kidSafeList.js`;
+      return isV2(item) ? fail("kidSafe", message) : warn("kidSafe", message);
+    },
+  },
+
+  {
+    // A v2 prompt asks exactly one question. Two question marks means two
+    // things asked and one answer slot; none means the kid is left to guess
+    // what to do. An unknown-slot "?" in an equation is not a question.
+    id: "oneQuestionMark",
+    run: (item) => {
+      if (!isV2(item)) return null;
+      const n = questionCount(promptOf(item));
+      if (n === 1) return null;
+      return fail(
+        "oneQuestionMark",
+        n === 0 ? "the prompt asks no question — end it with one question mark" : `the prompt asks ${n} questions — ask exactly one`
+      );
+    },
+  },
+
+  {
+    // The question word promises how the kid answers. "Who" or "which" asks
+    // for a pick, so the item offers choices; "how many" or "how much" asks
+    // for a number (typed, or as numeric choices — the state-test format);
+    // "what time" is answered on a clock, or by choosing a time.
+    id: "questionWordMatchesAnswerType",
+    run: (item) => {
+      if (!isV2(item)) return null;
+      const sentence = questionSentence(promptOf(item));
+      if (!sentence) return null;
+      const word = sentence.match(/\b(who|which|how many|how much|what time)\b/i)?.[1]?.toLowerCase();
+      if (!word) return null;
+      const q = item.question || {};
+      const type = answerTypeOf(q);
+      if (!type) return null;
+      const bad = (expected) =>
+        fail("questionWordMatchesAnswerType", `"${word}" asks for ${expected}, but the answer type is ${type}`);
+      if (word === "who" || word === "which") return CHOICE_TYPES.has(type) ? null : bad("a pick from choices");
+      if (word === "what time") {
+        return TIME_TYPES.has(type) || (CHOICE_TYPES.has(type) && isTimeAnswer(q.answer)) ? null : bad("a time");
+      }
+      // how many / how much
+      if (TIME_TYPES.has(type)) return bad("a number or an amount of money");
+      if (CHOICE_TYPES.has(type) && !isNumericAnswer(q.answer)) return bad("a number or an amount of money");
+      return null;
+    },
+  },
+
+  {
+    // A v2 story is about an object from the context table — one kids of
+    // that age care about (appeal 2+) and that the table lists for their
+    // band. Nothing found is a warning (the table is still growing); an
+    // object found but wrong for these kids is a fail.
+    id: "contextObjectKnown",
+    run: (item) => {
+      if (!isV2(item) || item.itemFamily !== "application") return null;
+      const matches = storyObjectMatches(promptOf(item));
+      if (!matches.length) {
+        return warn(
+          "contextObjectKnown",
+          "no object from the context table in the prompt — v2 stories use objects kids care about (src/content/contextTable.json)"
+        );
+      }
+      const bands = itemBands(item);
+      const seen = new Set();
+      for (const { object, form } of matches) {
+        if (seen.has(object.id)) continue;
+        seen.add(object.id);
+        if (typeof object.appeal === "number" && object.appeal < 2) {
+          return fail("contextObjectKnown", `"${form}" has appeal ${object.appeal} — only objects kids care about (appeal 2+) go in stories`);
+        }
+        if (Array.isArray(object.age_bands)) {
+          const outside = bands.filter((b) => !object.age_bands.includes(b));
+          if (outside.length) {
+            return fail(
+              "contextObjectKnown",
+              `"${form}" is not listed for ${outside.join(", ")} kids (its age bands: ${object.age_bands.join(", ")})`
+            );
+          }
+        }
+      }
+      return null;
+    },
+  },
+
+  {
+    // A price in a v2 story is realistic for what it prices: inside the
+    // table's unit range for the object named in the same sentence, or the
+    // pack price when the sentence sells a pack, box or bag. With several
+    // priced objects in one sentence the amount may be their total, so it
+    // is held between the cheapest one and the sum of the dearest.
+    id: "priceInRange",
+    run: (item) => {
+      if (!isV2(item)) return null;
+      for (const sentence of sentencesOf(promptOf(item))) {
+        const amounts = amountsIn(sentence);
+        if (!amounts.length) continue;
+        const isPack = PACK_WORD.test(sentence);
+        const priced = [];
+        const seen = new Set();
+        for (const m of storyObjectMatches(sentence)) {
+          if (CURRENCY_IDS.has(m.object.id) || seen.has(m.object.id)) continue;
+          seen.add(m.object.id);
+          const bounds = priceBoundsFor(m, sentence, isPack);
+          if (bounds.length) priced.push({ match: m, bounds });
+        }
+        if (!priced.length) continue;
+        for (const amount of amounts) {
+          if (priced.length === 1) {
+            const { match, bounds } = priced[0];
+            if (bounds.some((b) => within(amount.dollars, b))) continue;
+            const [lo, hi] = bounds[0];
+            return fail(
+              "priceInRange",
+              `${amount.text} for "${match.form}" is outside the realistic ${money(lo)}-${money(hi)}${isPack ? " (pack price)" : ""} — see src/content/contextTable.json`
+            );
+          }
+          const lo = Math.min(...priced.map((p) => Math.min(...p.bounds.map((b) => b[0]))));
+          const hi = priced.reduce((sum, p) => sum + Math.max(...p.bounds.map((b) => b[1])), 0);
+          if (!within(amount.dollars, [lo, hi])) {
+            const names = priced.map((p) => `"${p.match.form}"`).join(", ");
+            return fail("priceInRange", `${amount.text} for ${names} is outside the realistic ${money(lo)}-${money(hi)} — see src/content/contextTable.json`);
+          }
+        }
+      }
+      return null;
+    },
+  },
+
+  {
+    // A hint helps the kid think; it never hands over the answer. The nudge,
+    // the steps and the mistake feedback are read before answering, so none
+    // of them may contain the answer as a whole token (the worked example
+    // and the solution may, by design).
+    id: "hintNoAnswer",
+    run: (item) => {
+      const hint = item.hint;
+      if (!hint || typeof hint !== "object") return null;
+      if (!hintContainsAnswer(hint, item.question?.answer)) return null;
+      const message = "the hint states the answer — a nudge, step or feedback line must stop before it";
+      // v1 rows never gain a new fail (they are already live); v2 is blocked.
+      return isV2(item) ? fail("hintNoAnswer", message) : warn("hintNoAnswer", message);
+    },
+  },
+
+  {
+    // Every v2 item carries its own hint content (plan section 9); a row
+    // without one falls back to the skill-level text v1 shows.
+    id: "hintPresent",
+    run: (item) => {
+      if (!isV2(item)) return null;
+      if (item.hint && typeof item.hint === "object") return null;
+      return warn("hintPresent", "no per-item hint — v2 items carry a nudge, steps and mistake feedback of their own");
+    },
+  },
 ];
 
 /** Run every deterministic check. */
@@ -594,8 +930,14 @@ export function runChecksOnAdminItem(adminItem) {
   return runChecks({
     itemId: adminItem.itemId,
     modeId: adminItem.modeId,
+    itemFamily: adminItem.itemFamily,
     structureType: adminItem.structureType,
     levelRange: [Number(adminItem.levelMin), Number(adminItem.levelMax)],
+    levelBand: adminItem.levelBand ?? null,
     question: adminItem.payload,
+    // v2 columns; absent on rows the admin fetched before the migration.
+    version: adminItem.version,
+    hint: adminItem.hint ?? null,
+    tags: adminItem.tags ?? null,
   });
 }

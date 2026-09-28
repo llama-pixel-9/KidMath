@@ -6,6 +6,12 @@ import Scaffold from "./Scaffold.jsx";
  * The hint: what the idea is, how to start THIS question (no answer), a
  * picture when one fits, and a fully worked example with other numbers.
  */
+
+// The picture kinds Scaffold can draw. A per-item hint may name others (coin
+// tray, tape diagram, clock, …); until each has a drawing the pane leaves the
+// section out — Scaffold's fallback line would describe the picture in words.
+const DRAWABLE_KINDS = new Set(["dots", "array", "strip", "numberLine"]);
+
 function Section({ label, children }) {
   return (
     <section className="mb-5 last:mb-0">
@@ -35,7 +41,7 @@ export default function HintPane({ question }) {
         </ol>
       </Section>
 
-      {hint.visual && (
+      {hint.visual && DRAWABLE_KINDS.has(hint.visual.kind) && (
         <Section label="Picture it">
           <div className="rounded-2xl bg-cream px-3 pb-3 -mt-1">
             <Scaffold scaffold={hint.visual} />

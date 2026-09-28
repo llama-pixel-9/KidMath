@@ -1,0 +1,114 @@
+# Web CI for Larkit. Mirrors the local check list in CLAUDE.md so a green PR
+# here means the same four commands pass that a developer runs before pushing.
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+# The jobs only read the checkout; nothing here comments, labels or publishes.
+permissions:
+  contents: read
+
+# One run per ref: a new push to the same branch or PR cancels the stale run.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # Lint, unit suite, web bundle and the Node<->JS engine parity check.
+  web:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          # The repo has no .nvmrc; 22 matches local development and Vercel.
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      # Advisory until main lints clean: main carries pre-existing eslint
+      # errors (unused vars under scripts/itemGen and a few src files), so a
+      # blocking step would fail every PR for reasons unrelated to it. Remove
+      # the flag once `npm run lint` passes on main.
+      - run: npm run lint
+        continue-on-error: true
+      - run: npm test
+      - run: npm run build
+      # The parity check reads the native engine bundle, which is gitignored
+      # (built locally by build:engine); a fresh checkout has none.
+      - run: npm run build:engine
+      - run: npm run test:engine
+
+  # Playwright robot-kid matrix against the Vite dev server (playwright.config.js
+  # starts the server itself through its webServer block). Advisory for now:
+  # continue-on-error keeps a red matrix from blocking merges until the suite
+  # has been green in CI; drop the flag then so it becomes a required check.
+  e2e:
+    needs: web
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Run e2e
+        # The config's reporter is list-only; add html here so a failure leaves
+        # a browsable report (with traces and screenshots under test-results/).
+        env:
+          PLAYWRIGHT_HTML_OPEN: never
+        run: npm run test:e2e -- --reporter=list,html
+      - name: Upload Playwright report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: |
+            playwright-report/
+            test-results/
+          if-no-files-found: ignore
+          retention-days: 7
+
+  # Bank validation, only when curated bank content or its content tables
+  # change. Both scripts run under plain Node over the on-disk bank (no
+  # Supabase), so they need no secrets.
+  bank:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The change detection below diffs against the PR base or the
+          # previous tip of main, so the base commit must be present locally.
+          fetch-depth: 0
+      - name: Detect bank content changes
+        id: bank
+        env:
+          # PR: tip of the base branch. Push: the previous tip of main (all
+          # zeros on a force push or a new branch, which then runs the checks).
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          if git cat-file -e "$BASE^{commit}" 2>/dev/null &&
+             git diff --quiet "$BASE" HEAD -- src/itemBank/items src/content src/itemModels; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - if: steps.bank.outputs.changed == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - if: steps.bank.outputs.changed == 'true'
+        run: npm ci
+      - if: steps.bank.outputs.changed == 'true'
+        run: npm run bank:report
+      - if: steps.bank.outputs.changed == 'true'
+        run: node --import ./scripts/lib/registerResolve.js scripts/bankStructureAudit.js

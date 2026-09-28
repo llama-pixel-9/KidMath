@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { BrowserRouter, Navigate, Route, Routes, useParams, useLocation, useSearchParams } from "react-router-dom";
 import TopicSheet from "./play/TopicSheet.jsx";
 import { Analytics } from "@vercel/analytics/react";
@@ -16,7 +17,6 @@ import AboutPage from "./AboutPage";
 import LegalPage from "./legal/LegalPage";
 import { ConfirmConsentPage, RevokeConsentPage } from "./ConsentLinkPages.jsx";
 import Footer from "./Footer";
-import AdminItemsPage from "./admin/AdminItemsPage";
 import LayoutSweepPage from "./admin/LayoutSweepPage";
 import DiagnosticsPage from "./admin/DiagnosticsPage";
 import MeadowPage from "./engagement/meadow/MeadowPage";
@@ -29,6 +29,13 @@ import AccountPage from "./account/AccountPage";
 import ParentReportPage from "./analytics/ParentReportPage";
 import WorldRoute from "./world/WorldRoute";
 import "./index.css";
+
+// The item-bank admin screens pull in the review checks, the item-model fill
+// and the context table (~370 KB of JSON). Loaded on demand so a kid's
+// session never downloads them with the main bundle.
+const AdminItemsPage = lazy(() => import("./admin/AdminItemsPage"));
+const ModelReviewPage = lazy(() => import("./admin/ModelReviewPage"));
+const VersionSwitchPanel = lazy(() => import("./admin/VersionSwitchPanel"));
 
 function PlayRoute() {
   const { mode } = useParams();
@@ -72,6 +79,7 @@ function AppShell() {
     >
       <Navbar />
       <div className="flex-1 flex flex-col min-h-0">
+      <Suspense fallback={null}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/play" element={<PlayRoute />} />
@@ -111,11 +119,16 @@ function AppShell() {
             subscriber straight into the Stripe Billing Portal. */}
         <Route path="/account/billing" element={<BillingPortalPage />} />
         <Route path="/admin" element={<AdminItemsPage />} />
+        {/* Item bank v2: review item models one at a time, and flip which
+            bank version each skill serves (admin-only writes, by RLS). */}
+        <Route path="/admin/models" element={<ModelReviewPage />} />
+        <Route path="/admin/switch" element={<VersionSwitchPanel />} />
         {import.meta.env.DEV && <Route path="/__sweep" element={<LayoutSweepPage />} />}
         <Route path="/diagnostics" element={<DiagnosticsPage />} />
         {/* Unknown paths: send to home rather than expose a bare 404. */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+      </Suspense>
       </div>
       {!inWorld && <Footer />}
       <Analytics />

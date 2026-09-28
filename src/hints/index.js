@@ -2,14 +2,20 @@
  * hintFor(question) → what the hint pane shows:
  *   { title, modeTitle, idea, steps, example, visual }
  *
- * idea/example come from CONCEPTS by mode × subskill (falling back to any
- * mode that owns the subskill, then to the mode's first entry); steps come
- * from the live question's numbers; visual is the same model the second
- * chance draws (dots / array / strip / number line) when one fits.
- * Dependency-free apart from scaffold.js so the native engine can bundle it.
+ * A v2 item carries its own hint (question.hint, see hintSchema.js), written
+ * with the question so the panel matches the story on screen: its nudge is
+ * the idea, its steps, example and picture win over the generic ones. Each
+ * field falls back on its own when missing or malformed, so a v1 item — or
+ * a partial hint — gets today's text: idea/example from CONCEPTS by mode ×
+ * subskill (falling back to any mode that owns the subskill, then to the
+ * mode's first entry); steps from the live question's numbers; visual the
+ * same model the second chance draws (dots / array / strip / number line)
+ * when one fits. Dependency-free apart from scaffold.js so the native
+ * engine can bundle it.
  */
 import { CONCEPTS, MODE_TITLES } from "./concepts.js";
 import { stepsFor } from "./steps.js";
+import { usableHintFields } from "./hintSchema.js";
 import { scaffoldFor } from "../scaffold.js";
 
 export function conceptFor(mode, subskill) {
@@ -32,13 +38,16 @@ export function hintFor(question) {
   const mode = question?.mode || question?.metadata?.modeId || "";
   const subskill = question?.metadata?.subskill || "";
   const concept = conceptFor(mode, subskill);
+  const own = usableHintFields(question?.hint);
   const scaffold = scaffoldFor(question);
   return {
     title: concept.title,
     modeTitle: MODE_TITLES[mode] || "Math",
-    idea: concept.idea,
-    steps: stepsFor(question),
-    example: concept.example,
-    visual: scaffold && scaffold.kind !== "look" ? scaffold : null,
+    idea: own.nudge ?? concept.idea,
+    steps: own.steps ?? stepsFor(question),
+    example: own.example ?? concept.example,
+    // The item's picture passes through as { kind, ...fields }; the pane
+    // decides whether it can draw that kind.
+    visual: own.picture ? { ...own.picture } : scaffold && scaffold.kind !== "look" ? scaffold : null,
   };
 }

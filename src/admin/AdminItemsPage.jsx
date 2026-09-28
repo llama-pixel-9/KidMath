@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { Link } from "react-router-dom";
 import { Plus, RefreshCw, Search, ClipboardCheck, Grid2X2, List, Gift } from "lucide-react";
 import RequireAdmin from "../RequireAdmin";
 import { listAllItems, fetchCellCoverage } from "./itemBankAdminApi";
@@ -142,6 +143,15 @@ function AdminItemsInner() {
     <div className="max-w-6xl mx-auto p-4 space-y-4">
       <div className="flex flex-wrap items-center gap-3">
         <h1 className="text-2xl font-extrabold text-slate-800">Item Bank Admin</h1>
+        {/* Item bank v2 screens live on their own routes. */}
+        <nav className="flex items-center gap-3 text-sm font-semibold text-violet-700">
+          <Link to="/admin/models" className="hover:underline">
+            Item models
+          </Link>
+          <Link to="/admin/switch" className="hover:underline">
+            Version switch
+          </Link>
+        </nav>
         <div className="flex-1" />
         <button
           className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-gray-100 text-slate-700 text-sm font-bold"

@@ -41,8 +41,7 @@ import {
   summarizeFlight,
   MODES,
   buildBankQuestion,
-  checkAnswer,
-} from "./mathEngine";
+  checkAnswer, restoreMistakeBank } from "./mathEngine";
 import { getBankItems } from "./itemBank/index.js";
 import { fetchBankItemById } from "./itemBank/cloudLoader.js";
 import { flightReportEnabled, meadowEnabled, secondChanceEnabled, readAloudEnabled } from "./gamificationFlags.js";
@@ -822,7 +821,7 @@ export default function MathExplorer({ initialMode }) {
       });
       // A skill session plays at its skill's level, not the saved level.
       if (!newSession.skillIds) newSession.level = saved.level;
-      newSession.mistakeBank = saved.mistakeBank;
+      newSession.mistakeBank = restoreMistakeBank(saved.mistakeBank);
       setSession(newSession);
       sessionRecordRef.current = null;
       loadNextQuestion(newSession);

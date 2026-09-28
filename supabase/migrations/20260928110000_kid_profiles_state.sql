@@ -17,7 +17,7 @@
 alter table public.kid_profiles
   add column if not exists state text
     -- Null passes a CHECK, so "not set" needs no separate clause.
-    check (state ~ '^[A-Z]{2}$');
+    check (state in ('AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY'));
 
 comment on column public.kid_profiles.state is
   'Two-letter USPS code of the state whose test wording the kid sees (src/usStates.js), or null for Common Core wording. Changes vocabulary only.';

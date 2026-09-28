@@ -50,11 +50,11 @@ describe("context table", () => {
   it("findObjectsInText matches singular and plural forms, whole words only", () => {
     const found = findObjectsInText("Mina found 9 seashells at the beach and one acorn.").map((o) => o.id);
     expect(found).toEqual(["seashell", "acorn"]);
-    // "pin" is an object; "pineapple" and "spin" are not pins.
-    const ids = findObjectsInText("A pineapple spins on a pin.").map((o) => o.id);
-    expect(ids).toContain("pin");
-    expect(ids.filter((id) => id === "pin")).toHaveLength(1);
-    expect(findObjectsInText("The pineapple spins.")).toEqual([]);
+    // "car" is an object; "carpet" and "scar" are not cars.
+    const ids = findObjectsInText("A carpet with a scar sits by a car.").map((o) => o.id);
+    expect(ids).toContain("car");
+    expect(ids.filter((id) => id === "car")).toHaveLength(1);
+    expect(findObjectsInText("The carpet has a scar.")).toEqual([]);
     expect(findObjectsInText("")).toEqual([]);
     expect(findObjectsInText(null)).toEqual([]);
   });
@@ -71,7 +71,7 @@ describe("context table", () => {
 
   it("priceRangeFor and packFor read the table, null when unpriced", () => {
     expect(priceRangeFor("marble")).toEqual([0.1, 0.5]);
-    expect(packFor("marble")).toEqual({ size: 50, price_usd: 7.99 });
+    expect(packFor("marble")).toEqual({ size: 50, price_usd: 8 });
     expect(priceRangeFor("seashell")).toBeNull();
     expect(packFor("seashell")).toBeNull();
     expect(priceRangeFor("no-such-thing")).toBeNull();

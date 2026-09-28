@@ -3115,16 +3115,6 @@ export const ITEMS = [
     question: {"a":42,"b":8,"op":"-","answer":34,"display":{"promptText":"Amelia has 8 fewer buttons than Max. Max has 42 buttons. How many buttons does Amelia have?"}},
   },
   {
-    itemId: "subtraction-app-differenceAsDistance-4_5-compareSmallerFewer-b0728b-035",
-    modeId: "subtraction",
-    itemFamily: "application",
-    subskill: "differenceAsDistance",
-    structureType: "compareSmallerFewer",
-    levelRange: [7,10],
-    reviewStatus: APPROVED,
-    question: {"a":72,"b":26,"op":"-","answer":46,"display":{"promptText":"Kai has 26 fewer Pokemon cards than Nora. Nora has 72 Pokemon cards. How many Pokemon cards does Kai have?"}},
-  },
-  {
     itemId: "subtraction-app-differenceAsDistance-4_5-compareSmallerFewer-b0728b-036",
     modeId: "subtraction",
     itemFamily: "application",

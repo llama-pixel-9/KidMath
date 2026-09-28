@@ -882,7 +882,9 @@ export const CHECKS = [
       const hint = item.hint;
       if (!hint || typeof hint !== "object") return null;
       if (!hintContainsAnswer(hint, item.question?.answer)) return null;
-      return fail("hintNoAnswer", "the hint states the answer — a nudge, step or feedback line must stop before it");
+      const message = "the hint states the answer — a nudge, step or feedback line must stop before it";
+      // v1 rows never gain a new fail (they are already live); v2 is blocked.
+      return isV2(item) ? fail("hintNoAnswer", message) : warn("hintNoAnswer", message);
     },
   },
 

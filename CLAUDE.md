@@ -268,8 +268,9 @@ Product IDs: `io.larkit.app.premium.{monthly,annual}`.
   account-side: `docs/ios-appstore-checklist.md` and `docs/stripe-setup.md`.
   Bundle ID is `io.larkit.app`; the App Store Connect record "larkit" exists
   (2026-09-19).
-- Item bank: 43,616 approved items in the shipped bundle. 113 rows retired in the
-  live bank on 27-28 Sep (wrong keys, kid-safe) await the next `bank:export`.
+- Item bank: 43,503 approved items in the shipped bundle (113 rows retired in the
+  live bank on 27-28 Sep for wrong keys and kid-safe were pruned from it; a full
+  `bank:export` after the v2 migration is still recommended).
   Batch-trust mode (spot-check a sample, approve the batch) is built and deployed.
 - Item bank v2 groundwork (2026-09-28): per-skill version switch, per-item hints,
   item models and their review screen, kid state — see

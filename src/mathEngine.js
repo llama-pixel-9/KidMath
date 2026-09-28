@@ -520,6 +520,18 @@ export function setProgressLoader(fn) {
   progressLoader = typeof fn === "function" ? fn : () => ({ ...DEFAULT_PROGRESS });
 }
 
+/**
+ * A saved mistake bank, carried into a new session. A miss is saved with the
+ * dueAt of the session it happened in (a miss on the last question sits past
+ * that session's end), so restored entries are re-due after the normal
+ * spacing; otherwise they never came back. Saved lists are already capped.
+ */
+export function restoreMistakeBank(saved) {
+  return (Array.isArray(saved) ? saved : [])
+    .slice(-MAX_REVIEW_ITEMS)
+    .map((q) => (q && typeof q === "object" && q.dueAt != null && q.dueAt > RETRY_SPACING ? { ...q, dueAt: RETRY_SPACING } : q));
+}
+
 export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE, options = {}) {
   const saved = options.savedProgress ?? progressLoader(mode);
   const modeConfig = getModeConfig(mode);
@@ -530,7 +542,7 @@ export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE, options 
     questionsAnswered: 0,
     firstTryCorrect: 0,
     retriesMastered: 0,
-    mistakeBank: (saved.mistakeBank || []).slice(-MAX_REVIEW_ITEMS),
+    mistakeBank: restoreMistakeBank(saved.mistakeBank),
     responseTimesMs: [],
     sessionSize,
     questionsSinceRetry: 0,

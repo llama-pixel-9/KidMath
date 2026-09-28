@@ -80,6 +80,11 @@ create policy "item_version_switch_select"
   to anon, authenticated
   using (true);
 
+-- Signed-out kids need only the map itself; who flipped a skill and why is for
+-- signed-in readers (the admin panel). Column grants sit under the row policy.
+revoke select on public.item_version_switch from anon;
+grant select (mode_id, live_version, changed_at) on public.item_version_switch to anon;
+
 drop policy if exists "item_version_switch_admin_insert" on public.item_version_switch;
 create policy "item_version_switch_admin_insert"
   on public.item_version_switch
@@ -169,7 +174,7 @@ create policy "item_models_select"
   on public.item_models
   for select
   to authenticated
-  using (true);
+  using (public.is_admin(auth.uid()));
 
 drop policy if exists "item_models_admin_insert" on public.item_models;
 create policy "item_models_admin_insert"

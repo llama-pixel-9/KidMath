@@ -7,6 +7,10 @@ on:
   push:
     branches: [main]
 
+# The jobs only read the checkout; nothing here comments, labels or publishes.
+permissions:
+  contents: read
+
 # One run per ref: a new push to the same branch or PR cancels the stale run.
 concurrency:
   group: ci-${{ github.ref }}

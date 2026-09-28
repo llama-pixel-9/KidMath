@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
+  restoreMistakeBank,
   buildBankQuestion,
   createAdaptiveSession,
   getNextQuestion,
@@ -383,5 +384,15 @@ describe("a served bank question carries the row's version identity", () => {
     } finally {
       resetBankToBundle();
     }
+  });
+});
+
+describe("carried-over misses", () => {
+  it("come due after the normal spacing in the next session, whatever dueAt they were saved with", () => {
+    const miss = { mode: "addition", a: 7, b: 8, op: "+", answer: 15, answerType: "number", itemKey: "addition:7+8", display: { promptText: "7 + 8" }, dueAt: 20, retryCount: 1 };
+    const session = createAdaptiveSession("addition", 15, { savedProgress: { level: 3, mistakeBank: [miss, { ...miss, itemKey: "addition:1+1", dueAt: 3 }] } });
+    expect(session.mistakeBank.map((q) => q.dueAt)).toEqual([5, 3]);
+    expect(restoreMistakeBank(null)).toEqual([]);
+    expect(restoreMistakeBank(Array.from({ length: 30 }, (_, i) => ({ ...miss, itemKey: `k${i}` }))).length).toBe(20);
   });
 });

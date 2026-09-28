@@ -577,7 +577,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "addition-conc-b0823-0033",
+  "itemId": "addition-conc-b0823-0031",
   "modeId": "addition",
   "itemFamily": "conceptual",
   "subskill": "unknownAddend",
@@ -588,12 +588,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 331,
+   "a": 237,
    "b": null,
    "op": "+",
-   "answer": 186,
+   "answer": 564,
    "display": {
-    "promptText": "The jump from 331 up to 517 is how big?"
+    "promptText": "801 is 237 plus what number?"
    },
    "answerType": "numberPad"
   }
@@ -641,7 +641,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "addition-conc-unknownAddend-45-015",
+  "itemId": "addition-conc-unknownAddend-45-011",
   "modeId": "addition",
   "itemFamily": "conceptual",
   "subskill": "unknownAddend",
@@ -652,12 +652,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 30,
+   "a": 187,
    "b": null,
    "op": "+",
-   "answer": 20,
+   "answer": 13,
    "display": {
-    "promptText": "What goes in the circle: 30 + O = 50?"
+    "promptText": "Fill in the blank so the equation is true: 187 + __ = 200"
    }
   }
  },
@@ -788,7 +788,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "addition-conc-unknownAddend-23-017",
+  "itemId": "addition-conc-unknownAddend-23-015",
   "modeId": "addition",
   "itemFamily": "conceptual",
   "subskill": "unknownAddend",
@@ -799,12 +799,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 11,
+   "a": 8,
    "b": null,
    "op": "+",
    "answer": 4,
    "display": {
-    "promptText": "What goes in the circle: 11 + O = 15?"
+    "promptText": "What goes in the circle: 8 + O = 12?"
    }
   }
  },
@@ -914,7 +914,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "addition-conc-composeDecompose-K1-017",
+  "itemId": "addition-conc-composeDecompose-K1-016",
   "modeId": "addition",
   "itemFamily": "conceptual",
   "subskill": "composeDecompose",
@@ -925,17 +925,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 5,
+   "a": 8,
    "b": null,
    "op": "+",
-   "answer": 5,
+   "answer": 2,
    "display": {
-    "promptText": "Write 10 as a sum of 5 and another whole number. The other number is?"
+    "promptText": "Write 10 as a sum of 8 and another whole number. The other number is?"
    }
   }
  },
  {
-  "itemId": "addition-conc-makeTen-K1-018",
+  "itemId": "addition-conc-makeTen-K1-017",
   "modeId": "addition",
   "itemFamily": "conceptual",
   "subskill": "makeTen",
@@ -946,17 +946,17 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 3,
-   "b": 7,
+   "a": 9,
+   "b": 0,
    "op": "+",
-   "answer": 10,
+   "answer": 9,
    "display": {
-    "promptText": "If 3 + 7 equals 10, what is 7 + 3?"
+    "promptText": "Adding zero keeps a number the same. What is 9 + 0?"
    }
   }
  },
  {
-  "itemId": "addition-conc-unknownAddend-K1-017",
+  "itemId": "addition-conc-unknownAddend-K1-016",
   "modeId": "addition",
   "itemFamily": "conceptual",
   "subskill": "unknownAddend",
@@ -967,38 +967,38 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 5,
+   "a": 4,
    "b": null,
    "op": "+",
-   "answer": 3,
+   "answer": 2,
    "display": {
-    "promptText": "What goes in the circle: 5 + O = 8?"
+    "promptText": "What goes in the circle: 4 + O = 6?"
    }
   }
  },
  {
-  "itemId": "addition-conc-composeDecompose-K1-033",
+  "itemId": "addition-conc-composeDecompose-K1-034",
   "modeId": "addition",
   "itemFamily": "conceptual",
   "subskill": "composeDecompose",
-  "structureType": "putTogetherTotalUnknown",
+  "structureType": "putTogetherAddendUnknown",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 2,
-   "b": 5,
+   "a": 6,
+   "b": 3,
    "op": "+",
-   "answer": 7,
+   "answer": 9,
    "display": {
-    "promptText": "True or make it true: is 2 + 5 equal to 7?"
+    "promptText": "Fingers: show 6 on one hand and 3 on the other. How many fingers?"
    }
   }
  },
  {
-  "itemId": "addition-conc-makeTen-K1-033",
+  "itemId": "addition-conc-makeTen-K1-034",
   "modeId": "addition",
   "itemFamily": "conceptual",
   "subskill": "makeTen",
@@ -1009,12 +1009,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 5,
-   "b": 3,
+   "a": 2,
+   "b": 6,
    "op": "+",
    "answer": 8,
    "display": {
-    "promptText": "Fingers: show 5 on one hand and 3 on the other. How many fingers?"
+    "promptText": "Fingers: show 2 on one hand and 6 on the other. How many fingers?"
    }
   }
  },
@@ -6219,7 +6219,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "barModels-app-b0821-0247",
+  "itemId": "barModels-app-b0821-0248",
   "modeId": "barModels",
   "itemFamily": "application",
   "subskill": "comparison",
@@ -6233,14 +6233,14 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 764,
+   "answer": 697,
    "display": {
     "counting": {
      "kind": "countOn",
-     "more": 345,
-     "start": 419
+     "more": 355,
+     "start": 342
     },
-    "promptText": "Rosa stacks 419 seashells, and Omar stacks 345 on top of that count. How many seashells does Omar stack? A bar model makes it clear."
+    "promptText": "Finn finds 342 trading cards. June finds 355 more than Finn. How many trading cards does June find? A bar model makes it clear."
    },
    "answerType": "numberPad"
   }
@@ -8154,49 +8154,58 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-app-026",
-  "modeId": "comparing",
-  "itemFamily": "application",
-  "subskill": "benchmarkCompare",
-  "structureType": "compareNumbers",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 47,
-   "b": 50,
-   "op": "?",
-   "answer": "<",
-   "display": {
-    "promptText": "Emma has 47 cookies. Jake has 50 cookies. Who has more cookies?"
-   }
-  }
- },
- {
-  "itemId": "comparing-app-029",
+  "itemId": "comparing-app-b0821-0018",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "distanceCompare",
-  "structureType": "compareNumbers",
+  "structureType": "storyWhoMoreFewer",
   "levelRange": [
    4,
    6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 18,
-   "b": 25,
-   "op": "?",
-   "answer": "<",
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "Ava",
+   "choices": [
+    "Ava",
+    "Lily"
+   ],
    "display": {
-    "promptText": "Anna ran 18 laps. Ben ran 25 laps. Who ran more laps?"
+    "promptText": "Ava collects 24 beads and Lily collects 42 beads. Who collects fewer beads?"
    }
   }
  },
  {
-  "itemId": "comparing-app-b0821-0378",
+  "itemId": "comparing-app-b0821-0171",
+  "modeId": "comparing",
+  "itemFamily": "application",
+  "subskill": "benchmarkCompare",
+  "structureType": "storyEnough",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": "Yes",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "truth": true,
+    "promptText": "The craft takes 25 beads. Ava brings 30 beads. Did Ava bring enough beads?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-app-b0821-0379",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "symbolSelection",
@@ -8210,50 +8219,19 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "vs",
-   "answer": "No",
+   "answer": "Yes",
    "choices": [
     "Yes",
     "No"
    ],
    "display": {
-    "truth": false,
-    "promptText": "Finn says 49 stamps are more than 94 stamps. Is Finn right?"
+    "truth": true,
+    "promptText": "Priya claims a pile of 58 blocks beats a pile of 55 blocks. Is that right?"
    }
   }
  },
  {
-  "itemId": "comparing-app-b0821-0225",
-  "modeId": "comparing",
-  "itemFamily": "application",
-  "subskill": "benchmarkCompare",
-  "structureType": "storyCloserTo",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "vs",
-   "answer": 50,
-   "choices": [
-    40,
-    50
-   ],
-   "display": {
-    "compare": {
-     "n": 48,
-     "hi": 50,
-     "lo": 40,
-     "kind": "closerTo"
-    },
-    "promptText": "Ben's jar holds 48 shells. Is the jar nearer 40 or 50 shells?"
-   }
-  }
- },
- {
-  "itemId": "comparing-app-b0821-0055",
+  "itemId": "comparing-app-b0821-0052",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "distanceCompare",
@@ -8267,20 +8245,51 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "vs",
-   "answer": 16,
+   "answer": 13,
    "display": {
     "compare": {
      "kind": "difference",
-     "bigger": 67,
-     "smaller": 51
+     "bigger": 34,
+     "smaller": 21
     },
-    "promptText": "Finn saves 67 stamps; Rosa saves 51 stamps. How many fewer stamps does Rosa have?"
+    "promptText": "Ava saves 34 beads; Lily saves 21 beads. How many fewer beads does Lily have?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "comparing-app-b0821-0418",
+  "itemId": "comparing-app-b0821-0222",
+  "modeId": "comparing",
+  "itemFamily": "application",
+  "subskill": "benchmarkCompare",
+  "structureType": "storyCloserTo",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "question": {
+   "a": null,
+   "b": null,
+   "op": "vs",
+   "answer": 20,
+   "choices": [
+    20,
+    30
+   ],
+   "display": {
+    "compare": {
+     "n": 23,
+     "hi": 30,
+     "lo": 20,
+     "kind": "closerTo"
+    },
+    "promptText": "Luca counts 23 stickers. Is that closer to 20 stickers or to 30 stickers?"
+   }
+  }
+ },
+ {
+  "itemId": "comparing-app-b0821-0419",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "symbolSelection",
@@ -8294,23 +8303,23 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "vs",
-   "answer": "No",
+   "answer": "Yes",
    "choices": [
     "Yes",
     "No"
    ],
    "display": {
-    "truth": false,
-    "promptText": "June compares and writes down 37 > 73. Did June get it right?"
+    "truth": true,
+    "promptText": "Lily checks a card that says 29 < 92. Is the card right?"
    }
   }
  },
  {
-  "itemId": "comparing-app-b0821-0282",
+  "itemId": "comparing-app-b0821-0086",
   "modeId": "comparing",
   "itemFamily": "application",
-  "subskill": "benchmarkCompare",
-  "structureType": "storyGapToGoal",
+  "subskill": "distanceCompare",
+  "structureType": "storyLanguageTrap",
   "levelRange": [
    4,
    6
@@ -8320,14 +8329,14 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "vs",
-   "answer": 18,
+   "answer": 11,
    "display": {
     "compare": {
-     "have": 52,
-     "kind": "gap",
-     "target": 70
+     "kind": "difference",
+     "bigger": 15,
+     "smaller": 4
     },
-    "promptText": "Lily wants 70 crayons in the album. So far there are 52 crayons. How many more crayons does Lily need?"
+    "promptText": "Luca has 4 more stickers than Ava. Luca has 15 stickers. How many stickers does Ava have?"
    },
    "answerType": "numberPad"
   }
@@ -8470,7 +8479,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-conc-b0821-0363",
+  "itemId": "comparing-conc-b0821-0358",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "distanceCompare",
@@ -8490,7 +8499,7 @@ export const SEED_ITEMS = [
     "Bottom row"
    ],
    "display": {
-    "promptText": "Top: 🍓🍓🍓 Bottom: 🍓🍓🍓🍓🍓🍓🍓🍓 Which row shows fewer berries?"
+    "promptText": "Top: 🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟 Bottom: 🐟🐟🐟🐟🐟🐟🐟 Which row shows more fish?"
    }
   }
  },
@@ -8635,7 +8644,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-conc-b0821-0066",
+  "itemId": "comparing-conc-b0821-0063",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "symbolSelection",
@@ -8646,12 +8655,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 68,
-   "b": 86,
+   "a": 95,
+   "b": 59,
    "op": "vs",
-   "answer": "<",
+   "answer": ">",
    "display": {
-    "promptText": "Help Finn pick the sign for 68 and 86. Remember which way the mouth opens!"
+    "promptText": "Help Ava pick the sign for 95 and 59. Remember which way the mouth opens!"
    },
    "answerType": "symbolSelect"
   }
@@ -8709,7 +8718,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-conc-b0821-0120",
+  "itemId": "comparing-conc-b0821-0114",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "symbolSelection",
@@ -8720,12 +8729,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 67,
-   "b": 41,
+   "a": 38,
+   "b": 61,
    "op": "vs",
-   "answer": ">",
+   "answer": "<",
    "display": {
-    "promptText": "To compare 67 and 41, Luca chose <. Check Luca's work — which symbol makes it true?"
+    "promptText": "To compare 38 and 61, Theo chose >. Check Theo's work — which symbol makes it true?"
    },
    "answerType": "symbolSelect"
   }
@@ -8846,7 +8855,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-conc-b0821-0132",
+  "itemId": "comparing-conc-b0821-0129",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "symbolSelection",
@@ -8857,12 +8866,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 289,
-   "b": 298,
+   "a": 326,
+   "b": 263,
    "op": "vs",
-   "answer": "<",
+   "answer": ">",
    "display": {
-    "promptText": "To compare 289 and 298, Priya chose >. Check Priya's work — which symbol makes it true?"
+    "promptText": "To compare 326 and 263, Omar chose <. Check Omar's work — which symbol makes it true?"
    },
    "answerType": "symbolSelect"
   }
@@ -8927,23 +8936,23 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-conc-b0821-0152",
+  "itemId": "comparing-conc-b0821-0146",
   "modeId": "comparing",
   "itemFamily": "conceptual",
   "subskill": "symbolSelection",
-  "structureType": "digitCountTrap",
+  "structureType": "symbolFlipFixBig",
   "levelRange": [
    7,
    10
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 99,
-   "b": 100,
+   "a": 235,
+   "b": 253,
    "op": "vs",
    "answer": "<",
    "display": {
-    "promptText": "Sam thinks a number that starts with 9 always wins. Choose the true symbol for 99 and 100."
+    "promptText": "Nora compared 235 and 253 and picked >. The hungry mouth should eat the bigger number! Which symbol is correct?"
    },
    "answerType": "symbolSelect"
   }
@@ -16301,7 +16310,7 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "decops",
-   "answer": "0.004699999999999999",
+   "answer": "0.0047",
    "display": {
     "promptText": "0.47 ÷ 100 = ?"
    },
@@ -16345,7 +16354,7 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "decops",
-   "answer": "0.054000000000000006",
+   "answer": "0.054",
    "display": {
     "promptText": "0.54 ÷ 10 = ?"
    },
@@ -32934,7 +32943,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-conc-equalGroups-23-018",
+  "itemId": "multiplication-conc-equalGroups-23-019",
   "modeId": "multiplication",
   "itemFamily": "conceptual",
   "subskill": "equalGroups",
@@ -32945,12 +32954,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 7,
-   "b": 6,
+   "a": 8,
+   "b": 5,
    "op": "×",
-   "answer": 42,
+   "answer": 40,
    "display": {
-    "promptText": "7 groups, each with 6 items. Total items?"
+    "promptText": "8 groups, each with 5 items. Total items?"
    }
   }
  },
@@ -32997,7 +33006,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-conc-equalGroups-23-035",
+  "itemId": "multiplication-conc-equalGroups-23-036",
   "modeId": "multiplication",
   "itemFamily": "conceptual",
   "subskill": "equalGroups",
@@ -33008,12 +33017,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 8,
-   "b": 7,
+   "a": 9,
+   "b": 6,
    "op": "×",
-   "answer": 56,
+   "answer": 54,
    "display": {
-    "promptText": "Eight of 7 is the same as? Use multiplication."
+    "promptText": "Nine of 6 is the same as? Use multiplication."
    }
   }
  },
@@ -33273,7 +33282,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-conc-equalGroups-K1-018",
+  "itemId": "multiplication-conc-equalGroups-K1-019",
   "modeId": "multiplication",
   "itemFamily": "conceptual",
   "subskill": "equalGroups",
@@ -33285,11 +33294,11 @@ export const SEED_ITEMS = [
   "reviewStatus": "approved",
   "question": {
    "a": 2,
-   "b": 3,
+   "b": 4,
    "op": "×",
-   "answer": 6,
+   "answer": 8,
    "display": {
-    "promptText": "2 groups, each with 3 items. Total items?"
+    "promptText": "2 groups, each with 4 items. Total items?"
    }
   }
  },
@@ -33336,7 +33345,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "multiplication-conc-equalGroups-K1-035",
+  "itemId": "multiplication-conc-equalGroups-K1-036",
   "modeId": "multiplication",
   "itemFamily": "conceptual",
   "subskill": "equalGroups",
@@ -33347,12 +33356,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 3,
-   "b": 5,
+   "a": 4,
+   "b": 2,
    "op": "×",
-   "answer": 15,
+   "answer": 8,
    "display": {
-    "promptText": "Tripling: 3 times as many as 5 is?"
+    "promptText": "Four of 2 is the same as? Use multiplication."
    }
   }
  },
@@ -44723,7 +44732,7 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "subtraction-app-differenceAsDistance-4_5-compareSmallerMore-006",
+  "itemId": "subtraction-app-differenceAsDistance-4_5-compareSmallerMore-007",
   "modeId": "subtraction",
   "itemFamily": "application",
   "subskill": "differenceAsDistance",
@@ -44734,12 +44743,12 @@ export const SEED_ITEMS = [
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": 45,
-   "b": 19,
+   "a": 33,
+   "b": 14,
    "op": "-",
-   "answer": 26,
+   "answer": 19,
    "display": {
-    "promptText": "Zara and Kai collect coins. Kai has 45 coins and 19 more than Zara. How many coins does Zara have?"
+    "promptText": "Ian and Zoe have notebooks. Zoe has 33 notebooks and 14 more than Ian. How many notebooks does Ian have?"
    }
   }
  },

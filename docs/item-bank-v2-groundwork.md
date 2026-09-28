@@ -289,22 +289,23 @@ imports `src/content/kidSafeList.js` directly. Details and report shapes:
 
 ## The bundle re-export
 
-The shipped bundle (`src/itemBank/items/*.js`, 43,616 items; `seedItems.js`,
-1,800) predates the 107 wrong-key rows retired on 27 Sep and the six kid-safe
-rows retired on 28 Sep, so those 113 still ship offline. The re-export could
-not run from the groundwork session (the Supabase host is outside the
-container's network allowlist). To do it:
+The shipped bundle (`src/itemBank/items/*.js`) now holds 43,503 items and
+`seedItems.js` 1,800: the 107 wrong-key rows retired on 27 Sep and the six
+kid-safe rows retired on 28 Sep were pruned on this branch with the repo's own
+writer (`scripts/lib/itemBankFiles.js`, then `npm run bank:seed:build`), so
+no retired id ships offline and the six bank specs pass. That prune removed
+rows only; it did not re-read the cloud, because the Supabase host is outside
+the groundwork container's network allowlist. A full re-export is still the
+right move after the migration lands, from a machine with egress:
 
 ```bash
 set -a && source .env.local && set +a && npm run bank:export
 ```
 
 Then check: the "Wrote N items" line (43,503 expected if nothing else
-changed), none of the 107 ids remain in `src/itemBank/items`, the six 28 Sep
-ids (`select item_id from item_bank where review_status = 'retired' and
-updated_at >= '2026-09-28'`) are gone, the four retired seed ids are out of
-`seedItems.js`, `git diff --stat` is removals only, and the six bank specs
-still pass. `scripts/exportCloudBank.js` exports version-1 rows only
+changed), `git diff --stat` shows only rows that changed in the cloud since
+the prune, and the six bank specs still pass.
+`scripts/exportCloudBank.js` exports version-1 rows only
 (`version` is null or 1; the column predates v2) because bundled items never
 pass the version switch, so an approved v2 row in the bundle would reach every
 offline and pre-hydration kid whatever the switch says. Before the first

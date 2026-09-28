@@ -223,14 +223,14 @@ describe("priceInRange", () => {
 
   it("passes a price inside the table's range and a cent price", () => {
     expect(find(runChecks(v2()), "priceInRange")).toBeNull();
-    expect(find(runChecks(money("A pencil costs 75¢. Mia pays with $1. How many cents of change does Mia get?", 25)), "priceInRange")).toBeNull();
+    expect(find(runChecks(money("A pencil costs 45¢. Mia pays with $1. How many cents of change does Mia get?", 55)), "priceInRange")).toBeNull();
   });
 
   it("fails a price outside the range for the object in the sentence", () => {
     const qc = runChecks(money("A pencil costs $40. Mia pays with $50. How many dollars of change does Mia get?", 10));
     const f = find(qc, "priceInRange");
     expect(f?.severity).toBe("fail");
-    expect(f.message).toMatch(/\$40 for "pencil" is outside the realistic \$0\.25-\$1/);
+    expect(f.message).toMatch(/\$40 for "pencil" is outside the realistic \$0\.10-\$0\.50/);
     expect(qc.pass).toBe(false);
   });
 
@@ -243,7 +243,7 @@ describe("priceInRange", () => {
   });
 
   it("allows the total for a counted quantity", () => {
-    expect(find(runChecks(money("Ava buys 4 pencils for $3. She pays with $5. How many dollars of change does Ava get?", 2)), "priceInRange")).toBeNull();
+    expect(find(runChecks(money("Ava buys 4 pencils for $2. She pays with $5. How many dollars of change does Ava get?", 3)), "priceInRange")).toBeNull();
     expect(find(runChecks(money("Ava buys 4 pencils for $30. She pays with $50. How many dollars of change does Ava get?", 20)), "priceInRange")?.severity).toBe("fail");
   });
 
@@ -269,15 +269,17 @@ describe("hintNoAnswer", () => {
     expect(find(runChecks(v2()), "hintNoAnswer")).toBeNull();
   });
 
-  it("fails a nudge, step or feedback line that states the answer, at any version", () => {
+  it("fails a nudge, step or feedback line that states the answer on v2, and only warns on v1", () => {
     const nudge = v2({ hint: { nudge: "The change is 3 dollars.", steps: ["Count up."] } });
     expect(find(runChecks(nudge), "hintNoAnswer")?.severity).toBe("fail");
     const step = v2({ hint: { nudge: "Count up.", steps: ["$2 + $3 = $5."] } });
     expect(find(runChecks(step), "hintNoAnswer")?.severity).toBe("fail");
-    const feedback = v2({ version: 1, hint: { nudge: "Count up.", feedback: { 7: "You added. The change is $3." } } });
-    const qc = runChecks(feedback);
-    expect(find(qc, "hintNoAnswer")?.severity).toBe("fail");
-    expect(qc.pass).toBe(false);
+    const feedback = v2({ hint: { nudge: "Count up.", feedback: { 7: "You added. The change is $3." } } });
+    expect(find(runChecks(feedback), "hintNoAnswer")?.severity).toBe("fail");
+    const v1 = v2({ version: 1, hint: { nudge: "Count up.", feedback: { 7: "You added. The change is $3." } } });
+    const qc = runChecks(v1);
+    expect(find(qc, "hintNoAnswer")?.severity).toBe("warn");
+    expect(qc.pass).toBe(true);
   });
 
   it("lets the worked example and the solution state an answer", () => {

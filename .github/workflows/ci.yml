@@ -33,6 +33,9 @@ jobs:
         continue-on-error: true
       - run: npm test
       - run: npm run build
+      # The parity check reads the native engine bundle, which is gitignored
+      # (built locally by build:engine); a fresh checkout has none.
+      - run: npm run build:engine
       - run: npm run test:engine
 
   # Playwright robot-kid matrix against the Vite dev server (playwright.config.js

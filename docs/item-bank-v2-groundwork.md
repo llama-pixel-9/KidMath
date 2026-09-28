@@ -255,7 +255,8 @@ is a follow-up.
 `.github/workflows/ci.yml` runs on pull requests and pushes to main:
 
 - `web`: `npm ci`, `npm run lint` (advisory, see below), `npm test`, `npm run
-  build`, `npm run test:engine` on Node 22.
+  build`, `npm run build:engine`, `npm run test:engine` on Node 22. The engine
+  build comes first because the parity check reads the gitignored bundle.
 - `e2e`: Playwright chromium against the Vite dev server, `continue-on-error`
   until the matrix has been green in CI; the HTML report is uploaded on
   failure.

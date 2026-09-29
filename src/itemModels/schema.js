@@ -35,9 +35,12 @@
  *   of `words`, else one of `fallback`. A setting that names another table
  *   object is skipped.
  * @typedef {Object} MoneySlot    { kind: "money", of: objectSlot | [lo, hi]
- *   | number, step?: number } — cents: a price drawn inside the object's
- *   range (narrowed by the object slot's priceCents), a range, or a fixed
- *   amount (the dollar paid). Rendered per the kid's state money rule.
+ *   | number, step?: number, pack?: true } — cents: a price drawn inside the
+ *   object's range (narrowed by the object slot's priceCents), a range, or a
+ *   fixed amount (the dollar paid). With `pack: true` the price is for the
+ *   pack the object is sold in (within 30% of the table's pack price; the
+ *   pack's size is `object.pack.size`), and only objects with a pack are
+ *   drawn. Rendered per the kid's state money rule.
  * @typedef {Object} IntSlot      { kind: "int", min, max, step? }
  * @typedef {Object} CoinsSlot    { kind: "coins", count: [lo, hi], kinds?:
  *   string[], sameKind?: boolean, maxCents?: number } — a list of coin
@@ -84,6 +87,11 @@
  *   take a few forms (a picture-first tray item has one): how many distinct
  *   prompts the model can produce, so the harness holds it to that instead of
  *   the usual twenty; item identity then includes the pictured coins
+ * @property {"auto"|"dollars"} [moneyStyle]  pin dollars-and-cents notation
+ *   ($0.75) for the prompt and choices; default "auto" (see MONEY_STYLES)
+ * @property {[number, number]} [levelRange]  the app levels (1-10) the items
+ *   serve at, when the grade's default band is too wide: grade 3 items sit
+ *   at [6, 7], grade 4 at [7, 9], grade 5 at [9, 10]
  * @property {Object<string, NameSlot|ObjectSlot|SettingSlot|MoneySlot|IntSlot|CoinsSlot|ExprSlot>} slots
  * @property {string[]} [constraints]  expressions that must all hold; the
  *   fill re-rolls until they do (a slot may also carry its own)
@@ -143,6 +151,11 @@ export const SLOT_KINDS = Object.freeze(["name", "object", "setting", "money", "
 export const ANSWER_TYPES = Object.freeze(["int", "money", "text"]);
 
 export const EXPR_FORMATS = Object.freeze(["int", "money", "text", "coins"]);
+
+/** How money renders in a model's prompt and choices: "auto" (45¢ under a
+ * dollar, $1.45 from one; the state rule may switch to dollars) or
+ * "dollars" ($0.45 everywhere, the decimal notation grade 4-5 items teach). */
+export const MONEY_STYLES = Object.freeze(["auto", "dollars"]);
 
 /** Picture kinds a hint may name — the same list the hint schema accepts. */
 export { PICTURE_KINDS } from "../hints/hintSchema.js";

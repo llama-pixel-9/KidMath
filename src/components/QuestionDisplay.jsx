@@ -123,6 +123,40 @@ function SequenceNumberLine({ sequence, step, answer, feedback }) {
   );
 }
 
+// Money as a price list shows it: cents to "$1.25", and every row in one
+// style, dollars when any price reaches a dollar or the list says so.
+function formatListPrice(cents, style) {
+  const c = Number(cents);
+  if (!Number.isFinite(c)) return String(cents);
+  if (style === "dollars" || c >= 100) return `$${(c / 100).toFixed(2)}`;
+  return `${c}¢`;
+}
+
+/** A price list or menu the question asks about (textbook "Snack Bar Price
+ * List" items): `{title?, style?, rows: [{item, cents}]}` from
+ * `question.display.priceList`. */
+function PriceList({ list, theme }) {
+  const rows = list.rows;
+  const style = list.style === "dollars" || rows.some((r) => Number(r.cents) >= 100) ? "dollars" : "cents";
+  return (
+    <div className="w-fit max-w-full mx-auto pt-1" data-qa="price-list">
+      {list.title && (
+        <p className={`text-xs sm:text-sm font-bold uppercase tracking-wide ${theme.textMuted} mb-1`}>{list.title}</p>
+      )}
+      <table className={`text-left text-lg sm:text-xl font-extrabold ${theme.textPrimary} leading-snug`}>
+        <tbody>
+          {rows.map((row, i) => (
+            <tr key={`${row.item}-${i}`}>
+              <td className="pr-6 py-0.5">{row.item}</td>
+              <td className="py-0.5 tabular-nums">{formatListPrice(row.cents, style)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 export default function QuestionDisplay({ question, modeColor, feedback, revealAnswer }) {
   const { theme } = useTheme();
   const q = question;
@@ -284,6 +318,9 @@ export default function QuestionDisplay({ question, modeColor, feedback, revealA
             </p>
           ))}
         </div>
+        {Array.isArray(q.display?.priceList?.rows) && q.display.priceList.rows.length > 0 && (
+          <PriceList list={q.display.priceList} theme={theme} />
+        )}
         {q.display?.numberLine && (
           <SequenceNumberLine
             sequence={q.display.numberLine.marks}

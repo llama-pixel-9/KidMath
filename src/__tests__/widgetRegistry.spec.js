@@ -32,6 +32,13 @@ describe("widget registry", () => {
     expect(getWidget("notAWidget")).toBeNull();
   });
 
+  it("hands the coin tray its required coin count from the payload", () => {
+    const props = getWidget("coinTray").props;
+    const withCount = props({ display: { coins: ["dime", "dime"], coinMode: "build", requiredCount: 6 }, answer: 51 });
+    expect(withCount).toMatchObject({ mode: "build", requiredCount: 6, targetCents: 51 });
+    expect(props({ display: { coins: ["dime"] }, answer: 10 }).requiredCount).toBeNull();
+  });
+
   it("gives every entry a component", () => {
     for (const [type, entry] of Object.entries(WIDGETS)) {
       expect(typeof entry.Component, `${type} Component`).toBe("function");

@@ -1,0 +1,3353 @@
+[
+ {
+  "id": "money-g4-bareFractionOfDollarCents-easy",
+  "modeId": "money",
+  "subskill": "moneyReasoning",
+  "family": "conceptual",
+  "structureType": "fractionOfDollarCents",
+  "grade": "4",
+  "standards": {
+   "ccss": [
+    "4.NF.C.6"
+   ],
+   "tx": [
+    "4.2E"
+   ],
+   "fl": [
+    "MA.4.FR.1.2"
+   ],
+   "va": [],
+   "ga": []
+  },
+  "difficulty": "easy",
+  "format": "number",
+  "widget": "numberPad",
+  "representationType": "symbolic",
+  "levelRange": [
+   7,
+   9
+  ],
+  "promptVariants": 14,
+  "template": {
+   "prompt": "{ask}"
+  },
+  "slots": {
+   "idx": {
+    "kind": "int",
+    "min": 0,
+    "max": 6
+   },
+   "num": {
+    "kind": "expr",
+    "expr": "idx == 0 ? 1 : idx == 1 ? 3 : idx == 2 ? 1 : idx == 3 ? 2 : idx == 4 ? 3 : idx == 5 ? 1 : 3",
+    "format": "int"
+   },
+   "den": {
+    "kind": "expr",
+    "expr": "idx <= 1 ? 4 : idx <= 4 ? 5 : 20",
+    "format": "int"
+   },
+   "fracText": {
+    "kind": "expr",
+    "expr": "num + '/' + den",
+    "format": "text"
+   },
+   "fracWords": {
+    "kind": "expr",
+    "expr": "idx == 0 ? 'one fourth' : idx == 1 ? 'three fourths' : idx == 2 ? 'one fifth' : idx == 3 ? 'two fifths' : idx == 4 ? 'three fifths' : idx == 5 ? 'one twentieth' : 'three twentieths'",
+    "format": "text"
+   },
+   "partWords": {
+    "kind": "expr",
+    "expr": "den == 4 ? 'four equal parts' : den == 5 ? 'five equal parts' : 'twenty equal parts'",
+    "format": "text"
+   },
+   "partCents": {
+    "kind": "expr",
+    "expr": "100 / den",
+    "format": "int"
+   },
+   "partCentsWords": {
+    "kind": "expr",
+    "expr": "den == 4 ? 'twenty-five cents' : den == 5 ? 'twenty cents' : 'five cents'",
+    "format": "text"
+   },
+   "cents": {
+    "kind": "expr",
+    "expr": "num * 100 / den",
+    "format": "int"
+   },
+   "centsMoney": {
+    "kind": "expr",
+    "expr": "cents",
+    "format": "money"
+   },
+   "partsPhrase": {
+    "kind": "expr",
+    "expr": "num == 1 ? 'One part is' : num + ' parts make'",
+    "format": "text"
+   },
+   "askPick": {
+    "kind": "int",
+    "min": 0,
+    "max": 1
+   },
+   "ask": {
+    "kind": "expr",
+    "expr": "askPick == 0 ? 'How many cents is ' + fracText + ' of a dollar?' : 'A dollar is 100 cents. What is ' + fracText + ' of a dollar, in cents?'",
+    "format": "text"
+   }
+  },
+  "answer": {
+   "expr": "cents",
+   "type": "int"
+  },
+  "distractors": [
+   {
+    "expr": "100 - cents",
+    "mistake": "foundTheRestOfTheDollar"
+   },
+   {
+    "expr": "num * den",
+    "mistake": "multipliedTopAndBottom"
+   },
+   {
+    "expr": "num * 10",
+    "mistake": "readTheTopAsTens"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks for part of a dollar. Split one hundred cents into {partWords} first; each part is {partCentsWords}.",
+   "steps": [
+    "The bottom number tells how many equal parts the dollar is split into: {partWords}.",
+    "Each part is {partCentsWords}.",
+    "The top number tells how many of those parts to count."
+   ],
+   "picture": null,
+   "example": "auto",
+   "feedback": {
+    "foundTheRestOfTheDollar": "That is the part of the dollar that is left, not the part asked for.",
+    "multipliedTopAndBottom": "The two numbers of the fraction were multiplied. Split the dollar into {partWords} instead.",
+    "readTheTopAsTens": "The top number counts parts, not tens of cents. Each part is {partCentsWords}."
+   },
+   "solution": {
+    "steps": [
+     "One dollar split into {partWords} gives {partCents} cents each.",
+     "The fraction {fracText} means {num} of those parts.",
+     "{partsPhrase} {cents} cents."
+    ],
+    "answer": "cents"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS",
+    "TEKS",
+    "FL B.E.S.T."
+   ],
+   "shape": "grade 4 bare drill (fractions and decimals of a dollar), K-5 money framework row 6.1 (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g4-bareFractionOfDollar-moderate",
+  "modeId": "money",
+  "subskill": "moneyReasoning",
+  "family": "conceptual",
+  "structureType": "fractionOfDollar",
+  "grade": "4",
+  "standards": {
+   "ccss": [
+    "4.NF.C.6"
+   ],
+   "tx": [
+    "4.2E"
+   ],
+   "fl": [
+    "MA.4.FR.1.2"
+   ],
+   "va": [],
+   "ga": []
+  },
+  "difficulty": "moderate",
+  "format": "money",
+  "widget": null,
+  "representationType": "verbalContext",
+  "levelRange": [
+   7,
+   9
+  ],
+  "promptVariants": 14,
+  "moneyStyle": "dollars",
+  "template": {
+   "prompt": "{name} has {fracText} of a dollar {where}. How much money is that?"
+  },
+  "slots": {
+   "idx": {
+    "kind": "int",
+    "min": 0,
+    "max": 6
+   },
+   "num": {
+    "kind": "expr",
+    "expr": "idx == 0 ? 1 : idx == 1 ? 3 : idx == 2 ? 1 : idx == 3 ? 2 : idx == 4 ? 3 : idx == 5 ? 1 : 3",
+    "format": "int"
+   },
+   "den": {
+    "kind": "expr",
+    "expr": "idx <= 1 ? 4 : idx <= 4 ? 5 : 20",
+    "format": "int"
+   },
+   "fracText": {
+    "kind": "expr",
+    "expr": "num + '/' + den",
+    "format": "text"
+   },
+   "fracWords": {
+    "kind": "expr",
+    "expr": "idx == 0 ? 'one fourth' : idx == 1 ? 'three fourths' : idx == 2 ? 'one fifth' : idx == 3 ? 'two fifths' : idx == 4 ? 'three fifths' : idx == 5 ? 'one twentieth' : 'three twentieths'",
+    "format": "text"
+   },
+   "partWords": {
+    "kind": "expr",
+    "expr": "den == 4 ? 'four equal parts' : den == 5 ? 'five equal parts' : 'twenty equal parts'",
+    "format": "text"
+   },
+   "partCents": {
+    "kind": "expr",
+    "expr": "100 / den",
+    "format": "int"
+   },
+   "partCentsWords": {
+    "kind": "expr",
+    "expr": "den == 4 ? 'twenty-five cents' : den == 5 ? 'twenty cents' : 'five cents'",
+    "format": "text"
+   },
+   "cents": {
+    "kind": "expr",
+    "expr": "num * 100 / den",
+    "format": "int"
+   },
+   "centsMoney": {
+    "kind": "expr",
+    "expr": "cents",
+    "format": "money"
+   },
+   "partsPhrase": {
+    "kind": "expr",
+    "expr": "num == 1 ? 'One part is' : num + ' parts make'",
+    "format": "text"
+   },
+   "name": {
+    "kind": "name"
+   },
+   "where": {
+    "kind": "setting",
+    "options": [
+     "in coins",
+     "in a coin purse",
+     "in a jar",
+     "in a pocket"
+    ]
+   }
+  },
+  "answer": {
+   "expr": "cents",
+   "type": "money"
+  },
+  "distractors": [
+   {
+    "expr": "100 - cents",
+    "mistake": "foundTheRestOfTheDollar"
+   },
+   {
+    "expr": "num * den",
+    "mistake": "multipliedTopAndBottom"
+   },
+   {
+    "expr": "num * 10",
+    "mistake": "readTheTopAsTens"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks for part of a dollar as money. Split the dollar into {partWords}; each part is {partCentsWords}. Count the parts, then write the cents after a dollar sign and a point.",
+   "steps": [
+    "The bottom number says the dollar is split into {partWords}.",
+    "Each part is {partCentsWords}; the top number says how many parts to count.",
+    "Write the cents as a decimal part of a dollar: a zero, a point, then two places."
+   ],
+   "picture": null,
+   "example": "auto",
+   "feedback": {
+    "foundTheRestOfTheDollar": "That is the part of the dollar that is left over, not the part {name} has.",
+    "multipliedTopAndBottom": "The two numbers of the fraction were multiplied. Split the dollar into {partWords} instead.",
+    "readTheTopAsTens": "The top number counts parts, not tens of cents. Each part is {partCentsWords}."
+   },
+   "solution": {
+    "steps": [
+     "A dollar split into {partWords} gives {partCents} cents each.",
+     "{partsPhrase} {cents} cents.",
+     "{cents} cents is {centsMoney}."
+    ],
+    "answer": "cents"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS",
+    "TEKS",
+    "FL B.E.S.T."
+   ],
+   "shape": "grade 4 bare drill (fractions and decimals of a dollar), K-5 money framework row 6.1 (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g4-bareCentsAsFraction-hard",
+  "modeId": "money",
+  "subskill": "moneyReasoning",
+  "family": "conceptual",
+  "structureType": "centsAsFraction",
+  "grade": "4",
+  "standards": {
+   "ccss": [
+    "4.NF.C.6"
+   ],
+   "tx": [
+    "4.2E"
+   ],
+   "fl": [
+    "MA.4.FR.1.2"
+   ],
+   "va": [],
+   "ga": []
+  },
+  "difficulty": "hard",
+  "format": "choice",
+  "widget": null,
+  "representationType": "symbolic",
+  "levelRange": [
+   7,
+   9
+  ],
+  "promptVariants": 14,
+  "template": {
+   "prompt": "{ask}"
+  },
+  "slots": {
+   "idx": {
+    "kind": "int",
+    "min": 0,
+    "max": 6
+   },
+   "num": {
+    "kind": "expr",
+    "expr": "idx == 0 ? 1 : idx == 1 ? 3 : idx == 2 ? 1 : idx == 3 ? 2 : idx == 4 ? 3 : idx == 5 ? 1 : 3",
+    "format": "int"
+   },
+   "den": {
+    "kind": "expr",
+    "expr": "idx <= 1 ? 4 : idx <= 4 ? 5 : 20",
+    "format": "int"
+   },
+   "fracText": {
+    "kind": "expr",
+    "expr": "num + '/' + den",
+    "format": "text"
+   },
+   "fracWords": {
+    "kind": "expr",
+    "expr": "idx == 0 ? 'one fourth' : idx == 1 ? 'three fourths' : idx == 2 ? 'one fifth' : idx == 3 ? 'two fifths' : idx == 4 ? 'three fifths' : idx == 5 ? 'one twentieth' : 'three twentieths'",
+    "format": "text"
+   },
+   "partWords": {
+    "kind": "expr",
+    "expr": "den == 4 ? 'four equal parts' : den == 5 ? 'five equal parts' : 'twenty equal parts'",
+    "format": "text"
+   },
+   "partCents": {
+    "kind": "expr",
+    "expr": "100 / den",
+    "format": "int"
+   },
+   "partCentsWords": {
+    "kind": "expr",
+    "expr": "den == 4 ? 'twenty-five cents' : den == 5 ? 'twenty cents' : 'five cents'",
+    "format": "text"
+   },
+   "cents": {
+    "kind": "expr",
+    "expr": "num * 100 / den",
+    "format": "int"
+   },
+   "centsMoney": {
+    "kind": "expr",
+    "expr": "cents",
+    "format": "money"
+   },
+   "partsPhrase": {
+    "kind": "expr",
+    "expr": "num == 1 ? 'One part is' : num + ' parts make'",
+    "format": "text"
+   },
+   "askPick": {
+    "kind": "int",
+    "min": 0,
+    "max": 1
+   },
+   "ask": {
+    "kind": "expr",
+    "expr": "askPick == 0 ? 'What fraction of a dollar is ' + cents + ' cents? Choose the fraction in simplest form.' : 'In simplest form, ' + cents + ' cents is what fraction of a dollar?'",
+    "format": "text"
+   },
+   "doubledDen": {
+    "kind": "expr",
+    "expr": "num + '/' + (den * 2)",
+    "format": "text"
+   },
+   "rest": {
+    "kind": "expr",
+    "expr": "(den - num) + '/' + den",
+    "format": "text"
+   },
+   "hundredths": {
+    "kind": "expr",
+    "expr": "num + '/100'",
+    "format": "text"
+   }
+  },
+  "answer": {
+   "expr": "fracText",
+   "type": "text"
+  },
+  "distractors": [
+   {
+    "expr": "doubledDen",
+    "mistake": "doubledTheBottom"
+   },
+   {
+    "expr": "rest",
+    "mistake": "choseTheRestOfTheDollar"
+   },
+   {
+    "expr": "hundredths",
+    "mistake": "keptTheTopOverOneHundred"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks what part of a dollar the cents are. Start with the cents over one hundred, then find the biggest number that divides both the top and the bottom.",
+   "steps": [
+    "Write the cents as a fraction of one hundred cents.",
+    "Find the biggest number that divides both the top and the bottom.",
+    "Divide both by it to get the simplest form."
+   ],
+   "picture": null,
+   "example": "auto",
+   "feedback": {
+    "doubledTheBottom": "The bottom number is twice too big. Divide the top and the bottom by the same number.",
+    "choseTheRestOfTheDollar": "That fraction is the part of the dollar that is missing, not the part given.",
+    "keptTheTopOverOneHundred": "Only the bottom was simplified. Divide the top and the bottom by the same number."
+   },
+   "solution": {
+    "steps": [
+     "{cents} cents is {cents}/100 of a dollar.",
+     "Divide the top and the bottom by {partCents}.",
+     "That gives {fracText}."
+    ],
+    "answer": "fracText"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS",
+    "TEKS",
+    "FL B.E.S.T."
+   ],
+   "shape": "grade 4 bare drill (fractions and decimals of a dollar), K-5 money framework row 6.1 (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g4-bareWordsToDecimal-easy",
+  "modeId": "money",
+  "subskill": "moneyReasoning",
+  "family": "conceptual",
+  "structureType": "wordsToDecimal",
+  "grade": "4",
+  "standards": {
+   "ccss": [
+    "4.NF.C.6",
+    "4.MD.A.2"
+   ],
+   "tx": [
+    "4.2E"
+   ],
+   "fl": [
+    "MA.4.FR.1.2"
+   ],
+   "va": [],
+   "ga": []
+  },
+  "difficulty": "easy",
+  "format": "money",
+  "widget": null,
+  "representationType": "symbolic",
+  "levelRange": [
+   7,
+   9
+  ],
+  "moneyStyle": "dollars",
+  "template": {
+   "prompt": "Which shows {dollarsText} and {centsText}?"
+  },
+  "slots": {
+   "dollarsN": {
+    "kind": "int",
+    "min": 1,
+    "max": 9
+   },
+   "c": {
+    "kind": "int",
+    "min": 1,
+    "max": 9
+   },
+   "dollarsWord": {
+    "kind": "expr",
+    "expr": "dollarsN == 1 ? 'one' : dollarsN == 2 ? 'two' : dollarsN == 3 ? 'three' : dollarsN == 4 ? 'four' : dollarsN == 5 ? 'five' : dollarsN == 6 ? 'six' : dollarsN == 7 ? 'seven' : dollarsN == 8 ? 'eight' : 'nine'",
+    "format": "text"
+   },
+   "centsWord": {
+    "kind": "expr",
+    "expr": "c == 1 ? 'one' : c == 2 ? 'two' : c == 3 ? 'three' : c == 4 ? 'four' : c == 5 ? 'five' : c == 6 ? 'six' : c == 7 ? 'seven' : c == 8 ? 'eight' : 'nine'",
+    "format": "text"
+   },
+   "dollarsText": {
+    "kind": "expr",
+    "expr": "dollarsN == 1 ? 'one dollar' : dollarsWord + ' dollars'",
+    "format": "text"
+   },
+   "centsText": {
+    "kind": "expr",
+    "expr": "c == 1 ? 'one cent' : centsWord + ' cents'",
+    "format": "text"
+   },
+   "amount": {
+    "kind": "expr",
+    "expr": "dollarsN * 100 + c",
+    "format": "int"
+   },
+   "amountMoney": {
+    "kind": "expr",
+    "expr": "amount",
+    "format": "money"
+   }
+  },
+  "constraints": [
+   "c != dollarsN"
+  ],
+  "answer": {
+   "expr": "amount",
+   "type": "money"
+  },
+  "distractors": [
+   {
+    "expr": "dollarsN * 100 + c * 10",
+    "mistake": "droppedTheZeroInTheCents"
+   },
+   {
+    "expr": "c * 100 + dollarsN",
+    "mistake": "swappedDollarsAndCents"
+   },
+   {
+    "expr": "dollarsN * 1000 + c",
+    "mistake": "addedAZeroToTheDollars"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks for the amount written with a dollar sign. The dollars go before the point and the cents go after it, and the cents always take two places.",
+   "steps": [
+    "Write the dollars before the point.",
+    "Cents fewer than ten need a zero first, so the cents fill two places.",
+    "Check that the dollars are before the point and the cents after it."
+   ],
+   "picture": null,
+   "example": "auto",
+   "feedback": {
+    "droppedTheZeroInTheCents": "Cents fewer than ten need a zero right after the point. Without it the cents are ten times too big.",
+    "swappedDollarsAndCents": "The dollars and the cents changed places. Dollars go before the point.",
+    "addedAZeroToTheDollars": "The dollars are ten times too big. Write only the dollars named before the point."
+   },
+   "solution": {
+    "steps": [
+     "The dollars, {dollarsText}, go before the point as {dollarsN}.",
+     "Fewer than ten cents needs a zero first, so {centsText} is written 0{c} after the point.",
+     "Together that is {amountMoney}."
+    ],
+    "answer": "amount"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS",
+    "TEKS",
+    "FL B.E.S.T."
+   ],
+   "shape": "grade 4 bare drill (fractions and decimals of a dollar), K-5 money framework row 6.1 (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g4-bareCentsToDecimal-moderate",
+  "modeId": "money",
+  "subskill": "moneyReasoning",
+  "family": "conceptual",
+  "structureType": "centsToDecimal",
+  "grade": "4",
+  "standards": {
+   "ccss": [
+    "4.NF.C.6",
+    "4.MD.A.2"
+   ],
+   "tx": [
+    "4.2E"
+   ],
+   "fl": [
+    "MA.4.FR.1.2"
+   ],
+   "va": [],
+   "ga": []
+  },
+  "difficulty": "moderate",
+  "format": "money",
+  "widget": null,
+  "representationType": "verbalContext",
+  "levelRange": [
+   7,
+   9
+  ],
+  "moneyStyle": "dollars",
+  "template": {
+   "prompt": "{name} has {c} cents {where}. Which shows that amount with a dollar sign?"
+  },
+  "slots": {
+   "name": {
+    "kind": "name"
+   },
+   "c": {
+    "kind": "int",
+    "min": 11,
+    "max": 99
+   },
+   "where": {
+    "kind": "setting",
+    "options": [
+     "in pennies",
+     "in coins",
+     "in a coin purse",
+     "in a pocket",
+     "in a jar"
+    ]
+   },
+   "swapped": {
+    "kind": "expr",
+    "expr": "ones(c) * 10 + tens(c) / 10",
+    "format": "int"
+   },
+   "amountMoney": {
+    "kind": "expr",
+    "expr": "c",
+    "format": "money"
+   }
+  },
+  "constraints": [
+   "c % 10 != 0",
+   "ones(c) != tens(c) / 10"
+  ],
+  "answer": {
+   "expr": "c",
+   "type": "money"
+  },
+  "distractors": [
+   {
+    "expr": "c * 100",
+    "mistake": "wroteTheCentsAsDollars"
+   },
+   {
+    "expr": "c * 10",
+    "mistake": "movedThePoint"
+   },
+   {
+    "expr": "swapped",
+    "mistake": "swappedTheDigits"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks for cents written with a dollar sign. Fewer than one hundred cents is less than a dollar, so a zero goes before the point and the cents go after it.",
+   "steps": [
+    "Less than a dollar means a zero before the point.",
+    "The cents go after the point, in two places.",
+    "Read it back: zero dollars and the cents."
+   ],
+   "picture": null,
+   "example": "auto",
+   "feedback": {
+    "wroteTheCentsAsDollars": "That is whole dollars, not cents. Cents go after the point.",
+    "movedThePoint": "The point is in the wrong place. Fewer than one hundred cents is less than one dollar.",
+    "swappedTheDigits": "The two cent digits changed places. Copy the cents in order after the point."
+   },
+   "solution": {
+    "steps": [
+     "{c} cents is less than a dollar, so write a zero before the point.",
+     "The {c} cents go after the point.",
+     "That is {amountMoney}."
+    ],
+    "answer": "c"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS",
+    "TEKS",
+    "FL B.E.S.T."
+   ],
+   "shape": "grade 4 bare drill (fractions and decimals of a dollar), K-5 money framework row 6.1 (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g4-bareAddDollars-easy",
+  "modeId": "money",
+  "subskill": "moneyReasoning",
+  "family": "procedural",
+  "structureType": "addDecimals",
+  "grade": "4",
+  "standards": {
+   "ccss": [
+    "4.MD.A.2"
+   ],
+   "tx": [
+    "4.4A"
+   ],
+   "fl": [
+    "MA.4.NSO.2.7"
+   ],
+   "va": [],
+   "ga": []
+  },
+  "difficulty": "easy",
+  "format": "money",
+  "widget": null,
+  "representationType": "symbolic",
+  "levelRange": [
+   7,
+   9
+  ],
+  "moneyStyle": "dollars",
+  "template": {
+   "prompt": "What is {aMoney} + {bMoney}?"
+  },
+  "slots": {
+   "a": {
+    "kind": "int",
+    "min": 105,
+    "max": 995
+   },
+   "b": {
+    "kind": "int",
+    "min": 105,
+    "max": 995
+   },
+   "aMoney": {
+    "kind": "expr",
+    "expr": "a",
+    "format": "money"
+   },
+   "bMoney": {
+    "kind": "expr",
+    "expr": "b",
+    "format": "money"
+   },
+   "sumMoney": {
+    "kind": "expr",
+    "expr": "a + b",
+    "format": "money"
+   },
+   "centsSum": {
+    "kind": "expr",
+    "expr": "ones(a) + tens(a) + ones(b) + tens(b)",
+    "format": "int"
+   }
+  },
+  "constraints": [
+   "a % 100 != 0",
+   "b % 100 != 0",
+   "a != b",
+   "(a + b) % 100 != 0",
+   "abs(a - b) != a + b - 100",
+   "abs(a - b) != a + b + 100"
+  ],
+  "operation": {
+   "op": "+"
+  },
+  "answer": {
+   "expr": "a + b",
+   "type": "money"
+  },
+  "distractors": [
+   {
+    "expr": "a + b - 100",
+    "mistake": "droppedTheCarriedDollar"
+   },
+   {
+    "expr": "a + b + 100",
+    "mistake": "carriedADollarTwice"
+   },
+   {
+    "expr": "abs(a - b)",
+    "mistake": "subtractedInstead"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks for a sum of money. Line up the decimal points, add the cents first, and carry a dollar when the cents reach one hundred.",
+   "steps": [
+    "Line up the points so cents sit under cents.",
+    "Add the cents; one hundred cents or more makes an extra dollar to carry.",
+    "Add the dollars, plus any carried dollar."
+   ],
+   "picture": null,
+   "example": "auto",
+   "feedback": {
+    "droppedTheCarriedDollar": "The cents made a whole dollar that was not carried. Add it to the dollars.",
+    "carriedADollarTwice": "One dollar too many was carried. Check whether the cents really reach one hundred.",
+    "subtractedInstead": "The amounts were subtracted. The plus sign asks for the sum."
+   },
+   "solution": {
+    "steps": [
+     "Line up the points: {aMoney} and {bMoney}.",
+     "Add the cents, then the dollars, carrying a dollar when the cents pass one hundred.",
+     "{aMoney} + {bMoney} = {sumMoney}."
+    ],
+    "answer": "a + b"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS",
+    "TEKS",
+    "FL B.E.S.T."
+   ],
+   "shape": "grade 4 bare drill (fractions and decimals of a dollar), K-5 money framework row 6.1 (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g4-spendFromAmount-moderate",
+  "modeId": "money",
+  "subskill": "moneyReasoning",
+  "family": "application",
+  "structureType": "spendFromAmount",
+  "grade": "4",
+  "standards": {
+   "ccss": [
+    "4.MD.A.2"
+   ],
+   "tx": [
+    "4.4A"
+   ],
+   "fl": [
+    "MA.4.NSO.2.7"
+   ],
+   "va": [],
+   "ga": []
+  },
+  "difficulty": "moderate",
+  "format": "money",
+  "widget": null,
+  "representationType": "verbalContext",
+  "levelRange": [
+   7,
+   9
+  ],
+  "moneyStyle": "dollars",
+  "template": {
+   "prompt": "{name} has {haveMoney}. {name} buys {object_a} for {price} {setting}. How much money does {name} have left?"
+  },
+  "slots": {
+   "name": {
+    "kind": "name"
+   },
+   "object": {
+    "kind": "object",
+    "skill": "money",
+    "band": "4-5",
+    "minAppeal": 2,
+    "excludeCategories": [
+     "screens-media",
+     "pets-animals",
+     "measurement-objects",
+     "time-events",
+     "travel-places"
+    ],
+    "constraints": [
+     "object.appeal >= 3 || object.category != 'toys-games'"
+    ],
+    "exclude": [
+     "arcade-game",
+     "arcade-token",
+     "bag-of-chips",
+     "bag-of-popcorn",
+     "bandage",
+     "bean-bag",
+     "birthday-candle",
+     "birthday-money-gift",
+     "boat-ride",
+     "book-fair-book",
+     "bumper-car",
+     "can-of-cat-food",
+     "cardboard-box",
+     "carnival-game",
+     "carnival-ticket",
+     "carousel-horse",
+     "checkerboard",
+     "cheeseburger",
+     "chick",
+     "chore",
+     "claw-machine",
+     "cone",
+     "dive-ring",
+     "family-photo",
+     "ferris-wheel-car",
+     "field-trip",
+     "field-trip-ticket",
+     "flash-card",
+     "goldfish",
+     "goody-bag",
+     "graham-cracker",
+     "gumball",
+     "guppy",
+     "holiday-cookie",
+     "jug-of-milk",
+     "juice-box",
+     "leash",
+     "lost-tooth",
+     "lunch-box",
+     "measuring-cup",
+     "medal",
+     "microwave-popcorn-bag",
+     "milk-carton",
+     "movie-ticket",
+     "museum-ticket",
+     "party-invitation",
+     "pet-bowl",
+     "photo-print",
+     "pitcher",
+     "planetarium-show",
+     "pony-ride",
+     "postage-stamp",
+     "present",
+     "pressed-penny",
+     "prize-box-toy",
+     "school-lunch",
+     "shoelace",
+     "sleeping-bag",
+     "stick-of-butter",
+     "timer",
+     "tomato",
+     "toothbrush",
+     "toy-box",
+     "train-ticket",
+     "valentine-card",
+     "waffle",
+     "watermelon",
+     "weekly-allowance",
+     "wheel",
+     "worm"
+    ],
+    "priceCents": [
+     105,
+     995
+    ]
+   },
+   "setting": {
+    "kind": "setting",
+    "startsWith": "at ",
+    "words": [
+     "store",
+     "shop",
+     "sale",
+     "stand",
+     "market",
+     "fair",
+     "booth",
+     "counter",
+     "cafeteria",
+     "truck",
+     "bakery",
+     "deli",
+     "carnival",
+     "arcade",
+     "boardwalk",
+     "mall",
+     "place",
+     "restaurant",
+     "orchard",
+     "patch",
+     "movies",
+     "ball game"
+    ],
+    "fallback": [
+     "at the school store",
+     "at the fair",
+     "at the dollar store",
+     "at the corner store"
+    ],
+    "of": "object"
+   },
+   "price": {
+    "kind": "money",
+    "of": "object",
+    "step": 1
+   },
+   "have": {
+    "kind": "int",
+    "min": 500,
+    "max": 2000
+   },
+   "haveMoney": {
+    "kind": "expr",
+    "expr": "have",
+    "format": "money"
+   },
+   "leftMoney": {
+    "kind": "expr",
+    "expr": "have - price",
+    "format": "money"
+   }
+  },
+  "constraints": [
+   "price % 100 != 0",
+   "have % 100 != 0",
+   "price < have",
+   "have - price >= 100",
+   "price % 100 > have % 100"
+  ],
+  "operation": {
+   "op": "-"
+  },
+  "answer": {
+   "expr": "have - price",
+   "type": "money"
+  },
+  "distractors": [
+   {
+    "expr": "have - price + 100",
+    "mistake": "forgotToRegroupADollar"
+   },
+   {
+    "expr": "have - price - 100",
+    "mistake": "regroupedADollarTwice"
+   },
+   {
+    "expr": "(floor(have / 100) - floor(price / 100)) * 100 + (price % 100 - have % 100)",
+    "mistake": "subtractedSmallerFromLarger"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks what is left after one purchase. Line up the decimal points and subtract; the cents in {haveMoney} are fewer than the cents in the price, so regroup one dollar as one hundred cents first.",
+   "steps": [
+    "Line up the points so cents sit under cents.",
+    "Regroup one dollar as one hundred cents, then subtract the cents.",
+    "Subtract the dollars that remain."
+   ],
+   "picture": null,
+   "example": "auto",
+   "feedback": {
+    "forgotToRegroupADollar": "The dollar that was regrouped into cents still got counted. Take it away from the dollars.",
+    "regroupedADollarTwice": "Only one dollar needed to be regrouped. Check the dollars again.",
+    "subtractedSmallerFromLarger": "In the cents, the smaller number was taken from the larger one. Regroup a dollar so the top cents are bigger, then subtract."
+   },
+   "solution": {
+    "steps": [
+     "Line up {haveMoney} over {price}.",
+     "Regroup one dollar as one hundred cents and subtract the cents, then the dollars.",
+     "{name} has {leftMoney} left."
+    ],
+    "answer": "have - price"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS",
+    "TEKS",
+    "FL B.E.S.T."
+   ],
+   "shape": "grade 4 story problem with decimal money, K-5 money framework rows 4.1 and 4.2 (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g4-budgetHowMuchMore-hard",
+  "modeId": "money",
+  "subskill": "moneyReasoning",
+  "family": "application",
+  "structureType": "howMuchMoreNeeded",
+  "grade": "4",
+  "standards": {
+   "ccss": [
+    "4.MD.A.2"
+   ],
+   "tx": [
+    "4.4A"
+   ],
+   "fl": [
+    "MA.4.NSO.2.7"
+   ],
+   "va": [],
+   "ga": []
+  },
+  "difficulty": "hard",
+  "format": "money",
+  "widget": null,
+  "representationType": "verbalContext",
+  "levelRange": [
+   7,
+   9
+  ],
+  "moneyStyle": "dollars",
+  "template": {
+   "prompt": "{name} wants {object_a} that costs {price} {setting}. {name} has {haveMoney} saved and gets {perWeekMoney} more each week. How much more money does {name} need?"
+  },
+  "slots": {
+   "name": {
+    "kind": "name"
+   },
+   "object": {
+    "kind": "object",
+    "skill": "money",
+    "band": "4-5",
+    "minAppeal": 2,
+    "excludeCategories": [
+     "screens-media",
+     "pets-animals",
+     "measurement-objects",
+     "time-events",
+     "travel-places"
+    ],
+    "constraints": [
+     "object.appeal >= 3 || object.category != 'toys-games'"
+    ],
+    "exclude": [
+     "arcade-game",
+     "arcade-token",
+     "bag-of-chips",
+     "bag-of-popcorn",
+     "bandage",
+     "bean-bag",
+     "birthday-candle",
+     "birthday-money-gift",
+     "boat-ride",
+     "book-fair-book",
+     "bumper-car",
+     "can-of-cat-food",
+     "cardboard-box",
+     "carnival-game",
+     "carnival-ticket",
+     "carousel-horse",
+     "checkerboard",
+     "cheeseburger",
+     "chick",
+     "chore",
+     "claw-machine",
+     "cone",
+     "dive-ring",
+     "family-photo",
+     "ferris-wheel-car",
+     "field-trip",
+     "field-trip-ticket",
+     "flash-card",
+     "goldfish",
+     "goody-bag",
+     "graham-cracker",
+     "gumball",
+     "guppy",
+     "holiday-cookie",
+     "jug-of-milk",
+     "juice-box",
+     "leash",
+     "lost-tooth",
+     "lunch-box",
+     "measuring-cup",
+     "medal",
+     "microwave-popcorn-bag",
+     "milk-carton",
+     "movie-ticket",
+     "museum-ticket",
+     "party-invitation",
+     "pet-bowl",
+     "photo-print",
+     "pitcher",
+     "planetarium-show",
+     "pony-ride",
+     "postage-stamp",
+     "present",
+     "pressed-penny",
+     "prize-box-toy",
+     "school-lunch",
+     "shoelace",
+     "sleeping-bag",
+     "stick-of-butter",
+     "timer",
+     "tomato",
+     "toothbrush",
+     "toy-box",
+     "train-ticket",
+     "valentine-card",
+     "waffle",
+     "watermelon",
+     "weekly-allowance",
+     "wheel",
+     "worm"
+    ],
+    "priceCents": [
+     500,
+     2500
+    ]
+   },
+   "setting": {
+    "kind": "setting",
+    "startsWith": "at ",
+    "words": [
+     "store",
+     "shop",
+     "sale",
+     "stand",
+     "market",
+     "fair",
+     "booth",
+     "counter",
+     "cafeteria",
+     "truck",
+     "bakery",
+     "deli",
+     "carnival",
+     "arcade",
+     "boardwalk",
+     "mall",
+     "place",
+     "restaurant",
+     "orchard",
+     "patch",
+     "movies",
+     "ball game"
+    ],
+    "fallback": [
+     "at the school store",
+     "at the fair",
+     "at the dollar store",
+     "at the corner store"
+    ],
+    "of": "object"
+   },
+   "price": {
+    "kind": "money",
+    "of": "object",
+    "step": 1
+   },
+   "have": {
+    "kind": "int",
+    "min": 200,
+    "max": 1500
+   },
+   "haveMoney": {
+    "kind": "expr",
+    "expr": "have",
+    "format": "money"
+   },
+   "perWeek": {
+    "kind": "int",
+    "min": 100,
+    "max": 500
+   },
+   "perWeekMoney": {
+    "kind": "expr",
+    "expr": "perWeek",
+    "format": "money"
+   },
+   "needMoney": {
+    "kind": "expr",
+    "expr": "price - have",
+    "format": "money"
+   }
+  },
+  "constraints": [
+   "price % 100 != 0",
+   "have % 100 != 0",
+   "price - have >= 150",
+   "perWeek % 25 == 0",
+   "price % 100 != have % 100",
+   "price - have != perWeek",
+   "price - have + perWeek != price"
+  ],
+  "operation": {
+   "op": "-"
+  },
+  "answer": {
+   "expr": "price - have",
+   "type": "money"
+  },
+  "distractors": [
+   {
+    "expr": "price - have + perWeek",
+    "mistake": "addedTheWeeklyMoney"
+   },
+   {
+    "expr": "price - have + 100",
+    "mistake": "forgotToRegroupADollar"
+   },
+   {
+    "expr": "price + have",
+    "mistake": "addedInsteadOfSubtracting"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks for the gap between the price and the savings. The weekly money is extra detail; find the difference between {haveMoney} and the price.",
+   "steps": [
+    "Find the price and the amount saved.",
+    "Subtract the savings from the price, regrouping a dollar if the cents need it.",
+    "Ignore the weekly amount: the question asks how much more is needed right now."
+   ],
+   "picture": null,
+   "example": "auto",
+   "feedback": {
+    "addedTheWeeklyMoney": "The weekly amount was mixed in. The question only asks how far the savings are from the price.",
+    "forgotToRegroupADollar": "A regrouped dollar was counted twice. Subtract the dollars again.",
+    "addedInsteadOfSubtracting": "The price and the savings were added. The gap between them is a subtraction."
+   },
+   "solution": {
+    "steps": [
+     "The {object} costs {price}, and {name} has {haveMoney}.",
+     "{price} take away {haveMoney} is {needMoney}.",
+     "{name} needs {needMoney} more."
+    ],
+    "answer": "price - have"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS",
+    "TEKS",
+    "FL B.E.S.T."
+   ],
+   "shape": "grade 4 story problem with decimal money, K-5 money framework rows 4.1 and 4.2 (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g4-budgetEnoughWithReason-hard",
+  "modeId": "money",
+  "subskill": "moneyReasoning",
+  "family": "application",
+  "structureType": "budgetEnoughWithReason",
+  "grade": "4",
+  "standards": {
+   "ccss": [
+    "4.MD.A.2"
+   ],
+   "tx": [
+    "4.4A"
+   ],
+   "fl": [
+    "MA.4.NSO.2.7"
+   ],
+   "va": [],
+   "ga": []
+  },
+  "difficulty": "hard",
+  "format": "choice",
+  "widget": null,
+  "representationType": "verbalContext",
+  "levelRange": [
+   7,
+   9
+  ],
+  "template": {
+   "prompt": "{name} has {haveMoney}. {name} wants {object1_a} for {price1} and {object2_a} for {price2} {setting}. Does {name} have enough money?"
+  },
+  "slots": {
+   "name": {
+    "kind": "name"
+   },
+   "object1": {
+    "kind": "object",
+    "skill": "money",
+    "band": "4-5",
+    "minAppeal": 2,
+    "excludeCategories": [
+     "screens-media",
+     "pets-animals",
+     "measurement-objects",
+     "time-events",
+     "travel-places"
+    ],
+    "constraints": [
+     "object1.appeal >= 3 || object1.category != 'toys-games'"
+    ],
+    "exclude": [
+     "arcade-game",
+     "arcade-token",
+     "bag-of-chips",
+     "bag-of-popcorn",
+     "bandage",
+     "bean-bag",
+     "birthday-candle",
+     "birthday-money-gift",
+     "boat-ride",
+     "book-fair-book",
+     "bumper-car",
+     "can-of-cat-food",
+     "cardboard-box",
+     "carnival-game",
+     "carnival-ticket",
+     "carousel-horse",
+     "checkerboard",
+     "cheeseburger",
+     "chick",
+     "chore",
+     "claw-machine",
+     "cone",
+     "dive-ring",
+     "family-photo",
+     "ferris-wheel-car",
+     "field-trip",
+     "field-trip-ticket",
+     "flash-card",
+     "goldfish",
+     "goody-bag",
+     "graham-cracker",
+     "gumball",
+     "guppy",
+     "holiday-cookie",
+     "jug-of-milk",
+     "juice-box",
+     "leash",
+     "lost-tooth",
+     "lunch-box",
+     "measuring-cup",
+     "medal",
+     "microwave-popcorn-bag",
+     "milk-carton",
+     "movie-ticket",
+     "museum-ticket",
+     "party-invitation",
+     "pet-bowl",
+     "photo-print",
+     "pitcher",
+     "planetarium-show",
+     "pony-ride",
+     "postage-stamp",
+     "present",
+     "pressed-penny",
+     "prize-box-toy",
+     "school-lunch",
+     "shoelace",
+     "sleeping-bag",
+     "stick-of-butter",
+     "timer",
+     "tomato",
+     "toothbrush",
+     "toy-box",
+     "train-ticket",
+     "valentine-card",
+     "waffle",
+     "watermelon",
+     "weekly-allowance",
+     "wheel",
+     "worm"
+    ],
+    "priceCents": [
+     300,
+     1200
+    ]
+   },
+   "object2": {
+    "kind": "object",
+    "skill": "money",
+    "band": "4-5",
+    "minAppeal": 2,
+    "excludeCategories": [
+     "screens-media",
+     "pets-animals",
+     "measurement-objects",
+     "time-events",
+     "travel-places"
+    ],
+    "constraints": [
+     "object2.appeal >= 3 || object2.category != 'toys-games'"
+    ],
+    "exclude": [
+     "arcade-game",
+     "arcade-token",
+     "bag-of-chips",
+     "bag-of-popcorn",
+     "bandage",
+     "bean-bag",
+     "birthday-candle",
+     "birthday-money-gift",
+     "boat-ride",
+     "book-fair-book",
+     "bumper-car",
+     "can-of-cat-food",
+     "cardboard-box",
+     "carnival-game",
+     "carnival-ticket",
+     "carousel-horse",
+     "checkerboard",
+     "cheeseburger",
+     "chick",
+     "chore",
+     "claw-machine",
+     "cone",
+     "dive-ring",
+     "family-photo",
+     "ferris-wheel-car",
+     "field-trip",
+     "field-trip-ticket",
+     "flash-card",
+     "goldfish",
+     "goody-bag",
+     "graham-cracker",
+     "gumball",
+     "guppy",
+     "holiday-cookie",
+     "jug-of-milk",
+     "juice-box",
+     "leash",
+     "lost-tooth",
+     "lunch-box",
+     "measuring-cup",
+     "medal",
+     "microwave-popcorn-bag",
+     "milk-carton",
+     "movie-ticket",
+     "museum-ticket",
+     "party-invitation",
+     "pet-bowl",
+     "photo-print",
+     "pitcher",
+     "planetarium-show",
+     "pony-ride",
+     "postage-stamp",
+     "present",
+     "pressed-penny",
+     "prize-box-toy",
+     "school-lunch",
+     "shoelace",
+     "sleeping-bag",
+     "stick-of-butter",
+     "timer",
+     "tomato",
+     "toothbrush",
+     "toy-box",
+     "train-ticket",
+     "valentine-card",
+     "waffle",
+     "watermelon",
+     "weekly-allowance",
+     "wheel",
+     "worm"
+    ],
+    "priceCents": [
+     300,
+     1200
+    ]
+   },
+   "setting": {
+    "kind": "setting",
+    "startsWith": "at ",
+    "words": [
+     "store",
+     "shop",
+     "sale",
+     "stand",
+     "market",
+     "fair",
+     "booth",
+     "counter",
+     "cafeteria",
+     "truck",
+     "bakery",
+     "deli",
+     "carnival",
+     "arcade",
+     "boardwalk",
+     "mall",
+     "place",
+     "restaurant",
+     "orchard",
+     "patch",
+     "movies",
+     "ball game"
+    ],
+    "fallback": [
+     "at the school store",
+     "at the fair",
+     "at the dollar store",
+     "at the corner store"
+    ],
+    "of": "object1"
+   },
+   "price1": {
+    "kind": "money",
+    "of": "object1",
+    "step": 1
+   },
+   "price2": {
+    "kind": "money",
+    "of": "object2",
+    "step": 1
+   },
+   "pick": {
+    "kind": "int",
+    "min": 0,
+    "max": 2
+   },
+   "have": {
+    "kind": "expr",
+    "expr": "pick == 0 ? 1000 : pick == 1 ? 1500 : 2000",
+    "format": "int"
+   },
+   "haveMoney": {
+    "kind": "expr",
+    "expr": "have",
+    "format": "money"
+   },
+   "cost": {
+    "kind": "expr",
+    "expr": "price1 + price2",
+    "format": "int"
+   },
+   "costMoney": {
+    "kind": "expr",
+    "expr": "cost",
+    "format": "money"
+   },
+   "enough": {
+    "kind": "expr",
+    "expr": "cost <= have ? 1 : 0",
+    "format": "int"
+   },
+   "diff": {
+    "kind": "expr",
+    "expr": "abs(have - cost)",
+    "format": "int"
+   },
+   "diffMoney": {
+    "kind": "expr",
+    "expr": "diff",
+    "format": "money"
+   },
+   "verdict": {
+    "kind": "expr",
+    "expr": "enough == 1 ? 'Yes, ' + money(diff) + ' is left over' : 'No, ' + money(diff) + ' short'",
+    "format": "text"
+   },
+   "flipped": {
+    "kind": "expr",
+    "expr": "enough == 1 ? 'No, ' + money(diff) + ' short' : 'Yes, ' + money(diff) + ' is left over'",
+    "format": "text"
+   },
+   "offDollar": {
+    "kind": "expr",
+    "expr": "enough == 1 ? 'Yes, ' + money(diff + 100) + ' is left over' : 'No, ' + money(diff + 100) + ' short'",
+    "format": "text"
+   },
+   "oneItem": {
+    "kind": "expr",
+    "expr": "enough == 1 ? 'Yes, ' + money(have - price1) + ' is left over' : 'No, ' + money(price1 + price2 - have + price2) + ' short'",
+    "format": "text"
+   },
+   "verdictWord": {
+    "kind": "expr",
+    "expr": "enough == 1 ? 'has enough' : 'does not have enough'",
+    "format": "text"
+   }
+  },
+  "constraints": [
+   "cost != have",
+   "diff >= 25",
+   "price1 != price2",
+   "price1 % 100 != 0",
+   "price2 % 100 != 0",
+   "cost % 100 != 0",
+   "have - price1 != diff",
+   "have - price1 != diff + 100",
+   "price1 + 2 * price2 - have != diff + 100",
+   "cost < 2 * have"
+  ],
+  "answer": {
+   "expr": "verdict",
+   "type": "text"
+  },
+  "distractors": [
+   {
+    "expr": "flipped",
+    "mistake": "flippedTheComparison"
+   },
+   {
+    "expr": "offDollar",
+    "mistake": "offByADollar"
+   },
+   {
+    "expr": "oneItem",
+    "mistake": "countedOneItem"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks whether the money in hand covers both things. Add the two prices, then compare the total to {haveMoney}.",
+   "steps": [
+    "Add the two prices, lining up the decimal points.",
+    "Compare the total to {haveMoney}.",
+    "The difference between them tells how much is extra or how much is missing."
+   ],
+   "picture": null,
+   "example": "auto",
+   "feedback": {
+    "flippedTheComparison": "Check which is bigger, the total cost or the money in hand. The bigger one decides.",
+    "offByADollar": "The difference is off by a whole dollar. Subtract the smaller amount from the larger one again, regrouping carefully.",
+    "countedOneItem": "Only one price was used. Add both prices before comparing."
+   },
+   "solution": {
+    "steps": [
+     "{price1} + {price2} = {costMoney}.",
+     "Compare {costMoney} to {haveMoney}: {name} {verdictWord}.",
+     "The difference is {diffMoney}."
+    ],
+    "answer": "verdict"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS",
+    "TEKS",
+    "FL B.E.S.T."
+   ],
+   "shape": "grade 4 story problem with decimal money, K-5 money framework rows 4.1 and 4.2 (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g4-priceListTwoKinds-moderate",
+  "modeId": "money",
+  "subskill": "moneyReasoning",
+  "family": "application",
+  "structureType": "priceListTwoKinds",
+  "grade": "4",
+  "standards": {
+   "ccss": [
+    "4.MD.A.2",
+    "4.OA.A.2"
+   ],
+   "tx": [
+    "4.4A"
+   ],
+   "fl": [
+    "MA.4.NSO.2.7"
+   ],
+   "va": [],
+   "ga": []
+  },
+  "difficulty": "moderate",
+  "format": "money",
+  "widget": null,
+  "representationType": "verbalContext",
+  "levelRange": [
+   7,
+   9
+  ],
+  "moneyStyle": "dollars",
+  "template": {
+   "prompt": "{name} buys {n1} {object1_plural} and {n2} {object2_plural} {setting}. Use the price list. How much does {name} spend?"
+  },
+  "slots": {
+   "name": {
+    "kind": "name"
+   },
+   "object1": {
+    "kind": "object",
+    "skill": "money",
+    "band": "4-5",
+    "minAppeal": 2,
+    "excludeCategories": [
+     "screens-media",
+     "pets-animals",
+     "measurement-objects",
+     "time-events",
+     "travel-places"
+    ],
+    "constraints": [
+     "object1.appeal >= 3 || object1.category != 'toys-games'"
+    ],
+    "exclude": [
+     "arcade-game",
+     "arcade-token",
+     "bag-of-chips",
+     "bag-of-popcorn",
+     "bandage",
+     "bean-bag",
+     "birthday-candle",
+     "birthday-money-gift",
+     "boat-ride",
+     "book-fair-book",
+     "bumper-car",
+     "can-of-cat-food",
+     "cardboard-box",
+     "carnival-game",
+     "carnival-ticket",
+     "carousel-horse",
+     "checkerboard",
+     "cheeseburger",
+     "chick",
+     "chore",
+     "claw-machine",
+     "cone",
+     "dive-ring",
+     "family-photo",
+     "ferris-wheel-car",
+     "field-trip",
+     "field-trip-ticket",
+     "flash-card",
+     "goldfish",
+     "goody-bag",
+     "graham-cracker",
+     "gumball",
+     "guppy",
+     "holiday-cookie",
+     "jug-of-milk",
+     "juice-box",
+     "leash",
+     "lost-tooth",
+     "lunch-box",
+     "measuring-cup",
+     "medal",
+     "microwave-popcorn-bag",
+     "milk-carton",
+     "movie-ticket",
+     "museum-ticket",
+     "party-invitation",
+     "pet-bowl",
+     "photo-print",
+     "pitcher",
+     "planetarium-show",
+     "pony-ride",
+     "postage-stamp",
+     "present",
+     "pressed-penny",
+     "prize-box-toy",
+     "school-lunch",
+     "shoelace",
+     "sleeping-bag",
+     "stick-of-butter",
+     "timer",
+     "tomato",
+     "toothbrush",
+     "toy-box",
+     "train-ticket",
+     "valentine-card",
+     "waffle",
+     "watermelon",
+     "weekly-allowance",
+     "wheel",
+     "worm"
+    ],
+    "priceCents": [
+     100,
+     500
+    ]
+   },
+   "object2": {
+    "kind": "object",
+    "skill": "money",
+    "band": "4-5",
+    "minAppeal": 2,
+    "excludeCategories": [
+     "screens-media",
+     "pets-animals",
+     "measurement-objects",
+     "time-events",
+     "travel-places"
+    ],
+    "constraints": [
+     "object2.appeal >= 3 || object2.category != 'toys-games'"
+    ],
+    "exclude": [
+     "arcade-game",
+     "arcade-token",
+     "bag-of-chips",
+     "bag-of-popcorn",
+     "bandage",
+     "bean-bag",
+     "birthday-candle",
+     "birthday-money-gift",
+     "boat-ride",
+     "book-fair-book",
+     "bumper-car",
+     "can-of-cat-food",
+     "cardboard-box",
+     "carnival-game",
+     "carnival-ticket",
+     "carousel-horse",
+     "checkerboard",
+     "cheeseburger",
+     "chick",
+     "chore",
+     "claw-machine",
+     "cone",
+     "dive-ring",
+     "family-photo",
+     "ferris-wheel-car",
+     "field-trip",
+     "field-trip-ticket",
+     "flash-card",
+     "goldfish",
+     "goody-bag",
+     "graham-cracker",
+     "gumball",
+     "guppy",
+     "holiday-cookie",
+     "jug-of-milk",
+     "juice-box",
+     "leash",
+     "lost-tooth",
+     "lunch-box",
+     "measuring-cup",
+     "medal",
+     "microwave-popcorn-bag",
+     "milk-carton",
+     "movie-ticket",
+     "museum-ticket",
+     "party-invitation",
+     "pet-bowl",
+     "photo-print",
+     "pitcher",
+     "planetarium-show",
+     "pony-ride",
+     "postage-stamp",
+     "present",
+     "pressed-penny",
+     "prize-box-toy",
+     "school-lunch",
+     "shoelace",
+     "sleeping-bag",
+     "stick-of-butter",
+     "timer",
+     "tomato",
+     "toothbrush",
+     "toy-box",
+     "train-ticket",
+     "valentine-card",
+     "waffle",
+     "watermelon",
+     "weekly-allowance",
+     "wheel",
+     "worm"
+    ],
+    "priceCents": [
+     100,
+     500
+    ]
+   },
+   "object3": {
+    "kind": "object",
+    "skill": "money",
+    "band": "4-5",
+    "minAppeal": 2,
+    "excludeCategories": [
+     "screens-media",
+     "pets-animals",
+     "measurement-objects",
+     "time-events",
+     "travel-places"
+    ],
+    "constraints": [
+     "object3.appeal >= 3 || object3.category != 'toys-games'"
+    ],
+    "exclude": [
+     "arcade-game",
+     "arcade-token",
+     "bag-of-chips",
+     "bag-of-popcorn",
+     "bandage",
+     "bean-bag",
+     "birthday-candle",
+     "birthday-money-gift",
+     "boat-ride",
+     "book-fair-book",
+     "bumper-car",
+     "can-of-cat-food",
+     "cardboard-box",
+     "carnival-game",
+     "carnival-ticket",
+     "carousel-horse",
+     "checkerboard",
+     "cheeseburger",
+     "chick",
+     "chore",
+     "claw-machine",
+     "cone",
+     "dive-ring",
+     "family-photo",
+     "ferris-wheel-car",
+     "field-trip",
+     "field-trip-ticket",
+     "flash-card",
+     "goldfish",
+     "goody-bag",
+     "graham-cracker",
+     "gumball",
+     "guppy",
+     "holiday-cookie",
+     "jug-of-milk",
+     "juice-box",
+     "leash",
+     "lost-tooth",
+     "lunch-box",
+     "measuring-cup",
+     "medal",
+     "microwave-popcorn-bag",
+     "milk-carton",
+     "movie-ticket",
+     "museum-ticket",
+     "party-invitation",
+     "pet-bowl",
+     "photo-print",
+     "pitcher",
+     "planetarium-show",
+     "pony-ride",
+     "postage-stamp",
+     "present",
+     "pressed-penny",
+     "prize-box-toy",
+     "school-lunch",
+     "shoelace",
+     "sleeping-bag",
+     "stick-of-butter",
+     "timer",
+     "tomato",
+     "toothbrush",
+     "toy-box",
+     "train-ticket",
+     "valentine-card",
+     "waffle",
+     "watermelon",
+     "weekly-allowance",
+     "wheel",
+     "worm"
+    ],
+    "priceCents": [
+     100,
+     500
+    ]
+   },
+   "setting": {
+    "kind": "setting",
+    "startsWith": "at ",
+    "words": [
+     "store",
+     "shop",
+     "sale",
+     "stand",
+     "market",
+     "fair",
+     "booth",
+     "counter",
+     "cafeteria",
+     "truck",
+     "bakery",
+     "deli",
+     "carnival",
+     "arcade",
+     "boardwalk",
+     "mall",
+     "place",
+     "restaurant",
+     "orchard",
+     "patch",
+     "movies",
+     "ball game"
+    ],
+    "fallback": [
+     "at the school store",
+     "at the fair",
+     "at the dollar store",
+     "at the corner store"
+    ],
+    "of": "object1"
+   },
+   "price1": {
+    "kind": "money",
+    "of": "object1",
+    "step": 5
+   },
+   "price2": {
+    "kind": "money",
+    "of": "object2",
+    "step": 5
+   },
+   "price3": {
+    "kind": "money",
+    "of": "object3",
+    "step": 5
+   },
+   "n1": {
+    "kind": "int",
+    "min": 2,
+    "max": 4
+   },
+   "n2": {
+    "kind": "int",
+    "min": 2,
+    "max": 3
+   },
+   "part1": {
+    "kind": "expr",
+    "expr": "n1 * price1",
+    "format": "money"
+   },
+   "part2": {
+    "kind": "expr",
+    "expr": "n2 * price2",
+    "format": "money"
+   },
+   "totalMoney": {
+    "kind": "expr",
+    "expr": "n1 * price1 + n2 * price2",
+    "format": "money"
+   }
+  },
+  "constraints": [
+   "price1 != price2",
+   "price2 != price3",
+   "price1 != price3",
+   "n1 != n2",
+   "n1 * price1 + n2 * price2 <= 3000"
+  ],
+  "operation": {
+   "op": "+"
+  },
+  "display": {
+   "priceList": {
+    "title": "'Price list'",
+    "rows": [
+     {
+      "item": "object1.singular",
+      "cents": "price1"
+     },
+     {
+      "item": "object2.singular",
+      "cents": "price2"
+     },
+     {
+      "item": "object3.singular",
+      "cents": "price3"
+     }
+    ]
+   }
+  },
+  "answer": {
+   "expr": "n1 * price1 + n2 * price2",
+   "type": "money"
+  },
+  "distractors": [
+   {
+    "expr": "price1 + price2",
+    "mistake": "countedOneOfEach"
+   },
+   {
+    "expr": "n1 * price1 + price2",
+    "mistake": "forgotToMultiplyTheSecond"
+   },
+   {
+    "expr": "n1 * price1 + n2 * price3",
+    "mistake": "readTheWrongRow"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks for the cost of two kinds of things, several of each. Read each price from the list, multiply by how many, then add the two amounts.",
+   "steps": [
+    "Find the {object1} in the list and multiply its price by how many {name} buys.",
+    "Do the same for the {object2}.",
+    "Add the two amounts."
+   ],
+   "picture": null,
+   "example": "auto",
+   "feedback": {
+    "countedOneOfEach": "Only one of each was counted. Multiply each price by how many {name} buys.",
+    "forgotToMultiplyTheSecond": "Only one {object2} was counted. Multiply its price too.",
+    "readTheWrongRow": "One price came from the wrong row. Match each thing to its own row in the list."
+   },
+   "solution": {
+    "steps": [
+     "{n1} {object1_plural} at {price1} each cost {part1}.",
+     "{n2} {object2_plural} at {price2} each cost {part2}.",
+     "{part1} + {part2} = {totalMoney}."
+    ],
+    "answer": "n1 * price1 + n2 * price2"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS",
+    "TEKS",
+    "FL B.E.S.T."
+   ],
+   "shape": "grade 4 price-list item, K-5 money framework row 5.1 (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g4-priceListChangeFromTwenty-hard",
+  "modeId": "money",
+  "subskill": "moneyReasoning",
+  "family": "application",
+  "structureType": "priceListChangeFromTwenty",
+  "grade": "4",
+  "standards": {
+   "ccss": [
+    "4.MD.A.2",
+    "4.OA.A.2"
+   ],
+   "tx": [
+    "4.4A"
+   ],
+   "fl": [
+    "MA.4.NSO.2.7"
+   ],
+   "va": [],
+   "ga": []
+  },
+  "difficulty": "hard",
+  "format": "money",
+  "widget": null,
+  "representationType": "verbalContext",
+  "levelRange": [
+   7,
+   9
+  ],
+  "moneyStyle": "dollars",
+  "template": {
+   "prompt": "{name} buys {n1} {object1_plural}, {object2_a} and {object3_a} {setting} and pays with a $20 bill. Use the price list. How much change does {name} get?"
+  },
+  "slots": {
+   "name": {
+    "kind": "name"
+   },
+   "object1": {
+    "kind": "object",
+    "skill": "money",
+    "band": "4-5",
+    "minAppeal": 2,
+    "excludeCategories": [
+     "screens-media",
+     "pets-animals",
+     "measurement-objects",
+     "time-events",
+     "travel-places"
+    ],
+    "constraints": [
+     "object1.appeal >= 3 || object1.category != 'toys-games'"
+    ],
+    "exclude": [
+     "arcade-game",
+     "arcade-token",
+     "bag-of-chips",
+     "bag-of-popcorn",
+     "bandage",
+     "bean-bag",
+     "birthday-candle",
+     "birthday-money-gift",
+     "boat-ride",
+     "book-fair-book",
+     "bumper-car",
+     "can-of-cat-food",
+     "cardboard-box",
+     "carnival-game",
+     "carnival-ticket",
+     "carousel-horse",
+     "checkerboard",
+     "cheeseburger",
+     "chick",
+     "chore",
+     "claw-machine",
+     "cone",
+     "dive-ring",
+     "family-photo",
+     "ferris-wheel-car",
+     "field-trip",
+     "field-trip-ticket",
+     "flash-card",
+     "goldfish",
+     "goody-bag",
+     "graham-cracker",
+     "gumball",
+     "guppy",
+     "holiday-cookie",
+     "jug-of-milk",
+     "juice-box",
+     "leash",
+     "lost-tooth",
+     "lunch-box",
+     "measuring-cup",
+     "medal",
+     "microwave-popcorn-bag",
+     "milk-carton",
+     "movie-ticket",
+     "museum-ticket",
+     "party-invitation",
+     "pet-bowl",
+     "photo-print",
+     "pitcher",
+     "planetarium-show",
+     "pony-ride",
+     "postage-stamp",
+     "present",
+     "pressed-penny",
+     "prize-box-toy",
+     "school-lunch",
+     "shoelace",
+     "sleeping-bag",
+     "stick-of-butter",
+     "timer",
+     "tomato",
+     "toothbrush",
+     "toy-box",
+     "train-ticket",
+     "valentine-card",
+     "waffle",
+     "watermelon",
+     "weekly-allowance",
+     "wheel",
+     "worm"
+    ],
+    "priceCents": [
+     100,
+     400
+    ]
+   },
+   "object2": {
+    "kind": "object",
+    "skill": "money",
+    "band": "4-5",
+    "minAppeal": 2,
+    "excludeCategories": [
+     "screens-media",
+     "pets-animals",
+     "measurement-objects",
+     "time-events",
+     "travel-places"
+    ],
+    "constraints": [
+     "object2.appeal >= 3 || object2.category != 'toys-games'"
+    ],
+    "exclude": [
+     "arcade-game",
+     "arcade-token",
+     "bag-of-chips",
+     "bag-of-popcorn",
+     "bandage",
+     "bean-bag",
+     "birthday-candle",
+     "birthday-money-gift",
+     "boat-ride",
+     "book-fair-book",
+     "bumper-car",
+     "can-of-cat-food",
+     "cardboard-box",
+     "carnival-game",
+     "carnival-ticket",
+     "carousel-horse",
+     "checkerboard",
+     "cheeseburger",
+     "chick",
+     "chore",
+     "claw-machine",
+     "cone",
+     "dive-ring",
+     "family-photo",
+     "ferris-wheel-car",
+     "field-trip",
+     "field-trip-ticket",
+     "flash-card",
+     "goldfish",
+     "goody-bag",
+     "graham-cracker",
+     "gumball",
+     "guppy",
+     "holiday-cookie",
+     "jug-of-milk",
+     "juice-box",
+     "leash",
+     "lost-tooth",
+     "lunch-box",
+     "measuring-cup",
+     "medal",
+     "microwave-popcorn-bag",
+     "milk-carton",
+     "movie-ticket",
+     "museum-ticket",
+     "party-invitation",
+     "pet-bowl",
+     "photo-print",
+     "pitcher",
+     "planetarium-show",
+     "pony-ride",
+     "postage-stamp",
+     "present",
+     "pressed-penny",
+     "prize-box-toy",
+     "school-lunch",
+     "shoelace",
+     "sleeping-bag",
+     "stick-of-butter",
+     "timer",
+     "tomato",
+     "toothbrush",
+     "toy-box",
+     "train-ticket",
+     "valentine-card",
+     "waffle",
+     "watermelon",
+     "weekly-allowance",
+     "wheel",
+     "worm"
+    ],
+    "priceCents": [
+     100,
+     600
+    ]
+   },
+   "object3": {
+    "kind": "object",
+    "skill": "money",
+    "band": "4-5",
+    "minAppeal": 2,
+    "excludeCategories": [
+     "screens-media",
+     "pets-animals",
+     "measurement-objects",
+     "time-events",
+     "travel-places"
+    ],
+    "constraints": [
+     "object3.appeal >= 3 || object3.category != 'toys-games'"
+    ],
+    "exclude": [
+     "arcade-game",
+     "arcade-token",
+     "bag-of-chips",
+     "bag-of-popcorn",
+     "bandage",
+     "bean-bag",
+     "birthday-candle",
+     "birthday-money-gift",
+     "boat-ride",
+     "book-fair-book",
+     "bumper-car",
+     "can-of-cat-food",
+     "cardboard-box",
+     "carnival-game",
+     "carnival-ticket",
+     "carousel-horse",
+     "checkerboard",
+     "cheeseburger",
+     "chick",
+     "chore",
+     "claw-machine",
+     "cone",
+     "dive-ring",
+     "family-photo",
+     "ferris-wheel-car",
+     "field-trip",
+     "field-trip-ticket",
+     "flash-card",
+     "goldfish",
+     "goody-bag",
+     "graham-cracker",
+     "gumball",
+     "guppy",
+     "holiday-cookie",
+     "jug-of-milk",
+     "juice-box",
+     "leash",
+     "lost-tooth",
+     "lunch-box",
+     "measuring-cup",
+     "medal",
+     "microwave-popcorn-bag",
+     "milk-carton",
+     "movie-ticket",
+     "museum-ticket",
+     "party-invitation",
+     "pet-bowl",
+     "photo-print",
+     "pitcher",
+     "planetarium-show",
+     "pony-ride",
+     "postage-stamp",
+     "present",
+     "pressed-penny",
+     "prize-box-toy",
+     "school-lunch",
+     "shoelace",
+     "sleeping-bag",
+     "stick-of-butter",
+     "timer",
+     "tomato",
+     "toothbrush",
+     "toy-box",
+     "train-ticket",
+     "valentine-card",
+     "waffle",
+     "watermelon",
+     "weekly-allowance",
+     "wheel",
+     "worm"
+    ],
+    "priceCents": [
+     100,
+     600
+    ]
+   },
+   "setting": {
+    "kind": "setting",
+    "startsWith": "at ",
+    "words": [
+     "store",
+     "shop",
+     "sale",
+     "stand",
+     "market",
+     "fair",
+     "booth",
+     "counter",
+     "cafeteria",
+     "truck",
+     "bakery",
+     "deli",
+     "carnival",
+     "arcade",
+     "boardwalk",
+     "mall",
+     "place",
+     "restaurant",
+     "orchard",
+     "patch",
+     "movies",
+     "ball game"
+    ],
+    "fallback": [
+     "at the school store",
+     "at the fair",
+     "at the dollar store",
+     "at the corner store"
+    ],
+    "of": "object1"
+   },
+   "price1": {
+    "kind": "money",
+    "of": "object1",
+    "step": 5
+   },
+   "price2": {
+    "kind": "money",
+    "of": "object2",
+    "step": 5
+   },
+   "price3": {
+    "kind": "money",
+    "of": "object3",
+    "step": 5
+   },
+   "n1": {
+    "kind": "int",
+    "min": 2,
+    "max": 3
+   },
+   "part1": {
+    "kind": "expr",
+    "expr": "n1 * price1",
+    "format": "money"
+   },
+   "cost": {
+    "kind": "expr",
+    "expr": "n1 * price1 + price2 + price3",
+    "format": "int"
+   },
+   "costMoney": {
+    "kind": "expr",
+    "expr": "cost",
+    "format": "money"
+   },
+   "changeMoney": {
+    "kind": "expr",
+    "expr": "2000 - cost",
+    "format": "money"
+   }
+  },
+  "constraints": [
+   "price1 != price2",
+   "price2 != price3",
+   "price1 != price3",
+   "cost <= 1900",
+   "cost >= 800",
+   "cost % 100 != 0"
+  ],
+  "operation": {
+   "op": "-"
+  },
+  "display": {
+   "priceList": {
+    "title": "'Price list'",
+    "rows": [
+     {
+      "item": "object1.singular",
+      "cents": "price1"
+     },
+     {
+      "item": "object2.singular",
+      "cents": "price2"
+     },
+     {
+      "item": "object3.singular",
+      "cents": "price3"
+     }
+    ]
+   }
+  },
+  "answer": {
+   "expr": "2000 - cost",
+   "type": "money"
+  },
+  "distractors": [
+   {
+    "expr": "cost",
+    "mistake": "answeredTheCost"
+   },
+   {
+    "expr": "2000 - price1 - price2 - price3",
+    "mistake": "countedOneOfTheFirst"
+   },
+   {
+    "expr": "2000 - cost + 100",
+    "mistake": "forgotToRegroupADollar"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks for change, so there are two steps: add up everything from the price list, then subtract that total from twenty dollars.",
+   "steps": [
+    "Multiply the price of the {object1} by how many {name} buys.",
+    "Add the price of the {object2} and the price of the {object3} to get the total cost.",
+    "Subtract the total cost from twenty dollars, regrouping a dollar for the cents."
+   ],
+   "picture": null,
+   "example": "auto",
+   "feedback": {
+    "answeredTheCost": "That is the total cost. The question asks for the change from twenty dollars.",
+    "countedOneOfTheFirst": "Only one {object1} was counted. Multiply its price by how many {name} buys.",
+    "forgotToRegroupADollar": "A regrouped dollar was counted twice when subtracting. Subtract the dollars again."
+   },
+   "solution": {
+    "steps": [
+     "{n1} {object1_plural} cost {part1}; with the {object2} at {price2} and the {object3} at {price3} the total is {costMoney}.",
+     "$20.00 take away {costMoney} is {changeMoney}.",
+     "{name} gets {changeMoney} in change."
+    ],
+    "answer": "2000 - cost"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS",
+    "TEKS",
+    "FL B.E.S.T."
+   ],
+   "shape": "grade 4 price-list item, K-5 money framework row 5.1 (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g4-errorAnalysisSubtract-moderate",
+  "modeId": "money",
+  "subskill": "moneyReasoning",
+  "family": "conceptual",
+  "structureType": "errorAnalysisSubtract",
+  "grade": "4",
+  "standards": {
+   "ccss": [
+    "4.MD.A.2"
+   ],
+   "tx": [
+    "4.4A"
+   ],
+   "fl": [
+    "MA.4.NSO.2.7"
+   ],
+   "va": [],
+   "ga": []
+  },
+  "difficulty": "moderate",
+  "format": "choice",
+  "widget": null,
+  "representationType": "symbolic",
+  "levelRange": [
+   7,
+   9
+  ],
+  "moneyStyle": "dollars",
+  "template": {
+   "prompt": "{name} worked out {aMoney} - {bMoney} and wrote {wrongMoney}. That answer is wrong. Which mistake did {name} make?"
+  },
+  "slots": {
+   "name": {
+    "kind": "name"
+   },
+   "a": {
+    "kind": "int",
+    "min": 500,
+    "max": 2000
+   },
+   "b": {
+    "kind": "int",
+    "min": 105,
+    "max": 995
+   },
+   "aMoney": {
+    "kind": "expr",
+    "expr": "a",
+    "format": "money"
+   },
+   "bMoney": {
+    "kind": "expr",
+    "expr": "b",
+    "format": "money"
+   },
+   "m": {
+    "kind": "int",
+    "min": 0,
+    "max": 2
+   },
+   "wrong": {
+    "kind": "expr",
+    "expr": "m == 0 ? a + b : m == 1 ? a - b + 100 : (floor(a / 100) - floor(b / 100)) * 100 + (b % 100 - a % 100)",
+    "format": "int"
+   },
+   "wrongMoney": {
+    "kind": "expr",
+    "expr": "wrong",
+    "format": "money"
+   },
+   "rightMoney": {
+    "kind": "expr",
+    "expr": "a - b",
+    "format": "money"
+   },
+   "t0": {
+    "kind": "expr",
+    "expr": "'Added the two amounts instead of subtracting'",
+    "format": "text"
+   },
+   "t1": {
+    "kind": "expr",
+    "expr": "'Regrouped a dollar as cents but did not take it off the dollars'",
+    "format": "text"
+   },
+   "t2": {
+    "kind": "expr",
+    "expr": "'Took the smaller cents from the larger cents instead of regrouping'",
+    "format": "text"
+   },
+   "verdict": {
+    "kind": "expr",
+    "expr": "m == 0 ? t0 : m == 1 ? t1 : t2",
+    "format": "text"
+   },
+   "other1": {
+    "kind": "expr",
+    "expr": "m == 0 ? t1 : t0",
+    "format": "text"
+   },
+   "other2": {
+    "kind": "expr",
+    "expr": "m == 2 ? t1 : t2",
+    "format": "text"
+   },
+   "none": {
+    "kind": "expr",
+    "expr": "'No mistake, the answer is right'",
+    "format": "text"
+   }
+  },
+  "constraints": [
+   "a % 100 != 0",
+   "b % 100 != 0",
+   "a % 100 < b % 100",
+   "b % 100 - a % 100 != 50",
+   "a - b >= 100"
+  ],
+  "answer": {
+   "expr": "verdict",
+   "type": "text"
+  },
+  "distractors": [
+   {
+    "expr": "other1",
+    "mistake": "namedADifferentMistake"
+   },
+   {
+    "expr": "other2",
+    "mistake": "namedAnotherMistake"
+   },
+   {
+    "expr": "none",
+    "mistake": "acceptedTheWrongAnswer"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks which slip led to the wrong answer. Work the subtraction yourself, then compare your answer with {wrongMoney} to see how it went wrong.",
+   "steps": [
+    "Subtract {bMoney} from {aMoney} yourself: the cents on top are fewer, so regroup a dollar first.",
+    "Compare your answer with {wrongMoney}: is it a whole dollar off, far too big, or off in the cents?",
+    "Match that difference to one slip."
+   ],
+   "picture": null,
+   "example": "auto",
+   "feedback": {
+    "namedADifferentMistake": "That slip would give a different wrong answer. Work the problem and compare.",
+    "namedAnotherMistake": "That slip would give a different wrong answer. Work the problem and compare.",
+    "acceptedTheWrongAnswer": "The answer is not right. Work the subtraction yourself and compare."
+   },
+   "solution": {
+    "steps": [
+     "The correct difference is {aMoney} - {bMoney} = {rightMoney}.",
+     "{name} wrote {wrongMoney}.",
+     "That is the result of this slip: {verdict}."
+    ],
+    "answer": "verdict"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS",
+    "TEKS",
+    "FL B.E.S.T."
+   ],
+   "shape": "grade 4 error-analysis item, K-5 money framework row 7.2 (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g4-errorAnalysisCorrect-hard",
+  "modeId": "money",
+  "subskill": "moneyReasoning",
+  "family": "conceptual",
+  "structureType": "errorAnalysisCorrect",
+  "grade": "4",
+  "standards": {
+   "ccss": [
+    "4.MD.A.2"
+   ],
+   "tx": [
+    "4.4A"
+   ],
+   "fl": [
+    "MA.4.NSO.2.7"
+   ],
+   "va": [],
+   "ga": []
+  },
+  "difficulty": "hard",
+  "format": "money",
+  "widget": null,
+  "representationType": "symbolic",
+  "levelRange": [
+   7,
+   9
+  ],
+  "moneyStyle": "dollars",
+  "template": {
+   "prompt": "{name} says that {aMoney} - {bMoney} = {wrongMoney}. {name} forgot to regroup. What is the correct answer?"
+  },
+  "slots": {
+   "name": {
+    "kind": "name"
+   },
+   "a": {
+    "kind": "int",
+    "min": 500,
+    "max": 2000
+   },
+   "b": {
+    "kind": "int",
+    "min": 105,
+    "max": 995
+   },
+   "aMoney": {
+    "kind": "expr",
+    "expr": "a",
+    "format": "money"
+   },
+   "bMoney": {
+    "kind": "expr",
+    "expr": "b",
+    "format": "money"
+   },
+   "wrong": {
+    "kind": "expr",
+    "expr": "(floor(a / 100) - floor(b / 100)) * 100 + (b % 100 - a % 100)",
+    "format": "int"
+   },
+   "wrongMoney": {
+    "kind": "expr",
+    "expr": "wrong",
+    "format": "money"
+   },
+   "rightMoney": {
+    "kind": "expr",
+    "expr": "a - b",
+    "format": "money"
+   }
+  },
+  "constraints": [
+   "a % 100 != 0",
+   "b % 100 != 0",
+   "a % 100 < b % 100",
+   "b % 100 - a % 100 != 50",
+   "a - b >= 100",
+   "a - b + 100 != wrong",
+   "a - b - 100 != wrong"
+  ],
+  "operation": {
+   "op": "-"
+  },
+  "answer": {
+   "expr": "a - b",
+   "type": "money"
+  },
+  "distractors": [
+   {
+    "expr": "wrong",
+    "mistake": "keptTheWrongAnswer"
+   },
+   {
+    "expr": "a - b + 100",
+    "mistake": "regroupedButKeptTheDollar"
+   },
+   {
+    "expr": "a - b - 100",
+    "mistake": "regroupedTwice"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks for the correct difference. The cents on top are fewer than the cents below, so regroup one dollar as one hundred cents before subtracting.",
+   "steps": [
+    "Line up the decimal points.",
+    "Take one dollar from the top dollars and add one hundred to the top cents.",
+    "Subtract the cents, then subtract the dollars."
+   ],
+   "picture": null,
+   "example": "auto",
+   "feedback": {
+    "keptTheWrongAnswer": "That is the answer with the slip in it. Regroup a dollar before subtracting the cents.",
+    "regroupedButKeptTheDollar": "The regrouped dollar was still counted in the dollars. Take it off.",
+    "regroupedTwice": "Only one dollar needed regrouping. Check the dollars again."
+   },
+   "solution": {
+    "steps": [
+     "Regroup one dollar of {aMoney} as one hundred cents.",
+     "Subtract the cents, then the dollars.",
+     "{aMoney} - {bMoney} = {rightMoney}."
+    ],
+    "answer": "a - b"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS",
+    "TEKS",
+    "FL B.E.S.T."
+   ],
+   "shape": "grade 4 error-analysis item, K-5 money framework row 7.2 (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g4-errorAnalysisAdd-hard",
+  "modeId": "money",
+  "subskill": "moneyReasoning",
+  "family": "conceptual",
+  "structureType": "errorAnalysisAdd",
+  "grade": "4",
+  "standards": {
+   "ccss": [
+    "4.MD.A.2"
+   ],
+   "tx": [
+    "4.4A"
+   ],
+   "fl": [
+    "MA.4.NSO.2.7"
+   ],
+   "va": [],
+   "ga": []
+  },
+  "difficulty": "hard",
+  "format": "money",
+  "widget": null,
+  "representationType": "symbolic",
+  "levelRange": [
+   7,
+   9
+  ],
+  "moneyStyle": "dollars",
+  "template": {
+   "prompt": "{name} adds {aMoney} and {bMoney} and gets {wrongMoney}. {name} forgot to carry the extra dollar from the cents. What is the correct sum?"
+  },
+  "slots": {
+   "name": {
+    "kind": "name"
+   },
+   "a": {
+    "kind": "int",
+    "min": 105,
+    "max": 1495
+   },
+   "b": {
+    "kind": "int",
+    "min": 105,
+    "max": 995
+   },
+   "aMoney": {
+    "kind": "expr",
+    "expr": "a",
+    "format": "money"
+   },
+   "bMoney": {
+    "kind": "expr",
+    "expr": "b",
+    "format": "money"
+   },
+   "wrong": {
+    "kind": "expr",
+    "expr": "a + b - 100",
+    "format": "int"
+   },
+   "wrongMoney": {
+    "kind": "expr",
+    "expr": "wrong",
+    "format": "money"
+   },
+   "rightMoney": {
+    "kind": "expr",
+    "expr": "a + b",
+    "format": "money"
+   }
+  },
+  "constraints": [
+   "a % 100 != 0",
+   "b % 100 != 0",
+   "a % 100 + b % 100 > 100",
+   "a != b",
+   "(a + b) % 100 != 0"
+  ],
+  "operation": {
+   "op": "+"
+  },
+  "answer": {
+   "expr": "a + b",
+   "type": "money"
+  },
+  "distractors": [
+   {
+    "expr": "wrong",
+    "mistake": "keptTheWrongAnswer"
+   },
+   {
+    "expr": "a + b + 100",
+    "mistake": "carriedTwice"
+   },
+   {
+    "expr": "a + b - 10",
+    "mistake": "carriedTenCentsOnly"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks for the correct sum. The cents add up to more than one hundred, so one whole dollar moves over to the dollars.",
+   "steps": [
+    "Add the cents. When they pass one hundred, keep the part over one hundred as cents.",
+    "Carry one dollar to the dollars.",
+    "Add the dollars, including the carried one."
+   ],
+   "picture": null,
+   "example": "auto",
+   "feedback": {
+    "keptTheWrongAnswer": "That is the sum with the slip in it. The cents make an extra dollar that must be carried.",
+    "carriedTwice": "Only one dollar is carried. Add the dollars again.",
+    "carriedTenCentsOnly": "A whole dollar is carried, not ten cents. One hundred cents is one dollar."
+   },
+   "solution": {
+    "steps": [
+     "Add the cents of {aMoney} and {bMoney}; they pass one hundred, so carry one dollar.",
+     "Add the dollars with the carried one.",
+     "{aMoney} + {bMoney} = {rightMoney}."
+    ],
+    "answer": "a + b"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS",
+    "TEKS",
+    "FL B.E.S.T."
+   ],
+   "shape": "grade 4 error-analysis item, K-5 money framework row 7.2 (2026-09-28)"
+  }
+ },
+ {
+  "id": "money-g4-multiplyPrice-moderate",
+  "modeId": "money",
+  "subskill": "moneyReasoning",
+  "family": "application",
+  "structureType": "multiplyPrice",
+  "grade": "4",
+  "standards": {
+   "ccss": [
+    "4.MD.A.2",
+    "4.OA.A.2"
+   ],
+   "tx": [
+    "4.4A"
+   ],
+   "fl": [
+    "MA.4.NSO.2.7"
+   ],
+   "va": [],
+   "ga": []
+  },
+  "difficulty": "moderate",
+  "format": "money",
+  "widget": null,
+  "representationType": "verbalContext",
+  "levelRange": [
+   7,
+   9
+  ],
+  "moneyStyle": "dollars",
+  "template": {
+   "prompt": "Each {object} costs {price} {setting}. {name} buys {n} of them. How much does {name} pay?"
+  },
+  "slots": {
+   "name": {
+    "kind": "name"
+   },
+   "object": {
+    "kind": "object",
+    "skill": "money",
+    "band": "4-5",
+    "minAppeal": 2,
+    "excludeCategories": [
+     "screens-media",
+     "pets-animals",
+     "measurement-objects",
+     "time-events",
+     "travel-places"
+    ],
+    "constraints": [
+     "object.appeal >= 3 || object.category != 'toys-games'"
+    ],
+    "exclude": [
+     "arcade-game",
+     "arcade-token",
+     "bag-of-chips",
+     "bag-of-popcorn",
+     "bandage",
+     "bean-bag",
+     "birthday-candle",
+     "birthday-money-gift",
+     "boat-ride",
+     "book-fair-book",
+     "bumper-car",
+     "can-of-cat-food",
+     "cardboard-box",
+     "carnival-game",
+     "carnival-ticket",
+     "carousel-horse",
+     "checkerboard",
+     "cheeseburger",
+     "chick",
+     "chore",
+     "claw-machine",
+     "cone",
+     "dive-ring",
+     "family-photo",
+     "ferris-wheel-car",
+     "field-trip",
+     "field-trip-ticket",
+     "flash-card",
+     "goldfish",
+     "goody-bag",
+     "graham-cracker",
+     "gumball",
+     "guppy",
+     "holiday-cookie",
+     "jug-of-milk",
+     "juice-box",
+     "leash",
+     "lost-tooth",
+     "lunch-box",
+     "measuring-cup",
+     "medal",
+     "microwave-popcorn-bag",
+     "milk-carton",
+     "movie-ticket",
+     "museum-ticket",
+     "party-invitation",
+     "pet-bowl",
+     "photo-print",
+     "pitcher",
+     "planetarium-show",
+     "pony-ride",
+     "postage-stamp",
+     "present",
+     "pressed-penny",
+     "prize-box-toy",
+     "school-lunch",
+     "shoelace",
+     "sleeping-bag",
+     "stick-of-butter",
+     "timer",
+     "tomato",
+     "toothbrush",
+     "toy-box",
+     "train-ticket",
+     "valentine-card",
+     "waffle",
+     "watermelon",
+     "weekly-allowance",
+     "wheel",
+     "worm"
+    ],
+    "priceCents": [
+     100,
+     600
+    ]
+   },
+   "setting": {
+    "kind": "setting",
+    "startsWith": "at ",
+    "words": [
+     "store",
+     "shop",
+     "sale",
+     "stand",
+     "market",
+     "fair",
+     "booth",
+     "counter",
+     "cafeteria",
+     "truck",
+     "bakery",
+     "deli",
+     "carnival",
+     "arcade",
+     "boardwalk",
+     "mall",
+     "place",
+     "restaurant",
+     "orchard",
+     "patch",
+     "movies",
+     "ball game"
+    ],
+    "fallback": [
+     "at the school store",
+     "at the fair",
+     "at the dollar store",
+     "at the corner store"
+    ],
+    "of": "object"
+   },
+   "price": {
+    "kind": "money",
+    "of": "object",
+    "step": 1
+   },
+   "n": {
+    "kind": "int",
+    "min": 3,
+    "max": 6
+   },
+   "totalMoney": {
+    "kind": "expr",
+    "expr": "n * price",
+    "format": "money"
+   }
+  },
+  "constraints": [
+   "price % 100 != 0",
+   "n * price <= 3000"
+  ],
+  "operation": {
+   "op": "*"
+  },
+  "answer": {
+   "expr": "n * price",
+   "type": "money"
+  },
+  "distractors": [
+   {
+    "expr": "(n - 1) * price",
+    "mistake": "countedOneFewer"
+   },
+   {
+    "expr": "(n + 1) * price",
+    "mistake": "countedOneExtra"
+   },
+   {
+    "expr": "n * price - 100",
+    "mistake": "droppedACarriedDollar"
+   }
+  ],
+  "hint": {
+   "nudge": "The question asks for the cost of several things at one price. Multiply the price by how many, or add the price that many times.",
+   "steps": [
+    "Multiply the cents part first and carry any whole dollars.",
+    "Multiply the dollars, then add what was carried.",
+    "Check by adding the price up that many times."
+   ],
+   "picture": null,
+   "example": "auto",
+   "feedback": {
+    "countedOneFewer": "That pays for one {object} too few. Count again how many {name} buys.",
+    "countedOneExtra": "That pays for one {object} too many. Count again how many {name} buys.",
+    "droppedACarriedDollar": "The cents made an extra dollar that was not added on. Carry it to the dollars."
+   },
+   "solution": {
+    "steps": [
+     "Each {object} costs {price}.",
+     "{n} of them cost {price} multiplied by {n}.",
+     "{name} pays {totalMoney}."
+    ],
+    "answer": "n * price"
+   }
+  },
+  "provenance": {
+   "author": "larkit",
+   "checkedAgainst": [
+    "CCSS",
+    "TEKS",
+    "FL B.E.S.T."
+   ],
+   "shape": "grade 4 story problem with decimal money, K-5 money framework rows 4.1 and 4.2 (2026-09-28)"
+  }
+ }
+]

@@ -248,6 +248,9 @@ function divisionLines(f) {
 // operation that finds it, on the item's own numbers: count up to the total,
 // think addition, count by the factor, think multiplication.
 function missingLines(f) {
+  // Adding or multiplying by a missing zero: nothing to count up through.
+  if (f.op === "add" && f.b === 0) return ["The total is the same as the first number."];
+  if (f.op === "mul" && f.b === 0) return ["Zero groups, or groups of zero, make zero."];
   if (f.op === "add") return [`Count up from ${f.a} to ${f.answer}.`, "Count up from the first number to the total."];
   if (f.op === "sub") return [`Think addition: ${f.answer} and what make ${f.a}?`, "Think addition to find the missing number."];
   if (f.op === "mul") {
@@ -263,7 +266,10 @@ function missingLines(f) {
  */
 export function factNudge(f, format = "plain") {
   const asked = format === "missing" ? f.b : f.answer;
-  const entries = format === "missing" ? missingLines(f) : f.op === "div" ? divisionLines(f) : LINES[f.op][f.group];
+  // A zero fact in the 11s and 12s row gets the zero rule, not the row's
+  // "10 groups and 2 more".
+  const group = f.op === "mul" && (f.a === 0 || f.b === 0) ? 1 : f.group;
+  const entries = format === "missing" ? missingLines(f) : f.op === "div" ? divisionLines(f) : LINES[f.op][group];
   const lines = entries.map(asLine);
   const ok = lines.find((l) => !lineGivesAway(l, asked));
   // The last line of every group has no numbers; the zero rules state the
@@ -289,7 +295,7 @@ const NUMBERLESS_STEPS = {
 const MISSING_NUMBERLESS = {
   add: ["Start at the first number.", "Count up to the total.", "The hops are the missing number."],
   sub: ["Start at what is left.", "Count up to the first number.", "The hops are the missing number."],
-  mul: ["Count by the first number until you reach the total.", "Count how many times you counted."],
+  mul: ["Skip count by the first number.", "Stop when you say the total.", "Count how many numbers you said."],
   div: ["Think multiplication: the answer times what makes the first number?", "That number is the one missing."],
 };
 
@@ -387,19 +393,26 @@ function mulSteps({ a, b, group }) {
 
 function divSteps({ a: p, b }) {
   if (p === 0) return ["There is nothing to share.", "Zero shared into groups leaves nothing in each group."];
-  if (b === 1) return ["Dividing by 1 leaves the number as it is.", "One group gets all of it."];
+  if (b === 1) return ["Picture sharing it into one group.", "That one group gets all of it."];
   if (p === b) return [`How many groups of ${b} fit in ${p}?`, "Count the groups."];
   return [`Think multiplication: ${b} times what is ${p}?`, `Count by ${b}s until you reach ${p}.`, `Count how many ${b}s you said.`];
 }
 
 function missingSteps(f) {
-  if (f.op === "add") return f.a === 0 ? ["Zero plus a number is that number.", "Say the total."] : [`Start at ${f.a}.`, `Count up to ${f.answer}.`, "The hops are the missing number."];
+  if (f.op === "add") {
+    if (f.b === 0) return ["The number did not change.", "What can you add and change nothing?"];
+    if (f.a === 0) return ["Zero plus a number is that number.", "Say the total."];
+    return [`Start at ${f.a}.`, `Count up to ${f.answer}.`, "The hops are the missing number."];
+  }
   if (f.op === "sub") {
     if (f.b === 0) return ["The number did not change.", "What can you take away and change nothing?"];
     if (f.answer === 0) return ["Nothing is left.", "So everything was taken away."];
     return [`Start at ${f.answer}.`, `Count up to ${f.a}.`, "The hops are the missing number."];
   }
-  if (f.op === "mul") return [`Count by ${f.a}s until you reach ${f.answer}.`, `Count how many ${f.a}s you said.`];
+  if (f.op === "mul") {
+    if (f.b === 0) return ["The total is zero.", "What times a number makes zero?"];
+    return [`Say the ${f.a}s, starting at ${f.a}.`, `Stop when you say ${f.answer}.`, `Count how many ${f.a}s you said.`];
+  }
   return [`Think: ${f.answer} times what is ${f.a}?`, `Count by ${f.answer}s until you reach ${f.a}.`, `Count how many ${f.answer}s you said.`];
 }
 

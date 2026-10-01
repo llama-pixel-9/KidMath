@@ -104,6 +104,8 @@ describe("the fact rows", () => {
         const asked = format === "missing" ? f.b : f.answer;
         const hint = factHint(f, format);
         expect(hint.steps.length, `${f.id} ${format}`).toBeGreaterThanOrEqual(2);
+        // The steps add to the nudge; none says it again.
+        expect(hint.steps, `${f.id} ${format}`).not.toContain(hint.nudge);
         expect(validateHint(hint).errors, `${f.id} ${format}`).toEqual([]);
         // A true-or-false claim is judged, so its total is not a secret; its
         // steps hold no numbers at all.

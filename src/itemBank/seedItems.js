@@ -50777,10 +50777,10 @@ export const SEED_ITEMS = [
   "version": 2,
   "blueprintId": "facts-add-zero-to5",
   "hint": {
-   "nudge": "Count up from the first number to the total.",
+   "nudge": "The total is the same as the first number.",
    "steps": [
-    "Zero plus a number is that number.",
-    "Say the total."
+    "The number did not change.",
+    "What can you add and change nothing?"
    ],
    "picture": {
     "kind": "numberLine",
@@ -52039,7 +52039,8 @@ export const SEED_ITEMS = [
   "hint": {
    "nudge": "Count by 3s until you reach 27.",
    "steps": [
-    "Count by 3s until you reach 27.",
+    "Say the 3s, starting at 3.",
+    "Stop when you say 27.",
     "Count how many 3s you said."
    ]
   },
@@ -52102,7 +52103,8 @@ export const SEED_ITEMS = [
   "hint": {
    "nudge": "Count by 6s until you reach 60.",
    "steps": [
-    "Count by 6s until you reach 60.",
+    "Say the 6s, starting at 6.",
+    "Stop when you say 60.",
     "Count how many 6s you said."
    ]
   },
@@ -52165,7 +52167,8 @@ export const SEED_ITEMS = [
   "hint": {
    "nudge": "Count by 9s until you reach 99.",
    "steps": [
-    "Count by 9s until you reach 99.",
+    "Say the 9s, starting at 9.",
+    "Stop when you say 99.",
     "Count how many 9s you said."
    ]
   },

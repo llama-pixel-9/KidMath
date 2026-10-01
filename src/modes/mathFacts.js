@@ -1,6 +1,6 @@
 import { createQuestionMetadata } from "./itemMetadata";
 import { factsForLevel, opsForLevel } from "../facts/factSets.js";
-import { factQuestion, formatApplies } from "../facts/factItems.js";
+import { FORMAT_FAMILY, factQuestion, formatApplies } from "../facts/factItems.js";
 
 /**
  * Math Facts: the basic facts as their own topic (fact fluency plan B3), so
@@ -35,6 +35,37 @@ const STANDARD_REFS = {
 
 const pick = (list) => list[Math.floor(Math.random() * list.length)];
 
+/**
+ * One fact in one format as a served question, with its metadata. The
+ * question names its fact and format, so the practice log can credit the
+ * kid's per-fact mark (src/facts/factMarks.js) without a bank row id. They
+ * sit on the question, not in metadata: a bank question takes this
+ * generator's metadata as its scaffold, and would inherit a random fact.
+ */
+export function buildFactQuestion(fact, format, level, { truthy = true, itemFamily = FORMAT_FAMILY[format] } = {}) {
+  const { op } = fact;
+  const question = factQuestion(fact, format, { truthy });
+  question.level = level;
+  question.metadata = createQuestionMetadata({
+    modeId: "mathFacts",
+    level,
+    domain: "OA",
+    cluster: op === "add" || op === "sub" ? "Add and subtract within 20" : "Multiply and divide within 100",
+    subskill: fact.subskill,
+    itemFamily,
+    cognitiveDemand: "DOK1",
+    representation: "symbolic",
+    mathPractices: ["MP7", "MP8"],
+    standardRefs: STANDARD_REFS[op],
+    misconceptionTags: [],
+    blueprintId: fact.rowId,
+    structureType: `${op}-${format}`,
+  });
+  question.factId = fact.id;
+  question.factFormat = format;
+  return question;
+}
+
 export default {
   id: "mathFacts",
   label: "Math Facts",
@@ -63,25 +94,7 @@ export default {
     const facts = factsForLevel(level, op);
     const format = pick(FORMATS_BY_FAMILY[itemFamily].filter((fmt) => facts.some((f) => formatApplies(f, fmt))));
     const fact = pick(facts.filter((f) => formatApplies(f, format)));
-    const question = factQuestion(fact, format, { truthy: Math.random() < 0.5 });
-
-    question.level = level;
-    question.metadata = createQuestionMetadata({
-      modeId: "mathFacts",
-      level,
-      domain: "OA",
-      cluster: op === "add" || op === "sub" ? "Add and subtract within 20" : "Multiply and divide within 100",
-      subskill: fact.subskill,
-      itemFamily,
-      cognitiveDemand: "DOK1",
-      representation: "symbolic",
-      mathPractices: ["MP7", "MP8"],
-      standardRefs: STANDARD_REFS[op],
-      misconceptionTags: [],
-      blueprintId: fact.rowId,
-      structureType: `${op}-${format}`,
-    });
-    return question;
+    return buildFactQuestion(fact, format, level, { truthy: Math.random() < 0.5, itemFamily });
   },
 
   // Typed answers need no options; true or false brings its own two.

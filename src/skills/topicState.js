@@ -14,6 +14,7 @@
  *   mastery        saved, else rebuilt from the practice log, so a kid who
  *                  already did the work gets the credit (and the nomination).
  */
+import { FACTS_KEY, mergeFactMarks } from "../facts/factMarks.js";
 import { GRADES } from "./catalog.js";
 import { STATES, deriveMastery, practiceOrder, stateOf, summarize } from "./mastery.js";
 import { clampGrade, gradeForModeLevel, nextTopicGrade, openGrades, playSkillById, skillsForPlay, topicGrades } from "./play.js";
@@ -87,6 +88,10 @@ export function larkitPicks(topic) {
 export function mergeTopicState(cloud = {}, local = {}) {
   const mastery = { ...(cloud.skillMastery || {}) };
   for (const [id, entry] of Object.entries(local.skillMastery || {})) {
+    if (id === FACTS_KEY) {
+      mastery[id] = mergeFactMarks(mastery[id], entry);
+      continue;
+    }
     const theirs = mastery[id];
     const mine = entry.state === STATES.MASTERED ? 2 : 1;
     const other = theirs ? (theirs.state === STATES.MASTERED ? 2 : 1) : 0;

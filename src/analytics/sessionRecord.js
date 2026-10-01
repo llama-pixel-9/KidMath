@@ -79,6 +79,9 @@ export function appendAttempt(record, { question, submitted, correct, wasRetry, 
     itemId: question?.metadata?.itemId || null,
     // The skill this question was served for — what mastery is credited to.
     ...(question?.skillId ? { skillId: question.skillId } : {}),
+    // A Math Facts question's fact and format — what its fast mark is
+    // credited to (facts/factMarks.js; a bank row's id says the same).
+    ...(question?.factId ? { factId: question.factId, factFormat: question.factFormat || null } : {}),
     // The kid opened the hint pane before answering (feature: hints).
     hint: Boolean(hintUsed),
   };

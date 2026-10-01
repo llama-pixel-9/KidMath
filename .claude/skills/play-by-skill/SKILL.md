@@ -54,6 +54,24 @@ masterySnapshot, challenge })`. Without skill options it is the ladder session.
 - **A skill session NEVER moves the saved `level`.** `MathExplorer` saves the
   stored level back. Pinned by e2e.
 
+## Math Facts practice (`src/facts/factPractice.js`, `factMarks.js`)
+A Math Facts skill session (not its Fledging Flight) picks FACTS, not bank
+rows: the skill's plan rows in strategy order, the first rows not yet all
+fast in focus (≥8 facts), every 4th question of a skill a review fact from
+the rows before, then its turnaround asked plain (5 + 8 right after 8 + 5;
+it does not take a turn). Each fact is served from its bank row
+(`mathFacts-v2-<fact>-<format>`) when in memory, else built by
+`buildFactQuestion` — same payload. ~20 questions unless the caller sets a
+size. The question carries `factId` / `factFormat` (top level, never in
+metadata: a bank question inherits the generator's metadata scaffold), and
+the practice log copies them onto the attempt.
+The per-fact **fast** mark: right within 3 s (5 s for K and Grade 1 sessions)
+on 2 different days, recall formats only (plain, stacked, missing), no
+retries, no hint-assisted right answers. It lives in the Math Facts mastery
+map under `__facts` (keyed by trackKey), folded by the same `applySession`,
+merged per fact on sign-in, and **never gates a grade or a skill star**.
+Shown on the topic sheet, the end card and the parent report.
+
 ## Mastery (`src/skills/mastery.js`) — pure, for iOS too
 One reducer, `applySession(map, sessionRecord)`; `deriveMastery` is its fold
 over the practice log (the backfill for kids who played before skills, and

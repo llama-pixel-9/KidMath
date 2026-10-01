@@ -1,7 +1,10 @@
 import { getModeConfig, MODE_IDS } from "../modes";
 import { gradeSpanFor } from "../engagement/gradeSpans.js";
 import { subskillLabel } from "./subskillLabels.js";
+import { FACTS_KEY } from "../facts/factMarks.js";
+import { skillFactLine } from "../facts/factPractice.js";
 import { GRADE_LABELS, TOPIC_LABELS } from "../skills/catalog.js";
+import { skillById } from "../skills/index.js";
 import { STATES, deriveMastery, progressToward, stateOf, summarize } from "../skills/mastery.js";
 import { GRADE_UP } from "../skills/topicState.js";
 import { gradeForModeLevel, nextTopicGrade, playSkills, skillsForPlay, topicGrades } from "../skills/play.js";
@@ -156,6 +159,10 @@ export function skillStanding(modeId, levelNow, progress, mastery, masteryBefore
       attempts: entry?.attempts ?? 0,
       accuracy: entry ? pct(entry.correct, entry.attempts) : null,
       needsReview: Boolean(entry?.needsReview),
+      // Play-only skills (Math Facts) have no worksheet to print.
+      printable: Boolean(skillById(skill.id)),
+      // Math Facts: "14 of 36 facts fast" (never part of mastery).
+      ...(modeId === "mathFacts" ? { facts: skillFactLine(skill, mastery?.[FACTS_KEY]) } : {}),
     };
   });
   const shaky = list
@@ -306,7 +313,7 @@ function recommendations(modes, strugglesList, totals) {
     const skill = mode.skills.weakest;
     out.push({
       kind: "focus",
-      skillId: skill.id,
+      ...(skill.printable ? { skillId: skill.id } : {}),
       text: `${mode.skills.topicLabel}: "${skill.title}" is the shaky spot (${skill.accuracy}% right on ${skill.attempts} tries). A few minutes there will help most.`,
     });
   }

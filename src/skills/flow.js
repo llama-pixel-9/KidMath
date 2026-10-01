@@ -8,6 +8,8 @@
  * `context` everywhere = { profileGrade, sessions } — the kid's profile grade
  * and their practice log (used only to rebuild mastery a store is missing).
  */
+import { FACTS_KEY } from "../facts/factMarks.js";
+import { factStanding, skillFactLine } from "../facts/factPractice.js";
 import { GRADE_LABELS, TOPIC_LABELS } from "./catalog.js";
 import { MASTERY_RULE, STATES, applySession, stateOf } from "./mastery.js";
 import { nextTopicGrade, playSkillById, skillsForPlay, topicGrades } from "./play.js";
@@ -83,7 +85,15 @@ export function topicSheetModel(mode, progress = {}, context = {}, shownGrade = 
     practiceRequest: pinned ? { skill: pinned.id } : { mix: true, grade },
     skills: view.skills.map((skill) => {
       const right = rightCount(topic.mastery, skill.id);
-      return { ...skill, right, goal: MASTERY_RULE.minAttempts, stateLabel: stateLabel(skill, right), statusText: statusText(skill, right) };
+      return {
+        ...skill,
+        right,
+        goal: MASTERY_RULE.minAttempts,
+        stateLabel: stateLabel(skill, right),
+        statusText: statusText(skill, right),
+        // Math Facts: the per-fact mark, beside (never instead of) mastery.
+        ...(mode === "mathFacts" ? { facts: skillFactLine(playSkillById(skill.id), topic.mastery[FACTS_KEY]) } : {}),
+      };
     }),
     mastered: view.mastered,
     total: view.total,
@@ -199,6 +209,9 @@ export function settleSkillSession(mode, progress = {}, context = {}, session, c
         .filter(Boolean),
       gradeUp: labelled,
       gradeUpNote: gradeUpNote(labelled, gradeLabel, topicLabel),
+      ...(mode === "mathFacts" && !session.challenge
+        ? { facts: factStanding(session.skillIds.map(playSkillById), before.mastery[FACTS_KEY], skillMastery[FACTS_KEY]) }
+        : {}),
     },
   };
 }

@@ -228,10 +228,15 @@ export default function GrownUpsPanel({ open, onClose }) {
                             {standing.gradeLabel} · {standing.mastered} of {standing.total} skills mastered
                             {standing.weakest && (
                               <span className="block text-[11px] font-semibold text-slate-400">
-                                Shaky: {standing.weakest.title} ·{" "}
-                                <Link to={`/worksheets?skill=${standing.weakest.id}`} className="text-teal underline underline-offset-2" onClick={onClose}>
-                                  print
-                                </Link>
+                                Shaky: {standing.weakest.title}
+                                {standing.weakest.printable && (
+                                  <>
+                                    {" · "}
+                                    <Link to={`/worksheets?skill=${standing.weakest.id}`} className="text-teal underline underline-offset-2" onClick={onClose}>
+                                      print
+                                    </Link>
+                                  </>
+                                )}
                               </span>
                             )}
                           </>

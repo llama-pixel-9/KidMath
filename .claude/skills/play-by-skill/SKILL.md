@@ -56,10 +56,19 @@ masterySnapshot, challenge })`. Without skill options it is the ladder session.
 
 ## Math Facts practice (`src/facts/factPractice.js`, `factMarks.js`)
 A Math Facts skill session (not its Fledging Flight) picks FACTS, not bank
-rows: the skill's plan rows in strategy order, the first rows not yet all
-fast in focus (≥8 facts), every 4th question of a skill a review fact from
-the rows before, then its turnaround asked plain (5 + 8 right after 8 + 5;
-it does not take a turn). Each fact is served from its bank row
+rows. A fact (trackKey) is **ready** when fast, or answered fast earlier
+today (`initFluency(skills, marks, { now, grade })`). Of the rest, the
+session works on 8 facts from the first 4 strategy groups (by group NAME:
+"Plus zero" to 5 and to 10 are one), taken in turn, and never asks two
+from one group in a row while another is open. A fact answered right
+within the grade's limit this session is cleared and the next of its group
+moves in; one asked 3 times without that waits for the next session. Every
+4th question of a skill is a review: a ready or cleared fact not just
+asked, then its turnaround asked plain (5 + 8 right after 8 + 5; it does not
+take a turn). Elsewhere add/mul facts come in either order. Do not go back
+to "the first group until it is fast": the fast mark needs 2 days, so that
+drilled one group (× 0) for a whole day (Sai, Oct 1). `recordSkillAnswer`
+needs the response time for the clear. Each fact is served from its bank row
 (`mathFacts-v2-<fact>-<format>`) when in memory, else built by
 `buildFactQuestion` — same payload. ~20 questions unless the caller sets a
 size. The question carries `factId` / `factFormat` (top level, never in

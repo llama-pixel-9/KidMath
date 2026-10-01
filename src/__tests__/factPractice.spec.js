@@ -1,13 +1,22 @@
 import { describe, expect, it } from "vitest";
 import { FACTS_KEY, FAST_RULE, applyFactAttempts, factById, factOfAttempt, fastLimitMs, mergeFactMarks } from "../facts/factMarks.js";
-import { FLUENCY_SESSION_SIZE, factsForSkill, fluencyPlan, rowsForSkill } from "../facts/factPractice.js";
-import { FACTS } from "../facts/factSets.js";
+import {
+  FLUENCY_SESSION_SIZE,
+  activeKeys,
+  factsForSkill,
+  fluencyPlan,
+  initFluency,
+  recordFact,
+  rowsForSkill,
+  trackKeysForSkill,
+} from "../facts/factPractice.js";
+import { FACTS, FACT_ROWS } from "../facts/factSets.js";
 import { appendAttempt, closeSessionRecord, openSessionRecord } from "../analytics/sessionRecord.js";
 import { skillStanding } from "../analytics/reportModel.js";
 import { createAdaptiveSession, getNextQuestion, isSessionComplete, recordAnswer } from "../mathEngine.js";
 import { applySession, deriveMastery } from "../skills/mastery.js";
 import { settleSkillSession, topicSheetModel } from "../skills/flow.js";
-import { playSkillById } from "../skills/play.js";
+import { playSkillById, playSkills } from "../skills/play.js";
 import { mergeTopicState } from "../skills/topicState.js";
 
 const DAY = 24 * 60 * 60 * 1000;
@@ -26,6 +35,9 @@ const attempt = (factId, { ms = 2000, correct = true, format = "plain", t = NOON
 });
 const record = (attempts, extra = {}) => ({ mode: "mathFacts", kind: "normal", grade: "2", attempts, startedAt: NOON, endedAt: NOON, ...extra });
 const fold = (...records) => records.reduce(applyFactAttempts, {});
+// A tracked fact's strategy group, by name ("Plus zero" to 5 and to 10 are one).
+const groupOf = (id) => FACT_ROWS.find((row) => row.id === factById(factById(id).trackKey).rowId).spec.groupName;
+const FACT_SKILLS = playSkills().filter((skill) => skill.mode === "mathFacts");
 const allFast = (facts) =>
   Object.fromEntries(facts.map((f) => [f.trackKey, { seen: 2, last: "fast", days: ["2026-9-29", "2026-9-30"], fast: true, slip: false, at: NOON }]));
 
@@ -120,28 +132,62 @@ describe("what a Math Facts skill practises", () => {
     expect(rows.flatMap((r) => r.facts).every((f) => f.op === "add" && f.answer <= 10)).toBe(true);
   });
 
-  it("works on the first group not yet fast, reviews the ones before, and reviews all once all are fast", () => {
+  it("plans in strategy order; a fast fact, or one answered fast today, is ready", () => {
     const skill = playSkillById("facts-add-to10");
-    const [zero, small] = rowsForSkill(skill);
-    const start = fluencyPlan(skill, {});
-    expect(start.group).toBe("Plus zero");
-    expect(start.review).toEqual([]);
-    // Plus zero has 11 facts, enough on its own.
-    expect(start.focus).toEqual(zero.facts.map((f) => f.id));
+    const keys = trackKeysForSkill(skill);
+    expect(fluencyPlan(skill, {})).toEqual({ keys, ready: [], group: "Plus zero" });
 
-    const next = fluencyPlan(skill, allFast(zero.facts));
-    expect(next.group).toBe(small.groupName);
-    expect(next.review).toEqual(zero.facts.map((f) => f.id));
-    expect(next.focus.length).toBeGreaterThanOrEqual(8);
+    const zero = rowsForSkill(skill).filter((row) => row.groupName === "Plus zero").flatMap((row) => row.facts);
+    const zeroKeys = [...new Set(zero.map((f) => f.trackKey))];
+    const fast = fluencyPlan(skill, allFast(zero));
+    expect([...fast.ready].sort()).toEqual([...zeroKeys].sort());
+    expect(fast.group).toBe("Plus 1, plus 2");
 
-    const done = fluencyPlan(skill, allFast(factsForSkill(skill)));
-    expect(done.group).toBeNull();
-    expect(done.focus).toHaveLength(66);
+    const today = { "add-0-3": { seen: 1, last: "fast", days: ["2026-10-1"], fast: false, slip: false, at: NOON } };
+    expect(fluencyPlan(skill, today, "2026-10-1").ready).toEqual(["add-0-3"]);
+    expect(fluencyPlan(skill, today, "2026-10-2").ready).toEqual([]);
+    expect(fluencyPlan(skill, allFast(factsForSkill(skill))).group).toBeNull();
+  });
+
+  it("works on two facts from each of the next four strategy groups, not one group", () => {
+    // Sai, Oct 1: a whole session of "× 0" facts. The window mixes groups.
+    const mul = playSkillById("facts-mul-to10");
+    const fluency = initFluency([mul], {}, { now: NOON });
+    const window = activeKeys(fluency, mul.id);
+    expect(window).toHaveLength(8);
+    expect(window.map(groupOf).sort()).toEqual(["Times 0", "Times 0", "Times 1", "Times 1", "Times 10", "Times 10", "Times 2", "Times 2"]);
+
+    // A fact answered right in time leaves; the next of its group comes in.
+    const [first] = window;
+    const after = recordFact(fluency, { skillId: mul.id, trackKey: first, then: null }, { correct: true, ms: 1500 });
+    expect(activeKeys(after, mul.id)).not.toContain(first);
+    expect(activeKeys(after, mul.id).filter((key) => groupOf(key) === groupOf(first))).toHaveLength(2);
+    // Slow or wrong, it stays; after three asks it waits for the next session.
+    const slow = recordFact(fluency, { skillId: mul.id, trackKey: first, then: null }, { correct: true, ms: 9000 });
+    expect(activeKeys(slow, mul.id)).toContain(first);
+    const thrice = [1, 2, 3].reduce((fl) => recordFact(fl, { skillId: mul.id, trackKey: first, then: null }, { correct: false, ms: 1000 }), fluency);
+    expect(activeKeys(thrice, mul.id)).not.toContain(first);
+
+    // A skill with only two groups shares the window between them.
+    const twelve = playSkillById("facts-mul-to12");
+    const counts = {};
+    for (const key of activeKeys(initFluency([twelve], {}, { now: NOON }), twelve.id)) counts[groupOf(key)] = (counts[groupOf(key)] || 0) + 1;
+    expect(Object.values(counts)).toEqual([4, 4]);
+  });
+
+  it("uses the grade's time limit to clear a fact", () => {
+    const skill = playSkillById("facts-add-to10");
+    const fluency = initFluency([skill], {}, { now: NOON, grade: "1" });
+    expect(fluency.limitMs).toBe(5000);
+    const key = activeKeys(fluency, skill.id)[0];
+    const served = { skillId: skill.id, trackKey: key, then: null };
+    expect(recordFact(fluency, served, { correct: true, ms: 4500 }).cleared[key]).toBe(true);
+    expect(recordFact(initFluency([skill], {}, { now: NOON, grade: "2" }), served, { correct: true, ms: 4500 }).cleared[key]).toBeUndefined();
   });
 });
 
 function playFacts(options, { size, ms = 2000, answer = () => true } = {}) {
-  let session = createAdaptiveSession("mathFacts", size, { savedProgress: fresh, ...options });
+  let session = createAdaptiveSession("mathFacts", size, { savedProgress: fresh, now: NOON, ...options });
   let rec = openSessionRecord({ mode: "mathFacts", level: 1, now: NOON, sessionKind: "skill", skillId: options.skillId, grade: options.grade });
   const served = [];
   for (let guard = 0; !isSessionComplete(session) && guard < 200; guard += 1) {
@@ -171,34 +217,58 @@ describe("a Math Facts practice session", () => {
     expect(createAdaptiveSession("mathFacts", 5, { savedProgress: fresh, skillId: skill.id }).sessionSize).toBe(5);
   });
 
-  it("mostly asks the current group, every fourth a review fact and then its turnaround", () => {
+  it("every fourth turn reviews a ready or cleared fact, then asks its turnaround", () => {
     const { served } = playFacts({ skillId: skill.id, grade: "1", masterySnapshot: masteryWithZeroFast });
     const asked = served.filter((s) => !s.isRetry).map((s) => s.question);
-    const fresh = asked.map((q) => factById(q.factId));
-    const plan = fluencyPlan(skill, masteryWithZeroFast[FACTS_KEY]);
-    const focus = new Set(plan.focus);
+    const ready = new Set(fluencyPlan(skill, masteryWithZeroFast[FACTS_KEY]).ready);
+    const cleared = new Set();
     let turn = 0;
     let reviews = 0;
-    for (let i = 0; i < fresh.length; i += 1) {
-      turn += 1;
-      if (turn % 4) {
-        expect(focus.has(fresh[i].id), `question ${i + 1}`).toBe(true);
+    for (let i = 0; i < asked.length; i += 1) {
+      const fact = factById(asked[i].factId);
+      if (asked[i].fluency.turnaround) {
+        const before = factById(asked[i - 1].factId);
+        expect(fact).toMatchObject({ op: "add", a: before.b, b: before.a });
+        expect(asked[i].factFormat).toBe("plain");
         continue;
       }
-      reviews += 1;
-      expect(plan.review, `question ${i + 1}`).toContain(fresh[i].id);
-      // Its turnaround next, asked plain, and not counted as a turn (0 + 0 has none).
-      if (fresh[i].a !== fresh[i].b && i + 1 < fresh.length) {
-        expect(fresh[i + 1]).toMatchObject({ op: "add", a: fresh[i].b, b: fresh[i].a });
-        expect(asked[i + 1].factFormat).toBe("plain");
-        i += 1;
+      turn += 1;
+      if (turn % 4 === 0) {
+        reviews += 1;
+        expect(ready.has(fact.trackKey) || cleared.has(fact.trackKey), `question ${i + 1}`).toBe(true);
+      } else {
+        expect(ready.has(fact.trackKey) || cleared.has(fact.trackKey), `question ${i + 1}`).toBe(false);
       }
+      // Answered right in 2 s: cleared for the rest of the session.
+      cleared.add(fact.trackKey);
     }
     expect(reviews).toBeGreaterThanOrEqual(4);
     // A fact never comes straight back, except as its own turnaround.
-    for (let i = 1; i < fresh.length; i += 1) {
-      if (fresh[i].trackKey === fresh[i - 1].trackKey) expect(fresh[i].a).toBe(fresh[i - 1].b);
+    for (let i = 1; i < asked.length; i += 1) {
+      const [now, before] = [factById(asked[i].factId), factById(asked[i - 1].factId)];
+      if (now.trackKey === before.trackKey) expect(asked[i].fluency.turnaround).toBe(true);
     }
+  });
+
+  it.each(FACT_SKILLS.map((s) => [s.id]))("%s mixes strategy groups for a slow kid and a fast one", (id) => {
+    const factSkill = playSkillById(id);
+    const groups = new Set(trackKeysForSkill(factSkill).map(groupOf));
+    // Slow (right, but past the limit): nothing clears, so no review; the
+    // window's groups take turns and no fact is asked more than three times.
+    const slow = playFacts({ skillId: id, grade: factSkill.grade, masterySnapshot: {} }, { ms: 6000 }).served.map((s) => s.question);
+    const slowGroups = slow.map((q) => groupOf(q.factId));
+    // (Four groups at least: a small group that runs out of asks lets the next one in.)
+    expect(new Set(slowGroups).size).toBeGreaterThanOrEqual(Math.min(4, groups.size));
+    for (let i = 1; i < slowGroups.length; i += 1) expect(slowGroups[i], `question ${i + 1}`).not.toBe(slowGroups[i - 1]);
+    const times = {};
+    for (const q of slow) times[factById(q.factId).trackKey] = (times[factById(q.factId).trackKey] || 0) + 1;
+    expect(Math.max(...Object.values(times))).toBeLessThanOrEqual(3);
+    // Fast: facts clear as they go; still no group takes the session over.
+    const fast = playFacts({ skillId: id, grade: factSkill.grade, masterySnapshot: {} }).served.map((s) => groupOf(s.question.factId));
+    const counts = {};
+    for (const g of fast) counts[g] = (counts[g] || 0) + 1;
+    expect(Math.max(...Object.values(counts)) / fast.length).toBeLessThanOrEqual(0.65);
+    expect(Object.keys(counts).length).toBeGreaterThanOrEqual(Math.min(3, groups.size));
   });
 
   it("gives each skill of a mixed session its own review slot", () => {
@@ -218,7 +288,7 @@ describe("a Math Facts practice session", () => {
     const first = settleSkillSession("mathFacts", progress, { profileGrade: "1st", sessions: [] }, day1.session, day1.record);
     expect(first.standing.facts).toMatchObject({ fast: 0, total: 36, newlyFast: 0, line: "0 of 36 facts fast", newLine: null, nextGroup: "Plus zero" });
 
-    const day2 = playFacts({ ...options, masterySnapshot: first.patch.skillMastery });
+    const day2 = playFacts({ ...options, masterySnapshot: first.patch.skillMastery, now: NOON + DAY });
     const later = { ...day2.record, attempts: day2.record.attempts.map((a) => ({ ...a, t: a.t + DAY })) };
     const second = settleSkillSession("mathFacts", { ...progress, ...first.patch }, { profileGrade: "1st", sessions: [] }, day2.session, later);
     const { facts } = second.standing;
@@ -232,7 +302,7 @@ describe("a Math Facts practice session", () => {
   it("slow right answers are not fast, however many days", () => {
     const options = { skillId: skill.id, grade: "2", masterySnapshot: {} };
     const day1 = playFacts(options, { ms: 4000 });
-    const day2 = playFacts(options, { ms: 4000 });
+    const day2 = playFacts({ ...options, now: NOON + DAY }, { ms: 4000 });
     const later = { ...day2.record, attempts: day2.record.attempts.map((a) => ({ ...a, t: a.t + DAY })) };
     const marks = [day1.record, later].reduce(applySession, {})[FACTS_KEY];
     expect(Object.values(marks).some((m) => m.fast)).toBe(false);

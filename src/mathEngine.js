@@ -708,7 +708,7 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
   // the bank band. Mastery is settled from the practice log (skills/
   // mastery.js), and moving up a grade is earned in the Fledging Flight.
   // (`levelChanged` / `newLevel` stay in the result for the native bridge.)
-  if (session.skillIds) recordSkillAnswer(next, question, correct);
+  if (session.skillIds) recordSkillAnswer(next, question, correct, responseTimeMs);
 
   if (correct) {
     next.correctStreak = session.correctStreak + 1;

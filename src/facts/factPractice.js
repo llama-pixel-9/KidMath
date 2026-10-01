@@ -2,30 +2,37 @@
  * What a Math Facts practice session asks (fact fluency plan A7, B4 item 9)
  * — pure, shared with iOS through the native engine.
  *
- *   current group   A skill's plan rows run in strategy order (plus zero,
- *                   plus 1 or 2, doubles ...). The session works on the first
- *                   rows whose facts are not all fast yet, at least
- *                   FOCUS_FACTS facts' worth, so a small group brings the
- *                   next one in with it.
- *   mixed review    Every REVIEW_EVERY-th question of a skill is a fact from the rows
- *                   before the current one (the current group's own when
- *                   there are none yet), and the facts that slipped, were
- *                   missed or were slow come first.
- *   turnarounds     An addition or times fact asked in that review slot is
- *                   followed straight away by its turnaround: 5 + 8 right
- *                   after 8 + 5.
+ *   moving on      A skill's facts run in strategy order (plus zero, plus 1
+ *                  or 2, doubles ...). A fact the kid has already made fast,
+ *                  or answered fast earlier today, is ready. Of the rest the
+ *                  session works on a small window of ACTIVE_SIZE facts from
+ *                  the next ACTIVE_GROUPS strategy groups, and never asks two
+ *                  from one group in a row while another is open, so a
+ *                  session mixes groups instead of drilling one (Sai, Oct 1:
+ *                  twenty "× 0" facts in a row). A fact answered right
+ *                  within the time limit leaves the window and the next one
+ *                  comes in; a fact asked MAX_ASKS times without that waits
+ *                  for the next session, so nothing is ground on.
+ *   mixed review   Every REVIEW_EVERY-th question of a skill is a ready fact
+ *                  (or one cleared this session), slipped, missed and slow
+ *                  ones first.
+ *   turnarounds    An addition or times fact asked in that review slot is
+ *                  followed straight away by its turnaround: 5 + 8 right
+ *                  after 8 + 5. Elsewhere a fact is asked in either order.
  *
- * Inside each pool the facts asked least this session come first, then the
- * ones the kid needs most (factPriority), with a shuffle between equals, and
- * the last few facts asked are skipped so a fact never comes straight back.
- * A missed fact also returns through the session's mistake bank as before.
+ * Facts are tracked by trackKey (8 + 5 and 5 + 8 are one; take-away and
+ * divide facts are their own), and the last few asked are skipped so a fact
+ * never comes straight back. A missed fact also returns through the session's
+ * mistake bank as before.
  */
 import { BAND_LEVELS, FACTS, FACT_ROWS, FACT_SUBSKILL } from "./factSets.js";
 import { formatsForFact } from "./factItems.js";
-import { factById, factCounts, factPriority, isFast } from "./factMarks.js";
+import { dayKey, factById, factCounts, factPriority, fastLimitMs, isFast } from "./factMarks.js";
 
 export const FLUENCY_SESSION_SIZE = 20;
-const FOCUS_FACTS = 8;
+const ACTIVE_SIZE = 8;
+const ACTIVE_GROUPS = 4;
+const MAX_ASKS = 3;
 const REVIEW_EVERY = 4;
 const RECENT_FACTS = 3;
 
@@ -57,41 +64,98 @@ export function rowsForSkill(skill) {
   );
 }
 
+/** A skill's tracked facts (one key per turnaround pair), in strategy order. */
+export function trackKeysForSkill(skill) {
+  return [...new Set(rowsForSkill(skill).flatMap((row) => row.facts.map((f) => f.trackKey)))];
+}
+
+// Strategy groups go by name: "Plus zero" to 5 and to 10 are one strategy.
+const groupOfKey = (key) => FACT_ROWS.find((row) => row.id === factById(key)?.rowId)?.spec.groupName ?? null;
+
+/** Is this tracked fact ready: fast, or answered fast on `today`? */
+function isReady(marks, key, today) {
+  const entry = marks?.[key];
+  return Boolean(entry?.fast || (today && entry?.days?.includes(today)));
+}
+
 /**
- * One skill's plan for a session: the fact ids of the current group(s) and of
- * the rows before them. A skill whose every fact is fast reviews all of them.
+ * One skill's plan for a session: its tracked facts in strategy order, the
+ * ones already ready, and the strategy group the session starts in (null
+ * when every fact is ready). `today` is a dayKey; without it only fast marks
+ * count as ready.
  */
-export function fluencyPlan(skill, marks) {
-  const rows = rowsForSkill(skill);
-  const first = rows.findIndex((row) => row.facts.some((f) => !isFast(marks, f)));
-  if (first < 0) {
-    const all = rows.flatMap((row) => row.facts.map((f) => f.id));
-    return { focus: all, review: [], group: null };
-  }
-  const focus = [];
-  for (let i = first; i < rows.length && focus.length < FOCUS_FACTS; i += 1) focus.push(...rows[i].facts.map((f) => f.id));
-  return { focus, review: rows.slice(0, first).flatMap((row) => row.facts.map((f) => f.id)), group: rows[first].groupName };
+export function fluencyPlan(skill, marks, today = null) {
+  const keys = trackKeysForSkill(skill);
+  const ready = keys.filter((key) => isReady(marks, key, today) || isFast(marks, factById(key)));
+  const readySet = new Set(ready);
+  const first = keys.find((key) => !readySet.has(key));
+  return { keys, ready, group: first ? groupOfKey(first) : null };
 }
 
 /**
  * The fluency state a session carries — JSON-safe and small (Swift holds it
- * and passes it back each question): the plans, and how much each planned
- * fact is needed rather than the whole marks map.
+ * and passes it back each question): the plans, how much each fact is needed
+ * (not the whole marks map), the time limit and what this session has done.
  */
-export function initFluency(skills, marks) {
-  const plans = Object.fromEntries(skills.map((skill) => [skill.id, fluencyPlan(skill, marks)]));
+export function initFluency(skills, marks, { now = Date.now(), grade = null } = {}) {
+  const today = dayKey(now);
+  const plans = Object.fromEntries(skills.map((skill) => [skill.id, fluencyPlan(skill, marks, today)]));
   const need = {};
   for (const plan of Object.values(plans)) {
-    for (const f of [...plan.focus, ...plan.review].map(factById)) need[f.trackKey] = factPriority(marks, f);
+    for (const key of plan.keys) need[key] = factPriority(marks, factById(key));
   }
   return {
     plans,
     need,
+    limitMs: fastLimitMs(grade ?? skills[0]?.grade),
     asked: {},
+    cleared: {},
     turns: {},
     recent: [],
     then: null,
   };
+}
+
+/**
+ * The facts a skill is working on now: not ready, not cleared this session,
+ * asked fewer than MAX_ASKS times. They come from the first ACTIVE_GROUPS
+ * strategy groups that still have such facts, taken in turn (one from each
+ * group, then a second from each ...) up to ACTIVE_SIZE, so a skill with
+ * only two groups still gets both.
+ */
+export function activeKeys(fluency, skillId) {
+  const plan = fluency.plans[skillId];
+  if (!plan) return [];
+  const ready = new Set(plan.ready);
+  const byGroup = new Map();
+  for (const key of plan.keys) {
+    if (ready.has(key) || fluency.cleared[key] || (fluency.asked[key] || 0) >= MAX_ASKS) continue;
+    const group = groupOfKey(key);
+    if (!byGroup.has(group)) {
+      if (byGroup.size >= ACTIVE_GROUPS) continue;
+      byGroup.set(group, []);
+    }
+    byGroup.get(group).push(key);
+  }
+  const lists = [...byGroup.values()];
+  const picked = [];
+  for (let i = 0; picked.length < ACTIVE_SIZE && lists.some((list) => i < list.length); i += 1) {
+    for (const list of lists) if (i < list.length && picked.length < ACTIVE_SIZE) picked.push(list[i]);
+  }
+  return picked;
+}
+
+/**
+ * Ready facts and the ones cleared this session, less the last few asked:
+ * what review draws on. Empty early in a session, when the only cleared facts
+ * were just asked; that slot then goes to the facts being worked on.
+ */
+function reviewKeys(fluency, skillId) {
+  const plan = fluency.plans[skillId];
+  if (!plan) return [];
+  const ready = new Set(plan.ready);
+  const recent = new Set(fluency.recent);
+  return plan.keys.filter((key) => (ready.has(key) || fluency.cleared[key]) && !recent.has(key));
 }
 
 function shuffled(list, rng) {
@@ -103,15 +167,16 @@ function shuffled(list, rng) {
   return out;
 }
 
-function pickFrom(ids, fluency, rng) {
+function pickKey(keys, fluency, rng) {
   const recent = new Set(fluency.recent);
-  const facts = ids.map(factById).filter(Boolean);
-  const fresh = facts.filter((f) => !recent.has(f.trackKey));
-  const pool = fresh.length ? fresh : facts;
-  const asked = (f) => fluency.asked[f.trackKey] || 0;
+  const fresh = keys.filter((key) => !recent.has(key));
+  const lastGroup = groupOfKey(fluency.recent[fluency.recent.length - 1]);
+  const mixed = fresh.filter((key) => groupOfKey(key) !== lastGroup);
+  const pool = mixed.length ? mixed : fresh.length ? fresh : keys;
+  const asked = (key) => fluency.asked[key] || 0;
+  const need = (key) => fluency.need[key] ?? 3;
   // Array sort is stable, so the shuffle breaks the ties.
-  const need = (f) => fluency.need[f.trackKey] ?? 3;
-  return shuffled(pool, rng).sort((x, y) => asked(x) - asked(y) || need(x) - need(y))[0];
+  return shuffled(pool, rng).sort((x, y) => asked(x) - asked(y) || need(x) - need(y))[0] ?? null;
 }
 
 function pickFormat(f, rng) {
@@ -125,22 +190,33 @@ function pickFormat(f, rng) {
   return formats[0];
 }
 
-const turnaroundOf = (f) => (f.op === "add" || f.op === "mul") && f.a !== f.b ? factById(`${f.op}-${f.b}-${f.a}`) : null;
+const turnaroundOf = (f) => ((f.op === "add" || f.op === "mul") && f.a !== f.b ? factById(`${f.op}-${f.b}-${f.a}`) : null);
+
+/** One order of a tracked fact, either way round for addition and times. */
+function orderOf(key, rng) {
+  const fact = factById(key);
+  const other = turnaroundOf(fact);
+  return other && rng() < 0.5 ? other : fact;
+}
 
 /**
  * The next fact for a skill: `{ skillId, fact, format, then }`, where `then`
  * is a turnaround to ask next (`{ skillId, factId }`) or null. The review
  * slot counts the skill's own questions, so each skill in a mixed session
  * gets its review. A due turnaround is served by the caller before this runs.
+ * With nothing left to work on, every fact of the skill is fair game.
  */
 export function nextFact(fluency, skillId, rng = Math.random) {
   const plan = fluency.plans[skillId];
-  if (!plan) return null;
+  if (!plan || !plan.keys.length) return null;
   const reviewSlot = ((fluency.turns[skillId] || 0) + 1) % REVIEW_EVERY === 0;
-  const pool = reviewSlot && plan.review.length ? plan.review : plan.focus;
-  const fact = pickFrom(pool, fluency, rng);
-  if (!fact) return null;
-  const partner = reviewSlot ? turnaroundOf(fact) : null;
+  const review = reviewSlot ? reviewKeys(fluency, skillId) : [];
+  const active = activeKeys(fluency, skillId);
+  const pool = review.length ? review : active.length ? active : plan.keys;
+  const key = pickKey(pool, fluency, rng);
+  if (!key) return null;
+  const fact = orderOf(key, rng);
+  const partner = review.length ? turnaroundOf(fact) : null;
   return { skillId, fact, format: pickFormat(fact, rng), then: partner ? { skillId, factId: partner.id } : null };
 }
 
@@ -152,15 +228,19 @@ export function dueTurnaround(fluency) {
 
 /**
  * Bookkeeping after a fresh answer to `served` ({ skillId, trackKey, then,
- * turnaround }): returns the NEXT fluency state. A turnaround rides on its
- * review fact and does not take a turn, so the review stays every fourth.
+ * turnaround }): returns the NEXT fluency state. A right answer within the
+ * time limit clears the fact for the rest of the session, so the next one
+ * moves in. A turnaround rides on its review fact and does not take a turn,
+ * so the review stays every fourth.
  */
-export function recordFact(fluency, served) {
+export function recordFact(fluency, served, { correct = false, ms = 0 } = {}) {
   const key = served.trackKey;
   const turns = served.turnaround ? fluency.turns : { ...fluency.turns, [served.skillId]: (fluency.turns[served.skillId] || 0) + 1 };
+  const fast = correct && ms > 0 && ms <= (fluency.limitMs || fastLimitMs(null));
   return {
     ...fluency,
     asked: { ...fluency.asked, [key]: (fluency.asked[key] || 0) + 1 },
+    cleared: fast ? { ...fluency.cleared, [key]: true } : fluency.cleared,
     turns,
     recent: [...fluency.recent, key].slice(-RECENT_FACTS),
     then: served.then || null,
@@ -178,7 +258,7 @@ export function skillFactLine(skill, marks) {
 /**
  * The end card's fact line for a finished session's skills: how many facts
  * are fast now, how many turned fast in this session, and the group the next
- * session works on.
+ * session works toward (the first group not yet fast).
  */
 export function factStanding(skills, before, after) {
   const facts = skills.flatMap(factsForSkill);

@@ -64,7 +64,7 @@ export function initSkillSession(options = {}) {
     lastSkillIds: [],
     recentComputationKeys: [],
     level: skills[0].level,
-    ...(fluent ? { fluency: initFluency(skills, mastery[FACTS_KEY]) } : {}),
+    ...(fluent ? { fluency: initFluency(skills, mastery[FACTS_KEY], { now: options.now, grade: options.grade }) } : {}),
   };
 }
 
@@ -183,13 +183,13 @@ export function retryBelongs(session, retry) {
 }
 
 /** Bookkeeping after a fresh (non-retry) answer. Mutates the NEXT session copy. */
-export function recordSkillAnswer(next, question, correct) {
+export function recordSkillAnswer(next, question, correct, responseTimeMs = 0) {
   const id = question.skillId ? playSkillById(question.skillId)?.id : null;
   if (question.level) next.level = question.level;
   if (question.metadata?.itemSource === "skillSampler") {
     next.recentComputationKeys = [...(next.recentComputationKeys || []), computationKeyOf(question)].slice(-RECENT_COMPUTATIONS);
   }
-  if (next.fluency && question.fluency) next.fluency = recordFact(next.fluency, question.fluency);
+  if (next.fluency && question.fluency) next.fluency = recordFact(next.fluency, question.fluency, { correct, ms: responseTimeMs });
   if (!id) return;
   const before = next.skillStats[id] || { attempts: 0, correct: 0 };
   const stats = { attempts: before.attempts + 1, correct: before.correct + (correct ? 1 : 0) };

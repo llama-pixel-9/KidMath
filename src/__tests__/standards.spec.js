@@ -23,6 +23,7 @@ import CCSS_FILE from "../standards/ccss.json";
 import TX_FILE from "../standards/tx.json";
 import FL_FILE from "../standards/fl.json";
 import VA_FILE from "../standards/va.json";
+import GA_FILE from "../standards/ga.json";
 import { BLUEPRINT_ROWS, validateBlueprintRow } from "../blueprints/index.js";
 import { blueprintStandardDbRows, checkSql, crosswalkDbRows, loadSql, sqlLiteral, standardsDbRows } from "../standards/dbRows.js";
 import { COVERAGE_STATUSES, catalogSkillsFor, coverageTotals, rowToCoverage, statusLabel } from "../standards/coverage.js";
@@ -62,6 +63,7 @@ describe("the code lists", () => {
     expect(validateStandardsFile(TX_FILE, "tx")).toEqual([]);
     expect(validateStandardsFile(FL_FILE, "fl")).toEqual([]);
     expect(validateStandardsFile(VA_FILE, "va")).toEqual([]);
+    expect(validateStandardsFile(GA_FILE, "ga")).toEqual([]);
     for (const fw of LOADED_FRAMEWORKS) expect(FRAMEWORKS).toContain(fw);
   });
 
@@ -112,6 +114,19 @@ describe("the code lists", () => {
     for (const s of rows.filter((r) => r.parent)) expect(standardByCode("va", s.parent), s.code).toBeTruthy();
   });
 
+  it("hold every Georgia K-5 standard and its expectations, without the Mathematical Practices", () => {
+    // Counted from Georgia's K-12 Mathematics Standards (2021) on 2026-10-01: 45 standards, 150 expectations.
+    const perGrade = Object.fromEntries(GRADES.map((g) => [g, standardsFor("ga").filter((s) => s.grade === g).length]));
+    expect(perGrade).toEqual({ K: 30, 1: 28, 2: 29, 3: 37, 4: 38, 5: 33 });
+    const rows = standardsFor("ga");
+    expect(rows.filter((s) => !s.parent)).toHaveLength(45);
+    expect(rows[0].code).toBe("K.NR.1");
+    expect(rows.at(-1).code).toBe("5.GSR.8.4");
+    expect(standardByCode("ga", "3.PAR.3.2").parent).toBe("3.PAR.3");
+    expect(rows.filter((s) => /\.MP/.test(s.code))).toEqual([]);
+    for (const s of rows.filter((r) => r.parent)) expect(standardByCode("ga", s.parent), s.code).toBeTruthy();
+  });
+
   it("find a code by its short form or official dotted sub-part", () => {
     expect(ccssAliases("3.OA.C.7")).toEqual(["3.OA.7"]);
     expect(ccssAliases("3.NF.A.2a")).toEqual(["3.NF.2a", "3.NF.A.2.a"]);
@@ -130,8 +145,8 @@ describe("the code lists", () => {
     expect(normalizeCode("va", "4.CE.2.b")).toBe("4.CE.2b");
   });
 
-  it("report aliases and typos as unknown, and skip frameworks not loaded yet", () => {
-    expect(unknownCodes({ ccss: ["2.MD.C.8"], ga: ["not-checked-yet"] })).toEqual([]);
+  it("report aliases and typos as unknown, and skip frameworks with no list", () => {
+    expect(unknownCodes({ ccss: ["2.MD.C.8"], zz: ["not-checked-yet"] })).toEqual([]);
     expect(unknownCodes({ tx: ["3.4F", "3.4(F)"] })).toEqual([{ framework: "tx", code: "3.4(F)", canonical: "3.4F" }]);
     expect(unknownCodes({ ccss: ["2.MD.8", "2.MD.C.80"] })).toEqual([
       { framework: "ccss", code: "2.MD.8", canonical: "2.MD.C.8" },
@@ -199,6 +214,25 @@ describe("the Virginia crosswalk", () => {
   });
 });
 
+describe("the Georgia crosswalk", () => {
+  it("links real codes, once each, with a known match", () => {
+    expect(validateCrosswalk("ga")).toEqual([]);
+  });
+
+  it("links expectations, not whole standards", () => {
+    expect(crosswalkFor("ga").filter((l) => !standardByCode("ga", l.code).parent)).toEqual([]);
+  });
+
+  it("matches the fluency expectations to Common Core's", () => {
+    const match = (code, ccss) => crosswalkFor("ga").find((l) => l.code === code && l.ccss_code === ccss)?.match;
+    expect(match("K.NR.5.4", "K.OA.A.5")).toBe("same");
+    expect(match("1.NR.2.4", "1.OA.C.6")).toBe("narrower");
+    expect(match("2.NR.2.1", "2.OA.B.2")).toBe("narrower");
+    // Georgia shows the facts with strategies; it never asks for them from memory.
+    expect(match("3.PAR.3.2", "3.OA.C.7")).toBe("narrower");
+  });
+});
+
 describe("every code the app cites is a real code", () => {
   it("item models", () => {
     const bad = [];
@@ -256,7 +290,7 @@ describe("the fact fluency rows", () => {
     // 11s and 12s are a Florida and Virginia ask; Common Core stops at 10 x 10.
     expect(ccss("facts-mul-times12")).toEqual([]);
     for (const r of fluency) {
-      for (const fw of ["ccss", "tx", "fl", "va"]) {
+      for (const fw of ["ccss", "tx", "fl", "va", "ga"]) {
         // Virginia has no Kindergarten fact standard; its K rows link making and breaking apart numbers to 5.
         for (const code of r.standards[fw].filter((c) => !(fw === "va" && c === "K.CE.1a"))) {
           expect(standardByCode(fw, code).kind, `${r.id} ${fw} ${code}`).toBe("fluency");

@@ -23,6 +23,8 @@ import fl from "./fl.json" with { type: "json" };
 import flCrosswalk from "./crosswalk/fl.json" with { type: "json" };
 import va from "./va.json" with { type: "json" };
 import vaCrosswalk from "./crosswalk/va.json" with { type: "json" };
+import ga from "./ga.json" with { type: "json" };
+import gaCrosswalk from "./crosswalk/ga.json" with { type: "json" };
 
 /** Every framework the app tags, in display order. Kid profiles store a state; any other state reads as Common Core. */
 export const FRAMEWORKS = Object.freeze(["ccss", "tx", "fl", "va", "ga"]);
@@ -41,10 +43,10 @@ export const SCOPES = Object.freeze(["yes", "partly", "no"]);
 export const MATCHES = Object.freeze(["same", "partly", "broader", "narrower"]);
 
 /** Framework → its file. A state joins here when its list lands. */
-const FILES = { ccss, tx, fl, va };
+const FILES = { ccss, tx, fl, va, ga };
 
 /** Crosswalk files, framework → { links: [...] }, one per state. */
-const CROSSWALKS = { tx: txCrosswalk, fl: flCrosswalk, va: vaCrosswalk };
+const CROSSWALKS = { tx: txCrosswalk, fl: flCrosswalk, va: vaCrosswalk, ga: gaCrosswalk };
 
 export const LOADED_FRAMEWORKS = Object.freeze(Object.keys(FILES));
 
@@ -92,6 +94,9 @@ export function vaAliases(code) {
   const m = VA_CODE.exec(code);
   return m && m[4] ? [`${code.slice(0, -1)}.${m[4]}`] : [];
 }
+
+/** A Georgia standard (3.PAR.3) or expectation (3.PAR.3.2). Georgia writes its codes one way, so there are no aliases. */
+const GA_CODE = /^([K1-5])\.(NR|PAR|MDR|GSR)\.(\d{1,2})(\.\d{1,2})?$/;
 
 const DERIVED_ALIASES = { ccss: ccssAliases, tx: txAliases, fl: flAliases, va: vaAliases };
 
@@ -213,6 +218,7 @@ export function validateStandardsFile(file, framework = file?.framework) {
     if (framework === "tx" && !TX_CODE.test(row.code || "")) errors.push(`${at}: not a Texas code like 3.4F`);
     if (framework === "fl" && !FL_CODE.test(row.code || "")) errors.push(`${at}: not a Florida benchmark like MA.3.NSO.2.4`);
     if (framework === "va" && !VA_CODE.test(row.code || "")) errors.push(`${at}: not a Virginia code like 3.CE.2 or 3.CE.2f`);
+    if (framework === "ga" && !GA_CODE.test(row.code || "")) errors.push(`${at}: not a Georgia code like 3.PAR.3 or 3.PAR.3.2`);
   }
   for (const row of rows) {
     if (row.parent && !seen.has(row.parent)) errors.push(`${row.code}: parent ${row.parent} is not in the file`);

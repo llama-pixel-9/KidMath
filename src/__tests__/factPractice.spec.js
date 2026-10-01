@@ -271,6 +271,32 @@ describe("a Math Facts practice session", () => {
     expect(Object.keys(counts).length).toBeGreaterThanOrEqual(Math.min(3, groups.size));
   });
 
+  it.each([
+    ["facts-add-to5", "facts-sub-to5"],
+    ["facts-add-to10", "facts-sub-to10"],
+    ["facts-mul-to10", "facts-div-to10"],
+    ["facts-mul-to12", "facts-div-to12"],
+  ])("a mixed %s + %s session mixes strategies across the two operations", (add, sub) => {
+    // "Plus zero" and "Zero" are one strategy: a mixed session must not
+    // alternate 0 + 3, 3 − 3, 0 + 1, 0 − 0 (review, Oct 1).
+    for (const ms of [6000, 2000]) {
+      const { served } = playFacts({ skillIds: [add, sub], grade: playSkillById(add).grade, masterySnapshot: {} }, { ms });
+      const asked = served.filter((s) => !s.isRetry && !s.question.fluency.turnaround).map((s) => s.question);
+      const strategy = (q) => factById(q.factId).group;
+      let run = 1;
+      for (let i = 1; i < asked.length; i += 1) {
+        run = strategy(asked[i]) === strategy(asked[i - 1]) ? run + 1 : 1;
+        expect(run, `question ${i + 1}`).toBeLessThanOrEqual(2);
+      }
+      // Each operation moves between strategies too.
+      const last = {};
+      for (const q of asked) {
+        if (last[q.skillId] != null) expect(strategy(q)).not.toBe(last[q.skillId]);
+        last[q.skillId] = strategy(q);
+      }
+    }
+  });
+
   it("gives each skill of a mixed session its own review slot", () => {
     const skills = ["facts-add-to10", "facts-sub-to10"];
     const marks = allFast(FACTS.filter((f) => f.group === 1 && f.band === "to5"));

@@ -28,7 +28,7 @@ import GoogleSignInButton from "./auth/GoogleSignInButton";
  * copy — see docs/legal-implementation.md step 5 before changing it.
  */
 const FEATURES = [
-  { icon: Sparkles, text: "All 22 practice modes, Grades 1-4" },
+  { icon: Sparkles, text: "All 23 practice modes, Grades 1-4" },
   { icon: Printer, text: "Printable PDF worksheets with answer keys" },
   { icon: Cloud, text: "Progress syncs across web, iPad, and iPhone" },
   { icon: Users, text: "Every child in your household — one price" },

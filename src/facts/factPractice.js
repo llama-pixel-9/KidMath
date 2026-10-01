@@ -6,10 +6,13 @@
  *                  or 2, doubles ...). A fact the kid has already made fast,
  *                  or answered fast earlier today, is ready. Of the rest the
  *                  session works on a small window of ACTIVE_SIZE facts from
- *                  the next ACTIVE_GROUPS strategy groups, and never asks two
- *                  from one group in a row while another is open, so a
- *                  session mixes groups instead of drilling one (Sai, Oct 1:
- *                  twenty "× 0" facts in a row). A fact answered right
+ *                  the next ACTIVE_GROUPS strategy groups, and steers away
+ *                  from the group just asked (overall, and by the same
+ *                  skill), so a session mixes groups instead of drilling one
+ *                  (Sai, Oct 1: twenty "× 0" facts in a row). A strategy is
+ *                  its group number, which a take-away or divide fact shares
+ *                  with its partner ("Plus zero" and "Zero" are one), so a
+ *                  mixed + and − session mixes too. A fact answered right
  *                  within the time limit leaves the window and the next one
  *                  comes in; a fact asked MAX_ASKS times without that waits
  *                  for the next session, so nothing is ground on.
@@ -69,8 +72,10 @@ export function trackKeysForSkill(skill) {
   return [...new Set(rowsForSkill(skill).flatMap((row) => row.facts.map((f) => f.trackKey)))];
 }
 
-// Strategy groups go by name: "Plus zero" to 5 and to 10 are one strategy.
 const groupOfKey = (key) => FACT_ROWS.find((row) => row.id === factById(key)?.rowId)?.spec.groupName ?? null;
+// A fact's strategy: its group number, shared across bands ("Plus zero" to 5
+// and to 10) and with its partner operation ("Plus zero" and "Zero").
+const strategyOf = (key) => factById(key)?.group ?? null;
 
 /** Is this tracked fact ready: fast, or answered fast on `today`? */
 function isReady(marks, key, today) {
@@ -112,6 +117,8 @@ export function initFluency(skills, marks, { now = Date.now(), grade = null } = 
     cleared: {},
     turns: {},
     recent: [],
+    lastGroup: null,
+    skillGroups: {},
     then: null,
   };
 }
@@ -130,7 +137,7 @@ export function activeKeys(fluency, skillId) {
   const byGroup = new Map();
   for (const key of plan.keys) {
     if (ready.has(key) || fluency.cleared[key] || (fluency.asked[key] || 0) >= MAX_ASKS) continue;
-    const group = groupOfKey(key);
+    const group = strategyOf(key);
     if (!byGroup.has(group)) {
       if (byGroup.size >= ACTIVE_GROUPS) continue;
       byGroup.set(group, []);
@@ -167,16 +174,21 @@ function shuffled(list, rng) {
   return out;
 }
 
-function pickKey(keys, fluency, rng) {
+/**
+ * The pick from a pool: not one of the last few facts, then away from the
+ * strategy this skill asked last and the one asked just before (in a mixed
+ * session the two differ), then the facts asked least, then the most needed.
+ */
+function pickKey(keys, fluency, skillId, rng) {
   const recent = new Set(fluency.recent);
   const fresh = keys.filter((key) => !recent.has(key));
-  const lastGroup = groupOfKey(fluency.recent[fluency.recent.length - 1]);
-  const mixed = fresh.filter((key) => groupOfKey(key) !== lastGroup);
-  const pool = mixed.length ? mixed : fresh.length ? fresh : keys;
+  const pool = fresh.length ? fresh : keys;
+  const own = fluency.skillGroups?.[skillId] ?? null;
+  const repeat = (key) => (strategyOf(key) === own ? 2 : 0) + (strategyOf(key) === fluency.lastGroup ? 1 : 0);
   const asked = (key) => fluency.asked[key] || 0;
   const need = (key) => fluency.need[key] ?? 3;
   // Array sort is stable, so the shuffle breaks the ties.
-  return shuffled(pool, rng).sort((x, y) => asked(x) - asked(y) || need(x) - need(y))[0] ?? null;
+  return shuffled(pool, rng).sort((x, y) => repeat(x) - repeat(y) || asked(x) - asked(y) || need(x) - need(y))[0] ?? null;
 }
 
 function pickFormat(f, rng) {
@@ -213,7 +225,7 @@ export function nextFact(fluency, skillId, rng = Math.random) {
   const review = reviewSlot ? reviewKeys(fluency, skillId) : [];
   const active = activeKeys(fluency, skillId);
   const pool = review.length ? review : active.length ? active : plan.keys;
-  const key = pickKey(pool, fluency, rng);
+  const key = pickKey(pool, fluency, skillId, rng);
   if (!key) return null;
   const fact = orderOf(key, rng);
   const partner = review.length ? turnaroundOf(fact) : null;
@@ -237,12 +249,15 @@ export function recordFact(fluency, served, { correct = false, ms = 0 } = {}) {
   const key = served.trackKey;
   const turns = served.turnaround ? fluency.turns : { ...fluency.turns, [served.skillId]: (fluency.turns[served.skillId] || 0) + 1 };
   const fast = correct && ms > 0 && ms <= (fluency.limitMs || fastLimitMs(null));
+  const group = strategyOf(key);
   return {
     ...fluency,
     asked: { ...fluency.asked, [key]: (fluency.asked[key] || 0) + 1 },
     cleared: fast ? { ...fluency.cleared, [key]: true } : fluency.cleared,
     turns,
     recent: [...fluency.recent, key].slice(-RECENT_FACTS),
+    lastGroup: group,
+    skillGroups: { ...fluency.skillGroups, [served.skillId]: group },
     then: served.then || null,
   };
 }

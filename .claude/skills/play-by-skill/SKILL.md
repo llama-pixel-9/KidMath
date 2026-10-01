@@ -58,9 +58,12 @@ masterySnapshot, challenge })`. Without skill options it is the ladder session.
 A Math Facts skill session (not its Fledging Flight) picks FACTS, not bank
 rows. A fact (trackKey) is **ready** when fast, or answered fast earlier
 today (`initFluency(skills, marks, { now, grade })`). Of the rest, the
-session works on 8 facts from the first 4 strategy groups (by group NAME:
-"Plus zero" to 5 and to 10 are one), taken in turn, and never asks two
-from one group in a row while another is open. A fact answered right
+session works on 8 facts from the first 4 strategy groups, taken in turn.
+A strategy is the fact's group NUMBER (`f.group`), shared across bands and
+with the partner operation ("Plus zero" and "Zero" are both 1), never the
+group name, or a mixed + and − session drills zero facts across the two
+skills. The pick steers away from the strategy this skill asked last and the
+one asked just before (a 2-strategy mix like K can still pair two). A fact answered right
 within the grade's limit this session is cleared and the next of its group
 moves in; one asked 3 times without that waits for the next session. Every
 4th question of a skill is a review: a ready or cleared fact not just

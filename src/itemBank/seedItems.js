@@ -50497,7 +50497,11 @@ export const SEED_ITEMS = [
   "version": 2,
   "blueprintId": "facts-add-zero-to5",
   "hint": {
-   "nudge": "Adding zero adds nothing. The number stays the same."
+   "nudge": "Adding zero adds nothing. The number stays the same.",
+   "steps": [
+    "Zero and zero.",
+    "Nothing and nothing is still nothing."
+   ]
   },
   "question": {
    "a": 0,
@@ -50506,7 +50510,8 @@ export const SEED_ITEMS = [
    "answer": 0,
    "answerType": "numberPad",
    "display": {
-    "promptText": "0 + 0 = ?"
+    "promptText": "0 + 0 = ?",
+    "layout": "horizontal"
    }
   }
  },
@@ -50524,7 +50529,11 @@ export const SEED_ITEMS = [
   "version": 2,
   "blueprintId": "facts-sub-zero-to5",
   "hint": {
-   "nudge": "Taking away nothing changes nothing. Taking away all of it leaves none."
+   "nudge": "Taking away nothing changes nothing. Taking away all of it leaves none.",
+   "steps": [
+    "Taking away zero changes nothing.",
+    "Say the number you started with."
+   ]
   },
   "question": {
    "a": 0,
@@ -50533,7 +50542,8 @@ export const SEED_ITEMS = [
    "answer": 0,
    "answerType": "numberPad",
    "display": {
-    "promptText": "0 − 0 = ?"
+    "promptText": "0 − 0 = ?",
+    "layout": "horizontal"
    }
   }
  },
@@ -50552,6 +50562,10 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-add-plus12-to5",
   "hint": {
    "nudge": "Start at the bigger number and count on 1 (or 2).",
+   "steps": [
+    "Start at 2.",
+    "Say the next number."
+   ],
    "picture": {
     "kind": "numberLine",
     "min": 0,
@@ -50566,7 +50580,8 @@ export const SEED_ITEMS = [
    "answer": 3,
    "answerType": "numberPad",
    "display": {
-    "promptText": "2 + 1 = ?"
+    "promptText": "2 + 1 = ?",
+    "layout": "horizontal"
    }
   }
  },
@@ -50584,7 +50599,11 @@ export const SEED_ITEMS = [
   "version": 2,
   "blueprintId": "facts-sub-zero-to5",
   "hint": {
-   "nudge": "Take away 0 and nothing changes. Take away all of it and 0 is left."
+   "nudge": "Take away 0 and nothing changes. Take away all of it and 0 is left.",
+   "steps": [
+    "Taking away zero changes nothing.",
+    "Say the number you started with."
+   ]
   },
   "question": {
    "a": 2,
@@ -50593,7 +50612,8 @@ export const SEED_ITEMS = [
    "answer": 2,
    "answerType": "numberPad",
    "display": {
-    "promptText": "2 − 0 = ?"
+    "promptText": "2 − 0 = ?",
+    "layout": "horizontal"
    }
   }
  },
@@ -50612,6 +50632,10 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-add-maketen-6to10",
   "hint": {
    "nudge": "Think of a ten frame. Do the two numbers fill it?",
+   "steps": [
+    "Put 4 and 6 in a ten frame.",
+    "Is the frame full?"
+   ],
    "picture": {
     "kind": "tenFrame",
     "filled": 6,
@@ -50626,7 +50650,8 @@ export const SEED_ITEMS = [
    "answer": 10,
    "answerType": "numberPad",
    "display": {
-    "promptText": "4 + 6 = ?"
+    "promptText": "4 + 6 = ?",
+    "layout": "horizontal"
    }
   }
  },
@@ -50644,7 +50669,11 @@ export const SEED_ITEMS = [
   "version": 2,
   "blueprintId": "facts-sub-doubles-6to10",
   "hint": {
-   "nudge": "Which double makes 14? 7 + 7. So 14 − 7 is 7."
+   "nudge": "Which double makes 14? 7 + 7. So 14 − 7 is 7.",
+   "steps": [
+    "Which double makes 8?",
+    "Half of it is the answer."
+   ]
   },
   "question": {
    "a": 8,
@@ -50673,6 +50702,10 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-add-plus12-to5",
   "hint": {
    "nudge": "Start at the bigger number and count on.",
+   "steps": [
+    "Start at 1.",
+    "Say the next number."
+   ],
    "picture": {
     "kind": "numberLine",
     "min": 0,
@@ -50709,7 +50742,11 @@ export const SEED_ITEMS = [
   "version": 2,
   "blueprintId": "facts-sub-zero-to5",
   "hint": {
-   "nudge": "Taking away nothing changes nothing. Taking away all of it leaves none."
+   "nudge": "Taking away nothing changes nothing. Taking away all of it leaves none.",
+   "steps": [
+    "Everything is taken away.",
+    "How many are left?"
+   ]
   },
   "question": {
    "a": 5,
@@ -50741,6 +50778,10 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-add-zero-to5",
   "hint": {
    "nudge": "Count up from the first number to the total.",
+   "steps": [
+    "Zero plus a number is that number.",
+    "Say the total."
+   ],
    "picture": {
     "kind": "numberLine",
     "min": 0,
@@ -50774,6 +50815,10 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-sub-zero-to5",
   "hint": {
    "nudge": "Think addition to find the missing number.",
+   "steps": [
+    "The number did not change.",
+    "What can you take away and change nothing?"
+   ],
    "picture": {
     "kind": "numberLine",
     "min": 0,
@@ -50807,6 +50852,11 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-add-plus12-6to10",
   "hint": {
    "nudge": "Count up from 1 to 6.",
+   "steps": [
+    "Start at 1.",
+    "Count up to 6.",
+    "The hops are the missing number."
+   ],
    "picture": {
     "kind": "numberLine",
     "min": 0,
@@ -50840,6 +50890,11 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-sub-plus12-6to10",
   "hint": {
    "nudge": "Think addition: 1 and what make 6?",
+   "steps": [
+    "Start at 1.",
+    "Count up to 6.",
+    "The hops are the missing number."
+   ],
    "picture": {
     "kind": "numberLine",
     "min": 0,
@@ -50872,7 +50927,11 @@ export const SEED_ITEMS = [
   "version": 2,
   "blueprintId": "facts-add-doubles-6to10",
   "hint": {
-   "nudge": "Doubles: think of a picture you know. 5 + 5 is the fingers on two hands: 10."
+   "nudge": "Doubles: think of a picture you know. 5 + 5 is the fingers on two hands: 10.",
+   "steps": [
+    "Work out the fact on your own first.",
+    "Then compare your answer with the number after the = sign."
+   ]
   },
   "question": {
    "a": 3,
@@ -50904,7 +50963,11 @@ export const SEED_ITEMS = [
   "version": 2,
   "blueprintId": "facts-sub-doubles-6to10",
   "hint": {
-   "nudge": "Which double makes 14? 7 + 7. So 14 − 7 is 7."
+   "nudge": "Which double makes 14? 7 + 7. So 14 − 7 is 7.",
+   "steps": [
+    "Work out the fact on your own first.",
+    "Then compare your answer with the number after the = sign."
+   ]
   },
   "question": {
    "a": 6,
@@ -50936,7 +50999,11 @@ export const SEED_ITEMS = [
   "version": 2,
   "blueprintId": "facts-add-neardoubles-6to10",
   "hint": {
-   "nudge": "6 + 7 is next to 6 + 6. Double 6 is 12, then 1 more: 13."
+   "nudge": "6 + 7 is next to 6 + 6. Double 6 is 12, then 1 more: 13.",
+   "steps": [
+    "Work out the fact on your own first.",
+    "Then compare your answer with the number after the = sign."
+   ]
   },
   "question": {
    "a": 5,
@@ -50968,7 +51035,11 @@ export const SEED_ITEMS = [
   "version": 2,
   "blueprintId": "facts-sub-neardoubles-6to10",
   "hint": {
-   "nudge": "6 + 6 is 12. One more is 13, so 6 + 7. The answer is 7."
+   "nudge": "13 − 6: 6 + 6 is 12. One more is 13, so 6 + 7. The answer is 7.",
+   "steps": [
+    "Work out the fact on your own first.",
+    "Then compare your answer with the number after the = sign."
+   ]
   },
   "question": {
    "a": 9,
@@ -51001,6 +51072,10 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-add-plus12-11to20",
   "hint": {
    "nudge": "Start at the bigger number and count on 1 (or 2).",
+   "steps": [
+    "Start at 10.",
+    "Say the next number."
+   ],
    "picture": {
     "kind": "numberLine",
     "min": 0,
@@ -51015,7 +51090,8 @@ export const SEED_ITEMS = [
    "answer": 11,
    "answerType": "numberPad",
    "display": {
-    "promptText": "1 + 10 = ?"
+    "promptText": "1 + 10 = ?",
+    "layout": "horizontal"
    }
   }
  },
@@ -51034,6 +51110,11 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-sub-plus12-11to20",
   "hint": {
    "nudge": "Count back, or count up from the smaller number.",
+   "steps": [
+    "10 is close to 11.",
+    "Count up from 10 to 11.",
+    "Count the hops."
+   ],
    "picture": {
     "kind": "numberLine",
     "min": 0,
@@ -51048,7 +51129,8 @@ export const SEED_ITEMS = [
    "answer": 1,
    "answerType": "numberPad",
    "display": {
-    "promptText": "11 − 10 = ?"
+    "promptText": "11 − 10 = ?",
+    "layout": "horizontal"
    }
   }
  },
@@ -51067,6 +51149,10 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-add-plus9-11to20",
   "hint": {
    "nudge": "9 is almost 10. 9 + 3 is 10 + 3 minus 1: 12. Or give 1 to the 9 to make 10.",
+   "steps": [
+    "9 is one less than 10.",
+    "Find 10 + 5, then take 1 away."
+   ],
    "picture": {
     "kind": "tenFrame",
     "filled": 9,
@@ -51101,6 +51187,11 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-sub-maketen87-11to20",
   "hint": {
    "nudge": "Take 1 to get to 10, then 3 more. 11 − 4 is 7.",
+   "steps": [
+    "Start at the first number.",
+    "Count back the second number, one at a time.",
+    "Where you land is what is left."
+   ],
    "picture": {
     "kind": "tenFrame",
     "filled": 13,
@@ -51135,6 +51226,10 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-add-tenplus-11to20",
   "hint": {
    "nudge": "Ten and 4 more is fourteen. Say the teen number.",
+   "steps": [
+    "10 + 7 is ten and 7 more.",
+    "Say the teen number."
+   ],
    "picture": {
     "kind": "tenFrame",
     "filled": 10,
@@ -51149,7 +51244,8 @@ export const SEED_ITEMS = [
    "answer": 17,
    "answerType": "numberPad",
    "display": {
-    "promptText": "7 + 10 = ?"
+    "promptText": "7 + 10 = ?",
+    "layout": "horizontal"
    }
   }
  },
@@ -51168,6 +51264,10 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-sub-plus9-11to20",
   "hint": {
    "nudge": "Take away 10 instead, then give 1 back. 14 − 10 is 4, plus 1 is 5.",
+   "steps": [
+    "Take away 10 instead: 16 − 10.",
+    "Then give 1 back."
+   ],
    "picture": {
     "kind": "tenFrame",
     "filled": 16,
@@ -51202,6 +51302,10 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-add-plus9-11to20",
   "hint": {
    "nudge": "9 is almost 10. 9 + 5 is 10 + 5 minus 1: 14. Or give 1 to the 9 to make 10.",
+   "steps": [
+    "9 is one less than 10.",
+    "Find 10 + 6, then take 1 away."
+   ],
    "picture": {
     "kind": "tenFrame",
     "filled": 9,
@@ -51236,6 +51340,10 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-sub-plus9-11to20",
   "hint": {
    "nudge": "Take away 10 instead, then give 1 back. 14 − 10 is 4, plus 1 is 5.",
+   "steps": [
+    "Think addition: 6 and what make 15?",
+    "Count up from 6 to 10, then on to 15."
+   ],
    "picture": {
     "kind": "tenFrame",
     "filled": 15,
@@ -51270,6 +51378,11 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-add-plus12-11to20",
   "hint": {
    "nudge": "Count up from 1 to 11.",
+   "steps": [
+    "Start at 1.",
+    "Count up to 11.",
+    "The hops are the missing number."
+   ],
    "picture": {
     "kind": "numberLine",
     "min": 0,
@@ -51303,6 +51416,11 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-sub-plus12-11to20",
   "hint": {
    "nudge": "Think addition: 1 and what make 11?",
+   "steps": [
+    "Start at 1.",
+    "Count up to 11.",
+    "The hops are the missing number."
+   ],
    "picture": {
     "kind": "numberLine",
     "min": 0,
@@ -51336,6 +51454,11 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-add-maketen87-11to20",
   "hint": {
    "nudge": "Count up from 5 to 13.",
+   "steps": [
+    "Start at 5.",
+    "Count up to 13.",
+    "The hops are the missing number."
+   ],
    "picture": {
     "kind": "numberLine",
     "min": 0,
@@ -51369,6 +51492,11 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-sub-maketen87-11to20",
   "hint": {
    "nudge": "Think addition: 5 and what make 13?",
+   "steps": [
+    "Start at 5.",
+    "Count up to 13.",
+    "The hops are the missing number."
+   ],
    "picture": {
     "kind": "numberLine",
     "min": 0,
@@ -51402,6 +51530,11 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-add-neardoubles-11to20",
   "hint": {
    "nudge": "Count up from 7 to 15.",
+   "steps": [
+    "Start at 7.",
+    "Count up to 15.",
+    "The hops are the missing number."
+   ],
    "picture": {
     "kind": "numberLine",
     "min": 0,
@@ -51435,6 +51568,11 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-sub-neardoubles-11to20",
   "hint": {
    "nudge": "Think addition: 7 and what make 15?",
+   "steps": [
+    "Start at 7.",
+    "Count up to 15.",
+    "The hops are the missing number."
+   ],
    "picture": {
     "kind": "numberLine",
     "min": 0,
@@ -51468,6 +51606,11 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-add-plus9-11to20",
   "hint": {
    "nudge": "Count up from 9 to 14.",
+   "steps": [
+    "Start at 9.",
+    "Count up to 14.",
+    "The hops are the missing number."
+   ],
    "picture": {
     "kind": "numberLine",
     "min": 0,
@@ -51501,6 +51644,11 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-sub-plus9-11to20",
   "hint": {
    "nudge": "Think addition: 9 and what make 14?",
+   "steps": [
+    "Start at 9.",
+    "Count up to 14.",
+    "The hops are the missing number."
+   ],
    "picture": {
     "kind": "numberLine",
     "min": 0,
@@ -51533,7 +51681,11 @@ export const SEED_ITEMS = [
   "version": 2,
   "blueprintId": "facts-mul-times0",
   "hint": {
-   "nudge": "Zero groups, or groups of zero, make zero."
+   "nudge": "Zero groups, or groups of zero, make zero.",
+   "steps": [
+    "One of the numbers is zero.",
+    "Zero groups, or groups with nothing in them, make nothing."
+   ]
   },
   "question": {
    "a": 0,
@@ -51542,7 +51694,8 @@ export const SEED_ITEMS = [
    "answer": 0,
    "answerType": "numberPad",
    "display": {
-    "promptText": "0 × 0 = ?"
+    "promptText": "0 × 0 = ?",
+    "layout": "horizontal"
    }
   }
  },
@@ -51560,7 +51713,11 @@ export const SEED_ITEMS = [
   "version": 2,
   "blueprintId": "facts-div-times0",
   "hint": {
-   "nudge": "Dividing by 1 leaves the number as it is."
+   "nudge": "Dividing by 1 leaves the number as it is.",
+   "steps": [
+    "There is nothing to share.",
+    "Zero shared into groups leaves nothing in each group."
+   ]
   },
   "question": {
    "a": 0,
@@ -51569,7 +51726,8 @@ export const SEED_ITEMS = [
    "answer": 0,
    "answerType": "numberPad",
    "display": {
-    "promptText": "0 ÷ 1 = ?"
+    "promptText": "0 ÷ 1 = ?",
+    "layout": "horizontal"
    }
   }
  },
@@ -51587,7 +51745,11 @@ export const SEED_ITEMS = [
   "version": 2,
   "blueprintId": "facts-mul-times0",
   "hint": {
-   "nudge": "Zero groups, or groups of zero, make zero."
+   "nudge": "Zero groups, or groups of zero, make zero.",
+   "steps": [
+    "One of the numbers is zero.",
+    "Zero groups, or groups with nothing in them, make nothing."
+   ]
   },
   "question": {
    "a": 3,
@@ -51616,6 +51778,11 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-div-times4",
   "hint": {
    "nudge": "12 ÷ 4: 4 times what is 12? Use the times 4 fact.",
+   "steps": [
+    "Think multiplication: 4 times what is 12?",
+    "Count by 4s until you reach 12.",
+    "Count how many 4s you said."
+   ],
    "picture": {
     "kind": "array",
     "rows": 4,
@@ -51629,7 +51796,8 @@ export const SEED_ITEMS = [
    "answer": 3,
    "answerType": "numberPad",
    "display": {
-    "promptText": "12 ÷ 4 = ?"
+    "promptText": "12 ÷ 4 = ?",
+    "layout": "horizontal"
    }
   }
  },
@@ -51648,6 +51816,10 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-mul-times10",
   "hint": {
    "nudge": "6 tens is 60.",
+   "steps": [
+    "Count by 10s, 5 times.",
+    "Or say it as 5 tens."
+   ],
    "picture": {
     "kind": "array",
     "rows": 5,
@@ -51681,6 +51853,11 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-div-times6",
   "hint": {
    "nudge": "42 ÷ 7: 7 times what is 42?",
+   "steps": [
+    "Think multiplication: 7 times what is 42?",
+    "Count by 7s until you reach 42.",
+    "Count how many 7s you said."
+   ],
    "picture": {
     "kind": "array",
     "rows": 7,
@@ -51694,7 +51871,8 @@ export const SEED_ITEMS = [
    "answer": 6,
    "answerType": "numberPad",
    "display": {
-    "promptText": "42 ÷ 7 = ?"
+    "promptText": "42 ÷ 7 = ?",
+    "layout": "horizontal"
    }
   }
  },
@@ -51713,6 +51891,10 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-mul-times12",
   "hint": {
    "nudge": "10 groups and 2 more. 60 + 12 is 72.",
+   "steps": [
+    "Find 10 × 8 and 2 × 8.",
+    "Add the two together."
+   ],
    "picture": {
     "kind": "array",
     "rows": 8,
@@ -51726,7 +51908,8 @@ export const SEED_ITEMS = [
    "answer": 96,
    "answerType": "numberPad",
    "display": {
-    "promptText": "8 × 12 = ?"
+    "promptText": "8 × 12 = ?",
+    "layout": "horizontal"
    }
   }
  },
@@ -51745,6 +51928,11 @@ export const SEED_ITEMS = [
   "blueprintId": "facts-div-times10",
   "hint": {
    "nudge": "90 ÷ 10: 10 times what is 90? Use the times 10 fact.",
+   "steps": [
+    "Think multiplication: 10 times what is 90?",
+    "Count by 10s until you reach 90.",
+    "Count how many 10s you said."
+   ],
    "picture": {
     "kind": "array",
     "rows": 10,
@@ -51758,7 +51946,8 @@ export const SEED_ITEMS = [
    "answer": 9,
    "answerType": "numberPad",
    "display": {
-    "promptText": "90 ÷ 10 = ?"
+    "promptText": "90 ÷ 10 = ?",
+    "layout": "horizontal"
    }
   }
  },
@@ -51776,7 +51965,11 @@ export const SEED_ITEMS = [
   "version": 2,
   "blueprintId": "facts-mul-times0",
   "hint": {
-   "nudge": "Zero groups, or groups of zero, make zero."
+   "nudge": "Zero groups, or groups of zero, make zero.",
+   "steps": [
+    "Work out the fact on your own first.",
+    "Then compare your answer with the number after the = sign."
+   ]
   },
   "question": {
    "a": 0,
@@ -51808,7 +52001,11 @@ export const SEED_ITEMS = [
   "version": 2,
   "blueprintId": "facts-div-times0",
   "hint": {
-   "nudge": "Dividing by 1 leaves the number as it is."
+   "nudge": "Dividing by 1 leaves the number as it is.",
+   "steps": [
+    "Work out the fact on your own first.",
+    "Then compare your answer with the number after the = sign."
+   ]
   },
   "question": {
    "a": 0,
@@ -51840,7 +52037,11 @@ export const SEED_ITEMS = [
   "version": 2,
   "blueprintId": "facts-mul-times9",
   "hint": {
-   "nudge": "Count by 3s until you reach 27."
+   "nudge": "Count by 3s until you reach 27.",
+   "steps": [
+    "Count by 3s until you reach 27.",
+    "Count how many 3s you said."
+   ]
   },
   "question": {
    "a": 3,
@@ -51867,7 +52068,12 @@ export const SEED_ITEMS = [
   "version": 2,
   "blueprintId": "facts-div-times9",
   "hint": {
-   "nudge": "Think multiplication: 3 times what is 27?"
+   "nudge": "Think multiplication: 3 times what is 27?",
+   "steps": [
+    "Think: 3 times what is 27?",
+    "Count by 3s until you reach 27.",
+    "Count how many 3s you said."
+   ]
   },
   "question": {
    "a": 27,
@@ -51894,7 +52100,11 @@ export const SEED_ITEMS = [
   "version": 2,
   "blueprintId": "facts-mul-times10",
   "hint": {
-   "nudge": "Count by 6s until you reach 60."
+   "nudge": "Count by 6s until you reach 60.",
+   "steps": [
+    "Count by 6s until you reach 60.",
+    "Count how many 6s you said."
+   ]
   },
   "question": {
    "a": 6,
@@ -51921,7 +52131,12 @@ export const SEED_ITEMS = [
   "version": 2,
   "blueprintId": "facts-div-times10",
   "hint": {
-   "nudge": "Think multiplication: 6 times what is 60?"
+   "nudge": "Think multiplication: 6 times what is 60?",
+   "steps": [
+    "Think: 6 times what is 60?",
+    "Count by 6s until you reach 60.",
+    "Count how many 6s you said."
+   ]
   },
   "question": {
    "a": 60,
@@ -51948,7 +52163,11 @@ export const SEED_ITEMS = [
   "version": 2,
   "blueprintId": "facts-mul-times11",
   "hint": {
-   "nudge": "Count by 9s until you reach 99."
+   "nudge": "Count by 9s until you reach 99.",
+   "steps": [
+    "Count by 9s until you reach 99.",
+    "Count how many 9s you said."
+   ]
   },
   "question": {
    "a": 9,
@@ -51975,7 +52194,12 @@ export const SEED_ITEMS = [
   "version": 2,
   "blueprintId": "facts-div-times11",
   "hint": {
-   "nudge": "Think multiplication: 9 times what is 99?"
+   "nudge": "Think multiplication: 9 times what is 99?",
+   "steps": [
+    "Think: 9 times what is 99?",
+    "Count by 9s until you reach 99.",
+    "Count how many 9s you said."
+   ]
   },
   "question": {
    "a": 99,

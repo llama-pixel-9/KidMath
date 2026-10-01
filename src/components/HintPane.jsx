@@ -10,7 +10,7 @@ import Scaffold from "./Scaffold.jsx";
 // The picture kinds Scaffold can draw. A per-item hint may name others (coin
 // tray, tape diagram, clock, …); until each has a drawing the pane leaves the
 // section out — Scaffold's fallback line would describe the picture in words.
-const DRAWABLE_KINDS = new Set(["dots", "array", "strip", "numberLine"]);
+const DRAWABLE_KINDS = new Set(["dots", "array", "strip", "numberLine", "tenFrame"]);
 
 function Section({ label, children }) {
   return (

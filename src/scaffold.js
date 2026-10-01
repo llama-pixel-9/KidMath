@@ -84,6 +84,8 @@ export function scaffoldHint(scaffold) {
       return scaffold.takeAway != null ? "Count them, then cross some out." : "Count all the dots together.";
     case "array":
       return "Count the rows, then count across.";
+    case "tenFrame":
+      return scaffold.takeAway ? "Cross them out, then count what is left." : "Fill the ten first, then count on.";
     case "strip":
       return "Each piece is one part of the whole.";
     case "numberLine":

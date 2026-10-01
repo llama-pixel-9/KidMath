@@ -47,6 +47,15 @@ const PICTURE_FIELDS = {
   array: (p) => isCount(p.rows) && isCount(p.cols),
   strip: (p) => isCount(p.den) && p.den > 0 && isCount(p.shaded),
   numberLine: (p) => isNum(p.min) && isNum(p.max) && isNum(p.mark) && p.max > p.min && (p.step == null || (isNum(p.step) && p.step > 0)),
+  // Counters fill the frames in order, so they must fit: one frame holds 10.
+  tenFrame: (p) => {
+    const frames = p.frames ?? 1;
+    const fixed = (p.filled ?? -1) + (p.filledB ?? 0);
+    return (
+      isCount(p.filled) && (p.filledB == null || isCount(p.filledB)) && (p.takeAway == null || isCount(p.takeAway)) &&
+      (frames === 1 || frames === 2) && fixed <= frames * 10 && (p.takeAway ?? 0) <= fixed
+    );
+  },
 };
 
 function checkPicture(v) {

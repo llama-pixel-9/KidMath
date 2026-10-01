@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { FACTS, FACT_ROWS, factsForRow, factsForLevel, addGroup, mulGroup } from "../facts/factSets.js";
 import { FACT_FORMATS, factBankItems, factHint, factQuestion, formatApplies, formatsForFact } from "../facts/factItems.js";
-import { hintContainsAnswer } from "../hints/hintSchema.js";
+import { hintContainsAnswer, validateHint } from "../hints/hintSchema.js";
 import { runChecks } from "../itemBank/qc/checks.js";
 import { validateBank, validateBankItem } from "../itemBank/index.js";
 import { generateQuestion } from "../mathEngine.js";
@@ -98,12 +98,19 @@ describe("the fact rows", () => {
     }
   });
 
-  it("never give the asked number away in a hint", () => {
+  it("never give the asked number away in a hint, and carry their own steps", () => {
     for (const f of FACTS) {
       for (const format of formatsForFact(f)) {
         const asked = format === "missing" ? f.b : f.answer;
         const hint = factHint(f, format);
-        expect(hintContainsAnswer({ nudge: hint.nudge }, asked), `${f.id} ${format}: ${hint.nudge}`).toBe(false);
+        expect(hint.steps.length, `${f.id} ${format}`).toBeGreaterThanOrEqual(2);
+        expect(validateHint(hint).errors, `${f.id} ${format}`).toEqual([]);
+        // A true-or-false claim is judged, so its total is not a secret; its
+        // steps hold no numbers at all.
+        if (format === "trueFalse") expect(hint.steps.join(" ")).not.toMatch(/\d/);
+        else expect(hintContainsAnswer(hint, asked), `${f.id} ${format}: ${hint.nudge} | ${hint.steps.join(" / ")}`).toBe(false);
+        // Never the story steps or the multi-digit ones the app builds for other topics.
+        expect(hint.steps.join(" "), `${f.id} ${format}`).not.toMatch(/story|tens and ones|, 0 times|groups with 0/);
       }
     }
   });

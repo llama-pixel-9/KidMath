@@ -8,6 +8,7 @@ import DiscMat from "./DiscMat.jsx";
 import CubeGrid from "./CubeGrid.jsx";
 import CoordGrid from "./CoordGrid.jsx";
 import { areaFigureSpec } from "./areaFigureSpec.js";
+import { ArrayGrid } from "./Scaffold.jsx";
 
 /**
  * `display.figure` -> the figure drawn WITH THE QUESTION.
@@ -68,6 +69,11 @@ export const FIGURES = {
   coordGrid: {
     Component: CoordGrid,
     props: (q) => ({ max: q.display?.coord?.max, points: q.display?.coord?.points }),
+  },
+  // Rows of dots beside a times fact (Math Facts): the hint pane's drawing.
+  array: {
+    Component: ArrayGrid,
+    props: (q) => ({ rows: q.display?.array?.rows, cols: q.display?.array?.cols }),
   },
 };
 

@@ -154,9 +154,10 @@ const LINES = {
       "What goes with 4 to make 10? 6.",
       "What goes with the smaller number to make ten?",
     ],
+    // The plan's line names its fact in a side column; on screen it leads.
     6: [
-      "6 + 6 is 12. One more is 13, so 6 + 7. The answer is 7.",
-      "4 + 4 is 8. One more is 9, so 4 + 5. The answer is 5.",
+      "13 − 6: 6 + 6 is 12. One more is 13, so 6 + 7. The answer is 7.",
+      "9 − 4: 4 + 4 is 8. One more is 9, so 4 + 5. The answer is 5.",
       "Find the double next to it. Then think addition.",
     ],
     7: [
@@ -270,6 +271,160 @@ export function factNudge(f, format = "plain") {
   return (ok || lines[lines.length - 1]).text;
 }
 
+// ── Steps ("Try this") ───────────────────────────────────────────────────
+//
+// The group's strategy as two or three steps on the fact's own numbers. The
+// app's generic steps are written for stories and multi-digit work ("find the
+// total in the story", "skip count by 0, 0 times"), so fact rows carry their
+// own. A step never says the number the child is asked for: a list that would
+// falls back to the operation's steps with no numbers.
+
+const NUMBERLESS_STEPS = {
+  add: ["Start at the bigger number.", "Count on the smaller number, one at a time."],
+  sub: ["Start at the first number.", "Count back the second number, one at a time.", "Where you land is what is left."],
+  mul: ["Skip count by one of the numbers.", "Stop when you have counted it the other number of times."],
+  div: ["Think multiplication.", "What times the number you divide by makes the first number?"],
+};
+
+const MISSING_NUMBERLESS = {
+  add: ["Start at the first number.", "Count up to the total.", "The hops are the missing number."],
+  sub: ["Start at what is left.", "Count up to the first number.", "The hops are the missing number."],
+  mul: ["Count by the first number until you reach the total.", "Count how many times you counted."],
+  div: ["Think multiplication: the answer times what makes the first number?", "That number is the one missing."],
+};
+
+function addSteps({ a, b, group }) {
+  const big = Math.max(a, b);
+  const small = Math.min(a, b);
+  switch (group) {
+    case 1:
+      return a === b ? ["Zero and zero.", "Nothing and nothing is still nothing."] : ["Adding zero changes nothing.", "The answer is the number that is not zero."];
+    case 2:
+      return [`Start at ${big}.`, small === 1 ? "Say the next number." : "Say the next two numbers."];
+    case 3:
+      return [`${a} + ${a} is a double.`, `Use a double you know, or count on ${a} from ${a}.`];
+    case 4:
+      return [`10 + ${small} is ten and ${small} more.`, "Say the teen number."];
+    case 5:
+      return [`Put ${a} and ${b} in a ten frame.`, "Is the frame full?"];
+    case 6:
+      return [`${small} + ${small} is a double you know.`, `${big} is one more than ${small}, so add 1 more.`];
+    case 7:
+      return [`9 is one less than 10.`, `Find 10 + ${small}, then take 1 away.`];
+    case 8: {
+      const need = 10 - big;
+      return [`${big} needs ${need} more to make 10.`, `Take ${need} from the ${small}. That leaves ${small - need}.`, `Now add: 10 + ${small - need}.`];
+    }
+    default:
+      return [`Start at ${big}.`, `Count on ${small}, one at a time.`];
+  }
+}
+
+function subSteps({ a, b, group }) {
+  switch (group) {
+    case 1:
+      return b === 0 ? ["Taking away zero changes nothing.", "Say the number you started with."] : ["Everything is taken away.", "How many are left?"];
+    case 2:
+      if (b <= 2) return [`Start at ${a}.`, b === 1 ? "Say the number just before it." : "Say the two numbers just before it."];
+      return [`${b} is close to ${a}.`, `Count up from ${b} to ${a}.`, "Count the hops."];
+    case 3:
+      return [`Which double makes ${a}?`, "Half of it is the answer."];
+    case 4:
+      return b === 10
+        ? [`${a} is a ten and some ones.`, "Take the ten away.", "Say how many ones are left."]
+        : [`${a} is a ten and ${b} ones.`, `Take away the ${b} ones.`, "Say what is left."];
+    case 5:
+      return [`Think of a full ten frame and take ${b} away.`, `Or ask: what goes with ${b} to make 10?`];
+    case 6:
+      return [`${a} is one more than a double.`, `Think addition: ${b} and what make ${a}?`];
+    case 7:
+      return b === 9
+        ? [`Take away 10 instead: ${a} − 10.`, "Then give 1 back."]
+        : [`Think addition: ${b} and what make ${a}?`, `Count up from ${b} to 10, then on to ${a}.`];
+    case 8: {
+      const toTen = a - 10;
+      return toTen > 0 && b > toTen
+        ? [`Take ${toTen} away to get down to 10.`, `Then take ${b - toTen} more.`, "Say where you land."]
+        : [`Think addition: ${b} and what make ${a}?`, `Count up from ${b} to ${a}.`];
+    }
+    default:
+      return [`Think addition: ${b} and what make ${a}?`, `Count up from ${b} to ${a}.`];
+  }
+}
+
+function mulSteps({ a, b, group }) {
+  if (a === 0 || b === 0) return ["One of the numbers is zero.", "Zero groups, or groups with nothing in them, make nothing."];
+  const other = (n) => (a === n ? b : a);
+  switch (group) {
+    case 2:
+      return ["Times 1 leaves a number just as it is.", "Say the other number."];
+    case 3:
+      return ["Times 2 is a double.", `Add ${other(2)} + ${other(2)}.`];
+    case 4:
+      return [`Count by 10s, ${other(10)} times.`, `Or say it as ${other(10)} tens.`];
+    case 5:
+      return [`Count by 5s, ${other(5)} times.`, `Or find 10 × ${other(5)} and take half.`];
+    case 6:
+      return [`Double ${other(4)}.`, "Then double that number again."];
+    case 7:
+      return [`Find 10 × ${other(9)} first.`, `Then take away one ${other(9)}.`];
+    case 8:
+      return [`${a} rows of ${a}.`, `Count by ${a}s, ${a} times.`];
+    case 9:
+      return [`Double ${other(3)}.`, `Then add one more ${other(3)}.`];
+    case 10:
+      return [`Find 5 × ${other(6)} first.`, `Then add one more ${other(6)}.`];
+    case 11:
+      return [`Find 4 × ${other(8)} first.`, "Then double it."];
+    case 12:
+      return [`Find 10 × ${other(11)}.`, `Then add one more ${other(11)}.`];
+    case 13:
+      return [`Find 10 × ${other(12)} and 2 × ${other(12)}.`, "Add the two together."];
+    default:
+      return [`Count by ${b}s, ${a} times.`];
+  }
+}
+
+function divSteps({ a: p, b }) {
+  if (p === 0) return ["There is nothing to share.", "Zero shared into groups leaves nothing in each group."];
+  if (b === 1) return ["Dividing by 1 leaves the number as it is.", "One group gets all of it."];
+  if (p === b) return [`How many groups of ${b} fit in ${p}?`, "Count the groups."];
+  return [`Think multiplication: ${b} times what is ${p}?`, `Count by ${b}s until you reach ${p}.`, `Count how many ${b}s you said.`];
+}
+
+function missingSteps(f) {
+  if (f.op === "add") return f.a === 0 ? ["Zero plus a number is that number.", "Say the total."] : [`Start at ${f.a}.`, `Count up to ${f.answer}.`, "The hops are the missing number."];
+  if (f.op === "sub") {
+    if (f.b === 0) return ["The number did not change.", "What can you take away and change nothing?"];
+    if (f.answer === 0) return ["Nothing is left.", "So everything was taken away."];
+    return [`Start at ${f.answer}.`, `Count up to ${f.a}.`, "The hops are the missing number."];
+  }
+  if (f.op === "mul") return [`Count by ${f.a}s until you reach ${f.answer}.`, `Count how many ${f.a}s you said.`];
+  return [`Think: ${f.answer} times what is ${f.a}?`, `Count by ${f.answer}s until you reach ${f.a}.`, `Count how many ${f.answer}s you said.`];
+}
+
+const STEPS_BY_OP = { add: addSteps, sub: subSteps, mul: mulSteps, div: divSteps };
+
+/** The steps for a fact asked in a format (see above). */
+export function factSteps(f, format = "plain") {
+  // True or false is judged: work it out, then compare. No numbers, and no
+  // "yes" or "no" in the wording.
+  if (format === "trueFalse") return ["Work out the fact on your own first.", "Then compare your answer with the number after the = sign."];
+  if (format === "array") {
+    const rows = [`${f.a} rows of ${f.b} dots.`, `Count by ${f.b}s, one row at a time.`];
+    return hintContainsAnswer({ steps: rows }, f.answer) ? ["Count the rows.", "Then count across each row."] : rows;
+  }
+  if (format === "hop") {
+    const hop = [`Look at the hop from ${f.b} to ${f.a}.`, "Count the jumps between them."];
+    return hintContainsAnswer({ steps: hop }, f.answer) ? ["Look at the hop on the line.", "Count the jumps."] : hop;
+  }
+  const missing = format === "missing";
+  const asked = missing ? f.b : f.answer;
+  const steps = missing ? missingSteps(f) : STEPS_BY_OP[f.op](f);
+  if (!hintContainsAnswer({ steps }, asked)) return steps;
+  return (missing ? MISSING_NUMBERLESS : NUMBERLESS_STEPS)[f.op];
+}
+
 /** The hint picture, where the group's strategy has a better one than the
  * number-based default (dots for small sums, arrays for times tables). */
 export function factPicture(f) {
@@ -304,6 +459,7 @@ function missingPicture(f) {
 
 export function factHint(f, format = "plain") {
   const nudge = factNudge(f, format);
+  const steps = factSteps(f, format);
   // True or false is judged, not computed: a picture would count it out. A
   // missing number gets a line to count up on, never the fact's own picture
   // (8 red and 5 blue counters would show the 5 it asks for).
@@ -313,7 +469,7 @@ export function factHint(f, format = "plain") {
       : format === "missing"
         ? missingPicture(f)
         : factPicture(f);
-  return picture ? { nudge, picture } : { nudge };
+  return picture ? { nudge, steps, picture } : { nudge, steps };
 }
 
 // ── Questions ────────────────────────────────────────────────────────────
@@ -334,7 +490,8 @@ export function factQuestion(f, format, { truthy = true } = {}) {
   const base = { a: f.a, b: f.b, op: f.sign, answer: f.answer, answerType: "numberPad", hint: factHint(f, format) };
   switch (format) {
     case "plain":
-      return { ...base, display: { promptText: plain } };
+      // Sideways even for a teen fact, which would otherwise stack.
+      return { ...base, display: { promptText: plain, layout: "horizontal" } };
     case "stacked":
       return { ...base, display: { promptText: plain, layout: "vertical" } };
     case "missing": {
@@ -383,7 +540,7 @@ export function factQuestion(f, format, { truthy = true } = {}) {
       };
     }
     case "array":
-      return { ...base, display: { promptText: plain, array: { rows: f.a, cols: f.b } } };
+      return { ...base, display: { promptText: plain, figure: "array", array: { rows: f.a, cols: f.b } } };
     default:
       throw new Error(`unknown fact format: ${format}`);
   }

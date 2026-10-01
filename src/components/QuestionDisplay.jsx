@@ -393,13 +393,18 @@ export default function QuestionDisplay({ question, modeColor, feedback, revealA
   // shows a different question than the one being scored, so any item whose
   // answer isn't the computed result must fall through to its promptText.
   // The minus is stored as "-" or "−"; both stack, and both draw as "−".
+  // `display.layout` overrides the size rule: "vertical" stacks a one-digit
+  // fact (and a times fact), "horizontal" keeps a teen fact sideways.
   const vop = asciiOp(q.op);
+  const layout = q.display?.layout;
+  const stacked = layout === "vertical";
+  const computed = vop === "+" ? q.a + q.b : vop === "-" ? q.a - q.b : vop === "x" && stacked ? q.a * q.b : NaN;
   const isVertical =
-    (vop === "+" || vop === "-") &&
+    layout !== "horizontal" &&
     typeof q.a === "number" &&
     typeof q.b === "number" &&
-    (q.a >= 10 || q.b >= 10) &&
-    Number(q.answer) === (vop === "+" ? q.a + q.b : q.a - q.b);
+    (stacked || q.a >= 10 || q.b >= 10) &&
+    Number(q.answer) === computed;
 
   if (isVertical) {
     const aDigits = String(q.a).split("");

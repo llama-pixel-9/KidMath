@@ -226,11 +226,20 @@ describe("HintPane", () => {
     expect(labels({ kind: "numberLine", min: 10, max: 100, mark: 10, step: 10 })).toEqual([10, 20, 30, 40, 50, 60, 70, 80, 90, 100]);
   });
 
+  it("draws a ten frame picture: counters in two colours, crossed-out ones for a take-away", () => {
+    const add = html(withHint({ ...ownHint, picture: { kind: "tenFrame", filled: 8, filledB: 5, frames: 2 } }));
+    expect(add).toContain('data-scaffold="tenFrame"');
+    expect(add).toContain("ten frame: 8 and 5 counters");
+    const takeAway = html(withHint({ ...ownHint, picture: { kind: "tenFrame", filled: 7, takeAway: 3 } }));
+    expect(takeAway).toContain("7 counters, 3 crossed out");
+    expect(takeAway).toContain("Cross them out, then count what is left.");
+  });
+
   it("omits the picture section for a kind it cannot draw instead of describing it", () => {
-    const tenFrame = html(withHint(ownHint));
-    expect(tenFrame).not.toContain("Picture it");
-    expect(tenFrame).not.toContain("data-scaffold");
-    expect(tenFrame).not.toContain("Look again");
+    const coins = html(withHint({ ...ownHint, picture: { kind: "coinTray", coins: [25, 10] } }));
+    expect(coins).not.toContain("Picture it");
+    expect(coins).not.toContain("data-scaffold");
+    expect(coins).not.toContain("Look again");
     // Every kind a hint may name, even with no fields, is either drawn or
     // left out — never worded, never a crash.
     for (const kind of PICTURE_KINDS) {

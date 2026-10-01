@@ -1,7 +1,7 @@
 {
   "framework": "ga",
   "edition": "2021 K-12 Mathematics Standards to CCSS-M 2010",
-  "checked": "2026-10-01: drafted from both documents side by side; GaDOE publishes no crosswalk to Common Core. Awaiting Sai's spot check.",
+  "checked": "2026-10-01: drafted from both documents side by side; GaDOE publishes no crosswalk to Common Core. Sai spot-checked 20 codes and 20 links and approved the list on 2026-10-01.",
   "note": "One row per link from a Georgia expectation to a Common Core code. match says how the Georgia code relates to the Common Core code: same (same skill; small range or wording differences noted), broader (the Georgia code asks for more), narrower (the Georgia code is one part of it), partly (they overlap and each has something the other lacks). Standards link through their expectations; expectations with no Common Core counterpart have no row. A note names the Common Core grade when it differs.",
   "links": [
     { "code": "K.NR.1.1", "ccss_code": "K.CC.B.5", "match": "partly", "note": "Common Core also counts out a set of a given size." },

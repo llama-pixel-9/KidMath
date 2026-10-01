@@ -48,6 +48,8 @@ export default {
   subskillLevels: { addFacts: [1, 6], subFacts: [1, 6], mulFacts: [7, 10], divFacts: [7, 10] },
   supportedFormats: [],
   families: ["procedural", "conceptual"],
+  // No v1 rows: the topic shows only where its switch serves v2 (topicVisible).
+  v2Only: true,
 
   generate(level, context = {}) {
     const ops = opsForLevel(level);

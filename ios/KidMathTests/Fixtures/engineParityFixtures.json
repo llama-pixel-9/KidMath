@@ -468,6 +468,24 @@
       "level": 11,
       "seed": 91147,
       "expectedJSON": "{\"op\":\"volume\",\"answer\":12,\"answerType\":\"numberPad\",\"level\":11,\"display\":{\"promptText\":\"Start at (2, 3). Each step adds 1 across and 3 up. After 3 steps, what is the y-coordinate?\"},\"metadata\":{\"modeId\":\"volumeCoordinates\",\"level\":11,\"gradeBand\":\"4-5\",\"domain\":\"MD\",\"cluster\":\"Geometric measurement: volume; graph points on the coordinate plane\",\"subskill\":\"plotAndRead\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK3\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP4\",\"MP7\"],\"standardRefs\":[\"5.MD\",\"5.G\"],\"misconceptionTags\":[\"swapsXandY\"],\"blueprintId\":\"volumeCoordinates-conceptual-coordinatePattern\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"coordinatePattern\"},\"mode\":\"volumeCoordinates\",\"itemKey\":\"volumeCoordinates::volume::::::12::plotAndRead::volumeCoordinates-conceptual-coordinatePattern::|Start at (2, 3). Each step adds 1 across and 3 up. After 3 steps, what is the y-coordinate?|||\"}"
+    },
+    {
+      "mode": "mathFacts",
+      "level": 1,
+      "seed": 10021,
+      "expectedJSON": "{\"a\":4,\"b\":0,\"op\":\"−\",\"answer\":4,\"answerType\":\"numberPad\",\"hint\":{\"nudge\":\"Take away 0 and nothing changes. Take away all of it and 0 is left.\"},\"display\":{\"promptText\":\"4 − 0 = ?\",\"layout\":\"vertical\"},\"level\":1,\"metadata\":{\"modeId\":\"mathFacts\",\"level\":1,\"gradeBand\":\"K-1\",\"domain\":\"OA\",\"cluster\":\"Add and subtract within 20\",\"subskill\":\"subFacts\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP7\",\"MP8\"],\"standardRefs\":[\"K.OA.A.5\",\"1.OA.C.6\",\"2.OA.B.2\"],\"misconceptionTags\":[],\"blueprintId\":\"facts-sub-zero-to5\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"sub-stacked\"},\"mode\":\"mathFacts\",\"itemKey\":\"mathFacts::−::4::0::4::subFacts::facts-sub-zero-to5::|4 − 0 = ?|||\"}"
+    },
+    {
+      "mode": "mathFacts",
+      "level": 4,
+      "seed": 33778,
+      "expectedJSON": "{\"a\":4,\"b\":8,\"op\":\"+\",\"answer\":12,\"answerType\":\"numberPad\",\"hint\":{\"nudge\":\"Make a ten first. 8 + 5: 8 needs 2 to make 10, 5 gives 2 and keeps 3. 10 + 3 is 13.\",\"picture\":{\"kind\":\"tenFrame\",\"filled\":8,\"filledB\":4,\"frames\":2}},\"display\":{\"promptText\":\"4 + 8 = ?\",\"layout\":\"vertical\"},\"level\":4,\"metadata\":{\"modeId\":\"mathFacts\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"OA\",\"cluster\":\"Add and subtract within 20\",\"subskill\":\"addFacts\",\"itemFamily\":\"procedural\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP7\",\"MP8\"],\"standardRefs\":[\"K.OA.A.5\",\"1.OA.C.6\",\"2.OA.B.2\"],\"misconceptionTags\":[],\"blueprintId\":\"facts-add-maketen87-11to20\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"add-stacked\"},\"mode\":\"mathFacts\",\"itemKey\":\"mathFacts::+::4::8::12::addFacts::facts-add-maketen87-11to20::|4 + 8 = ?|||\"}"
+    },
+    {
+      "mode": "mathFacts",
+      "level": 7,
+      "seed": 57535,
+      "expectedJSON": "{\"a\":6,\"b\":null,\"op\":\"×\",\"answer\":8,\"answerType\":\"numberPad\",\"hint\":{\"nudge\":\"Count by 6s until you reach 48.\"},\"display\":{\"promptText\":\"6 × ? = 48\"},\"level\":7,\"metadata\":{\"modeId\":\"mathFacts\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"OA\",\"cluster\":\"Multiply and divide within 100\",\"subskill\":\"mulFacts\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP7\",\"MP8\"],\"standardRefs\":[\"3.OA.C.7\"],\"misconceptionTags\":[],\"blueprintId\":\"facts-mul-times6\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"mul-missing\"},\"mode\":\"mathFacts\",\"itemKey\":\"mathFacts::×::6::::8::mulFacts::facts-mul-times6::|6 × ? = 48|||\"}"
     }
   ]
 }

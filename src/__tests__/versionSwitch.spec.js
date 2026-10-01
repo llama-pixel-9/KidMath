@@ -16,6 +16,7 @@ import {
   loadVersionSwitch,
   previewEnabled,
   setPreviewEnabled,
+  topicVisible,
 } from "../itemBank/versionSwitch.js";
 import { SEED_ITEMS } from "../itemBank/bundle.js";
 
@@ -112,6 +113,23 @@ describe("isServable", () => {
     expect(v2.some((item) => isServable(item, new Map()))).toBe(false);
     expect(v2.every((item) => isServable(item, new Map([["mathFacts", "v2"]])))).toBe(true);
     expect(v2.every((item) => isServable(item, new Map([["mathFacts", "preview"]]), { preview: true }))).toBe(true);
+  });
+});
+
+describe("topicVisible", () => {
+  it("always shows a topic with v1 rows", () => {
+    expect(topicVisible("money", new Map())).toBe(true);
+    expect(topicVisible("money", new Map([["money", "v2"]]))).toBe(true);
+  });
+
+  it("shows a v2-only topic at v2, to preview browsers at preview, never at v1 or with no row", () => {
+    const v2Only = { v2Only: true };
+    expect(topicVisible("mathFacts", new Map(), v2Only)).toBe(false);
+    expect(topicVisible("mathFacts", null, v2Only)).toBe(false);
+    expect(topicVisible("mathFacts", new Map([["mathFacts", "v1"]]), v2Only)).toBe(false);
+    expect(topicVisible("mathFacts", new Map([["mathFacts", "preview"]]), v2Only)).toBe(false);
+    expect(topicVisible("mathFacts", new Map([["mathFacts", "preview"]]), { ...v2Only, preview: true })).toBe(true);
+    expect(topicVisible("mathFacts", new Map([["mathFacts", "v2"]]), v2Only)).toBe(true);
   });
 });
 

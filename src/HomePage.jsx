@@ -33,7 +33,8 @@ import Feather from "./components/feather.jsx";
 import { useEffect, useState, useMemo } from "react";
 import { useTheme } from "./useTheme";
 import LarkMark from "./components/LarkMark";
-import { MODE_IDS, MODE_GROUPS, getModeConfig } from "./modes";
+import { MODE_IDS, V2_ONLY_MODE_IDS, getModeConfig, visibleModeGroups } from "./modes";
+import { useHiddenTopics } from "./hooks/useHiddenTopics.js";
 import { loadProgressSync } from "./progressStore";
 import { loadEngagement, starBalance, currentStreak, starsToday } from "./engagement/engagementStore";
 import { meadowEnabled } from "./gamificationFlags.js";
@@ -84,7 +85,8 @@ const fadeUp = {
   transition: { duration: 0.5, ease: "easeOut" },
 };
 
-const MODE_COUNT = MODE_IDS.length;
+// Topics every visitor sees (a v2-only topic waits on its switch).
+const MODE_COUNT = MODE_IDS.length - V2_ONLY_MODE_IDS.length;
 
 // Stable colour index per mode so a card keeps its tint across renders.
 // The aviary rule: the four tile tints alternate in reading order.
@@ -130,14 +132,16 @@ const STEPS = [
  * Order the topic groups for a kid: groups with at least one mode at their
  * grade first (in MODE_GROUPS order), then groups they have outgrown, and
  * groups entirely above their grade folded away. Unknown grade → as authored.
+ * Hidden topics (useHiddenTopics) are left out, and a group they empty with them.
  */
-function groupsForGrade(grade) {
-  if (gradeIndex(grade) == null) return { mainGroups: MODE_GROUPS, moreGroups: [] };
+function groupsForGrade(grade, hidden) {
+  const groups = visibleModeGroups(hidden);
+  if (gradeIndex(grade) == null) return { mainGroups: groups, moreGroups: [] };
   const fit = (g) => {
     const fits = g.modeIds.map((id) => gradeFitFor(id, grade));
     return fits.includes("in") ? 0 : fits.every((f) => f === "above") ? 2 : 1;
   };
-  const ranked = MODE_GROUPS.map((g, i) => ({ g, i, rank: fit(g) })).sort((a, b) => a.rank - b.rank || a.i - b.i);
+  const ranked = groups.map((g, i) => ({ g, i, rank: fit(g) })).sort((a, b) => a.rank - b.rank || a.i - b.i);
   return {
     mainGroups: ranked.filter((x) => x.rank < 2).map((x) => x.g),
     moreGroups: ranked.filter((x) => x.rank === 2).map((x) => x.g),
@@ -155,9 +159,9 @@ function topicStanding(id, grade, practiceLog) {
  * paywall). By skill: the lowest share of its grade's skills mastered. On the
  * ladder: the lowest level.
  */
-function quickStartFor(grade, { canPlay = () => true, practiceLog = [] } = {}) {
+function quickStartFor(grade, { canPlay = () => true, practiceLog = [], hidden } = {}) {
   if (gradeIndex(grade) == null) return null;
-  const inGrade = MODE_GROUPS.flatMap((g) => g.modeIds).filter((id) => gradeFitFor(id, grade) === "in" && canPlay(id));
+  const inGrade = visibleModeGroups(hidden).flatMap((g) => g.modeIds).filter((id) => gradeFitFor(id, grade) === "in" && canPlay(id));
   if (!inGrade.length) return null;
   return inGrade
     .map((id) => ({ id, standing: topicStanding(id, grade, practiceLog) }))
@@ -213,15 +217,16 @@ export default function HomePage() {
 
   // Groups at the kid's grade first; groups entirely above it fold under
   // "Explore more" so a kindergartner isn't handed decimals on tile one.
-  const { mainGroups, moreGroups } = useMemo(() => groupsForGrade(kid?.grade), [kid?.grade]);
+  const hidden = useHiddenTopics();
+  const { mainGroups, moreGroups } = useMemo(() => groupsForGrade(kid?.grade, hidden), [kid?.grade, hidden]);
   const [showMore, setShowMore] = useState(false);
 
   // Kid-facing mastery: which skills in a mode are solid, from the practice
   // log on this device (same math as the parent report).
   const practiceLog = useMemo(() => loadSessionsSync(), []);
   const quickStartMode = useMemo(
-    () => quickStartFor(kid?.grade, { canPlay: (id) => isFreeMode(id) || isPremium || premiumLoading, practiceLog }),
-    [kid?.grade, isPremium, premiumLoading, practiceLog]
+    () => quickStartFor(kid?.grade, { canPlay: (id) => isFreeMode(id) || isPremium || premiumLoading, practiceLog, hidden }),
+    [kid?.grade, isPremium, premiumLoading, practiceLog, hidden]
   );
 
   const renderGroup = (group) => (

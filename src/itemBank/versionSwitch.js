@@ -97,6 +97,17 @@ function liveVersionFor(switchMap, modeId) {
 }
 
 /**
+ * Is a topic shown on the pickers? A topic with v1 rows always is. A v2-only
+ * topic (Math Facts has nothing else) is shown where its switch serves v2:
+ * to everyone at `v2`, to preview browsers at `preview`, to nobody at `v1`.
+ */
+export function topicVisible(modeId, switchMap, { v2Only = false, preview = false } = {}) {
+  if (!v2Only) return true;
+  const live = liveVersionFor(switchMap, modeId);
+  return live === "v2" || (live === "preview" && preview);
+}
+
+/**
  * Should this normalized bank item be served, given the switch map and
  * whether the viewer is a preview user?
  *

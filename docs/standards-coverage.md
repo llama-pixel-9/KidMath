@@ -10,11 +10,11 @@ Approved by Sai on 2026-10-01 (thread "Item generation skill brainstorm").
 
 | Piece | Where | What it holds |
 |---|---|---|
-| Code lists | `src/standards/<framework>.json` | One row per code: grade, domain, our own one-line summary, kind (`fluency`, `skill`, `word_problem`, `concept`), in scope (`yes`, `partly`, `no` with a reason), parent for sub-parts. Common Core K–5 is loaded (191 codes, sub-parts included). Texas, Florida, Virginia and Georgia join one file at a time. |
-| Reader | `src/standards/index.js` | `standardsFor`, `findStandard` (codes and aliases such as `2.MD.8` or `3.NF.A.2.a`), `unknownCodes` for the gate. A framework counts as loaded once its file is listed in `FILES`. |
-| Crosswalk | `src/standards/crosswalk/<state>.json` (none yet) | One row per link from a state code to a Common Core code, marked `same`, `partly`, `broader` or `narrower`. |
+| Code lists | `src/standards/<framework>.json` | One row per code: grade, domain, our own one-line summary, kind (`fluency`, `skill`, `word_problem`, `concept`), in scope (`yes`, `partly`, `no` with a reason), parent for sub-parts. Common Core K–5 is loaded (191 codes, sub-parts included) and Texas K–5 (288 student expectations, process standards listed as out of scope). Florida, Virginia and Georgia join one file at a time. |
+| Reader | `src/standards/index.js` | `standardsFor`, `findStandard` (codes and aliases such as `2.MD.8`, `3.NF.A.2.a` or `3.4(F)`), `unknownCodes` and `validateCrosswalk` for the gate. A framework counts as loaded once its file is listed in `FILES`. |
+| Crosswalk | `src/standards/crosswalk/<state>.json` (Texas: 219 links) | One row per link from a state code to a Common Core code, marked `same`, `partly`, `broader` or `narrower` (below). A state code with no Common Core counterpart has no row. |
 | Blueprint rows | `src/blueprints/*.json` | The one-line question plans Sai approves. `factFluency.json` holds 54 fluency rows (operation × strategy group × fact band) from the fact fluency plan. |
-| Tables | `supabase/migrations/20261001010000_standards_coverage.sql` | `standards`, `standard_crosswalk`, `blueprint_rows`, `blueprint_standards`, `item_model_standards`; `blueprint_id` on `item_models` and `item_bank`. |
+| Tables | `supabase/migrations/20261001010730_standards_coverage.sql` | `standards`, `standard_crosswalk`, `blueprint_rows`, `blueprint_standards`, `item_model_standards`; `blueprint_id` on `item_models` and `item_bank`. |
 | Views | same migration | `standard_blueprint_links`, `standard_model_links`, `blueprint_row_progress`, `standard_coverage`. |
 | Admin | `/admin` → Standards tab (`src/admin/StandardsCoverage.jsx`) | Pick a framework and grade; each code shows planned rows, models approved / written, items live (and in preview), today's catalog skills, and a status. Click a code for its rows and models. |
 
@@ -37,8 +37,21 @@ Approved by Sai on 2026-10-01 (thread "Item generation skill brainstorm").
   spec is written, and the load re-derives them all, so a model loaded before
   its framework's codes picks up its links. Approved models are never rewritten.
 - **A state code counts a Common Core tag only when the crosswalk says `same`.**
-  A `partly` link shows as "needs a look" until the model carries the state
+  Any other link shows as "needs a look" until the model carries the state
   code itself.
+
+## Crosswalk matches
+
+Each link says how the state code relates to the Common Core code. A note
+names the Common Core grade when it differs, and what one side has that the
+other lacks.
+
+| Match | Meaning |
+|---|---|
+| `same` | The same skill; small range or wording differences are noted |
+| `broader` | The state code asks for more (the Common Core code is one part of it) |
+| `narrower` | The state code is one part of the Common Core code |
+| `partly` | They overlap, and each has something the other lacks |
 
 ## Statuses
 

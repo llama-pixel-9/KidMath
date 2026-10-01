@@ -6,16 +6,20 @@ import {
   GRADES,
   LOADED_FRAMEWORKS,
   ccssAliases,
+  crosswalkFor,
   findStandard,
   normalizeCode,
   standardByCode,
   standardsFor,
+  txAliases,
   unknownCodes,
+  validateCrosswalk,
   validateStandardsFile,
 } from "../standards/index.js";
 import CCSS_FILE from "../standards/ccss.json";
+import TX_FILE from "../standards/tx.json";
 import { BLUEPRINT_ROWS, validateBlueprintRow } from "../blueprints/index.js";
-import { blueprintStandardDbRows, checkSql, loadSql, sqlLiteral, standardsDbRows } from "../standards/dbRows.js";
+import { blueprintStandardDbRows, checkSql, crosswalkDbRows, loadSql, sqlLiteral, standardsDbRows } from "../standards/dbRows.js";
 import { COVERAGE_STATUSES, catalogSkillsFor, coverageTotals, rowToCoverage, statusLabel } from "../standards/coverage.js";
 import { WORKSHEET_SKILLS } from "../skills/catalog.js";
 import { GRADE2_MONEY_MODELS } from "../itemModels/samples/grade2Money.js";
@@ -50,7 +54,22 @@ function allModels() {
 describe("the code lists", () => {
   it("are well formed", () => {
     expect(validateStandardsFile(CCSS_FILE, "ccss")).toEqual([]);
+    expect(validateStandardsFile(TX_FILE, "tx")).toEqual([]);
     for (const fw of LOADED_FRAMEWORKS) expect(FRAMEWORKS).toContain(fw);
+  });
+
+  it("hold every Texas K-5 student expectation, process standards included", () => {
+    // Counted from 19 TAC §111.2-111.7 on 2026-10-01.
+    const perGrade = Object.fromEntries(GRADES.map((g) => [g, standardsFor("tx").filter((s) => s.grade === g).length]));
+    expect(perGrade).toEqual({ K: 36, 1: 50, 2: 50, 3: 53, 4: 53, 5: 46 });
+    const codes = standardsFor("tx").map((s) => s.code);
+    expect(codes[0]).toBe("K.1A");
+    expect(codes.at(-1)).toBe("5.10F");
+    expect(codes).toContain("K.4");
+    // Process standards run through the content items; coverage leaves them out.
+    const process = standardsFor("tx").filter((s) => /^[K1-5]\.1[A-G]$/.test(s.code));
+    expect(process).toHaveLength(42);
+    expect(process.every((s) => s.in_scope === "no")).toBe(true);
   });
 
   it("hold every Common Core K-5 code, sub-parts included, in the official order", () => {
@@ -70,11 +89,16 @@ describe("the code lists", () => {
     expect(normalizeCode("ccss", "2.MD.8")).toBe("2.MD.C.8");
     expect(normalizeCode("ccss", " 3.NF.A.2.a ")).toBe("3.NF.A.2a");
     expect(findStandard("ccss", "9.ZZ.Z.9")).toBeNull();
-    expect(normalizeCode("tx", "2.5A")).toBeNull();
+    expect(txAliases("3.4F")).toEqual(["3.4(F)", "3.4.F"]);
+    expect(txAliases("K.4")).toEqual([]);
+    expect(normalizeCode("tx", "3.4(F)")).toBe("3.4F");
+    expect(normalizeCode("tx", "2.5.A")).toBe("2.5A");
+    expect(normalizeCode("tx", "2.12A")).toBeNull();
   });
 
   it("report aliases and typos as unknown, and skip frameworks not loaded yet", () => {
-    expect(unknownCodes({ ccss: ["2.MD.C.8"], tx: ["not-checked-yet"] })).toEqual([]);
+    expect(unknownCodes({ ccss: ["2.MD.C.8"], fl: ["not-checked-yet"] })).toEqual([]);
+    expect(unknownCodes({ tx: ["3.4F", "3.4(F)"] })).toEqual([{ framework: "tx", code: "3.4(F)", canonical: "3.4F" }]);
     expect(unknownCodes({ ccss: ["2.MD.8", "2.MD.C.80"] })).toEqual([
       { framework: "ccss", code: "2.MD.8", canonical: "2.MD.C.8" },
       { framework: "ccss", code: "2.MD.C.80" },
@@ -82,10 +106,29 @@ describe("the code lists", () => {
   });
 
   it("mark anything not fully in scope with a reason", () => {
-    for (const s of standardsFor("ccss")) {
+    for (const s of [...standardsFor("ccss"), ...standardsFor("tx")]) {
       if (s.in_scope !== "yes") expect(s.scope_note, s.code).toBeTruthy();
     }
     expect(standardByCode("ccss", "K.G.B.5").in_scope).toBe("no");
+  });
+});
+
+describe("the Texas crosswalk", () => {
+  it("links real codes, once each, with a known match", () => {
+    expect(validateCrosswalk("tx")).toEqual([]);
+  });
+
+  it("calls the fluency codes the same as Common Core's", () => {
+    const match = (code, ccss) => crosswalkFor("tx").find((l) => l.code === code && l.ccss_code === ccss)?.match;
+    expect(match("1.3D", "1.OA.C.6")).toBe("same");
+    expect(match("2.4A", "2.OA.B.2")).toBe("same");
+    expect(match("3.4F", "3.OA.C.7")).toBe("same");
+    // Texas money stops at coins to $1 in Grade 2; Common Core adds bills.
+    expect(match("2.5A", "2.MD.C.8")).toBe("narrower");
+  });
+
+  it("leaves process standards unlinked", () => {
+    expect(crosswalkFor("tx").filter((l) => /^[K1-5]\.1[A-G]$/.test(l.code))).toEqual([]);
   });
 });
 
@@ -143,13 +186,18 @@ describe("the fact fluency rows", () => {
     expect(ccss("facts-div-lastone")).toEqual(["3.OA.C.7"]);
     // 11s and 12s are a Florida and Virginia ask; Common Core stops at 10 x 10.
     expect(ccss("facts-mul-times12")).toEqual([]);
-    for (const r of fluency) for (const code of r.standards.ccss) expect(standardByCode("ccss", code).kind, `${r.id} ${code}`).toBe("fluency");
+    for (const r of fluency) {
+      for (const fw of ["ccss", "tx"]) {
+        for (const code of r.standards[fw]) expect(standardByCode(fw, code).kind, `${r.id} ${fw} ${code}`).toBe("fluency");
+      }
+    }
   });
 });
 
 describe("the load", () => {
   it("writes one row per code and one link per row and loaded code", () => {
-    expect(standardsDbRows()).toHaveLength(standardsFor("ccss").length);
+    expect(standardsDbRows()).toHaveLength(standardsFor("ccss").length + standardsFor("tx").length);
+    expect(crosswalkDbRows()).toHaveLength(crosswalkFor("tx").length);
     const links = blueprintStandardDbRows();
     expect(links.every((l) => LOADED_FRAMEWORKS.includes(l.framework))).toBe(true);
     expect(new Set(links.map((l) => `${l.blueprint_id}|${l.framework}|${l.code}`)).size).toBe(links.length);
@@ -168,6 +216,7 @@ describe("the load", () => {
     expect(sql).not.toContain("delete from public.standards");
     expect(loadSql({ prune: true })).toContain("delete from public.standards");
     expect(checkSql()).toContain("'missing code'");
+    expect(checkSql()).toContain("'changed link'");
   });
 });
 

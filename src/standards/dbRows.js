@@ -148,19 +148,41 @@ export function loadSql({ prune = false } = {}) {
 
 /**
  * A query that returns one row per difference between the files and the
- * database (missing, extra or changed codes; draft blueprint rows that differ
- * or are missing). No rows back means the database matches the repo.
+ * database (missing, extra or changed codes and crosswalk links; draft
+ * blueprint rows that differ or are missing). No rows back means the database matches the repo.
  */
 export function checkSql() {
   const standards = standardsDbRows();
   const blueprints = blueprintDbRows();
+  const crosswalk = crosswalkDbRows();
   const fws = LOADED_FRAMEWORKS.map(sqlLiteral).join(", ");
+  const xfws = LOADED_CROSSWALKS.map(sqlLiteral).join(", ");
+  const crosswalkChecks = crosswalk.length
+    ? `
+union all
+select 'missing link', f.framework, f.code || ' > ' || f.ccss_code from file_crosswalk f
+  left join public.standard_crosswalk x using (framework, code, ccss_code) where x.code is null
+union all
+select 'extra link', x.framework, x.code || ' > ' || x.ccss_code from public.standard_crosswalk x
+  left join file_crosswalk f using (framework, code, ccss_code) where f.code is null and x.framework in (${xfws})
+union all
+select 'changed link', f.framework, f.code || ' > ' || f.ccss_code from file_crosswalk f
+  join public.standard_crosswalk x using (framework, code, ccss_code)
+ where (x.match, x.note) is distinct from (f.match, f.note)`
+    : "";
   return `with file_standards (framework, code, summary, kind, in_scope, grade) as (values
 ${valuesList(standards, ["framework", "code", "summary", "kind", "in_scope", "grade"])}
 ),
 file_blueprints (id, title) as (values
 ${valuesList(blueprints, ["id", "title"])}
-)
+)${
+    crosswalk.length
+      ? `,
+file_crosswalk (framework, code, ccss_code, match, note) as (values
+${valuesList(crosswalk, ["framework", "code", "ccss_code", "match", "note"])}
+)`
+      : ""
+  }
 select 'missing code' as problem, f.framework, f.code from file_standards f
   left join public.standards s using (framework, code) where s.code is null
 union all
@@ -175,7 +197,7 @@ select 'missing blueprint row', null, b.id from file_blueprints b
   left join public.blueprint_rows r on r.id = b.id where r.id is null
 union all
 select 'changed draft blueprint row', null, b.id from file_blueprints b
-  join public.blueprint_rows r on r.id = b.id where r.status = 'draft' and r.title is distinct from b.title
+  join public.blueprint_rows r on r.id = b.id where r.status = 'draft' and r.title is distinct from b.title${crosswalkChecks}
 order by 1, 2, 3;
 `;
 }

@@ -17,6 +17,8 @@
  * Pure: no network, no DOM.
  */
 import ccss from "./ccss.json" with { type: "json" };
+import tx from "./tx.json" with { type: "json" };
+import txCrosswalk from "./crosswalk/tx.json" with { type: "json" };
 
 /** Every framework the app tags, in display order. Kid profiles store a state; any other state reads as Common Core. */
 export const FRAMEWORKS = Object.freeze(["ccss", "tx", "fl", "va", "ga"]);
@@ -35,10 +37,10 @@ export const SCOPES = Object.freeze(["yes", "partly", "no"]);
 export const MATCHES = Object.freeze(["same", "partly", "broader", "narrower"]);
 
 /** Framework → its file. A state joins here when its list lands. */
-const FILES = { ccss };
+const FILES = { ccss, tx };
 
-/** Crosswalk files, framework → { links: [...] }. None loaded yet. */
-const CROSSWALKS = {};
+/** Crosswalk files, framework → { links: [...] }, one per state. */
+const CROSSWALKS = { tx: txCrosswalk };
 
 export const LOADED_FRAMEWORKS = Object.freeze(Object.keys(FILES));
 
@@ -62,6 +64,18 @@ export function ccssAliases(code) {
   return aliases;
 }
 
+const TX_CODE = /^([K1-5])\.(\d{1,2})([A-L])?$/;
+
+/** Other ways a Texas code is written: 3.4(F) and 3.4.F for 3.4F. A code with no letter (K.4) has none. */
+export function txAliases(code) {
+  const m = TX_CODE.exec(code);
+  if (!m || !m[3]) return [];
+  const [, grade, ks, letter] = m;
+  return [`${grade}.${ks}(${letter})`, `${grade}.${ks}.${letter}`];
+}
+
+const DERIVED_ALIASES = { ccss: ccssAliases, tx: txAliases };
+
 function withDerived(framework, file) {
   const rows = Array.isArray(file?.standards) ? file.standards : [];
   return Object.freeze(
@@ -69,7 +83,7 @@ function withDerived(framework, file) {
       Object.freeze({
         ...row,
         framework,
-        aliases: Object.freeze([...(row.aliases || []), ...(framework === "ccss" ? ccssAliases(row.code) : [])]),
+        aliases: Object.freeze([...(row.aliases || []), ...(DERIVED_ALIASES[framework]?.(row.code) || [])]),
         edition: row.edition || file.edition,
         source_url: row.source_url || file.source_url,
         sort_order: i,
@@ -177,9 +191,33 @@ export function validateStandardsFile(file, framework = file?.framework) {
       errors.push(`${at}: summary must be one line of 10 to 200 characters`);
     }
     if (framework === "ccss" && !CCSS_CODE.test(row.code || "")) errors.push(`${at}: not a long-form Common Core code`);
+    if (framework === "tx" && !TX_CODE.test(row.code || "")) errors.push(`${at}: not a Texas code like 3.4F`);
   }
   for (const row of rows) {
     if (row.parent && !seen.has(row.parent)) errors.push(`${row.code}: parent ${row.parent} is not in the file`);
+  }
+  return errors;
+}
+
+/**
+ * Errors in one state's crosswalk, as strings: each link names a code in the
+ * state's list and a code in the Common Core list (exact, not an alias), a
+ * known match, and appears once.
+ */
+export function validateCrosswalk(framework, file = CROSSWALKS[framework]) {
+  const errors = [];
+  if (framework === "ccss" || !FRAMEWORKS.includes(framework)) errors.push(`no crosswalk for "${framework}"`);
+  const links = Array.isArray(file?.links) ? file.links : null;
+  if (!links || links.length === 0) return [...errors, "no links"];
+  const seen = new Set();
+  for (const l of links) {
+    const at = `${l?.code} -> ${l?.ccss_code}`;
+    if (!standardByCode(framework, l.code)) errors.push(`${at}: ${framework} code not in the list`);
+    if (!standardByCode("ccss", l.ccss_code)) errors.push(`${at}: Common Core code not in the list`);
+    if (!MATCHES.includes(l.match)) errors.push(`${at}: match "${l.match}"`);
+    if (l.note !== undefined && (typeof l.note !== "string" || l.note.length < 3 || l.note.length > 200)) errors.push(`${at}: note must be one line`);
+    if (seen.has(at)) errors.push(`${at}: duplicate link`);
+    seen.add(at);
   }
   return errors;
 }

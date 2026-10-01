@@ -5,7 +5,7 @@ import { useAuth } from "../useAuth";
 import { useIsAdmin } from "../useIsAdmin";
 import { TOPIC_LABELS } from "../skills/catalog.js";
 import { listVersionSwitch, setLiveVersion, LIVE_VERSIONS } from "./versionSwitchApi.js";
-import { previewEnabled, setPreviewEnabled } from "../itemBank/versionSwitch.js";
+import { DEFAULT_LIVE_VERSION, previewEnabled, setPreviewEnabled } from "../itemBank/versionSwitch.js";
 
 /**
  * /admin/switch — which bank version each skill serves (plan section 10).
@@ -184,7 +184,8 @@ export default function VersionSwitchPanel() {
             <tbody>
               {modeIds.map((modeId) => {
                 const row = rows.get(modeId);
-                const live = row?.liveVersion || "v1";
+                // No row: what the loader serves (Math Facts has no v1 rows, so it is live at v2).
+                const live = row?.liveVersion || DEFAULT_LIVE_VERSION[modeId] || "v1";
                 const isPending = pending?.modeId === modeId;
                 return (
                   <tr key={modeId} className={`border-t border-gray-100 ${isPending ? "bg-violet-50" : ""}`}>
@@ -192,7 +193,7 @@ export default function VersionSwitchPanel() {
                       <span className="font-semibold text-slate-800">{TOPIC_LABELS[modeId] || modeId}</span>
                       <span className="ml-2 font-mono text-xs text-slate-400">{modeId}</span>
                       {!row && (
-                        <span className="ml-2 text-[10px] uppercase text-slate-400" title="No row yet; the loader treats it as v1">
+                        <span className="ml-2 text-[10px] uppercase text-slate-400" title={`No row yet; the loader treats it as ${live}`}>
                           no row
                         </span>
                       )}

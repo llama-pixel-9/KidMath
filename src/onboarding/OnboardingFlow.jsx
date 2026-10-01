@@ -409,7 +409,7 @@ function PlanStep({ kidName, onFree }) {
           <h2 className="font-display font-medium text-2xl text-ink m-0">Free</h2>
           <p className="font-display font-semibold text-4xl text-ink mt-3 mb-4">$0</p>
           <ul className="m-0 p-0 list-none space-y-2 text-[15px] font-semibold text-ink">
-            <li>5 games — addition, subtraction, multiplication, division, counting</li>
+            <li>6 games — addition, subtraction, multiplication, division, counting, math facts</li>
             <li>On the web, iPad, and iPhone</li>
           </ul>
           <div className="flex-1" />
@@ -446,7 +446,7 @@ function PlanStep({ kidName, onFree }) {
             )}
           </p>
           <ul className="m-0 p-0 list-none space-y-2 text-[15px] font-semibold text-ink">
-            <li>All 22 games, K–5</li>
+            <li>All 23 games, K–5</li>
             <li>Every kid in your household — one price</li>
             <li>Printable worksheets for any game, with answer keys</li>
             <li>Progress syncs across web, iPad, and iPhone</li>

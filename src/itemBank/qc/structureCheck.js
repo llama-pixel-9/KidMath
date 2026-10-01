@@ -170,7 +170,11 @@ export function checkStructure(item) {
     // still fails. (A "missing" number equalling the answer is the older bank's
     // answer-in-b convention, not a real absence.)
     const present = [a, b].filter((n) => nums.includes(n) || n === answer);
-    if (present.length === 0) {
+    // A picture-first item states its numbers in the picture: the counters
+    // on a ten frame, the rows of an array.
+    const d = item.question?.display || {};
+    const pictured = d.filled != null || d.array != null;
+    if (present.length === 0 && !pictured) {
       problems.push(`neither payload number (${a}, ${b}) appears in the prompt`);
     }
   }

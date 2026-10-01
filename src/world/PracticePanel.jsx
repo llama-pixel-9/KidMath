@@ -1,4 +1,5 @@
-import { getModeConfig, MODE_GROUPS } from "../modes/index.js";
+import { getModeConfig, visibleModeGroups } from "../modes/index.js";
+import { useHiddenTopics } from "../hooks/useHiddenTopics.js";
 import { Sheet, CloseButton } from "./ui";
 
 /**
@@ -8,8 +9,10 @@ import { Sheet, CloseButton } from "./ui";
  * this child-facing surface; the /play route handles it parent-side.
  */
 export default function PracticePanel({ region, onClose, onPickMode }) {
+  const hidden = useHiddenTopics();
   if (!region) return null;
-  const groups = (region.signpost?.groups ?? [region.groupId]).map((id) => MODE_GROUPS.find((g) => g.id === id)).filter(Boolean);
+  const shown = visibleModeGroups(hidden);
+  const groups = (region.signpost?.groups ?? [region.groupId]).map((id) => shown.find((g) => g.id === id)).filter(Boolean);
   return (
     <Sheet label={`Practice at ${region.title}`} bottom>
       <div className="p-4 sm:p-5">

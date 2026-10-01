@@ -28,7 +28,7 @@ import GoogleSignInButton from "./auth/GoogleSignInButton";
  * copy — see docs/legal-implementation.md step 5 before changing it.
  */
 const FEATURES = [
-  { icon: Sparkles, text: "All 22 practice modes, Grades 1-4" },
+  { icon: Sparkles, text: "All 23 practice modes, Grades 1-4" },
   { icon: Printer, text: "Printable PDF worksheets with answer keys" },
   { icon: Cloud, text: "Progress syncs across web, iPad, and iPhone" },
   { icon: Users, text: "Every child in your household — one price" },
@@ -208,7 +208,7 @@ export default function PaywallModal({ onClose }) {
 
         <p className="mt-4 text-xs text-slate-400 text-center leading-relaxed">
           One subscription covers every child in your household. Addition, subtraction,
-          multiplication, division, and counting stay free forever.
+          multiplication, division, counting, and math facts stay free forever.
         </p>
       </motion.div>
     </motion.div>

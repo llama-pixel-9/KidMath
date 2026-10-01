@@ -12,12 +12,15 @@ vi.mock("../supabaseClient.js", () => ({
 }));
 
 import {
+  DEFAULT_LIVE_VERSION,
   isServable,
   loadVersionSwitch,
   previewEnabled,
   setPreviewEnabled,
+  topicVisible,
 } from "../itemBank/versionSwitch.js";
 import { SEED_ITEMS } from "../itemBank/bundle.js";
+import { V2_ONLY_MODE_IDS } from "../modes/index.js";
 
 /** A minimal Storage stand-in: vitest runs in Node, which has none. */
 function fakeStorage() {
@@ -99,9 +102,45 @@ describe("isServable", () => {
 
   it("serves every bundled seed item, which predates the version field", () => {
     const empty = new Map();
-    expect(SEED_ITEMS.length).toBeGreaterThan(0);
-    expect(SEED_ITEMS.every((item) => isServable(item, empty))).toBe(true);
-    expect(SEED_ITEMS.every((item) => isServable(item, empty, { preview: true }))).toBe(true);
+    const v1 = SEED_ITEMS.filter((item) => item.version == null);
+    expect(v1.length).toBeGreaterThan(0);
+    expect(v1.every((item) => isServable(item, empty))).toBe(true);
+    expect(v1.every((item) => isServable(item, empty, { preview: true }))).toBe(true);
+  });
+
+  it("serves the bundled Math Facts rows (v2 only) with no switch row, and holds them back at v1", () => {
+    const v2 = SEED_ITEMS.filter((item) => item.version != null);
+    expect(v2.length).toBeGreaterThan(0);
+    expect(v2.every((item) => item.modeId === "mathFacts" && Number(item.version) === 2)).toBe(true);
+    expect(v2.every((item) => isServable(item, new Map()))).toBe(true);
+    expect(v2.every((item) => isServable(item, null))).toBe(true);
+    expect(v2.some((item) => isServable(item, new Map([["mathFacts", "v1"]])))).toBe(false);
+    expect(v2.some((item) => isServable(item, new Map([["mathFacts", "preview"]])))).toBe(false);
+    expect(v2.every((item) => isServable(item, new Map([["mathFacts", "v2"]])))).toBe(true);
+    expect(v2.every((item) => isServable(item, new Map([["mathFacts", "preview"]]), { preview: true }))).toBe(true);
+  });
+
+  it("defaults only the v2-only topics to v2; every other topic with no row is v1", () => {
+    expect(Object.keys(DEFAULT_LIVE_VERSION).sort()).toEqual([...V2_ONLY_MODE_IDS].sort());
+    expect(Object.values(DEFAULT_LIVE_VERSION).every((v) => v === "v2")).toBe(true);
+    expect(isServable({ modeId: "money", reviewStatus: "approved", version: 2 }, new Map())).toBe(false);
+  });
+});
+
+describe("topicVisible", () => {
+  it("always shows a topic with v1 rows", () => {
+    expect(topicVisible("money", new Map())).toBe(true);
+    expect(topicVisible("money", new Map([["money", "v2"]]))).toBe(true);
+  });
+
+  it("shows Math Facts with no row or at v2, to preview browsers at preview, never at v1", () => {
+    const v2Only = { v2Only: true };
+    expect(topicVisible("mathFacts", new Map(), v2Only)).toBe(true);
+    expect(topicVisible("mathFacts", null, v2Only)).toBe(true);
+    expect(topicVisible("mathFacts", new Map([["mathFacts", "v1"]]), v2Only)).toBe(false);
+    expect(topicVisible("mathFacts", new Map([["mathFacts", "preview"]]), v2Only)).toBe(false);
+    expect(topicVisible("mathFacts", new Map([["mathFacts", "preview"]]), { ...v2Only, preview: true })).toBe(true);
+    expect(topicVisible("mathFacts", new Map([["mathFacts", "v2"]]), v2Only)).toBe(true);
   });
 });
 

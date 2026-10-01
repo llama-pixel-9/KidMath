@@ -9,6 +9,7 @@ import {
 import { checkAnswer } from "../mathEngine";
 import { validateQuestion } from "../modes/itemQuality";
 import { getModeConfig } from "../modes";
+import { asciiOp } from "../opSigns.js";
 
 /**
  * The point of these tests: a format transform that gets the mathematics wrong
@@ -45,9 +46,11 @@ const base = (over = {}) => ({
 
 /** Evaluate an "a op b" string so we can check a claim independently. */
 function evalExpr(text) {
-  const m = text.match(/^\s*(\d+)\s*([+\-x/])\s*(\d+)\s*$/);
+  // Prompts typeset their signs ("8 × 3"); choice strings may still be ASCII.
+  const m = text.match(/^\s*(\d+)\s*([+\-−x×/÷])\s*(\d+)\s*$/);
   if (!m) return null;
-  const [, a, op, b] = m;
+  const [, a, , b] = m;
+  const op = asciiOp(m[2]);
   const x = Number(a);
   const y = Number(b);
   return op === "+" ? x + y : op === "-" ? x - y : op === "x" ? x * y : x / y;

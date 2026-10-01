@@ -251,16 +251,24 @@ struct QuestionDisplayView: View {
     // MARK: - 5. Vertical column arithmetic
 
     private var isVertical: Bool {
-        guard let op = question["op"] as? String, op == "+" || op == "−" || op == "-",
+        // `display.layout` overrides the size rule, as on the web: "vertical"
+        // stacks a one-digit fact (and a times fact), "horizontal" keeps a
+        // teen fact sideways.
+        let layout = (question["display"] as? [String: Any])?["layout"] as? String
+        if layout == "horizontal" { return false }
+        let stacked = layout == "vertical"
+        let isTimes = stacked && (question["op"] as? String == "×" || question["op"] as? String == "x")
+        guard let op = question["op"] as? String, op == "+" || op == "−" || op == "-" || isTimes,
               let a = (question["a"] as? NSNumber)?.intValue,
               let b = (question["b"] as? NSNumber)?.intValue else { return false }
         // The column layout claims "a op b = ?", so the answer must BE that
         // result. Unknown-addend/compare items ("10 + ? = 17", answer 7) also
         // carry numeric a/b — rendering them vertically shows a different
         // question than the one being scored (same guard as the web's
-        // isVertical in MathExplorer.jsx).
+        // isVertical in QuestionDisplay.jsx).
         guard let answer = (question["answer"] as? NSNumber)?.intValue else { return false }
-        return (a >= 10 || b >= 10) && answer == (op == "+" ? a + b : a - b)
+        let computed = op == "+" ? a + b : isTimes ? a * b : a - b
+        return (stacked || a >= 10 || b >= 10) && answer == computed
     }
 
     private var verticalArithmetic: some View {
@@ -272,7 +280,7 @@ struct QuestionDisplayView: View {
         return VStack(alignment: .trailing, spacing: 2) {
             digitsRow(a)
             HStack(spacing: 0) {
-                Text(op)
+                Text(AnswerFormatting.opGlyph(op))
                     .font(.system(size: 40, weight: .heavy, design: .rounded))
                     .foregroundStyle(theme.textPrimary)
                 Spacer(minLength: 8)
@@ -315,7 +323,7 @@ struct QuestionDisplayView: View {
         let a = question["a"].map(AnswerFormatting.text) ?? "?"
         let op = question["op"] as? String ?? "+"
         let b = question["b"].map(AnswerFormatting.text) ?? "?"
-        return "\(a) \(op) \(b) = ?"
+        return "\(a) \(AnswerFormatting.opGlyph(op)) \(b) = ?"
     }
 
     private func caption(_ text: String) -> some View {

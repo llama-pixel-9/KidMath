@@ -4,6 +4,7 @@ import { emojiPromptLines } from "../promptLayout";
 import { FIGURE_COLORS } from "./kit";
 import { useTheme } from "../useTheme";
 import { getFigure } from "./figureRegistry.js";
+import { asciiOp, opGlyph } from "../opSigns.js";
 
 // The question card's content — prompt, figure, sub-prompt, vertical layouts —
 // exactly as the session shows it. Extracted from MathExplorer so the admin
@@ -363,12 +364,12 @@ export default function QuestionDisplay({ question, modeColor, feedback, revealA
   // item with a subPrompt renders its full equation, vertically when the
   // claim fits that shape, and always shows the sub-prompt instruction.
   if (promptText && subPrompt && !hasVerbalPrompt) {
-    const claim = promptText.match(/^\s*(\d+)\s*([+−])\s*(\d+)\s*=\s*(\d+)\s*$/);
+    const claim = promptText.match(/^\s*(\d+)\s*([+−-])\s*(\d+)\s*=\s*(\d+)\s*$/);
     const bigClaim = claim && (Number(claim[1]) >= 10 || Number(claim[3]) >= 10 || Number(claim[4]) >= 10);
     return (
       <div className="text-center space-y-4">
         {bigClaim ? (
-          <VerticalEquation a={claim[1]} op={claim[2]} b={claim[3]} result={claim[4]} theme={theme} />
+          <VerticalEquation a={claim[1]} op={opGlyph(claim[2])} b={claim[3]} result={claim[4]} theme={theme} />
         ) : (
           <p
             className={`font-extrabold ${theme.textPrimary}`}
@@ -391,12 +392,19 @@ export default function QuestionDisplay({ question, modeColor, feedback, revealA
   // answer 7) also carry numeric a/b — laying those out as "10 + 17 = ?"
   // shows a different question than the one being scored, so any item whose
   // answer isn't the computed result must fall through to its promptText.
+  // The minus is stored as "-" or "−"; both stack, and both draw as "−".
+  // `display.layout` overrides the size rule: "vertical" stacks a one-digit
+  // fact (and a times fact), "horizontal" keeps a teen fact sideways.
+  const vop = asciiOp(q.op);
+  const layout = q.display?.layout;
+  const stacked = layout === "vertical";
+  const computed = vop === "+" ? q.a + q.b : vop === "-" ? q.a - q.b : vop === "x" && stacked ? q.a * q.b : NaN;
   const isVertical =
-    (q.op === "+" || q.op === "−") &&
+    layout !== "horizontal" &&
     typeof q.a === "number" &&
     typeof q.b === "number" &&
-    (q.a >= 10 || q.b >= 10) &&
-    Number(q.answer) === (q.op === "+" ? q.a + q.b : q.a - q.b);
+    (stacked || q.a >= 10 || q.b >= 10) &&
+    Number(q.answer) === computed;
 
   if (isVertical) {
     const aDigits = String(q.a).split("");
@@ -420,7 +428,7 @@ export default function QuestionDisplay({ question, modeColor, feedback, revealA
           {Array.from({ length: padA }, (_, i) => <span key={`pa${i}`} />)}
           {aDigits.map((d, i) => <span key={`a${i}`}>{d}</span>)}
 
-          <span className="text-[0.85em]">{q.op}</span>
+          <span className="text-[0.85em]">{opGlyph(q.op)}</span>
           {Array.from({ length: padB }, (_, i) => <span key={`pb${i}`} />)}
           {bDigits.map((d, i) => <span key={`b${i}`}>{d}</span>)}
 
@@ -478,7 +486,7 @@ export default function QuestionDisplay({ question, modeColor, feedback, revealA
       <span
         className={`${modeColor} text-ink w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center text-3xl sm:text-4xl`}
       >
-        {q.op}
+        {opGlyph(q.op)}
       </span>
       <span>{q.b}</span>
       <span className={theme.textMuted}>=</span>

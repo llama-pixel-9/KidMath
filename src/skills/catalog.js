@@ -73,6 +73,7 @@ export const TOPIC_LABELS = {
   angles: "Angles",
   linesShapes: "Lines & Shapes",
   volumeCoordinates: "Volume & Coordinates",
+  mathFacts: "Math Facts",
 };
 
 const ONE_DIGIT = [1, 9];
@@ -254,6 +255,30 @@ const OPERATION_SKILLS = [
   banked("div-remainders", "4", "division", "4.NBT.B.6", "Find the quotient and the remainder",
     { families: BOTH, subskills: ["remainders"], structureTypes: ["divisionRemainderLeft", "divisionRemainderQuotient", "remainderBounded"], levels: [7, 10] },
     null, 8, "promptShort"),
+];
+
+// Math Facts: the basic facts by band, drawn from the topic's own bank rows
+// (src/facts/). Play only: a band is a closed set (21 addition facts to 5,
+// 48 with 11 or 12), too few for three bank sheets that never repeat, and the
+// operation topics already print the same facts as drills.
+const facts = (subskill, levels, numbers) => ({
+  families: BOTH,
+  subskills: [subskill],
+  levels,
+  ...(numbers ? { numbers } : {}),
+});
+export const PLAY_ONLY_SKILLS = [
+  banked("facts-add-to5", "K", "mathFacts", "K.OA.A.5", "Addition facts to 5", facts("addFacts", [1, 2], { max: 5 }), null, 1, "horizontal"),
+  banked("facts-sub-to5", "K", "mathFacts", "K.OA.A.5", "Subtraction facts to 5", facts("subFacts", [1, 2], { max: 5 }), null, 1, "horizontal"),
+  banked("facts-add-to10", "1", "mathFacts", "1.OA.C.6", "Addition facts to 10", facts("addFacts", [2, 3], { max: 10 }), null, 2, "horizontal"),
+  banked("facts-sub-to10", "1", "mathFacts", "1.OA.C.6", "Subtraction facts to 10", facts("subFacts", [2, 3], { max: 10 }), null, 2, "horizontal"),
+  banked("facts-add-to20", "2", "mathFacts", "2.OA.B.2", "Addition facts to 20", facts("addFacts", [4, 6], { max: 20 }), null, 4, "horizontal"),
+  banked("facts-sub-to20", "2", "mathFacts", "2.OA.B.2", "Subtraction facts to 20", facts("subFacts", [4, 6], { max: 20 }), null, 4, "horizontal"),
+  banked("facts-mul-to10", "3", "mathFacts", "3.OA.C.7", "Multiplication facts to 10 × 10", facts("mulFacts", [7, 8], { max: 100 }), null, 7, "horizontal"),
+  banked("facts-div-to10", "3", "mathFacts", "3.OA.C.7", "Division facts to 100 ÷ 10", facts("divFacts", [7, 8], { max: 100 }), null, 7, "horizontal"),
+  // 11s and 12s: Florida and Virginia only, so no Common Core code.
+  { ...banked("facts-mul-to12", "4", "mathFacts", null, "Multiplication facts with 11 and 12", facts("mulFacts", [9, 10]), null, 9, "horizontal"), ccss: [] },
+  { ...banked("facts-div-to12", "4", "mathFacts", null, "Division facts with 11 and 12", facts("divFacts", [9, 10]), null, 9, "horizontal"), ccss: [] },
 ];
 
 export const WORKSHEET_SKILLS = [...OPERATION_SKILLS, ...PROMPT_SKILLS];

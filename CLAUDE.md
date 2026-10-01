@@ -254,8 +254,9 @@ from StoreKit — **no price literal in `src/`**. Functions find prices by Strip
 lookup key (`larkit_monthly` / `larkit_annual`), so a price change is a
 dashboard-only act: new price with the same lookup key, archive the old one.
 Free tier is **both platforms** (decided 2026-08-02 with the §20 soft
-paywall): addition, subtraction, multiplication, division, counting.
-Paywalled: the other 17 modes, PDF worksheets, and cloud sync.
+paywall): addition, subtraction, multiplication, division, counting, and
+Math Facts (added 2026-10-01). Paywalled: every other mode, PDF worksheets,
+and cloud sync.
 Price identically on both platforms (Apple requires it).
 Product IDs: `io.larkit.app.premium.{monthly,annual}`.
 

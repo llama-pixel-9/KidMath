@@ -54,6 +54,36 @@ masterySnapshot, challenge })`. Without skill options it is the ladder session.
 - **A skill session NEVER moves the saved `level`.** `MathExplorer` saves the
   stored level back. Pinned by e2e.
 
+## Math Facts practice (`src/facts/factPractice.js`, `factMarks.js`)
+A Math Facts skill session (not its Fledging Flight) picks FACTS, not bank
+rows. A fact (trackKey) is **ready** when fast, or answered fast earlier
+today (`initFluency(skills, marks, { now, grade })`). Of the rest, the
+session works on 8 facts from the first 4 strategy groups, taken in turn.
+A strategy is the fact's group NUMBER (`f.group`), shared across bands and
+with the partner operation ("Plus zero" and "Zero" are both 1), never the
+group name, or a mixed + and − session drills zero facts across the two
+skills. The pick steers away from the strategy this skill asked last and the
+one asked just before (a 2-strategy mix like K can still pair two). A fact answered right
+within the grade's limit this session is cleared and the next of its group
+moves in; one asked 3 times without that waits for the next session. Every
+4th question of a skill is a review: a ready or cleared fact not just
+asked, then its turnaround asked plain (5 + 8 right after 8 + 5; it does not
+take a turn). Elsewhere add/mul facts come in either order. Do not go back
+to "the first group until it is fast": the fast mark needs 2 days, so that
+drilled one group (× 0) for a whole day (Sai, Oct 1). `recordSkillAnswer`
+needs the response time for the clear. Each fact is served from its bank row
+(`mathFacts-v2-<fact>-<format>`) when in memory, else built by
+`buildFactQuestion` — same payload. ~20 questions unless the caller sets a
+size. The question carries `factId` / `factFormat` (top level, never in
+metadata: a bank question inherits the generator's metadata scaffold), and
+the practice log copies them onto the attempt.
+The per-fact **fast** mark: right within 3 s (5 s for K and Grade 1 sessions)
+on 2 different days, recall formats only (plain, stacked, missing), no
+retries, no hint-assisted right answers. It lives in the Math Facts mastery
+map under `__facts` (keyed by trackKey), folded by the same `applySession`,
+merged per fact on sign-in, and **never gates a grade or a skill star**.
+Shown on the topic sheet, the end card and the parent report.
+
 ## Mastery (`src/skills/mastery.js`) — pure, for iOS too
 One reducer, `applySession(map, sessionRecord)`; `deriveMastery` is its fold
 over the practice log (the backfill for kids who played before skills, and

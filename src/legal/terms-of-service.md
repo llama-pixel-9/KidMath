@@ -24,7 +24,7 @@ In these Terms, **"including"** means "including without limitation," and headin
 
 **1.1 Description.** {{PRODUCT_NAME}} is an educational platform for children in approximately kindergarten through fifth grade. The Service provides adaptive mathematics practice activities, progress tracking, and printable practice materials. **The scope of the Service is as described in these Terms and is qualified by Section 13.**
 
-**1.2 Free and paid tiers.** Certain practice modes (currently addition, subtraction, multiplication, division, and counting) are available at no charge (the **"Free Tier"**). The Free Tier is available on the web without an account. Additional practice modes, printable worksheets with answer keys, and cross-device progress synchronization require a paid subscription (**"{{PRODUCT_NAME}} Premium"** or the **"Subscription"**).
+**1.2 Free and paid tiers.** Certain practice modes (currently addition, subtraction, multiplication, division, counting, and math facts) are available at no charge (the **"Free Tier"**). The Free Tier is available on the web without an account. Additional practice modes, printable worksheets with answer keys, and cross-device progress synchronization require a paid subscription (**"{{PRODUCT_NAME}} Premium"** or the **"Subscription"**).
 
 **1.3 Changes to the Service.** We may modify, suspend, or discontinue any part of the Service at any time. If we discontinue a material feature for which you are then paying, Section 7.7 applies.
 

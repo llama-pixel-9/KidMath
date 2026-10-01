@@ -100,6 +100,7 @@ export const WIDGETS = {
       filledB: q.display?.filledB ?? 0,
       frames: q.display?.frames ?? 1,
       mode: q.display?.frameMode || "count",
+      takeAway: q.display?.takeAway ?? 0,
     }),
   },
 };

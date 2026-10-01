@@ -4,7 +4,7 @@ import SwiftUI
 /// AnalogClock.jsx, AngleFigure.jsx, DataGraph.jsx. Submission semantics match
 /// the web exactly (all numeric through the shared submit path).
 
-// MARK: - Number line (locate: tap a tick; jump: read a hop's distance)
+// MARK: - Number line (locate: tap a tick; jump: type a hop's length)
 
 struct NumberLineWidget: View {
     @Environment(\.theme) private var theme
@@ -13,6 +13,9 @@ struct NumberLineWidget: View {
     let submit: (Any) -> Void
 
     @State private var picked: Double?
+    /// Jump mode's typed length. The hop's two ends are drawn, so the widget
+    /// never submits their distance itself (that would hand over the answer).
+    @State private var entry = ""
 
     private var minValue: Double { (display["min"] as? NSNumber)?.doubleValue ?? 0 }
     private var maxValue: Double { (display["max"] as? NSNumber)?.doubleValue ?? 10 }
@@ -53,11 +56,17 @@ struct NumberLineWidget: View {
                     .foregroundStyle(theme.textSecondary)
             }
 
-            CheckButton(enabled: lineMode == "jump" || picked != nil) {
-                if lineMode == "jump", let from, let to {
-                    submit(abs(to - from))
-                } else if let picked {
-                    submit(picked == picked.rounded() ? Int(picked) as Any : picked as Any)
+            if lineMode == "jump" {
+                EntryReadout(entry: entry)
+                DigitPadView(entry: $entry) {
+                    if let value = Int(entry) { submit(value) }
+                    entry = ""
+                }
+            } else {
+                CheckButton(enabled: picked != nil) {
+                    if let picked {
+                        submit(picked == picked.rounded() ? Int(picked) as Any : picked as Any)
+                    }
                 }
             }
         }

@@ -48,7 +48,8 @@ describe("worksheet skill catalog", () => {
 
   it("every mode and every grade has skills, and every topic has a plain name", () => {
     for (const mode of MODE_IDS) {
-      expect(WORKSHEET_SKILLS.some((s) => s.mode === mode), mode).toBe(true);
+      // Math Facts is play-only: the operation topics print the same facts.
+      if (mode !== "mathFacts") expect(WORKSHEET_SKILLS.some((s) => s.mode === mode), mode).toBe(true);
       expect(TOPIC_LABELS[mode], mode).toBeTruthy();
     }
     for (const grade of GRADES) {

@@ -24,7 +24,7 @@ export default function PremiumGate({ title = "This game is part of larkit Premi
         </div>
         <h1 className={`text-2xl font-semibold font-display ${theme.textPrimary}`}>{title}</h1>
         <p className={`mt-2 ${theme.textSecondary}`}>
-          Addition, subtraction, multiplication, division, and counting are free forever. Premium
+          Addition, subtraction, multiplication, division, counting, and math facts are free forever. Premium
           unlocks all 25 modes, printable worksheets, and progress sync — for every child in your
           household.
         </p>

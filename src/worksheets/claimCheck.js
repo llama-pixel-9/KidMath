@@ -1,4 +1,5 @@
-/* Does a sheet keep its title's promise? Pure — no imports.
+/* Does a sheet keep its title's promise? Pure — its one import is the pure
+ * sign table.
  *
  * `checkItems(items, claim)` returns a list of human-readable violations;
  * empty means the sheet is honest. The same `claim` object drives the
@@ -6,11 +7,9 @@
  * not a re-run of the code that built the items.
  */
 
-const ASCII_OP = { "−": "-", "–": "-", "×": "x", "*": "x", "÷": "/" };
+import { asciiOp } from "../opSigns.js";
 
-export function asciiOp(op) {
-  return ASCII_OP[op] || op;
-}
+export { asciiOp };
 
 /** True when column arithmetic has to carry (+) or borrow (−). */
 export function regroups(a, b, op) {

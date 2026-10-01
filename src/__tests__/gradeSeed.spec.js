@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { startingLevelFor, gradeFitFor, gradeIndex, parseSpan, MAX_SEEDED_LEVEL, gradeWorkForLevel } from "../gradeSeed.js";
+import { startingLevelFor, gradeFitFor, gradeIndex, parseSpan, MAX_SEEDED_LEVEL, gradeWorkForLevel, GRADE_BAND_LEVELS } from "../gradeSeed.js";
 import { MODE_MAX_LEVELS, maxLevelForMode, maxSeededLevelForMode } from "../modeLevels.js";
 import { getModeConfig } from "../modes/index.js";
 import { GRADE_SPANS } from "../engagement/gradeSpans.js";
@@ -37,7 +37,8 @@ describe("gradeSeed", () => {
       for (const g of ["K", "1st", "2nd", "3rd", "4th", "5th", "6th"]) {
         const lv = startingLevelFor(mode, g);
         expect(lv).toBeGreaterThanOrEqual(1);
-        expect(lv).toBeLessThanOrEqual(MAX_SEEDED_LEVEL);
+        // A grade-band topic (Math Facts) seeds each grade at its own band.
+        expect(lv).toBeLessThanOrEqual(GRADE_BAND_LEVELS[mode] ? maxLevelForMode(mode) : MAX_SEEDED_LEVEL);
       }
     }
   });

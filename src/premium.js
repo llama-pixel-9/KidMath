@@ -5,7 +5,8 @@ import { normalizePlanPricing } from "./legal/disclosures";
  * Premium split (pricing decision 2026-07-21; free tier extended to iOS
  * 2026-08-02 with the §20 soft paywall — free is a real plan on both
  * platforms): the four operations + counting stay unlimited and free forever
- * on web and iOS — the top of the funnel. Everything else (the other 17
+ * on web and iOS — the top of the funnel. Math Facts joined them on
+ * 2026-10-01 (Sai's call on the fact fluency build). Everything else (the other 17
  * modes, PDF worksheet export, cross-device cloud sync) is premium:
  * $8.99/month or $54.99/year (49% off), every child in the household
  * included, 14-day trial.
@@ -16,7 +17,7 @@ import { normalizePlanPricing } from "./legal/disclosures";
  *
  * Mirrored by StoreService.freeModeIds on iOS — keep the two lists identical.
  */
-export const FREE_MODE_IDS = ["addition", "subtraction", "multiplication", "division", "counting"];
+export const FREE_MODE_IDS = ["addition", "subtraction", "multiplication", "division", "counting", "mathFacts"];
 
 /**
  * Launch switch. The paywall is OFF unless the deploy explicitly sets

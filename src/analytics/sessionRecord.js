@@ -6,6 +6,8 @@
  * practice_sessions, so the parent report counts iPad sessions too.
  */
 
+import { opGlyph } from "../opSigns.js";
+
 const MAX_ATTEMPTS_PER_SESSION = 60;
 /** A tab left open overnight must not become "8 hours of practice". */
 export const MAX_SESSION_MS = 30 * 60 * 1000;
@@ -29,7 +31,7 @@ export function answerText(value) {
 export function questionText(q) {
   const prompt = q?.display?.promptText;
   if (prompt) return String(prompt).replace(/\s+/g, " ").trim();
-  if (q?.a != null && q?.op && q?.b != null) return `${q.a} ${q.op} ${q.b} = ?`;
+  if (q?.a != null && q?.op && q?.b != null) return `${q.a} ${opGlyph(q.op)} ${q.b} = ?`;
   if (q?.prompt) return String(q.prompt);
   return "";
 }
@@ -77,6 +79,9 @@ export function appendAttempt(record, { question, submitted, correct, wasRetry, 
     itemId: question?.metadata?.itemId || null,
     // The skill this question was served for — what mastery is credited to.
     ...(question?.skillId ? { skillId: question.skillId } : {}),
+    // A Math Facts question's fact and format — what its fast mark is
+    // credited to (facts/factMarks.js; a bank row's id says the same).
+    ...(question?.factId ? { factId: question.factId, factFormat: question.factFormat || null } : {}),
     // The kid opened the hint pane before answering (feature: hints).
     hint: Boolean(hintUsed),
   };

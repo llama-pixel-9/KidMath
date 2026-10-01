@@ -60,7 +60,10 @@ function SkillBadge({ skill }) {
 function SkillStatus({ skill }) {
   const { theme } = useTheme();
   return (
-    <span className={`block mt-0.5 text-xs font-semibold ${skill.state === "mastered" ? "text-teal" : theme.textMuted}`}>{skill.statusText}</span>
+    <>
+      <span className={`block mt-0.5 text-xs font-semibold ${skill.state === "mastered" ? "text-teal" : theme.textMuted}`}>{skill.statusText}</span>
+      {skill.facts && <span className={`block text-xs font-semibold ${theme.textMuted}`}>⚡ {skill.facts.text}</span>}
+    </>
   );
 }
 

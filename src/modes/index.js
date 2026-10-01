@@ -23,6 +23,7 @@ import linesShapes from "./linesShapes";
 import fractionOps from "./fractionOps";
 import decimalOps from "./decimalOps";
 import volumeCoordinates from "./volumeCoordinates";
+import mathFacts from "./mathFacts";
 
 const ALL_MODES = [
   addition,
@@ -50,11 +51,15 @@ const ALL_MODES = [
   fractionOps,
   decimalOps,
   volumeCoordinates,
+  mathFacts,
 ];
 
 export const modeRegistry = Object.fromEntries(ALL_MODES.map((m) => [m.id, m]));
 
 export const MODE_IDS = ALL_MODES.map((m) => m.id);
+
+/** Topics with no v1 rows (Math Facts): hidden until their switch serves v2. */
+export const V2_ONLY_MODE_IDS = ALL_MODES.filter((m) => m.v2Only).map((m) => m.id);
 
 // Kid-facing grouping for the home page (and any future mode picker). Every
 // mode must appear in exactly one group — `modeGroups.spec.js` enforces that so
@@ -96,7 +101,19 @@ export const MODE_GROUPS = [
     gradeHint: "Grades 3-5",
     modeIds: ["linesShapes", "angles", "dataGraphs", "volumeCoordinates"],
   },
+  {
+    // Live by default; hidden where its switch row says v1 (useHiddenTopics).
+    id: "facts",
+    title: "Math Facts",
+    gradeHint: "Grades K-4",
+    modeIds: ["mathFacts"],
+  },
 ];
+
+/** MODE_GROUPS without the hidden topics, and without a group left empty. */
+export function visibleModeGroups(hidden = new Set(V2_ONLY_MODE_IDS)) {
+  return MODE_GROUPS.map((g) => ({ ...g, modeIds: g.modeIds.filter((id) => !hidden.has(id)) })).filter((g) => g.modeIds.length);
+}
 
 export function getModeConfig(id) {
   const mode = modeRegistry[id];

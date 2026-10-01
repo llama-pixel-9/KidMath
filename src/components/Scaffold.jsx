@@ -30,11 +30,40 @@ function Dots({ groups, takeAway }) {
   );
 }
 
-function ArrayGrid({ rows, cols }) {
+export function ArrayGrid({ rows, cols }) {
   return (
     <div className="inline-grid gap-1.5 mx-auto" style={{ gridTemplateColumns: `repeat(${cols}, 1fr)` }} aria-label={`${rows} rows of ${cols}`}>
       {Array.from({ length: rows * cols }, (_, i) => (
         <span key={i} className="inline-block w-5 h-5 rounded-full bg-teal" />
+      ))}
+    </div>
+  );
+}
+
+/** A ten frame to look at, not fill: `filled` teal counters, then `filledB`
+ * ember ones, the last `takeAway` crossed out. Two frames hold teen numbers. */
+function TenFrameDrawing({ filled = 0, filledB = 0, takeAway = 0, frames = 1 }) {
+  const fixed = filled + filledB;
+  const label = `ten frame: ${filled}${filledB ? ` and ${filledB}` : ""} counters${takeAway ? `, ${takeAway} crossed out` : ""}`;
+  return (
+    <div className="flex flex-col items-center gap-1.5" aria-label={label}>
+      {Array.from({ length: frames }, (_, f) => (
+        <div key={f} className="grid grid-cols-5 rounded-lg border-[3px] border-ink/40 bg-white overflow-hidden">
+          {Array.from({ length: 10 }, (_, c) => {
+            const i = f * 10 + c;
+            const crossed = takeAway > 0 && i < fixed && i >= fixed - takeAway;
+            return (
+              <span key={i} className="relative w-8 h-8 border border-ink/15 flex items-center justify-center">
+                {i < fixed && <span className={`w-5 h-5 rounded-full ${i < filled ? "bg-teal" : "bg-ember"} ${crossed ? "opacity-40" : ""}`} />}
+                {crossed && (
+                  <svg className="absolute inset-0 m-auto w-6 h-6" viewBox="0 0 40 40" aria-hidden="true">
+                    <path d="M8 8 L32 32 M32 8 L8 32" stroke="#14231F" strokeWidth="5" strokeLinecap="round" />
+                  </svg>
+                )}
+              </span>
+            );
+          })}
+        </div>
       ))}
     </div>
   );
@@ -81,6 +110,9 @@ export default function Scaffold({ scaffold }) {
       <p className="text-center text-sm font-bold text-ink/80 mb-3">{scaffoldHint(scaffold)}</p>
       {scaffold.kind === "dots" && <Dots groups={scaffold.groups} takeAway={scaffold.takeAway} />}
       {scaffold.kind === "array" && <ArrayGrid rows={scaffold.rows} cols={scaffold.cols} />}
+      {scaffold.kind === "tenFrame" && (
+        <TenFrameDrawing filled={scaffold.filled} filledB={scaffold.filledB} takeAway={scaffold.takeAway} frames={scaffold.frames} />
+      )}
       {scaffold.kind === "strip" && <Strip den={scaffold.den} shaded={scaffold.shaded} />}
       {scaffold.kind === "numberLine" && <Line min={scaffold.min} max={scaffold.max} mark={scaffold.mark} step={scaffold.step} />}
     </div>

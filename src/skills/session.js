@@ -14,11 +14,19 @@
  * session the level only follows the skill being asked.
  *
  * Every worded question is an approved bank row from the skill's own cell;
- * drills are built to the skill's claim. mathEngine calls in here; this file
- * calls back into it only inside functions, so the import cycle is inert.
+ * drills are built to the skill's claim. A Math Facts practice session picks
+ * facts, not rows (facts/factPractice.js): the current strategy group, mixed
+ * review and turnarounds, each fact served from its bank row when the bank
+ * has it. mathEngine calls in here; this file calls back into it only inside
+ * functions, so the import cycle is inert.
  */
+import { FORMAT_FAMILY } from "../facts/factItems.js";
+import { FACTS_KEY } from "../facts/factMarks.js";
+import { dueTurnaround, initFluency, nextFact, recordFact } from "../facts/factPractice.js";
+import { BAND_LEVELS } from "../facts/factSets.js";
 import { selectApprovedBankItem } from "../itemBank/index.js";
-import { buildBankQuestion, generateChoices, generateQuestion, questionAnswerType } from "../mathEngine.js";
+import { buildBankQuestion, finalizeQuestion, generateChoices, generateQuestion, questionAnswerType } from "../mathEngine.js";
+import { buildFactQuestion } from "../modes/mathFacts.js";
 import { buildComputationQuestion, computationKeyOf } from "./computationPlay.js";
 import { STATES, practiceOrder, stateOf } from "./mastery.js";
 import { playSkillById } from "./play.js";
@@ -42,6 +50,8 @@ export function initSkillSession(options = {}) {
   const ordered = pinned || challenge ? skills : practiceOrder(mastery, skills);
   const unmastered = ordered.filter((skill) => stateOf(mastery, skill.id) !== STATES.MASTERED || mastery[skill.id]?.needsReview);
   const working = pinned || challenge ? skills : unmastered.length ? unmastered : skills;
+  // Math Facts practice (not its Fledging Flight) picks facts by group.
+  const fluent = skills[0].mode === "mathFacts" && !challenge;
   return {
     skillIds: skills.map((skill) => skill.id),
     pinned,
@@ -54,6 +64,7 @@ export function initSkillSession(options = {}) {
     lastSkillIds: [],
     recentComputationKeys: [],
     level: skills[0].level,
+    ...(fluent ? { fluency: initFluency(skills, mastery[FACTS_KEY], { now: options.now, grade: options.grade }) } : {}),
   };
 }
 
@@ -105,8 +116,44 @@ function bankQuestionFor(skill, session) {
   return null;
 }
 
+/**
+ * A Math Facts practice question: a due turnaround, else the next fact for
+ * the skill whose turn it is. Its bank row when the bank has it, else the
+ * same question built here (the rows are generated from the same modules).
+ */
+function fluencyQuestion(session) {
+  const due = dueTurnaround(session.fluency);
+  const skillId = due?.skillId ?? pickSkill(session);
+  const served = due || nextFact(session.fluency, skillId);
+  if (!served) return null;
+  const skill = playSkillById(skillId);
+  const { fact, format } = served;
+  const levels = BAND_LEVELS[fact.band];
+  const level = Math.min(Math.max(skill.level, levels[0]), levels[1]);
+  const itemId = `mathFacts-v2-${fact.id}-${format}`;
+  const row = selectApprovedBankItem({ modeId: "mathFacts", family: FORMAT_FAMILY[format], levels, accept: (item) => item.itemId === itemId });
+  let q;
+  if (row) {
+    q = buildBankQuestion(row, level);
+    q.metadata.itemFamily = row.itemFamily;
+  } else {
+    q = finalizeQuestion("mathFacts", null, buildFactQuestion(fact, format, level, { truthy: Math.random() < 0.5 }));
+    if (questionAnswerType(q) === "choice") q.choices = generateChoices(q.answer, 4, q);
+  }
+  q.factId = fact.id;
+  q.factFormat = format;
+  q.fluency = { skillId: skill.id, trackKey: fact.trackKey, then: served.then, turnaround: Boolean(served.turnaround) };
+  q.skillId = skill.id;
+  q.scheduler = { skillId: skill.id, itemFamily: q.metadata?.itemFamily };
+  return q;
+}
+
 /** The next fresh question of a skill session. */
 export function nextSkillQuestion(session) {
+  if (session.fluency) {
+    const q = fluencyQuestion(session);
+    if (q) return q;
+  }
   const skill = playSkillById(pickSkill(session));
   let q =
     skill.source.kind === "computation"
@@ -136,12 +183,13 @@ export function retryBelongs(session, retry) {
 }
 
 /** Bookkeeping after a fresh (non-retry) answer. Mutates the NEXT session copy. */
-export function recordSkillAnswer(next, question, correct) {
+export function recordSkillAnswer(next, question, correct, responseTimeMs = 0) {
   const id = question.skillId ? playSkillById(question.skillId)?.id : null;
   if (question.level) next.level = question.level;
   if (question.metadata?.itemSource === "skillSampler") {
     next.recentComputationKeys = [...(next.recentComputationKeys || []), computationKeyOf(question)].slice(-RECENT_COMPUTATIONS);
   }
+  if (next.fluency && question.fluency) next.fluency = recordFact(next.fluency, question.fluency, { correct, ms: responseTimeMs });
   if (!id) return;
   const before = next.skillStats[id] || { attempts: 0, correct: 0 };
   const stats = { attempts: before.attempts + 1, correct: before.correct + (correct ? 1 : 0) };
@@ -161,5 +209,7 @@ export function skillServable(skillId, { allowWordProblems = true } = {}) {
   const skill = playSkillById(skillId);
   if (!skill) return false;
   if (skill.source.kind === "computation") return true;
+  // Every fact question can be built here when its row is not in memory.
+  if (skill.mode === "mathFacts") return true;
   return Boolean(bankQuestionFor(skill, { allowWordProblems, recentBankItemIds: [], familyCursor: 0 }));
 }

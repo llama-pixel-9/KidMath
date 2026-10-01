@@ -1,6 +1,7 @@
 import { randInt, shuffleArray } from "../helpers";
 import { ITEM_FAMILIES } from "../itemMetadata";
 import { bandForLevel, BANDS } from "../structures/levelPolicy";
+import { opGlyph } from "../../opSigns.js";
 
 /**
  * Format transforms (implementation plan M3).
@@ -21,6 +22,7 @@ import { bandForLevel, BANDS } from "../structures/levelPolicy";
  * FORMAT problem, and it was previously inexpressible in this app.
  */
 
+// Logic and answer strings use ASCII signs; prompts the child reads use opGlyph.
 const OP_SYMBOL = { "+": "+", "-": "-", x: "x", "/": "/" };
 
 /** A wrong-but-plausible value, so true/false items are not trivially false. */
@@ -67,7 +69,7 @@ export const FORMATS = {
       const truthy = Math.random() < 0.5;
       const shown = truthy ? q.answer : nearMiss(q.answer);
       return {
-        display: { promptText: `${q.a} ${OP_SYMBOL[q.op]} ${q.b} = ${shown}` },
+        display: { promptText: `${q.a} ${opGlyph(q.op)} ${q.b} = ${shown}` },
         subPrompt: "Is this right?",
         answer: truthy ? "Yes" : "No",
         choices: [...TF],
@@ -88,7 +90,7 @@ export const FORMATS = {
       const truthy = Math.random() < 0.5;
       const left = truthy ? q.answer : nearMiss(q.answer);
       return {
-        display: { promptText: `${q.a} ${OP_SYMBOL[q.op]} ${q.b} = ${left}` },
+        display: { promptText: `${q.a} ${opGlyph(q.op)} ${q.b} = ${left}` },
         subPrompt: "Is this right?",
         answer: truthy ? "Yes" : "No",
         choices: [...TF],
@@ -124,7 +126,7 @@ export const FORMATS = {
       const rightB = truthy ? q.a : q.a + 1;
       return {
         display: {
-          promptText: `${q.a} ${OP_SYMBOL[q.op]} ${q.b} = ${q.b} ${OP_SYMBOL[q.op]} ${rightB}`,
+          promptText: `${q.a} ${opGlyph(q.op)} ${q.b} = ${q.b} ${opGlyph(q.op)} ${rightB}`,
         },
         subPrompt: "Is this right?",
         answer: truthy ? "Yes" : "No",
@@ -252,7 +254,7 @@ export const FORMATS = {
       const wrong = nearMiss(q.answer);
       return {
         display: {
-          promptText: `${actor} says ${q.a} ${OP_SYMBOL[q.op]} ${q.b} = ${wrong}. What is the correct answer?`,
+          promptText: `${actor} says ${q.a} ${opGlyph(q.op)} ${q.b} = ${wrong}. What is the correct answer?`,
         },
         answer: q.answer,
         answerType: "numberPad",
@@ -275,7 +277,7 @@ export const FORMATS = {
         step += 10;
       }
       return {
-        display: { promptText: `About how much is ${q.a} ${OP_SYMBOL[q.op]} ${q.b}?` },
+        display: { promptText: `About how much is ${q.a} ${opGlyph(q.op)} ${q.b}?` },
         answer: target,
         choices: shuffleArray([...options].slice(0, 4)),
         answerType: "choice",
@@ -322,9 +324,9 @@ export const FORMATS = {
     appliesTo: (q) => q.op === "x" && q.a % 2 === 0 && q.a >= 4 && q.b >= 2 && relationHolds(q),
     transform: (q) => {
       const truthy = Math.random() < 0.5;
-      const right = truthy ? `${q.a / 2} x ${q.b * 2}` : `${q.a / 2} x ${q.b}`;
+      const right = truthy ? `${q.a / 2} × ${q.b * 2}` : `${q.a / 2} × ${q.b}`;
       return {
-        display: { promptText: `${q.a} x ${q.b} = ${right}` },
+        display: { promptText: `${q.a} × ${q.b} = ${right}` },
         subPrompt: "Is this right?",
         answer: truthy ? "Yes" : "No",
         choices: [...TF],

@@ -158,8 +158,13 @@ function SkillRow({ m }) {
                       </span>
                       <span className="whitespace-nowrap text-[12px] font-semibold text-ink/60">
                         {s.state === "mastered" ? "mastered" : s.state === "practicing" ? `${s.progress.have} of ${s.progress.need}` : "not started"}
-                        {" · "}
-                        <Link to={`/worksheets?skill=${s.id}`} className="text-teal underline underline-offset-2">print</Link>
+                        {s.facts && ` · ${s.facts.text}`}
+                        {s.printable && (
+                          <>
+                            {" · "}
+                            <Link to={`/worksheets?skill=${s.id}`} className="text-teal underline underline-offset-2">print</Link>
+                          </>
+                        )}
                       </span>
                     </li>
                   ))}

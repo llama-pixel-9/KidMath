@@ -20,6 +20,11 @@ const LABELS = {
   compositeAndDistance: "composite volume and grid distance",
   remainders: "division with remainders",
   rounding: "rounding to the nearest ten, hundred or thousand",
+  // math facts
+  addFacts: "addition facts",
+  subFacts: "subtraction facts",
+  mulFacts: "multiplication facts",
+  divFacts: "division facts",
   // addition / subtraction
   makeTen: "making ten",
   composeDecompose: "breaking numbers apart to add",

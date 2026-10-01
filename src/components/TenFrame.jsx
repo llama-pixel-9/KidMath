@@ -16,6 +16,9 @@ import ConfettiBurst from "./ConfettiBurst.jsx";
  *
  * `frames: 2` renders two stacked frames for teen numbers (a ten and some
  * more), filling left-to-right, top row first, first frame first.
+ *
+ * `takeAway` crosses out the last that many fixed counters, so a subtraction
+ * is visible as a take-away: 7 counters, 3 crossed out, "how many are left?".
  */
 export default function TenFrame({
   onSubmit,
@@ -26,6 +29,7 @@ export default function TenFrame({
   filledB = 0,
   frames = 1,
   mode = "count",
+  takeAway = 0,
 }) {
   const [entry, setEntry] = useState("");
   const [added, setAdded] = useState(() => new Set());
@@ -33,6 +37,7 @@ export default function TenFrame({
   // Two fixed counter colors let one frame show an addition: `filled` red
   // counters then `filledB` blue ones (5 + 3 is VISIBLE as five-and-three).
   const fixed = filled + filledB;
+  const isCrossed = (i) => takeAway > 0 && i < fixed && i >= fixed - takeAway;
 
   const toggleCell = (i) => {
     if (locked || mode !== "build" || i < fixed) return;
@@ -95,20 +100,25 @@ export default function TenFrame({
             <motion.button
               key={i}
               type="button"
-              className="w-12 h-12 sm:w-14 sm:h-14 border border-slate-300 flex items-center justify-center cursor-pointer disabled:cursor-default"
+              className="relative w-12 h-12 sm:w-14 sm:h-14 border border-slate-300 flex items-center justify-center cursor-pointer disabled:cursor-default"
               whileTap={mode === "build" && !isFixed && !locked ? { scale: 0.85 } : undefined}
               onClick={() => toggleCell(i)}
               disabled={locked || mode !== "build" || isFixed}
-              aria-label={isFixed ? "counter" : isAdded ? "your counter" : "empty cell"}
+              aria-label={isCrossed(i) ? "crossed-out counter" : isFixed ? "counter" : isAdded ? "your counter" : "empty cell"}
               aria-pressed={mode === "build" ? isAdded : undefined}
             >
               {(isFixed || isAdded) && (
                 <motion.span
-                  className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 shadow-sm ${counterTone(i)}`}
+                  className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 shadow-sm ${counterTone(i)} ${isCrossed(i) ? "opacity-40" : ""}`}
                   initial={lowMotionMode ? false : { scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ duration: lowEndDevice ? 0.1 : 0.18 }}
                 />
+              )}
+              {isCrossed(i) && (
+                <svg className="absolute inset-0 m-auto w-9 h-9 sm:w-11 sm:h-11 pointer-events-none" viewBox="0 0 40 40" aria-hidden="true">
+                  <path d="M8 8 L32 32 M32 8 L8 32" stroke="#14231F" strokeWidth="4" strokeLinecap="round" />
+                </svg>
               )}
             </motion.button>
           );

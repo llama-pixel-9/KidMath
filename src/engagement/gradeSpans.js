@@ -30,6 +30,7 @@ export const GRADE_SPANS = {
   fractionOps: "4–5",
   decimalOps: "4–5",
   volumeCoordinates: "5",
+  mathFacts: "K–4",
 };
 
 export function gradeSpanFor(modeId) {

@@ -397,7 +397,7 @@ struct SessionView: View {
         let display = viewModel.question["display"] as? [String: Any] ?? [:]
         if let p = display["promptText"] as? String, !p.isEmpty { return p }
         if let a = viewModel.question["a"], let op = viewModel.question["op"] as? String, let b = viewModel.question["b"] {
-            return "\(AnswerFormatting.text(a)) \(op) \(AnswerFormatting.text(b)) = ?"
+            return "\(AnswerFormatting.text(a)) \(AnswerFormatting.opGlyph(op)) \(AnswerFormatting.text(b)) = ?"
         }
         return nil
     }
@@ -517,6 +517,17 @@ enum AnswerFormatting {
             return array.map { text($0) }.joined(separator: ", ")
         default:
             return "\(value)"
+        }
+    }
+
+    /// The sign a child sees: the bank and generators write "-", "x" and "/"
+    /// in `op`, which stays as is for logic (mirror of src/opSigns.js opGlyph).
+    static func opGlyph(_ op: String) -> String {
+        switch op {
+        case "-", "–": return "−"
+        case "x", "*": return "×"
+        case "/": return "÷"
+        default: return op
         }
     }
 }

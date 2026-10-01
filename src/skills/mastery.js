@@ -22,6 +22,7 @@
  * slips is flagged `needsReview`, which steers the mixed session back to it
  * and shows up in the parent report; it never re-locks a grade.
  */
+import { FACTS_KEY, applyFactAttempts } from "../facts/factMarks.js";
 import { skillForAttempt } from "./play.js";
 
 export const MASTERY_RULE = {
@@ -104,6 +105,9 @@ export function applySession(map, record) {
       entry.needsReview = right / entry.sinceMastery.length < MASTERY_RULE.reviewBelow;
     }
   }
+  // Math Facts also keeps a per-fact "fast" mark, in the same map so the
+  // same fold rebuilds it from the log. It never decides a skill's state.
+  if (record.mode === "mathFacts") next[FACTS_KEY] = applyFactAttempts(next[FACTS_KEY], record);
   return next;
 }
 

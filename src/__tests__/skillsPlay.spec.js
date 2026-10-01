@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { FULL_ITEMS } from "../itemBank/fullBank";
 import { MODE_IDS } from "../modes";
 import { maxLevelForMode } from "../modeLevels";
-import { GRADES, WORKSHEET_SKILLS } from "../skills/catalog";
+import { GRADES, PLAY_ONLY_SKILLS, WORKSHEET_SKILLS } from "../skills/catalog";
 import {
   PLAY_TWINS,
   catalogGrade,
@@ -29,6 +29,7 @@ describe("skill catalog parity: play vs worksheets", () => {
 
   it("every playable skill is the worksheet skill: same id, grade, topic and title", () => {
     for (const skill of playSkills()) {
+      if (PLAY_ONLY_SKILLS.some((s) => s.id === skill.id)) continue;
       const printed = WORKSHEET_SKILLS.find((s) => s.id === skill.id);
       expect(printed, skill.id).toBeTruthy();
       expect([skill.grade, skill.mode], skill.id).toEqual([printed.grade, printed.mode]);
@@ -41,6 +42,13 @@ describe("skill catalog parity: play vs worksheets", () => {
     const missing = WORKSHEET_SKILLS.filter((s) => !playable.has(s.id)).map((s) => s.id).sort();
     expect(missing).toEqual([...PLAY_TWINS.map((t) => t.alias), ...printOnly].sort());
     expect(printOnly.sort()).toEqual(["div-2digit-remainder", "div-3digit-by-1digit"]);
+  });
+
+  it("the only play-only skills are Math Facts (closed fact sets the operation topics already print)", () => {
+    expect(new Set(PLAY_ONLY_SKILLS.map((s) => s.mode))).toEqual(new Set(["mathFacts"]));
+    expect(WORKSHEET_SKILLS.some((s) => s.mode === "mathFacts")).toBe(false);
+    const playable = new Set(playSkills().map((s) => s.id));
+    for (const skill of PLAY_ONLY_SKILLS) expect(playable.has(skill.id), skill.id).toBe(true);
   });
 
   it("a picture twin shares its sibling's bank cell, and its id resolves to the merged skill", () => {
@@ -156,6 +164,10 @@ describe("crediting attempts to skills", () => {
     expect(credit("addition", "3 + 1 = ?")).toBe("add-within-5");
     expect(credit("multiplication", "7 × 8 = ?")).toBe("mul-tables-7-8-9");
     expect(credit("division", "56 ÷ 7 = ?")).toBe("div-facts-7-8-9");
+    // Either spelling of a sign reads the same.
+    expect(credit("subtraction", "826 − 603 = ?")).toBe("sub-3digit-no-regroup");
+    expect(credit("multiplication", "7 x 8 = ?")).toBe("mul-tables-7-8-9");
+    expect(credit("division", "56 / 7 = ?")).toBe("div-facts-7-8-9");
   });
 
   it("a prompt whose numbers fit none of the cell's skills is credited to none", () => {

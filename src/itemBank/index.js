@@ -204,7 +204,11 @@ export function validateBankItem(item) {
       const multiplicative = op === "×" || op === "x" || op === "*" || op === "÷" || op === "/";
       if (additive || multiplicative) {
         const [lo, mid, hi] = [a, b, answer].sort((x, y) => x - y);
-        const holds = additive ? lo + mid === hi : lo * mid === hi;
+        // A zero breaks the trio rule for times and divide (0 × 7 = 0 sorts
+        // to 0, 0, 7), so with a zero in it `a op b = answer` holding as
+        // written also passes (never otherwise: see the QC arithmetic check).
+        const hasZero = a === 0 || b === 0 || answer === 0;
+        const holds = (additive ? lo + mid === hi : lo * mid === hi) || (hasZero && computeExpected(op, a, b) === answer);
         if (!holds) {
           errors.push(`numeric inconsistency: {${a}, ${b}, ${answer}} do not satisfy ${op}`);
         }
@@ -227,6 +231,7 @@ function computeExpected(op, a, b) {
     case "\u2212": // unicode minus
       return a - b;
     case "*":
+    case "x":
     case "\u00d7":
       return a * b;
     case "/":
@@ -299,6 +304,26 @@ export function findPromptOveruse(items = currentBank, options = {}) {
     .map((b) => ({ ...b, count: b.itemIds.length }));
 }
 
+/**
+ * What makes two prompts the same question. A picture-first item ("Count the
+ * coins. How many cents?", "How many counters in all?") repeats its text on
+ * purpose; the picture is what makes it a different question, so it is part
+ * of the identity. So is how a bare equation is drawn (stacked, as an array,
+ * with a hop on a number line), and its topic: "8 + 5 = ?" is the same fact
+ * in Addition and in Math Facts, and each topic may ask it.
+ */
+function promptIdentity(item, promptText) {
+  const d = item?.question?.display || {};
+  const parts = [promptText];
+  if (Array.isArray(d.coins) && d.coins.length) parts.push(d.coins.join(","));
+  if (d.filled != null) parts.push(`frame:${d.filled}/${d.filledB ?? 0}/${d.takeAway ?? 0}`);
+  if (d.array) parts.push(`array:${d.array.rows}x${d.array.cols}`);
+  if (d.layout) parts.push(`layout:${d.layout}`);
+  if (d.lineMode === "jump") parts.push(`hop:${d.from}-${d.to}`);
+  if (!/[a-z]/i.test(promptText)) parts.unshift(item.modeId || "");
+  return parts.join("\u0000");
+}
+
 export function validateBank(items = currentBank, options = {}) {
   const issues = [];
   const warnings = [];
@@ -313,11 +338,7 @@ export function validateBank(items = currentBank, options = {}) {
     }
     const promptText = item?.question?.display?.promptText?.trim();
     if (promptText) {
-      // A picture-first item ("Count the coins. How many cents?") repeats its
-      // text on purpose; the pictured coins are what make it a different
-      // question, so they are part of its identity.
-      const coins = item?.question?.display?.coins;
-      const key = Array.isArray(coins) && coins.length ? `${promptText}\u0000${coins.join(",")}` : promptText;
+      const key = promptIdentity(item, promptText);
       const dupOf = seenPrompts.get(key);
       if (dupOf) issues.push({ itemId: item.itemId, errors: [`duplicate promptText shared with ${dupOf}`] });
       else seenPrompts.set(key, item.itemId);

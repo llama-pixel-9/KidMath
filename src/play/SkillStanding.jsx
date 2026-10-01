@@ -22,7 +22,8 @@ function GradeUpNote({ standing }) {
  * ★ ◐ ○ pins, the count, and a line for every skill this session mastered.
  *
  * `standing` = { gradeLabel, topicLabel, skills: [{id,title,state}], mastered,
- * total, newlyMastered: [title] } (built from skills/topicState.gradeView).
+ * total, newlyMastered: [title], facts? } (built from skills/topicState.gradeView;
+ * `facts` is Math Facts' fast-fact line, facts/factPractice.factStanding).
  */
 export default function SkillStanding({ standing, balance = null }) {
   if (!standing) return null;
@@ -42,6 +43,15 @@ export default function SkillStanding({ standing, balance = null }) {
           ★ Skill mastered: <span className="font-bold">{title}</span>
         </motion.p>
       ))}
+      {standing.facts?.newLine && (
+        <motion.p
+          className="mb-2 rounded-2xl bg-sun-light px-4 py-2.5 text-[14px] font-extrabold text-ink"
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+        >
+          ⚡ {standing.facts.newLine}
+        </motion.p>
+      )}
       <div className="flex flex-wrap items-center gap-1.5" aria-hidden="true">
         {standing.skills.map((skill) => (
           <span
@@ -61,6 +71,12 @@ export default function SkillStanding({ standing, balance = null }) {
         </span>
         {balance != null && <span>{balance} in the Nest</span>}
       </div>
+      {standing.facts && (
+        <p className="mt-1 text-[14px] font-bold text-ink">
+          ⚡ {standing.facts.line}
+          {standing.facts.nextGroup && <span className="font-semibold text-ink/70"> · Next up: {standing.facts.nextGroup}</span>}
+        </p>
+      )}
     </div>
   );
 }

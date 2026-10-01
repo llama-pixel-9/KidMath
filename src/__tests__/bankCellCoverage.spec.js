@@ -23,8 +23,11 @@ describe("bank cell coverage (generator retirement gate)", () => {
   for (const modeId of modeIds) {
     const cfg = getModeConfig(modeId);
     const topLevel = cfg.maxLevel ?? MAX_LEVEL;
+    // The engine only asks a mode for the families it declares (Math Facts has
+    // no word problems); every mode with stories declares all three.
+    const families = cfg.families || FAMILIES;
     for (let level = 1; level <= topLevel; level += 1) {
-      for (const family of FAMILIES) {
+      for (const family of families) {
         for (const subskill of cfg.subskills) {
           // A band-scoped subskill (division remainders, placeValue rounding)
           // only exists inside its declared level range.

@@ -132,8 +132,8 @@ describe("CCSS Table 2 coverage", () => {
       asStory: false,
       form: "missingFactor",
     });
-    expect(div.display.promptText).toBe("18 / 3 = ?");
-    expect(missing.display.promptText).toBe("3 x ? = 18");
+    expect(div.display.promptText).toBe("18 ÷ 3 = ?");
+    expect(missing.display.promptText).toBe("3 × ? = 18");
     expect(div.answer).toBe(6);
     expect(missing.answer).toBe(6);
   });

@@ -79,7 +79,7 @@ export const ADDITIVE_STRUCTURES = [
     tier: TIERS.EASY,
     op: "-",
     subskill: "differenceAsDistance",
-    equation: (x, _y, z) => `${z} - ${x} = ?`,
+    equation: (x, _y, z) => `${z} − ${x} = ?`,
     story: (ctx, { x, z }) =>
       `${z} ${ctx.plural} were ${ctx.setting}. ${ctx.actor} ${ctx.takeVerb} ${x}. How many ${ctx.plural} are left?`,
   },
@@ -91,7 +91,7 @@ export const ADDITIVE_STRUCTURES = [
     tier: TIERS.MIDDLE,
     op: "-",
     subskill: "unknownSubtrahend",
-    equation: (_x, y, z) => `${z} - ? = ${y}`,
+    equation: (_x, y, z) => `${z} − ? = ${y}`,
     story: (ctx, { y, z }) =>
       `${z} ${ctx.plural} were ${ctx.setting}. ${ctx.actor} ${ctx.takeVerb} some. Now there are ${y}. How many ${ctx.plural} did ${ctx.actor} ${ctx.takeVerb === "ate" ? "eat" : "take"}?`,
   },
@@ -103,7 +103,7 @@ export const ADDITIVE_STRUCTURES = [
     tier: TIERS.DIFFICULT,
     op: "-",
     subskill: "unknownSubtrahend",
-    equation: (x, y) => `? - ${x} = ${y}`,
+    equation: (x, y) => `? − ${x} = ${y}`,
     story: (ctx, { x, y }) =>
       `Some ${ctx.plural} were ${ctx.setting}. ${ctx.actor} ${ctx.takeVerb} ${x}. Now there are ${y}. How many ${ctx.plural} were there before?`,
   },
@@ -143,7 +143,7 @@ export const ADDITIVE_STRUCTURES = [
     tier: TIERS.MIDDLE,
     op: "-",
     subskill: "differenceAsDistance",
-    equation: (x, _y, z) => `${z} - ${x} = ?`,
+    equation: (x, _y, z) => `${z} − ${x} = ?`,
     story: (ctx, { x, z }) =>
       `${ctx.actor} has ${count(x, ctx)}. ${ctx.actor2} has ${z}. How many more ${ctx.plural} does ${ctx.actor2} have than ${ctx.actor}?`,
   },
@@ -155,7 +155,7 @@ export const ADDITIVE_STRUCTURES = [
     tier: TIERS.MIDDLE,
     op: "-",
     subskill: "differenceAsDistance",
-    equation: (x, _y, z) => `${z} - ${x} = ?`,
+    equation: (x, _y, z) => `${z} − ${x} = ?`,
     story: (ctx, { x, z }) =>
       `${ctx.actor} has ${count(x, ctx)}. ${ctx.actor2} has ${z}. How many fewer ${ctx.plural} does ${ctx.actor} have than ${ctx.actor2}?`,
   },
@@ -194,7 +194,7 @@ export const ADDITIVE_STRUCTURES = [
     op: "-",
     subskill: "differenceAsDistance",
     languageTrap: true, // says "more", requires subtraction
-    equation: (_x, y, z) => `${z} - ${y} = ?`,
+    equation: (_x, y, z) => `${z} − ${y} = ?`,
     story: (ctx, { y, z }) =>
       `${ctx.actor2} has ${y} more ${ctx.plural} than ${ctx.actor}. ${ctx.actor2} has ${z}. How many ${ctx.plural} does ${ctx.actor} have?`,
   },
@@ -206,7 +206,7 @@ export const ADDITIVE_STRUCTURES = [
     tier: TIERS.MIDDLE,
     op: "-",
     subskill: "differenceAsDistance",
-    equation: (_x, y, z) => `${z} - ${y} = ?`,
+    equation: (_x, y, z) => `${z} − ${y} = ?`,
     story: (ctx, { y, z }) =>
       `${ctx.actor} has ${y} fewer ${ctx.plural} than ${ctx.actor2}. ${ctx.actor2} has ${z}. How many ${ctx.plural} does ${ctx.actor} have?`,
   },

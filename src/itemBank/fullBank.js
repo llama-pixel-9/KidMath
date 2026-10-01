@@ -11,11 +11,19 @@
 import { APPLICATION_ITEM_BANK } from "./applicationItems.js";
 import { CONCEPTUAL_ITEM_BANK } from "./conceptualItems.js";
 import { PROCEDURAL_ITEM_BANK } from "./proceduralItems.js";
+import { factBankItems } from "../facts/factItems.js";
+
+// Math Facts rows are built from the fact lists rather than stored: the
+// database gets the same rows from the same function
+// (scripts/facts/generateFacts.mjs), so the two cannot drift, and a
+// `bank:export` (which rewrites items/ from version-1 rows) cannot drop them.
+export const FACT_ITEMS = factBankItems();
 
 export const FULL_ITEMS = [
   ...APPLICATION_ITEM_BANK,
   ...CONCEPTUAL_ITEM_BANK,
   ...PROCEDURAL_ITEM_BANK,
+  ...FACT_ITEMS,
 ];
 
 export { APPLICATION_ITEM_BANK, CONCEPTUAL_ITEM_BANK, PROCEDURAL_ITEM_BANK };

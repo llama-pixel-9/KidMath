@@ -39,6 +39,7 @@ export const MODE_TITLES = {
   fractionOps: "Fraction operations",
   decimalOps: "Decimal operations",
   volumeCoordinates: "Volume and coordinates",
+  mathFacts: "Math facts",
 };
 
 export const CONCEPTS = {
@@ -575,6 +576,30 @@ export const CONCEPTS = {
       title: "Break it into boxes",
       idea: "Odd-shaped solids are boxes stuck together. Find each box's volume and add. On a grid, distance along a line is the difference of the coordinates.",
       example: ex("Two boxes: 2×2×3 and 1×2×3", ["2 × 2 × 3 = 12.", "1 × 2 × 3 = 6.", "12 + 6 = 18."], "18"),
+    },
+  },
+  // Each Math Facts item carries its own strategy line (src/facts/factItems.js);
+  // these are the topic-level ideas the panel shows alongside it.
+  mathFacts: {
+    addFacts: {
+      title: "Use a fact you know",
+      idea: "Most facts are close to one you already know. Use a double, make a ten, or count on from the bigger number.",
+      example: ex("7 + 8", ["7 + 7 is a double: 14.", "8 is one more than 7.", "14 + 1 = 15."], "15"),
+    },
+    subFacts: {
+      title: "Think addition",
+      idea: "Every take-away fact has an adding fact inside it. Ask what goes with the smaller number to make the bigger one.",
+      example: ex("12 − 5", ["Think: 5 and what make 12?", "5 + 7 = 12.", "So 12 − 5 = 7."], "7"),
+    },
+    mulFacts: {
+      title: "Build from easy facts",
+      idea: "Start from a times fact you know, like 2, 5 or 10 times, and build the one you need from it.",
+      example: ex("6 × 4", ["5 × 4 is 20.", "One more group of 4.", "20 + 4 = 24."], "24"),
+    },
+    divFacts: {
+      title: "Think multiplication",
+      idea: "Dividing asks a times question. For 35 ÷ 5, ask: 5 times what is 35?",
+      example: ex("35 ÷ 5", ["Think: 5 times what is 35?", "5 × 7 = 35.", "So 35 ÷ 5 = 7."], "7"),
     },
   },
 };

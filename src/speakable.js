@@ -4,6 +4,8 @@
  * AVSpeechSynthesizer, so both platforms say the same words.
  */
 
+import { typesetSigns } from "./opSigns.js";
+
 const EMOJI_RE = /(\p{Extended_Pictographic}[️‍]*)/gu;
 
 /**
@@ -20,7 +22,8 @@ export function speakableText(promptText, { noun = "things" } = {}) {
     return ` ${n} ${noun} `;
   });
   text = text.replace(EMOJI_RE, "");
-  text = text
+  // "3 x 4" and "12 / 3" are signs, not a letter and a fraction bar.
+  text = typesetSigns(text)
     .replace(/\s*×\s*/g, " times ")
     .replace(/\s*÷\s*/g, " divided by ")
     .replace(/\s*−\s*|\s+-\s+/g, " minus ")

@@ -13,6 +13,9 @@ import { REVIEW_STATUS } from "./reviewStatus.js";
  *            students can pilot a skill without affecting anyone else
  *   v2       version-2 rows for everyone
  *
+ * A topic with no v1 rows at all (Math Facts) has nothing to fall back to, so
+ * it is live at v2 with no row; a row set to v1 (or preview) still hides it.
+ *
  * The switch lives in the database rather than a deploy-time flag so a flip
  * (or a rollback) reaches the next session with no redeploy. Loaders read it
  * once per hydration and pass it to `isServable`.
@@ -20,6 +23,13 @@ import { REVIEW_STATUS } from "./reviewStatus.js";
 
 const PREVIEW_KEY = "kidmath:previewV2";
 const LIVE_VERSIONS = new Set(["v1", "preview", "v2"]);
+
+/**
+ * The live version of a topic the switch table has no row for. Only topics
+ * with no v1 rows are listed (modeGroups.spec ties this to the modes that
+ * declare `v2Only`); Sai, 2026-10-01: Math Facts needs no flip to go live.
+ */
+export const DEFAULT_LIVE_VERSION = Object.freeze({ mathFacts: "v2" });
 
 let warnedLoad = false;
 
@@ -93,7 +103,19 @@ export function setPreviewEnabled(enabled) {
 
 function liveVersionFor(switchMap, modeId) {
   const live = switchMap instanceof Map ? switchMap.get(modeId) : switchMap?.[modeId];
-  return LIVE_VERSIONS.has(live) ? live : "v1";
+  return LIVE_VERSIONS.has(live) ? live : DEFAULT_LIVE_VERSION[modeId] || "v1";
+}
+
+/**
+ * Is a topic shown on the pickers? A topic with v1 rows always is. A v2-only
+ * topic (Math Facts has nothing else) is shown where its switch serves v2:
+ * to everyone at `v2` (and with no row, its default), to preview browsers at
+ * `preview`, to nobody at `v1`.
+ */
+export function topicVisible(modeId, switchMap, { v2Only = false, preview = false } = {}) {
+  if (!v2Only) return true;
+  const live = liveVersionFor(switchMap, modeId);
+  return live === "v2" || (live === "preview" && preview);
 }
 
 /**
@@ -102,8 +124,8 @@ function liveVersionFor(switchMap, modeId) {
  *
  * Approved rows only. A row's `version` null counts as 1 (every v1 row and
  * every bundled item predates the column being meaningful). A skill absent
- * from the map is v1, so an empty map serves exactly what the app served
- * before the switch existed.
+ * from the map is v1 (a v2-only topic: v2), so an empty map serves exactly
+ * what the app served before the switch existed, plus Math Facts.
  */
 export function isServable(item, switchMap, { preview = false } = {}) {
   if (!item || item.reviewStatus !== REVIEW_STATUS.APPROVED) return false;

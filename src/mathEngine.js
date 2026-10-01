@@ -2,6 +2,7 @@ import { MODE_IDS, getModeConfig } from "./modes";
 import { shuffleArray } from "./modes/helpers";
 import { buildItemKey, ITEM_FAMILIES } from "./modes/itemMetadata";
 import { initSkillSession, nextSkillQuestion, recordSkillAnswer, retryBelongs } from "./skills/session.js";
+import { FLUENCY_SESSION_SIZE } from "./facts/factPractice.js";
 import { validateChoices, validateQuestion } from "./modes/itemQuality";
 import { buildQuestionFromBankItem, selectApprovedBankItem } from "./itemBank/index.js";
 import { fractionsEqual } from "./fractions.js";
@@ -532,10 +533,11 @@ export function restoreMistakeBank(saved) {
     .map((q) => (q && typeof q === "object" && q.dueAt != null && q.dueAt > RETRY_SPACING ? { ...q, dueAt: RETRY_SPACING } : q));
 }
 
-export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE, options = {}) {
+export function createAdaptiveSession(mode, sessionSize, options = {}) {
   const saved = options.savedProgress ?? progressLoader(mode);
   const modeConfig = getModeConfig(mode);
   const allowWordProblems = options.allowWordProblems ?? false;
+  const skillSession = initSkillSession(options);
   return {
     mode,
     level: saved.level,
@@ -544,7 +546,8 @@ export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE, options 
     retriesMastered: 0,
     mistakeBank: restoreMistakeBank(saved.mistakeBank),
     responseTimesMs: [],
-    sessionSize,
+    // A size the caller gives wins; Math Facts practice runs about 20 facts.
+    sessionSize: sessionSize ?? (skillSession?.fluency ? FLUENCY_SESSION_SIZE : SESSION_SIZE),
     questionsSinceRetry: 0,
     familyCursor: 0,
     skillMastery: createSkillMastery(modeConfig),
@@ -557,7 +560,7 @@ export function createAdaptiveSession(mode, sessionSize = SESSION_SIZE, options 
     ...(options.qaVariety ? { qaVariety: options.qaVariety } : {}),
     // A SKILL session (skills/session.js): chosen skills instead of the level
     // ladder. Without skillId/skillIds this is the session it always was.
-    ...(initSkillSession(options) || {}),
+    ...(skillSession || {}),
   };
 }
 
@@ -705,7 +708,7 @@ export function recordAnswer(session, question, chosenAnswer, responseTimeMs, wa
   // the bank band. Mastery is settled from the practice log (skills/
   // mastery.js), and moving up a grade is earned in the Fledging Flight.
   // (`levelChanged` / `newLevel` stay in the result for the native bridge.)
-  if (session.skillIds) recordSkillAnswer(next, question, correct);
+  if (session.skillIds) recordSkillAnswer(next, question, correct, responseTimeMs);
 
   if (correct) {
     next.correctStreak = session.correctStreak + 1;

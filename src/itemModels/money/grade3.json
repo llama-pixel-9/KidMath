@@ -16,8 +16,12 @@
    "fl": [
     "MA.3.AR.1.2"
    ],
-   "va": [],
-   "ga": []
+   "va": [
+    "3.NS.4d"
+   ],
+   "ga": [
+    "3.PAR.2.2"
+   ]
   },
   "difficulty": "easy",
   "format": "money",
@@ -268,7 +272,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 3 story problem (dollars and cents), K-5 money framework rows 4.1 and 4.2 (2026-09-28)"
   }
@@ -290,8 +296,12 @@
    "fl": [
     "MA.3.AR.1.2"
    ],
-   "va": [],
-   "ga": []
+   "va": [
+    "3.NS.4d"
+   ],
+   "ga": [
+    "3.PAR.2.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "money",
@@ -543,7 +553,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 3 story problem (dollars and cents), K-5 money framework rows 4.1 and 4.2 (2026-09-28)"
   }
@@ -565,8 +577,12 @@
    "fl": [
     "MA.3.AR.1.2"
    ],
-   "va": [],
-   "ga": []
+   "va": [
+    "3.NS.4d"
+   ],
+   "ga": [
+    "3.PAR.2.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -830,7 +846,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 3 story problem (dollars and cents), K-5 money framework rows 4.1 and 4.2 (2026-09-28)"
   }
@@ -852,8 +870,12 @@
    "fl": [
     "MA.3.NSO.2.1"
    ],
-   "va": [],
-   "ga": []
+   "va": [
+    "3.NS.4a"
+   ],
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "money",
@@ -971,7 +993,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 3 story problem (dollars and cents), K-5 money framework rows 4.1 and 4.2 (2026-09-28)"
   }
@@ -993,8 +1017,12 @@
    "fl": [
     "MA.3.NSO.2.1"
    ],
-   "va": [],
-   "ga": []
+   "va": [
+    "3.NS.4a"
+   ],
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "money",
@@ -1111,7 +1139,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 3 story problem (dollars and cents), K-5 money framework rows 4.1 and 4.2 (2026-09-28)"
   }
@@ -1131,8 +1161,12 @@
     "3.4C"
    ],
    "fl": [],
-   "va": [],
-   "ga": []
+   "va": [
+    "3.NS.4a"
+   ],
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "money",
@@ -1228,7 +1262,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 3 bare drill (dollars and cents notation), K-5 money framework (2026-09-28)"
   }
@@ -1248,8 +1284,12 @@
     "3.4C"
    ],
    "fl": [],
-   "va": [],
-   "ga": []
+   "va": [
+    "3.NS.4a"
+   ],
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "number",
@@ -1337,7 +1377,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 3 bare drill (dollars and cents notation), K-5 money framework (2026-09-28)"
   }
@@ -1359,8 +1401,12 @@
    "fl": [
     "MA.3.AR.1.2"
    ],
-   "va": [],
-   "ga": []
+   "va": [
+    "3.CE.2e"
+   ],
+   "ga": [
+    "3.PAR.3.6"
+   ]
   },
   "difficulty": "easy",
   "format": "money",
@@ -1584,7 +1630,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 3 story problem (dollars and cents), K-5 money framework rows 4.1 and 4.2 (2026-09-28)"
   }
@@ -1607,8 +1655,12 @@
    "fl": [
     "MA.3.AR.1.2"
    ],
-   "va": [],
-   "ga": []
+   "va": [
+    "3.CE.1e"
+   ],
+   "ga": [
+    "3.PAR.2.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "money",
@@ -1940,7 +1992,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 3 story problem (dollars and cents), K-5 money framework rows 4.1 and 4.2 (2026-09-28)"
   }
@@ -1963,8 +2017,12 @@
    "fl": [
     "MA.3.AR.1.2"
    ],
-   "va": [],
-   "ga": []
+   "va": [
+    "3.CE.1e"
+   ],
+   "ga": [
+    "3.PAR.2.2"
+   ]
   },
   "difficulty": "hard",
   "format": "choice",
@@ -2351,7 +2409,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 3 story problem (dollars and cents), K-5 money framework rows 4.1 and 4.2 (2026-09-28)"
   }
@@ -2374,8 +2434,12 @@
    "fl": [
     "MA.3.AR.1.2"
    ],
-   "va": [],
-   "ga": []
+   "va": [
+    "3.CE.1e"
+   ],
+   "ga": [
+    "3.PAR.2.2"
+   ]
   },
   "difficulty": "easy",
   "format": "money",
@@ -2798,7 +2862,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 3 price-list item, K-5 money framework row 5.1 (2026-09-28)"
   }
@@ -2821,8 +2887,12 @@
    "fl": [
     "MA.3.AR.1.2"
    ],
-   "va": [],
-   "ga": []
+   "va": [
+    "3.CE.1e"
+   ],
+   "ga": [
+    "3.PAR.2.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "money",
@@ -3250,7 +3320,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 3 price-list item, K-5 money framework row 5.1 (2026-09-28)"
   }
@@ -3273,8 +3345,13 @@
    "fl": [
     "MA.3.AR.1.2"
    ],
-   "va": [],
-   "ga": []
+   "va": [
+    "3.CE.1e",
+    "3.NS.4d"
+   ],
+   "ga": [
+    "3.PAR.2.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -3725,7 +3802,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 3 price-list item, K-5 money framework row 5.1 (2026-09-28)"
   }
@@ -3745,8 +3824,12 @@
     "3.4C"
    ],
    "fl": [],
-   "va": [],
-   "ga": []
+   "va": [
+    "3.NS.4b"
+   ],
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "number",
@@ -3893,7 +3976,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 3 coin puzzle on the build tray with a required coin count, K-5 money framework row 7.1 (2026-09-28)"
   }
@@ -3913,8 +3998,12 @@
     "3.4C"
    ],
    "fl": [],
-   "va": [],
-   "ga": []
+   "va": [
+    "3.NS.4b"
+   ],
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "number",
@@ -4058,7 +4147,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 3 coin puzzle on the build tray with a required coin count, K-5 money framework row 7.1 (2026-09-28)"
   }

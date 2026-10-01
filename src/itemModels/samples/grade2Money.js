@@ -5,8 +5,8 @@
  * test notation, the coins shown when coins are named, and hints in all
  * four layers with the item's own numbers.
  *
- * Standards: CCSS 2.MD.C.8 · TEKS 2.5A/B · FL MA.2.M.2.2 · VA 2.MG.1 · GA
- * has no money standard in its Grade 2 map.
+ * Standards: CCSS 2.MD.C.8 · TEKS 2.5A/B · FL MA.2.M.2.2 · VA 2.NS.4b and
+ * 2.CE.1c · GA 2.MDR.6.2.
  *
  * Every string is templated with the slots below; the checks in
  * itemModels.spec fill each model 200 times through the QC gate.
@@ -16,13 +16,13 @@ const STANDARDS = Object.freeze({
   ccss: ["2.MD.C.8"],
   tx: ["2.5A", "2.5B"],
   fl: ["MA.2.M.2.2"],
-  va: ["2.MG.1"],
-  ga: [],
+  va: ["2.NS.4b", "2.CE.1c"],
+  ga: ["2.MDR.6.2"],
 });
 
 const PROVENANCE = Object.freeze({
   author: "larkit",
-  checkedAgainst: ["CCSS 2.MD.C.8", "TEKS 2.5A-B", "FL B.E.S.T. MA.2.M.2.2", "VA SOL 2.MG.1"],
+  checkedAgainst: ["CCSS 2.MD.C.8", "TEKS 2.5A-B", "FL B.E.S.T. MA.2.M.2.2", "VA SOL 2023", "GA K-12 2021"],
 });
 
 // A "buys ... at" story needs a place that sells things: an object's own

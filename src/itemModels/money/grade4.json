@@ -16,8 +16,12 @@
    "fl": [
     "MA.4.FR.1.2"
    ],
-   "va": [],
-   "ga": []
+   "va": [
+    "4.NS.5a"
+   ],
+   "ga": [
+    "4.NR.5.2"
+   ]
   },
   "difficulty": "easy",
   "format": "number",
@@ -144,7 +148,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 4 bare drill (fractions and decimals of a dollar), K-5 money framework row 6.1 (2026-09-28)"
   }
@@ -166,8 +172,12 @@
    "fl": [
     "MA.4.FR.1.2"
    ],
-   "va": [],
-   "ga": []
+   "va": [
+    "4.NS.5a"
+   ],
+   "ga": [
+    "4.NR.5.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "money",
@@ -297,7 +307,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 4 bare drill (fractions and decimals of a dollar), K-5 money framework row 6.1 (2026-09-28)"
   }
@@ -319,8 +331,12 @@
    "fl": [
     "MA.4.FR.1.2"
    ],
-   "va": [],
-   "ga": []
+   "va": [
+    "4.NS.5c"
+   ],
+   "ga": [
+    "4.NR.5.2"
+   ]
   },
   "difficulty": "hard",
   "format": "choice",
@@ -462,7 +478,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 4 bare drill (fractions and decimals of a dollar), K-5 money framework row 6.1 (2026-09-28)"
   }
@@ -485,8 +503,12 @@
    "fl": [
     "MA.4.FR.1.2"
    ],
-   "va": [],
-   "ga": []
+   "va": [
+    "4.NS.5c"
+   ],
+   "ga": [
+    "4.NR.5.2"
+   ]
   },
   "difficulty": "easy",
   "format": "money",
@@ -591,7 +613,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 4 bare drill (fractions and decimals of a dollar), K-5 money framework row 6.1 (2026-09-28)"
   }
@@ -614,8 +638,12 @@
    "fl": [
     "MA.4.FR.1.2"
    ],
-   "va": [],
-   "ga": []
+   "va": [
+    "4.NS.5c"
+   ],
+   "ga": [
+    "4.NR.5.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "money",
@@ -709,7 +737,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 4 bare drill (fractions and decimals of a dollar), K-5 money framework row 6.1 (2026-09-28)"
   }
@@ -731,7 +761,9 @@
    "fl": [
     "MA.4.NSO.2.7"
    ],
-   "va": [],
+   "va": [
+    "4.CE.4a"
+   ],
    "ga": []
   },
   "difficulty": "easy",
@@ -835,7 +867,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 4 bare drill (fractions and decimals of a dollar), K-5 money framework row 6.1 (2026-09-28)"
   }
@@ -855,9 +889,11 @@
     "4.4A"
    ],
    "fl": [
-    "MA.4.NSO.2.7"
+    "MA.4.M.2.2"
    ],
-   "va": [],
+   "va": [
+    "4.CE.4b"
+   ],
    "ga": []
   },
   "difficulty": "moderate",
@@ -1080,7 +1116,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 4 story problem with decimal money, K-5 money framework rows 4.1 and 4.2 (2026-09-28)"
   }
@@ -1100,9 +1138,11 @@
     "4.4A"
    ],
    "fl": [
-    "MA.4.NSO.2.7"
+    "MA.4.M.2.2"
    ],
-   "va": [],
+   "va": [
+    "4.CE.4b"
+   ],
    "ga": []
   },
   "difficulty": "hard",
@@ -1337,7 +1377,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 4 story problem with decimal money, K-5 money framework rows 4.1 and 4.2 (2026-09-28)"
   }
@@ -1357,9 +1399,11 @@
     "4.4A"
    ],
    "fl": [
-    "MA.4.NSO.2.7"
+    "MA.4.M.2.2"
    ],
-   "va": [],
+   "va": [
+    "4.CE.4b"
+   ],
    "ga": []
   },
   "difficulty": "hard",
@@ -1730,7 +1774,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 4 story problem with decimal money, K-5 money framework rows 4.1 and 4.2 (2026-09-28)"
   }
@@ -1751,9 +1797,11 @@
     "4.4A"
    ],
    "fl": [
-    "MA.4.NSO.2.7"
+    "MA.4.M.2.2"
    ],
-   "va": [],
+   "va": [
+    "4.CE.4b"
+   ],
    "ga": []
   },
   "difficulty": "moderate",
@@ -2199,7 +2247,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 4 price-list item, K-5 money framework row 5.1 (2026-09-28)"
   }
@@ -2220,9 +2270,11 @@
     "4.4A"
    ],
    "fl": [
-    "MA.4.NSO.2.7"
+    "MA.4.M.2.2"
    ],
-   "va": [],
+   "va": [
+    "4.CE.4b"
+   ],
    "ga": []
   },
   "difficulty": "hard",
@@ -2669,7 +2721,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 4 price-list item, K-5 money framework row 5.1 (2026-09-28)"
   }
@@ -2691,7 +2745,9 @@
    "fl": [
     "MA.4.NSO.2.7"
    ],
-   "va": [],
+   "va": [
+    "4.CE.4a"
+   ],
    "ga": []
   },
   "difficulty": "moderate",
@@ -2839,7 +2895,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 4 error-analysis item, K-5 money framework row 7.2 (2026-09-28)"
   }
@@ -2861,7 +2919,9 @@
    "fl": [
     "MA.4.NSO.2.7"
    ],
-   "va": [],
+   "va": [
+    "4.CE.4a"
+   ],
    "ga": []
   },
   "difficulty": "hard",
@@ -2974,7 +3034,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 4 error-analysis item, K-5 money framework row 7.2 (2026-09-28)"
   }
@@ -2996,7 +3058,9 @@
    "fl": [
     "MA.4.NSO.2.7"
    ],
-   "va": [],
+   "va": [
+    "4.CE.4a"
+   ],
    "ga": []
   },
   "difficulty": "hard",
@@ -3107,7 +3171,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 4 error-analysis item, K-5 money framework row 7.2 (2026-09-28)"
   }
@@ -3128,7 +3194,7 @@
     "4.4A"
    ],
    "fl": [
-    "MA.4.NSO.2.7"
+    "MA.4.M.2.2"
    ],
    "va": [],
    "ga": []
@@ -3345,7 +3411,9 @@
    "checkedAgainst": [
     "CCSS",
     "TEKS",
-    "FL B.E.S.T."
+    "FL B.E.S.T.",
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "grade 4 story problem with decimal money, K-5 money framework rows 4.1 and 4.2 (2026-09-28)"
   }

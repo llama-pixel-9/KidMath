@@ -32,7 +32,7 @@ export const MULTIPLICATIVE_STRUCTURES = [
     tier: TIERS.EASY,
     op: "x",
     subskill: "equalGroups",
-    equation: (g, s) => `${g} x ${s} = ?`,
+    equation: (g, s) => `${g} × ${s} = ?`,
     story: (ctx, { g, s }) =>
       `There are ${g} bags with ${s} ${ctx.plural} in each bag. How many ${ctx.plural} are there in all?`,
   },
@@ -44,7 +44,7 @@ export const MULTIPLICATIVE_STRUCTURES = [
     op: "/",
     subskill: "partitioning",
     division: "partitive",
-    equation: (g, _s, p) => `${g} x ? = ${p}`,
+    equation: (g, _s, p) => `${g} × ? = ${p}`,
     story: (ctx, { g, p }) =>
       `${p} ${ctx.plural} are shared equally into ${g} bags. How many ${ctx.plural} are in each bag?`,
   },
@@ -56,7 +56,7 @@ export const MULTIPLICATIVE_STRUCTURES = [
     op: "/",
     subskill: "unknownQuotient",
     division: "quotitive",
-    equation: (_g, s, p) => `? x ${s} = ${p}`,
+    equation: (_g, s, p) => `? × ${s} = ${p}`,
     story: (ctx, { s, p }) =>
       `${p} ${ctx.plural} are packed ${s} to a bag. How many bags are needed?`,
   },
@@ -69,7 +69,7 @@ export const MULTIPLICATIVE_STRUCTURES = [
     tier: TIERS.EASY,
     op: "x",
     subskill: "arrayReasoning",
-    equation: (g, s) => `${g} x ${s} = ?`,
+    equation: (g, s) => `${g} × ${s} = ?`,
     story: (ctx, { g, s }) =>
       `There are ${g} rows of ${ctx.plural} with ${s} in each row. How many ${ctx.plural} are there?`,
   },
@@ -81,7 +81,7 @@ export const MULTIPLICATIVE_STRUCTURES = [
     op: "/",
     subskill: "partitioning",
     division: "partitive",
-    equation: (g, _s, p) => `${g} x ? = ${p}`,
+    equation: (g, _s, p) => `${g} × ? = ${p}`,
     story: (ctx, { g, p }) =>
       `${p} ${ctx.plural} are arranged into ${g} equal rows. How many ${ctx.plural} are in each row?`,
   },
@@ -93,7 +93,7 @@ export const MULTIPLICATIVE_STRUCTURES = [
     op: "/",
     subskill: "unknownQuotient",
     division: "quotitive",
-    equation: (_g, s, p) => `? x ${s} = ${p}`,
+    equation: (_g, s, p) => `? × ${s} = ${p}`,
     story: (ctx, { s, p }) =>
       `${p} ${ctx.plural} are arranged into rows of ${s}. How many rows will there be?`,
   },
@@ -106,7 +106,7 @@ export const MULTIPLICATIVE_STRUCTURES = [
     tier: TIERS.DIFFICULT,
     op: "x",
     subskill: "equalGroups",
-    equation: (g, s) => `${g} x ${s} = ?`,
+    equation: (g, s) => `${g} × ${s} = ?`,
     story: (ctx, { g, s }) =>
       `A blue ${ctx.singular} costs ${s} cents. A red ${ctx.singular} costs ${g} times as much. How many cents is the red one?`,
   },
@@ -118,7 +118,7 @@ export const MULTIPLICATIVE_STRUCTURES = [
     op: "/",
     subskill: "partitioning",
     division: "partitive",
-    equation: (g, _s, p) => `${g} x ? = ${p}`,
+    equation: (g, _s, p) => `${g} × ? = ${p}`,
     story: (ctx, { g, p }) =>
       `A red ${ctx.singular} costs ${p} cents, which is ${g} times as much as a blue one. How many cents is the blue one?`,
   },
@@ -130,7 +130,7 @@ export const MULTIPLICATIVE_STRUCTURES = [
     op: "/",
     subskill: "unknownQuotient",
     division: "quotitive",
-    equation: (_g, s, p) => `? x ${s} = ${p}`,
+    equation: (_g, s, p) => `? × ${s} = ${p}`,
     story: (ctx, { s, p }) =>
       `A red ${ctx.singular} costs ${p} cents and a blue one costs ${s} cents. How many times as much is the red one?`,
   },
@@ -190,7 +190,7 @@ export const MULTIPLICATION_STRUCTURES = MULTIPLICATIVE_STRUCTURES.filter((s) =>
  */
 export function divisionEquation(structure, { g, s, p }) {
   const divisor = structure.solveFor === "s" ? g : s;
-  return `${p} / ${divisor} = ?`;
+  return `${p} ÷ ${divisor} = ?`;
 }
 
 /** Resolve against `g x s = p`. `form` picks the symbolic rendering. */

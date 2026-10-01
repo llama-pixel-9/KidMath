@@ -156,6 +156,10 @@ describe("crediting attempts to skills", () => {
     expect(credit("addition", "3 + 1 = ?")).toBe("add-within-5");
     expect(credit("multiplication", "7 × 8 = ?")).toBe("mul-tables-7-8-9");
     expect(credit("division", "56 ÷ 7 = ?")).toBe("div-facts-7-8-9");
+    // Either spelling of a sign reads the same.
+    expect(credit("subtraction", "826 − 603 = ?")).toBe("sub-3digit-no-regroup");
+    expect(credit("multiplication", "7 x 8 = ?")).toBe("mul-tables-7-8-9");
+    expect(credit("division", "56 / 7 = ?")).toBe("div-facts-7-8-9");
   });
 
   it("a prompt whose numbers fit none of the cell's skills is credited to none", () => {

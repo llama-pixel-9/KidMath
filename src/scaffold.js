@@ -12,8 +12,14 @@
  *   numberLine— a 0…max line with the start marked (count on / back to 30)
  *   look      — nothing derivable: a "look again" nudge only
  *
- * Pure and dependency-free so it is unit-testable and bundleable for iOS.
+ * Signs come in two spellings ("-" and "−", "x" and "×", "/" and "÷"); both
+ * get the same model.
+ *
+ * Pure (its one import is the pure sign table) so it is unit-testable and
+ * bundleable for iOS.
  */
+
+import { asciiOp } from "./opSigns.js";
 
 const MAX_DOTS = 20;
 const MAX_ARRAY = 12;
@@ -35,20 +41,22 @@ export function scaffoldFor(question) {
   const mode = question.mode || question.metadata?.modeId || "";
   const a = num(question.a);
   const b = num(question.b);
-  const op = question.op;
+  const op = asciiOp(question.op);
 
-  if ((op === "+" || op === "-") && a != null && b != null && a >= 0 && b >= 0 && a <= MAX_DOTS && b <= MAX_DOTS) {
+  // Take-away needs at least as many dots as it removes ("9, take away 18" is
+  // not a model of anything).
+  if ((op === "+" || (op === "-" && a >= b)) && a != null && b != null && a >= 0 && b >= 0 && a <= MAX_DOTS && b <= MAX_DOTS) {
     return op === "+"
       ? { kind: "dots", groups: [a, b], label: `${a} and ${b} more` }
       : { kind: "dots", groups: [a], takeAway: b, label: `${a}, take away ${b}` };
   }
 
-  if (op === "×" || op === "*") {
+  if (op === "x") {
     if (a != null && b != null && a >= 1 && b >= 1 && a <= MAX_ARRAY && b <= MAX_ARRAY) {
       return { kind: "array", rows: a, cols: b, label: `${a} rows of ${b}` };
     }
   }
-  if (op === "÷" || op === "/") {
+  if (op === "/") {
     if (a != null && b != null && b >= 1 && b <= MAX_ARRAY && a / b <= MAX_ARRAY && Number.isInteger(a / b)) {
       return { kind: "array", rows: b, cols: a / b, label: `${a} shared into ${b} rows` };
     }

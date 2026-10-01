@@ -272,7 +272,7 @@ struct QuestionDisplayView: View {
         return VStack(alignment: .trailing, spacing: 2) {
             digitsRow(a)
             HStack(spacing: 0) {
-                Text(op)
+                Text(AnswerFormatting.opGlyph(op))
                     .font(.system(size: 40, weight: .heavy, design: .rounded))
                     .foregroundStyle(theme.textPrimary)
                 Spacer(minLength: 8)
@@ -315,7 +315,7 @@ struct QuestionDisplayView: View {
         let a = question["a"].map(AnswerFormatting.text) ?? "?"
         let op = question["op"] as? String ?? "+"
         let b = question["b"].map(AnswerFormatting.text) ?? "?"
-        return "\(a) \(op) \(b) = ?"
+        return "\(a) \(AnswerFormatting.opGlyph(op)) \(b) = ?"
     }
 
     private func caption(_ text: String) -> some View {

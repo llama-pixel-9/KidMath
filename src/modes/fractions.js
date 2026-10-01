@@ -606,7 +606,7 @@ export const FRACTION_VARIETIES = [
           `${a - b}`, // whole-number bias
           fracLabel(a - b, den + den), // denominatorAdd's subtraction twin
         ]),
-        prompt: `${fracLabel(a, den)} - ${fracLabel(b, den)} = ?`,
+        prompt: `${fracLabel(a, den)} − ${fracLabel(b, den)} = ?`,
       };
     },
   },

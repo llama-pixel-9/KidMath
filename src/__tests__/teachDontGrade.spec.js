@@ -13,6 +13,16 @@ describe("scaffoldFor", () => {
     expect(scaffoldFor({ a: 12, b: 3, op: "÷", answer: 4 })).toMatchObject({ kind: "array", rows: 3, cols: 4 });
     expect(scaffoldFor({ a: 13, b: 13, op: "×", answer: 169 }).kind).toBe("look");
   });
+  it("gives both spellings of a sign the same model", () => {
+    // Generators write "x" and "/"; the bank has both spellings.
+    expect(scaffoldFor({ a: 3, b: 4, op: "x", answer: 12 })).toMatchObject({ kind: "array", rows: 3, cols: 4 });
+    expect(scaffoldFor({ a: 12, b: 3, op: "/", answer: 4 })).toMatchObject({ kind: "array", rows: 3, cols: 4 });
+    expect(scaffoldFor({ a: 9, b: 4, op: "−", answer: 5 })).toMatchObject({ kind: "dots", groups: [9], takeAway: 4 });
+  });
+  it("never draws a take-away bigger than the dots", () => {
+    // "9 − ? = ..." style slots can carry a < b; there is nothing to take away from.
+    expect(scaffoldFor({ a: 9, b: 18, op: "-", answer: 9 }).kind).toBe("look");
+  });
   it("models fractions as a strip and counting as a number line", () => {
     expect(scaffoldFor({ mode: "fractions", answer: "3/4" })).toMatchObject({ kind: "strip", den: 4, shaded: 3 });
     expect(scaffoldFor({ mode: "counting", a: 8, b: 4, op: "count", answer: 12 })).toMatchObject({ kind: "numberLine", mark: 8 });
@@ -27,6 +37,8 @@ describe("speakableText", () => {
     expect(speakableText("🍪🍪🍪🍪🍪 🍪🍪 = ?", { noun: "cookies" })).toBe("7 cookies equals what");
     expect(speakableText("8 − 3 = ?")).toBe("8 minus 3 equals what");
     expect(speakableText("3 × 4 = ?")).toBe("3 times 4 equals what");
+    expect(speakableText("3 x 4 = ?")).toBe("3 times 4 equals what");
+    expect(speakableText("12 / 3 = ?")).toBe("12 divided by 3 equals what");
     expect(speakableText("Which fraction equals 3/4?")).toBe("Which fraction equals 3 over 4 what");
   });
   it("leaves plain sentences alone", () => {

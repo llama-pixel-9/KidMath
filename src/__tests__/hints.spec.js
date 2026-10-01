@@ -72,6 +72,12 @@ describe("hintFor", () => {
     expect(h.steps.join(" ")).not.toMatch(/=\s*13\b/);
     expect(h.visual).toMatchObject({ kind: "dots" });
   });
+
+  it("draws an array for a generated multiplication fact", () => {
+    // Generators write op "x"; the picture used to fire only on "×".
+    const q = { mode: "multiplication", a: 3, b: 4, op: "x", answer: 12, metadata: { modeId: "multiplication", subskill: "equalGroups" } };
+    expect(hintFor(q).visual).toMatchObject({ kind: "array", rows: 3, cols: 4 });
+  });
 });
 
 // A live v1-shaped question and the per-item hint a v2 row would carry for

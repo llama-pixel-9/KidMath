@@ -14,6 +14,7 @@
  */
 import { gradeIndex } from "../gradeSeed.js";
 import { GRADES, WORKSHEET_SKILLS } from "./catalog.js";
+import { asciiOp } from "../opSigns.js";
 
 // plain id (canonical) ← picture id, and the title the merged skill carries.
 const TWINS = [
@@ -151,7 +152,6 @@ export function gradeForModeLevel(mode, level) {
 
 const PROMPT_NUMBERS = /\d+(?:\.\d+)?/g;
 const BARE = /^\s*(\d+)\s*([+\-−–x×*÷/])\s*(\d+)\s*=\s*\?\s*$/;
-const ASCII_OP = { "−": "-", "–": "-", "×": "x", "*": "x", "÷": "/" };
 
 const inRange = (n, range) => !range || (n >= range[0] && n <= range[1]);
 
@@ -228,7 +228,7 @@ export function skillForAttempt(mode, attempt) {
   if (bare) {
     const a = Number(bare[1]);
     const b = Number(bare[3]);
-    const op = ASCII_OP[bare[2]] || bare[2];
+    const op = asciiOp(bare[2]);
     const drill = inMode
       .filter((skill) => skill.source.kind === "computation" && skill.source.op === op && claimAccepts(skill.source, a, b))
       .sort((x, y) => gradeRank(x.grade) - gradeRank(y.grade))[0];

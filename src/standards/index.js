@@ -19,6 +19,8 @@
 import ccss from "./ccss.json" with { type: "json" };
 import tx from "./tx.json" with { type: "json" };
 import txCrosswalk from "./crosswalk/tx.json" with { type: "json" };
+import fl from "./fl.json" with { type: "json" };
+import flCrosswalk from "./crosswalk/fl.json" with { type: "json" };
 
 /** Every framework the app tags, in display order. Kid profiles store a state; any other state reads as Common Core. */
 export const FRAMEWORKS = Object.freeze(["ccss", "tx", "fl", "va", "ga"]);
@@ -37,10 +39,10 @@ export const SCOPES = Object.freeze(["yes", "partly", "no"]);
 export const MATCHES = Object.freeze(["same", "partly", "broader", "narrower"]);
 
 /** Framework → its file. A state joins here when its list lands. */
-const FILES = { ccss, tx };
+const FILES = { ccss, tx, fl };
 
 /** Crosswalk files, framework → { links: [...] }, one per state. */
-const CROSSWALKS = { tx: txCrosswalk };
+const CROSSWALKS = { tx: txCrosswalk, fl: flCrosswalk };
 
 export const LOADED_FRAMEWORKS = Object.freeze(Object.keys(FILES));
 
@@ -74,7 +76,14 @@ export function txAliases(code) {
   return [`${grade}.${ks}(${letter})`, `${grade}.${ks}.${letter}`];
 }
 
-const DERIVED_ALIASES = { ccss: ccssAliases, tx: txAliases };
+const FL_CODE = /^MA\.([K1-5])\.(NSO|FR|AR|M|GR|DP)\.(\d)\.(\d{1,2})$/;
+
+/** The other way a Florida benchmark is written: without the MA. prefix (3.NSO.2.4 for MA.3.NSO.2.4). */
+export function flAliases(code) {
+  return FL_CODE.test(code) ? [code.slice(3)] : [];
+}
+
+const DERIVED_ALIASES = { ccss: ccssAliases, tx: txAliases, fl: flAliases };
 
 function withDerived(framework, file) {
   const rows = Array.isArray(file?.standards) ? file.standards : [];
@@ -192,6 +201,7 @@ export function validateStandardsFile(file, framework = file?.framework) {
     }
     if (framework === "ccss" && !CCSS_CODE.test(row.code || "")) errors.push(`${at}: not a long-form Common Core code`);
     if (framework === "tx" && !TX_CODE.test(row.code || "")) errors.push(`${at}: not a Texas code like 3.4F`);
+    if (framework === "fl" && !FL_CODE.test(row.code || "")) errors.push(`${at}: not a Florida benchmark like MA.3.NSO.2.4`);
   }
   for (const row of rows) {
     if (row.parent && !seen.has(row.parent)) errors.push(`${row.code}: parent ${row.parent} is not in the file`);

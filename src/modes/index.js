@@ -102,7 +102,7 @@ export const MODE_GROUPS = [
     modeIds: ["linesShapes", "angles", "dataGraphs", "volumeCoordinates"],
   },
   {
-    // Hidden until its version switch serves its rows (useHiddenTopics).
+    // Live by default; hidden where its switch row says v1 (useHiddenTopics).
     id: "facts",
     title: "Math Facts",
     gradeHint: "Grades K-4",

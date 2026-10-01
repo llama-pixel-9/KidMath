@@ -12,6 +12,7 @@ vi.mock("../supabaseClient.js", () => ({
 }));
 
 import {
+  DEFAULT_LIVE_VERSION,
   isServable,
   loadVersionSwitch,
   previewEnabled,
@@ -19,6 +20,7 @@ import {
   topicVisible,
 } from "../itemBank/versionSwitch.js";
 import { SEED_ITEMS } from "../itemBank/bundle.js";
+import { V2_ONLY_MODE_IDS } from "../modes/index.js";
 
 /** A minimal Storage stand-in: vitest runs in Node, which has none. */
 function fakeStorage() {
@@ -106,13 +108,22 @@ describe("isServable", () => {
     expect(v1.every((item) => isServable(item, empty, { preview: true }))).toBe(true);
   });
 
-  it("holds back the bundled Math Facts rows (v2 only) until their switch moves", () => {
+  it("serves the bundled Math Facts rows (v2 only) with no switch row, and holds them back at v1", () => {
     const v2 = SEED_ITEMS.filter((item) => item.version != null);
     expect(v2.length).toBeGreaterThan(0);
     expect(v2.every((item) => item.modeId === "mathFacts" && Number(item.version) === 2)).toBe(true);
-    expect(v2.some((item) => isServable(item, new Map()))).toBe(false);
+    expect(v2.every((item) => isServable(item, new Map()))).toBe(true);
+    expect(v2.every((item) => isServable(item, null))).toBe(true);
+    expect(v2.some((item) => isServable(item, new Map([["mathFacts", "v1"]])))).toBe(false);
+    expect(v2.some((item) => isServable(item, new Map([["mathFacts", "preview"]])))).toBe(false);
     expect(v2.every((item) => isServable(item, new Map([["mathFacts", "v2"]])))).toBe(true);
     expect(v2.every((item) => isServable(item, new Map([["mathFacts", "preview"]]), { preview: true }))).toBe(true);
+  });
+
+  it("defaults only the v2-only topics to v2; every other topic with no row is v1", () => {
+    expect(Object.keys(DEFAULT_LIVE_VERSION).sort()).toEqual([...V2_ONLY_MODE_IDS].sort());
+    expect(Object.values(DEFAULT_LIVE_VERSION).every((v) => v === "v2")).toBe(true);
+    expect(isServable({ modeId: "money", reviewStatus: "approved", version: 2 }, new Map())).toBe(false);
   });
 });
 
@@ -122,10 +133,10 @@ describe("topicVisible", () => {
     expect(topicVisible("money", new Map([["money", "v2"]]))).toBe(true);
   });
 
-  it("shows a v2-only topic at v2, to preview browsers at preview, never at v1 or with no row", () => {
+  it("shows Math Facts with no row or at v2, to preview browsers at preview, never at v1", () => {
     const v2Only = { v2Only: true };
-    expect(topicVisible("mathFacts", new Map(), v2Only)).toBe(false);
-    expect(topicVisible("mathFacts", null, v2Only)).toBe(false);
+    expect(topicVisible("mathFacts", new Map(), v2Only)).toBe(true);
+    expect(topicVisible("mathFacts", null, v2Only)).toBe(true);
     expect(topicVisible("mathFacts", new Map([["mathFacts", "v1"]]), v2Only)).toBe(false);
     expect(topicVisible("mathFacts", new Map([["mathFacts", "preview"]]), v2Only)).toBe(false);
     expect(topicVisible("mathFacts", new Map([["mathFacts", "preview"]]), { ...v2Only, preview: true })).toBe(true);

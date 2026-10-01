@@ -3,12 +3,13 @@ import { FREE_MODE_IDS, entitlementIsActive, isFreeMode, paywallEnabled } from "
 import { MODE_IDS } from "../modes";
 
 // The web premium split (pricing decision 2026-07-21): four operations +
-// counting free forever; the other 17 modes premium. These tests mirror the
-// iOS suite's StoreTests so both platforms enforce the same rules.
+// counting free forever, Math Facts too since 2026-10-01; every other mode
+// premium. These tests mirror the iOS suite's StoreTests so both platforms
+// enforce the same rules.
 describe("free tier", () => {
-  it("keeps exactly the four operations plus counting free", () => {
-    expect(FREE_MODE_IDS.sort()).toEqual(
-      ["addition", "counting", "division", "multiplication", "subtraction"].sort()
+  it("keeps exactly the four operations, counting and Math Facts free", () => {
+    expect([...FREE_MODE_IDS].sort()).toEqual(
+      ["addition", "counting", "division", "mathFacts", "multiplication", "subtraction"].sort()
     );
   });
 
@@ -18,7 +19,7 @@ describe("free tier", () => {
     }
   });
 
-  it("locks the remaining 17 modes", () => {
+  it("locks every other mode", () => {
     const locked = MODE_IDS.filter((id) => !isFreeMode(id));
     expect(locked).toHaveLength(MODE_IDS.length - FREE_MODE_IDS.length);
     expect(locked).toContain("fractions");

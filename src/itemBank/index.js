@@ -205,8 +205,10 @@ export function validateBankItem(item) {
       if (additive || multiplicative) {
         const [lo, mid, hi] = [a, b, answer].sort((x, y) => x - y);
         // A zero breaks the trio rule for times and divide (0 × 7 = 0 sorts
-        // to 0, 0, 7), so `a op b = answer` holding as written also passes.
-        const holds = (additive ? lo + mid === hi : lo * mid === hi) || computeExpected(op, a, b) === answer;
+        // to 0, 0, 7), so with a zero in it `a op b = answer` holding as
+        // written also passes (never otherwise: see the QC arithmetic check).
+        const hasZero = a === 0 || b === 0 || answer === 0;
+        const holds = (additive ? lo + mid === hi : lo * mid === hi) || (hasZero && computeExpected(op, a, b) === answer);
         if (!holds) {
           errors.push(`numeric inconsistency: {${a}, ${b}, ${answer}} do not satisfy ${op}`);
         }

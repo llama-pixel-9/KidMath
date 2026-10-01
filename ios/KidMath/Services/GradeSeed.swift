@@ -49,6 +49,14 @@ enum GradeSeed {
         "fractionOps": "4–5",
         "decimalOps": "4–5",
         "volumeCoordinates": "5",
+        "mathFacts": "K–4",
+    ]
+
+    /// Topics whose levels are grade bands, not three per grade: per grade, K
+    /// first, a level only that grade's skills hold (src/gradeSeed.js
+    /// GRADE_BAND_LEVELS).
+    static let gradeBandLevels: [String: [Int]] = [
+        "mathFacts": [1, 3, 4, 7, 9],
     ]
 
     /// "K" → 0, "1st" → 1 … "6th" → 6; nil when unknown.
@@ -72,6 +80,7 @@ enum GradeSeed {
 
     static func startingLevel(mode: String, grade: String?) -> Int {
         guard let g = gradeIndex(grade) else { return 1 }
+        if let bands = gradeBandLevels[mode] { return bands[min(g, bands.count - 1)] }
         let (start, end) = parseSpan(gradeSpans[mode])
         let effective = min(g, end)
         if effective <= start { return 1 }

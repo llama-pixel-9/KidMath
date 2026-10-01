@@ -36,9 +36,21 @@ export function parseSpan(span) {
   return [parts[0], parts[1] ?? parts[0]];
 }
 
+/**
+ * Topics whose levels are grade bands rather than a three-per-grade ladder:
+ * per grade, K first, a level only that grade's skills hold
+ * (src/skills/catalog.js; factFluency.spec keeps the two in step). Math Facts
+ * runs K 1-2, Grade 1 2-3, Grade 2 4-6, Grade 3 7-8, Grade 4 9-10, so a first
+ * grader starts at 3, not the ladder's 4 (Grade 2 facts). The top band is not
+ * held back: it is the Grade 4 facts, not a harder rung.
+ */
+export const GRADE_BAND_LEVELS = { mathFacts: [1, 3, 4, 7, 9] };
+
 export function startingLevelFor(modeId, grade) {
   const g = gradeIndex(grade);
   if (g == null) return 1;
+  const bands = GRADE_BAND_LEVELS[modeId];
+  if (bands) return bands[Math.min(g, bands.length - 1)];
   const [start, end] = parseSpan(GRADE_SPANS[modeId]);
   const effective = Math.min(g, end);
   if (effective <= start) return 1;

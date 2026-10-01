@@ -5,6 +5,9 @@ import { hintContainsAnswer, validateHint } from "../hints/hintSchema.js";
 import { runChecks } from "../itemBank/qc/checks.js";
 import { validateBank, validateBankItem } from "../itemBank/index.js";
 import { generateQuestion } from "../mathEngine.js";
+import { startingLevelFor } from "../gradeSeed.js";
+import { gradeForModeLevel, playSkills } from "../skills/play.js";
+import { resolveTopic } from "../skills/topicState.js";
 
 // Fact fluency plan, Part A: every basic fact, in exactly one plan row, asked
 // in the formats of B2, and every generated row passing the bank's gates.
@@ -139,6 +142,20 @@ describe("the fact rows", () => {
     expect(validateBank(ITEMS).issues).toEqual([]);
   });
 
+  it("let a zero fact hold as written, and nothing else", () => {
+    const item = ITEMS.find((i) => i.itemId === "mathFacts-v2-div-0-7-plain");
+    const asked = (question) => ({ ...item, question: { ...item.question, ...question } });
+    const arithmetic = (i) => runChecks(i).findings.some((f) => f.id === "arithmetic");
+    // 0 ÷ 7 = 0 sorts to 0, 0, 7, which the trio rule can't read.
+    expect(arithmetic(item)).toBe(false);
+    expect(validateBankItem(item).valid).toBe(true);
+    // A story division with its numbers swapped (6 m cut into 3, keyed 3 ÷ 6)
+    // holds only as written, and must still fail both gates.
+    const swapped = asked({ a: 3, b: 6, answer: 0.5 });
+    expect(arithmetic(swapped)).toBe(true);
+    expect(validateBankItem(swapped).errors.some((e) => e.startsWith("numeric inconsistency"))).toBe(true);
+  });
+
   it("every format applies to some fact, and only to facts it can ask", () => {
     for (const format of FACT_FORMATS) expect(FACTS.some((f) => formatApplies(f, format)), format).toBe(true);
     expect(formatApplies(FACTS.find((f) => f.id === "mul-0-7"), "missing")).toBe(false); // 0 × ? = 0
@@ -156,5 +173,19 @@ describe("the Math Facts generator (fallback)", () => {
         expect(q.display.promptText.length, q.display.promptText).toBeLessThan(40);
       }
     }
+  });
+});
+
+describe("a kid's first Math Facts session", () => {
+  it("opens at their own grade's facts", () => {
+    for (const [profile, grade] of [["K", "K"], ["1st", "1"], ["2nd", "2"], ["3rd", "3"], ["4th", "4"]]) {
+      const skills = playSkills().filter((s) => s.mode === "mathFacts" && s.grade === grade);
+      const level = startingLevelFor("mathFacts", profile);
+      expect(skills.some(({ source: { levels: [lo, hi] } }) => level >= lo && level <= hi), profile).toBe(true);
+      expect(gradeForModeLevel("mathFacts", level), profile).toBe(grade);
+      // The seeded level reads as played, so the topic takes its grade from it.
+      expect(resolveTopic("mathFacts", { level, totalSessions: 0 }, { profileGrade: profile }).grade, profile).toBe(grade);
+    }
+    expect(startingLevelFor("mathFacts", "5th")).toBe(startingLevelFor("mathFacts", "4th"));
   });
 });

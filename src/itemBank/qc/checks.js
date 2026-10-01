@@ -266,8 +266,11 @@ function arithmeticCheck(item) {
   const additive = op === "+" || op === "-" || op === "−";
   if (additive ? lo + mid === hi : lo * mid === hi) return null;
   // A zero breaks the trio rule for times and divide (0 × 7 = 0 sorts to
-  // 0, 0, 7), so a plain `a op b = answer` that holds as written also passes.
-  if (fn(a, b) === answer) return null;
+  // 0, 0, 7), so with a zero in it a plain `a op b = answer` that holds as
+  // written also passes. Only with a zero: a story division with its numbers
+  // swapped (3 ÷ 6 = 0.5 for "6 meters cut into 3") must still fail.
+  const hasZero = a === 0 || b === 0 || answer === 0;
+  if (hasZero && fn(a, b) === answer) return null;
 
   return fail("arithmetic", `answer ${answer} is not consistent with ${a} and ${b} under ${op}`);
 }

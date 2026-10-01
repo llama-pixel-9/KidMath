@@ -1,7 +1,7 @@
 {
   "framework": "va",
   "edition": "2023 SOL to CCSS-M 2010",
-  "checked": "2026-10-01: drafted from both documents side by side; VDOE publishes no crosswalk to Common Core. Awaiting Sai's spot check.",
+  "checked": "2026-10-01: drafted from both documents side by side; VDOE publishes no crosswalk to Common Core. Sai spot-checked 20 codes and 20 links and approved the list on 2026-10-01.",
   "note": "One row per link from a lettered Virginia part to a Common Core code. match says how the Virginia code relates to the Common Core code: same (same skill; small range or wording differences noted), broader (the Virginia code asks for more), narrower (the Virginia code is one part of it), partly (they overlap and each has something the other lacks). Standards link through their parts; parts with no Common Core counterpart have no row. A note names the Common Core grade when it differs.",
   "links": [
     { "code": "K.NS.1a", "ccss_code": "K.CC.B.4", "match": "same" },

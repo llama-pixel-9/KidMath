@@ -99,9 +99,19 @@ describe("isServable", () => {
 
   it("serves every bundled seed item, which predates the version field", () => {
     const empty = new Map();
-    expect(SEED_ITEMS.length).toBeGreaterThan(0);
-    expect(SEED_ITEMS.every((item) => isServable(item, empty))).toBe(true);
-    expect(SEED_ITEMS.every((item) => isServable(item, empty, { preview: true }))).toBe(true);
+    const v1 = SEED_ITEMS.filter((item) => item.version == null);
+    expect(v1.length).toBeGreaterThan(0);
+    expect(v1.every((item) => isServable(item, empty))).toBe(true);
+    expect(v1.every((item) => isServable(item, empty, { preview: true }))).toBe(true);
+  });
+
+  it("holds back the bundled Math Facts rows (v2 only) until their switch moves", () => {
+    const v2 = SEED_ITEMS.filter((item) => item.version != null);
+    expect(v2.length).toBeGreaterThan(0);
+    expect(v2.every((item) => item.modeId === "mathFacts" && Number(item.version) === 2)).toBe(true);
+    expect(v2.some((item) => isServable(item, new Map()))).toBe(false);
+    expect(v2.every((item) => isServable(item, new Map([["mathFacts", "v2"]])))).toBe(true);
+    expect(v2.every((item) => isServable(item, new Map([["mathFacts", "preview"]]), { preview: true }))).toBe(true);
   });
 });
 

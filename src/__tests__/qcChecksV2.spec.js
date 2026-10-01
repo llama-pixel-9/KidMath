@@ -107,8 +107,18 @@ describe("oneQuestionMark", () => {
   it("does not count the unknown slot in an equation as a question", () => {
     const one = withPrompt("8 + ? = 15. What number goes in the blank?", { a: 8, b: 7, op: "+", answer: 7 });
     expect(find(runChecks(one), "oneQuestionMark")).toBeNull();
+    // Words that never ask leave the kid guessing; a bare equation (a fact
+    // drill) has no words, so its one blank is the question.
+    const worded = withPrompt("Fill the blank: ? − 12 = 31", { a: 12, b: 31, op: "-", answer: 43 }, { itemFamily: "procedural" });
+    expect(find(runChecks(worded), "oneQuestionMark")?.message).toMatch(/no question/);
     const bare = withPrompt("? − 12 = 31", { a: 12, b: 31, op: "-", answer: 43 }, { itemFamily: "procedural" });
-    expect(find(runChecks(bare), "oneQuestionMark")?.message).toMatch(/no question/);
+    expect(find(runChecks(bare), "oneQuestionMark")).toBeNull();
+    const twoBlanks = withPrompt("? + ? = 10", { a: null, b: null, op: "+", answer: 5 }, { itemFamily: "procedural" });
+    expect(find(runChecks(twoBlanks), "oneQuestionMark")).not.toBeNull();
+    // "8 + 5 = 12" asks nothing until its sub-prompt does.
+    const judged = withPrompt("8 + 5 = 12", { a: 8, b: 5, op: "+", answer: "No", answerType: "choice", choices: ["Yes", "No"] }, { itemFamily: "conceptual" });
+    judged.question.display.subPrompt = "Is this right?";
+    expect(find(runChecks(judged), "oneQuestionMark")).toBeNull();
     // "box?" ends in x but is a word, not "x ?".
     const box = withPrompt("Which box holds more marbles?", { answer: "the red box", answerType: "choice", choices: ["the red box", "the blue box"] });
     expect(find(runChecks(box), "oneQuestionMark")).toBeNull();

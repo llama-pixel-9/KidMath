@@ -70,6 +70,20 @@ function questionCount(text) {
   return (stripped.match(/\?/g) || []).length;
 }
 
+// A bare equation ("8 + 5 = ?", "8 + ? = 13") has no words to ask with: its
+// one blank is the question.
+const BARE_EQUATION = /^[\d\s+\-−×÷x=?()]+$/;
+
+/** Questions an item asks: the prompt's, plus its sub-prompt's ("8 + 5 = 12"
+ * asks nothing until "Is this right?"), and a bare equation asks for its blank. */
+function questionsAsked(item) {
+  const text = promptOf(item);
+  const sub = item.question?.display?.subPrompt || item.question?.subPrompt || "";
+  const n = questionCount(text) + questionCount(sub);
+  if (n === 0 && BARE_EQUATION.test(text) && (text.match(/\?/g) || []).length === 1) return 1;
+  return n;
+}
+
 // Sentences, keeping a decimal point inside its number ("$1.09" is not two
 // sentences).
 const sentencesOf = (text) => text.match(/(?:[^.!?]|\.(?=\d))+[.!?]*/g) || [];
@@ -251,6 +265,9 @@ function arithmeticCheck(item) {
   const [lo, mid, hi] = [a, b, answer].sort((x, y) => x - y);
   const additive = op === "+" || op === "-" || op === "−";
   if (additive ? lo + mid === hi : lo * mid === hi) return null;
+  // A zero breaks the trio rule for times and divide (0 × 7 = 0 sorts to
+  // 0, 0, 7), so a plain `a op b = answer` that holds as written also passes.
+  if (fn(a, b) === answer) return null;
 
   return fail("arithmetic", `answer ${answer} is not consistent with ${a} and ${b} under ${op}`);
 }
@@ -761,7 +778,7 @@ export const CHECKS = [
     id: "oneQuestionMark",
     run: (item) => {
       if (!isV2(item)) return null;
-      const n = questionCount(promptOf(item));
+      const n = questionsAsked(item);
       if (n === 1) return null;
       return fail(
         "oneQuestionMark",

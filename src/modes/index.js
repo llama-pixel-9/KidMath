@@ -23,6 +23,7 @@ import linesShapes from "./linesShapes";
 import fractionOps from "./fractionOps";
 import decimalOps from "./decimalOps";
 import volumeCoordinates from "./volumeCoordinates";
+import mathFacts from "./mathFacts";
 
 const ALL_MODES = [
   addition,
@@ -50,6 +51,7 @@ const ALL_MODES = [
   fractionOps,
   decimalOps,
   volumeCoordinates,
+  mathFacts,
 ];
 
 export const modeRegistry = Object.fromEntries(ALL_MODES.map((m) => [m.id, m]));
@@ -95,6 +97,13 @@ export const MODE_GROUPS = [
     title: "Shapes & Data",
     gradeHint: "Grades 3-5",
     modeIds: ["linesShapes", "angles", "dataGraphs", "volumeCoordinates"],
+  },
+  {
+    // Hidden until its version switch serves its rows (topicVisible).
+    id: "facts",
+    title: "Math Facts",
+    gradeHint: "Grades K-4",
+    modeIds: ["mathFacts"],
   },
 ];
 

@@ -90,7 +90,11 @@ describe("item bank validity", () => {
         const multiplicative = q.op === "*" || q.op === "\u00d7" || q.op === "x" || q.op === "/" || q.op === "\u00f7";
         if (!additive && !multiplicative) continue;
         const [lo, mid, hi] = [q.a, q.b, q.answer].sort((x, y) => x - y);
-        if (!(additive ? lo + mid === hi : lo * mid === hi)) mismatched.push(item.itemId);
+        // A zero breaks the trio rule for times and divide (0 × 7 = 0), so the
+        // equation holding as written also counts.
+        const ascii = q.op === "\u2212" ? "-" : q.op === "\u00d7" || q.op === "*" ? "x" : q.op === "\u00f7" ? "/" : q.op;
+        const asWritten = { "+": q.a + q.b, "-": q.a - q.b, x: q.a * q.b, "/": q.b ? q.a / q.b : null }[ascii];
+        if (!(additive ? lo + mid === hi : lo * mid === hi) && asWritten !== q.answer) mismatched.push(item.itemId);
       }
     }
     expect(mismatched).toEqual([]);

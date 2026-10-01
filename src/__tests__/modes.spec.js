@@ -109,6 +109,8 @@ describe("mode generation coverage", () => {
       "dataGraphs",
       "angles",
       "linesShapes",
+      // Bare facts only: Math Facts declares no word-problem family.
+      "mathFacts",
     ]);
     const modesWithApplicationContext = MODE_IDS.filter((mode) => !bankless.has(mode));
     for (const mode of modesWithApplicationContext) {

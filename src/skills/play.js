@@ -11,9 +11,11 @@
  *     items are too tall for a page) do not apply on screen.
  *   - Two remainder drills are print-only until play has a
  *     quotient-and-remainder answer widget.
+ *   - Math Facts skills are play-only (PLAY_ONLY_SKILLS): their bands are
+ *     closed fact sets, and the operation topics print the same facts.
  */
 import { gradeIndex } from "../gradeSeed.js";
-import { GRADES, WORKSHEET_SKILLS } from "./catalog.js";
+import { GRADES, PLAY_ONLY_SKILLS, WORKSHEET_SKILLS } from "./catalog.js";
 import { asciiOp } from "../opSigns.js";
 
 // plain id (canonical) ← picture id, and the title the merged skill carries.
@@ -35,7 +37,7 @@ function buildPlaySkills() {
   const aliasOf = new Map(TWINS.map(([id, alias]) => [alias, id]));
   const titleOf = new Map(TWINS.map(([id, , title]) => [id, title]));
   const aliasesOf = new Map(TWINS.map(([id, alias]) => [id, [alias]]));
-  return WORKSHEET_SKILLS.filter((skill) => isPlayable(skill) && !aliasOf.has(skill.id)).map((skill) => {
+  return [...WORKSHEET_SKILLS, ...PLAY_ONLY_SKILLS].filter((skill) => isPlayable(skill) && !aliasOf.has(skill.id)).map((skill) => {
     const source = { ...skill.source };
     delete source.excludeStructureTypes; // a page-fit rule, not part of the skill
     return {

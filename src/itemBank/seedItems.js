@@ -50482,5 +50482,1510 @@ export const SEED_ITEMS = [
    },
    "answerType": "numberPad"
   }
+ },
+ {
+  "itemId": "mathFacts-v2-add-0-0-plain",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "addFacts",
+  "structureType": "add-plain",
+  "levelRange": [
+   1,
+   2
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-add-zero-to5",
+  "hint": {
+   "nudge": "Adding zero adds nothing. The number stays the same."
+  },
+  "question": {
+   "a": 0,
+   "b": 0,
+   "op": "+",
+   "answer": 0,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "0 + 0 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-sub-0-0-plain",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "subFacts",
+  "structureType": "sub-plain",
+  "levelRange": [
+   1,
+   2
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-sub-zero-to5",
+  "hint": {
+   "nudge": "Taking away nothing changes nothing. Taking away all of it leaves none."
+  },
+  "question": {
+   "a": 0,
+   "b": 0,
+   "op": "−",
+   "answer": 0,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "0 − 0 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-add-2-1-plain",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "addFacts",
+  "structureType": "add-plain",
+  "levelRange": [
+   1,
+   2
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-add-plus12-to5",
+  "hint": {
+   "nudge": "Start at the bigger number and count on 1 (or 2).",
+   "picture": {
+    "kind": "numberLine",
+    "min": 0,
+    "max": 10,
+    "mark": 2
+   }
+  },
+  "question": {
+   "a": 2,
+   "b": 1,
+   "op": "+",
+   "answer": 3,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "2 + 1 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-sub-2-0-plain",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "subFacts",
+  "structureType": "sub-plain",
+  "levelRange": [
+   1,
+   2
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-sub-zero-to5",
+  "hint": {
+   "nudge": "Take away 0 and nothing changes. Take away all of it and 0 is left."
+  },
+  "question": {
+   "a": 2,
+   "b": 0,
+   "op": "−",
+   "answer": 2,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "2 − 0 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-add-4-6-plain",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "addFacts",
+  "structureType": "add-plain",
+  "levelRange": [
+   2,
+   3
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-add-maketen-6to10",
+  "hint": {
+   "nudge": "Think of a ten frame. Do the two numbers fill it?",
+   "picture": {
+    "kind": "tenFrame",
+    "filled": 6,
+    "filledB": 4,
+    "frames": 1
+   }
+  },
+  "question": {
+   "a": 4,
+   "b": 6,
+   "op": "+",
+   "answer": 10,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "4 + 6 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-sub-8-4-stacked",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "subFacts",
+  "structureType": "sub-stacked",
+  "levelRange": [
+   2,
+   3
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-sub-doubles-6to10",
+  "hint": {
+   "nudge": "Which double makes 14? 7 + 7. So 14 − 7 is 7."
+  },
+  "question": {
+   "a": 8,
+   "b": 4,
+   "op": "−",
+   "answer": 4,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "8 − 4 = ?",
+    "layout": "vertical"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-add-1-1-tenFrame",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "addFacts",
+  "structureType": "add-tenFrame",
+  "levelRange": [
+   1,
+   2
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-add-plus12-to5",
+  "hint": {
+   "nudge": "Start at the bigger number and count on.",
+   "picture": {
+    "kind": "numberLine",
+    "min": 0,
+    "max": 10,
+    "mark": 1
+   }
+  },
+  "question": {
+   "a": 1,
+   "b": 1,
+   "op": "+",
+   "answer": 2,
+   "answerType": "tenFrame",
+   "display": {
+    "promptText": "How many counters in all?",
+    "filled": 1,
+    "filledB": 1,
+    "frames": 1,
+    "frameMode": "count"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-sub-5-5-takeAway",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "subFacts",
+  "structureType": "sub-takeAway",
+  "levelRange": [
+   1,
+   2
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-sub-zero-to5",
+  "hint": {
+   "nudge": "Taking away nothing changes nothing. Taking away all of it leaves none."
+  },
+  "question": {
+   "a": 5,
+   "b": 5,
+   "op": "−",
+   "answer": 0,
+   "answerType": "tenFrame",
+   "display": {
+    "promptText": "How many counters are left?",
+    "filled": 5,
+    "takeAway": 5,
+    "frames": 1,
+    "frameMode": "count"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-add-0-0-missing",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "addFacts",
+  "structureType": "add-missing",
+  "levelRange": [
+   1,
+   2
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-add-zero-to5",
+  "hint": {
+   "nudge": "Count up from the first number to the total.",
+   "picture": {
+    "kind": "numberLine",
+    "min": 0,
+    "max": 10,
+    "mark": 0
+   }
+  },
+  "question": {
+   "a": 0,
+   "b": null,
+   "op": "+",
+   "answer": 0,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "0 + ? = 0"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-sub-0-0-missing",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "subFacts",
+  "structureType": "sub-missing",
+  "levelRange": [
+   1,
+   2
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-sub-zero-to5",
+  "hint": {
+   "nudge": "Think addition to find the missing number.",
+   "picture": {
+    "kind": "numberLine",
+    "min": 0,
+    "max": 10,
+    "mark": 0
+   }
+  },
+  "question": {
+   "a": 0,
+   "b": null,
+   "op": "−",
+   "answer": 0,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "0 − ? = 0"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-add-1-5-missing",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "addFacts",
+  "structureType": "add-missing",
+  "levelRange": [
+   2,
+   3
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-add-plus12-6to10",
+  "hint": {
+   "nudge": "Count up from 1 to 6.",
+   "picture": {
+    "kind": "numberLine",
+    "min": 0,
+    "max": 10,
+    "mark": 1
+   }
+  },
+  "question": {
+   "a": 1,
+   "b": null,
+   "op": "+",
+   "answer": 5,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "1 + ? = 6"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-sub-6-5-missing",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "subFacts",
+  "structureType": "sub-missing",
+  "levelRange": [
+   2,
+   3
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-sub-plus12-6to10",
+  "hint": {
+   "nudge": "Think addition: 1 and what make 6?",
+   "picture": {
+    "kind": "numberLine",
+    "min": 0,
+    "max": 10,
+    "mark": 1
+   }
+  },
+  "question": {
+   "a": 6,
+   "b": null,
+   "op": "−",
+   "answer": 5,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "6 − ? = 1"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-add-3-3-trueFalse",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "addFacts",
+  "structureType": "add-trueFalse",
+  "levelRange": [
+   2,
+   3
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-add-doubles-6to10",
+  "hint": {
+   "nudge": "Doubles: think of a picture you know. 5 + 5 is the fingers on two hands: 10."
+  },
+  "question": {
+   "a": 3,
+   "b": 3,
+   "op": "+",
+   "answer": "Yes",
+   "answerType": "choice",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "3 + 3 = 6",
+    "subPrompt": "Is this right?"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-sub-6-3-trueFalse",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "subFacts",
+  "structureType": "sub-trueFalse",
+  "levelRange": [
+   2,
+   3
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-sub-doubles-6to10",
+  "hint": {
+   "nudge": "Which double makes 14? 7 + 7. So 14 − 7 is 7."
+  },
+  "question": {
+   "a": 6,
+   "b": 3,
+   "op": "−",
+   "answer": "Yes",
+   "answerType": "choice",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "6 − 3 = 3",
+    "subPrompt": "Is this right?"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-add-5-4-trueFalse",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "addFacts",
+  "structureType": "add-trueFalse",
+  "levelRange": [
+   2,
+   3
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-add-neardoubles-6to10",
+  "hint": {
+   "nudge": "6 + 7 is next to 6 + 6. Double 6 is 12, then 1 more: 13."
+  },
+  "question": {
+   "a": 5,
+   "b": 4,
+   "op": "+",
+   "answer": "No",
+   "answerType": "choice",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "5 + 4 = 8",
+    "subPrompt": "Is this right?"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-sub-9-4-trueFalse",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "subFacts",
+  "structureType": "sub-trueFalse",
+  "levelRange": [
+   2,
+   3
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-sub-neardoubles-6to10",
+  "hint": {
+   "nudge": "6 + 6 is 12. One more is 13, so 6 + 7. The answer is 7."
+  },
+  "question": {
+   "a": 9,
+   "b": 4,
+   "op": "−",
+   "answer": "No",
+   "answerType": "choice",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "9 − 4 = 4",
+    "subPrompt": "Is this right?"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-add-1-10-plain",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "addFacts",
+  "structureType": "add-plain",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-add-plus12-11to20",
+  "hint": {
+   "nudge": "Start at the bigger number and count on 1 (or 2).",
+   "picture": {
+    "kind": "numberLine",
+    "min": 0,
+    "max": 20,
+    "mark": 10
+   }
+  },
+  "question": {
+   "a": 1,
+   "b": 10,
+   "op": "+",
+   "answer": 11,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "1 + 10 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-sub-11-10-plain",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "subFacts",
+  "structureType": "sub-plain",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-sub-plus12-11to20",
+  "hint": {
+   "nudge": "Count back, or count up from the smaller number.",
+   "picture": {
+    "kind": "numberLine",
+    "min": 0,
+    "max": 20,
+    "mark": 11
+   }
+  },
+  "question": {
+   "a": 11,
+   "b": 10,
+   "op": "−",
+   "answer": 1,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "11 − 10 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-add-5-9-stacked",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "addFacts",
+  "structureType": "add-stacked",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-add-plus9-11to20",
+  "hint": {
+   "nudge": "9 is almost 10. 9 + 3 is 10 + 3 minus 1: 12. Or give 1 to the 9 to make 10.",
+   "picture": {
+    "kind": "tenFrame",
+    "filled": 9,
+    "filledB": 5,
+    "frames": 2
+   }
+  },
+  "question": {
+   "a": 5,
+   "b": 9,
+   "op": "+",
+   "answer": 14,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "5 + 9 = ?",
+    "layout": "vertical"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-sub-13-8-stacked",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "subFacts",
+  "structureType": "sub-stacked",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-sub-maketen87-11to20",
+  "hint": {
+   "nudge": "Take 1 to get to 10, then 3 more. 11 − 4 is 7.",
+   "picture": {
+    "kind": "tenFrame",
+    "filled": 13,
+    "takeAway": 8,
+    "frames": 2
+   }
+  },
+  "question": {
+   "a": 13,
+   "b": 8,
+   "op": "−",
+   "answer": 5,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "13 − 8 = ?",
+    "layout": "vertical"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-add-7-10-plain",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "addFacts",
+  "structureType": "add-plain",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-add-tenplus-11to20",
+  "hint": {
+   "nudge": "Ten and 4 more is fourteen. Say the teen number.",
+   "picture": {
+    "kind": "tenFrame",
+    "filled": 10,
+    "filledB": 7,
+    "frames": 2
+   }
+  },
+  "question": {
+   "a": 7,
+   "b": 10,
+   "op": "+",
+   "answer": 17,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "7 + 10 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-sub-16-9-stacked",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "subFacts",
+  "structureType": "sub-stacked",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-sub-plus9-11to20",
+  "hint": {
+   "nudge": "Take away 10 instead, then give 1 back. 14 − 10 is 4, plus 1 is 5.",
+   "picture": {
+    "kind": "tenFrame",
+    "filled": 16,
+    "takeAway": 9,
+    "frames": 2
+   }
+  },
+  "question": {
+   "a": 16,
+   "b": 9,
+   "op": "−",
+   "answer": 7,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "16 − 9 = ?",
+    "layout": "vertical"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-add-9-6-stacked",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "addFacts",
+  "structureType": "add-stacked",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-add-plus9-11to20",
+  "hint": {
+   "nudge": "9 is almost 10. 9 + 5 is 10 + 5 minus 1: 14. Or give 1 to the 9 to make 10.",
+   "picture": {
+    "kind": "tenFrame",
+    "filled": 9,
+    "filledB": 6,
+    "frames": 2
+   }
+  },
+  "question": {
+   "a": 9,
+   "b": 6,
+   "op": "+",
+   "answer": 15,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "9 + 6 = ?",
+    "layout": "vertical"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-sub-15-6-stacked",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "subFacts",
+  "structureType": "sub-stacked",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-sub-plus9-11to20",
+  "hint": {
+   "nudge": "Take away 10 instead, then give 1 back. 14 − 10 is 4, plus 1 is 5.",
+   "picture": {
+    "kind": "tenFrame",
+    "filled": 15,
+    "takeAway": 6,
+    "frames": 2
+   }
+  },
+  "question": {
+   "a": 15,
+   "b": 6,
+   "op": "−",
+   "answer": 9,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "15 − 6 = ?",
+    "layout": "vertical"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-add-1-10-missing",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "addFacts",
+  "structureType": "add-missing",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-add-plus12-11to20",
+  "hint": {
+   "nudge": "Count up from 1 to 11.",
+   "picture": {
+    "kind": "numberLine",
+    "min": 0,
+    "max": 20,
+    "mark": 1
+   }
+  },
+  "question": {
+   "a": 1,
+   "b": null,
+   "op": "+",
+   "answer": 10,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "1 + ? = 11"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-sub-11-10-missing",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "subFacts",
+  "structureType": "sub-missing",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-sub-plus12-11to20",
+  "hint": {
+   "nudge": "Think addition: 1 and what make 11?",
+   "picture": {
+    "kind": "numberLine",
+    "min": 0,
+    "max": 20,
+    "mark": 1
+   }
+  },
+  "question": {
+   "a": 11,
+   "b": null,
+   "op": "−",
+   "answer": 10,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "11 − ? = 1"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-add-5-8-missing",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "addFacts",
+  "structureType": "add-missing",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-add-maketen87-11to20",
+  "hint": {
+   "nudge": "Count up from 5 to 13.",
+   "picture": {
+    "kind": "numberLine",
+    "min": 0,
+    "max": 20,
+    "mark": 5
+   }
+  },
+  "question": {
+   "a": 5,
+   "b": null,
+   "op": "+",
+   "answer": 8,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "5 + ? = 13"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-sub-13-8-missing",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "subFacts",
+  "structureType": "sub-missing",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-sub-maketen87-11to20",
+  "hint": {
+   "nudge": "Think addition: 5 and what make 13?",
+   "picture": {
+    "kind": "numberLine",
+    "min": 0,
+    "max": 20,
+    "mark": 5
+   }
+  },
+  "question": {
+   "a": 13,
+   "b": null,
+   "op": "−",
+   "answer": 8,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "13 − ? = 5"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-add-7-8-missing",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "addFacts",
+  "structureType": "add-missing",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-add-neardoubles-11to20",
+  "hint": {
+   "nudge": "Count up from 7 to 15.",
+   "picture": {
+    "kind": "numberLine",
+    "min": 0,
+    "max": 20,
+    "mark": 7
+   }
+  },
+  "question": {
+   "a": 7,
+   "b": null,
+   "op": "+",
+   "answer": 8,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "7 + ? = 15"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-sub-15-8-missing",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "subFacts",
+  "structureType": "sub-missing",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-sub-neardoubles-11to20",
+  "hint": {
+   "nudge": "Think addition: 7 and what make 15?",
+   "picture": {
+    "kind": "numberLine",
+    "min": 0,
+    "max": 20,
+    "mark": 7
+   }
+  },
+  "question": {
+   "a": 15,
+   "b": null,
+   "op": "−",
+   "answer": 8,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "15 − ? = 7"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-add-9-5-missing",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "addFacts",
+  "structureType": "add-missing",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-add-plus9-11to20",
+  "hint": {
+   "nudge": "Count up from 9 to 14.",
+   "picture": {
+    "kind": "numberLine",
+    "min": 0,
+    "max": 20,
+    "mark": 9
+   }
+  },
+  "question": {
+   "a": 9,
+   "b": null,
+   "op": "+",
+   "answer": 5,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "9 + ? = 14"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-sub-14-5-missing",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "subFacts",
+  "structureType": "sub-missing",
+  "levelRange": [
+   4,
+   6
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-sub-plus9-11to20",
+  "hint": {
+   "nudge": "Think addition: 9 and what make 14?",
+   "picture": {
+    "kind": "numberLine",
+    "min": 0,
+    "max": 20,
+    "mark": 9
+   }
+  },
+  "question": {
+   "a": 14,
+   "b": null,
+   "op": "−",
+   "answer": 5,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "14 − ? = 9"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-mul-0-0-plain",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "mulFacts",
+  "structureType": "mul-plain",
+  "levelRange": [
+   7,
+   8
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-mul-times0",
+  "hint": {
+   "nudge": "Zero groups, or groups of zero, make zero."
+  },
+  "question": {
+   "a": 0,
+   "b": 0,
+   "op": "×",
+   "answer": 0,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "0 × 0 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-div-0-1-plain",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "divFacts",
+  "structureType": "div-plain",
+  "levelRange": [
+   7,
+   8
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-div-times0",
+  "hint": {
+   "nudge": "Dividing by 1 leaves the number as it is."
+  },
+  "question": {
+   "a": 0,
+   "b": 1,
+   "op": "÷",
+   "answer": 0,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "0 ÷ 1 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-mul-3-0-stacked",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "mulFacts",
+  "structureType": "mul-stacked",
+  "levelRange": [
+   7,
+   8
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-mul-times0",
+  "hint": {
+   "nudge": "Zero groups, or groups of zero, make zero."
+  },
+  "question": {
+   "a": 3,
+   "b": 0,
+   "op": "×",
+   "answer": 0,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "3 × 0 = ?",
+    "layout": "vertical"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-div-12-4-plain",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "divFacts",
+  "structureType": "div-plain",
+  "levelRange": [
+   7,
+   8
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-div-times4",
+  "hint": {
+   "nudge": "12 ÷ 4: 4 times what is 12? Use the times 4 fact.",
+   "picture": {
+    "kind": "array",
+    "rows": 4,
+    "cols": 3
+   }
+  },
+  "question": {
+   "a": 12,
+   "b": 4,
+   "op": "÷",
+   "answer": 3,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "12 ÷ 4 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-mul-5-10-stacked",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "mulFacts",
+  "structureType": "mul-stacked",
+  "levelRange": [
+   7,
+   8
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-mul-times10",
+  "hint": {
+   "nudge": "6 tens is 60.",
+   "picture": {
+    "kind": "array",
+    "rows": 5,
+    "cols": 10
+   }
+  },
+  "question": {
+   "a": 5,
+   "b": 10,
+   "op": "×",
+   "answer": 50,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "5 × 10 = ?",
+    "layout": "vertical"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-div-42-7-plain",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "divFacts",
+  "structureType": "div-plain",
+  "levelRange": [
+   7,
+   8
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-div-times6",
+  "hint": {
+   "nudge": "42 ÷ 7: 7 times what is 42?",
+   "picture": {
+    "kind": "array",
+    "rows": 7,
+    "cols": 6
+   }
+  },
+  "question": {
+   "a": 42,
+   "b": 7,
+   "op": "÷",
+   "answer": 6,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "42 ÷ 7 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-mul-8-12-plain",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "mulFacts",
+  "structureType": "mul-plain",
+  "levelRange": [
+   9,
+   10
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-mul-times12",
+  "hint": {
+   "nudge": "10 groups and 2 more. 60 + 12 is 72.",
+   "picture": {
+    "kind": "array",
+    "rows": 8,
+    "cols": 12
+   }
+  },
+  "question": {
+   "a": 8,
+   "b": 12,
+   "op": "×",
+   "answer": 96,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "8 × 12 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-div-90-10-plain",
+  "modeId": "mathFacts",
+  "itemFamily": "procedural",
+  "subskill": "divFacts",
+  "structureType": "div-plain",
+  "levelRange": [
+   7,
+   8
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-div-times10",
+  "hint": {
+   "nudge": "90 ÷ 10: 10 times what is 90? Use the times 10 fact.",
+   "picture": {
+    "kind": "array",
+    "rows": 10,
+    "cols": 9
+   }
+  },
+  "question": {
+   "a": 90,
+   "b": 10,
+   "op": "÷",
+   "answer": 9,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "90 ÷ 10 = ?"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-mul-0-0-trueFalse",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "mulFacts",
+  "structureType": "mul-trueFalse",
+  "levelRange": [
+   7,
+   8
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-mul-times0",
+  "hint": {
+   "nudge": "Zero groups, or groups of zero, make zero."
+  },
+  "question": {
+   "a": 0,
+   "b": 0,
+   "op": "×",
+   "answer": "Yes",
+   "answerType": "choice",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "0 × 0 = 0",
+    "subPrompt": "Is this right?"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-div-0-1-trueFalse",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "divFacts",
+  "structureType": "div-trueFalse",
+  "levelRange": [
+   7,
+   8
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-div-times0",
+  "hint": {
+   "nudge": "Dividing by 1 leaves the number as it is."
+  },
+  "question": {
+   "a": 0,
+   "b": 1,
+   "op": "÷",
+   "answer": "Yes",
+   "answerType": "choice",
+   "choices": [
+    "Yes",
+    "No"
+   ],
+   "display": {
+    "promptText": "0 ÷ 1 = 0",
+    "subPrompt": "Is this right?"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-mul-3-9-missing",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "mulFacts",
+  "structureType": "mul-missing",
+  "levelRange": [
+   7,
+   8
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-mul-times9",
+  "hint": {
+   "nudge": "Count by 3s until you reach 27."
+  },
+  "question": {
+   "a": 3,
+   "b": null,
+   "op": "×",
+   "answer": 9,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "3 × ? = 27"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-div-27-9-missing",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "divFacts",
+  "structureType": "div-missing",
+  "levelRange": [
+   7,
+   8
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-div-times9",
+  "hint": {
+   "nudge": "Think multiplication: 3 times what is 27?"
+  },
+  "question": {
+   "a": 27,
+   "b": null,
+   "op": "÷",
+   "answer": 9,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "27 ÷ ? = 3"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-mul-6-10-missing",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "mulFacts",
+  "structureType": "mul-missing",
+  "levelRange": [
+   7,
+   8
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-mul-times10",
+  "hint": {
+   "nudge": "Count by 6s until you reach 60."
+  },
+  "question": {
+   "a": 6,
+   "b": null,
+   "op": "×",
+   "answer": 10,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "6 × ? = 60"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-div-60-10-missing",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "divFacts",
+  "structureType": "div-missing",
+  "levelRange": [
+   7,
+   8
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-div-times10",
+  "hint": {
+   "nudge": "Think multiplication: 6 times what is 60?"
+  },
+  "question": {
+   "a": 60,
+   "b": null,
+   "op": "÷",
+   "answer": 10,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "60 ÷ ? = 6"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-mul-9-11-missing",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "mulFacts",
+  "structureType": "mul-missing",
+  "levelRange": [
+   9,
+   10
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-mul-times11",
+  "hint": {
+   "nudge": "Count by 9s until you reach 99."
+  },
+  "question": {
+   "a": 9,
+   "b": null,
+   "op": "×",
+   "answer": 11,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "9 × ? = 99"
+   }
+  }
+ },
+ {
+  "itemId": "mathFacts-v2-div-99-11-missing",
+  "modeId": "mathFacts",
+  "itemFamily": "conceptual",
+  "subskill": "divFacts",
+  "structureType": "div-missing",
+  "levelRange": [
+   9,
+   10
+  ],
+  "reviewStatus": "approved",
+  "version": 2,
+  "blueprintId": "facts-div-times11",
+  "hint": {
+   "nudge": "Think multiplication: 9 times what is 99?"
+  },
+  "question": {
+   "a": 99,
+   "b": null,
+   "op": "÷",
+   "answer": 11,
+   "answerType": "numberPad",
+   "display": {
+    "promptText": "99 ÷ ? = 9"
+   }
+  }
  }
 ];

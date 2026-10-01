@@ -33,7 +33,7 @@ import Feather from "./components/feather.jsx";
 import { useEffect, useState, useMemo } from "react";
 import { useTheme } from "./useTheme";
 import LarkMark from "./components/LarkMark";
-import { MODE_IDS, V2_ONLY_MODE_IDS, getModeConfig, visibleModeGroups } from "./modes";
+import { MODE_IDS, getModeConfig, visibleModeGroups } from "./modes";
 import { useHiddenTopics } from "./hooks/useHiddenTopics.js";
 import { loadProgressSync } from "./progressStore";
 import { loadEngagement, starBalance, currentStreak, starsToday } from "./engagement/engagementStore";
@@ -85,8 +85,8 @@ const fadeUp = {
   transition: { duration: 0.5, ease: "easeOut" },
 };
 
-// Topics every visitor sees (a v2-only topic waits on its switch).
-const MODE_COUNT = MODE_IDS.length - V2_ONLY_MODE_IDS.length;
+// Topics every visitor sees (Math Facts, the one v2-only topic, is live too).
+const MODE_COUNT = MODE_IDS.length;
 
 // Stable colour index per mode so a card keeps its tint across renders.
 // The aviary rule: the four tile tints alternate in reading order.

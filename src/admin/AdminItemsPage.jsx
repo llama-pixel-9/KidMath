@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { Plus, RefreshCw, Search, ClipboardCheck, Grid2X2, List, Gift } from "lucide-react";
+import { Plus, RefreshCw, Search, ClipboardCheck, Grid2X2, List, Gift, BookMarked } from "lucide-react";
 import RequireAdmin from "../RequireAdmin";
 import { listAllItems, fetchCellCoverage } from "./itemBankAdminApi";
 import { MODE_BLUEPRINTS } from "../modes/blueprints";
@@ -8,6 +8,7 @@ import ItemEditor from "./ItemEditor";
 import ReviewQueue from "./ReviewQueue";
 import CoverageHeatmap from "./CoverageHeatmap";
 import CompsPanel from "./CompsPanel";
+import StandardsCoverage from "./StandardsCoverage";
 
 const STATUS_BADGE_CLASS = {
   draft: "bg-gray-100 text-slate-700",
@@ -25,6 +26,7 @@ const TABS = [
   { id: "items", label: "All items", icon: List },
   { id: "review", label: "Review queue", icon: ClipboardCheck },
   { id: "coverage", label: "Coverage", icon: Grid2X2 },
+  { id: "standards", label: "Standards", icon: BookMarked },
   { id: "comps", label: "Comps", icon: Gift },
 ];
 
@@ -347,6 +349,8 @@ function AdminItemsInner() {
       )}
 
       {activeTab === "comps" && <CompsPanel />}
+
+      {activeTab === "standards" && <StandardsCoverage />}
 
       {!loading && activeTab === "coverage" && (
         <CoverageHeatmap

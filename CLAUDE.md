@@ -299,6 +299,7 @@ Product IDs: `io.larkit.app.premium.{monthly,annual}`.
 | Why we skipped RevenueCat (billing decision) | `billing-revenuecat-decision.md` |
 | Source licensing / attribution | `bank-sources.md`, `resources/README.md` |
 | Item bank v2 groundwork: migration, switch + preview, hints, checks, item models, kid state, CI | `item-bank-v2-groundwork.md` |
+| Standards codes per framework, blueprint rows, coverage view + admin Standards tab, the code gate | `standards-coverage.md` |
 
 ## Skills
 

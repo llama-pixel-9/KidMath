@@ -5,6 +5,9 @@ description: Author, review, or fix items for the KidMath item bank. Use wheneve
 
 # KidMath item authoring
 
+v2 item models (blueprint rows, models, `/admin/models`) follow
+`.claude/skills/item-models`; its wording rules build on the ones here.
+
 ## Sources of truth
 
 - `docs/word-problem-authoring-guide.md` — wording and style rules. Read it

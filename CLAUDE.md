@@ -316,6 +316,9 @@ Product IDs: `io.larkit.app.premium.{monthly,annual}`.
 
 - `.claude/skills/item-authoring` — the rule ladder and itemGen pipeline. Load it
   before writing or editing any item prompt.
+- `.claude/skills/item-models` — v2 item models: skill map, the blueprint rows
+  Sai signs off before any writing, one model per approved row, cheap checks.
+  Load it before planning a skill's rows or writing, fixing or reviewing models.
 - `.claude/skills/robot-kid-e2e` — the Playwright smoke matrix (`npm run
   test:e2e`): kid oracle, widget drivers, and its traps. Load it before
   running/extending e2e or adding an answer widget.

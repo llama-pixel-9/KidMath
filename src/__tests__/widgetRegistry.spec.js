@@ -1,5 +1,8 @@
 import { describe, it, expect } from "vitest";
+import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
 import { WIDGETS, ANSWER_TYPES, getWidget } from "../components/widgetRegistry.js";
+import NumberLine from "../components/NumberLine.jsx";
 
 // The registry replaced a ~100-line ternary chain in MathExplorer. These guard
 // the contract that chain used to encode implicitly (implementation plan M0.2).
@@ -87,5 +90,25 @@ describe("widget registry", () => {
   it("exports the answer type list", () => {
     expect(ANSWER_TYPES).toEqual(Object.keys(WIDGETS));
     expect(ANSWER_TYPES).toContain("numberBond");
+  });
+
+  it("asks for the hop's length on the keypad in number line jump mode, never answering for the child", () => {
+    // The hop's two ends are drawn, so their distance is the answer. Jump mode
+    // used to submit it on Check with nothing typed.
+    const html = renderToStaticMarkup(
+      createElement(NumberLine, { mode: "jump", from: 7, to: 9, min: 0, max: 10, onSubmit: () => {}, feedback: null, theme: {} })
+    );
+    expect(html).toContain('aria-label="Number entry"');
+    expect(html).toMatch(/<button[^>]*disabled=""[^>]*aria-label="Submit answer"|<button[^>]*aria-label="Submit answer"[^>]*disabled=""/);
+    expect(html).not.toContain(">Check</button>");
+  });
+
+  it("keeps the tap-and-check flow in number line locate mode", () => {
+    const html = renderToStaticMarkup(
+      createElement(NumberLine, { mode: "locate", min: 0, max: 10, onSubmit: () => {}, feedback: null, theme: {} })
+    );
+    expect(html).toContain("Tap the number line");
+    expect(html).toMatch(/<button[^>]*disabled=""[^>]*>Check<\/button>/);
+    expect(html).not.toContain('aria-label="Number entry"');
   });
 });

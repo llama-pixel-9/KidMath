@@ -124,11 +124,8 @@ export async function answerQuestion(page, question, overrideValue) {
 
     case "numberLine": {
       const mode = display.lineMode || "locate";
-      if (mode === "jump") {
-        // The hop is drawn; the widget submits |to − from| itself.
-        await clickSubmit(page);
-        return { blind: false };
-      }
+      // jump: the hop is drawn and the child types its length on the keypad.
+      if (mode === "jump") return { blind: !(await digitPath(page, valueStr)) };
       // locate: the ticks are transparent SVG circles — click by geometry.
       // NumberLine.jsx: viewBox 320×96, PAD 18, x(v) = 18 + t·284, baseY 62.
       const svg = page.locator('[aria-label^="Number line"] svg, svg[aria-label^="Number line"]').first();

@@ -91,15 +91,6 @@ export default function CoinTray({
     onSubmit(selectedTotal);
   };
 
-  // Keyboard (build mode): 1-9 and 0 toggle the first ten coins, Enter checks.
-  // Count mode's keypad listens for digits itself.
-  useIndexKeys({
-    locked,
-    count: mode === "build" ? coins.length : 0,
-    onIndex: toggle,
-    onSubmit: mode === "build" ? submit : undefined,
-  });
-
   return (
     <section className="flex flex-col items-center gap-4 w-full" aria-label="Coins">
       <div
@@ -158,6 +149,19 @@ export default function CoinTray({
           Check
         </button>
       )}
+      {mode === "build" && <BuildKeys locked={locked} count={coins.length} toggle={toggle} submit={submit} />}
     </section>
   );
+}
+
+/**
+ * Build mode's keys: 1-9 and 0 toggle the first ten coins, Enter checks. Only
+ * the most recently mounted key handler hears keys, and a parent's handler
+ * mounts after its children's, so the tray must not register one in count
+ * mode or it would sit above the keypad and swallow its digits. Hence a child
+ * that only renders in build mode.
+ */
+function BuildKeys({ locked, count, toggle, submit }) {
+  useIndexKeys({ locked, count, onIndex: toggle, onSubmit: submit });
+  return null;
 }

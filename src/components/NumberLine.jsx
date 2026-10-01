@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import NumberPad from "./NumberPad.jsx";
 import { SUBMIT_BUTTON, feedbackRing, isLocked, tapMotion, FIGURE_COLORS, useAnswerKeys } from "./kit";
 
 /**
@@ -10,13 +11,18 @@ import { SUBMIT_BUTTON, feedbackRing, isLocked, tapMotion, FIGURE_COLORS, useAns
  *
  * Two jobs:
  *   mode="locate"  tap the tick for a value        -> answer is that value
- *   mode="jump"    read the distance of a drawn hop -> answer is the distance
+ *   mode="jump"    type the length of a drawn hop    -> answer is the distance
+ *
+ * In jump mode the child types the length on the keypad under the line. The
+ * hop's two ends are drawn, so the widget must never submit their distance
+ * itself: that would hand the child the answer.
  */
 export default function NumberLine({
   onSubmit,
   feedback,
   theme,
   lowMotionMode,
+  lowEndDevice,
   min = 0,
   max = 10,
   step = 1,
@@ -38,28 +44,13 @@ export default function NumberLine({
   const baseY = 62;
 
   const submit = () => {
-    if (locked) return;
-    if (mode === "jump") onSubmit(Math.abs(to - from));
-    else if (picked !== null) onSubmit(picked);
+    if (locked || picked === null) return;
+    onSubmit(picked);
   };
-
-  const canSubmit = mode === "jump" || picked !== null;
-
-  // Keyboard: left/right arrows walk the ticks (starting from the left end),
-  // Home/End jump to the ends, Enter checks.
-  useAnswerKeys((e) => {
-    if (e.key === "Enter") { submit(); return true; }
-    if (mode !== "locate") return false;
-    const idx = picked === null ? -1 : ticks.indexOf(picked);
-    if (e.key === "ArrowRight") { setPicked(ticks[Math.min(ticks.length - 1, idx + 1)]); return true; }
-    if (e.key === "ArrowLeft") { setPicked(ticks[Math.max(0, idx - 1)]); return true; }
-    if (e.key === "Home") { setPicked(ticks[0]); return true; }
-    if (e.key === "End") { setPicked(ticks[ticks.length - 1]); return true; }
-    return false;
-  }, !locked);
 
   return (
     <section className="flex flex-col items-center gap-4 w-full" aria-label="Number line">
+      {mode === "locate" && <LocateKeys ticks={ticks} picked={picked} setPicked={setPicked} submit={submit} enabled={!locked} />}
       <div className={`w-full p-3 rounded-3xl ${theme?.cardBg || "bg-white/80"} ${feedbackRing(feedback)}`}>
         <svg viewBox={`0 0 ${W} ${H}`} width="100%" role="img" aria-label={`Number line from ${min} to ${max}`}>
           <line x1={PAD} y1={baseY} x2={W - PAD} y2={baseY} stroke={FIGURE_COLORS.ink} strokeWidth="3" />
@@ -135,15 +126,40 @@ export default function NumberLine({
         </p>
       )}
 
-      <motion.button
-        type="button"
-        className={SUBMIT_BUTTON}
-        disabled={locked || !canSubmit}
-        onClick={submit}
-        {...tapMotion(lowMotionMode)}
-      >
-        Check
-      </motion.button>
+      {mode === "jump" ? (
+        <NumberPad onSubmit={onSubmit} feedback={feedback} theme={theme || {}} lowMotionMode={lowMotionMode} lowEndDevice={lowEndDevice} />
+      ) : (
+        <motion.button
+          type="button"
+          className={SUBMIT_BUTTON}
+          disabled={locked || picked === null}
+          onClick={submit}
+          {...tapMotion(lowMotionMode)}
+        >
+          Check
+        </motion.button>
+      )}
     </section>
   );
+}
+
+/**
+ * Locate mode's keys: left/right arrows walk the ticks (starting from the left
+ * end), Home/End jump to the ends, Enter checks. Only the most recently
+ * mounted key handler hears keys, and a parent's handler mounts after its
+ * children's, so the number line must not register one in jump mode or it
+ * would sit above the keypad and swallow its digits. Hence a child that only
+ * renders in locate mode.
+ */
+function LocateKeys({ ticks, picked, setPicked, submit, enabled }) {
+  useAnswerKeys((e) => {
+    if (e.key === "Enter") { submit(); return true; }
+    const idx = picked === null ? -1 : ticks.indexOf(picked);
+    if (e.key === "ArrowRight") { setPicked(ticks[Math.min(ticks.length - 1, idx + 1)]); return true; }
+    if (e.key === "ArrowLeft") { setPicked(ticks[Math.max(0, idx - 1)]); return true; }
+    if (e.key === "Home") { setPicked(ticks[0]); return true; }
+    if (e.key === "End") { setPicked(ticks[ticks.length - 1]); return true; }
+    return false;
+  }, enabled);
+  return null;
 }

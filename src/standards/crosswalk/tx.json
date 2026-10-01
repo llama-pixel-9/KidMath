@@ -1,7 +1,7 @@
 {
   "framework": "tx",
   "edition": "TEKS 2012 to CCSS-M 2010",
-  "checked": "2026-10-01: drafted from both documents side by side; no official crosswalk exists. Awaiting Sai's spot check.",
+  "checked": "2026-10-01: drafted from both documents side by side; no official crosswalk exists. Sai spot-checked 20 codes and 20 links and approved the list on 2026-10-01.",
   "note": "One row per link from a Texas code to a Common Core code. match says how the Texas code relates to the Common Core code: same (same skill; small range or wording differences noted), broader (the Texas code asks for more), narrower (the Texas code is one part of it), partly (they overlap and each has something the other lacks). Codes with no Common Core counterpart (personal financial literacy, subitizing, process standards and others) have no row. A note names the Common Core grade when it differs.",
   "links": [
     { "code": "K.2A", "ccss_code": "K.CC.A.2", "match": "partly", "note": "Texas also counts back, and stops at 20." },

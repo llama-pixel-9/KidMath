@@ -17,9 +17,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "provenance": {
@@ -28,7 +30,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "structureType": "penniesForOneCoin",
@@ -158,9 +161,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "provenance": {
@@ -169,7 +174,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "structureType": "whichCoinIsWorth",
@@ -312,9 +318,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "provenance": {
@@ -323,7 +331,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "structureType": "oneCoinForPennies",
@@ -479,9 +488,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "provenance": {
@@ -490,7 +501,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "structureType": "nickelsForOneCoin",
@@ -616,9 +628,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "provenance": {
@@ -627,7 +641,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "structureType": "nickelsToCents",
@@ -748,9 +763,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "provenance": {
@@ -759,7 +776,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "structureType": "buildAmountDimes",
@@ -910,9 +928,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "provenance": {
@@ -921,7 +941,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "structureType": "buildAmountNickels",
@@ -1062,9 +1083,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "provenance": {
@@ -1073,7 +1096,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "structureType": "dimesForAmount",
@@ -1186,9 +1210,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "provenance": {
@@ -1197,7 +1223,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "structureType": "tradeDimesForNickels",
@@ -1326,9 +1353,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "provenance": {
@@ -1337,7 +1366,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "structureType": "whichCoinWorthMore",
@@ -1533,9 +1563,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "number",
@@ -1760,7 +1792,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -1783,9 +1816,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "number",
@@ -1977,7 +2012,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "constraints": [
@@ -2003,9 +2039,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "choice",
@@ -2366,7 +2404,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -2389,9 +2428,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "number",
@@ -2593,7 +2634,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -2616,9 +2658,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "number",
@@ -2772,7 +2816,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -2795,9 +2840,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "choice",
@@ -2919,7 +2966,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -2942,9 +2990,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -3101,7 +3151,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -3124,9 +3175,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -3336,7 +3389,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -3359,9 +3413,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "number",
@@ -3581,7 +3637,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -3604,9 +3661,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "choice",
@@ -3817,7 +3876,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -3840,9 +3900,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "number",
@@ -4065,7 +4127,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -4088,9 +4151,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "number",
@@ -4321,7 +4386,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -4344,9 +4410,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "choice",
@@ -4498,7 +4566,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -4521,9 +4590,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "number",
@@ -4627,7 +4698,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -4650,9 +4722,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "number",
@@ -4905,7 +4979,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -4928,9 +5003,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "choice",
@@ -5178,7 +5255,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -5201,9 +5279,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "number",
@@ -5341,7 +5421,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -5364,9 +5445,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "number",
@@ -5504,7 +5587,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -5527,9 +5611,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "number",
@@ -5646,7 +5732,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -5669,9 +5756,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "choice",
@@ -5834,7 +5923,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -5857,9 +5947,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "number",
@@ -5977,7 +6069,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -6000,9 +6093,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "number",
@@ -6128,7 +6223,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -6151,9 +6247,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "number",
@@ -6279,7 +6377,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -6302,9 +6401,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "number",
@@ -6470,7 +6571,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -6493,9 +6595,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "number",
@@ -6633,7 +6737,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -6656,9 +6761,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "number",
@@ -6796,7 +6903,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -6819,9 +6927,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "number",
@@ -6963,7 +7073,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "constraints": [
@@ -6989,9 +7100,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "money",
@@ -7116,7 +7229,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -7139,9 +7253,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "number",
@@ -7293,7 +7409,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "constraints": [
@@ -7319,9 +7436,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "number",
@@ -7556,7 +7675,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -7579,9 +7699,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -7717,7 +7839,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -7740,9 +7863,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -7895,7 +8020,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -7918,9 +8044,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -8150,7 +8278,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -8173,9 +8302,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "number",
@@ -8353,7 +8484,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -8376,9 +8508,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "number",
@@ -8545,7 +8679,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -8568,9 +8703,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -8684,7 +8821,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -8707,9 +8845,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -8870,7 +9010,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -8893,9 +9034,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -9029,7 +9172,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -9052,9 +9196,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "number",
@@ -9197,7 +9343,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -9220,9 +9367,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "number",
@@ -9396,7 +9545,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -9419,9 +9569,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "number",
@@ -9558,7 +9710,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -9581,9 +9734,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "number",
@@ -9859,7 +10014,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -9882,9 +10038,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "number",
@@ -10068,7 +10226,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -10091,9 +10250,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "number",
@@ -10234,7 +10395,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -10257,9 +10419,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "number",
@@ -10400,7 +10564,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -10423,9 +10588,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "number",
@@ -10723,7 +10890,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -10746,9 +10914,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "money",
@@ -10889,7 +11059,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -10912,9 +11083,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "number",
@@ -11066,7 +11239,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -11089,9 +11263,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "number",
@@ -11266,7 +11442,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -11289,9 +11466,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "number",
@@ -11427,7 +11606,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -11446,9 +11626,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "provenance": {
    "author": "larkit",
@@ -11456,7 +11638,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "id": "money-g2-drillCountTrayOneKind-easy",
@@ -11602,9 +11785,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "provenance": {
    "author": "larkit",
@@ -11612,7 +11797,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "id": "money-g2-drillCountTrayMixed-moderate",
@@ -11793,9 +11979,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "provenance": {
    "author": "larkit",
@@ -11803,7 +11991,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "id": "money-g2-drillCountTrayQuarters-hard",
@@ -12001,9 +12190,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "provenance": {
    "author": "larkit",
@@ -12011,7 +12202,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "id": "money-g2-drillBuildTrayDimesNickels-easy",
@@ -12187,9 +12379,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "provenance": {
    "author": "larkit",
@@ -12197,7 +12391,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "id": "money-g2-drillBuildTrayMixed-moderate",
@@ -12319,9 +12514,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "provenance": {
    "author": "larkit",
@@ -12329,7 +12526,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "id": "money-g2-drillBuildTrayOverDollar-hard",
@@ -12460,9 +12658,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "provenance": {
    "author": "larkit",
@@ -12470,7 +12670,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "id": "money-g2-drillChangeFromDollarOnTen-easy",
@@ -12621,9 +12822,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "provenance": {
    "author": "larkit",
@@ -12631,7 +12834,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "id": "money-g2-drillChangeFromDollarTwoHops-moderate",
@@ -12763,9 +12967,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "provenance": {
    "author": "larkit",
@@ -12773,7 +12979,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "id": "money-g2-drillChangeFromFive-hard",
@@ -12911,9 +13118,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "money",
@@ -13132,7 +13341,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -13155,9 +13365,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "number",
@@ -13388,7 +13600,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -13411,9 +13624,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "money",
@@ -13632,7 +13847,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -13655,9 +13871,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "money",
@@ -13881,7 +14099,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -13904,9 +14123,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "money",
@@ -14142,7 +14363,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -14165,9 +14387,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "number",
@@ -14428,7 +14652,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -14451,9 +14676,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "money",
@@ -14678,7 +14905,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -14701,9 +14929,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "choice",
@@ -14951,7 +15181,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -14974,9 +15205,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "money",
@@ -15194,7 +15427,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -15217,9 +15451,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "number",
@@ -15352,7 +15588,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -15375,9 +15612,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -15608,7 +15847,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -15631,9 +15871,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -15929,7 +16171,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -15952,9 +16195,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -16180,7 +16425,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -16203,9 +16449,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -16442,7 +16690,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -16465,9 +16714,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -16693,7 +16944,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -16716,9 +16968,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -16949,7 +17203,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -16972,9 +17227,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "number",
@@ -17183,7 +17440,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -17206,9 +17464,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -17448,7 +17708,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -17471,9 +17732,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -17771,7 +18034,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -17794,9 +18058,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -18012,7 +18278,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -18033,9 +18300,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "representationType": "verbalContext",
@@ -18045,7 +18314,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "id": "money-g2-changeFromDollarBill-moderate",
@@ -18275,9 +18545,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "representationType": "verbalContext",
@@ -18287,7 +18559,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "id": "money-g2-changeFromFourQuarters-moderate",
@@ -18519,9 +18792,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "representationType": "verbalContext",
@@ -18531,7 +18806,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "id": "money-g2-changeFromTwoQuartersTwoHops-moderate",
@@ -18759,9 +19035,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "representationType": "verbalContext",
@@ -18771,7 +19049,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "id": "money-g2-changeMoreToReachDollar-moderate",
@@ -18904,9 +19183,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "representationType": "verbalContext",
@@ -18916,7 +19197,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "id": "money-g2-changeMoreNeededNinetyNine-moderate",
@@ -19164,9 +19446,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "representationType": "verbalContext",
@@ -19176,7 +19460,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "id": "money-g2-changeStandSeller-moderate",
@@ -19393,9 +19678,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "representationType": "verbalContext",
@@ -19405,7 +19692,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "id": "money-g2-changeFromDollarEndsInFive-moderate",
@@ -19634,9 +19922,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "representationType": "verbalContext",
@@ -19646,7 +19936,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "id": "money-g2-changeTwoKidsOneChange-moderate",
@@ -19955,9 +20246,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "representationType": "verbalContext",
@@ -19967,7 +20260,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "id": "money-g2-changeFromThreeQuarters-moderate",
@@ -20196,9 +20490,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "representationType": "verbalContext",
@@ -20208,7 +20504,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   },
   "id": "money-g2-changeCashierCheck-moderate",
@@ -20459,9 +20756,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "money",
@@ -20599,7 +20898,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -20622,9 +20922,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "number",
@@ -20737,7 +21039,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -20760,9 +21063,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "money",
@@ -20906,7 +21211,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -20929,9 +21235,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "number",
@@ -21046,7 +21354,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -21069,9 +21378,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "money",
@@ -21295,7 +21606,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -21318,9 +21630,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "choice",
@@ -21506,7 +21820,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -21529,9 +21844,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "number",
@@ -21613,7 +21930,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -21636,9 +21954,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "money",
@@ -21771,7 +22091,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -21794,9 +22115,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "money",
@@ -21979,7 +22302,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -22002,9 +22326,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "money",
@@ -22112,7 +22438,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -22135,9 +22462,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -22522,7 +22851,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -22545,9 +22875,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -22925,7 +23257,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -22948,9 +23281,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -23258,7 +23593,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -23281,9 +23617,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "choice",
@@ -23652,7 +23990,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -23675,9 +24014,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -23943,7 +24284,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -23966,9 +24308,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -24255,7 +24599,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -24278,9 +24623,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -24420,7 +24767,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -24443,9 +24791,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -24674,7 +25024,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -24697,9 +25048,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -24939,7 +25292,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -24962,9 +25316,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "money",
@@ -25183,7 +25539,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -25206,9 +25563,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "money",
@@ -25433,7 +25792,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -25456,9 +25816,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "money",
@@ -25625,7 +25987,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -25648,9 +26011,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "money",
@@ -25801,7 +26166,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -25824,9 +26190,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "choice",
@@ -26009,7 +26377,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -26032,9 +26401,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "money",
@@ -26258,7 +26629,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -26281,9 +26653,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "money",
@@ -26398,7 +26772,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -26421,9 +26796,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "money",
@@ -26586,7 +26963,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -26609,9 +26987,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "money",
@@ -26801,7 +27181,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -26824,9 +27205,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "money",
@@ -26955,7 +27338,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -26978,9 +27362,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "money",
@@ -27167,7 +27553,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ]
   }
  },
@@ -27190,9 +27577,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "number",
@@ -27311,7 +27700,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "picture-first or bare item, the textbook drill form (2026-09-28)"
   }
@@ -27335,9 +27725,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "number",
@@ -27443,7 +27835,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "picture-first or bare item, the textbook drill form (2026-09-28)"
   }
@@ -27467,9 +27860,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "number",
@@ -27598,7 +27993,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "picture-first or bare item, the textbook drill form (2026-09-28)"
   }
@@ -27622,9 +28018,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "number",
@@ -27743,7 +28141,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "picture-first or bare item, the textbook drill form (2026-09-28)"
   }
@@ -27767,9 +28166,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "choice",
@@ -27861,7 +28262,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "picture-first or bare item, the textbook drill form (2026-09-28)"
   }
@@ -27885,9 +28287,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "money",
@@ -27976,7 +28380,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "picture-first or bare item, the textbook drill form (2026-09-28)"
   }
@@ -28000,9 +28405,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "money",
@@ -28125,7 +28532,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "picture-first or bare item, the textbook drill form (2026-09-28)"
   }
@@ -28149,9 +28557,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "money",
@@ -28250,7 +28660,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "picture-first or bare item, the textbook drill form (2026-09-28)"
   }
@@ -28274,9 +28685,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "number",
@@ -28404,7 +28817,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "picture-first or bare item, the textbook drill form (2026-09-28)"
   }
@@ -28428,9 +28842,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "moderate",
   "format": "choice",
@@ -28556,7 +28972,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "bare item from the K-5 money framework Sai shared (2026-09-28): equivalent sets, missing addend to a dollar, relational comparison"
   }
@@ -28580,9 +28997,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.CE.1b"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "easy",
   "format": "number",
@@ -28685,7 +29104,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "bare item from the K-5 money framework Sai shared (2026-09-28): equivalent sets, missing addend to a dollar, relational comparison"
   }
@@ -28709,9 +29129,11 @@
     "MA.2.M.2.2"
    ],
    "va": [
-    "2.MG.1"
+    "2.NS.4c"
    ],
-   "ga": []
+   "ga": [
+    "2.MDR.6.2"
+   ]
   },
   "difficulty": "hard",
   "format": "symbol",
@@ -28841,7 +29263,8 @@
     "CCSS 2.MD.C.8",
     "TEKS 2.5A-B",
     "FL B.E.S.T. MA.2.M.2.2",
-    "VA SOL 2.MG.1"
+    "VA SOL 2023",
+    "GA K-12 2021"
    ],
    "shape": "bare item from the K-5 money framework Sai shared (2026-09-28): equivalent sets, missing addend to a dollar, relational comparison"
   }

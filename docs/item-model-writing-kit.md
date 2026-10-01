@@ -16,7 +16,7 @@ A writer never edits files inside the repo. It writes its own cell file and scra
 
 ## The spec Sai approved (plan section 3)
 
-- Skill: Grade 2 money. Standards: CCSS `2.MD.C.8`; TX TEKS `2.5A`, `2.5B`; FL `MA.2.M.2.2`; VA `2.MG.1`; GA none (use `[]`).
+- Skill: Grade 2 money. Standards: CCSS `2.MD.C.8`; TX TEKS `2.5A`, `2.5B`; FL `MA.2.M.2.2`; VA `2.NS.4b` for counting coins, `2.NS.4c` for making an amount, `2.CE.1c` for stories and `2.CE.1b` for drills; GA `2.MDR.6.2`. Every code must be in that framework's list in `src/standards/`, and CI fails a code that is not.
 - Subskills (the app's four): `countCoins` (count coins and bills by value), `makeChange` (count up from a price to what was paid), `coinEquivalence` (same value with different coins, fewest coins, make an amount, compare piles), `moneyReasoning` (money word problems: totals, what is left, enough money, how much more, saving, sharing).
 - Number ranges: coins total up to 99¢; bills up to $10 in Grade 2 stories (the standard allows $100, but keep totals a 7-year-old can hold); **never more than 8 coins pictured**.
 - Contexts: objects kids care about, from the context table, at realistic 2026 prices. Leave out bus fare.
@@ -48,7 +48,7 @@ Write JSON, not JavaScript: every expression is a string. String literals inside
   "family": "application" | "conceptual" | "procedural",   // stories are application; "which coin / how many pennies" are conceptual; bare drills are procedural
   "structureType": "<shortCamelName>",       // a short tag for the question shape, e.g. "changeFromDollar"
   "grade": "2",
-  "standards": { "ccss": ["2.MD.C.8"], "tx": ["2.5A", "2.5B"], "fl": ["MA.2.M.2.2"], "va": ["2.MG.1"], "ga": [] },
+  "standards": { "ccss": ["2.MD.C.8"], "tx": ["2.5A", "2.5B"], "fl": ["MA.2.M.2.2"], "va": ["2.CE.1c"], "ga": ["2.MDR.6.2"] },
   "difficulty": "easy" | "moderate" | "hard",
   "format": "number" | "money" | "choice",   // number = a whole number of cents typed or built; money = an amount picked on the grid; choice = words picked on the grid
   "widget": "coinTray" | "numberPad" | null,  // null = the choice grid
@@ -61,7 +61,7 @@ Write JSON, not JavaScript: every expression is a string. String literals inside
   "answer": { "expr": "…", "type": "int" | "money" | "text" },
   "distractors": [ { "expr": "…", "mistake": "camelTag" }, … ],   // 2 to 3, each a different mistake tag
   "hint": { "nudge": "…", "steps": ["…"], "picture": {…} | null, "example": "auto" | null, "feedback": { "camelTag": "…" }, "solution": { "steps": ["…"], "answer": "expr" } },
-  "provenance": { "author": "larkit", "checkedAgainst": ["CCSS 2.MD.C.8", "TEKS 2.5A-B", "FL B.E.S.T. MA.2.M.2.2", "VA SOL 2.MG.1"] }
+  "provenance": { "author": "larkit", "checkedAgainst": ["CCSS 2.MD.C.8", "TEKS 2.5A-B", "FL B.E.S.T. MA.2.M.2.2", "VA SOL 2023", "GA K-12 2021"] }
 }
 ```
 

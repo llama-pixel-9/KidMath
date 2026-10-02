@@ -9,7 +9,8 @@
  *   challenge  the grade-up test: six questions spread across the grade.
  *
  * What stays as it was: the mistake bank and its spaced retries, family
- * rotation, recent-item avoidance, the word-problems preference, item stats.
+ * rotation, recent-item avoidance, the word-problems preference (minus the
+ * topics whose v1 stories are held, storyHold.js), item stats.
  * What goes: promotion and demotion of the integer level — inside a skill
  * session the level only follows the skill being asked.
  *
@@ -31,6 +32,7 @@ import { buildComputationQuestion, computationKeyOf } from "./computationPlay.js
 import { STATES, practiceOrder, stateOf } from "./mastery.js";
 import { playSkillById } from "./play.js";
 import { cellMatches, storyMatches, withinNumbers } from "./skillPool.js";
+import { playStoriesAllowed } from "./storyHold.js";
 
 const FOCUS_SIZE = 3;
 const REVIEW_EVERY = 5;
@@ -82,9 +84,11 @@ function pickSkill(session) {
   return [...pool].sort((a, b) => asked(a) - asked(b))[0];
 }
 
+// Stories join a skill's own families when the skill has them and the kid's
+// setting allows them, except in a topic whose v1 stories are held (storyHold.js).
 function familiesFor(skill, session) {
   const families = [...skill.source.families];
-  if (skill.stories && session.allowWordProblems !== false) families.push("application");
+  if (skill.stories && playStoriesAllowed(skill.mode, session.allowWordProblems)) families.push("application");
   return families;
 }
 
@@ -165,9 +169,11 @@ export function nextSkillQuestion(session) {
     // The skill's cell is not in memory (seed-only bank, offline). The screen
     // gates on this, but a session must never hang: serve what play served
     // before skills existed, un-stamped, so it is credited by its own cell.
+    // A held topic asks with stories off, so neither the bank nor the
+    // template generator hands it a story.
     q = generateQuestion(skill.mode, skill.level, {
       targetSubskill: skill.source.subskills?.[0],
-      allowWordProblems: session.allowWordProblems !== false,
+      allowWordProblems: playStoriesAllowed(skill.mode, session.allowWordProblems),
       recentBankItemIds: session.recentBankItemIds || [],
     });
     if (questionAnswerType(q) === "choice") q.choices = generateChoices(q.answer, 4, q);

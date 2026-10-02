@@ -2,6 +2,7 @@ import { MODE_IDS, getModeConfig } from "./modes";
 import { shuffleArray } from "./modes/helpers";
 import { buildItemKey, ITEM_FAMILIES } from "./modes/itemMetadata";
 import { initSkillSession, nextSkillQuestion, recordSkillAnswer, retryBelongs } from "./skills/session.js";
+import { isHeldStory, playStoriesAllowed } from "./skills/storyHold.js";
 import { FLUENCY_SESSION_SIZE } from "./facts/factPractice.js";
 import { validateChoices, validateQuestion } from "./modes/itemQuality";
 import { buildQuestionFromBankItem, selectApprovedBankItem } from "./itemBank/index.js";
@@ -567,12 +568,15 @@ export function createAdaptiveSession(mode, sessionSize, options = {}) {
 export function getNextQuestion(session) {
   // A due retry is served whatever the word-problem setting. The kid already
   // met this item; the setting decides which NEW questions get scheduled
-  // (below). With it off — the default — the old filter skipped every retry
-  // whose prompt had words in it, which is most of the bank.
+  // (below). With it off, the old filter skipped every retry whose prompt
+  // had words in it, which is most of the bank. The one exception is a story
+  // from a topic whose v1 stories are held (skills/storyHold.js): it stays
+  // in the saved list but is never served.
   const dueReview = session.mistakeBank.find(
     (q) =>
       (q.dueAt ?? RETRY_SPACING) <= session.questionsAnswered &&
-      (!session.skillIds || retryBelongs(session, q))
+      (!session.skillIds || retryBelongs(session, q)) &&
+      !isHeldStory(q, session.mode)
   );
   if (dueReview && session.questionsSinceRetry >= RETRY_SPACING) {
     const retryQ = { ...dueReview, mode: dueReview.mode || session.mode };
@@ -603,15 +607,19 @@ export function getNextQuestion(session) {
 
   const modeConfig = getModeConfig(session.mode);
   const { nextFamily, nextCursor } = getNextFamily(session, modeConfig);
+  // Stories when the setting allows them, never in a topic whose v1 stories
+  // are held: the family turns procedural and the generator is asked with
+  // stories off, so an empty story cell cannot fall back to a template story.
+  const stories = playStoriesAllowed(session.mode, session.allowWordProblems);
   const scheduledFamily =
-    session.allowWordProblems === false && nextFamily === ITEM_FAMILIES.APPLICATION
+    !stories && nextFamily === ITEM_FAMILIES.APPLICATION
       ? ITEM_FAMILIES.PROCEDURAL
       : nextFamily;
   const targetSubskill = getWeakestSubskill(session, modeConfig);
   const q = generateQuestion(session.mode, session.level, {
     itemFamily: scheduledFamily,
     targetSubskill,
-    allowWordProblems: session.allowWordProblems !== false,
+    allowWordProblems: stories,
     recentBankItemIds: session.recentBankItemIds || [],
     ...(session.qaVariety ? { varietyId: session.qaVariety, consultBankFamilies: [] } : {}),
   });

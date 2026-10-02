@@ -106,8 +106,14 @@ describe("pinned skill session", () => {
   });
 
   it("word problems on: a skill with stories mixes them in", () => {
-    const { served } = play("subtraction", { skillId: "sub-missing-number-1000", allowWordProblems: true });
+    const { served } = play("money", { skillId: "money-count-coins-4", allowWordProblems: true }, { size: 30 });
     expect(served.some(({ question: q }) => q.metadata.itemFamily === "application")).toBe(true);
+  });
+
+  it("word problems on: a topic whose v1 stories are held serves none (storyHold.spec has the rest)", () => {
+    const { served } = play("subtraction", { skillId: "sub-missing-number-1000", allowWordProblems: true });
+    expect(served.filter((s) => !s.isRetry)).toHaveLength(15);
+    for (const { question: q } of served) expect(q.metadata.itemFamily).not.toBe("application");
   });
 });
 

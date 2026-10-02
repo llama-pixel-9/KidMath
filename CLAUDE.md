@@ -185,6 +185,7 @@ Reruns also overwrite same-cell draft ids — be skip-existing aware.
   with the web session loop.
 - **iOS widget `@State` resets via `.id(viewModel.questionKey)`** — without it,
   a widget keeps the previous question's state.
+- **Word problems are on by default** (Sai, 2026-10-02); the v1 stories of the four held topics (`STORIES_HELD_MODE_IDS` in `src/skills/storyHold.js`: addition, subtraction, barModels, numberBonds) stay out of play until each topic's v2 stories go live, then that topic's v1 stories retire and it leaves the list (`?item=` still pins any row).
 - **Engagement state is localStorage-only (v1)** behind a swappable store API;
   cloud sync is a future migration, so don't hand-roll persistence around it.
 - **Progress is per kid.** `progress` / `progress_item_stats` rows carry `kid_id`

@@ -88,39 +88,65 @@ describe("adaptive session engine", () => {
     }
   });
 
+  // A missed story as the mistake bank keeps it.
+  const storyRetry = (mode, subskill, promptText) => ({
+    mode,
+    a: 7,
+    b: 8,
+    op: "+",
+    answer: 15,
+    dueAt: 0,
+    itemKey: `${mode}|application|story`,
+    reviewChoices: [15, 14, 16, 1],
+    display: { promptText },
+    metadata: {
+      modeId: mode,
+      itemFamily: "application",
+      mathPractices: ["MP1"],
+      misconceptionTags: [],
+      cognitiveDemand: "DOK2",
+      subskill,
+    },
+  });
+
   it("serves a due retry of a story item even when word problems are off", () => {
     // The setting decides which NEW questions get scheduled (the test above);
-    // an item the kid already met always comes back. With it off — the
-    // default — the retry step used to skip every miss whose prompt had
-    // words in it, which is most of the bank.
-    const session = createAdaptiveSession("addition", 15, { allowWordProblems: false });
+    // an item the kid already met always comes back. With it off, the retry
+    // step used to skip every miss whose prompt had words in it, which is
+    // most of the bank.
+    const session = createAdaptiveSession("money", 15, { allowWordProblems: false });
     session.questionsAnswered = 10;
     session.questionsSinceRetry = 10;
     session.mistakeBank = [
-      {
-        mode: "addition",
-        a: 7,
-        b: 8,
-        op: "+",
-        answer: 15,
-        dueAt: 0,
-        itemKey: "addition|application|story",
-        reviewChoices: [15, 14, 16, 1],
-        display: { promptText: "Mina found 7 shells. Then she found 8 more. How many shells does Mina have now?" },
-        metadata: {
-          modeId: "addition",
-          itemFamily: "application",
-          mathPractices: ["MP1"],
-          misconceptionTags: [],
-          cognitiveDemand: "DOK2",
-          subskill: "makeTen",
-        },
-      },
+      storyRetry("money", "countCoins", "Mina had 7 cents. Then she found 8 more cents. How many cents does Mina have now?"),
     ];
 
     const { question, isRetry } = getNextQuestion(session);
     expect(isRetry).toBe(true);
-    expect(question.itemKey).toBe("addition|application|story");
+    expect(question.itemKey).toBe("money|application|story");
+  });
+
+  it("never serves a due retry of a held topic's v1 story, whatever the setting", () => {
+    // Addition's v1 stories are held out of play (skills/storyHold.js); one
+    // missed before the hold stays in the saved list but is not asked again.
+    // The drill waiting behind it still comes back.
+    for (const allowWordProblems of [true, false]) {
+      const session = createAdaptiveSession("addition", 15, { allowWordProblems });
+      session.questionsAnswered = 10;
+      session.questionsSinceRetry = 10;
+      session.mistakeBank = [
+        storyRetry("addition", "makeTen", "Mina found 7 shells. Then she found 8 more. How many shells does Mina have now?"),
+        { ...DRILL, dueAt: 0, itemKey: "addition|drill" },
+      ];
+      const { question, isRetry } = getNextQuestion(session);
+      expect(isRetry).toBe(true);
+      expect(question.itemKey).toBe("addition|drill");
+
+      session.mistakeBank = [session.mistakeBank[0]];
+      const fresh = getNextQuestion(session);
+      expect(fresh.isRetry).toBe(false);
+      expect(fresh.question.metadata.itemFamily).not.toBe("application");
+    }
   });
 
   it("retries string-answer choice items without crashing (poison-item fix)", () => {

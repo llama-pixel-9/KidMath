@@ -121,8 +121,9 @@ Problems (Computation|Practice · Word problems · Mixed) → sheets → answer
 key → Generate → Print. Picking a skill calls `ensureModeLoaded`; Generate
 waits for it. `capacityFor` disables what the LOADED bank cannot fill,
 with the reason. `document.title` is set to the skill so the PDF is named
-for it. The screen reads the household word-problem preference as a
-default and **never writes it**. DEV exposes `window.__larkitWorksheets =
+for it. Problems starts at the last sheet type printed, else Practice: the
+screen neither reads nor writes the play word-problems setting (on by
+default in play since 2026-10-02). DEV exposes `window.__larkitWorksheets =
 { sheets, skillId, problemType }`. `WorksheetSheet.jsx` is exported piece
 by piece so the public worksheet pages can share the renderer.
 

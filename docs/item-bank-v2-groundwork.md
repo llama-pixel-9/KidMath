@@ -323,7 +323,9 @@ All in `src/mathEngine.js`, each with a test in `sessionEngine.spec.js`:
 2. A retry reuses a reshuffled copy of its stored `reviewChoices` instead of
    rebuilding near-miss distractors.
 3. The "word problems off" setting no longer skips a due retry of a story
-   item; it still routes new application questions to procedural.
+   item; it still routes new application questions to procedural. (Since
+   2026-10-02 a held topic's v1 story is never served as a retry either,
+   `src/skills/storyHold.js`.)
 4. A miss late in the session is pulled forward (`firstRetryDueAt`) so the
    retry is served before the end card whenever at least two fresh questions
    remain.

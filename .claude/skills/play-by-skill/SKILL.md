@@ -54,6 +54,31 @@ masterySnapshot, challenge })`. Without skill options it is the ladder session.
 - **A skill session NEVER moves the saved `level`.** `MathExplorer` saves the
   stored level back. Pinned by e2e.
 
+## Word problems (the setting and the held topics)
+- **On by default since 2026-10-02 (Sai):** `DEFAULT_ALLOW_WORD_PROBLEMS =
+  true` in `src/userPreferences.js`. The only switch is the in-session gear;
+  it saves to `kidmath-allow-word-problems` and, signed in, to
+  `user_preferences.allow_word_problems` (the cloud row wins on sign-in; a
+  user with no row gets one seeded from this device; a FAILED read plays the
+  local value and writes nothing). `MathExplorer` passes it into every
+  session. Stories then show both when practice moves through a topic's
+  skills (Larkit picks, the Fledging Flight) and when a kid picks a skill.
+- A skill adds the `application` family only when it has `stories` and
+  `playStoriesAllowed(mode, setting)` is true (`familiesFor`). Drills never
+  serve stories; no skill lists `application` in its own source families.
+- **Held topics:** `STORIES_HELD_MODE_IDS` in `src/skills/storyHold.js`
+  (addition, subtraction, barModels, numberBonds). Their v1 stories stay out
+  of play whatever the setting: not in skill sessions, not in the plain
+  session (application turns procedural), not from the template generator
+  when a cell is empty (it is asked with stories off), not as a due retry
+  (`isHeldStory`; the entry stays in the saved list). The admin `?item=` pin
+  still serves the pinned row. When a topic's v2 stories go live, its v1
+  stories retire and the topic leaves the list.
+- Printed worksheets do not read the setting: the screen starts at the last
+  sheet type printed, else "practice".
+- iOS does not pass the setting yet, so the engine default (off) applies
+  there (`createAdaptiveSession` defaults `allowWordProblems` to false).
+
 ## Math Facts practice (`src/facts/factPractice.js`, `factMarks.js`)
 A Math Facts skill session (not its Fledging Flight) picks FACTS, not bank
 rows. A fact (trackKey) is **ready** when fast, or answered fast earlier
@@ -125,7 +150,10 @@ score (`GRADE_UP.pass`), not by a level change — it never moves the level.
 ## Tests
 `skillsPlay.spec`, `skillMastery.spec`, `skillSession.spec` (every playable
 skill serves five valid questions of its own, words on and off),
-`topicState.spec`, `parentReport.spec`, `e2e/skillsPlay.spec.js` (whole
+`topicState.spec`, `parentReport.spec`, `storyHold.spec` (stories show for
+an open topic, never for a held one, generator fallback and `?item=` pin
+included), `userPreferences.spec` (default on, failed read writes nothing),
+`e2e/skillsPlay.spec.js` (whole
 sessions through the real widgets: level untouched, mastery saved, challenge
 pays no stars, parent controls). Must stay green unchanged: `bankCellCoverage`,
 `sessionEngine` (which pins "the level never moves mid-session"); parity

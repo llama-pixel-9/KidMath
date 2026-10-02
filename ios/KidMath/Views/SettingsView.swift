@@ -119,7 +119,21 @@ struct SettingsView: View {
                         .foregroundStyle(.secondary)
                 }
             }
-        } header: { sectionTitle("Sound & motion") }
+            // A grown-up choice, so it goes through the parental gate like
+            // the account actions. A cancelled gate leaves it as it was; a
+            // change applies from the next session.
+            Toggle(isOn: Binding(
+                get: { app.allowWordProblems },
+                set: { allowed in guardGate { app.allowWordProblems = allowed } }
+            )) {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Word problems")
+                    Text("Story questions mixed into practice. Changes start with the next session.")
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                }
+            }
+        } header: { sectionTitle("Play") }
     }
 
     private var accountSection: some View {
@@ -174,7 +188,10 @@ struct SettingsView: View {
                 Text(authMessage).font(.footnote).foregroundStyle(.red)
             }
         } header: { sectionTitle("Account") }
-        .sheet(isPresented: $showGate) {
+        // A gate closed without passing drops its action: otherwise a later
+        // pass (say, "Parents: sign in") would run it, e.g. flip word problems.
+        // The gate runs onPass before this fires, so a passed action still runs.
+        .sheet(isPresented: $showGate, onDismiss: { gatePendingAction = nil }) {
             ParentalGateView {
                 accountUnlocked = true
                 gatePendingAction?()

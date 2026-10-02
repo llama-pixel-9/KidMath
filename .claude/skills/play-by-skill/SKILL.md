@@ -47,12 +47,66 @@ masterySnapshot, challenge })`. Without skill options it is the ladder session.
   own), family rotation, recent-item avoidance, word-problems preference.
   Gone inside a skill session: promotion/demotion. `session.level` just
   follows the skill (altitude bonus, log columns).
+- In a skill session the word problems setting adds a skill's `stories`
+  (its optional story twin) and, when off, steers the skill's other rows
+  toward terse prompts (`preferTerse`) and asks an empty cell's generator
+  for no story; the plain session swaps `application` for `procedural` when
+  it is off. The Word Problems topic's story skills list `application` in
+  their OWN `source.families` (`stories: null`), so none of that applies to
+  them: choosing one serves its stories whatever the setting, on web and
+  iPhone (Sai, Oct 2). The in-session gear shows "Always on in this topic"
+  there instead of the switch (`storiesAlwaysOn(mode)`), which would only
+  restart the session. No other topic may list stories in its own families
+  (`wordProblems.spec` guards it): their stories stay with the setting.
 - Worded questions are approved bank rows from the skill's own cell
   (`selectApprovedBankItem({levels, accept})`); drills are built to the claim
   (`computationPlay.js`, answers ≥100 typed on the number pad). A cell missing
   from memory falls back to a ladder question, un-stamped — never a hang.
 - **A skill session NEVER moves the saved `level`.** `MathExplorer` saves the
   stored level back. Pinned by e2e.
+
+## Word problems (the setting and the held topics)
+- **On by default since 2026-10-02 (Sai):** `DEFAULT_ALLOW_WORD_PROBLEMS =
+  true` in `src/userPreferences.js`. Switches: web, the in-session gear (in
+  the Word Problems topic it shows "Always on" instead); iPhone, Settings →
+  Play → "Word problems" (behind the parental gate, see iOS below). The web
+  saves to `kidmath-allow-word-problems` and, signed in, to
+  `user_preferences.allow_word_problems` (the cloud row wins on sign-in; a
+  user with no row gets one seeded from this device; a FAILED read plays the
+  local value and writes nothing). `MathExplorer` passes it into every
+  session.
+- **Existing signed-in households stay OFF until a data migration runs.**
+  Their rows were seeded from the old default (off) and the cloud row wins.
+  `20261002183000` only changes the column default; `20261002183100` flips
+  the false rows nobody changed after the seeding insert and needs Sai's
+  go-ahead. Neither is applied.
+- A worded skill adds the `application` family only when it has `stories`
+  and `playStoriesAllowed(mode, setting)` is true (`familiesFor`); with two
+  source families that is one question in three. A drill with `stories`
+  serves one from its story cell every third question of that skill
+  (`drillStoryDue`, falling back to the drill when the cell is empty). Only
+  the Word Problems topic's story skills list `application` in their own
+  source families (see above); they ignore the setting. A skill whose
+  catalog entry has no `stories` never serves one: today multiplication
+  grade 5 and division grades 4 and 5 have none, so Larkit picks there is
+  story-free.
+- **Held topics:** `STORIES_HELD_MODE_IDS` in `src/skills/storyHold.js`
+  (addition, subtraction, barModels, numberBonds). Their v1 stories stay out
+  of play whatever the setting: not in skill sessions (worded or drill), not
+  in the plain session (application turns procedural), not from the template
+  generator when a cell is empty (it is asked with stories off), not as a
+  due retry (`restoreMistakeBank(saved, mode)` drops a saved one, so the next
+  save clears it; `isHeldStory` also guards the retry pick, and the
+  grown-ups' "In review" count skips them). The gear panel says new word
+  problems for the topic are on the way. The admin `?item=` pin still serves
+  the pinned row. When a topic's v2 stories go live, its v1 stories retire
+  and the topic leaves the list.
+- Printed worksheets do not read the setting (web and iOS): the screen
+  starts at the last sheet type printed, else "practice".
+- iOS passes the setting into every session (`WordProblemsSetting.isOn()`:
+  the same UserDefaults key, on when missing; see iOS below). The engine's
+  own `createAdaptiveSession` default is still off, so a caller that passes
+  nothing gets no stories (`simulateKid` plays words on unless `--words 0`).
 
 ## Math Facts practice (`src/facts/factPractice.js`, `factMarks.js`)
 A Math Facts skill session (not its Fledging Flight) picks FACTS, not bank
@@ -125,7 +179,10 @@ score (`GRADE_UP.pass`), not by a level change — it never moves the level.
 ## Tests
 `skillsPlay.spec`, `skillMastery.spec`, `skillSession.spec` (every playable
 skill serves five valid questions of its own, words on and off),
-`topicState.spec`, `parentReport.spec`, `e2e/skillsPlay.spec.js` (whole
+`topicState.spec`, `parentReport.spec`, `storyHold.spec` (stories show for
+an open topic, drills included, never for a held one, generator fallback and
+`?item=` pin included), `userPreferences.spec` (default on, failed read writes nothing),
+`e2e/skillsPlay.spec.js` (whole
 sessions through the real widgets: level untouched, mastery saved, challenge
 pays no stars, parent controls). Must stay green unchanged: `bankCellCoverage`,
 `sessionEngine` (which pins "the level never moves mid-session"); parity
@@ -165,6 +222,15 @@ No flag. A `SessionViewModel` without a `skillRequest` is a plain session
   the progress row (`grade`, `grade_unlocked`, `pinned_skill_id`,
   `skill_mastery`) and are always selected — the migration is applied.
 - Grown-up controls: Settings → "Skills to practice", behind the parental gate.
+- Word problems: `WordProblemsSetting` (in AppModel.swift; UserDefaults, the
+  web's `kidmath-allow-word-problems` key) reads ON when never set; Settings
+  → Play → "Word problems", behind the gate. `SessionViewModel` passes it as
+  `allowWordProblems` into every session it builds (plain, skill, flight):
+  the engine reads a missing option as OFF. The held topics
+  (`storyHold.js`) apply here too, since it is the same engine. Worksheets do
+  not read it. The iPhone does not read `user_preferences` yet, so a
+  household's saved web choice does not reach it: stories show on the iPhone
+  unless turned off on that device.
 - Dev: `-skillsPlay 1 -autostartMode subtraction [-autostartSkill sub-across-zeros]`.
 - SwiftUI traps met here: "▶" in a `Text` renders as an emoji (use
   `Image(systemName: "play.fill")`); with two `.background`s the FIRST is

@@ -1,5 +1,7 @@
 import { beforeAll, describe, expect, it, vi } from "vitest";
 import { FULL_ITEMS } from "../itemBank/fullBank";
+import { DEFAULT_LIVE_VERSION } from "../itemBank/versionRules";
+import { getModeConfig } from "../modes";
 import { setBankItems } from "../itemBank";
 import { createAdaptiveSession, getNextQuestion, isSessionComplete, recordAnswer } from "../mathEngine";
 import { applySession } from "../skills/mastery";
@@ -106,8 +108,14 @@ describe("pinned skill session", () => {
   });
 
   it("word problems on: a skill with stories mixes them in", () => {
-    const { served } = play("subtraction", { skillId: "sub-missing-number-1000", allowWordProblems: true });
+    const { served } = play("money", { skillId: "money-count-coins-4", allowWordProblems: true }, { size: 30 });
     expect(served.some(({ question: q }) => q.metadata.itemFamily === "application")).toBe(true);
+  });
+
+  it("word problems on: a topic whose v1 stories are held serves none (storyHold.spec has the rest)", () => {
+    const { served } = play("subtraction", { skillId: "sub-missing-number-1000", allowWordProblems: true });
+    expect(served.filter((s) => !s.isRetry)).toHaveLength(15);
+    for (const { question: q } of served) expect(q.metadata.itemFamily).not.toBe("application");
   });
 });
 
@@ -150,13 +158,51 @@ describe("mixed session — Larkit picks", () => {
   });
 });
 
+// A v2-only topic that ships with no rows and is hidden by default (Word
+// Problems: preview until Sai flips it at /admin/switch, so only preview
+// browsers can open it) has nothing in the bundle to serve yet. No screen
+// gates on skillServable, so a preview viewer can start any of its skills;
+// each is held to what a session must still do, below, instead of to serving
+// from its cell. The
+// guard fails the moment a listed topic gains a bundled row, goes live by
+// default, or stops being v2-only; it then comes off this list and passes
+// the gate like every topic. Same list as bankCellCoverage.spec.
+const UNSHIPPED_V2_TOPICS = ["wordProblems"];
+const shipped = (skill) => !UNSHIPPED_V2_TOPICS.includes(skill.mode);
+
 describe("every playable skill can be played", () => {
   it("from the full bank, with word problems on and off", () => {
-    const unservable = playSkills().filter((s) => !skillServable(s.id) || !skillServable(s.id, { allowWordProblems: false }));
+    const unservable = playSkills()
+      .filter(shipped)
+      .filter((s) => !skillServable(s.id) || !skillServable(s.id, { allowWordProblems: false }));
     expect(unservable.map((s) => s.id)).toEqual([]);
   });
 
-  for (const skill of playSkills()) {
+  it("exempts only hidden v2-only topics with no rows yet", () => {
+    for (const modeId of UNSHIPPED_V2_TOPICS) {
+      expect(getModeConfig(modeId).v2Only, modeId).toBe(true);
+      expect(DEFAULT_LIVE_VERSION[modeId], modeId).toBe("preview");
+      expect(FULL_ITEMS.filter((item) => item.modeId === modeId).map((item) => item.itemId), modeId).toEqual([]);
+    }
+  });
+
+  for (const skill of playSkills().filter((s) => !shipped(s))) {
+    it(`${skill.id}: no rows yet, so a session falls back to bare number sentences and never hangs`, () => {
+      expect(skillServable(skill.id)).toBe(false);
+      expect(skillServable(skill.id, { allowWordProblems: false })).toBe(false);
+      const { served } = play(skill.mode, { skillId: skill.id }, { size: 5 });
+      expect(served.filter((s) => !s.isRetry)).toHaveLength(5);
+      for (const { question: q } of served) {
+        // The fallback: a bare box sentence, never a story, credited by its own cell.
+        expect(q.skillId).toBeUndefined();
+        expect(q.metadata.subskill).toBe("missingNumber");
+        expect(q.metadata.itemFamily).toBe("conceptual");
+        expect(q.choices).toContain(q.answer);
+      }
+    });
+  }
+
+  for (const skill of playSkills().filter(shipped)) {
     it(`${skill.id}: five valid questions, all its own`, () => {
       const { served } = play(skill.mode, { skillId: skill.id }, { size: 5 });
       expect(served.filter((s) => !s.isRetry)).toHaveLength(5);

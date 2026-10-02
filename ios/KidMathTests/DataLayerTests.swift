@@ -1,3 +1,4 @@
+import JavaScriptCore
 import XCTest
 @testable import KidMath
 
@@ -33,10 +34,15 @@ final class DataLayerTests: XCTestCase {
         try bridge.resetBankToBundle()
         let seeded = try bridge.bankCount()
         XCTAssertGreaterThan(seeded, 0, "engine bundle should carry the seed bank")
+        let seedItems = try bridge.call("getBankItems").toObject() as? [[String: Any]] ?? []
+        let seededAddition = seedItems.filter { $0["modeId"] as? String == "addition" }.count
+        XCTAssertGreaterThan(seededAddition, 0, "the seed should carry addition items")
 
+        // A topic's cloud rows replace its seed items, filtered by the version
+        // switch (web parity: a signed-in bank is the filtered cloud set).
         let added = try bridge.addBankRows([Self.validRow(itemId: "test-p1-1")])
         XCTAssertEqual(added, 1)
-        XCTAssertEqual(try bridge.bankCount(), seeded + 1)
+        XCTAssertEqual(try bridge.bankCount(), seeded - seededAddition + 1)
 
         // Same row again: deduped by itemId, not double-added.
         XCTAssertEqual(try bridge.addBankRows([Self.validRow(itemId: "test-p1-1")]), 0)
@@ -48,7 +54,7 @@ final class DataLayerTests: XCTestCase {
         payload["answer"] = 99
         bad["payload"] = payload
         XCTAssertEqual(try bridge.addBankRows([bad, [:]]), 0)
-        XCTAssertEqual(try bridge.bankCount(), seeded + 1)
+        XCTAssertEqual(try bridge.bankCount(), seeded - seededAddition + 1)
 
         try bridge.resetBankToBundle()
         XCTAssertEqual(try bridge.bankCount(), seeded)

@@ -32,8 +32,17 @@ describe("mode generation coverage", () => {
           if (seen.size === targetFamilies.size) break;
         }
       }
-      for (const expected of modeConfig.families || targetFamilies) {
-        expect(seen.has(expected)).toBe(true);
+      // A mode whose stories come only from bank rows (Word Problems) names
+      // the families its fallback generator writes; they are a subset of the
+      // families it declares.
+      const declared = modeConfig.families || [...targetFamilies];
+      const generated = modeConfig.generatedFamilies || declared;
+      for (const family of generated) expect(declared, mode).toContain(family);
+      for (const expected of generated) {
+        expect(seen.has(expected), `${mode} ${expected}`).toBe(true);
+      }
+      if (modeConfig.generatedFamilies) {
+        for (const family of seen) expect(modeConfig.generatedFamilies, `${mode} generated ${family}`).toContain(family);
       }
     }
   });
@@ -111,6 +120,9 @@ describe("mode generation coverage", () => {
       "linesShapes",
       // Bare facts only: Math Facts declares no word-problem family.
       "mathFacts",
+      // Stories from v2 bank rows only, reached by skill sessions; the
+      // fallback generator writes bare box sentences, never a story.
+      "wordProblems",
     ]);
     const modesWithApplicationContext = MODE_IDS.filter((mode) => !bankless.has(mode));
     for (const mode of modesWithApplicationContext) {

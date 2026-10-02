@@ -7,6 +7,8 @@ import { ThemeProvider } from "./ThemeContext";
 import { AuthProvider } from "./AuthContext";
 import { PremiumProvider, usePremium } from "./PremiumContext";
 import { isFreeMode } from "./premium";
+import { useHiddenTopicsState } from "./hooks/useHiddenTopics.js";
+import RequireAdmin from "./RequireAdmin";
 import PremiumGate from "./PremiumGate";
 import { useTheme } from "./useTheme";
 import Navbar from "./Navbar";
@@ -37,10 +39,24 @@ const AdminItemsPage = lazy(() => import("./admin/AdminItemsPage"));
 const ModelReviewPage = lazy(() => import("./admin/ModelReviewPage"));
 const VersionSwitchPanel = lazy(() => import("./admin/VersionSwitchPanel"));
 
-function PlayRoute() {
+function PlayRoute({ adminPin = false }) {
   const { mode } = useParams();
   const { isPremium, loading } = usePremium();
   const [params] = useSearchParams();
+  const { hidden, loaded: switchLoaded } = useHiddenTopicsState();
+  // A topic the version switch hides from this viewer (Word Problems until
+  // Sai flips it) is not there by direct link either: nothing until the
+  // switch is read, then home. One exception: an admin's `?item=` pin (the
+  // Review queue's Play link) opens, so a hidden topic's drafts can be played.
+  if (mode && hidden.has(mode) && !adminPin) {
+    if (!switchLoaded) return null;
+    if (!params.has("item")) return <Navigate to="/" replace />;
+    return (
+      <RequireAdmin fallback={<Navigate to="/" replace />}>
+        <PlayRoute adminPin />
+      </RequireAdmin>
+    );
+  }
   // Free tier: the four operations, counting and Math Facts, unlimited and free forever.
   // Everything else needs the subscription (deep links included).
   if (mode && !isFreeMode(mode) && !isPremium && !loading) {

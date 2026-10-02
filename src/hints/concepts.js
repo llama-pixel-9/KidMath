@@ -40,6 +40,7 @@ export const MODE_TITLES = {
   decimalOps: "Decimal operations",
   volumeCoordinates: "Volume and coordinates",
   mathFacts: "Math facts",
+  wordProblems: "Word problems",
 };
 
 export const CONCEPTS = {
@@ -600,6 +601,57 @@ export const CONCEPTS = {
       title: "Think multiplication",
       idea: "Dividing asks a times question. For 35 ÷ 5, ask: 5 times what is 35?",
       example: ex("35 ÷ 5", ["Think: 5 times what is 35?", "5 × 7 = 35.", "So 35 ÷ 5 = 7."], "7"),
+    },
+  },
+  // Word Problems: one entry per story kind, plus the box sentences. Kid
+  // words only: no "addend" or "equation", and a story's people by name.
+  wordProblems: {
+    changeStories: {
+      title: "Something changes",
+      idea: "In these stories, some are added or some are taken away. Find the start, the change and the end. One of them is missing.",
+      example: ex(
+        "Mia has 34 shells. Mia finds 25 more shells. How many shells does Mia have now?",
+        ["Mia starts with 34 shells.", "25 more shells are added, so add.", "34 + 25 = 59."],
+        "59 shells"
+      ),
+    },
+    partWholeStories: {
+      title: "Two parts make a whole",
+      idea: "Nothing changes in these stories. Two parts sit together to make a whole. Add the parts to find the whole. Take one part from the whole to find the other part.",
+      example: ex(
+        "A box has 48 crayons. 23 crayons are red. The rest are blue. How many crayons are blue?",
+        ["The whole is 48 crayons.", "One part is 23 red crayons.", "48 − 23 = 25."],
+        "25 crayons"
+      ),
+    },
+    compareStories: {
+      title: "Compare two amounts",
+      idea: "One amount is bigger than the other. The difference is how many more or how many fewer. Line up the two amounts and find the gap.",
+      example: ex(
+        "Leo has 52 stickers. Ana has 37 stickers. How many more stickers does Leo have than Ana?",
+        ["Line up 52 and 37.", "Count up from 37: 3 to get to 40, then 12 more to get to 52.", "3 + 12 = 15."],
+        "15 stickers"
+      ),
+    },
+    twoStepStories: {
+      title: "One step at a time",
+      idea: "In these stories, two things happen. Solve the first part. Then use that answer to solve the second part.",
+      example: ex(
+        "A bus has 25 riders. 12 more riders get on. Then 9 riders get off. How many riders are on the bus now?",
+        ["First, 12 riders get on: 25 + 12 = 37.", "Then 9 riders get off: 37 − 9 = 28."],
+        "28 riders"
+      ),
+    },
+    missingNumber: {
+      title: "Find the missing number",
+      idea: "One number in the number sentence is missing. Find the number that makes the sentence true. Counting up from one number to the other can help.",
+      // Tens first, then ones: the same jumps as each question's own steps.
+      // The generator never uses these numbers (wordProblems.js HINT_EXAMPLE).
+      example: ex(
+        "35 + ? = 61",
+        ["Start at 35. Jump 10 to 45, then 10 more to 55.", "Now jump 6 ones to get to 61.", "10 + 10 + 6 = 26, so 35 + 26 = 61."],
+        "26"
+      ),
     },
   },
 };

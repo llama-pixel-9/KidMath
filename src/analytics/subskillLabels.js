@@ -25,6 +25,12 @@ const LABELS = {
   subFacts: "subtraction facts",
   mulFacts: "multiplication facts",
   divFacts: "division facts",
+  // word problems
+  changeStories: "add-to and take-away stories",
+  partWholeStories: "part and whole stories",
+  compareStories: "compare stories (how many more or fewer)",
+  twoStepStories: "two-step stories",
+  missingNumber: "missing numbers in equations (46 + ? = 72)",
   // addition / subtraction
   makeTen: "making ten",
   composeDecompose: "breaking numbers apart to add",

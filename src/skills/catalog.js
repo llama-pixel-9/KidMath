@@ -74,6 +74,7 @@ export const TOPIC_LABELS = {
   linesShapes: "Lines & Shapes",
   volumeCoordinates: "Volume & Coordinates",
   mathFacts: "Math Facts",
+  wordProblems: "Word Problems",
 };
 
 const ONE_DIGIT = [1, 9];
@@ -267,6 +268,41 @@ const facts = (subskill, levels, numbers) => ({
   levels,
   ...(numbers ? { numbers } : {}),
 });
+// Word Problems (Sai, 2026-10-02): every add and subtract story kind in one
+// topic, each skill one grade and one story kind, drawing only its own
+// subskill's bank rows. A story skill serves its stories (application) and
+// the reasoning rows about that kind of story (conceptual: choose the number
+// sentence, choose the story); "Find the missing number" serves the bare
+// number sentences with a blank (conceptual). The stories ARE the skill here,
+// so they sit in the skill's own families, not in `stories` (the optional
+// story twin of a skill in another topic, the part the word problems setting
+// adds): choosing this topic means getting stories, whatever the setting
+// (Sai, 2026-10-02). Titles show on the kid's topic sheet (and are read
+// aloud), so no "equation" in them. Grade 2 is levels 4-6
+// (src/modes/wordProblems.js).
+// Play only: no rows exist yet (the blueprint rows await Sai), and a
+// worksheet title is a promise a sheet cannot keep without them. `standards`
+// holds the codes of every loaded framework; standards.spec checks them.
+const G2_WORDS = [4, 6];
+const STORY_CODES = { ccss: ["2.OA.A.1"], tx: ["2.4C", "2.7C"], fl: ["MA.2.AR.1.1"], va: ["2.CE.1c"], ga: ["2.NR.2.3"] };
+const BOX_CODES = { ccss: ["2.NBT.B.5"], tx: ["2.4B"], fl: ["MA.2.AR.2.2"], va: ["2.CE.1b"], ga: ["2.NR.2.4"] };
+const wordStory = (id, subskill, title, level) => ({
+  ...banked(id, "2", "wordProblems", STORY_CODES.ccss[0], title,
+    { families: ["application", "conceptual"], subskills: [subskill], levels: G2_WORDS }, null, level),
+  standards: STORY_CODES,
+});
+const WORD_PROBLEM_SKILLS = [
+  wordStory("wp-g2-change", "changeStories", "Add and take away stories", 4),
+  wordStory("wp-g2-part-whole", "partWholeStories", "Part and whole stories", 4),
+  wordStory("wp-g2-compare", "compareStories", "Compare stories", 5),
+  {
+    ...banked("wp-g2-box", "2", "wordProblems", BOX_CODES.ccss[0], "Find the missing number",
+      { families: ["conceptual"], subskills: ["missingNumber"], levels: G2_WORDS }, null, 5, "promptShort"),
+    standards: BOX_CODES,
+  },
+  wordStory("wp-g2-two-step", "twoStepStories", "Two-step stories", 6),
+];
+
 export const PLAY_ONLY_SKILLS = [
   banked("facts-add-to5", "K", "mathFacts", "K.OA.A.5", "Addition facts to 5", facts("addFacts", [1, 2], { max: 5 }), null, 1, "horizontal"),
   banked("facts-sub-to5", "K", "mathFacts", "K.OA.A.5", "Subtraction facts to 5", facts("subFacts", [1, 2], { max: 5 }), null, 1, "horizontal"),
@@ -279,6 +315,7 @@ export const PLAY_ONLY_SKILLS = [
   // 11s and 12s: Florida and Virginia only, so no Common Core code.
   { ...banked("facts-mul-to12", "4", "mathFacts", null, "Multiplication facts with 11 and 12", facts("mulFacts", [9, 10]), null, 9, "horizontal"), ccss: [] },
   { ...banked("facts-div-to12", "4", "mathFacts", null, "Division facts with 11 and 12", facts("divFacts", [9, 10]), null, 9, "horizontal"), ccss: [] },
+  ...WORD_PROBLEM_SKILLS,
 ];
 
 export const WORKSHEET_SKILLS = [...OPERATION_SKILLS, ...PROMPT_SKILLS];

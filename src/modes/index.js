@@ -24,6 +24,7 @@ import fractionOps from "./fractionOps";
 import decimalOps from "./decimalOps";
 import volumeCoordinates from "./volumeCoordinates";
 import mathFacts from "./mathFacts";
+import wordProblems from "./wordProblems";
 
 const ALL_MODES = [
   addition,
@@ -52,13 +53,19 @@ const ALL_MODES = [
   decimalOps,
   volumeCoordinates,
   mathFacts,
+  wordProblems,
 ];
 
 export const modeRegistry = Object.fromEntries(ALL_MODES.map((m) => [m.id, m]));
 
 export const MODE_IDS = ALL_MODES.map((m) => m.id);
 
-/** Topics with no v1 rows (Math Facts): hidden until their switch serves v2. */
+/**
+ * Topics with no v1 rows (Math Facts, Word Problems): shown only where their
+ * switch serves v2. With no switch row each takes its DEFAULT_LIVE_VERSION
+ * (Math Facts v2, so live; Word Problems preview, so hidden from everyone
+ * but preview viewers).
+ */
 export const V2_ONLY_MODE_IDS = ALL_MODES.filter((m) => m.v2Only).map((m) => m.id);
 
 // Kid-facing grouping for the home page (and any future mode picker). Every
@@ -107,6 +114,13 @@ export const MODE_GROUPS = [
     title: "Math Facts",
     gradeHint: "Grades K-4",
     modeIds: ["mathFacts"],
+  },
+  {
+    // Hidden until Sai flips it at /admin/switch (default preview; useHiddenTopics).
+    id: "stories",
+    title: "Word Problems",
+    gradeHint: "Grade 2",
+    modeIds: ["wordProblems"],
   },
 ];
 

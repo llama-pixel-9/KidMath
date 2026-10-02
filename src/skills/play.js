@@ -13,6 +13,8 @@
  *     quotient-and-remainder answer widget.
  *   - Math Facts skills are play-only (PLAY_ONLY_SKILLS): their bands are
  *     closed fact sets, and the operation topics print the same facts.
+ *   - Word Problems skills are play-only too, until their bank rows exist
+ *     (a printed title is a promise; there is nothing to print yet).
  */
 import { gradeIndex } from "../gradeSeed.js";
 import { GRADES, PLAY_ONLY_SKILLS, WORKSHEET_SKILLS } from "./catalog.js";
@@ -95,6 +97,19 @@ export function skillsForPlay(grade, mode) {
 export function topicGrades(mode) {
   const present = new Set(PLAY_SKILLS.filter((skill) => skill.mode === mode).map((skill) => skill.grade));
   return GRADES.filter((grade) => present.has(grade));
+}
+
+/**
+ * Does choosing this topic serve stories whatever the word problems setting?
+ * True for a topic whose skills list `application` in their own source
+ * families (Word Problems): the setting does not steer those skills
+ * (`wordsWanted` in session.js), and the topic's other skill serves bare
+ * number sentences, so the setting changes nothing here. The in-session gear
+ * shows a plain line instead of the switch, which would only restart the
+ * kid's session.
+ */
+export function storiesAlwaysOn(mode) {
+  return PLAY_SKILLS.some((skill) => skill.mode === mode && skill.source.families?.includes("application"));
 }
 
 /** Where a kid of `grade` starts in a topic: the nearest topic grade at or

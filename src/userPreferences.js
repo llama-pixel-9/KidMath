@@ -8,7 +8,11 @@ import { supabase } from "./supabaseClient";
 
 const WORD_PROBLEM_PREF_KEY = "kidmath-allow-word-problems";
 
-export const DEFAULT_ALLOW_WORD_PROBLEMS = false;
+// Word problems are on unless the household turned them off (Sai,
+// 2026-10-02): a browser with no saved choice and a new signed-in user get
+// stories. Some topics still hold their v1 stories out of play
+// (skills/storyHold.js); the setting cannot bring those back.
+export const DEFAULT_ALLOW_WORD_PROBLEMS = true;
 
 function readLocalAllowWordProblems() {
   try {
@@ -33,15 +37,22 @@ export function loadAllowWordProblemsSync() {
   return readLocalAllowWordProblems();
 }
 
+// What the cloud says: `{ ok: true, value }` with value null when the user
+// has no row yet, or `{ ok: false }` when the read failed (offline, an
+// expired session, a thrown client). A failed read is not "no row".
 async function fetchCloudAllowWordProblems(userId) {
-  if (!supabase || !userId) return null;
-  const { data, error } = await supabase
-    .from("user_preferences")
-    .select("allow_word_problems")
-    .eq("user_id", userId)
-    .maybeSingle();
-  if (error || !data) return null;
-  return Boolean(data.allow_word_problems);
+  if (!supabase || !userId) return { ok: false };
+  try {
+    const { data, error } = await supabase
+      .from("user_preferences")
+      .select("allow_word_problems")
+      .eq("user_id", userId)
+      .maybeSingle();
+    if (error) return { ok: false };
+    return { ok: true, value: data ? Boolean(data.allow_word_problems) : null };
+  } catch {
+    return { ok: false };
+  }
 }
 
 async function upsertCloudAllowWordProblems(userId, value) {
@@ -63,13 +74,17 @@ async function upsertCloudAllowWordProblems(userId, value) {
  * users, the cloud value wins; if the cloud has no row yet, we seed it from
  * whatever is in localStorage so a toggle made while logged out carries
  * through the user's first login. The local cache is refreshed to match.
+ * A failed cloud read plays on the local value and writes nothing: seeding
+ * the row then would overwrite a saved choice (say, off) with this device's
+ * copy (say, the default on).
  */
 export async function loadAllowWordProblems(userId) {
   if (!userId) return readLocalAllowWordProblems();
   const cloud = await fetchCloudAllowWordProblems(userId);
-  if (cloud != null) {
-    writeLocalAllowWordProblems(cloud);
-    return cloud;
+  if (!cloud.ok) return readLocalAllowWordProblems();
+  if (cloud.value != null) {
+    writeLocalAllowWordProblems(cloud.value);
+    return cloud.value;
   }
   const local = readLocalAllowWordProblems();
   await upsertCloudAllowWordProblems(userId, local);

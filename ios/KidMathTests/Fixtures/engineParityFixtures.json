@@ -486,6 +486,24 @@
       "level": 7,
       "seed": 57535,
       "expectedJSON": "{\"a\":6,\"b\":null,\"op\":\"×\",\"answer\":8,\"answerType\":\"numberPad\",\"hint\":{\"nudge\":\"Count by 6s until you reach 48.\",\"steps\":[\"Say the 6s, starting at 6.\",\"Stop when you say 48.\",\"Count how many 6s you said.\"]},\"display\":{\"promptText\":\"6 × ? = 48\"},\"level\":7,\"metadata\":{\"modeId\":\"mathFacts\",\"level\":7,\"gradeBand\":\"4-5\",\"domain\":\"OA\",\"cluster\":\"Multiply and divide within 100\",\"subskill\":\"mulFacts\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK1\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP7\",\"MP8\"],\"standardRefs\":[\"3.OA.C.7\"],\"misconceptionTags\":[],\"blueprintId\":\"facts-mul-times6\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"mul-missing\"},\"factId\":\"mul-6-8\",\"factFormat\":\"missing\",\"mode\":\"mathFacts\",\"itemKey\":\"mathFacts::×::6::::8::mulFacts::facts-mul-times6::|6 × ? = 48|||\"}"
+    },
+    {
+      "mode": "wordProblems",
+      "level": 1,
+      "seed": 10771,
+      "expectedJSON": "{\"a\":21,\"b\":null,\"op\":\"+\",\"answer\":25,\"level\":1,\"display\":{\"promptText\":\"21 + ? = 46\"},\"distractorContext\":{\"a\":21,\"b\":46},\"hint\":{\"nudge\":\"Think: 21 and what number make 46?\",\"steps\":[\"Start at 21.\",\"Count up to 46 in jumps: tens first, then ones.\",\"Add up your jumps. That is the missing number.\"]},\"metadata\":{\"modeId\":\"wordProblems\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"NBT\",\"cluster\":\"Add and subtract within 100\",\"subskill\":\"missingNumber\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP7\"],\"standardRefs\":[\"2.NBT.B.5\"],\"misconceptionTags\":[\"equalsMeansCompute\",\"placeValueSlip\",\"offByOne\"],\"blueprintId\":\"wordProblems-conceptual-box-add-change\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"box-add-change\"},\"mode\":\"wordProblems\",\"itemKey\":\"wordProblems::+::21::::25::missingNumber::wordProblems-conceptual-box-add-change::|21 + ? = 46|||\"}"
+    },
+    {
+      "mode": "wordProblems",
+      "level": 4,
+      "seed": 34528,
+      "expectedJSON": "{\"a\":43,\"b\":null,\"op\":\"-\",\"answer\":30,\"level\":4,\"display\":{\"promptText\":\"43 − ? = 13\"},\"distractorContext\":{\"a\":43,\"b\":13},\"hint\":{\"nudge\":\"Think: 43 take away what number leaves 13?\",\"steps\":[\"Start at 13.\",\"Count up to 43 in jumps: tens first, then ones.\",\"Add up your jumps. That is the missing number.\"]},\"metadata\":{\"modeId\":\"wordProblems\",\"level\":4,\"gradeBand\":\"2-3\",\"domain\":\"NBT\",\"cluster\":\"Add and subtract within 100\",\"subskill\":\"missingNumber\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP7\"],\"standardRefs\":[\"2.NBT.B.5\"],\"misconceptionTags\":[\"operationSwap\",\"placeValueSlip\",\"offByOne\"],\"blueprintId\":\"wordProblems-conceptual-box-sub-change\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"box-sub-change\"},\"mode\":\"wordProblems\",\"itemKey\":\"wordProblems::-::43::::30::missingNumber::wordProblems-conceptual-box-sub-change::|43 − ? = 13|||\"}"
+    },
+    {
+      "mode": "wordProblems",
+      "level": 7,
+      "seed": 58285,
+      "expectedJSON": "{\"a\":37,\"b\":null,\"op\":\"-\",\"answer\":28,\"level\":7,\"display\":{\"promptText\":\"37 − ? = 9\"},\"distractorContext\":{\"a\":37,\"b\":9},\"hint\":{\"nudge\":\"Think: 37 take away what number leaves 9?\",\"steps\":[\"Start at 9.\",\"Count up to 37 in jumps: tens first, then ones.\",\"Add up your jumps. That is the missing number.\"]},\"metadata\":{\"modeId\":\"wordProblems\",\"level\":6,\"gradeBand\":\"2-3\",\"domain\":\"NBT\",\"cluster\":\"Add and subtract within 100\",\"subskill\":\"missingNumber\",\"itemFamily\":\"conceptual\",\"cognitiveDemand\":\"DOK2\",\"representation\":\"symbolic\",\"mathPractices\":[\"MP2\",\"MP7\"],\"standardRefs\":[\"2.NBT.B.5\"],\"misconceptionTags\":[\"operationSwap\",\"placeValueSlip\",\"offByOne\"],\"blueprintId\":\"wordProblems-conceptual-box-sub-change\",\"itemId\":null,\"itemSource\":\"generated\",\"reviewStatus\":null,\"structureType\":\"box-sub-change\"},\"mode\":\"wordProblems\",\"itemKey\":\"wordProblems::-::37::::28::missingNumber::wordProblems-conceptual-box-sub-change::|37 − ? = 9|||\"}"
     }
   ]
 }

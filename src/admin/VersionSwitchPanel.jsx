@@ -6,6 +6,7 @@ import { useIsAdmin } from "../useIsAdmin";
 import { TOPIC_LABELS } from "../skills/catalog.js";
 import { listVersionSwitch, setLiveVersion, LIVE_VERSIONS } from "./versionSwitchApi.js";
 import { DEFAULT_LIVE_VERSION, previewEnabled, setPreviewEnabled } from "../itemBank/versionSwitch.js";
+import { V2_ONLY_MODE_IDS } from "../modes/index.js";
 
 /**
  * /admin/switch — which bank version each skill serves (plan section 10).
@@ -184,8 +185,10 @@ export default function VersionSwitchPanel() {
             <tbody>
               {modeIds.map((modeId) => {
                 const row = rows.get(modeId);
-                // No row: what the loader serves (Math Facts has no v1 rows, so it is live at v2).
+                // No row: what the loader serves, the topic's default (Math Facts
+                // v2, so live; Word Problems preview, so preview viewers only).
                 const live = row?.liveVersion || DEFAULT_LIVE_VERSION[modeId] || "v1";
+                const v2Only = V2_ONLY_MODE_IDS.includes(modeId);
                 const isPending = pending?.modeId === modeId;
                 return (
                   <tr key={modeId} className={`border-t border-gray-100 ${isPending ? "bg-violet-50" : ""}`}>
@@ -195,6 +198,14 @@ export default function VersionSwitchPanel() {
                       {!row && (
                         <span className="ml-2 text-[10px] uppercase text-slate-400" title={`No row yet; the loader treats it as ${live}`}>
                           no row
+                        </span>
+                      )}
+                      {v2Only && (
+                        <span
+                          className="ml-2 text-[10px] uppercase text-amber-700"
+                          title="No version-1 rows: v1 hides the topic, preview shows it to preview browsers only, v2 shows it to everyone"
+                        >
+                          v2 only
                         </span>
                       )}
                     </td>

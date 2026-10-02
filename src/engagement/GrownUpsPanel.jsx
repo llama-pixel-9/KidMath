@@ -16,6 +16,8 @@ import { meadowEnabled } from "../gamificationFlags.js";
 import { loadSessions, loadSessionsSync } from "../analytics/sessionLog.js";
 import { skillStanding } from "../analytics/reportModel.js";
 import { deriveMastery } from "../skills/mastery.js";
+import { useHiddenTopics } from "../hooks/useHiddenTopics.js";
+import { isHeldStory } from "../skills/storyHold.js";
 
 /**
  * The parent snapshot: one screen answering "is my kid practicing, and where
@@ -78,6 +80,8 @@ export default function GrownUpsPanel({ open, onClose }) {
   // log — this device's first, then the family account's when signed in.
   const [practiceLog, setPracticeLog] = useState(loadSessionsSync);
   const mastery = useMemo(() => deriveMastery(practiceLog), [practiceLog]);
+  // A topic the version switch hides from this browser is left out here too.
+  const hidden = useHiddenTopics();
   useEffect(() => {
     if (!open) return undefined;
     let cancelled = false;
@@ -117,7 +121,8 @@ export default function GrownUpsPanel({ open, onClose }) {
     const tier = SPECIES_BY_ID[b.speciesId]?.tier;
     return tier === "rare" || tier === "legendary";
   }).length;
-  const rows = MODE_IDS.map((id) => ({ id, progress: summary.byMode[id] || {} }))
+  const rows = MODE_IDS.filter((id) => !hidden.has(id))
+    .map((id) => ({ id, progress: summary.byMode[id] || {} }))
     .filter(({ progress }) => (progress.totalSessions ?? 0) > 0 || (progress.level ?? 1) > 1)
     .sort((a, b) => (b.progress.lifetimeStars ?? 0) - (a.progress.lifetimeStars ?? 0));
 
@@ -206,7 +211,8 @@ export default function GrownUpsPanel({ open, onClose }) {
               <tbody>
                 {rows.map(({ id, progress }) => {
                   const standing = skillStanding(id, progress.level ?? 1, progress, mastery);
-                  const reviewCount = Array.isArray(progress.mistakeBank) ? progress.mistakeBank.length : 0;
+                  // Only what can come back: a held topic's v1 story is never asked again.
+                  const reviewCount = Array.isArray(progress.mistakeBank) ? progress.mistakeBank.filter((q) => !isHeldStory(q, id)).length : 0;
                   return (
                     <tr key={id} className="border-t border-slate-100">
                       <td className="py-2">

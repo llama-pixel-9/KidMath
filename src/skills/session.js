@@ -9,12 +9,15 @@
  *   challenge  the grade-up test: six questions spread across the grade.
  *
  * What stays as it was: the mistake bank and its spaced retries, family
- * rotation, recent-item avoidance, the word-problems preference, item stats.
+ * rotation, recent-item avoidance, the word-problems preference (minus the
+ * topics whose v1 stories are held, storyHold.js), item stats.
  * What goes: promotion and demotion of the integer level — inside a skill
  * session the level only follows the skill being asked.
  *
  * Every worded question is an approved bank row from the skill's own cell;
- * drills are built to the skill's claim. A Math Facts practice session picks
+ * drills are built to the skill's claim, and a drill with stories serves one
+ * from its story cell every third question when stories are allowed. A Math
+ * Facts practice session picks
  * facts, not rows (facts/factPractice.js): the current strategy group, mixed
  * review and turnarounds, each fact served from its bank row when the bank
  * has it. mathEngine calls in here; this file calls back into it only inside
@@ -31,6 +34,7 @@ import { buildComputationQuestion, computationKeyOf } from "./computationPlay.js
 import { STATES, practiceOrder, stateOf } from "./mastery.js";
 import { playSkillById } from "./play.js";
 import { cellMatches, storyMatches, withinNumbers } from "./skillPool.js";
+import { playStoriesAllowed } from "./storyHold.js";
 
 const FOCUS_SIZE = 3;
 const REVIEW_EVERY = 5;
@@ -38,6 +42,9 @@ const MAX_IN_A_ROW = 2;
 // In-session sign that a focus skill is going well enough to bring the next in.
 const ROTATE_AFTER = { attempts: 5, accuracy: 0.8 };
 const RECENT_COMPUTATIONS = 24;
+// A drill with stories: every third question of the skill is a story (the
+// share a worded skill with two families plus stories gets from rotation).
+const DRILL_STORY_EVERY = 3;
 
 /** The extra fields a skill session carries — all JSON-safe (Swift holds it). */
 export function initSkillSession(options = {}) {
@@ -82,10 +89,42 @@ function pickSkill(session) {
   return [...pool].sort((a, b) => asked(a) - asked(b))[0];
 }
 
+// The word problems setting governs a skill's optional story twin
+// (`skill.stories`). A skill that lists stories in its own families (the
+// Word Problems topic) was chosen for its words: the setting neither drops
+// its stories nor steers it toward terse rows.
+const wordsWanted = (skill, session) =>
+  session.allowWordProblems !== false || skill.source.families?.includes("application");
+
+// Stories join a skill's own families when the skill has them and the kid's
+// setting allows them, except in a topic whose v1 stories are held (storyHold.js).
 function familiesFor(skill, session) {
   const families = [...skill.source.families];
-  if (skill.stories && session.allowWordProblems !== false) families.push("application");
+  if (skill.stories && playStoriesAllowed(skill.mode, session.allowWordProblems)) families.push("application");
   return families;
+}
+
+/** A bank row served for a skill, at the skill's level clamped to the row's band. */
+function rowQuestion(skill, item) {
+  const level = Math.min(Math.max(skill.level, item.levelRange[0]), item.levelRange[1]);
+  const q = buildBankQuestion(item, level);
+  // finalizeQuestion keeps the generator scaffold's family; the row's is the truth.
+  q.metadata.itemFamily = item.itemFamily;
+  return q;
+}
+
+/** A story from the skill's own story cell (`skill.stories`), or null when it is empty. */
+function storyQuestionFor(skill, session) {
+  const filter = { ...skill.stories, families: ["application"] };
+  const item = selectApprovedBankItem({
+    modeId: skill.mode,
+    family: "application",
+    levels: filter.levels,
+    accept: (row) => cellMatches(row, skill.mode, filter) && storyMatches(row.question || {}, skill.stories),
+    recentItemIds: session.recentBankItemIds || [],
+    allowWordProblems: true,
+  });
+  return item ? rowQuestion(skill, item) : null;
 }
 
 function bankQuestionFor(skill, session) {
@@ -93,27 +132,36 @@ function bankQuestionFor(skill, session) {
   const start = (session.familyCursor || 0) % families.length;
   for (let step = 0; step < families.length; step += 1) {
     const family = families[(start + step) % families.length];
-    const story = family === "application";
-    const filter = story ? { ...skill.stories, families: ["application"] } : skill.source;
-    const item = selectApprovedBankItem({
-      modeId: skill.mode,
-      family,
-      levels: filter.levels,
-      accept: (row) =>
-        cellMatches(row, skill.mode, filter) &&
-        (story ? storyMatches(row.question || {}, skill.stories) : withinNumbers(row.question || {}, skill.source.numbers)),
-      recentItemIds: session.recentBankItemIds || [],
-      allowWordProblems: session.allowWordProblems !== false,
-    });
-    if (!item) continue;
-    const level = Math.min(Math.max(skill.level, item.levelRange[0]), item.levelRange[1]);
-    const q = buildBankQuestion(item, level);
-    // finalizeQuestion keeps the generator scaffold's family; the row's is the truth.
-    q.metadata.itemFamily = item.itemFamily;
+    let q;
+    // A family the skill's own source does not list is its story twin.
+    if (!skill.source.families.includes(family)) {
+      q = storyQuestionFor(skill, session);
+    } else {
+      const item = selectApprovedBankItem({
+        modeId: skill.mode,
+        family,
+        levels: skill.source.levels,
+        accept: (row) => cellMatches(row, skill.mode, skill.source) && withinNumbers(row.question || {}, skill.source.numbers),
+        recentItemIds: session.recentBankItemIds || [],
+        allowWordProblems: wordsWanted(skill, session),
+      });
+      q = item ? rowQuestion(skill, item) : null;
+    }
+    if (!q) continue;
     q.nextFamilyCursor = start + step + 1;
     return q;
   }
   return null;
+}
+
+/**
+ * Is this drill question a story's turn? Only for a drill whose catalog entry
+ * has stories, when the kid's setting allows them and the topic's stories are
+ * not held: every third question of that skill.
+ */
+function drillStoryDue(skill, session) {
+  if (!skill.stories || !playStoriesAllowed(skill.mode, session.allowWordProblems)) return false;
+  return (session.skillStats?.[skill.id]?.attempts ?? 0) % DRILL_STORY_EVERY === DRILL_STORY_EVERY - 1;
 }
 
 /**
@@ -155,19 +203,25 @@ export function nextSkillQuestion(session) {
     if (q) return q;
   }
   const skill = playSkillById(pickSkill(session));
-  let q =
-    skill.source.kind === "computation"
-      ? buildComputationQuestion(skill, { avoidKeys: session.recentComputationKeys })
-      : bankQuestionFor(skill, session);
+  let q;
+  if (skill.source.kind === "computation") {
+    // A drill's story turn falls back to the drill when its story cell is empty.
+    q = (drillStoryDue(skill, session) && storyQuestionFor(skill, session)) || buildComputationQuestion(skill, { avoidKeys: session.recentComputationKeys });
+  } else {
+    q = bankQuestionFor(skill, session);
+  }
   if (q) {
     q.skillId = skill.id;
   } else {
-    // The skill's cell is not in memory (seed-only bank, offline). The screen
-    // gates on this, but a session must never hang: serve what play served
-    // before skills existed, un-stamped, so it is credited by its own cell.
+    // The skill's cell is not in memory (seed-only bank, offline, or a topic
+    // with no rows yet). No screen checks skillServable before a session, and
+    // a session must never hang: serve what play served before skills
+    // existed, un-stamped, so it is credited by its own cell. A held topic
+    // asks with stories off, so neither the bank nor the template generator
+    // hands it a story; a skill made of stories always asks with them on.
     q = generateQuestion(skill.mode, skill.level, {
       targetSubskill: skill.source.subskills?.[0],
-      allowWordProblems: session.allowWordProblems !== false,
+      allowWordProblems: skill.source.families?.includes("application") || playStoriesAllowed(skill.mode, session.allowWordProblems),
       recentBankItemIds: session.recentBankItemIds || [],
     });
     if (questionAnswerType(q) === "choice") q.choices = generateChoices(q.answer, 4, q);

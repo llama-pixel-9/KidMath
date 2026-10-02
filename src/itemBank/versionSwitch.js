@@ -1,5 +1,16 @@
 import { supabase } from "../supabaseClient.js";
-import { REVIEW_STATUS } from "./reviewStatus.js";
+import { switchMapFromRows } from "./versionRules.js";
+
+// The rules themselves live in the dependency-free versionRules.js, which the
+// native engine imports too, so iOS and the web serve by the same code.
+export {
+  DEFAULT_LIVE_VERSION,
+  LIVE_VERSIONS,
+  isServable,
+  liveVersionFor,
+  switchMapFromRows,
+  topicVisible,
+} from "./versionRules.js";
 
 /**
  * Per-skill bank version switch (plan section 10).
@@ -13,38 +24,35 @@ import { REVIEW_STATUS } from "./reviewStatus.js";
  *            students can pilot a skill without affecting anyone else
  *   v2       version-2 rows for everyone
  *
- * A topic with no v1 rows at all (Math Facts) has nothing to fall back to, so
- * it is live at v2 with no row; a row set to v1 (or preview) still hides it.
+ * A topic with no v1 rows at all has nothing to fall back to, so with no row
+ * it takes its DEFAULT_LIVE_VERSION: Math Facts v2 (live), Word Problems
+ * preview (preview viewers only, until Sai flips it). A row set to v1 hides
+ * either; preview hides it from everyone but preview viewers.
  *
  * The switch lives in the database rather than a deploy-time flag so a flip
  * (or a rollback) reaches the next session with no redeploy. Loaders read it
- * once per hydration and pass it to `isServable`.
+ * once per hydration and pass it to `isServable`. The iOS app reads the same
+ * table in Swift and injects it into the engine (KidMath.setVersionSwitch in
+ * src/engine/nativeEntry.js), which applies the same versionRules.js.
  */
 
 const PREVIEW_KEY = "kidmath:previewV2";
-const LIVE_VERSIONS = new Set(["v1", "preview", "v2"]);
-
-/**
- * The live version of a topic the switch table has no row for. Only topics
- * with no v1 rows are listed (modeGroups.spec ties this to the modes that
- * declare `v2Only`); Sai, 2026-10-01: Math Facts needs no flip to go live.
- */
-export const DEFAULT_LIVE_VERSION = Object.freeze({ mathFacts: "v2" });
 
 let warnedLoad = false;
 
 /**
- * Read the switch table. Resolves to Map(modeId -> "v1" | "preview" | "v2").
- * Empty when Supabase is unconfigured, the table is missing (migration not
- * applied yet), or the read fails: every skill then behaves as v1, which is
- * the safe direction. Never rejects.
+ * Read the switch table. Resolves to Map(modeId -> "v1" | "preview" | "v2"),
+ * or null when the read failed: Supabase unconfigured, the table missing
+ * (migration not applied yet), or a policy or network error. Never rejects.
+ * Callers that hold an earlier read keep it on null (getVersionSwitch in
+ * cloudLoader.js, and BankService on iOS), so a failed re-read never rolls a
+ * flipped skill back.
  *
  * Not paginated on purpose: the table holds one row per skill (25), far under
  * the 1,000-row cap that the item_bank reads have to page around.
  */
-export async function loadVersionSwitch() {
-  const map = new Map();
-  if (!supabase) return map;
+export async function readVersionSwitch() {
+  if (!supabase) return null;
   try {
     const { data, error } = await supabase
       .from("item_version_switch")
@@ -55,17 +63,24 @@ export async function loadVersionSwitch() {
       // "everything is v1".
       if (!warnedLoad) {
         warnedLoad = true;
-        console.warn("[itemBank] item_version_switch unavailable; serving v1 for every skill", error?.message || error);
+        console.warn("[itemBank] item_version_switch unavailable; keeping the last read (or v1 for every skill)", error?.message || error);
       }
-      return map;
+      return null;
     }
-    for (const row of data) {
-      if (row?.mode_id && LIVE_VERSIONS.has(row.live_version)) map.set(row.mode_id, row.live_version);
-    }
-    return map;
+    return switchMapFromRows(data);
   } catch {
-    return map;
+    return null;
   }
+}
+
+/**
+ * The switch table as a Map, empty when the read fails: every skill then
+ * behaves as its default (v1; Math Facts v2; Word Problems preview), which is
+ * the safe direction.
+ * Never rejects.
+ */
+export async function loadVersionSwitch() {
+  return (await readVersionSwitch()) ?? new Map();
 }
 
 /**
@@ -99,38 +114,4 @@ export function setPreviewEnabled(enabled) {
   } catch {
     /* private mode */
   }
-}
-
-function liveVersionFor(switchMap, modeId) {
-  const live = switchMap instanceof Map ? switchMap.get(modeId) : switchMap?.[modeId];
-  return LIVE_VERSIONS.has(live) ? live : DEFAULT_LIVE_VERSION[modeId] || "v1";
-}
-
-/**
- * Is a topic shown on the pickers? A topic with v1 rows always is. A v2-only
- * topic (Math Facts has nothing else) is shown where its switch serves v2:
- * to everyone at `v2` (and with no row, its default), to preview browsers at
- * `preview`, to nobody at `v1`.
- */
-export function topicVisible(modeId, switchMap, { v2Only = false, preview = false } = {}) {
-  if (!v2Only) return true;
-  const live = liveVersionFor(switchMap, modeId);
-  return live === "v2" || (live === "preview" && preview);
-}
-
-/**
- * Should this normalized bank item be served, given the switch map and
- * whether the viewer is a preview user?
- *
- * Approved rows only. A row's `version` null counts as 1 (every v1 row and
- * every bundled item predates the column being meaningful). A skill absent
- * from the map is v1 (a v2-only topic: v2), so an empty map serves exactly
- * what the app served before the switch existed, plus Math Facts.
- */
-export function isServable(item, switchMap, { preview = false } = {}) {
-  if (!item || item.reviewStatus !== REVIEW_STATUS.APPROVED) return false;
-  const version = item.version == null ? 1 : Number(item.version);
-  const live = liveVersionFor(switchMap, item.modeId);
-  const wanted = live === "v2" || (live === "preview" && preview) ? 2 : 1;
-  return version === wanted;
 }

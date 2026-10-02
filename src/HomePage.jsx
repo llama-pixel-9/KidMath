@@ -85,9 +85,6 @@ const fadeUp = {
   transition: { duration: 0.5, ease: "easeOut" },
 };
 
-// Topics every visitor sees (Math Facts, the one v2-only topic, is live too).
-const MODE_COUNT = MODE_IDS.length;
-
 // Stable colour index per mode so a card keeps its tint across renders.
 // The aviary rule: the four tile tints alternate in reading order.
 const COLOR_INDEX = Object.fromEntries(MODE_IDS.map((id, i) => [id, i]));
@@ -111,7 +108,7 @@ const STEPS = [
   {
     icon: Settings,
     title: "Pick your math type",
-    desc: `Choose from ${MODE_COUNT} math skills — difficulty adapts to you!`,
+    desc: (count) => `Choose from ${count} math skills — difficulty adapts to you!`,
   },
   {
     icon: MousePointerClick,
@@ -219,6 +216,8 @@ export default function HomePage() {
   // "Explore more" so a kindergartner isn't handed decimals on tile one.
   const hidden = useHiddenTopics();
   const { mainGroups, moreGroups } = useMemo(() => groupsForGrade(kid?.grade, hidden), [kid?.grade, hidden]);
+  // Topics this visitor sees: a v2-only topic its switch hides is not counted.
+  const modeCount = MODE_IDS.length - hidden.size;
   const [showMore, setShowMore] = useState(false);
 
   // Kid-facing mastery: which skills in a mode are solid, from the practice
@@ -340,7 +339,7 @@ export default function HomePage() {
             Math that feels like play.
           </p>
           <p className={`mt-3 text-lg ${theme.textSecondary} max-w-md mx-auto`}>
-            {MODE_COUNT} skills from counting to fractions, decimals, and shapes
+            {modeCount} skills from counting to fractions, decimals, and shapes
             — adaptive practice with star rewards, no timers, no pressure.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -374,7 +373,7 @@ export default function HomePage() {
           className={`text-center ${theme.textSecondary} mb-10`}
           {...fadeUp}
         >
-          {MODE_COUNT} skills, grouped by topic — tap any one to start.
+          {modeCount} skills, grouped by topic — tap any one to start.
         </motion.p>
 
         <div className="space-y-10">
@@ -437,7 +436,7 @@ export default function HomePage() {
                   <h3 className={`text-lg font-semibold font-display ${theme.textPrimary}`}>
                     {s.title}
                   </h3>
-                  <p className={`mt-1 text-sm ${theme.textSecondary}`}>{s.desc}</p>
+                  <p className={`mt-1 text-sm ${theme.textSecondary}`}>{typeof s.desc === "function" ? s.desc(modeCount) : s.desc}</p>
                 </motion.div>
               );
             })}

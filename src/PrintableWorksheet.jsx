@@ -6,7 +6,6 @@ import { MODE_IDS } from "./modes";
 import { loadTopic } from "./itemBank/loadTopic.js";
 import { activeKidGrade } from "./kidProfiles.js";
 import { gradeIndex } from "./gradeSeed.js";
-import { loadAllowWordProblemsSync } from "./userPreferences.js";
 import { useTheme } from "./useTheme";
 import { generateWorksheetRun, worksheetCapacity } from "./worksheets/generateWorksheet.js";
 import { PROBLEM_TYPES } from "./worksheets/layouts.js";
@@ -48,13 +47,13 @@ function initialGrade() {
   return GRADES.includes(last) ? last : null;
 }
 
-// Last worksheet choice, else the household's play preference. This screen
-// never WRITES that preference: printing a drill must not switch word problems
-// off in the kid's games.
+// Last worksheet choice, else practice. The play setting for word problems
+// is not read here (it is on by default since 2026-10-02, and turning stories
+// on in play must not turn printed sheets into mixed ones) and never written:
+// printing a drill must not switch word problems off in the kid's games.
 function initialProblemType() {
   const last = stored(PROBLEM_TYPE_KEY);
-  if (PROBLEM_TYPES.includes(last)) return last;
-  return loadAllowWordProblemsSync() ? "mixed" : "practice";
+  return PROBLEM_TYPES.includes(last) ? last : "practice";
 }
 
 // Deep links: /worksheets?skill=<id>&type=mixed&sheets=2&key=0&go=1 — what the

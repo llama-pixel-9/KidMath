@@ -164,7 +164,7 @@ final class SessionViewModel: ObservableObject {
             let session = try engine.createSession(
                 mode: modeId,
                 sessionSize: sessionSize,
-                options: ["savedProgress": savedProgress]
+                options: ["savedProgress": savedProgress, "allowWordProblems": WordProblemsSetting.isOn()]
             )
             self.session = session
             self.isFledgingRun = false
@@ -193,6 +193,10 @@ final class SessionViewModel: ObservableObject {
         ) else { return false }
         let flight = options["challenge"] as? Bool ?? false
         options["savedProgress"] = savedProgress
+        // A chosen skill or "Larkit picks" serves the skill's story questions
+        // unless a grown-up switched word problems off (web: MathExplorer).
+        // The engine still holds back the topics in src/skills/storyHold.js.
+        options["allowWordProblems"] = WordProblemsSetting.isOn()
         do {
             let rule = engine.fledgingFlightRule()
             let size = flight ? rule.questions : baseSessionSize

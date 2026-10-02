@@ -19,6 +19,12 @@ struct KidMathApp: App {
                 .environment(\.theme, app.theme)
                 .preferredColorScheme(app.theme.isDark ? .dark : .light)
                 .onOpenURL { url in
+                    // kidmath://preview?v=2 (or v=1): the v2 preview marker,
+                    // as the web's ?preview=v2 link. Anything else is auth.
+                    if BankService.handlePreviewURL(url) {
+                        app.bankService?.applyPreview()
+                        return
+                    }
                     app.supabase.handleAuthCallback(url)
                 }
         }

@@ -185,6 +185,7 @@ Reruns also overwrite same-cell draft ids — be skip-existing aware.
   with the web session loop.
 - **iOS widget `@State` resets via `.id(viewModel.questionKey)`** — without it,
   a widget keeps the previous question's state.
+- **Word problems are on by default** (Sai, 2026-10-02) on web and iOS; existing signed-in rows (seeded off) stay off until data migration `20261002183100` is applied with Sai's go-ahead. The v1 stories of the four held topics (`STORIES_HELD_MODE_IDS` in `src/skills/storyHold.js`: addition, subtraction, barModels, numberBonds) stay out of play until each topic's v2 stories go live, then that topic's v1 stories retire and it leaves the list (`?item=` still pins any row).
 - **Engagement state is localStorage-only (v1)** behind a swappable store API;
   cloud sync is a future migration, so don't hand-roll persistence around it.
 - **Progress is per kid.** `progress` / `progress_item_stats` rows carry `kid_id`
@@ -207,7 +208,14 @@ Reruns also overwrite same-cell draft ids — be skip-existing aware.
 
 Simulator flags (argument-domain `UserDefaults`, via `simctl launch io.larkit.app`):
 `-autostartMode <mode>` jumps straight into a mode · `-kidmath-theme <id>` forces
-a theme · `-showPaywall 1` opens the paywall.
+a theme · `-showPaywall 1` opens the paywall · `-previewV2 1` makes the device a
+v2 preview viewer for that launch (on a real device, open `kidmath://preview?v=2`;
+`?v=1` stops it — the web's `?preview=v2`/`?preview=v1`): topics at `preview` in
+the item bank version switch serve their v2 rows. iOS applies the switch through
+the engine (`KidMath.setVersionSwitch`, same `versionRules.js` as the web); a
+signed-in kid's session start re-reads it at most every 30s, so a flip lands
+between sessions. Don't approve a v2 row until kids are on an iOS build that
+has this: older builds serve every v2 row as v1.
 
 Web: `/play/<mode>?item=<itemId>` pins one bank row (any status) as every
 question in the session — the "Play" link in the /admin review queue. The

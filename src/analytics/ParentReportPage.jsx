@@ -5,6 +5,7 @@ import { fetchKids, activeKidId } from "../kidProfiles";
 import { loadProgressSummary } from "../progressStore";
 import { loadSessions, loadSessionsSync } from "./sessionLog.js";
 import { buildReport, headline } from "./reportModel.js";
+import { useHiddenTopics } from "../hooks/useHiddenTopics.js";
 
 /**
  * /report — the parent report. One page answering, in grade language:
@@ -242,7 +243,13 @@ export default function ParentReportPage() {
     };
   }, [user, loading, kidId]);
 
-  const report = useMemo(() => buildReport(sessions, { days, progressByMode: progress }), [sessions, days, progress]);
+  // A topic the version switch hides from this browser stays out of the
+  // report (buildReport itself stays pure: it is meant to run server-side).
+  const hidden = useHiddenTopics();
+  const report = useMemo(
+    () => buildReport(hidden.size ? sessions.filter((s) => !hidden.has(s.mode)) : sessions, { days, progressByMode: progress }),
+    [sessions, days, progress, hidden]
+  );
   const kid = kids.find((k) => k.id === kidId);
   const kidName = kid?.first_name;
   const t = report.totals;

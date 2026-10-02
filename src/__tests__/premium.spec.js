@@ -3,13 +3,14 @@ import { FREE_MODE_IDS, entitlementIsActive, isFreeMode, paywallEnabled } from "
 import { MODE_IDS } from "../modes";
 
 // The web premium split (pricing decision 2026-07-21): four operations +
-// counting free forever, Math Facts too since 2026-10-01; every other mode
+// counting free forever, Math Facts too since 2026-10-01, Word Problems and
+// Multi-Digit Math since 2026-10-02; every other mode
 // premium. These tests mirror the iOS suite's StoreTests so both platforms
 // enforce the same rules.
 describe("free tier", () => {
-  it("keeps exactly the four operations, counting and Math Facts free", () => {
+  it("keeps exactly the four operations, counting, Math Facts, Word Problems and Multi-Digit Math free", () => {
     expect([...FREE_MODE_IDS].sort()).toEqual(
-      ["addition", "counting", "division", "mathFacts", "multiplication", "subtraction"].sort()
+      ["addition", "counting", "division", "mathFacts", "multiDigit", "multiplication", "subtraction", "wordProblems"].sort()
     );
   });
 

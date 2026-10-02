@@ -145,9 +145,9 @@ describe("the Word Problems topic", () => {
     expect(pond.signpost.groups).toContain("stories");
   });
 
-  it("is not free (a pricing change waits on Sai)", () => {
-    expect(FREE_MODE_IDS).not.toContain("wordProblems");
-    expect(isFreeMode("wordProblems")).toBe(false);
+  it("is free on both platforms (Sai approved the list's recommendation, 2026-10-02)", () => {
+    expect(FREE_MODE_IDS).toContain("wordProblems");
+    expect(isFreeMode("wordProblems")).toBe(true);
   });
 
   it("has no bank rows yet", () => {

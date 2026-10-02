@@ -17,6 +17,7 @@ import { hintContainsAnswer, validateHint } from "../hints/hintSchema.js";
 import { subskillLabel } from "../analytics/subskillLabels.js";
 import { gradeSpanFor } from "../engagement/gradeSpans.js";
 import { REGIONS } from "../world/regions.js";
+import { FREE_MODE_IDS, isFreeMode } from "../premium.js";
 import { CALC_ROWS, HINT_EXAMPLE_PROMPTS, calcBankItems, evaluate, parsePrompt, subtractColumns, tradeCount } from "../multiDigit/calcItems.js";
 
 /**
@@ -73,6 +74,11 @@ describe("the Multi-Digit Math topic", () => {
     expect(isServable(row, new Map())).toBe(false);
     expect(isServable(row, new Map(), { preview: true })).toBe(true);
     expect(globalThis.KidMath.hiddenTopics()).toContain("multiDigit");
+  });
+
+  it("is free on both platforms, like the Grade 2 computing it sits beside (decision 2)", () => {
+    expect(FREE_MODE_IDS).toContain("multiDigit");
+    expect(isFreeMode("multiDigit")).toBe(true);
   });
 
   it("has a practice spot on the island (the Pond signpost)", () => {

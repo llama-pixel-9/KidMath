@@ -62,7 +62,7 @@ or one per listed variant. This file covers:
 {
   "id": "wp-g2-take-from-start",
   "track": "item",
-  "mode_id": "addition",
+  "mode_id": "wordProblems",
   "grade": "2",
   "title": "Take from, start unknown: story in words, typed answer",
   "problem_type": "Take from, start unknown",
@@ -89,7 +89,7 @@ or one per listed variant. This file covers:
     "state": null,
     "app": "today",
     "models": 1,
-    "levelRange": [7, 10]
+    "levelRange": [4, 6]
   }
 }
 ```
@@ -100,7 +100,7 @@ or one per listed variant. This file covers:
 |---|---|---|
 | `id` | yes | Kebab case: a short prefix for the skill, the grade, then the type, plus what the kid sees or does when two rows share a type (`wp-g2-take-from-start`, `wp-g2-tape-missing-part`, `wp-g2-box-middle`, `wp-g2-choose-equation`). Must match `^[a-z0-9]+(-[a-z0-9]+)*$`. **Never rename a loaded id.** Approval is keyed on it, and a renamed row loads as a new draft while the old one stays. |
 | `track` | yes | `"item"`. `"fluency"` is the fact-fluency track only. |
-| `mode_id` | yes | The topic the models will be filed under. It decides what a version-switch flip replaces (see SKILL.md). Settle it before approval, because a reload cannot change it afterwards. The `addition` in the example is only an illustration. |
+| `mode_id` | yes | The topic the models will be filed under. It decides what a version-switch flip replaces (see SKILL.md). Settle it before approval, because a reload cannot change it afterwards. Story rows go to `wordProblems` (Sai, 2026-10-02). |
 | `grade` | yes | `"K"` to `"5"`. |
 | `title` | yes | One line in our words: type, then what the kid sees and does. This is what the Standards tab lists. |
 | `problem_type` | no, but always fill it | The plain name from the taxonomy table. |
@@ -136,7 +136,7 @@ or one per listed variant. This file covers:
 | `app` | `"today"`, or `"needs <the widget or figure work>"`. |
 | `models` | How many models are planned. The default is 1. Use more than 1 only for number-range variants, listed in `variants`. |
 | `variants` | Only when `models > 1`, e.g. `["no regrouping", "one regroup"]`. A variant never changes type, picture, format or steps; that would be a new row. |
-| `levelRange` | The app levels the models fill into. Set it explicitly, to the band the target skill's filter reads. The Grade 2 default is 4–6, which is what Bar Models reads. Grade 2 add/sub story filters read 7–10, and the Grade 1 two-digit story filters read 4–10, so check that the rows do not land on Grade 1 sheets. |
+| `levelRange` | The app levels the models fill into. Set it explicitly, to the band the target skill's filter reads. Grade 2 is 4–6 (`src/bands.js`), which is what Bar Models and the Word Problems topic's Grade 2 skills read; a new topic uses its grade's band. In the old topics, Grade 2 add/sub story filters read 7–10 and the Grade 1 two-digit story filters read 4–10, so check that rows filed there do not land on Grade 1 sheets. |
 
 ## From row to model
 

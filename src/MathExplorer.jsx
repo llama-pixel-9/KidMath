@@ -56,6 +56,7 @@ import { loadTopic } from "./itemBank/loadTopic.js";
 import { loadSessionsSync } from "./analytics/sessionLog.js";
 import { GRADE_UP } from "./skills/topicState.js";
 import { sessionLabel as skillSessionLabel, sessionOptionsFor, settleSkillSession } from "./skills/flow.js";
+import { storiesAlwaysOn } from "./skills/play.js";
 import SkillStanding from "./play/SkillStanding.jsx";
 import { FIGURE_COLORS, useAnswerKeys, KeyHint } from "./components/kit";
 import { saveProgress, loadProgress, loadProgressSync, mergeLocalToCloud } from "./progressStore";
@@ -502,27 +503,38 @@ function SettingsPanel({ mode, allowWordProblems, onAllowWordProblemsChange, cal
           ← Change skill or topic
         </button>
 
-        <div className="mb-5 flex items-center justify-between gap-3 rounded-2xl border border-ink/10 bg-cream px-4 py-3">
-          <div>
-            <p className={`text-sm font-bold ${theme.textPrimary}`}>Allow Word Problems</p>
+        {storiesAlwaysOn(mode) ? (
+          // This topic's stories are its skills, served whatever the setting:
+          // a switch here would only restart the session (storiesAlwaysOn).
+          <div className="mb-5 rounded-2xl border border-ink/10 bg-cream px-4 py-3" data-testid="word-problems-always-on">
+            <p className={`text-sm font-bold ${theme.textPrimary}`}>Word Problems</p>
             <p className={`text-xs ${theme.textMuted}`}>
-              Story questions for stronger readers.
+              Always on in this topic. You can turn them on or off in any other topic.
             </p>
           </div>
-          <button
-            className={`relative w-12 h-7 rounded-full transition-colors cursor-pointer ${
-              allowWordProblems ? "bg-teal" : "bg-ink/20"
-            }`}
-            onClick={() => onAllowWordProblemsChange(!allowWordProblems)}
-            aria-label={allowWordProblems ? "Disable word problems" : "Enable word problems"}
-          >
-            <span
-              className={`absolute top-0.5 left-0.5 w-6 h-6 bg-white rounded-full shadow transition-transform ${
-                allowWordProblems ? "translate-x-5" : ""
+        ) : (
+          <div className="mb-5 flex items-center justify-between gap-3 rounded-2xl border border-ink/10 bg-cream px-4 py-3">
+            <div>
+              <p className={`text-sm font-bold ${theme.textPrimary}`}>Allow Word Problems</p>
+              <p className={`text-xs ${theme.textMuted}`}>
+                Story questions for stronger readers.
+              </p>
+            </div>
+            <button
+              className={`relative w-12 h-7 rounded-full transition-colors cursor-pointer ${
+                allowWordProblems ? "bg-teal" : "bg-ink/20"
               }`}
-            />
-          </button>
-        </div>
+              onClick={() => onAllowWordProblemsChange(!allowWordProblems)}
+              aria-label={allowWordProblems ? "Disable word problems" : "Enable word problems"}
+            >
+              <span
+                className={`absolute top-0.5 left-0.5 w-6 h-6 bg-white rounded-full shadow transition-transform ${
+                  allowWordProblems ? "translate-x-5" : ""
+                }`}
+              />
+            </button>
+          </div>
+        )}
 
         <div className="mb-5 flex items-center justify-between gap-3 rounded-2xl border border-ink/10 bg-cream px-4 py-3">
           <div>

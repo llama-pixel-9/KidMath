@@ -47,12 +47,17 @@ masterySnapshot, challenge })`. Without skill options it is the ladder session.
   own), family rotation, recent-item avoidance, word-problems preference.
   Gone inside a skill session: promotion/demotion. `session.level` just
   follows the skill (altitude bonus, log columns).
-- The word problems setting governs only a skill's `stories` (its optional
-  story twin). The Word Problems topic's story skills list `application` in
-  their OWN `source.families` (`stories: null`), so choosing one serves its
-  stories whatever the setting, on web and iPhone (Sai, Oct 2). No other
-  topic may do that (`wordProblems.spec` guards it): their stories stay with
-  the setting.
+- In a skill session the word problems setting adds a skill's `stories`
+  (its optional story twin) and, when off, steers the skill's other rows
+  toward terse prompts (`preferTerse`) and asks an empty cell's generator
+  for no story; the plain session swaps `application` for `procedural` when
+  it is off. The Word Problems topic's story skills list `application` in
+  their OWN `source.families` (`stories: null`), so none of that applies to
+  them: choosing one serves its stories whatever the setting, on web and
+  iPhone (Sai, Oct 2). The in-session gear shows "Always on in this topic"
+  there instead of the switch (`storiesAlwaysOn(mode)`), which would only
+  restart the session. No other topic may list stories in its own families
+  (`wordProblems.spec` guards it): their stories stay with the setting.
 - Worded questions are approved bank rows from the skill's own cell
   (`selectApprovedBankItem({levels, accept})`); drills are built to the claim
   (`computationPlay.js`, answers ≥100 typed on the number pad). A cell missing

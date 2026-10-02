@@ -99,6 +99,19 @@ export function topicGrades(mode) {
   return GRADES.filter((grade) => present.has(grade));
 }
 
+/**
+ * Does choosing this topic serve stories whatever the word problems setting?
+ * True for a topic whose skills list `application` in their own source
+ * families (Word Problems): the setting does not steer those skills
+ * (`wordsWanted` in session.js), and the topic's other skill serves bare
+ * number sentences, so the setting changes nothing here. The in-session gear
+ * shows a plain line instead of the switch, which would only restart the
+ * kid's session.
+ */
+export function storiesAlwaysOn(mode) {
+  return PLAY_SKILLS.some((skill) => skill.mode === mode && skill.source.families?.includes("application"));
+}
+
 /** Where a kid of `grade` starts in a topic: the nearest topic grade at or
  * below theirs, else the topic's lowest (a kindergartner opening Fractions). */
 export function clampGrade(mode, grade) {

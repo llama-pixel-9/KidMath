@@ -13,7 +13,7 @@ import { FULL_ITEMS } from "../itemBank/fullBank.js";
 import { getBankItems, setBankItems } from "../itemBank/index.js";
 import { FREE_MODE_IDS, isFreeMode } from "../premium.js";
 import { PLAY_ONLY_SKILLS, TOPIC_LABELS, WORKSHEET_SKILLS } from "../skills/catalog.js";
-import { playSkills, skillsForPlay, topicGrades } from "../skills/play.js";
+import { playSkills, skillsForPlay, storiesAlwaysOn, topicGrades } from "../skills/play.js";
 import { nextSkillQuestion } from "../skills/session.js";
 import { CONCEPTS, MODE_TITLES } from "../hints/concepts.js";
 import { hintFor } from "../hints/index.js";
@@ -376,6 +376,13 @@ describe("the Grade 2 skills", () => {
     expect(playSkills().filter((s) => s.source.families?.includes("application")).map((s) => s.id).sort()).toEqual(
       skills.filter((s) => s.source.subskills[0] !== "missingNumber").map((s) => s.id).sort()
     );
+  });
+
+  it("make the setting a no-op in this topic only, so the gear shows a plain line there, not a switch that restarts the session", () => {
+    expect(storiesAlwaysOn("wordProblems")).toBe(true);
+    for (const mode of MODE_IDS.filter((id) => id !== "wordProblems")) {
+      expect(storiesAlwaysOn(mode), mode).toBe(false);
+    }
   });
 
   it("cite Sai's codes, long form, in every loaded framework", () => {

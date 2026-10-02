@@ -229,7 +229,8 @@ lines are the exceptions. Leave them out of every writer excerpt.
   - Never put misleading wording, two steps and regrouping in one item.
   - A state line may lift the range when the state asks for it (TX 2.4C,
     multi-step stories within 1,000). Only the numbers grow; the other limits
-    hold, and the line goes to Sai as a numbered decision.
+    hold. Every kid of the grade sees the line, so it is proposed as its own
+    skill, last in the grade (Coverage, "No state filter").
 - **Computation rows** use the proposed rule in taxonomy section 6 (a second
   trade or a trade across a zero is its own hard row). It waits on Sai's
   answer to decision 10 on the Grade 2 computation list; update this section
@@ -276,23 +277,46 @@ lines are the exceptions. Leave them out of every writer excerpt.
   computation, the equal sign, and the state ranges), and say on the page
   which grades the pass covers.
 - **Common Core wording is the base.**
-  - A state line exists only where that state's test asks the question
-    differently: a different item type, range or task (Sai, 2026-10-01).
-  - Vocabulary differences are never a state line. `stateWords.json` swaps the
+  - A state line exists only where that state asks the question differently:
+    a different item type, range or task (Sai, 2026-10-01).
+  - Keep a state's line even when only one state asks for it (Sai,
+    2026-10-02: "err on the side of keeping the states recommendation").
+  - Vocabulary differences are never a state line. `stateWords.json` maps the
     vocabulary per state, for example "strip diagram", "number sentence" and
-    money notation.
+    money notation, as backend data. Admin preview and
+    `fill(model, { state })` can use it, but bank items are filled with no
+    state and play reads no state, so every kid sees the Common Core word. A
+    hint may name the state word once, using "it" ("Some classes call it a
+    strip diagram").
 - **When a grade has no state test.** TX, VA and GA start state tests at Grade
   3, and FL K-2 uses a vendor's adaptive test, so no Grade 2 state test can
   justify a line.
-  - Resting a line on the state's Grade 2 standard plus its Grade 3 test widens
-    Sai's rule. Put it to Sai as a numbered decision on the review page, naming
-    the rows it would add. Both Grade 2 add/subtract lists do (word problems
-    decision 10, computation decision 11).
-- **State lines need a per-state filter** before they can serve; the app
-  cannot yet limit an item to one state. Keep them as drafts until it ships.
+  - A line resting on the state's standard for that grade is kept (Sai,
+    2026-10-02). It does not go to Sai as a decision to widen the rule; name
+    the standard in the row's `why`.
+- **No state filter** (Sai, 2026-10-02, 17:54 UTC). We collect no state from
+  kids or parents, and no per-state filter will be built. State codes (TX, FL,
+  VA, GA) are backend tags that feed the Standards tab and coverage. Every
+  approved row, state lines included, reaches every kid of its grade and
+  skill.
+  - `state.asks` says what the state asks, never which kids the row serves
+    (never "Serve to X kids only").
+  - Write a state line so any kid of the grade can answer it.
+  - A row whose numbers go past Common Core's range for the grade is proposed
+    to Sai as its own skill, listed last in the grade. Say on the review page
+    that, like every skill in a grade, it counts toward the grade: a grade is
+    complete only when every skill is mastered, and the Fledging Flight draws
+    from every skill (`summarize` in `src/skills/mastery.js`, `gradeUpStatus`
+    in `src/skills/topicState.js`). The skill cites only its rows' codes
+    (`ccss: []` when no Common Core code fits).
+  - A move Common Core does not teach at that grade must be answerable
+    without the hint, because mastery does not count a right answer reached
+    with the hint (`if (attempt.hint && attempt.correct) return false` in
+    `mastery.js`). Put the meaning in the item, for example keys labelled
+    "= (equal)" and "≠ (not equal)", rather than relying on the bulb.
 - **A state line is its own row, not a variant**, even when only the range
-  differs: codes and the state filter live on a row, and a variant can't
-  carry them. Say so on the page.
+  differs: codes live on a row, and a variant can't carry them. Say so on the
+  page.
 - **Equal-sign items** (true/false, = or ≠, a sum on both sides) go on the
   computation list, not a story list.
 - **Leave out of a story list**: fact fluency, bare computation (its own
@@ -302,8 +326,8 @@ lines are the exceptions. Leave them out of every writer excerpt.
   2.OA.A.1. Read a state's range in its official text, not our one-line
   summary: Texas 2.4C runs stories to 1,000, Virginia 2023 caps each number
   added or subtracted at 100 (not the total), and Georgia 2.NR.2.3 names
-  two-digit numbers. A wider state range is a state line for Sai, not the
-  default.
+  two-digit numbers. A wider state range is a state line, not the default.
+  It is kept, and because every kid sees it, it goes in its own skill.
 
 ## Wording and kid-safe
 
@@ -327,11 +351,19 @@ Every rule `item-authoring` enforces applies. On top of those:
   - "Equation" appears only in choose-the-equation rows, and only if the state
     tests use the word (Sai's condition). For a grade with no state test, ask
     Sai on the review page which word those rows use.
-  - `stateWords` turns "equation" into "number sentence" for TX and VA in K-2.
+  - `stateWords` maps "equation" to "number sentence" for TX and VA in K-2,
+    as backend data. Play applies no state words, so every kid reads
+    "equation"; a hint may name "number sentence" once.
   - **No check catches these words** (`TEACHER_JARGON` lacks them), so read for
     them yourself.
 - **Clutter.** No tail instructions ("Sketch the bar if it helps"), no
   fragments, no race words in a compare ("how far ahead").
+- **Hints never hold the key.** A nudge, step or feedback line never states
+  the answer; the v2 `hintNoAnswer` check in `src/itemBank/qc/checks.js`
+  fails it. Only the worked solution may name it.
+  - For an estimate row, the steps say to work the exact answer, then ask
+    which ten it is closest to, and stop.
+  - Never write "=" or "≠" in a hint line of a row whose key is that sign.
 - **Objects and counts.**
   - Use objects kids care about, at counts one kid could own.
   - `fill` ignores the context table's counts (that is how v1 shipped "51 license plates"), so constrain each object slot: `obj.count_one_kid != null && <total> <= sum(drop(obj.count_one_kid, 1))`.
@@ -414,7 +446,8 @@ that each re-read the repo.
   `multiDigit`). Installed iOS builds ignore the switch and serve every
   approved row until the iOS version filter (draft PR #150) ships. Agree with
   Sai where a skill's rows will serve.
-- **No per-state filter.** State lines stay drafts until one ships.
+- **No per-state filter, by decision** (Sai, 2026-10-02): state lines are
+  approved and served like any row.
 - **Formats and figures.**
   - True/false and multiselect cannot be written as models yet, and two-part
     answers don't exist. There is no ≠ key.
@@ -439,9 +472,12 @@ that each re-read the repo.
   (Sai settled the topic on 2026-10-02: one Word Problems topic for every
   story; multiply and divide stories join later as their own skills).
   42 rows: rows 1-33 as sent on 2026-10-01 (numbering frozen), 34-35 the
-  two-step bare and picture rows, 36-42 state lines past 100.
+  two-step bare and picture rows, 36-42 state lines past 100, proposed as
+  their own skill (`biggerNumberStories`, decision 4). Every kid sees state
+  lines.
 - **Computation**, slug `g2-addsub-calc`, ids `calc-g2-*`, proposed topic
-  `multiDigit` (its decision 1). 35 rows.
+  `multiDigit` (its decision 1). 35 rows. Row 35 proposes
+  `tenOrHundredTo1200` as its own skill (its decision 11).
 - **Files**, in `/mnt/project-files/item-skill/`: `<slug>-blueprints.md` (the
   review page, numbered in file order) and `.json`, built by
   `<slug>-build.mjs`; `<slug>-check.mjs` runs the mechanical checklist (shape,
@@ -452,11 +488,13 @@ that each re-read the repo.
   is in `archive/`; the research behind both lists is in `research/`.
 - **Sent to Sai on 2026-10-02**, waiting for answers. No row is in the repo or
   the database yet, and no model is written.
-- **v1 stories.** Sai asked on 2026-10-02 to retire the v1 word problems. The
-  scope and the options are on the word problem page (decision 9). Retire
-  only on Sai's typed go, and never so that the template generator fills a
-  story cell: the plan declares the topic's families instead, as Math Facts
-  does.
+- **v1 stories.** Sai settled decision 9 on 2026-10-02 (13:10 UTC): each
+  topic's v1 stories retire only when its v2 stories go live; nothing is
+  retired now. The all-at-once retire (draft PR #152) was closed unmerged;
+  reuse its pieces topic by topic. The one wrong-key story
+  (`addition-app-433`) was retired on its own at Sai's go (PR #153, merged).
+  Retire only on Sai's typed go, and never so that the template generator
+  fills a story cell.
 - **Before any model is written** (both pages list these): the topics, the
   `blueprintId` wiring, the harness PR from step 3, the structure check entry
   for each new `structureType`, and the disc mat in the duplicate check.

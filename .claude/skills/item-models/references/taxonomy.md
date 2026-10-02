@@ -318,6 +318,11 @@ these rows (its decision 1). Until Sai answers, treat the topic as proposed.
 | `estimateSumDifference` | Best estimate (VA) | easy | About how much is 57 + 21? [80] |
 | `equalOrNotEqual` | = or ≠ (VA) | moderate | 47 + 25 ○ 62 [≠] |
 
+Every kid sees the two VA rows (no state filter, Sai 2026-10-02). The
+estimate's hint leads to the exact answer and asks for the closest ten
+without naming it. The ≠ row labels its keys in words ("= (equal)" and
+"≠ (not equal)"), and its hint never writes = or ≠.
+
 ### Difficulty (computation rows): proposed
 
 Decision 10 on the Grade 2 computation list asks Sai to approve this rule.

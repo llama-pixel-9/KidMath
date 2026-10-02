@@ -132,7 +132,7 @@ or one per listed variant. This file covers:
 | `variantMistakes` | `{ "<variant>": [tags] }` when a variant's slips differ from the row's, e.g. a no-regrouping variant, where a carry slip equals the key. |
 | `variantExamples` | `{ "<variant>": "<example>" }` for a variant whose slips differ, so Sai sees one. |
 | `why` | One line naming what justifies the row: the standard's own clause (paraphrased), the Table 1 type, or a test format seen in released items. It is never "for variety". |
-| `state` | `null` for a Common Core row. For a state line, `{ "framework": "tx", "asks": "<what this state's test or standard asks that Common Core does not>" }`; `framework` may be a list (`["va", "ga"]`) when two states ask the same. A state line is its own row even when only the range differs, because its codes and the state filter live on the row. |
+| `state` | `null` for a Common Core row. For a state line, `{ "framework": "tx", "asks": "<what this state's test or standard asks that Common Core does not>" }`; `framework` may be a list (`["va", "ga"]`) when two states ask the same. A state line is its own row even when only the range differs, because its codes live on the row. `asks` says what the state asks, never which kids the row serves: every approved row reaches every kid of its grade (no state filter, Sai 2026-10-02). |
 | `app` | `"today"`, or `"needs <the widget or figure work>"`. |
 | `models` | How many models are planned. The default is 1. Use more than 1 only for number-range variants, listed in `variants`. |
 | `variants` | Only when `models > 1`, e.g. `["no regrouping", "one regroup"]`. A variant never changes type, picture, format or steps; that would be a new row. |
@@ -198,9 +198,10 @@ Answer with: "approve all", "approve all but 4, 9", "edit 7: …", "strike 12".
 
 ## Decisions for you
 1. <question> I recommend <x> because <one line>. (yes / no)
-(Always include, where they apply: state lines resting on a standard, not a
-test; a model row standing in for a picture row; which word choose-the-equation
-rows use where no state test settles it.)
+(Always include, where they apply: a state line that adds a skill, which
+counts toward the grade like every skill in it; a model row standing in for a
+picture row; which word choose-the-equation rows use where no state test
+settles it.)
 
 ## Coverage at a glance
 | Problem type | Story | Picture | Model | Bare | Two-step |
@@ -217,7 +218,10 @@ Why each row: 1. <why>. 2. <why>. …
 App work: rows <n, m> need <widget>.
 
 ## State lines
-| # | State | What its test asks differently | Example [key] |
+Every kid of the grade sees these rows (no state filter). Rows past Common
+Core's range: proposed skill <name>, last in the grade, which counts toward
+the grade.
+| # | State | What the state asks differently | Example [key] |
 Why each row: <n>. <why>. …
 
 ## Not planned, and why
@@ -280,10 +284,11 @@ Run every item. A failed item goes back to drafting, not to Sai with a caveat.
    - Variants that regroup show their own tier.
    - No two-step row uses a hard type, and no row stacks misleading wording,
      two steps and regrouping.
-8. **Numbers and codes.** Every row is inside the standard's range, and two-step
-   rows follow the two-step limits. Story rows carry every story code (TX 2.4C
-   and 2.7C on all of them). Bare rows carry the bare codes from SKILL.md,
-   never the word-problem codes.
+8. **Numbers and codes.** Every row is inside the standard's range (a state
+   line past it sits in its own skill), and two-step rows follow the two-step
+   limits. Story rows carry every story code (TX 2.4C and 2.7C on all of
+   them). Bare rows carry the bare codes from SKILL.md, never the word-problem
+   codes.
 9. **Examples.** Each example:
    - is our own wording, with no textbook or test item paraphrased
    - shares no number set and no sentence frame with the verbatim Table 1 and
@@ -299,12 +304,17 @@ Run every item. A failed item goes back to drafting, not to Sai with a caveat.
    - has its key computed and checked by hand
 10. **Formats exist or are flagged.** Every row the app cannot show today says
     `app: "needs …"`, and the page groups that work.
-11. **State lines are earned.** Each one names the state and what its test asks
-    that Common Core does not.
-    - A line resting on a standard because the grade has no state test goes to
-      Sai as a numbered decision.
-    - A vocabulary change is not a state line: it belongs in
-      `src/content/stateWords.json`.
+11. **State lines are earned.** Each one names the state and what its test or
+    standard asks that Common Core does not.
+    - Each state line works for any kid of the grade, because every kid sees
+      it. A range past Common Core's goes in its own skill, last in the
+      grade. A move Common Core does not teach is answerable from the item
+      itself, not only the hint.
+    - A line is kept even when only one state asks for it, and so is a line
+      resting on a standard because the grade has no state test (Sai,
+      2026-10-02). Neither goes to Sai as a decision to widen the rule.
+    - A vocabulary change is not a state line: it is backend data in
+      `src/content/stateWords.json`, which play does not apply.
 12. **Exclusions are stated.** The page says what was left out and why: fact
     fluency, the other list (a story list leaves out computation and
     equal-sign items; a computation list leaves out stories and their box

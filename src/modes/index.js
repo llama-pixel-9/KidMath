@@ -25,6 +25,7 @@ import decimalOps from "./decimalOps";
 import volumeCoordinates from "./volumeCoordinates";
 import mathFacts from "./mathFacts";
 import wordProblems from "./wordProblems";
+import multiDigit from "./multiDigit";
 
 const ALL_MODES = [
   addition,
@@ -54,6 +55,7 @@ const ALL_MODES = [
   volumeCoordinates,
   mathFacts,
   wordProblems,
+  multiDigit,
 ];
 
 export const modeRegistry = Object.fromEntries(ALL_MODES.map((m) => [m.id, m]));
@@ -61,10 +63,10 @@ export const modeRegistry = Object.fromEntries(ALL_MODES.map((m) => [m.id, m]));
 export const MODE_IDS = ALL_MODES.map((m) => m.id);
 
 /**
- * Topics with no v1 rows (Math Facts, Word Problems): shown only where their
- * switch serves v2. With no switch row each takes its DEFAULT_LIVE_VERSION
- * (Math Facts v2, so live; Word Problems preview, so hidden from everyone
- * but preview viewers).
+ * Topics with no v1 rows (Math Facts, Word Problems, Multi-Digit Math): shown
+ * only where their switch serves v2. With no switch row each takes its
+ * DEFAULT_LIVE_VERSION (Math Facts v2, so live; Word Problems and
+ * Multi-Digit Math preview, so hidden from everyone but preview viewers).
  */
 export const V2_ONLY_MODE_IDS = ALL_MODES.filter((m) => m.v2Only).map((m) => m.id);
 
@@ -121,6 +123,13 @@ export const MODE_GROUPS = [
     title: "Word Problems",
     gradeHint: "Grade 2",
     modeIds: ["wordProblems"],
+  },
+  {
+    // Hidden until Sai flips it at /admin/switch (default preview; useHiddenTopics).
+    id: "multiDigit",
+    title: "Multi-Digit Math",
+    gradeHint: "Grade 2",
+    modeIds: ["multiDigit"],
   },
 ];
 

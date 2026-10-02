@@ -75,6 +75,9 @@ export const TOPIC_LABELS = {
   volumeCoordinates: "Volume & Coordinates",
   mathFacts: "Math Facts",
   wordProblems: "Word Problems",
+  // The list leaves the label to Sai: "Multi-Digit Math", or "Add &
+  // Subtract" while only Grade 2 exists (calc list decision 1).
+  multiDigit: "Multi-Digit Math",
 };
 
 const ONE_DIGIT = [1, 9];
@@ -317,6 +320,44 @@ const WORD_PROBLEM_SKILLS = [
   },
 ];
 
+// Multi-Digit Math (calc list, Sai approved 2026-10-02): adding and
+// subtracting with two or more digits, one skill per subskill, each drawing
+// only its own subskill's v2 rows (src/blueprints/g2AddsubCalc.json). Each
+// skill cites every code its rows cite (multiDigit.spec ties them). The
+// three-digit trading rows, the across-zero rows and adding three or four
+// numbers past 100 sit in Grade 2 at the hard tier (decision 4), inside
+// "within 1,000" and "three or four numbers". Row 35 (Texas 2.7B, to 1,200)
+// is its own skill, last in the grade, with no Common Core code (decision
+// 11). Play only: no rows are approved yet. Grade 2 is levels 4-6
+// (src/modes/multiDigit.js).
+const G2_CALC = [4, 6];
+const calcSkill = (id, subskill, title, families, level, standards) => ({
+  ...banked(id, "2", "multiDigit", null, title, { families, subskills: [subskill], levels: G2_CALC }, null, level),
+  ccss: standards.ccss,
+  standards,
+});
+const MULTI_DIGIT_SKILLS = [
+  calcSkill("md-g2-within-100", "within100", "Add and subtract within 100", BOTH, 4, {
+    ccss: ["2.NBT.B.5", "2.NBT.B.9", "2.MD.B.6"], tx: ["2.4B", "2.9C"], fl: ["MA.2.NSO.2.3"], va: ["2.CE.1b", "2.CE.1a"], ga: ["2.NR.2.4", "2.MDR.5.5"],
+  }),
+  calcSkill("md-g2-several-numbers", "severalNumbers", "Add and subtract three or four numbers", BOTH, 5, {
+    ccss: ["2.NBT.B.6", "2.NBT.B.5"], tx: ["2.4B"], fl: ["MA.2.AR.2.2", "MA.2.NSO.2.4"], va: ["2.CE.1b", "2.CE.1f"], ga: ["2.NR.2.4"],
+  }),
+  calcSkill("md-g2-within-1000", "within1000", "Add and subtract within 1,000", BOTH, 5, {
+    ccss: ["2.NBT.B.7", "2.NBT.B.9"], tx: ["2.4B"], fl: ["MA.2.NSO.2.4"], va: ["2.CE.1b"], ga: [],
+  }),
+  calcSkill("md-g2-ten-hundred", "tenOrHundred", "10 or 100 more or less", ["procedural"], 5, {
+    ccss: ["2.NBT.B.8"], tx: ["2.7B"], fl: ["MA.2.NSO.2.2"], va: [], ga: ["2.NR.2.2"],
+  }),
+  calcSkill("md-g2-equal-sign", "equalSign", "What the equal sign means", ["conceptual"], 6, {
+    ccss: ["2.NBT.B.5", "2.NBT.B.9"], tx: ["2.4B"], fl: ["MA.2.AR.2.2", "MA.2.AR.2.1"], va: ["2.CE.1b", "2.CE.1j", "2.CE.1i"], ga: ["2.NR.2.4"],
+  }),
+  // Last in the grade; like every skill in a grade it counts toward the grade.
+  calcSkill("md-g2-ten-hundred-1200", "tenOrHundredTo1200", "10 or 100 more or less, to 1,200", ["procedural"], 6, {
+    ccss: [], tx: ["2.7B"], fl: [], va: [], ga: [],
+  }),
+];
+
 export const PLAY_ONLY_SKILLS = [
   banked("facts-add-to5", "K", "mathFacts", "K.OA.A.5", "Addition facts to 5", facts("addFacts", [1, 2], { max: 5 }), null, 1, "horizontal"),
   banked("facts-sub-to5", "K", "mathFacts", "K.OA.A.5", "Subtraction facts to 5", facts("subFacts", [1, 2], { max: 5 }), null, 1, "horizontal"),
@@ -330,6 +371,7 @@ export const PLAY_ONLY_SKILLS = [
   { ...banked("facts-mul-to12", "4", "mathFacts", null, "Multiplication facts with 11 and 12", facts("mulFacts", [9, 10]), null, 9, "horizontal"), ccss: [] },
   { ...banked("facts-div-to12", "4", "mathFacts", null, "Division facts with 11 and 12", facts("divFacts", [9, 10]), null, 9, "horizontal"), ccss: [] },
   ...WORD_PROBLEM_SKILLS,
+  ...MULTI_DIGIT_SKILLS,
 ];
 
 export const WORKSHEET_SKILLS = [...OPERATION_SKILLS, ...PROMPT_SKILLS];

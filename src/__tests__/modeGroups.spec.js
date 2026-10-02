@@ -31,24 +31,28 @@ describe("MODE_GROUPS (home page navigation)", () => {
   });
 
   it("hides a v2-only topic, and a group it leaves empty, until its switch serves it", () => {
-    expect(V2_ONLY_MODE_IDS).toEqual(["mathFacts", "wordProblems"]);
+    expect(V2_ONLY_MODE_IDS).toEqual(["mathFacts", "wordProblems", "multiDigit"]);
     const hiddenIds = visibleModeGroups().flatMap((g) => g.modeIds);
     expect(hiddenIds).not.toContain("mathFacts");
     expect(hiddenIds).not.toContain("wordProblems");
+    expect(hiddenIds).not.toContain("multiDigit");
     expect(visibleModeGroups().some((g) => g.id === "facts")).toBe(false);
     expect(visibleModeGroups().some((g) => g.id === "stories")).toBe(false);
-    expect(hiddenIds).toHaveLength(MODE_IDS.length - 2);
+    expect(visibleModeGroups().some((g) => g.id === "multiDigit")).toBe(false);
+    expect(hiddenIds).toHaveLength(MODE_IDS.length - 3);
     const shown = visibleModeGroups(new Set());
     expect(shown.find((g) => g.id === "facts")?.modeIds).toEqual(["mathFacts"]);
     expect(shown.find((g) => g.id === "stories")?.modeIds).toEqual(["wordProblems"]);
+    expect(shown.find((g) => g.id === "multiDigit")?.modeIds).toEqual(["multiDigit"]);
   });
 
-  it("with no switch row, shows Math Facts and hides Word Problems (what an empty switch means)", () => {
+  it("with no switch row, shows Math Facts and hides Word Problems and Multi-Digit Math (what an empty switch means)", () => {
     const hidden = new Set(V2_ONLY_MODE_IDS.filter((id) => !topicVisible(id, new Map(), { v2Only: true })));
-    expect([...hidden]).toEqual(["wordProblems"]);
+    expect([...hidden]).toEqual(["wordProblems", "multiDigit"]);
     const ids = visibleModeGroups(hidden).flatMap((g) => g.modeIds);
     expect(ids).toContain("mathFacts");
     expect(ids).not.toContain("wordProblems");
-    expect(ids).toHaveLength(MODE_IDS.length - 1);
+    expect(ids).not.toContain("multiDigit");
+    expect(ids).toHaveLength(MODE_IDS.length - 2);
   });
 });

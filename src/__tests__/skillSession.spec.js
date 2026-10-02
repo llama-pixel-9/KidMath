@@ -159,15 +159,34 @@ describe("mixed session — Larkit picks", () => {
 });
 
 // A v2-only topic that ships with no rows and is hidden by default (Word
-// Problems: preview until Sai flips it at /admin/switch, so only preview
-// browsers can open it) has nothing in the bundle to serve yet. No screen
+// Problems and Multi-Digit Math: preview until Sai flips them at
+// /admin/switch, so only preview browsers can open them) has nothing in the
+// bundle to serve yet. No screen
 // gates on skillServable, so a preview viewer can start any of its skills;
 // each is held to what a session must still do, below, instead of to serving
 // from its cell. The
 // guard fails the moment a listed topic gains a bundled row, goes live by
 // default, or stops being v2-only; it then comes off this list and passes
 // the gate like every topic. Same list as bankCellCoverage.spec.
-const UNSHIPPED_V2_TOPICS = ["wordProblems"];
+const UNSHIPPED_V2_TOPICS = ["wordProblems", "multiDigit"];
+
+// What each unshipped topic's fallback generator serves: a bare number
+// sentence, never a story. Word Problems' is always a box sentence
+// (missingNumber, conceptual); Multi-Digit Math's keeps the skill's own
+// subskill and families, typed on the number pad.
+const FALLBACK = {
+  wordProblems: (skill, q) => {
+    expect(q.metadata.subskill).toBe("missingNumber");
+    expect(q.metadata.itemFamily).toBe("conceptual");
+    expect(q.choices).toContain(q.answer);
+  },
+  multiDigit: (skill, q) => {
+    expect(skill.source.subskills).toContain(q.metadata.subskill);
+    expect(skill.source.families).toContain(q.metadata.itemFamily);
+    expect(q.answerType).toBe("numberPad");
+    expect(q.display.promptText).not.toMatch(/[a-z]/i);
+  },
+};
 const shipped = (skill) => !UNSHIPPED_V2_TOPICS.includes(skill.mode);
 
 describe("every playable skill can be played", () => {
@@ -193,11 +212,9 @@ describe("every playable skill can be played", () => {
       const { served } = play(skill.mode, { skillId: skill.id }, { size: 5 });
       expect(served.filter((s) => !s.isRetry)).toHaveLength(5);
       for (const { question: q } of served) {
-        // The fallback: a bare box sentence, never a story, credited by its own cell.
+        // The fallback: a bare number sentence, never a story, credited by its own cell.
         expect(q.skillId).toBeUndefined();
-        expect(q.metadata.subskill).toBe("missingNumber");
-        expect(q.metadata.itemFamily).toBe("conceptual");
-        expect(q.choices).toContain(q.answer);
+        FALLBACK[skill.mode](skill, q);
       }
     });
   }

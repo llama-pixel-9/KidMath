@@ -33,7 +33,7 @@ let base = BUNDLED_ITEMS;
 let baseSource = "bundle";
 /** modeId -> Map(itemId -> normalized item): every injected cloud row, any version. */
 const cloud = new Map();
-/** Map(modeId -> "v1" | "preview" | "v2"); empty means the defaults (v1; Math Facts v2; Word Problems preview). */
+/** Map(modeId -> "v1" | "preview" | "v2"); empty means the defaults (v1; Math Facts v2; Word Problems and Multi-Digit Math preview). */
 let switchMap = new Map();
 let preview = false;
 

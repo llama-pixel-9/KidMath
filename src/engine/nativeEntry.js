@@ -127,8 +127,8 @@ g.KidMath = {
   addBankRows: (rows, modeId) => addBankRows(rows, modeId),
   resetBankToBundle: () => resetBank(),
   // The version switch: raw item_version_switch rows plus { preview }. Empty
-  // rows = every topic at its default (v1; Math Facts v2; Word Problems
-  // preview), as on the web.
+  // rows = every topic at its default (v1; Math Facts v2; Word Problems and
+  // Multi-Digit Math preview), as on the web.
   setVersionSwitch: (rows, options) => setVersionSwitch(rows, options ?? {}),
   // v2-only topics the switch hides from the pickers (useHiddenTopics.js).
   hiddenTopics: () => hiddenTopics(V2_ONLY_MODE_IDS),

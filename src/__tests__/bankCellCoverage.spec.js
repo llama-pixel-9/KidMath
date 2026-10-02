@@ -24,7 +24,7 @@ const modeIds = MODES.map((m) => (typeof m === "string" ? m : m.id));
 // moment a listed topic gains a bundled row, goes live by default, or stops
 // being v2-only; it then comes off this list and passes the gate like every
 // topic.
-const UNSHIPPED_V2_TOPICS = ["wordProblems"];
+const UNSHIPPED_V2_TOPICS = ["wordProblems", "multiDigit"];
 
 describe("bank cell coverage (generator retirement gate)", () => {
   setBankItems(FULL_ITEMS);

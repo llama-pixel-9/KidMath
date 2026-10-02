@@ -164,7 +164,7 @@ const PICTURE_SATISFIERS = [
 ];
 const satisfierForPicture = (picture) => PICTURE_SATISFIERS.find(([rx]) => rx.test(picture))?.[1] ?? null;
 
-const ROW_MODES = ["wordProblems"];
+const ROW_MODES = ["wordProblems", "multiDigit"];
 
 describe("blueprint rows <-> contract lines", () => {
   for (const modeId of ROW_MODES) {

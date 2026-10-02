@@ -41,6 +41,7 @@ export const MODE_TITLES = {
   volumeCoordinates: "Volume and coordinates",
   mathFacts: "Math facts",
   wordProblems: "Word problems",
+  multiDigit: "Multi-digit math",
 };
 
 export const CONCEPTS = {
@@ -660,6 +661,65 @@ export const CONCEPTS = {
         "A farm has 245 hens. 132 more hens come to the farm. How many hens are on the farm now?",
         ["More hens come, so add.", "Hundreds: 200 + 100 = 300. Tens: 40 + 30 = 70. Ones: 5 + 2 = 7.", "300 + 70 + 7 = 377."],
         "377 hens"
+      ),
+    },
+  },
+  // Multi-Digit Math: one entry per Grade 2 skill. Kid words: ones, tens,
+  // hundreds and trading, never "regroup" or "addend". No item or fallback
+  // question uses an example's numbers (calcItems.js HINT_EXAMPLE_PROMPTS).
+  multiDigit: {
+    within100: {
+      title: "Ones first, then tens",
+      idea: "Line up the ones and the tens. Work the ones first. Ten ones make a new ten, and you can trade a ten for ten ones when you need more ones.",
+      example: ex(
+        "56 + 27 = ?",
+        ["Ones: 6 + 7 = 13. That is 1 ten and 3 ones.", "Tens: 5 + 2, plus the new ten, make 8 tens.", "8 tens and 3 ones make 83."],
+        "83"
+      ),
+    },
+    severalNumbers: {
+      title: "Add them all, place by place",
+      idea: "With three or four numbers, add all the ones first. The ones can make one new ten or two. Then add all the tens, with the new tens too.",
+      example: ex(
+        "24 + 35 + 16 = ?",
+        ["Ones: 4 + 5 + 6 = 15. That is 1 ten and 5 ones.", "Tens: 2 + 3 + 1, plus the new ten, make 7 tens.", "7 tens and 5 ones make 75."],
+        "75"
+      ),
+    },
+    within1000: {
+      title: "Hundreds, tens and ones",
+      idea: "Big numbers work the same way. Work the ones, then the tens, then the hundreds. Ten tens make a new hundred, and you can trade a hundred for ten tens.",
+      example: ex(
+        "362 + 245 = ?",
+        ["Ones: 2 + 5 = 7.", "Tens: 6 + 4 = 10 tens. Trade them for 1 new hundred.", "Hundreds: 3 + 2, plus the new hundred, make 6 hundreds.", "6 hundreds, 0 tens and 7 ones make 607."],
+        "607"
+      ),
+    },
+    tenOrHundred: {
+      title: "Change one place",
+      idea: "Adding or taking away 10 changes the tens digit by one. Adding or taking away 100 changes the hundreds digit by one. The other digits stay the same.",
+      example: ex(
+        "452 + 100 = ?",
+        ["Adding 100 changes the hundreds digit.", "4 hundreds and 1 more hundred make 5 hundreds.", "The tens and ones stay the same: 552."],
+        "552"
+      ),
+    },
+    equalSign: {
+      title: "Both sides match",
+      idea: "The equal sign means both sides are the same amount. It does not mean the answer comes next. Find each side, then make them match.",
+      example: ex(
+        "36 + 18 = ? + 20",
+        ["The left side: 36 + 18 = 54.", "The right side must make 54 too.", "34 and 20 make 54, so the missing number is 34."],
+        "34"
+      ),
+    },
+    tenOrHundredTo1200: {
+      title: "Past one thousand",
+      idea: "Ten hundreds make one thousand. Adding 10 or 100 can carry a number past 1,000, and taking away can bring it back under. Change one place, then check the next one.",
+      example: ex(
+        "995 + 10 = ?",
+        ["Adding 10 adds 1 ten: 9 tens and 1 more make 10 tens.", "10 tens make 1 new hundred: 9 hundreds and 1 more make 10 hundreds.", "10 hundreds make 1 thousand, so the number is 1,005."],
+        "1,005"
       ),
     },
   },

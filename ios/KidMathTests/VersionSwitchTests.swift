@@ -120,32 +120,46 @@ final class VersionSwitchTests: XCTestCase {
         XCTAssertFalse(try servedIds("addition").contains("ios-v2"))
     }
 
-    // Word Problems (default preview) is hidden wherever preview is off and it
-    // has no row of its own; testWordProblemsIsHiddenUntilSaiFlipsIt covers it.
+    // Word Problems and Multi-Digit Math (default preview) are hidden wherever
+    // preview is off and they have no row of their own; the two tests below
+    // cover them.
     func testMathFactsIsHiddenOnlyWhereTheSwitchSaysSo() throws {
         try bridge.setVersionSwitch(rows: [], preview: false)
-        XCTAssertEqual(try bridge.hiddenTopics(), ["wordProblems"])
+        XCTAssertEqual(try bridge.hiddenTopics(), ["wordProblems", "multiDigit"])
         try bridge.setVersionSwitch(rows: Self.switchRows("mathFacts", "v1"), preview: true)
         XCTAssertEqual(try bridge.hiddenTopics(), ["mathFacts"])
         try bridge.setVersionSwitch(rows: Self.switchRows("mathFacts", "preview"), preview: false)
-        XCTAssertEqual(try bridge.hiddenTopics(), ["mathFacts", "wordProblems"])
+        XCTAssertEqual(try bridge.hiddenTopics(), ["mathFacts", "wordProblems", "multiDigit"])
         try bridge.setVersionSwitch(rows: Self.switchRows("mathFacts", "preview"), preview: true)
         XCTAssertEqual(try bridge.hiddenTopics(), [])
         try bridge.setVersionSwitch(rows: Self.switchRows("mathFacts", "v2"), preview: false)
-        XCTAssertEqual(try bridge.hiddenTopics(), ["wordProblems"])
+        XCTAssertEqual(try bridge.hiddenTopics(), ["wordProblems", "multiDigit"])
     }
 
     func testWordProblemsIsHiddenUntilSaiFlipsIt() throws {
         try bridge.setVersionSwitch(rows: [], preview: false)
-        XCTAssertEqual(try bridge.hiddenTopics(), ["wordProblems"])
+        XCTAssertEqual(try bridge.hiddenTopics(), ["wordProblems", "multiDigit"])
         try bridge.setVersionSwitch(rows: [], preview: true)
         XCTAssertEqual(try bridge.hiddenTopics(), [])
         try bridge.setVersionSwitch(rows: Self.switchRows("wordProblems", "preview"), preview: false)
-        XCTAssertEqual(try bridge.hiddenTopics(), ["wordProblems"])
+        XCTAssertEqual(try bridge.hiddenTopics(), ["wordProblems", "multiDigit"])
         try bridge.setVersionSwitch(rows: Self.switchRows("wordProblems", "v1"), preview: true)
         XCTAssertEqual(try bridge.hiddenTopics(), ["wordProblems"])
         try bridge.setVersionSwitch(rows: Self.switchRows("wordProblems", "v2"), preview: false)
+        XCTAssertEqual(try bridge.hiddenTopics(), ["multiDigit"])
+    }
+
+    func testMultiDigitIsHiddenUntilSaiFlipsIt() throws {
+        try bridge.setVersionSwitch(rows: [], preview: false)
+        XCTAssertEqual(try bridge.hiddenTopics(), ["wordProblems", "multiDigit"])
+        try bridge.setVersionSwitch(rows: [], preview: true)
         XCTAssertEqual(try bridge.hiddenTopics(), [])
+        try bridge.setVersionSwitch(rows: Self.switchRows("multiDigit", "preview"), preview: false)
+        XCTAssertEqual(try bridge.hiddenTopics(), ["wordProblems", "multiDigit"])
+        try bridge.setVersionSwitch(rows: Self.switchRows("multiDigit", "v1"), preview: true)
+        XCTAssertEqual(try bridge.hiddenTopics(), ["multiDigit"])
+        try bridge.setVersionSwitch(rows: Self.switchRows("multiDigit", "v2"), preview: false)
+        XCTAssertEqual(try bridge.hiddenTopics(), ["wordProblems"])
     }
 
     func testAFetchWithNoRowsStillReplacesItsTopicsSeed() throws {

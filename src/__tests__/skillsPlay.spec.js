@@ -44,10 +44,11 @@ describe("skill catalog parity: play vs worksheets", () => {
     expect(printOnly.sort()).toEqual(["div-2digit-remainder", "div-3digit-by-1digit"]);
   });
 
-  it("the only play-only skills are Math Facts (closed fact sets the operation topics already print) and Word Problems (no rows to print yet)", () => {
-    expect(new Set(PLAY_ONLY_SKILLS.map((s) => s.mode))).toEqual(new Set(["mathFacts", "wordProblems"]));
+  it("the only play-only skills are Math Facts (closed fact sets the operation topics already print), Word Problems and Multi-Digit Math (no rows to print yet)", () => {
+    expect(new Set(PLAY_ONLY_SKILLS.map((s) => s.mode))).toEqual(new Set(["mathFacts", "wordProblems", "multiDigit"]));
     expect(WORKSHEET_SKILLS.some((s) => s.mode === "mathFacts")).toBe(false);
     expect(WORKSHEET_SKILLS.some((s) => s.mode === "wordProblems")).toBe(false);
+    expect(WORKSHEET_SKILLS.some((s) => s.mode === "multiDigit")).toBe(false);
     const playable = new Set(playSkills().map((s) => s.id));
     for (const skill of PLAY_ONLY_SKILLS) expect(playable.has(skill.id), skill.id).toBe(true);
   });

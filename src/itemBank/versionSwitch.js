@@ -25,8 +25,8 @@ export {
  *   v2       version-2 rows for everyone
  *
  * A topic with no v1 rows at all has nothing to fall back to, so with no row
- * it takes its DEFAULT_LIVE_VERSION: Math Facts v2 (live), Word Problems
- * preview (preview viewers only, until Sai flips it). A row set to v1 hides
+ * it takes its DEFAULT_LIVE_VERSION: Math Facts v2 (live), Word Problems and
+ * Multi-Digit Math preview (preview viewers only, until Sai flips each). A row set to v1 hides
  * either; preview hides it from everyone but preview viewers.
  *
  * The switch lives in the database rather than a deploy-time flag so a flip
@@ -75,7 +75,8 @@ export async function readVersionSwitch() {
 
 /**
  * The switch table as a Map, empty when the read fails: every skill then
- * behaves as its default (v1; Math Facts v2; Word Problems preview), which is
+ * behaves as its default (v1; Math Facts v2; Word Problems and Multi-Digit
+ * Math preview), which is
  * the safe direction.
  * Never rejects.
  */

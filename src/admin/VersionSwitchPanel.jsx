@@ -186,7 +186,8 @@ export default function VersionSwitchPanel() {
               {modeIds.map((modeId) => {
                 const row = rows.get(modeId);
                 // No row: what the loader serves, the topic's default (Math Facts
-                // v2, so live; Word Problems preview, so preview viewers only).
+                // v2, so live; Word Problems and Multi-Digit Math preview, so
+                // preview viewers only).
                 const live = row?.liveVersion || DEFAULT_LIVE_VERSION[modeId] || "v1";
                 const v2Only = V2_ONLY_MODE_IDS.includes(modeId);
                 const isPending = pending?.modeId === modeId;

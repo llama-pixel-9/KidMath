@@ -828,6 +828,20 @@ export function drawCalcItem(rowId, variantId, { rng = Math.random, index = 0, t
   throw new Error(`no draw keeps the rules of ${rowId} ${variantId}`);
 }
 
+/**
+ * The worked examples of the hint pane (src/hints/concepts.js, multiDigit):
+ * no item and no fallback question ever uses one, so the example never
+ * shows a kid's own answer (multiDigit.spec ties the two lists).
+ */
+export const HINT_EXAMPLE_PROMPTS = new Set([
+  "56 + 27 = ?",
+  "24 + 35 + 16 = ?",
+  "362 + 245 = ?",
+  "452 + 100 = ?",
+  "36 + 18 = ? + 20",
+  "995 + 10 = ?",
+]);
+
 /** Items per variant in the bank build: 24 variants, 600 items. */
 export const ITEMS_PER_VARIANT = 25;
 
@@ -838,7 +852,7 @@ export const ITEMS_PER_VARIANT = 25;
  */
 export function calcBankItems({ perVariant = ITEMS_PER_VARIANT } = {}) {
   const items = [];
-  const taken = new Set();
+  const taken = new Set(HINT_EXAMPLE_PROMPTS);
   for (const row of CALC_ROWS) {
     for (const variant of row.variants) {
       const rng = mulberry32(seedOf(`${row.rowId}/${variant.id}`));

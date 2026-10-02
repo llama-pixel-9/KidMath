@@ -33,6 +33,7 @@ export const GRADE_SPANS = {
   mathFacts: "K–4",
   // Grade 2 skills only, for now.
   wordProblems: "2",
+  multiDigit: "2",
 };
 
 export function gradeSpanFor(modeId) {

@@ -257,29 +257,37 @@ describe("native engine: v2-only topics (Math Facts)", () => {
   });
 
   it("hiddenTopics agrees with topicVisible for every switch state", () => {
-    expect(V2_ONLY_MODE_IDS).toEqual(["mathFacts", "wordProblems"]);
+    expect(V2_ONLY_MODE_IDS).toEqual(["mathFacts", "wordProblems", "multiDigit"]);
     const states = [null, "v1", "preview", "v2"];
     for (const facts of states) {
       for (const words of states) {
-        for (const preview of [false, true]) {
-          const rows = [...(facts ? sw("mathFacts", facts) : []), ...(words ? sw("wordProblems", words) : [])];
-          K.setVersionSwitch(rows, { preview });
-          const expected = V2_ONLY_MODE_IDS.filter(
-            (id) => !topicVisible(id, switchMapFromRows(rows), { v2Only: true, preview })
-          );
-          expect(K.hiddenTopics(), `mathFacts=${facts} wordProblems=${words} preview=${preview}`).toEqual(expected);
+        for (const digits of states) {
+          for (const preview of [false, true]) {
+            const rows = [
+              ...(facts ? sw("mathFacts", facts) : []),
+              ...(words ? sw("wordProblems", words) : []),
+              ...(digits ? sw("multiDigit", digits) : []),
+            ];
+            K.setVersionSwitch(rows, { preview });
+            const expected = V2_ONLY_MODE_IDS.filter(
+              (id) => !topicVisible(id, switchMapFromRows(rows), { v2Only: true, preview })
+            );
+            expect(K.hiddenTopics(), `mathFacts=${facts} wordProblems=${words} multiDigit=${digits} preview=${preview}`).toEqual(expected);
+          }
         }
       }
     }
     // No switch row (or an unreadable switch): Math Facts shows (default v2),
-    // Word Problems waits for Sai's flip (default preview).
+    // Word Problems and Multi-Digit Math wait for Sai's flip (default preview).
     K.setVersionSwitch([], {});
-    expect(K.hiddenTopics()).toEqual(["wordProblems"]);
+    expect(K.hiddenTopics()).toEqual(["wordProblems", "multiDigit"]);
     K.setVersionSwitch([], { preview: true });
     expect(K.hiddenTopics()).toEqual([]);
     K.setVersionSwitch(sw("mathFacts", "v1"), {});
-    expect(K.hiddenTopics()).toEqual(["mathFacts", "wordProblems"]);
+    expect(K.hiddenTopics()).toEqual(["mathFacts", "wordProblems", "multiDigit"]);
     K.setVersionSwitch(sw("wordProblems", "v2"), {});
+    expect(K.hiddenTopics()).toEqual(["multiDigit"]);
+    K.setVersionSwitch([...sw("wordProblems", "v2"), ...sw("multiDigit", "v2")], {});
     expect(K.hiddenTopics()).toEqual([]);
   });
 

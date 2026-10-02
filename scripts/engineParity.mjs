@@ -159,13 +159,18 @@ K.setVersionSwitch([{ mode_id: "addition", live_version: "preview" }], { preview
 assert(servedAddition() === "parity-v2", "addition at preview, preview device: v2");
 K.setVersionSwitch([], {});
 assert(servedAddition() === "parity-v1", "switch cleared: back to v1 without a re-fetch");
-assert(JSON.stringify(K.hiddenTopics()) === '["wordProblems"]', "no switch row: Math Facts shows, Word Problems waits for its flip");
+assert(
+  JSON.stringify(K.hiddenTopics()) === '["wordProblems","multiDigit"]',
+  "no switch row: Math Facts shows, Word Problems and Multi-Digit Math wait for their flips"
+);
 K.setVersionSwitch([], { preview: true });
-assert(K.hiddenTopics().length === 0, "a preview device sees Word Problems with no switch row");
+assert(K.hiddenTopics().length === 0, "a preview device sees Word Problems and Multi-Digit Math with no switch row");
 K.setVersionSwitch([{ mode_id: "mathFacts", live_version: "v1" }], {});
-assert(JSON.stringify(K.hiddenTopics()) === '["mathFacts","wordProblems"]', "Math Facts at v1 is hidden");
+assert(JSON.stringify(K.hiddenTopics()) === '["mathFacts","wordProblems","multiDigit"]', "Math Facts at v1 is hidden");
 K.setVersionSwitch([{ mode_id: "wordProblems", live_version: "v2" }], {});
-assert(K.hiddenTopics().length === 0, "Word Problems at v2 shows to everyone");
+assert(JSON.stringify(K.hiddenTopics()) === '["multiDigit"]', "Word Problems at v2 shows to everyone");
+K.setVersionSwitch([{ mode_id: "multiDigit", live_version: "v2" }], {});
+assert(JSON.stringify(K.hiddenTopics()) === '["wordProblems"]', "Multi-Digit Math at v2 shows to everyone");
 K.setVersionSwitch([], {});
 K.resetBankToBundle();
 assert(K.addBankRows([], "addition") === 0, "addBankRows with no rows reports none new");

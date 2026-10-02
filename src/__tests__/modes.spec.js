@@ -123,6 +123,8 @@ describe("mode generation coverage", () => {
       // Stories from v2 bank rows only, reached by skill sessions; the
       // fallback generator writes bare box sentences, never a story.
       "wordProblems",
+      // Computing only; stories are Word Problems'. No application family.
+      "multiDigit",
     ]);
     const modesWithApplicationContext = MODE_IDS.filter((mode) => !bankless.has(mode));
     for (const mode of modesWithApplicationContext) {

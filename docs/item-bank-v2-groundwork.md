@@ -302,7 +302,7 @@ right move after the migration lands, from a machine with egress:
 set -a && source .env.local && set +a && npm run bank:export
 ```
 
-Then check: the "Wrote N items" line (43,503 expected if nothing else
+Then check: the "Wrote N items" line (43,502 expected if nothing else
 changed), `git diff --stat` shows only rows that changed in the cloud since
 the prune, and the six bank specs still pass.
 `scripts/exportCloudBank.js` exports version-1 rows only

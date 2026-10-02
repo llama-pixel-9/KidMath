@@ -5,6 +5,7 @@ import { initSkillSession, nextSkillQuestion, recordSkillAnswer, retryBelongs } 
 import { FLUENCY_SESSION_SIZE } from "./facts/factPractice.js";
 import { validateChoices, validateQuestion } from "./modes/itemQuality";
 import { buildQuestionFromBankItem, selectApprovedBankItem } from "./itemBank/index.js";
+import { isRetiredStoryStructure } from "./itemBank/retiredStories.js";
 import { fractionsEqual } from "./fractions.js";
 
 export const SESSION_SIZE = 15;
@@ -194,10 +195,34 @@ export function resetBankFallbackStats() {
   warnedFallbackKeys.clear();
 }
 
+/**
+ * A topic tells only the families it declares. Addition, subtraction, Bar
+ * Models and Number Bonds declare no application since their v1 word problems
+ * were retired (2026-10-02), yet their generators still write template stories
+ * when no family is asked for. Such a draw is swapped for one of the topic's
+ * own families, words off and with no forced variety or structure (the
+ * `?qaVariety=` tool), so no application-family question leaves here.
+ *
+ * That is a guarantee about the family, not the prose: the Bar Models
+ * generator writes every family as a named-character story. Bar Models is
+ * served from bank rows instead; the shipped seed covers each of its cells
+ * (retiredStories.spec).
+ */
+function generateDeclared(config, level, context) {
+  const q = config.generate(level, context || undefined);
+  const declared = config.families || Object.values(ITEM_FAMILIES);
+  if (q.metadata?.itemFamily !== ITEM_FAMILIES.APPLICATION || declared.includes(ITEM_FAMILIES.APPLICATION)) return q;
+  const itemFamily = declared.includes(context?.itemFamily) ? context.itemFamily : declared[0];
+  const retry = { ...(context || {}), itemFamily, allowWordProblems: false };
+  delete retry.varietyId;
+  delete retry.structureType;
+  return config.generate(level, retry);
+}
+
 export function generateQuestion(mode, level, context = null) {
   const config = getModeConfig(mode);
   const targetLevel = clampLevel(level, config.maxLevel ?? MAX_LEVEL);
-  const q = config.generate(targetLevel, context || undefined);
+  const q = generateDeclared(config, targetLevel, context);
   const generatedFamily = q.metadata?.itemFamily;
   const isApplication = generatedFamily === ITEM_FAMILIES.APPLICATION;
   const allowWordProblems = context?.allowWordProblems ?? true;
@@ -526,9 +551,22 @@ export function setProgressLoader(fn) {
  * dueAt of the session it happened in (a miss on the last question sits past
  * that session's end), so restored entries are re-due after the normal
  * spacing; otherwise they never came back. Saved lists are already capped.
+ * A saved retired story (the v1 add/sub word problems, 2026-10-02) is dropped,
+ * not served again as a retry: any story of a topic that no longer asks
+ * stories, and Counting's and Comparing's retired structure types.
  */
+function retryStillAsked(q) {
+  if (q?.metadata?.itemFamily !== ITEM_FAMILIES.APPLICATION) return true;
+  const mode = q.mode || q.metadata?.modeId;
+  if (!MODE_IDS.includes(mode)) return true;
+  if (isRetiredStoryStructure(mode, q.metadata?.structureType)) return false;
+  const declared = getModeConfig(mode).families;
+  return !declared || declared.includes(ITEM_FAMILIES.APPLICATION);
+}
+
 export function restoreMistakeBank(saved) {
   return (Array.isArray(saved) ? saved : [])
+    .filter(retryStillAsked)
     .slice(-MAX_REVIEW_ITEMS)
     .map((q) => (q && typeof q === "object" && q.dueAt != null && q.dueAt > RETRY_SPACING ? { ...q, dueAt: RETRY_SPACING } : q));
 }

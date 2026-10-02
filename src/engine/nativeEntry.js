@@ -145,6 +145,8 @@ g.KidMath = {
       title: skill.title,
       layout: skill.layout,
       computation: skill.source.kind === "computation",
+      // False: no word problems by design (the screen says so, not "yet").
+      stories: Boolean(skill.stories),
       header: headerLine(skill),
       documentTitle: documentTitle(skill),
     })),

@@ -162,12 +162,16 @@ export function nextSkillQuestion(session) {
   if (q) {
     q.skillId = skill.id;
   } else {
-    // The skill's cell is not in memory (seed-only bank, offline). The screen
-    // gates on this, but a session must never hang: serve what play served
-    // before skills existed, un-stamped, so it is credited by its own cell.
+    // The skill's cell is not in memory (seed-only bank, offline). A session
+    // must never hang: serve what play served before skills existed, un-stamped,
+    // so it is credited by its own cell. Words off: a skill's stories are bank
+    // rows or nothing. No family is pinned: pinning one made the money, time
+    // and lines & shapes generators write more stories, not fewer. The topics
+    // that declare no stories get none from generateQuestion; Bar Models, whose
+    // generator writes every family as a story, is served from the seed.
     q = generateQuestion(skill.mode, skill.level, {
       targetSubskill: skill.source.subskills?.[0],
-      allowWordProblems: session.allowWordProblems !== false,
+      allowWordProblems: false,
       recentBankItemIds: session.recentBankItemIds || [],
     });
     if (questionAnswerType(q) === "choice") q.choices = generateChoices(q.answer, 4, q);

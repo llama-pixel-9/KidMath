@@ -101,6 +101,12 @@ Bank design: `docs/counting-bank-design.md`. Bands: K-1 counts ≤20 ·
 
 ### Application — stories (≤3/signature; names+nouns rotate)
 
+`storyTargetGap`, `storyHiddenCount` and `storyTwoSpots` rows were RETIRED from
+the bank on 2026-10-02 (they were add/sub word problems). They were bank-only
+(the generator never emits these structure types); the list lives in
+`src/itemBank/retiredStories.js`, and a kid's saved retry of one is dropped.
+Counting keeps its other stories.
+
 | structureType | Bands | Situation |
 |---|---|---|
 | `storyCountOn` | all | had N, counted M more — what number now |

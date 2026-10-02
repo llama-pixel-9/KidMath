@@ -2,9 +2,16 @@ import { beforeAll, describe, expect, it, vi } from "vitest";
 import { FULL_ITEMS } from "../itemBank/fullBank";
 import { setBankItems } from "../itemBank";
 import { isTrivialFact, isYesNoJudgment, printOptionBank, questionAnswerType } from "../mathEngine";
-import { MODE_IDS } from "../modes";
+import { MODE_IDS, getModeConfig } from "../modes";
 import { checkItems, storyMatches } from "../worksheets/claimCheck";
-import { generateWorksheet, paperFigureKey, practiceAvailability, storyPlan } from "../worksheets/generateWorksheet";
+import {
+  generateWorksheet,
+  generateWorksheetRun,
+  paperFigureKey,
+  practiceAvailability,
+  storyPlan,
+  worksheetCapacity,
+} from "../worksheets/generateWorksheet";
 import { LAYOUTS, isFigureLayout, layoutForClaim } from "../worksheets/layouts";
 import { documentTitle, headerLine, skillForModeLevel, topicsForGrade } from "../skills";
 import { GRADES, GRADE_SLUGS, TOPIC_LABELS, WORKSHEET_SKILLS } from "../skills/catalog";
@@ -43,6 +50,39 @@ describe("worksheet skill catalog", () => {
       for (const code of skill.ccss) expect(code, skill.id).toMatch(CCSS);
       // No standard (calendars, early coins) is fine; a wrong grade is not.
       if (skill.ccss[0]) expect(skill.ccss[0].split(".")[0], skill.id).toBe(skill.grade);
+    }
+  });
+
+  // A topic that declares no word-problem family (addition, subtraction, Bar
+  // Models and Number Bonds since their stories were retired, 2026-10-02)
+  // prints no stories: its skills carry `stories: null`, so neither a stale
+  // seed nor a row approved again can turn "Word problems" or "Mixed" back on.
+  // A skill that offers stories covers a 3-sheet run of them (the worksheets
+  // skill's pool rule). Two Comparing skills fell to 2 sheets when their add/sub
+  // stories were retired (2026-10-02): the screen offers them 1 or 2 sheets.
+  // Author stories to lift them back to 3, then drop them from this list.
+  const THIN_STORY_POOLS = { "comparing-benchmark-compare-4": 2, "comparing-distance-compare-4": 2 };
+  it("a topic with no word problems offers no story sheets; every story skill fills 3", () => {
+    for (const id of Object.keys(THIN_STORY_POOLS)) expect(WORKSHEET_SKILLS.some((skill) => skill.id === id && skill.stories), id).toBe(true);
+    for (const skill of WORKSHEET_SKILLS) {
+      const asksStories = (getModeConfig(skill.mode).families || ["application"]).includes("application");
+      if (!asksStories) expect(skill.stories, skill.id).toBeNull();
+      const capacity = worksheetCapacity(skill.id);
+      if (skill.stories) {
+        expect(capacity.stories, skill.id).toBeGreaterThanOrEqual(THIN_STORY_POOLS[skill.id] ?? 3);
+      } else {
+        expect(capacity.stories, skill.id).toBe(0);
+        expect(capacity.mixed, skill.id).toBe(0);
+      }
+    }
+  });
+
+  it("a Mixed print run of a skill with no word problems prints practice sheets", () => {
+    const sheets = generateWorksheetRun("sub-3digit-regroup", { problemType: "mixed", sheets: 2 });
+    expect(sheets).toHaveLength(2);
+    for (const sheet of sheets) {
+      expect(sheet.problemType).toBe("practice");
+      expect(sheet.wordProblems).toEqual([]);
     }
   });
 

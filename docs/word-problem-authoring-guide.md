@@ -5,6 +5,15 @@ all three families (`conceptual`, `procedural`, `application`) across three
 level bands (`K-1`, `2-3`, `4-5`), for 216 `(mode x subskill x family x band)`
 cells total.
 
+**Retired, 2026-10-02:** every v1 addition and subtraction word problem — all
+the stories of addition, subtraction, Bar Models and Number Bonds, and the
+add/sub story structures of Counting (`storyHiddenCount`, `storyTwoSpots`,
+`storyTargetGap`) and Comparing (`storyDifference`, `storyGapToGoal`,
+`storyLanguageTrap`, `storyOneMoreLess`). Those four topics now declare no
+`application` family, so do not author or re-approve stories for them (or those
+structures) until a new plan says so; `retiredStories.spec` fails if one is
+bundled again.
+
 Application items live in `src/itemBank/applicationItems.js`.
 Conceptual items live in `src/itemBank/conceptualItems.js`.
 Procedural items live in `src/itemBank/proceduralItems.js`.

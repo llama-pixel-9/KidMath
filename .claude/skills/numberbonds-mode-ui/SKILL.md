@@ -130,7 +130,12 @@ The reviewer-facing map of what each pattern asks. Bands: K-1 = wholes ≤10,
 | `threeBranchPlace` | 4-5 | hundreds/tens/ones bond, middle branch hidden (zero traps: 305) | "263 → 200, ?, 3" |
 | `twoSplitsOfN` | 4-5 | multiSelect canonical AND take-out-ten splits | "34 → '30 and 4' + '24 and 10'" |
 
-### Application — stories (≤3 per signature; names+nouns rotate)
+### Application — stories — RETIRED 2026-10-02 (not in the bank or bundle)
+
+Every numberBonds story was retired with the v1 add/sub word problems; the mode
+declares `families: ["conceptual", "procedural"]` and its skills carry
+`stories: null`. The table is kept as a record of what the stories were.
+
 
 | structureType | Bands | Situation | Example skeleton |
 |---|---|---|---|

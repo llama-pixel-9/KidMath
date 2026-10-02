@@ -41,7 +41,11 @@ fewer-means-subtract-from-WHOM trap (sum distractor included) ·
 `halfJudge_*` · `biggerPiece_*` "one half or one quarter — which piece is
 bigger?" (unit-fraction ordering) · `sharePick_*`
 
-### application (reviewed; Singapore-style stories, shells/cards/acorns/caps)
+### application — RETIRED 2026-10-02 (not in the bank or bundle)
+
+Every barModels story was retired with the v1 add/sub word problems; the mode
+declares `families: ["conceptual", "procedural"]` and its skills carry
+`stories: null`. What the patterns were, for the record:
 
 `storyJoin_*` / `storyLeft_*` (with drawn bar) / `storyThree_*` ·
 `storyDiff_*` / `storyMore_*` / `storyFewer_*` · `storyTimes_*` /

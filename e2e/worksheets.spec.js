@@ -59,6 +59,7 @@ async function printedText(page) {
 const REPRESENTATIVES = [
   "sub-3digit-regroup", // the sheet from the original report
   "sub-2digit-1digit", // stacked, long title
+  "mul-2digit-by-1digit", // stacked: the one stacked skill with Mixed (add/sub stories retired)
   "mul-3digit-by-2digit", // stackedWide: partial-product work space
   "add-4digit",
   "mul-tables-7-8-9", // horizontal
@@ -67,6 +68,7 @@ const REPRESENTATIVES = [
   "div-by-2digit",
   "sub-missing-number-1000", // promptShort
   "add-make-ten",
+  "decimal-ops-powers-of-ten-7", // promptShort with Mixed, longest title
   "area-perimeter-composite-figures-1", // prompt-length text + a figure
   "fractions-compare-fractions-4", // prompt, longest titles
   "patterns-repeating-pattern-7", // prompt, ~110-char prompts
@@ -155,22 +157,39 @@ for (const { id, sheets, expectFigures } of REPORTED) {
 }
 
 test("worksheets: a deep link picks the skill, prints on go=1, and the address stays shareable", async ({ page }) => {
-  await page.goto("/worksheets?skill=sub-3digit-regroup&type=mixed&sheets=2&go=1");
+  await page.goto("/worksheets?skill=mul-tables-7-8-9&type=mixed&sheets=2&go=1");
   await expect(page.getByText("Landed").first()).toBeVisible({ timeout: 20000 });
   const state = await page.evaluate(() => window.__larkitWorksheets);
-  expect(state.skillId).toBe("sub-3digit-regroup");
+  expect(state.skillId).toBe("mul-tables-7-8-9");
   expect(state.problemType).toBe("mixed");
   expect(state.sheets).toHaveLength(2);
   await expect(page.getByRole("button", { name: "Grade 3", exact: true })).toHaveAttribute("aria-pressed", "true");
 
   // Changing a choice rewrites the address, so copying it shares the sheet.
   await page.getByRole("button", { name: "Practice problems only", exact: true }).click();
-  await expect(page).toHaveURL(/skill=sub-3digit-regroup.*type=practice/);
+  await expect(page).toHaveURL(/skill=mul-tables-7-8-9.*type=practice/);
 
   // The topic step follows the link too.
-  await expect(page.getByRole("button", { name: "Subtraction", exact: true })).toHaveAttribute("aria-pressed", "true");
+  await expect(page.getByRole("button", { name: "Multiplication", exact: true })).toHaveAttribute("aria-pressed", "true");
 
   // Old mode + level links land on the nearest skill in that topic.
   await page.goto("/worksheets?mode=time&level=5");
   await expect(page.getByRole("radio", { checked: true })).toContainText("Read a clock to five minutes");
+});
+
+// Addition, subtraction, Bar Models and Number Bonds have no word problems
+// (their stories were retired, 2026-10-02): an old Mixed link prints practice,
+// says so in the address, and never pads a sheet with a generated story.
+test("worksheets: a Mixed link to a skill with no word problems prints practice", async ({ page }) => {
+  await page.goto("/worksheets?skill=sub-3digit-regroup&type=mixed&sheets=2&go=1");
+  await expect(page.getByText("Landed").first()).toBeVisible({ timeout: 20000 });
+  const state = await page.evaluate(() => window.__larkitWorksheets);
+  expect(state.skillId).toBe("sub-3digit-regroup");
+  expect(state.problemType).toBe("practice");
+  expect(state.sheets).toHaveLength(2);
+  for (const sheet of state.sheets) expect(sheet.wordProblems).toEqual([]);
+  await expect(page).toHaveURL(/skill=sub-3digit-regroup.*type=practice/);
+  await expect(page.getByRole("button", { name: TYPE_BUTTON.mixed, exact: true })).toBeDisabled();
+  await expect(page.getByRole("button", { name: TYPE_BUTTON.stories, exact: true })).toBeDisabled();
+  await expect(page.getByText("This skill has no word problems.")).toBeVisible();
 });

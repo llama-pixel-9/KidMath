@@ -12,7 +12,10 @@ Each mode uses three item families in every level band.
 
 - Every generated item sets `metadata.blueprintId`.
 - Every mode includes at least 3 subskills.
-- Every level band (`K-1`, `2-3`, `4-5`) should be able to emit all three families.
+- Every level band (`K-1`, `2-3`, `4-5`) should be able to emit every family the
+  mode declares — all three, except the topics with no word problems
+  (`conceptual` and `procedural` only): Math Facts, and addition, subtraction,
+  Bar Models and Number Bonds, whose v1 stories were retired on 2026-10-02.
 
 ## Mode Blueprint IDs
 

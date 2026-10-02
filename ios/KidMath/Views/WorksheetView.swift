@@ -33,6 +33,8 @@ struct WorksheetView: View {
         let mode: String
         let title: String
         let computation: Bool
+        /// False when the skill has no word problems by design (`stories: null`).
+        let stories: Bool
         let header: String
         let documentTitle: String
     }
@@ -186,7 +188,9 @@ struct WorksheetView: View {
             }
 
             field("Problems") {
-                pillRow(Self.problemTypes, selected: problemType, label: { type in
+                // Light the type that will print (a remembered choice this skill
+                // cannot fill prints practice), as the web picker does.
+                pillRow(Self.problemTypes, selected: activeType, label: { type in
                     switch type {
                     case "stories": return "Word problems"
                     case "mixed": return "Mixed"
@@ -201,7 +205,7 @@ struct WorksheetView: View {
                     pdfURL = nil
                 }
                 if let capacity, (capacity["stories"] ?? 0) == 0 || (capacity["mixed"] ?? 0) == 0, (capacity["practice"] ?? 0) > 0 {
-                    hint("There are not enough word problems for this skill yet.")
+                    hint(skill?.stories == true ? "There are not enough word problems for this skill yet." : "This skill has no word problems.")
                 }
             }
 
@@ -332,6 +336,7 @@ struct WorksheetView: View {
                   let title = row["title"] as? String, playable.contains(mode) else { return nil }
             return Skill(id: id, grade: grade, mode: mode, title: title,
                          computation: (row["computation"] as? Bool) == true,
+                         stories: (row["stories"] as? Bool) == true,
                          header: row["header"] as? String ?? title,
                          documentTitle: row["documentTitle"] as? String ?? title)
         }

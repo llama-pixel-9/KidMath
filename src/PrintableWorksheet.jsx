@@ -82,9 +82,13 @@ function capacityFor(skill) {
   if (!skill) return null;
   const sheets = worksheetCapacity(skill.id);
   const offline = "Couldn't load this topic's problems — check your connection.";
-  const thin = sheets.practice
-    ? "There are not enough word problems for this skill yet."
-    : offline;
+  // A skill without `stories` has no word problems by design (some multi-digit
+  // drills, and the topics whose stories were retired), not a thin pool.
+  const thin = !sheets.practice
+    ? offline
+    : skill.stories
+      ? "There are not enough word problems for this skill yet."
+      : "This skill has no word problems.";
   return {
     practice: { sheets: sheets.practice, reason: sheets.practice ? null : offline },
     mixed: { sheets: sheets.mixed, reason: sheets.mixed ? null : thin },

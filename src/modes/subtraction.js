@@ -31,7 +31,8 @@ export default {
   op: "-",
   subskills: SUBSKILLS,
   supportedFormats: SUPPORTED_FORMATS,
-  families: ["conceptual", "procedural", "application"],
+  // No word problems: the v1 add/sub stories were retired on 2026-10-02.
+  families: ["conceptual", "procedural"],
   structureTypes: STRUCTURES.map((s) => s.id),
 
   generate(level, context = {}) {

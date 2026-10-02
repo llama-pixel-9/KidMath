@@ -27,6 +27,11 @@ const B2 = [4, 6];
 const B3 = [7, 10];
 const B3X = [7, 12]; // the 12-level Grade 5 ladders
 
+// Topics with no word problems: their v1 stories were retired on 2026-10-02 and
+// the topics declare no application family. Their skills print and play no
+// stories (the same as addition and subtraction in catalog.js).
+const NO_STORIES = ["numberBonds", "barModels"];
+
 function cell(mode, subskill, levels, grade, ccss, title, layout, idSuffix = "", extra = {}) {
   return {
     id: `${mode}-${subskill}-${levels[0]}${idSuffix}`.replace(/[A-Z]/g, (c) => `-${c.toLowerCase()}`),
@@ -36,7 +41,7 @@ function cell(mode, subskill, levels, grade, ccss, title, layout, idSuffix = "",
     title,
     layout,
     source: { kind: "bank", families: BOTH, subskills: [subskill], levels, ...extra },
-    stories: { levels, subskills: [subskill] },
+    stories: NO_STORIES.includes(mode) ? null : { levels, subskills: [subskill] },
     level: levels[0] + 1,
   };
 }

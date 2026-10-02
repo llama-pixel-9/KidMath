@@ -21,7 +21,7 @@ npm run test:coverage    # cell-coverage spec with KIDMATH_ENFORCE_CELL_COVERAGE
 
 # item bank
 npm run bank:report      # cell counts, PASS/FAIL
-npm run bank:variety     # variety report (220 cells; all must pass)
+npm run bank:variety     # variety report (266 cells; 256 pass — the 10 mathFacts misses predate 2026-10-02)
 npm run bank:audit       # structure audit
 npm run bank:qc          # QC agent over the bank
 npm run bank:blind-solve # a model solves items as the kid sees them; must reach the key
@@ -68,7 +68,7 @@ src/
     structures/        CCSS additive/multiplicative structure templates — reference wording per structure
     formats/  distractors.js  itemMetadata.js  blueprints.js (STALE: only the original 8 modes)
   itemBank/            bundled seed + cloud loader + normalize + QC checks
-    items/             exported approved rows (43,616 items) — the shipped bundle
+    items/             exported approved rows (41,127 items) — the shipped bundle
     qc/checks.js       mechanical gate; severity `fail` blocks approval
   engine/nativeEntry.js  flat JSON-in/JSON-out `KidMath` global for JavaScriptCore
   admin/               /admin: Items, Review queue (card + batch view), coverage heatmap
@@ -168,7 +168,14 @@ Reruns also overwrite same-cell draft ids — be skip-existing aware.
   — never `easy`/`hard`) and `families`. Every item carries metadata via
   `createQuestionMetadata(...)`: modeId, gradeBand, domain, cluster, subskill,
   itemFamily, mathPractices, misconceptionTags, blueprintId.
-- **Three item families** per mode: `conceptual`, `procedural`, `application`.
+- **Three item families** per mode: `conceptual`, `procedural`, `application` —
+  except the topics with no word problems, which declare `["conceptual","procedural"]`:
+  Math Facts, and addition, subtraction, Bar Models and Number Bonds (their v1
+  stories were retired 2026-10-02). Their worksheet/play skills carry `stories: null`,
+  and `generateQuestion` swaps a generated story for a declared family
+  (`retiredStories.spec`, `modes.spec`). That guards the family, not the prose:
+  the Bar Models generator writes every family as a story, so Bar Models must be
+  served from bank rows — `retiredStories.spec` holds the seed to every cell.
 - **Distractors must be misconception-linked**, not random offsets
   (`src/modes/distractors.js`).
 - **`promptText` is globally unique** across the whole bank; the validator flags dupes.
@@ -269,15 +276,26 @@ Product IDs: `io.larkit.app.premium.{monthly,annual}`.
   account-side: `docs/ios-appstore-checklist.md` and `docs/stripe-setup.md`.
   Bundle ID is `io.larkit.app`; the App Store Connect record "larkit" exists
   (2026-09-19).
-- Item bank: 43,503 approved items in the shipped bundle (113 rows retired in the
-  live bank on 27-28 Sep for wrong keys and kid-safe were pruned from it; a full
-  `bank:export` after the v2 migration is still recommended).
+- Item bank: 41,127 approved items in the shipped bundle (seed 1,752). Pruned from
+  it: 113 rows retired on 27-28 Sep (wrong keys, kid-safe) and, on 2026-10-02, all
+  2,376 v1 add/sub word problems — every story of addition, subtraction, Bar Models
+  and Number Bonds, plus Counting's storyHiddenCount/storyTwoSpots/storyTargetGap
+  and Comparing's storyDifference/storyGapToGoal/storyLanguageTrap/storyOneMoreLess
+  (Counting and Comparing keep their other stories). A full `bank:export` after
+  the v2 migration is still recommended.
   Batch-trust mode (spot-check a sample, approve the batch) is built and deployed.
 - Item bank v2 groundwork (2026-09-28): per-skill version switch, per-item hints,
   item models and their review screen, kid state — see
   `docs/item-bank-v2-groundwork.md`. Nothing flips until the migration is applied
   and a skill is switched in `/admin/switch`.
-- Variety: 220/220 cells passing, 271 structures.
+- Variety: 256/266 cells passing, 348 structureTypes. The 10 misses are all
+  mathFacts L1-10 and predate the 2026-10-02 retire. The report calls each
+  generator with no family, so addition, subtraction, Bar Models and Number
+  Bonds still pass on samples that are partly retired-family template stories
+  no kid is served (about 60% of addition's, 70% of subtraction's): their cells
+  no longer measure what kids get. Sampled the way the engine asks (declared
+  families, words off), one signature takes ~47-51% of addition L4-10 and
+  ~65-70% of subtraction L4-10 (~30% at L1-3), against the 25% target.
 - Known stale: `src/modes/blueprints.js` (original 8 modes only); most modes
   effectively have 3 difficulty tiers, not 10.
 

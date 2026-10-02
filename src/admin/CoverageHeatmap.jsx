@@ -1,10 +1,14 @@
 import { useMemo } from "react";
+import { modeRegistry } from "../modes";
 
 // Cell = (mode x subskill x family x levelBand). The heatmap lets a reviewer
 // see at a glance which pedagogical cells are empty, thin, or healthy and
 // decide where to focus authoring effort.
 
 const FAMILIES = ["conceptual", "procedural", "application"];
+// Only the families a mode declares are cells: Math Facts, and the topics whose
+// word problems were retired (2026-10-02), have no application column to fill.
+const familiesOf = (modeId) => modeRegistry[modeId]?.families || FAMILIES;
 const LEVEL_BANDS = ["K-1", "2-3", "4-5"];
 
 function bucketForCount(count, minFloor, healthy) {
@@ -56,7 +60,7 @@ export default function CoverageHeatmap({
     for (const modeId of modeIds) {
       const subs = subskillsByMode[modeId] || [];
       for (const subskill of subs) {
-        for (const family of FAMILIES) {
+        for (const family of familiesOf(modeId)) {
           for (const band of LEVEL_BANDS) {
             total += 1;
             const key = `${modeId}::${subskill}::${family}::${band}`;
@@ -112,13 +116,14 @@ function LegendChip({ label, bucket, count }) {
 }
 
 function ModeGrid({ modeId, subskills, countByKey, minFloor, healthy, onCellClick }) {
+  const families = familiesOf(modeId);
   return (
     <div className="bg-white rounded-2xl border border-gray-200 p-3">
       <div className="flex items-center gap-2 mb-2">
         <h3 className="text-sm font-extrabold text-slate-800 capitalize">{modeId}</h3>
         <span className="text-xs text-slate-500">
-          ({subskills.length} subskills x {FAMILIES.length} families x {LEVEL_BANDS.length} bands =
-          {" "}{subskills.length * FAMILIES.length * LEVEL_BANDS.length} cells)
+          ({subskills.length} subskills x {families.length} families x {LEVEL_BANDS.length} bands =
+          {" "}{subskills.length * families.length * LEVEL_BANDS.length} cells)
         </span>
       </div>
       <div className="overflow-x-auto">
@@ -126,7 +131,7 @@ function ModeGrid({ modeId, subskills, countByKey, minFloor, healthy, onCellClic
           <thead>
             <tr>
               <th className="p-1 sticky left-0 bg-white z-10"></th>
-              {FAMILIES.map((family) => (
+              {families.map((family) => (
                 <th key={family} colSpan={LEVEL_BANDS.length} className="p-1 text-slate-600 font-bold">
                   {family}
                 </th>
@@ -134,7 +139,7 @@ function ModeGrid({ modeId, subskills, countByKey, minFloor, healthy, onCellClic
             </tr>
             <tr>
               <th className="p-1 sticky left-0 bg-white z-10"></th>
-              {FAMILIES.flatMap((family) =>
+              {families.flatMap((family) =>
                 LEVEL_BANDS.map((band) => (
                   <th key={`${family}-${band}`} className="p-1 text-slate-500 font-mono">
                     {band}
@@ -149,7 +154,7 @@ function ModeGrid({ modeId, subskills, countByKey, minFloor, healthy, onCellClic
                 <td className="p-1 pr-2 sticky left-0 bg-white z-10 text-slate-700 font-semibold">
                   {subskill}
                 </td>
-                {FAMILIES.flatMap((family) =>
+                {families.flatMap((family) =>
                   LEVEL_BANDS.map((band) => {
                     const key = `${modeId}::${subskill}::${family}::${band}`;
                     const count = countByKey.get(key) || 0;

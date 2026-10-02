@@ -479,7 +479,8 @@ export default {
   op: "bar",
   subskills: SUBSKILLS,
   supportedFormats: SUPPORTED_FORMATS,
-  families: Object.values(ITEM_FAMILIES),
+  // No word problems: the v1 add/sub stories were retired on 2026-10-02.
+  families: ["conceptual", "procedural"],
   varietyIds: BAR_VARIETIES.map((v) => v.id),
 
   generate(level, context = {}) {

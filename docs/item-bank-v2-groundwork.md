@@ -289,11 +289,13 @@ imports `src/content/kidSafeList.js` directly. Details and report shapes:
 
 ## The bundle re-export
 
-The shipped bundle (`src/itemBank/items/*.js`) now holds 43,503 items and
-`seedItems.js` 1,800: the 107 wrong-key rows retired on 27 Sep and the six
-kid-safe rows retired on 28 Sep were pruned on this branch with the repo's own
-writer (`scripts/lib/itemBankFiles.js`, then `npm run bank:seed:build`), so
-no retired id ships offline and the six bank specs pass. That prune removed
+The shipped bundle (`src/itemBank/items/*.js`) now holds 41,127 items and
+`seedItems.js` 1,752: the 107 wrong-key rows retired on 27 Sep, the six
+kid-safe rows retired on 28 Sep, and the 2,376 v1 add/sub word problems
+retired on 2 Oct (every story of addition, subtraction, Bar Models and Number
+Bonds; Counting's and Comparing's add/sub story structures) were pruned with
+the repo's own writer (`scripts/lib/itemBankFiles.js`, then `npm run
+bank:seed:build`), so no retired id ships offline and the six bank specs pass. That prune removed
 rows only; it did not re-read the cloud, because the Supabase host is outside
 the groundwork container's network allowlist. A full re-export is still the
 right move after the migration lands, from a machine with egress:
@@ -302,7 +304,7 @@ right move after the migration lands, from a machine with egress:
 set -a && source .env.local && set +a && npm run bank:export
 ```
 
-Then check: the "Wrote N items" line (43,503 expected if nothing else
+Then check: the "Wrote N items" line (41,127 expected if nothing else
 changed), `git diff --stat` shows only rows that changed in the cloud since
 the prune, and the six bank specs still pass.
 `scripts/exportCloudBank.js` exports version-1 rows only

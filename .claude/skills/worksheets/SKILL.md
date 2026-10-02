@@ -26,6 +26,12 @@ grid and no "Level" anywhere, on screen or on paper. One sheet = one skill
   PDF name (Sai: parents don't need "K.OA.A.5"); they fix a skill's grade and
   are there for SEO pages. Every title is our own wording.
   `TOPIC_LABELS` are plain names ("Subtraction"), never game names.
+- `stories: null` = the skill has no word problems by design: "Word problems"
+  and "Mixed" are off and the screen says "This skill has no word problems."
+  Every skill of a topic that declares no `application` family carries it
+  (addition, subtraction, Bar Models, Number Bonds since their stories were
+  retired on 2026-10-02 — `worksheetSkills.spec` ties the two together), as do
+  a few multi-digit drills.
 - **A title is a promise about every problem on the sheet.**
   `worksheetSkills.spec.js` holds each skill to it, across all three
   problem types. "Subtract 3-digit numbers with regrouping" may not print

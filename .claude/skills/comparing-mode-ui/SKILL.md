@@ -57,6 +57,13 @@ Generator: `src/modes/comparing.js` (16 varieties incl. the targetedOnly
 | `closerClaimJudge` | 3 | judged closeness claims |
 
 ### Application (stories; ≤3 per signature)
+
+`storyDifference`, `storyGapToGoal`, `storyLanguageTrap` and `storyOneMoreLess`
+rows were RETIRED from the bank on 2026-10-02 (they were add/sub word
+problems). They were bank-only (the generator never emits these structure
+types); the list lives in `src/itemBank/retiredStories.js`, and a kid's saved
+retry of one is dropped. Comparing keeps its other stories.
+
 | structureType | Bands | Situation |
 |---|---|---|
 | `storyWhoMoreFewer` | all | who has more/fewer (names as choices) |

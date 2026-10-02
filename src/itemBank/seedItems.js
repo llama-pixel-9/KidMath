@@ -9,510 +9,6 @@
 
 export const SEED_ITEMS = [
  {
-  "itemId": "addition-app-001",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 9,
-   "b": 7,
-   "op": "+",
-   "answer": 16,
-   "display": {
-    "promptText": "Mina found 9 shells at the beach. Then she found 7 more. How many shells does Mina have now?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-005",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "composeDecompose",
-  "structureType": "putTogetherTotalUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 18,
-   "b": 14,
-   "op": "+",
-   "answer": 32,
-   "display": {
-    "promptText": "A garden club planted 18 flowers on Monday and 14 flowers on Tuesday. How many flowers did they plant?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-009",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "unknownAddend",
-  "structureType": "joinChangeUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 26,
-   "b": null,
-   "op": "+",
-   "answer": 13,
-   "display": {
-    "promptText": "Luca started with 26 cards. He got some more. Now he has 39 cards. How many cards did he get?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-161",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 49,
-   "b": 3,
-   "op": "+",
-   "answer": 52,
-   "display": {
-    "promptText": "Opal trained 49 puppies this year. She trained 3 more this week. How many puppies did Opal train?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-composeDecompose-4_5-compareBiggerFewer-001",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "composeDecompose",
-  "structureType": "compareBiggerFewer",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 15,
-   "b": 34,
-   "op": "+",
-   "answer": 49,
-   "display": {
-    "promptText": "Emma has 34 stickers. That's 15 fewer stickers than Marcus has. How many stickers does Marcus have?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-333",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "unknownAddend",
-  "structureType": "compareDifferenceMore",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 120,
-   "b": null,
-   "op": "+",
-   "answer": 80,
-   "display": {
-    "promptText": "Freya did 120 pushups this month. She wants to do 200. How many more pushups does she need?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-266",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 75,
-   "b": 25,
-   "op": "+",
-   "answer": 100,
-   "display": {
-    "promptText": "Tomas was polishing tiles. He polished 75 tiles in the morning. He polished 25 more in the afternoon. How many tiles did Tomas polish altogether?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-composeDecompose-4_5-compareBiggerFewer-b0728b-020",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "composeDecompose",
-  "structureType": "compareBiggerFewer",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 39,
-   "b": 23,
-   "op": "+",
-   "answer": 62,
-   "display": {
-    "promptText": "Kai has 23 fewer worms than Natalie. Kai has 39 worms. How many worms does Natalie have?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-016",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 7,
-   "b": 3,
-   "op": "+",
-   "answer": 10,
-   "display": {
-    "promptText": "A branch had 7 leaves. Then 3 more leaves fell on it. How many leaves are on the branch now?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-024",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "composeDecompose",
-  "structureType": "putTogetherTotalUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": 3,
-   "op": "+",
-   "answer": 7,
-   "display": {
-    "promptText": "Eli has 4 red pencils and 3 green pencils. How many pencils does he have in all?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-032",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "unknownAddend",
-  "structureType": "joinChangeUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 6,
-   "b": null,
-   "op": "+",
-   "answer": 4,
-   "display": {
-    "promptText": "A pond had 6 frogs. More frogs hopped in. Now there are 10 frogs. How many frogs hopped in?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-140",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "makeTen",
-  "structureType": "putTogetherTotalUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": 4,
-   "op": "+",
-   "answer": 8,
-   "display": {
-    "promptText": "A child's sandbox had 4 small shovels. It also had 4 big shovels. How many shovels were in the sandbox?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-173",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "composeDecompose",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 3,
-   "b": 2,
-   "op": "+",
-   "answer": 5,
-   "display": {
-    "promptText": "Willa built 3 sandcastles. Then her brother built 2 more. How many sandcastles did they build?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-207",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "unknownAddend",
-  "structureType": "joinChangeUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 1,
-   "b": null,
-   "op": "+",
-   "answer": 6,
-   "display": {
-    "promptText": "Chase had 1 toy car. On his birthday, he got more cars. Now he has 7. How many cars did he get?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-244",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "makeTen",
-  "structureType": "putTogetherTotalUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 2,
-   "b": 8,
-   "op": "+",
-   "answer": 10,
-   "display": {
-    "promptText": "A bird feeder has 2 sparrows and 8 finches eating at it. How many birds are at the feeder in all?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-277",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "composeDecompose",
-  "structureType": "putTogetherTotalUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 4,
-   "b": 6,
-   "op": "+",
-   "answer": 10,
-   "display": {
-    "promptText": "In a camping shelter, there are 4 sleeping bags and 6 pillows. How many items are there?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-020",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "makeTen",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 9,
-   "b": 6,
-   "op": "+",
-   "answer": 15,
-   "display": {
-    "promptText": "Hugo baked 9 cookies in the morning. Then he baked 6 more in the afternoon. How many cookies did Hugo bake in all?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-028",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "composeDecompose",
-  "structureType": "putTogetherTotalUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 12,
-   "b": 5,
-   "op": "+",
-   "answer": 17,
-   "display": {
-    "promptText": "Zoe found 12 sharp pencils and 5 dull pencils in her desk. How many pencils did she find?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-036",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "unknownAddend",
-  "structureType": "joinChangeUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": null,
-   "op": "+",
-   "answer": 7,
-   "display": {
-    "promptText": "A plate had 8 cookies. Dad baked some more. Now there are 15 cookies. How many cookies did Dad bake?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-151",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "makeTen",
-  "structureType": "putTogetherTotalUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 6,
-   "b": 6,
-   "op": "+",
-   "answer": 12,
-   "display": {
-    "promptText": "A farmer planted 6 apple trees. Then she planted 6 plum trees. How many fruit trees does the farmer have in total?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-185",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "composeDecompose",
-  "structureType": "putTogetherTotalUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 28,
-   "b": 17,
-   "op": "+",
-   "answer": 45,
-   "display": {
-    "promptText": "A school hallway has 28 blue lockers and 17 red lockers. How many lockers are in the hallway?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-216",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "unknownAddend",
-  "structureType": "joinChangeUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 12,
-   "b": null,
-   "op": "+",
-   "answer": 6,
-   "display": {
-    "promptText": "Jorge's box had 12 crayons. He added more. Now there are 18. How many crayons did he add?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-255",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "makeTen",
-  "structureType": "putTogetherTotalUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": 7,
-   "op": "+",
-   "answer": 15,
-   "display": {
-    "promptText": "On an ice rink, 8 kids speed skate and 7 kids figure skate. How many skaters are on the rink in all?"
-   }
-  }
- },
- {
-  "itemId": "addition-app-289",
-  "modeId": "addition",
-  "itemFamily": "application",
-  "subskill": "composeDecompose",
-  "structureType": "joinResultUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 44,
-   "b": 17,
-   "op": "+",
-   "answer": 61,
-   "display": {
-    "promptText": "Emeril measured 44 ingredients. Then he measured 17 more. How many ingredients did he measure altogether?"
-   }
-  }
- },
- {
   "itemId": "addition-conc-b0823-0001",
   "modeId": "addition",
   "itemFamily": "conceptual",
@@ -5632,675 +5128,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "barModels-app-b0821-0001",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "partWhole",
-  "structureType": "storyJoin_band1",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 13,
-   "display": {
-    "counting": {
-     "kind": "sum",
-     "parts": [
-      7,
-      6
-     ]
-    },
-    "promptText": "Sam gathers 7 seashells and Zoe gathers 6. How many seashells do they gather altogether?"
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0154",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "comparison",
-  "structureType": "storyDiff_band1",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 5,
-   "display": {
-    "counting": {
-     "have": 9,
-     "kind": "gap",
-     "target": 14
-    },
-    "promptText": "Sam counts 14 seashells; Ben counts 9. How many more seashells does the leader have?"
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0307",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "multiplicative",
-  "structureType": "storyTimes_band1",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 12,
-   "display": {
-    "bar": {
-     "k": 2,
-     "u": 6,
-     "kind": "timesOf"
-    },
-    "promptText": "Amara saves 6 seashells; Sam saves 2 times as many. How many seashells does Sam save?"
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0460",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "fractionBar",
-  "structureType": "storyFrac_band1",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 6,
-   "display": {
-    "bar": {
-     "w": 12,
-     "den": 2,
-     "num": 1,
-     "kind": "fracOf"
-    },
-    "promptText": "Sam bakes 12 rolls and shares one half with neighbors. How many rolls go to the neighbors?"
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0060",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "partWhole",
-  "structureType": "storyLeft_band1",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 7,
-   "display": {
-    "part": 12,
-    "type": "barPartWhole",
-    "whole": 19,
-    "counting": {
-     "back": 12,
-     "kind": "countBack",
-     "start": 19
-    },
-    "promptText": "June starts with 19 seashells and gives away 12. How many seashells does June still have?"
-   },
-   "answerType": "barModel"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0213",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "comparison",
-  "structureType": "storyMore_band1",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 17,
-   "display": {
-    "counting": {
-     "kind": "countOn",
-     "more": 8,
-     "start": 9
-    },
-    "promptText": "Sam finds 9 seashells. June finds 8 more than Sam. How many seashells does June find?"
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0366",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "multiplicative",
-  "structureType": "storyShare_band1",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 10,
-   "display": {
-    "bar": {
-     "k": 2,
-     "w": 20,
-     "kind": "unitOf"
-    },
-    "promptText": "June deals 20 seashells evenly into 2 gift bags. How many seashells go in each bag?"
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0519",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "fractionBar",
-  "structureType": "storyHalf_band1",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 2,
-   "display": {
-    "bar": {
-     "w": 4,
-     "den": 2,
-     "num": 1,
-     "kind": "fracOf"
-    },
-    "promptText": "June reads half of a 4-page book on the trip. How many pages has June read?"
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0018",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "partWhole",
-  "structureType": "storyJoin_band2",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 58,
-   "display": {
-    "counting": {
-     "kind": "sum",
-     "parts": [
-      27,
-      31
-     ]
-    },
-    "promptText": "Mina's jar holds 27 seashells; Priya's jar holds 31. Poured together, how many seashells fill one jar? Sketch the bar if it helps."
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0171",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "comparison",
-  "structureType": "storyDiff_band2",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 25,
-   "display": {
-    "counting": {
-     "have": 39,
-     "kind": "gap",
-     "target": 64
-    },
-    "promptText": "With 64 seashells against Leo's 39, how far ahead is Mina? Sketch the bar if it helps."
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0324",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "multiplicative",
-  "structureType": "storyTimes_band2",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 63,
-   "display": {
-    "bar": {
-     "k": 3,
-     "u": 21,
-     "kind": "timesOf"
-    },
-    "promptText": "Mina's haul of seashells is 3 of Luca's piles of 21 stacked together. How many seashells is that? Sketch the bar if it helps."
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0477",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "fractionBar",
-  "structureType": "storyFrac_band2",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 21,
-   "display": {
-    "bar": {
-     "w": 84,
-     "den": 4,
-     "num": 1,
-     "kind": "fracOf"
-    },
-    "promptText": "Of Mina's 84-page comic, 1 of the 4 equal chapters are finished. How many pages are finished? Sketch the bar if it helps."
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0077",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "partWhole",
-  "structureType": "storyLeft_band2",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 28,
-   "display": {
-    "part": 49,
-    "type": "barPartWhole",
-    "whole": 77,
-    "counting": {
-     "back": 49,
-     "kind": "countBack",
-     "start": 77
-    },
-    "promptText": "Of Zoe's 77 seashells, 49 get traded away. What number of seashells remains? Sketch the bar if it helps."
-   },
-   "answerType": "barModel"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0230",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "comparison",
-  "structureType": "storyMore_band2",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 76,
-   "display": {
-    "counting": {
-     "kind": "countOn",
-     "more": 35,
-     "start": 41
-    },
-    "promptText": "Zoe beats Ida's pile of 41 seashells by 35. What is Zoe's pile of seashells? Sketch the bar if it helps."
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0383",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "multiplicative",
-  "structureType": "storyShare_band2",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 32,
-   "display": {
-    "bar": {
-     "k": 3,
-     "w": 96,
-     "kind": "unitOf"
-    },
-    "promptText": "A crate of 96 seashells splits fairly across 3 tables for Zoe's party. How many seashells per table? Sketch the bar if it helps."
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0536",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "fractionBar",
-  "structureType": "storyHalf_band2",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 43,
-   "display": {
-    "bar": {
-     "w": 86,
-     "den": 2,
-     "num": 1,
-     "kind": "fracOf"
-    },
-    "promptText": "Half of Zoe's 86 balloons float away. How many balloons drift off? Sketch the bar if it helps."
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0035",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "partWhole",
-  "structureType": "storyJoin_band3",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 558,
-   "display": {
-    "counting": {
-     "kind": "sum",
-     "parts": [
-      227,
-      331
-     ]
-    },
-    "promptText": "Between them, Luca brings 227 seashells and Nia brings 331. What is their combined count of seashells? A bar model makes it clear."
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0188",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "comparison",
-  "structureType": "storyDiff_band3",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 245,
-   "display": {
-    "counting": {
-     "have": 397,
-     "kind": "gap",
-     "target": 642
-    },
-    "promptText": "Luca has 642 seashells and Theo has 397. What is the difference in their seashells? A bar model makes it clear."
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0341",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "multiplicative",
-  "structureType": "storyTimes_band3",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 642,
-   "display": {
-    "bar": {
-     "k": 3,
-     "u": 214,
-     "kind": "timesOf"
-    },
-    "promptText": "Whatever Omar collects, Luca collects 3 times over. Omar has 214 seashells. What does Luca have? A bar model makes it clear."
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0494",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "fractionBar",
-  "structureType": "storyFrac_band3",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 212,
-   "display": {
-    "bar": {
-     "w": 848,
-     "den": 4,
-     "num": 1,
-     "kind": "fracOf"
-    },
-    "promptText": "Luca pours a 848-cup batch into 4 equal jars and hands over 1. How many cups get handed over? A bar model makes it clear."
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0094",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "partWhole",
-  "structureType": "storyLeft_band3",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 284,
-   "display": {
-    "part": 491,
-    "type": "barPartWhole",
-    "whole": 775,
-    "counting": {
-     "back": 491,
-     "kind": "countBack",
-     "start": 775
-    },
-    "promptText": "A pouch of 775 seashells loses 491 through a hole. How many seashells stay in Omar's pouch? A bar model makes it clear."
-   },
-   "answerType": "barModel"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0248",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "comparison",
-  "structureType": "storyMore_band3",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 697,
-   "display": {
-    "counting": {
-     "kind": "countOn",
-     "more": 355,
-     "start": 342
-    },
-    "promptText": "Finn finds 342 trading cards. June finds 355 more than Finn. How many trading cards does June find? A bar model makes it clear."
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0400",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "multiplicative",
-  "structureType": "storyShare_band3",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 321,
-   "display": {
-    "bar": {
-     "k": 3,
-     "w": 963,
-     "kind": "unitOf"
-    },
-    "promptText": "Omar lines up 963 seashells in 3 equal rows. How many seashells fill one row? A bar model makes it clear."
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "barModels-app-b0821-0553",
-  "modeId": "barModels",
-  "itemFamily": "application",
-  "subskill": "fractionBar",
-  "structureType": "storyHalf_band3",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "count",
-   "answer": 432,
-   "display": {
-    "bar": {
-     "w": 864,
-     "den": 2,
-     "num": 1,
-     "kind": "fracOf"
-    },
-    "promptText": "Omar freezes half of 864 juice pops for later. How many pops go in the freezer? A bar model makes it clear."
-   },
-   "answerType": "numberPad"
-  }
- },
- {
   "itemId": "barModels-conc-b0821-0001",
   "modeId": "barModels",
   "itemFamily": "conceptual",
@@ -7824,11 +6651,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-app-b0821-0240",
+  "itemId": "comparing-app-b0821-0200",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "benchmarkCompare",
-  "structureType": "storyCloserTo",
+  "structureType": "storyEnough",
   "levelRange": [
    7,
    10
@@ -7838,24 +6665,19 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "vs",
-   "answer": 80,
+   "answer": "No",
    "choices": [
-    80,
-    90
+    "Yes",
+    "No"
    ],
    "display": {
-    "compare": {
-     "n": 83,
-     "hi": 90,
-     "lo": 80,
-     "kind": "closerTo"
-    },
-    "promptText": "Ava's jar holds 83 beads. Is the jar nearer 80 or 90 beads?"
+    "truth": false,
+    "promptText": "Leo needs 820 stickers for the game. Leo has 810 stickers. Does Leo have enough stickers?"
    }
   }
  },
  {
-  "itemId": "comparing-app-b0821-0050",
+  "itemId": "comparing-app-b0821-0039",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "distanceCompare",
@@ -7869,13 +6691,13 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "vs",
-   "answer": "Rosa",
+   "answer": "Ida",
    "choices": [
-    "Rosa",
-    "Theo"
+    "Sam",
+    "Ida"
    ],
    "display": {
-    "promptText": "At the fair, Rosa wins 190 blocks and Theo wins 109 blocks. Who wins more blocks?"
+    "promptText": "Sam has 617 buttons. Ida has 671 buttons. Who has more buttons?"
    }
   }
  },
@@ -7906,11 +6728,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-app-b0821-0296",
+  "itemId": "comparing-app-b0821-0250",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "benchmarkCompare",
-  "structureType": "storyGapToGoal",
+  "structureType": "storyCloserTo",
   "levelRange": [
    7,
    10
@@ -7920,16 +6742,20 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "vs",
-   "answer": 50,
+   "answer": 920,
+   "choices": [
+    910,
+    920
+   ],
    "display": {
     "compare": {
-     "have": 850,
-     "kind": "gap",
-     "target": 900
+     "n": 917,
+     "hi": 920,
+     "lo": 910,
+     "kind": "closerTo"
     },
-    "promptText": "A full box holds 900 marbles. Nia packs 850 marbles. How many more marbles fit in the box?"
-   },
-   "answerType": "numberPad"
+    "promptText": "Amara's jar holds 917 acorns. Is the jar nearer 910 or 920 acorns?"
+   }
   }
  },
  {
@@ -8022,11 +6848,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-app-b0821-0208",
+  "itemId": "comparing-app-b0821-0168",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "benchmarkCompare",
-  "structureType": "storyCloserTo",
+  "structureType": "storyEnough",
   "levelRange": [
    1,
    3
@@ -8036,28 +6862,23 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "vs",
-   "answer": 20,
+   "answer": "Yes",
    "choices": [
-    10,
-    20
+    "Yes",
+    "No"
    ],
    "display": {
-    "compare": {
-     "n": 18,
-     "hi": 20,
-     "lo": 10,
-     "kind": "closerTo"
-    },
-    "promptText": "Finn counts 18 stamps. Is that closer to 10 stamps or to 20 stamps?"
+    "truth": true,
+    "promptText": "Theo needs 10 leaves for the game. Theo has 13 leaves. Does Theo have enough leaves?"
    }
   }
  },
  {
-  "itemId": "comparing-app-b0821-0123",
+  "itemId": "comparing-app-b0821-0010",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "distanceCompare",
-  "structureType": "storyOneMoreLess",
+  "structureType": "storyWhoMoreFewer",
   "levelRange": [
    1,
    3
@@ -8067,16 +6888,14 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "vs",
-   "answer": 11,
+   "answer": "Omar",
+   "choices": [
+    "June",
+    "Omar"
+   ],
    "display": {
-    "compare": {
-     "n": 12,
-     "kind": "oneMoreLess",
-     "delta": -1
-    },
-    "promptText": "Ben counts 12 shells. Kai's pile has one missing. How many shells are in Kai's pile?"
-   },
-   "answerType": "numberPad"
+    "promptText": "June has 4 coins. Omar has 5 coins. Who has more coins?"
+   }
   }
  },
  {
@@ -8106,11 +6925,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-app-b0821-0265",
+  "itemId": "comparing-app-b0821-0219",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "benchmarkCompare",
-  "structureType": "storyGapToGoal",
+  "structureType": "storyCloserTo",
   "levelRange": [
    1,
    3
@@ -8120,16 +6939,20 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "vs",
-   "answer": 9,
+   "answer": 10,
+   "choices": [
+    10,
+    20
+   ],
    "display": {
     "compare": {
-     "have": 11,
-     "kind": "gap",
-     "target": 20
+     "n": 12,
+     "hi": 20,
+     "lo": 10,
+     "kind": "closerTo"
     },
-    "promptText": "A full box holds 20 coins. June packs 11 coins. How many more coins fit in the box?"
-   },
-   "answerType": "numberPad"
+    "promptText": "Ida's jar holds 12 shells. Is the jar nearer 10 or 20 shells?"
+   }
   }
  },
  {
@@ -8231,11 +7054,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-app-b0821-0052",
+  "itemId": "comparing-app-b0821-0023",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "distanceCompare",
-  "structureType": "storyDifference",
+  "structureType": "storyWhoMoreFewer",
   "levelRange": [
    4,
    6
@@ -8245,24 +7068,22 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "vs",
-   "answer": 13,
+   "answer": "Sam",
+   "choices": [
+    "Sam",
+    "Ida"
+   ],
    "display": {
-    "compare": {
-     "kind": "difference",
-     "bigger": 34,
-     "smaller": 21
-    },
-    "promptText": "Ava saves 34 beads; Lily saves 21 beads. How many fewer beads does Lily have?"
-   },
-   "answerType": "numberPad"
+    "promptText": "Sam has 72 buttons. Ida has 68 buttons. Who has more buttons?"
+   }
   }
  },
  {
-  "itemId": "comparing-app-b0821-0222",
+  "itemId": "comparing-app-b0821-0182",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "benchmarkCompare",
-  "structureType": "storyCloserTo",
+  "structureType": "storyEnough",
   "levelRange": [
    4,
    6
@@ -8272,19 +7093,14 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "vs",
-   "answer": 20,
+   "answer": "No",
    "choices": [
-    20,
-    30
+    "Yes",
+    "No"
    ],
    "display": {
-    "compare": {
-     "n": 23,
-     "hi": 30,
-     "lo": 20,
-     "kind": "closerTo"
-    },
-    "promptText": "Luca counts 23 stickers. Is that closer to 20 stickers or to 30 stickers?"
+    "truth": false,
+    "promptText": "Leo needs 45 stickers for the game. Leo has 41 stickers. Does Leo have enough stickers?"
    }
   }
  },
@@ -8315,11 +7131,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "comparing-app-b0821-0086",
+  "itemId": "comparing-app-b0821-0028",
   "modeId": "comparing",
   "itemFamily": "application",
   "subskill": "distanceCompare",
-  "structureType": "storyLanguageTrap",
+  "structureType": "storyWhoMoreFewer",
   "levelRange": [
    4,
    6
@@ -8329,16 +7145,14 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "vs",
-   "answer": 11,
+   "answer": "Luca",
+   "choices": [
+    "Amara",
+    "Luca"
+   ],
    "display": {
-    "compare": {
-     "kind": "difference",
-     "bigger": 15,
-     "smaller": 4
-    },
-    "promptText": "Luca has 4 more stickers than Ava. Luca has 15 stickers. How many stickers does Ava have?"
-   },
-   "answerType": "numberPad"
+    "promptText": "At the fair, Amara wins 56 acorns and Luca wins 65 acorns. Who wins more acorns?"
+   }
   }
  },
  {
@@ -9567,11 +8381,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-app-b0821-0154",
+  "itemId": "counting-app-b0821-0205",
   "modeId": "counting",
   "itemFamily": "application",
   "subskill": "cardinality",
-  "structureType": "storyTwoSpots",
+  "structureType": "storyCountAllKinds",
   "levelRange": [
    1,
    3
@@ -9581,16 +8395,16 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 7,
+   "answer": 8,
    "display": {
     "counting": {
      "kind": "sum",
      "parts": [
-      4,
+      5,
       3
      ]
     },
-    "promptText": "Mina keeps 4 flowers on a shelf and 3 flowers in a drawer. Counting both spots, how many flowers does Mina have?"
+    "promptText": "Mina tips out a tub: 5 flowers and 3 berries. Mina counts only the flowers. Then Mina counts the berries. How many things did Mina count in all?"
    },
    "answerType": "numberPad"
   }
@@ -9625,11 +8439,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-app-b0821-0056",
+  "itemId": "counting-app-b0821-0011",
   "modeId": "counting",
   "itemFamily": "application",
   "subskill": "countOn",
-  "structureType": "storyTargetGap",
+  "structureType": "storyCountOn",
   "levelRange": [
    1,
    3
@@ -9639,20 +8453,20 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 4,
+   "answer": 17,
    "display": {
     "counting": {
-     "have": 5,
-     "kind": "gap",
-     "target": 9
+     "kind": "countOn",
+     "more": 3,
+     "start": 14
     },
-    "promptText": "A tray fits 9 balloons. Rosa sets down 5 balloons. How many more balloons fit on the tray?"
+    "promptText": "A basket starts with 14 balls. Ben drops in 3 more balls, counting on. How many balls are in the basket?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-app-b0821-0205",
+  "itemId": "counting-app-b0821-0216",
   "modeId": "counting",
   "itemFamily": "application",
   "subskill": "cardinality",
@@ -9666,16 +8480,16 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 8,
+   "answer": 10,
    "display": {
     "counting": {
      "kind": "sum",
      "parts": [
-      5,
-      3
+      6,
+      4
      ]
     },
-    "promptText": "Mina tips out a tub: 5 flowers and 3 berries. Mina counts only the flowers. Then Mina counts the berries. How many things did Mina count in all?"
+    "promptText": "On the mat lie 6 turtles and 4 balls. Finn counts every single thing on the mat. What number does Finn reach?"
    },
    "answerType": "numberPad"
   }
@@ -9710,34 +8524,28 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-app-b0821-0114",
+  "itemId": "counting-app-countOn-K_1-007",
   "modeId": "counting",
   "itemFamily": "application",
   "subskill": "countOn",
-  "structureType": "storyHiddenCount",
+  "structureType": "countObjects",
   "levelRange": [
    1,
    3
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": null,
+   "a": 9,
    "b": null,
    "op": "count",
-   "answer": 5,
+   "answer": 9,
    "display": {
-    "counting": {
-     "kind": "hidden",
-     "seen": 14,
-     "total": 19
-    },
-    "promptText": "Finn brought 19 turtles to school and hands out 14 turtles. How many turtles does Finn still hold?"
-   },
-   "answerType": "numberPad"
+    "promptText": "Rosa fed 6 ducks at the pond. Then she fed 3 more ducks. How many ducks did Rosa feed in all?"
+   }
   }
  },
  {
-  "itemId": "counting-app-b0821-0222",
+  "itemId": "counting-app-b0821-0227",
   "modeId": "counting",
   "itemFamily": "application",
   "subskill": "cardinality",
@@ -9751,16 +8559,16 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 7,
+   "answer": 8,
    "display": {
     "counting": {
      "kind": "sum",
      "parts": [
-      4,
+      5,
       3
      ]
     },
-    "promptText": "Mina collects 4 big flowers, 2 berries, and 3 small flowers. How many flowers does Mina collect?"
+    "promptText": "A shelf holds 5 red apples, 3 blue apples, and 2 balloons. Diego counts just the apples. How many apples are on the shelf?"
    },
    "answerType": "numberPad"
   }
@@ -9787,11 +8595,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-app-b0821-0171",
+  "itemId": "counting-app-b0821-0239",
   "modeId": "counting",
   "itemFamily": "application",
   "subskill": "cardinality",
-  "structureType": "storyTwoSpots",
+  "structureType": "storyExtraneous",
   "levelRange": [
    4,
    6
@@ -9801,16 +8609,16 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 13,
+   "answer": 11,
    "display": {
     "counting": {
      "kind": "sum",
      "parts": [
-      8,
-      5
+      7,
+      4
      ]
     },
-    "promptText": "Theo counts 8 balls outside, then 5 balls inside. How many balls did Theo count altogether?"
+    "promptText": "Mina collects 7 big flowers, 5 berries, and 4 small flowers. How many flowers does Mina collect?"
    },
    "answerType": "numberPad"
   }
@@ -9845,11 +8653,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-app-b0821-0073",
+  "itemId": "counting-app-b0821-0028",
   "modeId": "counting",
   "itemFamily": "application",
   "subskill": "countOn",
-  "structureType": "storyTargetGap",
+  "structureType": "storyCountOn",
   "levelRange": [
    4,
    6
@@ -9859,20 +8667,20 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 8,
+   "answer": 51,
    "display": {
     "counting": {
-     "have": 16,
-     "kind": "gap",
-     "target": 24
+     "kind": "countOn",
+     "more": 4,
+     "start": 47
     },
-    "promptText": "Diego wants a full line of 24 apples and has placed 16 apples. How many apples are still missing?"
+    "promptText": "Priya counts 47 cars, then 4 more cars arrive. How many cars does Priya count now?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-app-b0821-0239",
+  "itemId": "counting-app-b0821-0250",
   "modeId": "counting",
   "itemFamily": "application",
   "subskill": "cardinality",
@@ -9886,16 +8694,16 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 11,
+   "answer": 14,
    "display": {
     "counting": {
      "kind": "sum",
      "parts": [
-      7,
-      4
+      9,
+      5
      ]
     },
-    "promptText": "Mina collects 7 big flowers, 5 berries, and 4 small flowers. How many flowers does Mina collect?"
+    "promptText": "A shelf holds 9 red turtles, 5 blue turtles, and 6 balls. Finn counts just the turtles. How many turtles are on the shelf?"
    },
    "answerType": "numberPad"
   }
@@ -9930,34 +8738,28 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-app-b0821-0131",
+  "itemId": "counting-app-countOn-2_3-007",
   "modeId": "counting",
   "itemFamily": "application",
   "subskill": "countOn",
-  "structureType": "storyHiddenCount",
+  "structureType": "countObjects",
   "levelRange": [
    4,
    6
   ],
   "reviewStatus": "approved",
   "question": {
-   "a": null,
+   "a": 294,
    "b": null,
    "op": "count",
-   "answer": 11,
+   "answer": 294,
    "display": {
-    "counting": {
-     "kind": "hidden",
-     "seen": 18,
-     "total": 29
-    },
-    "promptText": "Priya owns 29 cars. Only 18 cars are out on the rug; the rest sit in a box. How many cars are in the box?"
-   },
-   "answerType": "numberPad"
+    "promptText": "Marcus had 264 bottle caps in a bin. He added 30 more bottle caps. How many bottle caps are in the bin now?"
+   }
   }
  },
  {
-  "itemId": "counting-app-b0821-0273",
+  "itemId": "counting-app-b0821-0278",
   "modeId": "counting",
   "itemFamily": "application",
   "subskill": "cardinality",
@@ -9971,14 +8773,14 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 23,
+   "answer": 48,
    "display": {
     "counting": {
      "kind": "groups",
-     "ones": 3,
-     "tens": 2
+     "ones": 8,
+     "tens": 4
     },
-    "promptText": "Mina fills 2 bags with ten flowers each and has 3 loose flowers. How many flowers does Mina have in all?"
+    "promptText": "Diego counts by tens over 4 full boxes of apples, then counts on 8 single apples. What number does Diego reach?"
    },
    "answerType": "numberPad"
   }
@@ -10011,11 +8813,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-app-b0821-0188",
+  "itemId": "counting-app-b0821-0256",
   "modeId": "counting",
   "itemFamily": "application",
   "subskill": "cardinality",
-  "structureType": "storyTwoSpots",
+  "structureType": "storyExtraneous",
   "levelRange": [
    7,
    10
@@ -10025,16 +8827,16 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 35,
+   "answer": 31,
    "display": {
     "counting": {
      "kind": "sum",
      "parts": [
-      22,
-      13
+      17,
+      14
      ]
     },
-    "promptText": "Mina keeps 22 flowers on a shelf and 13 flowers in a drawer. Counting both spots, how many flowers does Mina have?"
+    "promptText": "A shelf holds 17 red balls, 14 blue balls, and 5 flowers. Theo counts just the balls. How many balls are on the shelf?"
    },
    "answerType": "numberPad"
   }
@@ -10067,11 +8869,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-app-b0821-0086",
+  "itemId": "counting-app-b0821-0041",
   "modeId": "counting",
   "itemFamily": "application",
   "subskill": "countOn",
-  "structureType": "storyTargetGap",
+  "structureType": "storyCountOn",
   "levelRange": [
    7,
    10
@@ -10081,20 +8883,20 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 8,
+   "answer": 103,
    "display": {
     "counting": {
-     "have": 42,
-     "kind": "gap",
-     "target": 50
+     "kind": "countOn",
+     "more": 6,
+     "start": 97
     },
-    "promptText": "Ida wants a full line of 50 turtles and has placed 42 turtles. How many turtles are still missing?"
+    "promptText": "Luca says \"97\" for the fish counted so far, then counts 6 more fish. What number does Luca say last?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-app-b0821-0257",
+  "itemId": "counting-app-b0821-0269",
   "modeId": "counting",
   "itemFamily": "application",
   "subskill": "cardinality",
@@ -10108,16 +8910,16 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 35,
+   "answer": 33,
    "display": {
     "counting": {
      "kind": "sum",
      "parts": [
-      23,
-      12
+      18,
+      15
      ]
     },
-    "promptText": "Ida collects 23 big turtles, 6 balls, and 12 small turtles. How many turtles does Ida collect?"
+    "promptText": "Nia collects 18 big apples, 5 balloons, and 15 small apples. How many apples does Nia collect?"
    },
    "answerType": "numberPad"
   }
@@ -10150,11 +8952,11 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "counting-app-b0821-0137",
+  "itemId": "counting-app-b0821-0047",
   "modeId": "counting",
   "itemFamily": "application",
   "subskill": "countOn",
-  "structureType": "storyHiddenCount",
+  "structureType": "storyCountOn",
   "levelRange": [
    7,
    10
@@ -10164,20 +8966,20 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 13,
+   "answer": 112,
    "display": {
     "counting": {
-     "kind": "hidden",
-     "seen": 32,
-     "total": 45
+     "kind": "countOn",
+     "more": 5,
+     "start": 107
     },
-    "promptText": "Ida brought 45 turtles to school and hands out 32 turtles. How many turtles does Ida still hold?"
+    "promptText": "Sam already has 107 balloons in a row. Sam adds 5 more balloons to the row. How many balloons are in the row?"
    },
    "answerType": "numberPad"
   }
  },
  {
-  "itemId": "counting-app-b0821-0292",
+  "itemId": "counting-app-b0821-0299",
   "modeId": "counting",
   "itemFamily": "application",
   "subskill": "cardinality",
@@ -10191,14 +8993,14 @@ export const SEED_ITEMS = [
    "a": null,
    "b": null,
    "op": "count",
-   "answer": 86,
+   "answer": 116,
    "display": {
     "counting": {
      "kind": "groups",
      "ones": 6,
-     "tens": 8
+     "tens": 11
     },
-    "promptText": "Zoe counts by tens over 8 full boxes of cars, then counts on 6 single cars. What number does Zoe reach?"
+    "promptText": "Ben fills 11 bags with ten balls each and has 6 loose balls. How many balls does Ben have in all?"
    },
    "answerType": "numberPad"
   }
@@ -33873,600 +32675,6 @@ export const SEED_ITEMS = [
   }
  },
  {
-  "itemId": "numberBonds-app-b0820-001",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "partWhole",
-  "structureType": "bondStoryWholeUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 5,
-   "display": {
-    "parts": [
-     2,
-     3
-    ],
-    "promptText": "Mia has 2 red cups and 3 blue cups. How many cups does Mia have in all?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-154",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "missingPart",
-  "structureType": "bondStoryPartUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 4,
-   "display": {
-    "part": 2,
-    "whole": 6,
-    "promptText": "Leo owns 6 beads. Leo can see 2 beads on the mat; the rest hide in a pouch. How many beads hide in the pouch?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-307",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "decompose",
-  "structureType": "bondStoryPartnerToTen",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 8,
-   "display": {
-    "part": 2,
-    "whole": 10,
-    "promptText": "Mia wants a full ten of cups. Mia has 2 cups so far. How many more cups make ten?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-018",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "partWhole",
-  "structureType": "bondStoryWholeUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 9,
-   "display": {
-    "parts": [
-     5,
-     4
-    ],
-    "promptText": "Sam lines up 5 green beads, then adds a row of 4 yellow beads. How many beads are in the two rows together?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-171",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "missingPart",
-  "structureType": "bondStoryPartUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 7,
-   "display": {
-    "part": 3,
-    "whole": 10,
-    "promptText": "A basket holds 10 blocks for Nia. Nia lifts out 3 blocks. How many blocks stay in the basket?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-324",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "decompose",
-  "structureType": "bondStoryPartnerToTen",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 2,
-   "display": {
-    "part": 8,
-    "whole": 10,
-    "promptText": "A game needs ten beads. Sam brings 8 beads. How many beads does Sam still need for the game?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-035",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "partWhole",
-  "structureType": "bondStoryWholeUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 7,
-   "display": {
-    "parts": [
-     4,
-     3
-    ],
-    "promptText": "Ava glues 4 blocks on one page and 3 blocks on the next page. How many blocks does Ava glue in all?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-188",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "missingPart",
-  "structureType": "bondStoryPartUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 5,
-   "display": {
-    "part": 4,
-    "whole": 9,
-    "promptText": "Kai has 9 crayons in all. 4 of the crayons are new, and the rest are old. How many old crayons does Kai have?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-052",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "partWhole",
-  "structureType": "bondStoryWholeUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 11,
-   "display": {
-    "parts": [
-     2,
-     9
-    ],
-    "promptText": "Ava finds 2 blocks in the morning. Later Ava finds 9 more blocks. How many blocks does Ava find that day?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-205",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "missingPart",
-  "structureType": "bondStoryPartUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 9,
-   "display": {
-    "part": 2,
-    "whole": 11,
-    "promptText": "Kai started with 2 crayons. After a trade, Kai now has 11 crayons. How many crayons did the trade add?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-358",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "decompose",
-  "structureType": "bondStoryMakeTen",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 1,
-   "display": {
-    "part": 10,
-    "whole": 11,
-    "promptText": "Mia has 6 cups and wants a full group of ten cups. A friend gives Mia 5 cups. After the group of ten is full, how many extra cups does Mia hold?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-069",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "partWhole",
-  "structureType": "bondStoryWholeUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 13,
-   "display": {
-    "parts": [
-     2,
-     11
-    ],
-    "promptText": "Luca and a friend sort crayons. Luca holds 2 crayons; the friend holds 11 crayons. How many crayons do they hold together?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-222",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "missingPart",
-  "structureType": "bondStoryPartUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 10,
-   "display": {
-    "part": 3,
-    "whole": 13,
-    "promptText": "Ida counts 13 stickers altogether. Exactly 3 of the stickers are shiny. How many of the stickers are not shiny?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-375",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "decompose",
-  "structureType": "bondStoryMakeTen",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 7,
-   "display": {
-    "part": 10,
-    "whole": 17,
-    "promptText": "Sam stacks 8 beads in a rack that holds ten. Then Sam gets 9 more beads and fills the rack. How many beads are left over after the rack is full?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-086",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "partWhole",
-  "structureType": "bondStoryWholeUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 14,
-   "display": {
-    "parts": [
-     9,
-     5
-    ],
-    "promptText": "Nora puts 9 stickers in a box and 5 stickers in a bag. How many stickers does Nora pack altogether?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-239",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "missingPart",
-  "structureType": "bondStoryPartUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 3,
-   "display": {
-    "part": 11,
-    "whole": 14,
-    "promptText": "Omar needs 14 marbles for a craft. So far Omar has 11 marbles. How many more marbles does Omar still need?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-103",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "partWhole",
-  "structureType": "bondStoryWholeUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 45,
-   "display": {
-    "parts": [
-     30,
-     15
-    ],
-    "promptText": "On the shelf, Nora keeps 30 stickers. Under the bed, Nora keeps 15 more stickers. How many stickers does Nora keep in both spots?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-256",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "missingPart",
-  "structureType": "bondStoryPartUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 25,
-   "display": {
-    "part": 20,
-    "whole": 45,
-    "promptText": "Omar splits 45 marbles between two trays. One tray gets 20 marbles. How many marbles go on the other tray?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-409",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "decompose",
-  "structureType": "bondStoryTakeOutTen",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 24,
-   "display": {
-    "part": 10,
-    "whole": 34,
-    "promptText": "Mia bundles ten of the 34 cups with a rubber band. How many cups are outside the bundle?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-120",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "partWhole",
-  "structureType": "bondStoryWholeUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 80,
-   "display": {
-    "parts": [
-     65,
-     15
-    ],
-    "promptText": "Rosa has 65 striped marbles and 15 clear marbles. How many marbles does Rosa have in all?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-273",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "missingPart",
-  "structureType": "bondStoryPartUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 25,
-   "display": {
-    "part": 27,
-    "whole": 52,
-    "promptText": "Finn owns 52 buttons. Finn can see 27 buttons on the mat; the rest hide in a pouch. How many buttons hide in the pouch?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-426",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "decompose",
-  "structureType": "bondStoryTakeOutTen",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 39,
-   "display": {
-    "part": 10,
-    "whole": 49,
-    "promptText": "From a jar of 49 beads, Sam scoops out a full group of ten beads. How many beads remain in the jar?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-137",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "partWhole",
-  "structureType": "bondStoryTensOnes",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 67,
-   "display": {
-    "parts": [
-     60,
-     7
-    ],
-    "promptText": "Nia strings socks in tens: 6 full strings, plus 7 single socks. How many socks does Nia have altogether?"
-   },
-   "answerType": "numberPad"
-  }
- },
- {
-  "itemId": "numberBonds-app-b0820-290",
-  "modeId": "numberBonds",
-  "itemFamily": "application",
-  "subskill": "missingPart",
-  "structureType": "bondStoryPartUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": null,
-   "b": null,
-   "op": "bond",
-   "answer": 41,
-   "display": {
-    "part": 33,
-    "whole": 74,
-    "promptText": "A basket holds 74 leaves for Theo. Theo lifts out 33 leaves. How many leaves stay in the basket?"
-   },
-   "answerType": "numberBond"
-  }
- },
- {
   "itemId": "numberBonds-conc-b0820-001",
   "modeId": "numberBonds",
   "itemFamily": "conceptual",
@@ -44603,510 +42811,6 @@ export const SEED_ITEMS = [
     "promptText": "___, 150, 175, 200"
    },
    "answerType": "fillBlank"
-  }
- },
- {
-  "itemId": "subtraction-app-001",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceMore",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 43,
-   "b": 28,
-   "op": "−",
-   "answer": 15,
-   "display": {
-    "promptText": "This week Nia read 43 pages. Last week she read 28 pages. How many more pages did she read this week?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-004",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 52,
-   "b": 19,
-   "op": "−",
-   "answer": 33,
-   "display": {
-    "promptText": "Mom bought 52 markers. The kids used 19 in art class. How many markers does Mom have left?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-007",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "unknownSubtrahend",
-  "structureType": "separateChangeUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 61,
-   "b": null,
-   "op": "−",
-   "answer": 24,
-   "display": {
-    "promptText": "Rosa started with 61 books. She lent some away. Now she has 37 books. How many books did she lend?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-differenceAsDistance-4_5-compareSmallerFewer-b0728b-002",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareSmallerFewer",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 42,
-   "b": 13,
-   "op": "-",
-   "answer": 29,
-   "display": {
-    "promptText": "James has 13 fewer stickers than Sofia. Sofia has 42 stickers. How many stickers does James have?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-103",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 200,
-   "b": 125,
-   "op": "−",
-   "answer": 75,
-   "display": {
-    "promptText": "A museum had 200 visitors. Then 125 of them left for lunch. How many visitors remain in the museum?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-263",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "unknownSubtrahend",
-  "structureType": "separateChangeUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 500,
-   "b": null,
-   "op": "−",
-   "answer": 175,
-   "display": {
-    "promptText": "The park had 325 trees at first. Some were planted this spring. Now there are 500 trees. How many trees were planted?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-differenceAsDistance-4_5-compareSmallerMore-007",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareSmallerMore",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 33,
-   "b": 14,
-   "op": "-",
-   "answer": 19,
-   "display": {
-    "promptText": "Ian and Zoe have notebooks. Zoe has 33 notebooks and 14 more than Ian. How many notebooks does Ian have?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-243",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   7,
-   10
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 140,
-   "b": 68,
-   "op": "−",
-   "answer": 72,
-   "display": {
-    "promptText": "A factory had 140 boxes. 68 shipped out. How many boxes were left?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-014",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceMore",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": 3,
-   "op": "−",
-   "answer": 5,
-   "display": {
-    "promptText": "Sara picked 8 apples. Beto picked 3 apples. How many more apples did Sara pick?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-017",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 10,
-   "b": 4,
-   "op": "−",
-   "answer": 6,
-   "display": {
-    "promptText": "Lily had 10 grapes. She ate 4 grapes. How many grapes does Lily have left?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-020",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "unknownSubtrahend",
-  "structureType": "separateChangeUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 10,
-   "b": null,
-   "op": "−",
-   "answer": 4,
-   "display": {
-    "promptText": "Tasha had 10 candies. She ate some. Now she has 6 candies. How many candies did she eat?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-038",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceMore",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 9,
-   "b": 1,
-   "op": "−",
-   "answer": 8,
-   "display": {
-    "promptText": "Makoto has 9 shells. Nur has 1 shell. How many more shells does Makoto have?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-077",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 9,
-   "b": 7,
-   "op": "−",
-   "answer": 2,
-   "display": {
-    "promptText": "Uri had 9 magnets on his fridge. He took 7 off. How many magnets are left?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-116",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "unknownSubtrahend",
-  "structureType": "separateChangeUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": null,
-   "op": "−",
-   "answer": 2,
-   "display": {
-    "promptText": "Cob had 8 crayons. He used some. Now he has 6. How many crayons did Cob use?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-151",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceMore",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 10,
-   "b": 6,
-   "op": "−",
-   "answer": 4,
-   "display": {
-    "promptText": "The red jar has 10 beads. The blue jar has 6 beads. How many more beads are in the red jar?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-164",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   1,
-   3
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 8,
-   "b": 3,
-   "op": "−",
-   "answer": 5,
-   "display": {
-    "promptText": "Jade had 8 stickers. She gave 3 to her best friend. How many stickers does Jade have now?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-023",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceMore",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 15,
-   "b": 8,
-   "op": "−",
-   "answer": 7,
-   "display": {
-    "promptText": "Class A has 15 books and Class B has 8 books. How many more books does Class A have?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-026",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 20,
-   "b": 7,
-   "op": "−",
-   "answer": 13,
-   "display": {
-    "promptText": "Mom bought 20 markers. 7 were lost. How many markers does Mom have left?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-029",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "unknownSubtrahend",
-  "structureType": "separateChangeUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 15,
-   "b": null,
-   "op": "−",
-   "answer": 7,
-   "display": {
-    "promptText": "Marcus had 15 grapes. He ate some at snack time. Now he has 8 grapes. How many grapes did he eat?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-051",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceMore",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 16,
-   "b": 8,
-   "op": "−",
-   "answer": 8,
-   "display": {
-    "promptText": "Keva knitted 16 scarves. Liam knitted 8 scarves. How many more scarves did Keva knit?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-090",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 19,
-   "b": 6,
-   "op": "−",
-   "answer": 13,
-   "display": {
-    "promptText": "Harin had 19 seeds. She planted 6. How many seeds are left?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-129",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "unknownSubtrahend",
-  "structureType": "separateChangeUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 19,
-   "b": null,
-   "op": "−",
-   "answer": 12,
-   "display": {
-    "promptText": "Maya had 19 feet of rope. She cut some of it. Now she has 7 feet left. How many feet of rope did she cut?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-190",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "differenceAsDistance",
-  "structureType": "compareDifferenceMore",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 17,
-   "b": 9,
-   "op": "−",
-   "answer": 8,
-   "display": {
-    "promptText": "At the ice rink, 17 people skated. At the pond, 9 people skated. How many more skaters were at the rink?"
-   }
-  }
- },
- {
-  "itemId": "subtraction-app-203",
-  "modeId": "subtraction",
-  "itemFamily": "application",
-  "subskill": "decomposeToSubtract",
-  "structureType": "separateResultUnknown",
-  "levelRange": [
-   4,
-   6
-  ],
-  "reviewStatus": "approved",
-  "question": {
-   "a": 15,
-   "b": 4,
-   "op": "−",
-   "answer": 11,
-   "display": {
-    "promptText": "Vin baked 15 cookies. His cousin ate 4. How many cookies are left?"
-   }
   }
  },
  {

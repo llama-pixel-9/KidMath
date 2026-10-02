@@ -690,7 +690,8 @@ export default {
   op: "bond",
   subskills: SUBSKILLS,
   supportedFormats: SUPPORTED_FORMATS,
-  families: Object.values(ITEM_FAMILIES),
+  // No word problems: the v1 add/sub stories were retired on 2026-10-02.
+  families: ["conceptual", "procedural"],
   varieties: NUMBER_BOND_VARIETY_IDS,
 
   generate(level, context = {}) {

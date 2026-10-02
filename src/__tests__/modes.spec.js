@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { MODE_IDS, getModeConfig } from "../modes";
-import { generateQuestion, generateChoices, generateWorksheetSet } from "../mathEngine";
+import { createAdaptiveSession, generateQuestion, generateChoices, generateWorksheetSet, getNextQuestion } from "../mathEngine";
 import { buildQuestionFromBankItem } from "../itemBank.js";
 
 // Values only, so the test does not depend on the widget rendering.
@@ -59,8 +59,10 @@ describe("mode generation coverage", () => {
   // switched off for the youngest users. K does word problems in the standards
   // (read aloud), so the policy is now short prose and small numbers, not no
   // prose. See levelPolicy.WORD_PROBLEMS_FROM_LEVEL.
+  // Addition and subtraction left this list when their v1 stories were retired
+  // (2026-10-02): they declare no word-problem family, guarded below.
   it("offers story items at every level, including Kindergarten", () => {
-    const storyModes = ["addition", "subtraction", "multiplication", "division"];
+    const storyModes = ["multiplication", "division"];
     for (const mode of storyModes) {
       for (const level of [1, 2, 3]) {
         const families = new Set();
@@ -69,6 +71,43 @@ describe("mode generation coverage", () => {
         }
         expect(families.has("application"), `${mode} L${level} should tell stories`).toBe(true);
       }
+    }
+  });
+
+  // A topic whose stories were retired (addition, subtraction, Bar Models,
+  // Number Bonds) — or that never had any (Math Facts) — declares no
+  // application family. Its generator still writes template stories when no
+  // family is asked for; generateQuestion must never let an application-family
+  // question through, whatever the context asks — a forced variety or
+  // structure (the `?qaVariety=` QA tool) included. This guards the family
+  // label; Bar Models' generator writes every family as prose, so its guard is
+  // that the seed serves it from bank rows (retiredStories.spec).
+  it("never serves a word problem in a mode that declares no word-problem family", () => {
+    const storyless = MODE_IDS.filter((mode) => !(getModeConfig(mode).families || ["application"]).includes("application"));
+    expect(storyless).toEqual(expect.arrayContaining(["addition", "subtraction", "barModels", "numberBonds", "mathFacts"]));
+    const contexts = [
+      null,
+      { allowWordProblems: true },
+      { allowWordProblems: false },
+      { itemFamily: "application", allowWordProblems: true },
+      { varietyId: "bondFromStory", allowWordProblems: false },
+      { structureType: "compareBiggerFewer", itemFamily: "application", allowWordProblems: true },
+    ];
+    for (const mode of storyless) {
+      const top = getModeConfig(mode).maxLevel ?? 10;
+      for (let level = 1; level <= top; level++) {
+        for (const context of contexts) {
+          for (let i = 0; i < 12; i++) {
+            const q = generateQuestion(mode, level, context);
+            expect(q.metadata.itemFamily, `${mode} L${level} ${JSON.stringify(context)}`).not.toBe("application");
+          }
+        }
+      }
+    }
+    // The QA tool's path: a session forced to a retired story variety.
+    for (let i = 0; i < 12; i++) {
+      const session = createAdaptiveSession("numberBonds", 5, { allowWordProblems: false, qaVariety: "bondFromStory", savedProgress: { level: 3, mistakeBank: [] } });
+      expect(getNextQuestion(session).question.metadata.itemFamily).not.toBe("application");
     }
   });
 
@@ -112,7 +151,11 @@ describe("mode generation coverage", () => {
       // Bare facts only: Math Facts declares no word-problem family.
       "mathFacts",
     ]);
-    const modesWithApplicationContext = MODE_IDS.filter((mode) => !bankless.has(mode));
+    // A mode with no word-problem family is never asked for one (guarded above).
+    const asksStories = (mode) => (getModeConfig(mode).families || ["application"]).includes("application");
+    const modesWithApplicationContext = MODE_IDS.filter((mode) => !bankless.has(mode) && asksStories(mode));
+    expect(modesWithApplicationContext).not.toContain("addition");
+    expect(modesWithApplicationContext).toContain("multiplication");
     for (const mode of modesWithApplicationContext) {
       const q = generateQuestion(mode, 10, {
         itemFamily: "application",

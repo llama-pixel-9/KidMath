@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Feather from "../components/feather.jsx";
 import { useTheme } from "../useTheme.js";
 import { MODE_IDS, getModeConfig } from "../modes";
+import { restoreMistakeBank } from "../mathEngine";
 import { loadProgressSync, loadProgressSummary, saveTopicState } from "../progressStore";
 import { activeKidGrade } from "../kidProfiles";
 import { GRADE_LABELS } from "../skills/catalog.js";
@@ -206,7 +207,9 @@ export default function GrownUpsPanel({ open, onClose }) {
               <tbody>
                 {rows.map(({ id, progress }) => {
                   const standing = skillStanding(id, progress.level ?? 1, progress, mastery);
-                  const reviewCount = Array.isArray(progress.mistakeBank) ? progress.mistakeBank.length : 0;
+                  // What the next session will actually retry: saved retired stories
+                  // (2026-10-02) are dropped there, so they are not counted here.
+                  const reviewCount = restoreMistakeBank(progress.mistakeBank).length;
                   return (
                     <tr key={id} className="border-t border-slate-100">
                       <td className="py-2">

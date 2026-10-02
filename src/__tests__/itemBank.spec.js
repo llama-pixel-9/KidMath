@@ -64,28 +64,28 @@ describe("application item bank", () => {
 
   it("returns an approved item for the requested mode and subskill", () => {
     const item = selectApprovedApplicationItem({
-      modeId: "addition",
+      modeId: "multiplication",
       level: 10,
-      targetSubskill: "makeTen",
+      targetSubskill: "equalGroups",
     });
     expect(item).toBeTruthy();
-    expect(item.modeId).toBe("addition");
+    expect(item.modeId).toBe("multiplication");
     expect(item.reviewStatus).toBe(REVIEW_STATUS.APPROVED);
-    expect(item.subskill).toBe("makeTen");
+    expect(item.subskill).toBe("equalGroups");
   });
 
   it("avoids items in the recent exposure window when alternates exist", () => {
     const first = selectApprovedApplicationItem({
-      modeId: "subtraction",
+      modeId: "division",
       level: 10,
-      targetSubskill: "differenceAsDistance",
+      targetSubskill: "unknownQuotient",
     });
     expect(first).toBeTruthy();
 
     const next = selectApprovedApplicationItem({
-      modeId: "subtraction",
+      modeId: "division",
       level: 10,
-      targetSubskill: "differenceAsDistance",
+      targetSubskill: "unknownQuotient",
       recentItemIds: [first.itemId],
     });
     expect(next).toBeTruthy();
@@ -112,7 +112,7 @@ describe("session exposure tracking and per-item stats", () => {
   function answerAt(session, allowWordProblems = true) {
     const q = generateQuestion(session.mode, session.level, {
       itemFamily: "application",
-      targetSubskill: "makeTen",
+      targetSubskill: "equalGroups",
       allowWordProblems,
       recentBankItemIds: session.recentBankItemIds || [],
     });
@@ -120,7 +120,7 @@ describe("session exposure tracking and per-item stats", () => {
   }
 
   it("records bankItemStats and recentBankItemIds when a bank item is answered", () => {
-    let session = createAdaptiveSession("addition", 5, { allowWordProblems: true });
+    let session = createAdaptiveSession("multiplication", 5, { allowWordProblems: true });
     session.level = 10;
 
     const q = answerAt(session);
@@ -136,7 +136,7 @@ describe("session exposure tracking and per-item stats", () => {
   });
 
   it("does not repeat the same bank item back-to-back when alternates exist", () => {
-    let session = createAdaptiveSession("addition", 5, { allowWordProblems: true });
+    let session = createAdaptiveSession("multiplication", 5, { allowWordProblems: true });
     session.level = 10;
 
     const first = answerAt(session);
@@ -146,7 +146,7 @@ describe("session exposure tracking and per-item stats", () => {
   });
 
   it("aggregates bank item stats across multiple attempts", () => {
-    let session = createAdaptiveSession("addition", 5, { allowWordProblems: true });
+    let session = createAdaptiveSession("multiplication", 5, { allowWordProblems: true });
     session.level = 10;
 
     const q1 = answerAt(session);
@@ -170,7 +170,7 @@ describe("bank fallback and observability", () => {
     expect(initial.fallbackToGenerated).toBe(0);
 
     for (let i = 0; i < 5; i++) {
-      generateQuestion("addition", 10, {
+      generateQuestion("multiplication", 10, {
         itemFamily: "application",
         allowWordProblems: true,
       });
@@ -187,7 +187,7 @@ describe("bank fallback and observability", () => {
     setBankItems([], "test");
     try {
       expect(() =>
-        generateQuestion("addition", 5, {
+        generateQuestion("multiplication", 5, {
           itemFamily: "application",
           allowWordProblems: true,
           requireBankForApplication: true,
@@ -202,7 +202,7 @@ describe("bank fallback and observability", () => {
     setBankItems([], "test");
     try {
       resetBankFallbackStats();
-      const q = generateQuestion("addition", 5, {
+      const q = generateQuestion("multiplication", 5, {
         itemFamily: "application",
         allowWordProblems: true,
       });

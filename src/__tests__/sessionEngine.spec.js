@@ -93,34 +93,35 @@ describe("adaptive session engine", () => {
     // an item the kid already met always comes back. With it off — the
     // default — the retry step used to skip every miss whose prompt had
     // words in it, which is most of the bank.
-    const session = createAdaptiveSession("addition", 15, { allowWordProblems: false });
+    // (Multiplication: addition's stories were retired on 2026-10-02.)
+    const session = createAdaptiveSession("multiplication", 15, { allowWordProblems: false });
     session.questionsAnswered = 10;
     session.questionsSinceRetry = 10;
     session.mistakeBank = [
       {
-        mode: "addition",
-        a: 7,
-        b: 8,
-        op: "+",
-        answer: 15,
+        mode: "multiplication",
+        a: 3,
+        b: 4,
+        op: "x",
+        answer: 12,
         dueAt: 0,
-        itemKey: "addition|application|story",
-        reviewChoices: [15, 14, 16, 1],
-        display: { promptText: "Mina found 7 shells. Then she found 8 more. How many shells does Mina have now?" },
+        itemKey: "multiplication|application|story",
+        reviewChoices: [12, 7, 16, 1],
+        display: { promptText: "Mina has 3 bags with 4 shells in each bag. How many shells does Mina have?" },
         metadata: {
-          modeId: "addition",
+          modeId: "multiplication",
           itemFamily: "application",
           mathPractices: ["MP1"],
           misconceptionTags: [],
           cognitiveDemand: "DOK2",
-          subskill: "makeTen",
+          subskill: "equalGroups",
         },
       },
     ];
 
     const { question, isRetry } = getNextQuestion(session);
     expect(isRetry).toBe(true);
-    expect(question.itemKey).toBe("addition|application|story");
+    expect(question.itemKey).toBe("multiplication|application|story");
   });
 
   it("retries string-answer choice items without crashing (poison-item fix)", () => {
@@ -394,5 +395,44 @@ describe("carried-over misses", () => {
     expect(session.mistakeBank.map((q) => q.dueAt)).toEqual([5, 3]);
     expect(restoreMistakeBank(null)).toEqual([]);
     expect(restoreMistakeBank(Array.from({ length: 30 }, (_, i) => ({ ...miss, itemKey: `k${i}` }))).length).toBe(20);
+  });
+
+  it("drop a saved story from a topic that no longer asks stories (2026-10-02 retire)", () => {
+    const story = (mode) => ({
+      mode,
+      a: 3,
+      b: 4,
+      answer: 12,
+      itemKey: `${mode}|application|story`,
+      display: { promptText: "A saved word problem." },
+      metadata: { modeId: mode, itemFamily: "application" },
+      dueAt: 3,
+    });
+    const sum = { mode: "addition", a: 7, b: 8, op: "+", answer: 15, itemKey: "addition:7+8", metadata: { modeId: "addition", itemFamily: "procedural" }, dueAt: 3 };
+    const kept = restoreMistakeBank([story("addition"), story("subtraction"), story("barModels"), story("numberBonds"), sum, story("multiplication"), story("counting")]);
+    expect(kept.map((q) => q.itemKey)).toEqual(["addition:7+8", "multiplication|application|story", "counting|application|story"]);
+    const session = createAdaptiveSession("addition", 15, { savedProgress: { level: 3, mistakeBank: [story("addition"), sum] } });
+    expect(session.mistakeBank.map((q) => q.itemKey)).toEqual(["addition:7+8"]);
+  });
+
+  it("drop a saved retired Counting or Comparing story, keep their other stories (2026-10-02 retire)", () => {
+    const row = (mode, structureType) => ({
+      mode,
+      answer: 5,
+      itemKey: `${mode}|${structureType}`,
+      display: { promptText: "A saved word problem." },
+      metadata: { modeId: mode, itemFamily: "application", structureType },
+      dueAt: 3,
+    });
+    const saved = [
+      row("counting", "storyTwoSpots"),
+      row("counting", "storyCountOn"),
+      row("comparing", "storyDifference"),
+      row("comparing", "storyLanguageTrap"),
+      row("comparing", "storyEnough"),
+    ];
+    expect(restoreMistakeBank(saved).map((q) => q.itemKey)).toEqual(["counting|storyCountOn", "comparing|storyEnough"]);
+    const session = createAdaptiveSession("comparing", 15, { savedProgress: { level: 3, mistakeBank: saved } });
+    expect(session.mistakeBank.map((q) => q.itemKey)).toEqual(["counting|storyCountOn", "comparing|storyEnough"]);
   });
 });

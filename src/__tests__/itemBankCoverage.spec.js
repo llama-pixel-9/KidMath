@@ -11,6 +11,10 @@ import {
   validateBank,
 } from "../itemBank/index.js";
 import { MODE_BLUEPRINTS } from "../modes/blueprints.js";
+import { getModeConfig } from "../modes/index.js";
+
+// The engine only asks a mode for the families it declares (bankCellCoverage).
+const familiesOf = (modeId) => getModeConfig(modeId).families || Object.values(ITEM_FAMILIES);
 
 // Cell-coverage spec for the curated item bank.
 //
@@ -56,7 +60,7 @@ function computeAllExpectedCells() {
   for (const [modeId, cfg] of Object.entries(MODE_BLUEPRINTS)) {
     if (ONLY_MODE && modeId !== ONLY_MODE) continue;
     for (const subskill of cfg.subskills) {
-      for (const family of Object.values(ITEM_FAMILIES)) {
+      for (const family of familiesOf(modeId)) {
         if (ONLY_FAMILY && family !== ONLY_FAMILY) continue;
         for (const band of LEVEL_BANDS) {
           cells.push({ modeId, subskill, family, band });
@@ -109,9 +113,12 @@ describe("cell coverage matrix", () => {
   it("every mode in the blueprint has at least one approved item at the 4-5 band (application)", () => {
     // Baseline sanity: Phase-0 ships with application-only coverage at 4-5
     // across all 8 modes. This test is always hard-enforced so regressions
-    // are caught immediately.
+    // are caught immediately. A mode that declares no application family
+    // (addition and subtraction since their stories were retired, 2026-10-02)
+    // is never asked for one, so it has no cell here.
     const missing = [];
     for (const modeId of Object.keys(MODE_BLUEPRINTS)) {
+      if (!familiesOf(modeId).includes(ITEM_FAMILIES.APPLICATION)) continue;
       const items = BUNDLED_ITEMS.filter(
         (it) =>
           it.modeId === modeId &&

@@ -106,8 +106,58 @@ describe("pinned skill session", () => {
   });
 
   it("word problems on: a skill with stories mixes them in", () => {
-    const { served } = play("subtraction", { skillId: "sub-missing-number-1000", allowWordProblems: true });
+    const { served } = play("multiplication", { skillId: "mul-equal-groups", allowWordProblems: true });
     expect(served.some(({ question: q }) => q.metadata.itemFamily === "application")).toBe(true);
+  });
+
+  // Addition, subtraction, Bar Models and Number Bonds: stories retired 2026-10-02.
+  it("word problems on: a topic with no stories serves none, and the session still fills", () => {
+    for (const skillId of ["sub-missing-number-1000", "add-make-ten", "bar-models-comparison-4", "number-bonds-missing-part-4"]) {
+      const skill = playSkillById(skillId);
+      expect(skill.stories, skillId).toBeNull();
+      const { served } = play(skill.mode, { skillId, allowWordProblems: true });
+      expect(served.filter((s) => !s.isRetry)).toHaveLength(15);
+      for (const { question: q } of served) expect(q.metadata.itemFamily, skillId).not.toBe("application");
+    }
+  });
+
+  // Every bank skill with nothing in memory: the fallback asks the generator
+  // words-off and pins no family (pinning one made the money, time and lines &
+  // shapes generators write MORE stories), so no skill gets a generated word
+  // problem, words on or off. Left out, each for a reason:
+  // - Bar Models: its generator writes every family as a story, so its floor
+  //   is the seed (retiredStories.spec), not the generator.
+  // - Skills whose generator writes a story whatever it is asked (before the
+  //   2026-10-02 retire too): their cells must stay in the seed.
+  const STORY_ONLY_GENERATORS = new Set([
+    "measurement-multi-step-measure-1",
+    "measurement-multi-step-measure-4",
+    "measurement-multi-step-measure-7",
+    "money-make-change-4",
+    "money-make-change-7",
+    "time-calendar-7",
+    "lines-shapes-shape-properties-1",
+  ]);
+  it("a skill whose cell is not in memory falls back to the generator, never to a generated word problem", () => {
+    const skills = playSkills().filter(
+      (skill) => skill.source.kind === "bank" && skill.mode !== "mathFacts" && skill.mode !== "barModels" && !STORY_ONLY_GENERATORS.has(skill.id)
+    );
+    for (const id of STORY_ONLY_GENERATORS) expect(playSkillById(id)?.id, id).toBe(id);
+    for (const mode of ["addition", "subtraction", "numberBonds", "counting", "comparing", "money", "time", "linesShapes"]) {
+      expect(skills.some((skill) => skill.mode === mode), mode).toBe(true);
+    }
+    setBankItems([], "test");
+    try {
+      for (const skill of skills) {
+        for (const allowWordProblems of [true, false]) {
+          const { served } = play(skill.mode, { skillId: skill.id, allowWordProblems }, { size: 4 });
+          expect(served.filter((s) => !s.isRetry)).toHaveLength(4);
+          for (const { question: q } of served) expect(q.metadata.itemFamily, skill.id).not.toBe("application");
+        }
+      }
+    } finally {
+      setBankItems(FULL_ITEMS, "test");
+    }
   });
 });
 

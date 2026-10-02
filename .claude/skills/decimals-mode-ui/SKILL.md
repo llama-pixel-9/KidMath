@@ -54,10 +54,11 @@ gauge sequences).
 
 ## Traps learned building this bank
 
-- **Sessions default word-problems OFF** (`createAdaptiveSession` options
-  default `allowWordProblems: false`) and `isVerbalPrompt` counts ≥6 total
-  LETTERS — every prose drill is "verbal". Each procedural band needs
-  letter-free items or the bank never serves under default settings.
+- **Word problems can be OFF** (the gear switch; the engine's
+  `createAdaptiveSession` still defaults `allowWordProblems: false`, though
+  the web app passes on by default since 2026-10-02) and `isVerbalPrompt`
+  counts ≥6 total LETTERS — every prose drill is "verbal". Each procedural
+  band needs letter-free items or the bank never serves with the setting off.
 - `createAdaptiveSession(mode, sessionSize, options)` — options is the
   THIRD argument. Passing options second silently ignores them (probes did
   this and chased a phantom serving bug).

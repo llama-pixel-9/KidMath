@@ -527,10 +527,14 @@ export function setProgressLoader(fn) {
  * dueAt of the session it happened in (a miss on the last question sits past
  * that session's end), so restored entries are re-due after the normal
  * spacing; otherwise they never came back. Saved lists are already capped.
+ * A story from a topic whose v1 stories are held (skills/storyHold.js) is
+ * dropped: it is never asked again, and the next save clears it from the list
+ * (and from the grown-ups' "In review" count).
  */
-export function restoreMistakeBank(saved) {
+export function restoreMistakeBank(saved, mode = null) {
   return (Array.isArray(saved) ? saved : [])
     .slice(-MAX_REVIEW_ITEMS)
+    .filter((q) => !isHeldStory(q, mode))
     .map((q) => (q && typeof q === "object" && q.dueAt != null && q.dueAt > RETRY_SPACING ? { ...q, dueAt: RETRY_SPACING } : q));
 }
 
@@ -545,7 +549,7 @@ export function createAdaptiveSession(mode, sessionSize, options = {}) {
     questionsAnswered: 0,
     firstTryCorrect: 0,
     retriesMastered: 0,
-    mistakeBank: restoreMistakeBank(saved.mistakeBank),
+    mistakeBank: restoreMistakeBank(saved.mistakeBank, mode),
     responseTimesMs: [],
     // A size the caller gives wins; Math Facts practice runs about 20 facts.
     sessionSize: sessionSize ?? (skillSession?.fluency ? FLUENCY_SESSION_SIZE : SESSION_SIZE),
@@ -570,8 +574,8 @@ export function getNextQuestion(session) {
   // met this item; the setting decides which NEW questions get scheduled
   // (below). With it off, the old filter skipped every retry whose prompt
   // had words in it, which is most of the bank. The one exception is a story
-  // from a topic whose v1 stories are held (skills/storyHold.js): it stays
-  // in the saved list but is never served.
+  // from a topic whose v1 stories are held (skills/storyHold.js): restoring
+  // the saved list drops it, and this guard covers a list set any other way.
   const dueReview = session.mistakeBank.find(
     (q) =>
       (q.dueAt ?? RETRY_SPACING) <= session.questionsAnswered &&

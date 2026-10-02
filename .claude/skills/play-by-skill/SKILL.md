@@ -61,23 +61,39 @@ masterySnapshot, challenge })`. Without skill options it is the ladder session.
   `user_preferences.allow_word_problems` (the cloud row wins on sign-in; a
   user with no row gets one seeded from this device; a FAILED read plays the
   local value and writes nothing). `MathExplorer` passes it into every
-  session. Stories then show both when practice moves through a topic's
-  skills (Larkit picks, the Fledging Flight) and when a kid picks a skill.
-- A skill adds the `application` family only when it has `stories` and
-  `playStoriesAllowed(mode, setting)` is true (`familiesFor`). Drills never
-  serve stories; no skill lists `application` in its own source families.
+  session.
+- **Existing signed-in households stay OFF until a data migration runs.**
+  Their rows were seeded from the old default (off) and the cloud row wins.
+  `20261002183000` only changes the column default; `20261002183100` flips
+  the false rows nobody changed after the seeding insert and needs Sai's
+  go-ahead. Neither is applied.
+- A worded skill adds the `application` family only when it has `stories`
+  and `playStoriesAllowed(mode, setting)` is true (`familiesFor`); with two
+  source families that is one question in three. A drill with `stories`
+  serves one from its story cell every third question of that skill
+  (`drillStoryDue`, falling back to the drill when the cell is empty). No
+  skill lists `application` in its own source families. A skill whose
+  catalog entry has no `stories` never serves one: today multiplication
+  grade 5 and division grades 4 and 5 have none, so Larkit picks there is
+  story-free.
 - **Held topics:** `STORIES_HELD_MODE_IDS` in `src/skills/storyHold.js`
   (addition, subtraction, barModels, numberBonds). Their v1 stories stay out
-  of play whatever the setting: not in skill sessions, not in the plain
-  session (application turns procedural), not from the template generator
-  when a cell is empty (it is asked with stories off), not as a due retry
-  (`isHeldStory`; the entry stays in the saved list). The admin `?item=` pin
-  still serves the pinned row. When a topic's v2 stories go live, its v1
-  stories retire and the topic leaves the list.
-- Printed worksheets do not read the setting: the screen starts at the last
-  sheet type printed, else "practice".
-- iOS does not pass the setting yet, so the engine default (off) applies
-  there (`createAdaptiveSession` defaults `allowWordProblems` to false).
+  of play whatever the setting: not in skill sessions (worded or drill), not
+  in the plain session (application turns procedural), not from the template
+  generator when a cell is empty (it is asked with stories off), not as a
+  due retry (`restoreMistakeBank(saved, mode)` drops a saved one, so the next
+  save clears it; `isHeldStory` also guards the retry pick, and the
+  grown-ups' "In review" count skips them). The gear panel says new word
+  problems for the topic are on the way. The admin `?item=` pin still serves
+  the pinned row. When a topic's v2 stories go live, its v1 stories retire
+  and the topic leaves the list.
+- Printed worksheets do not read the setting (web and iOS): the screen
+  starts at the last sheet type printed, else "practice".
+- iOS passes the setting into both sessions (`SessionViewModel.
+  allowWordProblems`: the same UserDefaults key, on when missing; nothing on
+  iOS writes it and iOS does not read `user_preferences` yet). The engine's
+  own `createAdaptiveSession` default is still off, so a caller that passes
+  nothing gets no stories (`simulateKid` plays words on unless `--words 0`).
 
 ## Math Facts practice (`src/facts/factPractice.js`, `factMarks.js`)
 A Math Facts skill session (not its Fledging Flight) picks FACTS, not bank
@@ -151,8 +167,8 @@ score (`GRADE_UP.pass`), not by a level change — it never moves the level.
 `skillsPlay.spec`, `skillMastery.spec`, `skillSession.spec` (every playable
 skill serves five valid questions of its own, words on and off),
 `topicState.spec`, `parentReport.spec`, `storyHold.spec` (stories show for
-an open topic, never for a held one, generator fallback and `?item=` pin
-included), `userPreferences.spec` (default on, failed read writes nothing),
+an open topic, drills included, never for a held one, generator fallback and
+`?item=` pin included), `userPreferences.spec` (default on, failed read writes nothing),
 `e2e/skillsPlay.spec.js` (whole
 sessions through the real widgets: level untouched, mastery saved, challenge
 pays no stars, parent controls). Must stay green unchanged: `bankCellCoverage`,

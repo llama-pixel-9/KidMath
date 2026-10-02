@@ -3,8 +3,10 @@
 -- and the client seeds a new user's row from that value; this keeps the
 -- column default in step for any row inserted without it.
 --
--- Schema only: rows that already exist keep the value they hold. Moving them
--- is a separate step Sai approves.
+-- Schema only: rows that already exist keep the value they hold, and almost
+-- all of them say false because they were seeded from the old device default.
+-- Until 20261002183100 (needs Sai's go-ahead) is applied, existing signed-in
+-- households keep word problems off.
 --
 -- Review before applying (agents cannot supabase db push by design).
 

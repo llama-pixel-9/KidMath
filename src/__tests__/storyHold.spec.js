@@ -13,6 +13,7 @@ import { getModeConfig } from "../modes";
 import { maxLevelForMode } from "../modeLevels.js";
 import { playSkillById, playSkills, skillsForPlay, topicGrades } from "../skills/play";
 import { skillServable } from "../skills/session";
+import { cellMatches, storyMatches } from "../skills/skillPool";
 import { STORIES_HELD_MODE_IDS, isHeldStory, playStoriesAllowed, storiesHeld } from "../skills/storyHold";
 
 /**
@@ -90,6 +91,59 @@ describe("stories show in play when the setting is on", () => {
   it("the setting off still keeps them out", () => {
     const served = play("money", { skillId: "money-count-coins-4", allowWordProblems: false }, 30);
     expect(served.some(isStory)).toBe(false);
+  });
+});
+
+describe("a drill with stories mixes them in too", () => {
+  // Most multiplication and division skills are drills built to their claim;
+  // the catalog gives them a story cell, and every third question of the
+  // skill comes from it.
+  const rowById = new Map(FULL_ITEMS.map((row) => [row.itemId, row]));
+
+  for (const skillId of ["mul-tables-2-5-10", "mul-2digit-by-1digit", "div-facts-7-8-9"]) {
+    it(`${skillId}: stories from the skill's own story cell, the rest drills`, () => {
+      const skill = playSkillById(skillId);
+      expect(skill.source.kind).toBe("computation");
+      expect(skill.stories, "the skill has stories").toBeTruthy();
+      const served = play(skill.mode, { skillId }, 30);
+      const stories = served.filter(isStory);
+      expect(stories.length).toBeGreaterThanOrEqual(8);
+      expect(stories.length).toBeLessThanOrEqual(12);
+      for (const q of stories) {
+        expect(q.skillId).toBe(skill.id);
+        expect(q.metadata.itemSource).toBe("bank");
+        const row = rowById.get(q.metadata.itemId);
+        expect(row, q.metadata.itemId).toBeTruthy();
+        expect(cellMatches(row, skill.mode, { ...skill.stories, families: ["application"] }), row.itemId).toBe(true);
+        expect(storyMatches(row.question, skill.stories), row.itemId).toBe(true);
+      }
+      for (const q of served.filter((s) => !isStory(s))) expect(q.metadata.itemSource).toBe("skillSampler");
+    });
+  }
+
+  it("with the setting off a drill serves no story", () => {
+    const served = play("multiplication", { skillId: "mul-tables-2-5-10", allowWordProblems: false }, 30);
+    expect(served.some(isStory)).toBe(false);
+  });
+
+  it("Larkit picks in multiplication and division grade 3 mixes stories in", () => {
+    for (const mode of ["multiplication", "division"]) {
+      const ids = skillsForPlay("3", mode).map((s) => s.id);
+      const served = play(mode, { skillIds: ids, grade: "3" }, 30);
+      expect(served.some(isStory), mode).toBe(true);
+    }
+  });
+
+  it("a held topic's drills serve no story, though the catalog gives them a cell", () => {
+    for (const skillId of ["add-within-10", "add-2digit-regroup", "sub-within-20", "sub-across-zeros"]) {
+      const skill = playSkillById(skillId);
+      expect(skill.stories, skillId).toBeTruthy();
+      const served = play(skill.mode, { skillId }, 30);
+      for (const q of served) {
+        expect(isStory(q), `${skillId}: ${q.display?.promptText}`).toBe(false);
+        expect(q.metadata.itemSource).toBe("skillSampler");
+      }
+    }
   });
 });
 

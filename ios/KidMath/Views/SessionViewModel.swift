@@ -32,6 +32,15 @@ final class SessionViewModel: ObservableObject {
         }
     }
 
+    /// The word-problems setting, under the web's key (src/userPreferences.js).
+    /// On unless an off was saved (Sai, 2026-10-02); nothing on iOS writes it
+    /// yet. The shared engine still keeps the v1 stories of the held topics
+    /// out of play (src/skills/storyHold.js).
+    static let allowWordProblemsKey = "kidmath-allow-word-problems"
+    static var allowWordProblems: Bool {
+        UserDefaults.standard.object(forKey: allowWordProblemsKey) as? Bool ?? true
+    }
+
     let modeId: String
     let skillRequest: SkillRequest?
     /// Questions in the current run (a Fledging Flight is six).
@@ -164,7 +173,7 @@ final class SessionViewModel: ObservableObject {
             let session = try engine.createSession(
                 mode: modeId,
                 sessionSize: sessionSize,
-                options: ["savedProgress": savedProgress]
+                options: ["savedProgress": savedProgress, "allowWordProblems": Self.allowWordProblems]
             )
             self.session = session
             self.isFledgingRun = false
@@ -193,6 +202,7 @@ final class SessionViewModel: ObservableObject {
         ) else { return false }
         let flight = options["challenge"] as? Bool ?? false
         options["savedProgress"] = savedProgress
+        options["allowWordProblems"] = Self.allowWordProblems
         do {
             let rule = engine.fledgingFlightRule()
             let size = flight ? rule.questions : baseSessionSize

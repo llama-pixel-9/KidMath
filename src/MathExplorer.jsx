@@ -55,6 +55,7 @@ import { ensureModeLoaded } from "./itemBank.js";
 import { loadTopic } from "./itemBank/loadTopic.js";
 import { loadSessionsSync } from "./analytics/sessionLog.js";
 import { GRADE_UP } from "./skills/topicState.js";
+import { storiesHeld } from "./skills/storyHold.js";
 import { sessionLabel as skillSessionLabel, sessionOptionsFor, settleSkillSession } from "./skills/flow.js";
 import SkillStanding from "./play/SkillStanding.jsx";
 import { FIGURE_COLORS, useAnswerKeys, KeyHint } from "./components/kit";
@@ -508,6 +509,11 @@ function SettingsPanel({ mode, allowWordProblems, onAllowWordProblemsChange, cal
             <p className={`text-xs ${theme.textMuted}`}>
               Story questions for stronger readers.
             </p>
+            {storiesHeld(mode) && (
+              <p className={`mt-1 text-xs ${theme.textMuted}`}>
+                New {getModeConfig(mode).shortLabel} word problems are on the way.
+              </p>
+            )}
           </div>
           <button
             className={`relative w-12 h-7 rounded-full transition-colors cursor-pointer ${
@@ -821,7 +827,7 @@ export default function MathExplorer({ initialMode }) {
       });
       // A skill session plays at its skill's level, not the saved level.
       if (!newSession.skillIds) newSession.level = saved.level;
-      newSession.mistakeBank = restoreMistakeBank(saved.mistakeBank);
+      newSession.mistakeBank = restoreMistakeBank(saved.mistakeBank, mode);
       setSession(newSession);
       sessionRecordRef.current = null;
       loadNextQuestion(newSession);

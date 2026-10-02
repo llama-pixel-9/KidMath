@@ -16,6 +16,7 @@ import { meadowEnabled } from "../gamificationFlags.js";
 import { loadSessions, loadSessionsSync } from "../analytics/sessionLog.js";
 import { skillStanding } from "../analytics/reportModel.js";
 import { deriveMastery } from "../skills/mastery.js";
+import { isHeldStory } from "../skills/storyHold.js";
 
 /**
  * The parent snapshot: one screen answering "is my kid practicing, and where
@@ -206,7 +207,8 @@ export default function GrownUpsPanel({ open, onClose }) {
               <tbody>
                 {rows.map(({ id, progress }) => {
                   const standing = skillStanding(id, progress.level ?? 1, progress, mastery);
-                  const reviewCount = Array.isArray(progress.mistakeBank) ? progress.mistakeBank.length : 0;
+                  // Only what can come back: a held topic's v1 story is never asked again.
+                  const reviewCount = Array.isArray(progress.mistakeBank) ? progress.mistakeBank.filter((q) => !isHeldStory(q, id)).length : 0;
                   return (
                     <tr key={id} className="border-t border-slate-100">
                       <td className="py-2">

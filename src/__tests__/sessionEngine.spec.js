@@ -126,10 +126,30 @@ describe("adaptive session engine", () => {
     expect(question.itemKey).toBe("money|application|story");
   });
 
+  it("drops a held topic's saved v1 story when the mistake bank is restored, and keeps the rest", () => {
+    // Addition's v1 stories are held out of play (skills/storyHold.js). One
+    // missed before the hold is dropped from the restored list, so the next
+    // save clears it (and the grown-ups' "In review" count); the drill saved
+    // beside it, and an open topic's story, stay.
+    const heldStory = storyRetry("addition", "makeTen", "Mina found 7 shells. Then she found 8 more. How many shells does Mina have now?");
+    const drill = { ...DRILL, dueAt: 0, itemKey: "addition|drill" };
+    for (const allowWordProblems of [true, false]) {
+      const session = createAdaptiveSession("addition", 15, {
+        allowWordProblems,
+        savedProgress: { level: 3, mistakeBank: [heldStory, drill] },
+      });
+      expect(session.mistakeBank.map((q) => q.itemKey)).toEqual(["addition|drill"]);
+    }
+    // A saved entry that does not name its topic: the topic it was saved under counts.
+    const unnamed = { ...heldStory, mode: undefined, metadata: { ...heldStory.metadata, modeId: undefined } };
+    expect(restoreMistakeBank([unnamed, drill], "addition").map((q) => q.itemKey)).toEqual(["addition|drill"]);
+    const moneyStory = storyRetry("money", "countCoins", "Mina had 7 cents. Then she found 8 more cents. How many cents does Mina have now?");
+    expect(restoreMistakeBank([moneyStory], "money")).toHaveLength(1);
+  });
+
   it("never serves a due retry of a held topic's v1 story, whatever the setting", () => {
-    // Addition's v1 stories are held out of play (skills/storyHold.js); one
-    // missed before the hold stays in the saved list but is not asked again.
-    // The drill waiting behind it still comes back.
+    // The guard behind the restore: a held story in a mistake list set any
+    // other way is still not asked again. The drill waiting behind it comes back.
     for (const allowWordProblems of [true, false]) {
       const session = createAdaptiveSession("addition", 15, { allowWordProblems });
       session.questionsAnswered = 10;

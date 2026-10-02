@@ -9,7 +9,8 @@
  *
  * Play only: a story is never chosen for these topics, whatever the
  * word-problems setting, by a skill session, the plain session, the template
- * generator behind either, or a due retry. The admin pin (`/play/<mode>?item=`)
+ * generator behind either, or a due retry (a saved one is dropped when the
+ * mistake bank is restored). The admin pin (`/play/<mode>?item=`)
  * still serves the pinned row whatever its family, and a QA `?qaVariety=` link
  * still gets the generator variety it names; printed worksheets do not read
  * this list. Pure, no imports: the native engine bundles it.

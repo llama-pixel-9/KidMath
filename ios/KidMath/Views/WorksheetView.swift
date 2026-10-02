@@ -20,10 +20,10 @@ struct WorksheetView: View {
     @Environment(\.theme) private var theme
     @Environment(\.dismiss) private var dismiss
 
-    /// This screen's own memory. It READS the household word-problem
-    /// preference (src/userPreferences.js, same key) as a default but never
-    /// writes it: printing a drill must not switch word problems off in play.
-    static let allowWordProblemsKey = "kidmath-allow-word-problems"
+    /// This screen's own memory. It neither reads nor writes the play
+    /// word-problems setting (as on the web): stories on in play must not turn
+    /// a printed sheet into a mixed one, and printing a drill must not switch
+    /// word problems off in play.
     static let gradeKey = "larkit-worksheet-grade"
     static let problemTypeKey = "larkit-worksheet-problem-type"
 
@@ -54,10 +54,10 @@ struct WorksheetView: View {
     @State private var pdfURL: URL?
     @State private var errorMessage = ""
 
+    /// The last sheet type printed, else practice.
     private static func initialProblemType() -> String {
-        let defaults = UserDefaults.standard
-        if let last = defaults.string(forKey: problemTypeKey), problemTypes.contains(last) { return last }
-        return defaults.bool(forKey: allowWordProblemsKey) ? "mixed" : "practice"
+        if let last = UserDefaults.standard.string(forKey: problemTypeKey), problemTypes.contains(last) { return last }
+        return "practice"
     }
 
     private var grades: [String] { catalog["grades"] as? [String] ?? [] }

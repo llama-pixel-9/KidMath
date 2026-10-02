@@ -1,7 +1,13 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
+
+// nativeEntry imports the consent notice as text (esbuild's .md loader);
+// Vite cannot transform a bare .md import, and nothing here reads it.
+vi.mock("../legal/parental-consent-notice.md", () => ({ default: "" }));
+
+import "../engine/nativeEntry.js";
 import wordProblems, { BLANK, GRADE2_LEVELS, HINT_EXAMPLE, SHAPES, SUBSKILLS, buildMissingNumberQuestion, partsForLevel } from "../modes/wordProblems.js";
 import { MODE_IDS, V2_ONLY_MODE_IDS, getModeConfig, visibleModeGroups } from "../modes/index.js";
-import { generateChoices, generateQuestion, createAdaptiveSession } from "../mathEngine.js";
+import { generateChoices, generateQuestion, createAdaptiveSession, getNextQuestion, isSessionComplete, recordAnswer } from "../mathEngine.js";
 import { DEFAULT_LIVE_VERSION, isServable, topicVisible } from "../itemBank/versionRules.js";
 import { FULL_ITEMS } from "../itemBank/fullBank.js";
 import { getBankItems, setBankItems } from "../itemBank/index.js";
@@ -47,6 +53,62 @@ function solved(q) {
 }
 
 const carries = (x, y) => (x % 10) + (y % 10) >= 10;
+
+// Three rows per subskill and family. Stories are worded; a story kind's
+// reasoning rows mix a bare prompt with worded ones, so a session that
+// still steered toward bare prompts with the setting off would show; the
+// missing-number rows are bare number sentences, as the real ones are.
+function testRows() {
+  const rows = [];
+  let n = 0;
+  for (const sub of SUBSKILLS) {
+    for (const family of ["application", "conceptual", "procedural"]) {
+      for (let k = 0; k < 3; k += 1) {
+        n += 1;
+        const a = 20 + n;
+        const bare = sub === "missingNumber" || (family === "conceptual" && k === 0);
+        const promptText = bare
+          ? `${a} + 10 = ?`
+          : family === "application"
+            ? `Ana has ${a} shells. Ben gives Ana 10 more. How many shells does Ana have now? (${sub} ${k})`
+            : `Which number sentence fits? ${a} + 10 = ? (${sub} ${family} ${k})`;
+        rows.push({
+          itemId: `wp-test-${sub}-${family}-${k}`,
+          modeId: "wordProblems",
+          itemFamily: family,
+          subskill: sub,
+          structureType: `test-${sub}`,
+          levelRange: [4, 6],
+          reviewStatus: "approved",
+          version: 2,
+          question: { a, b: 10, op: "+", answer: a + 10, display: { promptText } },
+        });
+      }
+    }
+  }
+  return rows;
+}
+
+/** A whole session as the session loop runs it, every answer right: the row ids served. */
+function servedIds(start, next = getNextQuestion, record = recordAnswer, done = isSessionComplete) {
+  let session = start;
+  const ids = [];
+  for (let guard = 0; !done(session) && guard < 50; guard += 1) {
+    const { question, isRetry } = next(session);
+    ids.push(question.metadata.itemId ?? null);
+    session = record(session, question, question.answer, 3000, isRetry).session;
+  }
+  return ids;
+}
+
+const withSeed = (seed, run) => {
+  vi.spyOn(Math, "random").mockImplementation(mulberry32(seed));
+  try {
+    return run();
+  } finally {
+    vi.restoreAllMocks();
+  }
+};
 
 describe("the Word Problems topic", () => {
   it("is registered as a v2-only topic with its five subskills and two families", () => {
@@ -298,13 +360,22 @@ describe("the Grade 2 skills", () => {
     for (const s of skills) expect(playable.has(s.id), s.id).toBe(true);
   });
 
-  it("story skills serve their own stories and reasoning rows; the missing-number skill serves bare number sentences only", () => {
+  it("story skills list their stories in their own families, so choosing one means getting stories; the missing-number skill serves bare number sentences only", () => {
     for (const s of skills) {
       const sub = s.source.subskills[0];
-      expect(s.source.families).toEqual(["conceptual"]);
-      if (sub === "missingNumber") expect(s.stories).toBeNull();
-      else expect(s.stories).toEqual({ levels: GRADE2_LEVELS, subskills: [sub] });
+      expect(s.source.families, s.id).toEqual(sub === "missingNumber" ? ["conceptual"] : ["application", "conceptual"]);
+      // `stories` is another topic's optional story twin, the part the word
+      // problems setting adds. Here the stories are the skill itself.
+      expect(s.stories, s.id).toBeNull();
     }
+  });
+
+  it("is the only topic whose skills list stories in their own families: every other topic's stories stay with the setting", () => {
+    const own = [...WORKSHEET_SKILLS, ...PLAY_ONLY_SKILLS].filter((s) => s.source.families?.includes("application"));
+    expect([...new Set(own.map((s) => s.mode))]).toEqual(["wordProblems"]);
+    expect(playSkills().filter((s) => s.source.families?.includes("application")).map((s) => s.id).sort()).toEqual(
+      skills.filter((s) => s.source.subskills[0] !== "missingNumber").map((s) => s.id).sort()
+    );
   });
 
   it("cite Sai's codes, long form, in every loaded framework", () => {
@@ -315,28 +386,9 @@ describe("the Grade 2 skills", () => {
     }
   });
 
-  it("each draws only its own subskill's rows, in its own families", () => {
+  it("each draws only its own subskill's rows, in its own families, with the word problems setting on or off", () => {
     const before = getBankItems();
-    const rows = [];
-    let n = 0;
-    for (const sub of SUBSKILLS) {
-      for (const family of ["application", "conceptual", "procedural"]) {
-        for (let k = 0; k < 3; k += 1) {
-          n += 1;
-          rows.push({
-            itemId: `wp-test-${sub}-${family}-${k}`,
-            modeId: "wordProblems",
-            itemFamily: family,
-            subskill: sub,
-            structureType: `test-${sub}`,
-            levelRange: [4, 6],
-            reviewStatus: "approved",
-            version: 2,
-            question: { a: 20 + n, b: 10, op: "+", answer: 30 + n, display: { promptText: `${20 + n} + 10 = ? (${sub} ${family} ${k})` } },
-          });
-        }
-      }
-    }
+    const rows = testRows();
     try {
       setBankItems(rows, "test");
       for (const skill of skills) {
@@ -351,13 +403,98 @@ describe("the Grade 2 skills", () => {
             expect(row.subskill, skill.id).toBe(sub);
             families.add(row.itemFamily);
           }
-          const want =
-            sub === "missingNumber" || !allowWordProblems ? ["conceptual"] : ["application", "conceptual"];
+          const want = sub === "missingNumber" ? ["conceptual"] : ["application", "conceptual"];
           expect([...families].sort(), `${skill.id} words=${allowWordProblems}`).toEqual(want);
         }
       }
     } finally {
       setBankItems(before, "test");
     }
+  });
+
+  it("serves the same session whether the setting is on, off, or not passed (the iPhone passes none)", () => {
+    const before = getBankItems();
+    const rows = testRows();
+    const storyIds = new Set(rows.filter((r) => r.itemFamily === "application").map((r) => r.itemId));
+    const requests = [...skills.map((s) => ({ skillId: s.id })), { skillIds: skills.map((s) => s.id), grade: "2" }];
+    try {
+      setBankItems(rows, "test");
+      for (const request of requests) {
+        const label = request.skillId || "mixed";
+        const runs = [true, false, undefined].map((allowWordProblems) =>
+          withSeed(2026, () =>
+            servedIds(createAdaptiveSession("wordProblems", 10, { ...request, allowWordProblems, savedProgress: { level: 4 } }))
+          )
+        );
+        expect(runs[0]).toHaveLength(10);
+        for (const id of runs[0]) expect(rows.some((r) => r.itemId === id), `${label}: ${id}`).toBe(true);
+        expect(runs[1], `${label}: off`).toEqual(runs[0]);
+        expect(runs[2], `${label}: not passed`).toEqual(runs[0]);
+        const stories = runs[0].filter((id) => storyIds.has(id)).length;
+        if (request.skillId === "wp-g2-box") expect(stories, label).toBe(0);
+        else expect(stories, label).toBeGreaterThan(0);
+      }
+    } finally {
+      setBankItems(before, "test");
+    }
+  });
+});
+
+describe("the Word Problems topic on the iPhone (the native engine, driven as Swift drives it)", () => {
+  const K = globalThis.KidMath;
+  const skills = PLAY_ONLY_SKILLS.filter((s) => s.mode === "wordProblems");
+
+  afterEach(() => {
+    K.setVersionSwitch([], {});
+    K.resetBankToBundle();
+  });
+
+  /** The same rows as raw item_bank rows, the shape SupabaseService hands the engine. */
+  const rawRows = () =>
+    testRows().map((r) => ({
+      item_id: r.itemId,
+      mode_id: r.modeId,
+      item_family: r.itemFamily,
+      subskill: r.subskill,
+      structure_type: r.structureType,
+      level_min: r.levelRange[0],
+      level_max: r.levelRange[1],
+      review_status: r.reviewStatus,
+      payload: r.question,
+      source: "test",
+      version: r.version,
+    }));
+
+  // Swift's SessionViewModel: skillSessionOptions, then createSession with
+  // savedProgress and no word problems setting; the session crosses as JSON.
+  const play = (request) => {
+    const progress = { level: 4 };
+    const options = K.skillSessionOptions("wordProblems", progress, { profileGrade: "2nd", sessions: [] }, request);
+    expect(options, JSON.stringify(request)).toBeTruthy();
+    expect(options.allowWordProblems).toBeUndefined();
+    const json = (value) => JSON.parse(JSON.stringify(value));
+    return servedIds(
+      json(K.createAdaptiveSession("wordProblems", 10, { ...options, savedProgress: progress })),
+      (session) => json(K.getNextQuestion(session)),
+      (session, question, answer, ms, isRetry) => json(K.recordAnswer(session, question, answer, ms, isRetry)),
+      (session) => K.isSessionComplete(session)
+    );
+  };
+
+  it("serves a story skill's stories once the topic is live", () => {
+    const rows = rawRows();
+    K.setVersionSwitch([{ mode_id: "wordProblems", live_version: "v2" }], {});
+    K.addBankRows(rows, "wordProblems");
+    const family = new Map(rows.map((r) => [r.item_id, r.item_family]));
+    for (const skill of skills) {
+      const sub = skill.source.subskills[0];
+      const ids = play({ skill: skill.id });
+      expect(ids, skill.id).toHaveLength(10);
+      for (const id of ids) expect(id, skill.id).toMatch(new RegExp(`^wp-test-${sub}-`));
+      const families = new Set(ids.map((id) => family.get(id)));
+      expect([...families].sort(), skill.id).toEqual(sub === "missingNumber" ? ["conceptual"] : ["application", "conceptual"]);
+    }
+    const mixed = play({ mix: true, grade: "2" });
+    expect(mixed.some((id) => family.get(id) === "application"), "Larkit picks").toBe(true);
   });
 });

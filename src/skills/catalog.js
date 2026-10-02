@@ -273,9 +273,13 @@ const facts = (subskill, levels, numbers) => ({
 // subskill's bank rows. A story skill serves its stories (application) and
 // the reasoning rows about that kind of story (conceptual: choose the number
 // sentence, choose the story); "Find the missing number" serves the bare
-// number sentences with a blank (conceptual). Titles show on the kid's topic
-// sheet (and are read aloud), so no "equation" in them. Grade 2 is levels
-// 4-6 (src/modes/wordProblems.js).
+// number sentences with a blank (conceptual). The stories ARE the skill here,
+// so they sit in the skill's own families, not in `stories` (the optional
+// story twin of a skill in another topic, the part the word problems setting
+// adds): choosing this topic means getting stories, whatever the setting
+// (Sai, 2026-10-02). Titles show on the kid's topic sheet (and are read
+// aloud), so no "equation" in them. Grade 2 is levels 4-6
+// (src/modes/wordProblems.js).
 // Play only: no rows exist yet (the blueprint rows await Sai), and a
 // worksheet title is a promise a sheet cannot keep without them. `standards`
 // holds the codes of every loaded framework; standards.spec checks them.
@@ -284,8 +288,7 @@ const STORY_CODES = { ccss: ["2.OA.A.1"], tx: ["2.4C", "2.7C"], fl: ["MA.2.AR.1.
 const BOX_CODES = { ccss: ["2.NBT.B.5"], tx: ["2.4B"], fl: ["MA.2.AR.2.2"], va: ["2.CE.1b"], ga: ["2.NR.2.4"] };
 const wordStory = (id, subskill, title, level) => ({
   ...banked(id, "2", "wordProblems", STORY_CODES.ccss[0], title,
-    { families: ["conceptual"], subskills: [subskill], levels: G2_WORDS },
-    { levels: G2_WORDS, subskills: [subskill] }, level),
+    { families: ["application", "conceptual"], subskills: [subskill], levels: G2_WORDS }, null, level),
   standards: STORY_CODES,
 });
 const WORD_PROBLEM_SKILLS = [

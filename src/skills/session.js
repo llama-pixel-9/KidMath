@@ -82,6 +82,13 @@ function pickSkill(session) {
   return [...pool].sort((a, b) => asked(a) - asked(b))[0];
 }
 
+// The word problems setting governs a skill's optional story twin
+// (`skill.stories`). A skill that lists stories in its own families (the
+// Word Problems topic) was chosen for its words: the setting neither drops
+// its stories nor steers it toward terse rows.
+const wordsWanted = (skill, session) =>
+  session.allowWordProblems !== false || skill.source.families?.includes("application");
+
 function familiesFor(skill, session) {
   const families = [...skill.source.families];
   if (skill.stories && session.allowWordProblems !== false) families.push("application");
@@ -93,7 +100,8 @@ function bankQuestionFor(skill, session) {
   const start = (session.familyCursor || 0) % families.length;
   for (let step = 0; step < families.length; step += 1) {
     const family = families[(start + step) % families.length];
-    const story = family === "application";
+    // A family the skill's own source does not list is its story twin.
+    const story = !skill.source.families.includes(family);
     const filter = story ? { ...skill.stories, families: ["application"] } : skill.source;
     const item = selectApprovedBankItem({
       modeId: skill.mode,
@@ -103,7 +111,7 @@ function bankQuestionFor(skill, session) {
         cellMatches(row, skill.mode, filter) &&
         (story ? storyMatches(row.question || {}, skill.stories) : withinNumbers(row.question || {}, skill.source.numbers)),
       recentItemIds: session.recentBankItemIds || [],
-      allowWordProblems: session.allowWordProblems !== false,
+      allowWordProblems: wordsWanted(skill, session),
     });
     if (!item) continue;
     const level = Math.min(Math.max(skill.level, item.levelRange[0]), item.levelRange[1]);
@@ -168,7 +176,7 @@ export function nextSkillQuestion(session) {
     // existed, un-stamped, so it is credited by its own cell.
     q = generateQuestion(skill.mode, skill.level, {
       targetSubskill: skill.source.subskills?.[0],
-      allowWordProblems: session.allowWordProblems !== false,
+      allowWordProblems: wordsWanted(skill, session),
       recentBankItemIds: session.recentBankItemIds || [],
     });
     if (questionAnswerType(q) === "choice") q.choices = generateChoices(q.answer, 4, q);

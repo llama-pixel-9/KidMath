@@ -7,7 +7,8 @@ import JavaScriptCore
 /// the contract in src/engine/nativeEntry.js.
 ///
 /// Ownership rules (mirror of the web app's split):
-///   - Swift fetches bank items from Supabase and injects them (`setBankItems`).
+///   - Swift fetches bank rows and the version switch from Supabase and
+///     injects them (`addBankRows`, `setVersionSwitch`).
 ///   - Swift owns saved progress and passes it into `createSession(options:)`
 ///     as `savedProgress`; the engine never persists anything.
 ///
@@ -123,11 +124,38 @@ final class EngineBridge {
     }
 
     /// Raw PostgREST rows from Supabase; the engine normalizes them with the
-    /// same code the web's cloud loaders use and merges them into the seeded
-    /// bank. Returns how many rows were new.
+    /// same code the web's cloud loaders use and holds them per topic. A topic
+    /// with rows serves the ones the version switch allows, in place of its
+    /// seed items (src/engine/nativeBank.js). `modeId` is the topic the fetch
+    /// was for: that topic's seed is replaced even when no rows came back, as
+    /// the web's signed-in refresh does. Returns how many rows were new.
     @discardableResult
-    func addBankRows(_ rows: [[String: Any]]) throws -> Int {
-        Int(try call("addBankRows", [rows]).toInt32())
+    func addBankRows(_ rows: [[String: Any]], modeId: String? = nil) throws -> Int {
+        var arguments: [Any] = [rows]
+        if let modeId { arguments.append(modeId) }
+        return Int(try call("addBankRows", arguments).toInt32())
+    }
+
+    /// The item bank version switch: raw `item_version_switch` rows and
+    /// whether this device previews v2. The engine re-filters every row it
+    /// holds, so a flip needs no re-fetch. Empty rows mean every topic at its
+    /// default (v1; Math Facts v2), as on the web when its read fails.
+    func setVersionSwitch(rows: [[String: Any]], preview: Bool) throws {
+        _ = try call("setVersionSwitch", [rows, ["preview": preview]])
+    }
+
+    /// The v2-only topics (Math Facts) the switch hides from the pickers.
+    /// Not wired yet: ModeCatalog has no Math Facts tile, so nothing calls
+    /// this. When it gets one, read the switch at launch for every kid
+    /// (BankService.refreshVersionSwitch; anon may read the table) and filter
+    /// HomeView, TopicControlsView and WorksheetView by these ids, as
+    /// src/hooks/useHiddenTopics.js does on the web.
+    func hiddenTopics() throws -> [String] {
+        let result = try call("hiddenTopics")
+        guard let topics = result.toObject() as? [String] else {
+            throw EngineError.badResult("hiddenTopics() did not return an array of strings")
+        }
+        return topics
     }
 
     func bankCount() throws -> Int {

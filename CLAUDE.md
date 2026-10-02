@@ -207,7 +207,14 @@ Reruns also overwrite same-cell draft ids — be skip-existing aware.
 
 Simulator flags (argument-domain `UserDefaults`, via `simctl launch io.larkit.app`):
 `-autostartMode <mode>` jumps straight into a mode · `-kidmath-theme <id>` forces
-a theme · `-showPaywall 1` opens the paywall.
+a theme · `-showPaywall 1` opens the paywall · `-previewV2 1` makes the device a
+v2 preview viewer for that launch (on a real device, open `kidmath://preview?v=2`;
+`?v=1` stops it — the web's `?preview=v2`/`?preview=v1`): topics at `preview` in
+the item bank version switch serve their v2 rows. iOS applies the switch through
+the engine (`KidMath.setVersionSwitch`, same `versionRules.js` as the web); a
+signed-in kid's session start re-reads it at most every 30s, so a flip lands
+between sessions. Don't approve a v2 row until kids are on an iOS build that
+has this: older builds serve every v2 row as v1.
 
 Web: `/play/<mode>?item=<itemId>` pins one bank row (any status) as every
 question in the session — the "Play" link in the /admin review queue. The

@@ -11,7 +11,11 @@
  * free of window/fetch/import.meta.
  *
  * Contract with Swift:
- *   - Bank items are INJECTED, never fetched: call KidMath.setBankItems(json).
+ *   - Bank items are INJECTED, never fetched: Swift passes a topic's approved
+ *     rows to KidMath.addBankRows(rows, modeId) (tests use KidMath.setBankItems).
+ *   - The version switch is INJECTED too: Swift reads item_version_switch and
+ *     the preview flag and calls KidMath.setVersionSwitch(rows, { preview });
+ *     the engine serves what src/itemBank/versionRules.js allows (nativeBank.js).
  *   - Saved progress is INJECTED per session via options.savedProgress.
  *   - Everything crosses as plain JSON-serialisable values.
  */
@@ -41,15 +45,15 @@ import {
   isYesNoJudgment,
   questionAnswerType,
 } from "../mathEngine.js";
+import { getBankItems, getBankSource } from "../itemBank/index.js";
 import {
-  setBankItems,
-  getBankItems,
-  getBankSource,
-  addBankItems,
-  resetBankToBundle,
-} from "../itemBank/index.js";
-import { normalizeBankRow } from "../itemBank/normalize.js";
-import { MODE_IDS } from "../modes/index.js";
+  addRows as addBankRows,
+  hiddenTopics,
+  reset as resetBank,
+  setItems as setBankItems,
+  setVersionSwitch,
+} from "./nativeBank.js";
+import { MODE_IDS, V2_ONLY_MODE_IDS } from "../modes/index.js";
 import { startingLevelFor, gradeFitFor } from "../gradeSeed.js";
 import { areaFigureSpec } from "../figures/areaFigureSpec.js";
 import { generateWorksheetRun, paperFigureKey, worksheetCapacity } from "../worksheets/generateWorksheet.js";
@@ -108,19 +112,25 @@ g.KidMath = {
   version: 1,
   modes: () => MODE_IDS.slice(),
 
-  // Bank injection (Swift fetches approved items from Supabase, passes them here)
-  setBankItems: (items) => setBankItems(Array.isArray(items) ? items : [], "native"),
+  // Bank injection (Swift fetches approved items from Supabase, passes them
+  // here). The served bank is rebuilt through the version switch on every
+  // change; see nativeBank.js.
+  setBankItems: (items) => setBankItems(items),
   getBankItems: () => getBankItems(),
   getBankSource: () => getBankSource(),
   bankCount: () => getBankItems().length,
   // Raw PostgREST rows from Swift -> normalized (same mapping as the web's
-  // cloud loaders) -> merged into the seeded bank. Returns how many were new.
-  addBankRows: (rows) =>
-    addBankItems(
-      (Array.isArray(rows) ? rows : []).map(normalizeBankRow).filter(Boolean),
-      "native-cloud"
-    ),
-  resetBankToBundle: () => resetBankToBundle(),
+  // cloud loaders) -> held per topic; a topic with rows serves the servable
+  // ones in place of its seed. `modeId` is the topic the fetch was for, so a
+  // fetch with no rows still replaces that topic's seed. Returns how many
+  // item ids were new.
+  addBankRows: (rows, modeId) => addBankRows(rows, modeId),
+  resetBankToBundle: () => resetBank(),
+  // The version switch: raw item_version_switch rows plus { preview }. Empty
+  // rows = every topic at its default (v1; Math Facts v2), as on the web.
+  setVersionSwitch: (rows, options) => setVersionSwitch(rows, options ?? {}),
+  // v2-only topics the switch hides from the pickers (useHiddenTopics.js).
+  hiddenTopics: () => hiddenTopics(V2_ONLY_MODE_IDS),
 
   // Stateless generation + scoring
   generateQuestion: (mode, level, context) => generateQuestion(mode, level, context ?? null),

@@ -1,7 +1,7 @@
 import { supabase } from "../supabaseClient.js";
 import { setBankItems } from "./index.js";
 import { normalizeBankRow } from "./normalize.js";
-import { isServable, loadVersionSwitch, previewEnabled } from "./versionSwitch.js";
+import { isServable, previewEnabled, readVersionSwitch } from "./versionSwitch.js";
 
 // Re-exported so existing callers (modeLoader, admin UI) keep their import path.
 export { normalizeBankRow };
@@ -48,18 +48,20 @@ export function noteMissingV2Columns(error) {
  * The per-skill version switch, cached for the session so mode loads never
  * wait on a second round trip. The first caller loads it; `refresh: true`
  * re-reads it, which the debounced full refresh does so a flip in the admin
- * page reaches the next session without a redeploy. Never rejects: the
- * fallback is an empty map, meaning every skill on v1.
+ * page reaches the next session without a redeploy. Never rejects. A failed
+ * re-read keeps the last good map (iOS BankService does the same), so a
+ * flaky read cannot roll a flipped skill back to v1; before any good read
+ * the fallback is an empty map, meaning every skill at its default.
  */
 let switchMap = null;
 let switchPromise = null;
 export function getVersionSwitch({ refresh = false } = {}) {
   if (switchMap && !refresh) return Promise.resolve(switchMap);
   if (!switchPromise) {
-    switchPromise = loadVersionSwitch()
+    switchPromise = readVersionSwitch()
       .then((map) => {
-        switchMap = map;
-        return map;
+        switchMap = map ?? switchMap ?? new Map();
+        return switchMap;
       })
       .finally(() => {
         switchPromise = null;

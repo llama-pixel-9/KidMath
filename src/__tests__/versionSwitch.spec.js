@@ -1,4 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { readFileSync } from "node:fs";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 
 // The client is swappable per test: null models an unconfigured deploy, a
 // chain models a table read. A getter keeps the import binding live.
@@ -14,11 +17,15 @@ vi.mock("../supabaseClient.js", () => ({
 import {
   DEFAULT_LIVE_VERSION,
   isServable,
+  liveVersionFor,
   loadVersionSwitch,
   previewEnabled,
+  readVersionSwitch,
   setPreviewEnabled,
+  switchMapFromRows,
   topicVisible,
 } from "../itemBank/versionSwitch.js";
+import * as rules from "../itemBank/versionRules.js";
 import { SEED_ITEMS } from "../itemBank/bundle.js";
 import { V2_ONLY_MODE_IDS } from "../modes/index.js";
 
@@ -141,6 +148,67 @@ describe("topicVisible", () => {
     expect(topicVisible("mathFacts", new Map([["mathFacts", "preview"]]), v2Only)).toBe(false);
     expect(topicVisible("mathFacts", new Map([["mathFacts", "preview"]]), { ...v2Only, preview: true })).toBe(true);
     expect(topicVisible("mathFacts", new Map([["mathFacts", "v2"]]), v2Only)).toBe(true);
+  });
+});
+
+describe("versionRules (the rules both platforms run)", () => {
+  it("is what versionSwitch.js re-exports, so the web and the native engine share one copy", () => {
+    expect(isServable).toBe(rules.isServable);
+    expect(topicVisible).toBe(rules.topicVisible);
+    expect(liveVersionFor).toBe(rules.liveVersionFor);
+    expect(switchMapFromRows).toBe(rules.switchMapFromRows);
+    expect(DEFAULT_LIVE_VERSION).toBe(rules.DEFAULT_LIVE_VERSION);
+  });
+
+  it("switchMapFromRows keeps valid rows and drops the rest", () => {
+    const map = switchMapFromRows([
+      { mode_id: "money", live_version: "v2" },
+      { mode_id: "time", live_version: "preview" },
+      { mode_id: "angles", live_version: "beta" },
+      { live_version: "v2" },
+      null,
+    ]);
+    expect([...map.entries()]).toEqual([
+      ["money", "v2"],
+      ["time", "preview"],
+    ]);
+    expect(switchMapFromRows(null).size).toBe(0);
+    expect(switchMapFromRows({ mode_id: "money", live_version: "v2" }).size).toBe(0);
+  });
+
+  it("liveVersionFor falls back to the topic default, then v1", () => {
+    expect(liveVersionFor(new Map([["money", "v2"]]), "money")).toBe("v2");
+    expect(liveVersionFor(new Map([["money", "v3"]]), "money")).toBe("v1");
+    expect(liveVersionFor(new Map(), "mathFacts")).toBe("v2");
+    expect(liveVersionFor(null, "money")).toBe("v1");
+    expect(liveVersionFor({ money: "preview" }, "money")).toBe("preview");
+  });
+
+  it("imports nothing that reaches Supabase, storage or the DOM (the iOS engine bundles it)", () => {
+    const source = readFileSync(resolve(dirname(fileURLToPath(import.meta.url)), "../itemBank/versionRules.js"), "utf8");
+    const imports = [...source.matchAll(/^import .* from "(.+)";$/gm)].map((m) => m[1]);
+    expect(imports).toEqual(["./reviewStatus.js"]);
+    expect(source).not.toMatch(/localStorage|\bwindow\b|\bdocument\./);
+  });
+});
+
+describe("readVersionSwitch", () => {
+  it("is null when the read fails, so a caller can keep its last good map", async () => {
+    state.client = null;
+    await expect(readVersionSwitch()).resolves.toBeNull();
+    state.client = { from: vi.fn(() => switchChain) };
+    switchChain.select.mockResolvedValue({ data: null, error: { code: "PGRST205", message: "no table" } });
+    await expect(readVersionSwitch()).resolves.toBeNull();
+    state.client = { from: vi.fn(() => ({ select: () => Promise.reject(new Error("offline")) })) };
+    await expect(readVersionSwitch()).resolves.toBeNull();
+  });
+
+  it("is a map, possibly empty, when the read succeeds", async () => {
+    state.client = { from: vi.fn(() => switchChain) };
+    switchChain.select.mockResolvedValue({ data: [], error: null });
+    await expect(readVersionSwitch()).resolves.toEqual(new Map());
+    switchChain.select.mockResolvedValue({ data: [{ mode_id: "money", live_version: "v2" }], error: null });
+    await expect(readVersionSwitch()).resolves.toEqual(new Map([["money", "v2"]]));
   });
 });
 

@@ -17,10 +17,27 @@ final class SupabaseService: ObservableObject {
     let client: SupabaseClient
     @Published private(set) var user: User?
 
-    /// Mirrors src/itemBank/modeLoader.js SELECT_FIELDS.
-    static let itemSelectFields =
+    /// Mirrors src/itemBank/modeLoader.js SELECT_FIELDS, plus `version`: the
+    /// version switch decides on it (without it every row reads as v1), and
+    /// item_bank has had it since migration 0001, so this list is always safe.
+    static let itemSelectFieldsV1 =
         "item_id, mode_id, item_family, subskill, structure_type, level_min, level_max, "
-        + "review_status, payload, representation_type, source, level_band, variety_id, format_id"
+        + "review_status, payload, representation_type, source, level_band, variety_id, format_id, version"
+
+    /// The other columns the v2 groundwork migration (20260928100000) added,
+    /// as cloudLoader.js V2_SELECT_FIELDS: v2 items carry their hint in `hint`.
+    static let itemSelectFieldsV2 = "item_model_id, difficulty, hint, tags"
+
+    /// Cleared, for the rest of the app's life, the first time item_bank
+    /// reports a selected column missing (Postgres 42703): the twin of
+    /// cloudLoader.noteMissingV2Columns. A shipped build cannot be hot-fixed,
+    /// so a database without one of the v2 columns (or a later migration that
+    /// renames one) costs the v2 hints, not every signed-in kid's bank.
+    private(set) static var v2ColumnsAvailable = true
+
+    static var itemSelectFields: String {
+        v2ColumnsAvailable ? itemSelectFieldsV1 + ", " + itemSelectFieldsV2 : itemSelectFieldsV1
+    }
 
     init(client: SupabaseClient = SupabaseClient(
         supabaseURL: SupabaseConfig.url,
@@ -136,40 +153,74 @@ final class SupabaseService: ObservableObject {
 
     // MARK: - Item bank (mirrors src/itemBank/modeLoader.js)
 
-    /// Approved rows for one mode, optionally narrowed to a level window.
-    /// Raw PostgREST JSON — hand directly to EngineBridge.addBankRows.
+    /// Every approved row of one mode, both versions (the engine applies the
+    /// version switch). Raw PostgREST JSON: hand it to EngineBridge.addBankRows.
+    ///
+    /// Always the whole mode, never a level window: the rows replace the
+    /// mode's seed items in the engine (src/engine/nativeBank.js), so a
+    /// narrowed fetch would leave the kid with only that window's items.
     ///
     /// PAGINATED — CLAUDE.md hard rule. PostgREST silently caps a select at
     /// 1,000 rows and fractions / time / placeValueDiscs each exceed that; an
     /// unpaginated read is a *wrong* read (the kid gets the first 1,000 by
     /// item_id). Mirrors modeLoader.js fetchMode: order by item_id, page by
     /// 1,000, stop on a short page.
-    func fetchModeItemRows(modeId: String, levelRange: ClosedRange<Int>? = nil) async throws -> [[String: Any]] {
+    func fetchModeItemRows(modeId: String) async throws -> [[String: Any]] {
         let page = 1000
         var rows: [[String: Any]] = []
         var from = 0
         while true {
-            var query = client
-                .from("item_bank")
-                .select(Self.itemSelectFields)
-                .eq("review_status", value: "approved")
-                .eq("mode_id", value: modeId)
-            if let levelRange {
-                query = query
-                    .lte("level_min", value: levelRange.upperBound)
-                    .gte("level_max", value: levelRange.lowerBound)
+            let fields = Self.itemSelectFields
+            let data: Data
+            do {
+                data = try await itemBankPage(modeId: modeId, fields: fields, from: from, count: page)
+            } catch let error as PostgrestError where Self.isMissingColumn(error) && fields != Self.itemSelectFieldsV1 {
+                // A v2 column is missing: retry this page once on the v1 list
+                // (cloudLoader.js does the same, once per error).
+                Self.v2ColumnsAvailable = false
+                data = try await itemBankPage(modeId: modeId, fields: Self.itemSelectFieldsV1, from: from, count: page)
             }
-            let response = try await query
-                .order("item_id")
-                .range(from: from, to: from + page - 1)
-                .execute()
-            let parsed = try JSONSerialization.jsonObject(with: response.data)
+            let parsed = try JSONSerialization.jsonObject(with: data)
             let batch = parsed as? [[String: Any]] ?? []
             rows.append(contentsOf: batch)
             if batch.count < page { break }
             from += page
         }
         return rows
+    }
+
+    /// One page of a mode's approved rows, as raw JSON.
+    private func itemBankPage(modeId: String, fields: String, from: Int, count: Int) async throws -> Data {
+        try await client
+            .from("item_bank")
+            .select(fields)
+            .eq("review_status", value: "approved")
+            .eq("mode_id", value: modeId)
+            .order("item_id")
+            .range(from: from, to: from + count - 1)
+            .execute()
+            .data
+    }
+
+    /// PostgREST's answer to an unknown column in a select (cloudLoader.js
+    /// isMissingColumnError).
+    static func isMissingColumn(_ error: PostgrestError) -> Bool {
+        error.code == "42703"
+            || (error.message.contains("column") && error.message.contains("does not exist"))
+    }
+
+    // MARK: - Item bank version switch (mirrors src/itemBank/versionSwitch.js)
+
+    /// The `item_version_switch` rows ({ mode_id, live_version }), raw: the
+    /// engine parses and applies them (EngineBridge.setVersionSwitch), so the
+    /// rule lives once, in src/itemBank/versionRules.js. One row per topic
+    /// (about 25), far under the 1,000-row cap, so not paginated (as on the web).
+    func fetchVersionSwitchRows() async throws -> [[String: Any]] {
+        let response = try await client
+            .from("item_version_switch")
+            .select("mode_id, live_version")
+            .execute()
+        return (try JSONSerialization.jsonObject(with: response.data) as? [[String: Any]]) ?? []
     }
 
     // MARK: - Progress (mirrors src/progressStore.js cloud half)

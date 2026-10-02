@@ -14,7 +14,8 @@ after the migration.
 |---|---|
 | Migration: v2 columns, switch table, item models table | `supabase/migrations/20260928100000_item_bank_v2_groundwork.sql` |
 | Migration: kid state | `supabase/migrations/20260928110000_kid_profiles_state.sql` |
-| Version switch + preview marker + `isServable` | `src/itemBank/versionSwitch.js` |
+| Version switch + preview marker + `isServable` | `src/itemBank/versionSwitch.js` (rules in `versionRules.js`) |
+| iOS applies the switch (2026-10-02) | `src/engine/nativeBank.js`, `ios/KidMath/Services/BankService.swift` |
 | Loaders read the switch, select the v2 columns, fall back | `src/itemBank/cloudLoader.js`, `src/itemBank/modeLoader.js`, `src/itemBank/normalize.js` |
 | Served question carries version, itemModelId, difficulty, hint | `src/mathEngine.js` (`bankQuestionFor`) |
 | Hint schema, per-item hint in the bulb pane | `src/hints/hintSchema.js`, `src/hints/index.js`, `src/components/HintPane.jsx` |
@@ -79,11 +80,16 @@ fallbacks.
 `item_version_switch` says, per skill, which bank version kids see. The app
 reads it when it hydrates the bank (`getVersionSwitch` in `cloudLoader.js`,
 cached for the session and re-read by the debounced refresh), so a flip or a
-rollback reaches the next session with no redeploy.
+rollback reaches the next session with no redeploy. A failed re-read keeps
+the last good map (`readVersionSwitch` resolves null on failure), so a flaky
+read cannot roll a flipped skill back to v1; before any good read every skill
+is at its default.
 
-`isServable(item, switchMap, { preview })` in `src/itemBank/versionSwitch.js`
-is the single rule, applied by `fetchApprovedBank` and `modeLoader.fetchMode`
-before rows reach the in-memory bank:
+`isServable(item, switchMap, { preview })` in `src/itemBank/versionRules.js`
+(re-exported by `versionSwitch.js`) is the single rule, applied by
+`fetchApprovedBank` and `modeLoader.fetchMode` on the web and by the native
+engine's `src/engine/nativeBank.js` on iOS before rows reach the in-memory
+bank:
 
 | live value | version 1 row | version 2 row |
 |---|---|---|
@@ -107,6 +113,53 @@ optional note, who changed it and when. Readable by anyone signed in, writable
 by admins (RLS enforces it too). `setLiveVersion` upserts the row and then
 refreshes the admin's own bank so their next session serves the chosen
 version. Rollback is flipping the skill back to `v1`.
+
+**The iOS app applies the same switch (2026-10-02).** The rules live in the
+dependency-free `src/itemBank/versionRules.js` (`isServable`, `topicVisible`,
+`liveVersionFor`, `switchMapFromRows`, `DEFAULT_LIVE_VERSION`);
+`versionSwitch.js` re-exports them for the web and the native engine imports
+them directly, so a per-skill switch later is a change to that one file plus
+the two selects that read the table. On iOS:
+
+- `SupabaseService.fetchVersionSwitchRows` reads `mode_id, live_version`. The
+  item select always carries `version` (on `item_bank` since migration 0001)
+  and adds `item_model_id, difficulty, hint, tags` as the web's does; a
+  Postgres 42703 on one of those four drops them for the app's life and
+  retries the page (the web's `noteMissingV2Columns`), since a shipped build
+  cannot be hot-fixed. The fetch is always the whole topic, never a level
+  window, because its rows replace the topic's seed.
+- `BankService` reads the switch alongside a topic's first fetch and injects
+  it before the rows (`KidMath.setVersionSwitch(rows, { preview })`). When a
+  kid opens a topic that is already loaded, the session waits for a re-read
+  before it starts (at most one read per 30 s, counted from the last attempt,
+  as the web's refresh debounce), so a flip lands between sessions, never
+  inside one, with no re-fetch. A failed read keeps the last good rows, or
+  none (v1 everywhere, Math Facts at v2), as the web now does. The engine
+  skips the rebuild when the switch did not change. Only signed-in kids read
+  the switch today; signed-out kids have no cloud rows for it to filter.
+- The engine (`src/engine/nativeBank.js`) holds every cloud row of both
+  versions per topic. A topic with cloud rows serves only what `isServable`
+  allows, in place of its seed items (as the web's signed-in refresh replaces
+  the seed). Swift passes the topic id with its rows
+  (`KidMath.addBankRows(rows, modeId)`), so a fetch that returns no approved
+  rows also replaces the seed. A topic that was never fetched keeps its seed
+  unfiltered (as for anonymous and offline web kids).
+- `KidMath.hiddenTopics()` gives the v2-only topics the pickers must hide. It
+  is not wired yet: iOS has no Math Facts tile. When it gets one, read the
+  switch at launch for every kid (anon may read the table) and filter the
+  home grid, topic controls and worksheet picker by it, as
+  `useHiddenTopics.js` does on the web.
+- Preview on iOS: open `kidmath://preview?v=2` on the device (from Messages,
+  Notes or Safari) to make it a preview viewer, and `kidmath://preview?v=1`
+  to stop, the twins of the web's `?preview=v2` and `?preview=v1`. The flag is
+  UserDefaults `previewV2`, persistent like the web's marker, and applies at
+  once. Under Xcode or `simctl`, `-previewV2 1` sets it for one launch.
+- **Rollout: do not approve a version-2 row until kids and testers are on an
+  iOS build with this change.** Older builds (TestFlight included) select no
+  `version`, read every v2 row as v1 and serve it whatever the switch says.
+  On 2026-10-02 prod had no approved v2 rows, so nobody was exposed.
+- Tests: `nativeVersionSwitch.spec.js`, `scripts/engineParity.mjs` (the built
+  bundle in a bare sandbox), `ios/KidMathTests/VersionSwitchTests.swift`.
 
 The bundled offline copy (`src/itemBank/items/`) is a plain export of approved
 rows and does not know the switch yet; re-export when a skill flips (see the
@@ -333,11 +386,20 @@ The iOS parity fixtures regenerated byte-identical, so no fixture changed.
 
 ## Follow-ups
 
-- **iOS mirror of the switch.** `SupabaseService.swift` fetches raw approved
-  rows and injects them through `KidMath.addBankRows`, so once v2 rows are
-  approved iOS would serve both versions. Add `version=eq.1` to its query, or
-  read `item_version_switch` and filter; `isServable` is pure and can move to
-  a dependency-free leaf for the native engine.
+- ~~**iOS mirror of the switch.**~~ Done 2026-10-02: iOS reads
+  `item_version_switch` and the engine filters with the shared
+  `versionRules.js` (see "The per-skill switch and preview mode"). Still open:
+  iOS has no Math Facts tile yet, so `hiddenTopics()` has no caller.
+- **Server-side version guard.** Old iOS builds serve every approved v2 row.
+  A `version` filter in the select (or an RLS rule) would protect them, but
+  only once the wanted version can be computed server-side per viewer.
+- **Web mode load merges into the seed.** `modeLoader.ensureModeLoaded` adds a
+  topic's servable rows to the bundled seed (`addBankItems`, existing ids
+  win), so until the boot full refresh lands (or if it fails) a topic at v2
+  serves its v1 seed items alongside the v2 rows. iOS replaces the seed. A fix
+  must replace only on a complete signed-in load: anonymous loads resolve to
+  no rows under RLS and must keep the seed, and a partial load keeps the seed
+  on purpose.
 - **iOS mirror of kid state.** Add `state` to `KidProfilesService.swift`
   (model, `selectFields`, update/insert) and cache it under UserDefaults
   `kidmath-active-kid-state`. Compile the iOS project locally before merging

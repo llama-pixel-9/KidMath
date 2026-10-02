@@ -346,4 +346,31 @@ describe("hydrateBankFromCloud", () => {
     expect(switchChain.select).toHaveBeenCalledTimes(2);
     expect(getBankItems().map((i) => i.itemId)).toEqual(["money-app-1-v2"]);
   });
+
+  it("keeps the last good switch when a re-read fails, so a flipped skill does not roll back", async () => {
+    setSelectResult({
+      data: [approvedRow("money-app-1", "money"), approvedRow("money-app-1-v2", "money", { version: 2 })],
+    });
+    setSwitchResult({ data: [{ mode_id: "money", live_version: "v2" }] });
+    await hydrateBankFromCloud();
+    expect(getBankItems().map((i) => i.itemId)).toEqual(["money-app-1-v2"]);
+
+    setSwitchResult({ data: null, error: { code: "PGRST301", message: "JWT expired" } });
+    await hydrateBankFromCloud();
+    expect(switchChain.select).toHaveBeenCalledTimes(2);
+    expect(getBankItems().map((i) => i.itemId)).toEqual(["money-app-1-v2"]);
+
+    switchChain.select.mockReturnValue(Promise.reject(new Error("offline")));
+    await hydrateBankFromCloud();
+    expect(getBankItems().map((i) => i.itemId)).toEqual(["money-app-1-v2"]);
+  });
+
+  it("serves every skill at its default when the switch has never been read", async () => {
+    setSelectResult({
+      data: [approvedRow("money-app-1", "money"), approvedRow("money-app-1-v2", "money", { version: 2 })],
+    });
+    setSwitchResult({ data: null, error: { code: "PGRST205", message: "no table" } });
+    await hydrateBankFromCloud();
+    expect(getBankItems().map((i) => i.itemId)).toEqual(["money-app-1"]);
+  });
 });

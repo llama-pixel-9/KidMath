@@ -257,20 +257,47 @@ describe("native engine: v2-only topics (Math Facts)", () => {
   });
 
   it("hiddenTopics agrees with topicVisible for every switch state", () => {
-    expect(V2_ONLY_MODE_IDS).toContain("mathFacts");
-    for (const live of [null, "v1", "preview", "v2"]) {
-      for (const preview of [false, true]) {
-        const rows = live ? sw("mathFacts", live) : [];
-        K.setVersionSwitch(rows, { preview });
-        const expected = V2_ONLY_MODE_IDS.filter(
-          (id) => !topicVisible(id, switchMapFromRows(rows), { v2Only: true, preview })
-        );
-        expect(K.hiddenTopics(), `live=${live} preview=${preview}`).toEqual(expected);
+    expect(V2_ONLY_MODE_IDS).toEqual(["mathFacts", "wordProblems"]);
+    const states = [null, "v1", "preview", "v2"];
+    for (const facts of states) {
+      for (const words of states) {
+        for (const preview of [false, true]) {
+          const rows = [...(facts ? sw("mathFacts", facts) : []), ...(words ? sw("wordProblems", words) : [])];
+          K.setVersionSwitch(rows, { preview });
+          const expected = V2_ONLY_MODE_IDS.filter(
+            (id) => !topicVisible(id, switchMapFromRows(rows), { v2Only: true, preview })
+          );
+          expect(K.hiddenTopics(), `mathFacts=${facts} wordProblems=${words} preview=${preview}`).toEqual(expected);
+        }
       }
     }
+    // No switch row (or an unreadable switch): Math Facts shows (default v2),
+    // Word Problems waits for Sai's flip (default preview).
     K.setVersionSwitch([], {});
+    expect(K.hiddenTopics()).toEqual(["wordProblems"]);
+    K.setVersionSwitch([], { preview: true });
     expect(K.hiddenTopics()).toEqual([]);
     K.setVersionSwitch(sw("mathFacts", "v1"), {});
-    expect(K.hiddenTopics()).toEqual(["mathFacts"]);
+    expect(K.hiddenTopics()).toEqual(["mathFacts", "wordProblems"]);
+    K.setVersionSwitch(sw("wordProblems", "v2"), {});
+    expect(K.hiddenTopics()).toEqual([]);
+  });
+
+  it("the parent report leaves out a topic the switch hides from this device, as the web page does", () => {
+    const now = Date.UTC(2026, 9, 1, 15);
+    const record = (mode) => {
+      let rec = K.openSessionRecord({ mode, level: 5, now, kidId: "kid1" });
+      const question = K.generateQuestion(mode, 5);
+      rec = K.appendAttempt(rec, { question, submitted: question.answer, correct: true, wasRetry: false, responseTimeMs: 4000, level: 5, now: now + 1000 });
+      return K.closeSessionRecord(rec, null, { starsEarned: 1, now: now + 60000 });
+    };
+    const sessions = [record("addition"), record("wordProblems")];
+    const topics = () => K.buildReport(sessions, { days: 30, now: now + 120000 }).modes.map((m) => m.id).sort();
+    K.setVersionSwitch([], { preview: false });
+    expect(topics()).toEqual(["addition"]);
+    K.setVersionSwitch([], { preview: true });
+    expect(topics()).toEqual(["addition", "wordProblems"]);
+    K.setVersionSwitch(sw("wordProblems", "v2"), {});
+    expect(topics()).toEqual(["addition", "wordProblems"]);
   });
 });

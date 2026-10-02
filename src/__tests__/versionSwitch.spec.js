@@ -127,10 +127,19 @@ describe("isServable", () => {
     expect(v2.every((item) => isServable(item, new Map([["mathFacts", "preview"]]), { preview: true }))).toBe(true);
   });
 
-  it("defaults only the v2-only topics to v2; every other topic with no row is v1", () => {
+  it("defaults every v2-only topic to v2 or preview (never v1, never missing); every other topic with no row is v1", () => {
     expect(Object.keys(DEFAULT_LIVE_VERSION).sort()).toEqual([...V2_ONLY_MODE_IDS].sort());
-    expect(Object.values(DEFAULT_LIVE_VERSION).every((v) => v === "v2")).toBe(true);
+    for (const id of V2_ONLY_MODE_IDS) expect(["v2", "preview"], id).toContain(DEFAULT_LIVE_VERSION[id]);
     expect(isServable({ modeId: "money", reviewStatus: "approved", version: 2 }, new Map())).toBe(false);
+  });
+
+  it("holds Word Problems rows (v2 only, default preview) for preview viewers until Sai flips it", () => {
+    const row = approved("wordProblems", 2);
+    expect(isServable(row, new Map())).toBe(false);
+    expect(isServable(row, null)).toBe(false);
+    expect(isServable(row, new Map(), { preview: true })).toBe(true);
+    expect(isServable(row, new Map([["wordProblems", "v2"]]))).toBe(true);
+    expect(isServable(row, new Map([["wordProblems", "v1"]]), { preview: true })).toBe(false);
   });
 });
 
@@ -148,6 +157,18 @@ describe("topicVisible", () => {
     expect(topicVisible("mathFacts", new Map([["mathFacts", "preview"]]), v2Only)).toBe(false);
     expect(topicVisible("mathFacts", new Map([["mathFacts", "preview"]]), { ...v2Only, preview: true })).toBe(true);
     expect(topicVisible("mathFacts", new Map([["mathFacts", "v2"]]), v2Only)).toBe(true);
+  });
+
+  it("hides Word Problems with no row (or an empty, offline switch) from all but preview viewers", () => {
+    const v2Only = { v2Only: true };
+    const preview = { v2Only: true, preview: true };
+    expect(topicVisible("wordProblems", new Map(), v2Only)).toBe(false);
+    expect(topicVisible("wordProblems", null, v2Only)).toBe(false);
+    expect(topicVisible("wordProblems", new Map(), preview)).toBe(true);
+    expect(topicVisible("wordProblems", null, preview)).toBe(true);
+    expect(topicVisible("wordProblems", new Map([["wordProblems", "v1"]]), preview)).toBe(false);
+    expect(topicVisible("wordProblems", new Map([["wordProblems", "preview"]]), v2Only)).toBe(false);
+    expect(topicVisible("wordProblems", new Map([["wordProblems", "v2"]]), v2Only)).toBe(true);
   });
 });
 
@@ -180,6 +201,8 @@ describe("versionRules (the rules both platforms run)", () => {
     expect(liveVersionFor(new Map([["money", "v2"]]), "money")).toBe("v2");
     expect(liveVersionFor(new Map([["money", "v3"]]), "money")).toBe("v1");
     expect(liveVersionFor(new Map(), "mathFacts")).toBe("v2");
+    expect(liveVersionFor(new Map(), "wordProblems")).toBe("preview");
+    expect(liveVersionFor(new Map([["wordProblems", "v2"]]), "wordProblems")).toBe("v2");
     expect(liveVersionFor(null, "money")).toBe("v1");
     expect(liveVersionFor({ money: "preview" }, "money")).toBe("preview");
   });

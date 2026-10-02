@@ -20,10 +20,12 @@ export const LIVE_VERSIONS = new Set(["v1", "preview", "v2"]);
 
 /**
  * The live version of a topic the switch table has no row for. Only topics
- * with no v1 rows are listed (modeGroups.spec ties this to the modes that
- * declare `v2Only`); Sai, 2026-10-01: Math Facts needs no flip to go live.
+ * with no v1 rows are listed, each at v2 or preview (versionSwitch.spec ties
+ * this to the modes that declare `v2Only`). Sai, 2026-10-01: Math Facts needs
+ * no flip to go live. Word Problems (2026-10-02) waits on Sai's flip: at
+ * preview with no row, only preview viewers see it.
  */
-export const DEFAULT_LIVE_VERSION = Object.freeze({ mathFacts: "v2" });
+export const DEFAULT_LIVE_VERSION = Object.freeze({ mathFacts: "v2", wordProblems: "preview" });
 
 /**
  * `item_version_switch` rows ({ mode_id, live_version }) -> Map(modeId ->
@@ -47,9 +49,9 @@ export function liveVersionFor(switchMap, modeId) {
 
 /**
  * Is a topic shown on the pickers? A topic with v1 rows always is. A v2-only
- * topic (Math Facts has nothing else) is shown where its switch serves v2:
- * to everyone at `v2` (and with no row, its default), to preview viewers at
- * `preview`, to nobody at `v1`.
+ * topic (Math Facts, Word Problems) is shown where its switch serves v2: to
+ * everyone at `v2`, to preview viewers at `preview`, to nobody at `v1`; with
+ * no row, by its default (Math Facts v2, Word Problems preview).
  */
 export function topicVisible(modeId, switchMap, { v2Only = false, preview = false } = {}) {
   if (!v2Only) return true;
@@ -63,8 +65,8 @@ export function topicVisible(modeId, switchMap, { v2Only = false, preview = fals
  *
  * Approved rows only. A row's `version` null counts as 1 (every v1 row and
  * every bundled item predates the column being meaningful). A skill absent
- * from the map is v1 (a v2-only topic: v2), so an empty map serves exactly
- * what the app served before the switch existed, plus Math Facts.
+ * from the map is v1 (a v2-only topic: its default), so an empty map serves
+ * exactly what the app served before the switch existed, plus Math Facts.
  */
 export function isServable(item, switchMap, { preview = false } = {}) {
   if (!item || item.reviewStatus !== REVIEW_STATUS.APPROVED) return false;

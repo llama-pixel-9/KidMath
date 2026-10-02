@@ -13,6 +13,8 @@
  *     quotient-and-remainder answer widget.
  *   - Math Facts skills are play-only (PLAY_ONLY_SKILLS): their bands are
  *     closed fact sets, and the operation topics print the same facts.
+ *   - Word Problems skills are play-only too, until their bank rows exist
+ *     (a printed title is a promise; there is nothing to print yet).
  */
 import { gradeIndex } from "../gradeSeed.js";
 import { GRADES, PLAY_ONLY_SKILLS, WORKSHEET_SKILLS } from "./catalog.js";

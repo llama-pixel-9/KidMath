@@ -127,7 +127,8 @@ g.KidMath = {
   addBankRows: (rows, modeId) => addBankRows(rows, modeId),
   resetBankToBundle: () => resetBank(),
   // The version switch: raw item_version_switch rows plus { preview }. Empty
-  // rows = every topic at its default (v1; Math Facts v2), as on the web.
+  // rows = every topic at its default (v1; Math Facts v2; Word Problems
+  // preview), as on the web.
   setVersionSwitch: (rows, options) => setVersionSwitch(rows, options ?? {}),
   // v2-only topics the switch hides from the pickers (useHiddenTopics.js).
   hiddenTopics: () => hiddenTopics(V2_ONLY_MODE_IDS),
@@ -218,7 +219,13 @@ g.KidMath = {
   closeSessionRecord: (record, session, args) => closeSessionRecord(record, session ?? null, args ?? {}),
   sessionRecordToRow: (record, userId) => sessionRecordToRow(record, userId),
   sessionRecordFromRow: (row) => sessionRecordFromRow(row),
-  buildReport: (sessions, options) => buildReport(sessions ?? [], options ?? {}),
+  // As on the web report page (ParentReportPage.jsx): sessions of a topic the
+  // switch hides from this device stay out; buildReport itself stays pure.
+  buildReport: (sessions, options) => {
+    const hidden = new Set(hiddenTopics(V2_ONLY_MODE_IDS));
+    const shown = (sessions ?? []).filter((s) => !hidden.has(s?.mode));
+    return buildReport(shown, options ?? {});
+  },
   reportHeadline: (report, kidName) => reportHeadline(report, kidName ?? null),
 
   // Engagement rules (src/engagement/engagementRules.js) — the session-end

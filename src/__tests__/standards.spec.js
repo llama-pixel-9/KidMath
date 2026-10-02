@@ -27,7 +27,7 @@ import GA_FILE from "../standards/ga.json";
 import { BLUEPRINT_ROWS, validateBlueprintRow } from "../blueprints/index.js";
 import { blueprintStandardDbRows, checkSql, crosswalkDbRows, loadSql, sqlLiteral, standardsDbRows } from "../standards/dbRows.js";
 import { COVERAGE_STATUSES, catalogSkillsFor, coverageTotals, rowToCoverage, statusLabel } from "../standards/coverage.js";
-import { WORKSHEET_SKILLS } from "../skills/catalog.js";
+import { PLAY_ONLY_SKILLS, WORKSHEET_SKILLS } from "../skills/catalog.js";
 import { GRADE2_MONEY_MODELS } from "../itemModels/samples/grade2Money.js";
 
 /**
@@ -244,9 +244,15 @@ describe("every code the app cites is a real code", () => {
 
   it("catalog skills", () => {
     const bad = [];
-    for (const skill of WORKSHEET_SKILLS) {
+    for (const skill of [...WORKSHEET_SKILLS, ...PLAY_ONLY_SKILLS]) {
       for (const code of [].concat(skill.ccss || [])) {
         if (!standardByCode("ccss", code)) bad.push(`${skill.id}: ${code}`);
+      }
+      // A skill may carry every loaded framework's codes (Word Problems does);
+      // its Common Core list is then the one it cites.
+      if (skill.standards) {
+        for (const u of unknownCodes(skill.standards)) bad.push(`${skill.id}: ${u.framework} ${u.code}${u.canonical ? ` (write ${u.canonical})` : ""}`);
+        if (JSON.stringify(skill.standards.ccss) !== JSON.stringify(skill.ccss)) bad.push(`${skill.id}: standards.ccss differs from ccss`);
       }
     }
     expect(bad).toEqual([]);

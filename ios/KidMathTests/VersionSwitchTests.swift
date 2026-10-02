@@ -120,16 +120,31 @@ final class VersionSwitchTests: XCTestCase {
         XCTAssertFalse(try servedIds("addition").contains("ios-v2"))
     }
 
+    // Word Problems (default preview) is hidden wherever preview is off and it
+    // has no row of its own; testWordProblemsIsHiddenUntilSaiFlipsIt covers it.
     func testMathFactsIsHiddenOnlyWhereTheSwitchSaysSo() throws {
         try bridge.setVersionSwitch(rows: [], preview: false)
-        XCTAssertEqual(try bridge.hiddenTopics(), [])
+        XCTAssertEqual(try bridge.hiddenTopics(), ["wordProblems"])
         try bridge.setVersionSwitch(rows: Self.switchRows("mathFacts", "v1"), preview: true)
         XCTAssertEqual(try bridge.hiddenTopics(), ["mathFacts"])
         try bridge.setVersionSwitch(rows: Self.switchRows("mathFacts", "preview"), preview: false)
-        XCTAssertEqual(try bridge.hiddenTopics(), ["mathFacts"])
+        XCTAssertEqual(try bridge.hiddenTopics(), ["mathFacts", "wordProblems"])
         try bridge.setVersionSwitch(rows: Self.switchRows("mathFacts", "preview"), preview: true)
         XCTAssertEqual(try bridge.hiddenTopics(), [])
         try bridge.setVersionSwitch(rows: Self.switchRows("mathFacts", "v2"), preview: false)
+        XCTAssertEqual(try bridge.hiddenTopics(), ["wordProblems"])
+    }
+
+    func testWordProblemsIsHiddenUntilSaiFlipsIt() throws {
+        try bridge.setVersionSwitch(rows: [], preview: false)
+        XCTAssertEqual(try bridge.hiddenTopics(), ["wordProblems"])
+        try bridge.setVersionSwitch(rows: [], preview: true)
+        XCTAssertEqual(try bridge.hiddenTopics(), [])
+        try bridge.setVersionSwitch(rows: Self.switchRows("wordProblems", "preview"), preview: false)
+        XCTAssertEqual(try bridge.hiddenTopics(), ["wordProblems"])
+        try bridge.setVersionSwitch(rows: Self.switchRows("wordProblems", "v1"), preview: true)
+        XCTAssertEqual(try bridge.hiddenTopics(), ["wordProblems"])
+        try bridge.setVersionSwitch(rows: Self.switchRows("wordProblems", "v2"), preview: false)
         XCTAssertEqual(try bridge.hiddenTopics(), [])
     }
 

@@ -162,9 +162,10 @@ export function nextSkillQuestion(session) {
   if (q) {
     q.skillId = skill.id;
   } else {
-    // The skill's cell is not in memory (seed-only bank, offline). The screen
-    // gates on this, but a session must never hang: serve what play served
-    // before skills existed, un-stamped, so it is credited by its own cell.
+    // The skill's cell is not in memory (seed-only bank, offline, or a topic
+    // with no rows yet). No screen checks skillServable before a session, and
+    // a session must never hang: serve what play served before skills
+    // existed, un-stamped, so it is credited by its own cell.
     q = generateQuestion(skill.mode, skill.level, {
       targetSubskill: skill.source.subskills?.[0],
       allowWordProblems: session.allowWordProblems !== false,

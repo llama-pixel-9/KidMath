@@ -24,8 +24,10 @@ export {
  *            students can pilot a skill without affecting anyone else
  *   v2       version-2 rows for everyone
  *
- * A topic with no v1 rows at all (Math Facts) has nothing to fall back to, so
- * it is live at v2 with no row; a row set to v1 (or preview) still hides it.
+ * A topic with no v1 rows at all has nothing to fall back to, so with no row
+ * it takes its DEFAULT_LIVE_VERSION: Math Facts v2 (live), Word Problems
+ * preview (preview viewers only, until Sai flips it). A row set to v1 hides
+ * either; preview hides it from everyone but preview viewers.
  *
  * The switch lives in the database rather than a deploy-time flag so a flip
  * (or a rollback) reaches the next session with no redeploy. Loaders read it
@@ -73,7 +75,8 @@ export async function readVersionSwitch() {
 
 /**
  * The switch table as a Map, empty when the read fails: every skill then
- * behaves as its default (v1; Math Facts v2), which is the safe direction.
+ * behaves as its default (v1; Math Facts v2; Word Problems preview), which is
+ * the safe direction.
  * Never rejects.
  */
 export async function loadVersionSwitch() {

@@ -27,8 +27,12 @@ approved.**
 - **Fact fluency** (single-digit facts) is a separate track and already built:
   `src/facts/`, plus `src/blueprints/factFluency.json` (`track: "fluency"`, rows
   made by script, no models). Keep facts out of item lists.
-- **Bare computation drills** are built to the claim by `computationSampler` and
-  have no models.
+- **Bare computation** (computing, strategy steps, 10 or 100 more or less, the
+  equal sign) gets its own blueprint list per grade, beside the story list.
+  Sai decided on 2026-09-28 that plain computation goes in the bank as v2
+  rows; `computationSampler` only fills an empty cell. Plain computing rows
+  with no words may be built by script instead of models, if Sai approves
+  that for the list. Types, tiers and tags: taxonomy section 6.
 
 ## Sources
 
@@ -87,6 +91,8 @@ lines are the exceptions. Leave them out of every writer excerpt.
      code is known:
      `node --input-type=module -e 'import { unknownCodes } from "./src/standards/index.js"; console.log(unknownCodes({ ccss: ["2.OA.A.1"], tx: ["2.4C", "2.7C"], fl: ["MA.2.AR.1.1"], va: ["2.CE.1c"], ga: ["2.NR.2.3"] }))'`
    - List crosswalk errors for Sai. Do not edit `src/standards/` inside a skill.
+   - A review page whose code tables and "left out" section cover all of this
+     may stand in for the map; say so on the page.
 2. **Blueprint list.** The rows stay out of the repo and the database until Sai
    has answered.
    - Write about 30 rows per grade in `/mnt/project-files/item-skill/<skill>-blueprints.json` as `{ "source", "note", "rows": [...] }`. Put the review page beside it as `<skill>-blueprints.md`.
@@ -221,8 +227,20 @@ lines are the exceptions. Leave them out of every writer excerpt.
   - In the default variant, one of the two steps uses a one-digit number. The
     Progressions keep most Grade 2 two-step work to one-digit addends.
   - Never put misleading wording, two steps and regrouping in one item.
+  - A state line may lift the range when the state asks for it (TX 2.4C,
+    multi-step stories within 1,000). Only the numbers grow; the other limits
+    hold, and the line goes to Sai as a numbered decision.
+- **Computation rows** use the proposed rule in taxonomy section 6 (a second
+  trade or a trade across a zero is its own hard row). It waits on Sai's
+  answer to decision 10 on the Grade 2 computation list; update this section
+  when Sai answers.
 - **Other axes**: picture, model and answer format are their own axes, never
   difficulty dials. Every distractor is a named mistake.
+  - A slip must be possible on every fill. A carry or trade slip equals the
+    key when nothing regroups, so a no-regrouping variant lists its own slips
+    in `spec.variantMistakes`.
+  - Write each slip's value for the example into `spec.slips`, so the check
+    script can recompute it.
 
 ## Coverage
 
@@ -240,12 +258,23 @@ lines are the exceptions. Leave them out of every writer excerpt.
   - **At least one bare row** (`spec.story: false`).
     - In a story skill, a bare row is the same relation written as an equation
       with a box: □ − 24 = 19, 46 + □ = 72, 36 − 14 + □ = 31.
+    - A two-step bare row puts the box in the second step, and that step adds
+      (taxonomy section 1, "Bare and reasoning rows").
     - A story with equation choices is a story row.
-    - A computation drill (45 + 27 = ?) belongs to the computation track, not to
-      this skill.
+    - A computing item (45 + 27 = ?, 58 − 23 + 7 = □) belongs on the grade's
+      computation list, not on a story list.
   - **Reasoning rows**, not only procedure rows.
 - **Every problem type the grade expects** gets a row, or a written reason why
   not.
+- **Every code gets a place.** Take the grade's codes from `src/standards/` in
+  all five frameworks and place each one exactly once: cited by a row, left
+  out with a reason (another list or track owns it), not this subject, a
+  parent code, or a process standard. A code left out for another track must
+  be cited there, or listed as pending with a plan. Script it, so a gap fails
+  loudly; copy `/mnt/project-files/item-skill/g2-addsub-coverage.mjs`.
+- **When Sai says "all of X"**, cover the whole subject at the grade (stories,
+  computation, the equal sign, and the state ranges), and say on the page
+  which grades the pass covers.
 - **Common Core wording is the base.**
   - A state line exists only where that state's test asks the question
     differently: a different item type, range or task (Sai, 2026-10-01).
@@ -257,18 +286,24 @@ lines are the exceptions. Leave them out of every writer excerpt.
   justify a line.
   - Resting a line on the state's Grade 2 standard plus its Grade 3 test widens
     Sai's rule. Put it to Sai as a numbered decision on the review page, naming
-    the rows it would add.
-  - Candidates for add/subtract word problems:
-    - TX 2.4D: choose the story for a number sentence
-    - VA 2.CE.1a: estimate a sum or difference in a story
-- **Equal-sign items belong to an equal-sign skill.** FL MA.2.AR.2.1 (true/false
-  equations) and VA 2.CE.1i and 2.CE.1j (≠, equal or not) are not word problems.
-  Note them in that skill's map.
-- **Leave out** fact fluency, computation drills, and neighbours with their own
-  codes: money (2.MD.C.8), lengths (2.MD.B.5), graphs (2.MD.D.10).
-- **Range**: stay inside the standard's range, which is within 100 for 2.OA.A.1.
-  TX and GA allow up to 1,000; going there would be a state line for Sai, not
-  the default.
+    the rows it would add. Both Grade 2 add/subtract lists do (word problems
+    decision 10, computation decision 11).
+- **State lines need a per-state filter** before they can serve; the app
+  cannot yet limit an item to one state. Keep them as drafts until it ships.
+- **A state line is its own row, not a variant**, even when only the range
+  differs: codes and the state filter live on a row, and a variant can't
+  carry them. Say so on the page.
+- **Equal-sign items** (true/false, = or ≠, a sum on both sides) go on the
+  computation list, not a story list.
+- **Leave out of a story list**: fact fluency, bare computation (its own
+  list), and neighbours with their own codes: money (2.MD.C.8), lengths
+  (2.MD.B.5), graphs (2.MD.D.10).
+- **Range**: stay inside the standard's range, which is within 100 for
+  2.OA.A.1. Read a state's range in its official text, not our one-line
+  summary: Texas 2.4C runs stories to 1,000, Virginia 2023 caps each number
+  added or subtracted at 100 (not the total), and Georgia 2.NR.2.3 names
+  two-digit numbers. A wider state range is a state line for Sai, not the
+  default.
 
 ## Wording and kid-safe
 
@@ -339,7 +374,8 @@ Every rule `item-authoring` enforces applies. On top of those:
   | Item kind | CCSS | TX | FL | VA | GA |
   |---|---|---|---|---|---|
   | Equation with a box, within 100 (this skill's bare rows) | 2.NBT.B.5 | 2.4B | MA.2.AR.2.2 | 2.CE.1b | 2.NR.2.4 |
-  | Bare computation (the computation track, not this skill) | 2.NBT.B.5 | 2.4B | MA.2.NSO.2.3 | 2.CE.1b | 2.NR.2.4 |
+  | Computing within 100 (the computation list) | 2.NBT.B.5 | 2.4B | MA.2.NSO.2.3 | 2.CE.1b | 2.NR.2.4 |
+  | Computing within 1,000 (the computation list) | 2.NBT.B.7 | — | MA.2.NSO.2.4 | — | — |
 
   - TX 2.4B links to 2.NBT.B.5 only `partly`, so a CCSS tag never counts for
     Texas. Carry 2.4B itself.
@@ -373,13 +409,21 @@ that each re-read the repo.
   loading.
 - **No path to the bank.** Nothing fills approved models into v2 `item_bank`
   rows yet.
-- **The version switch is per mode.** Flipping `addition` replaces every grade.
-  iOS ignores the switch and mixes approved v2 rows in with v1. Agree with Sai
-  where a skill's rows will serve.
+- **The version switch is per mode.** Flipping `addition` replaces every grade,
+  so new v2 rows go in a new v2-only topic (Word Problems, and the proposed
+  `multiDigit`). Installed iOS builds ignore the switch and serve every
+  approved row until the iOS version filter (draft PR #150) ships. Agree with
+  Sai where a skill's rows will serve.
+- **No per-state filter.** State lines stay drafts until one ships.
 - **Formats and figures.**
   - True/false and multiselect cannot be written as models yet, and two-part
-    answers don't exist.
-  - The tape diagram has two shapes only, and there is no tens-and-ones figure.
+    answers don't exist. There is no ≠ key.
+  - The tape diagram has two shapes only. The disc mat is the tens-and-ones
+    picture; there are no base-ten blocks. The number line draws one hop.
+  - `promptIdentity` and the harness ignore the disc mat, so fills whose words
+    never change read as duplicates.
+  - Long text choices sit two to a row; check them with `layoutSweep` and the
+    simulator.
   - `barModel` and `tapeDiagram` hint pictures are dropped silently.
 - **QC never checks that the key follows from the text** (blind solve does). It
   also misses fragments, a compare question without "than", and nounless
@@ -387,23 +431,35 @@ that each re-read the repo.
   `structureType`s have no entry in `structureCheck.js`, so only its universal
   checks run on them.
 
-## Pilot status (2026-10-01)
+## Pilot status (2026-10-02)
 
-- **Skill.** Grade 2 add/subtract word problems, slug `g2-addsub-wp`, ids
-  `wp-g2-*`, anchored on CCSS 2.OA.A.1. Codes as listed under Standards.
-- **Blueprint list sent to Sai on 2026-10-01**, waiting for answers:
-  `/mnt/project-files/item-skill/g2-addsub-wp-blueprints.md` (the review page,
-  numbered in file order) and `g2-addsub-wp-blueprints.json` (33 rows, 37
-  models planned). Both come from `g2-addsub-wp-build.mjs` beside them, and
-  `g2-addsub-wp-check.mjs` (run from the repo root with
-  `node --import ./scripts/lib/registerResolve.js`) runs the mechanical
-  checklist items: shape, codes, names, numbers and the structure checks on
-  the examples. Apply Sai's edits in the build script and rerun both. No row
-  is in the repo or the database yet, and no model is written.
-- **Decision 1 comes first.** The rows carry `mode_id: "wordProblems"`, a new
-  v2-only topic (the Math Facts route), and `mode_id` freezes at approval.
-- **Before any model is written** (the page lists these too): the topic, the
-  `blueprintId` wiring and the harness PR from step 3.
+- **Scope.** All of Grade 2 adding and subtracting (Sai, 2026-10-02), in two
+  lists. Kindergarten, Grade 1 and Grade 3 follow with the same process.
+- **Word problems**, slug `g2-addsub-wp`, ids `wp-g2-*`, topic `wordProblems`
+  (Sai settled the topic on 2026-10-02: one Word Problems topic for every
+  story; multiply and divide stories join later as their own skills).
+  42 rows: rows 1-33 as sent on 2026-10-01 (numbering frozen), 34-35 the
+  two-step bare and picture rows, 36-42 state lines past 100.
+- **Computation**, slug `g2-addsub-calc`, ids `calc-g2-*`, proposed topic
+  `multiDigit` (its decision 1). 35 rows.
+- **Files**, in `/mnt/project-files/item-skill/`: `<slug>-blueprints.md` (the
+  review page, numbered in file order) and `.json`, built by
+  `<slug>-build.mjs`; `<slug>-check.mjs` runs the mechanical checklist (shape,
+  codes, names, numbers, recomputed keys and slips, structure checks);
+  `g2-addsub-coverage.mjs` places every Grade 2 code. Run the scripts from the
+  repo root with `node --import ./scripts/lib/registerResolve.js`. Apply Sai's
+  edits in the build scripts and rerun all three. The copy Sai commented on
+  is in `archive/`; the research behind both lists is in `research/`.
+- **Sent to Sai on 2026-10-02**, waiting for answers. No row is in the repo or
+  the database yet, and no model is written.
+- **v1 stories.** Sai asked on 2026-10-02 to retire the v1 word problems. The
+  scope and the options are on the word problem page (decision 9). Retire
+  only on Sai's typed go, and never so that the template generator fills a
+  story cell: the plan declares the topic's families instead, as Math Facts
+  does.
+- **Before any model is written** (both pages list these): the topics, the
+  `blueprintId` wiring, the harness PR from step 3, the structure check entry
+  for each new `structureType`, and the disc mat in the duplicate check.
 - **Money** has 15 picture-first lines
   (`/mnt/project-files/item-skill/money-picture-blueprints.md`) waiting for
   Sai's edits. They predate this format. Move them into the step 2 flow when

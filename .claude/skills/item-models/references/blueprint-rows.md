@@ -120,16 +120,19 @@ or one per listed variant. This file covers:
 | `structureType` | The taxonomy id, a two-step id from the taxonomy, or the skill map's id for a non-additive skill. The model copies it. |
 | `representation` | `picture` (the quantities drawn as things), `model` (tape diagram, number line, bond) or `numbers`. A model is never a picture row. |
 | `story` | `true` if a context matters to the question. `false` for a bare item: in a story skill, the relation as an equation with a box. |
-| `format` | `typed`, `multipleChoice`, `chooseEquation`, `chooseStory`, `chooseModel`, `completeModel`, `trueFalse`, `multiSelect` or `twoPart`. |
+| `format` | `typed`, `multipleChoice`, `chooseEquation`, `chooseStory`, `chooseModel`, `completeModel`, `trueFalse`, `multiSelect`, `twoPart`, or for computation rows `chooseExpression` and `chooseSymbol` (taxonomy section 3). |
 | `widget` | The widget the models will use: `numberPad`, `barModel`, `numberLine`, `null` (choice grid)… |
 | `demand` | `recall`, `procedure` or `reasoning`. |
 | `steps` | `1` or `2`. |
-| `numbers` | `max` is the standard's ceiling (100 for 2.OA.A.1). `regroup` is `none`, `one`, `any` or `acrossZero`. Add `min` or `note` when they matter ("tens only", "one-digit change"). Two-step rows follow the limits in SKILL.md. |
+| `numbers` | `max` is the standard's ceiling (100 for 2.OA.A.1). `regroup` is `none`, `one`, `two` (two trades, computation rows), `any` or `acrossZero`. Add `min` or `note` when they matter ("tens only", "one-digit change"). Two-step rows follow the limits in SKILL.md. |
 | `family` | The model `family`: a story is `application`; a bare relation or a reasoning item is `conceptual`; a bare computation is `procedural`. |
 | `subskill` | The subskill the models will carry. It must be one of `mode_id`'s declared subskills. |
-| `mistakes` | Two or three taxonomy mistake tags the distractors and feedback must model. |
+| `mistakes` | Two or three taxonomy mistake tags the distractors and feedback must model. Each must be possible on every fill of the row. |
+| `slips` | For each mistake, its value on the example: `[{ "tag", "value", "says" }]`. The check script recomputes them. |
+| `variantMistakes` | `{ "<variant>": [tags] }` when a variant's slips differ from the row's, e.g. a no-regrouping variant, where a carry slip equals the key. |
+| `variantExamples` | `{ "<variant>": "<example>" }` for a variant whose slips differ, so Sai sees one. |
 | `why` | One line naming what justifies the row: the standard's own clause (paraphrased), the Table 1 type, or a test format seen in released items. It is never "for variety". |
-| `state` | `null` for a Common Core row. For a state line, `{ "framework": "tx", "asks": "<what this state's test asks that Common Core does not>" }`. |
+| `state` | `null` for a Common Core row. For a state line, `{ "framework": "tx", "asks": "<what this state's test or standard asks that Common Core does not>" }`; `framework` may be a list (`["va", "ga"]`) when two states ask the same. A state line is its own row even when only the range differs, because its codes and the state filter live on the row. |
 | `app` | `"today"`, or `"needs <the widget or figure work>"`. |
 | `models` | How many models are planned. The default is 1. Use more than 1 only for number-range variants, listed in `variants`. |
 | `variants` | Only when `models > 1`, e.g. `["no regrouping", "one regroup"]`. A variant never changes type, picture, format or steps; that would be a new row. |
@@ -154,7 +157,8 @@ The row's `spec.format` sets three model fields:
 |---|---|---|---|---|
 | `typed` | `number` | `numberPad` | `int` | works |
 | `multipleChoice` | `number` | `null` (choice grid) | `int` | works; the money pilot's numeric-choice models use this |
-| `chooseEquation`, `chooseStory` | `choice` | `null` | `text` | works |
+| `chooseEquation`, `chooseStory`, `chooseExpression` | `choice` | `null` | `text` | works; check long text choices with `layoutSweep` |
+| `chooseSymbol` | `choice` | `null` | `text` | needs build: no ≠ key, and two choices are blocked like Yes/No |
 | `completeModel` | `number` | `barModel` or `numberLine` | `int` | two bar shapes, one hop |
 | `chooseModel` | | | | needs figure work |
 | `trueFalse` | `choice` | `null` | `text` ("Yes" / "No") | blocked: Yes/No has one distractor, but `validateModel` wants 2 and the harness wants 3+ choices |
@@ -190,7 +194,7 @@ Draft. Nothing is written as a model until a row is approved.
 Answer with: "approve all", "approve all but 4, 9", "edit 7: …", "strike 12".
 
 **Anchor:** CCSS <code>. **States:** TX <codes> · FL <codes> · VA <codes> · GA <codes>.
-**Numbers:** <range and why>. **Left out:** <fact fluency, computation drills, neighbours with their own codes, and why>.
+**Numbers:** <range and why>. **Left out:** <fact fluency, the other list (stories or computation), neighbours with their own codes, and why>.
 
 ## Decisions for you
 1. <question> I recommend <x> because <one line>. (yes / no)
@@ -302,8 +306,11 @@ Run every item. A failed item goes back to drafting, not to Sai with a caveat.
     - A vocabulary change is not a state line: it belongs in
       `src/content/stateWords.json`.
 12. **Exclusions are stated.** The page says what was left out and why: fact
-    fluency, computation drills, equal-sign items, and neighbours with their
-    own codes (money, lengths, graphs).
+    fluency, the other list (a story list leaves out computation and
+    equal-sign items; a computation list leaves out stories and their box
+    equations), and neighbours with their own codes (money, lengths, graphs).
+    Every one of the grade's codes is placed by a coverage script (SKILL.md,
+    Coverage), with 0 missing.
 13. **Size.** About 30 rows per grade per skill, set by the distinct types the
     standard and tests justify. The list is never padded or cut to hit 30.
 14. **No official text.** Summaries and `why` lines are paraphrases, and no

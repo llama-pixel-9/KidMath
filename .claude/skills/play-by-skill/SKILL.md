@@ -56,8 +56,9 @@ masterySnapshot, challenge })`. Without skill options it is the ladder session.
 
 ## Word problems (the setting and the held topics)
 - **On by default since 2026-10-02 (Sai):** `DEFAULT_ALLOW_WORD_PROBLEMS =
-  true` in `src/userPreferences.js`. The only switch is the in-session gear;
-  it saves to `kidmath-allow-word-problems` and, signed in, to
+  true` in `src/userPreferences.js`. Switches: web, the in-session gear;
+  iPhone, Settings → Play → "Word problems" (behind the parental gate, see
+  iOS below). The web saves to `kidmath-allow-word-problems` and, signed in, to
   `user_preferences.allow_word_problems` (the cloud row wins on sign-in; a
   user with no row gets one seeded from this device; a FAILED read plays the
   local value and writes nothing). `MathExplorer` passes it into every
@@ -89,9 +90,8 @@ masterySnapshot, challenge })`. Without skill options it is the ladder session.
   and the topic leaves the list.
 - Printed worksheets do not read the setting (web and iOS): the screen
   starts at the last sheet type printed, else "practice".
-- iOS passes the setting into both sessions (`SessionViewModel.
-  allowWordProblems`: the same UserDefaults key, on when missing; nothing on
-  iOS writes it and iOS does not read `user_preferences` yet). The engine's
+- iOS passes the setting into every session (`WordProblemsSetting.isOn()`:
+  the same UserDefaults key, on when missing; see iOS below). The engine's
   own `createAdaptiveSession` default is still off, so a caller that passes
   nothing gets no stories (`simulateKid` plays words on unless `--words 0`).
 
@@ -209,6 +209,15 @@ No flag. A `SessionViewModel` without a `skillRequest` is a plain session
   the progress row (`grade`, `grade_unlocked`, `pinned_skill_id`,
   `skill_mastery`) and are always selected — the migration is applied.
 - Grown-up controls: Settings → "Skills to practice", behind the parental gate.
+- Word problems: `WordProblemsSetting` (in AppModel.swift; UserDefaults, the
+  web's `kidmath-allow-word-problems` key) reads ON when never set; Settings
+  → Play → "Word problems", behind the gate. `SessionViewModel` passes it as
+  `allowWordProblems` into every session it builds (plain, skill, flight):
+  the engine reads a missing option as OFF. The held topics
+  (`storyHold.js`) apply here too, since it is the same engine. Worksheets do
+  not read it. The iPhone does not read `user_preferences` yet, so a
+  household's saved web choice does not reach it: stories show on the iPhone
+  unless turned off on that device.
 - Dev: `-skillsPlay 1 -autostartMode subtraction [-autostartSkill sub-across-zeros]`.
 - SwiftUI traps met here: "▶" in a `Text` renders as an emoji (use
   `Image(systemName: "play.fill")`); with two `.background`s the FIRST is

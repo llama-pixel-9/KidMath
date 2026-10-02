@@ -37,6 +37,12 @@ final class AppModel: ObservableObject {
         didSet { UserDefaults.standard.set(calmMode, forKey: "kidmath-calm-mode") }
     }
 
+    /// Word problems in play (Settings, behind the parental gate). On unless
+    /// a grown-up turned them off; a session reads it when it starts.
+    @Published var allowWordProblems: Bool = WordProblemsSetting.isOn() {
+        didSet { WordProblemsSetting.set(allowWordProblems) }
+    }
+
     init() {
         supabase = .shared
         let isTestHost = ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil
@@ -68,5 +74,23 @@ final class AppModel: ObservableObject {
         }
         modeLevels = levels
         modeProgress = saved
+    }
+}
+
+/// The word-problems preference, stored on the web's key
+/// (src/userPreferences.js). ON when the key was never written: a kid who
+/// chooses a skill, or moves through a topic, meets its story questions
+/// unless a grown-up switched them off. Every play session the engine builds
+/// gets it as `allowWordProblems`; worksheets do not read it.
+enum WordProblemsSetting {
+    static let key = "kidmath-allow-word-problems"
+
+    /// `object(forKey:)`, never `bool(forKey:)`: that reads a missing key as false.
+    static func isOn(in defaults: UserDefaults = .standard) -> Bool {
+        defaults.object(forKey: key) as? Bool ?? true
+    }
+
+    static func set(_ allowed: Bool, in defaults: UserDefaults = .standard) {
+        defaults.set(allowed, forKey: key)
     }
 }

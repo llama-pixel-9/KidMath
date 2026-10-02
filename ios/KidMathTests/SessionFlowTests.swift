@@ -153,4 +153,64 @@ final class SessionFlowTests: XCTestCase {
         viewModel.submit("another-answer")
         try await waitFor { if case .question = viewModel.phase { return true } else { return false } }
     }
+
+    // MARK: - Word problems setting
+
+    /// Never set reads ON: the engine treats a missing option as off, so the
+    /// stored setting must say on until a grown-up turns it off.
+    func testWordProblemsSettingIsOnWhenNeverSet() throws {
+        let defaults = try XCTUnwrap(UserDefaults(suiteName: #function))
+        defaults.removePersistentDomain(forName: #function)
+        XCTAssertEqual(WordProblemsSetting.key, "kidmath-allow-word-problems", "the web's key (src/userPreferences.js)")
+        XCTAssertNil(defaults.object(forKey: WordProblemsSetting.key))
+        XCTAssertTrue(WordProblemsSetting.isOn(in: defaults), "word problems are on until a grown-up turns them off")
+
+        WordProblemsSetting.set(false, in: defaults)
+        XCTAssertFalse(WordProblemsSetting.isOn(in: defaults))
+        WordProblemsSetting.set(true, in: defaults)
+        XCTAssertTrue(WordProblemsSetting.isOn(in: defaults))
+    }
+
+    /// Plain and skill sessions both start with the stored setting (never
+    /// set → on), so a chosen skill serves its story questions. This checks
+    /// the option only: subtraction's stories stay held by the engine
+    /// (src/skills/storyHold.js) whatever the setting.
+    func testEverySessionGetsTheWordProblemsSetting() async throws {
+        let defaults = try XCTUnwrap(UserDefaults(suiteName: #function))
+        defaults.removePersistentDomain(forName: #function)
+        let engine = try EngineBridge()
+        try engine.setBankItems([])
+        let progressStore = ProgressStore(supabase: .shared, defaults: defaults)
+        defer { UserDefaults.standard.removeObject(forKey: WordProblemsSetting.key) }
+
+        let requests: [SessionViewModel.SkillRequest?] = [nil, SessionViewModel.SkillRequest.skill("sub-2digit-regroup")]
+        let stored: [Bool?] = [nil, false, true]
+        for setting in stored {
+            if let setting {
+                WordProblemsSetting.set(setting)
+            } else {
+                UserDefaults.standard.removeObject(forKey: WordProblemsSetting.key)
+            }
+            for request in requests {
+                let viewModel = SessionViewModel(
+                    modeId: "subtraction",
+                    engine: engine,
+                    progressStore: progressStore,
+                    bankService: nil,
+                    sessionSize: 3,
+                    skillRequest: request,
+                    correctHold: .milliseconds(2),
+                    wrongHold: .milliseconds(2)
+                )
+                await viewModel.start()
+                XCTAssertEqual(viewModel.isSkillSession, request != nil)
+                let snapshot = try XCTUnwrap(viewModel.engineSessionForTesting?.snapshot)
+                XCTAssertEqual(
+                    snapshot["allowWordProblems"] as? Bool,
+                    setting ?? true,
+                    "stored \(String(describing: setting)), skill session \(request != nil)"
+                )
+            }
+        }
+    }
 }

@@ -286,7 +286,9 @@ final class EngineBridge {
     // MARK: - Adaptive session
 
     /// `options` may carry `savedProgress` (level/mistakeBank/bankItemStats/
-    /// recentBankItemIds from Supabase) and `allowWordProblems`.
+    /// recentBankItemIds from Supabase) and `allowWordProblems`. The engine
+    /// reads a missing `allowWordProblems` as off, so play always passes
+    /// `WordProblemsSetting.isOn()` (on unless a grown-up turned it off).
     func createSession(mode: String, sessionSize: Int, options: [String: Any] = [:]) throws -> Session {
         let result = try call("createAdaptiveSession", [mode, sessionSize, options])
         guard result.isObject else {

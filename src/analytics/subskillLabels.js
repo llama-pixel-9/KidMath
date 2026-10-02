@@ -31,6 +31,7 @@ const LABELS = {
   compareStories: "compare stories (how many more or fewer)",
   twoStepStories: "two-step stories",
   missingNumber: "missing numbers in equations (46 + ? = 72)",
+  biggerNumberStories: "stories with numbers up to 1,000",
   // addition / subtraction
   makeTen: "making ten",
   composeDecompose: "breaking numbers apart to add",

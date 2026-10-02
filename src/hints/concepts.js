@@ -653,5 +653,14 @@ export const CONCEPTS = {
         "26"
       ),
     },
+    biggerNumberStories: {
+      title: "Stories with big numbers",
+      idea: "These stories work just like the smaller ones, but the numbers can go past 100. Find what the story asks. Then add or subtract the hundreds, the tens and the ones.",
+      example: ex(
+        "A farm has 245 hens. 132 more hens come to the farm. How many hens are on the farm now?",
+        ["More hens come, so add.", "Hundreds: 200 + 100 = 300. Tens: 40 + 30 = 70. Ones: 5 + 2 = 7.", "300 + 70 + 7 = 377."],
+        "377 hens"
+      ),
+    },
   },
 };

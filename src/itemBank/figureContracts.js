@@ -16,7 +16,9 @@
  *
  * Classes are keyed by structureType (bank rows carry it top-level, generated
  * questions in metadata.structureType). NOT display.time.kind — kind names
- * lie: bank rows tagged kind "faceRead" are digital ticket reads.
+ * lie: bank rows tagged kind "faceRead" are digital ticket reads. The v2
+ * topics built from blueprint rows (wordProblems) key by row id first, since
+ * a picture row and a words-only row can share a structureType.
  *
  * Satisfier vocabulary:
  *   "figure:<key>"  display.figure === key (key must exist in figureRegistry)
@@ -208,6 +210,81 @@ const DISCS_RENDERED = [
   "readDiscs", "countTensDiscs",
 ];
 
+// Word Problems (Grade 2 blueprint rows, src/blueprints/g2AddsubWp.json,
+// approved 2026-10-02). A picture row SHARES its structureType with a
+// words-only row (row 16 "picture-tens-ones" is addToResultUnknown, like
+// row 1), and a model copies its row's structureType, so these classify by
+// the item's blueprint row id first (byRowThenStructure below). Every row id
+// is declared, from the row's `picture` field; modeFigures.spec ties the
+// lists to the rows, so a new row with no line fails CI.
+const DISC_MAT = { satisfiedBy: ["figure:discMat"] };
+const BAR_MODEL = { satisfiedBy: ["widget:barModel"] };
+const NUMBER_LINE = { satisfiedBy: ["widget:numberLine"] };
+// "Choose the tape diagram": the four choices ARE the pictures. No choice
+// widget draws tape diagrams yet (a build item), so the row needs a figure
+// of its own before any model for it can pass.
+const PICTURE_CHOICES = { satisfiedBy: ["any-figure"] };
+
+const WP_ROW_CLASSES = {
+  // place-value disc mat showing only the first amount
+  "wp-g2-picture-tens-ones": DISC_MAT,
+  "wp-g2-two-step-picture": DISC_MAT,
+  // a tape diagram the kid fills in, typed into the barModel widget
+  "wp-g2-tape-missing-part": BAR_MODEL,
+  "wp-g2-tape-compare-bigger-fewer": BAR_MODEL,
+  // a number line with one hop, the hop length typed into the widget
+  "wp-g2-number-line-compare": NUMBER_LINE,
+  "wp-g2-box-number-line": NUMBER_LINE,
+  // four tape diagrams to choose from
+  "wp-g2-two-step-tape-choice": PICTURE_CHOICES,
+};
+// Rows whose picture is "none, words only" (or "none, numbers only").
+const WP_VERBAL_ROWS = [
+  "wp-g2-add-to-result", "wp-g2-take-from-result", "wp-g2-put-together-total",
+  "wp-g2-add-to-change", "wp-g2-take-from-change", "wp-g2-take-apart-part",
+  "wp-g2-compare-difference-more", "wp-g2-compare-difference-fewer",
+  "wp-g2-compare-bigger-more", "wp-g2-compare-smaller-fewer",
+  "wp-g2-add-to-start", "wp-g2-take-from-start", "wp-g2-compare-bigger-fewer",
+  "wp-g2-compare-smaller-more", "wp-g2-both-parts-unknown",
+  "wp-g2-choose-equation", "wp-g2-choose-two-equations", "wp-g2-box-middle",
+  "wp-g2-box-start", "wp-g2-two-step-take-take", "wp-g2-two-step-take-add",
+  "wp-g2-two-step-more-then-total", "wp-g2-two-step-total-then-compare",
+  "wp-g2-two-step-two-part", "wp-g2-two-step-choose-equation",
+  "wp-g2-tx-fl-story-for-equation", "wp-g2-va-estimate",
+  "wp-g2-two-step-box-second-step", "wp-g2-tx-1000-put-together-total",
+  "wp-g2-tx-1000-take-from-result", "wp-g2-tx-1000-take-apart-part",
+  "wp-g2-tx-1000-compare-more", "wp-g2-tx-1000-two-step",
+  "wp-g2-tx-1000-story-for-equation", "wp-g2-va-ga-200-put-together-total",
+];
+// The fallback for an item with no row id: its structureType. A structure
+// some words-only row uses stays verbal here (the row id is what tells the
+// picture row apart); twoStepCompareFewerTotal is row 30's alone.
+const WP_VERBAL_STRUCTURES = [
+  "addToResultUnknown", "takeFromResultUnknown", "putTogetherTotalUnknown",
+  "addToChangeUnknown", "takeFromChangeUnknown", "putTogetherAddendUnknown",
+  "compareDifferenceMore", "compareDifferenceFewer", "compareBiggerMore",
+  "compareSmallerFewer", "addToStartUnknown", "takeFromStartUnknown",
+  "compareBiggerFewer", "compareSmallerMore", "bothAddendsUnknown",
+  "equationUnknownMiddle", "equationUnknownFirst", "twoStepTakeTake",
+  "twoStepTakeAdd", "twoStepCompareMoreTotal", "twoStepJoinCompare",
+  "twoStepAddTake", "chooseStoryForEquation", "twoStepEquationSecondStep",
+  // generator-only: the bare box sentences (src/modes/wordProblems.js SHAPES)
+  "box-add-change", "box-add-start", "box-sub-change", "box-sub-start",
+];
+
+/**
+ * Classify by the item's blueprint row id when it names one of this mode's
+ * rows (a bank row or a filled model carries `blueprintId` top-level; a
+ * generated question in metadata), else by structureType.
+ */
+function byRowThenStructure(prefix) {
+  return (question, meta) => {
+    const row = meta?.blueprintId ?? question?.metadata?.blueprintId ?? null;
+    if (typeof row === "string" && row.startsWith(prefix)) return row;
+    return meta?.structureType ?? question?.metadata?.structureType ?? null;
+  };
+}
+
 export const FIGURE_CONTRACTS = {
   time: {
     classify: (question, meta) =>
@@ -275,6 +352,17 @@ export const FIGURE_CONTRACTS = {
     },
     unlisted: "fail",
   },
+
+  wordProblems: {
+    classify: byRowThenStructure("wp-"),
+    classes: {
+      ...WP_ROW_CLASSES,
+      ...Object.fromEntries(WP_VERBAL_ROWS.map((id) => [id, VERBAL])),
+      twoStepCompareFewerTotal: PICTURE_CHOICES,
+      ...Object.fromEntries(WP_VERBAL_STRUCTURES.map((st) => [st, VERBAL])),
+    },
+    unlisted: "fail",
+  },
 };
 
 /**
@@ -283,7 +371,7 @@ export const FIGURE_CONTRACTS = {
  * volumeCoordinates stays playable:false until cubeGrid/coordGrid get mirrors.
  */
 export const IOS_MIRRORED_FIGURES = ["clockFace", "barGraph", "discMat", "pictograph", "tallyChart", "linePlot", "areaFigure"];
-export const IOS_PLAYABLE_CONTRACT_MODES = ["time", "dataGraphs", "counting", "placeValueDiscs"];
+export const IOS_PLAYABLE_CONTRACT_MODES = ["time", "dataGraphs", "counting", "placeValueDiscs", "wordProblems"];
 
 /**
  * Display keys that actually put pixels on screen (mirror of what

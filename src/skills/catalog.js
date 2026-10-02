@@ -280,12 +280,19 @@ const facts = (subskill, levels, numbers) => ({
 // (Sai, 2026-10-02). Titles show on the kid's topic sheet (and are read
 // aloud), so no "equation" in them. Grade 2 is levels 4-6
 // (src/modes/wordProblems.js).
-// Play only: no rows exist yet (the blueprint rows await Sai), and a
-// worksheet title is a promise a sheet cannot keep without them. `standards`
-// holds the codes of every loaded framework; standards.spec checks them.
+// Play only: no rows exist yet (Sai approved the blueprint rows on
+// 2026-10-02; models come next), and a worksheet title is a promise a sheet
+// cannot keep without them. `standards` holds the codes of every loaded
+// framework; standards.spec checks them, and wordProblems.spec ties each
+// skill's codes to its rows' (src/blueprints/g2AddsubWp.json).
 const G2_WORDS = [4, 6];
 const STORY_CODES = { ccss: ["2.OA.A.1"], tx: ["2.4C", "2.7C"], fl: ["MA.2.AR.1.1"], va: ["2.CE.1c"], ga: ["2.NR.2.3"] };
 const BOX_CODES = { ccss: ["2.NBT.B.5"], tx: ["2.4B"], fl: ["MA.2.AR.2.2"], va: ["2.CE.1b"], ga: ["2.NR.2.4"] };
+// Stories past 100 (rows 36-42): Texas stories within 1,000 (2.4C, 2.7C; the
+// story for a number sentence, 2.4D) and Virginia and Georgia totals past
+// 100. Common Core keeps Grade 2 stories within 100, so the skill cites no
+// Common Core code, only its rows' state codes (decision 4).
+const BIGGER_STORY_CODES = { ccss: [], tx: ["2.4C", "2.7C", "2.4D"], fl: [], va: ["2.CE.1c"], ga: ["2.NR.2.3"] };
 const wordStory = (id, subskill, title, level) => ({
   ...banked(id, "2", "wordProblems", STORY_CODES.ccss[0], title,
     { families: ["application", "conceptual"], subskills: [subskill], levels: G2_WORDS }, null, level),
@@ -301,6 +308,13 @@ const WORD_PROBLEM_SKILLS = [
     standards: BOX_CODES,
   },
   wordStory("wp-g2-two-step", "twoStepStories", "Two-step stories", 6),
+  // Last in the grade, so a kid meets the five core skills first. Like every
+  // skill in a grade it counts toward the grade (Sai's decision 4).
+  {
+    ...wordStory("wp-g2-bigger-numbers", "biggerNumberStories", "Stories with bigger numbers", 6),
+    ccss: [],
+    standards: BIGGER_STORY_CODES,
+  },
 ];
 
 export const PLAY_ONLY_SKILLS = [

@@ -185,6 +185,7 @@ Reruns also overwrite same-cell draft ids — be skip-existing aware.
   with the web session loop.
 - **iOS widget `@State` resets via `.id(viewModel.questionKey)`** — without it,
   a widget keeps the previous question's state.
+- **Word problems are on by default** (Sai, 2026-10-02) on web and iOS; existing signed-in rows (seeded off) stay off until data migration `20261002183100` is applied with Sai's go-ahead. The v1 stories of the four held topics (`STORIES_HELD_MODE_IDS` in `src/skills/storyHold.js`: addition, subtraction, barModels, numberBonds) stay out of play until each topic's v2 stories go live, then that topic's v1 stories retire and it leaves the list (`?item=` still pins any row).
 - **Engagement state is localStorage-only (v1)** behind a swappable store API;
   cloud sync is a future migration, so don't hand-roll persistence around it.
 - **Progress is per kid.** `progress` / `progress_item_stats` rows carry `kid_id`
@@ -276,9 +277,11 @@ Product IDs: `io.larkit.app.premium.{monthly,annual}`.
   account-side: `docs/ios-appstore-checklist.md` and `docs/stripe-setup.md`.
   Bundle ID is `io.larkit.app`; the App Store Connect record "larkit" exists
   (2026-09-19).
-- Item bank: 43,503 approved items in the shipped bundle (113 rows retired in the
-  live bank on 27-28 Sep for wrong keys and kid-safe were pruned from it; a full
-  `bank:export` after the v2 migration is still recommended).
+- Item bank: 43,502 approved items in the shipped bundle (114 rows retired in the
+  live bank were pruned from it: 113 on 27-28 Sep for wrong keys and kid-safe, and
+  the wrong-key raffle story `addition-app-433` on 2 Oct; a full `bank:export`
+  after the v2 migration is still recommended). v1 add/sub stories retire topic by
+  topic only when that topic's v2 stories go live (Sai, 2026-10-02).
   Batch-trust mode (spot-check a sample, approve the batch) is built and deployed.
 - Item bank v2 groundwork (2026-09-28): per-skill version switch, per-item hints,
   item models and their review screen, kid state — see

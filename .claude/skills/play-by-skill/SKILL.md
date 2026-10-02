@@ -65,6 +65,48 @@ masterySnapshot, challenge })`. Without skill options it is the ladder session.
 - **A skill session NEVER moves the saved `level`.** `MathExplorer` saves the
   stored level back. Pinned by e2e.
 
+## Word problems (the setting and the held topics)
+- **On by default since 2026-10-02 (Sai):** `DEFAULT_ALLOW_WORD_PROBLEMS =
+  true` in `src/userPreferences.js`. The only web switch is the in-session
+  gear (in the Word Problems topic it shows "Always on" instead); it saves to `kidmath-allow-word-problems` and, signed in, to
+  `user_preferences.allow_word_problems` (the cloud row wins on sign-in; a
+  user with no row gets one seeded from this device; a FAILED read plays the
+  local value and writes nothing). `MathExplorer` passes it into every
+  session.
+- **Existing signed-in households stay OFF until a data migration runs.**
+  Their rows were seeded from the old default (off) and the cloud row wins.
+  `20261002183000` only changes the column default; `20261002183100` flips
+  the false rows nobody changed after the seeding insert and needs Sai's
+  go-ahead. Neither is applied.
+- A worded skill adds the `application` family only when it has `stories`
+  and `playStoriesAllowed(mode, setting)` is true (`familiesFor`); with two
+  source families that is one question in three. A drill with `stories`
+  serves one from its story cell every third question of that skill
+  (`drillStoryDue`, falling back to the drill when the cell is empty). Only
+  the Word Problems topic's story skills list `application` in their own
+  source families (see above); they ignore the setting. A skill whose
+  catalog entry has no `stories` never serves one: today multiplication
+  grade 5 and division grades 4 and 5 have none, so Larkit picks there is
+  story-free.
+- **Held topics:** `STORIES_HELD_MODE_IDS` in `src/skills/storyHold.js`
+  (addition, subtraction, barModels, numberBonds). Their v1 stories stay out
+  of play whatever the setting: not in skill sessions (worded or drill), not
+  in the plain session (application turns procedural), not from the template
+  generator when a cell is empty (it is asked with stories off), not as a
+  due retry (`restoreMistakeBank(saved, mode)` drops a saved one, so the next
+  save clears it; `isHeldStory` also guards the retry pick, and the
+  grown-ups' "In review" count skips them). The gear panel says new word
+  problems for the topic are on the way. The admin `?item=` pin still serves
+  the pinned row. When a topic's v2 stories go live, its v1 stories retire
+  and the topic leaves the list.
+- Printed worksheets do not read the setting (web and iOS): the screen
+  starts at the last sheet type printed, else "practice".
+- iOS passes the setting into both sessions (`SessionViewModel.
+  allowWordProblems`: the same UserDefaults key, on when missing; nothing on
+  iOS writes it and iOS does not read `user_preferences` yet). The engine's
+  own `createAdaptiveSession` default is still off, so a caller that passes
+  nothing gets no stories (`simulateKid` plays words on unless `--words 0`).
+
 ## Math Facts practice (`src/facts/factPractice.js`, `factMarks.js`)
 A Math Facts skill session (not its Fledging Flight) picks FACTS, not bank
 rows. A fact (trackKey) is **ready** when fast, or answered fast earlier
@@ -136,7 +178,10 @@ score (`GRADE_UP.pass`), not by a level change — it never moves the level.
 ## Tests
 `skillsPlay.spec`, `skillMastery.spec`, `skillSession.spec` (every playable
 skill serves five valid questions of its own, words on and off),
-`topicState.spec`, `parentReport.spec`, `e2e/skillsPlay.spec.js` (whole
+`topicState.spec`, `parentReport.spec`, `storyHold.spec` (stories show for
+an open topic, drills included, never for a held one, generator fallback and
+`?item=` pin included), `userPreferences.spec` (default on, failed read writes nothing),
+`e2e/skillsPlay.spec.js` (whole
 sessions through the real widgets: level untouched, mastery saved, challenge
 pays no stars, parent controls). Must stay green unchanged: `bankCellCoverage`,
 `sessionEngine` (which pins "the level never moves mid-session"); parity

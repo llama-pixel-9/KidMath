@@ -11,8 +11,9 @@
  *   --maxSessions 60                       pacing cap per mode
  *   --economyDays 60                       calendar-sim length
  *   --out path.json                        detailed JSON report destination
- *   --words 1                              play with word problems ON (the app
- *                                          default is OFF; both must be bank-served)
+ *   --words 0                              play with word problems OFF (the app
+ *                                          default is ON since 2026-10-02; both
+ *                                          must be bank-served)
  *   --bank cloud                           play against the LIVE Supabase bank
  *                                          (what signed-in kids get) instead of
  *                                          the bundle; needs .env.local sourced
@@ -222,7 +223,7 @@ function makeKid(persona) {
 }
 
 function playSession(mode, persona, kid, savedProgress, promptHistory) {
-  let session = createAdaptiveSession(mode, SESSION_SIZE, { savedProgress, allowWordProblems: args.words === "1" });
+  let session = createAdaptiveSession(mode, SESSION_SIZE, { savedProgress, allowWordProblems: args.words !== "0" });
   const startLevel = session.level;
   const sessionPrompts = new Set();
   let guard = 0;

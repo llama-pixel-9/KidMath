@@ -23,7 +23,9 @@ decimalAsNumber), `decimalsStories.js` (application), through the shared
 - Bands: K-1 tenths only (0.1–0.9); 2-3 tenths + hundredths (< 1); 4-5
   hundredths with whole parts (to 9.99).
 - **Letter-free drill forms are load-bearing**: `isVerbalPrompt` counts ≥6
-  total letters, and sessions default to word-problems OFF, so each
+  total letters, and a session with word problems OFF prefers terse items
+  (the engine's `createAdaptiveSession` defaults to off; the web app passes
+  on since 2026-10-02, but the gear switch turns it off), so each
   procedural band carries letter-free items the filter can serve —
   `0.2 + 0.1 = ?`, `0.4, 0.5, 0.6, ?`, `0.3 ? 0.7`, `7/10 = ?`, and the
   numerator fills `0.7 = ?/10` / `?/100 = 0.45`. Verified in-session:

@@ -4325,16 +4325,6 @@ export const ITEMS = [
     question: {"a":5,"b":null,"op":"+","answer":14,"display":{"promptText":"Asher had 5 band patches. He added some more patches. Now he has 19 patches. How many patches did Asher add?"}},
   },
   {
-    itemId: "addition-app-433",
-    modeId: "addition",
-    itemFamily: "application",
-    subskill: "unknownAddend",
-    structureType: "joinChangeUnknown",
-    levelRange: [7,10],
-    reviewStatus: APPROVED,
-    question: {"a":15,"b":null,"op":"+","answer":35,"display":{"promptText":"A raffle sold 15 tickets at open and 35 more by noon. Total tickets by noon?"}},
-  },
-  {
     itemId: "addition-app-434",
     modeId: "addition",
     itemFamily: "application",

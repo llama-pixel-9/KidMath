@@ -19,7 +19,7 @@ struct AboutView: View {
         ("📈", "Diagnostic Adaptivity",
          "larkit tracks subskills and targets weaker areas so each child gets practice that fits their needs."),
         ("♿️", "Accessible by Design",
-         "Word problems can be limited for early readers, and visual/symbolic questions stay central for foundational levels."),
+         "Word problems are on by default, and a grown-up can turn them off in Settings for early readers. Pictures and number questions stay central for the youngest learners."),
     ]
 
     var body: some View {

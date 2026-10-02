@@ -306,6 +306,38 @@ describe("the fact fluency rows", () => {
   });
 });
 
+describe("the Grade 2 add and subtract rows (approved 2026-10-02)", () => {
+  const wp = BLUEPRINT_ROWS.filter((r) => r.file === "g2AddsubWp");
+  const calc = BLUEPRINT_ROWS.filter((r) => r.file === "g2AddsubCalc");
+
+  it("are the two lists Sai saw, numbered as sent: 42 story rows and 35 computing rows", () => {
+    expect(wp).toHaveLength(42);
+    expect(calc).toHaveLength(35);
+    expect(wp[0].id).toBe("wp-g2-add-to-result");
+    expect(wp[41].id).toBe("wp-g2-va-ga-200-put-together-total");
+    expect(calc[0].id).toBe("calc-g2-add-100");
+    expect(calc[34].id).toBe("calc-g2-tx-ten-hundred-1200");
+  });
+
+  it("file every row under its topic, at Grade 2's levels, with the fields a model copies", () => {
+    for (const r of [...wp, ...calc]) {
+      expect(r.track, r.id).toBe("item");
+      expect(r.grade, r.id).toBe("2");
+      expect(r.mode_id, r.id).toBe(r.file === "g2AddsubWp" ? "wordProblems" : "multiDigit");
+      expect(r.spec.levelRange, r.id).toEqual([4, 6]);
+      expect(typeof r.spec.structureType, r.id).toBe("string");
+      expect(typeof r.spec.subskill, r.id).toBe("string");
+      expect(["application", "conceptual", "procedural"], r.id).toContain(r.spec.family);
+    }
+  });
+
+  it("drop VA 2.NS.1g from the story estimate row (decision 7: it is a counting code)", () => {
+    const row = wp.find((r) => r.id === "wp-g2-va-estimate");
+    expect(row.standards.va).toEqual(["2.CE.1a", "2.CE.1c"]);
+    expect(JSON.stringify(row)).not.toContain("2.NS.1g");
+  });
+});
+
 describe("the load", () => {
   it("writes one row per code and one link per row and loaded code", () => {
     expect(standardsDbRows()).toHaveLength(LOADED_FRAMEWORKS.reduce((n, fw) => n + standardsFor(fw).length, 0));

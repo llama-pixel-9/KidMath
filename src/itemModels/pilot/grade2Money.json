@@ -39,7 +39,7 @@
   "widget": "numberPad",
   "representationType": "verbalContext",
   "template": {
-   "prompt": "{name} has a {coinName}. {name} asks {helper} to trade it for pennies. How many pennies are worth the same as a {coinName}?"
+   "prompt": "How many pennies are worth the same as a {coinName}?"
   },
   "slots": {
    "name": {
@@ -340,7 +340,7 @@
   "widget": null,
   "representationType": "verbalContext",
   "template": {
-   "prompt": "{name} has {pennies} {setting}. {name} wants to trade them all for one coin. Which coin is worth the same as {pennies}?"
+   "prompt": "{name} has {pennies} and wants to trade them all for one coin. Which coin is worth the same as {pennies}?"
   },
   "slots": {
    "name": {
@@ -650,7 +650,7 @@
   "widget": "numberPad",
   "representationType": "verbalContext",
   "template": {
-   "prompt": "{name} has {nickels} {setting}. How many cents are {nickels} worth?"
+   "prompt": "How many cents are {nickels} worth?"
   },
   "slots": {
    "name": {
@@ -785,7 +785,7 @@
   "widget": "coinTray",
   "representationType": "objectSet",
   "template": {
-   "prompt": "{name} and {name2} are practicing with dimes. How can {name} make {goalMoney} with only dimes? Tap the coins to show it."
+   "prompt": "How can {name} make {goalMoney} with only dimes? Tap the coins to show it."
   },
   "slots": {
    "name": {
@@ -950,7 +950,7 @@
   "widget": "coinTray",
   "representationType": "objectSet",
   "template": {
-   "prompt": "{name} plays store with {name2}. The store takes only nickels, and {name} needs to pay {goalMoney}. How can {name} make {goalMoney} with nickels? Tap the coins to show it."
+   "prompt": "How can {name} make {goalMoney} with nickels? Tap the coins to show it."
   },
   "slots": {
    "name": {
@@ -1827,7 +1827,7 @@
   "widget": "numberPad",
   "representationType": "verbalContext",
   "template": {
-   "prompt": "{name} buys {object_a} for {price} {setting}. {name} pays exactly {price} using only quarters, dimes, nickels and pennies, with as few coins as possible. How many coins does {name} use?"
+   "prompt": "{name} pays exactly {price} using only quarters, dimes, nickels and pennies, with as few coins as possible. How many coins does {name} use?"
   },
   "slots": {
    "name": {
@@ -25827,7 +25827,7 @@
   "widget": null,
   "representationType": "verbalContext",
   "template": {
-   "prompt": "{name} has {coins} {setting}. {name} spends {price} on {object_a}. How much money does {name} have left?"
+   "prompt": "{name} has {coins} and spends {price} on {object_a}. How much money does {name} have left?"
   },
   "slots": {
    "name": {

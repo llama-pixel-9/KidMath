@@ -6,7 +6,7 @@
  * test says otherwise. Never a real export: prepare.mjs reads it only
  * under a test's stub layout and QC runners.
  */
-import { mkdirSync, mkdtempSync, writeFileSync } from "node:fs";
+import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { BLUEPRINT_ROWS } from "../../blueprints/index.js";
@@ -16,7 +16,18 @@ import { modelFlags, passedAll } from "../../../scripts/live/qcPanels.mjs";
 
 export const FIXTURE_REVIEWER = "00000000-0000-4000-8000-0000000000aa";
 
-export const scratchDir = (name) => mkdtempSync(join(tmpdir(), `live-${name}-`));
+const scratch = [];
+
+/** A fresh temp folder; removeScratchDirs() removes every one made. */
+export function scratchDir(name) {
+  const dir = mkdtempSync(join(tmpdir(), `live-${name}-`));
+  scratch.push(dir);
+  return dir;
+}
+
+export function removeScratchDirs() {
+  for (const dir of scratch.splice(0)) rmSync(dir, { recursive: true, force: true });
+}
 
 /** An item as exportSql.mjs's identity query returns it (prompt, and the display fields promptIdentity reads). */
 export function identityRow(item, { status = "approved", version = 2, grade = item.tags?.grade ?? null, run = item.source?.run ?? null } = {}) {

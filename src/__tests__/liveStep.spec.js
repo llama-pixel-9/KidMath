@@ -1,4 +1,4 @@
-import { beforeAll, describe, expect, it } from "vitest";
+import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from "node:fs";
 import { join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -42,7 +42,7 @@ import { IDENTITY_DISPLAY_FIELDS, exportQueries, readinessQueries } from "../../
 import { corruptKey, disagreement, judgeFacts, modelFlags, passedAll, runPanels, timesFlagged } from "../../scripts/live/qcPanels.mjs";
 import { diffRows, readCheckedPages, withoutRetired } from "../../scripts/live/readiness.mjs";
 import { prepare } from "../../scripts/live/prepare.mjs";
-import { FIXTURE_REVIEWER, identityRow, scratchDir, stubLayout, stubQc, writeExport } from "./helpers/liveExport.js";
+import { FIXTURE_REVIEWER, identityRow, removeScratchDirs, scratchDir, stubLayout, stubQc, writeExport } from "./helpers/liveExport.js";
 import { kidView } from "../../scripts/itemGen/qc/kidView.js";
 import { retireRunSql, retireV1Sql } from "../../scripts/live/retire.mjs";
 import { unapproveSql } from "../../scripts/live/unapprove.mjs";
@@ -60,6 +60,8 @@ import { SEED_ITEMS } from "../itemBank/bundle.js";
 const SLOW = 60_000;
 
 const writeFileSyncJson = (path, value) => writeFileSync(path, JSON.stringify(value));
+
+afterAll(removeScratchDirs);
 
 // Three rows whose checksum Postgres computed (jsonb_to_recordset, then the
 // same coalesced line and md5(string_agg(... order by item_id collate "C"))):

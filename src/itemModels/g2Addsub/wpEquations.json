@@ -1459,6 +1459,226 @@
     }
   },
   {
+    "id": "wp-g2-va-estimate-2",
+    "blueprintId": "wp-g2-va-estimate",
+    "modeId": "wordProblems",
+    "subskill": "partWholeStories",
+    "family": "conceptual",
+    "structureType": "putTogetherTotalUnknown",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [],
+      "tx": [],
+      "fl": [],
+      "va": [
+        "2.CE.1a",
+        "2.CE.1c"
+      ],
+      "ga": []
+    },
+    "difficulty": "easy",
+    "format": "number",
+    "widget": null,
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} {past} {n1} {object_plural} {day1}. {name} {past} {n2} {object_plural} {day2}. About how many {object_plural} did {name} {present} in all?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "screens-media",
+          "time-events",
+          "sports-outdoors",
+          "collecting-nature",
+          "toys-games"
+        ]
+      },
+      "pair": {
+        "kind": "int",
+        "min": 0,
+        "max": 2
+      },
+      "tsum": {
+        "kind": "int",
+        "min": 5,
+        "max": 9
+      },
+      "tx": {
+        "kind": "int",
+        "min": 1,
+        "max": 6
+      },
+      "swap": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "day": {
+        "kind": "int",
+        "min": 0,
+        "max": 2
+      },
+      "ox": {
+        "kind": "expr",
+        "expr": "pair == 2 ? 2 : 1",
+        "format": "int"
+      },
+      "oy": {
+        "kind": "expr",
+        "expr": "pair == 1 ? 8 : 7",
+        "format": "int"
+      },
+      "ty": {
+        "kind": "expr",
+        "expr": "tsum - tx",
+        "format": "int"
+      },
+      "down": {
+        "kind": "expr",
+        "expr": "10 * tx + ox",
+        "format": "int"
+      },
+      "up": {
+        "kind": "expr",
+        "expr": "10 * ty + oy",
+        "format": "int"
+      },
+      "n1": {
+        "kind": "expr",
+        "expr": "swap == 0 ? down : up",
+        "format": "int"
+      },
+      "n2": {
+        "kind": "expr",
+        "expr": "swap == 0 ? up : down",
+        "format": "int"
+      },
+      "exact": {
+        "kind": "expr",
+        "expr": "down + up",
+        "format": "int"
+      },
+      "est": {
+        "kind": "expr",
+        "expr": "10 * (tsum + 1)",
+        "format": "int"
+      },
+      "downTen": {
+        "kind": "expr",
+        "expr": "10 * tx",
+        "format": "int"
+      },
+      "downTenUp": {
+        "kind": "expr",
+        "expr": "10 * tx + 10",
+        "format": "int"
+      },
+      "upTen": {
+        "kind": "expr",
+        "expr": "10 * ty + 10",
+        "format": "int"
+      },
+      "upTenDown": {
+        "kind": "expr",
+        "expr": "10 * ty",
+        "format": "int"
+      },
+      "past": {
+        "kind": "expr",
+        "expr": "object.id == 'page' ? 'read' : object.id == 'minute' ? 'read for' : object.id == 'jumping-jack' ? 'did' : object.id == 'leaf' ? 'collected' : object.id == 'photo' ? 'took' : object.id == 'catch' ? 'made' : object.id == 'bubble' ? 'blew' : object.id == 'video-game-point' ? 'scored' : object.id == 'pumpkin-seed' ? 'scooped out' : 'won'",
+        "format": "text"
+      },
+      "present": {
+        "kind": "expr",
+        "expr": "object.id == 'page' ? 'read' : object.id == 'minute' ? 'read' : object.id == 'jumping-jack' ? 'do' : object.id == 'leaf' ? 'collect' : object.id == 'photo' ? 'take' : object.id == 'catch' ? 'make' : object.id == 'bubble' ? 'blow' : object.id == 'video-game-point' ? 'score' : object.id == 'pumpkin-seed' ? 'scoop out' : 'win'",
+        "format": "text"
+      },
+      "day1": {
+        "kind": "expr",
+        "expr": "day == 0 ? 'on Monday' : day == 1 ? 'on Saturday' : 'in the morning'",
+        "format": "text"
+      },
+      "day2": {
+        "kind": "expr",
+        "expr": "day == 0 ? 'on Tuesday' : day == 1 ? 'on Sunday' : 'in the afternoon'",
+        "format": "text"
+      },
+      "tensOnly": {
+        "kind": "expr",
+        "expr": "10 * tsum",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "ty >= 1",
+      "(object.id == 'page' || object.id == 'minute' || object.id == 'jumping-jack' || object.id == 'leaf' || object.id == 'photo' || object.id == 'catch' || object.id == 'bubble' || object.id == 'video-game-point' || object.id == 'pumpkin-seed' || object.id == 'arcade-ticket')",
+      "object.count_one_kid != null && max(down, up) <= sum(drop(object.count_one_kid, 1))"
+    ],
+    "answer": {
+      "expr": "est",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "est - 10",
+        "mistake": "roundedDownBoth"
+      },
+      {
+        "expr": "est + 10",
+        "mistake": "roundedUpBoth"
+      },
+      {
+        "expr": "100",
+        "mistake": "roundedToHundred",
+        "when": "est < 90",
+        "otherwise": {
+          "expr": "est - 20",
+          "mistake": "droppedATen"
+        }
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks about how many, so you need a number close to the total, not the exact total.",
+      "steps": [
+        "Add {n1} and {n2}. Add the tens, then add the ones.",
+        "Look at your total. Which ten is it closest to?"
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "roundedDownBoth": "That rounds both numbers down. {up} is closer to {upTen} than to {upTenDown}.",
+        "roundedUpBoth": "That rounds both numbers up. {down} is closer to {downTen} than to {downTenUp}.",
+        "roundedToHundred": "That is the closest hundred. The question asks about how many, so find the ten closest to the total.",
+        "droppedATen": "That leaves out a ten. The tens in {n1} and {n2} make {tensOnly} before you even add the ones."
+      },
+      "solution": {
+        "steps": [
+          "{n1} + {n2} = {exact}.",
+          "The total, {exact}, is closest to {est}.",
+          "So {name} {past} about {est} {object_plural}."
+        ],
+        "answer": "est"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "VA SOL 2023 2.CE.1a, 2.CE.1c"
+      ]
+    }
+  },
+  {
     "id": "wp-g2-two-step-box-second-step",
     "blueprintId": "wp-g2-two-step-box-second-step",
     "modeId": "wordProblems",

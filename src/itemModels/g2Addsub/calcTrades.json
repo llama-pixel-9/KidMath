@@ -454,6 +454,195 @@
     }
   },
   {
+    "id": "calc-g2-which-trade-subtract-2",
+    "blueprintId": "calc-g2-which-trade",
+    "modeId": "multiDigit",
+    "subskill": "within100",
+    "family": "conceptual",
+    "structureType": "whichTrade",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5",
+        "2.NBT.B.9"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.3"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5, 2.NBT.B.9",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.NSO.2.3",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4"
+      ]
+    },
+    "format": "number",
+    "widget": "placeValueDiscs",
+    "representationType": "objectSet",
+    "template": {
+      "prompt": "The mat shows {first}. Take away {sub} on the mat. Trade only if you need to. What is {first} − {sub}?"
+    },
+    "slots": {
+      "need": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "t": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "o": {
+        "kind": "int",
+        "min": 0,
+        "max": 8
+      },
+      "j": {
+        "kind": "int",
+        "min": 0,
+        "max": 2519
+      },
+      "k": {
+        "kind": "int",
+        "min": 0,
+        "max": 2519
+      },
+      "v": {
+        "kind": "expr",
+        "expr": "need == 1 ? o + 1 + k % (9 - o) : k % (o + 1)",
+        "format": "int"
+      },
+      "u": {
+        "kind": "expr",
+        "expr": "need == 1 ? 1 + j % (t - 1) : 1 + j % t",
+        "format": "int"
+      },
+      "first": {
+        "kind": "expr",
+        "expr": "10 * t + o",
+        "format": "int"
+      },
+      "sub": {
+        "kind": "expr",
+        "expr": "10 * u + v",
+        "format": "int"
+      },
+      "diff": {
+        "kind": "expr",
+        "expr": "first - sub",
+        "format": "int"
+      },
+      "uTxt": {
+        "kind": "expr",
+        "expr": "u == 1 ? '1 ten' : u + ' tens'",
+        "format": "text"
+      },
+      "vTxt": {
+        "kind": "expr",
+        "expr": "v == 1 ? '1 one' : v + ' ones'",
+        "format": "text"
+      },
+      "oTxt": {
+        "kind": "expr",
+        "expr": "o == 1 ? '1 one' : o + ' ones'",
+        "format": "text"
+      },
+      "tensFeedback": {
+        "kind": "expr",
+        "expr": "need == 1 ? 'Take away all ' + uTxt + ' from the ten discs. Breaking a ten into ones is a trade, not a take-away.' : 'Take away all ' + uTxt + ' from the ten discs.'",
+        "format": "text"
+      },
+      "solveTrade": {
+        "kind": "expr",
+        "expr": "need == 1 ? 'There are ' + oTxt + ', not enough to take away ' + v + '. Break 1 ten into 10 ones.' : 'There are ' + oTxt + ', enough to take away ' + v + '. No trade is needed.'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "diff >= 11",
+      "diff != sub"
+    ],
+    "operation": {
+      "a": "first",
+      "b": "sub",
+      "op": "-"
+    },
+    "display": {
+      "mode": "'build'",
+      "cols": [
+        {
+          "place": 10,
+          "count": "t"
+        },
+        {
+          "place": 1,
+          "count": "o"
+        }
+      ]
+    },
+    "answer": {
+      "expr": "diff",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "diff + 10",
+        "mistake": "offByTen"
+      },
+      {
+        "expr": "diff + 1",
+        "mistake": "offByOne"
+      },
+      {
+        "expr": "first + sub",
+        "mistake": "addedInsteadOfSubtracted",
+        "when": "first + sub <= 99"
+      }
+    ],
+    "hint": {
+      "nudge": "Look at the one discs first. You need to take away {vTxt}.",
+      "steps": [
+        "Count the one discs on the mat.",
+        "Are there enough to take away {v}? If not, break 1 ten into 10 ones.",
+        "Then take away {uTxt} and {vTxt}, and read the mat."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "offByTen": "{tensFeedback}",
+        "offByOne": "That is 1 too many. Count the one discs you take away: {vTxt}.",
+        "addedInsteadOfSubtracted": "This one takes away {sub}. Use the − buttons to take discs off the mat."
+      },
+      "solution": {
+        "steps": [
+          "{solveTrade}",
+          "Take away {uTxt} and {vTxt}.",
+          "So {first} − {sub} = {diff}."
+        ],
+        "answer": "diff"
+      }
+    }
+  },
+  {
     "id": "calc-g2-which-trade-add",
     "blueprintId": "calc-g2-which-trade",
     "modeId": "multiDigit",
@@ -633,6 +822,203 @@
           "Now the mat shows {tensAfter} tens and {onesAfter} {oAfterWord}. That is {total}."
         ],
         "answer": "'Trade 10 ones for 1 ten'"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-which-trade-add-2",
+    "blueprintId": "calc-g2-which-trade",
+    "modeId": "multiDigit",
+    "subskill": "within100",
+    "family": "conceptual",
+    "structureType": "whichTrade",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5",
+        "2.NBT.B.9"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.3"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5, 2.NBT.B.9",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.NSO.2.3",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4"
+      ]
+    },
+    "format": "number",
+    "widget": "placeValueDiscs",
+    "representationType": "objectSet",
+    "template": {
+      "prompt": "The mat shows {first}. Add {second} on the mat. Trade only if you need to. What is {first} + {second}?"
+    },
+    "slots": {
+      "need": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "a1": {
+        "kind": "int",
+        "min": 1,
+        "max": 7
+      },
+      "a0": {
+        "kind": "int",
+        "min": 1,
+        "max": 9
+      },
+      "j": {
+        "kind": "int",
+        "min": 0,
+        "max": 2519
+      },
+      "k": {
+        "kind": "int",
+        "min": 0,
+        "max": 2519
+      },
+      "b0": {
+        "kind": "expr",
+        "expr": "need == 1 ? 10 - a0 + k % a0 : k % (10 - a0)",
+        "format": "int"
+      },
+      "b1": {
+        "kind": "expr",
+        "expr": "1 + j % (9 - need - a1)",
+        "format": "int"
+      },
+      "first": {
+        "kind": "expr",
+        "expr": "10 * a1 + a0",
+        "format": "int"
+      },
+      "second": {
+        "kind": "expr",
+        "expr": "10 * b1 + b0",
+        "format": "int"
+      },
+      "total": {
+        "kind": "expr",
+        "expr": "first + second",
+        "format": "int"
+      },
+      "tensSum": {
+        "kind": "expr",
+        "expr": "a1 + b1",
+        "format": "int"
+      },
+      "onesSum": {
+        "kind": "expr",
+        "expr": "a0 + b0",
+        "format": "int"
+      },
+      "b1Txt": {
+        "kind": "expr",
+        "expr": "b1 == 1 ? '1 ten' : b1 + ' tens'",
+        "format": "text"
+      },
+      "b0Txt": {
+        "kind": "expr",
+        "expr": "b0 == 1 ? '1 one' : b0 + ' ones'",
+        "format": "text"
+      },
+      "onesLeftTxt": {
+        "kind": "expr",
+        "expr": "onesSum - 10 == 1 ? '1 one' : (onesSum - 10) + ' ones'",
+        "format": "text"
+      },
+      "solveTrade": {
+        "kind": "expr",
+        "expr": "need == 1 ? onesSum + ' ones make 1 ten and ' + onesLeftTxt + ', so trade 10 ones for 1 ten.' : onesSum + ' ones is 9 or fewer, so no trade is needed.'",
+        "format": "text"
+      }
+    },
+    "constraints": [],
+    "operation": {
+      "a": "first",
+      "b": "second",
+      "op": "+"
+    },
+    "display": {
+      "mode": "'build'",
+      "cols": [
+        {
+          "place": 10,
+          "count": "a1"
+        },
+        {
+          "place": 1,
+          "count": "a0"
+        }
+      ]
+    },
+    "answer": {
+      "expr": "total",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "total - 10",
+        "mistake": "forgotToCarry",
+        "when": "need == 1"
+      },
+      {
+        "expr": "total + 10",
+        "mistake": "offByTen"
+      },
+      {
+        "expr": "first + 10 * b0 + b1",
+        "mistake": "changedTheWrongPlace",
+        "when": "b0 != b1",
+        "otherwise": {
+          "expr": "total - 1",
+          "mistake": "offByOne"
+        }
+      }
+    ],
+    "hint": {
+      "nudge": "Put the discs for {second} on the mat. Look at the one discs before you trade.",
+      "steps": [
+        "Put on {b1Txt} and {b0Txt}.",
+        "Count the one discs. Are there 10 or more?",
+        "If there are, trade 10 ones for 1 ten. Then read the mat."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "forgotToCarry": "Ten ones make one ten. Use the trade button, so the new ten stays on the mat.",
+        "offByTen": "That is 10 too many. Count the ten discs again.",
+        "changedTheWrongPlace": "{second} is {b1Txt} and {b0Txt}. Put the tens with the ten discs and the ones with the one discs.",
+        "offByOne": "That is 1 too few. Count the one discs again."
+      },
+      "solution": {
+        "steps": [
+          "Tens: {a1} + {b1} = {tensSum}. Ones: {a0} + {b0} = {onesSum}.",
+          "{solveTrade}",
+          "So {first} + {second} = {total}."
+        ],
+        "answer": "total"
       }
     }
   },
@@ -998,6 +1384,223 @@
     }
   },
   {
+    "id": "calc-g2-add-discs-2",
+    "blueprintId": "calc-g2-add-discs",
+    "modeId": "multiDigit",
+    "subskill": "within1000",
+    "family": "procedural",
+    "structureType": "addWithDiscs",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.7"
+      ],
+      "tx": [],
+      "fl": [
+        "MA.2.NSO.2.4"
+      ],
+      "va": [],
+      "ga": []
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.7",
+        "FL B.E.S.T. MA.2.NSO.2.4"
+      ]
+    },
+    "format": "number",
+    "widget": "placeValueDiscs",
+    "representationType": "objectSet",
+    "template": {
+      "prompt": "The mat shows {first}. Put on discs to add {second}. What is {first} + {second}?"
+    },
+    "slots": {
+      "r": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "h1": {
+        "kind": "int",
+        "min": 1,
+        "max": 8
+      },
+      "t1": {
+        "kind": "int",
+        "min": 0,
+        "max": 9
+      },
+      "o1": {
+        "kind": "int",
+        "min": 0,
+        "max": 9
+      },
+      "h2": {
+        "kind": "int",
+        "min": 1,
+        "max": 8
+      },
+      "t2": {
+        "kind": "int",
+        "min": 0,
+        "max": 9
+      },
+      "o2": {
+        "kind": "int",
+        "min": 0,
+        "max": 9
+      },
+      "first": {
+        "kind": "expr",
+        "expr": "100 * h1 + 10 * t1 + o1",
+        "format": "int"
+      },
+      "second": {
+        "kind": "expr",
+        "expr": "100 * h2 + 10 * t2 + o2",
+        "format": "int"
+      },
+      "total": {
+        "kind": "expr",
+        "expr": "first + second",
+        "format": "int"
+      },
+      "onesSum": {
+        "kind": "expr",
+        "expr": "o1 + o2",
+        "format": "int"
+      },
+      "tensSum": {
+        "kind": "expr",
+        "expr": "t1 + t2",
+        "format": "int"
+      },
+      "hSum": {
+        "kind": "expr",
+        "expr": "h1 + h2",
+        "format": "int"
+      },
+      "h2Txt": {
+        "kind": "expr",
+        "expr": "h2 == 1 ? '1 hundred' : h2 + ' hundreds'",
+        "format": "text"
+      },
+      "t2Txt": {
+        "kind": "expr",
+        "expr": "t2 == 1 ? '1 ten' : t2 + ' tens'",
+        "format": "text"
+      },
+      "o2Txt": {
+        "kind": "expr",
+        "expr": "o2 == 1 ? '1 one' : o2 + ' ones'",
+        "format": "text"
+      },
+      "tradeStep": {
+        "kind": "expr",
+        "expr": "r == 0 ? 'The ones will have 10 or more discs. Trade 10 ones for 1 ten.' : 'The tens will have 10 or more discs. Trade 10 tens for 1 hundred.'",
+        "format": "text"
+      },
+      "carryFeedback": {
+        "kind": "expr",
+        "expr": "r == 0 ? 'Ten ones make one ten. Use the trade button, so the new ten stays on the mat.' : 'Ten tens make one hundred. Use the trade button, so the new hundred stays on the mat.'",
+        "format": "text"
+      },
+      "onesLeftTxt": {
+        "kind": "expr",
+        "expr": "onesSum - 10 == 1 ? '1 one' : (onesSum - 10) + ' ones'",
+        "format": "text"
+      },
+      "tensLeftTxt": {
+        "kind": "expr",
+        "expr": "tensSum - 10 == 1 ? '1 ten' : (tensSum - 10) + ' tens'",
+        "format": "text"
+      },
+      "tradeSolution": {
+        "kind": "expr",
+        "expr": "r == 0 ? onesSum + ' ones make 1 ten and ' + onesLeftTxt + ', so the tens become ' + (tensSum + 1) + '.' : tensSum + ' tens make 1 hundred and ' + tensLeftTxt + ', so the hundreds become ' + (hSum + 1) + '.'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "r == 0 ? (o1 + o2 >= 10 && t1 + t2 + 1 <= 9 && h1 + h2 <= 9) : (o1 + o2 <= 9 && t1 + t2 >= 10 && h1 + h2 + 1 <= 9)"
+    ],
+    "operation": {
+      "a": "first",
+      "b": "second",
+      "op": "+"
+    },
+    "display": {
+      "mode": "'build'",
+      "cols": [
+        {
+          "place": 100,
+          "count": "h1"
+        },
+        {
+          "place": 10,
+          "count": "t1"
+        },
+        {
+          "place": 1,
+          "count": "o1"
+        }
+      ]
+    },
+    "answer": {
+      "expr": "total",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "r == 0 ? total - 10 : total - 100",
+        "mistake": "forgotToCarry"
+      },
+      {
+        "expr": "total + 10",
+        "mistake": "offByTen"
+      },
+      {
+        "expr": "first + 100 * h2 + 10 * o2 + t2",
+        "mistake": "changedTheWrongPlace",
+        "when": "t2 != o2",
+        "otherwise": {
+          "expr": "total - 1",
+          "mistake": "offByOne"
+        }
+      }
+    ],
+    "hint": {
+      "nudge": "Put the discs for {second} on the mat, one place at a time. Start with the ones.",
+      "steps": [
+        "Put on {h2Txt}, {t2Txt} and {o2Txt}.",
+        "{tradeStep}",
+        "Then read the number the mat shows."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "forgotToCarry": "{carryFeedback}",
+        "offByTen": "That is 10 too many. Count the ten discs again.",
+        "changedTheWrongPlace": "{second} is {h2Txt}, {t2Txt} and {o2Txt}. Put each one in its own place.",
+        "offByOne": "That is 1 too few. Count the one discs again."
+      },
+      "solution": {
+        "steps": [
+          "Ones: {o1} + {o2} = {onesSum}. Tens: {t1} + {t2} = {tensSum}. Hundreds: {h1} + {h2} = {hSum}.",
+          "{tradeSolution}",
+          "So {first} + {second} = {total}."
+        ],
+        "answer": "total"
+      }
+    }
+  },
+  {
     "id": "calc-g2-across-zero-discs",
     "blueprintId": "calc-g2-across-zero-discs",
     "modeId": "multiDigit",
@@ -1155,6 +1758,183 @@
         "steps": [
           "Trade a hundred for ten tens: {hm1} hundreds, 10 tens and {o} {oWord}.",
           "Trade a ten for ten ones: {hm1} hundreds, 9 tens and {o10} ones.",
+          "Take away each place: {first} − {second} = {diff}."
+        ],
+        "answer": "diff"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-across-zero-discs-2",
+    "blueprintId": "calc-g2-across-zero-discs",
+    "modeId": "multiDigit",
+    "subskill": "within1000",
+    "family": "procedural",
+    "structureType": "subtractWithDiscs",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.7"
+      ],
+      "tx": [],
+      "fl": [
+        "MA.2.NSO.2.4"
+      ],
+      "va": [],
+      "ga": []
+    },
+    "difficulty": "hard",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.7",
+        "FL B.E.S.T. MA.2.NSO.2.4"
+      ]
+    },
+    "format": "number",
+    "widget": "placeValueDiscs",
+    "representationType": "objectSet",
+    "template": {
+      "prompt": "The mat shows {first}. Take away {second} on the mat. What is {first} − {second}?"
+    },
+    "slots": {
+      "h": {
+        "kind": "int",
+        "min": 3,
+        "max": 9
+      },
+      "o": {
+        "kind": "int",
+        "min": 1,
+        "max": 8
+      },
+      "H": {
+        "kind": "int",
+        "min": 1,
+        "max": 7
+      },
+      "T": {
+        "kind": "int",
+        "min": 1,
+        "max": 9
+      },
+      "V": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "first": {
+        "kind": "expr",
+        "expr": "100 * h + o",
+        "format": "int"
+      },
+      "second": {
+        "kind": "expr",
+        "expr": "100 * H + 10 * T + V",
+        "format": "int"
+      },
+      "diff": {
+        "kind": "expr",
+        "expr": "first - second",
+        "format": "int"
+      },
+      "hm1": {
+        "kind": "expr",
+        "expr": "h - 1",
+        "format": "int"
+      },
+      "o10": {
+        "kind": "expr",
+        "expr": "o + 10",
+        "format": "int"
+      },
+      "oWord": {
+        "kind": "expr",
+        "expr": "o == 1 ? 'one' : 'ones'",
+        "format": "text"
+      },
+      "HTxt": {
+        "kind": "expr",
+        "expr": "H == 1 ? '1 hundred' : H + ' hundreds'",
+        "format": "text"
+      },
+      "TTxt": {
+        "kind": "expr",
+        "expr": "T == 1 ? '1 ten' : T + ' tens'",
+        "format": "text"
+      },
+      "VTxt": {
+        "kind": "expr",
+        "expr": "V == 1 ? '1 one' : V + ' ones'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "V > o",
+      "diff >= 100"
+    ],
+    "operation": {
+      "a": "first",
+      "b": "second",
+      "op": "-"
+    },
+    "display": {
+      "mode": "'build'",
+      "cols": [
+        {
+          "place": 100,
+          "count": "h"
+        },
+        {
+          "place": 10,
+          "count": "0"
+        },
+        {
+          "place": 1,
+          "count": "o"
+        }
+      ]
+    },
+    "answer": {
+      "expr": "diff",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "diff + 100",
+        "mistake": "offByHundred"
+      },
+      {
+        "expr": "diff + 10",
+        "mistake": "offByTen"
+      },
+      {
+        "expr": "diff + 1",
+        "mistake": "offByOne"
+      }
+    ],
+    "hint": {
+      "nudge": "The mat has no ten discs. Plan your trades before you take away {second}.",
+      "steps": [
+        "There are not enough one discs to take away {V}, and no ten discs to break.",
+        "Break 1 hundred into 10 tens. Then break 1 ten into 10 ones.",
+        "Now take away {HTxt}, {TTxt} and {VTxt}. Then read the mat."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "offByHundred": "Take away all {HTxt} from the hundred discs. Breaking a hundred into tens is a trade, not a take-away.",
+        "offByTen": "Take away all {TTxt} from the ten discs. Breaking a ten into ones is a trade, not a take-away.",
+        "offByOne": "That is 1 too many. Count the one discs you take away: {VTxt}."
+      },
+      "solution": {
+        "steps": [
+          "Break a hundred into ten tens: {hm1} hundreds, 10 tens and {o} {oWord}.",
+          "Break a ten into ten ones: {hm1} hundreds, 9 tens and {o10} ones.",
           "Take away each place: {first} − {second} = {diff}."
         ],
         "answer": "diff"
@@ -1886,6 +2666,178 @@
     }
   },
   {
+    "id": "calc-g2-ten-hundred-discs-nocross-2",
+    "blueprintId": "calc-g2-ten-hundred-discs",
+    "modeId": "multiDigit",
+    "subskill": "tenOrHundred",
+    "family": "procedural",
+    "structureType": "tenOrHundredOnMat",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.8"
+      ],
+      "tx": [
+        "2.7B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.2"
+      ],
+      "va": [],
+      "ga": [
+        "2.NR.2.2"
+      ]
+    },
+    "difficulty": "easy",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.8",
+        "TEKS 2.7B",
+        "FL B.E.S.T. MA.2.NSO.2.2",
+        "GA K-12 2021 2.NR.2.2"
+      ]
+    },
+    "format": "number",
+    "widget": "placeValueDiscs",
+    "representationType": "objectSet",
+    "template": {
+      "prompt": "The mat shows {start}. What number is {stepAbs} {moreLess} than {start}?"
+    },
+    "slots": {
+      "disc": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "dir": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "h": {
+        "kind": "int",
+        "min": 1,
+        "max": 8
+      },
+      "t": {
+        "kind": "int",
+        "min": 0,
+        "max": 9
+      },
+      "o": {
+        "kind": "int",
+        "min": 0,
+        "max": 9
+      },
+      "start": {
+        "kind": "expr",
+        "expr": "100 * h + 10 * t + o",
+        "format": "int"
+      },
+      "stepAbs": {
+        "kind": "expr",
+        "expr": "disc == 0 ? 10 : 100",
+        "format": "int"
+      },
+      "step": {
+        "kind": "expr",
+        "expr": "stepAbs * (dir == 0 ? 1 : -1)",
+        "format": "int"
+      },
+      "key": {
+        "kind": "expr",
+        "expr": "start + step",
+        "format": "int"
+      },
+      "moreLess": {
+        "kind": "expr",
+        "expr": "dir == 0 ? 'more' : 'less'",
+        "format": "text"
+      },
+      "moreFewer": {
+        "kind": "expr",
+        "expr": "dir == 0 ? 'more' : 'fewer'",
+        "format": "text"
+      },
+      "discWord": {
+        "kind": "expr",
+        "expr": "disc == 0 ? 'ten' : 'hundred'",
+        "format": "text"
+      },
+      "moveStep": {
+        "kind": "expr",
+        "expr": "dir == 0 ? 'Put one more ' + discWord + ' disc on the mat.' : 'Take one ' + discWord + ' disc off the mat.'",
+        "format": "text"
+      },
+      "moveSolution": {
+        "kind": "expr",
+        "expr": "dir == 0 ? 'One more ' + discWord + ' disc makes the ' + discWord + 's digit one more.' : 'One fewer ' + discWord + ' disc makes the ' + discWord + 's digit one less.'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "disc == 0 ? (dir == 0 ? t <= 8 : t >= 1) : (dir == 0 ? h <= 8 : h >= 2)"
+    ],
+    "display": {
+      "mode": "'build'",
+      "cols": [
+        {
+          "place": 100,
+          "count": "h"
+        },
+        {
+          "place": 10,
+          "count": "t"
+        },
+        {
+          "place": 1,
+          "count": "o"
+        }
+      ]
+    },
+    "answer": {
+      "expr": "key",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "start + (dir == 0 ? 1 : -1)",
+        "mistake": "countedRodsAsOnes"
+      },
+      {
+        "expr": "start + (disc == 0 ? 100 : 10) * (dir == 0 ? 1 : -1)",
+        "mistake": "changedTheWrongPlace"
+      }
+    ],
+    "hint": {
+      "nudge": "Which disc is worth {stepAbs}? Change only that place.",
+      "steps": [
+        "A {discWord} disc is worth {stepAbs}.",
+        "{moveStep}",
+        "The other places stay the same. Then read the mat."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "countedRodsAsOnes": "A one disc is worth 1. {stepAbs} {moreLess} means one {moreFewer} {discWord} disc.",
+        "changedTheWrongPlace": "That changed the wrong place. A {discWord} disc is worth {stepAbs}."
+      },
+      "solution": {
+        "steps": [
+          "The mat showed {start}.",
+          "{moveSolution}",
+          "Now the mat shows {key}."
+        ],
+        "answer": "key"
+      }
+    }
+  },
+  {
     "id": "calc-g2-ten-hundred-discs-across",
     "blueprintId": "calc-g2-ten-hundred-discs",
     "modeId": "multiDigit",
@@ -2032,6 +2984,166 @@
           "The mat showed {start}.",
           "One more ten disc makes 10 ten discs. Trade them for 1 hundred disc.",
           "Now the mat shows {hp1} hundreds, 0 tens and {oTxt}. That is {key}."
+        ],
+        "answer": "key"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-ten-hundred-discs-across-2",
+    "blueprintId": "calc-g2-ten-hundred-discs",
+    "modeId": "multiDigit",
+    "subskill": "tenOrHundred",
+    "family": "procedural",
+    "structureType": "tenOrHundredOnMat",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.8"
+      ],
+      "tx": [
+        "2.7B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.2"
+      ],
+      "va": [],
+      "ga": [
+        "2.NR.2.2"
+      ]
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.8",
+        "TEKS 2.7B",
+        "FL B.E.S.T. MA.2.NSO.2.2",
+        "GA K-12 2021 2.NR.2.2"
+      ]
+    },
+    "format": "number",
+    "widget": "placeValueDiscs",
+    "representationType": "objectSet",
+    "template": {
+      "prompt": "The mat shows {start}. What number is 10 {moreLess} than {start}?"
+    },
+    "slots": {
+      "dir": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "h": {
+        "kind": "int",
+        "min": 1,
+        "max": 8
+      },
+      "o": {
+        "kind": "int",
+        "min": 0,
+        "max": 9
+      },
+      "t": {
+        "kind": "expr",
+        "expr": "dir == 0 ? 9 : 0",
+        "format": "int"
+      },
+      "start": {
+        "kind": "expr",
+        "expr": "100 * h + 10 * t + o",
+        "format": "int"
+      },
+      "key": {
+        "kind": "expr",
+        "expr": "start + (dir == 0 ? 10 : -10)",
+        "format": "int"
+      },
+      "moreLess": {
+        "kind": "expr",
+        "expr": "dir == 0 ? 'more' : 'less'",
+        "format": "text"
+      },
+      "step1": {
+        "kind": "expr",
+        "expr": "dir == 0 ? 'Put one more ten disc on the mat.' : 'There are no ten discs to take away.'",
+        "format": "text"
+      },
+      "step2": {
+        "kind": "expr",
+        "expr": "dir == 0 ? 'Now the tens have 10 discs. Trade 10 tens for 1 hundred.' : 'Break 1 hundred into 10 tens. Then take away 1 ten disc.'",
+        "format": "text"
+      },
+      "wrongPlace": {
+        "kind": "expr",
+        "expr": "dir == 0 ? 'Only one ten disc goes on, not a hundred disc. Then trade 10 tens for 1 hundred.' : 'Do not take away the hundred disc. Break it into 10 tens, then take away 1 ten.'",
+        "format": "text"
+      },
+      "moveSolution": {
+        "kind": "expr",
+        "expr": "dir == 0 ? 'One more ten disc makes 10 tens. Trade them for 1 hundred disc.' : 'Break 1 hundred into 10 tens, then take away 1 ten. That leaves 9 tens.'",
+        "format": "text"
+      }
+    },
+    "display": {
+      "mode": "'build'",
+      "cols": [
+        {
+          "place": 100,
+          "count": "h"
+        },
+        {
+          "place": 10,
+          "count": "t"
+        },
+        {
+          "place": 1,
+          "count": "o"
+        }
+      ]
+    },
+    "answer": {
+      "expr": "key",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "start + (dir == 0 ? 1 : -1)",
+        "mistake": "countedRodsAsOnes"
+      },
+      {
+        "expr": "start + (dir == 0 ? 100 : -100)",
+        "mistake": "changedTheWrongPlace"
+      },
+      {
+        "expr": "start - 90",
+        "mistake": "acrossZeroSlip",
+        "when": "dir == 0"
+      }
+    ],
+    "hint": {
+      "nudge": "A ten disc is worth 10. Look at how many ten discs the mat has.",
+      "steps": [
+        "{step1}",
+        "{step2}",
+        "Then read the number the mat shows."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "countedRodsAsOnes": "A one disc is worth 1, and a ten disc is worth 10. Change the ten discs, not the one discs.",
+        "changedTheWrongPlace": "{wrongPlace}",
+        "acrossZeroSlip": "Ten ten discs make one hundred. Use the trade button, so the new hundred stays on the mat."
+      },
+      "solution": {
+        "steps": [
+          "The mat showed {start}.",
+          "{moveSolution}",
+          "Now the mat shows {key}."
         ],
         "answer": "key"
       }

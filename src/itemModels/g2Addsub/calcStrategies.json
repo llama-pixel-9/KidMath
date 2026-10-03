@@ -1,0 +1,1548 @@
+[
+  {
+    "id": "calc-g2-make-ten-add",
+    "blueprintId": "calc-g2-make-ten",
+    "modeId": "multiDigit",
+    "subskill": "within100",
+    "family": "procedural",
+    "structureType": "makeTenStep",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.3"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.NSO.2.3",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4"
+      ]
+    },
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "symbolic",
+    "template": {
+      "prompt": "What number makes this true? {a} + {b} = {ten} + □"
+    },
+    "slots": {
+      "a": {
+        "kind": "int",
+        "min": 21,
+        "max": 89
+      },
+      "b": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "ten": {
+        "kind": "expr",
+        "expr": "nextTen(a)",
+        "format": "int"
+      },
+      "toTen": {
+        "kind": "expr",
+        "expr": "nextTen(a) - a",
+        "format": "int"
+      },
+      "sum": {
+        "kind": "expr",
+        "expr": "a + b",
+        "format": "int"
+      },
+      "box": {
+        "kind": "expr",
+        "expr": "a + b - nextTen(a)",
+        "format": "int"
+      },
+      "lineLow": {
+        "kind": "expr",
+        "expr": "floorTen(a)",
+        "format": "int"
+      },
+      "lineHigh": {
+        "kind": "expr",
+        "expr": "nextTen(a) + 10",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "ones(a) != 0",
+      "ones(a) + b >= 11",
+      "nextTen(a) - a != a + b - nextTen(a)"
+    ],
+    "operation": {
+      "op": "+"
+    },
+    "answer": {
+      "expr": "a + b - nextTen(a)",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "nextTen(a) - a",
+        "mistake": "stoppedAtTheTen"
+      },
+      {
+        "expr": "b",
+        "mistake": "answeredWithAGiven"
+      },
+      {
+        "expr": "a + b",
+        "mistake": "equalsMeansCompute"
+      }
+    ],
+    "hint": {
+      "nudge": "Both sides must be worth the same. Start by getting {a} up to {ten}.",
+      "steps": [
+        "{a} needs {toTen} more to make {ten}.",
+        "Break {b} into two parts: {toTen} and the rest.",
+        "The rest of {b} goes in the box."
+      ],
+      "picture": {
+        "kind": "numberLine",
+        "min": "lineLow",
+        "max": "lineHigh",
+        "mark": "a"
+      },
+      "example": "auto",
+      "feedback": {
+        "stoppedAtTheTen": "{toTen} is only the part of {b} that gets {a} to {ten}. Put the rest of {b} in the box.",
+        "answeredWithAGiven": "{b} is already added on the left side. Part of it went into making {ten}, so only the rest goes in the box.",
+        "equalsMeansCompute": "{sum} is the answer to {a} + {b}. The equal sign means both sides are worth the same, so {ten} + □ must make {sum} too."
+      },
+      "solution": {
+        "steps": [
+          "{a} + {toTen} = {ten}.",
+          "{b} = {toTen} + {box}.",
+          "So {a} + {b} = {ten} + {box}. The box is {box}."
+        ],
+        "answer": "a + b - nextTen(a)"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-make-ten-subtract",
+    "blueprintId": "calc-g2-make-ten",
+    "modeId": "multiDigit",
+    "subskill": "within100",
+    "family": "procedural",
+    "structureType": "makeTenStep",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.3"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.NSO.2.3",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4"
+      ]
+    },
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "symbolic",
+    "template": {
+      "prompt": "What number makes this true? {a} − {b} = {ten} − □"
+    },
+    "slots": {
+      "a": {
+        "kind": "int",
+        "min": 21,
+        "max": 99
+      },
+      "b": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "oa": {
+        "kind": "expr",
+        "expr": "ones(a)",
+        "format": "int"
+      },
+      "ten": {
+        "kind": "expr",
+        "expr": "floorTen(a)",
+        "format": "int"
+      },
+      "diff": {
+        "kind": "expr",
+        "expr": "a - b",
+        "format": "int"
+      },
+      "box": {
+        "kind": "expr",
+        "expr": "b - ones(a)",
+        "format": "int"
+      },
+      "lineLow": {
+        "kind": "expr",
+        "expr": "floorTen(a) - 10",
+        "format": "int"
+      },
+      "lineHigh": {
+        "kind": "expr",
+        "expr": "floorTen(a) + 10",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "ones(a) != 0",
+      "b > ones(a)",
+      "ones(a) != b - ones(a)"
+    ],
+    "operation": {
+      "op": "-"
+    },
+    "answer": {
+      "expr": "b - ones(a)",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "ones(a)",
+        "mistake": "stoppedAtTheTen"
+      },
+      {
+        "expr": "b",
+        "mistake": "answeredWithAGiven"
+      },
+      {
+        "expr": "a - b",
+        "mistake": "equalsMeansCompute"
+      }
+    ],
+    "hint": {
+      "nudge": "Both sides must be worth the same. Start by taking {a} down to {ten}.",
+      "steps": [
+        "Take away {oa} to get from {a} down to {ten}.",
+        "Break {b} into two parts: {oa} and the rest.",
+        "The rest of {b} goes in the box."
+      ],
+      "picture": {
+        "kind": "numberLine",
+        "min": "lineLow",
+        "max": "lineHigh",
+        "mark": "a"
+      },
+      "example": "auto",
+      "feedback": {
+        "stoppedAtTheTen": "{oa} is only the part of {b} that gets {a} down to {ten}. Put the rest of {b} in the box.",
+        "answeredWithAGiven": "{b} is the whole amount taken from {a}. Part of it got {a} down to {ten}, so only the rest goes in the box.",
+        "equalsMeansCompute": "{diff} is the answer to {a} − {b}. The equal sign means both sides are worth the same, so {ten} − □ must make {diff} too."
+      },
+      "solution": {
+        "steps": [
+          "{a} − {oa} = {ten}.",
+          "{b} = {oa} + {box}.",
+          "So {a} − {b} = {ten} − {box}. The box is {box}."
+        ],
+        "answer": "b - ones(a)"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-tens-then-ones",
+    "blueprintId": "calc-g2-tens-then-ones",
+    "modeId": "multiDigit",
+    "subskill": "within100",
+    "family": "procedural",
+    "structureType": "placeValueStep",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.3"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.NSO.2.3",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4"
+      ]
+    },
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "symbolic",
+    "template": {
+      "prompt": "What number makes this true? {a} + {b} = {tensSum} + □"
+    },
+    "slots": {
+      "a": {
+        "kind": "int",
+        "min": 12,
+        "max": 89
+      },
+      "b": {
+        "kind": "int",
+        "min": 12,
+        "max": 89
+      },
+      "oa": {
+        "kind": "expr",
+        "expr": "ones(a)",
+        "format": "int"
+      },
+      "ob": {
+        "kind": "expr",
+        "expr": "ones(b)",
+        "format": "int"
+      },
+      "tensA": {
+        "kind": "expr",
+        "expr": "tens(a)",
+        "format": "int"
+      },
+      "tensB": {
+        "kind": "expr",
+        "expr": "tens(b)",
+        "format": "int"
+      },
+      "tensSum": {
+        "kind": "expr",
+        "expr": "tens(a) + tens(b)",
+        "format": "int"
+      },
+      "box": {
+        "kind": "expr",
+        "expr": "ones(a) + ones(b)",
+        "format": "int"
+      },
+      "sum": {
+        "kind": "expr",
+        "expr": "a + b",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "ones(a) + ones(b) >= 11",
+      "a + b <= 100"
+    ],
+    "operation": {
+      "op": "+"
+    },
+    "answer": {
+      "expr": "ones(a) + ones(b)",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "ones(a) + ones(b) - 10",
+        "mistake": "forgotToCarry"
+      },
+      {
+        "expr": "ones(b)",
+        "mistake": "leftOutAPart"
+      },
+      {
+        "expr": "a + b",
+        "mistake": "equalsMeansCompute"
+      }
+    ],
+    "hint": {
+      "nudge": "Both sides must be worth the same. {tensSum} holds the tens, so the box must hold the ones.",
+      "steps": [
+        "The tens: {tensA} + {tensB} = {tensSum}.",
+        "The ones are {oa} and {ob}.",
+        "Put all the ones in the box, even the ones that make a new ten."
+      ],
+      "picture": {
+        "kind": "tenFrame",
+        "filled": "oa",
+        "filledB": "ob",
+        "frames": 2
+      },
+      "example": "auto",
+      "feedback": {
+        "forgotToCarry": "{oa} + {ob} makes a new ten. Keep that ten in the box, because {tensSum} holds only the tens of {a} and {b}.",
+        "leftOutAPart": "That is only the ones of {b}. The box needs the ones of {a} too.",
+        "equalsMeansCompute": "{sum} is the answer to {a} + {b}. The equal sign means both sides are worth the same, so {tensSum} + □ must make {sum} too."
+      },
+      "solution": {
+        "steps": [
+          "{tensA} + {tensB} = {tensSum}.",
+          "{oa} + {ob} = {box}.",
+          "So {a} + {b} = {tensSum} + {box}. The box is {box}."
+        ],
+        "answer": "ones(a) + ones(b)"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-equal-sum",
+    "blueprintId": "calc-g2-equal-sum",
+    "modeId": "multiDigit",
+    "subskill": "within100",
+    "family": "conceptual",
+    "structureType": "compensateAdd",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5",
+        "2.NBT.B.9"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.3"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5",
+        "CCSS 2.NBT.B.9",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.NSO.2.3",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4"
+      ]
+    },
+    "format": "choice",
+    "widget": null,
+    "representationType": "symbolic",
+    "template": {
+      "prompt": "{ask} {x} + {y}?"
+    },
+    "slots": {
+      "tensT": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "d": {
+        "kind": "int",
+        "min": 1,
+        "max": 2
+      },
+      "m": {
+        "kind": "int",
+        "min": 11,
+        "max": 59
+      },
+      "flip": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "phr": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "T": {
+        "kind": "expr",
+        "expr": "tensT * 10",
+        "format": "int"
+      },
+      "n": {
+        "kind": "expr",
+        "expr": "tensT * 10 - d",
+        "format": "int"
+      },
+      "mm": {
+        "kind": "expr",
+        "expr": "m - d",
+        "format": "int"
+      },
+      "x": {
+        "kind": "expr",
+        "expr": "flip == 0 ? n : m",
+        "format": "int"
+      },
+      "y": {
+        "kind": "expr",
+        "expr": "flip == 0 ? m : n",
+        "format": "int"
+      },
+      "ask": {
+        "kind": "expr",
+        "expr": "phr == 0 ? 'Which is equal to' : 'Which has the same sum as'",
+        "format": "text"
+      },
+      "keyText": {
+        "kind": "expr",
+        "expr": "flip == 0 ? T + ' + ' + mm : mm + ' + ' + T",
+        "format": "text"
+      },
+      "oneSideText": {
+        "kind": "expr",
+        "expr": "flip == 0 ? T + ' + ' + m : m + ' + ' + T",
+        "format": "text"
+      },
+      "wrongWayText": {
+        "kind": "expr",
+        "expr": "flip == 0 ? T + ' + ' + (m + d) : (m + d) + ' + ' + T",
+        "format": "text"
+      },
+      "leftOutText": {
+        "kind": "expr",
+        "expr": "flip == 0 ? tens(n) + ' + ' + tens(m) + ' + ' + ones(m) : tens(m) + ' + ' + tens(n) + ' + ' + ones(m)",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "ones(n) + ones(m) >= 10",
+      "ones(m) != 0",
+      "ones(m) < 8",
+      "n + m <= 100"
+    ],
+    "answer": {
+      "expr": "keyText",
+      "type": "text"
+    },
+    "distractors": [
+      {
+        "expr": "oneSideText",
+        "mistake": "compensatedOneSide"
+      },
+      {
+        "expr": "wrongWayText",
+        "mistake": "compensatedWrongWay"
+      },
+      {
+        "expr": "leftOutText",
+        "mistake": "leftOutAPart"
+      }
+    ],
+    "hint": {
+      "nudge": "{n} is close to a ten. Make it a ten, and keep the sum the same.",
+      "steps": [
+        "{n} needs {d} more to make a ten.",
+        "Take {d} from {m} and give it to {n}.",
+        "Nothing was added or lost, so the sum stays the same.",
+        "Find the choice with the two new numbers."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "compensatedOneSide": "That adds {d} to {n} but takes nothing from {m}, so the sum got bigger. Take the same amount from {m}.",
+        "compensatedWrongWay": "That adds {d} to both numbers, so the sum got bigger. Add to one number and take the same amount from the other.",
+        "leftOutAPart": "That leaves out the ones of {n}. Every part of both numbers must still be there."
+      },
+      "solution": {
+        "steps": [
+          "{n} + {d} = {T}.",
+          "{m} − {d} = {mm}.",
+          "So {x} + {y} is equal to {keyText}."
+        ],
+        "answer": "keyText"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-equal-difference",
+    "blueprintId": "calc-g2-equal-difference",
+    "modeId": "multiDigit",
+    "subskill": "within100",
+    "family": "conceptual",
+    "structureType": "compensateSubtract",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5",
+        "2.NBT.B.9"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.3"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5",
+        "CCSS 2.NBT.B.9",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.NSO.2.3",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4"
+      ]
+    },
+    "format": "choice",
+    "widget": null,
+    "representationType": "symbolic",
+    "template": {
+      "prompt": "{ask} {a} − {s}?"
+    },
+    "slots": {
+      "tensT": {
+        "kind": "int",
+        "min": 2,
+        "max": 8
+      },
+      "d": {
+        "kind": "int",
+        "min": 1,
+        "max": 2
+      },
+      "a": {
+        "kind": "int",
+        "min": 30,
+        "max": 99
+      },
+      "phr": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "T": {
+        "kind": "expr",
+        "expr": "tensT * 10",
+        "format": "int"
+      },
+      "s": {
+        "kind": "expr",
+        "expr": "tensT * 10 - d",
+        "format": "int"
+      },
+      "aPlus": {
+        "kind": "expr",
+        "expr": "a + d",
+        "format": "int"
+      },
+      "ask": {
+        "kind": "expr",
+        "expr": "phr == 0 ? 'Which is equal to' : 'Which has the same difference as'",
+        "format": "text"
+      },
+      "keyText": {
+        "kind": "expr",
+        "expr": "(a + d) + ' − ' + T",
+        "format": "text"
+      },
+      "oneSideText": {
+        "kind": "expr",
+        "expr": "a + ' − ' + T",
+        "format": "text"
+      },
+      "wrongWayText": {
+        "kind": "expr",
+        "expr": "(a - d) + ' − ' + T",
+        "format": "text"
+      },
+      "wrongSignText": {
+        "kind": "expr",
+        "expr": "a + ' − ' + tens(s) + ' + ' + ones(s)",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "a - s >= 10",
+      "ones(a) < ones(s)"
+    ],
+    "answer": {
+      "expr": "keyText",
+      "type": "text"
+    },
+    "distractors": [
+      {
+        "expr": "oneSideText",
+        "mistake": "compensatedOneSide"
+      },
+      {
+        "expr": "wrongWayText",
+        "mistake": "compensatedWrongWay"
+      },
+      {
+        "expr": "wrongSignText",
+        "mistake": "wrongSignOnSecondPart"
+      }
+    ],
+    "hint": {
+      "nudge": "{s} is close to a ten. Change both numbers the same way, and the difference stays the same.",
+      "steps": [
+        "{s} needs {d} more to make a ten.",
+        "Add {d} to {a} too.",
+        "When both numbers go up by the same amount, the difference does not change.",
+        "Find the choice with the two new numbers."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "compensatedOneSide": "That changes only {s}. Taking away more makes the difference smaller, so add {d} to {a} too.",
+        "compensatedWrongWay": "That takes {d} from {a} but adds {d} to {s}. Move both numbers up by the same amount.",
+        "wrongSignOnSecondPart": "That adds the ones of {s} back on. Every part of {s} must be taken away."
+      },
+      "solution": {
+        "steps": [
+          "{s} + {d} = {T}.",
+          "{a} + {d} = {aPlus}.",
+          "So {a} − {s} is equal to {keyText}."
+        ],
+        "answer": "keyText"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-sub-number-line",
+    "blueprintId": "calc-g2-sub-number-line",
+    "modeId": "multiDigit",
+    "subskill": "within100",
+    "family": "procedural",
+    "structureType": "subtractOnNumberLine",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5",
+        "2.MD.B.6"
+      ],
+      "tx": [
+        "2.4B",
+        "2.9C"
+      ],
+      "fl": [
+        "MA.2.NSO.2.3"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4",
+        "2.MDR.5.5"
+      ]
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5",
+        "CCSS 2.MD.B.6",
+        "TEKS 2.4B",
+        "TEKS 2.9C",
+        "FL B.E.S.T. MA.2.NSO.2.3",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4",
+        "GA K-12 2021 2.MDR.5.5"
+      ]
+    },
+    "format": "number",
+    "widget": "numberLine",
+    "representationType": "model",
+    "template": {
+      "prompt": "{lead}What is {big} − {small}?"
+    },
+    "slots": {
+      "small": {
+        "kind": "int",
+        "min": 11,
+        "max": 89
+      },
+      "big": {
+        "kind": "int",
+        "min": 31,
+        "max": 99
+      },
+      "phr": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "lead": {
+        "kind": "expr",
+        "expr": "phr == 0 ? '' : 'Count up on the number line. '",
+        "format": "text"
+      },
+      "diff": {
+        "kind": "expr",
+        "expr": "big - small",
+        "format": "int"
+      },
+      "low": {
+        "kind": "expr",
+        "expr": "floorTen(small)",
+        "format": "int"
+      },
+      "high": {
+        "kind": "expr",
+        "expr": "nextTen(big)",
+        "format": "int"
+      },
+      "next": {
+        "kind": "expr",
+        "expr": "nextTen(small)",
+        "format": "int"
+      },
+      "bigTens": {
+        "kind": "expr",
+        "expr": "floorTen(big)",
+        "format": "int"
+      },
+      "hop1": {
+        "kind": "expr",
+        "expr": "nextTen(small) - small",
+        "format": "int"
+      },
+      "hop2": {
+        "kind": "expr",
+        "expr": "floorTen(big) - nextTen(small)",
+        "format": "int"
+      },
+      "hop3": {
+        "kind": "expr",
+        "expr": "big - floorTen(big)",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "ones(big) >= 1",
+      "ones(big) < ones(small)",
+      "big - small >= 11",
+      "big - small <= 49",
+      "nextTen(big) - floorTen(small) <= 50",
+      "big != 2 * small"
+    ],
+    "operation": {
+      "a": "big",
+      "b": "small",
+      "op": "-"
+    },
+    "display": {
+      "min": "low",
+      "max": "high",
+      "step": 1,
+      "labelEvery": 10,
+      "from": "small",
+      "to": "big",
+      "lineMode": "'jump'"
+    },
+    "answer": {
+      "expr": "big - small",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "big - small + 1",
+        "mistake": "countedBothEnds"
+      },
+      {
+        "expr": "(floor(big / 10) - floor(small / 10)) * 10 + ones(small) - ones(big)",
+        "mistake": "smallerFromLarger"
+      },
+      {
+        "expr": "big + small",
+        "mistake": "addedInsteadOfSubtracted"
+      }
+    ],
+    "hint": {
+      "nudge": "The hop starts at {small} and lands on {big}. Count up to find how long it is.",
+      "steps": [
+        "Start at {small}. Hop up to the next ten, {next}.",
+        "Hop by tens from {next} to {bigTens}.",
+        "Hop from {bigTens} to {big}.",
+        "Add the lengths of the three hops."
+      ],
+      "picture": {
+        "kind": "numberLine",
+        "min": "low",
+        "max": "high",
+        "mark": "next",
+        "step": 10
+      },
+      "example": "auto",
+      "feedback": {
+        "countedBothEnds": "That counts the number you start on. Count the jumps between numbers, not the numbers you say.",
+        "smallerFromLarger": "That takes the smaller ones digit from the bigger one. Count up from {small} to {big} on the line instead.",
+        "addedInsteadOfSubtracted": "That adds the two numbers. The hop shows how far apart {small} and {big} are, so count up from {small}."
+      },
+      "solution": {
+        "steps": [
+          "{small} up to {next} is {hop1}.",
+          "{next} up to {bigTens} is {hop2}.",
+          "{bigTens} up to {big} is {hop3}.",
+          "{hop1} + {hop2} + {hop3} = {diff}. So {big} − {small} = {diff}."
+        ],
+        "answer": "big - small"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-check-subtraction",
+    "blueprintId": "calc-g2-check",
+    "modeId": "multiDigit",
+    "subskill": "within100",
+    "family": "conceptual",
+    "structureType": "checkWithInverse",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5",
+        "2.NBT.B.9"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.3"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5",
+        "CCSS 2.NBT.B.9",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.NSO.2.3",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4"
+      ]
+    },
+    "format": "choice",
+    "widget": null,
+    "representationType": "symbolic",
+    "template": {
+      "prompt": "Which equation can you use to check {a} − {b} = {diff}?"
+    },
+    "slots": {
+      "a": {
+        "kind": "int",
+        "min": 34,
+        "max": 89
+      },
+      "b": {
+        "kind": "int",
+        "min": 11,
+        "max": 39
+      },
+      "diff": {
+        "kind": "expr",
+        "expr": "a - b",
+        "format": "int"
+      },
+      "keyText": {
+        "kind": "expr",
+        "expr": "(a - b) + ' + ' + b + ' = ' + a",
+        "format": "text"
+      },
+      "startText": {
+        "kind": "expr",
+        "expr": "a + ' + ' + b + ' = ' + (a + b)",
+        "format": "text"
+      },
+      "againText": {
+        "kind": "expr",
+        "expr": "(a - b) + ' − ' + b + ' = ' + (a - b - b)",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "a - b >= 11",
+      "a - b - b >= 2",
+      "a + b <= 100"
+    ],
+    "answer": {
+      "expr": "keyText",
+      "type": "text"
+    },
+    "distractors": [
+      {
+        "expr": "startText",
+        "mistake": "addedToTheStart"
+      },
+      {
+        "expr": "againText",
+        "mistake": "checkedWithSameOperation"
+      }
+    ],
+    "hint": {
+      "nudge": "Adding undoes taking away. Look for the addition that gets you back to the number you started with.",
+      "steps": [
+        "In a subtraction, the first number is the start.",
+        "To check, add the answer and the number taken away.",
+        "That sum should be the start number."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "addedToTheStart": "That adds to the start, so it makes a new, bigger number. A check adds the answer and the number taken away.",
+        "checkedWithSameOperation": "That subtracts again. To check a subtraction, use addition."
+      },
+      "solution": {
+        "steps": [
+          "The answer is {diff}. The number taken away is {b}.",
+          "{diff} + {b} = {a}, the start number.",
+          "So {keyText} checks the subtraction."
+        ],
+        "answer": "keyText"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-check-addition",
+    "blueprintId": "calc-g2-check",
+    "modeId": "multiDigit",
+    "subskill": "within100",
+    "family": "conceptual",
+    "structureType": "checkWithInverse",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5",
+        "2.NBT.B.9"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.3"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5",
+        "CCSS 2.NBT.B.9",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.NSO.2.3",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4"
+      ]
+    },
+    "format": "choice",
+    "widget": null,
+    "representationType": "symbolic",
+    "template": {
+      "prompt": "Which equation can you use to check {a} + {b} = {sum}?"
+    },
+    "slots": {
+      "a": {
+        "kind": "int",
+        "min": 21,
+        "max": 69
+      },
+      "b": {
+        "kind": "int",
+        "min": 11,
+        "max": 39
+      },
+      "sum": {
+        "kind": "expr",
+        "expr": "a + b",
+        "format": "int"
+      },
+      "keyText": {
+        "kind": "expr",
+        "expr": "(a + b) + ' − ' + b + ' = ' + a",
+        "format": "text"
+      },
+      "againText": {
+        "kind": "expr",
+        "expr": "(a + b) + ' + ' + b + ' = ' + (a + b + b)",
+        "format": "text"
+      },
+      "startText": {
+        "kind": "expr",
+        "expr": "a + ' − ' + b + ' = ' + (a - b)",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "a - b >= 2",
+      "a + b + b <= 100"
+    ],
+    "answer": {
+      "expr": "keyText",
+      "type": "text"
+    },
+    "distractors": [
+      {
+        "expr": "againText",
+        "mistake": "checkedWithSameOperation"
+      },
+      {
+        "expr": "startText",
+        "mistake": "subtractedFromTheStart"
+      }
+    ],
+    "hint": {
+      "nudge": "Taking away undoes adding. Look for the subtraction that starts at the total.",
+      "steps": [
+        "In an addition, the number after the equal sign is the total.",
+        "To check, start at the total and take away one of the numbers you added.",
+        "You should get the other number you added."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "checkedWithSameOperation": "That adds again, so it makes a new, bigger number. To check an addition, use subtraction.",
+        "subtractedFromTheStart": "That takes away from a number you added, not from the total. A check starts at the total."
+      },
+      "solution": {
+        "steps": [
+          "The total is {sum}.",
+          "{sum} − {b} = {a}, the other number you added.",
+          "So {keyText} checks the addition."
+        ],
+        "answer": "keyText"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-find-mistake-addition",
+    "blueprintId": "calc-g2-find-mistake",
+    "modeId": "multiDigit",
+    "subskill": "within100",
+    "family": "conceptual",
+    "structureType": "findTheMistake",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5",
+        "2.NBT.B.9"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.3"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5",
+        "CCSS 2.NBT.B.9",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.NSO.2.3",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4"
+      ]
+    },
+    "format": "choice",
+    "widget": null,
+    "representationType": "symbolic",
+    "template": {
+      "prompt": "{name} says {a} + {b} = {shown}. What mistake did {name} make?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "a": {
+        "kind": "int",
+        "min": 23,
+        "max": 79
+      },
+      "b": {
+        "kind": "int",
+        "min": 12,
+        "max": 69
+      },
+      "oa": {
+        "kind": "expr",
+        "expr": "ones(a)",
+        "format": "int"
+      },
+      "ob": {
+        "kind": "expr",
+        "expr": "ones(b)",
+        "format": "int"
+      },
+      "ta": {
+        "kind": "expr",
+        "expr": "tens(a)",
+        "format": "int"
+      },
+      "tb": {
+        "kind": "expr",
+        "expr": "tens(b)",
+        "format": "int"
+      },
+      "sum": {
+        "kind": "expr",
+        "expr": "a + b",
+        "format": "int"
+      },
+      "shown": {
+        "kind": "expr",
+        "expr": "a + b - 10",
+        "format": "int"
+      },
+      "diff": {
+        "kind": "expr",
+        "expr": "a - b",
+        "format": "int"
+      },
+      "onesSum": {
+        "kind": "expr",
+        "expr": "ones(a) + ones(b)",
+        "format": "int"
+      },
+      "onesLeft": {
+        "kind": "expr",
+        "expr": "ones(a) + ones(b) - 10",
+        "format": "int"
+      },
+      "tensAll": {
+        "kind": "expr",
+        "expr": "tens(a) + tens(b) + 10",
+        "format": "int"
+      },
+      "keyText": {
+        "kind": "expr",
+        "expr": "name + ' did not add the new ten from ' + ones(a) + ' + ' + ones(b)",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "ones(a) + ones(b) >= 11",
+      "a + b <= 99",
+      "a - b >= 10"
+    ],
+    "answer": {
+      "expr": "keyText",
+      "type": "text"
+    },
+    "distractors": [
+      {
+        "expr": "name + ' added the ones wrong'",
+        "mistake": "blamedARightPlace"
+      },
+      {
+        "expr": "name + ' took away instead of adding'",
+        "mistake": "blamedTheOperation"
+      },
+      {
+        "expr": "name + ' made no mistake'",
+        "mistake": "keptTheWrongAnswer"
+      }
+    ],
+    "hint": {
+      "nudge": "Add {a} + {b} yourself. Then compare your answer with {name}'s answer, one place at a time.",
+      "steps": [
+        "Add the ones first. Do they make a new ten?",
+        "Then add the tens. Count any new ten too.",
+        "Find the place where {shown} does not match your answer."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "blamedARightPlace": "The ones in {shown} are right. Add {a} + {b} again and look at the tens.",
+        "blamedTheOperation": "{name} did add. Taking away would give {diff}, not {shown}.",
+        "keptTheWrongAnswer": "{shown} is not right. Add {a} + {b} again, starting with the ones."
+      },
+      "solution": {
+        "steps": [
+          "The ones: {oa} + {ob} = {onesSum}. That is a new ten and {onesLeft} more.",
+          "The tens: {ta} + {tb} + 10 = {tensAll}.",
+          "So {a} + {b} = {sum}, not {shown}.",
+          "{keyText}."
+        ],
+        "answer": "keyText"
+      }
+    }
+  },
+  {
+    "id": "calc-g2-find-mistake-subtraction",
+    "blueprintId": "calc-g2-find-mistake",
+    "modeId": "multiDigit",
+    "subskill": "within100",
+    "family": "conceptual",
+    "structureType": "findTheMistake",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5",
+        "2.NBT.B.9"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [
+        "MA.2.NSO.2.3"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "moderate",
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5",
+        "CCSS 2.NBT.B.9",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.NSO.2.3",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4"
+      ]
+    },
+    "format": "choice",
+    "widget": null,
+    "representationType": "symbolic",
+    "template": {
+      "prompt": "{name} says {a} − {b} = {shown}. What mistake did {name} make?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "a": {
+        "kind": "int",
+        "min": 31,
+        "max": 99
+      },
+      "b": {
+        "kind": "int",
+        "min": 12,
+        "max": 79
+      },
+      "oa": {
+        "kind": "expr",
+        "expr": "ones(a)",
+        "format": "int"
+      },
+      "ob": {
+        "kind": "expr",
+        "expr": "ones(b)",
+        "format": "int"
+      },
+      "tensDigitA": {
+        "kind": "expr",
+        "expr": "floor(a / 10)",
+        "format": "int"
+      },
+      "tensDigitB": {
+        "kind": "expr",
+        "expr": "floor(b / 10)",
+        "format": "int"
+      },
+      "tensLeft": {
+        "kind": "expr",
+        "expr": "floor(a / 10) - 1",
+        "format": "int"
+      },
+      "tensRight": {
+        "kind": "expr",
+        "expr": "floor(a / 10) - 1 - floor(b / 10)",
+        "format": "int"
+      },
+      "tensBText": {
+        "kind": "expr",
+        "expr": "floor(b / 10) == 1 ? '1 ten' : floor(b / 10) + ' tens'",
+        "format": "text"
+      },
+      "tensRightText": {
+        "kind": "expr",
+        "expr": "tensRight == 1 ? '1 ten' : tensRight + ' tens'",
+        "format": "text"
+      },
+      "onesTraded": {
+        "kind": "expr",
+        "expr": "ones(a) + 10",
+        "format": "int"
+      },
+      "onesRight": {
+        "kind": "expr",
+        "expr": "ones(a) + 10 - ones(b)",
+        "format": "int"
+      },
+      "right": {
+        "kind": "expr",
+        "expr": "a - b",
+        "format": "int"
+      },
+      "shown": {
+        "kind": "expr",
+        "expr": "(floor(a / 10) - floor(b / 10)) * 10 + ones(b) - ones(a)",
+        "format": "int"
+      },
+      "other": {
+        "kind": "expr",
+        "expr": "(floor(a / 10) - floor(b / 10)) * 10 + 10 + ones(a) - ones(b)",
+        "format": "int"
+      },
+      "sumAB": {
+        "kind": "expr",
+        "expr": "a + b",
+        "format": "int"
+      },
+      "keyText": {
+        "kind": "expr",
+        "expr": "name + ' took ' + ones(a) + ' from ' + ones(b) + ' in the ones instead of trading a ten'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "ones(a) >= 1",
+      "ones(a) < ones(b)",
+      "ones(b) - ones(a) != 5",
+      "a - b >= 10"
+    ],
+    "answer": {
+      "expr": "keyText",
+      "type": "text"
+    },
+    "distractors": [
+      {
+        "expr": "name + ' traded a ten but kept ' + floor(a / 10) + ' tens'",
+        "mistake": "blamedAnotherSlip"
+      },
+      {
+        "expr": "name + ' added instead of taking away'",
+        "mistake": "blamedTheOperation"
+      },
+      {
+        "expr": "name + ' made no mistake'",
+        "mistake": "keptTheWrongAnswer"
+      }
+    ],
+    "hint": {
+      "nudge": "Subtract {a} − {b} yourself. Then compare your answer with {name}'s answer.",
+      "steps": [
+        "Look at the ones first. Does {a} have enough ones to take away the ones in {b}?",
+        "If not, trade a ten for ten ones before you subtract.",
+        "Then look at what {name} did with the ones."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "blamedAnotherSlip": "That slip gives {other}, not {shown}. Look at how {name} got the ones.",
+        "blamedTheOperation": "{name} did take away. Adding would give {sumAB}, not {shown}.",
+        "keptTheWrongAnswer": "{shown} is not right. Subtract {a} − {b} again, starting with the ones."
+      },
+      "solution": {
+        "steps": [
+          "The ones: {oa} is less than {ob}, so trade a ten. {onesTraded} − {ob} = {onesRight}.",
+          "The tens: {tensLeft} tens − {tensBText} = {tensRightText}.",
+          "So {a} − {b} = {right}, not {shown}.",
+          "{keyText}."
+        ],
+        "answer": "keyText"
+      }
+    }
+  }
+]

@@ -1,0 +1,2098 @@
+[
+  {
+    "blueprintId": "calc-g2-both-sides",
+    "modeId": "multiDigit",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "id": "calc-g2-both-sides-sums",
+    "subskill": "equalSign",
+    "family": "conceptual",
+    "structureType": "balanceEquation",
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5",
+        "2.NBT.B.9"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [
+        "MA.2.AR.2.2"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "hard",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "symbolic",
+    "display": {
+      "layout": "'horizontal'"
+    },
+    "template": {
+      "prompt": "{q1}{a} + {b} = □ + {c}{q2}"
+    },
+    "slots": {
+      "a": {
+        "kind": "int",
+        "min": 21,
+        "max": 79
+      },
+      "b": {
+        "kind": "int",
+        "min": 12,
+        "max": 49
+      },
+      "dk": {
+        "kind": "int",
+        "min": 1,
+        "max": 6
+      },
+      "up": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "r": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "ph": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "dAbs": {
+        "kind": "expr",
+        "expr": "dk == 6 ? 10 : dk",
+        "format": "int"
+      },
+      "delta": {
+        "kind": "expr",
+        "expr": "up == 1 ? dAbs : 0 - dAbs",
+        "format": "int"
+      },
+      "c": {
+        "kind": "expr",
+        "expr": "b + delta",
+        "format": "int"
+      },
+      "key": {
+        "kind": "expr",
+        "expr": "a - delta",
+        "format": "int"
+      },
+      "left": {
+        "kind": "expr",
+        "expr": "a + b",
+        "format": "int"
+      },
+      "all3": {
+        "kind": "expr",
+        "expr": "a + b + c",
+        "format": "int"
+      },
+      "dWord": {
+        "kind": "expr",
+        "expr": "up == 1 ? 'more' : 'less'",
+        "format": "text"
+      },
+      "dOpp": {
+        "kind": "expr",
+        "expr": "up == 1 ? 'less' : 'more'",
+        "format": "text"
+      },
+      "q1": {
+        "kind": "expr",
+        "expr": "ph == 0 ? 'What number makes this true? ' : ''",
+        "format": "text"
+      },
+      "q2": {
+        "kind": "expr",
+        "expr": "ph == 0 ? '' : '. What number goes in the box?'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "a + b <= 99",
+      "c >= 11",
+      "key >= 15",
+      "key != b && key != c",
+      "(ones(a) + ones(b) >= 10) == (r == 1)",
+      "!(a == 36 && b == 18 && c == 20)"
+    ],
+    "answer": {
+      "expr": "key",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "left",
+        "mistake": "equalsMeansCompute"
+      },
+      {
+        "expr": "all3",
+        "mistake": "addedEverything"
+      },
+      {
+        "expr": "a",
+        "mistake": "answeredWithAGiven"
+      }
+    ],
+    "hint": {
+      "nudge": "The equal sign means both sides make the same amount. Find the number for the box that makes the right side match the left side.",
+      "steps": [
+        "Look at {b} on the left and {c} on the right. {c} is {dAbs} {dWord} than {b}.",
+        "To keep both sides the same, the box must be {dAbs} {dOpp} than {a}.",
+        "Or add {a} + {b} first. Then ask: what number and {c} make that much?"
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "equalsMeansCompute": "{left} is what {a} + {b} makes. The equal sign means the same as, so the box and {c} together must also make {left}.",
+        "addedEverything": "That adds all three numbers. Find the number that goes with {c} to make the same total as {a} + {b}.",
+        "answeredWithAGiven": "{a} would only work if {c} were the same as {b}. {c} is {dAbs} {dWord} than {b}, so the box must be {dAbs} {dOpp} than {a}."
+      },
+      "solution": {
+        "steps": [
+          "The left side is {a} + {b} = {left}.",
+          "The right side must make {left} too: □ + {c} = {left}.",
+          "{key} + {c} = {left}, so the box is {key}."
+        ],
+        "answer": "key"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5",
+        "CCSS 2.NBT.B.9",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.AR.2.2",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4"
+      ],
+      "blueprintRow": "calc-g2-both-sides"
+    }
+  },
+  {
+    "blueprintId": "calc-g2-both-sides",
+    "modeId": "multiDigit",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "id": "calc-g2-both-sides-differences",
+    "subskill": "equalSign",
+    "family": "conceptual",
+    "structureType": "balanceEquation",
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5",
+        "2.NBT.B.9"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [
+        "MA.2.AR.2.2"
+      ],
+      "va": [
+        "2.CE.1b"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "hard",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "symbolic",
+    "display": {
+      "layout": "'horizontal'"
+    },
+    "template": {
+      "prompt": "{q1}{a} − {b} = □ − {c}{q2}"
+    },
+    "slots": {
+      "a": {
+        "kind": "int",
+        "min": 31,
+        "max": 99
+      },
+      "b": {
+        "kind": "int",
+        "min": 11,
+        "max": 59
+      },
+      "dk": {
+        "kind": "int",
+        "min": 1,
+        "max": 6
+      },
+      "up": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "r": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "ph": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "dAbs": {
+        "kind": "expr",
+        "expr": "dk == 6 ? 10 : dk",
+        "format": "int"
+      },
+      "delta": {
+        "kind": "expr",
+        "expr": "up == 1 ? dAbs : 0 - dAbs",
+        "format": "int"
+      },
+      "c": {
+        "kind": "expr",
+        "expr": "b + delta",
+        "format": "int"
+      },
+      "key": {
+        "kind": "expr",
+        "expr": "a + delta",
+        "format": "int"
+      },
+      "left": {
+        "kind": "expr",
+        "expr": "a - b",
+        "format": "int"
+      },
+      "all3": {
+        "kind": "expr",
+        "expr": "a + b + c",
+        "format": "int"
+      },
+      "dWord": {
+        "kind": "expr",
+        "expr": "up == 1 ? 'more' : 'less'",
+        "format": "text"
+      },
+      "q1": {
+        "kind": "expr",
+        "expr": "ph == 0 ? 'What number makes this true? ' : ''",
+        "format": "text"
+      },
+      "q2": {
+        "kind": "expr",
+        "expr": "ph == 0 ? '' : '. What number goes in the box?'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "left >= 10",
+      "c >= 11",
+      "key >= 15",
+      "key <= 99",
+      "key != b && key != c && key != left",
+      "(ones(a) < ones(b)) == (r == 1)"
+    ],
+    "answer": {
+      "expr": "key",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "left",
+        "mistake": "equalsMeansCompute"
+      },
+      {
+        "expr": "all3",
+        "mistake": "addedEverything"
+      },
+      {
+        "expr": "a",
+        "mistake": "answeredWithAGiven"
+      }
+    ],
+    "hint": {
+      "nudge": "The equal sign means both sides are worth the same. Find the number for the box that makes the right side match the left side.",
+      "steps": [
+        "Find {a} − {b}. The right side must leave that same amount.",
+        "Look at {b} and {c}. {c} is {dAbs} {dWord} than {b}.",
+        "Taking away {dAbs} {dWord} means the box must be {dAbs} {dWord} than {a}."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "equalsMeansCompute": "{left} is what {a} − {b} leaves. The equal sign means the same as, so the box take away {c} must also leave {left}.",
+        "addedEverything": "That adds all three numbers, but both sides take away. Find the number that leaves the same amount as {a} − {b} when you take away {c}.",
+        "answeredWithAGiven": "{a} would only work if {c} were the same as {b}. {c} is {dAbs} {dWord} than {b}, so the box must be {dAbs} {dWord} than {a}."
+      },
+      "solution": {
+        "steps": [
+          "The left side is {a} − {b} = {left}.",
+          "The right side must leave {left} too: □ − {c} = {left}.",
+          "{left} + {c} = {key}, and {key} − {c} = {left}. The box is {key}."
+        ],
+        "answer": "key"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5",
+        "CCSS 2.NBT.B.9",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.AR.2.2",
+        "VA SOL 2023 2.CE.1b",
+        "GA K-12 2021 2.NR.2.4"
+      ],
+      "blueprintRow": "calc-g2-both-sides"
+    }
+  },
+  {
+    "blueprintId": "calc-g2-which-true",
+    "modeId": "multiDigit",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "id": "calc-g2-which-true",
+    "subskill": "equalSign",
+    "family": "conceptual",
+    "structureType": "chooseTrueEquation",
+    "standards": {
+      "ccss": [
+        "2.NBT.B.5"
+      ],
+      "tx": [
+        "2.4B"
+      ],
+      "fl": [
+        "MA.2.AR.2.1"
+      ],
+      "va": [
+        "2.CE.1j"
+      ],
+      "ga": [
+        "2.NR.2.4"
+      ]
+    },
+    "difficulty": "moderate",
+    "format": "choice",
+    "widget": null,
+    "representationType": "symbolic",
+    "promptVariants": 3,
+    "template": {
+      "prompt": "{ask}"
+    },
+    "slots": {
+      "ph": {
+        "kind": "int",
+        "min": 0,
+        "max": 2
+      },
+      "ask": {
+        "kind": "expr",
+        "expr": "ph == 0 ? 'Which equation is true?' : ph == 1 ? 'Which number sentence is true?' : 'Which of these equations is true?'",
+        "format": "text"
+      },
+      "tOp": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "tTr": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "tRev": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "tP": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "tQr": {
+        "kind": "int",
+        "min": 0,
+        "max": 99
+      },
+      "tH1": {
+        "kind": "int",
+        "min": 1,
+        "max": 4
+      },
+      "tH2": {
+        "kind": "int",
+        "min": 1,
+        "max": 4
+      },
+      "tS1": {
+        "kind": "int",
+        "min": 1,
+        "max": 6
+      },
+      "tS2r": {
+        "kind": "int",
+        "min": 0,
+        "max": 99
+      },
+      "tA0": {
+        "kind": "expr",
+        "expr": "tOp == 0 ? (tTr == 1 ? tP : tP - 1) : (tTr == 1 ? floor(tQr * tP / 100) : tP)",
+        "format": "int"
+      },
+      "tB0": {
+        "kind": "expr",
+        "expr": "tOp == 0 ? (tTr == 1 ? 10 - tP + floor(tQr * tP / 100) : 1 + floor(tQr * (10 - tP) / 100)) : (tTr == 1 ? tP : 1 + floor(tQr * tP / 100))",
+        "format": "int"
+      },
+      "tA1": {
+        "kind": "expr",
+        "expr": "tOp == 0 ? tH1 : tS1 + 1 + tTr + floor(tS2r * (9 - tS1 - tTr) / 100)",
+        "format": "int"
+      },
+      "tB1": {
+        "kind": "expr",
+        "expr": "tOp == 0 ? tH2 : tS1",
+        "format": "int"
+      },
+      "tX": {
+        "kind": "expr",
+        "expr": "10 * tA1 + tA0",
+        "format": "int"
+      },
+      "tY": {
+        "kind": "expr",
+        "expr": "10 * tB1 + tB0",
+        "format": "int"
+      },
+      "tZ": {
+        "kind": "expr",
+        "expr": "tOp == 0 ? tX + tY : tX - tY",
+        "format": "int"
+      },
+      "tSign": {
+        "kind": "expr",
+        "expr": "tOp == 0 ? '+' : '−'",
+        "format": "text"
+      },
+      "tRevOn": {
+        "kind": "expr",
+        "expr": "tOp == 0 && tRev == 1 ? 1 : 0",
+        "format": "int"
+      },
+      "keyText": {
+        "kind": "expr",
+        "expr": "tRevOn == 1 ? tZ + ' = ' + tX + ' + ' + tY : tX + ' ' + tSign + ' ' + tY + ' = ' + tZ",
+        "format": "text"
+      },
+      "cA0": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "cB0r": {
+        "kind": "int",
+        "min": 0,
+        "max": 99
+      },
+      "cA1": {
+        "kind": "int",
+        "min": 1,
+        "max": 4
+      },
+      "cB1": {
+        "kind": "int",
+        "min": 1,
+        "max": 4
+      },
+      "cRevRaw": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "cB0": {
+        "kind": "expr",
+        "expr": "10 - cA0 + floor(cB0r * cA0 / 100)",
+        "format": "int"
+      },
+      "cA": {
+        "kind": "expr",
+        "expr": "10 * cA1 + cA0",
+        "format": "int"
+      },
+      "cB": {
+        "kind": "expr",
+        "expr": "10 * cB1 + cB0",
+        "format": "int"
+      },
+      "cSum": {
+        "kind": "expr",
+        "expr": "cA + cB",
+        "format": "int"
+      },
+      "cWrong": {
+        "kind": "expr",
+        "expr": "cSum - 10",
+        "format": "int"
+      },
+      "cRev": {
+        "kind": "expr",
+        "expr": "tRevOn == 1 ? 1 : cRevRaw",
+        "format": "int"
+      },
+      "cText": {
+        "kind": "expr",
+        "expr": "cRev == 1 ? cWrong + ' = ' + cA + ' + ' + cB : cA + ' + ' + cB + ' = ' + cWrong",
+        "format": "text"
+      },
+      "oB0": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "oA0r": {
+        "kind": "int",
+        "min": 0,
+        "max": 99
+      },
+      "oB1": {
+        "kind": "int",
+        "min": 1,
+        "max": 6
+      },
+      "oA1r": {
+        "kind": "int",
+        "min": 0,
+        "max": 99
+      },
+      "oA0": {
+        "kind": "expr",
+        "expr": "floor(oA0r * oB0 / 100)",
+        "format": "int"
+      },
+      "oA1": {
+        "kind": "expr",
+        "expr": "oB1 + 2 + floor(oA1r * (8 - oB1) / 100)",
+        "format": "int"
+      },
+      "oA": {
+        "kind": "expr",
+        "expr": "10 * oA1 + oA0",
+        "format": "int"
+      },
+      "oB": {
+        "kind": "expr",
+        "expr": "10 * oB1 + oB0",
+        "format": "int"
+      },
+      "oDiff": {
+        "kind": "expr",
+        "expr": "oA - oB",
+        "format": "int"
+      },
+      "oWrong": {
+        "kind": "expr",
+        "expr": "oDiff + 10",
+        "format": "int"
+      },
+      "oTensLeft": {
+        "kind": "expr",
+        "expr": "oA1 - 1",
+        "format": "int"
+      },
+      "oText": {
+        "kind": "expr",
+        "expr": "oA + ' − ' + oB + ' = ' + oWrong",
+        "format": "text"
+      },
+      "sB0": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "sA0r": {
+        "kind": "int",
+        "min": 0,
+        "max": 99
+      },
+      "sB1": {
+        "kind": "int",
+        "min": 1,
+        "max": 6
+      },
+      "sA1r": {
+        "kind": "int",
+        "min": 0,
+        "max": 99
+      },
+      "sA0": {
+        "kind": "expr",
+        "expr": "floor(sA0r * sB0 / 100)",
+        "format": "int"
+      },
+      "sA1": {
+        "kind": "expr",
+        "expr": "sB1 + 2 + floor(sA1r * (8 - sB1) / 100)",
+        "format": "int"
+      },
+      "sA": {
+        "kind": "expr",
+        "expr": "10 * sA1 + sA0",
+        "format": "int"
+      },
+      "sB": {
+        "kind": "expr",
+        "expr": "10 * sB1 + sB0",
+        "format": "int"
+      },
+      "sDiff": {
+        "kind": "expr",
+        "expr": "sA - sB",
+        "format": "int"
+      },
+      "sWrong": {
+        "kind": "expr",
+        "expr": "10 * (sA1 - sB1) + (sB0 - sA0)",
+        "format": "int"
+      },
+      "sText": {
+        "kind": "expr",
+        "expr": "sA + ' − ' + sB + ' = ' + sWrong",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "oB0 - oA0 != 5",
+      "sB0 - sA0 != 5",
+      "tX != cA && tX != cB && tX != oA && tX != oB && tX != sA && tX != sB && tY != cA && tY != cB && tY != oA && tY != oB && tY != sA && tY != sB && tZ != cA && tZ != cB && tZ != oA && tZ != oB && tZ != sA && tZ != sB",
+      "keyText != '36 = 19 + 17' && keyText != '19 + 17 = 36'"
+    ],
+    "answer": {
+      "expr": "keyText",
+      "type": "text"
+    },
+    "distractors": [
+      {
+        "expr": "oText",
+        "mistake": "offByTen"
+      },
+      {
+        "expr": "cText",
+        "mistake": "forgotToCarry"
+      },
+      {
+        "expr": "sText",
+        "mistake": "smallerFromLarger"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks which equation is true. Work out each one and check that both sides are the same amount.",
+      "steps": [
+        "In each equation, work out the side with the + or − sign.",
+        "Watch the ones. If they make ten or more, carry a ten. If there are not enough ones to take away, trade a ten first.",
+        "The true equation has the same amount on both sides of the equal sign."
+      ],
+      "picture": null,
+      "example": {
+        "problem": "Which equation is true: 52 − 17 = 45, 36 = 19 + 17, 48 + 25 = 63 or 74 − 38 = 44?",
+        "steps": [
+          "52 − 17 is 35, not 45.",
+          "19 + 17 is 36, so 36 = 19 + 17 is true.",
+          "48 + 25 is 73, not 63.",
+          "74 − 38 is 36, not 44."
+        ],
+        "answer": "36 = 19 + 17"
+      },
+      "feedback": {
+        "offByTen": "Check {oA} − {oB} again. After you trade a ten for ten ones, {oA} has only {oTensLeft} tens left.",
+        "forgotToCarry": "Check {cA} + {cB} again. The ones make a new ten, and that ten must be added to the tens.",
+        "smallerFromLarger": "Check {sA} − {sB} again. In the ones place, you cannot take {sB0} from {sA0}, so trade a ten first. Do not take {sA0} from {sB0} instead."
+      },
+      "solution": {
+        "steps": [
+          "{tX} {tSign} {tY} is {tZ}, so {keyText} is true.",
+          "{oA} − {oB} is {oDiff}, not {oWrong}.",
+          "{cA} + {cB} is {cSum}, not {cWrong}.",
+          "{sA} − {sB} is {sDiff}, not {sWrong}."
+        ],
+        "answer": "keyText"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.5",
+        "TEKS 2.4B",
+        "FL B.E.S.T. MA.2.AR.2.1",
+        "VA SOL 2023 2.CE.1j",
+        "GA K-12 2021 2.NR.2.4"
+      ],
+      "blueprintRow": "calc-g2-which-true"
+    }
+  },
+  {
+    "blueprintId": "calc-g2-equal-mats",
+    "modeId": "multiDigit",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "id": "calc-g2-equal-mats-same",
+    "subskill": "equalSign",
+    "family": "conceptual",
+    "structureType": "sameValueTwoMats",
+    "standards": {
+      "ccss": [
+        "2.NBT.B.9"
+      ],
+      "tx": [],
+      "fl": [],
+      "va": [
+        "2.CE.1j"
+      ],
+      "ga": []
+    },
+    "difficulty": "moderate",
+    "format": "choice",
+    "widget": null,
+    "representationType": "placeValueBlocks",
+    "template": {
+      "prompt": "{ask}"
+    },
+    "slots": {
+      "t": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "o": {
+        "kind": "int",
+        "min": 0,
+        "max": 6
+      },
+      "ph": {
+        "kind": "int",
+        "min": 0,
+        "max": 2
+      },
+      "ask": {
+        "kind": "expr",
+        "expr": "ph == 0 ? 'Do the two mats show the same number?' : ph == 1 ? 'Do Mat A and Mat B show the same number?' : 'Is the number on Mat A the same as the number on Mat B?'",
+        "format": "text"
+      },
+      "n": {
+        "kind": "expr",
+        "expr": "10 * t + o",
+        "format": "int"
+      },
+      "aT": {
+        "kind": "expr",
+        "expr": "t - 1",
+        "format": "int"
+      },
+      "aO": {
+        "kind": "expr",
+        "expr": "o + 10",
+        "format": "int"
+      },
+      "slipNum": {
+        "kind": "expr",
+        "expr": "(t - 1) * 100 + o + 10",
+        "format": "int"
+      },
+      "aTensText": {
+        "kind": "expr",
+        "expr": "aT == 1 ? '1 ten' : aT + ' tens'",
+        "format": "text"
+      },
+      "bTensText": {
+        "kind": "expr",
+        "expr": "t == 1 ? '1 ten' : t + ' tens'",
+        "format": "text"
+      },
+      "bOnesText": {
+        "kind": "expr",
+        "expr": "o == 1 ? '1 one' : o + ' ones'",
+        "format": "text"
+      },
+      "keyText": {
+        "kind": "expr",
+        "expr": "'Yes, both show ' + n",
+        "format": "text"
+      },
+      "slipText": {
+        "kind": "expr",
+        "expr": "'No, Mat A shows ' + slipNum",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "n != 42"
+    ],
+    "display": {
+      "figure": "'discMat'",
+      "discMat": {
+        "mats": [
+          {
+            "label": "'Mat A'",
+            "cols": [
+              {
+                "place": 10,
+                "count": "aT"
+              },
+              {
+                "place": 1,
+                "count": "aO"
+              }
+            ]
+          },
+          {
+            "label": "'Mat B'",
+            "cols": [
+              {
+                "place": 10,
+                "count": "t"
+              },
+              {
+                "place": 1,
+                "count": "o"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "answer": {
+      "expr": "keyText",
+      "type": "text"
+    },
+    "distractors": [
+      {
+        "expr": "'No, Mat A has more discs'",
+        "mistake": "countedRodsAsOnes"
+      },
+      {
+        "expr": "slipText",
+        "mistake": "placeValueSlip"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks if both mats show the same number. Read each mat by its tens and ones, not by how many discs it has.",
+      "steps": [
+        "Mat A has {aTensText} and {aO} ones. Ten ones make one ten.",
+        "Trade ten of Mat A's ones for one ten. Then read Mat A's tens and ones.",
+        "Read Mat B the same way, and compare the two numbers."
+      ],
+      "picture": null,
+      "example": {
+        "problem": "Mat A has 3 tens and 12 ones. Mat B has 4 tens and 2 ones. Do the two mats show the same number?",
+        "steps": [
+          "Trade ten of Mat A's ones for one ten: 4 tens and 2 ones. That is 42.",
+          "Mat B has 4 tens and 2 ones. That is 42 too."
+        ],
+        "answer": "Yes, both show 42"
+      },
+      "feedback": {
+        "countedRodsAsOnes": "A ten disc is worth ten, not one. Count each mat by its tens and ones, not by how many discs you see.",
+        "placeValueSlip": "Mat A has {aO} ones. That is more than nine, so ten of them make one more ten. Trade first, then read the number."
+      },
+      "solution": {
+        "steps": [
+          "Mat A has {aTensText} and {aO} ones.",
+          "Trade ten ones for one ten: {bTensText} and {bOnesText}. That is {n}.",
+          "Mat B has {bTensText} and {bOnesText}. That is {n} too."
+        ],
+        "answer": "keyText"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.9",
+        "VA SOL 2023 2.CE.1j"
+      ],
+      "blueprintRow": "calc-g2-equal-mats"
+    }
+  },
+  {
+    "blueprintId": "calc-g2-equal-mats",
+    "modeId": "multiDigit",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "id": "calc-g2-equal-mats-differ",
+    "subskill": "equalSign",
+    "family": "conceptual",
+    "structureType": "sameValueTwoMats",
+    "standards": {
+      "ccss": [
+        "2.NBT.B.9"
+      ],
+      "tx": [],
+      "fl": [],
+      "va": [
+        "2.CE.1j"
+      ],
+      "ga": []
+    },
+    "difficulty": "moderate",
+    "format": "choice",
+    "widget": null,
+    "representationType": "placeValueBlocks",
+    "template": {
+      "prompt": "{ask}"
+    },
+    "slots": {
+      "aT": {
+        "kind": "int",
+        "min": 1,
+        "max": 7
+      },
+      "aO": {
+        "kind": "int",
+        "min": 10,
+        "max": 16
+      },
+      "dp": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "ph": {
+        "kind": "int",
+        "min": 0,
+        "max": 2
+      },
+      "ask": {
+        "kind": "expr",
+        "expr": "ph == 0 ? 'Do the two mats show the same number?' : ph == 1 ? 'Do Mat A and Mat B show the same number?' : 'Is the number on Mat A the same as the number on Mat B?'",
+        "format": "text"
+      },
+      "nA": {
+        "kind": "expr",
+        "expr": "10 * aT + aO",
+        "format": "int"
+      },
+      "d": {
+        "kind": "expr",
+        "expr": "dp == 0 ? 1 : 10",
+        "format": "int"
+      },
+      "nB": {
+        "kind": "expr",
+        "expr": "nA + d",
+        "format": "int"
+      },
+      "bT": {
+        "kind": "expr",
+        "expr": "floor(nB / 10)",
+        "format": "int"
+      },
+      "bO": {
+        "kind": "expr",
+        "expr": "nB % 10",
+        "format": "int"
+      },
+      "aTensText": {
+        "kind": "expr",
+        "expr": "aT == 1 ? '1 ten' : aT + ' tens'",
+        "format": "text"
+      },
+      "aTradedTensText": {
+        "kind": "expr",
+        "expr": "aT + 1 == 1 ? '1 ten' : aT + 1 + ' tens'",
+        "format": "text"
+      },
+      "aRest": {
+        "kind": "expr",
+        "expr": "aO - 10",
+        "format": "int"
+      },
+      "aRestText": {
+        "kind": "expr",
+        "expr": "aRest == 1 ? '1 one' : aRest + ' ones'",
+        "format": "text"
+      },
+      "bTensText": {
+        "kind": "expr",
+        "expr": "bT == 1 ? '1 ten' : bT + ' tens'",
+        "format": "text"
+      },
+      "bOnesText": {
+        "kind": "expr",
+        "expr": "bO == 1 ? '1 one' : bO + ' ones'",
+        "format": "text"
+      },
+      "keyText": {
+        "kind": "expr",
+        "expr": "'No, Mat A shows ' + nA + ' and Mat B shows ' + nB",
+        "format": "text"
+      },
+      "yesText": {
+        "kind": "expr",
+        "expr": "'Yes, both show ' + nB",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "nB <= 99",
+      "!(nA == 35 && nB == 45)"
+    ],
+    "display": {
+      "figure": "'discMat'",
+      "discMat": {
+        "mats": [
+          {
+            "label": "'Mat A'",
+            "cols": [
+              {
+                "place": 10,
+                "count": "aT"
+              },
+              {
+                "place": 1,
+                "count": "aO"
+              }
+            ]
+          },
+          {
+            "label": "'Mat B'",
+            "cols": [
+              {
+                "place": 10,
+                "count": "bT"
+              },
+              {
+                "place": 1,
+                "count": "bO"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "answer": {
+      "expr": "keyText",
+      "type": "text"
+    },
+    "distractors": [
+      {
+        "expr": "yesText",
+        "mistake": "calledThemEqual"
+      },
+      {
+        "expr": "'No, Mat A shows a greater number'",
+        "mistake": "countedRodsAsOnes"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks if both mats show the same number. Read each mat by its tens and ones, not by how many discs it has.",
+      "steps": [
+        "Mat A has {aTensText} and {aO} ones. Ten ones make one ten.",
+        "Trade ten of Mat A's ones for one ten. Then read Mat A's tens and ones.",
+        "Read Mat B the same way, and compare the two numbers."
+      ],
+      "picture": null,
+      "example": {
+        "problem": "Mat A has 2 tens and 15 ones. Mat B has 4 tens and 5 ones. Do the two mats show the same number?",
+        "steps": [
+          "Trade ten of Mat A's ones for one ten: 3 tens and 5 ones. That is 35.",
+          "Mat B has 4 tens and 5 ones. That is 45.",
+          "35 is not 45, so the mats do not show the same number."
+        ],
+        "answer": "No, Mat A shows 35 and Mat B shows 45"
+      },
+      "feedback": {
+        "calledThemEqual": "Trade ten of Mat A's ones for one ten, then read Mat A again. Check its tens and its ones against Mat B's.",
+        "countedRodsAsOnes": "Mat A has more discs, but that does not make its number greater. A ten disc is worth ten ones, so read each mat by its tens and ones."
+      },
+      "solution": {
+        "steps": [
+          "Mat A has {aTensText} and {aO} ones. Trade ten ones for one ten: {aTradedTensText} and {aRestText}. That is {nA}.",
+          "Mat B has {bTensText} and {bOnesText}. That is {nB}.",
+          "{nA} is not {nB}, so the mats do not show the same number."
+        ],
+        "answer": "keyText"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.NBT.B.9",
+        "VA SOL 2023 2.CE.1j"
+      ],
+      "blueprintRow": "calc-g2-equal-mats"
+    }
+  },
+  {
+    "blueprintId": "calc-g2-va-estimate",
+    "modeId": "multiDigit",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "id": "calc-g2-va-estimate-sum",
+    "subskill": "within100",
+    "family": "conceptual",
+    "structureType": "estimateSumDifference",
+    "standards": {
+      "ccss": [],
+      "tx": [],
+      "fl": [],
+      "va": [
+        "2.CE.1a"
+      ],
+      "ga": []
+    },
+    "difficulty": "easy",
+    "format": "number",
+    "widget": null,
+    "representationType": "symbolic",
+    "display": {
+      "layout": "'horizontal'"
+    },
+    "template": {
+      "prompt": "{lead} {a} + {b}?"
+    },
+    "slots": {
+      "tu": {
+        "kind": "int",
+        "min": 1,
+        "max": 6
+      },
+      "tw": {
+        "kind": "int",
+        "min": 1,
+        "max": 6
+      },
+      "pair": {
+        "kind": "int",
+        "min": 0,
+        "max": 2
+      },
+      "ord": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "ph": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "lead": {
+        "kind": "expr",
+        "expr": "ph == 0 ? 'About how much is' : 'Which is the best estimate for'",
+        "format": "text"
+      },
+      "u": {
+        "kind": "expr",
+        "expr": "pair == 2 ? 8 : 7",
+        "format": "int"
+      },
+      "w": {
+        "kind": "expr",
+        "expr": "pair == 1 ? 2 : 1",
+        "format": "int"
+      },
+      "upNum": {
+        "kind": "expr",
+        "expr": "10 * tu + u",
+        "format": "int"
+      },
+      "downNum": {
+        "kind": "expr",
+        "expr": "10 * tw + w",
+        "format": "int"
+      },
+      "a": {
+        "kind": "expr",
+        "expr": "ord == 0 ? upNum : downNum",
+        "format": "int"
+      },
+      "b": {
+        "kind": "expr",
+        "expr": "ord == 0 ? downNum : upNum",
+        "format": "int"
+      },
+      "exact": {
+        "kind": "expr",
+        "expr": "a + b",
+        "format": "int"
+      },
+      "upTen": {
+        "kind": "expr",
+        "expr": "10 * (tu + 1)",
+        "format": "int"
+      },
+      "downTen": {
+        "kind": "expr",
+        "expr": "10 * tw",
+        "format": "int"
+      },
+      "aRound": {
+        "kind": "expr",
+        "expr": "ord == 0 ? upTen : downTen",
+        "format": "int"
+      },
+      "bRound": {
+        "kind": "expr",
+        "expr": "ord == 0 ? downTen : upTen",
+        "format": "int"
+      },
+      "est": {
+        "kind": "expr",
+        "expr": "upTen + downTen",
+        "format": "int"
+      },
+      "upGap": {
+        "kind": "expr",
+        "expr": "10 - u",
+        "format": "int"
+      },
+      "downGap": {
+        "kind": "expr",
+        "expr": "w",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "tu + tw >= 5 && tu + tw <= 7"
+    ],
+    "answer": {
+      "expr": "est",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "est - 10",
+        "mistake": "roundedDownBoth"
+      },
+      {
+        "expr": "est + 10",
+        "mistake": "roundedUpBoth"
+      },
+      {
+        "expr": "100",
+        "mistake": "roundedToHundred"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks for an estimate, a number close to the sum. Find the sum, then the ten it is closest to.",
+      "steps": [
+        "Add {a} + {b}. Add the tens, then add the ones.",
+        "Look at your sum. Which ten is it closest to?"
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "roundedDownBoth": "{upNum} is only {upGap} away from the next ten up, so it rounds up, not down.",
+        "roundedUpBoth": "{downNum} is only {downGap} more than a ten, so it rounds down, not up.",
+        "roundedToHundred": "The sum is less than 100. Look for the ten it is closest to, not the hundred."
+      },
+      "solution": {
+        "steps": [
+          "{a} + {b} = {exact}.",
+          "{exact} is closest to {est}.",
+          "Rounding each number first gives the same: {aRound} + {bRound} = {est}."
+        ],
+        "answer": "est"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "VA SOL 2023 2.CE.1a"
+      ],
+      "blueprintRow": "calc-g2-va-estimate"
+    }
+  },
+  {
+    "blueprintId": "calc-g2-va-estimate",
+    "modeId": "multiDigit",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "id": "calc-g2-va-estimate-difference",
+    "subskill": "within100",
+    "family": "conceptual",
+    "structureType": "estimateSumDifference",
+    "standards": {
+      "ccss": [],
+      "tx": [],
+      "fl": [],
+      "va": [
+        "2.CE.1a"
+      ],
+      "ga": []
+    },
+    "difficulty": "easy",
+    "format": "number",
+    "widget": null,
+    "representationType": "symbolic",
+    "display": {
+      "layout": "'horizontal'"
+    },
+    "template": {
+      "prompt": "{lead} {first} − {second}?"
+    },
+    "slots": {
+      "f1": {
+        "kind": "int",
+        "min": 4,
+        "max": 8
+      },
+      "s1": {
+        "kind": "int",
+        "min": 1,
+        "max": 3
+      },
+      "d1": {
+        "kind": "int",
+        "min": 1,
+        "max": 3
+      },
+      "d2": {
+        "kind": "int",
+        "min": 1,
+        "max": 3
+      },
+      "ph": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "lead": {
+        "kind": "expr",
+        "expr": "ph == 0 ? 'About how much is' : 'Which is the best estimate for'",
+        "format": "text"
+      },
+      "first": {
+        "kind": "expr",
+        "expr": "10 * f1 + d1",
+        "format": "int"
+      },
+      "second": {
+        "kind": "expr",
+        "expr": "10 * s1 + 10 - d2",
+        "format": "int"
+      },
+      "r1": {
+        "kind": "expr",
+        "expr": "10 * f1",
+        "format": "int"
+      },
+      "r2": {
+        "kind": "expr",
+        "expr": "10 * (s1 + 1)",
+        "format": "int"
+      },
+      "est": {
+        "kind": "expr",
+        "expr": "r1 - r2",
+        "format": "int"
+      },
+      "exact": {
+        "kind": "expr",
+        "expr": "first - second",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "d1 + d2 <= 4",
+      "r1 - r2 >= 20",
+      "r1 + r2 <= 100"
+    ],
+    "answer": {
+      "expr": "est",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "est + 10",
+        "mistake": "roundedOneWrongWay"
+      },
+      {
+        "expr": "est + 20",
+        "mistake": "roundedBothWrongWay"
+      },
+      {
+        "expr": "r1 + r2",
+        "mistake": "addedInsteadOfSubtracted"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks for an estimate, a number close to the difference. Find the difference, then the ten it is closest to.",
+      "steps": [
+        "Subtract {first} − {second}. There are not enough ones, so trade a ten first.",
+        "Look at your answer. Which ten is it closest to?"
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "roundedOneWrongWay": "Round each number to the ten it is closest to. {first} is only {d1} more than a ten, so it rounds down. {second} is only {d2} less than the next ten, so it rounds up.",
+        "roundedBothWrongWay": "Both numbers were rounded the wrong way. {first} rounds down and {second} rounds up, each to the ten it is closest to.",
+        "addedInsteadOfSubtracted": "The sign is minus, so take away. The difference must be less than {first}."
+      },
+      "solution": {
+        "steps": [
+          "{first} − {second} = {exact}.",
+          "{exact} is closest to {est}.",
+          "Rounding each number first gives the same: {r1} − {r2} = {est}."
+        ],
+        "answer": "est"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "VA SOL 2023 2.CE.1a"
+      ],
+      "blueprintRow": "calc-g2-va-estimate"
+    }
+  },
+  {
+    "blueprintId": "calc-g2-tx-ten-hundred-1200",
+    "modeId": "multiDigit",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "id": "calc-g2-tx-ten-hundred-1200-no-crossing",
+    "subskill": "tenOrHundredTo1200",
+    "family": "procedural",
+    "structureType": "tenOrHundredMoreLess",
+    "standards": {
+      "ccss": [],
+      "tx": [
+        "2.7B"
+      ],
+      "fl": [],
+      "va": [],
+      "ga": []
+    },
+    "format": "number",
+    "widget": null,
+    "representationType": "symbolic",
+    "display": {
+      "layout": "'horizontal'"
+    },
+    "difficulty": "easy",
+    "template": {
+      "prompt": "{lead} {step} less than {s}?"
+    },
+    "slots": {
+      "s": {
+        "kind": "int",
+        "min": 901,
+        "max": 1190
+      },
+      "st": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "ph": {
+        "kind": "int",
+        "min": 0,
+        "max": 2
+      },
+      "lead": {
+        "kind": "expr",
+        "expr": "ph == 0 ? 'What number is' : ph == 1 ? 'Which number is' : 'What is'",
+        "format": "text"
+      },
+      "step": {
+        "kind": "expr",
+        "expr": "st == 0 ? 10 : 100",
+        "format": "int"
+      },
+      "other": {
+        "kind": "expr",
+        "expr": "st == 0 ? 100 : 10",
+        "format": "int"
+      },
+      "place": {
+        "kind": "expr",
+        "expr": "st == 0 ? 'tens' : 'hundreds'",
+        "format": "text"
+      },
+      "otherPlace": {
+        "kind": "expr",
+        "expr": "st == 0 ? 'hundreds' : 'tens'",
+        "format": "text"
+      },
+      "tensD": {
+        "kind": "expr",
+        "expr": "floor(s / 10) % 10",
+        "format": "int"
+      },
+      "hundD": {
+        "kind": "expr",
+        "expr": "floor(s / 100) % 10",
+        "format": "int"
+      },
+      "onesD": {
+        "kind": "expr",
+        "expr": "s % 10",
+        "format": "int"
+      },
+      "placeD": {
+        "kind": "expr",
+        "expr": "st == 0 ? tensD : hundD",
+        "format": "int"
+      },
+      "placeDm": {
+        "kind": "expr",
+        "expr": "placeD - 1",
+        "format": "int"
+      },
+      "key": {
+        "kind": "expr",
+        "expr": "s - step",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "onesD >= 1 && onesD <= 8",
+      "(st == 0 && tensD >= 1) || (st == 1 && hundD >= 1)"
+    ],
+    "operation": {
+      "a": "s",
+      "b": "step",
+      "op": "-"
+    },
+    "answer": {
+      "expr": "key",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "s - other",
+        "mistake": "changedTheWrongPlace"
+      },
+      {
+        "expr": "s - 1",
+        "mistake": "changedTheOnes"
+      },
+      {
+        "expr": "s + step",
+        "mistake": "addedInsteadOfSubtracted"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks for {step} less than {s}. Taking away {step} changes only the {place} digit.",
+      "steps": [
+        "In {s}, the {place} digit is {placeD}.",
+        "Make that digit one less. Keep every other digit the same."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "changedTheWrongPlace": "That changed the {otherPlace} digit. Taking away {step} makes the {place} digit one less.",
+        "changedTheOnes": "That changed the ones digit. Taking away {step} makes the {place} digit one less, not the ones digit.",
+        "addedInsteadOfSubtracted": "That went up. Less means take away, so the answer must be smaller than {s}."
+      },
+      "solution": {
+        "steps": [
+          "In {s}, the {place} digit is {placeD}.",
+          "One less than {placeD} is {placeDm}. Every other digit stays the same.",
+          "{step} less than {s} is {key}."
+        ],
+        "answer": "key"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "TEKS 2.7B"
+      ],
+      "blueprintRow": "calc-g2-tx-ten-hundred-1200"
+    }
+  },
+  {
+    "blueprintId": "calc-g2-tx-ten-hundred-1200",
+    "modeId": "multiDigit",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "id": "calc-g2-tx-ten-hundred-1200-no-crossing-more",
+    "subskill": "tenOrHundredTo1200",
+    "family": "procedural",
+    "structureType": "tenOrHundredMoreLess",
+    "standards": {
+      "ccss": [],
+      "tx": [
+        "2.7B"
+      ],
+      "fl": [],
+      "va": [],
+      "ga": []
+    },
+    "format": "number",
+    "widget": null,
+    "representationType": "symbolic",
+    "display": {
+      "layout": "'horizontal'"
+    },
+    "difficulty": "easy",
+    "template": {
+      "prompt": "{lead} {step} more than {s}?"
+    },
+    "slots": {
+      "s": {
+        "kind": "int",
+        "min": 901,
+        "max": 1190
+      },
+      "st": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "ph": {
+        "kind": "int",
+        "min": 0,
+        "max": 2
+      },
+      "lead": {
+        "kind": "expr",
+        "expr": "ph == 0 ? 'What number is' : ph == 1 ? 'Which number is' : 'What is'",
+        "format": "text"
+      },
+      "step": {
+        "kind": "expr",
+        "expr": "st == 0 ? 10 : 100",
+        "format": "int"
+      },
+      "other": {
+        "kind": "expr",
+        "expr": "st == 0 ? 100 : 10",
+        "format": "int"
+      },
+      "place": {
+        "kind": "expr",
+        "expr": "st == 0 ? 'tens' : 'hundreds'",
+        "format": "text"
+      },
+      "otherPlace": {
+        "kind": "expr",
+        "expr": "st == 0 ? 'hundreds' : 'tens'",
+        "format": "text"
+      },
+      "tensD": {
+        "kind": "expr",
+        "expr": "floor(s / 10) % 10",
+        "format": "int"
+      },
+      "hundD": {
+        "kind": "expr",
+        "expr": "floor(s / 100) % 10",
+        "format": "int"
+      },
+      "onesD": {
+        "kind": "expr",
+        "expr": "s % 10",
+        "format": "int"
+      },
+      "placeD": {
+        "kind": "expr",
+        "expr": "st == 0 ? tensD : hundD",
+        "format": "int"
+      },
+      "placeDp": {
+        "kind": "expr",
+        "expr": "placeD + 1",
+        "format": "int"
+      },
+      "key": {
+        "kind": "expr",
+        "expr": "s + step",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "onesD >= 1 && onesD <= 8",
+      "(st == 0 && tensD <= 8) || (st == 1 && s <= 1100 && hundD <= 8)",
+      "key <= 1200"
+    ],
+    "operation": {
+      "a": "s",
+      "b": "step",
+      "op": "+"
+    },
+    "answer": {
+      "expr": "key",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "s + other",
+        "mistake": "changedTheWrongPlace"
+      },
+      {
+        "expr": "s + 1",
+        "mistake": "changedTheOnes"
+      },
+      {
+        "expr": "s - step",
+        "mistake": "subtractedInsteadOfAdded"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks for {step} more than {s}. Adding {step} changes only the {place} digit.",
+      "steps": [
+        "In {s}, the {place} digit is {placeD}.",
+        "Make that digit one more. Keep every other digit the same."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "changedTheWrongPlace": "That changed the {otherPlace} digit. Adding {step} makes the {place} digit one more.",
+        "changedTheOnes": "That changed the ones digit. Adding {step} makes the {place} digit one more, not the ones digit.",
+        "subtractedInsteadOfAdded": "That went down. More means add, so the answer must be bigger than {s}."
+      },
+      "solution": {
+        "steps": [
+          "In {s}, the {place} digit is {placeD}.",
+          "One more than {placeD} is {placeDp}. Every other digit stays the same.",
+          "{step} more than {s} is {key}."
+        ],
+        "answer": "key"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "TEKS 2.7B"
+      ],
+      "blueprintRow": "calc-g2-tx-ten-hundred-1200"
+    }
+  },
+  {
+    "blueprintId": "calc-g2-tx-ten-hundred-1200",
+    "modeId": "multiDigit",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "id": "calc-g2-tx-ten-hundred-1200-across",
+    "subskill": "tenOrHundredTo1200",
+    "family": "procedural",
+    "structureType": "tenOrHundredMoreLess",
+    "standards": {
+      "ccss": [],
+      "tx": [
+        "2.7B"
+      ],
+      "fl": [],
+      "va": [],
+      "ga": []
+    },
+    "format": "number",
+    "widget": null,
+    "representationType": "symbolic",
+    "display": {
+      "layout": "'horizontal'"
+    },
+    "difficulty": "moderate",
+    "template": {
+      "prompt": "{lead} {step} less than {s}?"
+    },
+    "slots": {
+      "stp": {
+        "kind": "int",
+        "min": 0,
+        "max": 2
+      },
+      "zb": {
+        "kind": "int",
+        "min": 0,
+        "max": 2
+      },
+      "zo": {
+        "kind": "int",
+        "min": 1,
+        "max": 9
+      },
+      "hb": {
+        "kind": "int",
+        "min": 10,
+        "max": 99
+      },
+      "ph": {
+        "kind": "int",
+        "min": 0,
+        "max": 2
+      },
+      "lead": {
+        "kind": "expr",
+        "expr": "ph == 0 ? 'What number is' : ph == 1 ? 'Which number is' : 'What is'",
+        "format": "text"
+      },
+      "st": {
+        "kind": "expr",
+        "expr": "stp == 2 ? 1 : 0",
+        "format": "int"
+      },
+      "s": {
+        "kind": "expr",
+        "expr": "st == 0 ? (zb == 0 ? 900 : zb == 1 ? 1000 : 1100) + zo : 1000 + hb",
+        "format": "int"
+      },
+      "step": {
+        "kind": "expr",
+        "expr": "st == 0 ? 10 : 100",
+        "format": "int"
+      },
+      "other": {
+        "kind": "expr",
+        "expr": "st == 0 ? 100 : 10",
+        "format": "int"
+      },
+      "place": {
+        "kind": "expr",
+        "expr": "st == 0 ? 'tens' : 'hundreds'",
+        "format": "text"
+      },
+      "stepWord": {
+        "kind": "expr",
+        "expr": "st == 0 ? 'one ten' : 'one hundred'",
+        "format": "text"
+      },
+      "otherWord": {
+        "kind": "expr",
+        "expr": "st == 0 ? 'one hundred' : 'one ten'",
+        "format": "text"
+      },
+      "bigSing": {
+        "kind": "expr",
+        "expr": "st == 0 ? 'hundred' : 'thousand'",
+        "format": "text"
+      },
+      "roundBase": {
+        "kind": "expr",
+        "expr": "st == 0 ? s - zo : 1000",
+        "format": "int"
+      },
+      "rem": {
+        "kind": "expr",
+        "expr": "s - roundBase",
+        "format": "int"
+      },
+      "baseMinus": {
+        "kind": "expr",
+        "expr": "roundBase - step",
+        "format": "int"
+      },
+      "key": {
+        "kind": "expr",
+        "expr": "s - step",
+        "format": "int"
+      }
+    },
+    "operation": {
+      "a": "s",
+      "b": "step",
+      "op": "-"
+    },
+    "answer": {
+      "expr": "key",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "s - other",
+        "mistake": "changedTheWrongPlace"
+      },
+      {
+        "expr": "s + step",
+        "mistake": "addedInsteadOfSubtracted"
+      },
+      {
+        "expr": "st == 0 ? s + 90 : s + 900",
+        "mistake": "acrossZeroSlip"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks for {step} less than {s}. The {place} digit of {s} is 0, so you cannot just make it one less.",
+      "steps": [
+        "Split {s} into {roundBase} and {rem}.",
+        "Take {step} from {roundBase}. That leaves {baseMinus}.",
+        "Then add the {rem} back on."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "changedTheWrongPlace": "That took away {otherWord}, but the question takes away {stepWord}.",
+        "addedInsteadOfSubtracted": "That went up. Less means take away, so the answer must be smaller than {s}.",
+        "acrossZeroSlip": "You made 9 {place}, but that trade uses up one {bigSing}. Take that {bigSing} away too."
+      },
+      "solution": {
+        "steps": [
+          "Split {s} into {roundBase} and {rem}.",
+          "{roundBase} take away {step} leaves {baseMinus}.",
+          "{baseMinus} and {rem} more make {key}."
+        ],
+        "answer": "key"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "TEKS 2.7B"
+      ],
+      "blueprintRow": "calc-g2-tx-ten-hundred-1200"
+    }
+  },
+  {
+    "blueprintId": "calc-g2-tx-ten-hundred-1200",
+    "modeId": "multiDigit",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "id": "calc-g2-tx-ten-hundred-1200-across-more",
+    "subskill": "tenOrHundredTo1200",
+    "family": "procedural",
+    "structureType": "tenOrHundredMoreLess",
+    "standards": {
+      "ccss": [],
+      "tx": [
+        "2.7B"
+      ],
+      "fl": [],
+      "va": [],
+      "ga": []
+    },
+    "format": "number",
+    "widget": null,
+    "representationType": "symbolic",
+    "display": {
+      "layout": "'horizontal'"
+    },
+    "difficulty": "moderate",
+    "template": {
+      "prompt": "{lead} 10 more than {s}?"
+    },
+    "slots": {
+      "m": {
+        "kind": "int",
+        "min": 0,
+        "max": 20
+      },
+      "ph": {
+        "kind": "int",
+        "min": 0,
+        "max": 2
+      },
+      "lead": {
+        "kind": "expr",
+        "expr": "ph == 0 ? 'What number is' : ph == 1 ? 'Which number is' : 'What is'",
+        "format": "text"
+      },
+      "s": {
+        "kind": "expr",
+        "expr": "m <= 9 ? 990 + m : m <= 19 ? 1080 + m : 1190",
+        "format": "int"
+      },
+      "onesD": {
+        "kind": "expr",
+        "expr": "s % 10",
+        "format": "int"
+      },
+      "key": {
+        "kind": "expr",
+        "expr": "s + 10",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "s != 995"
+    ],
+    "operation": {
+      "a": "s",
+      "b": "10",
+      "op": "+"
+    },
+    "answer": {
+      "expr": "key",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "s + 100",
+        "mistake": "changedTheWrongPlace"
+      },
+      {
+        "expr": "s - 10",
+        "mistake": "subtractedInsteadOfAdded"
+      },
+      {
+        "expr": "s - 90",
+        "mistake": "acrossZeroSlip"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks for 10 more than {s}. The tens digit is 9, so one more ten makes ten tens.",
+      "steps": [
+        "In {s}, the tens digit is 9. Adding one ten makes ten tens.",
+        "Ten tens make one more hundred. The tens digit becomes 0, and the hundreds go up by one.",
+        "Keep the ones digit, {onesD}, the same."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "changedTheWrongPlace": "That added one hundred. The question adds only one ten.",
+        "subtractedInsteadOfAdded": "That went down. More means add, so the answer must be bigger than {s}.",
+        "acrossZeroSlip": "You made the tens digit 0, but ten tens make a new hundred. The hundreds must go up by one too."
+      },
+      "solution": {
+        "steps": [
+          "In {s}, the tens digit is 9. Adding one ten makes ten tens.",
+          "Ten tens make one more hundred, so the tens digit becomes 0.",
+          "10 more than {s} is {key}."
+        ],
+        "answer": "key"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "TEKS 2.7B"
+      ],
+      "blueprintRow": "calc-g2-tx-ten-hundred-1200"
+    }
+  }
+]

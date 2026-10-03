@@ -1,0 +1,3411 @@
+[
+  {
+    "id": "wp-g2-two-step-take-take",
+    "blueprintId": "wp-g2-two-step-take-take",
+    "modeId": "wordProblems",
+    "subskill": "twoStepStories",
+    "family": "application",
+    "structureType": "twoStepTakeTake",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "hard",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} has {start} {object_plural}. {name} gives {t1} {object_plural} to {name2} and {t2} {object_plural} to {name3}. How many {object_plural} does {name} have left?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "name2": {
+        "kind": "name"
+      },
+      "name3": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "subtraction",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art"
+        ],
+        "exclude": [
+          "magnetic-tile",
+          "board-game",
+          "card-game",
+          "playing-card",
+          "domino",
+          "checker",
+          "chess-piece",
+          "puzzle-piece",
+          "action-figure",
+          "stuffed-animal",
+          "doll",
+          "toy-dinosaur",
+          "train-track-piece",
+          "video-game",
+          "bubble",
+          "stick-of-sidewalk-chalk",
+          "pop-fidget-toy",
+          "squishy-toy",
+          "water-balloon",
+          "rubber-duck",
+          "arcade-ticket",
+          "arcade-token",
+          "arcade-prize",
+          "claw-machine",
+          "capsule-toy",
+          "bouncy-ball",
+          "balloon",
+          "glow-stick",
+          "jump-rope",
+          "paper-airplane",
+          "foam-rocket",
+          "bean-bag",
+          "pogo-stick",
+          "tub-of-slime",
+          "piece-of-play-food",
+          "marker",
+          "gel-pen",
+          "glue-stick",
+          "animal-eraser",
+          "pencil",
+          "notebook",
+          "pencil-case",
+          "backpack",
+          "colored-pencil",
+          "sticky-note",
+          "library-book",
+          "graphic-novel",
+          "spelling-word",
+          "gold-star",
+          "class-point",
+          "reward-ticket",
+          "prize-box-toy",
+          "piece-of-yarn",
+          "friendship-bracelet",
+          "sketchbook",
+          "coloring-page",
+          "counting-bear",
+          "snap-cube",
+          "vote",
+          "sight-word",
+          "dry-erase-marker",
+          "flash-card"
+        ],
+        "constraints": [
+          "object.id == 'trading-card' || object.id == 'sticker' || object.id == 'marble' || object.id == 'bead' || object.id == 'crayon' || object.id == 'pom-pom' || object.id == 'button' || object.id == 'building-brick' || object.id == 'toy-car' || object.id == 'loom-band' || object.id == 'wooden-block'"
+        ]
+      },
+      "start": {
+        "kind": "int",
+        "min": 30,
+        "max": 60
+      },
+      "t1": {
+        "kind": "int",
+        "min": 5,
+        "max": 19
+      },
+      "t2": {
+        "kind": "int",
+        "min": 5,
+        "max": 19
+      },
+      "mix": {
+        "kind": "int",
+        "min": 0,
+        "max": 5
+      },
+      "after1": {
+        "kind": "expr",
+        "expr": "start - t1",
+        "format": "int"
+      },
+      "left": {
+        "kind": "expr",
+        "expr": "start - t1 - t2",
+        "format": "int"
+      },
+      "regroups": {
+        "kind": "expr",
+        "expr": "(ones(start) < ones(t1) ? 1 : 0) + (ones(start - t1) < ones(t2) ? 1 : 0)",
+        "format": "int"
+      },
+      "tip": {
+        "kind": "expr",
+        "expr": "regroups == 1 ? 'If a step does not have enough ones to take away, trade one ten for ten ones.' : 'Take away the tens first, then the ones.'",
+        "format": "text"
+      },
+      "lineMin": {
+        "kind": "expr",
+        "expr": "max(0, floorTen(start - t1 - t2) - 10)",
+        "format": "int"
+      },
+      "lineMax": {
+        "kind": "expr",
+        "expr": "nextTen(start)",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "regroups == (mix == 5 ? 1 : 0)",
+      "start - t1 - t2 >= 5",
+      "t1 != t2",
+      "start - t1 - t2 != t1 && start - t1 - t2 != t2",
+      "sum(drop(object.count_one_kid, 1)) >= start"
+    ],
+    "answer": {
+      "expr": "start - t1 - t2",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "start - t1",
+        "mistake": "stopsAtStepOne"
+      },
+      {
+        "expr": "start + t1 + t2",
+        "mistake": "addedEverything"
+      },
+      {
+        "expr": "start - t1 + t2",
+        "mistake": "wrongOperationStepTwo"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} has left. {name} gives {object_plural} away two times, so take away two times.",
+      "steps": [
+        "Start with the {start} {object_plural} {name} has.",
+        "Take away the {t1} {object_plural} that go to {name2}.",
+        "Then take away the {t2} {object_plural} that go to {name3}.",
+        "{tip}"
+      ],
+      "picture": {
+        "kind": "numberLine",
+        "min": "lineMin",
+        "max": "lineMax",
+        "mark": "start"
+      },
+      "example": "auto",
+      "feedback": {
+        "stopsAtStepOne": "That is how many {object_plural} {name} has after giving {t1} to {name2}. {name} also gives {t2} to {name3}, so take those away too.",
+        "addedEverything": "That adds all three numbers. Giving {object_plural} away leaves {name} with fewer, so take away {t1} and {t2}.",
+        "wrongOperationStepTwo": "That adds the {t2} {object_plural} that go to {name3}. {name} gives those away too, so take them away."
+      },
+      "solution": {
+        "steps": [
+          "{start} − {t1} = {after1}.",
+          "{after1} − {t2} = {left}.",
+          "{name} has {left} {object_plural} left."
+        ],
+        "answer": "start - t1 - t2"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3",
+        "CCSS Progressions K-5 Operations and Algebraic Thinking (Table 1 situations, two-step problems)"
+      ],
+      "numbers": "mix 0-4 asks for no trade, 5 for one trade: one-trade draws pass the number rules about five times as often, so this gives about half and half (the row's note)."
+    }
+  },
+  {
+    "id": "wp-g2-two-step-take-add",
+    "blueprintId": "wp-g2-two-step-take-add",
+    "modeId": "wordProblems",
+    "subskill": "twoStepStories",
+    "family": "application",
+    "structureType": "twoStepTakeAdd",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "hard",
+    "format": "number",
+    "widget": null,
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} has {start} {object_plural}. {name} gives {take} {object_plural} to {name2}. Then {name} gets {add} more {object_plural} from {name3}. How many {object_plural} does {name} have now?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "name2": {
+        "kind": "name"
+      },
+      "name3": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "subtraction",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art"
+        ],
+        "exclude": [
+          "magnetic-tile",
+          "board-game",
+          "card-game",
+          "playing-card",
+          "domino",
+          "checker",
+          "chess-piece",
+          "puzzle-piece",
+          "action-figure",
+          "stuffed-animal",
+          "doll",
+          "toy-dinosaur",
+          "train-track-piece",
+          "video-game",
+          "bubble",
+          "stick-of-sidewalk-chalk",
+          "pop-fidget-toy",
+          "squishy-toy",
+          "water-balloon",
+          "rubber-duck",
+          "arcade-ticket",
+          "arcade-token",
+          "arcade-prize",
+          "claw-machine",
+          "capsule-toy",
+          "bouncy-ball",
+          "balloon",
+          "glow-stick",
+          "jump-rope",
+          "paper-airplane",
+          "foam-rocket",
+          "bean-bag",
+          "pogo-stick",
+          "tub-of-slime",
+          "piece-of-play-food",
+          "marker",
+          "gel-pen",
+          "glue-stick",
+          "animal-eraser",
+          "pencil",
+          "notebook",
+          "pencil-case",
+          "backpack",
+          "colored-pencil",
+          "sticky-note",
+          "library-book",
+          "graphic-novel",
+          "spelling-word",
+          "gold-star",
+          "class-point",
+          "reward-ticket",
+          "prize-box-toy",
+          "piece-of-yarn",
+          "friendship-bracelet",
+          "sketchbook",
+          "coloring-page",
+          "counting-bear",
+          "snap-cube",
+          "vote",
+          "sight-word",
+          "dry-erase-marker",
+          "flash-card"
+        ],
+        "constraints": [
+          "object.id == 'trading-card' || object.id == 'sticker' || object.id == 'marble' || object.id == 'bead' || object.id == 'crayon' || object.id == 'pom-pom' || object.id == 'button' || object.id == 'building-brick' || object.id == 'toy-car' || object.id == 'loom-band' || object.id == 'wooden-block'"
+        ]
+      },
+      "start": {
+        "kind": "int",
+        "min": 30,
+        "max": 80
+      },
+      "take": {
+        "kind": "int",
+        "min": 5,
+        "max": 39
+      },
+      "add": {
+        "kind": "int",
+        "min": 5,
+        "max": 39
+      },
+      "mix": {
+        "kind": "int",
+        "min": 0,
+        "max": 9
+      },
+      "after1": {
+        "kind": "expr",
+        "expr": "start - take",
+        "format": "int"
+      },
+      "total": {
+        "kind": "expr",
+        "expr": "start - take + add",
+        "format": "int"
+      },
+      "carry": {
+        "kind": "expr",
+        "expr": "ones(start - take) + ones(add) >= 10 ? 1 : 0",
+        "format": "int"
+      },
+      "tip": {
+        "kind": "expr",
+        "expr": "carry == 1 ? 'When you add the ones, they make a new ten. Add that ten to the tens.' : 'Add the ones, then the tens. The ones do not make a new ten this time.'",
+        "format": "text"
+      },
+      "lineMin": {
+        "kind": "expr",
+        "expr": "floorTen(start - take)",
+        "format": "int"
+      },
+      "lineMax": {
+        "kind": "expr",
+        "expr": "nextTen(max(start, start - take + add))",
+        "format": "int"
+      },
+      "lineStep": {
+        "kind": "expr",
+        "expr": "nextTen(max(start, start - take + add)) - floorTen(start - take) > 50 ? 10 : 5",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "ones(start) >= ones(take)",
+      "carry == (mix >= 3 ? 1 : 0)",
+      "start - take + add <= 99",
+      "start - take - add >= 1",
+      "carry == 0 || add != 5",
+      "start - take + add != start && start - take + add != take && start - take + add != add",
+      "sum(drop(object.count_one_kid, 1)) >= max(start, start - take + add)"
+    ],
+    "answer": {
+      "expr": "start - take + add",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "start - take",
+        "mistake": "stopsAtStepOne"
+      },
+      {
+        "expr": "start - take - add",
+        "mistake": "wrongOperationStepTwo"
+      },
+      {
+        "expr": "start - take + add - 10",
+        "mistake": "forgotToCarry",
+        "when": "carry == 1",
+        "otherwise": {
+          "expr": "start + take + add",
+          "mistake": "addedEverything"
+        }
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} has now. First take away what {name} gives, then add what {name} gets.",
+      "steps": [
+        "Start with {start} {object_plural}. Take away the {take} that go to {name2}.",
+        "Then add the {add} {object_plural} from {name3}.",
+        "{tip}"
+      ],
+      "picture": {
+        "kind": "numberLine",
+        "min": "lineMin",
+        "max": "lineMax",
+        "mark": "start",
+        "step": "lineStep"
+      },
+      "example": "auto",
+      "feedback": {
+        "stopsAtStepOne": "That is how many {object_plural} {name} has after giving {take} to {name2}. Then {name3} gives {name} {add} more, so add those too.",
+        "wrongOperationStepTwo": "That takes away the {add} {object_plural} from {name3}. {name} gets them, so add them.",
+        "forgotToCarry": "The ones make a new ten when you add {add}. Remember to add that ten to the tens.",
+        "addedEverything": "That adds all three numbers. {name} gives {take} {object_plural} away, so take those away first. Then add the {add} more."
+      },
+      "solution": {
+        "steps": [
+          "{start} − {take} = {after1}.",
+          "{after1} + {add} = {total}.",
+          "{name} has {total} {object_plural} now."
+        ],
+        "answer": "start - take + add"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3",
+        "CCSS Progressions K-5 Operations and Algebraic Thinking (Table 1 situations, two-step problems)"
+      ],
+      "numbers": "Step one never trades. mix 0-2 asks for no new ten, 3-9 for a new ten in step two: draws with no new ten pass the number rules about twice as often, so this gives about half and half (the row's note). forgotToCarry exists only when step two carries; on the other fills addedEverything stands in, so every fill shows four choices."
+    }
+  },
+  {
+    "id": "wp-g2-two-step-more-then-total",
+    "blueprintId": "wp-g2-two-step-more-then-total",
+    "modeId": "wordProblems",
+    "subskill": "twoStepStories",
+    "family": "application",
+    "structureType": "twoStepCompareMoreTotal",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "hard",
+    "format": "number",
+    "widget": null,
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} {verbPast} {first} {object_plural} on {day1}. On {day2}, {name} {verbPast} {diff} more {object_plural} than on {day1}. How many {object_plural} did {name} {verbBase} in all on {day1} and {day2}?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "collecting-nature",
+          "screens-media",
+          "sports-outdoors"
+        ],
+        "exclude": [
+          "soccer-ball",
+          "basketball",
+          "baseball",
+          "football",
+          "goal",
+          "basket",
+          "touchdown",
+          "lap",
+          "skip",
+          "jump",
+          "cartwheel",
+          "catch",
+          "step",
+          "bike-ride",
+          "swim-lap",
+          "dive-ring",
+          "turn",
+          "monkey-bar",
+          "hopscotch-square",
+          "hike",
+          "water-bottle",
+          "fish",
+          "snowball",
+          "sled-run",
+          "medal",
+          "team-jersey",
+          "sand-bucket",
+          "seashell",
+          "smooth-rock",
+          "pinecone",
+          "pressed-leaf",
+          "feather",
+          "postage-stamp",
+          "coin",
+          "pressed-penny",
+          "charm",
+          "keychain",
+          "trading-pin",
+          "eraser",
+          "gemstone",
+          "geode",
+          "fossil",
+          "shark-tooth",
+          "sea-glass",
+          "sand-dollar",
+          "flower",
+          "seed",
+          "seed-packet",
+          "seedling",
+          "sunflower",
+          "pumpkin",
+          "pumpkin-seed",
+          "stick",
+          "snowflake",
+          "icicle",
+          "tadpole",
+          "postcard",
+          "watering-can",
+          "flower-pot",
+          "video-game-point",
+          "game-level",
+          "game-life",
+          "game-coin",
+          "game-gem",
+          "level-star",
+          "power-up",
+          "game-heart",
+          "avatar-outfit",
+          "app-badge",
+          "player",
+          "game-round",
+          "virtual-pet",
+          "game-controller",
+          "minute-of-screen-time",
+          "episode",
+          "season-of-a-show",
+          "cartoon",
+          "movie",
+          "song",
+          "playlist",
+          "video",
+          "video-view",
+          "like",
+          "photo",
+          "photo-album",
+          "video-call",
+          "comic-book",
+          "chapter",
+          "podcast-episode",
+          "e-book",
+          "battery-percent",
+          "app",
+          "robot-step",
+          "coding-block",
+          "quiz-question",
+          "streak-day",
+          "presentation-slide",
+          "emoji",
+          "free-throw",
+          "home-run",
+          "bowling-pin"
+        ],
+        "constraints": [
+          "object.id == 'page' || object.id == 'leaf' || object.id == 'acorn' || object.id == 'maple-seed' || object.id == 'dandelion' || object.id == 'jumping-jack'"
+        ]
+      },
+      "first": {
+        "kind": "int",
+        "min": 11,
+        "max": 39
+      },
+      "diff": {
+        "kind": "int",
+        "min": 5,
+        "max": 19
+      },
+      "mix": {
+        "kind": "int",
+        "min": 0,
+        "max": 7
+      },
+      "dp": {
+        "kind": "int",
+        "min": 0,
+        "max": 3
+      },
+      "second": {
+        "kind": "expr",
+        "expr": "first + diff",
+        "format": "int"
+      },
+      "total": {
+        "kind": "expr",
+        "expr": "first + first + diff",
+        "format": "int"
+      },
+      "day1": {
+        "kind": "expr",
+        "expr": "dp == 0 ? 'Monday' : dp == 1 ? 'Saturday' : dp == 2 ? 'Wednesday' : 'Friday'",
+        "format": "text"
+      },
+      "day2": {
+        "kind": "expr",
+        "expr": "dp == 0 ? 'Tuesday' : dp == 1 ? 'Sunday' : dp == 2 ? 'Thursday' : 'Saturday'",
+        "format": "text"
+      },
+      "verbPast": {
+        "kind": "expr",
+        "expr": "object.id == 'page' ? 'read' : object.id == 'jumping-jack' ? 'did' : object.id == 'dandelion' ? 'picked' : 'collected'",
+        "format": "text"
+      },
+      "verbBase": {
+        "kind": "expr",
+        "expr": "object.id == 'page' ? 'read' : object.id == 'jumping-jack' ? 'do' : object.id == 'dandelion' ? 'pick' : 'collect'",
+        "format": "text"
+      },
+      "regroups": {
+        "kind": "expr",
+        "expr": "(ones(first) + ones(diff) >= 10 ? 1 : 0) + (ones(first) + ones(first + diff) >= 10 ? 1 : 0)",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "regroups == (mix >= 5 ? 1 : 0)",
+      "first + first + diff <= 99",
+      "first != diff",
+      "first != 2 * diff",
+      "sum(drop(object.count_one_kid, 1)) >= first + first + diff"
+    ],
+    "answer": {
+      "expr": "first + first + diff",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "first + diff",
+        "mistake": "stopsAtStepOne"
+      },
+      {
+        "expr": "first + first - diff",
+        "mistake": "subtractedInsteadOfAdded"
+      },
+      {
+        "expr": "first + first",
+        "mistake": "doubledTheFirstAmount"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} {verbPast} in all on {day1} and {day2}. First find the {day2} amount.",
+      "steps": [
+        "On {day1}, {name} {verbPast} {first} {object_plural}.",
+        "On {day2}, {name} {verbPast} {diff} more than that. Add {first} + {diff} to find the {day2} amount.",
+        "Then add the {day1} amount and the {day2} amount."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "stopsAtStepOne": "That is only the {day2} amount. The question asks about {day1} and {day2} in all, so add the {first} from {day1} too.",
+        "subtractedInsteadOfAdded": "{diff} more than {first} means add {diff} to {first} to find the {day2} amount. Then add the two days.",
+        "doubledTheFirstAmount": "On {day2}, {name} {verbPast} {diff} more than on {day1}, not the same amount. Find the {day2} amount first."
+      },
+      "solution": {
+        "steps": [
+          "On {day2}: {first} + {diff} = {second}.",
+          "In all: {first} + {second} = {total}.",
+          "{name} {verbPast} {total} {object_plural} in all on {day1} and {day2}."
+        ],
+        "answer": "first + first + diff"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3",
+        "CCSS Progressions K-5 Operations and Algebraic Thinking (Table 1 situations, two-step problems)"
+      ],
+      "numbers": "mix 0-4 asks for no regroup, 5-7 for one: one-regroup draws pass the number rules more often, so this gives about half and half (the row's note)."
+    }
+  },
+  {
+    "id": "wp-g2-two-step-total-then-compare",
+    "blueprintId": "wp-g2-two-step-total-then-compare",
+    "modeId": "wordProblems",
+    "subskill": "twoStepStories",
+    "family": "application",
+    "structureType": "twoStepJoinCompare",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "hard",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} {verbPast} {p1} {object_plural} {when1} and {p2} {object_plural} {when2}. {name2} {verbPast} {other} {object_plural}. How many more {object_plural} did {name} {verbBase} than {name2}?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "name2": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "money-shopping",
+          "collecting-nature",
+          "screens-media",
+          "sports-outdoors"
+        ],
+        "exclude": [
+          "building-brick",
+          "magnetic-tile",
+          "wooden-block",
+          "board-game",
+          "card-game",
+          "playing-card",
+          "domino",
+          "checker",
+          "chess-piece",
+          "puzzle-piece",
+          "pattern-block",
+          "action-figure",
+          "stuffed-animal",
+          "doll",
+          "toy-dinosaur",
+          "toy-car",
+          "train-track-piece",
+          "video-game",
+          "bubble",
+          "stick-of-sidewalk-chalk",
+          "pop-fidget-toy",
+          "squishy-toy",
+          "water-balloon",
+          "pool-noodle",
+          "rubber-duck",
+          "sand-pail",
+          "arcade-token",
+          "arcade-prize",
+          "claw-machine",
+          "capsule-toy",
+          "trading-card",
+          "marble",
+          "bouncy-ball",
+          "balloon",
+          "glow-stick",
+          "jump-rope",
+          "flying-disc",
+          "paper-airplane",
+          "foam-rocket",
+          "bean-bag",
+          "pogo-stick",
+          "tub-of-slime",
+          "piece-of-play-food",
+          "dollhouse",
+          "stacking-cup",
+          "soccer-ball",
+          "basketball",
+          "baseball",
+          "football",
+          "goal",
+          "basket",
+          "touchdown",
+          "lap",
+          "skip",
+          "jump",
+          "cartwheel",
+          "catch",
+          "step",
+          "bike-ride",
+          "swim-lap",
+          "dive-ring",
+          "turn",
+          "monkey-bar",
+          "hopscotch-square",
+          "hike",
+          "water-bottle",
+          "fish",
+          "snowball",
+          "sled-run",
+          "medal",
+          "team-jersey",
+          "sand-bucket",
+          "seashell",
+          "smooth-rock",
+          "pinecone",
+          "pressed-leaf",
+          "feather",
+          "postage-stamp",
+          "coin",
+          "pressed-penny",
+          "charm",
+          "keychain",
+          "trading-pin",
+          "eraser",
+          "gemstone",
+          "geode",
+          "fossil",
+          "shark-tooth",
+          "sea-glass",
+          "sand-dollar",
+          "flower",
+          "seed",
+          "seed-packet",
+          "seedling",
+          "sunflower",
+          "pumpkin",
+          "pumpkin-seed",
+          "maple-seed",
+          "stick",
+          "snowflake",
+          "icicle",
+          "tadpole",
+          "postcard",
+          "watering-can",
+          "flower-pot",
+          "video-game-point",
+          "game-level",
+          "game-life",
+          "game-coin",
+          "game-gem",
+          "level-star",
+          "power-up",
+          "game-heart",
+          "avatar-outfit",
+          "app-badge",
+          "player",
+          "game-round",
+          "virtual-pet",
+          "game-controller",
+          "minute-of-screen-time",
+          "episode",
+          "season-of-a-show",
+          "cartoon",
+          "movie",
+          "song",
+          "playlist",
+          "video",
+          "video-view",
+          "like",
+          "photo",
+          "photo-album",
+          "video-call",
+          "comic-book",
+          "chapter",
+          "podcast-episode",
+          "e-book",
+          "battery-percent",
+          "app",
+          "robot-step",
+          "coding-block",
+          "quiz-question",
+          "streak-day",
+          "presentation-slide",
+          "emoji",
+          "weekly-allowance",
+          "chore",
+          "muffin",
+          "paperback-book",
+          "poster",
+          "candy-bar",
+          "arcade-game",
+          "movie-ticket",
+          "ice-cream-cone",
+          "birthday-card",
+          "birthday-money-gift",
+          "gift-card",
+          "lost-tooth",
+          "savings-jar",
+          "penny",
+          "nickel",
+          "dime",
+          "quarter",
+          "dollar-bill",
+          "used-book",
+          "used-bike",
+          "school-lunch",
+          "gumball",
+          "temporary-tattoo",
+          "field-trip-ticket",
+          "carnival-ticket",
+          "treasure-map",
+          "vending-machine-snack",
+          "book-fair-book",
+          "free-throw",
+          "home-run",
+          "bowling-pin"
+        ],
+        "constraints": [
+          "object.id == 'arcade-ticket' || object.id == 'prize-ticket' || object.id == 'page' || object.id == 'leaf' || object.id == 'acorn' || object.id == 'dandelion' || object.id == 'jumping-jack'"
+        ]
+      },
+      "p1": {
+        "kind": "int",
+        "min": 11,
+        "max": 39
+      },
+      "p2": {
+        "kind": "int",
+        "min": 11,
+        "max": 39
+      },
+      "d": {
+        "kind": "int",
+        "min": 5,
+        "max": 29
+      },
+      "rg": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "k": {
+        "kind": "expr",
+        "expr": "(object.id == 'arcade-ticket' || object.id == 'prize-ticket' ? 0 : object.id == 'page' ? 1 : object.id == 'jumping-jack' ? 2 : object.id == 'dandelion' ? 3 : 4)",
+        "format": "int"
+      },
+      "total": {
+        "kind": "expr",
+        "expr": "p1 + p2",
+        "format": "int"
+      },
+      "other": {
+        "kind": "expr",
+        "expr": "p1 + p2 - d",
+        "format": "int"
+      },
+      "verbPast": {
+        "kind": "expr",
+        "expr": "k == 0 ? 'won' : k == 1 ? 'read' : k == 2 ? 'did' : k == 3 ? 'picked' : 'collected'",
+        "format": "text"
+      },
+      "verbBase": {
+        "kind": "expr",
+        "expr": "k == 0 ? 'win' : k == 1 ? 'read' : k == 2 ? 'do' : k == 3 ? 'pick' : 'collect'",
+        "format": "text"
+      },
+      "when1": {
+        "kind": "expr",
+        "expr": "k == 0 ? 'at one game' : k == 2 ? 'before lunch' : 'in the morning'",
+        "format": "text"
+      },
+      "when2": {
+        "kind": "expr",
+        "expr": "k == 0 ? 'at another game' : k == 1 ? 'at night' : k == 2 ? 'after lunch' : 'in the afternoon'",
+        "format": "text"
+      },
+      "regroups": {
+        "kind": "expr",
+        "expr": "(ones(p1) + ones(p2) >= 10 ? 1 : 0) + (ones(p1 + p2) < ones(p1 + p2 - d) ? 1 : 0)",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "p1 + p2 - d >= 11 && p1 + p2 - d <= 59",
+      "regroups == rg",
+      "d != p1 && d != p2 && d != p1 + p2 - d",
+      "p1 + p2 - d != p1",
+      "abs(p1 + p2 - d - p1) != d",
+      "sum(drop(object.count_one_kid, 1)) >= p1 + p2"
+    ],
+    "answer": {
+      "expr": "d",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "p1 + p2",
+        "mistake": "stopsAtStepOne"
+      },
+      {
+        "expr": "p1 + p2 + p1 + p2 - d",
+        "mistake": "addedEverything"
+      },
+      {
+        "expr": "abs(p1 + p2 - d - p1)",
+        "mistake": "usedOnlyOnePart"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many more {object_plural} {name} {verbPast} than {name2}. First find how many {object_plural} {name} {verbPast} in all.",
+      "steps": [
+        "Add {name}'s two amounts: {p1} + {p2}.",
+        "Then compare that total with {name2}'s {other}.",
+        "Take {other} away from {name}'s total."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "stopsAtStepOne": "That is how many {object_plural} {name} {verbPast} in all. Now compare that total with {name2}'s {other}.",
+        "addedEverything": "That adds {name2}'s {object_plural} too. How many more means compare, so take {name2}'s {other} away from {name}'s total.",
+        "usedOnlyOnePart": "That compares only {name}'s first {p1} with {name2}'s {other}. Add {name}'s two amounts first."
+      },
+      "solution": {
+        "steps": [
+          "{p1} + {p2} = {total}.",
+          "{total} − {other} = {d}.",
+          "{name} {verbPast} {d} more {object_plural} than {name2}."
+        ],
+        "answer": "d"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3",
+        "CCSS Progressions K-5 Operations and Algebraic Thinking (Table 1 situations, two-step problems)"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-two-step-picture",
+    "blueprintId": "wp-g2-two-step-picture",
+    "modeId": "wordProblems",
+    "subskill": "twoStepStories",
+    "family": "application",
+    "structureType": "twoStepTakeAdd",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [
+        "2.OA.A.1"
+      ],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [
+        "MA.2.AR.1.1"
+      ],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "hard",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "placeValueBlocks",
+    "template": {
+      "prompt": "The mat shows {name}'s {object_plural} in tens and ones. {name} gives {take} {object_plural} to {name2}. Then {name} gets {add} more {object_plural} from {name3}. How many {object_plural} does {name} have now?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "name2": {
+        "kind": "name"
+      },
+      "name3": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "subtraction",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art"
+        ],
+        "exclude": [
+          "magnetic-tile",
+          "board-game",
+          "card-game",
+          "playing-card",
+          "domino",
+          "checker",
+          "chess-piece",
+          "puzzle-piece",
+          "action-figure",
+          "stuffed-animal",
+          "doll",
+          "toy-dinosaur",
+          "train-track-piece",
+          "video-game",
+          "bubble",
+          "stick-of-sidewalk-chalk",
+          "pop-fidget-toy",
+          "squishy-toy",
+          "water-balloon",
+          "rubber-duck",
+          "arcade-ticket",
+          "arcade-token",
+          "arcade-prize",
+          "claw-machine",
+          "capsule-toy",
+          "bouncy-ball",
+          "balloon",
+          "glow-stick",
+          "jump-rope",
+          "paper-airplane",
+          "foam-rocket",
+          "bean-bag",
+          "pogo-stick",
+          "tub-of-slime",
+          "piece-of-play-food",
+          "marker",
+          "gel-pen",
+          "glue-stick",
+          "animal-eraser",
+          "pencil",
+          "notebook",
+          "pencil-case",
+          "backpack",
+          "colored-pencil",
+          "sticky-note",
+          "library-book",
+          "graphic-novel",
+          "spelling-word",
+          "gold-star",
+          "class-point",
+          "reward-ticket",
+          "prize-box-toy",
+          "piece-of-yarn",
+          "friendship-bracelet",
+          "sketchbook",
+          "coloring-page",
+          "counting-bear",
+          "snap-cube",
+          "vote",
+          "sight-word",
+          "dry-erase-marker",
+          "flash-card"
+        ],
+        "constraints": [
+          "object.id == 'trading-card' || object.id == 'sticker' || object.id == 'marble' || object.id == 'bead' || object.id == 'crayon' || object.id == 'pom-pom' || object.id == 'button' || object.id == 'building-brick' || object.id == 'toy-car' || object.id == 'loom-band' || object.id == 'wooden-block'"
+        ]
+      },
+      "tensP": {
+        "kind": "int",
+        "min": 3,
+        "max": 6
+      },
+      "onesP": {
+        "kind": "int",
+        "min": 1,
+        "max": 9
+      },
+      "take": {
+        "kind": "int",
+        "min": 11,
+        "max": 29
+      },
+      "add": {
+        "kind": "int",
+        "min": 3,
+        "max": 9
+      },
+      "rg": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "pictured": {
+        "kind": "expr",
+        "expr": "10 * tensP + onesP",
+        "format": "int"
+      },
+      "after1": {
+        "kind": "expr",
+        "expr": "10 * tensP + onesP - take",
+        "format": "int"
+      },
+      "total": {
+        "kind": "expr",
+        "expr": "10 * tensP + onesP - take + add",
+        "format": "int"
+      },
+      "regroups": {
+        "kind": "expr",
+        "expr": "(onesP < ones(take) ? 1 : 0) + (ones(10 * tensP + onesP - take) + add >= 10 ? 1 : 0)",
+        "format": "int"
+      },
+      "tensWord": {
+        "kind": "expr",
+        "expr": "tensP + ' tens'",
+        "format": "text"
+      },
+      "onesWord": {
+        "kind": "expr",
+        "expr": "onesP == 1 ? '1 one' : onesP + ' ones'",
+        "format": "text"
+      },
+      "tip": {
+        "kind": "expr",
+        "expr": "onesP < ones(take) ? 'There are not enough ones to take away, so trade one ten for ten ones.' : ones(10 * tensP + onesP - take) + add >= 10 ? 'When you add the ones, they make a new ten.' : 'Take away the tens, then the ones. Then add the ones.'",
+        "format": "text"
+      },
+      "lineMin": {
+        "kind": "expr",
+        "expr": "floorTen(10 * tensP + onesP - take)",
+        "format": "int"
+      },
+      "lineMax": {
+        "kind": "expr",
+        "expr": "nextTen(10 * tensP + onesP)",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "regroups == rg",
+      "10 * tensP + onesP - take - add >= 1",
+      "10 * tensP + onesP + take + add <= 99",
+      "10 * tensP + onesP - take + add != take && 10 * tensP + onesP - take + add != add",
+      "10 * tensP + onesP - take + add != tensP && 10 * tensP + onesP - take + add != onesP",
+      "sum(drop(object.count_one_kid, 1)) >= 10 * tensP + onesP"
+    ],
+    "display": {
+      "figure": "'discMat'",
+      "discMat": {
+        "cols": [
+          {
+            "place": "10",
+            "count": "tensP"
+          },
+          {
+            "place": "1",
+            "count": "onesP"
+          }
+        ]
+      }
+    },
+    "answer": {
+      "expr": "10 * tensP + onesP - take + add",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "10 * tensP + onesP - take",
+        "mistake": "stopsAtStepOne"
+      },
+      {
+        "expr": "10 * tensP + onesP - take - add",
+        "mistake": "wrongOperationStepTwo"
+      },
+      {
+        "expr": "10 * tensP + onesP + take + add",
+        "mistake": "addedEverything"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} has now. Count the tens and ones on the mat to find how many {name} has at the start.",
+      "steps": [
+        "The mat shows {tensWord} and {onesWord}.",
+        "Take away the {take} {object_plural} that go to {name2}.",
+        "Then add the {add} {object_plural} from {name3}.",
+        "{tip}"
+      ],
+      "picture": {
+        "kind": "numberLine",
+        "min": "lineMin",
+        "max": "lineMax",
+        "mark": "pictured"
+      },
+      "example": "auto",
+      "feedback": {
+        "stopsAtStepOne": "That is how many {object_plural} are left after {name} gives {take} to {name2}. Then {name} gets {add} more from {name3}, so add them.",
+        "wrongOperationStepTwo": "That takes away the {add} {object_plural} from {name3}. {name} gets them, so add them.",
+        "addedEverything": "That adds all three numbers. {name} gives {take} {object_plural} away, so take those away."
+      },
+      "solution": {
+        "steps": [
+          "The mat shows {tensWord} and {onesWord}, which is {pictured}.",
+          "{pictured} − {take} = {after1}.",
+          "{after1} + {add} = {total}."
+        ],
+        "answer": "10 * tensP + onesP - take + add"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "CCSS 2.OA.A.1",
+        "TEKS 2.4C, 2.7C",
+        "FL B.E.S.T. MA.2.AR.1.1",
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3",
+        "CCSS Progressions K-5 Operations and Algebraic Thinking (Table 1 situations, two-step problems)"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-tx-1000-put-together-total-noregroup",
+    "blueprintId": "wp-g2-tx-1000-put-together-total",
+    "modeId": "wordProblems",
+    "subskill": "biggerNumberStories",
+    "family": "application",
+    "structureType": "putTogetherTotalUnknown",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [],
+      "va": [],
+      "ga": []
+    },
+    "difficulty": "easy",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} has {p1} {object_plural}. {name2} has {p2} {object_plural}. How many {object_plural} do {name} and {name2} have in all?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "name2": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "subtraction",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "money-shopping"
+        ],
+        "exclude": [
+          "magnetic-tile",
+          "wooden-block",
+          "board-game",
+          "card-game",
+          "playing-card",
+          "domino",
+          "checker",
+          "chess-piece",
+          "action-figure",
+          "stuffed-animal",
+          "doll",
+          "toy-dinosaur",
+          "toy-car",
+          "train-track-piece",
+          "video-game",
+          "bubble",
+          "stick-of-sidewalk-chalk",
+          "pop-fidget-toy",
+          "squishy-toy",
+          "water-balloon",
+          "rubber-duck",
+          "arcade-token",
+          "arcade-prize",
+          "claw-machine",
+          "capsule-toy",
+          "marble",
+          "bouncy-ball",
+          "balloon",
+          "glow-stick",
+          "jump-rope",
+          "paper-airplane",
+          "foam-rocket",
+          "bean-bag",
+          "pogo-stick",
+          "tub-of-slime",
+          "piece-of-play-food",
+          "weekly-allowance",
+          "chore",
+          "paperback-book",
+          "poster",
+          "candy-bar",
+          "arcade-game",
+          "movie-ticket",
+          "ice-cream-cone",
+          "birthday-card",
+          "birthday-money-gift",
+          "gift-card",
+          "savings-jar",
+          "quarter",
+          "dollar-bill",
+          "used-book",
+          "used-bike",
+          "school-lunch",
+          "temporary-tattoo",
+          "carnival-ticket",
+          "vending-machine-snack",
+          "book-fair-book"
+        ],
+        "constraints": [
+          "object.id == 'trading-card' || object.id == 'building-brick' || object.id == 'arcade-ticket' || object.id == 'prize-ticket' || object.id == 'puzzle-piece'"
+        ]
+      },
+      "p1": {
+        "kind": "int",
+        "min": 100,
+        "max": 399
+      },
+      "p2": {
+        "kind": "int",
+        "min": 100,
+        "max": 399
+      },
+      "total": {
+        "kind": "expr",
+        "expr": "p1 + p2",
+        "format": "int"
+      },
+      "hS": {
+        "kind": "expr",
+        "expr": "floor((p1) / 100) + floor((p2) / 100)",
+        "format": "int"
+      },
+      "tS": {
+        "kind": "expr",
+        "expr": "floor((p1) / 10) % 10 + floor((p2) / 10) % 10",
+        "format": "int"
+      },
+      "oS": {
+        "kind": "expr",
+        "expr": "ones(p1) + ones(p2)",
+        "format": "int"
+      },
+      "tWord": {
+        "kind": "expr",
+        "expr": "tS == 1 ? '1 ten' : tS + ' tens'",
+        "format": "text"
+      },
+      "oWord": {
+        "kind": "expr",
+        "expr": "oS == 1 ? '1 one' : oS + ' ones'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "ones(p1) + ones(p2) <= 9",
+      "floor((p1) / 10) % 10 + floor((p2) / 10) % 10 <= 9",
+      "p1 != p2",
+      "p1 % 10 != 0 || p2 % 10 != 0",
+      "sum(drop(object.count_one_kid, 1)) >= max(p1, p2)"
+    ],
+    "operation": {
+      "a": "p1",
+      "b": "p2",
+      "op": "+"
+    },
+    "answer": {
+      "expr": "p1 + p2",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "abs(p1 - p2)",
+        "mistake": "subtractedInsteadOfAdded"
+      },
+      {
+        "expr": "max(p1, p2)",
+        "mistake": "answeredWithAGiven"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} and {name2} have in all. Put the two amounts together.",
+      "steps": [
+        "Add {p1} + {p2}.",
+        "Add the hundreds, then the tens, then the ones.",
+        "No place makes ten or more, so there is nothing to trade."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "subtractedInsteadOfAdded": "That takes one amount away from the other. In all means put them together, so add {p1} and {p2}.",
+        "answeredWithAGiven": "That is only one kid's {object_plural}. Add {name}'s {p1} and {name2}'s {p2}."
+      },
+      "solution": {
+        "steps": [
+          "{hS} hundreds, {tWord} and {oWord} make {total}.",
+          "{p1} + {p2} = {total}.",
+          "{name} and {name2} have {total} {object_plural} in all."
+        ],
+        "answer": "p1 + p2"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "TEKS 2.4C, 2.7C",
+        "CCSS Progressions K-5 Operations and Algebraic Thinking (Table 1 situations, two-step problems)"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-tx-1000-put-together-total-regroup",
+    "blueprintId": "wp-g2-tx-1000-put-together-total",
+    "modeId": "wordProblems",
+    "subskill": "biggerNumberStories",
+    "family": "application",
+    "structureType": "putTogetherTotalUnknown",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [],
+      "va": [],
+      "ga": []
+    },
+    "difficulty": "moderate",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} has {p1} {color1} {object_plural} and {p2} {color2} {object_plural}. How many {object_plural} does {name} have in all?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art"
+        ],
+        "exclude": [
+          "magnetic-tile",
+          "wooden-block",
+          "board-game",
+          "card-game",
+          "playing-card",
+          "domino",
+          "checker",
+          "chess-piece",
+          "puzzle-piece",
+          "pattern-block",
+          "action-figure",
+          "stuffed-animal",
+          "doll",
+          "toy-dinosaur",
+          "toy-car",
+          "train-track-piece",
+          "video-game",
+          "bubble",
+          "stick-of-sidewalk-chalk",
+          "pop-fidget-toy",
+          "squishy-toy",
+          "water-balloon",
+          "pool-noodle",
+          "rubber-duck",
+          "sand-pail",
+          "arcade-ticket",
+          "arcade-token",
+          "arcade-prize",
+          "claw-machine",
+          "capsule-toy",
+          "trading-card",
+          "marble",
+          "bouncy-ball",
+          "balloon",
+          "glow-stick",
+          "jump-rope",
+          "flying-disc",
+          "paper-airplane",
+          "foam-rocket",
+          "bean-bag",
+          "pogo-stick",
+          "tub-of-slime",
+          "piece-of-play-food",
+          "dollhouse",
+          "stacking-cup",
+          "crayon",
+          "marker",
+          "gel-pen",
+          "tube-of-glitter-glue",
+          "glue-stick",
+          "animal-eraser",
+          "pencil",
+          "sticker",
+          "notebook",
+          "pencil-case",
+          "backpack",
+          "colored-pencil",
+          "paper-clip",
+          "sticky-note",
+          "library-book",
+          "graphic-novel",
+          "spelling-word",
+          "gold-star",
+          "class-point",
+          "reward-ticket",
+          "prize-box-toy",
+          "bead",
+          "pipe-cleaner",
+          "pom-pom",
+          "googly-eye",
+          "tub-of-clay",
+          "bottle-of-paint",
+          "paintbrush",
+          "sheet-of-construction-paper",
+          "piece-of-yarn",
+          "button",
+          "rubber-stamp",
+          "friendship-bracelet",
+          "roll-of-tape",
+          "sketchbook",
+          "coloring-page",
+          "loom-band",
+          "counting-bear",
+          "snap-cube",
+          "treasure-map",
+          "vote",
+          "tally-mark",
+          "sight-word",
+          "dry-erase-marker",
+          "flash-card"
+        ],
+        "constraints": [
+          "object.id == 'building-brick' || object.id == 'fuse-bead'"
+        ]
+      },
+      "p1": {
+        "kind": "int",
+        "min": 100,
+        "max": 399
+      },
+      "p2": {
+        "kind": "int",
+        "min": 100,
+        "max": 399
+      },
+      "which": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "cp": {
+        "kind": "int",
+        "min": 0,
+        "max": 3
+      },
+      "color1": {
+        "kind": "expr",
+        "expr": "cp == 0 ? 'red' : cp == 1 ? 'yellow' : cp == 2 ? 'white' : 'purple'",
+        "format": "text"
+      },
+      "color2": {
+        "kind": "expr",
+        "expr": "cp == 0 ? 'blue' : cp == 1 ? 'green' : cp == 2 ? 'black' : 'pink'",
+        "format": "text"
+      },
+      "total": {
+        "kind": "expr",
+        "expr": "p1 + p2",
+        "format": "int"
+      },
+      "hS": {
+        "kind": "expr",
+        "expr": "floor((p1) / 100) + floor((p2) / 100)",
+        "format": "int"
+      },
+      "tS": {
+        "kind": "expr",
+        "expr": "floor((p1) / 10) % 10 + floor((p2) / 10) % 10",
+        "format": "int"
+      },
+      "oS": {
+        "kind": "expr",
+        "expr": "ones(p1) + ones(p2)",
+        "format": "int"
+      },
+      "tensSum": {
+        "kind": "expr",
+        "expr": "floor((p1) / 10) % 10 + floor((p2) / 10) % 10 + (ones(p1) + ones(p2) >= 10 ? 1 : 0)",
+        "format": "int"
+      },
+      "carryStep": {
+        "kind": "expr",
+        "expr": "which == 0 ? 'The ones make ten or more. Trade ten ones for one ten and add it to the tens.' : 'The ones make less than ten. The tens make ten or more, so trade ten tens for one hundred.'",
+        "format": "text"
+      },
+      "placeName": {
+        "kind": "expr",
+        "expr": "which == 0 ? 'ones' : 'tens'",
+        "format": "text"
+      },
+      "newUnit": {
+        "kind": "expr",
+        "expr": "which == 0 ? 'ten' : 'hundred'",
+        "format": "text"
+      },
+      "nextPlace": {
+        "kind": "expr",
+        "expr": "which == 0 ? 'tens' : 'hundreds'",
+        "format": "text"
+      },
+      "solveLine": {
+        "kind": "expr",
+        "expr": "which == 0 ? 'Ones: ' + oS + ' ones is 1 ten and ' + ((oS - 10) == 1 ? '1 one' : (oS - 10) + ' ones') + '.' : 'Tens: ' + tensSum + ' tens is 1 hundred and ' + ((tensSum - 10) == 1 ? '1 ten' : (tensSum - 10) + ' tens') + '.'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "which == 0 ? (ones(p1) + ones(p2) >= 10 && tensSum <= 9) : (!(ones(p1) + ones(p2) >= 10) && tensSum >= 10)",
+      "p1 != p2",
+      "sum(drop(object.count_one_kid, 1)) >= p1 + p2"
+    ],
+    "operation": {
+      "a": "p1",
+      "b": "p2",
+      "op": "+"
+    },
+    "answer": {
+      "expr": "p1 + p2",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "which == 0 ? p1 + p2 - 10 : p1 + p2 - 100",
+        "mistake": "forgotToCarry"
+      },
+      {
+        "expr": "which == 0 ? 1000 * hS + 100 * tS + oS : 1000 * hS + 10 * tS + oS",
+        "mistake": "placeValueSlip"
+      },
+      {
+        "expr": "abs(p1 - p2)",
+        "mistake": "subtractedInsteadOfAdded"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} has in all. Add the {color1} {object_plural} and the {color2} {object_plural}.",
+      "steps": [
+        "Add {p1} + {p2}. Start with the ones.",
+        "{carryStep}",
+        "Then add the hundreds."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "forgotToCarry": "The {placeName} made a new {newUnit}. Add that {newUnit} to the {nextPlace}.",
+        "placeValueSlip": "Each place holds just one digit. When a place makes ten or more, trade ten of them for one of the next place.",
+        "subtractedInsteadOfAdded": "That takes one amount away from the other. In all means put them together, so add {p1} and {p2}."
+      },
+      "solution": {
+        "steps": [
+          "{solveLine}",
+          "{p1} + {p2} = {total}.",
+          "{name} has {total} {object_plural} in all."
+        ],
+        "answer": "p1 + p2"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "TEKS 2.4C, 2.7C",
+        "CCSS Progressions K-5 Operations and Algebraic Thinking (Table 1 situations, two-step problems)"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-tx-1000-take-from-result-noregroup",
+    "blueprintId": "wp-g2-tx-1000-take-from-result",
+    "modeId": "wordProblems",
+    "subskill": "biggerNumberStories",
+    "family": "application",
+    "structureType": "takeFromResultUnknown",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [],
+      "va": [],
+      "ga": []
+    },
+    "difficulty": "easy",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} has {start} {object_plural}. {name} {action}. How many {object_plural} does {name} have left?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "name2": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "subtraction",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "money-shopping"
+        ],
+        "exclude": [
+          "magnetic-tile",
+          "wooden-block",
+          "board-game",
+          "card-game",
+          "playing-card",
+          "domino",
+          "checker",
+          "chess-piece",
+          "puzzle-piece",
+          "action-figure",
+          "stuffed-animal",
+          "doll",
+          "toy-dinosaur",
+          "toy-car",
+          "train-track-piece",
+          "video-game",
+          "bubble",
+          "stick-of-sidewalk-chalk",
+          "pop-fidget-toy",
+          "squishy-toy",
+          "water-balloon",
+          "rubber-duck",
+          "arcade-token",
+          "arcade-prize",
+          "claw-machine",
+          "capsule-toy",
+          "marble",
+          "bouncy-ball",
+          "balloon",
+          "glow-stick",
+          "jump-rope",
+          "paper-airplane",
+          "foam-rocket",
+          "bean-bag",
+          "pogo-stick",
+          "tub-of-slime",
+          "piece-of-play-food",
+          "weekly-allowance",
+          "chore",
+          "paperback-book",
+          "poster",
+          "candy-bar",
+          "arcade-game",
+          "movie-ticket",
+          "ice-cream-cone",
+          "birthday-card",
+          "birthday-money-gift",
+          "gift-card",
+          "savings-jar",
+          "quarter",
+          "dollar-bill",
+          "used-book",
+          "used-bike",
+          "school-lunch",
+          "temporary-tattoo",
+          "carnival-ticket",
+          "vending-machine-snack",
+          "book-fair-book"
+        ],
+        "constraints": [
+          "object.id == 'trading-card' || object.id == 'building-brick' || object.id == 'arcade-ticket' || object.id == 'prize-ticket'"
+        ]
+      },
+      "startLo": {
+        "kind": "int",
+        "min": 200,
+        "max": 499
+      },
+      "startHi": {
+        "kind": "int",
+        "min": 200,
+        "max": 999
+      },
+      "start": {
+        "kind": "expr",
+        "expr": "sum(drop(object.count_one_kid, 1)) >= 1000 ? startHi : startLo",
+        "format": "int"
+      },
+      "take": {
+        "kind": "int",
+        "min": 100,
+        "max": 499
+      },
+      "left": {
+        "kind": "expr",
+        "expr": "start - take",
+        "format": "int"
+      },
+      "action": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' ? 'spends ' + take + ' ' + object.plural + (object.id == 'prize-ticket' ? ' on a toy' : ' on a prize') : 'gives ' + take + ' ' + object.plural + ' to ' + name2",
+        "format": "text"
+      },
+      "gone": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' ? 'spends' : 'gives away'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "ones(start) >= ones(take)",
+      "floor((start) / 10) % 10 >= floor((take) / 10) % 10",
+      "start - take >= 100",
+      "start - take != take",
+      "start % 10 != 0 || take % 10 != 0",
+      "sum(drop(object.count_one_kid, 1)) >= start"
+    ],
+    "operation": {
+      "a": "start",
+      "b": "take",
+      "op": "-"
+    },
+    "answer": {
+      "expr": "start - take",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "start + take",
+        "mistake": "addedInsteadOfSubtracted"
+      },
+      {
+        "expr": "start",
+        "mistake": "answeredWithAGiven"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} has left. Take {take} away from {start}.",
+      "steps": [
+        "Line up {start} and {take} by place.",
+        "Take away the hundreds, then the tens, then the ones.",
+        "Each top digit is big enough, so there is nothing to trade."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "addedInsteadOfSubtracted": "That adds {take} more. {name} {gone} {take} {object_plural}, so take {take} away from {start}.",
+        "answeredWithAGiven": "That is how many {object_plural} {name} has at the start. Now take away the {take}."
+      },
+      "solution": {
+        "steps": [
+          "{start} − {take} = {left}.",
+          "{name} has {left} {object_plural} left."
+        ],
+        "answer": "start - take"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "TEKS 2.4C, 2.7C",
+        "CCSS Progressions K-5 Operations and Algebraic Thinking (Table 1 situations, two-step problems)"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-tx-1000-take-from-result-regroup",
+    "blueprintId": "wp-g2-tx-1000-take-from-result",
+    "modeId": "wordProblems",
+    "subskill": "biggerNumberStories",
+    "family": "application",
+    "structureType": "takeFromResultUnknown",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [],
+      "va": [],
+      "ga": []
+    },
+    "difficulty": "moderate",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} had {start} {object_plural}. Then {name} {action}. How many {object_plural} does {name} have now?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "name2": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "subtraction",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "money-shopping"
+        ],
+        "exclude": [
+          "magnetic-tile",
+          "wooden-block",
+          "board-game",
+          "card-game",
+          "playing-card",
+          "domino",
+          "checker",
+          "chess-piece",
+          "puzzle-piece",
+          "action-figure",
+          "stuffed-animal",
+          "doll",
+          "toy-dinosaur",
+          "toy-car",
+          "train-track-piece",
+          "video-game",
+          "bubble",
+          "stick-of-sidewalk-chalk",
+          "pop-fidget-toy",
+          "squishy-toy",
+          "water-balloon",
+          "rubber-duck",
+          "arcade-token",
+          "arcade-prize",
+          "claw-machine",
+          "capsule-toy",
+          "marble",
+          "bouncy-ball",
+          "balloon",
+          "glow-stick",
+          "jump-rope",
+          "paper-airplane",
+          "foam-rocket",
+          "bean-bag",
+          "pogo-stick",
+          "tub-of-slime",
+          "piece-of-play-food",
+          "weekly-allowance",
+          "chore",
+          "paperback-book",
+          "poster",
+          "candy-bar",
+          "arcade-game",
+          "movie-ticket",
+          "ice-cream-cone",
+          "birthday-card",
+          "birthday-money-gift",
+          "gift-card",
+          "savings-jar",
+          "quarter",
+          "dollar-bill",
+          "used-book",
+          "used-bike",
+          "school-lunch",
+          "temporary-tattoo",
+          "carnival-ticket",
+          "vending-machine-snack",
+          "book-fair-book"
+        ],
+        "constraints": [
+          "object.id == 'trading-card' || object.id == 'building-brick' || object.id == 'arcade-ticket' || object.id == 'prize-ticket'"
+        ]
+      },
+      "startLo": {
+        "kind": "int",
+        "min": 200,
+        "max": 499
+      },
+      "startHi": {
+        "kind": "int",
+        "min": 200,
+        "max": 999
+      },
+      "start": {
+        "kind": "expr",
+        "expr": "sum(drop(object.count_one_kid, 1)) >= 1000 ? startHi : startLo",
+        "format": "int"
+      },
+      "take": {
+        "kind": "int",
+        "min": 100,
+        "max": 499
+      },
+      "which": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "left": {
+        "kind": "expr",
+        "expr": "start - take",
+        "format": "int"
+      },
+      "action": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' ? 'spent ' + take + ' ' + object.plural + (object.id == 'prize-ticket' ? ' on a toy' : ' on a prize') : 'gave ' + take + ' ' + object.plural + ' to ' + name2",
+        "format": "text"
+      },
+      "gone": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' ? 'spent them' : 'gave them away'",
+        "format": "text"
+      },
+      "tradeStep": {
+        "kind": "expr",
+        "expr": "which == 0 ? 'There are not enough ones to take away. Trade one ten for ten ones.' : 'There are enough ones. There are not enough tens, so trade one hundred for ten tens.'",
+        "format": "text"
+      },
+      "tradeSolve": {
+        "kind": "expr",
+        "expr": "which == 0 ? 'Trade a ten: ' + start + ' is ' + ((floor((start) / 100)) == 1 ? '1 hundred' : (floor((start) / 100)) + ' hundreds') + ', ' + ((floor((start) / 10) % 10 - 1) == 1 ? '1 ten' : (floor((start) / 10) % 10 - 1) + ' tens') + ' and ' + (ones(start) + 10) + ' ones.' : 'Trade a hundred: ' + start + ' is ' + ((floor((start) / 100) - 1) == 1 ? '1 hundred' : (floor((start) / 100) - 1) + ' hundreds') + ', ' + (floor((start) / 10) % 10 + 10) + ' tens and ' + ((ones(start)) == 1 ? '1 one' : (ones(start)) + ' ones') + '.'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "which == 0 ? (ones(start) < ones(take) && floor((start) / 10) % 10 - 1 >= floor((take) / 10) % 10 && floor((start) / 100) >= floor((take) / 100)) : (ones(start) >= ones(take) && floor((start) / 10) % 10 < floor((take) / 10) % 10 && floor((start) / 100) - 1 >= floor((take) / 100))",
+      "which == 0 ? ones(take) - ones(start) != 5 : floor((take) / 10) % 10 - floor((start) / 10) % 10 != 5",
+      "start - take >= 100",
+      "start - take != take",
+      "sum(drop(object.count_one_kid, 1)) >= start"
+    ],
+    "operation": {
+      "a": "start",
+      "b": "take",
+      "op": "-"
+    },
+    "answer": {
+      "expr": "start - take",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "100 * abs(floor((start) / 100) - floor((take) / 100)) + 10 * abs(floor((start) / 10) % 10 - floor((take) / 10) % 10) + abs(ones(start) - ones(take))",
+        "mistake": "smallerFromLarger"
+      },
+      {
+        "expr": "start - take + 10",
+        "mistake": "offByTen",
+        "when": "which == 0",
+        "otherwise": {
+          "expr": "start - take + 100",
+          "mistake": "offByHundred"
+        }
+      },
+      {
+        "expr": "start + take",
+        "mistake": "addedInsteadOfSubtracted"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} has now. Take {take} away from {start}.",
+      "steps": [
+        "Line up {start} and {take} by place. Start with the ones.",
+        "{tradeStep}",
+        "Then take away the tens and the hundreds."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "smallerFromLarger": "That takes the smaller digit from the bigger one in each place. When the top digit is too small, trade first.",
+        "offByTen": "After you trade a ten for ten ones, there is one ten fewer. Take that ten away from the tens too.",
+        "offByHundred": "After you trade a hundred for ten tens, there is one hundred fewer. Take that hundred away from the hundreds too.",
+        "addedInsteadOfSubtracted": "That adds {take} more. {name} {gone}, so take {take} away from {start}."
+      },
+      "solution": {
+        "steps": [
+          "{tradeSolve}",
+          "{start} − {take} = {left}.",
+          "{name} has {left} {object_plural} now."
+        ],
+        "answer": "start - take"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "TEKS 2.4C, 2.7C",
+        "CCSS Progressions K-5 Operations and Algebraic Thinking (Table 1 situations, two-step problems)"
+      ],
+      "numbers": "which 0 trades a ten, 1 a hundred. The 'traded but kept the old digit' slip is offByTen (ten more than the key) on a ten trade and offByHundred (a hundred more) on a hundred trade."
+    }
+  },
+  {
+    "id": "wp-g2-tx-1000-take-apart-part",
+    "blueprintId": "wp-g2-tx-1000-take-apart-part",
+    "modeId": "wordProblems",
+    "subskill": "biggerNumberStories",
+    "family": "application",
+    "structureType": "putTogetherAddendUnknown",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [],
+      "va": [],
+      "ga": []
+    },
+    "difficulty": "moderate",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} has {total} {object_plural}. {name} puts {part} of the {object_plural} {place1} and the rest of the {object_plural} {place2}. How many {object_plural} are {place2The}?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "subtraction",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "money-shopping"
+        ],
+        "exclude": [
+          "magnetic-tile",
+          "wooden-block",
+          "board-game",
+          "card-game",
+          "playing-card",
+          "domino",
+          "checker",
+          "chess-piece",
+          "action-figure",
+          "stuffed-animal",
+          "doll",
+          "toy-dinosaur",
+          "toy-car",
+          "train-track-piece",
+          "video-game",
+          "bubble",
+          "stick-of-sidewalk-chalk",
+          "pop-fidget-toy",
+          "squishy-toy",
+          "water-balloon",
+          "rubber-duck",
+          "arcade-token",
+          "arcade-prize",
+          "claw-machine",
+          "capsule-toy",
+          "marble",
+          "bouncy-ball",
+          "balloon",
+          "glow-stick",
+          "jump-rope",
+          "paper-airplane",
+          "foam-rocket",
+          "bean-bag",
+          "pogo-stick",
+          "tub-of-slime",
+          "piece-of-play-food",
+          "weekly-allowance",
+          "chore",
+          "paperback-book",
+          "poster",
+          "candy-bar",
+          "arcade-game",
+          "movie-ticket",
+          "ice-cream-cone",
+          "birthday-card",
+          "birthday-money-gift",
+          "gift-card",
+          "savings-jar",
+          "quarter",
+          "dollar-bill",
+          "used-book",
+          "used-bike",
+          "school-lunch",
+          "temporary-tattoo",
+          "carnival-ticket",
+          "vending-machine-snack",
+          "book-fair-book"
+        ],
+        "constraints": [
+          "object.id == 'trading-card' || object.id == 'building-brick' || object.id == 'arcade-ticket' || object.id == 'prize-ticket' || object.id == 'puzzle-piece'"
+        ]
+      },
+      "totalLo": {
+        "kind": "int",
+        "min": 200,
+        "max": 499
+      },
+      "totalHi": {
+        "kind": "int",
+        "min": 200,
+        "max": 999
+      },
+      "total": {
+        "kind": "expr",
+        "expr": "sum(drop(object.count_one_kid, 1)) >= 1000 ? totalHi : totalLo",
+        "format": "int"
+      },
+      "part": {
+        "kind": "int",
+        "min": 100,
+        "max": 499
+      },
+      "mix": {
+        "kind": "int",
+        "min": 0,
+        "max": 17
+      },
+      "trade": {
+        "kind": "expr",
+        "expr": "ones(total) >= ones(part) && floor((total) / 10) % 10 >= floor((part) / 10) % 10 ? 0 : (ones(total) < ones(part) && floor((total) / 10) % 10 - 1 >= floor((part) / 10) % 10 ? 1 : (ones(total) >= ones(part) && floor((total) / 10) % 10 < floor((part) / 10) % 10 ? 2 : 3))",
+        "format": "int"
+      },
+      "rest": {
+        "kind": "expr",
+        "expr": "total - part",
+        "format": "int"
+      },
+      "cp": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "place1": {
+        "kind": "expr",
+        "expr": "cp == 1 ? 'in a box' : object.id == 'trading-card' ? 'in a binder' : object.id == 'building-brick' ? 'in a bin' : object.id == 'puzzle-piece' ? 'in a box' : 'in a jar'",
+        "format": "text"
+      },
+      "place2": {
+        "kind": "expr",
+        "expr": "cp == 1 ? 'in a bag' : object.id == 'trading-card' ? 'in a box' : object.id == 'building-brick' ? 'in a box' : 'in a bag'",
+        "format": "text"
+      },
+      "place1The": {
+        "kind": "expr",
+        "expr": "cp == 1 ? 'in the box' : object.id == 'trading-card' ? 'in the binder' : object.id == 'building-brick' ? 'in the bin' : object.id == 'puzzle-piece' ? 'in the box' : 'in the jar'",
+        "format": "text"
+      },
+      "place2The": {
+        "kind": "expr",
+        "expr": "cp == 1 ? 'in the bag' : object.id == 'trading-card' ? 'in the box' : object.id == 'building-brick' ? 'in the box' : 'in the bag'",
+        "format": "text"
+      },
+      "tradeStep": {
+        "kind": "expr",
+        "expr": "trade == 0 ? 'There are enough ones and enough tens, so there is nothing to trade. Take away the ones.' : (trade == 1 ? 'There are not enough ones to take away. Trade one ten for ten ones.' : 'There are enough ones. There are not enough tens, so trade one hundred for ten tens.')",
+        "format": "text"
+      },
+      "tradeSolve": {
+        "kind": "expr",
+        "expr": "trade == 0 ? 'Each top digit is big enough, so there is nothing to trade.' : (trade == 1 ? 'Trade a ten: ' + total + ' is ' + ((floor((total) / 100)) == 1 ? '1 hundred' : (floor((total) / 100)) + ' hundreds') + ', ' + ((floor((total) / 10) % 10 - 1) == 1 ? '1 ten' : (floor((total) / 10) % 10 - 1) + ' tens') + ' and ' + (ones(total) + 10) + ' ones.' : 'Trade a hundred: ' + total + ' is ' + ((floor((total) / 100) - 1) == 1 ? '1 hundred' : (floor((total) / 100) - 1) + ' hundreds') + ', ' + (floor((total) / 10) % 10 + 10) + ' tens and ' + ((ones(total)) == 1 ? '1 one' : (ones(total)) + ' ones') + '.')",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "trade == (mix <= 5 ? 0 : (mix <= 10 ? 1 : 2))",
+      "trade != 1 || ones(part) - ones(total) != 5",
+      "trade != 2 || floor((part) / 10) % 10 - floor((total) / 10) % 10 != 5",
+      "total - part >= 100",
+      "total - part != part",
+      "100 * abs(floor((total) / 100) - floor((part) / 100)) + 10 * abs(floor((total) / 10) % 10 - floor((part) / 10) % 10) + abs(ones(total) - ones(part)) != part",
+      "sum(drop(object.count_one_kid, 1)) >= total"
+    ],
+    "operation": {
+      "a": "total",
+      "b": "part",
+      "op": "-"
+    },
+    "answer": {
+      "expr": "total - part",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "total + part",
+        "mistake": "addedInsteadOfSubtracted"
+      },
+      {
+        "expr": "part",
+        "mistake": "answeredWithAGiven"
+      },
+      {
+        "expr": "100 * abs(floor((total) / 100) - floor((part) / 100)) + 10 * abs(floor((total) / 10) % 10 - floor((part) / 10) % 10) + abs(ones(total) - ones(part))",
+        "mistake": "smallerFromLarger",
+        "when": "trade > 0"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} are {place2The}. {name} has {total} in all, and {part} of them are {place1The}.",
+      "steps": [
+        "The {object_plural} {place2The} are the rest, so find {total} − {part}. Start with the ones.",
+        "{tradeStep}",
+        "Then take away the tens and the hundreds."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "addedInsteadOfSubtracted": "{total} is all of {name}'s {object_plural}. The rest are {place2The}, so take {part} away from {total}.",
+        "answeredWithAGiven": "{part} {object_plural} are {place1The}. The question asks about the rest, the {object_plural} {place2The}.",
+        "smallerFromLarger": "That takes the smaller digit from the bigger one in each place. When the top digit is too small, trade first."
+      },
+      "solution": {
+        "steps": [
+          "{tradeSolve}",
+          "{total} − {part} = {rest}.",
+          "There are {rest} {object_plural} {place2The}."
+        ],
+        "answer": "total - part"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "TEKS 2.4C, 2.7C",
+        "CCSS Progressions K-5 Operations and Algebraic Thinking (Table 1 situations, two-step problems)"
+      ],
+      "numbers": "mix 0-5 asks for no trade, 6-10 for a ten, 11-17 for a hundred: draws with no trade pass the number rules more often, so this gives about half no trade and a quarter each of ten and hundred trades (the row's note). smallerFromLarger exists only on a trade and sits out the other fills; the number pad keeps the two other slips."
+    }
+  },
+  {
+    "id": "wp-g2-tx-1000-compare-more",
+    "blueprintId": "wp-g2-tx-1000-compare-more",
+    "modeId": "wordProblems",
+    "subskill": "biggerNumberStories",
+    "family": "application",
+    "structureType": "compareDifferenceMore",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [],
+      "va": [],
+      "ga": []
+    },
+    "difficulty": "moderate",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{firstName} {v1} {firstAmt} {object_plural}. {secondName} {v1} {secondAmt} {object_plural}. How many more {object_plural} {aux} {name} {v2} than {name2}?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "name2": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "subtraction",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "money-shopping"
+        ],
+        "exclude": [
+          "magnetic-tile",
+          "wooden-block",
+          "board-game",
+          "card-game",
+          "playing-card",
+          "domino",
+          "checker",
+          "chess-piece",
+          "puzzle-piece",
+          "action-figure",
+          "stuffed-animal",
+          "doll",
+          "toy-dinosaur",
+          "toy-car",
+          "train-track-piece",
+          "video-game",
+          "bubble",
+          "stick-of-sidewalk-chalk",
+          "pop-fidget-toy",
+          "squishy-toy",
+          "water-balloon",
+          "rubber-duck",
+          "arcade-token",
+          "arcade-prize",
+          "claw-machine",
+          "capsule-toy",
+          "marble",
+          "bouncy-ball",
+          "balloon",
+          "glow-stick",
+          "jump-rope",
+          "paper-airplane",
+          "foam-rocket",
+          "bean-bag",
+          "pogo-stick",
+          "tub-of-slime",
+          "piece-of-play-food",
+          "weekly-allowance",
+          "chore",
+          "paperback-book",
+          "poster",
+          "candy-bar",
+          "arcade-game",
+          "movie-ticket",
+          "ice-cream-cone",
+          "birthday-card",
+          "birthday-money-gift",
+          "gift-card",
+          "savings-jar",
+          "quarter",
+          "dollar-bill",
+          "used-book",
+          "used-bike",
+          "school-lunch",
+          "temporary-tattoo",
+          "carnival-ticket",
+          "vending-machine-snack",
+          "book-fair-book"
+        ],
+        "constraints": [
+          "object.id == 'trading-card' || object.id == 'building-brick' || object.id == 'arcade-ticket' || object.id == 'prize-ticket'"
+        ]
+      },
+      "bigLo": {
+        "kind": "int",
+        "min": 120,
+        "max": 499
+      },
+      "bigHi": {
+        "kind": "int",
+        "min": 120,
+        "max": 999
+      },
+      "smallLo": {
+        "kind": "int",
+        "min": 100,
+        "max": 479
+      },
+      "smallHi": {
+        "kind": "int",
+        "min": 100,
+        "max": 979
+      },
+      "big": {
+        "kind": "expr",
+        "expr": "sum(drop(object.count_one_kid, 1)) >= 1000 ? bigHi : bigLo",
+        "format": "int"
+      },
+      "small": {
+        "kind": "expr",
+        "expr": "sum(drop(object.count_one_kid, 1)) >= 1000 ? smallHi : smallLo",
+        "format": "int"
+      },
+      "mix": {
+        "kind": "int",
+        "min": 0,
+        "max": 17
+      },
+      "trade": {
+        "kind": "expr",
+        "expr": "ones(big) >= ones(small) && floor((big) / 10) % 10 >= floor((small) / 10) % 10 ? 0 : (ones(big) < ones(small) && floor((big) / 10) % 10 - 1 >= floor((small) / 10) % 10 ? 1 : (ones(big) >= ones(small) && floor((big) / 10) % 10 < floor((small) / 10) % 10 ? 2 : 3))",
+        "format": "int"
+      },
+      "order": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "diff": {
+        "kind": "expr",
+        "expr": "big - small",
+        "format": "int"
+      },
+      "firstName": {
+        "kind": "expr",
+        "expr": "order == 0 ? name : name2",
+        "format": "text"
+      },
+      "secondName": {
+        "kind": "expr",
+        "expr": "order == 0 ? name2 : name",
+        "format": "text"
+      },
+      "firstAmt": {
+        "kind": "expr",
+        "expr": "order == 0 ? big : small",
+        "format": "int"
+      },
+      "secondAmt": {
+        "kind": "expr",
+        "expr": "order == 0 ? small : big",
+        "format": "int"
+      },
+      "v1": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' ? 'won' : 'has'",
+        "format": "text"
+      },
+      "aux": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' ? 'did' : 'does'",
+        "format": "text"
+      },
+      "v2": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' ? 'win' : 'have'",
+        "format": "text"
+      },
+      "tradeStep": {
+        "kind": "expr",
+        "expr": "trade == 0 ? 'There are enough ones and enough tens, so there is nothing to trade. Take away the ones.' : (trade == 1 ? 'There are not enough ones to take away. Trade one ten for ten ones.' : 'There are enough ones. There are not enough tens, so trade one hundred for ten tens.')",
+        "format": "text"
+      },
+      "tradeSolve": {
+        "kind": "expr",
+        "expr": "trade == 0 ? 'Each top digit is big enough, so there is nothing to trade.' : (trade == 1 ? 'Trade a ten: ' + big + ' is ' + ((floor((big) / 100)) == 1 ? '1 hundred' : (floor((big) / 100)) + ' hundreds') + ', ' + ((floor((big) / 10) % 10 - 1) == 1 ? '1 ten' : (floor((big) / 10) % 10 - 1) + ' tens') + ' and ' + (ones(big) + 10) + ' ones.' : 'Trade a hundred: ' + big + ' is ' + ((floor((big) / 100) - 1) == 1 ? '1 hundred' : (floor((big) / 100) - 1) + ' hundreds') + ', ' + (floor((big) / 10) % 10 + 10) + ' tens and ' + ((ones(big)) == 1 ? '1 one' : (ones(big)) + ' ones') + '.')",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "trade == (mix <= 5 ? 0 : (mix <= 10 ? 1 : 2))",
+      "trade != 1 || ones(small) - ones(big) != 5",
+      "trade != 2 || floor((small) / 10) % 10 - floor((big) / 10) % 10 != 5",
+      "big - small >= 20",
+      "big - small != small",
+      "sum(drop(object.count_one_kid, 1)) >= big"
+    ],
+    "operation": {
+      "a": "big",
+      "b": "small",
+      "op": "-"
+    },
+    "answer": {
+      "expr": "big - small",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "big + small",
+        "mistake": "addedInsteadOfSubtracted"
+      },
+      {
+        "expr": "big",
+        "mistake": "answeredWithAGiven"
+      },
+      {
+        "expr": "100 * abs(floor((big) / 100) - floor((small) / 100)) + 10 * abs(floor((big) / 10) % 10 - floor((small) / 10) % 10) + abs(ones(big) - ones(small))",
+        "mistake": "smallerFromLarger",
+        "when": "trade > 0"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many more {object_plural} {name} {v1} than {name2}. Find the difference between {big} and {small}.",
+      "steps": [
+        "Take the smaller amount from the bigger one: {big} − {small}. Start with the ones.",
+        "{tradeStep}",
+        "Then take away the tens and the hundreds."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "addedInsteadOfSubtracted": "That puts the two amounts together. How many more means find the difference, so take {small} away from {big}.",
+        "answeredWithAGiven": "That is how many {object_plural} {name} {v1}. The question asks how many more than {name2}.",
+        "smallerFromLarger": "That takes the smaller digit from the bigger one in each place. When the top digit is too small, trade first."
+      },
+      "solution": {
+        "steps": [
+          "{tradeSolve}",
+          "{big} − {small} = {diff}.",
+          "{name} {v1} {diff} more {object_plural} than {name2}."
+        ],
+        "answer": "big - small"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "TEKS 2.4C, 2.7C",
+        "CCSS Progressions K-5 Operations and Algebraic Thinking (Table 1 situations, two-step problems)"
+      ],
+      "numbers": "mix 0-5 asks for no trade, 6-10 for a ten, 11-17 for a hundred: draws with no trade pass the number rules more often, so this gives about half no trade and a quarter each of ten and hundred trades (the row's note). smallerFromLarger exists only on a trade and sits out the other fills; the number pad keeps the two other slips."
+    }
+  },
+  {
+    "id": "wp-g2-tx-1000-two-step",
+    "blueprintId": "wp-g2-tx-1000-two-step",
+    "modeId": "wordProblems",
+    "subskill": "biggerNumberStories",
+    "family": "application",
+    "structureType": "twoStepTakeAdd",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [],
+      "va": [],
+      "ga": []
+    },
+    "difficulty": "hard",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} had {start} {object_plural}. {step1}. Then {step2}. How many {object_plural} does {name} have now?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "name2": {
+        "kind": "name"
+      },
+      "name3": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "subtraction",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "money-shopping"
+        ],
+        "exclude": [
+          "magnetic-tile",
+          "wooden-block",
+          "board-game",
+          "card-game",
+          "playing-card",
+          "domino",
+          "checker",
+          "chess-piece",
+          "puzzle-piece",
+          "action-figure",
+          "stuffed-animal",
+          "doll",
+          "toy-dinosaur",
+          "toy-car",
+          "train-track-piece",
+          "video-game",
+          "bubble",
+          "stick-of-sidewalk-chalk",
+          "pop-fidget-toy",
+          "squishy-toy",
+          "water-balloon",
+          "rubber-duck",
+          "arcade-token",
+          "arcade-prize",
+          "claw-machine",
+          "capsule-toy",
+          "marble",
+          "bouncy-ball",
+          "balloon",
+          "glow-stick",
+          "jump-rope",
+          "paper-airplane",
+          "foam-rocket",
+          "bean-bag",
+          "pogo-stick",
+          "tub-of-slime",
+          "piece-of-play-food",
+          "weekly-allowance",
+          "chore",
+          "paperback-book",
+          "poster",
+          "candy-bar",
+          "arcade-game",
+          "movie-ticket",
+          "ice-cream-cone",
+          "birthday-card",
+          "birthday-money-gift",
+          "gift-card",
+          "savings-jar",
+          "quarter",
+          "dollar-bill",
+          "used-book",
+          "used-bike",
+          "school-lunch",
+          "temporary-tattoo",
+          "carnival-ticket",
+          "vending-machine-snack",
+          "book-fair-book"
+        ],
+        "constraints": [
+          "object.id == 'trading-card' || object.id == 'building-brick' || object.id == 'arcade-ticket' || object.id == 'prize-ticket'"
+        ]
+      },
+      "start": {
+        "kind": "int",
+        "min": 120,
+        "max": 499
+      },
+      "cfg": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "tensAmt": {
+        "kind": "int",
+        "min": 1,
+        "max": 9
+      },
+      "onesAmt": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "mix": {
+        "kind": "int",
+        "min": 0,
+        "max": 2
+      },
+      "take": {
+        "kind": "expr",
+        "expr": "(cfg == 0 ? 10 * tensAmt : onesAmt)",
+        "format": "int"
+      },
+      "add": {
+        "kind": "expr",
+        "expr": "(cfg == 0 ? onesAmt : 10 * tensAmt)",
+        "format": "int"
+      },
+      "after1": {
+        "kind": "expr",
+        "expr": "start - (cfg == 0 ? 10 * tensAmt : onesAmt)",
+        "format": "int"
+      },
+      "total": {
+        "kind": "expr",
+        "expr": "start - (cfg == 0 ? 10 * tensAmt : onesAmt) + (cfg == 0 ? onesAmt : 10 * tensAmt)",
+        "format": "int"
+      },
+      "borrow1": {
+        "kind": "expr",
+        "expr": "cfg == 0 ? (floor((start) / 10) % 10 < tensAmt ? 1 : 0) : (ones(start) < onesAmt ? 1 : 0)",
+        "format": "int"
+      },
+      "carry2": {
+        "kind": "expr",
+        "expr": "cfg == 0 ? (ones(start - (cfg == 0 ? 10 * tensAmt : onesAmt)) + onesAmt >= 10 ? 1 : 0) : (floor((start - (cfg == 0 ? 10 * tensAmt : onesAmt)) / 10) % 10 + tensAmt >= 10 ? 1 : 0)",
+        "format": "int"
+      },
+      "step1": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' ? name + ' spent ' + take + ' ' + object.plural + (object.id == 'prize-ticket' ? ' on a toy' : ' on a prize') : name + ' gave ' + take + ' ' + object.plural + ' to ' + name2",
+        "format": "text"
+      },
+      "step2": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' ? name + ' won ' + add + ' more ' + object.plural : name3 + ' gave ' + name + ' ' + add + ' more ' + object.plural",
+        "format": "text"
+      },
+      "gone": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' ? 'spent' : 'gave away'",
+        "format": "text"
+      },
+      "fbStop": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' ? 'That is how many ' + object.plural + ' are left after ' + name + ' spent ' + take + '. Then ' + name + ' won ' + add + ' more, so add them.' : 'That is how many ' + object.plural + ' are left after ' + name + ' gave ' + take + ' to ' + name2 + '. Then ' + name3 + ' gave ' + name + ' ' + add + ' more, so add them.'",
+        "format": "text"
+      },
+      "tip": {
+        "kind": "expr",
+        "expr": "borrow1 == 1 ? (cfg == 0 ? 'There are not enough tens to take away, so trade one hundred for ten tens.' : 'There are not enough ones to take away, so trade one ten for ten ones.') : carry2 == 1 ? (cfg == 0 ? 'When you add the ones, they make a new ten.' : 'When you add the tens, they make a new hundred.') : 'Each step changes only one place.'",
+        "format": "text"
+      },
+      "lineMin": {
+        "kind": "expr",
+        "expr": "floorTen(start - (cfg == 0 ? 10 * tensAmt : onesAmt))",
+        "format": "int"
+      },
+      "lineMax": {
+        "kind": "expr",
+        "expr": "nextTen(max(start, start - (cfg == 0 ? 10 * tensAmt : onesAmt) + (cfg == 0 ? onesAmt : 10 * tensAmt)))",
+        "format": "int"
+      },
+      "lineStep": {
+        "kind": "expr",
+        "expr": "nextTen(max(start, start - (cfg == 0 ? 10 * tensAmt : onesAmt) + (cfg == 0 ? onesAmt : 10 * tensAmt))) - floorTen(start - (cfg == 0 ? 10 * tensAmt : onesAmt)) > 40 ? 10 : 5",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "borrow1 + carry2 == (mix == 2 ? 1 : 0)",
+      "start - (cfg == 0 ? 10 * tensAmt : onesAmt) - (cfg == 0 ? onesAmt : 10 * tensAmt) >= 1",
+      "start - (cfg == 0 ? 10 * tensAmt : onesAmt) + (cfg == 0 ? onesAmt : 10 * tensAmt) != (cfg == 0 ? 10 * tensAmt : onesAmt) && start - (cfg == 0 ? 10 * tensAmt : onesAmt) + (cfg == 0 ? onesAmt : 10 * tensAmt) != (cfg == 0 ? onesAmt : 10 * tensAmt)",
+      "sum(drop(object.count_one_kid, 1)) >= max(start, start - (cfg == 0 ? 10 * tensAmt : onesAmt) + (cfg == 0 ? onesAmt : 10 * tensAmt))"
+    ],
+    "answer": {
+      "expr": "start - (cfg == 0 ? 10 * tensAmt : onesAmt) + (cfg == 0 ? onesAmt : 10 * tensAmt)",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "start - (cfg == 0 ? 10 * tensAmt : onesAmt)",
+        "mistake": "stopsAtStepOne"
+      },
+      {
+        "expr": "start - (cfg == 0 ? 10 * tensAmt : onesAmt) - (cfg == 0 ? onesAmt : 10 * tensAmt)",
+        "mistake": "wrongOperationStepTwo"
+      },
+      {
+        "expr": "start + (cfg == 0 ? 10 * tensAmt : onesAmt) + (cfg == 0 ? onesAmt : 10 * tensAmt)",
+        "mistake": "addedEverything"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} has now. First take away, then add.",
+      "steps": [
+        "Start at {start}. Take away the {take} {name} {gone}.",
+        "Then add the {add} more {object_plural}.",
+        "{tip}"
+      ],
+      "picture": {
+        "kind": "numberLine",
+        "min": "lineMin",
+        "max": "lineMax",
+        "mark": "start",
+        "step": "lineStep"
+      },
+      "example": "auto",
+      "feedback": {
+        "stopsAtStepOne": "{fbStop}",
+        "wrongOperationStepTwo": "That takes away the {add} too. {name} got {add} more, so add them.",
+        "addedEverything": "That adds all three numbers. {name} {gone} {take}, so take those away."
+      },
+      "solution": {
+        "steps": [
+          "{start} − {take} = {after1}.",
+          "{after1} + {add} = {total}.",
+          "{name} has {total} {object_plural} now."
+        ],
+        "answer": "start - (cfg == 0 ? 10 * tensAmt : onesAmt) + (cfg == 0 ? onesAmt : 10 * tensAmt)"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "TEKS 2.4C, 2.7C",
+        "CCSS Progressions K-5 Operations and Algebraic Thinking (Table 1 situations, two-step problems)"
+      ],
+      "numbers": "cfg 0 takes whole tens and adds ones, cfg 1 takes ones and adds whole tens. mix 0-1 asks for no regroup, 2 for one, which gives about half and half."
+    }
+  },
+  {
+    "id": "wp-g2-va-ga-200-put-together-total",
+    "blueprintId": "wp-g2-va-ga-200-put-together-total",
+    "modeId": "wordProblems",
+    "subskill": "biggerNumberStories",
+    "family": "application",
+    "structureType": "putTogetherTotalUnknown",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [],
+      "tx": [],
+      "fl": [],
+      "va": [
+        "2.CE.1c"
+      ],
+      "ga": [
+        "2.NR.2.3"
+      ]
+    },
+    "difficulty": "moderate",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} has {p1} {object_plural} {place1} and {p2} {object_plural} {place2}. How many {object_plural} does {name} have in all?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "money-shopping",
+          "school-art"
+        ],
+        "exclude": [
+          "magnetic-tile",
+          "wooden-block",
+          "board-game",
+          "card-game",
+          "playing-card",
+          "domino",
+          "checker",
+          "chess-piece",
+          "pattern-block",
+          "action-figure",
+          "stuffed-animal",
+          "doll",
+          "toy-dinosaur",
+          "toy-car",
+          "train-track-piece",
+          "video-game",
+          "bubble",
+          "stick-of-sidewalk-chalk",
+          "pop-fidget-toy",
+          "squishy-toy",
+          "water-balloon",
+          "pool-noodle",
+          "rubber-duck",
+          "sand-pail",
+          "arcade-token",
+          "arcade-prize",
+          "claw-machine",
+          "capsule-toy",
+          "marble",
+          "bouncy-ball",
+          "balloon",
+          "glow-stick",
+          "jump-rope",
+          "flying-disc",
+          "paper-airplane",
+          "foam-rocket",
+          "bean-bag",
+          "pogo-stick",
+          "tub-of-slime",
+          "piece-of-play-food",
+          "dollhouse",
+          "stacking-cup",
+          "crayon",
+          "marker",
+          "gel-pen",
+          "tube-of-glitter-glue",
+          "glue-stick",
+          "animal-eraser",
+          "pencil",
+          "sticker",
+          "notebook",
+          "pencil-case",
+          "backpack",
+          "colored-pencil",
+          "paper-clip",
+          "sticky-note",
+          "library-book",
+          "graphic-novel",
+          "spelling-word",
+          "gold-star",
+          "class-point",
+          "reward-ticket",
+          "prize-box-toy",
+          "bead",
+          "pipe-cleaner",
+          "pom-pom",
+          "googly-eye",
+          "tub-of-clay",
+          "bottle-of-paint",
+          "paintbrush",
+          "sheet-of-construction-paper",
+          "piece-of-yarn",
+          "button",
+          "rubber-stamp",
+          "friendship-bracelet",
+          "roll-of-tape",
+          "sketchbook",
+          "coloring-page",
+          "fuse-bead",
+          "counting-bear",
+          "snap-cube",
+          "weekly-allowance",
+          "chore",
+          "muffin",
+          "paperback-book",
+          "poster",
+          "candy-bar",
+          "arcade-game",
+          "movie-ticket",
+          "ice-cream-cone",
+          "birthday-card",
+          "birthday-money-gift",
+          "gift-card",
+          "lost-tooth",
+          "savings-jar",
+          "penny",
+          "nickel",
+          "dime",
+          "quarter",
+          "dollar-bill",
+          "used-book",
+          "used-bike",
+          "school-lunch",
+          "gumball",
+          "temporary-tattoo",
+          "field-trip-ticket",
+          "carnival-ticket",
+          "treasure-map",
+          "vote",
+          "tally-mark",
+          "sight-word",
+          "dry-erase-marker",
+          "flash-card",
+          "vending-machine-snack",
+          "book-fair-book"
+        ],
+        "constraints": [
+          "object.id == 'trading-card' || object.id == 'building-brick' || object.id == 'loom-band' || object.id == 'arcade-ticket' || object.id == 'prize-ticket' || object.id == 'puzzle-piece'"
+        ]
+      },
+      "p1": {
+        "kind": "int",
+        "min": 21,
+        "max": 99
+      },
+      "p2": {
+        "kind": "int",
+        "min": 21,
+        "max": 99
+      },
+      "oc": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "total": {
+        "kind": "expr",
+        "expr": "p1 + p2",
+        "format": "int"
+      },
+      "cp": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "place1": {
+        "kind": "expr",
+        "expr": "cp == 1 ? 'in a box' : object.id == 'trading-card' ? 'in a binder' : object.id == 'building-brick' ? 'in a bin' : object.id == 'puzzle-piece' ? 'in a box' : 'in a jar'",
+        "format": "text"
+      },
+      "place2": {
+        "kind": "expr",
+        "expr": "cp == 1 ? 'in a bag' : object.id == 'trading-card' ? 'in a box' : object.id == 'building-brick' ? 'in a box' : 'in a bag'",
+        "format": "text"
+      },
+      "place1The": {
+        "kind": "expr",
+        "expr": "cp == 1 ? 'in the box' : object.id == 'trading-card' ? 'in the binder' : object.id == 'building-brick' ? 'in the bin' : object.id == 'puzzle-piece' ? 'in the box' : 'in the jar'",
+        "format": "text"
+      },
+      "place2The": {
+        "kind": "expr",
+        "expr": "cp == 1 ? 'in the bag' : object.id == 'trading-card' ? 'in the box' : object.id == 'building-brick' ? 'in the box' : 'in the bag'",
+        "format": "text"
+      },
+      "bigPlace": {
+        "kind": "expr",
+        "expr": "p1 > p2 ? place1The : place2The",
+        "format": "text"
+      },
+      "smallPlace": {
+        "kind": "expr",
+        "expr": "p1 > p2 ? place2The : place1The",
+        "format": "text"
+      },
+      "oS": {
+        "kind": "expr",
+        "expr": "ones(p1) + ones(p2)",
+        "format": "int"
+      },
+      "tensSum": {
+        "kind": "expr",
+        "expr": "floor(p1 / 10) + floor(p2 / 10) + (ones(p1) + ones(p2) >= 10 ? 1 : 0)",
+        "format": "int"
+      },
+      "onesStep": {
+        "kind": "expr",
+        "expr": "oc == 1 ? 'The ones make ten or more, so trade ten ones for one ten.' : 'The ones make less than ten, so there is nothing to trade yet.'",
+        "format": "text"
+      },
+      "solveOnes": {
+        "kind": "expr",
+        "expr": "oc == 1 ? 'Ones: ' + oS + ' ones is 1 ten and ' + ((oS - 10) == 1 ? '1 one' : (oS - 10) + ' ones') + '.' : 'Ones: ' + ((oS) == 1 ? '1 one' : (oS) + ' ones') + '.'",
+        "format": "text"
+      },
+      "solveTens": {
+        "kind": "expr",
+        "expr": "'Tens: ' + tensSum + ' tens is 1 hundred and ' + ((tensSum - 10) == 1 ? '1 ten' : (tensSum - 10) + ' tens') + '.'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "(ones(p1) + ones(p2) >= 10 ? 1 : 0) == oc",
+      "p1 + p2 >= 101",
+      "p1 != p2",
+      "abs(p1 - p2) != p1 + p2 - 100",
+      "sum(drop(object.count_one_kid, 1)) >= p1 + p2"
+    ],
+    "operation": {
+      "a": "p1",
+      "b": "p2",
+      "op": "+"
+    },
+    "answer": {
+      "expr": "p1 + p2",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "p1 + p2 - 100",
+        "mistake": "forgotToCarry"
+      },
+      {
+        "expr": "abs(p1 - p2)",
+        "mistake": "subtractedInsteadOfAdded"
+      },
+      {
+        "expr": "max(p1, p2)",
+        "mistake": "answeredWithAGiven"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} has in all. Add the {object_plural} {place1The} and the {object_plural} {place2The}.",
+      "steps": [
+        "Add {p1} + {p2}. Start with the ones.",
+        "{onesStep}",
+        "Then add the tens. They make ten or more, so trade ten tens for one hundred."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "forgotToCarry": "The tens made a new hundred. Keep that hundred in your answer.",
+        "subtractedInsteadOfAdded": "That takes one amount away from the other. In all means put them together, so add {p1} and {p2}.",
+        "answeredWithAGiven": "That is only the {object_plural} {bigPlace}. Add the {object_plural} {smallPlace} too."
+      },
+      "solution": {
+        "steps": [
+          "{solveOnes}",
+          "{solveTens}",
+          "{p1} + {p2} = {total}."
+        ],
+        "answer": "p1 + p2"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "VA SOL 2023 2.CE.1c",
+        "GA K-12 2021 2.NR.2.3",
+        "CCSS Progressions K-5 Operations and Algebraic Thinking (Table 1 situations, two-step problems)"
+      ]
+    }
+  }
+]

@@ -9,6 +9,14 @@ import PILOT_MODELS from "../itemModels/pilot/grade2Money.json";
 import GRADE3_MODELS from "../itemModels/money/grade3.json";
 import GRADE4_MODELS from "../itemModels/money/grade4.json";
 import GRADE5_MODELS from "../itemModels/money/grade5.json";
+import { hintContainsAnswer } from "../hints/hintSchema.js";
+import G2_CALC_STRATEGIES from "../itemModels/g2Addsub/calcStrategies.json";
+import G2_CALC_TRADES from "../itemModels/g2Addsub/calcTrades.json";
+import G2_CALC_EQUAL from "../itemModels/g2Addsub/calcEqual.json";
+import G2_WP_EQUATIONS from "../itemModels/g2Addsub/wpEquations.json";
+import G2_WP_CHANGE from "../itemModels/g2Addsub/wpChange.json";
+import G2_WP_COMPARE from "../itemModels/g2Addsub/wpCompare.json";
+import G2_WP_TWO_STEP from "../itemModels/g2Addsub/wpTwoStep.json";
 
 /**
  * The item-model harness stops being money-only (Grade 2 add and subtract
@@ -179,4 +187,31 @@ describe("the disc mat in a prompt's identity", () => {
     const bare = fill({ ...model, display: undefined }, { seed: 1 });
     expect(runChecks(bare).findings.map((f) => f.id)).toContain("missingRequiredFigure");
   });
+});
+
+describe("the committed Grade 2 add and subtract models", () => {
+  // The 77 drafts in Sai's queue (2026-10-03); each row in item_models is
+  // one of these objects as committed.
+  const G2 = [G2_CALC_STRATEGIES, G2_CALC_TRADES, G2_CALC_EQUAL, G2_WP_EQUATIONS, G2_WP_CHANGE, G2_WP_COMPARE, G2_WP_TWO_STEP].flat();
+
+  it("are valid, point at their blueprint row and follow its rules", () => {
+    expect(G2).toHaveLength(77);
+    expect(new Set(G2.map((m) => m.id)).size).toBe(G2.length);
+    for (const m of G2) {
+      expect(validateModel(m).errors, m.id).toEqual([]);
+      expect(blueprintById(m.blueprintId), m.id).toBeTruthy();
+      expect(modelRules(m).errors, m.id).toEqual([]);
+    }
+  });
+
+  it("fill into bank items the QC gate passes, with no hint layer stating the key", () => {
+    for (const m of G2) {
+      for (let seed = 1; seed <= 15; seed += 1) {
+        const item = fill(m, { seed });
+        expect(runChecks(item).findings.filter((f) => f.severity === "fail"), `${m.id} seed ${seed}`).toEqual([]);
+        const { nudge, steps } = item.hint;
+        expect(hintContainsAnswer({ nudge, steps }, item.question.answer), `${m.id} seed ${seed}`).toBe(false);
+      }
+    }
+  }, 60000);
 });

@@ -8,7 +8,7 @@
  */
 import { CALC_ROWS } from "../../multiDigit/calcItems.js";
 import { skillsForPlay } from "../../skills/play.js";
-import { cellMatches, withinNumbers } from "../../skills/skillPool.js";
+import { isBankSkill, skillRows } from "../../itemBank/v2/topicReadiness.js";
 import { COVERED_MIN, DEFERRED_ROWS } from "./liveRules.js";
 
 export const TIERS = Object.freeze(["easy", "moderate", "hard"]);
@@ -108,12 +108,14 @@ export function rowCoverage({ rows, items, models = [], plan = new Map(), deferr
  * (as approved rows: a draft run is judged as if approved): the rows in
  * its own cell (cellMatches + withinNumbers, as a session draws them),
  * per family and tier, and the families it lists that have none. A skill
- * with no rows is a serving gap: its session falls to the generator.
+ * with no rows is a serving gap: its session falls to the generator. The
+ * same matcher as the switch panel's readiness (src/itemBank/v2/topicReadiness.js);
+ * computation drills are left out (they build their own questions).
  */
 export function skillServing({ topic, grade, items }) {
   const approved = items.map((i) => (i.reviewStatus === "approved" ? i : { ...i, reviewStatus: "approved" }));
-  return skillsForPlay(String(grade), topic).map((skill) => {
-    const mine = approved.filter((i) => cellMatches(i, skill.mode, skill.source) && withinNumbers(i.question || {}, skill.source.numbers));
+  return skillsForPlay(String(grade), topic).filter(isBankSkill).map((skill) => {
+    const mine = skillRows(skill, approved);
     const families = Object.fromEntries(skill.source.families.map((f) => [f, mine.filter((i) => i.itemFamily === f).length]));
     const tiers = Object.fromEntries(TIERS.map((t) => [t, mine.filter((i) => i.difficulty === t).length]));
     return {

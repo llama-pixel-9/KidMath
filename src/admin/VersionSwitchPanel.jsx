@@ -1,10 +1,10 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { RefreshCw, ToggleLeft, ToggleRight } from "lucide-react";
 import { useAuth } from "../useAuth";
 import { useIsAdmin } from "../useIsAdmin";
 import { TOPIC_LABELS } from "../skills/catalog.js";
-import { listVersionSwitch, setLiveVersion, LIVE_VERSIONS } from "./versionSwitchApi.js";
+import { listVersionSwitch, readTopicReadiness, setLiveVersion, LIVE_VERSIONS } from "./versionSwitchApi.js";
 import { DEFAULT_LIVE_VERSION, previewEnabled, setPreviewEnabled } from "../itemBank/versionSwitch.js";
 import { V2_ONLY_MODE_IDS } from "../modes/index.js";
 
@@ -15,6 +15,12 @@ import { V2_ONLY_MODE_IDS } from "../modes/index.js";
  * every kid's next session with no deploy in between. Anyone signed in can
  * read it (the loader reads the same table for kids); only admins get the
  * controls, and RLS refuses the write anyway if the client is wrong.
+ *
+ * Each topic carries a readiness line, read from its approved version-2 rows
+ * (a paged read filtered by mode, version 2 and approved): v2 stays disabled
+ * until the topic has rows and every catalog skill serves from its own cell
+ * (src/itemBank/v2/topicReadiness.js). When that read fails the line says
+ * why and v2 stays disabled; v1 and preview work either way.
  */
 
 const VERSION_BADGE_CLASS = {
@@ -57,6 +63,72 @@ function fmtWho(changedBy, currentUserId) {
   return changedBy.slice(0, 8);
 }
 
+// Readiness reads run a few at a time: one paged read per topic.
+const READINESS_CONCURRENCY = 4;
+
+async function eachLimited(list, limit, fn) {
+  let next = 0;
+  const worker = async () => {
+    while (next < list.length) {
+      const value = list[next];
+      next += 1;
+      await fn(value);
+    }
+  };
+  await Promise.all(Array.from({ length: Math.min(limit, list.length) }, worker));
+}
+
+/**
+ * Read each topic's readiness (one paged read per topic, a few at a time)
+ * into `setReadiness`. `runRef` is bumped by every refresh, so a slow read
+ * from an earlier refresh cannot land late.
+ */
+async function checkReadiness(ids, setReadiness, runRef) {
+  const run = runRef.current;
+  setReadiness((prev) => {
+    const next = new Map(prev);
+    for (const id of ids) next.set(id, { state: "loading" });
+    return next;
+  });
+  await eachLimited(ids, READINESS_CONCURRENCY, async (modeId) => {
+    let entry;
+    try {
+      entry = { state: "ok", ...(await readTopicReadiness(modeId)) };
+    } catch (err) {
+      entry = { state: "error", message: err?.message || "the read failed" };
+    }
+    if (runRef.current === run) setReadiness((prev) => new Map(prev).set(modeId, entry));
+  });
+}
+
+/** Why v2 cannot be chosen for a topic now, or null when it can. */
+function v2Blocker(entry) {
+  if (!entry || entry.state === "loading") return "Checking whether every skill has version-2 rows to serve";
+  if (entry.state === "error") return `Readiness unknown (${entry.message}); v2 stays off until it can be checked`;
+  if (!entry.ready) return `Not ready: ${entry.reason}`;
+  return null;
+}
+
+function ReadinessLine({ entry, onRetry }) {
+  if (!entry || entry.state === "loading") return <div className="mt-0.5 text-xs text-slate-400">Checking v2 readiness...</div>;
+  if (entry.state === "error") {
+    return (
+      <div className="mt-0.5 text-xs text-red-700">
+        v2 readiness unknown: {entry.message}{" "}
+        <button type="button" className="underline font-semibold" onClick={onRetry}>
+          Check again
+        </button>
+      </div>
+    );
+  }
+  const cls = entry.ready ? "text-emerald-700" : "text-amber-700";
+  return (
+    <div className={`mt-0.5 text-xs ${cls}`} title={entry.skills.map((s) => `${s.skillId}: ${s.count}`).join("\n")}>
+      {entry.ready ? "v2 ready" : "v2 not ready"}: {entry.reason}
+    </div>
+  );
+}
+
 export default function VersionSwitchPanel() {
   const { user } = useAuth();
   const { isAdmin, loading: adminLoading } = useIsAdmin();
@@ -67,18 +139,26 @@ export default function VersionSwitchPanel() {
   // The flip waiting for its confirm: { modeId, liveVersion, note }.
   const [pending, setPending] = useState(null);
   const [preview, setPreview] = useState(() => previewEnabled());
+  // modeId -> { state: "loading" } | { state: "ok", ...topicReadiness } | { state: "error", message }
+  const [readiness, setReadiness] = useState(() => new Map());
+  // Each refresh bumps this, so a slow read from an earlier one cannot land late.
+  const readinessRun = useRef(0);
 
   async function refresh() {
     setLoading(true);
     setError(null);
+    readinessRun.current += 1;
+    let list = [];
     try {
-      const list = await listVersionSwitch();
+      list = await listVersionSwitch();
       setRows(new Map(list.map((r) => [r.modeId, r])));
     } catch (err) {
       setError(err.message || "Failed to load the version switch");
     } finally {
       setLoading(false);
     }
+    // Readiness is read even when the switch read failed: it is a separate table.
+    checkReadiness([...new Set([...Object.keys(TOPIC_LABELS), ...list.map((r) => r.modeId)])], setReadiness, readinessRun);
   }
 
   useEffect(() => {
@@ -94,6 +174,11 @@ export default function VersionSwitchPanel() {
 
   async function confirmFlip() {
     if (!pending) return;
+    const blocker = pending.liveVersion === "v2" ? v2Blocker(readiness.get(pending.modeId)) : null;
+    if (blocker) {
+      setError(`${TOPIC_LABELS[pending.modeId] || pending.modeId}: ${blocker}`);
+      return;
+    }
     setBusy(true);
     setError(null);
     try {
@@ -140,7 +225,8 @@ export default function VersionSwitchPanel() {
       <p className="text-sm text-slate-600">
         A flip reaches the next session of every kid, with no deploy: <b>v1</b> serves today&apos;s rows,{" "}
         <b>preview</b> serves version-2 rows only to browsers with the preview marker, <b>v2</b> serves
-        version-2 rows to everyone. Rolling back is flipping the skill to v1.
+        version-2 rows to everyone. Rolling back is flipping the skill to v1. <b>v2</b> stays off until the
+        topic&apos;s readiness line says every skill has approved version-2 rows to serve.
       </p>
 
       <div className="rounded-2xl border border-gray-200 bg-white p-3 flex flex-wrap items-center gap-3">
@@ -209,6 +295,7 @@ export default function VersionSwitchPanel() {
                           v2 only
                         </span>
                       )}
+                      <ReadinessLine entry={readiness.get(modeId)} onRetry={() => checkReadiness([modeId], setReadiness, readinessRun)} />
                     </td>
                     <td className="px-3 py-2">
                       <VersionBadge version={live} />
@@ -246,20 +333,27 @@ export default function VersionSwitchPanel() {
                           </div>
                         ) : (
                           <div className="inline-flex rounded-lg border border-gray-300 overflow-hidden">
-                            {LIVE_VERSIONS.map((v) => (
-                              <button
-                                key={v}
-                                type="button"
-                                className={`px-2.5 py-1 text-xs font-bold ${
-                                  v === live ? "bg-violet-600 text-white" : "bg-white text-slate-600 hover:bg-violet-50"
-                                }`}
-                                onClick={() => v !== live && setPending({ modeId, liveVersion: v, note: "" })}
-                                disabled={busy || v === live}
-                                title={VERSION_HELP[v]}
-                              >
-                                {v}
-                              </button>
-                            ))}
+                            {LIVE_VERSIONS.map((v) => {
+                              const blocked = v === "v2" && v !== live ? v2Blocker(readiness.get(modeId)) : null;
+                              return (
+                                <button
+                                  key={v}
+                                  type="button"
+                                  className={`px-2.5 py-1 text-xs font-bold ${
+                                    v === live
+                                      ? "bg-violet-600 text-white"
+                                      : blocked
+                                        ? "bg-white text-slate-300 cursor-not-allowed"
+                                        : "bg-white text-slate-600 hover:bg-violet-50"
+                                  }`}
+                                  onClick={() => v !== live && !blocked && setPending({ modeId, liveVersion: v, note: "" })}
+                                  disabled={busy || v === live || Boolean(blocked)}
+                                  title={blocked || VERSION_HELP[v]}
+                                >
+                                  {v}
+                                </button>
+                              );
+                            })}
                           </div>
                         )}
                       </td>

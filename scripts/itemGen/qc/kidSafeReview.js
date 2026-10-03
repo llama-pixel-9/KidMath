@@ -28,6 +28,7 @@
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
+import { pathToFileURL } from "node:url";
 import { findKidSafeHits } from "../../../src/content/kidSafeList.js";
 import { kidFacingText, kidView, loadItems } from "./kidView.js";
 import { askInBatches, BATCH_SIZE, claudeAvailable, DEFAULT_MODEL, parseArgs } from "./qcCli.js";
@@ -54,7 +55,9 @@ Options:
 Report: { source, model, total, notPrintable, listHits, skipped, items: [{ itemId, printable, reason, hits: [{ term, category }] }] }
 Exit code 1 when any item is not printable. Needs \`claude\` (Claude Code) on PATH for the model pass; skips it loudly otherwise.`;
 
-const SYSTEM = `You review math practice items for a US public elementary school (grades K to 5). For each item, decide whether the school would print it on a math worksheet for that grade and send it home.
+// Exported (with itemBlock and buildPrompt) for the live step's QC panels
+// (scripts/live/qcPanels.mjs), which ask the same judge the same way.
+export const SYSTEM = `You review math practice items for a US public elementary school (grades K to 5). For each item, decide whether the school would print it on a math worksheet for that grade and send it home.
 
 Read everything the kid would read: the question, the picture description, the answer choices and the hint text. Judge the content, not the math — arithmetic, grammar and difficulty are checked elsewhere.
 
@@ -67,7 +70,7 @@ Reply with JSON only: an array with one object per item, in the order given:
 reason is one sentence: what makes it unprintable, or why it is fine.
 Include EVERY item you were given.`;
 
-function itemBlock(view) {
+export function itemBlock(view) {
   if (view.kind === "model") {
     return [`itemId: ${view.itemId} (an item model: template, samples and hints)`, `grade: ${view.grade}`, "content:", ...view.text.map((t) => `  ${t}`)].join("\n");
   }
@@ -79,7 +82,7 @@ function itemBlock(view) {
   return lines.join("\n");
 }
 
-const buildPrompt = (views) => views.map(itemBlock).join("\n\n");
+export const buildPrompt = (views) => views.map(itemBlock).join("\n\n");
 
 const hitList = (hits) => hits.map((h) => `"${h.term}" (${h.category})`).join(", ");
 
@@ -175,9 +178,13 @@ function writeReport(outPath, report) {
   writeFileSync(outPath, json);
 }
 
-main()
-  .then((code) => process.exit(code))
-  .catch((err) => {
-    process.stderr.write(`kidSafeReview: ${err.message}\n`);
-    process.exit(2);
-  });
+// Run only as a script: an import (scripts/live/qcPanels.mjs) takes the
+// prompt without starting a run.
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main()
+    .then((code) => process.exit(code))
+    .catch((err) => {
+      process.stderr.write(`kidSafeReview: ${err.message}\n`);
+      process.exit(2);
+    });
+}

@@ -15,22 +15,22 @@ const SYMBOL_GAP = 24;
 
 // `paper` (worksheets): black symbols inside a ruled table, the way a printed
 // picture graph looks. Teal symbols print as mid-gray blobs on a bare page.
-function Symbol({ cx, cy, half, paper = false }) {
+function Symbol({ cx, cy, half, paper = false, r = SYMBOL_R }) {
   const fill = paper ? "fill-black" : "fill-teal";
   const stroke = paper ? "stroke-black" : "stroke-teal";
-  if (!half) return <circle cx={cx} cy={cy} r={SYMBOL_R} className={fill} />;
+  if (!half) return <circle cx={cx} cy={cy} r={r} className={fill} />;
   return (
     <g>
       <circle
         cx={cx}
         cy={cy}
-        r={SYMBOL_R}
+        r={r}
         className={`fill-none ${stroke}`}
         strokeWidth="1.5"
       />
       {/* Left half only: "half of one symbol" has to look like half of one. */}
       <path
-        d={`M ${cx},${cy - SYMBOL_R} A ${SYMBOL_R},${SYMBOL_R} 0 0,0 ${cx},${cy + SYMBOL_R} Z`}
+        d={`M ${cx},${cy - r} A ${r},${r} 0 0,0 ${cx},${cy + r} Z`}
         className={fill}
       />
     </g>
@@ -41,6 +41,13 @@ export default function Pictograph({ rows, keyValue, theme, paper = false }) {
   const data = rows || [];
   const anyHalf = data.some((r) => r.half);
   const height = PAD_TOP + data.length * ROW_H + KEY_H;
+  // A row longer than 10 symbols packs closer with smaller symbols so the
+  // whole row fits: a fixed gap cut a row of 11 to 18 off after 10 and a
+  // half, so the kid could not count the answer (10 bank items until
+  // 2026-10-03). Labels and the key keep their size.
+  const slots = Math.max(0, ...data.map((r) => (r.symbols || 0) + (r.half ? 1 : 0)));
+  const gap = Math.min(SYMBOL_GAP, (VIEW_W - LABEL_W - 8) / Math.max(1, slots));
+  const symR = Math.min(SYMBOL_R, gap * 0.38);
   const secondary = theme?.textSecondary || "text-slate-500";
 
   const describe = data
@@ -79,14 +86,15 @@ export default function Pictograph({ rows, keyValue, theme, paper = false }) {
               {r.label}
             </text>
             {Array.from({ length: r.symbols }, (_, s) => (
-              <Symbol key={s} cx={LABEL_W + SYMBOL_GAP / 2 + s * SYMBOL_GAP} cy={cy} half={false} paper={paper} />
+              <Symbol key={s} cx={LABEL_W + gap / 2 + s * gap} cy={cy} half={false} paper={paper} r={symR} />
             ))}
             {r.half && (
               <Symbol
-                cx={LABEL_W + SYMBOL_GAP / 2 + r.symbols * SYMBOL_GAP}
+                cx={LABEL_W + gap / 2 + r.symbols * gap}
                 cy={cy}
                 half
                 paper={paper}
+                r={symR}
               />
             )}
           </g>

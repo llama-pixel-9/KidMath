@@ -74,6 +74,12 @@ struct PictographView: View {
     private let symbolGap: CGFloat = 24
 
     private var height: CGFloat { padTop + CGFloat(rows.count) * rowH + keyH }
+    /// A row longer than 10 symbols packs closer with smaller symbols so the
+    /// whole row fits, like Pictograph.jsx: a fixed gap cut a row of 11 to 18
+    /// off after 10 and a half. Labels and the key keep their size.
+    private var slots: Int { rows.map { Int(num($0["symbols"]) ?? 0) + (($0["half"] as? Bool) == true ? 1 : 0) }.max() ?? 0 }
+    private var gap: CGFloat { min(symbolGap, (viewW - labelW - 8) / CGFloat(max(1, slots))) }
+    private var rowSymbolR: CGFloat { min(symbolR, gap * 0.38) }
     private var anyHalf: Bool { rows.contains { ($0["half"] as? Bool) == true } }
 
     var body: some View {
@@ -91,10 +97,10 @@ struct PictographView: View {
                         at: CGPoint(x: labelW - 10, y: cy), anchor: .trailing
                     )
                     for s in 0..<max(0, symbols) {
-                        symbol(&ctx, cx: labelW + symbolGap / 2 + CGFloat(s) * symbolGap, cy: cy, half: false)
+                        symbol(&ctx, cx: labelW + gap / 2 + CGFloat(s) * gap, cy: cy, half: false, r: rowSymbolR)
                     }
                     if half {
-                        symbol(&ctx, cx: labelW + symbolGap / 2 + CGFloat(symbols) * symbolGap, cy: cy, half: true)
+                        symbol(&ctx, cx: labelW + gap / 2 + CGFloat(symbols) * gap, cy: cy, half: true, r: rowSymbolR)
                     }
                 }
                 // The key, boxed off from the data like a printed chart.
@@ -123,7 +129,8 @@ struct PictographView: View {
         )
     }
 
-    private func symbol(_ ctx: inout GraphicsContext, cx: CGFloat, cy: CGFloat, half: Bool) {
+    private func symbol(_ ctx: inout GraphicsContext, cx: CGFloat, cy: CGFloat, half: Bool, r: CGFloat? = nil) {
+        let symbolR = r ?? self.symbolR
         let rect = CGRect(x: cx - symbolR, y: cy - symbolR, width: symbolR * 2, height: symbolR * 2)
         if !half {
             ctx.fill(Path(ellipseIn: rect), with: .color(symbolColor))

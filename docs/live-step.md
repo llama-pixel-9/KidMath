@@ -6,8 +6,8 @@ Grade 2. Money is not taken live by this process (see the last section).
 
 Nothing in `scripts/live/` writes to the database. The scripts read exported
 JSON files and write SQL files. A person runs those files, and only after
-Sai has typed the go for that step. Steps that need his typed go are marked
-**[GO]** below, with the words he types.
+Sai has typed the go for that step. Steps that need Sai's typed go are marked
+**[GO]** below, with the words Sai types.
 
 The plan behind this is `item-skill/live-step/plan.md` (section C).
 
@@ -65,7 +65,7 @@ skill. Nine sit in a skill that serves its other family, and their own rows
 are deferred. `bankCellCoverage.spec.js` names each one with its reason in
 `EMPTY_CELLS`, and checks the reason still holds.
 
-**Both decisions are Sai's defaults and can change.** If he says "clear the
+**Both are the recommended defaults while Sai's two cards are open (2026-10-03).** If Sai says "clear the
 drafts first" or "don't defer", change `liveRules.js` and rerun `prepare`.
 
 ## Step 1. Export (read-only)
@@ -204,7 +204,7 @@ builds before PR #150 do not show these topics at all.
 Sai plays signed in, at phone width:
 `/play/wordProblems?skill=<skill id>&preview=v2`.
 
-- He can retire a bad item in `/admin`, or the agent writes the SQL with
+- Sai can retire a bad item in `/admin`, or the agent writes the SQL with
   `live/retire wordProblems --run <run> --ids a,b` and runs it after a
   **[GO]**. Retiring never deletes a row.
 - Then re-export with `live/exportSql wordProblems --grade 2 --for readiness`

@@ -8,7 +8,12 @@
  *   1. Fixed judge: no run starts without --model. The receipt records the
  *      model, the sha of each system prompt, kidView's sha and commit, and
  *      the sha of the items.
- *   2. Two passes, A and B: the same judge, other batch neighbours.
+ *   2. Two passes, A and B: the same judge, other batch neighbours. Each
+ *      pass shuffles on its own, picks its canaries with its own offset,
+ *      and pads a short batch with neighbours of its own drawing (other
+ *      items of the run, whose verdicts there are not kept), so even a
+ *      refill round of a few items sits in different company per pass.
+ *      Each batch's members are in the receipt.
  *   3. Fail-closed: an item passes only if both passes reach the key and
  *      both call it printable. The caller (prepare.mjs) drops an item
  *      flagged once and refills it; flagged twice, or 10% of a model's
@@ -177,23 +182,42 @@ export async function askClaude(prompt, { system, model }) {
   return extractJsonArray(await runClaude(prompt, { system, model }));
 }
 
+/** The id of the item a corrupted-key canary was copied from. */
+const canarySource = (itemId) => String(itemId).replace(/^canary-key-[^-]+-/, "");
+
 /**
- * Ask one gate about `items` in one pass. Each batch carries REAL_PER_BATCH
- * real items, one bad canary and one known-good, under opaque ids, so the
- * judge cannot tell them apart. Returns { verdicts: Map(itemId -> verdict),
- * canaries: [{ kind, itemId, flagged }], void: reason | null, calls }.
+ * Ask one gate about `items` in one pass. Each batch carries up to
+ * REAL_PER_BATCH real items, one bad canary and one known-good, under
+ * opaque ids, so the judge cannot tell them apart; a batch short of real
+ * items is padded from `neighbours` (verdicts not kept). The canaries and
+ * the padding are picked per pass (`offset`), so passes A and B differ even
+ * when every real item fits one batch. Returns { verdicts: Map(itemId ->
+ * verdict), canaries: [{ kind, itemId, flagged }], batches: [[itemId]],
+ * void: reason | null, calls }.
  */
-async function runPass(gate, pass, attempt, items, { facts, badCanaries, goodCanaries, ask, allowAmbiguous, log, salt }) {
+async function runPass(gate, pass, attempt, items, { facts, badCanaries, goodCanaries, neighbours = [], ask, allowAmbiguous, log, salt }) {
   const verdicts = new Map();
   const canaries = [];
+  const batches = [];
   let calls = 0;
+  const offset = attempt + QC_PASSES.indexOf(pass);
   const order = shuffled(items, `${gate}|${pass}|${attempt}|${salt}`);
   for (let b = 0; b * REAL_PER_BATCH < order.length; b += 1) {
     const real = order.slice(b * REAL_PER_BATCH, (b + 1) * REAL_PER_BATCH);
-    const good = goodCanaries[(b + attempt) % goodCanaries.length];
-    const bad = badCanaries(b, real, good);
+    const good = goodCanaries[(b + offset) % goodCanaries.length];
+    const bad = badCanaries(b + offset, real, good);
     if (!bad) throw new Error(`${gate} pass ${pass}: batch ${b + 1} has no bad canary`);
-    const entries = [...real.map((item) => ({ kind: "real", item })), ...(bad ? [{ kind: "bad", item: bad }] : []), ...(good ? [{ kind: "good", item: good }] : [])];
+    const busy = new Set([...real.map((i) => i.itemId), good?.itemId, bad.itemId, canarySource(bad.itemId)]);
+    const padding = real.length < REAL_PER_BATCH
+      ? shuffled(neighbours.filter((n) => !busy.has(n.itemId)), `${gate}|${pass}|${attempt}|${b}|${salt}|pad`).slice(0, REAL_PER_BATCH - real.length)
+      : [];
+    const entries = [
+      ...real.map((item) => ({ kind: "real", item })),
+      ...padding.map((item) => ({ kind: "neighbour", item })),
+      { kind: "bad", item: bad },
+      ...(good ? [{ kind: "good", item: good }] : []),
+    ];
+    batches.push(entries.map((e) => e.item.itemId).sort());
     const batch = shuffled(entries, `${gate}|${pass}|${attempt}|${b}|${salt}|batch`).map((e, i) => {
       const view = kidView(e.item);
       const opaque = `q${sha256(`${salt}|${gate}|${pass}|${attempt}|${b}|${i}`).slice(0, 8)}`;
@@ -216,7 +240,7 @@ async function runPass(gate, pass, attempt, items, { facts, badCanaries, goodCan
       const reply = replies.get(e.opaque);
       const verdict = reply ? verdictFrom(gate, e.view, reply, { allowAmbiguous }) : { flagged: true, reason: "the judge returned no verdict for this item" };
       if (e.kind === "real") verdicts.set(e.item.itemId, { ...verdict, cached: false });
-      else canaries.push({ kind: e.kind, itemId: e.item.itemId, flagged: verdict.flagged, reason: verdict.reason });
+      else if (e.kind !== "neighbour") canaries.push({ kind: e.kind, itemId: e.item.itemId, flagged: verdict.flagged, reason: verdict.reason });
     }
     log(`${gate} pass ${pass}${attempt ? ` (rerun ${attempt})` : ""}: batch ${b + 1} of ${Math.ceil(order.length / REAL_PER_BATCH)}`);
   }
@@ -226,7 +250,7 @@ async function runPass(gate, pass, attempt, items, { facts, badCanaries, goodCan
     ...missedBad.map((c) => `missed the bad canary ${c.itemId}`),
     ...failedGood.map((c) => `flagged the known-good ${c.itemId}: ${c.reason}`),
   ];
-  return { verdicts, canaries, void: why.length ? why.join("; ") : null, calls };
+  return { verdicts, canaries, batches, void: why.length ? why.join("; ") : null, calls };
 }
 
 // ── The panels ────────────────────────────────────────────────────────────
@@ -296,6 +320,9 @@ export async function runPanels(items, {
   const pool = [...(canaryPool || items), ...good.blind, ...spare].map((it, i) => corruptKey(it, String(i))).filter(Boolean);
   if (!pool.length) throw new Error("no item's key could be corrupted for the blind-solve canary");
   const salt = sha256(jsonbText(items.map((i) => i.itemId).sort()));
+  const itemIds = new Set(items.map((i) => i.itemId));
+  // Padding for short batches: the run's other items (never a canary).
+  const others = (canaryPool || []).filter((i) => !itemIds.has(i.itemId) && !String(i.itemId).startsWith("canary-"));
 
   const verdicts = new Map(items.map((i) => [i.itemId, { blind: {}, kidSafe: {} }]));
   const passLog = [];
@@ -320,22 +347,26 @@ export async function runPanels(items, {
         passLog.push({ gate, pass, items: 0, attempts: [], cached: items.length });
         continue;
       }
+      const needIds = new Set(need.map((i) => i.itemId));
       const badCanaries =
         gate === "blind"
-          ? (b, real, good) => {
+          ? (k, real, good) => {
               // Never the corrupted copy of an item in the same batch.
               const ids = new Set([...real.map((r) => r.itemId), good?.itemId]);
-              const others = pool.filter((c) => !ids.has(c.itemId.replace(/^canary-key-[^-]+-/, "")));
-              return others.length ? others[b % others.length] : null;
+              const free = pool.filter((c) => !ids.has(canarySource(c.itemId)));
+              return free.length ? free[k % free.length] : null;
             }
-          : (b) => stories[b % stories.length];
+          : (k) => stories[k % stories.length];
+      // Neighbours: the run's other items, and items of this gate and pass
+      // already settled (cached), never one this pass is judging.
+      const neighbours = [...others, ...items.filter((i) => !needIds.has(i.itemId))];
       const attempts = [];
       let done = null;
       const maxReruns = smoke ? 0 : MAX_VOID_RERUNS;
       for (let attempt = 0; attempt <= maxReruns && !done; attempt += 1) {
-        const r = await runPass(gate, pass, attempt, need, { facts, badCanaries, goodCanaries: good[gate], ask, allowAmbiguous, log, salt });
+        const r = await runPass(gate, pass, attempt, need, { facts, badCanaries, goodCanaries: good[gate], neighbours, ask, allowAmbiguous, log, salt });
         calls += r.calls;
-        attempts.push({ attempt, void: r.void, canaries: r.canaries, calls: r.calls });
+        attempts.push({ attempt, void: r.void, canaries: r.canaries, batches: r.batches, calls: r.calls });
         if (!r.void) done = r;
         else log(`${gate} pass ${pass} is void: ${r.void}`);
       }

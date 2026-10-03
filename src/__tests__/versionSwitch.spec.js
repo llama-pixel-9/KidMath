@@ -116,15 +116,29 @@ describe("isServable", () => {
   });
 
   it("serves the bundled Math Facts rows (v2 only) with no switch row, and holds them back at v1", () => {
-    const v2 = SEED_ITEMS.filter((item) => item.version != null);
+    // Every bundled v2 row is a v2-only topic's: Math Facts, and the topics
+    // the live step filled (a committed manifest; checked in the next test).
+    const all = SEED_ITEMS.filter((item) => item.version != null);
+    expect(all.every((item) => V2_ONLY_MODE_IDS.includes(item.modeId) && Number(item.version) === 2)).toBe(true);
+    const v2 = all.filter((item) => item.modeId === "mathFacts");
     expect(v2.length).toBeGreaterThan(0);
-    expect(v2.every((item) => item.modeId === "mathFacts" && Number(item.version) === 2)).toBe(true);
     expect(v2.every((item) => isServable(item, new Map()))).toBe(true);
     expect(v2.every((item) => isServable(item, null))).toBe(true);
     expect(v2.some((item) => isServable(item, new Map([["mathFacts", "v1"]])))).toBe(false);
     expect(v2.some((item) => isServable(item, new Map([["mathFacts", "preview"]])))).toBe(false);
     expect(v2.every((item) => isServable(item, new Map([["mathFacts", "v2"]])))).toBe(true);
     expect(v2.every((item) => isServable(item, new Map([["mathFacts", "preview"]]), { preview: true }))).toBe(true);
+  });
+
+  it("serves the bundled rows of a preview-default topic only to preview viewers until it is flipped", () => {
+    const rows = SEED_ITEMS.filter((item) => item.version != null && DEFAULT_LIVE_VERSION[item.modeId] === "preview");
+    for (const item of rows) {
+      const mode = item.modeId;
+      expect(isServable(item, new Map()), item.itemId).toBe(false);
+      expect(isServable(item, new Map(), { preview: true }), item.itemId).toBe(true);
+      expect(isServable(item, new Map([[mode, "v1"]]), { preview: true }), item.itemId).toBe(false);
+      expect(isServable(item, new Map([[mode, "v2"]])), item.itemId).toBe(true);
+    }
   });
 
   it("defaults every v2-only topic to v2 or preview (never v1, never missing); every other topic with no row is v1", () => {

@@ -120,6 +120,10 @@ struct Theme: Identifiable {
             "patterns": Theme.seafoam, "measurement": Theme.apricot,
             "time": Theme.tealMid, "dataGraphs": Theme.sunLight,
             "angles": Theme.seafoam, "linesShapes": Theme.apricot,
+            // The v2-only topics take the web tile's tint (HomePage.jsx
+            // CARD_TINTS by MODE_IDS position).
+            "mathFacts": Theme.apricot, "wordProblems": Theme.tealMid,
+            "multiDigit": Theme.sunLight,
         ]
     )
 }

@@ -11,9 +11,12 @@ import SwiftUI
 ///           10" is answered by doing it).
 ///
 /// `frames: 2` stacks two frames for teen numbers, filling left-to-right, top
-/// row first, first frame first. Used by seven modes (addition, subtraction,
-/// comparing, counting, numberBonds, placeValue, skipCounting); before this
-/// existed iOS fell back to a choice grid for all of them.
+/// row first, first frame first. `takeAway` crosses out the last that many
+/// fixed counters, so a subtraction is visible as a take-away (Math Facts:
+/// 8 counters, 3 crossed out, "How many counters are left?"). Used by seven
+/// modes (addition, subtraction, comparing, counting, numberBonds,
+/// placeValue, skipCounting) and Math Facts; before this existed iOS fell
+/// back to a choice grid for all of them.
 struct TenFrameWidget: View {
     @Environment(\.theme) private var theme
     let display: [String: Any]
@@ -28,6 +31,7 @@ struct TenFrameWidget: View {
     private var frames: Int { max(1, min(2, ProgressStore.int(display["frames"]) == 0 ? 1 : ProgressStore.int(display["frames"]))) }
     private var isBuild: Bool { (display["frameMode"] as? String) == "build" }
     private var fixed: Int { filled + filledB }
+    private var takeAway: Int { max(0, ProgressStore.int(display["takeAway"])) }
 
     var body: some View {
         VStack(spacing: 12) {
@@ -84,6 +88,7 @@ struct TenFrameWidget: View {
         let isFixed = i < fixed
         let isAdded = added.contains(i)
         let tappable = isBuild && !isFixed && !disabled
+        let crossed = takeAway > 0 && isFixed && i >= fixed - takeAway
         return Button {
             guard tappable else { return }
             if isAdded { added.remove(i) } else { added.insert(i) }
@@ -96,7 +101,19 @@ struct TenFrameWidget: View {
                         .fill(i < filled ? Color(red: 0.94, green: 0.27, blue: 0.40) : Color(red: 0.05, green: 0.65, blue: 0.91))
                         .overlay(Circle().stroke(Color.black.opacity(0.15), lineWidth: 2))
                         .frame(width: 36, height: 36)
+                        .opacity(crossed ? 0.4 : 1)
                         .transition(.scale)
+                }
+                if crossed {
+                    // The web's cross: M8 8 L32 32 M32 8 L8 32 on a 40 box.
+                    Path { p in
+                        p.move(to: CGPoint(x: 8, y: 8))
+                        p.addLine(to: CGPoint(x: 32, y: 32))
+                        p.move(to: CGPoint(x: 32, y: 8))
+                        p.addLine(to: CGPoint(x: 8, y: 32))
+                    }
+                    .stroke(Theme.ink, style: StrokeStyle(lineWidth: 4, lineCap: .round))
+                    .frame(width: 40, height: 40)
                 }
             }
             .frame(width: 52, height: 52)
@@ -104,7 +121,7 @@ struct TenFrameWidget: View {
         }
         .buttonStyle(.plain)
         .disabled(!tappable)
-        .accessibilityLabel(isFixed ? "counter" : isAdded ? "your counter" : "empty cell")
+        .accessibilityLabel(crossed ? "crossed-out counter" : isFixed ? "counter" : isAdded ? "your counter" : "empty cell")
         .accessibilityAddTraits(isBuild && isAdded ? .isSelected : [])
     }
 }

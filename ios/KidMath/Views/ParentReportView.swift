@@ -219,6 +219,9 @@ struct ParentReportView: View {
                 ForEach(Array(skillList.enumerated()), id: \.offset) { _, s in
                     let state = s["state"] as? String ?? "new"
                     let progress = s["progress"] as? [String: Any] ?? [:]
+                    let status: String = state == "mastered" ? "mastered" : state == "practicing" ? "\(int(progress["have"])) of \(int(progress["need"]))" : "not started"
+                    // Math Facts: " · 14 of 36 facts fast" (reportModel skillStanding).
+                    let facts: String = ((s["facts"] as? [String: Any])?["text"] as? String).map { " · \($0)" } ?? ""
                     HStack(alignment: .firstTextBaseline) {
                         Text(state == "mastered" ? "★" : state == "practicing" ? "◐" : "○")
                             .foregroundStyle(state == "mastered" ? Theme.teal : Theme.ink.opacity(0.4))
@@ -226,7 +229,7 @@ struct ParentReportView: View {
                             .font(theme.bodyFont(size: 13, weight: .semibold)).foregroundStyle(Theme.ink.opacity(0.8))
                             .fixedSize(horizontal: false, vertical: true)
                         Spacer()
-                        Text(state == "mastered" ? "mastered" : state == "practicing" ? "\(int(progress["have"])) of \(int(progress["need"]))" : "not started")
+                        Text(status + facts)
                             .font(theme.bodyFont(size: 12, weight: .semibold)).foregroundStyle(theme.textMuted)
                     }
                     .padding(.leading, 8)

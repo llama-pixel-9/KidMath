@@ -22,6 +22,9 @@ struct QuestionDisplayView: View {
 
     private var display: [String: Any] { question["display"] as? [String: Any] ?? [:] }
     private var promptText: String? { display["promptText"] as? String }
+    /// The instruction under a prompt ("Is this right?"). Format transforms
+    /// carry it inside `display` (QuestionDisplay.jsx reads both places).
+    private var subPrompt: String? { (question["subPrompt"] as? String) ?? (display["subPrompt"] as? String) }
 
     var body: some View {
         if display["bars"] != nil && question["answerType"] as? String != "barGraph" {
@@ -33,6 +36,8 @@ struct QuestionDisplayView: View {
             clockFaceQuestion
         } else if display["figure"] as? String == "discMat" {
             discMatQuestion
+        } else if display["figure"] as? String == "array" {
+            arrayQuestion
         } else if display["figure"] as? String == "pictograph" {
             figureQuestion {
                 PictographView(
@@ -70,6 +75,25 @@ struct QuestionDisplayView: View {
     /// Web heuristic: six or more letters means a verbal prompt.
     static func isVerbalPrompt(_ text: String) -> Bool {
         text.filter { $0.isLetter }.count >= 6
+    }
+
+    // MARK: - 0c. Array question (rows of dots above a Math Facts times fact:
+    // figure "array", the hint pane's ArrayGrid in figureRegistry.js)
+
+    private var arrayQuestion: some View {
+        let array = display["array"] as? [String: Any] ?? [:]
+        return VStack(spacing: 12) {
+            ArrayDotsView(
+                rows: (array["rows"] as? NSNumber)?.intValue ?? 0,
+                cols: (array["cols"] as? NSNumber)?.intValue ?? 0
+            )
+            if let prompt = promptText {
+                Text(prompt)
+                    .font(.system(size: 24, weight: .heavy, design: .rounded))
+                    .foregroundStyle(theme.textPrimary)
+                    .multilineTextAlignment(.center)
+            }
+        }
     }
 
     // MARK: - 0b. Disc-mat question (read-only place-value disc mat(s);
@@ -211,6 +235,7 @@ struct QuestionDisplayView: View {
                     .multilineTextAlignment(.center)
             }
             priceList
+            if let subPrompt { caption(subPrompt) }
         }
     }
 
@@ -355,11 +380,15 @@ struct QuestionDisplayView: View {
     // MARK: - 6. Plain prompt
 
     private func plainPrompt(_ prompt: String) -> some View {
-        Text(prompt)
-            .font(.system(size: prompt.count > 40 ? 24 : 32, weight: .heavy, design: .rounded))
-            .foregroundStyle(theme.textPrimary)
-            .multilineTextAlignment(.center)
-            .minimumScaleFactor(0.5)
+        VStack(spacing: 8) {
+            Text(prompt)
+                .font(.system(size: prompt.count > 40 ? 24 : 32, weight: .heavy, design: .rounded))
+                .foregroundStyle(theme.textPrimary)
+                .multilineTextAlignment(.center)
+                .minimumScaleFactor(0.5)
+            // A judged claim's instruction ("8 + 5 = 12" + "Is this right?").
+            if let subPrompt { caption(subPrompt) }
+        }
     }
 
     private var fallbackEquation: String {

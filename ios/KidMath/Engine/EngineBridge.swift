@@ -144,12 +144,12 @@ final class EngineBridge {
         _ = try call("setVersionSwitch", [rows, ["preview": preview]])
     }
 
-    /// The v2-only topics (Math Facts) the switch hides from the pickers.
-    /// Not wired yet: ModeCatalog has no Math Facts tile, so nothing calls
-    /// this. When it gets one, read the switch at launch for every kid
-    /// (BankService.refreshVersionSwitch; anon may read the table) and filter
-    /// HomeView, TopicControlsView and WorksheetView by these ids, as
-    /// src/hooks/useHiddenTopics.js does on the web.
+    /// The v2-only topics (Math Facts, Word Problems, Multi-Digit Math) the
+    /// switch hides from the pickers, as src/hooks/useHiddenTopics.js does on
+    /// the web. AppModel.refreshHiddenTopics reads the switch for every kid
+    /// when Home appears (anon may read the table) and keeps the answer;
+    /// HomeView and TopicControlsView list `AppModel.visibleGroups`. The
+    /// worksheet picker needs no filter: these topics have no printable skills.
     func hiddenTopics() throws -> [String] {
         let result = try call("hiddenTopics")
         guard let topics = result.toObject() as? [String] else {
@@ -317,8 +317,13 @@ final class EngineBridge {
     /// recentBankItemIds from Supabase) and `allowWordProblems`. The engine
     /// reads a missing `allowWordProblems` as off, so play always passes
     /// `WordProblemsSetting.isOn()` (on unless a grown-up turned it off).
-    func createSession(mode: String, sessionSize: Int, options: [String: Any] = [:]) throws -> Session {
-        let result = try call("createAdaptiveSession", [mode, sessionSize, options])
+    /// A nil `sessionSize` lets the engine choose, as the web's callers do:
+    /// about 20 facts for Math Facts practice (FLUENCY_SESSION_SIZE), else
+    /// its SESSION_SIZE.
+    func createSession(mode: String, sessionSize: Int?, options: [String: Any] = [:]) throws -> Session {
+        var size: Any = NSNull()
+        if let sessionSize { size = sessionSize }
+        let result = try call("createAdaptiveSession", [mode, size, options])
         guard result.isObject else {
             throw EngineError.badResult("createAdaptiveSession did not return a session object")
         }

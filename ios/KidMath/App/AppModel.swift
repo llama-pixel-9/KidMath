@@ -43,6 +43,17 @@ final class AppModel: ObservableObject {
         didSet { WordProblemsSetting.set(allowWordProblems) }
     }
 
+    /// The v2-only topics the item bank version switch hides from this device
+    /// (KidMath.hiddenTopics, the web's useHiddenTopics). Until the switch is
+    /// read it is what an empty switch means to a viewer not in preview:
+    /// Math Facts shown, Word Problems and Multi-Digit Math hidden, so a
+    /// topic never flashes in and back out.
+    @Published private(set) var hiddenTopics: Set<String> = []
+
+    /// MODE_GROUPS without the hidden topics, and without a group left empty.
+    var visibleGroups: [ModeGroup] { ModeCatalog.visibleGroups(hidden: hiddenTopics) }
+    var visibleModes: [ModeInfo] { visibleGroups.flatMap(\.modes) }
+
     init() {
         supabase = .shared
         let isTestHost = ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil
@@ -62,6 +73,26 @@ final class AppModel: ObservableObject {
             self.practiceLog = nil
             self.engineError = "\(error)"
         }
+        // The engine starts at an empty switch with no preview: the web's
+        // before-load set (useHiddenTopics BEFORE_LOAD).
+        hiddenTopics = Set((try? engine?.hiddenTopics()) ?? [])
+    }
+
+    /// Read the version switch (BankService: at most once per 30 s; anon may
+    /// read it, so this runs for every kid) and take the engine's hidden
+    /// topics, as useHiddenTopics does each time Home mounts. A failed read
+    /// keeps the last good switch.
+    func refreshHiddenTopics() async {
+        await bankService?.refreshVersionSwitch()
+        applyHiddenTopics()
+    }
+
+    /// The hidden topics under the switch the engine holds now, no fetch: a
+    /// preview link calls this after re-injecting the flag.
+    func applyHiddenTopics() {
+        guard let engine else { return }
+        let hidden = Set((try? engine.hiddenTopics()) ?? [])
+        if hidden != hiddenTopics { hiddenTopics = hidden }
     }
 
     func refreshModeLevels() async {

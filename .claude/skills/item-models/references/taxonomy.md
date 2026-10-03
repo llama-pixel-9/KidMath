@@ -145,7 +145,7 @@ and one example of ours. Put that table in the skill's map, not here.
 
 | Value | The child sees | Grade 2 add/sub examples | App today |
 |---|---|---|---|
-| `picture` | the quantities drawn as things | tens and ones, place-value discs, a coin tray, objects in rows of ten | `discMat` figure works in models. No rods-and-units drawing exists (new figure). Object emoji runs render in `promptText` but are not wired into models. Ten frames stop at 20. |
+| `picture` | the quantities drawn as things | tens and ones, place-value discs, a coin tray, objects in rows of ten | `discMat` figure works in models (a picture). The tappable mat (`placeValueDiscs`, `display.mode: "build"`) is in PR #158. No rods-and-units drawing exists (new figure). Object emoji runs render in `promptText` but are not wired into models. Ten frames stop at 20. |
 | `model` | a math model of the relation | tape (bar) diagram; number line with hops; number bond | `barModel` widget: `barPartWhole` (whole and one part known, kid types the other part) and `barCompare` (smaller amount and difference, kid types the bigger). `numberLine` in `lineMode: 'jump'` draws one hop. Other tape shapes and multi-hop lines need widget work. |
 | `numbers` | numerals in text only | a story told in words; a bare equation | always |
 
@@ -189,6 +189,7 @@ Rules:
 | `twoPart` | answers Part A, then Part B | two-step with the middle result asked first | not built: one answer per question |
 | `chooseExpression` | picks the expression, renaming, mistake or trade that fits (text choices) | computation reasoning rows (section 6) | works; model fields as `chooseEquation`; long text choices need a layoutSweep and simulator check |
 | `chooseSymbol` | picks = or ≠ | VA 2.CE.1i | needs build: the symbol keys are fixed to <, = and >, and a two-choice answer is blocked like Yes/No |
+| `buildModel` | builds the answer on a tappable place-value disc mat: adds and takes away discs, trades 10 for 1 and 1 for 10, then Check; the answer is the number the mat shows | mat rows: add or subtract on the mat, 10 or 100 more or less, which trade | PR #158 (2026-10-03; web and iPhone, needs a Mac build before merge). Each place holds 0 to 19 discs and Check opens only when every place has 9 or fewer |
 
 A blocked format can still be drafted as a row. Mark it `app: "needs …"` so
 Sai can approve or strike it knowing the cost.
@@ -361,7 +362,10 @@ model, columns or a row, and the answer format never move it.
   question was rejected (kit, "Rules learned from the Grade 2 add/subtract
   review"). The tappable mat is the `placeValueDiscs` widget with
   `display.mode: "build"` and the start mat in `display.cols`; the answer is
-  the number the finished mat shows (being built, 2026-10-03).
+  the number the finished mat shows, scored like a typed number (format
+  `buildModel`, section 3; PR #158, 2026-10-03). Start the mat on the first
+  number only, and let the kid do the step: the six Grade 2 mat models
+  (`calc-g2-*-discs*-2`, `calc-g2-which-trade-*-2`) are the exemplars.
 - **Number line**: one hop works today (the kid types its length). Several
   hops, or the landing point as the answer, need widget work.
 - **Numbers past 999 in choices** print without commas (1005), so the prompt

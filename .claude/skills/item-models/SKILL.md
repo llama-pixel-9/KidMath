@@ -542,15 +542,16 @@ Still open:
     two-part answers don't exist. There is no ≠ key.
   - The tape diagram has two shapes only. Its bars were labelled A and B,
     which Sai rejected on 2026-10-03; names on the bars (`labelA`, `labelB`
-    on a `barCompare` display) are being added. The number line draws one
+    on a `barCompare` display) are in PR #158. The number line draws one
     hop. There are no base-ten blocks.
   - The disc mat was a picture only, and Sai rejected five mat models on
     2026-10-03 for it. A mat the kid taps (`placeValueDiscs` with
-    `display.mode: "build"`; the answer is the number the finished mat shows)
-    is being built. Until it merges, no model may ask the kid to work on a
-    mat.
+    `display.mode: "build"`, format `buildModel`; the answer is the number
+    the finished mat shows) is in PR #158 with the six rewritten mat models.
+    Until it merges and deploys, no model may ask the kid to work on a mat,
+    and mat drafts stay out of Sai's queue (the live preview can't draw them).
   - The price list drew on the web only, and the blind solver was not shown
-    it; an iPhone table and a solver line are being added (2026-10-03).
+    it; the iPhone table and the solver line are in PR #158 (2026-10-03).
   - Long text choices sit two to a row; check them with screenshots.
   - Hint pictures other than dots, array, strip, numberLine and tenFrame
     (coinTray, barModel, tapeDiagram, clock, placeValueDiscs, hundredChart)
@@ -576,7 +577,8 @@ Still open:
   Sai's first review the same night rejected 7 with notes and asked for
   fixed copies of 10 approved ones; their lessons are in the kit, and the
   fixes (a tappable disc mat, names on bars, more objects, wider estimate
-  keys) load as `-2` drafts. Both
+  keys) are `-2` drafts in PR #158. The 10 that render on today's app are in
+  Sai's queue; the 6 mat models and the bar-name model load once #158 deploys. Both
   topics stay hidden until their items exist (step 7).
 - **Scope.** All of Grade 2 adding and subtracting (Sai, 2026-10-02), in two
   lists. Kindergarten, Grade 1 and Grade 3 follow with the same process.

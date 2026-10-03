@@ -120,7 +120,7 @@ or one per listed variant. This file covers:
 | `structureType` | The taxonomy id, a two-step id from the taxonomy, or the skill map's id for a non-additive skill. The model copies it. |
 | `representation` | `picture` (the quantities drawn as things), `model` (tape diagram, number line, bond) or `numbers`. A model is never a picture row. |
 | `story` | `true` if a context matters to the question. `false` for a bare item: in a story skill, the relation as an equation with a box. |
-| `format` | `typed`, `multipleChoice`, `chooseEquation`, `chooseStory`, `chooseModel`, `completeModel`, `trueFalse`, `multiSelect`, `twoPart`, or for computation rows `chooseExpression` and `chooseSymbol` (taxonomy section 3). |
+| `format` | `typed`, `multipleChoice`, `chooseEquation`, `chooseStory`, `chooseModel`, `completeModel`, `buildModel`, `trueFalse`, `multiSelect`, `twoPart`, or for computation rows `chooseExpression` and `chooseSymbol` (taxonomy section 3). |
 | `widget` | The widget the models will use: `numberPad`, `barModel`, `numberLine`, `null` (choice grid)… |
 | `demand` | `recall`, `procedure` or `reasoning`. |
 | `steps` | `1` or `2`. |
@@ -162,6 +162,7 @@ The row's `spec.format` sets three model fields:
 | `chooseEquation`, `chooseStory`, `chooseExpression` | `choice` | `null` | `text` | works; check long text choices with `layoutSweep` |
 | `chooseSymbol` | `choice` | `null` | `text` | needs build: no ≠ key, and two choices are blocked like Yes/No |
 | `completeModel` | `number` | `barModel` or `numberLine` | `int` | two bar shapes, one hop |
+| `buildModel` | `number` | `placeValueDiscs`, with `display: {mode: "build", cols: [{place, count}, …]}` (biggest place first) | `int` | PR #158: the answer is the value of the finished mat |
 | `chooseModel` | | | | needs figure work |
 | `trueFalse` | `choice` | `null` | `text` ("Yes" / "No") | blocked: Yes/No has one distractor, but `validateModel` wants 2 and the harness wants 3+ choices |
 | `multiSelect` | `multiSelect` | `multiSelect` | | blocked: a model cannot carry a list answer |

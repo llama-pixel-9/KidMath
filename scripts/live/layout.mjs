@@ -19,6 +19,9 @@ import { join, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import { modelIdOfItem } from "../../src/itemModels/live/liveRules.js";
 
+// `window` below is the swept page's, inside page.evaluate (run in the browser).
+/* global window */
+
 /** Pixels an element may stick out before it counts (layoutSweep.mjs uses 2). */
 export const SPILL_PX = 2;
 export const VIEWPORT = Object.freeze({ width: 390, height: 900 });

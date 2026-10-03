@@ -11,7 +11,11 @@
  *     then every table, item_bank paged by --page rows (default 1000):
  *     item_models.json, blueprint_rows.json, switch.json, identities-001.json ...
  *   ... exportSql.mjs <topic> --grade 2 --for readiness
- *     what readiness.mjs reads: live.json (the checksum), rows.json, retired.json, switch.json
+ *     what readiness.mjs reads first: live.json (row count, checksum and the
+ *     retired count) and switch.json
+ *   ... exportSql.mjs <topic> --grade 2 --for readiness --live <dir>/live.json
+ *     then the pages: rows-001.json ... (each live row's md5) and
+ *     retired-001.json ... (the topic's retired v2 rows), paged by --page
  *
  * Options: --with-spec adds each model's spec to item_models.json (to look
  * at a drifted model; the drift check itself needs only spec_md5).
@@ -22,10 +26,10 @@
  */
 import { readFileSync } from "node:fs";
 import { parseArgs, sqlString } from "./lib/common.mjs";
-import { checksumSql, rowMd5Sql } from "../../src/itemModels/live/liveRows.js";
+import { lineSql, rowMd5Sql } from "../../src/itemModels/live/liveRows.js";
 import { liveWhere } from "./lib/sql.mjs";
 
-const HELP = `exportSql.mjs <topic> --grade <g> [--counts <counts.json>] [--page 1000] [--with-spec] [--for prepare|readiness]`;
+const HELP = `exportSql.mjs <topic> --grade <g> [--counts <counts.json>] [--page 1000] [--with-spec] [--for prepare|readiness] [--live <live.json>]`;
 
 /**
  * The display fields promptIdentity keys on (src/itemBank/index.js), read
@@ -86,25 +90,57 @@ export function exportQueries(topic, grade, { page = 1000, identities = null, wi
   return out;
 }
 
-export function readinessQueries(topic, grade) {
+/** A topic and grade's retired version-2 rows (what readiness --rewrite drops from a manifest). */
+export function retiredWhere(topic, grade) {
+  return `mode_id = ${sqlString(topic)} and version = 2 and review_status = 'retired' and tags->>'grade' = ${sqlString(String(grade))}`;
+}
+
+const pageName = (name, i) => `${name}-${String(i + 1).padStart(3, "0")}.json`;
+const pageCount = (n, page) => Math.max(1, Math.ceil(Number(n) / page));
+
+/**
+ * What readiness.mjs reads. Without `live` (live.json's one row): the
+ * checksum query, which also counts the retired rows, and the switch. With
+ * it: the row md5s and the retired rows, paged by `page` (item_bank reads
+ * page: CLAUDE.md), whose lengths readiness checks against live.json.
+ */
+export function readinessQueries(topic, grade, { live = null, page = 1000 } = {}) {
   const where = liveWhere(topic, grade);
-  return [
-    { file: "live.json", sql: checksumSql(where) },
-    { file: "rows.json", sql: rowMd5Sql(where) },
-    {
-      file: "retired.json",
+  if (!live) {
+    return [
+      {
+        file: "live.json",
+        sql: `select count(*) as rows,
+       md5(string_agg(${lineSql()}, E'\\n' order by item_id collate "C")) as checksum,
+       (select count(*) from public.item_bank where ${retiredWhere(topic, grade)}) as retired
+  from public.item_bank
+ where ${where};
+`,
+      },
+      { file: "switch.json", sql: `select mode_id, live_version, changed_at from public.item_version_switch order by mode_id collate "C";\n` },
+    ];
+  }
+  const rows = Number(live.rows);
+  const retired = Number(live.retired);
+  if (!Number.isInteger(rows) || !Number.isInteger(retired)) throw new Error("live.json needs its rows and retired counts (rerun --for readiness without --live)");
+  const out = [];
+  for (let i = 0; i < pageCount(rows, page); i += 1) out.push({ file: pageName("rows", i), sql: rowMd5Sql(where, { limit: page, offset: i * page }) });
+  for (let i = 0; i < pageCount(retired, page); i += 1) {
+    out.push({
+      file: pageName("retired", i),
       sql: `select item_id, updated_at
   from public.item_bank
- where mode_id = ${sqlString(topic)} and version = 2 and review_status = 'retired' and tags->>'grade' = ${sqlString(String(grade))}
- order by item_id collate "C";
+ where ${retiredWhere(topic, grade)}
+ order by item_id collate "C"
+ limit ${page} offset ${i * page};
 `,
-    },
-    { file: "switch.json", sql: `select mode_id, live_version, changed_at from public.item_version_switch order by mode_id collate "C";\n` },
-  ];
+    });
+  }
+  return out;
 }
 
 function main() {
-  const args = parseArgs(process.argv.slice(2), { flags: ["help", "with-spec"], options: ["grade", "counts", "page", "for"] });
+  const args = parseArgs(process.argv.slice(2), { flags: ["help", "with-spec"], options: ["grade", "counts", "page", "for", "live"] });
   if (args.flags.has("help") || !args.positional[0] || !args.options.grade) {
     process.stdout.write(`${HELP}\n`);
     return args.flags.has("help") ? 0 : 2;
@@ -113,8 +149,15 @@ function main() {
   const grade = args.options.grade;
   const purpose = args.options.for || "prepare";
   let queries;
+  const page = Number(args.options.page || 1000);
   if (purpose === "readiness") {
-    queries = readinessQueries(topic, grade);
+    let live = null;
+    if (args.options.live) {
+      const parsed = JSON.parse(readFileSync(args.options.live, "utf8"));
+      live = Array.isArray(parsed) ? parsed[0] : parsed;
+    }
+    queries = readinessQueries(topic, grade, { live, page });
+    if (!live) process.stdout.write("-- Save both results, then rerun with --live <dir>/live.json for the row pages.\n\n");
   } else if (purpose === "prepare") {
     let identities = null;
     if (args.options.counts) {
@@ -122,7 +165,7 @@ function main() {
       identities = (Array.isArray(parsed) ? parsed[0] : parsed)?.identities;
       if (identities == null) throw new Error(`${args.options.counts}: no identities count`);
     }
-    queries = exportQueries(topic, grade, { page: Number(args.options.page || 1000), identities, withSpec: args.flags.has("with-spec") });
+    queries = exportQueries(topic, grade, { page, identities, withSpec: args.flags.has("with-spec") });
     if (identities == null) {
       process.stdout.write("-- Save the result as counts.json, then rerun with --counts <dir>/counts.json for the tables.\n\n");
     }

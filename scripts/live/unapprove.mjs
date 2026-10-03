@@ -2,42 +2,35 @@
 /**
  * Rollback of a live-step run (plan C.5.9): the SQL that moves the run's
  * approved rows back to draft, keyed on source->>'run'. Prints it (or
- * writes --out); never runs it, never deletes. The preview query returns
- * how many rows the update would touch, to compare with the expected count
- * printed beside it before anyone runs the update.
+ * writes --out); never runs it, never deletes. The file starts with a
+ * read-only preview, and its update fires only when exactly the expected
+ * count matches (lib/sql.mjs guardedUpdateSql), so running the file whole
+ * changes nothing on a wrong count.
  *
- *   node --import ./scripts/lib/registerResolve.js scripts/live/unapprove.mjs <topic> --run <run> [--manifest <manifest.js>] [--out <file.sql>]
+ *   node --import ./scripts/lib/registerResolve.js scripts/live/unapprove.mjs <topic> --run <run> (--manifest <manifest.js> | --expected <n>) [--out <file.sql>]
  *
- * With --manifest the expected count is the manifest's rows of that run.
+ * The expected count is the manifest's rows of that run, or --expected.
+ * prepare.mjs writes the same file for each run (rollback/unapprove-rows.sql).
  */
 import { pathToFileURL } from "node:url";
 import { liveRunWhere, runRowCount, writeOrPrint } from "./lib/rollback.mjs";
 import { parseArgs } from "./lib/common.mjs";
+import { guardedUpdateSql } from "./lib/sql.mjs";
 
-export function unapproveSql(topic, run, { expected = null } = {}) {
+export function unapproveSql(topic, run, { expected } = {}) {
   const where = `${liveRunWhere(topic, run)} and review_status = 'approved'`;
   return `-- Unapprove live-step run ${run} (${topic}): its approved v2 rows go back to draft. Nothing is deleted.
--- 1. Preview (read-only). Expected: ${expected ?? "the run's approved rows"}.
-select count(*) as would_unapprove from public.item_bank where ${where};
-
--- 2. The update, once the preview matches.
-with u as (
-  update public.item_bank set review_status = 'draft'
-   where ${where}
-  returning 1
-)
-select count(*) as unapproved from u;
-`;
+${guardedUpdateSql({ table: "public.item_bank", where, set: "review_status = 'draft'", expected, previewAs: "would_unapprove", updatedAs: "unapproved" })}`;
 }
 
 async function main() {
-  const args = parseArgs(process.argv.slice(2), { flags: ["help"], options: ["run", "manifest", "out"] });
+  const args = parseArgs(process.argv.slice(2), { flags: ["help"], options: ["run", "manifest", "expected", "out"] });
   const topic = args.positional[0];
-  if (args.flags.has("help") || !topic || !args.options.run) {
-    process.stdout.write("unapprove.mjs <topic> --run <run> [--manifest <manifest.js>] [--out <file.sql>]\n");
+  if (args.flags.has("help") || !topic || !args.options.run || (!args.options.manifest && args.options.expected == null)) {
+    process.stdout.write("unapprove.mjs <topic> --run <run> (--manifest <manifest.js> | --expected <n>) [--out <file.sql>]\n");
     return args.flags.has("help") ? 0 : 2;
   }
-  const expected = args.options.manifest ? await runRowCount(args.options.manifest, args.options.run) : null;
+  const expected = args.options.manifest ? await runRowCount(args.options.manifest, args.options.run) : Number(args.options.expected);
   writeOrPrint(unapproveSql(topic, args.options.run, { expected }), args.options.out);
   return 0;
 }

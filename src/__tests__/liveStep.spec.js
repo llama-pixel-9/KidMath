@@ -1,5 +1,5 @@
-import { describe, expect, it } from "vitest";
-import { readdirSync, statSync } from "node:fs";
+import { beforeAll, describe, expect, it } from "vitest";
+import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from "node:fs";
 import { join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 import { BLUEPRINT_ROWS } from "../blueprints/index.js";
@@ -29,16 +29,21 @@ import {
   identityOf,
   itemFromIdentityRow,
   jsonbText,
+  repeatedQuestions,
   rowLine,
   selectFills,
   specMd5,
   toDbRow,
 } from "../itemModels/live/liveRows.js";
 import { SCRIPT_ROW_TIERS, listedTiers, rowCoverage, skillServing } from "../itemModels/live/liveCoverage.js";
-import { insertChunks } from "../../scripts/live/lib/sql.mjs";
-import { IDENTITY_DISPLAY_FIELDS } from "../../scripts/live/exportSql.mjs";
+import { blueprintApprovalSql, blueprintRollbackSql, checkSql, guardedUpdateSql, insertChunks, switchSql } from "../../scripts/live/lib/sql.mjs";
+import { checkExportCounts, loadManifest, manifestModule } from "../../scripts/live/lib/common.mjs";
+import { IDENTITY_DISPLAY_FIELDS, exportQueries, readinessQueries } from "../../scripts/live/exportSql.mjs";
 import { corruptKey, disagreement, judgeFacts, modelFlags, passedAll, runPanels, timesFlagged } from "../../scripts/live/qcPanels.mjs";
-import { diffRows, withoutRetired } from "../../scripts/live/readiness.mjs";
+import { diffRows, readCheckedPages, withoutRetired } from "../../scripts/live/readiness.mjs";
+import { prepare } from "../../scripts/live/prepare.mjs";
+import { FIXTURE_REVIEWER, identityRow, scratchDir, stubLayout, stubQc, writeExport } from "./helpers/liveExport.js";
+import { kidView } from "../../scripts/itemGen/qc/kidView.js";
 import { retireRunSql, retireV1Sql } from "../../scripts/live/retire.mjs";
 import { unapproveSql } from "../../scripts/live/unapprove.mjs";
 import { buildSeed, seedCellKey, subskillSeedModes } from "../../scripts/lib/seedBank.js";
@@ -53,6 +58,8 @@ import { SEED_ITEMS } from "../itemBank/bundle.js";
  */
 
 const SLOW = 60_000;
+
+const writeFileSyncJson = (path, value) => writeFileSync(path, JSON.stringify(value));
 
 // Three rows whose checksum Postgres computed (jsonb_to_recordset, then the
 // same coalesced line and md5(string_agg(... order by item_id collate "C"))):
@@ -206,6 +213,37 @@ describe("the gate and the fills", () => {
     expect(duplicates).toEqual([{ itemId: "twin", sameAs: item.itemId }]);
   });
 
+  it("lets a live holder of a question win over a retired one, whatever the order", () => {
+    const model = firstModel("wordProblems");
+    const item = fill(model, { seed: 1 });
+    const retired = { item: { ...item, itemId: "a-retired" }, status: "retired" };
+    const live = { item: { ...item, itemId: "b-live" }, status: "approved" };
+    for (const entries of [[retired, live], [live, retired]]) {
+      const { index, duplicates } = identityIndex(entries);
+      expect(index.get(identityOf(item))).toEqual({ itemId: "b-live", status: "approved" });
+      expect(duplicates).toEqual([]);
+      const r = selectFills(model, { quota: 1, seeds: [1], taken: new Map(index) });
+      expect(r.picks).toEqual([]);
+      expect(r.skipped[0].reason).toBe("same question as b-live");
+    }
+    // Only a retired holder: the fill may ask it again.
+    expect(selectFills(model, { quota: 1, seeds: [1], taken: identityIndex([retired]).index }).picks).toHaveLength(1);
+    // The same id retired in one source and live in another counts as live.
+    expect(identityIndex([{ item, status: "retired" }, { item, status: "approved" }]).index.get(identityOf(item)).status).toBe("approved");
+  });
+
+  it("names a new row that repeats a question still in play", () => {
+    const model = firstModel("wordProblems");
+    const item = fill(model, { seed: 1 });
+    const other = fill(model, { seed: 2 });
+    expect(repeatedQuestions([item], [{ item: { ...item, itemId: "old" }, status: "retired" }, { item, status: "approved" }])).toEqual([]);
+    expect(repeatedQuestions([item], [{ item: { ...item, itemId: "old" }, status: "draft" }])).toEqual([{ itemId: item.itemId, sameAs: "old" }]);
+    expect(repeatedQuestions([item, { ...item, itemId: "twin" }, other], [])).toEqual([
+      { itemId: item.itemId, sameAs: "twin" },
+      { itemId: "twin", sameAs: item.itemId },
+    ]);
+  });
+
   it("reads an exported identity row back to the item's identity", () => {
     const ids = ["wp-g2-picture-tens-ones", "wp-g2-number-line-compare"];
     const models = [...ids.map(repoModelById), ...repoModelsFor("multiDigit", "2")].filter(Boolean).slice(0, 40);
@@ -288,17 +326,45 @@ describe("the write files", () => {
     expect(one[0].checksum).toBe(PG_CHECKSUM);
   });
 
+  it("stamps the blueprint approval with its run, and undoes exactly the stamped rows", () => {
+    const ids = ["wp-g2-a", "wp-g2-b"];
+    const approve = blueprintApprovalSql(ids, { reviewedBy: reviewer, run: "r1" });
+    expect(approve).toContain("where status = 'draft' and id in ('wp-g2-a', 'wp-g2-b')");
+    expect(approve).toContain("note = concat_ws(' | ', nullif(note, ''), 'approved by live step r1')");
+    expect(approve).toContain("returning id");
+    const undo = blueprintRollbackSql(ids, { run: "r1" });
+    expect(undo).toContain("status = 'approved' and position('approved by live step r1' in coalesce(note, '')) > 0");
+    expect(undo).toContain("set status = 'draft', reviewed_by = null, reviewed_at = null");
+    expect(undo).toContain("and (select n from c) = 2");
+    expect(blueprintApprovalSql([], { reviewedBy: reviewer, run: "r1" })).toBeNull();
+    expect(() => guardedUpdateSql({ table: "t", where: "true", set: "x = 1", previewAs: "p", updatedAs: "u" })).toThrow(/expected row count/);
+  });
+
+  it("writes the switch row at preview only, and pages the row md5s", () => {
+    expect(switchSql("wordProblems", { run: "r1" })).toMatch(/values \('wordProblems', 'preview', 'live step r1'\)\s+on conflict \(mode_id\) do nothing/);
+    const check = checkSql("multiDigit", "2", { rows: 1410, checksum: "c", run: "r1" });
+    expect(check.checksum).toContain("rows 1410, checksum c");
+    expect(check.rowPages.map((p) => p.name)).toEqual(["91-rows-001", "91-rows-002"]);
+    expect(check.rowPages[1].sql).toMatch(/order by item_id collate "C"\n limit 1000 offset 1000;/);
+  });
+
   it("refuses an approved write without a reviewer, and a row of another status", () => {
     expect(() => insertChunks(rows, { run: "r1", topic: "t", grade: "2", status: "approved" })).toThrow(/reviewer/);
     expect(() => insertChunks(rows, { run: "r1", topic: "t", grade: "2", status: "draft" })).toThrow(/status approved, run status draft/);
   });
 
   it("rolls back by run, never deletes, and guards a v1 retire", () => {
-    for (const sql of [unapproveSql("wordProblems", "r1"), retireRunSql("wordProblems", "r1", { ids: ["a"] }), retireV1Sql("addition", ["a"], { tag: "batch-1" })]) {
+    for (const sql of [unapproveSql("wordProblems", "r1", { expected: 7 }), retireRunSql("wordProblems", "r1", { ids: ["a"] }), retireV1Sql("addition", ["a"], { tag: "batch-1" })]) {
       expect(sql).not.toMatch(/\bdelete\b/i);
       expect(sql).toMatch(/select count\(\*\) as would_/);
+      // The update fires only on the expected count, in the same statement: the file is safe to run whole.
+      expect(sql).toMatch(/with c as \([\s\S]*\), u as \(\s*update [\s\S]* and \(select n from c\) = \d+\s+returning 1\s*\)/);
     }
-    expect(unapproveSql("wordProblems", "r1")).toContain("source->>'run' = 'r1'");
+    expect(unapproveSql("wordProblems", "r1", { expected: 7 })).toContain("and (select n from c) = 7");
+    expect(retireRunSql("wordProblems", "r1", { ids: ["a", "b"] })).toContain("and (select n from c) = 2");
+    expect(() => unapproveSql("wordProblems", "r1")).toThrow(/expected row count/);
+    expect(() => retireRunSql("wordProblems", "r1")).toThrow(/expected row count/);
+    expect(unapproveSql("wordProblems", "r1", { expected: 7 })).toContain("source->>'run' = 'r1'");
     expect(retireV1Sql("addition", ["a"], { tag: "batch-1" })).toContain("coalesce(version, 1) = 1");
     expect(retireV1Sql("addition", ["a"], { tag: "batch-1" })).toContain("jsonb_typeof(tags) = 'array'");
     expect(() => retireV1Sql("addition", [], { tag: "b" })).toThrow();
@@ -359,7 +425,66 @@ describe("QC panels", () => {
   );
 });
 
+describe("QC panels: two passes, other company", () => {
+  const wp = repoModelsFor("wordProblems", "2");
+  const small = wp.slice(0, 3).map((m) => fill(m, { seed: 1 }));
+  const neighbours = wp.slice(5, 30).map((m) => fill(m, { seed: 1 }));
+  const goods = wp.slice(30, 33).map((m) => fill(m, { seed: 1 }));
+  const stories = wp.slice(33, 35).map((m, i) => ({ ...fill(m, { seed: 1 }), itemId: `canary-story-${i}` }));
+  const firstLine = (text) => String(text ?? "").split("\n")[0];
+  const keyOf = new Map([...small, ...neighbours, ...goods, ...stories].map((i) => [firstLine(kidView(i).prompt), i.question.answer]));
+  const unprintable = new Set(stories.map((i) => firstLine(kidView(i).prompt)));
+  // An honest judge: reaches every true key, prints every item but the bad stories.
+  const ask = async (prompt) =>
+    [...prompt.matchAll(/itemId: (\S+)\ngrade: [^\n]*\nquestion: ([^\n]*)/g)].map(([, itemId, q]) => ({ itemId, answer: keyOf.get(q), ambiguous: false, printable: !unprintable.has(q), reason: "" }));
+
+  it(
+    "seats a set that fits one batch among other neighbours and canaries in pass B than in pass A",
+    async () => {
+      const facts = judgeFacts("test-judge");
+      const calibration = { model: "test-judge", promptSha: facts.promptSha, kidViewSha: facts.kidViewSha, knownGood: { blind: goods, kidSafe: goods }, badStories: stories };
+      const { verdicts, receipt } = await runPanels(small, { model: "test-judge", calibration, cacheDir: null, ask, checkJudge: false, canaryPool: [...small, ...neighbours] });
+      expect([...verdicts.keys()].sort()).toEqual(small.map((i) => i.itemId).sort());
+      expect([...verdicts.values()].every(passedAll)).toBe(true);
+      for (const gate of ["blind", "kidSafe"]) {
+        const [a, b] = ["A", "B"].map((pass) => receipt.passes.find((p) => p.gate === gate && p.pass === pass).attempts[0]);
+        expect(a.void).toBeNull();
+        expect(a.batches).toHaveLength(1);
+        // The same three real items, padded to a full batch from the run's other items, in other company per pass.
+        for (const batch of [a.batches[0], b.batches[0]]) {
+          for (const item of small) expect(batch).toContain(item.itemId);
+          expect(batch.length).toBeGreaterThan(small.length + 2);
+        }
+        expect(a.batches[0]).not.toEqual(b.batches[0]);
+        const canary = (attempt, kind) => attempt.canaries.find((c) => c.kind === kind).itemId;
+        expect(canary(a, "good")).not.toBe(canary(b, "good"));
+        expect(canary(a, "bad")).not.toBe(canary(b, "bad"));
+      }
+    },
+    SLOW
+  );
+});
+
 describe("readiness", () => {
+  it("checks a paged export against live.json's count", () => {
+    const dir = scratchDir("readiness");
+    const write = (name, rows) => writeFileSyncJson(join(dir, name), rows);
+    write("rows-001.json", [{ item_id: "a", md5: "1" }, { item_id: "b", md5: "2" }]);
+    write("rows-002.json", [{ item_id: "c", md5: "3" }]);
+    expect(readCheckedPages(dir, "rows", 3).map((r) => r.item_id)).toEqual(["a", "b", "c"]);
+    expect(() => readCheckedPages(dir, "rows", 1003)).toThrow(/3 rows exported, count\(\*\) says 1003/);
+    write("rows-003.json", [{ item_id: "c", md5: "3" }]);
+    expect(() => readCheckedPages(dir, "rows", 4)).toThrow(/appears twice/);
+    expect(readCheckedPages(dir, "retired", 0)).toBeNull();
+    expect(() => readCheckedPages(dir, "retired", 0, { required: true })).toThrow(/no retired-001.json/);
+    // The export pages the rows by the count live.json gives.
+    const pages = readinessQueries("multiDigit", "2", { live: { rows: 1410, retired: 3 } });
+    expect(pages.map((q) => q.file)).toEqual(["rows-001.json", "rows-002.json", "retired-001.json"]);
+    expect(pages[1].sql).toContain("limit 1000 offset 1000");
+    expect(readinessQueries("multiDigit", "2").map((q) => q.file)).toEqual(["live.json", "switch.json"]);
+    expect(readinessQueries("multiDigit", "2")[0].sql).toMatch(/as retired/);
+  });
+
   it("names the rows that differ", () => {
     expect(diffRows([{ item_id: "a", md5: "1" }, { item_id: "b", md5: "2" }, { item_id: "x", md5: "9" }], { a: "1", b: "3", c: "4" })).toEqual({ missing: ["c"], extra: ["x"], different: ["b"] });
   });
@@ -373,10 +498,190 @@ describe("readiness", () => {
     expect(next.rows).toBe(2);
     const { items } = refillManifest(next);
     expect(next.md5).toBe(checksumOf(items.map((i) => toDbRow(i, { status: "approved" }))));
+    // Every row of a model retired: the model stays listed, so a --base run never refills it.
+    const empty = withoutRetired(manifest, [1, 2, 3].map((seed) => `${model.id}-s${seed}-v2`)).manifest;
+    expect(empty.models[model.id].seeds).toEqual([]);
+    expect(empty.rows).toBe(0);
+  });
+
+  it("records a retired script row as left out, so a --base run never counts it as new", () => {
+    const [a, b] = calcBankItems();
+    const manifest = { topic: "multiDigit", grade: "2", status: "approved", models: {}, scriptRows: { run: "r1", ids: [a.itemId, b.itemId], excluded: { x: "QC blind A: flagged" } } };
+    const { manifest: next, removed } = withoutRetired(manifest, [b.itemId]);
+    expect(removed).toEqual([b.itemId]);
+    expect(next.scriptRows).toEqual({ run: "r1", ids: [a.itemId], excluded: { x: "QC blind A: flagged", [b.itemId]: "retired" } });
+    expect(next.rows).toBe(1);
   });
 });
 
+describe("the export queries and their check", () => {
+  it("pages item_bank identities by 1,000, in item_id order, after the counts", () => {
+    expect(exportQueries("wordProblems", 2).map((q) => q.file)).toEqual(["counts.json"]);
+    const q = exportQueries("wordProblems", 2, { identities: 2500 });
+    const pages = q.filter((x) => x.file.startsWith("identities-"));
+    expect(pages.map((x) => x.file)).toEqual(["identities-001.json", "identities-002.json", "identities-003.json"]);
+    pages.forEach((x, i) => {
+      expect(x.sql).toContain(`limit 1000 offset ${i * 1000};`);
+      expect(x.sql).toContain('order by item_id collate "C"');
+    });
+    expect(exportQueries("wordProblems", 2, { identities: 1000 }).filter((x) => x.file.startsWith("identities-"))).toHaveLength(1);
+    expect(exportQueries("wordProblems", 2, { identities: 1001, page: 500 }).filter((x) => x.file.startsWith("identities-"))).toHaveLength(3);
+    expect(q.map((x) => x.file).slice(0, 4)).toEqual(["counts.json", "item_models.json", "blueprint_rows.json", "switch.json"]);
+  });
+
+  it("refuses a short, long or doubled table", () => {
+    const t = (ids) => ({ rows: ids.map((id) => ({ id })), files: ["x.json"] });
+    expect(checkExportCounts({ a: t([1, 2]) }, { a: 2 }, { a: "id" })).toEqual([]);
+    expect(checkExportCounts({ a: t([1]) }, { a: 1000 }, { a: "id" })).toEqual(["a: 1 rows exported, count(*) says 1000"]);
+    expect(checkExportCounts({ a: t([1, 2, 3]) }, { a: 2 }, { a: "id" })).toEqual(["a: 3 rows exported, count(*) says 2"]);
+    expect(checkExportCounts({ a: t([1, 1]) }, { a: 2 }, { a: "id" })).toEqual(["a: id 1 appears twice (a page read twice?)"]);
+    expect(checkExportCounts({ a: t([1]) }, {}, { a: "id" })).toEqual(["counts.json has no count for a"]);
+  });
+});
+
+// prepare() end to end on export folders built from the repo (every model
+// approved at its own spec unless a case says otherwise), with layout and QC
+// runners that pass everything: the stops that decide what is written, the
+// dry run, and the files of a full run. A small quota keeps it quick.
+describe("prepare", () => {
+  const QUOTA = 8;
+  const run = (topic, exportDir, extra = {}) =>
+    prepare({ topic, grade: "2", exportDir, run: extra.run || "r1", model: "stub-judge", outRoot: scratchDir("out"), quota: QUOTA, maxSeed: 120, layoutRunner: stubLayout(), qcRunner: stubQc(), ...extra });
+  const wpModels = repoModelsFor("wordProblems", "2");
+  // A model with a "-2" fix: rejected in the first run, so the original is filled.
+  const original = wpModels.find((m) => repoModelById(`${m.id}-2`)).id;
+  const fix = `${original}-2`;
+  let first;
+  let firstManifest;
+  let liveIdentities;
+
+  beforeAll(async () => {
+    first = await run("wordProblems", writeExport(scratchDir("exp"), { topic: "wordProblems", statuses: { [fix]: "rejected" } }));
+    firstManifest = await loadManifest(join(first.outDir, "manifest.js"));
+    const items = JSON.parse(readFileSync(join(first.outDir, "items.json"), "utf8"));
+    liveIdentities = items.map((i) => identityRow(i, { status: "approved", grade: "2" }));
+  }, SLOW);
+
+  it("writes the manifest, the SQL in order, the rollback apart, and a manifest that refills to its md5", () => {
+    expect(first.dry).toBe(false);
+    expect(first.coverage.gaps).toEqual([]);
+    expect(first.manifest.models[original]).toBeTruthy();
+    expect(first.manifest.models[fix]).toBeUndefined();
+    const sql = readdirSync(join(first.outDir, "sql")).filter((f) => f.endsWith(".sql")).sort();
+    expect(sql[0]).toBe("01-blueprints.sql");
+    expect(sql[1]).toBe("02-switch.sql");
+    expect(sql.filter((f) => f.startsWith("03-insert-")).length).toBe(first.chunks);
+    expect(sql).toContain("90-checksum.sql");
+    expect(sql).toContain("91-rows-001.sql");
+    expect(readdirSync(join(first.outDir, "rollback")).sort()).toEqual(["unapprove-blueprints.sql", "unapprove-rows.sql"]);
+    expect(readFileSync(join(first.outDir, "sql", "01-blueprints.sql"), "utf8")).toContain("approved by live step r1");
+    expect(readFileSync(join(first.outDir, "rollback", "unapprove-rows.sql"), "utf8")).toContain(`and (select n from c) = ${first.counts.newRows}`);
+    const { items, problems } = refillManifest(firstManifest);
+    expect(problems).toEqual([]);
+    expect(items).toHaveLength(firstManifest.rows);
+    expect(checksumOf(items.map((i) => toDbRow(i, { status: "approved" })))).toBe(firstManifest.md5);
+    expect(firstManifest.md5).toBe(first.checksum);
+    expect(JSON.parse(readFileSync(join(first.outDir, "expected.json"), "utf8"))).toMatchObject({ rows: first.counts.rows, checksum: first.checksum });
+  });
+
+  it("writes nothing to run on a dry run", async () => {
+    const r = await run("wordProblems", writeExport(scratchDir("exp"), { topic: "wordProblems" }), { skipLayout: true });
+    expect(r.dry).toBe(true);
+    expect(existsSync(join(r.outDir, "items.json"))).toBe(true);
+    expect(existsSync(join(r.outDir, "manifest.js"))).toBe(false);
+    expect(existsSync(join(r.outDir, "sql"))).toBe(false);
+    expect(existsSync(join(r.outDir, "rollback"))).toBe(false);
+  }, SLOW);
+
+  it("stops on an export that is not a whole read", async () => {
+    await expect(run("wordProblems", writeExport(scratchDir("exp"), { topic: "wordProblems", counts: { identities: 5 } }))).rejects.toThrow(/identities: 0 rows exported, count\(\*\) says 5/);
+    const twice = writeExport(scratchDir("exp"), { topic: "wordProblems", identities: [liveIdentities[0], liveIdentities[0]].map((r) => ({ ...r, mode_id: "addition", version: 1 })) });
+    await expect(run("wordProblems", twice)).rejects.toThrow(/identities: item_id \S+ appears twice/);
+  });
+
+  it("stops when the repo and the database disagree on an approved model", async () => {
+    await expect(run("wordProblems", writeExport(scratchDir("exp"), { topic: "wordProblems", md5: { [wpModels[0].id]: "0".repeat(32) } }))).rejects.toThrow(new RegExp(`disagree on 1 approved models .*${wpModels[0].id}`));
+  });
+
+  it("never picks a question a row in play asks, though a retired row sorts first", async () => {
+    const model = wpModels.find((m) => firstManifest.models[m.id]);
+    const item = fill(model, { seed: firstManifest.models[model.id].seeds[0] });
+    const holders = [
+      identityRow({ ...item, itemId: "a-retired", modeId: "addition" }, { status: "retired", version: 1 }),
+      identityRow({ ...item, itemId: "b-live", modeId: "addition" }, { status: "approved", version: 1 }),
+    ];
+    const r = await run("wordProblems", writeExport(scratchDir("exp"), { topic: "wordProblems", statuses: { [fix]: "rejected" }, identities: holders }), { skipLayout: true });
+    const picked = JSON.parse(readFileSync(join(r.outDir, "items.json"), "utf8")).map((i) => i.itemId);
+    expect(picked).not.toContain(item.itemId);
+    expect(r.perModel.find((m) => m.id === model.id).picks).toBe(QUOTA);
+  }, SLOW);
+
+  it("stops on live rows no --base manifest lists", async () => {
+    await expect(run("wordProblems", writeExport(scratchDir("exp"), { topic: "wordProblems", identities: liveIdentities.slice(0, 2) }))).rejects.toThrow(/already has 2 live v2 rows, 2 of them not in a base manifest/);
+  });
+
+  it("stops an approved write to a topic old iPhone builds show, or to a topic live at v2", async () => {
+    await expect(run("money", writeExport(scratchDir("exp"), { topic: "money" }), { status: "approved" })).rejects.toThrow(/iPhone builds before #150/);
+    await expect(run("wordProblems", writeExport(scratchDir("exp"), { topic: "wordProblems", switchRows: [{ mode_id: "wordProblems", live_version: "v2", changed_at: null }] }))).rejects.toThrow(/live at v2 \(its switch row\)/);
+    // Math Facts has no switch row and is live at v2 by the code's default.
+    await expect(run("mathFacts", writeExport(scratchDir("exp"), { topic: "mathFacts" }), { reviewer: FIXTURE_REVIEWER })).rejects.toThrow(/live at v2 \(the code's default, no switch row\)/);
+  });
+
+  it("adds nothing on a --base rerun with nothing changed", async () => {
+    const r = await run("wordProblems", writeExport(scratchDir("exp"), { topic: "wordProblems", statuses: { [fix]: "rejected" }, identities: liveIdentities }), { basePath: join(first.outDir, "manifest.js"), run: "r2" });
+    expect(r.counts).toMatchObject({ rows: first.counts.rows, newRows: 0, baseRows: first.counts.rows });
+    expect(r.checksum).toBe(first.checksum);
+    expect(r.manifest.runs).toEqual(["r1", "r2"]);
+  }, SLOW);
+
+  it("stops a --base rerun on a base model no longer to be served as it is, naming the retire", async () => {
+    const base = { basePath: join(first.outDir, "manifest.js"), run: "r2" };
+    const again = (statuses, extra = {}) => run("wordProblems", writeExport(scratchDir("exp"), { topic: "wordProblems", statuses, identities: liveIdentities, ...extra }), { ...base, ...extra.opts });
+    // Its fix approved since: the original would serve beside it.
+    await expect(again({ [fix]: "approved" })).rejects.toThrow(new RegExp(`${original}: superseded, fix ${fix} is approved[\\s\\S]*live/retire wordProblems --run r1 --ids ${original}-s`));
+    await expect(again({ [fix]: "rejected", [original]: "rejected" })).rejects.toThrow(new RegExp(`${original}: skip, rejected model`));
+    await expect(again({ [fix]: "rejected", [original]: "flagged" })).rejects.toThrow(/skip, flagged model/);
+    // Its spec changed since the base run (the repo and the database agree on the new one).
+    const changed = join(scratchDir("base"), "manifest.js");
+    writeFileSync(changed, manifestModule({ ...firstManifest, models: { ...firstManifest.models, [original]: { ...firstManifest.models[original], specMd5: "f".repeat(32) } } }));
+    await expect(run("wordProblems", writeExport(scratchDir("exp"), { topic: "wordProblems", statuses: { [fix]: "rejected" }, identities: liveIdentities }), { basePath: changed, run: "r2" })).rejects.toThrow(
+      new RegExp(`${original}: its spec in the database changed since the base run`)
+    );
+    // A fix drafted since: held, so its rows stop the run unless kept on purpose.
+    await expect(again({ [fix]: "draft" })).rejects.toThrow(/held, fix .* is a draft[\s\S]*--keep-held/);
+    const kept = await again({ [fix]: "draft" }, { opts: { keepHeld: true } });
+    expect(kept.counts.newRows).toBe(0);
+    expect(kept.manifest.models[original]).toEqual(firstManifest.models[original]);
+    expect(kept.notes.join(" ")).toMatch(/kept the live rows of 1 held --base models/);
+  }, SLOW);
+
+  it(
+    "records a script row it leaves out, and a --base rerun neither writes it nor stops on it",
+    async () => {
+      const script = calcBankItems().filter((i) => i.modeId === "multiDigit" && String(i.tags?.grade) === "2");
+      const flagged = script[0].itemId;
+      const r1 = await run("multiDigit", writeExport(scratchDir("exp"), { topic: "multiDigit" }), { qcRunner: stubQc({ flag: new Set([flagged]) }) });
+      expect(r1.manifest.scriptRows.ids).not.toContain(flagged);
+      expect(r1.manifest.scriptRows.ids).toHaveLength(script.length - 1);
+      expect(r1.manifest.scriptRows.excluded).toEqual({ [flagged]: expect.stringMatching(/^QC blind A: stub flag/) });
+      const items = JSON.parse(readFileSync(join(r1.outDir, "items.json"), "utf8"));
+      const exp = writeExport(scratchDir("exp"), { topic: "multiDigit", identities: items.map((i) => identityRow(i, { status: "approved", grade: "2" })) });
+      const r2 = await run("multiDigit", exp, { basePath: join(r1.outDir, "manifest.js"), run: "r2" });
+      expect(r2.counts.newRows).toBe(0);
+      expect(r2.checksum).toBe(r1.checksum);
+      expect(r2.manifest.scriptRows).toEqual(r1.manifest.scriptRows);
+    },
+    SLOW
+  );
+});
+
 describe("manifests and the bundle", () => {
+  it("ships the seed a fresh build of the bank gives (rerun npm run bank:seed:build)", () => {
+    const { seed } = buildSeed(FULL_ITEMS, 8, { subskillModes: subskillSeedModes() });
+    expect(seed.length).toBe(SEED_ITEMS.length);
+    expect(JSON.stringify(seed) === JSON.stringify(SEED_ITEMS)).toBe(true);
+  });
+
   it("lists every model file under src/itemModels", () => {
     const root = fileURLToPath(new URL("../itemModels/", import.meta.url));
     const files = [];
@@ -478,6 +783,13 @@ describe("manifests and the bundle", () => {
         const seeded = new Set(SEED_ITEMS.map((i) => seedCellKey(i, modes)));
         const missing = [...new Set(items.map((i) => seedCellKey(i, modes)))].filter((k) => !seeded.has(k));
         expect(missing).toEqual([]);
+      });
+
+      it("has the seed ship none of its topic's v2 rows it no longer lists (rerun npm run bank:seed:build)", () => {
+        const mine = new Set(items.map((i) => i.itemId));
+        const others = new Set(MANIFESTS.filter((m) => m !== manifest && m.topic === manifest.topic).flatMap((m) => refillManifest(m).items.map((i) => i.itemId)));
+        const stale = SEED_ITEMS.filter((i) => i.modeId === manifest.topic && Number(i.version) === 2 && String(i.tags?.grade) === String(manifest.grade) && !mine.has(i.itemId) && !others.has(i.itemId));
+        expect(stale.map((i) => i.itemId)).toEqual([]);
       });
 
       it("carries no canary and no model beside its fix", () => {

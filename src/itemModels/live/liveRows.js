@@ -136,12 +136,12 @@ export function checksumSql(where) {
 `;
 }
 
-/** The query that returns each row's own md5, to name the rows that differ. */
-export function rowMd5Sql(where) {
+/** The query that returns each row's own md5, to name the rows that differ (one page of it with `limit`). */
+export function rowMd5Sql(where, { limit = null, offset = 0 } = {}) {
   return `select item_id, review_status, md5(${lineSql()}) as md5
   from public.item_bank
  where ${where}
- order by item_id collate "C";
+ order by item_id collate "C"${limit ? `\n limit ${limit} offset ${offset}` : ""};
 `;
 }
 
@@ -278,21 +278,56 @@ export function identityOf(item) {
   return text ? promptIdentity(item, text) : `id:${item?.itemId}`;
 }
 
+const isRetired = (status) => status === "retired";
+
 /**
- * An identity index: Map(identity -> { itemId, status }). Later entries do
- * not replace earlier ones; a second holder of an identity is returned in
- * `duplicates` (the bank should have none).
+ * An identity index: Map(identity -> { itemId, status }). The first holder
+ * of an identity stays, unless it is retired and a later one is not: a
+ * holder still in play always wins, so a fill whose question only a
+ * retired row asked may be kept, and one a row still in play asks never
+ * is. A second holder in play (beside one in play, under another id) is
+ * returned in `duplicates` (the bank should have none); a retired row
+ * beside a live one is no repeat a kid can meet.
  */
 export function identityIndex(entries) {
   const index = new Map();
   const duplicates = [];
   for (const { item, status } of entries) {
     const key = identityOf(item);
+    const mine = { itemId: item.itemId, status: status ?? item.reviewStatus ?? null };
     const had = index.get(key);
-    if (had && had.itemId !== item.itemId) duplicates.push({ itemId: item.itemId, sameAs: had.itemId });
-    else if (!had) index.set(key, { itemId: item.itemId, status: status ?? item.reviewStatus ?? null });
+    if (!had) {
+      index.set(key, mine);
+      continue;
+    }
+    if (isRetired(mine.status)) continue;
+    if (isRetired(had.status)) index.set(key, mine);
+    else if (had.itemId !== mine.itemId) duplicates.push({ itemId: mine.itemId, sameAs: had.itemId });
   }
   return { index, duplicates };
+}
+
+/**
+ * The `items` whose question a row still in play other than themselves
+ * already asks: any of `entries` ({ item, status }) not retired, or another
+ * of `items`. Returns [{ itemId, sameAs }]. The live step's last word on
+ * promptText uniqueness, independent of the index the fills were picked
+ * against.
+ */
+export function repeatedQuestions(items, entries) {
+  const holders = new Map();
+  const hold = (key, id) => {
+    if (!holders.has(key)) holders.set(key, new Set());
+    holders.get(key).add(id);
+  };
+  for (const { item, status } of entries) if (!isRetired(status ?? item.reviewStatus)) hold(identityOf(item), item.itemId);
+  for (const item of items) hold(identityOf(item), item.itemId);
+  const out = [];
+  for (const item of items) {
+    const others = [...holders.get(identityOf(item))].filter((id) => id !== item.itemId);
+    if (others.length) out.push({ itemId: item.itemId, sameAs: others[0] });
+  }
+  return out;
 }
 
 /**

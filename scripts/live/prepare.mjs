@@ -17,6 +17,10 @@
  *   2. Drift and holds: a model is filled only when the database approved
  *      it and its spec (minus `checks`) equals the repo's; an approved
  *      original whose "-2" fix is a draft is held (liveRules.planModels).
+ *      Every --base model must still be one the plan fills, with the spec
+ *      it was filled from: one rejected, flagged, superseded by an approved
+ *      fix, or held (unless --keep-held) stops the run, with the retire
+ *      commands for its live rows.
  *   3. Fill: each model seed by seed to its quota, through appGate (the row
  *      as the app will hold it), new questions only, no hint-pane example.
  *      Script rows (calcItems.js) of the topic go through the same gate.
@@ -30,20 +34,29 @@
  *      each catalog skill would serve.
  *   7. Output in <out>/<topic>/<run>/: manifest.js, sql/ (blueprint
  *      approval, switch row, insert chunks with read-only try files,
- *      checksum and per-row md5 queries), expected.json, expected-rows.json,
- *      items.json, receipt.json and report.md.
+ *      checksum and paged per-row md5 queries), rollback/ (the guarded
+ *      updates that undo the blueprint approval and the rows, never run in
+ *      order with sql/), expected.json, expected-rows.json, items.json,
+ *      receipt.json and report.md.
  *
  * --skip-layout and --skip-qc make a dry run: the report and items.json,
  * never a manifest or SQL (every gate must run before anything is written).
  *
  * Options: --quota 30, --max-seed 200, --status approved|draft (default by
  * topic: liveRules.writeStatusFor), --chunk-kb 100, --cache <dir> (QC
- * verdicts and calibration), --out qa-out/live, --max-ab 0.02.
+ * verdicts and calibration), --out qa-out/live, --max-ab 0.02, --keep-held
+ * (a --base model now held keeps its live rows until its fix is reviewed).
+ *
+ * Script rows a run leaves out (a layout spill, a QC flag, a held row) are
+ * recorded in the manifest (scriptRows.excluded, with the reason), as are
+ * script rows retired later (readiness.mjs --rewrite): a --base run neither
+ * writes them nor counts them as new.
  */
 import { existsSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import { BLUEPRINT_ROWS } from "../../src/blueprints/index.js";
+import { DEFAULT_LIVE_VERSION, liveVersionFor, switchMapFromRows } from "../../src/itemBank/versionRules.js";
 import { calcBankItems } from "../../src/multiDigit/calcItems.js";
 import { repoModelById, repoModelsFor } from "../../src/itemModels/repoModels.js";
 import {
@@ -66,6 +79,7 @@ import {
   identityIndex,
   identityOf,
   itemFromIdentityRow,
+  repeatedQuestions,
   rowMd5s,
   selectFills,
   specMd5,
@@ -87,15 +101,16 @@ import {
   writeJson,
   writeText,
 } from "./lib/common.mjs";
-import { blueprintApprovalSql, checkSql, insertChunks, switchSql } from "./lib/sql.mjs";
+import { blueprintApprovalSql, blueprintRollbackSql, checkSql, insertChunks, switchSql } from "./lib/sql.mjs";
 import { spilled } from "./layout.mjs";
+import { unapproveSql } from "./unapprove.mjs";
 
 const HELP = `prepare.mjs <topic> --grade <g> --export <dir> --model <judge id>
   [--run <id>] [--base <manifest.js>] [--reviewer <uuid>] [--status approved|draft]
   [--quota ${FILL_QUOTA}] [--max-seed ${MAX_SEED}] [--chunk-kb 100] [--cache <dir>] [--out qa-out/live]
-  [--max-ab ${MAX_AB_DISAGREEMENT}] [--skip-layout] [--skip-qc]   (either skip: a dry run, no manifest or SQL)`;
+  [--max-ab ${MAX_AB_DISAGREEMENT}] [--keep-held] [--skip-layout] [--skip-qc]   (either skip: a dry run, no manifest or SQL)`;
 
-class Stop extends Error {}
+export class Stop extends Error {}
 const stop = (msg) => {
   throw new Stop(msg);
 };
@@ -196,6 +211,7 @@ export async function prepare(opts) {
     outRoot = "qa-out/live",
     skipLayout = false,
     skipQc = false,
+    keepHeld = false,
     maxAb = MAX_AB_DISAGREEMENT,
     log = () => {},
     layoutRunner = null,
@@ -234,7 +250,14 @@ export async function prepare(opts) {
   const strangers = [...liveIds].filter((id) => !baseIds.has(id));
   if (strangers.length) stop(`${topic} grade ${g} already has ${liveIds.size} live v2 rows, ${strangers.length} of them not in ${basePath ? "--base" : "a base manifest (pass --base <its manifest>)"}: ${strangers.slice(0, 5).join(", ")}${strangers.length > 5 ? " ..." : ""}`);
   const unwritten = [...baseIds].filter((id) => !liveIds.has(id));
-  if (unwritten.length) stop(`--base lists ${unwritten.length} rows the bank does not hold live (${unwritten.slice(0, 3).join(", ")} ...): write or retire them first`);
+  if (unwritten.length) {
+    const retiredIds = new Set(ex.identities.filter((r) => r.review_status === "retired").map((r) => r.item_id));
+    const retiredHere = unwritten.filter((id) => retiredIds.has(id)).length;
+    stop(
+      `--base lists ${unwritten.length} rows the bank does not hold live (${unwritten.slice(0, 3).join(", ")}${unwritten.length > 3 ? " ..." : ""}; ${retiredHere} of them retired): ` +
+        "drop retired rows from the base with live/readiness <base> --export <dir> --rewrite, and run the base's own SQL for rows never written"
+    );
+  }
 
   // Item ids the bank already holds in any status: an insert would leave
   // them as they are, so a new pick may never reuse one.
@@ -268,6 +291,38 @@ export async function prepare(opts) {
   const notInDb = repoModels.filter((m) => !plan.has(m.id)).map((m) => m.id);
   if (notInDb.length) notes.push(`in the repo but not in the database (not filled): ${notInDb.join(", ")}`);
 
+  // The base's models are kept, never refilled: each must still be one the
+  // plan fills, with the spec its live rows were filled from. A model since
+  // rejected, flagged, superseded by an approved fix, or held would keep
+  // live rows (and a superseded one would serve beside its fix).
+  const baseProblems = [];
+  const retireCommands = [];
+  const keptHeld = [];
+  let heldInBase = false;
+  for (const [id, entry] of Object.entries(base?.models || {})) {
+    const p = plan.get(id);
+    const repoModel = repoModelById(id);
+    let why = null;
+    if (!p) why = "not in the database's item_models";
+    else if (p.state === "held" && keepHeld) keptHeld.push(`${id} (${p.reason})`);
+    else if (p.state !== "fill") why = `${p.state}, ${p.reason} (the database says ${statuses.get(id)})`;
+    else if (dbMd5.get(id) !== entry.specMd5) why = "its spec in the database changed since the base run";
+    else if (repoModel && specMd5(repoModel) !== entry.specMd5) why = "its spec in the repo changed since the base run";
+    if (!why) continue;
+    if (p?.state === "held") heldInBase = true;
+    baseProblems.push(`${id}: ${why}`);
+    retireCommands.push(`live/retire ${topic} --run ${entry.run} --ids ${(entry.seeds || []).map((seed) => `${id}-s${seed}-v2`).join(",")}`);
+  }
+  if (baseProblems.length) {
+    stop(
+      `--base carries ${baseProblems.length} models whose live rows must not stay as they are:\n  ${baseProblems.join("\n  ")}\n` +
+        `Retire their rows (SQL for a human-approved run):\n  ${retireCommands.join("\n  ")}\n` +
+        `then drop them from the base (live/readiness <base> --export <dir> --rewrite) and rerun with the rewritten base.` +
+        (heldInBase ? " A held model's rows may instead stay live until its fix is reviewed: --keep-held." : "")
+    );
+  }
+  if (keptHeld.length) notes.push(`kept the live rows of ${keptHeld.length} held --base models (--keep-held): ${keptHeld.join(", ")}`);
+
   let reviewedBy = reviewer;
   if (status === "approved" && !reviewedBy) {
     const who = [...new Set(ex.models.filter((m) => plan.get(m.id)?.state === "fill").map((m) => m.reviewed_by).filter(Boolean))];
@@ -275,21 +330,33 @@ export async function prepare(opts) {
     reviewedBy = who[0];
   }
 
-  // An approved row in a topic already switched to v2 would be live at once,
-  // before anyone has played it at preview.
+  // An approved row in a topic already live at v2 (by its switch row, or by
+  // the code's default when it has none) would reach kids at once, before
+  // anyone has played it at preview.
   const sw = ex.switchRows.find((r) => r.mode_id === topic);
-  if (status === "approved" && sw && sw.live_version === "v2") stop(`${topic} is already switched to v2: approved rows would reach kids before anyone plays them at preview; switch it to preview first`);
+  const liveNow = liveVersionFor(switchMapFromRows(ex.switchRows), topic);
+  if (status === "approved" && liveNow === "v2") {
+    stop(`${topic} is live at v2 (${sw ? "its switch row" : "the code's default, no switch row"}): approved rows would reach kids before anyone plays them at preview; switch it to preview first`);
+  }
 
   // Models this run fills: approved, unheld, not already in --base.
   const baseModelIds = new Set(Object.keys(base?.models || {}));
   const fillModels = repoModels.filter((m) => plan.get(m.id)?.state === "fill" && !baseModelIds.has(m.id));
   const qcHolds = new Map(); // modelId or script row -> reason
 
-  // 3. Script rows: fixed rows, so a failure stops the run rather than refilling.
+  // 3. Script rows: fixed rows, so a failure stops the run rather than
+  // refilling. A base run wrote its script rows and recorded the ones it
+  // left out (and readiness --rewrite the ones retired since): neither is new.
   log("3. fill");
   const baseScript = new Set(base?.scriptRows?.ids || []);
-  const scriptNew = scriptAll.filter((i) => !baseScript.has(i.itemId));
-  if (baseScript.size && scriptNew.length) stop(`the script makes ${scriptNew.length} rows --base does not list (${scriptNew[0].itemId} ...): script rows are written in one run; retire the base's and write them again`);
+  const baseExcluded = base?.scriptRows?.excluded || {};
+  const scriptNew = scriptAll.filter((i) => !baseScript.has(i.itemId) && !Object.hasOwn(baseExcluded, i.itemId));
+  if (base?.scriptRows && scriptNew.length) {
+    stop(
+      `the script makes ${scriptNew.length} rows the --base run neither wrote nor left out (${scriptNew.slice(0, 3).map((i) => i.itemId).join(", ")}${scriptNew.length > 3 ? " ..." : ""}): ` +
+        "src/multiDigit/calcItems.js changed since that run. A topic's script rows are written in one run (the manifest stamps them with one run id), so revert that change, or make it in a manifest of its own"
+    );
+  }
   const scriptProblems = [];
   const scriptIndex = new Map(baseIndex);
   for (const item of scriptNew) {
@@ -415,7 +482,7 @@ export async function prepare(opts) {
   const serving = skillServing({ topic, grade: g, items: allItems });
 
   // The rows and their checksum.
-  const kidSafeOf = (item) =>
+  const kidSafeOf = () =>
     skipQc ? null : { ok: true, hits: [], checked_at: qcReceipts.at(-1)?.createdAt ?? null, passes: 2, receipt: sha256(JSON.stringify(qcReceipts.map((r) => r.itemsSha))) };
   const specOf = (id) => dbMd5.get(id);
   const runOf = (item) => {
@@ -423,7 +490,7 @@ export async function prepare(opts) {
     return run;
   };
   const dbRows = allItems.map((item) =>
-    toDbRow(item, { status, run: runOf(item), specMd5: item.itemModelId ? specOf(item.itemModelId) : null, kidSafe: baseIds.has(item.itemId) ? null : kidSafeOf(item) })
+    toDbRow(item, { status, run: runOf(item), specMd5: item.itemModelId ? specOf(item.itemModelId) : null, kidSafe: baseIds.has(item.itemId) ? null : kidSafeOf() })
   );
   const newRows = dbRows.filter((r) => !baseIds.has(r.item_id));
   const checksum = checksumOf(dbRows);
@@ -437,6 +504,21 @@ export async function prepare(opts) {
     for (const i of newItems) if (!qc.passedAll(qcVerdicts.get(i.itemId))) missingVerdicts.push(`${i.itemId}: not cleared by QC`);
   }
   if (missingVerdicts.length) stop(`items without a clean verdict: ${missingVerdicts.slice(0, 5).join("; ")}`);
+
+  // promptText stays unique: no new row may ask what a row still in play
+  // asks (the bank in any status but retired, the bundle, the script rows,
+  // the base) or what another new row asks.
+  const repeats = repeatedQuestions(newItems, [...entries, ...baseItems.map((item) => ({ item, status: "picked" }))]);
+  if (repeats.length) stop(`${repeats.length} new rows ask a question a row in play already asks: ${repeats.slice(0, 5).map((r) => `${r.itemId} = ${r.sameAs}`).join(", ")}`);
+
+  // Script rows this run leaves out, with why: a later --base run counts them as decided.
+  const scriptExcluded = { ...baseExcluded };
+  const kept = new Set(scriptKept.map((i) => i.itemId));
+  for (const item of scriptNew) {
+    if (kept.has(item.itemId)) continue;
+    const group = `script:${item.blueprintId}`;
+    scriptExcluded[item.itemId] = dropped.get(item.itemId) || qcHolds.get(group) || layoutHolds.get(group) || "left out";
+  }
 
   // The manifest.
   const manifest = {
@@ -453,7 +535,11 @@ export async function prepare(opts) {
       ),
     },
     scriptRows: scriptAll.length
-      ? { run: base?.scriptRows?.ids?.length ? base.scriptRows.run : run, ids: [...(base?.scriptRows?.ids || []), ...scriptKept.map((i) => i.itemId)] }
+      ? {
+          run: base?.scriptRows?.ids?.length ? base.scriptRows.run : run,
+          ids: [...(base?.scriptRows?.ids || []), ...scriptKept.map((i) => i.itemId)],
+          ...(Object.keys(scriptExcluded).length ? { excluded: scriptExcluded } : {}),
+        }
       : null,
     runs: [...new Set([...(base?.runs || (base ? [base.run] : [])), run])],
     // Tiers with no items yet that wait on a model (held, or a draft fix):
@@ -512,7 +598,7 @@ export async function prepare(opts) {
     createdAt: new Date().toISOString(),
     git: gitFacts(),
     export: { dir: resolve(exportDir), counts: ex.counts, files: ex.files },
-    options: { quota, maxSeed, basePath, reviewer: reviewedBy, skipLayout, skipQc, maxAb },
+    options: { quota, maxSeed, basePath, reviewer: reviewedBy, skipLayout, skipQc, keepHeld, maxAb },
     itemsSha,
     itemsJsonSha: fileSha(join(outDir, "items.json")),
     checksum,
@@ -538,11 +624,19 @@ export async function prepare(opts) {
 
   writeText(join(outDir, "manifest.js"), manifestModule(manifest));
   const sqlDir = join(outDir, "sql");
+  // Undoing the write: never in sql/, which runs in file order.
+  const rollbackDir = join(outDir, "rollback");
   const draftRows = ex.blueprintRows.filter((r) => r.status === "draft").map((r) => r.id);
   if (status === "approved") {
     const bp = blueprintApprovalSql(draftRows, { reviewedBy, run });
-    if (bp) writeText(join(sqlDir, "01-blueprints.sql"), bp);
-    if (!ex.switchRows.some((r) => r.mode_id === topic)) writeText(join(sqlDir, "02-switch.sql"), switchSql(topic, { run }));
+    if (bp) {
+      writeText(join(sqlDir, "01-blueprints.sql"), bp);
+      writeText(join(rollbackDir, "unapprove-blueprints.sql"), blueprintRollbackSql(draftRows, { run }));
+    }
+    // The switch row only states the default a v2-only topic already has at
+    // preview; any other topic gets none from here (a flip is the owner's act).
+    if (!sw && DEFAULT_LIVE_VERSION[topic] === "preview") writeText(join(sqlDir, "02-switch.sql"), switchSql(topic, { run }));
+    if (newRows.length) writeText(join(rollbackDir, "unapprove-rows.sql"), unapproveSql(topic, run, { expected: newRows.length }));
   }
   const chunks = insertChunks(newRows, { run, topic, grade: g, status, reviewedBy, chunkKb });
   for (const c of chunks) {
@@ -551,7 +645,7 @@ export async function prepare(opts) {
   }
   const check = checkSql(topic, g, { rows: dbRows.length, checksum, run });
   writeText(join(sqlDir, "90-checksum.sql"), check.checksum);
-  writeText(join(sqlDir, "91-rows.sql"), check.rows);
+  for (const p of check.rowPages) writeText(join(sqlDir, `${p.name}.sql`), p.sql);
   writeJson(join(outDir, "expected.json"), { run, topic, grade: g, rows: dbRows.length, checksum, chunks: chunks.map((c) => ({ name: c.name, rows: c.rows, checksum: c.checksum })) });
   writeJson(join(outDir, "expected-rows.json"), rowMd5s(dbRows));
   result.chunks = chunks.length;
@@ -617,7 +711,7 @@ function reportMd(r) {
 
 async function main() {
   const args = parseArgs(process.argv.slice(2), {
-    flags: ["help", "skip-layout", "skip-qc"],
+    flags: ["help", "skip-layout", "skip-qc", "keep-held"],
     options: ["grade", "export", "run", "base", "reviewer", "status", "quota", "max-seed", "chunk-kb", "model", "cache", "out", "max-ab"],
   });
   const topic = args.positional[0];
@@ -641,6 +735,7 @@ async function main() {
     cacheDir: args.options.cache || "qa-out/live/qc-cache",
     outRoot: args.options.out || "qa-out/live",
     maxAb: num("max-ab", MAX_AB_DISAGREEMENT),
+    keepHeld: args.flags.has("keep-held"),
     skipLayout: args.flags.has("skip-layout"),
     skipQc: args.flags.has("skip-qc"),
     log: (m) => process.stderr.write(`${m}\n`),

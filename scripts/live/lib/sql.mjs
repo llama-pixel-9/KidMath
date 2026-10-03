@@ -103,20 +103,85 @@ select count(*) as rows, md5(string_agg(${lineSql("r")}, E'\\n' order by r.item_
   });
 }
 
-/** Approve a topic and grade's draft blueprint rows (approval lives in the database), deferred rows included: the list was approved whole. */
+/**
+ * An update that fires only on the count it expects, as one statement: the
+ * file is safe to run whole (the SQL editor and execute_sql run every
+ * statement). Every sub-statement of a WITH sees the same snapshot, so `c`
+ * counts the rows before the update. Returns the preview and the update,
+ * which reports matched, expected and the rows it changed (0 when matched
+ * differs from expected: nothing changes).
+ */
+export function guardedUpdateSql({ table, where, set, expected, previewAs, updatedAs, returning = "1" }) {
+  if (!Number.isInteger(expected) || expected < 0) throw new Error(`a guarded update needs the expected row count (got ${expected})`);
+  return `-- 1. Preview (read-only). Expected: ${expected}.
+select count(*) as ${previewAs} from ${table}
+ where ${where};
+
+-- 2. The update. It changes nothing unless exactly ${expected} rows match, so this file is safe to run whole;
+--    check that ${updatedAs} = expected afterwards.
+with c as (
+  select count(*) as n from ${table}
+   where ${where}
+), u as (
+  update ${table}
+     set ${set}
+   where ${where}
+     and (select n from c) = ${expected}
+  returning ${returning}
+)
+select (select n from c) as matched, ${expected} as expected, count(*) as ${updatedAs} from u;
+`;
+}
+
+/** The note a live-step blueprint approval leaves on each row it moves (the rollback keys on it). */
+export const blueprintStamp = (run) => `approved by live step ${run}`;
+
+/**
+ * Approve a topic and grade's draft blueprint rows (approval lives in the
+ * database), deferred rows included: the list was approved whole. Each row
+ * it moves is stamped with the run in `note`, so blueprintRollbackSql can
+ * move exactly those back.
+ */
 export function blueprintApprovalSql(ids, { reviewedBy, run }) {
   if (!ids.length) return null;
   if (!UUID.test(String(reviewedBy))) throw new Error(`blueprint approval needs the reviewer's user id (got ${reviewedBy})`);
+  const stamp = sqlString(blueprintStamp(run));
   return `-- Live step ${run}: approve the topic and grade's ${ids.length} draft blueprint rows (the owner approved the
--- lists; approval lives in the database). Only drafts move; an approved or struck row is left alone.
+-- lists; approval lives in the database). Only drafts move; an approved or struck row is left alone. Each row
+-- moved carries ${stamp} in its note: rollback/unapprove-blueprints.sql undoes exactly those.
 with u as (
   update public.blueprint_rows
-     set status = 'approved', reviewed_by = ${sqlString(reviewedBy)}::uuid, reviewed_at = now()
+     set status = 'approved', reviewed_by = ${sqlString(reviewedBy)}::uuid, reviewed_at = now(),
+         note = concat_ws(' | ', nullif(note, ''), ${stamp})
    where status = 'draft' and id in (${ids.map(sqlString).join(", ")})
-  returning 1
+  returning id
 )
-select count(*) as approved from u;
+select count(*) as approved, array_agg(id order by id) as ids from u;
 `;
+}
+
+/**
+ * Undo blueprintApprovalSql: the rows it stamped go back to draft, with no
+ * reviewer, and the stamp leaves the note. Guarded on the count it moved.
+ */
+export function blueprintRollbackSql(ids, { run, expected = ids.length }) {
+  if (!ids.length) return null;
+  const stamp = blueprintStamp(run);
+  const where = `id in (${ids.map(sqlString).join(", ")})
+     and status = 'approved' and position(${sqlString(stamp)} in coalesce(note, '')) > 0`;
+  return `-- Undo live step ${run}'s blueprint approval: the rows it approved (stamped ${sqlString(stamp)}) go back to draft.
+-- Run only after the run's item rows are back to draft (rollback/unapprove-rows.sql), and only after a go.
+-- The expected count, ${expected}, is the export's draft rows: if 01-blueprints.sql approved another number,
+-- change it in "(select n from c) = ..." and "... as expected" first.
+${guardedUpdateSql({
+  table: "public.blueprint_rows",
+  where,
+  set: `status = 'draft', reviewed_by = null, reviewed_at = null,
+         note = nullif(trim(both ' |' from replace(note, ${sqlString(stamp)}, '')), '')`,
+  expected,
+  previewAs: "would_unapprove",
+  updatedAs: "unapproved",
+})}`;
 }
 
 /**
@@ -134,15 +199,28 @@ returning mode_id, live_version;
 `;
 }
 
-/** checksum.sql and rows.sql for a topic and grade, with what they must return. */
-export function checkSql(topic, grade, { rows, checksum, run }) {
+/**
+ * checksum.sql and the rows pages for a topic and grade, with what they must
+ * return. The rows read pages by `page` (item_bank reads page: CLAUDE.md),
+ * one file per page for the rows the run expects, saved as rows-001.json
+ * ... for readiness.mjs, which checks the pages against live.json's count.
+ * When the checksum shows another count, page by that one instead
+ * (exportSql.mjs --for readiness --live <live.json>).
+ */
+export function checkSql(topic, grade, { rows, checksum, run, page = 1000 }) {
   const where = liveWhere(topic, grade);
+  const pages = Math.max(1, Math.ceil(rows / page));
+  const pad = (n) => String(n).padStart(3, "0");
   return {
     checksum: `-- Live step ${run}: the ${topic} grade ${grade} rows live in the bank. Expected:
 --   rows ${rows}, checksum ${checksum}
 ${checksumSql(where)}`,
-    rows: `-- Live step ${run}: each live ${topic} grade ${grade} row's md5, to name the rows that differ
--- (compare with expected-rows.json, or save the result as rows.json for readiness.mjs).
-${rowMd5Sql(where)}`,
+    rowPages: Array.from({ length: pages }, (_, i) => ({
+      name: `91-rows-${pad(i + 1)}`,
+      sql: `-- Live step ${run}: each live ${topic} grade ${grade} row's md5, page ${i + 1} of ${pages}, to name the rows that
+-- differ (compare with expected-rows.json, or save the result as rows-${pad(i + 1)}.json for readiness.mjs, beside
+-- the live.json and switch.json that exportSql.mjs --for readiness prints).
+${rowMd5Sql(where, { limit: page, offset: i * page })}`,
+    })),
   };
 }

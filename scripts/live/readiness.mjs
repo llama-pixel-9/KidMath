@@ -2,8 +2,9 @@
 /**
  * Is a topic's live step what its manifest says? Read-only: it reads an
  * export folder (exportSql.mjs <topic> --grade <g> --for readiness prints
- * the SELECTs: live.json, rows.json, retired.json, switch.json) and the
- * committed manifest, and reports
+ * the SELECTs: live.json and switch.json, then with --live the pages
+ * rows-001.json ... and retired-001.json ...) and the committed manifest,
+ * and reports
  *   - the bank's checksum of the topic's live v2 rows against the
  *     manifest's md5 (and, when they differ, which rows: missing, extra,
  *     different);
@@ -13,9 +14,16 @@
  *
  *   node --import ./scripts/lib/registerResolve.js scripts/live/readiness.mjs <manifest.js> --export <dir>
  *   ... --rewrite [--out <manifest.js>]
- *     drop the rows the owner retired during play (retired.json) from the
- *     manifest and write it again (default: in place), so the bundle and
- *     the bank keep agreeing; commit it and CI checks it again.
+ *     drop the rows the owner retired during play (the retired pages) from
+ *     the manifest and write it again (default: in place), so the bundle and
+ *     the bank keep agreeing. Then rebuild the seed (npm run bank:seed:build:
+ *     liveStep.spec fails while the seed still carries a dropped row),
+ *     commit both, and CI checks them again.
+ *
+ * The row and retired pages are checked against live.json's counts (a
+ * short or doubled export is refused). The row pages are needed only when
+ * the checksum differs, to name the rows; the retired pages only for
+ * --rewrite.
  *
  * Exit 0 when the bank matches the manifest and no skill has a serving
  * gap, else 1.
@@ -27,13 +35,29 @@ import { refillManifest } from "../../src/itemBank/v2/modelRows.js";
 import { checksumOf, rowMd5s, toDbRow } from "../../src/itemModels/live/liveRows.js";
 import { skillServing } from "../../src/itemModels/live/liveCoverage.js";
 import { modelIdOfItem } from "../../src/itemModels/live/liveRules.js";
-import { loadManifest, manifestModule, parseArgs, writeText } from "./lib/common.mjs";
+import { checkExportCounts, loadManifest, manifestModule, parseArgs, readExportTable, writeText } from "./lib/common.mjs";
 
 function readJson(dir, name) {
   const path = join(dir, name);
   if (!existsSync(path)) throw new Error(`export ${dir}: no ${name} (scripts/live/exportSql.mjs --for readiness)`);
   const parsed = JSON.parse(readFileSync(path, "utf8"));
   return Array.isArray(parsed) ? parsed : Array.isArray(parsed?.rows) ? parsed.rows : [parsed];
+}
+
+/**
+ * The paged rows or retired export (`name`-001.json ..., or `name`.json),
+ * checked against live.json's count: null when absent and not `required`.
+ */
+export function readCheckedPages(dir, name, want, { required = false } = {}) {
+  const table = readExportTable(dir, name, { required: false });
+  if (!table) {
+    if (required) throw new Error(`export ${dir}: no ${name}-001.json pages (scripts/live/exportSql.mjs --for readiness --live <dir>/live.json)`);
+    return null;
+  }
+  if (want == null || !Number.isFinite(Number(want))) throw new Error(`export ${dir}: live.json has no ${name} count to check ${name} against (rerun exportSql.mjs --for readiness)`);
+  const problems = checkExportCounts({ [name]: table }, { [name]: want }, { [name]: "item_id" });
+  if (problems.length) throw new Error(`export ${dir} is not a whole read: ${problems.join("; ")}`);
+  return table.rows;
 }
 
 /** The manifest's rows as the database holds them. */
@@ -56,7 +80,10 @@ export function diffRows(bank, expected) {
 
 /**
  * The manifest without `retiredIds`: their seeds and script ids removed,
- * rows and md5 recomputed. Returns { manifest, removed }.
+ * rows and md5 recomputed. Returns { manifest, removed }. A model keeps its
+ * entry when every seed is gone (seeds []), so a --base run still counts it
+ * as filled and never refills it; a retired script row is recorded in
+ * scriptRows.excluded, so a --base run never counts it as new.
  */
 export function withoutRetired(manifest, retiredIds) {
   const gone = new Set(retiredIds);
@@ -68,15 +95,18 @@ export function withoutRetired(manifest, retiredIds) {
       if (gone.has(itemId)) removed.push(itemId);
       return !gone.has(itemId);
     });
-    if (seeds.length) models[id] = { ...entry, seeds };
+    models[id] = { ...entry, seeds };
   }
   const next = { ...manifest, models };
   if (manifest.scriptRows) {
+    const excluded = { ...(manifest.scriptRows.excluded || {}) };
     const ids = manifest.scriptRows.ids.filter((id) => {
-      if (gone.has(id)) removed.push(id);
-      return !gone.has(id);
+      if (!gone.has(id)) return true;
+      removed.push(id);
+      excluded[id] = "retired";
+      return false;
     });
-    next.scriptRows = { ...manifest.scriptRows, ids };
+    next.scriptRows = { ...manifest.scriptRows, ids, ...(Object.keys(excluded).length ? { excluded } : {}) };
   }
   const { rows } = manifestRows(next);
   next.rows = rows.length;
@@ -103,28 +133,31 @@ async function main() {
     return 1;
   }
 
+  const [live] = readJson(dir, "live.json");
   if (args.flags.has("rewrite")) {
-    const retired = readJson(dir, "retired.json").map((r) => r.item_id);
+    const retired = readCheckedPages(dir, "retired", live?.retired, { required: true }).map((r) => r.item_id);
     const { manifest: next, removed } = withoutRetired(manifest, retired);
     if (!removed.length) say("rewrite: no retired row is in the manifest; nothing to change");
     else {
       const out = args.options.out || path;
       writeText(out, manifestModule(next));
       say(`rewrite: removed ${removed.length} retired rows (${removed.slice(0, 5).join(", ")}${removed.length > 5 ? " ..." : ""}); ${next.rows} rows, md5 ${next.md5} -> ${out}`);
+      say("         now rebuild the seed (npm run bank:seed:build) and commit both: the bundle still ships the removed rows until then, and liveStep.spec fails");
       manifest = next;
       ({ items, rows } = manifestRows(manifest));
     }
   }
 
   let ok = true;
-  const [live] = readJson(dir, "live.json");
   const bankRows = Number(live?.rows ?? 0);
   if (live?.checksum === manifest.md5 && bankRows === manifest.rows) say(`ok   bank ${bankRows} live rows, checksum ${live.checksum} = manifest`);
   else {
     ok = false;
     say(`RED  bank ${bankRows} live rows, checksum ${live?.checksum}; manifest ${manifest.rows} rows, ${manifest.md5}`);
-    if (existsSync(join(dir, "rows.json"))) {
-      const d = diffRows(readJson(dir, "rows.json"), rowMd5s(rows));
+    const bank = readCheckedPages(dir, "rows", live?.rows);
+    if (!bank) say("     export the row pages (exportSql.mjs --for readiness --live <dir>/live.json) to name the rows that differ");
+    else {
+      const d = diffRows(bank, rowMd5s(rows));
       for (const [k, list] of Object.entries(d)) if (list.length) say(`     ${k} ${list.length}: ${list.slice(0, 8).join(", ")}${list.length > 8 ? " ..." : ""}`);
     }
   }

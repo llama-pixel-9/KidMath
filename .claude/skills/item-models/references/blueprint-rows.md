@@ -31,7 +31,7 @@ or one per listed variant. This file covers:
    `src/standards/<fw>.json` in long form.
 4. **Loading, after merge only.**
    - On an up-to-date `main`, run `node scripts/standards/loadStandards.js`. It
-     prints the SQL, about 540 KB. Run it through the Supabase tools
+     prints the SQL, about 680 KB. Run it through the Supabase tools
      (`execute_sql`) or the SQL editor. No service key is needed.
    - **The SQL rewrites more than your rows.** It upserts every standard and
      deletes and reinserts every state's crosswalk links. Run it from a stale or
@@ -134,8 +134,10 @@ or one per listed variant. This file covers:
 | `why` | One line naming what justifies the row: the standard's own clause (paraphrased), the Table 1 type, or a test format seen in released items. It is never "for variety". |
 | `state` | `null` for a Common Core row. For a state line, `{ "framework": "tx", "asks": "<what this state's test or standard asks that Common Core does not>" }`; `framework` may be a list (`["va", "ga"]`) when two states ask the same. A state line is its own row even when only the range differs, because its codes live on the row. `asks` says what the state asks, never which kids the row serves: every approved row reaches every kid of its grade (no state filter, Sai 2026-10-02). |
 | `app` | `"today"`, or `"needs <the widget or figure work>"`. |
+| `rules` | Constraints the models must obey: what the numbers may and may not do. |
+| `display` | The picture or widget payload the models must draw. |
 | `models` | How many models are planned. The default is 1. Use more than 1 only for number-range variants, listed in `variants`. |
-| `variants` | Only when `models > 1`, e.g. `["no regrouping", "one regroup"]`. A variant never changes type, picture, format or steps; that would be a new row. |
+| `variants` | Only when `models > 1`, with the tier in parentheses, e.g. `["no regrouping (easy)", "one regroup (moderate)"]`. A variant never changes type, picture, format or steps; that would be a new row. |
 | `levelRange` | The app levels the models fill into. Set it explicitly, to the band the target skill's filter reads. Grade 2 is 4–6 (`src/bands.js`), which is what Bar Models and the Word Problems topic's Grade 2 skills read; a new topic uses its grade's band. In the old topics, Grade 2 add/sub story filters read 7–10 and the Grade 1 two-digit story filters read 4–10, so check that rows filed there do not land on Grade 1 sheets. |
 
 ## From row to model

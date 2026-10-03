@@ -17,6 +17,25 @@ list. Each row is a real, distinct item type that a test justifies.
 **Never invent a shape list. Never write a model for a row Sai has not
 approved.**
 
+## The whole process at a glance
+
+The Grade 2 add/subtract pass (Oct 1-3, 2026) is the worked example: it ran
+steps 1-8, step 9 is in progress (2026-10-03), and step 10 is not built. Each
+step ends at a gate.
+
+| # | Step | Who | Gate |
+|---|---|---|---|
+| 1 | Skill map: objectives, codes in all five frameworks, ranges, problem types | Claude | every code known; crosswalk errors listed |
+| 2 | Blueprint list: ~30 rows per grade (Grade 2 ran 42 and 35), review page, numbered decisions | Claude writes, **Sai answers** | Sai's own message approves the list |
+| 3 | Rows into the repo (PR) and the database | Claude; **Sai merges** | standards spec green; `--check` returns nothing |
+| 4 | App pieces the rows need (widgets, topic, harness rules) | Claude; Mac build; **Sai merges** | web CI green, iPhone tests pass on Sai's Mac |
+| 5 | Write models: one writer per group of rows, closed brief | Claude (writer agents) | harness 0 failures |
+| 6 | Cheap checks: harness, blind solve, kid-safe, screenshots, a teacher's read | Claude | every flag fixed or explained |
+| 7 | Load models as drafts; commit the model files (PR) | Claude; **Sai merges** | counts match; no draft overwrote a reviewed row |
+| 8 | Review at larkit.io/admin/models | **Sai** | approve, reject with a note, flag, edit |
+| 9 | Fix rejects from the notes; record each lesson | Claude | fix reloaded as a draft; lesson in the kit |
+| 10 | Fill approved models into the bank and switch the topic on | Claude; **Sai flips** | **not built yet**, see Pipeline step 7 below |
+
 ## When to use
 
 - **Use this skill** to plan a skill's rows, to write, fix or review v2 models,
@@ -31,8 +50,12 @@ approved.**
   equal sign) gets its own blueprint list per grade, beside the story list.
   Sai decided on 2026-09-28 that plain computation goes in the bank as v2
   rows; `computationSampler` only fills an empty cell. Plain computing rows
-  with no words may be built by script instead of models, if Sai approves
-  that for the list. Types, tiers and tags: taxonomy section 6.
+  with no words are built by script instead of models when Sai approves that
+  for the list. Grade 2 did (calc decision 3, approved 2026-10-02): calc rows
+  1-4 and 16-22 come from `src/multiDigit/calcItems.js`, load as v2 drafts
+  with `scripts/multiDigit/loadCalcItems.mjs`, and are built at run time for
+  signed-out kids by `src/modes/multiDigit.js`. Types, tiers and tags:
+  taxonomy section 6.
 
 ## Sources
 
@@ -77,7 +100,7 @@ lines are the exceptions. Leave them out of every writer excerpt.
   check catches those words, because `TEACHER_JARGON` in
   `src/itemBank/qc/checks.js` lacks all three. Read for them yourself.
 - **The money-only harness rules** (modeId `money`, `2.MD.C.8`, `money-g` ids).
-  They hold until the harness PR in step 3 lands.
+  Since PR #156 they apply only to models with no blueprint row.
 
 ## Pipeline (each step ends at a gate)
 
@@ -109,7 +132,7 @@ lines are the exceptions. Leave them out of every writer excerpt.
      - Run `npx vitest run src/__tests__/standards.spec.js`, then open a PR.
    - After the PR merges, load the rows:
      - On an up-to-date `main`, run `node scripts/standards/loadStandards.js`.
-     - Execute the printed SQL (about 540 KB) through the Supabase tools
+     - Execute the printed SQL (about 680 KB) through the Supabase tools
        (`execute_sql`) or the SQL editor.
      - Run the `--check` query. No rows back means the database is in sync.
      - Set each row's status (SQL in `references/blueprint-rows.md`).
@@ -118,15 +141,24 @@ lines are the exceptions. Leave them out of every writer excerpt.
      the wrong branch, it rewrites production standards data to that branch's
      copy.
 3. **Write models.**
-   - **Precondition: the harness PR has merged.**
-     `scripts/itemModels/harness.mjs` fails any model whose modeId is not
-     `money`, requires `2.MD.C.8` at Grade 2, and requires a CCSS code at other
-     grades. Until it changes, no add/subtract model can pass step 4. The PR
-     must do four things:
-     - take modeId and the anchor code from the row
-     - allow an empty `ccss` list when a state code is present
-     - derive the id pattern from the row id
-     - keep the coin checks for money only
+   - The harness takes each model's topic, grade and id prefix from its
+     blueprint row, asks that the model carry a code in some framework
+     (`validateModel` holds the codes to the row's), and runs the coin checks
+     for money only (PR #156). A model
+     with no row falls back to `--mode`, `--code` and `--prefix`.
+   - **Before writing, land the app pieces the rows need** (a widget, a
+     figure, a topic) and look at them on a phone. Writers must not fake a
+     picture the app can't draw; a row marked `app: "needs …"` waits.
+   - **Writers.** One writer agent per group of related rows (4 to 14 rows),
+     each with the closed brief in `references/writer-brief.md`. Grade 2 used
+     7 writers for 77 models. They write JSON in a scratch folder and run only
+     the harness. Writers do not load anything or touch the repo.
+   - **The thread reads every writer's report** and keeps a `NOTES.md` of
+     problems that cut across groups. Fix those once, after all writers
+     finish, rather than in each writer. Grade 2's example: rows that wanted
+     "about half regroup" regrouped on every fill, because the trade slips only
+     exist when a trade happens; one fix (`when` / `otherwise` on distractors,
+     in the kit) cured four groups.
    - Write one model per approved row, or one per variant when the row lists
      `variants`.
    - Fill each model's fields from its row with "From row to model" in
@@ -152,11 +184,26 @@ lines are the exceptions. Leave them out of every writer excerpt.
    - When writing turns up a gap, send Sai a proposed row. Never write a model
      for it until Sai approves the row.
 4. **Cheap checks**, in this order:
-   - `npm run models:harness -- f.json --items out.json --per 5`, until every model passes.
-   - `bank:blind-solve` on `out.json`. The solver sees the item as the kid does,
-     and must reach the key.
-   - `bank:kid-safe` on `out.json`.
-   - Read every sample prompt and hint as a teacher would.
+   - `npm run models:harness -- <group>.json --items <group>.items.json --per 5`,
+     until every model passes. Name the items file `<group>.items.json`: the
+     two tools below read that name.
+   - Blind solve and kid-safe on `<group>.items.json`, both at once:
+     `bash /mnt/project-files/item-skill/tools/runqc.sh <dir> <group>` from the
+     repo root (it runs `scripts/itemGen/qc/blindSolve.js` and
+     `kidSafeReview.js`; needs the `claude` CLI). The solver sees the item as
+     the kid does and must reach the key. A flag counts only if it comes back
+     on a rerun.
+   - **Screenshots of every model with a picture or widget**, at phone width:
+     `node /mnt/project-files/item-skill/tools/shots.mjs <group>.items.json <dir> --one`
+     from a worktree with `node_modules` (it starts its own vite on port
+     5205, or `SHOTS_PORT`, and uses `/opt/pw-browsers/chromium`; kill stray
+     vite servers first, or it screenshots an old page). The tools live in the
+     shared project folder, not the repo. Look at each one as the kid would.
+     Grade 2's disc-mat and bar models would have been caught here.
+   - Read every sample prompt and hint as a teacher would, with the reading
+     list under "Rules learned from the Grade 2 add/subtract review" in the
+     kit (object variety, a key that changes, real mistakes, names on
+     pictures, pictures the kid can use).
    - Then at most **one AI review per subskill**: one reviewer reads that
      subskill's models against their rows. No checker swarms.
 5. **Load drafts.**
@@ -166,9 +213,16 @@ lines are the exceptions. Leave them out of every writer excerpt.
        in `.env`) and the service key from `.env.local`.
      - In a worktree, copy in both files first (CLAUDE.md). Also source `.env`
        if `.env.local` has no URL.
+   - **From a cloud thread** (no `.env.local`): build the same upsert as SQL
+     with `/mnt/project-files/item-skill/tools/mkload.mjs` (header lists the
+     command and the check queries) and run each file with the Supabase
+     `execute_sql` tool, in order. Then check the counts by mode and status,
+     that no loaded model has a null `blueprint_id`, and run
+     `select public.sync_item_model_standards(null);`.
    - Sai reviews at `/admin/models`.
-   - Commit the loaded file to `src/itemModels/<mode_id>/grade<N>.json` in a PR,
-     branched from a fresh `origin/main`.
+   - Commit the loaded files under `src/itemModels/` in a PR, branched from a
+     fresh `origin/main`: money is `money/grade<N>.json`; Grade 2 add/subtract
+     is `g2Addsub/<group>.json`, one file per writer group (merged in PR #156).
      - `standards.spec.js` checks codes only for models under `src/itemModels/`,
        so models left in scratch skip the CI code gate.
      - Fixes from Sai's review go in the same file under their new ids.
@@ -177,12 +231,40 @@ lines are the exceptions. Leave them out of every writer excerpt.
 6. **Lessons.** Record each lesson from Sai's model reviews in the kit's "Rules
    learned" section. Then apply the `item-authoring` ladder: the guide,
    `NARRATIVE_RULES`, and a QC check when the rule is mechanical.
+   - Read Sai's notes from the database (`select id, review_status,
+     review_note from item_models where review_status in ('rejected',
+     'flagged')`), answer each question in the thread, and put any choice
+     (a new widget, a row change) to Sai on a card.
+   - A fix to a rejected or flagged model keeps the review history: a new id
+     with a `-2` suffix, loaded as a draft. Never overwrite an approved row;
+     a fix to an approved model is also a `-2` draft, and the old one is set
+     aside only after Sai approves the fix.
+7. **Fill and go live. Not built yet** (money and Grade 2 add/subtract both
+   wait on it). What it has to do, in order:
+   - A script that fills each approved model into version-2 `item_bank` rows
+     (30+ per skill and grade across easy, moderate and hard), keeping only
+     fills with distinct prompts (`promptIdentity`), each through the QC gate,
+     blind solve and kid-safe before any write ("it is unacceptable to push
+     any item bank to the bank without QC checks", Sai, 2026-10-02).
+   - A coverage check: every approved blueprint row has items at each tier it
+     lists.
+   - Bundle: `bank:export` exports version-1 rows only (see
+     `docs/item-bank-v2-groundwork.md`, "The bundle re-export"), so decide
+     before the first v2 row is approved whether v2 rows ship offline.
+   - Switch: `/admin/switch` to `preview`, Sai plays it (`?preview=v2` on the
+     web, `kidmath://preview?v=2` on iPhone), then Sai flips it to `v2`.
+     Retire that topic's v1 stories in the same step, on Sai's typed go
+     (decision of 2026-10-02).
+   - iPhone builds older than PR #150 ignore the switch and serve every
+     approved row, so no v2 row in an existing topic is approved until kids
+     have that build.
 
 ## The four axes (full tables in references/taxonomy.md)
 
 - **Problem type**: the situation, and where the unknown sits.
-  - For add/subtract, these are the 15 CCSS Table 1 subtypes, named by
-    `structureType`. Two-step shapes have their own camelCase ids, listed in the
+  - For add/subtract, these are the 15 situations in `additiveStructures.js`
+    (CCSS Table 1, with the compare variants counted separately, plus
+    both-parts-unknown), named by `structureType`. Two-step shapes have their own camelCase ids, listed in the
     taxonomy.
   - Classify from the text, never from v1 tags. 34% of the Grade 2 add/sub tags
     are wrong.
@@ -231,10 +313,10 @@ lines are the exceptions. Leave them out of every writer excerpt.
     multi-step stories within 1,000). Only the numbers grow; the other limits
     hold. Every kid of the grade sees the line, so it is proposed as its own
     skill, last in the grade (Coverage, "No state filter").
-- **Computation rows** use the proposed rule in taxonomy section 6 (a second
-  trade or a trade across a zero is its own hard row). It waits on Sai's
-  answer to decision 10 on the Grade 2 computation list; update this section
-  when Sai answers.
+- **Computation rows** use the rule in taxonomy section 6 (a second trade or
+  a trade across a zero is its own hard row), approved with the Grade 2
+  computation list (2026-10-02, decision 10). `checkCalcItem` in
+  `src/multiDigit/calcItems.js` enforces it on the script rows.
 - **Other axes**: picture, model and answer format are their own axes, never
   difficulty dials. Every distractor is a named mistake.
   - A slip must be possible on every fill. A carry or trade slip equals the
@@ -294,8 +376,10 @@ lines are the exceptions. Leave them out of every writer excerpt.
   - A line resting on the state's standard for that grade is kept (Sai,
     2026-10-02). It does not go to Sai as a decision to widen the rule; name
     the standard in the row's `why`.
-- **No state filter** (Sai, 2026-10-02, 17:54 UTC). We collect no state from
-  kids or parents, and no per-state filter will be built. State codes (TX, FL,
+- **No state filter** (Sai, 2026-10-02, 17:54 UTC). No per-state filter will
+  be built. The account page stores an optional wording state per kid
+  (`kid_profiles.state`), but nothing in play reads it (`activeKidState` has
+  no caller), so every kid sees the same words. State codes (TX, FL,
   VA, GA) are backend tags that feed the Standards tab and coverage. Every
   approved row, state lines included, reaches every kid of its grade and
   skill.
@@ -387,7 +471,8 @@ Every rule `item-authoring` enforces applies. On top of those:
 - **Long form only**: `2.OA.A.1`, `2.7C`, `MA.2.AR.1.1`, `2.CE.1c`, `2.NR.2.3`.
   - A short form resolves, but `standards.spec.js` fails any row, model or
     catalog skill with an unknown code.
-  - The database's foreign keys refuse one too.
+  - The database does not catch a typo: its link sync matches aliases and
+    skips an unknown code silently. CI is the only gate.
 - **Cite all five frameworks** wherever a code fits.
   - Carry the state code itself. A crosswalk link counts on its own only when it
     is `same`.
@@ -433,39 +518,66 @@ that each re-read the repo.
   - the harness command
 - Tell Sai how many agents a run will use.
 
-## Open gaps before a non-money skill (2026-10-01)
+## Open gaps (updated 2026-10-03)
 
-- **The harness is money-only.** See the precondition in step 3.
-- **`blueprintId` is not wired** through the schema, `fill` or the loader, so
-  `item_models.blueprint_id` stays null. Wire it, or set the column after
-  loading.
-- **No path to the bank.** Nothing fills approved models into v2 `item_bank`
-  rows yet.
+Closed by PR #156 (merged 2026-10-03): the harness reads each model's row,
+`blueprintId` flows through the schema, `fill` and the loader, the disc mat
+counts in `promptIdentity`, the `multiDigit` topic exists, and `when` /
+`otherwise` distractors keep "about half regroup" rows honest.
+
+Still open:
+
+- **No path to the bank for models.** Nothing fills approved models into v2
+  `item_bank` rows yet; see Pipeline step 7. (Script rows have a loader; see
+  "When to use".)
 - **The version switch is per mode.** Flipping `addition` replaces every grade,
-  so new v2 rows go in a new v2-only topic (Word Problems, and the proposed
-  `multiDigit`). Installed iOS builds ignore the switch and serve every
-  approved row until the iOS version filter (draft PR #150) ships. Agree with
-  Sai where a skill's rows will serve.
+  so new v2 rows go in a v2-only topic (Word Problems, Multi-Digit Math).
+  Installed iPhone builds older than PR #150 ignore the switch. Agree with Sai
+  where a skill's rows will serve.
 - **No per-state filter, by decision** (Sai, 2026-10-02): state lines are
   approved and served like any row.
 - **Formats and figures.**
-  - True/false and multiselect cannot be written as models yet, and two-part
-    answers don't exist. There is no ≠ key.
-  - The tape diagram has two shapes only. The disc mat is the tens-and-ones
-    picture; there are no base-ten blocks. The number line draws one hop.
-  - `promptIdentity` and the harness ignore the disc mat, so fills whose words
-    never change read as duplicates.
-  - Long text choices sit two to a row; check them with `layoutSweep` and the
-    simulator.
-  - `barModel` and `tapeDiagram` hint pictures are dropped silently.
+  - True/false and multiselect cannot be written as models yet (a model needs
+    2 distractors and 3 or more choices, and can't carry a list answer);
+    two-part answers don't exist. There is no ≠ key.
+  - The tape diagram has two shapes only. Its bars were labelled A and B,
+    which Sai rejected on 2026-10-03; names on the bars (`labelA`, `labelB`
+    on a `barCompare` display) are being added. The number line draws one
+    hop. There are no base-ten blocks.
+  - The disc mat was a picture only, and Sai rejected five mat models on
+    2026-10-03 for it. A mat the kid taps (`placeValueDiscs` with
+    `display.mode: "build"`; the answer is the number the finished mat shows)
+    is being built. Until it merges, no model may ask the kid to work on a
+    mat.
+  - The price list drew on the web only, and the blind solver was not shown
+    it; an iPhone table and a solver line are being added (2026-10-03).
+  - Long text choices sit two to a row; check them with screenshots.
+  - Hint pictures other than dots, array, strip, numberLine and tenFrame
+    (coinTray, barModel, tapeDiagram, clock, placeValueDiscs, hundredChart)
+    validate but are not drawn; the iPhone also skips tenFrame.
 - **QC never checks that the key follows from the text** (blind solve does). It
   also misses fragments, a compare question without "than", and nounless
   questions whose verbs are outside its list ("How many arrived?"). Two-step
-  `structureType`s have no entry in `structureCheck.js`, so only its universal
-  checks run on them.
+  `structureType`s, the bare ids and five one-step ids (`addToResult`,
+  `takeFromResult`, `putTogetherTotal`, `putTogetherAddend`,
+  `bothAddendsUnknown`) have no entry in `structureCheck.js`, so only its
+  universal checks run on them.
+- **The harness does not count distinct objects**, and it only warns when a
+  model has fewer than 8 distinct answers in 200 seeds, so a choice key stuck
+  on 2 values passes. Count both in 40 fills yourself (kit, "Rules learned
+  from the Grade 2 add/subtract review").
 
-## Pilot status (2026-10-02)
+## Pilot status (2026-10-03)
 
+- **Where it stands.** Sai approved both lists on 2026-10-02 (22:47 UTC,
+  "approve both lists as recommended"). The rows and their app pieces
+  merged in PR #156. 77 models (43 Word Problems, 34 Multi-Digit Math) were
+  loaded as drafts on 2026-10-03 (~01:36 UTC). Their files are in `src/itemModels/g2Addsub/` (PR #156).
+  Sai's first review the same night rejected 7 with notes and asked for
+  fixed copies of 10 approved ones; their lessons are in the kit, and the
+  fixes (a tappable disc mat, names on bars, more objects, wider estimate
+  keys) load as `-2` drafts. Both
+  topics stay hidden until their items exist (step 7).
 - **Scope.** All of Grade 2 adding and subtracting (Sai, 2026-10-02), in two
   lists. Kindergarten, Grade 1 and Grade 3 follow with the same process.
 - **Word problems**, slug `g2-addsub-wp`, ids `wp-g2-*`, topic `wordProblems`
@@ -475,9 +587,9 @@ that each re-read the repo.
   two-step bare and picture rows, 36-42 state lines past 100, proposed as
   their own skill (`biggerNumberStories`, decision 4). Every kid sees state
   lines.
-- **Computation**, slug `g2-addsub-calc`, ids `calc-g2-*`, proposed topic
-  `multiDigit` (its decision 1). 35 rows. Row 35 proposes
-  `tenOrHundredTo1200` as its own skill (its decision 11).
+- **Computation**, slug `g2-addsub-calc`, ids `calc-g2-*`, topic
+  `multiDigit` (approved 2026-10-02, its decision 1). 35 rows. Row 35 is its
+  own skill, `tenOrHundredTo1200` (decision 11, in `src/skills/catalog.js`).
 - **Files**, in `/mnt/project-files/item-skill/`: `<slug>-blueprints.md` (the
   review page, numbered in file order) and `.json`, built by
   `<slug>-build.mjs`; `<slug>-check.mjs` runs the mechanical checklist (shape,
@@ -486,8 +598,10 @@ that each re-read the repo.
   repo root with `node --import ./scripts/lib/registerResolve.js`. Apply Sai's
   edits in the build scripts and rerun all three. The copy Sai commented on
   is in `archive/`; the research behind both lists is in `research/`.
-- **Sent to Sai on 2026-10-02**, waiting for answers. No row is in the repo or
-  the database yet, and no model is written.
+- **Writer files** for the 77 models (briefs, build scripts, harness reports,
+  QC results, load SQL) are in the thread's scratch folder; the brief is
+  `references/writer-brief.md`, and the reusable tools are in
+  `/mnt/project-files/item-skill/tools/`.
 - **v1 stories.** Sai settled decision 9 on 2026-10-02 (13:10 UTC): each
   topic's v1 stories retire only when its v2 stories go live; nothing is
   retired now. The all-at-once retire (draft PR #152) was closed unmerged;
@@ -495,9 +609,6 @@ that each re-read the repo.
   (`addition-app-433`) was retired on its own at Sai's go (PR #153, merged).
   Retire only on Sai's typed go, and never so that the template generator
   fills a story cell.
-- **Before any model is written** (both pages list these): the topics, the
-  `blueprintId` wiring, the harness PR from step 3, the structure check entry
-  for each new `structureType`, and the disc mat in the duplicate check.
 - **Money** has 15 picture-first lines
   (`/mnt/project-files/item-skill/money-picture-blueprints.md`) waiting for
   Sai's edits. They predate this format. Move them into the step 2 flow when

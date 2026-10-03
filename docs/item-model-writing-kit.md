@@ -4,7 +4,7 @@ Written for the Grade 2 money pilot (2026-09-28) and kept as the kit for every s
 
 You are writing **item models** for Larkit, a paid K-5 math practice app. An item model is one well-written question with its numbers and context left as slots; the app fills a model into many concrete items with computed keys. Sai (the owner, a tutor) reviews every model on a review screen, so each model must be something a careful Grade 2 teacher would be proud to print.
 
-Everything below is verified against the code on `main`; run commands from the repo root. Read the exemplar models first: `src/itemModels/samples/grade2Money.js` (five commented exemplars) and `src/itemModels/pilot/grade2Money.json` (the 129 reviewed pilot models). Copy their level of care, not their content.
+Everything below is verified against the code on `main`; run commands from the repo root. Read the exemplar models first: `src/itemModels/samples/grade2Money.js` (five commented exemplars) and `src/itemModels/pilot/grade2Money.json` (the 141 pilot models). Copy their level of care, not their content.
 
 Paths:
 - Harness: `npm run models:harness -- <models.json> [--seeds N] [--samples N] [--items out.json --per N] [--quiet] [--mode ID --code CODE --prefix P]` (`scripts/itemModels/harness.mjs`; the per-model rules are in `scripts/itemModels/harnessRules.js`)
@@ -21,7 +21,7 @@ A writer never edits files inside the repo. It writes its own cell file and scra
 - Number ranges: coins total up to 99¢; bills up to $10 in Grade 2 stories (the standard allows $100, but keep totals a 7-year-old can hold); **never more than 8 coins pictured**.
 - Contexts: objects kids care about, from the context table, at realistic 2026 prices. Leave out bus fare.
 - Item types: count the coins shown (coin tray), make an amount (tap coins on the tray), word problem with a total or change (choice grid with money amounts), compare two amounts.
-- Widget rule: whenever the item is about one pile of coins the kid can see, show the tray (`widget: "coinTray"`). A two-pile comparison uses the choice grid and names the coins in words, with a `coinTray` hint picture.
+- Widget rule: whenever the item is about one pile of coins the kid can see, show the tray (`widget: "coinTray"`). A two-pile comparison uses the choice grid and names the coins in words, with a `coinTray` hint picture (not drawn yet; see Hints).
 - Common mistakes to target with distractors: counts coins instead of value; treats a nickel as worth more than a dime; drops the dollar or the cents when crossing a dollar; adds instead of subtracts; skips or stops after the first count-up hop; forgets to carry.
 - Hints (bulb): nudge (what is asked, where to start), steps with the item's own numbers that stop before the answer, a picture, a worked example with other numbers (`"auto"`), feedback per tagged mistake, and a worked solution.
 - Wording: Common Core test wording. "How much money…", "How much change…", "How many cents…". Money is written 45¢ under a dollar and $1.09 from a dollar (Florida kids automatically get $0.45; you never write that yourself). Never write amounts as bare cents in prose ("109 cents"). Say "a $1 bill", "two $1 bills", "a $5 bill".
@@ -100,7 +100,7 @@ Expression language: numbers, `'strings'`, slot names, `+ - * / %`, comparisons,
 
 - `nudge`: one sentence that says what is asked and where to start, never the answer.
 - `steps`: 2-4 lines with this item's numbers, stopping before the answer. Name hops and partial totals through expr slots (`{nextTen}`, `{hop1}`), never compute in prose.
-- `picture`: `{ "kind": "coinTray", "coins": "sortByValue(coins)" }`, `{ "kind": "numberLine", "min": "floorTen(price)", "max": "paid", "mark": "price" }` (min < max required), `{ "kind": "barModel", "parts": ["price1", "price2"] }`, `{ "kind": "tenFrame", … }`, or null.
+- `picture`: only dots, array, strip, numberLine and tenFrame are drawn today (the iPhone skips tenFrame too); the other kinds validate but show nothing, so do not lean on them. Shapes: `{ "kind": "coinTray", "coins": "sortByValue(coins)" }`, `{ "kind": "numberLine", "min": "floorTen(price)", "max": "paid", "mark": "price" }` (min < max required), `{ "kind": "barModel", "parts": ["price1", "price2"] }`, `{ "kind": "tenFrame", … }`, or null.
 - `example`: `"auto"` (the same model filled with other numbers and solved; needs `solution`).
 - `feedback`: one sentence per distractor mistake tag, explaining the slip and pointing to the right move.
 - `solution`: 2-4 steps that finish the count-up or the addition with the item's numbers, then `answer` as an expression.
@@ -108,7 +108,7 @@ Expression language: numbers, `'strings'`, slot names, `+ - * / %`, comparisons,
 
 ### Checks every fill must pass (the harness runs them)
 
-One question mark and one question; the question word matches the answer type ("How many cents" → a number; "How much money / change" → a money amount; "Who" → a name); prompt ≤ 220 characters, ≤ 40 words; every object in the sentence is in the context table and its price inside the table's range; no kid-safe list hit (weapons, violence, alcohol, gambling, religion, brands, body weight, romance, scary content, unsafe-alone activities, put-downs); no teacher jargon ("minuend", "addend", "equation" in K-2 wording); singular noun after "1"; a hint present; hints never give the key away; the tray, when present, has 1-8 coins; at least 20 distinct prompts in 40 fills; the key is among 3-4 distinct choices.
+One question mark and one question; the question word matches the answer type ("How many cents" → a number; "How much money / change" → a money amount; "Who" → a name); prompt ≤ 220 characters, ≤ 40 words; every object in the sentence is in the context table and its price inside the table's range; no kid-safe list hit (weapons, violence, alcohol, gambling, religion, brands, body weight, romance, scary content, unsafe-alone activities, put-downs); no teacher jargon from the `TEACHER_JARGON` list (subitize, numeral, equivalent, …; it does not include "minuend", "addend" or "equation", so read for those yourself); singular noun after "1"; a hint present; hints never give the key away; the tray, when present, has 1-8 coins; at least 20 distinct prompts in 40 fills; the key is among 3-4 distinct choices.
 
 ## Workflow
 
@@ -144,6 +144,17 @@ Every one of these came up as a reviewer finding; write to them from the start.
 - Every distractor stays in the same money format as the key: no single choice over a dollar in a cents grid (fill.js switches the whole grid to dollars).
 - Feedback for a direction-dependent slip must cover both directions ("two things do not always cost more than one").
 - Each model's shape must differ from every other cell's, not only within its cell: the same template in two cells at two difficulties is a duplicate.
+
+## Rules learned from the Grade 2 add/subtract review (2026-10-03)
+Sai's first pass over the 77 Grade 2 models rejected 7. Each line is a reading check to run on 40 fills before a model goes to review.
+- **Object variety.** Count the different objects in 40 fills; a story should show many. A template verb fixes the object ("{name1} and {name2} read books" plus a screens-media slot gave books and pages every time: "every single one of this is read books on Saturday. need variety"). Take the verb from the object, or write a verb that fits every object the slot can draw.
+- **Pictures carry the story's names.** Label each bar with the person it stands for, not A and B, the way textbooks draw a comparison. Then the prompt needs no sentence explaining the labels ("Bar A shows Mia's stickers…").
+- **A picture is either used or complete.** A disc mat showing only the first number above "What is 114 + 807?" asks the kid to ignore it ("What are kids supposed to do with this kind of problem?"). Either the kid works on the picture (a tray or mat they tap, whose state is the answer) or the picture shows everything the question needs.
+- **The key must change.** A choice model whose key is the same on every fill ("Trade 1 ten for 10 ones", 6 of 6) is not a question. Count the different keys in 40 fills; when a row is about deciding (trade or no trade), about half the fills go each way.
+- **Every distractor is a real mistake.** "Trade 1 ten for 1 one" is not something a kid does; cut a distractor no kid would pick, even if the mistake tag sounds right.
+- **Say the number when reading it is not the skill.** An item about the next step (which trade, how much more) states the number on the mat or tray in words, so the question does not hinge on a count the kid was never asked to make.
+- **Feedback fits every fill.** When the key can be either of two answers (who spends more), each wrong-answer line must make sense for both; build it from a slot that changes with the key.
+- **Look before sending.** Screenshot every picture or widget model at phone width (`/mnt/project-files/item-skill/tools/shots.mjs`) and read it as the kid sees it; the mat and bar problems above show only on screen.
 
 ## Picture-first and bare items (added 2026-09-28)
 

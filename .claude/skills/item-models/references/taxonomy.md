@@ -22,7 +22,10 @@ README). Re-check against the source when it is on disk.
 The repo models all fifteen as one relation, `x + y = z`, with the unknown
 moved around. The ids are `structureType` values from
 `src/modes/structures/additiveStructures.js`. Use these ids exactly: the QC
-structure check (`src/itemBank/qc/structureCheck.js`) keys on them.
+structure check (`src/itemBank/qc/structureCheck.js`) keys on ten of them.
+`addToResult`, `takeFromResult`, `putTogetherTotal`, `putTogetherAddend` and
+`bothAddendsUnknown` have no entry, so only its universal checks run on
+those.
 
 **Expected** gives the grade where each type is mastered. K and G1 types stay
 in Grade 2 with bigger numbers. **G2 tier** is that type's difficulty in a
@@ -275,9 +278,9 @@ equations (section 1, "Bare and reasoning rows") stay with the stories.
 
 Classify a computation item by the work it asks for, never by v1 tags (v1
 uses `multiDigitSum`, `multiDigitMissingAddend` and so on). The Grade 2 list
-(`/mnt/project-files/item-skill/g2-addsub-calc-blueprints.json`, sent
-2026-10-02, waiting for Sai) proposes a new v2-only topic, `multiDigit`, for
-these rows (its decision 1). Until Sai answers, treat the topic as proposed.
+(`/mnt/project-files/item-skill/g2-addsub-calc-blueprints.json`) put these
+rows in a new v2-only topic, `multiDigit` (its decision 1, approved by Sai
+2026-10-02).
 
 ### Types (Grade 2)
 
@@ -323,11 +326,11 @@ estimate's hint leads to the exact answer and asks for the closest ten
 without naming it. The ≠ row labels its keys in words ("= (equal)" and
 "≠ (not equal)"), and its hint never writes = or ≠.
 
-### Difficulty (computation rows): proposed
+### Difficulty (computation rows)
 
-Decision 10 on the Grade 2 computation list asks Sai to approve this rule.
-Until Sai answers, use it only to draft; the SKILL.md Difficulty section stays
-as it is.
+Sai approved this rule with the Grade 2 computation list (2026-10-02,
+decision 10). `checkCalcItem` in `src/multiDigit/calcItems.js` enforces it on
+the script rows.
 
 The tier comes from the trades the item needs, where the box sits, and how
 many numbers and operations the equation has. Number size, the picture or
@@ -352,18 +355,22 @@ model, columns or a row, and the answer format never move it.
   a variant. A column row's prompt is the bare equation (`68 + 25 = ?`) and
   carries a, b and op: a sentence prompt ("What is 68 + 25?") shows in a row
   on web and iPhone.
-- **Disc mat** (`figure: "discMat"`) is the picture. A mat never lets the kid
-  count off the answer: show the first number only, or the same number before
-  and after a trade. `promptIdentity` and the harness's prompt key ignore
-  the mat, so a row whose words never change needs that wiring first.
+- **Disc mat** (`figure: "discMat"`) is a picture. `promptIdentity` and the
+  harness's prompt key count the mat (PR #156). A mat must be either something
+  the kid taps or complete: a mat showing only the first number above the
+  question was rejected (kit, "Rules learned from the Grade 2 add/subtract
+  review"). The tappable mat is the `placeValueDiscs` widget with
+  `display.mode: "build"` and the start mat in `display.cols`; the answer is
+  the number the finished mat shows (being built, 2026-10-03).
 - **Number line**: one hop works today (the kid types its length). Several
   hops, or the landing point as the answer, need widget work.
 - **Numbers past 999 in choices** print without commas (1005), so the prompt
   must match.
-- **Plain computing rows** (no words, no picture) can be built by script the
-  way Math Facts items are (`src/facts/factItems.js`), if Sai approves that
-  for the list (its decision 3). Script rows still need a path to signed-out
-  kids: a starter-set sample, or a build at run time.
+- **Plain computing rows** (no words, no picture) are built by script the
+  way Math Facts items are (Grade 2 calc rows 1-4 and 16-22,
+  `src/multiDigit/calcItems.js`, loaded by `scripts/multiDigit/loadCalcItems.mjs`;
+  its decision 3, approved 2026-10-02). Signed-out kids get them from a build
+  at run time (`src/modes/multiDigit.js`).
 
 ### Mistake tags added
 

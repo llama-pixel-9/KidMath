@@ -52,6 +52,8 @@ describe("workedStepGiveaway", () => {
     ["Use 5 × 6 = 30 to find 5 × 7.", 35],
     ["Ben pours 1/3 of a cup at a time to reach 2/3 of a cup. How many pours is that?", 2],
     ["Diego saves 1/4 of 16 dollars. How many dollars does Diego save?", 4],
+    // A wrong result to check, where the answer happens to be printed.
+    ["Ravi says 28 − 14 = 15. What is the correct answer?", 14],
   ])("passes a prompt that leaves the step to the kid: %s", (prompt, answer) => {
     expect(workedStepFinding(item(prompt, answer))).toBeNull();
   });
@@ -132,6 +134,9 @@ describe("kid voice", () => {
     expect(questionNotLastFinding(item("Fill the gap: 4, __, 8.", 6))).toBeNull();
     // The picture row being counted may follow the question.
     expect(questionNotLastFinding(item("How many apples are there? 🍎🍎🍎", 3))).toBeNull();
+    // So may the number sentence the question asks about.
+    expect(questionNotLastFinding(item("What number makes this true? 84 + 9 = 90 + □", 3))).toBeNull();
+    expect(questionNotLastFinding(item("What number makes this true? □ − 30 = 29", 59))).toBeNull();
   });
 });
 

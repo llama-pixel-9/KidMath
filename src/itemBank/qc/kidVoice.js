@@ -51,12 +51,15 @@ export function teacherVoiceFinding(item) {
 }
 
 const PICTURE_ROW = /^[\p{Extended_Pictographic}\u{FE0F}\u{200D}\s|]+$/u;
+// Digits, signs and blanks only: no word in it, so nothing for a kid to read past.
+const MATH_ROW = /^(?=.*[\d□_])[\d\s+\-−×÷=<>≤≥□_?.,()/]+$/u;
 
 export function questionNotLastFinding(item) {
   const text = item?.question?.display?.promptText || "";
-  // A trailing picture row (🍎🍎🍎) is the thing being counted, not a sentence
-  // after the question, and showing it big is right.
-  const lines = promptSentences(text).filter((l) => !PICTURE_ROW.test(l));
+  // A trailing picture row (🍎🍎🍎) or number sentence ("84 + 9 = 90 + □")
+  // is the thing the question is about, not a sentence after it, and showing
+  // it big is right.
+  const lines = promptSentences(text).filter((l) => !PICTURE_ROW.test(l) && !MATH_ROW.test(l));
   if (lines.length < 2) return null;
   const last = lines[lines.length - 1];
   if (/\?\s*$/.test(last)) return null;

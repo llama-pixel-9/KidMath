@@ -111,6 +111,9 @@ export function workedStepFinding(item) {
     const toks = tokens(s);
     const runs = sides(toks);
     const usedInEquation = new Set();
+    // Sides of a false equation are a claim to check ("Ravi says 28 − 14 =
+    // 15."), not a worked step, even when the answer is one of its numbers.
+    const claimed = new Set();
     for (let k = 0; k + 1 < runs.length; k++) {
       const L = runs[k];
       const R = runs[k + 1];
@@ -123,6 +126,7 @@ export function workedStepFinding(item) {
       // "What is 8 + 9?" / "is 5 + 3" — a word "is" before an expression in the
       // question sentence asks; it does not print a fact.
       if (between[0].t === "eqword" && between[0].s === "is" && isQuestion && !L.isExpr) continue;
+      if (L.value != null && R.value != null && !same(L.value, R.value)) claimed.add(k).add(k + 1);
       if (L.value == null || R.value == null || !same(L.value, R.value)) continue;
       const nums = [...L.nums, ...R.nums, L.value];
       if (nums.some((n) => same(n, answer))) {
@@ -133,7 +137,7 @@ export function workedStepFinding(item) {
     if (!isQuestion) {
       for (let k = 0; k < runs.length; k++) {
         const r = runs[k];
-        if (!r.isExpr || r.hasBlank) continue;
+        if (!r.isExpr || r.hasBlank || claimed.has(k)) continue;
         if (r.nums.some((n) => same(n, answer))) {
           return { id: "workedStepGiveaway", severity: "fail", message: `the prompt prints "${r.text}" outside the question, and it holds the answer ${answer}` };
         }

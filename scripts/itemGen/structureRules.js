@@ -43,6 +43,7 @@ export const NARRATIVE_RULES = [
   'Kid words only. Never the teacher\'s vocabulary in the prompt: no "subitize", "cardinality", "decompose", "commutative", "identity", "inverse", "equivalent", "numeral", "partition". Say "How many?", "Split 7 into two parts", "If 9 + 8 = 17, what is 8 + 9?".',
   'Show the picture, never describe it. "A small set of 4 dots. How many?" hands the kid the answer — a counting item either carries a figure (emoji run, ten frame, object set) or asks something the kid can work out from the words alone.',
   'The figure carries the clock. Never state where the hands point in words ("the hour hand on six, the minute hand on twelve") — a clock item shows the face (clockFace figure or the clock widget) and asks for the time. Words about hands are only for items where the hands themselves are the subject ("which hand tells the hour?").',
+  "The bar: the finished item should look at home on a practice page of Math in Focus or another premier K-5 textbook. If it would stand out there as stiffer, more repetitive or less realistic than the items around it, rewrite it. Use your own words; never copy or paraphrase a textbook item.",
   'Drills are drills. Sequence continuation is presented BARE, the way curricula run fluency (EngageNY "Happy Counting"): "Count by 4s: 16, 20, 24. What number comes next?" — never narrated ("A timer beeps every 4 seconds…"). A story is only justified when the question asks a real-world quantity, not the next term of a sequence.',
 ];
 

@@ -5,6 +5,14 @@ description: Author, review, or fix items for the KidMath item bank. Use wheneve
 
 # KidMath item authoring
 
+v2 item models (blueprint rows, models, `/admin/models`) follow
+`.claude/skills/item-models`; its wording rules build on the ones here.
+
+**The bar for every item, v1 or v2** (Sai, 2026-10-03): it should look at home
+in Math in Focus or another premier K-5 textbook. If it would stand out on one
+of that book's practice pages, it is not ready, whatever the QC gate says. The
+wording stays our own.
+
 ## Sources of truth
 
 - `docs/word-problem-authoring-guide.md` — wording and style rules. Read it

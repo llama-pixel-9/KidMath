@@ -257,9 +257,18 @@ struct SkillStandingView: View {
 
     private static let marks = ["mastered": "★", "practicing": "◐", "new": "○"]
 
+    /// Math Facts' fast-fact line (factStanding in src/facts/factPractice.js):
+    /// "⚡ 3 of 85 facts fast · Next up: Doubles".
+    private static func factsLine(_ facts: [String: Any]) -> String? {
+        guard let line = facts["line"] as? String else { return nil }
+        if let next = facts["nextGroup"] as? String { return "⚡ \(line) · Next up: \(next)" }
+        return "⚡ \(line)"
+    }
+
     var body: some View {
         let skills = standing["skills"] as? [[String: Any]] ?? []
         let newly = standing["newlyMastered"] as? [String] ?? []
+        let facts = standing["facts"] as? [String: Any]
         VStack(alignment: .leading, spacing: 8) {
             if let note = standing["gradeUpNote"] as? [String: Any] {
                 VStack(alignment: .leading, spacing: 2) {
@@ -282,6 +291,17 @@ struct SkillStandingView: View {
                     .foregroundStyle(Theme.teal)
                     .fixedSize(horizontal: false, vertical: true)
             }
+            // Math Facts: the facts made fast this session ("2 new fast facts").
+            if let newLine = facts?["newLine"] as? String {
+                Text("⚡ \(newLine)")
+                    .font(theme.bodyFont(size: 14, weight: .heavy))
+                    .foregroundStyle(Theme.ink)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 10)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .background(RoundedRectangle(cornerRadius: 16).fill(Theme.sunLight))
+            }
             HStack(spacing: 6) {
                 ForEach(skills.indices, id: \.self) { i in
                     let state = skills[i]["state"] as? String ?? "new"
@@ -299,6 +319,12 @@ struct SkillStandingView: View {
             }
             .font(theme.bodyFont(size: 14, weight: .bold))
             .foregroundStyle(Theme.ink)
+            if let facts, let line = Self.factsLine(facts) {
+                Text(line)
+                    .font(theme.bodyFont(size: 14, weight: .bold))
+                    .foregroundStyle(Theme.ink)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
         }
         .frame(maxWidth: 320)
     }

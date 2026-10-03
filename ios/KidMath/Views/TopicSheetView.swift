@@ -209,6 +209,12 @@ struct TopicSheetView: View {
                         Text(skill["statusText"] as? String ?? "")
                             .font(theme.bodyFont(size: 12, weight: .semibold))
                             .foregroundStyle(mastered ? Theme.teal : theme.textMuted)
+                        // Math Facts: "12 of 30 facts fast" (never part of mastery).
+                        if let facts = (skill["facts"] as? [String: Any])?["text"] as? String {
+                            Text("⚡ \(facts)")
+                                .font(theme.bodyFont(size: 12, weight: .semibold))
+                                .foregroundStyle(theme.textMuted)
+                        }
                     }
                     Spacer(minLength: 0)
                     if !readAloud {

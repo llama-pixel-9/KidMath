@@ -48,13 +48,13 @@ final class SkillsPlayTests: XCTestCase {
     }
 
     /// Plays to the end card answering everything right; returns the skill id
-    /// stamped on each question served.
-    private func play(_ viewModel: SessionViewModel) async throws -> [String?] {
+    /// (or another `stamp`) on each question served.
+    private func play(_ viewModel: SessionViewModel, stamp: String = "skillId") async throws -> [String?] {
         var served: [String?] = []
         for _ in 0..<30 {
             if case .complete = viewModel.phase { break }
             try await waitFor { if case .question = viewModel.phase { return true } else { return false } }
-            served.append(viewModel.question["skillId"] as? String)
+            served.append(viewModel.question[stamp] as? String)
             viewModel.submit(try XCTUnwrap(viewModel.question["answer"]))
             try await waitFor {
                 if case .question = viewModel.phase { return true }
@@ -137,6 +137,43 @@ final class SkillsPlayTests: XCTestCase {
         XCTAssertNil(unearned.sessionLabel)
         _ = try await play(unearned)
         XCTAssertEqual(ProgressStore.int(progress.loadLocal(mode: "subtraction")["level"]), 6, "there is no ladder: a plain session leaves the level")
+    }
+
+    /// Math Facts practice is the engine's fluency session, as on the web
+    /// (skills/session.js): with no length from the caller it runs
+    /// FLUENCY_SESSION_SIZE facts, every question names its fact so the kid's
+    /// per-fact marks are kept, and the end card carries the facts line. A
+    /// length the caller sets still wins.
+    func testMathFactsPracticeIsTheFluencySession() async throws {
+        let (progress, engine) = try store(#function)
+        let log = PracticeLog(engine: engine, supabase: .shared, defaults: logDefaults)
+        let viewModel = SessionViewModel(
+            modeId: "mathFacts", engine: engine, progressStore: progress, bankService: nil,
+            skillRequest: .mix(grade: nil), correctHold: .milliseconds(2), wrongHold: .milliseconds(2),
+            practiceLog: log
+        )
+        await viewModel.start()
+        XCTAssertTrue(viewModel.isSkillSession)
+        XCTAssertEqual(viewModel.sessionSize, 20)
+        let facts = try await play(viewModel, stamp: "factId")
+        XCTAssertEqual(facts.count, 20)
+        XCTAssertTrue(facts.allSatisfy { $0 != nil }, "every fluency question names its fact")
+
+        let saved = progress.loadLocal(mode: "mathFacts")
+        let marks = (saved["skillMastery"] as? [String: Any])?["__facts"] as? [String: Any]
+        XCTAssertFalse(marks?.isEmpty ?? true, "the session keeps the kid's per-fact marks")
+        let line = (viewModel.skillStanding?["facts"] as? [String: Any])?["line"] as? String
+        XCTAssertTrue(line?.hasSuffix("facts fast") ?? false, "end card facts line: \(line ?? "none")")
+
+        let short = SessionViewModel(
+            modeId: "mathFacts", engine: engine, progressStore: progress, bankService: nil,
+            sessionSize: 4, skillRequest: .mix(grade: nil), correctHold: .milliseconds(2), wrongHold: .milliseconds(2),
+            practiceLog: log
+        )
+        await short.start()
+        XCTAssertEqual(short.sessionSize, 4)
+        let served = try await play(short, stamp: "factId")
+        XCTAssertEqual(served.count, 4)
     }
 
     func testSavingTopicStateNeverCountsASessionOrMovesTheLevel() async throws {

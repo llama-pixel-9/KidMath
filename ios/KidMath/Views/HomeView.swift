@@ -83,9 +83,13 @@ struct HomeView: View {
             .task {
                 engagement = EngagementStore().load()
                 practiceSessions = app.practiceLog?.readLocal(kidId: app.practiceLog?.activeKidId) ?? []
+                // Which v2-only topics show is the version switch's call (the
+                // web's useHiddenTopics), read beside the rest so Home never
+                // waits on the network for it.
+                let switchRead = Task { await app.refreshHiddenTopics() }
                 await app.refreshModeLevels()
                 refreshTopicChips()
-                autostartIfRequested()
+                await autostartIfRequested(after: switchRead)
                 await presentFirstFlightIfNeeded()
             }
         }
@@ -103,6 +107,7 @@ struct HomeView: View {
         practiceSessions = app.practiceLog?.readLocal(kidId: app.practiceLog?.activeKidId) ?? []
         await app.refreshModeLevels()
         refreshTopicChips()
+        await app.refreshHiddenTopics()
     }
 
     private func refreshTopicChips() {
@@ -127,7 +132,7 @@ struct HomeView: View {
             guard let chip = topicChips[id] else { return nil }
             return ProgressStore.double(chip["mastered"]) / max(1, ProgressStore.double(chip["total"], default: 1))
         }
-        return ModeCatalog.groups.flatMap(\.modes)
+        return app.visibleModes
             .filter { $0.playable && GradeSeed.gradeFit(mode: $0.id, grade: grade) == "in" && app.store.canPlay($0.id) && share($0.id) != nil }
             .min { (share($0.id) ?? 1) < (share($1.id) ?? 1) }
     }
@@ -187,8 +192,10 @@ struct HomeView: View {
 
     /// Dev hooks: `simctl launch … io.larkit.app -autostartMode addition`
     /// jumps straight into a session; `-showPaywall 1` presents the paywall
-    /// (screenshots, quick manual testing).
-    private func autostartIfRequested() {
+    /// (screenshots, quick manual testing). A topic the version switch hides
+    /// opens only once the switch read (`switchRead`) shows it, as the web's
+    /// /play route waits for the switch (`-previewV2 1` for a preview topic).
+    private func autostartIfRequested(after switchRead: Task<Void, Never>) async {
         if UserDefaults.standard.bool(forKey: "showPaywall") {
             showPaywall = true
             return
@@ -202,6 +209,8 @@ struct HomeView: View {
         guard topicMode == nil,
               let modeId = UserDefaults.standard.string(forKey: "autostartMode"),
               let mode = ModeCatalog.mode(modeId), mode.playable else { return }
+        if app.hiddenTopics.contains(mode.id) { await switchRead.value }
+        guard topicMode == nil, !app.hiddenTopics.contains(mode.id) else { return }
         // `-autostartMode subtraction -autostartSkill sub-across-zeros` opens the
         // topic sheet and starts that skill; without a skill the sheet itself
         // is the landing.
@@ -211,16 +220,17 @@ struct HomeView: View {
 
     // MARK: - 06 pieces
 
-    /// The topic the kid was in most recently (the practice log).
+    /// The topic the kid was in most recently (the practice log), unless the
+    /// version switch now hides it.
     private var playedMode: ModeInfo? {
         let last = practiceSessions.max { (($0["startedAt"] as? NSNumber)?.doubleValue ?? 0) < (($1["startedAt"] as? NSNumber)?.doubleValue ?? 0) }
-        return (last?["mode"] as? String).flatMap { ModeCatalog.mode($0) }
+        return (last?["mode"] as? String).flatMap { app.hiddenTopics.contains($0) ? nil : ModeCatalog.mode($0) }
     }
 
     /// What the big card offers: the last topic, else the Quick Start pick
     /// (the in-grade topic with the most room), else the first free one.
     private var lastMode: ModeInfo? {
-        playedMode ?? quickStartMode ?? ModeCatalog.allModes.first { $0.playable && app.store.canPlay($0.id) }
+        playedMode ?? quickStartMode ?? app.visibleModes.first { $0.playable && app.store.canPlay($0.id) }
     }
 
     private func header(regular: Bool, topInset: CGFloat) -> some View {
@@ -362,7 +372,7 @@ struct HomeView: View {
     /// Three modes for the kid's grade, the last topic excluded.
     private func forGrade(regular: Bool) -> some View {
         let grade = app.kidProfiles.activeKidGrade
-        let picks = ModeCatalog.allModes
+        let picks = app.visibleModes
             .filter { $0.playable && $0.id != lastMode?.id && (grade == nil || GradeSeed.gradeFit(mode: $0.id, grade: grade) == "in") }
             .prefix(3)
         let tints = [(Theme.seafoam, Theme.seafoamDeep), (Theme.apricot, Theme.apricotDeep), (Theme.sunLight, Theme.sunLightDeep)]
@@ -432,10 +442,10 @@ struct HomeView: View {
         .buttonStyle(SpringButtonStyle())
     }
 
-    /// The topic rows under "For {grade}": the kid's own groups; "All 22
-    /// modes" opens the Play tab with everything.
+    /// The topic rows under "For {grade}": the kid's own groups; "All N
+    /// modes" opens the Play tab with everything the switch shows.
     private func topicRows(regular: Bool) -> some View {
-        let grouped = GradeSeed.groupsForGrade(app.kidProfiles.activeKidGrade)
+        let grouped = GradeSeed.groupsForGrade(app.kidProfiles.activeKidGrade, groups: app.visibleGroups)
         let shown = Array(grouped.main.prefix(2))
         return VStack(alignment: .leading, spacing: 24) {
             ForEach(Array(shown.enumerated()), id: \.element.id) { i, group in
@@ -449,7 +459,7 @@ struct HomeView: View {
                         }
                         Spacer()
                         if i == 0 {
-                            Button("All \(ModeCatalog.allModes.filter(\.playable).count) modes") { withAnimation { tab = .play } }
+                            Button("All \(app.visibleModes.filter(\.playable).count) modes") { withAnimation { tab = .play } }
                                 .font(theme.bodyFont(size: 15, weight: .bold))
                                 .foregroundStyle(Theme.teal)
                         }
@@ -515,9 +525,9 @@ struct HomeView: View {
         .disabled(!mode.playable)
     }
 
-    /// The Play tab: every group.
+    /// The Play tab: every group the version switch shows.
     private func allTopics(regular: Bool) -> some View {
-        let grouped = GradeSeed.groupsForGrade(app.kidProfiles.activeKidGrade)
+        let grouped = GradeSeed.groupsForGrade(app.kidProfiles.activeKidGrade, groups: app.visibleGroups)
         return VStack(alignment: .leading, spacing: 24) {
             Text("All modes").font(theme.displayFont(size: 28)).foregroundStyle(Theme.ink)
             ForEach(grouped.main + grouped.more) { group in

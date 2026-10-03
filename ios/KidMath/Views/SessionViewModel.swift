@@ -34,9 +34,15 @@ final class SessionViewModel: ObservableObject {
 
     let modeId: String
     let skillRequest: SkillRequest?
-    /// Questions in the current run (a Fledging Flight is six).
+    /// Questions in the current run (a Fledging Flight is six, Math Facts
+    /// practice about twenty).
     @Published private(set) var sessionSize: Int
     private let baseSessionSize: Int
+    /// The caller set the length (tests do). Without one, Math Facts practice
+    /// runs the engine's own length, as on the web.
+    private let sizeGiven: Bool
+    /// The iPhone's session length when the caller gives none.
+    static let defaultSessionSize = 10
     /// Feedback hold times; tests shrink these to keep suites fast.
     let correctHold: Duration
     let wrongHold: Duration
@@ -127,7 +133,7 @@ final class SessionViewModel: ObservableObject {
         engine: EngineBridge,
         progressStore: ProgressStore,
         bankService: BankService?,
-        sessionSize: Int = 10,
+        sessionSize: Int? = nil,
         skillRequest: SkillRequest? = nil,
         correctHold: Duration = .milliseconds(1200),
         wrongHold: Duration = .milliseconds(2000),
@@ -139,8 +145,9 @@ final class SessionViewModel: ObservableObject {
         self.engine = engine
         self.progressStore = progressStore
         self.bankService = bankService
-        self.sessionSize = sessionSize
-        self.baseSessionSize = sessionSize
+        self.sessionSize = sessionSize ?? SessionViewModel.defaultSessionSize
+        self.baseSessionSize = sessionSize ?? SessionViewModel.defaultSessionSize
+        self.sizeGiven = sessionSize != nil
         self.skillRequest = skillRequest
         self.correctHold = correctHold
         self.wrongHold = wrongHold
@@ -199,11 +206,16 @@ final class SessionViewModel: ObservableObject {
         options["allowWordProblems"] = WordProblemsSetting.isOn()
         do {
             let rule = engine.fledgingFlightRule()
-            let size = flight ? rule.questions : baseSessionSize
+            // Math Facts practice (not its Fledging Flight) is the engine's
+            // fluency session: the web passes no length, so it runs about 20
+            // facts (FLUENCY_SESSION_SIZE). A length the caller set still wins.
+            let fluent = modeId == "mathFacts" && !flight && !sizeGiven
+            let size: Int?
+            if flight { size = rule.questions } else if fluent { size = nil } else { size = baseSessionSize }
             self.flightPass = rule.pass
             let session = try engine.createSession(mode: modeId, sessionSize: size, options: options)
             self.session = session
-            self.sessionSize = size
+            self.sessionSize = ProgressStore.int(session.snapshot["sessionSize"], default: size ?? baseSessionSize)
             self.isSkillSession = true
             self.isFledgingRun = flight
             self.level = ProgressStore.int(session.snapshot["level"], default: 1)

@@ -23,6 +23,8 @@ struct KidMathApp: App {
                     // as the web's ?preview=v2 link. Anything else is auth.
                     if BankService.handlePreviewURL(url) {
                         app.bankService?.applyPreview()
+                        // A topic at preview shows or hides with the flag.
+                        app.applyHiddenTopics()
                         return
                     }
                     app.supabase.handleAuthCallback(url)

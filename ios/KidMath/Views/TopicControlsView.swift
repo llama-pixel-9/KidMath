@@ -24,7 +24,8 @@ struct TopicControlsView: View {
             if !loaded {
                 Section { ProgressView() }
             }
-            ForEach(ModeCatalog.groups) { group in
+            // A topic the version switch hides is left out here too (GrownUpsPanel.jsx).
+            ForEach(app.visibleGroups) { group in
                 Section(group.title) {
                     ForEach(group.modes.filter { $0.playable && app.store.canPlay($0.id) }) { mode in
                         if let controls = controls(for: mode.id) {

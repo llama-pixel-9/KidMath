@@ -3,7 +3,9 @@ import SwiftUI
 /// Kid-facing mode metadata — Swift mirror of MODE_GROUPS + mode labels in
 /// src/modes/index.js. Every engine mode appears in exactly one group (the
 /// web enforces this in modeGroups.spec.js; testModeCatalogCoversEngine does
-/// the same here against the live engine).
+/// the same here against the live engine). The v2-only topics (Math Facts,
+/// Word Problems, Multi-Digit Math) are listed like any other; the pickers
+/// leave out the ones the version switch hides (`visibleGroups`).
 struct ModeInfo: Identifiable, Hashable {
     let id: String
     let label: String
@@ -69,9 +71,32 @@ enum ModeCatalog {
             // drawn in Swift yet — SOON badge until they are.
             ModeInfo(id: "volumeCoordinates", label: "Cube & Compass", emoji: "🧊", glyph: "⬚", blurb: "Cubes and the coordinate grid", playable: false),
         ]),
+        // The v2-only topics, each its own group as on the web. Math Facts is
+        // live with no switch row; Word Problems and Multi-Digit Math wait on
+        // Sai's flip (default preview), so `visibleGroups` drops them for
+        // everyone but preview viewers until then.
+        ModeGroup(id: "facts", title: "Math Facts", gradeHint: "Grades K-4", modes: [
+            ModeInfo(id: "mathFacts", label: "Math Facts", emoji: "⚡", glyph: "=", blurb: "Add, subtract, multiply and divide from memory", playable: true),
+        ]),
+        ModeGroup(id: "stories", title: "Word Problems", gradeHint: "Grade 2", modes: [
+            ModeInfo(id: "wordProblems", label: "Word Problems", emoji: "📖", glyph: "+−", blurb: "Add and subtract stories", playable: true),
+        ]),
+        ModeGroup(id: "multiDigit", title: "Multi-Digit Math", gradeHint: "Grade 2", modes: [
+            ModeInfo(id: "multiDigit", label: "Multi-Digit Math", emoji: "🧮", glyph: "78+", blurb: "Add and subtract with bigger numbers", playable: true),
+        ]),
     ]
 
     static var allModes: [ModeInfo] { groups.flatMap(\.modes) }
+
+    /// The groups without the `hidden` topics, and without a group they leave
+    /// empty: visibleModeGroups in src/modes/index.js. `hidden` is the
+    /// engine's KidMath.hiddenTopics (AppModel.hiddenTopics).
+    static func visibleGroups(hidden: Set<String>) -> [ModeGroup] {
+        groups.compactMap { group -> ModeGroup? in
+            let modes = group.modes.filter { !hidden.contains($0.id) }
+            return modes.isEmpty ? nil : ModeGroup(id: group.id, title: group.title, gradeHint: group.gradeHint, modes: modes)
+        }
+    }
 
     static func mode(_ id: String) -> ModeInfo? {
         allModes.first { $0.id == id }

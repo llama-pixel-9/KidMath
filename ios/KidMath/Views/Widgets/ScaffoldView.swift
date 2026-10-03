@@ -22,6 +22,9 @@ struct ScaffoldView: View {
                      takeAway: (scaffold["takeAway"] as? NSNumber)?.intValue)
             case "array":
                 arrayGrid(rows: int("rows"), cols: int("cols"))
+            case "tenFrame":
+                // A Math Facts hint picture (factPicture in src/facts/factItems.js).
+                TenFrameDrawingView(filled: int("filled"), filledB: int("filledB"), takeAway: int("takeAway"), frames: int("frames"))
             case "strip":
                 strip(den: int("den"), shaded: int("shaded"))
             case "numberLine":
@@ -67,13 +70,7 @@ struct ScaffoldView: View {
     }
 
     private func arrayGrid(rows: Int, cols: Int) -> some View {
-        let columns = Array(repeating: GridItem(.fixed(20), spacing: 6), count: max(1, min(cols, 12)))
-        return LazyVGrid(columns: columns, spacing: 6) {
-            ForEach(0..<max(0, rows * cols), id: \.self) { _ in
-                Circle().fill(Theme.teal).frame(width: 20, height: 20)
-            }
-        }
-        .frame(maxWidth: CGFloat(max(1, min(cols, 12))) * 26)
+        ArrayDotsView(rows: rows, cols: cols)
     }
 
     private func strip(den: Int, shaded: Int) -> some View {
@@ -112,5 +109,80 @@ struct ScaffoldView: View {
         }
         .frame(maxWidth: 320)
         .frame(height: 60)
+    }
+}
+
+/// Rows of dots (ArrayGrid in Scaffold.jsx): the scaffold's array, and the
+/// picture drawn above a Math Facts times fact (display.figure "array").
+struct ArrayDotsView: View {
+    let rows: Int
+    let cols: Int
+
+    private var columnCount: Int { max(1, min(cols, 12)) }
+
+    var body: some View {
+        LazyVGrid(columns: Array(repeating: GridItem(.fixed(20), spacing: 6), count: columnCount), spacing: 6) {
+            ForEach(0..<max(0, rows * cols), id: \.self) { _ in
+                Circle().fill(Theme.teal).frame(width: 20, height: 20)
+            }
+        }
+        .frame(maxWidth: CGFloat(columnCount) * 26)
+        .accessibilityLabel("\(rows) rows of \(cols)")
+    }
+}
+
+/// A ten frame to look at, not fill (TenFrameDrawing in Scaffold.jsx):
+/// `filled` teal counters, then `filledB` ember ones, the last `takeAway`
+/// crossed out; two frames hold teen numbers. The hint pane draws Math Facts'
+/// ten frame pictures with it.
+struct TenFrameDrawingView: View {
+    let filled: Int
+    let filledB: Int
+    let takeAway: Int
+    let frames: Int
+
+    private var fixed: Int { max(0, filled) + max(0, filledB) }
+    private var frameCount: Int { max(1, min(2, frames)) }
+
+    var body: some View {
+        VStack(spacing: 6) {
+            ForEach(0..<frameCount, id: \.self) { f in
+                LazyVGrid(columns: Array(repeating: GridItem(.fixed(32), spacing: 0), count: 5), spacing: 0) {
+                    ForEach(0..<10, id: \.self) { c in
+                        cell(f * 10 + c)
+                    }
+                }
+                .frame(width: 160)
+                .background(Color.white)
+                .clipShape(RoundedRectangle(cornerRadius: 8))
+                .overlay(RoundedRectangle(cornerRadius: 8).stroke(Theme.ink.opacity(0.4), lineWidth: 3))
+            }
+        }
+    }
+
+    private func cell(_ i: Int) -> some View {
+        let crossed = takeAway > 0 && i < fixed && i >= fixed - takeAway
+        return ZStack {
+            Rectangle().fill(Color.clear)
+                .overlay(Rectangle().stroke(Theme.ink.opacity(0.15), lineWidth: 1))
+            if i < fixed {
+                Circle()
+                    .fill(i < filled ? Theme.teal : Theme.ember)
+                    .frame(width: 20, height: 20)
+                    .opacity(crossed ? 0.4 : 1)
+            }
+            if crossed {
+                // The web's cross (M8 8 L32 32 M32 8 L8 32 on a 40 box) at 24pt.
+                Path { p in
+                    p.move(to: CGPoint(x: 5, y: 5))
+                    p.addLine(to: CGPoint(x: 19, y: 19))
+                    p.move(to: CGPoint(x: 19, y: 5))
+                    p.addLine(to: CGPoint(x: 5, y: 19))
+                }
+                .stroke(Theme.ink, style: StrokeStyle(lineWidth: 3, lineCap: .round))
+                .frame(width: 24, height: 24)
+            }
+        }
+        .frame(width: 32, height: 32)
     }
 }

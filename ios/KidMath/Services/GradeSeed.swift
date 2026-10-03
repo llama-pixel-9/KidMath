@@ -50,6 +50,9 @@ enum GradeSeed {
         "decimalOps": "4–5",
         "volumeCoordinates": "5",
         "mathFacts": "K–4",
+        // Grade 2 skills only, for now.
+        "wordProblems": "2",
+        "multiDigit": "2",
     ]
 
     /// Topics whose levels are grade bands, not three per grade: per grade, K

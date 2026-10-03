@@ -477,7 +477,12 @@ struct SessionView: View {
         case "fractionSet":
             FractionSetWidget(display: display, disabled: locked) { viewModel.submit($0) }
         case "placeValueDiscs":
-            PlaceValueDiscsWidget(display: display, disabled: locked) { viewModel.submit($0) }
+            // display.mode "build" is the tappable mat; it reads the feedback
+            // for its "The mat shows 921." line.
+            PlaceValueDiscsWidget(
+                display: display, disabled: locked,
+                feedback: feedbackState, calmMode: app.calmMode
+            ) { viewModel.submit($0) }
         case "barModel":
             BarModelWidget(display: display, disabled: locked) { viewModel.submit($0) }
         case "shapeFigure":

@@ -72,7 +72,10 @@ The kid oracle likewise normalizes −×÷ and treats _/■ as the unknown mark.
 count mode use TEXTBOXES ("Total in cents", "Your answer"), shapeFigure
 select needs a "Check" press after picking, numberLine ticks are transparent
 SVG circles clicked by geometry (viewBox 320×96, PAD 18, x = 18 + t·284,
-baseY 62), and coinTray build mode needs exact subset-sum over the tray.
+baseY 62), coinTray build mode needs exact subset-sum over the tray, and
+placeValueDiscs build mode (`display.mode: "build"`) presses "Add a ten
+disc" / "Take away a ten disc" from the start mat (`display.cols`) until each
+place shows the answer's digit, then "Check".
 When adding a widget: give its controls real aria-labels, then add a driver
 case; the generic submit finder tries "Submit answer", "Check", "Go".
 

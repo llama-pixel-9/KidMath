@@ -1339,6 +1339,201 @@
       4,
       6
     ],
+    "id": "calc-g2-va-estimate-sum-2",
+    "subskill": "within100",
+    "family": "conceptual",
+    "structureType": "estimateSumDifference",
+    "standards": {
+      "ccss": [],
+      "tx": [],
+      "fl": [],
+      "va": [
+        "2.CE.1a"
+      ],
+      "ga": []
+    },
+    "difficulty": "easy",
+    "format": "number",
+    "widget": null,
+    "representationType": "symbolic",
+    "display": {
+      "layout": "'horizontal'"
+    },
+    "template": {
+      "prompt": "{lead} {a} + {b}?"
+    },
+    "slots": {
+      "tu": {
+        "kind": "int",
+        "min": 1,
+        "max": 6
+      },
+      "tw": {
+        "kind": "int",
+        "min": 1,
+        "max": 6
+      },
+      "pair": {
+        "kind": "int",
+        "min": 0,
+        "max": 2
+      },
+      "ord": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "ph": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "lead": {
+        "kind": "expr",
+        "expr": "ph == 0 ? 'About how much is' : 'Which is the best estimate for'",
+        "format": "text"
+      },
+      "u": {
+        "kind": "expr",
+        "expr": "pair == 2 ? 8 : 7",
+        "format": "int"
+      },
+      "w": {
+        "kind": "expr",
+        "expr": "pair == 1 ? 2 : 1",
+        "format": "int"
+      },
+      "upNum": {
+        "kind": "expr",
+        "expr": "10 * tu + u",
+        "format": "int"
+      },
+      "downNum": {
+        "kind": "expr",
+        "expr": "10 * tw + w",
+        "format": "int"
+      },
+      "a": {
+        "kind": "expr",
+        "expr": "ord == 0 ? upNum : downNum",
+        "format": "int"
+      },
+      "b": {
+        "kind": "expr",
+        "expr": "ord == 0 ? downNum : upNum",
+        "format": "int"
+      },
+      "exact": {
+        "kind": "expr",
+        "expr": "a + b",
+        "format": "int"
+      },
+      "upTen": {
+        "kind": "expr",
+        "expr": "10 * (tu + 1)",
+        "format": "int"
+      },
+      "downTen": {
+        "kind": "expr",
+        "expr": "10 * tw",
+        "format": "int"
+      },
+      "aRound": {
+        "kind": "expr",
+        "expr": "ord == 0 ? upTen : downTen",
+        "format": "int"
+      },
+      "bRound": {
+        "kind": "expr",
+        "expr": "ord == 0 ? downTen : upTen",
+        "format": "int"
+      },
+      "est": {
+        "kind": "expr",
+        "expr": "upTen + downTen",
+        "format": "int"
+      },
+      "upGap": {
+        "kind": "expr",
+        "expr": "10 - u",
+        "format": "int"
+      },
+      "downGap": {
+        "kind": "expr",
+        "expr": "w",
+        "format": "int"
+      },
+      "tensOnly": {
+        "kind": "expr",
+        "expr": "10 * (tu + tw)",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "tu + tw >= 5 && tu + tw <= 9"
+    ],
+    "answer": {
+      "expr": "est",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "est - 10",
+        "mistake": "roundedDownBoth"
+      },
+      {
+        "expr": "est + 10",
+        "mistake": "roundedUpBoth"
+      },
+      {
+        "expr": "100",
+        "mistake": "roundedToHundred",
+        "when": "est < 90",
+        "otherwise": {
+          "expr": "est - 20",
+          "mistake": "droppedATen"
+        }
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks for an estimate, a number close to the sum. Find the sum, then the ten it is closest to.",
+      "steps": [
+        "Add {a} + {b}. Add the tens, then add the ones.",
+        "Look at your sum. Which ten is it closest to?"
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "roundedDownBoth": "{upNum} is only {upGap} away from the next ten up, so it rounds up, not down.",
+        "roundedUpBoth": "{downNum} is only {downGap} more than a ten, so it rounds down, not up.",
+        "roundedToHundred": "The sum is less than 100. Look for the ten it is closest to, not the hundred.",
+        "droppedATen": "That leaves out a ten. The tens in {a} and {b} make {tensOnly} before you even add the ones."
+      },
+      "solution": {
+        "steps": [
+          "{a} + {b} = {exact}.",
+          "{exact} is closest to {est}.",
+          "Rounding each number first gives the same: {aRound} + {bRound} = {est}."
+        ],
+        "answer": "est"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "VA SOL 2023 2.CE.1a"
+      ],
+      "blueprintRow": "calc-g2-va-estimate"
+    }
+  },
+  {
+    "blueprintId": "calc-g2-va-estimate",
+    "modeId": "multiDigit",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
     "id": "calc-g2-va-estimate-difference",
     "subskill": "within100",
     "family": "conceptual",

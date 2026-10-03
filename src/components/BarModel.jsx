@@ -25,10 +25,16 @@ export default function BarModel({ onSubmit, feedback, theme, lowMotionMode, low
   let diagram;
   if (spec?.type === "barCompare") {
     const total = spec.a + spec.diff;
+    // A story's bars carry its people's names, the way textbooks label a
+    // comparison (Sai, 2026-10-03); bare drills keep A and B.
+    const labelA = spec.labelA || "A";
+    const labelB = spec.labelB || "B";
+    const named = Boolean(spec.labelA || spec.labelB);
+    const labelClass = `${named ? "w-12 text-right truncate" : "w-6"} shrink-0 text-sm font-bold ${theme.textSecondary}`;
     diagram = (
       <div className="w-full flex flex-col gap-2">
         <div className="flex items-center gap-2">
-          <span className={`w-6 text-sm font-bold ${theme.textSecondary}`}>A</span>
+          <span className={labelClass}>{labelA}</span>
           <div className="flex-1 rounded-lg overflow-hidden">
             <div className={`${seg} bg-sky-400 rounded-lg`} style={{ width: `${(spec.a / total) * 100}%` }}>
               {spec.a}
@@ -36,7 +42,7 @@ export default function BarModel({ onSubmit, feedback, theme, lowMotionMode, low
           </div>
         </div>
         <div className="flex items-center gap-2">
-          <span className={`w-6 text-sm font-bold ${theme.textSecondary}`}>B</span>
+          <span className={labelClass}>{labelB}</span>
           <div className="flex-1 flex rounded-lg overflow-hidden">
             <div className={`${seg} bg-sky-400`} style={{ width: `${(spec.a / total) * 100}%` }}>
               {spec.a}
@@ -46,7 +52,9 @@ export default function BarModel({ onSubmit, feedback, theme, lowMotionMode, low
             </div>
           </div>
         </div>
-        <div className={`text-center text-sm font-bold ${theme.textSecondary}`}>B = {unknown}</div>
+        <div className={`text-center text-sm font-bold ${theme.textSecondary}`}>
+          {named ? `${labelB}: ${unknown}` : `B = ${unknown}`}
+        </div>
       </div>
     );
   } else {

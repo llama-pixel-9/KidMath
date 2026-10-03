@@ -1892,6 +1892,428 @@
     }
   },
   {
+    "id": "wp-g2-tx-1000-put-together-total-regroup-2",
+    "blueprintId": "wp-g2-tx-1000-put-together-total",
+    "modeId": "wordProblems",
+    "subskill": "biggerNumberStories",
+    "family": "application",
+    "structureType": "putTogetherTotalUnknown",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [],
+      "va": [],
+      "ga": []
+    },
+    "difficulty": "moderate",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} {vs} {p1} {kind1} and {p2} {kind2}. How many {object_plural} does {name} {vb} in all?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art",
+          "money-shopping",
+          "collecting-nature",
+          "screens-media",
+          "sports-outdoors"
+        ],
+        "exclude": [
+          "acorn",
+          "action-figure",
+          "animal-eraser",
+          "app",
+          "app-badge",
+          "arcade-game",
+          "arcade-prize",
+          "arcade-token",
+          "avatar-outfit",
+          "backpack",
+          "balloon",
+          "baseball",
+          "basket",
+          "basketball",
+          "battery-percent",
+          "bead",
+          "bike-ride",
+          "birthday-card",
+          "birthday-money-gift",
+          "board-game",
+          "book-fair-book",
+          "bottle-of-paint",
+          "bouncy-ball",
+          "bowling-pin",
+          "bubble",
+          "button",
+          "candy-bar",
+          "capsule-toy",
+          "card-game",
+          "carnival-ticket",
+          "cartoon",
+          "cartwheel",
+          "catch",
+          "chapter",
+          "charm",
+          "checker",
+          "chess-piece",
+          "chore",
+          "class-point",
+          "claw-machine",
+          "coding-block",
+          "colored-pencil",
+          "coloring-page",
+          "comic-book",
+          "counting-bear",
+          "crayon",
+          "dandelion",
+          "dive-ring",
+          "doll",
+          "dollhouse",
+          "domino",
+          "dry-erase-marker",
+          "e-book",
+          "emoji",
+          "episode",
+          "eraser",
+          "feather",
+          "field-trip-ticket",
+          "fish",
+          "flash-card",
+          "flower",
+          "flower-pot",
+          "flying-disc",
+          "foam-rocket",
+          "football",
+          "fossil",
+          "free-throw",
+          "friendship-bracelet",
+          "game-controller",
+          "game-gem",
+          "game-heart",
+          "game-level",
+          "game-life",
+          "game-round",
+          "gel-pen",
+          "gemstone",
+          "geode",
+          "gift-card",
+          "glow-stick",
+          "glue-stick",
+          "goal",
+          "gold-star",
+          "googly-eye",
+          "graphic-novel",
+          "gumball",
+          "hike",
+          "home-run",
+          "hopscotch-square",
+          "ice-cream-cone",
+          "icicle",
+          "jump",
+          "jump-rope",
+          "jumping-jack",
+          "keychain",
+          "lap",
+          "leaf",
+          "level-star",
+          "library-book",
+          "like",
+          "loom-band",
+          "lost-tooth",
+          "magnetic-tile",
+          "maple-seed",
+          "marble",
+          "marker",
+          "medal",
+          "minute-of-screen-time",
+          "monkey-bar",
+          "movie",
+          "movie-ticket",
+          "muffin",
+          "notebook",
+          "page",
+          "paintbrush",
+          "paper-airplane",
+          "paper-clip",
+          "paperback-book",
+          "pattern-block",
+          "pencil",
+          "pencil-case",
+          "photo",
+          "photo-album",
+          "piece-of-play-food",
+          "piece-of-yarn",
+          "pinecone",
+          "pipe-cleaner",
+          "player",
+          "playing-card",
+          "playlist",
+          "podcast-episode",
+          "pogo-stick",
+          "pom-pom",
+          "pool-noodle",
+          "pop-fidget-toy",
+          "postage-stamp",
+          "postcard",
+          "poster",
+          "power-up",
+          "presentation-slide",
+          "pressed-leaf",
+          "pressed-penny",
+          "pumpkin",
+          "quiz-question",
+          "reward-ticket",
+          "robot-step",
+          "roll-of-tape",
+          "rubber-duck",
+          "rubber-stamp",
+          "sand-bucket",
+          "sand-dollar",
+          "sand-pail",
+          "savings-jar",
+          "school-lunch",
+          "sea-glass",
+          "seashell",
+          "season-of-a-show",
+          "seed",
+          "seed-packet",
+          "seedling",
+          "shark-tooth",
+          "sheet-of-construction-paper",
+          "sight-word",
+          "sketchbook",
+          "skip",
+          "sled-run",
+          "smooth-rock",
+          "snap-cube",
+          "snowball",
+          "snowflake",
+          "soccer-ball",
+          "song",
+          "spelling-word",
+          "squishy-toy",
+          "stacking-cup",
+          "stick",
+          "stick-of-sidewalk-chalk",
+          "sticker",
+          "sticky-note",
+          "streak-day",
+          "stuffed-animal",
+          "sunflower",
+          "swim-lap",
+          "tadpole",
+          "tally-mark",
+          "team-jersey",
+          "temporary-tattoo",
+          "touchdown",
+          "toy-car",
+          "toy-dinosaur",
+          "trading-pin",
+          "train-track-piece",
+          "treasure-map",
+          "tub-of-clay",
+          "tub-of-slime",
+          "tube-of-glitter-glue",
+          "turn",
+          "used-bike",
+          "used-book",
+          "vending-machine-snack",
+          "video",
+          "video-call",
+          "video-game",
+          "video-view",
+          "virtual-pet",
+          "vote",
+          "water-balloon",
+          "water-bottle",
+          "watering-can",
+          "weekly-allowance",
+          "wooden-block"
+        ],
+        "constraints": [
+          "(object.id == 'building-brick' || object.id == 'fuse-bead' || object.id == 'trading-card' || object.id == 'puzzle-piece' || object.id == 'pumpkin-seed' || object.id == 'arcade-ticket' || object.id == 'prize-ticket' || object.id == 'video-game-point' || object.id == 'step')"
+        ]
+      },
+      "p1": {
+        "kind": "int",
+        "min": 100,
+        "max": 399
+      },
+      "p2": {
+        "kind": "int",
+        "min": 100,
+        "max": 399
+      },
+      "which": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "cp": {
+        "kind": "int",
+        "min": 0,
+        "max": 3
+      },
+      "color1": {
+        "kind": "expr",
+        "expr": "cp == 0 ? 'red' : cp == 1 ? 'yellow' : cp == 2 ? 'white' : 'purple'",
+        "format": "text"
+      },
+      "color2": {
+        "kind": "expr",
+        "expr": "cp == 0 ? 'blue' : cp == 1 ? 'green' : cp == 2 ? 'black' : 'pink'",
+        "format": "text"
+      },
+      "total": {
+        "kind": "expr",
+        "expr": "p1 + p2",
+        "format": "int"
+      },
+      "hS": {
+        "kind": "expr",
+        "expr": "floor((p1) / 100) + floor((p2) / 100)",
+        "format": "int"
+      },
+      "tS": {
+        "kind": "expr",
+        "expr": "floor((p1) / 10) % 10 + floor((p2) / 10) % 10",
+        "format": "int"
+      },
+      "oS": {
+        "kind": "expr",
+        "expr": "ones(p1) + ones(p2)",
+        "format": "int"
+      },
+      "tensSum": {
+        "kind": "expr",
+        "expr": "floor((p1) / 10) % 10 + floor((p2) / 10) % 10 + (ones(p1) + ones(p2) >= 10 ? 1 : 0)",
+        "format": "int"
+      },
+      "carryStep": {
+        "kind": "expr",
+        "expr": "which == 0 ? 'The ones make ten or more. Trade ten ones for one ten and add it to the tens.' : 'The ones make less than ten. The tens make ten or more, so trade ten tens for one hundred.'",
+        "format": "text"
+      },
+      "placeName": {
+        "kind": "expr",
+        "expr": "which == 0 ? 'ones' : 'tens'",
+        "format": "text"
+      },
+      "newUnit": {
+        "kind": "expr",
+        "expr": "which == 0 ? 'ten' : 'hundred'",
+        "format": "text"
+      },
+      "nextPlace": {
+        "kind": "expr",
+        "expr": "which == 0 ? 'tens' : 'hundreds'",
+        "format": "text"
+      },
+      "solveLine": {
+        "kind": "expr",
+        "expr": "which == 0 ? 'Ones: ' + oS + ' ones is 1 ten and ' + ((oS - 10) == 1 ? '1 one' : (oS - 10) + ' ones') + '.' : 'Tens: ' + tensSum + ' tens is 1 hundred and ' + ((tensSum - 10) == 1 ? '1 ten' : (tensSum - 10) + ' tens') + '.'",
+        "format": "text"
+      },
+      "vs": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' ? 'wins' : object.id == 'video-game-point' ? 'scores' : object.id == 'step' ? 'walks' : object.id == 'pumpkin-seed' ? 'gets' : 'has'",
+        "format": "text"
+      },
+      "vb": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' ? 'win' : object.id == 'video-game-point' ? 'score' : object.id == 'step' ? 'walk' : object.id == 'pumpkin-seed' ? 'get' : 'have'",
+        "format": "text"
+      },
+      "kind1": {
+        "kind": "expr",
+        "expr": "object.id == 'building-brick' || object.id == 'fuse-bead' ? color1 + ' ' + object.plural : object.id == 'trading-card' ? (cp < 2 ? 'animal' : 'shiny') + ' trading cards' : object.id == 'puzzle-piece' ? 'puzzle pieces in one box' : object.id == 'pumpkin-seed' ? 'pumpkin seeds from one pumpkin' : object.id == 'arcade-ticket' ? 'arcade tickets at one game' : object.id == 'prize-ticket' ? 'prize tickets in one pocket' : object.id == 'video-game-point' ? 'video game points in round one' : 'steps to ' + (cp == 0 ? 'the park' : cp == 1 ? 'school' : cp == 2 ? 'the pool' : 'the garden')",
+        "format": "text"
+      },
+      "kind2": {
+        "kind": "expr",
+        "expr": "object.id == 'building-brick' || object.id == 'fuse-bead' ? color2 + ' ' + object.plural : object.id == 'trading-card' ? (cp < 2 ? 'sports' : 'plain') + ' trading cards' : object.id == 'puzzle-piece' ? 'puzzle pieces in another box' : object.id == 'pumpkin-seed' ? 'pumpkin seeds from another pumpkin' : object.id == 'arcade-ticket' ? 'arcade tickets at another game' : object.id == 'prize-ticket' ? 'prize tickets in the other pocket' : object.id == 'video-game-point' ? 'points in round two' : 'steps to ' + (cp == 0 ? 'the library' : cp == 1 ? 'the playground' : cp == 2 ? 'the store' : 'the pond')",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "which == 0 ? (ones(p1) + ones(p2) >= 10 && tensSum <= 9) : (!(ones(p1) + ones(p2) >= 10) && tensSum >= 10)",
+      "p1 != p2",
+      "sum(drop(object.count_one_kid, 1)) >= p1 + p2"
+    ],
+    "operation": {
+      "a": "p1",
+      "b": "p2",
+      "op": "+"
+    },
+    "answer": {
+      "expr": "p1 + p2",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "which == 0 ? p1 + p2 - 10 : p1 + p2 - 100",
+        "mistake": "forgotToCarry"
+      },
+      {
+        "expr": "which == 0 ? 1000 * hS + 100 * tS + oS : 1000 * hS + 10 * tS + oS",
+        "mistake": "placeValueSlip"
+      },
+      {
+        "expr": "abs(p1 - p2)",
+        "mistake": "subtractedInsteadOfAdded"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} {vs} in all. Put the two amounts together.",
+      "steps": [
+        "Add {p1} + {p2}. Start with the ones.",
+        "{carryStep}",
+        "Then add the hundreds."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "forgotToCarry": "The {placeName} made a new {newUnit}. Add that {newUnit} to the {nextPlace}.",
+        "placeValueSlip": "Each place holds just one digit. When a place makes ten or more, trade ten of them for one of the next place.",
+        "subtractedInsteadOfAdded": "That takes one amount away from the other. In all means put them together, so add {p1} and {p2}."
+      },
+      "solution": {
+        "steps": [
+          "{solveLine}",
+          "{p1} + {p2} = {total}.",
+          "{name} {vs} {total} {object_plural} in all."
+        ],
+        "answer": "p1 + p2"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "TEKS 2.4C, 2.7C",
+        "CCSS Progressions K-5 Operations and Algebraic Thinking (Table 1 situations, two-step problems)"
+      ]
+    }
+  },
+  {
     "id": "wp-g2-tx-1000-take-from-result-noregroup",
     "blueprintId": "wp-g2-tx-1000-take-from-result",
     "modeId": "wordProblems",
@@ -2033,6 +2455,365 @@
       "gone": {
         "kind": "expr",
         "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' ? 'spends' : 'gives away'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "ones(start) >= ones(take)",
+      "floor((start) / 10) % 10 >= floor((take) / 10) % 10",
+      "start - take >= 100",
+      "start - take != take",
+      "start % 10 != 0 || take % 10 != 0",
+      "sum(drop(object.count_one_kid, 1)) >= start"
+    ],
+    "operation": {
+      "a": "start",
+      "b": "take",
+      "op": "-"
+    },
+    "answer": {
+      "expr": "start - take",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "start + take",
+        "mistake": "addedInsteadOfSubtracted"
+      },
+      {
+        "expr": "start",
+        "mistake": "answeredWithAGiven"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} has left. Take {take} away from {start}.",
+      "steps": [
+        "Line up {start} and {take} by place.",
+        "Take away the hundreds, then the tens, then the ones.",
+        "Each top digit is big enough, so there is nothing to trade."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "addedInsteadOfSubtracted": "That adds {take} more. {name} {gone} {take} {object_plural}, so take {take} away from {start}.",
+        "answeredWithAGiven": "That is how many {object_plural} {name} has at the start. Now take away the {take}."
+      },
+      "solution": {
+        "steps": [
+          "{start} − {take} = {left}.",
+          "{name} has {left} {object_plural} left."
+        ],
+        "answer": "start - take"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "TEKS 2.4C, 2.7C",
+        "CCSS Progressions K-5 Operations and Algebraic Thinking (Table 1 situations, two-step problems)"
+      ]
+    }
+  },
+  {
+    "id": "wp-g2-tx-1000-take-from-result-noregroup-2",
+    "blueprintId": "wp-g2-tx-1000-take-from-result",
+    "modeId": "wordProblems",
+    "subskill": "biggerNumberStories",
+    "family": "application",
+    "structureType": "takeFromResultUnknown",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [],
+      "va": [],
+      "ga": []
+    },
+    "difficulty": "easy",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} has {start} {object_plural}. {name} {action}. How many {object_plural} does {name} have left?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "name2": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art",
+          "money-shopping",
+          "collecting-nature",
+          "screens-media",
+          "sports-outdoors"
+        ],
+        "exclude": [
+          "acorn",
+          "action-figure",
+          "animal-eraser",
+          "app",
+          "app-badge",
+          "arcade-game",
+          "arcade-prize",
+          "arcade-token",
+          "avatar-outfit",
+          "backpack",
+          "balloon",
+          "baseball",
+          "basket",
+          "basketball",
+          "battery-percent",
+          "bead",
+          "bike-ride",
+          "birthday-card",
+          "birthday-money-gift",
+          "board-game",
+          "book-fair-book",
+          "bottle-of-paint",
+          "bouncy-ball",
+          "bowling-pin",
+          "bubble",
+          "button",
+          "candy-bar",
+          "capsule-toy",
+          "card-game",
+          "carnival-ticket",
+          "cartoon",
+          "cartwheel",
+          "catch",
+          "chapter",
+          "charm",
+          "checker",
+          "chess-piece",
+          "chore",
+          "class-point",
+          "claw-machine",
+          "coding-block",
+          "colored-pencil",
+          "coloring-page",
+          "comic-book",
+          "counting-bear",
+          "crayon",
+          "dandelion",
+          "dive-ring",
+          "doll",
+          "dollhouse",
+          "domino",
+          "dry-erase-marker",
+          "e-book",
+          "emoji",
+          "episode",
+          "eraser",
+          "feather",
+          "field-trip-ticket",
+          "fish",
+          "flash-card",
+          "flower",
+          "flower-pot",
+          "flying-disc",
+          "foam-rocket",
+          "football",
+          "fossil",
+          "free-throw",
+          "friendship-bracelet",
+          "game-controller",
+          "game-gem",
+          "game-heart",
+          "game-level",
+          "game-life",
+          "game-round",
+          "gel-pen",
+          "gemstone",
+          "geode",
+          "gift-card",
+          "glow-stick",
+          "glue-stick",
+          "goal",
+          "gold-star",
+          "googly-eye",
+          "graphic-novel",
+          "gumball",
+          "hike",
+          "home-run",
+          "hopscotch-square",
+          "ice-cream-cone",
+          "icicle",
+          "jump",
+          "jump-rope",
+          "jumping-jack",
+          "keychain",
+          "lap",
+          "leaf",
+          "level-star",
+          "library-book",
+          "like",
+          "loom-band",
+          "lost-tooth",
+          "magnetic-tile",
+          "maple-seed",
+          "marble",
+          "marker",
+          "medal",
+          "minute-of-screen-time",
+          "monkey-bar",
+          "movie",
+          "movie-ticket",
+          "muffin",
+          "notebook",
+          "page",
+          "paintbrush",
+          "paper-airplane",
+          "paper-clip",
+          "paperback-book",
+          "pattern-block",
+          "pencil",
+          "pencil-case",
+          "photo",
+          "photo-album",
+          "piece-of-play-food",
+          "piece-of-yarn",
+          "pinecone",
+          "pipe-cleaner",
+          "player",
+          "playing-card",
+          "playlist",
+          "podcast-episode",
+          "pogo-stick",
+          "pom-pom",
+          "pool-noodle",
+          "pop-fidget-toy",
+          "postage-stamp",
+          "postcard",
+          "poster",
+          "power-up",
+          "presentation-slide",
+          "pressed-leaf",
+          "pressed-penny",
+          "pumpkin",
+          "puzzle-piece",
+          "quiz-question",
+          "reward-ticket",
+          "robot-step",
+          "roll-of-tape",
+          "rubber-duck",
+          "rubber-stamp",
+          "sand-bucket",
+          "sand-dollar",
+          "sand-pail",
+          "savings-jar",
+          "school-lunch",
+          "sea-glass",
+          "seashell",
+          "season-of-a-show",
+          "seed",
+          "seed-packet",
+          "seedling",
+          "shark-tooth",
+          "sheet-of-construction-paper",
+          "sight-word",
+          "sketchbook",
+          "skip",
+          "sled-run",
+          "smooth-rock",
+          "snap-cube",
+          "snowball",
+          "snowflake",
+          "soccer-ball",
+          "song",
+          "spelling-word",
+          "squishy-toy",
+          "stacking-cup",
+          "step",
+          "stick",
+          "stick-of-sidewalk-chalk",
+          "sticker",
+          "sticky-note",
+          "streak-day",
+          "stuffed-animal",
+          "sunflower",
+          "swim-lap",
+          "tadpole",
+          "tally-mark",
+          "team-jersey",
+          "temporary-tattoo",
+          "touchdown",
+          "toy-car",
+          "toy-dinosaur",
+          "trading-pin",
+          "train-track-piece",
+          "treasure-map",
+          "tub-of-clay",
+          "tub-of-slime",
+          "tube-of-glitter-glue",
+          "turn",
+          "used-bike",
+          "used-book",
+          "vending-machine-snack",
+          "video",
+          "video-call",
+          "video-game",
+          "video-view",
+          "virtual-pet",
+          "vote",
+          "water-balloon",
+          "water-bottle",
+          "watering-can",
+          "weekly-allowance",
+          "wooden-block"
+        ],
+        "constraints": [
+          "(object.id == 'trading-card' || object.id == 'building-brick' || object.id == 'arcade-ticket' || object.id == 'prize-ticket' || object.id == 'fuse-bead' || object.id == 'pumpkin-seed' || object.id == 'video-game-point')"
+        ]
+      },
+      "startLo": {
+        "kind": "int",
+        "min": 200,
+        "max": 499
+      },
+      "startHi": {
+        "kind": "int",
+        "min": 200,
+        "max": 999
+      },
+      "start": {
+        "kind": "expr",
+        "expr": "sum(drop(object.count_one_kid, 1)) >= 1000 ? startHi : startLo",
+        "format": "int"
+      },
+      "take": {
+        "kind": "int",
+        "min": 100,
+        "max": 499
+      },
+      "left": {
+        "kind": "expr",
+        "expr": "start - take",
+        "format": "int"
+      },
+      "action": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' || object.id == 'video-game-point' ? 'spends ' + take + ' ' + object.plural + (object.id == 'arcade-ticket' ? ' on a prize' : object.id == 'prize-ticket' ? ' on a toy' : ' on a power-up') : object.id == 'building-brick' || object.id == 'fuse-bead' ? 'uses ' + take + ' ' + object.plural + (object.id == 'building-brick' ? ' to build a tower' : ' to make a picture') : 'gives ' + take + ' ' + object.plural + ' to ' + name2",
+        "format": "text"
+      },
+      "gone": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' || object.id == 'video-game-point' ? 'spends' : object.id == 'building-brick' || object.id == 'fuse-bead' ? 'uses' : 'gives away'",
         "format": "text"
       }
     },
@@ -2239,6 +3020,392 @@
       "gone": {
         "kind": "expr",
         "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' ? 'spent them' : 'gave them away'",
+        "format": "text"
+      },
+      "tradeStep": {
+        "kind": "expr",
+        "expr": "which == 0 ? 'There are not enough ones to take away. Trade one ten for ten ones.' : 'There are enough ones. There are not enough tens, so trade one hundred for ten tens.'",
+        "format": "text"
+      },
+      "tradeSolve": {
+        "kind": "expr",
+        "expr": "which == 0 ? 'Trade a ten: ' + start + ' is ' + ((floor((start) / 100)) == 1 ? '1 hundred' : (floor((start) / 100)) + ' hundreds') + ', ' + ((floor((start) / 10) % 10 - 1) == 1 ? '1 ten' : (floor((start) / 10) % 10 - 1) + ' tens') + ' and ' + (ones(start) + 10) + ' ones.' : 'Trade a hundred: ' + start + ' is ' + ((floor((start) / 100) - 1) == 1 ? '1 hundred' : (floor((start) / 100) - 1) + ' hundreds') + ', ' + (floor((start) / 10) % 10 + 10) + ' tens and ' + ((ones(start)) == 1 ? '1 one' : (ones(start)) + ' ones') + '.'",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "which == 0 ? (ones(start) < ones(take) && floor((start) / 10) % 10 - 1 >= floor((take) / 10) % 10 && floor((start) / 100) >= floor((take) / 100)) : (ones(start) >= ones(take) && floor((start) / 10) % 10 < floor((take) / 10) % 10 && floor((start) / 100) - 1 >= floor((take) / 100))",
+      "which == 0 ? ones(take) - ones(start) != 5 : floor((take) / 10) % 10 - floor((start) / 10) % 10 != 5",
+      "start - take >= 100",
+      "start - take != take",
+      "sum(drop(object.count_one_kid, 1)) >= start"
+    ],
+    "operation": {
+      "a": "start",
+      "b": "take",
+      "op": "-"
+    },
+    "answer": {
+      "expr": "start - take",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "100 * abs(floor((start) / 100) - floor((take) / 100)) + 10 * abs(floor((start) / 10) % 10 - floor((take) / 10) % 10) + abs(ones(start) - ones(take))",
+        "mistake": "smallerFromLarger"
+      },
+      {
+        "expr": "start - take + 10",
+        "mistake": "offByTen",
+        "when": "which == 0",
+        "otherwise": {
+          "expr": "start - take + 100",
+          "mistake": "offByHundred"
+        }
+      },
+      {
+        "expr": "start + take",
+        "mistake": "addedInsteadOfSubtracted"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} has now. Take {take} away from {start}.",
+      "steps": [
+        "Line up {start} and {take} by place. Start with the ones.",
+        "{tradeStep}",
+        "Then take away the tens and the hundreds."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "smallerFromLarger": "That takes the smaller digit from the bigger one in each place. When the top digit is too small, trade first.",
+        "offByTen": "After you trade a ten for ten ones, there is one ten fewer. Take that ten away from the tens too.",
+        "offByHundred": "After you trade a hundred for ten tens, there is one hundred fewer. Take that hundred away from the hundreds too.",
+        "addedInsteadOfSubtracted": "That adds {take} more. {name} {gone}, so take {take} away from {start}."
+      },
+      "solution": {
+        "steps": [
+          "{tradeSolve}",
+          "{start} − {take} = {left}.",
+          "{name} has {left} {object_plural} now."
+        ],
+        "answer": "start - take"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "TEKS 2.4C, 2.7C",
+        "CCSS Progressions K-5 Operations and Algebraic Thinking (Table 1 situations, two-step problems)"
+      ],
+      "numbers": "which 0 trades a ten, 1 a hundred. The 'traded but kept the old digit' slip is offByTen (ten more than the key) on a ten trade and offByHundred (a hundred more) on a hundred trade."
+    }
+  },
+  {
+    "id": "wp-g2-tx-1000-take-from-result-regroup-2",
+    "blueprintId": "wp-g2-tx-1000-take-from-result",
+    "modeId": "wordProblems",
+    "subskill": "biggerNumberStories",
+    "family": "application",
+    "structureType": "takeFromResultUnknown",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [],
+      "va": [],
+      "ga": []
+    },
+    "difficulty": "moderate",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} had {start} {object_plural}. Then {name} {action}. How many {object_plural} does {name} have now?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "name2": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art",
+          "money-shopping",
+          "collecting-nature",
+          "screens-media",
+          "sports-outdoors"
+        ],
+        "exclude": [
+          "acorn",
+          "action-figure",
+          "animal-eraser",
+          "app",
+          "app-badge",
+          "arcade-game",
+          "arcade-prize",
+          "arcade-token",
+          "avatar-outfit",
+          "backpack",
+          "balloon",
+          "baseball",
+          "basket",
+          "basketball",
+          "battery-percent",
+          "bead",
+          "bike-ride",
+          "birthday-card",
+          "birthday-money-gift",
+          "board-game",
+          "book-fair-book",
+          "bottle-of-paint",
+          "bouncy-ball",
+          "bowling-pin",
+          "bubble",
+          "button",
+          "candy-bar",
+          "capsule-toy",
+          "card-game",
+          "carnival-ticket",
+          "cartoon",
+          "cartwheel",
+          "catch",
+          "chapter",
+          "charm",
+          "checker",
+          "chess-piece",
+          "chore",
+          "class-point",
+          "claw-machine",
+          "coding-block",
+          "colored-pencil",
+          "coloring-page",
+          "comic-book",
+          "counting-bear",
+          "crayon",
+          "dandelion",
+          "dive-ring",
+          "doll",
+          "dollhouse",
+          "domino",
+          "dry-erase-marker",
+          "e-book",
+          "emoji",
+          "episode",
+          "eraser",
+          "feather",
+          "field-trip-ticket",
+          "fish",
+          "flash-card",
+          "flower",
+          "flower-pot",
+          "flying-disc",
+          "foam-rocket",
+          "football",
+          "fossil",
+          "free-throw",
+          "friendship-bracelet",
+          "game-controller",
+          "game-gem",
+          "game-heart",
+          "game-level",
+          "game-life",
+          "game-round",
+          "gel-pen",
+          "gemstone",
+          "geode",
+          "gift-card",
+          "glow-stick",
+          "glue-stick",
+          "goal",
+          "gold-star",
+          "googly-eye",
+          "graphic-novel",
+          "gumball",
+          "hike",
+          "home-run",
+          "hopscotch-square",
+          "ice-cream-cone",
+          "icicle",
+          "jump",
+          "jump-rope",
+          "jumping-jack",
+          "keychain",
+          "lap",
+          "leaf",
+          "level-star",
+          "library-book",
+          "like",
+          "loom-band",
+          "lost-tooth",
+          "magnetic-tile",
+          "maple-seed",
+          "marble",
+          "marker",
+          "medal",
+          "minute-of-screen-time",
+          "monkey-bar",
+          "movie",
+          "movie-ticket",
+          "muffin",
+          "notebook",
+          "page",
+          "paintbrush",
+          "paper-airplane",
+          "paper-clip",
+          "paperback-book",
+          "pattern-block",
+          "pencil",
+          "pencil-case",
+          "photo",
+          "photo-album",
+          "piece-of-play-food",
+          "piece-of-yarn",
+          "pinecone",
+          "pipe-cleaner",
+          "player",
+          "playing-card",
+          "playlist",
+          "podcast-episode",
+          "pogo-stick",
+          "pom-pom",
+          "pool-noodle",
+          "pop-fidget-toy",
+          "postage-stamp",
+          "postcard",
+          "poster",
+          "power-up",
+          "presentation-slide",
+          "pressed-leaf",
+          "pressed-penny",
+          "pumpkin",
+          "puzzle-piece",
+          "quiz-question",
+          "reward-ticket",
+          "robot-step",
+          "roll-of-tape",
+          "rubber-duck",
+          "rubber-stamp",
+          "sand-bucket",
+          "sand-dollar",
+          "sand-pail",
+          "savings-jar",
+          "school-lunch",
+          "sea-glass",
+          "seashell",
+          "season-of-a-show",
+          "seed",
+          "seed-packet",
+          "seedling",
+          "shark-tooth",
+          "sheet-of-construction-paper",
+          "sight-word",
+          "sketchbook",
+          "skip",
+          "sled-run",
+          "smooth-rock",
+          "snap-cube",
+          "snowball",
+          "snowflake",
+          "soccer-ball",
+          "song",
+          "spelling-word",
+          "squishy-toy",
+          "stacking-cup",
+          "step",
+          "stick",
+          "stick-of-sidewalk-chalk",
+          "sticker",
+          "sticky-note",
+          "streak-day",
+          "stuffed-animal",
+          "sunflower",
+          "swim-lap",
+          "tadpole",
+          "tally-mark",
+          "team-jersey",
+          "temporary-tattoo",
+          "touchdown",
+          "toy-car",
+          "toy-dinosaur",
+          "trading-pin",
+          "train-track-piece",
+          "treasure-map",
+          "tub-of-clay",
+          "tub-of-slime",
+          "tube-of-glitter-glue",
+          "turn",
+          "used-bike",
+          "used-book",
+          "vending-machine-snack",
+          "video",
+          "video-call",
+          "video-game",
+          "video-view",
+          "virtual-pet",
+          "vote",
+          "water-balloon",
+          "water-bottle",
+          "watering-can",
+          "weekly-allowance",
+          "wooden-block"
+        ],
+        "constraints": [
+          "(object.id == 'trading-card' || object.id == 'building-brick' || object.id == 'arcade-ticket' || object.id == 'prize-ticket' || object.id == 'fuse-bead' || object.id == 'pumpkin-seed' || object.id == 'video-game-point')"
+        ]
+      },
+      "startLo": {
+        "kind": "int",
+        "min": 200,
+        "max": 499
+      },
+      "startHi": {
+        "kind": "int",
+        "min": 200,
+        "max": 999
+      },
+      "start": {
+        "kind": "expr",
+        "expr": "sum(drop(object.count_one_kid, 1)) >= 1000 ? startHi : startLo",
+        "format": "int"
+      },
+      "take": {
+        "kind": "int",
+        "min": 100,
+        "max": 499
+      },
+      "which": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "left": {
+        "kind": "expr",
+        "expr": "start - take",
+        "format": "int"
+      },
+      "action": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' || object.id == 'video-game-point' ? 'spent ' + take + ' ' + object.plural + (object.id == 'arcade-ticket' ? ' on a prize' : object.id == 'prize-ticket' ? ' on a toy' : ' on a power-up') : object.id == 'building-brick' || object.id == 'fuse-bead' ? 'used ' + take + ' ' + object.plural + (object.id == 'building-brick' ? ' to build a castle' : ' to make a picture') : 'gave ' + take + ' ' + object.plural + ' to ' + name2",
+        "format": "text"
+      },
+      "gone": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' || object.id == 'video-game-point' ? 'spent them' : object.id == 'building-brick' || object.id == 'fuse-bead' ? 'used them' : 'gave them away'",
         "format": "text"
       },
       "tradeStep": {
@@ -2831,6 +3998,431 @@
     }
   },
   {
+    "id": "wp-g2-tx-1000-compare-more-2",
+    "blueprintId": "wp-g2-tx-1000-compare-more",
+    "modeId": "wordProblems",
+    "subskill": "biggerNumberStories",
+    "family": "application",
+    "structureType": "compareDifferenceMore",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [],
+      "va": [],
+      "ga": []
+    },
+    "difficulty": "moderate",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{firstName} {v1} {firstAmt} {object_plural}. {secondName} {v1} {secondAmt} {object_plural}. How many more {object_plural} {aux} {name} {v2} than {name2}?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "name2": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art",
+          "money-shopping",
+          "collecting-nature",
+          "screens-media",
+          "sports-outdoors"
+        ],
+        "exclude": [
+          "acorn",
+          "action-figure",
+          "animal-eraser",
+          "app",
+          "app-badge",
+          "arcade-game",
+          "arcade-prize",
+          "arcade-token",
+          "avatar-outfit",
+          "backpack",
+          "balloon",
+          "baseball",
+          "basket",
+          "basketball",
+          "battery-percent",
+          "bead",
+          "bike-ride",
+          "birthday-card",
+          "birthday-money-gift",
+          "board-game",
+          "book-fair-book",
+          "bottle-of-paint",
+          "bouncy-ball",
+          "bowling-pin",
+          "bubble",
+          "button",
+          "candy-bar",
+          "capsule-toy",
+          "card-game",
+          "carnival-ticket",
+          "cartoon",
+          "cartwheel",
+          "catch",
+          "chapter",
+          "charm",
+          "checker",
+          "chess-piece",
+          "chore",
+          "class-point",
+          "claw-machine",
+          "coding-block",
+          "colored-pencil",
+          "coloring-page",
+          "comic-book",
+          "counting-bear",
+          "crayon",
+          "dandelion",
+          "dive-ring",
+          "doll",
+          "dollhouse",
+          "domino",
+          "dry-erase-marker",
+          "e-book",
+          "emoji",
+          "episode",
+          "eraser",
+          "feather",
+          "field-trip-ticket",
+          "fish",
+          "flash-card",
+          "flower",
+          "flower-pot",
+          "flying-disc",
+          "foam-rocket",
+          "football",
+          "fossil",
+          "free-throw",
+          "friendship-bracelet",
+          "game-controller",
+          "game-gem",
+          "game-heart",
+          "game-level",
+          "game-life",
+          "game-round",
+          "gel-pen",
+          "gemstone",
+          "geode",
+          "gift-card",
+          "glow-stick",
+          "glue-stick",
+          "goal",
+          "gold-star",
+          "googly-eye",
+          "graphic-novel",
+          "gumball",
+          "hike",
+          "home-run",
+          "hopscotch-square",
+          "ice-cream-cone",
+          "icicle",
+          "jump",
+          "jump-rope",
+          "jumping-jack",
+          "keychain",
+          "lap",
+          "leaf",
+          "level-star",
+          "library-book",
+          "like",
+          "loom-band",
+          "lost-tooth",
+          "magnetic-tile",
+          "maple-seed",
+          "marble",
+          "marker",
+          "medal",
+          "minute-of-screen-time",
+          "monkey-bar",
+          "movie",
+          "movie-ticket",
+          "muffin",
+          "notebook",
+          "page",
+          "paintbrush",
+          "paper-airplane",
+          "paper-clip",
+          "paperback-book",
+          "pattern-block",
+          "pencil",
+          "pencil-case",
+          "photo",
+          "photo-album",
+          "piece-of-play-food",
+          "piece-of-yarn",
+          "pinecone",
+          "pipe-cleaner",
+          "player",
+          "playing-card",
+          "playlist",
+          "podcast-episode",
+          "pogo-stick",
+          "pom-pom",
+          "pool-noodle",
+          "pop-fidget-toy",
+          "postage-stamp",
+          "postcard",
+          "poster",
+          "power-up",
+          "presentation-slide",
+          "pressed-leaf",
+          "pressed-penny",
+          "pumpkin",
+          "quiz-question",
+          "reward-ticket",
+          "robot-step",
+          "roll-of-tape",
+          "rubber-duck",
+          "rubber-stamp",
+          "sand-bucket",
+          "sand-dollar",
+          "sand-pail",
+          "savings-jar",
+          "school-lunch",
+          "sea-glass",
+          "seashell",
+          "season-of-a-show",
+          "seed",
+          "seed-packet",
+          "seedling",
+          "shark-tooth",
+          "sheet-of-construction-paper",
+          "sight-word",
+          "sketchbook",
+          "skip",
+          "sled-run",
+          "smooth-rock",
+          "snap-cube",
+          "snowball",
+          "snowflake",
+          "soccer-ball",
+          "song",
+          "spelling-word",
+          "squishy-toy",
+          "stacking-cup",
+          "stick",
+          "stick-of-sidewalk-chalk",
+          "sticker",
+          "sticky-note",
+          "streak-day",
+          "stuffed-animal",
+          "sunflower",
+          "swim-lap",
+          "tadpole",
+          "tally-mark",
+          "team-jersey",
+          "temporary-tattoo",
+          "touchdown",
+          "toy-car",
+          "toy-dinosaur",
+          "trading-pin",
+          "train-track-piece",
+          "treasure-map",
+          "tub-of-clay",
+          "tub-of-slime",
+          "tube-of-glitter-glue",
+          "turn",
+          "used-bike",
+          "used-book",
+          "vending-machine-snack",
+          "video",
+          "video-call",
+          "video-game",
+          "video-view",
+          "virtual-pet",
+          "vote",
+          "water-balloon",
+          "water-bottle",
+          "watering-can",
+          "weekly-allowance",
+          "wooden-block"
+        ],
+        "constraints": [
+          "(object.id == 'trading-card' || object.id == 'building-brick' || object.id == 'puzzle-piece' || object.id == 'fuse-bead' || object.id == 'arcade-ticket' || object.id == 'prize-ticket' || object.id == 'video-game-point' || object.id == 'step' || object.id == 'pumpkin-seed')"
+        ]
+      },
+      "bigLo": {
+        "kind": "int",
+        "min": 120,
+        "max": 499
+      },
+      "bigHi": {
+        "kind": "int",
+        "min": 120,
+        "max": 999
+      },
+      "smallLo": {
+        "kind": "int",
+        "min": 100,
+        "max": 479
+      },
+      "smallHi": {
+        "kind": "int",
+        "min": 100,
+        "max": 979
+      },
+      "big": {
+        "kind": "expr",
+        "expr": "sum(drop(object.count_one_kid, 1)) >= 1000 ? bigHi : bigLo",
+        "format": "int"
+      },
+      "small": {
+        "kind": "expr",
+        "expr": "sum(drop(object.count_one_kid, 1)) >= 1000 ? smallHi : smallLo",
+        "format": "int"
+      },
+      "mix": {
+        "kind": "int",
+        "min": 0,
+        "max": 17
+      },
+      "trade": {
+        "kind": "expr",
+        "expr": "ones(big) >= ones(small) && floor((big) / 10) % 10 >= floor((small) / 10) % 10 ? 0 : (ones(big) < ones(small) && floor((big) / 10) % 10 - 1 >= floor((small) / 10) % 10 ? 1 : (ones(big) >= ones(small) && floor((big) / 10) % 10 < floor((small) / 10) % 10 ? 2 : 3))",
+        "format": "int"
+      },
+      "order": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "diff": {
+        "kind": "expr",
+        "expr": "big - small",
+        "format": "int"
+      },
+      "firstName": {
+        "kind": "expr",
+        "expr": "order == 0 ? name : name2",
+        "format": "text"
+      },
+      "secondName": {
+        "kind": "expr",
+        "expr": "order == 0 ? name2 : name",
+        "format": "text"
+      },
+      "firstAmt": {
+        "kind": "expr",
+        "expr": "order == 0 ? big : small",
+        "format": "int"
+      },
+      "secondAmt": {
+        "kind": "expr",
+        "expr": "order == 0 ? small : big",
+        "format": "int"
+      },
+      "v1": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' ? 'won' : object.id == 'video-game-point' ? 'scored' : object.id == 'step' ? 'walked' : object.id == 'pumpkin-seed' ? 'scooped out' : 'has'",
+        "format": "text"
+      },
+      "aux": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' || object.id == 'video-game-point' || object.id == 'step' || object.id == 'pumpkin-seed' ? 'did' : 'does'",
+        "format": "text"
+      },
+      "v2": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' ? 'win' : object.id == 'video-game-point' ? 'score' : object.id == 'step' ? 'walk' : object.id == 'pumpkin-seed' ? 'scoop out' : 'have'",
+        "format": "text"
+      },
+      "tradeStep": {
+        "kind": "expr",
+        "expr": "trade == 0 ? 'There are enough ones and enough tens, so there is nothing to trade. Take away the ones.' : (trade == 1 ? 'There are not enough ones to take away. Trade one ten for ten ones.' : 'There are enough ones. There are not enough tens, so trade one hundred for ten tens.')",
+        "format": "text"
+      },
+      "tradeSolve": {
+        "kind": "expr",
+        "expr": "trade == 0 ? 'Each top digit is big enough, so there is nothing to trade.' : (trade == 1 ? 'Trade a ten: ' + big + ' is ' + ((floor((big) / 100)) == 1 ? '1 hundred' : (floor((big) / 100)) + ' hundreds') + ', ' + ((floor((big) / 10) % 10 - 1) == 1 ? '1 ten' : (floor((big) / 10) % 10 - 1) + ' tens') + ' and ' + (ones(big) + 10) + ' ones.' : 'Trade a hundred: ' + big + ' is ' + ((floor((big) / 100) - 1) == 1 ? '1 hundred' : (floor((big) / 100) - 1) + ' hundreds') + ', ' + (floor((big) / 10) % 10 + 10) + ' tens and ' + ((ones(big)) == 1 ? '1 one' : (ones(big)) + ' ones') + '.')",
+        "format": "text"
+      }
+    },
+    "constraints": [
+      "trade == (mix <= 5 ? 0 : (mix <= 10 ? 1 : 2))",
+      "trade != 1 || ones(small) - ones(big) != 5",
+      "trade != 2 || floor((small) / 10) % 10 - floor((big) / 10) % 10 != 5",
+      "big - small >= 20",
+      "big - small != small",
+      "sum(drop(object.count_one_kid, 1)) >= big"
+    ],
+    "operation": {
+      "a": "big",
+      "b": "small",
+      "op": "-"
+    },
+    "answer": {
+      "expr": "big - small",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "big + small",
+        "mistake": "addedInsteadOfSubtracted"
+      },
+      {
+        "expr": "big",
+        "mistake": "answeredWithAGiven"
+      },
+      {
+        "expr": "100 * abs(floor((big) / 100) - floor((small) / 100)) + 10 * abs(floor((big) / 10) % 10 - floor((small) / 10) % 10) + abs(ones(big) - ones(small))",
+        "mistake": "smallerFromLarger",
+        "when": "trade > 0"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many more {object_plural} {name} {v1} than {name2}. Find the difference between {big} and {small}.",
+      "steps": [
+        "Take the smaller amount from the bigger one: {big} − {small}. Start with the ones.",
+        "{tradeStep}",
+        "Then take away the tens and the hundreds."
+      ],
+      "picture": null,
+      "example": "auto",
+      "feedback": {
+        "addedInsteadOfSubtracted": "That puts the two amounts together. How many more means find the difference, so take {small} away from {big}.",
+        "answeredWithAGiven": "That is how many {object_plural} {name} {v1}. The question asks how many more than {name2}.",
+        "smallerFromLarger": "That takes the smaller digit from the bigger one in each place. When the top digit is too small, trade first."
+      },
+      "solution": {
+        "steps": [
+          "{tradeSolve}",
+          "{big} − {small} = {diff}.",
+          "{name} {v1} {diff} more {object_plural} than {name2}."
+        ],
+        "answer": "big - small"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "TEKS 2.4C, 2.7C",
+        "CCSS Progressions K-5 Operations and Algebraic Thinking (Table 1 situations, two-step problems)"
+      ],
+      "numbers": "mix 0-5 asks for no trade, 6-10 for a ten, 11-17 for a hundred: draws with no trade pass the number rules more often, so this gives about half no trade and a quarter each of ten and hundred trades (the row's note). smallerFromLarger exists only on a trade and sits out the other fills; the number pad keeps the two other slips."
+    }
+  },
+  {
     "id": "wp-g2-tx-1000-two-step",
     "blueprintId": "wp-g2-tx-1000-two-step",
     "modeId": "wordProblems",
@@ -3015,6 +4607,434 @@
       "fbStop": {
         "kind": "expr",
         "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' ? 'That is how many ' + object.plural + ' are left after ' + name + ' spent ' + take + '. Then ' + name + ' won ' + add + ' more, so add them.' : 'That is how many ' + object.plural + ' are left after ' + name + ' gave ' + take + ' to ' + name2 + '. Then ' + name3 + ' gave ' + name + ' ' + add + ' more, so add them.'",
+        "format": "text"
+      },
+      "tip": {
+        "kind": "expr",
+        "expr": "borrow1 == 1 ? (cfg == 0 ? 'There are not enough tens to take away, so trade one hundred for ten tens.' : 'There are not enough ones to take away, so trade one ten for ten ones.') : carry2 == 1 ? (cfg == 0 ? 'When you add the ones, they make a new ten.' : 'When you add the tens, they make a new hundred.') : 'Each step changes only one place.'",
+        "format": "text"
+      },
+      "lineMin": {
+        "kind": "expr",
+        "expr": "floorTen(start - (cfg == 0 ? 10 * tensAmt : onesAmt))",
+        "format": "int"
+      },
+      "lineMax": {
+        "kind": "expr",
+        "expr": "nextTen(max(start, start - (cfg == 0 ? 10 * tensAmt : onesAmt) + (cfg == 0 ? onesAmt : 10 * tensAmt)))",
+        "format": "int"
+      },
+      "lineStep": {
+        "kind": "expr",
+        "expr": "nextTen(max(start, start - (cfg == 0 ? 10 * tensAmt : onesAmt) + (cfg == 0 ? onesAmt : 10 * tensAmt))) - floorTen(start - (cfg == 0 ? 10 * tensAmt : onesAmt)) > 40 ? 10 : 5",
+        "format": "int"
+      }
+    },
+    "constraints": [
+      "borrow1 + carry2 == (mix == 2 ? 1 : 0)",
+      "start - (cfg == 0 ? 10 * tensAmt : onesAmt) - (cfg == 0 ? onesAmt : 10 * tensAmt) >= 1",
+      "start - (cfg == 0 ? 10 * tensAmt : onesAmt) + (cfg == 0 ? onesAmt : 10 * tensAmt) != (cfg == 0 ? 10 * tensAmt : onesAmt) && start - (cfg == 0 ? 10 * tensAmt : onesAmt) + (cfg == 0 ? onesAmt : 10 * tensAmt) != (cfg == 0 ? onesAmt : 10 * tensAmt)",
+      "sum(drop(object.count_one_kid, 1)) >= max(start, start - (cfg == 0 ? 10 * tensAmt : onesAmt) + (cfg == 0 ? onesAmt : 10 * tensAmt))"
+    ],
+    "answer": {
+      "expr": "start - (cfg == 0 ? 10 * tensAmt : onesAmt) + (cfg == 0 ? onesAmt : 10 * tensAmt)",
+      "type": "int"
+    },
+    "distractors": [
+      {
+        "expr": "start - (cfg == 0 ? 10 * tensAmt : onesAmt)",
+        "mistake": "stopsAtStepOne"
+      },
+      {
+        "expr": "start - (cfg == 0 ? 10 * tensAmt : onesAmt) - (cfg == 0 ? onesAmt : 10 * tensAmt)",
+        "mistake": "wrongOperationStepTwo"
+      },
+      {
+        "expr": "start + (cfg == 0 ? 10 * tensAmt : onesAmt) + (cfg == 0 ? onesAmt : 10 * tensAmt)",
+        "mistake": "addedEverything"
+      }
+    ],
+    "hint": {
+      "nudge": "The question asks how many {object_plural} {name} has now. First take away, then add.",
+      "steps": [
+        "Start at {start}. Take away the {take} {name} {gone}.",
+        "Then add the {add} more {object_plural}.",
+        "{tip}"
+      ],
+      "picture": {
+        "kind": "numberLine",
+        "min": "lineMin",
+        "max": "lineMax",
+        "mark": "start",
+        "step": "lineStep"
+      },
+      "example": "auto",
+      "feedback": {
+        "stopsAtStepOne": "{fbStop}",
+        "wrongOperationStepTwo": "That takes away the {add} too. {name} got {add} more, so add them.",
+        "addedEverything": "That adds all three numbers. {name} {gone} {take}, so take those away."
+      },
+      "solution": {
+        "steps": [
+          "{start} − {take} = {after1}.",
+          "{after1} + {add} = {total}.",
+          "{name} has {total} {object_plural} now."
+        ],
+        "answer": "start - (cfg == 0 ? 10 * tensAmt : onesAmt) + (cfg == 0 ? onesAmt : 10 * tensAmt)"
+      }
+    },
+    "provenance": {
+      "author": "larkit",
+      "checkedAgainst": [
+        "TEKS 2.4C, 2.7C",
+        "CCSS Progressions K-5 Operations and Algebraic Thinking (Table 1 situations, two-step problems)"
+      ],
+      "numbers": "cfg 0 takes whole tens and adds ones, cfg 1 takes ones and adds whole tens. mix 0-1 asks for no regroup, 2 for one, which gives about half and half."
+    }
+  },
+  {
+    "id": "wp-g2-tx-1000-two-step-2",
+    "blueprintId": "wp-g2-tx-1000-two-step",
+    "modeId": "wordProblems",
+    "subskill": "biggerNumberStories",
+    "family": "application",
+    "structureType": "twoStepTakeAdd",
+    "grade": "2",
+    "levelRange": [
+      4,
+      6
+    ],
+    "standards": {
+      "ccss": [],
+      "tx": [
+        "2.4C",
+        "2.7C"
+      ],
+      "fl": [],
+      "va": [],
+      "ga": []
+    },
+    "difficulty": "hard",
+    "format": "number",
+    "widget": "numberPad",
+    "representationType": "verbalContext",
+    "template": {
+      "prompt": "{name} had {start} {object_plural}. {step1}. Then {step2}. How many {object_plural} does {name} have now?"
+    },
+    "slots": {
+      "name": {
+        "kind": "name"
+      },
+      "name2": {
+        "kind": "name"
+      },
+      "name3": {
+        "kind": "name"
+      },
+      "object": {
+        "kind": "object",
+        "skill": "addition",
+        "band": "2-3",
+        "minAppeal": 2,
+        "categories": [
+          "toys-games",
+          "school-art",
+          "money-shopping",
+          "collecting-nature",
+          "screens-media",
+          "sports-outdoors"
+        ],
+        "exclude": [
+          "acorn",
+          "action-figure",
+          "animal-eraser",
+          "app",
+          "app-badge",
+          "arcade-game",
+          "arcade-prize",
+          "arcade-token",
+          "avatar-outfit",
+          "backpack",
+          "balloon",
+          "baseball",
+          "basket",
+          "basketball",
+          "battery-percent",
+          "bead",
+          "bike-ride",
+          "birthday-card",
+          "birthday-money-gift",
+          "board-game",
+          "book-fair-book",
+          "bottle-of-paint",
+          "bouncy-ball",
+          "bowling-pin",
+          "bubble",
+          "button",
+          "candy-bar",
+          "capsule-toy",
+          "card-game",
+          "carnival-ticket",
+          "cartoon",
+          "cartwheel",
+          "catch",
+          "chapter",
+          "charm",
+          "checker",
+          "chess-piece",
+          "chore",
+          "class-point",
+          "claw-machine",
+          "coding-block",
+          "colored-pencil",
+          "coloring-page",
+          "comic-book",
+          "counting-bear",
+          "crayon",
+          "dandelion",
+          "dive-ring",
+          "doll",
+          "dollhouse",
+          "domino",
+          "dry-erase-marker",
+          "e-book",
+          "emoji",
+          "episode",
+          "eraser",
+          "feather",
+          "field-trip-ticket",
+          "fish",
+          "flash-card",
+          "flower",
+          "flower-pot",
+          "flying-disc",
+          "foam-rocket",
+          "football",
+          "fossil",
+          "free-throw",
+          "friendship-bracelet",
+          "game-controller",
+          "game-gem",
+          "game-heart",
+          "game-level",
+          "game-life",
+          "game-round",
+          "gel-pen",
+          "gemstone",
+          "geode",
+          "gift-card",
+          "glow-stick",
+          "glue-stick",
+          "goal",
+          "gold-star",
+          "googly-eye",
+          "graphic-novel",
+          "gumball",
+          "hike",
+          "home-run",
+          "hopscotch-square",
+          "ice-cream-cone",
+          "icicle",
+          "jump",
+          "jump-rope",
+          "jumping-jack",
+          "keychain",
+          "lap",
+          "leaf",
+          "level-star",
+          "library-book",
+          "like",
+          "loom-band",
+          "lost-tooth",
+          "magnetic-tile",
+          "maple-seed",
+          "marble",
+          "marker",
+          "medal",
+          "minute-of-screen-time",
+          "monkey-bar",
+          "movie",
+          "movie-ticket",
+          "muffin",
+          "notebook",
+          "page",
+          "paintbrush",
+          "paper-airplane",
+          "paper-clip",
+          "paperback-book",
+          "pattern-block",
+          "pencil",
+          "pencil-case",
+          "photo",
+          "photo-album",
+          "piece-of-play-food",
+          "piece-of-yarn",
+          "pinecone",
+          "pipe-cleaner",
+          "player",
+          "playing-card",
+          "playlist",
+          "podcast-episode",
+          "pogo-stick",
+          "pom-pom",
+          "pool-noodle",
+          "pop-fidget-toy",
+          "postage-stamp",
+          "postcard",
+          "poster",
+          "power-up",
+          "presentation-slide",
+          "pressed-leaf",
+          "pressed-penny",
+          "pumpkin",
+          "puzzle-piece",
+          "quiz-question",
+          "reward-ticket",
+          "robot-step",
+          "roll-of-tape",
+          "rubber-duck",
+          "rubber-stamp",
+          "sand-bucket",
+          "sand-dollar",
+          "sand-pail",
+          "savings-jar",
+          "school-lunch",
+          "sea-glass",
+          "seashell",
+          "season-of-a-show",
+          "seed",
+          "seed-packet",
+          "seedling",
+          "shark-tooth",
+          "sheet-of-construction-paper",
+          "sight-word",
+          "sketchbook",
+          "skip",
+          "sled-run",
+          "smooth-rock",
+          "snap-cube",
+          "snowball",
+          "snowflake",
+          "soccer-ball",
+          "song",
+          "spelling-word",
+          "squishy-toy",
+          "stacking-cup",
+          "step",
+          "stick",
+          "stick-of-sidewalk-chalk",
+          "sticker",
+          "sticky-note",
+          "streak-day",
+          "stuffed-animal",
+          "sunflower",
+          "swim-lap",
+          "tadpole",
+          "tally-mark",
+          "team-jersey",
+          "temporary-tattoo",
+          "touchdown",
+          "toy-car",
+          "toy-dinosaur",
+          "trading-pin",
+          "train-track-piece",
+          "treasure-map",
+          "tub-of-clay",
+          "tub-of-slime",
+          "tube-of-glitter-glue",
+          "turn",
+          "used-bike",
+          "used-book",
+          "vending-machine-snack",
+          "video",
+          "video-call",
+          "video-game",
+          "video-view",
+          "virtual-pet",
+          "vote",
+          "water-balloon",
+          "water-bottle",
+          "watering-can",
+          "weekly-allowance",
+          "wooden-block"
+        ],
+        "constraints": [
+          "(object.id == 'trading-card' || object.id == 'building-brick' || object.id == 'arcade-ticket' || object.id == 'prize-ticket' || object.id == 'fuse-bead' || object.id == 'pumpkin-seed' || object.id == 'video-game-point')"
+        ]
+      },
+      "start": {
+        "kind": "int",
+        "min": 120,
+        "max": 499
+      },
+      "cfg": {
+        "kind": "int",
+        "min": 0,
+        "max": 1
+      },
+      "tensAmt": {
+        "kind": "int",
+        "min": 1,
+        "max": 9
+      },
+      "onesAmt": {
+        "kind": "int",
+        "min": 2,
+        "max": 9
+      },
+      "mix": {
+        "kind": "int",
+        "min": 0,
+        "max": 2
+      },
+      "take": {
+        "kind": "expr",
+        "expr": "(cfg == 0 ? 10 * tensAmt : onesAmt)",
+        "format": "int"
+      },
+      "add": {
+        "kind": "expr",
+        "expr": "(cfg == 0 ? onesAmt : 10 * tensAmt)",
+        "format": "int"
+      },
+      "after1": {
+        "kind": "expr",
+        "expr": "start - (cfg == 0 ? 10 * tensAmt : onesAmt)",
+        "format": "int"
+      },
+      "total": {
+        "kind": "expr",
+        "expr": "start - (cfg == 0 ? 10 * tensAmt : onesAmt) + (cfg == 0 ? onesAmt : 10 * tensAmt)",
+        "format": "int"
+      },
+      "borrow1": {
+        "kind": "expr",
+        "expr": "cfg == 0 ? (floor((start) / 10) % 10 < tensAmt ? 1 : 0) : (ones(start) < onesAmt ? 1 : 0)",
+        "format": "int"
+      },
+      "carry2": {
+        "kind": "expr",
+        "expr": "cfg == 0 ? (ones(start - (cfg == 0 ? 10 * tensAmt : onesAmt)) + onesAmt >= 10 ? 1 : 0) : (floor((start - (cfg == 0 ? 10 * tensAmt : onesAmt)) / 10) % 10 + tensAmt >= 10 ? 1 : 0)",
+        "format": "int"
+      },
+      "step1": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' || object.id == 'video-game-point' ? name + ' spent ' + take + ' ' + object.plural + (object.id == 'arcade-ticket' ? ' on a prize' : object.id == 'prize-ticket' ? ' on a toy' : ' on a power-up') : name + ' gave ' + take + ' ' + object.plural + ' to ' + name2",
+        "format": "text"
+      },
+      "step2": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' ? name + ' won ' + add + ' more ' + object.plural : object.id == 'video-game-point' ? name + ' scored ' + add + ' more ' + object.plural : name3 + ' gave ' + name + ' ' + add + ' more ' + object.plural",
+        "format": "text"
+      },
+      "gone": {
+        "kind": "expr",
+        "expr": "object.id == 'arcade-ticket' || object.id == 'prize-ticket' || object.id == 'video-game-point' ? 'spent' : 'gave away'",
+        "format": "text"
+      },
+      "fbStop": {
+        "kind": "expr",
+        "expr": "'That is how many ' + object.plural + ' are left after ' + name + ' ' + (object.id == 'arcade-ticket' || object.id == 'prize-ticket' || object.id == 'video-game-point' ? 'spent ' + take : 'gave ' + take + ' to ' + name2) + '. Then ' + (object.id == 'arcade-ticket' || object.id == 'prize-ticket' ? name + ' won ' + add + ' more' : object.id == 'video-game-point' ? name + ' scored ' + add + ' more' : name3 + ' gave ' + name + ' ' + add + ' more') + ', so add them.'",
         "format": "text"
       },
       "tip": {

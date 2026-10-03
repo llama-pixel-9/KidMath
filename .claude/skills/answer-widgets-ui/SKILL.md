@@ -21,6 +21,12 @@ AnalogClock, TenFrame, FractionInput, FractionSet, PlaceValueDiscs. **Never
 write a local `keyClass` in a widget again** — that is how the pads drifted
 white/narrow the first time.
 
+Buttons beside an answer come from the kit as well: `SUBMIT_BUTTON` (Check),
+`SECONDARY_BUTTON` (white, Lark Teal label, soft Ink edge, at least 44px tall;
+the disc mat's trades), `TEXT_BUTTON` (Start over). The disc mat's − and +
+use `digitKeyClass` of the row whose tint matches the place's disc (1000 →
+"7", 100 → "1", 10 → "4", 1 → "0").
+
 iOS mirrors it in `FigureKit.swift`: `DigitPadView.keyTint(_:)` returns the
 same (fill, edge) pairs and is also used by `NumberPadWidget` in
 AnswerWidgets.swift. Change tints in both places or not at all.
@@ -54,7 +60,12 @@ with `data-blocks-keys` (modal backdrops) is mounted.
 Vocabulary: digit pads 0–9 / Backspace / Enter (`.` on decimal pads, `/` or
 Tab swaps fraction fields); `< = >` on the comparison keys; 1–9 (0 = tenth)
 picks options by position for word choices, multi-select, shapes, coins and
-ten-frame cells; arrows walk number-line ticks. **Numeric choice bubbles
+ten-frame cells; arrows walk number-line ticks. The disc mat's build mode
+gives every action a fixed key, column by column (− + break-down trade-up;
+1–9, 0, then q w e r…), with Enter = Check and Escape = Start over. Enter on
+a focused mat button clicks that button. Like CoinTray's BuildKeys, it
+registers its handler only in build mode, so read mode's digit pad keeps
+its keys. **Numeric choice bubbles
 match by typed value, never position** — a child pressing "3" means the
 number 3. `KeyHint` badges appear only on hover-capable fine-pointer devices
 (`.key-hint` in index.css); touch kids never see them.

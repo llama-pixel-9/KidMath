@@ -121,5 +121,19 @@ export const SUBMIT_BUTTON =
   "text-cream text-xl font-display font-semibold disabled:opacity-40 " +
   "disabled:cursor-not-allowed cursor-pointer select-none";
 
+/** The secondary larkit button at widget size (HomePage's BTN_SECONDARY):
+ * white, Lark Teal Fredoka label, a soft Ink bottom edge, 44px tall at the
+ * least. For an action beside the answer (a trade on the disc mat), never
+ * the answer itself. Size the label at the call site. */
+export const SECONDARY_BUTTON =
+  "relative min-h-[44px] px-2 py-1 rounded-[14px] bg-white text-teal font-display font-semibold " +
+  "leading-tight shadow-[0_4px_0_#14231F1a] [--press-edge:#14231F1a] btn-press cursor-pointer " +
+  "select-none disabled:opacity-40 disabled:cursor-not-allowed";
+
+/** A quiet text action ("Start over"): Lark Teal label, no fill, 44px tall. */
+export const TEXT_BUTTON =
+  "relative min-h-[44px] px-3 rounded-[14px] text-teal font-display font-semibold text-base " +
+  "cursor-pointer select-none hover:bg-teal/5 disabled:opacity-40 disabled:cursor-not-allowed";
+
 export { useAnswerKeys, useDigitKeys, useIndexKeys } from "./useAnswerKeys.js";
 export { default as KeyHint } from "./KeyHint.jsx";
